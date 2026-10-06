@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="HTML-Fassungen von Akkordeon, Reitern, Dropdown-Menü und Dialog für statische Websites der Fachstelle.">
+<title>Interaktion ohne React – Referenz | PUK Zürich</title>
+<link rel="icon" href="../../../assets/logo/PUK_Logo-Symbol_statisch_positiv.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../../styles.css">
+<link rel="stylesheet" href="interaktion-beispiel.css">
+<script src="../../../components/interaktion.js" defer></script>
+</head>
+<body><div class="puk-web-page">
+<a class="puk-web-skip" href="#main-content">Zum Hauptinhalt</a>
+<main id="main-content" class="puk-web-main" tabindex="-1"><div class="puk-web-container">
+<p class="puk-web-eyebrow">Referenz · Interaktion ohne React</p>
+<h1 class="puk-web-h1">Interaktive Komponenten für statische Websites</h1>
+<p class="puk-web-lead">Markup zum Kopieren. Ohne Skript bleiben alle Inhalte sichtbar; Regeln im Abschnitt «Interaktionskonzept». Beispieltexte fachlich freigegeben (Fachstelle Angehörigenarbeit PUK, 06.10.2026).</p>
+<div class="ia-demo">
+<section class="ia-sec" aria-labelledby="ia-acc-h">
+<h2 class="ia-h" id="ia-acc-h">Akkordeon</h2>
+<p class="ia-note">Optionale Vertiefung, drei oder mehr gleichartige Fragen. Ohne Skript stehen Fragen und Antworten offen untereinander.</p>
+<div class="puk-acc" data-puk-accordion>
+  <div class="puk-acc__item"><h3 class="puk-acc__heading">Kann ich mich melden, wenn die erkrankte Person nicht in der PUK behandelt wird?</h3><div class="puk-acc__panel"><p>Ja. Für eine Beratung ist keine Behandlung in der PUK erforderlich.</p></div></div>
+  <div class="puk-acc__item"><h3 class="puk-acc__heading">Brauche ich eine Vollmacht der erkrankten Person?</h3><div class="puk-acc__panel"><p>Nein. Die Beratung erhalten Sie ohne Vollmacht der erkrankten Person.</p></div></div>
+  <div class="puk-acc__item"><h3 class="puk-acc__heading">Kostet die Beratung etwas?</h3><div class="puk-acc__panel"><p>Nein. Die Dienstleistungen der Fachstelle sind kostenlos.</p></div></div>
+</div>
+</section>
+
+<section class="ia-sec" aria-labelledby="ia-tabs-h">
+<h2 class="ia-h" id="ia-tabs-h">Reiter</h2>
+<p class="ia-note">Gleichrangige Varianten desselben Inhalts, höchstens vier. Ohne Skript folgen die Varianten als Abschnitte mit Zwischentitel.</p>
+<div class="puk-tabs" data-puk-tabs aria-label="Gesprächseinstieg nach Rolle">
+  <section class="puk-tabs__panel"><h3 class="puk-tabs__heading">Für Eltern</h3><p>«Mir ist aufgefallen, dass du seit Wochen kaum noch rausgehst. Ich mache mir Sorgen und möchte verstehen, wie es dir geht.»</p></section>
+  <section class="puk-tabs__panel"><h3 class="puk-tabs__heading">Für Partnerinnen und Partner</h3><p>«Ich merke, dass wir kaum noch miteinander reden. Können wir am Wochenende eine Stunde dafür nehmen?»</p></section>
+  <section class="puk-tabs__panel"><h3 class="puk-tabs__heading">Für Geschwister</h3><p>«Ich bin nicht hier, um dir zu sagen, was du tun sollst. Ich will einfach wissen, wie es dir geht.»</p></section>
+</div>
+</section>
+
+<section class="ia-sec" aria-labelledby="ia-menu-h">
+<h2 class="ia-h" id="ia-menu-h">Dropdown-Menü</h2>
+<p class="ia-note">Für Navigation mit mehr als sechs Einträgen. Öffnet per Klick, nie per Hover; Escape schliesst. Ohne Skript steht die Liste offen.</p>
+<nav aria-label="Beispielnavigation"><div class="puk-disclosure" data-puk-disclosure>
+  <span class="puk-disclosure__label">Themen</span>
+  <ul class="puk-disclosure__panel">
+    <li><a class="puk-disclosure__link" href="#psychose">Psychose<span class="puk-disclosure__desc">Erleben verstehen, Gespräche führen</span></a></li>
+    <li><a class="puk-disclosure__link" href="#depression" aria-current="page">Depression<span class="puk-disclosure__desc">Antrieb, Rückzug, Alltag</span></a></li>
+    <li><a class="puk-disclosure__link" href="#zwang">Zwangsstörung<span class="puk-disclosure__desc">Rückversicherung und Ausstieg</span></a></li>
+    <li><a class="puk-disclosure__link" href="#stress">Stress und Entlastung<span class="puk-disclosure__desc">Für sich selbst sorgen</span></a></li>
+  </ul>
+</div></nav>
+</section>
+
+<section class="ia-sec" aria-labelledby="ia-dlg-h">
+<h2 class="ia-h" id="ia-dlg-h">Dialog</h2>
+<p class="ia-note">Nur für kurze Entscheidungen. Fokus bleibt im Dialog, Escape und Hintergrund schliessen, die Seite dahinter scrollt nicht. Ohne Skript erscheint der Auslöser nicht.</p>
+<button type="button" class="puk-btn puk-btn--secondary" data-puk-dialog-open="ia-dialog">Eingaben löschen</button>
+<dialog class="puk-dialog" id="ia-dialog" aria-labelledby="ia-dialog-t">
+  <div class="puk-dialog__head"><h2 class="puk-dialog__title" id="ia-dialog-t">Eingaben löschen?</h2><button type="button" class="puk-dialog__close" data-puk-dialog-close aria-label="Schliessen"></button></div>
+  <div class="puk-dialog__body"><p>Ihre Notizen in diesem Reflexionsbogen werden entfernt. Das lässt sich nicht rückgängig machen.</p></div>
+  <div class="puk-dialog__footer"><button type="button" class="puk-btn puk-btn--ghost" data-puk-dialog-close>Abbrechen</button><button type="button" class="puk-btn puk-btn--danger" data-puk-dialog-close>Löschen</button></div>
+</dialog>
+</section>
+</div>
+
+</div></main></div>
+</body></html>

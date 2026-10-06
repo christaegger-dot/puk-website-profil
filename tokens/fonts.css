@@ -1,0 +1,14 @@
+/* Rubik — corporate typeface for digital & print media (PUK CD Manual, Typografie).
+   Only Light (300) and Regular (400) are sanctioned by the manual; Medium (500) is
+   shipped for UI affordances that need emphasis without going bold.
+
+   Zwei Formate je Schnitt: WOFF2 zuerst, TTF als Fallback. Der Browser lädt nur
+   das erste Format, das er versteht — praktisch immer WOFF2, zusammen 404 statt
+   1325 KB. Die TTFs bleiben als CSS-Fallback ausgeliefert. Beide Formate tragen dieselben
+   Glyphen; WOFF2 ist eine verlustfreie Umkodierung, erzeugt mit
+   _tooling/tools/build-woff2.py und im Audit von _tooling/tools/verify-fonts.mjs geprüft. */
+@font-face{font-family:"Rubik";src:url("../assets/fonts/Rubik-Light.woff2") format("woff2"),url("../assets/fonts/Rubik-Light.ttf") format("truetype");font-weight:300;font-style:normal;font-display:swap}
+@font-face{font-family:"Rubik";src:url("../assets/fonts/Rubik-Regular.woff2") format("woff2"),url("../assets/fonts/Rubik-Regular.ttf") format("truetype");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Rubik";src:url("../assets/fonts/Rubik-Medium.woff2") format("woff2"),url("../assets/fonts/Rubik-Medium.ttf") format("truetype");font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:"Rubik Variable";src:url("../assets/fonts/Rubik-VariableFont_wght.woff2") format("woff2"),url("../assets/fonts/Rubik-VariableFont_wght.ttf") format("truetype-variations");font-weight:300 900;font-style:normal;font-display:swap}
+@font-face{font-family:"Rubik Variable";src:url("../assets/fonts/Rubik-Italic-VariableFont_wght.woff2") format("woff2"),url("../assets/fonts/Rubik-Italic-VariableFont_wght.ttf") format("truetype-variations");font-weight:300 900;font-style:italic;font-display:swap}

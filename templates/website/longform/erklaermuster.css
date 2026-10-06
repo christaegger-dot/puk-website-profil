@@ -1,0 +1,118 @@
+/* PUK Website Kit · Erklärmuster G–K (Visuelle Wissensvermittlung, 06.10.2026).
+   Ergänzt visual-patterns.css (A–F). Regeln: Abschnitt «Visuelle Wissensvermittlung».
+   Grundsatz: Anordnung, Verbindung, Form und Beschriftung tragen die Bedeutung; alle Beschriftungen sind HTML-Text,
+   Formen und Linien sind aria-hidden. Ohne Skript, ohne Animation und auf schmalen Bildschirmen vollständig lesbar. */
+
+/* Erklärungsebenen: 1 Kernaussage · 2 Darstellung + kurzer Erklärtext · 3 Vertiefung */
+.puk-vis-kern{margin:0 0 var(--space-3);font:var(--type-title-3);font-weight:var(--fw-medium);color:var(--text-default);max-width:38ch;text-wrap:balance}
+.puk-vis-short{margin:0 0 var(--space-6);font:var(--type-body-sm);color:var(--text-default);max-width:62ch}
+.puk-vis-more{margin-top:var(--space-5);border-top:1px solid var(--border-default);max-width:80ch}
+.puk-vis-more>summary{display:flex;align-items:center;gap:var(--space-2);min-height:44px;cursor:pointer;font:var(--type-body-sm);font-weight:var(--fw-medium);color:var(--puk-blue-100);list-style:none}
+.puk-vis-more>summary::-webkit-details-marker{display:none}
+.puk-vis-more>summary::before{content:"";width:8px;height:8px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(-45deg);margin:0 4px 0 2px}
+.puk-vis-more[open]>summary::before{transform:rotate(45deg)}
+.puk-vis-more>summary:hover{color:var(--text-default);text-decoration:underline}
+.puk-vis-more>summary:focus{outline:none}.puk-vis-more>summary:focus-visible{box-shadow:var(--focus-ring)}
+.puk-vis-more__body{padding:0 0 var(--space-4);font:var(--type-body-sm);color:var(--text-default)}
+.puk-vis-more__body p{margin:0 0 var(--space-2)}
+.puk-vis-sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.puk-vis-btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 var(--space-4);border:1px solid var(--puk-black-100,#222);border-radius:3px;background:var(--puk-white);color:var(--text-default);font:var(--type-body-sm);font-weight:var(--fw-medium);cursor:pointer}
+.puk-vis-btn:hover{background:var(--ui-wash);color:var(--puk-blue-100)}
+.puk-vis-btn:focus{outline:none}.puk-vis-btn:focus-visible{box-shadow:var(--focus-ring)}
+.puk-vis-btn:disabled{background:var(--action-disabled-bg);color:var(--action-disabled-fg);border-color:var(--action-disabled-bg);cursor:not-allowed}
+.puk-vis-btn[aria-pressed="true"]{background:var(--puk-black-100,#222);color:var(--puk-white)}
+
+/* G · Schrittweise aufgebautes Modell (Entstehung, Wirkweise) */
+.puk-vis-build{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:var(--space-8);align-items:center}
+.puk-vis-build__art{margin:0 auto;width:100%;max-width:340px}
+.puk-vis-build__art svg{display:block;width:100%;height:auto}
+.puk-vis-build__steps{list-style:none;margin:0;padding:0;display:grid;gap:var(--space-4)}
+.puk-vis-build__steps li{display:grid;grid-template-columns:32px minmax(0,1fr);gap:var(--space-3);padding:var(--space-2) 0 var(--space-2) var(--space-3);border-left:4px solid transparent}
+.puk-vis-build__n{display:grid;place-items:center;width:28px;height:28px;border:2px solid var(--puk-blue-100);border-radius:50%;background:var(--puk-white);font:var(--type-caption);font-weight:var(--fw-medium);color:var(--text-default)}
+.puk-vis-build__steps h3{margin:0;font:var(--type-body);font-weight:var(--fw-medium);color:var(--text-default)}
+.puk-vis-build__steps p{margin:var(--space-1) 0 0;font:var(--type-body-sm);color:var(--text-default)}
+.puk-vis-build__controls{display:none;flex-wrap:wrap;align-items:center;gap:var(--space-3);margin-top:var(--space-6)}
+.puk-vis-build[data-enhanced] ~ .puk-vis-build__controls,.puk-vis-build__controls[data-enhanced]{display:flex}
+.puk-vis-build__status{margin:0 0 0 auto;font:var(--type-body-sm);color:var(--text-default)}
+.puk-vis-build[data-mode="steps"] .puk-vis-build__steps li.is-later{display:none}
+.puk-vis-build[data-mode="steps"] .puk-vis-build__steps li[aria-current="step"]{border-left-color:var(--puk-blue-100)}
+.puk-vis-build[data-mode="steps"] [data-step].is-later{opacity:0}
+@media (prefers-reduced-motion:no-preference){.puk-vis-build [data-step]{transition:opacity var(--dur-base,200ms) var(--ease-standard,ease)}}
+
+/* H · Spannungsfeld: zwei berechtigte Pole und was das Gleichgewicht hält */
+.puk-vis-balance__beam{display:block;width:100%;max-width:720px;height:auto;margin:0 auto var(--space-4)}
+.puk-vis-balance__grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1fr);gap:var(--space-6);align-items:start}
+.puk-vis-balance__pole{min-width:0;padding-top:var(--space-4);border-top:4px solid var(--puk-blue-100)}
+.puk-vis-balance__pole--b{border-top-style:double;border-top-width:6px}
+.puk-vis-balance__key{margin:0;font:var(--type-caption);color:var(--text-muted)}
+.puk-vis-balance h3{margin:var(--space-1) 0 var(--space-3);font:var(--type-body);font-weight:var(--fw-medium);color:var(--text-default)}
+.puk-vis-balance ul{margin:0;padding-left:1.1em;display:grid;gap:var(--space-2);font:var(--type-body-sm);color:var(--text-default)}
+.puk-vis-balance__hold{min-width:0;padding:var(--space-4) var(--space-5);background:var(--ui-field);border:2px solid var(--puk-blue-100)}
+
+/* I · Beziehungskarte: Nähe als Abstand, Status als Linienart */
+.puk-vis-net{position:relative;max-width:640px;aspect-ratio:1;margin:0 auto}
+.puk-vis-net>svg{position:absolute;inset:0;width:100%;height:100%}
+.puk-vis-net__ring{margin:0;padding:0;list-style:none}
+.puk-vis-net__ring li,.puk-vis-net__me{position:absolute;left:calc(var(--x,50) * 1%);top:calc(var(--y,50) * 1%);transform:translate(-50%,-50%);width:25%;box-sizing:border-box;padding:var(--space-2);hyphens:auto;background:var(--puk-white);border:2px solid var(--puk-blue-100);font:var(--type-body-sm);line-height:1.25;color:var(--text-default);text-align:center;overflow-wrap:break-word}
+.puk-vis-net__ring li.is-possible{border-style:dashed}
+.puk-vis-net__me{width:15%;margin:0;background:var(--puk-blue-100);color:var(--puk-white);font-weight:var(--fw-medium);border-radius:50%;aspect-ratio:1;display:grid;place-items:center}
+.puk-vis-legend{margin:var(--space-6) 0 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:var(--space-3) var(--space-8);font:var(--type-body-sm);color:var(--text-default)}
+.puk-vis-legend li{display:flex;align-items:center;gap:var(--space-2)}
+.puk-vis-legend__swatch{flex:none;width:36px;height:20px;box-sizing:border-box;border:2px solid var(--puk-blue-100);background:var(--puk-white)}
+.puk-vis-legend__swatch--dashed{border-style:dashed}
+
+/* Positionen der Beziehungskarte als Klassen (keine style-Attribute, verträglich mit Content-Security-Policy) */
+.puk-vis-net__ring--1{--r:19}.puk-vis-net__ring--2{--r:31}.puk-vis-net__ring--3{--r:45}
+.puk-vis-net__ring--1 .puk-vis-net__slot--1{--x:31;--y:50}.puk-vis-net__ring--1 .puk-vis-net__slot--2{--x:69;--y:50}
+.puk-vis-net__ring--2 .puk-vis-net__slot--1{--x:24.6;--y:32.2}.puk-vis-net__ring--2 .puk-vis-net__slot--2{--x:75.4;--y:32.2}.puk-vis-net__ring--2 .puk-vis-net__slot--3{--x:50;--y:81}
+.puk-vis-net__ring--3 .puk-vis-net__slot--1{--x:24.2;--y:13.1}.puk-vis-net__ring--3 .puk-vis-net__slot--2{--x:75.8;--y:13.1}.puk-vis-net__ring--3 .puk-vis-net__slot--3{--x:50;--y:95}
+
+/* J · Kontinuum: Lage auf einer Achse, Intensität als Linienstärke */
+.puk-vis-cont__axis{display:block;width:100%;height:auto;margin-bottom:var(--space-2)}
+.puk-vis-cont__ends{display:flex;justify-content:space-between;gap:var(--space-4);margin:0 0 var(--space-5);font:var(--type-caption);color:var(--text-muted)}
+.puk-vis-cont__zones{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--space-6)}
+.puk-vis-cont__zones>li{min-width:0;padding-top:var(--space-4);border-top:var(--w,2px) solid var(--puk-blue-100)}
+.puk-vis-cont__zone--2{--w:4px}.puk-vis-cont__zone--3{--w:7px}
+.puk-vis-cont__zones h3{margin:0 0 var(--space-3);font:var(--type-body);font-weight:var(--fw-medium);color:var(--text-default)}
+.puk-vis-cont__zones dl{margin:0;display:grid;gap:var(--space-3)}
+.puk-vis-cont__zones dt{font:var(--type-caption);color:var(--text-muted)}
+.puk-vis-cont__zones dd{margin:0;font:var(--type-body-sm);color:var(--text-default)}
+
+/* K · Schichtenmodell: sichtbar über der Linie, darunter Liegendes */
+.puk-vis-layers{position:relative;display:grid;grid-template-rows:1fr 1fr;border:1px solid var(--border-hairline);background:var(--puk-white);overflow:hidden}
+.puk-vis-layers__zone{position:relative;padding:var(--space-6) var(--space-6) var(--space-6) 42%;min-width:0}
+.puk-vis-layers__zone--below{background:var(--ui-field);border-top:2px solid var(--puk-blue-100)}
+.puk-vis-layers__zone h3{margin:0 0 var(--space-3);font:var(--type-body);font-weight:var(--fw-medium);color:var(--text-default)}
+.puk-vis-layers__zone ul{margin:0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:var(--space-2) var(--space-3)}
+.puk-vis-layers__zone li{font:var(--type-body-sm);color:var(--text-default);padding:var(--space-1) var(--space-3);border:1px solid var(--puk-blue-100);background:var(--puk-white)}
+.puk-vis-layers__zone--below li{border-style:dashed}
+.puk-vis-layers__art{position:absolute;z-index:1;left:4%;top:0;bottom:0;width:32%;pointer-events:none}
+.puk-vis-layers__art svg{width:100%;height:100%;display:block}
+
+@container (max-width:560px){
+  .puk-vis-build{grid-template-columns:minmax(0,1fr);gap:var(--space-5)}
+  .puk-vis-build__art{max-width:280px}
+  .puk-vis-build__status{margin-left:0;flex-basis:100%}
+  .puk-vis-balance__beam{display:none}
+  .puk-vis-balance__grid{grid-template-columns:minmax(0,1fr)}
+  .puk-vis-balance__hold{order:3}
+  .puk-vis-net{aspect-ratio:auto;max-width:none;display:grid;gap:var(--space-5)}
+  .puk-vis-net>svg{display:none}
+  .puk-vis-net__me{position:static;transform:none;width:auto;aspect-ratio:auto;border-radius:0;padding:var(--space-3);text-align:left;display:block}
+  .puk-vis-net__ring{display:grid;gap:var(--space-2);padding-left:var(--space-4);border-left:2px solid var(--puk-blue-100)}
+  .puk-vis-net__ring li{position:static;transform:none;width:auto;text-align:left}
+  .puk-vis-cont__axis{display:none}
+  .puk-vis-cont__zones{grid-template-columns:minmax(0,1fr)}
+  .puk-vis-cont__zones>li{border-top:0;border-left:var(--w,2px) solid var(--puk-blue-100);padding:0 0 0 var(--space-4)}
+  .puk-vis-layers{grid-template-rows:auto auto}
+  .puk-vis-layers__art{display:none}
+  .puk-vis-layers__zone{padding:var(--space-5)}
+}
+.puk-vis-btn[hidden]{display:none}
+.puk-vis-net__ring h3{position:absolute;left:50%;top:calc((50 - var(--r)) * 1%);transform:translate(-50%,-50%);width:auto;height:auto;clip:auto;overflow:visible;margin:0;padding:0 6px;background:var(--puk-white);font:var(--type-caption);color:var(--text-muted);white-space:nowrap}
+@container (max-width:560px){.puk-vis-net__ring h3{position:static;transform:none;padding:0;background:none;white-space:normal}}
+.puk-vis-net__ring ul{margin:0;padding:0;list-style:none}
+@container (max-width:560px){.puk-vis-net__ring ul{display:grid;gap:var(--space-2)}}
+
+/* SVG-Linien und -Flächen über Tokens, damit das Theme «Hoher Kontrast» greift */
+.puk-vis-ln{fill:none;stroke:var(--puk-blue-100);stroke-width:2;vector-effect:non-scaling-stroke;stroke-linecap:round;stroke-linejoin:round}.puk-vis-ln--thin{stroke-width:1.5}.puk-vis-ln--paper{fill:var(--puk-white)}.puk-vis-ln--water,.puk-vis-water{fill:var(--puk-blue-25)}.puk-vis-fill{fill:var(--puk-blue-100)}.puk-vis-mark{fill:var(--puk-white);stroke:var(--puk-blue-100);stroke-width:2}.puk-vis-marktext{fill:var(--text-default)}

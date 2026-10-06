@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Musterseite für einen zugänglichen und responsiven PUK-Webauftritt.">
+<title>Website-Musterseite | Psychiatrische Universitätsklinik Zürich</title>
+<link rel="icon" href="../../assets/logo/PUK_Logo-Symbol_statisch_positiv.svg" type="image/svg+xml">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<!-- @template kind="system" name="Website" description="Responsive Website im PUK-Auftritt — semantische Seitenhülle, Rubik, blaue Akzente, flache Karten, ohne Schatten" -->
+<helmet><script src="./ds-base.js"></script></helmet>
+<div class="puk-web-page" data-web-profile="website">
+<a class="puk-web-skip" href="#main-content">Zum Hauptinhalt</a>
+
+<header class="puk-web-header">
+<div class="puk-web-container puk-web-header__inner">
+<a class="puk-web-logo" href="#" aria-label="Startseite der Psychiatrischen Universitätsklinik Zürich"><img src="../../assets/logo/PUK_Logo_statisch_positiv_de.svg" alt="Psychiatrische Universitätsklinik Zürich"></a>
+<nav class="puk-web-nav" aria-label="Hauptnavigation">
+<ul class="puk-web-nav__list" role="list">
+<li><a class="puk-web-nav__link" href="#" aria-current="page">Behandlung</a></li>
+<li><a class="puk-web-nav__link" href="#">Forschung</a></li>
+<li><a class="puk-web-nav__link" href="#">Lehre</a></li>
+<li><a class="puk-web-nav__link" href="#">Über uns</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<main id="main-content" class="puk-web-main" tabindex="-1">
+<section class="puk-web-container puk-web-hero">
+<p class="puk-web-eyebrow">Psychiatrische Universitätsklinik Zürich</p>
+<h1 class="puk-web-h1">Hier steht die Kernaussage</h1>
+<p class="puk-web-lead">Ein Vorspann von zwei bis drei Zeilen erklärt, worum es geht, für wen die Seite gedacht ist und welches der nächste sinnvolle Schritt ist.</p>
+<div class="puk-web-actions">
+<x-import component-from-global-scope="PUKWeb.Button" variant="accent" size="lg" hint-size="180px,48px">Termin anfragen</x-import>
+<x-import component-from-global-scope="PUKWeb.Button" variant="secondary" size="lg" hint-size="180px,48px">Angebote ansehen</x-import>
+</div>
+</section>
+
+<section class="puk-web-container" aria-label="Titelbild">
+<div class="puk-web-media" role="img" aria-label="Platzhalter für ein redaktionell beschriebenes Bild im Format 16 zu 9">Bild 16:9 · Alternativtext redaktionell ergänzen</div>
+</section>
+
+<section class="puk-web-container puk-web-section" aria-labelledby="angebote-title">
+<h2 id="angebote-title" class="puk-web-h2">Angebote</h2>
+<ul class="puk-web-card-list" role="list">
+<li><x-import component-from-global-scope="PUKWeb.Card" eyebrow="Ambulant" title="Sprechstunden" href="#" style="flex:1" hint-size="100%,180px">Abklärung und Behandlung an allen Standorten, mit oder ohne Zuweisung.</x-import></li>
+<li><x-import component-from-global-scope="PUKWeb.Card" eyebrow="Stationär" title="Klinikaufenthalt" href="#" style="flex:1" hint-size="100%,180px">Behandlung in einem geschützten Rahmen, wenn ambulante Angebote nicht ausreichen.</x-import></li>
+<li><x-import component-from-global-scope="PUKWeb.Card" eyebrow="Orientierung" title="Kontaktwege" href="#" style="flex:1" hint-size="100%,180px">Ein Wegweiser ordnet, welcher Kontaktweg zu Ihrem Anliegen passt.</x-import></li>
+</ul>
+</section>
+
+<section class="puk-web-band" aria-labelledby="zuweisende-title">
+<div class="puk-web-container puk-web-band__inner">
+<div class="puk-web-copy">
+<h2 id="zuweisende-title" class="puk-web-h3">Zuweisende Ärztinnen und Ärzte</h2>
+<p class="puk-web-lead">Anmeldungen laufen über das digitale Formular. Die erwartete Reaktionszeit wird konkret und überprüfbar angegeben.</p>
+</div>
+<x-import component-from-global-scope="PUKWeb.Button" variant="inverse" size="lg" hint-size="180px,48px">Zum Formular</x-import>
+</div>
+</section>
+</main>
+
+<footer class="puk-web-footer">
+<div class="puk-web-container puk-web-footer__grid">
+<div><img src="../../assets/logo/PUK_Logo_statisch_positiv_de.svg" alt="Psychiatrische Universitätsklinik Zürich" style="width:180px;display:block"></div>
+<div>
+<p class="puk-web-footer__heading">Kontakt</p>
+<p class="puk-web-footer__copy">Lenggstrasse 31<br>Postfach<br>8032 Zürich</p>
+</div>
+<div>
+<p class="puk-web-footer__heading">Erreichbarkeit</p>
+<p class="puk-web-footer__copy">Telefonnummer und E-Mail-Adresse vor Veröffentlichung redaktionell bestätigen.</p>
+</div>
+<div>
+<p class="puk-web-footer__heading">Rechtliches</p>
+<p class="puk-web-footer__copy"><a href="#">Impressum</a><br><a href="#">Datenschutz</a><br><a href="#">Barrierefreiheit</a></p>
+</div>
+</div>
+</footer>
+</div>
+</x-dc>
+</body>
+</html>

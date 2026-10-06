@@ -1,0 +1,6 @@
+/* Nur für die Beispielseite. */
+.ia-demo{display:grid;gap:var(--space-12)}
+.ia-sec{max-width:760px}
+.ia-h{margin:0 0 var(--space-2);font:var(--type-title-2);color:var(--text-default)}
+.ia-note{margin:0 0 var(--space-5);font:var(--type-body-sm);color:var(--text-muted);max-width:62ch}
+.ia-demo{margin-top:var(--space-12)}

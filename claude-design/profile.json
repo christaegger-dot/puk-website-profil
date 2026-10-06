@@ -1,0 +1,250 @@
+{
+  "schemaVersion": 1,
+  "id": "puk-zuerich-claude-design",
+  "systemVersion": "1.10.1",
+  "language": "de-CH",
+  "status": "authored-extension",
+  "claimBoundary": "Abgeleitete Gestaltungs- und Anwendungsschicht auf Basis des geprüften PUK Zürich Design Systems; keine neue amtliche CD- oder Büromedienquelle.",
+  "sourceOrder": [
+    "audit/quelle-sollmasse.json",
+    "formally-released-production-files",
+    "tokens",
+    "components",
+    "templates",
+    "fachstelle-handouts",
+    "claude-design",
+    "audit"
+  ],
+  "requiredReading": [
+    "README.md",
+    "SKILL.md",
+    "claude-design/README.md",
+    "claude-design/profile.json",
+    "claude-design/patterns.json",
+    "guidelines/00-visuelle-wissensvermittlung.md"
+  ],
+  "conditionalReading": {
+    "digital": [
+      "templates/website/profile.json",
+      "templates/website/Website.prompt.md",
+      "templates/website/application-patterns.json",
+      "templates/website/application-content.schema.json",
+      "guidelines/web-app-<selected-pattern>.prompt.md"
+    ],
+    "fachstelle-handout": [
+      "fachstelle-handouts/README.md",
+      "fachstelle-handouts/profile.json",
+      "fachstelle-handouts/patterns.json",
+      "fachstelle-handouts/PROMPT.md"
+    ],
+    "word-export": [
+      "claude-design/WORD_EXPORT.md",
+      "claude-design/starters/word-ready-publication.html"
+    ]
+  },
+  "assets": {
+    "logoPolicy": "original-only",
+    "primaryLogo": "assets/logo/PUK_Logo_statisch_positiv_de.svg",
+    "officeLogo": "assets/logo/PUK_Logo_statisch_positiv_de_office.svg",
+    "partnerLogo": "assets/logo/UZH_Logo_positiv.png",
+    "networkAssetsAllowed": false
+  },
+  "foundations": {
+    "colors": {
+      "blue": "#3C64FF",
+      "black": "#222222",
+      "white": "#FFFFFF",
+      "signalYellow": "#F0EB96",
+      "signalRed": "#DC503C"
+    },
+    "fonts": {
+      "digital": "Rubik",
+      "designedPublication": "Rubik",
+      "office": "Arial",
+      "presentation": "Arial"
+    },
+    "orthography": [
+      "Schweizer Hochdeutsch",
+      "ss statt ß",
+      "Schweizer Guillemets «…»",
+      "Halbgeviertstrich — mit Leerzeichen"
+    ]
+  },
+  "compositionPrinciples": [
+    {
+      "id": "white-carries",
+      "name": "Weiss trägt",
+      "rule": "Weiss ist der Normalgrund. Pro Komposition höchstens eine dominante blaue Fläche."
+    },
+    {
+      "id": "one-focus",
+      "name": "Ein Schwerpunkt",
+      "rule": "Genau ein dominanter Titel, visueller Anker oder priorisierter Handlungsweg pro Ansicht."
+    },
+    {
+      "id": "asymmetric-grid",
+      "name": "Asymmetrie mit Achsen",
+      "rule": "Ungleiche Flächen sind erwünscht, wenn ihre Kanten auf einem nachvollziehbaren Raster liegen."
+    },
+    {
+      "id": "meaning-before-container",
+      "name": "Inhalt vor Behälter",
+      "rule": "Erklärende Visualisierungen sind erwünscht: Metapher vor Diagramm, Diagramm vor Inhaltscontainer; kein Kartenraster ohne Beziehungsgrund."
+    },
+    {
+      "id": "media-typography",
+      "name": "Medien trennen",
+      "rule": "Rubik für Digital und gestaltete Publikationen; Arial für Büromedien und Präsentationen."
+    },
+    {
+      "id": "quiet-precision",
+      "name": "Ruhige Präzision",
+      "rule": "Keine dekorativen Verläufe, Glasflächen, grossen Schatten, zufälligen Radien oder Icons ohne Funktion."
+    }
+  ],
+  "media": {
+    "digital": {
+      "font": "Rubik",
+      "preferredPatterns": [
+        "orientation",
+        "next-steps",
+        "process",
+        "faq",
+        "contact-handoff",
+        "data-story",
+        "situation-navigator",
+        "contact-pathfinder",
+        "conversation-guide",
+        "service-finder"
+      ],
+      "must": [
+        "responsive",
+        "semantic-html",
+        "visible-focus",
+        "wcag-aa",
+        "local-assets"
+      ],
+      "mustNot": [
+        "office-geometry",
+        "arial-as-default",
+        "decorative-card-grid",
+        "automatic-medical-triage",
+        "diagnostic-self-test"
+      ]
+    },
+    "designed-publication": {
+      "font": "Rubik",
+      "preferredPatterns": [
+        "orientation",
+        "next-steps",
+        "priority-notice",
+        "evidence-source",
+        "data-story"
+      ],
+      "must": [
+        "white-print-ground",
+        "print-css",
+        "semantic-reading-order",
+        "source-footer"
+      ],
+      "mustNot": [
+        "office-template-claim",
+        "unverified-medical-content"
+      ]
+    },
+    "office": {
+      "font": "Arial",
+      "preferredTemplates": [
+        "Brief",
+        "Bericht A4",
+        "Gelenktes Dokument",
+        "Gelenktes Dokument (quer)",
+        "Dokument A4 mit Partnerlogo"
+      ],
+      "must": [
+        "measured-template",
+        "office-logo-asset",
+        "repeat-header-footer-when-governed"
+      ],
+      "mustNot": [
+        "rubik",
+        "free-estimation",
+        "claude-design-composition-overrides"
+      ]
+    },
+    "presentation": {
+      "font": "Arial",
+      "preferredTemplate": "Präsentation",
+      "must": [
+        "16:9",
+        "title-top-58.8mm-on-title-slide",
+        "original-logos"
+      ],
+      "mustNot": [
+        "rubik",
+        "a4-geometry",
+        "12mm-as-title-coordinate"
+      ]
+    },
+    "fachstelle-handout": {
+      "status": "integrated-specialist-profile",
+      "profile": "fachstelle-handouts/profile.json",
+      "patterns": "fachstelle-handouts/patterns.json",
+      "starter": "fachstelle-handouts/starter.html",
+      "rule": "Bei psychoedukativen Orientierungs-, Praxis- oder Krisen-Handouts innerhalb desselben Design Systems auf das integrierte Fachstellen-Profil umschalten. Dessen Editorial-, Quellen-, Krisen-, Visualisierungs- und Dokumenttypregeln gelten zusätzlich. Schrift, Farben, Logo und Kompositionsprinzipien werden unverändert vom PUK-Elternsystem geerbt."
+    }
+  },
+  "contentSelection": {
+    "questionsBeforeDesign": [
+      "Welche Medienart entsteht?",
+      "Wer liest das Ergebnis und in welcher Situation?",
+      "Was soll nach dem Lesen klarer oder möglich sein?",
+      "Welcher eine Inhalt führt die Komposition?",
+      "Welche Aussage ist belegt, welche nur Beispieltext?"
+    ],
+    "canonicalPatternsFile": "claude-design/patterns.json",
+    "specialistPatternFiles": {
+      "fachstelle-handout": "fachstelle-handouts/patterns.json"
+    },
+    "maximumPrimaryActions": 1,
+    "maximumDominantBlueFields": 1
+  },
+  "imagery": {
+    "status": "authored-direction-not-manual-source",
+    "explanatoryVisualizations": {
+      "status": "explicitly-encouraged-system-extension",
+      "types": ["formal diagram", "infographic", "psychoeducational illustration", "orientation visualization"],
+      "rule": "Früh als Teil des Erkenntniswegs einsetzen, wenn sie Verständnis, Orientierung oder emotional angemessenen Zugang verbessern; nicht als nachträgliche Dekoration.",
+      "projectSpecificVisualLanguageAllowed": true,
+      "mustNotLookLikeUiComponent": true,
+      "required": ["content purpose", "text alternative or full explanation", "dignity", "technical and content accuracy", "authorship or source classification"]
+    },
+    "principles": [
+      "Menschen als handlungsfähige Personen statt als Diagnose zeigen.",
+      "Alltag, Beziehung und konkrete Umgebung vor abstraktem Krisenklischee.",
+      "Ruhige Bildausschnitte mit klarer Blickführung und freier Fläche für die Komposition.",
+      "Keine Blaufilter oder Duotones; PUK-Blau bleibt Gestaltungsfläche.",
+      "Keine gestellten Verzweiflungsposen, isolierten Köpfe in Händen oder psychiatrischen Symbolklischees.",
+      "Einwilligung, Persönlichkeitsrechte, Alt-Text und Bildnachweis sind Pflicht."
+    ]
+  },
+  "prohibitions": [
+    "Logo nachzeichnen oder durch Text ersetzen",
+    "PUK-Blau durch Corporate Navy ersetzen",
+    "Regeln zwischen Medienarten vermischen",
+    "vollständige Abdeckung aller 67 Büromedienzustände behaupten",
+    "medizinische oder organisatorische Fakten erfinden",
+    "externe Fonts, Icon-CDNs oder Bildressourcen laden",
+    "für Fachstellen-Handouts DM Serif Display, Source Serif 4, DM Sans oder eine Teal-Aubergine-Sand-Palette verwenden",
+    "ß in deutschsprachiger Ausgabe verwenden"
+  ],
+  "preflight": [
+    "Medienart und Schrift stimmen überein",
+    "Original-Logos sind unverzerrt",
+    "genau ein Hauptfokus ist erkennbar",
+    "Schweizer Orthografie ist eingehalten",
+    "Interaktive Elemente besitzen sichtbaren Fokus",
+    "keine externen Netzressourcen",
+    "Geltungsgrenze wird nicht übertrieben"
+  ]
+}
