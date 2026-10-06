@@ -1,0 +1,68 @@
+/* UI-Kit-Rahmen – nur für die Claude-Referenzansicht, nicht Teil der Website. */
+.kit-bar{background:var(--surface-sunken);border-bottom:1px solid var(--border-default);padding:10px var(--web-gutter-inline);font-family:var(--font-core);color:var(--text-default)}
+.kit-bar__label{margin:0 0 6px;font:var(--type-caption);color:var(--text-muted)}
+.kit-bar__groups{display:flex;flex-wrap:wrap;gap:6px 28px}
+.kit-bar__group{display:flex;flex-wrap:wrap;align-items:center;gap:0 12px;min-width:0}
+.kit-bar__group-name{font:var(--type-caption);font-weight:var(--fw-medium);text-transform:uppercase;letter-spacing:.06em;color:var(--text-muted)}
+.kit-bar ul{display:flex;flex-wrap:wrap;gap:0 12px;margin:0;padding:0;list-style:none}
+.kit-bar a{display:inline-flex;align-items:center;min-height:32px;font:var(--type-body-sm);color:var(--text-default);text-decoration:underline;text-decoration-color:var(--puk-black-25);text-underline-offset:.2em}
+.kit-bar a:hover{color:var(--text-link);text-decoration-color:currentColor}
+.kit-bar a[aria-current="page"]{color:var(--text-link);text-decoration-color:currentColor;text-decoration-thickness:2px}
+.kit-bar a:focus-visible{outline:none;box-shadow:var(--focus-ring)}
+.kit-bar__note{margin:6px 0 0;max-width:110ch;font:var(--type-caption);color:var(--text-default)}
+.kit-visually-hidden{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+/* Kit-Beispiel: eigene didaktische Orientierungsgrafik. Eigenständige Bildsprache
+   (organische Formen, Tonwertverlauf) nur innerhalb der Figur; Seite bleibt flach. */
+.kit-orient{container-type:inline-size;position:relative;margin:var(--space-6) 0 0;padding:clamp(20px,4vw,48px);background:var(--surface-structure);border:1px solid var(--border-hairline)}
+.kit-orient__steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--space-8)}
+.kit-orient__step{position:relative;display:flex;flex-direction:column;gap:var(--space-2)}
+.kit-orient__mark{position:relative;width:120px;height:100px;flex:none}
+.kit-orient__mark svg{display:block;width:100%;height:100%}
+.kit-orient__num{position:absolute;inset:0;display:grid;place-items:center;font-family:var(--font-core);font-weight:300;font-size:40px;line-height:1;color:var(--text-default)}
+.kit-orient__title{margin:var(--space-2) 0 0;font:var(--type-title-3);color:var(--text-default)}
+.kit-orient__q{margin:0;font:var(--type-body);color:var(--text-default)}
+.kit-orient__d{margin:0;font:var(--type-body-sm);color:var(--text-muted);max-width:34ch}
+.kit-orient__link{color:var(--puk-blue-100)}
+.kit-orient__link--h{position:absolute;left:132px;top:28px;width:calc(100% - 132px + var(--space-8) - 4px);height:40px}
+.kit-orient__link--v{display:none;width:40px;height:56px;margin:var(--space-1) 0 0 40px}
+.kit-orient__caption{margin:var(--space-8) 0 0;padding-top:var(--space-4);border-top:1px solid var(--border-default);font:var(--type-caption);color:var(--text-default);max-width:80ch}
+.kit-orient__rules{margin:var(--space-4) 0 0;padding-left:1.2em;display:grid;gap:var(--space-3)}
+@container (max-width:720px){
+  .kit-orient__steps{grid-template-columns:minmax(0,1fr);gap:0}
+  .kit-orient__link--h{display:none}
+  .kit-orient__link--v{display:block}
+  .kit-orient__d{max-width:none}
+}
+/* Worttrennung im UI-Kit: normale deutsche Wörter werden nicht mitten im Wort
+   umbrochen. break-word statt anywhere: lange technische Zeichenketten brechen
+   weiterhin sicher um, wenn sie breiter als die ganze Zeile sind; die
+   Mindestbreite von Rasterzellen richtet sich aber nach ganzen Wörtern, statt
+   auf einzelne Buchstaben zu schrumpfen. Keine automatische Silbentrennung. */
+.puk-web-page{overflow-wrap:break-word;hyphens:manual}
+.puk-web-page :where(li,article,section,div,dl,dd,dt,figure,figcaption,p,h1,h2,h3,label,a,strong,span){min-width:0}
+/* Erklärgrafik: dreispaltig nur, wenn die Figur breit genug für ganze
+   Beschriftungen ist; sonst gestapelt wie unter 760 px. */
+.puk-longform__figure{container-type:inline-size}
+@container (max-width:560px){
+  .puk-longform__figure-stage{grid-template-columns:minmax(0,1fr);min-height:0}
+  .puk-longform__figure-relation{max-width:none}
+}
+/* Abschnittstitel in der schmalen Kopfspalte: Grad folgt der Spaltenbreite,
+   damit lange Komposita wie «zusammenwirken» ganz bleiben. */
+.puk-longform__section-heading{container-type:inline-size}
+.puk-longform__section-heading .puk-web-h2{max-width:none;font-size:max(26px,min(var(--web-size-h2-fluid),11.5cqi))}
+.puk-longform__section-grid{grid-template-columns:minmax(220px,.58fr) minmax(0,1.42fr)}
+@media (max-width:760px){.puk-longform__section-grid{grid-template-columns:minmax(0,1fr)}}
+.puk-longform__term-guide{grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr))}
+/* Schmale Viewports (320–360 px): Grade so begrenzen, dass lange Komposita
+   in Lead, Abschnitts- und Kartentiteln eine ganze Zeile finden. */
+.puk-web-lead{font-size:clamp(21px,7vw,var(--web-size-lead))}
+.puk-app-h2{font-size:clamp(27px,8.4vw,36px)}
+.puk-app-card h3,.puk-app-choice strong{font-size:clamp(20px,6.3vw,24px)}
+/* Mobile Hauptnavigation: Spaltenmindestbreite nach dem längsten Linktext
+   («Handlungsübersicht»), damit kein Link mitten im Wort bricht oder überläuft. */
+@media (max-width:760px){.puk-web-nav__list{grid-template-columns:repeat(auto-fit,minmax(min(100%,196px),1fr))}}
+/* 200 % Text: Kit-Leiste und lange Aktionsbeschriftungen dürfen nicht überlaufen. */
+.kit-bar{overflow-wrap:break-word}.kit-bar__group-name{min-width:0;max-width:100%;overflow-wrap:anywhere}
+.kit-bar ul{min-width:0;max-width:100%}.kit-bar li{min-width:0;max-width:100%}.kit-bar a{max-width:100%;overflow-wrap:anywhere}
+.puk-app-action,.puk-link--action,.puk-app-expired,.puk-web-nav__link{min-width:0;max-width:100%;overflow-wrap:anywhere}

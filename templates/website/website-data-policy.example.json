@@ -1,0 +1,11 @@
+{
+  "status": "prepared-not-approved",
+  "reviewedAt": "YYYY-MM-DD",
+  "reviewerRole": "Datenschutzverantwortliche Stelle",
+  "dataCategories": [
+    "Art der lokal gespeicherten Eingaben"
+  ],
+  "retention": "Konkrete und sichtbare Aufbewahrungsregel",
+  "deleteMechanism": "Bedienelement mit data-storage-delete",
+  "transmission": "not-yet-verified"
+}

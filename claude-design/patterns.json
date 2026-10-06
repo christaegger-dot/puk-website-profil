@@ -1,0 +1,235 @@
+{
+  "schemaVersion": 1,
+  "systemVersion": "1.10.1",
+  "selectionRule": "Nur Muster verwenden, die dem Kommunikationsziel dienen. Metapher vor Diagramm, Diagramm vor Container.",
+  "patterns": [
+    {
+      "id": "orientation",
+      "name": "Orientierung",
+      "job": "In wenigen Sekunden klären, worum es geht und für wen das Angebot oder der Inhalt gedacht ist.",
+      "suitableMedia": [
+        "digital",
+        "designed-publication"
+      ],
+      "required": [
+        "eyebrow",
+        "single-heading",
+        "short-lead",
+        "context-statement"
+      ],
+      "optional": [
+        "one-primary-action",
+        "one-visual-anchor"
+      ],
+      "avoid": [
+        "multiple-equal-headlines",
+        "generic-hero-copy",
+        "diagnostic-labelling-of-reader"
+      ]
+    },
+    {
+      "id": "next-steps",
+      "name": "Nächste Schritte",
+      "job": "Eine überschaubare Reihenfolge von zwei bis vier konkreten Handlungen anbieten.",
+      "suitableMedia": [
+        "digital",
+        "designed-publication",
+        "presentation"
+      ],
+      "required": [
+        "ordered-sequence",
+        "verb-led-labels",
+        "clear-end-state"
+      ],
+      "optional": [
+        "time-estimate",
+        "responsibility"
+      ],
+      "avoid": [
+        "more-than-four-primary-steps",
+        "vague-learn-more-endings"
+      ]
+    },
+    {
+      "id": "process",
+      "name": "Prozess",
+      "job": "Einen zeitlichen oder organisatorischen Ablauf sichtbar und erwartbar machen.",
+      "suitableMedia": [
+        "digital",
+        "designed-publication",
+        "presentation"
+      ],
+      "required": [
+        "start",
+        "sequence",
+        "end",
+        "plain-language-labels"
+      ],
+      "optional": [
+        "decision-point",
+        "responsible-role"
+      ],
+      "avoid": [
+        "decorative-arrows",
+        "unlabelled-loops",
+        "false-linearity"
+      ]
+    },
+    {
+      "id": "priority-notice",
+      "name": "Prioritätshinweis",
+      "job": "Eine wichtige Grenze, Voraussetzung oder Sicherheitsinformation aus dem Lesefluss herausheben.",
+      "suitableMedia": [
+        "digital",
+        "designed-publication",
+        "office"
+      ],
+      "required": [
+        "descriptive-heading",
+        "consequence",
+        "next-action-if-applicable"
+      ],
+      "optional": [
+        "signal-color"
+      ],
+      "avoid": [
+        "color-only-meaning",
+        "alarmist-tone",
+        "medical-emergency-number-outside-authorized-crisis-document"
+      ]
+    },
+    {
+      "id": "faq",
+      "name": "FAQ",
+      "job": "Wiederkehrende Unsicherheiten in selbstständige Fragen und kurze Antworten zerlegen.",
+      "suitableMedia": [
+        "digital",
+        "designed-publication"
+      ],
+      "required": [
+        "reader-worded-question",
+        "standalone-answer",
+        "logical-order"
+      ],
+      "optional": [
+        "progressive-disclosure-on-digital"
+      ],
+      "avoid": [
+        "marketing-questions",
+        "answers-dependent-on-other-pages",
+        "hidden-critical-information"
+      ]
+    },
+    {
+      "id": "contact-handoff",
+      "name": "Kontakt und Übergabe",
+      "job": "Klar zeigen, wer zuständig ist, was vor einem Kontakt vorbereitet werden kann und was danach geschieht.",
+      "suitableMedia": [
+        "digital",
+        "office",
+        "designed-publication"
+      ],
+      "required": [
+        "responsible-unit",
+        "channel",
+        "availability-or-response-expectation",
+        "privacy-aware-copy"
+      ],
+      "optional": [
+        "preparation-list"
+      ],
+      "avoid": [
+        "invented-contact-data",
+        "multiple-equal-primary-channels",
+        "unclear-ownership"
+      ]
+    },
+    {
+      "id": "evidence-source",
+      "name": "Evidenz und Quelle",
+      "job": "Belegen, worauf eine fachliche Aussage beruht, ohne den Hauptinhalt zu überladen.",
+      "suitableMedia": [
+        "digital",
+        "designed-publication",
+        "office",
+        "presentation"
+      ],
+      "required": [
+        "claim-scope",
+        "source",
+        "date-or-version"
+      ],
+      "optional": [
+        "method",
+        "limitations"
+      ],
+      "avoid": [
+        "source-free-statistics",
+        "decorative-citation-box",
+        "unverified-url"
+      ]
+    },
+    {
+      "id": "data-story",
+      "name": "Datenbotschaft",
+      "job": "Eine Kernaussage aus Daten führen und die Werte danach nachvollziehbar zeigen.",
+      "suitableMedia": [
+        "digital",
+        "designed-publication",
+        "presentation"
+      ],
+      "required": [
+        "message-title",
+        "labelled-values",
+        "unit",
+        "source"
+      ],
+      "optional": [
+        "comparison",
+        "time-range"
+      ],
+      "avoid": [
+        "pie-chart-for-many-categories",
+        "legend-only-identification",
+        "decorative-3d",
+        "color-only-series"
+      ]
+    },
+    {
+      "id": "situation-navigator",
+      "name": "Situationsnavigator",
+      "job": "Alltagsnahe Situationen zu zusammengehörigen Impulsen und Gesprächshilfen führen.",
+      "suitableMedia": ["digital"],
+      "required": ["shared-filter", "live-result-count", "reset", "unfiltered-safety-exit"],
+      "optional": ["clickable-topic-tags"],
+      "avoid": ["diagnosis", "browser-storage", "filtering-away-safety-information"]
+    },
+    {
+      "id": "contact-pathfinder",
+      "name": "Kontaktwegweiser",
+      "job": "Über verständliche Dringlichkeitsstufen zu genau einem geprüften nächsten Kontaktweg führen.",
+      "suitableMedia": ["digital"],
+      "required": ["maximum-three-levels", "one-primary-action", "content-owner", "review-date"],
+      "optional": ["preparation-note"],
+      "avoid": ["symptom-score", "automatic-medical-triage", "critical-information-only-in-dialog"]
+    },
+    {
+      "id": "conversation-guide",
+      "name": "Gesprächshilfe",
+      "job": "Situation und Ziel mit Formulierung, eigener Grenze und kleinem nächsten Schritt verbinden.",
+      "suitableMedia": ["digital"],
+      "required": ["separate-situation-and-goal", "first-person-boundary", "small-next-step"],
+      "optional": ["copy-feedback"],
+      "avoid": ["success-promise", "blame", "clinical-instruction"]
+    },
+    {
+      "id": "service-finder",
+      "name": "Angebotsnavigator",
+      "job": "Geprüfte Angebote durch lokale Suche und Kategorien auffindbar machen.",
+      "suitableMedia": ["digital"],
+      "required": ["local-search", "categories", "empty-state", "content-owner", "review-date"],
+      "optional": ["availability-status"],
+      "avoid": ["third-party-search-transmission", "implicit-jurisdiction", "unmarked-expired-entry"]
+    }
+  ]
+}

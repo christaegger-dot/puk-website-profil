@@ -1,0 +1,241 @@
+{
+  "schemaVersion": 1,
+  "systemVersion": "1.10.1",
+  "selectionRule": "Metapher vor Strukturdiagramm vor Inhaltscontainer.",
+  "patterns": [
+    {
+      "id": "traffic-light",
+      "category": "metaphor",
+      "name": "Ampel",
+      "jobs": [
+        "Warnsignale",
+        "Risikoschwellen",
+        "Eskalationsstufen"
+      ],
+      "preferredTypes": [
+        "orientation",
+        "crisis"
+      ],
+      "altTextRequired": true
+    },
+    {
+      "id": "gauge",
+      "category": "metaphor",
+      "name": "Tacho oder Skala",
+      "jobs": [
+        "Belastungskontinuum",
+        "eigene Mittel",
+        "Verlauf"
+      ],
+      "preferredTypes": [
+        "orientation",
+        "practice"
+      ],
+      "altTextRequired": true
+    },
+    {
+      "id": "toolbox",
+      "category": "metaphor",
+      "name": "Werkzeugkasten",
+      "jobs": [
+        "Selbstfürsorge",
+        "mehrere diskrete Hilfen"
+      ],
+      "preferredTypes": [
+        "practice",
+        "orientation"
+      ],
+      "altTextRequired": true
+    },
+    {
+      "id": "balance-field",
+      "category": "metaphor",
+      "name": "Spannungsfeld oder Waage",
+      "jobs": [
+        "Ambivalenz",
+        "Loyalitätskonflikt",
+        "mehrere berechtigte Pole"
+      ],
+      "preferredTypes": [
+        "orientation"
+      ],
+      "altTextRequired": true
+    },
+    {
+      "id": "lifebuoy",
+      "category": "metaphor",
+      "name": "Rettungsring oder Wegweiser",
+      "jobs": [
+        "Akutpfad",
+        "Sofortorientierung"
+      ],
+      "preferredTypes": [
+        "crisis"
+      ],
+      "altTextRequired": true
+    },
+    {
+      "id": "iceberg",
+      "category": "metaphor",
+      "name": "Eisberg",
+      "jobs": [
+        "sichtbar und verborgen",
+        "Verhalten und Belastung"
+      ],
+      "preferredTypes": [
+        "orientation"
+      ],
+      "altTextRequired": true
+    },
+    {
+      "id": "cycle",
+      "category": "structure-diagram",
+      "name": "Kreislauf",
+      "jobs": [
+        "Rückkopplung",
+        "Teufelskreis",
+        "Ausstiegspunkt"
+      ],
+      "preferredTypes": [
+        "orientation"
+      ],
+      "altTextRequired": true
+    },
+    {
+      "id": "continuum",
+      "category": "structure-diagram",
+      "name": "Kontinuum",
+      "jobs": [
+        "Spektrum",
+        "Pole",
+        "Übergänge"
+      ],
+      "preferredTypes": [
+        "orientation"
+      ],
+      "altTextRequired": true
+    },
+    {
+      "id": "decision-path",
+      "category": "structure-diagram",
+      "name": "Entscheidungspfad",
+      "jobs": [
+        "Triage",
+        "Wenn-dann-Abfolge",
+        "nächster Schritt",
+        "administrativer Orientierungsweg"
+      ],
+      "preferredTypes": [
+        "orientation",
+        "practice",
+        "crisis"
+      ],
+      "altTextRequired": true
+    },
+    {
+      "id": "sequence",
+      "category": "structure-diagram",
+      "name": "Schrittfolge",
+      "jobs": [
+        "Gespräch vorbereiten",
+        "Vorgehen",
+        "Prozess",
+        "administrativer Ablauf",
+        "Fristenfolge"
+      ],
+      "preferredTypes": [
+        "orientation",
+        "practice"
+      ],
+      "altTextRequired": true
+    },
+    {
+      "id": "wording-cards",
+      "category": "content-container",
+      "name": "Formulierungsbausteine",
+      "jobs": [
+        "Vorher-nachher",
+        "hilfreiche Sätze",
+        "Grenzsetzung"
+      ],
+      "preferredTypes": [
+        "practice"
+      ],
+      "altTextRequired": false
+    },
+    {
+      "id": "helps-harms",
+      "category": "content-container",
+      "name": "Was hilft oder schadet",
+      "jobs": [
+        "polare Gegenüberstellung",
+        "Verhaltensoptionen"
+      ],
+      "preferredTypes": [
+        "practice",
+        "orientation"
+      ],
+      "altTextRequired": false
+    },
+    {
+      "id": "pull-quote",
+      "category": "content-container",
+      "name": "Hilfreicher Satz",
+      "jobs": [
+        "Gesprächseinstieg",
+        "Reframing",
+        "Mikrokopie"
+      ],
+      "preferredTypes": [
+        "practice",
+        "orientation"
+      ],
+      "altTextRequired": false
+    },
+    {
+      "id": "reflection",
+      "category": "content-container",
+      "name": "Reflexionsimpuls",
+      "jobs": [
+        "nächster Schritt",
+        "Beobachtungsfrage"
+      ],
+      "preferredTypes": [
+        "orientation",
+        "practice"
+      ],
+      "altTextRequired": false
+    },
+    {
+      "id": "facts-band",
+      "category": "content-container",
+      "name": "Kennzahlenband",
+      "jobs": [
+        "schneller Überblick",
+        "vier Eckwerte",
+        "Einstieg vor den Details"
+      ],
+      "preferredTypes": [
+        "orientation"
+      ],
+      "altTextRequired": false,
+      "countsAsVisualAnchor": false,
+      "note": "Ergänzt den visuellen Anker, ersetzt ihn nie. Mindestens eine Sequenz, Zeitachse oder Entscheidungslogik bleibt Pflicht."
+    },
+    {
+      "id": "criteria-grid",
+      "category": "content-container",
+      "name": "Kriterienraster",
+      "jobs": [
+        "Voraussetzungen",
+        "Angaben in Gruppen",
+        "Zuständigkeiten"
+      ],
+      "preferredTypes": [
+        "orientation"
+      ],
+      "altTextRequired": false,
+      "countsAsVisualAnchor": false
+    }
+  ]
+}

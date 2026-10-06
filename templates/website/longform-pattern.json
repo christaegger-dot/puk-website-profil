@@ -1,0 +1,228 @@
+{
+  "schemaVersion": 1,
+  "systemVersion": "1.10.1",
+  "id": "longform-psychoeducation",
+  "name": "Langform und Psychoedukation",
+  "status": "validated-system-pattern",
+  "authority": {
+    "type": "system-defined-web-pattern",
+    "officialPukCorporateDesignRule": false,
+    "source": "Pilotbefunde und drei synthetische Transferprüfungen",
+    "humanComprehensionTested": false
+  },
+  "purpose": "Inhaltsreiche Informations- und Psychoedukationsseiten als nachvollziehbaren Erkenntnisweg statt als Folge gleichrangiger Module strukturieren.",
+  "defaultJourney": [
+    "Orientierung",
+    "Verständnis",
+    "Vertiefung",
+    "Alltagsbezug",
+    "Handlungsmöglichkeiten"
+  ],
+  "journeyRule": "Die Folge ist ein Ausgangspunkt und keine starre Schablone. Seiten mit dringlichem Hauptziel beginnen mit dem dringlichen Weg.",
+  "contracts": [
+    {
+      "id": "roadmap",
+      "label": "Kapitelorientierung",
+      "requirement": "SOLL",
+      "useWhen": "mindestens vier inhaltlich aufeinander aufbauende Hauptabschnitte",
+      "must": [
+        "kurze sprechende Bezeichnungen",
+        "echte Sprungziele",
+        "logische Lesereihenfolge"
+      ],
+      "mustNot": [
+        "jede Zwischenüberschrift wiederholen",
+        "als einzige Orientierung dienen"
+      ]
+    },
+    {
+      "id": "term-guide",
+      "label": "Begriffsorientierung",
+      "requirement": "SOLL",
+      "useWhen": "mehrere Fachbegriffe für den weiteren Erkenntnisweg nötig sind",
+      "must": [
+        "Begriffe knapp voneinander abgrenzen",
+        "Definitionen im folgenden Text vertiefen"
+      ],
+      "mustNot": [
+        "ein Glossar ohne Bezug zum Kapitel erzeugen"
+      ]
+    },
+    {
+      "id": "explanation",
+      "label": "Zusammenhängende Erklärung",
+      "requirement": "MUSS",
+      "useWhen": "ein Gedankengang, Ursache-Wirkungs-Zusammenhang oder Modell erklärt wird",
+      "must": [
+        "Lesebreite 45 bis 75 ch",
+        "Absätze mit erkennbarem Zusammenhang"
+      ],
+      "mustNot": [
+        "einen zusammenhängenden Gedankengang ohne Grund in Karten zerlegen"
+      ]
+    },
+    {
+      "id": "figure",
+      "label": "Erklärende Visualisierung",
+      "requirement": "SOLL",
+      "useWhen": "eine Beziehung, Veränderung, Abfolge, räumliche Ordnung, Metapher oder ein Erleben mit Text allein schwerer erfassbar ist",
+      "must": [
+        "inhaltlicher Zweck",
+        "passende Wahl zwischen Diagramm, Infografik, Illustration und orientierender Visualisierung",
+        "Textalternative oder vollständige Erklärung",
+        "Beschriftung oder Einordnung"
+      ],
+      "mustNot": [
+        "nur dekorativ verdoppeln, was bereits direkt daneben steht",
+        "eine Illustration in die Form eines UI-Containers zwingen"
+      ]
+    },
+    {
+      "id": "reflection",
+      "label": "Reflexion oder Übung",
+      "requirement": "KANN",
+      "useWhen": "Lesende das Erklärte auf die eigene Situation übertragen sollen",
+      "must": [
+        "freiwillige Formulierung",
+        "sichtbares Ziel",
+        "keine Speicherung sensibler Eingaben als Standard"
+      ],
+      "mustNot": [
+        "Diagnose oder klinischen Score ableiten"
+      ]
+    },
+    {
+      "id": "transition",
+      "label": "Abschnittsübergang",
+      "requirement": "SOLL",
+      "useWhen": "der nächste Hauptabschnitt einen neuen Schritt im Erkenntnisweg beginnt",
+      "must": [
+        "Vorheriges knapp einordnen",
+        "Nutzen des nächsten Abschnitts benennen"
+      ],
+      "mustNot": [
+        "nur den nächsten Titel wiederholen"
+      ]
+    },
+    {
+      "id": "sources",
+      "label": "Quellen und Einordnung",
+      "requirement": "MUSS für fachliche Aussagen",
+      "useWhen": "fachliche Modelle, gesundheitsbezogene Aussagen oder operative Informationen verwendet werden",
+      "must": [
+        "Quelle und Verwendung zuordnen",
+        "eigene didaktische Darstellung als solche kennzeichnen",
+        "Prüfgrenzen nennen"
+      ],
+      "mustNot": [
+        "synthetische Beispiele als fachlich freigegebene Inhalte ausgeben"
+      ]
+    }
+  ],
+  "formatDecisionGuide": [
+    {
+      "format": "Fliesstext",
+      "chooseWhen": "Gedanken aufeinander aufbauen oder eine Erklärung ohne Auswahlhandlung verstanden werden soll"
+    },
+    {
+      "format": "Karte",
+      "chooseWhen": "mehrere eigenständige, auswählbare oder vergleichbare Einheiten vorliegen"
+    },
+    {
+      "format": "Diagramm oder Infografik",
+      "chooseWhen": "Beziehungen, Zustandsänderungen, Mengen oder Abläufe räumlich schneller erfassbar werden"
+    },
+    {
+      "format": "Illustration",
+      "chooseWhen": "eine Metapher, ein Erleben oder ein emotional angemessener Zugang das Verständnis verbessert"
+    },
+    {
+      "format": "Akkordeon",
+      "chooseWhen": "optionale Vertiefung vorliegt und die geschlossene Überschrift den Inhalt zuverlässig ankündigt"
+    },
+    {
+      "format": "eigener Abschnitt oder eigene Seite",
+      "chooseWhen": "ein eigenständiges Nutzerziel, dauerhaft hohe Inhaltsmenge oder eine andere Dringlichkeit vorliegt"
+    }
+  ],
+  "responsive": {
+    "requiredWidthsPx": [
+      320,
+      360,
+      768,
+      1440
+    ],
+    "readingMeasureCh": {
+      "minimum": 45,
+      "maximum": 75
+    },
+    "narrowLayout": "eine logische Spalte; Orientierung darf horizontal scrollbar sein, wenn alle Ziele per Tastatur erreichbar und vollständig sichtbar bleiben",
+    "longWords": "Überschriften, Quellen und Links müssen ohne horizontalen Seitenüberlauf umbrechen"
+  },
+  "links": {
+    "inline": "Echte Inline-Links bleiben display:inline und erhalten keine künstliche Mindesthöhe.",
+    "standaloneAction": "Eigenständige Aktionslinks erhalten mindestens 44 px Zielhöhe.",
+    "focus": "Beide Varianten besitzen einen deutlich sichtbaren Fokuszustand."
+  },
+  "safety": {
+    "decisionSource": "templates/website/profile.json#safetyAccess",
+    "status": "requires-contextual-clinical-and-communications-approval"
+  },
+  "references": [
+    "templates/website/longform/grundlagenkapitel.html",
+    "templates/website/longform/handlungsuebersicht.html",
+    "templates/website/longform/transfer-erholung.html"
+  ],
+  "visualStrategy": {
+    "revision": "PUK Website Kit 1.10.1-r4 · abgeleitet",
+    "canonicalSource": "PUK Zürich Design System 1.10.1 (unverändert)",
+    "guideline": "guidelines/07-visualisierung-umsetzen.md",
+    "planRequiredBeforeBuild": true,
+    "planColumns": [
+      "Abschnitt",
+      "Erkenntnisziel",
+      "Gewähltes Format",
+      "Aussage oder Beziehung",
+      "Quelle bzw. Kennzeichnung als eigene Darstellung",
+      "Alternativtext oder Langbeschreibung",
+      "Begründung (Visualisierung hilft / Text klarer)"
+    ],
+    "defaultVisualizeFor": [
+      "Beziehung",
+      "Kreislauf",
+      "Prozess",
+      "Veränderung",
+      "Zustand",
+      "Entscheidung",
+      "emotional schwer zugängliches Erleben"
+    ],
+    "omissionRequiresReason": true,
+    "minimumCount": null,
+    "decorativeImages": "nicht zulässig",
+    "largeReportThreshold": {
+      "mainChapters": 8,
+      "rule": "Plan zeigt, wie die zentralen Erkenntnisschritte visuell getragen werden"
+    },
+    "patterns": {
+      "reference": "templates/website/longform/visualisierungsmuster.html",
+      "styles": "templates/website/longform/visual-patterns.css",
+      "items": [
+        "figure-longdesc",
+        "cycle-4",
+        "process-path",
+        "illustration-placeholder",
+        "comparison",
+        "decision-path"
+      ]
+    },
+    "reportToWeb": "didaktisch übersetzen, nicht wortgetreu als Einzelseite; bei mehreren Nutzerzielen, Zielgruppen oder sehr hoher Inhaltsmenge Einstiegsseite plus getrennte Seiten/Lesepfade; Vollbericht als Download möglich",
+    "reviewGate": {
+      "name": "Textwand-/Visualisierungs-Check",
+      "blocking": false,
+      "replacesExpertApproval": false,
+      "undocumentedOmissionOnLargePage": "nicht zulässig – explizit dokumentieren"
+    },
+    "cycleRule": "768/1440 px: geschlossene Schleife; 320/360 px: lineare Abfolge nur mit sichtbarem «zurück zu Station 1\"; «Uhrzeigersinn» nur in [data-cycle-wide]",
+    "multiPageStarter": "templates/website/psychoeducation-site-starter/"
+  }
+}

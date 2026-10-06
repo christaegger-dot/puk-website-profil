@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de-CH" data-puk-application="situation-navigator">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="PUK-Referenz für einen zugänglichen Situationsnavigator ohne Diagnosefunktion.">
+<title>Situationsnavigator – Anwendungsmuster | PUK Zürich</title>
+<link rel="icon" href="../../../assets/logo/PUK_Logo-Symbol_statisch_positiv.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../../styles.css">
+<link rel="stylesheet" href="applications.css">
+<script src="applications.js" defer></script>
+</head>
+<body><div class="puk-web-page" data-web-profile="website">
+<a class="puk-web-skip" href="#main-content">Zum Hauptinhalt</a>
+<header class="puk-web-header"><div class="puk-web-container puk-web-header__inner">
+<a class="puk-web-logo" href="situationsnavigator.html" aria-label="Startseite der Anwendungsmuster"><img src="../../../assets/logo/PUK_Logo_statisch_positiv_de.svg" alt="Psychiatrische Universitätsklinik Zürich"></a>
+<nav class="puk-web-nav" aria-label="Anwendungsmuster"><ul class="puk-web-nav__list" role="list">
+<li><a class="puk-web-nav__link" href="situationsnavigator.html" aria-current="page">Situationen</a></li>
+<li><a class="puk-web-nav__link" href="kontaktwegweiser.html">Kontaktwege</a></li>
+<li><a class="puk-web-nav__link" href="gespraechshilfe.html">Gesprächshilfe</a></li>
+<li><a class="puk-web-nav__link" href="angebotsnavigator.html">Angebote</a></li>
+<li><a class="puk-web-nav__link puk-web-nav__link--emergency" href="kontaktwegweiser.html#sofort">Akute Hilfe</a></li>
+</ul></nav></div></header>
+
+<main id="main-content" class="puk-web-main" tabindex="-1">
+<section class="puk-web-container puk-app-hero">
+<p class="puk-web-eyebrow">Anwendungsmuster · Orientierung</p>
+<h1 class="puk-web-h1">Was brauchen Sie jetzt?</h1>
+<p class="puk-web-lead">Wählen Sie eine Alltagssituation. Der Navigator verbindet passende Impulse und Formulierungshilfen, ohne eine Diagnose oder Behandlungsempfehlung abzuleiten.</p>
+<p class="puk-app-boundary">Referenz mit neutralen Beispielinhalten. Fachinhalte und Sicherheitswege müssen vor einer Veröffentlichung redaktionell bestätigt werden.</p>
+</section>
+
+<section class="puk-web-container puk-app-section" aria-labelledby="filter-title" data-situation-controls>
+<h2 class="puk-app-h2" id="filter-title">Worum geht es gerade?</h2>
+<div class="puk-app-filter" aria-label="Situation filtern">
+<button class="puk-app-chip" type="button" data-situation-filter="all" aria-pressed="true">Alle Themen</button>
+<button class="puk-app-chip" type="button" data-situation-filter="kontakt" aria-pressed="false">Gespräch ohne Druck</button>
+<button class="puk-app-chip" type="button" data-situation-filter="struktur" aria-pressed="false">Struktur im Alltag</button>
+<button class="puk-app-chip" type="button" data-situation-filter="entlastung" aria-pressed="false">Eigene Entlastung</button>
+<button class="puk-app-chip" type="button" data-situation-filter="sicherheit" aria-pressed="false">Sicherheit klären</button>
+</div>
+<div class="puk-app-toolbar">
+<p class="puk-app-status"><span data-situation-active>Alle Themen</span> · <span role="status" aria-live="polite" aria-atomic="true" data-situation-status></span></p>
+<button class="puk-app-reset" type="button" data-situation-reset>Filter zurücksetzen</button>
+</div>
+
+<ul class="puk-app-grid" role="list" aria-label="Handlungsimpulse">
+<li data-situation-topics="kontakt struktur" data-counted="true"><article class="puk-app-card puk-app-card--accent"><span class="puk-app-kicker">Nächster Schritt</span><h3>Mit einer kleinen Frage beginnen</h3><p>Fragen Sie nicht nach einer vollständigen Lösung, sondern danach, welcher Teil heute am schwierigsten ist.</p><button class="puk-app-mini" type="button" data-pick-situation="kontakt"># Gespräch ohne Druck</button></article></li>
+<li data-situation-topics="struktur" data-counted="true"><article class="puk-app-card puk-app-card--accent"><span class="puk-app-kicker">Alltag</span><h3>Eine Aufgabe verkleinern</h3><p>Trennen Sie Anfangen, Ordnen und Dranbleiben. Vereinbaren Sie nur einen überprüfbaren nächsten Schritt.</p><button class="puk-app-mini" type="button" data-pick-situation="struktur"># Struktur im Alltag</button></article></li>
+<li data-situation-topics="entlastung kontakt" data-counted="true"><article class="puk-app-card puk-app-card--accent"><span class="puk-app-kicker">Angehörige</span><h3>Unterstützung und Grenze verbinden</h3><p>Sagen Sie gleichzeitig, wobei Sie helfen können und was Sie nicht allein übernehmen können.</p><button class="puk-app-mini" type="button" data-pick-situation="entlastung"># Eigene Entlastung</button></article></li>
+<li data-situation-topics="sicherheit" data-counted="true"><article class="puk-app-card puk-app-card--danger"><span class="puk-app-kicker">Sicherheit</span><h3>Dringlichkeit getrennt klären</h3><p>Bei möglicher akuter Gefahr führt der Wegweiser aus diesem Muster direkt zum fachlich freigegebenen Notfallweg.</p><a class="puk-app-action" href="kontaktwegweiser.html#sofort">Kontaktwege prüfen</a></article></li>
+</ul>
+</section>
+
+<section class="puk-web-container puk-app-section" aria-labelledby="phrases-title">
+<h2 class="puk-app-h2" id="phrases-title">Passende Gesprächseinstiege</h2>
+<ul class="puk-app-grid" role="list">
+<li data-situation-topics="kontakt entlastung"><article class="puk-app-card"><span class="puk-app-kicker">Kontakt</span><h3>Wahl lassen</h3><p>«Möchten Sie, dass ich zuhöre, mitdenke oder bei einem konkreten Schritt helfe?»</p></article></li>
+<li data-situation-topics="struktur"><article class="puk-app-card"><span class="puk-app-kicker">Struktur</span><h3>Konkret fragen</h3><p>«Was ist heute schwieriger: anfangen, ordnen oder dranbleiben?»</p></article></li>
+<li data-situation-topics="sicherheit"><article class="puk-app-card"><span class="puk-app-kicker">Sicherheit</span><h3>Wahrnehmung anerkennen</h3><p>«Ich nehme wahr, dass Sie sich gerade sehr unsicher fühlen. Was würde jetzt etwas mehr Sicherheit geben?»</p></article></li>
+</ul>
+</section>
+</main>
+<footer class="puk-web-footer"><div class="puk-web-container"><p class="puk-app-footer-note"><strong>Freigabegrenze:</strong> Dieses Muster strukturiert Inhalte. Es beurteilt keine Symptome und ersetzt keine fachliche Beratung.</p></div></footer>
+</div></body></html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="de-CH" data-puk-application="service-finder">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="PUK-Referenz für einen zugänglichen Angebotsnavigator mit Suche, Kategorien und Aktualitätsangaben.">
+<title>Angebotsnavigator – Anwendungsmuster | PUK Zürich</title>
+<link rel="icon" href="../../../assets/logo/PUK_Logo-Symbol_statisch_positiv.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../../styles.css">
+<link rel="stylesheet" href="applications.css">
+<script src="applications.js" defer></script>
+</head>
+<body><div class="puk-web-page" data-web-profile="website">
+<a class="puk-web-skip" href="#main-content">Zum Hauptinhalt</a>
+<header class="puk-web-header"><div class="puk-web-container puk-web-header__inner">
+<a class="puk-web-logo" href="situationsnavigator.html" aria-label="Startseite der Anwendungsmuster"><img src="../../../assets/logo/PUK_Logo_statisch_positiv_de.svg" alt="Psychiatrische Universitätsklinik Zürich"></a>
+<nav class="puk-web-nav" aria-label="Anwendungsmuster"><ul class="puk-web-nav__list" role="list">
+<li><a class="puk-web-nav__link" href="situationsnavigator.html">Situationen</a></li>
+<li><a class="puk-web-nav__link" href="kontaktwegweiser.html">Kontaktwege</a></li>
+<li><a class="puk-web-nav__link" href="gespraechshilfe.html">Gesprächshilfe</a></li>
+<li><a class="puk-web-nav__link" href="angebotsnavigator.html" aria-current="page">Angebote</a></li>
+<li><a class="puk-web-nav__link puk-web-nav__link--emergency" href="kontaktwegweiser.html#sofort">Akute Hilfe</a></li>
+</ul></nav></div></header>
+
+<main id="main-content" class="puk-web-main" tabindex="-1">
+<section class="puk-web-container puk-app-hero">
+<p class="puk-web-eyebrow">Anwendungsmuster · Angebote</p>
+<h1 class="puk-web-h1">Ein passendes Angebot finden</h1>
+<p class="puk-web-lead">Suchen Sie nach Thema, Zugang oder Kostenstatus und grenzen Sie die Ergebnisse nach Kategorie ein.</p>
+<p class="puk-app-boundary">Alle Einträge sind synthetische Musterangebote. Reale Einträge benötigen Zuständigkeit, Zugangsregel, Kostenstatus, Inhaltsverantwortung und Prüfdatum.</p>
+</section>
+
+<section class="puk-web-container puk-app-section" aria-labelledby="search-title">
+<h2 class="puk-app-h2" id="search-title">Angebote durchsuchen</h2>
+<div class="puk-app-field"><label for="service-search">Suchbegriff</label><input class="puk-app-search" id="service-search" type="search" autocomplete="off" placeholder="Zum Beispiel Beratung, Familie oder kostenlos" data-service-search></div>
+<div class="puk-app-filter" aria-label="Angebotskategorie">
+<button class="puk-app-chip" type="button" data-service-category="all" aria-pressed="true">Alle Kategorien</button>
+<button class="puk-app-chip" type="button" data-service-category="beratung" aria-pressed="false">Beratung</button>
+<button class="puk-app-chip" type="button" data-service-category="familie" aria-pressed="false">Familie</button>
+<button class="puk-app-chip" type="button" data-service-category="alltag" aria-pressed="false">Alltag und Arbeit</button>
+<button class="puk-app-chip" type="button" data-service-category="krise" aria-pressed="false">Krise</button>
+</div>
+<div class="puk-app-toolbar"><p class="puk-app-status" role="status" aria-live="polite" aria-atomic="true" data-service-status></p></div>
+
+<ul class="puk-app-grid" role="list" aria-label="Musterangebote">
+<li data-service-card data-service-category="beratung" data-service-search="beratung angehörige kostenlos direkt anmeldung" data-content-owner="Musterredaktion" data-reviewed-at="2026-09-26"><article class="puk-app-card puk-app-card--accent"><span class="puk-app-kicker">Beratung</span><h3>Musterangebot Angehörigenberatung</h3><p>Direkter Zugang für Angehörige. Beispieltext ohne reale Verfügbarkeit.</p><p class="puk-app-meta"><span>Kosten: Musterangabe kostenlos</span><span>Zugang: direkte Anfrage</span><span>Inhaltsverantwortung: Musterredaktion</span><span>Musterprüfdatum: 26.09.2026</span></p></article></li>
+<li data-service-card data-service-category="familie" data-service-search="familie eltern jugendliche gruppe abend" data-content-owner="Musterredaktion" data-reviewed-at="2026-09-26"><article class="puk-app-card puk-app-card--accent"><span class="puk-app-kicker">Familie</span><h3>Musterangebot Familiengruppe</h3><p>Gruppenangebot mit beispielhafter Abenddurchführung. Keine reale Anmeldung.</p><p class="puk-app-meta"><span>Kosten: Musterangabe offen</span><span>Zugang: Vorgespräch</span><span>Inhaltsverantwortung: Musterredaktion</span><span>Musterprüfdatum: 26.09.2026</span></p></article></li>
+<li data-service-card data-service-category="alltag" data-service-search="alltag arbeit ausbildung struktur formulare coaching" data-content-owner="Musterredaktion" data-reviewed-at="2026-09-26"><article class="puk-app-card puk-app-card--accent"><span class="puk-app-kicker">Alltag und Arbeit</span><h3>Musterangebot Strukturberatung</h3><p>Orientierung zu Tagesstruktur, Formularen und nächsten administrativen Schritten.</p><p class="puk-app-meta"><span>Kosten: Musterangabe offen</span><span>Zugang: Zuständigkeit prüfen</span><span>Inhaltsverantwortung: Musterredaktion</span><span>Musterprüfdatum: 26.09.2026</span></p></article></li>
+<li data-service-card data-service-category="krise" data-service-search="krise akut notfall rund um die uhr" data-content-owner="Musterredaktion" data-reviewed-at="2026-09-26"><article class="puk-app-card puk-app-card--danger"><span class="puk-app-kicker">Krise</span><h3>Muster für einen fachlich freigegebenen Krisenweg</h3><p>Der produktive Eintrag muss einen bestätigten Kontakt und eine überprüfte Erreichbarkeit nennen.</p><p class="puk-app-meta"><span>Kontakt: nicht freigegeben</span><span>Erreichbarkeit: nicht freigegeben</span><span>Inhaltsverantwortung: Musterredaktion</span><span>Musterprüfdatum: 26.09.2026</span></p></article></li>
+<li data-service-card data-service-category="beratung" data-service-search="beratung beispiel abgelaufen archiv" data-content-owner="Musterredaktion" data-reviewed-at="2025-09-26" data-expires-at="2026-03-31"><article class="puk-app-card"><span class="puk-app-expired">Beispielstatus: abgelaufen</span><span class="puk-app-kicker">Beratung</span><h3>Abgelaufenes Musterangebot</h3><p>Dieser Eintrag demonstriert die verpflichtende Kennzeichnung. Produktiv würde er aktualisiert oder entfernt.</p><p class="puk-app-meta"><span>Verfügbarkeit: nicht bestätigt</span><span>Inhaltsverantwortung: Musterredaktion</span><span>Musterprüfdatum: 26.09.2025</span></p></article></li>
+</ul>
+<div class="puk-app-empty" data-service-empty hidden><strong>Kein passendes Musterangebot gefunden.</strong><p>Versuchen Sie einen allgemeineren Begriff oder setzen Sie die Kategorie auf «Alle Kategorien».</p></div>
+</section>
+</main>
+<footer class="puk-web-footer"><div class="puk-web-container"><p class="puk-app-footer-note"><strong>Freigabegrenze:</strong> Die Suche kann nur so zuverlässig sein wie die gepflegten Angebotsdaten. Abgelaufene Einträge benötigen eine sichtbare Warnung oder müssen entfernt werden.</p></div></footer>
+</div></body></html>

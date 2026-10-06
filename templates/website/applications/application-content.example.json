@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "contactPaths": [
+    {
+      "id": "example-emergency",
+      "level": "emergency",
+      "title": "Muster für den fachlich freigegebenen Notfallweg",
+      "description": "Referenzdatensatz ohne reale Kontaktangabe.",
+      "actionLabel": "Fachlich freigegebenen Notfallweg anzeigen",
+      "actionHref": "#kontakt-details",
+      "contentOwner": "Musterredaktion",
+      "reviewedAt": "2026-09-26",
+      "sourceStatus": "example"
+    }
+  ],
+  "services": [
+    {
+      "id": "example-family-advice",
+      "title": "Musterangebot Familienberatung",
+      "category": "familie",
+      "description": "Referenzdatensatz ohne reale Verfügbarkeit.",
+      "audience": "Angehörige",
+      "access": "Musterzugang",
+      "jurisdiction": "vor Publikation festlegen",
+      "costStatus": "vor Publikation bestätigen",
+      "availabilityStatus": "unknown",
+      "searchTerms": ["Familie", "Beratung", "Angehörige"],
+      "contentOwner": "Musterredaktion",
+      "reviewedAt": "2026-09-26",
+      "sourceStatus": "example"
+    }
+  ]
+}

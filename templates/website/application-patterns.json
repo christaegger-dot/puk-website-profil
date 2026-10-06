@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "systemVersion": "1.10.1",
+  "status": "system-defined-application-patterns",
+  "source": "templates/website/profile.json",
+  "contentSchema": "templates/website/application-content.schema.json",
+  "contentExample": "templates/website/applications/application-content.example.json",
+  "sharedRules": {
+    "visualLanguage": "PUK-Tokens, Rubik, flache Flächen, keine dekorativen Verläufe oder Schatten",
+    "interaction": "konventionelle Bedienelemente, sichtbarer Fokus, mindestens 44 px für Buttons, Navigation und eigenständige Aktionslinks; Inline-Links im Fliesstext bleiben inline mit natürlicher Zeilenhöhe; kurze ruhige Übergänge",
+    "accessibility": "Statusänderungen programmatisch verfügbar; Funktion nicht nur über Farbe, Position oder Bewegung vermitteln",
+    "clinicalBoundary": "keine Diagnose, keine automatische medizinische Triage und keine personalisierte Behandlungsempfehlung",
+    "contentGovernance": "operative Kontakte, Zuständigkeiten, medizinische Aussagen und Quellen benötigen Eigentümerschaft und Prüfdatum",
+    "privacy": "keine Persistenz sensibler Eingaben ohne freigegebene Datenpolitik"
+  },
+  "patterns": [
+    {
+      "id": "situation-navigator",
+      "name": "Situationsnavigator",
+      "question": "Was brauche ich jetzt?",
+      "job": "Wenige alltagsnahe Situationen zu passenden Impulsen, Gesprächshilfen und Kontaktwegen führen.",
+      "primaryOutput": "ein nächster sinnvoller Schritt",
+      "must": ["Rücksetzen", "sichtbare Trefferzahl", "gemeinsames Filtern zusammengehöriger Inhalte", "risikobasiert gewählter Sicherheitszugang"],
+      "mustNot": ["Diagnose ableiten", "Nutzende in eine Einbahnstrasse führen", "Sicherheitshinweis wegfiltern"],
+      "reference": "templates/website/applications/situationsnavigator.html"
+    },
+    {
+      "id": "contact-pathfinder",
+      "name": "Dringlichkeits- und Kontaktwegweiser",
+      "question": "Wie schnell und über welchen Weg brauche ich Unterstützung?",
+      "job": "Von einer redaktionell freigegebenen Dringlichkeitsstufe zu genau einem primären Kontaktweg führen.",
+      "primaryOutput": "klare Handlung mit Zeitbezug",
+      "must": ["permanenter Krisenzugang", "maximal drei Dringlichkeitsstufen", "Handlung im Titel", "redaktionell bestätigter Kontaktblock"],
+      "mustNot": ["Symptomscore", "automatische Triage", "kritische Information ausschliesslich im Dialog", "mehrere konkurrierende Hauptaktionen"],
+      "reference": "templates/website/applications/kontaktwegweiser.html"
+    },
+    {
+      "id": "conversation-guide",
+      "name": "Gesprächs- und Grenzensetzungshilfe",
+      "question": "Wie kann ich etwas ansprechen, ohne zusätzlichen Druck zu erzeugen?",
+      "job": "Situation und Gesprächsziel mit hilfreicher Formulierung, Grenze und kleinem nächsten Schritt verbinden.",
+      "primaryOutput": "redaktionell geprüfter Formulierungsvorschlag",
+      "must": ["Situation und Ziel getrennt wählen", "keine Schuldzuweisung", "eigene Grenze sichtbar", "Ergebnis ohne Speicherung nutzbar"],
+      "mustNot": ["Gesprächserfolg versprechen", "Zwang verschleiern", "klinische Anweisung imitieren"],
+      "reference": "templates/website/applications/gespraechshilfe.html"
+    },
+    {
+      "id": "service-finder",
+      "name": "Angebotsnavigator",
+      "question": "Welches Angebot passt zu Situation und Zuständigkeit?",
+      "job": "Angebote nach Suchtext, Kategorie und klaren Zugangskriterien auffindbar machen.",
+      "primaryOutput": "passendes Angebot mit Zugang, Kostenstatus und Aktualität",
+      "must": ["Volltextsuche", "Kategorien", "Leerzustand", "Prüfdatum", "Inhaltsverantwortung"],
+      "mustNot": ["ungeprüfte Verfügbarkeit", "implizite Zuständigkeit", "abgelaufene Einträge ohne Warnung"],
+      "reference": "templates/website/applications/angebotsnavigator.html"
+    }
+  ]
+}

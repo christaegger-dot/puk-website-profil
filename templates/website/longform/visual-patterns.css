@@ -1,0 +1,113 @@
+/* PUK Website Kit 1.10.1-r4 · abgeleitet – Visualisierungsmuster für Langform (r3 eingeführt, r4 erweitert: Vergleich, Entscheidungsweg, Kreislauf-Rücksprung).
+   Ergänzung des abgeleiteten Profils, nicht Teil der kanonischen Quelle PUK Zürich Design System 1.10.1.
+   Einbinden nach styles.css. Referenz: visualisierungsmuster.html, Regeln: guidelines/07-visualisierung-umsetzen.md */
+.puk-vis-wide{container-type:inline-size;min-width:0;margin-top:var(--space-8)}
+.puk-vis-figure{margin:0;padding:clamp(20px,4vw,40px);background:var(--surface-structure);border:1px solid var(--border-hairline);min-width:0}
+.puk-vis-label{margin:0 0 var(--space-5);font:var(--type-body);font-weight:var(--fw-medium);color:var(--text-default)}
+.puk-vis-caption{margin-top:var(--space-6);padding-top:var(--space-4);border-top:1px solid var(--border-default);font:var(--type-body-sm);color:var(--text-default);max-width:80ch;display:grid;gap:var(--space-2)}
+.puk-vis-caption p{margin:0}
+.puk-vis-longdesc{margin-top:var(--space-4);padding:var(--space-5);background:var(--puk-white);border:1px solid var(--border-default);max-width:80ch}
+.puk-vis-longdesc:focus{outline:none}.puk-vis-longdesc:focus-visible{box-shadow:var(--focus-ring)}
+.puk-vis-longdesc h3{margin:0 0 var(--space-2);font:var(--type-body);font-weight:var(--fw-medium)}
+.puk-vis-longdesc p{margin:0 0 var(--space-2);font:var(--type-body-sm)}
+.puk-vis-longdesc p:last-child{margin-bottom:0}
+/* A · Figur: zwei Bereiche mit gemeinsamem Anteil */
+.puk-vis-overlap{position:relative;max-width:640px;aspect-ratio:16/9;margin:0 auto}
+.puk-vis-overlap svg{position:absolute;inset:0;width:100%;height:100%}
+.puk-vis-overlap ul{position:absolute;inset:0;margin:0;padding:0 12.5%;list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:center}
+.puk-vis-overlap li{padding:var(--space-2);text-align:center;font:var(--type-body);color:var(--text-default);min-width:0}
+.puk-vis-overlap li:nth-child(2){font-weight:var(--fw-medium)}
+/* B · Kreislauf mit vier Stationen */
+.puk-vis-dir{margin:0 0 var(--space-5);font:var(--type-body-sm);max-width:70ch}
+.puk-vis-cycle{position:relative;max-width:600px;aspect-ratio:1;margin:0 auto}
+.puk-vis-cycle>svg{position:absolute;inset:0;width:100%;height:100%}
+.puk-vis-cycle ol{position:absolute;inset:0;margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:repeat(3,minmax(0,1fr))}
+.puk-vis-cycle li{align-self:center;margin:0 4%;padding:var(--space-3);background:var(--puk-white);border:2px solid var(--puk-blue-100);display:grid;gap:var(--space-1);text-align:center;min-width:0}
+.puk-vis-cycle li:nth-child(1){grid-area:1/2}.puk-vis-cycle li:nth-child(2){grid-area:2/3}.puk-vis-cycle li:nth-child(3){grid-area:3/2}.puk-vis-cycle li:nth-child(4){grid-area:2/1}
+.puk-vis-cycle__n{font:var(--type-caption);color:var(--text-default)}
+.puk-vis-cycle__name{font:var(--type-body);font-weight:var(--fw-medium);color:var(--text-default)}
+.puk-vis-cycle__loop{display:none;align-items:center;gap:var(--space-2);margin:var(--space-3) 0 0;font:var(--type-body-sm);font-weight:var(--fw-medium);color:var(--text-default)}
+.puk-vis-cycle__loopmark{flex:none;width:28px;height:28px;color:var(--puk-blue-100)}
+/* r4: Leserichtung je Darstellung. «Uhrzeigersinn» nur in [data-cycle-wide]; schmal gilt [data-cycle-narrow]. */
+.puk-vis-figure [data-cycle-narrow]{display:none}
+.puk-vis-figure--open{padding:0;background:none;border:0}
+/* E · Vergleich */
+.puk-vis-compare{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--space-6)}
+.puk-vis-compare__col{min-width:0;padding:var(--space-5);background:var(--puk-white);border:1px solid var(--border-default);border-top:4px solid var(--puk-blue-100)}
+.puk-vis-compare__col--b{border-top-style:dashed}
+.puk-vis-compare__key{margin:0;font:var(--type-caption);color:var(--text-muted)}
+.puk-vis-compare h3{margin:var(--space-1) 0 0;font:var(--type-body);font-weight:var(--fw-medium);color:var(--text-default)}
+.puk-vis-compare dl{margin:var(--space-4) 0 0;display:grid;gap:var(--space-3)}
+.puk-vis-compare dt{font:var(--type-caption);color:var(--text-muted)}
+.puk-vis-compare dd{margin:0;font:var(--type-body-sm);color:var(--text-default)}
+/* F · Entscheidungsweg */
+.puk-vis-decision{list-style:none;margin:0;padding:0}
+.puk-vis-decision__q{position:relative;padding:0 0 var(--space-6) var(--space-10);min-width:0}
+.puk-vis-decision__q::before{content:"";position:absolute;left:11px;top:30px;bottom:0;border-left:2px solid var(--puk-blue-100)}
+.puk-vis-decision__q:last-child{padding-bottom:0}.puk-vis-decision__q:last-child::before{display:none}
+.puk-vis-decision__q::after{content:"";position:absolute;left:4px;top:5px;width:16px;height:16px;box-sizing:border-box;border:2px solid var(--puk-blue-100);background:var(--puk-white);transform:rotate(45deg)}
+.puk-vis-decision__n{display:block;font:var(--type-caption);color:var(--text-default)}
+.puk-vis-decision h3{margin:var(--space-1) 0 0;font:var(--type-body);font-weight:var(--fw-medium);color:var(--text-default)}
+.puk-vis-decision__branches{list-style:none;margin:var(--space-3) 0 0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--space-3)}
+.puk-vis-decision__branch{min-width:0;padding:var(--space-3) var(--space-4);background:var(--puk-white);border:1px solid var(--border-default);font:var(--type-body-sm);color:var(--text-default)}
+.puk-vis-decision__branch--next{border-style:dashed}
+/* C · Prozess- oder Behandlungspfad */
+.puk-vis-path{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:var(--space-4)}
+.puk-vis-path li{position:relative;padding-top:var(--space-10);min-width:0}
+.puk-vis-path li::before{content:"";position:absolute;left:0;right:calc(-1 * var(--space-4));top:11px;border-top:2px solid var(--puk-blue-100)}
+.puk-vis-path li:last-child::before{display:none}
+.puk-vis-path li::after{content:"";position:absolute;left:0;top:0;width:24px;height:24px;box-sizing:border-box;border-radius:50%;background:var(--puk-blue-100)}
+.puk-vis-path li.puk-vis-path--optional::after{background:var(--puk-white);border:2px dashed var(--puk-blue-100)}
+.puk-vis-path li.puk-vis-path--optional::before{border-top-style:dashed}
+.puk-vis-path__n{display:block;font:var(--type-caption);color:var(--text-default)}
+.puk-vis-path h3{margin:var(--space-1) 0;font:var(--type-body);font-weight:var(--fw-medium);color:var(--text-default)}
+.puk-vis-path p{margin:0;font:var(--type-body-sm);color:var(--text-muted)}
+/* D · Redaktionelle Illustration als abstrakter Platzhalter */
+.puk-vis-illu{position:relative;aspect-ratio:16/9;background:var(--ui-field);border:1px dashed var(--puk-blue-50);overflow:hidden;display:grid;place-items:center}
+.puk-vis-illu svg{position:absolute;inset:0;width:100%;height:100%}
+.puk-vis-illu__stamp{position:relative;margin:0;padding:var(--space-2) var(--space-3);background:var(--puk-white);border:1px solid var(--border-default);font:var(--type-caption);color:var(--text-default);text-align:center;max-width:80%}
+.puk-vis-meta{margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:var(--space-3) var(--space-6)}
+.puk-vis-meta dt{font:var(--type-caption);color:var(--text-muted)}
+.puk-vis-meta dd{margin:0;font:var(--type-body-sm);color:var(--text-default)}
+/* Visualisierungsplan als Tabelle */
+.puk-vis-tablewrap{overflow-x:auto;border:1px solid var(--border-hairline);background:var(--puk-white)}
+.puk-vis-tablewrap:focus{outline:none}.puk-vis-tablewrap:focus-visible{box-shadow:var(--focus-ring)}
+.puk-vis-plan{border-collapse:collapse;min-width:1280px;width:100%;font:var(--type-body-sm);color:var(--text-default)}
+.puk-vis-plan caption{caption-side:top;text-align:left;padding:var(--space-3) var(--space-4);font:var(--type-body);font-weight:var(--fw-medium)}
+.puk-vis-plan th,.puk-vis-plan td{padding:var(--space-3) var(--space-4);border-top:1px solid var(--border-hairline);text-align:left;vertical-align:top}
+.puk-vis-plan thead th{background:var(--surface-structure);font-weight:var(--fw-medium)}
+.puk-vis-plan tbody th{font-weight:var(--fw-medium)}
+/* Entscheidungshilfe Bericht → Web, Review-Checkliste */
+.puk-vis-decide{margin:0;padding:0;list-style:none;display:grid;gap:var(--space-4);counter-reset:d}
+.puk-vis-decide li{padding:var(--space-4) var(--space-5);border:1px solid var(--border-hairline);background:var(--puk-white)}
+.puk-vis-decide h3{margin:0 0 var(--space-1);font:var(--type-body);font-weight:var(--fw-medium)}
+.puk-vis-decide p{margin:0;font:var(--type-body-sm)}
+.puk-vis-check{margin:0;padding-left:1.2em;display:grid;gap:var(--space-2);font:var(--type-body-sm)}
+@container (max-width:560px){
+  .puk-vis-overlap{aspect-ratio:auto}
+  .puk-vis-overlap svg,.puk-vis-cycle>svg{display:none}
+  .puk-vis-overlap ul{position:static;padding:0;grid-template-columns:minmax(0,1fr);gap:var(--space-2)}
+  .puk-vis-overlap li{text-align:left;background:var(--puk-white);border:2px solid var(--puk-blue-100)}
+  .puk-vis-overlap li:nth-child(3){border-style:dashed}
+  .puk-vis-cycle{aspect-ratio:auto}
+  .puk-vis-cycle ol{position:static;display:flex;flex-direction:column}
+  .puk-vis-cycle li{margin:0;text-align:left;position:relative}
+  .puk-vis-cycle li:not(:last-child){margin-bottom:var(--space-6)}
+  .puk-vis-cycle li:not(:last-child)::after{content:"";position:absolute;left:24px;top:100%;height:var(--space-6);border-left:2px solid var(--puk-blue-100)}
+  .puk-vis-cycle__loop{display:flex}
+  .puk-vis-figure [data-cycle-wide]{display:none}
+  .puk-vis-figure [data-cycle-narrow]{display:inline}
+  .puk-vis-cycle ol{position:relative;padding-right:var(--space-10)}
+  .puk-vis-cycle ol::after{content:"";position:absolute;right:var(--space-3);top:28px;bottom:28px;width:var(--space-5);border:2px solid var(--puk-blue-100);border-left:0}
+  .puk-vis-cycle ol::before{content:"";position:absolute;right:calc(var(--space-3) + var(--space-5));top:22px;border-style:solid;border-width:7px 10px 7px 0;border-color:transparent var(--puk-blue-100) transparent transparent}
+  .puk-vis-compare,.puk-vis-decision__branches{grid-template-columns:minmax(0,1fr)}
+}
+@container (max-width:760px){
+  .puk-vis-path{grid-template-columns:minmax(0,1fr);gap:0}
+  .puk-vis-path li{padding:0 0 var(--space-6) var(--space-10)}
+  .puk-vis-path li::before{left:11px;right:auto;top:24px;bottom:0;border-top:0;border-left:2px solid var(--puk-blue-100)}
+  .puk-vis-path li.puk-vis-path--optional::before{border-left-style:dashed}
+}
+/* 200 % Text: lange Roadmap-Einträge umbrechen statt überlaufen */
+.puk-longform__roadmap li,.puk-longform__roadmap a{min-width:0;max-width:100%;overflow-wrap:anywhere}
+/* Keine selbstlaufende Animation: Kreislaufpfeile sind statisch (Profilentscheid 06.10.2026, Abschnitt «Interaktionskonzept»). */
