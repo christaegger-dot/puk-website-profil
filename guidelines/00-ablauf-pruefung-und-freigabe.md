@@ -10,19 +10,41 @@ Ein Ablauf für alle Websites der Fachstelle – von der Planung bis zur Veröff
 | 1 · W1 Fachliche Prüfung | Seite für Seite: Richtigkeit, Quellen, Haltung; Seiteninventar für W2 | «Fachliche Qualität und Haltung» | Befunde, Seiteninventar |
 | 2 · W2 Gesamtkohärenz | Website als Ganzes: Ziel, Aufbaulogik, Begriffe, Quereinstieg, Lücken | «Gesamtkohärenz und Aufbau» | Strukturänderungen **vor** Stufe 3 umsetzen |
 | 3 · S Sprach-Review | Verständlichkeit und Ton des feststehenden Textes | «Sprache und Ton» | freigegebene Textfassung |
-| 4 · Visualisierungs-Check | Prüffrage, Kartenraster, Textalternativen, Theme «Hoher Kontrast» | «Visualisierung umsetzen» | Befunde, begründete Ausnahmen |
+| 4 · Visualisierungs-Check | Prüffrage, Plan pro Abschnitt, drei Ebenen, Ansatzpunkte, Kartenraster, Textalternativen, Theme «Hoher Kontrast» | «Visualisierung umsetzen» | Tabelle mit Ergebnis und Beleg je Punkt im Prüfbericht |
 | 5 · Bedienung und Barrierefreiheit | Breiten 320–1440 px, 200 % Text, Tastatur, Touch, reduzierte Bewegung, Screenreader | «Barrierefreiheit und Test», «Interaktionskonzept» | Protokoll, mindestens zwei reale Screenreader-Läufe |
 | 6 · W3 Code-Review | Funktion, Barrierefreiheit, Datenschutz, Sicherheit, Performance, Darstellung und Druck, Wartbarkeit | «Technische Qualität» | Befundliste; Umsetzung erst nach Freigabe |
-| 7 · Produktionsfreigabe | `node tools/gate.mjs --production` ohne blockierende Befunde; fachliche Freigabe dokumentiert | dieser Abschnitt | Freigabe mit Datum und Person |
+| 7 · Produktionsfreigabe | `node tools/gate.mjs --production` ohne blockierende Befunde – setzt einen vollständigen Prüfbericht voraus; fachliche Freigabe dokumentiert | dieser Abschnitt | Freigabe mit Datum und Person |
 
 - **Heft-Webfassung:** Ist die Website die inhaltsgleiche Web-Fassung eines bereits geprüften Hefts, prüfen W1 und S nur die Abweichungen und die webspezifischen Texte (Navigation, Schaltflächen, Teaser, Hilfetexte, Fehlermeldungen). Das Seiteninventar entsteht trotzdem für alle Seiten.
 - **Datenschutz vorziehen:** Kritische Datenschutzbefunde (extern geladene Schriften, Tracking) dürfen jederzeit behoben werden, auch vor Stufe 1.
 - **W3 zuletzt:** Strukturänderungen aus W2 und Textänderungen aus S verändern den Code; deshalb prüft W3 erst danach.
 - **Rückwärts nie still ändern:** Fällt in einer späteren Stufe ein fachliches Problem auf, wird es als «Prüfbedarf» markiert und in Stufe 1 zurückgegeben, nicht beiläufig korrigiert.
 
+## Bauen und Prüfen getrennt
+
+Profilentscheid 08.10.2026, nach dem ersten Probelauf: Das Gate bestand, die Abbildungen hatten trotzdem didaktische Mängel – gefunden erst bei einer Prüfung Punkt für Punkt. Bestehen ist nicht dasselbe wie gut. Deshalb gelten drei Regeln:
+
+1. **Selbstprüfung nach jedem Bau, ohne Nachfrage.** Die bauende Sitzung füllt den Visualisierungs-Check im Prüfbericht als Tabelle aus: je Punkt Ergebnis und Beleg (Seite und Abschnitt, Figur, Zitat). Ein Punkt ohne Beleg gilt als nicht geprüft; ein Gesamturteil ersetzt keine Einzelprüfung. Die Selbstprüfung ist ein Arbeitsstand, keine Prüfstufe.
+2. **Prüfen in einer eigenen Sitzung.** Die Stufen 1 bis 6 prüft eine Sitzung oder Person, die die Website nicht gebaut hat. Wer prüft, ändert keine Inhalte und keinen Code, sondern trägt Befunde mit Beleg ein; fachliche Fragen werden als «Prüfbedarf» markiert. Fachliche Freigaben trägt nur die Fachstelle ein.
+3. **Kein Merge ohne Prüfbericht.** Ein Pull Request mit einer neuen oder geänderten Website enthält den Prüfbericht im aktuellen Stand und nennt in der Beschreibung die offenen Stufen. Solange Stufen offen sind, bleibt er ein Entwurf. Veröffentlicht wird nur mit vollständigem Prüfbericht; das Produktionsgate blockiert sonst.
+
+**Prüfbericht:** `PRUEFBERICHT.md` im Ordner der Website (Vorlage im Starter). Er enthält die Statustabelle der Stufen 1 bis 6 («offen», «erledigt» oder «entfällt: Begründung»), den Visualisierungs-Check als Tabelle und die Befunde je Stufe.
+
+**Auftrag für die Prüfsitzung** (neue Sitzung, gleiches Repository):
+
+```
+Prüfe die Website templates/website/<website>/. Du hast sie nicht gebaut.
+Lies CLAUDE.md und guidelines/00-ablauf-pruefung-und-freigabe.md. Prüfe die Stufe(n) <…>
+nach den Kriterien der jeweiligen Leitlinie, Punkt für Punkt. Trage je Punkt Ergebnis und
+Beleg (Seite und Abschnitt, Figur, Zitat) in PRUEFBERICHT.md ein. Ändere keine Inhalte und
+keinen Code; fachliche Fragen markierst du als «Prüfbedarf». Setze eine Stufe nur auf
+«erledigt», wenn alle Punkte mit Beleg geprüft sind und keine offenen Befunde bleiben.
+Committe nur den Prüfbericht.
+```
+
 ## Was das Gate prüft – und was nicht
 
-Das Gate des Psychoedukations-Starters (`node tools/gate.mjs`, mit `--production` vor der Veröffentlichung) blockiert unter anderem: fehlende oder versteckte Absenderin, Telefonnummern, `tel:`-Links und Notfallblöcke, ungeprüften Zuständigkeitsverweis, Platzhalter ohne Freigabe, nicht freigegebene Visualisierungen, fehlenden Visualisierungsplan. Hinweise (keine Blocker) gibt es für «ß», falsche Anführungszeichen, deutsche Rechtsbegriffe und etikettierende Bezeichnungen.
+Das Gate des Psychoedukations-Starters (`node tools/gate.mjs`, mit `--production` vor der Veröffentlichung) blockiert unter anderem: fehlenden oder unvollständigen Prüfbericht (Produktion), fehlende oder versteckte Absenderin, Telefonnummern, `tel:`-Links und Notfallblöcke, ungeprüften Zuständigkeitsverweis, Platzhalter ohne Freigabe, nicht freigegebene Visualisierungen, fehlenden Visualisierungsplan. Hinweise (keine Blocker) gibt es für «ß», falsche Anführungszeichen, deutsche Rechtsbegriffe und etikettierende Bezeichnungen.
 
 **Abdeckungsgrenze:** Automatisierte Prüfungen ersetzen keinen realen Tastatur- und Screenreader-Test, keine fachliche Prüfung und keine Datenschutz-, Inhalts- oder Betriebsfreigabe. Sie werden nie als solche bezeichnet.
 
@@ -33,7 +55,7 @@ Das Projektgate und die Release-Werkzeuge des Original-Kits (`npm run audit:webs
 - Operative Kontakte, Zuständigkeiten, medizinische und rechtliche Aussagen brauchen eine benannte Inhaltsverantwortung und ein Prüfdatum, gebündelt am Seitenende oder in der Fusszeile.
 - Freigabesprache: «redaktionell bestätigt», «fachlich freigegeben» – nicht «verifiziert». Entwürfe und Platzhalter sind sichtbar als solche markiert («Platzhalter, nicht freigegeben»).
 - Kritische Information nie nur hinter Filter, Dialog oder Akkordeon.
-- Ergebnis jeder Stufe festhalten: Datum, Person, Befunde, begründete Ausnahmen.
+- Ergebnis jeder Stufe im Prüfbericht festhalten: Datum, Person oder Sitzung, Befunde mit Beleg, begründete Ausnahmen.
 
 ## Geltung der Kit-Vorgaben
 

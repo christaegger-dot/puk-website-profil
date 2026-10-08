@@ -30,6 +30,8 @@ Dann im Browser:
    node tools/gate.mjs --production
    ```
 
+   Prüfen lassen: Die Prüfstufen laufen in einer eigenen Sitzung, die nicht gebaut hat; Ergebnisse mit Beleg in `PRUEFBERICHT.md` (Auftrag im Abschnitt «Prüfung und Freigabe»). Ohne vollständigen Prüfbericht blockiert das Produktionsgate.
+
 4. Veröffentlichen: `node tools/export.mjs ../../../../stress-verstehen-web --production` schreibt eine eigenständige Website (Seiten, `css/site.css`, Schriften, `js/interaktion.js`, `_headers`, `sitemap.xml`). Diesen Ordner auf Netlify hochladen oder als eigenes Repository führen.
 
 Der Ablauf von der Planung bis zur Freigabe steht im Abschnitt «Prüfung und Freigabe» (`guidelines/00-ablauf-pruefung-und-freigabe.md`).

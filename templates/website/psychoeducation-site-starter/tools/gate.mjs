@@ -26,7 +26,8 @@ if (process.argv.includes('--selftest')) {
   console.log(`\nSelbsttest: ${rows.length - bad}/${rows.length} bestanden.`); process.exit(bad ? 1 : 0);
 }
 const mode = process.argv.includes('--production') ? 'production' : 'draft';
-const r = C.gate(cfg, files, { mode, exists });
+const report = existsSync(join(dir, 'PRUEFBERICHT.md')) ? await readFile(join(dir, 'PRUEFBERICHT.md'), 'utf8') : null;
+const r = C.gate(cfg, files, { mode, exists, report });
 for (const f of r.findings) console.log(`${f.level.toUpperCase().padEnd(5)} ${f.page.padEnd(24)} ${f.id.padEnd(22)} ${f.msg}`);
 console.log(`\n${C.VERSION} · Gate ${mode}: ${r.blocks} blockierend, ${r.warns} Hinweise.`);
 process.exit(r.blocks ? 1 : 0);

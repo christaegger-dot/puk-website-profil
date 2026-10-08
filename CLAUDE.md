@@ -30,7 +30,7 @@ Node 18 oder neuer, ohne Installation. Im Ordner der jeweiligen Website:
 
 ```sh
 node tools/build.mjs                       # Seiten aus site.config.json + content/ bauen, Entwurfsgate
-node tools/gate.mjs --production           # Produktionsgate: blockiert offene Freigaben
+node tools/gate.mjs --production           # Produktionsgate: blockiert offene Freigaben und unvollständigen Prüfbericht
 node tools/gate.mjs --selftest             # Nachweis, dass das Gate jede bekannte Fehlerklasse erkennt
 node tools/export.mjs <ziel> --production  # eigenständige Website für Netlify (ausserhalb des Starters)
 ```
@@ -49,6 +49,15 @@ Ansehen: im Repository-Stamm `python3 -m http.server 8000` (oder `npx serve`), d
 - **Fotos** nur im Einzelfall mit Einwilligung und Bildnachweis; Normalfall sind Erklärmuster und eigene Illustrationen.
 - **Leitlinien, Tokens und Komponenten nicht in diesem Repository ändern.** Änderungen am Profil im Design-System-Artefakt vornehmen, daraus ein neues Paket erzeugen und hier ersetzen (Version im Dateinamen, Änderungsprotokoll im README). Websites unter `templates/website/<website>/` bleiben dabei erhalten.
 
+## Bauen und Prüfen
+
+Bauen und Prüfen sind getrennt (Abschnitt «Prüfung und Freigabe», Profilentscheid 08.10.2026). Ein bestandenes Gate heisst nicht, dass die Website gut ist.
+
+- **Nach jedem Bau, ohne Nachfrage:** Selbstprüfung in `PRUEFBERICHT.md` der Website – Visualisierungs-Check als Tabelle, je Punkt Ergebnis und Beleg (Seite und Abschnitt, Figur, Zitat) – und in der Antwort die nicht erfüllten Punkte nennen. Ein Punkt ohne Beleg gilt als nicht geprüft. Keine Prüfstufe als «erledigt» eintragen.
+- **Prüfen nur in einer eigenen Sitzung:** Die Stufen W1, W2, S, Visualisierungs-Check, Bedienung und W3 prüft eine Sitzung, die die Website nicht gebaut hat (Auftrag im Abschnitt «Prüfung und Freigabe»). Sie ändert keine Inhalte und keinen Code und committet nur den Prüfbericht.
+- **Kein Merge ohne Prüfbericht:** Ein Pull Request mit einer neuen oder geänderten Website enthält `PRUEFBERICHT.md` im aktuellen Stand und nennt in der Beschreibung die offenen Stufen. Solange Stufen offen sind, bleibt er ein Entwurf.
+- **Keine Veröffentlichung ohne vollständigen Prüfbericht:** Das Produktionsgate blockiert sonst.
+
 ## Vor dem Commit
 
 - `node tools/build.mjs` ohne blockierende Befunde; bei Änderungen am Gate auch `--selftest`.
@@ -57,7 +66,7 @@ Ansehen: im Repository-Stamm `python3 -m http.server 8000` (oder `npx serve`), d
 
 ## Reviews
 
-Die Review-Prompts der Fachstelle (W1 Fachliche Prüfung, W2 Gesamtkohärenz, S Sprach-Review, W3 Code-Review) gelten in dieser Reihenfolge; W3 ist ein reines Review ohne Dateiänderungen bis zur Freigabe. Kriterien im Design-System: «Fachliche Qualität und Haltung», «Gesamtkohärenz und Aufbau», «Sprache und Ton», «Technische Qualität».
+Die Review-Prompts der Fachstelle (W1 Fachliche Prüfung, W2 Gesamtkohärenz, S Sprach-Review, W3 Code-Review) gelten in dieser Reihenfolge, jeweils in einer Sitzung, die nicht gebaut hat; W3 ist ein reines Review ohne Dateiänderungen bis zur Freigabe. Ergebnisse mit Beleg in `PRUEFBERICHT.md`. Kriterien im Design-System: «Fachliche Qualität und Haltung», «Gesamtkohärenz und Aufbau», «Sprache und Ton», «Technische Qualität».
 
 ## Logo
 
