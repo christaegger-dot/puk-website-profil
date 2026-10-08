@@ -1,0 +1,866 @@
+diff --git a/CLAUDE.md b/CLAUDE.md
+index 7724ab5..5317e7b 100644
+--- a/CLAUDE.md
++++ b/CLAUDE.md
+@@ -43,7 +43,8 @@ Ansehen: im Repository-Stamm `python3 -m http.server 8000` (oder `npx serve`), d
+ - **Absenderin** auf jeder Seite: Fachstelle Angehörigenarbeit · Psychiatrische Universitätsklinik Zürich · `angehoerigenarbeit@pukzh.ch`.
+ - **Kein Krisenzugang:** keine Telefonnummern, keine `tel:`-Links, kein Notfallblock, keine Seite «Hilfe in der Krise». Höchstens der site-weite Zuständigkeitsverweis aus `site.config.json` › `responsibility`.
+ - **Fachliche Aussagen nicht still ändern.** Fragwürdiges als «Prüfbedarf» markieren. Inhaltliche Entscheide trifft die Fachstelle; Struktur, Reihenfolge und Technik darf Claude entscheiden und begründen.
+-- **Visualisierungsplan** in `site.config.json` › `visualPlan` vor dem Bau; jede Darstellung mit `understood` (Was versteht die Zielgruppe dadurch besser als durch einen kurzen Text allein?).
++- **Visualisierungsplan** in `site.config.json` › `visualPlan` vor dem Bau: eine Zeile pro Abschnitt (`sectionId`); jede Darstellung mit `understood` (Was versteht die Zielgruppe dadurch besser als durch einen kurzen Text allein?); Kreislauf, Prozesspfad und Modell in Schritten mit `entryPoint` (Ansatzpunkt für Angehörige oder «entfällt: Begründung»).
++- **Figuren:** jede mit Kernaussage, kurzem Erklärtext und – wo sinnvoll – Vertiefung; die Hauptaussage für Angehörige nie nur in der Vertiefung. Ansatzpunkte beschreiben eigene Möglichkeiten, nie Verantwortung für Behandlung oder Verlauf.
+ - **Technik:** keine externen Schriften, Skripte, CDNs, kein Tracking; keine Inline-Skripte und keine `style`-Attribute (Content-Security-Policy in `_headers`); Farben nur über Tokens; WCAG 2.2 AA.
+ - **Fotos** nur im Einzelfall mit Einwilligung und Bildnachweis; Normalfall sind Erklärmuster und eigene Illustrationen.
+ - **Leitlinien, Tokens und Komponenten nicht in diesem Repository ändern.** Änderungen am Profil im Design-System-Artefakt vornehmen, daraus ein neues Paket erzeugen und hier ersetzen (Version im Dateinamen, Änderungsprotokoll im README). Websites unter `templates/website/<website>/` bleiben dabei erhalten.
+diff --git a/README.md b/README.md
+index afaeba7..3e2cff6 100644
+--- a/README.md
++++ b/README.md
+@@ -110,11 +110,11 @@ Die Fachstelle Angehörigenarbeit bietet Beratung und Psychoedukation für Angeh
+ 
+ ## Visuelle Wissensvermittlung und Bildwelt
+ 
+-- **Leitprinzip:** Zentrale Konzepte, Modelle und Zusammenhänge werden vorrangig durch Darstellungen erklärt, deren Anordnung, Verbindungen, Formen und Beschriftungen selbst Bedeutung tragen – nicht durch lange Fliesstexte und nicht durch Kartenraster mit Icons. Prüffrage: «Was versteht die Zielgruppe dadurch besser als durch einen kurzen Text allein?» Drei Erklärungsebenen: Kernaussage · Darstellung mit kurzem Erklärtext · aufklappbare Vertiefung.
++- **Leitprinzip:** Zentrale Konzepte, Modelle und Zusammenhänge werden vorrangig durch Darstellungen erklärt, deren Anordnung, Verbindungen, Formen und Beschriftungen selbst Bedeutung tragen – nicht durch lange Fliesstexte und nicht durch Kartenraster mit Icons. Prüffrage: «Was versteht die Zielgruppe dadurch besser als durch einen kurzen Text allein?» Drei Erklärungsebenen für alle Muster: Kernaussage · Darstellung mit kurzem Erklärtext · aufklappbare Vertiefung. Erklärmodelle (Kreislauf, Prozesspfad, Modell in Schritten) markieren, wo Angehörige ansetzen können – oder begründen den Verzicht.
+ - **Auswahl nach Vermittlungsziel** (Entstehung, Zusammenwirken, Unterschied, Spannung, Beziehung, Abstufung, Verborgenes, Ablauf, Handlung, Erleben) aus den Mustern **A–F** (Figur, Kreislauf, Prozesspfad, Illustration, Vergleich, Entscheidungsweg) und **G–K** (Modell in Schritten, Spannungsfeld, Beziehungskarte, Kontinuum, Schichtenmodell). Passen mehrere: Metapher vor Strukturdiagramm vor Inhaltscontainer. Live: Gruppe «Visualisierung»; Kopiervorlagen `templates/website/longform/visualisierungsmuster.html` und `erklaermuster.html`.
+ - **Bildsprache:** erwachsenengerecht, warm, professionell; organische Formen und Alltagsmetaphern erwünscht, nie verniedlichend, kein Schulbuch, keine Gamification. Illustrationen dürfen eine eigene Handschrift haben, nie als Seitenhintergrund oder Buttonstil.
+ - **Keine Fotos als Normalfall** (Profilentscheid 06.10.2026, kein Bildpool): Die visuelle Ebene tragen Erklärmuster und eigene Illustrationen. Ein Foto nur im Einzelfall, wenn es inhaltlich nötig ist – mit nachweisbarer Quelle, Einwilligung, Alternativtext und Bildnachweis; keine Stockfotografie, keine generierten Personenbilder.
+-- **Umsetzung im Web:** Beschriftungen als HTML-Text in Rubik, Linien 2 px `puk-blue-100`, höchstens ein gefülltes blaues Feld, SVG-Farben nur über Tokens, schmal als gegliederte Liste, nichts bewegt sich von selbst. Vor dem Bau ein Visualisierungsplan. Die Sachzeichnungs-Regel des Vollsystems (Arial, 1,5 px) gilt nur für Word und PowerPoint. Abschnitt «Visualisierung umsetzen».
++- **Umsetzung im Web:** Beschriftungen als HTML-Text in Rubik, Linien 2 px `puk-blue-100`, höchstens ein gefülltes blaues Feld, SVG-Farben nur über Tokens, schmal als gegliederte Liste, nichts bewegt sich von selbst. Vor dem Bau ein Visualisierungsplan mit einer Zeile pro Abschnitt. Die Sachzeichnungs-Regel des Vollsystems (Arial, 1,5 px) gilt nur für Word und PowerPoint. Abschnitt «Visualisierung umsetzen».
+ 
+ ## Logo
+ 
+@@ -163,6 +163,7 @@ Arbeit am System:
+ 
+ ## Änderungsprotokoll
+ 
++- **08.10.2026 · Visualisierung nach dem Probelauf:** Drei Erklärungsebenen (Kernaussage, Erklärtext, Vertiefung) jetzt auch in den Mustern A–F; Ansatzpunkt für Angehörige als Element in Kreislauf, Prozesspfad und Modell in Schritten mit Regel und Planfeld `entryPoint`; Visualisierungsplan mit einer Zeile pro Abschnitt (`sectionId`); Gate meldet fehlende Kernaussage, fehlenden Ansatzpunkt und Abschnitte ohne Planzeile (Selbsttest 44/44, Build r4-3); Visualisierungs-Check um vier Punkte ergänzt; Spannungsfeld (Spalten hängen an den Schalen, gekippter Balken) und Schichtenmodell (durchgehende Eisbergform) überarbeitet; Starter-Hinweis auf die Fusszeile im Abschnitt «Wenn Konflikte bedrohlich werden» entfernt.
+ - **08.10.2026 · Offene Punkte geklärt:** Im Seitenkopf steht immer das statische Logo; das animierte Logo wird auf Websites nicht verwendet (WCAG 2.2.2, Entscheid Fachstelle), seine Web-Fassungen sind nicht mehr im Projektpaket. Der Selbsttest des Gates prüft an einer festen Referenz (`tools/selftest/`) und läuft in jeder Kopie des Starters.
+ - **08.10.2026 · Erster Probelauf (PTBS):** Zuständigkeitsverweis neu gefasst: aus Sicht der Lesenden und mit einem Wegweiser für akute Krisen, ohne Nummern (Entscheid Fachstelle). Der bisherige Wortlaut nannte nur, wofür die Fachstelle nicht zuständig ist; die Regel verlangt einen Verweis auf die zuständigen Stellen. Der Prüfvermerk erscheint nicht mehr auf der Website; sichtbar bleibt nur die Warnung bei einem ungeprüften Verweis.
+ - **06.10.2026 · Entscheide eingearbeitet:** E-Mail der Absenderin korrigiert (`angehoerigenarbeit@pukzh.ch`, wie im Factsheet der Fachstelle); Zuständigkeitsverweis festgelegt und als geprüft dokumentiert; Beispielinhalte der Erklärmuster und Interaktionsbeispiele fachlich freigegeben; Geltung nur für die Fachstelle (KJPP eigenes System); kein Bildpool, Fotos nur im Einzelfall.
+diff --git a/START-HIER.md b/START-HIER.md
+index 454a25e..ace6b3b 100644
+--- a/START-HIER.md
++++ b/START-HIER.md
+@@ -48,6 +48,7 @@ Der Ablauf von der Planung bis zur Freigabe steht im Abschnitt «Prüfung und Fr
+ | `ui_kits/website/` | Referenzansichten und Prüfansicht |
+ | `quellcode/komponenten/` | React-Quellen; `npm install && node build.mjs ../../components/bundle.js` baut `bundle.js` neu |
+ | `_ds_bundle.js`, `platform/` | Laufzeit für das UI-Kit (React 18 lokal, MIT-Lizenz); nicht in Websites übernehmen |
++| `CLAUDE.md` | Arbeitsanweisungen für Claude Code, wenn das Paket als Repository geführt wird |
+ 
+ Nicht enthalten: das animierte Logo, das auf Websites nicht verwendet wird (Asset-Gruppe «Logos» im Design-System), und die Vorschaukarten des Design-Systems.
+ 
+diff --git a/components/VisEntscheidungsweg/README.md b/components/VisEntscheidungsweg/README.md
+index 3b28cbb..2635c9b 100644
+--- a/components/VisEntscheidungsweg/README.md
++++ b/components/VisEntscheidungsweg/README.md
+@@ -3,3 +3,5 @@
+ Ein Weg mit Fragen: Wenn-dann-Abfolge zu genau einem nächsten Schritt.
+ 
+ Live-Muster aus `templates/website/longform/visualisierungsmuster.html` mit `visual-patterns.css` (nach `components/bundle.css` laden). Auswahl: Abschnitt «Visuelle Wissensvermittlung»; Umsetzung: «Visualisierung umsetzen». Jede Figur trägt `data-visual-id` (Eintrag im Visualisierungsplan) und `data-visual-type`; eigene Darstellungen sind als «Eigene didaktische Darstellung» gekennzeichnet.
++
++**Drei Erklärungsebenen (08.10.2026):** Kernaussage (`p.puk-vis-kern`), kurzer Erklärtext (`p.puk-vis-short`), wo sinnvoll Vertiefung (`details.puk-vis-more`).
+diff --git a/components/VisFigur/README.md b/components/VisFigur/README.md
+index 349ac86..9ee4acf 100644
+--- a/components/VisFigur/README.md
++++ b/components/VisFigur/README.md
+@@ -3,3 +3,5 @@
+ Beziehungen und Überschneidungen: Figur mit Legende, Textfassung und verlinkbarer Langbeschreibung.
+ 
+ Live-Muster aus `templates/website/longform/visualisierungsmuster.html` mit `visual-patterns.css` (nach `components/bundle.css` laden). Auswahl: Abschnitt «Visuelle Wissensvermittlung»; Umsetzung: «Visualisierung umsetzen». Jede Figur trägt `data-visual-id` (Eintrag im Visualisierungsplan) und `data-visual-type`; eigene Darstellungen sind als «Eigene didaktische Darstellung» gekennzeichnet.
++
++**Drei Erklärungsebenen (08.10.2026):** Kernaussage (`p.puk-vis-kern`), kurzer Erklärtext (`p.puk-vis-short`), wo sinnvoll Vertiefung (`details.puk-vis-more`).
+diff --git a/components/VisIllustration/README.md b/components/VisIllustration/README.md
+index c23b34f..1b6839c 100644
+--- a/components/VisIllustration/README.md
++++ b/components/VisIllustration/README.md
+@@ -3,3 +3,5 @@
+ Abstrakter Platzhalter mit sichtbarem Bildquelle- und Freigabestatus.
+ 
+ Live-Muster aus `templates/website/longform/visualisierungsmuster.html` mit `visual-patterns.css` (nach `components/bundle.css` laden). Auswahl: Abschnitt «Visuelle Wissensvermittlung»; Umsetzung: «Visualisierung umsetzen». Jede Figur trägt `data-visual-id` (Eintrag im Visualisierungsplan) und `data-visual-type`; eigene Darstellungen sind als «Eigene didaktische Darstellung» gekennzeichnet.
++
++**Drei Erklärungsebenen (08.10.2026):** Kernaussage (`p.puk-vis-kern`), kurzer Erklärtext (`p.puk-vis-short`), wo sinnvoll Vertiefung (`details.puk-vis-more`).
+diff --git a/components/VisKreislauf/README.md b/components/VisKreislauf/README.md
+index a85eb6d..de6a869 100644
+--- a/components/VisKreislauf/README.md
++++ b/components/VisKreislauf/README.md
+@@ -3,3 +3,7 @@
+ Breit eine geschlossene Schleife, schmal eine Liste mit «zurück zu Station 1».
+ 
+ Live-Muster aus `templates/website/longform/visualisierungsmuster.html` mit `visual-patterns.css` (nach `components/bundle.css` laden). Auswahl: Abschnitt «Visuelle Wissensvermittlung»; Umsetzung: «Visualisierung umsetzen». Jede Figur trägt `data-visual-id` (Eintrag im Visualisierungsplan) und `data-visual-type`; eigene Darstellungen sind als «Eigene didaktische Darstellung» gekennzeichnet.
++
++**Ansatzpunkt für Angehörige (08.10.2026):** Station mit `li.is-ansatz` (doppelte Kontur) und `span.puk-vis-cycle__key`, Erklärung als `p.puk-vis-ansatz` unter der Schleife; im Plan `entryPoint`.
++
++**Drei Erklärungsebenen (08.10.2026):** Kernaussage (`p.puk-vis-kern`), kurzer Erklärtext (`p.puk-vis-short`), wo sinnvoll Vertiefung (`details.puk-vis-more`).
+diff --git a/components/VisModellSchritte/README.md b/components/VisModellSchritte/README.md
+index 4b7eda5..23ae384 100644
+--- a/components/VisModellSchritte/README.md
++++ b/components/VisModellSchritte/README.md
+@@ -9,3 +9,5 @@ Live-Muster aus `templates/website/longform/erklaermuster.html` mit `erklaermust
+ **Einsetzen für:** Entstehungs- und Wirkmodelle (Belastungsgefäss, Vulnerabilität und Stress, Wechselwirkung von Faktoren); Ansatzpunkte für Handlungen direkt im Modell markieren.
+ 
+ **Verzichten, wenn:** das Modell mehr als fünf Teile braucht (→ aufteilen) oder eine Rückkopplung zeigt (→ Kreislauf, Muster B). Die Schrittfunktion ist optional: Grundzustand ist immer das ganze Modell; Bedienung über Buttons mit Live-Status, kein Hover, keine Animation bei reduzierter Bewegung.
++
++**Ansatzpunkt für Angehörige (08.10.2026):** doppelter Ring an der Stelle in der Grafik und `p.puk-vis-ansatz` im zugehörigen Teil; im Plan `entryPoint`.
+diff --git a/components/VisProzesspfad/README.md b/components/VisProzesspfad/README.md
+index 2cf23db..e3cc93b 100644
+--- a/components/VisProzesspfad/README.md
++++ b/components/VisProzesspfad/README.md
+@@ -3,3 +3,7 @@
+ Abläufe als nummerierter Pfad mit Start, Abfolge und Ende.
+ 
+ Live-Muster aus `templates/website/longform/visualisierungsmuster.html` mit `visual-patterns.css` (nach `components/bundle.css` laden). Auswahl: Abschnitt «Visuelle Wissensvermittlung»; Umsetzung: «Visualisierung umsetzen». Jede Figur trägt `data-visual-id` (Eintrag im Visualisierungsplan) und `data-visual-type`; eigene Darstellungen sind als «Eigene didaktische Darstellung» gekennzeichnet.
++
++**Ansatzpunkt für Angehörige (08.10.2026):** Schritt mit `li.is-ansatz` (doppelter Ring) und `p.puk-vis-ansatz` im Schritt; im Plan `entryPoint`.
++
++**Drei Erklärungsebenen (08.10.2026):** Kernaussage (`p.puk-vis-kern`), kurzer Erklärtext (`p.puk-vis-short`), wo sinnvoll Vertiefung (`details.puk-vis-more`).
+diff --git a/components/VisVergleich/README.md b/components/VisVergleich/README.md
+index e40a503..0ec0bb8 100644
+--- a/components/VisVergleich/README.md
++++ b/components/VisVergleich/README.md
+@@ -3,3 +3,5 @@
+ Zwei Optionen nach gleichen Merkmalen nebeneinander.
+ 
+ Live-Muster aus `templates/website/longform/visualisierungsmuster.html` mit `visual-patterns.css` (nach `components/bundle.css` laden). Auswahl: Abschnitt «Visuelle Wissensvermittlung»; Umsetzung: «Visualisierung umsetzen». Jede Figur trägt `data-visual-id` (Eintrag im Visualisierungsplan) und `data-visual-type`; eigene Darstellungen sind als «Eigene didaktische Darstellung» gekennzeichnet.
++
++**Drei Erklärungsebenen (08.10.2026):** Kernaussage (`p.puk-vis-kern`), kurzer Erklärtext (`p.puk-vis-short`), wo sinnvoll Vertiefung (`details.puk-vis-more`).
+diff --git a/guidelines/00-visuelle-wissensvermittlung.md b/guidelines/00-visuelle-wissensvermittlung.md
+index 0c8b990..52028fb 100644
+--- a/guidelines/00-visuelle-wissensvermittlung.md
++++ b/guidelines/00-visuelle-wissensvermittlung.md
+@@ -4,7 +4,7 @@ Leitprinzip für alle Websites der Fachstelle: Wissen wird über verständliche
+ 
+ Live: Karte «Visuelle Wissensvermittlung», Muster A–K (Gruppe «Visualisierung»). Kopiervorlagen: `templates/website/longform/visualisierungsmuster.html` (A–F) und `erklaermuster.html` (G–K).
+ 
+-Verbindlichkeit: Leitprinzip, Muster G–K und Bildsprache sind Profilentscheide der Fachstelle (06.10.2026). Muster A–F stammen aus dem PUK Website Kit 1.10.1-r4 (abgeleitet). Das CD-Manual der PUK regelt weder Diagramme noch Illustrationen; alles hier ist Ergänzung, keine amtliche Bildwelt.
++Verbindlichkeit: Leitprinzip, Muster G–K und Bildsprache sind Profilentscheide der Fachstelle (06.10.2026); drei Erklärungsebenen für alle Muster, Ansatzpunkte für Angehörige und ein Plan pro Abschnitt kamen nach dem ersten Probelauf dazu (08.10.2026). Muster A–F stammen aus dem PUK Website Kit 1.10.1-r4 (abgeleitet). Das CD-Manual der PUK regelt weder Diagramme noch Illustrationen; alles hier ist Ergänzung, keine amtliche Bildwelt.
+ 
+ ## Leitsatz und Prüffrage
+ 
+@@ -20,6 +20,8 @@ Verbindlichkeit: Leitprinzip, Muster G–K und Bildsprache sind Profilentscheide
+ 4. **Textlast senken, nicht die Substanz.** Vereinfachen ja, verfälschen oder auf unverbundene Schlagwörter verkürzen nein.
+ 5. **Bedeutung nie nur über Farbe.** Lage, Abstand, Linienart, Linienstärke, Nummer und Beschriftung tragen die Unterscheidung.
+ 6. **Wenige gute statt viele Grafiken.** Kein Mindestmass; eine tragende Darstellung pro Kernaussage genügt. Visualisierungen werden früh im Erkenntnisweg geplant und über die Seite verteilt, nicht am Schluss gesammelt.
++7. **Angehörige im Modell.** Die Websites richten sich an Angehörige. Erklärt eine Darstellung einen Mechanismus oder Ablauf (Kreislauf B, Prozesspfad C, Modell in Schritten G), wird geprüft, wo Angehörige ansetzen können. Der Ansatzpunkt steht im Modell, nicht nur in einer Vertiefung oder einer getrennten Liste. Ansatzpunkte beschreiben eigene Möglichkeiten im Umgang oder für sich selbst – nie Verantwortung für Behandlung, Verlauf oder Heilung. Gibt es keinen sinnvollen Ansatzpunkt, wird der Verzicht im Visualisierungsplan begründet.
++8. **Verbinden statt doppeln.** Beschreiben zwei Abschnitte denselben Mechanismus – etwa die Kernbereiche einer Erkrankung und den Kreislauf, der sie aufrechterhält –, entsteht ein verbundenes Modell statt einer Textliste und einer getrennten Grafik.
+ 
+ ## Auswahl: vom Vermittlungsziel zur Erklärform
+ 
+@@ -45,13 +47,13 @@ Verbindlichkeit: Leitprinzip, Muster G–K und Bildsprache sind Profilentscheide
+ | Muster | Wofür | Was trägt Bedeutung | Schmal (unter 560 px) | Verzichten, wenn … |
+ | --- | --- | --- | --- | --- |
+ | **A · Figur mit Langbeschreibung** | Beziehungen, Überschneidungen, Zustände | Lage, Überschneidung | Bereiche als Liste | nur Aufzählung ohne Beziehung |
+-| **B · Kreislauf** | Rückkopplung, Teufelskreis, Ausstiegspunkt | geschlossene Schleife, Pfeilrichtung | Liste mit sichtbarem «zurück zu Station 1» | keine echte Rückkopplung (→ C) |
+-| **C · Prozesspfad** | Abläufe, Behandlungs- und Verwaltungswege | Reihenfolge, Nummer, gestrichelt = optional | senkrechter Pfad | Schritte unabhängig voneinander (→ Liste) |
++| **B · Kreislauf** | Rückkopplung, Teufelskreis, Ausstiegspunkt | geschlossene Schleife, Pfeilrichtung; Ansatzpunkt: Station mit doppelter Kontur und Beschriftung | Liste mit sichtbarem «zurück zu Station 1» | keine echte Rückkopplung (→ C) |
++| **C · Prozesspfad** | Abläufe, Behandlungs- und Verwaltungswege | Reihenfolge, Nummer, gestrichelt = optional; Ansatzpunkt: doppelter Ring und Beschriftung | senkrechter Pfad | Schritte unabhängig voneinander (→ Liste) |
+ | **D · Redaktionelle Illustration** | Erleben, Metapher, emotionaler Zugang | Szene, Metapher | Bild mit Legende | ohne freigegebene Quelle nur Platzhalter |
+ | **E · Vergleich** | zwei Optionen nach gleichen Merkmalen | gleiche Merkmale, Linienart | Spalten untereinander | mehr als zwei Optionen (→ `Table`) |
+ | **F · Entscheidungsweg** | Wenn-dann-Folge zu genau einem nächsten Schritt | Fragenfolge, Verzweigung | bleibt Liste | es würde Diagnose oder Triage nahelegen |
+-| **G · Modell in Schritten** | Entstehung und Wirkweise | Lage der Teile, Pfeilrichtung, Nummern = Liste | Grafik über der Liste | mehr als fünf Teile (aufteilen) oder Rückkopplung (→ B) |
+-| **H · Spannungsfeld** | zwei berechtigte, gegenläufige Anliegen | Seite, Linienart, Mitte am Drehpunkt | Pol A · Mitte · Pol B untereinander | eine Seite ist fachlich klar richtig (→ E, Empfehlung) |
++| **G · Modell in Schritten** | Entstehung und Wirkweise | Lage der Teile, Pfeilrichtung, Nummern = Liste; Ansatzpunkt: doppelter Ring und Beschriftung | Grafik über der Liste | mehr als fünf Teile (aufteilen) oder Rückkopplung (→ B) |
++| **H · Spannungsfeld** | zwei berechtigte, gegenläufige Anliegen | Seite, Linienart, Mitte am Drehpunkt; Spalten hängen an den Schalen, gestrichelter gekippter Balken = kann sich verschieben | Pol A · Mitte · Pol B untereinander | eine Seite ist fachlich klar richtig (→ E, Empfehlung) |
+ | **I · Beziehungskarte** | Unterstützungsnetz, Beteiligte, Zuständigkeiten | Abstand zur Mitte, Linienart, beschriftete Kreise | nach Kreisen gegliederte Liste | Reihenfolge zählt (→ C) oder mehr als drei Einträge je Kreis |
+ | **J · Kontinuum** | Abstufung, Verlauf, Frühzeichen | Lage auf der Achse, Linienstärke, Doppelpfeil | Bereiche untereinander | Stufen fachlich nicht abgrenzbar; nie als Selbstdiagnose-Skala |
+ | **K · Schichtenmodell** | sichtbar und verborgen | über/unter der Linie, Grösse der Form | zwei Schichten untereinander | die Zuordnung wäre Deutung statt Möglichkeit |
+@@ -82,11 +84,13 @@ Die Taxonomie der Handout-Reihe der Fachstelle gilt auch für Websites. Entsprec
+ 
+ ## Drei Erklärungsebenen
+ 
++Gilt für alle Muster A–K; die Kopiervorlagen enthalten alle drei Ebenen.
++
+ 1. **Kernaussage:** ein ganzer Satz über der Darstellung («Belastung ist keine Frage der Stärke: Es zählt, was zufliesst – und was abfliessen kann.»), kein Schlagwort.
+ 2. **Darstellung mit präzisen Beschriftungen und kurzem Erklärtext:** zwei bis vier zusammenhängende Sätze, konkrete Beispiele dort, wo sie das Verständnis tragen.
+ 3. **Vertiefung zum Aufklappen** (`details`, Akkordeon): Beispiel aus dem Alltag, Grenzen des Modells, Langbeschreibung, Quelle.
+ 
+-Ebene 1 und 2 tragen die Aussage allein. Was in Ebene 3 steht, darf fehlen, ohne dass die Grundaussage fehlt.
++Ebene 1 und 2 tragen die Aussage allein. Was in Ebene 3 steht, darf fehlen, ohne dass die Grundaussage fehlt. Was für die Zielgruppe die Hauptaussage ist – etwa was Angehörige tun können –, gehört deshalb nicht in die Vertiefung.
+ 
+ ## Visuell und interaktiv
+ 
+@@ -132,7 +136,7 @@ Vorschläge für die Erklärform; die fachliche Aussage legt die Fachstelle fest
+ | Website / Thema | Kernaussage | Erklärform |
+ | --- | --- | --- |
+ | Stress verstehen und bewältigen | Belastung entsteht aus dem Verhältnis von Zu- und Abfluss | G · Belastungsgefäss mit Ansatzpunkt «Abfluss» |
+-| Zwangsstörung | Rückversicherung lindert kurz und hält den Zwang aufrecht | B · Kreislauf mit markiertem Ausstiegspunkt |
++| Zwangsstörung | Rückversicherung lindert kurz und hält den Zwang aufrecht | B · Kreislauf mit markiertem Ansatzpunkt für Angehörige |
+ | Borderline | Nähe suchen und Abstand brauchen kann gleichzeitig gelten | H · Spannungsfeld |
+ | Bipolare Störung | Stimmung bewegt sich in Phasen; frühe Zeichen geben Spielraum | J · Kontinuum mit Frühzeichen je Bereich |
+ | Psychose, Angehörigengespräch | Hinter Rückzug kann Überforderung liegen | K · Schichtenmodell mit Gesprächsbeispiel |
+diff --git a/guidelines/06-langform-und-psychoedukation.md b/guidelines/06-langform-und-psychoedukation.md
+index 84a4829..a7eefbc 100644
+--- a/guidelines/06-langform-und-psychoedukation.md
++++ b/guidelines/06-langform-und-psychoedukation.md
+@@ -29,7 +29,7 @@ liegt in `tokens/web-longform.css`.
+ 
+ ## Visualisierungsplan
+ 
+-- **MUSS:** Vor dem Bau einen Visualisierungsplan erstellen und dem Review beilegen; Spalten, Pflichtfälle und Vorlage im Abschnitt «Visualisierung umsetzen».
++- **MUSS:** Vor dem Bau einen Visualisierungsplan erstellen und dem Review beilegen – eine Zeile pro Abschnitt, bei Erklärmodellen mit Ansatzpunkt für Angehörige; Spalten, Pflichtfälle und Vorlage im Abschnitt «Visualisierung umsetzen».
+ 
+ ## Mehrseitige Websites (r4)
+ 
+diff --git a/guidelines/07-visualisierung-umsetzen.md b/guidelines/07-visualisierung-umsetzen.md
+index 5990525..16b2b8f 100644
+--- a/guidelines/07-visualisierung-umsetzen.md
++++ b/guidelines/07-visualisierung-umsetzen.md
+@@ -8,29 +8,33 @@ Wie Darstellungen geplant, gebaut und geprüft werden. Was dargestellt wird und
+ 
+ | Spalte | Inhalt |
+ | --- | --- |
+-| Abschnitt | Kapitel oder Abschnitt im Erkenntnisweg |
++| Abschnitt | Kapitel oder Abschnitt im Erkenntnisweg; im Starter zusätzlich `sectionId` = `id` der `section` |
+ | Erkenntnisziel | Was Lesende danach verstanden haben oder tun können |
+ | Format | Text oder Muster A–K |
+ | Aussage oder Beziehung | Die konkrete Aussage, die die Darstellung zeigt |
+ | Was wird besser verstanden? | Antwort auf die Prüffrage |
+ | Quelle bzw. Kennzeichnung | Fachliche Quelle oder «Eigene didaktische Darstellung» |
+ | Textalternative | Entwurf; bei komplexen Darstellungen Langbeschreibung im HTML |
+-| Begründung | Warum die Darstellung hilft – oder warum Text klarer ist |
++| Ansatzpunkt für Angehörige | Bei Kreislauf, Prozesspfad und Modell in Schritten: wo Angehörige ansetzen können, oder «entfällt: Begründung» (`entryPoint`) |
++| Begründung | Warum die Darstellung hilft – oder warum Text klarer ist; passt zum Inhalt des Abschnitts |
+ | Freigabe | Status der fachlichen Freigabe |
+ 
+ ```markdown
+-| Abschnitt | Erkenntnisziel | Format | Aussage | Besser verstanden | Quelle / Kennzeichnung | Textalternative | Begründung | Freigabe |
+-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+-| 01 … | … | … | … | … | … | … | … | ausstehend |
++| Abschnitt | Erkenntnisziel | Format | Aussage | Besser verstanden | Quelle / Kennzeichnung | Textalternative | Ansatzpunkt | Begründung | Freigabe |
++| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
++| 01 … | … | … | … | … | … | … | … | … | ausstehend |
+ ```
+ 
+ - **MUSS:** Bei Beziehungen, Kreisläufen, Prozessen, Veränderungen, Zuständen, Entscheidungen und emotional schwer zugänglichem Erleben ist eine Erklärform Standard. Ein Verzicht wird in «Begründung» kurz begründet («Text ist klarer: Aufzählung ohne Beziehung»).
++- **MUSS:** Jeder Abschnitt hat eine Zeile im Plan – mit Erklärform oder begründetem Verzicht. Im Starter verbindet `sectionId` die Zeile mit der `section`; das Gate meldet Abschnitte ohne Zeile (Entwurf: Hinweis, Produktion: blockiert).
++- **MUSS:** Kreislauf, Prozesspfad und Modell in Schritten nennen in `entryPoint` den Ansatzpunkt für Angehörige oder «entfällt: Begründung». Ein genannter Ansatzpunkt ist in der Figur markiert; das Gate prüft beides (Entwurf: Hinweis, Produktion: blockiert).
+ - **MUSS NICHT:** Es gibt keine Mindestzahl. Dekorative Bilder oder Stimmungsbilder erfüllen den Plan nicht.
+ - **MUSS:** Bei mehr als acht Hauptkapiteln zeigt der Plan, wie die zentralen Erkenntnisschritte visuell getragen werden (etwa eine visuelle Kapitelübersicht und je eine Darstellung pro Schlüsselbeziehung).
+ 
+ ## Aufbau einer Darstellung
+ 
+-- `figure` mit Titel (`aria-labelledby`), Kernaussage als Satz, kurzem Erklärtext und `figcaption` mit Kurzbeschreibung (`aria-describedby`).
++- `figure` mit Titel (`aria-labelledby`), Kernaussage als Satz (`p.puk-vis-kern`), kurzem Erklärtext (`p.puk-vis-short`, zwei bis vier Sätze), wo sinnvoll Vertiefung (`details.puk-vis-more`) und `figcaption` mit Kurzbeschreibung (`aria-describedby`). Das Gate meldet eine Figur ohne Kernaussage (Entwurf: Hinweis, Produktion: blockiert).
++- **Ansatzpunkt für Angehörige:** `p.puk-vis-ansatz` mit `span.puk-vis-ansatz__key` («Ansatzpunkt für Angehörige»). Im Kreislauf trägt die Station `li.is-ansatz` (doppelte Kontur) und `span.puk-vis-cycle__key` («Ansatzpunkt»); im Prozesspfad trägt der Schritt `li.is-ansatz` (doppelter Ring); im Modell in Schritten markiert ein doppelter Ring die Stelle in der Grafik. Die Textfassung nennt den Ansatzpunkt.
+ - **Alle Beschriftungen sind echter HTML-Text**; Formen, Linien und Pfeile sind `aria-hidden`. Kein Text in Bildern, wo HTML-Text möglich ist.
+ - Komplexe Darstellungen haben eine sichtbare, verlinkbare Langbeschreibung oder eine vollständige gegliederte Textfassung.
+ - Kennzeichnung in der Legende: «Eigene didaktische Darstellung» oder Quelle; Quellenlinks mit generischem Text («Quelle», «Textfassung») erhalten ein sprechendes `aria-label`, das den sichtbaren Text enthält.
+@@ -86,7 +90,11 @@ Nur für Büromedien (nicht Teil dieses Website-Profils, aber oft als Vorlage f
+ Redaktioneller Check vor der fachlichen Freigabe (Stufe 4 im Abschnitt «Prüfung und Freigabe»). Kein automatischer Blocker.
+ 
+ - [ ] Visualisierungsplan liegt vor; die Seite entspricht ihm.
+-- [ ] Prüffrage je Darstellung konkret beantwortet.
++- [ ] Jeder Abschnitt hat eine Zeile im Plan; Begründungen für reinen Text passen zum Inhalt (kein «nebeneinander», wenn der Text ein Zusammenwirken beschreibt).
++- [ ] Prüffrage je Darstellung konkret beantwortet – und die Darstellung zeigt, was die Antwort verspricht (keine «Dauer» im Plan, wenn der Pfad keine zeigt).
++- [ ] Jede Figur hat Kernaussage und Erklärtext; die Hauptaussage für Angehörige steht nicht nur in der Vertiefung.
++- [ ] Erklärmodelle (B, C, G): Ansatzpunkt für Angehörige markiert oder Verzicht begründet; keine Verantwortung für Behandlung oder Verlauf zugeschoben.
++- [ ] Derselbe Mechanismus wird nicht in zwei Abschnitten getrennt gezeigt, sondern verbunden.
+ - [ ] Kartenraster-Check: keine Reihe gleichartiger Karten mit Icons, wo eine Anordnung mit Beziehungen erklären müsste; aufbauende Erklärungen nicht in Karten zerlegt.
+ - [ ] Anordnung, Verbindungen, Formen oder Linienarten tragen Bedeutung, nicht nur die Wörter.
+ - [ ] Darstellungen über den Erkenntnisweg verteilt, nicht am Ende gesammelt; keine unbegründete Textwand.
+diff --git a/templates/website/longform/erklaermuster.css b/templates/website/longform/erklaermuster.css
+index 05e04c8..3143a29 100644
+--- a/templates/website/longform/erklaermuster.css
++++ b/templates/website/longform/erklaermuster.css
+@@ -3,18 +3,6 @@
+    Grundsatz: Anordnung, Verbindung, Form und Beschriftung tragen die Bedeutung; alle Beschriftungen sind HTML-Text,
+    Formen und Linien sind aria-hidden. Ohne Skript, ohne Animation und auf schmalen Bildschirmen vollständig lesbar. */
+ 
+-/* Erklärungsebenen: 1 Kernaussage · 2 Darstellung + kurzer Erklärtext · 3 Vertiefung */
+-.puk-vis-kern{margin:0 0 var(--space-3);font:var(--type-title-3);font-weight:var(--fw-medium);color:var(--text-default);max-width:38ch;text-wrap:balance}
+-.puk-vis-short{margin:0 0 var(--space-6);font:var(--type-body-sm);color:var(--text-default);max-width:62ch}
+-.puk-vis-more{margin-top:var(--space-5);border-top:1px solid var(--border-default);max-width:80ch}
+-.puk-vis-more>summary{display:flex;align-items:center;gap:var(--space-2);min-height:44px;cursor:pointer;font:var(--type-body-sm);font-weight:var(--fw-medium);color:var(--puk-blue-100);list-style:none}
+-.puk-vis-more>summary::-webkit-details-marker{display:none}
+-.puk-vis-more>summary::before{content:"";width:8px;height:8px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(-45deg);margin:0 4px 0 2px}
+-.puk-vis-more[open]>summary::before{transform:rotate(45deg)}
+-.puk-vis-more>summary:hover{color:var(--text-default);text-decoration:underline}
+-.puk-vis-more>summary:focus{outline:none}.puk-vis-more>summary:focus-visible{box-shadow:var(--focus-ring)}
+-.puk-vis-more__body{padding:0 0 var(--space-4);font:var(--type-body-sm);color:var(--text-default)}
+-.puk-vis-more__body p{margin:0 0 var(--space-2)}
+ .puk-vis-sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+ .puk-vis-btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 var(--space-4);border:1px solid var(--puk-black-100,#222);border-radius:3px;background:var(--puk-white);color:var(--text-default);font:var(--type-body-sm);font-weight:var(--fw-medium);cursor:pointer}
+ .puk-vis-btn:hover{background:var(--ui-wash);color:var(--puk-blue-100)}
+@@ -40,7 +28,8 @@
+ @media (prefers-reduced-motion:no-preference){.puk-vis-build [data-step]{transition:opacity var(--dur-base,200ms) var(--ease-standard,ease)}}
+ 
+ /* H · Spannungsfeld: zwei berechtigte Pole und was das Gleichgewicht hält */
+-.puk-vis-balance__beam{display:block;width:100%;max-width:720px;height:auto;margin:0 auto var(--space-4)}
++.puk-vis-balance{max-width:860px;margin-inline:auto}
++.puk-vis-balance__beam{display:block;width:100%;height:auto;margin:0}
+ .puk-vis-balance__grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1fr);gap:var(--space-6);align-items:start}
+ .puk-vis-balance__pole{min-width:0;padding-top:var(--space-4);border-top:4px solid var(--puk-blue-100)}
+ .puk-vis-balance__pole--b{border-top-style:double;border-top-width:6px}
+@@ -115,4 +104,4 @@
+ @container (max-width:560px){.puk-vis-net__ring ul{display:grid;gap:var(--space-2)}}
+ 
+ /* SVG-Linien und -Flächen über Tokens, damit das Theme «Hoher Kontrast» greift */
+-.puk-vis-ln{fill:none;stroke:var(--puk-blue-100);stroke-width:2;vector-effect:non-scaling-stroke;stroke-linecap:round;stroke-linejoin:round}.puk-vis-ln--thin{stroke-width:1.5}.puk-vis-ln--paper{fill:var(--puk-white)}.puk-vis-ln--water,.puk-vis-water{fill:var(--puk-blue-25)}.puk-vis-fill{fill:var(--puk-blue-100)}.puk-vis-mark{fill:var(--puk-white);stroke:var(--puk-blue-100);stroke-width:2}.puk-vis-marktext{fill:var(--text-default)}
++.puk-vis-ln{fill:none;stroke:var(--puk-blue-100);stroke-width:2;vector-effect:non-scaling-stroke;stroke-linecap:round;stroke-linejoin:round}.puk-vis-ln--thin{stroke-width:1.5}.puk-vis-ln--paper{fill:var(--puk-white)}.puk-vis-ln--water,.puk-vis-water{fill:var(--puk-blue-25)}.puk-vis-paper{fill:var(--puk-white)}.puk-vis-fill{fill:var(--puk-blue-100)}.puk-vis-mark{fill:var(--puk-white);stroke:var(--puk-blue-100);stroke-width:2}.puk-vis-marktext{fill:var(--text-default)}
+diff --git a/templates/website/longform/erklaermuster.html b/templates/website/longform/erklaermuster.html
+index 0685ed2..1c4150c 100644
+--- a/templates/website/longform/erklaermuster.html
++++ b/templates/website/longform/erklaermuster.html
+@@ -7,8 +7,8 @@
+ <title>Erklärmuster – Langform-Referenz | PUK Zürich</title>
+ <link rel="icon" href="../../../assets/logo/PUK_Logo-Symbol_statisch_positiv.svg" type="image/svg+xml">
+ <link rel="stylesheet" href="../../../styles.css">
+-<link rel="stylesheet" href="visual-patterns.css?v=r4-1">
+-<link rel="stylesheet" href="erklaermuster.css?v=2">
++<link rel="stylesheet" href="visual-patterns.css?v=r4-3">
++<link rel="stylesheet" href="erklaermuster.css?v=r4-3">
+ <script src="../../../components/interaktion.js" defer></script>
+ </head>
+ <body><div class="puk-web-page puk-longform" data-web-profile="website" data-longform-pattern="longform-psychoeducation">
+@@ -25,29 +25,31 @@
+ <g data-step="2"><rect x="40" y="196" width="240" height="170" class="puk-vis-water" clip-path="url(#cl-muster-g)"/>
+ <path d="M118 18 C 112 60, 128 100, 136 168" class="puk-vis-ln" marker-end="url(#ar-muster-g)"/><path d="M204 18 C 210 60, 194 100, 186 168" class="puk-vis-ln" marker-end="url(#ar-muster-g)"/><circle cx="160" cy="40" r="13" class="puk-vis-mark"/><text x="160" y="45" text-anchor="middle" font-family="Rubik, sans-serif" font-size="14" font-weight="500" class="puk-vis-marktext">2</text></g>
+ <g data-step="1"><path d="M70 110 C 58 190, 62 270, 100 335 Q 160 350 220 335 C 258 270, 262 190, 250 110" class="puk-vis-ln"/><circle cx="44" cy="250" r="13" class="puk-vis-mark"/><text x="44" y="255" text-anchor="middle" font-family="Rubik, sans-serif" font-size="14" font-weight="500" class="puk-vis-marktext">1</text></g>
+-<g data-step="3"><path d="M238 296 L 292 296" class="puk-vis-ln" marker-end="url(#ar-muster-g)"/><circle cx="286" cy="326" r="13" class="puk-vis-mark"/><text x="286" y="331" text-anchor="middle" font-family="Rubik, sans-serif" font-size="14" font-weight="500" class="puk-vis-marktext">3</text></g>
++<g data-step="3"><path d="M238 296 L 292 296" class="puk-vis-ln" marker-end="url(#ar-muster-g)"/><circle cx="286" cy="326" r="18" class="puk-vis-ln"/><circle cx="286" cy="326" r="13" class="puk-vis-mark"/><text x="286" y="331" text-anchor="middle" font-family="Rubik, sans-serif" font-size="14" font-weight="500" class="puk-vis-marktext">3</text></g>
+ <g data-step="4"><path d="M56 110 L 264 110" class="puk-vis-ln" stroke-dasharray="6 6"/><path d="M250 106 C 262 90, 284 100, 286 140 L 286 220" class="puk-vis-ln" marker-end="url(#ar-muster-g)"/><circle cx="300" cy="176" r="13" class="puk-vis-mark"/><text x="300" y="181" text-anchor="middle" font-family="Rubik, sans-serif" font-size="14" font-weight="500" class="puk-vis-marktext">4</text></g>
+-</svg></div><ol class="puk-vis-build__steps"><li><span class="puk-vis-build__n" aria-hidden="true">1</span><div><h3><span class="puk-vis-sr">Teil 1: </span>Das Gefäss</h3><p>Wie viel jemand tragen kann, ist verschieden und verändert sich: durch Veranlagung, Gesundheit und Lebensumstände.</p></div></li><li><span class="puk-vis-build__n" aria-hidden="true">2</span><div><h3><span class="puk-vis-sr">Teil 2: </span>Was zufliesst</h3><p>Sorgen um den erkrankten Menschen, Konflikte, Arbeit, unruhige Nächte. Viele kleine Zuflüsse wirken zusammen.</p></div></li><li><span class="puk-vis-build__n" aria-hidden="true">3</span><div><h3><span class="puk-vis-sr">Teil 3: </span>Was abfliessen kann</h3><p>Pausen, Schlaf, ein offenes Gespräch, geteilte Verantwortung. Entlastung senkt den Pegel – auch wenn die Zuflüsse bleiben.</p></div></li><li><span class="puk-vis-build__n" aria-hidden="true">4</span><div><h3><span class="puk-vis-sr">Teil 4: </span>Der Rand</h3><p>Fliesst dauerhaft mehr zu als ab, wird es eng: Erschöpfung, Gereiztheit oder Schlafprobleme können die Folge sein.</p></div></li></ol></div>
++</svg></div><ol class="puk-vis-build__steps"><li><span class="puk-vis-build__n" aria-hidden="true">1</span><div><h3><span class="puk-vis-sr">Teil 1: </span>Das Gefäss</h3><p>Wie viel jemand tragen kann, ist verschieden und verändert sich: durch Veranlagung, Gesundheit und Lebensumstände.</p></div></li><li><span class="puk-vis-build__n" aria-hidden="true">2</span><div><h3><span class="puk-vis-sr">Teil 2: </span>Was zufliesst</h3><p>Sorgen um den erkrankten Menschen, Konflikte, Arbeit, unruhige Nächte. Viele kleine Zuflüsse wirken zusammen.</p></div></li><li class="is-ansatz"><span class="puk-vis-build__n" aria-hidden="true">3</span><div><h3><span class="puk-vis-sr">Teil 3: </span>Was abfliessen kann</h3><p>Pausen, Schlaf, ein offenes Gespräch, geteilte Verantwortung. Entlastung senkt den Pegel – auch wenn die Zuflüsse bleiben.</p><p class="puk-vis-ansatz"><span class="puk-vis-ansatz__key">Ansatzpunkt für Angehörige</span>Oft beim Abfluss: Hier lässt sich am ehesten ansetzen, auch wenn die Zuflüsse bleiben.</p></div></li><li><span class="puk-vis-build__n" aria-hidden="true">4</span><div><h3><span class="puk-vis-sr">Teil 4: </span>Der Rand</h3><p>Fliesst dauerhaft mehr zu als ab, wird es eng: Erschöpfung, Gereiztheit oder Schlafprobleme können die Folge sein.</p></div></li></ol></div>
+ <div class="puk-vis-build__controls"><button type="button" class="puk-vis-btn" data-act="toggle">Schritt für Schritt aufbauen</button><button type="button" class="puk-vis-btn" data-act="prev" hidden>Zurück</button><button type="button" class="puk-vis-btn" data-act="next" hidden>Weiter</button><p class="puk-vis-build__status" aria-live="polite"></p></div>
+ <details class="puk-vis-more"><summary>Beispiel und Grenzen des Modells</summary><div class="puk-vis-more__body"><p><strong>Beispiel:</strong> Seit dem Klinikeintritt ihres Partners kümmert sich Frau M. um Kinder, Haushalt und Behördenpost. Die Zuflüsse lassen sich kaum verringern. Entlastung bringt, dass ihre Schwester zweimal pro Woche die Kinder übernimmt.</p><p><strong>Grenzen:</strong> Das Bild vereinfacht. Belastungen wirken nicht gleichförmig wie Wasser, und ein volles Gefäss ist kein Versagen. Es zeigt, wo man ansetzen kann – oft beim Abfluss.</p></div></details>
+-<figcaption class="puk-vis-caption"><p id="muster-g-text">Gefäss mit zwei Zuflüssen von oben, einem Abfluss unten rechts und einem gestrichelten Rand, über den es bei dauerhaftem Zufluss überläuft. Die vier nummerierten Teile sind im Text erklärt.</p><p><strong>Eigene didaktische Darstellung</strong>, angelehnt an das Vulnerabilitäts-Stress-Modell (Zubin und Spring, 1977) · <strong>Fachlich freigegeben</strong> (Fachstelle Angehörigenarbeit PUK, 06.10.2026).</p></figcaption>
++<figcaption class="puk-vis-caption"><p id="muster-g-text">Gefäss mit zwei Zuflüssen von oben, einem Abfluss unten rechts und einem gestrichelten Rand, über den es bei dauerhaftem Zufluss überläuft. Der Abfluss ist mit einem doppelten Ring als Ansatzpunkt für Angehörige markiert. Die vier nummerierten Teile sind im Text erklärt.</p><p><strong>Eigene didaktische Darstellung</strong>, angelehnt an das Vulnerabilitäts-Stress-Modell (Zubin und Spring, 1977) · <strong>Fachlich freigegeben</strong> (Fachstelle Angehörigenarbeit PUK, 06.10.2026).</p></figcaption>
+ </figure></div></section>
+ <section class="puk-web-container puk-longform__section" id="muster-h" aria-labelledby="muster-h-h"><div class="puk-longform__section-grid"><div class="puk-longform__section-heading"><p class="puk-longform__kicker">Muster H</p><h2 class="puk-web-h2" id="muster-h-h">Spannungs&shy;feld</h2></div><div class="puk-longform__copy"><p>Für zwei berechtigte, gegenläufige Anliegen. Die Waage zeigt, dass es um Gleichgewicht geht, nicht um richtig oder falsch. In der Mitte steht, was das Gleichgewicht hält. Unterschieden wird über Seite und Linienart, nicht über Farbe.</p></div></div>
+ <div class="puk-vis-wide"><figure class="puk-vis-figure" data-visual-id="muster-h" data-visual-type="tension-field" aria-labelledby="muster-h-title" aria-describedby="muster-h-text">
+ <p class="puk-vis-label" id="muster-h-title">Abbildung · Da sein und bei sich bleiben</p>
+ <p class="puk-vis-kern">Für den erkrankten Menschen da sein und für sich selbst sorgen – beides ist berechtigt.</p>
+-<p class="puk-vis-short">Es geht nicht um ein Entweder-oder. Das Gleichgewicht verschiebt sich je nach Phase der Erkrankung; wichtig ist, dass keine Seite dauerhaft wegfällt.</p>
++<p class="puk-vis-short">Es geht nicht um ein Entweder-oder. Das Gleichgewicht verschiebt sich je nach Phase der Erkrankung – der gestrichelte, gekippte Balken zeigt das; wichtig ist, dass keine Seite dauerhaft wegfällt.</p>
+ <div class="puk-vis-balance"><svg class="puk-vis-balance__beam" viewBox="0 0 720 150" aria-hidden="true" focusable="false"><defs><marker id="ar-muster-h" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="puk-vis-fill"/></marker></defs>
+-<path d="M300 26 Q 360 6 420 26" class="puk-vis-ln" marker-start="url(#ar-muster-h)" marker-end="url(#ar-muster-h)"/>
+-<path d="M90 60 L 630 60" class="puk-vis-ln"/><path d="M360 60 L 330 130 L 390 130 Z" class="puk-vis-ln"/><circle cx="360" cy="60" r="5" class="puk-vis-fill"/>
+-<path d="M120 60 L 90 104 M120 60 L 150 104" class="puk-vis-ln"/><path d="M76 104 Q 120 134 164 104 Z" class="puk-vis-ln"/>
+-<path d="M600 60 L 570 104 M600 60 L 630 104" class="puk-vis-ln"/><path d="M556 104 Q 600 134 644 104 Z" class="puk-vis-ln"/><path d="M562 112 Q 600 140 638 112" class="puk-vis-ln"/>
++<path d="M300 22 Q 360 2 420 22" class="puk-vis-ln" marker-start="url(#ar-muster-h)" marker-end="url(#ar-muster-h)"/>
++<path d="M92 88 L 628 32" class="puk-vis-ln" stroke-dasharray="7 7"/>
++<path d="M90 60 L 630 60" class="puk-vis-ln"/><path d="M360 60 L 330 126 L 390 126 Z" class="puk-vis-ln"/><circle cx="360" cy="60" r="5" class="puk-vis-fill"/>
++<path d="M120 60 L 90 100 M120 60 L 150 100" class="puk-vis-ln"/><path d="M76 100 Q 120 128 164 100 Z" class="puk-vis-ln"/>
++<path d="M600 60 L 570 100 M600 60 L 630 100" class="puk-vis-ln"/><path d="M556 100 Q 600 128 644 100 Z" class="puk-vis-ln"/><path d="M562 108 Q 600 134 638 108" class="puk-vis-ln"/>
++<path d="M120 114 L 120 150 M360 126 L 360 150 M600 121 L 600 150" class="puk-vis-ln"/>
+ </svg><div class="puk-vis-balance__grid">
+ <section class="puk-vis-balance__pole" aria-labelledby="muster-h-a"><p class="puk-vis-balance__key">Linke Seite · einfache Linie</p><h3 id="muster-h-a">Da sein für den erkrankten Menschen</h3><ul><li>Nachfragen und zuhören</li><li>Zu Terminen begleiten, wenn es gewünscht ist</li><li>In schwierigen Phasen Alltag mittragen</li></ul></section>
+ <section class="puk-vis-balance__hold" aria-labelledby="muster-h-m"><p class="puk-vis-balance__key">Mitte · Drehpunkt</p><h3 id="muster-h-m">Was das Gleichgewicht hält</h3><ul><li>Absprachen, wer was übernimmt</li><li>Verantwortung im Umfeld verteilen</li><li>Regelmässig prüfen: Wo stehe ich gerade?</li></ul></section>
+ <section class="puk-vis-balance__pole puk-vis-balance__pole--b" aria-labelledby="muster-h-b"><p class="puk-vis-balance__key">Rechte Seite · doppelte Linie</p><h3 id="muster-h-b">Für sich selbst sorgen</h3><ul><li>Eigene Termine und Freundschaften behalten</li><li>Benennen, was man leisten kann und was nicht</li><li>Unterstützung für sich selbst holen</li></ul></section>
+ </div></div>
+-<figcaption class="puk-vis-caption"><p id="muster-h-text">Waage im Gleichgewicht: links «Da sein für den erkrankten Menschen», rechts «Für sich selbst sorgen», in der Mitte am Drehpunkt, was das Gleichgewicht hält. Ein Doppelpfeil über dem Drehpunkt zeigt, dass sich das Gleichgewicht verschieben kann.</p><p><strong>Eigene didaktische Darstellung</strong> · <strong>Fachlich freigegeben</strong> (Fachstelle Angehörigenarbeit PUK, 06.10.2026).</p></figcaption>
++<figcaption class="puk-vis-caption"><p id="muster-h-text">Waage im Gleichgewicht: An der linken Schale hängt «Da sein für den erkrankten Menschen», an der rechten «Für sich selbst sorgen», unter dem Drehpunkt steht, was das Gleichgewicht hält. Ein gestrichelter, gekippter Balken und ein Doppelpfeil über dem Drehpunkt zeigen, dass sich das Gleichgewicht verschieben kann.</p><p><strong>Eigene didaktische Darstellung</strong> · <strong>Fachlich freigegeben</strong> (Fachstelle Angehörigenarbeit PUK, 06.10.2026).</p></figcaption>
+ </figure></div></section>
+ <section class="puk-web-container puk-longform__section" id="muster-i" aria-labelledby="muster-i-h"><div class="puk-longform__section-grid"><div class="puk-longform__section-heading"><p class="puk-longform__kicker">Muster I</p><h2 class="puk-web-h2" id="muster-i-h">Beziehungs&shy;karte</h2></div><div class="puk-longform__copy"><p>Für die Frage «Wer gehört dazu, und wie nah?». Abstand zur Mitte und Linienart tragen die Bedeutung. Schmal wird daraus eine nach Kreisen gegliederte Liste.</p></div></div>
+ <div class="puk-vis-wide"><figure class="puk-vis-figure" data-visual-id="muster-i" data-visual-type="relationship-map" aria-labelledby="muster-i-title" aria-describedby="muster-i-text">
+@@ -74,8 +76,8 @@
+ <p class="puk-vis-kern">Hinter sichtbarem Verhalten liegt oft Erleben, das von aussen nicht zu sehen ist.</p>
+ <p class="puk-vis-short">Das Bild lädt dazu ein, nachzufragen statt zu deuten. Was darunter liegt, ist eine Möglichkeit, keine Gewissheit.</p>
+ <div class="puk-vis-layers"><div class="puk-vis-layers__art"><svg viewBox="0 0 100 200" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+-<path d="M30 100 C 34 70, 46 34, 56 28 C 64 34, 70 64, 76 100 Z" class="puk-vis-ln puk-vis-ln--paper"/>
+-<path d="M76 100 C 90 118, 97 150, 85 178 C 70 196, 30 197, 14 174 C 3 150, 12 118, 30 100 Z" class="puk-vis-ln puk-vis-ln--water"/></svg></div>
++<defs><clipPath id="muster-k-oben"><rect x="0" y="0" width="100" height="100"/></clipPath><clipPath id="muster-k-unten"><rect x="0" y="100" width="100" height="100"/></clipPath></defs>
++<path d="M12 100 L 20 80 L 30 72 L 38 54 L 47 40 L 55 49 L 63 36 L 72 58 L 81 68 L 88 100 L 95 122 L 93 152 L 81 177 L 60 193 L 36 191 L 16 173 L 6 142 L 7 116 Z" class="puk-vis-paper" clip-path="url(#muster-k-oben)"/><path d="M12 100 L 20 80 L 30 72 L 38 54 L 47 40 L 55 49 L 63 36 L 72 58 L 81 68 L 88 100 L 95 122 L 93 152 L 81 177 L 60 193 L 36 191 L 16 173 L 6 142 L 7 116 Z" class="puk-vis-water" clip-path="url(#muster-k-unten)"/><path d="M12 100 L 20 80 L 30 72 L 38 54 L 47 40 L 55 49 L 63 36 L 72 58 L 81 68 L 88 100 L 95 122 L 93 152 L 81 177 L 60 193 L 36 191 L 16 173 L 6 142 L 7 116 Z" class="puk-vis-ln"/></svg></div>
+ <section class="puk-vis-layers__zone" aria-labelledby="muster-k-up"><h3 id="muster-k-up">Sichtbar</h3><ul><li>Rückzug ins Zimmer</li><li>Treffen werden abgesagt</li><li>Gereiztheit</li><li>Lange schlafen</li></ul></section>
+ <section class="puk-vis-layers__zone puk-vis-layers__zone--below" aria-labelledby="muster-k-down"><h3 id="muster-k-down">Darunter, oft nicht sichtbar</h3><ul><li>Erschöpfung</li><li>Angst, überfordert zu sein</li><li>Scham</li><li>Antriebslosigkeit als Teil der Erkrankung</li></ul></section></div>
+ <details class="puk-vis-more"><summary>Beispiel aus dem Alltag</summary><div class="puk-vis-more__body"><p>Ihr Sohn sagt das Familienessen kurzfristig ab. Sichtbar ist die Absage. Darunter kann Erschöpfung liegen oder die Sorge, einem Gespräch nicht gewachsen zu sein. Eine offene Frage – «Was würde es dir leichter machen?» – hilft oft mehr als eine Deutung.</p></div></details>
+diff --git a/templates/website/longform/visual-patterns.css b/templates/website/longform/visual-patterns.css
+index abce554..f80bc47 100644
+--- a/templates/website/longform/visual-patterns.css
++++ b/templates/website/longform/visual-patterns.css
+@@ -111,3 +111,26 @@
+ /* 200 % Text: lange Roadmap-Einträge umbrechen statt überlaufen */
+ .puk-longform__roadmap li,.puk-longform__roadmap a{min-width:0;max-width:100%;overflow-wrap:anywhere}
+ /* Keine selbstlaufende Animation: Kreislaufpfeile sind statisch (Profilentscheid 06.10.2026, Abschnitt «Interaktionskonzept»). */
++
++/* Drei Erklärungsebenen für alle Muster A–K (Profilentscheid 08.10.2026):
++   1 Kernaussage (.puk-vis-kern) · 2 Darstellung + kurzer Erklärtext (.puk-vis-short) · 3 Vertiefung (details.puk-vis-more) */
++.puk-vis-kern{margin:0 0 var(--space-3);font:var(--type-title-3);font-weight:var(--fw-medium);color:var(--text-default);max-width:38ch;text-wrap:balance}
++.puk-vis-short{margin:0 0 var(--space-6);font:var(--type-body-sm);color:var(--text-default);max-width:62ch}
++.puk-vis-more{margin-top:var(--space-5);border-top:1px solid var(--border-default);max-width:80ch}
++.puk-vis-more>summary{display:flex;align-items:center;gap:var(--space-2);min-height:44px;cursor:pointer;font:var(--type-body-sm);font-weight:var(--fw-medium);color:var(--puk-blue-100);list-style:none}
++.puk-vis-more>summary::-webkit-details-marker{display:none}
++.puk-vis-more>summary::before{content:"";width:8px;height:8px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(-45deg);margin:0 4px 0 2px}
++.puk-vis-more[open]>summary::before{transform:rotate(45deg)}
++.puk-vis-more>summary:hover{color:var(--text-default);text-decoration:underline}
++.puk-vis-more>summary:focus{outline:none}.puk-vis-more>summary:focus-visible{box-shadow:var(--focus-ring)}
++.puk-vis-more__body{padding:0 0 var(--space-4);font:var(--type-body-sm);color:var(--text-default)}
++.puk-vis-more__body p{margin:0 0 var(--space-2)}
++/* Ansatzpunkt für Angehörige (Muster B, C, G; Profilentscheid 08.10.2026): Beschriftung «Ansatzpunkt» + 4-px-Balken,
++   in der Grafik doppelte Kontur. Bedeutung nie nur über Farbe. Ansatzpunkte beschreiben eigene Möglichkeiten,
++   keine Verantwortung für Behandlung oder Verlauf. */
++.puk-vis-ansatz{margin:var(--space-3) 0 0;padding:var(--space-2) 0 var(--space-2) var(--space-3);border-left:4px solid var(--puk-blue-100);font:var(--type-body-sm);color:var(--text-default);max-width:62ch;text-align:left}
++.puk-vis-ansatz__key{display:block;font:var(--type-caption);font-weight:var(--fw-medium);color:var(--text-default)}
++.puk-vis-cycle li.is-ansatz{border-style:double;border-width:6px}
++.puk-vis-cycle__key{font:var(--type-caption);font-weight:var(--fw-medium);color:var(--text-default)}
++.puk-vis-path li.is-ansatz::after{box-shadow:0 0 0 3px var(--puk-white),0 0 0 5px var(--puk-blue-100)}
++.puk-vis-path .puk-vis-ansatz{margin-top:var(--space-2);color:var(--text-default)}
+diff --git a/templates/website/longform/visualisierungsmuster.html b/templates/website/longform/visualisierungsmuster.html
+index 9a22ad0..e2d8ce8 100644
+--- a/templates/website/longform/visualisierungsmuster.html
++++ b/templates/website/longform/visualisierungsmuster.html
+@@ -7,7 +7,7 @@
+ <title>Visualisierungsmuster – Langform-Referenz | PUK Zürich</title>
+ <link rel="icon" href="../../../assets/logo/PUK_Logo-Symbol_statisch_positiv.svg" type="image/svg+xml">
+ <link rel="stylesheet" href="../../../styles.css">
+-<link rel="stylesheet" href="visual-patterns.css?v=r4-1">
++<link rel="stylesheet" href="visual-patterns.css?v=r4-3">
+ </head>
+ <body><div class="puk-web-page puk-longform" data-web-profile="website" data-longform-pattern="longform-psychoeducation">
+ <a class="puk-web-skip" href="#main-content">Zum Hauptinhalt</a>
+@@ -23,23 +23,26 @@
+ <section class="puk-web-container puk-longform__hero"><p class="puk-web-eyebrow">Langform · Visualisierungsmuster · 1.10.1-r4 · abgeleitet</p><h1 class="puk-web-h1">Grafiken und Bilder planen</h1><p class="puk-longform__intro">Diese Referenz zeigt, wie ein Visualisierungsplan aussieht, und stellt sechs kopierbare Muster bereit: Figur mit Langbeschreibung, Kreislauf, Prozesspfad, Illustrationsplatzhalter, Vergleich und Entscheidungsweg.</p><p class="puk-longform__boundary"><strong>Prüfgrenze:</strong> Alle Inhalte sind synthetische Musterinhalte ohne fachliche Aussage. Reale Modelle, Abläufe und Illustrationen brauchen Quelle, Inhaltsverantwortung und Freigabe.</p></section>
+ <nav class="puk-longform__roadmap" aria-label="Weg durch die Musterseite"><div class="puk-web-container"><p class="puk-longform__roadmap-label">Auf dieser Seite</p><ol><li><a href="#plan">Visualisierungsplan</a></li><li><a href="#muster-figur">Figur mit Langbeschreibung</a></li><li><a href="#muster-kreislauf">Kreislauf</a></li><li><a href="#muster-pfad">Prozesspfad</a></li><li><a href="#muster-illustration">Illustration</a></li><li><a href="#muster-vergleich">Vergleich</a></li><li><a href="#muster-entscheidung">Entscheidungsweg</a></li><li><a href="#bericht-ins-web">Bericht ins Web</a></li><li><a href="#review">Review</a></li></ol></div></nav>
+ 
+-<section class="puk-web-container puk-longform__section" id="plan" aria-labelledby="plan-title"><div class="puk-longform__section-grid"><div class="puk-longform__section-heading"><p class="puk-longform__kicker">01 · Planung</p><h2 class="puk-web-h2" id="plan-title">Zuerst planen, dann bauen</h2></div><div class="puk-longform__copy"><p>Vor dem Bau einer psychoedukativen Langformseite wird für jeden Abschnitt festgehalten, welches Erkenntnisziel er hat und ob eine Visualisierung es besser trägt als Text. Wo Text klarer ist, steht die Begründung im Plan.</p><p>Der Plan gehört in die Übergabe und in den Review, nicht auf die veröffentlichte Seite. Die Tabelle zeigt das Format an einer synthetischen Musterseite.</p></div></div>
++<section class="puk-web-container puk-longform__section" id="plan" aria-labelledby="plan-title"><div class="puk-longform__section-grid"><div class="puk-longform__section-heading"><p class="puk-longform__kicker">01 · Planung</p><h2 class="puk-web-h2" id="plan-title">Zuerst planen, dann bauen</h2></div><div class="puk-longform__copy"><p>Vor dem Bau einer psychoedukativen Langformseite wird für jeden Abschnitt festgehalten, welches Erkenntnisziel er hat und ob eine Visualisierung es besser trägt als Text. Wo Text klarer ist, steht die Begründung im Plan.</p><p>Der Plan gehört in die Übergabe und in den Review, nicht auf die veröffentlichte Seite. Die Tabelle zeigt das Format an einer synthetischen Musterseite.</p><p>Jede Zeile gehört zu genau einem Abschnitt (im Starter: <code>sectionId</code>). Erklärmodelle – Kreislauf, Prozesspfad, Modell in Schritten – nennen einen Ansatzpunkt für Angehörige oder begründen den Verzicht (<code>entryPoint</code>).</p></div></div>
+ <div class="puk-vis-wide"><div class="puk-vis-tablewrap" role="region" aria-labelledby="plan-caption" tabindex="0"><table class="puk-vis-plan"><caption id="plan-caption">Beispiel eines Visualisierungsplans für eine synthetische Langformseite</caption>
+-<thead><tr><th scope="col">Abschnitt</th><th scope="col">Erkenntnisziel</th><th scope="col">Gewähltes Format</th><th scope="col">Aussage oder Beziehung</th><th scope="col">Quelle bzw. Kennzeichnung</th><th scope="col">Alternativtext oder Langbeschreibung</th><th scope="col">Begründung</th></tr></thead>
++<thead><tr><th scope="col">Abschnitt</th><th scope="col">Erkenntnisziel</th><th scope="col">Gewähltes Format</th><th scope="col">Aussage oder Beziehung</th><th scope="col">Quelle bzw. Kennzeichnung</th><th scope="col">Alternativtext oder Langbeschreibung</th><th scope="col">Ansatzpunkt für Angehörige</th><th scope="col">Begründung</th></tr></thead>
+ <tbody>
+-<tr><th scope="row">01 Orientierung</th><td>Wissen, worum es geht und was die Seite leistet</td><td>Text</td><td>–</td><td>–</td><td>–</td><td>Text ist klarer: kurzer Einstieg ohne darzustellende Beziehung.</td></tr>
+-<tr><th scope="row">02 Verständnis</th><td>Zwei Bereiche und ihren gemeinsamen Anteil unterscheiden</td><td>Figur mit Langbeschreibung (Muster A)</td><td>Bereich A und Bereich B überschneiden sich teilweise</td><td>Eigene didaktische Darstellung</td><td>Kurzbeschreibung in der Bildlegende, Langbeschreibung verlinkt</td><td>Die Überschneidung ist räumlich schneller erfassbar als im Satz.</td></tr>
+-<tr><th scope="row">03 Vertiefung</th><td>Verstehen, dass die letzte Station auf die erste zurückwirkt</td><td>Kreislauf (Muster B)</td><td>Vier Stationen folgen aufeinander; Station 4 wirkt auf Station 1 zurück</td><td>Eigene Darstellung; bei einem Fachmodell dessen Quelle</td><td>Stationen als geordnete Liste, Leserichtung und Textfassung im HTML</td><td>Ein Kreislauf ist im Fliesstext schwer zu halten.</td></tr>
+-<tr><th scope="row">04 Alltagsbezug</th><td>Den Ablauf von der Anfrage bis zum Rückblick kennen</td><td>Prozesspfad (Muster C)</td><td>Fünf Schritte in fester Folge; Schritt 4 ist optional</td><td>Musterpfad; reale Abfolge fachlich freigeben</td><td>Echte geordnete Liste mit Schrittnummer und Text</td><td>Abfolge und Option werden auf einen Blick sichtbar.</td></tr>
+-<tr><th scope="row">05 Zugang</th><td>Ein schwer beschreibbares Erleben angemessen ansprechen</td><td>Redaktionelle Illustration (Muster D)</td><td>Metapher nach redaktionellem Konzept</td><td>Bildquelle offen, Freigabe ausstehend</td><td>Alternativtext-Entwurf im Freigabeblock</td><td>Erleichtert den Einstieg; bis zur Freigabe abstrakter Platzhalter.</td></tr>
+-<tr><th scope="row">06 Handlung</th><td>Einen nächsten Schritt wählen</td><td>Text und Aktionslinks</td><td>–</td><td>–</td><td>–</td><td>Text ist klarer: Handlungen sind Links, keine Beziehung.</td></tr>
++<tr><th scope="row">01 Orientierung</th><td>Wissen, worum es geht und was die Seite leistet</td><td>Text</td><td>–</td><td>–</td><td>–</td><td>–</td><td>Text ist klarer: kurzer Einstieg ohne darzustellende Beziehung.</td></tr>
++<tr><th scope="row">02 Verständnis</th><td>Zwei Bereiche und ihren gemeinsamen Anteil unterscheiden</td><td>Figur mit Langbeschreibung (Muster A)</td><td>Bereich A und Bereich B überschneiden sich teilweise</td><td>Eigene didaktische Darstellung</td><td>Kurzbeschreibung in der Bildlegende, Langbeschreibung verlinkt</td><td>entfällt: keine Wirkweise</td><td>Die Überschneidung ist räumlich schneller erfassbar als im Satz.</td></tr>
++<tr><th scope="row">03 Vertiefung</th><td>Verstehen, dass die letzte Station auf die erste zurückwirkt</td><td>Kreislauf (Muster B)</td><td>Vier Stationen folgen aufeinander; Station 4 wirkt auf Station 1 zurück</td><td>Eigene Darstellung; bei einem Fachmodell dessen Quelle</td><td>Stationen als geordnete Liste, Leserichtung und Textfassung im HTML</td><td>Station 3 (Muster)</td><td>Ein Kreislauf ist im Fliesstext schwer zu halten.</td></tr>
++<tr><th scope="row">04 Alltagsbezug</th><td>Den Ablauf von der Anfrage bis zum Rückblick kennen</td><td>Prozesspfad (Muster C)</td><td>Fünf Schritte in fester Folge; Schritt 4 ist optional</td><td>Musterpfad; reale Abfolge fachlich freigeben</td><td>Echte geordnete Liste mit Schrittnummer und Text</td><td>Schritt 2 (Muster)</td><td>Abfolge und Option werden auf einen Blick sichtbar.</td></tr>
++<tr><th scope="row">05 Zugang</th><td>Ein schwer beschreibbares Erleben angemessen ansprechen</td><td>Redaktionelle Illustration (Muster D)</td><td>Metapher nach redaktionellem Konzept</td><td>Bildquelle offen, Freigabe ausstehend</td><td>Alternativtext-Entwurf im Freigabeblock</td><td>–</td><td>Erleichtert den Einstieg; bis zur Freigabe abstrakter Platzhalter.</td></tr>
++<tr><th scope="row">06 Handlung</th><td>Einen nächsten Schritt wählen</td><td>Text und Aktionslinks</td><td>–</td><td>–</td><td>–</td><td>–</td><td>Text ist klarer: Handlungen sind Links, keine Beziehung.</td></tr>
+ </tbody></table></div></div></section>
+ 
+ <section class="puk-web-container puk-longform__section" id="muster-figur" aria-labelledby="fig-a-section"><div class="puk-longform__section-grid"><div class="puk-longform__section-heading"><p class="puk-longform__kicker">02 · Muster A</p><h2 class="puk-web-h2" id="fig-a-section">Figur mit Legende und langer Beschreibung</h2></div><div class="puk-longform__copy"><p>Für Beziehungen, Überschneidungen und Gegenüberstellungen. Die Legende kennzeichnet die Darstellung und fasst sie kurz zusammen; die Langbeschreibung steht sichtbar darunter und ist direkt verlinkbar.</p></div></div>
+ <div class="puk-vis-wide"><figure class="puk-vis-figure" data-visual-id="muster-a" data-visual-type="figure" aria-labelledby="fig-a-title" aria-describedby="fig-a-short">
+ <p class="puk-vis-label" id="fig-a-title">Abbildung 1 · Zwei Bereiche mit gemeinsamem Anteil</p>
++<p class="puk-vis-kern">Zwei Bereiche haben einen Teil gemeinsam – die Überschneidung zeigt ihn auf einen Blick.</p>
++<p class="puk-vis-short">Musterinhalt: Die Lage der Kreise trägt die Aussage, nicht ihre Grösse. Durchgezogene und gestrichelte Linie unterscheiden die Bereiche ohne Farbe.</p>
+ <div class="puk-vis-overlap"><svg viewBox="0 0 320 180" aria-hidden="true" focusable="false"><circle cx="120" cy="90" r="80" fill="var(--ui-field)" stroke="var(--puk-blue-100)" stroke-width="2"></circle><circle cx="200" cy="90" r="80" fill="none" stroke="var(--puk-blue-100)" stroke-width="2" stroke-dasharray="6 5"></circle></svg>
+ <ul role="list"><li>Bereich A</li><li>Gemeinsamer Anteil</li><li>Bereich B</li></ul></div>
++<details class="puk-vis-more"><summary>Grenzen des Modells</summary><div class="puk-vis-more__body"><p>Die Darstellung zeigt nur, dass es einen gemeinsamen Anteil gibt – nicht, wie gross er ist oder wie die Bereiche entstehen.</p></div></details>
+ <figcaption class="puk-vis-caption"><p id="fig-a-short">Bereich A (durchgezogene Linie) und Bereich B (gestrichelte Linie) überschneiden sich in der Mitte.</p><p><strong>Eigene didaktische Darstellung</strong> · synthetischer Musterinhalt, keine fachliche Aussage. <a class="puk-link--inline" href="#muster-figur-lb">Langbeschreibung zu Abbildung 1</a></p></figcaption>
+ </figure>
+ <div class="puk-vis-longdesc" id="muster-figur-lb" tabindex="-1"><h3>Langbeschreibung zu Abbildung 1</h3><p>Zwei gleich grosse Kreise liegen nebeneinander und überlappen sich etwa zu einem Viertel. Der linke Kreis heisst «Bereich A», ist hell gefüllt und hat eine durchgezogene Kontur. Der rechte Kreis heisst «Bereich B» und hat eine gestrichelte Kontur ohne Füllung.</p><p>Die Überlappung in der Mitte ist mit «Gemeinsamer Anteil» beschriftet. Grösse und Abstand der Kreise haben keine Bedeutung; die Darstellung zeigt nur, dass beide Bereiche einen Teil gemeinsam haben.</p></div></div></section>
+@@ -47,23 +50,32 @@
+ <section class="puk-web-container puk-longform__section" id="muster-kreislauf" aria-labelledby="fig-b-section"><div class="puk-longform__section-grid"><div class="puk-longform__section-heading"><p class="puk-longform__kicker">03 · Muster B</p><h2 class="puk-web-h2" id="fig-b-section">Kreislauf mit vier Stationen</h2></div><div class="puk-longform__copy"><p>Für Wechselwirkungen und sich wiederholende Abfolgen. Die Stationen sind eine echte geordnete Liste; die Pfeile verdeutlichen nur die Richtung. Breit bilden die Stationen eine geschlossene Schleife. Auf schmalen Bildschirmen werden sie zur Liste; der Rücksprung «zurück zu Station 1» bleibt als Linie und als Text sichtbar. «Im Uhrzeigersinn» steht nur in der breiten Leserichtung.</p></div></div>
+ <div class="puk-vis-wide"><figure class="puk-vis-figure" data-visual-id="muster-b" data-visual-type="cycle" aria-labelledby="fig-b-title" aria-describedby="fig-b-text">
+ <p class="puk-vis-label" id="fig-b-title">Abbildung 2 · Kreislauf mit vier Musterstationen</p>
++<p class="puk-vis-kern">Was am Ende geschieht, wirkt auf den Anfang zurück.</p>
++<p class="puk-vis-short">Musterinhalt: Vier Stationen folgen aufeinander, die vierte führt zurück zur ersten. Station 3 ist als Ansatzpunkt für Angehörige markiert – mit doppelter Kontur und Beschriftung, nicht nur über Farbe.</p>
+ <p class="puk-vis-dir"><strong>Leserichtung:</strong> <span data-cycle-wide>im Uhrzeigersinn, beginnend oben bei Station 1.</span><span data-cycle-narrow>von oben nach unten; nach Station 4 zurück zu Station 1.</span></p>
+ <div class="puk-vis-cycle"><svg viewBox="0 0 400 400" aria-hidden="true" focusable="false"><defs><marker id="puk-vis-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9" fill="none" stroke="var(--puk-blue-100)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></marker></defs><g fill="none" stroke="var(--puk-blue-100)" stroke-width="2" stroke-linecap="round"><path class="puk-vis-arc" d="M270 67 A66 66 0 0 1 333 130" marker-end="url(#puk-vis-arrow)"></path><path class="puk-vis-arc" d="M333 270 A66 66 0 0 1 270 333" marker-end="url(#puk-vis-arrow)"></path><path class="puk-vis-arc" d="M130 333 A66 66 0 0 1 67 270" marker-end="url(#puk-vis-arrow)"></path><path class="puk-vis-arc" d="M67 130 A66 66 0 0 1 130 67" marker-end="url(#puk-vis-arrow)"></path></g></svg>
+-<ol><li><span class="puk-vis-cycle__n">Station 1</span><span class="puk-vis-cycle__name">Anlass</span></li><li><span class="puk-vis-cycle__n">Station 2</span><span class="puk-vis-cycle__name">Reaktion</span></li><li><span class="puk-vis-cycle__n">Station 3</span><span class="puk-vis-cycle__name">Folge</span></li><li><span class="puk-vis-cycle__n">Station 4</span><span class="puk-vis-cycle__name">Rückwirkung</span></li></ol></div>
++<ol><li><span class="puk-vis-cycle__n">Station 1</span><span class="puk-vis-cycle__name">Anlass</span></li><li><span class="puk-vis-cycle__n">Station 2</span><span class="puk-vis-cycle__name">Reaktion</span></li><li class="is-ansatz"><span class="puk-vis-cycle__n">Station 3</span><span class="puk-vis-cycle__name">Folge</span><span class="puk-vis-cycle__key">Ansatzpunkt</span></li><li><span class="puk-vis-cycle__n">Station 4</span><span class="puk-vis-cycle__name">Rückwirkung</span></li></ol></div>
+ <p class="puk-vis-cycle__loop" data-cycle-return><svg class="puk-vis-cycle__loopmark" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 4 L4 9 L9 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4 9 H14 A6 6 0 0 1 14 21 H10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg>Nach Station 4: zurück zu Station 1. Der Kreislauf beginnt von vorn.</p>
+-<figcaption class="puk-vis-caption"><p id="fig-b-text"><strong>Textfassung:</strong> Station 1 «Anlass» führt zu Station 2 «Reaktion», diese zu Station 3 «Folge», diese zu Station 4 «Rückwirkung». Station 4 wirkt auf Station 1 zurück, und der Kreis beginnt von vorn. Die Pfeile zeigen nur die Richtung, keine Stärke, Dauer oder Wahrscheinlichkeit.</p><p><strong>Eigene didaktische Darstellung</strong> · synthetische Musterstationen ohne fachliche Aussage.</p></figcaption>
++<p class="puk-vis-ansatz"><span class="puk-vis-ansatz__key">Ansatzpunkt für Angehörige · bei Station 3</span>Musterinhalt: Hier steht, was Angehörige an dieser Stelle für sich oder im Umgang tun können – eigene Möglichkeiten, keine Verantwortung für Behandlung oder Verlauf.</p>
++<details class="puk-vis-more"><summary>Beispiel und Grenzen des Modells</summary><div class="puk-vis-more__body"><p>Die Pfeile zeigen nur die Richtung. Ein Kreislauf beschreibt ein Muster, keine Zwangsläufigkeit: Er kann an mehreren Stellen unterbrochen werden. Den Ausstieg aus einem Krankheitsmechanismus begleitet die Behandlung, nicht die Angehörigen.</p></div></details>
++<figcaption class="puk-vis-caption"><p id="fig-b-text"><strong>Textfassung:</strong> Station 1 «Anlass» führt zu Station 2 «Reaktion», diese zu Station 3 «Folge», diese zu Station 4 «Rückwirkung». Station 4 wirkt auf Station 1 zurück, und der Kreis beginnt von vorn. Die Pfeile zeigen nur die Richtung, keine Stärke, Dauer oder Wahrscheinlichkeit. Station 3 ist als Ansatzpunkt für Angehörige markiert.</p><p><strong>Eigene didaktische Darstellung</strong> · synthetische Musterstationen ohne fachliche Aussage.</p></figcaption>
+ </figure></div></section>
+ 
+ <section class="puk-web-container puk-longform__section" id="muster-pfad" aria-labelledby="fig-c-section"><div class="puk-longform__section-grid"><div class="puk-longform__section-heading"><p class="puk-longform__kicker">04 · Muster C</p><h2 class="puk-web-h2" id="fig-c-section">Prozess- oder Behandlungspfad</h2></div><div class="puk-longform__copy"><p>Für Abläufe mit fester Reihenfolge. Jeder Schritt nennt seine Position als Text; optionale Schritte sind mit dem Wort «optional» und zusätzlich gestrichelt markiert. Breit von links nach rechts, schmal von oben nach unten.</p></div></div>
+ <div class="puk-vis-wide"><figure class="puk-vis-figure" data-visual-id="muster-c" data-visual-type="process" aria-labelledby="fig-c-title" aria-describedby="fig-c-text">
+ <p class="puk-vis-label" id="fig-c-title">Abbildung 3 · Musterpfad in fünf Schritten</p>
+-<ol class="puk-vis-path"><li><span class="puk-vis-path__n">Schritt 1 von 5</span><h3>Anfrage</h3><p>Ein Anliegen wird formuliert.</p></li><li><span class="puk-vis-path__n">Schritt 2 von 5</span><h3>Klärung</h3><p>Offene Fragen werden gesammelt.</p></li><li><span class="puk-vis-path__n">Schritt 3 von 5</span><h3>Planung</h3><p>Ein gemeinsamer Plan wird festgehalten.</p></li><li class="puk-vis-path--optional"><span class="puk-vis-path__n">Schritt 4 von 5 · optional</span><h3>Vertiefung</h3><p>Nur bei Bedarf wird ein Thema vertieft.</p></li><li><span class="puk-vis-path__n">Schritt 5 von 5</span><h3>Rückblick</h3><p>Das Erreichte wird gemeinsam betrachtet.</p></li></ol>
+-<figcaption class="puk-vis-caption"><p id="fig-c-text">Fünf Schritte in fester Reihenfolge von «Anfrage» bis «Rückblick». Schritt 4 «Vertiefung» ist optional und kann entfallen.</p><p><strong>Musterpfad</strong> · synthetisch, keine reale Behandlungsabfolge. Ein realer Pfad braucht fachliche Freigabe und Inhaltsverantwortung.</p></figcaption>
++<p class="puk-vis-kern">Der Ablauf hat eine feste Reihenfolge; ein Schritt kann entfallen.</p>
++<p class="puk-vis-short">Musterinhalt: Nummer und Linie zeigen die Reihenfolge, die gestrichelte Markierung den optionalen Schritt. Schritt 2 ist als Ansatzpunkt für Angehörige markiert.</p>
++<ol class="puk-vis-path"><li><span class="puk-vis-path__n">Schritt 1 von 5</span><h3>Anfrage</h3><p>Ein Anliegen wird formuliert.</p></li><li class="is-ansatz"><span class="puk-vis-path__n">Schritt 2 von 5</span><h3>Klärung</h3><p>Offene Fragen werden gesammelt.</p><p class="puk-vis-ansatz"><span class="puk-vis-ansatz__key">Ansatzpunkt für Angehörige</span>Musterinhalt: was Angehörige in diesem Schritt beitragen können.</p></li><li><span class="puk-vis-path__n">Schritt 3 von 5</span><h3>Planung</h3><p>Ein gemeinsamer Plan wird festgehalten.</p></li><li class="puk-vis-path--optional"><span class="puk-vis-path__n">Schritt 4 von 5 · optional</span><h3>Vertiefung</h3><p>Nur bei Bedarf wird ein Thema vertieft.</p></li><li><span class="puk-vis-path__n">Schritt 5 von 5</span><h3>Rückblick</h3><p>Das Erreichte wird gemeinsam betrachtet.</p></li></ol>
++<details class="puk-vis-more"><summary>Grenzen des Modells</summary><div class="puk-vis-more__body"><p>Ein realer Ablauf kann Schleifen, Wartezeiten und Abbrüche haben. Was der Pfad nicht zeigt – etwa die Dauer –, verspricht auch der Visualisierungsplan nicht.</p></div></details>
++<figcaption class="puk-vis-caption"><p id="fig-c-text">Fünf Schritte in fester Reihenfolge von «Anfrage» bis «Rückblick». Schritt 4 «Vertiefung» ist optional und kann entfallen. Schritt 2 ist als Ansatzpunkt für Angehörige markiert.</p><p><strong>Musterpfad</strong> · synthetisch, keine reale Behandlungsabfolge. Ein realer Pfad braucht fachliche Freigabe und Inhaltsverantwortung.</p></figcaption>
+ </figure></div></section>
+ 
+ <section class="puk-web-container puk-longform__section" id="muster-illustration" aria-labelledby="fig-d-section"><div class="puk-longform__section-grid"><div class="puk-longform__section-heading"><p class="puk-longform__kicker">05 · Muster D</p><h2 class="puk-web-h2" id="fig-d-section">Redaktionelle Illustration als Platzhalter</h2></div><div class="puk-longform__copy"><p>Für einen emotional angemessenen Zugang zu schwer beschreibbarem Erleben. Bis eine Illustration mit nachweisbarer Quelle freigegeben ist, steht eine abstrakte Komposition mit sichtbarem Freigabestatus. Keine Stockfotografie auf Verdacht, keine generierten Personenbilder.</p></div></div>
+ <div class="puk-vis-wide"><figure class="puk-vis-figure puk-vis-figure--open" data-visual-id="muster-d" data-visual-type="illustration" aria-labelledby="fig-d-title" aria-describedby="fig-d-text">
+ <p class="puk-vis-label" id="fig-d-title">Abbildung 4 · Platzhalter für eine redaktionelle Illustration</p>
++<p class="puk-vis-kern">Eine Illustration öffnet einen Zugang zu Erleben, das sich schwer beschreiben lässt.</p>
++<p class="puk-vis-short">Bis eine Illustration mit nachweisbarer Quelle freigegeben ist, steht ein abstrakter Platzhalter mit sichtbarem Freigabestatus.</p>
+ <div class="puk-vis-illu" data-placeholder="image" data-source-status="offen" data-approval-status="ausstehend" role="img" aria-label="Platzhalter: abstrakte Komposition aus weichen, sich überlagernden Formen. Hier steht nach Freigabe eine redaktionelle Illustration zum Abschnitt."><svg viewBox="0 0 640 360" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><defs><linearGradient id="puk-vis-illu-g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="var(--puk-blue-25)"></stop><stop offset="1" stop-color="var(--puk-white)"></stop></linearGradient></defs><path d="M60 250 C40 170 120 90 230 100 C330 110 360 200 300 260 C240 320 90 330 60 250Z" fill="url(#puk-vis-illu-g)" stroke="var(--puk-blue-50)" stroke-width="2"></path><path d="M330 120 C380 50 520 50 570 120 C620 190 560 290 460 290 C370 290 290 190 330 120Z" fill="none" stroke="var(--puk-blue-100)" stroke-width="2" stroke-dasharray="4 7" stroke-linecap="round"></path><path d="M120 300 C220 250 380 330 520 250" fill="none" stroke="var(--puk-blue-50)" stroke-width="2" stroke-linecap="round"></path></svg><p class="puk-vis-illu__stamp" aria-hidden="true">Entwurf · Platzhalter, keine freigegebene Illustration</p></div>
+ <figcaption class="puk-vis-caption"><p id="fig-d-text">Abstrakte Komposition aus weichen, sich überlagernden Formen als Platzhalter. Eine Illustration ist ein eigenständiger Inhalt; sie steht offen, nicht in einer Karte.</p><p><strong>Eigene Darstellung</strong> (abstrakter Platzhalter).</p><dl class="puk-vis-meta"><div><dt>Bildquelle</dt><dd>offen – keine freigegebene, nachweisbare Quelle</dd></div><div><dt>Freigabestatus</dt><dd>ausstehend (Redaktion und Fachverantwortung)</dd></div><div><dt>Personen und Einwilligung</dt><dd>keine Personen dargestellt</dd></div><div><dt>Geplante Aussage</dt><dd>aus dem Visualisierungsplan, Abschnitt 05</dd></div><div><dt>Alternativtext (Entwurf)</dt><dd>wird mit der freigegebenen Illustration festgelegt</dd></div></dl></figcaption>
+ </figure></div></section>
+@@ -71,6 +83,8 @@
+ <section class="puk-web-container puk-longform__section" id="muster-vergleich" aria-labelledby="fig-e-section"><div class="puk-longform__section-grid"><div class="puk-longform__section-heading"><p class="puk-longform__kicker">06 · Muster E</p><h2 class="puk-web-h2" id="fig-e-section">Vergleich nach gleichen Merkmalen</h2></div><div class="puk-longform__copy"><p>Für Gegenüberstellungen zweier Optionen. Beide Spalten nennen dieselben Merkmale in derselben Reihenfolge. Unterschieden werden sie durch Beschriftung und Linienart, nicht durch Farbe. Schmal stehen sie untereinander.</p></div></div>
+ <div class="puk-vis-wide"><figure class="puk-vis-figure" data-visual-id="muster-e" data-visual-type="comparison" aria-labelledby="fig-e-title" aria-describedby="fig-e-text">
+ <p class="puk-vis-label" id="fig-e-title">Abbildung 5 · Zwei Musteroptionen nach drei Merkmalen</p>
++<p class="puk-vis-kern">Zwei Optionen unterscheiden sich in denselben drei Merkmalen.</p>
++<p class="puk-vis-short">Musterinhalt: Beide Spalten nennen dieselben Merkmale in derselben Reihenfolge; Beschriftung und Linienart unterscheiden sie.</p>
+ <div class="puk-vis-compare"><section class="puk-vis-compare__col" aria-labelledby="fig-e-a"><p class="puk-vis-compare__key">Option A · durchgezogene Linie</p><h3 id="fig-e-a">Musteroption A</h3><dl><div><dt>Merkmal 1</dt><dd>Ausprägung A1</dd></div><div><dt>Merkmal 2</dt><dd>Ausprägung A2</dd></div><div><dt>Merkmal 3</dt><dd>Ausprägung A3</dd></div></dl></section><section class="puk-vis-compare__col puk-vis-compare__col--b" aria-labelledby="fig-e-b"><p class="puk-vis-compare__key">Option B · gestrichelte Linie</p><h3 id="fig-e-b">Musteroption B</h3><dl><div><dt>Merkmal 1</dt><dd>Ausprägung B1</dd></div><div><dt>Merkmal 2</dt><dd>Ausprägung B2</dd></div><div><dt>Merkmal 3</dt><dd>Ausprägung B3</dd></div></dl></section></div>
+ <figcaption class="puk-vis-caption"><p id="fig-e-text">Option A und Option B werden nach Merkmal 1, 2 und 3 verglichen; die Merkmale stehen in beiden Spalten in derselben Reihenfolge.</p><p><strong>Eigene didaktische Darstellung</strong> · synthetischer Musterinhalt ohne Bewertung.</p></figcaption>
+ </figure></div></section>
+@@ -78,6 +92,8 @@
+ <section class="puk-web-container puk-longform__section" id="muster-entscheidung" aria-labelledby="fig-f-section"><div class="puk-longform__section-grid"><div class="puk-longform__section-heading"><p class="puk-longform__kicker">07 · Muster F</p><h2 class="puk-web-h2" id="fig-f-section">Ein Weg mit Fragen</h2></div><div class="puk-longform__copy"><p>Für Orientierung mit Verzweigungen. Jede Frage ist ein Listeneintrag mit Nummer; die Zweige beginnen mit «Ja:» bzw. «Nein:». Der Weg ist Orientierung, keine Triage.</p></div></div>
+ <div class="puk-vis-wide"><figure class="puk-vis-figure" data-visual-id="muster-f" data-visual-type="decision" aria-labelledby="fig-f-title" aria-describedby="fig-f-text">
+ <p class="puk-vis-label" id="fig-f-title">Abbildung 6 · Musterweg mit zwei Fragen</p>
++<p class="puk-vis-kern">Zwei Fragen führen zu genau einem nächsten Schritt.</p>
++<p class="puk-vis-short">Musterinhalt: Jede Frage hat zwei Zweige. Der Weg dient der Orientierung; er stellt keine Diagnose und triagiert nicht.</p>
+ <ol class="puk-vis-decision"><li class="puk-vis-decision__q"><span class="puk-vis-decision__n">Frage 1 von 2</span><h3>Trifft Bedingung 1 zu?</h3><ul class="puk-vis-decision__branches"><li class="puk-vis-decision__branch"><strong>Ja:</strong> Weg A</li><li class="puk-vis-decision__branch puk-vis-decision__branch--next"><strong>Nein:</strong> weiter zu Frage 2</li></ul></li><li class="puk-vis-decision__q"><span class="puk-vis-decision__n">Frage 2 von 2</span><h3>Trifft Bedingung 2 zu?</h3><ul class="puk-vis-decision__branches"><li class="puk-vis-decision__branch"><strong>Ja:</strong> Weg B</li><li class="puk-vis-decision__branch"><strong>Nein:</strong> Weg C</li></ul></li></ol>
+ <figcaption class="puk-vis-caption"><p id="fig-f-text">Frage 1: Bei Ja folgt Weg A, bei Nein Frage 2. Frage 2: Bei Ja folgt Weg B, bei Nein Weg C.</p><p><strong>Eigene didaktische Darstellung</strong> · synthetischer Musterweg.</p></figcaption>
+ </figure></div></section>
+diff --git a/templates/website/psychoeducation-site-starter/README.md b/templates/website/psychoeducation-site-starter/README.md
+index fcc9636..0f104f8 100644
+--- a/templates/website/psychoeducation-site-starter/README.md
++++ b/templates/website/psychoeducation-site-starter/README.md
+@@ -1,4 +1,4 @@
+-# Psychoedukations-Starter · PUK Website Kit 1.10.1-r4 · abgeleitet · Build r4-2
++# Psychoedukations-Starter · PUK Website Kit 1.10.1-r4 · abgeleitet · Build r4-3
+ 
+ Lokal lauffähiger Mehrseiten-Starter für psychoedukative Websites. Abgeleitetes Profil auf Basis der kanonischen Quelle **PUK Zürich Design System 1.10.1**, nicht deren neue offizielle Version. Alle Inhalte sind synthetisch: keine realen Kontakte, Personen, klinischen Aussagen, Freigaben oder Bildrechte.
+ 
+@@ -36,7 +36,7 @@ Seiten über einen lokalen Webserver öffnen (z. B. `npx serve` im Projektstamm
+ - Die Hauptnavigation entsteht aus allen Seiten mit `status: "published"` und `navLabel`. Entwürfe erscheinen nie in der Navigation.
+ - `disclaimer`: gut auffindbarer Hinweis, dass die Website keine individuelle Abklärung, Beratung oder Behandlung ersetzt; erscheint in jeder Fusszeile (fehlt er, meldet das Gate einen Hinweis).
+ - `responsibility` (site-weit, optional): ein Zuständigkeitsverweis an einer festen, von jeder Seite aus erreichbaren Stelle – in jeder Fusszeile –, der ohne Nummern auf die zuständigen Stellen verweist (alternativ `targetHref` auf eine Impressum-Stelle; die Fusszeile gilt als eine Stelle). Felder: `label`, `text`, `owner`, `reviewStatus`, optional `targetHref` (lokal, existierend) + `targetLabel`; bei `geprueft` zusätzlich `reviewedBy` und `reviewedAt`. Der Prüfvermerk erscheint nicht auf der Website; ein ungeprüfter Verweis zeigt in der Fusszeile eine Warnung. Seitenweise `safetyAccess`-Varianten gibt es nicht mehr; `persistent-subdued` und `direct` sind gesperrt (Profilentscheid 06.10.2026: Die Fachstelle bietet keine Krisenintervention).
+-- `visualPlan[]`: `section`, `goal`, `format` (`text`; Muster A–F `figure`, `cycle`, `process`, `illustration`, `comparison`, `decision`; Muster G–K `stepwise-model`, `tension-field`, `relationship-map`, `continuum`, `layer-model`), `statement`, `understood` (Pflicht ausser bei `text`: Was versteht die Zielgruppe dadurch besser als durch einen kurzen Text allein?), `source`, `alternative`, `reason`, `approvalStatus`.
++- `visualPlan[]`: `section`, `sectionId` (Pflicht: `id` der zugehörigen `section`; jeder Abschnitt braucht eine Zeile), `goal`, `format` (`text`; Muster A–F `figure`, `cycle`, `process`, `illustration`, `comparison`, `decision`; Muster G–K `stepwise-model`, `tension-field`, `relationship-map`, `continuum`, `layer-model`), `statement`, `understood` (Pflicht ausser bei `text`: Was versteht die Zielgruppe dadurch besser als durch einen kurzen Text allein?), `entryPoint` (Pflicht bei `cycle`, `process`, `stepwise-model`: Ansatzpunkt für Angehörige oder «entfällt: Begründung»; ein genannter Ansatzpunkt ist in der Figur als `.puk-vis-ansatz` markiert), `source`, `alternative`, `reason`, `approvalStatus`.
+ - `siteUrl` (optional): öffentliche Adresse; erzeugt `sitemap.xml` und kanonische Links. Fehlt sie, meldet das Gate einen Hinweis.
+ - `interactionScript`: Pfad zu `components/interaktion.js`. Der Build bindet es nur auf Seiten ein, die Akkordeon, Reiter, Menü, Dialog oder Muster G enthalten.
+ - Der Build schreibt zusätzlich Open-Graph-Angaben (Titel, Beschreibung, Sprache) ohne Tracking-Parameter.
+@@ -61,22 +61,24 @@ Seiten über einen lokalen Webserver öffnen (z. B. `npx serve` im Projektstamm
+   - Inline-Skripte (Content-Security-Policy), Links mit `target="_blank"` ohne `rel="noopener noreferrer"`
+   - interaktive Komponenten ohne lokal vorhandenes `interaktion.js`
+   - Visualisierungsplan ohne `understood` bei einer Darstellung
++  - Planzeile mit `sectionId`, die es auf der Seite nicht gibt
++- **Hinweise im Entwurf, Blocker in Produktion:** Figur ohne Kernaussage (`.puk-vis-kern`), fehlender oder nicht markierter Ansatzpunkt (`entryPoint`), Abschnitt ohne Zeile im Visualisierungsplan.
+ - **Hinweise (keine Blocker):** Kartenraster mit vier oder mehr Karten (Kartenraster-Check), `style`-Attribute im Inhalt, fehlende `siteUrl`, Orthografie, deutsche Rechtsbegriffe, etikettierende Bezeichnungen.
+ - **Gate blockiert zusätzlich in Produktion:** nicht freigegebene Absenderin, ungeprüfte Zuständigkeitsverweise, Platzhalter und Visualisierungen.
+ - **Sensible Themen:** Erwähnt der Inhalt Selbstgefährdung, Gewalt, Zwang oder eine akute Krise, muss `sensitiveTopics` das Thema nennen. Ein Zuständigkeitsverweis (`responsibility`) ist dann empfohlen, aber nicht Pflicht (Hinweis, kein Blocker); ist er gesetzt, steht er auf jeder Seite. Inhalte zum Umgang mit Krisen (Frühwarnzeichen, Krisenplan) sind Psychoedukation und zulässig. Mögliche Kurznummern wie 143 oder 144 meldet das Gate als Hinweis zur Prüfung. Zusätzliche Hinweise (keine Blocker) aus dem Website-Review Teil 1: «ß» und „…“ statt «…», deutsche Rechtsbegriffe und Angebote (z. B. Jugendamt, rechtliche Betreuung, Pflegegrad), etikettierende Bezeichnungen (z. B. «der Schizophrene»). Das ist eine Vertragsprüfung nach Stichwörtern, keine medizinische Triage.
+ 
+ ## Referenzfälle
+ 
+-- `beziehungen-verstehen.html`: Kreislauf und Illustrationsplatzhalter.
+-- `behandlung-verstehen.html`: Prozesspfad und Vergleich · kein Sicherheitszugang (keine sensiblen Themen).
++- `beziehungen-verstehen.html`: Kreislauf mit markiertem Ansatzpunkt und Illustrationsplatzhalter.
++- `behandlung-verstehen.html`: Prozesspfad mit markiertem Ansatzpunkt und Vergleich · kein Sicherheitszugang (keine sensiblen Themen).
+ - `unterstuetzung-finden.html`: Entscheidungsweg in zwei Fragen, Beziehungskarte (Muster I), Kontakt-Platzhalter mit häufigen Fragen als Akkordeon.
+ - Alle Seiten: Zuständigkeitsverweis und Hinweis «ersetzt keine Abklärung» in der Fusszeile (site-weit).
+ - `index.html`: Einstieg mit Lesepfaden; der Vollbericht ist ein Download-Platzhalter.
+ - `seitenvorlage.html`: Entwurf, nicht in der Navigation.
+ 
+-Stand 08.10.2026 (nach Neufassung des Zuständigkeitsverweises):
++Stand 08.10.2026 (Build r4-3, Visualisierung nach dem ersten Probelauf):
+ - **Entwurfsgate:** 0 blockierende Befunde.
+ - **Produktionsgate:** blockiert 9 offene Freigaben. Das ist erwartet.
+-- **Selbsttest:** 39 von 39 bestanden, auch in Kopien des Starters.
++- **Selbsttest:** 44 von 44 bestanden, auch in Kopien des Starters.
+ 
+ Offen sind reale Screenreader-Läufe, ein Test mit Hardwaretastatur sowie Fach-, Bild- und Absenderfreigaben.
+diff --git a/templates/website/psychoeducation-site-starter/content/behandlung-verstehen.html b/templates/website/psychoeducation-site-starter/content/behandlung-verstehen.html
+index fbc9221..f176b12 100644
+--- a/templates/website/psychoeducation-site-starter/content/behandlung-verstehen.html
++++ b/templates/website/psychoeducation-site-starter/content/behandlung-verstehen.html
+@@ -3,12 +3,17 @@
+ <section class="puk-web-container puk-longform__section" id="ablauf" aria-labelledby="ablauf-title"><div class="puk-longform__section-grid"><div class="puk-longform__section-heading"><p class="puk-longform__kicker">01 · Orientierung</p><h2 class="puk-web-h2" id="ablauf-title">Ein Ablauf in fünf Schritten</h2></div><div class="puk-longform__copy"><p>Der Musterablauf beginnt mit einem ersten Gespräch und endet mit einem gemeinsamen Rückblick. Ein Schritt ist optional und kann entfallen.</p></div></div>
+ <div class="puk-vis-wide"><figure class="puk-vis-figure" data-visual-id="v-bh-ablauf" data-visual-type="process" aria-labelledby="bh-ablauf-title" aria-describedby="bh-ablauf-text">
+ <p class="puk-vis-label" id="bh-ablauf-title">Abbildung 1 · Musterablauf in fünf Schritten</p>
+-<ol class="puk-vis-path"><li><span class="puk-vis-path__n">Schritt 1 von 5</span><h3>Erstes Gespräch</h3><p>Das Anliegen wird besprochen.</p></li><li><span class="puk-vis-path__n">Schritt 2 von 5</span><h3>Klärung</h3><p>Offene Fragen werden gesammelt.</p></li><li><span class="puk-vis-path__n">Schritt 3 von 5</span><h3>Gemeinsamer Plan</h3><p>Ziele und Rahmen werden festgehalten.</p></li><li class="puk-vis-path--optional"><span class="puk-vis-path__n">Schritt 4 von 5 · optional</span><h3>Vertiefung</h3><p>Nur bei Bedarf wird ein Thema vertieft.</p></li><li><span class="puk-vis-path__n">Schritt 5 von 5</span><h3>Rückblick</h3><p>Das Erreichte wird gemeinsam betrachtet.</p></li></ol>
+-<figcaption class="puk-vis-caption"><p id="bh-ablauf-text">Fünf Schritte in fester Reihenfolge von «Erstes Gespräch» bis «Rückblick». Schritt 4 «Vertiefung» ist optional, erkennbar am Wort «optional» und an der gestrichelten Markierung.</p><p><strong>Eigene didaktische Darstellung</strong> · synthetischer Musterablauf.</p></figcaption>
++<p class="puk-vis-kern">Der Musterablauf hat eine feste Reihenfolge; ein Schritt kann entfallen.</p>
++<p class="puk-vis-short">Musterinhalt: Nummer und Linie zeigen die Reihenfolge, die gestrichelte Markierung den optionalen Schritt. Bei Schritt 1 ist ein Ansatzpunkt für Angehörige markiert.</p>
++<ol class="puk-vis-path"><li class="is-ansatz"><span class="puk-vis-path__n">Schritt 1 von 5</span><h3>Erstes Gespräch</h3><p>Das Anliegen wird besprochen.</p><p class="puk-vis-ansatz"><span class="puk-vis-ansatz__key">Ansatzpunkt für Angehörige</span>Musterinhalt: eigene Fragen mitbringen (siehe «Eigene Fragen notieren»).</p></li><li><span class="puk-vis-path__n">Schritt 2 von 5</span><h3>Klärung</h3><p>Offene Fragen werden gesammelt.</p></li><li><span class="puk-vis-path__n">Schritt 3 von 5</span><h3>Gemeinsamer Plan</h3><p>Ziele und Rahmen werden festgehalten.</p></li><li class="puk-vis-path--optional"><span class="puk-vis-path__n">Schritt 4 von 5 · optional</span><h3>Vertiefung</h3><p>Nur bei Bedarf wird ein Thema vertieft.</p></li><li><span class="puk-vis-path__n">Schritt 5 von 5</span><h3>Rückblick</h3><p>Das Erreichte wird gemeinsam betrachtet.</p></li></ol>
++<details class="puk-vis-more"><summary>Grenzen des Modells</summary><div class="puk-vis-more__body"><p>Musterinhalt: Ein realer Ablauf kann Wartezeiten, Schleifen und Abbrüche haben. Die Abbildung zeigt nur die Reihenfolge, keine Dauer.</p></div></details>
++<figcaption class="puk-vis-caption"><p id="bh-ablauf-text">Fünf Schritte in fester Reihenfolge von «Erstes Gespräch» bis «Rückblick». Schritt 4 «Vertiefung» ist optional, erkennbar am Wort «optional» und an der gestrichelten Markierung. Bei Schritt 1 ist ein Ansatzpunkt für Angehörige markiert.</p><p><strong>Eigene didaktische Darstellung</strong> · synthetischer Musterablauf.</p></figcaption>
+ </figure></div></section>
+ <section class="puk-web-container puk-longform__section" id="formen" aria-labelledby="formen-title"><div class="puk-longform__section-grid"><div class="puk-longform__section-heading"><p class="puk-longform__kicker">02 · Vergleich</p><h2 class="puk-web-h2" id="formen-title">Zwei Formen im Vergleich</h2></div><div class="puk-longform__copy"><p>Ein Termin kann vor Ort oder per Video stattfinden. Die Abbildung stellt beide Formen nach denselben vier Merkmalen gegenüber. Keine Form ist grundsätzlich besser.</p></div></div>
+ <div class="puk-vis-wide"><figure class="puk-vis-figure" data-visual-id="v-bh-vergleich" data-visual-type="comparison" aria-labelledby="bh-vergleich-title" aria-describedby="bh-vergleich-text">
+ <p class="puk-vis-label" id="bh-vergleich-title">Abbildung 2 · Zwei Terminformen nach vier Merkmalen</p>
++<p class="puk-vis-kern">Vor Ort oder per Video: Beide Formen unterscheiden sich in denselben vier Merkmalen – keine ist grundsätzlich besser.</p>
++<p class="puk-vis-short">Musterinhalt: Gleiche Merkmale stehen auf gleicher Höhe; Beschriftung und Linienart unterscheiden die beiden Formen.</p>
+ <div class="puk-vis-compare"><section class="puk-vis-compare__col" aria-labelledby="bh-a-title"><p class="puk-vis-compare__key">Form A · durchgezogene Linie</p><h3 id="bh-a-title">Termin vor Ort</h3><dl><div><dt>Ort</dt><dd>in einem Gesprächsraum</dd></div><div><dt>Weg</dt><dd>Anreise einplanen</dd></div><div><dt>Umgebung</dt><dd>ruhiger, vorbereiteter Raum</dd></div><div><dt>Technik</dt><dd>keine nötig</dd></div></dl></section><section class="puk-vis-compare__col puk-vis-compare__col--b" aria-labelledby="bh-b-title"><p class="puk-vis-compare__key">Form B · gestrichelte Linie</p><h3 id="bh-b-title">Termin per Video</h3><dl><div><dt>Ort</dt><dd>an einem selbst gewählten Ort</dd></div><div><dt>Weg</dt><dd>keine Anreise</dd></div><div><dt>Umgebung</dt><dd>selbst für Ruhe sorgen</dd></div><div><dt>Technik</dt><dd>Gerät und Verbindung nötig</dd></div></dl></section></div>
+ <figcaption class="puk-vis-caption"><p id="bh-vergleich-text">Termin vor Ort und Termin per Video werden nach Ort, Weg, Umgebung und Technik verglichen. Die Merkmale stehen in beiden Spalten in derselben Reihenfolge.</p><p><strong>Eigene didaktische Darstellung</strong> · synthetische Merkmale ohne Bewertung.</p></figcaption>
+ </figure></div></section>
+diff --git a/templates/website/psychoeducation-site-starter/content/beziehungen-verstehen.html b/templates/website/psychoeducation-site-starter/content/beziehungen-verstehen.html
+index 391ac82..74f8964 100644
+--- a/templates/website/psychoeducation-site-starter/content/beziehungen-verstehen.html
++++ b/templates/website/psychoeducation-site-starter/content/beziehungen-verstehen.html
+@@ -3,17 +3,23 @@
+ <section class="puk-web-container puk-longform__section" id="muster" aria-labelledby="muster-title"><div class="puk-longform__section-grid"><div class="puk-longform__section-heading"><p class="puk-longform__kicker">01 · Verständnis</p><h2 class="puk-web-h2" id="muster-title">Ein Kreislauf im Gespräch</h2></div><div class="puk-longform__copy"><p>Etwas wird gesagt oder getan. Es wird auf eine bestimmte Weise verstanden, und darauf folgt eine Antwort. Diese Antwort wirkt auf das Gegenüber und wird dort zum neuen Anlass.</p><p class="puk-longform__transition">Die Abbildung zeigt die vier Stationen als geschlossenen Kreis.</p></div></div>
+ <div class="puk-vis-wide"><figure class="puk-vis-figure" data-visual-id="v-bz-kreislauf" data-visual-type="cycle" aria-labelledby="bz-kreis-title" aria-describedby="bz-kreis-text">
+ <p class="puk-vis-label" id="bz-kreis-title">Abbildung 1 · Vier Stationen eines Gesprächskreislaufs</p>
++<p class="puk-vis-kern">Eine Reaktion kann zum neuen Anlass werden – so hält sich ein Muster.</p>
++<p class="puk-vis-short">Musterinhalt: Vier Stationen folgen aufeinander; die Wirkung wird zum neuen Anlass. Bei Station 2 ist ein Ansatzpunkt für Angehörige markiert.</p>
+ <p class="puk-vis-dir"><strong>Leserichtung:</strong> <span data-cycle-wide>im Uhrzeigersinn, beginnend oben bei Station 1.</span><span data-cycle-narrow>von oben nach unten; nach Station 4 zurück zu Station 1.</span></p>
+ <div class="puk-vis-cycle"><svg viewBox="0 0 400 400" aria-hidden="true" focusable="false"><defs><marker id="bz-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1 L9 5 L1 9" fill="none" stroke="var(--puk-blue-100)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></marker></defs><g fill="none" stroke="var(--puk-blue-100)" stroke-width="2" stroke-linecap="round"><path class="puk-vis-arc" d="M270 67 A66 66 0 0 1 333 130" marker-end="url(#bz-arrow)"></path><path class="puk-vis-arc" d="M333 270 A66 66 0 0 1 270 333" marker-end="url(#bz-arrow)"></path><path class="puk-vis-arc" d="M130 333 A66 66 0 0 1 67 270" marker-end="url(#bz-arrow)"></path><path class="puk-vis-arc" d="M67 130 A66 66 0 0 1 130 67" marker-end="url(#bz-arrow)"></path></g></svg>
+-<ol><li><span class="puk-vis-cycle__n">Station 1</span><span class="puk-vis-cycle__name">Anlass</span></li><li><span class="puk-vis-cycle__n">Station 2</span><span class="puk-vis-cycle__name">Deutung</span></li><li><span class="puk-vis-cycle__n">Station 3</span><span class="puk-vis-cycle__name">Reaktion</span></li><li><span class="puk-vis-cycle__n">Station 4</span><span class="puk-vis-cycle__name">Wirkung</span></li></ol></div>
++<ol><li><span class="puk-vis-cycle__n">Station 1</span><span class="puk-vis-cycle__name">Anlass</span></li><li class="is-ansatz"><span class="puk-vis-cycle__n">Station 2</span><span class="puk-vis-cycle__name">Deutung</span><span class="puk-vis-cycle__key">Ansatzpunkt</span></li><li><span class="puk-vis-cycle__n">Station 3</span><span class="puk-vis-cycle__name">Reaktion</span></li><li><span class="puk-vis-cycle__n">Station 4</span><span class="puk-vis-cycle__name">Wirkung</span></li></ol></div>
+ <p class="puk-vis-cycle__loop" data-cycle-return><svg class="puk-vis-cycle__loopmark" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 4 L4 9 L9 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4 9 H14 A6 6 0 0 1 14 21 H10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg>Nach Station 4: zurück zu Station 1. Der Kreislauf beginnt von vorn.</p>
+-<figcaption class="puk-vis-caption"><p id="bz-kreis-text"><strong>Textfassung:</strong> Station 1 «Anlass» führt zu Station 2 «Deutung», diese zu Station 3 «Reaktion», diese zu Station 4 «Wirkung». Die Wirkung wird für das Gegenüber zum neuen Anlass: zurück zu Station 1. Die Pfeile zeigen nur die Richtung, keine Stärke oder Dauer.</p><p><strong>Eigene didaktische Darstellung</strong> · synthetischer Referenzinhalt, kein Fachmodell.</p></figcaption>
++<p class="puk-vis-ansatz"><span class="puk-vis-ansatz__key">Ansatzpunkt für Angehörige · bei Station 2</span>Musterinhalt: Nachfragen, wie etwas gemeint war, bevor man antwortet. Ein Ansatzpunkt beschreibt eine eigene Möglichkeit, keine Pflicht, das Muster allein zu verändern.</p>
++<details class="puk-vis-more"><summary>Grenzen des Modells</summary><div class="puk-vis-more__body"><p>Musterinhalt: Der Kreislauf vereinfacht. Gespräche verlaufen selten so geordnet, und nicht jede Reaktion wird zum neuen Anlass.</p></div></details>
++<figcaption class="puk-vis-caption"><p id="bz-kreis-text"><strong>Textfassung:</strong> Station 1 «Anlass» führt zu Station 2 «Deutung», diese zu Station 3 «Reaktion», diese zu Station 4 «Wirkung». Die Wirkung wird für das Gegenüber zum neuen Anlass: zurück zu Station 1. Die Pfeile zeigen nur die Richtung, keine Stärke oder Dauer. Bei Station 2 ist ein Ansatzpunkt für Angehörige markiert.</p><p><strong>Eigene didaktische Darstellung</strong> · synthetischer Referenzinhalt, kein Fachmodell.</p></figcaption>
+ </figure></div></section>
+ <section class="puk-web-container puk-longform__section" id="naehe" aria-labelledby="naehe-title"><div class="puk-longform__section-grid"><div class="puk-longform__section-heading"><p class="puk-longform__kicker">02 · Zugang</p><h2 class="puk-web-h2" id="naehe-title">Nähe und Abstand</h2></div><div class="puk-longform__copy"><p>Nähe und Abstand wechseln sich in Beziehungen ab. Beides kann entlasten. Eine redaktionelle Illustration soll diesen Wechsel ruhig und ohne Wertung zeigen; bis sie freigegeben ist, steht hier ein abstrakter Platzhalter.</p></div></div>
+ <div class="puk-vis-wide"><figure class="puk-vis-figure puk-vis-figure--open" data-visual-id="v-bz-illustration" data-visual-type="illustration" aria-labelledby="bz-illu-title" aria-describedby="bz-illu-text">
+ <p class="puk-vis-label" id="bz-illu-title">Abbildung 2 · Platzhalter für eine Illustration zu Nähe und Abstand</p>
++<p class="puk-vis-kern">Nähe und Abstand dürfen sich abwechseln – beides kann entlasten.</p>
++<p class="puk-vis-short">Bis eine Illustration mit nachweisbarer Quelle freigegeben ist, steht hier ein abstrakter Platzhalter.</p>
+ <div class="puk-vis-illu" role="img" aria-label="Platzhalter: zwei weiche Formen, die sich annähern und wieder Raum lassen. Nach Freigabe steht hier eine redaktionelle Illustration." data-placeholder="image" data-source-status="offen" data-approval-status="ausstehend"><svg viewBox="0 0 640 360" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><path d="M70 240 C50 160 130 90 230 100 C320 110 350 190 300 250 C250 310 100 320 70 240Z" fill="var(--puk-blue-25)" stroke="var(--puk-blue-50)" stroke-width="2"></path><path d="M360 130 C400 60 530 60 570 130 C610 200 550 290 460 290 C380 290 320 200 360 130Z" fill="none" stroke="var(--puk-blue-100)" stroke-width="2" stroke-dasharray="4 7" stroke-linecap="round"></path></svg><p class="puk-vis-illu__stamp">Entwurf · Platzhalter, keine freigegebene Illustration</p></div>
+ <figcaption class="puk-vis-caption"><p id="bz-illu-text">Abstrakter Platzhalter: zwei weiche Formen, links gefüllt, rechts gestrichelt, mit Raum dazwischen. Er zeigt nur, wo die redaktionelle Illustration stehen wird.</p><p><strong>Eigene Darstellung</strong> (abstrakter Platzhalter).</p><dl class="puk-vis-meta"><div><dt>Bildquelle</dt><dd>offen – keine freigegebene, nachweisbare Quelle</dd></div><div><dt>Freigabestatus</dt><dd>ausstehend (Redaktion und Fachverantwortung)</dd></div><div><dt>Personen und Einwilligung</dt><dd>keine Personen dargestellt</dd></div></dl></figcaption>
+ </figure></div></section>
+-<section class="puk-web-container puk-longform__section" id="bedrohlich" aria-labelledby="bedrohlich-title"><div class="puk-longform__section-grid"><div class="puk-longform__section-heading"><p class="puk-longform__kicker">03 · Grenze</p><h2 class="puk-web-h2" id="bedrohlich-title">Wenn Konflikte bedrohlich werden</h2></div><div class="puk-longform__copy"><p>Wenn in einer Beziehung Gewalt droht oder geschieht, steht Sicherheit vor dem Verstehen. Dann geht es nicht darum, ein Muster zu erkennen, sondern Schutz zu finden.</p><p>Wer dafür zuständig ist, steht im Zuständigkeitsverweis in der Fusszeile dieser Seite.</p></div></div></section>
++<section class="puk-web-container puk-longform__section" id="bedrohlich" aria-labelledby="bedrohlich-title"><div class="puk-longform__section-grid"><div class="puk-longform__section-heading"><p class="puk-longform__kicker">03 · Grenze</p><h2 class="puk-web-h2" id="bedrohlich-title">Wenn Konflikte bedrohlich werden</h2></div><div class="puk-longform__copy"><p>Wenn in einer Beziehung Gewalt droht oder geschieht, steht Sicherheit vor dem Verstehen. Dann geht es nicht darum, ein Muster zu erkennen, sondern Schutz zu finden.</p></div></div></section>
+ <section class="puk-web-container puk-longform__section" id="einordnung" aria-labelledby="einordnung-title"><div class="puk-longform__section-grid"><div class="puk-longform__section-heading"><p class="puk-longform__kicker">04 · Einordnung</p><h2 class="puk-web-h2" id="einordnung-title">Was diese Seite leistet</h2></div><div class="puk-longform__copy"><p>Die Seite zeigt ein verständliches Muster und eine klare Grenze. Sie ersetzt kein Gespräch. Wer mit jemandem sprechen möchte, findet einen Weg unter <a class="puk-link--inline" href="unterstuetzung-finden.html">Unterstützung finden</a>.</p></div></div></section>
+diff --git a/templates/website/psychoeducation-site-starter/content/seitenvorlage.html b/templates/website/psychoeducation-site-starter/content/seitenvorlage.html
+index 8153465..376247c 100644
+--- a/templates/website/psychoeducation-site-starter/content/seitenvorlage.html
++++ b/templates/website/psychoeducation-site-starter/content/seitenvorlage.html
+@@ -1,2 +1,2 @@
+ <section class="puk-web-container puk-longform__hero"><p class="puk-web-eyebrow">Seitenvorlage · Entwurf</p><h1 class="puk-web-h1">Titel der neuen Seite</h1><p class="puk-longform__intro">Einleitung: Worum geht es, und was können Lesende nach dieser Seite verstehen oder tun?</p><p class="puk-longform__boundary"><strong>Vorlage:</strong> Diese Seite ist ein Entwurf und erscheint nicht in der Navigation. Inhalt ersetzen, bevor der Status auf «published» wechselt.</p></section>
+-<section class="puk-web-container puk-longform__section" id="schritte" aria-labelledby="schritte-title"><div class="puk-longform__section-grid"><div class="puk-longform__section-heading"><p class="puk-longform__kicker">Vorgehen</p><h2 class="puk-web-h2" id="schritte-title">So entsteht eine neue Seite</h2></div><div class="puk-longform__copy"><ol><li>Seitenvertrag in site.config.json ergänzen: Titel, Beschreibung, Hauptaufgabe, sensible Themen und Sicherheitszugang.</li><li>Visualisierungsplan pro Abschnitt ausfüllen, bevor gebaut wird.</li><li>Inhalt als Fragment in content/ schreiben; Figuren aus visualisierungsmuster.html kopieren.</li><li>node tools/build.mjs ausführen, danach node tools/gate.mjs.</li></ol></div></div></section>
++<section class="puk-web-container puk-longform__section" id="schritte" aria-labelledby="schritte-title"><div class="puk-longform__section-grid"><div class="puk-longform__section-heading"><p class="puk-longform__kicker">Vorgehen</p><h2 class="puk-web-h2" id="schritte-title">So entsteht eine neue Seite</h2></div><div class="puk-longform__copy"><ol><li>Seitenvertrag in site.config.json ergänzen: Titel, Beschreibung, Hauptaufgabe und sensible Themen.</li><li>Visualisierungsplan ausfüllen, bevor gebaut wird: eine Zeile pro Abschnitt (sectionId = id des Abschnitts), mit Erklärform oder begründetem Verzicht; bei Kreislauf, Prozesspfad und Modell in Schritten auch den Ansatzpunkt für Angehörige (entryPoint).</li><li>Inhalt als Fragment in content/ schreiben; Figuren aus visualisierungsmuster.html (A–F) oder erklaermuster.html (G–K) kopieren – mit Kernaussage, kurzem Erklärtext und Vertiefung.</li><li>node tools/build.mjs ausführen, danach node tools/gate.mjs.</li></ol></div></div></section>
+diff --git a/templates/website/psychoeducation-site-starter/content/unterstuetzung-finden.html b/templates/website/psychoeducation-site-starter/content/unterstuetzung-finden.html
+index 2e3cb3e..2d8ea5c 100644
+--- a/templates/website/psychoeducation-site-starter/content/unterstuetzung-finden.html
++++ b/templates/website/psychoeducation-site-starter/content/unterstuetzung-finden.html
+@@ -3,6 +3,8 @@
+ <section class="puk-web-container puk-longform__section" id="wegweiser" aria-labelledby="wegweiser-title"><div class="puk-longform__section-grid"><div class="puk-longform__section-heading"><p class="puk-longform__kicker">01 · Orientierung</p><h2 class="puk-web-h2" id="wegweiser-title">Zwei Fragen zur Orientierung</h2></div><div class="puk-longform__copy"><p>Beantworten Sie die Fragen der Reihe nach. Bei «Ja» finden Sie den passenden Weg direkt, bei «Nein» geht es zur nächsten Frage.</p></div></div>
+ <div class="puk-vis-wide"><figure class="puk-vis-figure" data-visual-id="v-us-wegweiser" data-visual-type="decision" aria-labelledby="us-weg-title" aria-describedby="us-weg-text">
+ <p class="puk-vis-label" id="us-weg-title">Abbildung 1 · Entscheidungsweg in zwei Fragen</p>
++<p class="puk-vis-kern">Zwei Fragen führen zu einem passenden nächsten Schritt.</p>
++<p class="puk-vis-short">Der Weg dient der Orientierung. Er stellt keine Diagnose und ersetzt kein Gespräch.</p>
+ <ol class="puk-vis-decision"><li class="puk-vis-decision__q"><span class="puk-vis-decision__n">Frage 1 von 2</span><h3>Möchten Sie zuerst etwas verstehen?</h3><ul class="puk-vis-decision__branches"><li class="puk-vis-decision__branch"><strong>Ja:</strong> <a class="puk-link--inline" href="beziehungen-verstehen.html">Beziehungen verstehen</a> oder <a class="puk-link--inline" href="behandlung-verstehen.html">Behandlung verstehen</a></li><li class="puk-vis-decision__branch puk-vis-decision__branch--next"><strong>Nein:</strong> weiter zu Frage 2</li></ul></li><li class="puk-vis-decision__q"><span class="puk-vis-decision__n">Frage 2 von 2</span><h3>Möchten Sie mit jemandem sprechen?</h3><ul class="puk-vis-decision__branches"><li class="puk-vis-decision__branch"><strong>Ja:</strong> <a class="puk-link--inline" href="#gespraech">Ein Gespräch vereinbaren</a></li><li class="puk-vis-decision__branch"><strong>Nein:</strong> später zurückkommen; diese Seite bleibt erreichbar.</li></ul></li></ol>
+ <figcaption class="puk-vis-caption"><p id="us-weg-text">Zwei Fragen nacheinander. Frage 1: zuerst verstehen – bei Ja zu den Themenseiten, bei Nein weiter zu Frage 2. Frage 2: sprechen – bei Ja zum Abschnitt «Ein Gespräch vereinbaren», bei Nein später zurückkommen.</p><p><strong>Eigene didaktische Darstellung</strong> · Orientierung, keine Triage.</p></figcaption>
+ </figure></div></section>
+diff --git a/templates/website/psychoeducation-site-starter/gate.html b/templates/website/psychoeducation-site-starter/gate.html
+index c395b5f..bdb800c 100644
+--- a/templates/website/psychoeducation-site-starter/gate.html
++++ b/templates/website/psychoeducation-site-starter/gate.html
+@@ -31,7 +31,7 @@ a{color:var(--text-link)}a:hover{color:var(--text-link-hover)}
+ <h2>Gate Produktion</h2><div class="wrap" id="prod"></div>
+ <h2>Selbsttest</h2><p>Jede Fehlerklasse wird absichtlich in eine Kopie der Seiten eingebaut; das Gate muss sie als blockierend erkennen.</p><div class="wrap" id="self"></div>
+ </main>
+-<script src="tools/contract.js?v=r4-1"></script>
++<script src="tools/contract.js?v=r4-3"></script>
+ <script>
+ (async () => {
+   const C = window.PUKSiteContract; const e = s => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;');
+diff --git a/templates/website/psychoeducation-site-starter/site.config.json b/templates/website/psychoeducation-site-starter/site.config.json
+index a160e82..3980cd3 100644
+--- a/templates/website/psychoeducation-site-starter/site.config.json
++++ b/templates/website/psychoeducation-site-starter/site.config.json
+@@ -2,7 +2,7 @@
+   "$comment": "PUK Website Kit 1.10.1-r4 · abgeleitet – Seitenvertrag des Psychoedukations-Starters. Synthetische Musterwerte. Pflichtfelder und Regeln: README.md in diesem Ordner. Nach jeder Änderung: node tools/build.mjs, danach node tools/gate.mjs (Entwurf) bzw. node tools/gate.mjs --production.",
+   "kitRevision": "PUK Website Kit 1.10.1-r4 · abgeleitet",
+   "canonicalSource": "PUK Zürich Design System 1.10.1 (unverändert)",
+-  "assetVersion": "r4-2",
++  "assetVersion": "r4-3",
+   "siteTitle": "Psychoedukation verstehen – Musterwebsite",
+   "shortDescription": "Synthetische Musterwebsite mit drei psychoedukativen Referenzseiten und Seitenvorlage. Keine fachlichen Aussagen, keine realen Kontakte.",
+   "language": "de-CH",
+@@ -47,6 +47,7 @@
+         {
+           "id": "v-idx-text",
+           "section": "Lesepfade",
++          "sectionId": "lesepfade",
+           "goal": "Einen passenden Einstieg wählen",
+           "format": "text",
+           "statement": "–",
+@@ -54,6 +55,18 @@
+           "alternative": "–",
+           "reason": "Text ist klarer: drei gleichwertige Einstiege ohne Beziehung untereinander.",
+           "approvalStatus": "entfällt"
++        },
++        {
++          "id": "v-idx-entstehung",
++          "section": "Einordnung",
++          "sectionId": "entstehung",
++          "goal": "Wissen, woher die drei Seiten stammen",
++          "format": "text",
++          "statement": "–",
++          "source": "–",
++          "alternative": "–",
++          "reason": "Text ist klarer: kurzer Hinweis auf die Herkunft der Seiten und ein Download-Platzhalter, keine Beziehung, die eine Darstellung erklären müsste.",
++          "approvalStatus": "entfällt"
+         }
+       ]
+     },
+@@ -73,6 +86,7 @@
+         {
+           "id": "v-bz-kreislauf",
+           "section": "01 Muster",
++          "sectionId": "muster",
+           "goal": "Verstehen, dass eine Reaktion zum neuen Anlass werden kann",
+           "format": "cycle",
+           "statement": "Anlass → Deutung → Reaktion → Wirkung; die Wirkung wird zum neuen Anlass",
+@@ -80,11 +94,13 @@
+           "alternative": "Textfassung in der Bildlegende (aria-describedby)",
+           "reason": "Ein Kreislauf ist im Fliesstext schwer zu halten.",
+           "approvalStatus": "ausstehend",
+-          "understood": "Dass die eigene Reaktion zum neuen Anlass werden kann – eine Schleife zeigt das sofort, ein Satz nur nacheinander."
++          "understood": "Dass die eigene Reaktion zum neuen Anlass werden kann – eine Schleife zeigt das sofort, ein Satz nur nacheinander.",
++          "entryPoint": "Bei Station 2 «Deutung»: nachfragen, wie etwas gemeint war, bevor man antwortet (Musterinhalt)."
+         },
+         {
+           "id": "v-bz-illustration",
+           "section": "02 Nähe und Abstand",
++          "sectionId": "naehe",
+           "goal": "Einen ruhigen, nicht wertenden Zugang zu Nähe und Abstand schaffen",
+           "format": "illustration",
+           "statement": "Metapher: zwei Formen, die sich annähern und wieder Raum lassen",
+@@ -97,6 +113,7 @@
+         {
+           "id": "v-bz-sicherheit",
+           "section": "03 Wenn Konflikte bedrohlich werden",
++          "sectionId": "bedrohlich",
+           "goal": "Sicherheit vor Verstehen stellen",
+           "format": "text",
+           "statement": "–",
+@@ -104,6 +121,18 @@
+           "alternative": "–",
+           "reason": "Text ist klarer: In einer möglichen Gefahrensituation braucht es einen kurzen, direkten Hinweis ohne Grafik.",
+           "approvalStatus": "entfällt"
++        },
++        {
++          "id": "v-bz-einordnung",
++          "section": "04 Einordnung",
++          "sectionId": "einordnung",
++          "goal": "Wissen, was die Seite leistet und wo es weitergeht",
++          "format": "text",
++          "statement": "–",
++          "source": "–",
++          "alternative": "–",
++          "reason": "Text ist klarer: kurze Einordnung mit einem Verweis, kein Zusammenhang.",
++          "approvalStatus": "entfällt"
+         }
+       ]
+     },
+@@ -120,6 +149,7 @@
+         {
+           "id": "v-bh-ablauf",
+           "section": "01 Ablauf",
++          "sectionId": "ablauf",
+           "goal": "Abfolge und optionalen Schritt erkennen",
+           "format": "process",
+           "statement": "Fünf Schritte in fester Reihenfolge; Schritt 4 ist optional",
+@@ -127,11 +157,13 @@
+           "alternative": "Geordnete Liste mit Schrittnummer; Kurzfassung über aria-describedby",
+           "reason": "Abfolge und Option werden auf einen Blick sichtbar.",
+           "approvalStatus": "ausstehend",
+-          "understood": "Reihenfolge und den einen optionalen Schritt auf einen Blick."
++          "understood": "Reihenfolge und den einen optionalen Schritt auf einen Blick.",
++          "entryPoint": "Bei Schritt 1 «Erstes Gespräch»: eigene Fragen mitbringen (Musterinhalt; siehe Abschnitt «Eigene Fragen notieren»)."
+         },
+         {
+           "id": "v-bh-vergleich",
+           "section": "02 Zwei Formen",
++          "sectionId": "formen",
+           "goal": "Zwei Terminformen nach gleichen Merkmalen vergleichen",
+           "format": "comparison",
+           "statement": "Termin vor Ort und Termin per Video unterscheiden sich in Ort, Weg, Umgebung und Technik",
+@@ -144,6 +176,7 @@
+         {
+           "id": "v-bh-fragen",
+           "section": "03 Fragen",
++          "sectionId": "fragen",
+           "goal": "Eigene Fragen vorbereiten",
+           "format": "text",
+           "statement": "–",
+@@ -167,6 +200,7 @@
+         {
+           "id": "v-us-wegweiser",
+           "section": "01 Orientierung",
++          "sectionId": "wegweiser",
+           "goal": "In zwei Fragen den passenden nächsten Schritt finden",
+           "format": "decision",
+           "statement": "Frage 1 Verstehen → Themenseiten; Frage 2 Gespräch → Kontaktweg",
+@@ -179,6 +213,7 @@
+         {
+           "id": "v-us-netz",
+           "section": "02 Netz",
++          "sectionId": "netz",
+           "goal": "Erkennen, dass Unterstützung auf mehrere Menschen und Stellen verteilt werden kann",
+           "format": "relationship-map",
+           "statement": "Nah, Umfeld, fachliche Unterstützung als Kreise um «Sie»; gestrichelt = noch nicht genutzt",
+@@ -191,6 +226,7 @@
+         {
+           "id": "v-us-kontakt",
+           "section": "02 Gespräch",
++          "sectionId": "gespraech",
+           "goal": "Wissen, wo der Kontaktweg stehen wird",
+           "format": "text",
+           "statement": "–",
+@@ -214,6 +250,7 @@
+         {
+           "id": "v-vl-text",
+           "section": "Vorlage",
++          "sectionId": "schritte",
+           "goal": "Aufbau einer neuen Seite zeigen",
+           "format": "text",
+           "statement": "–",
+diff --git a/templates/website/psychoeducation-site-starter/tools/contract.js b/templates/website/psychoeducation-site-starter/tools/contract.js
+index 2f4945a..f9ad12f 100644
+--- a/templates/website/psychoeducation-site-starter/tools/contract.js
++++ b/templates/website/psychoeducation-site-starter/tools/contract.js
+@@ -8,7 +8,7 @@
+ })(typeof self !== 'undefined' ? self : this, function () {
+ 'use strict';
+ const VERSION = 'PUK Website Kit 1.10.1-r4 · abgeleitet';
+-const BUILD = 'r4-2';
++const BUILD = 'r4-3';
+ const FORMATS = ['text', 'figure', 'process', 'cycle', 'comparison', 'decision', 'illustration', 'stepwise-model', 'tension-field', 'relationship-map', 'continuum', 'layer-model'];
+ /* Interaktive Komponenten und Erklärmuster G brauchen components/interaktion.js (HTML-Fassungen ohne React). */
+ const INTERACTIVE = ['data-puk-accordion', 'data-puk-tabs', 'data-puk-disclosure', 'data-puk-dialog-open', 'data-vis-build'];
+@@ -18,7 +18,9 @@ const LEGACY_SAFETY = ['persistent-subdued', 'direct'];
+ /* Hinweise aus dem Website-Review Teil 1 (fachliche Prüfung): Schweizer Kontext, Orthografie, personenzentrierte Sprache. Nur Hinweise (warn), keine Blocker: Stichwortprüfung, kein Ersatz für die fachliche Prüfung. */
+ const DE_TERMS = /\b(Jugendamt|Betreuungsgerichts?|rechtliche[nr]? Betreuung|Betreuungsverfahren|PsychKG|SGB\s?[IVX]+|Pflegegrade?s?|Pflegekasse|Erwerbsminderungsrente|Schwerbehindertenausweis|Telefonseelsorge|Amtsgerichts?|Sozialpsychiatrische[nr]? Dienst(?:es)?)\b/i;
+ const LABELS = /\b(?:die|der|den|des|dem|ein|eine|einen|einem|einer|als)\s+(Schizophrenen?|Psychotiker(?:in(?:nen)?)?|Borderliner(?:in(?:nen)?)?|Bipolaren|Süchtigen|Geisteskranken?|Irren)\b|\bpsychisch Kranken?\b/i;
+-const REVIEW_WARNINGS = ['orthography', 'swiss-context', 'person-first', 'card-grid', 'inline-style'];
++const REVIEW_WARNINGS = ['orthography', 'swiss-context', 'person-first', 'card-grid', 'inline-style', 'figure-core', 'entry-point', 'plan-coverage'];
++/* Profilentscheid 08.10.2026: Erklärmodelle (Kreislauf, Prozesspfad, Modell in Schritten) prüfen, wo Angehörige ansetzen können – im Plan als «entryPoint» (Ansatzpunkt oder «entfällt: Begründung»), in der Figur als .puk-vis-ansatz. */
++const ENTRY_FORMATS = ['cycle', 'process', 'stepwise-model'];
+ const SENSITIVE = [['selbstgefaehrdung', /selbstgef[aä]hrd|selbstverletz|suizid/i], ['gewalt', /gewalt/i], ['zwang', /(^|[^a-zäöü])zwang(s|$|[^a-zäöü])/i], ['akute-krise', /(^|[^a-zäöü])krisen?([^a-zäöü]|$)|notfall/i]];
+ const GENERIC = /^(quelle|quellen|mehr|mehr erfahren|hier|link|details|weiterlesen|langbeschreibung|textfassung|download|pdf)$/i;
+ const VOID = new Set('area base br col embed hr img input link meta source track wbr'.split(' '));
+@@ -184,6 +186,7 @@ function gate(cfg, files, opts = {}) {
+       if (!FORMATS.includes(v.format)) add('block', pid, 'visual-plan', `visualPlan ${v.id}: unbekanntes Format «${v.format}»`);
+       if (v.format !== 'text' && !v.understood) add('block', pid, 'visual-plan', `visualPlan ${v.id}: «understood» fehlt – was versteht die Zielgruppe dadurch besser als durch einen kurzen Text allein?`);
+       if (v.format !== 'text' && v.approvalStatus !== 'freigegeben') prod(pid, 'visual-approval', `Visualisierung ${v.id} nicht freigegeben (${v.approvalStatus})`);
++      if (ENTRY_FORMATS.includes(v.format) && !(v.entryPoint || '').trim()) prod(pid, 'entry-point', `visualPlan ${v.id}: «entryPoint» fehlt – Ansatzpunkt für Angehörige oder «entfällt: Begründung»`);
+     }
+   }
+   const titles = {}; const navExp = pages.filter(q => q.status === 'published' && q.navLabel).map(pagePath);
+@@ -276,6 +279,8 @@ function gate(cfg, files, opts = {}) {
+       const db = f.attrs['aria-describedby']; const dbOk = db && db.split(/\s+/).every(x => byId(doc, x) && norm(txt(byId(doc, x))).length >= 40);
+       const ld = one(f, x => x.tag === 'a' && has(x, 'data-longdesc')); const ldOk = ld && byId(doc, resolve(path, ld.attrs.href).hash);
+       if (!dbOk && !ldOk) add('block', pid, 'figure-alt', `Figur ${lab}: Textalternative fehlt (aria-describedby mit mind. 40 Zeichen oder Langbeschreibungs-Link)`);
++      if (!one(f, x => cls(x, 'puk-vis-kern') && norm(txt(x)).length > 0)) prod(pid, 'figure-core', `Figur ${lab}: Kernaussage als ganzer Satz fehlt (p.puk-vis-kern, Ebene 1)`);
++      if (v && ENTRY_FORMATS.includes(v.format) && v.entryPoint && !/^entfällt/i.test(v.entryPoint.trim()) && !one(f, x => cls(x, 'puk-vis-ansatz'))) prod(pid, 'entry-point', `Figur ${vid}: Der Plan nennt einen Ansatzpunkt für Angehörige, die Figur markiert ihn nicht (.puk-vis-ansatz)`);
+       if (!/eigene (didaktische )?darstellung|quelle:/i.test(capT)) add('block', pid, 'figure-source', `Figur ${lab}: Kennzeichnung «Eigene didaktische Darstellung» bzw. «Quelle:» fehlt in der Bildlegende`);
+       for (const img of all(f, x => x.tag === 'img')) if (!has(img, 'alt')) add('block', pid, 'figure-alt', `Figur ${lab}: img ohne alt`);
+       for (const sv of all(f, x => x.tag === 'svg')) if (sv.attrs['aria-hidden'] !== 'true' && !up(sv, x => x.attrs['aria-hidden'] === 'true' || x.attrs.role === 'img') && !sv.attrs['aria-label'] && !one(sv, x => x.tag === 'title')) add('block', pid, 'figure-alt', `Figur ${lab}: SVG weder ausgeblendet noch benannt`);
+@@ -293,6 +298,9 @@ function gate(cfg, files, opts = {}) {
+       if (f.attrs['data-visual-type'] === 'illustration' && !one(f, x => has(x, 'data-placeholder') || (x.tag === 'img' && has(x, 'data-source-status')))) add('block', pid, 'placeholder-status', `Illustration ${lab}: Bildquelle- und Freigabestatus fehlen`);
+     }
+     for (const v of plan) if (v.format !== 'text' && !seen.has(v.id)) add('block', pid, 'visual-plan', `Plan-Eintrag ${v.id} (${v.format}) hat keine Figur auf der Seite`);
++    /* Jeder Abschnitt hat eine Zeile im Visualisierungsplan (sectionId = id der section): Erklärform oder begründeter Verzicht. */
++    for (const sec of main ? all(main, x => x.tag === 'section' && cls(x, 'puk-longform__section') && !!x.attrs.id) : []) if (!plan.some(v => v.sectionId === sec.attrs.id)) prod(pid, 'plan-coverage', `Abschnitt #${sec.attrs.id} ohne Zeile im Visualisierungsplan (sectionId) – Erklärform oder begründeter Verzicht`);
++    for (const v of plan) if (v.sectionId && !one(doc, x => x.tag === 'section' && x.attrs.id === v.sectionId)) add('block', pid, 'plan-section', `Plan-Eintrag ${v.id}: Abschnitt #${v.sectionId} gibt es auf der Seite nicht`);
+     for (const ph of all(doc, x => has(x, 'data-placeholder') || (x.tag === 'img' && !!main && !!up(x, y => y === main)))) {
+       const kind = ph.attrs['data-placeholder'] || 'Bild'; const ss = ph.attrs['data-source-status'], as = ph.attrs['data-approval-status'];
+       if (!ss || !as) { add('block', pid, 'placeholder-status', `${kind}: data-source-status und data-approval-status fehlen`); continue; }
+@@ -351,6 +359,11 @@ const MUTATIONS = [
+   ['Inline-Skript eingefügt', ['inline-script'], (c, f) => rep(f, 'behandlung-verstehen.html', '</main>', '<script>console.log(1)</script></main>')],
+   ['Externer Link in neuem Fenster ohne rel', ['blank-target'], (c, f) => rep(f, 'behandlung-verstehen.html', '</main>', '<p><a href="https://www.example.org" target="_blank">Weitere Informationen der Beispielorganisation</a></p></main>')],
+   ['Akkordeon ohne Interaktionsskript', ['interaction-script'], (c, f) => rex(f, 'unterstuetzung-finden.html', /<script src="[^"]*interaktion\.js[^"]*" defer><\/script>\n?/, '')],
++  ['Figur ohne Kernaussage', ['figure-core'], (c, f) => rep(f, 'behandlung-verstehen.html', 'class="puk-vis-kern"', 'class="puk-vis-x"')],
++  ['Abschnitt ohne Zeile im Visualisierungsplan', ['plan-coverage'], c => { const p = pg(c, 'behandlung-verstehen'); const n = p.visualPlan.length; p.visualPlan = p.visualPlan.filter(v => v.sectionId !== 'fragen'); return p.visualPlan.length < n; }],
++  ['Planzeile verweist auf fehlenden Abschnitt', ['plan-section'], c => { const v = pg(c, 'behandlung-verstehen').visualPlan.find(x => x.sectionId === 'fragen'); if (!v) return false; v.sectionId = 'gibt-es-nicht'; }],
++  ['Ansatzpunkt im Plan fehlt', ['entry-point'], c => { const v = pg(c, 'beziehungen-verstehen').visualPlan.find(x => x.format === 'cycle'); if (!v) return false; delete v.entryPoint; }],
++  ['Ansatzpunkt im Plan, nicht in der Figur', ['entry-point'], (c, f) => rex(f, 'beziehungen-verstehen.html', /<p class="puk-vis-ansatz"[\s\S]*?<\/p>/, '')],
+   ['Kartenraster mit vielen Karten', ['card-grid'], (c, f) => rep(f, 'behandlung-verstehen.html', '</main>', '<ul class="puk-web-card-list"><li>A</li><li>B</li><li>C</li><li>D</li></ul></main>')],
+   ['Entwurf in der Navigation', ['nav', 'link-draft'], (c, f) => rep(f, 'index.html', '</ul></nav>', '<li><a class="puk-web-nav__link" href="seitenvorlage.html">Vorlage</a></li>\n</ul></nav>')]
+ ];
+diff --git a/ui_kits/website/qa.html b/ui_kits/website/qa.html
+index fbe717f..776484b 100644
+--- a/ui_kits/website/qa.html
++++ b/ui_kits/website/qa.html
+@@ -32,7 +32,7 @@ th,td{border-bottom:1px solid var(--border-hairline);padding:4px 8px;text-align:
+ <h1 style="margin-top:24px">Interaktionen</h1>
+ <table><thead><tr><th>Prüfung</th><th>Erwartet</th><th>Ergebnis</th></tr></thead><tbody id="func"></tbody></table>
+ <div id="stage"></div>
+-<script src="../../templates/website/psychoeducation-site-starter/tools/contract.js?v=r4-2"></script>
++<script src="../../templates/website/psychoeducation-site-starter/tools/contract.js?v=r4-3"></script>
+ <script>
+ const VIEWS=['start','situationsnavigator','kontaktwegweiser','gespraechshilfe','angebotsnavigator','grundlagenkapitel','handlungsuebersicht','transfer-erholung','beispiel-visualisierung','visualisierungsmuster','site:index','site:beziehungen-verstehen','site:behandlung-verstehen','site:unterstuetzung-finden'];
+ const RUNS=[];
