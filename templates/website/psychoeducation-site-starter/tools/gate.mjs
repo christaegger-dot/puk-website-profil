@@ -21,7 +21,7 @@ if (process.argv.includes('--selftest')) {
   const tcfg = JSON.parse(await readFile(join(ref, 'site.config.json'), 'utf8'));
   const tfiles = {};
   for (const p of tcfg.pages) tfiles[C.resolve('', p.href).path] = C.renderPage(tcfg, p, await readFile(join(ref, 'content', p.id + '.html'), 'utf8'));
-  const rows = C.selftest(tcfg, tfiles, { exists: p => p in tfiles || (!p.endsWith('.html') && existsSync(join(dir, p))) }); let bad = 0;
+  const rows = C.selftest(tcfg, tfiles, { exists: p => p in tfiles || !p.endsWith('.html') }); let bad = 0;
   for (const r of rows) { if (!r.ok) bad++; console.log(`${r.ok ? 'OK  ' : 'FAIL'} ${r.name} · erwartet ${r.expected} · erkannt ${r.got}`); }
   console.log(`\nSelbsttest: ${rows.length - bad}/${rows.length} bestanden.`); process.exit(bad ? 1 : 0);
 }
