@@ -20,7 +20,7 @@ Probe-Website der Fachstelle Angehörigenarbeit für **Angehörige von Menschen 
 ## Prüfstand
 
 Stand 08.10.2026 (nach den Korrekturen aus der Prüfung des ersten Pull Requests):
-- **Korrekturen:** Hinweiskasten der Übersicht präzisiert; Aussage zur Beratung durch die Fachstelle auch ohne Behandlung in der PUK fachlich bestätigt (Fachstelle, 08.10.2026), Marke «Prüfbedarf» entfernt; zusätzlicher Verweis auf den Zuständigkeitsverweis in «Gereiztheit und Rückzug» gestrichen; Zuständigkeitsverweis im ergänzten Standardwortlaut (fachlich geprüft 08.10.2026).
+- **Korrekturen:** Hinweiskasten der Übersicht präzisiert; Aussage zur Beratung durch die Fachstelle auch ohne Behandlung in der PUK fachlich bestätigt (Fachstelle, 08.10.2026), Marke «Prüfbedarf» entfernt; zusätzlicher Verweis auf den Zuständigkeitsverweis in «Gereiztheit und Rückzug» gestrichen; Zuständigkeitsverweis im neu gefassten Standardwortlaut (fachlich geprüft 08.10.2026). Der Prüfvermerk steht nur noch in `site.config.json` und erscheint nicht mehr in der Fusszeile; `tools/contract.js` entspricht dem Starter.
 - **Entwurfsgate:** 0 blockierende Befunde.
 - **Produktionsgate:** blockiert 7 offene Freigaben (5 Visualisierungen, Quellen-Platzhalter, Antworten der häufigen Fragen). Das ist erwartet.
 - **Selbsttest:** gehört zum Starter (dort 39/39). Er mutiert die Referenzseiten des Starters und ist in dieser Kopie nicht anwendbar.
