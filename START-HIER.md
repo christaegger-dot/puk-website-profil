@@ -48,6 +48,7 @@ Der Ablauf von der Planung bis zur Freigabe steht im Abschnitt «Prüfung und Fr
 | `ui_kits/website/` | Referenzansichten und Prüfansicht |
 | `quellcode/komponenten/` | React-Quellen; `npm install && node build.mjs ../../components/bundle.js` baut `bundle.js` neu |
 | `_ds_bundle.js`, `platform/` | Laufzeit für das UI-Kit (React 18 lokal, MIT-Lizenz); nicht in Websites übernehmen |
+| `CLAUDE.md` | Arbeitsanweisungen für Claude Code, wenn das Paket als Repository geführt wird |
 
 Nicht enthalten: das animierte Logo, das auf Websites nicht verwendet wird (Asset-Gruppe «Logos» im Design-System), und die Vorschaukarten des Design-Systems.
 

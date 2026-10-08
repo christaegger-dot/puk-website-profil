@@ -9,3 +9,5 @@ Live-Muster aus `templates/website/longform/erklaermuster.html` mit `erklaermust
 **Einsetzen für:** Entstehungs- und Wirkmodelle (Belastungsgefäss, Vulnerabilität und Stress, Wechselwirkung von Faktoren); Ansatzpunkte für Handlungen direkt im Modell markieren.
 
 **Verzichten, wenn:** das Modell mehr als fünf Teile braucht (→ aufteilen) oder eine Rückkopplung zeigt (→ Kreislauf, Muster B). Die Schrittfunktion ist optional: Grundzustand ist immer das ganze Modell; Bedienung über Buttons mit Live-Status, kein Hover, keine Animation bei reduzierter Bewegung.
+
+**Ansatzpunkt für Angehörige (08.10.2026):** doppelter Ring an der Stelle in der Grafik und `p.puk-vis-ansatz` im zugehörigen Teil; im Plan `entryPoint`.

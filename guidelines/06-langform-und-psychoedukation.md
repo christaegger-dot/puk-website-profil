@@ -29,7 +29,7 @@ liegt in `tokens/web-longform.css`.
 
 ## Visualisierungsplan
 
-- **MUSS:** Vor dem Bau einen Visualisierungsplan erstellen und dem Review beilegen; Spalten, Pflichtfälle und Vorlage im Abschnitt «Visualisierung umsetzen».
+- **MUSS:** Vor dem Bau einen Visualisierungsplan erstellen und dem Review beilegen – eine Zeile pro Abschnitt, bei Erklärmodellen mit Ansatzpunkt für Angehörige; Spalten, Pflichtfälle und Vorlage im Abschnitt «Visualisierung umsetzen».
 
 ## Mehrseitige Websites (r4)
 
