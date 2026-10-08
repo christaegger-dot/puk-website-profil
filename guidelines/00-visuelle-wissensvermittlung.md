@@ -4,7 +4,7 @@ Leitprinzip für alle Websites der Fachstelle: Wissen wird über verständliche 
 
 Live: Karte «Visuelle Wissensvermittlung», Muster A–K (Gruppe «Visualisierung»). Kopiervorlagen: `templates/website/longform/visualisierungsmuster.html` (A–F) und `erklaermuster.html` (G–K).
 
-Verbindlichkeit: Leitprinzip, Muster G–K und Bildsprache sind Profilentscheide der Fachstelle (06.10.2026). Muster A–F stammen aus dem PUK Website Kit 1.10.1-r4 (abgeleitet). Das CD-Manual der PUK regelt weder Diagramme noch Illustrationen; alles hier ist Ergänzung, keine amtliche Bildwelt.
+Verbindlichkeit: Leitprinzip, Muster G–K und Bildsprache sind Profilentscheide der Fachstelle (06.10.2026); drei Erklärungsebenen für alle Muster, Ansatzpunkte für Angehörige und ein Plan pro Abschnitt kamen nach dem ersten Probelauf dazu (08.10.2026). Muster A–F stammen aus dem PUK Website Kit 1.10.1-r4 (abgeleitet). Das CD-Manual der PUK regelt weder Diagramme noch Illustrationen; alles hier ist Ergänzung, keine amtliche Bildwelt.
 
 ## Leitsatz und Prüffrage
 
@@ -20,6 +20,8 @@ Verbindlichkeit: Leitprinzip, Muster G–K und Bildsprache sind Profilentscheide
 4. **Textlast senken, nicht die Substanz.** Vereinfachen ja, verfälschen oder auf unverbundene Schlagwörter verkürzen nein.
 5. **Bedeutung nie nur über Farbe.** Lage, Abstand, Linienart, Linienstärke, Nummer und Beschriftung tragen die Unterscheidung.
 6. **Wenige gute statt viele Grafiken.** Kein Mindestmass; eine tragende Darstellung pro Kernaussage genügt. Visualisierungen werden früh im Erkenntnisweg geplant und über die Seite verteilt, nicht am Schluss gesammelt.
+7. **Angehörige im Modell.** Die Websites richten sich an Angehörige. Erklärt eine Darstellung einen Mechanismus oder Ablauf (Kreislauf B, Prozesspfad C, Modell in Schritten G), wird geprüft, wo Angehörige ansetzen können. Der Ansatzpunkt steht im Modell, nicht nur in einer Vertiefung oder einer getrennten Liste. Ansatzpunkte beschreiben eigene Möglichkeiten im Umgang oder für sich selbst – nie Verantwortung für Behandlung, Verlauf oder Heilung. Gibt es keinen sinnvollen Ansatzpunkt, wird der Verzicht im Visualisierungsplan begründet.
+8. **Verbinden statt doppeln.** Beschreiben zwei Abschnitte denselben Mechanismus – etwa die Kernbereiche einer Erkrankung und den Kreislauf, der sie aufrechterhält –, entsteht ein verbundenes Modell statt einer Textliste und einer getrennten Grafik.
 
 ## Auswahl: vom Vermittlungsziel zur Erklärform
 
@@ -45,13 +47,13 @@ Verbindlichkeit: Leitprinzip, Muster G–K und Bildsprache sind Profilentscheide
 | Muster | Wofür | Was trägt Bedeutung | Schmal (unter 560 px) | Verzichten, wenn … |
 | --- | --- | --- | --- | --- |
 | **A · Figur mit Langbeschreibung** | Beziehungen, Überschneidungen, Zustände | Lage, Überschneidung | Bereiche als Liste | nur Aufzählung ohne Beziehung |
-| **B · Kreislauf** | Rückkopplung, Teufelskreis, Ausstiegspunkt | geschlossene Schleife, Pfeilrichtung | Liste mit sichtbarem «zurück zu Station 1» | keine echte Rückkopplung (→ C) |
-| **C · Prozesspfad** | Abläufe, Behandlungs- und Verwaltungswege | Reihenfolge, Nummer, gestrichelt = optional | senkrechter Pfad | Schritte unabhängig voneinander (→ Liste) |
+| **B · Kreislauf** | Rückkopplung, Teufelskreis, Ausstiegspunkt | geschlossene Schleife, Pfeilrichtung; Ansatzpunkt: Station mit doppelter Kontur und Beschriftung | Liste mit sichtbarem «zurück zu Station 1» | keine echte Rückkopplung (→ C) |
+| **C · Prozesspfad** | Abläufe, Behandlungs- und Verwaltungswege | Reihenfolge, Nummer, gestrichelt = optional; Ansatzpunkt: doppelter Ring und Beschriftung | senkrechter Pfad | Schritte unabhängig voneinander (→ Liste) |
 | **D · Redaktionelle Illustration** | Erleben, Metapher, emotionaler Zugang | Szene, Metapher | Bild mit Legende | ohne freigegebene Quelle nur Platzhalter |
 | **E · Vergleich** | zwei Optionen nach gleichen Merkmalen | gleiche Merkmale, Linienart | Spalten untereinander | mehr als zwei Optionen (→ `Table`) |
 | **F · Entscheidungsweg** | Wenn-dann-Folge zu genau einem nächsten Schritt | Fragenfolge, Verzweigung | bleibt Liste | es würde Diagnose oder Triage nahelegen |
-| **G · Modell in Schritten** | Entstehung und Wirkweise | Lage der Teile, Pfeilrichtung, Nummern = Liste | Grafik über der Liste | mehr als fünf Teile (aufteilen) oder Rückkopplung (→ B) |
-| **H · Spannungsfeld** | zwei berechtigte, gegenläufige Anliegen | Seite, Linienart, Mitte am Drehpunkt | Pol A · Mitte · Pol B untereinander | eine Seite ist fachlich klar richtig (→ E, Empfehlung) |
+| **G · Modell in Schritten** | Entstehung und Wirkweise | Lage der Teile, Pfeilrichtung, Nummern = Liste; Ansatzpunkt: doppelter Ring und Beschriftung | Grafik über der Liste | mehr als fünf Teile (aufteilen) oder Rückkopplung (→ B) |
+| **H · Spannungsfeld** | zwei berechtigte, gegenläufige Anliegen | Seite, Linienart, Mitte am Drehpunkt; Spalten hängen an den Schalen, gestrichelter gekippter Balken = kann sich verschieben | Pol A · Mitte · Pol B untereinander | eine Seite ist fachlich klar richtig (→ E, Empfehlung) |
 | **I · Beziehungskarte** | Unterstützungsnetz, Beteiligte, Zuständigkeiten | Abstand zur Mitte, Linienart, beschriftete Kreise | nach Kreisen gegliederte Liste | Reihenfolge zählt (→ C) oder mehr als drei Einträge je Kreis |
 | **J · Kontinuum** | Abstufung, Verlauf, Frühzeichen | Lage auf der Achse, Linienstärke, Doppelpfeil | Bereiche untereinander | Stufen fachlich nicht abgrenzbar; nie als Selbstdiagnose-Skala |
 | **K · Schichtenmodell** | sichtbar und verborgen | über/unter der Linie, Grösse der Form | zwei Schichten untereinander | die Zuordnung wäre Deutung statt Möglichkeit |
@@ -82,11 +84,13 @@ Die Taxonomie der Handout-Reihe der Fachstelle gilt auch für Websites. Entsprec
 
 ## Drei Erklärungsebenen
 
+Gilt für alle Muster A–K; die Kopiervorlagen enthalten alle drei Ebenen.
+
 1. **Kernaussage:** ein ganzer Satz über der Darstellung («Belastung ist keine Frage der Stärke: Es zählt, was zufliesst – und was abfliessen kann.»), kein Schlagwort.
 2. **Darstellung mit präzisen Beschriftungen und kurzem Erklärtext:** zwei bis vier zusammenhängende Sätze, konkrete Beispiele dort, wo sie das Verständnis tragen.
 3. **Vertiefung zum Aufklappen** (`details`, Akkordeon): Beispiel aus dem Alltag, Grenzen des Modells, Langbeschreibung, Quelle.
 
-Ebene 1 und 2 tragen die Aussage allein. Was in Ebene 3 steht, darf fehlen, ohne dass die Grundaussage fehlt.
+Ebene 1 und 2 tragen die Aussage allein. Was in Ebene 3 steht, darf fehlen, ohne dass die Grundaussage fehlt. Was für die Zielgruppe die Hauptaussage ist – etwa was Angehörige tun können –, gehört deshalb nicht in die Vertiefung.
 
 ## Visuell und interaktiv
 
@@ -132,7 +136,7 @@ Vorschläge für die Erklärform; die fachliche Aussage legt die Fachstelle fest
 | Website / Thema | Kernaussage | Erklärform |
 | --- | --- | --- |
 | Stress verstehen und bewältigen | Belastung entsteht aus dem Verhältnis von Zu- und Abfluss | G · Belastungsgefäss mit Ansatzpunkt «Abfluss» |
-| Zwangsstörung | Rückversicherung lindert kurz und hält den Zwang aufrecht | B · Kreislauf mit markiertem Ausstiegspunkt |
+| Zwangsstörung | Rückversicherung lindert kurz und hält den Zwang aufrecht | B · Kreislauf mit markiertem Ansatzpunkt für Angehörige |
 | Borderline | Nähe suchen und Abstand brauchen kann gleichzeitig gelten | H · Spannungsfeld |
 | Bipolare Störung | Stimmung bewegt sich in Phasen; frühe Zeichen geben Spielraum | J · Kontinuum mit Frühzeichen je Bereich |
 | Psychose, Angehörigengespräch | Hinter Rückzug kann Überforderung liegen | K · Schichtenmodell mit Gesprächsbeispiel |

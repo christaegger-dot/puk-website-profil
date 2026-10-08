@@ -3,18 +3,6 @@
    Grundsatz: Anordnung, Verbindung, Form und Beschriftung tragen die Bedeutung; alle Beschriftungen sind HTML-Text,
    Formen und Linien sind aria-hidden. Ohne Skript, ohne Animation und auf schmalen Bildschirmen vollständig lesbar. */
 
-/* Erklärungsebenen: 1 Kernaussage · 2 Darstellung + kurzer Erklärtext · 3 Vertiefung */
-.puk-vis-kern{margin:0 0 var(--space-3);font:var(--type-title-3);font-weight:var(--fw-medium);color:var(--text-default);max-width:38ch;text-wrap:balance}
-.puk-vis-short{margin:0 0 var(--space-6);font:var(--type-body-sm);color:var(--text-default);max-width:62ch}
-.puk-vis-more{margin-top:var(--space-5);border-top:1px solid var(--border-default);max-width:80ch}
-.puk-vis-more>summary{display:flex;align-items:center;gap:var(--space-2);min-height:44px;cursor:pointer;font:var(--type-body-sm);font-weight:var(--fw-medium);color:var(--puk-blue-100);list-style:none}
-.puk-vis-more>summary::-webkit-details-marker{display:none}
-.puk-vis-more>summary::before{content:"";width:8px;height:8px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(-45deg);margin:0 4px 0 2px}
-.puk-vis-more[open]>summary::before{transform:rotate(45deg)}
-.puk-vis-more>summary:hover{color:var(--text-default);text-decoration:underline}
-.puk-vis-more>summary:focus{outline:none}.puk-vis-more>summary:focus-visible{box-shadow:var(--focus-ring)}
-.puk-vis-more__body{padding:0 0 var(--space-4);font:var(--type-body-sm);color:var(--text-default)}
-.puk-vis-more__body p{margin:0 0 var(--space-2)}
 .puk-vis-sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
 .puk-vis-btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 var(--space-4);border:1px solid var(--puk-black-100,#222);border-radius:3px;background:var(--puk-white);color:var(--text-default);font:var(--type-body-sm);font-weight:var(--fw-medium);cursor:pointer}
 .puk-vis-btn:hover{background:var(--ui-wash);color:var(--puk-blue-100)}
@@ -40,7 +28,8 @@
 @media (prefers-reduced-motion:no-preference){.puk-vis-build [data-step]{transition:opacity var(--dur-base,200ms) var(--ease-standard,ease)}}
 
 /* H · Spannungsfeld: zwei berechtigte Pole und was das Gleichgewicht hält */
-.puk-vis-balance__beam{display:block;width:100%;max-width:720px;height:auto;margin:0 auto var(--space-4)}
+.puk-vis-balance{max-width:860px;margin-inline:auto}
+.puk-vis-balance__beam{display:block;width:100%;height:auto;margin:0}
 .puk-vis-balance__grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1fr);gap:var(--space-6);align-items:start}
 .puk-vis-balance__pole{min-width:0;padding-top:var(--space-4);border-top:4px solid var(--puk-blue-100)}
 .puk-vis-balance__pole--b{border-top-style:double;border-top-width:6px}
@@ -115,4 +104,4 @@
 @container (max-width:560px){.puk-vis-net__ring ul{display:grid;gap:var(--space-2)}}
 
 /* SVG-Linien und -Flächen über Tokens, damit das Theme «Hoher Kontrast» greift */
-.puk-vis-ln{fill:none;stroke:var(--puk-blue-100);stroke-width:2;vector-effect:non-scaling-stroke;stroke-linecap:round;stroke-linejoin:round}.puk-vis-ln--thin{stroke-width:1.5}.puk-vis-ln--paper{fill:var(--puk-white)}.puk-vis-ln--water,.puk-vis-water{fill:var(--puk-blue-25)}.puk-vis-fill{fill:var(--puk-blue-100)}.puk-vis-mark{fill:var(--puk-white);stroke:var(--puk-blue-100);stroke-width:2}.puk-vis-marktext{fill:var(--text-default)}
+.puk-vis-ln{fill:none;stroke:var(--puk-blue-100);stroke-width:2;vector-effect:non-scaling-stroke;stroke-linecap:round;stroke-linejoin:round}.puk-vis-ln--thin{stroke-width:1.5}.puk-vis-ln--paper{fill:var(--puk-white)}.puk-vis-ln--water,.puk-vis-water{fill:var(--puk-blue-25)}.puk-vis-paper{fill:var(--puk-white)}.puk-vis-fill{fill:var(--puk-blue-100)}.puk-vis-mark{fill:var(--puk-white);stroke:var(--puk-blue-100);stroke-width:2}.puk-vis-marktext{fill:var(--text-default)}

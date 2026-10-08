@@ -2,7 +2,7 @@
   "$comment": "PUK Website Kit 1.10.1-r4 · abgeleitet – Seitenvertrag des Psychoedukations-Starters. Synthetische Musterwerte. Pflichtfelder und Regeln: README.md in diesem Ordner. Nach jeder Änderung: node tools/build.mjs, danach node tools/gate.mjs (Entwurf) bzw. node tools/gate.mjs --production.",
   "kitRevision": "PUK Website Kit 1.10.1-r4 · abgeleitet",
   "canonicalSource": "PUK Zürich Design System 1.10.1 (unverändert)",
-  "assetVersion": "r4-2",
+  "assetVersion": "r4-3",
   "siteTitle": "Psychoedukation verstehen – Musterwebsite",
   "shortDescription": "Synthetische Musterwebsite mit drei psychoedukativen Referenzseiten und Seitenvorlage. Keine fachlichen Aussagen, keine realen Kontakte.",
   "language": "de-CH",
@@ -47,12 +47,25 @@
         {
           "id": "v-idx-text",
           "section": "Lesepfade",
+          "sectionId": "lesepfade",
           "goal": "Einen passenden Einstieg wählen",
           "format": "text",
           "statement": "–",
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: drei gleichwertige Einstiege ohne Beziehung untereinander.",
+          "approvalStatus": "entfällt"
+        },
+        {
+          "id": "v-idx-entstehung",
+          "section": "Einordnung",
+          "sectionId": "entstehung",
+          "goal": "Wissen, woher die drei Seiten stammen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: kurzer Hinweis auf die Herkunft der Seiten und ein Download-Platzhalter, keine Beziehung, die eine Darstellung erklären müsste.",
           "approvalStatus": "entfällt"
         }
       ]
@@ -73,6 +86,7 @@
         {
           "id": "v-bz-kreislauf",
           "section": "01 Muster",
+          "sectionId": "muster",
           "goal": "Verstehen, dass eine Reaktion zum neuen Anlass werden kann",
           "format": "cycle",
           "statement": "Anlass → Deutung → Reaktion → Wirkung; die Wirkung wird zum neuen Anlass",
@@ -80,11 +94,13 @@
           "alternative": "Textfassung in der Bildlegende (aria-describedby)",
           "reason": "Ein Kreislauf ist im Fliesstext schwer zu halten.",
           "approvalStatus": "ausstehend",
-          "understood": "Dass die eigene Reaktion zum neuen Anlass werden kann – eine Schleife zeigt das sofort, ein Satz nur nacheinander."
+          "understood": "Dass die eigene Reaktion zum neuen Anlass werden kann – eine Schleife zeigt das sofort, ein Satz nur nacheinander.",
+          "entryPoint": "Bei Station 2 «Deutung»: nachfragen, wie etwas gemeint war, bevor man antwortet (Musterinhalt)."
         },
         {
           "id": "v-bz-illustration",
           "section": "02 Nähe und Abstand",
+          "sectionId": "naehe",
           "goal": "Einen ruhigen, nicht wertenden Zugang zu Nähe und Abstand schaffen",
           "format": "illustration",
           "statement": "Metapher: zwei Formen, die sich annähern und wieder Raum lassen",
@@ -97,12 +113,25 @@
         {
           "id": "v-bz-sicherheit",
           "section": "03 Wenn Konflikte bedrohlich werden",
+          "sectionId": "bedrohlich",
           "goal": "Sicherheit vor Verstehen stellen",
           "format": "text",
           "statement": "–",
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: In einer möglichen Gefahrensituation braucht es einen kurzen, direkten Hinweis ohne Grafik.",
+          "approvalStatus": "entfällt"
+        },
+        {
+          "id": "v-bz-einordnung",
+          "section": "04 Einordnung",
+          "sectionId": "einordnung",
+          "goal": "Wissen, was die Seite leistet und wo es weitergeht",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: kurze Einordnung mit einem Verweis, kein Zusammenhang.",
           "approvalStatus": "entfällt"
         }
       ]
@@ -120,6 +149,7 @@
         {
           "id": "v-bh-ablauf",
           "section": "01 Ablauf",
+          "sectionId": "ablauf",
           "goal": "Abfolge und optionalen Schritt erkennen",
           "format": "process",
           "statement": "Fünf Schritte in fester Reihenfolge; Schritt 4 ist optional",
@@ -127,11 +157,13 @@
           "alternative": "Geordnete Liste mit Schrittnummer; Kurzfassung über aria-describedby",
           "reason": "Abfolge und Option werden auf einen Blick sichtbar.",
           "approvalStatus": "ausstehend",
-          "understood": "Reihenfolge und den einen optionalen Schritt auf einen Blick."
+          "understood": "Reihenfolge und den einen optionalen Schritt auf einen Blick.",
+          "entryPoint": "Bei Schritt 1 «Erstes Gespräch»: eigene Fragen mitbringen (Musterinhalt; siehe Abschnitt «Eigene Fragen notieren»)."
         },
         {
           "id": "v-bh-vergleich",
           "section": "02 Zwei Formen",
+          "sectionId": "formen",
           "goal": "Zwei Terminformen nach gleichen Merkmalen vergleichen",
           "format": "comparison",
           "statement": "Termin vor Ort und Termin per Video unterscheiden sich in Ort, Weg, Umgebung und Technik",
@@ -144,6 +176,7 @@
         {
           "id": "v-bh-fragen",
           "section": "03 Fragen",
+          "sectionId": "fragen",
           "goal": "Eigene Fragen vorbereiten",
           "format": "text",
           "statement": "–",
@@ -167,6 +200,7 @@
         {
           "id": "v-us-wegweiser",
           "section": "01 Orientierung",
+          "sectionId": "wegweiser",
           "goal": "In zwei Fragen den passenden nächsten Schritt finden",
           "format": "decision",
           "statement": "Frage 1 Verstehen → Themenseiten; Frage 2 Gespräch → Kontaktweg",
@@ -179,6 +213,7 @@
         {
           "id": "v-us-netz",
           "section": "02 Netz",
+          "sectionId": "netz",
           "goal": "Erkennen, dass Unterstützung auf mehrere Menschen und Stellen verteilt werden kann",
           "format": "relationship-map",
           "statement": "Nah, Umfeld, fachliche Unterstützung als Kreise um «Sie»; gestrichelt = noch nicht genutzt",
@@ -191,6 +226,7 @@
         {
           "id": "v-us-kontakt",
           "section": "02 Gespräch",
+          "sectionId": "gespraech",
           "goal": "Wissen, wo der Kontaktweg stehen wird",
           "format": "text",
           "statement": "–",
@@ -214,6 +250,7 @@
         {
           "id": "v-vl-text",
           "section": "Vorlage",
+          "sectionId": "schritte",
           "goal": "Aufbau einer neuen Seite zeigen",
           "format": "text",
           "statement": "–",

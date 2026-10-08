@@ -8,7 +8,7 @@
 })(typeof self !== 'undefined' ? self : this, function () {
 'use strict';
 const VERSION = 'PUK Website Kit 1.10.1-r4 · abgeleitet';
-const BUILD = 'r4-2';
+const BUILD = 'r4-3';
 const FORMATS = ['text', 'figure', 'process', 'cycle', 'comparison', 'decision', 'illustration', 'stepwise-model', 'tension-field', 'relationship-map', 'continuum', 'layer-model'];
 /* Interaktive Komponenten und Erklärmuster G brauchen components/interaktion.js (HTML-Fassungen ohne React). */
 const INTERACTIVE = ['data-puk-accordion', 'data-puk-tabs', 'data-puk-disclosure', 'data-puk-dialog-open', 'data-vis-build'];
@@ -18,7 +18,9 @@ const LEGACY_SAFETY = ['persistent-subdued', 'direct'];
 /* Hinweise aus dem Website-Review Teil 1 (fachliche Prüfung): Schweizer Kontext, Orthografie, personenzentrierte Sprache. Nur Hinweise (warn), keine Blocker: Stichwortprüfung, kein Ersatz für die fachliche Prüfung. */
 const DE_TERMS = /\b(Jugendamt|Betreuungsgerichts?|rechtliche[nr]? Betreuung|Betreuungsverfahren|PsychKG|SGB\s?[IVX]+|Pflegegrade?s?|Pflegekasse|Erwerbsminderungsrente|Schwerbehindertenausweis|Telefonseelsorge|Amtsgerichts?|Sozialpsychiatrische[nr]? Dienst(?:es)?)\b/i;
 const LABELS = /\b(?:die|der|den|des|dem|ein|eine|einen|einem|einer|als)\s+(Schizophrenen?|Psychotiker(?:in(?:nen)?)?|Borderliner(?:in(?:nen)?)?|Bipolaren|Süchtigen|Geisteskranken?|Irren)\b|\bpsychisch Kranken?\b/i;
-const REVIEW_WARNINGS = ['orthography', 'swiss-context', 'person-first', 'card-grid', 'inline-style'];
+const REVIEW_WARNINGS = ['orthography', 'swiss-context', 'person-first', 'card-grid', 'inline-style', 'figure-core', 'entry-point', 'plan-coverage'];
+/* Profilentscheid 08.10.2026: Erklärmodelle (Kreislauf, Prozesspfad, Modell in Schritten) prüfen, wo Angehörige ansetzen können – im Plan als «entryPoint» (Ansatzpunkt oder «entfällt: Begründung»), in der Figur als .puk-vis-ansatz. */
+const ENTRY_FORMATS = ['cycle', 'process', 'stepwise-model'];
 const SENSITIVE = [['selbstgefaehrdung', /selbstgef[aä]hrd|selbstverletz|suizid/i], ['gewalt', /gewalt/i], ['zwang', /(^|[^a-zäöü])zwang(s|$|[^a-zäöü])/i], ['akute-krise', /(^|[^a-zäöü])krisen?([^a-zäöü]|$)|notfall/i]];
 const GENERIC = /^(quelle|quellen|mehr|mehr erfahren|hier|link|details|weiterlesen|langbeschreibung|textfassung|download|pdf)$/i;
 const VOID = new Set('area base br col embed hr img input link meta source track wbr'.split(' '));
@@ -184,6 +186,7 @@ function gate(cfg, files, opts = {}) {
       if (!FORMATS.includes(v.format)) add('block', pid, 'visual-plan', `visualPlan ${v.id}: unbekanntes Format «${v.format}»`);
       if (v.format !== 'text' && !v.understood) add('block', pid, 'visual-plan', `visualPlan ${v.id}: «understood» fehlt – was versteht die Zielgruppe dadurch besser als durch einen kurzen Text allein?`);
       if (v.format !== 'text' && v.approvalStatus !== 'freigegeben') prod(pid, 'visual-approval', `Visualisierung ${v.id} nicht freigegeben (${v.approvalStatus})`);
+      if (ENTRY_FORMATS.includes(v.format) && !(v.entryPoint || '').trim()) prod(pid, 'entry-point', `visualPlan ${v.id}: «entryPoint» fehlt – Ansatzpunkt für Angehörige oder «entfällt: Begründung»`);
     }
   }
   const titles = {}; const navExp = pages.filter(q => q.status === 'published' && q.navLabel).map(pagePath);
@@ -276,6 +279,8 @@ function gate(cfg, files, opts = {}) {
       const db = f.attrs['aria-describedby']; const dbOk = db && db.split(/\s+/).every(x => byId(doc, x) && norm(txt(byId(doc, x))).length >= 40);
       const ld = one(f, x => x.tag === 'a' && has(x, 'data-longdesc')); const ldOk = ld && byId(doc, resolve(path, ld.attrs.href).hash);
       if (!dbOk && !ldOk) add('block', pid, 'figure-alt', `Figur ${lab}: Textalternative fehlt (aria-describedby mit mind. 40 Zeichen oder Langbeschreibungs-Link)`);
+      if (!one(f, x => cls(x, 'puk-vis-kern') && norm(txt(x)).length > 0)) prod(pid, 'figure-core', `Figur ${lab}: Kernaussage als ganzer Satz fehlt (p.puk-vis-kern, Ebene 1)`);
+      if (v && ENTRY_FORMATS.includes(v.format) && v.entryPoint && !/^entfällt/i.test(v.entryPoint.trim()) && !one(f, x => cls(x, 'puk-vis-ansatz'))) prod(pid, 'entry-point', `Figur ${vid}: Der Plan nennt einen Ansatzpunkt für Angehörige, die Figur markiert ihn nicht (.puk-vis-ansatz)`);
       if (!/eigene (didaktische )?darstellung|quelle:/i.test(capT)) add('block', pid, 'figure-source', `Figur ${lab}: Kennzeichnung «Eigene didaktische Darstellung» bzw. «Quelle:» fehlt in der Bildlegende`);
       for (const img of all(f, x => x.tag === 'img')) if (!has(img, 'alt')) add('block', pid, 'figure-alt', `Figur ${lab}: img ohne alt`);
       for (const sv of all(f, x => x.tag === 'svg')) if (sv.attrs['aria-hidden'] !== 'true' && !up(sv, x => x.attrs['aria-hidden'] === 'true' || x.attrs.role === 'img') && !sv.attrs['aria-label'] && !one(sv, x => x.tag === 'title')) add('block', pid, 'figure-alt', `Figur ${lab}: SVG weder ausgeblendet noch benannt`);
@@ -293,6 +298,9 @@ function gate(cfg, files, opts = {}) {
       if (f.attrs['data-visual-type'] === 'illustration' && !one(f, x => has(x, 'data-placeholder') || (x.tag === 'img' && has(x, 'data-source-status')))) add('block', pid, 'placeholder-status', `Illustration ${lab}: Bildquelle- und Freigabestatus fehlen`);
     }
     for (const v of plan) if (v.format !== 'text' && !seen.has(v.id)) add('block', pid, 'visual-plan', `Plan-Eintrag ${v.id} (${v.format}) hat keine Figur auf der Seite`);
+    /* Jeder Abschnitt hat eine Zeile im Visualisierungsplan (sectionId = id der section): Erklärform oder begründeter Verzicht. */
+    for (const sec of main ? all(main, x => x.tag === 'section' && cls(x, 'puk-longform__section') && !!x.attrs.id) : []) if (!plan.some(v => v.sectionId === sec.attrs.id)) prod(pid, 'plan-coverage', `Abschnitt #${sec.attrs.id} ohne Zeile im Visualisierungsplan (sectionId) – Erklärform oder begründeter Verzicht`);
+    for (const v of plan) if (v.sectionId && !one(doc, x => x.tag === 'section' && x.attrs.id === v.sectionId)) add('block', pid, 'plan-section', `Plan-Eintrag ${v.id}: Abschnitt #${v.sectionId} gibt es auf der Seite nicht`);
     for (const ph of all(doc, x => has(x, 'data-placeholder') || (x.tag === 'img' && !!main && !!up(x, y => y === main)))) {
       const kind = ph.attrs['data-placeholder'] || 'Bild'; const ss = ph.attrs['data-source-status'], as = ph.attrs['data-approval-status'];
       if (!ss || !as) { add('block', pid, 'placeholder-status', `${kind}: data-source-status und data-approval-status fehlen`); continue; }
@@ -351,6 +359,11 @@ const MUTATIONS = [
   ['Inline-Skript eingefügt', ['inline-script'], (c, f) => rep(f, 'behandlung-verstehen.html', '</main>', '<script>console.log(1)</script></main>')],
   ['Externer Link in neuem Fenster ohne rel', ['blank-target'], (c, f) => rep(f, 'behandlung-verstehen.html', '</main>', '<p><a href="https://www.example.org" target="_blank">Weitere Informationen der Beispielorganisation</a></p></main>')],
   ['Akkordeon ohne Interaktionsskript', ['interaction-script'], (c, f) => rex(f, 'unterstuetzung-finden.html', /<script src="[^"]*interaktion\.js[^"]*" defer><\/script>\n?/, '')],
+  ['Figur ohne Kernaussage', ['figure-core'], (c, f) => rep(f, 'behandlung-verstehen.html', 'class="puk-vis-kern"', 'class="puk-vis-x"')],
+  ['Abschnitt ohne Zeile im Visualisierungsplan', ['plan-coverage'], c => { const p = pg(c, 'behandlung-verstehen'); const n = p.visualPlan.length; p.visualPlan = p.visualPlan.filter(v => v.sectionId !== 'fragen'); return p.visualPlan.length < n; }],
+  ['Planzeile verweist auf fehlenden Abschnitt', ['plan-section'], c => { const v = pg(c, 'behandlung-verstehen').visualPlan.find(x => x.sectionId === 'fragen'); if (!v) return false; v.sectionId = 'gibt-es-nicht'; }],
+  ['Ansatzpunkt im Plan fehlt', ['entry-point'], c => { const v = pg(c, 'beziehungen-verstehen').visualPlan.find(x => x.format === 'cycle'); if (!v) return false; delete v.entryPoint; }],
+  ['Ansatzpunkt im Plan, nicht in der Figur', ['entry-point'], (c, f) => rex(f, 'beziehungen-verstehen.html', /<p class="puk-vis-ansatz"[\s\S]*?<\/p>/, '')],
   ['Kartenraster mit vielen Karten', ['card-grid'], (c, f) => rep(f, 'behandlung-verstehen.html', '</main>', '<ul class="puk-web-card-list"><li>A</li><li>B</li><li>C</li><li>D</li></ul></main>')],
   ['Entwurf in der Navigation', ['nav', 'link-draft'], (c, f) => rep(f, 'index.html', '</ul></nav>', '<li><a class="puk-web-nav__link" href="seitenvorlage.html">Vorlage</a></li>\n</ul></nav>')]
 ];

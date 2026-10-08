@@ -111,3 +111,26 @@
 /* 200 % Text: lange Roadmap-Einträge umbrechen statt überlaufen */
 .puk-longform__roadmap li,.puk-longform__roadmap a{min-width:0;max-width:100%;overflow-wrap:anywhere}
 /* Keine selbstlaufende Animation: Kreislaufpfeile sind statisch (Profilentscheid 06.10.2026, Abschnitt «Interaktionskonzept»). */
+
+/* Drei Erklärungsebenen für alle Muster A–K (Profilentscheid 08.10.2026):
+   1 Kernaussage (.puk-vis-kern) · 2 Darstellung + kurzer Erklärtext (.puk-vis-short) · 3 Vertiefung (details.puk-vis-more) */
+.puk-vis-kern{margin:0 0 var(--space-3);font:var(--type-title-3);font-weight:var(--fw-medium);color:var(--text-default);max-width:38ch;text-wrap:balance}
+.puk-vis-short{margin:0 0 var(--space-6);font:var(--type-body-sm);color:var(--text-default);max-width:62ch}
+.puk-vis-more{margin-top:var(--space-5);border-top:1px solid var(--border-default);max-width:80ch}
+.puk-vis-more>summary{display:flex;align-items:center;gap:var(--space-2);min-height:44px;cursor:pointer;font:var(--type-body-sm);font-weight:var(--fw-medium);color:var(--puk-blue-100);list-style:none}
+.puk-vis-more>summary::-webkit-details-marker{display:none}
+.puk-vis-more>summary::before{content:"";width:8px;height:8px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(-45deg);margin:0 4px 0 2px}
+.puk-vis-more[open]>summary::before{transform:rotate(45deg)}
+.puk-vis-more>summary:hover{color:var(--text-default);text-decoration:underline}
+.puk-vis-more>summary:focus{outline:none}.puk-vis-more>summary:focus-visible{box-shadow:var(--focus-ring)}
+.puk-vis-more__body{padding:0 0 var(--space-4);font:var(--type-body-sm);color:var(--text-default)}
+.puk-vis-more__body p{margin:0 0 var(--space-2)}
+/* Ansatzpunkt für Angehörige (Muster B, C, G; Profilentscheid 08.10.2026): Beschriftung «Ansatzpunkt» + 4-px-Balken,
+   in der Grafik doppelte Kontur. Bedeutung nie nur über Farbe. Ansatzpunkte beschreiben eigene Möglichkeiten,
+   keine Verantwortung für Behandlung oder Verlauf. */
+.puk-vis-ansatz{margin:var(--space-3) 0 0;padding:var(--space-2) 0 var(--space-2) var(--space-3);border-left:4px solid var(--puk-blue-100);font:var(--type-body-sm);color:var(--text-default);max-width:62ch;text-align:left}
+.puk-vis-ansatz__key{display:block;font:var(--type-caption);font-weight:var(--fw-medium);color:var(--text-default)}
+.puk-vis-cycle li.is-ansatz{border-style:double;border-width:6px}
+.puk-vis-cycle__key{font:var(--type-caption);font-weight:var(--fw-medium);color:var(--text-default)}
+.puk-vis-path li.is-ansatz::after{box-shadow:0 0 0 3px var(--puk-white),0 0 0 5px var(--puk-blue-100)}
+.puk-vis-path .puk-vis-ansatz{margin-top:var(--space-2);color:var(--text-default)}

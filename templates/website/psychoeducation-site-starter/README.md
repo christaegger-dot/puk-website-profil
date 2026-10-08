@@ -1,4 +1,4 @@
-# Psychoedukations-Starter · PUK Website Kit 1.10.1-r4 · abgeleitet · Build r4-2
+# Psychoedukations-Starter · PUK Website Kit 1.10.1-r4 · abgeleitet · Build r4-3
 
 Lokal lauffähiger Mehrseiten-Starter für psychoedukative Websites. Abgeleitetes Profil auf Basis der kanonischen Quelle **PUK Zürich Design System 1.10.1**, nicht deren neue offizielle Version. Alle Inhalte sind synthetisch: keine realen Kontakte, Personen, klinischen Aussagen, Freigaben oder Bildrechte.
 
@@ -36,7 +36,7 @@ Seiten über einen lokalen Webserver öffnen (z. B. `npx serve` im Projektstamm 
 - Die Hauptnavigation entsteht aus allen Seiten mit `status: "published"` und `navLabel`. Entwürfe erscheinen nie in der Navigation.
 - `disclaimer`: gut auffindbarer Hinweis, dass die Website keine individuelle Abklärung, Beratung oder Behandlung ersetzt; erscheint in jeder Fusszeile (fehlt er, meldet das Gate einen Hinweis).
 - `responsibility` (site-weit, optional): ein Zuständigkeitsverweis an einer festen, von jeder Seite aus erreichbaren Stelle – in jeder Fusszeile –, der ohne Nummern auf die zuständigen Stellen verweist (alternativ `targetHref` auf eine Impressum-Stelle; die Fusszeile gilt als eine Stelle). Felder: `label`, `text`, `owner`, `reviewStatus`, optional `targetHref` (lokal, existierend) + `targetLabel`; bei `geprueft` zusätzlich `reviewedBy` und `reviewedAt`. Der Prüfvermerk erscheint nicht auf der Website; ein ungeprüfter Verweis zeigt in der Fusszeile eine Warnung. Seitenweise `safetyAccess`-Varianten gibt es nicht mehr; `persistent-subdued` und `direct` sind gesperrt (Profilentscheid 06.10.2026: Die Fachstelle bietet keine Krisenintervention).
-- `visualPlan[]`: `section`, `goal`, `format` (`text`; Muster A–F `figure`, `cycle`, `process`, `illustration`, `comparison`, `decision`; Muster G–K `stepwise-model`, `tension-field`, `relationship-map`, `continuum`, `layer-model`), `statement`, `understood` (Pflicht ausser bei `text`: Was versteht die Zielgruppe dadurch besser als durch einen kurzen Text allein?), `source`, `alternative`, `reason`, `approvalStatus`.
+- `visualPlan[]`: `section`, `sectionId` (Pflicht: `id` der zugehörigen `section`; jeder Abschnitt braucht eine Zeile), `goal`, `format` (`text`; Muster A–F `figure`, `cycle`, `process`, `illustration`, `comparison`, `decision`; Muster G–K `stepwise-model`, `tension-field`, `relationship-map`, `continuum`, `layer-model`), `statement`, `understood` (Pflicht ausser bei `text`: Was versteht die Zielgruppe dadurch besser als durch einen kurzen Text allein?), `entryPoint` (Pflicht bei `cycle`, `process`, `stepwise-model`: Ansatzpunkt für Angehörige oder «entfällt: Begründung»; ein genannter Ansatzpunkt ist in der Figur als `.puk-vis-ansatz` markiert), `source`, `alternative`, `reason`, `approvalStatus`.
 - `siteUrl` (optional): öffentliche Adresse; erzeugt `sitemap.xml` und kanonische Links. Fehlt sie, meldet das Gate einen Hinweis.
 - `interactionScript`: Pfad zu `components/interaktion.js`. Der Build bindet es nur auf Seiten ein, die Akkordeon, Reiter, Menü, Dialog oder Muster G enthalten.
 - Der Build schreibt zusätzlich Open-Graph-Angaben (Titel, Beschreibung, Sprache) ohne Tracking-Parameter.
@@ -61,22 +61,24 @@ Seiten über einen lokalen Webserver öffnen (z. B. `npx serve` im Projektstamm 
   - Inline-Skripte (Content-Security-Policy), Links mit `target="_blank"` ohne `rel="noopener noreferrer"`
   - interaktive Komponenten ohne lokal vorhandenes `interaktion.js`
   - Visualisierungsplan ohne `understood` bei einer Darstellung
+  - Planzeile mit `sectionId`, die es auf der Seite nicht gibt
+- **Hinweise im Entwurf, Blocker in Produktion:** Figur ohne Kernaussage (`.puk-vis-kern`), fehlender oder nicht markierter Ansatzpunkt (`entryPoint`), Abschnitt ohne Zeile im Visualisierungsplan.
 - **Hinweise (keine Blocker):** Kartenraster mit vier oder mehr Karten (Kartenraster-Check), `style`-Attribute im Inhalt, fehlende `siteUrl`, Orthografie, deutsche Rechtsbegriffe, etikettierende Bezeichnungen.
 - **Gate blockiert zusätzlich in Produktion:** nicht freigegebene Absenderin, ungeprüfte Zuständigkeitsverweise, Platzhalter und Visualisierungen.
 - **Sensible Themen:** Erwähnt der Inhalt Selbstgefährdung, Gewalt, Zwang oder eine akute Krise, muss `sensitiveTopics` das Thema nennen. Ein Zuständigkeitsverweis (`responsibility`) ist dann empfohlen, aber nicht Pflicht (Hinweis, kein Blocker); ist er gesetzt, steht er auf jeder Seite. Inhalte zum Umgang mit Krisen (Frühwarnzeichen, Krisenplan) sind Psychoedukation und zulässig. Mögliche Kurznummern wie 143 oder 144 meldet das Gate als Hinweis zur Prüfung. Zusätzliche Hinweise (keine Blocker) aus dem Website-Review Teil 1: «ß» und „…“ statt «…», deutsche Rechtsbegriffe und Angebote (z. B. Jugendamt, rechtliche Betreuung, Pflegegrad), etikettierende Bezeichnungen (z. B. «der Schizophrene»). Das ist eine Vertragsprüfung nach Stichwörtern, keine medizinische Triage.
 
 ## Referenzfälle
 
-- `beziehungen-verstehen.html`: Kreislauf und Illustrationsplatzhalter.
-- `behandlung-verstehen.html`: Prozesspfad und Vergleich · kein Sicherheitszugang (keine sensiblen Themen).
+- `beziehungen-verstehen.html`: Kreislauf mit markiertem Ansatzpunkt und Illustrationsplatzhalter.
+- `behandlung-verstehen.html`: Prozesspfad mit markiertem Ansatzpunkt und Vergleich · kein Sicherheitszugang (keine sensiblen Themen).
 - `unterstuetzung-finden.html`: Entscheidungsweg in zwei Fragen, Beziehungskarte (Muster I), Kontakt-Platzhalter mit häufigen Fragen als Akkordeon.
 - Alle Seiten: Zuständigkeitsverweis und Hinweis «ersetzt keine Abklärung» in der Fusszeile (site-weit).
 - `index.html`: Einstieg mit Lesepfaden; der Vollbericht ist ein Download-Platzhalter.
 - `seitenvorlage.html`: Entwurf, nicht in der Navigation.
 
-Stand 08.10.2026 (nach Neufassung des Zuständigkeitsverweises):
+Stand 08.10.2026 (Build r4-3, Visualisierung nach dem ersten Probelauf):
 - **Entwurfsgate:** 0 blockierende Befunde.
 - **Produktionsgate:** blockiert 9 offene Freigaben. Das ist erwartet.
-- **Selbsttest:** 39 von 39 bestanden, auch in Kopien des Starters.
+- **Selbsttest:** 44 von 44 bestanden, auch in Kopien des Starters.
 
 Offen sind reale Screenreader-Läufe, ein Test mit Hardwaretastatur sowie Fach-, Bild- und Absenderfreigaben.

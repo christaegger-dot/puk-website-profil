@@ -8,29 +8,33 @@ Wie Darstellungen geplant, gebaut und geprüft werden. Was dargestellt wird und 
 
 | Spalte | Inhalt |
 | --- | --- |
-| Abschnitt | Kapitel oder Abschnitt im Erkenntnisweg |
+| Abschnitt | Kapitel oder Abschnitt im Erkenntnisweg; im Starter zusätzlich `sectionId` = `id` der `section` |
 | Erkenntnisziel | Was Lesende danach verstanden haben oder tun können |
 | Format | Text oder Muster A–K |
 | Aussage oder Beziehung | Die konkrete Aussage, die die Darstellung zeigt |
 | Was wird besser verstanden? | Antwort auf die Prüffrage |
 | Quelle bzw. Kennzeichnung | Fachliche Quelle oder «Eigene didaktische Darstellung» |
 | Textalternative | Entwurf; bei komplexen Darstellungen Langbeschreibung im HTML |
-| Begründung | Warum die Darstellung hilft – oder warum Text klarer ist |
+| Ansatzpunkt für Angehörige | Bei Kreislauf, Prozesspfad und Modell in Schritten: wo Angehörige ansetzen können, oder «entfällt: Begründung» (`entryPoint`) |
+| Begründung | Warum die Darstellung hilft – oder warum Text klarer ist; passt zum Inhalt des Abschnitts |
 | Freigabe | Status der fachlichen Freigabe |
 
 ```markdown
-| Abschnitt | Erkenntnisziel | Format | Aussage | Besser verstanden | Quelle / Kennzeichnung | Textalternative | Begründung | Freigabe |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 01 … | … | … | … | … | … | … | … | ausstehend |
+| Abschnitt | Erkenntnisziel | Format | Aussage | Besser verstanden | Quelle / Kennzeichnung | Textalternative | Ansatzpunkt | Begründung | Freigabe |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 01 … | … | … | … | … | … | … | … | … | ausstehend |
 ```
 
 - **MUSS:** Bei Beziehungen, Kreisläufen, Prozessen, Veränderungen, Zuständen, Entscheidungen und emotional schwer zugänglichem Erleben ist eine Erklärform Standard. Ein Verzicht wird in «Begründung» kurz begründet («Text ist klarer: Aufzählung ohne Beziehung»).
+- **MUSS:** Jeder Abschnitt hat eine Zeile im Plan – mit Erklärform oder begründetem Verzicht. Im Starter verbindet `sectionId` die Zeile mit der `section`; das Gate meldet Abschnitte ohne Zeile (Entwurf: Hinweis, Produktion: blockiert).
+- **MUSS:** Kreislauf, Prozesspfad und Modell in Schritten nennen in `entryPoint` den Ansatzpunkt für Angehörige oder «entfällt: Begründung». Ein genannter Ansatzpunkt ist in der Figur markiert; das Gate prüft beides (Entwurf: Hinweis, Produktion: blockiert).
 - **MUSS NICHT:** Es gibt keine Mindestzahl. Dekorative Bilder oder Stimmungsbilder erfüllen den Plan nicht.
 - **MUSS:** Bei mehr als acht Hauptkapiteln zeigt der Plan, wie die zentralen Erkenntnisschritte visuell getragen werden (etwa eine visuelle Kapitelübersicht und je eine Darstellung pro Schlüsselbeziehung).
 
 ## Aufbau einer Darstellung
 
-- `figure` mit Titel (`aria-labelledby`), Kernaussage als Satz, kurzem Erklärtext und `figcaption` mit Kurzbeschreibung (`aria-describedby`).
+- `figure` mit Titel (`aria-labelledby`), Kernaussage als Satz (`p.puk-vis-kern`), kurzem Erklärtext (`p.puk-vis-short`, zwei bis vier Sätze), wo sinnvoll Vertiefung (`details.puk-vis-more`) und `figcaption` mit Kurzbeschreibung (`aria-describedby`). Das Gate meldet eine Figur ohne Kernaussage (Entwurf: Hinweis, Produktion: blockiert).
+- **Ansatzpunkt für Angehörige:** `p.puk-vis-ansatz` mit `span.puk-vis-ansatz__key` («Ansatzpunkt für Angehörige»). Im Kreislauf trägt die Station `li.is-ansatz` (doppelte Kontur) und `span.puk-vis-cycle__key` («Ansatzpunkt»); im Prozesspfad trägt der Schritt `li.is-ansatz` (doppelter Ring); im Modell in Schritten markiert ein doppelter Ring die Stelle in der Grafik. Die Textfassung nennt den Ansatzpunkt.
 - **Alle Beschriftungen sind echter HTML-Text**; Formen, Linien und Pfeile sind `aria-hidden`. Kein Text in Bildern, wo HTML-Text möglich ist.
 - Komplexe Darstellungen haben eine sichtbare, verlinkbare Langbeschreibung oder eine vollständige gegliederte Textfassung.
 - Kennzeichnung in der Legende: «Eigene didaktische Darstellung» oder Quelle; Quellenlinks mit generischem Text («Quelle», «Textfassung») erhalten ein sprechendes `aria-label`, das den sichtbaren Text enthält.
@@ -86,7 +90,11 @@ Nur für Büromedien (nicht Teil dieses Website-Profils, aber oft als Vorlage f�
 Redaktioneller Check vor der fachlichen Freigabe (Stufe 4 im Abschnitt «Prüfung und Freigabe»). Kein automatischer Blocker.
 
 - [ ] Visualisierungsplan liegt vor; die Seite entspricht ihm.
-- [ ] Prüffrage je Darstellung konkret beantwortet.
+- [ ] Jeder Abschnitt hat eine Zeile im Plan; Begründungen für reinen Text passen zum Inhalt (kein «nebeneinander», wenn der Text ein Zusammenwirken beschreibt).
+- [ ] Prüffrage je Darstellung konkret beantwortet – und die Darstellung zeigt, was die Antwort verspricht (keine «Dauer» im Plan, wenn der Pfad keine zeigt).
+- [ ] Jede Figur hat Kernaussage und Erklärtext; die Hauptaussage für Angehörige steht nicht nur in der Vertiefung.
+- [ ] Erklärmodelle (B, C, G): Ansatzpunkt für Angehörige markiert oder Verzicht begründet; keine Verantwortung für Behandlung oder Verlauf zugeschoben.
+- [ ] Derselbe Mechanismus wird nicht in zwei Abschnitten getrennt gezeigt, sondern verbunden.
 - [ ] Kartenraster-Check: keine Reihe gleichartiger Karten mit Icons, wo eine Anordnung mit Beziehungen erklären müsste; aufbauende Erklärungen nicht in Karten zerlegt.
 - [ ] Anordnung, Verbindungen, Formen oder Linienarten tragen Bedeutung, nicht nur die Wörter.
 - [ ] Darstellungen über den Erkenntnisweg verteilt, nicht am Ende gesammelt; keine unbegründete Textwand.
