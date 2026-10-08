@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Gate-Bericht des Psychoedukations-Starters: Seitenvertrag, Visualisierungsplan, Entwurfs- und Produktionsgate, Selbsttest.">
+<title>Gate-Bericht | Psychoedukations-Starter</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../../../styles.css?v=r4-1">
+<style>
+body{margin:0;font-family:var(--font-core);color:var(--text-default);background:var(--puk-white)}
+.g{max-width:1200px;margin:0 auto;padding:32px 20px 64px}
+h1{font:var(--type-title-2);margin:0 0 8px}h2{font:var(--type-title-3);margin:40px 0 12px}h3{font:var(--type-body);font-weight:var(--fw-medium);margin:24px 0 8px}
+p{font:var(--type-body-sm);max-width:80ch}
+.wrap{overflow-x:auto;border:1px solid var(--border-hairline)}.wrap:focus-visible{outline:none;box-shadow:var(--focus-ring)}
+table{border-collapse:collapse;width:100%;font:var(--type-caption)}caption{text-align:left;padding:8px 12px;font:var(--type-body-sm);font-weight:var(--fw-medium)}
+th,td{border-top:1px solid var(--border-hairline);padding:6px 12px;text-align:left;vertical-align:top}thead th{background:var(--surface-structure)}
+.block td:first-child{color:var(--text-danger);font-weight:var(--fw-medium)}.fail td:last-child{color:var(--text-danger);font-weight:var(--fw-medium)}
+#summary{font:var(--type-body);font-weight:var(--fw-medium)}
+a{color:var(--text-link)}a:hover{color:var(--text-link-hover)}
+</style>
+</head>
+<body><main class="g" id="main-content">
+<h1>Gate-Bericht · Psychoedukations-Starter</h1>
+<p>PUK Website Kit 1.10.1-r4 · abgeleitet, auf Basis des PUK Zürich Design System 1.10.1 (nicht dessen offizielle Version). Der Bericht lädt site.config.json und die gebauten Seiten frisch und prüft sie mit tools/contract.js – dieselbe Prüfung wie <code>node tools/gate.mjs</code>. Das Gate prüft Struktur, Vertrag und Freigabestatus; es ist keine medizinische Triage und ersetzt keine Fach- oder Bildfreigabe.</p>
+<p id="summary" role="status">Prüfung läuft …</p>
+<p><a href="index.html">Zur Musterwebsite</a></p>
+<h2>Seitenvertrag</h2><div class="wrap" id="pages"></div>
+<h2>Visualisierungsplan</h2><div id="plan"></div>
+<h2>Gate Entwurf</h2><div class="wrap" id="draft"></div>
+<h2>Gate Produktion</h2><div class="wrap" id="prod"></div>
+<h2>Selbsttest</h2><p>Jede Fehlerklasse wird absichtlich in eine Kopie der Seiten eingebaut; das Gate muss sie als blockierend erkennen.</p><div class="wrap" id="self"></div>
+</main>
+<script src="tools/contract.js?v=r4-3"></script>
+<script>
+(async () => {
+  const C = window.PUKSiteContract; const e = s => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;');
+  const table = (id, cap, head, rows) => { const w = document.getElementById(id); w.setAttribute('role', 'region'); w.setAttribute('tabindex', '0'); w.setAttribute('aria-label', cap); w.innerHTML = `<table><caption>${e(cap)}</caption><thead><tr>${head.map(h => `<th scope="col">${e(h)}</th>`).join('')}</tr></thead><tbody>${rows.join('') || `<tr><td colspan="${head.length}">keine</td></tr>`}</tbody></table>`; };
+  try {
+    const { cfg, files, exists } = await C.loadSite('');
+    table('pages', 'Seiten laut site.config.json', ['Seite', 'Status', 'Navigation', 'Hauptaufgabe', 'Sensible Themen', 'Zuständigkeitsverweis (site-weit)'], cfg.pages.map(p => `<tr><th scope="row">${e(p.title)}<br>${e(p.href)}</th><td>${e(p.status)}</td><td>${e(p.navLabel || '–')}</td><td>${e(p.primaryTask)}</td><td>${e((p.sensitiveTopics || []).join(', ') || '–')}</td><td>${e(cfg.responsibility ? 'Fusszeile · ' + (cfg.responsibility.reviewStatus || '–') : 'keiner')}</td></tr>`));
+    document.getElementById('plan').innerHTML = cfg.pages.map((p, i) => `<h3>${e(p.title)}</h3><div class="wrap" id="plan-${i}"></div>`).join('');
+    cfg.pages.forEach((p, i) => table('plan-' + i, 'Visualisierungsplan: ' + p.title, ['Abschnitt', 'Erkenntnisziel', 'Format', 'Aussage', 'Quelle / Kennzeichnung', 'Textalternative', 'Begründung', 'Freigabe'], (p.visualPlan || []).map(v => `<tr><th scope="row">${e(v.section)}</th><td>${e(v.goal)}</td><td>${e(v.format)}</td><td>${e(v.statement)}</td><td>${e(v.source)}</td><td>${e(v.alternative)}</td><td>${e(v.reason)}</td><td>${e(v.approvalStatus)}</td></tr>`)));
+    const rowsOf = r => r.findings.map(f => `<tr class="${f.level}"><td>${f.level === 'block' ? 'blockiert' : 'Hinweis'}</td><td>${e(f.page)}</td><td>${e(f.id)}</td><td>${e(f.msg)}</td></tr>`);
+    const d = C.gate(cfg, files, { mode: 'draft', exists }); const pr = C.gate(cfg, files, { mode: 'production', exists });
+    table('draft', `Entwurf: ${d.blocks} blockierend, ${d.warns} Hinweise`, ['Stufe', 'Seite', 'Prüfung', 'Befund'], rowsOf(d));
+    table('prod', `Produktion: ${pr.blocks} blockierend`, ['Stufe', 'Seite', 'Prüfung', 'Befund'], rowsOf(pr));
+    const st = C.selftest(cfg, files, { exists }); const fail = st.filter(r => !r.ok).length;
+    table('self', `Selbsttest: ${st.length - fail} von ${st.length} bestanden`, ['Fehlerklasse', 'Erwartet', 'Erkannt'], st.map(r => `<tr class="${r.ok ? 'ok' : 'fail'}"><th scope="row">${e(r.name)}</th><td>${e(r.expected)}</td><td>${e(r.got)}</td></tr>`));
+    window.__gate = { draft: d, prod: pr, self: st };
+    document.getElementById('summary').textContent = `Entwurf: ${d.blocks} blockierend · Produktion: ${pr.blocks} blockierend (erwartet: offene Freigaben) · Selbsttest: ${st.length - fail}/${st.length} bestanden`;
+  } catch (err) { document.getElementById('summary').textContent = 'Gate konnte nicht laufen: ' + err.message + ' (Seite über einen lokalen Webserver öffnen).'; }
+})();
+</script>
+</body>
+</html>

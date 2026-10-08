@@ -1,0 +1,8 @@
+/* Borderline – Orientierung für Angehörige · website-eigene Ergänzung, nach starter.css einbinden.
+   Nur Anordnung und Schriftgrösse über Profil-Tokens; keine eigenen Farben, Schatten oder Schriften.
+   Muster B (visual-patterns.css) setzt vier Stationen auf ein 3×3-Raster. Die Bedeutungsschleife hat fünf:
+   Station 1 oben, 2 rechts, 3 unten rechts, 4 unten links, 5 links. Schmal gilt unverändert die Liste des Musters. */
+.bl-cycle--5 li:nth-child(3){grid-area:3/3}
+.bl-cycle--5 li:nth-child(4){grid-area:3/1}
+.bl-cycle--5 li:nth-child(5){grid-area:2/1}
+.bl-cycle__ex{font:var(--type-body-sm);color:var(--text-default)}
