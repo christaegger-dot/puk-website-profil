@@ -119,7 +119,7 @@ Die Fachstelle Angehörigenarbeit bietet Beratung und Psychoedukation für Angeh
 ## Logo
 
 - Nur die Originaldateien aus der Gruppe **Logos** verwenden – nie nachzeichnen, verzerren, umfärben, beschneiden. Nur über die Breite skalieren (`aspect-ratio` statt `height`).
-- **Animiertes Logo** (GIF) ist auf Websites die Normalform; bei `prefers-reduced-motion` das statische (`data-motion="logo-animiert"` / `"logo-statisch"`, Umschaltung in `components/bundle.css`). Auf Websites die **Web-Fassungen** (`…_web.gif`, 0,48 MB) verwenden, nicht die 540-p-Originale (4,8 MB). Die Datei wiederholt einen 10-s-Zyklus endlos; das kollidiert mit WCAG 2.2.2 (Offene Punkte).
+- **Statisches Logo im Seitenkopf** (Profilentscheid 08.10.2026): Auf Websites und in Browser-Anwendungen steht immer das statische Logo. Das animierte Logo wird nicht verwendet: Es wiederholt einen 10-s-Zyklus endlos, WCAG 2.2.2 verlangt für Bewegung über 5 s eine Möglichkeit zum Anhalten, und das Interaktionskonzept schliesst Bewegung ohne Auslösung aus. Die animierten Dateien bleiben als Quelle in der Asset-Gruppe **Logos**, nicht im Projektpaket.
 - **Positiv** (Schwarz auf Weiss) ist Standard, oben links im Kopf, Breite `web-logo-width`. **Negativ** nur auf vollflächigem Blau oder Schwarz.
 - Sperrzone rundum `logo-clearspace` (14 % der Logobreite).
 - **Logo-Symbol allein** nur, wo die PUK klar als Absenderin erkennbar ist (Favicon, Social-Media-Icon) – nie als Ersatz für das Logo im Seitenkopf. Wortmarke nie ohne Symbol.
@@ -154,7 +154,6 @@ Die Fachstelle Angehörigenarbeit bietet Beratung und Psychoedukation für Angeh
 
 Entscheide der Fachstelle:
 
-- **Animiertes Logo:** Die Datei wiederholt einen 10-s-Zyklus endlos; WCAG 2.2.2 verlangt für Bewegung über 5 s eine Möglichkeit zum Anhalten. Optionen: statisches Logo als Normalform im Kopf, Animation nur einmal oder mit Stopp-Schaltfläche – Entscheid zusammen mit der PUK-Kommunikation. Das Token `dur-logo` (1,2 s) entspricht nicht der Datei.
 - **Erster Durchlauf mit echtem Inhalt:** Material wird in einem späteren Schritt festgelegt.
 
 Arbeit am System:
@@ -164,6 +163,7 @@ Arbeit am System:
 
 ## Änderungsprotokoll
 
+- **08.10.2026 · Offene Punkte geklärt:** Im Seitenkopf steht immer das statische Logo; das animierte Logo wird auf Websites nicht verwendet (WCAG 2.2.2, Entscheid Fachstelle), seine Web-Fassungen sind nicht mehr im Projektpaket. Der Selbsttest des Gates prüft an einer festen Referenz (`tools/selftest/`) und läuft in jeder Kopie des Starters.
 - **08.10.2026 · Erster Probelauf (PTBS):** Zuständigkeitsverweis neu gefasst: aus Sicht der Lesenden und mit einem Wegweiser für akute Krisen, ohne Nummern (Entscheid Fachstelle). Der bisherige Wortlaut nannte nur, wofür die Fachstelle nicht zuständig ist; die Regel verlangt einen Verweis auf die zuständigen Stellen. Der Prüfvermerk erscheint nicht mehr auf der Website; sichtbar bleibt nur die Warnung bei einem ungeprüften Verweis.
 - **06.10.2026 · Entscheide eingearbeitet:** E-Mail der Absenderin korrigiert (`angehoerigenarbeit@pukzh.ch`, wie im Factsheet der Fachstelle); Zuständigkeitsverweis festgelegt und als geprüft dokumentiert; Beispielinhalte der Erklärmuster und Interaktionsbeispiele fachlich freigegeben; Geltung nur für die Fachstelle (KJPP eigenes System); kein Bildpool, Fotos nur im Einzelfall.
 - **06.10.2026 · Umsetzung offener Punkte:** Abschnitt «Technische Qualität» aus dem Code-Review W3 (WCAG 2.2 AA, Datenschutz nach DSG, Sicherheits-Header, Druck); HTML-Fassungen von Akkordeon, Reitern, Dropdown-Menü, Dialog und Button mit `components/interaktion.js`; Druckregeln in `bundle.css`; Starter Build r4-2 mit Mustern G–K, Pflichtfeld «understood», Interaktionsskript, Open Graph, Sitemap, `_headers`, Export und neuen Gate-Prüfungen (Selbsttest 39/39); Beziehungskarte und Kontinuum ohne `style`-Attribute; Web-Fassungen des animierten Logos (0,48 statt 4,8 MB); Druckfarben aus dem Web-Profil genommen; Theme «Hoher Kontrast» als optionale Ableitung festgehalten; Projektpaket.

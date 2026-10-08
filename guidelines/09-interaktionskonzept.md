@@ -6,7 +6,7 @@ Wie sich interaktive Elemente auf Websites der Fachstelle verhalten: Zustände, 
 
 1. **Sichtbar vor versteckt.** Was alle brauchen, steht offen auf der Seite. Interaktion versteckt nur Optionales: Vertiefung, Varianten, Wiederholtes. Kritische Information steht nie nur hinter einem Akkordeon, Reiter, Dialog, Tooltip oder Filter.
 2. **Die einfachste Form gewinnt.** Reihenfolge der Wahl: Fliesstext oder Liste → Sprunglinks/Kapitelorientierung → Akkordeon → Reiter → Dialog. Karussell nur ausnahmsweise. Jede Komponente unten nennt, wann sie wegfällt und was stattdessen genügt.
-3. **Nichts bewegt sich von selbst.** Kein Autoplay, keine Endlosschleifen, kein Parallax, keine Einblendungen beim Scrollen, keine Pop-ups beim Laden oder Verlassen. Einzige Ausnahme ist das animierte Logo der Marke; seine Laufzeit ist ein offener Punkt (Abschnitt «Marke und Logo»).
+3. **Nichts bewegt sich von selbst.** Kein Autoplay, keine Endlosschleifen, kein Parallax, keine Einblendungen beim Scrollen, keine Pop-ups beim Laden oder Verlassen. Das gilt auch für das Logo: Im Seitenkopf steht das statische Logo (Abschnitt «Marke und Logo»).
 4. **Eine Handlung, eine sichtbare Antwort.** Jede Aktion hat eine Rückmeldung am Ort der Aktion, die auch Screenreader erreicht (Live-Region oder Fokus).
 5. **Alle Eingabearten gleichwertig.** Alles geht mit Maus, Tastatur und Touch; nichts hängt allein an Hover, Doppelklick, Wischen oder Langdruck.
 6. **Bewegung ist abbestellbar.** Bei `prefers-reduced-motion: reduce` fällt jede Animation weg; der Endzustand erscheint sofort (globale Regel in `components/bundle.css`).
@@ -50,7 +50,6 @@ Ein Vokabular für alle Bedienelemente (Karte «Interaktionszustände»):
 | Dialog | Hintergrund blendet ein; Fenster gleitet 8 px | 200 ms / `dur-slow` 400 ms, `ease-out` | sofort |
 | Karussell | weiches Scrollen zur Folie | Browser | springt |
 | Modell in Schritten (Muster G) | Teile blenden auf Knopfdruck ein | `dur-base` | sofort |
-| Logo | animiertes GIF (Web-Fassung) | Zyklus 10,2 s, wiederholt (offener Punkt) | statisches Logo |
 
 Nicht zulässig: Federn, Einzoomen, Wackeln, Pulsieren, Endlosschleifen, Scroll-Effekte, animierte Zahlen, Ladeanimationen über 1 s ohne Text.
 

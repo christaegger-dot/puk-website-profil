@@ -48,7 +48,7 @@ Bei psychischer Erkrankung ist schon der Seitenbesuch eine sensible Information.
 - Bilder in passendem Format (SVG für Grafik, WebP/AVIF oder JPEG für Fotos), in Anzeigegrösse, mit `width`/`height` und `loading="lazy"` unterhalb des ersten Bildschirms.
 - Schriften selbst gehostet, nur die benötigten Schnitte (Rubik 300, 400, 500), `font-display: swap`.
 - Kein ungenutztes CSS oder JavaScript; das Interaktionsskript nur laden, wo interaktive Elemente vorkommen.
-- Ziel: auf einem Smartphone mit mittlerer Verbindung in wenigen Sekunden lesbar. Das animierte Logo in der Web-Fassung verwenden, nicht als 540-p-Original.
+- Ziel: auf einem Smartphone mit mittlerer Verbindung in wenigen Sekunden lesbar. Logo als statisches SVG.
 
 ## F · Darstellung und Druck
 
