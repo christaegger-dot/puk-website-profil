@@ -21,6 +21,19 @@ const LABELS = /\b(?:die|der|den|des|dem|ein|eine|einen|einem|einer|als)\s+(Schi
 const REVIEW_WARNINGS = ['orthography', 'swiss-context', 'person-first', 'card-grid', 'inline-style', 'figure-core', 'entry-point', 'plan-coverage'];
 /* Profilentscheid 08.10.2026: Erklärmodelle (Kreislauf, Prozesspfad, Modell in Schritten) prüfen, wo Angehörige ansetzen können – im Plan als «entryPoint» (Ansatzpunkt oder «entfällt: Begründung»), in der Figur als .puk-vis-ansatz. */
 const ENTRY_FORMATS = ['cycle', 'process', 'stepwise-model'];
+/* Profilentscheid 08.10.2026: Bauen und Prüfen sind getrennt; ohne vollständigen Prüfbericht (PRUEFBERICHT.md im Ordner der Website) keine Veröffentlichung.
+   Status je Stufe: «erledigt» oder «entfällt: Begründung»; alles andere gilt als offen. */
+const REPORT_STAGES = [['W1', /^w1\b/i], ['W2', /^w2\b/i], ['S', /^s\b/i], ['Visualisierungs-Check', /^visualisierungs-check/i], ['Bedienung und Barrierefreiheit', /^bedienung/i], ['W3', /^w3\b/i]];
+function reportStatus(md) {
+  const rows = String(md || '').split(/\r?\n/).filter(l => /^\s*\|/.test(l)).map(l => l.trim().replace(/^\||\|$/g, '').split('|').map(c => c.trim()));
+  const open = [];
+  for (const [name, re] of REPORT_STAGES) {
+    const row = rows.find(r => re.test(r[0] || ''));
+    const st = row ? (row[1] || '') : '';
+    if (!/^(erledigt|entfällt\s*:\s*\S)/i.test(st)) open.push(name);
+  }
+  return { open };
+}
 const SENSITIVE = [['selbstgefaehrdung', /selbstgef[aä]hrd|selbstverletz|suizid/i], ['gewalt', /gewalt/i], ['zwang', /(^|[^a-zäöü])zwang(s|$|[^a-zäöü])/i], ['akute-krise', /(^|[^a-zäöü])krisen?([^a-zäöü]|$)|notfall/i]];
 const GENERIC = /^(quelle|quellen|mehr|mehr erfahren|hier|link|details|weiterlesen|langbeschreibung|textfassung|download|pdf)$/i;
 const VOID = new Set('area base br col embed hr img input link meta source track wbr'.split(' '));
@@ -319,6 +332,10 @@ function gate(cfg, files, opts = {}) {
     while (queue.length) { const cp = queue.shift(); const d = docOf(cp); if (!d) continue; for (const a of all(d, x => x.tag === 'a' && has(x, 'href'))) { if (!isInternal(a.attrs.href)) continue; const r = resolve(cp, a.attrs.href).path; if (!seenP.has(r) && byPath[r]) { seenP.add(r); queue.push(r); } } }
     for (const p of pages) if (p.status === 'published' && p.href && !seenP.has(pagePath(p))) add('block', p.id, 'reachability', `Seite ${p.href} ist von der Startseite aus über keinen Link erreichbar`);
   }
+  if (opts.report !== undefined) {
+    if (opts.report === null) prod('site', 'review-report', 'PRUEFBERICHT.md fehlt – ohne Prüfbericht keine Veröffentlichung (Abschnitt «Prüfung und Freigabe»)');
+    else { const rs = reportStatus(opts.report); if (rs.open.length) prod('site', 'review-report', `Prüfbericht: offene Stufen ${rs.open.join(', ')} – Status «erledigt» oder «entfällt: Begründung»`); }
+  }
   return { mode, findings: F, blocks: F.filter(f => f.level === 'block').length, warns: F.filter(f => f.level === 'warn').length };
 }
 
@@ -378,6 +395,11 @@ function selftest(cfg, files, opts = {}) {
   const bp = gate(Object.assign({}, cfg, { sender: Object.assign({}, cfg.sender, { status: 'placeholder' }), responsibility: cfg.responsibility && Object.assign({}, cfg.responsibility, { reviewStatus: 'ausstehend', reviewedBy: undefined, reviewedAt: undefined }) }), unreviewed, { mode: 'production', exists: base }); /* Absenderin und Zuständigkeitsverweis hier absichtlich ungeklärt, damit die Prüfung belegt bleibt, auch wenn beide freigegeben sind */ const need = ['sender-status', 'safety-review', 'placeholder-approval', 'visual-approval'];
   const hit = need.filter(id => bp.findings.some(x => x.level === 'block' && x.id === id)); const structural = bp.findings.filter(x => x.level === 'block' && !need.includes(x.id));
   rows.push({ name: 'Produktion blockiert ungeklärte Absenderin, Zuständigkeitsverweise, Platzhalter und Visualisierungen', expected: need.join(', ') + ' · keine Strukturfehler', got: hit.join(', ') + ' · ' + (structural.length ? structural.length + ' Strukturfehler' : 'keine Strukturfehler'), ok: hit.length === need.length && !structural.length });
+  const done = '| Stufe | Status |\n| --- | --- |\n' + REPORT_STAGES.map(([n]) => `| ${n} | erledigt |`).join('\n');
+  const noRep = gate(cfg, files, { mode: 'production', exists: base, report: null }).findings.some(x => x.level === 'block' && x.id === 'review-report');
+  rows.push({ name: 'Produktion ohne Prüfbericht blockiert', expected: 'review-report', got: noRep ? 'review-report' : 'nicht erkannt', ok: noRep });
+  const fullRep = gate(cfg, files, { mode: 'production', exists: base, report: done }).findings.some(x => x.id === 'review-report');
+  rows.push({ name: 'Vollständiger Prüfbericht gibt die Veröffentlichung frei', expected: 'kein review-report', got: fullRep ? 'review-report' : 'kein review-report', ok: !fullRep });
   for (const [name, expect, mut] of MUTATIONS) {
     const c = JSON.parse(JSON.stringify(cfg)); const f = Object.assign({}, files);
     let applied; try { applied = mut(c, f) !== false; } catch (e) { applied = false; }

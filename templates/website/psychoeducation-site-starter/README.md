@@ -9,6 +9,7 @@ Lokal lauffähiger Mehrseiten-Starter für psychoedukative Websites. Abgeleitete
 - `tools/build.mjs`: erzeugt `<id>.html` aus Vertrag + Inhalt und führt danach das Gate aus. Blockierende Befunde → nichts wird geschrieben, Exit 1.
 - `tools/gate.mjs`: prüft die gebauten Seiten. `--production` für die Veröffentlichung, `--selftest` für den Nachweis, dass jede bekannte Fehlerklasse erkannt wird. Der Selbsttest nutzt die feste Referenz in `tools/selftest/` und läuft deshalb auch in jeder Kopie des Starters.
 - `tools/contract.js`: gemeinsame Logik (Node und Browser), ohne Abhängigkeiten.
+- `PRUEFBERICHT.md`: Prüfbericht der Website – Statustabelle der Prüfstufen, Visualisierungs-Check mit Beleg je Punkt, Befunde. Ohne vollständigen Bericht blockiert das Produktionsgate (Abschnitt «Prüfung und Freigabe»).
 - `gate.html`: derselbe Bericht im Browser, mit sichtbarem Seitenvertrag und Visualisierungsplan pro Seite.
 - `tools/export.mjs`: schreibt eine eigenständige, veröffentlichbare Website in einen Zielordner (siehe «Veröffentlichen»).
 - `_headers`: Sicherheits-Header für Netlify (Content-Security-Policy nur mit eigenen Quellen, keine Inline-Skripte).
@@ -17,7 +18,7 @@ Lokal lauffähiger Mehrseiten-Starter für psychoedukative Websites. Abgeleitete
 
 ```sh
 node tools/build.mjs              # bauen + Entwurfsgate
-node tools/gate.mjs --production  # Produktionsgate (blockiert bei offenen Freigaben)
+node tools/gate.mjs --production  # Produktionsgate (blockiert bei offenen Freigaben und unvollständigem Prüfbericht)
 node tools/gate.mjs --selftest
 node tools/export.mjs ../meine-website --production   # eigenständige Website für die Veröffentlichung
 ```
@@ -64,7 +65,7 @@ Seiten über einen lokalen Webserver öffnen (z. B. `npx serve` im Projektstamm 
   - Planzeile mit `sectionId`, die es auf der Seite nicht gibt
 - **Hinweise im Entwurf, Blocker in Produktion:** Figur ohne Kernaussage (`.puk-vis-kern`), fehlender oder nicht markierter Ansatzpunkt (`entryPoint`), Abschnitt ohne Zeile im Visualisierungsplan.
 - **Hinweise (keine Blocker):** Kartenraster mit vier oder mehr Karten (Kartenraster-Check), `style`-Attribute im Inhalt, fehlende `siteUrl`, Orthografie, deutsche Rechtsbegriffe, etikettierende Bezeichnungen.
-- **Gate blockiert zusätzlich in Produktion:** nicht freigegebene Absenderin, ungeprüfte Zuständigkeitsverweise, Platzhalter und Visualisierungen.
+- **Gate blockiert zusätzlich in Produktion:** nicht freigegebene Absenderin, ungeprüfte Zuständigkeitsverweise, Platzhalter und Visualisierungen sowie ein fehlender oder unvollständiger Prüfbericht (`PRUEFBERICHT.md`).
 - **Sensible Themen:** Erwähnt der Inhalt Selbstgefährdung, Gewalt, Zwang oder eine akute Krise, muss `sensitiveTopics` das Thema nennen. Ein Zuständigkeitsverweis (`responsibility`) ist dann empfohlen, aber nicht Pflicht (Hinweis, kein Blocker); ist er gesetzt, steht er auf jeder Seite. Inhalte zum Umgang mit Krisen (Frühwarnzeichen, Krisenplan) sind Psychoedukation und zulässig. Mögliche Kurznummern wie 143 oder 144 meldet das Gate als Hinweis zur Prüfung. Zusätzliche Hinweise (keine Blocker) aus dem Website-Review Teil 1: «ß» und „…“ statt «…», deutsche Rechtsbegriffe und Angebote (z. B. Jugendamt, rechtliche Betreuung, Pflegegrad), etikettierende Bezeichnungen (z. B. «der Schizophrene»). Das ist eine Vertragsprüfung nach Stichwörtern, keine medizinische Triage.
 
 ## Referenzfälle
@@ -78,7 +79,7 @@ Seiten über einen lokalen Webserver öffnen (z. B. `npx serve` im Projektstamm 
 
 Stand 08.10.2026 (Build r4-3, Visualisierung nach dem ersten Probelauf):
 - **Entwurfsgate:** 0 blockierende Befunde.
-- **Produktionsgate:** blockiert 9 offene Freigaben. Das ist erwartet.
-- **Selbsttest:** 44 von 44 bestanden, auch in Kopien des Starters.
+- **Produktionsgate:** blockiert 9 offene Freigaben und den unvollständigen Prüfbericht. Das ist erwartet.
+- **Selbsttest:** 46 von 46 bestanden, auch in Kopien des Starters.
 
 Offen sind reale Screenreader-Läufe, ein Test mit Hardwaretastatur sowie Fach-, Bild- und Absenderfreigaben.

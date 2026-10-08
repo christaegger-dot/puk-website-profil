@@ -104,4 +104,4 @@ Redaktioneller Check vor der fachlichen Freigabe (Stufe 4 im Abschnitt «Prüfun
 - [ ] Theme «Hoher Kontrast» geprüft (keine festen Farbwerte in SVG).
 - [ ] Inhalt fachlich freigegeben.
 
-Ergebnis festhalten: Datum, Person, Befunde, begründete Ausnahmen.
+Ergebnis im Prüfbericht (`PRUEFBERICHT.md`) als Tabelle: je Punkt Ergebnis und Beleg (Seite und Abschnitt, Figur, Zitat). Ein Punkt ohne Beleg gilt als nicht geprüft. Die bauende Sitzung füllt die Tabelle nach jedem Bau als Selbstprüfung aus; als Stufe zählt nur die Prüfung durch eine Sitzung oder Person, die nicht gebaut hat (Abschnitt «Prüfung und Freigabe»).
