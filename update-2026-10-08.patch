@@ -1,0 +1,260 @@
+diff --git a/CLAUDE.md b/CLAUDE.md
+index c7532a0..7724ab5 100644
+--- a/CLAUDE.md
++++ b/CLAUDE.md
+@@ -58,6 +58,6 @@ Ansehen: im Repository-Stamm `python3 -m http.server 8000` (oder `npx serve`), d
+ 
+ Die Review-Prompts der Fachstelle (W1 Fachliche Prüfung, W2 Gesamtkohärenz, S Sprach-Review, W3 Code-Review) gelten in dieser Reihenfolge; W3 ist ein reines Review ohne Dateiänderungen bis zur Freigabe. Kriterien im Design-System: «Fachliche Qualität und Haltung», «Gesamtkohärenz und Aufbau», «Sprache und Ton», «Technische Qualität».
+ 
+-## Offen
++## Logo
+ 
+-Animiertes Logo: Die Datei wiederholt einen 10-s-Zyklus endlos (WCAG 2.2.2). Bis zum Entscheid im Seitenkopf das statische Logo vorschlagen und nachfragen.
++Im Seitenkopf steht immer das statische Logo. Das animierte Logo wird auf Websites nicht verwendet (Profilentscheid 08.10.2026, WCAG 2.2.2).
+diff --git a/README.md b/README.md
+index ab7a18a..afaeba7 100644
+--- a/README.md
++++ b/README.md
+@@ -119,7 +119,7 @@ Die Fachstelle Angehörigenarbeit bietet Beratung und Psychoedukation für Angeh
+ ## Logo
+ 
+ - Nur die Originaldateien aus der Gruppe **Logos** verwenden – nie nachzeichnen, verzerren, umfärben, beschneiden. Nur über die Breite skalieren (`aspect-ratio` statt `height`).
+-- **Animiertes Logo** (GIF) ist auf Websites die Normalform; bei `prefers-reduced-motion` das statische (`data-motion="logo-animiert"` / `"logo-statisch"`, Umschaltung in `components/bundle.css`). Auf Websites die **Web-Fassungen** (`…_web.gif`, 0,48 MB) verwenden, nicht die 540-p-Originale (4,8 MB). Die Datei wiederholt einen 10-s-Zyklus endlos; das kollidiert mit WCAG 2.2.2 (Offene Punkte).
++- **Statisches Logo im Seitenkopf** (Profilentscheid 08.10.2026): Auf Websites und in Browser-Anwendungen steht immer das statische Logo. Das animierte Logo wird nicht verwendet: Es wiederholt einen 10-s-Zyklus endlos, WCAG 2.2.2 verlangt für Bewegung über 5 s eine Möglichkeit zum Anhalten, und das Interaktionskonzept schliesst Bewegung ohne Auslösung aus. Die animierten Dateien bleiben als Quelle in der Asset-Gruppe **Logos**, nicht im Projektpaket.
+ - **Positiv** (Schwarz auf Weiss) ist Standard, oben links im Kopf, Breite `web-logo-width`. **Negativ** nur auf vollflächigem Blau oder Schwarz.
+ - Sperrzone rundum `logo-clearspace` (14 % der Logobreite).
+ - **Logo-Symbol allein** nur, wo die PUK klar als Absenderin erkennbar ist (Favicon, Social-Media-Icon) – nie als Ersatz für das Logo im Seitenkopf. Wortmarke nie ohne Symbol.
+@@ -154,7 +154,6 @@ Die Fachstelle Angehörigenarbeit bietet Beratung und Psychoedukation für Angeh
+ 
+ Entscheide der Fachstelle:
+ 
+-- **Animiertes Logo:** Die Datei wiederholt einen 10-s-Zyklus endlos; WCAG 2.2.2 verlangt für Bewegung über 5 s eine Möglichkeit zum Anhalten. Optionen: statisches Logo als Normalform im Kopf, Animation nur einmal oder mit Stopp-Schaltfläche – Entscheid zusammen mit der PUK-Kommunikation. Das Token `dur-logo` (1,2 s) entspricht nicht der Datei.
+ - **Erster Durchlauf mit echtem Inhalt:** Material wird in einem späteren Schritt festgelegt.
+ 
+ Arbeit am System:
+@@ -164,6 +163,7 @@ Arbeit am System:
+ 
+ ## Änderungsprotokoll
+ 
++- **08.10.2026 · Offene Punkte geklärt:** Im Seitenkopf steht immer das statische Logo; das animierte Logo wird auf Websites nicht verwendet (WCAG 2.2.2, Entscheid Fachstelle), seine Web-Fassungen sind nicht mehr im Projektpaket. Der Selbsttest des Gates prüft an einer festen Referenz (`tools/selftest/`) und läuft in jeder Kopie des Starters.
+ - **08.10.2026 · Erster Probelauf (PTBS):** Zuständigkeitsverweis neu gefasst: aus Sicht der Lesenden und mit einem Wegweiser für akute Krisen, ohne Nummern (Entscheid Fachstelle). Der bisherige Wortlaut nannte nur, wofür die Fachstelle nicht zuständig ist; die Regel verlangt einen Verweis auf die zuständigen Stellen. Der Prüfvermerk erscheint nicht mehr auf der Website; sichtbar bleibt nur die Warnung bei einem ungeprüften Verweis.
+ - **06.10.2026 · Entscheide eingearbeitet:** E-Mail der Absenderin korrigiert (`angehoerigenarbeit@pukzh.ch`, wie im Factsheet der Fachstelle); Zuständigkeitsverweis festgelegt und als geprüft dokumentiert; Beispielinhalte der Erklärmuster und Interaktionsbeispiele fachlich freigegeben; Geltung nur für die Fachstelle (KJPP eigenes System); kein Bildpool, Fotos nur im Einzelfall.
+ - **06.10.2026 · Umsetzung offener Punkte:** Abschnitt «Technische Qualität» aus dem Code-Review W3 (WCAG 2.2 AA, Datenschutz nach DSG, Sicherheits-Header, Druck); HTML-Fassungen von Akkordeon, Reitern, Dropdown-Menü, Dialog und Button mit `components/interaktion.js`; Druckregeln in `bundle.css`; Starter Build r4-2 mit Mustern G–K, Pflichtfeld «understood», Interaktionsskript, Open Graph, Sitemap, `_headers`, Export und neuen Gate-Prüfungen (Selbsttest 39/39); Beziehungskarte und Kontinuum ohne `style`-Attribute; Web-Fassungen des animierten Logos (0,48 statt 4,8 MB); Druckfarben aus dem Web-Profil genommen; Theme «Hoher Kontrast» als optionale Ableitung festgehalten; Projektpaket.
+diff --git a/START-HIER.md b/START-HIER.md
+index efbf1b3..454a25e 100644
+--- a/START-HIER.md
++++ b/START-HIER.md
+@@ -43,13 +43,13 @@ Der Ablauf von der Planung bis zur Freigabe steht im Abschnitt «Prüfung und Fr
+ | `components/` | `bundle.css` (Tokens, Hülle, Komponenten, Druck), `bundle.js` (26 React-Komponenten, `window.PUKWeb`), `interaktion.js` (HTML-Fassungen ohne React), Typen und Beschreibungen |
+ | `tokens/`, `tokens.json` | Quell-CSS und Tokens |
+ | `fonts/`, `assets/fonts/` | Rubik (WOFF2, OFL-Lizenz) |
+-| `assets/logo/` | statische Logos (SVG) und animierte Web-Fassungen (`…_web.gif`) |
++| `assets/logo/` | statische Logos (SVG) |
+ | `templates/website/` | Starter, Langform- und Erklärmuster, Anwendungsmuster, Interaktion, Seitenhülle |
+ | `ui_kits/website/` | Referenzansichten und Prüfansicht |
+ | `quellcode/komponenten/` | React-Quellen; `npm install && node build.mjs ../../components/bundle.js` baut `bundle.js` neu |
+ | `_ds_bundle.js`, `platform/` | Laufzeit für das UI-Kit (React 18 lokal, MIT-Lizenz); nicht in Websites übernehmen |
+ 
+-Nicht enthalten: die 540-p-Originale des animierten Logos (Asset-Gruppe «Logos» im Design-System) und die Vorschaukarten des Design-Systems.
++Nicht enthalten: das animierte Logo, das auf Websites nicht verwendet wird (Asset-Gruppe «Logos» im Design-System), und die Vorschaukarten des Design-Systems.
+ 
+ ## Grenzen
+ 
+diff --git a/components/GrundlageLogoAnimiert/README.md b/components/GrundlageLogoAnimiert/README.md
+index 46cd107..1ca3e94 100644
+--- a/components/GrundlageLogoAnimiert/README.md
++++ b/components/GrundlageLogoAnimiert/README.md
+@@ -1,15 +1,11 @@
+ # Logo animiert
+ 
+-Animiertes Logo, Web-Fassungen in Anzeigegrösse; statisch bei prefers-reduced-motion.
++Animiertes Logo: auf Websites nicht verwendet; im Seitenkopf steht das statische Logo.
+ 
+ Foundation-Karte aus dem Website-Profil (keine Komponente im Bundle).
+ 
+-Das animierte Logo ist auf Websites die Normalform; bei reduzierter Bewegung gilt das statische.
++Das animierte Logo wird auf Websites und in Browser-Anwendungen nicht verwendet (Profilentscheid 08.10.2026). Im Seitenkopf steht das statische Logo.
+ 
+-- **Einsatz:** Websites und Browser-Anwendungen.
+-- **Pflicht:** Beide Varianten anlegen und mit `data-motion` auszeichnen, damit `prefers-reduced-motion` auf das statische Logo umschaltet.
+-- **Vermeiden:** Eigene Animationen des Logos, Lottie ohne Projektentscheid (sonst das GIF verwenden).
+-- **Quelle:** Offizielles Logopaket.
+-
+-- **Web-Fassungen (06.10.2026):** `PUK_Logo_dynamisch_positiv_de_web.gif` und `…_negativ_de_web.gif` (Asset-Gruppe «Logos»), 440 px breit für die Anzeige bis 220 px auf hochauflösenden Bildschirmen, je 0,48 MB statt 4,8 MB. Bildfolge, Zeitablauf und Wiederholung sind unverändert; nur die Auflösung ist reduziert. Die Kanten sind gegen den vorgesehenen Grund geglättet: positiv gegen Weiss, negativ gegen PUK-Blau. Auf Schwarz und im Theme «Hoher Kontrast» die Originaldatei oder das statische Logo verwenden. Die 540-p-Originale bleiben die Quelle.
+-- **Laufzeit (geprüft 06.10.2026):** Die Originaldateien zeigen einen Zyklus von 10,2 s (Kreis → Quadrat → Kreis) und wiederholen ihn endlos. Die Angabe «1,2 s» (Token `dur-logo`) entspricht nicht der Datei. Eine endlose Animation über 5 s braucht nach WCAG 2.2.2 eine Möglichkeit zum Anhalten – offener Entscheid (README, «Offene Punkte»).
++- **Grund:** Die Originaldateien zeigen einen Zyklus von 10,2 s (Kreis → Quadrat → Kreis) und wiederholen ihn endlos. WCAG 2.2.2 verlangt für Bewegung, die von selbst startet und länger als 5 s dauert, eine Möglichkeit zum Anhalten; das Interaktionskonzept schliesst Bewegung ohne Auslösung aus.
++- **Vermeiden:** Animiertes Logo im Seitenkopf, eigene Animationen des Logos, Lottie.
++- **Quelle:** Offizielles Logopaket. Die 540-p-Originale und die Web-Fassungen (`…_web.gif`, 06.10.2026) bleiben in der Asset-Gruppe «Logos», gehören aber nicht ins Projektpaket. Das Token `dur-logo` (1,2 s) ist ohne Verwendung.
+diff --git a/components/GrundlageLogoPositiv/README.md b/components/GrundlageLogoPositiv/README.md
+index a2b4aa6..e8e2386 100644
+--- a/components/GrundlageLogoPositiv/README.md
++++ b/components/GrundlageLogoPositiv/README.md
+@@ -6,6 +6,6 @@ Foundation-Karte aus dem Website-Profil (keine Komponente im Bundle).
+ 
+ Das Logo «Perspektiven», statisch und positiv: Schwarz auf Weiss als Standardanwendung.
+ 
+-- **Einsatz:** Websites überall dort, wo nicht das animierte Logo gilt, sowie als statische Fassung bei `prefers-reduced-motion`.
++- **Einsatz:** Auf Websites und in Browser-Anwendungen immer im Seitenkopf (Profilentscheid 08.10.2026).
+ - **Pflicht:** `PUK_Logo_statisch_positiv_de.svg`; in der Regel oben links; Wortmarke nie ohne Symbol.
+ - **Vermeiden:** Nachgezeichnete oder rekonstruierte Logos.
+diff --git a/components/bundle.css b/components/bundle.css
+index bdabf38..5ba2e27 100644
+--- a/components/bundle.css
++++ b/components/bundle.css
+@@ -396,9 +396,9 @@ a:hover{color:var(--text-link-hover)}
+ [data-puk-check][type="radio"]:disabled:checked{background-color:var(--surface-sunken);background-image:radial-gradient(circle at 50% 50%,var(--puk-black-50) 0 5px,transparent 5px)}
+ [data-puk-check]:focus-visible{outline:none;box-shadow:var(--focus-ring)}
+ /* ---- Reduzierte Bewegung ----
+-   Das animierte Logo ist in digitalen Medien die Normalform (1,2 s). Wer
+-   Bewegung abbestellt hat, bekommt die statische Fassung: im Markup beide
+-   Varianten anlegen und hier umschalten. Im klinischen Kontext keine Formalie. */
++   Auf Websites steht im Seitenkopf das statische Logo (Profilentscheid
++   08.10.2026). Die Umschaltung unten bleibt als Sicherung, falls irgendwo
++   ein animiertes Logo mit data-motion ausgezeichnet ist. */
+ @media (prefers-reduced-motion:reduce){
+   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+   [data-motion="logo-animiert"]{display:none!important}
+diff --git a/guidelines/00-technische-qualitaet.md b/guidelines/00-technische-qualitaet.md
+index 7b38689..b9f5a1e 100644
+--- a/guidelines/00-technische-qualitaet.md
++++ b/guidelines/00-technische-qualitaet.md
+@@ -48,7 +48,7 @@ Bei psychischer Erkrankung ist schon der Seitenbesuch eine sensible Information.
+ - Bilder in passendem Format (SVG für Grafik, WebP/AVIF oder JPEG für Fotos), in Anzeigegrösse, mit `width`/`height` und `loading="lazy"` unterhalb des ersten Bildschirms.
+ - Schriften selbst gehostet, nur die benötigten Schnitte (Rubik 300, 400, 500), `font-display: swap`.
+ - Kein ungenutztes CSS oder JavaScript; das Interaktionsskript nur laden, wo interaktive Elemente vorkommen.
+-- Ziel: auf einem Smartphone mit mittlerer Verbindung in wenigen Sekunden lesbar. Das animierte Logo in der Web-Fassung verwenden, nicht als 540-p-Original.
++- Ziel: auf einem Smartphone mit mittlerer Verbindung in wenigen Sekunden lesbar. Logo als statisches SVG.
+ 
+ ## F · Darstellung und Druck
+ 
+diff --git a/guidelines/01-marke-und-logo.md b/guidelines/01-marke-und-logo.md
+index 8b9c014..e82cd52 100644
+--- a/guidelines/01-marke-und-logo.md
++++ b/guidelines/01-marke-und-logo.md
+@@ -17,20 +17,17 @@ Grundregeln der Markenanwendung: Schwarz auf Weiss ist Standard, Weiss auf Blau
+ 
+ Das Logo «Perspektiven», statisch und positiv: Schwarz auf Weiss als Standardanwendung.
+ 
+-- **Einsatz:** Websites überall dort, wo nicht das animierte Logo gilt, sowie als statische Fassung bei `prefers-reduced-motion`.
++- **Einsatz:** Auf Websites und in Browser-Anwendungen immer im Seitenkopf (Profilentscheid 08.10.2026).
+ - **Pflicht:** `PUK_Logo_statisch_positiv_de.svg`; in der Regel oben links; Wortmarke nie ohne Symbol.
+ - **Vermeiden:** Nachgezeichnete oder rekonstruierte Logos.
+ 
+ ## Logo animiert
+ 
+-Das animierte Logo ist auf Websites die Normalform; bei reduzierter Bewegung gilt das statische.
++Das animierte Logo wird auf Websites und in Browser-Anwendungen nicht verwendet (Profilentscheid 08.10.2026). Im Seitenkopf steht das statische Logo.
+ 
+-- **Einsatz:** Websites und Browser-Anwendungen.
+-- **Pflicht:** Beide Varianten anlegen und mit `data-motion` auszeichnen, damit `prefers-reduced-motion` auf das statische Logo umschaltet.
+-- **Vermeiden:** Eigene Animationen des Logos, Lottie ohne Projektentscheid (sonst das GIF verwenden).
+-- **Quelle:** Offizielles Logopaket.
+-- **Web-Fassungen (06.10.2026):** `PUK_Logo_dynamisch_positiv_de_web.gif` und `…_negativ_de_web.gif` (Asset-Gruppe «Logos»), 440 px breit für die Anzeige bis 220 px auf hochauflösenden Bildschirmen, je 0,48 MB statt 4,8 MB. Bildfolge, Zeitablauf und Wiederholung sind unverändert; nur die Auflösung ist reduziert. Die Kanten sind gegen den vorgesehenen Grund geglättet: positiv gegen Weiss, negativ gegen PUK-Blau. Auf Schwarz und im Theme «Hoher Kontrast» die Originaldatei oder das statische Logo verwenden. Die 540-p-Originale bleiben die Quelle.
+-- **Laufzeit (geprüft 06.10.2026):** Die Originaldateien zeigen einen Zyklus von 10,2 s (Kreis → Quadrat → Kreis) und wiederholen ihn endlos. Die Angabe «1,2 s» (Token `dur-logo`) entspricht nicht der Datei. Eine endlose Animation über 5 s braucht nach WCAG 2.2.2 eine Möglichkeit zum Anhalten – offener Entscheid (README, «Offene Punkte»).
++- **Grund:** Die Originaldateien zeigen einen Zyklus von 10,2 s (Kreis → Quadrat → Kreis) und wiederholen ihn endlos. WCAG 2.2.2 verlangt für Bewegung, die von selbst startet und länger als 5 s dauert, eine Möglichkeit zum Anhalten; das Interaktionskonzept schliesst Bewegung ohne Auslösung aus.
++- **Vermeiden:** Animiertes Logo im Seitenkopf, eigene Animationen des Logos, Lottie.
++- **Quelle:** Offizielles Logopaket. Die 540-p-Originale und die Web-Fassungen (`…_web.gif`, 06.10.2026) bleiben in der Asset-Gruppe «Logos», gehören aber nicht ins Projektpaket. Das Token `dur-logo` (1,2 s) ist ohne Verwendung.
+ 
+ ## Logo negativ
+ 
+diff --git a/guidelines/09-interaktionskonzept.md b/guidelines/09-interaktionskonzept.md
+index 3e7191a..2c86876 100644
+--- a/guidelines/09-interaktionskonzept.md
++++ b/guidelines/09-interaktionskonzept.md
+@@ -6,7 +6,7 @@ Wie sich interaktive Elemente auf Websites der Fachstelle verhalten: Zustände,
+ 
+ 1. **Sichtbar vor versteckt.** Was alle brauchen, steht offen auf der Seite. Interaktion versteckt nur Optionales: Vertiefung, Varianten, Wiederholtes. Kritische Information steht nie nur hinter einem Akkordeon, Reiter, Dialog, Tooltip oder Filter.
+ 2. **Die einfachste Form gewinnt.** Reihenfolge der Wahl: Fliesstext oder Liste → Sprunglinks/Kapitelorientierung → Akkordeon → Reiter → Dialog. Karussell nur ausnahmsweise. Jede Komponente unten nennt, wann sie wegfällt und was stattdessen genügt.
+-3. **Nichts bewegt sich von selbst.** Kein Autoplay, keine Endlosschleifen, kein Parallax, keine Einblendungen beim Scrollen, keine Pop-ups beim Laden oder Verlassen. Einzige Ausnahme ist das animierte Logo der Marke; seine Laufzeit ist ein offener Punkt (Abschnitt «Marke und Logo»).
++3. **Nichts bewegt sich von selbst.** Kein Autoplay, keine Endlosschleifen, kein Parallax, keine Einblendungen beim Scrollen, keine Pop-ups beim Laden oder Verlassen. Das gilt auch für das Logo: Im Seitenkopf steht das statische Logo (Abschnitt «Marke und Logo»).
+ 4. **Eine Handlung, eine sichtbare Antwort.** Jede Aktion hat eine Rückmeldung am Ort der Aktion, die auch Screenreader erreicht (Live-Region oder Fokus).
+ 5. **Alle Eingabearten gleichwertig.** Alles geht mit Maus, Tastatur und Touch; nichts hängt allein an Hover, Doppelklick, Wischen oder Langdruck.
+ 6. **Bewegung ist abbestellbar.** Bei `prefers-reduced-motion: reduce` fällt jede Animation weg; der Endzustand erscheint sofort (globale Regel in `components/bundle.css`).
+@@ -50,7 +50,6 @@ Ein Vokabular für alle Bedienelemente (Karte «Interaktionszustände»):
+ | Dialog | Hintergrund blendet ein; Fenster gleitet 8 px | 200 ms / `dur-slow` 400 ms, `ease-out` | sofort |
+ | Karussell | weiches Scrollen zur Folie | Browser | springt |
+ | Modell in Schritten (Muster G) | Teile blenden auf Knopfdruck ein | `dur-base` | sofort |
+-| Logo | animiertes GIF (Web-Fassung) | Zyklus 10,2 s, wiederholt (offener Punkt) | statisches Logo |
+ 
+ Nicht zulässig: Federn, Einzoomen, Wackeln, Pulsieren, Endlosschleifen, Scroll-Effekte, animierte Zahlen, Ladeanimationen über 1 s ohne Text.
+ 
+diff --git a/templates/website/psychoeducation-site-starter/README.md b/templates/website/psychoeducation-site-starter/README.md
+index a5d3a9a..fcc9636 100644
+--- a/templates/website/psychoeducation-site-starter/README.md
++++ b/templates/website/psychoeducation-site-starter/README.md
+@@ -7,7 +7,7 @@ Lokal lauffähiger Mehrseiten-Starter für psychoedukative Websites. Abgeleitete
+ - `site.config.json`: Seitenvertrag (siehe unten). Einzige Quelle für Navigation, Titel, Meta, Absenderin und Zuständigkeitsverweis.
+ - `content/<id>.html`: Inhalt jeder Seite, nur das Innere von `<main>`.
+ - `tools/build.mjs`: erzeugt `<id>.html` aus Vertrag + Inhalt und führt danach das Gate aus. Blockierende Befunde → nichts wird geschrieben, Exit 1.
+-- `tools/gate.mjs`: prüft die gebauten Seiten. `--production` für die Veröffentlichung, `--selftest` für den Nachweis, dass jede bekannte Fehlerklasse erkannt wird.
++- `tools/gate.mjs`: prüft die gebauten Seiten. `--production` für die Veröffentlichung, `--selftest` für den Nachweis, dass jede bekannte Fehlerklasse erkannt wird. Der Selbsttest nutzt die feste Referenz in `tools/selftest/` und läuft deshalb auch in jeder Kopie des Starters.
+ - `tools/contract.js`: gemeinsame Logik (Node und Browser), ohne Abhängigkeiten.
+ - `gate.html`: derselbe Bericht im Browser, mit sichtbarem Seitenvertrag und Visualisierungsplan pro Seite.
+ - `tools/export.mjs`: schreibt eine eigenständige, veröffentlichbare Website in einen Zielordner (siehe «Veröffentlichen»).
+@@ -74,9 +74,9 @@ Seiten über einen lokalen Webserver öffnen (z. B. `npx serve` im Projektstamm
+ - `index.html`: Einstieg mit Lesepfaden; der Vollbericht ist ein Download-Platzhalter.
+ - `seitenvorlage.html`: Entwurf, nicht in der Navigation.
+ 
+-Stand 06.10.2026 (nach Profilentscheiden Absenderin und Zuständigkeitsverweis):
++Stand 08.10.2026 (nach Neufassung des Zuständigkeitsverweises):
+ - **Entwurfsgate:** 0 blockierende Befunde.
+ - **Produktionsgate:** blockiert 9 offene Freigaben. Das ist erwartet.
+-- **Selbsttest:** 34 von 34 bestanden.
++- **Selbsttest:** 39 von 39 bestanden, auch in Kopien des Starters.
+ 
+ Offen sind reale Screenreader-Läufe, ein Test mit Hardwaretastatur sowie Fach-, Bild- und Absenderfreigaben.
+diff --git a/templates/website/psychoeducation-site-starter/tools/gate.mjs b/templates/website/psychoeducation-site-starter/tools/gate.mjs
+index 9d81e6a..2124a14 100644
+--- a/templates/website/psychoeducation-site-starter/tools/gate.mjs
++++ b/templates/website/psychoeducation-site-starter/tools/gate.mjs
+@@ -2,7 +2,7 @@
+ // Prüft die gebauten Seiten gegen site.config.json. Keine medizinische Triage, kein Ersatz für Fach- oder Bildfreigabe.
+ //   node tools/gate.mjs               Entwurf: Struktur blockiert, offene Freigaben sind Hinweise
+ //   node tools/gate.mjs --production  Produktion: offene Freigaben (Absenderin, Zuständigkeitsverweise, Platzhalter, Visualisierungen) blockieren
+-//   node tools/gate.mjs --selftest    prüft, dass jede bekannte Fehlerklasse erkannt wird
++//   node tools/gate.mjs --selftest    prüft an der festen Referenz in tools/selftest/, dass jede bekannte Fehlerklasse erkannt wird
+ import { readFile, readdir } from 'node:fs/promises';
+ import { existsSync } from 'node:fs';
+ import { createRequire } from 'node:module';
+@@ -16,7 +16,12 @@ const files = {};
+ for (const n of await readdir(dir)) if (n.endsWith('.html') && n !== 'gate.html') files[n] = await readFile(join(dir, n), 'utf8');
+ const exists = p => p in files || existsSync(join(dir, p));
+ if (process.argv.includes('--selftest')) {
+-  const rows = C.selftest(cfg, files, { exists }); let bad = 0;
++  /* Der Selbsttest prüft das Gate an der festen Referenz in tools/selftest/, nicht an den Inhalten dieser Website. So läuft er im Starter und in jeder Kopie gleich. */
++  const ref = join(dirname(fileURLToPath(import.meta.url)), 'selftest');
++  const tcfg = JSON.parse(await readFile(join(ref, 'site.config.json'), 'utf8'));
++  const tfiles = {};
++  for (const p of tcfg.pages) tfiles[C.resolve('', p.href).path] = C.renderPage(tcfg, p, await readFile(join(ref, 'content', p.id + '.html'), 'utf8'));
++  const rows = C.selftest(tcfg, tfiles, { exists: p => p in tfiles || (!p.endsWith('.html') && existsSync(join(dir, p))) }); let bad = 0;
+   for (const r of rows) { if (!r.ok) bad++; console.log(`${r.ok ? 'OK  ' : 'FAIL'} ${r.name} · erwartet ${r.expected} · erkannt ${r.got}`); }
+   console.log(`\nSelbsttest: ${rows.length - bad}/${rows.length} bestanden.`); process.exit(bad ? 1 : 0);
+ }
+diff --git a/templates/website/psychoeducation-site-starter/tools/selftest/README.md b/templates/website/psychoeducation-site-starter/tools/selftest/README.md
+new file mode 100644
+index 0000000..29e1d68
+--- /dev/null
++++ b/templates/website/psychoeducation-site-starter/tools/selftest/README.md
+@@ -0,0 +1,5 @@
++# Feste Referenz für den Selbsttest
++
++`node tools/gate.mjs --selftest` prüft das Gate an dieser Referenz, nicht an den Inhalten der jeweiligen Website. So läuft der Selbsttest im Starter und in jeder Kopie gleich.
++
++Die Dateien sind eine Kopie von `site.config.json` und `content/` des Psychoedukations-Starters (Stand 08.10.2026). Nicht bearbeiten. Wird das Gate geändert, Referenz und Mutationen in `contract.js` gemeinsam anpassen.
+diff --git a/tokens/base.css b/tokens/base.css
+index d8ad078..ec98893 100644
+--- a/tokens/base.css
++++ b/tokens/base.css
+@@ -48,9 +48,9 @@ a:hover{color:var(--text-link-hover)}
+ [data-puk-check][type="radio"]:disabled:checked{background-color:var(--surface-sunken);background-image:radial-gradient(circle at 50% 50%,var(--puk-black-50) 0 5px,transparent 5px)}
+ [data-puk-check]:focus-visible{outline:none;box-shadow:var(--focus-ring)}
+ /* ---- Reduzierte Bewegung ----
+-   Das animierte Logo ist in digitalen Medien die Normalform (1,2 s). Wer
+-   Bewegung abbestellt hat, bekommt die statische Fassung: im Markup beide
+-   Varianten anlegen und hier umschalten. Im klinischen Kontext keine Formalie. */
++   Auf Websites steht im Seitenkopf das statische Logo (Profilentscheid
++   08.10.2026). Die Umschaltung unten bleibt als Sicherung, falls irgendwo
++   ein animiertes Logo mit data-motion ausgezeichnet ist. */
+ @media (prefers-reduced-motion:reduce){
+   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+   [data-motion="logo-animiert"]{display:none!important}
