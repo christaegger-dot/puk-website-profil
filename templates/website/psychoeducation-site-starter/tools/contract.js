@@ -91,12 +91,12 @@ function renderPage(cfg, page, content) {
   const s = cfg.sender || {};
   /* Website-Review Teil 2: ein Zuständigkeitsverweis an fester, von jeder Seite aus erreichbarer Stelle → site-weit in site.config.responsibility, in jeder Fusszeile. */
   const sa = cfg.responsibility ? Object.assign({ variant: 'responsibility' }, cfg.responsibility) : { variant: 'none' };
-  const review = sa.variant === 'none' ? '' : reviewDocumented(sa)
-    ? `Zuständigkeitsverweis fachlich geprüft am ${esc(sa.reviewedAt)} (${esc(sa.reviewedBy)}).`
+  /* Profilentscheid 08.10.2026: Der Prüfvermerk ist intern (site.config.json, Gate) und erscheint nicht auf der Website. Sichtbar bleibt nur die Warnung bei einem ungeprüften Verweis. */
+  const review = sa.variant === 'none' || reviewDocumented(sa) ? ''
     : `Zuständigkeitsverweis ungeprüft: fachliche Prüfung ${sa.reviewStatus === 'ausstehend' ? 'ausstehend' : 'nicht dokumentiert'} · Verantwortung: ${esc(sa.owner || 'offen')}.`;
   const senderBadge = s.status === 'freigegeben' ? '' : `<span class="puk-site-draft">${esc(s.statusLabel || 'Platzhalter, nicht freigegeben')}</span>`;
   const direct = '';
-  const subdued = sa.variant === 'responsibility' ? `<section class="puk-site-safety puk-site-safety--responsibility" data-safety-access="responsibility" data-review-status="${esc(sa.reviewStatus)}" aria-labelledby="puk-safety-title"><h2 class="puk-web-footer__heading" id="puk-safety-title">${esc(sa.label || 'Zuständigkeit')}</h2><p class="puk-web-footer__copy">${esc(sa.text)}</p>${sa.targetHref ? `<p class="puk-web-footer__copy"><a href="${esc(sa.targetHref)}">${esc(sa.targetLabel)}</a></p>` : ''}<p class="puk-web-footer__copy puk-site-review">${review}</p></section>` : '';
+  const subdued = sa.variant === 'responsibility' ? `<section class="puk-site-safety puk-site-safety--responsibility" data-safety-access="responsibility" data-review-status="${esc(sa.reviewStatus)}" aria-labelledby="puk-safety-title"><h2 class="puk-web-footer__heading" id="puk-safety-title">${esc(sa.label || 'Zuständigkeit')}</h2><p class="puk-web-footer__copy">${esc(sa.text)}</p>${sa.targetHref ? `<p class="puk-web-footer__copy"><a href="${esc(sa.targetHref)}">${esc(sa.targetLabel)}</a></p>` : ''}${review ? `<p class="puk-web-footer__copy puk-site-review">${review}</p>` : ''}</section>` : '';
   const draftbar = page.status === 'draft' ? `<p class="puk-site-draftbar" data-page-status="draft"><span class="puk-web-container">Entwurf · nicht in der Navigation · nicht veröffentlichen</span></p>` : '';
   return `<!DOCTYPE html>
 <html lang="${esc(cfg.language)}" data-puk-site-build="${BUILD}" data-page-id="${esc(page.id)}">
@@ -361,7 +361,7 @@ function selftest(cfg, files, opts = {}) {
   const rows = []; const base = opts.exists || (p => Object.prototype.hasOwnProperty.call(files, p));
   const b0 = gate(cfg, files, { mode: 'draft', exists: base });
   rows.push({ name: 'Ausgangslage Entwurf: 0 blockierende Befunde', expected: '0', got: String(b0.blocks), ok: b0.blocks === 0 });
-  const unreviewed = {}; for (const [k, v] of Object.entries(files)) unreviewed[k] = typeof v === 'string' ? v.split('data-review-status="geprueft"').join('data-review-status="ausstehend"').replace(/Zuständigkeitsverweis fachlich geprüft am [^<]*/g, 'Zuständigkeitsverweis ungeprüft: fachliche Prüfung ausstehend.') : v;
+  const unreviewed = {}; for (const [k, v] of Object.entries(files)) unreviewed[k] = typeof v === 'string' ? v.split('data-review-status="geprueft"').join('data-review-status="ausstehend"') : v;
   const bp = gate(Object.assign({}, cfg, { sender: Object.assign({}, cfg.sender, { status: 'placeholder' }), responsibility: cfg.responsibility && Object.assign({}, cfg.responsibility, { reviewStatus: 'ausstehend', reviewedBy: undefined, reviewedAt: undefined }) }), unreviewed, { mode: 'production', exists: base }); /* Absenderin und Zuständigkeitsverweis hier absichtlich ungeklärt, damit die Prüfung belegt bleibt, auch wenn beide freigegeben sind */ const need = ['sender-status', 'safety-review', 'placeholder-approval', 'visual-approval'];
   const hit = need.filter(id => bp.findings.some(x => x.level === 'block' && x.id === id)); const structural = bp.findings.filter(x => x.level === 'block' && !need.includes(x.id));
   rows.push({ name: 'Produktion blockiert ungeklärte Absenderin, Zuständigkeitsverweise, Platzhalter und Visualisierungen', expected: need.join(', ') + ' · keine Strukturfehler', got: hit.join(', ') + ' · ' + (structural.length ? structural.length + ' Strukturfehler' : 'keine Strukturfehler'), ok: hit.length === need.length && !structural.length });
