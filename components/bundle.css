@@ -396,9 +396,9 @@ a:hover{color:var(--text-link-hover)}
 [data-puk-check][type="radio"]:disabled:checked{background-color:var(--surface-sunken);background-image:radial-gradient(circle at 50% 50%,var(--puk-black-50) 0 5px,transparent 5px)}
 [data-puk-check]:focus-visible{outline:none;box-shadow:var(--focus-ring)}
 /* ---- Reduzierte Bewegung ----
-   Das animierte Logo ist in digitalen Medien die Normalform (1,2 s). Wer
-   Bewegung abbestellt hat, bekommt die statische Fassung: im Markup beide
-   Varianten anlegen und hier umschalten. Im klinischen Kontext keine Formalie. */
+   Auf Websites steht im Seitenkopf das statische Logo (Profilentscheid
+   08.10.2026). Die Umschaltung unten bleibt als Sicherung, falls irgendwo
+   ein animiertes Logo mit data-motion ausgezeichnet ist. */
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
   [data-motion="logo-animiert"]{display:none!important}

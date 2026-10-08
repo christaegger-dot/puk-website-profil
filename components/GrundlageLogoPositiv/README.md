@@ -6,6 +6,6 @@ Foundation-Karte aus dem Website-Profil (keine Komponente im Bundle).
 
 Das Logo «Perspektiven», statisch und positiv: Schwarz auf Weiss als Standardanwendung.
 
-- **Einsatz:** Websites überall dort, wo nicht das animierte Logo gilt, sowie als statische Fassung bei `prefers-reduced-motion`.
+- **Einsatz:** Auf Websites und in Browser-Anwendungen immer im Seitenkopf (Profilentscheid 08.10.2026).
 - **Pflicht:** `PUK_Logo_statisch_positiv_de.svg`; in der Regel oben links; Wortmarke nie ohne Symbol.
 - **Vermeiden:** Nachgezeichnete oder rekonstruierte Logos.

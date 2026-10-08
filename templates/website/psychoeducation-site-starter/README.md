@@ -7,7 +7,7 @@ Lokal lauffähiger Mehrseiten-Starter für psychoedukative Websites. Abgeleitete
 - `site.config.json`: Seitenvertrag (siehe unten). Einzige Quelle für Navigation, Titel, Meta, Absenderin und Zuständigkeitsverweis.
 - `content/<id>.html`: Inhalt jeder Seite, nur das Innere von `<main>`.
 - `tools/build.mjs`: erzeugt `<id>.html` aus Vertrag + Inhalt und führt danach das Gate aus. Blockierende Befunde → nichts wird geschrieben, Exit 1.
-- `tools/gate.mjs`: prüft die gebauten Seiten. `--production` für die Veröffentlichung, `--selftest` für den Nachweis, dass jede bekannte Fehlerklasse erkannt wird.
+- `tools/gate.mjs`: prüft die gebauten Seiten. `--production` für die Veröffentlichung, `--selftest` für den Nachweis, dass jede bekannte Fehlerklasse erkannt wird. Der Selbsttest nutzt die feste Referenz in `tools/selftest/` und läuft deshalb auch in jeder Kopie des Starters.
 - `tools/contract.js`: gemeinsame Logik (Node und Browser), ohne Abhängigkeiten.
 - `gate.html`: derselbe Bericht im Browser, mit sichtbarem Seitenvertrag und Visualisierungsplan pro Seite.
 - `tools/export.mjs`: schreibt eine eigenständige, veröffentlichbare Website in einen Zielordner (siehe «Veröffentlichen»).
@@ -74,9 +74,9 @@ Seiten über einen lokalen Webserver öffnen (z. B. `npx serve` im Projektstamm 
 - `index.html`: Einstieg mit Lesepfaden; der Vollbericht ist ein Download-Platzhalter.
 - `seitenvorlage.html`: Entwurf, nicht in der Navigation.
 
-Stand 06.10.2026 (nach Profilentscheiden Absenderin und Zuständigkeitsverweis):
+Stand 08.10.2026 (nach Neufassung des Zuständigkeitsverweises):
 - **Entwurfsgate:** 0 blockierende Befunde.
 - **Produktionsgate:** blockiert 9 offene Freigaben. Das ist erwartet.
-- **Selbsttest:** 34 von 34 bestanden.
+- **Selbsttest:** 39 von 39 bestanden, auch in Kopien des Starters.
 
 Offen sind reale Screenreader-Läufe, ein Test mit Hardwaretastatur sowie Fach-, Bild- und Absenderfreigaben.

@@ -43,13 +43,13 @@ Der Ablauf von der Planung bis zur Freigabe steht im Abschnitt «Prüfung und Fr
 | `components/` | `bundle.css` (Tokens, Hülle, Komponenten, Druck), `bundle.js` (26 React-Komponenten, `window.PUKWeb`), `interaktion.js` (HTML-Fassungen ohne React), Typen und Beschreibungen |
 | `tokens/`, `tokens.json` | Quell-CSS und Tokens |
 | `fonts/`, `assets/fonts/` | Rubik (WOFF2, OFL-Lizenz) |
-| `assets/logo/` | statische Logos (SVG) und animierte Web-Fassungen (`…_web.gif`) |
+| `assets/logo/` | statische Logos (SVG) |
 | `templates/website/` | Starter, Langform- und Erklärmuster, Anwendungsmuster, Interaktion, Seitenhülle |
 | `ui_kits/website/` | Referenzansichten und Prüfansicht |
 | `quellcode/komponenten/` | React-Quellen; `npm install && node build.mjs ../../components/bundle.js` baut `bundle.js` neu |
 | `_ds_bundle.js`, `platform/` | Laufzeit für das UI-Kit (React 18 lokal, MIT-Lizenz); nicht in Websites übernehmen |
 
-Nicht enthalten: die 540-p-Originale des animierten Logos (Asset-Gruppe «Logos» im Design-System) und die Vorschaukarten des Design-Systems.
+Nicht enthalten: das animierte Logo, das auf Websites nicht verwendet wird (Asset-Gruppe «Logos» im Design-System), und die Vorschaukarten des Design-Systems.
 
 ## Grenzen
 

@@ -58,6 +58,6 @@ Ansehen: im Repository-Stamm `python3 -m http.server 8000` (oder `npx serve`), d
 
 Die Review-Prompts der Fachstelle (W1 Fachliche Prüfung, W2 Gesamtkohärenz, S Sprach-Review, W3 Code-Review) gelten in dieser Reihenfolge; W3 ist ein reines Review ohne Dateiänderungen bis zur Freigabe. Kriterien im Design-System: «Fachliche Qualität und Haltung», «Gesamtkohärenz und Aufbau», «Sprache und Ton», «Technische Qualität».
 
-## Offen
+## Logo
 
-Animiertes Logo: Die Datei wiederholt einen 10-s-Zyklus endlos (WCAG 2.2.2). Bis zum Entscheid im Seitenkopf das statische Logo vorschlagen und nachfragen.
+Im Seitenkopf steht immer das statische Logo. Das animierte Logo wird auf Websites nicht verwendet (Profilentscheid 08.10.2026, WCAG 2.2.2).
