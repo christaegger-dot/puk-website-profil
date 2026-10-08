@@ -1,0 +1,243 @@
+{
+  "$comment": "Probe-Website PTBS auf Basis des Psychoedukations-Starters (PUK Website Kit 1.10.1-r4 · abgeleitet). Musterinhalt mit Prüfbedarf, nicht zur Veröffentlichung bestimmt. Nach jeder Änderung: node tools/build.mjs, danach node tools/gate.mjs (Entwurf) bzw. node tools/gate.mjs --production.",
+  "kitRevision": "PUK Website Kit 1.10.1-r4 · abgeleitet",
+  "canonicalSource": "PUK Zürich Design System 1.10.1 (unverändert)",
+  "assetVersion": "r4-2",
+  "siteTitle": "PTBS – Angehörige verstehen und begleiten",
+  "shortDescription": "Probe-Website für Angehörige von Menschen mit einer posttraumatischen Belastungsstörung (PTBS): verstehen, den Alltag mittragen, Behandlung und Unterstützung kennen. Musterinhalt, fachlich nicht freigegeben.",
+  "language": "de-CH",
+  "favicon": "assets/favicon.svg",
+  "logo": "assets/logo.svg",
+  "stylesheets": [
+    "../../../styles.css",
+    "../longform/visual-patterns.css",
+    "../longform/erklaermuster.css",
+    "starter.css"
+  ],
+  "contentOwner": "Fachstelle Angehörigenarbeit PUK",
+  "editorialStatus": "probe-musterinhalt",
+  "editorialStatusLabel": "Probe mit Musterinhalt, nicht zur Veröffentlichung bestimmt",
+  "disclaimer": "Diese Website ersetzt keine individuelle Abklärung, Beratung oder Behandlung.",
+  "responsibility": {
+    "label": "Zuständigkeit",
+    "text": "Die Fachstelle Angehörigenarbeit PUK ist zuständig für Beratung und Psychoedukation für Angehörige: angehoerigenarbeit@pukzh.ch. Krisenintervention gehört nicht zu ihrem Auftrag.",
+    "owner": "Fachstelle Angehörigenarbeit PUK",
+    "reviewStatus": "geprueft",
+    "reviewedBy": "Fachstelle Angehörigenarbeit PUK",
+    "reviewedAt": "06.10.2026"
+  },
+  "sender": {
+    "orgUnit": "Fachstelle Angehörigenarbeit",
+    "institution": "Psychiatrische Universitätsklinik Zürich",
+    "email": "angehoerigenarbeit@pukzh.ch",
+    "status": "freigegeben",
+    "statusLabel": "Freigegeben"
+  },
+  "pages": [
+    {
+      "id": "index",
+      "title": "Übersicht",
+      "href": "index.html",
+      "navLabel": "Übersicht",
+      "status": "published",
+      "primaryTask": "Das Thema PTBS einordnen und einen passenden Einstieg wählen",
+      "description": "PTBS bei Angehörigen: Was eine posttraumatische Belastungsstörung ist, für wen diese Website gedacht ist und drei Lesepfade.",
+      "sensitiveTopics": [
+        "gewalt"
+      ],
+      "visualPlan": [
+        {
+          "id": "v-idx-text",
+          "section": "Lesepfade",
+          "goal": "Einen passenden Einstieg wählen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "approvalStatus": "entfällt",
+          "reason": "Text ist klarer: drei Einstiege in fester Reihenfolge, ohne Beziehung, die eine Darstellung erklären müsste."
+        }
+      ]
+    },
+    {
+      "id": "ptbs-verstehen",
+      "title": "PTBS verstehen",
+      "href": "ptbs-verstehen.html",
+      "navLabel": "PTBS verstehen",
+      "status": "published",
+      "primaryTask": "Verstehen, warum sich ein Mensch nach einem Trauma verändern kann und warum Vermeiden die Beschwerden aufrechterhalten kann",
+      "description": "Was ein Trauma ist, welche Beschwerden zu einer PTBS gehören, was hinter verändertem Verhalten liegen kann und warum Vermeiden festhält.",
+      "sensitiveTopics": [
+        "gewalt"
+      ],
+      "visualPlan": [
+        {
+          "id": "v-pv-kernbereiche",
+          "section": "02 Drei Kernbereiche",
+          "goal": "Die drei Kernbereiche der PTBS kennen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "approvalStatus": "entfällt",
+          "reason": "Text ist klarer: drei Bereiche, die nebeneinander bestehen; eine Grafik würde nur Wörter in Kästen verteilen."
+        },
+        {
+          "id": "v-pv-schichten",
+          "section": "03 Was dahinter liegen kann",
+          "goal": "Verstehen, dass hinter abweisend wirkendem Verhalten ein unsichtbares Erleben liegen kann",
+          "format": "layer-model",
+          "statement": "Über der Linie sichtbares Verhalten (Rückzug, Schreckhaftigkeit, Gereiztheit, Meiden), darunter mögliches Erleben (Gefühl ständiger Gefahr, sich aufdrängende Erinnerungen, Scham, Erschöpfung)",
+          "understood": "Dass hinter einem Verhalten, das abweisend wirkt, ein Erleben liegen kann, das von aussen nicht sichtbar ist – die Trennung über und unter der Linie zeigt das auf einen Blick; eine Aufzählung stellt beides nur nebeneinander.",
+          "source": "Eigene didaktische Darstellung nach der verbreiteten Eisberg-Metapher; Zuordnungen Prüfbedarf",
+          "alternative": "Zwei beschriftete Listen «Sichtbar» und «Darunter, oft nicht sichtbar»; Textfassung über aria-describedby",
+          "reason": "Die Metapher macht «sichtbar und verborgen» räumlich erfassbar und lädt zum Nachfragen statt Deuten ein.",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-pv-kreislauf",
+          "section": "04 Warum Vermeiden festhält",
+          "goal": "Verstehen, dass Vermeiden kurzfristig entlastet und die Angst langfristig aufrechterhält",
+          "format": "cycle",
+          "statement": "Auslöser → Alarm im Körper und Erinnerung → Vermeiden → kurze Erleichterung; der Alarm bleibt ungeprüft bestehen, der nächste Auslöser wirkt wieder gleich stark",
+          "understood": "Dass Vermeiden kurzfristig entlastet und genau dadurch die Angst aufrechterhält – eine geschlossene Schleife zeigt diese Rückkopplung, ein Satz erzählt sie nur nacheinander.",
+          "source": "Eigene didaktische Darstellung, angelehnt an kognitiv-behaviorale Erklärmodelle der PTBS (Prüfbedarf: Quelle)",
+          "alternative": "Stationen als geordnete Liste mit sichtbarem «zurück zu Station 1»; Textfassung über aria-describedby",
+          "reason": "Ein Kreislauf ist im Fliesstext schwer zu halten.",
+          "approvalStatus": "ausstehend"
+        }
+      ]
+    },
+    {
+      "id": "alltag-mittragen",
+      "title": "Den Alltag mittragen",
+      "href": "alltag-mittragen.html",
+      "navLabel": "Alltag",
+      "status": "published",
+      "primaryTask": "Einen Umgang finden zwischen Rücksicht und gewohntem Alltag und ins Gespräch kommen",
+      "description": "Auslöser im Alltag, das Gleichgewicht zwischen Rücksicht und gewohntem Alltag, Gesprächsbeispiele und der Umgang mit Gereiztheit und Rückzug.",
+      "sensitiveTopics": [
+        "gewalt"
+      ],
+      "visualPlan": [
+        {
+          "id": "v-am-ausloeser",
+          "section": "01 Auslöser",
+          "goal": "Wissen, was ein Auslöser sein kann",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "approvalStatus": "entfällt",
+          "reason": "Text ist klarer: Beispiele ohne Beziehung untereinander."
+        },
+        {
+          "id": "v-am-waage",
+          "section": "02 Rücksicht und Alltag",
+          "goal": "Verstehen, dass Rücksicht und gewohnter Alltag beide berechtigt sind",
+          "format": "tension-field",
+          "statement": "Links: Rücksicht nehmen, Sicherheit geben; rechts: gewohnten Alltag erhalten, nicht alles mitmeiden; Mitte: gemeinsame Absprachen",
+          "understood": "Dass beide Anliegen berechtigt sind und es um ein Gleichgewicht geht, nicht um richtig oder falsch – die Waage entlastet von der Frage «Mache ich es falsch?».",
+          "source": "Eigene didaktische Darstellung; Inhalte Prüfbedarf",
+          "alternative": "Linke Seite, Mitte, rechte Seite als beschriftete Listen; Textfassung über aria-describedby",
+          "reason": "Zwei gegenläufige Anliegen und ihr Ausgleich sind als Waage schneller erfassbar als in zwei Absätzen.",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-am-gespraech",
+          "section": "03 Ins Gespräch kommen",
+          "goal": "Formulierungen für ein Gespräch finden",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "approvalStatus": "entfällt",
+          "reason": "Text ist klarer: Formulierungsbausteine sind ein Inhaltscontainer, keine Erklärform."
+        },
+        {
+          "id": "v-am-grenzen",
+          "section": "04 Gereiztheit und Rückzug",
+          "goal": "Gereiztheit einordnen und eigene Grenzen wahren",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "approvalStatus": "entfällt",
+          "reason": "Text ist klarer: Einordnung und Grenze brauchen einen kurzen, direkten Text."
+        }
+      ]
+    },
+    {
+      "id": "behandlung-und-unterstuetzung",
+      "title": "Behandlung und Unterstützung",
+      "href": "behandlung-und-unterstuetzung.html",
+      "navLabel": "Behandlung und Unterstützung",
+      "status": "published",
+      "primaryTask": "Den möglichen Weg einer Behandlung kennen und das eigene Unterstützungsnetz sehen",
+      "description": "Wie eine Behandlung der PTBS ablaufen kann, was Angehörige beitragen können und was nicht, eigene Belastung und das eigene Unterstützungsnetz.",
+      "sensitiveTopics": [],
+      "visualPlan": [
+        {
+          "id": "v-bu-weg",
+          "section": "01 Behandlung",
+          "goal": "Den möglichen Weg einer Behandlung kennen",
+          "format": "process",
+          "statement": "Erster Kontakt → Abklärung und Diagnose → Stabilisierung (optional) → traumafokussierte Psychotherapie → Abschluss und Blick nach vorn",
+          "understood": "Reihenfolge und Dauer des Weges auf einen Blick, und dass nicht jeder Schritt bei allen nötig ist – das entlastet von der Erwartung, dass alles sofort beginnt.",
+          "source": "Eigene didaktische Darstellung, vereinfachter Musterweg; Abfolge und optionaler Schritt Prüfbedarf",
+          "alternative": "Geordnete Liste mit Schrittnummer und dem Wort «optional»; Textfassung über aria-describedby",
+          "reason": "Abfolge und Option werden auf einen Blick sichtbar.",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-bu-beitrag",
+          "section": "02 Was Angehörige beitragen können",
+          "goal": "Den eigenen Beitrag realistisch einschätzen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "approvalStatus": "entfällt",
+          "reason": "Text ist klarer: zwei kurze Listen ohne Beziehung, die eine Grafik erklären müsste."
+        },
+        {
+          "id": "v-bu-netz",
+          "section": "04 Ihr Netz",
+          "goal": "Erkennen, dass Unterstützung für Angehörige auf mehrere Menschen und Stellen verteilt werden kann",
+          "format": "relationship-map",
+          "statement": "«Sie» in der Mitte; Kreise für Nahe, Umfeld und fachliche Unterstützung; gestrichelt = noch nicht genutzt",
+          "understood": "Dass auch weiter entfernte Personen und Stellen mittragen können – der Abstand zur Mitte macht Nähe und Lücken sichtbar, eine Liste nicht.",
+          "source": "Eigene didaktische Darstellung (Muster I), Musterinhalt",
+          "alternative": "Nach Kreisen gegliederte Liste mit «besteht»/«wäre möglich»; Textfassung über aria-describedby",
+          "reason": "Beziehungen und Nähe sind räumlich schneller erfassbar als in einer Aufzählung.",
+          "approvalStatus": "ausstehend"
+        }
+      ]
+    },
+    {
+      "id": "seitenvorlage",
+      "title": "Seitenvorlage",
+      "href": "seitenvorlage.html",
+      "navLabel": "Vorlage",
+      "status": "draft",
+      "primaryTask": "Vorlage für eine neue Seite; nicht veröffentlichen",
+      "description": "Entwurfsvorlage des Starters. Erscheint nicht in der Navigation.",
+      "sensitiveTopics": [],
+      "visualPlan": [
+        {
+          "id": "v-vl-text",
+          "section": "Vorlage",
+          "goal": "Aufbau einer neuen Seite zeigen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Platzhalter: vor dem Bau durch den echten Visualisierungsplan ersetzen.",
+          "approvalStatus": "entfällt"
+        }
+      ]
+    }
+  ],
+  "siteUrl": "",
+  "interactionScript": "../../../components/interaktion.js"
+}

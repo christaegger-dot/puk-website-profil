@@ -1,0 +1,5 @@
+# Netlify-Vorschau des ganzen Repositorys: nicht in Suchmaschinen aufnehmen.
+# Netlify liest nur diese Datei im veröffentlichten Stamm; die _headers der Websites unter templates/website/ gelten erst für deren eigenständigen Export.
+# Keine Content-Security-Policy hier: ui_kits/website/qa.html braucht ein Inline-Skript.
+/*
+  X-Robots-Tag: noindex, nofollow
