@@ -32,7 +32,7 @@ th,td{border-bottom:1px solid var(--border-hairline);padding:4px 8px;text-align:
 <h1 style="margin-top:24px">Interaktionen</h1>
 <table><thead><tr><th>Prüfung</th><th>Erwartet</th><th>Ergebnis</th></tr></thead><tbody id="func"></tbody></table>
 <div id="stage"></div>
-<script src="../../templates/website/psychoeducation-site-starter/tools/contract.js?v=r4-3"></script>
+<script src="../../templates/website/psychoeducation-site-starter/tools/contract.js?v=r4-4"></script>
 <script>
 const VIEWS=['start','situationsnavigator','kontaktwegweiser','gespraechshilfe','angebotsnavigator','grundlagenkapitel','handlungsuebersicht','transfer-erholung','beispiel-visualisierung','visualisierungsmuster','site:index','site:beziehungen-verstehen','site:behandlung-verstehen','site:unterstuetzung-finden'];
 const RUNS=[];
@@ -69,7 +69,11 @@ doc.querySelectorAll('[data-safety-access]').forEach(e=>{if(e.dataset.safetyAcce
 doc.querySelectorAll('[data-placeholder]').forEach(e=>{if(!vis(e))iss.push('Platzhalter unsichtbar');});
 if(!doc.querySelector('link[rel=icon]'))iss.push('Favicon-Link fehlt');if(!/^de/.test(doc.documentElement.lang))iss.push('lang fehlt');return iss;}
 function accName(doc,el){const l=el.getAttribute('aria-labelledby');if(l)return l.split(/\s+/).map(id=>(doc.getElementById(id)||{}).textContent||'').join(' ').trim();return (el.getAttribute('aria-label')||'').trim();}
-function figAudit(doc){const m=doc.querySelector('main');const iss=[];
+/* Prüfbefund 09.10.2026: Kontrast von Text in Figuren, Vertiefungen, Links und Hinweiskästen (WCAG 1.4.3). Hintergrund = nächster deckender Grund. */
+function lumOf(c){const m=(c||'').match(/[\d.]+/g);if(!m||m.length<3)return null;const a=m.length>3?+m[3]:1;const v=m.slice(0,3).map(x=>{x=x/255;return x<=0.03928?x/12.92:Math.pow((x+0.055)/1.055,2.4);});return {L:0.2126*v[0]+0.7152*v[1]+0.0722*v[2],a};}
+function contrastAudit(doc){const win=doc.defaultView;const out=new Set();const bg=el=>{for(let e=el;e;e=e.parentElement){const l=lumOf(win.getComputedStyle(e).backgroundColor);if(l&&l.a>0.5)return l.L;}return 1;};
+doc.querySelectorAll('main summary,main a,main figure p,main figure dt,main figure dd,main figure li,main figure h3,main .puk-longform__boundary,main .puk-longform__boundary a').forEach(e=>{if(!e.getClientRects().length||!e.textContent.trim())return;const cs=win.getComputedStyle(e);const f=lumOf(cs.color);if(!f||f.a<0.5)return;const b=bg(e);const cr=(Math.max(f.L,b)+0.05)/(Math.min(f.L,b)+0.05);const fs=parseFloat(cs.fontSize),fw=parseInt(cs.fontWeight,10)||400;const need=(fs>=24||(fs>=18.66&&fw>=700))?3:4.5;if(cr<need-0.005)out.add(e.tagName.toLowerCase()+(typeof e.className==='string'&&e.className?'.'+e.className.split(' ')[0]:'')+' '+cr.toFixed(2)+':1');});return [...out];}
+function figAudit(doc){const m=doc.querySelector('main');const iss=[];const ct=contrastAudit(doc);if(ct.length)iss.push('Kontrast unter AA: '+ct.slice(0,4).join(', '));
 m.querySelectorAll('figure').forEach((f,i)=>{const cap=f.querySelector('figcaption');if(!(cap&&cap.textContent.trim()))iss.push('figure '+i+' ohne figcaption');if(!accName(doc,f)&&!(cap&&cap.textContent.trim()))iss.push('figure '+i+' ohne Namen');const d=f.getAttribute('aria-describedby');if(d&&!d.split(/\s+/).every(id=>doc.getElementById(id)))iss.push('figure '+i+' describedby fehlt');});
 m.querySelectorAll('table').forEach((t,i)=>{if(!(t.caption&&t.caption.textContent.trim()))iss.push('table '+i+' ohne caption');if(!t.querySelector('th[scope]'))iss.push('table '+i+' ohne th[scope]');});
 m.querySelectorAll('[role=img]').forEach((e,i)=>{if(!accName(doc,e))iss.push('role=img '+i+' ohne Namen');});

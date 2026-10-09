@@ -8,7 +8,7 @@ Schreibregeln für psychoedukative Websites der Fachstelle Angehörigenarbeit, a
 - Anrede pro Material festlegen (Sie oder du) und über das ganze Material halten.
 - Zielgruppe, Absenderrolle und Einsatz (selbständig gelesen, in der Beratung abgegeben, beides) vor dem Schreiben klären. Absenderin auf Websites: Fachstelle Angehörigenarbeit, PUK.
 - Angehörige, betroffene Menschen und ihre unterschiedlichen Bedürfnisse mitdenken.
-- **Zuständigkeit:** Die Fachstelle bietet Beratung und Psychoedukation, keine Krisenintervention. Psychoedukative Texte enthalten keine Krisennummern und keinen Notfallblock; beides nicht einfügen und nicht als Ergänzung empfehlen. Zulässig ist ein einziger knapper Zuständigkeitsverweis, der ohne Nummern auf die zuständigen Stellen verweist (Fusszeile oder Impressum). Inhalte zum Umgang mit Krisen (Frühwarnzeichen, Krisenplan) sind Psychoedukation.
+- **Zuständigkeit:** Die Fachstelle bietet Beratung und Psychoedukation, keine Krisenintervention. Psychoedukative Texte enthalten keine Krisennummern und keinen Notfallblock; beides nicht einfügen und nicht als Ergänzung empfehlen. Zulässig ist ein einziger knapper Zuständigkeitsverweis, der ohne Nummern auf die zuständigen Stellen verweist (Fusszeile oder Impressum). Wo ein Text zum Handeln in einer akuten Lage anleitet, folgt unmittelbar der **Verweis im Text** mit dem geprüften Wortlaut (Platzhalter, Abschnitt «Zuständigkeit» im README). Inhalte zum Umgang mit Krisen (Frühwarnzeichen, Krisenplan) sind Psychoedukation.
 
 ## 1. Zusammenhängend und verständlich
 
@@ -32,7 +32,7 @@ Schreibregeln für psychoedukative Websites der Fachstelle Angehörigenarbeit, a
 - Kein Ton von Fachanweisung, therapeutischem Skript oder Verwaltungsmitteilung. Konkrete Beobachtungen, Wünsche, Entscheidungen oder Angebote benennen.
 - Anteilnahme und eigene Grenze passen zusammen; eine Grenze braucht keine lange Rechtfertigung und kein verpflichtendes Hilfsangebot danach.
 - Zusagen (Zeit, Erreichbarkeit, weitere Gespräche, Unterstützung) nur im Umfang des tatsächlichen Angebots.
-- Beispiele als anpassbare Anregung kennzeichnen («So könnte es klingen») und zur Situation passend formulieren, nicht überall dasselbe Muster.
+- Beispiele als anpassbare Anregung kennzeichnen («So könnte es klingen»; Gegenüberstellungen «eher problematisch / eher hilfreich» mit der Komponente `.puk-say`, nicht als Fliesstext mit Zeilenumbruch) und zur Situation passend formulieren, nicht überall dasselbe Muster.
 - Keine redaktionelle Absicherung im Beispiel: «Möglicher Wortlaut, keine Erfolgsgarantie» unterbricht das Beispiel; ein sachlich nötiger Hinweis gehört verständlich erklärt an eine andere Stelle.
 
 | Klingt technisch | Natürlicher (im passenden Zusammenhang) |
