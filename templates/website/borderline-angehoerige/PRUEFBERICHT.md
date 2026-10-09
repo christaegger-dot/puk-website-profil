@@ -26,58 +26,79 @@ Dazu 5 leichte Befunde zu Bericht und Abgleich. Die erste und zweite Prüfrunde 
 
 Nach jedem Bau ohne Nachfrage ausfüllen: Visualisierungs-Check wie unten, mit Beleg je Punkt. Arbeitsstand, keine Prüfstufe.
 
-**Stand 09.10.2026 · Korrektur Etappe 1e · bauende Sitzung (Claude Code).** Umgesetzt ist `KORREKTUR-ETAPPE-1E.md`:
-
-- Abschnitt 3: `verstehen`, Abbildung 2, Stelle 2.
-- Abschnitt 4: `beziehungen`, neu in einfacher Sprache.
-
-`index` und `grenzen` sind unverändert. Gekürzt wurde nichts; der Richtwert gilt nicht (1E, Abschnitt 2). Die Prüfstufen bleiben offen. Diese Selbstprüfung ersetzt die der Korrektur 1d und ist nicht die Stufe «Visualisierungs-Check».
-
-**Nachtrag 09.10.2026 · Profil-Update 2026-10-09c (Build r4-5).** Die Werkzeuge der Website sind auf Build r4-5 nachgezogen und die Seiten neu gebaut. Inhalte und Figuren sind unverändert; Werte und Matrix unten gelten weiter. Das Produktionsgate prüft neu auch die Zeilen R1 bis R3 (Pre-Release-Audits). Die Statustabelle oben ist unverändert; die Zeilen R1 bis R3 trägt die Prüfsitzung ein.
+**Stand 09.10.2026 · Korrektur Etappe 1f · bauende Sitzung (Claude Code).** Umgesetzt ist `KORREKTUR-ETAPPE-1F.md`: `verstehen` und `grenzen` in einfacher Sprache, mit «Was Sie tun können» (Abschnitt 3). `index` und `beziehungen` sind unverändert. Der Richtwert gilt nicht (1F, Abschnitt 2). Die Prüfstufen bleiben offen. Diese Selbstprüfung ersetzt die der Korrektur 1e (Stand `3d3fcee`) und ist nicht die Stufe «Visualisierungs-Check».
 
 **Gates und Skripte:**
 
 - **`node tools/build.mjs`:** 15 Seiten, Build r4-5, 0 blockierend, 22 Hinweise wie bisher (8 Visualisierungen und 12 Platzhalter nicht freigegeben, `siteUrl` fehlt, Prüfbericht offen).
-- **`node tools/gate.mjs --selftest`:** 51/51 bestanden (seit Build r4-5; vorher 50/50).
-- **`node tools/gate.mjs --production`:** blockiert erwartungsgemäss mit 21 Befunden (8 × `visual-approval`, 12 × `placeholder-approval`, 1 × `review-report`). `review-report` nennt seit Build r4-5 auch «R1 Profil-Audit», «R2 Visualisierung und Laienverständlichkeit» und «R3 Freigabe-Audit», weil die Statustabelle diese Zeilen noch nicht hat.
-- **`node abgleich/pruefe-abgleich.mjs`:** **1755 Zeilen, 0 ohne Fundstelle.** Das sind 1739 Bestandszeilen und 16 neue Zeilen ohne Bestandssatz auf `beziehungen`. Ob die genannte Fassung die Aussage trägt, prüft das Skript nicht; das bleibt Aufgabe von W1.
-- **Wortlaut:** Ein Skript der bauenden Sitzung sucht jede Stelle in «…» aus 1E, Abschnitt 3 und 4, im sichtbaren Text der gebauten Seiten. Ergebnis: 61 Stellen, 0 fehlen.
-- **Weitere Messungen:** `node abgleich/kennzahlen.mjs`, `node abgleich/verneinung.mjs` (neu, zählt Sätze mit Verneinung) und `node abgleich/bedienung.mjs`; Werte unten.
+- **`node tools/gate.mjs --selftest`:** 51/51 bestanden.
+- **`node tools/gate.mjs --production`:** blockiert erwartungsgemäss mit 21 Befunden (8 × `visual-approval`, 12 × `placeholder-approval`, 1 × `review-report`). `review-report` nennt auch R1 bis R3, weil die Statustabelle diese Zeilen noch nicht hat; die Zeilen trägt die Prüfsitzung ein.
+- **`node abgleich/pruefe-abgleich.mjs`:** **1759 Zeilen, 0 ohne Fundstelle.** Das sind 1739 Bestandszeilen und 20 Zeilen ohne Bestandssatz (16 auf `beziehungen`, je 2 auf `verstehen` und `grenzen`). Ob die genannte Fassung die Aussage trägt, prüft das Skript nicht; das bleibt Aufgabe von W1.
+- **Wortlaut:** Ein Skript der bauenden Sitzung sucht jede Stelle in «…» aus 1F, Abschnitt 3, im sichtbaren Text der gebauten Seiten. Ergebnis: 52 Stellen, 49 gefunden. Die 3 übrigen sind keine Fehler:
+  - «Fragen, die helfen:» und «Sie können Risikofaktoren sein, sind aber weder notwendig noch hinreichend.» zitiert der Auftrag als Text, der ersetzt wird; beide stehen nicht mehr auf der Seite.
+  - «Was Sie tun können:** Diese Fragen helfen, eine Grenze zu finden:» enthält die Fettmarke des Auftrags; die Seite hat «Was Sie tun können: Diese Fragen helfen, eine Grenze zu finden:».
+- **Unverändert:** Ein Skript der bauenden Sitzung vergleicht die Teile, die nach 1F bleiben, mit dem Stand `ee18daf` (vor 1f). Ergebnis: alle gleich (Einzelheiten in den Tabellen unten).
+- **Weitere Messungen:** `node abgleich/kennzahlen.mjs`, `node abgleich/verneinung.mjs` und `node abgleich/bedienung.mjs`; Werte vor 1f am Stand `ee18daf` mit denselben Skripten. Werte unten.
 
 ### Auftrag verschieben
 
 | Schritt | Stand | Beleg |
 | --- | --- | --- |
-| Upload im Stamm | `KORREKTUR-ETAPPE-1E.md` aus `39ed591` in den Website-Ordner gelegt | Commit `19df18a` auf `borderline-umbau` |
-| Stamm von `main` | Datei gelöscht | Commit `c5c0e35` auf `main` |
-| Zusammenführen | `main` in `borderline-umbau`, ohne Konflikt | Merge-Commit `4bf98ab` |
+| Upload im Stamm | `KORREKTUR-ETAPPE-1F.md` aus `0d84a3c` unverändert in den Website-Ordner gelegt | Commit `199920a` auf `borderline-umbau`; `cmp` mit der Fassung aus `0d84a3c`: gleich |
+| Stamm von `main` | Datei gelöscht | Commit `8f30e15` auf `main`; im Stamm von `main` liegt kein Korrekturauftrag mehr |
+| Zusammenführen | `main` in `borderline-umbau`, ohne Konflikt | Merge-Commit `ee18daf` |
 
-### Profil-Update 2026-10-09c
+### Profil-Update 2026-10-09c (Stand vor 1f, gilt weiter)
 
 | Schritt | Stand | Beleg |
 | --- | --- | --- |
-| Patch auf `main` | vollständig angewendet, Patch-Datei gelöscht; Starter: Selbsttest 51/51, Build ohne weitere Änderung (`git apply -R --check` passt auf den gebauten Stand) | Commit `b4aeb13` auf `main` |
-| Zusammenführen | `main` in `borderline-umbau`, ohne Konflikt | Merge-Commit `2db9456` |
-| Kopie des Starters | `tools/contract.js`, `gate.html` und `README.md` aus dem Starter r4-5 übernommen, wie beim Update auf r4-4 (`a9c51b2`). `build.mjs`, `gate.mjs`, `export.mjs` und `tools/selftest/` waren schon gleich. `assetVersion` bleibt «r4-4» wie im Starter. | `diff -rq` von `tools/`, `cmp` von `gate.html` und `README.md` mit dem Starter: gleich. Selbsttest der Website 51/51 |
-| Gebaute Seiten | nur `data-puk-site-build` von «r4-4» auf «r4-5» geändert | `git diff` der 15 Seiten: keine andere Zeile geändert. Abgleich weiter 1755 Zeilen, 0 ohne Fundstelle; Wortlaut 1E weiter 61 Stellen, 0 fehlen |
+| Patch auf `main` | vollständig angewendet, Patch-Datei gelöscht; Starter: Selbsttest 51/51 | Commit `b4aeb13` auf `main` |
+| Zusammenführen und Werkzeuge | `main` in `borderline-umbau` (`2db9456`); `tools/contract.js`, `gate.html` und `README.md` aus dem Starter r4-5; `assetVersion` bleibt «r4-4» wie im Starter | Commit `3d3fcee`; `diff -rq` von `tools/` mit dem Starter: gleich |
 
-### Korrekturauftrag 1e: Stand je Abschnitt
+### Korrekturauftrag 1f: `verstehen` je Abschnitt
 
-Alle Texte stehen im Wortlaut des Auftrags in `content/beziehungen.html` und `content/verstehen.html`. Die Beleg-Spalte nennt den Abschnitt der gebauten Seite und eine Stelle daraus.
+Die Texte stehen im Wortlaut des Auftrags in `content/verstehen.html`. Die Beleg-Spalte nennt eine Stelle der gebauten Seite.
 
 | Abschnitt | Stand | Was | Beleg |
 | --- | --- | --- | --- |
-| 3 · `verstehen`, Stelle 2 | umgesetzt | <ul><li>`p.bl-kurve__hilft` («Was hilft») bei Stelle 2 entfernt.</li><li>Ansatzpunkt im Wortlaut von 1E.</li><li>`visualPlan` › `v-vs-anspannung` nachgeführt: Aussage und `entryPoint`.</li></ul> Die Fassung aus 1d mit «Was hilft» war schon umgesetzt. Auf Rückfrage in der bauenden Sitzung (09.10.2026) gilt die Fassung aus 1E. | <ul><li>`verstehen` › `anspannung`, Stelle 2: «Argumentieren Sie nicht weiter und machen Sie weniger Druck. Senken Sie Ihr eigenes Tempo, …»</li><li>«Was hilft» steht nur noch bei Stelle 1 und 3.</li><li>Bildschirmfotos der Figur bei 1280 und 360 px angesehen.</li><li>`abgleich/verstehen.md` Nr. 83, 222, 436, 440, 441, 451; Prüfbedarf 9.</li></ul> |
-| Kopf | umgesetzt | Einleitung neu; sechs Linktexte der Kapitelübersicht neu, Ziele unverändert | `beziehungen` › Kopf: «Warum kommt gut gemeinte Unterstützung manchmal ganz anders an? …»; Kapitelübersicht: «Was verbindet» · «Bedeutungsschleife» · «Was Reaktionen verschärfen kann» · «Zwei Sichten» · «Was helfen kann» · «Verantwortung und Schutz» |
-| 01 · `verbindung` | umgesetzt | Kicker, Absatz, Einleitung der Liste, vier Listenpunkte, «Was Sie tun können»; Titel unverändert | «Zuneigung, Humor, Fürsorge und gemeinsame Freude sind echt, auch wenn es Krisen gibt.» · «Was Sie tun können: Fragen Sie sich: «Was trägt unsere Beziehung – und wann gelingt der Kontakt?» …» |
-| 02 · `schleife` | umgesetzt | <ul><li>Absatz neu.</li><li>Abbildung 1: nur Kurztext und Text des Ansatzpunkts neu.</li><li>Titel, Kernaussage, Stationen, Leserichtung, Rücksprung und Legende unverändert.</li><li>`visualPlan` › `v-bz-schleife`: Zitate in Aussage und `entryPoint` im neuen Wortlaut.</li></ul> | <ul><li>Kurztext: «Das Modell ist eine mögliche Erklärung, keine sichere Aussage darüber, was eine bestimmte Person denkt oder will.»</li><li>Ansatzpunkt mit «Zum Beispiel: «Wie hast du meine Absage verstanden?»».</li><li>Vergleich mit `4bf98ab` per Skript: In Abbildung 1 sind nur diese zwei Absätze geändert, Abbildung 2 ist gleich.</li></ul> |
-| 03 · `verstaerker` | umgesetzt | <ul><li>Kicker, Titel und Einleitung neu.</li><li>Fünf Einträge: `dd` mit zwei Absätzen, der zweite «Was Sie tun können».</li><li>Station 3 mit den beiden Links wie bisher.</li><li>Station 5 mit neuem Titel.</li></ul> | <ul><li>«Station 5 · Wenn es bei anderen besser klappt» · «Das kann kränken.»</li><li>Gemessen: Absätze im `dd` 21 px wie der Fliesstext, 20 px Abstand darunter.</li><li>Bildschirmfotos bei 1280 und 360 px.</li></ul> |
-| 04 · `zwei-sichten` | umgesetzt | Absatz 1 und 2 neu, «Was Sie tun können»; Kicker, Titel und Abbildung 2 unverändert | «In einem Konflikt kann vieles zugleich stimmen. Zum Beispiel: …» · «Ob und wie stark jemand mitfühlt, lässt sich aus der Diagnose nicht ablesen.» |
-| 05 · `was-hilft` | umgesetzt | <ul><li>Kicker, Titel und Absatz neu.</li><li>Liste mit drei Punkten; Absatz «Kein Satz garantiert …».</li><li>Beide `dd` neu; W1-7 «Regulation» wird «alle schwierigen Gefühle auffangen».</li></ul> | <ul><li>«Was die Beziehung stärken kann».</li><li>«Sie sollte aber weder alle schwierigen Gefühle auffangen noch eine Behandlung ersetzen.»</li></ul> |
-| 06 · `verantwortung` | umgesetzt | <ul><li>Absatz 1 bis 4 neu; Link auf `grenzen.html#gewalt` wie bisher.</li><li>`<p data-responsibility-inline></p>` unverändert direkt nach Absatz 3.</li><li>«Was Sie tun können» mit Link `index.html#beratung`, Form wie auf `grenzen` › `kontakt`.</li><li>«Grundlage» neu, Quellenliste unverändert.</li></ul> | Gebaute Seite: Auf «… Dann braucht es eine fachliche Einschätzung.» folgt der Verweis im Text «Sorgen Sie sich akut um das Leben oder die Sicherheit eines Menschen, …». Bildschirmfotos bei 1280 und 360 px. |
-| Regeln (Abschnitt 2) | eingehalten | <ul><li>Keine eigenen Formulierungen, nichts weggelassen.</li><li>8 × `<p><strong>Was Sie tun können:</strong> …</p>`.</li><li>Kein neues CSS.</li><li>Abgleich mit «umformuliert (einfache Sprache, 1e)» und «neu (1e)».</li></ul> | <ul><li>Wortlaut-Skript: 61 Stellen, 0 fehlen.</li><li>`git diff 4bf98ab -- borderline.css`: leer.</li><li>Keine `style`-Attribute, keine `tel:`-Links.</li><li>`abgleich/beziehungen.md`: 62 Zeilen umformuliert, 16 Zeilen ohne Bestandssatz am Ende (13 «neu (1e)»).</li><li>`abgleich/README.md`, Abschnitt «Korrektur Etappe 1e».</li></ul> |
+| Kopf | umgesetzt | Einleitung neu, drei Sätze | «Verstehen kann helfen, manches anders zu deuten: einen heftigen Streit nicht vorschnell als Bosheit, …» · «Diese Seite erklärt, was hinter manchem Verhalten stehen kann – und was Sie in schwierigen Momenten tun können.» |
+| 01 · `erleben` | umgesetzt | drei Absätze neu; «Was Sie tun können» im Fliesstext | «Das ist nicht bei allen Menschen mit Borderline so.» · «Was Sie tun können: Nehmen Sie Ihre eigenen Gefühle ernst, auch die widersprüchlichen. …» |
+| 02 · `borderline` | umgesetzt | drei Absätze neu, Absatz 2 fett wie bisher; Quellenzeile unverändert | «Die Diagnose Borderline-Persönlichkeitsstörung kann unter anderem beschreiben: …» · fett: «Die Diagnose allein sagt nichts darüber, ob von einem Menschen Gefahr ausgeht.» · «Borderline hat nicht eine einzige Ursache.» |
+| 03 · `eisberg` | umgesetzt | ein Absatz statt Absatz und Liste; «Was Sie tun können» mit Beispielfrage; Abbildung 1 unverändert | «… mitwirken – oder ganz andere Erfahrungen.» · «Dann können Sie fragen: «Wie ist es gerade für dich?»» · Skript: Abbildung 1 gleich wie `ee18daf` |
+| 04 · `anspannung` | umgesetzt | Absatz neu; Abbildung 2 unverändert | «Zwischentöne und die gemeinsame Geschichte geraten dann leichter aus dem Blick.» · «Das erklärt manches. Die Verantwortung für das eigene Verhalten bleibt trotzdem. Bei Gefahr hat Schutz Vorrang.» · Skript: Abbildung 2 gleich |
+| 05 · `bewertungen` | umgesetzt | Absatz neu; «Was Sie tun können:» als eigener Absatz vor der nummerierten Liste mit drei Punkten; Abbildung 3 unverändert | «Das geschieht ohne Absicht.» · Punkt 3: «… Eine ruhige Antwort ist ein Angebot, nicht Ihre Pflicht.» · Skript: Abbildung 3 gleich |
+| 06 · `mythen`, Abbildung 4 | umgesetzt | drei Einordnungen: «Angehörige sind schuld.» (Hauptsatz und Erklärung), «Borderline ist dasselbe wie Trauma.» (letzter Satz), «Borderline betrifft nur Frauen.» (Erklärung) | «Angehörige sind nicht die Ursache der Erkrankung und nicht für die Genesung verantwortlich.» · «Sie führen aber nicht zwingend zu Borderline, und Borderline kann auch ohne sie entstehen.» · «… teils keine statistisch bedeutsamen Unterschiede zwischen den Geschlechtern.» · Skript: In Abbildung 4 sind genau diese drei Teile anders, die übrigen fünf gleich |
+| Unverändert | geprüft | Oberzeile, H1, Seitentitel, Wegweiser, Abbildungen 1 bis 3, Abschnittstext von 06 mit dem Suizid-Absatz und dem Verweis im Text, Abschnitt 07, alle Quellenzeilen; Kicker, Titel und Linkziele | Skript gegen `ee18daf`: alles gleich. Auf «… Das kann helfen, die Lage zu verstehen.» folgt weiter `<p data-responsibility-inline></p>` |
 
-### Wortzahl und Verneinungen auf `beziehungen`
+### Korrekturauftrag 1f: `grenzen` je Abschnitt
+
+Die Texte stehen im Wortlaut des Auftrags in `content/grenzen.html`.
+
+| Abschnitt | Stand | Was | Beleg |
+| --- | --- | --- | --- |
+| Kopf | umgesetzt | Einleitung neu; Hinweis darunter neu, Link wie bisher | «Wie die andere Person reagiert, können sie aber nicht garantieren.» · «Bei Bedrohung oder Gewalt geht Schutz vor jedem Gespräch: Wenn Gewalt oder Bedrohung vorkommt.» (Link auf `#gewalt`) |
+| 01 · `erkennen` | umgesetzt | Absatz neu; «Fragen, die helfen:» wird «Was Sie tun können: Diese Fragen helfen, eine Grenze zu finden:»; Liste und Quellenzeile unverändert | «Solche Signale beweisen nicht, dass jemand eine Grenze verletzt hat, und zeigen auch nicht sicher, woher die Belastung kommt.» |
+| 03 · `arten` | umgesetzt | Absatz neu; erster Satz von «Zeit und Erreichbarkeit» neu; Beispielsatz und übrige Einträge unverändert | «Eine Grenze beschreibt, was für Sie tragbar ist und was Sie selbst tun – nicht, was andere tun müssen.» · «Sie dürfen Zeiten anbieten, in denen Sie erreichbar sind. Ständig verfügbar sein müssen Sie nicht.» |
+| 04 · `reihenfolge` | umgesetzt | letzter Satz neu | «Wenige wichtige Grenzen, die Sie verlässlich halten, tragen mehr als viele.» |
+| 06 · `saetze` | umgesetzt | drittes Beispiel, «eher hilfreich», neu | «Ich bin gerne für dich da – und ich kann nicht dein ganzes Netz sein. Lass uns zusammen schauen, wer dich sonst noch unterstützen kann.» |
+| 07 · `konsequenz` | umgesetzt | Absatz 1, «Was Sie tun können» mit Beispielsatz, drei Absätze | «Zum Beispiel: «Ich brauche jetzt Abstand. Ob und wann wir weiterreden, kläre ich später.»» · «Ein Schuldgefühl heisst nicht, dass Sie etwas falsch gemacht haben. Verlässlich sein heisst nicht, starr zu sein.» |
+| 08 · `kontakt` | umgesetzt | zwei Absätze neu, Liste unverändert; «Was Sie tun können» mit dem Link wie bisher | «Die Beziehung zu erhalten, ist kein Ziel, das Sie erreichen müssen.» · Link «Beratung der Fachstelle Angehörigenarbeit» auf `index.html#beratung` |
+| 09 · `rollen` | umgesetzt | Begriffsliste (`dl`) mit drei Einträgen statt eines Absatzes, danach ein Absatz | dt «Partnerin oder Partner», «Eltern eines erwachsenen Kindes», «Erwachsenes Kind» · «In jeder Rolle dürfen Ihre Gesundheit und Ihr eigenes Leben Gewicht haben.» |
+| Unverändert | geprüft | Oberzeile, H1, Seitentitel, Wegweiser, 02 mit Abbildung 1, 05 mit Abbildung 2, der ganze Abschnitt 10 «Schutz» (Sicherheit, Verweis im Text, Opferhilfe, Kinder), alle Quellenzeilen; Kicker, Titel und Linkziele | Skript gegen `ee18daf`: alles gleich |
+
+### Regeln des Auftrags (Abschnitt 2)
+
+| Regel | Stand | Beleg |
+| --- | --- | --- |
+| Wortlaut, nichts weglassen, Ungenanntes bleibt | eingehalten | Wortlaut-Skript (oben); Vergleich der unveränderten Teile (oben) |
+| «Was Sie tun können» | eingehalten | je 3 × `<p><strong>Was Sie tun können:</strong> …</p>`. `verstehen` 01 und 03 im Fliesstext, 05 als eigener Absatz vor der Liste; `grenzen` 01 vor der Liste, 07 und 08 im Fliesstext. Kein `dd` mit «Was Sie tun können» auf diesen Seiten |
+| Kein neues CSS | eingehalten | `git diff ee18daf -- '*.css'`: leer. Geändert sind nur `content/verstehen.html`, `content/grenzen.html`, die beiden gebauten Seiten und `site.config.json` |
+| Abgleich | eingehalten | `abgleich/verstehen.md`: 50 Zeilen «umformuliert (einfache Sprache, 1f)», 2 «neu (1f)». `abgleich/grenzen.md`: 62 Zeilen umformuliert, dazu 1 umformuliert und 1 «neu (1f)» ohne Bestandssatz. `abgleich/beziehungen.md`: 3 Zeilen mit Ort auf `verstehen` umformuliert. Prüfskript 0 ohne Fundstelle. `abgleich/README.md`, Abschnitt «Korrektur Etappe 1f» |
+| Frühere Wortlaute ersetzt | eingehalten | 1b B-1 in `erkennen` und `rollen`, B-4 in Annahme 5 und in der Annahme zu Frauen; die übrigen Wortlaute aus B-3 und B-4 stehen unverändert (`reihenfolge`, `dear`, `konsequenz`). Prüfbedarf `verstehen` 12, `grenzen` 8 |
+| Sicherheit (Abschnitt 1) | eingehalten | `grenzen` › `gewalt`, Abschnittstext von `verstehen` › `mythen` und die Verweise im Text: Skript gegen `ee18daf` gleich |
+| `visualPlan` | nachgeführt | `v-gr-kontakt`: Zitat in der Begründung im neuen Wortlaut. `v-gr-rollen`: Begründung nennt die Begriffsliste. Kein Gate-Hinweis `visual-plan` |
+
+### Wortzahl und Verneinungen
 
 Wörter mit `abgleich/kennzahlen.mjs`, Verneinungen mit `abgleich/verneinung.mjs`.
 
@@ -85,68 +106,86 @@ Wörter mit `abgleich/kennzahlen.mjs`, Verneinungen mit `abgleich/verneinung.mjs
 
 **Zählweise:**
 
-- **Neu:** sichtbarer Text je Blockelement; Überschriften zählen als Satz.
+- **Neu:** sichtbarer Text je Blockelement, auch in Abbildungen; Überschriften zählen als Satz.
 - **Alt:** je Zeile des Bestands.
-- **«vor 1e»:** gemessen am Stand `4bf98ab`, mit `--seiten`.
+- **«vor 1f»:** gemessen am Stand `ee18daf`, mit `--seiten`.
 
-| | Bestand | vor 1e | nach 1e |
-| --- | ---: | ---: | ---: |
-| Wörter | 2149 | 1164 | 1564 (+400, +34 %) |
-| Sätze | 251 | 127 | 167 |
-| Sätze mit Verneinung | 60 (24 %) | 31 (24 %) | 33 (20 %) |
-| Absicherungen je 100 Wörter | 3,82 | 3,69 | 4,48 |
+| | `verstehen` Bestand | vor 1f | nach 1f | `grenzen` Bestand | vor 1f | nach 1f |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Wörter | 2524 | 1456 | 1583 (+127, +9 %) | 2985 | 1554 | 1621 (+67, +4 %) |
+| Sätze | 291 | 179 | 190 | 389 | 200 | 205 |
+| Sätze mit Verneinung | 55 (19 %) | 38 (21 %) | 37 (19 %) | 75 (19 %) | 43 (22 %) | 43 (21 %) |
+| Absicherungen je 100 Wörter | 2,54 | 2,82 | 2,91 | 2,41 | 2,06 | 2,28 |
 
-| Abschnitt | Wörter vor → nach 1e | Sätze mit Verneinung vor → nach 1e |
+**`verstehen` je Abschnitt**
+
+| Abschnitt | Wörter vor → nach 1f | Sätze mit Verneinung vor → nach 1f |
 | --- | --- | --- |
-| Kopf und Kapitelübersicht | 43 → 70 | 1 von 11 → 1 von 13 |
-| 01 `verbindung` | 70 → 80 | 3 von 9 → 2 von 11 |
-| 02 `schleife` | 242 → 272 | 4 von 21 → 5 von 24 |
-| 03 `verstaerker` | 284 → 470 | 8 von 29 → 9 von 45 |
-| 04 `zwei-sichten` | 238 → 276 | 4 von 33 → 4 von 37 |
-| 05 `was-hilft` | 89 → 159 | 3 von 11 → 4 von 17 |
-| 06 `verantwortung` | 198 → 237 | 8 von 13 → 8 von 20 |
+| Kopf und Kapitelübersicht | 48 → 69 | 1 von 12 → 1 von 13 |
+| 01 `erleben` | 69 → 99 | 3 von 8 → 3 von 12 |
+| 02 `borderline` | 106 → 125 | 3 von 9 → 3 von 11 |
+| 03 `eisberg` (mit Abbildung 1) | 143 → 161 | 4 von 27 → 4 von 27 |
+| 04 `anspannung` (mit Abbildung 2) | 378 → 381 | 8 von 44 → 7 von 46 |
+| 05 `bewertungen` (mit Abbildung 3) | 233 → 236 | 3 von 28 → 3 von 28 |
+| 06 `mythen` (mit Abbildung 4) | 374 → 407 | 11 von 40 → 11 von 42 |
+| 07 `einordnung` | 105 → 105 | 5 von 11 → 5 von 11 |
+
+**`grenzen` je Abschnitt**
+
+| Abschnitt | Wörter vor → nach 1f | Sätze mit Verneinung vor → nach 1f |
+| --- | --- | --- |
+| Kopf und Kapitelübersicht | 54 → 60 | 1 von 16 → 1 von 17 |
+| 01 `erkennen` | 140 → 158 | 4 von 19 → 3 von 18 |
+| 02 `bruecke` | 161 → 161 | 5 von 26 → 5 von 26 |
+| 03 `arten` | 144 → 144 | 4 von 22 → 4 von 22 |
+| 04 `reihenfolge` | 89 → 91 | 2 von 10 → 2 von 10 |
+| 05 `dear` | 246 → 246 | 4 von 27 → 4 von 27 |
+| 06 `saetze` | 163 → 167 | 5 von 19 → 5 von 19 |
+| 07 `konsequenz` | 118 → 143 | 7 von 13 → 7 von 15 |
+| 08 `kontakt` | 84 → 97 | 3 von 14 → 3 von 14 |
+| 09 `rollen` | 73 → 72 | 0 von 8 → 1 von 11 |
+| 10 `gewalt` | 282 → 282 | 8 von 26 → 8 von 26 |
 
 **Lesart:**
 
-- Die Seite ist um 34 % länger; der Auftrag schätzt +25 %.
-- **Verneinungen:** Ihre Zahl ist nicht gesunken (31 → 33), nur ihr Anteil (24 % → 20 %), weil die neuen Sätze meist ohne Verneinung sind.
-  - **Weg:** «nicht weniger echt» in 01, «nicht immer eingebildet» und der Titel von Station 5 in 03.
-  - **Neu:** zwei Sätze («auch wenn sie nicht so gemeint ist», «Sie müssen sich dafür nicht rechtfertigen»).
-  - **Geteilt oder ergänzt:** drei Stellen, je mit einem Satz mehr mit Verneinung: Station 4 «… nicht ganz da zu sein» und «… nicht feststellen», Station 5 in zwei Sätzen, «Unterstützung verteilen» in zwei Sätzen.
-  - Die meisten Verneinungen sind Absicherungen über die Person, die der Auftrag ausdrücklich behält (1E, Abschnitt 1).
-- **Absicherungen:** 3,69 → 4,48 je 100 Wörter. Die neuen Sätze enthalten «kann» und «können», zum Beispiel «Eine kurze, verlässliche Ankündigung kann helfen».
-- **`verstehen`:** 1461 → 1456 Wörter (Stelle 2 ohne «Was hilft»). Absicherungen 2,82 je 100 Wörter. Sätze mit Verneinung: 38 von 179.
+- **Länge:** `verstehen` +9 %, `grenzen` +4 %. Der Richtwert gilt nicht (1F, Abschnitt 2).
+- **Verneinungen:** Ihre Zahl sinkt kaum (`verstehen` 38 → 37, `grenzen` 43 → 43), ihr Anteil leicht (21 % → 19 %, 22 % → 21 %).
+  - **Weg:** «… hebt die Verantwortung für das eigene Verhalten aber nicht auf» (`anspannung`, jetzt «… bleibt trotzdem»); in `erkennen` werden zwei Sätze mit Verneinung zu einem.
+  - **In anderer Form behalten:** die meisten Stellen, zum Beispiel «Die Diagnose allein sagt nichts darüber, …» statt «… erlaubt keine Aussage darüber …», «Ständig verfügbar sein müssen Sie nicht.» statt «… keine Verpflichtung zur ständigen Verfügbarkeit», «Verlässlich sein heisst nicht, starr zu sein.» statt «Verlässlichkeit bedeutet nicht Starrheit.»
+  - **Neu mit Verneinung:** `rollen` «… keine Frage von moralisch richtig oder falsch.» (vorher «… darf ohne moralische Bewertung entschieden werden.»).
+  - Viele Verneinungen sind Absicherungen über die Person, Ursachen und Diagnose, die der Auftrag ausdrücklich behält (1F, Abschnitt 1). Alle gezählten Sätze: `node abgleich/verneinung.mjs --seite verstehen` und `--seite grenzen`.
+- **Absicherungen:** `verstehen` 2,82 → 2,91, `grenzen` 2,06 → 2,28 je 100 Wörter. Die drei Bezeichnungen «Was Sie tun können:» je Seite zählen als «können». Dazu kommen Sätze des Auftrags wie «Solche Erfahrungen können das Risiko erhöhen.»
 
 ### Seitenhöhen, Tabstopps, Pfeile
 
-Skript `node abgleich/bedienung.mjs`, Chromium, nach `load` und `document.fonts.ready`. Seitenhöhe: `document.documentElement.scrollHeight` bei 360 × 800 px. Tabstopps bei 1280 × 900 px, ab Seitenanfang, ohne Fusszeile.
+Skript `node abgleich/bedienung.mjs`, Chromium, nach `load` und `document.fonts.ready`. Seitenhöhe: `document.documentElement.scrollHeight` bei 360 × 800 px. Tabstopps bei 1280 × 900 px, ab Seitenanfang, ohne Fusszeile. «vor 1f» mit demselben Skript am Stand `ee18daf`.
 
 | Seite | Tabstopps | Seitenhöhe bei 360 px | höchste Figur bei 360 px |
 | --- | ---: | ---: | --- |
 | `index` | 10 | 3863 px | – |
-| `verstehen` | 19 | 16 854 px | Annahmen 3714 px |
+| `verstehen` | 19 | 17 551 px (vor 1f 16 854 px) | Annahmen 3975 px (vor 1f 3714 px) |
 | `beziehungen` | 16 | 15 137 px | Zwei Sichten 2359 px |
-| `grenzen` | 21 | 16 413 px | DEAR 1791 px |
+| `grenzen` | 21 | 16 895 px (vor 1f 16 413 px) | DEAR 1791 px |
 
-- **`beziehungen`:**
-  - +1 Tabstopp: der Link «Beratung der Fachstelle Angehörigenarbeit».
-  - Bei 360 px 2400 px höher (vorher 12 737 px), wegen des längeren Texts.
-  - Abbildung 1 bei 360 px: 1858 px hoch.
-- **`verstehen`:** 100 px niedriger. Abbildung 2 ist bei 360 px 3092 px hoch (vorher 3192 px).
-- **Pfeile der Schleife:** unverändert, 7,5 bis 15,3 px vor dem Zielkasten bei 1440, 1280, 768 und 720 px.
+- **Tabstopps:** unverändert. 1f bringt keinen neuen Link und kein neues Bedienelement.
+- **`verstehen`:** bei 360 px 697 px höher (längerer Text, drei Absätze «Was Sie tun können», längere Einordnungen in Abbildung 4).
+- **`grenzen`:** bei 360 px 482 px höher (längere Abschnitte 01, 07 und 08, `rollen` als Begriffsliste).
+- **Pfeile der Schleife (`beziehungen`):** unverändert, 7,5 bis 15,3 px vor dem Zielkasten bei 1440, 1280, 768 und 720 px.
 - **Fokus:** Alle Tabstopps haben einen sichtbaren Fokus; der erste ist «Zum Hauptinhalt».
 
 **Technische Stichprobe in Chromium (Playwright), kein Ersatz für Stufe 5:**
 
 - **Überlauf:** keiner bei 320, 360, 768, 1280 und 1440 px auf den vier Seiten.
 - **Kontrast nach WCAG 1.4.3:** für allen sichtbaren Text in `main` gemessen, Vertiefungen geöffnet; kein Wert unter AA.
-- **Reduzierte Bewegung:** keine laufende Animation.
+- **Reduzierte Bewegung:** 1f ändert kein CSS und kein Skript.
+- **Keine `style`-Attribute und keine `tel:`-Links** in den gebauten Seiten und in `content/`.
 - **Theme «kontrast»:**
-  - `beziehungen` › `schleife`, `verstaerker` und `verantwortung` bei 1280 px angesehen: lesbar, nur Token-Farben.
+  - Bei 1280 px angesehen: `verstehen` › `erleben`, `eisberg` und `bewertungen`; `grenzen` › `erkennen`, `konsequenz` und `rollen`. Lesbar, nur Token-Farben.
   - In SVG keine festen Farbattribute.
 - **Bildschirmfotos angesehen:**
-  - `beziehungen` ganz bei 1280 und 360 px.
-  - `verstehen`, Abbildung 2, bei 1280 und 360 px.
+  - `verstehen` und `grenzen` ganz bei 1280 px (in Ausschnitten bis zur Fusszeile) und bei 360 px.
+  - Abbildung 4 bei 360 px ganz.
+  - Kein Überlauf, keine abgeschnittene Zeile. «Was Sie tun können» steht fett am Absatzanfang wie auf `beziehungen`.
 - **Nicht geprüft:** Screenreader, Hardwaretastatur und Touch (Stufe 5, Person).
 
 ### Kennzahlen aller Seiten (Skript `abgleich/kennzahlen.mjs`)
@@ -156,20 +195,15 @@ Gemessen an der alten Seite allein, mit derselben Zählweise für alt und neu (`
 | Seite | Alt: Seite allein | Neu | Neu / alt | Richtwert | Richtwert + 5 % | Absicherungen je 100 Wörter alt → neu | Semikolons im Fliesstext alt → neu |
 | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
 | `index` | 433 | 238 | 55 % | – | – | 1,85 → 1,68 | 1 → 0 |
-| `verstehen` | 2524 | 1456 | 58 % | 1300 | 1365 | 2,54 → 2,82 | 12 → 0 |
+| `verstehen` | 2524 | 1583 | 63 % | 1300 | 1365 | 2,54 → 2,91 | 12 → 0 |
 | `beziehungen` | 2149 | 1564 | 73 % | 1100 | 1155 | 3,82 → 4,48 | 6 → 1 |
-| `grenzen` | 2985 | 1554 | 52 % | 1500 | 1575 | 2,41 → 2,06 | 4 → 0 |
+| `grenzen` | 2985 | 1621 | 54 % | 1500 | 1575 | 2,41 → 2,28 | 4 → 0 |
 
 ## Visualisierungs-Check
 
 Selbstprüfung als Matrix je Figur (Vorlage im Starter). E = erfüllt · T = teilweise · N = nicht erfüllt · – = nicht anwendbar. Belege und Gründe für T und N stehen unter der Matrix.
 
-Korrektur 1e ändert zwei Figuren:
-
-- **`v-bz-schleife`:** Kurztext und Text des Ansatzpunkts.
-- **`v-vs-anspannung`:** Stelle 2 ohne «Was hilft».
-
-Die übrigen Spalten sind wie in Korrektur 1d.
+Korrektur 1f ändert nur eine Figur: **`v-vs-mythen`** (Abbildung 4), drei Einordnungen. Die Abbildungen 1 bis 3 auf `verstehen` und 1 und 2 auf `grenzen` sind per Skript gleich wie vor 1f; `beziehungen` ist unverändert. Die übrigen Spalten sind wie in Korrektur 1e.
 
 | Nr. | Prüfpunkt | `v-vs-eisberg` | `v-vs-anspannung` | `v-vs-bewertungen` | `v-vs-mythen` | `v-bz-schleife` | `v-bz-sichten` | `v-gr-bruecke` | `v-gr-dear` |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -188,22 +222,20 @@ Die übrigen Spalten sind wie in Korrektur 1d.
 | 13 | Theme «Hoher Kontrast» | E | E | E | E | E | E | E | E |
 | 14 | Fachlich freigegeben | N | N | N | N | N | N | N | N |
 
-**Belege für die mit 1e geänderten Figuren**
+**Belege für die mit 1f geänderte Figur `v-vs-mythen`**
 
-- **`v-vs-anspannung`, 1 und 2:** `statement` nennt Stelle 2 mit Ansatzpunkt ohne eigenes «Was hilft» (Korrektur 1e, Abschnitt 3). `entryPoint` nennt zuerst «nicht weiter argumentieren, weniger Druck machen». Kein Gate-Hinweis `visual-plan`.
-- **`v-vs-anspannung`, 5:** Stelle 2 «Es wird eng», in Zeichnung und Liste mit doppeltem Ring. Ansatzpunkt im Wortlaut von 1E. Er beschreibt eigene Möglichkeiten («Senken Sie Ihr eigenes Tempo») und entlastet: «Sie müssen die andere Person nicht beruhigen.»
-- **`v-vs-anspannung`, 9, T:** Die Liste ist in vier Stellen gegliedert, trägt aber viel Text: Bei 360 px ist die Figur 3092 px hoch (vorher 3192 px).
-- **`v-bz-schleife`, 4:** Kernaussage unverändert. Kurztext drei Sätze im Wortlaut von 1E: «Was die eine Person tut, kann für die andere zum Anlass werden. Das Modell ist eine mögliche Erklärung, …»
-- **`v-bz-schleife`, 5:** Ansatzpunkt bei Station 5 mit Beispielfrage «Wie hast du meine Absage verstanden?». Er nennt eigene Möglichkeiten und keine Pflicht: «Sie müssen die Schleife nicht allein unterbrechen: Der Ansatzpunkt ist eine Möglichkeit, keine Pflicht.»
-- **`v-bz-schleife`, 10:** Die Grenze des Modells steht im Kurztext («keine sichere Aussage darüber, was eine bestimmte Person denkt oder will»).
-- **`v-bz-schleife`, 13:** Bildschirmfoto mit `data-theme="kontrast"` bei 1280 px angesehen.
-- **`v-bz-schleife`, 2 und 6, T:** wie bisher. Die Planbegründung von `v-bz-was-hilft` ist mit 1e nachgeführt (drei Stellen zum Unterbrechen als Liste). Ob F-W2-02 damit erledigt ist, entscheidet W2.
+- **1 und 2:** Die Planzeile zitiert keine der geänderten Einordnungen; kein Gate-Hinweis `visual-plan`.
+- **4:** Kernaussage «Borderline ist behandelbar, und Angehörige sind nicht schuld.» und Kurztext unverändert (Skript).
+- **10:** Die neuen Einordnungen behalten die Absicherungen: «Sie führen aber nicht zwingend zu Borderline, …», «… teils keine statistisch bedeutsamen Unterschiede …». Quellen und Kennzeichnung unverändert.
+- **12:** Bei 320 und 360 px kein Überlauf; Bildschirmfoto bei 360 px angesehen, alle Einordnungen ganz lesbar.
+- **3, 7, 8, 9, T:** weiter eine Kastenreihe, bei 360 px jetzt 3975 px hoch (vorher 3714 px; F-V-11, Fachstelle).
 
-**Übrige Figuren und Punkte:** Belege wie in der Selbstprüfung 1d und der dritten Prüfrunde. Gründe für T:
+**Übrige Figuren und Punkte:** Belege wie in der Selbstprüfung 1e und der dritten Prüfrunde. Gründe für T:
 
-- **3, 7, 8, 9, Annahmen:** Kastenreihe, bei 360 px 3714 px hoch (F-V-11, Fachstelle).
+- **2 und 6, Schleife:** wie bisher; ob F-W2-02 mit der Planbegründung von `v-bz-was-hilft` erledigt ist, entscheidet W2.
 - **8, Zwei Sichten:** Die Linienart unterscheidet die Sichten, hat im Profil aber keine feste Bedeutung (P-7).
 - **8, DEAR:** vier gefüllte Punkte (P-6, Profil).
+- **9, Anspannungskurve:** Die Liste trägt viel Text; bei 360 px 3092 px hoch (unverändert).
 - **12, Pendel:** schmal ohne Beschriftungen im Bild (R3-V-03, laut Korrektur 1c hingenommen).
 
 **Nicht erfüllt oder offen (Selbstprüfung):**
@@ -221,24 +253,26 @@ Die übrigen Spalten sind wie in Korrektur 1d.
   | 9 | Anspannungskurve, Annahmen |
   | 12 | Pendel |
 
-- **Verneinungen auf `beziehungen`:** Die Zahl der Sätze mit Verneinung ist nicht gesunken (31 → 33), nur ihr Anteil (24 % → 20 %). Der Wortlaut ist vorgegeben; ob das dem Anlass der Korrektur genügt, entscheidet die Fachstelle beim Lesen.
+- **Verneinungen auf `verstehen` und `grenzen`:** Ihre Zahl ist kaum gesunken (38 → 37, 43 → 43), nur ihr Anteil leicht. Der Wortlaut ist vorgegeben; ob das dem Anlass der Korrektur genügt, entscheidet die Fachstelle beim Lesen.
 - **Umfang:** Alle Wortzahlen liegen über Richtwert plus 5 %. Der Richtwert gilt nicht; über die Länge entscheidet die Fachstelle.
-  - `verstehen`: 1456 Wörter.
-  - `beziehungen`: 1564 Wörter, +34 % statt der geschätzten +25 %.
-- **Neuer Prüfbedarf:**
-  - `beziehungen` 1: «alle schwierigen Gefühle auffangen» statt W1-7.
-  - `beziehungen` 2: «Unwirklichkeitsgefühle» steht nicht mehr.
-  - `verstehen` 9: Langsamer sprechen steht nur noch sinngemäss in «Senken Sie Ihr eigenes Tempo».
-  - Fundstellen: `abgleich/beziehungen.md` und `abgleich/verstehen.md`.
+  - `verstehen`: 1583 Wörter (+127 durch 1f).
+  - `beziehungen`: 1564 Wörter.
+  - `grenzen`: 1621 Wörter (+67 durch 1f).
+- **Neuer Prüfbedarf** (Fundstellen: `abgleich/verstehen.md` und `abgleich/grenzen.md`):
+  - `verstehen` 11 und `grenzen` 7: Eine Lesung der neuen Fassungen durch die Fachstelle ist hier nicht belegt.
+  - `verstehen` 12 und `grenzen` 8: Wortlaute aus Korrektur 1b sind ersetzt.
+  - `verstehen` 13: Frage im Eisberg, neu «Wie ist es gerade für dich?».
+  - `verstehen` 14: Nr. 17 war bis 1e zu Unrecht «entfällt»; «aus der Diagnose nicht vorhersagen» steht weiterhin nicht auf der Seite.
+  - `grenzen` 9: Beispielsatz in `konsequenz` aus dem Handout `beispiel-dialog`, das nicht zu den Quellen der Tabelle gehört.
 - **Profil-Update (aus 1d weiter offen):** 11 Dateien `components/Vis*/preview.html` aus dem Patch gibt es im Repository nicht; ihre Hunks sind nicht angewendet.
 - **Offen für die Fachstelle:**
-  - Lesen der Seite `beziehungen` (1E, Abschnitt 1, nächster Schritt).
+  - Lesen von `verstehen` und `grenzen` in der neuen Fassung.
   - R3-W1-05, R3-W1-06, F-V-11, F-V-05, F-W1-11, F-W2-02, F-W2-03.
   - Prüfbedarf in `abgleich/*.md`.
   - Alle fachlichen Freigaben.
+- **Statustabelle:** Die Zeilen R1 bis R3 fehlen noch; die Prüfsitzung trägt sie ein.
 - **Profil (später):** P-6, P-7, P-9.
 - **Offen für Stufe 5:** Screenreader-Läufe, Hardwaretastatur und Touch.
-
 
 ## Dritte Prüfrunde (09.10.2026, nach Korrektur 1b)
 
