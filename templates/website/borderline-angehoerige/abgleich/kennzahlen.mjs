@@ -6,7 +6,8 @@
 //   node abgleich/kennzahlen.mjs --seiten <ordner>     gebaute Seiten aus einem anderen Ordner (Standard: der Website-Ordner)
 //   node abgleich/kennzahlen.mjs --abschnitte          zusätzlich Wörter je Abschnitt der neuen Seiten
 //
-// Neu: sichtbarer Text in <main> der gebauten Seite, Vertiefungen (details) eingeschlossen, ohne SVG und .puk-vis-sr.
+// Neu: sichtbarer Text in <main> der gebauten Seite, Vertiefungen (details) eingeschlossen, ohne SVG und ohne Text nur für
+// Screenreader (.puk-sr, z. B. die Kurzbeschreibung in der Bildlegende seit Profil-Update 2026-10-09b; .puk-vis-sr).
 // Text, der nur breit oder nur schmal sichtbar ist (data-cycle-wide / data-cycle-narrow), zählt je einmal.
 // Alt: Bestandstext der alten Seite allein, ohne Kopfblock der Erhebung, Klammermarken, Bild- und Linkadressen;
 // Vorschautexte geschlossener Akkordeons zählen mit.
@@ -25,7 +26,7 @@ const C = createRequire(import.meta.url)(join(SITE, 'tools/contract.js'));
 
 const SKIP = new Set(['script', 'style', 'svg']);
 const cls = n => (n.attrs && n.attrs.class) || '';
-const isSr = n => /(^|\s)(puk-vis-sr|sr-only|puk-sr-only)(\s|$)/.test(cls(n));
+const isSr = n => /(^|\s)(puk-sr|puk-vis-sr|sr-only|puk-sr-only)(\s|$)/.test(cls(n));
 export function textOf(n, out = []) {
   for (const c of n.children || []) {
     if (c.tag === '#text') out.push(c.text);

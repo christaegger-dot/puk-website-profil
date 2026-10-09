@@ -2,11 +2,13 @@
 
 Neue Seite: `content/index.html` · Bestand: `/` (Startseite), `/selbsttest`, `/wegweiser` (Branch `borderline-bestand`, `bestand/borderline-angehoerige/texte/`). Statuswerte und Zählweise: `README.md` in diesem Ordner.
 
-**Stand 09.10.2026, Korrektur Etappe 1c (bauende Sitzung).** Eine Tabelle für jeden Satz der alten Seite und der zugeordneten Handouts (Korrektur 1b, E). Sie ersetzt die abschnittsweisen Tabellen vom 08.10.2026 und den Abschnitt «Satz für Satz» der ersten Korrektur; wo diese sich widersprachen, gilt die Zeile hier. Statuswerte, Zählweise und Skripte: `README.md`.
+**Stand 09.10.2026, Korrektur Etappe 1d (bauende Sitzung).** Eine Tabelle für jeden Satz der alten Seite und der zugeordneten Handouts (Korrektur 1b, E). Sie ersetzt die abschnittsweisen Tabellen vom 08.10.2026 und den Abschnitt «Satz für Satz» der ersten Korrektur; wo diese sich widersprachen, gilt die Zeile hier. Statuswerte, Zählweise und Skripte: `README.md`.
 
 **Korrektur 1c:** Zeilen zu K-1 bis K-5 nachgeführt; Status und Bemerkungen der Stichprobe aus den Belegen der dritten Prüfrunde (Abschnitt 4) berichtigt.
 
-**Zählung:** 255 Sätze, davon 6 übernommen, 2 gekürzt, 2 zusammengeführt, 12 verschoben, 3 geändert, 229 entfällt, 1 Bezeichnung.
+**Korrektur 1d:** Der Zuständigkeitsverweis in der Fusszeile hat einen neuen Wortlaut (D-1, Nr. 37 und 247).
+
+**Zählung:** 255 Sätze, davon 6 übernommen, 2 gekürzt, 0 zusammengeführt, 12 verschoben, 5 geändert, 229 entfällt, 1 Bezeichnung.
 
 - **Satz (Bestand):** Bestandstext in Sätze zerlegt, Listenpunkte und Zwischentitel als eigene Zeile. Die Nummer bleibt fest, damit Prüfberichte sie zitieren können. Gleiche Sätze aus Seite und Handout stehen je in ihrer Zeile.
 - **Neue Fassung:** der Satz der neuen Seite, der die Aussage trägt; «wörtlich», wenn er gleich lautet; «–», wenn der Satz entfällt oder auf eine spätere Seite vorgemerkt ist.
@@ -54,7 +56,7 @@ Neue Seite: `content/index.html` · Bestand: `/` (Startseite), `/selbsttest`, `/
 | 34 | `/` › Beratung für Sie | Die veröffentlichte Telefonnummer ist am 06.10.2026 auf der Anbieterwebsite abgeglichen. | entfällt | – | – | Profil (keine Telefonnummer) und Meta-Text (Prüfangabe) |
 | 35 | `/` › Beratung für Sie | E-Mail, Adresse und Angebotsbedingungen sind damit nicht abschliessend geprüft. | entfällt | – | – | Profil (keine Telefonnummer) und Meta-Text (Prüfangabe) |
 | 36 | `/` › Beratung für Sie | 058 384 38 00 Kontakt und Terminvereinbarung | entfällt | – | – | Profil (keine Telefonnummer) und Meta-Text (Prüfangabe) |
-| 37 | `/` › Beratung für Sie | Die Fachstelle ist kein Krisendienst. | zusammengeführt | In akuten Krisen kann sie nicht weiterhelfen. | Fusszeile | Zuständigkeitsverweis in jeder Fusszeile |
+| 37 | `/` › Beratung für Sie | Die Fachstelle ist kein Krisendienst. | geändert | Sorgen Sie sich akut um das Leben oder die Sicherheit eines Menschen, holen Sie sofort Hilfe: ärztlicher Notfalldienst oder Notfallstation, bei Gefahr die Polizei. | Fusszeile | Zuständigkeitsverweis in jeder Fusszeile, neuer Wortlaut (Korrektur 1d, D-1); dass die Fachstelle kein Krisendienst ist, sagt er nicht mehr ausdrücklich |
 | 38 | `/` › Beratung für Sie | Bei akuter Gefahr oder Unsicherheit: Soforthilfe. | entfällt | – | – | Profil (kein Krisenzugang) |
 | 39 | `/` › Beratung für Sie | Wenn Kinder mitbetroffen sind: erklären, Betreuung planen und entlasten | verschoben | – | krise (Etappe 2) | `krise` bzw. `selbstfuersorge` (Etappe 2); auf `grenzen` › `gewalt` «Wenn Kinder mitbetroffen sind» |
 | 40 | `/` › Mitgefühl und Selbstschutz gehören zusammen | Sie können Unterstützung anbieten und zugleich entscheiden, was für Sie tragbar ist. | übernommen | wörtlich | index#haltung | `haltung` |
@@ -264,7 +266,7 @@ Neue Seite: `content/index.html` · Bestand: `/` (Startseite), `/selbsttest`, `/
 | 244 | `/wegweiser` › Hilfe in belastenden Situationen | Für akute Hilfe gibt es einen gemeinsamen professionellen Kontaktweg. | entfällt | – | – | Wegweiser (`/wegweiser`): ersetzt durch die Einstiege; «Unterstützung richtet sich nach dem, was Sie gerade brauchen» sinngemäss in «Beginnen Sie dort, wo Ihr Anliegen liegt» |
 | 245 | `/wegweiser` › Hilfe in belastenden Situationen | Krisen und Belastungen können unabhängig von einer Diagnose auftreten. | entfällt | – | – | Wegweiser (`/wegweiser`): ersetzt durch die Einstiege; «Unterstützung richtet sich nach dem, was Sie gerade brauchen» sinngemäss in «Beginnen Sie dort, wo Ihr Anliegen liegt» |
 | 246 | `/wegweiser` › Hilfe in belastenden Situationen | Unterstützung richtet sich nach dem, was Sie gerade brauchen – nicht nach Diagnose, Motiven oder Charakter einer Person. | entfällt | – | – | Wegweiser (`/wegweiser`): ersetzt durch die Einstiege; «Unterstützung richtet sich nach dem, was Sie gerade brauchen» sinngemäss in «Beginnen Sie dort, wo Ihr Anliegen liegt» |
-| 247 | `/wegweiser` › Professionelle Hilfe bei akuter Gefahr oder Unsicherheit | Die Fachstelle Angehörigenarbeit bietet Beratung und Orientierung, aber keine Krisenintervention. | zusammengeführt | Die Fachstelle Angehörigenarbeit PUK berät Angehörige: angehoerigenarbeit@pukzh.ch. | Fusszeile | Zuständigkeitsverweis in jeder Fusszeile |
+| 247 | `/wegweiser` › Professionelle Hilfe bei akuter Gefahr oder Unsicherheit | Die Fachstelle Angehörigenarbeit bietet Beratung und Orientierung, aber keine Krisenintervention. | geändert | Die Fachstelle Angehörigenarbeit der PUK berät Angehörige kostenlos und vertraulich: angehoerigenarbeit@pukzh.ch. | Fusszeile | Zuständigkeitsverweis in jeder Fusszeile, neuer Wortlaut (Korrektur 1d, D-1); keine Krisenintervention nennt er nicht mehr ausdrücklich |
 | 248 | `/wegweiser` › Professionelle Hilfe bei akuter Gefahr oder Unsicherheit | Bei akuter Gefahr oder wenn Sie die Dringlichkeit nicht sicher einschätzen können, wenden Sie sich an den zuständigen Notfalldienst. | entfällt | – | – | Profil (kein Krisenzugang); der Zuständigkeitsverweis steht in jeder Fusszeile |
 | 249 | `/wegweiser` › Professionelle Hilfe bei akuter Gefahr oder Unsicherheit | Hinweise zu passenden Anlaufstellen finden Sie unter «Akute Hilfe und Notfallkontakte». | entfällt | – | – | Profil (kein Krisenzugang); der Zuständigkeitsverweis steht in jeder Fusszeile |
 | 250 | `/wegweiser` › Professionelle Hilfe bei akuter Gefahr oder Unsicherheit | Weiterführen | entfällt | – | – | Meta-Text: Verweise auf `krise`, `selbstfuersorge` (folgen mit Etappe 2) |
@@ -273,10 +275,11 @@ Neue Seite: `content/index.html` · Bestand: `/` (Startseite), `/selbsttest`, `/
 | 253 | `/wegweiser` › Das könnte Sie auch interessieren | Selbstfürsorge | entfällt | – | – | Meta-Text: Verweise auf `krise`, `selbstfuersorge` (folgen mit Etappe 2) |
 | 254 | `/wegweiser` › Das könnte Sie auch interessieren | Entlastung für Ihre eigene Situation. | entfällt | – | – | Meta-Text: Verweise auf `krise`, `selbstfuersorge` (folgen mit Etappe 2) |
 
-## Prüfbedarf für W1 (Stand 09.10.2026, Korrektur 1c)
+## Prüfbedarf für W1 (Stand 09.10.2026, Korrektur 1d)
 
-Die Korrekturen 1b und 1c haben diese Seite nicht verändert. Offen bleibt:
+Die Korrekturen 1b bis 1d haben den Inhalt dieser Seite nicht verändert; geändert ist nur die Fusszeile aller Seiten (Korrektur 1d, D-1, Nr. 37 und 247). Offen bleibt:
 
 1. **Beratung** (Korrektur W1-4): Der Wortlaut der Fachstelle steht unverändert. Davor steht wie im Bestand der Satz «Sie dürfen auch mit Erschöpfung, Schuldgefühlen oder schwierigen Entscheidungen eigene Beratung suchen.» Bitte bestätigen, dass er bleiben soll. «Vor Ort» nennt keinen Ort (F-W2-03, Hinweis an die Fachstelle).
 2. **Einstiege als Anliegen** (Korrektur W2-6): «Ich verstehe nicht, warum Gespräche so schnell kippen.» · «Wir verfehlen uns immer wieder, obwohl wir es beide gut meinen.» · «Ich kann nicht mehr und weiss nicht, wie ich Nein sagen soll.» Die zweite und dritte Formulierung stammen von der bauenden Sitzung.
 3. **Seitentitel und H1** (Korrektur W2-6): `title` «Startseite», H1 «Borderline – Orientierung für Angehörige».
+4. **Zuständigkeitsverweis** (Korrektur 1d, D-1): neuer Wortlaut in der Fusszeile, fachlich geprüft von der Fachstelle am 09.10.2026. Er sagt nicht mehr ausdrücklich, dass die Fachstelle kein Krisendienst ist (Nr. 37, 247); der zweite Satz verweist für akute Lagen auf ärztlichen Notfalldienst, Notfallstation und Polizei.

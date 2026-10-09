@@ -2,7 +2,7 @@
 
 Neue Seite: `content/beziehungen.html` · Bestand: `/verstehen/beziehungen` (keine Handouts zugeordnet). Dazu zwei Punkte aus `/verstehen` («Wenn Nähe und Belastung zusammenkommen»). Statuswerte und Zählweise: `README.md`.
 
-**Stand 09.10.2026, Korrektur Etappe 1c (bauende Sitzung).** Eine Tabelle für jeden Satz der alten Seite und der zugeordneten Handouts (Korrektur 1b, E). Sie ersetzt die abschnittsweisen Tabellen vom 08.10.2026 und den Abschnitt «Satz für Satz» der ersten Korrektur; wo diese sich widersprachen, gilt die Zeile hier. Statuswerte, Zählweise und Skripte: `README.md`.
+**Stand 09.10.2026, Korrektur Etappe 1d (bauende Sitzung).** Eine Tabelle für jeden Satz der alten Seite und der zugeordneten Handouts (Korrektur 1b, E). Sie ersetzt die abschnittsweisen Tabellen vom 08.10.2026 und den Abschnitt «Satz für Satz» der ersten Korrektur; wo diese sich widersprachen, gilt die Zeile hier. Statuswerte, Zählweise und Skripte: `README.md`.
 
 **Korrektur 1c:** Zeilen zu K-1 bis K-5 nachgeführt; Status und Bemerkungen der Stichprobe aus den Belegen der dritten Prüfrunde (Abschnitt 4) berichtigt.
 
@@ -251,7 +251,7 @@ Neue Seite: `content/beziehungen.html` · Bestand: `/verstehen/beziehungen` (kei
 | 231 | `/verstehen/beziehungen` › Das könnte Sie auch interessieren | Grundlagen zum Nachlesen: Erleben und Kontext · Eigene Rolle und Verantwortung | entfällt | – | – | Meta-Text: «Weiterführen», Lernweg, Verweise (folgen mit Etappe 2) |
 | 232 | `/verstehen/beziehungen` › Das könnte Sie auch interessieren | Bei akuter Gefahr oder Unsicherheit: Akute Hilfe und Notfallkontakte. | entfällt | – | – | Profil (kein Krisenzugang); ersetzt durch den Verweis im Text (W1-1) |
 
-## Prüfbedarf für W1 (Stand 09.10.2026, Korrektur 1c)
+## Prüfbedarf für W1 (Stand 09.10.2026, Korrektur 1d)
 
 1. **Station 2** (Korrektur 1b, D-3; R3-S-01 hingenommen): Der erste Eintrag hat drei Sätze. Die Aussagen zu Vermutungen und Empathie stehen in `zwei-sichten`: der Empathie-Satz als zweiter Satz im Kurztext von Abbildung 2, «Vermutungen …» und «Die Diagnose erlaubt weder …» im Abschnittstext. Das entspricht dem eigenen Bestandspunkt «Vermutungen können sich wie Gewissheiten anfühlen». Bitte bestätigen.
 2. **Noch gestrichen** (je Satz in der Tabelle; R3-W1-05): «Weder beweist eine abweichende Erinnerung absichtliches Lügen …» (Nr. 133), «Keine einzelne Bezugsperson kann Sicherheit allein gewährleisten», «Eigene Strategien, weitere Bezugspersonen und Fachhilfe erweitern den Spielraum», der Listenpunkt «Unterschiede, die stehen bleiben dürfen», «eine Person «handhabt» nicht die andere» und der Satz zu dauernder Verfügbarkeit (Nr. 162). Korrektur 1c kürzt nichts und nimmt diese Sätze nicht von sich aus zurück; die Fachstelle entscheidet. Wieder da sind in Korrektur 1c die «perfekte» Reaktion (Nr. 210, K-2), die vier Trennfragen (Nr. 200–203, K-4) und «Verstummen, Unwirklichkeitsgefühle oder abweichende Erinnerungen können viele Gründe haben.» (Nr. 131, K-5). Die Seite liegt bei 1198 Wörtern.

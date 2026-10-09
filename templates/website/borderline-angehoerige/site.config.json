@@ -20,11 +20,11 @@
   "disclaimer": "Diese Website ersetzt keine individuelle Abklärung, Beratung oder Behandlung.",
   "responsibility": {
     "label": "Zuständigkeit",
-    "text": "Die Fachstelle Angehörigenarbeit PUK berät Angehörige: angehoerigenarbeit@pukzh.ch. In akuten Krisen kann sie nicht weiterhelfen. Wenden Sie sich dann an den ärztlichen Notfalldienst oder eine Notfallstation, bei Gefahr an die Polizei.",
+    "text": "Die Fachstelle Angehörigenarbeit der PUK berät Angehörige kostenlos und vertraulich: angehoerigenarbeit@pukzh.ch. Sorgen Sie sich akut um das Leben oder die Sicherheit eines Menschen, holen Sie sofort Hilfe: ärztlicher Notfalldienst oder Notfallstation, bei Gefahr die Polizei.",
     "owner": "Fachstelle Angehörigenarbeit PUK",
     "reviewStatus": "geprueft",
     "reviewedBy": "Fachstelle Angehörigenarbeit PUK",
-    "reviewedAt": "08.10.2026",
+    "reviewedAt": "09.10.2026",
     "inline": {
       "text": "Sorgen Sie sich akut um das Leben oder die Sicherheit eines Menschen, holen Sie sofort Hilfe: ärztlicher Notfalldienst oder Notfallstation, bei Gefahr die Polizei.",
       "reviewStatus": "geprueft",
@@ -144,15 +144,15 @@
           "id": "v-vs-anspannung",
           "section": "04 Anspannung",
           "sectionId": "anspannung",
-          "goal": "Erkennen, dass Gesprächsfähigkeit sich mit der Anspannung verschiebt, und wissen, was in welchem Bereich hilft",
-          "format": "continuum",
-          "statement": "Achse «Anspannung im Gespräch – bei einer oder beiden Personen», ohne Stufenmarken: Denk-Modus · zunehmend angespannt · Alarm-Modus (auch als Rückzug oder Schweigen); je Bereich, was eher möglich ist und was hilft. Kurztext: Die Bereiche gehen ineinander über, sind von aussen nicht sicher ablesbar und kein Messinstrument (Korrektur V-4, 09.10.2026; Korrektur 1b, C-4). «Bei Gefahr hat Schutz Vorrang» steht im Abschnittstext, nicht in der Vertiefung (Korrektur 1b, A-2).",
-          "understood": "Dass Gesprächsfähigkeit sich mit der Anspannung verschiebt und was in welchem Bereich hilft. Das Kontinuum zeigt den Übergang, den ein Text nur behaupten kann.",
-          "source": "Eigene didaktische Darstellung, zusammengeführt aus den Handouts Alarm-Modus, Hohe Anspannung, Zustands-Landkarte und Anspannungskurve; Bezugspunkte Linehan (1993, 2015), Shields et al. (2016), Degasperi et al. (2021), Baranger et al. (2020), Santangelo et al. (2014), NICE CG78 (2009)",
-          "alternative": "Bereiche als geordnete Liste mit Überschriften; Textfassung über aria-describedby",
-          "reason": "Ein Übergang lässt sich auf einer Achse zeigen. Vier Handouts zum selben Mechanismus werden zu einer Darstellung verbunden (Verbinden statt doppeln); die Linienstärke steigt mit der Anspannung.",
+          "goal": "Erkennen, wann Reden hilft und wann eine Pause besser ist, und wissen, was an welcher Stelle hilft",
+          "format": "figure",
+          "statement": "Die Anspannungskurve (Muster A, freie Figur): eine ruhige Kurve über den Gesprächsverlauf, links tief, dann steigend, oben ein Scheitel, rechts wieder sinkend; keine Skala, keine Zahlen, keine Achse. Vier nummerierte Stellen mit Alltagsworten: 1 «Wir können sprechen», 2 «Es wird eng» (Ansatzpunkt, doppelter Ring), 3 «Es ist gerade zu viel», 4 «Später». Darunter in allen Breiten die Liste der vier Stellen mit Erklärsatz, «Was hilft», Ansatzpunkt und Beispielsätzen aus dem Handout. Kurztext: Anspannung kann ansteigen und wieder sinken, bei der anderen Person und bei Ihnen, und ist von aussen nicht sicher erkennbar. Ersetzt die Achse mit drei Bereichen (Entscheid der Fachstelle, 09.10.2026; Korrektur 1d, D-3). «Bei Gefahr hat Schutz Vorrang» steht im Abschnittstext (Korrektur 1b, A-2).",
+          "understood": "Wann Reden hilft und wann eine Pause besser ist: Die Kurve zeigt, dass Anspannung im Gespräch ansteigen und wieder sinken kann und dass dasselbe Gespräch je nach Stelle etwas anderes braucht. Als Text blieben die vier Stellen eine Aufzählung; die Kurve zeigt ihren Zusammenhang im Verlauf.",
+          "source": "Eigene didaktische Darstellung nach dem Handout «Die Anspannungskurve – Wann Reden hilft», mit Inhalten aus drei weiteren Handouts zur Anspannung (vereinfachtes Stressmodell, Hohe Anspannung, Zustands-Landkarte); Bezugspunkte Linehan (1993, 2015), Shields et al. (2016), Degasperi et al. (2021), Baranger et al. (2020), Santangelo et al. (2014), NICE CG78 (2009)",
+          "alternative": "Die vier Stellen als geordnete Liste mit Nummer, Überschrift, Erklärsatz und Beispiel unter der Zeichnung, in allen Breiten; Beschriftungen als HTML-Text über der Zeichnung, unter 560 px entfallen nur diese, die Nummern bleiben; Textfassung über aria-describedby (p.puk-sr)",
+          "reason": "Ein Verlauf im Gespräch lässt sich als Kurve zeigen. Alltagsworte statt Fachbegriffen, weil die Achse mit drei Bereichen für Laien verwirrend war (Rückmeldung der Fachstelle, 09.10.2026). Vier Handouts zum selben Mechanismus bleiben in einer Darstellung verbunden.",
           "approvalStatus": "ausstehend",
-          "entryPoint": "Bereich «Zunehmend angespannt»: das eigene Tempo senken und eine Pause anbieten (in der Figur als Ansatzpunkt markiert; für Muster J freiwillig)."
+          "entryPoint": "Stelle 2 «Es wird eng»: das eigene Tempo senken, auf die eigene Anspannung achten und eine Pause anbieten; die andere Person müssen Sie nicht beruhigen (in der Figur mit doppeltem Ring markiert)."
         },
         {
           "id": "v-vs-bewertungen",
@@ -189,7 +189,7 @@
           "statement": "–",
           "source": "–",
           "alternative": "–",
-          "reason": "Text ist klarer: kurzer Abschluss, was Verstehen leistet und was nicht, mit Verweis auf «Was zwischen Ihnen geschieht» und «Grenzen setzen»; keine Beziehung, die eine Darstellung zeigen müsste. Der Merksatz des Bestands ist entfallen (Kürzung Umfang, Korrektur 1b; Abgleich Nr. 106, 107).",
+          "reason": "Text ist klarer: Abschluss, was Verstehen leistet und was nicht, mit dem Merksatz für Angehörige als hervorgehobenem Kasten (puk-longform__reflection) und Verweis auf «Was zwischen Ihnen geschieht» und «Grenzen setzen»; keine Beziehung, die eine Darstellung zeigen müsste. Merksatz und Absätze aus dem Bestand «Verstehen hat Grenzen» wieder aufgenommen (Korrektur 1d, D-4).",
           "approvalStatus": "ausstehend"
         }
       ]

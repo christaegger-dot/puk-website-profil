@@ -26,146 +26,119 @@ Dazu 5 leichte Befunde zu Bericht und Abgleich. Die erste und zweite Prüfrunde 
 
 Nach jedem Bau ohne Nachfrage ausfüllen: Visualisierungs-Check wie unten, mit Beleg je Punkt. Arbeitsstand, keine Prüfstufe.
 
-**Stand 09.10.2026 · Korrektur Etappe 1c · bauende Sitzung (Claude Code).** Umgesetzt ist `KORREKTUR-ETAPPE-1C.md`, K-1 bis K-10, auf `verstehen`, `beziehungen` und `grenzen`. `index` ist unverändert. Nichts ist gekürzt; der Richtwert gilt für diese Korrektur nicht (Abschnitt 1). Die Prüfstufen bleiben offen. Diese Selbstprüfung ersetzt die der Korrektur 1b und ist nicht die Stufe «Visualisierungs-Check».
+**Stand 09.10.2026 · Korrektur Etappe 1d · bauende Sitzung (Claude Code).** Umgesetzt sind `KORREKTUR-ETAPPE-1D.md`, D-1 bis D-4, auf `verstehen`, `beziehungen` und `grenzen` sowie das Profil-Update `update-2026-10-09b`. Auf `index` hat sich nur die Fusszeile geändert. Gekürzt wurde nichts; der Richtwert gilt nicht (Abschnitt 4). Die Prüfstufen bleiben offen. Diese Selbstprüfung ersetzt die der Korrektur 1c und ist nicht die Stufe «Visualisierungs-Check».
 
 **Gates und Skripte:**
 
 - `node tools/build.mjs`: 15 Seiten, 0 blockierend, 22 Hinweise (8 Visualisierungen und 12 Platzhalter nicht freigegeben, `siteUrl` fehlt, Prüfbericht offen).
-- `node tools/gate.mjs --selftest`: 50/50 bestanden.
+- `node tools/gate.mjs --selftest`: 50/50 bestanden, auf der Website und im Starter auf `main`.
 - `node tools/gate.mjs --production`: blockiert erwartungsgemäss mit 21 Befunden (8 × `visual-approval`, 12 × `placeholder-approval`, 1 × `review-report`).
-- `node abgleich/pruefe-abgleich.mjs`: **1739 Zeilen, 0 ohne Fundstelle** (vorher 1672; neu sind die 67 Zeilen aus `verstehen.md` Z. 277–396). Ob die genannte Fassung die Aussage trägt, prüft das Skript nicht; das bleibt Aufgabe von W1.
+- `node abgleich/pruefe-abgleich.mjs`: **1739 Zeilen, 0 ohne Fundstelle.** Ob die genannte Fassung die Aussage trägt, prüft das Skript nicht; das bleibt Aufgabe von W1.
 - `node abgleich/kennzahlen.mjs` und `node abgleich/bedienung.mjs`: Werte unten.
 
-### Korrekturauftrag 1c: Stand je Punkt
+### Profil-Update 2026-10-09b
+
+| Schritt | Stand | Beleg |
+| --- | --- | --- |
+| Patch auf `main` | angewendet, ausser 11 Dateien `components/Vis*/preview.html`: Diese Dateien gibt es im Repository nicht, auch nicht in der Historie | Commit `2c47478` auf `main`, Patch-Datei dort gelöscht. Starter: Selbsttest 50/50, Build ohne weitere Änderung (`git apply -R --check` passt auf den gebauten Stand) |
+| Uploads im Stamm | `KORREKTUR-ETAPPE-1D.md` aus dem Stamm gelöscht, liegt im Website-Ordner | Commit `6c4acf2` auf `main` |
+| Zusammenführen | `main` in `borderline-umbau`, ohne Konflikt | Merge-Commit `abe98ff` |
+| Kopie des Starters | Die vier Dateien in `tools/selftest/` der Website waren identisch mit dem Starter und sind wie dort nachgeführt (Legenden mit `puk-sr`, neuer Zuständigkeitsverweis). `tools/*.mjs`, `contract.js`, `starter.css` und `_headers` sind unverändert gleich wie im Starter. | Selbsttest der Website 50/50 |
+
+### Korrekturauftrag 1d: Stand je Punkt
 
 | ID | Stand | Wie | Beleg |
 | --- | --- | --- | --- |
-| K-1 | umgesetzt | Link mit Linktext «Opferhilfe Schweiz», ohne Nummer, ohne `target`. Adresse nach dem Auftrag nicht erneut aufgerufen. Das Gate erlaubt externe Links in `a href`; es blockiert nur externe Laufzeitquellen und `target="_blank"` ohne `rel` (`tools/contract.js`). | `grenzen` › `gewalt`, Schritt 4: «Opferhilfe und Beratung dazunehmen: Opferhilfe Schweiz. Unterstützung gibt es auch für Männer, Angehörige und Vertrauenspersonen.» Link `https://www.opferhilfe-schweiz.ch/de/`. Adresse geprüft durch Prüfung 1, 09.10.2026. `abgleich/grenzen.md`, Nr. 288, 289 |
-| K-2 | umgesetzt | Bestandssatz wörtlich nach dem Satz zu Therapeutinnen und Therapeuten | `beziehungen` › `verantwortung`: «… noch allein für den Verlauf oder die Beziehung verantwortlich. Die Beziehung wird nicht durch eine «perfekte» Reaktion der Angehörigen repariert.» `abgleich/beziehungen.md`, Nr. 210 |
-| K-3 | umgesetzt | «Mögliche» in allen acht Zellen und in der Textfassung; Planzeile `v-bz-sichten` nachgeführt | Abbildung 2 `beziehungen`: «Mögliche Sicht der betroffenen Person», «Mögliche Sicht der Schwester»; Textfassung «Vier Schritte aus Abbildung 1, je mit der möglichen Sicht der betroffenen Person und der möglichen Sicht der Schwester.» |
-| K-4 | umgesetzt | Wortlaut des Auftrags | `beziehungen` › `verantwortung`: «Trennen Sie: Was könnte die Person innerlich erleben, was tut sie tatsächlich, wie wirkt das auf andere, und was braucht es für Verantwortung und Schutz?» `abgleich/beziehungen.md`, Nr. 200–203 |
-| K-5 | umgesetzt | Bestandssatz wörtlich vor «Möglich ist eine Dissoziation …» | `beziehungen` › `verstaerker`, Station 4: «Verstummen, Unwirklichkeitsgefühle oder abweichende Erinnerungen können viele Gründe haben. Möglich ist eine Dissoziation …» `abgleich/beziehungen.md`, Nr. 131 |
-| K-6 | umgesetzt | <ul><li>Ursache: Die Messung zu 1b lief vor dem Laden der Webschriften; mit Schrift ist Station 5 höher, der Pfad endete im Kasten.</li><li>Station 3 und 4 sitzen breit am unteren Rand ihrer Rasterzeile (`align-self:end`). Dadurch liegen zwischen Station 4 und 5 rund 47 px.</li><li>Pfade nachgesetzt: 2 → 3 `M333 262 L 333 293`, 3 → 4 auf der Mitte der unteren Kästen (y = 350), 4 → 5 `M67 296 L 67 277.8`, Anfang von 5 → 1 bei y = 124 (vorher 1,8 px am Kasten).</li><li>`abgleich/bedienung.mjs` misst alle fünf Pfeile.</li></ul> | Tabelle «Pfeile» unten; `content/beziehungen.html`, `borderline.css` |
-| K-7 | umgesetzt | <ul><li>Neue Zeichnung 640 × 330, Aufhängepunkt (320, 16).</li><li>Langer Bogen: Kreis um den Aufhängepunkt, Radius 250, ±36°; die ausgelenkten Pendelkörper an seinen Enden (x = 173,1 und 466,9, y = 218,3), die Ruhelage unten (320, 266). «Sehr positive Bewertung» und «Sehr negative Bewertung» stehen aussen neben diesen Pendelkörpern.</li><li>Kurzer Bogen: Kreis um den Aufhängepunkt, Radius 150, ±15°, dünne Linie, an den Enden kleine Marken (r = 4).</li><li>Keine Pfeilspitzen. Die Beschriftungen auf dem senkrechten Stab tragen den Grund der Figur.</li><li>Schmal dieselbe Zeichnung; die Beschriftungen im Bild entfallen wie bisher (R3-V-03, hingenommen).</li><li>Textfassung um einen Satz zu den Lagen ergänzt; Planzeile `v-vs-bewertungen` ohne «kein Mittelwert» und ohne Pfeile.</li></ul> | Abbildung 3 `verstehen`; Bildschirmfotos bei 1440, 1280, 768, 600 und 360 px: keine Beschriftung ragt hinaus, keine überlappt eine andere; Theme «kontrast» lesbar |
-| K-8 | umgesetzt | <ul><li>Anspannung, Annahmen, Zwei Sichten (Erklärtext 21 px): Überschriften `--web-size-h4` (21 px) in `--fw-medium`; «Was hilft» (`dt`), sein Text (`dd`) und der Ansatzpunkt in `--web-size-body` (21 px), Bezeichnungen in `--fw-medium`; Bezeichnung der Sicht 21 px in `--fw-regular`.</li><li>Schleife und Ansatzpunkt-Kasten (Erklärtext 15 px): Bezeichnung «Ansatzpunkt» von 13 auf 15 px (`type-body-sm`, `--fw-medium`).</li><li>Nur Profil-Tokens. Einen Token für Fett gibt es nicht; `--fw-medium` (500) ist das stärkste Gewicht im Profil.</li></ul> | Gemessen in Chromium bei 1280 px, Anspannung und Zwei Sichten auch bei 360 px mit denselben Werten (berechnete Schrift): Anspannung `h3` 21/500, `dt` 21/500, `dd` 21/300, Ansatzpunkt 21/300 mit Bezeichnung 21/500; Annahmen `h3` 21/500 neben Erklärtext 21/300; Zwei Sichten `h3` 21/500, Bezeichnung 21/400, Zitat 21/300; Schleife «Ansatzpunkt» 15/500 neben Erklärtext 15/400 |
-| K-9 | umgesetzt | beide `2px` durch `var(--border-width-strong)` ersetzt | `grep -c 2px borderline.css`: 0 |
-| K-10 | umgesetzt | <ul><li>`kennzahlen.mjs` liegt seit `242a74b` im Repository (`git ls-tree 242a74b abgleich/`), unverändert.</li><li>`bedienung.mjs` misst nach `load` und `document.fonts.ready`; Seitenhöhen neu gemessen (unten).</li><li>`verstehen.md` Z. 277–396 als Nr. 474–540 angehängt, je Satz mit Status.</li><li>Die 7 Stichprobenzeilen berichtigt (unten).</li><li>`visualPlan`: `v-vs-einordnung`, `v-gr-reihenfolge`, `v-gr-kontakt`, `v-vs-bewertungen`, dazu `v-bz-sichten` (K-3).</li><li>Abgleich für K-1 bis K-5 nachgeführt, Prüfbedarf je Seite und `abgleich/README.md` auf Stand 1c.</li></ul> | `node abgleich/pruefe-abgleich.mjs`: 1739 Zeilen, 0 ohne Fundstelle; `abgleich/README.md`, Abschnitt «Korrektur Etappe 1c» |
+| D-1 | umgesetzt | `site.config.json` › `responsibility.text` im Wortlaut des Auftrags, `reviewedAt` «09.10.2026»; `inline` unverändert; neu gebaut | Fusszeile aller 15 Seiten: «Die Fachstelle Angehörigenarbeit der PUK berät Angehörige kostenlos und vertraulich: angehoerigenarbeit@pukzh.ch. Sorgen Sie sich akut um das Leben oder die Sicherheit eines Menschen, holen Sie sofort Hilfe: ärztlicher Notfalldienst oder Notfallstation, bei Gefahr die Polizei.» (`grep -c` auf den gebauten Seiten: 15). Abgleich `index` Nr. 37, 247 |
+| D-2 | umgesetzt | <ul><li>Die 8 Absätze, auf die `aria-describedby` zeigt, tragen `class="puk-sr"`: `vs-eisberg-text`, `vs-anspannung-text`, `vs-bewertungen-text`, `vs-mythen-text`, `bz-schleife-text`, `bz-sichten-text`, `gr-bruecke-text`, `gr-dear-text`.</li><li>Sichtbar bleiben in der Legende Kennzeichnung und Quelle. Die «Leserichtung» der Schleife bleibt sichtbar.</li><li>Das Gate liest die Kurzbeschreibung weiter als Textalternative (mindestens 40 Zeichen); 0 blockierend.</li></ul> | Skript bei 1440 und 360 px (nach `document.fonts.ready`): Alle 8 Kurzbeschreibungen tragen `puk-sr` und sind 1 × 1 px gross; sichtbar bleiben Kennzeichnung und Quelle (Bildschirmfotos von Abbildung 2 angesehen) |
+| D-2, Durchsicht | erledigt, nichts weiter entfernt | Weiterer sichtbarer Text, der nur die Zeichnung beschreibt, steht in keiner Figur. Geblieben sind Zuordnungen von Liste und Zeichnung, wie die Leserichtung: «Links: / Mitte: / Rechts:» in der Pendel-Liste, «Fahrbahn · Verbindung», «Geländer · Grenzen», «Pfeiler · was trägt» bei der Brücke, die Nummern der Anspannungskurve. | Abbildung 3 `verstehen`, Abbildung 1 `grenzen`, Abbildung 2 `verstehen` |
+| D-3 | umgesetzt | <ul><li>Titel, Kernaussage, Kurztext, die vier Stellen mit Liste, Ansatzpunkt, «Was hilft», Beispielen und die drei Sätze der Vertiefung im Wortlaut des Auftrags.</li><li>Zeichnung: eine Kurve `puk-vis-ln` (2 px) über 640 × 280, links tief, Scheitel, rechts sinkend; keine Skala, keine Achse, keine Füllfläche.</li><li>Nummern als HTML-Marken auf der Kurve wie in Muster G; Stelle 2 mit doppeltem Ring (`outline` über `--border-width-strong`), auch in der Liste.</li><li>Kurze Beschriftungen als HTML-Text in `type-body-sm`; unter 560 px entfallen nur sie, Kurve und Nummern bleiben.</li><li>Liste in Seitenschrift, `h3` in `--web-size-h4`, «Was hilft» und Ansatzpunkt in `--web-size-body` (wie 1c, K-8).</li><li>Vertiefung «Grenzen des Bildes» mit den drei Sätzen des Auftrags und, ohne Fachbegriffe, «Gefahr lässt sich aus der Stelle auf der Kurve nicht ableiten.» und «Die Kurve zeigt kein «Borderline-Gehirn», und solche Verläufe sind nicht auf Borderline beschränkt.»</li><li>Legende «Eigene didaktische Darstellung nach dem Handout «Die Anspannungskurve»», Bezugspunkte wie bisher, Kurzbeschreibung als `p.puk-sr`.</li><li>`visualPlan` › `v-vs-anspannung`: Format «figure», Aussage, «Was wird besser verstanden?» (wann Reden hilft und wann eine Pause besser ist), `entryPoint` Stelle 2.</li><li>CSS des früheren Kontinuums aus `borderline.css` entfernt.</li></ul> | <ul><li>Bildschirmfotos angesehen bei 1280 und 360 px, dazu 1440, 768, 600 und 320 px und im Theme «kontrast».</li><li>Skript: keine Beschriftung und keine Nummer ragt aus der Zeichnung, keine überlappt eine andere (1440 bis 320 px).</li><li>«Denk-Modus» und «Alarm-Modus» stehen auf keiner gebauten Seite, in `content/` und `site.config.json` nicht (`grep`); nur noch als Bestandszitate im Abgleich.</li></ul> |
+| D-3, Hinweis | Wortlaut befolgt, als Prüfbedarf gemeldet | Stelle 2 hat nach dem Auftrag nur den Ansatzpunkt. Der bisherige «Was hilft»-Satz dort (nicht weiter argumentieren, langsamer sprechen, weniger Druck) steht damit nicht mehr auf der Seite. | `abgleich/verstehen.md`, Prüfbedarf 9; Nr. 83, 222, 436, 440, 441, 522 |
+| D-4 | umgesetzt | Abschnitt 07: erster Satz, die beiden Absätze aus dem Bestand Z. 162–164 wörtlich, Merksatz als `div.puk-longform__reflection` mit `h3` «Merksatz für Angehörige», danach «Mehr dazu unter …»; `visualPlan` › `v-vs-einordnung` nachgeführt | `verstehen` › `einordnung`; Bildschirmfoto bei 1280 px; `abgleich/verstehen.md` Nr. 102–107 «übernommen» |
+| Regeln | eingehalten | Wortlaute aus D-1 bis D-4 unverändert; nichts gekürzt; Abgleich für D-3 und D-4 nachgeführt (alle Zeilen mit Ort `verstehen#anspannung`, das Handout `anspannungskurve`, «Verstehen hat Grenzen»), 0 ohne Fundstelle | `abgleich/README.md`, Abschnitt «Korrektur Etappe 1d» |
 
-**Stichprobenzeilen (Belege 09.10.2026c, Abschnitt 4):**
+### Seitenhöhen, Tabstopps, Pfeile
 
-| Zeile | vorher | jetzt |
-| --- | --- | --- |
-| bez. 86 | entfällt | zusammengeführt, `beziehungen#schleife`: Station 2 und Ansatzpunkt («das Gefühl anerkennen, nach der Deutung fragen»); das Beispiel «dein Schweigen» entfällt (Korrektur V-1) |
-| bez. 179 | übernommen | gekürzt; «das nicht hält» entfällt |
-| gr. 397 | zusammengeführt | gekürzt; der zweite Satzteil «und keinen Kontakt versprechen, der für Sie nicht sicher oder tragbar ist» entfällt, so benannt |
-| gr. 629 | zusammengeführt | zusammengeführt; Bemerkung nennt, dass «schreibt weder ein Gespräch noch eine spätere Rückkehr vor» sinngemäss in `saetze` steht |
-| gr. 636 | entfällt (Bemerkung aus Nr. 635 kopiert) | zusammengeführt, `grenzen#konsequenz`: «Für die Reaktion des Gegenübers sind Sie nicht verantwortlich.» |
-| vs. 274 | Bemerkung «Alarm-Modus, Kurztext» | Bemerkung «Abbildung 2, Kurztext» |
-| vs. 365 | Fassung: Kernaussage | Fassung: Abschnittstext «Bei hoher Anspannung kann es schwerer werden, positive und schwierige Seiten eines Menschen zugleich zu sehen.» |
-
-### Pfeile der Bedeutungsschleife (K-6)
-
-Skript `node abgleich/bedienung.mjs`, Chromium, nach `load` und `document.fonts.ready`. Gemessen in Einheiten der Zeichnung und in CSS-Pixel umgerechnet (Faktor Breite der Zeichnung / 400). Pfeilspitze = Ende des Pfads plus Überstand der Markerspitze ((10 − refX) / 10 × `markerWidth` × Strichstärke). Erster Wert: Abstand der Spitze zum Rand des Zielkastens; zweiter Wert: Abstand des Pfadanfangs zum Ausgangskasten. Positiv heisst ausserhalb des Kastens.
-
-| Fensterbreite | 1 → 2 | 2 → 3 | 3 → 4 | 4 → 5 | 5 → 1 |
-| ---: | --- | --- | --- | --- | --- |
-| 1440 px | 15,3 / 13,0 | 8,5 / 7,5 | 7,8 / 12,0 | 7,5 / 8,2 | 8,8 / 9,0 |
-| 1280 px | 15,3 / 13,0 | 8,5 / 7,5 | 7,8 / 12,0 | 7,5 / 8,2 | 8,8 / 9,0 |
-| 768 px | 15,3 / 13,0 | 8,5 / 7,5 | 7,8 / 12,0 | 7,5 / 8,2 | 8,8 / 9,0 |
-| 720 px | 15,3 / 13,0 | 8,5 / 7,5 | 7,8 / 12,0 | 7,5 / 8,2 | 8,8 / 9,0 |
-
-- **Gleiche Werte in allen Breiten:** Die Kreisanordnung ist dort immer 600 px breit. Unter 660 px Containerbreite gilt die Liste ohne Pfeile im Bild.
-- **Vergleich mit `242a74b`** (gleiches Skript): 4 → 5 −11,4 px (Spitze im Kasten von Station 5, R3-V-01 bestätigt), 2 → 3 0,4 px mit Anfang −7,5 px im Kasten von Station 2, Anfang von 5 → 1 1,8 px.
-
-### Seitenhöhen und Tabstopps (K-10, R3-K-01)
-
-Skript `node abgleich/bedienung.mjs`, Chromium. Seitenhöhe: `document.documentElement.scrollHeight` bei 360 × 800 px, nach `load` und `document.fonts.ready`. Tabstopps bei 1280 × 900 px, ab Seitenanfang, ohne Fusszeile.
+Skript `node abgleich/bedienung.mjs`, Chromium, nach `load` und `document.fonts.ready`. Seitenhöhe: `document.documentElement.scrollHeight` bei 360 × 800 px. Tabstopps bei 1280 × 900 px, ab Seitenanfang, ohne Fusszeile.
 
 | Seite | Tabstopps | Seitenhöhe bei 360 px | höchste Figur bei 360 px |
 | --- | ---: | ---: | --- |
-| `index` | 10 | 3839 px | – |
-| `verstehen` | 19 | 16 218 px | Annahmen 3769 px |
-| `beziehungen` | 15 | 12 868 px | Zwei Sichten 2437 px |
-| `grenzen` | 21 | 16 521 px | DEAR 1846 px |
+| `index` | 10 | 3863 px | – |
+| `verstehen` | 19 | 16 756 px | Annahmen 3714 px |
+| `beziehungen` | 15 | 12 737 px | Zwei Sichten 2359 px |
+| `grenzen` | 21 | 16 413 px | DEAR 1791 px |
 
-- **Abweichung in 1b erklärt:** Am Stand `242a74b` ergibt das Skript jetzt 3839 / 15 593 / 12 342 / 16 521 px, wie die dritte Prüfrunde. Die Werte der Selbstprüfung 1b waren vor dem Laden der Webschriften gemessen.
-- **Zunahme seit 1b:** auf `verstehen` und `beziehungen` durch K-8 (Seitenschrift in den Figuren), dazu auf `beziehungen` die Sätze aus K-2 bis K-5 und auf `verstehen` der Satz in der Textfassung des Pendels (K-7).
-- **Tabstopps:** Der 21. Tabstopp auf `grenzen` ist der Link «Opferhilfe Schweiz». Alle Tabstopps haben einen sichtbaren Fokus; der erste ist «Zum Hauptinhalt».
+- Abbildung 2 `verstehen` ist bei 360 px 2994 px hoch (gemessen nach dem Laden der Schriften); Abschnitt 07 ist mit dem Merksatz länger.
+- Die Pfeile der Schleife sind unverändert: 7,5 bis 15,3 px vor dem Zielkasten bei 1440, 1280, 768 und 720 px (Tabelle in `abgleich/README.md`).
+- Alle Tabstopps haben einen sichtbaren Fokus; der erste ist «Zum Hauptinhalt».
 
 **Technische Stichprobe in Chromium (Playwright), kein Ersatz für Stufe 5:**
 
 - **Überlauf:** keiner bei 320, 360, 768, 1280 und 1440 px auf den vier Seiten.
 - **Kontrast nach WCAG 1.4.3:** für allen sichtbaren Text in `main` gemessen, Vertiefungen geöffnet; kein Wert unter AA.
-- **Beschriftungen im Bild:** alle innerhalb der Zeichnung und in 15 px (`type-body-sm`). Pendel unter 560 px ohne Beschriftungen im Bild. Brücke bei 320 und 360 px mit allen fünf Beschriftungen.
-- **Reduzierte Bewegung:** Ohne Bedienung läuft keine Animation. Nach Enter auf einer Vertiefung laufen Übergänge von 0,01 ms.
-- **Theme «kontrast»:** alle 8 Figuren gerendert; in SVG keine festen Farbattribute.
-- **Nicht geprüft:** Screenreader, Hardwaretastatur und Touch (Stufe 5, Person).
+- **Reduzierte Bewegung:** keine laufende Animation.
+- **Theme «kontrast»:** alle 8 Figuren gerendert, auch die neue Abbildung 2; in SVG keine festen Farbattribute.
+- **Nicht geprüft:** Screenreader, Hardwaretastatur und Touch (Stufe 5, Person). Ob Screenreader die Kurzbeschreibungen in `p.puk-sr` wie erwartet vorlesen, ist damit offen.
 
 ### Kennzahlen (Skript `abgleich/kennzahlen.mjs`)
 
-Gemessen an der alten Seite allein, mit derselben Zählweise für alt und neu (`abgleich/README.md`). Der Richtwert gilt für Korrektur 1c nicht; die Wortzahlen werden nur berichtet.
+Gemessen an der alten Seite allein, mit derselben Zählweise für alt und neu (`abgleich/README.md`). Neu zählt Text nur für Screenreader (`.puk-sr`) nicht mit; das betrifft die Kurzbeschreibungen der Legenden (95 / 34 / 20 Wörter). Der Richtwert gilt nicht; die Wortzahlen werden nur berichtet.
 
 | Seite | Alt: Seite allein | Neu | Neu / alt | Richtwert | Richtwert + 5 % | Absicherungen je 100 Wörter alt → neu | Semikolons im Fliesstext alt → neu |
 | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
 | `index` | 433 | 238 | 55 % | – | – | 1,85 → 1,68 | 1 → 0 |
-| `verstehen` | 2524 | 1379 | 55 % | 1300 | 1365 | 2,54 → 2,54 | 12 → 0 |
-| `beziehungen` | 2149 | 1198 | 56 % | 1100 | 1155 | 3,82 → 3,76 | 6 → 1 |
-| `grenzen` | 2985 | 1574 | 53 % | 1500 | 1575 | 2,41 → 2,03 | 4 → 0 |
+| `verstehen` | 2524 | 1447 | 57 % | 1300 | 1365 | 2,54 → 2,83 | 12 → 0 |
+| `beziehungen` | 2149 | 1164 | 54 % | 1100 | 1155 | 3,82 → 3,69 | 6 → 1 |
+| `grenzen` | 2985 | 1554 | 52 % | 1500 | 1575 | 2,41 → 2,06 | 4 → 0 |
 
-- **Zuwachs gegenüber 1b** (1362 / 1155 / 1572): `verstehen` +17 (Textfassung des Pendels, K-7), `beziehungen` +43 (K-2 bis K-5), `grenzen` +2 (Linktext, K-1). Damit liegen `verstehen` und `beziehungen` über Richtwert plus 5 %.
-- **Absicherungen auf `beziehungen`:** 2,86 → 3,76. Zehn der zwölf neuen Absicherungen sind «Mögliche Sicht» und «möglichen Sicht» aus K-3.
+- **`verstehen`:** Mit den Kurzbeschreibungen wären es 1542 Wörter, gegenüber 1379 in 1c also +163: Abbildung 2 +99 (D-3), Abschnitt 07 +66 (D-4).
+- **`beziehungen` und `grenzen`:** Der sichtbare Text ist gleich; nur die Kurzbeschreibungen fallen aus der Zählung.
+- **Absicherungen auf `verstehen`:** 2,83, über dem Bestand (2,54). Grund sind die Wortlaute aus D-3 und D-4 («kann», «können», «könnten»).
 
 ## Visualisierungs-Check
 
-Selbstprüfung als Matrix je Figur (Vorlage im Starter). E = erfüllt · T = teilweise · N = nicht erfüllt · – = nicht anwendbar. Belege und Gründe für T und N stehen unter der Matrix. Ausgangspunkt ist die Matrix der dritten Prüfrunde. Wo Korrektur 1c den Grund für ein T behebt, steht E mit Beleg; wo der Grund bleibt, steht weiter T.
+Selbstprüfung als Matrix je Figur (Vorlage im Starter). E = erfüllt · T = teilweise · N = nicht erfüllt · – = nicht anwendbar. Belege und Gründe für T und N stehen unter der Matrix. Die Spalte `v-vs-anspannung` gilt der neuen Abbildung 2 (Anspannungskurve). Die übrigen Spalten sind wie in Korrektur 1c; D-2 ändert dort nur, dass die Kurzbeschreibung nicht mehr sichtbar ist.
 
 | Nr. | Prüfpunkt | `v-vs-eisberg` | `v-vs-anspannung` | `v-vs-bewertungen` | `v-vs-mythen` | `v-bz-schleife` | `v-bz-sichten` | `v-gr-bruecke` | `v-gr-dear` |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | Plan liegt vor, Seite entspricht ihm | E | E | E | E | E | E | E | E |
 | 2 | Zeile je Abschnitt; Begründungen passen | E | E | E | E | T | E | E | E |
-| 3 | Prüffrage beantwortet und eingelöst | E | T | E | T | E | E | E | E |
+| 3 | Prüffrage beantwortet und eingelöst | E | E | E | T | E | E | E | E |
 | 4 | Kernaussage und Erklärtext (2–4 Sätze) | E | E | E | E | E | E | E | E |
 | 5 | Ansatzpunkt (B, C, G) | – | E | – | – | E | – | – | E |
 | 6 | Mechanismus nicht doppelt, sondern verbunden | E | E | E | E | T | E | E | E |
 | 7 | Kartenraster-Check | E | E | E | T | E | E | E | E |
-| 8 | Form und Linien tragen Bedeutung | E | T | E | T | E | T | E | T |
-| 9 | Verteilt, keine Textwand | E | E | E | T | E | E | E | E |
-| 10 | Nicht verfälscht; Grenzen; Kennzeichnung | E | T | E | E | E | E | E | E |
+| 8 | Form und Linien tragen Bedeutung | E | E | E | T | E | T | E | T |
+| 9 | Verteilt, keine Textwand | E | T | E | T | E | E | E | E |
+| 10 | Nicht verfälscht; Grenzen; Kennzeichnung | E | E | E | E | E | E | E | E |
 | 11 | Ohne Aufklappen und Skript verständlich | E | E | E | E | E | E | E | E |
-| 12 | 320 px lesbar; Textalternative | E | T | T | E | E | E | E | E |
+| 12 | 320 px lesbar; Textalternative | E | E | T | E | E | E | E | E |
 | 13 | Theme «Hoher Kontrast» | E | E | E | E | E | E | E | E |
 | 14 | Fachlich freigegeben | N | N | N | N | N | N | N | N |
 
-**Belege je Punkt**
+**Belege für die neue Abbildung 2 (`v-vs-anspannung`)**
 
-- **1:** `site.config.json` › `visualPlan` ist nachgeführt: `v-vs-einordnung` ohne Merksatz, `v-gr-reihenfolge` mit den vier Feldern des Rasters statt «samt Belastung als Kriterium», `v-gr-kontakt` mit «Beziehungserhalt ist kein verpflichtendes Ziel.» statt «keine Möglichkeit ist Pflicht oder Ziel», `v-vs-bewertungen` nach K-7 ohne «kein Mittelwert», `v-bz-sichten` mit «Mögliche Sicht …» (R3-K-05). Kein Gate-Hinweis `plan-coverage` oder `visual-plan`.
-- **2, T bei Schleife:** Die Planzeile `v-bz-was-hilft` begründet Text mit «keine Beziehung untereinander»; der Abschnitt nennt keine Stationen (F-W2-02, Fachstelle).
-- **3:**
-  - **Pendel:** kurzer und langer Bogen um denselben Aufhängepunkt, die Lagen an den Enden des langen Bogens (K-7).
-  - **T bei Anspannung:** Kurztext «Die Bereiche gehen ineinander über»; gezeigt sind drei gleich breite Felder mit drei Linienstärken (P-6, Profil).
-  - **T bei Annahmen:** weiterhin eine Reihe von Kästen (F-V-11, Fachstelle).
-- **4:** unverändert seit 1b. Beispiele: Eisberg «… Aus einem beobachtbaren Verhalten lässt sich kein bestimmtes Gefühl, Bedürfnis oder Motiv ablesen.»; Zwei Sichten «In jedem Schritt versuchen beide etwas Verständliches – und verfehlen sich trotzdem.»
-- **5:**
-  - **Anspannung:** «Senken Sie Ihr eigenes Tempo, achten Sie auf Ihre eigene Anspannung und bieten Sie eine Pause an.», jetzt in Seitenschrift wie der Erklärtext (K-8).
-  - **Schleife:** bei Station 5, «Statt sich weiter zu verteidigen, können Sie das Gefühl anerkennen …»; Bezeichnung «Ansatzpunkt» in 15 px wie der Erklärtext (K-8).
-  - **DEAR:** «entfällt: Der ganze Ablauf beschreibt das eigene Handeln der Angehörigen.»
-- **6, T bei Schleife:** wie Punkt 2.
-- **7, 9, T bei Annahmen:** sieben gleich gebaute Kästen; bei 360 px ist die Figur 3769 px hoch (Überschriften seit K-8 in 21 px).
-- **8:**
-  - **Pendel:** Die Pendelkörper sitzen an den Enden des langen Bogens, die Marken an den Enden des kurzen; Länge und Linienstärke der Bögen tragen den Unterschied (K-7, R3-V-02 behoben).
-  - **Schleife:** Alle fünf Pfeilspitzen enden 7,5 bis 15,3 px vor dem Zielkasten (Tabelle oben, R3-V-01 behoben).
-  - **T bei Anspannung und DEAR:** Linienstärke und Punkte (P-6, Profil). **T bei Annahmen:** nur Grösse und Kasten (F-V-11). **T bei Zwei Sichten:** Die Linienart unterscheidet die Sichten, hat im Profil aber keine feste Bedeutung (P-7).
-- **10:**
-  - **Zwei Sichten:** «Mögliche Sicht der betroffenen Person» und «Mögliche Sicht der Schwester» (K-3); die Absicherung über die betroffene Person ist zurück.
-  - **Schleife:** «Ein mögliches Erklärungsmodell, keine sichere Aussage …»; Station 4 mit «Verstummen, Unwirklichkeitsgefühle oder abweichende Erinnerungen können viele Gründe haben.» vor der Dissoziation (K-5).
-  - **T bei Anspannung:** wie Punkt 3.
-- **11:** «Bei Gefahr hat Schutz Vorrang.» steht im Abschnittstext von `anspannung`. Kein Skript; die Hauptaussagen stehen ausserhalb der Vertiefungen.
-- **12:**
-  - Jede Figur hat eine Textfassung über `aria-describedby`; die des Pendels nennt jetzt auch die Lagen an den Enden des langen Bogens.
-  - **T bei Pendel:** Unter 560 px sind die Bögen im Bild unbeschriftet; der Unterschied steht im Kurztext (R3-V-03, laut Korrektur 1c, Abschnitt 3 hingenommen).
-  - **T bei Anspannung:** Schmal stehen die Enden der Achse waagrecht über der senkrechten Liste (F-V-08).
-- **13:** Bildschirmfotos aller 8 Figuren mit `data-theme="kontrast"`; in SVG nur Token-Klassen.
-- **14:** `approvalStatus` steht bei allen Figuren auf «ausstehend».
+- **1, 2:** Die Planzeile ist nachgeführt: Format «figure», Aussage, Quelle, Alternative, Begründung, `entryPoint` Stelle 2. Kein Gate-Hinweis `visual-plan`.
+- **3:** «Was wird besser verstanden?»: wann Reden hilft und wann eine Pause besser ist. Die Kurve zeigt den Verlauf, die Liste sagt je Stelle, was hilft; die Kernaussage nennt die Pause.
+- **4:** Kernaussage zwei Sätze, Kurztext drei Sätze, beide im Wortlaut des Auftrags.
+- **5:** Stelle 2 «Es wird eng», in Zeichnung und Liste mit doppeltem Ring, mit «Ansatzpunkt für Angehörige: Senken Sie Ihr eigenes Tempo, …».
+- **6:** Die Kurve verbindet die Handouts «Anspannungskurve», Stressmodell, «Hohe Anspannung» und Zustands-Landkarte in einer Darstellung; Abschnittstext und Figur doppeln sich nicht.
+- **7:** kein Kartenraster; eine Kurve und eine nummerierte Liste.
+- **8:** Die Höhe der Kurve trägt die Anspannung, die Reihenfolge den Gesprächsverlauf, der doppelte Ring den Ansatzpunkt. Eine Linienstärke (2 px), keine Füllung.
+- **9, T:** Die Liste ist in vier Stellen mit Bezeichnungen gegliedert. Sie trägt aber viel Text: Bei 360 px ist die Figur 2994 px hoch.
+- **10:** Vertiefung «Grenzen des Bildes»: «Die Kurve stellt den Verlauf beispielhaft dar. Sie ist kein validiertes Messinstrument …». Kennzeichnung «Eigene didaktische Darstellung nach dem Handout «Die Anspannungskurve»».
+- **11:** Hauptaussagen, Liste und Ansatzpunkt stehen ausserhalb der Vertiefung; kein Skript.
+- **12:** Bei 320 px bleibt die Kurve 238 px breit mit den Nummern 1 bis 4; die Liste trägt den Text. Textfassung über `aria-describedby` (`p.puk-sr`).
+- **13:** Bildschirmfoto mit `data-theme="kontrast"`: Kurve, Ringe und Text lesbar; nur Token-Klassen.
+- **14:** `approvalStatus` «ausstehend».
+
+**Übrige Figuren:** Belege wie in Korrektur 1c (dritte Prüfrunde und Selbstprüfung 1c). Gründe für T:
+
+- **2 und 6, Schleife:** Planbegründung «Handlungsspielraum» (F-W2-02, Fachstelle).
+- **3, 7, 8, 9, Annahmen:** Kastenreihe, bei 360 px 3714 px hoch (F-V-11, Fachstelle).
+- **8, Zwei Sichten:** Die Linienart unterscheidet die Sichten, hat im Profil aber keine feste Bedeutung (P-7).
+- **8, DEAR:** vier gefüllte Punkte (P-6, Profil).
+- **12, Pendel:** schmal ohne Beschriftungen im Bild (R3-V-03, laut Korrektur 1c hingenommen).
 
 **Nicht erfüllt oder offen (Selbstprüfung):**
 
@@ -175,22 +148,20 @@ Selbstprüfung als Matrix je Figur (Vorlage im Starter). E = erfüllt · T = tei
   | Punkt | Figuren |
   | --- | --- |
   | 2 | Schleife |
-  | 3 | Anspannung, Annahmen |
+  | 3 | Annahmen |
   | 6 | Schleife |
   | 7 | Annahmen |
-  | 8 | Anspannung, Annahmen, Zwei Sichten, DEAR |
-  | 9 | Annahmen |
-  | 10 | Anspannung |
-  | 12 | Anspannung, Pendel |
+  | 8 | Annahmen, Zwei Sichten, DEAR |
+  | 9 | Anspannungskurve, Annahmen |
+  | 12 | Pendel |
 
-  Die Gründe liegen bei Profilthemen (P-6, P-7), bei Entscheiden der Fachstelle (F-V-11, F-W2-02, F-V-08) oder sind laut Korrektur 1c hingenommen (R3-V-03).
-- **Umfang:** `verstehen` (1379) und `beziehungen` (1198) liegen über Richtwert plus 5 %; laut Korrektur 1c entscheidet die Fachstelle über die Länge.
-- **Achsentitel der Anspannung:** «Anspannung im Gespräch – bei einer oder beiden Personen» steht weiter in 15 px über der Achse. Er ist Beschriftung der Achse, keine Überschrift eines Erklärtexts; deshalb nicht unter K-8 geändert.
-- **Offen für die Fachstelle (Korrektur 1c, Abschnitt 3):**
-  - R3-W1-05 (Kürzungen an Aussagen für Angehörige), R3-W1-06 (Anspannung: professionelle Hilfe)
-  - F-V-11, F-V-05, F-W1-11, F-W2-02, F-W2-03
+- **Profil-Update:** 11 Dateien `components/Vis*/preview.html` aus dem Patch gibt es im Repository nicht; ihre Hunks sind nicht angewendet.
+- **Stelle 2 ohne «Was hilft»:** nach dem Wortlaut von D-3; Prüfbedarf 9 in `abgleich/verstehen.md`.
+- **Umfang:** `verstehen` (1447) und `beziehungen` (1164) liegen über Richtwert plus 5 %; der Richtwert gilt nicht, über die Länge entscheidet die Fachstelle.
+- **Offen für die Fachstelle:**
+  - R3-W1-05, R3-W1-06, F-V-11, F-V-05, F-W1-11, F-W2-02, F-W2-03
   - Prüfbedarf in `abgleich/*.md`
-  - alle fachlichen Freigaben
+  - alle fachlichen Freigaben, auch für die neue Abbildung 2
 - **Profil (später):** P-6, P-7, P-9.
 - **Offen für Stufe 5:** Screenreader-Läufe, Hardwaretastatur und Touch.
 

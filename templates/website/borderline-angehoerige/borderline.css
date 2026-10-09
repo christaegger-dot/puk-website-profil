@@ -29,9 +29,9 @@
   .bl-cycle-fig [data-cycle-narrow]{display:inline}
 }
 
-/* Muster A mit direkter Beschriftung (Pendel, Brücke): Zeichnung als SVG, Beschriftungen als HTML-Text darüber
-   (Leitlinie 07: Beschriftungen sind echter Text). Lage in Prozent der Zeichnung.
-   Pendel: schmal entfallen nur die Beschriftungen im Bild; die Liste unter der Zeichnung steht in allen Breiten.
+/* Muster A mit direkter Beschriftung (Pendel, Brücke, Anspannungskurve): Zeichnung als SVG, Beschriftungen als
+   HTML-Text darüber (Leitlinie 07: Beschriftungen sind echter Text). Lage in Prozent der Zeichnung.
+   Pendel und Kurve: schmal entfallen nur die Beschriftungen im Bild; die Liste unter der Zeichnung steht in allen Breiten.
    Brücke: alle Teile bleiben auch schmal im Bild beschriftet, dort mit einer schmaleren Zeichnung. */
 .bl-fig{position:relative;max-width:calc(var(--space-20) * 8);aspect-ratio:2/1;margin:0 auto var(--space-6)}
 .bl-fig>svg{position:absolute;inset:0;width:100%;height:100%}
@@ -54,11 +54,34 @@
 .bl-fig--bruecke .bl-fig__label--gelaender{left:50%;top:21.9%}
 .bl-fig--bruecke .bl-fig__label--fahrbahn{left:50%;top:50%;line-height:var(--lh-tight)}
 .bl-fig--bruecke .bl-fig__label--pfeiler{left:50%;top:78%}
+/* Anspannungskurve, Zeichnung 640 × 280: eine Kurve über den Gesprächsverlauf (links tief, Scheitel bei x 392).
+   Die vier Stellen liegen auf der Kurve: 1 (99, 235), 2 (275, 139), 3 (392, 60), 4 (532, 151).
+   Nummern als HTML-Marken wie in der Liste (Muster G); Stelle 2 ist der Ansatzpunkt, mit doppeltem Ring. */
+.bl-fig--kurve{aspect-ratio:640/280}
+.bl-fig--kurve .bl-kurve__n{position:absolute;transform:translate(-50%,-50%)}
+.bl-kurve__n--1{left:15.5%;top:83.9%}
+.bl-kurve__n--2{left:43%;top:49.7%}
+.bl-kurve__n--3{left:61.3%;top:21.4%}
+.bl-kurve__n--4{left:83.2%;top:54%}
+.puk-vis-build__n.bl-kurve__ansatz{outline:var(--border-width-strong) solid var(--puk-blue-100);outline-offset:var(--space-1)}
+.bl-fig--kurve .bl-fig__label{white-space:nowrap}
+.bl-fig--kurve .bl-kurve__label--1{left:15.5%;top:91.4%;transform:translateX(-50%)}
+.bl-fig--kurve .bl-kurve__label--2{right:61.4%;top:49.7%;transform:translateY(-50%)}
+.bl-fig--kurve .bl-kurve__label--3{left:61.3%;bottom:88.6%;transform:translateX(-50%)}
+.bl-fig--kurve .bl-kurve__label--4{left:87%;top:44.6%;transform:translateY(-50%)}
+/* Liste unter der Kurve: Erklärtext in Seitenschrift; Überschrift, «Was hilft» und Ansatzpunkt nicht kleiner */
+.bl-kurve__liste h3{font-size:var(--web-size-h4);font-weight:var(--fw-medium);line-height:var(--lh-subheading)}
+.bl-kurve__liste p{margin:var(--space-2) 0 0;font-size:var(--web-size-body);font-weight:var(--web-fw-body);line-height:var(--lh-body);color:var(--text-default)}
+.bl-kurve__key,.bl-kurve__liste .puk-vis-ansatz__key{display:block;font-size:var(--web-size-body);font-weight:var(--fw-medium);line-height:var(--lh-subheading)}
+.bl-kurve__liste .puk-vis-ansatz{margin-top:var(--space-3)}
+.bl-kurve__liste .puk-say{margin:var(--space-3) 0 0}
+.bl-kurve__liste .puk-say__item{margin:0}
+.bl-kurve__liste .puk-vis-build__n.bl-kurve__ansatz{margin:var(--space-1)}
 .bl-parts li{grid-template-columns:minmax(0,1fr);padding-left:0}
 .bl-fig__narrow{display:none}
 @container (max-width:560px){
   .bl-fig{max-width:calc(var(--space-20) * 5)}
-  .bl-fig--pendel .bl-fig__label{display:none}
+  .bl-fig--pendel .bl-fig__label,.bl-fig--kurve .bl-fig__label{display:none}
   /* Brücke schmal: eigene, schmalere Zeichnung (400 × 360), damit alle Beschriftungen in type-body-sm Platz haben */
   .bl-fig--bruecke{aspect-ratio:400/360}
   .bl-fig--bruecke .bl-fig__wide{display:none}
@@ -69,10 +92,6 @@
   .bl-fig--bruecke .bl-fig__label--fahrbahn{top:49.4%}
   .bl-fig--bruecke .bl-fig__label--pfeiler{top:75%}
 }
-
-/* Muster J: Achsentitel über dem Kontinuum; Beschreibung je Bereich als Absatz vor «Was hilft», in Seitenschrift */
-.bl-cont-title{margin:0 0 var(--space-2);font:var(--type-body-sm);font-weight:var(--fw-medium);color:var(--text-default)}
-.puk-vis-cont__zones>li>p:not(.puk-vis-ansatz){margin:0 0 var(--space-3);font-size:var(--web-size-body);font-weight:var(--web-fw-body);line-height:var(--lh-body);color:var(--text-default)}
 
 /* Muster E, Annahmen: je Zeile die Annahme (kleiner) und die Einordnung (hervorgehoben, Erklärung in Seitenschrift) */
 .bl-myths.puk-vis-compare{grid-template-columns:minmax(0,1fr);gap:var(--space-5)}
@@ -95,11 +114,8 @@
 
 /* Schrift in Figuren: Überschriften, «Was hilft» und Ansatzpunkte nicht kleiner als der Erklärtext daneben.
    Überschriften im stärksten Gewicht des Profils (--fw-medium; einen Token für Fett gibt es nicht).
-   Figuren mit Erklärtext in Seitenschrift (21 px): Anspannung, Annahmen, Zwei Sichten. */
-.puk-vis-cont__zones h3,.bl-myth .puk-vis-compare__col h3,.bl-sicht>h3{font-size:var(--web-size-h4);font-weight:var(--fw-medium);line-height:var(--lh-subheading)}
-.puk-vis-cont__zones dt{font-size:var(--web-size-body);font-weight:var(--fw-medium);line-height:var(--lh-subheading);color:var(--text-default)}
-.puk-vis-cont__zones dd,.puk-vis-cont__zones .puk-vis-ansatz{font-size:var(--web-size-body);font-weight:var(--web-fw-body);line-height:var(--lh-body)}
-.puk-vis-cont__zones .puk-vis-ansatz__key{font-size:var(--web-size-body);font-weight:var(--fw-medium);line-height:var(--lh-subheading)}
+   Figuren mit Erklärtext in Seitenschrift (21 px): Anspannungskurve (Regeln dort), Annahmen, Zwei Sichten. */
+.bl-myth .puk-vis-compare__col h3,.bl-sicht>h3{font-size:var(--web-size-h4);font-weight:var(--fw-medium);line-height:var(--lh-subheading)}
 .bl-sicht .puk-vis-compare__key{font-size:var(--web-size-body);font-weight:var(--fw-regular);line-height:var(--lh-subheading)}
 /* Figuren mit Erklärtext in type-body-sm (15 px): Bezeichnung «Ansatzpunkt» in der Schleife und im Ansatzpunkt-Kasten */
 .puk-vis-cycle__key,.puk-vis-ansatz__key{font:var(--type-body-sm);font-weight:var(--fw-medium)}

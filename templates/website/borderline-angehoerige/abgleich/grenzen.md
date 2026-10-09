@@ -2,7 +2,7 @@
 
 Neue Seite: `content/grenzen.html` · Bestand: `/grenzen`; Handouts `4-arten-von-grenzen`, `bruecke-gelaender`, `dear`, `grenzen-erkennen`, `grenzen-spickzettel`, `grenzen-ohne-eskalation`, `lmk`, `spiegeln-statt-aufsaugen`; zwei Szenarien aus `/uebungen`. Statuswerte und Zählweise: `README.md`.
 
-**Stand 09.10.2026, Korrektur Etappe 1c (bauende Sitzung).** Eine Tabelle für jeden Satz der alten Seite und der zugeordneten Handouts (Korrektur 1b, E). Sie ersetzt die abschnittsweisen Tabellen vom 08.10.2026 und den Abschnitt «Satz für Satz» der ersten Korrektur; wo diese sich widersprachen, gilt die Zeile hier. Statuswerte, Zählweise und Skripte: `README.md`.
+**Stand 09.10.2026, Korrektur Etappe 1d (bauende Sitzung).** Eine Tabelle für jeden Satz der alten Seite und der zugeordneten Handouts (Korrektur 1b, E). Sie ersetzt die abschnittsweisen Tabellen vom 08.10.2026 und den Abschnitt «Satz für Satz» der ersten Korrektur; wo diese sich widersprachen, gilt die Zeile hier. Statuswerte, Zählweise und Skripte: `README.md`.
 
 **Korrektur 1c:** Zeilen zu K-1 bis K-5 nachgeführt; Status und Bemerkungen der Stichprobe aus den Belegen der dritten Prüfrunde (Abschnitt 4) berichtigt.
 
@@ -728,7 +728,7 @@ Neue Seite: `content/grenzen.html` · Bestand: `/grenzen`; Handouts `4-arten-von
 | 708 | `/uebungen` › Zugewandtheit und Klarheit, Szenario 2, Reaktion C | «Ich sehe das Missverständnis. Für gemeinsames Kochen habe ich heute keine Kraft mehr. Ich esse für mich; wir können später besprechen, ob wir neu planen möchten.» und «Eine Grenze muss nicht beiden gefallen, um ausgesprochen werden zu dürfen.» | verschoben | – | kommunizieren (Etappe 2) | vorgemerkt für `kommunizieren`; auf dieser Seite drei Beispiele (Korrektur W2-2) |
 | 709 | `/uebungen` › DEAR, Szenario 1, Reaktion B | «Die kurzfristigen Absagen sind für meine Planung schwierig. Ich möchte künftig erst dann einen Abend freihalten, wenn wir beide zugesagt haben.» | verschoben | – | kommunizieren (Etappe 2) | vorgemerkt für `kommunizieren`; auf dieser Seite drei Beispiele (Korrektur W2-2) |
 
-## Prüfbedarf für W1 (Stand 09.10.2026, Korrektur 1c)
+## Prüfbedarf für W1 (Stand 09.10.2026, Korrektur 1d)
 
 1. **Schutz, Schritt 2** (Korrektur 1b, A-3): «Bei akuter Gefahr oder Unsicherheit: Bringen Sie sich in Sicherheit und holen Sie Hilfe.», danach der Verweis im Text mit dem geprüften Wortlaut, danach «Sie müssen die Dringlichkeit nicht allein einschätzen.»
 2. **Opferhilfe** (Korrektur 1c, K-1): Schritt 4 verlinkt «Opferhilfe Schweiz» auf `https://www.opferhilfe-schweiz.ch/de/`, ohne Nummer. Adresse geprüft durch Prüfung 1, 09.10.2026; die bauende Sitzung hat sie nach dem Auftrag nicht erneut aufgerufen.
