@@ -1,6 +1,6 @@
 # Abgleich · Borderline-Website, Etappe 1
 
-Beleg für W1 nach UMBAUPLAN, Abschnitt 5: Jede fachliche Aussage des Bestands ist übernommen, gekürzt, zusammengeführt, verschoben oder mit Grund entfallen. Erstellt von der bauenden Sitzung am 08.10.2026; das ist ein Arbeitsstand, keine Prüfung.
+Beleg für W1 nach UMBAUPLAN, Abschnitt 5: Jede fachliche Aussage des Bestands ist übernommen, gekürzt, zusammengeführt, verschoben oder mit Grund entfallen. Erstellt von der bauenden Sitzung am 08.10.2026, nachgeführt am 09.10.2026 (Korrektur Etappe 1, Satz für Satz je Seite); das ist ein Arbeitsstand, keine Prüfung.
 
 - `index.md` · `/`, `/selbsttest`, `/wegweiser`
 - `verstehen.md` · `/verstehen` ohne Diagnostik-Teil, sechs Handouts
@@ -17,29 +17,35 @@ Beleg für W1 nach UMBAUPLAN, Abschnitt 5: Jede fachliche Aussage des Bestands i
 | gekürzt | Aussage steht, Wiederholungen oder doppelte Absicherungen sind entfallen; was genau, steht in der Bemerkung. |
 | zusammengeführt mit … | Aussage steht an anderer Stelle, zusammen mit gleichem Inhalt aus einer anderen Quelle. |
 | verschoben nach `<seite>` (Etappe n) | Aussage gehört laut Plan auf eine andere Seite und erscheint dort, wenn die Seite gebaut ist. |
-| entfällt: Grund | Aussage erscheint nicht mehr. Gründe: Meta-Text, Profil (Krisenzugang, Telefonnummern), Entscheid der Fachstelle (Personenbilder, Handouts), Wiederholung. |
+| entfällt: Grund | Aussage erscheint nicht mehr. Gründe: Meta-Text, Profil (Krisenzugang, Telefonnummern), Entscheid der Fachstelle (Personenbilder, Handouts), Wiederholung, Kürzung für den Richtwert (W2-2, ab 09.10.2026). |
+| geändert | Aussage steht mit verändertem Inhalt: auf Auftrag der Fachstelle (Korrektur Etappe 1) oder als natürlichere Fassung eines Beispiels (S-5). Der Grund steht in der Bemerkung. Neu am 09.10.2026. |
+| Bezeichnung | Überschrift, Kicker, Eintrag der Kapitelübersicht oder Stichwort ohne eigene Aussage; nur gezählt. Neu am 09.10.2026. |
 
 ## Wörter alt und neu je Seite
 
-Zählweise wie im Inventar: Wörter im sichtbaren `<main>` mit allen Vertiefungen (`details`), Bildlegenden und Kapitelübersicht, ohne Kopf und Fusszeile. Alt = Wortzahl laut `INVENTAR.md`, Abschnitt 1.1. Neu = gezählt aus den gebauten Seiten mit dem Parser des Starters (`tools/contract.js`). Die eigene Zählung des Bestands mit derselben Methode weicht um höchstens etwa 7 % vom Inventar ab (z. B. `/verstehen` 2476 statt 2511).
+**Stand 09.10.2026 (Korrektur W2-2, S-1).** Gemessen wird an der alten Seite allein, nicht an Seite plus Handouts. Die Quote von 41 % vom 08.10.2026 entstand nur, weil inhaltsgleiche Handouts mitgezählt waren. Sie gilt nicht mehr (Befund W2-2 der Prüfsitzungen).
 
-| Seite | Alt: Route(n) | Alt: Handouts | Alt gesamt | Neu | Neu / alt | Richtwert (Plan) | Neu / Richtwert |
-| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| `index` | 687 (`/` 435, `/selbsttest` 135, `/wegweiser` 117) | – | 687 | 190 | 28 % | 300 | 63 % |
-| `verstehen` | 2511 | 3041 (6 Handouts) | 5552 | 1798 | 32 % | 1100 | 163 % |
-| `beziehungen` | 1993 | – | 1993 | 1521 | 76 % | 1000 | 152 % |
-| `grenzen` | 2823 | 3163 (8 Handouts) | 5986 | 2275 | 38 % | 1200 | 190 % |
-| **Etappe 1** | **8014** | **6204** | **14 218** | **5784** | **41 %** | **3600** | **161 %** |
+**Zählweise** (für alt und neu gleich, damit die Prüfsitzung nachrechnen kann):
 
-Nicht eingerechnet sind die zwei Übungsszenarien aus `/uebungen` (1886 Wörter für die ganze Seite), von denen je ein Beispielsatz auf `grenzen` steht.
+- **Wörter:** durch Leerraum getrennte Zeichenfolgen mit mindestens einem Buchstaben oder einer Ziffer.
+- **Neu:** sichtbarer Text im `<main>` der gebauten Seite. Eingeschlossen sind Kapitelübersicht, Kicker, Figurentexte (Kernaussage, Kurztext, Beschriftungen, Vertiefungen, Bildlegenden, Textfassungen) und der eingesetzte Verweis im Text. Ausgeschlossen sind SVG-Grafik und nur für Screenreader bestimmter Text (`.puk-vis-sr`). Text, der nur breit oder nur schmal sichtbar ist (Leserichtung, Rücksprung der Schleife), zählt einmal mit.
+- **Alt:** Bestandstext der Route (`texte/<route>.md`) ohne den Kopfblock der Erhebung, ohne Klammermarken («[Akkordeon: …]») und ohne Bild- und Linkadressen. Überschriften und aufgeklappte Inhalte zählen mit. Zum Vergleich stehen die Zahlen aus `INVENTAR.md` und aus der Prüfung vom 09.10.2026 daneben.
+- **Absicherungen** (Kernhecken wie im Prüfbericht, Belege 4.1): «kann», «können», «könnte», «könnten», «kannst», Wörter mit «möglich…», «vielleicht», «nicht sicher», «nicht automatisch», gezählt je 100 Wörter.
+- **Semikolons:** im Fliesstext gezählt. Quellenzeilen trennen Literaturangaben mit Semikolon. Sie sind keine Sätze und zählen nicht.
 
-**Lesart:** Gemessen an Seite und Handouts zusammen liegen `verstehen` und `grenzen` nahe beim Ziel «etwa ein Drittel». Die Richtwerte des Plans erreichen sie nicht. Dafür gibt es drei Gründe:
+| Seite | Alt: Seite allein (eigene Zählung) | Alt: `INVENTAR.md` / Prüfung 09.10. | Neu | Neu / alt | Richtwert neu | Absicherungen je 100 Wörter alt → neu | Semikolons im Fliesstext neu |
+| --- | ---: | ---: | ---: | ---: | ---: | --- | ---: |
+| `index` | 433 (`/`) | 435 / 445 | 238 | 55 % | – | 1,85 → 1,68 | 0 |
+| `verstehen` | 2524 (`/verstehen`, mit Diagnostik-Teil) | 2511 / 2444 | 1299 | 51 % | 1300 | 2,54 → 2,16 | 0 |
+| `beziehungen` | 2149 (`/verstehen/beziehungen`) | 1993 / 2090 | 1099 | 51 % | 1100 | 3,82 → 2,73 | 1 (Leserichtung, nur schmal) |
+| `grenzen` | 2985 (`/grenzen`) | 2823 / 2915 | 1500 | 50 % | 1500 | 2,41 → 1,80 | 0 |
 
-- Jede Figur bringt eine Textfassung in der Bildlegende mit, auf `verstehen` sind das zusammen 179 Wörter.
-- Gesprächsbeispiele und Merksätze sind wörtlich übernommen.
-- Weiter kürzen lässt sich nur, wenn Aussagen entfallen.
+**Lesart:**
 
-`beziehungen` hatte keine Handouts und ist am wenigsten gekürzt. Kandidaten für Streichungen nennt der jeweilige Abgleich unter «Prüfbedarf». Die Fachstelle entscheidet in W1, welche Aussagen entfallen dürfen. Das ist die Kalibrierung, für die Etappe 1 gedacht ist.
+- Die drei Inhaltsseiten liegen auf oder knapp unter dem neuen Richtwert. Kürzer werden sie nur, wenn weitere fachliche Aussagen entfallen.
+- Was für den Richtwert gestrichen ist, steht Satz für Satz im jeweiligen Abgleich («Kürzung W2-2»). Kandidaten zur Wiederaufnahme nennt der Prüfbedarf je Seite.
+- **Ziel S-1:** Auf jeder Seite weniger Absicherungen als auf der alten Seite. Absicherungen bleiben nur bei Aussagen über die betroffene Person, über Ursachen, Diagnose und Verlauf (Entscheid der Fachstelle vom 09.10.2026). Das Ziel ist erreicht. Am stärksten sinkt der Wert auf `beziehungen` (3,82 → 2,73), wo er am höchsten war.
+- Den grössten Teil der Kürzung tragen die Figuren: kürzere Textfassungen und Kurztexte, die nicht mehr die Zeichnung beschreiben (V-9). Ausserdem sind Doppelungen entfallen (W2-4), Semikolon-Ketten in ganze Sätze aufgelöst (S-2) und Beispiele für `kommunizieren` vorgemerkt (Etappe 2).
 
 ## Entscheide im Bau (Struktur und Technik)
 
@@ -58,3 +64,25 @@ Nicht eingerechnet sind die zwei Übungsszenarien aus `/uebungen` (1886 Wörter 
 | Entwurfsseiten | 11 Seiten `draft` mit Platzhalter und einer Planzeile; geplantes `navLabel` nur bei `rolle` («Ihre Rolle») und `selbstfuersorge` («Auf sich achten») | Entwürfe erscheinen laut Vertrag nie in der Navigation. Das Label hält die geplante Navigation für Etappe 2 fest. |
 | Absenderin und Zuständigkeitsverweis | wörtlich aus dem Starter, einschliesslich Status `freigegeben` bzw. `geprueft` (Fachstelle, 08.10.2026) | Auftrag «wie im Starter». Es ist die profilweite Fassung, keine neue Freigabe durch die bauende Sitzung. |
 | Paarform | «Therapeutinnen und Therapeuten», «Freundinnen und Freunde», «Partnerin oder Partner» | README des Profils: Paarform ausgeschrieben |
+
+## Entscheide im Bau, Korrektur Etappe 1 (09.10.2026)
+
+Struktur und Technik, von der bauenden Sitzung entschieden. Inhaltliche Entscheide der Fachstelle stehen in `../KORREKTUR-ETAPPE-1.md`, Abschnitt 1.
+
+| Thema | Entscheid | Begründung |
+| --- | --- | --- |
+| Profil-Update in der Website | `tools/contract.js`, `tools/selftest/site.config.json`, `gate.html` und `README.md` aus dem Starter r4-4 übernommen; `responsibility.inline` unverändert aus dem Starter | Die Website hat eigene Kopien der Werkzeuge. Ohne sie gibt es weder den Platzhalter `data-responsibility-inline` noch 50/50 im Selbsttest. |
+| Verweis im Text | je einmal in `verstehen` › `mythen` (Abschnittstext nach der Suizidfrage), `beziehungen` › `verantwortung` (nach dem Satz zu Suizidgedanken), `grenzen` › `gewalt`, Schritt 2 | Korrektur W1-1. `sensitiveTopics` der drei Seiten nennen Selbstgefährdung bzw. Gewalt; das Gate prüft Wortlaut, Ort und Anzahl. |
+| Pendel und Brücke (Muster A) mit direkter Beschriftung | Zeichnung als SVG, Beschriftungen als HTML-Text darüber, Lage in `borderline.css` (Prozent der Zeichnung). Schmal: Beim Pendel folgen die Beschriftungen als Liste unter einem Ausschnitt der Zeichnung; bei der Brücke bleiben die Ufer beschriftet, die Teile erklärt die Liste. | Leitlinie 07: Beschriftungen sind echter HTML-Text. SVG-Text würde schmal unter die Mindestgrösse schrumpfen. |
+| Pendel ohne Achse | Aufhängepunkt, drei Lagen, Bogen am Aufhängepunkt für den grösseren Ausschlag, Pfeile zurück zur Ruhelage | Korrektur V-2: nicht dieselbe Form wie das Anspannungs-Kontinuum direkt davor. |
+| Annahmen | Paar je Zeile: Annahme klein («Verbreitete Annahme: «…»»), Einordnung im Kasten mit durchgezogener Linie und Hauptsatz als Überschrift; schmal untereinander | Korrektur V-6. Ohne gestrichelte Linie, ohne Annahme 7. |
+| Anspannung | Achsentitel als sichtbarer Text über der Achse; Stufenmarken auf der Achse entfernt; je Bereich ein Satz «Was eher möglich ist» und «Was hilft» | Korrektur V-4. Der Text zu «Was eher möglich ist» steht ohne eigene Bezeichnung, um Wiederholungen zu sparen (W2-2). |
+| Schleife: wer handelt | «Station 1 · Schwester» usw. in der Stationsnummer | Korrektur V-3, ohne neues CSS. |
+| Station 3 schmal | `borderline.css`: Stationen schmal auf volle Breite (`align-self: stretch`) | Korrektur B-3. Das Muster zentriert die Stationen auch in der Liste, schmale Stationen standen deshalb versetzt. |
+| DEAR | Beispielsatz je Schritt als `.puk-say` mit der Bezeichnung «Beispiel» | Korrektur V-12, W2-3. |
+| Formulierungsbeispiele `grenzen` › `saetze` | drei Situationen als `.puk-say` mit «Eher problematisch» und «Eher hilfreich»; Zwischentitel `h3` | Korrektur W2-2, W2-3. Einheitliches Format (S-6 der Prüfsitzung). |
+| Vier Arten von Grenzen | Begriffsliste (`dl`) im Fliesstext statt Figur | Korrektur V-5. |
+| Reihenfolge der Seiten | `rolle` vor `grenzen` in `pages` | Korrektur W2-1; die Navigation folgt der Reihenfolge, sobald `rolle` veröffentlicht ist. |
+| Startseite | `title` «Startseite», H1 «Borderline – Orientierung für Angehörige», Eyebrow «Übersicht» | Korrektur W2-6. |
+| Kapitelübersicht | kurze Einträge, die den Kickern entsprechen («Erleben», «Diagnose» …) | Kürzung W2-2. Verweistexte nennen weiterhin die Zielüberschrift (W2-5). |
+| Opferhilfe | kein Link | Entscheid im Chat vom 09.10.2026: ganz weglassen. Die Adresse liess sich aus der Bauumgebung nicht prüfen. |

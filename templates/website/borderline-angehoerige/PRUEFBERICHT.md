@@ -24,32 +24,105 @@ Gehört zur Website in diesem Ordner. Wer den Starter kopiert, übernimmt diese 
 
 Nach jedem Bau ohne Nachfrage ausfüllen: Visualisierungs-Check wie unten, mit Beleg je Punkt. Arbeitsstand, keine Prüfstufe.
 
-**Stand 08.10.2026 · Etappe 1 · bauende Sitzung (Claude Code)**. Gebaut sind `index`, `verstehen`, `beziehungen` und `grenzen`; die übrigen 11 Seiten sind Entwürfe mit Platzhalter. Die Tabelle unten ist die Selbstprüfung, nicht die Stufe «Visualisierungs-Check»; deren Status bleibt «offen».
+**Stand 09.10.2026 · Korrektur Etappe 1 · bauende Sitzung (Claude Code).** Umgesetzt ist `KORREKTUR-ETAPPE-1.md` auf `index`, `verstehen`, `beziehungen` und `grenzen`, nach Übernahme des Profil-Updates vom 09.10.2026 (Build r4-4). Die Prüfstufen bleiben offen. Diese Selbstprüfung ersetzt die vom 08.10.2026 und ist nicht die Stufe «Visualisierungs-Check».
 
-- `node tools/build.mjs`: 15 Seiten, 0 blockierend, 23 Hinweise (9 Visualisierungen und 12 Platzhalter nicht freigegeben, `siteUrl` fehlt, Prüfbericht offen).
-- `node tools/gate.mjs --selftest`: 46/46 bestanden.
-- `node tools/gate.mjs --production`: blockiert erwartungsgemäss mit 22 Befunden (9 × `visual-approval`, 12 × `placeholder-approval`, 1 × `review-report`).
-- Technische Stichprobe in Chromium (Playwright), kein Ersatz für Stufe 5: kein horizontaler Überlauf bei 320, 360, 768 und 1440 px auf den vier Seiten. Tab-Durchlauf: Alle Fokusziele haben einen sichtbaren Fokus (index 10, verstehen 19, beziehungen 17, grenzen 22), und Enter öffnet eine Vertiefung. Mit reduzierter Bewegung bewegt sich ohne Bedienung nichts; nach dem Öffnen einer Vertiefung laufen zwei kurze Übergänge aus dem Profil-CSS, die nach weniger als 50 ms beendet sind. Theme `data-theme="kontrast"` ist bei vier Figuren gerendert. Ein Test mit Screenreader und Hardwaretastatur fehlt.
-- Abgleich der Texte mit dem Bestand: `abgleich/` (je Seite, Wörtertabelle und Entscheide im Bau in `abgleich/README.md`).
+- `node tools/build.mjs`: 15 Seiten, 0 blockierend, 22 Hinweise (8 Visualisierungen und 12 Platzhalter nicht freigegeben, `siteUrl` fehlt, Prüfbericht offen).
+- `node tools/gate.mjs --selftest`: 50/50 bestanden.
+- `node tools/gate.mjs --production`: blockiert erwartungsgemäss mit 21 Befunden (8 × `visual-approval`, 12 × `placeholder-approval`, 1 × `review-report`). Der Verweis im Text blockiert nicht, sein Wortlaut ist geprüft.
+- Technische Stichprobe in Chromium (Playwright), kein Ersatz für Stufe 5:
+  - kein horizontaler Überlauf bei 320, 360, 768 und 1440 px auf den vier Seiten;
+  - Kontrast nach WCAG 1.4.3 für allen Text in `main` gemessen (Figuren, Vertiefungen, Links, Hinweiskästen, `.puk-say`): kein Wert unter AA (B-1, B-2 behoben);
+  - Tab-Durchlauf: erster Tabstopp «Zum Hauptinhalt», alle Fokusziele mit sichtbarem Fokus (index 10, verstehen 19, beziehungen 15, grenzen 40 Tabstopps einschliesslich Fusszeile), Enter öffnet eine Vertiefung (`beziehungen` hat keine mehr);
+  - reduzierte Bewegung: keine laufende Animation ohne Bedienung;
+  - Theme `data-theme="kontrast"` bei allen 8 Figuren gerendert, keine festen Farbattribute in SVG;
+  - Seitenhöhe bei 360 px: `verstehen` 13 734 px (vorher 16 476), `beziehungen` 11 514 px (13 917), `grenzen` 15 936 px (20 206); Abbildung «Annahmen» 2667 px (vorher rund 4100).
+- Ein Test mit Screenreader und Hardwaretastatur fehlt (B-5).
+
+### Wortzahlen und Absicherungen (W2-2, S-1)
+
+Gemessen an der alten Seite allein, gleiche Zählweise alt und neu. Die Zählweise ist in `abgleich/README.md` beschrieben, damit die Prüfsitzung nachrechnen kann.
+
+| Seite | Alt: Seite allein | Neu | Neu / alt | Richtwert | Absicherungen je 100 Wörter alt → neu |
+| --- | ---: | ---: | ---: | ---: | --- |
+| `index` | 433 | 238 | 55 % | – | 1,85 → 1,68 |
+| `verstehen` | 2524 | 1299 | 51 % | 1300 | 2,54 → 2,16 |
+| `beziehungen` | 2149 | 1099 | 51 % | 1100 | 3,82 → 2,73 |
+| `grenzen` | 2985 | 1500 | 50 % | 1500 | 2,41 → 1,80 |
+
+Im Fliesstext steht höchstens ein Semikolon je Absatz. Es gibt ein einziges, in der schmalen Leserichtung der Schleife. Quellenzeilen trennen Literaturangaben weiterhin mit Semikolon.
 
 ## Visualisierungs-Check
 
-| Nr. | Prüfpunkt | Ergebnis | Beleg | Massnahme |
-| --- | --- | --- | --- | --- |
-| 1 | Visualisierungsplan liegt vor; die Seiten entsprechen ihm | erfüllt | `site.config.json` › `visualPlan`: eine Zeile pro Abschnitt auf allen 15 Seiten. Die 9 Figuren der Etappe 1 entsprechen dem Plan (UMBAUPLAN, Abschnitt 3): `v-vs-eisberg` K, `v-vs-anspannung` J, `v-vs-bewertungen` J, `v-vs-mythen` E, `v-bz-schleife` B, `v-bz-sichten` E, `v-gr-bruecke` A, `v-gr-arten` A, `v-gr-dear` C. Zwei Zeilen mit «im Bau prüfen» sind als Text entschieden: `v-gr-reihenfolge` (Raster) und `v-gr-kontakt` (Kontinuum), Begründung in der Planzeile. | W1/Visualisierungs-Check: die beiden Entscheide für Text bestätigen oder verwerfen |
-| 2 | Jeder Abschnitt hat eine Zeile im Plan; Begründungen für reinen Text passen zum Inhalt | erfüllt | Kein Gate-Befund `plan-coverage`. Die Begründungen benennen den Inhalt, z. B. `v-bz-verstaerker`: «Die Einflüsse vertiefen Stationen derselben Schleife … eine zweite Grafik würde denselben Mechanismus doppeln»; `v-gr-gewalt`: «In einer möglichen Gefahrensituation braucht es kurze, direkte Hinweise ohne Grafik». | – |
-| 3 | Prüffrage je Darstellung konkret beantwortet; die Darstellung zeigt, was die Antwort verspricht | teilweise | Konkret beantwortet und eingelöst, z. B. `v-bz-schleife` (Rückkopplung als geschlossene Schleife, 5 Bögen), `v-vs-mythen` (Paare auf gleicher Höhe, schmal hintereinander). Schwach bei `v-gr-arten`: Der geteilte Kreis zeigt Gleichwertigkeit und Überschneidung (gestrichelt), die eigentliche Information steckt aber in der Liste daneben. | Visualisierungs-Check: prüfen, ob `arten` als Figur trägt oder Text genügt |
-| 4 | Jede Figur hat Kernaussage und Erklärtext; die Hauptaussage für Angehörige steht nicht nur in der Vertiefung | erfüllt | Alle 9 Figuren haben `p.puk-vis-kern` als ganzen Satz und `p.puk-vis-short`, z. B. `v-vs-anspannung`: «Bei hoher Anspannung können Worte schwerer ankommen. Sie dürfen eine Pause machen oder das Gespräch beenden.» Was Angehörige tun können, steht sichtbar: Ansatzpunkte in `v-bz-schleife` und `v-vs-anspannung`, die drei Schritte zu den Bewertungen im Abschnittstext `verstehen` › `bewertungen`. | – |
-| 5 | Erklärmodelle (B, C, G): Ansatzpunkt für Angehörige markiert oder Verzicht begründet; keine Verantwortung für Behandlung oder Verlauf zugeschoben | erfüllt | `v-bz-schleife`: Station 2 «Bedeutung» als `li.is-ansatz` (doppelte Kontur) und `p.puk-vis-ansatz`, dazu in der Textfassung genannt. Zitat: «Ein Ansatzpunkt ist eine Möglichkeit, keine Pflicht, die Schleife allein zu unterbrechen.» `v-gr-dear`: entryPoint «entfällt: Der ganze Ablauf beschreibt das eigene Handeln der Angehörigen.» Muster G kommt nicht vor. | – |
-| 6 | Derselbe Mechanismus wird nicht in zwei Abschnitten getrennt gezeigt | erfüllt | Vier Handouts zum selben Mechanismus sind in einer Figur verbunden (`v-vs-anspannung`). Schleife und Zwei Sichten nutzen dasselbe Beispiel (Absage der Schwester) für Mechanismus und Perspektiven. `beziehungen` › `verstaerker` verlinkt `verstehen.html#anspannung` und `#bewertungen`, statt sie zu wiederholen. | – |
-| 7 | Kartenraster-Check: keine Reihe gleichartiger Karten, wo eine Anordnung erklären müsste | erfüllt | Keine `.puk-web-card-list` (kein Gate-Hinweis `card-grid`). Die 16 Felder in `v-vs-mythen` sind Paare: Links/rechts und gleiche Höhe tragen die Bedeutung «Annahme ↔ Einordnung», Linienart oben unterscheidet die Seiten. | Visualisierungs-Check: Wirkung der 16 Felder bei 1440 px ansehen |
-| 8 | Anordnung, Verbindungen, Formen oder Linienarten tragen Bedeutung, nicht nur die Wörter | teilweise | Bedeutung tragen: Pfeilrichtung und Rücksprung (`v-bz-schleife`), Linienstärke (`v-vs-anspannung` steigend; `v-vs-bewertungen` dick an beiden Polen), Linie ohne Verbindungen zwischen den Schichten (`v-vs-eisberg`), Linienart durchgezogen/gestrichelt (`v-bz-sichten`, `v-vs-mythen`), Reihenfolge und Nummer (`v-gr-dear`), Metapher (`v-gr-bruecke`). Wenig Bedeutung trägt die Form bei `v-gr-arten` (siehe Punkt 3). | wie Punkt 3 |
-| 9 | Darstellungen über den Erkenntnisweg verteilt; keine unbegründete Textwand | teilweise | Die Figuren sind über den Erkenntnisweg verteilt: `verstehen` Abschnitte 03–06, `beziehungen` 02 und 04, `grenzen` 02, 03 und 05. Auf `grenzen` folgen danach fünf Textabschnitte (06–10, rund 1000 Wörter); jeder ist im Plan begründet (Formulierungen, Hinweise, Liste, Rollen, Schutz). `beziehungen` › `verstaerker` ist eine lange Liste mit acht Einträgen. | W2: Länge von `grenzen` 06–10 und `beziehungen` › `verstaerker` prüfen; Kürzungskandidaten in `abgleich/` |
-| 10 | Vereinfacht, nicht verfälscht; Grenzen des Modells benannt; Quelle oder Kennzeichnung vorhanden | erfüllt (formal) | Jede Figur nennt die Grenzen des Modells in der Vertiefung, z. B. `v-vs-anspannung` «keine messbaren Zustände und kein Phasenmodell … Gefahr lässt sich aus der Lage auf der Achse nicht ableiten», `v-vs-eisberg` «keine Aussage darüber, was in einer bestimmten Person ‹darunterliegt›». Die Kennzeichnung in der Bildlegende ist «Eigene didaktische Darstellung» bzw. «Quelle: Linehan (2015)» (`v-gr-dear`). Ob die Vereinfachung fachlich stimmt, entscheidet W1. | W1 |
-| 11 | Grundaussage ohne Animation, ohne Aufklappen und ohne Skript verständlich | erfüllt | Keine Seite lädt `interaktion.js`, kein `data-puk-*`, kein `data-vis-build`. Interaktiv sind nur native `details` mit Vertiefungen. Reiter, Auswahl-Schaltflächen und Akkordeons des Bestands sind sichtbare Darstellungen geworden (`abgleich/`). | – |
-| 12 | Bei 320 px lesbar; Textalternative bzw. Langbeschreibung vollständig | erfüllt (technisch) | Bildschirmfotos bei 320 px: `v-bz-schleife` als Liste mit Linie und Text «Nach Station 5: zurück zu Station 1»; «Uhrzeigersinn» nur in `[data-cycle-wide]` (Gate). `v-vs-mythen` paarweise untereinander, Kontinua als Bereiche untereinander, kein horizontaler Überlauf. Jede Figur hat eine Textfassung über `aria-describedby` mit mindestens 40 Zeichen (Gate). | Stufe 5: Screenreader-Läufe mit den Textfassungen |
-| 13 | Theme «Hoher Kontrast» geprüft (keine festen Farbwerte in SVG) | erfüllt (technisch) | In den SVG stehen keine festen Farbwerte (Suche nach Hexwerten in `content/` und `borderline.css` ohne Treffer), nur Token-Klassen (`puk-vis-ln`, `puk-vis-fill`, `puk-vis-mark`, `puk-vis-water`, `puk-vis-paper`). `data-theme="kontrast"` ist gerendert bei `v-bz-schleife`, `v-vs-mythen`, `v-vs-eisberg` und `v-gr-dear`: Linien und Text folgen dem Theme. | Stufe 5: alle Figuren im Kontrast-Theme ansehen |
-| 14 | Inhalt fachlich freigegeben | nicht erfüllt | `approvalStatus` «ausstehend» bei allen 9 Figuren; W1 ist offen; das Produktionsgate blockiert 9 × `visual-approval`. | W1 durch die Fachstelle |
+Selbstprüfung als Matrix je Figur (Vorlage im Starter). E = erfüllt · T = teilweise · N = nicht erfüllt · – = nicht anwendbar. Belege und Gründe für T und N stehen unter der Matrix. «Vier Arten von Grenzen» ist keine Figur mehr (V-5).
+
+| Nr. | Prüfpunkt | `v-vs-eisberg` | `v-vs-anspannung` | `v-vs-bewertungen` | `v-vs-mythen` | `v-bz-schleife` | `v-bz-sichten` | `v-gr-bruecke` | `v-gr-dear` |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | Plan liegt vor, Seite entspricht ihm | E | E | E | E | E | E | E | E |
+| 2 | Zeile je Abschnitt; Begründungen passen | E | E | E | E | E | E | E | E |
+| 3 | Prüffrage beantwortet und eingelöst | E | E | E | T | E | E | E | T |
+| 4 | Kernaussage und Erklärtext | E | E | E | E | E | E | E | E |
+| 5 | Ansatzpunkt richtig gesetzt (B, C, G) | – | – | – | – | E | – | – | E |
+| 6 | Mechanismus nicht doppelt gezeigt | E | E | E | E | E | E | E | E |
+| 7 | Kartenraster-Check | E | E | E | T | E | E | E | E |
+| 8 | Form und Linien tragen Bedeutung | E | T | E | T | E | T | E | E |
+| 9 | Verteilt, keine Textwand | E | E | E | T | E | E | E | E |
+| 10 | Nicht verfälscht; Grenzen; Kennzeichnung | E | E | E | E | E | E | E | E |
+| 11 | Ohne Aufklappen und Skript verständlich | E | E | E | E | E | E | E | E |
+| 12 | 320 px lesbar; Textalternative | E | E | E | E | E | E | E | E |
+| 13 | Theme «Hoher Kontrast» | E | E | E | E | E | E | E | E |
+| 14 | Fachlich freigegeben | N | N | N | N | N | N | N | N |
+
+**Belege je Punkt**
+
+- **1, 2:** `site.config.json` › `visualPlan` mit einer Zeile pro Abschnitt, nachgeführt am 09.10.2026. Pendel `format: figure` mit neuem `understood`, «Vier Arten» `format: text` mit Begründung, `entryPoint` der Schleife «Station 5 «Wirkung»». Kein Gate-Hinweis `plan-coverage` oder `visual-plan`.
+- **3:** Das Pendel löst ein, was die Planzeile verspricht: Ausschlag unter Stress und Rückschwung, mit eigener Form statt einer zweiten Achse. **T bei Annahmen:** Die Paarung auf einer Zeile trägt; der Vergleich bleibt aber eine Liste von sieben Kästen. **T bei DEAR:** Der Pfad zeigt die Schritte, bringt aber gegenüber einer nummerierten Liste wenig (V-12 der Prüfsitzung). Verbessert ist nur die Trennung von Aufgabe und Beispiel.
+- **4:** Jede Figur hat `p.puk-vis-kern` und einen Kurztext zum Inhalt (V-9). Beispiele: Eisberg «Nachfragen hilft mehr als Gedankenlesen.»; Brücke «Grenzen gehören zur Verbindung wie das Geländer zur Brücke.»; Schleife «Angehörige setzen bei ihrer eigenen Reaktion an.»
+- **5:** Schleife: Station 5 «Wirkung» (Schwester) als `li.is-ansatz` und `p.puk-vis-ansatz` (V-1). Text: «Statt sich weiter zu verteidigen, das Gefühl anerkennen, nach der Deutung fragen und die eigene Grenze halten». DEAR: «entfällt: Der ganze Ablauf beschreibt das eigene Handeln der Angehörigen.»
+- **6:** Anspannung (Achse) und Pendel (Aufhängepunkt, Bogen) haben verschiedene Formen für verschiedene Mechanismen (V-2). Zwei Sichten bezieht jeden Schritt auf eine Station der Schleife (V-3): «Station 1 · Absage», «Station 4 · Nachrichten», «Station 5 · Verteidigung», «Neuer Anlass · Gespräch endet». Die Einflüsse auf `beziehungen` sind Text mit Station (V-8), keine zweite Grafik.
+- **7, 9:** **T bei Annahmen:** sieben gleich gebaute Kästen. Die Annahme steht klein links, die Einordnung im Kasten. Bei 360 px ist die Figur 2667 px hoch statt rund 4100. Sonst kein Kartenraster.
+- **8:** Bedeutung tragen Ausschlag und Rückschwung (Pendel), Ufer, Geländer und Pfeiler (Brücke, direkt beschriftet, V-7), Richtung und Rücksprung (Schleife), Reihenfolge (DEAR) und Schichten ohne Verbindung (Eisberg). **T bei Anspannung:** Die Linienstärke steigt in drei Stufen (Muster J), während Kurztext und Bereiche «gleitend, keine Stufen» sagen; die Striche auf der Achse sind entfernt. Das ist ein Profilbefund (P-6). **T bei Zwei Sichten:** Die Linienart (durchgezogen/gestrichelt) unterscheidet die Sichten, hat im Profil aber keine feste Bedeutung (V-11, P-7). **T bei Annahmen:** Bedeutung tragen Lage und Schriftgrösse, keine Linie.
+- **10:** Jede Figur hat eine Kennzeichnung in der Bildlegende. Grenzen des Modells stehen beim Eisberg, bei der Anspannung, beim Pendel und bei der Brücke in der Vertiefung, bei den Annahmen in «Quellen und Grenzen». Ob die Vereinfachungen fachlich stimmen und die Bezugspunkte passen, entscheidet W1 (W1-6).
+- **11:** Kein Skript. Die Vertiefungen sind native `details`. Die Hauptaussagen stehen ausserhalb.
+- **12:** Kein Überlauf bei 320 px. Beschriftungen in `type-body-sm` (15 px): beim Pendel schmal als Liste unter der Zeichnung, bei der Brücke bleiben die Ufer beschriftet, und die Liste erklärt die Teile. Jede Figur hat eine Textfassung über `aria-describedby`.
+- **13:** Bildschirmfotos aller 8 Figuren mit `data-theme="kontrast"`. In SVG stehen nur Token-Klassen (`puk-vis-ln`, `puk-vis-fill`, `puk-vis-mark`, `puk-vis-water`, `puk-vis-ln--paper`), keine festen Farbattribute.
+- **14:** `approvalStatus` «ausstehend» bei allen Figuren; das Produktionsgate blockiert 8 × `visual-approval`.
+
+### Korrekturauftrag: Stand je Befund
+
+| Befund | Stand | Wie | Beleg |
+| --- | --- | --- | --- |
+| Profil-Update | umgesetzt | Merge von `profil-0910`; Werkzeuge der Website aus dem Starter r4-4 übernommen | Selbsttest 50/50; `site.config.json` › `responsibility.inline` wie im Starter |
+| W1-1 | umgesetzt | Verweis im Text je einmal nach der Suizidfrage, nach dem Satz zu Suizidgedanken und in Schritt 2 bei Gewalt; Annahme 6 nur noch Einordnung | `verstehen` › `mythen`: «… fragen Sie ruhig und direkt, ob die Person Suizidgedanken oder einen Plan hat.» → Verweis → «Bleiben Sie bei der Person, soweit dies für Sie sicher möglich ist.»; `beziehungen` › `verantwortung`; `grenzen` › `gewalt`, Schritt 2. Wortlaut von Annahme 6 und lmk-Satz: Prüfbedarf in `abgleich/verstehen.md` |
+| W1-2 | umgesetzt | Kernaussage der Brücke wie im Handout | «Kontakt braucht Geländer: Grenzen können Kontakt schützen.»; Vertiefung «Sie dürfen ein Gespräch oder, wenn nötig, einen Kontakt beenden.» |
+| W1-3 | umgesetzt | fünf Aussagen wieder aufgenommen; Abgleich Satz für Satz für alle vier Seiten | `verstehen`, Annahme 5 «Einzelne Merkmale können sich überschneiden»; `beziehungen` › `verbindung`, `verstaerker`; `grenzen` › `konsequenz` «Konsequenz heisst, dass Sie sich an tragfähigen Absprachen orientieren.»; `abgleich/*.md` › «Satz für Satz» |
+| W1-4 | umgesetzt | Wortlaut der Fachstelle auf `index` › `beratung`; `grenzen` › `kontakt` ein Satz mit Link | «… berät alle Angehörigen … kostenlos und untersteht der Schweigepflicht …»; Link `index.html#beratung` |
+| W1-6 | umgesetzt (Prüfung offen) | Bezugspunkte der Brücke wie im Handout; Quellenzeile in `saetze` entfällt | Bildlegende Abbildung 1 `grenzen`. Ob die Bezugspunkte der Figuren passen, bleibt für die Fachstelle offen |
+| W1-7 | umgesetzt | DEAR ohne «feste Reihenfolge»; «Eine Beziehung kann helfen, sollte aber weder alle Regulation übernehmen noch Behandlung ersetzen» | Abbildung 2 `grenzen`, Kernaussage «Vier Schritte helfen, ein Anliegen vorzubereiten.»; `beziehungen` › `was-hilft` |
+| Opferhilfe | entfällt | kein Link, Entscheid im Chat vom 09.10.2026 | `grenzen` › `gewalt`, Schritt 4 ohne Link und ohne Nummer |
+| V-1 | umgesetzt | Ansatzpunkt bei Station 5, Text laut Auftrag, «dein Schweigen» entfällt; `entryPoint` nachgeführt | Abbildung 1 `beziehungen` |
+| V-2 | umgesetzt | Pendel als Muster A mit Aufhängepunkt, Bogen, Ruhelage und zwei Auslenkungen, Beschriftung «unter Stress grösserer Ausschlag», Pfeile zurück | Abbildung 3 `verstehen`; Planzeile `v-vs-bewertungen` |
+| V-3 | umgesetzt | Handelnde je Station; Zwei Sichten auf Stationen bezogen | «Station 1 · Schwester» … «Station 5 · Schwester»; Abbildung 2 `beziehungen` |
+| V-4 | umgesetzt | Achsentitel, «Rückzug oder Schweigen», Kurztext «gleitende Achse … nicht sicher ablesbar» | Abbildung 2 `verstehen` (Linienstärke in Stufen: Profilbefund, siehe Punkt 8) |
+| V-5 | umgesetzt | Begriffsliste statt Figur, Planzeile `format: text` | `grenzen` › `arten` |
+| V-6 | umgesetzt | Einordnung als Hauptsatz, Annahme klein, ohne gestrichelte Linie, Annahme 7 entfällt | Abbildung 4 `verstehen` |
+| V-7 | umgesetzt | beide Ufer gezeichnet und beschriftet, Teile direkt beschriftet, Liste bleibt | Abbildung 1 `grenzen` |
+| V-8 | umgesetzt | fünf Einträge mit Station, als `dl`; «Dass etwas anderswo gelingt …» bei Station 5 | `beziehungen` › `verstaerker` |
+| V-9 | umgesetzt | Kurztexte sagen, was Angehörige mitnehmen | Punkt 4 oben |
+| V-12 | umgesetzt | Beispielsatz je Schritt als `.puk-say` | Abbildung 2 `grenzen` |
+| W2-1 | umgesetzt | `rolle` vor `grenzen` | `site.config.json` › `pages` |
+| W2-2 | umgesetzt | 1299 / 1099 / 1500 Wörter; drei `.puk-say`-Beispiele, übrige für `kommunizieren` vorgemerkt; Rollen als Absatz | Tabelle oben; `abgleich/README.md` |
+| W2-3 | umgesetzt | Gegenüberstellungen mit `.puk-say` | `grenzen` › `saetze` |
+| W2-4 | umgesetzt | Beratung nur auf `index`; «Schutz vor Gespräch» auf `grenzen` nur im Kopf und in `gewalt` | Reihenfolge ohne Punkt «Bei Bedrohung oder Gewalt», DEAR-Vertiefung ohne Schutzsatz, Planungssatz aus `kontakt` nach `gewalt` |
+| W2-5 | umgesetzt | «Anspannung» durchgehend (Ausnahme: Beschriftung des Pendels laut V-2); Dissoziation, Remission, PTBS, DBT beim ersten Auftreten erklärt; Eisberg-Text mit den Begriffen der Figur | `verstehen` › `anspannung` «Wenn die Anspannung steigt»; Annahmen 1 und 5; `beziehungen`, Station 4; DEAR-Vertiefung |
+| W2-6 | umgesetzt | Einstiege als Anliegen; `title` und H1 abgestimmt | `index` › `einstiege` |
+| S-1 | umgesetzt | Absicherungen bei Handlungshinweisen gestrichen; Ziel: auf jeder Seite unter dem Bestand | Tabelle oben (z. B. `beziehungen` 3,82 → 2,73) |
+| S-2 | umgesetzt | höchstens ein Semikolon je Absatz, Ketten aufgelöst | `grenzen` › `reihenfolge`, `konsequenz` |
+| S-3 | umgesetzt | Satz zur Formel entfällt | `beziehungen` › `verstaerker` |
+| S-5 | umgesetzt (Prüfung offen) | «du» im Beispiel; zwei technische Beispiele natürlicher gefasst | «Was soll ich übernehmen, was möchtest du selbst tun?»; «… wende dich an die Stelle, die wir für Krisen abgemacht haben.»; «… und bin beim nächsten Gespräch aufmerksamer.» Laut-Lese-Probe durch S offen |
+| B-3 | umgesetzt | Stationen schmal auf volle Breite | `borderline.css`; Messung 320 und 360 px: alle fünf Stationen gleich breit und bündig |
+| B-1, B-2 | nachgeprüft | durch das Profil-Update behoben | Kontrastmessung oben: kein Wert unter AA |
+
+**Nicht erfüllt oder offen (Selbstprüfung):** Punkt 14 bei allen Figuren (fachliche Freigabe). Teilweise: Punkt 3 (Annahmen, DEAR), Punkt 7 und 9 (Annahmen), Punkt 8 (Anspannung, Zwei Sichten, Annahmen). Offen für die Fachstelle: Bezugspunkte der Figuren (W1-6), alle fachlichen Freigaben, der Prüfbedarf in `abgleich/*.md`. Offen für Stufe 5: Screenreader-Läufe und Hardwaretastatur (B-5).
 
 
 ## Prüfung durch die Prüfsitzungen (09.10.2026)
