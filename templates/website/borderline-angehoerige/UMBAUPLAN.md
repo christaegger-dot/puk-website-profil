@@ -12,6 +12,7 @@ Dieser Plan gehört zur Website `templates/website/borderline-angehoerige/`. Er 
 | Krisenbegleitung | **Behalten ohne Nummern**, als Psychoedukation zum Umgang mit Krisen. Keine Verweise auf «Soforthilfe»; es gilt nur der Zuständigkeitsverweis in der Fusszeile. |
 | Personenillustrationen | **Weglassen.** Die fünf Szenen (Zuhören, Verbindungsmomente, zwei Perspektiven, Pause, Abstand) sind KI-generiert; das Profil schliesst generierte Personenbilder aus. |
 | Handouts und PDFs | **Modelle in die Seiten.** Die Modelle der Handouts werden Figuren auf den Themenseiten; die 42 Textseiten entfallen. PDFs gibt es erst wieder, wenn sie im Handout-System neu entstehen. |
+| Hauptnavigation (09.10.2026) | **Fünf Punkte:** Verstehen · Beziehungen · Ihre Rolle · Grenzen · Auf sich achten. Kommunizieren, Genesung und Unterstützung sind über die Startseite und Querverweise erreichbar. Grund: Mit acht Punkten belegt der Kopf bei 320 px 616 von 800 px (Messung in Etappe 1, `abgleich/README.md`). |
 
 Durch das Profil bereits entschieden und nicht verhandelbar:
 
@@ -34,12 +35,12 @@ Aus 72 Seiten (rund 65'000 Wörter) werden 15 Seiten. Richtwerte für den Umfang
 | `diagnose` | Diagnose und Begleiterkrankungen | – (verlinkt aus Verstehen) | `/verstehen/diagnostik`, `/verstehen/begleiterkrankungen`, Diagnostik-Teil von `/verstehen` (1300) |
 | `rolle` | Ihre Rolle klären | Ihre Rolle | `/unterstuetzen/uebersicht`, `/unterstuetzen/alltag`; Handouts rolle-klaeren, garten (Einflussbereiche), leuchtturm, schuld-verantwortung, drei-saeulen, konsistenz-prinzip, 4-alltags-tipps, 6-leitlinien, beziehungs-achtsamkeit, kinder (1200) |
 | `behandlung` | Behandlung und Ihre Rolle darin | – (verlinkt aus Rolle) | `/unterstuetzen/therapie` (1000) |
-| `kommunizieren` | Zugewandt und klar sprechen | Kommunizieren | `/kommunizieren`, `/uebungen`; Handouts zuhoeren-ohne-zustimmen, gespraeche-kippen, pause-statt-streit, wenn-worte-treffen, beispiel-dialog (1000) |
+| `kommunizieren` | Zugewandt und klar sprechen | – (Startseite; verlinkt aus Verstehen, Beziehungen, Grenzen) | `/kommunizieren`, `/uebungen`; Handouts zuhoeren-ohne-zustimmen, gespraeche-kippen, pause-statt-streit, wenn-worte-treffen, beispiel-dialog (1000) |
 | `grenzen` | Grenzen setzen | Grenzen | `/grenzen`; Handouts 4-arten-von-grenzen, bruecke-gelaender, dear, grenzen-erkennen, grenzen-spickzettel, grenzen-ohne-eskalation, lmk, spiegeln-statt-aufsaugen (1200) |
 | `krise` | Krisen begleiten | – (verlinkt aus Rolle, Kommunizieren, Grenzen) | `/unterstuetzen/krise`; Handout krisenkommunikation (800) |
 | `selbstfuersorge` | Auf sich achten | Auf sich achten | `/selbstfuersorge`; Handouts sauerstoffmaske, energie-konto, warnsignale, stopp-technik, radikale-akzeptanz, erlaubnis-karte (1000) |
-| `genesung` | Genesung | Genesung | `/genesung`; Handouts genesung-zahlen, remission-heilung, fortschritt-paradox, 5-faktoren-genesung, rolle-genesungsprozess (800) |
-| `unterstuetzung` | Unterstützung finden | Unterstützung | `/fachstelle`, `/beratung`, `/buchempfehlungen` (600) |
+| `genesung` | Genesung | – (Startseite; verlinkt aus Verstehen, Ihre Rolle) | `/genesung`; Handouts genesung-zahlen, remission-heilung, fortschritt-paradox, 5-faktoren-genesung, rolle-genesungsprozess (800) |
+| `unterstuetzung` | Unterstützung finden | – (Startseite; verlinkt aus Ihre Rolle, Auf sich achten) | `/fachstelle`, `/beratung`, `/buchempfehlungen` (600) |
 | `fragen` | Häufige Fragen | – (Fusszeile) | `/faq` (1500; kurze Antworten mit Link auf die Themenseite) |
 | `quellen` | Quellen und Begriffe | – (Fusszeile) | `/quellen`, `/glossar` (Quellenliste vollständig; Glossar nur Begriffe, die im Text vorkommen) |
 | `ueber` | Über diese Website | – (Fusszeile) | `/ueber-uns`, `/impressum`, `/datenschutz`, `/barrierefreiheit`, `/feedback` (900) |
@@ -52,7 +53,7 @@ Entfallen ersatzlos, mit Begründung:
 - `/uebungen` als interaktive Szenarien: zwei bis drei Beispiele «So könnte es klingen» auf `kommunizieren` und `grenzen` ersetzen sie.
 - Personenillustrationen, Leuchtturm-Bildwelt, Ornamente.
 
-Hauptnavigation: Verstehen · Beziehungen · Ihre Rolle · Kommunizieren · Grenzen · Auf sich achten · Genesung · Unterstützung. Die Bauetappe prüft, ob acht Punkte auf kleinen Bildschirmen tragen; sonst Vorschlag mit Begründung.
+Hauptnavigation (Entscheid 09.10.2026, Abschnitt 1): Verstehen · Beziehungen · Ihre Rolle · Grenzen · Auf sich achten. Die zuerst geplanten acht Punkte trugen auf kleinen Bildschirmen nicht (Messung in Etappe 1).
 
 ## 3. Visualisierungsplan (Entwurf)
 
