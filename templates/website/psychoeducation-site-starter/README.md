@@ -1,4 +1,4 @@
-# Psychoedukations-Starter · PUK Website Kit 1.10.1-r4 · abgeleitet · Build r4-3
+# Psychoedukations-Starter · PUK Website Kit 1.10.1-r4 · abgeleitet · Build r4-4
 
 Lokal lauffähiger Mehrseiten-Starter für psychoedukative Websites. Abgeleitetes Profil auf Basis der kanonischen Quelle **PUK Zürich Design System 1.10.1**, nicht deren neue offizielle Version. Alle Inhalte sind synthetisch: keine realen Kontakte, Personen, klinischen Aussagen, Freigaben oder Bildrechte.
 
@@ -37,6 +37,7 @@ Seiten über einen lokalen Webserver öffnen (z. B. `npx serve` im Projektstamm 
 - Die Hauptnavigation entsteht aus allen Seiten mit `status: "published"` und `navLabel`. Entwürfe erscheinen nie in der Navigation.
 - `disclaimer`: gut auffindbarer Hinweis, dass die Website keine individuelle Abklärung, Beratung oder Behandlung ersetzt; erscheint in jeder Fusszeile (fehlt er, meldet das Gate einen Hinweis).
 - `responsibility` (site-weit, optional): ein Zuständigkeitsverweis an einer festen, von jeder Seite aus erreichbaren Stelle – in jeder Fusszeile –, der ohne Nummern auf die zuständigen Stellen verweist (alternativ `targetHref` auf eine Impressum-Stelle; die Fusszeile gilt als eine Stelle). Felder: `label`, `text`, `owner`, `reviewStatus`, optional `targetHref` (lokal, existierend) + `targetLabel`; bei `geprueft` zusätzlich `reviewedBy` und `reviewedAt`. Der Prüfvermerk erscheint nicht auf der Website; ein ungeprüfter Verweis zeigt in der Fusszeile eine Warnung. Seitenweise `safetyAccess`-Varianten gibt es nicht mehr; `persistent-subdued` und `direct` sind gesperrt (Profilentscheid 06.10.2026: Die Fachstelle bietet keine Krisenintervention).
+- `responsibility.inline` (optional, Profilentscheid 09.10.2026): Wortlaut des **Verweises im Text** (`text`, `reviewStatus`, bei `geprueft` auch `reviewedBy` und `reviewedAt`). Seiten setzen ihn nur über den Platzhalter `<p data-responsibility-inline></p>` direkt nach einer Handlungsanleitung für akute Lagen ein; der Build füllt den Wortlaut ein. Erlaubt nur auf Seiten, deren `sensitiveTopics` Selbstgefährdung, Gewalt oder akute Krise nennen, im Fliesstext (nicht in Figur oder Vertiefung), höchstens einer je Abschnitt, ohne Nummern. Der Starter enthält den von der Fachstelle am 09.10.2026 fachlich geprüften Standardwortlaut. Wird er geändert, gilt er als ungeprüft (`reviewStatus: "ausstehend"`), und das Produktionsgate blockiert, solange ein verwendeter Verweis nicht geprüft ist.
 - `visualPlan[]`: `section`, `sectionId` (Pflicht: `id` der zugehörigen `section`; jeder Abschnitt braucht eine Zeile), `goal`, `format` (`text`; Muster A–F `figure`, `cycle`, `process`, `illustration`, `comparison`, `decision`; Muster G–K `stepwise-model`, `tension-field`, `relationship-map`, `continuum`, `layer-model`), `statement`, `understood` (Pflicht ausser bei `text`: Was versteht die Zielgruppe dadurch besser als durch einen kurzen Text allein?), `entryPoint` (Pflicht bei `cycle`, `process`, `stepwise-model`: Ansatzpunkt für Angehörige oder «entfällt: Begründung»; ein genannter Ansatzpunkt ist in der Figur als `.puk-vis-ansatz` markiert), `source`, `alternative`, `reason`, `approvalStatus`.
 - `siteUrl` (optional): öffentliche Adresse; erzeugt `sitemap.xml` und kanonische Links. Fehlt sie, meldet das Gate einen Hinweis.
 - `interactionScript`: Pfad zu `components/interaktion.js`. Der Build bindet es nur auf Seiten ein, die Akkordeon, Reiter, Menü, Dialog oder Muster G enthalten.
@@ -53,6 +54,7 @@ Seiten über einen lokalen Webserver öffnen (z. B. `npx serve` im Projektstamm 
   - fehlende oder versteckte Absenderin
   - Telefonnummern, `tel:`-Links und Notfallblöcke (Varianten `direct`, `persistent-subdued`) auf psychoedukativen Seiten
   - Zuständigkeitsverweis fehlt auf einer Seite, steht ausserhalb der Fusszeile oder mehrfach; Ziel fehlt
+  - Verweis im Text mit eigenem Wortlaut, auf einer Seite ohne Selbstgefährdung, Gewalt oder akute Krise, in Figur oder Vertiefung, mehrfach in einem Abschnitt oder mit Nummern; in Produktion zusätzlich, solange sein Wortlaut nicht fachlich geprüft ist
   - Hinweis «ersetzt keine individuelle Abklärung oder Behandlung» fehlt auf einer Seite (wenn `disclaimer` gesetzt ist)
   - «geprüft» ohne Dokumentation
   - Figuren ohne Bildlegende, Titel, Textalternative, Kennzeichnung oder Plan-Eintrag
@@ -77,9 +79,9 @@ Seiten über einen lokalen Webserver öffnen (z. B. `npx serve` im Projektstamm 
 - `index.html`: Einstieg mit Lesepfaden; der Vollbericht ist ein Download-Platzhalter.
 - `seitenvorlage.html`: Entwurf, nicht in der Navigation.
 
-Stand 08.10.2026 (Build r4-3, Visualisierung nach dem ersten Probelauf):
+Stand 09.10.2026 (Build r4-4, Befunde aus der Prüfung der Borderline-Website):
 - **Entwurfsgate:** 0 blockierende Befunde.
 - **Produktionsgate:** blockiert 9 offene Freigaben und den unvollständigen Prüfbericht. Das ist erwartet.
-- **Selbsttest:** 46 von 46 bestanden, auch in Kopien des Starters.
+- **Selbsttest:** 50 von 50 bestanden, auch in Kopien des Starters (neu: Verweis im Text mit eigenem Wortlaut, auf Seite ohne sensibles Thema, in einer Vertiefung, ungeprüft in Produktion).
 
 Offen sind reale Screenreader-Läufe, ein Test mit Hardwaretastatur sowie Fach-, Bild- und Absenderfreigaben.

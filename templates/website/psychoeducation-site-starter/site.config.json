@@ -2,7 +2,7 @@
   "$comment": "PUK Website Kit 1.10.1-r4 · abgeleitet – Seitenvertrag des Psychoedukations-Starters. Synthetische Musterwerte. Pflichtfelder und Regeln: README.md in diesem Ordner. Nach jeder Änderung: node tools/build.mjs, danach node tools/gate.mjs (Entwurf) bzw. node tools/gate.mjs --production.",
   "kitRevision": "PUK Website Kit 1.10.1-r4 · abgeleitet",
   "canonicalSource": "PUK Zürich Design System 1.10.1 (unverändert)",
-  "assetVersion": "r4-3",
+  "assetVersion": "r4-4",
   "siteTitle": "Psychoedukation verstehen – Musterwebsite",
   "shortDescription": "Synthetische Musterwebsite mit drei psychoedukativen Referenzseiten und Seitenvorlage. Keine fachlichen Aussagen, keine realen Kontakte.",
   "language": "de-CH",
@@ -24,7 +24,14 @@
     "owner": "Fachstelle Angehörigenarbeit PUK",
     "reviewStatus": "geprueft",
     "reviewedBy": "Fachstelle Angehörigenarbeit PUK",
-    "reviewedAt": "08.10.2026"
+    "reviewedAt": "08.10.2026",
+    "inline": {
+      "text": "Sorgen Sie sich akut um das Leben oder die Sicherheit eines Menschen, holen Sie sofort Hilfe: ärztlicher Notfalldienst oder Notfallstation, bei Gefahr die Polizei.",
+      "reviewStatus": "geprueft",
+      "reviewedBy": "Fachstelle Angehörigenarbeit PUK",
+      "reviewedAt": "09.10.2026",
+      "$comment": "Verweis im Text (Profilentscheid 09.10.2026): nur über den Platzhalter <p data-responsibility-inline></p>, nur bei Selbstgefährdung, Gewalt oder akuter Krise. Wortlaut von der Fachstelle fachlich geprüft am 09.10.2026."
+    }
   },
   "sender": {
     "orgUnit": "Fachstelle Angehörigenarbeit",

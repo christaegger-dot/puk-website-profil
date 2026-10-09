@@ -641,3 +641,22 @@ html.puk-scroll-lock{overflow:hidden}
   .puk-web-band,.surface-brand{background:none!important;color:var(--text-default)!important}
   body{background:#fff}
 }
+
+/* ==== Prüfbefunde 09.10.2026 (ergänzt, nicht Teil der Quelle) ====
+   1. Links im Hinweiskasten: Blau 100 auf --status-info-bg hatte 3,6:1, Blau 125 hat 4,9:1.
+   2. Definitionslisten im Fliesstext (Begriff und Erklärung, Situation und Beispiel):
+      Begriff hervorgehoben, Erklärung ohne Browsereinzug, Abstand zwischen den Einträgen.
+   3. Formulierungsbeispiele «So könnte es klingen» als gestaltete Folge (.puk-say):
+      jedes Beispiel mit sichtbarer Bezeichnung; hilfreiche Variante mit blauer Linie.
+   4. Verweis im Text auf die zuständigen Stellen (data-responsibility-inline): Darstellung
+      wie der Hinweiskasten; Wortlaut kommt aus site.config.json › responsibility.inline. */
+.puk-longform__boundary a{color:var(--puk-blue-125);text-decoration:underline;text-underline-offset:.18em}
+.puk-longform__copy dl{margin:0 0 var(--space-5)}
+.puk-longform__copy dt{margin:var(--space-5) 0 0;font-weight:var(--fw-medium);line-height:1.35}
+.puk-longform__copy dt:first-child{margin-top:0}
+.puk-longform__copy dd{margin:var(--space-1) 0 0}
+.puk-say{margin:var(--space-3) 0 var(--space-5);display:grid;gap:var(--space-3)}
+.puk-say__item{margin:0;padding:var(--space-1) 0 var(--space-1) var(--space-4);border-left:2px solid var(--ui-hairline)}
+.puk-say__item--hilfreich{border-left:3px solid var(--puk-blue-100)}
+.puk-say__label{display:block;margin-bottom:var(--space-1);font:var(--type-caption);color:var(--text-muted)}
+.puk-site-inline-ref{margin:var(--space-5) 0}

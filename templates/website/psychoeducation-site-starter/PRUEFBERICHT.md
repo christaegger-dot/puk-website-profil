@@ -7,6 +7,7 @@ Gehört zur Website in diesem Ordner. Wer den Starter kopiert, übernimmt diese 
 - **Bauen und Prüfen sind getrennt.** Die Stufen unten prüft eine Sitzung oder Person, die die Website nicht gebaut hat. Die bauende Sitzung macht nur die Selbstprüfung (unten) und trägt keine Stufe als «erledigt» ein.
 - **Jeder Punkt braucht einen Beleg** (Seite und Abschnitt, Figur, Zitat). Ein Punkt ohne Beleg gilt als nicht geprüft. Ein Gesamturteil ersetzt keine Einzelprüfung.
 - **Kein Merge ohne Prüfbericht.** Ein Pull Request mit einer neuen oder geänderten Website enthält diesen Bericht im aktuellen Stand und verweist in der Beschreibung darauf.
+- **Prüftiefe:** Bei Umbauten vergleicht W1 mindestens 20 Aussagen je Etappe mit dem Bestand; Kennzahlen der bauenden Sitzung werden nachgerechnet; der Visualisierungs-Check der Prüfsitzung steht je Figur in der Matrix unten. Eine zweite, unabhängige Prüfsitzung wird empfohlen; jeder Befund nennt seine Quelle.
 - **Status:** «offen», «erledigt» oder «entfällt: Begründung». Fachliche Freigaben trägt nur die Fachstelle ein.
 
 ## Status
@@ -42,6 +43,27 @@ Nach jedem Bau ohne Nachfrage ausfüllen: Visualisierungs-Check wie unten, mit B
 | 12 | Bei 320 px lesbar; Textalternative bzw. Langbeschreibung vollständig | | | |
 | 13 | Theme «Hoher Kontrast» geprüft (keine festen Farbwerte in SVG) | | | |
 | 14 | Inhalt fachlich freigegeben | | | |
+
+### Matrix je Figur (Prüfsitzung)
+
+E = erfüllt · T = teilweise · N = nicht erfüllt · – = nicht anwendbar. Je Befund ein Eintrag unter «Befunde je Stufe».
+
+| Nr. | Prüfpunkt | `v-…` | `v-…` |
+| --- | --- | --- | --- |
+| 1 | Plan liegt vor, Seite entspricht ihm | | |
+| 2 | Zeile je Abschnitt; Begründungen passen | | |
+| 3 | Prüffrage beantwortet und eingelöst | | |
+| 4 | Kernaussage und Erklärtext | | |
+| 5 | Ansatzpunkt richtig gesetzt (B, C, G) | | |
+| 6 | Mechanismus nicht doppelt gezeigt | | |
+| 7 | Kartenraster-Check | | |
+| 8 | Form und Linien tragen Bedeutung | | |
+| 9 | Verteilt, keine Textwand | | |
+| 10 | Nicht verfälscht; Grenzen; Kennzeichnung | | |
+| 11 | Ohne Aufklappen und Skript verständlich | | |
+| 12 | 320 px lesbar; Textalternative | | |
+| 13 | Theme «Hoher Kontrast» | | |
+| 14 | Fachlich freigegeben | | |
 
 ## Befunde je Stufe
 

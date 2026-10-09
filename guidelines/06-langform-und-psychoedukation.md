@@ -62,6 +62,20 @@ liegt in `tokens/web-longform.css`.
   Zeilenhöhe. Verwende `.puk-link--inline`; für eigenständige Aktionen `.puk-link--action`.
 - **MUSS:** Beide Linkarten haben einen sichtbaren Fokuszustand.
 
+## Formulierungsbeispiele und Begriffslisten
+
+- **Formulierungsbeispiele** («So könnte es klingen») mit der Komponente `.puk-say`, nicht als Fliesstext mit Zeilenumbruch. Jedes Beispiel trägt eine sichtbare Bezeichnung; die hilfreiche Variante hat die blaue Linie:
+
+```html
+<div class="puk-say">
+  <p class="puk-say__item"><span class="puk-say__label">Eher problematisch</span>«Du rufst immer zur falschen Zeit an.»</p>
+  <p class="puk-say__item puk-say__item--hilfreich"><span class="puk-say__label">Eher hilfreich</span>«Ich bin unter der Woche bis 21 Uhr erreichbar.»</p>
+</div>
+```
+
+- **Begriffslisten** (Begriff und Erklärung, Situation und Beispiel) als `dl` im Fliesstext; das Profil setzt den Begriff hervor und die Erklärung ohne Einzug. Mehr als sechs Einträge sind ein Hinweis auf eine Textwand: kürzen oder gliedern.
+- **Verweis im Text** nach einer Handlungsanleitung für akute Lagen: nur der Platzhalter `<p data-responsibility-inline></p>`, direkt nach der Anleitung, im Fliesstext (Regeln im README, Abschnitt «Zuständigkeit»).
+
 ## Fachlichkeit und Sicherheit
 
 - **MUSS:** Eigene didaktische Darstellungen als solche kennzeichnen und fachliche Aussagen mit

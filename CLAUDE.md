@@ -41,7 +41,7 @@ Ansehen: im Repository-Stamm `python3 -m http.server 8000` (oder `npx serve`), d
 
 - **Inhalte in `content/<id>.html` und `site.config.json` ändern, nie die gebauten Seiten.** Kopf, Navigation, Absenderin, Fusszeile, Meta und Interaktionsskript entstehen beim Build.
 - **Absenderin** auf jeder Seite: Fachstelle Angehörigenarbeit · Psychiatrische Universitätsklinik Zürich · `angehoerigenarbeit@pukzh.ch`.
-- **Kein Krisenzugang:** keine Telefonnummern, keine `tel:`-Links, kein Notfallblock, keine Seite «Hilfe in der Krise». Höchstens der site-weite Zuständigkeitsverweis aus `site.config.json` › `responsibility`.
+- **Kein Krisenzugang:** keine Telefonnummern, keine `tel:`-Links, kein Notfallblock, keine Seite «Hilfe in der Krise». Höchstens der site-weite Zuständigkeitsverweis aus `site.config.json` › `responsibility` – und direkt nach einer Handlungsanleitung für akute Lagen (z. B. «fragen Sie direkt nach Suizidgedanken») der Verweis im Text, nur über den Platzhalter `<p data-responsibility-inline></p>` (Wortlaut aus `responsibility.inline`, nie selbst formulieren).
 - **Fachliche Aussagen nicht still ändern.** Fragwürdiges als «Prüfbedarf» markieren. Inhaltliche Entscheide trifft die Fachstelle; Struktur, Reihenfolge und Technik darf Claude entscheiden und begründen.
 - **Visualisierungsplan** in `site.config.json` › `visualPlan` vor dem Bau: eine Zeile pro Abschnitt (`sectionId`); jede Darstellung mit `understood` (Was versteht die Zielgruppe dadurch besser als durch einen kurzen Text allein?); Kreislauf, Prozesspfad und Modell in Schritten mit `entryPoint` (Ansatzpunkt für Angehörige oder «entfällt: Begründung»).
 - **Figuren:** jede mit Kernaussage, kurzem Erklärtext und – wo sinnvoll – Vertiefung; die Hauptaussage für Angehörige nie nur in der Vertiefung. Ansatzpunkte beschreiben eigene Möglichkeiten, nie Verantwortung für Behandlung oder Verlauf.
@@ -57,6 +57,8 @@ Bauen und Prüfen sind getrennt (Abschnitt «Prüfung und Freigabe», Profilents
 - **Prüfen nur in einer eigenen Sitzung:** Die Stufen W1, W2, S, Visualisierungs-Check, Bedienung und W3 prüft eine Sitzung, die die Website nicht gebaut hat (Auftrag im Abschnitt «Prüfung und Freigabe»). Sie ändert keine Inhalte und keinen Code und committet nur den Prüfbericht.
 - **Kein Merge ohne Prüfbericht:** Ein Pull Request mit einer neuen oder geänderten Website enthält `PRUEFBERICHT.md` im aktuellen Stand und nennt in der Beschreibung die offenen Stufen. Solange Stufen offen sind, bleibt er ein Entwurf.
 - **Keine Veröffentlichung ohne vollständigen Prüfbericht:** Das Produktionsgate blockiert sonst.
+- **Prüftiefe:** Bei Umbauten vergleicht die Prüfsitzung mindestens 20 Aussagen je Etappe mit dem Bestand, rechnet Kennzahlen der bauenden Sitzung nach und füllt den Visualisierungs-Check je Figur aus.
+- **Bauende Sitzung beim Straffen:** Kürzungsquoten an der alten Seite allein messen, nicht an Seite plus inhaltsgleichen Handouts. Der Abgleich nennt jeden entfallenen Satz, auch innerhalb eines «übernommenen» Abschnitts.
 
 ## Vor dem Commit
 

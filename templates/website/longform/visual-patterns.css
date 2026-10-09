@@ -117,7 +117,10 @@
 .puk-vis-kern{margin:0 0 var(--space-3);font:var(--type-title-3);font-weight:var(--fw-medium);color:var(--text-default);max-width:38ch;text-wrap:balance}
 .puk-vis-short{margin:0 0 var(--space-6);font:var(--type-body-sm);color:var(--text-default);max-width:62ch}
 .puk-vis-more{margin-top:var(--space-5);border-top:1px solid var(--border-default);max-width:80ch}
-.puk-vis-more>summary{display:flex;align-items:center;gap:var(--space-2);min-height:44px;cursor:pointer;font:var(--type-body-sm);font-weight:var(--fw-medium);color:var(--puk-blue-100);list-style:none}
+.puk-vis-more>summary{display:flex;align-items:center;gap:var(--space-2);min-height:44px;cursor:pointer;font:var(--type-body-sm);font-weight:var(--fw-medium);color:var(--puk-blue-125);list-style:none}
+/* Prüfbefund 09.10.2026: Blau 100 auf dem Figurengrund #F7F7F7 hatte 4,4:1; Blau 125 hat 5,9:1. */
+.puk-vis-figure:not(.puk-vis-figure--open) a{color:var(--puk-blue-125)}
+/* Links auf dem Figurengrund ebenfalls Blau 125 (Prüfansicht 09.10.2026: 4,4:1 mit Blau 100). Auf weissen Feldern innerhalb der Figur bleibt der Kontrast damit über 6:1. */
 .puk-vis-more>summary::-webkit-details-marker{display:none}
 .puk-vis-more>summary::before{content:"";width:8px;height:8px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(-45deg);margin:0 4px 0 2px}
 .puk-vis-more[open]>summary::before{transform:rotate(45deg)}
