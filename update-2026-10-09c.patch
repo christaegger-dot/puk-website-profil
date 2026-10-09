@@ -1,0 +1,517 @@
+diff --git a/CLAUDE.md b/CLAUDE.md
+index 4c8420e..44fa9a9 100644
+--- a/CLAUDE.md
++++ b/CLAUDE.md
+@@ -54,7 +54,7 @@ Ansehen: im Repository-Stamm `python3 -m http.server 8000` (oder `npx serve`), d
+ Bauen und Prüfen sind getrennt (Abschnitt «Prüfung und Freigabe», Profilentscheid 08.10.2026). Ein bestandenes Gate heisst nicht, dass die Website gut ist.
+ 
+ - **Nach jedem Bau, ohne Nachfrage:** Selbstprüfung in `PRUEFBERICHT.md` der Website – Visualisierungs-Check als Tabelle, je Punkt Ergebnis und Beleg (Seite und Abschnitt, Figur, Zitat) – und in der Antwort die nicht erfüllten Punkte nennen. Ein Punkt ohne Beleg gilt als nicht geprüft. Keine Prüfstufe als «erledigt» eintragen.
+-- **Prüfen nur in einer eigenen Sitzung:** Die Stufen W1, W2, S, Visualisierungs-Check, Bedienung und W3 prüft eine Sitzung, die die Website nicht gebaut hat (Auftrag im Abschnitt «Prüfung und Freigabe»). Sie ändert keine Inhalte und keinen Code und committet nur den Prüfbericht.
++- **Prüfen nur in einer eigenen Sitzung:** Die Stufen W1, W2, S, Visualisierungs-Check, Bedienung und W3 sowie die Pre-Release-Audits R1 bis R3 prüft eine Sitzung, die die Website nicht gebaut hat (Auftrag im Abschnitt «Prüfung und Freigabe»). Sie ändert keine Inhalte und keinen Code und committet nur den Prüfbericht.
+ - **Kein Merge ohne Prüfbericht:** Ein Pull Request mit einer neuen oder geänderten Website enthält `PRUEFBERICHT.md` im aktuellen Stand und nennt in der Beschreibung die offenen Stufen. Solange Stufen offen sind, bleibt er ein Entwurf.
+ - **Keine Veröffentlichung ohne vollständigen Prüfbericht:** Das Produktionsgate blockiert sonst.
+ - **Prüftiefe:** Bei Umbauten vergleicht die Prüfsitzung mindestens 20 Aussagen je Etappe mit dem Bestand, rechnet Kennzahlen der bauenden Sitzung nach und füllt den Visualisierungs-Check je Figur aus.
+@@ -68,7 +68,7 @@ Bauen und Prüfen sind getrennt (Abschnitt «Prüfung und Freigabe», Profilents
+ 
+ ## Reviews
+ 
+-Die Review-Prompts der Fachstelle (W1 Fachliche Prüfung, W2 Gesamtkohärenz, S Sprach-Review, W3 Code-Review) gelten in dieser Reihenfolge, jeweils in einer Sitzung, die nicht gebaut hat; W3 ist ein reines Review ohne Dateiänderungen bis zur Freigabe. Ergebnisse mit Beleg in `PRUEFBERICHT.md`. Kriterien im Design-System: «Fachliche Qualität und Haltung», «Gesamtkohärenz und Aufbau», «Sprache und Ton», «Technische Qualität».
++Die Review-Prompts der Fachstelle (W1 Fachliche Prüfung, W2 Gesamtkohärenz, S Sprach-Review, W3 Code-Review) gelten in dieser Reihenfolge, jeweils in einer Sitzung, die nicht gebaut hat; W3 ist ein reines Review ohne Dateiänderungen bis zur Freigabe. Ergebnisse mit Beleg in `PRUEFBERICHT.md`. Kriterien im Design-System: «Fachliche Qualität und Haltung», «Gesamtkohärenz und Aufbau», «Sprache und Ton», «Technische Qualität». Danach, auf dem fertigen Release-Kandidaten: R1 Profil-Audit, R2 Visualisierung und Laienverständlichkeit, zuletzt R3 Freigabe-Audit mit «Go» oder «No-Go» (Abschnitt «Pre-Release-Audits», `guidelines/00-pre-release-audits.md`).
+ 
+ ## Logo
+ 
+diff --git a/README.md b/README.md
+index 3b41d34..4a7d85e 100644
+--- a/README.md
++++ b/README.md
+@@ -19,7 +19,7 @@ Website-Profil der **Psychiatrischen Universitätsklinik Zürich (PUK)** für We
+ - Nur für **Websites und Browser-Anwendungen**. Nicht für Büro-, Präsentations-, PDF- oder Druckmedien.
+ - Nur **deutschsprachig**: Die offiziellen englischen Logos fehlen. Keine englischen Seiten mit diesem Profil veröffentlichen, kein englisches Logo nachbauen oder ableiten.
+ - Ein abgeleitetes Arbeitsprofil, keine von der Kommunikationsabteilung formell freigegebene Webvorlage. Fachinhalte, Kontakte und Produktionsfreigaben immer projektbezogen prüfen lassen – **nie erfinden**.
+-- **Prüfung und Freigabe:** ein Ablauf für jede Website – Planen → W1 Fachliche Prüfung → W2 Gesamtkohärenz → S Sprach-Review → Visualisierungs-Check → Bedienung und Barrierefreiheit → W3 Code-Review (Abschnitt «Technische Qualität») → Produktionsgate `node tools/gate.mjs --production`. Bauen und Prüfen sind getrennt: Selbstprüfung nach jedem Bau, Prüfstufen in einer eigenen Sitzung, Ergebnisse mit Beleg im Prüfbericht `PRUEFBERICHT.md`; kein Merge und keine Veröffentlichung ohne Prüfbericht. Abschnitt «Prüfung und Freigabe».
++- **Prüfung und Freigabe:** ein Ablauf für jede Website – Planen → W1 Fachliche Prüfung → W2 Gesamtkohärenz → S Sprach-Review → Visualisierungs-Check → Bedienung und Barrierefreiheit → W3 Code-Review (Abschnitt «Technische Qualität») → Pre-Release-Audits R1 Profil-Audit und R2 Laienverständlichkeit → R3 Freigabe-Audit («Go») → Produktionsgate `node tools/gate.mjs --production`. Bauen und Prüfen sind getrennt: Selbstprüfung nach jedem Bau, Prüfstufen in einer eigenen Sitzung, Ergebnisse mit Beleg im Prüfbericht `PRUEFBERICHT.md`; kein Merge und keine Veröffentlichung ohne Prüfbericht. Abschnitt «Prüfung und Freigabe».
+ 
+ ## Absenderin
+ 
+@@ -164,6 +164,7 @@ Arbeit am System:
+ 
+ ## Änderungsprotokoll
+ 
++- **09.10.2026 · Pre-Release-Audits:** Neuer Abschnitt mit drei Prüfaufträgen für den fertigen Release-Kandidaten: R1 Profil-Audit (Marke, Farben, Schrift, Navigation, Komponenten, Zuständigkeit), R2 Visualisierung und Laienverständlichkeit (Matrix je Figur, Lesetest je Abschnitt aus Sicht einer belasteten angehörigen Person, «Was Sie tun können»), R3 Freigabe-Audit mit «Go» oder «No-Go». Prüfbericht-Vorlage mit Zeilen R1 bis R3; das Produktionsgate prüft sie (Starter Build r4-5, Selbsttest 51/51).
+ - **09.10.2026 · Fachliche Durchsicht der Borderline-Website:** Neuer Standardwortlaut des Zuständigkeitsverweises (freundlicher, mit «kostenlos und vertraulich»; zweiter Satz wortgleich mit dem Verweis im Text), fachlich geprüft von der Fachstelle am 09.10.2026. Die Kurzbeschreibung in der Bildlegende steht nur noch für Screenreader (`p.puk-sr`, weiter über `aria-describedby` verbunden); sichtbar bleiben Kennzeichnung und Quelle. Anlass: Die Beschreibungen erklärten Sehenden nur, was sie ohnehin sehen. Alle Muster, Vorlagen und Starter-Seiten angepasst.
+ - **09.10.2026 · Befunde aus der Prüfung der Borderline-Website:** Verweis im Text auf die zuständigen Stellen bei Handlungsanleitungen für akute Lagen (Platzhalter, Wortlaut aus `site.config.json`, Gate-Prüfung; Wortlaut von der Fachstelle am 09.10.2026 fachlich geprüft). Kontraste korrigiert: Schalter der Vertiefungen in Figuren (4,4 → 5,9:1) und Links im Hinweiskasten (3,6 → 4,9:1); die Prüfansicht `qa.html` misst jetzt den Kontrast von Text in Figuren, Vertiefungen, Links und Hinweiskästen. Definitionslisten im Fliesstext gestaltet; Formulierungsbeispiele «So könnte es klingen» als Komponente `.puk-say`. Prüfregeln geschärft: Vergleich mit dem Bestand an mindestens 20 Aussagen je Etappe, Kennzahlen der bauenden Sitzung nachrechnen, Visualisierungs-Check je Figur. Anlass: Eine zweite, unabhängige Prüfung fand deutlich mehr als die erste. Starter Build r4-4, Selbsttest 50/50.
+ - **08.10.2026 · Bauen und Prüfen getrennt:** Selbstprüfung nach jedem Bau (Visualisierungs-Check als Tabelle mit Beleg), Prüfstufen in einer eigenen Sitzung, kein Merge ohne Prüfbericht; Vorlage `PRUEFBERICHT.md` im Starter; das Produktionsgate blockiert ohne vollständigen Prüfbericht (Selbsttest 46/46); Auftrag für die Prüfsitzung im Abschnitt «Prüfung und Freigabe». Anlass: Im ersten Probelauf bestand das Gate, die didaktischen Mängel fielen erst bei einer Prüfung Punkt für Punkt auf.
+@@ -178,4 +179,4 @@ Arbeit am System:
+ - **06.10.2026 · Inhaltliche Leitlinien:** Fachliche Qualität und Haltung (W1), Gesamtkohärenz und Aufbau (W2), Sprache und Ton (S); Zuständigkeit statt Krisenzugang; Absenderin Fachstelle Angehörigenarbeit.
+ - **06.10.2026 · Aufbau:** Website-Profil aus PUK Website Kit 1.10.1-r4 und Vollsystem 1.10.1 (Visualisierung); Profilentscheide ein Schwarz, Buttons 3 px, Lesen in Seitenschrift.
+ 
+-Abschnitte: Prüfung und Freigabe · Fachliche Qualität und Haltung · Technische Qualität · Gesamtkohärenz und Aufbau · Sprache und Ton · Visuelle Wissensvermittlung · Marke und Logo · Farben und Kontrast · Typografie und Flächen · Barrierefreiheit und Test · Anwendungs- und Inhaltsmuster · Langform und Psychoedukation · Visualisierung umsetzen · Interaktionskonzept.
++Abschnitte: Prüfung und Freigabe · Pre-Release-Audits · Fachliche Qualität und Haltung · Technische Qualität · Gesamtkohärenz und Aufbau · Sprache und Ton · Visuelle Wissensvermittlung · Marke und Logo · Farben und Kontrast · Typografie und Flächen · Barrierefreiheit und Test · Anwendungs- und Inhaltsmuster · Langform und Psychoedukation · Visualisierung umsetzen · Interaktionskonzept.
+diff --git a/guidelines/00-ablauf-pruefung-und-freigabe.md b/guidelines/00-ablauf-pruefung-und-freigabe.md
+index 6603f7d..b5abd74 100644
+--- a/guidelines/00-ablauf-pruefung-und-freigabe.md
++++ b/guidelines/00-ablauf-pruefung-und-freigabe.md
+@@ -13,7 +13,8 @@ Ein Ablauf für alle Websites der Fachstelle – von der Planung bis zur Veröff
+ | 4 · Visualisierungs-Check | Prüffrage, Plan pro Abschnitt, drei Ebenen, Ansatzpunkte, Kartenraster, Textalternativen, Theme «Hoher Kontrast» | «Visualisierung umsetzen» | Tabelle mit Ergebnis und Beleg je Punkt im Prüfbericht |
+ | 5 · Bedienung und Barrierefreiheit | Breiten 320–1440 px, 200 % Text, Tastatur, Touch, reduzierte Bewegung, Screenreader | «Barrierefreiheit und Test», «Interaktionskonzept» | Protokoll, mindestens zwei reale Screenreader-Läufe |
+ | 6 · W3 Code-Review | Funktion, Barrierefreiheit, Datenschutz, Sicherheit, Performance, Darstellung und Druck, Wartbarkeit | «Technische Qualität» | Befundliste; Umsetzung erst nach Freigabe |
+-| 7 · Produktionsfreigabe | `node tools/gate.mjs --production` ohne blockierende Befunde – setzt einen vollständigen Prüfbericht voraus; fachliche Freigabe dokumentiert | dieser Abschnitt | Freigabe mit Datum und Person |
++| 6a · R1 und R2 Pre-Release-Audits | Release-Kandidat gegen das Profil prüfen (R1) und aus Sicht der Lesenden: Figuren, Lesetest, «Was Sie tun können» (R2) | «Pre-Release-Audits» | Befunde mit Beleg; Korrekturen vor R3 |
++| 7 · R3 Freigabe-Audit und Produktionsfreigabe | R3 mit Ergebnis «Go»; `node tools/gate.mjs --production` ohne blockierende Befunde – setzt einen vollständigen Prüfbericht voraus; fachliche Freigabe dokumentiert | dieser Abschnitt | Freigabe mit Datum und Person |
+ 
+ - **Heft-Webfassung:** Ist die Website die inhaltsgleiche Web-Fassung eines bereits geprüften Hefts, prüfen W1 und S nur die Abweichungen und die webspezifischen Texte (Navigation, Schaltflächen, Teaser, Hilfetexte, Fehlermeldungen). Das Seiteninventar entsteht trotzdem für alle Seiten.
+ - **Datenschutz vorziehen:** Kritische Datenschutzbefunde (extern geladene Schriften, Tracking) dürfen jederzeit behoben werden, auch vor Stufe 1.
+@@ -25,7 +26,7 @@ Ein Ablauf für alle Websites der Fachstelle – von der Planung bis zur Veröff
+ Profilentscheid 08.10.2026, nach dem ersten Probelauf: Das Gate bestand, die Abbildungen hatten trotzdem didaktische Mängel – gefunden erst bei einer Prüfung Punkt für Punkt. Bestehen ist nicht dasselbe wie gut. Deshalb gelten vier Regeln:
+ 
+ 1. **Selbstprüfung nach jedem Bau, ohne Nachfrage.** Die bauende Sitzung füllt den Visualisierungs-Check im Prüfbericht als Tabelle aus: je Punkt Ergebnis und Beleg (Seite und Abschnitt, Figur, Zitat). Ein Punkt ohne Beleg gilt als nicht geprüft; ein Gesamturteil ersetzt keine Einzelprüfung. Die Selbstprüfung ist ein Arbeitsstand, keine Prüfstufe.
+-2. **Prüfen in einer eigenen Sitzung.** Die Stufen 1 bis 6 prüft eine Sitzung oder Person, die die Website nicht gebaut hat. Wer prüft, ändert keine Inhalte und keinen Code, sondern trägt Befunde mit Beleg ein; fachliche Fragen werden als «Prüfbedarf» markiert. Fachliche Freigaben trägt nur die Fachstelle ein.
++2. **Prüfen in einer eigenen Sitzung.** Die Stufen 1 bis 6 und die Audits R1 bis R3 prüft eine Sitzung oder Person, die die Website nicht gebaut hat. Wer prüft, ändert keine Inhalte und keinen Code, sondern trägt Befunde mit Beleg ein; fachliche Fragen werden als «Prüfbedarf» markiert. Fachliche Freigaben trägt nur die Fachstelle ein.
+ 3. **Kein Merge ohne Prüfbericht.** Ein Pull Request mit einer neuen oder geänderten Website enthält den Prüfbericht im aktuellen Stand und nennt in der Beschreibung die offenen Stufen. Solange Stufen offen sind, bleibt er ein Entwurf. Veröffentlicht wird nur mit vollständigem Prüfbericht; das Produktionsgate blockiert sonst.
+ 4. **Prüftiefe** (Profilentscheid 09.10.2026, nach der Prüfung der Borderline-Website: Eine zweite, unabhängige Prüfung fand deutlich mehr als die erste, darunter still entfallene Aussagen und eine geschönte Kürzungsquote).
+    - Bei Umbauten vergleicht W1 mindestens **20 Aussagen je Etappe** mit dem Bestand, über alle Seiten und Figuren verteilt, und prüft an diesen Stellen den Abgleich Satz für Satz.
+@@ -33,7 +34,7 @@ Profilentscheid 08.10.2026, nach dem ersten Probelauf: Das Gate bestand, die Abb
+    - Der Visualisierungs-Check wird **je Figur** ausgefüllt (Matrix Prüfpunkt × Figur), nicht nur je Prüfpunkt.
+    - Für die W1-Vorprüfung und den Visualisierungs-Check wird eine **zweite, unabhängige Prüfsitzung** empfohlen, die die erste nicht kennt. Die Befunde werden zusammengeführt; jeder Befund nennt seine Quelle (Prüfung 1, 2 oder beide).
+ 
+-**Prüfbericht:** `PRUEFBERICHT.md` im Ordner der Website (Vorlage im Starter). Er enthält die Statustabelle der Stufen 1 bis 6 («offen», «erledigt» oder «entfällt: Begründung»), den Visualisierungs-Check als Tabelle und die Befunde je Stufe.
++**Prüfbericht:** `PRUEFBERICHT.md` im Ordner der Website (Vorlage im Starter). Er enthält die Statustabelle der Stufen 1 bis 6 und der Audits R1 bis R3 («offen», «erledigt» oder «entfällt: Begründung»), den Visualisierungs-Check als Tabelle und die Befunde je Stufe.
+ 
+ **Auftrag für die Prüfsitzung** (neue Sitzung, gleiches Repository):
+ 
+@@ -51,7 +52,7 @@ Committe nur den Prüfbericht.
+ 
+ ## Was das Gate prüft – und was nicht
+ 
+-Das Gate des Psychoedukations-Starters (`node tools/gate.mjs`, mit `--production` vor der Veröffentlichung) blockiert unter anderem: fehlenden oder unvollständigen Prüfbericht (Produktion), fehlende oder versteckte Absenderin, Telefonnummern, `tel:`-Links und Notfallblöcke, ungeprüften Zuständigkeitsverweis, Platzhalter ohne Freigabe, nicht freigegebene Visualisierungen, fehlenden Visualisierungsplan. Hinweise (keine Blocker) gibt es für «ß», falsche Anführungszeichen, deutsche Rechtsbegriffe und etikettierende Bezeichnungen.
++Das Gate des Psychoedukations-Starters (`node tools/gate.mjs`, mit `--production` vor der Veröffentlichung) blockiert unter anderem: fehlenden oder unvollständigen Prüfbericht (Produktion; Stufen 1 bis 6 und R1 bis R3), fehlende oder versteckte Absenderin, Telefonnummern, `tel:`-Links und Notfallblöcke, ungeprüften Zuständigkeitsverweis, Platzhalter ohne Freigabe, nicht freigegebene Visualisierungen, fehlenden Visualisierungsplan. Hinweise (keine Blocker) gibt es für «ß», falsche Anführungszeichen, deutsche Rechtsbegriffe und etikettierende Bezeichnungen.
+ 
+ **Abdeckungsgrenze:** Automatisierte Prüfungen ersetzen keinen realen Tastatur- und Screenreader-Test, keine fachliche Prüfung und keine Datenschutz-, Inhalts- oder Betriebsfreigabe. Sie werden nie als solche bezeichnet.
+ 
+diff --git a/guidelines/00-pre-release-audits.md b/guidelines/00-pre-release-audits.md
+new file mode 100644
+index 0000000..b2f113c
+--- /dev/null
++++ b/guidelines/00-pre-release-audits.md
+@@ -0,0 +1,257 @@
++# Pre-Release-Audits
++
++Drei Prüfungen auf dem fertigen Release-Kandidaten einer Website, nach W1, W2, S, Visualisierungs-Check, Bedienung und W3 (Abschnitt «Prüfung und Freigabe»). Sie ersetzen keine dieser Stufen. Sie prüfen das Ergebnis noch einmal als Ganzes: gegen das Profil, aus Sicht der Lesenden und auf Freigabe und Auslieferung.
++
++Profilentscheid 09.10.2026. Anlass: Bei der Borderline-Website fanden die technischen und fachlichen Prüfungen vieles. Erst die Durchsicht der Fachstelle zeigte aber Figuren mit Fachbegriffen, sichtbaren Text, der nur die Zeichnung beschreibt, einen abweisend formulierten Zuständigkeitsverweis und Seiten, die vor allem sagen, was nicht gilt.
++
++| Audit | Frage | Wann | Ergebnis |
++| --- | --- | --- | --- |
++| R1 · Profil-Audit | Entspricht die Website dem PUK Website-Profil (Marke, Farben, Schrift, Navigation, Komponenten, Zuständigkeit)? | nach W3 | Befunde, getrennt nach Website und Profil |
++| R2 · Visualisierung und Laienverständlichkeit | Erklären die Figuren? Versteht eine belastete angehörige Person Text und Bilder beim ersten Lesen und weiss sie danach, was sie tun kann? | nach W3, parallel zu R1 | Matrix je Figur, Lesetest je Abschnitt, Kennzahlen |
++| R3 · Freigabe-Audit | Ist alles abgeschlossen, freigegeben und richtig ausgeliefert? | unmittelbar vor der Veröffentlichung, nach R1 und R2 | «Go», «Go mit Auflagen» oder «No-Go» |
++
++## Regeln für alle drei
++
++- **Eigene Sitzung:** Geprüft wird von einer Sitzung oder Person, die die Website nicht gebaut hat. Wer prüft, ändert keine Inhalte und keinen Code und committet nur den Prüfbericht.
++- **Beleg je Punkt:** Seite › Abschnitt, Element, Zitat, Messwert oder Bildschirmfoto. Ein Punkt ohne Beleg gilt als nicht geprüft (R3: als nicht erfüllt).
++- **Priorität:** kritisch / wichtig / optional. Nur änderungsrelevante Befunde. Fachliche Fragen als «Prüfbedarf».
++- **Status im Prüfbericht:** Die Zeilen «R1», «R2» und «R3» in der Statustabelle von `PRUEFBERICHT.md` stehen auf «erledigt» oder «entfällt: Begründung». R3 steht nur bei «Go» auf «erledigt». Das Produktionsgate des Starters prüft diese Zeilen (ab Build r4-5).
++- **Lesetest mit Menschen:** R2 ersetzt keinen Test mit echten Angehörigen. Wo möglich, lesen zusätzlich eine angehörige Person und eine Person mit eigener Erfahrung (Trialog).
++- Rahmen Schweiz / Kanton Zürich; Schweizer Hochdeutsch (ss, «»).
++
++Die Aufträge unten werden unverändert in eine neue Sitzung kopiert; nur der Kontext wird ausgefüllt.
++
++## R1 · Profil-Audit: Gestaltung, Marke und Komponenten
++
++```
++Rolle
++Du prüfst eine Website der Fachstelle Angehörigenarbeit PUK auf Übereinstimmung mit dem
++PUK Website-Profil. Du hast die Website nicht gebaut. Du änderst keine Inhalte und keinen Code.
++
++Kontext (ausfüllen)
++- Website: templates/website/<website>/   Branch: <branch>   Stand (Commit): <hash>
++- Vorschau: <URL>
++- Anrede auf der Website: Sie
++
++Grundlagen (im Repository lesen, bevor du prüfst)
++- README.md (v. a. «Zuständigkeit statt Krisenzugang», «Verweis im Text», Absenderin)
++- guidelines/01-marke-und-logo.md, 02-farben-und-kontrast.md, 03-typografie-und-flaechen.md,
++  05-anwendungsmuster.md, 06-langform-und-psychoedukation.md, 09-interaktionskonzept.md,
++  04-barrierefreiheit-und-test.md
++- components/bundle.css und die Website-eigene CSS-Datei
++- site.config.json der Website
++
++Vorgehen
++- Prüfe jede Seite bei 320, 360, 768, 1280 und 1440 px, im Standard-Theme und mit
++  data-theme="kontrast". Sieh dir Bildschirmfotos an, nicht nur den Quelltext.
++- Prüfe Punkt für Punkt. Jeder Punkt braucht einen Beleg (Seite › Abschnitt, Element,
++  Zitat, Messwert oder Bildschirmfoto). Ein Punkt ohne Beleg gilt als nicht geprüft.
++
++Prüfpunkte
++
++A · Marke und Absenderin
++  1. Logo positiv (PUK_Logo_statisch_positiv_de.svg) im Seitenkopf, oben links, Sperrzone
++     eingehalten, Wortmarke nie ohne Symbol.
++  2. Absenderin «Fachstelle Angehörigenarbeit PUK» auf jeder Seite sichtbar.
++  3. Bildwelt: keine KI-generierten Personenbilder, keine dekorativen Stimmungsbilder.
++
++B · Farben und Kontrast
++  4. Nur semantische Tokens; keine Hexwerte in Website-CSS oder SVG-Attributen.
++  5. Kontrast: Text mindestens 4,5 : 1, Linien und grafische Objekte mindestens 3 : 1 –
++     gemessen, auch für Links, Vertiefungs-Schalter, Hinweiskästen und Text in Figuren.
++  6. Theme «Hoher Kontrast»: alle Seiten und Figuren vollständig lesbar.
++  7. Bedeutung nie nur über Farbe (Zustände, Fehler, gewählt/aktuell).
++
++C · Typografie und Flächen
++  8. Schrift lokal eingebunden (keine extern geladenen Schriften).
++  9. Lesetext in Seitenschrift; Überschriften und Handlungshinweise nicht kleiner als der
++     Erklärtext daneben; Zeilenlänge lesbar.
++ 10. Abstände, Linien, Radien nur über Profil-Tokens; keine freien Pixelwerte, keine Schatten
++     oder Verläufe ausserhalb des Profils.
++
++D · Seitenhülle und Navigation
++ 11. Sprunglink als erster Tabstopp; Hauptnavigation mit aria-current; Reihenfolge wie im
++     Seitenvertrag.
++ 12. Kein waagrechter Überlauf von 320 bis 1440 px und bei 200 % Zoom.
++ 13. Fusszeile: Zuständigkeitsverweis wortgleich mit dem aktuellen Standardwortlaut im README
++     (oder einem dokumentiert geprüften Wortlaut), Inhaltsverantwortung, Prüfdatum.
++
++E · Komponenten und Interaktion
++ 14. Nur Profil-Komponenten und -Muster; keine Kartenraster mit Icons, wo eine Anordnung mit
++     Beziehungen erklären müsste.
++ 15. «Sichtbar vor versteckt»: Kritische Information (Sicherheit, Schutz, Zuständigkeit) steht
++     nie nur in Akkordeon, Reiter, Dialog oder Vertiefung.
++ 16. Bedienziele mindestens 44 × 44 px; Hover nie einzige Auslösung; Fokus-Ring überall
++     sichtbar; nichts bewegt sich von selbst.
++
++F · Zuständigkeit statt Krisenzugang
++ 17. Keine Krisennummern, keine tel:-Links, kein Notfallblock, keine Seite «Hilfe in der Krise».
++ 18. Verweis im Text nur über den Platzhalter, nur auf Seiten mit Selbstgefährdung, Gewalt oder
++     akuter Krise, direkt nach der Handlungsanleitung, höchstens einer je Abschnitt, nicht in
++     Figur oder Vertiefung; Wortlaut gleich site.config.json › responsibility.inline.
++ 19. Kein Text weckt die Erwartung, die Fachstelle sei in Krisen zuständig.
++
++Regeln
++- Nur änderungsrelevante Befunde. Priorität: kritisch / wichtig / optional.
++- Fachliche Fragen als «Prüfbedarf» markieren, nicht beurteilen.
++- Unterscheide Website-Befunde von Profil-Befunden: Liegt die Ursache im Profil (CSS,
++  Muster, Starter), kennzeichne den Befund als «Profil» – er wird im Design-System behoben.
++- Rahmen Schweiz / Kanton Zürich; Schweizer Hochdeutsch (ss, «»).
++
++Ergebnis
++1. Gesamturteil in höchstens fünf Sätzen.
++2. Tabelle: Nr. | Prüfpunkt | Ergebnis (erfüllt / teilweise / nicht erfüllt / nicht anwendbar)
++   | Beleg | Priorität | Website oder Profil.
++3. Liste aller kritischen und wichtigen Befunde mit konkretem Änderungsvorschlag.
++4. Was nicht geprüft werden konnte, und warum.
++Trage das Ergebnis in PRUEFBERICHT.md unter «R1 Profil-Audit» ein. Committe nur den Prüfbericht.
++```
++
++## R2 · Visualisierung und Verständlichkeit für Laien
++
++```
++Rolle
++Du prüfst eine Website der Fachstelle Angehörigenarbeit PUK aus der Sicht der Menschen, für
++die sie gemacht ist. Du hast die Website nicht gebaut. Du änderst keine Inhalte und keinen Code.
++
++Kontext (ausfüllen)
++- Website: templates/website/<website>/   Branch: <branch>   Stand (Commit): <hash>
++- Vorschau: <URL>
++- Lesende: Angehörige ohne Fachwissen. Prüfperson im Kopf: eine erschöpfte Mutter oder ein
++  Partner, abends, auf dem Handy, nach einem schwierigen Gespräch.
++
++Grundlagen (im Repository lesen)
++- guidelines/00-visuelle-wissensvermittlung.md, 07-visualisierung-umsetzen.md,
++  06-langform-und-psychoedukation.md, 00-sprache-und-ton.md
++- site.config.json › visualPlan
++- README.md › «Zuständigkeit statt Krisenzugang»
++
++Teil 1 · Visualisierungs-Check je Figur
++Fotografiere jede Figur in main bei 1280 und 360 px und im Theme «kontrast» und sieh sie an.
++Fülle die Matrix Prüfpunkt × Figur aus (E erfüllt / T teilweise / N nicht erfüllt / – nicht
++anwendbar), mit Beleg je T und N.
++  1–14  Die 14 Punkte aus Leitlinie 07, Abschnitt «Prüfung: Visualisierungs-Check».
++  15. 10-Sekunden-Test: Wird die Kernaussage beim ersten Blick auf die Zeichnung klar, ohne
++      Liste und Vertiefung?
++  16. Alltagsworte: Keine Fachbegriffe als Beschriftung (z. B. «Modus», «Regulation»,
++      «Kontinuum»), oder sie sind beim ersten Auftreten erklärt.
++  17. Kein sichtbarer Text, der nur die Zeichnung beschreibt («Über der Linie vier …»,
++      «durchgezogene Linie»). Die Kurzbeschreibung steht als p.puk-sr nur für Screenreader.
++  18. Kurztext und Kernaussage erklären den Inhalt, nicht die Grafik.
++  19. Formen und Linien bedeuten auf der ganzen Website dasselbe (gestrichelt, doppelt, dicker).
++  20. Der Ansatzpunkt für Angehörige ist konkret: Was genau tue ich, mit einem Beispielsatz.
++
++Teil 2 · Lesetest je Seite
++Lies jede Seite ganz, Abschnitt für Abschnitt, als die Prüfperson. Beantworte je Abschnitt:
++  a. Verstehe ich beim ersten Lesen, worum es geht? (ja / mit Mühe / nein)
++  b. Weiss ich danach, was ich tun kann? Gibt es ein «Was Sie tun können» oder einen
++     Beispielsatz, den ich so sagen könnte?
++  c. Stolperstellen: Fachwörter ohne Erklärung, Sätze über 25 Wörter, doppelte Verneinungen,
++     Telegrammstil, Links, die wie Satzteile dastehen, «es»/«sie» ohne klaren Bezug.
++  d. Ton: warm, erwachsen, nicht belehrend, nicht verniedlichend; keine Schuldzuweisung an
++     Angehörige.
++  e. Absicherungen am richtigen Ort: Bei Handlungshinweisen für Angehörige dürfen sie fehlen;
++     bei Aussagen über die betroffene Person, über Ursachen, Diagnose und Verlauf müssen sie
++     stehen. Beides prüfen.
++Miss je Seite: Anteil Sätze mit Verneinung (nicht / kein / weder / nichts), mittlere
++Satzlänge, Anteil Abschnitte mit Handlungsteil. Nenne die Zählweise, damit man nachrechnen kann.
++
++Regeln
++- Nur änderungsrelevante Befunde. Priorität: kritisch / wichtig / optional.
++- Jeder Vorschlag hält die fachliche Bedeutung. Fachliche Fragen als «Prüfbedarf» markieren.
++- Sicherheit: Hinweise zu Schutz, Gewalt und Suizidalität stehen sichtbar im Text, nie nur
++  in Figur oder Vertiefung. Keine Krisennummern vorschlagen.
++- Rahmen Schweiz / Kanton Zürich; Schweizer Hochdeutsch (ss, «»).
++
++Ergebnis
++1. Gesamturteil in höchstens fünf Sätzen: Ist die Website für Laien verständlich und
++   praxisnah? Welche Figur trägt am besten, welche am schlechtesten?
++2. Matrix je Figur mit Belegen.
++3. Tabelle Lesetest: Seite | Abschnitt | a | b | Stolperstellen | Priorität.
++4. Die zehn schwierigsten Stellen der Website, je mit Zitat und einem Vorschlag, der die
++   Bedeutung hält.
++5. Kennzahlen je Seite.
++Trage das Ergebnis in PRUEFBERICHT.md unter «R2 Visualisierung und Laienverständlichkeit»
++ein. Committe nur den Prüfbericht.
++```
++
++## R3 · Freigabe-Audit: Go oder No-Go
++
++```
++Rolle
++Du machst die Freigabeprüfung einer Website der Fachstelle Angehörigenarbeit PUK. Du hast sie
++nicht gebaut. Du änderst keine Inhalte und keinen Code. Fachliche Freigaben erteilst du nicht;
++du prüfst nur, ob sie dokumentiert sind.
++
++Kontext (ausfüllen)
++- Website: templates/website/<website>/   Branch: <branch>   Stand (Commit): <hash>
++- Vorschau: <URL>   Ziel-Adresse nach Veröffentlichung: <URL>
++
++Grundlagen (im Repository lesen)
++- guidelines/00-ablauf-pruefung-und-freigabe.md (inkl. «Prüftiefe»)
++- guidelines/00-technische-qualitaet.md (v. a. C Datenschutz, F Darstellung und Druck)
++- README.md › «Zuständigkeit statt Krisenzugang»
++- PRUEFBERICHT.md, site.config.json, tools/gate.mjs der Website
++
++Prüfpunkte (jeder mit Beleg)
++
++A · Prüfbericht
++  1. Stufen W1, W2, S, Visualisierungs-Check, Bedienung und Barrierefreiheit, W3 stehen auf
++     «erledigt» oder «entfällt: Begründung», mit Datum und Person oder Sitzung.
++  2. Keine offenen Befunde der Priorität kritisch oder wichtig; offene optionale Befunde sind
++     bewusst zurückgestellt und begründet.
++  3. Prüftiefe eingehalten: mindestens 20 Aussagen mit dem Bestand verglichen (bei Umbauten),
++     Kennzahlen nachgerechnet, Visualisierungs-Check je Figur, zweite unabhängige Prüfung.
++  4. Mindestens zwei reale Screenreader-Läufe (z. B. VoiceOver/Safari, NVDA/Firefox) und ein
++     Test mit Hardwaretastatur und Touch sind dokumentiert.
++
++B · Fachliche Freigaben
++  5. Jede Figur im visualPlan hat approvalStatus «freigegeben».
++  6. Keine Platzhalter mehr, oder jeder ist freigegeben.
++  7. responsibility und responsibility.inline: reviewStatus «geprueft», mit Person und Datum;
++     Wortlaut gleich dem aktuellen Standard im README oder dokumentiert abweichend geprüft.
++  8. Inhaltsverantwortung und Prüfdatum sind auf der Website sichtbar; Entwurfsmarkierungen
++     («Entwurf», «fachliche Prüfung ausstehend», «Platzhalter») sind entfernt. Freigabesprache:
++     «fachlich freigegeben», nie «verifiziert».
++
++C · Gate
++  9. node tools/build.mjs: 0 blockierende Befunde.
++ 10. node tools/gate.mjs --selftest: alle Fälle bestanden.
++ 11. node tools/gate.mjs --production: 0 blockierende Befunde.
++     (Ohne Repositoryzugriff: als «nicht prüfbar» melden, nicht als bestanden.)
++
++D · Zuständigkeit und Inhalt
++ 12. Keine Krisennummern, keine tel:-Links, kein Notfallblock (Stichprobe auf jeder Seite).
++ 13. Alle externen Links erreichbar und auf offizielle Quellen (z. B. Opferhilfe Schweiz);
++     E-Mail-Adresse der Fachstelle korrekt.
++ 14. Quellenangaben vollständig, mit Jahr; keine Quellenzuschreibung ohne Grundlage.
++
++E · Datenschutz und Technik
++ 15. Keine extern geladenen Schriften, Skripte, Karten oder Videos; kein Tracking, keine Cookies.
++ 16. Metadaten: title und description je Seite, lang="de-CH", siteUrl gesetzt, Favicon.
++ 17. Vorschau-Adressen sind nicht indexierbar; die Ziel-Adresse ist es (robots, noindex).
++ 18. Druckansicht jeder Seite lesbar, ohne Bedienelemente; 404-Seite vorhanden.
++
++F · Auslieferung
++ 19. Veröffentlicht wird der Export (node tools/export.mjs <zielordner> --production), nicht
++     der Arbeitsordner. Prüfe den Exportordner: keine Arbeitsdateien (UMBAUPLAN.md,
++     KORREKTUR-*.md, abgleich/, PRUEFBERICHT*.md, tools/, Selbsttest-Dateien, Bestandstexte).
++ 20. Navigation zeigt nur freigegebene Seiten; Entwurfsseiten sind nicht erreichbar.
++ 21. Links und Sprungziele funktionieren auf der Ziel-Adresse (Umschreibungen des Hosters
++     beachten); kein Link führt auf die Vorschau.
++
++Regeln
++- Ein Punkt ohne Beleg gilt als nicht erfüllt.
++- Priorität: kritisch (blockiert die Veröffentlichung) / wichtig / optional.
++- Rahmen Schweiz / Kanton Zürich; Schweizer Hochdeutsch (ss, «»).
++
++Ergebnis
++1. Entscheid in einem Satz: «Go», «Go mit Auflagen» (Auflagen einzeln, mit Frist) oder «No-Go».
++2. Tabelle: Nr. | Prüfpunkt | Ergebnis (erfüllt / nicht erfüllt / nicht prüfbar) | Beleg |
++   Priorität.
++3. Liste der blockierenden Punkte: was fehlt, wer es erledigt (bauende Sitzung, Prüfsitzung
++   oder Fachstelle).
++Trage das Ergebnis in PRUEFBERICHT.md unter «R3 Freigabe-Audit» ein, mit Datum und Stand.
++Committe nur den Prüfbericht. Veröffentlicht wird nur nach «Go» und nach Freigabe durch die
++Fachstelle.
++```
+diff --git a/templates/website/psychoeducation-site-starter/PRUEFBERICHT.md b/templates/website/psychoeducation-site-starter/PRUEFBERICHT.md
+index cc3b2fa..38ce115 100644
+--- a/templates/website/psychoeducation-site-starter/PRUEFBERICHT.md
++++ b/templates/website/psychoeducation-site-starter/PRUEFBERICHT.md
+@@ -20,6 +20,9 @@ Gehört zur Website in diesem Ordner. Wer den Starter kopiert, übernimmt diese
+ | Visualisierungs-Check | offen | | | |
+ | Bedienung und Barrierefreiheit | offen | | | |
+ | W3 Code-Review | offen | | | |
++| R1 Profil-Audit | offen | | | |
++| R2 Visualisierung und Laienverständlichkeit | offen | | | |
++| R3 Freigabe-Audit | offen | | | «Go», «Go mit Auflagen» oder «No-Go» |
+ 
+ ## Selbstprüfung der bauenden Sitzung
+ 
+@@ -76,3 +79,13 @@ E = erfüllt · T = teilweise · N = nicht erfüllt · – = nicht anwendbar. Je
+ ### Bedienung und Barrierefreiheit
+ 
+ ### W3 Code-Review
++
++## Pre-Release-Audits
++
++Aufträge und Prüfpunkte: Abschnitt «Pre-Release-Audits» (`guidelines/00-pre-release-audits.md`). Erst nach W3; R3 unmittelbar vor der Veröffentlichung. R3 steht nur bei «Go» auf «erledigt».
++
++### R1 Profil-Audit
++
++### R2 Visualisierung und Laienverständlichkeit
++
++### R3 Freigabe-Audit
+diff --git a/templates/website/psychoeducation-site-starter/README.md b/templates/website/psychoeducation-site-starter/README.md
+index 7c2bd27..9abff0e 100644
+--- a/templates/website/psychoeducation-site-starter/README.md
++++ b/templates/website/psychoeducation-site-starter/README.md
+@@ -1,4 +1,4 @@
+-# Psychoedukations-Starter · PUK Website Kit 1.10.1-r4 · abgeleitet · Build r4-4
++# Psychoedukations-Starter · PUK Website Kit 1.10.1-r4 · abgeleitet · Build r4-5
+ 
+ Lokal lauffähiger Mehrseiten-Starter für psychoedukative Websites. Abgeleitetes Profil auf Basis der kanonischen Quelle **PUK Zürich Design System 1.10.1**, nicht deren neue offizielle Version. Alle Inhalte sind synthetisch: keine realen Kontakte, Personen, klinischen Aussagen, Freigaben oder Bildrechte.
+ 
+@@ -79,9 +79,9 @@ Seiten über einen lokalen Webserver öffnen (z. B. `npx serve` im Projektstamm
+ - `index.html`: Einstieg mit Lesepfaden; der Vollbericht ist ein Download-Platzhalter.
+ - `seitenvorlage.html`: Entwurf, nicht in der Navigation.
+ 
+-Stand 09.10.2026 (Build r4-4, Befunde aus der Prüfung der Borderline-Website):
++Stand 09.10.2026 (Build r4-5, Befunde aus der Prüfung der Borderline-Website, Pre-Release-Audits):
+ - **Entwurfsgate:** 0 blockierende Befunde.
+-- **Produktionsgate:** blockiert 9 offene Freigaben und den unvollständigen Prüfbericht. Das ist erwartet.
+-- **Selbsttest:** 50 von 50 bestanden, auch in Kopien des Starters (neu: Verweis im Text mit eigenem Wortlaut, auf Seite ohne sensibles Thema, in einer Vertiefung, ungeprüft in Produktion).
++- **Produktionsgate:** blockiert die offenen Freigaben und den unvollständigen Prüfbericht. Das ist erwartet. Der Prüfbericht braucht neu auch die Zeilen R1, R2 und R3 (Abschnitt «Pre-Release-Audits»); R3 nur bei «Go» auf «erledigt».
++- **Selbsttest:** 51 von 51 bestanden, auch in Kopien des Starters (neu: Produktion blockiert ohne «Go» im Freigabe-Audit R3; seit r4-4: Verweis im Text mit eigenem Wortlaut, auf Seite ohne sensibles Thema, in einer Vertiefung, ungeprüft in Produktion).
+ 
+ Offen sind reale Screenreader-Läufe, ein Test mit Hardwaretastatur sowie Fach-, Bild- und Absenderfreigaben.
+diff --git a/templates/website/psychoeducation-site-starter/behandlung-verstehen.html b/templates/website/psychoeducation-site-starter/behandlung-verstehen.html
+index 7e9174c..ee95351 100644
+--- a/templates/website/psychoeducation-site-starter/behandlung-verstehen.html
++++ b/templates/website/psychoeducation-site-starter/behandlung-verstehen.html
+@@ -1,5 +1,5 @@
+ <!DOCTYPE html>
+-<html lang="de-CH" data-puk-site-build="r4-4" data-page-id="behandlung-verstehen">
++<html lang="de-CH" data-puk-site-build="r4-5" data-page-id="behandlung-verstehen">
+ <head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+diff --git a/templates/website/psychoeducation-site-starter/beziehungen-verstehen.html b/templates/website/psychoeducation-site-starter/beziehungen-verstehen.html
+index 078c85f..fb8ef34 100644
+--- a/templates/website/psychoeducation-site-starter/beziehungen-verstehen.html
++++ b/templates/website/psychoeducation-site-starter/beziehungen-verstehen.html
+@@ -1,5 +1,5 @@
+ <!DOCTYPE html>
+-<html lang="de-CH" data-puk-site-build="r4-4" data-page-id="beziehungen-verstehen">
++<html lang="de-CH" data-puk-site-build="r4-5" data-page-id="beziehungen-verstehen">
+ <head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+diff --git a/templates/website/psychoeducation-site-starter/gate.html b/templates/website/psychoeducation-site-starter/gate.html
+index f982aba..aab9af4 100644
+--- a/templates/website/psychoeducation-site-starter/gate.html
++++ b/templates/website/psychoeducation-site-starter/gate.html
+@@ -31,7 +31,7 @@ a{color:var(--text-link)}a:hover{color:var(--text-link-hover)}
+ <h2>Gate Produktion</h2><div class="wrap" id="prod"></div>
+ <h2>Selbsttest</h2><p>Jede Fehlerklasse wird absichtlich in eine Kopie der Seiten eingebaut; das Gate muss sie als blockierend erkennen.</p><div class="wrap" id="self"></div>
+ </main>
+-<script src="tools/contract.js?v=r4-4"></script>
++<script src="tools/contract.js?v=r4-5"></script>
+ <script>
+ (async () => {
+   const C = window.PUKSiteContract; const e = s => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;');
+diff --git a/templates/website/psychoeducation-site-starter/index.html b/templates/website/psychoeducation-site-starter/index.html
+index 2e5c60e..d4516a2 100644
+--- a/templates/website/psychoeducation-site-starter/index.html
++++ b/templates/website/psychoeducation-site-starter/index.html
+@@ -1,5 +1,5 @@
+ <!DOCTYPE html>
+-<html lang="de-CH" data-puk-site-build="r4-4" data-page-id="index">
++<html lang="de-CH" data-puk-site-build="r4-5" data-page-id="index">
+ <head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+diff --git a/templates/website/psychoeducation-site-starter/seitenvorlage.html b/templates/website/psychoeducation-site-starter/seitenvorlage.html
+index 5ff60de..425a324 100644
+--- a/templates/website/psychoeducation-site-starter/seitenvorlage.html
++++ b/templates/website/psychoeducation-site-starter/seitenvorlage.html
+@@ -1,5 +1,5 @@
+ <!DOCTYPE html>
+-<html lang="de-CH" data-puk-site-build="r4-4" data-page-id="seitenvorlage">
++<html lang="de-CH" data-puk-site-build="r4-5" data-page-id="seitenvorlage">
+ <head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+diff --git a/templates/website/psychoeducation-site-starter/tools/contract.js b/templates/website/psychoeducation-site-starter/tools/contract.js
+index 7a9a5d5..02ce34e 100644
+--- a/templates/website/psychoeducation-site-starter/tools/contract.js
++++ b/templates/website/psychoeducation-site-starter/tools/contract.js
+@@ -8,7 +8,7 @@
+ })(typeof self !== 'undefined' ? self : this, function () {
+ 'use strict';
+ const VERSION = 'PUK Website Kit 1.10.1-r4 · abgeleitet';
+-const BUILD = 'r4-4';
++const BUILD = 'r4-5';
+ const FORMATS = ['text', 'figure', 'process', 'cycle', 'comparison', 'decision', 'illustration', 'stepwise-model', 'tension-field', 'relationship-map', 'continuum', 'layer-model'];
+ /* Interaktive Komponenten und Erklärmuster G brauchen components/interaktion.js (HTML-Fassungen ohne React). */
+ const INTERACTIVE = ['data-puk-accordion', 'data-puk-tabs', 'data-puk-disclosure', 'data-puk-dialog-open', 'data-vis-build'];
+@@ -25,7 +25,7 @@ const REVIEW_WARNINGS = ['orthography', 'swiss-context', 'person-first', 'card-g
+ const ENTRY_FORMATS = ['cycle', 'process', 'stepwise-model'];
+ /* Profilentscheid 08.10.2026: Bauen und Prüfen sind getrennt; ohne vollständigen Prüfbericht (PRUEFBERICHT.md im Ordner der Website) keine Veröffentlichung.
+    Status je Stufe: «erledigt» oder «entfällt: Begründung»; alles andere gilt als offen. */
+-const REPORT_STAGES = [['W1', /^w1\b/i], ['W2', /^w2\b/i], ['S', /^s\b/i], ['Visualisierungs-Check', /^visualisierungs-check/i], ['Bedienung und Barrierefreiheit', /^bedienung/i], ['W3', /^w3\b/i]];
++const REPORT_STAGES = [['W1', /^w1\b/i], ['W2', /^w2\b/i], ['S', /^s\b/i], ['Visualisierungs-Check', /^visualisierungs-check/i], ['Bedienung und Barrierefreiheit', /^bedienung/i], ['W3', /^w3\b/i], ['R1 Profil-Audit', /^r1(?![-\w])/i], ['R2 Visualisierung und Laienverständlichkeit', /^r2(?![-\w])/i], ['R3 Freigabe-Audit', /^r3(?![-\w])/i]];
+ function reportStatus(md) {
+   const rows = String(md || '').split(/\r?\n/).filter(l => /^\s*\|/.test(l)).map(l => l.trim().replace(/^\||\|$/g, '').split('|').map(c => c.trim()));
+   const open = [];
+@@ -425,6 +425,9 @@ function selftest(cfg, files, opts = {}) {
+   rows.push({ name: 'Produktion ohne Prüfbericht blockiert', expected: 'review-report', got: noRep ? 'review-report' : 'nicht erkannt', ok: noRep });
+   const fullRep = gate(cfg, files, { mode: 'production', exists: base, report: done }).findings.some(x => x.id === 'review-report');
+   rows.push({ name: 'Vollständiger Prüfbericht gibt die Veröffentlichung frei', expected: 'kein review-report', got: fullRep ? 'review-report' : 'kein review-report', ok: !fullRep });
++  const noR3 = done.split('\n').filter(l => !/^\|\s*R3\b/i.test(l)).join('\n') + '\n| R3 Freigabe-Audit | offen |';
++  const r3open = gate(cfg, files, { mode: 'production', exists: base, report: noR3 }).findings.some(x => x.level === 'block' && x.id === 'review-report' && /R3/.test(x.message || x.msg || ''));
++  rows.push({ name: 'Produktion blockiert ohne «Go» im Freigabe-Audit R3', expected: 'review-report (R3)', got: r3open ? 'review-report (R3)' : 'nicht erkannt', ok: r3open });
+   { const c = JSON.parse(JSON.stringify(cfg)); const f = Object.assign({}, files); c.responsibility = Object.assign({}, c.responsibility, { inline: { text: INLINE_T, reviewStatus: 'ausstehend' } });
+     const ok = rep(f, 'beziehungen-verstehen.html', '</main>', `<section id="x-inline"><p class="puk-longform__boundary" data-responsibility-inline>${INLINE_T}</p></section></main>`);
+     const hitI = ok && gate(c, f, { mode: 'production', exists: base }).findings.some(x => x.level === 'block' && x.id === 'inline-review');
+diff --git a/templates/website/psychoeducation-site-starter/unterstuetzung-finden.html b/templates/website/psychoeducation-site-starter/unterstuetzung-finden.html
+index 3d935fb..754424f 100644
+--- a/templates/website/psychoeducation-site-starter/unterstuetzung-finden.html
++++ b/templates/website/psychoeducation-site-starter/unterstuetzung-finden.html
+@@ -1,5 +1,5 @@
+ <!DOCTYPE html>
+-<html lang="de-CH" data-puk-site-build="r4-4" data-page-id="unterstuetzung-finden">
++<html lang="de-CH" data-puk-site-build="r4-5" data-page-id="unterstuetzung-finden">
+ <head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+diff --git a/ui_kits/website/qa.html b/ui_kits/website/qa.html
+index 75c820b..76b2d0d 100644
+--- a/ui_kits/website/qa.html
++++ b/ui_kits/website/qa.html
+@@ -32,7 +32,7 @@ th,td{border-bottom:1px solid var(--border-hairline);padding:4px 8px;text-align:
+ <h1 style="margin-top:24px">Interaktionen</h1>
+ <table><thead><tr><th>Prüfung</th><th>Erwartet</th><th>Ergebnis</th></tr></thead><tbody id="func"></tbody></table>
+ <div id="stage"></div>
+-<script src="../../templates/website/psychoeducation-site-starter/tools/contract.js?v=r4-4"></script>
++<script src="../../templates/website/psychoeducation-site-starter/tools/contract.js?v=r4-5"></script>
+ <script>
+ const VIEWS=['start','situationsnavigator','kontaktwegweiser','gespraechshilfe','angebotsnavigator','grundlagenkapitel','handlungsuebersicht','transfer-erholung','beispiel-visualisierung','visualisierungsmuster','site:index','site:beziehungen-verstehen','site:behandlung-verstehen','site:unterstuetzung-finden'];
+ const RUNS=[];
