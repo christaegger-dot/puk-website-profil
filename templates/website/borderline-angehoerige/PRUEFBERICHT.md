@@ -26,36 +26,85 @@ Dazu 5 leichte Befunde zu Bericht und Abgleich. Die erste und zweite Prüfrunde 
 
 Nach jedem Bau ohne Nachfrage ausfüllen: Visualisierungs-Check wie unten, mit Beleg je Punkt. Arbeitsstand, keine Prüfstufe.
 
-**Stand 09.10.2026 · Korrektur Etappe 1d · bauende Sitzung (Claude Code).** Umgesetzt sind `KORREKTUR-ETAPPE-1D.md`, D-1 bis D-4, auf `verstehen`, `beziehungen` und `grenzen` sowie das Profil-Update `update-2026-10-09b`. Auf `index` hat sich nur die Fusszeile geändert. Gekürzt wurde nichts; der Richtwert gilt nicht (Abschnitt 4). Die Prüfstufen bleiben offen. Diese Selbstprüfung ersetzt die der Korrektur 1c und ist nicht die Stufe «Visualisierungs-Check».
+**Stand 09.10.2026 · Korrektur Etappe 1e · bauende Sitzung (Claude Code).** Umgesetzt ist `KORREKTUR-ETAPPE-1E.md`:
+
+- Abschnitt 3: `verstehen`, Abbildung 2, Stelle 2.
+- Abschnitt 4: `beziehungen`, neu in einfacher Sprache.
+
+`index` und `grenzen` sind unverändert. Gekürzt wurde nichts; der Richtwert gilt nicht (1E, Abschnitt 2). Die Prüfstufen bleiben offen. Diese Selbstprüfung ersetzt die der Korrektur 1d und ist nicht die Stufe «Visualisierungs-Check».
 
 **Gates und Skripte:**
 
-- `node tools/build.mjs`: 15 Seiten, 0 blockierend, 22 Hinweise (8 Visualisierungen und 12 Platzhalter nicht freigegeben, `siteUrl` fehlt, Prüfbericht offen).
-- `node tools/gate.mjs --selftest`: 50/50 bestanden, auf der Website und im Starter auf `main`.
-- `node tools/gate.mjs --production`: blockiert erwartungsgemäss mit 21 Befunden (8 × `visual-approval`, 12 × `placeholder-approval`, 1 × `review-report`).
-- `node abgleich/pruefe-abgleich.mjs`: **1739 Zeilen, 0 ohne Fundstelle.** Ob die genannte Fassung die Aussage trägt, prüft das Skript nicht; das bleibt Aufgabe von W1.
-- `node abgleich/kennzahlen.mjs` und `node abgleich/bedienung.mjs`: Werte unten.
+- **`node tools/build.mjs`:** 15 Seiten, 0 blockierend, 22 Hinweise wie bisher (8 Visualisierungen und 12 Platzhalter nicht freigegeben, `siteUrl` fehlt, Prüfbericht offen).
+- **`node tools/gate.mjs --selftest`:** 50/50 bestanden.
+- **`node tools/gate.mjs --production`:** blockiert erwartungsgemäss mit 21 Befunden (8 × `visual-approval`, 12 × `placeholder-approval`, 1 × `review-report`).
+- **`node abgleich/pruefe-abgleich.mjs`:** **1755 Zeilen, 0 ohne Fundstelle.** Das sind 1739 Bestandszeilen und 16 neue Zeilen ohne Bestandssatz auf `beziehungen`. Ob die genannte Fassung die Aussage trägt, prüft das Skript nicht; das bleibt Aufgabe von W1.
+- **Wortlaut:** Ein Skript der bauenden Sitzung sucht jede Stelle in «…» aus 1E, Abschnitt 3 und 4, im sichtbaren Text der gebauten Seiten. Ergebnis: 61 Stellen, 0 fehlen.
+- **Weitere Messungen:** `node abgleich/kennzahlen.mjs`, `node abgleich/verneinung.mjs` (neu, zählt Sätze mit Verneinung) und `node abgleich/bedienung.mjs`; Werte unten.
 
-### Profil-Update 2026-10-09b
+### Auftrag verschieben
 
 | Schritt | Stand | Beleg |
 | --- | --- | --- |
-| Patch auf `main` | angewendet, ausser 11 Dateien `components/Vis*/preview.html`: Diese Dateien gibt es im Repository nicht, auch nicht in der Historie | Commit `2c47478` auf `main`, Patch-Datei dort gelöscht. Starter: Selbsttest 50/50, Build ohne weitere Änderung (`git apply -R --check` passt auf den gebauten Stand) |
-| Uploads im Stamm | `KORREKTUR-ETAPPE-1D.md` aus dem Stamm gelöscht, liegt im Website-Ordner | Commit `6c4acf2` auf `main` |
-| Zusammenführen | `main` in `borderline-umbau`, ohne Konflikt | Merge-Commit `abe98ff` |
-| Kopie des Starters | Die vier Dateien in `tools/selftest/` der Website waren identisch mit dem Starter und sind wie dort nachgeführt (Legenden mit `puk-sr`, neuer Zuständigkeitsverweis). `tools/*.mjs`, `contract.js`, `starter.css` und `_headers` sind unverändert gleich wie im Starter. | Selbsttest der Website 50/50 |
+| Upload im Stamm | `KORREKTUR-ETAPPE-1E.md` aus `39ed591` in den Website-Ordner gelegt | Commit `19df18a` auf `borderline-umbau` |
+| Stamm von `main` | Datei gelöscht | Commit `c5c0e35` auf `main` |
+| Zusammenführen | `main` in `borderline-umbau`, ohne Konflikt | Merge-Commit `4bf98ab` |
 
-### Korrekturauftrag 1d: Stand je Punkt
+### Korrekturauftrag 1e: Stand je Abschnitt
 
-| ID | Stand | Wie | Beleg |
+Alle Texte stehen im Wortlaut des Auftrags in `content/beziehungen.html` und `content/verstehen.html`. Die Beleg-Spalte nennt den Abschnitt der gebauten Seite und eine Stelle daraus.
+
+| Abschnitt | Stand | Was | Beleg |
 | --- | --- | --- | --- |
-| D-1 | umgesetzt | `site.config.json` › `responsibility.text` im Wortlaut des Auftrags, `reviewedAt` «09.10.2026»; `inline` unverändert; neu gebaut | Fusszeile aller 15 Seiten: «Die Fachstelle Angehörigenarbeit der PUK berät Angehörige kostenlos und vertraulich: angehoerigenarbeit@pukzh.ch. Sorgen Sie sich akut um das Leben oder die Sicherheit eines Menschen, holen Sie sofort Hilfe: ärztlicher Notfalldienst oder Notfallstation, bei Gefahr die Polizei.» (`grep -c` auf den gebauten Seiten: 15). Abgleich `index` Nr. 37, 247 |
-| D-2 | umgesetzt | <ul><li>Die 8 Absätze, auf die `aria-describedby` zeigt, tragen `class="puk-sr"`: `vs-eisberg-text`, `vs-anspannung-text`, `vs-bewertungen-text`, `vs-mythen-text`, `bz-schleife-text`, `bz-sichten-text`, `gr-bruecke-text`, `gr-dear-text`.</li><li>Sichtbar bleiben in der Legende Kennzeichnung und Quelle. Die «Leserichtung» der Schleife bleibt sichtbar.</li><li>Das Gate liest die Kurzbeschreibung weiter als Textalternative (mindestens 40 Zeichen); 0 blockierend.</li></ul> | Skript bei 1440 und 360 px (nach `document.fonts.ready`): Alle 8 Kurzbeschreibungen tragen `puk-sr` und sind 1 × 1 px gross; sichtbar bleiben Kennzeichnung und Quelle (Bildschirmfotos von Abbildung 2 angesehen) |
-| D-2, Durchsicht | erledigt, nichts weiter entfernt | Weiterer sichtbarer Text, der nur die Zeichnung beschreibt, steht in keiner Figur. Geblieben sind Zuordnungen von Liste und Zeichnung, wie die Leserichtung: «Links: / Mitte: / Rechts:» in der Pendel-Liste, «Fahrbahn · Verbindung», «Geländer · Grenzen», «Pfeiler · was trägt» bei der Brücke, die Nummern der Anspannungskurve. | Abbildung 3 `verstehen`, Abbildung 1 `grenzen`, Abbildung 2 `verstehen` |
-| D-3 | umgesetzt | <ul><li>Titel, Kernaussage, Kurztext, die vier Stellen mit Liste, Ansatzpunkt, «Was hilft», Beispielen und die drei Sätze der Vertiefung im Wortlaut des Auftrags.</li><li>Zeichnung: eine Kurve `puk-vis-ln` (2 px) über 640 × 280, links tief, Scheitel, rechts sinkend; keine Skala, keine Achse, keine Füllfläche.</li><li>Nummern als HTML-Marken auf der Kurve wie in Muster G; Stelle 2 mit doppeltem Ring (`outline` über `--border-width-strong`), auch in der Liste.</li><li>Kurze Beschriftungen als HTML-Text in `type-body-sm`; unter 560 px entfallen nur sie, Kurve und Nummern bleiben.</li><li>Liste in Seitenschrift, `h3` in `--web-size-h4`, «Was hilft» und Ansatzpunkt in `--web-size-body` (wie 1c, K-8).</li><li>Vertiefung «Grenzen des Bildes» mit den drei Sätzen des Auftrags und, ohne Fachbegriffe, «Gefahr lässt sich aus der Stelle auf der Kurve nicht ableiten.» und «Die Kurve zeigt kein «Borderline-Gehirn», und solche Verläufe sind nicht auf Borderline beschränkt.»</li><li>Legende «Eigene didaktische Darstellung nach dem Handout «Die Anspannungskurve»», Bezugspunkte wie bisher, Kurzbeschreibung als `p.puk-sr`.</li><li>`visualPlan` › `v-vs-anspannung`: Format «figure», Aussage, «Was wird besser verstanden?» (wann Reden hilft und wann eine Pause besser ist), `entryPoint` Stelle 2.</li><li>CSS des früheren Kontinuums aus `borderline.css` entfernt.</li></ul> | <ul><li>Bildschirmfotos angesehen bei 1280 und 360 px, dazu 1440, 768, 600 und 320 px und im Theme «kontrast».</li><li>Skript: keine Beschriftung und keine Nummer ragt aus der Zeichnung, keine überlappt eine andere (1440 bis 320 px).</li><li>«Denk-Modus» und «Alarm-Modus» stehen auf keiner gebauten Seite, in `content/` und `site.config.json` nicht (`grep`); nur noch als Bestandszitate im Abgleich.</li></ul> |
-| D-3, Stelle 2 | nach Entscheid der Fachstelle ergänzt | Nach dem Auftrag hatte Stelle 2 nur den Ansatzpunkt; der bisherige «Was hilft»-Satz fiel weg und war gemeldet. Auf Entscheid der Fachstelle (09.10.2026, im Chat) steht er wieder vor dem Ansatzpunkt, im bisherigen Wortlaut: «Argumentieren Sie nicht weiter, sprechen Sie langsamer und machen Sie weniger Druck.» Markup und Schrift wie bei Stelle 1 und 3. | `verstehen` › Abbildung 2, Stelle 2; Bildschirmfotos bei 1280 und 360 px; `abgleich/verstehen.md`, Prüfbedarf 9 (erledigt), Nr. 83, 222, 436, 440, 441, 522 |
-| D-4 | umgesetzt | Abschnitt 07: erster Satz, die beiden Absätze aus dem Bestand Z. 162–164 wörtlich, Merksatz als `div.puk-longform__reflection` mit `h3` «Merksatz für Angehörige», danach «Mehr dazu unter …»; `visualPlan` › `v-vs-einordnung` nachgeführt | `verstehen` › `einordnung`; Bildschirmfoto bei 1280 px; `abgleich/verstehen.md` Nr. 102–107 «übernommen» |
-| Regeln | eingehalten | Wortlaute aus D-1 bis D-4 unverändert; nichts gekürzt; Abgleich für D-3 und D-4 nachgeführt (alle Zeilen mit Ort `verstehen#anspannung`, das Handout `anspannungskurve`, «Verstehen hat Grenzen»), 0 ohne Fundstelle | `abgleich/README.md`, Abschnitt «Korrektur Etappe 1d» |
+| 3 · `verstehen`, Stelle 2 | umgesetzt | <ul><li>`p.bl-kurve__hilft` («Was hilft») bei Stelle 2 entfernt.</li><li>Ansatzpunkt im Wortlaut von 1E.</li><li>`visualPlan` › `v-vs-anspannung` nachgeführt: Aussage und `entryPoint`.</li></ul> Die Fassung aus 1d mit «Was hilft» war schon umgesetzt. Auf Rückfrage in der bauenden Sitzung (09.10.2026) gilt die Fassung aus 1E. | <ul><li>`verstehen` › `anspannung`, Stelle 2: «Argumentieren Sie nicht weiter und machen Sie weniger Druck. Senken Sie Ihr eigenes Tempo, …»</li><li>«Was hilft» steht nur noch bei Stelle 1 und 3.</li><li>Bildschirmfotos der Figur bei 1280 und 360 px angesehen.</li><li>`abgleich/verstehen.md` Nr. 83, 222, 436, 440, 441, 451; Prüfbedarf 9.</li></ul> |
+| Kopf | umgesetzt | Einleitung neu; sechs Linktexte der Kapitelübersicht neu, Ziele unverändert | `beziehungen` › Kopf: «Warum kommt gut gemeinte Unterstützung manchmal ganz anders an? …»; Kapitelübersicht: «Was verbindet» · «Bedeutungsschleife» · «Was Reaktionen verschärfen kann» · «Zwei Sichten» · «Was helfen kann» · «Verantwortung und Schutz» |
+| 01 · `verbindung` | umgesetzt | Kicker, Absatz, Einleitung der Liste, vier Listenpunkte, «Was Sie tun können»; Titel unverändert | «Zuneigung, Humor, Fürsorge und gemeinsame Freude sind echt, auch wenn es Krisen gibt.» · «Was Sie tun können: Fragen Sie sich: «Was trägt unsere Beziehung – und wann gelingt der Kontakt?» …» |
+| 02 · `schleife` | umgesetzt | <ul><li>Absatz neu.</li><li>Abbildung 1: nur Kurztext und Text des Ansatzpunkts neu.</li><li>Titel, Kernaussage, Stationen, Leserichtung, Rücksprung und Legende unverändert.</li><li>`visualPlan` › `v-bz-schleife`: Zitate in Aussage und `entryPoint` im neuen Wortlaut.</li></ul> | <ul><li>Kurztext: «Das Modell ist eine mögliche Erklärung, keine sichere Aussage darüber, was eine bestimmte Person denkt oder will.»</li><li>Ansatzpunkt mit «Zum Beispiel: «Wie hast du meine Absage verstanden?»».</li><li>Vergleich mit `4bf98ab` per Skript: In Abbildung 1 sind nur diese zwei Absätze geändert, Abbildung 2 ist gleich.</li></ul> |
+| 03 · `verstaerker` | umgesetzt | <ul><li>Kicker, Titel und Einleitung neu.</li><li>Fünf Einträge: `dd` mit zwei Absätzen, der zweite «Was Sie tun können».</li><li>Station 3 mit den beiden Links wie bisher.</li><li>Station 5 mit neuem Titel.</li></ul> | <ul><li>«Station 5 · Wenn es bei anderen besser klappt» · «Das kann kränken.»</li><li>Gemessen: Absätze im `dd` 21 px wie der Fliesstext, 20 px Abstand darunter.</li><li>Bildschirmfotos bei 1280 und 360 px.</li></ul> |
+| 04 · `zwei-sichten` | umgesetzt | Absatz 1 und 2 neu, «Was Sie tun können»; Kicker, Titel und Abbildung 2 unverändert | «In einem Konflikt kann vieles zugleich stimmen. Zum Beispiel: …» · «Ob und wie stark jemand mitfühlt, lässt sich aus der Diagnose nicht ablesen.» |
+| 05 · `was-hilft` | umgesetzt | <ul><li>Kicker, Titel und Absatz neu.</li><li>Liste mit drei Punkten; Absatz «Kein Satz garantiert …».</li><li>Beide `dd` neu; W1-7 «Regulation» wird «alle schwierigen Gefühle auffangen».</li></ul> | <ul><li>«Was die Beziehung stärken kann».</li><li>«Sie sollte aber weder alle schwierigen Gefühle auffangen noch eine Behandlung ersetzen.»</li></ul> |
+| 06 · `verantwortung` | umgesetzt | <ul><li>Absatz 1 bis 4 neu; Link auf `grenzen.html#gewalt` wie bisher.</li><li>`<p data-responsibility-inline></p>` unverändert direkt nach Absatz 3.</li><li>«Was Sie tun können» mit Link `index.html#beratung`, Form wie auf `grenzen` › `kontakt`.</li><li>«Grundlage» neu, Quellenliste unverändert.</li></ul> | Gebaute Seite: Auf «… Dann braucht es eine fachliche Einschätzung.» folgt der Verweis im Text «Sorgen Sie sich akut um das Leben oder die Sicherheit eines Menschen, …». Bildschirmfotos bei 1280 und 360 px. |
+| Regeln (Abschnitt 2) | eingehalten | <ul><li>Keine eigenen Formulierungen, nichts weggelassen.</li><li>8 × `<p><strong>Was Sie tun können:</strong> …</p>`.</li><li>Kein neues CSS.</li><li>Abgleich mit «umformuliert (einfache Sprache, 1e)» und «neu (1e)».</li></ul> | <ul><li>Wortlaut-Skript: 61 Stellen, 0 fehlen.</li><li>`git diff 4bf98ab -- borderline.css`: leer.</li><li>Keine `style`-Attribute, keine `tel:`-Links.</li><li>`abgleich/beziehungen.md`: 62 Zeilen umformuliert, 16 Zeilen ohne Bestandssatz am Ende (13 «neu (1e)»).</li><li>`abgleich/README.md`, Abschnitt «Korrektur Etappe 1e».</li></ul> |
+
+### Wortzahl und Verneinungen auf `beziehungen`
+
+Wörter mit `abgleich/kennzahlen.mjs`, Verneinungen mit `abgleich/verneinung.mjs`.
+
+**Verneinung:** Ein Satz zählt, wenn er «nicht», «nichts», «nie», «niemals», «niemand», «weder» oder eine Form von «kein» enthält.
+
+**Zählweise:**
+
+- **Neu:** sichtbarer Text je Blockelement; Überschriften zählen als Satz.
+- **Alt:** je Zeile des Bestands.
+- **«vor 1e»:** gemessen am Stand `4bf98ab`, mit `--seiten`.
+
+| | Bestand | vor 1e | nach 1e |
+| --- | ---: | ---: | ---: |
+| Wörter | 2149 | 1164 | 1564 (+400, +34 %) |
+| Sätze | 251 | 127 | 167 |
+| Sätze mit Verneinung | 60 (24 %) | 31 (24 %) | 33 (20 %) |
+| Absicherungen je 100 Wörter | 3,82 | 3,69 | 4,48 |
+
+| Abschnitt | Wörter vor → nach 1e | Sätze mit Verneinung vor → nach 1e |
+| --- | --- | --- |
+| Kopf und Kapitelübersicht | 43 → 70 | 1 von 11 → 1 von 13 |
+| 01 `verbindung` | 70 → 80 | 3 von 9 → 2 von 11 |
+| 02 `schleife` | 242 → 272 | 4 von 21 → 5 von 24 |
+| 03 `verstaerker` | 284 → 470 | 8 von 29 → 9 von 45 |
+| 04 `zwei-sichten` | 238 → 276 | 4 von 33 → 4 von 37 |
+| 05 `was-hilft` | 89 → 159 | 3 von 11 → 4 von 17 |
+| 06 `verantwortung` | 198 → 237 | 8 von 13 → 8 von 20 |
+
+**Lesart:**
+
+- Die Seite ist um 34 % länger; der Auftrag schätzt +25 %.
+- **Verneinungen:** Ihre Zahl ist nicht gesunken (31 → 33), nur ihr Anteil (24 % → 20 %), weil die neuen Sätze meist ohne Verneinung sind.
+  - **Weg:** «nicht weniger echt» in 01, «nicht immer eingebildet» und der Titel von Station 5 in 03.
+  - **Neu:** zwei Sätze («auch wenn sie nicht so gemeint ist», «Sie müssen sich dafür nicht rechtfertigen»).
+  - **Geteilt oder ergänzt:** drei Stellen, je mit einem Satz mehr mit Verneinung: Station 4 «… nicht ganz da zu sein» und «… nicht feststellen», Station 5 in zwei Sätzen, «Unterstützung verteilen» in zwei Sätzen.
+  - Die meisten Verneinungen sind Absicherungen über die Person, die der Auftrag ausdrücklich behält (1E, Abschnitt 1).
+- **Absicherungen:** 3,69 → 4,48 je 100 Wörter. Die neuen Sätze enthalten «kann» und «können», zum Beispiel «Eine kurze, verlässliche Ankündigung kann helfen».
+- **`verstehen`:** 1461 → 1456 Wörter (Stelle 2 ohne «Was hilft»). Absicherungen 2,82 je 100 Wörter. Sätze mit Verneinung: 38 von 179.
 
 ### Seitenhöhen, Tabstopps, Pfeile
 
@@ -64,40 +113,52 @@ Skript `node abgleich/bedienung.mjs`, Chromium, nach `load` und `document.fonts.
 | Seite | Tabstopps | Seitenhöhe bei 360 px | höchste Figur bei 360 px |
 | --- | ---: | ---: | --- |
 | `index` | 10 | 3863 px | – |
-| `verstehen` | 19 | 16 954 px | Annahmen 3714 px |
-| `beziehungen` | 15 | 12 737 px | Zwei Sichten 2359 px |
+| `verstehen` | 19 | 16 854 px | Annahmen 3714 px |
+| `beziehungen` | 16 | 15 137 px | Zwei Sichten 2359 px |
 | `grenzen` | 21 | 16 413 px | DEAR 1791 px |
 
-- Abbildung 2 `verstehen` ist bei 360 px 3192 px hoch (gemessen nach dem Laden der Schriften); Abschnitt 07 ist mit dem Merksatz länger.
-- Die Pfeile der Schleife sind unverändert: 7,5 bis 15,3 px vor dem Zielkasten bei 1440, 1280, 768 und 720 px (Tabelle in `abgleich/README.md`).
-- Alle Tabstopps haben einen sichtbaren Fokus; der erste ist «Zum Hauptinhalt».
+- **`beziehungen`:**
+  - +1 Tabstopp: der Link «Beratung der Fachstelle Angehörigenarbeit».
+  - Bei 360 px 2400 px höher (vorher 12 737 px), wegen des längeren Texts.
+  - Abbildung 1 bei 360 px: 1858 px hoch.
+- **`verstehen`:** 100 px niedriger. Abbildung 2 ist bei 360 px 3092 px hoch (vorher 3192 px).
+- **Pfeile der Schleife:** unverändert, 7,5 bis 15,3 px vor dem Zielkasten bei 1440, 1280, 768 und 720 px.
+- **Fokus:** Alle Tabstopps haben einen sichtbaren Fokus; der erste ist «Zum Hauptinhalt».
 
 **Technische Stichprobe in Chromium (Playwright), kein Ersatz für Stufe 5:**
 
 - **Überlauf:** keiner bei 320, 360, 768, 1280 und 1440 px auf den vier Seiten.
 - **Kontrast nach WCAG 1.4.3:** für allen sichtbaren Text in `main` gemessen, Vertiefungen geöffnet; kein Wert unter AA.
 - **Reduzierte Bewegung:** keine laufende Animation.
-- **Theme «kontrast»:** alle 8 Figuren gerendert, auch die neue Abbildung 2; in SVG keine festen Farbattribute.
-- **Nicht geprüft:** Screenreader, Hardwaretastatur und Touch (Stufe 5, Person). Ob Screenreader die Kurzbeschreibungen in `p.puk-sr` wie erwartet vorlesen, ist damit offen.
+- **Theme «kontrast»:**
+  - `beziehungen` › `schleife`, `verstaerker` und `verantwortung` bei 1280 px angesehen: lesbar, nur Token-Farben.
+  - In SVG keine festen Farbattribute.
+- **Bildschirmfotos angesehen:**
+  - `beziehungen` ganz bei 1280 und 360 px.
+  - `verstehen`, Abbildung 2, bei 1280 und 360 px.
+- **Nicht geprüft:** Screenreader, Hardwaretastatur und Touch (Stufe 5, Person).
 
-### Kennzahlen (Skript `abgleich/kennzahlen.mjs`)
+### Kennzahlen aller Seiten (Skript `abgleich/kennzahlen.mjs`)
 
-Gemessen an der alten Seite allein, mit derselben Zählweise für alt und neu (`abgleich/README.md`). Neu zählt Text nur für Screenreader (`.puk-sr`) nicht mit; das betrifft die Kurzbeschreibungen der Legenden (95 / 34 / 20 Wörter). Der Richtwert gilt nicht; die Wortzahlen werden nur berichtet.
+Gemessen an der alten Seite allein, mit derselben Zählweise für alt und neu (`abgleich/README.md`). Text nur für Screenreader (`.puk-sr`) zählt nicht. Der Richtwert gilt nicht; die Wortzahlen werden nur berichtet.
 
 | Seite | Alt: Seite allein | Neu | Neu / alt | Richtwert | Richtwert + 5 % | Absicherungen je 100 Wörter alt → neu | Semikolons im Fliesstext alt → neu |
 | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
 | `index` | 433 | 238 | 55 % | – | – | 1,85 → 1,68 | 1 → 0 |
-| `verstehen` | 2524 | 1461 | 58 % | 1300 | 1365 | 2,54 → 2,81 | 12 → 0 |
-| `beziehungen` | 2149 | 1164 | 54 % | 1100 | 1155 | 3,82 → 3,69 | 6 → 1 |
+| `verstehen` | 2524 | 1456 | 58 % | 1300 | 1365 | 2,54 → 2,82 | 12 → 0 |
+| `beziehungen` | 2149 | 1564 | 73 % | 1100 | 1155 | 3,82 → 4,48 | 6 → 1 |
 | `grenzen` | 2985 | 1554 | 52 % | 1500 | 1575 | 2,41 → 2,06 | 4 → 0 |
-
-- **`verstehen`:** Mit den Kurzbeschreibungen wären es 1556 Wörter, gegenüber 1379 in 1c also +177: Abbildung 2 +113 (D-3, mit «Was hilft» bei Stelle 2), Abschnitt 07 +66 (D-4).
-- **`beziehungen` und `grenzen`:** Der sichtbare Text ist gleich; nur die Kurzbeschreibungen fallen aus der Zählung.
-- **Absicherungen auf `verstehen`:** 2,81, über dem Bestand (2,54). Grund sind die Wortlaute aus D-3 und D-4 («kann», «können», «könnten»).
 
 ## Visualisierungs-Check
 
-Selbstprüfung als Matrix je Figur (Vorlage im Starter). E = erfüllt · T = teilweise · N = nicht erfüllt · – = nicht anwendbar. Belege und Gründe für T und N stehen unter der Matrix. Die Spalte `v-vs-anspannung` gilt der neuen Abbildung 2 (Anspannungskurve). Die übrigen Spalten sind wie in Korrektur 1c; D-2 ändert dort nur, dass die Kurzbeschreibung nicht mehr sichtbar ist.
+Selbstprüfung als Matrix je Figur (Vorlage im Starter). E = erfüllt · T = teilweise · N = nicht erfüllt · – = nicht anwendbar. Belege und Gründe für T und N stehen unter der Matrix.
+
+Korrektur 1e ändert zwei Figuren:
+
+- **`v-bz-schleife`:** Kurztext und Text des Ansatzpunkts.
+- **`v-vs-anspannung`:** Stelle 2 ohne «Was hilft».
+
+Die übrigen Spalten sind wie in Korrektur 1d.
 
 | Nr. | Prüfpunkt | `v-vs-eisberg` | `v-vs-anspannung` | `v-vs-bewertungen` | `v-vs-mythen` | `v-bz-schleife` | `v-bz-sichten` | `v-gr-bruecke` | `v-gr-dear` |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -116,25 +177,19 @@ Selbstprüfung als Matrix je Figur (Vorlage im Starter). E = erfüllt · T = tei
 | 13 | Theme «Hoher Kontrast» | E | E | E | E | E | E | E | E |
 | 14 | Fachlich freigegeben | N | N | N | N | N | N | N | N |
 
-**Belege für die neue Abbildung 2 (`v-vs-anspannung`)**
+**Belege für die mit 1e geänderten Figuren**
 
-- **1, 2:** Die Planzeile ist nachgeführt: Format «figure», Aussage, Quelle, Alternative, Begründung, `entryPoint` Stelle 2. Kein Gate-Hinweis `visual-plan`.
-- **3:** «Was wird besser verstanden?»: wann Reden hilft und wann eine Pause besser ist. Die Kurve zeigt den Verlauf, die Liste sagt je Stelle, was hilft; die Kernaussage nennt die Pause.
-- **4:** Kernaussage zwei Sätze, Kurztext drei Sätze, beide im Wortlaut des Auftrags.
-- **5:** Stelle 2 «Es wird eng», in Zeichnung und Liste mit doppeltem Ring, mit «Was hilft» und «Ansatzpunkt für Angehörige: Senken Sie Ihr eigenes Tempo, …».
-- **6:** Die Kurve verbindet die Handouts «Anspannungskurve», Stressmodell, «Hohe Anspannung» und Zustands-Landkarte in einer Darstellung; Abschnittstext und Figur doppeln sich nicht.
-- **7:** kein Kartenraster; eine Kurve und eine nummerierte Liste.
-- **8:** Die Höhe der Kurve trägt die Anspannung, die Reihenfolge den Gesprächsverlauf, der doppelte Ring den Ansatzpunkt. Eine Linienstärke (2 px), keine Füllung.
-- **9, T:** Die Liste ist in vier Stellen mit Bezeichnungen gegliedert. Sie trägt aber viel Text: Bei 360 px ist die Figur 3192 px hoch.
-- **10:** Vertiefung «Grenzen des Bildes»: «Die Kurve stellt den Verlauf beispielhaft dar. Sie ist kein validiertes Messinstrument …». Kennzeichnung «Eigene didaktische Darstellung nach dem Handout «Die Anspannungskurve»».
-- **11:** Hauptaussagen, Liste und Ansatzpunkt stehen ausserhalb der Vertiefung; kein Skript.
-- **12:** Bei 320 px bleibt die Kurve 238 px breit mit den Nummern 1 bis 4; die Liste trägt den Text. Textfassung über `aria-describedby` (`p.puk-sr`).
-- **13:** Bildschirmfoto mit `data-theme="kontrast"`: Kurve, Ringe und Text lesbar; nur Token-Klassen.
-- **14:** `approvalStatus` «ausstehend».
+- **`v-vs-anspannung`, 1 und 2:** `statement` nennt Stelle 2 mit Ansatzpunkt ohne eigenes «Was hilft» (Korrektur 1e, Abschnitt 3). `entryPoint` nennt zuerst «nicht weiter argumentieren, weniger Druck machen». Kein Gate-Hinweis `visual-plan`.
+- **`v-vs-anspannung`, 5:** Stelle 2 «Es wird eng», in Zeichnung und Liste mit doppeltem Ring. Ansatzpunkt im Wortlaut von 1E. Er beschreibt eigene Möglichkeiten («Senken Sie Ihr eigenes Tempo») und entlastet: «Sie müssen die andere Person nicht beruhigen.»
+- **`v-vs-anspannung`, 9, T:** Die Liste ist in vier Stellen gegliedert, trägt aber viel Text: Bei 360 px ist die Figur 3092 px hoch (vorher 3192 px).
+- **`v-bz-schleife`, 4:** Kernaussage unverändert. Kurztext drei Sätze im Wortlaut von 1E: «Was die eine Person tut, kann für die andere zum Anlass werden. Das Modell ist eine mögliche Erklärung, …»
+- **`v-bz-schleife`, 5:** Ansatzpunkt bei Station 5 mit Beispielfrage «Wie hast du meine Absage verstanden?». Er nennt eigene Möglichkeiten und keine Pflicht: «Sie müssen die Schleife nicht allein unterbrechen: Der Ansatzpunkt ist eine Möglichkeit, keine Pflicht.»
+- **`v-bz-schleife`, 10:** Die Grenze des Modells steht im Kurztext («keine sichere Aussage darüber, was eine bestimmte Person denkt oder will»).
+- **`v-bz-schleife`, 13:** Bildschirmfoto mit `data-theme="kontrast"` bei 1280 px angesehen.
+- **`v-bz-schleife`, 2 und 6, T:** wie bisher. Die Planbegründung von `v-bz-was-hilft` ist mit 1e nachgeführt (drei Stellen zum Unterbrechen als Liste). Ob F-W2-02 damit erledigt ist, entscheidet W2.
 
-**Übrige Figuren:** Belege wie in Korrektur 1c (dritte Prüfrunde und Selbstprüfung 1c). Gründe für T:
+**Übrige Figuren und Punkte:** Belege wie in der Selbstprüfung 1d und der dritten Prüfrunde. Gründe für T:
 
-- **2 und 6, Schleife:** Planbegründung «Handlungsspielraum» (F-W2-02, Fachstelle).
 - **3, 7, 8, 9, Annahmen:** Kastenreihe, bei 360 px 3714 px hoch (F-V-11, Fachstelle).
 - **8, Zwei Sichten:** Die Linienart unterscheidet die Sichten, hat im Profil aber keine feste Bedeutung (P-7).
 - **8, DEAR:** vier gefüllte Punkte (P-6, Profil).
@@ -155,12 +210,21 @@ Selbstprüfung als Matrix je Figur (Vorlage im Starter). E = erfüllt · T = tei
   | 9 | Anspannungskurve, Annahmen |
   | 12 | Pendel |
 
-- **Profil-Update:** 11 Dateien `components/Vis*/preview.html` aus dem Patch gibt es im Repository nicht; ihre Hunks sind nicht angewendet.
-- **Umfang:** `verstehen` (1461) und `beziehungen` (1164) liegen über Richtwert plus 5 %; der Richtwert gilt nicht, über die Länge entscheidet die Fachstelle.
+- **Verneinungen auf `beziehungen`:** Die Zahl der Sätze mit Verneinung ist nicht gesunken (31 → 33), nur ihr Anteil (24 % → 20 %). Der Wortlaut ist vorgegeben; ob das dem Anlass der Korrektur genügt, entscheidet die Fachstelle beim Lesen.
+- **Umfang:** Alle Wortzahlen liegen über Richtwert plus 5 %. Der Richtwert gilt nicht; über die Länge entscheidet die Fachstelle.
+  - `verstehen`: 1456 Wörter.
+  - `beziehungen`: 1564 Wörter, +34 % statt der geschätzten +25 %.
+- **Neuer Prüfbedarf:**
+  - `beziehungen` 1: «alle schwierigen Gefühle auffangen» statt W1-7.
+  - `beziehungen` 2: «Unwirklichkeitsgefühle» steht nicht mehr.
+  - `verstehen` 9: Langsamer sprechen steht nur noch sinngemäss in «Senken Sie Ihr eigenes Tempo».
+  - Fundstellen: `abgleich/beziehungen.md` und `abgleich/verstehen.md`.
+- **Profil-Update (aus 1d weiter offen):** 11 Dateien `components/Vis*/preview.html` aus dem Patch gibt es im Repository nicht; ihre Hunks sind nicht angewendet.
 - **Offen für die Fachstelle:**
-  - R3-W1-05, R3-W1-06, F-V-11, F-V-05, F-W1-11, F-W2-02, F-W2-03
-  - Prüfbedarf in `abgleich/*.md`
-  - alle fachlichen Freigaben, auch für die neue Abbildung 2
+  - Lesen der Seite `beziehungen` (1E, Abschnitt 1, nächster Schritt).
+  - R3-W1-05, R3-W1-06, F-V-11, F-V-05, F-W1-11, F-W2-02, F-W2-03.
+  - Prüfbedarf in `abgleich/*.md`.
+  - Alle fachlichen Freigaben.
 - **Profil (später):** P-6, P-7, P-9.
 - **Offen für Stufe 5:** Screenreader-Läufe, Hardwaretastatur und Touch.
 

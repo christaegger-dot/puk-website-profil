@@ -2,11 +2,11 @@
 
 Neue Seite: `content/grenzen.html` · Bestand: `/grenzen`; Handouts `4-arten-von-grenzen`, `bruecke-gelaender`, `dear`, `grenzen-erkennen`, `grenzen-spickzettel`, `grenzen-ohne-eskalation`, `lmk`, `spiegeln-statt-aufsaugen`; zwei Szenarien aus `/uebungen`. Statuswerte und Zählweise: `README.md`.
 
-**Stand 09.10.2026, Korrektur Etappe 1d (bauende Sitzung).** Eine Tabelle für jeden Satz der alten Seite und der zugeordneten Handouts (Korrektur 1b, E). Sie ersetzt die abschnittsweisen Tabellen vom 08.10.2026 und den Abschnitt «Satz für Satz» der ersten Korrektur; wo diese sich widersprachen, gilt die Zeile hier. Statuswerte, Zählweise und Skripte: `README.md`.
+**Stand 09.10.2026, Korrektur Etappe 1e (bauende Sitzung).** Eine Tabelle für jeden Satz der alten Seite und der zugeordneten Handouts (Korrektur 1b, E). Sie ersetzt die abschnittsweisen Tabellen vom 08.10.2026 und den Abschnitt «Satz für Satz» der ersten Korrektur; wo diese sich widersprachen, gilt die Zeile hier. Statuswerte, Zählweise und Skripte: `README.md`.
 
 **Korrektur 1c:** Zeilen zu K-1 bis K-5 nachgeführt; Status und Bemerkungen der Stichprobe aus den Belegen der dritten Prüfrunde (Abschnitt 4) berichtigt.
 
-**Zählung:** 710 Sätze, davon 147 übernommen, 72 gekürzt, 91 zusammengeführt, 66 verschoben, 12 geändert, 311 entfällt, 11 Bezeichnung.
+**Zählung:** 710 Sätze des Bestands, davon 147 übernommen, 72 gekürzt, 91 zusammengeführt, 66 verschoben, 12 geändert, 311 entfällt, 11 Bezeichnung.
 
 - **Satz (Bestand):** Bestandstext in Sätze zerlegt, Listenpunkte und Zwischentitel als eigene Zeile. Die Nummer bleibt fest, damit Prüfberichte sie zitieren können. Gleiche Sätze aus Seite und Handout stehen je in ihrer Zeile.
 - **Neue Fassung:** der Satz der neuen Seite, der die Aussage trägt; «wörtlich», wenn er gleich lautet; «–», wenn der Satz entfällt oder auf eine spätere Seite vorgemerkt ist.

@@ -1,13 +1,14 @@
 # Abgleich · Borderline-Website, Etappe 1
 
-Beleg für W1 nach UMBAUPLAN, Abschnitt 5: Jeder Satz des Bestands ist übernommen, gekürzt, zusammengeführt, verschoben, geändert oder mit Grund entfallen. Erstellt von der bauenden Sitzung am 08.10.2026, nachgeführt am 09.10.2026 (Korrektur Etappe 1, 1b, 1c und 1d). Das ist ein Arbeitsstand, keine Prüfung.
+Beleg für W1 nach UMBAUPLAN, Abschnitt 5: Jeder Satz des Bestands ist übernommen, gekürzt, zusammengeführt, verschoben, geändert oder mit Grund entfallen. Erstellt von der bauenden Sitzung am 08.10.2026, nachgeführt am 09.10.2026 (Korrektur Etappe 1, 1b, 1c, 1d und 1e). Das ist ein Arbeitsstand, keine Prüfung.
 
 - `index.md` · `/`, `/selbsttest`, `/wegweiser`
 - `verstehen.md` · `/verstehen` ohne Diagnostik-Teil, sechs Handouts; der Teil «Materialien zum Vertiefen» (Z. 277–396) steht seit Korrektur 1c am Ende der Tabelle (Nr. 474–540)
-- `beziehungen.md` · `/verstehen/beziehungen`
+- `beziehungen.md` · `/verstehen/beziehungen`; seit Korrektur 1e mit Zeilen für Sätze der neuen Seite ohne Bestandssatz am Ende (Nr. 233–248)
 - `grenzen.md` · `/grenzen`, acht Handouts, zwei Übungsszenarien
 - `kennzahlen.mjs` · Wörter, Absicherungen und Semikolons alt und neu (ohne Abhängigkeiten)
 - `pruefe-abgleich.mjs` · prüft die Tabellen gegen die gebauten Seiten (ohne Abhängigkeiten)
+- `verneinung.mjs` · Sätze mit Verneinung alt und neu, mit `--seite <id>` je Abschnitt und mit den gezählten Sätzen (ohne Abhängigkeiten; seit Korrektur 1e)
 - `bedienung.mjs` · Tabstopps, Seitenhöhen und Pfeile der Bedeutungsschleife im Browser, gemessen nach dem Laden der Webschriften (braucht Playwright und einen lokalen Server)
 
 **Grundlage:** Branch `borderline-bestand`, `bestand/borderline-angehoerige/` (`INVENTAR.md`, `texte/`), erhoben aus Commit `5c8471c` der alten Website. Die beiden ersten Skripte lesen den Bestand mit `git show origin/borderline-bestand:…` oder aus einem Ordner (`--bestand <ordner>`).
@@ -21,7 +22,7 @@ Je Seite eine Tabelle «Satz für Satz» mit jedem Satz der alten Seite und der 
 - **Ort neu:** `seite#abschnitt` (Abschnitts-ID der gebauten Seite, `kopf`, `kapitel`), `Fusszeile` oder «seite (Etappe 2)».
 - **Zustandekommen:** Ein Skript der bauenden Sitzung zerlegt den Bestand in Sätze und schlägt je Satz den ähnlichsten Satz im Zielabschnitt vor. Status, Zielabschnitt und jede schwache Zuordnung sind von Hand gesetzt und geprüft. Ob der genannte Satz die Aussage wirklich trägt, ist Gegenstand der Prüfung.
 
-**Prüfung der Tabellen:** `node abgleich/pruefe-abgleich.mjs`. Ergebnis am 09.10.2026 nach Korrektur 1d: **1739 Zeilen, 0 ohne Fundstelle.** Das Skript liest auch Text nur für Screenreader (`.puk-sr`, Kurzbeschreibungen der Bildlegenden), denn er steht auf der Seite. Geprüft wird je Zeile:
+**Prüfung der Tabellen:** `node abgleich/pruefe-abgleich.mjs`. Ergebnis am 09.10.2026 nach Korrektur 1e: **1755 Zeilen, 0 ohne Fundstelle** (1739 Bestandszeilen und 16 Zeilen ohne Bestandssatz auf `beziehungen`). Das Skript liest auch Text nur für Screenreader (`.puk-sr`, Kurzbeschreibungen der Bildlegenden), denn er steht auf der Seite. Geprüft wird je Zeile:
 
 - Den Ort gibt es.
 - Die neue Fassung steht dort wörtlich.
@@ -37,8 +38,10 @@ Je Seite eine Tabelle «Satz für Satz» mit jedem Satz der alten Seite und der 
 | zusammengeführt | Aussage steht an anderer Stelle, zusammen mit gleichem Inhalt aus einer anderen Quelle. |
 | verschoben | Aussage steht auf dieser Website an anderer Stelle, oder sie gehört laut Plan auf eine andere Seite und erscheint dort, wenn die Seite gebaut ist («seite (Etappe 2)»). |
 | geändert | Aussage steht mit verändertem Inhalt, auf Auftrag (Korrektur Etappe 1, 1b, 1c oder 1d) oder als natürlichere Fassung eines Beispiels (S-5). Der Grund steht in der Bemerkung. |
+| umformuliert (einfache Sprache, 1e) | Seit Korrektur 1e: Der Satz, der die Aussage trägt, ist in der Neufassung von `beziehungen` anders formuliert (`KORREKTUR-ETAPPE-1E.md`, Abschnitt 2). Die neue Fassung steht in der Tabelle; der frühere Status steht in der Bemerkung («bis 1d: …»), ebenso Teile, die weiterhin entfallen. Steht der Bestandssatz oder sein behaltener Teil nach 1e wieder unverändert da, bleibt der frühere Status. Gilt auch für Zeilen anderer Seiten mit Ort auf `beziehungen` und, mit «–» als Bestandssatz, für Verweise und einen Satz, die schon bis 1d ohne Bestandszeile auf der Seite standen. |
 | entfällt | Aussage erscheint nicht mehr. Mögliche Gründe: <ul><li>Meta-Text oder Handout-Rahmen</li><li>Profil (Krisenzugang, Telefonnummern)</li><li>Entscheid der Fachstelle (Personenbilder, Handouts)</li><li>Wiederholung</li><li>Kürzung für den Richtwert: «Kürzung W2-2» ab 09.10.2026, «Kürzung Umfang (Korrektur 1b)» in der zweiten Korrektur; Korrektur 1c kürzt nicht</li></ul> |
 | Bezeichnung | Überschrift, Kicker, Eintrag der Kapitelübersicht oder Stichwort ohne eigene Aussage. Ohne Ort, wenn die Bezeichnung nicht mehr vorkommt. |
+| neu (1e) | Seit Korrektur 1e: Satz der neuen Seite `beziehungen` ohne Bestandssatz, zum Beispiel Beispielsätze zu «Was Sie tun können», «Das kann kränken» oder der Hinweis auf die Beratung. «Satz (Bestand)» ist «–». |
 
 ## Wörter und Absicherungen
 
@@ -51,40 +54,45 @@ Gemessen wird an der alten Seite allein, nicht an Seite plus Handouts. So verlan
 - **Alt:** Bestandstext der alten Seite (`texte/<route>.md`). Ohne den Kopfblock der Erhebung, ohne Klammermarken («[Akkordeon: …]») und ohne Bild- und Linkadressen. Vorschautexte geschlossener Akkordeons zählen mit.
 - **Absicherungen:** «kann», «können», «könnte», «könnten», «kannst», Wörter mit «möglich…», «vielleicht», «nicht sicher» und «nicht automatisch», je 100 Wörter.
 - **Semikolons:** im Fliesstext. Absätze, die mit «Quellen», «Bezug…», «Grundlage» oder «Eigene didaktische Darstellung» beginnen, zählen nicht.
+- **Sätze mit Verneinung** (seit Korrektur 1e, `node abgleich/verneinung.mjs`): Text wie bei den Wörtern, neu je Blockelement (`p`, `li`, `dt`, `dd`, `h1`–`h3`, `summary`, `figcaption`), alt je Zeile des Bestands, mit derselben Satzzerlegung wie der Abgleich. Gezählt wird ein Satz, der «nicht», «nichts», «nie», «niemals», «niemand», «weder» oder eine Form von «kein» enthält. Überschriften und Bezeichnungen zählen als Satz.
 
 **Nachgerechnet (F-K-03):** Das Skript ergibt am Stand `2a4abb2` genau die Werte der zweiten Prüfrunde: 1301 / 1112 / 1510 Wörter und 2,15 / 2,70 / 1,79 Absicherungen je 100 Wörter.
 
 Die damals berichteten 1299 / 1099 / 1500 waren zu tief. Die Zählung der bauenden Sitzung hatte Bezeichnungen in eigenen `span` ohne Leerzeichen an das nächste Wort gehängt, zum Beispiel «Station 1 · Schwester» an «Ereignis» oder «Beispiel» an den Beispielsatz.
 
-**Stand 09.10.2026, nach Korrektur 1d:**
+**Stand 09.10.2026, nach Korrektur 1e:**
 
 | Seite | Alt: Seite allein | Neu | Neu / alt | Richtwert | Richtwert + 5 % | Absicherungen je 100 Wörter alt → neu | Semikolons im Fliesstext alt → neu |
 | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
 | `index` | 433 | 238 | 55 % | – | – | 1,85 → 1,68 | 1 → 0 |
-| `verstehen` | 2524 | 1461 | 58 % | 1300 | 1365 | 2,54 → 2,81 | 12 → 0 |
-| `beziehungen` | 2149 | 1164 | 54 % | 1100 | 1155 | 3,82 → 3,69 | 6 → 1 |
+| `verstehen` | 2524 | 1456 | 58 % | 1300 | 1365 | 2,54 → 2,82 | 12 → 0 |
+| `beziehungen` | 2149 | 1564 | 73 % | 1100 | 1155 | 3,82 → 4,48 | 6 → 1 |
 | `grenzen` | 2985 | 1554 | 52 % | 1500 | 1575 | 2,41 → 2,06 | 4 → 0 |
 
 **Lesart:**
 
-- **Richtwert:** Er gilt nicht: «Der Richtwert für die Länge gilt nicht. Nicht kürzen, um Wörter auszugleichen.» (`KORREKTUR-ETAPPE-1D.md`, Abschnitt 4; ebenso 1C, Abschnitt 1). Die Wortzahlen werden nur berichtet. Über die Länge entscheidet die Fachstelle in W1.
+- **Richtwert:** Er gilt nicht: «Der Richtwert für die Länge gilt nicht. Nicht kürzen, um Wörter auszugleichen.» (`KORREKTUR-ETAPPE-1D.md`, Abschnitt 4; ebenso 1C, Abschnitt 1). Für `beziehungen` sagt `KORREKTUR-ETAPPE-1E.md`, Abschnitt 2: «Die Seite wird länger (geschätzt +25 %); das ist so gewollt.» Die Wortzahlen werden nur berichtet. Über die Länge entscheidet die Fachstelle in W1.
+- **Korrektur 1e:** `beziehungen` 1164 → 1564 Wörter (+400, +34 %; Auftrag: geschätzt +25 %). Je Abschnitt vor → nach 1e: Kopf und Kapitelübersicht 43 → 70, `verbindung` 70 → 80, `schleife` 242 → 272, `verstaerker` 284 → 470, `zwei-sichten` 238 → 276, `was-hilft` 89 → 159, `verantwortung` 198 → 237. Absicherungen 3,69 → 4,48 je 100 Wörter: Die neuen Sätze enthalten «kann» und «können» (zum Beispiel «Eine kurze, verlässliche Ankündigung kann helfen», «Sie können die Person ermutigen …»); sie sind Wortlaut des Auftrags. `verstehen` 1461 → 1456: Stelle 2 hat kein eigenes «Was hilft» mehr (1E, Abschnitt 3).
+- **Sätze mit Verneinung auf `beziehungen`** (Zählweise oben): Bestand 60 von 251 Sätzen (24 %); vor 1e (Stand `4bf98ab`) 31 von 127 (24 %); nach 1e 33 von 167 (20 %). Die Zahl der Sätze mit Verneinung ist also nicht gesunken (+2), ihr Anteil schon, weil die neuen Sätze meist ohne Verneinung sind. Die übrigen Seiten nach 1e: `index` 3 von 24, `verstehen` 38 von 179, `grenzen` 43 von 200.
 - **Kurzbeschreibungen nicht mehr gezählt:** Sie stehen seit Korrektur 1d nur für Screenreader (D-2). Das sind 95 Wörter auf `verstehen`, 34 auf `beziehungen` und 20 auf `grenzen`.
 - **Veränderung gegenüber Korrektur 1c** (1379 / 1198 / 1574, damals mit Kurzbeschreibungen):
-  - `verstehen` 1461 sichtbare Wörter; mit Kurzbeschreibungen wären es 1556, also +177. Davon `anspannung` +113 (neue Abbildung 2 mit Liste, Beispielen und Vertiefung, D-3, und «Was hilft» bei Stelle 2, 14 Wörter) und `einordnung` +66 (Bestand «Verstehen hat Grenzen» und Merksatz, D-4).
-  - `beziehungen` 1164 und `grenzen` 1554: nur die Kurzbeschreibungen fallen aus der Zählung, der sichtbare Text ist gleich.
-- **Absicherungen auf `verstehen`:** 2,54 → 2,81. Die neuen Texte aus D-3 und D-4 enthalten «kann», «können» und «könnten» (zum Beispiel «Anspannung kann im Gespräch ansteigen …», «… entschärfen könnten»); sie sind Wortlaut des Auftrags.
+  - `verstehen` 1461 sichtbare Wörter nach 1d; mit Kurzbeschreibungen wären es 1556, also +177. Davon `anspannung` +113 (neue Abbildung 2 mit Liste, Beispielen und Vertiefung, D-3, und «Was hilft» bei Stelle 2, 14 Wörter) und `einordnung` +66 (Bestand «Verstehen hat Grenzen» und Merksatz, D-4).
+  - `beziehungen` 1164 (nach 1d) und `grenzen` 1554: nur die Kurzbeschreibungen fallen aus der Zählung, der sichtbare Text ist gleich.
+- **Absicherungen auf `verstehen`:** 2,54 → 2,81 nach 1d, 2,82 nach 1e. Die neuen Texte aus D-3 und D-4 enthalten «kann», «können» und «könnten» (zum Beispiel «Anspannung kann im Gespräch ansteigen …», «… entschärfen könnten»); sie sind Wortlaut des Auftrags.
 - **Quote:** Die Quote «Neu / alt» misst nicht, wie stark gekürzt wurde. Die alte Seite enthält Teile, die nach Etappe 2 gehen, und Meta-Text. Die zweite Prüfrunde hat deshalb einen vergleichbaren Kern berechnet (Belege b, Abschnitt 4).
 
-**Bedienung (`node abgleich/bedienung.mjs`, Chromium, 09.10.2026, nach Korrektur 1d):** Tabstopps bei 1280 × 900 px mit Tab ab Seitenanfang. Seitenhöhe ist `document.documentElement.scrollHeight` bei 360 × 800 px, gemessen nach `load` und `document.fonts.ready`.
+**Bedienung (`node abgleich/bedienung.mjs`, Chromium, 09.10.2026, nach Korrektur 1e):** Tabstopps bei 1280 × 900 px mit Tab ab Seitenanfang. Seitenhöhe ist `document.documentElement.scrollHeight` bei 360 × 800 px, gemessen nach `load` und `document.fonts.ready`.
 
 | Seite | Tabstopps ohne Fusszeile | Seitenhöhe bei 360 px | höchste Figur bei 360 px |
 | --- | ---: | ---: | --- |
 | `index` | 10 | 3863 px | – |
-| `verstehen` | 19 | 16 954 px | Annahmen 3714 px |
-| `beziehungen` | 15 | 12 737 px | Zwei Sichten 2359 px |
+| `verstehen` | 19 | 16 854 px | Annahmen 3714 px |
+| `beziehungen` | 16 | 15 137 px | Zwei Sichten 2359 px |
 | `grenzen` | 21 | 16 413 px | DEAR 1791 px |
 
-Gegenüber Korrektur 1c: Die Kurzbeschreibungen der Bildlegenden sind nicht mehr sichtbar (alle Seiten mit Figuren niedriger), die Fusszeile ist länger (neuer Zuständigkeitsverweis, auf `index` +24 px), auf `verstehen` kommen Abbildung 2 neu und Abschnitt 07 mit Merksatz dazu.
+Gegenüber Korrektur 1d (Korrektur 1e): `beziehungen` hat einen Tabstopp mehr (Link «Beratung der Fachstelle Angehörigenarbeit» in `verantwortung`) und ist bei 360 px 2400 px höher (12 737 → 15 137 px, längerer Text); `verstehen` ist 100 px niedriger (Stelle 2 ohne «Was hilft»).
+
+Gegenüber Korrektur 1c (Korrektur 1d): Die Kurzbeschreibungen der Bildlegenden sind nicht mehr sichtbar (alle Seiten mit Figuren niedriger), die Fusszeile ist länger (neuer Zuständigkeitsverweis, auf `index` +24 px), auf `verstehen` kommen Abbildung 2 neu und Abschnitt 07 mit Merksatz dazu.
 
 Die Fusszeile hat keinen Tabstopp. Die früher berichteten 40 Tabstopps auf `grenzen` waren falsch gezählt (F-K-03). Der 21. Tabstopp auf `grenzen` ist der Link «Opferhilfe Schweiz» (K-1).
 
@@ -159,7 +167,25 @@ Grundlage: fachliche Durchsicht von `verstehen` durch die Fachstelle (09.10.2026
 | Zuständigkeitsverweis | neuer Wortlaut in `site.config.json` › `responsibility.text`, `reviewedAt` 09.10.2026; `inline` unverändert; auf allen 15 Seiten in der Fusszeile | `KORREKTUR-ETAPPE-1D.md`, Abschnitt 1 und D-1 |
 | Kurzbeschreibung in der Bildlegende | `p.puk-sr` bei allen 8 Figuren, weiter über `aria-describedby` verbunden; sichtbar bleiben Kennzeichnung und Quelle; «Leserichtung» der Schleife bleibt sichtbar | D-2; Leitlinie 07 (Profil-Update) |
 | Abbildung 2 | «Die Anspannungskurve: wann Reden hilft» statt der Achse mit drei Bereichen; Texte im Wortlaut des Auftrags; die beiden Fachbegriffe der früheren Achse kommen auf keiner Seite mehr vor | D-3; Entscheid der Fachstelle, 09.10.2026 |
-| «Was hilft» bei Stelle 2 | Der Auftrag sah dort nur den Ansatzpunkt vor; der frühere Satz entfiel zuerst und war als Prüfbedarf gemeldet. Auf Entscheid der Fachstelle steht wieder «Was hilft: Argumentieren Sie nicht weiter, sprechen Sie langsamer und machen Sie weniger Druck.» vor dem Ansatzpunkt | Entscheid der Fachstelle, 09.10.2026 (Chat); `verstehen.md`, Prüfbedarf 9 |
+| «Was hilft» bei Stelle 2 (überholt durch Korrektur 1e, Abschnitt 3) | Der Auftrag sah dort nur den Ansatzpunkt vor; der frühere Satz entfiel zuerst und war als Prüfbedarf gemeldet. Auf Entscheid der Fachstelle steht wieder «Was hilft: Argumentieren Sie nicht weiter, sprechen Sie langsamer und machen Sie weniger Druck.» vor dem Ansatzpunkt | Entscheid der Fachstelle, 09.10.2026 (Chat); `verstehen.md`, Prüfbedarf 9 |
 | Abschnitt 07 | Bestand «Verstehen hat Grenzen» wörtlich, Merksatz als `div.puk-longform__reflection` | D-4 |
 | Selbsttest-Kopie | `tools/selftest/` der Website wie im Starter nachgezogen (vier Dateien aus dem Profil-Update); Selbsttest 50/50 | Profil-Update 2026-10-09b |
 | `kennzahlen.mjs` | Text nur für Screenreader (`.puk-sr`) zählt nicht als sichtbares Wort | D-2 |
+
+## Korrektur Etappe 1e: Entscheide der Aufträge und Umsetzung (09.10.2026)
+
+Grundlage: fachliche Durchsicht von `beziehungen` durch die Fachstelle (Chat, 09.10.2026), `KORREKTUR-ETAPPE-1E.md`. Die Zeile «Was hilft» bei Stelle 2 der Tabelle zu Korrektur 1d ist damit überholt.
+
+| Thema | Umsetzung | Quelle |
+| --- | --- | --- |
+| `beziehungen` in einfacher Sprache | alle Texte von Kopf und Abschnitt 01 bis 06 im Wortlaut des Auftrags; unverändert: Oberzeile, H1, Seitentitel, Abbildung 1 ausser Kurztext und Text des Ansatzpunkts, Abbildung 2, Quellenliste | `KORREKTUR-ETAPPE-1E.md`, Abschnitt 1, 2 und 4 |
+| «Was Sie tun können» | 8 Absätze `<p><strong>Was Sie tun können:</strong> …</p>`: 01, 04 und 06 im Fliesstext, in 03 je als zweiter Absatz im `dd` (fünf Einträge); kein neues CSS. Gemessen: Absätze im `dd` 21 px wie der Fliesstext, 20 px Abstand darunter | Abschnitt 2 |
+| Bezeichnungen | Kicker 01 «Was verbindet», 03 «Was Reaktionen verschärfen kann», 05 «Was helfen kann»; Titel 03 «Was den Spielraum zwischen Anlass und Reaktion verengen kann», 05 «Was die Beziehung stärken kann»; Station 5 «Wenn es bei anderen besser klappt»; Kapitelübersicht wie die Kicker. Die Bezeichnungen stehen nicht in der Tabelle, weil sie keine Sätze sind; bis 1d hiessen sie «Ressourcen», «Einflüsse», «Handlungsspielraum», «Was den Spielraum zwischen Ereignis und Reaktion verengen kann», «Was Verbindung tragfähiger machen kann» und «Dass etwas anderswo gelingt, beweist weder Täuschung noch Ursache» | Abschnitt 4 |
+| Links | Ziele wie bisher: `verstehen.html#anspannung`, `#bewertungen`, `grenzen.html#gewalt`; neu `index.html#beratung` in `verantwortung`, gleiche Form wie auf `grenzen` › `kontakt` | Abschnitt 4 |
+| Verweis im Text | `<p data-responsibility-inline></p>` unverändert direkt nach «… Dann braucht es eine fachliche Einschätzung.» | Abschnitt 4 und 5 |
+| W1-7 | «alle Regulation übernehmen» wird auf dieser Seite «alle schwierigen Gefühle auffangen»; die Fachstelle prüft das beim Lesen | Abschnitt 2 |
+| `verstehen`, Abbildung 2, Stelle 2 | Ansatzpunkt «Argumentieren Sie nicht weiter und machen Sie weniger Druck. Senken Sie Ihr eigenes Tempo, achten Sie auf Ihre eigene Anspannung und bieten Sie eine Pause an. Sie müssen die andere Person nicht beruhigen.»; kein eigenes «Was hilft». Die Fassung aus 1d mit «Was hilft» war schon umgesetzt; auf Rückfrage in der bauenden Sitzung am 09.10.2026 ist die Fassung aus 1E gewählt | Abschnitt 3 |
+| `visualPlan` | Abschnittsnamen und Ziele von 01, 03, 05 an die neuen Bezeichnungen angeglichen; Zitate aus Kurztext und Ansatzpunkt der Schleife im neuen Wortlaut; Stelle 2 der Anspannungskurve ohne «Was hilft» | Abschnitt 3 und 4 |
+| Abgleich | neue Statuswerte «umformuliert (einfache Sprache, 1e)» und «neu (1e)» (oben); 62 Bestandszeilen auf `beziehungen` und 9 auf `verstehen` umformuliert, 16 Zeilen ohne Bestandssatz angehängt | Abschnitt 2 |
+| `verneinung.mjs` | zählt Sätze mit Verneinung alt und neu (oben) | Abschnitt 5 |
+
