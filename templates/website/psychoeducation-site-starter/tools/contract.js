@@ -8,7 +8,7 @@
 })(typeof self !== 'undefined' ? self : this, function () {
 'use strict';
 const VERSION = 'PUK Website Kit 1.10.1-r4 · abgeleitet';
-const BUILD = 'r4-4';
+const BUILD = 'r4-5';
 const FORMATS = ['text', 'figure', 'process', 'cycle', 'comparison', 'decision', 'illustration', 'stepwise-model', 'tension-field', 'relationship-map', 'continuum', 'layer-model'];
 /* Interaktive Komponenten und Erklärmuster G brauchen components/interaktion.js (HTML-Fassungen ohne React). */
 const INTERACTIVE = ['data-puk-accordion', 'data-puk-tabs', 'data-puk-disclosure', 'data-puk-dialog-open', 'data-vis-build'];
@@ -25,7 +25,7 @@ const REVIEW_WARNINGS = ['orthography', 'swiss-context', 'person-first', 'card-g
 const ENTRY_FORMATS = ['cycle', 'process', 'stepwise-model'];
 /* Profilentscheid 08.10.2026: Bauen und Prüfen sind getrennt; ohne vollständigen Prüfbericht (PRUEFBERICHT.md im Ordner der Website) keine Veröffentlichung.
    Status je Stufe: «erledigt» oder «entfällt: Begründung»; alles andere gilt als offen. */
-const REPORT_STAGES = [['W1', /^w1\b/i], ['W2', /^w2\b/i], ['S', /^s\b/i], ['Visualisierungs-Check', /^visualisierungs-check/i], ['Bedienung und Barrierefreiheit', /^bedienung/i], ['W3', /^w3\b/i]];
+const REPORT_STAGES = [['W1', /^w1\b/i], ['W2', /^w2\b/i], ['S', /^s\b/i], ['Visualisierungs-Check', /^visualisierungs-check/i], ['Bedienung und Barrierefreiheit', /^bedienung/i], ['W3', /^w3\b/i], ['R1 Profil-Audit', /^r1(?![-\w])/i], ['R2 Visualisierung und Laienverständlichkeit', /^r2(?![-\w])/i], ['R3 Freigabe-Audit', /^r3(?![-\w])/i]];
 function reportStatus(md) {
   const rows = String(md || '').split(/\r?\n/).filter(l => /^\s*\|/.test(l)).map(l => l.trim().replace(/^\||\|$/g, '').split('|').map(c => c.trim()));
   const open = [];
@@ -425,6 +425,9 @@ function selftest(cfg, files, opts = {}) {
   rows.push({ name: 'Produktion ohne Prüfbericht blockiert', expected: 'review-report', got: noRep ? 'review-report' : 'nicht erkannt', ok: noRep });
   const fullRep = gate(cfg, files, { mode: 'production', exists: base, report: done }).findings.some(x => x.id === 'review-report');
   rows.push({ name: 'Vollständiger Prüfbericht gibt die Veröffentlichung frei', expected: 'kein review-report', got: fullRep ? 'review-report' : 'kein review-report', ok: !fullRep });
+  const noR3 = done.split('\n').filter(l => !/^\|\s*R3\b/i.test(l)).join('\n') + '\n| R3 Freigabe-Audit | offen |';
+  const r3open = gate(cfg, files, { mode: 'production', exists: base, report: noR3 }).findings.some(x => x.level === 'block' && x.id === 'review-report' && /R3/.test(x.message || x.msg || ''));
+  rows.push({ name: 'Produktion blockiert ohne «Go» im Freigabe-Audit R3', expected: 'review-report (R3)', got: r3open ? 'review-report (R3)' : 'nicht erkannt', ok: r3open });
   { const c = JSON.parse(JSON.stringify(cfg)); const f = Object.assign({}, files); c.responsibility = Object.assign({}, c.responsibility, { inline: { text: INLINE_T, reviewStatus: 'ausstehend' } });
     const ok = rep(f, 'beziehungen-verstehen.html', '</main>', `<section id="x-inline"><p class="puk-longform__boundary" data-responsibility-inline>${INLINE_T}</p></section></main>`);
     const hitI = ok && gate(c, f, { mode: 'production', exists: base }).findings.some(x => x.level === 'block' && x.id === 'inline-review');
