@@ -22,11 +22,16 @@ Ein Ablauf für alle Websites der Fachstelle – von der Planung bis zur Veröff
 
 ## Bauen und Prüfen getrennt
 
-Profilentscheid 08.10.2026, nach dem ersten Probelauf: Das Gate bestand, die Abbildungen hatten trotzdem didaktische Mängel – gefunden erst bei einer Prüfung Punkt für Punkt. Bestehen ist nicht dasselbe wie gut. Deshalb gelten drei Regeln:
+Profilentscheid 08.10.2026, nach dem ersten Probelauf: Das Gate bestand, die Abbildungen hatten trotzdem didaktische Mängel – gefunden erst bei einer Prüfung Punkt für Punkt. Bestehen ist nicht dasselbe wie gut. Deshalb gelten vier Regeln:
 
 1. **Selbstprüfung nach jedem Bau, ohne Nachfrage.** Die bauende Sitzung füllt den Visualisierungs-Check im Prüfbericht als Tabelle aus: je Punkt Ergebnis und Beleg (Seite und Abschnitt, Figur, Zitat). Ein Punkt ohne Beleg gilt als nicht geprüft; ein Gesamturteil ersetzt keine Einzelprüfung. Die Selbstprüfung ist ein Arbeitsstand, keine Prüfstufe.
 2. **Prüfen in einer eigenen Sitzung.** Die Stufen 1 bis 6 prüft eine Sitzung oder Person, die die Website nicht gebaut hat. Wer prüft, ändert keine Inhalte und keinen Code, sondern trägt Befunde mit Beleg ein; fachliche Fragen werden als «Prüfbedarf» markiert. Fachliche Freigaben trägt nur die Fachstelle ein.
 3. **Kein Merge ohne Prüfbericht.** Ein Pull Request mit einer neuen oder geänderten Website enthält den Prüfbericht im aktuellen Stand und nennt in der Beschreibung die offenen Stufen. Solange Stufen offen sind, bleibt er ein Entwurf. Veröffentlicht wird nur mit vollständigem Prüfbericht; das Produktionsgate blockiert sonst.
+4. **Prüftiefe** (Profilentscheid 09.10.2026, nach der Prüfung der Borderline-Website: Eine zweite, unabhängige Prüfung fand deutlich mehr als die erste, darunter still entfallene Aussagen und eine geschönte Kürzungsquote).
+   - Bei Umbauten vergleicht W1 mindestens **20 Aussagen je Etappe** mit dem Bestand, über alle Seiten und Figuren verteilt, und prüft an diesen Stellen den Abgleich Satz für Satz.
+   - **Kennzahlen der bauenden Sitzung** (Kürzungsquote, Wortzahlen, Messungen) werden nachgerechnet, nicht übernommen.
+   - Der Visualisierungs-Check wird **je Figur** ausgefüllt (Matrix Prüfpunkt × Figur), nicht nur je Prüfpunkt.
+   - Für die W1-Vorprüfung und den Visualisierungs-Check wird eine **zweite, unabhängige Prüfsitzung** empfohlen, die die erste nicht kennt. Die Befunde werden zusammengeführt; jeder Befund nennt seine Quelle (Prüfung 1, 2 oder beide).
 
 **Prüfbericht:** `PRUEFBERICHT.md` im Ordner der Website (Vorlage im Starter). Er enthält die Statustabelle der Stufen 1 bis 6 («offen», «erledigt» oder «entfällt: Begründung»), den Visualisierungs-Check als Tabelle und die Befunde je Stufe.
 
@@ -39,6 +44,8 @@ nach den Kriterien der jeweiligen Leitlinie, Punkt für Punkt. Trage je Punkt Er
 Beleg (Seite und Abschnitt, Figur, Zitat) in PRUEFBERICHT.md ein. Ändere keine Inhalte und
 keinen Code; fachliche Fragen markierst du als «Prüfbedarf». Setze eine Stufe nur auf
 «erledigt», wenn alle Punkte mit Beleg geprüft sind und keine offenen Befunde bleiben.
+Bei Umbauten: Vergleiche mindestens 20 Aussagen mit dem Bestand. Rechne Kennzahlen der
+bauenden Sitzung nach. Fülle den Visualisierungs-Check je Figur aus.
 Committe nur den Prüfbericht.
 ```
 

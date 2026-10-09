@@ -55,7 +55,7 @@ Bei psychischer Erkrankung ist schon der Seitenbesuch eine sensible Information.
 - Darstellung auf Smartphone, Tablet und Desktop konsistent; die im S-Protokoll markierten Stellen mit erhöhtem Platzbedarf laufen auch schmal nicht über.
 - **Druck:** Angehörige drucken Inhalte oft aus. `components/bundle.css` enthält die Druckregeln: Navigation, Skip-Link und Bedienelemente ausgeblendet, Akkordeons und Reiter vollständig gedruckt, Link-Adressen hinter externen Links sichtbar, Darstellungen nicht über Seitenumbrüche geteilt, Schwarz auf Weiss.
 - Typografie technisch korrekt: Guillemets in Vorlagen und Komponenten, Silbentrennung für Deutsch (`hyphens: auto` mit `lang="de-CH"`) bei langen Wörtern in schmalen Spalten.
-- Der Zuständigkeitsverweis ist technisch an einer Stelle eingebunden (Fusszeilen-Vorlage bzw. `site.config.json`), nicht auf Seiten dupliziert.
+- Der Zuständigkeitsverweis ist technisch an einer Stelle eingebunden (Fusszeilen-Vorlage bzw. `site.config.json`), nicht auf Seiten dupliziert. Der Verweis im Text kommt ebenfalls aus `site.config.json` (`responsibility.inline`) und wird nur über den Platzhalter `<p data-responsibility-inline></p>` eingesetzt.
 
 ## G · Wartbarkeit
 

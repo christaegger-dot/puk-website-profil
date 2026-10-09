@@ -32,7 +32,7 @@ Regeln für den Aufbau mehrseitiger psychoedukativer Websites der Fachstelle Ang
 - Angehörige landen oft über eine Suche direkt auf einer Unterseite. Die wichtigsten Einstiegsseiten sind **für sich verständlich**: Einleitung, die das Thema einordnet; Fachbegriffe beim ersten Auftreten auf der Seite erklärt; Verweise auf vorausgesetzte Seiten.
 - Die Verlinkung unterstützt beides, die Aufbaulogik und den Quereinstieg (Lesepfade auf der Startseite, Kapitelorientierung, Verweise zwischen verwandten Seiten).
 - **Hinweis, dass die Website keine individuelle Abklärung, Beratung oder Behandlung ersetzt:** gut auffindbar auf jeder Seite. Im Starter `site.config.json` › `disclaimer`, erscheint in jeder Fusszeile.
-- **Zuständigkeitsverweis:** wenn vorhanden, genau einer an fester, von jeder Seite aus erreichbarer Stelle, knapp und ohne Nummern. Im Starter `site.config.json` › `responsibility`, erscheint in jeder Fusszeile (die Fusszeile gilt als eine Stelle). Zusätzliche Verweise auf einzelnen Seiten sind ein Befund; ein fehlender Zuständigkeitsverweis ist keiner.
+- **Zuständigkeitsverweis:** wenn vorhanden, genau einer an fester, von jeder Seite aus erreichbarer Stelle, knapp und ohne Nummern. Im Starter `site.config.json` › `responsibility`, erscheint in jeder Fusszeile (die Fusszeile gilt als eine Stelle). Zusätzliche Verweise auf einzelnen Seiten sind ein Befund – ausser dem Verweis im Text mit geprüftem Wortlaut direkt nach einer Handlungsanleitung für akute Lagen; ein fehlender Zuständigkeitsverweis ist keiner. Fehlt nach einer solchen Anleitung (z. B. «fragen Sie direkt nach Suizidgedanken») der nächste Schritt, ist das ein Befund.
 
 ## Lücken im Gesamtkonzept
 
