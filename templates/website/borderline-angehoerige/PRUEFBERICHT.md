@@ -13,12 +13,14 @@ Gehört zur Website in diesem Ordner. Wer den Starter kopiert, übernimmt diese 
 
 | Stufe | Status | Datum | Geprüft durch | Ergebnis |
 | --- | --- | --- | --- | --- |
-| W1 Fachliche Prüfung | offen | 09.10.2026 | Vorprüfung durch zwei Prüfsitzungen (Claude, haben nicht gebaut) | 8 Befunde, davon 1 schwer; Prüfbedarf für die Fachstelle. Freigabe nur durch die Fachstelle. |
-| W2 Gesamtkohärenz | offen | 09.10.2026 | zwei Prüfsitzungen | 7 Befunde |
-| S Sprach-Review | offen | 09.10.2026 | zwei Prüfsitzungen | 6 Befunde; abschliessbar erst nach W1 und W2 |
-| Visualisierungs-Check | offen | 09.10.2026 | zwei Prüfsitzungen | 12 Befunde, davon 2 schwer |
-| Bedienung und Barrierefreiheit | offen | 09.10.2026 | zwei Prüfsitzungen, automatisiert | 5 Befunde; reale Screenreader-Läufe fehlen |
+| W1 Fachliche Prüfung | offen | 09.10.2026 | zweite Prüfrunde: zwei Prüfsitzungen (Claude, haben nicht gebaut) | 5 mittel, 10 leicht; Prüfbedarf für die Fachstelle. Freigabe nur durch die Fachstelle. |
+| W2 Gesamtkohärenz | offen | 09.10.2026 | zweite Prüfrunde | 3 leicht |
+| S Sprach-Review | offen | 09.10.2026 | zweite Prüfrunde | 1 mittel, 3 leicht; abschliessbar erst nach W1 und W2 |
+| Visualisierungs-Check | offen | 09.10.2026 | zweite Prüfrunde | 3 mittel, 9 leicht |
+| Bedienung und Barrierefreiheit | offen | 09.10.2026 | zweite Prüfrunde, automatisiert | 2 leicht; reale Screenreader-Läufe fehlen |
 | W3 Code-Review | offen | | | erst nach Umsetzung von W2 und S |
+
+Dazu 2 mittlere und 3 leichte Befunde zu Bericht und Abgleich. Die erste Prüfrunde steht weiter unten zur Nachvollziehbarkeit; ihre Befunde sind durch die zweite Runde überholt.
 
 ## Selbstprüfung der bauenden Sitzung
 
@@ -125,7 +127,135 @@ Selbstprüfung als Matrix je Figur (Vorlage im Starter). E = erfüllt · T = tei
 **Nicht erfüllt oder offen (Selbstprüfung):** Punkt 14 bei allen Figuren (fachliche Freigabe). Teilweise: Punkt 3 (Annahmen, DEAR), Punkt 7 und 9 (Annahmen), Punkt 8 (Anspannung, Zwei Sichten, Annahmen). Offen für die Fachstelle: Bezugspunkte der Figuren (W1-6), alle fachlichen Freigaben, der Prüfbedarf in `abgleich/*.md`. Offen für Stufe 5: Screenreader-Läufe und Hardwaretastatur (B-5).
 
 
-## Prüfung durch die Prüfsitzungen (09.10.2026)
+## Zweite Prüfrunde (09.10.2026, korrigierte Fassung)
+
+**Geprüfter Stand:** PR #10 nach der Korrektur gemäss `KORREKTUR-ETAPPE-1.md` (Vorschau `deploy-preview-10`). Quellen und Seiten der Vorschau sind identisch mit dem Branch.
+
+**Vorgehen**
+
+- **Prüfung 2:** eigene Sitzung ohne Kenntnis der früheren Prüfungen und ohne Repositoryzugriff. 39 Aussagen aus allen vier Seiten mit dem Bestand verglichen, alle 8 Figuren bei 1280 und 360 px und im Theme «kontrast» angesehen, Kennzahlen nachgerechnet, axe, Überlauf, Zoom und Tastatur automatisiert. Ausführliche Belege: `PRUEFBERICHT-BELEGE-2026-10-09b.md`.
+- **Prüfung 1:** Chat-Sitzung, die die Website nicht gebaut, aber den Korrekturauftrag geschrieben hat. Sie hat 14 Befunde von Prüfung 2 am Seitentext, am Bestand und an Bildschirmfotos nachgeprüft und alle bestätigt. Eigene Befunde: siehe «Korrekturen an Befunden».
+- Build, Selbsttest und Produktionsgate konnte keine der beiden Prüfungen ausführen (kein Repositoryzugriff). Die Angaben der bauenden Sitzung dazu sind **nicht geprüft**.
+
+Quelle je Befund in Klammern: (2) nur Prüfung 2, (1+2) von Prüfung 1 nachgeprüft und bestätigt. Schweregrad wie in der ersten Runde.
+
+**Ergebnis:** Die Korrektur hat die schweren Befunde der ersten Runde behoben: Ansatzpunkt, Pendel, Brücke, Kontraste, Verweis im Text an allen drei Stellen. Kein schwerer Befund mehr. Freigabereif ist Etappe 1 noch nicht: 11 mittlere Befunde, vor allem zur Treue gegenüber dem Bestand und zu den Suizid-Aussagen.
+
+### Korrekturen an Befunden (Prüfung 1)
+
+- **Ursache von F-W1-01 und F-W1-02 ist der Korrekturauftrag.** W1-1 verlangte «keine Suizidgedanken auslöst» (über die Quelle hinaus) und nannte den Satz aus `lmk` ohne «nur», W1-3 mit «nur». Die bauende Sitzung ist dem Auftrag gefolgt.
+- **F-K-04 teilweise unzutreffend.** Die Fachstelle hat am 09.10.2026 im Chat entschieden: «Was nach der Suizidfrage folgt» entscheidet Claude. Der Wortlaut «Bleiben Sie [nur] bei der Person …» fällt darunter. Nicht übertragen war die Ausweitung von Annahme 6 auf «noch suizidale Handlungen». Die Navigation mit fünf Punkten ist ein Entscheid der Fachstelle (Umbauplan, Abschnitt 1).
+- **Entscheid zu «nur»** (übertragen, Prüfung 1, 09.10.2026): **mit «nur»**, wie im Bestand. Grund: Die Profilregel «Zuständigkeit statt Krisenzugang» weist Angehörigen keine Verantwortung für Krisenvermeidung zu. Ohne «nur» fordert der Satz zum Dableiben auf. Damit ist F-W1-02 entschieden; die fachliche Freigabe bleibt bei der Fachstelle.
+
+### Stand des ersten Korrekturauftrags
+
+38 Zeilen: 29 umgesetzt, 6 teilweise, 1 anders umgesetzt (Annahme 6), 1 nicht umgesetzt (Opferhilfe-Link), 1 nicht prüfbar (Build und Gate). Tabelle mit Beleg je Zeile: Belege, Abschnitt 1.
+
+### Visualisierungs-Check der Prüfsitzungen (zweite Runde)
+
+E = erfüllt · T = teilweise · N = nicht erfüllt · – = nicht anwendbar. Quelle: Prüfung 2; Prüfung 1 bestätigt die T beim Pendel (3, 8, 12) und bei der Schleife (8).
+
+| Nr. | Prüfpunkt | Eisberg | Anspannung | Pendel | Annahmen | Schleife | Zwei Sichten | Brücke | DEAR |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | Plan liegt vor, Seite entspricht ihm | E | T | T | E | E | E | E | E |
+| 2 | Zeile je Abschnitt; Begründungen passen | E | E | E | E | T | E | E | E |
+| 3 | Prüffrage beantwortet und eingelöst | E | T | T | E | E | T | E | E |
+| 4 | Kernaussage und Erklärtext | T | T | E | T | E | T | E | T |
+| 5 | Ansatzpunkt richtig gesetzt (B, C, G) | – | E | – | – | E | – | – | E |
+| 6 | Mechanismus nicht doppelt gezeigt | E | E | E | E | T | T | E | E |
+| 7 | Kartenraster-Check | E | E | E | T | E | E | E | E |
+| 8 | Form und Linien tragen Bedeutung | E | T | T | T | T | T | E | T |
+| 9 | Verteilt, keine Textwand | E | E | E | T | E | E | E | E |
+| 10 | Nicht verfälscht; Grenzen; Kennzeichnung | T | T | T | T | T | E | E | E |
+| 11 | Ohne Aufklappen und Skript verständlich | E | T | E | E | E | E | E | E |
+| 12 | 320 px lesbar; Textalternative | E | T | T | E | E | T | T | E |
+| 13 | Theme «Hoher Kontrast» | E | E | E | E | E | E | E | E |
+| 14 | Fachlich freigegeben | N | N | N | N | N | N | N | N |
+
+Die Selbstprüfung der bauenden Sitzung setzt fast überall E. Abweichungen: F-K-05.
+
+### Kennzahlen nachgerechnet (Prüfung 2)
+
+| Seite | Neu, bauende Sitzung | Neu, nachgerechnet | Richtwert | Absicherungen je 100 Wörter, nachgerechnet |
+| --- | ---: | ---: | ---: | --- |
+| `verstehen` | 1299 | 1301 | 1300 | 2,54 → 2,15 |
+| `beziehungen` | 1099 | 1112 | 1100 | 3,81 → 2,70 |
+| `grenzen` | 1500 | 1510 | 1500 | 2,40 → 1,79 |
+
+Gemessen am vergleichbaren Kern der alten Seite (ohne Teile, die in Etappe 2 gehen, und ohne Meta-Text) liegen die Seiten bei 74 %, 54 % und 57 % (ohne doppelt erfasste Auswahlansichten 64 %). Die Quote «51 %» misst deshalb nicht, wie stark gekürzt wurde.
+
+### Befunde (zweite Runde)
+
+**W1 Fachliche Prüfung** (Vorprüfung; Prüfbedarf für die Fachstelle)
+
+- **F-W1-01 · mittel · Annahme 6 geht über die Quelle hinaus (1+2).** «Direkt nachzufragen, löst nach heutigem Wissen weder Suizidgedanken noch suizidale Handlungen aus.» Die genannte Quelle (WHO 2026) belegt laut Bestand nur: löst keine suizidale Handlung aus. Zu Suizidgedanken sagt der Bestand vorsichtiger: kein statistisch signifikanter Anstieg (Dazzi et al. 2014). Der Nutzen («kann helfen, die Lage zu verstehen») fehlt.
+- **F-W1-02 · mittel · «Bleiben Sie bei der Person …» ohne «nur» (1+2).** Entschieden: mit «nur» (siehe oben).
+- **F-W1-03 · mittel · Still entfallene Aussagen, die der Abgleich als vorhanden ausweist (1+2):**
+  - `grenzen` › Erkennen: «Sie beweisen keine Grenzverletzung» und «Ein Signal sagt nicht automatisch, was die Ursache ist» (Handout `grenzen-erkennen`).
+  - `beziehungen` › Station 2: «das Erleben der betroffenen Person ist dennoch real» (`verstehen.md` Z. 68).
+  - `beziehungen` › Station 4: «aus dem Wechsel allein lässt sich weder eine Ursache noch eine Absicht ableiten» (`verstehen.md` Z. 70).
+  - `grenzen` › Rollen: «Welche Grenze passt, ist individuell und darf ohne moralische Bewertung entschieden werden.» (`grenzen.md` Z. 457).
+  - Der Abgleich verweist dreimal auf einen Eisberg-Kurztext «Aus einem Verhalten lässt sich kein bestimmtes Gefühl ablesen», den es nicht gibt.
+- **F-W1-04 · mittel · Bedeutungsänderungen, im Abgleich nicht aufgeführt (1+2):** «nicht automatisch unecht» → «nicht unecht» (Station 3); «keine, die Angehörige aus dem Verhalten allein feststellen können» → «das sich am Verhalten nicht feststellen lässt» (Station 4); «noch Ursache» → «noch Ihre Schuld» (Station 5).
+- **F-W1-05 · mittel · Absprache-Beispiel als Antwort auf Dissoziation (1+2).** Im Bestand gehört «Was soll ich übernehmen …» zu «Unterstützung kann erwünscht und schwer auszuhalten sein», nicht zur Dissoziation.
+- **F-W1-06 · leicht · Absicherungen auch bei Aussagen über die betroffene Person entfernt (2).** Gegen den Entscheid der Fachstelle. Belege: Abb. 2 `verstehen` («werden vorübergehend schwerer»), Abb. 3 («schlägt der Blick weiter aus»), Eisberg-Kernaussage («lässt sich erfragen, nicht ablesen»), «Ob dies im Einzelfall zutrifft, bleibt offen» gestrichen, `grenzen` «Viele Veränderungen gleichzeitig überfordern».
+- **F-W1-07 · leicht · Reihenfolge umgedeutet (2).** «emotional hoch / niedriger» wird «hohe / geringere Belastung»; neu «genügt oft eine klare Absprache».
+- **F-W1-08 · leicht · Annahme 2: wessen Druck und Angst (2).**
+- **F-W1-09 · leicht · DEAR verkürzt (2).** R ohne «für die andere Person» und «würdigen Sie Entgegenkommen»; E als Anweisung statt Erlaubnis.
+- **F-W1-10 · leicht · Kinderschutz als Beschreibung statt Regel (2).** `lmk`: «Der Schritt darf niemandem … entziehen».
+- **F-W1-11 · leicht · Quellenzuordnungen (2).** Ursachensatz neu mit Quellenzeile; Fruzzetti und Gunderson neu auf `beziehungen`; Bezugspunkte von Abb. 2 `verstehen`. Prüfbedarf für die Fachstelle.
+- **F-W1-12 · leicht · Neuer Satz «Auch die Sorge … greift zu kurz» (1+2).** Steht nicht im Bestand, schwächt ab, «Auch» ohne Bezug.
+- **F-W1-13 · leicht · Schutz, Schritt 2: «Holen Sie Hilfe. Bringen Sie sich in Sicherheit.» (1+2).** Im Bestand zuerst die Sicherheit, mit der Bedingung «Bei akuter Gefahr oder Unsicherheit».
+- **F-W1-14 · leicht · Präzisionsverluste (2):** «unter anderem», «klinischen», «signifikanten».
+- **F-W1-15 · leicht · Beispiel setzt eine Krisenabsprache voraus (1+2).** «… die Stelle, die wir für Krisen abgemacht haben»; die Empfehlung, solche Anlaufstellen zu vereinbaren, ist gestrichen.
+
+**W2 Gesamtkohärenz**
+
+- **F-W2-01 · leicht · Begriffe (2).** «Stress» neben «Anspannung»; «innerer Beziehungsalarm» neben «Alarm-Modus».
+- **F-W2-02 · leicht · Planbegründungen tragen nicht (2):** `v-vs-erleben`, `v-bz-was-hilft`.
+- **F-W2-03 · leicht · Beratung «vor Ort» ohne Ort (2).** Hinweis an die Fachstelle.
+
+**S Sprach-Review**
+
+- **F-S-01 · mittel · Bezugslücken aus dem Kürzen (2):** «Viele schwanken …» (Subjekt «Angehörige» fehlt), «deshalb» ohne Bezug (Station 3), «Auch die Sorge …», «Keine ‹perfekte› Reaktion repariert sie», «Sie kann Nähe und eigenen Raum …» (Rollen), «Aus Druck oder Angst …».
+- **F-S-02 · leicht · Telegrammstil in Figurentexten (2).**
+- **F-S-03 · leicht · Station 2 überladen; Sprecher eines Beispiels unklar (2).**
+- **F-S-04 · leicht · Einzelstellen (2):** «klärend … klären», Brücken-Kurztext, «Vier Arten» uneinheitlich.
+
+**Visualisierungs-Check**
+
+- **F-V-01 · mittel · Sicherheitshinweis nur in der Vertiefung (1+2).** `verstehen` › Abb. 2, «Grenzen des Modells»: «Bei Gefahr haben Abstand, Schutz und professionelle Hilfe Vorrang.» Im Bestand sichtbar («Bei Gefahr hat Schutz Vorrang.»).
+- **F-V-02 · mittel · Pendel zeigt den grösseren Ausschlag unter Stress nicht (1+2).** Eine einzige Auslenkung; «grösser» steht nur als Wort.
+- **F-V-03 · mittel · Pendel schmal ohne Zuordnung (1+2).** Unter 560 px vier lose Zeilen unter der Zeichnung; «unter Stress grösserer Ausschlag» wirkt wie eine vierte Lage.
+- **F-V-04 · leicht · Pfeilspitze 4 → 5 der Schleife verdeckt (1+2).**
+- **F-V-05 · leicht · Schleife ohne Modellgrenzen; «kann» und «wird» gemischt (2).**
+- **F-V-06 · leicht · Zwei Sichten: Stationsbezug uneinheitlich, schmal kein Vergleich (2).**
+- **F-V-07 · leicht · Linienarten mit wechselnder Bedeutung; Meta-Bezeichnungen (2).** Profilthema P-7.
+- **F-V-08 · leicht · Kontinuum in Stufen (2).** Profilthema P-6.
+- **F-V-09 · leicht · Kurztexte einsätzig oder beschreibend (2).**
+- **F-V-10 · leicht · Brücke schmal unbeschriftet; Kurztext unklar (2).**
+- **F-V-11 · leicht · Annahmen bleiben eine Kastenreihe (2).** Bei 360 px 2748 px hoch.
+- **F-V-12 · leicht · DEAR: vier gefüllte Punkte; Vertiefung ohne Grenzen (2).** Profilthema P-6.
+
+**Bedienung und Barrierefreiheit (automatisiert)**
+
+Ohne Mangel (2): axe 0 Verstösse in beiden Themes; kein Überlauf 320–1440 px und bei Zoom 200 %; Fokus überall sichtbar; Verweis im Text an den drei verlangten Stellen, wortgleich, nicht in Figur oder Vertiefung.
+
+- **F-B-01 · offen · Reale Screenreader-Läufe fehlen (2).**
+- **F-B-02 · leicht · Grössere Grundschrift im Browser wirkt nicht (2).** Profilthema P-9.
+- **F-B-03 · leicht · `borderline.css` (2):** Lesetext in 15 px, freie Pixelwerte, unbenutzte Regel `.bl-cycle__who`.
+
+**Bericht und Abgleich**
+
+- **F-K-01 · mittel · Opferhilfe-Link nicht umgesetzt (1+2).** Der Auftrag verlangte den Link; die bauende Sitzung beruft sich auf einen «Entscheid im Chat», der nicht belegt ist. Der Bestand führte `https://www.opferhilfe-schweiz.ch/de/` am 06.10.2026 als bestätigt. **Entscheid der Fachstelle (Chat, 09.10.2026): verlinken, ohne Nummer.**
+- **F-K-02 · mittel · Abgleich als Beleg nicht verlässlich (1+2).** Übernommene Sätze nur gezählt, nicht aufgeführt; Verweise auf nicht vorhandenen Text (F-W1-03); widersprüchliche Tabellen.
+- **F-K-03 · leicht · Kennzahlen nicht reproduzierbar (2).** Wortzahlen (oben), Tabstopps `grenzen` 20 statt 40, Seitenhöhen.
+- **F-K-04 · leicht · Behauptete Entscheide (2, von Prüfung 1 eingeschränkt).** Siehe «Korrekturen an Befunden».
+- **F-K-05 · leicht · Dokumentation veraltet oder widersprüchlich (2).** `abgleich/README.md` zur Brücke; Selbstprüfung E bei Schleife (10), Anspannung (11), Pendel (12).
+
+**Profilthemen aus dieser Runde** (im Design-System, nicht an dieser Website): P-6 (Kontinuum in Stufen, Muster C mit vier gefüllten Punkten), P-7 (Linienarten), P-9 (px-Schriftgrössen).
+
+## Erste Prüfrunde · Vorgehen (09.10.2026, erster Bau)
 
 **Vorgehen.** Etappe 1 wurde zweimal unabhängig geprüft, am Stand von PR #10 nach Commit `2c188ea` (Navigation mit fünf Punkten; die Seiten selbst sind seit dem ersten Bau unverändert).
 
@@ -142,7 +272,7 @@ Ursache: Prüfung 1 hat sieben Aussagen verglichen, Prüfung 2 einundzwanzig. Fo
 
 Die Quelle jedes Befunds steht in Klammern: (1) nur Prüfung 1, (2) nur Prüfung 2, (1+2) beide. Schweregrad: **schwer** heisst, die Stelle vermittelt etwas Falsches oder blockiert; **mittel** heisst, sie schwächt das Verständnis deutlich; **leicht** sind kleinere Mängel.
 
-## Visualisierungs-Check der Prüfsitzungen
+## Erste Prüfrunde · Visualisierungs-Check
 
 E = erfüllt · T = teilweise · N = nicht erfüllt · – = nicht anwendbar
 
@@ -165,7 +295,7 @@ E = erfüllt · T = teilweise · N = nicht erfüllt · – = nicht anwendbar
 
 Bei Punkt 5 der Schleife urteilt Prüfung 1 strenger als Prüfung 2 (N statt T), siehe V-1.
 
-## Befunde je Stufe
+## Erste Prüfrunde · Befunde je Stufe
 
 ### W1 Fachliche Prüfung (Vorprüfung, Prüfbedarf für die Fachstelle)
 
