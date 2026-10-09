@@ -43,12 +43,12 @@
   "pages": [
     {
       "id": "index",
-      "title": "Übersicht",
+      "title": "Startseite",
       "href": "index.html",
       "navLabel": null,
       "status": "published",
       "primaryTask": "Einen Einstieg nach dem eigenen Anliegen wählen",
-      "description": "Orientierung für Angehörige von Menschen mit Borderline: Einstiege zu Verstehen, Beziehungen und Grenzen sowie eigene Beratung bei der Fachstelle Angehörigenarbeit PUK.",
+      "description": "Orientierung für Angehörige von Menschen mit Borderline: Einstiege nach Anliegen zu Verstehen, Beziehungen und Grenzen sowie die kostenlose Beratung der Fachstelle Angehörigenarbeit PUK.",
       "sensitiveTopics": [],
       "visualPlan": [
         {
@@ -60,19 +60,19 @@
           "statement": "–",
           "source": "–",
           "alternative": "–",
-          "reason": "Text ist klarer: gleichwertige Einstiege ohne feste Reihenfolge («Die Reihenfolge ist ein Angebot»); eine Darstellung würde nur Links in Kästen verteilen. Ersetzt Selbsttest und Wegweiser des Bestands («sichtbar vor versteckt»).",
+          "reason": "Text ist klarer: gleichwertige Einstiege ohne feste Reihenfolge («die Reihenfolge ist ein Angebot»), formuliert als Anliegen der Lesenden (Korrektur W2-6, 09.10.2026); eine Darstellung würde nur Links in Kästen verteilen. Ersetzt Selbsttest und Wegweiser des Bestands («sichtbar vor versteckt»).",
           "approvalStatus": "ausstehend"
         },
         {
           "id": "v-ix-beratung",
           "section": "Beratung für Sie",
           "sectionId": "beratung",
-          "goal": "Wissen, wie eigene Beratung bei der Fachstelle erreichbar ist",
+          "goal": "Wissen, wer die Beratung der Fachstelle nutzen kann, zu welchen Bedingungen und wie sie erreichbar ist",
           "format": "text",
           "statement": "–",
           "source": "–",
           "alternative": "–",
-          "reason": "Text ist klarer: ein einzelner Kontaktweg mit Hinweisen, keine Beziehung.",
+          "reason": "Text ist klarer: Angebot und Kontaktweg ohne Beziehung. Wortlaut der Fachstelle vom 09.10.2026 (Korrektur W1-4); steht nur hier, andere Seiten verweisen darauf.",
           "approvalStatus": "ausstehend"
         },
         {
@@ -133,7 +133,7 @@
           "sectionId": "eisberg",
           "goal": "Verstehen, dass Verhalten nur einen Teil zeigt und das Darunter offenbleibt",
           "format": "layer-model",
-          "statement": "Sichtbar: Wut, Vorwürfe, Lautwerden, Rückzug. Darunter möglich: Angst, Scham, Trauer, Einsamkeit, Stress. Keine Zuordnung zwischen oben und unten; was darunter liegt, ist von aussen nicht sicher erkennbar.",
+          "statement": "Sichtbar: Wut, Vorwürfe, Lautwerden, Rückzug. Darunter möglich: Angst, Scham, Trauer, Einsamkeit, Stress. Keine Zuordnung zwischen oben und unten; was darunter liegt, lässt sich erfragen, nicht ablesen. Der Abschnittstext nennt dieselben Begriffe (Korrektur W2-5, 09.10.2026).",
           "understood": "Dass Verhalten nur die Oberfläche zeigt und das Darunter offenbleibt; die Schichten zeigen das auf einen Blick, auch die Grenze des Wissens.",
           "source": "Eigene didaktische Darstellung nach der Eisberg-Metapher (Handout «Eisberg»); Bezugspunkt Linehan (1993)",
           "alternative": "Beschriftungen als HTML-Listen je Schicht; Textfassung über aria-describedby",
@@ -146,7 +146,7 @@
           "sectionId": "anspannung",
           "goal": "Erkennen, dass Gesprächsfähigkeit sich mit der Anspannung verschiebt, und wissen, was in welchem Bereich hilft",
           "format": "continuum",
-          "statement": "Denk-Modus · zunehmend angespannt · Alarm-Modus; je Bereich, was eher möglich ist und was helfen kann: Gespräch · kurze Sätze, weniger Druck · Pause, Sicherheit vor Klärung.",
+          "statement": "Achse «Anspannung im Gespräch – bei einer oder beiden Personen», gleitend, ohne Stufenmarken: Denk-Modus · zunehmend angespannt · Alarm-Modus (auch als Rückzug oder Schweigen); je Bereich, was eher möglich ist und was hilft: Gespräch · kurze Sätze, weniger Druck · Pause, Sicherheit vor Klärung. Kurztext: Bereiche sind Orientierung, keine Stufen; von aussen nicht sicher ablesbar (Korrektur V-4, 09.10.2026).",
           "understood": "Dass Gesprächsfähigkeit sich mit der Anspannung verschiebt und was in welchem Bereich hilft. Das Kontinuum zeigt den Übergang, den ein Text nur behaupten kann.",
           "source": "Eigene didaktische Darstellung, zusammengeführt aus den Handouts Alarm-Modus, Hohe Anspannung, Zustands-Landkarte und Anspannungskurve; Bezugspunkte Linehan (1993, 2015), Shields et al. (2016), Santangelo et al. (2014), NICE CG78 (2009)",
           "alternative": "Bereiche als geordnete Liste mit Überschriften; Textfassung über aria-describedby",
@@ -158,13 +158,13 @@
           "id": "v-vs-bewertungen",
           "section": "05 Bewertungen",
           "sectionId": "bewertungen",
-          "goal": "Verstehen, dass Bewertungen unter Stress zu den Polen ausschlagen können",
-          "format": "continuum",
-          "statement": "Pendel: sehr positive Bewertung ↔ differenziertere Sicht ↔ sehr negative Bewertung; unter Stress schwingt es weiter aus. Linienstärke = Ausschlag (Pole dick, Mitte dünn).",
-          "understood": "Dass Bewertungen unter Stress zu den Polen ausschlagen und die Mitte schwerer erreichbar wird.",
+          "goal": "Verstehen, dass Bewertungen unter Stress weiter ausschlagen und zurückschwingen können",
+          "format": "figure",
+          "statement": "Pendel mit Aufhängepunkt und Bogen (Muster A): Ruhelage in der Mitte «Differenziertere Sicht», zwei ausgelenkte Lagen «Sehr positive Bewertung» und «Sehr negative Bewertung», Bogen am Aufhängepunkt «unter Stress grösserer Ausschlag», Pfeile von beiden Seiten zurück zur Ruhelage. Kernaussage aus dem Handout: Weder eine sehr positive noch eine sehr negative Momentaufnahme muss die ganze Beziehung oder Person beschreiben.",
+          "understood": "Dass ein einseitiges Urteil eine Auslenkung ist, die unter Stress grösser wird und wieder zurückschwingen kann, und dass die differenziertere Sicht die Ruhelage ist, kein Mittelwert. Ein Pendel zeigt Ausschlag, Stress und Rückschwung in einem Bild; als Text bliebe es eine Behauptung. Bewusst keine Achse wie in Abbildung 2, damit die beiden Figuren nicht gleich aussehen und Verschiedenes bedeuten (Korrektur V-2, 09.10.2026).",
           "source": "Eigene didaktische Pendel-Darstellung (Handout «Wenn Bewertungen unter Stress einseitiger werden»); Grundlage Linehan (1993), Hoffman et al. (2005)",
-          "alternative": "Bereiche als geordnete Liste mit Überschriften; Textfassung über aria-describedby",
-          "reason": "Pole und Mitte sind Lagen auf einer Achse; die Linienstärke zeigt den Ausschlag, nicht eine Wertung. Die Schritte für Angehörige stehen sichtbar im Abschnittstext.",
+          "alternative": "Die drei Lagen als Liste mit Überschrift und Erklärung unter der Zeichnung; Beschriftungen als HTML-Text über der Zeichnung, schmal nur Liste und Zeichnung; Textfassung über aria-describedby",
+          "reason": "Ausschlag und Rückschwung sind eine Bewegung um eine Ruhelage; das Pendel zeigt sie als Form und Richtung. Die Schritte für Angehörige stehen sichtbar im Abschnittstext.",
           "approvalStatus": "ausstehend"
         },
         {
@@ -173,11 +173,11 @@
           "sectionId": "mythen",
           "goal": "Verbreitete Annahmen durch eine realistischere Einordnung ersetzen",
           "format": "comparison",
-          "statement": "Acht Paare: verbreitete Annahme ↔ was realistischer ist (aus «Häufige Mythen»).",
-          "understood": "Dass jeder Mythos direkt neben seiner Korrektur steht; der Vergleich macht die Verschiebung sichtbar.",
+          "statement": "Sieben Paare: verbreitete Annahme (kleiner, «Verbreitete Annahme: «…»») ↔ Einordnung als Hauptaussage (hervorgehoben, durchgezogene Linie). Annahme 7 des Bestands («Wer bei anderen stabiler wirkt, spielt nur») steht nur auf `beziehungen` › Einflüsse (Korrektur V-6, W2-4, 09.10.2026).",
+          "understood": "Dass jede verbreitete Annahme eine realistischere Einordnung hat und diese das Wichtigere ist; Annahme und Einordnung stehen als Paar auf einer Zeile, die Einordnung ist hervorgehoben.",
           "source": "Eigene didaktische Darstellung; Quellen Storebø et al. (2020), Zanarini et al. (2012), Porter et al. (2020), Qian et al. (2022), WHO (2024, 2026)",
           "alternative": "Paare als Abfolge Annahme – Einordnung; Textfassung über aria-describedby",
-          "reason": "Jede Annahme steht auf gleicher Höhe neben ihrer Korrektur, schmal direkt darüber; im Bestand lag beides in einem geschlossenen Akkordeon.",
+          "reason": "Jede Annahme steht auf gleicher Höhe neben ihrer Korrektur, schmal direkt darüber; im Bestand lag beides in einem geschlossenen Akkordeon. Die Handlungsanleitung zur Suizidfrage steht im Abschnittstext mit dem Verweis im Text, nicht in der Figur.",
           "approvalStatus": "ausstehend"
         },
         {
@@ -226,13 +226,13 @@
           "sectionId": "schleife",
           "goal": "Verstehen, dass eine Reaktion beim Gegenüber zum neuen Anlass wird",
           "format": "cycle",
-          "statement": "Ereignis → Bedeutung → Gefühl → Reaktion → Wirkung beim Gegenüber → neues Ereignis. Durchgehendes Beispiel: Die Schwester sagt einen Besuch ab.",
+          "statement": "Ereignis → Bedeutung → Gefühl → Reaktion → Wirkung beim Gegenüber → neues Ereignis. Durchgehendes Beispiel: Die Schwester sagt einen Besuch ab. Jede Station nennt, wer handelt: Station 1 und 5 die Schwester, Station 2 bis 4 die betroffene Person (Korrektur V-3, 09.10.2026).",
           "understood": "Dass eine Reaktion beim Gegenüber zum neuen Anlass wird. Die Schleife zeigt das sofort, ein Text nur nacheinander.",
           "source": "Eigene didaktische Darstellung (Bedeutungsschleife des Bestands) mit erfundenem Beispiel; Quellen der Seite: APA (2024), NICE CG78 (2009), Foxhall et al. (2019), McLaren et al. (2022)",
           "alternative": "Stationen als geordnete Liste mit Leserichtung breit und schmal, sichtbarem Rücksprung zu Station 1 und Textfassung über aria-describedby",
           "reason": "Eine Rückkopplung ist im Fliesstext nur nacheinander zu beschreiben. Die fünf Reiter des Bestands werden zu einer sichtbaren Schleife; das Beispiel verbindet sie mit dem Vergleich in Abschnitt 04.",
           "approvalStatus": "ausstehend",
-          "entryPoint": "Station «Bedeutung»: Beobachtung, Deutung und Gefühl trennen und nachfragen, wie etwas gemeint war."
+          "entryPoint": "Station 5 «Wirkung» (Schwester): statt sich weiter zu verteidigen, das Gefühl anerkennen, nach der Deutung fragen und die eigene Grenze halten (Korrektur V-1, 09.10.2026; vorher Station 2, die Deutung der betroffenen Person)."
         },
         {
           "id": "v-bz-verstaerker",
@@ -243,7 +243,7 @@
           "statement": "–",
           "source": "–",
           "alternative": "–",
-          "reason": "Text ist klarer: Die Einflüsse vertiefen Stationen derselben Schleife (Abbildung 1) und sind dort zugeordnet, wo es eindeutig ist; eine zweite Grafik würde denselben Mechanismus doppeln.",
+          "reason": "Text ist klarer: höchstens fünf Einflüsse, je einer Station derselben Schleife (Abbildung 1) zugeordnet; eine zweite Grafik würde denselben Mechanismus doppeln. Als Begriffsliste (dl), vom Profil gestaltet (Korrektur V-8, 09.10.2026).",
           "approvalStatus": "ausstehend"
         },
         {
@@ -252,7 +252,7 @@
           "sectionId": "zwei-sichten",
           "goal": "Beide Perspektiven im selben Ablauf sehen",
           "format": "comparison",
-          "statement": "Dieselben vier Schritte des Beispiels aus Sicht der betroffenen Person und aus Sicht der Angehörigen.",
+          "statement": "Dieselben vier Schritte des Beispiels aus Sicht der betroffenen Person und aus Sicht der Angehörigen, je einer Station der Schleife zugeordnet: Station 1 · Absage, Station 4 · Nachrichten, Station 5 · Verteidigung, Neuer Anlass · Gespräch endet (Korrektur V-3, 09.10.2026).",
           "understood": "Dass beide in jedem Schritt etwas Verständliches versuchen und sich trotzdem verfehlen; nebeneinander wird das sichtbar.",
           "source": "Eigene didaktische Darstellung mit erfundenem Beispiel (Bestand «Beide versuchen etwas Verständliches – und verfehlen sich»)",
           "alternative": "Zwei beschriftete Merkmalslisten; Textfassung über aria-describedby",
@@ -286,6 +286,30 @@
       ]
     },
     {
+      "id": "rolle",
+      "title": "Ihre Rolle klären",
+      "href": "rolle.html",
+      "navLabel": "Ihre Rolle",
+      "status": "draft",
+      "primaryTask": "Entwurf: Seite folgt in Etappe 2 des Umbaus",
+      "description": "Entwurf, Etappe 2: Ihre Rolle klären. Noch ohne Inhalt; Aufbau nach UMBAUPLAN.md.",
+      "sensitiveTopics": [],
+      "visualPlan": [
+        {
+          "id": "v-rolle-geplant",
+          "section": "Entwurf",
+          "sectionId": "geplant",
+          "goal": "Platzhalter bis Etappe 2",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Platzhalter: Der Visualisierungsplan entsteht vor dem Bau der Seite (Kandidaten in UMBAUPLAN.md, Abschnitt 3).",
+          "approvalStatus": "ausstehend"
+        }
+      ]
+    },
+    {
       "id": "grenzen",
       "title": "Grenzen setzen",
       "href": "grenzen.html",
@@ -314,13 +338,13 @@
           "id": "v-gr-bruecke",
           "section": "02 Grenze und Kontakt",
           "sectionId": "bruecke",
-          "goal": "Verstehen, dass Grenzen Kontakt tragen statt ihn zu beenden",
+          "goal": "Verstehen, dass Grenzen Kontakt schützen können",
           "format": "figure",
-          "statement": "Brücke mit Geländer: Verbindung (Kontakt), Geländer (Grenzen), Pfeiler (Absprachen, Pausen, Fachpersonen, Selbstschutz). Merksatz «Kontakt braucht Geländer».",
-          "understood": "Dass Grenzen Kontakt tragen statt ihn zu beenden; das Bild verbindet beides in einer Form.",
-          "source": "Eigene didaktische Darstellung der Fachstelle (Handout «Die Brücke mit Geländer»); Bezugspunkte Hoffman et al. (2005), NICE CG78 (2009), Mason und Kreger (2014)",
-          "alternative": "Nummerierte Liste der drei Teile; Textfassung über aria-describedby",
-          "reason": "Die Metapher verbindet Kontakt und Grenze in einer Form; Nummern verbinden Bild und Liste.",
+          "statement": "Brücke mit Geländer zwischen zwei Ufern «Sie» und «die andere Person»: Fahrbahn (Verbindung), Geländer (Grenzen), Pfeiler (Absprachen, Pausen, Fachpersonen, Selbstschutz), direkt im Bild beschriftet. Kernaussage wie im Handout: «Kontakt braucht Geländer: Grenzen können Kontakt schützen.» (Korrektur W1-2, V-7, 09.10.2026)",
+          "understood": "Dass Grenzen zur Verbindung zwischen zwei Menschen gehören und Kontakt schützen können; das Bild zeigt beide Ufer, die Verbindung und das Geländer in einer Form.",
+          "source": "Eigene didaktische Darstellung (Handout «Die Brücke mit Geländer»); Bezugspunkte wie im Handout: Hoffman et al. (2005), NICE CG78 (2009), Linehan, Mason und Kreger (2014), Stand by You / Sotomo (2024) (Korrektur W1-6)",
+          "alternative": "Beschriftungen als HTML-Text über der Zeichnung; Liste der drei Teile mit Erklärung; schmal Zeichnung und Liste; Textfassung über aria-describedby",
+          "reason": "Die Metapher verbindet Kontakt und Grenze in einer Form; Ufer, Fahrbahn, Geländer und Pfeiler sind direkt beschriftet, die Liste erklärt sie.",
           "approvalStatus": "ausstehend"
         },
         {
@@ -328,12 +352,11 @@
           "section": "03 Bereiche",
           "sectionId": "arten",
           "goal": "Grenzen in vier Lebensbereichen benennen",
-          "format": "figure",
-          "statement": "Vier Arten von Grenzen: Körper und Raum, Gefühle und Verantwortung, Zeit und Erreichbarkeit, Geld und Unterstützung, je mit Beispiel. Gestrichelte Trennlinien: Die Bereiche können sich überschneiden.",
-          "understood": "Dass Grenzen mehrere Lebensbereiche betreffen; die Figur zeigt die vier Bereiche gleichwertig nebeneinander.",
-          "source": "Eigene didaktische Darstellung; redaktionelle Orientierung nach NICE CG78 (2009), Information for families and carers (Handout «Vier Arten von Grenzen»)",
-          "alternative": "Nummerierte Liste der vier Bereiche mit Beispielsatz; Textfassung über aria-describedby",
-          "reason": "Gleich grosse Felder eines Kreises zeigen die Gleichwertigkeit, gestrichelte Trennlinien die mögliche Überschneidung. Die Auswahl-Schaltflächen des Bestands werden zu einer sichtbaren Darstellung.",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: vier gleichrangige Bereiche ohne Beziehung untereinander; eine Figur würde nur eine Liste umrahmen (Korrektur V-5, 09.10.2026). Als Begriffsliste (dl), vom Profil gestaltet.",
           "approvalStatus": "ausstehend"
         },
         {
@@ -345,7 +368,7 @@
           "statement": "–",
           "source": "–",
           "alternative": "–",
-          "reason": "Im Bau geprüft (UMBAUPLAN, Abschnitt 3: Raster 2×2 oder Text): Text ist klarer. Die Quelle nennt das Raster selbst «keine fachliche Einstufung» und hält fest, dass sich Dringlichkeit und Belastung je nach Situation verändern; ein festes Raster würde eine Einordnung der Beispiele nahelegen, die sie ausschliesst. Die tragende Aussage ist eine Reihenfolge – zuerst Schutz, dann Dringendes, Langfristiges vorbereiten –, und die geordnete Liste trägt sie samt beiden Kriterien.",
+          "reason": "Im Bau geprüft (UMBAUPLAN, Abschnitt 3: Raster 2×2 oder Text): Text ist klarer. Die Quelle nennt das Raster selbst «keine fachliche Einstufung» und hält fest, dass sich Dringlichkeit und Belastung je nach Situation verändern; ein festes Raster würde eine Einordnung der Beispiele nahelegen, die sie ausschliesst. Die Liste trägt die Reihenfolge Dringendes vor Langfristigem samt Belastung als Kriterium. Schutz bei Bedrohung oder Gewalt steht im Kopf und im Abschnitt «Schutz» (Korrektur W2-4, 09.10.2026).",
           "approvalStatus": "ausstehend"
         },
         {
@@ -354,8 +377,8 @@
           "sectionId": "dear",
           "goal": "Ein Anliegen in vier Schritten vorbereiten",
           "format": "process",
-          "statement": "D Beschreiben → E Empfinden ausdrücken → A Anliegen nennen → R Verstärken (positive Folgen benennen). Fachmodell aus der DBT.",
-          "understood": "Dass eine Grenze in vier Schritten aufgebaut wird und jeder Schritt eine eigene Aufgabe hat.",
+          "statement": "D Beschreiben · E Empfinden ausdrücken · A Anliegen nennen · R Verstärken (positive Folgen benennen); vier Schritte helfen, ein Anliegen vorzubereiten. Je Schritt Aufgabe und abgesetzter Beispielsatz (.puk-say). Fachmodell aus der DBT (Korrektur W1-7, V-12, 09.10.2026).",
+          "understood": "Dass ein Anliegen in vier Schritten vorbereitet werden kann und jeder Schritt eine eigene Aufgabe hat; Aufgabe und Beispielsatz stehen je Schritt sichtbar getrennt.",
           "source": "Fachmodell: Linehan (2015), DBT Skills Training Manual, 2. Auflage (DEAR MAN); deutschsprachige redaktionelle Anpassung mit eigenen Beispielen",
           "alternative": "Geordnete Liste mit Schrittnummer, Aufgabe und Beispielsatz; Textfassung über aria-describedby",
           "reason": "Reihenfolge und Aufgabe jedes Schritts werden auf einen Blick sichtbar; die Auswahl-Schaltflächen des Bestands werden zu einem sichtbaren Pfad.",
@@ -371,7 +394,7 @@
           "statement": "–",
           "source": "–",
           "alternative": "–",
-          "reason": "Text ist klarer: Formulierungsbausteine sind Inhaltscontainer, keine visuelle Erklärung. Die Beispiele «So könnte es klingen» ersetzen die interaktiven Übungen des Bestands.",
+          "reason": "Text ist klarer: drei Situationen mit Gegenüberstellung «eher problematisch / eher hilfreich» als Komponente .puk-say (Leitlinie 06, Formulierungsbeispiele). Die übrigen Beispiele des Bestands sind für «Zugewandt und klar sprechen» (Etappe 2) vorgemerkt (Korrektur W2-2, W2-3, 09.10.2026).",
           "approvalStatus": "ausstehend"
         },
         {
@@ -407,7 +430,7 @@
           "statement": "–",
           "source": "–",
           "alternative": "–",
-          "reason": "Text ist klarer: drei Rollen ohne Beziehung untereinander.",
+          "reason": "Text ist klarer: drei Rollen ohne Beziehung untereinander, als kurzer Absatz (Korrektur W2-2, 09.10.2026).",
           "approvalStatus": "ausstehend"
         },
         {
@@ -436,30 +459,6 @@
       "visualPlan": [
         {
           "id": "v-diagnose-geplant",
-          "section": "Entwurf",
-          "sectionId": "geplant",
-          "goal": "Platzhalter bis Etappe 2",
-          "format": "text",
-          "statement": "–",
-          "source": "–",
-          "alternative": "–",
-          "reason": "Platzhalter: Der Visualisierungsplan entsteht vor dem Bau der Seite (Kandidaten in UMBAUPLAN.md, Abschnitt 3).",
-          "approvalStatus": "ausstehend"
-        }
-      ]
-    },
-    {
-      "id": "rolle",
-      "title": "Ihre Rolle klären",
-      "href": "rolle.html",
-      "navLabel": "Ihre Rolle",
-      "status": "draft",
-      "primaryTask": "Entwurf: Seite folgt in Etappe 2 des Umbaus",
-      "description": "Entwurf, Etappe 2: Ihre Rolle klären. Noch ohne Inhalt; Aufbau nach UMBAUPLAN.md.",
-      "sensitiveTopics": [],
-      "visualPlan": [
-        {
-          "id": "v-rolle-geplant",
           "section": "Entwurf",
           "sectionId": "geplant",
           "goal": "Platzhalter bis Etappe 2",
