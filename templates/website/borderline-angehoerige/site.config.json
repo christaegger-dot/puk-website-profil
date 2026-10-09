@@ -146,13 +146,13 @@
           "sectionId": "anspannung",
           "goal": "Erkennen, wann Reden hilft und wann eine Pause besser ist, und wissen, was an welcher Stelle hilft",
           "format": "figure",
-          "statement": "Die Anspannungskurve (Muster A, freie Figur): eine ruhige Kurve über den Gesprächsverlauf, links tief, dann steigend, oben ein Scheitel, rechts wieder sinkend; keine Skala, keine Zahlen, keine Achse. Vier nummerierte Stellen mit Alltagsworten: 1 «Wir können sprechen», 2 «Es wird eng» (Ansatzpunkt, doppelter Ring), 3 «Es ist gerade zu viel», 4 «Später». Darunter in allen Breiten die Liste der vier Stellen mit Erklärsatz, «Was hilft», Ansatzpunkt und Beispielsätzen aus dem Handout; Stelle 2 hat «Was hilft» und den Ansatzpunkt (Entscheid der Fachstelle, 09.10.2026). Kurztext: Anspannung kann ansteigen und wieder sinken, bei der anderen Person und bei Ihnen, und ist von aussen nicht sicher erkennbar. Ersetzt die Achse mit drei Bereichen (Entscheid der Fachstelle, 09.10.2026; Korrektur 1d, D-3). «Bei Gefahr hat Schutz Vorrang» steht im Abschnittstext (Korrektur 1b, A-2).",
+          "statement": "Die Anspannungskurve (Muster A, freie Figur): eine ruhige Kurve über den Gesprächsverlauf, links tief, dann steigend, oben ein Scheitel, rechts wieder sinkend; keine Skala, keine Zahlen, keine Achse. Vier nummerierte Stellen mit Alltagsworten: 1 «Wir können sprechen», 2 «Es wird eng» (Ansatzpunkt, doppelter Ring), 3 «Es ist gerade zu viel», 4 «Später». Darunter in allen Breiten die Liste der vier Stellen mit Erklärsatz, «Was hilft», Ansatzpunkt und Beispielsätzen aus dem Handout; Stelle 2 hat nur den Ansatzpunkt, ohne eigenes «Was hilft» (Korrektur 1e, Abschnitt 3). Kurztext: Anspannung kann ansteigen und wieder sinken, bei der anderen Person und bei Ihnen, und ist von aussen nicht sicher erkennbar. Ersetzt die Achse mit drei Bereichen (Entscheid der Fachstelle, 09.10.2026; Korrektur 1d, D-3). «Bei Gefahr hat Schutz Vorrang» steht im Abschnittstext (Korrektur 1b, A-2).",
           "understood": "Wann Reden hilft und wann eine Pause besser ist: Die Kurve zeigt, dass Anspannung im Gespräch ansteigen und wieder sinken kann und dass dasselbe Gespräch je nach Stelle etwas anderes braucht. Als Text blieben die vier Stellen eine Aufzählung; die Kurve zeigt ihren Zusammenhang im Verlauf.",
           "source": "Eigene didaktische Darstellung nach dem Handout «Die Anspannungskurve – Wann Reden hilft», mit Inhalten aus drei weiteren Handouts zur Anspannung (vereinfachtes Stressmodell, Hohe Anspannung, Zustands-Landkarte); Bezugspunkte Linehan (1993, 2015), Shields et al. (2016), Degasperi et al. (2021), Baranger et al. (2020), Santangelo et al. (2014), NICE CG78 (2009)",
           "alternative": "Die vier Stellen als geordnete Liste mit Nummer, Überschrift, Erklärsatz und Beispiel unter der Zeichnung, in allen Breiten; Beschriftungen als HTML-Text über der Zeichnung, unter 560 px entfallen nur diese, die Nummern bleiben; Textfassung über aria-describedby (p.puk-sr)",
           "reason": "Ein Verlauf im Gespräch lässt sich als Kurve zeigen. Alltagsworte statt Fachbegriffen, weil die Achse mit drei Bereichen für Laien verwirrend war (Rückmeldung der Fachstelle, 09.10.2026). Vier Handouts zum selben Mechanismus bleiben in einer Darstellung verbunden.",
           "approvalStatus": "ausstehend",
-          "entryPoint": "Stelle 2 «Es wird eng»: das eigene Tempo senken, auf die eigene Anspannung achten und eine Pause anbieten; die andere Person müssen Sie nicht beruhigen (in der Figur mit doppeltem Ring markiert)."
+          "entryPoint": "Stelle 2 «Es wird eng»: nicht weiter argumentieren, weniger Druck machen, das eigene Tempo senken, auf die eigene Anspannung achten und eine Pause anbieten; die andere Person müssen Sie nicht beruhigen (in der Figur mit doppeltem Ring markiert)."
         },
         {
           "id": "v-vs-bewertungen",
@@ -210,7 +210,7 @@
       "visualPlan": [
         {
           "id": "v-bz-verbindung",
-          "section": "01 Ressourcen",
+          "section": "01 Was verbindet",
           "sectionId": "verbindung",
           "goal": "Ressourcen der Beziehung sehen",
           "format": "text",
@@ -226,24 +226,24 @@
           "sectionId": "schleife",
           "goal": "Verstehen, dass eine Reaktion beim Gegenüber zum neuen Anlass wird",
           "format": "cycle",
-          "statement": "Ereignis → Bedeutung → Gefühl → Reaktion → Wirkung beim Gegenüber → neues Ereignis. Durchgehendes Beispiel: Die Schwester sagt einen Besuch ab. Jede Station nennt, wer handelt: Station 1 und 5 die Schwester, Station 2 bis 4 die betroffene Person (Korrektur V-3, 09.10.2026). Kurztext mit der Grenze des Modells: «Ein mögliches Erklärungsmodell, keine sichere Aussage …» (Korrektur 1b, C-2).",
+          "statement": "Ereignis → Bedeutung → Gefühl → Reaktion → Wirkung beim Gegenüber → neues Ereignis. Durchgehendes Beispiel: Die Schwester sagt einen Besuch ab. Jede Station nennt, wer handelt: Station 1 und 5 die Schwester, Station 2 bis 4 die betroffene Person (Korrektur V-3, 09.10.2026). Kurztext mit der Grenze des Modells: «Das Modell ist eine mögliche Erklärung, keine sichere Aussage …» (Korrektur 1b, C-2; Wortlaut Korrektur 1e).",
           "understood": "Dass eine Reaktion beim Gegenüber zum neuen Anlass wird. Die Schleife zeigt das sofort, ein Text nur nacheinander.",
           "source": "Eigene didaktische Darstellung (Bedeutungsschleife des Bestands) mit erfundenem Beispiel; Quellen der Seite: APA (2024), NICE CG78 (2009), Foxhall et al. (2019), McLaren et al. (2022)",
           "alternative": "Stationen als geordnete Liste mit Leserichtung breit und schmal, sichtbarem Rücksprung zu Station 1 und Textfassung über aria-describedby",
           "reason": "Eine Rückkopplung ist im Fliesstext nur nacheinander zu beschreiben. Die fünf Reiter des Bestands werden zu einer sichtbaren Schleife; das Beispiel verbindet sie mit dem Vergleich in Abschnitt 04.",
           "approvalStatus": "ausstehend",
-          "entryPoint": "Station 5 «Wirkung» (Schwester): Statt sich weiter zu verteidigen, können Sie das Gefühl anerkennen, nach der Deutung fragen und Ihre eigene Grenze halten (Korrektur V-1, 09.10.2026; ganze Sätze laut Korrektur 1b, D-2)."
+          "entryPoint": "Station 5 «Wirkung» (Schwester): Statt sich weiter zu verteidigen, können Sie das Gefühl anerkennen, nachfragen, wie die Absage angekommen ist, und Ihre eigene Grenze halten (Korrektur V-1, 09.10.2026; ganze Sätze laut Korrektur 1b, D-2; Wortlaut und Beispielfrage Korrektur 1e)."
         },
         {
           "id": "v-bz-verstaerker",
-          "section": "03 Einflüsse",
+          "section": "03 Was Reaktionen verschärfen kann",
           "sectionId": "verstaerker",
-          "goal": "Einflüsse kennen, die den Spielraum zwischen Ereignis und Reaktion verengen",
+          "goal": "Einflüsse kennen, die den Spielraum zwischen Anlass und Reaktion verengen",
           "format": "text",
           "statement": "–",
           "source": "–",
           "alternative": "–",
-          "reason": "Text ist klarer: höchstens fünf Einflüsse, je einer Station derselben Schleife (Abbildung 1) zugeordnet; eine zweite Grafik würde denselben Mechanismus doppeln. Als Begriffsliste (dl), vom Profil gestaltet (Korrektur V-8, 09.10.2026).",
+          "reason": "Text ist klarer: höchstens fünf Einflüsse, je einer Station derselben Schleife (Abbildung 1) zugeordnet; eine zweite Grafik würde denselben Mechanismus doppeln. Als Begriffsliste (dl), vom Profil gestaltet (Korrektur V-8, 09.10.2026). Jeder Punkt mit «Was Sie tun können» und Beispielsatz als zweitem Absatz (Korrektur 1e).",
           "approvalStatus": "ausstehend"
         },
         {
@@ -261,14 +261,14 @@
         },
         {
           "id": "v-bz-was-hilft",
-          "section": "05 Handlungsspielraum",
+          "section": "05 Was helfen kann",
           "sectionId": "was-hilft",
-          "goal": "Möglichkeiten kennen, die Verbindung tragfähiger machen",
+          "goal": "Möglichkeiten kennen, die die Beziehung stärken",
           "format": "text",
           "statement": "–",
           "source": "–",
           "alternative": "–",
-          "reason": "Text ist klarer: unabhängige Möglichkeiten mit Formulierungsbeispielen (Inhaltscontainer, keine Beziehung untereinander).",
+          "reason": "Text ist klarer: drei Stellen, an denen sich die Schleife unterbrechen lässt, als kurze Liste, dann unabhängige Möglichkeiten mit Formulierungsbeispielen (Inhaltscontainer, keine Beziehung untereinander; Korrektur 1e).",
           "approvalStatus": "ausstehend"
         },
         {
