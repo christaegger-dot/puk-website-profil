@@ -33,11 +33,13 @@ Nach jedem Bau ohne Nachfrage ausfüllen: Visualisierungs-Check wie unten, mit B
 
 `index` und `grenzen` sind unverändert. Gekürzt wurde nichts; der Richtwert gilt nicht (1E, Abschnitt 2). Die Prüfstufen bleiben offen. Diese Selbstprüfung ersetzt die der Korrektur 1d und ist nicht die Stufe «Visualisierungs-Check».
 
+**Nachtrag 09.10.2026 · Profil-Update 2026-10-09c (Build r4-5).** Die Werkzeuge der Website sind auf Build r4-5 nachgezogen und die Seiten neu gebaut. Inhalte und Figuren sind unverändert; Werte und Matrix unten gelten weiter. Das Produktionsgate prüft neu auch die Zeilen R1 bis R3 (Pre-Release-Audits). Die Statustabelle oben ist unverändert; die Zeilen R1 bis R3 trägt die Prüfsitzung ein.
+
 **Gates und Skripte:**
 
-- **`node tools/build.mjs`:** 15 Seiten, 0 blockierend, 22 Hinweise wie bisher (8 Visualisierungen und 12 Platzhalter nicht freigegeben, `siteUrl` fehlt, Prüfbericht offen).
-- **`node tools/gate.mjs --selftest`:** 50/50 bestanden.
-- **`node tools/gate.mjs --production`:** blockiert erwartungsgemäss mit 21 Befunden (8 × `visual-approval`, 12 × `placeholder-approval`, 1 × `review-report`).
+- **`node tools/build.mjs`:** 15 Seiten, Build r4-5, 0 blockierend, 22 Hinweise wie bisher (8 Visualisierungen und 12 Platzhalter nicht freigegeben, `siteUrl` fehlt, Prüfbericht offen).
+- **`node tools/gate.mjs --selftest`:** 51/51 bestanden (seit Build r4-5; vorher 50/50).
+- **`node tools/gate.mjs --production`:** blockiert erwartungsgemäss mit 21 Befunden (8 × `visual-approval`, 12 × `placeholder-approval`, 1 × `review-report`). `review-report` nennt seit Build r4-5 auch «R1 Profil-Audit», «R2 Visualisierung und Laienverständlichkeit» und «R3 Freigabe-Audit», weil die Statustabelle diese Zeilen noch nicht hat.
 - **`node abgleich/pruefe-abgleich.mjs`:** **1755 Zeilen, 0 ohne Fundstelle.** Das sind 1739 Bestandszeilen und 16 neue Zeilen ohne Bestandssatz auf `beziehungen`. Ob die genannte Fassung die Aussage trägt, prüft das Skript nicht; das bleibt Aufgabe von W1.
 - **Wortlaut:** Ein Skript der bauenden Sitzung sucht jede Stelle in «…» aus 1E, Abschnitt 3 und 4, im sichtbaren Text der gebauten Seiten. Ergebnis: 61 Stellen, 0 fehlen.
 - **Weitere Messungen:** `node abgleich/kennzahlen.mjs`, `node abgleich/verneinung.mjs` (neu, zählt Sätze mit Verneinung) und `node abgleich/bedienung.mjs`; Werte unten.
@@ -49,6 +51,15 @@ Nach jedem Bau ohne Nachfrage ausfüllen: Visualisierungs-Check wie unten, mit B
 | Upload im Stamm | `KORREKTUR-ETAPPE-1E.md` aus `39ed591` in den Website-Ordner gelegt | Commit `19df18a` auf `borderline-umbau` |
 | Stamm von `main` | Datei gelöscht | Commit `c5c0e35` auf `main` |
 | Zusammenführen | `main` in `borderline-umbau`, ohne Konflikt | Merge-Commit `4bf98ab` |
+
+### Profil-Update 2026-10-09c
+
+| Schritt | Stand | Beleg |
+| --- | --- | --- |
+| Patch auf `main` | vollständig angewendet, Patch-Datei gelöscht; Starter: Selbsttest 51/51, Build ohne weitere Änderung (`git apply -R --check` passt auf den gebauten Stand) | Commit `b4aeb13` auf `main` |
+| Zusammenführen | `main` in `borderline-umbau`, ohne Konflikt | Merge-Commit `2db9456` |
+| Kopie des Starters | `tools/contract.js`, `gate.html` und `README.md` aus dem Starter r4-5 übernommen, wie beim Update auf r4-4 (`a9c51b2`). `build.mjs`, `gate.mjs`, `export.mjs` und `tools/selftest/` waren schon gleich. `assetVersion` bleibt «r4-4» wie im Starter. | `diff -rq` von `tools/`, `cmp` von `gate.html` und `README.md` mit dem Starter: gleich. Selbsttest der Website 51/51 |
+| Gebaute Seiten | nur `data-puk-site-build` von «r4-4» auf «r4-5» geändert | `git diff` der 15 Seiten: keine andere Zeile geändert. Abgleich weiter 1755 Zeilen, 0 ohne Fundstelle; Wortlaut 1E weiter 61 Stellen, 0 fehlen |
 
 ### Korrekturauftrag 1e: Stand je Abschnitt
 

@@ -1,4 +1,4 @@
-# Psychoedukations-Starter · PUK Website Kit 1.10.1-r4 · abgeleitet · Build r4-4
+# Psychoedukations-Starter · PUK Website Kit 1.10.1-r4 · abgeleitet · Build r4-5
 
 Lokal lauffähiger Mehrseiten-Starter für psychoedukative Websites. Abgeleitetes Profil auf Basis der kanonischen Quelle **PUK Zürich Design System 1.10.1**, nicht deren neue offizielle Version. Alle Inhalte sind synthetisch: keine realen Kontakte, Personen, klinischen Aussagen, Freigaben oder Bildrechte.
 
@@ -79,9 +79,9 @@ Seiten über einen lokalen Webserver öffnen (z. B. `npx serve` im Projektstamm 
 - `index.html`: Einstieg mit Lesepfaden; der Vollbericht ist ein Download-Platzhalter.
 - `seitenvorlage.html`: Entwurf, nicht in der Navigation.
 
-Stand 09.10.2026 (Build r4-4, Befunde aus der Prüfung der Borderline-Website):
+Stand 09.10.2026 (Build r4-5, Befunde aus der Prüfung der Borderline-Website, Pre-Release-Audits):
 - **Entwurfsgate:** 0 blockierende Befunde.
-- **Produktionsgate:** blockiert 9 offene Freigaben und den unvollständigen Prüfbericht. Das ist erwartet.
-- **Selbsttest:** 50 von 50 bestanden, auch in Kopien des Starters (neu: Verweis im Text mit eigenem Wortlaut, auf Seite ohne sensibles Thema, in einer Vertiefung, ungeprüft in Produktion).
+- **Produktionsgate:** blockiert die offenen Freigaben und den unvollständigen Prüfbericht. Das ist erwartet. Der Prüfbericht braucht neu auch die Zeilen R1, R2 und R3 (Abschnitt «Pre-Release-Audits»); R3 nur bei «Go» auf «erledigt».
+- **Selbsttest:** 51 von 51 bestanden, auch in Kopien des Starters (neu: Produktion blockiert ohne «Go» im Freigabe-Audit R3; seit r4-4: Verweis im Text mit eigenem Wortlaut, auf Seite ohne sensibles Thema, in einer Vertiefung, ungeprüft in Produktion).
 
 Offen sind reale Screenreader-Läufe, ein Test mit Hardwaretastatur sowie Fach-, Bild- und Absenderfreigaben.
