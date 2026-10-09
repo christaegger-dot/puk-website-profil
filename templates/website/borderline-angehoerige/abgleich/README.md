@@ -61,7 +61,7 @@ Die damals berichteten 1299 / 1099 / 1500 waren zu tief. Die Zählung der bauend
 | Seite | Alt: Seite allein | Neu | Neu / alt | Richtwert | Richtwert + 5 % | Absicherungen je 100 Wörter alt → neu | Semikolons im Fliesstext alt → neu |
 | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
 | `index` | 433 | 238 | 55 % | – | – | 1,85 → 1,68 | 1 → 0 |
-| `verstehen` | 2524 | 1447 | 57 % | 1300 | 1365 | 2,54 → 2,83 | 12 → 0 |
+| `verstehen` | 2524 | 1461 | 58 % | 1300 | 1365 | 2,54 → 2,81 | 12 → 0 |
 | `beziehungen` | 2149 | 1164 | 54 % | 1100 | 1155 | 3,82 → 3,69 | 6 → 1 |
 | `grenzen` | 2985 | 1554 | 52 % | 1500 | 1575 | 2,41 → 2,06 | 4 → 0 |
 
@@ -70,9 +70,9 @@ Die damals berichteten 1299 / 1099 / 1500 waren zu tief. Die Zählung der bauend
 - **Richtwert:** Er gilt nicht: «Der Richtwert für die Länge gilt nicht. Nicht kürzen, um Wörter auszugleichen.» (`KORREKTUR-ETAPPE-1D.md`, Abschnitt 4; ebenso 1C, Abschnitt 1). Die Wortzahlen werden nur berichtet. Über die Länge entscheidet die Fachstelle in W1.
 - **Kurzbeschreibungen nicht mehr gezählt:** Sie stehen seit Korrektur 1d nur für Screenreader (D-2). Das sind 95 Wörter auf `verstehen`, 34 auf `beziehungen` und 20 auf `grenzen`.
 - **Veränderung gegenüber Korrektur 1c** (1379 / 1198 / 1574, damals mit Kurzbeschreibungen):
-  - `verstehen` 1447 sichtbare Wörter; mit Kurzbeschreibungen wären es 1542, also +163. Davon `anspannung` +99 (neue Abbildung 2 mit Liste, Beispielen und Vertiefung, D-3) und `einordnung` +66 (Bestand «Verstehen hat Grenzen» und Merksatz, D-4).
+  - `verstehen` 1461 sichtbare Wörter; mit Kurzbeschreibungen wären es 1556, also +177. Davon `anspannung` +113 (neue Abbildung 2 mit Liste, Beispielen und Vertiefung, D-3, und «Was hilft» bei Stelle 2, 14 Wörter) und `einordnung` +66 (Bestand «Verstehen hat Grenzen» und Merksatz, D-4).
   - `beziehungen` 1164 und `grenzen` 1554: nur die Kurzbeschreibungen fallen aus der Zählung, der sichtbare Text ist gleich.
-- **Absicherungen auf `verstehen`:** 2,54 → 2,83. Die neuen Texte aus D-3 und D-4 enthalten «kann», «können» und «könnten» (zum Beispiel «Anspannung kann im Gespräch ansteigen …», «… entschärfen könnten»); sie sind Wortlaut des Auftrags.
+- **Absicherungen auf `verstehen`:** 2,54 → 2,81. Die neuen Texte aus D-3 und D-4 enthalten «kann», «können» und «könnten» (zum Beispiel «Anspannung kann im Gespräch ansteigen …», «… entschärfen könnten»); sie sind Wortlaut des Auftrags.
 - **Quote:** Die Quote «Neu / alt» misst nicht, wie stark gekürzt wurde. Die alte Seite enthält Teile, die nach Etappe 2 gehen, und Meta-Text. Die zweite Prüfrunde hat deshalb einen vergleichbaren Kern berechnet (Belege b, Abschnitt 4).
 
 **Bedienung (`node abgleich/bedienung.mjs`, Chromium, 09.10.2026, nach Korrektur 1d):** Tabstopps bei 1280 × 900 px mit Tab ab Seitenanfang. Seitenhöhe ist `document.documentElement.scrollHeight` bei 360 × 800 px, gemessen nach `load` und `document.fonts.ready`.
@@ -80,7 +80,7 @@ Die damals berichteten 1299 / 1099 / 1500 waren zu tief. Die Zählung der bauend
 | Seite | Tabstopps ohne Fusszeile | Seitenhöhe bei 360 px | höchste Figur bei 360 px |
 | --- | ---: | ---: | --- |
 | `index` | 10 | 3863 px | – |
-| `verstehen` | 19 | 16 756 px | Annahmen 3714 px |
+| `verstehen` | 19 | 16 954 px | Annahmen 3714 px |
 | `beziehungen` | 15 | 12 737 px | Zwei Sichten 2359 px |
 | `grenzen` | 21 | 16 413 px | DEAR 1791 px |
 
@@ -159,7 +159,7 @@ Grundlage: fachliche Durchsicht von `verstehen` durch die Fachstelle (09.10.2026
 | Zuständigkeitsverweis | neuer Wortlaut in `site.config.json` › `responsibility.text`, `reviewedAt` 09.10.2026; `inline` unverändert; auf allen 15 Seiten in der Fusszeile | `KORREKTUR-ETAPPE-1D.md`, Abschnitt 1 und D-1 |
 | Kurzbeschreibung in der Bildlegende | `p.puk-sr` bei allen 8 Figuren, weiter über `aria-describedby` verbunden; sichtbar bleiben Kennzeichnung und Quelle; «Leserichtung» der Schleife bleibt sichtbar | D-2; Leitlinie 07 (Profil-Update) |
 | Abbildung 2 | «Die Anspannungskurve: wann Reden hilft» statt der Achse mit drei Bereichen; Texte im Wortlaut des Auftrags; die beiden Fachbegriffe der früheren Achse kommen auf keiner Seite mehr vor | D-3; Entscheid der Fachstelle, 09.10.2026 |
-| Stelle 2 ohne «Was hilft» | nach dem Wortlaut des Auftrags; der frühere Satz dazu entfällt und steht als Prüfbedarf in `verstehen.md` (Punkt 9) | `KORREKTUR-ETAPPE-1D.md`, Abschnitt 4: «Die Wortlaute in D-1 bis D-4 gelten so, wie sie hier stehen.» |
+| «Was hilft» bei Stelle 2 | Der Auftrag sah dort nur den Ansatzpunkt vor; der frühere Satz entfiel zuerst und war als Prüfbedarf gemeldet. Auf Entscheid der Fachstelle steht wieder «Was hilft: Argumentieren Sie nicht weiter, sprechen Sie langsamer und machen Sie weniger Druck.» vor dem Ansatzpunkt | Entscheid der Fachstelle, 09.10.2026 (Chat); `verstehen.md`, Prüfbedarf 9 |
 | Abschnitt 07 | Bestand «Verstehen hat Grenzen» wörtlich, Merksatz als `div.puk-longform__reflection` | D-4 |
 | Selbsttest-Kopie | `tools/selftest/` der Website wie im Starter nachgezogen (vier Dateien aus dem Profil-Update); Selbsttest 50/50 | Profil-Update 2026-10-09b |
 | `kennzahlen.mjs` | Text nur für Screenreader (`.puk-sr`) zählt nicht als sichtbares Wort | D-2 |

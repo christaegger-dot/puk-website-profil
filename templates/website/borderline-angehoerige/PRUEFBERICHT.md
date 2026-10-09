@@ -53,7 +53,7 @@ Nach jedem Bau ohne Nachfrage ausfüllen: Visualisierungs-Check wie unten, mit B
 | D-2 | umgesetzt | <ul><li>Die 8 Absätze, auf die `aria-describedby` zeigt, tragen `class="puk-sr"`: `vs-eisberg-text`, `vs-anspannung-text`, `vs-bewertungen-text`, `vs-mythen-text`, `bz-schleife-text`, `bz-sichten-text`, `gr-bruecke-text`, `gr-dear-text`.</li><li>Sichtbar bleiben in der Legende Kennzeichnung und Quelle. Die «Leserichtung» der Schleife bleibt sichtbar.</li><li>Das Gate liest die Kurzbeschreibung weiter als Textalternative (mindestens 40 Zeichen); 0 blockierend.</li></ul> | Skript bei 1440 und 360 px (nach `document.fonts.ready`): Alle 8 Kurzbeschreibungen tragen `puk-sr` und sind 1 × 1 px gross; sichtbar bleiben Kennzeichnung und Quelle (Bildschirmfotos von Abbildung 2 angesehen) |
 | D-2, Durchsicht | erledigt, nichts weiter entfernt | Weiterer sichtbarer Text, der nur die Zeichnung beschreibt, steht in keiner Figur. Geblieben sind Zuordnungen von Liste und Zeichnung, wie die Leserichtung: «Links: / Mitte: / Rechts:» in der Pendel-Liste, «Fahrbahn · Verbindung», «Geländer · Grenzen», «Pfeiler · was trägt» bei der Brücke, die Nummern der Anspannungskurve. | Abbildung 3 `verstehen`, Abbildung 1 `grenzen`, Abbildung 2 `verstehen` |
 | D-3 | umgesetzt | <ul><li>Titel, Kernaussage, Kurztext, die vier Stellen mit Liste, Ansatzpunkt, «Was hilft», Beispielen und die drei Sätze der Vertiefung im Wortlaut des Auftrags.</li><li>Zeichnung: eine Kurve `puk-vis-ln` (2 px) über 640 × 280, links tief, Scheitel, rechts sinkend; keine Skala, keine Achse, keine Füllfläche.</li><li>Nummern als HTML-Marken auf der Kurve wie in Muster G; Stelle 2 mit doppeltem Ring (`outline` über `--border-width-strong`), auch in der Liste.</li><li>Kurze Beschriftungen als HTML-Text in `type-body-sm`; unter 560 px entfallen nur sie, Kurve und Nummern bleiben.</li><li>Liste in Seitenschrift, `h3` in `--web-size-h4`, «Was hilft» und Ansatzpunkt in `--web-size-body` (wie 1c, K-8).</li><li>Vertiefung «Grenzen des Bildes» mit den drei Sätzen des Auftrags und, ohne Fachbegriffe, «Gefahr lässt sich aus der Stelle auf der Kurve nicht ableiten.» und «Die Kurve zeigt kein «Borderline-Gehirn», und solche Verläufe sind nicht auf Borderline beschränkt.»</li><li>Legende «Eigene didaktische Darstellung nach dem Handout «Die Anspannungskurve»», Bezugspunkte wie bisher, Kurzbeschreibung als `p.puk-sr`.</li><li>`visualPlan` › `v-vs-anspannung`: Format «figure», Aussage, «Was wird besser verstanden?» (wann Reden hilft und wann eine Pause besser ist), `entryPoint` Stelle 2.</li><li>CSS des früheren Kontinuums aus `borderline.css` entfernt.</li></ul> | <ul><li>Bildschirmfotos angesehen bei 1280 und 360 px, dazu 1440, 768, 600 und 320 px und im Theme «kontrast».</li><li>Skript: keine Beschriftung und keine Nummer ragt aus der Zeichnung, keine überlappt eine andere (1440 bis 320 px).</li><li>«Denk-Modus» und «Alarm-Modus» stehen auf keiner gebauten Seite, in `content/` und `site.config.json` nicht (`grep`); nur noch als Bestandszitate im Abgleich.</li></ul> |
-| D-3, Hinweis | Wortlaut befolgt, als Prüfbedarf gemeldet | Stelle 2 hat nach dem Auftrag nur den Ansatzpunkt. Der bisherige «Was hilft»-Satz dort (nicht weiter argumentieren, langsamer sprechen, weniger Druck) steht damit nicht mehr auf der Seite. | `abgleich/verstehen.md`, Prüfbedarf 9; Nr. 83, 222, 436, 440, 441, 522 |
+| D-3, Stelle 2 | nach Entscheid der Fachstelle ergänzt | Nach dem Auftrag hatte Stelle 2 nur den Ansatzpunkt; der bisherige «Was hilft»-Satz fiel weg und war gemeldet. Auf Entscheid der Fachstelle (09.10.2026, im Chat) steht er wieder vor dem Ansatzpunkt, im bisherigen Wortlaut: «Argumentieren Sie nicht weiter, sprechen Sie langsamer und machen Sie weniger Druck.» Markup und Schrift wie bei Stelle 1 und 3. | `verstehen` › Abbildung 2, Stelle 2; Bildschirmfotos bei 1280 und 360 px; `abgleich/verstehen.md`, Prüfbedarf 9 (erledigt), Nr. 83, 222, 436, 440, 441, 522 |
 | D-4 | umgesetzt | Abschnitt 07: erster Satz, die beiden Absätze aus dem Bestand Z. 162–164 wörtlich, Merksatz als `div.puk-longform__reflection` mit `h3` «Merksatz für Angehörige», danach «Mehr dazu unter …»; `visualPlan` › `v-vs-einordnung` nachgeführt | `verstehen` › `einordnung`; Bildschirmfoto bei 1280 px; `abgleich/verstehen.md` Nr. 102–107 «übernommen» |
 | Regeln | eingehalten | Wortlaute aus D-1 bis D-4 unverändert; nichts gekürzt; Abgleich für D-3 und D-4 nachgeführt (alle Zeilen mit Ort `verstehen#anspannung`, das Handout `anspannungskurve`, «Verstehen hat Grenzen»), 0 ohne Fundstelle | `abgleich/README.md`, Abschnitt «Korrektur Etappe 1d» |
 
@@ -64,11 +64,11 @@ Skript `node abgleich/bedienung.mjs`, Chromium, nach `load` und `document.fonts.
 | Seite | Tabstopps | Seitenhöhe bei 360 px | höchste Figur bei 360 px |
 | --- | ---: | ---: | --- |
 | `index` | 10 | 3863 px | – |
-| `verstehen` | 19 | 16 756 px | Annahmen 3714 px |
+| `verstehen` | 19 | 16 954 px | Annahmen 3714 px |
 | `beziehungen` | 15 | 12 737 px | Zwei Sichten 2359 px |
 | `grenzen` | 21 | 16 413 px | DEAR 1791 px |
 
-- Abbildung 2 `verstehen` ist bei 360 px 2994 px hoch (gemessen nach dem Laden der Schriften); Abschnitt 07 ist mit dem Merksatz länger.
+- Abbildung 2 `verstehen` ist bei 360 px 3192 px hoch (gemessen nach dem Laden der Schriften); Abschnitt 07 ist mit dem Merksatz länger.
 - Die Pfeile der Schleife sind unverändert: 7,5 bis 15,3 px vor dem Zielkasten bei 1440, 1280, 768 und 720 px (Tabelle in `abgleich/README.md`).
 - Alle Tabstopps haben einen sichtbaren Fokus; der erste ist «Zum Hauptinhalt».
 
@@ -87,13 +87,13 @@ Gemessen an der alten Seite allein, mit derselben Zählweise für alt und neu (`
 | Seite | Alt: Seite allein | Neu | Neu / alt | Richtwert | Richtwert + 5 % | Absicherungen je 100 Wörter alt → neu | Semikolons im Fliesstext alt → neu |
 | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
 | `index` | 433 | 238 | 55 % | – | – | 1,85 → 1,68 | 1 → 0 |
-| `verstehen` | 2524 | 1447 | 57 % | 1300 | 1365 | 2,54 → 2,83 | 12 → 0 |
+| `verstehen` | 2524 | 1461 | 58 % | 1300 | 1365 | 2,54 → 2,81 | 12 → 0 |
 | `beziehungen` | 2149 | 1164 | 54 % | 1100 | 1155 | 3,82 → 3,69 | 6 → 1 |
 | `grenzen` | 2985 | 1554 | 52 % | 1500 | 1575 | 2,41 → 2,06 | 4 → 0 |
 
-- **`verstehen`:** Mit den Kurzbeschreibungen wären es 1542 Wörter, gegenüber 1379 in 1c also +163: Abbildung 2 +99 (D-3), Abschnitt 07 +66 (D-4).
+- **`verstehen`:** Mit den Kurzbeschreibungen wären es 1556 Wörter, gegenüber 1379 in 1c also +177: Abbildung 2 +113 (D-3, mit «Was hilft» bei Stelle 2), Abschnitt 07 +66 (D-4).
 - **`beziehungen` und `grenzen`:** Der sichtbare Text ist gleich; nur die Kurzbeschreibungen fallen aus der Zählung.
-- **Absicherungen auf `verstehen`:** 2,83, über dem Bestand (2,54). Grund sind die Wortlaute aus D-3 und D-4 («kann», «können», «könnten»).
+- **Absicherungen auf `verstehen`:** 2,81, über dem Bestand (2,54). Grund sind die Wortlaute aus D-3 und D-4 («kann», «können», «könnten»).
 
 ## Visualisierungs-Check
 
@@ -121,11 +121,11 @@ Selbstprüfung als Matrix je Figur (Vorlage im Starter). E = erfüllt · T = tei
 - **1, 2:** Die Planzeile ist nachgeführt: Format «figure», Aussage, Quelle, Alternative, Begründung, `entryPoint` Stelle 2. Kein Gate-Hinweis `visual-plan`.
 - **3:** «Was wird besser verstanden?»: wann Reden hilft und wann eine Pause besser ist. Die Kurve zeigt den Verlauf, die Liste sagt je Stelle, was hilft; die Kernaussage nennt die Pause.
 - **4:** Kernaussage zwei Sätze, Kurztext drei Sätze, beide im Wortlaut des Auftrags.
-- **5:** Stelle 2 «Es wird eng», in Zeichnung und Liste mit doppeltem Ring, mit «Ansatzpunkt für Angehörige: Senken Sie Ihr eigenes Tempo, …».
+- **5:** Stelle 2 «Es wird eng», in Zeichnung und Liste mit doppeltem Ring, mit «Was hilft» und «Ansatzpunkt für Angehörige: Senken Sie Ihr eigenes Tempo, …».
 - **6:** Die Kurve verbindet die Handouts «Anspannungskurve», Stressmodell, «Hohe Anspannung» und Zustands-Landkarte in einer Darstellung; Abschnittstext und Figur doppeln sich nicht.
 - **7:** kein Kartenraster; eine Kurve und eine nummerierte Liste.
 - **8:** Die Höhe der Kurve trägt die Anspannung, die Reihenfolge den Gesprächsverlauf, der doppelte Ring den Ansatzpunkt. Eine Linienstärke (2 px), keine Füllung.
-- **9, T:** Die Liste ist in vier Stellen mit Bezeichnungen gegliedert. Sie trägt aber viel Text: Bei 360 px ist die Figur 2994 px hoch.
+- **9, T:** Die Liste ist in vier Stellen mit Bezeichnungen gegliedert. Sie trägt aber viel Text: Bei 360 px ist die Figur 3192 px hoch.
 - **10:** Vertiefung «Grenzen des Bildes»: «Die Kurve stellt den Verlauf beispielhaft dar. Sie ist kein validiertes Messinstrument …». Kennzeichnung «Eigene didaktische Darstellung nach dem Handout «Die Anspannungskurve»».
 - **11:** Hauptaussagen, Liste und Ansatzpunkt stehen ausserhalb der Vertiefung; kein Skript.
 - **12:** Bei 320 px bleibt die Kurve 238 px breit mit den Nummern 1 bis 4; die Liste trägt den Text. Textfassung über `aria-describedby` (`p.puk-sr`).
@@ -156,8 +156,7 @@ Selbstprüfung als Matrix je Figur (Vorlage im Starter). E = erfüllt · T = tei
   | 12 | Pendel |
 
 - **Profil-Update:** 11 Dateien `components/Vis*/preview.html` aus dem Patch gibt es im Repository nicht; ihre Hunks sind nicht angewendet.
-- **Stelle 2 ohne «Was hilft»:** nach dem Wortlaut von D-3; Prüfbedarf 9 in `abgleich/verstehen.md`.
-- **Umfang:** `verstehen` (1447) und `beziehungen` (1164) liegen über Richtwert plus 5 %; der Richtwert gilt nicht, über die Länge entscheidet die Fachstelle.
+- **Umfang:** `verstehen` (1461) und `beziehungen` (1164) liegen über Richtwert plus 5 %; der Richtwert gilt nicht, über die Länge entscheidet die Fachstelle.
 - **Offen für die Fachstelle:**
   - R3-W1-05, R3-W1-06, F-V-11, F-V-05, F-W1-11, F-W2-02, F-W2-03
   - Prüfbedarf in `abgleich/*.md`
