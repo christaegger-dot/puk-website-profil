@@ -8,7 +8,7 @@
 })(typeof self !== 'undefined' ? self : this, function () {
 'use strict';
 const VERSION = 'PUK Website Kit 1.10.1-r4 · abgeleitet';
-const BUILD = 'r4-3';
+const BUILD = 'r4-4';
 const FORMATS = ['text', 'figure', 'process', 'cycle', 'comparison', 'decision', 'illustration', 'stepwise-model', 'tension-field', 'relationship-map', 'continuum', 'layer-model'];
 /* Interaktive Komponenten und Erklärmuster G brauchen components/interaktion.js (HTML-Fassungen ohne React). */
 const INTERACTIVE = ['data-puk-accordion', 'data-puk-tabs', 'data-puk-disclosure', 'data-puk-dialog-open', 'data-vis-build'];
@@ -18,6 +18,8 @@ const LEGACY_SAFETY = ['persistent-subdued', 'direct'];
 /* Hinweise aus dem Website-Review Teil 1 (fachliche Prüfung): Schweizer Kontext, Orthografie, personenzentrierte Sprache. Nur Hinweise (warn), keine Blocker: Stichwortprüfung, kein Ersatz für die fachliche Prüfung. */
 const DE_TERMS = /\b(Jugendamt|Betreuungsgerichts?|rechtliche[nr]? Betreuung|Betreuungsverfahren|PsychKG|SGB\s?[IVX]+|Pflegegrade?s?|Pflegekasse|Erwerbsminderungsrente|Schwerbehindertenausweis|Telefonseelsorge|Amtsgerichts?|Sozialpsychiatrische[nr]? Dienst(?:es)?)\b/i;
 const LABELS = /\b(?:die|der|den|des|dem|ein|eine|einen|einem|einer|als)\s+(Schizophrenen?|Psychotiker(?:in(?:nen)?)?|Borderliner(?:in(?:nen)?)?|Bipolaren|Süchtigen|Geisteskranken?|Irren)\b|\bpsychisch Kranken?\b/i;
+const INLINE_TOPICS = ['selbstgefaehrdung', 'gewalt', 'akute-krise'];
+const INLINE_RE = /<p data-responsibility-inline\s*>\s*<\/p>/g;
 const REVIEW_WARNINGS = ['orthography', 'swiss-context', 'person-first', 'card-grid', 'inline-style', 'figure-core', 'entry-point', 'plan-coverage'];
 /* Profilentscheid 08.10.2026: Erklärmodelle (Kreislauf, Prozesspfad, Modell in Schritten) prüfen, wo Angehörige ansetzen können – im Plan als «entryPoint» (Ansatzpunkt oder «entfällt: Begründung»), in der Figur als .puk-vis-ansatz. */
 const ENTRY_FORMATS = ['cycle', 'process', 'stepwise-model'];
@@ -111,6 +113,9 @@ function renderPage(cfg, page, content) {
     : `Zuständigkeitsverweis ungeprüft: fachliche Prüfung ${sa.reviewStatus === 'ausstehend' ? 'ausstehend' : 'nicht dokumentiert'} · Verantwortung: ${esc(sa.owner || 'offen')}.`;
   const senderBadge = s.status === 'freigegeben' ? '' : `<span class="puk-site-draft">${esc(s.statusLabel || 'Platzhalter, nicht freigegeben')}</span>`;
   const direct = '';
+  /* Profilentscheid 09.10.2026: Verweis im Text auf die zuständigen Stellen. Der Platzhalter <p data-responsibility-inline></p> wird mit dem geprüften Wortlaut aus site.config.json › responsibility.inline gefüllt; Seiten schreiben ihn nie selbst. */
+  const inl = cfg.responsibility && cfg.responsibility.inline;
+  const body = inl && inl.text ? content.replace(INLINE_RE, `<p class="puk-longform__boundary puk-site-inline-ref" data-responsibility-inline>${esc(inl.text)}</p>`) : content;
   const subdued = sa.variant === 'responsibility' ? `<section class="puk-site-safety puk-site-safety--responsibility" data-safety-access="responsibility" data-review-status="${esc(sa.reviewStatus)}" aria-labelledby="puk-safety-title"><h2 class="puk-web-footer__heading" id="puk-safety-title">${esc(sa.label || 'Zuständigkeit')}</h2><p class="puk-web-footer__copy">${esc(sa.text)}</p>${sa.targetHref ? `<p class="puk-web-footer__copy"><a href="${esc(sa.targetHref)}">${esc(sa.targetLabel)}</a></p>` : ''}${review ? `<p class="puk-web-footer__copy puk-site-review">${review}</p>` : ''}</section>` : '';
   const draftbar = page.status === 'draft' ? `<p class="puk-site-draftbar" data-page-status="draft"><span class="puk-web-container">Entwurf · nicht in der Navigation · nicht veröffentlichen</span></p>` : '';
   return `<!DOCTYPE html>
@@ -139,7 +144,7 @@ ${nav.map(p => `<li><a class="puk-web-nav__link" href="${esc(p.href)}"${p.id ===
 <div class="puk-web-container"><p class="puk-site-sender" data-sender><span class="puk-site-sender__label">Absenderin</span><span class="puk-site-sender__name" data-sender-unit>${esc(s.orgUnit)}</span><span aria-hidden="true">·</span><span data-sender-institution>${esc(s.institution)}</span>${s.email ? `<span aria-hidden="true">·</span><a class="puk-link--inline" data-sender-email href="mailto:${esc(s.email)}">${esc(s.email)}</a>` : ''}${senderBadge}</p></div>
 </header>
 ${direct}<main id="main-content" class="puk-web-main" tabindex="-1">
-${content.trim()}
+${body.trim()}
 </main>
 <footer class="puk-web-footer" data-safety-variant="${esc(sa.variant)}"><div class="puk-web-container puk-web-footer__grid">
 ${subdued}<section aria-labelledby="puk-site-info-title"><h2 class="puk-web-footer__heading" id="puk-site-info-title">Über diese Seiten</h2>${cfg.disclaimer ? `<p class="puk-web-footer__copy" data-disclaimer>${esc(cfg.disclaimer)}</p>` : ''}<p class="puk-web-footer__copy">Inhaltsverantwortung: ${esc(cfg.contentOwner)}</p><p class="puk-web-footer__copy">Redaktioneller Status: ${esc(cfg.editorialStatusLabel || cfg.editorialStatus)}</p><p class="puk-web-footer__copy">${esc(VERSION)} – abgeleitetes Profil auf Basis des PUK Zürich Design System 1.10.1, nicht dessen offizielle Version.</p></section>
@@ -176,10 +181,15 @@ function gate(cfg, files, opts = {}) {
     }
     if (rs.reviewStatus === 'geprueft' && !reviewDocumented(rs)) add('block', 'site', 'review-doc', 'reviewStatus «geprueft» ohne reviewedBy und reviewedAt – gilt nicht als verifiziert');
     else if (rs.reviewStatus !== 'geprueft') prod('site', 'safety-review', `Zuständigkeitsverweis nicht fachlich geprüft (reviewStatus: ${rs.reviewStatus || 'fehlt'})`);
+    if (rs.inline) {
+      if (!rs.inline.text) add('block', 'site', 'inline-ref', 'responsibility.inline.text fehlt');
+      else if (/\d{3}/.test(rs.inline.text)) add('block', 'site', 'inline-ref', 'Verweis im Text nennt Nummern – zulässig sind nur Stellen ohne Nummern');
+      if (rs.inline.reviewStatus === 'geprueft' && !reviewDocumented(rs.inline)) add('block', 'site', 'review-doc', 'responsibility.inline: reviewStatus «geprueft» ohne reviewedBy und reviewedAt');
+    }
   }
   const pages = Array.isArray(cfg.pages) ? cfg.pages : [];
   if (!pages.length) add('block', 'site', 'config', 'pages fehlt');
-  const byPath = {}; pages.forEach(p => { if (p.href) byPath[pagePath(p)] = p; });
+  const byPath = {}; pages.forEach(p => { if (p.href) byPath[pagePath(p)] = p; }); let inlineUsed = false;
   const ids = new Set();
   for (const p of pages) {
     const pid = p.id || '?';
@@ -259,6 +269,16 @@ function gate(cfg, files, opts = {}) {
     const sa = cfg.responsibility ? Object.assign({ variant: 'responsibility' }, cfg.responsibility) : { variant: 'none' }; const mainText = main ? norm(txt(main)) : '';
     if (cfg.disclaimer && !one(doc, x => has(x, 'data-disclaimer'))) add('block', pid, 'disclaimer', 'Hinweis «ersetzt keine individuelle Abklärung oder Behandlung» fehlt auf der Seite');
     if (all(doc, x => x.attrs['data-safety-access'] === 'responsibility').length > 1) add('block', pid, 'safety-position', 'Mehr als ein Zuständigkeitsverweis auf der Seite – er steht an einer festen Stelle');
+    { /* Verweis im Text (Profilentscheid 09.10.2026): nur mit geprüftem Wortlaut, nur bei Selbstgefährdung, Gewalt oder akuter Krise, höchstens einer je Abschnitt, im Fliesstext */
+      const refs = all(doc, x => has(x, 'data-responsibility-inline')); const inl = cfg.responsibility && cfg.responsibility.inline;
+      if (refs.length) {
+        inlineUsed = true;
+        if (!inl || !inl.text) add('block', pid, 'inline-ref', 'Verweis im Text ohne Wortlaut in site.config.json › responsibility.inline');
+        else for (const r of refs) if (norm(txt(r)) !== norm(inl.text)) { add('block', pid, 'inline-ref', 'Verweis im Text weicht vom geprüften Wortlaut ab – nur über den Platzhalter <p data-responsibility-inline></p> einsetzen'); break; }
+        if (!(p.sensitiveTopics || []).some(t => INLINE_TOPICS.includes(t))) add('block', pid, 'inline-ref', 'Verweis im Text nur auf Seiten, deren sensitiveTopics Selbstgefährdung, Gewalt oder akute Krise nennen');
+        if (new Set(refs.map(r => up(r, x => x.tag === 'section'))).size < refs.length) add('block', pid, 'inline-ref', 'Mehr als ein Verweis im Text in einem Abschnitt');
+        if (refs.some(r => !up(r, x => x.tag === 'main') || up(r, x => x.tag === 'figure' || x.tag === 'details'))) add('block', pid, 'inline-ref', 'Verweis im Text gehört sichtbar in den Fliesstext – nicht in Fusszeile, Figur oder Vertiefung');
+      } }
     { if (/ß/.test(mainText)) add('warn', pid, 'orthography', 'ß im Text – Schweizer Hochdeutsch schreibt ss');
       const q = mainText.match(/[„“”]/); if (q) add('warn', pid, 'orthography', `Anführungszeichen ${q[0]} – Schweizer Guillemets «…» verwenden`);
       const de = mainText.match(DE_TERMS); if (de) add('warn', pid, 'swiss-context', `«${de[0]}» ist ein deutscher Rechtsbegriff oder ein deutsches Angebot – Schweizer Begriff und Zuständigkeit prüfen (z. B. KESB, Beistandschaft, fürsorgerische Unterbringung)`);
@@ -332,6 +352,7 @@ function gate(cfg, files, opts = {}) {
     while (queue.length) { const cp = queue.shift(); const d = docOf(cp); if (!d) continue; for (const a of all(d, x => x.tag === 'a' && has(x, 'href'))) { if (!isInternal(a.attrs.href)) continue; const r = resolve(cp, a.attrs.href).path; if (!seenP.has(r) && byPath[r]) { seenP.add(r); queue.push(r); } } }
     for (const p of pages) if (p.status === 'published' && p.href && !seenP.has(pagePath(p))) add('block', p.id, 'reachability', `Seite ${p.href} ist von der Startseite aus über keinen Link erreichbar`);
   }
+  if (inlineUsed && cfg.responsibility && cfg.responsibility.inline && cfg.responsibility.inline.reviewStatus !== 'geprueft') prod('site', 'inline-review', `Verweis im Text nicht fachlich geprüft (responsibility.inline.reviewStatus: ${cfg.responsibility.inline.reviewStatus || 'fehlt'})`);
   if (opts.report !== undefined) {
     if (opts.report === null) prod('site', 'review-report', 'PRUEFBERICHT.md fehlt – ohne Prüfbericht keine Veröffentlichung (Abschnitt «Prüfung und Freigabe»)');
     else { const rs = reportStatus(opts.report); if (rs.open.length) prod('site', 'review-report', `Prüfbericht: offene Stufen ${rs.open.join(', ')} – Status «erledigt» oder «entfällt: Begründung»`); }
@@ -340,6 +361,7 @@ function gate(cfg, files, opts = {}) {
 }
 
 /* ---------- Selbsttest: jede bekannte Fehlerklasse muss vom Gate erkannt werden ---------- */
+const INLINE_T = 'Sorgen Sie sich akut um das Leben oder die Sicherheit eines Menschen, holen Sie sofort Hilfe: ärztlicher Notfalldienst oder Notfallstation, bei Gefahr die Polizei.';
 const MUTATIONS = [
   ['Navigationsziel fehlt (Link zeigt auf nicht vorhandene Seite)', ['nav-target', 'nav'], (c, f) => rep(f, 'index.html', 'class="puk-web-nav__link" href="beziehungen-verstehen.html"', 'class="puk-web-nav__link" href="beziehungen.html"')],
   ['Seitenvertrag verweist auf fehlende Datei', ['page-file'], c => { pg(c, 'behandlung-verstehen').href = 'behandlung.html'; }],
@@ -382,6 +404,9 @@ const MUTATIONS = [
   ['Ansatzpunkt im Plan fehlt', ['entry-point'], c => { const v = pg(c, 'beziehungen-verstehen').visualPlan.find(x => x.format === 'cycle'); if (!v) return false; delete v.entryPoint; }],
   ['Ansatzpunkt im Plan, nicht in der Figur', ['entry-point'], (c, f) => rex(f, 'beziehungen-verstehen.html', /<p class="puk-vis-ansatz"[\s\S]*?<\/p>/, '')],
   ['Kartenraster mit vielen Karten', ['card-grid'], (c, f) => rep(f, 'behandlung-verstehen.html', '</main>', '<ul class="puk-web-card-list"><li>A</li><li>B</li><li>C</li><li>D</li></ul></main>')],
+  ['Verweis im Text mit eigenem Wortlaut', ['inline-ref'], (c, f) => { c.responsibility.inline = { text: INLINE_T, reviewStatus: 'ausstehend' }; return rep(f, 'beziehungen-verstehen.html', '</main>', '<p class="puk-longform__boundary" data-responsibility-inline>Rufen Sie sofort jemanden an.</p></main>'); }],
+  ['Verweis im Text auf Seite ohne sensibles Thema', ['inline-ref'], (c, f) => { c.responsibility.inline = { text: INLINE_T, reviewStatus: 'ausstehend' }; return rep(f, 'index.html', '</main>', `<p class="puk-longform__boundary" data-responsibility-inline>${INLINE_T}</p></main>`); }],
+  ['Verweis im Text versteckt in einer Vertiefung', ['inline-ref'], (c, f) => { c.responsibility.inline = { text: INLINE_T, reviewStatus: 'ausstehend' }; return rep(f, 'beziehungen-verstehen.html', '</summary>', `</summary><p class="puk-longform__boundary" data-responsibility-inline>${INLINE_T}</p>`); }],
   ['Entwurf in der Navigation', ['nav', 'link-draft'], (c, f) => rep(f, 'index.html', '</ul></nav>', '<li><a class="puk-web-nav__link" href="seitenvorlage.html">Vorlage</a></li>\n</ul></nav>')]
 ];
 function pg(c, id) { const p = c.pages.find(x => x.id === id); if (!p) throw new Error('Seite ' + id + ' fehlt'); return p; }
@@ -400,6 +425,10 @@ function selftest(cfg, files, opts = {}) {
   rows.push({ name: 'Produktion ohne Prüfbericht blockiert', expected: 'review-report', got: noRep ? 'review-report' : 'nicht erkannt', ok: noRep });
   const fullRep = gate(cfg, files, { mode: 'production', exists: base, report: done }).findings.some(x => x.id === 'review-report');
   rows.push({ name: 'Vollständiger Prüfbericht gibt die Veröffentlichung frei', expected: 'kein review-report', got: fullRep ? 'review-report' : 'kein review-report', ok: !fullRep });
+  { const c = JSON.parse(JSON.stringify(cfg)); const f = Object.assign({}, files); c.responsibility = Object.assign({}, c.responsibility, { inline: { text: INLINE_T, reviewStatus: 'ausstehend' } });
+    const ok = rep(f, 'beziehungen-verstehen.html', '</main>', `<section id="x-inline"><p class="puk-longform__boundary" data-responsibility-inline>${INLINE_T}</p></section></main>`);
+    const hitI = ok && gate(c, f, { mode: 'production', exists: base }).findings.some(x => x.level === 'block' && x.id === 'inline-review');
+    rows.push({ name: 'Produktion blockiert ungeprüften Verweis im Text', expected: 'inline-review', got: hitI ? 'inline-review' : (ok ? 'nicht erkannt' : 'Mutation nicht anwendbar'), ok: !!hitI }); }
   for (const [name, expect, mut] of MUTATIONS) {
     const c = JSON.parse(JSON.stringify(cfg)); const f = Object.assign({}, files);
     let applied; try { applied = mut(c, f) !== false; } catch (e) { applied = false; }
