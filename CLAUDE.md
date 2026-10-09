@@ -54,7 +54,7 @@ Ansehen: im Repository-Stamm `python3 -m http.server 8000` (oder `npx serve`), d
 Bauen und Prüfen sind getrennt (Abschnitt «Prüfung und Freigabe», Profilentscheid 08.10.2026). Ein bestandenes Gate heisst nicht, dass die Website gut ist.
 
 - **Nach jedem Bau, ohne Nachfrage:** Selbstprüfung in `PRUEFBERICHT.md` der Website – Visualisierungs-Check als Tabelle, je Punkt Ergebnis und Beleg (Seite und Abschnitt, Figur, Zitat) – und in der Antwort die nicht erfüllten Punkte nennen. Ein Punkt ohne Beleg gilt als nicht geprüft. Keine Prüfstufe als «erledigt» eintragen.
-- **Prüfen nur in einer eigenen Sitzung:** Die Stufen W1, W2, S, Visualisierungs-Check, Bedienung und W3 prüft eine Sitzung, die die Website nicht gebaut hat (Auftrag im Abschnitt «Prüfung und Freigabe»). Sie ändert keine Inhalte und keinen Code und committet nur den Prüfbericht.
+- **Prüfen nur in einer eigenen Sitzung:** Die Stufen W1, W2, S, Visualisierungs-Check, Bedienung und W3 sowie die Pre-Release-Audits R1 bis R3 prüft eine Sitzung, die die Website nicht gebaut hat (Auftrag im Abschnitt «Prüfung und Freigabe»). Sie ändert keine Inhalte und keinen Code und committet nur den Prüfbericht.
 - **Kein Merge ohne Prüfbericht:** Ein Pull Request mit einer neuen oder geänderten Website enthält `PRUEFBERICHT.md` im aktuellen Stand und nennt in der Beschreibung die offenen Stufen. Solange Stufen offen sind, bleibt er ein Entwurf.
 - **Keine Veröffentlichung ohne vollständigen Prüfbericht:** Das Produktionsgate blockiert sonst.
 - **Prüftiefe:** Bei Umbauten vergleicht die Prüfsitzung mindestens 20 Aussagen je Etappe mit dem Bestand, rechnet Kennzahlen der bauenden Sitzung nach und füllt den Visualisierungs-Check je Figur aus.
@@ -68,7 +68,7 @@ Bauen und Prüfen sind getrennt (Abschnitt «Prüfung und Freigabe», Profilents
 
 ## Reviews
 
-Die Review-Prompts der Fachstelle (W1 Fachliche Prüfung, W2 Gesamtkohärenz, S Sprach-Review, W3 Code-Review) gelten in dieser Reihenfolge, jeweils in einer Sitzung, die nicht gebaut hat; W3 ist ein reines Review ohne Dateiänderungen bis zur Freigabe. Ergebnisse mit Beleg in `PRUEFBERICHT.md`. Kriterien im Design-System: «Fachliche Qualität und Haltung», «Gesamtkohärenz und Aufbau», «Sprache und Ton», «Technische Qualität».
+Die Review-Prompts der Fachstelle (W1 Fachliche Prüfung, W2 Gesamtkohärenz, S Sprach-Review, W3 Code-Review) gelten in dieser Reihenfolge, jeweils in einer Sitzung, die nicht gebaut hat; W3 ist ein reines Review ohne Dateiänderungen bis zur Freigabe. Ergebnisse mit Beleg in `PRUEFBERICHT.md`. Kriterien im Design-System: «Fachliche Qualität und Haltung», «Gesamtkohärenz und Aufbau», «Sprache und Ton», «Technische Qualität». Danach, auf dem fertigen Release-Kandidaten: R1 Profil-Audit, R2 Visualisierung und Laienverständlichkeit, zuletzt R3 Freigabe-Audit mit «Go» oder «No-Go» (Abschnitt «Pre-Release-Audits», `guidelines/00-pre-release-audits.md`).
 
 ## Logo
 

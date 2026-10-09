@@ -20,6 +20,9 @@ Gehört zur Website in diesem Ordner. Wer den Starter kopiert, übernimmt diese 
 | Visualisierungs-Check | offen | | | |
 | Bedienung und Barrierefreiheit | offen | | | |
 | W3 Code-Review | offen | | | |
+| R1 Profil-Audit | offen | | | |
+| R2 Visualisierung und Laienverständlichkeit | offen | | | |
+| R3 Freigabe-Audit | offen | | | «Go», «Go mit Auflagen» oder «No-Go» |
 
 ## Selbstprüfung der bauenden Sitzung
 
@@ -76,3 +79,13 @@ E = erfüllt · T = teilweise · N = nicht erfüllt · – = nicht anwendbar. Je
 ### Bedienung und Barrierefreiheit
 
 ### W3 Code-Review
+
+## Pre-Release-Audits
+
+Aufträge und Prüfpunkte: Abschnitt «Pre-Release-Audits» (`guidelines/00-pre-release-audits.md`). Erst nach W3; R3 unmittelbar vor der Veröffentlichung. R3 steht nur bei «Go» auf «erledigt».
+
+### R1 Profil-Audit
+
+### R2 Visualisierung und Laienverständlichkeit
+
+### R3 Freigabe-Audit
