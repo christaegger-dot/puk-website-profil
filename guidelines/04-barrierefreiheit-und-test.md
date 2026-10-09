@@ -94,7 +94,7 @@ Jeder Fall gilt für VO und NV. Ergebnis je Umgebung: `bestanden` / `nicht besta
 
 #### SR-12 Kit-Beispiel «Eigene Visualisierung» (`#beispiel-visualisierung`)
 1. Figur im Lesemodus lesen. 2. Überschriftenliste prüfen.
-- Erwartet: Figur mit Name «Von der Situation zum nächsten Schritt» und Beschreibung (Bildunterschrift). Drei Listeneinträge «Schritt 1: Situation», «Schritt 2: Einordnung», «Schritt 3: Nächster Schritt» mit Frage und Text. Formen, Nummern-Grafik und Pfeile werden **nicht** vorgelesen. Die Kennzeichnung «Eigene didaktische Darstellung» wird vorgelesen. Abschnitt «Textfassung der Grafik» ist erreichbar.
+- Erwartet: Figur mit Name «Von der Situation zum nächsten Schritt» und Beschreibung (Kurzbeschreibung aus der Bildlegende, nur für Screenreader). Drei Listeneinträge «Schritt 1: Situation», «Schritt 2: Einordnung», «Schritt 3: Nächster Schritt» mit Frage und Text. Formen, Nummern-Grafik und Pfeile werden **nicht** vorgelesen. Die Kennzeichnung «Eigene didaktische Darstellung» wird vorgelesen. Abschnitt «Textfassung der Grafik» ist erreichbar.
 
 #### SR-14 Komplexe Grafiken der Musterseite (`#visualisierungsmuster`, Kopiervorlage `templates/website/longform/visualisierungsmuster.html`)
 1. Mit Grafiknavigation (VO-Rotor «Bilder»/NV G) und im Lesemodus jede der vier Abbildungen ansteuern. 2. Bei Abbildung 1 den Link «Langbeschreibung zu Abbildung 1» aktivieren. 3. Tabellenbereich «Beispiel eines Visualisierungsplans …» mit Tabellenbefehlen (VO+Pfeiltasten in der Tabelle / NV Strg+Alt+Pfeiltasten) lesen.

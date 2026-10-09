@@ -33,7 +33,7 @@ Wie Darstellungen geplant, gebaut und geprüft werden. Was dargestellt wird und 
 
 ## Aufbau einer Darstellung
 
-- `figure` mit Titel (`aria-labelledby`), Kernaussage als Satz (`p.puk-vis-kern`), kurzem Erklärtext (`p.puk-vis-short`, zwei bis vier Sätze), wo sinnvoll Vertiefung (`details.puk-vis-more`) und `figcaption` mit Kurzbeschreibung (`aria-describedby`). Das Gate meldet eine Figur ohne Kernaussage (Entwurf: Hinweis, Produktion: blockiert).
+- `figure` mit Titel (`aria-labelledby`), Kernaussage als Satz (`p.puk-vis-kern`), kurzem Erklärtext (`p.puk-vis-short`, zwei bis vier Sätze), wo sinnvoll Vertiefung (`details.puk-vis-more`) und `figcaption`. Die Legende zeigt sichtbar nur Kennzeichnung und Quelle. Die Kurzbeschreibung (`aria-describedby`) steht darin als `p.puk-sr`, nur für Screenreader: Sie sagt, wie die Grafik aufgebaut ist; Sehende brauchen das nicht, weil alle Beschriftungen HTML-Text sind (Profilentscheid 09.10.2026). Das Gate meldet eine Figur ohne Kernaussage (Entwurf: Hinweis, Produktion: blockiert).
 - **Ansatzpunkt für Angehörige:** `p.puk-vis-ansatz` mit `span.puk-vis-ansatz__key` («Ansatzpunkt für Angehörige»). Im Kreislauf trägt die Station `li.is-ansatz` (doppelte Kontur) und `span.puk-vis-cycle__key` («Ansatzpunkt»); im Prozesspfad trägt der Schritt `li.is-ansatz` (doppelter Ring); im Modell in Schritten markiert ein doppelter Ring die Stelle in der Grafik. Die Textfassung nennt den Ansatzpunkt.
 - **Alle Beschriftungen sind echter HTML-Text**; Formen, Linien und Pfeile sind `aria-hidden`. Kein Text in Bildern, wo HTML-Text möglich ist.
 - Komplexe Darstellungen haben eine sichtbare, verlinkbare Langbeschreibung oder eine vollständige gegliederte Textfassung.
