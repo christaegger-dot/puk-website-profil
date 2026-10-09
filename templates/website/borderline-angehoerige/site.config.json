@@ -160,11 +160,11 @@
           "sectionId": "bewertungen",
           "goal": "Verstehen, dass Bewertungen unter starker Anspannung weiter ausschlagen und zurückschwingen können",
           "format": "figure",
-          "statement": "Pendel mit Aufhängepunkt (Muster A): Ruhelage in der Mitte «Differenziertere Sicht»; ein kurzer Bogen mit dünner Linie «kleinerer Ausschlag» und ein langer Bogen «unter starker Anspannung grösserer Ausschlag», beide mit Pfeilen in beide Richtungen; an den Enden des langen Bogens «Sehr positive Bewertung» (links) und «Sehr negative Bewertung» (rechts). Darunter in allen Breiten eine geordnete Liste der drei Lagen mit je einem Erklärsatz aus dem Handout. Kernaussage aus dem Handout: Weder eine sehr positive noch eine sehr negative Momentaufnahme muss die ganze Beziehung oder Person beschreiben (Korrektur V-2, 09.10.2026; Korrektur 1b, C-1).",
-          "understood": "Dass ein einseitiges Urteil eine Auslenkung ist, die unter starker Anspannung grösser werden und wieder zurückschwingen kann, und dass die differenziertere Sicht die Ruhelage ist, kein Mittelwert. Die beiden Bögen zeigen den kleineren und den grösseren Ausschlag nebeneinander; als Text bliebe der Unterschied eine Behauptung. Bewusst keine Achse wie in Abbildung 2, damit die beiden Figuren nicht gleich aussehen und Verschiedenes bedeuten.",
+          "statement": "Pendel mit Aufhängepunkt (Muster A), beide Bögen Kreisbögen um den Aufhängepunkt. Langer Bogen «unter starker Anspannung grösserer Ausschlag»: an seinen Enden die ausgelenkten Pendelkörper mit «Sehr positive Bewertung» (links) und «Sehr negative Bewertung» (rechts), unten die Ruhelage «Differenziertere Sicht». Kurzer Bogen mit dünner Linie «kleinerer Ausschlag», an seinen Enden kleine Marken. Keine Pfeilspitzen. Darunter in allen Breiten eine geordnete Liste der drei Lagen mit je einem Erklärsatz aus dem Handout. Kernaussage aus dem Handout: Weder eine sehr positive noch eine sehr negative Momentaufnahme muss die ganze Beziehung oder Person beschreiben (Korrektur V-2, 09.10.2026; Korrektur 1b, C-1; Korrektur 1c, K-7).",
+          "understood": "Dass ein einseitiges Urteil eine Auslenkung ist, die unter starker Anspannung grösser werden und wieder zurückschwingen kann, und dass die differenziertere Sicht die Ruhelage ist. Die beiden Bögen zeigen die Bahn bei kleinerem und bei grösserem Ausschlag nebeneinander; als Text bliebe der Unterschied eine Behauptung. Bewusst keine Achse wie in Abbildung 2, damit die beiden Figuren nicht gleich aussehen und Verschiedenes bedeuten.",
           "source": "Eigene didaktische Pendel-Darstellung (Handout «Wenn Bewertungen unter Stress einseitiger werden»); Grundlage Linehan (1993), Hoffman et al. (2005)",
-          "alternative": "Die drei Lagen als geordnete Liste (links, Mitte, rechts) mit Überschrift und Erklärsatz unter der Zeichnung, in allen Breiten; Beschriftungen als HTML-Text über der Zeichnung, unter 560 px entfallen nur diese; Textfassung über aria-describedby",
-          "reason": "Ausschlag und Rückschwung sind eine Bewegung um eine Ruhelage; das Pendel zeigt sie als Form und Richtung. Die Schritte für Angehörige stehen sichtbar im Abschnittstext.",
+          "alternative": "Die drei Lagen als geordnete Liste (links, Mitte, rechts) mit Überschrift und Erklärsatz unter der Zeichnung, in allen Breiten; Beschriftungen als HTML-Text über der Zeichnung, unter 560 px entfallen nur diese (R3-V-03, hingenommen laut Korrektur 1c, Abschnitt 3); Textfassung über aria-describedby",
+          "reason": "Ausschlag und Rückschwung sind eine Bewegung um eine Ruhelage; das Pendel zeigt sie als Bahn der Pendelkörper. Die Schritte für Angehörige stehen sichtbar im Abschnittstext.",
           "approvalStatus": "ausstehend"
         },
         {
@@ -189,7 +189,7 @@
           "statement": "–",
           "source": "–",
           "alternative": "–",
-          "reason": "Text ist klarer: Abschluss mit Merksatz und Verweis, keine Beziehung.",
+          "reason": "Text ist klarer: kurzer Abschluss, was Verstehen leistet und was nicht, mit Verweis auf «Was zwischen Ihnen geschieht» und «Grenzen setzen»; keine Beziehung, die eine Darstellung zeigen müsste. Der Merksatz des Bestands ist entfallen (Kürzung Umfang, Korrektur 1b; Abgleich Nr. 106, 107).",
           "approvalStatus": "ausstehend"
         }
       ]
@@ -252,7 +252,7 @@
           "sectionId": "zwei-sichten",
           "goal": "Beide Perspektiven im selben Ablauf sehen",
           "format": "comparison",
-          "statement": "Dieselben vier Schritte des Beispiels, je Schritt die Sicht der betroffenen Person und die Sicht der Schwester; Schritte: Zu Station 1 und 2 · Absage, Station 4 · Nachrichten, Station 5 · Verteidigung, Zurück zu Station 1 · Gespräch endet (Korrektur V-3, 09.10.2026; Korrektur 1b, C-3). Breit stehen beide Sichten eines Schritts nebeneinander, schmal nacheinander.",
+          "statement": "Dieselben vier Schritte des Beispiels, je Schritt die mögliche Sicht der betroffenen Person und die mögliche Sicht der Schwester; Schritte: Zu Station 1 und 2 · Absage, Station 4 · Nachrichten, Station 5 · Verteidigung, Zurück zu Station 1 · Gespräch endet (Korrektur V-3, 09.10.2026). Bezeichnungen «Mögliche Sicht der betroffenen Person» und «Mögliche Sicht der Schwester» (Korrektur 1c, K-3). Breit stehen beide Sichten eines Schritts nebeneinander, schmal nacheinander.",
           "understood": "Dass beide in jedem Schritt etwas Verständliches versuchen und sich trotzdem verfehlen; Schritt für Schritt nebeneinander (schmal direkt nacheinander) wird das sichtbar.",
           "source": "Eigene didaktische Darstellung mit erfundenem Beispiel (Bestand «Beide versuchen etwas Verständliches – und verfehlen sich»)",
           "alternative": "Je Schritt eine Überschrift und zwei beschriftete Sichten; Textfassung über aria-describedby",
@@ -368,7 +368,7 @@
           "statement": "–",
           "source": "–",
           "alternative": "–",
-          "reason": "Im Bau geprüft (UMBAUPLAN, Abschnitt 3: Raster 2×2 oder Text): Text ist klarer. Die Quelle nennt das Raster selbst «keine fachliche Einstufung» und hält fest, dass sich Dringlichkeit und Belastung je nach Situation verändern; ein festes Raster würde eine Einordnung der Beispiele nahelegen, die sie ausschliesst. Die Liste trägt die Reihenfolge Dringendes vor Langfristigem samt Belastung als Kriterium. Schutz bei Bedrohung oder Gewalt steht im Kopf und im Abschnitt «Schutz» (Korrektur W2-4, 09.10.2026).",
+          "reason": "Im Bau geprüft (UMBAUPLAN, Abschnitt 3: Raster 2×2 oder Text): Text ist klarer. Die Liste nennt die vier Felder des Rasters aus der Quelle als vier Punkte: dringend oder langfristig, emotional hoch oder niedriger (Korrektur 1b, B-4). Die Quelle nennt das Raster selbst «keine fachliche Einstufung»; gezeichnet würde es eine feste Einordnung der Beispiele nahelegen. Die Seite sagt dazu «Die Reihenfolge ist eine Orientierung, keine fachliche Einstufung.» Schutz bei Bedrohung oder Gewalt steht im Kopf und im Abschnitt «Schutz» (Korrektur W2-4, 09.10.2026).",
           "approvalStatus": "ausstehend"
         },
         {
@@ -418,7 +418,7 @@
           "statement": "–",
           "source": "–",
           "alternative": "–",
-          "reason": "Im Bau geprüft (UMBAUPLAN, Abschnitt 3: Kontinuum J, Steigerung?): Text ist klarer. Die vier Möglichkeiten liegen nicht auf einer Achse – eine vereinbarte Pause kann weniger Kontakt bedeuten als getrenntes Wohnen –, und ein Kontinuum mit wachsender Linienstärke würde eine Steigerung und eine Reihenfolge nahelegen, die der Text nicht meint (keine Möglichkeit ist Pflicht oder Ziel, keine lässt sich aus einer Diagnose ableiten). Die Liste trägt die Aussage, dass es mehrere Möglichkeiten gibt.",
+          "reason": "Im Bau geprüft (UMBAUPLAN, Abschnitt 3: Kontinuum J, Steigerung?): Text ist klarer. Die vier Möglichkeiten liegen nicht auf einer Achse – eine vereinbarte Pause kann weniger Kontakt bedeuten als getrenntes Wohnen –, und ein Kontinuum mit wachsender Linienstärke würde eine Steigerung und eine Reihenfolge nahelegen, die der Text nicht meint («Beziehungserhalt ist kein verpflichtendes Ziel.», und keine Möglichkeit lässt sich aus einer Diagnose allein ableiten). Die Liste trägt die Aussage, dass es mehrere Möglichkeiten gibt.",
           "approvalStatus": "ausstehend"
         },
         {

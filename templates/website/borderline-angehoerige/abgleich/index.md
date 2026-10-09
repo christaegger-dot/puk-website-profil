@@ -2,7 +2,9 @@
 
 Neue Seite: `content/index.html` · Bestand: `/` (Startseite), `/selbsttest`, `/wegweiser` (Branch `borderline-bestand`, `bestand/borderline-angehoerige/texte/`). Statuswerte und Zählweise: `README.md` in diesem Ordner.
 
-**Stand 09.10.2026, Korrektur Etappe 1b (bauende Sitzung).** Eine Tabelle für jeden Satz der alten Seite und der zugeordneten Handouts (Korrektur 1b, E). Sie ersetzt die abschnittsweisen Tabellen vom 08.10.2026 und den Abschnitt «Satz für Satz» der ersten Korrektur; wo diese sich widersprachen, gilt die Zeile hier. Statuswerte, Zählweise und Skripte: `README.md`.
+**Stand 09.10.2026, Korrektur Etappe 1c (bauende Sitzung).** Eine Tabelle für jeden Satz der alten Seite und der zugeordneten Handouts (Korrektur 1b, E). Sie ersetzt die abschnittsweisen Tabellen vom 08.10.2026 und den Abschnitt «Satz für Satz» der ersten Korrektur; wo diese sich widersprachen, gilt die Zeile hier. Statuswerte, Zählweise und Skripte: `README.md`.
+
+**Korrektur 1c:** Zeilen zu K-1 bis K-5 nachgeführt; Status und Bemerkungen der Stichprobe aus den Belegen der dritten Prüfrunde (Abschnitt 4) berichtigt.
 
 **Zählung:** 255 Sätze, davon 6 übernommen, 2 gekürzt, 2 zusammengeführt, 12 verschoben, 3 geändert, 229 entfällt, 1 Bezeichnung.
 
@@ -271,9 +273,9 @@ Neue Seite: `content/index.html` · Bestand: `/` (Startseite), `/selbsttest`, `/
 | 253 | `/wegweiser` › Das könnte Sie auch interessieren | Selbstfürsorge | entfällt | – | – | Meta-Text: Verweise auf `krise`, `selbstfuersorge` (folgen mit Etappe 2) |
 | 254 | `/wegweiser` › Das könnte Sie auch interessieren | Entlastung für Ihre eigene Situation. | entfällt | – | – | Meta-Text: Verweise auf `krise`, `selbstfuersorge` (folgen mit Etappe 2) |
 
-## Prüfbedarf für W1 (Stand 09.10.2026, Korrektur 1b)
+## Prüfbedarf für W1 (Stand 09.10.2026, Korrektur 1c)
 
-Korrektur 1b hat diese Seite nicht verändert. Offen bleibt:
+Die Korrekturen 1b und 1c haben diese Seite nicht verändert. Offen bleibt:
 
 1. **Beratung** (Korrektur W1-4): Der Wortlaut der Fachstelle steht unverändert. Davor steht wie im Bestand der Satz «Sie dürfen auch mit Erschöpfung, Schuldgefühlen oder schwierigen Entscheidungen eigene Beratung suchen.» Bitte bestätigen, dass er bleiben soll. «Vor Ort» nennt keinen Ort (F-W2-03, Hinweis an die Fachstelle).
 2. **Einstiege als Anliegen** (Korrektur W2-6): «Ich verstehe nicht, warum Gespräche so schnell kippen.» · «Wir verfehlen uns immer wieder, obwohl wir es beide gut meinen.» · «Ich kann nicht mehr und weiss nicht, wie ich Nein sagen soll.» Die zweite und dritte Formulierung stammen von der bauenden Sitzung.

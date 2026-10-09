@@ -6,9 +6,10 @@
 /* Muster B mit fünf Stationen (Bedeutungsschleife). Das Muster setzt vier Stationen auf ein 3×3-Raster;
    hier Station 1 oben, 2 rechts, 3 unten rechts, 4 unten links, 5 links. Schmal gilt die Liste des Musters;
    alle Stationen sind dort gleich breit (Station 3 stand bei 360 px versetzt, weil das Muster
-   die Stationen auch schmal zentriert). Pfeile 2 → 3 und 4 → 5 im SVG so kurz, dass die Spitze zwischen den Kästen liegt. */
-.bl-cycle--5 li:nth-child(3){grid-area:3/3}
-.bl-cycle--5 li:nth-child(4){grid-area:3/1}
+   die Stationen auch schmal zentriert). Station 3 und 4 sitzen breit am unteren Rand ihrer Rasterzeile, damit zwischen
+   Station 4 und der höheren Station 5 Platz für den Pfeil bleibt; die Pfeile sind darauf gemessen (abgleich/bedienung.mjs). */
+.bl-cycle--5 li:nth-child(3){grid-area:3/3;align-self:end}
+.bl-cycle--5 li:nth-child(4){grid-area:3/1;align-self:end}
 .bl-cycle--5 li:nth-child(5){grid-area:2/1}
 .bl-cycle__ex{font:var(--type-body-sm);color:var(--text-default)}
 /* Mit fünf Stationen trägt die Kreisanordnung nur bei voller Breite des Musters (600 px): darunter überlappen
@@ -18,10 +19,10 @@
   .bl-cycle--5>svg{display:none}
   .bl-cycle--5{aspect-ratio:auto}
   .bl-cycle--5 ol{position:relative;display:flex;flex-direction:column;padding-right:var(--space-10)}
-  .bl-cycle--5 li{margin:0;text-align:left;position:relative;align-self:stretch}
+  .bl-cycle--5 li,.bl-cycle--5 li:nth-child(3),.bl-cycle--5 li:nth-child(4){margin:0;text-align:left;position:relative;align-self:stretch}
   .bl-cycle--5 li:not(:last-child){margin-bottom:var(--space-6)}
-  .bl-cycle--5 li:not(:last-child)::after{content:"";position:absolute;left:var(--space-6);top:100%;height:var(--space-6);border-left:2px solid var(--puk-blue-100)}
-  .bl-cycle--5 ol::after{content:"";position:absolute;right:var(--space-3);top:calc(var(--space-6) + var(--space-1));bottom:calc(var(--space-6) + var(--space-1));width:var(--space-5);border:2px solid var(--puk-blue-100);border-left:0}
+  .bl-cycle--5 li:not(:last-child)::after{content:"";position:absolute;left:var(--space-6);top:100%;height:var(--space-6);border-left:var(--border-width-strong) solid var(--puk-blue-100)}
+  .bl-cycle--5 ol::after{content:"";position:absolute;right:var(--space-3);top:calc(var(--space-6) + var(--space-1));bottom:calc(var(--space-6) + var(--space-1));width:var(--space-5);border:var(--border-width-strong) solid var(--puk-blue-100);border-left:0}
   .bl-cycle--5 ol::before{content:"";position:absolute;right:calc(var(--space-3) + var(--space-5));top:calc(var(--space-5) + var(--space-1));border-style:solid;border-width:var(--space-2) var(--space-3) var(--space-2) 0;border-color:transparent var(--puk-blue-100) transparent transparent}
   .bl-cycle-fig .puk-vis-cycle__loop{display:flex}
   .bl-cycle-fig [data-cycle-wide]{display:none}
@@ -35,13 +36,17 @@
 .bl-fig{position:relative;max-width:calc(var(--space-20) * 8);aspect-ratio:2/1;margin:0 auto var(--space-6)}
 .bl-fig>svg{position:absolute;inset:0;width:100%;height:100%}
 .bl-fig__label{position:absolute;margin:0;font:var(--type-body-sm);font-weight:var(--fw-medium);color:var(--text-default);line-height:var(--lh-subheading)}
-/* Pendel, Zeichnung 640 × 344 */
-.bl-fig--pendel{aspect-ratio:640/344}
-.bl-fig--pendel .bl-fig__label--pos{right:80%;top:67.4%;max-width:19%;transform:translateY(-50%);text-align:right}
-.bl-fig--pendel .bl-fig__label--neg{left:80%;top:67.4%;max-width:19%;transform:translateY(-50%)}
-.bl-fig--pendel .bl-fig__label--mid{left:50%;top:53.5%;max-width:40%;transform:translateX(-50%);text-align:center}
-.bl-fig--pendel .bl-fig__label--klein{left:50%;top:69.2%;max-width:40%;transform:translateX(-50%);text-align:center;font-weight:var(--fw-regular)}
-.bl-fig--pendel .bl-fig__label--gross{left:5%;right:5%;top:86%;text-align:center;font-weight:var(--fw-regular)}
+/* Pendel, Zeichnung 640 × 330: Aufhängepunkt (320, 16). Langer Bogen = Kreis um den Aufhängepunkt, Radius 250, ±36°,
+   mit den ausgelenkten Pendelkörpern an den Enden (x 173 / 467, y 218) und der Ruhelage unten (320, 266).
+   Kurzer Bogen = Kreis um den Aufhängepunkt, Radius 150, ±15°, mit kleinen Marken an den Enden (y 161, Scheitel 166).
+   Die Beschriftungen auf dem senkrechten Stab tragen den Grund der Figur, damit der Stab sie nicht durchkreuzt. */
+.bl-fig--pendel{aspect-ratio:640/330}
+.bl-fig--pendel .bl-fig__label--pos{right:76.3%;top:66.2%;max-width:23%;transform:translateY(-50%);text-align:right}
+.bl-fig--pendel .bl-fig__label--neg{left:76.3%;top:66.2%;max-width:23%;transform:translateY(-50%)}
+.bl-fig--pendel .bl-fig__label--klein,.bl-fig--pendel .bl-fig__label--mid{left:50%;max-width:40%;transform:translateX(-50%);text-align:center;padding:0 var(--space-1);background:var(--surface-structure)}
+.bl-fig--pendel .bl-fig__label--klein{top:52.1%;font-weight:var(--fw-regular)}
+.bl-fig--pendel .bl-fig__label--mid{bottom:25.5%}
+.bl-fig--pendel .bl-fig__label--gross{left:5%;right:5%;top:87.9%;text-align:center;font-weight:var(--fw-regular)}
 /* Brücke, Zeichnung 640 × 320 */
 .bl-fig--bruecke .bl-fig__label{transform:translate(-50%,-50%);text-align:center}
 .bl-fig--bruecke .bl-fig__label--sie{left:12%;top:67%}
@@ -87,3 +92,14 @@
   .bl-myth__claim{padding-top:0}
   .bl-sicht{grid-template-columns:minmax(0,1fr)}
 }
+
+/* Schrift in Figuren: Überschriften, «Was hilft» und Ansatzpunkte nicht kleiner als der Erklärtext daneben.
+   Überschriften im stärksten Gewicht des Profils (--fw-medium; einen Token für Fett gibt es nicht).
+   Figuren mit Erklärtext in Seitenschrift (21 px): Anspannung, Annahmen, Zwei Sichten. */
+.puk-vis-cont__zones h3,.bl-myth .puk-vis-compare__col h3,.bl-sicht>h3{font-size:var(--web-size-h4);font-weight:var(--fw-medium);line-height:var(--lh-subheading)}
+.puk-vis-cont__zones dt{font-size:var(--web-size-body);font-weight:var(--fw-medium);line-height:var(--lh-subheading);color:var(--text-default)}
+.puk-vis-cont__zones dd,.puk-vis-cont__zones .puk-vis-ansatz{font-size:var(--web-size-body);font-weight:var(--web-fw-body);line-height:var(--lh-body)}
+.puk-vis-cont__zones .puk-vis-ansatz__key{font-size:var(--web-size-body);font-weight:var(--fw-medium);line-height:var(--lh-subheading)}
+.bl-sicht .puk-vis-compare__key{font-size:var(--web-size-body);font-weight:var(--fw-regular);line-height:var(--lh-subheading)}
+/* Figuren mit Erklärtext in type-body-sm (15 px): Bezeichnung «Ansatzpunkt» in der Schleife und im Ansatzpunkt-Kasten */
+.puk-vis-cycle__key,.puk-vis-ansatz__key{font:var(--type-body-sm);font-weight:var(--fw-medium)}
