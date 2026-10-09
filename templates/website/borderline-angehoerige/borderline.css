@@ -1,60 +1,89 @@
 /* Borderline – Orientierung für Angehörige · website-eigene Ergänzung, nach starter.css einbinden.
-   Nur Anordnung und Schriftgrösse über Profil-Tokens; keine eigenen Farben, Schatten oder Schriften.
-   Breite und schmale Darstellung folgen den Container-Abfragen der Muster (.puk-vis-wide, Grenze 560 px). */
+   Nur Anordnung und Schrift über Profil-Tokens; keine eigenen Farben, Schatten, Schriften oder freien Pixelwerte.
+   Breite und schmale Darstellung folgen den Container-Abfragen der Muster (.puk-vis-wide, Grenze 560 px).
+   Lesetext in Figuren steht in Seitenschrift (Leitlinie 03 «Lesen in Seitenschrift»). */
 
 /* Muster B mit fünf Stationen (Bedeutungsschleife). Das Muster setzt vier Stationen auf ein 3×3-Raster;
    hier Station 1 oben, 2 rechts, 3 unten rechts, 4 unten links, 5 links. Schmal gilt die Liste des Musters;
-   alle Stationen sind dort gleich breit (Prüfbefund B-3: Station 3 stand bei 360 px versetzt, weil das Muster
-   die Stationen auch schmal zentriert). */
+   alle Stationen sind dort gleich breit (Station 3 stand bei 360 px versetzt, weil das Muster
+   die Stationen auch schmal zentriert). Pfeile 2 → 3 und 4 → 5 im SVG so kurz, dass die Spitze zwischen den Kästen liegt. */
 .bl-cycle--5 li:nth-child(3){grid-area:3/3}
 .bl-cycle--5 li:nth-child(4){grid-area:3/1}
 .bl-cycle--5 li:nth-child(5){grid-area:2/1}
 .bl-cycle__ex{font:var(--type-body-sm);color:var(--text-default)}
-.bl-cycle__who{font:var(--type-caption);color:var(--text-default)}
-@container (max-width:560px){.bl-cycle--5 li{align-self:stretch}}
+/* Mit fünf Stationen trägt die Kreisanordnung nur bei voller Breite des Musters (600 px): darunter überlappen
+   Station 4 und 5, und der Pfeil 4 → 5 verschwindet. Deshalb gilt die Liste des Musters hier schon bis 660 px
+   Containerbreite (Regeln wie im Muster, Masse über Tokens). */
+@container (max-width:660px){
+  .bl-cycle--5>svg{display:none}
+  .bl-cycle--5{aspect-ratio:auto}
+  .bl-cycle--5 ol{position:relative;display:flex;flex-direction:column;padding-right:var(--space-10)}
+  .bl-cycle--5 li{margin:0;text-align:left;position:relative;align-self:stretch}
+  .bl-cycle--5 li:not(:last-child){margin-bottom:var(--space-6)}
+  .bl-cycle--5 li:not(:last-child)::after{content:"";position:absolute;left:var(--space-6);top:100%;height:var(--space-6);border-left:2px solid var(--puk-blue-100)}
+  .bl-cycle--5 ol::after{content:"";position:absolute;right:var(--space-3);top:calc(var(--space-6) + var(--space-1));bottom:calc(var(--space-6) + var(--space-1));width:var(--space-5);border:2px solid var(--puk-blue-100);border-left:0}
+  .bl-cycle--5 ol::before{content:"";position:absolute;right:calc(var(--space-3) + var(--space-5));top:calc(var(--space-5) + var(--space-1));border-style:solid;border-width:var(--space-2) var(--space-3) var(--space-2) 0;border-color:transparent var(--puk-blue-100) transparent transparent}
+  .bl-cycle-fig .puk-vis-cycle__loop{display:flex}
+  .bl-cycle-fig [data-cycle-wide]{display:none}
+  .bl-cycle-fig [data-cycle-narrow]{display:inline}
+}
 
 /* Muster A mit direkter Beschriftung (Pendel, Brücke): Zeichnung als SVG, Beschriftungen als HTML-Text darüber
-   (Leitlinie 07: Beschriftungen sind echter Text). Lage in Prozent der Zeichnung (viewBox 640 × 320).
-   Schmal stehen die Beschriftungen des Pendels als Liste unter der Zeichnung; bei der Brücke trägt die Liste der Teile
-   die Beschriftung. Die Zeichnung bleibt in beiden Fällen. */
-.bl-fig{position:relative;max-width:640px;aspect-ratio:2/1;margin:0 auto var(--space-6)}
+   (Leitlinie 07: Beschriftungen sind echter Text). Lage in Prozent der Zeichnung.
+   Pendel: schmal entfallen nur die Beschriftungen im Bild; die Liste unter der Zeichnung steht in allen Breiten.
+   Brücke: alle Teile bleiben auch schmal im Bild beschriftet, dort mit einer schmaleren Zeichnung. */
+.bl-fig{position:relative;max-width:calc(var(--space-20) * 8);aspect-ratio:2/1;margin:0 auto var(--space-6)}
 .bl-fig>svg{position:absolute;inset:0;width:100%;height:100%}
-.bl-fig__label{position:absolute;margin:0;font:var(--type-body-sm);font-weight:var(--fw-medium);color:var(--text-default);line-height:1.3}
-.bl-fig--pendel .bl-fig__label--pos{right:71.9%;top:54.4%;max-width:27%;transform:translateY(-50%);text-align:right}
-.bl-fig--pendel .bl-fig__label--neg{left:71.9%;top:54.4%;max-width:27%;transform:translateY(-50%)}
-.bl-fig--pendel .bl-fig__label--mid{left:50%;top:74%;max-width:40%;transform:translateX(-50%);text-align:center}
-.bl-fig--pendel .bl-fig__label--stress{left:60%;top:16%;max-width:38%;transform:translateY(-50%);font-weight:var(--fw-regular)}
+.bl-fig__label{position:absolute;margin:0;font:var(--type-body-sm);font-weight:var(--fw-medium);color:var(--text-default);line-height:var(--lh-subheading)}
+/* Pendel, Zeichnung 640 × 344 */
+.bl-fig--pendel{aspect-ratio:640/344}
+.bl-fig--pendel .bl-fig__label--pos{right:80%;top:67.4%;max-width:19%;transform:translateY(-50%);text-align:right}
+.bl-fig--pendel .bl-fig__label--neg{left:80%;top:67.4%;max-width:19%;transform:translateY(-50%)}
+.bl-fig--pendel .bl-fig__label--mid{left:50%;top:53.5%;max-width:40%;transform:translateX(-50%);text-align:center}
+.bl-fig--pendel .bl-fig__label--klein{left:50%;top:69.2%;max-width:40%;transform:translateX(-50%);text-align:center;font-weight:var(--fw-regular)}
+.bl-fig--pendel .bl-fig__label--gross{left:5%;right:5%;top:86%;text-align:center;font-weight:var(--fw-regular)}
+/* Brücke, Zeichnung 640 × 320 */
 .bl-fig--bruecke .bl-fig__label{transform:translate(-50%,-50%);text-align:center}
 .bl-fig--bruecke .bl-fig__label--sie{left:12%;top:67%}
 .bl-fig--bruecke .bl-fig__label--andere{left:87%;top:67%;max-width:24%}
-.bl-fig--bruecke .bl-fig__label--gelaender{left:50%;top:23%}
-.bl-fig--bruecke .bl-fig__label--fahrbahn{left:50%;top:51.6%}
-.bl-fig--bruecke .bl-fig__label--pfeiler{left:50%;top:75%}
+.bl-fig--bruecke .bl-fig__label--gelaender{left:50%;top:21.9%}
+.bl-fig--bruecke .bl-fig__label--fahrbahn{left:50%;top:50%;line-height:var(--lh-tight)}
+.bl-fig--bruecke .bl-fig__label--pfeiler{left:50%;top:78%}
 .bl-parts li{grid-template-columns:minmax(0,1fr);padding-left:0}
+.bl-fig__narrow{display:none}
 @container (max-width:560px){
-  .bl-fig{aspect-ratio:auto;max-width:400px}
-  .bl-fig>svg{position:static;display:block;height:auto}
-  /* Pendel: die Zeichnung liegt in der Mitte der Fläche; schmal wird nur dieser Ausschnitt gezeigt, die Beschriftungen folgen als Liste */
-  .bl-fig--pendel{overflow:hidden}
-  .bl-fig--pendel>svg{width:200%;margin:0 0 var(--space-3) -50%}
-  .bl-fig--pendel .bl-fig__label{position:static;transform:none;max-width:none;text-align:left;margin:0 0 var(--space-1)}
-  /* Brücke: die Ufer bleiben beschriftet, Fahrbahn, Geländer und Pfeiler erklärt die Liste darunter */
-  .bl-fig--bruecke .bl-fig__label--gelaender,.bl-fig--bruecke .bl-fig__label--fahrbahn,.bl-fig--bruecke .bl-fig__label--pfeiler{display:none}
-  .bl-fig--bruecke .bl-fig__label--sie{left:11%;top:71%}
-  .bl-fig--bruecke .bl-fig__label--andere{left:88%;top:71%;max-width:23%}
+  .bl-fig{max-width:calc(var(--space-20) * 5)}
+  .bl-fig--pendel .bl-fig__label{display:none}
+  /* Brücke schmal: eigene, schmalere Zeichnung (400 × 360), damit alle Beschriftungen in type-body-sm Platz haben */
+  .bl-fig--bruecke{aspect-ratio:400/360}
+  .bl-fig--bruecke .bl-fig__wide{display:none}
+  .bl-fig--bruecke .bl-fig__narrow{display:block}
+  .bl-fig--bruecke .bl-fig__label--sie{left:12.5%;top:66.7%}
+  .bl-fig--bruecke .bl-fig__label--andere{left:87.5%;top:66.7%;max-width:25%}
+  .bl-fig--bruecke .bl-fig__label--gelaender{top:20%}
+  .bl-fig--bruecke .bl-fig__label--fahrbahn{top:49.4%}
+  .bl-fig--bruecke .bl-fig__label--pfeiler{top:75%}
 }
 
-/* Muster J: Achsentitel über dem Kontinuum; Beschreibung je Bereich als Absatz vor «Was hilft» */
+/* Muster J: Achsentitel über dem Kontinuum; Beschreibung je Bereich als Absatz vor «Was hilft», in Seitenschrift */
 .bl-cont-title{margin:0 0 var(--space-2);font:var(--type-body-sm);font-weight:var(--fw-medium);color:var(--text-default)}
-.puk-vis-cont__zones>li>p:not(.puk-vis-ansatz){margin:0 0 var(--space-3);font:var(--type-body-sm);color:var(--text-default)}
+.puk-vis-cont__zones>li>p:not(.puk-vis-ansatz){margin:0 0 var(--space-3);font-size:var(--web-size-body);font-weight:var(--web-fw-body);line-height:var(--lh-body);color:var(--text-default)}
 
-/* Muster E, Annahmen: je Zeile die Annahme (kleiner) und die Einordnung (hervorgehoben, durchgezogene Linie) */
+/* Muster E, Annahmen: je Zeile die Annahme (kleiner) und die Einordnung (hervorgehoben, Erklärung in Seitenschrift) */
 .bl-myths.puk-vis-compare{grid-template-columns:minmax(0,1fr);gap:var(--space-5)}
 .bl-myth{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,3fr);gap:var(--space-5);align-items:start}
 .bl-myth__claim{margin:0;padding-top:var(--space-5);font:var(--type-body-sm);color:var(--text-default)}
 .bl-myth .puk-vis-compare__col h3{margin:0}
-.bl-myth .puk-vis-compare__col p{margin:var(--space-2) 0 0;font:var(--type-body-sm);color:var(--text-default)}
+.bl-myth .puk-vis-compare__col p{margin:var(--space-2) 0 0;font-size:var(--web-size-body);font-weight:var(--web-fw-body);line-height:var(--lh-body);color:var(--text-default)}
+
+/* Muster E, Zwei Sichten: je Schritt eine Zeile mit beiden Sichten; schmal je Schritt beide Sichten nacheinander */
+.bl-sichten.puk-vis-compare{grid-template-columns:minmax(0,1fr);gap:var(--space-6)}
+.bl-sicht{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--space-3) var(--space-6)}
+.bl-sicht>h3{grid-column:1/-1;margin:0}
+.bl-sicht .puk-vis-compare__col p:not(.puk-vis-compare__key){margin:var(--space-2) 0 0;font-size:var(--web-size-body);font-weight:var(--web-fw-body);line-height:var(--lh-body);color:var(--text-default)}
+
 @container (max-width:560px){
   .bl-myth{grid-template-columns:minmax(0,1fr);gap:var(--space-2)}
   .bl-myth__claim{padding-top:0}
+  .bl-sicht{grid-template-columns:minmax(0,1fr)}
 }
