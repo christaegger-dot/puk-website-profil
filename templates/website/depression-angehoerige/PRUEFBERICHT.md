@@ -50,11 +50,11 @@ Gehört zur Website in diesem Ordner (`templates/website/depression-angehoerige/
 
 - Rechte und Angebote, Abbildung 1: Die Zürcher Regel zur Auskunft an Bezugspersonen (§ 15 Patientinnen- und Patientengesetz ZH) gilt auch in Privatpraxen. Markierung entfernt, Text unverändert.
 - Für sich sorgen › `was-hilft`: Der «Familiencoach Depression» ist aus der Schweiz nutzbar. Markierung entfernt, Text unverändert.
-- Für sich sorgen › Quellen: Die Meta-Analyse zu Achtsamkeitsprogrammen ohne vollständige Angabe wird weggelassen (siehe offener Punkt 1).
+- Für sich sorgen › Quellen: Die Meta-Analyse zu Achtsamkeitsprogrammen nur mit vollständiger, überprüfbarer Angabe aufführen, sonst weglassen. Die bauende Sitzung hat sie in PubMed gefunden und wieder eingesetzt: Zhang X, Ren H, Wang C, Zhang Y, Zhou Q, Fan J (2024). The effect of mindfulness-based interventions on mental health outcomes and wellbeing of informal caregivers of people with mental illness: A systematic review and meta-analysis. *International Journal of Mental Health Nursing*, 33(4), 797–816. https://doi.org/10.1111/inm.13295 (PMID 38291626). 13 Studien mit 1007 Teilnehmenden; laut Zusammenfassung weniger Stress, Depressivität und Belastung, kein Effekt auf Angst; die Autorinnen und Autoren fordern methodisch strengere Studien.
 
 ### Offener Prüfbedarf (für W1)
 
-1. Für sich sorgen › `was-hilft`, Eintrag «Achtsamkeit»: Die Quelle (Meta-Analyse, International Journal of Mental Health Nursing, 2024) wurde auf Entscheid der Fachstelle entfernt, weil die vollständige Angabe fehlte. Die Aussage steht jetzt ohne Beleg auf der Seite; W1 prüft, ob sie bleibt.
+1. Für sich sorgen › `was-hilft`, Eintrag «Achtsamkeit»: Die Aussage mit Zhang et al. 2024 abgleichen (bisher nur anhand der Zusammenfassung). Der Text sagt die Wirkung ohne Einschränkung aus, beim Familiencoach dagegen «leicht»; W1 entscheidet, ob ein Hinweis auf die begrenzte Studienqualität nötig ist.
 2. Begleiten, Abbildung 1: Bild und Aussage mit der Ruderboot-Metapher im Arbeitsheft «Wenn dein Partner depressiv ist» abgleichen.
 3. Je nach Rolle: Befunde zu Eltern erwachsener Kinder und zu erwachsenen Kindern stammen aus Studien zu Jugendlichen bzw. allgemein; auf der Seite benannt.
 4. Rechte und Angebote: Websites der Angebote vor der Veröffentlichung prüfen; Stand auf der Seite: 10.10.2026.
