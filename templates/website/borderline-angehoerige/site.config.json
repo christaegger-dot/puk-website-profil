@@ -315,7 +315,7 @@
           "alternative": "Satz als HTML-Text über der Zeichnung, schmal darüber; Kurzbeschreibung über aria-describedby",
           "reason": "Entscheid der Fachstelle 10.10.2026 (Bauauftrag 2a, Anhang A): Skizze «Ein Stück Weg». Ersetzt das geplante Garten-Bild mit drei Zonen (Bildsprache-Audit: wirkt wie eine Zielscheibe, die betroffene Person darf nicht als Pflanze erscheinen). Ein Bild, eine Idee: begleiten, nicht für jemanden gehen. Korrektur 2a-K: steht direkt nach dem ersten Absatz von `anbieten` (P2a-V-1); verfeinert nach P2a-V-2 (die Wegkanten berühren die Köpfe nicht mehr, leichte Schrittstellung, Arme bei 360 px vom Körper getrennt). «Drei Fragen zur Selbstklärung» steht in diesem Abschnitt als Vertiefung (Akkordeon, K-R-b3). Korrektur 2a-2: Der Weg ist wieder gewunden wie in der gewählten Skizze (weiche Kurven, eine Biegung in der Ferne); die Figuren aus 2a-K bleiben.",
           "resonance": "Entlastung: Ich darf begleiten, ohne den Weg für die andere Person gehen zu müssen.",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-ro-schuld",
@@ -665,7 +665,7 @@
           "alternative": "Sätze als HTML-Text über der Zeichnung, schmal untereinander; Kurzbeschreibung über aria-describedby",
           "reason": "Entscheid der Fachstelle 10.10.2026 (Bauauftrag 2a): Zeichnung und Satzpaar aus dem Profilbeispiel (Muster D), Kernaussage und Kurztext abgesichert wie der Bestand. Ersetzt das geplante Spannungsfeld (Bildsprache-Audit: eine Waage kann nach Urteil aussehen). Das Energie-Konto steht als Text, ohne Konto- oder Bilanzbild. Korrektur 2a-K: steht direkt nach dem ersten Absatz von `kraft` (P2a-V-1); Gedanke «Vielleicht kommt gleich eine Nachricht.» (P2a-T-2); Zeichnung unverändert (P2a-V-3). «Langfristig für sich sorgen» steht in diesem Abschnitt als Akkordeon (K-S-b2).",
           "resonance": "Wiedererkennen und Erlaubnis: So fühlt sich ständige Bereitschaft an, und ich darf meine Erreichbarkeit begrenzen.",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-sf-warnsignale",

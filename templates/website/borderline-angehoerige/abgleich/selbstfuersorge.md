@@ -10,6 +10,8 @@ Neue Seite: `content/selbstfuersorge.html` · Bestand: `/selbstfuersorge`; aus `
 
 **Korrektur 2a-K (10.10.2026):** Nachgeführt nach `KORREKTUR-ETAPPE-2A.md` (131 Zeilen). Neue Statuswerte «umformuliert (2a-K)», «verschoben (Vertiefung, 2a-K)» und «neu (2a-K)»; die Bemerkung nennt die Auftragsnummer und den früheren Status («bis 2a: …»). Nr. 213 (DBT) ist «zusammengeführt» mit `glossar.md` Z. 108. Eine neue Zeile «neu (2a-K)» am Ende (Nr. 671).
 
+**Freigabe Etappe 2a (10.10.2026):** Die Fachstelle hat Etappe 2a fachlich freigegeben (`FREIGABE-ETAPPE-2A.md`). Keine Bemerkung nennt «Prüfbedarf»; der Abschnitt «Prüfbedarf für W1» am Ende beginnt mit dem Vermerk «Erledigt am 10.10.2026» und bleibt als Verlauf. Sonst ist die Tabelle unverändert.
+
 **Korrektur 2a-2 (10.10.2026):** Nr. 303, 304, 307 und 310 «umformuliert (2a-2)» (Absatz in `kraft`). Zählung danach: 55 umformuliert (2a-K), 4 umformuliert (2a-2), sonst wie unten.
 
 **Zählung nach 2a-K:** 659 Sätze des Bestands, davon 74 übernommen, 24 gekürzt, 101 zusammengeführt, 20 verschoben, 65 verschoben (Vertiefung, 2a-K), 111 umformuliert (einfache Sprache, 2a), 59 umformuliert (2a-K), 188 entfällt, 17 Bezeichnung. Dazu 13 Zeilen ohne Bestandssatz: 8 neu (2a), 4 neu (2a-K), 1 entfällt.
@@ -697,6 +699,8 @@ Neue Seite: `content/selbstfuersorge.html` · Bestand: `/selbstfuersorge`; aus `
 | 671 | neue Seite › Abschnitt 02, Verweis | – | neu (2a-K) | Wie Sie Aufgaben abgeben, Ihre Erreichbarkeit begrenzen, sich beraten lassen und Ihr eigenes Leben bewahren können, steht im Abschnitt «Auch Sie brauchen Unterstützung». | selbstfuersorge#kraft | K-S-a1 (P2a-W2-4): Verweissatz an Stelle der vier Punkte, die `unterstuetzung` mit Beispielsatz bringt; Freigabe: Liste der neuen Sätze, Selbstprüfung Korrektur 2a-K |
 
 ## Prüfbedarf für W1 (Stand 10.10.2026, Etappe 2a)
+
+**Erledigt am 10.10.2026:** Die Prüfrunde 2a hat den offenen Prüfbedarf in die Fragen P2a-F-1 bis P2a-F-10 übernommen. Alle sind entschieden (Korrekturen 2a-K und 2a-2), und die Fachstelle hat Etappe 2a fachlich freigegeben. Die Liste bleibt als Verlauf stehen.
 
 1. **Abbildung 1 «Ein freier Abend»** (`kraft`): Zeichnung und Satzpaar unverändert aus dem Profilbeispiel; Kernaussage, Kurztext, Vertiefung und Kurzbeschreibung im Wortlaut von Bauauftrag 2a, Abschnitt 4; `approvalStatus` «ausstehend». Alle Sätze der Abbildung sind neu und zur Freigabe (Zeilen «neu (2a)»).
 2. **Verweis im Text** an drei Stellen: in `eigenes-leben` statt «Bei Gefahr hat Schutz Vorrang» (Bauauftrag 2a, Abschnitt 4), in `warnsignale` nach «Wenn Sie sich nicht mehr sicher fühlen …» und in `zu-viel` nach dem Satz zu Bedrohung, Gewalt, akuter Gefahr oder Selbstgefährdung. An allen drei Stellen verweist der Bestand auf akute Gefahr. In `akzeptanz` steht nach «Bei Gefahr geht Schutz vor.» ein Link auf `grenzen.html#gewalt`, kein weiterer Verweis im Text.

@@ -13,10 +13,10 @@ Gehört zur Website in diesem Ordner. Wer den Starter kopiert, übernimmt diese 
 
 | Stufe | Status | Datum | Geprüft durch | Ergebnis |
 | --- | --- | --- | --- | --- |
-| W1 Fachliche Prüfung | offen | 10.10.2026 | Fachstelle Angehörigenarbeit PUK (Freigabe Etappe 1); vierte Prüfrunde: eine Prüfsitzung (Claude, hat nicht gebaut) | Etappe 1 fachlich freigegeben (Abschnitt «Fachliche Freigabe der Fachstelle»); alle 21 Fragen P4-F-1 bis P4-F-21 entschieden. Offen, bis die Seiten von Etappe 2 geprüft und freigegeben sind. Prüfrunde 2a: 2 wichtig, 3 optional; 10 Fragen P2a-F-1 bis P2a-F-10. |
+| W1 Fachliche Prüfung | offen | 10.10.2026 | Fachstelle Angehörigenarbeit PUK (Freigabe Etappe 1); vierte Prüfrunde: eine Prüfsitzung (Claude, hat nicht gebaut); Fachstelle (Freigabe Etappe 2a) | Etappe 1 fachlich freigegeben (Abschnitt «Fachliche Freigabe der Fachstelle»); alle 21 Fragen P4-F-1 bis P4-F-21 entschieden. Offen, bis die Seiten von Etappe 2 geprüft und freigegeben sind. Prüfrunde 2a: 2 wichtig, 3 optional; 10 Fragen P2a-F-1 bis P2a-F-10. Etappe 2a (`rolle`, `selbstfuersorge`, Einstiege auf `index`) fachlich freigegeben am 10.10.2026. |
 | W2 Gesamtkohärenz | offen | 10.10.2026 | vierte Prüfrunde | 1 wichtig, 3 optional; offen weiter F-W2-02, F-W2-03 (jetzt P4-F-18, P4-F-19). Prüfrunde 2a: 5 optional |
 | S Sprach-Review | offen | 10.10.2026 | vierte Prüfrunde | 6 optional; Lesetest je Abschnitt und Kennzahlen; abschliessbar erst nach W1 und W2. Prüfrunde 2a: 1 wichtig (Länge), 3 optional; 24 Kürzungsvorschläge |
-| Visualisierungs-Check | offen | 10.10.2026 | vierte Prüfrunde | 1 wichtig, 5 optional; Matrix 1–17 × 6 Figuren; seit 10.10.2026 alle sechs Figuren fachlich freigegeben (Fachstelle). Prüfrunde 2a: 1 wichtig, 3 optional; Matrix 1–17 × 2 neue Figuren |
+| Visualisierungs-Check | offen | 10.10.2026 | vierte Prüfrunde | 1 wichtig, 5 optional; Matrix 1–17 × 6 Figuren; seit 10.10.2026 alle sechs Figuren fachlich freigegeben (Fachstelle). Prüfrunde 2a: 1 wichtig, 3 optional; Matrix 1–17 × 2 neue Figuren. Etappe 2a: beide Abbildungen fachlich freigegeben (Fachstelle, 10.10.2026). |
 | Bedienung und Barrierefreiheit | offen | 10.10.2026 | vierte Prüfrunde, automatisiert | kein Befund; reale Screenreader-Läufe, Hardwaretastatur und Touch fehlen (nicht prüfbar) |
 | W3 Code-Review | offen | 10.10.2026 | vierte Prüfrunde: nur Stichprobe Technik und Zuständigkeit, kein volles W3 | Stichprobe ohne Befund; W3 erst nach Umsetzung von W2 und S |
 | R1 Profil-Audit | offen | | | noch nicht geprüft |
@@ -40,9 +40,33 @@ Dazu 5 leichte Befunde zu Bericht und Abgleich. Die erste und zweite Prüfrunde 
 - **Nicht Teil dieser Freigabe:** die zwölf Platzhalter und die Seiten von Etappe 2. Die Platzhalter markieren Seiten, die noch folgen, und entfallen, wenn diese gebaut sind.
 - **Weiter offen vor der Veröffentlichung:** W2, S, Visualisierungs-Check und W3 abschliessen, reale Screenreader-Läufe, Hardwaretastatur und Touch, danach R1 bis R3.
 
+### Etappe 2a
+
+**10.10.2026 · Fachstelle Angehörigenarbeit PUK.** Von der bauenden Sitzung im Auftrag der Fachstelle übertragen (`FREIGABE-ETAPPE-2A.md`).
+
+- **Etappe 2a ist fachlich freigegeben:** die Seiten `rolle` («Ihre Rolle klären») und `selbstfuersorge` («Auf sich achten») als Ganzes und auf `index` die zwei neuen Einstiege, mit allen Texten im Stand `416f6d0` (nach den Korrekturen 2a-K und 2a-2).
+- **Die neuen Sätze sind freigegeben (P2a-F-5):** alle Sätze der Liste «Neue Sätze zur Freigabe» in der Selbstprüfung (Block «Korrektur 2a-K», nachgeführt mit 2a-2).
+- **Die zwei Abbildungen sind fachlich freigegeben (P2a-F-6):** «Ein Stück Weg» (`v-ro-weg`) und «Ein freier Abend» (`v-sf-abend`).
+- **Alle zehn Fragen der Prüfrunde 2a sind entschieden:** P2a-F-1 bis -4 und -6 bis -10 mit den Korrekturen 2a-K und 2a-2, P2a-F-5 und die Freigabe der Abbildungen hier.
+- **Nicht Teil dieser Freigabe:** die Seiten der Etappen 2b und 2c, die Platzhalter und die Verweise von den Etappe-1-Seiten auf die neuen Seiten (V1–V9). Über die Verweise wird am Schluss von Etappe 2 entschieden.
+- **Weiter offen vor der Veröffentlichung:** wie bei Etappe 1. Dazu kommt eine unabhängige Prüfung der Korrekturen 2a-K und 2a-2 in der Schlussprüfung, weil die Sitzung, die sie umgesetzt hat, auch die Prüfrunde 2a gemacht hat.
+
 ## Selbstprüfung der bauenden Sitzung
 
 Nach jedem Bau ohne Nachfrage ausfüllen: Visualisierungs-Check wie unten, mit Beleg je Punkt. Arbeitsstand, keine Prüfstufe.
+
+**Stand 10.10.2026 · Freigabe 2a eintragen · bauende Sitzung (Claude Code).** Umgesetzt ist `FREIGABE-ETAPPE-2A.md` (Auftrag aus dem Stamm unverändert im Website-Ordner, `59f6f6b`; im Stamm von `main` gelöscht, `e92bd2a`; zusammengeführt, `1185b9f`). Die Texte aller Seiten sind unverändert (`git diff` auf `content/` und den gebauten Seiten leer). Keine Stufe ist auf «erledigt» gesetzt. Der Block 2a-2 steht darunter.
+
+| Punkt | Stand | Beleg |
+| --- | --- | --- |
+| 3 `visualPlan` | umgesetzt | `approvalStatus` «freigegeben» bei `v-ro-weg` und `v-sf-abend`, sonst keine Zeile geändert (`git diff site.config.json`: zwei Zeilen). Im Plan jetzt 8 × «freigegeben» (sechs Abbildungen der Etappe 1 und die zwei neuen), 41 × «ausstehend» (Zeilen mit `format` «text» und Platzhalter, unverändert); `editorialStatus` unverändert |
+| 3 Abgleich, Bemerkungen mit «Prüfbedarf» | umgesetzt | `rolle.md` Nr. 496 bis 500 enden mit «; erledigt: Freigabe Etappe 2a durch die Fachstelle, 10.10.2026»; in `selbstfuersorge.md` nennt keine Bemerkung «Prüfbedarf». Tabellen der Etappe 1 unverändert |
+| 3 Abgleich, Vermerk unter «Prüfbedarf …» | umgesetzt | Unter «## Prüfbedarf für W1 (Stand 10.10.2026, Etappe 2a)» in `rolle.md` und `selbstfuersorge.md` steht als erster Absatz «**Erledigt am 10.10.2026:** Die Prüfrunde 2a hat den offenen Prüfbedarf …» im Wortlaut des Auftrags; die Listen bleiben stehen |
+| 3 Kopfnotizen und README | umgesetzt | Kopfnotiz «Freigabe Etappe 2a (10.10.2026): …» in beiden Tabellen; `abgleich/README.md`: Einleitung, Ergebnis von `pruefe-abgleich.mjs` und Abschnitt «Freigabe Etappe 2a eintragen» |
+| 4a Neuer Unterabschnitt | umgesetzt | «### Etappe 2a» unverändert aus `FREIGABE-ETAPPE-2A.md`, Abschnitt 4 a (Skript: Text des Auftrags ist Zeichen für Zeichen im Bericht enthalten), am Ende von «## Fachliche Freigabe der Fachstelle», direkt vor «## Selbstprüfung der bauenden Sitzung» |
+| 4b Statustabelle | umgesetzt | «W1 Fachliche Prüfung»: «Geprüft durch» endet mit «; Fachstelle (Freigabe Etappe 2a)», «Ergebnis» mit «Etappe 2a (`rolle`, `selbstfuersorge`, Einstiege auf `index`) fachlich freigegeben am 10.10.2026.». «Visualisierungs-Check»: «Ergebnis» endet mit «Etappe 2a: beide Abbildungen fachlich freigegeben (Fachstelle, 10.10.2026).». Status in beiden Zeilen weiter «offen» |
+| 4c Selbstprüfung | umgesetzt | dieser Block |
+| 5 Prüfen | bestanden | `node tools/build.mjs`: 0 blockierend, 12 Hinweise (10 × `placeholder-approval`, `site-url`, `review-report`; die zwei `visual-approval` entfallen). `node tools/gate.mjs --selftest`: 53/53. `node tools/gate.mjs --production`: 11 blockierend (10 × `placeholder-approval`, 1 × `review-report`) und 1 Hinweis (`site-url`). `node abgleich/pruefe-abgleich.mjs`: 3207 Zeilen, 0 ohne Fundstelle. Pull Request bleibt Entwurf |
 
 **Stand 10.10.2026 · Korrektur Etappe 2a-2 · bauende Sitzung (Claude Code).** Umgesetzt ist `KORREKTUR-ETAPPE-2A2.md` (Entscheide der Fachstelle nach der Nachprüfung von 2a-K). Geändert sind nur die drei genannten Stellen, die Begründung von `v-ro-weg` im Plan und der Abgleich. `index` und die Seiten der Etappe 1 sind unverändert. Keine Prüfstufe ist «erledigt»; die nächste Prüfrunde braucht weiter eine Sitzung, die nicht gebaut hat. Der Block 2a-K steht darunter.
 

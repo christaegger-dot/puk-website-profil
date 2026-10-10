@@ -1,6 +1,6 @@
 # Abgleich · Borderline-Website, Etappe 1 und 2a
 
-Beleg für W1 nach UMBAUPLAN, Abschnitt 5: Jeder Satz des Bestands ist übernommen, gekürzt, zusammengeführt, verschoben, geändert oder mit Grund entfallen. Erstellt von der bauenden Sitzung am 08.10.2026, nachgeführt am 09.10.2026 (Korrektur Etappe 1, 1b, 1c, 1d, 1e, 1f, 1g, 1h, 1i und 1j). Am 10.10.2026 um die Seiten `rolle` und `selbstfuersorge` erweitert (Etappe 2a) und nach der Prüfrunde 2a nachgeführt (Korrektur 2a-K, danach 2a-2). Das ist ein Arbeitsstand, keine Prüfung.
+Beleg für W1 nach UMBAUPLAN, Abschnitt 5: Jeder Satz des Bestands ist übernommen, gekürzt, zusammengeführt, verschoben, geändert oder mit Grund entfallen. Erstellt von der bauenden Sitzung am 08.10.2026, nachgeführt am 09.10.2026 (Korrektur Etappe 1, 1b, 1c, 1d, 1e, 1f, 1g, 1h, 1i und 1j). Am 10.10.2026 um die Seiten `rolle` und `selbstfuersorge` erweitert (Etappe 2a) und nach der Prüfrunde 2a nachgeführt (Korrektur 2a-K, danach 2a-2); Freigabe Etappe 2a eingetragen. Das ist ein Arbeitsstand, keine Prüfung.
 
 - `index.md` · `/`, `/selbsttest`, `/wegweiser`; seit Etappe 2a mit zwei Zeilen «neu (2a)» am Ende (Nr. 255–256)
 - `verstehen.md` · `/verstehen` ohne Diagnostik-Teil, sechs Handouts; der Teil «Materialien zum Vertiefen» (Z. 277–396) steht seit Korrektur 1c am Ende der Tabelle (Nr. 474–540); seit Korrektur 1f mit zwei Zeilen für Sätze der neuen Seite ohne Bestandssatz am Ende (Nr. 541–542)
@@ -24,7 +24,7 @@ Je Seite eine Tabelle «Satz für Satz» mit jedem Satz der alten Seite und der 
 - **Ort neu:** `seite#abschnitt` (Abschnitts-ID der gebauten Seite, `kopf`, `kapitel`), `Fusszeile` oder «seite (Etappe 2)».
 - **Zustandekommen:** Ein Skript der bauenden Sitzung zerlegt den Bestand in Sätze und schlägt je Satz den ähnlichsten Satz im Zielabschnitt vor. Status, Zielabschnitt und jede schwache Zuordnung sind von Hand gesetzt und geprüft. Ob der genannte Satz die Aussage wirklich trägt, ist Gegenstand der Prüfung.
 
-**Prüfung der Tabellen:** `node abgleich/pruefe-abgleich.mjs`. Ergebnis am 10.10.2026 nach Korrektur 2a-2: **3207 Zeilen, 0 ohne Fundstelle** (fünf Zeilen geändert, keine neue). Ergebnis nach Korrektur 2a-K: **3207 Zeilen, 0 ohne Fundstelle** (drei Zeilen «neu (2a-K)» mehr als nach Etappe 2a). Ergebnis am 10.10.2026 nach Etappe 2a: **3204 Zeilen, 0 ohne Fundstelle** (3155 Bestandszeilen, 48 Zeilen ohne Bestandssatz – 16 auf `beziehungen`, 12 auf `selbstfuersorge`, 11 auf `rolle`, 5 auf `verstehen`, 2 auf `grenzen`, 2 auf `index` – und auf `verstehen` 1 Zeile mit Bestandssatz aus dem Handout `wenn-worte-treffen`, das sonst keiner Seite zugeordnet ist). Nach Korrektur 1j waren es 1763 Zeilen. Das Skript liest auch Text nur für Screenreader (`.puk-sr`, Kurzbeschreibungen der Bildlegenden), denn er steht auf der Seite. Geprüft wird je Zeile:
+**Prüfung der Tabellen:** `node abgleich/pruefe-abgleich.mjs`. Ergebnis am 10.10.2026 nach dem Eintrag der Freigabe 2a: **3207 Zeilen, 0 ohne Fundstelle**. Ergebnis nach Korrektur 2a-2: **3207 Zeilen, 0 ohne Fundstelle** (fünf Zeilen geändert, keine neue). Ergebnis nach Korrektur 2a-K: **3207 Zeilen, 0 ohne Fundstelle** (drei Zeilen «neu (2a-K)» mehr als nach Etappe 2a). Ergebnis am 10.10.2026 nach Etappe 2a: **3204 Zeilen, 0 ohne Fundstelle** (3155 Bestandszeilen, 48 Zeilen ohne Bestandssatz – 16 auf `beziehungen`, 12 auf `selbstfuersorge`, 11 auf `rolle`, 5 auf `verstehen`, 2 auf `grenzen`, 2 auf `index` – und auf `verstehen` 1 Zeile mit Bestandssatz aus dem Handout `wenn-worte-treffen`, das sonst keiner Seite zugeordnet ist). Nach Korrektur 1j waren es 1763 Zeilen. Das Skript liest auch Text nur für Screenreader (`.puk-sr`, Kurzbeschreibungen der Bildlegenden), denn er steht auf der Seite. Geprüft wird je Zeile:
 
 - Den Ort gibt es.
 - Die neue Fassung steht dort wörtlich.
@@ -350,3 +350,13 @@ Grundlage: `KORREKTUR-ETAPPE-2A2.md`. Geändert sind fünf Zeilen, Status «umfo
 | `rolle.md` Nr. 483 | «Ein Vergleich mit anderen Familien erklärt nicht, warum jemand erkrankt. Daraus folgt keine Schuld.» | Abschnitt 4 |
 
 Nr. 302 («Einige Angehörige berichten auch von Phasen, …») bleibt, der Satz ist unverändert. Die Zeichnung «Ein Stück Weg» (Abschnitt 2) hat keine Zeilen im Abgleich.
+
+## Freigabe Etappe 2a eintragen (10.10.2026)
+
+Grundlage: `FREIGABE-ETAPPE-2A.md`. Die Fachstelle hat Etappe 2a am 10.10.2026 fachlich freigegeben (Stand `416f6d0`, nach den Korrekturen 2a-K und 2a-2); alle zehn Fragen P2a-F-1 bis P2a-F-10 sind entschieden.
+
+| Thema | Umsetzung | Quelle |
+| --- | --- | --- |
+| Freigaben im Plan | `approvalStatus` «freigegeben» bei `v-ro-weg` und `v-sf-abend`; Platzhalter, `editorialStatus` und Zeilen mit `format` «text» unverändert | Abschnitt 3 |
+| Prüfbedarf | Jede Bemerkung mit «Prüfbedarf» in `rolle.md` und `selbstfuersorge.md` endet mit «; erledigt: Freigabe Etappe 2a durch die Fachstelle, 10.10.2026» (`rolle` 5 Zeilen: Nr. 496 bis 500; `selbstfuersorge` 0). Unter den zwei Überschriften «Prüfbedarf für W1 (Stand 10.10.2026, Etappe 2a)» steht als erster Absatz der Vermerk «Erledigt am 10.10.2026: …»; die Listen bleiben als Verlauf. Die Tabellen der Etappe 1 sind unverändert | Abschnitt 3 |
+| Kopfnotizen | «Freigabe Etappe 2a (10.10.2026): …» in `rolle.md` und `selbstfuersorge.md` | Abschnitt 3 |
