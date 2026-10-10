@@ -14,9 +14,9 @@ Gehört zur Website in diesem Ordner (`templates/website/depression-angehoerige/
 
 | Stufe | Status | Datum | Geprüft durch | Ergebnis |
 | --- | --- | --- | --- | --- |
-| W1 Fachliche Prüfung | offen | 10.10.2026 | Prüfsitzung (Claude Code, hat nicht gebaut) | Prüfrunde W1 abgeschlossen, Stufe offen: 14 wichtige und 11 optionale Befunde, 21 Fragen an die Fachstelle (W1-F-01 bis W1-F-21); Kennzahlen bestätigt; Seiteninventar für W2 liegt vor; Leitlinien, Recht, Statistiken und Angebote nicht am Original geprüft (W1-25) |
-| W2 Gesamtkohärenz | offen | 10.10.2026 | Prüfsitzung (Claude Code, hat nicht gebaut; dieselbe wie W1) | Prüfrunde W2 abgeschlossen, Stufe offen: Aufbau trägt; 3 wichtige und 8 optionale Befunde (Verweise zwischen den Seiten, Begriff «Bezugsperson», Paartherapie bündeln), 8 Fragen an die Fachstelle (W2-F-01 bis W2-F-08); Strukturänderungen vor S umsetzen |
-| S Sprach-Review | offen | | | |
+| W1 Fachliche Prüfung | offen | 10./11.10.2026 | Prüfsitzung (Claude Code, hat nicht gebaut) | Runde 1: 25 Befunde, 21 Fragen an die Fachstelle; Seiteninventar für W2. Runde 2 (Stand `f413f69`): 19 Befunde erledigt, 4 teilweise, 2 offen; 5 neue (W1-26 bis W1-30). Offen: Quellen (W1-10, W1-27), W1-F-11, W1-F-15, W1-F-19, W1-F-21, Prüfung am Original (W1-25) |
+| W2 Gesamtkohärenz | erledigt | 10./11.10.2026 | Prüfsitzung (Claude Code, hat nicht gebaut; dieselbe wie W1) | Runde 1: Aufbau trägt, 11 Befunde, 8 Fragen. Runde 2 (Stand `f413f69`): alle Befunde erledigt, W2-08 an S übergeben; keine neuen Befunde |
+| S Sprach-Review | offen | 11.10.2026 | Prüfsitzung (Claude Code, hat nicht gebaut; dieselbe wie W1 und W2) | Prüfrunde S (Stand `f413f69`): 27 Befunde (5 wichtig, 22 optional) mit Formulierungsvorschlägen, 2 Fragen an die Fachstelle (S-F-01, S-F-02); freigegebene Textfassung steht aus |
 | Visualisierungs-Check | offen | | | |
 | Bedienung und Barrierefreiheit | offen | | | |
 | W3 Code-Review | offen | | | |
@@ -768,6 +768,93 @@ Schwere: **wichtig** = vor der Freigabe zu klären; **optional** = Verbesserung.
 | optional | 11 | W1-11 bis W1-13, W1-15 bis W1-19, W1-22 bis W1-24 |
 | Fragen an die Fachstelle | 21 | W1-F-01 bis W1-F-21 |
 
+#### Prüfrunde 2 · Nachprüfung der Umsetzung (11.10.2026, Stand `f413f69`)
+
+**Geprüft durch:** dieselbe Prüfsitzung (Claude Code, hat nicht gebaut). Keine Inhalte und kein Code geändert.
+
+**Grundlage:** Änderungen der bauenden Sitzung seit `5ad9cc8` (Commits `a7ddeb3` und `36a1389`, gemergt mit `f413f69`), Wort für Wort mit `git diff --word-diff` gelesen; Entscheide der Fachstelle vom 11.10.2026 (oben unter «Von der Fachstelle entschieden»). Neue Quellen über PubMed geprüft. Nachgemessen: Gate draft 0 blockierend, 13 Hinweise; Selbsttest 53/53; alle internen Links und Sprungziele vorhanden (Skript der Prüfsitzung, 0 Fehler); kein horizontaler Überlauf bei 1280, 360 und 320 px auf allen acht Seiten (Playwright); 8473 Wörter ohne Quellenliste und SVG (vorher 7772).
+
+**Ergebnis:** 19 der 25 Befunde aus Runde 1 sind erledigt, 4 teilweise, 2 offen. Neu sind 5 Befunde (W1-26 bis W1-30; 2 wichtig, 3 optional). W1 bleibt **offen**: Es fehlen Quellen für einige Aussagen (W1-10, W1-27), die Fachstelle entscheidet noch W1-F-11, W1-F-15, W1-F-19 und W1-F-21, und die Prüfung am Original steht aus (W1-25).
+
+**Umsetzung je Befund aus Runde 1**
+
+| Befund | Entscheid | Umsetzung (Beleg) | Ergebnis |
+| --- | --- | --- | --- |
+| W1-01 Rechte, Zürcher Regel | W1-F-01 a, b, c ja | `rechte-und-angebote` › Abb. 1, Kurztext: «Bezugspersonen erhalten im Kanton Zürich auch Auskunft über Gesundheitszustand und Behandlung, solange die erkrankte Person nicht widerspricht. Für die Einsicht in die Akten braucht es ihr Einverständnis.»; Beispiel: «Falls Sie mir nichts über meinen Mann sagen dürfen: …»; Plan `v-ra-vergleich` › `resonance`: «vielleicht» | erledigt |
+| W1-02 Verlaufszahlen | W1-F-02 | `depression-verstehen` › `formen`: «Bei etwa der Hälfte der Menschen bleibt es bei einer einzigen Episode.» und «Bei etwa der Hälfte kehrt die Depression … wieder»; passt zu «40 bis 60 von 100» auf `behandlung-und-verlauf` | erledigt |
+| W1-03 Eigene Gesundheit | W1-F-03 | `ihre-situation` › `gesundheit`: «In einer grossen norwegischen Studie hatten Partnerinnen und Partner psychisch erkrankter Menschen mehr Angst- und Depressionsbeschwerden und ein geringeres Wohlbefinden als Vergleichspersonen.» | erledigt |
+| W1-04 Kritik und Rückfall | W1-F-04 b | Vertiefung Abb. 2: «Kritik in der Familie hängt auch bei Depression mit Rückfällen zusammen. Sie entsteht aber oft als Antwort auf eine belastende Situation, etwa aus Erschöpfung, und ist keine Schuldfrage.»; Butzlaff und Hooley 1998 in der Quellenliste | erledigt |
+| W1-05 Geschwister | W1-F-05 | «ein erhöhtes Risiko»; «Das liegt vor allem an gemeinsamen familiären und erblichen Faktoren.» | erledigt |
+| W1-06 «nachweislich» | W1-F-06 | `fuer-sich-sorgen` › `was-hilft`: «Familienkurse mit Information über die Krankheit (Psychoedukation) helfen nach ersten, noch schwachen Studien vor allem der erkrankten Person.» | erledigt |
+| W1-07 Achtsamkeit | W1-F-07 | «… in kleineren Studien von begrenzter Qualität; die Belastung sank nur wenig.» (Zhang: Belastung SMD −0,21) | erledigt |
+| W1-08 Gefäss | W1-F-08 a | Kurztext Abb. 1: «Auch fehlende Information fliesst zu; dagegen lässt sich etwas tun.»; Bild unverändert | erledigt |
+| W1-09 Quellenangaben | – | Alle Fachartikel mit Autorinnen und Autoren, Jahr, Titel, Zeitschrift, Band und DOI-Link; Barbato mit Parabiaghi; SGPP-, Albermann-, Pro-Mente-Sana-, Greally- und MHFA-Angaben korrigiert; § 15 Abs. 2; NVL «Kapitel 1.4 (Verlauf), 3 bis 6»; Spijker 2002 genannt; Arbeitsheft in der Quellenliste. **Offen:** kein Abrufdatum bei Online-Quellen; Obsan-Bulletin für die Suizidzahlen (08/2024 oder 11/2024); PatG § 19; NVL-Kapitel zur Suizidalität auf `begleiten` (2 oder 12); ICD-11 6B42 am Original | teilweise |
+| W1-10 Aussagen ohne Quelle | teils Fachstelle | Angepasst: «Über Belastendes zu sprechen, kann zu Beginn anstrengend sein»; «acht bis zwölf Wochen» gestrichen; «Wird er früh erkannt, lässt sich die Behandlung rasch anpassen»; «Sie dürfen die Veränderungen ansprechen»; «Ferien oder einen Ortswechsel als Heilmittel verordnen»; Rasic «deutlich häufiger»; Angehörigengruppen «von den Teilnehmenden sehr geschätzt»; Cipriani 2018 für die Wirkung der Antidepressiva. **Weiterhin ohne deckende Quelle:** `depression-verstehen` › `anders` (ältere Menschen, körperliche Beschwerden, rund um die Geburt, «Flucht in die Arbeit»); «drei bis vier Wochen» (nur Paraphrase der NVL); `ihre-situation` › `angst` «dauernde Wachsamkeit», «Trauer um das, was … verloren geht»; Name und «kostenlos» des Familiencoachs; BSV «auch bei einer psychischen Erkrankung»; BAG «allgemein informieren» | teilweise |
+| W1-11 Paartherapie | W1-F-17 | nur auf `fuer-sich-sorgen` › `was-hilft` ausgeführt: «Nach bisherigen, noch schwachen Studien verbessert sie die Partnerschaft und wirkt gegen die Depression ähnlich gut wie eine Einzeltherapie.»; auf `ihre-situation` und `je-nach-rolle` je ein Satz mit Link | erledigt |
+| W1-12 Formulierungsstärke | W1-F-17 | Salk, Martin, Sullivan, Whisman, Martire, Gefäss-Kern, Lichttherapie, Kika («Manche erleben Schuld»), Dazzi, «oft Zeichen der Krankheit» abgeschwächt; Etikett in der Quellenzeile ersetzt. Offen: «die Hälfte der Erkrankten» (an S übergeben) und «Und viele ringen damit» (W1-29) | teilweise |
+| W1-13 Schutzfaktoren | W1-F-17 | «die Unterstützung durch den anderen Elternteil», «wenn der erkrankte Elternteil positiv und anerkennend über das Kind spricht»; «über die ganze Studienzeit psychisch gesund» | erledigt |
+| W1-14 Erwachsene Kinder | W1-F-09 | neuer Absatz «Andere erleben die Depression eines Elternteils erst im Alter …» mit Link auf `depression-verstehen.html#anders`; Quelle fehlt (W1-27) | erledigt (Quelle: W1-27) |
+| W1-15 Population | W1-F-17 | `geschwister`: «Geschwister von Menschen mit psychischen Erkrankungen … die Studien dazu betreffen psychische Erkrankungen allgemein, nicht nur Depression.» | erledigt |
+| W1-16 Waage, Mitte | W1-F-13 | «Ich bin da, wenn du mich brauchst, und sage dir, bevor ich etwas unternehme.» | erledigt |
+| W1-17 Arbeitsheft | W1-F-15 | Heft in der Quellenliste von `begleiten`; Abgleich des Bildes mit dem Heft bei der Fachstelle offen | teilweise |
+| W1-18 Eigene Krise | W1-F-14 | `fuer-sich-sorgen` › `eigene-krise`: `<p data-responsibility-inline></p>` steht jetzt vor dem Absatz mit der E-Mail der Fachstelle | erledigt |
+| W1-19 Übersicht, Barometer | W1-F-16 | `index` › `kurz`: «In einer grossen Befragung in Deutschland beschrieben drei von vier Angehörigen die Depression als grosse Belastung für das Familienleben.» | erledigt |
+| W1-20 Erhaltungstherapie | W1-F-10 | `vorbeugen`: «nach dem Abklingen der Beschwerden»; Abb. 2 Schritt 5: «Auch wenn die Beschwerden abgeklungen sind …» | erledigt |
+| W1-21 Arbeit und Geld | W1-F-11 offen | unverändert | offen |
+| W1-22 Vertretungsrecht | W1-F-12 «weglassen» | unverändert, begründet mit dem Entscheid gegen einen Abschnitt zur fürsorgerischen Unterbringung | erledigt (Entscheid) |
+| W1-23 Anordnung | W1-F-18 | «wenn eine Hausärztin, eine Psychiaterin oder eine andere dazu berechtigte Ärztin sie anordnet»; Quelle Art. 11b KLV (Fedlex) | erledigt |
+| W1-24 Trauer | W1-F-20 | «Hält die Trauer ungewöhnlich lange an und lähmt sie den Alltag, kann eine Abklärung sinnvoll sein.»; ICD-11-Link mit 6B42 und QD85 | erledigt (Original: W1-25) |
+| W1-25 Prüflücke | – | unverändert; dazu jetzt ICD-11 6B42 und Art. 11b KLV | offen |
+
+**Neue Quellen, über PubMed geprüft**
+
+| Quelle | Seite | Aussage | Ergebnis | Beleg |
+| --- | --- | --- | --- | --- |
+| Cipriani A, Furukawa TA, Salanti G, et al. (2018). Comparative efficacy and acceptability of 21 antidepressant drugs for the acute treatment of adults with major depressive disorder: a systematic review and network meta-analysis. Lancet 391(10128):1357–66. doi:10.1016/S0140-6736(17)32802-7 | `depression-verstehen` › Vertiefung Abb. 2; `behandlung-und-verlauf` | «In einer grossen Auswertung von über 500 Studien wirkten alle untersuchten Antidepressiva besser als ein Scheinmedikament.» | gedeckt | «included 522 trials comprising 116 477 participants. In terms of efficacy, all antidepressants were more effective than placebo»; Sicherheit der Evidenz «moderate to very low» |
+| Chung DT, Ryan CJ, Hadzi-Pavlovic D, et al. (2017). Suicide Rates After Discharge From Psychiatric Facilities: A Systematic Review and Meta-analysis. JAMA Psychiatry 74(7):694–702. doi:10.1001/jamapsychiatry.2017.1044 | `behandlung-und-verlauf` › «Wenn ein Klinikaufenthalt nötig wird» | «Die ersten Wochen nach einem Klinikaustritt sind oft eine verletzliche Zeit.» | teilweise | «The suicide rate was highest within 3 months after discharge»; Quellenzeile sagt «Monate», der Text «Wochen» (W1-28); alle psychiatrischen Diagnosen |
+| Butzlaff und Hooley 1998; Spijker et al. 2002 | `ihre-situation`; `behandlung-und-verlauf` | wie in Runde 1 vorgeschlagen | gedeckt | Quellentabelle W1-C |
+
+**Neue Inhalte** (von der bauenden Sitzung unter «Weiterhin offen» genannt)
+
+| Stelle | Ergebnis | Beleg | Befund |
+| --- | --- | --- | --- |
+| `behandlung-und-verlauf` › «Wenn ein Klinikaufenthalt nötig wird» | fachlich stimmig, Haltung gut («kein Scheitern, sondern ein Teil der Behandlung»; Gespräch vor dem Austritt nur «wenn die erkrankte Person einverstanden ist»); Zeitangabe ungenau | Chung 2017 | W1-28 |
+| `je-nach-rolle` › `erwachsene-kinder`, Absatz zum Elternteil, der erst im Alter erkrankt | Aussagen «zum Beispiel nach einem Verlust oder bei einer körperlichen Krankheit» und «wird leicht übersehen, weil sie sich oft über körperliche Beschwerden, Gedächtnisprobleme oder Rückzug zeigt» ohne Quelle; der Link führt auf `anders`, das selbst ohne Quelle ist | – | W1-27 |
+| `je-nach-rolle` › `kinder`, Scham | gedeckt | Dam und Hall 2016: «Children feel shame … and they conceal their family life»; «cope through information, knowledge, frankness and trustful relationships» | – |
+| `rechte-und-angebote` › Erklärung «Bezugsperson» vor Abb. 1 | gedeckt (amtliche Sekundärquelle, Runde 1); die Seite erklärt den Begriff jetzt zweimal (vor Abb. 1 und in `vorsorge`) | Leitfaden der Gesundheitsdirektion | an S |
+| `depression-verstehen` › `formen` › Trauer | stimmig | ICD-11 6B42 nicht am Original geprüft | W1-25 |
+
+**Neue Befunde Runde 2** (Quelle: Prüfung 1)
+
+- **W1-26 · wichtig · Leeres Listenelement in der Quellenliste.**
+  - **Beleg:** `content/ihre-situation.html` Zeile 78 und `ihre-situation.html` Zeile 114: `<li></ul>` (Rest der entfernten Barbato-Zeile). Im Browser 11 Einträge, davon 1 leer, 33 px hoch; Screenreader zählen ein leeres Listenelement mit. Das Gate erkennt den Fehler nicht.
+  - **Zuständig:** bauende Sitzung.
+- **W1-27 · wichtig · Neue Aussagen ohne Quelle.**
+  - **Beleg:** `je-nach-rolle` › `erwachsene-kinder`: «zum Beispiel nach einem Verlust oder bei einer körperlichen Krankheit», «Eine Depression im Alter wird leicht übersehen …». Zusammen mit W1-10 lösen (eine Quelle zur Depression im Alter, etwa NVL-Kapitel 10, sobald es erschienen ist).
+  - **Zuständig:** bauende Sitzung (Quelle), Fachstelle bei Streichung.
+- **W1-28 · optional · Klinikaustritt: «Wochen» oder «Monate».**
+  - **Beleg:** Text «Die ersten Wochen nach einem Klinikaustritt …», Quellenzeile «Die ersten Monate …», Chung 2017 «within 3 months». Vorschlag: «Die ersten Wochen und Monate …».
+  - **Zuständig:** bauende Sitzung.
+- **W1-29 · optional · «Und viele ringen damit» blieb stehen.**
+  - **Beleg:** `je-nach-rolle` › `eltern`; Kika 2026 berichtet das Ringen um Unterstützen und Freiraum aus mehreren, nicht aus den meisten Studien (Runde 1, Quellentabelle). Entscheid W1-F-17 «alle Abschwächungen».
+  - **Zuständig:** bauende Sitzung.
+- **W1-30 · optional · Herkunft der Zahl im Abschnitt nicht genannt.**
+  - **Beleg:** `ihre-situation` › `was-belastet`: «Etwa vier von zehn Angehörigen fühlten sich nicht gut informiert oder nicht in die Behandlung einbezogen.» – die deutsche Befragung wird nur im Abschnitt davor genannt; wer über die Seitennavigation einsteigt, liest die Zahl ohne Herkunft. Vorschlag: «In der deutschen Befragung fühlten sich …».
+  - **Zuständig:** bauende Sitzung.
+
+**Offen in W1 nach Runde 2**
+
+| Punkt | Zuständig |
+| --- | --- |
+| W1-09 Rest (Abrufdatum, Obsan-Bulletin, PatG § 19, NVL-Kapitel Suizidalität) | bauende Sitzung vor der Veröffentlichung |
+| W1-10 Rest und W1-27 (Aussagen ohne deckende Quelle) | bauende Sitzung, Fachstelle bei Streichungen |
+| W1-17 / W1-F-15 (Abgleich Boot und Heft) | Fachstelle |
+| W1-21 / W1-F-11 (Betreuungsgutschriften, Kurzurlaub) | Fachstelle mit rechtlicher Prüfung |
+| W1-F-19 (Angebote) | Fachstelle |
+| W1-F-21 (fachliche Freigabe der Texte und der elf Visualisierungen) | Fachstelle |
+| W1-25 (Prüfung am Original) | Prüfsitzung mit Zugriff auf die Originale |
+| W1-26, W1-28 bis W1-30 | bauende Sitzung |
+
 ### W2 Gesamtkohärenz
 
 #### Prüfrunde W2 (10.10.2026, Stand `c2d1de8`)
@@ -981,7 +1068,188 @@ Schwere: **wichtig** = vor S umsetzen; **optional** = Verbesserung. Quelle aller
 4. Allfällige neue Abschnitte nach W2-F-06 und W2-F-07 (W2-10, W2-11).
 5. Die W1-Befunde, die Text auf mehreren Seiten ändern (W1-01, W1-02, W1-11, W1-12), mit diesen Änderungen zusammen umsetzen, damit S nur feststehenden Text prüft.
 
+#### Prüfrunde 2 · Nachprüfung der Umsetzung (11.10.2026, Stand `f413f69`)
+
+**Geprüft durch:** dieselbe Prüfsitzung. Grundlage wie W1, Prüfrunde 2; dazu Linkgraf und Wörter neu gezählt.
+
+**Umsetzung je Befund**
+
+| Befund | Entscheid | Umsetzung (Beleg) | Ergebnis |
+| --- | --- | --- | --- |
+| W2-01 Verlinkung | bauende Sitzung | Verweise L3 bis L11 im Text (z. B. `je-nach-rolle` › `partner` → `depression-verstehen.html#dahinter`; `begleiten` › `ansprechen` → `behandlung-und-verlauf.html#weg`; `rechte-und-angebote` › `angebote` → `fuer-sich-sorgen.html#netz`); L12 als Übergangssatz am Ende der Seiten 2 bis 7 (je ein `.puk-longform__transition`). Linkgraf neu: Jede Themenseite wird von mindestens einer anderen verlinkt (`depression-verstehen` von 3, `behandlung-und-verlauf` von 3, `je-nach-rolle` von 1, `rechte-und-angebote` von 4); `rechte-und-angebote` verlinkt 2 Seiten | erledigt |
+| W2-02 Suizid ohne Weg | bauende Sitzung | `je-nach-rolle` › `eltern`: «Was Sie tun können, wenn Sie befürchten, dass Ihr Kind nicht mehr leben will, steht unter …»; `depression-verstehen` › `was-ist`: gleicher Satz; dazu `behandlung-und-verlauf` › Klinikaufenthalt | erledigt |
+| W2-03 «Bezugsperson» | W2-F-01 ja | «Bezugsperson» nur noch auf `rechte-und-angebote` (7 Stellen), vor Abb. 1 erklärt; `index`: «nahestehende Menschen»; Schutzfaktor auf `je-nach-rolle` ohne das Wort | erledigt |
+| W2-04 Einverständnis | W2-F-02 | «Einverständnis» auf `index`, `behandlung-und-verlauf`, `je-nach-rolle`, `begleiten`, `rechte-und-angebote`; «Einwilligung» nur einmal als «(rechtlich: Einwilligung)»; «Zustimmung» kommt nicht mehr vor | erledigt |
+| W2-05 Schweregrad | W2-F-03 | «mittelgradig» für die Diagnose (`depression-verstehen` 1, `behandlung-und-verlauf` 3); «mittelschwer» nur bei der SGB-Zahl mit «(nach einem Fragebogen)» | erledigt |
+| W2-06 Paartherapie | W2-F-04 | ausgeführt nur auf `fuer-sich-sorgen` › `was-hilft`; `ihre-situation` und `je-nach-rolle`: «kann eine Paartherapie eine Möglichkeit sein. Mehr dazu unter …» | erledigt |
+| W2-07 Begriffsübersicht | bauende Sitzung | Tabelle «Begriffe nach den Entscheiden W2-F-01 bis W2-F-03» oben im Bericht; Zählung der Prüfsitzung bestätigt sie | erledigt |
+| W2-08 Begriffe ohne Erklärung | an S | «NVL», «unipolar», «Tagesklinik», «Achtsamkeit», «Betreuungsgutschriften», «Hilflosenentschädigung», «IV-Rente», «VASK» unverändert | an S übergeben (S-Befund) |
+| W2-09 «Krisenplan» | W2-F-05 | «Einen Plan für schwierige Zeiten vereinbaren»; «Krisenplan» kommt nicht mehr vor | erledigt |
+| W2-10 Lücken | W2-F-07 a ja, b über W1-F-09, c nein | `behandlung-und-verlauf` › «Wenn ein Klinikaufenthalt nötig wird» (nach Abb. 2, im Abschnitt `weg`); `je-nach-rolle` › `erwachsene-kinder`, Absatz zum Elternteil, der erst im Alter erkrankt | erledigt |
+| W2-11 Kernsatz Selbstsorge | W2-F-06 | `index` › `kurz`, sechster Kernsatz: «Sie dürfen auf sich achten und sich Unterstützung holen (Für sich sorgen).» | erledigt |
+
+**Neue Struktur geprüft**
+
+- **Raum:** 8473 Wörter (vorher 7772); sichtbar ohne Vertiefung: Verstehen 2665 (1212 + 1453), Ihre Situation 2268 (986 + 1282), Handeln 2295 (794 + 679 + 822). Die Gewichtung bleibt ausgeglichen.
+- **Neuer Abschnitt zum Klinikaufenthalt:** passt in `weg` direkt nach Schritt 4 «Tagesklinik oder Klinik» und braucht keine eigene Planzeile (Teil des Abschnitts `weg`). Gate ohne Befund «plan-section».
+- **Übergangssätze:** führen in der Reihenfolge der Navigation weiter; die letzte Seite hat keinen, die Übersicht braucht keinen.
+- **Zuständigkeitsverweis:** weiter einmal in jeder Fusszeile und zweimal im Text direkt nach einer Anleitung für akute Lagen; neu steht er auf `fuer-sich-sorgen` vor dem Satz zur Fachstelle (W1-18). Der neue Abschnitt zum Klinikaufenthalt verweist auf `begleiten.html#suizidgedanken`, ohne eigenen Verweis – richtig, weil er keine Anleitung für akute Lagen enthält.
+
+**Ergebnis:** Alle 16 Prüfpunkte aus Runde 1 sind mit Beleg geprüft, alle elf Befunde erledigt oder an S übergeben (W2-08). Neue W2-Befunde: keine. W2 ist **erledigt**. Was die W1-Befunde der Runde 2 noch ändern (Quellen, einzelne Wörter), berührt den Aufbau nicht.
+
 ### S Sprach-Review
+
+#### Prüfrunde S (11.10.2026, Stand `f413f69`)
+
+**Geprüft durch:** dieselbe Prüfsitzung (Claude Code, hat nicht gebaut). Keine Inhalte und kein Code geändert. S liefert hier Befunde mit Formulierungsvorschlägen; die überarbeitete Fassung setzt die bauende Sitzung um, sobald die Fachstelle die Vorschläge freigegeben hat.
+
+**Grundlage:** der vollständige sichtbare Text aller acht Seiten nach Prüfrunde 2 (Fliesstext, Überschriften, Lesepfade, Teaser, Bildlegenden, Kern- und Kurztexte der Figuren, Vertiefungen, Textfassungen, Gesprächsbeispiele, Schaltflächen), Satz für Satz gelesen. Kriterien: Abschnitt «Sprache und Ton» (`guidelines/00-sprache-und-ton.md`), Rahmen und Punkte 1 bis 6. Übernommen aus W1 und W2: «die Hälfte der Erkrankten» (W1-12) und Begriffe ohne Erklärung (W2-08).
+
+**Ergebnis:** S bleibt **offen**. 27 Befunde (5 wichtig, 22 optional) und 2 Fragen an die Fachstelle. Der Text ist durchgehend verständlich, ruhig und zugewandt, die Sätze sind kurz. Die wichtigen Befunde betreffen fünf Stellen, an denen ein Bezug unklar ist oder die Reihenfolge den Sinn verschiebt.
+
+**Lesetest: Satzlängen** (sichtbarer Text ohne Quellenliste und Textfassungen; Sätze ab vier Wörtern; Zählung der Prüfsitzung)
+
+| Seite | Sätze | Ø Wörter | über 25 Wörter | über 30 Wörter |
+| --- | --- | --- | --- | --- |
+| Übersicht | 51 | 10,5 | 1 | 0 |
+| Depression verstehen | 117 | 10,6 | 1 | 0 |
+| Behandlung und Verlauf | 145 | 9,9 | 2 | 0 |
+| Ihre Situation | 81 | 12,1 | 4 | 1 |
+| Je nach Rolle | 100 | 12,0 | 7 | 1 |
+| Begleiten und Gespräche | 77 | 9,6 | 1 | 0 |
+| Für sich sorgen | 62 | 10,6 | 0 | 0 |
+| Rechte und Unterstützung | 68 | 10,7 | 3 | 1 |
+
+Längster Satz (36 Wörter): `ihre-situation` › `belastung`, «Wie stark die Belastung ist, hängt weniger von der Diagnose ab als von der Lebenslage: …» – durch den Doppelpunkt gut lesbar, kein Befund. Kein Stakkato: Kurze Sätze stehen dort, wo sie klären («Das stimmt nicht.», «Fragen Sie direkt nach.»).
+
+**Prüfpunkte**
+
+| Punkt | Ergebnis | Beleg | Befund |
+| --- | --- | --- | --- |
+| Rahmen: Schweizer Hochdeutsch, Guillemets | erfüllt | kein «ß», keine „…“ in `content/` (Gate-Hinweis «orthography» ohne Befund); Guillemets durchgehend | – |
+| Rahmen: Anrede | erfüllt | «Sie» auf allen Seiten, «du» nur in Gesprächsbeispielen. Zweimal ist «Sie» am Satzanfang doppeldeutig | S-01, S-11 |
+| Rahmen: Zuständigkeit | erfüllt | keine Nummern, kein Notfallblock; Verweis im Text nur über den Platzhalter (`begleiten` › `suizidgedanken`, `fuer-sich-sorgen` › `eigene-krise`); Frühwarnzeichen und Plan als Psychoedukation (`behandlung-und-verlauf` › `vorbeugen`) | – |
+| 1 Zusammenhängend und verständlich | teilweise | gute Übergänge zwischen den Seiten (`.puk-longform__transition`). An einzelnen Stellen unterbrechen Verweissätze den Gedankengang oder ein Bezug ist unklar | S-03, S-04, S-05, S-06, S-16, S-23, S-26 |
+| 1 Fachbegriffe beim ersten Auftreten erklärt | teilweise | erklärt: Episode, Dysthymie, «Wir-Krankheit», Bezugsperson. Nicht erklärt: NVL, unipolar, Tagesklinik, Achtsamkeit, Betreuungsgutschriften, Hilflosenentschädigung, VASK (aus W2-08) | S-21 |
+| 2 Zugewandt und respektvoll | erfüllt, ein Befund | keine Unterstellungen, kein Pathos; behutsam: «Das kann sich wie Ablehnung anfühlen.» (`depression-verstehen` › `dahinter`). «Sie dürfen» oder «dürfen Sie» steht 15-mal; meist bei Rechten richtig, an zwei Stellen entbehrlich | S-15 |
+| 3 Gesprächsbeispiele | erfüllt, Einzelbefunde | 10 Gesprächsfelder (`.puk-say`) mit 10 Beispielen «So könnte es klingen», davon 4 als Gegenüberstellung «eher problematisch / eher hilfreich»; laut gelesen natürlich, z. B. «Ich denke an dich. Du musst nicht antworten. …» (`je-nach-rolle` › `freunde`). Zwei Beispiele mit gleichem Muster; die Waage spricht in einem Bild von zwei Kindern; ein Beispiel klingt gestelzt | S-10, S-20, S-25 |
+| 4 Eigene Bedürfnisse, Möglichkeiten, Zuständigkeiten | erfüllt | «Heilen können Sie die Depression nicht, und das ist auch nicht Ihre Aufgabe.» (`begleiten` › Hero); «Eine Grenze ist ein Entscheid über Ihren eigenen Beitrag» (`fuer-sich-sorgen` › `grenzen`); «Ein solcher Plan gehört der erkrankten Person.» (`behandlung-und-verlauf` › `vorbeugen`) | – |
+| 5 Fachliche Bedeutung schützen | erfüllt, ein Befund | keine Verschiebung von «kann» zu «wird» gefunden; Einschränkungen stehen beim Befund («in kleineren Studien von begrenzter Qualität»). Absolut formuliert: «Sie werden nie abrupt abgesetzt» | S-17 |
+| 6 Gliederung, Überschriften, Website-Texte | teilweise | Schaltflächen nennen die Handlung («Schritt für Schritt aufbauen», «Zurück», «Weiter»). Eine Überschrift verspricht, was der Text nicht mehr sagt; eine interne Bezeichnung in einer Legende; einzelne Teaser ungenau | S-02, S-19, S-24, S-27 |
+
+#### Befunde S
+
+Schwere: **wichtig** = Bezug oder Sinn unklar, vor der Freigabe ändern; **optional** = Verbesserung. Jeder Vorschlag lässt die fachliche Aussage unverändert, ausser wo «Prüfbedarf» steht. Quelle aller Befunde: Prüfung 1.
+
+- **S-01 · wichtig · «Sie» doppeldeutig auf der Rechteseite.**
+  - **Ist** (`rechte-und-angebote` › `schweigepflicht`): «Ärztinnen, Psychologen und Pflegefachpersonen stehen unter Schweigepflicht. Sie dürfen Anvertrautes nur weitergeben, wenn …» – «Sie» am Satzanfang kann als Anrede gelesen werden, ausgerechnet auf der Seite, die erklärt, was Angehörige dürfen.
+  - **Vorschlag:** «Ärztinnen und Ärzte, Psychologinnen und Psychologen sowie Pflegefachpersonen stehen unter Schweigepflicht. Diese Fachpersonen dürfen Anvertrautes nur weitergeben, wenn die erkrankte Person einverstanden ist (rechtlich: Einwilligung) oder ein Gesetz es erlaubt.»
+- **S-02 · wichtig · Überschrift verspricht eine Rangfolge.**
+  - **Ist:** `ihre-situation`, Überschrift «Was am meisten belastet»; seit Runde 2 nennt der Text keine Rangfolge mehr («Viele Angehörige sorgen sich …», W1-10). Ebenso `site.config.json` › `v-is-was-belastet` › `section`.
+  - **Vorschlag:** «Was besonders belastet»; die Seitennavigation («Was belastet») bleibt.
+- **S-03 · wichtig · Verweissätze wiederholen ihren Linktext.**
+  - **Ist** (6 Stellen):
+    - `depression-verstehen` › `was-ist`, `ihre-situation` › `angst`, `behandlung-und-verlauf` › Klinikaufenthalt: «Was Sie tun können, wenn Sie befürchten, dass die Person nicht mehr leben will, steht unter Wenn Sie befürchten, dass die Person nicht mehr leben will.»
+    - `je-nach-rolle` › `eltern`: «… dass Ihr Kind nicht mehr leben will, steht unter Wenn Sie befürchten, dass die Person nicht mehr leben will.»
+    - `begleiten` › `ansprechen`: «Wie der Weg in die Behandlung aussieht, steht unter Der Weg in die Behandlung.»
+    - `begleiten` › Vertiefung Abb. 1: «Für sich zu sorgen gehört dazu: Für sich sorgen.»
+  - Insgesamt stehen 22 eigene Verweissätze («steht unter», «Mehr dazu unter») und 6 Übergangssätze im Text.
+  - **Vorschlag:** kurzer Linktext wie in der Seitennavigation, z. B. «Was Sie tun können, wenn Sie befürchten, dass die Person nicht mehr leben will, steht im Abschnitt [Bei Suizidgedanken] auf der Seite «Begleiten und Gespräche».»; «Wie es danach weitergeht, steht unter [Der Weg in die Behandlung].»; «Für sich zu sorgen gehört dazu (Seite [Für sich sorgen]).» Wo ein Satz schon da ist, die vorhandenen Wörter verlinken statt einen Satz anzuhängen, z. B. `je-nach-rolle` › `partner`: «… sind oft [Zeichen der Krankheit], keine Ablehnung Ihrer Person.»
+- **S-04 · wichtig · «Bei Männern»: Bezug von «Diese Zeichen» unklar.**
+  - **Ist** (`depression-verstehen` › `anders`): «… manchmal auch als Flucht in die Arbeit. Ob sich Depression bei Männern grundsätzlich anders zeigt, ist noch nicht sicher geklärt. Männer lassen sich seltener behandeln, und sie sterben in der Schweiz fast dreimal so oft durch Suizid wie Frauen. Diese Zeichen kommen auch bei Frauen vor.» – der letzte Satz folgt auf die Suizidzahl und kann auf sie bezogen werden.
+  - **Vorschlag:** «Depression kann sich eher als Gereiztheit, Wut, mehr Alkohol oder riskantes Verhalten zeigen, manchmal auch als Flucht in die Arbeit. Diese Zeichen kommen auch bei Frauen vor; ob sich Depression bei Männern grundsätzlich anders zeigt, ist noch nicht sicher geklärt. Männer lassen sich seltener behandeln, und sie sterben in der Schweiz fast dreimal so oft durch Suizid wie Frauen.»
+- **S-05 · wichtig · Klinikaustritt: Reihenfolge verschiebt den Sinn.**
+  - **Ist** (`behandlung-und-verlauf` › «Wenn ein Klinikaufenthalt nötig wird»): «Die ersten Wochen nach einem Klinikaustritt sind oft eine verletzliche Zeit. Achten Sie in dieser Zeit auch auf sich selbst. Was Sie tun können, wenn …» – der mittlere Satz unterbricht den Zusammenhang zwischen verletzlicher Zeit und Suizidgefahr; «verletzlich» lässt offen, für wen.
+  - **Vorschlag** (mit W1-28): «Die ersten Wochen und Monate nach einem Klinikaustritt sind für die erkrankte Person oft eine verletzliche Zeit. Was Sie tun können, wenn Sie befürchten, dass sie nicht mehr leben will, steht im Abschnitt [Bei Suizidgedanken]. Achten Sie in dieser Zeit auch auf sich selbst.»
+- **S-06 · optional · Satzbruch vor einer Liste.**
+  - **Ist** (`ihre-situation` › `was-belastet`): «Belastend sind auch der fehlende Antrieb und der Verlust von Interessen, die gemeinsame Pläne schwer machen, und:»
+  - **Vorschlag:** «Belastend sind auch der fehlende Antrieb und der Verlust von Interessen, die gemeinsame Pläne schwer machen. Dazu kommen:»
+- **S-07 · optional · Zielgruppe sperrig.**
+  - **Ist** (`index` › `einstieg`): «Diese Website richtet sich an Angehörige und nahestehende Menschen von Erwachsenen mit Depression.»
+  - **Vorschlag:** «Diese Website richtet sich an Menschen, die einem Erwachsenen mit Depression nahestehen: Angehörige, Freundinnen und Freunde.»
+- **S-08 · optional · Klammer und doppelte «Befragung».**
+  - **Ist** (`depression-verstehen` › `was-ist`; erster Satz auch `index` › `einstieg`): «… berichtete rund jede zehnte Person über mittelschwere bis schwere depressive Beschwerden (nach einem Fragebogen). In Befragungen zeigen Frauen etwa doppelt so oft die Merkmale einer Depression wie Männer.»
+  - **Vorschlag:** «In der Schweizerischen Gesundheitsbefragung 2022 gab rund jede zehnte Person in einem Fragebogen mittelschwere bis schwere depressive Beschwerden an. Frauen erfüllen in solchen Befragungen etwa doppelt so oft die Merkmale einer Depression wie Männer.»
+- **S-09 · optional · Etikett (aus W1-12).**
+  - **Ist** (`behandlung-und-verlauf` › `verlauf`): «… war nach drei Monaten die Hälfte der Erkrankten wieder gesund …»
+  - **Vorschlag:** «… war nach drei Monaten die Hälfte der Menschen mit einer depressiven Episode wieder gesund …»
+- **S-10 · optional · Waage: zwei Kinder in einem Bild.**
+  - **Ist** (`je-nach-rolle` › Abb. 1): links «Ich sehe doch, wie schlecht es ihr geht.», rechts «Er ist erwachsen. Er entscheidet selbst.» – ein Elternteil denkt hier über ein und dasselbe Kind nach.
+  - **Vorschlag:** links «Ich sehe doch, wie schlecht es ihm geht.»; ebenso im Plan `v-ro-spannung` › `statement`.
+- **S-11 · optional · Geschwister: Wiederholung und Anrede.**
+  - **Ist** (`je-nach-rolle` › `geschwister`): «Geschwister werden oft übersehen. Geschwister von Menschen mit psychischen Erkrankungen haben … als Menschen ohne erkranktes Geschwister; die Studien dazu betreffen psychische Erkrankungen allgemein, nicht nur Depression.» und «Sie dürfen selbst entscheiden, wie viel sie mittragen.» («Sie» = die Geschwister oder die Lesenden?)
+  - **Vorschlag:** «Geschwister werden oft übersehen. Studien zu Geschwistern von Menschen mit psychischen Erkrankungen allgemein zeigen, dass Geschwister im Durchschnitt mehr depressive Beschwerden und mehr Ängste haben als Menschen ohne erkranktes Geschwister.»; «Als Schwester oder Bruder dürfen Sie selbst entscheiden, wie viel Sie mittragen.»
+- **S-12 · optional · «erst im Alter» – wessen Alter?**
+  - **Ist** (`je-nach-rolle` › `erwachsene-kinder`): «Andere erleben die Depression eines Elternteils erst im Alter, …»
+  - **Vorschlag:** «Bei anderen erkrankt die Mutter oder der Vater erst im Alter, zum Beispiel nach einem Verlust oder bei einer körperlichen Krankheit.»
+- **S-13 · optional · Listenpunkt nicht parallel.**
+  - **Ist** (`je-nach-rolle` › `kinder`, «Schützend wirken:»): «wenn der erkrankte Elternteil positiv und anerkennend über das Kind spricht» neben Nomen («gute Freundschaften», «regelmässige Bewegung»).
+  - **Vorschlag:** «anerkennende Worte des erkrankten Elternteils über das Kind»
+- **S-14 · optional · «Gereiztheit» zweimal hintereinander; Gross- und Kleinschreibung.**
+  - **Ist** (`begleiten` › `alltag`): Liste «Gereiztheit als Teil der Krankheit sehen.», gleich danach «Gereiztheit gehört oft zur Krankheit. Beleidigungen oder Übergriffe müssen Sie trotzdem nicht hinnehmen …»; Liste «Nörgeln oder überbehüten.»
+  - **Vorschlag:** «Auch wenn Gereiztheit zur Krankheit gehört: Beleidigungen oder Übergriffe müssen Sie nicht hinnehmen; Ihre Sicherheit geht vor.»; «Nörgeln oder Überbehüten.»
+- **S-15 · optional · «Sie dürfen» an zwei Stellen entbehrlich.**
+  - **Ist:** `index` › `kurz`, zwei Kernsätze nacheinander mit «Sie dürfen …»; `begleiten` › `ansprechen`, erster Satz «Sie dürfen die Veränderungen ansprechen.»
+  - **Vorschlag:** Kernsatz 5: «Auf sich zu achten und sich Unterstützung zu holen, ist kein Egoismus (Für sich sorgen).»; auf `begleiten` den ersten Satz streichen, der Abschnitt beginnt mit «Wählen Sie für das Gespräch einen ruhigen Moment, …». Die übrigen «Sie dürfen» stehen bei Rechten und bleiben.
+- **S-16 · optional · Plan für schwierige Zeiten: Reihenfolge und ein unklarer Ausdruck.**
+  - **Ist** (`behandlung-und-verlauf` › `vorbeugen`): Der Verweissatz «Wie Sie frühe Zeichen ansprechen können, steht unter …» steht zwischen der Liste und «Ein solcher Plan gehört der erkrankten Person.»; Abb. 3: «früh mit der Behandlung Kontakt aufnehmen».
+  - **Vorschlag:** Verweissatz nach den Gesprächsbeispielen; «früh mit der behandelnden Fachperson Kontakt aufnehmen».
+- **S-17 · optional · Absolut formuliert (Prüfbedarf).**
+  - **Ist** (`behandlung-und-verlauf` › Abb. 1): «Sie werden nie abrupt abgesetzt, sondern langsam und in Absprache.» – beschreibt als Tatsache, was eine Regel ist.
+  - **Vorschlag:** «Sie sollen nicht abrupt abgesetzt werden, sondern langsam und in Absprache mit der Ärztin oder dem Arzt.» Prüfbedarf: Fachstelle bestätigt, dass der Sinn gleich bleibt.
+- **S-18 · optional · Achtsamkeit: Einschränkung angehängt; «etwas».**
+  - **Ist** (`fuer-sich-sorgen` › `was-hilft`): «Programme zur Achtsamkeit verringerten … Stress und Niedergeschlagenheit, in kleineren Studien von begrenzter Qualität; die Belastung sank nur wenig.»; «Für die eigene Entlastung braucht es zusätzlich etwas für Sie selbst.»
+  - **Vorschlag:** «In kleineren Studien von begrenzter Qualität verringerten Achtsamkeitsprogramme bei Angehörigen psychisch erkrankter Menschen Stress und Niedergeschlagenheit; die Belastung sank nur wenig.»; «Für die eigene Entlastung brauchen Sie zusätzlich Angebote für sich selbst.»
+- **S-19 · optional · Interne Bezeichnung in einer Legende.**
+  - **Ist** (`fuer-sich-sorgen` › Abb. 1): «Eigene didaktische Darstellung (Muster I)» – «Muster I» ist ein Begriff des Profils, nicht der Lesenden.
+  - **Vorschlag:** «(Muster I)» streichen.
+- **S-20 · optional · Rechteseite: Bezugsperson zweimal erklärt; Beispiel gestelzt.**
+  - **Ist** (`rechte-und-angebote`): Erklärung vor Abb. 1 und noch einmal in `vorsorge` («Im Kanton Zürich können Patientinnen und Patienten Bezugspersonen bezeichnen. Tun sie es nicht, …»); Beispiel «Falls Sie mir nichts über meinen Mann sagen dürfen: Ich möchte Ihnen erzählen, was mir zu Hause auffällt.»
+  - **Vorschlag:** in `vorsorge`: «Bezugsperson: Die erkrankte Person kann Sie ausdrücklich als Bezugsperson bezeichnen. Wer das ist, wenn sie niemanden bezeichnet, steht oben.»; Beispiel: «Vielleicht dürfen Sie mir nichts über meinen Mann sagen. Ich möchte Ihnen aber erzählen, was mir zu Hause auffällt.» (Wortlaut des Beispiels hat die Fachstelle mit W1-F-01 b gewählt; S-F-01.)
+- **S-21 · optional · Begriffe ohne Erklärung (aus W2-08).**
+  - **Ist und Vorschlag:**
+    - Legenden «NVL Unipolare Depression» (`depression-verstehen`, `behandlung-und-verlauf`) → «deutsche Behandlungsleitlinie (NVL)»; «SGAD/SGPP 2025» → «Schweizer Behandlungsempfehlungen 2025».
+    - «Tagesklinik» (`behandlung-und-verlauf` › Abb. 2) → «Tagesklinik (Behandlung tagsüber, die Nächte zu Hause)».
+    - «Achtsamkeit» (`fuer-sich-sorgen`) → «Achtsamkeitsprogramme (Übungen, die Aufmerksamkeit ohne Bewertung auf den Moment zu richten)».
+    - «Betreuungsgutschriften», «Hilflosenentschädigung» (`rechte-und-angebote` › `arbeit-geld`) → je eine kurze Erklärung, etwa «Betreuungsgutschriften (Gutschriften für die AHV-Rente der betreuenden Person)», «Hilflosenentschädigung (Geld der IV für Menschen, die im Alltag dauernd auf Hilfe angewiesen sind)». Prüfbedarf: Wortlaut fachlich und rechtlich prüfen (mit W1-F-11).
+    - «VASK» (`je-nach-rolle`, `rechte-und-angebote`) → Namen beim ersten Auftreten so ausschreiben, wie der Verein ihn selbst verwendet.
+- **S-22 · optional · Geschlechtergerechte Formen uneinheitlich.**
+  - **Ist:** meist Paarformen («Partnerinnen und Partner», «Freundinnen und Freunde»), aber «Partner» (`index` › `kapitel`; `je-nach-rolle` › `partner` «der Partner» 2×; `ihre-situation` › `angst` «Eltern und Partner»), «Freunde» (`index` 2×), «Psychologen» (`rechte-und-angebote`) und nur weibliche Formen «eine Hausärztin, eine Psychiaterin oder eine andere dazu berechtigte Ärztin» (`behandlung-und-verlauf` › Abb. 2).
+  - **Vorschlag:** Paarformen oder neutrale Formen («Partnerinnen und Partner», «ärztliche Fachperson»). Gesprächsbeispiele bleiben, wie sie sind («Hilfe von einer Ärztin»). Hausregel: S-F-02.
+- **S-23 · optional · Wiederholungen innerhalb eines Abschnitts.**
+  - `depression-verstehen` › `entstehung`: «Viele Angehörige fragen sich, warum …, und manche fragen sich, ob …» → «…, manche auch, ob sie etwas falsch gemacht haben.»
+  - `ihre-situation` › `wechselwirkung`: Einleitung, Kern der Abbildung und erster Satz der Vertiefung sagen dasselbe. Vorschlag: Einleitung «Studien weisen darauf hin, dass sich Depression und Spannungen in einer Beziehung gegenseitig verstärken können. Daran ist niemand schuld. Die Abbildung zeigt, wie ein solcher Kreis entstehen kann.»; die Vertiefung beginnt mit «Kritik in der Familie hängt mit Rückfällen zusammen.» (ohne «auch», das sich auf nichts im Text bezieht).
+  - `depression-verstehen` › Vertiefung Abb. 2: «Antidepressiva wirken trotzdem: … wirkten alle untersuchten Antidepressiva …» → «Antidepressiva helfen trotzdem: … wirkten alle untersuchten Mittel …».
+  - `index` › `kurz` und `ihre-situation` › `nicht-allein`: «In einer grossen Befragung … als grosse Belastung» – zweimal «gross»; ein Wort ersetzen.
+- **S-24 · optional · Ankündigungen ungenau.**
+  - `depression-verstehen` › `formen`: «Depressionen unterscheiden sich vor allem darin, wie sie verlaufen.» – die Liste nennt auch «Mit psychotischen Merkmalen» (Schwere) → «… wie sie verlaufen und wie schwer sie sind.»
+  - `index` › Lesepfad «Mutter oder Vater mit Kindern in der Familie» – unklar, ob der erkrankte oder der andere Elternteil gemeint ist → «Wenn Kinder in der Familie leben».
+  - `index` › Lesepfad Partner: «… und was Paare auch erleben.» – unbestimmt → «Schuldgefühle, Streit, Nähe und Sexualität.»
+  - `index` › `kapitel`, Teaser «Je nach Rolle»: nennt die Kinder in der Familie nicht → «… besonders zählt, und was Kindern in der Familie hilft.»
+- **S-25 · optional · Zwei Gesprächsbeispiele mit gleichem Muster.**
+  - **Ist:** «Mir fällt auf, dass du seit Wochen kaum schläfst …» (`begleiten` › `ansprechen`) und «Mir fällt auf, dass du seit einer Woche kaum schläfst.» (`behandlung-und-verlauf` › `vorbeugen`).
+  - **Vorschlag:** im zweiten ein anderes frühes Zeichen, z. B. «Mir fällt auf, dass du seit ein paar Tagen kaum mehr rausgehst. …»
+- **S-26 · optional · Grenzen: Übergang zu Übergriffen fehlt.**
+  - **Ist** (`fuer-sich-sorgen` › `grenzen`): nach dem Beispiel unvermittelt «Gereiztheit gehört oft zur Krankheit. Beleidigungen, Drohungen oder Übergriffe …»
+  - **Vorschlag:** «Grenzen gelten auch im Umgang miteinander: Gereiztheit gehört oft zur Krankheit, Beleidigungen, Drohungen oder Übergriffe müssen Sie trotzdem nicht hinnehmen. Sie dürfen ein Gespräch beenden und den Raum verlassen.»
+- **S-27 · optional · Seitentitel in einer «und»-Kette.**
+  - **Ist** (`je-nach-rolle` › `rollen`): «… steht auf den Seiten Ihre Situation, Begleiten und Gespräche und Rechte und Angebote.»
+  - **Vorschlag:** «… steht auf den Seiten «Ihre Situation», «Begleiten und Gespräche» sowie «Rechte und Unterstützung».»
+
+**Hinweis für die Veröffentlichung (kein Befund):** «Musterentwurf: noch nicht fachlich geprüft.», «fachliche Freigabe ausstehend» in den Legenden und «Angaben zu den Angeboten: Stand 10.10.2026, vor der Veröffentlichung zu prüfen.» sind Entwurfsvermerke. Sie werden mit der Freigabe durch den Freigabestand ersetzt.
+
+#### Fragen an die Fachstelle (S)
+
+1. **S-F-01 · Vorschläge freigeben.** Bitte je Befund S-01 bis S-27 Ja oder Nein (oder eigener Wortlaut). Bei S-17 und S-21 bestätigen, dass der Sinn gleich bleibt; bei S-20 entscheiden, ob das Beispiel aus W1-F-01 b neu formuliert wird.
+2. **S-F-02 · Hausregel für Personenbezeichnungen** (S-22). Paarformen («Ärztinnen und Ärzte»), neutrale Formen («ärztliche Fachperson») oder beides je nach Stelle?
+
+#### Zählung der Befunde S
+
+| Schwere | Anzahl | Befunde |
+| --- | --- | --- |
+| wichtig | 5 | S-01 bis S-05 |
+| optional | 22 | S-06 bis S-27 |
+| Fragen an die Fachstelle | 2 | S-F-01, S-F-02 |
 
 ### Bedienung und Barrierefreiheit
 
