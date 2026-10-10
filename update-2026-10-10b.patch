@@ -1,0 +1,166 @@
+diff --git a/README.md b/README.md
+index 3951d21..8a93087 100644
+--- a/README.md
++++ b/README.md
+@@ -165,6 +165,7 @@ Arbeit am System:
+ 
+ ## Änderungsprotokoll
+ 
++- **10.10.2026 · Gate-Korrektur für eigene Zeichnungen:** Das Gate verlangte bei `illustration` weiterhin einen Platzhalter- oder Bildquellenstatus und blockierte damit eigene Zeichnungen nach Muster D (Befund beim Bau der Borderline-Website, Abbildung «Momentaufnahmen»). Korrigiert: Eine Illustration mit `.puk-vis-scene` gilt als eigene Zeichnung; Kennzeichnung und Freigabe im Plan prüft das Gate wie bei jeder Figur. Starter Build r4-7, Selbsttest 53/53.
+ - **10.10.2026 · Bildsprache: ein Bild, eine Idee:** Anlass: Die Fachstelle hat die Abbildung «Die Brücke mit Geländer» der Borderline-Website gestrichen; sie wirkte wie ein Bauplan und war nur mit einer Liste zu entschlüsseln. Das Profil wollte warme, organische Bilder, hatte aber Lücken: Die Diagramm-Regeln galten für alle Muster, Muster D erlaubte ohne fremde Bildquelle nur einen Platzhalter, und keine Prüfung fragte nach der Wirkung. Neu: Abschnitt «Ein Bild, eine Idee» (acht Regeln, Freundin-Test), Abschnitt «Metaphern und Illustrationen zeichnen», Diagramm-Regeln gelten für Metaphern nur, soweit sie nicht widersprechen; eigene Zeichnungen ohne fremde Quelle zulässig; Planfeld `resonance` (Wirkung) mit Gate-Prüfung (Entwurf: Hinweis, Produktion: blockiert); Visualisierungs-Check um drei Punkte erweitert (15–17); R2 mit Teil 2 «Bildsprache und Wirkung je Figur»; Muster D als Beispielszene «Ein freier Abend» mit `.puk-vis-scene` (Musterinhalt, fachliche Freigabe ausstehend). Starter Build r4-6, Selbsttest 52/52.
+ - **09.10.2026 · Pre-Release-Audits:** Neuer Abschnitt mit drei Prüfaufträgen für den fertigen Release-Kandidaten: R1 Profil-Audit (Marke, Farben, Schrift, Navigation, Komponenten, Zuständigkeit), R2 Visualisierung und Laienverständlichkeit (Matrix je Figur, Lesetest je Abschnitt aus Sicht einer belasteten angehörigen Person, «Was Sie tun können»), R3 Freigabe-Audit mit «Go» oder «No-Go». Prüfbericht-Vorlage mit Zeilen R1 bis R3; das Produktionsgate prüft sie (Starter Build r4-5, Selbsttest 51/51).
+ - **09.10.2026 · Fachliche Durchsicht der Borderline-Website:** Neuer Standardwortlaut des Zuständigkeitsverweises (freundlicher, mit «kostenlos und vertraulich»; zweiter Satz wortgleich mit dem Verweis im Text), fachlich geprüft von der Fachstelle am 09.10.2026. Die Kurzbeschreibung in der Bildlegende steht nur noch für Screenreader (`p.puk-sr`, weiter über `aria-describedby` verbunden); sichtbar bleiben Kennzeichnung und Quelle. Anlass: Die Beschreibungen erklärten Sehenden nur, was sie ohnehin sehen. Alle Muster, Vorlagen und Starter-Seiten angepasst.
+diff --git a/guidelines/07-visualisierung-umsetzen.md b/guidelines/07-visualisierung-umsetzen.md
+index 26e6f79..6fbdb34 100644
+--- a/guidelines/07-visualisierung-umsetzen.md
++++ b/guidelines/07-visualisierung-umsetzen.md
+@@ -67,6 +67,7 @@ Profilentscheid 10.10.2026. Gilt für Muster D und für jede Darstellung, die ei
+ - **Text um das Bild:** Kernaussage und Erklärtext sagen, was das Bild für Angehörige heisst, nicht wie es aufgebaut ist. «Was Sie tun können» steht im Text, nicht als Teil der Zeichnung.
+ - **Ablauf:** Vor dem Bau eine Skizze in Worten und die Wirkung im Plan. Nach dem Bau Bildschirmfotos bei 1280 und 360 px. Die Fachstelle sieht das Bild, bevor sie es freigibt.
+ - **Platzhalter** (`.puk-vis-illu`) nur für fremde Bilder ohne freigegebene Quelle oder solange eine Zeichnung noch fehlt.
++- **Auszeichnung:** `data-visual-type="illustration"` mit `.puk-vis-scene`. Für eine eigene Zeichnung verlangt das Gate keinen Bildquellen- oder Platzhalterstatus; die Kennzeichnung «Eigene didaktische Darstellung» und die Freigabe im Plan prüft es wie bei jeder Figur (ab Build r4-7).
+ 
+ ## Schmale Bildschirme
+ 
+diff --git a/templates/website/psychoeducation-site-starter/README.md b/templates/website/psychoeducation-site-starter/README.md
+index 20dacb5..1b40d48 100644
+--- a/templates/website/psychoeducation-site-starter/README.md
++++ b/templates/website/psychoeducation-site-starter/README.md
+@@ -1,4 +1,4 @@
+-# Psychoedukations-Starter · PUK Website Kit 1.10.1-r4 · abgeleitet · Build r4-6
++# Psychoedukations-Starter · PUK Website Kit 1.10.1-r4 · abgeleitet · Build r4-7
+ 
+ Lokal lauffähiger Mehrseiten-Starter für psychoedukative Websites. Abgeleitetes Profil auf Basis der kanonischen Quelle **PUK Zürich Design System 1.10.1**, nicht deren neue offizielle Version. Alle Inhalte sind synthetisch: keine realen Kontakte, Personen, klinischen Aussagen, Freigaben oder Bildrechte.
+ 
+@@ -60,6 +60,7 @@ Seiten über einen lokalen Webserver öffnen (z. B. `npx serve` im Projektstamm
+   - Figuren ohne Bildlegende, Titel, Textalternative, Kennzeichnung oder Plan-Eintrag
+   - Kreisläufe ohne geschlossene Schleife, mit «Uhrzeigersinn» ausserhalb der breiten Leserichtung oder ohne sichtbaren Rücksprung zu Station 1
+   - Platzhalter ohne `data-source-status`/`data-approval-status` oder ohne sichtbare Entwurfsmarke
++  - Illustration (`illustration`) ohne eigene Zeichnung (`.puk-vis-scene`) und ohne Bildquelle- und Freigabestatus
+   - generische Quellenlinks ohne sprechendes `aria-label`
+   - Inline-Skripte (Content-Security-Policy), Links mit `target="_blank"` ohne `rel="noopener noreferrer"`
+   - interaktive Komponenten ohne lokal vorhandenes `interaktion.js`
+@@ -79,9 +80,9 @@ Seiten über einen lokalen Webserver öffnen (z. B. `npx serve` im Projektstamm
+ - `index.html`: Einstieg mit Lesepfaden; der Vollbericht ist ein Download-Platzhalter.
+ - `seitenvorlage.html`: Entwurf, nicht in der Navigation.
+ 
+-Stand 10.10.2026 (Build r4-6, Bildsprache «Ein Bild, eine Idee»; Assets r4-6 wegen `.puk-vis-scene` in `visual-patterns.css`):
++Stand 10.10.2026 (Build r4-7: eigene Zeichnungen mit `.puk-vis-scene` gelten als Illustration ohne Platzhalter; Build r4-6: Bildsprache «Ein Bild, eine Idee», Assets r4-6 wegen `.puk-vis-scene` in `visual-patterns.css`):
+ - **Entwurfsgate:** 0 blockierende Befunde.
+ - **Produktionsgate:** blockiert die offenen Freigaben und den unvollständigen Prüfbericht. Das ist erwartet. Der Prüfbericht braucht neu auch die Zeilen R1, R2 und R3 (Abschnitt «Pre-Release-Audits»); R3 nur bei «Go» auf «erledigt».
+-- **Selbsttest:** 52 von 52 bestanden, auch in Kopien des Starters (neu: Visualisierungsplan ohne Wirkung `resonance`; seit r4-5: Produktion blockiert ohne «Go» im Freigabe-Audit R3; seit r4-4: Verweis im Text mit eigenem Wortlaut, auf Seite ohne sensibles Thema, in einer Vertiefung, ungeprüft in Produktion).
++- **Selbsttest:** 53 von 53 bestanden, auch in Kopien des Starters (neu: Illustration ohne eigene Zeichnung und ohne Bildstatus; seit r4-6: Visualisierungsplan ohne Wirkung `resonance`; seit r4-5: Produktion blockiert ohne «Go» im Freigabe-Audit R3; seit r4-4: Verweis im Text mit eigenem Wortlaut, auf Seite ohne sensibles Thema, in einer Vertiefung, ungeprüft in Produktion).
+ 
+ Offen sind reale Screenreader-Läufe, ein Test mit Hardwaretastatur sowie Fach-, Bild- und Absenderfreigaben.
+diff --git a/templates/website/psychoeducation-site-starter/behandlung-verstehen.html b/templates/website/psychoeducation-site-starter/behandlung-verstehen.html
+index 89596e7..b7faf85 100644
+--- a/templates/website/psychoeducation-site-starter/behandlung-verstehen.html
++++ b/templates/website/psychoeducation-site-starter/behandlung-verstehen.html
+@@ -1,5 +1,5 @@
+ <!DOCTYPE html>
+-<html lang="de-CH" data-puk-site-build="r4-6" data-page-id="behandlung-verstehen">
++<html lang="de-CH" data-puk-site-build="r4-7" data-page-id="behandlung-verstehen">
+ <head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+diff --git a/templates/website/psychoeducation-site-starter/beziehungen-verstehen.html b/templates/website/psychoeducation-site-starter/beziehungen-verstehen.html
+index 8a620a6..9368f0c 100644
+--- a/templates/website/psychoeducation-site-starter/beziehungen-verstehen.html
++++ b/templates/website/psychoeducation-site-starter/beziehungen-verstehen.html
+@@ -1,5 +1,5 @@
+ <!DOCTYPE html>
+-<html lang="de-CH" data-puk-site-build="r4-6" data-page-id="beziehungen-verstehen">
++<html lang="de-CH" data-puk-site-build="r4-7" data-page-id="beziehungen-verstehen">
+ <head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+diff --git a/templates/website/psychoeducation-site-starter/gate.html b/templates/website/psychoeducation-site-starter/gate.html
+index c1fe87c..edd4a72 100644
+--- a/templates/website/psychoeducation-site-starter/gate.html
++++ b/templates/website/psychoeducation-site-starter/gate.html
+@@ -31,7 +31,7 @@ a{color:var(--text-link)}a:hover{color:var(--text-link-hover)}
+ <h2>Gate Produktion</h2><div class="wrap" id="prod"></div>
+ <h2>Selbsttest</h2><p>Jede Fehlerklasse wird absichtlich in eine Kopie der Seiten eingebaut; das Gate muss sie als blockierend erkennen.</p><div class="wrap" id="self"></div>
+ </main>
+-<script src="tools/contract.js?v=r4-6"></script>
++<script src="tools/contract.js?v=r4-7"></script>
+ <script>
+ (async () => {
+   const C = window.PUKSiteContract; const e = s => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;');
+diff --git a/templates/website/psychoeducation-site-starter/index.html b/templates/website/psychoeducation-site-starter/index.html
+index 51f4d4b..e9765a4 100644
+--- a/templates/website/psychoeducation-site-starter/index.html
++++ b/templates/website/psychoeducation-site-starter/index.html
+@@ -1,5 +1,5 @@
+ <!DOCTYPE html>
+-<html lang="de-CH" data-puk-site-build="r4-6" data-page-id="index">
++<html lang="de-CH" data-puk-site-build="r4-7" data-page-id="index">
+ <head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+diff --git a/templates/website/psychoeducation-site-starter/seitenvorlage.html b/templates/website/psychoeducation-site-starter/seitenvorlage.html
+index d17d2c4..73dadc5 100644
+--- a/templates/website/psychoeducation-site-starter/seitenvorlage.html
++++ b/templates/website/psychoeducation-site-starter/seitenvorlage.html
+@@ -1,5 +1,5 @@
+ <!DOCTYPE html>
+-<html lang="de-CH" data-puk-site-build="r4-6" data-page-id="seitenvorlage">
++<html lang="de-CH" data-puk-site-build="r4-7" data-page-id="seitenvorlage">
+ <head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+diff --git a/templates/website/psychoeducation-site-starter/tools/contract.js b/templates/website/psychoeducation-site-starter/tools/contract.js
+index da7b707..618dd8d 100644
+--- a/templates/website/psychoeducation-site-starter/tools/contract.js
++++ b/templates/website/psychoeducation-site-starter/tools/contract.js
+@@ -8,7 +8,7 @@
+ })(typeof self !== 'undefined' ? self : this, function () {
+ 'use strict';
+ const VERSION = 'PUK Website Kit 1.10.1-r4 · abgeleitet';
+-const BUILD = 'r4-6';
++const BUILD = 'r4-7';
+ const FORMATS = ['text', 'figure', 'process', 'cycle', 'comparison', 'decision', 'illustration', 'stepwise-model', 'tension-field', 'relationship-map', 'continuum', 'layer-model'];
+ /* Interaktive Komponenten und Erklärmuster G brauchen components/interaktion.js (HTML-Fassungen ohne React). */
+ const INTERACTIVE = ['data-puk-accordion', 'data-puk-tabs', 'data-puk-disclosure', 'data-puk-dialog-open', 'data-vis-build'];
+@@ -330,7 +330,8 @@ function gate(cfg, files, opts = {}) {
+         if (!ret || !/zurück zu station 1/i.test(txt(ret))) add('block', pid, 'cycle-return', `Kreislauf ${lab}: sichtbarer Rücksprung «zurück zu Station 1» fehlt`);
+         if (db && !/station 1/i.test(db.split(/\s+/).map(x => txt(byId(doc, x))).join(' '))) add('block', pid, 'cycle-return', `Kreislauf ${lab}: Textfassung erklärt die Rückkopplung zu Station 1 nicht`);
+       }
+-      if (f.attrs['data-visual-type'] === 'illustration' && !one(f, x => has(x, 'data-placeholder') || (x.tag === 'img' && has(x, 'data-source-status')))) add('block', pid, 'placeholder-status', `Illustration ${lab}: Bildquelle- und Freigabestatus fehlen`);
++      /* Profilentscheid 10.10.2026: Eine eigene Zeichnung (.puk-vis-scene) braucht keine fremde Bildquelle; Kennzeichnung und Freigabe im Plan prüft das Gate wie bei jeder Figur. */
++      if (f.attrs['data-visual-type'] === 'illustration' && !one(f, x => has(x, 'data-placeholder') || (x.tag === 'img' && has(x, 'data-source-status')) || cls(x, 'puk-vis-scene'))) add('block', pid, 'placeholder-status', `Illustration ${lab}: weder eigene Zeichnung (.puk-vis-scene) noch Bildquelle- und Freigabestatus`);
+     }
+     for (const v of plan) if (v.format !== 'text' && !seen.has(v.id)) add('block', pid, 'visual-plan', `Plan-Eintrag ${v.id} (${v.format}) hat keine Figur auf der Seite`);
+     /* Jeder Abschnitt hat eine Zeile im Visualisierungsplan (sectionId = id der section): Erklärform oder begründeter Verzicht. */
+@@ -393,6 +394,7 @@ const MUTATIONS = [
+   ['Figur ohne Kennzeichnung', ['figure-source'], (c, f) => rep(f, 'behandlung-verstehen.html', 'Eigene didaktische Darstellung', 'Darstellung', true)],
+   ['Figur fehlt im Visualisierungsplan', ['visual-plan'], c => { const p = pg(c, 'behandlung-verstehen'); p.visualPlan = p.visualPlan.filter(v => v.format !== 'comparison'); }],
+   ['Bildplatzhalter ohne Freigabestatus', ['placeholder-status'], (c, f) => rep(f, 'beziehungen-verstehen.html', ' data-approval-status="ausstehend"', '')],
++  ['Illustration ohne eigene Zeichnung und ohne Bildstatus', ['placeholder-status'], (c, f) => rep(f, 'beziehungen-verstehen.html', ' data-placeholder="image"', '')],
+   ['Quellenlink ohne sprechendes aria-label', ['link-label'], (c, f) => rep(f, 'behandlung-verstehen.html', '</figcaption>', '<a href="#main-content">Quelle</a></figcaption>')],
+   ['Interner Link ins Leere', ['link-target'], (c, f) => rep(f, 'unterstuetzung-finden.html', 'class="puk-link--inline" href="behandlung-verstehen.html"', 'class="puk-link--inline" href="gibt-es-nicht.html"')],
+   ['Zwei h1', ['h1'], (c, f) => rep(f, 'index.html', '</main>', '<h1>Zweite Überschrift</h1></main>')],
+diff --git a/templates/website/psychoeducation-site-starter/unterstuetzung-finden.html b/templates/website/psychoeducation-site-starter/unterstuetzung-finden.html
+index 8196591..608e2e6 100644
+--- a/templates/website/psychoeducation-site-starter/unterstuetzung-finden.html
++++ b/templates/website/psychoeducation-site-starter/unterstuetzung-finden.html
+@@ -1,5 +1,5 @@
+ <!DOCTYPE html>
+-<html lang="de-CH" data-puk-site-build="r4-6" data-page-id="unterstuetzung-finden">
++<html lang="de-CH" data-puk-site-build="r4-7" data-page-id="unterstuetzung-finden">
+ <head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+diff --git a/ui_kits/website/qa.html b/ui_kits/website/qa.html
+index f8b2296..0ee0237 100644
+--- a/ui_kits/website/qa.html
++++ b/ui_kits/website/qa.html
+@@ -32,7 +32,7 @@ th,td{border-bottom:1px solid var(--border-hairline);padding:4px 8px;text-align:
+ <h1 style="margin-top:24px">Interaktionen</h1>
+ <table><thead><tr><th>Prüfung</th><th>Erwartet</th><th>Ergebnis</th></tr></thead><tbody id="func"></tbody></table>
+ <div id="stage"></div>
+-<script src="../../templates/website/psychoeducation-site-starter/tools/contract.js?v=r4-6"></script>
++<script src="../../templates/website/psychoeducation-site-starter/tools/contract.js?v=r4-7"></script>
+ <script>
+ const VIEWS=['start','situationsnavigator','kontaktwegweiser','gespraechshilfe','angebotsnavigator','grundlagenkapitel','handlungsuebersicht','transfer-erholung','beispiel-visualisierung','visualisierungsmuster','site:index','site:beziehungen-verstehen','site:behandlung-verstehen','site:unterstuetzung-finden'];
+ const RUNS=[];
