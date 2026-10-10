@@ -703,18 +703,19 @@
       "primaryTask": "Wissen, was man erfahren und mitteilen darf, welche Rechte man hat und wo es Unterstützung gibt",
       "description": "Schweigepflicht und Information, Bezugsperson und Patientenverfügung, Arbeit und Geld sowie Angebote für Angehörige von Menschen mit Depression im Kanton Zürich.",
       "sensitiveTopics": [
-        "selbstgefaehrdung"
+        "selbstgefaehrdung",
+        "zwang"
       ],
       "visualPlan": [
         {
           "id": "v-ra-vergleich",
           "section": "01 Was Sie erfahren und was Sie immer sagen dürfen",
           "sectionId": "schweigepflicht",
-          "goal": "Wissen, was ohne und was erst mit Einwilligung der erkrankten Person möglich ist",
+          "goal": "Wissen, was ohne und was erst mit Einverständnis der erkrankten Person möglich ist",
           "format": "comparison",
-          "statement": "Zwei Spalten «Ohne Einwilligung» und «Mit Einwilligung» nach gleichen Merkmalen: eigene Beobachtungen mitteilen, allgemeine Informationen, Beratung für sich selbst, Auskunft über Gesundheitszustand und Behandlung, Einsicht in die Akten.",
-          "understood": "Was schon ohne Einwilligung geht und was erst mit ihr. Gleiche Merkmale nebeneinander zeigen, dass vieles möglich ist, was Angehörige oft für verboten halten.",
-          "resonance": "Ermutigung: «Ich darf anrufen und erzählen, was ich sehe, auch wenn das Team mir nichts sagen darf.»",
+          "statement": "Zwei Spalten «Ohne Einverständnis» und «Mit Einverständnis» nach gleichen Merkmalen: eigene Beobachtungen mitteilen, allgemeine Informationen, Beratung für sich selbst, Auskunft über Gesundheitszustand und Behandlung, Einsicht in die Akten.",
+          "understood": "Was schon ohne Einverständnis geht und was erst mit ihm. Gleiche Merkmale nebeneinander zeigen, dass vieles möglich ist, was Angehörige oft für verboten halten.",
+          "resonance": "Ermutigung: «Ich darf anrufen und erzählen, was ich sehe, auch wenn das Team mir vielleicht nichts sagen darf.»",
           "source": "Art. 321 StGB; Patientinnen- und Patientengesetz Kanton Zürich §§ 2a, 15, 19; BAG, Empfehlungen für Fachpersonen (2021)",
           "alternative": "Zwei Merkmalslisten in gleicher Reihenfolge; Kurzbeschreibung über aria-describedby",
           "reason": "Ein Vergleich nach gleichen Merkmalen räumt das häufigste Missverständnis schneller aus als ein Rechtstext.",

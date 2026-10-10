@@ -46,15 +46,48 @@ Gehört zur Website in diesem Ordner (`templates/website/depression-angehoerige/
 | Begleiten | ohne `zwang` | mit `zwang` | Der Text sagt «nie Täuschung, Zwang oder Drohungen»; Vertragsprüfung des Gates. |
 | Quellenangaben | – | Fachartikel als «Autorin et al. Jahr, Zeitschrift» statt mit Titel | Titel wurden in der Recherche nicht immer wörtlich erfasst; so wird kein Titel erfunden. |
 
-### Von der Fachstelle entschieden (10.10.2026, Ch. Egger)
+### Von der Fachstelle entschieden (Ch. Egger)
 
 - Rechte und Angebote, Abbildung 1: Die Zürcher Regel zur Auskunft an Bezugspersonen (§ 15 Patientinnen- und Patientengesetz ZH) gilt auch in Privatpraxen. Markierung entfernt, Text unverändert.
 - Für sich sorgen › `was-hilft`: Der «Familiencoach Depression» ist aus der Schweiz nutzbar. Markierung entfernt, Text unverändert.
 - Für sich sorgen › Quellen: Die Meta-Analyse zu Achtsamkeitsprogrammen nur mit vollständiger, überprüfbarer Angabe aufführen, sonst weglassen. Die bauende Sitzung hat sie in PubMed gefunden und wieder eingesetzt: Zhang X, Ren H, Wang C, Zhang Y, Zhou Q, Fan J (2024). The effect of mindfulness-based interventions on mental health outcomes and wellbeing of informal caregivers of people with mental illness: A systematic review and meta-analysis. *International Journal of Mental Health Nursing*, 33(4), 797–816. https://doi.org/10.1111/inm.13295 (PMID 38291626). 13 Studien mit 1007 Teilnehmenden; laut Zusammenfassung weniger Stress, Depressivität und Belastung, kein Effekt auf Angst; die Autorinnen und Autoren fordern methodisch strengere Studien.
 
+- **11.10.2026 · Fragen W1-F und W2-F:** Die Fachstelle übernimmt die Empfehlungen der bauenden Sitzung («Empfehlungen ok»): W1-F-01 a, b, c ja; W1-F-02 an die NVL-Zahl angleichen; W1-F-03 kürzen auf das Gezeigte; W1-F-04 b, mit Butzlaff und Hooley 1998; W1-F-05 beide Ja; W1-F-06 ja; W1-F-07 ja; W1-F-08 a (Bild bleibt); W1-F-09 ja; W1-F-10 ja; W1-F-12 weglassen (Entscheid gegen einen Abschnitt zur fürsorgerischen Unterbringung); W1-F-13 «sage dir»; W1-F-14 Verweis vor der Fachstelle; W1-F-15 Heft in die Quellenliste; W1-F-16 «In einer grossen Befragung in Deutschland»; W1-F-17 alle Abschwächungen; W1-F-18 ja; W1-F-20 ja. W2-F-01 ja; W2-F-02 «Einverständnis», einmal «(rechtlich: Einwilligung)»; W2-F-03 ja; W2-F-04 ja; W2-F-05 «Plan für schwierige Zeiten»; W2-F-06 ja; W2-F-07 a ja (kurzer Abschnitt auf «Behandlung und Verlauf»), b über W1-F-09, c nein. **Offen bei der Fachstelle:** W1-F-11 (Betreuungsgutschriften, Kurzurlaub), W1-F-15 (Abgleich des Boots mit dem Heft), W1-F-19 (Angebote), W1-F-21 (fachliche Freigaben).
+
 ### Umgesetzt nach den Prüfrunden (bauende Sitzung)
 
 - **11.10.2026 · W2-01, W2-02 (Verweise L1 bis L12, `5ad9cc8`):** zwölf Verweise nach W2-C eingefügt, je ein Satz mit Link und ohne neue fachliche Aussage. L1 und L2 im Wortlaut von `ihre-situation` › `angst`; L9 als Link auf «Grenzen setzen» im bestehenden Satz; L12 als Übergangssatz (`.puk-longform__transition`) am Ende der Seiten 2 bis 7, nicht auf der letzten Seite. Geprüft: alle internen Links führen auf vorhandene Ziele; kein horizontaler Überlauf bei 320 und 1280 px; Gate 0 blockierend.
+- **11.10.2026 · Entscheide W1-F und W2-F, Quellen W1-09 und W1-10:**
+  - **Rechte (W1-01, W2-03, W2-04):** Abb. 1 Kurztext an § 15 Abs. 2 PatG ZH angepasst; Formulierungsbeispiel «Falls Sie mir nichts über meinen Mann sagen dürfen: …»; Visualisierungsplan `v-ra-vergleich` › `resonance` «vielleicht»; «Bezugsperson» nur noch auf `rechte-und-angebote`, vor Abb. 1 erklärt (erste, dann zweite Linie nach Leitfaden der Gesundheitsdirektion); «Einverständnis» auf allen Seiten, einmal «(rechtlich: Einwilligung)»; `index` «nahestehende Menschen».
+  - **Verlauf (W1-02, W1-20):** `formen` «Bei etwa der Hälfte …» für beide Formen; «nach dem Abklingen der Beschwerden» in `vorbeugen` und Abb. 2 Schritt 5.
+  - **Belastung (W1-03, W1-04, W1-08, W1-19):** `gesundheit` auf Idstad gekürzt; Vertiefung Abb. 2 mit Butzlaff und Hooley 1998; Gefäss-Kurztext: «fehlende Information» fliesst zu, «dagegen lässt sich etwas tun» (Bild unverändert); Barometer-Zahl auf `index` und `nicht-allein` mit «in Deutschland» und «für das Familienleben».
+  - **Rollen (W1-05, W1-13, W1-14, W1-15, W1-16):** Geschwister «ein erhöhtes Risiko», Satz zur Unterstützung gestrichen, «psychische Erkrankungen allgemein» benannt; Schutzfaktoren nach Collishaw (fünf gemessene Faktoren); Absatz zu einem Elternteil, der erst im Alter erkrankt; Waage Mitte «sage dir»; Satz zu Scham bei Kindern (Dam und Hall, bisher ohne Aussage auf der Seite).
+  - **Hilfen (W1-06, W1-07, W1-11, W2-06):** «Familienkurse zur Krankheit» ohne «nachweislich»; Achtsamkeit mit Einschränkung; Paartherapie nur auf `fuer-sich-sorgen` ausgeführt, auf `ihre-situation` und `je-nach-rolle` je ein Satz mit Link; Barbato auf `ihre-situation` entfernt.
+  - **Struktur (W2-05, W2-09, W2-10, W2-11, W1-18):** «mittelgradig» und «(nach einem Fragebogen)»; «Plan für schwierige Zeiten»; Abschnitt «Wenn ein Klinikaufenthalt nötig wird» nach Abb. 2 auf `behandlung-und-verlauf`; sechster Kernsatz auf `index`; `eigene-krise`: Zuständigkeitsverweis vor dem Satz zur Fachstelle.
+  - **Abschwächungen (W1-12):** Salk («in Befragungen … die Merkmale»), Martin («kann sich eher … zeigen», «noch nicht sicher geklärt»), Sullivan («Lebenserfahrungen und andere Einflüsse»), Whisman («Studien weisen darauf hin»), Martire («kann … leichter werden»), Kern Gefäss («weniger von Ihrer Stärke»), Lichttherapie («kann helfen»), Kika («Manche»), Dazzi («kann sogar entlasten»), «oft Zeichen der Krankheit»; Etikett «Eltern depressiver Jugendlicher» ersetzt. «die Hälfte der Erkrankten» (`verlauf`) bleibt bis S.
+  - **Trauer, Psychotherapie (W1-23, W1-24):** Satz zur ungewöhnlich langen Trauer; Anordnung «Hausärztin, Psychiaterin oder eine andere dazu berechtigte Ärztin», Quelle Art. 11b KLV.
+  - **Quellen (W1-09):** vollständige Angaben mit Titel und DOI aus W1-C für alle Fachartikel; Barbato mit Parabiaghi; SGPP-Titel «Die Behandlung der unipolaren depressiven Störungen. Update 2025, Teil 1»; Albermann und Müller, Pro Mente Sana, Greally, MHFA (revised 2018) korrigiert; PatG § 15 Abs. 2; NVL «Kapitel 1.4 (Verlauf), 3 bis 6»; Studie zur Dauer genannt (Spijker et al. 2002, über PubMed geprüft); Arbeitsheft in der Quellenliste von `begleiten`. Schomerus nur mit dem englischen Titel aus PubMed (deutscher Originaltitel nicht geprüft). Bei Salk ohne Band, weil «143» das Gate für Notrufnummern auslöst.
+  - **Neue Quellen (W1-10), über PubMed geprüft:** Cipriani et al. 2018 (Wirkung der Antidepressiva, `depression-verstehen`, `behandlung-und-verlauf`); Chung et al. 2017 (Zeit nach dem Klinikaustritt); Butzlaff und Hooley 1998; Spijker et al. 2002. Aussagen ohne Quelle angepasst: «Über Belastendes zu sprechen, kann zu Beginn anstrengend sein»; «acht bis zwölf Wochen» gestrichen; «Wird er früh erkannt, lässt sich die Behandlung rasch anpassen»; «Sie dürfen die Veränderungen ansprechen»; «Ferien oder einen Ortswechsel als Heilmittel verordnen»; «Partnerinnen und Partner leben oft Tag und Nacht mit der Krankheit»; Rasic «deutlich häufiger» statt «zwei- bis dreimal»; Angehörigengruppen «von den Teilnehmenden sehr geschätzt»; van Wijngaarden ohne Rangfolge; Barometer «fühlten sich nicht gut informiert oder nicht einbezogen».
+  - **Gate:** `rechte-und-angebote` erhält `zwang` in `sensitiveTopics` (Quellentitel «im psychiatrischen Zwangskontext»).
+  - **Geprüft:** Gate 0 blockierend, 13 Hinweise; alle internen Links mit Ziel; kein horizontaler Überlauf bei 320 und 1280 px; Abb. 1 `rechte-und-angebote` und der neue Abschnitt zum Klinikaufenthalt bei 360 und 1280 px angesehen.
+
+### Begriffe nach den Entscheiden W2-F-01 bis W2-F-03 (bauende Sitzung, für S und W2-D)
+
+| Begriff | Gilt | Wo |
+| --- | --- | --- |
+| Bezugsperson | nur als Rechtsbegriff nach PatG ZH, vor Abb. 1 erklärt | `rechte-und-angebote` |
+| nahestehende Menschen | allgemein für Angehörige und Freunde | `index` |
+| Einverständnis | im Text überall; einmal «(rechtlich: Einwilligung)» | alle Seiten |
+| mittelgradig | Schweregrad der Diagnose | `depression-verstehen`, `behandlung-und-verlauf` |
+| mittelschwere bis schwere Beschwerden (nach einem Fragebogen) | nur bei der SGB-Zahl | `index`, `depression-verstehen` |
+| Plan für schwierige Zeiten | Absprache für frühe Zeichen und Rückfall | `behandlung-und-verlauf` › `vorbeugen` |
+
+### Weiterhin offen nach der Umsetzung (für die nächste W1-Runde)
+
+1. **Neue Inhalte, noch nicht geprüft:** Abschnitt «Wenn ein Klinikaufenthalt nötig wird»; Absatz zu einem Elternteil, der erst im Alter erkrankt; Satz zu Scham bei Kindern; Erklärung «Bezugsperson» vor Abb. 1; Satz zur langen Trauer.
+2. **Aussagen weiterhin ohne deckende Quelle (W1-10):** `depression-verstehen` › `anders` (ältere Menschen, körperliche Beschwerden, rund um die Geburt); `behandlung-und-verlauf` › Abb. 1 «drei bis vier Wochen» (nur Paraphrase der NVL); `ihre-situation` › `angst` «dauernde Wachsamkeit», «Trauer um das, was … verloren geht»; `fuer-sich-sorgen` Programmname «Familiencoach Depression» und «kostenlos» (Website des Programms fehlt); `rechte-und-angebote` «auch bei einer psychischen Erkrankung» (BSV) und «allgemein informieren» (BAG). Streichen entscheidet die Fachstelle.
+3. **Quellenangaben (W1-09):** Abrufdatum der Online-Quellen setzt, wer die Links vor der Veröffentlichung prüft; Obsan-Bulletin für die Suizidzahlen (08/2024 oder 11/2024) und PatG § 19 nicht geprüft; NVL-Kapitel zu Suizidalität (2 oder 12) nicht geprüft.
+4. **Prüflücke W1-25** bleibt: Leitlinien, Recht, Statistiken und Angebote am Original prüfen.
 
 ### Offener Prüfbedarf (für W1)
 
