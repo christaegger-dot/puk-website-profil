@@ -26,109 +26,174 @@ Dazu 5 leichte Befunde zu Bericht und Abgleich. Die erste und zweite Prüfrunde 
 
 Nach jedem Bau ohne Nachfrage ausfüllen: Visualisierungs-Check wie unten, mit Beleg je Punkt. Arbeitsstand, keine Prüfstufe.
 
-**Stand 10.10.2026 · Korrektur Etappe 1g · bauende Sitzung (Claude Code).** Umgesetzt ist `KORREKTUR-ETAPPE-1G.md`:
+**Stand 10.10.2026 · Korrektur Etappe 1h · bauende Sitzung (Claude Code).** Umgesetzt ist `KORREKTUR-ETAPPE-1H.md`. Er setzt die Entscheide der Fachstelle zum Bildsprache-Audit vom 10.10.2026 um:
 
-- `verstehen`, Abbildung 2: zwei Sätze in einfacher Sprache.
-- `grenzen`, Abschnitt 02: Text statt Abbildung «Die Brücke mit Geländer» (Entscheid der Fachstelle, 10.10.2026).
-- DEAR ist Abbildung 1.
+- **Profil-Update:** Build r4-6 übernommen (Abschnitt 3).
+- **`verstehen`:**
+  - Der Eisberg ist neu gezeichnet, die Wörter stehen im Eisberg.
+  - «Momentaufnahmen» ersetzt das Pendel.
+  - Stelle 4 der Anspannungskurve heisst «Es wird wieder ruhiger.».
+  - Die Annahmen stehen als Liste im Text statt als Abbildung.
+- **`beziehungen`:**
+  - Die Stationen der Bedeutungsschleife haben drei Zeilen und weiche Ecken.
+  - Bei Zwei Sichten haben beide Seiten dieselbe Oberkante.
+- **`grenzen`:** DEAR nummeriert «1» bis «4».
+- **`visualPlan`:**
+  - `resonance` für die sechs Darstellungen.
+  - Einträge für Eisberg, Momentaufnahmen und Annahmen nach dem Auftrag.
 
-`index` und `beziehungen` sind unverändert. Die Prüfstufen bleiben offen. Diese Selbstprüfung ersetzt die der Korrektur 1f (Stand `325195d`) und ist nicht die Stufe «Visualisierungs-Check».
+`index` ist unverändert. Die Prüfstufen bleiben offen. Diese Selbstprüfung ersetzt die der Korrektur 1g (Stand `3f94087`). Sie ist nicht die Stufe «Visualisierungs-Check».
 
 **Gates und Skripte:**
 
-- **`node tools/build.mjs`:** 15 Seiten, Build r4-5, 0 blockierend, 21 Hinweise (7 Visualisierungen und 12 Platzhalter nicht freigegeben, `siteUrl` fehlt, Prüfbericht offen). Vor 1g waren es 22 Hinweise; `v-gr-bruecke` ist jetzt eine Textzeile im Plan.
-- **`node tools/gate.mjs --selftest`:** 51/51 bestanden.
-- **`node tools/gate.mjs --production`:** blockiert erwartungsgemäss mit 20 Befunden (7 × `visual-approval`, 12 × `placeholder-approval`, 1 × `review-report` mit R1 bis R3).
-- **`node abgleich/pruefe-abgleich.mjs`:** **1759 Zeilen, 0 ohne Fundstelle.** Ob die genannte Fassung die Aussage trägt, prüft das Skript nicht; das bleibt Aufgabe von W1.
-- **Wortlaut:** Ein Skript der bauenden Sitzung sucht jede Stelle in «…» aus 1G, Abschnitt 3, im sichtbaren Text der gebauten Seiten. Ergebnis: 26 Stellen, 20 gefunden. Die 6 übrigen sind keine Fehler:
-  - 5 zitiert der Auftrag als Text, der ersetzt wird; sie stehen nicht mehr auf der Seite.
-  - Die neue `reason` von `v-gr-bruecke` steht in `site.config.json`, nicht auf der Seite. Sie stimmt dort wörtlich mit dem Auftrag überein (Skript).
-- **Unverändert:** Ein Skript vergleicht mit dem Stand `325195d` (vor 1g).
-  - `content/verstehen.html` ist ausser den zwei Sätzen gleich.
-  - `content/grenzen.html` ist ausser Abschnitt 02 und der Bezeichnung von DEAR gleich.
-  - `index` und `beziehungen` sind gleich, ebenso ihre gebauten Seiten.
+- **`node tools/build.mjs`:**
+  - 15 Seiten, Build r4-6, 0 blockierend.
+  - 20 Hinweise:
+    - 6 Visualisierungen nicht freigegeben
+    - 12 Platzhalter nicht freigegeben
+    - `siteUrl` fehlt
+    - Prüfbericht offen
+  - Vor 1h waren es 21 Hinweise. `v-vs-mythen` ist jetzt eine Textzeile im Plan.
+  - Kein Hinweis `resonance` und kein Hinweis `visual-plan`.
+- **`node tools/gate.mjs --selftest`:** 52/52 bestanden.
+- **`node tools/gate.mjs --production`:**
+  - Blockiert erwartungsgemäss mit 19 Befunden:
+    - 6 × `visual-approval`
+    - 12 × `placeholder-approval`
+    - 1 × `review-report`, offene Stufen samt R1 bis R3
+  - Dazu 1 Hinweis (`siteUrl`). Kein Befund `resonance`.
+- **`node abgleich/pruefe-abgleich.mjs`:** **1763 Zeilen, 0 ohne Fundstelle.** Ob die genannte Fassung die Aussage trägt, prüft das Skript nicht; das bleibt Aufgabe von W1.
+- **Wortlaut:** Ein Skript der bauenden Sitzung sucht jede Stelle in «…» aus 1H, Abschnitt 4 bis 7 (ohne Codeblöcke). Es sucht im sichtbaren Text von `verstehen`, `beziehungen` und `grenzen` und in `site.config.json`.
+  - Ergebnis: 49 Stellen, 43 gefunden. Die 6 übrigen sind keine Fehler:
+    - 5 zitiert der Auftrag als Text, der ersetzt wird: «Später.», «Links / Mitte / Rechts», «Abbildung 4», «Schritt 1 von 4», «Schritt 4 von 4».
+    - «Verbreitete Annahme: «…»» ist das Muster für die sieben `dt`.
+  - HTML-Gerüst und beide SVG aus den Codeblöcken stehen zeichengleich in `content/verstehen.html` (Skript).
+- **Unverändert:** Ein Skript vergleicht mit dem Stand `c9e0375` (vor 1h).
+  - `content/verstehen.html` ist ausserhalb von Abbildung 1 bis 3 und der Annahmen gleich. Auch der Suizid-Absatz und der Verweis im Text sind gleich.
+  - In der Anspannungskurve sind nur die genannten Beschriftungen, die Überschrift an Stelle 4 und die Kurzbeschreibung geändert.
+  - `content/beziehungen.html`: nur die fünf Stationen und die Klasse `puk-vis-compare__col--b` (4×) sind geändert.
+  - `content/grenzen.html`: nur die vier Nummern von DEAR sind geändert.
+  - `index` ist gleich.
 
 ### Auftrag verschieben
 
 | Schritt | Stand | Beleg |
 | --- | --- | --- |
-| Upload im Stamm | `KORREKTUR-ETAPPE-1G.md` aus `db9be5f` unverändert in den Website-Ordner gelegt | Commit `71090c6` auf `borderline-umbau`; `cmp` mit der Fassung aus `main`: gleich |
-| Stamm von `main` | Datei gelöscht | Commit `d1b4a3a` auf `main`; im Stamm von `main` liegt kein Korrekturauftrag mehr |
-| Zusammenführen | `main` in `borderline-umbau`, ohne Konflikt | Merge-Commit `f320143` |
+| Upload im Stamm | `KORREKTUR-ETAPPE-1H.md` aus `4dec6ad` unverändert in den Website-Ordner gelegt | Commit `f56330f` auf `borderline-umbau`; `cmp` mit der Fassung aus `main`: gleich |
+| Stamm von `main` | Datei gelöscht | Commit `e85ed65` auf `main` |
+| Zusammenführen | `main` in `borderline-umbau`, ohne Konflikt; bringt auch das Profil-Update `b920b58` | Merge-Commit `84cac17` |
+| Skizzen | `skizze-eisberg.png` und `skizze-momentaufnahmen.png` kamen mit demselben Upload (`4dec6ad`) in den Stamm. Der Auftrag nennt sie nicht. Sie liegen weiter im Stamm von `main` und `borderline-umbau` | Rückfrage an die Fachstelle im Bericht der Sitzung |
 
-### Korrekturauftrag 1g: Stand je Punkt (Abschnitt 3)
+### Korrekturauftrag 1h: Stand je Punkt (Abschnitte 3 bis 7)
 
 | Punkt | Stand | Beleg |
 | --- | --- | --- |
-| `verstehen`, Abbildung 2, Stelle 1 | umgesetzt | erster Satz «Wenn die Anspannung niedriger ist, kann es leichter fallen, zuzuhören, nachzudenken und zu planen.»; der zweite Satz «Ob ein klärendes Gespräch gewünscht ist, entscheiden beide.» bleibt. Bildschirmfotos der Abbildung bei 1280 und 360 px angesehen |
-| `verstehen`, Abbildung 2, Stelle 3 | umgesetzt | erster Satz «Dann kann es vorübergehend schwerfallen, zuzuhören, nachzudenken und sich zurückzuhalten.»; «Die Anspannung kann sich auch als Rückzug oder Schweigen zeigen.» bleibt |
-| `verstehen`, übrige Abbildung | unverändert | Zeichnung, Kurztext, «Was hilft», Ansatzpunkt, Textfassung und Quellenzeile per Skript gleich wie `325195d` |
-| `grenzen` › 02: bleibt | eingehalten | Kicker «02 · Grenze und Kontakt», Wegweiser «Grenze und Kontakt» und `id="bruecke"` stehen unverändert (Skript) |
-| `grenzen` › 02: entfällt | umgesetzt | Weg sind die Figur `v-gr-bruecke` (Bezeichnung, Kernaussage, Kurztext, beide SVG, Beschriftungen, Liste der drei Teile, Vertiefung «Grenzen des Bildes», Bildlegende) und der Absatz «Das Bild der Brücke beschreibt eine Haltung: …». `grep -c 'v-gr-bruecke' grenzen.html`: 0 |
-| `grenzen` › 02: neu | umgesetzt | als `puk-longform__copy`, in dieser Reihenfolge: H2 «Kontakt halten, ohne immer verfügbar zu sein», vier Absätze («Ein Geländer gibt Halt, …» bis «… können mittragen.»), `<p><strong>Was Sie tun können:</strong> Sagen Sie früh, kurz und ruhig, was für Sie möglich ist. Zum Beispiel: «Ich bin da – und ich brauche einen ruhigen Ton.» Oder: «Das kann ich nicht allein tragen. Wir holen Unterstützung dazu.»</p>`, Quellenzeile `<p><strong>Bezugspunkte:</strong> Hoffman et al. (2005); NICE CG78 (2009); Linehan; Mason und Kreger (2014); Stand by You / Sotomo (2024).</p>`. Bildschirmfotos bei 1280 und 360 px angesehen |
-| `grenzen` › 05, DEAR | umgesetzt | «Abbildung 1 · DEAR in vier Schritten»; sonst gleich (Skript). Bildschirmfotos bei 1280 und 360 px |
-| `site.config.json` › `v-gr-bruecke` | umgesetzt | `format` «text», `statement`, `source` und `alternative` «–», kein `understood`, `reason` wörtlich, `approvalStatus` «ausstehend»; `id`, `section`, `sectionId` und `goal` unverändert. Kein Gate-Hinweis `visual-plan` |
-| `borderline.css` | umgesetzt | Vorher `grep`: `bl-fig__wide` und `bl-fig__narrow` nur in `grenzen.html` und `borderline.css`. Entfernt: alle Regeln mit `.bl-fig--bruecke` (14 Zeilen), `.bl-fig__narrow{display:none}` und die beiden Kommentare zur Brücke. `@container (max-width:560px)` behält zwei Regeln (Pendel, Kurve), ist also nicht leer. `.bl-fig__label` und `.bl-parts` bleiben (`verstehen`). Im Sammelkommentar zu Muster A ist die Brücke gestrichen |
-| Regeln (Abschnitt 2) | eingehalten | keine eigenen Formulierungen (Wortlaut-Skript); Beispielsätze im Satz wie in 07; kein neues CSS (`git diff` von `borderline.css`: nur Zeilen entfernt und ein Kommentar gekürzt); keine `style`-Attribute und keine `tel:`-Links |
-| Abgleich (Abschnitt 4) | umgesetzt | siehe unten |
+| 3.1 `main` holen | umgesetzt | Merge `84cac17`, kein Konflikt |
+| 3.2 Werkzeuge aus dem Starter | umgesetzt | Commit `6872fdf`: `tools/contract.js`, `tools/selftest/site.config.json`, `tools/selftest/README.md`. Auf Rückfrage auch `gate.html` und `README.md`, die im Starter ebenfalls geändert waren. `diff -rq tools/` und `cmp` gegen den Starter: gleich |
+| 3.3 `assetVersion`, `$comment` | umgesetzt | `"assetVersion": "r4-6"`; `$comment` enthält «Profil-Update 10.10.2026 übernommen: Build r4-6». Der Build meldet «Build r4-6» |
+| 3.4 Zeilen 15–17 | umgesetzt | Abschnitt «Visualisierungs-Check» unten: Tabelle der Vorlage mit Zeilen 1–17 und Matrix mit Zeilen 1–17 ausgefüllt |
+| 4 Eisberg: Bezeichnung | umgesetzt | «Abbildung 1 · Was man sieht – und was darunter mitwirken kann» |
+| 4 Eisberg: Darstellung | umgesetzt | `div.bl-eis` aus dem Auftrag, SVG zeichengleich. Wörter als HTML-Liste; `.bl-eis__key` nur für Screenreader. Kernaussage, Kurztext, Kennzeichnung und Quelle: unverändert (Skript) |
+| 4 Eisberg: CSS breit | umgesetzt, eine Abweichung erlaubt | Lage der zehn Wörter und der Frage nach der Tabelle des Auftrags, `translate(-50%,-50%)`, ohne Kästen. Schrift `type-body-sm` für alle Wörter: In `type-body` berührte «Vorwürfe» bei 1280 px den Umriss. Der Auftrag lässt das zu («sonst Schrift `type-body-sm`, nie kleiner»). Skript mit `isPointInFill`: Bei 1440, 1280, 1024 und 900 px liegen alle vier Ecken jedes Worts in der Eisbergform; die Frage ragt nicht aus der Figur |
+| 4 Eisberg: schmal | umgesetzt, Schwelle abweichend | Die Zeichnung ist ohne Wörter über die ganze Breite sichtbar. Darunter stehen die Listen «Sichtbar» und «Darunter möglich», umbrechend und ohne Kästen, darunter die Frage (Bildschirmfoto 360 px). Schwelle: Containerbreite unter **800 px** statt 560 px. Zwischen 560 und 800 px ragten Wörter über den Umriss (Skript) |
+| 4 Eisberg: Vertiefung, Kurzbeschreibung | umgesetzt | Wortlaut des Auftrags (Wortlaut-Skript) |
+| 4 Kurve: Beschriftungen, Stelle 4 | umgesetzt | an der Kurve «Wir können sprechen.», «Es wird eng.», «Es ist gerade zu viel.», «Es wird wieder ruhiger.»; Überschrift in der Liste «Es wird wieder ruhiger.»; Text und Beispiel gleich |
+| 4 Kurve: Kurzbeschreibung | umgesetzt | «4 «Es wird wieder ruhiger.»» |
+| 4 Kurve: Prüfung bei 1280 px | erfüllt | Beschriftung 4 endet 152 px vor dem rechten Rand der Figur und überdeckt die Kurve nicht (Bildschirmfoto). Sie reicht 80 px über das Ende der Linie hinaus. Bei 768 px verbreiterte die längere Beschriftung die Seite um 16 px. Deshalb stehen unter 800 px Containerbreite (vorher 560 px) nur die Ziffern an der Kurve; die Liste darunter nennt alle vier Sätze |
+| 4 Momentaufnahmen: Figur | umgesetzt, eine Abweichung | `puk-vis-figure puk-vis-figure--open`, Bezeichnung, Kernaussage, Kurztext, Szene mit SVG zeichengleich, Vertiefung mit Titel, Kurzbeschreibung und Kennzeichnung nach dem Auftrag. **Abweichung:** `data-visual-type="figure"` statt «illustration». Das Gate r4-6 blockiert eine Illustration ohne Platzhalter oder Bild mit Bildnachweis (`placeholder-status`, `tools/contract.js` Zeile 333). Entscheid auf Rückfrage: vorläufig «figure»; die Lücke gehört ins Design-System |
+| 4 Momentaufnahmen: CSS | umgesetzt | Pendel-Regeln, `.bl-parts` und der Pendel-Teil der Media Query entfernt (vorher `grep`). Regeln des alten Eisbergs gab es in `borderline.css` nicht. Die Szene nutzt nur Profilklassen |
+| 4 Annahmen | umgesetzt | `figure` entfällt mit «Abbildung 4», Bildlegende und Kurzbeschreibung. Kernaussage und Kurztext als zwei Absätze, sieben Paare als `dl` wie in `grenzen` › 09, Quellenzeile `<p><strong>Quellen:</strong> …</p>`. Die Liste steht vor dem Zwischentitel zum Suizid; Begründung unter «Entscheide» |
+| 5 Schleife: drei Zeilen | umgesetzt | je Station `bl-cycle__who` («Schwester» oder «Betroffene Person», `type-body-sm`, mittleres Gewicht), `bl-cycle__ex` (Beispielsatz, `type-body`), `puk-vis-cycle__n` («Station 1 · Ereignis» usw., `type-caption`). Wortlaut sonst gleich |
+| 5 Schleife: Radius | umgesetzt, Token auf Rückfrage | `border-radius: var(--radius-md)` (4 px), auch schmal. Der Karten-Token des Profils ist `radius-none`, also eckig. Das widerspricht dem Ziel von BS-4 Variante B («weiche Ecken»). Entscheid auf Rückfrage: `radius-md`, der kleinste weiche Token |
+| 5 Schleife: Pfeile, schmal | erhalten, Masse angepasst | Kreisanordnung bis 640 px breit (vorher 600 px), Liste unter 700 px Containerbreite (vorher 660 px). Mit den höheren Feldern begann der Pfeil 4 → 5 sonst im Feld 4 (−1,8 px). Jetzt enden alle Pfeile 8 bis 35 px vor dem Zielkasten (`abgleich/bedienung.mjs`) |
+| 5 Zwei Sichten | umgesetzt | Klasse `puk-vis-compare__col--b` entfernt (4×); beide Spalten mit durchgezogener Oberkante (Bildschirmfoto 1280 px) |
+| 6 DEAR | umgesetzt | `<span class="puk-vis-path__n">1</span>` bis `4`; sonst gleich (Skript) |
+| 7 `resonance` | umgesetzt | sechs Einträge im Wortlaut (Wortlaut-Skript); kein Gate-Hinweis `resonance` |
+| 7 `v-vs-eisberg` | umgesetzt | `statement`, `alternative` und Satz am Ende von `reason` im Wortlaut |
+| 7 `v-vs-bewertungen` | umgesetzt, eine Abweichung | `statement`, `understood`, `alternative`, `reason` und `approvalStatus` im Wortlaut. `format` «figure» statt «illustration» (siehe oben); `reason` nennt das in einem zweiten Satz |
+| 7 `v-vs-mythen` | umgesetzt | `format` «text», `statement`, `source`, `alternative` «–», kein `understood`, `reason` im Wortlaut |
+| 2 Regeln | eingehalten, mit den genannten Abweichungen | keine eigenen Formulierungen auf den Seiten (Wortlaut-Skript); keine `style`-Attribute, keine festen Farben in SVG, keine `tel:`-Links (`grep`: 0); Beschriftungen als HTML-Text |
 
-**`grep`-Belege** (Anzahl Treffer, gebaute Seite, CSS und Quelle):
+**`grep`-Belege** (Anzahl Treffer):
 
-| Suche | `grenzen.html` | `borderline.css` | `content/grenzen.html` |
+| Suche | gebaute Seiten (`verstehen`, `beziehungen`, `grenzen`) | `borderline.css` | `content/` |
 | --- | ---: | ---: | ---: |
-| «Brücke mit Geländer» | 0 | 0 | 0 |
-| «Fahrbahn» | 0 | 0 | 0 |
-| «Pfeiler» | 0 | 0 | 0 |
-| `bl-fig--bruecke` | 0 | 0 | 0 |
-| `bl-fig__wide` oder `bl-fig__narrow` | 0 | 0 | 0 |
+| `bl-fig--pendel` | 0 | 0 | 0 |
+| «Ausschlag» | 0 | 0 | 0 |
+| «Abbildung 4» | 0 | 0 | 0 |
+| `v-vs-mythen` | 0 | 0 | 0 |
+| `puk-vis-compare__col--b` | 0 | 0 | 0 |
+| «Schritt n von 4» | 0 | 0 | 0 |
+| «Später.» | 0 | 0 | 0 |
+| `bl-parts` | 0 | 0 | 0 |
 
-### Abgleich (Abschnitt 4)
+### Abgleich (Abschnitt 8)
 
-- **`abgleich/verstehen.md`:**
-  - Nr. 236 und 238: «umformuliert (einfache Sprache, 1g)», die Bemerkung nennt «bis 1f: übernommen».
-  - Nr. 273, 285, 286 und 426: Status bleibt «zusammengeführt»; neue Fassung «Dann kann es vorübergehend schwerfallen, …».
-- **`abgleich/grenzen.md`:** Nr. 390 bis 432 nach der Tabelle des Auftrags, Ort überall `grenzen#bruecke`. Die Bemerkung nennt den neuen Ort und bei geändertem Status «bis 1f: …».
-  - 16 Zeilen «umformuliert (einfache Sprache, 1g)».
-  - Nr. 405 gekürzt.
-  - Nr. 418, 421 und 422 übernommen («wörtlich»).
-  - Nr. 415, 416, 417, 424 und 428 bis 432 mit neuer Fassung und neuem Ort in der Bemerkung, Status unverändert.
-  - Nr. 408 bis 412 bleiben «entfällt».
-  - Kopfnotiz «Korrektur 1g: …» und die Notiz «Ab 1g ist DEAR Abbildung 1. Ältere Bemerkungen nennen sie Abbildung 2.»; die Bemerkungen der DEAR-Zeilen sind unverändert.
-- **Nicht im Auftrag genannt:** `verstehen` Nr. 455 hatte den Ort `grenzen#bruecke` und die Bemerkung «`grenzen`, Abbildung 1, Vertiefung». Die neue Fassung steht weiter im Abschnitt. Nur die Bemerkung nennt jetzt den neuen Ort, wie bei Nr. 415 und 424; Status und Fassung bleiben.
-- **Vergleich mit dem Stand vor 1g:** Geändert sind genau die 7 Zeilen auf `verstehen` und die 29 Zeilen auf `grenzen` von oben; keine andere Zeile (Skript).
-- **Zählung:**
-  - `verstehen`: 2 «umformuliert (einfache Sprache, 1g)».
-  - `grenzen`: 16 «umformuliert (einfache Sprache, 1g)», 61 statt 62 «umformuliert (einfache Sprache, 1f)» (Nr. 422 ist jetzt «übernommen»).
-  - `abgleich/README.md`: Status, Messwerte und Abschnitt «Korrektur Etappe 1g» nachgeführt.
+- **`abgleich/verstehen.md`:** 21 Zeilen geändert, dazu 4 neue Zeilen.
+  - 13 Zeilen «umformuliert (Bildsprache, 1h)»: Eisberg mit neuer Vertiefung und Kurzbeschreibung; Pendel mit neuem Kurztext und neuer Vertiefung. Die Bemerkung nennt «bis 1g: …».
+  - 2 Zeilen «verschoben», Nr. 376 und 380: Die Sätze stehen jetzt in der Vertiefung von «Momentaufnahmen».
+  - Nr. 74 «entfällt»: «Zwischen den beiden Listen besteht keine Zuordnung.» Die Kurzbeschreibung im Wortlaut von 1H sagt das nicht mehr; der Satz steht nur noch im Plan («Keine Zuordnung zwischen oben und unten.»).
+  - Nr. 249, 340, 445 und 456 behalten Status und Fassung. Ihre Bemerkung nennt Stelle 4 jetzt «Es wird wieder ruhiger.» (bis 1g «Später»).
+  - Nr. 493 nennt die neue Bezeichnung von Abbildung 1.
+  - 11 Bemerkungen enthalten den Satz des Auftrags «Pendel ersetzt durch «Momentaufnahmen» (BS-1, Entscheid Fachstelle 10.10.2026)». Die Beschriftungen des Pendels hatten keine eigenen Bestandszeilen; die Zeilen der Handout-Sätze zeigen auf Kurztext und Vertiefung.
+  - Neu Nr. 543 bis 546 «neu (1h)»: «Wie ist es gerade für dich?», «Es wird wieder ruhiger.», «Du bist die Einzige, die mich versteht.», «Du bist wie alle anderen.».
+  - Kopfnotiz «Korrektur 1h: …», Zählung nachgeführt. Notiz: «Ab 1h ist Abschnitt 06 keine Abbildung mehr; ältere Bemerkungen «Abbildung 4» meinen die Liste der Annahmen.»
+- **`abgleich/beziehungen.md`:** Nr. 63, 140, 141, 144 und 147 «umformuliert (Bildsprache, 1h)» mit dem neuen Stationstext; Kopfnotiz.
+- **`abgleich/grenzen.md`:** keine Zeile betroffen. Die DEAR-Zeilen enthalten «Schritt n von 4» nicht.
+- **Vergleich mit dem Stand vor 1h:** Geändert sind genau diese Zeilen, keine andere (Skript gegen `rows2` vor 1h).
+- **`abgleich/README.md`:** Statuswerte, Prüfergebnis, Messwerte und Abschnitt «Korrektur Etappe 1h» nachgeführt.
 
 ### Wortzahl, Verneinungen und Bedienung
 
-Skripte `abgleich/kennzahlen.mjs`, `abgleich/verneinung.mjs` und `abgleich/bedienung.mjs`. Werte vor 1g am Stand `325195d`.
+Skripte `abgleich/kennzahlen.mjs`, `abgleich/verneinung.mjs` und `abgleich/bedienung.mjs`. Werte vor 1h am Stand `c9e0375`.
 
-| | `verstehen` vor → nach 1g | `grenzen` vor → nach 1g |
-| --- | --- | --- |
-| Wörter | 1583 → 1591 (`anspannung` 381 → 389) | 1621 → 1613 (`bruecke` 161 → 153) |
-| Sätze mit Verneinung | 37 von 190 → 37 von 190 | 43 von 205 → 42 von 195 (`bruecke` 5 von 26 → 4 von 16) |
-| Absicherungen je 100 Wörter | 2,91 → 2,89 | 2,28 → 2,60 |
-| Tabstopps | 19 → 19 | 21 → 20 (Vertiefung «Grenzen des Bildes» entfällt) |
-| Seitenhöhe bei 360 px | 17 551 → 17 714 px | 16 895 → 16 500 px |
-| höchste Figur bei 360 px | Annahmen 3975 px; Anspannungskurve 3092 → 3254 px | DEAR 1791 px |
+| | `verstehen` vor → nach 1h | `beziehungen` vor → nach 1h | `grenzen` vor → nach 1h |
+| --- | --- | --- | --- |
+| Wörter | 1591 → 1602 (`eisberg` 161 → 180, `anspannung` 389 → 395, `bewertungen` 236 → 235, `mythen` 407 → 394) | 1564 → 1564 | 1613 → 1601 (`dear` 246 → 234) |
+| Sätze mit Verneinung | 37 von 190 → 37 von 183 | 33 von 167 → 33 von 169 | 42 von 195 → 42 von 195 |
+| Absicherungen je 100 Wörter | 2,89 → 3,00 | 4,48 → 4,48 | 2,60 → 2,62 |
+| Tabstopps | 19 → 18 (Vertiefung «Quellen» der Annahmen entfällt) | 16 → 16 | 20 → 20 |
+| Seitenhöhe bei 360 px | 17 714 → 16 071 px | 15 137 → 15 199 px | 16 500 → 16 500 px |
+| höchste Figur bei 360 px | Anspannungskurve 3282 px (Annahmen sind keine Figur mehr) | Zwei Sichten 2359 px | DEAR 1791 px |
 
 **Lesart:**
 
-- Die Absicherungen auf `grenzen` steigen, weil der neue Text «kann» und «können» enthält («Grenzen können Kontakt auf ähnliche Weise schützen», «… können mittragen») und «Was Sie tun können:» mitzählt. Das ist Wortlaut des Auftrags.
-- `index` und `beziehungen` sind unverändert (238 und 1564 Wörter).
+- Die Absicherungen auf `verstehen` steigen. Der neue Kurztext und die Vertiefung von «Momentaufnahmen» enthalten «kann» und «können»; das ist Wortlaut des Auftrags.
+- `grenzen` hat 12 Wörter weniger, weil «Schritt n von 4» entfällt.
+- `index`: 238 Wörter, 10 Tabstopps, 3863 px; unverändert.
 
 **Technische Stichprobe in Chromium (Playwright), kein Ersatz für Stufe 5:**
 
-- **Überlauf:** keiner bei 320, 360, 768, 1280 und 1440 px auf den vier Seiten.
+- **Überlauf:** keiner bei 320, 360, 768, 1280 und 1440 px auf `verstehen`, `beziehungen` und `grenzen`; auch nicht im Theme «kontrast» bei 1280 px.
+- **Kein Wort über einer Form:**
+  - **Eisberg:** Skript wie oben. Bei 1440, 1280, 1024 und 900 px liegt jedes Wort ganz in der Form. Ab 820 px gilt die schmale Darstellung.
+  - **Szene «Momentaufnahmen»:** Die Sätze stehen über der Zeichnung, nicht in ihr.
+  - **Kurve:** Keine Beschriftung ragt aus der Figur.
+- **Schmal sichtbar:** Bei 360 und 320 px sind Eisberg, Szene, Kurve, Schleife (Liste mit Rücksprung), Zwei Sichten und DEAR zu sehen. Die Figuren sind bei 360 px so hoch:
+
+  | Figur | Höhe bei 360 px |
+  | --- | ---: |
+  | Eisberg | 1071 px |
+  | Momentaufnahmen | 848 px |
+  | Bedeutungsschleife | 1920 px |
+
 - **Kontrast nach WCAG 1.4.3:** für allen sichtbaren Text in `main` gemessen, Vertiefungen geöffnet; kein Wert unter AA.
 - **Fokus:** Alle Tabstopps haben einen sichtbaren Fokus; der erste ist «Zum Hauptinhalt».
 - **Bildschirmfotos angesehen:**
-  - `verstehen`, Abbildung 2, bei 1280 und 360 px.
-  - `grenzen` › 02 und 05 bei 1280 und 360 px.
-  - Kein Überlauf, keine abgeschnittene Zeile. «Was Sie tun können» steht fett am Absatzanfang wie in 07.
+  - Alle sechs Figuren bei 1280 und 360 px und im Theme «kontrast» bei 1280 px.
+  - Dazu Abschnitt 06 von `verstehen` (Annahmen) bei 1280 und 360 px.
 - **Nicht geprüft:** Screenreader, Hardwaretastatur und Touch (Stufe 5, Person).
+
+### Entscheide der bauenden Sitzung (zur Prüfung)
+
+- **Annahmenliste vor dem Suizid-Zwischentitel:**
+  - Der Auftrag sagt «vor der Liste» für Kernaussage und Kurztext. Wohin die Liste im Abschnitt gehört, sagt er nicht.
+  - Sie steht nach dem Absatz «Viele Sätze über Borderline klingen eindeutig, …» und vor «Wenn Sie sich wegen Suizid sorgen». Sonst stünde sie unter diesem Zwischentitel.
+  - Suizid-Absatz und Verweis im Text sind unverändert.
+- **Fetter erster Satz bei Annahme 2:** Die Einordnung hatte als Überschrift zwei Sätze. Beide sind fett, damit der Wortlaut gleich bleibt.
+- **Schwellen 800 und 700 px:** für Eisberg und Kurve 800 px statt 560 px, für die Schleife 700 px statt 660 px; Begründung oben. Die Kommentare in `borderline.css` nennen den Grund.
+- **CSS der Annahmen:** Die Regeln `.bl-myth*` (8 Zeilen) werden nicht mehr verwendet. Der Auftrag nennt sie nicht; sie sind stehen geblieben.
+- **Skizzen im Stamm:** siehe «Auftrag verschieben».
 
 ### Kennzahlen aller Seiten (Skript `abgleich/kennzahlen.mjs`)
 
@@ -137,53 +202,96 @@ Gemessen an der alten Seite allein, mit derselben Zählweise für alt und neu (`
 | Seite | Alt: Seite allein | Neu | Neu / alt | Richtwert | Richtwert + 5 % | Absicherungen je 100 Wörter alt → neu | Semikolons im Fliesstext alt → neu |
 | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
 | `index` | 433 | 238 | 55 % | – | – | 1,85 → 1,68 | 1 → 0 |
-| `verstehen` | 2524 | 1591 | 63 % | 1300 | 1365 | 2,54 → 2,89 | 12 → 0 |
+| `verstehen` | 2524 | 1602 | 63 % | 1300 | 1365 | 2,54 → 3,00 | 12 → 0 |
 | `beziehungen` | 2149 | 1564 | 73 % | 1100 | 1155 | 3,82 → 4,48 | 6 → 1 |
-| `grenzen` | 2985 | 1613 | 54 % | 1500 | 1575 | 2,41 → 2,60 | 4 → 0 |
+| `grenzen` | 2985 | 1601 | 54 % | 1500 | 1575 | 2,41 → 2,62 | 4 → 0 |
 
 ## Visualisierungs-Check
 
-Selbstprüfung als Matrix je Figur (Vorlage im Starter). E = erfüllt · T = teilweise · N = nicht erfüllt · – = nicht anwendbar. Belege und Gründe für T und N stehen unter der Matrix.
+Selbstprüfung der bauenden Sitzung nach Korrektur 1h, keine Prüfstufe. Zuerst die Tabelle der Vorlage über alle Figuren, danach die Matrix je Figur. E = erfüllt · T = teilweise · N = nicht erfüllt · – = nicht anwendbar.
 
-Mit Korrektur 1g gibt es noch 7 Figuren:
+Mit Korrektur 1h gibt es 6 Figuren:
 
-- **`v-gr-bruecke`:** entfällt als Figur. Sie steht im Plan als Text, mit Begründung (Entscheid der Fachstelle, 10.10.2026).
-- **`v-vs-anspannung`:** Stelle 1 und 3 haben je einen neuen ersten Satz.
-- **`v-gr-dear`:** ist jetzt Abbildung 1.
-- **Übrige Spalten:** wie in Korrektur 1f.
+- **`v-vs-eisberg`:** neu gezeichnet; die Wörter stehen im Bild.
+- **`v-vs-anspannung`:** Beschriftungen mit Punkt; Stelle 4 neu.
+- **`v-vs-bewertungen`:** «Momentaufnahmen» ersetzt das Pendel.
+- **`v-bz-schleife`:** Stationen in drei Zeilen.
+- **`v-bz-sichten`:** gleiche Oberkante für beide Sichten.
+- **`v-gr-dear`:** Nummern «1» bis «4».
 
-| Nr. | Prüfpunkt | `v-vs-eisberg` | `v-vs-anspannung` | `v-vs-bewertungen` | `v-vs-mythen` | `v-bz-schleife` | `v-bz-sichten` | `v-gr-dear` |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | Plan liegt vor, Seite entspricht ihm | E | E | E | E | E | E | E |
-| 2 | Zeile je Abschnitt; Begründungen passen | E | E | E | E | T | E | E |
-| 3 | Prüffrage beantwortet und eingelöst | E | E | E | T | E | E | E |
-| 4 | Kernaussage und Erklärtext (2–4 Sätze) | E | E | E | E | E | E | E |
-| 5 | Ansatzpunkt (B, C, G) | – | E | – | – | E | – | E |
-| 6 | Mechanismus nicht doppelt, sondern verbunden | E | E | E | E | T | E | E |
-| 7 | Kartenraster-Check | E | E | E | T | E | E | E |
-| 8 | Form und Linien tragen Bedeutung | E | E | E | T | E | T | T |
-| 9 | Verteilt, keine Textwand | E | T | E | T | E | E | E |
-| 10 | Nicht verfälscht; Grenzen; Kennzeichnung | E | E | E | E | E | E | E |
-| 11 | Ohne Aufklappen und Skript verständlich | E | E | E | E | E | E | E |
-| 12 | 320 px lesbar; Textalternative | E | E | T | E | E | E | E |
-| 13 | Theme «Hoher Kontrast» | E | E | E | E | E | E | E |
-| 14 | Fachlich freigegeben | N | N | N | N | N | N | N |
+`v-vs-mythen` ist im Plan jetzt Text (BS-3) und keine Figur mehr.
 
-**Belege für die mit 1g geänderten Figuren**
+| Nr. | Prüfpunkt | Ergebnis | Beleg | Massnahme |
+| --- | --- | --- | --- | --- |
+| 1 | Visualisierungsplan liegt vor; die Seiten entsprechen ihm | erfüllt | Build ohne Hinweis `visual-plan`. Jede Figur trägt `data-visual-id` und `data-visual-type` wie im Plan. `v-vs-bewertungen` steht im Plan und auf der Seite vorläufig als «figure» | Format «illustration», sobald das Gate eigene SVG-Zeichnungen zulässt (Design-System) |
+| 2 | Jeder Abschnitt hat eine Zeile im Plan; Begründungen für reinen Text passen zum Inhalt | teilweise | `v-vs-mythen` als Text: «Text ist klarer: Annahme und Einordnung sind Paare ohne Bildform; …». Schleife wie bisher: F-W2-02 | W2 entscheidet F-W2-02 |
+| 3 | Prüffrage je Darstellung konkret beantwortet; die Darstellung zeigt, was die Antwort verspricht | erfüllt | Momentaufnahmen: `understood` «… Das Album zeigt auf einen Blick, dass es mehr als zwei Bilder gibt.» Das Bild zeigt das Album mit kleinen Fotos und zwei herausgenommenen. Eisberg: Wörter im Bild, oben und unten ohne Zuordnung | – |
+| 4 | Jede Figur hat Kernaussage und Erklärtext; die Hauptaussage für Angehörige steht nicht nur in der Vertiefung | erfüllt | Momentaufnahmen: Kernaussage und Kurztext mit drei Sätzen sichtbar, Figur offen. Die Vertiefung ergänzt nur, was den Blick färben kann | – |
+| 5 | Erklärmodelle (B, C, G): Ansatzpunkt markiert oder Verzicht begründet; keine Verantwortung für Behandlung oder Verlauf zugeschoben | erfüllt | Kurve Stelle 2 und Schleife Station 5 mit doppeltem Ring und Satz «… keine Pflicht.»; DEAR «entfällt: Der ganze Ablauf beschreibt das eigene Handeln …» | – |
+| 6 | Derselbe Mechanismus wird nicht in zwei Abschnitten getrennt gezeigt | teilweise | Schleife wie bisher (F-W2-02) | W2 |
+| 7 | Kartenraster-Check | erfüllt | Die Kastenreihe der Annahmen ist entfallen (BS-3). Zwei Sichten zeigen Paare nebeneinander, kein Raster gleichartiger Karten | – |
+| 8 | Anordnung, Verbindungen, Formen oder Linienarten tragen Bedeutung | teilweise | Zwei Sichten: Der Unterschied steht jetzt in Lage und Überschrift, nicht mehr in der Linienart (BS-6). DEAR: vier gefüllte Punkte auf einer Linie (P-6) | Profil P-6 |
+| 9 | Darstellungen über den Erkenntnisweg verteilt; keine unbegründete Textwand | teilweise | Anspannungskurve bei 360 px 3282 px hoch. Abschnitt 06 ist eine Begriffsliste mit sieben Paaren, gegliedert durch `dt` und `dd` | Fachstelle (Länge) |
+| 10 | Vereinfacht, nicht verfälscht; Grenzen benannt; Quelle oder Kennzeichnung | erfüllt | Eisberg: «… keine Aussage darüber, was in einer bestimmten Person «darunterliegt».» Momentaufnahmen: Vertiefung «… und Grenzen des Bildes»; Kennzeichnung «Eigene didaktische Darstellung · Grundlage: Linehan (1993); Hoffman et al. (2005).» | – |
+| 11 | Grundaussage ohne Animation, ohne Aufklappen und ohne Skript verständlich | erfüllt | Eisberg-Wörter und Szenensätze sind HTML-Text, ohne Skript sichtbar; keine Animation | – |
+| 12 | Bei 320 px lesbar; Textalternative vollständig | erfüllt | Bei 320 und 360 px kein Überlauf. Der Eisberg bleibt sichtbar (vorher fehlte er), die Szene ebenfalls. Kurzbeschreibungen im Wortlaut von 1H. Der Pendel-Befund R3-V-03 ist gegenstandslos, weil das Pendel entfällt; das bestätigt die Prüfsitzung | – |
+| 13 | Theme «Hoher Kontrast» geprüft | erfüllt | Bildschirmfotos aller sechs Figuren bei 1280 px; `grep` nach festen Farbwerten in SVG: 0 | – |
+| 14 | Inhalt fachlich freigegeben | nicht erfüllt | alle sechs `approvalStatus` «ausstehend» | Fachstelle |
+| 15 | Bildsprache passt zum Thema; Wirkung im Plan und im Bild eingelöst | teilweise | `resonance` für alle sechs Figuren. Eisberg weich, mit Frage an die andere Person; Momentaufnahmen als Fotoalbum aus dem Alltag. Schleife: fünf Felder mit Pfeilen bleiben ein Ablaufbild (Variante B). DEAR: Punktreihe wie eine Schrittanzeige (BS-7 nur zum Teil) | R2 |
+| 16 | Metapher ohne Code: ein Bild, eine Idee; Beschriftungen nennen Erleben, nicht Bildteile | teilweise | Eisberg breit: die Wörter selbst sind das Erleben. Eisberg schmal: Listen «Sichtbar» und «Darunter möglich» unter der Zeichnung (Wortlaut des Auftrags). DEAR: Kürzel «D • Beschreiben» usw. | R2 |
+| 17 | Keine ungewollten Bedeutungen | teilweise | Eisberg: Kälte und Gefahr bleiben im Motiv (Audit B6); die Fachstelle hat das Motiv am 10.10.2026 bestätigt. Die übrigen Figuren ohne solche Bedeutung; Zwei Sichten ohne gestrichelte Linie | R2; Fachstelle entschieden |
 
-- **`v-vs-anspannung`, 4 und 10:** Kernaussage und Kurztext unverändert. Die neuen Sätze behalten die Absicherung «kann» («… kann es leichter fallen …», «… kann es vorübergehend schwerfallen …»), wie 1G, Abschnitt 1, verlangt.
-- **`v-vs-anspannung`, 9, T:** Die Liste trägt viel Text; bei 360 px ist die Figur jetzt 3254 px hoch (vorher 3092 px).
-- **`v-vs-anspannung`, 12:** bei 320 und 360 px kein Überlauf; Bildschirmfoto bei 360 px angesehen.
-- **`v-gr-dear`, 1:** Bezeichnung «Abbildung 1 · DEAR in vier Schritten»; die Planzeile nennt keine Nummer. Inhalt unverändert (Skript).
-- **`v-gr-bruecke`:** Der Plan führt die Zeile als Text («Text ist klarer: …»). Das Gate verlangt dafür kein `understood` und keine Figur. Kein Hinweis `visual-plan`.
+### Matrix je Figur (Selbstprüfung)
 
-**Übrige Figuren und Punkte:** Belege wie in der Selbstprüfung 1f und der dritten Prüfrunde. Gründe für T:
+| Nr. | Prüfpunkt | `v-vs-eisberg` | `v-vs-anspannung` | `v-vs-bewertungen` | `v-bz-schleife` | `v-bz-sichten` | `v-gr-dear` |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | Plan liegt vor, Seite entspricht ihm | E | E | E | E | E | E |
+| 2 | Zeile je Abschnitt; Begründungen passen | E | E | E | T | E | E |
+| 3 | Prüffrage beantwortet und eingelöst | E | E | E | E | E | E |
+| 4 | Kernaussage und Erklärtext | E | E | E | E | E | E |
+| 5 | Ansatzpunkt richtig gesetzt (B, C, G) | – | E | – | E | – | E |
+| 6 | Mechanismus nicht doppelt gezeigt | E | E | E | T | E | E |
+| 7 | Kartenraster-Check | E | E | E | E | E | E |
+| 8 | Form und Linien tragen Bedeutung | E | E | E | E | E | T |
+| 9 | Verteilt, keine Textwand | E | T | E | E | E | E |
+| 10 | Nicht verfälscht; Grenzen; Kennzeichnung | E | E | E | E | E | E |
+| 11 | Ohne Aufklappen und Skript verständlich | E | E | E | E | E | E |
+| 12 | 320 px lesbar; Textalternative | E | E | E | E | E | E |
+| 13 | Theme «Hoher Kontrast» | E | E | E | E | E | E |
+| 14 | Fachlich freigegeben | N | N | N | N | N | N |
+| 15 | Bildsprache passt; Wirkung eingelöst | E | E | E | T | E | T |
+| 16 | Metapher ohne Code | T | E | E | E | E | T |
+| 17 | Keine ungewollten Bedeutungen | T | E | E | E | E | E |
 
-- **3, 7, 8, 9, Annahmen:** Kastenreihe, bei 360 px 3975 px hoch (F-V-11, Fachstelle).
-- **2 und 6, Schleife:** wie bisher; ob F-W2-02 mit der Planbegründung von `v-bz-was-hilft` erledigt ist, entscheidet W2.
-- **8, Zwei Sichten:** Die Linienart unterscheidet die Sichten, hat im Profil aber keine feste Bedeutung (P-7).
-- **8, DEAR:** vier gefüllte Punkte (P-6, Profil).
-- **12, Pendel:** schmal ohne Beschriftungen im Bild (R3-V-03, laut Korrektur 1c hingenommen).
+**Belege für die mit 1h geänderten Figuren**
+
+- **`v-vs-eisberg`:**
+  - **1:** `data-visual-type="layer-model"` wie im Plan.
+  - **3 und 8:** Die Wörter stehen im Eisberg, oben die sichtbaren, unten die möglichen, ohne Linien dazwischen. Der Plan sagt: «Keine Zuordnung zwischen oben und unten.»
+  - **12:** Bei 360 px steht die Zeichnung über die ganze Breite, darunter die Listen und die Frage (Bildschirmfoto).
+  - **15:** Wirkung «Entlastung: … und ich darf nachfragen, statt zu raten.» Die Frage «Wie ist es gerade für dich?» steht neben dem Bild.
+  - **16, T:** Schmal ordnen die Überschriften «Sichtbar» und «Darunter möglich» die Wörter oben und unten zu. Das ist eine Liste unter dem Bild nach Auftrag. Ob sie als Liste gilt, die Bildteile übersetzt, beurteilt R2.
+  - **17, T:** wie in der Tabelle oben.
+- **`v-vs-anspannung`:**
+  - **15 und 16:** Alle vier Stellen sind Sätze aus dem Erleben, auch Stelle 4 (BS-5, erster Teil).
+  - **9, T:** 3282 px bei 360 px (vorher 3254 px).
+  - BS-5 zweiter Teil (eigene Anspannung als zweite Linie) bleibt offen.
+- **`v-vs-bewertungen`:**
+  - **3, 8 und 15:** Album mit kleinen Fotos; zwei herausgenommene Fotos, hell mit Sonne und dunkel mit Regenwolke. Die Sätze stehen darüber.
+  - **11:** Die Figur ist offen, die Sätze sind HTML-Text.
+  - **12:** Bei 360 px stehen die Sätze untereinander über der Zeichnung; Höhe 848 px.
+  - **16:** keine Beschriftung von Bildteilen; die Liste «Links / Mitte / Rechts» ist entfallen.
+- **`v-bz-schleife`:**
+  - **15, T:** Wer handelt, steht oben in Lesegrösse, der Beispielsatz ist die Hauptzeile, der Modellbegriff steht klein darunter (BS-4 Variante B). Die Form aus fünf Feldern mit Pfeilen bleibt ein Ablaufbild. Variante A (zwei Seiten) hat die Fachstelle nicht gewählt.
+  - **2 und 6, T:** wie bisher (F-W2-02).
+- **`v-bz-sichten`:**
+  - **8:** Beide Spalten haben eine durchgezogene Oberkante. Der Unterschied steht in Überschrift und Lage (BS-6). Damit ist P-7 für diese Figur gegenstandslos.
+- **`v-gr-dear`:**
+  - **8, T:** vier gefüllte Punkte (P-6).
+  - **15, T:** Statt «Schritt n von 4» stehen jetzt nur Nummern. Die Punktreihe bleibt und wirkt wie eine Schrittanzeige; BS-7 nennt auch sie.
+  - **16, T:** Kürzel «D • Beschreiben» usw. bleiben; sie zeigen die Herkunft des Modells.
+
+**Übrige Punkte:** Belege wie in der Selbstprüfung 1g und der dritten Prüfrunde.
 
 **Nicht erfüllt oder offen (Selbstprüfung):**
 
@@ -193,28 +301,31 @@ Mit Korrektur 1g gibt es noch 7 Figuren:
   | Punkt | Figuren |
   | --- | --- |
   | 2 | Schleife |
-  | 3 | Annahmen |
   | 6 | Schleife |
-  | 7 | Annahmen |
-  | 8 | Annahmen, Zwei Sichten, DEAR |
-  | 9 | Anspannungskurve, Annahmen |
-  | 12 | Pendel |
+  | 8 | DEAR |
+  | 9 | Anspannungskurve |
+  | 15 | Schleife, DEAR |
+  | 16 | Eisberg (schmal), DEAR |
+  | 17 | Eisberg |
 
 - **Umfang:** Alle Wortzahlen liegen über Richtwert plus 5 %. Der Richtwert gilt nicht; über die Länge entscheidet die Fachstelle.
-  - `verstehen`: 1591 Wörter.
+  - `verstehen`: 1602 Wörter.
   - `beziehungen`: 1564 Wörter.
-  - `grenzen`: 1613 Wörter.
-- **Nicht im Auftrag genannt** (Entscheid der bauenden Sitzung, zur Prüfung):
-  - Bemerkung von `verstehen` Nr. 455.
-  - Sammelkommentar in `borderline.css`.
-- **Prüfbedarf:** wie nach 1f in `abgleich/*.md`. 1g bringt keinen neuen Prüfbedarf; die Änderungen sind Entscheide der Fachstelle.
-- **Profil-Update (aus 1d weiter offen):** 11 Dateien `components/Vis*/preview.html` aus dem Patch gibt es im Repository nicht; ihre Hunks sind nicht angewendet.
+  - `grenzen`: 1601 Wörter.
+- **Abweichungen vom Auftrag**, mit Grund oben:
+  - `v-vs-bewertungen` als «figure» statt «illustration».
+  - Schwellen 800 und 700 px.
+  - `radius-md`, Entscheid auf Rückfrage.
+- **Design-System:** Das Gate r4-6 kennt für eine eigene SVG-Zeichnung als «illustration» keinen Weg ohne Platzhalter oder Bildnachweis. Das widerspricht der Arbeitsregel in `CLAUDE.md` des Repositorys: «Eigene Zeichnungen brauchen keine fremde Bildquelle, aber die fachliche Freigabe.»
+- **Aus dem Audit offen:** BS-5 zweiter Teil (Fachstelle), BS-8 (Etappe 2).
 - **Offen für die Fachstelle:**
-  - R3-W1-05, R3-W1-06, F-V-11, F-V-05, F-W1-11, F-W2-02, F-W2-03.
+  - R3-W1-05, R3-W1-06, F-V-05, F-W1-11, F-W2-02, F-W2-03.
   - Prüfbedarf in `abgleich/*.md`.
+  - Was mit den Skizzen im Stamm geschieht.
   - Alle fachlichen Freigaben.
+  - F-V-11 (Höhe der Annahmen) ist mit BS-3 gegenstandslos; das bestätigt die Prüfsitzung.
 - **Statustabelle:** Die Zeilen R1 bis R3 fehlen noch; die Prüfsitzung trägt sie ein.
-- **Profil (später):** P-6, P-7, P-9.
+- **Profil (später):** P-6, P-9.
 - **Offen für Stufe 5:** Screenreader-Läufe, Hardwaretastatur und Touch.
 
 ## Bildsprache-Audit (10.10.2026, Stand 3f94087)

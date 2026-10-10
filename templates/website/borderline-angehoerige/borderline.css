@@ -12,14 +12,18 @@
 .bl-cycle--5 li:nth-child(4){grid-area:3/1;align-self:end}
 .bl-cycle--5 li:nth-child(5){grid-area:2/1}
 /* Korrektur 1h (Bildsprache-Audit BS-4, Variante B): je Station drei Zeilen – wer handelt, der Beispielsatz als Hauptzeile,
-   klein Station und Modellbegriff; Felder mit weichen Ecken (radius-md, Entscheid der Nutzerin 10.10.2026). */
+   klein Station und Modellbegriff; Felder mit weichen Ecken (radius-md, Entscheid auf Rückfrage 10.10.2026). */
 .bl-cycle--5 li{border-radius:var(--radius-md)}
+/* Mit dem Beispielsatz in Seitenschrift sind die Felder höher; damit zwischen Station 4 und 5 Platz für den Pfeil bleibt,
+   ist die Schleife breit bis 640 px statt 600 px gross (gleiche Zeichnung, gleichmässig skaliert; gemessen mit abgleich/bedienung.mjs). */
+.puk-vis-cycle.bl-cycle--5{max-width:640px}
 .bl-cycle__who{font:var(--type-body-sm);font-weight:var(--fw-medium);color:var(--text-default)}
 .bl-cycle__ex{font:var(--type-body);color:var(--text-default)}
-/* Mit fünf Stationen trägt die Kreisanordnung nur bei voller Breite des Musters (600 px): darunter überlappen
-   Station 4 und 5, und der Pfeil 4 → 5 verschwindet. Deshalb gilt die Liste des Musters hier schon bis 660 px
-   Containerbreite (Regeln wie im Muster, Masse über Tokens). */
-@container (max-width:660px){
+/* Mit fünf Stationen trägt die Kreisanordnung nur bei voller Breite (Muster 600 px, hier 640 px): darunter überlappen
+   Station 4 und 5, und der Pfeil 4 → 5 verschwindet. Deshalb gilt die Liste des Musters hier schon bis 700 px
+   Containerbreite (Regeln wie im Muster, Masse über Tokens; bis Korrektur 1g 660 px, mit den höheren Feldern aus 1h
+   begann der Pfeil 4 → 5 bei 720 px Fensterbreite sonst im Feld von Station 4). */
+@container (max-width:700px){
   .bl-cycle--5>svg{display:none}
   .bl-cycle--5{aspect-ratio:auto}
   .bl-cycle--5 ol{position:relative;display:flex;flex-direction:column;padding-right:var(--space-10)}

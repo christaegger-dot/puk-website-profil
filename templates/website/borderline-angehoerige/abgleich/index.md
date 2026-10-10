@@ -2,7 +2,7 @@
 
 Neue Seite: `content/index.html` · Bestand: `/` (Startseite), `/selbsttest`, `/wegweiser` (Branch `borderline-bestand`, `bestand/borderline-angehoerige/texte/`). Statuswerte und Zählweise: `README.md` in diesem Ordner.
 
-**Stand 10.10.2026, Korrektur Etappe 1g (bauende Sitzung).** Eine Tabelle für jeden Satz der alten Seite und der zugeordneten Handouts (Korrektur 1b, E). Sie ersetzt die abschnittsweisen Tabellen vom 08.10.2026 und den Abschnitt «Satz für Satz» der ersten Korrektur; wo diese sich widersprachen, gilt die Zeile hier. Statuswerte, Zählweise und Skripte: `README.md`.
+**Stand 10.10.2026, Korrektur Etappe 1h (bauende Sitzung).** Eine Tabelle für jeden Satz der alten Seite und der zugeordneten Handouts (Korrektur 1b, E). Sie ersetzt die abschnittsweisen Tabellen vom 08.10.2026 und den Abschnitt «Satz für Satz» der ersten Korrektur; wo diese sich widersprachen, gilt die Zeile hier. Statuswerte, Zählweise und Skripte: `README.md`.
 
 **Korrektur 1c:** Zeilen zu K-1 bis K-5 nachgeführt; Status und Bemerkungen der Stichprobe aus den Belegen der dritten Prüfrunde (Abschnitt 4) berichtigt.
 
