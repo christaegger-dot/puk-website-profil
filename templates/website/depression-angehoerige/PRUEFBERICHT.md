@@ -46,6 +46,12 @@ Gehört zur Website in diesem Ordner (`templates/website/depression-angehoerige/
 | Begleiten | ohne `zwang` | mit `zwang` | Der Text sagt «nie Täuschung, Zwang oder Drohungen»; Vertragsprüfung des Gates. |
 | Quellenangaben | – | Fachartikel als «Autorin et al. Jahr, Zeitschrift» statt mit Titel | Titel wurden in der Recherche nicht immer wörtlich erfasst; so wird kein Titel erfunden. |
 
+### Zusammenführung vor Abschluss der Prüfung (11.10.2026)
+
+- **Was geschah:** Pull Request #13 wurde am 11.10.2026 um 01:15 von der Fachstelle zusammengeführt, während alle Prüfstufen offen waren. Das weicht von der Regel «Kein Merge, solange Stufen offen sind» ab.
+- **Entscheid:** Die Website bleibt auf `main` (Entscheid der bauenden Sitzung im Auftrag der Fachstelle, 11.10.2026). Begründung: Jede Seite ist als «Musterentwurf: noch nicht fachlich geprüft» markiert; das ganze Repository sendet `X-Robots-Tag: noindex, nofollow`; eine Veröffentlichung als eigenständige Website (`export.mjs --production`) blockiert das Produktionsgate weiterhin, bis dieser Bericht vollständig ist. Ein Rückgängigmachen hätte die spätere Zusammenführung verkompliziert, ohne mehr Schutz zu bringen.
+- **Folge:** Der Entwurf ist unter der Netlify-Adresse des Profils erreichbar (`/templates/website/depression-angehoerige/`, am 11.10.2026 geprüft). Die weiteren Prüf- und Umsetzungsrunden laufen auf dem Branch `website/depression-angehoerige-pruefung` in einem neuen Entwurfs-Pull-Request.
+
 ### Von der Fachstelle entschieden (Ch. Egger)
 
 - Rechte und Angebote, Abbildung 1: Die Zürcher Regel zur Auskunft an Bezugspersonen (§ 15 Patientinnen- und Patientengesetz ZH) gilt auch in Privatpraxen. Markierung entfernt, Text unverändert.
