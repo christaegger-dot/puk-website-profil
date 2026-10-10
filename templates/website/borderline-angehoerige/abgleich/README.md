@@ -1,6 +1,6 @@
 # Abgleich · Borderline-Website, Etappe 1 und 2a
 
-Beleg für W1 nach UMBAUPLAN, Abschnitt 5: Jeder Satz des Bestands ist übernommen, gekürzt, zusammengeführt, verschoben, geändert oder mit Grund entfallen. Erstellt von der bauenden Sitzung am 08.10.2026, nachgeführt am 09.10.2026 (Korrektur Etappe 1, 1b, 1c, 1d, 1e, 1f, 1g, 1h, 1i und 1j). Am 10.10.2026 um die Seiten `rolle` und `selbstfuersorge` erweitert (Etappe 2a) und nach der Prüfrunde 2a nachgeführt (Korrektur 2a-K). Das ist ein Arbeitsstand, keine Prüfung.
+Beleg für W1 nach UMBAUPLAN, Abschnitt 5: Jeder Satz des Bestands ist übernommen, gekürzt, zusammengeführt, verschoben, geändert oder mit Grund entfallen. Erstellt von der bauenden Sitzung am 08.10.2026, nachgeführt am 09.10.2026 (Korrektur Etappe 1, 1b, 1c, 1d, 1e, 1f, 1g, 1h, 1i und 1j). Am 10.10.2026 um die Seiten `rolle` und `selbstfuersorge` erweitert (Etappe 2a) und nach der Prüfrunde 2a nachgeführt (Korrektur 2a-K, danach 2a-2). Das ist ein Arbeitsstand, keine Prüfung.
 
 - `index.md` · `/`, `/selbsttest`, `/wegweiser`; seit Etappe 2a mit zwei Zeilen «neu (2a)» am Ende (Nr. 255–256)
 - `verstehen.md` · `/verstehen` ohne Diagnostik-Teil, sechs Handouts; der Teil «Materialien zum Vertiefen» (Z. 277–396) steht seit Korrektur 1c am Ende der Tabelle (Nr. 474–540); seit Korrektur 1f mit zwei Zeilen für Sätze der neuen Seite ohne Bestandssatz am Ende (Nr. 541–542)
@@ -24,7 +24,7 @@ Je Seite eine Tabelle «Satz für Satz» mit jedem Satz der alten Seite und der 
 - **Ort neu:** `seite#abschnitt` (Abschnitts-ID der gebauten Seite, `kopf`, `kapitel`), `Fusszeile` oder «seite (Etappe 2)».
 - **Zustandekommen:** Ein Skript der bauenden Sitzung zerlegt den Bestand in Sätze und schlägt je Satz den ähnlichsten Satz im Zielabschnitt vor. Status, Zielabschnitt und jede schwache Zuordnung sind von Hand gesetzt und geprüft. Ob der genannte Satz die Aussage wirklich trägt, ist Gegenstand der Prüfung.
 
-**Prüfung der Tabellen:** `node abgleich/pruefe-abgleich.mjs`. Ergebnis am 10.10.2026 nach Korrektur 2a-K: **3207 Zeilen, 0 ohne Fundstelle** (drei Zeilen «neu (2a-K)» mehr als nach Etappe 2a). Ergebnis am 10.10.2026 nach Etappe 2a: **3204 Zeilen, 0 ohne Fundstelle** (3155 Bestandszeilen, 48 Zeilen ohne Bestandssatz – 16 auf `beziehungen`, 12 auf `selbstfuersorge`, 11 auf `rolle`, 5 auf `verstehen`, 2 auf `grenzen`, 2 auf `index` – und auf `verstehen` 1 Zeile mit Bestandssatz aus dem Handout `wenn-worte-treffen`, das sonst keiner Seite zugeordnet ist). Nach Korrektur 1j waren es 1763 Zeilen. Das Skript liest auch Text nur für Screenreader (`.puk-sr`, Kurzbeschreibungen der Bildlegenden), denn er steht auf der Seite. Geprüft wird je Zeile:
+**Prüfung der Tabellen:** `node abgleich/pruefe-abgleich.mjs`. Ergebnis am 10.10.2026 nach Korrektur 2a-2: **3207 Zeilen, 0 ohne Fundstelle** (fünf Zeilen geändert, keine neue). Ergebnis nach Korrektur 2a-K: **3207 Zeilen, 0 ohne Fundstelle** (drei Zeilen «neu (2a-K)» mehr als nach Etappe 2a). Ergebnis am 10.10.2026 nach Etappe 2a: **3204 Zeilen, 0 ohne Fundstelle** (3155 Bestandszeilen, 48 Zeilen ohne Bestandssatz – 16 auf `beziehungen`, 12 auf `selbstfuersorge`, 11 auf `rolle`, 5 auf `verstehen`, 2 auf `grenzen`, 2 auf `index` – und auf `verstehen` 1 Zeile mit Bestandssatz aus dem Handout `wenn-worte-treffen`, das sonst keiner Seite zugeordnet ist). Nach Korrektur 1j waren es 1763 Zeilen. Das Skript liest auch Text nur für Screenreader (`.puk-sr`, Kurzbeschreibungen der Bildlegenden), denn er steht auf der Seite. Geprüft wird je Zeile:
 
 - Den Ort gibt es.
 - Die neue Fassung steht dort wörtlich.
@@ -56,6 +56,7 @@ Je Seite eine Tabelle «Satz für Satz» mit jedem Satz der alten Seite und der 
 | verschoben (Vertiefung, 2a-K) | Seit Korrektur 2a-K: Der Satz steht im selben Abschnitt in einer Vertiefung (Akkordeon des Profils, ohne Skript offen, im Druck vollständig): K-R-b1, b3, b4, K-S-b2, b3, b4. Die Bemerkung nennt den Titel der Vertiefung und den früheren Status. |
 | verschoben (2a-K) | Seit Korrektur 2a-K, nur `rolle.md` Nr. 67, 68, 72 und 736: Der Satz steht jetzt auch auf `rolle` › `kinder` (Entscheid P2a-F-2, Abschnitt 4 des Auftrags); `grenzen` bleibt unverändert. |
 | neu (2a-K) | Seit Korrektur 2a-K: Satz ohne Bestandssatz, neu oder neu gefasst in der Korrektur (Verweissätze, Wortlaut des Auftrags). Frei gewordene Zeilen «neu (2a)» werden dafür weiterverwendet, wenn der neue Satz dieselbe Aufgabe hat (zum Beispiel der Verweis bei Schuld). Jeder dieser Sätze steht in `../PRUEFBERICHT.md`, Selbstprüfung Korrektur 2a-K, in der Liste der neuen Sätze zur Freigabe. |
+| umformuliert (2a-2) | Seit Korrektur 2a-2 (`KORREKTUR-ETAPPE-2A2.md`): Der Satz, der die Aussage trägt, steht im Wortlaut dieses Auftrags (`rolle.md` Nr. 483, `selbstfuersorge.md` Nr. 303, 304, 307 und 310). Die Bemerkung nennt den Abschnitt des Auftrags und den früheren Status («bis 2a-K: …»). |
 
 ## Wörter und Absicherungen
 
@@ -336,3 +337,16 @@ Grundlage: `KORREKTUR-ETAPPE-2A.md`. Geändert sind nur `rolle`, `selbstfuersorg
 | Weitere Punkte | `selbstfuersorge.md` Nr. 15 (Schutzsatz), 661 (Nachricht), 663 (Vertiefung des Abends), 669 (Seitenname); `rolle.md` Nr. 43 (Seitenname), 760 (Verweis bei Schuld), 762 (Verweis auf «Wenn die Anspannung steigt» im Wortlaut des Verweises auf `selbstfuersorge`, P2a-W2-1), 769 (Verweis zu den gemischten Gefühlen) und Nr. 671 in `selbstfuersorge.md` (Verweis auf «Auch Sie brauchen Unterstützung») | Abschnitt 6 |
 | P2a-W1-4 | Nr. 145, 458 und 655 mit nachgeführter Bemerkung (Nr. 655 neue Fassung: beide Sätze stehen jetzt nebeneinander); `selbstfuersorge.md` Nr. 213 «zusammengeführt» mit `glossar.md` Z. 108; Nr. 65 «umformuliert (2a-K)», der Verweissatz steht in der Liste der neuen Sätze | Abschnitt 6 |
 | Zustandekommen | Ein Skript der bauenden Sitzung vergleicht die Sätze der gebauten Seiten vor und nach der Korrektur je Abschnitt und meldet jede Zeile, deren neue Fassung in einem geänderten Satz oder in einer Vertiefung steht; Status, neue Fassung und Bemerkung sind je Zeile von Hand gesetzt | – |
+
+## Korrektur Etappe 2a-2 (10.10.2026)
+
+Grundlage: `KORREKTUR-ETAPPE-2A2.md`. Geändert sind fünf Zeilen, Status «umformuliert (2a-2)»:
+
+| Zeile | Neue Fassung | Auftrag |
+| --- | --- | --- |
+| `selbstfuersorge.md` Nr. 303 | «Das ist eine mögliche Erfahrung, kein typischer Verlauf, und lässt sich nicht aus der Diagnose vorhersagen.» | Abschnitt 3 |
+| `selbstfuersorge.md` Nr. 304 und 310 | «Wenn Sie sich oft wachsam oder erschöpft fühlen, verdient das Aufmerksamkeit, auch wenn von aussen wenig sichtbar ist.» | Abschnitt 3 |
+| `selbstfuersorge.md` Nr. 307 | «Sie sind weder dafür verantwortlich, dass eine Beziehung vorhersehbar ist, noch dafür, die Gefühle eines anderen Menschen auszugleichen.» (Ort wieder `selbstfuersorge#kraft`) | Abschnitt 3 |
+| `rolle.md` Nr. 483 | «Ein Vergleich mit anderen Familien erklärt nicht, warum jemand erkrankt. Daraus folgt keine Schuld.» | Abschnitt 4 |
+
+Nr. 302 («Einige Angehörige berichten auch von Phasen, …») bleibt, der Satz ist unverändert. Die Zeichnung «Ein Stück Weg» (Abschnitt 2) hat keine Zeilen im Abgleich.

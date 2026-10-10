@@ -44,6 +44,29 @@ Dazu 5 leichte Befunde zu Bericht und Abgleich. Die erste und zweite Prüfrunde 
 
 Nach jedem Bau ohne Nachfrage ausfüllen: Visualisierungs-Check wie unten, mit Beleg je Punkt. Arbeitsstand, keine Prüfstufe.
 
+**Stand 10.10.2026 · Korrektur Etappe 2a-2 · bauende Sitzung (Claude Code).** Umgesetzt ist `KORREKTUR-ETAPPE-2A2.md` (Entscheide der Fachstelle nach der Nachprüfung von 2a-K). Geändert sind nur die drei genannten Stellen, die Begründung von `v-ro-weg` im Plan und der Abgleich. `index` und die Seiten der Etappe 1 sind unverändert. Keine Prüfstufe ist «erledigt»; die nächste Prüfrunde braucht weiter eine Sitzung, die nicht gebaut hat. Der Block 2a-K steht darunter.
+
+### Korrektur 2a-2: Stand je Abschnitt des Auftrags
+
+| Punkt | Stand | Beleg |
+| --- | --- | --- |
+| Auftrag verschieben | umgesetzt | `KORREKTUR-ETAPPE-2A2.md` aus dem Stamm unverändert im Website-Ordner (`5e5464e`, `cmp`: gleich), im Stamm von `main` gelöscht (`41eb8c7`), zusammengeführt (`cfb482e`) |
+| 1 Nur die genannten Stellen | eingehalten | `git status`: `content/rolle.html`, `content/selbstfuersorge.html`, die zwei gebauten Seiten, `site.config.json` (nur `v-ro-weg` › `reason`), `abgleich/rolle.md`, `abgleich/selbstfuersorge.md`, `abgleich/README.md` und dieser Bericht. In der Zeichnung sind nur die drei Pfade des Wegs neu (Fläche, zwei Kanten); Figuren, Hügel, Bäume und Gras sind Zeile für Zeile gleich (21 von 24 Zeilen, Skript) |
+| 2 Weg gewunden | umgesetzt | Kein gerades Dreieck mehr: Der Weg kommt unten breit von rechts, biegt in weichen Kurven zu den Figuren, verschwindet hinter ihnen und läuft zwischen den Köpfen weiter, oben mit einer Biegung nach links bis zum Horizont. Kanten als glatte Kurven (Catmull-Rom), keine geraden Linien |
+| 2 Figuren wie 2a-K | eingehalten | Die Wegkanten laufen seitlich an den Beinen vorbei und hinter den Schultern, keine berührt einen Kopf. **Kleinster Abstand Wegkante–Kopfrand: 11,3 SVG-Einheiten** (gemessen im Browser mit `getPointAtLength`, Schritt 0,25): 13,4 px bei 1280 px, 5,6 px bei 360 px (vorher 2a-K: 12,1). Ferse gehoben (je ein Bein mit Sohle), Arme bei 360 px vom Körper getrennt (Foto). Zwei Menschen nebeneinander, von hinten, gleich gross, niemand vorn |
+| 2 Technik | eingehalten | nur `puk-vis-scene__ln`, `__ln--thin`, `__paper`, `__soft`; 0 Hexwerte, 0 `style`-Attribute. Kurzbeschreibung unverändert, sie trifft weiter zu («Der Weg führt durch eine Hügellandschaft in die Ferne.») |
+| 2 Fotos | angesehen | `v-ro-weg` bei 1280 und 360 px, je im Standard-Theme und im Theme «kontrast» (vier Fotos der Zeichnung, dazu die ganze Abbildung bei 1280 und 360 px). Breit: Der Weg windet sich sichtbar zum Horizont, die Biegung oben ist klar. Schmal (360 px): der Weg als S-förmiges Band, die Figuren mit abgesetzten Armen und kürzerem Bein. Kontrast: Linien dunkler, nichts verschwindet. Freundin-Test: zwei Menschen gehen nebeneinander einen gewundenen Weg entlang; besteht |
+| 3 `selbstfuersorge` › `kraft` | umgesetzt | Absatz im Wortlaut der Tabelle: «Einige Angehörige berichten auch von Phasen, … rechnen. Das ist eine mögliche Erfahrung, kein typischer Verlauf, und lässt sich nicht aus der Diagnose vorhersagen. Wenn Sie sich oft wachsam oder erschöpft fühlen, verdient das Aufmerksamkeit, auch wenn von aussen wenig sichtbar ist. Sie sind weder dafür verantwortlich, dass eine Beziehung vorhersehbar ist, noch dafür, die Gefühle eines anderen Menschen auszugleichen.» |
+| 3 Abgleich | umgesetzt | `selbstfuersorge` Nr. 303, 304, 307 und 310 «umformuliert (2a-2)» mit der neuen Fassung; Nr. 307 hat wieder den Ort `selbstfuersorge#kraft`. Nr. 302 bleibt (Satz unverändert) |
+| 4 `rolle` › `schuld` | umgesetzt | Antwort auf «Andere Familien haben dieses Problem nicht.»: «Borderline betrifft Menschen mit unterschiedlichen Lebensgeschichten und in unterschiedlichen Familien. Ein Vergleich mit anderen Familien erklärt nicht, warum jemand erkrankt. Daraus folgt keine Schuld.» Damit ist der Prüfbedarf aus 2a-K erledigt |
+| 4 Abgleich | umgesetzt | `rolle` Nr. 483 «umformuliert (2a-2)» (bis 2a-K: «übernommen»); neuer Status in `abgleich/README.md` erklärt, dazu ein Abschnitt «Korrektur Etappe 2a-2» |
+| 5 Build und Gates | bestanden | `node tools/build.mjs`: 0 blockierend, 14 Hinweise wie vorher. `node tools/gate.mjs --selftest`: 53/53. `node tools/gate.mjs --production`: 13 blockierend (2 × `visual-approval`, 10 × `placeholder-approval`, 1 × `review-report`) und 1 Hinweis, wie bisher. `node abgleich/pruefe-abgleich.mjs`: 3207 Zeilen, 0 ohne Fundstelle |
+| 5 Liste «Neue Sätze zur Freigabe» | nachgeführt | in der Liste unten (Block 2a-K): Nr. 51 geändert, Nr. 51a und 51b neu (Abschnitt 3), Nr. 17a und 17b neu (Abschnitt 4). Alle 82 Zitate der Liste per Skript wörtlich auf den gebauten Seiten gefunden |
+| 5 Keine Änderung an Etappe 1 und `index` | eingehalten | `git diff` für `content/index.html`, `content/verstehen.html`, `content/beziehungen.html`, `content/grenzen.html` und die gebauten Seiten dazu: leer |
+| 5 Pull Request | Entwurf | bleibt Entwurf |
+
+**Wörter** (`kennzahlen.mjs`; Lesefluss ohne die Panels der Akkordeons): `rolle` 3144 → 3145, im Lesefluss 2857 → 2858 (`schuld` 434 → 435); `selbstfuersorge` 2649 → 2679, im Lesefluss 2310 → 2340 (`kraft` 637 → 667, im Lesefluss 492 → 522). Abweichung vom Ziel des Auftrags 2a-K im Lesefluss: +8 % und +8 %, weiter unter 10 %.
+
 **Stand 10.10.2026 · Korrektur Etappe 2a-K · bauende Sitzung (Claude Code).** Umgesetzt ist `KORREKTUR-ETAPPE-2A.md` (Entscheide der Fachstelle zur Prüfrunde 2a). Geändert sind nur:
 
 - `content/rolle.html` und `content/selbstfuersorge.html` (und die daraus gebauten Seiten)
@@ -186,9 +209,9 @@ Selbstprüfung, keine Prüfstufe. E = erfüllt · T = teilweise · N = nicht erf
 
 **Freundin-Test (bauende Sitzung):** «Ein Stück Weg» besteht ihn weiter: Zwei Menschen gehen nebeneinander einen Weg entlang, jetzt sichtbar im Gehen. «Ein freier Abend» besteht ihn: Ein Abend mit kaltem Tee und dem Blick aufs Telefon, «Vielleicht kommt gleich eine Nachricht.», ist ohne Erklärung verständlich.
 
-### Korrektur 2a-K: Neue Sätze zur Freigabe (vollständig, neuer Stand)
+### Korrektur 2a-K: Neue Sätze zur Freigabe (vollständig, Stand nach Korrektur 2a-2)
 
-Grundlage für die Freigabe durch die Fachstelle (P2a-F-5). Die Liste ersetzt die Liste von 2a darunter. Sie enthält alle Sätze der zwei Seiten und von `index`, die nicht im Wortlaut aus dem Bestand stammen oder in 2a-K neu gefasst sind. Jeder Satz ist per Skript wörtlich auf der gebauten Seite gefunden.
+Grundlage für die Freigabe durch die Fachstelle (P2a-F-5). Die Liste ersetzt die Liste von 2a darunter. Nachgeführt in Korrektur 2a-2: Nr. 17a und 17b neu, Nr. 51 geändert, Nr. 51a und 51b neu. Sie enthält alle Sätze der zwei Seiten und von `index`, die nicht im Wortlaut aus dem Bestand stammen oder in 2a-K neu gefasst sind. Jeder Satz ist per Skript wörtlich auf der gebauten Seite gefunden.
 
 **Art:** «neu (2a)» = schon in der Liste von 2a, unverändert · «Auftrag» = Wortlaut des Korrekturauftrags (Abschnitt 3, 4 oder 6) · «neu (2a-K)» = neuer Verweissatz oder Satz ohne Bestandssatz · «Verdichtung» = zwei oder mehr Bestandssätze zu einem zusammengeführt (Kürzen nach Abschnitt 5; Inhalt aus dem Bestand, Wortlaut neu) · «Bestand» = im Auftrag genannter Satz, der wörtlich im Bestand steht (zur Vollständigkeit).
 
@@ -211,6 +234,8 @@ Grundlage für die Freigabe durch die Fachstelle (P2a-F-5). Die Liste ersetzt di
 | 15 | «Daraus folgt keine Schuld und keine Aufteilung von Verantwortung für die Erkrankung.» | `rolle` › `schuld`, ebenda | Auftrag (Abschnitt 3) | r768 |
 | 16 | «Für Behandlung und Genesung sind Sie nicht verantwortlich.» | `rolle` › `schuld`, «Ich tue nicht genug.» | Auftrag (Abschnitt 3) | r479 |
 | 17 | «Sie müssen die Erkrankung nicht heilen und sind weder für die Behandlung noch für die Genesung verantwortlich.» | `rolle` › `schuld`, Merksatz-Absatz | Auftrag (Abschnitt 3) | r488 |
+| 17a | «Ein Vergleich mit anderen Familien erklärt nicht, warum jemand erkrankt.» (Antwort auf «Andere Familien haben dieses Problem nicht.») | `rolle` › `schuld` | Auftrag 2a-2 (Abschnitt 4) | r483 |
+| 17b | «Daraus folgt keine Schuld.» (ebenda; Wortlaut nach `verstehen`, Annahme 3) | `rolle` › `schuld` | Auftrag 2a-2 (Abschnitt 4) | r483 |
 | 18 | «Manche sind angespannt, tasten sich vorsichtig heran oder ziehen sich nach Konflikten zurück.» | `rolle` › `alltag` | Auftrag (Abschnitt 6, P2a-S-2) | – |
 | 19 | «Wie Sie Ihre Erreichbarkeit begrenzen können, steht auf der Seite «Auf sich achten» im Abschnitt «Was Kraft kostet und was entlastet».» | `rolle` › `alltag` | neu (2a) | r761 |
 | 20 | «Vielleicht merken Sie, dass Ihre Anspannung steigt, dass Sie sich rechtfertigen oder sich zu sehr anpassen.» | `rolle` › `alltag`, «Fragen statt übernehmen» | Auftrag (Abschnitt 6, P2a-W2-5) | r205 |
@@ -244,7 +269,9 @@ Grundlage für die Freigabe durch die Fachstelle (P2a-F-5). Die Liste ersetzt di
 | 48 | «Zeichnung eines Tisches am Abend: eine Tasse Tee, ein Mobiltelefon mit leuchtendem Bildschirm und ein geschlossenes Buch; im Fenster steht der Mond. Über dem Telefon steht der Gedanke «Vielleicht kommt gleich eine Nachricht.», über dem Buch «Eigentlich wollte ich lesen.»» (Kurzbeschreibung) | `selbstfuersorge` › `kraft`, Abbildung 1 | neu (2a), Satz nach Abschnitt 6 | s664 |
 | 49 | «Nicht alle Angehörigen erleben das so, und es muss nicht so bleiben. Ständige Bereitschaft ist keine Pflicht, und wer sie spürt, macht nichts falsch.» (Vertiefung) | `selbstfuersorge` › `kraft`, Abbildung 1 | Auftrag (Abschnitt 6, P2a-S-4) | s663 |
 | 50 | «Wie Sie Aufgaben abgeben, Ihre Erreichbarkeit begrenzen, sich beraten lassen und Ihr eigenes Leben bewahren können, steht im Abschnitt «Auch Sie brauchen Unterstützung».» | `selbstfuersorge` › `kraft` | neu (2a-K), K-S-a1 | s671 |
-| 51 | «Das ist kein typischer Verlauf und lässt sich nicht aus der Diagnose vorhersagen, verdient aber Aufmerksamkeit, auch wenn äusserlich wenig sichtbar ist.» | `selbstfuersorge` › `kraft` | Verdichtung (K-S-b1) | s303, s304, s310 |
+| 51 | «Das ist eine mögliche Erfahrung, kein typischer Verlauf, und lässt sich nicht aus der Diagnose vorhersagen.» | `selbstfuersorge` › `kraft` | Auftrag 2a-2 (Abschnitt 3) | s303 |
+| 51a | «Wenn Sie sich oft wachsam oder erschöpft fühlen, verdient das Aufmerksamkeit, auch wenn von aussen wenig sichtbar ist.» | `selbstfuersorge` › `kraft` | Auftrag 2a-2 (Abschnitt 3) | s304, s310 |
+| 51b | «Sie sind weder dafür verantwortlich, dass eine Beziehung vorhersehbar ist, noch dafür, die Gefühle eines anderen Menschen auszugleichen.» | `selbstfuersorge` › `kraft` | Auftrag 2a-2 (Abschnitt 3) | s307 |
 | 52 | «Die Liste ist kein Test, keine Diagnose und kein Beweis, dass Sie «zu wenig» für sich tun.» | `selbstfuersorge` › `warnsignale` | Verdichtung (K-S-a4) | s68, s69 u. a. |
 | 53 | «Übungen sind Angebote: Anpassen, Auslassen und Beenden sind erlaubt, und es gibt kein richtiges Ergebnis.» | `selbstfuersorge` › `zu-viel` | Verdichtung (K-S-a5) | s32, s524 u. a. |
 | 54 | «Ruhig atmen» (Zwischentitel) | `selbstfuersorge` › `zu-viel` | neu (2a) | s665 |
