@@ -15,7 +15,7 @@ Gehört zur Website in diesem Ordner (`templates/website/depression-angehoerige/
 | Stufe | Status | Datum | Geprüft durch | Ergebnis |
 | --- | --- | --- | --- | --- |
 | W1 Fachliche Prüfung | offen | 10.10.2026 | Prüfsitzung (Claude Code, hat nicht gebaut) | Prüfrunde W1 abgeschlossen, Stufe offen: 14 wichtige und 11 optionale Befunde, 21 Fragen an die Fachstelle (W1-F-01 bis W1-F-21); Kennzahlen bestätigt; Seiteninventar für W2 liegt vor; Leitlinien, Recht, Statistiken und Angebote nicht am Original geprüft (W1-25) |
-| W2 Gesamtkohärenz | offen | | | |
+| W2 Gesamtkohärenz | offen | 10.10.2026 | Prüfsitzung (Claude Code, hat nicht gebaut; dieselbe wie W1) | Prüfrunde W2 abgeschlossen, Stufe offen: Aufbau trägt; 3 wichtige und 8 optionale Befunde (Verweise zwischen den Seiten, Begriff «Bezugsperson», Paartherapie bündeln), 8 Fragen an die Fachstelle (W2-F-01 bis W2-F-08); Strukturänderungen vor S umsetzen |
 | S Sprach-Review | offen | | | |
 | Visualisierungs-Check | offen | | | |
 | Bedienung und Barrierefreiheit | offen | | | |
@@ -726,6 +726,217 @@ Schwere: **wichtig** = vor der Freigabe zu klären; **optional** = Verbesserung.
 | Fragen an die Fachstelle | 21 | W1-F-01 bis W1-F-21 |
 
 ### W2 Gesamtkohärenz
+
+#### Prüfrunde W2 (10.10.2026, Stand `c2d1de8`)
+
+**Geprüft durch:** dieselbe Prüfsitzung wie W1 (Claude Code, hat die Website nicht gebaut). Keine Inhalte und kein Code geändert; nur dieser Bericht.
+
+**Grundlage:** Seiteninventar W1-D und die acht Inhaltsseiten. Dazu von der Prüfsitzung nachgezählt: Wörter je Seite mit und ohne Vertiefung (`details`), interne Links zwischen den Seiten, 31 zentrale Begriffe je Seite, Fusszeile und Zuständigkeitsverweise der gebauten Seiten. Kriterien: Abschnitt «Gesamtkohärenz und Aufbau» (`guidelines/00-gesamtkohaerenz-und-aufbau.md`). W2 wiederholt die Seitenbefunde aus W1 nicht und verweist auf sie.
+
+**Ergebnis:** W2 bleibt **offen**. 11 Befunde (3 wichtig, 8 optional), 8 Fragen an die Fachstelle (W2-F-01 bis W2-F-08). Der Aufbau trägt; eine Umstrukturierung ist nicht nötig. Nötig sind Verweise zwischen den Seiten, ein einheitlicher Begriff «Bezugsperson» und eine Bündelung der Paartherapie. Diese Strukturänderungen sollen vor S umgesetzt werden (Liste am Ende).
+
+#### W2-A · Prüfpunkte
+
+| Nr. | Prüfpunkt | Ergebnis | Beleg | Befund |
+| --- | --- | --- | --- | --- |
+| 1 | Eine übergeordnete Zielsetzung; jede Seite trägt erkennbar bei | erfüllt | `index` › Hero: «Diese Website erklärt die Erkrankung, ordnet Ihre eigene Situation ein und zeigt, was Sie tun können und wo Sie Unterstützung finden.» Jede der sieben Themenseiten deckt einen der vier Teile ab (`primaryTask` im Inventar W1-D); keine Seite ohne Bezug zum Ziel | – |
+| 2 | Wichtigste Inhalte erhalten den meisten Raum; Nebenthemen nicht überproportional | erfüllt | Sichtbare Wörter (ohne Vertiefung): Verstehen 2395, Ihre Situation 2032, Handeln 2140 (W2-B). Nebenthemen der Behandlung (EKT, rTMS, Esketamin, Lichttherapie, Johanniskraut, Kosten) stehen in der Vertiefung (176 Wörter). `fuer-sich-sorgen` ist die kürzeste Themenseite (625 sichtbare Wörter), aber vollständig; Selbstsorge fehlt als Kernsatz auf `index` | W2-11 |
+| 3 | Aufbaulogik festgelegt und benannt | erfüllt | `index` › `kapitel`: «Die Seiten führen vom Verstehen über die eigene Situation zum Handeln. Jede Seite ist auch für sich verständlich.»; README «vom Verstehen über die eigene Situation zum Handeln, mit Lesepfaden nach Rolle und nach Frage»; Plan von der Fachstelle am 10.10.2026 freigegeben | – |
+| 4 | Logik konsequent durchgehalten | erfüllt | Eyebrows der gebauten Seiten: «Verstehen» (`depression-verstehen`, `behandlung-und-verlauf`), «Ihre Situation» (`ihre-situation`, `je-nach-rolle`), «Handeln» (`begleiten`, `fuer-sich-sorgen`, `rechte-und-angebote`). Handlungsteile auf «Verstehen»-Seiten (Krisenplan, Einbezug) sind als «05 · Alltag» und «06 · Handeln» gekennzeichnet | – |
+| 5 | Navigation spiegelt die Logik | erfüllt | `site.config.json` › `pages` und Hauptnavigation (8 Einträge) in derselben Reihenfolge wie die Gruppen | – |
+| 6 | Abhängigkeiten: kein Wissen vorausgesetzt, das später oder nie erklärt wird; Übergänge; Wiederaufnahme früherer Inhalte | teilweise | `rechte-und-angebote` › Abb. 1 verwendet «Bezugspersonen» als Rechtsbegriff, erklärt wird er erst in `vorsorge`; der Lesepfad «Was darf ich erfahren?» landet in Abb. 1. Spätere Seiten greifen frühere Inhalte auf (Rückzug als Krankheitszeichen auf `ihre-situation`, `je-nach-rolle`, `begleiten`), verweisen aber nicht zurück; die Seiten enden ohne Hinweis auf die nächste Seite. Verwendet, aber nicht erklärt: W2-D, letzte Spalte | W2-01, W2-03, W2-08 |
+| 7 | Begriffe einheitlich verwendet und definiert; Begriffsübersicht | teilweise | «Bezugsperson» in zwei Bedeutungen; «Einverständnis», «Einwilligung», «Zustimmung» für dasselbe; «mittelgradig» neben «mittelschwer». Eine Begriffsübersicht gab es nicht; sie steht jetzt in W2-D | W2-03, W2-04, W2-05, W2-07 |
+| 8 | Keine Widersprüche bei Fakten, Empfehlungen, Zahlen; Erklärmodelle ins Verhältnis gesetzt | teilweise | Widersprüche zwischen Seiten sind bereits W1-Befunde: Verlauf (W1-02), Stärke der Paartherapie (W1-11), «oft» und «meist» Zeichen der Krankheit (W1-12), Bezugspersonen und Auskunft (W1-01). Erklärmodelle: Schwelle (`depression-verstehen`, Entstehung), Gefäss (`ihre-situation`, Belastung der Angehörigen), Kreis (`ihre-situation`, Wechselwirkung) erklären verschiedene Dinge und konkurrieren nicht. «Belastung» heisst in der Schwelle «Belastung der erkrankten Person», im Gefäss «Belastung der Angehörigen» (W2-D) | siehe W1 |
+| 9 | Quellen einheitlich zitiert; dieselbe Aussage überall gleich belegt | teilweise | Mehrfach zitierte Quellen stehen gleich da (Barbato 2018 auf `ihre-situation` und `fuer-sich-sorgen`, Stand by You auf `ihre-situation` und `je-nach-rolle`, SGPP auf drei Seiten). Ungleich belegt: Paartherapie auf `je-nach-rolle` ohne Quelle, auf zwei anderen Seiten mit Barbato. Uneinheitliches Format (mit und ohne Titel): W1-09 | W2-06, siehe W1-09 |
+| 10 | Haltung durchgehend gleich (Anrede, Ton, Bild der Angehörigen und der erkrankten Person) | erfüllt | «Sie» auf allen Seiten, «du» nur in Formulierungsbeispielen; Angehörige als Begleitende ohne Behandlungsverantwortung (`index` › `kurz`, `begleiten` › Hero, `behandlung-und-verlauf` › Hero); erkrankte Person als selbstbestimmt (`begleiten` › `haltung`, `behandlung-und-verlauf` › Krisenplan). Einzige Spannung: W1-16 | siehe W1-16 |
+| 11 | Redundanz bewusst eingesetzt | teilweise | Kerngedanken werden sinnvoll wiederholt und verlinkt (W2-E). Unnötig: Paartherapie mit gleichem Satz auf zwei Seiten und einer dritten Erwähnung | W2-06 |
+| 12 | Quereinstieg: Einstiegsseiten für sich verständlich | erfüllt | Jede Seite hat eine einordnende Einleitung (Hero), z. B. `je-nach-rolle`: «Das Allgemeine steht auf den anderen Seiten.»; Die 12 Lesepfade auf `index` führen in 11 Abschnitte und eine Seite. Lücken bei Fachbegriffen auf einzelnen Seiten: W2-08 | W2-08 |
+| 13 | Verlinkung unterstützt Aufbaulogik und Quereinstieg | nicht erfüllt | `depression-verstehen`, `behandlung-und-verlauf` und `je-nach-rolle` erhalten von keiner Themenseite einen Link; `rechte-und-angebote` verlinkt keine andere Seite; `depression-verstehen`, `behandlung-und-verlauf` und `begleiten` verlinken je nur eine andere Seite (W2-C). `je-nach-rolle` › `eltern` nennt die Sorge um Suizid ohne Weg zu `begleiten.html#suizidgedanken` | W2-01, W2-02 |
+| 14 | Hinweis «ersetzt keine Abklärung» auf jeder Seite | erfüllt | Fusszeile aller 8 gebauten Seiten: `<p … data-disclaimer>Diese Website ersetzt keine individuelle Abklärung, Beratung oder Behandlung.</p>`; zusätzlich `index` › `einstieg` | – |
+| 15 | Zuständigkeitsverweis: genau einer an fester Stelle; im Text nur direkt nach einer Handlungsanleitung für akute Lagen; nächster Schritt vorhanden | erfüllt | Fusszeile aller 8 Seiten (`data-safety-access="responsibility"`, geprüft 09.10.2026). Im Text nur zweimal, je direkt nach einer Anleitung: `begleiten` › `suizidgedanken` (nach «… holen Sie gemeinsam Hilfe.») und `fuer-sich-sorgen` › `eigene-krise` (nach «Dann ist es Zeit, Unterstützung für sich zu holen …»); Wortlaut aus `responsibility.inline`. Keine weiteren Verweise. Reihenfolge auf `fuer-sich-sorgen`: W1-18 | siehe W1-18 |
+| 16 | Lücken im Gesamtkonzept (Prüfliste) | erfüllt, mit Fragen | Alle neun Themen der Prüfliste sind abgedeckt (W2-L). Fragen zu drei möglichen Lücken an die Fachstelle | W2-10 |
+
+#### W2-B · Raum und Gewichtung
+
+Wörter: sichtbarer Text aus `content/<id>.html` ohne Quellenliste und SVG; «Vertiefung» = Text in `details`.
+
+| Gruppe | Seite | Wörter | davon Vertiefung | sichtbar | Abschnitte | Figuren |
+| --- | --- | --- | --- | --- | --- | --- |
+| Einstieg | Übersicht | 529 | 0 | 529 | 4 | 0 |
+| Verstehen | Depression verstehen | 1289 | 178 | 1111 | 6 | 2 |
+| Verstehen | Behandlung und Verlauf | 1460 | 176 | 1284 | 7 | 3 |
+| Ihre Situation | Ihre Situation | 1062 | 145 | 917 | 7 | 2 |
+| Ihre Situation | Je nach Rolle | 1154 | 39 | 1115 | 8 | 1 |
+| Handeln | Begleiten und Gespräche | 809 | 38 | 771 | 6 | 1 |
+| Handeln | Für sich sorgen | 695 | 70 | 625 | 6 | 1 |
+| Handeln | Rechte und Unterstützung | 774 | 30 | 744 | 5 | 1 |
+| | **Summe** | **7772** | **676** | **7096** | **49** | **11** |
+
+**Beurteilung:** Die drei Gruppen sind etwa gleich gross (sichtbar 2395 / 2032 / 2140). Die längste Seite ist «Behandlung und Verlauf»; ihre Spezialthemen stehen in der Vertiefung, und Abb. 2 und 3 haben Ansatzpunkte für Angehörige. Kein Nebenthema ist überproportional ausgebaut. Zur Frage der bauenden Sitzung (Visualisierungs-Check Nr. 9), ob «Je nach Rolle» als Textseite trägt: Aus Sicht von W2 ja. Jeder der sechs Abschnitte ist ein eigenständiges Ziel eines Lesepfads und für sich lesbar; die Beziehungsdynamik zeigt der verlinkte Kreis auf `ihre-situation`. Das abschliessende Urteil gehört in den Visualisierungs-Check.
+
+#### W2-C · Verlinkung zwischen den Seiten
+
+Interne Links im Inhalt (ohne Navigation, Fusszeile und `index`):
+
+| Seite | verlinkt auf | wird verlinkt von |
+| --- | --- | --- |
+| Depression verstehen | `begleiten#ansprechen` | – |
+| Behandlung und Verlauf | `rechte-und-angebote#schweigepflicht` | – |
+| Ihre Situation | `rechte-und-angebote#schweigepflicht`, `fuer-sich-sorgen` (2×), `fuer-sich-sorgen#eigene-krise`, `begleiten#suizidgedanken` | `je-nach-rolle` |
+| Je nach Rolle | `ihre-situation`, `ihre-situation#wechselwirkung`, `begleiten`, `rechte-und-angebote`, `rechte-und-angebote#schweigepflicht` | – |
+| Begleiten und Gespräche | `fuer-sich-sorgen`, `fuer-sich-sorgen#grenzen` | `depression-verstehen`, `ihre-situation`, `je-nach-rolle` |
+| Für sich sorgen | `rechte-und-angebote#angebote` | `ihre-situation`, `begleiten` |
+| Rechte und Unterstützung | – | `behandlung-und-verlauf`, `ihre-situation`, `je-nach-rolle`, `fuer-sich-sorgen` |
+
+Die Links laufen fast nur «vorwärts» zu Handeln und Rechten. Die beiden Verstehensseiten und «Je nach Rolle» sind nur über `index` und die Navigation erreichbar.
+
+**Vorgeschlagene Verweise** (Ort im Text › Ziel; je ein kurzer Satz oder Linktext, kein neuer Inhalt):
+
+| Nr. | Ort | Anlass im Text | Ziel |
+| --- | --- | --- | --- |
+| L1 | `je-nach-rolle` › `eltern` | «ob sich das Kind etwas antun könnte» | `begleiten.html#suizidgedanken` (W2-02) |
+| L2 | `depression-verstehen` › `was-ist` | «Gedanken an den Tod oder an Suizid» | `begleiten.html#suizidgedanken` (W2-02) |
+| L3 | `je-nach-rolle` › `partner` | «Rückzug, Gereiztheit und wenig Lust auf Nähe sind … Zeichen der Krankheit» | `depression-verstehen.html#dahinter` |
+| L4 | `ihre-situation` › `wechselwirkung` | Station 1 «Rückzug und Gereiztheit» (Frage der bauenden Sitzung, Visualisierungs-Check Nr. 6) | `depression-verstehen.html#dahinter` |
+| L5 | `begleiten` › `ansprechen` | «Ermutigen Sie zu einer Abklärung» | `behandlung-und-verlauf.html#weg` |
+| L6 | `depression-verstehen` › `anders` | «Die Hausarztpraxis ist ein guter erster Schritt.» | `behandlung-und-verlauf.html#weg` |
+| L7 | `behandlung-und-verlauf` › `behandelbar` | «richtet sich vor allem nach dem Schweregrad» | `depression-verstehen.html#was-ist` |
+| L8 | `behandlung-und-verlauf` › `vorbeugen` | Krisenplan: «wie und von wem die Zeichen angesprochen werden dürfen» | `begleiten.html#ansprechen` |
+| L9 | `je-nach-rolle` › `erwachsene-kinder` | «Sie dürfen Grenzen setzen» | `fuer-sich-sorgen.html#grenzen` |
+| L10 | `rechte-und-angebote` › `angebote` | Einleitung der Angebote | `fuer-sich-sorgen.html#netz` |
+| L11 | `rechte-und-angebote` › `schweigepflicht` | nach dem Formulierungsbeispiel | `behandlung-und-verlauf.html#einbezug` |
+| L12 | Ende jeder Themenseite | Übergang zur nächsten Seite der Aufbaulogik (ein Satz, wie `depression-verstehen` › `was-ist` › `.puk-longform__transition`) | nächste Seite |
+
+#### W2-D · Begriffsübersicht
+
+Zählung im sichtbaren Text je Seite: idx = Übersicht, dv = Depression verstehen, bv = Behandlung und Verlauf, is = Ihre Situation, ro = Je nach Rolle, bg = Begleiten, fs = Für sich sorgen, ra = Rechte und Unterstützung.
+
+| Begriff | idx | dv | bv | is | ro | bg | fs | ra | Bedeutung und Befund |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Bezugsperson | 1 | 0 | 0 | 0 | 1 | 0 | 0 | 4 | **zwei Bedeutungen:** umgangssprachlich auf `index` («Angehörige und nahe Bezugspersonen», Zielgruppe) und `je-nach-rolle` («eine verlässliche Bezugsperson», Schutzfaktor); Rechtsbegriff des PatG ZH auf `ra`, dort in Abb. 1 vor der Erklärung in `vorsorge` → W2-03 |
+| Einverständnis / einverstanden | 1 | 0 | 2 | 0 | 1 | 1 | 0 | 0 | dieselbe Sache wie «Einwilligung» und «Zustimmung»; die Kernaussage «auch ohne Einverständnis» führt auf eine Seite, die «Einwilligung» sagt → W2-04 |
+| Einwilligung | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 6 | → W2-04 |
+| Zustimmung | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | → W2-04 |
+| mittelgradig | 0 | 1 | 2 | 0 | 0 | 0 | 0 | 0 | Schweregrad der Diagnose → W2-05 |
+| mittelschwer | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | SGB-Zahl (Fragebogen) und Johanniskraut → W2-05 |
+| Fachperson | 0 | 2 | 3 | 0 | 0 | 0 | 0 | 3 | einzelne behandelnde Person; einheitlich |
+| Behandlungsteam | 1 | 0 | 2 | 0 | 1 | 0 | 0 | 1 | Team; einheitlich neben «Fachperson» |
+| Fachleute | 0 | 3 | 1 | 0 | 1 | 1 | 0 | 0 | Fachwelt allgemein («Fachleute sprechen von …»); einheitlich |
+| Episode | 0 | 3 | 3 | 0 | 0 | 0 | 0 | 0 | auf beiden Seiten erklärt («Phasen, die Fachleute Episoden nennen»); einheitlich |
+| Rückfall | 1 | 0 | 10 | 1 | 0 | 0 | 0 | 0 | einheitlich; «Rezidiv» kommt nicht vor |
+| Krisenplan | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | meint einen Plan für frühe Zeichen eines Rückfalls → W2-09 |
+| Belastung | 2 | 8 | 0 | 8 | 2 | 0 | 2 | 0 | zwei Bedeutungen, aus dem Zusammenhang klar: Belastung der erkrankten Person (Schwelle, `dv` › `entstehung`) und der Angehörigen (`is`, `fs`); kein Befund |
+| Beratungsstelle | 0 | 0 | 0 | 1 | 0 | 1 | 1 | 0 | unbestimmt («eine Beratungsstelle für Angehörige»); die Angebote stehen auf `ra` › `angebote` → Link (W2-01) |
+| Hausarztpraxis / Hausärztin | 0 | 2 | 6 | 0 | 0 | 2 | 2 | 0 | einheitlich |
+| Ansatzpunkt | 0 | 0 | 5 | 6 | 0 | 0 | 0 | 0 | in den Figuren erklärt; einheitlich |
+| Schweigepflicht | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 6 | einheitlich |
+| erkrankte Person | 4 | 4 | 7 | 1 | 1 | 2 | 4 | 8 | einheitliche Bezeichnung |
+| Suizid / nicht mehr leben | 2 | 2 | 1 | 4 | 0 | 4 | 1 | 0 | `ro` nennt die Sorge ohne das Wort und ohne Link → W2-02 |
+
+**Verwendet, aber nicht erklärt** (für den Quereinstieg): «NVL» und «unipolar» in Bildlegenden (`dv`, `bv`); «Tagesklinik» (`bv` › Abb. 2); «Achtsamkeit» (`fs` › `was-hilft`); «Betreuungsgutschriften», «Hilflosenentschädigung», «IV-Rente» (`ra` › `arbeit-geld`); «VASK» (`ro`, `ra`) → W2-08.
+
+#### W2-E · Redundanzen
+
+| Inhalt | Stellen | Bewertung | Vorschlag |
+| --- | --- | --- | --- |
+| Beobachtungen mitteilen, auch ohne Einverständnis | `index` › `kurz`; `bv` › Abb. 2 und `einbezug`; `ro` › `eltern`; `ra` › `schweigepflicht` | sinnvoll: Kerngedanke, überall mit Link auf `ra` | – |
+| Niemand ist schuld | `index`; `dv` › `entstehung` und Abb. 2; `is` › Abb. 2; `bv` › `verlauf` («kein Versagen») | sinnvoll: Kerngedanke | – |
+| Rückzug und Gereiztheit als Zeichen der Krankheit | `dv` › `dahinter` (Abb. 1); `is` › Abb. 2 Station 1; `ro` › `partner`; `bg` › `alltag` | sinnvoll, aber ohne Rückverweis auf die Seite, die es erklärt | L3, L4 (W2-01) |
+| Gereiztheit und Übergriffe | `bg` › `alltag` (Liste und Absatz); `fs` › `grenzen` | zwischen den Seiten sinnvoll (`bg` verweist auf `fs`); auf `bg` steht «Gereiztheit» zweimal hintereinander (Liste «Gereiztheit als Teil der Krankheit sehen.» und Absatz «Gereiztheit gehört oft zur Krankheit.») | auf `bg` einmal → S |
+| Paartherapie | `is` › Abb. 2 › Vertiefung; `ro` › `partner`; `fs` › `was-hilft`. Der Satz «Gegen die Depression wirkt sie nach bisherigen, noch schwachen Studien ähnlich gut wie eine Einzeltherapie.» steht wörtlich auf `is` und `fs` | unnötig, zudem unterschiedlich stark (W1-11) | ausführen nur auf `fs` › `was-hilft`; auf `is` und `ro` ein Satz mit Link (W2-06) |
+| Hausarztpraxis als erster Schritt | `dv` › `anders`; `bv` › `weg`; `bg` › `ansprechen` und `ablehnung` | sinnvoll | Link L5, L6 |
+| Fachstelle berät kostenlos | `index` › `einstieg`; `fs` › `eigene-krise`; `ra` › `angebote`; Fusszeile | sinnvoll (Kontakt) | – |
+| SGB-Zahl «rund jede zehnte Person» | `index` › `einstieg`; `dv` › `was-ist` | sinnvoll: Startseite fasst zusammen | – |
+| Kinderseele, VASK-Gruppe | `ro` › `kinder`, `erwachsene-kinder`; `ra` › `angebote` | sinnvoll: Quereinstieg nach Rolle | – |
+
+#### W2-L · Lücken im Gesamtkonzept (Prüfliste)
+
+| Thema der Prüfliste | Abgedeckt auf | Ergebnis |
+| --- | --- | --- |
+| Störungsbild verstehen | `depression-verstehen` | erfüllt |
+| Diagnose und Verlauf | `depression-verstehen` › `was-ist`; `behandlung-und-verlauf` › `verlauf` | erfüllt |
+| Behandlung | `behandlung-und-verlauf` | erfüllt |
+| Kommunikation | `begleiten` › `ansprechen`; Formulierungsbeispiele (`.puk-say`) auf fünf Seiten, dazu ein Beispiel in `depression-verstehen` › Abb. 1 | erfüllt |
+| Umgang mit Ablehnung von Hilfe | `begleiten` › `ablehnung` | erfüllt |
+| eigene Belastung und Grenzen | `ihre-situation`; `fuer-sich-sorgen` | erfüllt |
+| Rechte und Schweigepflicht (Schweizer Recht) | `rechte-und-angebote` (ohne fürsorgerische Unterbringung, Entscheid der Fachstelle) | erfüllt |
+| Geschwister und Kinder | `je-nach-rolle` › `kinder`, `geschwister`, `erwachsene-kinder` | erfüllt |
+| Unterstützungsangebote | `rechte-und-angebote` › `angebote`; `fuer-sich-sorgen` › `netz` | erfüllt |
+| Krisenthemen | `begleiten` › `suizidgedanken` mit Zuständigkeitsverweis; keine Krisenseite | keine Lücke (Profil «Zuständigkeit statt Krisenzugang») |
+
+**Mögliche Lücken, gemessen an Ziel und Zielgruppe** (Entscheid der Fachstelle, W2-F-07):
+
+1. **Klinikaufenthalt und Austritt aus Sicht der Angehörigen.** `behandlung-und-verlauf` › Abb. 2 nennt Tagesklinik oder Klinik in einem Satz; was Angehörige während eines Aufenthalts und beim Austritt tun können, steht nirgends.
+2. **Angehörige älterer Menschen.** Depression im Alter kommt nur in `depression-verstehen` › `anders` vor; zu den erwachsenen Kindern siehe W1-14.
+3. **Arbeit und Einkommen der erkrankten Person.** `rechte-und-angebote` › `arbeit-geld` behandelt nur die Ansprüche der Angehörigen; Fragen zu Krankschreibung, Taggeld oder IV der erkrankten Person sind für viele Familien zentral.
+
+#### W2-F · Fragen an die Fachstelle (Prüfbedarf)
+
+1. **W2-F-01 · Begriff «Bezugsperson»** (W2-03). Soll «Bezugsperson» nur noch als Rechtsbegriff auf `rechte-und-angebote` stehen und dort beim ersten Auftreten (Abb. 1) kurz erklärt werden? Und sollen `index` («nahe Bezugspersonen») und `je-nach-rolle` («eine verlässliche Bezugsperson») ein anderes Wort erhalten, etwa «nahestehende Menschen» bzw. «ein verlässlicher Erwachsener»? Je Ja/Nein.
+2. **W2-F-02 · Einverständnis oder Einwilligung** (W2-04). Welcher Begriff gilt auf allen Seiten? Vorschlag: «Einverständnis» im Text, auf `rechte-und-angebote` einmal «Einverständnis (rechtlich: Einwilligung)» und danach einheitlich.
+3. **W2-F-03 · Schweregrad** (W2-05). «mittelgradig» für die Diagnose überall; bei der SGB-Zahl «mittelschwere bis schwere Beschwerden (nach einem Fragebogen)» und beim Johanniskraut «mittelgradig» (Ja/Nein)?
+4. **W2-F-04 · Paartherapie bündeln** (W2-06). Paartherapie nur auf `fuer-sich-sorgen` › `was-hilft` ausführen; auf `ihre-situation` und `je-nach-rolle` je ein Satz mit Link (Ja/Nein)? Wortlaut gemäss W1-F-17.
+5. **W2-F-05 · «Krisenplan»** (W2-09). Soll der Plan für frühe Zeichen anders heissen, etwa «Plan für schwierige Zeiten» oder «Vorsorgeplan», damit er nicht wie ein Krisenzugang klingt und zum Abschnitt «Frühe Zeichen und gemeinsam vorbeugen» passt?
+6. **W2-F-06 · Kernsatz zur Selbstsorge** (W2-11). Soll `index` › `kurz` einen sechsten Kernsatz zu «Für sich sorgen» erhalten, etwa «Sie dürfen auf sich achten und sich Unterstützung holen (Für sich sorgen)»?
+7. **W2-F-07 · Mögliche Lücken** (W2-10). Braucht die Website (a) einen Abschnitt zu Klinikaufenthalt und Austritt, (b) mehr zu Angehörigen älterer Menschen, (c) Hinweise zu Arbeit und Einkommen der erkrankten Person? Je Ja/Nein; bei Ja Ort (Seite, Abschnitt).
+8. **W2-F-08 · Verweise** (W2-01, W2-02). Keine fachliche Frage: Struktur und Verweise darf die bauende Sitzung entscheiden. Die Fachstelle wird nur informiert, dass L1 bis L12 eingefügt werden.
+
+#### W2-H · Befunde W2
+
+Schwere: **wichtig** = vor S umsetzen; **optional** = Verbesserung. Quelle aller Befunde: Prüfung 1. W1-Befunde werden nicht wiederholt.
+
+- **W2-01 · wichtig · Verlinkung trägt die Aufbaulogik nicht.**
+  - **Beleg:** W2-C. `depression-verstehen`, `behandlung-und-verlauf` und `je-nach-rolle` erhalten von keiner Themenseite einen Link; `rechte-und-angebote` verlinkt keine Seite; `depression-verstehen`, `behandlung-und-verlauf` und `begleiten` verlinken je nur eine andere Seite. Spätere Seiten nehmen Inhalte der Verstehensseiten auf (Rückzug, Hausarztpraxis, Schweregrad), ohne zurückzuverweisen; keine Seite führt am Ende zur nächsten.
+  - **Vorschlag:** Verweise L3 bis L12 aus W2-C.
+  - **Zuständig:** bauende Sitzung (Struktur).
+- **W2-02 · wichtig · Sorge um Suizid ohne Weg zur Anleitung.**
+  - **Beleg:** `je-nach-rolle` › `eltern`: «Die grösste Sorge gilt oft der Frage, ob sich das Kind etwas antun könnte.» – kein Link auf `begleiten.html#suizidgedanken`, obwohl Eltern hier über den Lesepfad einsteigen. `ihre-situation` › `angst` macht es richtig («Was Sie tun können, wenn Sie befürchten, … steht unter …»). Ebenso ohne Link: `depression-verstehen` › `was-ist` «Gedanken an den Tod oder an Suizid».
+  - **Vorschlag:** L1 und L2, jeweils ein Satz wie auf `ihre-situation` › `angst`.
+  - **Zuständig:** bauende Sitzung.
+- **W2-03 · wichtig · «Bezugsperson» mit zwei Bedeutungen; Rechtsbegriff vor der Erklärung.**
+  - **Beleg:** `index` › `einstieg`: «Angehörige und nahe Bezugspersonen»; `je-nach-rolle` › `kinder`: «eine verlässliche Bezugsperson»; `rechte-und-angebote` › Abb. 1: «im Kanton Zürich an Bezugspersonen möglich», erklärt erst in `vorsorge`. Eine Freundin, die sich als «nahe Bezugsperson» angesprochen fühlt, kann daraus ein Auskunftsrecht ableiten, das nach PatG ZH nur Bezugspersonen im Rechtssinn haben.
+  - **Zuständig:** Fachstelle (W2-F-01), danach bauende Sitzung; gemeinsam mit W1-01 lösen.
+- **W2-04 · optional · Einverständnis, Einwilligung, Zustimmung.**
+  - **Beleg:** W2-D; `index` › `kurz` «auch ohne Einverständnis» verlinkt auf `rechte-und-angebote`, wo die Spalten «Ohne Einwilligung» und «Mit Einwilligung» heissen und der Kurztext «Zustimmung» sagt.
+  - **Zuständig:** Fachstelle (W2-F-02).
+- **W2-05 · optional · «mittelgradig» und «mittelschwer».**
+  - **Beleg:** `depression-verstehen` › `was-ist`: «leichte, mittelgradige und schwere Depressionen» und zwei Absätze später «mittelschwere bis schwere depressive Beschwerden»; `behandlung-und-verlauf` › `behandelbar` «Mittelgradige Depression», Vertiefung Abb. 1 «leichter bis mittelschwerer Depression».
+  - **Zuständig:** Fachstelle (W2-F-03).
+- **W2-06 · optional · Paartherapie dreimal, zweimal mit gleichem Satz.**
+  - **Beleg:** W2-E; gleicher Satz auf `ihre-situation` › Abb. 2 › Vertiefung und `fuer-sich-sorgen` › `was-hilft`; dritte Erwähnung ohne Quelle auf `je-nach-rolle` › `partner`.
+  - **Zuständig:** Fachstelle (W2-F-04), danach bauende Sitzung.
+- **W2-07 · optional · Begriffsübersicht pflegen.**
+  - **Beleg:** Die Leitlinie verlangt eine Begriffsübersicht, sobald mehrere Seiten dieselben Begriffe einführen. Es gab keine; W2-D ist ein Anfang.
+  - **Vorschlag:** W2-D nach den Entscheiden W2-F-01 bis W2-F-03 nachführen und bei jeder Textänderung (S) prüfen.
+  - **Zuständig:** bauende Sitzung.
+- **W2-08 · optional · Begriffe ohne Erklärung beim Quereinstieg.**
+  - **Beleg:** W2-D, letzte Zeile: «NVL», «unipolar», «Tagesklinik», «Achtsamkeit», «Betreuungsgutschriften», «Hilflosenentschädigung», «IV-Rente», «VASK».
+  - **Zuständig:** S (Sprach-Review), Abkürzungen in Legenden ausschreiben.
+- **W2-09 · optional · «Krisenplan» für einen Plan bei frühen Zeichen.**
+  - **Beleg:** `behandlung-und-verlauf` › `vorbeugen`: Zwischenüberschrift «Einen Krisenplan vereinbaren» im Abschnitt «Frühe Zeichen und gemeinsam vorbeugen»; Inhalt: «was bei einem Rückfall gelten soll». Das Profil vermeidet Krisenzugang; der Begriff steht sonst nirgends.
+  - **Zuständig:** Fachstelle (W2-F-05).
+- **W2-10 · optional · Mögliche Lücken.**
+  - **Beleg:** W2-L, «Mögliche Lücken» 1 bis 3.
+  - **Zuständig:** Fachstelle (W2-F-07).
+- **W2-11 · optional · Selbstsorge fehlt unter den Kernsätzen der Übersicht.**
+  - **Beleg:** `index` › `kurz`: fünf Kernsätze zu Krankheit, Schuld, Belastung, Begleiten und Rechten; «Für sich sorgen» ist nur über den Lesepfad «Mir wird es zu viel.» und die Kapitelliste erreichbar.
+  - **Zuständig:** Fachstelle (W2-F-06).
+
+#### Zählung der Befunde W2
+
+| Schwere | Anzahl | Befunde |
+| --- | --- | --- |
+| wichtig | 3 | W2-01, W2-02, W2-03 |
+| optional | 8 | W2-04 bis W2-11 |
+| Fragen an die Fachstelle | 8 | W2-F-01 bis W2-F-08 (W2-F-08 nur zur Information) |
+
+#### Vor S umzusetzen (Strukturänderungen)
+
+1. Verweise L1 bis L12 einfügen (W2-01, W2-02) – bauende Sitzung, ohne fachlichen Entscheid.
+2. Begriffe nach W2-F-01 bis W2-F-03 vereinheitlichen und W2-D nachführen (W2-03 bis W2-05, W2-07).
+3. Paartherapie nach W2-F-04 bündeln (W2-06).
+4. Allfällige neue Abschnitte nach W2-F-06 und W2-F-07 (W2-10, W2-11).
+5. Die W1-Befunde, die Text auf mehreren Seiten ändern (W1-01, W1-02, W1-11, W1-12), mit diesen Änderungen zusammen umsetzen, damit S nur feststehenden Text prüft.
 
 ### S Sprach-Review
 
