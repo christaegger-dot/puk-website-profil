@@ -77,6 +77,8 @@ Gehört zur Website in diesem Ordner (`templates/website/depression-angehoerige/
   - **Gate:** `rechte-und-angebote` erhält `zwang` in `sensitiveTopics` (Quellentitel «im psychiatrischen Zwangskontext»).
   - **Geprüft:** Gate 0 blockierend, 13 Hinweise; alle internen Links mit Ziel; kein horizontaler Überlauf bei 320 und 1280 px; Abb. 1 `rechte-und-angebote` und der neue Abschnitt zum Klinikaufenthalt bei 360 und 1280 px angesehen.
 
+- **11.10.2026 · Befunde der Prüfrunde 2 (W1-26 bis W1-30) und W1-10:** leeres Listenelement auf `ihre-situation` entfernt (W1-26); Quellen über PubMed geprüft und ergänzt: Fiske, Wetherell und Gatz 2009 (Depression im Alter, `depression-verstehen` › `anders` und `je-nach-rolle` › `erwachsene-kinder`, W1-27), Simon et al. 1999 (körperliche Beschwerden in der Hausarztpraxis), O'Hara und McCabe 2013 sowie Paulson und Bazemore 2010 (rund um die Geburt, Mütter und Väter); «Die ersten Wochen und Monate» (W1-28); «Und manche ringen damit» (W1-29); «In der deutschen Befragung fühlten sich …» (W1-30). Weiterhin ohne deckende Quelle: «Baby Blues … vergeht von selbst» (nicht im Abstract von O'Hara und McCabe), «kann wie eine beginnende Demenz wirken», «Flucht in die Arbeit». Die Vorschläge aus S sind noch nicht umgesetzt; sie warten auf S-F-01 und S-F-02.
+
 ### Begriffe nach den Entscheiden W2-F-01 bis W2-F-03 (bauende Sitzung, für S und W2-D)
 
 | Begriff | Gilt | Wo |
