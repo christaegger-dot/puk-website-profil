@@ -52,6 +52,10 @@ Gehört zur Website in diesem Ordner (`templates/website/depression-angehoerige/
 - Für sich sorgen › `was-hilft`: Der «Familiencoach Depression» ist aus der Schweiz nutzbar. Markierung entfernt, Text unverändert.
 - Für sich sorgen › Quellen: Die Meta-Analyse zu Achtsamkeitsprogrammen nur mit vollständiger, überprüfbarer Angabe aufführen, sonst weglassen. Die bauende Sitzung hat sie in PubMed gefunden und wieder eingesetzt: Zhang X, Ren H, Wang C, Zhang Y, Zhou Q, Fan J (2024). The effect of mindfulness-based interventions on mental health outcomes and wellbeing of informal caregivers of people with mental illness: A systematic review and meta-analysis. *International Journal of Mental Health Nursing*, 33(4), 797–816. https://doi.org/10.1111/inm.13295 (PMID 38291626). 13 Studien mit 1007 Teilnehmenden; laut Zusammenfassung weniger Stress, Depressivität und Belastung, kein Effekt auf Angst; die Autorinnen und Autoren fordern methodisch strengere Studien.
 
+### Umgesetzt nach den Prüfrunden (bauende Sitzung)
+
+- **11.10.2026 · W2-01, W2-02 (Verweise L1 bis L12, `5ad9cc8`):** zwölf Verweise nach W2-C eingefügt, je ein Satz mit Link und ohne neue fachliche Aussage. L1 und L2 im Wortlaut von `ihre-situation` › `angst`; L9 als Link auf «Grenzen setzen» im bestehenden Satz; L12 als Übergangssatz (`.puk-longform__transition`) am Ende der Seiten 2 bis 7, nicht auf der letzten Seite. Geprüft: alle internen Links führen auf vorhandene Ziele; kein horizontaler Überlauf bei 320 und 1280 px; Gate 0 blockierend.
+
 ### Offener Prüfbedarf (für W1)
 
 1. Für sich sorgen › `was-hilft`, Eintrag «Achtsamkeit»: Die Aussage mit Zhang et al. 2024 abgleichen (bisher nur anhand der Zusammenfassung). Der Text sagt die Wirkung ohne Einschränkung aus, beim Familiencoach dagegen «leicht»; W1 entscheidet, ob ein Hinweis auf die begrenzte Studienqualität nötig ist.
