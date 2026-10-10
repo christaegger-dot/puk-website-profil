@@ -13,12 +13,12 @@ Gehört zur Website in diesem Ordner. Wer den Starter kopiert, übernimmt diese 
 
 | Stufe | Status | Datum | Geprüft durch | Ergebnis |
 | --- | --- | --- | --- | --- |
-| W1 Fachliche Prüfung | offen | 10.10.2026 | Fachstelle Angehörigenarbeit PUK (Freigabe Etappe 1); vierte Prüfrunde: eine Prüfsitzung (Claude, hat nicht gebaut); Fachstelle (Freigabe Etappe 2a) | Etappe 1 fachlich freigegeben (Abschnitt «Fachliche Freigabe der Fachstelle»); alle 21 Fragen P4-F-1 bis P4-F-21 entschieden. Offen, bis die Seiten von Etappe 2 geprüft und freigegeben sind. Prüfrunde 2a: 2 wichtig, 3 optional; 10 Fragen P2a-F-1 bis P2a-F-10. Etappe 2a (`rolle`, `selbstfuersorge`, Einstiege auf `index`) fachlich freigegeben am 10.10.2026. |
-| W2 Gesamtkohärenz | offen | 10.10.2026 | vierte Prüfrunde | 1 wichtig, 3 optional; offen weiter F-W2-02, F-W2-03 (jetzt P4-F-18, P4-F-19). Prüfrunde 2a: 5 optional |
-| S Sprach-Review | offen | 10.10.2026 | vierte Prüfrunde | 6 optional; Lesetest je Abschnitt und Kennzahlen; abschliessbar erst nach W1 und W2. Prüfrunde 2a: 1 wichtig (Länge), 3 optional; 24 Kürzungsvorschläge |
-| Visualisierungs-Check | offen | 10.10.2026 | vierte Prüfrunde | 1 wichtig, 5 optional; Matrix 1–17 × 6 Figuren; seit 10.10.2026 alle sechs Figuren fachlich freigegeben (Fachstelle). Prüfrunde 2a: 1 wichtig, 3 optional; Matrix 1–17 × 2 neue Figuren. Etappe 2a: beide Abbildungen fachlich freigegeben (Fachstelle, 10.10.2026). |
-| Bedienung und Barrierefreiheit | offen | 10.10.2026 | vierte Prüfrunde, automatisiert | kein Befund; reale Screenreader-Läufe, Hardwaretastatur und Touch fehlen (nicht prüfbar) |
-| W3 Code-Review | offen | 10.10.2026 | vierte Prüfrunde: nur Stichprobe Technik und Zuständigkeit, kein volles W3 | Stichprobe ohne Befund; W3 erst nach Umsetzung von W2 und S |
+| W1 Fachliche Prüfung | offen | 10.10.2026 | Fachstelle Angehörigenarbeit PUK (Freigabe Etappe 1); vierte Prüfrunde: eine Prüfsitzung (Claude, hat nicht gebaut); Fachstelle (Freigabe Etappe 2a); Prüfrunde 2b: eine Prüfsitzung (Claude, hat nicht gebaut) | Etappe 1 fachlich freigegeben (Abschnitt «Fachliche Freigabe der Fachstelle»); alle 21 Fragen P4-F-1 bis P4-F-21 entschieden. Offen, bis die Seiten von Etappe 2 geprüft und freigegeben sind. Prüfrunde 2a: 2 wichtig, 3 optional; 10 Fragen P2a-F-1 bis P2a-F-10. Etappe 2a (`rolle`, `selbstfuersorge`, Einstiege auf `index`) fachlich freigegeben am 10.10.2026. Prüfrunde 2b (`kommunizieren`, `krise`, Einstieg auf `index`): 4 wichtig, 3 optional; 12 Fragen P2b-F-1 bis P2b-F-12. |
+| W2 Gesamtkohärenz | offen | 10.10.2026 | vierte Prüfrunde | 1 wichtig, 3 optional; offen weiter F-W2-02, F-W2-03 (jetzt P4-F-18, P4-F-19). Prüfrunde 2a: 5 optional. Prüfrunde 2b: 1 wichtig, 3 optional |
+| S Sprach-Review | offen | 10.10.2026 | vierte Prüfrunde | 6 optional; Lesetest je Abschnitt und Kennzahlen; abschliessbar erst nach W1 und W2. Prüfrunde 2a: 1 wichtig (Länge), 3 optional; 24 Kürzungsvorschläge. Prüfrunde 2b: 4 optional; Längenziel nachgerechnet und erreicht; 6 Kürzungsvorschläge |
+| Visualisierungs-Check | offen | 10.10.2026 | vierte Prüfrunde | 1 wichtig, 5 optional; Matrix 1–17 × 6 Figuren; seit 10.10.2026 alle sechs Figuren fachlich freigegeben (Fachstelle). Prüfrunde 2a: 1 wichtig, 3 optional; Matrix 1–17 × 2 neue Figuren. Etappe 2a: beide Abbildungen fachlich freigegeben (Fachstelle, 10.10.2026). Prüfrunde 2b: 1 optional; Matrix 1–17 für «Zwei Tassen» (`v-ko-tassen`), trägt, Freigabe ausstehend |
+| Bedienung und Barrierefreiheit | offen | 10.10.2026 | vierte Prüfrunde, automatisiert | kein Befund; reale Screenreader-Läufe, Hardwaretastatur und Touch fehlen (nicht prüfbar). Prüfrunde 2b: kein Befund (automatisiert) |
+| W3 Code-Review | offen | 10.10.2026 | vierte Prüfrunde: nur Stichprobe Technik und Zuständigkeit, kein volles W3 | Stichprobe ohne Befund; W3 erst nach Umsetzung von W2 und S. Prüfrunde 2b: Stichprobe Technik und Zuständigkeit ohne technischen Befund |
 | R1 Profil-Audit | offen | | | noch nicht geprüft |
 | R2 Visualisierung und Laienverständlichkeit | offen | | | noch nicht geprüft (Lesetest und Bildsprache der vierten Runde sind Vorarbeit, kein R2) |
 | R3 Freigabe-Audit | offen | | | noch nicht geprüft |
@@ -1178,6 +1178,572 @@ Mit Korrektur 1h gibt es 6 Figuren:
 - **Statustabelle:** Die Zeilen R1 bis R3 fehlen noch; die Prüfsitzung trägt sie ein.
 - **Profil (später):** P-6, P-9.
 - **Offen für Stufe 5:** Screenreader-Läufe, Hardwaretastatur und Touch.
+
+## Prüfrunde 2b (10.10.2026, Stand 26af566)
+
+**Geprüfter Stand:** Branch `borderline-umbau`, Commit `26af566` (Etappe 2b, `git log -1` beim Start). Geprüft sind die Seiten `kommunizieren` («Zugewandt und klar sprechen») und `krise` («Krisen begleiten») sowie auf `index` der Abschnitt `einstiege`. Etappe 1 und Etappe 2a sind von der Fachstelle freigegeben; sie dienen hier nur als Massstab für Begriffe, Ton, Verantwortung und Absicherungen. Die Prüfsitzung hat die Website nicht gebaut. Sie hat keine Inhalte und keinen Code geändert und committet nur diesen Bericht.
+
+**Vorgehen**
+
+- **Grundlagen gelesen:** aus `guidelines/` Ablauf (mit «Prüftiefe»), Fachliche Qualität, Gesamtkohärenz, Sprache und Ton, Visuelle Wissensvermittlung («Bildsprache», «Ein Bild, eine Idee»), Visualisierung umsetzen (Check 1–17), Pre-Release-Audits (R2 Teil 2 und 3); `README.md` («Zuständigkeit statt Krisenzugang», «Verweis im Text», «Kritische Information nie nur hinter …»); im Website-Ordner `BAUAUFTRAG-ETAPPE-2B.md`, `BAUAUFTRAG-ETAPPE-2A.md` (Abschnitt 2), die Selbstprüfung 2b, die Prüfrunde 2a, `UMBAUPLAN.md`, `site.config.json` und `abgleich/` (`README.md`, `kommunizieren.md`, `krise.md`; dazu die Zeilen mit Ort `krise` oder `kommunizieren` in den übrigen Tabellen).
+- **Bestand:** Branch `origin/borderline-bestand`, `bestand/borderline-angehoerige/texte/` (73 Dateien) und `INVENTAR.md`, mit `git show` ausgelesen. Ganz gelesen: `kommunizieren.md`, `unterstuetzen--krise.md`, `uebungen.md` (Rahmen und die Szenarien mit Sicherheits- oder Verantwortungsbezug) und die Handouts `zuhoeren-ohne-zustimmen`, `gespraeche-kippen`, `pause-statt-streit`, `wenn-worte-treffen`, `beispiel-dialog`, `spiegeln-statt-aufsaugen`, `krisenkommunikation`; dazu `quellen.md` für die Suizid-Quellen.
+- **Abgleich:** `abgleich/kommunizieren.md` (981 Zeilen) und `abgleich/krise.md` (313 Zeilen) per Skript in Zeilen zerlegt, nach Status und Grund gefiltert; alle Zeilen ausser «übernommen», «Bezeichnung» und Rahmen- oder Meta-Text von Hand gelesen.
+- **Rückwärtsprüfung:** Ein Skript der Prüfsitzung sucht für jeden Satz der zwei Seiten (523 Sätze, sichtbarer Text mit Vertiefungen) den ähnlichsten Satz im ganzen Bestand (Wortüberlappung). Die 70 Sätze mit der schwächsten Übereinstimmung sind von Hand gegen Bestand und Abgleich gelesen (Teil A3).
+- **Browser:** lokal `python3 -m http.server 8765` im Projektstamm, Chromium über Playwright. Bildschirmfotos der Abbildung bei 1280 und 360 px, je im Theme Standard und «kontrast» (vier Fotos, angesehen, nicht committet). Die Vorschau auf Netlify war aus dieser Umgebung nicht erreichbar (Teil «Nicht geprüft»).
+- **Skripte der bauenden Sitzung:** selbst ausgeführt, Werte nachgerechnet (Teil F). Dazu eigene Skripte für Kennzahlen, Links, Überlauf, Tastatur, Kontrast und die Lage der Verweise im Text.
+- **Auftrag:** Der Prüfauftrag im Chat bricht in Teil C, Punkt 2 («Länge: Die bauende Sitzung meldet im …») ab. Teil C2 ist deshalb wie in Prüfrunde 2a ausgefüllt (Zahlen nachrechnen, Länge aus Sicht der Prüfperson, Kürzungsvorschläge ohne Aussageverlust), die Teile D bis F ebenfalls wie in Prüfrunde 2a.
+
+**Ergebnis in Kürze**
+
+- Die zwei Seiten übertragen den Bestand weitgehend treu. In 48 verglichenen Aussagen ist keine Sicherheitsaussage ersatzlos entfallen, und es gibt keine neue absolute Aussage über die betroffene Person. Die Kennzahlen der bauenden Sitzung stimmen auf das Wort (`kommunizieren` 2458, `krise` 1507 Wörter im Lesefluss).
+- Auf `krise` braucht die Fachstelle vier Entscheide zu Schutz und Hilfe, bevor der Wortlaut freigegeben werden kann:
+  - Für Hilfe stehen drei Wörter («Notruf», «Leitstelle», «Rettungsdienst»), und zwei Abschnitte mit Handlungsanleitungen für akute Lagen haben keinen Verweis im Text (`danach`, `sagen`; P2b-F-1).
+  - Der Fall «Sie können die Dringlichkeit nicht sicher einschätzen» ist schwächer abgesichert als im Bestand und auf den freigegebenen Seiten (P2b-F-2).
+  - «Was Sie in einer Krise eher vermeiden» schwächt «sich selbst in Gefahr zu bringen» zu «hilft es eher nicht» ab (P2b-F-3).
+  - Der Satz «Direkt nachzufragen, löst nach heutigem Wissensstand keine suizidale Handlung aus.» steht ohne seine Quelle (P2b-F-4).
+- Auf `kommunizieren` widersprechen die Begriffe «Stabil / Warnstufe / Eskalation» der eigenen Einleitung («keine festen Stufen») und der freigegebenen Anspannungskurve, auf die der Abschnitt verweist (P2b-F-5). Die Seite erreicht das Längenziel knapp; Länge entsteht vor allem durch sieben ähnliche Pausen- und Ausstiegssätze.
+- Die Abbildung «Zwei Tassen» trägt. Technik, Zuständigkeit (keine Nummer, kein `tel:`), Bedienung, Kontrast und Links sind ohne Befund.
+
+### Teil A · W1 Fachliche Vorprüfung
+
+#### A1 · 48 Aussagen gegen den Bestand
+
+Je Seite 24 Aussagen. Ausgewählt nach Auftrag: Suizid und Selbstverletzung, Medikamente und gefährliche Gegenstände, Bleiben bei der Person, Schutz bei Bedrohung, Kinder, Nachsorge und Behandlungsteam, Zustimmung (Krisenplan), Aussagen über die betroffene Person, Verantwortung und Schuld, Validierung, Quellen. Nr. = Zeile im Abgleich (k = `abgleich/kommunizieren.md`, c = `abgleich/krise.md`, g = `grenzen.md`, v = `verstehen.md`). Bestandsdateien in `texte/`; «Handout x» = `materialien--text--x.md`.
+
+**`kommunizieren`**
+
+| # | Nr. | Bestand (Zitat, Datei) | Neue Fassung (Zitat, Seite › Abschnitt) | Urteil |
+| --- | --- | --- | --- | --- |
+| 1 | k15 | «Bei Bedrohung oder Gewalt geht Schutz vor Gesprächsführung.» (`kommunizieren.md`, Liste unter dem Bild) | wörtlich (`zuhoeren`, Liste) | gleichbedeutend |
+| 2 | k203, k204 | «Sie sind nicht allein für den Gesprächsverlauf verantwortlich. Ein hilfreicher Satz kann unterstützen, aber die Reaktion des Gegenübers nicht garantieren.» (`kommunizieren.md`, «Zwei Materialien») | wörtlich, «der anderen Person» (`zuhoeren`) | gleichbedeutend; «nicht allein» bei der Beziehung, wie im Bauauftrag 2b, Abschnitt 2b |
+| 3 | k150, k719 | «Bei Bedrohung oder akuter Gefahr: Soforthilfe.» (`kommunizieren.md`); «Bei Bedrohung oder Gewalt: Beenden Sie das Gespräch, schaffen Sie Abstand und bringen Sie sich in Sicherheit.» (Handout `gespraeche-kippen`) | «Bei Bedrohung oder Gewalt beenden Sie das Gespräch, schaffen Abstand und bringen sich in Sicherheit.», direkt danach der Verweis im Text (`kippen`) | gleichbedeutend; der Link auf `/soforthilfe` ist durch den Verweis im Text ersetzt |
+| 4 | k798 | «Sie müssen die Dringlichkeit nicht allein beurteilen und tragen nicht allein die Verantwortung für Überwachung oder Sicherung.» (Handout `pause-statt-streit`) | «Sie müssen die Dringlichkeit nicht allein beurteilen oder bewältigen.» (`kippen`, Wortlaut Handout `gespraeche-kippen`) | gleichbedeutend über `krise` › `vermeiden` («… die Person ohne professionelle Hilfe zu überwachen»); auf `kommunizieren` fehlt «Überwachung oder Sicherung», die Bemerkung nennt das |
+| 5 | k865–k868 | «Eine Aussage wie «Wenn du gehst, bringe ich mich um» gehört nicht in eine Liste von Vorwürfen. Nehmen Sie sie ernst und holen Sie eine professionelle Einschätzung oder Hilfe dazu. Versuchen Sie nicht, Motiv oder Gefährdung allein zu beurteilen; nutzen Sie bei akuter Gefahr die separat ausgewiesenen Krisen- und Notfallwege. Ihre eigene Sicherheit bleibt wichtig.» (Handout `wenn-worte-treffen`) | gleich, ohne den Teilsatz zu den Notfallwegen; danach der Verweis im Text, «Ihre eigene Sicherheit bleibt wichtig.» und der Verweissatz auf `krise#suizid` (`worte`, «Wenn Suizid angesprochen wird») | gleichbedeutend; sichtbar unter eigener Zwischenüberschrift |
+| 6 | k837 | «Die Sätze sind Beispiele und nicht typisch für alle Menschen mit Borderline.» (Handout `wenn-worte-treffen`) | «Die folgenden Sätze sind Beispiele. Sie sind nicht typisch für alle Menschen mit Borderline.» (`worte`) | gleichbedeutend; Absicherung über die Person gehalten |
+| 7 | k836, k872 | «Die Beispiele zeigen mögliche Antworten, ohne festzulegen, ob eine Aussage stimmt oder welches Motiv dahintersteht.»; «Eine Aussage ist keine verlässliche Auskunft über ein verborgenes Motiv.» (Handout `wenn-worte-treffen`) | «Eine Aussage ist keine verlässliche Auskunft über ein verborgenes Motiv.» (`worte`) | gleichbedeutend; «ob eine Aussage stimmt» trägt «… die Aussage anders beurteilen» im selben Absatz |
+| 8 | k857 | «Sie müssen die Aussage weder widerlegen noch als Diagnosemerkmal deuten.» (Handout `wenn-worte-treffen`) | «… noch als Merkmal der Diagnose deuten.» (`worte`) | gleichbedeutend |
+| 9 | k650, k652 | «Sie müssen keine pauschale Schuldzuweisung übernehmen. Wenn Sie selbst etwas Verletzendes gesagt oder getan haben, können Sie dafür Verantwortung übernehmen und sich entschuldigen. Das bedeutet nicht, für die Erkrankung oder Genesung der anderen Person verantwortlich zu sein.» (Handout `zuhoeren-ohne-zustimmen`) | gleich, mit den zwei Beispielsätzen des Handouts (`anerkennen`) | gleichbedeutend; passt zu `verstehen` und `rolle` (keine Verantwortung für Erkrankung und Genesung, ohne «allein») |
+| 10 | k23 | «Validierung bedeutet, dass Sie das Erleben Ihres Gegenübers als nachvollziehbar behandeln, ohne jeden Vorwurf, jede Interpretation oder jedes Verhalten zu bestätigen.» (`kommunizieren.md`) | «Validierung heisst: Sie behandeln das Erleben der anderen Person als nachvollziehbar. Dafür müssen Sie nicht jeden Vorwurf, jede Deutung oder jedes Verhalten bestätigen.» (`anerkennen`) | gleichbedeutend |
+| 11 | k27–k29 | «Die sechs Stufen lehnen sich an Linehans Validierungsstufen der Dialektisch-Behavioralen Therapie (DBT) an. Linehan beschreibt fünf aufeinander aufbauende Formen und als sechste Form radikale Echtheit. Hier sind sie für Angehörige vereinfacht.» (`kommunizieren.md`, Grundlage Linehan 1997) | gleich, «die Validierungsstufen von Linehan aus der …» (`anerkennen`); Quellenzeile «Linehan (1997), «Validation and psychotherapy»; Fruzzetti (2006); Mason und Kreger (2014)» | gleichbedeutend mit dem Bestand. Die Zuschreibung selbst konnte die Prüfsitzung nicht an der Quelle prüfen: Sekundärquellen beschreiben sechs aufeinander aufbauende Ebenen mit der radikalen Echtheit als höchster; ob Linehan die sechste ausdrücklich als Form neben fünf aufbauenden beschreibt, ist im Kapitel nachzulesen (P2b-F-9) |
+| 12 | k25 | «Gründe, Wirkung und passende Reaktion unterscheiden sich jedoch von Person zu Person.» (`kommunizieren.md`) | «Was hilft und wie jemand reagiert, ist von Person zu Person verschieden.» (`anerkennen`) | gleichbedeutend; «Gründe» entfällt, die Bemerkung nennt es nicht (P2b-W1-7) |
+| 13 | k26 | «Validierung ist ein mögliches Gesprächsangebot, kein Mittel, um die andere Person zu beruhigen oder eine spätere Klärung zu erzwingen.» (`kommunizieren.md`) | «Anerkennen ist ein mögliches Angebot im Gespräch. Es ist kein Mittel, um …» (`anerkennen`) | gleichbedeutend |
+| 14 | k663, k667 | «Sie können Gefühle anerkennen, ohne die Interpretation zu übernehmen.»; «Sie können sagen, dass der Schmerz real ist, ohne automatisch die ganze Erklärung zu teilen oder pauschale Schuld zu übernehmen.» (Handout `zuhoeren-ohne-zustimmen`) | Kernaussage und Kurztext von Abbildung 1 im Wortlaut des Auftrags («ein Gefühl», «Deutung», «echt», ohne «automatisch») | gleichbedeutend |
+| 15 | g679, g683 | «Aus einer Beobachtung wird die Annahme, Sie müssten das Erleben oder die Situation der anderen Person lösen.»; «Das kann Druck, Schuldgefühle oder Erschöpfung verstärken. Die Wirkung ist individuell.» (Handout `spiegeln-statt-aufsaugen`) | «Übernehmen hiesse: Aus einer Beobachtung wird die Annahme, …» und die zwei Sätze wörtlich (`anerkennen`) | gleichbedeutend |
+| 16 | k131–k134 | «In einem angespannten Moment dürfen Sie Sicherheit herstellen, Abstand nehmen oder eine Pause vorschlagen. Das verpflichtet Sie nicht, Forderungen zu erfüllen, verletzendes Verhalten hinzunehmen oder das Gegenüber zu beruhigen. … Ob ein Muster bestehen bleibt, hängt von vielen Faktoren ab; Deeskalation macht Sie dafür nicht verantwortlich.» (`kommunizieren.md`) | gleich; letzter Satz «Dafür sind Sie nicht verantwortlich, auch wenn Sie versuchen, die Lage zu beruhigen.» (`moment`) | gleichbedeutend (Frage 8 der Selbstprüfung) |
+| 17 | k764, k765 | «Die Begriffe «stabil», «Warnstufe» und «Eskalation» sind eine redaktionelle Orientierung. Sie beschreiben keine verbindlichen Stufen und erlauben keine sichere Beurteilung des inneren Zustands einer Person.» (Handout `pause-statt-streit`) | «Manche Angehörige achten im Gespräch auf drei Lagen. Die Begriffe sind eine Orientierung, keine festen Stufen. Sie erlauben keine sichere Beurteilung, wie es einem Menschen innerlich geht.» und danach die Begriffe «Stabil», «Warnstufe», «Eskalation» (`moment`) | **Bedeutung leicht verschoben:** Aus der «redaktionellen Orientierung» wird eine Praxis («Manche Angehörige achten …»); die Absicherung «keine festen Stufen» steht direkt vor «Warnstufe» (P2b-F-5) |
+| 18 | k786, k787 | «Ein respektvolles Gespräch ist in diesem Moment nicht möglich. Jetzt stoppen und Abstand schaffen.» (Handout `pause-statt-streit`, «Eskalation») | wörtlich bzw. «Stoppen Sie, und schaffen Sie Abstand:» (`moment`) | gleichbedeutend |
+| 19 | k157 | «Lassen Sie sich korrigieren; die Gefühle und Motive des Gegenübers sind nicht von aussen sicher erkennbar.» (`kommunizieren.md`) | zwei Sätze, «der anderen Person» (`kippen`, Schritt 2) | gleichbedeutend |
+| 20 | k176, k178 | «Prüfen Sie konkrete Kritik, statt jeden Vorwurf als Symptom oder Verzerrung zu verstehen.»; «Rückzug kann verschiedene Gründe haben. … Wenn Sie sich um die Sicherheit sorgen, holen Sie professionelle Einschätzung.» (`kommunizieren.md`, «Typische schwierige Situationen», im Bestand ein Akkordeon) | wörtlich, sichtbar im Lesefluss (`beispiele`, Begriffsliste) | gleichbedeutend; der Sicherheitssatz steht jetzt sichtbar statt im Akkordeon |
+| 21 | k265, r149 | «Die Rollen sind nicht aus einer Diagnose ableitbar; die Sprecherposition wechselt zwischen den Alltagsszenarien.» (`uebungen.md`) | «Namen und «Person A» oder «Person B» bezeichnen keine festen Rollen und lassen sich nicht aus einer Diagnose ableiten.» (`beispiele`) | gleichbedeutend |
+| 22 | g214 | «Finanzielle Grenzen sind besonders schwer, weil sie sich anfühlen wie «ich lasse dich fallen».» (`grenzen.md`) | «Grenzen beim Geld sind oft besonders schwer, weil sie sich anfühlen können wie «ich lasse dich fallen».» (`beispiele`) | gleichbedeutend mit zusätzlicher Absicherung; der Satz betrifft das Erleben der Angehörigen und unterstellt so kein Gefühl (Frage 7) |
+| 23 | k194 | «Bei erwachsenen Kindern hilft es, Selbstbestimmung und Verantwortung aller Beteiligten zu beachten; bei Minderjährigen gelten andere Schutz- und Sorgepflichten.» (`kommunizieren.md`, Akkordeon) | zwei Sätze (`rollen`, Vertiefung «Als Elternteil») | gleichbedeutend; im Bestand ebenfalls in einem Akkordeon; kein akuter Sicherheitshinweis |
+| 24 | k198 | «Damit übernehmen Sie nicht die Aufgabe, die Gefühle, Behandlung oder Genesung Ihres Elternteils zu steuern.» (`kommunizieren.md`) | wörtlich mit Artikeln (`rollen`, Vertiefung «Als erwachsenes Kind») | gleichbedeutend; passt zu `rolle` |
+
+**`krise`**
+
+| # | Nr. | Bestand (Zitat, Datei) | Neue Fassung (Zitat, Seite › Abschnitt) | Urteil |
+| --- | --- | --- | --- | --- |
+| 25 | c2 | «Bei akuter Gefahr oder wenn Sie die Dringlichkeit nicht sicher einschätzen können, wenden Sie sich an den zuständigen Notfalldienst.» (`unterstuetzen--krise.md`, Hinweis oben) | «Bei unmittelbarer Gefahr holen Sie sofort Hilfe und schützen sich selbst.» und der Verweis im Text; für die Unsicherheit «Bei Unsicherheit ist eine professionelle Einschätzung sinnvoll.» (`belastung`, vier Absätze tiefer) | **Absicherung schwächer:** Im Bestand führt «Dringlichkeit nicht sicher einschätzen» zum Notfalldienst, neu nur zu «professionelle Einschätzung sinnvoll». Die freigegebenen Seiten behandeln Unsicherheit wie Gefahr: «Bei akuter Gefahr oder Unsicherheit: Bringen Sie sich in Sicherheit und holen Sie Hilfe.» (`grenzen` › `gewalt`), «Wenn Sie sich nicht mehr sicher fühlen oder nicht einschätzen können, wie dringend es ist, wenden Sie sich an professionelle Hilfe.» (`selbstfuersorge` › `warnsignale`) (P2b-F-2) |
+| 26 | c1 | «Die Fachstelle Angehörigenarbeit bietet Beratung und Orientierung, aber keine Krisenintervention.» (`unterstuetzen--krise.md`, Hinweis oben) | wörtlich (`belastung`, erster Absatz) | gleichbedeutend (Frage 9, P2b-F-6) |
+| 27 | c11 | «Akute Hilfe ist jederzeit direkt erreichbar; diese Seite ist keine notwendige Vorstufe.» | «Sie können jederzeit direkt Hilfe holen. Diese Seite ist keine notwendige Vorstufe.» (`belastung`) | gleichbedeutend |
+| 28 | c35–c38, c63, c64 | «Die Bereiche sind keine Sicherheitsbewertung. Die Einteilung zeigt nur, wie weit eigene Mittel gerade tragen. Sie kann nicht beurteilen, ob eine Situation sicher ist. … Kein Bereich bedeutet automatisch «sicher» oder «gefährlich». Die Einteilung entscheidet weder über Behandlung noch über die Dringlichkeit von Hilfe.» | wörtlich, sichtbar, Bereiche als Begriffsliste ohne Nummern (`belastung`) | gleichbedeutend; entspricht dem Entscheid «ausdrücklich ohne Sicherheitsbewertung» |
+| 29 | c68, c69 | «Bei Unsicherheit ist professionelle Einschätzung sinnvoll; ein unbekannter Plan bedeutet keine Sicherheit.» | zwei Sätze (`belastung`) | gleichbedeutend; «Ein unbekannter Plan bedeutet keine Sicherheit.» ist für Laien schwer zu verstehen (P2b-S-3) |
+| 30 | c76 | «Sind Sie und Ihr Angehöriger sicher? Gibt es gefährliche Gegenstände in der Nähe?» | «Sind Sie und die betroffene Person sicher? …» (`waehrend`) | gleichbedeutend |
+| 31 | c78–c80 | «Begrenzen Sie den Zugang zu Medikamenten oder gefährlichen Gegenständen nur ohne Eigengefährdung, möglichst gemeinsam und nach professioneller Anleitung. Nehmen Sie nichts aus der Hand oder gegen Widerstand weg; greifen Sie nicht körperlich ein. Bei unmittelbarer Gefahr holen Sie Hilfe über den Notruf.» | wörtlich, sichtbar, direkt danach der Verweis im Text (`waehrend`) | gleichbedeutend (Frage 1; zum Wort «Notruf» P2b-F-1) |
+| 32 | c83 | «Sie dürfen selbst erschrocken sein und müssen keine Beruhigung erreichen.» | wörtlich (`waehrend`) | gleichbedeutend |
+| 33 | c92, c93 | «Wenn die Person das möchte, können Sie an bereits mit Fachpersonen vereinbarte Strategien erinnern. Drängen Sie keine Übung auf; bei Gefahr geht Hilfeholen vor.» | gleich, zwei Sätze (`waehrend`) | gleichbedeutend |
+| 34 | c105, c106 | «Bieten Sie nur Nähe oder Erreichbarkeit an, die für Sie möglich und sicher ist. Bei Bedrohung bringen Sie sich in Sicherheit und informieren die Leitstelle.» | wörtlich (`sagen`, Begriffsliste «Da sein») | gleichbedeutend im Inhalt. «Leitstelle» ist ein Fachwort der Rettungsdienste; ein Verweis im Text fehlt im ganzen Abschnitt (P2b-F-1) |
+| 35 | c279, c283 | «Bei Bedrohung oder Gewalt gehe ich auf Abstand und hole Hilfe.»; «Bei akuter Gefahr oder wenn Sie die Dringlichkeit nicht sicher einschätzen können, finden Sie passende Anlaufstellen unter «Akute Hilfe und Notfallkontakte».» (Handout `krisenkommunikation`) | «Bei Bedrohung oder Gewalt gehen Sie auf Abstand und holen Hilfe.» (`sagen`); der zweite Satz entfällt (Profil) | erster Satz gleichbedeutend (aus der Ich-Form gelöst); für den zweiten gibt es in `sagen` keinen Verweis im Text (P2b-F-1) |
+| 36 | c117, c118 | «Bei Suizidgedanken direkt ansprechen» mit «Ich mache mir Sorgen um dich. Denkst du gerade daran, dir das Leben zu nehmen?» | Handlungsanleitung im Wortlaut von `verstehen` («Wenn Sie sich konkret sorgen, fragen Sie ruhig und direkt, ob die Person Suizidgedanken oder einen Plan hat. Das kann helfen, die Lage zu verstehen.») mit dem Beispielsatz des Bestands, direkt danach der Verweis im Text (`suizid`) | gleichbedeutend; gleicher Wortlaut wie `verstehen`; «oder einen Plan» kommt aus `verstehen` |
+| 37 | v129 | «Solche Fragen lösen nach heutigem Wissensstand keine suizidale Handlung aus; …» (`verstehen.md`), belegt mit WHO, Suicide: Questions and answers (2026) (`quellen.md`) | «Direkt nachzufragen, löst nach heutigem Wissensstand keine suizidale Handlung aus.» (`suizid`); Quellenzeile nur «Dazzi et al. (2014) …; NICE NG225 (2022) …» | Wortlaut wie `verstehen`. **Quelle fehlt:** Dazzi et al. betrifft Suizidgedanken, nicht Handlungen; auf `verstehen` steht dafür WHO (2026) (P2b-F-4) |
+| 38 | c120–c122 | «Die von Dazzi et al. ausgewerteten Studien zeigten keinen statistisch signifikanten Anstieg von Suizidgedanken durch direktes Fragen. Das garantiert keine bestimmte Wirkung im einzelnen Gespräch. Holen Sie bei Sorge professionelle Einschätzung; Sie müssen nicht auf vollständige Antworten warten.» | wörtlich, Semikolon als Punkt (`suizid`) | gleichbedeutend (Frage 2) |
+| 39 | c98–c101, c125 | «Selbstverletzung kann ohne Todesabsicht erfolgen, schliesst Suizidgedanken aber nicht aus. Auch eine klein wirkende Verletzung erlaubt keine Entwarnung. Fragen Sie ausdrücklich nach Suizidgedanken; … Die Antworten ersetzen keine fachliche Beurteilung.»; Quellenerläuterung NICE: «Aufgaben der Fachpersonen werden Angehörigen nicht übertragen.» | wörtlich, aus «Was Sie sagen können» nach `suizid` verschoben; dazu «Diese Beurteilung ist Aufgabe von Fachpersonen, nicht von Angehörigen.» | gleichbedeutend; Ort passt (Frage 11) |
+| 40 | (neu, Wortlaut v) | auf der alten Krisenseite kein gleicher Satz; ähnlich «Bieten Sie nur Nähe oder Erreichbarkeit an, die für Sie möglich und sicher ist.» (c105) | «Bleiben Sie bei der Person nur, soweit dies für Sie sicher möglich ist.» nach dem Verweis im Text (`suizid`) | gleichbedeutend mit c105; Wortlaut und Reihenfolge wie `verstehen` (Frage 3) |
+| 41 | c127–c132 | «Was Sie in der Krise vermeiden sollten» mit «✗ Versuchen, die Gefahr allein zu beurteilen oder die Person ohne professionelle Hilfe zu überwachen», «✗ Sich selbst in Gefahr bringen» | «Was Sie in einer Krise eher vermeiden» und «In einer Krise hilft es eher nicht, … die Gefahr allein beurteilen zu wollen oder die Person ohne professionelle Hilfe zu überwachen, … sich selbst in Gefahr zu bringen.» (`vermeiden`) | **Bedeutung verschoben:** «eher» und «hilft eher nicht» schwächen zwei Schutzhinweise ab («Dringende Hinweise klar und direkt», Leitlinie Sprache und Ton, 5) (P2b-F-3) |
+| 42 | c138, c139 | «Ein ruhigerer Eindruck oder verstrichene Zeit beweist keine Sicherheit. Bei erneuter Sorge holen Sie professionelle Einschätzung; bei möglicher unmittelbarer Lebensgefahr rufen Sie den Rettungsdienst.» | wörtlich, zwei Sätze, ohne Verweis im Text (`danach`) | gleichbedeutend; Verweis im Text fehlt (P2b-F-1) |
+| 43 | c190 | «Bei erneuten Sorgen um die Sicherheit sofort Hilfe holen, unabhängig vom Zeitpunkt» («Drei mögliche Anliegen») | zusammengeführt mit Nr. 42 | **teilweise:** «sofort» steht nur noch bei Lebensgefahr; «unabhängig vom Zeitpunkt» trägt «Nötige medizinische oder psychiatrische Hilfe hat keine Wartefrist.» (c148, `danach`). Vertretbar; die Bemerkung nennt das fehlende «sofort» nicht (P2b-W1-7) |
+| 44 | c149 | «Mit dem Behandlungsteam klären, welche fachliche Nachsorge nötig ist und welche Rolle Sie freiwillig übernehmen können» (Liste «Für die betroffene Person») | «Welche fachliche Nachsorge nötig ist, klärt die betroffene Person mit dem Behandlungsteam. Dabei kann auch geklärt werden, welche Rolle Sie freiwillig übernehmen können.» (`danach`) | gleichbedeutend, Subjekt richtig gesetzt (Frage 5). Uneinheitlich bleiben c188 «… werden mit dem Behandlungsteam geklärt.» und c204 «mit dem Behandlungsteam klären, …» (Vertiefungen) (P2b-F-7) |
+| 45 | v339 | «Angehörige werden nur mit Zustimmung der betroffenen Person in einen Krisenplan einbezogen; beide Seiten dürfen ihre Möglichkeiten und Grenzen benennen.» (Handout `zustands-landkarte`) | zwei Sätze (`danach`, Vertiefung «Früh erkennen und Absprachen treffen») | gleichbedeutend; Schweigepflicht richtig; als Planungsinhalt in einer Vertiefung vertretbar, kein akuter Hinweis |
+| 46 | c141 | «Nach einer Krise können Scham, Rückzug, Erleichterung oder andere Gefühle auftreten.» | «… Scham, Reue, Erleichterung, Ärger, Rückzug oder ganz andere Reaktionen …» (`danach`, Wortlaut `rolle` › `nach-konflikten`) | gleichbedeutend; Wortlaut der freigegebenen Seite |
+| 47 | c212, c213 | «Dann: Bei akuter Gefahr gilt der Notfallweg. Sonst kann jede beteiligte Person eigene Beratung nutzen; weitere Behandlungsschritte klärt die betroffene Person mit dem Fachteam.» | «Bei akuter Gefahr schützen Sie sich und holen sofort Hilfe.», Verweis im Text, dann der Rest wörtlich (`bleibt`) | gleichbedeutend; «Fachteam» neben viermal «Behandlungsteam» (P2b-W2-4) |
+| 48 | c215–c220 | «Erwachsene organisieren Hilfe und Betreuung. Kinder müssen weder Streit schlichten noch Medikamente kontrollieren oder einen Elternteil bewachen. Vereinbaren Sie, … wer erreichbar ist, wenn die erste Person ausfällt. Besprechen Sie den Plan in einfachen Worten mit dem Kind. Es darf … seinen Alltag mit Schule, Spiel und Freunden behalten. Bei akuter Gefahr holen Erwachsene sofort Hilfe.» | Wortlaut von `grenzen` › `gewalt` («… wer einspringt, wenn diese ausfällt», ohne «mit dem Kind» und ohne «mit Schule, Spiel und Freunden»), dann der Verweissatz auf `rolle#kinder` (`bleibt`) | gleichbedeutend; Wortlaut der freigegebenen Seite; «sofort» bei akuter Gefahr steht |
+
+**Bilanz:** 43 gleichbedeutend, davon 5 mit offener Frage zu Wort, Ort oder fehlendem Verweis im Text (Nr. 26, 34, 35, 42, 47). Bei 3 ist die Bedeutung verschoben oder eine Absicherung schwächer (Nr. 17, 25, 41). Bei 1 fehlt die Quelle (Nr. 37). 1 trägt nur teilweise (Nr. 43). Keine Aussage ist neu ohne Grundlage. Keine Sicherheitsaussage ist ersatzlos entfallen; alle Schutzhinweise stehen im Lesefluss.
+
+#### A2 · 32 Zeilen des Abgleichs mit Status «entfällt», «zusammengeführt» oder «verschoben»
+
+Davon 13 Zeilen «entfällt: ersetzt durch Beispiele», ausgewählt nach Schutz, Sicherheit und Verantwortung (Suche nach diesen Wörtern in allen 303 Zeilen dieses Grundes: 46 Treffer, die übrigen sind Rahmen und Bedienung der Übungen).
+
+| Nr. | Status | Bestand (Kern) | Trägt die neue Fassung? Ist «entfällt» begründet? |
+| --- | --- | --- | --- |
+| k269 | entfällt: Beispiele | «Diese Kommunikationsübung nimmt keine Risikoeinschätzung vor.» | begründet; die Seite schätzt keine Risiken ein, Sicherheit über die Verweise im Text in `kippen` und `worte` |
+| k279 | entfällt: Beispiele | «Grenzen und Sicherheit benennen» (Aufbau der Technik) | begründet; getragen von «Bei Bedrohung oder Gewalt geht Schutz vor Gesprächsführung.» (`zuhoeren`) und `kippen` |
+| k284 | entfällt: Beispiele | «Ich merke, dass ich gerade zu aufgewühlt bin, um aufmerksam zuzuhören. Ich mache jetzt eine Pause …» | begründet; getragen von «Wenn es Ihnen selbst zu viel wird, helfen eher Abstand oder Unterstützung als weiteres Spiegeln.» (`anerkennen`) |
+| k291 | entfällt: Beispiele | «Zuhören bedeutet keine unbegrenzte Verfügbarkeit und keine Zustimmung zu jedem Vorwurf.» | trägt: «… muss keine ständige Verfügbarkeit versprechen» (`beispiele`), «… ohne einer Aussage oder Forderung zuzustimmen» (`zuhoeren`) |
+| k294 | entfällt: Beispiele | «Die andere Person darf noch nicht antworten wollen.» | trägt sinngemäss: «Es braucht keine sofortige Entscheidung.» (`beispiele`); `rolle` › `nach-konflikten`: «Du musst jetzt nicht antworten.» |
+| k344 | entfällt: Beispiele | «Sie übernehmen Ihren Anteil an der unklaren Absprache, ohne die gesamte Verantwortung für den Abend zu übernehmen.» | trägt: «Ein Missverständnis ist nicht automatisch die Schuld einer Person. Beide dürfen ihren Anteil benennen …» (`beispiele`); die neue Fassung vermeidet «gesamte Verantwortung» (vgl. P2a-F-1) |
+| k358 | entfällt: Beispiele | «Zuhören verpflichtet Sie nicht, den ursprünglichen Plan nachzuholen.» | trägt: Robins zweite Antwort und «… eine gemeinsame Aktivität ablehnen» (`beispiele`) |
+| k375 | entfällt: Beispiele | «Eine Grenze muss nicht beiden gefallen, um ausgesprochen werden zu dürfen.» | trägt sinngemäss: «Eine Grenze braucht keine vorherige Einigung über den Konflikt.» (`kippen`) |
+| k408 | entfällt: Beispiele | «Eine Bitte ist keine Verpflichtung für die andere Person.» (DEAR) | trägt sinngemäss: `rolle` «Die betroffene Person darf ein Angebot annehmen, verändern oder ablehnen.» |
+| k421 | entfällt: Beispiele | «Sie können die angekündigte Grenze selbst umsetzen und verwenden sie nicht als Strafe.» | trägt: `grenzen` «Eine Grenze ist keine Strafe und kein Liebesentzug.» |
+| k569 | entfällt: Beispiele | «Verantwortung für den eigenen Kommentar bedeutet nicht, jedes weitere Urteil über sich übernehmen zu müssen.» | trägt: «Eine pauschale Schuldzuweisung müssen Sie nicht übernehmen …» (`anerkennen`) |
+| k572 | entfällt: Beispiele | «Eine Entschuldigung schafft keinen Anspruch auf Vergebung.» | **steht nirgends.** Die Verantwortung für eigenes Verhalten trägt `anerkennen`; die Nuance, dass eine Entschuldigung keinen Anspruch auf Vergebung schafft, entfällt mit den Übungen. Begründet durch den Entscheid; keine Schutz- oder Sicherheitsaussage, deshalb kein Prüfbedarf |
+| k596 | entfällt: Beispiele | «Sie brauchen eine Pause und nutzen sie nicht, um die Verantwortung für den Kommentar abzuweisen.» | trägt: «Auch wer verletzend war, kann später Verantwortung übernehmen …» (`moment`) |
+| k8 | entfällt | Link «Einordnung und Grenzen des Modells» | begründet (Seite entfällt); Einordnung im Text («keine Pflichtfolge …») |
+| k61 | entfällt (Kürzung) | «Du hast gesagt, dass du dich heute allein gelassen gefühlt hast.» | begründet; gleiche Aussage im Beispiel-Dialog von Stufe 2 |
+| k720 | entfällt | «Bei Sorgen um Sicherheit oder Unsicherheit finden Sie passende Anlaufstellen unter «Akute Hilfe und Notfallkontakte».» (Handout `gespraeche-kippen`) | begründet (Profil); Verweis im Text in `kippen` nach der Handlungsanleitung |
+| k726 | zusammengeführt | «… entscheide später, ob und wann ich wieder ansprechbar bin.» | trägt; in der Fassung («Nächster Schritt») fehlt «und wann», die Bemerkung nennt es nicht (P2b-W1-7) |
+| k792, k793 | zusammengeführt | Kernaussage des Handouts: «Ich stoppe jetzt. Ich darf ein Gespräch unterbrechen oder beenden, wenn ich eine Pause oder Abstand brauche.» | trägt: «Sie dürfen auch vorher eine Pause machen oder das Gespräch beenden.» (`moment`, «Stabil») und der Kopf («… Pausen machen und Grenzen setzen»); als Kernaussage nicht mehr hervorgehoben |
+| k798 | zusammengeführt | «… tragen nicht allein die Verantwortung für Überwachung oder Sicherung.» | teilweise, siehe A1 Nr. 4 |
+| c2 | zusammengeführt | Hinweis oben: akute Gefahr oder Unsicherheit über die Dringlichkeit → Notfalldienst | **Absicherung schwächer**, siehe A1 Nr. 25 |
+| c10 | zusammengeführt | «Sie können Schutz und professionelle Unterstützung priorisieren.» | trägt: «Sicherheit hat Vorrang.» (`waehrend`) |
+| c65 | zusammengeführt | «Diese Einteilung ersetzt keine professionelle Krisenberatung.» | trägt: «Diese Seite ersetzt keine professionelle Krisenberatung.» (`belastung`) |
+| c66 | entfällt | «… finden Sie passende Anlaufstellen unabhängig von der ausgewählten Situation unter …» | begründet (Profil); Verweis im Text in `belastung` |
+| c135 | entfällt | «Die akute Krise ist vorbei – aber die innere Landschaft braucht Zeit.» | begründet (Vorschautext, Bild entfällt); getragen von «Krisen verlaufen unterschiedlich.» und «Vertrauen hat keinen festen Zeitplan.» |
+| c150 | verschoben (Vertiefung) | «Wenn beide möchten: Was wurde vor der Krise bemerkt, was hat geholfen und wo braucht es zusätzliche Unterstützung?» | trägt in zwei Vertiefungen («Drei mögliche Anliegen», «Früh erkennen …») |
+| c182 | verschoben (Vertiefung) | «Dringende Hilfe kann zu jedem Zeitpunkt nötig sein; …» | trägt im Lesefluss: «Nötige medizinische oder psychiatrische Hilfe hat keine Wartefrist.» |
+| c190 | zusammengeführt | «Bei erneuten Sorgen um die Sicherheit sofort Hilfe holen, unabhängig vom Zeitpunkt» | teilweise, siehe A1 Nr. 43 |
+| c221 | zusammengeführt | Link «Erklärung und Betreuungsplan für Kinder» | trägt: Verweissatz auf `rolle#kinder` |
+| c222, c223 | entfällt | Einleitung und Link «Situations-Wegweiser» | begründet (Profil, kein Krisenzugang) |
+| c239 | zusammengeführt | «Grundlagen zum Nachlesen: … Schutz bei Bedrohung und Gewalt …» | trägt: Verweissätze auf `grenzen#gewalt` und `rolle#kinder` |
+| c268–c274 | zusammengeführt | Grenzsetzung in drei Bausteinen (Fakt, Ich-Grenze, nächster Schritt) aus dem Handout `krisenkommunikation` | trägt über den Verweissatz auf `kommunizieren#kippen`, wo die drei Teile stehen; «nur wenn es für Sie sicher und gewollt ist – ein späteres Kontaktangebot» trägt «Bieten Sie nur einen nächsten Kontakt an, den Sie einhalten können und möchten.» |
+| c283 | entfällt | «Bei akuter Gefahr oder wenn Sie die Dringlichkeit nicht sicher einschätzen können, finden Sie passende Anlaufstellen unter …» (Handout `krisenkommunikation`) | im Profil begründet; die Bemerkung verweist auf Verweise in anderen Abschnitten, in `sagen` selbst steht keiner (P2b-F-1) |
+
+**Ist mit den Übungen eine Aussage zu Schutz, Sicherheit oder Verantwortung weggefallen, die sonst nirgends steht?** Zu Schutz und Sicherheit nein: Die Übungen enthielten nur «Diese Kommunikationsübung nimmt keine Risikoeinschätzung vor.» und den Link auf die Notfallseite (k269, k270). Zur Verantwortung entfällt eine Nuance ohne Ersatz (k572, Vergebung); alle übrigen geprüften Sätze tragen andere Stellen.
+
+#### A3 · Neue Sätze
+
+**(a) Rückwärtsprüfung.** Gelesen sind die 70 Sätze der zwei Seiten mit der schwächsten Übereinstimmung zum Bestand (Wortüberlappung unter 0,41; 33 auf `kommunizieren`, 37 auf `krise`). Alle sind Umformulierungen mit Zeile im Abgleich, Zwischentitel, Sätze der Liste «Neue Sätze zur Freigabe» oder der Verweis im Text. Beispiele: «Missverständnisse verringern und Tempo herausnehmen.» (k53), «Sie erlauben keine sichere Beurteilung, wie es einem Menschen innerlich geht.» (k765), «Eine Wahl kann Orientierung geben oder gerade zu viel sein.» (k532, aus `/uebungen`), «Je knapper Sie bleiben, desto eher bleibt Ihre Grenze hörbar.» (g598), «Beruhigung ist nicht dasselbe wie Klärung.» (b187). **Kein neuer Satz fehlt in der Liste.**
+
+**(b) Die 56 Sätze der Liste ohne Verweissätze.** j = ja · t = teilweise. Die Verweissätze stehen in der Tabelle danach.
+
+| Nr. | Satz (gekürzt) | Ort | tragbar | nahe am Bestand | Ton | Bemerkung |
+| --- | --- | --- | --- | --- | --- | --- |
+| 1 | «Zuhören und die eigene Sicht behalten» | `kommunizieren` › `zuhoeren` | j | j | j | – |
+| 2, 3 | «Fragen Sie, was gerade gewünscht ist:», «Und wenn Sie verschieden empfinden:» | ebenda | j | j | j | – |
+| 4 | «Auch verschiedene Gefühle, Meinungen oder Wünsche nach Nähe gehören dazu. Sie sind nicht automatisch ein Zeichen fehlender Liebe.» | ebenda | j | j (b184) | t | «gehören dazu» hat keinen klaren Bezug (P2b-S-3) |
+| 5–7 | «Fragen zum Innehalten», «Vor einer Antwort kann es helfen, kurz innezuhalten.», «Die Fragen sind ein Angebot:» | ebenda, Vertiefung | j | j | j | – |
+| 9–11 | Kernaussage, Kurztext, Kurzbeschreibung von Abbildung 1 | `anerkennen` | j | Auftrag | j | Kurzbeschreibung: «stehen sich … gegenüber», im Bild stehen die Tassen nebeneinander an den Tischenden (P2b-V-1) |
+| 12 | «Wenn Sie zugleich eine Grenze brauchen:» | `anerkennen` | j | j | j | – |
+| 13 | «Eine pauschale Schuldzuweisung müssen Sie nicht übernehmen, etwa mit …» | `anerkennen` | j | j | j | – |
+| 14 | «Sechs Stufen der Validierung» | `anerkennen` | j | j | j | – |
+| 15 | «Übernehmen hiesse: Aus einer Beobachtung wird die Annahme, …» | `anerkennen` | j | j | t | Konjunktiv und abstrakt (P2b-S-3) |
+| 16 | «Der richtige Moment» | `moment` | j | Auftrag | j | – |
+| 17 | «Manche Angehörige achten im Gespräch auf drei Lagen.» | `moment` | t | t | j | Der Bestand nennt die Begriffe eine «redaktionelle Orientierung», keine Praxis von Angehörigen; «Lagen» ist ein neuer Begriff (P2b-F-5) |
+| 18, 19 | Beschreibungen von «Stabil» und «Warnstufe» | `moment` | j | j | j | – |
+| 21 | «Dann müssen Sie ihn unter Anspannung nicht erst suchen.» | `moment` | j | j | j | – |
+| 22 | «Jetzt Sicherheit oder Pause, später Klärung» | `moment` | j | j | j | – |
+| 23 | «Dafür sind Sie nicht verantwortlich, auch wenn Sie versuchen, die Lage zu beruhigen.» | `moment` | j | j | j | gleichbedeutend (Frage 8) |
+| 24 | «Auch wer verletzend war, kann später Verantwortung übernehmen:» | `moment` | j | j | j | – |
+| 25 | «Wenn aus einem Austausch plötzlich Streit, Rückzug oder Rechtfertigung wird, können kurze Schritte helfen.» | `kippen` | j | j | j | – |
+| 26 | «Bei Bedrohung oder Gewalt beenden Sie das Gespräch, schaffen Abstand und bringen sich in Sicherheit.» | `kippen` | j | j | j | – |
+| 28 | «Sie können auch sagen, was Sie tun:» | `kippen` | j | j | j | – |
+| 29 | «Eine Grenze in drei Teilen» und Einleitung | `kippen` | j | j | j | dritte Schrittfolge im selben Abschnitt (P2b-F-8) |
+| 31 | «Beispiel-Dialog: von der Anspannung bis zur Pause» | `kippen`, Vertiefung | j | j | j | – |
+| 32 | «Harte oder vorwurfsvolle Aussagen können treffen und Angehörige stark verunsichern.» | `worte` | j | j | j | – |
+| 34 | «So könnte es klingen» | `beispiele` | j | Auftrag | j | – |
+| 35 | «Namen und «Person A» oder «Person B» bezeichnen keine festen Rollen …» | `beispiele` | j | j | j | – |
+| 36–38 | «Nach einem Arztbesuch», «Robin kommt um 20 Uhr.», «Robin, wenn Zeit für ein Gespräch ist», «Robin, wenn die Kraft nicht mehr reicht» | `beispiele` | j | j | j | – |
+| 39 | «Eine Bitte um Geld» und «Grenzen beim Geld sind oft besonders schwer, …» | `beispiele` | j | j | j | Absicherung bestätigen (Frage 7) |
+| 42 | «Grundlage: Die Beispiele sind eigene didaktische Ableitungen …» | `beispiele` | j | j | j | – |
+| 44 | «Diese Seite ersetzt keine professionelle Krisenberatung.» | `krise` › `belastung` | j | j | j | gleiche Aussage wie der Satz zur Fachstelle direkt danach (P2b-F-6) |
+| 45 | «Sie können jederzeit direkt Hilfe holen.» | `belastung` | j | j | j | – |
+| 46–48 | «Während einer Krise», «Im Gespräch», «Wenn ein Gespräch kippt» | `waehrend`, `sagen` | j | j | j | – |
+| 50, 51 | Reihenfolge der drei Schritte; «Alles in einem Satz kann so klingen:», «Zum Aussteigen reicht:» | `sagen` | j | j | j | zweite Schrittfolge mit anderen Namen als auf `kommunizieren` (P2b-F-8) |
+| 53 | Handlungsanleitung, «Das kann helfen, …», «Bleiben Sie …», «Direkt nachzufragen, löst …» | `suizid` | j | Wortlaut `verstehen` | j | Quelle fehlt für den letzten Satz (P2b-F-4) |
+| 54 | «Diese Beurteilung ist Aufgabe von Fachpersonen, nicht von Angehörigen.» | `suizid` | j | j (c125) | j | – |
+| 55 | «Was Sie in einer Krise eher vermeiden», «In einer Krise hilft es eher nicht,» | `vermeiden` | t | t | j | schwächt zwei Schutzhinweise ab (P2b-F-3) |
+| 56 | «Nach einer Krise können Scham, Reue, …» | `danach` | j | Wortlaut `rolle` | j | – |
+| 57 | «Welche fachliche Nachsorge nötig ist, klärt die betroffene Person …» | `danach` | j | j | j | Frage 5 (P2b-F-7) |
+| 60–62 | «Wenn Sie später zurückschauen möchten:», Nachbesprechung, «Dabei muss niemand nach einer einzigen Ursache suchen.» | `danach` | j | j | j | – |
+| 63, 64 | «Achten Sie auf diese Hinweise:», «Bei akuter Gefahr schützen Sie sich und holen sofort Hilfe.» | `bleibt` | j | j | j | – |
+| 66 | Kinder im Wortlaut von `grenzen` | `bleibt` | j | Wortlaut `grenzen` | j | – |
+| 68–70 | Einstieg «Ich weiss nicht, was ich sagen soll, wenn es schwierig wird.», Beschreibung, Platzhalter | `index` › `einstiege` | j | Auftrag | j | Der erste Einstieg nennt ebenfalls das Kippen («Ich verstehe nicht, warum Gespräche so schnell kippen.»); die beiden bleiben unterscheidbar (verstehen und handeln), kein Befund |
+
+**Verweissätze** (Nr. 8, 20, 27, 30, 33, 40, 41, 43, 49, 52, 58, 59, 65, 67). Alle 14 Links per Skript aufgerufen: Ziel und Anker vorhanden, Linktext gleich dem Titel der Zielstelle (h2), Seitenname wie in der Navigation bzw. Titel («Zugewandt und klar sprechen», «Krisen begleiten», «Startseite»), kein Link auf eine Entwurfsseite.
+
+| Nr. | Ort | Ziel | Abschnitt hat den angekündigten Inhalt | Bemerkung |
+| --- | --- | --- | --- | --- |
+| 8 | `kommunizieren` › `zuhoeren`, Vertiefung | `beziehungen#schleife` | ja: die Bedeutungsschleife | – |
+| 20 | `moment` | `verstehen#anspannung` | ja: «Anspannung kann im Gespräch ansteigen und später wieder sinken.» | Die Namen der Stellen weichen von «Pause statt Streit» ab (P2b-F-5) |
+| 27 | `kippen` | `grenzen#gewalt` | ja | – |
+| 30 | `kippen` | `grenzen#dear` | ja: DEAR in vier Schritten | – |
+| 33 | `worte` | `krise#suizid` | ja | – |
+| 40 | `beispiele` | `rolle#nach-konflikten` | ja: «Machen Sie ein kurzes Angebot, ohne zu drängen …» | – |
+| 41 | `beispiele` | `grenzen#saetze` | ja | – |
+| 43 | `rollen` | `grenzen#rollen` | ja | – |
+| 49 | `krise` › `sagen` | `kommunizieren#anerkennen` | ja | – |
+| 52 | `sagen` | `kommunizieren#kippen` | ja: «Eine Grenze in drei Teilen» | Der Zielabschnitt enthält drei Schrittfolgen (P2b-F-8) |
+| 58 | `danach` | `index#beratung` | ja | – |
+| 59 | `danach` | `selbstfuersorge#zu-viel` | ja: Atmen, 5-4-3-2-1, STOPP | – |
+| 65 | `bleibt` | `grenzen#gewalt` | ja | – |
+| 67 | `bleibt` | `rolle#kinder` | ja: Erklären und Betreuung planen | – |
+
+#### A4 · Übereinstimmung mit den freigegebenen Seiten
+
+| Prüfpunkt | Ergebnis | Beleg |
+| --- | --- | --- |
+| Verantwortung wie `verstehen`, `beziehungen`, `rolle` | erfüllt | «Das bedeutet nicht, für die Erkrankung oder die Genesung der anderen Person verantwortlich zu sein.» (`anerkennen`); «Damit übernehmen Sie nicht die Aufgabe, die Gefühle, die Behandlung oder die Genesung Ihres Elternteils zu steuern.» (`rollen`). «nicht allein» steht nur bei Gespräch und Krise: «Sie sind nicht allein für den Gesprächsverlauf verantwortlich.», «Sie müssen eine Krise nicht allein deeskalieren oder bewältigen.». Einmal bei Betreuung: «Nötige Betreuung organisieren Sie gemeinsam. Sie müssen sie nicht allein übernehmen.» (Vertiefung, Bestand c186); Betreuung nach einer Krise ist nicht Behandlung, vertretbar |
+| Suizid wie `verstehen` | erfüllt im Wortlaut, Quelle fehlt | Handlungsanleitung, Verweis im Text, «Bleiben Sie …» und «Direkt nachzufragen, …» in derselben Reihenfolge wie `verstehen` › `mythen`; die Quelle WHO (2026) fehlt auf `krise` (P2b-F-4) |
+| Kinder wie `rolle` und `grenzen` | erfüllt | `krise` › `bleibt` gleich wie `grenzen` › `gewalt`; «sofort» bei akuter Gefahr steht; Verweis auf `rolle#kinder`. `rolle` sagt «müssen Erwachsene organisieren», `grenzen` und `krise` «Erwachsene organisieren»; beide freigegeben, kein Widerspruch |
+| Keine neue absolute Aussage über die betroffene Person | erfüllt | «Sie sind nicht typisch für alle Menschen mit Borderline.», «Eine Aussage ist keine verlässliche Auskunft über ein verborgenes Motiv.», «Rückzug kann verschiedene Gründe haben.», «Gefühle und Motive der anderen Person sind von aussen nicht sicher erkennbar.», «Welche Themen schwierig werden, lässt sich nicht aus einer Diagnose ableiten.» |
+| Absicherungen wie im Bestand | erfüllt bis auf zwei Stellen | Unsicherheit über die Dringlichkeit (A1 Nr. 25) und «eher vermeiden» (A1 Nr. 41) |
+| Zuständigkeit | teilweise | zwei Abschnitte mit Handlungsanleitungen für akute Lagen ohne Verweis im Text (Teil F, P2b-F-1) |
+
+#### Prüfbedarf für die Fachstelle
+
+Nach Wichtigkeit sortiert. Jede Frage lässt sich mit Ja oder Nein oder mit einer Auswahl beantworten. Varianten halten den Bestand, wo es einen gibt. Die 11 Fragen der Selbstprüfung und die drei Punkte aus Prüfung 1 gehen darin auf: Punkt 1 → P2b-F-5; Punkt 2 → P2b-F-1 a; Punkt 3 → P2b-F-1 b. Frage 1 → P2b-F-1 a und P2b-F-10; Frage 2 → P2b-F-4; Frage 3 → P2b-F-4; Frage 4 → P2b-F-1 a; Frage 5 → P2b-F-7; Frage 6 → P2b-F-1 b; Frage 7, 8, 11 → P2b-F-10; Frage 9 → P2b-F-6; Frage 10 → P2b-F-5. Nicht gefragt sind die schon entschiedenen Punkte (Übungen, kein Bild auf `krise`, Validierung in zwei Ebenen, Längenziel, Navigation, keine Nummern, Akkordeons unter drei Einträgen, Verweise von freigegebenen Seiten, Hinweis «Entwurf» im Fuss).
+
+1. **P2b-F-1 · Hilfe holen auf `krise`: ein Wort für Hilfe und ein Verweis im Text in jedem Abschnitt mit Handlungsanleitung.**
+   - Für Hilfe stehen drei Wörter: «Bei unmittelbarer Gefahr holen Sie Hilfe über den Notruf.» (`waehrend`), «Bei Bedrohung bringen Sie sich in Sicherheit und informieren die Leitstelle.» (`sagen`), «Bei möglicher unmittelbarer Lebensgefahr rufen Sie den Rettungsdienst.» (`danach`). Der Verweis im Text nennt «ärztlicher Notfalldienst oder Notfallstation, bei Gefahr die Polizei».
+   - **Bewertung «Leitstelle»:** für Angehörige nicht verständlich. Es ist ein Fachwort der Rettungs- und Polizeidienste, im Schweizer Alltag sagt man «Notruf», «Polizei» oder «Sanität». Die Prüfperson weiss nach dem Satz nicht, wen sie anrufen soll.
+   - **Bewertung «Rettungsdienst» ohne Verweis im Text:** Der Satz ist eine Handlungsanleitung für eine akute Lage am Anfang eines Abschnitts, den die Kapitelübersicht direkt anspringt. Der nächste Verweis im Text steht bei 360 px 2281 px darüber, in `suizid`. README «Verweis im Text»: «folgt unmittelbar ein Verweis».
+   - **Bewertung `sagen`:** Der Abschnitt hat zwei Handlungsanleitungen für Bedrohung («… informieren die Leitstelle.», «Bei Bedrohung oder Gewalt gehen Sie auf Abstand und holen Hilfe.») und keinen Verweis im Text. Der nächste steht 1414 px darüber am Ende von `waehrend`; wer über die Kapitelübersicht «Was Sie sagen können» öffnet, sieht ihn nicht. Im Bestand verwies das Handout `krisenkommunikation` an dieser Stelle auf die Notfallseite (c283).
+   - **Frage a (Wörter):** Soll (a) einheitlich «Notruf» stehen, ohne Nummer: `waehrend` bleibt; `sagen` «Bei Bedrohung bringen Sie sich in Sicherheit und holen Hilfe über den Notruf.»; `danach` «Bei möglicher unmittelbarer Lebensgefahr holen Sie sofort Hilfe über den Notruf.» Oder (b) bleibt der Bestand ausser «Leitstelle» → «… und rufen die Polizei.» (passt zu «bei Gefahr die Polizei» im Verweis)? Oder (c) überall «holen Sie sofort Hilfe» ohne Stelle, die Stellen nennt nur der Verweis? **Empfehlung (a):** ein Wort, das alle kennen, für den einen Anruf; «über den Notruf» bleibt in `waehrend` (Frage 1: Ja), daneben nennt der Verweis die übrigen Stellen.
+   - **Frage b (Verweis im Text in `danach`):** Kommt er direkt nach dem Satz zur Lebensgefahr? Ja/Nein. **Empfehlung: Ja** (Frage 6: Es reicht nicht ohne).
+   - **Frage c (`sagen`):** Soll (i) eine Handlungsanleitung für Bedrohung am Anfang von `sagen` stehen, mit dem Verweis im Text direkt danach; die zwei Bestandssätze werden dafür zu einem («Bei Bedrohung oder Gewalt gehen Sie auf Abstand, bringen sich in Sicherheit und holen Hilfe.»; neue Verdichtung)? Oder (ii) bleiben beide Sätze, mit dem Verweis nach dem zweiten? Oder (iii) kein Verweis in `sagen`? **Empfehlung (i).** Mit b und c (i) hat `krise` sechs Verweise im Text in sieben Abschnitten (bei 360 px etwa alle 2500 px). Das ist die Folge der Regel «höchstens einer je Abschnitt, unmittelbar nach der Anleitung»; die Prüfsitzung hält das auf einer Krisenseite für richtig.
+2. **P2b-F-2 · Unsicherheit über die Dringlichkeit** (`krise` › `belastung`). Bestand: «Bei akuter Gefahr oder wenn Sie die Dringlichkeit nicht sicher einschätzen können, wenden Sie sich an den zuständigen Notfalldienst.» Neu: «Bei unmittelbarer Gefahr holen Sie sofort Hilfe und schützen sich selbst.»; die Unsicherheit nur als «Bei Unsicherheit ist eine professionelle Einschätzung sinnvoll.» vier Absätze später. Soll (a) die Handlungsanleitung vor dem Verweis im Text lauten: «Bei unmittelbarer Gefahr oder wenn Sie nicht einschätzen können, wie dringend es ist, holen Sie sofort Hilfe und schützen sich selbst.» (Wortlaut nach `selbstfuersorge` › `warnsignale` und `grenzen` › `gewalt`), oder (b) bleibt es? **Empfehlung (a).**
+3. **P2b-F-3 · «Was Sie in einer Krise eher vermeiden»** (`krise` › `vermeiden`). Bestand: «Was Sie in der Krise vermeiden sollten» mit «✗ Sich selbst in Gefahr bringen» und «✗ Versuchen, die Gefahr allein zu beurteilen oder die Person ohne professionelle Hilfe zu überwachen». Neu: «In einer Krise hilft es eher nicht, … sich selbst in Gefahr zu bringen.» Soll (a) der Titel wieder «Was Sie in einer Krise vermeiden sollten» heissen und die Einleitung «In einer Krise sollten Sie vermeiden,» lauten, (b) «eher» für die Gesprächspunkte bleiben und die zwei Schutzpunkte als eigener, klarer Satz danach stehen («Bringen Sie sich nicht selbst in Gefahr. Versuchen Sie nicht, die Gefahr allein zu beurteilen oder die Person ohne professionelle Hilfe zu überwachen.»), oder (c) bleibt es? **Empfehlung (a)**, Bestand.
+4. **P2b-F-4 · Suizid auf `krise`** (`suizid`; Fragen 2 und 3). Die Seite übernimmt von `verstehen` «Direkt nachzufragen, löst nach heutigem Wissensstand keine suizidale Handlung aus.» und stellt den Bestandssatz zu Dazzi et al. daneben («… keinen statistisch signifikanten Anstieg von Suizidgedanken …»). Bewertung: Die zwei Aussagen widersprechen sich nicht; die erste betrifft Handlungen, die zweite Gedanken. Die erste steht aber ohne ihre Quelle: Auf `verstehen` und im Bestand (`quellen.md`) ist sie mit WHO, Suicide: Questions and answers (2026) belegt; die Quellenzeile auf `krise` nennt nur Dazzi et al. (2014) und NICE NG225.
+   - (a) Kommt WHO (2026) in die Quellenzeile von `suizid`, wie auf `verstehen`? Ja/Nein. **Empfehlung: Ja.**
+   - (b) Bleiben beide Sätze nebeneinander (Frage 2)? Ja/Nein. **Empfehlung: Ja**; sprachlich siehe P2b-S-3 («statistisch signifikant»).
+   - (c) Bestätigt die Fachstelle Ort und Wortlaut von «Bleiben Sie bei der Person nur, soweit dies für Sie sicher möglich ist.» nach dem Verweis im Text, wie auf `verstehen` (Frage 3)? **Empfehlung: Ja**; inhaltlich deckt der Satz den Bestandssatz «Bieten Sie nur Nähe oder Erreichbarkeit an, die für Sie möglich und sicher ist.» (c105).
+5. **P2b-F-5 · «Pause statt Streit»** (`kommunizieren` › `moment`; Punkt 1 und Frage 10). Die Einleitung sagt «Die Begriffe sind eine Orientierung, keine festen Stufen.», der zweite Begriff heisst «Warnstufe». Zwei Sätze weiter verweist der Abschnitt auf die freigegebene Anspannungskurve mit den Stellen «Wir können sprechen.», «Es wird eng.», «Es ist gerade zu viel.». Bewertung: Die drei Lagen entsprechen den Stellen 1 bis 3 der Kurve; dort stehen sie als Sätze aus Sicht von Menschen, wie es das Profil für Beschriftungen verlangt. Zwei Wortreihen für dasselbe machen die Verbindung schwer.
+   Soll (a) «Pause statt Streit» die drei Sätze der Kurve als Begriffe übernehmen (die Beschreibungen und Beispielsätze bleiben; «Lagen» und «keine festen Stufen» werden dann durch einen Satz ersetzt, der auf die Kurve zeigt; neue Sätze zur Freigabe), (b) die Handout-Begriffe bleiben, aber «Warnstufe» z. B. «Warnzeichen» heissen, oder (c) alles bleiben? **Empfehlung (a).**
+6. **P2b-F-6 · Einstieg von `krise` › `belastung`** (Frage 9). Der Abschnitt beginnt mit vier Sätzen dazu, was die Seite und die Fachstelle nicht sind: «Diese Seite ersetzt keine professionelle Krisenberatung. Die Fachstelle Angehörigenarbeit bietet Beratung und Orientierung, aber keine Krisenintervention. Sie können jederzeit direkt Hilfe holen. Diese Seite ist keine notwendige Vorstufe.» Danach erst die Handlungsanleitung. Bewertung zu Frage 9: Der Satz zur Fachstelle soll bleiben. Auf einer Seite der Fachstelle mit dem Titel «Krisen begleiten» verhindert er die Erwartung, die Fachstelle sei in Krisen zuständig (README); die Fusszeile sagt das nicht ausdrücklich. Soll (a) alles bleiben, (b) der Fachstellen-Satz bleiben, «Diese Seite ersetzt keine professionelle Krisenberatung.» entfallen (gleiche Aussage; die Fusszeile sagt «ersetzt keine individuelle Abklärung, Beratung oder Behandlung») und die Handlungsanleitung mit Verweis im Text als erster Absatz stehen, oder (c) der Fachstellen-Satz entfallen? **Empfehlung (b).**
+7. **P2b-F-7 · Wer klärt die Nachsorge?** (`krise` › `danach`; Frage 5). Bewertung: Die neue Fassung «Welche fachliche Nachsorge nötig ist, klärt die betroffene Person mit dem Behandlungsteam. Dabei kann auch geklärt werden, welche Rolle Sie freiwillig übernehmen können.» ist richtig und passt zu «Angehörige werden nur mit Zustimmung der betroffenen Person in einen Krisenplan einbezogen.» und zu `rolle` («das Behandlungsteam einbeziehen, wenn die Person das möchte»). Uneinheitlich bleiben zwei Sätze in Vertiefungen: «Fachliche Nachsorge und erreichbare Kontakte werden mit dem Behandlungsteam geklärt.» (ohne Subjekt) und «Vereinbarte Hilfe überprüfen: mit dem Behandlungsteam klären, …» (Angehörige als Handelnde). Dazu «Weitere Behandlungsschritte klärt die betroffene Person mit dem Fachteam.» (`bleibt`).
+   Ja/Nein: Gilt die neue Fassung, und sollen die zwei Vertiefungssätze dasselbe Subjekt bekommen («… klärt die betroffene Person mit dem Behandlungsteam»; beim zweiten «…, wenn sie das möchte, gemeinsam mit Ihnen») und «Fachteam» zu «Behandlungsteam» werden? **Empfehlung: Ja.**
+8. **P2b-F-8 · Drei Schrittfolgen für kippende Gespräche.** `kommunizieren` › `kippen` hat «Eigenes Tempo senken / Verbinden / Begrenzen oder beenden» (Handout `gespraeche-kippen`), «Fakt / Ich-Grenze / Nächster Schritt» und den Beispiel-Dialog «Verbinden / Vorsichtig spiegeln / Grenze / Pause / Wiedereinstieg». `krise` › `sagen` hat «Verbinden / Kontakt / Grenze und Plan» (Handout `krisenkommunikation`). «Verbinden» meint dabei drei verschiedene Sätze. Soll (a) `krise` nur den Standardsatz und die Ausstiegssätze behalten und für die Schritte auf `kommunizieren#kippen` verweisen (die drei Bestandssätze von `krisenkommunikation` entfallen mit Grund im Abgleich), (b) beide Folgen bleiben, aber mit unterscheidbaren Namen, oder (c) bleibt alles? **Empfehlung (a):** In der Krise hilft ein Satz mehr als eine zweite Folge mit gleichen Namen.
+9. **P2b-F-9 · Zuschreibung an Linehan** (`kommunizieren` › `anerkennen`). «Linehan beschreibt fünf aufeinander aufbauende Formen und als sechste Form radikale Echtheit.» steht wörtlich wie im Bestand, Quelle Linehan (1997). Die Prüfsitzung konnte das Kapitel nicht einsehen; Sekundärquellen nennen sechs aufeinander aufbauende Ebenen, die sechste als höchste. Ja/Nein: Bestätigt die Fachstelle die Zuschreibung an der Quelle? Bei Nein oder ohne Prüfung: Soll der Satz entfallen («Die sechs Stufen lehnen sich an die Validierungsstufen von Linehan … an.» trägt allein)? **Empfehlung:** an der Quelle prüfen; sonst entfallen lassen.
+10. **P2b-F-10 · Bestätigungen ohne Änderung**, je Ja/Nein:
+    - (a) Frage 1: Wortlaut «Begrenzen Sie den Zugang zu Medikamenten oder gefährlichen Gegenständen nur ohne Eigengefährdung, möglichst gemeinsam und nach professioneller Anleitung. Nehmen Sie nichts aus der Hand oder gegen Widerstand weg; greifen Sie nicht körperlich ein.» wörtlich wie im Bestand, sichtbar, mit Verweis im Text. **Empfehlung: Ja.**
+    - (b) Frage 7: «Grenzen beim Geld sind oft besonders schwer, weil sie sich anfühlen können wie «ich lasse dich fallen».» **Empfehlung: Ja**; die Absicherung betrifft das Erleben der Angehörigen und unterstellt kein Gefühl.
+    - (c) Frage 8: «Dafür sind Sie nicht verantwortlich, auch wenn Sie versuchen, die Lage zu beruhigen.» sagt dasselbe wie «Deeskalation macht Sie dafür nicht verantwortlich.» **Empfehlung: Ja.**
+    - (d) Frage 11: Der Absatz zur Selbstverletzung steht in `suizid` statt in «Was Sie sagen können». **Empfehlung: Ja**; er gehört inhaltlich zum direkten Fragen nach Suizidgedanken und steht nach dem Verweis im Text desselben Abschnitts.
+11. **P2b-F-11 · Neue Sätze und Abbildung.**
+    - (a) Werden die 70 Sätze der Liste «Neue Sätze zur Freigabe» freigegeben, mit den Änderungen aus P2b-F-1 bis -8? Je Ja/Nein: Nr. 1–43 (`kommunizieren`), Nr. 44–67 (`krise`), Nr. 68–70 (`index`). Gesondert: Nr. 17 («Manche Angehörige achten im Gespräch auf drei Lagen.», hängt an P2b-F-5) und Nr. 55 (hängt an P2b-F-3).
+    - (b) Wird «Zwei Tassen» (`v-ko-tassen`) fachlich freigegeben (nach Sicht auf die Abbildung bei 1280 und 360 px)? Ja/Nein. Dazu, Ja/Nein: Darf die bauende Sitzung die zwei Tassen näher zur Tischmitte rücken, damit sie als Gegenüber am selben Tisch lesen und nicht als zwei Enden mit leerer Mitte (P2b-V-1)? «Zwei gleich grosse Tassen, gleichwertig, auf demselben Tisch» bleibt.
+12. **P2b-F-12 · Kürzung auf `kommunizieren`** (optional; das Längenziel ist erreicht, Teil C2). Soll die bauende Sitzung die Kürzungen der Stufe a umsetzen, die Beispielsätze des Bestands betreffen (K-K-a1, K-K-a3, K-K-a4; je Ja/Nein)? **Empfehlung:** K-K-a1 Ja (siebenmal fast derselbe Ausstiegssatz), K-K-a3 und K-K-a4 nach Wahl.
+
+#### Befunde W1
+
+- **P2b-W1-1 · wichtig · Hilfe holen auf `krise`: drei Wörter, zwei Abschnitte ohne Verweis im Text.**
+  - **Beleg:** A1 Nr. 31, 34, 35, 42; A2 c283; Teil F (Lage der Verweise).
+  - **Zuständig:** Fachstelle (P2b-F-1), danach die bauende Sitzung.
+- **P2b-W1-2 · wichtig · Unsicherheit über die Dringlichkeit schwächer abgesichert als im Bestand.**
+  - **Beleg:** A1 Nr. 25; A2 c2.
+  - **Zuständig:** Fachstelle (P2b-F-2).
+- **P2b-W1-3 · wichtig · «eher vermeiden» schwächt zwei Schutzhinweise ab.**
+  - **Beleg:** A1 Nr. 41; A3 (b) Nr. 55.
+  - **Zuständig:** Fachstelle (P2b-F-3).
+- **P2b-W1-4 · wichtig · Quelle für «Direkt nachzufragen, löst … keine suizidale Handlung aus.» fehlt auf `krise`.**
+  - **Beleg:** A1 Nr. 37; Quellenzeile von `suizid`: «Quellen: Dazzi et al. (2014), Übersicht zum direkten Fragen nach Suizidgedanken, …; NICE NG225 (2022), …».
+  - **Zuständig:** Fachstelle (P2b-F-4), danach die bauende Sitzung.
+- **P2b-W1-5 · optional · Zuschreibung an Linehan nicht an der Quelle geprüft.**
+  - **Beleg:** A1 Nr. 11.
+  - **Zuständig:** Fachstelle (P2b-F-9).
+- **P2b-W1-6 · optional · Subjekt bei der Nachsorge uneinheitlich.**
+  - **Beleg:** A1 Nr. 44, 47.
+  - **Zuständig:** Fachstelle (P2b-F-7), danach die bauende Sitzung.
+- **P2b-W1-7 · optional · Abgleich ungenau.**
+  - **Beleg:** k25 nennt nicht, dass «Gründe» entfällt; k726 nicht, dass «und wann» entfällt; c190 nicht, dass «sofort» nur noch bei Lebensgefahr steht; k572 («Eine Entschuldigung schafft keinen Anspruch auf Vergebung.») ist «ersetzt durch Beispiele», steht aber auch sinngemäss nirgends, was die Bemerkung sagen sollte; k764 nennt «Lagen» und den neuen Satz Nr. 17 nicht.
+  - **Vorschlag:** Bemerkungen nachführen.
+  - **Zuständig:** bauende Sitzung.
+
+### Teil B · W2 Gesamtkohärenz mit den Etappen 1 und 2a
+
+**Begriffe** (Zählung im sichtbaren Text mit Vertiefungen, ohne Kurzbeschreibungen, je `kommunizieren` / `krise`):
+
+- **Betroffene Person:** «betroffene Person» 0 / 5, «andere Person» 9 / 0; «Gegenüber» und «Ihr Angehöriger» 0 / 0. Wie auf den freigegebenen Seiten: «andere Person» bei direkter Ansprache im Gespräch, «betroffene Person» bei Behandlung und Krise. Einheitlich.
+- **Anspannung:** 8 / 4; «Stress» und «Alarm» 0 / 0 («Alarmbereitschaft» des Bestands ist «ständige Wachsamkeit» bzw. «Anspannung»). Einheitlich.
+- **Grenze:** 28 / 7, einheitlich.
+- **Pause:** 10 / 1, überall Gesprächspause, aus dem Satz klar («Ich unterbreche das Gespräch jetzt.»). Kein Befund.
+- **Beratung:** 0 / 4, «eigene Beratung» wie auf `rolle` und `selbstfuersorge`.
+- **Wörter für Hilfe:** `krise` nennt «Notruf» (1), «Leitstelle» (1), «Rettungsdienst» (1), im Verweis «ärztlicher Notfalldienst oder Notfallstation, bei Gefahr die Polizei» (4), dazu «Hilfe holen» (13), «professionelle Einschätzung» (3), «professionelle Hilfe/Unterstützung» (4), «Behandlungsteam» (4), «Fachteam» (1), «Fachpersonen» (2). Uneinheitlich bei der akuten Hilfe (P2b-F-1) und bei «Fachteam» (P2b-F-7).
+- **Validierung / Anerkennen:** Der Abschnitt heisst «Anerkennen, ohne zuzustimmen» und erklärt im ersten Satz «Validierung heisst: …»; danach beide Wörter. Auf `krise` heisst der Punkt «Gefühle anerkennen» (Bestand «Gefühle validieren»). Einheitlich genug.
+- **Gemischte Gefühle:** kommt auf den zwei Seiten nicht vor.
+
+**Widersprüche zu den freigegebenen Seiten:** einer, die Begriffe von «Pause statt Streit» neben der Anspannungskurve (P2b-F-5). Zur Unsicherheit über die Dringlichkeit ist `krise` schwächer als `grenzen` und `selbstfuersorge` (P2b-F-2). Sonst keine: Verantwortung, Suizid, Kinder und die Reaktionen nach einer Krise stehen im Wortlaut der freigegebenen Seiten (A4).
+
+**Doppelungen**
+
+| Thema | Stellen | Sagen beide dasselbe? | Urteil |
+| --- | --- | --- | --- |
+| Kippende Gespräche | `kommunizieren` › `kippen` (drei Schritte aus `gespraeche-kippen`, drei Teile einer Grenze, Beispiel-Dialog) und `krise` › `sagen` (drei Schritte aus `krisenkommunikation`, Standardsatz, Ausstiegssätze) | im Kern ja (verbinden, kurz bleiben, Grenze, beenden), aber in zwei Schrittfolgen mit gleichen Namen für verschiedene Sätze («Verbinden» dreimal verschieden) | **teilweise ersetzbar durch einen Verweis** (P2b-F-8). Der Standardsatz und die Ausstiegssätze sind krisenspezifisch und nützlich |
+| Suizid | `kommunizieren` › `worte` («Wenn Suizid angesprochen wird»), `krise` › `suizid`, `verstehen` › `mythen` | `worte` behandelt eine Drohung im Streit als Sicherheitssignal und verweist auf `krise`; `krise` wiederholt `verstehen` wörtlich und ergänzt Dazzi und Selbstverletzung | **nützlich** (anderer Blickwinkel; Sicherheitshinweis dort, wo er gebraucht wird). Quelle siehe P2b-F-4. Der Weg von `verstehen` zu `krise` ist V2 (Entscheid am Schluss von Etappe 2) |
+| Kinder | `krise` › `bleibt`, `rolle` › `kinder`, `grenzen` › `gewalt` | `krise` gleicht `grenzen` Wort für Wort (sechs Sätze), `rolle` sagt mehr und verweist für Gewalt auf `grenzen` | **nützlich:** In einer Krise braucht es den Betreuungsplan sichtbar; der Verweis auf `rolle#kinder` trägt das Erklären. Kein Befund |
+| Grenzsätze | `kommunizieren` › `kippen` (Fakt, Ich-Grenze, nächster Schritt) und `beispiele` («Eine Bitte um Geld»); `grenzen` › `dear`, `saetze`, `arten` («Geld und Unterstützung») | verschiedene Blickwinkel: im Moment knapp (kommunizieren) gegenüber vorbereitet (DEAR); zwei Geld-Sätze («Ich kann dir kein Geld leihen. …» und «… Weiteres Geld kann ich dir nicht leihen.») | **nützlich**, verlinkt (Verweissätze Nr. 30, 41) |
+| Reaktionen nach einer Krise | `krise` › `danach` und `rolle` › `nach-konflikten` | gleicher Satz «… Scham, Reue, Erleichterung, Ärger, Rückzug oder ganz andere Reaktionen …» und «Fragen Sie nach, statt ein bestimmtes Erleben vorauszusetzen.» | **nützlich** (Krise statt Konflikt); gleicher Wortlaut wie verlangt |
+| Ausstiegssätze innerhalb von `kommunizieren` | `moment` (zwei), `kippen` (vier, einer in der Vertiefung), `worte` (einer); dazu `krise` › `sagen` (drei) | fast derselbe Satz: «Ich unterbreche / beende das Gespräch jetzt. … entscheide ich später.» | **ersetzbar:** einmal ausführen («Ein Satz darf reichen»), sonst darauf zeigen (K-K-a1, P2b-F-12) |
+| «Du verstehst mich sowieso nicht.» | Abbildung 1, `worte` (gleiche Antwort), Stufe 6 in der Vertiefung (andere Antwort: «Ich nehme dich ernst. Lass uns zusammen schauen, was gerade hilft.») | gleicher Vorwurf, zwei Antworten | vom Auftrag so verlangt; die zweite Antwort zeigt eine andere Stufe. Kürzung K-K-a4 nach Wahl |
+
+**Links der zwei Seiten** (14 Links im Text, alle per Skript aufgerufen; Liste in A3): Alle Ziele und Anker existieren; der Linktext gleicht in allen 14 dem Titel der Zielstelle; kein Link auf eine Entwurfsseite. Die Kapitelübersichten (7 und 7 Einträge) zeigen auf vorhandene Abschnitte; ihre Kurzformen («Wenn es kippt», «Beispiele», «Wenn Gefahr bleibt») folgen dem Muster der übrigen Seiten. Auf `index` zeigt der neue Einstieg auf `kommunizieren.html` (h1 «Zugewandt und klar sprechen»).
+
+**Befunde W2**
+
+- **P2b-W2-1 · wichtig · «Pause statt Streit» spricht eine andere Sprache als die Anspannungskurve.**
+  - **Beleg:** `moment`: «Die Begriffe sind eine Orientierung, keine festen Stufen.» und die Begriffe «Stabil», «Warnstufe», «Eskalation»; `verstehen` › `anspannung`: «Wir können sprechen.», «Es wird eng.», «Es ist gerade zu viel.»; Verweissatz Nr. 20 verbindet beide.
+  - **Zuständig:** Fachstelle (P2b-F-5), danach die bauende Sitzung.
+- **P2b-W2-2 · optional · Zwei Schrittfolgen mit gleichen Namen.**
+  - **Beleg:** Doppelung «Kippende Gespräche».
+  - **Zuständig:** Fachstelle (P2b-F-8).
+- **P2b-W2-3 · optional · Ausstiegssätze siebenmal auf `kommunizieren`.**
+  - **Beleg:** Doppelung «Ausstiegssätze»; Teil C2.
+  - **Zuständig:** Fachstelle (P2b-F-12), danach die bauende Sitzung.
+- **P2b-W2-4 · optional · Begriffe.**
+  - **Beleg:** «Fachteam» (`bleibt`) neben viermal «Behandlungsteam»; «drei Lagen» (neu, `moment`); «Leitstelle» (`sagen`).
+  - **Vorschlag:** «Behandlungsteam»; «Lagen» mit P2b-F-5; «Leitstelle» mit P2b-F-1.
+  - **Zuständig:** bauende Sitzung nach den Entscheiden.
+
+### Teil C · S Sprach-Review und Länge
+
+#### C1 · Lesetest und Kennzahlen
+
+**Zählweise (Skript der Prüfsitzung, im Browser):**
+
+- **Fliesstext:** innerste Blöcke `p`, `li`, `dt`, `dd` in `main`. Nicht gezählt: SVG, `.puk-sr`, Kapitelübersicht, Kicker, Eyebrow, Bezeichnung «Abbildung n · …» und Absätze, die mit «Quelle», «Quellen», «Bezugspunkte», «Grundlage» oder «Eigene didaktische Darstellung» beginnen. «Im Lesefluss» = ohne die Panels der Akkordeons; «Grenzen des Bildes» (`details`) zählt mit. Bezeichnungen in `.puk-say` (z. B. «Person A») zählen als eigene Wörter. Das ist C1 der Prüfrunde 2a und der Selbstprüfung 2b.
+- **Sätze:** Satzregel von `abgleich/verneinung.mjs`; Wörter wie `kennzahlen.mjs`.
+- **Verneinung:** «nicht», «nichts», «nie», «niemals», «niemand», «weder», Formen von «kein».
+- **Absicherungen je 100 Wörter:** eng wie `kennzahlen.mjs` («kann» und Formen, «möglich…», «vielleicht», «nicht sicher», «nicht automatisch»); weit zusätzlich «manche», «einige», «oft», «häufig», «meist», «eher», «individuell», «nicht bei allen», «nicht vorhersag…», «nicht ableit…», «nicht garantier…», «keine bestimmte».
+- **«Was Sie tun können»:** Abschnitte, deren Text die Wendung enthält.
+
+| Seite | Wörter (`kennzahlen.mjs`, gesamt) | Wörter C1 im Lesefluss | Sätze im Lesefluss | mittlere Satzlänge (Median) | Sätze > 15 Wörter | > 25 | Sätze mit Verneinung | Absicherungen je 100 Wörter eng / weit | «Was Sie tun können» |
+| --- | ---: | ---: | ---: | --- | ---: | ---: | ---: | --- | --- |
+| `kommunizieren` | 3370 | **2458** | 258 | 9,5 (9) | 36 (14 %) | 0 | 70 (27 %) | 2,77 / 3,54 | 4 von 7 |
+| `krise` | 2075 | **1507** | 159 | 9,5 (8) | 24 (15 %) | 0 | 39 (25 %) | 2,06 / 2,46 | 0 von 7 |
+| `rolle` (Vergleich, Stand nach 2a-2) | 3145 | 2627 | 276 | 9,5 (8) | 32 (12 %) | 1 | 64 (23 %) | 2,36 / 3,27 | 6 von 7 |
+| `selbstfuersorge` (Vergleich) | 2679 | 2051 | 217 | 9,5 (9) | 23 (11 %) | 0 | 45 (21 %) | 2,68 / 3,12 | 4 von 7 |
+
+Mit Vertiefungen: `kommunizieren` 3126 Wörter, 353 Sätze, 82 mit Verneinung (23 %); `krise` 1919, 204, 51 (25 %).
+
+- **Satzlänge:** wie auf `rolle` und `selbstfuersorge` (Mittel 9,5 Wörter), etwas mehr Sätze über 15 Wörter (14 und 15 % gegenüber 11 und 12 %), kein Satz über 25. Die Vorgabe «meist unter 15 Wörtern» ist erfüllt.
+- **Verneinung:** etwas höher als auf den Vergleichsseiten (27 und 25 % gegenüber 21 und 23 %). Gehäuft in `krise` › `belastung` (12 von 32 Sätzen, 38 %) und `suizid` (8 von 17, 47 %); fast alle sind Absicherungen des Bestands («Kein Bereich bedeutet automatisch «sicher» oder «gefährlich».», «Das garantiert keine bestimmte Wirkung im einzelnen Gespräch.»).
+- **Absicherungen:** `kommunizieren` im Bereich der Vergleichsseiten; `krise` niedriger, weil die Seite aus Handlungsanleitungen besteht, wo Absicherungen fehlen dürfen. Bei Aussagen über die betroffene Person stehen sie (A4).
+- **Handlungsteil:** `krise` nennt die Wendung nie, hat aber in sechs von sieben Abschnitten Handlungsanleitungen und Beispielsätze; nur `vermeiden` sagt allein, was nicht hilft (Lesetest b).
+- **Nachgerechnet:** Die Wörter C1 je Seite und je Abschnitt stimmen mit der Selbstprüfung auf das Wort (`kommunizieren` 28 / 193 / 623 / 372 / 419 / 270 / 516 / 37; `krise` 36 / 289 / 215 / 263 / 182 / 57 / 259 / 206), ebenso «mit Vertiefungen» (3126, 1919) und die Anteile mit Verneinung (27 %, 25 %).
+
+**Lesetest je Abschnitt** (Prüfperson: Partner oder Mutter, spät abends auf dem Handy, nach einem Streit oder während sich eine Krise anbahnt; 360 px).
+
+- a = beim ersten Lesen verstanden (ja / mit Mühe / nein)
+- b = weiss danach, was ich tun kann
+- d (Ton) ist überall warm, erwachsen und ohne Schuldzuweisung, ausser wo vermerkt
+- e (Absicherungen) steht nur, wo es einen Befund gibt
+
+| Seite | Abschnitt | a | b | Stolperstellen (c) und e | Priorität |
+| --- | --- | --- | --- | --- | --- |
+| `kommunizieren` | Kopf | ja | – | – | – |
+| `kommunizieren` | `zuhoeren` | ja | ja | «Zuhören, nachfragen und die eigene Sicht behalten dürfen gleichzeitig möglich sein.» (holprig; gleich danach «Sie dürfen zuhören, nachfragen oder eine Pause machen.»); «Auch verschiedene Gefühle, … gehören dazu.» (wozu?); «Sie sind nicht automatisch ein Zeichen fehlender Liebe.» lässt sich am Satzanfang als Anrede lesen | optional |
+| `kommunizieren` | `anerkennen` | mit Mühe | ja | Längster Abschnitt (623 Wörter). Die Abbildung steht früh (218 px nach Abschnittsbeginn bei 1280 px, 362 px bei 360 px). «Linehan beschreibt fünf aufeinander aufbauende Formen und als sechste Form radikale Echtheit.»: «radikale Echtheit» wird erst in der Vertiefung erklärt. «Übernehmen hiesse: …» (Konjunktiv, abstrakt). Die Gegenüberstellung trägt die Bezeichnung «Übernehmen» ohne Wertung; dass «Es ist meine Schuld, dass es dir schlecht geht.» kein empfohlener Satz ist, ergibt sich nur aus dem Absatz davor | optional |
+| `kommunizieren` | `moment` | mit Mühe | ja | «drei Lagen» und dann «Warnstufe» nach «keine festen Stufen» (P2b-F-5); «Sie erlauben keine sichere Beurteilung …» («Sie» = die Begriffe); «Zeitliche Grenzen wirken am besten, wenn Sie sie in einer ruhigen Situation ankündigen …» ohne Bezug, auf der Seite sind keine zeitlichen Grenzen eingeführt (Satz aus `grenzen` › «Zeitliche Grenzen») | wichtig |
+| `kommunizieren` | `kippen` | mit Mühe | ja | Schutz zuerst, Verweis im Text richtig. Drei Schrittfolgen in einem Abschnitt (P2b-F-8); fünf fast gleiche Ausstiegssätze (K-K-a1) | optional |
+| `kommunizieren` | `worte` | ja | ja | «Sie sind nicht typisch für alle Menschen mit Borderline.» («Sie» = die Sätze, am Satzanfang als Anrede lesbar). Suizid-Signal klar getrennt, mit Verweis im Text | optional |
+| `kommunizieren` | `beispiele` | ja | ja | Drei Arten, Personen zu nennen: «Person A / Person B», «Alex / Robin», «die andere Person»; sonst natürlich klingende Sätze | optional |
+| `kommunizieren` | `rollen` | ja | ja | nur Einleitung im Lesefluss, Inhalt in der Vertiefung (wie im Bestand) | – |
+| `krise` | Kopf | ja | – | – | – |
+| `krise` | `belastung` | mit Mühe | ja | Vier Sätze dazu, was die Seite nicht ist, vor der Handlungsanleitung (P2b-F-6); danach sechs Sätze dazu, was die Bereiche nicht sind, die eigentliche Hilfe (drei Bereiche mit «Eher hilfreich») beginnt bei 360 px erst 1061 px nach dem Titel, nach gut einer Bildschirmhöhe. «Sie bewerten keine Diagnose …» («Sie» = die Bereiche) liest sich am Satzanfang als Anrede. «Ein unbekannter Plan bedeutet keine Sicherheit.» ist ohne den Zusammenhang Suizid nicht verständlich. e: Unsicherheit über die Dringlichkeit (P2b-F-2) | wichtig |
+| `krise` | `waehrend` | ja | ja | e: «über den Notruf» neben dem Verweis im Text (P2b-F-1) | – |
+| `krise` | `sagen` | ja | ja | «Leitstelle» (P2b-F-1); zweite Schrittfolge mit «Verbinden» (P2b-F-8); e: kein Verweis im Text (P2b-F-1) | wichtig |
+| `krise` | `suizid` | ja | ja | «statistisch signifikanten Anstieg» ist ein Fachbegriff; «Die von Dazzi et al. ausgewerteten Studien» ohne Einordnung, wer das ist. e: Quelle (P2b-F-4) | wichtig |
+| `krise` | `vermeiden` | ja | mit Mühe | nur, was nicht hilft; das Gegenstück steht in `waehrend` und `sagen`. e: «eher» bei Schutzpunkten (P2b-F-3) | wichtig |
+| `krise` | `danach` | ja | ja | «Leisten Sie keine Aufarbeitung, solange Sie selbst noch aufgewühlt sind.» abstrakt («Aufarbeitung leisten»). e: Verweis im Text fehlt (P2b-F-1) | wichtig |
+| `krise` | `bleibt` | ja | ja | «Fachteam» (P2b-F-7) | optional |
+| `index` | `einstiege` | ja | ja | – | – |
+
+#### C2 · Länge
+
+**Nachgerechnet:** Die bauende Sitzung meldet im Lesefluss 2458 Wörter (`kommunizieren`) und 1507 (`krise`), Zählweise C1. Die Prüfsitzung kommt auf dieselben Zahlen, je Abschnitt gleich (C1). Das Ziel «höchstens etwa 2500» ist erreicht, auf `kommunizieren` knapp (98 %).
+
+**Urteil aus Sicht der Prüfperson:**
+
+- `krise` trägt: 1507 Wörter, bei 360 px 16 436 px (etwa 21 Bildschirmhöhen), bei 200 Wörtern je Minute etwa 8 Minuten. Wer während einer anbahnenden Krise liest, springt über die Kapitelübersicht in einen Abschnitt; die Abschnitte sind kurz (57 bis 289 Wörter). Hinderlich ist nur der Anfang von `belastung` (P2b-F-6).
+- `kommunizieren` ist lang: 2458 Wörter im Lesefluss, 24 890 px (etwa 31 Bildschirmhöhen), etwa 12 Minuten. Als Nachschlagewerk brauchbar, weil die Abschnitte einzeln verständlich sind. Ein grosser Teil der Länge entsteht aus Wiederholungen: siebenmal ein fast gleicher Ausstiegssatz, fünfmal «garantiert keine bestimmte Reaktion» oder ähnlich, sechsmal «keine Pflicht(folge)» oder «keine feste Reihenfolge», dreimal «Du verstehst mich sowieso nicht.». Fachliche Aussagen stehen kaum doppelt.
+- Zum Vergleich: `rolle` 2627 und `selbstfuersorge` 2051 Wörter im Lesefluss (nach 2a-K).
+
+**Kürzungsvorschläge** (das Ziel ist erreicht; alle optional). Geschätzt sind die Wörter weniger im Lesefluss. Keine neuen Texte; Absicherungen zu Person, Ursachen, Diagnose, Verlauf und Schutz, die nur einmal vorkommen, bleiben.
+
+| ID | Seite › Abschnitt | Was genau | Wörter weniger | Fachstelle |
+| --- | --- | --- | ---: | --- |
+| K-K-a1 | `kommunizieren` › `moment`, `kippen` | Ausstiegssätze bündeln: Der Satz in «Ein Satz darf reichen» bleibt als Muster; bei «Eskalation» und «Nächster Schritt» genügt die Beschreibung ohne eigenen, fast gleichen Satz | 30 | ja (Beispielsätze des Bestands) |
+| K-K-a2 | `kommunizieren` › `zuhoeren` | «Eine bestimmte Reaktion lässt sich nicht garantieren.» und «… aber die Reaktion der anderen Person nicht garantieren.» stehen fünf Zeilen auseinander; einer genügt | 12 | nein |
+| K-K-a3 | `kommunizieren` › `zuhoeren` | «Zuhören, nachfragen und die eigene Sicht behalten dürfen gleichzeitig möglich sein.» und «Sie dürfen zuhören, nachfragen oder eine Pause machen.» zu einem Satz | 10 | ja (Wortlaut des Auftrags) |
+| K-K-a4 | `kommunizieren` › `worte` | «Du verstehst mich sowieso nicht.» mit derselben Antwort wie in Abbildung 1: in der Liste weglassen; dieselbe Antwort steht in Abbildung 1 (`anerkennen`) | 17 | ja (Auftrag nennt beide Stellen) |
+| K-K-b1 | `kommunizieren` › `beispiele` | «Typische schwierige Situationen» (im Bestand ein Akkordeon) in eine Vertiefung; der Satz «Wenn Sie sich um die Sicherheit sorgen, holen Sie eine professionelle Einschätzung.» bleibt sichtbar | 100 | nein (Struktur) |
+| K-C-a1 | `krise` › `belastung` | wie P2b-F-6 (b): «Diese Seite ersetzt keine professionelle Krisenberatung.» entfällt, Handlungsanleitung zuerst | 7 | ja (P2b-F-6) |
+
+**Summen:** `kommunizieren` Stufe a −69, Stufe b −100, danach etwa 2290 Wörter im Lesefluss; `krise` etwa 1500.
+
+#### C3 · Schreibweise
+
+- Kein «ß», keine „…“ (`grep` in `content/kommunizieren.html`, `content/krise.html`, `content/index.html`: 0).
+- Kein Telegrammstil im Fliesstext; Listenpunkte im Infinitiv wie auf den freigegebenen Seiten («das eigene Sprechtempo senken»).
+- **«Sie» am Satzanfang für Dinge:** «Sie bewerten keine Diagnose …» (die Bereiche), «Sie sind nicht typisch für alle Menschen mit Borderline.» (die Sätze), «Sie erlauben keine sichere Beurteilung …» (die Begriffe), «Sie sind nicht automatisch ein Zeichen fehlender Liebe.» (die Gefühle), «Sie sind keine Pflichtfolge, …» (die Stufen). Am Satzanfang ist das von der Anrede nicht zu unterscheiden (wie P2a-S-2).
+
+**Befunde S**
+
+- **P2b-S-1 · optional · Wiederholte Ausstiegssätze und Hinweisformeln auf `kommunizieren`.**
+  - **Beleg:** C2.
+  - **Vorschlag:** K-K-a1 bis a4; K-K-b1 nach Wahl.
+  - **Zuständig:** Fachstelle (P2b-F-12) für a1, a3, a4; bauende Sitzung für a2 und b1.
+- **P2b-S-2 · optional · Einstieg von `krise` › `belastung`.**
+  - **Beleg:** Lesetest `belastung`; 12 von 32 Sätzen verneint.
+  - **Vorschlag:** P2b-F-6 (b); die Absicherungen zu den Bereichen bleiben, wie entschieden.
+  - **Zuständig:** Fachstelle (P2b-F-6), danach die bauende Sitzung.
+- **P2b-S-3 · optional · Einzelstellen.**
+  - **Beleg und Vorschlag** (Bedeutung bleibt):
+    - «Sie bewerten …», «Sie sind nicht typisch …», «Sie erlauben …», «Sie sind nicht automatisch …» → das Subjekt nennen («Die Bereiche bewerten …», «Diese Sätze sind …»).
+    - «Auch verschiedene Gefühle, Meinungen oder Wünsche nach Nähe gehören dazu.» → sagen, wozu («… gehören zu einer Beziehung»), oder Bestandswortlaut b184.
+    - «Zeitliche Grenzen wirken am besten, …» → Bezug herstellen («Grenzen dafür, wie lange oder wann Sie sprechen, …»); neuer Wortlaut, Fachstelle.
+    - «Ein unbekannter Plan bedeutet keine Sicherheit.» → sagen, welcher Plan (z. B. «Wenn Sie nicht wissen, ob die Person einen Plan hat, heisst das nicht, dass sie sicher ist.»); neuer Wortlaut, Fachstelle.
+    - «keinen statistisch signifikanten Anstieg» → in Alltagssprache («… haben Suizidgedanken durch direktes Fragen nicht messbar zugenommen»); Fachstelle, weil Quellenaussage.
+    - «radikale Echtheit» im Lesefluss in einem Halbsatz erklären oder den Satz nach P2b-F-9 kürzen.
+  - **Zuständig:** bauende Sitzung; neue Wortlaute zur Freigabe.
+- **P2b-S-4 · optional · Beispiele und Gegenüberstellungen.**
+  - **Beleg:** «Person A / Person B» (Arztbesuch), «Alex / Robin», «die andere Person» (Geld); Bezeichnung «Übernehmen» in `anerkennen` ohne Wertung, während die Geld-Gegenüberstellung «Eher problematisch / Eher hilfreich» nutzt.
+  - **Vorschlag:** in allen drei Beispielen Namen; bei «Übernehmen» die Wertung sichtbar machen (z. B. «Übernehmen, eher belastend»).
+  - **Zuständig:** bauende Sitzung.
+
+### Teil D · Visualisierungs-Check und Bildsprache
+
+**Bildschirmfotos** bei 1280 und 360 px, je Theme Standard und «kontrast» (vier Fotos), angesehen. Masse:
+
+| Figur | Figur 1280 px | Zeichnung 1280 px | Figur 360 px | Zeichnung 360 px | Lage im Abschnitt (Abstand vom Abschnittsanfang 1280 / 360 px) |
+| --- | --- | --- | --- | --- | --- |
+| «Zwei Tassen» (`v-ko-tassen`) | 1104 × 680 | 760 × 238 | 320 × 716 | 320 × 100 | 218 / 362 px: direkt nach dem ersten Absatz von `anerkennen`, wie im Auftrag |
+
+**Beschreibung der Bildschirmfotos**
+
+- **1280 px:** Titel, Kernaussage als grosser Satz, Kurztext. Darüber der Zeichnung zwei Sätze mit blauer Randlinie: links unten «Du verstehst mich sowieso nicht.», rechts, drei Zeilen hoch, «Vielleicht verstehe ich nicht alles. Wenn du möchtest, sag mir, was dir gerade besonders wichtig ist.». Darunter ein breiter, hellblauer Tisch mit weichen Ecken. Auf ihm stehen zwei gleiche weisse Tassen von vorne, je mit zwei Dampflinien, die linke nahe am linken, die rechte nahe am rechten Tischende; die Henkel zeigen nach aussen. Zwischen den Tassen bleibt etwa die Hälfte des Tisches leer. Die Hinterkante des Tisches läuft hinter den Tassen durch.
+- **360 px:** Die zwei Sätze stehen untereinander über der Zeichnung. Die Tassen sind etwa 34 × 35 px gross und klar als Tassen mit Dampf erkennbar. Welche Tasse welchen Satz sagt, ergibt sich nur aus der Reihenfolge.
+- **«kontrast»:** Linien dunkelblau (`rgb(0, 40, 194)`), Tischfläche und Tassen gleich; nichts verschwindet.
+- **Kontrast der Linien** (WCAG 1.4.11): gegen Weiss 4,71 : 1 (Standard) und 10,08 : 1 («kontrast»), gegen die Tischfläche 3,59 : 1 und 7,70 : 1. Keine Linie unter 3 : 1.
+
+**Matrix** (E = erfüllt · T = teilweise · N = nicht erfüllt · – = nicht anwendbar)
+
+| Nr. | Prüfpunkt | «Zwei Tassen» | Beleg (bei T und N) |
+| --- | --- | --- | --- |
+| 1 | Plan liegt vor, Seite entspricht ihm | E | – |
+| 2 | Zeile je Abschnitt; Begründungen für Text passen | E | – |
+| 3 | Prüffrage beantwortet und eingelöst | E | – |
+| 4 | Kernaussage und Erklärtext; Hauptaussage nicht nur in der Vertiefung | E | – |
+| 5 | Ansatzpunkt (B, C, G) | – | – |
+| 6 | Mechanismus nicht doppelt gezeigt | E | – |
+| 7 | Kartenraster-Check | E | – |
+| 8 | Anordnung und Formen tragen Bedeutung | E | – |
+| 9 | Verteilt, keine Textwand | **E** | – |
+| 10 | Vereinfacht, nicht verfälscht; Grenzen; Quelle | E | – |
+| 11 | Ohne Animation, Aufklappen und Skript verständlich | E | – |
+| 12 | Bei 320 px lesbar; Textalternative vollständig | E | – |
+| 13 | Theme «kontrast» | E | – |
+| 14 | Fachlich freigegeben | N | `approvalStatus` «ausstehend»; Gate production `visual-approval` (P2b-F-11) |
+| 15 | Bildsprache passt; Wirkung (`resonance`) eingelöst | E | – |
+| 16 | Ein Bild, eine Idee; Erleben beschriften | E | – |
+| 17 | Keine ungewollten Bedeutungen | T | Die Tassen stehen an den zwei Tischenden mit leerer Mitte; das kann als Abstand oder Kühle gelesen werden, obwohl der Abschnitt Zuwendung meint. Von vorne gezeichnet stehen sie nebeneinander, nicht «gegenüber», wie Plan und Kurzbeschreibung sagen. Schmal ist die Zuordnung der Sätze nur über die Reihenfolge erkennbar (P2b-V-1) |
+
+**Abweichung von der Selbstprüfung** (fett): Punkt 9 E statt T. Die Seite hat nur eine Abbildung, und vier Abschnitte sind Text; das ist im Plan je Abschnitt begründet und von der Fachstelle so entschieden (keine zweite Kurve, Listen statt Treppe). Eine unbegründete Textwand liegt nicht vor; die Länge steht in Teil C2. Punkt 17 ist gleich (T), mit anderem Hauptgrund (Abstand der Tassen statt Tee und Henkel).
+
+**Bildsprache, Fragen B1–B11** (Zuordnung wie in Prüfrunde 2a, Teil D)
+
+| Frage | «Zwei Tassen» |
+| --- | --- |
+| B1 erster Eindruck | ruhig, warm, alltäglich: ein Tisch, zwei dampfende Tassen, ein Gespräch. Passt zu «zugewandt»; der harte Satz steht dazu im Kontrast, was die Aussage stützt |
+| B2 Form | organisch: weiche Tischform, leicht unregelmässige Tassen, runde Linienenden; keine Kästen |
+| B3 Ein Bild, eine Idee | ja; keine Legende, keine benannten Bildteile |
+| B4 Wiedererkennen und Ton | ja: «Du verstehst mich sowieso nicht.» ist ein Satz, den Angehörige kennen; würdevoll, nicht verniedlichend |
+| B5 Platz der Angehörigen | ja: die rechte Tasse mit der Antwort |
+| B6 Nebenbedeutungen | grosse leere Mitte (Abstand); Tee kann ein ruhiges Gespräch nahelegen, während der Text bei Eskalation Pause und Schutz nennt; keine Gefahr- oder Defektbilder |
+| B7 Wirkung | eingelöst über das Satzpaar: Wiedererkennen beim harten Satz, Entlastung bei der Antwort |
+| B8 Erleben beschriften | ja, zwei gesprochene Sätze |
+| B9 fachlich vereinfacht | ja: «Von aussen lässt sich nicht sicher erkennen, was hinter einem Satz steht.» (Grenzen des Bildes); Kernaussage aus dem Handout |
+| B10 Braucht es ein Bild? | knapp ja: Das Satzpaar trüge auch als `.puk-say`; die Zeichnung fügt Gleichwertigkeit und einen ruhigen Moment hinzu (Entscheid der Fachstelle) |
+| B11 Freundin-Test | eher ja, mit den Sätzen («So möchte ich antworten»); ohne Sätze ein Stillleben |
+| **Bewertung** | **trägt** (kleine Verfeinerung möglich, P2b-V-1) |
+
+**Befunde Visualisierungs-Check**
+
+- **P2b-V-1 · optional · «Zwei Tassen»: Abstand der Tassen.**
+  - **Beleg:** Punkt 17; Beschreibung 1280 px.
+  - **Vorschlag:** die Tassen näher zur Tischmitte rücken, damit sie als Gegenüber am selben Tisch lesen; fest bleiben zwei gleich grosse Tassen auf demselben Tisch. Die Kurzbeschreibung entsprechend prüfen («gegenüber» oder «nebeneinander»).
+  - **Zuständig:** Fachstelle (P2b-F-11 b), danach die bauende Sitzung.
+
+### Teil E · Bedienung und Barrierefreiheit (automatisiert)
+
+Chromium über Playwright, lokal; alle Werte selbst gemessen.
+
+- **Überlauf** (`scrollWidth − clientWidth` und Elemente ausserhalb des Fensters): 108 Messungen, alle 0 px.
+  - Seiten: `kommunizieren`, `krise`, `index`.
+  - Breiten: 320, 360, 375, 768, 1024, 1280 und 1440 px; 200 %: 640 px bei Faktor 2 und 1280 px mit Schriftgrösse 200 %.
+  - Je Theme Standard und «kontrast», je Vertiefungen zu und offen.
+- **Tastatur** (1280 px, reduzierte Bewegung):
+  - Tabstopps bis zur Fusszeile: `kommunizieren` 32, `krise` 25; erster Stopp «Zum Hauptinhalt»; bei jedem Stopp sichtbarer Fokus; jeder fokussierte Stopp liegt im Fenster.
+  - Reihenfolge: Kopf (Logo, fünf Punkte der Navigation, E-Mail-Adresse), Kapitelübersicht, dann Vertiefungen und Links im Text in Lesereihenfolge.
+  - Akkordeons: Enter öffnet 9 von 9 (`kommunizieren`) und 4 von 4 (`krise`), Leertaste schliesst alle; «Grenzen des Bildes» öffnet mit Enter.
+  - Bewegung: Unter reduzierter Bewegung laufen nur Übergänge von 0,01 ms (Breite, Schatten, Drehung des Pfeils); ohne reduzierte Bewegung läuft eine Sekunde nach dem Laden keine Animation.
+- **Ohne Skript:** Panels 9 von 9 und 4 von 4 sichtbar.
+- **Druck** (`emulateMedia print`): alle Panels und «Grenzen des Bildes» sichtbar (10 von 10, 4 von 4). PDF erzeugt (25 und 16 Seiten); nicht Seite für Seite angesehen.
+- **Kontrast** (WCAG 1.4.3): aller Text mit eigenem Textknoten in `main`, Vertiefungen offen, 1280 und 360 px, beide Themes.
+  - `kommunizieren` 265, `krise` 146, `index` 28 Elemente; keines unter AA.
+  - Tiefster Wert 4,71 : 1 (Kicker) im Standard-Theme, 8,19 : 1 im Theme «kontrast».
+- **Nicht prüfbar:** reale Screenreader-Läufe, Hardwaretastatur und Touch. Sie brauchen eine Person (Stufe 5) und sind offen, nicht bestanden.
+
+### Teil F · Technik und Zuständigkeit (Stichprobe)
+
+| Prüfung | Ergebnis (selbst ausgeführt am Stand `26af566`) |
+| --- | --- |
+| `node tools/build.mjs` | 15 Seiten, Build r4-7, Gate draft: **0 blockierend, 11 Hinweise**: 1 × `visual-approval` (`v-ko-tassen`), 8 × `placeholder-approval`, 1 × `site-url`, 1 × `review-report`. `git status` danach ohne Änderung |
+| `node tools/gate.mjs --selftest` | **53/53 bestanden** |
+| `node tools/gate.mjs --production` | **10 blockierend, 1 Hinweis**: 1 × `visual-approval`, 8 × `placeholder-approval` (`index` › Einstiege und die Seitenplatzhalter von `diagnose`, `behandlung`, `genesung`, `unterstuetzung`, `fragen`, `quellen`, `ueber`), 1 × `review-report`; Hinweis `site-url`. Wie im Bauauftrag 2b, Abschnitt 7, erwartet |
+| `node abgleich/pruefe-abgleich.mjs` | **4502 Zeilen, 0 ohne Fundstelle** |
+| `node abgleich/kennzahlen.mjs` | Wörter `kommunizieren` 3370, `krise` 2075 (alt: Seite allein 4114 und 1916); Absicherungen je 100 Wörter alt → neu 3,23 → 2,64 und 2,04 → 2,17; Semikolons 36 → 0 und 18 → 1 |
+| `node abgleich/verneinung.mjs` | `kommunizieren` 83 von 402 (21 %), `krise` 52 von 241 (22 %); alt 16 % und 23 % |
+| `node abgleich/bedienung.mjs` | Tabstopps `index` 15, `kommunizieren` 32, `krise` 25; Höhe bei 360 px 4636 / 24 890 / 16 436 px; Abbildung 716 px. Die Seiten der Etappen 1 und 2a gleich wie nach 2a-K |
+
+**Kennzahlen der bauenden Sitzung:** nachgerechnet und **bestätigt**, ohne Abweichung: Wörter C1 je Seite und Abschnitt, mit Vertiefungen und nach `kennzahlen.mjs`; Anteile mit Verneinung (C1 und `verneinung.mjs`); Tabstopps, Seiten- und Figurhöhen; Selbsttest, Produktionsgate und Abgleich; Linienkontraste der Zeichnung (4,71 / 10,08 / 3,59 / 7,70 : 1). Die Zahl der Textelemente für den Kontrast weicht ab (Selbstprüfung 286 / 165 / 47, Prüfsitzung 265 / 146 / 28), weil die Prüfsitzung nur Elemente mit eigenem Textknoten ohne `.puk-sr` zählt; das Ergebnis (keines unter AA, tiefster Wert 4,71 : 1) ist gleich.
+
+**Zuständigkeit und Krisenzugang** (`kommunizieren.html`, `krise.html`, `index.html` und ihre `content/`-Dateien):
+
+- `tel:`-Links: 0. `style`-Attribute: 0. Hexwerte oder `fill=`/`stroke=`-Attribute im SVG: 0.
+- Telefonnummern im sichtbaren Text: 0 (gesucht: «+41», «0800», Muster «0xx xxx xx xx», 143, 144, 147, 117, 112, 118).
+- Kein Notfallblock; kein Link auf eine Notfallseite.
+- **Verweis im Text:** nur über den Platzhalter (`kommunizieren` 2, `krise` 4), Wortlaut aus `responsibility.inline`; keiner in `figure` oder Vertiefung; höchstens einer je Abschnitt; `sensitiveTopics` beider Seiten: «selbstgefaehrdung», «gewalt», «akute-krise».
+
+| Seite › Abschnitt | Was direkt davor steht | Lage bei 360 px | Nach einer Handlungsanleitung? | Trägt er? |
+| --- | --- | --- | --- | --- |
+| `kommunizieren` › `kippen` | «Bei Bedrohung oder Gewalt beenden Sie das Gespräch, schaffen Abstand und bringen sich in Sicherheit.» | 13 321 px | ja | ja |
+| `kommunizieren` › `worte` | «… Versuchen Sie nicht, Motiv oder Gefährdung allein zu beurteilen.» | 18 177 px | ja | ja |
+| `krise` › `belastung` | «Bei unmittelbarer Gefahr holen Sie sofort Hilfe und schützen sich selbst.» | 1830 px | ja | ja; Unsicherheit fehlt in der Anleitung (P2b-F-2) |
+| `krise` › `waehrend` | «… Bei unmittelbarer Gefahr holen Sie Hilfe über den Notruf.» | 4634 px | ja | ja |
+| `krise` › `sagen` | – | – | **zwei Anleitungen ohne Verweis**: «… informieren die Leitstelle.» (6048 px) und «Bei Bedrohung oder Gewalt gehen Sie auf Abstand und holen Hilfe.» (7436 px) | nein (P2b-F-1 c) |
+| `krise` › `suizid` | «… Zum Beispiel: «Ich mache mir Sorgen um dich. Denkst du gerade daran, dir das Leben zu nehmen?»» | 8496 px | ja | ja |
+| `krise` › `danach` | – | – | **Anleitung ohne Verweis**: «Bei möglicher unmittelbarer Lebensgefahr rufen Sie den Rettungsdienst.» (10 777 px, Abschnittsbeginn 10 628 px) | nein (P2b-F-1 b) |
+| `krise` › `bleibt` | «Bei akuter Gefahr schützen Sie sich und holen sofort Hilfe.» | 14 612 px | ja | ja |
+
+**Etappe 1 und 2a unverändert:** `git diff e3f7187 26af566` auf `content/` und die gebauten Seiten: nur `index` › `einstiege` (ein neuer Eintrag, neuer Platzhalter) sowie `kommunizieren` und `krise`; `verstehen`, `beziehungen`, `grenzen`, `rolle` und `selbstfuersorge` ohne Änderung (`--word-diff`: 0 Änderungen).
+
+**Befunde T:** keine. Die zwei fehlenden Verweise im Text sind fachliche Fragen und stehen in P2b-W1-1.
+
+### Zählung der Befunde der Prüfrunde 2b
+
+| Stufe | kritisch | wichtig | optional |
+| --- | ---: | ---: | ---: |
+| W1 | 0 | 4 | 3 |
+| W2 | 0 | 1 | 3 |
+| S | 0 | 0 | 4 |
+| V (Visualisierungs-Check) | 0 | 0 | 1 |
+| B (Bedienung und Barrierefreiheit) | 0 | 0 | 0 |
+| T (Technik und Zuständigkeit, Stichprobe) | 0 | 0 | 0 |
+
+Dazu 12 Fragen an die Fachstelle (P2b-F-1 bis P2b-F-12) und 6 Kürzungsvorschläge (K-K-a1 bis K-C-a1).
+
+**Gesamturteil:** Fachlich tragen die zwei Seiten. Sie übertragen den Bestand mit seinen Absicherungen, übernehmen Verantwortung, Suizid und Kinder im Wortlaut der freigegebenen Seiten und halten die Zuständigkeit ohne Nummern ein. Vor der Freigabe des Wortlauts muss die Fachstelle vier Stellen auf `krise` entscheiden, die alle Schutz und Hilfe betreffen (P2b-F-1 bis -4), und die Begriffe von «Pause statt Streit» (P2b-F-5). Sinnvoll ist, dass eine Korrektur 2b-K die Entscheide F-1 bis F-8 und die Bemerkungen im Abgleich (P2b-W1-7) in einem Durchgang umsetzt; danach kann die Fachstelle die neuen Sätze und die Abbildung freigeben (P2b-F-11).
+
+**Nicht geprüft, und warum:**
+
+- **Vorschau auf Netlify:** Die Adresse `deploy-preview-10--puk-website-profil.netlify.app` war aus dieser Umgebung gesperrt (Proxy: «connect_rejected»). Geprüft ist der gebaute Stand im Repository über einen lokalen Server; ob die Vorschau denselben Stand zeigt, ist offen.
+- **Reale Screenreader-Läufe, Hardwaretastatur und Touch:** brauchen eine Person (Teil E).
+- **Verweise von den freigegebenen Seiten auf die neuen Seiten** (Vorschläge der bauenden Sitzung): auftragsgemäss nicht geprüft.
+- **Linehan (1997) im Original:** nicht eingesehen (P2b-F-9).
+- **Zweite, unabhängige Prüfsitzung** (Prüftiefe, empfohlen für W1 und Visualisierungs-Check): gibt es für diese Runde nicht; alle Befunde stammen aus dieser einen Prüfung.
+- **Auftrag ab Teil C2 abgeschnitten:** Die Teile C2 bis F folgen dem Aufbau der Prüfrunde 2a. Fehlt darin ein Prüfpunkt des vollständigen Auftrags, ist er offen.
 
 ## Prüfrunde 2a (10.10.2026, Stand 94afac7)
 
