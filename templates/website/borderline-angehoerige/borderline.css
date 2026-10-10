@@ -1,0 +1,132 @@
+/* Borderline – Orientierung für Angehörige · website-eigene Ergänzung, nach starter.css einbinden.
+   Nur Anordnung und Schrift über Profil-Tokens; keine eigenen Farben, Schatten, Schriften oder freien Pixelwerte.
+   Breite und schmale Darstellung folgen den Container-Abfragen der Muster (.puk-vis-wide, Grenze 560 px).
+   Lesetext in Figuren steht in Seitenschrift (Leitlinie 03 «Lesen in Seitenschrift»). */
+
+/* Muster B mit fünf Stationen (Bedeutungsschleife). Das Muster setzt vier Stationen auf ein 3×3-Raster;
+   hier Station 1 oben, 2 rechts, 3 unten rechts, 4 unten links, 5 links. Schmal gilt die Liste des Musters;
+   alle Stationen sind dort gleich breit (Station 3 stand bei 360 px versetzt, weil das Muster
+   die Stationen auch schmal zentriert). Station 3 und 4 sitzen breit am unteren Rand ihrer Rasterzeile, damit zwischen
+   Station 4 und der höheren Station 5 Platz für den Pfeil bleibt; die Pfeile sind darauf gemessen (abgleich/bedienung.mjs). */
+.bl-cycle--5 li:nth-child(3){grid-area:3/3;align-self:end}
+.bl-cycle--5 li:nth-child(4){grid-area:3/1;align-self:end}
+.bl-cycle--5 li:nth-child(5){grid-area:2/1}
+/* Korrektur 1h (Bildsprache-Audit BS-4, Variante B): je Station drei Zeilen – wer handelt, der Beispielsatz als Hauptzeile,
+   klein Station und Modellbegriff; Felder mit weichen Ecken (radius-md, Entscheid auf Rückfrage 10.10.2026). */
+.bl-cycle--5 li{border-radius:var(--radius-md)}
+/* Mit dem Beispielsatz in Seitenschrift sind die Felder höher; damit zwischen Station 4 und 5 Platz für den Pfeil bleibt,
+   ist die Schleife breit bis 640 px statt 600 px gross (gleiche Zeichnung, gleichmässig skaliert; gemessen mit abgleich/bedienung.mjs). */
+.puk-vis-cycle.bl-cycle--5{max-width:640px}
+.bl-cycle__who{font:var(--type-body-sm);font-weight:var(--fw-medium);color:var(--text-default)}
+.bl-cycle__ex{font:var(--type-body);color:var(--text-default)}
+/* Mit fünf Stationen trägt die Kreisanordnung nur bei voller Breite (Muster 600 px, hier 640 px): darunter überlappen
+   Station 4 und 5, und der Pfeil 4 → 5 verschwindet. Deshalb gilt die Liste des Musters hier schon bis 700 px
+   Containerbreite (Regeln wie im Muster, Masse über Tokens; bis Korrektur 1g 660 px, mit den höheren Feldern aus 1h
+   begann der Pfeil 4 → 5 bei 720 px Fensterbreite sonst im Feld von Station 4). */
+@container (max-width:700px){
+  .bl-cycle--5>svg{display:none}
+  .bl-cycle--5{aspect-ratio:auto}
+  .bl-cycle--5 ol{position:relative;display:flex;flex-direction:column;padding-right:var(--space-10)}
+  .bl-cycle--5 li,.bl-cycle--5 li:nth-child(3),.bl-cycle--5 li:nth-child(4){margin:0;text-align:left;position:relative;align-self:stretch}
+  .bl-cycle--5 li:not(:last-child){margin-bottom:var(--space-6)}
+  .bl-cycle--5 li:not(:last-child)::after{content:"";position:absolute;left:var(--space-6);top:100%;height:var(--space-6);border-left:var(--border-width-strong) solid var(--puk-blue-100)}
+  .bl-cycle--5 ol::after{content:"";position:absolute;right:var(--space-3);top:calc(var(--space-6) + var(--space-1));bottom:calc(var(--space-6) + var(--space-1));width:var(--space-5);border:var(--border-width-strong) solid var(--puk-blue-100);border-left:0}
+  .bl-cycle--5 ol::before{content:"";position:absolute;right:calc(var(--space-3) + var(--space-5));top:calc(var(--space-5) + var(--space-1));border-style:solid;border-width:var(--space-2) var(--space-3) var(--space-2) 0;border-color:transparent var(--puk-blue-100) transparent transparent}
+  .bl-cycle-fig .puk-vis-cycle__loop{display:flex}
+  .bl-cycle-fig [data-cycle-wide]{display:none}
+  .bl-cycle-fig [data-cycle-narrow]{display:inline}
+}
+
+/* Muster A mit direkter Beschriftung (Anspannungskurve): Zeichnung als SVG, Beschriftungen als
+   HTML-Text darüber (Leitlinie 07: Beschriftungen sind echter Text). Lage in Prozent der Zeichnung.
+   Kurve: schmal entfallen nur die Beschriftungen im Bild; die Liste unter der Zeichnung steht in allen Breiten. */
+.bl-fig{position:relative;max-width:calc(var(--space-20) * 8);aspect-ratio:2/1;margin:0 auto var(--space-6)}
+.bl-fig>svg{position:absolute;inset:0;width:100%;height:100%}
+.bl-fig__label{position:absolute;margin:0;font:var(--type-body-sm);font-weight:var(--fw-medium);color:var(--text-default);line-height:var(--lh-subheading)}
+/* Anspannungskurve, Zeichnung 640 × 280: eine Kurve über den Gesprächsverlauf (links tief, Scheitel bei x 392).
+   Die vier Stellen liegen auf der Kurve: 1 (99, 235), 2 (275, 139), 3 (392, 60), 4 (532, 151).
+   Nummern als HTML-Marken wie in der Liste (Muster G); Stelle 2 ist der Ansatzpunkt, mit doppeltem Ring. */
+.bl-fig--kurve{aspect-ratio:640/280}
+.bl-fig--kurve .bl-kurve__n{position:absolute;transform:translate(-50%,-50%)}
+.bl-kurve__n--1{left:15.5%;top:83.9%}
+.bl-kurve__n--2{left:43%;top:49.7%}
+.bl-kurve__n--3{left:61.3%;top:21.4%}
+.bl-kurve__n--4{left:83.2%;top:54%}
+.puk-vis-build__n.bl-kurve__ansatz{outline:var(--border-width-strong) solid var(--puk-blue-100);outline-offset:var(--space-1)}
+.bl-fig--kurve .bl-fig__label{white-space:nowrap}
+/* Korrektur 1h/1i: Die Beschriftung an Stelle 4 («Es kann wieder ruhiger werden.», seit 1i) hat erst ab 960 px Containerbreite
+   rechts der Zeichnung Platz; darunter ragte sie aus der Figur (900 px Fensterbreite: 48 px, Seite 12 px Überlauf; 1h: 800 px).
+   Dann gelten Nummern und Liste wie schmal. */
+@container (max-width:960px){.bl-fig--kurve .bl-fig__label{display:none}}
+.bl-fig--kurve .bl-kurve__label--1{left:15.5%;top:91.4%;transform:translateX(-50%)}
+.bl-fig--kurve .bl-kurve__label--2{right:61.4%;top:49.7%;transform:translateY(-50%)}
+.bl-fig--kurve .bl-kurve__label--3{left:61.3%;bottom:88.6%;transform:translateX(-50%)}
+.bl-fig--kurve .bl-kurve__label--4{left:87%;top:44.6%;transform:translateY(-50%)}
+/* Liste unter der Kurve: Erklärtext in Seitenschrift; Überschrift, «Was hilft» und Ansatzpunkt nicht kleiner */
+.bl-kurve__liste h3{font-size:var(--web-size-h4);font-weight:var(--fw-medium);line-height:var(--lh-subheading)}
+.bl-kurve__liste p{margin:var(--space-2) 0 0;font-size:var(--web-size-body);font-weight:var(--web-fw-body);line-height:var(--lh-body);color:var(--text-default)}
+.bl-kurve__key,.bl-kurve__liste .puk-vis-ansatz__key{display:block;font-size:var(--web-size-body);font-weight:var(--fw-medium);line-height:var(--lh-subheading)}
+.bl-kurve__liste .puk-vis-ansatz{margin-top:var(--space-3)}
+.bl-kurve__liste .puk-say{margin:var(--space-3) 0 0}
+.bl-kurve__liste .puk-say__item{margin:0}
+.bl-kurve__liste .puk-vis-build__n.bl-kurve__ansatz{margin:var(--space-1)}
+@container (max-width:560px){
+  .bl-fig{max-width:calc(var(--space-20) * 5)}
+  .bl-fig--kurve .bl-fig__label{display:none}
+}
+
+/* Muster E, Zwei Sichten: je Schritt eine Zeile mit beiden Sichten; schmal je Schritt beide Sichten nacheinander */
+.bl-sichten.puk-vis-compare{grid-template-columns:minmax(0,1fr);gap:var(--space-6)}
+.bl-sicht{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--space-3) var(--space-6)}
+.bl-sicht>h3{grid-column:1/-1;margin:0}
+.bl-sicht .puk-vis-compare__col p:not(.puk-vis-compare__key){margin:var(--space-2) 0 0;font-size:var(--web-size-body);font-weight:var(--web-fw-body);line-height:var(--lh-body);color:var(--text-default)}
+
+@container (max-width:560px){
+  .bl-sicht{grid-template-columns:minmax(0,1fr)}
+}
+
+/* Schrift in Figuren: Überschriften, «Was hilft» und Ansatzpunkte nicht kleiner als der Erklärtext daneben.
+   Überschriften im stärksten Gewicht des Profils (--fw-medium; einen Token für Fett gibt es nicht).
+   Figuren mit Erklärtext in Seitenschrift (21 px): Anspannungskurve (Regeln dort), Zwei Sichten. */
+.bl-sicht>h3{font-size:var(--web-size-h4);font-weight:var(--fw-medium);line-height:var(--lh-subheading)}
+.bl-sicht .puk-vis-compare__key{font-size:var(--web-size-body);font-weight:var(--fw-regular);line-height:var(--lh-subheading)}
+/* Figuren mit Erklärtext in type-body-sm (15 px): Bezeichnung «Ansatzpunkt» in der Schleife und im Ansatzpunkt-Kasten */
+.puk-vis-cycle__key,.puk-vis-ansatz__key{font:var(--type-body-sm);font-weight:var(--fw-medium)}
+
+/* Eisberg (Korrektur 1h, Bildsprache-Audit BS-2): eigene Linienzeichnung 760 × 400 nach der Skizze der Fachstelle.
+   Die Wörter stehen als HTML-Text im Eisberg, Lage in Prozent der Zeichnung; die Gruppenüberschriften nur für Screenreader.
+   Schmal: Zeichnung ohne Wörter über die ganze Breite, darunter beide Gruppen als Listen und die Frage. Die schmale Darstellung
+   gilt schon unter 800 px Containerbreite (Auftrag: 560 px): Darunter ragen Wörter in type-body-sm über den Umriss
+   (gemessen bei 754 px: «Vorwürfe», bei 644 px drei Wörter), und kleiner als type-body-sm darf die Schrift nicht werden. */
+.bl-eis{position:relative;max-width:760px;aspect-ratio:760/400;margin:0 auto var(--space-6)}
+.bl-eis__art{position:absolute;inset:0;display:block;width:100%;height:100%}
+.bl-eis__zone ul{margin:0;padding:0;list-style:none}
+.bl-eis__key{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.bl-eis__w{position:absolute;margin:0;transform:translate(-50%,-50%);font:var(--type-body-sm);color:var(--text-default);white-space:nowrap}
+.bl-eis__w--1{left:44.5%;top:21%}
+.bl-eis__w--2{left:55.3%;top:21%}
+.bl-eis__w--3{left:42.9%;top:29.5%}
+.bl-eis__w--4{left:57.1%;top:29.5%}
+.bl-eis__w--5{left:41.6%;top:48.5%}
+.bl-eis__w--6{left:59.5%;top:48.5%}
+.bl-eis__w--7{left:39.5%;top:60%}
+.bl-eis__w--8{left:58.4%;top:60%}
+.bl-eis__w--9{left:50%;top:71.5%}
+.bl-eis__w--10{left:50.5%;top:81.5%}
+.bl-eis__frage{position:absolute;left:78.9%;top:14.5%;max-width:21%}
+@container (max-width:800px){
+  .bl-eis{aspect-ratio:auto;max-width:none}
+  .bl-eis__art{position:static;height:auto}
+  .bl-eis__key{position:static;width:auto;height:auto;margin:var(--space-4) 0 var(--space-2);overflow:visible;clip:auto;white-space:normal;font:var(--type-body);font-weight:var(--fw-medium);color:var(--text-default)}
+  .bl-eis__zone ul{display:flex;flex-wrap:wrap;gap:var(--space-1) var(--space-4)}
+  .bl-eis__w,.bl-eis__w--10{position:static;transform:none;white-space:normal;font:var(--type-body)}
+  .bl-eis__frage{position:static;max-width:none;margin-top:var(--space-5)}
+}
+
+/* Momentaufnahmen (Korrektur 1i, P4-F-4): Zeile über den beiden Sätzen, wer spricht; über die ganze Breite der Szene,
+   schmal (eine Spalte) steht sie ebenfalls über den Sätzen. Ohne Rahmen, Farbe und Schrift über Tokens. */
+.bl-scene__lead{grid-column:1/-1;margin:0 0 var(--space-2);font:var(--type-body-sm);color:var(--text-default)}
+
+/* Auf sich achten, Abschnitt 02 (Etappe 2a): Text direkt nach der Abbildung «Ein freier Abend» (Bauauftrag 2a, Abschnitt 4).
+   Zweites Raster im selben Abschnitt, linke Spalte leer; Abstand zur Figur wie .puk-vis-wide über der Figur. */
+.bl-nach-figur{margin-top:var(--space-8)}

@@ -1,0 +1,280 @@
+{
+  "$comment": "PUK Website Kit 1.10.1-r4 · abgeleitet – Seitenvertrag des Psychoedukations-Starters. Synthetische Musterwerte. Pflichtfelder und Regeln: README.md in diesem Ordner. Nach jeder Änderung: node tools/build.mjs, danach node tools/gate.mjs (Entwurf) bzw. node tools/gate.mjs --production.",
+  "kitRevision": "PUK Website Kit 1.10.1-r4 · abgeleitet",
+  "canonicalSource": "PUK Zürich Design System 1.10.1 (unverändert)",
+  "assetVersion": "r4-4",
+  "siteTitle": "Psychoedukation verstehen – Musterwebsite",
+  "shortDescription": "Synthetische Musterwebsite mit drei psychoedukativen Referenzseiten und Seitenvorlage. Keine fachlichen Aussagen, keine realen Kontakte.",
+  "language": "de-CH",
+  "favicon": "assets/favicon.svg",
+  "logo": "assets/logo.svg",
+  "stylesheets": [
+    "../../../styles.css",
+    "../longform/visual-patterns.css",
+    "../longform/erklaermuster.css",
+    "starter.css"
+  ],
+  "contentOwner": "Fachstelle Angehörigenarbeit PUK",
+  "editorialStatus": "synthetic-reference",
+  "editorialStatusLabel": "Synthetische Referenz, nicht zur Veröffentlichung bestimmt",
+  "disclaimer": "Diese Website ersetzt keine individuelle Abklärung, Beratung oder Behandlung.",
+  "responsibility": {
+    "label": "Zuständigkeit",
+    "text": "Die Fachstelle Angehörigenarbeit der PUK berät Angehörige kostenlos und vertraulich: angehoerigenarbeit@pukzh.ch. Sorgen Sie sich akut um das Leben oder die Sicherheit eines Menschen, holen Sie sofort Hilfe: ärztlicher Notfalldienst oder Notfallstation, bei Gefahr die Polizei.",
+    "owner": "Fachstelle Angehörigenarbeit PUK",
+    "reviewStatus": "geprueft",
+    "reviewedBy": "Fachstelle Angehörigenarbeit PUK",
+    "reviewedAt": "09.10.2026",
+    "inline": {
+      "text": "Sorgen Sie sich akut um das Leben oder die Sicherheit eines Menschen, holen Sie sofort Hilfe: ärztlicher Notfalldienst oder Notfallstation, bei Gefahr die Polizei.",
+      "reviewStatus": "geprueft",
+      "reviewedBy": "Fachstelle Angehörigenarbeit PUK",
+      "reviewedAt": "09.10.2026",
+      "$comment": "Verweis im Text (Profilentscheid 09.10.2026): nur über den Platzhalter <p data-responsibility-inline></p>, nur bei Selbstgefährdung, Gewalt oder akuter Krise. Wortlaut von der Fachstelle fachlich geprüft am 09.10.2026."
+    }
+  },
+  "sender": {
+    "orgUnit": "Fachstelle Angehörigenarbeit",
+    "institution": "Psychiatrische Universitätsklinik Zürich",
+    "email": "angehoerigenarbeit@pukzh.ch",
+    "status": "freigegeben",
+    "statusLabel": "Freigegeben"
+  },
+  "pages": [
+    {
+      "id": "index",
+      "title": "Übersicht",
+      "href": "index.html",
+      "navLabel": "Übersicht",
+      "status": "published",
+      "primaryTask": "Einen passenden Einstieg in eines von drei Themen wählen",
+      "description": "Einstiegsseite der synthetischen Musterwebsite: drei Lesepfade zu Beziehungen, Behandlung und Unterstützung.",
+      "sensitiveTopics": [],
+      "visualPlan": [
+        {
+          "id": "v-idx-text",
+          "section": "Lesepfade",
+          "sectionId": "lesepfade",
+          "goal": "Einen passenden Einstieg wählen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: drei gleichwertige Einstiege ohne Beziehung untereinander.",
+          "approvalStatus": "entfällt"
+        },
+        {
+          "id": "v-idx-entstehung",
+          "section": "Einordnung",
+          "sectionId": "entstehung",
+          "goal": "Wissen, woher die drei Seiten stammen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: kurzer Hinweis auf die Herkunft der Seiten und ein Download-Platzhalter, keine Beziehung, die eine Darstellung erklären müsste.",
+          "approvalStatus": "entfällt"
+        }
+      ]
+    },
+    {
+      "id": "beziehungen-verstehen",
+      "title": "Beziehungen verstehen",
+      "href": "beziehungen-verstehen.html",
+      "navLabel": "Beziehungen",
+      "status": "published",
+      "primaryTask": "Wechselwirkungen in nahen Beziehungen erkennen und einordnen",
+      "description": "Synthetische Referenzseite: ein Kreislauf aus vier Stationen und eine redaktionelle Illustration als Platzhalter.",
+      "sensitiveTopics": [
+        "gewalt",
+        "akute-krise"
+      ],
+      "visualPlan": [
+        {
+          "id": "v-bz-kreislauf",
+          "section": "01 Muster",
+          "sectionId": "muster",
+          "goal": "Verstehen, dass eine Reaktion zum neuen Anlass werden kann",
+          "format": "cycle",
+          "statement": "Anlass → Deutung → Reaktion → Wirkung; die Wirkung wird zum neuen Anlass",
+          "source": "Eigene didaktische Darstellung, kein Fachmodell",
+          "alternative": "Textfassung in der Bildlegende (aria-describedby)",
+          "reason": "Ein Kreislauf ist im Fliesstext schwer zu halten.",
+          "approvalStatus": "ausstehend",
+          "understood": "Dass die eigene Reaktion zum neuen Anlass werden kann – eine Schleife zeigt das sofort, ein Satz nur nacheinander.",
+          "resonance": "Entlastung: Ich sehe, wie wir beide in eine Schleife geraten – und dass ich an einer Stelle anders reagieren kann.",
+          "entryPoint": "Bei Station 2 «Deutung»: nachfragen, wie etwas gemeint war, bevor man antwortet (Musterinhalt)."
+        },
+        {
+          "id": "v-bz-illustration",
+          "section": "02 Nähe und Abstand",
+          "sectionId": "naehe",
+          "goal": "Einen ruhigen, nicht wertenden Zugang zu Nähe und Abstand schaffen",
+          "format": "illustration",
+          "statement": "Metapher: zwei Formen, die sich annähern und wieder Raum lassen",
+          "source": "Bildquelle offen – abstrakter Platzhalter",
+          "alternative": "Alternativtext-Entwurf im Freigabeblock",
+          "reason": "Erleichtert den emotionalen Zugang; bis zur Freigabe abstrakter Platzhalter.",
+          "approvalStatus": "ausstehend",
+          "understood": "Nähe und Abstand als Bewegung zweier Formen: ein ruhiger, nicht wertender Zugang, den Text allein schwer schafft.",
+          "resonance": "Wiedererkennen: Nähe und Abstand dürfen sich abwechseln; beides gehört zu einer Beziehung."
+        },
+        {
+          "id": "v-bz-sicherheit",
+          "section": "03 Wenn Konflikte bedrohlich werden",
+          "sectionId": "bedrohlich",
+          "goal": "Sicherheit vor Verstehen stellen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: In einer möglichen Gefahrensituation braucht es einen kurzen, direkten Hinweis ohne Grafik.",
+          "approvalStatus": "entfällt"
+        },
+        {
+          "id": "v-bz-einordnung",
+          "section": "04 Einordnung",
+          "sectionId": "einordnung",
+          "goal": "Wissen, was die Seite leistet und wo es weitergeht",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: kurze Einordnung mit einem Verweis, kein Zusammenhang.",
+          "approvalStatus": "entfällt"
+        }
+      ]
+    },
+    {
+      "id": "behandlung-verstehen",
+      "title": "Behandlung verstehen",
+      "href": "behandlung-verstehen.html",
+      "navLabel": "Behandlung",
+      "status": "published",
+      "primaryTask": "Den Ablauf einer Musterbehandlung kennen und zwei Formen vergleichen",
+      "description": "Synthetische Referenzseite: Prozesspfad in fünf Schritten und ein Vergleich zweier Terminformen. Kein Sicherheitszugang nötig.",
+      "sensitiveTopics": [],
+      "visualPlan": [
+        {
+          "id": "v-bh-ablauf",
+          "section": "01 Ablauf",
+          "sectionId": "ablauf",
+          "goal": "Abfolge und optionalen Schritt erkennen",
+          "format": "process",
+          "statement": "Fünf Schritte in fester Reihenfolge; Schritt 4 ist optional",
+          "source": "Eigene didaktische Darstellung, synthetischer Musterablauf",
+          "alternative": "Geordnete Liste mit Schrittnummer; Kurzfassung über aria-describedby",
+          "reason": "Abfolge und Option werden auf einen Blick sichtbar.",
+          "approvalStatus": "ausstehend",
+          "understood": "Reihenfolge und den einen optionalen Schritt auf einen Blick.",
+          "resonance": "Sicherheit: Ich weiss, was als Nächstes kommt.",
+          "entryPoint": "Bei Schritt 1 «Erstes Gespräch»: eigene Fragen mitbringen (Musterinhalt; siehe Abschnitt «Eigene Fragen notieren»)."
+        },
+        {
+          "id": "v-bh-vergleich",
+          "section": "02 Zwei Formen",
+          "sectionId": "formen",
+          "goal": "Zwei Terminformen nach gleichen Merkmalen vergleichen",
+          "format": "comparison",
+          "statement": "Termin vor Ort und Termin per Video unterscheiden sich in Ort, Weg, Umgebung und Technik",
+          "source": "Eigene didaktische Darstellung, synthetische Merkmale",
+          "alternative": "Beschriftete Merkmalslisten; Kurzfassung über aria-describedby",
+          "reason": "Gleiche Merkmale nebeneinander sind schneller vergleichbar als zwei Absätze.",
+          "approvalStatus": "ausstehend",
+          "understood": "Die Unterschiede der beiden Terminformen, weil dieselben Merkmale nebeneinanderstehen.",
+          "resonance": "Ruhe: Ich kann wählen, welche Form für uns passt."
+        },
+        {
+          "id": "v-bh-fragen",
+          "section": "03 Fragen",
+          "sectionId": "fragen",
+          "goal": "Eigene Fragen vorbereiten",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: eine Liste von Fragen ohne Beziehung untereinander.",
+          "approvalStatus": "entfällt"
+        }
+      ]
+    },
+    {
+      "id": "unterstuetzung-finden",
+      "title": "Unterstützung finden",
+      "href": "unterstuetzung-finden.html",
+      "navLabel": "Unterstützung",
+      "status": "published",
+      "primaryTask": "Einen passenden nächsten Schritt zur Unterstützung wählen",
+      "description": "Synthetische Referenzseite: Entscheidungsweg mit zwei Fragen, Beziehungskarte, Kontakt-Platzhalter mit häufigen Fragen.",
+      "sensitiveTopics": [],
+      "visualPlan": [
+        {
+          "id": "v-us-wegweiser",
+          "section": "01 Orientierung",
+          "sectionId": "wegweiser",
+          "goal": "In zwei Fragen den passenden nächsten Schritt finden",
+          "format": "decision",
+          "statement": "Frage 1 Verstehen → Themenseiten; Frage 2 Gespräch → Kontaktweg",
+          "source": "Eigene didaktische Darstellung, keine Triage",
+          "alternative": "Geordnete Liste mit Ja-/Nein-Zweigen als Text; Kurzfassung über aria-describedby",
+          "reason": "Verzweigungen sind als Weg leichter zu verfolgen als im Fliesstext.",
+          "approvalStatus": "ausstehend",
+          "understood": "Welcher nächste Schritt passt – zwei Fragen als Weg sind schneller zu verfolgen als Wenn-dann-Sätze.",
+          "resonance": "Orientierung: Ich finde ohne langes Suchen einen nächsten Schritt."
+        },
+        {
+          "id": "v-us-netz",
+          "section": "02 Netz",
+          "sectionId": "netz",
+          "goal": "Erkennen, dass Unterstützung auf mehrere Menschen und Stellen verteilt werden kann",
+          "format": "relationship-map",
+          "statement": "Nah, Umfeld, fachliche Unterstützung als Kreise um «Sie»; gestrichelt = noch nicht genutzt",
+          "understood": "Dass auch weiter entfernte Personen und Stellen mittragen können – der Abstand zur Mitte macht Nähe sichtbar, eine Liste nicht.",
+          "resonance": "Entlastung: Ich trage nicht allein; es gibt mehr Menschen und Stellen, als ich gerade denke.",
+          "source": "Eigene didaktische Darstellung (Muster I), Musterinhalt",
+          "alternative": "Nach Kreisen gegliederte Liste mit «besteht»/«wäre möglich»; Kurzfassung über aria-describedby",
+          "reason": "Beziehungen und Nähe sind räumlich schneller erfassbar als in einer Aufzählung.",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-us-kontakt",
+          "section": "02 Gespräch",
+          "sectionId": "gespraech",
+          "goal": "Wissen, wo der Kontaktweg stehen wird",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: ein einzelner Kontaktweg.",
+          "approvalStatus": "entfällt"
+        }
+      ]
+    },
+    {
+      "id": "seitenvorlage",
+      "title": "Seitenvorlage",
+      "href": "seitenvorlage.html",
+      "navLabel": "Vorlage",
+      "status": "draft",
+      "primaryTask": "Vorlage für eine neue Seite; nicht veröffentlichen",
+      "description": "Entwurfsvorlage des Starters. Erscheint nicht in der Navigation.",
+      "sensitiveTopics": [],
+      "visualPlan": [
+        {
+          "id": "v-vl-text",
+          "section": "Vorlage",
+          "sectionId": "schritte",
+          "goal": "Aufbau einer neuen Seite zeigen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Platzhalter: vor dem Bau durch den echten Visualisierungsplan ersetzen.",
+          "approvalStatus": "entfällt"
+        }
+      ]
+    }
+  ],
+  "siteUrl": "",
+  "interactionScript": "../../../components/interaktion.js"
+}

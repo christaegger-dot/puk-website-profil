@@ -1,0 +1,855 @@
+{
+  "$comment": "Borderline – Orientierung für Angehörige · Seitenvertrag, kopiert aus dem Psychoedukations-Starter (Build r4-3, Profil-Update 09.10.2026 übernommen: Build r4-4; Profil-Update 10.10.2026 übernommen: Build r4-6; Gate-Korrektur 10.10.2026 übernommen: Build r4-7). Etappe 1: index, verstehen, beziehungen, grenzen gebaut; übrige Seiten Entwurf. Pflichtfelder und Regeln: README.md. Nach jeder Änderung: node tools/build.mjs, danach node tools/gate.mjs bzw. node tools/gate.mjs --production.",
+  "kitRevision": "PUK Website Kit 1.10.1-r4 · abgeleitet",
+  "canonicalSource": "PUK Zürich Design System 1.10.1 (unverändert)",
+  "assetVersion": "r4-6",
+  "siteTitle": "Borderline – Orientierung für Angehörige",
+  "shortDescription": "Psychoedukative Website der Fachstelle Angehörigenarbeit PUK für Angehörige von Menschen mit Borderline. Entwurf, fachliche Prüfung ausstehend.",
+  "language": "de-CH",
+  "favicon": "assets/favicon.svg",
+  "logo": "assets/logo.svg",
+  "stylesheets": [
+    "../../../styles.css",
+    "../longform/visual-patterns.css",
+    "../longform/erklaermuster.css",
+    "starter.css",
+    "borderline.css"
+  ],
+  "contentOwner": "Fachstelle Angehörigenarbeit PUK",
+  "editorialStatus": "Entwurf – fachliche Prüfung ausstehend",
+  "disclaimer": "Diese Website ersetzt keine individuelle Abklärung, Beratung oder Behandlung.",
+  "responsibility": {
+    "label": "Zuständigkeit",
+    "text": "Die Fachstelle Angehörigenarbeit der PUK berät Angehörige kostenlos und vertraulich: angehoerigenarbeit@pukzh.ch. Sorgen Sie sich akut um das Leben oder die Sicherheit eines Menschen, holen Sie sofort Hilfe: ärztlicher Notfalldienst oder Notfallstation, bei Gefahr die Polizei.",
+    "owner": "Fachstelle Angehörigenarbeit PUK",
+    "reviewStatus": "geprueft",
+    "reviewedBy": "Fachstelle Angehörigenarbeit PUK",
+    "reviewedAt": "09.10.2026",
+    "inline": {
+      "text": "Sorgen Sie sich akut um das Leben oder die Sicherheit eines Menschen, holen Sie sofort Hilfe: ärztlicher Notfalldienst oder Notfallstation, bei Gefahr die Polizei.",
+      "reviewStatus": "geprueft",
+      "reviewedBy": "Fachstelle Angehörigenarbeit PUK",
+      "reviewedAt": "09.10.2026",
+      "$comment": "Verweis im Text (Profilentscheid 09.10.2026): nur über den Platzhalter <p data-responsibility-inline></p>, nur bei Selbstgefährdung, Gewalt oder akuter Krise. Wortlaut von der Fachstelle fachlich geprüft am 09.10.2026."
+    }
+  },
+  "sender": {
+    "orgUnit": "Fachstelle Angehörigenarbeit",
+    "institution": "Psychiatrische Universitätsklinik Zürich",
+    "email": "angehoerigenarbeit@pukzh.ch",
+    "status": "freigegeben",
+    "statusLabel": "Freigegeben"
+  },
+  "pages": [
+    {
+      "id": "index",
+      "title": "Startseite",
+      "href": "index.html",
+      "navLabel": null,
+      "status": "published",
+      "primaryTask": "Einen Einstieg nach dem eigenen Anliegen wählen",
+      "description": "Orientierung für Angehörige von Menschen mit Borderline: Einstiege nach Anliegen zu Verstehen, Beziehungen und Grenzen sowie die kostenlose Beratung der Fachstelle Angehörigenarbeit PUK.",
+      "sensitiveTopics": [],
+      "visualPlan": [
+        {
+          "id": "v-ix-einstiege",
+          "section": "Einstiege",
+          "sectionId": "einstiege",
+          "goal": "Einen passenden Einstieg nach dem eigenen Anliegen wählen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: gleichwertige Einstiege ohne feste Reihenfolge («die Reihenfolge ist ein Angebot»), formuliert als Anliegen der Lesenden (Korrektur W2-6, 09.10.2026); eine Darstellung würde nur Links in Kästen verteilen. Ersetzt Selbsttest und Wegweiser des Bestands («sichtbar vor versteckt»).",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-ix-beratung",
+          "section": "Beratung für Sie",
+          "sectionId": "beratung",
+          "goal": "Wissen, wer die Beratung der Fachstelle nutzen kann, zu welchen Bedingungen und wie sie erreichbar ist",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: Angebot und Kontaktweg ohne Beziehung. Wortlaut der Fachstelle vom 09.10.2026 (Korrektur W1-4); steht nur hier, andere Seiten verweisen darauf.",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-ix-haltung",
+          "section": "Mitgefühl und Selbstschutz",
+          "sectionId": "haltung",
+          "goal": "Mitgefühl und Selbstschutz als vereinbar verstehen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: kurze Haltungsaussage. Das Spannungsfeld Fürsorge – eigene Gesundheit ist für «Auf sich achten» als Muster H vorgesehen (Etappe 2); hier genügt der Satz.",
+          "approvalStatus": "ausstehend"
+        }
+      ]
+    },
+    {
+      "id": "verstehen",
+      "title": "Borderline verstehen",
+      "href": "verstehen.html",
+      "navLabel": "Verstehen",
+      "status": "published",
+      "primaryTask": "Borderline, Erleben und mögliche Kontexte einordnen, ohne aus der Diagnose Motive oder Gefahr abzuleiten",
+      "description": "Was die Diagnose Borderline beschreiben kann, was unter sichtbarem Verhalten liegen kann, wie Anspannung Gespräche verengt und welche verbreiteten Annahmen zu kurz greifen.",
+      "sensitiveTopics": [
+        "selbstgefaehrdung",
+        "gewalt",
+        "akute-krise"
+      ],
+      "visualPlan": [
+        {
+          "id": "v-vs-erleben",
+          "section": "01 Erleben",
+          "sectionId": "erleben",
+          "goal": "Eigene Erfahrungen und Ambivalenz als verständlich einordnen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: Einstieg aus der Sicht der Angehörigen, Aufzählung von Erfahrungen ohne darzustellende Beziehung.",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-vs-borderline",
+          "section": "02 Diagnose",
+          "sectionId": "borderline",
+          "goal": "Wissen, was die Diagnose beschreiben kann und was nicht",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: Begriffsklärung mit gezielten Einschränkungen. Kriterien und Begleiterkrankungen folgen auf «Diagnose und Begleiterkrankungen» (Etappe 2).",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-vs-eisberg",
+          "section": "03 Sichtbar und verborgen",
+          "sectionId": "eisberg",
+          "goal": "Verstehen, dass Verhalten nur einen Teil zeigt und das Darunter offenbleibt",
+          "format": "layer-model",
+          "statement": "Eisberg an einer weichen Wasserlinie, eigene Linienzeichnung: Über dem Wasser stehen im Eisberg Wut, Vorwürfe, Lautwerden, Rückzug; darunter Angst, Scham, Trauer, Einsamkeit, Anspannung – oder ganz andere Erfahrungen. Daneben die Frage «Wie ist es gerade für dich?». Keine Zuordnung zwischen oben und unten.",
+          "understood": "Dass Verhalten nur die Oberfläche zeigt und das Darunter offenbleibt; die Schichten zeigen das auf einen Blick, auch die Grenze des Wissens.",
+          "source": "Eigene didaktische Darstellung nach der Eisberg-Metapher (Handout «Eisberg»); Bezugspunkt Linehan (1993)",
+          "alternative": "Schmal: Zeichnung ohne Wörter, darunter beide Gruppen als Listen und die Frage; Textfassung über aria-describedby",
+          "reason": "Sichtbar und verborgen ist eine räumliche Beziehung. Zwei getrennte Schichten ohne Verbindungslinien zeigen zugleich, dass es keine Zuordnung gibt. Überarbeitet nach dem Bildsprache-Audit (BS-2), Entscheid Fachstelle 10.10.2026.",
+          "resonance": "Entlastung: Hinter einem heftigen Moment kann mehr stecken, und ich darf nachfragen, statt zu raten.",
+          "approvalStatus": "freigegeben"
+        },
+        {
+          "id": "v-vs-anspannung",
+          "section": "04 Anspannung",
+          "sectionId": "anspannung",
+          "goal": "Erkennen, wann Reden hilft und wann eine Pause besser ist, und wissen, was an welcher Stelle hilft",
+          "format": "figure",
+          "statement": "Die Anspannungskurve (Muster A, freie Figur): eine ruhige Kurve über den Gesprächsverlauf, links tief, dann steigend, oben ein Scheitel, rechts wieder sinkend; keine Skala, keine Zahlen, keine Achse. Vier nummerierte Stellen mit Alltagsworten: 1 «Wir können sprechen», 2 «Es wird eng» (Ansatzpunkt, doppelter Ring), 3 «Es ist gerade zu viel», 4 «Es kann wieder ruhiger werden.». Darunter in allen Breiten die Liste der vier Stellen mit Erklärsatz, «Was hilft», Ansatzpunkt und Beispielsätzen aus dem Handout; Stelle 2 hat nur den Ansatzpunkt, ohne eigenes «Was hilft» (Korrektur 1e, Abschnitt 3). Kurztext: Anspannung kann ansteigen und wieder sinken, bei der anderen Person und bei Ihnen, und ist von aussen nicht sicher erkennbar. Ersetzt die Achse mit drei Bereichen (Entscheid der Fachstelle, 09.10.2026; Korrektur 1d, D-3). «Bei Gefahr hat Schutz Vorrang» steht im Abschnittstext (Korrektur 1b, A-2).",
+          "understood": "Wann Reden hilft und wann eine Pause besser ist: Die Kurve zeigt, dass Anspannung im Gespräch ansteigen und wieder sinken kann und dass dasselbe Gespräch je nach Stelle etwas anderes braucht. Als Text blieben die vier Stellen eine Aufzählung; die Kurve zeigt ihren Zusammenhang im Verlauf.",
+          "source": "Eigene didaktische Darstellung nach dem Handout «Die Anspannungskurve – Wann Reden hilft», mit Inhalten aus drei weiteren Handouts zur Anspannung (vereinfachtes Stressmodell, Hohe Anspannung, Zustands-Landkarte); Bezugspunkte Linehan (1993, 2015), Shields et al. (2016), Degasperi et al. (2021), Baranger et al. (2020), Santangelo et al. (2014), NICE CG78 (2009)",
+          "alternative": "Die vier Stellen als geordnete Liste mit Nummer, Überschrift, Erklärsatz und Beispiel unter der Zeichnung, in allen Breiten; Beschriftungen als HTML-Text über der Zeichnung, unter 560 px entfallen nur diese, die Nummern bleiben; Textfassung über aria-describedby (p.puk-sr)",
+          "reason": "Ein Verlauf im Gespräch lässt sich als Kurve zeigen. Alltagsworte statt Fachbegriffen, weil die Achse mit drei Bereichen für Laien verwirrend war (Rückmeldung der Fachstelle, 09.10.2026). Vier Handouts zum selben Mechanismus bleiben in einer Darstellung verbunden.",
+          "resonance": "Wiedererkennen und Erlaubnis: So kann ein Gespräch kippen, und ich darf eine Pause machen.",
+          "approvalStatus": "freigegeben",
+          "entryPoint": "Stelle 2 «Es wird eng»: nicht weiter argumentieren, weniger Druck machen, das eigene Tempo senken, auf die eigene Anspannung achten und eine Pause anbieten; die andere Person müssen Sie nicht beruhigen (in der Figur mit doppeltem Ring markiert)."
+        },
+        {
+          "id": "v-vs-bewertungen",
+          "section": "05 Bewertungen",
+          "sectionId": "bewertungen",
+          "goal": "Verstehen, dass ein einzelner heller oder dunkler Moment nicht die ganze Beziehung oder Person beschreibt",
+          "format": "illustration",
+          "statement": "Offenes Fotoalbum mit kleinen Fotos; zwei Fotos sind herausgenommen: ein helles mit Sonne und dem Satz «Du bist die Einzige, die mich versteht.», ein dunkles mit Regenwolke und dem Satz «Du bist genau wie alle anderen.». Darüber die Zeile «Sätze, die Angehörige hören können:».",
+          "understood": "Dass ein einzelner heller oder dunkler Moment nicht die ganze Beziehung beschreibt: Das Album zeigt auf einen Blick, dass es mehr als zwei Bilder gibt.",
+          "source": "Eigene didaktische Darstellung (Bild «Momentaufnahmen»); Grundlage: Linehan (1993); Hoffman et al. (2005)",
+          "alternative": "Sätze als HTML-Text über der Zeichnung, schmal untereinander; Textfassung über aria-describedby",
+          "reason": "Ersetzt das Pendel (Bildsprache-Audit BS-1: wirkte wie eine Physikskizze, schmal ohne Beschriftung). Das Bild nimmt das Wort «Momentaufnahme» aus dem Handout auf: ein Bild, eine Idee (Entscheid Fachstelle 10.10.2026).",
+          "resonance": "Entlastung: Ein harter Satz in einem schwierigen Moment ist nicht unser ganzes Album.",
+          "approvalStatus": "freigegeben"
+        },
+        {
+          "id": "v-vs-mythen",
+          "section": "06 Annahmen",
+          "sectionId": "mythen",
+          "goal": "Verbreitete Annahmen durch eine realistischere Einordnung ersetzen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: Annahme und Einordnung sind Paare ohne Bildform; als Liste im Abschnittstext statt als Abbildung (Bildsprache-Audit BS-3).",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-vs-einordnung",
+          "section": "07 Einordnung",
+          "sectionId": "einordnung",
+          "goal": "Wissen, was Verstehen leistet und wo es endet",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: Abschluss, was Verstehen leistet und was nicht, mit dem Merksatz für Angehörige als hervorgehobenem Kasten (puk-longform__reflection) und Verweis auf «Was zwischen Ihnen geschieht» und «Grenzen setzen»; keine Beziehung, die eine Darstellung zeigen müsste. Merksatz und Absätze aus dem Bestand «Verstehen hat Grenzen» wieder aufgenommen (Korrektur 1d, D-4).",
+          "approvalStatus": "ausstehend"
+        }
+      ]
+    },
+    {
+      "id": "beziehungen",
+      "title": "Was zwischen Ihnen geschieht",
+      "href": "beziehungen.html",
+      "navLabel": "Beziehungen",
+      "status": "published",
+      "primaryTask": "Wechselwirkungen in der Beziehung erkennen und einordnen, ohne Schuld zu verteilen",
+      "description": "Die Bedeutungsschleife an einem Beispiel, zwei Sichten auf dieselbe Situation und was Verbindung tragfähiger machen kann – ohne Motive zu unterstellen.",
+      "sensitiveTopics": [
+        "selbstgefaehrdung",
+        "gewalt",
+        "akute-krise"
+      ],
+      "visualPlan": [
+        {
+          "id": "v-bz-verbindung",
+          "section": "01 Was verbindet",
+          "sectionId": "verbindung",
+          "goal": "Ressourcen der Beziehung sehen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: Aufzählung eigenständiger Ressourcen ohne Beziehung untereinander. Die Personenillustration des Bestands entfällt (Entscheid der Fachstelle).",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-bz-schleife",
+          "section": "02 Bedeutungsschleife",
+          "sectionId": "schleife",
+          "goal": "Verstehen, dass eine Reaktion beim Gegenüber zum neuen Anlass wird",
+          "format": "cycle",
+          "statement": "Ereignis → Bedeutung → Gefühl → Reaktion → Wirkung beim Gegenüber → neues Ereignis. Durchgehendes Beispiel: Die Schwester sagt einen Besuch ab. Jede Station nennt, wer handelt: Station 1 und 5 die Schwester, Station 2 bis 4 die betroffene Person (Korrektur V-3, 09.10.2026). Kurztext mit der Grenze des Modells: «Das Modell ist eine mögliche Erklärung, keine sichere Aussage …» (Korrektur 1b, C-2; Wortlaut Korrektur 1e).",
+          "understood": "Dass eine Reaktion beim Gegenüber zum neuen Anlass wird. Die Schleife zeigt das sofort, ein Text nur nacheinander.",
+          "source": "Eigene didaktische Darstellung (Bedeutungsschleife des Bestands) mit erfundenem Beispiel; Quellen der Seite: APA (2024), NICE CG78 (2009), Foxhall et al. (2019), McLaren et al. (2022)",
+          "alternative": "Stationen als geordnete Liste mit Leserichtung breit und schmal, sichtbarem Rücksprung zu Station 1 und Textfassung über aria-describedby",
+          "reason": "Eine Rückkopplung ist im Fliesstext nur nacheinander zu beschreiben. Die fünf Reiter des Bestands werden zu einer sichtbaren Schleife; das Beispiel verbindet sie mit dem Vergleich in Abschnitt 04.",
+          "resonance": "Entlastung: Ich sehe, wie wir uns gegenseitig in eine Schleife bringen können, und wo ich anders reagieren kann.",
+          "approvalStatus": "freigegeben",
+          "entryPoint": "Station 5 «Wirkung» (Schwester): Statt sich weiter zu verteidigen, können Sie das Gefühl anerkennen, nachfragen, wie die Absage angekommen ist, und Ihre eigene Grenze halten (Korrektur V-1, 09.10.2026; ganze Sätze laut Korrektur 1b, D-2; Wortlaut und Beispielfrage Korrektur 1e)."
+        },
+        {
+          "id": "v-bz-verstaerker",
+          "section": "03 Was Reaktionen verschärfen kann",
+          "sectionId": "verstaerker",
+          "goal": "Einflüsse kennen, die den Spielraum zwischen Anlass und Reaktion verengen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: höchstens fünf Einflüsse, je einer Station derselben Schleife (Abbildung 1) zugeordnet; eine zweite Grafik würde denselben Mechanismus doppeln. Als Begriffsliste (dl), vom Profil gestaltet (Korrektur V-8, 09.10.2026). Jeder Punkt mit «Was Sie tun können» und Beispielsatz als zweitem Absatz (Korrektur 1e).",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-bz-sichten",
+          "section": "04 Zwei Sichten",
+          "sectionId": "zwei-sichten",
+          "goal": "Beide Perspektiven im selben Ablauf sehen",
+          "format": "comparison",
+          "statement": "Dieselben vier Schritte des Beispiels, je Schritt die mögliche Sicht der betroffenen Person und die mögliche Sicht der Schwester; Schritte: Zu Station 1 und 2 · Absage, Station 4 · Nachrichten, Station 5 · Verteidigung, Zurück zu Station 1 · Gespräch endet (Korrektur V-3, 09.10.2026). Bezeichnungen «Mögliche Sicht der betroffenen Person» und «Mögliche Sicht der Schwester» (Korrektur 1c, K-3). Breit stehen beide Sichten eines Schritts nebeneinander, schmal nacheinander.",
+          "understood": "Dass beide in jedem Schritt etwas Verständliches versuchen und sich trotzdem verfehlen; Schritt für Schritt nebeneinander (schmal direkt nacheinander) wird das sichtbar.",
+          "source": "Eigene didaktische Darstellung mit erfundenem Beispiel (Bestand «Beide versuchen etwas Verständliches – und verfehlen sich»)",
+          "alternative": "Je Schritt eine Überschrift und zwei beschriftete Sichten; Textfassung über aria-describedby",
+          "reason": "Gleiche Schritte nebeneinander zeigen, dass beide Sichten zugleich verständlich sind. Dasselbe Beispiel wie in der Schleife: verbunden, nicht gedoppelt.",
+          "resonance": "Verständnis: Beide Sichten können gleichzeitig wahr sein.",
+          "approvalStatus": "freigegeben"
+        },
+        {
+          "id": "v-bz-was-hilft",
+          "section": "05 Was helfen kann",
+          "sectionId": "was-hilft",
+          "goal": "Möglichkeiten kennen, die die Beziehung stärken",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: drei Stellen, an denen sich die Schleife unterbrechen lässt, als kurze Liste, dann unabhängige Möglichkeiten mit Formulierungsbeispielen (Inhaltscontainer, keine Beziehung untereinander; Korrektur 1e).",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-bz-verantwortung",
+          "section": "06 Verantwortung und Schutz",
+          "sectionId": "verantwortung",
+          "goal": "Verstehen von Verantwortung und Schutz trennen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: Leitfragen und Schutzhinweise; bei möglicher Gefahr braucht es kurze, direkte Sätze ohne Grafik.",
+          "approvalStatus": "ausstehend"
+        }
+      ]
+    },
+    {
+      "id": "rolle",
+      "title": "Ihre Rolle klären",
+      "href": "rolle.html",
+      "navLabel": "Ihre Rolle",
+      "status": "published",
+      "primaryTask": "Freiwillige Unterstützung, eigene Verantwortung und Aufgaben von Fachpersonen unterscheiden",
+      "description": "Was Sie anbieten können und was nicht Ihre Aufgabe ist, Schuld und Verantwortung, Unterstützung im Alltag und nach Konflikten, mehrere Angehörige, Kinder und wann Unterstützung an Grenzen kommt.",
+      "sensitiveTopics": [
+        "selbstgefaehrdung",
+        "gewalt",
+        "akute-krise"
+      ],
+      "visualPlan": [
+        {
+          "id": "v-ro-weg",
+          "section": "01 Ihre Rolle",
+          "sectionId": "anbieten",
+          "goal": "Verstehen, dass Angehörige begleiten können, ohne Genesung herstellen zu müssen",
+          "format": "illustration",
+          "statement": "Zwei Menschen gehen nebeneinander auf einem Weg, von hinten gesehen; der Weg führt durch eine Hügellandschaft in die Ferne. Beide wirken gleichwertig: Niemand führt, zieht oder trägt den anderen. Darüber der Satz «Ich kann diesen Weg begleiten, aber nicht für dich gehen.».",
+          "understood": "Dass Begleiten und den Weg selbst gehen zwei verschiedene Dinge sind: Das Bild zeigt auf einen Blick, wer neben wem geht, ohne eine Liste von Aufgaben.",
+          "source": "Eigene didaktische Darstellung nach dem Handout «Der Garten»; Bezug: NICE CG78 (2009)",
+          "alternative": "Satz als HTML-Text über der Zeichnung, schmal darüber; Kurzbeschreibung über aria-describedby",
+          "reason": "Entscheid der Fachstelle 10.10.2026 (Bauauftrag 2a, Anhang A): Skizze «Ein Stück Weg». Ersetzt das geplante Garten-Bild mit drei Zonen (Bildsprache-Audit: wirkt wie eine Zielscheibe, die betroffene Person darf nicht als Pflanze erscheinen). Ein Bild, eine Idee: begleiten, nicht für jemanden gehen.",
+          "resonance": "Entlastung: Ich darf begleiten, ohne den Weg für die andere Person gehen zu müssen.",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-ro-schuld",
+          "section": "02 Schuld und Verantwortung",
+          "sectionId": "schuld",
+          "goal": "Schuldgefühle, Schuld und konkrete Verantwortung unterscheiden",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: Die fünf Sätze sind Zitate mit je einer Einordnung; eine Figur würde sie nur umrahmen. Ursachen stehen auf `verstehen` und werden verlinkt (Verlinken statt wiederholen).",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-ro-alltag",
+          "section": "03 Im Alltag",
+          "sectionId": "alltag",
+          "goal": "Freiwillige, hilfreiche Unterstützung im Alltag kennen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: unabhängige Möglichkeiten mit Beispielsätzen, ohne Beziehung untereinander. Je Seite genau eine Abbildung (Bauauftrag 2a).",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-ro-konflikte",
+          "section": "04 Nach Konflikten",
+          "sectionId": "nach-konflikten",
+          "goal": "Nach einem Konflikt ein Kontaktangebot machen, ohne zu drängen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: zwei kurze Listen und ein Beispielsatz; ein Ablauf in Schritten würde eine feste Reihenfolge nahelegen.",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-ro-mehrere",
+          "section": "05 Mehrere Angehörige",
+          "sectionId": "mehrere",
+          "goal": "Unterschiedliche Haltungen in Familien einordnen und Absprachen treffen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: hilfreich und belastend als zwei Listen; eine Beziehungskarte bliebe ohne konkrete Beteiligte eine leere Form.",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-ro-kinder",
+          "section": "06 Kinder",
+          "sectionId": "kinder",
+          "goal": "Kinder altersgerecht informieren und entlasten",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: Beispielsätze für Kinder und konkrete Fragen zur Betreuung. Was Kinder nicht übernehmen müssen, steht auf `grenzen` (`gewalt`) und wird verlinkt.",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-ro-grenzen",
+          "section": "07 An Grenzen",
+          "sectionId": "an-grenzen",
+          "goal": "Erkennen, wann Unterstützung an Grenzen kommt, und bei Gefahr Hilfe holen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: Beobachtungen und Situationen sind Aufzählungen. Schutz und Gefahr stehen im Text mit Verweis im Text, nicht in einer Figur.",
+          "approvalStatus": "ausstehend"
+        }
+      ]
+    },
+    {
+      "id": "grenzen",
+      "title": "Grenzen setzen",
+      "href": "grenzen.html",
+      "navLabel": "Grenzen",
+      "status": "published",
+      "primaryTask": "Eigene Grenzen erkennen und formulieren und bei Bedrohung den Schutz vorziehen",
+      "description": "Woran Sie merken, dass eine Grenze nötig ist, vier Arten von Grenzen, DEAR in vier Schritten, Sätze für typische Situationen und Schutz bei Gewalt oder Bedrohung.",
+      "sensitiveTopics": [
+        "gewalt",
+        "akute-krise"
+      ],
+      "visualPlan": [
+        {
+          "id": "v-gr-erkennen",
+          "section": "01 Erkennen",
+          "sectionId": "erkennen",
+          "goal": "Anlässe und Fragen für eine eigene Grenze kennen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: Signale und Fragen sind Aufzählungen ohne Beziehung; eine Skala würde eine Selbstdiagnose nahelegen (Muster J: nie als Selbstdiagnose-Skala).",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-gr-bruecke",
+          "section": "02 Grenze und Kontakt",
+          "sectionId": "bruecke",
+          "goal": "Verstehen, dass Grenzen Kontakt schützen können",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: Die Fachstelle hat die Zeichnung als zu technisch und die Erklärungen als zu abstrakt beurteilt (Durchsicht 10.10.2026). Das Bild der Brücke steht als ein Satz im Text; zwei Beispielsätze aus dem Handout zeigen, was Angehörige tun können (Korrektur 1g).",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-gr-arten",
+          "section": "03 Bereiche",
+          "sectionId": "arten",
+          "goal": "Grenzen in vier Lebensbereichen benennen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: vier gleichrangige Bereiche ohne Beziehung untereinander; eine Figur würde nur eine Liste umrahmen (Korrektur V-5, 09.10.2026). Als Begriffsliste (dl), vom Profil gestaltet.",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-gr-reihenfolge",
+          "section": "04 Reihenfolge",
+          "sectionId": "reihenfolge",
+          "goal": "Wissen, mit welcher Grenze Sie beginnen können",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Im Bau geprüft (UMBAUPLAN, Abschnitt 3: Raster 2×2 oder Text): Text ist klarer. Die Liste nennt die vier Felder des Rasters aus der Quelle als vier Punkte: dringend oder langfristig, emotional hoch oder niedriger (Korrektur 1b, B-4). Die Quelle nennt das Raster selbst «keine fachliche Einstufung»; gezeichnet würde es eine feste Einordnung der Beispiele nahelegen. Die Seite sagt dazu «Die Reihenfolge ist eine Orientierung, keine fachliche Einstufung.» Schutz bei Bedrohung oder Gewalt steht im Kopf und im Abschnitt «Schutz» (Korrektur W2-4, 09.10.2026).",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-gr-dear",
+          "section": "05 Formulieren",
+          "sectionId": "dear",
+          "goal": "Ein Anliegen in vier Schritten vorbereiten",
+          "format": "process",
+          "statement": "D Beschreiben · E Empfinden ausdrücken · A Anliegen nennen · R Verstärken (positive Folgen benennen); vier Schritte helfen, ein Anliegen vorzubereiten. Je Schritt Aufgabe in ganzen Sätzen und abgesetzter Beispielsatz (.puk-say). Kurztext mit der Grenze des Modells und dem Hinweis auf vereinbarte Anlaufstellen für Krisen (Korrektur W1-7, V-12, 09.10.2026; Korrektur 1b, A-5, B-4, D-2). Fachmodell aus der DBT.",
+          "understood": "Dass ein Anliegen in vier Schritten vorbereitet werden kann und jeder Schritt eine eigene Aufgabe hat; Aufgabe und Beispielsatz stehen je Schritt sichtbar getrennt.",
+          "source": "Fachmodell: Linehan (2015), DBT Skills Training Manual, 2. Auflage (DEAR MAN); deutschsprachige redaktionelle Anpassung mit eigenen Beispielen",
+          "alternative": "Geordnete Liste mit Schrittnummer, Aufgabe und Beispielsatz; Textfassung über aria-describedby",
+          "reason": "Reihenfolge und Aufgabe jedes Schritts werden auf einen Blick sichtbar; die Auswahl-Schaltflächen des Bestands werden zu einem sichtbaren Pfad.",
+          "resonance": "Sicherheit: Ich kann mein Anliegen in Ruhe vorbereiten.",
+          "approvalStatus": "freigegeben",
+          "entryPoint": "entfällt: Der ganze Ablauf beschreibt das eigene Handeln der Angehörigen."
+        },
+        {
+          "id": "v-gr-saetze",
+          "section": "06 So könnte es klingen",
+          "sectionId": "saetze",
+          "goal": "Passende Sätze für typische Situationen finden",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: drei Situationen mit Gegenüberstellung «eher problematisch / eher hilfreich» als Komponente .puk-say (Leitlinie 06, Formulierungsbeispiele). Die übrigen Beispiele des Bestands sind für «Zugewandt und klar sprechen» (Etappe 2) vorgemerkt (Korrektur W2-2, W2-3, 09.10.2026).",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-gr-konsequenz",
+          "section": "07 Dranbleiben",
+          "sectionId": "konsequenz",
+          "goal": "Wissen, wie eine Grenze umsetzbar bleibt",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: Hinweise zur Umsetzung ohne darzustellende Beziehung.",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-gr-kontakt",
+          "section": "08 Kontakt",
+          "sectionId": "kontakt",
+          "goal": "Wissen, dass zwischen «wie bisher» und einer Trennung mehrere Möglichkeiten liegen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Im Bau geprüft (UMBAUPLAN, Abschnitt 3: Kontinuum J, Steigerung?): Text ist klarer. Die vier Möglichkeiten liegen nicht auf einer Achse – eine vereinbarte Pause kann weniger Kontakt bedeuten als getrenntes Wohnen –, und ein Kontinuum mit wachsender Linienstärke würde eine Steigerung und eine Reihenfolge nahelegen, die der Text nicht meint («Die Beziehung zu erhalten, ist kein Ziel, das Sie erreichen müssen.», und welche Möglichkeit passt, ergibt sich nicht aus der Diagnose allein; Wortlaut Korrektur 1f). Die Liste trägt die Aussage, dass es mehrere Möglichkeiten gibt.",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-gr-rollen",
+          "section": "09 Rollen",
+          "sectionId": "rollen",
+          "goal": "Grenzen in der eigenen Angehörigenrolle einordnen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: drei Rollen ohne Beziehung untereinander (Korrektur W2-2, 09.10.2026), seit Korrektur 1f als Begriffsliste (dl) mit einem Schlusssatz.",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-gr-gewalt",
+          "section": "10 Schutz",
+          "sectionId": "gewalt",
+          "goal": "Bei Gewalt oder Bedrohung die eigene Sicherheit vorziehen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: In einer möglichen Gefahrensituation braucht es kurze, direkte Hinweise ohne Grafik.",
+          "approvalStatus": "ausstehend"
+        }
+      ]
+    },
+    {
+      "id": "diagnose",
+      "title": "Diagnose und Begleiterkrankungen",
+      "href": "diagnose.html",
+      "navLabel": null,
+      "status": "draft",
+      "primaryTask": "Entwurf: Seite folgt in Etappe 2 des Umbaus",
+      "description": "Entwurf, Etappe 2: Diagnose und Begleiterkrankungen. Noch ohne Inhalt; Aufbau nach UMBAUPLAN.md.",
+      "sensitiveTopics": [],
+      "visualPlan": [
+        {
+          "id": "v-diagnose-geplant",
+          "section": "Entwurf",
+          "sectionId": "geplant",
+          "goal": "Platzhalter bis Etappe 2",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Platzhalter: Der Visualisierungsplan entsteht vor dem Bau der Seite (Kandidaten in UMBAUPLAN.md, Abschnitt 3).",
+          "approvalStatus": "ausstehend"
+        }
+      ]
+    },
+    {
+      "id": "behandlung",
+      "title": "Behandlung und Ihre Rolle darin",
+      "href": "behandlung.html",
+      "navLabel": null,
+      "status": "draft",
+      "primaryTask": "Entwurf: Seite folgt in Etappe 2 des Umbaus",
+      "description": "Entwurf, Etappe 2: Behandlung und Ihre Rolle darin. Noch ohne Inhalt; Aufbau nach UMBAUPLAN.md.",
+      "sensitiveTopics": [],
+      "visualPlan": [
+        {
+          "id": "v-behandlung-geplant",
+          "section": "Entwurf",
+          "sectionId": "geplant",
+          "goal": "Platzhalter bis Etappe 2",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Platzhalter: Der Visualisierungsplan entsteht vor dem Bau der Seite (Kandidaten in UMBAUPLAN.md, Abschnitt 3).",
+          "approvalStatus": "ausstehend"
+        }
+      ]
+    },
+    {
+      "id": "kommunizieren",
+      "title": "Zugewandt und klar sprechen",
+      "href": "kommunizieren.html",
+      "navLabel": null,
+      "status": "draft",
+      "primaryTask": "Entwurf: Seite folgt in Etappe 2 des Umbaus",
+      "description": "Entwurf, Etappe 2: Zugewandt und klar sprechen. Noch ohne Inhalt; Aufbau nach UMBAUPLAN.md.",
+      "sensitiveTopics": [],
+      "visualPlan": [
+        {
+          "id": "v-kommunizieren-geplant",
+          "section": "Entwurf",
+          "sectionId": "geplant",
+          "goal": "Platzhalter bis Etappe 2",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Platzhalter: Der Visualisierungsplan entsteht vor dem Bau der Seite (Kandidaten in UMBAUPLAN.md, Abschnitt 3).",
+          "approvalStatus": "ausstehend"
+        }
+      ]
+    },
+    {
+      "id": "krise",
+      "title": "Krisen begleiten",
+      "href": "krise.html",
+      "navLabel": null,
+      "status": "draft",
+      "primaryTask": "Entwurf: Seite folgt in Etappe 2 des Umbaus",
+      "description": "Entwurf, Etappe 2: Krisen begleiten. Noch ohne Inhalt; Aufbau nach UMBAUPLAN.md.",
+      "sensitiveTopics": [
+        "akute-krise"
+      ],
+      "visualPlan": [
+        {
+          "id": "v-krise-geplant",
+          "section": "Entwurf",
+          "sectionId": "geplant",
+          "goal": "Platzhalter bis Etappe 2",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Platzhalter: Der Visualisierungsplan entsteht vor dem Bau der Seite (Kandidaten in UMBAUPLAN.md, Abschnitt 3).",
+          "approvalStatus": "ausstehend"
+        }
+      ]
+    },
+    {
+      "id": "selbstfuersorge",
+      "title": "Auf sich achten",
+      "href": "selbstfuersorge.html",
+      "navLabel": "Auf sich achten",
+      "status": "published",
+      "primaryTask": "Eigene Belastung, Bedürfnisse und erreichbare Unterstützung ernst nehmen",
+      "description": "Was Ihnen erlaubt bleibt, was Kraft kostet und was entlastet, Warnsignale für Überlastung, kurze Übungen, eigene Unterstützung, radikale Akzeptanz und Beratung.",
+      "sensitiveTopics": [
+        "selbstgefaehrdung",
+        "gewalt",
+        "akute-krise"
+      ],
+      "visualPlan": [
+        {
+          "id": "v-sf-leben",
+          "section": "01 Ihr Leben",
+          "sectionId": "eigenes-leben",
+          "goal": "Eigene Bedürfnisse als berechtigt erkennen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: Die Erlaubnis-Sätze sind eine Liste zum Auswählen; eine Karte als Bild würde nur die Liste umrahmen. Die Bildunterschrift des Bestands steht als Satz im Text.",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-sf-abend",
+          "section": "02 Kraft",
+          "sectionId": "kraft",
+          "goal": "Erkennen, dass ständige Bereitschaft Kraft kosten kann, auch wenn nichts passiert",
+          "format": "illustration",
+          "statement": "Tisch am Abend mit einer Tasse Tee, einem Mobiltelefon und einem geschlossenen Buch; im Fenster steht der Mond. Über dem Telefon der Gedanke «Vielleicht ruft sie gleich an.», über dem Buch «Eigentlich wollte ich lesen.».",
+          "understood": "Was ständige Erreichbarkeit im Alltag heisst: Zwei Gedanken am selben Abend zeigen, dass ein Teil der Aufmerksamkeit beim Telefon bleibt, ohne dass etwas geschieht.",
+          "source": "Eigene didaktische Darstellung; Bezug: Handout «Energie-Konto»",
+          "alternative": "Sätze als HTML-Text über der Zeichnung, schmal untereinander; Kurzbeschreibung über aria-describedby",
+          "reason": "Entscheid der Fachstelle 10.10.2026 (Bauauftrag 2a): Zeichnung und Satzpaar aus dem Profilbeispiel (Muster D), Kernaussage und Kurztext abgesichert wie der Bestand. Ersetzt das geplante Spannungsfeld (Bildsprache-Audit: eine Waage kann nach Urteil aussehen). Das Energie-Konto steht als Text, ohne Konto- oder Bilanzbild.",
+          "resonance": "Wiedererkennen und Erlaubnis: So fühlt sich ständige Bereitschaft an, und ich darf meine Erreichbarkeit begrenzen.",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-sf-warnsignale",
+          "section": "03 Warnsignale",
+          "sectionId": "warnsignale",
+          "goal": "Anzeichen von Überlastung ernst nehmen und Unterstützung früh nutzen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: fünf Bereiche als Liste ohne Stufen; keine Skala, keine Ampel und kein Selbsttest (Muster J: nie als Selbstdiagnose-Skala).",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-sf-zu-viel",
+          "section": "04 Wenn es zu viel ist",
+          "sectionId": "zu-viel",
+          "goal": "Eine kurze Übung kennen und wissen, dass Schutz vorgeht",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: STOPP als nummerierte Liste im Wortlaut der Schritte, ohne Prozesspfad (Bildsprache-Audit: wieder ein Stepper wie bei DEAR). Atem- und Sinnesübung als Text.",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-sf-unterstuetzung",
+          "section": "05 Unterstützung",
+          "sectionId": "unterstuetzung",
+          "goal": "Eigene Unterstützung als berechtigt erkennen und einen Schritt wählen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: vier unabhängige Möglichkeiten mit Beispielsatz. Die Sauerstoffmaske steht nur als Satz, nicht als Bild (Bildsprache-Audit: Ein Flugzeugnotfall ist ein Krisenbild).",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-sf-akzeptanz",
+          "section": "06 Akzeptanz",
+          "sectionId": "akzeptanz",
+          "goal": "Radikale Akzeptanz als freiwillige Haltung kennen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: zwei kurze Listen und eine Übung in vier Schritten; eine Figur würde die Listen nur umrahmen.",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-sf-beratung",
+          "section": "07 Beratung",
+          "sectionId": "beratung",
+          "goal": "Eigene Beratung und Austausch als Möglichkeit kennen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: kurze Hinweise und Verweis auf `index` (`beratung`); weitere Angebote folgen auf `unterstuetzung` (Etappe 2).",
+          "approvalStatus": "ausstehend"
+        }
+      ]
+    },
+    {
+      "id": "genesung",
+      "title": "Genesung",
+      "href": "genesung.html",
+      "navLabel": null,
+      "status": "draft",
+      "primaryTask": "Entwurf: Seite folgt in Etappe 2 des Umbaus",
+      "description": "Entwurf, Etappe 2: Genesung. Noch ohne Inhalt; Aufbau nach UMBAUPLAN.md.",
+      "sensitiveTopics": [],
+      "visualPlan": [
+        {
+          "id": "v-genesung-geplant",
+          "section": "Entwurf",
+          "sectionId": "geplant",
+          "goal": "Platzhalter bis Etappe 2",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Platzhalter: Der Visualisierungsplan entsteht vor dem Bau der Seite (Kandidaten in UMBAUPLAN.md, Abschnitt 3).",
+          "approvalStatus": "ausstehend"
+        }
+      ]
+    },
+    {
+      "id": "unterstuetzung",
+      "title": "Unterstützung finden",
+      "href": "unterstuetzung.html",
+      "navLabel": null,
+      "status": "draft",
+      "primaryTask": "Entwurf: Seite folgt in Etappe 2 des Umbaus",
+      "description": "Entwurf, Etappe 2: Unterstützung finden. Noch ohne Inhalt; Aufbau nach UMBAUPLAN.md.",
+      "sensitiveTopics": [],
+      "visualPlan": [
+        {
+          "id": "v-unterstuetzung-geplant",
+          "section": "Entwurf",
+          "sectionId": "geplant",
+          "goal": "Platzhalter bis Etappe 2",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Platzhalter: Der Visualisierungsplan entsteht vor dem Bau der Seite (Kandidaten in UMBAUPLAN.md, Abschnitt 3).",
+          "approvalStatus": "ausstehend"
+        }
+      ]
+    },
+    {
+      "id": "fragen",
+      "title": "Häufige Fragen",
+      "href": "fragen.html",
+      "navLabel": null,
+      "status": "draft",
+      "primaryTask": "Entwurf: Seite folgt in Etappe 3 des Umbaus",
+      "description": "Entwurf, Etappe 3: Häufige Fragen. Noch ohne Inhalt; Aufbau nach UMBAUPLAN.md.",
+      "sensitiveTopics": [],
+      "visualPlan": [
+        {
+          "id": "v-fragen-geplant",
+          "section": "Entwurf",
+          "sectionId": "geplant",
+          "goal": "Platzhalter bis Etappe 3",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Platzhalter: Der Visualisierungsplan entsteht vor dem Bau der Seite (Kandidaten in UMBAUPLAN.md, Abschnitt 3).",
+          "approvalStatus": "ausstehend"
+        }
+      ]
+    },
+    {
+      "id": "quellen",
+      "title": "Quellen und Begriffe",
+      "href": "quellen.html",
+      "navLabel": null,
+      "status": "draft",
+      "primaryTask": "Entwurf: Seite folgt in Etappe 3 des Umbaus",
+      "description": "Entwurf, Etappe 3: Quellen und Begriffe. Noch ohne Inhalt; Aufbau nach UMBAUPLAN.md.",
+      "sensitiveTopics": [],
+      "visualPlan": [
+        {
+          "id": "v-quellen-geplant",
+          "section": "Entwurf",
+          "sectionId": "geplant",
+          "goal": "Platzhalter bis Etappe 3",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Platzhalter: Der Visualisierungsplan entsteht vor dem Bau der Seite (Kandidaten in UMBAUPLAN.md, Abschnitt 3).",
+          "approvalStatus": "ausstehend"
+        }
+      ]
+    },
+    {
+      "id": "ueber",
+      "title": "Über diese Website",
+      "href": "ueber.html",
+      "navLabel": null,
+      "status": "draft",
+      "primaryTask": "Entwurf: Seite folgt in Etappe 3 des Umbaus",
+      "description": "Entwurf, Etappe 3: Über diese Website. Noch ohne Inhalt; Aufbau nach UMBAUPLAN.md.",
+      "sensitiveTopics": [],
+      "visualPlan": [
+        {
+          "id": "v-ueber-geplant",
+          "section": "Entwurf",
+          "sectionId": "geplant",
+          "goal": "Platzhalter bis Etappe 3",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Platzhalter: Der Visualisierungsplan entsteht vor dem Bau der Seite (Kandidaten in UMBAUPLAN.md, Abschnitt 3).",
+          "approvalStatus": "ausstehend"
+        }
+      ]
+    }
+  ],
+  "siteUrl": "",
+  "interactionScript": "../../../components/interaktion.js"
+}
