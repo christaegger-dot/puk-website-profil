@@ -126,3 +126,7 @@
 /* Momentaufnahmen (Korrektur 1i, P4-F-4): Zeile über den beiden Sätzen, wer spricht; über die ganze Breite der Szene,
    schmal (eine Spalte) steht sie ebenfalls über den Sätzen. Ohne Rahmen, Farbe und Schrift über Tokens. */
 .bl-scene__lead{grid-column:1/-1;margin:0 0 var(--space-2);font:var(--type-body-sm);color:var(--text-default)}
+
+/* Auf sich achten, Abschnitt 02 (Etappe 2a): Text direkt nach der Abbildung «Ein freier Abend» (Bauauftrag 2a, Abschnitt 4).
+   Zweites Raster im selben Abschnitt, linke Spalte leer; Abstand zur Figur wie .puk-vis-wide über der Figur. */
+.bl-nach-figur{margin-top:var(--space-8)}

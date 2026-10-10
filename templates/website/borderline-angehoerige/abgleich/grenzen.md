@@ -2,7 +2,7 @@
 
 Neue Seite: `content/grenzen.html` · Bestand: `/grenzen`; Handouts `4-arten-von-grenzen`, `bruecke-gelaender`, `dear`, `grenzen-erkennen`, `grenzen-spickzettel`, `grenzen-ohne-eskalation`, `lmk`, `spiegeln-statt-aufsaugen`; zwei Szenarien aus `/uebungen`. Statuswerte und Zählweise: `README.md`.
 
-**Stand 10.10.2026, Korrektur Etappe 1j (bauende Sitzung).** Eine Tabelle für jeden Satz der alten Seite und der zugeordneten Handouts (Korrektur 1b, E). Sie ersetzt die abschnittsweisen Tabellen vom 08.10.2026 und den Abschnitt «Satz für Satz» der ersten Korrektur; wo diese sich widersprachen, gilt die Zeile hier. Statuswerte, Zählweise und Skripte: `README.md`.
+**Stand 10.10.2026, Etappe 2a (bauende Sitzung).** Eine Tabelle für jeden Satz der alten Seite und der zugeordneten Handouts (Korrektur 1b, E). Sie ersetzt die abschnittsweisen Tabellen vom 08.10.2026 und den Abschnitt «Satz für Satz» der ersten Korrektur; wo diese sich widersprachen, gilt die Zeile hier. Statuswerte, Zählweise und Skripte: `README.md`.
 
 **Korrektur 1c:** Zeilen zu K-1 bis K-5 nachgeführt; Status und Bemerkungen der Stichprobe aus den Belegen der dritten Prüfrunde (Abschnitt 4) berichtigt.
 
@@ -15,6 +15,8 @@ Ab 1g ist DEAR Abbildung 1. Ältere Bemerkungen nennen sie Abbildung 2.
 **Korrektur 1i:** Entscheide zur vierten Prüfrunde (`KORREKTUR-ETAPPE-1I.md`, Abschnitte 3, 6, 7 und 9): gekürzte Sätze zurück (P4-F-6: Nr. 51, 79, 369, 228, 261), «Eine Grenze gilt auch, wenn die andere Person nicht zustimmt.» (P4-F-11, Nr. 627), Wortstellung im Suizid-Absatz auf `verstehen` (P4-F-9, Nr. 646), Ort der Beratung auf `index` (P4-F-19, Nr. 115 und 247), Verweis im Kopf (P4-S-3), «denn sie zeigen» (P4-S-5), «niedriger» (P4-S-6). Nr. 208 ist «verschoben» (P4-W1-9). Status «umformuliert (Prüfrunde 4, 1i)», der frühere Status steht in der Bemerkung («bis 1h: …»). Neu ohne Bestandszeile: der Verweissatz in `dear` auf `verstehen` › «Wenn die Anspannung steigt» (P4-W2-4).
 
 **Korrektur 1j:** Die Fachstelle hat Etappe 1 am 10.10.2026 fachlich freigegeben (`KORREKTUR-ETAPPE-1J.md`). Bemerkungen mit «Prüfbedarf» tragen den Vermerk «erledigt: Freigabe Etappe 1 durch die Fachstelle, 10.10.2026 (1j)»; der Prüfbedarf unten bleibt als Verlauf stehen.
+
+**Etappe 2a:** Nr. 511 war für `selbstfuersorge` vorgemerkt und nennt jetzt den Ort auf `selbstfuersorge` (`BAUAUFTRAG-ETAPPE-2A.md`, Abschnitt 5c).
 
 **Zählung:** 710 Sätze des Bestands, davon 120 übernommen, 54 gekürzt, 57 zusammengeführt, 65 verschoben, 10 geändert, 54 umformuliert (einfache Sprache, 1f), 12 umformuliert (einfache Sprache, 1g), 23 umformuliert (Prüfrunde 4, 1i), 304 entfällt, 11 Bezeichnung. Dazu 2 Zeilen ohne Bestandssatz: 1 umformuliert (einfache Sprache, 1f), 1 neu (1f).
 
@@ -538,7 +540,7 @@ Ab 1g ist DEAR Abbildung 1. Ältere Bemerkungen nennen sie Abbildung 2.
 | 508 | Handout `grenzen-erkennen` › Frage zur Selbstbeobachtung | Was beobachten Sie, in welchem Zusammenhang tritt es auf, und was würde Sie jetzt entlasten? | entfällt | – | – | Kürzung; verschoben nach `selbstfuersorge` (Etappe 2), Warnsignale |
 | 509 | Handout `grenzen-erkennen` › Frage zur Selbstbeobachtung | Signale sind Hinweise, keine Diagnose – und Erschöpfung ist kein persönliches Versagen. | entfällt | – | – | Kürzung; verschoben nach `selbstfuersorge` (Etappe 2), Warnsignale |
 | 510 | Handout `grenzen-erkennen` › Frage zur Selbstbeobachtung | Neue, starke oder anhaltende körperliche Beschwerden sollten medizinisch abgeklärt werden. | übernommen | Lassen Sie neue, starke oder anhaltende körperliche Beschwerden medizinisch abklären. | grenzen#erkennen | `erkennen` («Lassen Sie … medizinisch abklären») |
-| 511 | Handout `grenzen-erkennen` › Frage zur Selbstbeobachtung | Unterstützung finden Sie z. B. bei einer Angehörigenberatung oder in der Hausarztpraxis; in einer akuten Krise nutzen Sie die separat ausgewiesenen Krisen- und Notfallwege. | verschoben | – | selbstfuersorge (Etappe 2) | `selbstfuersorge` (Etappe 2); Krisenteil entfällt (Profil) |
+| 511 | Handout `grenzen-erkennen` › Frage zur Selbstbeobachtung | Unterstützung finden Sie z. B. bei einer Angehörigenberatung oder in der Hausarztpraxis; in einer akuten Krise nutzen Sie die separat ausgewiesenen Krisen- und Notfallwege. | verschoben | Sprechen Sie bei Bedarf mit Ihrer Hausärztin, Ihrem Hausarzt oder einer psychologischen Fachperson. | selbstfuersorge#warnsignale | bis 1j vorgemerkt für `selbstfuersorge` (Etappe 2); seit 2a in «Warnsignale für Überlastung» auf `selbstfuersorge`; Krisenteil entfällt (Profil), dort Verweis im Text |
 | 512 | Handout `grenzen-erkennen` › Frage zur Selbstbeobachtung | Quelle & Stand | entfällt | – | – | Handout-Rahmen (Textversion, Druckgrafik, Links, Stand, Freigabevermerke, Weiterführen) |
 | 513 | Handout `grenzen-erkennen` › Frage zur Selbstbeobachtung | Fachliche Bezugspunkte: WHO, Stress – Questions and Answers (30. März 2026); NICE NG150, Supporting adult carers (2020, aktualisiert). | gekürzt | Quellen: NICE NG150 (2020); WHO, Stress: Questions and answers (2026). | grenzen#erkennen | `erkennen`, Quellen |
 | 514 | Handout `grenzen-erkennen` › Frage zur Selbstbeobachtung | Eigene didaktische Zusammenstellung zur Selbstbeobachtung; kein diagnostisches Instrument. | entfällt | – | – | Handout-Rahmen; die Signale stehen in `erkennen` als Anlass innezuhalten, nicht als Test |

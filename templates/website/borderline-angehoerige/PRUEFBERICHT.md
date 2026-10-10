@@ -44,6 +44,176 @@ Dazu 5 leichte Befunde zu Bericht und Abgleich. Die erste und zweite Prüfrunde 
 
 Nach jedem Bau ohne Nachfrage ausfüllen: Visualisierungs-Check wie unten, mit Beleg je Punkt. Arbeitsstand, keine Prüfstufe.
 
+**Stand 10.10.2026 · Etappe 2a · bauende Sitzung (Claude Code).** Umgesetzt ist `BAUAUFTRAG-ETAPPE-2A.md`:
+
+- die neuen Seiten `rolle` («Ihre Rolle klären») und `selbstfuersorge` («Auf sich achten»), je mit einer Abbildung
+- die Einstiege auf `index`
+- `site.config.json`
+- der Abgleich
+
+`verstehen`, `beziehungen` und `grenzen` sind inhaltlich unverändert. Keine Prüfstufe ist «erledigt». Die Selbstprüfung von 1j steht darunter.
+
+### Etappe 2a: Stand je Abschnitt des Auftrags
+
+| Punkt | Stand | Beleg |
+| --- | --- | --- |
+| Auftrag verschieben | umgesetzt | `BAUAUFTRAG-ETAPPE-2A.md` aus `9810d16` unverändert im Website-Ordner (Commit `0a602d1`, `cmp`: gleich); im Stamm von `main` gelöscht (`d79f018`); zusammengeführt (`bebf43b`) |
+| 1 Nur die genannten Teile geändert | eingehalten | `git diff` gegen `bebf43b`: `content/verstehen.html`, `content/beziehungen.html` und `content/grenzen.html` ohne Änderung. Die gebauten Seiten der Etappe 1 und die Entwurfsseiten haben nur zwei neue Zeilen in der Navigation («Ihre Rolle», «Auf sich achten»). `editorialStatus` und Fusszeile sind unverändert. `content/index.html` ändert sich nur in `einstiege`. Dazu kommt eine Regel in `borderline.css` (`.bl-nach-figur`, Abstand nach der Abbildung, nur mit Token) |
+| 2a Sprache | umgesetzt; zu prüfen in S | Satzlänge (sichtbarer Text, Skript der bauenden Sitzung): `rolle` 384 Sätze, im Mittel 8,5 Wörter, 32 Sätze (8 %) über 15 Wörter; `selbstfuersorge` 320 Sätze, 8,7 Wörter, 23 (7 %). Vorbilder: `beziehungen` 14 %, `grenzen` 9 %, `verstehen` 12 %. «Was Sie tun können:» mit Beispielsatz: `rolle` 6-mal, `selbstfuersorge` 4-mal; Beispielsätze aus dem Bestand zuerst, zum Beispiel «Was wäre dein Vorschlag?» (`alltag`). Fachwörter ersetzt: «zwiespältige Gefühle» statt «Ambivalenz», «die Gefühle eines anderen Menschen ausgleichen» statt «Regulation» (Abgleich `rolle` Nr. 18, 33, 39 und 292) |
+| 2a Meta-Texte | entfallen | «Worum es hier geht», «Das können Sie mitnehmen», Lesezeit, Prüfvermerke, Handout-Rahmen: «entfällt» mit Grund, zum Beispiel `rolle` Nr. 5 bis 10 und Nr. 405 bis 409 |
+| 2b Nichts verschwindet still | umgesetzt | `pruefe-abgleich.mjs`: 3204 Zeilen, 0 ohne Fundstelle; jeder Satz der Bestandsquellen aus Abschnitt 3 und 4 hat eine Zeile (`rolle` 757, `selbstfuersorge` 659). Umgekehrt geprüft (Skript): 148 Stellen der neuen Seiten haben keine eigene Zeile als neue Fassung. Von Hand durchgesehen sind das Bezeichnungen und Überschriften aus dem Bestand oder dem Auftrag, zweite Teile geteilter Bestandssätze (zum Beispiel «Sie wollen helfen und möchten zugleich weg.» aus Nr. 33) und die Verweissätze der Liste unten. Ein weiterer neuer Satz ist nicht dabei |
+| 2b Absicherungen | umgesetzt; zu prüfen in W1 | Absicherungen je 100 Wörter: `rolle` 1,94 → 2,16, `selbstfuersorge` 2,27 → 2,64. Beispiele: «Manche Angehörige bleiben …» (Abbildung, nicht «viele»); «Ob eine Absprache wirkt, lässt sich nicht vorhersagen.» (`rolle` › `alltag`); «Dass es bei jeder Person wirkt, ist nicht garantiert.» (`selbstfuersorge` › `zu-viel`, Bestand «keine Wirkungsgarantie für jede Person»); «Sie treten nicht bei allen Menschen mit Borderline auf.» (`rolle` › `an-grenzen`) |
+| 2b Schuld und Verantwortung | eingehalten | `rolle` › `schuld`: «Sie sind nicht für den Verlauf einer anderen Person verantwortlich.», «Eine Diagnose weist Ihnen keine persönliche Schuld zu.»; `selbstfuersorge` › `unterstuetzung`: «Ein Schuldgefühl allein erklärt weder die Erkrankung noch Ihre Verantwortung.» Alle Sätze mit «Schuld» oder «verantwortlich» der zwei Seiten per Skript gelesen: keiner widerspricht `verstehen` (Annahme 3) oder `beziehungen` |
+| 2b Keine neuen fachlichen Aussagen | eingehalten (Selbsteinschätzung) | 25 neue Sätze, alle aus den Arten, die Abschnitt 2b erlaubt: Kernaussagen, Sätze in Abbildungen, Kurzbeschreibungen, Zwischentitel, Verweissätze und Einstiege (Liste unten) |
+| 2b Verlinken statt wiederholen | umgesetzt | `rolle` → `verstehen.html#borderline`, `#anspannung`; `beziehungen.html#was-hilft`; `grenzen.html#gewalt` (zweimal), `grenzen.html`; `selbstfuersorge.html#kraft`, `selbstfuersorge.html`. `selbstfuersorge` → `verstehen.html#anspannung`, `rolle.html#schuld`, `grenzen.html#gewalt`, `index.html#beratung`, `#zu-viel`. Der Linktext nennt den Zieltitel in «…», die Anführungszeichen stehen ausserhalb des Links (P4-S-3). Sätze von Etappe-1-Seiten stehen im Abgleich als «verschoben» mit Ort dort, zum Beispiel die Ursachen (`rolle` Nr. 453 bis 462) |
+| 2c Zuständigkeit | eingehalten | `grep`: kein `tel:`, keine Telefonnummer in `content/rolle.html`, `content/selbstfuersorge.html`, `content/index.html`. Verweis im Text nur über `<p data-responsibility-inline></p>`: `rolle` 1-mal (`an-grenzen`), `selbstfuersorge` 3-mal (`eigenes-leben`, `warnsignale`, `zu-viel`), je an einer Stelle, an der der Bestand auf akute Gefahr verweist. `sensitiveTopics` beider Seiten: `selbstgefaehrdung`, `gewalt`, `akute-krise`. Kein Link auf eine Entwurfsseite (Gate ohne Befund); Inhalte für `kommunizieren` und `unterstuetzung` im Abgleich mit Ort «… (Etappe 2)» |
+| 2d Bilder | umgesetzt | Je Seite genau eine Abbildung. `visualPlan` mit 7 Zeilen je Seite, eine je Abschnitt; die übrigen 12 Zeilen sind `format` «text» mit Begründung. STOPP: `<ol>` mit fünf Schritten. Warnsignale: Begriffsliste mit fünf Bereichen. Energie-Konto: Text, zwei Listen «Was Kraft kosten kann:» und «Was entlasten kann:». Sauerstoffmaske: ein Satz («Die Sauerstoffmaske im Flugzeug ist ein Bild dafür, die eigene Sicherheit und Gesundheit ernst zu nehmen.»). Garten: ein Satz («… so wie Wasser und Licht einen Garten.»). Kein Leuchtturm-Bild |
+| 3 `rolle` | umgesetzt | Abschnitte 01 `anbieten`, 02 `schuld`, 03 `alltag`, 04 `nach-konflikten`, 05 `mehrere`, 06 `kinder`, 07 `an-grenzen`, wie vorgeschlagen; Abweichungen unter «Entscheide». Abbildung 1 mit Titel, Kernaussage, Satz in der Szene, Kurzbeschreibung, Vertiefung (drei Punkte des Auftrags) und Quelle im Wortlaut. Zeichnung: SVG aus Anhang A Zeichen für Zeichen gleich (Skript), nur der Bildausschnitt `viewBox` ist «0 52 640 218» statt «0 0 640 270» (leerer Rand oben weg). «Begrenzte Verfügbarkeit» steht auf `selbstfuersorge`; `rolle` › `alltag` verweist dorthin |
+| 3 Schmal | umgesetzt | Bei 360 px steht der Satz über der Zeichnung, die Zeichnung bleibt (Bildschirmfoto) |
+| 4 `selbstfuersorge` | umgesetzt | Abschnitte 01 `eigenes-leben`, 02 `kraft`, 03 `warnsignale`, 04 `zu-viel`, 05 `unterstuetzung`, 06 `akzeptanz`, 07 `beratung`. Abbildung 1: SVG und Satzpaar Zeichen für Zeichen gleich wie Abbildung 4 in `templates/website/longform/visualisierungsmuster.html` (Skript); Kernaussage, Kurztext, Vertiefung und Quelle im Wortlaut des Auftrags; ohne «Sie ist kein Zeichen von Schwäche.». Direkt nach der Abbildung: «Sie müssen nicht rund um die Uhr erreichbar sein. …» mit «Nach 22 Uhr bin ich nicht mehr am Handy. Wenn es ernst wird, holen wir zusätzliche Hilfe dazu.». «Bei Gefahr hat Schutz Vorrang» ist der Verweis im Text in `eigenes-leben` |
+| 5a `index` | umgesetzt | Reihenfolge Verstehen, Beziehungen, Ihre Rolle, Grenzen, Auf sich achten; die drei bisherigen Einträge im Wortlaut (`git diff --word-diff`); zwei neue Einträge und der Platzhalter «Weitere Einstiege folgen: Zugewandt und klar sprechen · Genesung · Unterstützung finden.» im Wortlaut |
+| 5b `site.config.json` | umgesetzt | `rolle` und `selbstfuersorge`: `status` «published», `primaryTask`, `description`, `sensitiveTopics`, `visualPlan`. Die zwei Abbildungen mit `goal`, `statement`, `understood`, `source`, `alternative`, `reason`, `resonance` (Wortlaut des Auftrags) und `approvalStatus` «ausstehend». Die Seitenplatzhalter der zwei Seiten entfallen (10 statt 12) |
+| 5c Abgleich | umgesetzt | `abgleich/rolle.md` und `abgleich/selbstfuersorge.md` neu. Vorgemerkte Zeilen mit neuem Ort und neuer Fassung: `verstehen` Nr. 484, 485, 527, 528; `beziehungen` Nr. 115; `grenzen` Nr. 511. `index` Nr. 17 bis 20 und 22 bis 28 auf die neuen Einstiege und den neuen Platzhalter. Per Skript gegen den Stand vor 2a verglichen: In den vier Tabellen der Etappe 1 ist keine andere Zeile geändert. Statuswerte «neu (2a)» und «umformuliert (einfache Sprache, 2a)» in `abgleich/README.md` erklärt, dazu ein Abschnitt «Etappe 2a». Skripte: `pruefe-abgleich.mjs`, `kennzahlen.mjs`, `verneinung.mjs` und `bedienung.mjs` erfassen die neuen Seiten. Prüfbedarf für W1 am Ende jeder neuen Tabelle (`rolle` 10 Punkte, `selbstfuersorge` 8) |
+| 6 Prüfen | umgesetzt | unten |
+| 6 Pull Request | Entwurf | bleibt Entwurf |
+
+### Etappe 2a: Prüfungen nach Abschnitt 6
+
+- **`node tools/build.mjs`:** 0 blockierend, 14 Hinweise: 2 × `visual-approval` (`v-ro-weg`, `v-sf-abend`), 10 × `placeholder-approval`, `site-url`, `review-report`.
+- **`node tools/gate.mjs --selftest`:** 53/53 bestanden.
+- **`node tools/gate.mjs --production`:** 13 blockierend und 1 Hinweis (`site-url`), wie erwartet. Die 13 sind 2 × `visual-approval`, 10 × `placeholder-approval` (`einstiege` auf `index` und die Seitenplatzhalter von `diagnose`, `behandlung`, `kommunizieren`, `krise`, `genesung`, `unterstuetzung`, `fragen`, `quellen`, `ueber`) und 1 × `review-report`.
+- **`node abgleich/pruefe-abgleich.mjs`:** 3204 Zeilen, 0 ohne Fundstelle.
+- **Bildschirmfotos und Sicht:** beide Abbildungen bei 1280 und 360 px, je im Standard-Theme und im Theme «kontrast» (acht Fotos), alle angesehen.
+  - «Ein Stück Weg»: breit steht der Satz über der Zeichnung links. Die zwei Menschen gehen nebeneinander von hinten auf dem Weg, der sich zwischen Hügeln in die Ferne verengt. Schmal steht der Satz über der Zeichnung. Die zwei Menschen sind dann etwa 60 px hoch, klein, aber als zwei Gehende erkennbar.
+  - «Ein freier Abend»: breit stehen die zwei Sätze nebeneinander über Telefon und Buch, schmal untereinander. Tisch, Tasse, Telefon, Buch und Mond im Fenster sind bei 360 px erkennbar.
+  - Theme «kontrast»: Linien und Flächen dunkler, nichts verschwindet.
+  - Text nach «Ein freier Abend»: 32 px Abstand zur Abbildung bei 360 und 1280 px (gemessen).
+- **Überlauf:** 320, 360, 414, 768, 1024, 1280 und 1440 px, Vertiefungen offen, beide Themes: `rolle`, `selbstfuersorge` und `index` ohne waagrechten Überlauf, kein Element breiter als das Fenster. Zoom 200 % (640 px bei Faktor 2, und 1280 px mit Schriftgrösse 200 %): ohne Überlauf.
+- **Kontraste:** Textelemente mit eigenem Text (`rolle` 278, `selbstfuersorge` 219, `index` 45), in beiden Themes und allen Breiten. Kein Element liegt unter AA (4,5 : 1, grosse Schrift 3 : 1). Linien der Zeichnungen gegen den Hintergrund der Figur: keine unter 3 : 1. Keine festen Farben in SVG, keine `style`-Attribute.
+- **Tastatur** (1280 px, reduzierte Bewegung):
+  - Tabstopps: `rolle` 24, `selbstfuersorge` 21, `index` 14.
+  - Der erste Stopp ist «Zum Hauptinhalt». Jeder Stopp hat einen sichtbaren Fokus und liegt im Fenster.
+  - Die Reihenfolge folgt dem Lesen: Kopf, Navigation, Kapitelübersicht, dann die Links im Text.
+  - Enter öffnet «Grenzen des Bildes».
+  - Nach dem Laden läuft keine Animation. Auf `selbstfuersorge` lief direkt nach Enter ein Fokus-Übergang von 0,01 ms, nach 800 ms keiner mehr.
+- **`node abgleich/bedienung.mjs`:** Tabelle in `abgleich/README.md`.
+  - `rolle`: 24 Tabstopps, 30 067 px bei 360 px, Abbildung 673 px.
+  - `selbstfuersorge`: 21 Tabstopps, 25 453 px, Abbildung 680 px.
+  - Seiten der Etappe 1 (wegen der zwei neuen Punkte der Navigation): zwei Tabstopps mehr, bei 360 px 92 px höher.
+  - `index`: 14 statt 10 Tabstopps, 3922 → 4408 px.
+- **Nicht prüfbar in dieser Umgebung:** reale Screenreader-Läufe, Hardwaretastatur und Touch.
+
+### Etappe 2a: Visualisierungs-Check der zwei neuen Abbildungen
+
+Selbstprüfung, keine Prüfstufe. E = erfüllt · T = teilweise · N = nicht erfüllt · – = nicht anwendbar.
+
+| Nr. | Prüfpunkt | `v-ro-weg` | `v-sf-abend` | Beleg | Massnahme |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Plan liegt vor, Seite entspricht ihm | E | E | Build ohne Hinweis `visual-plan`; `data-visual-id` und `data-visual-type` «illustration» wie im Plan | – |
+| 2 | Zeile je Abschnitt; Begründungen für Text passen | E | E | je 7 Zeilen für 7 Abschnitte; zum Beispiel `v-sf-zu-viel`: «Text ist klarer: STOPP als nummerierte Liste im Wortlaut der …», `v-ro-schuld`: «Text ist klarer: Die fünf Sätze sind Zitate mit je einer Ein…» | – |
+| 3 | Prüffrage beantwortet und eingelöst | E | E | Weg: `understood` «… Das Bild zeigt auf einen Blick, wer neben wem geht, ohne eine Liste von Aufgaben.»; das Bild zeigt zwei Menschen nebeneinander. Abend: «Zwei Gedanken am selben Abend zeigen, dass ein Teil der Aufmerksamkeit beim Telefon bleibt …»; die zwei Sätze stehen über Telefon und Buch | – |
+| 4 | Kernaussage und Erklärtext; Hauptaussage nicht nur in der Vertiefung | E | E | Kernaussage und Kurztext sichtbar, Figur offen; die Vertiefung nennt nur Grenzen des Bildes | – |
+| 5 | Ansatzpunkt (B, C, G) | – | – | Illustrationen (Muster D), kein Erklärmodell | – |
+| 6 | Mechanismus nicht doppelt gezeigt | E | E | je die einzige Abbildung der Seite; Garten und Sauerstoffmaske nur als Satz, kein Leuchtturm | – |
+| 7 | Kartenraster-Check | E | E | keine Kastenreihe; Text in Listen und Begriffslisten | – |
+| 8 | Anordnung und Formen tragen Bedeutung | E | E | Weg: zwei Menschen gleich weit vorn auf demselben Weg, der in die Ferne führt; niemand zieht oder trägt. Abend: Telefon links mit dickerem Rand (leuchtender Bildschirm), Buch rechts geschlossen, Tee dazwischen | – |
+| 9 | Verteilt, keine Textwand | T | T | Je eine Abbildung, wie entschieden. Die Seiten sind lang: `rolle` 3339 Wörter, 30 067 px bei 360 px; `selbstfuersorge` 2955 Wörter, 25 453 px. Gegliedert durch Kapitelübersicht, Zwischentitel, Listen und Begriffslisten | Fachstelle (Länge) |
+| 10 | Vereinfacht, nicht verfälscht; Grenzen benannt; Quelle | E | E | Vertiefung «Grenzen des Bildes» im Wortlaut des Auftrags; Quelle «Eigene didaktische Darstellung nach dem Handout «Der Garten»; Bezug: NICE CG78 (2009).» und «Eigene didaktische Darstellung; Bezug: Handout «Energie-Konto».» | – |
+| 11 | Ohne Animation, Aufklappen und Skript verständlich | E | E | SVG ohne Animation; Sätze, Kernaussage und Kurztext sind HTML-Text | – |
+| 12 | Bei 320 px lesbar; Textalternative vollständig | E | E | Kein Überlauf bei 320 und 360 px. Weg: Menschen klein (etwa 60 px bei 360 px), aber erkennbar. Kurzbeschreibungen im Wortlaut des Auftrags, über `aria-describedby` verbunden | – |
+| 13 | Theme «kontrast» geprüft | E | E | Bildschirmfotos bei 1280 und 360 px; Linien ≥ 3 : 1; keine festen Farben | – |
+| 14 | Inhalt fachlich freigegeben | N | N | `approvalStatus` «ausstehend»; Gate production: `visual-approval` | Fachstelle |
+| 15 | Bildsprache passt; Wirkung (`resonance`) eingelöst | E | T | Weg: «Entlastung: Ich darf begleiten, …»: Bild und Satz zeigen genau das. Abend: «Wiedererkennen» trägt das Bild; die «Erlaubnis» (Erreichbarkeit begrenzen) steht erst im Text direkt danach, nicht im Bild | R2 |
+| 16 | Ein Bild, eine Idee; Beschriftungen nennen Erleben, nicht Bildteile | E | E | Je ein Gedanke aus Sicht eines Menschen; kein Bildteil beschriftet, keine Liste, die das Bild übersetzt | – |
+| 17 | Keine ungewollten Bedeutungen | T | T | Weg: Die linke Person ist etwas grösser (Kopf r 8,4 statt 7,9); das liest sich als zwei Erwachsene, nicht als Führung; die Zeichnung ist die gewählte Skizze. Der Weg «in die Ferne» kann ein Ziel nahelegen; die Vertiefung sagt, dass sich der Verlauf nicht vorhersagen lässt. Abend: «Vielleicht ruft sie gleich an.» nennt die betroffene Person weiblich; das kann ein Klischee über Borderline stützen. Der Satz ist nach dem Auftrag unverändert aus dem Profilbeispiel | R2; Fachstelle (Satz «sie») |
+
+**Freundin-Test (bauende Sitzung):**
+
+- «Ein Stück Weg» besteht ihn: zwei Menschen gehen nebeneinander, der Satz sagt, worum es geht.
+- «Ein freier Abend» besteht ihn: Ein Abend mit kaltem Tee und dem Blick aufs Telefon ist ohne Erklärung verständlich.
+
+### Etappe 2a: Neue Sätze zur Freigabe
+
+Jeder Satz steht auch im Abgleich mit Status «neu (2a)».
+
+| Nr. | Satz | Ort | Abgleich |
+| --- | --- | --- | --- |
+| 1 | «Sie können begleiten.» (Kernaussage, erster Satz; der zweite, «Genesung herstellen können Sie nicht.», stammt aus `garten`) | `rolle` › `anbieten`, Abbildung 1 | `rolle` Nr. 757 |
+| 2 | «Zeichnung: Zwei Menschen gehen nebeneinander auf einem Weg, von hinten gesehen. Der Weg führt durch eine Hügellandschaft in die Ferne. Darüber steht der Satz: «Ich kann diesen Weg begleiten, aber nicht für dich gehen.»» (Kurzbeschreibung, Wortlaut des Auftrags) | `rolle` › `anbieten`, Abbildung 1 | `rolle` Nr. 758 |
+| 3 | «Innehalten, bevor Sie reagieren» (Zwischentitel; Bestand: «Beziehungs-Achtsamkeit im echten Alltag») | `rolle` › `alltag` | `rolle` Nr. 759 |
+| 4 | «Warum Borderline nicht eine einzige Ursache hat, erklärt die Seite «Verstehen» im Abschnitt «Was die Diagnose beschreiben kann».» | `rolle` › `schuld` | `rolle` Nr. 760 |
+| 5 | «Wie Sie Ihre Erreichbarkeit begrenzen können, steht auf der Seite «Auf sich achten» im Abschnitt «Was Kraft kostet und was entlastet».» | `rolle` › `alltag` | `rolle` Nr. 761 |
+| 6 | «Woran Sie merken, dass die Anspannung steigt, erklärt die Seite «Verstehen» im Abschnitt «Wenn die Anspannung steigt».» | `rolle` › `alltag` | `rolle` Nr. 762 |
+| 7 | «Was ein solches Gespräch klären kann, steht auf der Seite «Beziehungen» im Abschnitt «Was die Beziehung stärken kann».» | `rolle` › `nach-konflikten` | `rolle` Nr. 763 |
+| 8 | «Was Kinder nicht übernehmen müssen, steht auf der Seite «Grenzen» im Abschnitt «Wenn Gewalt oder Bedrohung vorkommt».» | `rolle` › `kinder` | `rolle` Nr. 764 |
+| 9 | «Dort steht auch, wer einspringt, wenn die erste Person ausfällt.» | `rolle` › `kinder` | `rolle` Nr. 765 |
+| 10 | «Was bei Gewalt wichtig ist, steht auf der Seite «Grenzen» im Abschnitt «Wenn Gewalt oder Bedrohung vorkommt».» | `rolle` › `an-grenzen`, nach dem Verweis im Text | `rolle` Nr. 766 |
+| 11 | «Wie Sie auf sich achten können, steht auf der Seite «Auf sich achten».» | `rolle` › `an-grenzen` | `rolle` Nr. 767 |
+| 12 | «Manche Angehörige bleiben auch an einem freien Abend innerlich auf Abruf.» (Kernaussage, Wortlaut des Auftrags) | `selbstfuersorge` › `kraft`, Abbildung 1 | `selbstfuersorge` Nr. 659 |
+| 13 | «Das Buch liegt bereit, der Tee wird kalt, und ein Teil der Aufmerksamkeit bleibt beim Telefon. Diese ständige Bereitschaft kann Kraft kosten, auch wenn nichts passiert.» (Kurztext, Wortlaut des Auftrags) | `selbstfuersorge` › `kraft`, Abbildung 1 | `selbstfuersorge` Nr. 660 |
+| 14 | «Vielleicht ruft sie gleich an.» (Satz in der Szene, aus dem Profilbeispiel) | `selbstfuersorge` › `kraft`, Abbildung 1 | `selbstfuersorge` Nr. 661 |
+| 15 | «Eigentlich wollte ich lesen.» (Satz in der Szene, aus dem Profilbeispiel) | `selbstfuersorge` › `kraft`, Abbildung 1 | `selbstfuersorge` Nr. 662 |
+| 16 | «Nicht alle Angehörigen erleben das so, und es muss nicht so bleiben. Das Bild zeigt eine Erfahrung, die manche beschreiben, keine Pflicht und keinen Fehler.» (Vertiefung, Wortlaut des Auftrags) | `selbstfuersorge` › `kraft`, Abbildung 1 | `selbstfuersorge` Nr. 663 |
+| 17 | «Zeichnung eines Tisches am Abend: eine Tasse Tee, ein Mobiltelefon mit leuchtendem Bildschirm und ein geschlossenes Buch; im Fenster steht der Mond.» (Kurzbeschreibung, aus dem Profilbeispiel) | `selbstfuersorge` › `kraft`, Abbildung 1 | `selbstfuersorge` Nr. 664 |
+| 18 | «Ruhig atmen» (Zwischentitel; Bestand: «4-6 Atemübung ohne Atemanhalten») | `selbstfuersorge` › `zu-viel` | `selbstfuersorge` Nr. 665 |
+| 19 | «5-4-3-2-1: im Hier und Jetzt ankommen» (Zwischentitel; Bestand: «5-4-3-2-1 Grounding») | `selbstfuersorge` › `zu-viel` | `selbstfuersorge` Nr. 666 |
+| 20 | «Kurze Übungen finden Sie im Abschnitt «Wenn es gerade zu viel ist».» | `selbstfuersorge` › `eigenes-leben` | `selbstfuersorge` Nr. 667 |
+| 21 | «Wie Anspannung in einem Gespräch steigen kann, erklärt die Seite «Verstehen» im Abschnitt «Wenn die Anspannung steigt».» | `selbstfuersorge` › `kraft` | `selbstfuersorge` Nr. 668 |
+| 22 | «Mehr zu Schuldgefühlen steht auf der Seite «Ihre Rolle klären» im Abschnitt «Schuld, Verantwortung und was dazwischen liegt».» | `selbstfuersorge` › `unterstuetzung` | `selbstfuersorge` Nr. 669 |
+| 23 | «Was dann wichtig ist, steht auf der Seite «Grenzen» im Abschnitt «Wenn Gewalt oder Bedrohung vorkommt».» | `selbstfuersorge` › `akzeptanz`, nach «Bei Gefahr geht Schutz vor.» | `selbstfuersorge` Nr. 670 |
+| 24 | «Ich weiss nicht mehr, was meine Aufgabe ist und was nicht.» (Anliegen, Wortlaut des Auftrags) | `index` › `einstiege`, Eintrag `rolle` | `index` Nr. 255 |
+| 25 | «Ich bin erschöpft und komme selbst zu kurz.» (Anliegen, Wortlaut des Auftrags) | `index` › `einstiege`, Eintrag `selbstfuersorge` | `index` Nr. 256 |
+
+### Etappe 2a: Verweise von Etappe-1-Seiten (Vorschlag)
+
+Stellen auf `verstehen`, `beziehungen` und `grenzen`, die auf die neuen Seiten verweisen könnten. Der Linktext besteht aus Wörtern, die schon dastehen. Die Seiten sind jetzt nicht geändert; ein Link würde den Wortlaut nicht ändern.
+
+| Nr. | Seite › Abschnitt | Stelle | Linktext | Ziel |
+| --- | --- | --- | --- | --- |
+| V1 | `verstehen` › `mythen` | «Daraus folgt keine Schuld und keine Aufteilung von Verantwortung für die Erkrankung.» | «keine Schuld» | `rolle.html#schuld` («Schuld, Verantwortung und was dazwischen liegt») |
+| V2 | `verstehen` › `bewertungen` | «Mitwirken können Erschöpfung, erlebte Kritik, Nähe oder Abstand, Missverständnisse, Scham oder Kränkung.» | «Erschöpfung» | `selbstfuersorge.html#warnsignale` («Warnsignale für Überlastung») |
+| V3 | `verstehen` › `anspannung` | «Senken Sie Ihr eigenes Tempo, achten Sie auf Ihre eigene Anspannung und bieten Sie eine Pause an.» | «achten Sie auf Ihre eigene Anspannung» | `selbstfuersorge.html#zu-viel` («Wenn es gerade zu viel ist») |
+| V4 | `beziehungen` › `was-hilft` | «Wenn Angehörige oft eigene Termine absagen oder dauernd erreichbar sind, kann das kurz entlasten und zugleich die eigene Belastung erhöhen.» | «dauernd erreichbar» | `selbstfuersorge.html#kraft` («Was Kraft kostet und was entlastet», mit «Ein freier Abend») |
+| V5 | `beziehungen` › `verantwortung` | «Für den Verlauf der Erkrankung sind sie nicht verantwortlich, für die Beziehung nicht allein.» | «nicht verantwortlich» | `rolle.html#anbieten` («Was Sie anbieten können und was nicht Ihre Aufgabe ist») |
+| V6 | `grenzen` › `bruecke` | «Sie müssen die Beziehung nicht allein tragen.» | «nicht allein tragen» | `selbstfuersorge.html#beratung` («Nicht allein tragen») |
+| V7 | `grenzen` › `arten` | «Sie dürfen Zeiten anbieten, in denen Sie erreichbar sind.» | «erreichbar» | `selbstfuersorge.html#kraft` |
+| V8 | `grenzen` › `konsequenz` | «Ein Schuldgefühl heisst nicht, dass Sie etwas falsch gemacht haben.» | «Schuldgefühl» | `rolle.html#schuld` |
+| V9 | `grenzen` › `gewalt` | Zwischentitel «Wenn Kinder mitbetroffen sind» | ein Satz am Ende des Absatzes wäre nötig, denn Überschriften verlinken nicht; ohne neuen Satz: kein Link | `rolle.html#kinder` («Wenn Kinder mitbetroffen sind») |
+
+Empfehlung der bauenden Sitzung: V1, V4, V6 und V8. Sie treffen das Thema der Zielstelle genau. V2, V3, V5 und V7 sind möglich, aber weniger eindeutig. Ein Link in der Mitte eines Satzes bricht mit der Regel aus 1i, dass ein Verweis den Zieltitel in «…» nennt. Die Fachstelle entscheidet, ob vorhandene Wörter als Linktext genügen.
+
+### Etappe 2a: Entscheide der bauenden Sitzung (zur Prüfung)
+
+- **Gesprächsbeispiele** («Wie das klingen kann», Person A und B) stehen nicht auf `rolle` und `selbstfuersorge`. Sie sind für `kommunizieren` (Etappe 2) vorgemerkt, weil Abschnitt 3 Gesprächstechniken dorthin legt. Drei Einzelsätze daraus stehen als Beispielsätze in `rolle` › `nach-konflikten` (Abgleich Nr. 189, 193 und 194), wie Abschnitt 2a es für Beispielsätze aus dem Bestand verlangt.
+- **«Was braucht im Alltag Veränderung?»** (`alltag`) steht auf `selbstfuersorge` › `kraft`, nicht auf `rolle` › `alltag` (Abweichung von der Gliederung). Der Abschnitt fragt nach der eigenen Erschöpfung und nach einer anderen Verteilung von Aufgaben, wie das Energie-Konto. `rolle` verweist auf `selbstfuersorge`.
+- **«Wenn Schuldgefühle dazukommen»** (`selbstfuersorge.md`) steht auf `rolle` › `schuld`, zusammen mit `schuld-verantwortung`. So gibt es eine Stelle für Schuld. `selbstfuersorge` › `unterstuetzung` verweist dorthin.
+- **«Hinweise für Ihre Situation»** (Partnerin oder Partner, Eltern, erwachsenes Kind) steht in `selbstfuersorge` › `eigenes-leben`, als Begriffsliste nach «Sie dürfen:». Die Hinweise sagen, was jede Rolle für sich selbst braucht.
+- **Verweis im Text auf `selbstfuersorge`:** dreimal, an den drei Stellen, an denen der Bestand auf akute Gefahr verweist. In `akzeptanz` (Bestand «Bei Gefahr geht Schutz vor.») steht stattdessen ein Link auf `grenzen.html#gewalt`, damit der Verweis nicht viermal auf einer Seite steht.
+- **Übungen als Text:** Atmen und 5-4-3-2-1 mit den Absicherungen des Bestands. Der Timer und seine Schaltfläche entfallen, weil die Seite ohne Skript und ohne Animation auskommt.
+- **Leuchtturm:** Die Aussagen des Handouts stehen ohne Bild in `anbieten`. Das Wort «Leuchtturm» kommt auf der Seite nicht vor.
+- **Kinder:** Sätze, die schon auf `grenzen` › `gewalt` stehen, sind nicht wiederholt; `rolle` › `kinder` verlinkt dorthin.
+- **Bildausschnitt «Ein Stück Weg»:** `viewBox` «0 52 640 218» statt «0 0 640 270». Über den Hügeln war ein leerer Rand von 52 Einheiten der Zeichnung. Die Zeichnung selbst ist unverändert. Sonst nichts verfeinert: Die Sicht bei 1280 und 360 px verlangt keine Änderung.
+- **Abstand nach «Ein freier Abend»:** Der Text danach steht in einem zweiten Raster desselben Abschnitts, mit `.bl-nach-figur` (`margin-top: var(--space-8)`). Ohne die Regel klebte der Text an der Quellenzeile der Abbildung.
+- **Gunderson et al. (2018)** (Handout `schuld-verantwortung`) ist nicht übernommen, weil die Ursachen auf `verstehen` stehen und dort belegt sind. Das steht als Prüfbedarf in `abgleich/rolle.md`.
+- **Kennzeichnungen der Handouts** («Redaktionelle Reflexionshilfe, kein validiertes Drei-Säulen-Modell», «kein DBT-Protokoll») entfallen in den Quellenzeilen, weil die Seite keine Modelle mit Namen nennt. Auch das ist Prüfbedarf.
+
+### Etappe 2a: Kennzahlen der neuen Seiten
+
+Skripte `abgleich/kennzahlen.mjs` und `abgleich/verneinung.mjs`. «Alt» ist bei `rolle` die Summe von `/unterstuetzen/uebersicht` und `/unterstuetzen/alltag`, bei `selbstfuersorge` `/selbstfuersorge` allein, jeweils ohne Handouts.
+
+| Seite | Wörter alt → neu | Absicherungen je 100 Wörter alt → neu | Semikolons alt → neu | Sätze mit Verneinung alt → neu | Sätze über 15 Wörter |
+| --- | --- | --- | --- | --- | --- |
+| `rolle` | 2736 → 3339 (122 %) | 1,94 → 2,16 | 4 → 2 | 62 von 389 (16 %) → 83 von 389 (21 %) | 32 von 384 (8 %) |
+| `selbstfuersorge` | 2419 → 2955 (122 %) | 2,27 → 2,64 | 10 → 2 | 44 von 341 (13 %) → 69 von 330 (21 %) | 23 von 320 (7 %) |
+| `index` | 248 → 283 (vor → nach 2a) | 1,61 → 1,41 | 0 → 0 | 4 von 26 → 4 von 28 | – |
+
+- **Länge:** Die neuen Seiten sind länger als die alten, weil sie 16 Handouts aufnehmen, die «alt» nicht zählt. Es gibt kein Kürzungsziel (Abschnitt 2b).
+- **Wörter je Abschnitt:**
+  - `rolle`: `anbieten` 534, `schuld` 593, `alltag` 818, `nach-konflikten` 196, `mehrere` 192, `kinder` 257, `an-grenzen` 679.
+  - `selbstfuersorge`: `eigenes-leben` 366, `kraft` 790, `warnsignale` 284, `zu-viel` 485, `unterstuetzung` 433, `akzeptanz` 366, `beratung` 187.
+- **Verneinungen:** Der Anteil liegt bei 21 %, wie auf den Seiten der Etappe 1 (20 bis 21 %). Die meisten Verneinungen tragen eine Entlastung oder eine Absicherung aus dem Bestand, zum Beispiel «Eine schwierigere Phase beweist nicht, dass Sie zu wenig getan haben.».
+- **Semikolons:** `rolle` hat zwei in Listenpunkten («… oder anderen Substanzen; wozu er dient, bleibt offen» und «… wenn die Person das möchte; eigene Beratung …»). `selbstfuersorge` hat eines in einem Listenpunkt von `akzeptanz` und eines in der Kurzbeschreibung der Abbildung (Wortlaut des Profilbeispiels, nur für Screenreader; `kennzahlen.mjs` zählt diesen Text bei den Semikolons mit). Ein Prüfpunkt für S.
+
 **Stand 10.10.2026 · Korrektur Etappe 1j · bauende Sitzung (Claude Code).** Umgesetzt ist `KORREKTUR-ETAPPE-1J.md` (Freigabe der Fachstelle eintragen). Sonst ist nichts geändert. Die Selbstprüfung von 1i steht darunter.
 
 | Punkt | Stand | Beleg |

@@ -20,7 +20,7 @@ const require = createRequire(import.meta.url);
 let chromium;
 try { ({ chromium } = require('playwright')); } catch { console.error('Playwright fehlt (npm i -g playwright oder NODE_PATH setzen).'); process.exit(2); }
 const BASE = process.argv[2] || 'http://localhost:8765/templates/website/borderline-angehoerige/';
-const PAGES = ['index', 'verstehen', 'beziehungen', 'grenzen'];
+const PAGES = ['index', 'verstehen', 'beziehungen', 'grenzen', 'rolle', 'selbstfuersorge'];
 const open = async (ctx, url) => { const pg = await ctx.newPage(); await pg.goto(url, { waitUntil: 'load' }); await pg.evaluate(() => document.fonts.ready); return pg; };
 
 const browser = await chromium.launch(process.env.PW_CHROMIUM ? { executablePath: process.env.PW_CHROMIUM } : {});

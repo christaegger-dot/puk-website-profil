@@ -8,19 +8,19 @@
 // Neu: sichtbarer Text in <main> wie kennzahlen.mjs (ohne SVG, ohne Text nur für Screenreader), je Blockelement
 // (p, li, dt, dd, h1–h3, summary, figcaption ohne Blockkinder) in Sätze zerlegt. Überschriften und Bezeichnungen zählen als Satz.
 // Alt: Bestandstext wie kennzahlen.mjs (ohne Kopfblock, Klammermarken, Bild- und Linkadressen), je Zeile in Sätze zerlegt.
+// Hat eine neue Seite mehrere alte Seiten (Etappe 2a: `rolle`), zählen die alten Seiten zusammen (Liste in kennzahlen.mjs).
 // Satzzerlegung wie im Abgleich. Verneinung: «nicht», «nichts», «nie», «niemals», «niemand», «weder» oder eine Form von «kein».
 import { readFileSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
 import { createRequire } from 'node:module';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { textOf } from './kennzahlen.mjs';
+import { textOf, PAGES } from './kennzahlen.mjs';
 
 const SITE = join(dirname(fileURLToPath(import.meta.url)), '..');
 const args = process.argv.slice(2);
 const opt = k => { const i = args.indexOf(k); return i >= 0 ? args[i + 1] : null; };
 const C = createRequire(import.meta.url)(join(SITE, 'tools/contract.js'));
-const PAGES = { index: 'startseite.md', verstehen: 'verstehen.md', beziehungen: 'verstehen--beziehungen.md', grenzen: 'grenzen.md' };
 const NEG = /(?<![\p{L}])(nicht|nichts|nie|niemals|niemand|weder|kein|keine|keinen|keinem|keiner|keines)(?![\p{L}])/iu;
 const decode = s => s.replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;/g, "'");
 const split = t => t.replace(/\b(z|u|d|v|s|bzw|ca|vgl|etc|al|Nr|ggf|evtl|inkl|usw|Dr|Prof|ebd|sog)\./g, '$1§').replace(/(\d)\.(\s)/g, '$1§$2')
@@ -65,9 +65,9 @@ const dir = opt('--seiten') || SITE; const only = opt('--seite');
 const pct = (a, b) => (b ? Math.round(a / b * 100) : 0) + ' %';
 console.log('| Seite | alt: Sätze mit Verneinung | neu: Sätze mit Verneinung |');
 console.log('| --- | --- | --- |');
-for (const [id, file] of Object.entries(PAGES)) {
+for (const [id, files] of Object.entries(PAGES)) {
   if (only && id !== only) continue;
-  const a = oldSentences(file), n = newSentences(join(dir, id + '.html'));
+  const a = files.flatMap(oldSentences), n = newSentences(join(dir, id + '.html'));
   const an = a.filter(x => NEG.test(x[1])).length, nn = n.filter(x => NEG.test(x[1])).length;
   console.log(`| \`${id}\` | ${an} von ${a.length} (${pct(an, a.length)}) | ${nn} von ${n.length} (${pct(nn, n.length)}) |`);
   if (only) {

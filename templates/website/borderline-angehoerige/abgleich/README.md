@@ -1,15 +1,17 @@
-# Abgleich · Borderline-Website, Etappe 1
+# Abgleich · Borderline-Website, Etappe 1 und 2a
 
-Beleg für W1 nach UMBAUPLAN, Abschnitt 5: Jeder Satz des Bestands ist übernommen, gekürzt, zusammengeführt, verschoben, geändert oder mit Grund entfallen. Erstellt von der bauenden Sitzung am 08.10.2026, nachgeführt am 09.10.2026 (Korrektur Etappe 1, 1b, 1c, 1d, 1e, 1f, 1g, 1h, 1i und 1j). Das ist ein Arbeitsstand, keine Prüfung.
+Beleg für W1 nach UMBAUPLAN, Abschnitt 5: Jeder Satz des Bestands ist übernommen, gekürzt, zusammengeführt, verschoben, geändert oder mit Grund entfallen. Erstellt von der bauenden Sitzung am 08.10.2026, nachgeführt am 09.10.2026 (Korrektur Etappe 1, 1b, 1c, 1d, 1e, 1f, 1g, 1h, 1i und 1j). Am 10.10.2026 um die Seiten `rolle` und `selbstfuersorge` erweitert (Etappe 2a). Das ist ein Arbeitsstand, keine Prüfung.
 
-- `index.md` · `/`, `/selbsttest`, `/wegweiser`
+- `index.md` · `/`, `/selbsttest`, `/wegweiser`; seit Etappe 2a mit zwei Zeilen «neu (2a)» am Ende (Nr. 255–256)
 - `verstehen.md` · `/verstehen` ohne Diagnostik-Teil, sechs Handouts; der Teil «Materialien zum Vertiefen» (Z. 277–396) steht seit Korrektur 1c am Ende der Tabelle (Nr. 474–540); seit Korrektur 1f mit zwei Zeilen für Sätze der neuen Seite ohne Bestandssatz am Ende (Nr. 541–542)
 - `beziehungen.md` · `/verstehen/beziehungen`; seit Korrektur 1e mit Zeilen für Sätze der neuen Seite ohne Bestandssatz am Ende (Nr. 233–248)
 - `grenzen.md` · `/grenzen`, acht Handouts, zwei Übungsszenarien; seit Korrektur 1f mit zwei Zeilen ohne Bestandssatz am Ende (Nr. 710–711)
-- `kennzahlen.mjs` · Wörter, Absicherungen und Semikolons alt und neu (ohne Abhängigkeiten)
-- `pruefe-abgleich.mjs` · prüft die Tabellen gegen die gebauten Seiten (ohne Abhängigkeiten)
-- `verneinung.mjs` · Sätze mit Verneinung alt und neu, mit `--seite <id>` je Abschnitt und mit den gezählten Sätzen (ohne Abhängigkeiten; seit Korrektur 1e)
-- `bedienung.mjs` · Tabstopps, Seitenhöhen und Pfeile der Bedeutungsschleife im Browser, gemessen nach dem Laden der Webschriften (braucht Playwright und einen lokalen Server)
+- `rolle.md` · seit Etappe 2a: `/unterstuetzen/uebersicht`, `/unterstuetzen/alltag` ohne «Begrenzte Verfügbarkeit» und «Wenn der Alltag angespannt erlebt wird», zehn Handouts (Nr. 0–756); dazu 11 Zeilen «neu (2a)» (Nr. 757–767)
+- `selbstfuersorge.md` · seit Etappe 2a: `/selbstfuersorge`, die zwei Abschnitte aus `/unterstuetzen/alltag`, sechs Handouts (Nr. 0–658); dazu 12 Zeilen «neu (2a)» (Nr. 659–670)
+- `kennzahlen.mjs` · Wörter, Absicherungen und Semikolons alt und neu (ohne Abhängigkeiten); seit Etappe 2a mit `rolle` und `selbstfuersorge`
+- `pruefe-abgleich.mjs` · prüft die Tabellen gegen die gebauten Seiten (ohne Abhängigkeiten); seit Etappe 2a mit sechs Tabellen
+- `verneinung.mjs` · Sätze mit Verneinung alt und neu, mit `--seite <id>` je Abschnitt und mit den gezählten Sätzen (ohne Abhängigkeiten; seit Korrektur 1e, seit Etappe 2a mit den neuen Seiten)
+- `bedienung.mjs` · Tabstopps, Seitenhöhen und Pfeile der Bedeutungsschleife im Browser, gemessen nach dem Laden der Webschriften (braucht Playwright und einen lokalen Server; seit Etappe 2a mit den neuen Seiten)
 
 **Grundlage:** Branch `borderline-bestand`, `bestand/borderline-angehoerige/` (`INVENTAR.md`, `texte/`), erhoben aus Commit `5c8471c` der alten Website. Die beiden ersten Skripte lesen den Bestand mit `git show origin/borderline-bestand:…` oder aus einem Ordner (`--bestand <ordner>`).
 
@@ -22,7 +24,7 @@ Je Seite eine Tabelle «Satz für Satz» mit jedem Satz der alten Seite und der 
 - **Ort neu:** `seite#abschnitt` (Abschnitts-ID der gebauten Seite, `kopf`, `kapitel`), `Fusszeile` oder «seite (Etappe 2)».
 - **Zustandekommen:** Ein Skript der bauenden Sitzung zerlegt den Bestand in Sätze und schlägt je Satz den ähnlichsten Satz im Zielabschnitt vor. Status, Zielabschnitt und jede schwache Zuordnung sind von Hand gesetzt und geprüft. Ob der genannte Satz die Aussage wirklich trägt, ist Gegenstand der Prüfung.
 
-**Prüfung der Tabellen:** `node abgleich/pruefe-abgleich.mjs`. Ergebnis am 10.10.2026 nach Korrektur 1j: **1763 Zeilen, 0 ohne Fundstelle** (1739 Bestandszeilen, 23 Zeilen ohne Bestandssatz – 16 auf `beziehungen`, 5 auf `verstehen`, 2 auf `grenzen` – und auf `verstehen` 1 Zeile mit Bestandssatz aus dem Handout `wenn-worte-treffen`, das sonst keiner Seite der Etappe 1 zugeordnet ist). Das Skript liest auch Text nur für Screenreader (`.puk-sr`, Kurzbeschreibungen der Bildlegenden), denn er steht auf der Seite. Geprüft wird je Zeile:
+**Prüfung der Tabellen:** `node abgleich/pruefe-abgleich.mjs`. Ergebnis am 10.10.2026 nach Etappe 2a: **3204 Zeilen, 0 ohne Fundstelle** (3155 Bestandszeilen, 48 Zeilen ohne Bestandssatz – 16 auf `beziehungen`, 12 auf `selbstfuersorge`, 11 auf `rolle`, 5 auf `verstehen`, 2 auf `grenzen`, 2 auf `index` – und auf `verstehen` 1 Zeile mit Bestandssatz aus dem Handout `wenn-worte-treffen`, das sonst keiner Seite zugeordnet ist). Nach Korrektur 1j waren es 1763 Zeilen. Das Skript liest auch Text nur für Screenreader (`.puk-sr`, Kurzbeschreibungen der Bildlegenden), denn er steht auf der Seite. Geprüft wird je Zeile:
 
 - Den Ort gibt es.
 - Die neue Fassung steht dort wörtlich.
@@ -43,11 +45,13 @@ Je Seite eine Tabelle «Satz für Satz» mit jedem Satz der alten Seite und der 
 | umformuliert (einfache Sprache, 1g) | Seit Korrektur 1g: wie «umformuliert (einfache Sprache, 1f)», für die Stellen 1 und 3 der Anspannungskurve auf `verstehen` und den Abschnitt 02 `bruecke` auf `grenzen`, der statt der Abbildung «Die Brücke mit Geländer» ein Text ist (`KORREKTUR-ETAPPE-1G.md`, Abschnitt 3 und 4). Der frühere Status steht in der Bemerkung («bis 1f: …»). |
 | umformuliert (Bildsprache, 1h) | Seit Korrektur 1h (Bildsprache-Audit): Die Fassung ändert sich, weil eine Abbildung neu gezeichnet oder ersetzt ist (Eisberg, «Momentaufnahmen» statt Pendel, Stationen der Bedeutungsschleife; `KORREKTUR-ETAPPE-1H.md`, Abschnitt 4, 5 und 8). Der frühere Status steht in der Bemerkung («bis 1g: …»). |
 | umformuliert (Prüfrunde 4, 1i) | Seit Korrektur 1i (Entscheide zur vierten Prüfrunde, `KORREKTUR-ETAPPE-1I.md`, Abschnitt 9): Die Fassung ändert sich, weil eine vorsichtige Formulierung aus dem Bestand zurückkommt, ein gekürzter Satz wieder aufgenommen ist oder ein Verweis den Abschnittstitel in «…» nennt. Der frühere Status steht in der Bemerkung («bis 1h: …»). Bei zurückgekehrten Sätzen steht «Entscheid Fachstelle 10.10.2026 (P4-F-…)» statt «Prüfbedarf». Gilt auch für Zeilen ohne Bestandssatz, deren Fassung sich ändert. |
+| umformuliert (einfache Sprache, 2a) | Seit Etappe 2a, nur in `rolle.md` und `selbstfuersorge.md`: Der Satz steht auf der neu gebauten Seite in einfacher Sprache (`BAUAUFTRAG-ETAPPE-2A.md`, Abschnitt 2a), mit gleicher Aussage und gleichen Absicherungen. Die neue Fassung steht in der Tabelle. Ein Satz, der wörtlich oder nur mit anderen Satzzeichen steht, ist «übernommen»; ein Satz, dessen Aussage mit einer anderen zusammen steht, ist «zusammengeführt». Fehlende Teile nennt die Bemerkung. |
 | entfällt | Aussage erscheint nicht mehr. Mögliche Gründe: <ul><li>Meta-Text oder Handout-Rahmen</li><li>Profil (Krisenzugang, Telefonnummern)</li><li>Entscheid der Fachstelle (Personenbilder, Handouts)</li><li>Wiederholung</li><li>Kürzung für den Richtwert: «Kürzung W2-2» ab 09.10.2026, «Kürzung Umfang (Korrektur 1b)» in der zweiten Korrektur; Korrektur 1c kürzt nicht</li></ul> |
 | Bezeichnung | Überschrift, Kicker, Eintrag der Kapitelübersicht oder Stichwort ohne eigene Aussage. Ohne Ort, wenn die Bezeichnung nicht mehr vorkommt. |
 | neu (1e) | Seit Korrektur 1e: Satz der neuen Seite `beziehungen` ohne Bestandssatz, zum Beispiel Beispielsätze zu «Was Sie tun können», «Das kann kränken» oder der Hinweis auf die Beratung. «Satz (Bestand)» ist «–». |
 | neu (1f) | Seit Korrektur 1f: Satz der neuen Seiten `verstehen` oder `grenzen` ohne Bestandssatz, hier Beispielsätze zu «Was Sie tun können». «Satz (Bestand)» ist «–». |
 | neu (1h) | Seit Korrektur 1h: Satz auf `verstehen` ohne Bestandssatz in einer Abbildung: die Sätze über den Fotos in «Momentaufnahmen», die Frage neben dem Eisberg und «Es wird wieder ruhiger.» an Stelle 4 der Anspannungskurve. «Satz (Bestand)» ist «–». |
+| neu (2a) | Seit Etappe 2a: Satz auf `rolle`, `selbstfuersorge` oder `index` ohne Bestandssatz. Das sind Sätze und die Kurzbeschreibung der zwei Abbildungen, Zwischentitel mit eigener Aussage, Verweissätze (Verlinken statt wiederholen) und die zwei Anliegen-Sätze der neuen Einstiege. Jeder dieser Sätze steht auch in `../PRUEFBERICHT.md`, Selbstprüfung Etappe 2a, in der Liste «Neue Sätze zur Freigabe» (Bauauftrag 2a, Abschnitt 2b). «Satz (Bestand)» ist «–». |
 
 ## Wörter und Absicherungen
 
@@ -66,17 +70,20 @@ Gemessen wird an der alten Seite allein, nicht an Seite plus Handouts. So verlan
 
 Die damals berichteten 1299 / 1099 / 1500 waren zu tief. Die Zählung der bauenden Sitzung hatte Bezeichnungen in eigenen `span` ohne Leerzeichen an das nächste Wort gehängt, zum Beispiel «Station 1 · Schwester» an «Ereignis» oder «Beispiel» an den Beispielsatz.
 
-**Stand 10.10.2026, nach Korrektur 1i:**
+**Stand 10.10.2026, nach Etappe 2a:**
 
 | Seite | Alt: Seite allein | Neu | Neu / alt | Richtwert | Richtwert + 5 % | Absicherungen je 100 Wörter alt → neu | Semikolons im Fliesstext alt → neu |
 | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| `index` | 433 | 248 | 57 % | – | – | 1,85 → 1,61 | 1 → 0 |
-| `verstehen` | 2524 | 1673 | 66 % | 1300 | 1365 | 2,54 → 3,35 | 12 → 0 |
+| `index` | 433 | 283 | 65 % | – | – | 1,85 → 1,41 | 1 → 0 |
+| `verstehen` | 2524 | 1676 | 66 % | 1300 | 1365 | 2,54 → 3,34 | 12 → 0 |
 | `beziehungen` | 2149 | 1600 | 74 % | 1100 | 1155 | 3,82 → 4,56 | 6 → 1 |
 | `grenzen` | 2985 | 1667 | 56 % | 1500 | 1575 | 2,41 → 2,52 | 4 → 0 |
+| `rolle` | 2736 | 3339 | 122 % | – | – | 1,94 → 2,16 | 4 → 2 |
+| `selbstfuersorge` | 2419 | 2955 | 122 % | – | – | 2,27 → 2,64 | 10 → 2 |
 
 **Lesart:**
 
+- **Etappe 2a:** «Alt» ist bei `rolle` die Summe der alten Seiten `/unterstuetzen/uebersicht` und `/unterstuetzen/alltag`, ganz gezählt, auch mit den zwei Abschnitten, die jetzt auf `selbstfuersorge` stehen; bei `selbstfuersorge` die alte Seite `/selbstfuersorge` allein. Die neuen Seiten sind länger als die alten (122 %), weil sie die Handouts aufnehmen (zehn bei `rolle`, sechs bei `selbstfuersorge`), die nicht mitgezählt sind. Es gibt kein Kürzungsziel (Bauauftrag 2a, Abschnitt 2b); Wiederholungen von Etappe 1 sind verlinkt statt wiederholt. Je Abschnitt: `rolle` `anbieten` 534 · `schuld` 593 · `alltag` 818 · `nach-konflikten` 196 · `mehrere` 192 · `kinder` 257 · `an-grenzen` 679; `selbstfuersorge` `eigenes-leben` 366 · `kraft` 790 · `warnsignale` 284 · `zu-viel` 485 · `unterstuetzung` 433 · `akzeptanz` 366 · `beratung` 187. `index` 248 → 283 Wörter (`einstiege` 108 → 143: zwei neue Einstiege). `verstehen` 1673 → 1676 kommt aus Korrektur 1j («NICE CG78 (2009)» in der Quellenzeile), nicht aus 2a. Sätze mit Verneinung (`verneinung.mjs`): `rolle` alt 62 von 389 (16 %), neu 83 von 389 (21 %); `selbstfuersorge` alt 44 von 341 (13 %), neu 69 von 330 (21 %); `index` 4 von 26 → 4 von 28. Die neuen Seiten liegen damit beim Anteil der Seiten der Etappe 1 (20 bis 21 %). Die meisten Verneinungen tragen eine Entlastung oder eine Absicherung aus dem Bestand weiter, zum Beispiel «Eine schwierigere Phase beweist nicht, dass Sie zu wenig getan haben.» oder «Ob eine Absprache wirkt, lässt sich nicht vorhersagen.».
 - **Richtwert:** Er gilt nicht: «Der Richtwert für die Länge gilt nicht. Nicht kürzen, um Wörter auszugleichen.» (`KORREKTUR-ETAPPE-1D.md`, Abschnitt 4; ebenso 1C, Abschnitt 1). Für `beziehungen` sagt `KORREKTUR-ETAPPE-1E.md`, Abschnitt 2: «Die Seite wird länger (geschätzt +25 %); das ist so gewollt.» Für `verstehen` und `grenzen` sagt `KORREKTUR-ETAPPE-1F.md`, Abschnitt 2: «Der Richtwert für die Länge gilt nicht.» Die Wortzahlen werden nur berichtet. Über die Länge entscheidet die Fachstelle in W1.
 - **Korrektur 1e:** `beziehungen` 1164 → 1564 Wörter (+400, +34 %; Auftrag: geschätzt +25 %). Je Abschnitt vor → nach 1e: Kopf und Kapitelübersicht 43 → 70, `verbindung` 70 → 80, `schleife` 242 → 272, `verstaerker` 284 → 470, `zwei-sichten` 238 → 276, `was-hilft` 89 → 159, `verantwortung` 198 → 237. Absicherungen 3,69 → 4,48 je 100 Wörter: Die neuen Sätze enthalten «kann» und «können» (zum Beispiel «Eine kurze, verlässliche Ankündigung kann helfen», «Sie können die Person ermutigen …»); sie sind Wortlaut des Auftrags. `verstehen` 1461 → 1456: Stelle 2 hat kein eigenes «Was hilft» mehr (1E, Abschnitt 3).
 - **Korrektur 1i:** Gekürzte Sätze kommen zurück, und vorsichtige Formulierungen sind länger (Entscheide der Fachstelle zur vierten Prüfrunde). Wörter vor → nach 1i (Stand vor 1i: `af892a5`): `index` 238 → 248 (`beratung` 67 → 77); `verstehen` 1602 → 1673 (`erleben` 99 → 107, `eisberg` 180 → 176, `anspannung` 395 → 412, `bewertungen` 235 → 270, `mythen` 394 → 409); `beziehungen` 1564 → 1600 (`schleife` 272 → 273, `verstaerker` 470 → 473, `was-hilft` 159 → 187, `verantwortung` 237 → 241); `grenzen` 1601 → 1667 (`bruecke` 153 → 154, `arten` 144 → 155, `dear` 234 → 253, `konsequenz` 143 → 174). Absicherungen: `verstehen` 3,00 → 3,35 («kann», «häufig», «mögliche»: Wortlaut des Auftrags), `beziehungen` 4,48 → 4,56, `grenzen` 2,62 → 2,52, `index` 1,68 → 1,61. Sätze mit Verneinung: `index` 3 von 24 → 4 von 26, `verstehen` 37 von 183 → 39 von 190, `beziehungen` 33 von 169 → 35 von 172, `grenzen` 42 von 195 → 43 von 201.
@@ -92,14 +99,18 @@ Die damals berichteten 1299 / 1099 / 1500 waren zu tief. Die Zählung der bauend
 - **Absicherungen auf `verstehen`:** 2,54 → 2,81 nach 1d, 2,82 nach 1e. Die neuen Texte aus D-3 und D-4 enthalten «kann», «können» und «könnten» (zum Beispiel «Anspannung kann im Gespräch ansteigen …», «… entschärfen könnten»); sie sind Wortlaut des Auftrags.
 - **Quote:** Die Quote «Neu / alt» misst nicht, wie stark gekürzt wurde. Die alte Seite enthält Teile, die nach Etappe 2 gehen, und Meta-Text. Die zweite Prüfrunde hat deshalb einen vergleichbaren Kern berechnet (Belege b, Abschnitt 4).
 
-**Bedienung (`node abgleich/bedienung.mjs`, Chromium, 10.10.2026, nach Korrektur 1i):** Tabstopps bei 1280 × 900 px mit Tab ab Seitenanfang. Seitenhöhe ist `document.documentElement.scrollHeight` bei 360 × 800 px, gemessen nach `load` und `document.fonts.ready`.
+**Bedienung (`node abgleich/bedienung.mjs`, Chromium, 10.10.2026, nach Etappe 2a):** Tabstopps bei 1280 × 900 px mit Tab ab Seitenanfang. Seitenhöhe ist `document.documentElement.scrollHeight` bei 360 × 800 px, gemessen nach `load` und `document.fonts.ready`.
 
 | Seite | Tabstopps ohne Fusszeile | Seitenhöhe bei 360 px | höchste Figur bei 360 px |
 | --- | ---: | ---: | --- |
-| `index` | 10 | 3922 px | – |
-| `verstehen` | 18 | 16 418 px | Anspannungskurve 3379 px |
-| `beziehungen` | 16 | 15 435 px | Zwei Sichten 2359 px |
-| `grenzen` | 21 | 16 982 px | DEAR 1791 px |
+| `index` | 14 | 4408 px | – |
+| `verstehen` | 20 | 16 540 px | Anspannungskurve 3379 px |
+| `beziehungen` | 18 | 15 527 px | Zwei Sichten 2359 px |
+| `grenzen` | 23 | 17 074 px | DEAR 1791 px |
+| `rolle` | 24 | 30 067 px | Ein Stück Weg 673 px |
+| `selbstfuersorge` | 21 | 25 453 px | Ein freier Abend 680 px |
+
+Gegenüber Korrektur 1j (Etappe 2a; Werte vor 2a am Stand `bebf43b` mit demselben Skript gemessen): Jede Seite hat zwei Tabstopps mehr, die zwei neuen Punkte der Hauptnavigation. Sie macht den Kopf bei 360 px 92 px höher: `verstehen` 16 448 → 16 540 px, `beziehungen` 15 435 → 15 527 px, `grenzen` 16 982 → 17 074 px. `index` hat zwei weitere Tabstopps (die neuen Einstiege) und ist 486 px höher (3922 → 4408 px). `verstehen` war nach 1j 30 px höher als nach 1i (Quellenzeile). Die neuen Seiten sind bei 360 px lang (`rolle` 30 067 px, `selbstfuersorge` 25 453 px), weil sie die Handouts aufnehmen; die Kapitelübersicht oben springt zu jedem Abschnitt.
 
 Gegenüber Korrektur 1h (Korrektur 1i): `grenzen` hat einen Tabstopp mehr (Link in `dear` auf `verstehen` › «Wenn die Anspannung steigt», P4-W2-4) und ist bei 360 px 482 px höher (16 500 → 16 982 px). `verstehen` ist 347 px höher (16 071 → 16 418 px), `beziehungen` 236 px (15 199 → 15 435 px), `index` 59 px (3863 → 3922 px): zurückgekehrte Sätze. Die Anspannungskurve ist bei 360 px 3379 px hoch (vorher 3282 px).
 
@@ -281,3 +292,19 @@ Grundlage: `KORREKTUR-ETAPPE-1J.md`. Die Fachstelle hat Etappe 1 am 10.10.2026 f
 | Freigaben im Plan | `approvalStatus` «freigegeben» bei den sechs Abbildungen; Platzhalter, `editorialStatus` und Zeilen mit `format` «text» unverändert | Abschnitt 4 |
 | Prüfbedarf | Jede Bemerkung mit «Prüfbedarf» in den vier Tabellen endet mit «; erledigt: Freigabe Etappe 1 durch die Fachstelle, 10.10.2026 (1j)» (`verstehen` 11, `beziehungen` 1, `grenzen` 2, `index` 0 Zeilen). Unter jeder Überschrift «Prüfbedarf für W1 (Stand …)» steht als erster Absatz der Vermerk «Erledigt am 10.10.2026: …»; die Liste bleibt als Verlauf | Abschnitt 4 |
 | Kopfnotizen | «Korrektur 1j: …» und «Stand … Korrektur Etappe 1j» in allen vier Tabellen | Abschnitt 4 |
+
+## Etappe 2a: neue Seiten `rolle` und `selbstfuersorge` (10.10.2026)
+
+Grundlage: `BAUAUFTRAG-ETAPPE-2A.md`. Die Seiten der Etappe 1 sind inhaltlich unverändert; in ihren Tabellen ändern sich nur die vorgemerkten Zeilen und die Einstiege auf `index`.
+
+| Thema | Umsetzung | Quelle |
+| --- | --- | --- |
+| Neue Tabellen | `rolle.md` mit 757 Bestandszeilen und 11 Zeilen «neu (2a)», `selbstfuersorge.md` mit 659 Bestandszeilen und 12 Zeilen «neu (2a)», aufgebaut wie die Tabellen der Etappe 1. Die Zählung je Status steht im Kopf jeder Tabelle, der Prüfbedarf für W1 am Ende | Abschnitt 5c |
+| Aufteilung von `alltag` | «Begrenzte Verfügbarkeit» und «Wenn der Alltag angespannt erlebt wird» stehen in `selbstfuersorge.md`, alle anderen Sätze von `/unterstuetzen/alltag` in `rolle.md`. Die neuen Tabellen sind hinten angehängt; die Nummern der Etappe 1 bleiben gleich | Abschnitt 3, «Weitere Zuordnungen» |
+| Sätze, die schon in Etappe 1 stehen | Status «verschoben» mit Ort auf der Seite der Etappe 1, nicht doppelt geschrieben. Beispiele: die Ursachen aus dem Handout `schuld-verantwortung` (`verstehen` › `borderline` und `mythen`), Sätze zu Kindern bei Gewalt (`grenzen` › `gewalt`) | Abschnitt 5c |
+| Vorgemerkte Zeilen der Etappe 1 | `verstehen` Nr. 484, 485, 527 und 528 und `beziehungen` Nr. 115 nennen den Ort auf `rolle`, `grenzen` Nr. 511 den Ort auf `selbstfuersorge`, je mit neuer Fassung. Die Bemerkung sagt «bis 1j vorgemerkt …» | Abschnitt 5c |
+| Einstiege auf `index` | Nr. 17 und 18 nennen den Einstieg zu `rolle`, Nr. 23 und 24 den Einstieg zu `selbstfuersorge` (Status «geändert»), Nr. 19, 20 und 25 bis 28 den neuen Platzhalter, Nr. 22 den Einstieg zu `grenzen`. Die zwei Anliegen-Sätze stehen als Nr. 255 und 256 («neu (2a)») | Abschnitt 5a |
+| Vorgemerkt für spätere Seiten | Gesprächsbeispiele «Wie das klingen kann» und Gesprächstechniken: «kommunizieren (Etappe 2)»; weitere Beratungsangebote und Netzwerke: «unterstuetzung (Etappe 2)». Einzelne Sätze aus Gesprächsbeispielen stehen als Beispielsätze auf `rolle` › `nach-konflikten` (Nr. 189, 193 und 194) | Abschnitte 2c, 3 und 4 |
+| Statuswerte | neu «umformuliert (einfache Sprache, 2a)» und «neu (2a)» (oben unter «Statuswerte»); «geändert» kommt in Etappe 2a nur auf `index` vor | Abschnitt 5c |
+| Zustandekommen | Status und Zielabschnitt sind je Zeilenbereich von Hand gesetzt; das Skript der bauenden Sitzung schlägt den ähnlichsten Satz nur im Zielabschnitt vor. Zitiert die Bemerkung einen ganzen Satz in «…», der im Zielabschnitt steht, ist er die neue Fassung. Für Zeilen der Etappe 1 sucht das Skript nur auf den Seiten der Etappe 1, damit keine Zeile still auf eine neue Seite springt. Von Hand gesetzt sind 101 neue Fassungen (59 in `rolle.md`, 42 in `selbstfuersorge.md`), dazu die Fassungen der Zitatregel | – |
+| Skripte | `pruefe-abgleich.mjs`: sechs Tabellen mit den Bestandsquellen je Seite. `kennzahlen.mjs` und `verneinung.mjs`: eine neue Seite darf mehrere alte Seiten haben (`rolle` = `unterstuetzen--uebersicht.md` und `unterstuetzen--alltag.md`), Richtwert «–». `bedienung.mjs`: sechs Seiten | Abschnitt 5c |

@@ -10,7 +10,8 @@
 // Screenreader (.puk-sr, z. B. die Kurzbeschreibung in der Bildlegende seit Profil-Update 2026-10-09b; .puk-vis-sr).
 // Text, der nur breit oder nur schmal sichtbar ist (data-cycle-wide / data-cycle-narrow), zählt je einmal.
 // Alt: Bestandstext der alten Seite allein, ohne Kopfblock der Erhebung, Klammermarken, Bild- und Linkadressen;
-// Vorschautexte geschlossener Akkordeons zählen mit.
+// Vorschautexte geschlossener Akkordeons zählen mit. Hat eine neue Seite mehrere alte Seiten (Etappe 2a: `rolle` aus
+// `unterstuetzen--uebersicht` und `unterstuetzen--alltag`), zählen die alten Seiten zusammen.
 import { readFileSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
 import { createRequire } from 'node:module';
@@ -20,8 +21,11 @@ import { fileURLToPath } from 'node:url';
 const SITE = join(dirname(fileURLToPath(import.meta.url)), '..');
 const args = process.argv.slice(2);
 const opt = k => { const i = args.indexOf(k); return i >= 0 ? args[i + 1] : null; };
-const PAGES = { index: 'startseite.md', verstehen: 'verstehen.md', beziehungen: 'verstehen--beziehungen.md', grenzen: 'grenzen.md' };
-const RICHTWERT = { index: null, verstehen: 1300, beziehungen: 1100, grenzen: 1500 };
+export const PAGES = {
+  index: ['startseite.md'], verstehen: ['verstehen.md'], beziehungen: ['verstehen--beziehungen.md'], grenzen: ['grenzen.md'],
+  rolle: ['unterstuetzen--uebersicht.md', 'unterstuetzen--alltag.md'], selbstfuersorge: ['selbstfuersorge.md'],
+};
+const RICHTWERT = { index: null, verstehen: 1300, beziehungen: 1100, grenzen: 1500, rolle: null, selbstfuersorge: null };
 const C = createRequire(import.meta.url)(join(SITE, 'tools/contract.js'));
 
 const SKIP = new Set(['script', 'style', 'svg']);
@@ -74,7 +78,7 @@ function bestand(file) {
   if (dir) return readFileSync(join(dir, file), 'utf8');
   return execFileSync('git', ['show', `origin/borderline-bestand:bestand/borderline-angehoerige/texte/${file}`], { cwd: SITE, encoding: 'utf8', maxBuffer: 1 << 24 });
 }
-export function oldPage(file) {
+export function oldText(file) {
   const txt = bestand(file);
   const body = txt.includes('\n---\n') ? txt.split('\n---\n').slice(1).join('\n---\n') : txt;
   const out = [];
@@ -86,7 +90,10 @@ export function oldPage(file) {
       .replace(/^#+\s*|\*\*|`|^>\s*|^[-*]\s+|^\d+\.\s+/g, '');
     out.push(s);
   }
-  const text = out.join(' ');
+  return out.join(' ');
+}
+export function oldPage(files) {
+  const text = [].concat(files).map(oldText).join(' ');
   return { ...measure(text), semi: (text.match(/;/g) || []).length };
 }
 
@@ -96,8 +103,8 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   console.log('| Seite | Alt: Seite allein | Neu | Neu / alt | Richtwert | +5 % | Absicherungen je 100 Wörter alt → neu | Semikolons im Fliesstext alt → neu |');
   console.log('| --- | ---: | ---: | ---: | ---: | ---: | --- | --- |');
   const rows = [];
-  for (const [id, file] of Object.entries(PAGES)) {
-    const a = oldPage(file), n = newPage(dir, id); rows.push([id, n]);
+  for (const [id, files] of Object.entries(PAGES)) {
+    const a = oldPage(files), n = newPage(dir, id); rows.push([id, n]);
     const rw = RICHTWERT[id];
     console.log(`| \`${id}\` | ${a.words} | ${n.words} | ${Math.round(n.words / a.words * 100)} % | ${rw ?? '–'} | ${rw ? Math.floor(rw * 1.05) : '–'} | ${f2(a.hedge100)} → ${f2(n.hedge100)} | ${a.semi} → ${n.semi} |`);
   }
