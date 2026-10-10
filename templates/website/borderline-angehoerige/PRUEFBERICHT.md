@@ -29,200 +29,196 @@ Dazu 5 leichte Befunde zu Bericht und Abgleich. Die erste und zweite Prüfrunde 
 
 Nach jedem Bau ohne Nachfrage ausfüllen: Visualisierungs-Check wie unten, mit Beleg je Punkt. Arbeitsstand, keine Prüfstufe.
 
-**Stand 10.10.2026 · Korrektur Etappe 1h · bauende Sitzung (Claude Code).** Umgesetzt ist `KORREKTUR-ETAPPE-1H.md`. Er setzt die Entscheide der Fachstelle zum Bildsprache-Audit vom 10.10.2026 um:
+**Stand 10.10.2026 · Korrektur Etappe 1i · bauende Sitzung (Claude Code).** Umgesetzt ist `KORREKTUR-ETAPPE-1I.md` mit den Entscheiden zur vierten Prüfrunde vom 10.10.2026:
 
-- **Profil-Update:** Build r4-6 übernommen (Abschnitt 3).
-- **`verstehen`:**
-  - Der Eisberg ist neu gezeichnet, die Wörter stehen im Eisberg.
-  - «Momentaufnahmen» ersetzt das Pendel.
-  - Stelle 4 der Anspannungskurve heisst «Es wird wieder ruhiger.».
-  - Die Annahmen stehen als Liste im Text statt als Abbildung.
-- **`beziehungen`:**
-  - Die Stationen der Bedeutungsschleife haben drei Zeilen und weiche Ecken.
-  - Bei Zwei Sichten haben beide Seiten dieselbe Oberkante.
-- **`grenzen`:** DEAR nummeriert «1» bis «4».
-- **`visualPlan`:**
-  - `resonance` für die sechs Darstellungen.
-  - Einträge für Eisberg, Momentaufnahmen und Annahmen nach dem Auftrag.
+- vorsichtige Formulierungen aus dem Bestand zurück
+- Annahme 3 «nicht schuld»
+- Verantwortung für Verlauf und Beziehung getrennt
+- «Momentaufnahmen» mit Sprecherzeile und Bestandswortlaut
+- neun gekürzte Sätze zurück
+- «Eine Grenze gilt auch …»
+- Ort der Beratung
+- Verweise als Titel kenntlich
+- Visualisierungsplan nachgeführt
+- Abgleich nachgeführt (P4-W1-9)
 
-`index` ist unverändert. Die Prüfstufen bleiben offen. Diese Selbstprüfung ersetzt die der Korrektur 1g (Stand `3f94087`). Sie ist nicht die Stufe «Visualisierungs-Check».
-
-### Nachtrag: Gate-Korrektur r4-7 (10.10.2026)
-
-Das Profil-Update `update-2026-10-10b.patch` (Commit `664dff4` auf `main`) behebt die Gate-Lücke aus 1h. Eine Illustration mit `.puk-vis-scene` gilt jetzt als eigene Zeichnung.
-
-- **Zusammenführen:** `main` in `borderline-umbau`, ohne Konflikt (Merge-Commit `56f5438`). Damit sind auch `skizze-eisberg.png` und `skizze-momentaufnahmen.png` aus dem Stamm entfernt.
-- **Werkzeuge:** Aus dem Starter übernommen sind `tools/contract.js` und, auf Rückfrage wie in 1h, `gate.html` und `README.md`. `diff -rq tools/` und `cmp` gegen den Starter ergeben keine Unterschiede.
-- **«Momentaufnahmen»:** Auf der Seite steht `data-visual-type="illustration"`, im Plan `format` «illustration», wie 1H verlangt. Aus `reason` ist der Satz «Vorläufig als «figure» geführt: …» gestrichen; `reason` steht wieder im Wortlaut von 1H.
-- **`$comment`:** um «Gate-Korrektur 10.10.2026 übernommen: Build r4-7» ergänzt. `assetVersion` bleibt r4-6, weil das Patch keine Assets ändert.
-- **`borderline.css`:** Vorher `grep`: `bl-myth` kommt in keiner Seite und keinem Skript vor. Entfernt sind:
-  - der Kommentar «Muster E, Annahmen …»
-  - 5 Regeln `.bl-myths` / `.bl-myth*`
-  - 2 Zeilen in `@container (max-width:560px)`; `.bl-sicht` bleibt dort
-  - der Selektor `.bl-myth .puk-vis-compare__col h3` in der gemeinsamen Regel mit `.bl-sicht>h3`
-  - «Annahmen» im Sammelkommentar
-
-  Danach liefert `grep -c bl-myth` 0 Treffer.
-- **`abgleich/README.md`:** Notiz in der Zeile «Momentaufnahmen» der Entscheide 1h. Kein Satz ist geändert; `pruefe-abgleich` ergibt 1763 Zeilen, 0 ohne Fundstelle.
-- **Prüfungen:**
-  - **Build:** r4-7, 0 blockierend, 20 Hinweise wie zuvor, kein `placeholder-status`.
-  - **Selbsttest:** 53/53.
-  - **Produktionsgate:** 19 blockierend wie zuvor (6 × `visual-approval`, 12 × `placeholder-approval`, 1 × `review-report`).
-  - **Chromium:** kein Überlauf bei 320 bis 1440 px. Die Bildschirmfotos aller sechs Figuren bei 1280 und 360 px und im Theme «kontrast» sind pixelgleich mit dem Stand vor dem Nachtrag.
-- **Im Visualisierungs-Check angepasst:** Zeile 1 sowie die Punkte «Abweichungen vom Auftrag» und «Design-System». Die Bewertungen E/T/N bleiben.
-
-Die Angaben unten beschreiben den Stand von 1h. Wo der Nachtrag sie überholt, ist das vermerkt.
+Diese Selbstprüfung ersetzt die der Korrektur 1h mit Nachtrag r4-7 (Stand `f32c255`). Die Prüfstufen bleiben offen. Der Abschnitt «Visualisierungs-Check» unten beschreibt weiter den Stand 1h. Was 1i an den Figuren ändert, steht hier unter «Visualisierungs-Check: Änderungen durch 1i».
 
 **Gates und Skripte:**
 
-- **`node tools/build.mjs`:**
-  - 15 Seiten, Build r4-6, 0 blockierend (seit dem Nachtrag Build r4-7).
-  - 20 Hinweise:
-    - 6 Visualisierungen nicht freigegeben
-    - 12 Platzhalter nicht freigegeben
-    - `siteUrl` fehlt
-    - Prüfbericht offen
-  - Vor 1h waren es 21 Hinweise. `v-vs-mythen` ist jetzt eine Textzeile im Plan.
-  - Kein Hinweis `resonance` und kein Hinweis `visual-plan`.
-- **`node tools/gate.mjs --selftest`:** 52/52 bestanden (seit dem Nachtrag 53/53).
-- **`node tools/gate.mjs --production`:**
-  - Blockiert erwartungsgemäss mit 19 Befunden:
-    - 6 × `visual-approval`
-    - 12 × `placeholder-approval`
-    - 1 × `review-report`, offene Stufen samt R1 bis R3
-  - Dazu 1 Hinweis (`siteUrl`). Kein Befund `resonance`.
+- **`node tools/build.mjs`:** 15 Seiten, Build r4-7, 0 blockierend, 20 Hinweise wie zuvor:
+  - 6 Visualisierungen und 12 Platzhalter nicht freigegeben
+  - `siteUrl` fehlt
+  - Prüfbericht offen
+- **`node tools/gate.mjs --selftest`:** 53/53 bestanden.
+- **`node tools/gate.mjs --production`:** blockiert erwartungsgemäss mit 19 Befunden (6 × `visual-approval`, 12 × `placeholder-approval`, 1 × `review-report`), dazu 1 Hinweis (`siteUrl`).
 - **`node abgleich/pruefe-abgleich.mjs`:** **1763 Zeilen, 0 ohne Fundstelle.** Ob die genannte Fassung die Aussage trägt, prüft das Skript nicht; das bleibt Aufgabe von W1.
-- **Wortlaut:** Ein Skript der bauenden Sitzung sucht jede Stelle in «…» aus 1H, Abschnitt 4 bis 7 (ohne Codeblöcke). Es sucht im sichtbaren Text von `verstehen`, `beziehungen` und `grenzen` und in `site.config.json`.
-  - Ergebnis: 49 Stellen, 43 gefunden. Die 6 übrigen sind keine Fehler:
-    - 5 zitiert der Auftrag als Text, der ersetzt wird: «Später.», «Links / Mitte / Rechts», «Abbildung 4», «Schritt 1 von 4», «Schritt 4 von 4».
-    - «Verbreitete Annahme: «…»» ist das Muster für die sieben `dt`.
-  - HTML-Gerüst und beide SVG aus den Codeblöcken stehen zeichengleich in `content/verstehen.html` (Skript).
-- **Unverändert:** Ein Skript vergleicht mit dem Stand `c9e0375` (vor 1h).
-  - `content/verstehen.html` ist ausserhalb von Abbildung 1 bis 3 und der Annahmen gleich. Auch der Suizid-Absatz und der Verweis im Text sind gleich.
-  - In der Anspannungskurve sind nur die genannten Beschriftungen, die Überschrift an Stelle 4 und die Kurzbeschreibung geändert.
-  - `content/beziehungen.html`: nur die fünf Stationen und die Klasse `puk-vis-compare__col--b` (4×) sind geändert.
-  - `content/grenzen.html`: nur die vier Nummern von DEAR sind geändert.
-  - `index` ist gleich.
+- **Wortlaut:** Ein Skript sucht jede Stelle in «…» aus 1I, Abschnitte 3 bis 9 (Teil `visualPlan`), im sichtbaren Text von `index`, `verstehen`, `beziehungen` und `grenzen` und in `site.config.json`.
+  - Ergebnis: 62 Stellen, 45 gefunden (eine davon erst ohne die führende Auslassung «… »).
+  - Die 17 übrigen sind keine Fehler:
+    - 13 sind Ausgangstexte («bisher») und stehen nicht mehr auf den Seiten bzw. im Plan («4 «Später»»).
+    - 4 sind Stellen mit Auslassung «…»; ihr Anfang steht unverändert auf der Seite.
+- **Unverändert:** Ein Skript vergleicht den sichtbaren Text Satz für Satz mit dem Stand `af892a5` (vor 1i).
+  - Geändert sind genau die Stellen aus 1I (Satz-Diff: `index` 7, `verstehen` 35, `beziehungen` 12, `grenzen` 16 Zeilen).
+  - Der Verweis im Text (`data-responsibility-inline`) steht unverändert auf `verstehen`, `beziehungen` und `grenzen` (je 1).
+  - Keine `style`-Attribute, keine `tel:`-Links (`grep`: 0).
 
 ### Auftrag verschieben
 
 | Schritt | Stand | Beleg |
 | --- | --- | --- |
-| Upload im Stamm | `KORREKTUR-ETAPPE-1H.md` aus `4dec6ad` unverändert in den Website-Ordner gelegt | Commit `f56330f` auf `borderline-umbau`; `cmp` mit der Fassung aus `main`: gleich |
-| Stamm von `main` | Datei gelöscht | Commit `e85ed65` auf `main` |
-| Zusammenführen | `main` in `borderline-umbau`, ohne Konflikt; bringt auch das Profil-Update `b920b58` | Merge-Commit `84cac17` |
-| Skizzen | `skizze-eisberg.png` und `skizze-momentaufnahmen.png` kamen mit demselben Upload (`4dec6ad`) in den Stamm. Der Auftrag nennt sie nicht. Sie liegen weiter im Stamm von `main` und `borderline-umbau` | Rückfrage an die Fachstelle im Bericht der Sitzung |
+| Upload im Stamm | `KORREKTUR-ETAPPE-1I.md` aus `5c9079c` unverändert in den Website-Ordner gelegt | Commit `2c5d88b` auf `borderline-umbau`; `cmp` mit der Fassung aus `main`: gleich |
+| Stamm von `main` | Datei gelöscht | Commit `247d787` auf `main` |
+| Zusammenführen | `main` in `borderline-umbau`, ohne Konflikt | Merge-Commit `af892a5` |
 
-### Korrekturauftrag 1h: Stand je Punkt (Abschnitte 3 bis 7)
+### Korrekturauftrag 1i: Stand je Punkt (Abschnitte 3 bis 9)
 
 | Punkt | Stand | Beleg |
 | --- | --- | --- |
-| 3.1 `main` holen | umgesetzt | Merge `84cac17`, kein Konflikt |
-| 3.2 Werkzeuge aus dem Starter | umgesetzt | Commit `6872fdf`: `tools/contract.js`, `tools/selftest/site.config.json`, `tools/selftest/README.md`. Auf Rückfrage auch `gate.html` und `README.md`, die im Starter ebenfalls geändert waren. `diff -rq tools/` und `cmp` gegen den Starter: gleich |
-| 3.3 `assetVersion`, `$comment` | umgesetzt | `"assetVersion": "r4-6"`; `$comment` enthält «Profil-Update 10.10.2026 übernommen: Build r4-6». Der Build meldet «Build r4-6» |
-| 3.4 Zeilen 15–17 | umgesetzt | Abschnitt «Visualisierungs-Check» unten: Tabelle der Vorlage mit Zeilen 1–17 und Matrix mit Zeilen 1–17 ausgefüllt |
-| 4 Eisberg: Bezeichnung | umgesetzt | «Abbildung 1 · Was man sieht – und was darunter mitwirken kann» |
-| 4 Eisberg: Darstellung | umgesetzt | `div.bl-eis` aus dem Auftrag, SVG zeichengleich. Wörter als HTML-Liste; `.bl-eis__key` nur für Screenreader. Kernaussage, Kurztext, Kennzeichnung und Quelle: unverändert (Skript) |
-| 4 Eisberg: CSS breit | umgesetzt, eine Abweichung erlaubt | Lage der zehn Wörter und der Frage nach der Tabelle des Auftrags, `translate(-50%,-50%)`, ohne Kästen. Schrift `type-body-sm` für alle Wörter: In `type-body` berührte «Vorwürfe» bei 1280 px den Umriss. Der Auftrag lässt das zu («sonst Schrift `type-body-sm`, nie kleiner»). Skript mit `isPointInFill`: Bei 1440, 1280, 1024 und 900 px liegen alle vier Ecken jedes Worts in der Eisbergform; die Frage ragt nicht aus der Figur |
-| 4 Eisberg: schmal | umgesetzt, Schwelle abweichend | Die Zeichnung ist ohne Wörter über die ganze Breite sichtbar. Darunter stehen die Listen «Sichtbar» und «Darunter möglich», umbrechend und ohne Kästen, darunter die Frage (Bildschirmfoto 360 px). Schwelle: Containerbreite unter **800 px** statt 560 px. Zwischen 560 und 800 px ragten Wörter über den Umriss (Skript) |
-| 4 Eisberg: Vertiefung, Kurzbeschreibung | umgesetzt | Wortlaut des Auftrags (Wortlaut-Skript) |
-| 4 Kurve: Beschriftungen, Stelle 4 | umgesetzt | an der Kurve «Wir können sprechen.», «Es wird eng.», «Es ist gerade zu viel.», «Es wird wieder ruhiger.»; Überschrift in der Liste «Es wird wieder ruhiger.»; Text und Beispiel gleich |
-| 4 Kurve: Kurzbeschreibung | umgesetzt | «4 «Es wird wieder ruhiger.»» |
-| 4 Kurve: Prüfung bei 1280 px | erfüllt | Beschriftung 4 endet 152 px vor dem rechten Rand der Figur und überdeckt die Kurve nicht (Bildschirmfoto). Sie reicht 80 px über das Ende der Linie hinaus. Bei 768 px verbreiterte die längere Beschriftung die Seite um 16 px. Deshalb stehen unter 800 px Containerbreite (vorher 560 px) nur die Ziffern an der Kurve; die Liste darunter nennt alle vier Sätze |
-| 4 Momentaufnahmen: Figur | umgesetzt, eine Abweichung | `puk-vis-figure puk-vis-figure--open`, Bezeichnung, Kernaussage, Kurztext, Szene mit SVG zeichengleich, Vertiefung mit Titel, Kurzbeschreibung und Kennzeichnung nach dem Auftrag. **Abweichung:** `data-visual-type="figure"` statt «illustration». Das Gate r4-6 blockiert eine Illustration ohne Platzhalter oder Bild mit Bildnachweis (`placeholder-status`, `tools/contract.js` Zeile 333). Entscheid auf Rückfrage: vorläufig «figure». **Seit dem Nachtrag r4-7 erledigt:** `data-visual-type="illustration"` |
-| 4 Momentaufnahmen: CSS | umgesetzt | Pendel-Regeln, `.bl-parts` und der Pendel-Teil der Media Query entfernt (vorher `grep`). Regeln des alten Eisbergs gab es in `borderline.css` nicht. Die Szene nutzt nur Profilklassen |
-| 4 Annahmen | umgesetzt | `figure` entfällt mit «Abbildung 4», Bildlegende und Kurzbeschreibung. Kernaussage und Kurztext als zwei Absätze, sieben Paare als `dl` wie in `grenzen` › 09, Quellenzeile `<p><strong>Quellen:</strong> …</p>`. Die Liste steht vor dem Zwischentitel zum Suizid; Begründung unter «Entscheide» |
-| 5 Schleife: drei Zeilen | umgesetzt | je Station `bl-cycle__who` («Schwester» oder «Betroffene Person», `type-body-sm`, mittleres Gewicht), `bl-cycle__ex` (Beispielsatz, `type-body`), `puk-vis-cycle__n` («Station 1 · Ereignis» usw., `type-caption`). Wortlaut sonst gleich |
-| 5 Schleife: Radius | umgesetzt, Token auf Rückfrage | `border-radius: var(--radius-md)` (4 px), auch schmal. Der Karten-Token des Profils ist `radius-none`, also eckig. Das widerspricht dem Ziel von BS-4 Variante B («weiche Ecken»). Entscheid auf Rückfrage: `radius-md`, der kleinste weiche Token |
-| 5 Schleife: Pfeile, schmal | erhalten, Masse angepasst | Kreisanordnung bis 640 px breit (vorher 600 px), Liste unter 700 px Containerbreite (vorher 660 px). Mit den höheren Feldern begann der Pfeil 4 → 5 sonst im Feld 4 (−1,8 px). Jetzt enden alle Pfeile 8 bis 35 px vor dem Zielkasten (`abgleich/bedienung.mjs`) |
-| 5 Zwei Sichten | umgesetzt | Klasse `puk-vis-compare__col--b` entfernt (4×); beide Spalten mit durchgezogener Oberkante (Bildschirmfoto 1280 px) |
-| 6 DEAR | umgesetzt | `<span class="puk-vis-path__n">1</span>` bis `4`; sonst gleich (Skript) |
-| 7 `resonance` | umgesetzt | sechs Einträge im Wortlaut (Wortlaut-Skript); kein Gate-Hinweis `resonance` |
-| 7 `v-vs-eisberg` | umgesetzt | `statement`, `alternative` und Satz am Ende von `reason` im Wortlaut |
-| 7 `v-vs-bewertungen` | umgesetzt, eine Abweichung | `statement`, `understood`, `alternative`, `reason` und `approvalStatus` im Wortlaut. `format` «figure» statt «illustration» (siehe oben); `reason` nannte das in einem zweiten Satz. **Seit dem Nachtrag r4-7:** `format` «illustration», `reason` ohne diesen Satz |
-| 7 `v-vs-mythen` | umgesetzt | `format` «text», `statement`, `source`, `alternative` «–», kein `understood`, `reason` im Wortlaut |
-| 2 Regeln | eingehalten, mit den genannten Abweichungen | keine eigenen Formulierungen auf den Seiten (Wortlaut-Skript); keine `style`-Attribute, keine festen Farben in SVG, keine `tel:`-Links (`grep`: 0); Beschriftungen als HTML-Text |
+| 3 `bewertungen` (P4-F-1) | umgesetzt | «Wenn das geschieht, ist es keine Absicht.» |
+| 3 `anspannung` (P4-F-5) | umgesetzt | «Bei Gefahr haben Abstand, Schutz und professionelle Hilfe Vorrang.» |
+| 3 `anspannung` (P4-F-12) | umgesetzt | «… dreht sich für einen Menschen häufig fast alles um den Schmerz oder Streit im Moment.» |
+| 3 Stelle 4 (P4-F-7) | umgesetzt | «Es kann wieder ruhiger werden.» an der Kurve, als Überschrift in der Liste und in der Kurzbeschreibung (3 Stellen, Skript) |
+| 3 Stelle 4 bei 1280 px | erfüllt, mit Anpassung | bei 1280 px 90 px innerhalb der Figur, überdeckt die Kurve nicht (Bildschirmfoto). Zwischen 800 und 960 px Containerbreite ragte sie aus der Figur (900 px Fenster: 48 px, Seite 12 px Überlauf). Deshalb `@container (max-width:960px)` statt 800 px; darunter Nummern und Liste. Messung bei 12 Breiten von 700 bis 1440 px: Beschriftung innerhalb oder ausgeblendet, kein Überlauf |
+| 3 `erleben` (P4-F-10) | umgesetzt | «… so und lässt sich aus der Diagnose nicht vorhersagen.» |
+| 3 Eisberg, Vertiefung (P4-F-13) | umgesetzt | «Das Eisberg-Bild ist eine mögliche Verständnishilfe, … sicher «darunterliegt». Es soll Wut nicht verharmlosen.» |
+| 3 Rücksprung (P4-F-17) | umgesetzt | «Was die Schwester tut, kann zum neuen Ereignis werden.»; der Satz steht nur einmal (`grep`) |
+| 3 Suizid-Absatz (P4-F-9) | umgesetzt | «Bleiben Sie bei der Person nur, …»; Verweis im Text an seiner Stelle |
+| 4 Annahme 3 (P4-F-2) | umgesetzt | Hauptsatz und Erklärung im Wortlaut (Skript) |
+| 4 Annahme 5 | umgesetzt | «Die Abgrenzung gehört in eine fachliche Abklärung.» am Ende der Erklärung |
+| 4 Stelle 4, Text | umgesetzt | «Der Wunsch nach Kontakt oder Abstand darf sich verändern.» nach «Bieten Sie neuen Kontakt …»; Beispiel bleibt |
+| 4 Momentaufnahmen (P4-F-4) | umgesetzt | `<p class="bl-scene__lead">Sätze, die Angehörige hören können:</p>` als erstes Element der Szene. «Du bist genau wie alle anderen.» am Satz und in `p.puk-sr` (2 Stellen). Zwei Sätze in der Vertiefung. Bildschirmfotos bei 1280 und 360 px: Zeile über beiden Spalten bzw. über den Sätzen |
+| 4 CSS | umgesetzt | `.bl-scene__lead{grid-column:1/-1;margin:0 0 var(--space-2);font:var(--type-body-sm);color:var(--text-default)}`, ohne Rahmen |
+| 5 `verantwortung` (P4-F-3) | umgesetzt | «… Für den Verlauf der Erkrankung sind sie nicht verantwortlich, für die Beziehung nicht allein.»; «Es gibt keine «perfekte» Reaktion …» bleibt |
+| 5 «Unterstützung verteilen» (P4-F-6) | umgesetzt | zwei Sätze vor «Auch eigene Strategien …» |
+| 6 «Geld und Unterstützung» | umgesetzt | «Ihre eigene finanzielle Sicherheit und Ihre Belastungsgrenzen gehören in diese Entscheidung.»; Beispiel bleibt |
+| 6 `konsequenz` (P4-F-6, P4-F-11) | umgesetzt | Absatz 1 in vier Sätzen; neuer Absatz direkt vor «Ein Schuldgefühl …». Bildschirmfotos bei 1280 und 360 px |
+| 6 `bruecke` (P4-S-5), `reihenfolge` (P4-S-6) | umgesetzt | «…, denn sie zeigen, was geht und was nicht.»; «Langfristig und emotional niedriger:» |
+| 6 `dear` (P4-W2-4) | umgesetzt | Verweissatz mit Link `verstehen.html#anspannung` auf den Titel; ein Tabstopp mehr (`bedienung.mjs`) |
+| 7 `index` › `beratung` (P4-F-19, P4-S-6) | umgesetzt | fünf Sätze im Wortlaut, im selben Absatz; der Satz davor und «Kontakt: …» bleiben. Bildschirmfotos bei 1280 und 360 px |
+| 8 Verweise (P4-S-3) | umgesetzt | drei Stellen; Anführungszeichen ausserhalb von `<a>`, Linkziele gleich (`git diff`) |
+| 9 `visualPlan` (P4-V-1) | umgesetzt | `v-vs-anspannung` › `statement`: «4 «Es kann wieder ruhiger werden.»». Sonst kommt «Später» im Plan nicht vor (`grep`). `v-vs-bewertungen` › `goal`, `source` und `statement` im Wortlaut |
+| 9 Abgleich | umgesetzt | siehe unten |
+| 2 Regeln | eingehalten | keine eigenen Formulierungen auf den Seiten (Wortlaut-Skript); Sätze an allen Stellen gleich geändert |
 
-**`grep`-Belege** (Anzahl Treffer):
+### Abgleich (Abschnitt 9)
 
-| Suche | gebaute Seiten (`verstehen`, `beziehungen`, `grenzen`) | `borderline.css` | `content/` |
-| --- | ---: | ---: | ---: |
-| `bl-fig--pendel` | 0 | 0 | 0 |
-| «Ausschlag» | 0 | 0 | 0 |
-| «Abbildung 4» | 0 | 0 | 0 |
-| `v-vs-mythen` | 0 | 0 | 0 |
-| `puk-vis-compare__col--b` | 0 | 0 | 0 |
-| «Schritt n von 4» | 0 | 0 | 0 |
-| «Später.» | 0 | 0 | 0 |
-| `bl-parts` | 0 | 0 | 0 |
-
-### Abgleich (Abschnitt 8)
-
-- **`abgleich/verstehen.md`:** 21 Zeilen geändert, dazu 4 neue Zeilen.
-  - 13 Zeilen «umformuliert (Bildsprache, 1h)»: Eisberg mit neuer Vertiefung und Kurzbeschreibung; Pendel mit neuem Kurztext und neuer Vertiefung. Die Bemerkung nennt «bis 1g: …».
-  - 2 Zeilen «verschoben», Nr. 376 und 380: Die Sätze stehen jetzt in der Vertiefung von «Momentaufnahmen».
-  - Nr. 74 «entfällt»: «Zwischen den beiden Listen besteht keine Zuordnung.» Die Kurzbeschreibung im Wortlaut von 1H sagt das nicht mehr; der Satz steht nur noch im Plan («Keine Zuordnung zwischen oben und unten.»).
-  - Nr. 249, 340, 445 und 456 behalten Status und Fassung. Ihre Bemerkung nennt Stelle 4 jetzt «Es wird wieder ruhiger.» (bis 1g «Später»).
-  - Nr. 493 nennt die neue Bezeichnung von Abbildung 1.
-  - 11 Bemerkungen enthalten den Satz des Auftrags «Pendel ersetzt durch «Momentaufnahmen» (BS-1, Entscheid Fachstelle 10.10.2026)». Die Beschriftungen des Pendels hatten keine eigenen Bestandszeilen; die Zeilen der Handout-Sätze zeigen auf Kurztext und Vertiefung.
-  - Neu Nr. 543 bis 546 «neu (1h)»: «Wie ist es gerade für dich?», «Es wird wieder ruhiger.», «Du bist die Einzige, die mich versteht.», «Du bist wie alle anderen.».
-  - Kopfnotiz «Korrektur 1h: …», Zählung nachgeführt. Notiz: «Ab 1h ist Abschnitt 06 keine Abbildung mehr; ältere Bemerkungen «Abbildung 4» meinen die Liste der Annahmen.»
-- **`abgleich/beziehungen.md`:** Nr. 63, 140, 141, 144 und 147 «umformuliert (Bildsprache, 1h)» mit dem neuen Stationstext; Kopfnotiz.
-- **`abgleich/grenzen.md`:** keine Zeile betroffen. Die DEAR-Zeilen enthalten «Schritt n von 4» nicht.
-- **Vergleich mit dem Stand vor 1h:** Geändert sind genau diese Zeilen, keine andere (Skript gegen `rows2` vor 1h).
-- **`abgleich/README.md`:** Statuswerte, Prüfergebnis, Messwerte und Abschnitt «Korrektur Etappe 1h» nachgeführt.
+- **Neuer Status:** «umformuliert (Prüfrunde 4, 1i)»; der frühere Status steht in der Bemerkung («bis 1h: …»).
+- **Geänderte Zeilen:**
+  - `verstehen`: 29 Zeilen und Zusatzzeilen Nr. 544 und 546
+  - `beziehungen`: 6 Zeilen und Zusatzzeilen Nr. 239 und 247
+  - `grenzen`: 24 Zeilen
+  - `index`: keine
+  - Vergleich mit dem Stand vor 1i per Skript: keine andere Zeile geändert.
+- **Zurückgekehrte Sätze** mit neuer Fassung und Ort: b162, b163, g51, g79, g369, g228, g261, g627, v17, v49, v119, v126, v330, v377, v381 sowie zu P4-F-5 v89 und v246, zu P4-F-12 v78 und zu P4-F-13 v61.
+  - «übernommen», wo der Satz wörtlich gleich ist: v246, v330, v377.
+  - Sonst «umformuliert (Prüfrunde 4, 1i)».
+  - In der Bemerkung steht «Entscheid Fachstelle 10.10.2026 (P4-F-…)» statt «Prüfbedarf».
+- **v289** (P4-F-5): Die Fassung bleibt. Die Bemerkung nennt jetzt den Satz mit «professionelle Hilfe» statt «Prüfbedarf».
+- **P4-W1-9:**
+  - v371 und v390 nennen die entfallenen Teile.
+  - g208 ist «verschoben» nach `kommunizieren` (Etappe 2).
+  - v138 und zusätzlich v140 bis v146 nennen die Quellenzeile statt der Vertiefung «Quellen».
+  - Nr. 546 ist der Bestandszeile «Du bist genau wie alle anderen.» aus dem Handout `wenn-worte-treffen` zugeordnet, Status «übernommen».
+- **Weitere Zeilen, deren Fassung sich mit 1i ändert:**
+  - Eisberg: v167, v170
+  - «häufig fast alles»: v242, v265, v272
+  - «Abstand, Schutz und professionelle Hilfe»: v342, v343
+  - Annahme 3: v117
+  - Kopf von `grenzen`: g61, g110, g125, g308, g374, g602
+  - Beratung auf `index`: g115, g247
+  - «niedriger»: g138 bis g140
+  - «denn sie zeigen»: g396, g399, g403, g405, g423
+  - Suizid-Absatz: g646
+  - `verantwortung`: b209
+- **Nur die Bemerkung angepasst** (Zitat der neuen Fassung): v204, v249, v340, v445, v456, v504, b154, b155, b210.
+- **Zählung:**
+  - 1739 Bestandszeilen und 23 Zeilen ohne Bestandssatz (vorher 24).
+  - Dazu 1 Zeile mit Bestandssatz aus einem Handout, das sonst keiner Seite der Etappe 1 zugeordnet ist (Nr. 546).
+  - Kopfnotiz «Korrektur 1i: …» auf allen vier Tabellen.
+  - `abgleich/README.md`: Status, Prüfergebnis, Messwerte, Abschnitt «Korrektur Etappe 1i».
 
 ### Wortzahl, Verneinungen und Bedienung
 
-Skripte `abgleich/kennzahlen.mjs`, `abgleich/verneinung.mjs` und `abgleich/bedienung.mjs`. Werte vor 1h am Stand `c9e0375`.
+Skripte `abgleich/kennzahlen.mjs`, `abgleich/verneinung.mjs` und `abgleich/bedienung.mjs`. Werte vor 1i am Stand `af892a5`.
 
-| | `verstehen` vor → nach 1h | `beziehungen` vor → nach 1h | `grenzen` vor → nach 1h |
-| --- | --- | --- | --- |
-| Wörter | 1591 → 1602 (`eisberg` 161 → 180, `anspannung` 389 → 395, `bewertungen` 236 → 235, `mythen` 407 → 394) | 1564 → 1564 | 1613 → 1601 (`dear` 246 → 234) |
-| Sätze mit Verneinung | 37 von 190 → 37 von 183 | 33 von 167 → 33 von 169 | 42 von 195 → 42 von 195 |
-| Absicherungen je 100 Wörter | 2,89 → 3,00 | 4,48 → 4,48 | 2,60 → 2,62 |
-| Tabstopps | 19 → 18 (Vertiefung «Quellen» der Annahmen entfällt) | 16 → 16 | 20 → 20 |
-| Seitenhöhe bei 360 px | 17 714 → 16 071 px | 15 137 → 15 199 px | 16 500 → 16 500 px |
-| höchste Figur bei 360 px | Anspannungskurve 3282 px (Annahmen sind keine Figur mehr) | Zwei Sichten 2359 px | DEAR 1791 px |
+| | `index` | `verstehen` | `beziehungen` | `grenzen` |
+| --- | --- | --- | --- | --- |
+| Wörter vor → nach 1i | 238 → 248 | 1602 → 1673 | 1564 → 1600 | 1601 → 1667 |
+| Sätze mit Verneinung | 3 von 24 → 4 von 26 | 37 von 183 → 39 von 190 | 33 von 169 → 35 von 172 | 42 von 195 → 43 von 201 |
+| Absicherungen je 100 Wörter | 1,68 → 1,61 | 3,00 → 3,35 | 4,48 → 4,56 | 2,62 → 2,52 |
+| Tabstopps | 10 → 10 | 18 → 18 | 16 → 16 | 20 → 21 |
+| Seitenhöhe bei 360 px | 3863 → 3922 px | 16 071 → 16 418 px | 15 199 → 15 435 px | 16 500 → 16 982 px |
+| höchste Figur bei 360 px | – | Anspannungskurve 3282 → 3379 px | Zwei Sichten 2359 px | DEAR 1791 px |
 
-**Lesart:**
+**Abschnitte mit geänderter Wortzahl:**
 
-- Die Absicherungen auf `verstehen` steigen. Der neue Kurztext und die Vertiefung von «Momentaufnahmen» enthalten «kann» und «können»; das ist Wortlaut des Auftrags.
-- `grenzen` hat 12 Wörter weniger, weil «Schritt n von 4» entfällt.
-- `index`: 238 Wörter, 10 Tabstopps, 3863 px; unverändert.
+| Seite | Abschnitt | Wörter |
+| --- | --- | --- |
+| `index` | `beratung` | 67 → 77 |
+| `verstehen` | `erleben` | 99 → 107 |
+| `verstehen` | `eisberg` | 180 → 176 |
+| `verstehen` | `anspannung` | 395 → 412 |
+| `verstehen` | `bewertungen` | 235 → 270 |
+| `verstehen` | `mythen` | 394 → 409 |
+| `beziehungen` | `schleife` | 272 → 273 |
+| `beziehungen` | `verstaerker` | 470 → 473 |
+| `beziehungen` | `was-hilft` | 159 → 187 |
+| `beziehungen` | `verantwortung` | 237 → 241 |
+| `grenzen` | `bruecke` | 153 → 154 |
+| `grenzen` | `arten` | 144 → 155 |
+| `grenzen` | `dear` | 234 → 253 |
+| `grenzen` | `konsequenz` | 143 → 174 |
+
+Die Absicherungen auf `verstehen` steigen durch die vorsichtigen Formulierungen («kann», «häufig», «mögliche»); das ist Wortlaut des Auftrags.
 
 **Technische Stichprobe in Chromium (Playwright), kein Ersatz für Stufe 5:**
 
-- **Überlauf:** keiner bei 320, 360, 768, 1280 und 1440 px auf `verstehen`, `beziehungen` und `grenzen`; auch nicht im Theme «kontrast» bei 1280 px.
-- **Kein Wort über einer Form:**
-  - **Eisberg:** Skript wie oben. Bei 1440, 1280, 1024 und 900 px liegt jedes Wort ganz in der Form. Ab 820 px gilt die schmale Darstellung.
-  - **Szene «Momentaufnahmen»:** Die Sätze stehen über der Zeichnung, nicht in ihr.
-  - **Kurve:** Keine Beschriftung ragt aus der Figur.
-- **Schmal sichtbar:** Bei 360 und 320 px sind Eisberg, Szene, Kurve, Schleife (Liste mit Rücksprung), Zwei Sichten und DEAR zu sehen. Die Figuren sind bei 360 px so hoch:
-
-  | Figur | Höhe bei 360 px |
-  | --- | ---: |
-  | Eisberg | 1071 px |
-  | Momentaufnahmen | 848 px |
-  | Bedeutungsschleife | 1920 px |
-
+- **Überlauf:** keiner bei 320, 360, 768, 1280 und 1440 px auf den vier Seiten, auch nicht im Theme «kontrast» bei 1280 px.
 - **Kontrast nach WCAG 1.4.3:** für allen sichtbaren Text in `main` gemessen, Vertiefungen geöffnet; kein Wert unter AA.
 - **Fokus:** Alle Tabstopps haben einen sichtbaren Fokus; der erste ist «Zum Hauptinhalt».
+- **Kein Wort über einer Form:**
+  - Eisberg wie bisher: jedes Wort in der Form bei 900 bis 1440 px Fensterbreite; schmale Darstellung unter 800 px Containerbreite.
+  - Kurvenbeschriftungen innerhalb der Figur oder ausgeblendet; die Beschriftung an Stelle 4 überdeckt die Kurve nicht.
 - **Bildschirmfotos angesehen:**
-  - Alle sechs Figuren bei 1280 und 360 px und im Theme «kontrast» bei 1280 px.
-  - Dazu Abschnitt 06 von `verstehen` (Annahmen) bei 1280 und 360 px.
+  - bei 1280 und 360 px: Abbildung 2 und 3 auf `verstehen`, `index` › `beratung`, `grenzen` › `konsequenz`
+  - im Theme «kontrast» bei 1280 px: alle sechs Figuren
 - **Nicht geprüft:** Screenreader, Hardwaretastatur und Touch (Stufe 5, Person).
+
+### Visualisierungs-Check: Änderungen durch 1i
+
+| Figur | Punkt | Ergebnis | Beleg |
+| --- | --- | --- | --- |
+| `v-vs-anspannung` | 1 Plan entspricht der Seite | E (vierte Runde: T, P4-V-1) | `statement` nennt Stelle 4 «Es kann wieder ruhiger werden.» wie Beschriftung, Liste und Kurzbeschreibung |
+| `v-vs-anspannung` | 10 nicht verfälscht | E | Stelle 4 mit «kann» (P4-F-7); «Der Wunsch nach Kontakt oder Abstand darf sich verändern.» aus dem Handout |
+| `v-vs-anspannung` | 9 keine Textwand | T, wie bisher | bei 360 px 3379 px hoch (vorher 3282 px) |
+| `v-vs-anspannung` | 12 lesbar | E | unter 960 px Containerbreite Nummern an der Kurve, Sätze in der Liste darunter |
+| `v-vs-bewertungen` | 1 Plan entspricht der Seite | E (vierte Runde: T, P4-V-1) | `goal`, `source` und `statement` ohne Pendel; `statement` nennt die Zeile «Sätze, die Angehörige hören können:» |
+| `v-vs-bewertungen` | 4 Kernaussage, Erklärtext | E | unverändert; die Vertiefung ergänzt zwei Sätze und trägt die Hauptaussage nicht allein |
+| `v-vs-bewertungen` | 16 Beschriftungen nennen Erleben | E | Die Zeile nennt, wer die Sätze hört (P4-F-4), und keinen Bildteil |
+
+**Nicht erfüllt oder offen:**
+
+- **Punkt 14:** Keine Figur ist fachlich freigegeben.
+- **Weiter teilweise erfüllt** (Visualisierungs-Check unten):
+  - Schleife: 2, 6, 15
+  - DEAR: 8, 15, 16
+  - Anspannungskurve: 9
+  - Eisberg: 16, 17
+- **Offen bis zur Freigabe:** P4-F-8, P4-F-16, P4-F-21. Dieser Auftrag ändert daran nichts.
+- **Zurückgestellt (optional):** P4-W2-2, P4-S-4, P4-V-2, P4-V-4, P4-V-5, P4-V-6.
+- **Stufe 5:** Screenreader-Läufe, Hardwaretastatur und Touch.
 
 ### Entscheide der bauenden Sitzung (zur Prüfung)
 
-- **Annahmenliste vor dem Suizid-Zwischentitel:**
-  - Der Auftrag sagt «vor der Liste» für Kernaussage und Kurztext. Wohin die Liste im Abschnitt gehört, sagt er nicht.
-  - Sie steht nach dem Absatz «Viele Sätze über Borderline klingen eindeutig, …» und vor «Wenn Sie sich wegen Suizid sorgen». Sonst stünde sie unter diesem Zwischentitel.
-  - Suizid-Absatz und Verweis im Text sind unverändert.
-- **Fetter erster Satz bei Annahme 2:** Die Einordnung hatte als Überschrift zwei Sätze. Beide sind fett, damit der Wortlaut gleich bleibt.
-- **Schwellen 800 und 700 px:** für Eisberg und Kurve 800 px statt 560 px, für die Schleife 700 px statt 660 px; Begründung oben. Die Kommentare in `borderline.css` nennen den Grund.
-- **CSS der Annahmen:** Die Regeln `.bl-myth*` wurden nicht mehr verwendet. Sie sind mit dem Nachtrag r4-7 entfernt.
-- **Skizzen im Stamm:** siehe «Auftrag verschieben».
+- **Schwelle der Kurvenbeschriftungen 960 statt 800 px:** Sonst ragte die längere Beschriftung bei 900 px Fensterbreite aus der Figur. Der Kommentar in `borderline.css` nennt den Grund.
+- **Abstand unter der Sprecherzeile:** `--space-2`; der Auftrag sagt «mit Abstand nach unten».
+- **Abgleich:**
+  - **Nr. 544:** «umformuliert (Prüfrunde 4, 1i)», obwohl es keine Bestandszeile gibt (Regel des Auftrags: geänderte Fassung). Bisher gab es solche Zeilen schon mit «umformuliert (einfache Sprache, 1e)».
+  - **Nr. 546:** zählt nicht mehr zu den Zeilen ohne Bestandssatz.
+  - **Sätze ohne Bestandszeile:** «Sätze, die Angehörige hören können:», «Erfahrungen in engen Beziehungen können mitwirken, neben vielen anderen Einflüssen.» und der Verweissatz in `dear` bekommen keine eigene Zeile. Der Auftrag verlangt das nicht; die Kopfnotizen nennen sie.
+  - **Zitate alter Fassungen:** Bemerkungen nennen sie ohne «…» (etwa «bis 1h ohne «kann»»). Das Prüfskript sucht jedes Zitat auf den Seiten oder im Bestand.
+  - **Nicht genannt:** v140 bis v145 sind wie v138 und v146 berichtigt (gleicher Befund).
 
 ### Kennzahlen aller Seiten (Skript `abgleich/kennzahlen.mjs`)
 
@@ -230,10 +226,10 @@ Gemessen an der alten Seite allein, mit derselben Zählweise für alt und neu (`
 
 | Seite | Alt: Seite allein | Neu | Neu / alt | Richtwert | Richtwert + 5 % | Absicherungen je 100 Wörter alt → neu | Semikolons im Fliesstext alt → neu |
 | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| `index` | 433 | 238 | 55 % | – | – | 1,85 → 1,68 | 1 → 0 |
-| `verstehen` | 2524 | 1602 | 63 % | 1300 | 1365 | 2,54 → 3,00 | 12 → 0 |
-| `beziehungen` | 2149 | 1564 | 73 % | 1100 | 1155 | 3,82 → 4,48 | 6 → 1 |
-| `grenzen` | 2985 | 1601 | 54 % | 1500 | 1575 | 2,41 → 2,62 | 4 → 0 |
+| `index` | 433 | 248 | 57 % | – | – | 1,85 → 1,61 | 1 → 0 |
+| `verstehen` | 2524 | 1673 | 66 % | 1300 | 1365 | 2,54 → 3,35 | 12 → 0 |
+| `beziehungen` | 2149 | 1600 | 74 % | 1100 | 1155 | 3,82 → 4,56 | 6 → 1 |
+| `grenzen` | 2985 | 1667 | 56 % | 1500 | 1575 | 2,41 → 2,52 | 4 → 0 |
 
 ## Visualisierungs-Check
 

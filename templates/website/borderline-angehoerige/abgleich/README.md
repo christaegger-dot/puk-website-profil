@@ -1,6 +1,6 @@
 # Abgleich · Borderline-Website, Etappe 1
 
-Beleg für W1 nach UMBAUPLAN, Abschnitt 5: Jeder Satz des Bestands ist übernommen, gekürzt, zusammengeführt, verschoben, geändert oder mit Grund entfallen. Erstellt von der bauenden Sitzung am 08.10.2026, nachgeführt am 09.10.2026 (Korrektur Etappe 1, 1b, 1c, 1d, 1e, 1f, 1g und 1h). Das ist ein Arbeitsstand, keine Prüfung.
+Beleg für W1 nach UMBAUPLAN, Abschnitt 5: Jeder Satz des Bestands ist übernommen, gekürzt, zusammengeführt, verschoben, geändert oder mit Grund entfallen. Erstellt von der bauenden Sitzung am 08.10.2026, nachgeführt am 09.10.2026 (Korrektur Etappe 1, 1b, 1c, 1d, 1e, 1f, 1g, 1h und 1i). Das ist ein Arbeitsstand, keine Prüfung.
 
 - `index.md` · `/`, `/selbsttest`, `/wegweiser`
 - `verstehen.md` · `/verstehen` ohne Diagnostik-Teil, sechs Handouts; der Teil «Materialien zum Vertiefen» (Z. 277–396) steht seit Korrektur 1c am Ende der Tabelle (Nr. 474–540); seit Korrektur 1f mit zwei Zeilen für Sätze der neuen Seite ohne Bestandssatz am Ende (Nr. 541–542)
@@ -22,7 +22,7 @@ Je Seite eine Tabelle «Satz für Satz» mit jedem Satz der alten Seite und der 
 - **Ort neu:** `seite#abschnitt` (Abschnitts-ID der gebauten Seite, `kopf`, `kapitel`), `Fusszeile` oder «seite (Etappe 2)».
 - **Zustandekommen:** Ein Skript der bauenden Sitzung zerlegt den Bestand in Sätze und schlägt je Satz den ähnlichsten Satz im Zielabschnitt vor. Status, Zielabschnitt und jede schwache Zuordnung sind von Hand gesetzt und geprüft. Ob der genannte Satz die Aussage wirklich trägt, ist Gegenstand der Prüfung.
 
-**Prüfung der Tabellen:** `node abgleich/pruefe-abgleich.mjs`. Ergebnis am 10.10.2026 nach Korrektur 1h: **1763 Zeilen, 0 ohne Fundstelle** (1739 Bestandszeilen und 24 Zeilen ohne Bestandssatz: 16 auf `beziehungen`, 6 auf `verstehen`, 2 auf `grenzen`). Das Skript liest auch Text nur für Screenreader (`.puk-sr`, Kurzbeschreibungen der Bildlegenden), denn er steht auf der Seite. Geprüft wird je Zeile:
+**Prüfung der Tabellen:** `node abgleich/pruefe-abgleich.mjs`. Ergebnis am 10.10.2026 nach Korrektur 1i: **1763 Zeilen, 0 ohne Fundstelle** (1739 Bestandszeilen, 23 Zeilen ohne Bestandssatz – 16 auf `beziehungen`, 5 auf `verstehen`, 2 auf `grenzen` – und auf `verstehen` 1 Zeile mit Bestandssatz aus dem Handout `wenn-worte-treffen`, das sonst keiner Seite der Etappe 1 zugeordnet ist). Das Skript liest auch Text nur für Screenreader (`.puk-sr`, Kurzbeschreibungen der Bildlegenden), denn er steht auf der Seite. Geprüft wird je Zeile:
 
 - Den Ort gibt es.
 - Die neue Fassung steht dort wörtlich.
@@ -42,6 +42,7 @@ Je Seite eine Tabelle «Satz für Satz» mit jedem Satz der alten Seite und der 
 | umformuliert (einfache Sprache, 1f) | Seit Korrektur 1f: wie «umformuliert (einfache Sprache, 1e)», für die Neufassungen von `verstehen` und `grenzen` (`KORREKTUR-ETAPPE-1F.md`, Abschnitt 2 und 3). Der frühere Status steht in der Bemerkung («bis 1e: …»), ebenso Teile, die weiterhin entfallen. Steht der Bestandssatz oder sein behaltener Teil nach 1f wieder unverändert da, bleibt der frühere Status. Gilt auch für Zeilen anderer Seiten mit Ort auf `verstehen` und, mit «–» als Bestandssatz, für einen Satz, der schon bis 1e ohne Bestandszeile auf der Seite stand. |
 | umformuliert (einfache Sprache, 1g) | Seit Korrektur 1g: wie «umformuliert (einfache Sprache, 1f)», für die Stellen 1 und 3 der Anspannungskurve auf `verstehen` und den Abschnitt 02 `bruecke` auf `grenzen`, der statt der Abbildung «Die Brücke mit Geländer» ein Text ist (`KORREKTUR-ETAPPE-1G.md`, Abschnitt 3 und 4). Der frühere Status steht in der Bemerkung («bis 1f: …»). |
 | umformuliert (Bildsprache, 1h) | Seit Korrektur 1h (Bildsprache-Audit): Die Fassung ändert sich, weil eine Abbildung neu gezeichnet oder ersetzt ist (Eisberg, «Momentaufnahmen» statt Pendel, Stationen der Bedeutungsschleife; `KORREKTUR-ETAPPE-1H.md`, Abschnitt 4, 5 und 8). Der frühere Status steht in der Bemerkung («bis 1g: …»). |
+| umformuliert (Prüfrunde 4, 1i) | Seit Korrektur 1i (Entscheide zur vierten Prüfrunde, `KORREKTUR-ETAPPE-1I.md`, Abschnitt 9): Die Fassung ändert sich, weil eine vorsichtige Formulierung aus dem Bestand zurückkommt, ein gekürzter Satz wieder aufgenommen ist oder ein Verweis den Abschnittstitel in «…» nennt. Der frühere Status steht in der Bemerkung («bis 1h: …»). Bei zurückgekehrten Sätzen steht «Entscheid Fachstelle 10.10.2026 (P4-F-…)» statt «Prüfbedarf». Gilt auch für Zeilen ohne Bestandssatz, deren Fassung sich ändert. |
 | entfällt | Aussage erscheint nicht mehr. Mögliche Gründe: <ul><li>Meta-Text oder Handout-Rahmen</li><li>Profil (Krisenzugang, Telefonnummern)</li><li>Entscheid der Fachstelle (Personenbilder, Handouts)</li><li>Wiederholung</li><li>Kürzung für den Richtwert: «Kürzung W2-2» ab 09.10.2026, «Kürzung Umfang (Korrektur 1b)» in der zweiten Korrektur; Korrektur 1c kürzt nicht</li></ul> |
 | Bezeichnung | Überschrift, Kicker, Eintrag der Kapitelübersicht oder Stichwort ohne eigene Aussage. Ohne Ort, wenn die Bezeichnung nicht mehr vorkommt. |
 | neu (1e) | Seit Korrektur 1e: Satz der neuen Seite `beziehungen` ohne Bestandssatz, zum Beispiel Beispielsätze zu «Was Sie tun können», «Das kann kränken» oder der Hinweis auf die Beratung. «Satz (Bestand)» ist «–». |
@@ -65,19 +66,20 @@ Gemessen wird an der alten Seite allein, nicht an Seite plus Handouts. So verlan
 
 Die damals berichteten 1299 / 1099 / 1500 waren zu tief. Die Zählung der bauenden Sitzung hatte Bezeichnungen in eigenen `span` ohne Leerzeichen an das nächste Wort gehängt, zum Beispiel «Station 1 · Schwester» an «Ereignis» oder «Beispiel» an den Beispielsatz.
 
-**Stand 10.10.2026, nach Korrektur 1h:**
+**Stand 10.10.2026, nach Korrektur 1i:**
 
 | Seite | Alt: Seite allein | Neu | Neu / alt | Richtwert | Richtwert + 5 % | Absicherungen je 100 Wörter alt → neu | Semikolons im Fliesstext alt → neu |
 | --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| `index` | 433 | 238 | 55 % | – | – | 1,85 → 1,68 | 1 → 0 |
-| `verstehen` | 2524 | 1602 | 63 % | 1300 | 1365 | 2,54 → 3,00 | 12 → 0 |
-| `beziehungen` | 2149 | 1564 | 73 % | 1100 | 1155 | 3,82 → 4,48 | 6 → 1 |
-| `grenzen` | 2985 | 1601 | 54 % | 1500 | 1575 | 2,41 → 2,62 | 4 → 0 |
+| `index` | 433 | 248 | 57 % | – | – | 1,85 → 1,61 | 1 → 0 |
+| `verstehen` | 2524 | 1673 | 66 % | 1300 | 1365 | 2,54 → 3,35 | 12 → 0 |
+| `beziehungen` | 2149 | 1600 | 74 % | 1100 | 1155 | 3,82 → 4,56 | 6 → 1 |
+| `grenzen` | 2985 | 1667 | 56 % | 1500 | 1575 | 2,41 → 2,52 | 4 → 0 |
 
 **Lesart:**
 
 - **Richtwert:** Er gilt nicht: «Der Richtwert für die Länge gilt nicht. Nicht kürzen, um Wörter auszugleichen.» (`KORREKTUR-ETAPPE-1D.md`, Abschnitt 4; ebenso 1C, Abschnitt 1). Für `beziehungen` sagt `KORREKTUR-ETAPPE-1E.md`, Abschnitt 2: «Die Seite wird länger (geschätzt +25 %); das ist so gewollt.» Für `verstehen` und `grenzen` sagt `KORREKTUR-ETAPPE-1F.md`, Abschnitt 2: «Der Richtwert für die Länge gilt nicht.» Die Wortzahlen werden nur berichtet. Über die Länge entscheidet die Fachstelle in W1.
 - **Korrektur 1e:** `beziehungen` 1164 → 1564 Wörter (+400, +34 %; Auftrag: geschätzt +25 %). Je Abschnitt vor → nach 1e: Kopf und Kapitelübersicht 43 → 70, `verbindung` 70 → 80, `schleife` 242 → 272, `verstaerker` 284 → 470, `zwei-sichten` 238 → 276, `was-hilft` 89 → 159, `verantwortung` 198 → 237. Absicherungen 3,69 → 4,48 je 100 Wörter: Die neuen Sätze enthalten «kann» und «können» (zum Beispiel «Eine kurze, verlässliche Ankündigung kann helfen», «Sie können die Person ermutigen …»); sie sind Wortlaut des Auftrags. `verstehen` 1461 → 1456: Stelle 2 hat kein eigenes «Was hilft» mehr (1E, Abschnitt 3).
+- **Korrektur 1i:** Gekürzte Sätze kommen zurück, und vorsichtige Formulierungen sind länger (Entscheide der Fachstelle zur vierten Prüfrunde). Wörter vor → nach 1i (Stand vor 1i: `af892a5`): `index` 238 → 248 (`beratung` 67 → 77); `verstehen` 1602 → 1673 (`erleben` 99 → 107, `eisberg` 180 → 176, `anspannung` 395 → 412, `bewertungen` 235 → 270, `mythen` 394 → 409); `beziehungen` 1564 → 1600 (`schleife` 272 → 273, `verstaerker` 470 → 473, `was-hilft` 159 → 187, `verantwortung` 237 → 241); `grenzen` 1601 → 1667 (`bruecke` 153 → 154, `arten` 144 → 155, `dear` 234 → 253, `konsequenz` 143 → 174). Absicherungen: `verstehen` 3,00 → 3,35 («kann», «häufig», «mögliche»: Wortlaut des Auftrags), `beziehungen` 4,48 → 4,56, `grenzen` 2,62 → 2,52, `index` 1,68 → 1,61. Sätze mit Verneinung: `index` 3 von 24 → 4 von 26, `verstehen` 37 von 183 → 39 von 190, `beziehungen` 33 von 169 → 35 von 172, `grenzen` 42 von 195 → 43 von 201.
 - **Korrektur 1h:** `verstehen` 1591 → 1602 Wörter; je Abschnitt vor → nach 1h: `eisberg` 161 → 180 (Wörter im Bild, Frage, längere Kurzbeschreibung), `anspannung` 389 → 395 (Beschriftungen mit Punkt, «Es wird wieder ruhiger.»), `bewertungen` 236 → 235 (Momentaufnahmen statt Pendel), `mythen` 407 → 394 (keine Bezeichnung «Abbildung 4», keine Bildlegende). `grenzen` 1613 → 1601 (`dear` 246 → 234: «1» bis «4» statt «Schritt n von 4»). `beziehungen` 1564 wie vor 1h. Werte vor 1h am Stand `c9e0375` mit `--seiten`. Absicherungen `verstehen` 2,89 → 3,00: Die neuen Texte enthalten «kann» und «können» (Kurztext und Vertiefung von «Momentaufnahmen»), alles Wortlaut des Auftrags. Sätze mit Verneinung: `verstehen` 37 von 190 → 37 von 183, `grenzen` 42 von 195 wie vor 1h, `beziehungen` 33 von 167 → 33 von 169.
 - **Korrektur 1g:** `verstehen` 1583 → 1591 Wörter (`anspannung` 381 → 389: zwei längere Sätze in Abbildung 2); `grenzen` 1621 → 1613 Wörter (`bruecke` 161 → 153: Abbildung 1 entfällt, dafür Abschnittstext). Werte vor 1g am Stand `325195d` mit `--seiten` gemessen. Absicherungen `grenzen` 2,28 → 2,60 je 100 Wörter: Der neue Abschnittstext enthält «kann» und «können» (zum Beispiel «Grenzen können Kontakt auf ähnliche Weise schützen», «Kontakt kann viel Nähe bedeuten», «… können mittragen»), dazu die Bezeichnung «Was Sie tun können:»; alles Wortlaut des Auftrags. `verstehen` 2,91 → 2,89. Sätze mit Verneinung: `verstehen` 37 von 190 wie vor 1g; `grenzen` 43 von 205 → 42 von 195 (`bruecke` 5 von 26 → 4 von 16).
 - **Korrektur 1f:** `verstehen` 1456 → 1583 Wörter (+127, +9 %); je Abschnitt vor → nach 1f: Kopf und Kapitelübersicht 48 → 69, `erleben` 69 → 99, `borderline` 106 → 125, `eisberg` 143 → 161, `anspannung` 378 → 381, `bewertungen` 233 → 236, `mythen` 374 → 407 (drei Einordnungen in Abbildung 4), `einordnung` 105 → 105. `grenzen` 1554 → 1621 Wörter (+67, +4 %); Kopf und Kapitelübersicht 54 → 60, `erkennen` 140 → 158, `bruecke` 161 → 161, `arten` 144 → 144, `reihenfolge` 89 → 91, `dear` 246 → 246, `saetze` 163 → 167, `konsequenz` 118 → 143, `kontakt` 84 → 97, `rollen` 73 → 72, `gewalt` 282 → 282. Werte vor 1f am Stand `ee18daf` mit `--seiten` gemessen. Absicherungen `verstehen` 2,82 → 2,91 und `grenzen` 2,06 → 2,28 je 100 Wörter: Die drei Bezeichnungen «Was Sie tun können:» je Seite zählen als «können»; dazu kommen Sätze wie «Verstehen kann helfen, manches anders zu deuten …», «Solche Erfahrungen können das Risiko erhöhen.» oder «Wie die andere Person reagiert, können sie aber nicht garantieren.». Alles ist Wortlaut des Auftrags.
@@ -90,14 +92,16 @@ Die damals berichteten 1299 / 1099 / 1500 waren zu tief. Die Zählung der bauend
 - **Absicherungen auf `verstehen`:** 2,54 → 2,81 nach 1d, 2,82 nach 1e. Die neuen Texte aus D-3 und D-4 enthalten «kann», «können» und «könnten» (zum Beispiel «Anspannung kann im Gespräch ansteigen …», «… entschärfen könnten»); sie sind Wortlaut des Auftrags.
 - **Quote:** Die Quote «Neu / alt» misst nicht, wie stark gekürzt wurde. Die alte Seite enthält Teile, die nach Etappe 2 gehen, und Meta-Text. Die zweite Prüfrunde hat deshalb einen vergleichbaren Kern berechnet (Belege b, Abschnitt 4).
 
-**Bedienung (`node abgleich/bedienung.mjs`, Chromium, 10.10.2026, nach Korrektur 1h):** Tabstopps bei 1280 × 900 px mit Tab ab Seitenanfang. Seitenhöhe ist `document.documentElement.scrollHeight` bei 360 × 800 px, gemessen nach `load` und `document.fonts.ready`.
+**Bedienung (`node abgleich/bedienung.mjs`, Chromium, 10.10.2026, nach Korrektur 1i):** Tabstopps bei 1280 × 900 px mit Tab ab Seitenanfang. Seitenhöhe ist `document.documentElement.scrollHeight` bei 360 × 800 px, gemessen nach `load` und `document.fonts.ready`.
 
 | Seite | Tabstopps ohne Fusszeile | Seitenhöhe bei 360 px | höchste Figur bei 360 px |
 | --- | ---: | ---: | --- |
-| `index` | 10 | 3863 px | – |
-| `verstehen` | 18 | 16 071 px | Anspannungskurve 3282 px |
-| `beziehungen` | 16 | 15 199 px | Zwei Sichten 2359 px |
-| `grenzen` | 20 | 16 500 px | DEAR 1791 px |
+| `index` | 10 | 3922 px | – |
+| `verstehen` | 18 | 16 418 px | Anspannungskurve 3379 px |
+| `beziehungen` | 16 | 15 435 px | Zwei Sichten 2359 px |
+| `grenzen` | 21 | 16 982 px | DEAR 1791 px |
+
+Gegenüber Korrektur 1h (Korrektur 1i): `grenzen` hat einen Tabstopp mehr (Link in `dear` auf `verstehen` › «Wenn die Anspannung steigt», P4-W2-4) und ist bei 360 px 482 px höher (16 500 → 16 982 px). `verstehen` ist 347 px höher (16 071 → 16 418 px), `beziehungen` 236 px (15 199 → 15 435 px), `index` 59 px (3863 → 3922 px): zurückgekehrte Sätze. Die Anspannungskurve ist bei 360 px 3379 px hoch (vorher 3282 px).
 
 Gegenüber Korrektur 1g (Korrektur 1h): `verstehen` hat einen Tabstopp weniger (die Vertiefung «Quellen» der Annahmen entfällt, die Quellen stehen als Zeile im Text) und ist bei 360 px 1643 px niedriger (17 714 → 16 071 px; die Annahmen sind eine Liste statt Karten, «Momentaufnahmen» ist kürzer als das Pendel). Die Anspannungskurve ist bei 360 px 3282 px hoch (vorher 3254 px). `beziehungen` ist 62 px höher (15 137 → 15 199 px; Stationen in drei Zeilen).
 
@@ -243,10 +247,26 @@ Grundlage: `KORREKTUR-ETAPPE-1H.md` (Entscheide der Fachstelle zum Bildsprache-A
 | --- | --- | --- |
 | Profil-Update r4-6 | `main` zusammengeführt; aus dem Starter `tools/contract.js`, `tools/selftest/site.config.json`, `tools/selftest/README.md` und (auf Rückfrage) `gate.html`, `README.md`; `assetVersion` r4-6; Selbsttest 52/52 | Abschnitt 3 |
 | Eisberg | neue Zeichnung und Wörter im Eisberg im Wortlaut des Auftrags, Frage «Wie ist es gerade für dich?»; Wörter in `type-body-sm`, weil «Vorwürfe» in `type-body` bei 1280 px den Umriss berührte. Schmale Darstellung schon unter 800 px Containerbreite (Auftrag: 560 px), weil darunter Wörter über den Umriss ragten | Abschnitt 4 |
-| Anspannungskurve | Beschriftungen mit Punkt, Stelle 4 «Es wird wieder ruhiger.»; Beschriftungen an der Kurve erst ab 800 px Containerbreite, weil die längere Beschriftung sonst aus der Figur ragte | Abschnitt 4 |
+| Anspannungskurve | Beschriftungen mit Punkt, Stelle 4 «Es wird wieder ruhiger.»; Beschriftungen an der Kurve erst ab 800 px Containerbreite, weil die längere Beschriftung sonst aus der Figur ragte. Seit 1i: Stelle 4 «Es kann wieder ruhiger werden.», Beschriftungen ab 960 px (Abschnitt «Korrektur Etappe 1i») | Abschnitt 4 |
 | Momentaufnahmen | ersetzt das Pendel, Zeichnung und Texte im Wortlaut des Auftrags; vorläufig `data-visual-type` und Planformat «figure» statt «illustration», weil das Gate r4-6 eine eigene SVG-Zeichnung als Illustration nicht zulässt (Entscheid auf Rückfrage). Seit Build r4-7 (Gate-Korrektur 10.10.2026) als «illustration» geführt | Abschnitt 4 und 7 |
 | Annahmen | keine Abbildung mehr; Kernaussage und Kurztext als Absätze, sieben Paare als Begriffsliste, Quellen als Zeile; die Liste steht vor dem Zwischentitel «Wenn Sie sich wegen Suizid sorgen», damit sie nicht unter diesem Titel steht; Suizid-Absatz und Verweis im Text unverändert | Abschnitt 4 |
 | Bedeutungsschleife | je Station drei Zeilen; Felder mit `radius-md` (Entscheid auf Rückfrage nach Audit BS-4, Variante B; Karten-Token wäre `radius-none`); Kreisanordnung bis 640 px, Liste unter 700 px (Pfeile oben) | Abschnitt 5 |
 | Zwei Sichten, DEAR | gleiche Oberkante für beide Sichten (Klasse `puk-vis-compare__col--b` entfällt); DEAR mit «1» bis «4» | Abschnitt 5 und 6 |
 | `visualPlan` | `resonance` für die sechs Darstellungen; Einträge Eisberg, Momentaufnahmen und Annahmen im Wortlaut des Auftrags | Abschnitt 7 |
 | Abgleich | neue Statuswerte «umformuliert (Bildsprache, 1h)» und «neu (1h)», «verschoben» auch für Sätze in die Vertiefung (oben); `verstehen` 21 Zeilen, `beziehungen` 5 Zeilen, 4 Zeilen ohne Bestandssatz. Nr. 74 («Zwischen den beiden Listen besteht keine Zuordnung.») entfällt: Die Kurzbeschreibung im Wortlaut von 1H nennt das nicht mehr | Abschnitt 8 |
+
+## Korrektur Etappe 1i: Entscheide zur vierten Prüfrunde und Umsetzung (10.10.2026)
+
+Grundlage: `KORREKTUR-ETAPPE-1I.md` (Entscheide der Fachstelle vom 10.10.2026 und Entscheide von Claude zu Struktur und Technik, Abschnitt 1).
+
+| Thema | Umsetzung | Quelle |
+| --- | --- | --- |
+| Vorsichtige Formulierungen | acht Stellen im Wortlaut des Auftrags, jede an allen Stellen gleich (Abschnittstext, Liste, Kurzbeschreibung `p.puk-sr`, Plan): «Wenn das geschieht, ist es keine Absicht.», «Abstand, Schutz und professionelle Hilfe», «häufig fast alles um», «Es kann wieder ruhiger werden.» (3× auf der Seite, 1× im Plan), «und lässt sich aus der Diagnose nicht vorhersagen», Eisberg-Vertiefung, «kann zum neuen Ereignis werden», Wortstellung im Suizid-Absatz; der Verweis im Text bleibt an seiner Stelle | Abschnitt 3 |
+| Anspannungskurve | Die längere Beschriftung an Stelle 4 hat bei 1280 px Platz (endet 90 px vor dem Rand der Figur, überdeckt die Kurve nicht). Zwischen 800 und 960 px Containerbreite ragte sie aus der Figur (900 px Fenster: 48 px, Seite 12 px Überlauf). Deshalb Beschriftungen erst ab 960 px Containerbreite, darunter Nummern und Liste | Abschnitt 3, Prüfauftrag |
+| `verstehen`, Annahmen und Abbildungen | Annahme 3 «nicht schuld» mit verbindendem Satz; Annahme 5 «Die Abgrenzung gehört in eine fachliche Abklärung.»; Stelle 4 mit «Der Wunsch nach Kontakt oder Abstand darf sich verändern.»; «Momentaufnahmen» mit Zeile «Sätze, die Angehörige hören können:» (`.bl-scene__lead`, über die ganze Szene, `type-body-sm`), rechter Satz im Bestandswortlaut, zwei Sätze in der Vertiefung | Abschnitt 4 |
+| `beziehungen` | Verantwortung für Verlauf und Beziehung getrennt; zwei Sätze in «Unterstützung verteilen» | Abschnitt 5 |
+| `grenzen` | Satz in «Geld und Unterstützung»; `konsequenz` Absatz 1 neu und neuer Absatz vor «Ein Schuldgefühl …»; «denn sie zeigen» (P4-S-5); «niedriger» (P4-S-6); Verweissatz in `dear` mit Link auf `verstehen.html#anspannung` (P4-W2-4) | Abschnitt 6 |
+| `index` › `beratung` | fünf Sätze im Wortlaut der Fachstelle, mit Ort (P4-F-19) | Abschnitt 7 |
+| Verweise | Abschnittstitel in «…», Anführungszeichen ausserhalb des Links; Linkziele gleich (P4-S-3) | Abschnitt 8 |
+| `visualPlan` | `v-vs-anspannung` › `statement` Stelle 4; `v-vs-bewertungen` › `goal`, `source`, `statement` im Wortlaut des Auftrags (P4-V-1) | Abschnitt 9 |
+| Abgleich | Status «umformuliert (Prüfrunde 4, 1i)»; `verstehen` 29 Zeilen und 2 Zusatzzeilen, `beziehungen` 6 Zeilen und 2 Zusatzzeilen, `grenzen` 24 Zeilen geändert, `index` keine. Zurückgekehrte Sätze: b162, b163, g51, g79, g369, g228, g261, g627, v17, v49, v119, v126, v330, v377, v381; P4-F-5 (v89, v246, v289), P4-F-12 (v78), P4-F-13 (v61). P4-W1-9: v371 und v390 nennen die entfallenen Teile, g208 «verschoben», v138 und v140 bis v146 nennen die Quellenzeile, Nr. 546 der Bestandszeile aus `wenn-worte-treffen` zugeordnet. Bemerkungen zitieren alte Fassungen ohne «…» («bis 1h ohne «kann»»), weil das Prüfskript jedes Zitat auf den Seiten oder im Bestand sucht | Abschnitt 9 |

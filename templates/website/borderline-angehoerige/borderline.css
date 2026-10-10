@@ -54,9 +54,10 @@
 .bl-kurve__n--4{left:83.2%;top:54%}
 .puk-vis-build__n.bl-kurve__ansatz{outline:var(--border-width-strong) solid var(--puk-blue-100);outline-offset:var(--space-1)}
 .bl-fig--kurve .bl-fig__label{white-space:nowrap}
-/* Korrektur 1h: Die längere Beschriftung «Es wird wieder ruhiger.» an Stelle 4 hat erst ab 800 px Containerbreite rechts der Zeichnung Platz;
-   darunter ragte sie aus der Figur (768 px Fensterbreite: 16 px Überlauf). Dann gelten Nummern und Liste wie schmal. */
-@container (max-width:800px){.bl-fig--kurve .bl-fig__label{display:none}}
+/* Korrektur 1h/1i: Die Beschriftung an Stelle 4 («Es kann wieder ruhiger werden.», seit 1i) hat erst ab 960 px Containerbreite
+   rechts der Zeichnung Platz; darunter ragte sie aus der Figur (900 px Fensterbreite: 48 px, Seite 12 px Überlauf; 1h: 800 px).
+   Dann gelten Nummern und Liste wie schmal. */
+@container (max-width:960px){.bl-fig--kurve .bl-fig__label{display:none}}
 .bl-fig--kurve .bl-kurve__label--1{left:15.5%;top:91.4%;transform:translateX(-50%)}
 .bl-fig--kurve .bl-kurve__label--2{right:61.4%;top:49.7%;transform:translateY(-50%)}
 .bl-fig--kurve .bl-kurve__label--3{left:61.3%;bottom:88.6%;transform:translateX(-50%)}
@@ -121,3 +122,7 @@
   .bl-eis__w,.bl-eis__w--10{position:static;transform:none;white-space:normal;font:var(--type-body)}
   .bl-eis__frage{position:static;max-width:none;margin-top:var(--space-5)}
 }
+
+/* Momentaufnahmen (Korrektur 1i, P4-F-4): Zeile über den beiden Sätzen, wer spricht; über die ganze Breite der Szene,
+   schmal (eine Spalte) steht sie ebenfalls über den Sätzen. Ohne Rahmen, Farbe und Schrift über Tokens. */
+.bl-scene__lead{grid-column:1/-1;margin:0 0 var(--space-2);font:var(--type-body-sm);color:var(--text-default)}

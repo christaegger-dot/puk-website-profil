@@ -2,11 +2,13 @@
 
 Neue Seite: `content/index.html` · Bestand: `/` (Startseite), `/selbsttest`, `/wegweiser` (Branch `borderline-bestand`, `bestand/borderline-angehoerige/texte/`). Statuswerte und Zählweise: `README.md` in diesem Ordner.
 
-**Stand 10.10.2026, Korrektur Etappe 1h (bauende Sitzung).** Eine Tabelle für jeden Satz der alten Seite und der zugeordneten Handouts (Korrektur 1b, E). Sie ersetzt die abschnittsweisen Tabellen vom 08.10.2026 und den Abschnitt «Satz für Satz» der ersten Korrektur; wo diese sich widersprachen, gilt die Zeile hier. Statuswerte, Zählweise und Skripte: `README.md`.
+**Stand 10.10.2026, Korrektur Etappe 1i (bauende Sitzung).** Eine Tabelle für jeden Satz der alten Seite und der zugeordneten Handouts (Korrektur 1b, E). Sie ersetzt die abschnittsweisen Tabellen vom 08.10.2026 und den Abschnitt «Satz für Satz» der ersten Korrektur; wo diese sich widersprachen, gilt die Zeile hier. Statuswerte, Zählweise und Skripte: `README.md`.
 
 **Korrektur 1c:** Zeilen zu K-1 bis K-5 nachgeführt; Status und Bemerkungen der Stichprobe aus den Belegen der dritten Prüfrunde (Abschnitt 4) berichtigt.
 
 **Korrektur 1d:** Der Zuständigkeitsverweis in der Fusszeile hat einen neuen Wortlaut (D-1, Nr. 37 und 247).
+
+**Korrektur 1i:** Der Text der Fachstelle in `beratung` steht in fünf Sätzen und nennt den Ort (`KORREKTUR-ETAPPE-1I.md`, Abschnitt 7; P4-F-19, P4-S-6). Die Zeilen dazu stehen in `grenzen.md` (Nr. 115 und 247); auf dieser Seite ist keine Zeile betroffen.
 
 **Zählung:** 255 Sätze des Bestands, davon 6 übernommen, 2 gekürzt, 0 zusammengeführt, 12 verschoben, 5 geändert, 229 entfällt, 1 Bezeichnung.
 
