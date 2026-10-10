@@ -609,7 +609,7 @@
           "sectionId": "anerkennen",
           "goal": "Verstehen, dass Anerkennen nicht Zustimmen heisst",
           "format": "illustration",
-          "statement": "Zwei gleich grosse Tassen Tee stehen sich auf einem Tisch gegenüber. Über der linken steht der Satz «Du verstehst mich sowieso nicht.», über der rechten «Vielleicht verstehe ich nicht alles. Wenn du möchtest, sag mir, was dir gerade besonders wichtig ist.».",
+          "statement": "Zwei gleich grosse Tassen Tee stehen nebeneinander auf einem Tisch. Über der linken steht der Satz «Du verstehst mich sowieso nicht.», über der rechten «Vielleicht verstehe ich nicht alles. Wenn du möchtest, sag mir, was dir gerade besonders wichtig ist.».",
           "understood": "Wie Anerkennen ohne Zustimmen klingt: Auf einen harten Satz folgt eine Antwort, die das Gefühl ernst nimmt, ohne die Deutung zu übernehmen oder sich zu verteidigen. Zwei gleiche Tassen auf einem Tisch zeigen zwei gleichwertige Menschen im selben Gespräch.",
           "source": "Eigene didaktische Darstellung nach den Handouts «Zuhören ohne Zustimmen» und «Wenn Worte treffen»; Bezug: Fruzzetti (2006); Mason und Kreger (2014)",
           "alternative": "Sätze als HTML-Text über der Zeichnung, schmal untereinander; Kurzbeschreibung über aria-describedby",
@@ -626,7 +626,7 @@
           "statement": "–",
           "source": "–",
           "alternative": "–",
-          "reason": "Text ist klarer (Bauauftrag 2b, Abschnitt 2e): «Pause statt Streit» (Stabil, Warnstufe, Eskalation) als Begriffsliste mit Verweis auf die Anspannungskurve auf `verstehen`; keine zweite Kurve. «Eher jetzt» und «Eher später» als zwei kurze Listen.",
+          "reason": "Text ist klarer (Bauauftrag 2b, Abschnitt 2e): «Pause statt Streit» mit den drei Sätzen der Anspannungskurve («Wir können sprechen.», «Es wird eng.», «Es ist gerade zu viel.») als Begriffsliste, mit Verweis auf die Anspannungskurve auf `verstehen` (Korrektur 2b-K, P2b-F-5); keine zweite Kurve. «Eher jetzt» und «Eher später» als zwei kurze Listen.",
           "approvalStatus": "ausstehend"
         },
         {
@@ -726,7 +726,7 @@
           "statement": "–",
           "source": "–",
           "alternative": "–",
-          "reason": "Text ist klarer: Beispielsätze als Begriffsliste, die drei Schritte aus dem Handout «Krisenkommunikation» als nummerierte Liste. Anerkennen und die Grenze in drei Teilen sind auf `kommunizieren` verlinkt statt wiederholt.",
+          "reason": "Text ist klarer: Handlungsanleitung für Bedrohung am Anfang, der Verweis im Text folgt direkt danach (Korrektur 2b-K, P2b-F-1). Beispielsätze als Begriffsliste. Wenn ein Gespräch kippt: der Standardsatz und die Ausstiegssätze aus dem Handout «Krisenkommunikation»; die Schritte sind auf `kommunizieren` verlinkt statt als zweite Schrittfolge wiederholt (P2b-F-8), ebenso Anerkennen.",
           "approvalStatus": "ausstehend"
         },
         {
@@ -762,7 +762,7 @@
           "statement": "–",
           "source": "–",
           "alternative": "–",
-          "reason": "Text ist klarer: Sicherheitshinweis, «Für die betroffene Person» und «Für Sie» im Lesefluss; Nachbesprechung, Vertrauen, drei mögliche Anliegen und Früherkennung als Vertiefung (Akkordeon mit vier Einträgen).",
+          "reason": "Text ist klarer: Sicherheitshinweis als Handlungsanleitung mit Verweis im Text vor den Vertiefungen (Korrektur 2b-K, P2b-F-1), «Für die betroffene Person» und «Für Sie» im Lesefluss; Nachbesprechung, Vertrauen, drei mögliche Anliegen und Früherkennung als Vertiefung (Akkordeon mit vier Einträgen).",
           "approvalStatus": "ausstehend"
         },
         {
