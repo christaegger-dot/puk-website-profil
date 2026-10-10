@@ -2,7 +2,7 @@
 
 Neue Seite: `content/beziehungen.html` · Bestand: `/verstehen/beziehungen` (keine Handouts zugeordnet). Dazu zwei Punkte aus `/verstehen` («Wenn Nähe und Belastung zusammenkommen»). Statuswerte und Zählweise: `README.md`.
 
-**Stand 10.10.2026, Korrektur Etappe 1i (bauende Sitzung).** Eine Tabelle für jeden Satz der alten Seite und der zugeordneten Handouts (Korrektur 1b, E). Sie ersetzt die abschnittsweisen Tabellen vom 08.10.2026 und den Abschnitt «Satz für Satz» der ersten Korrektur; wo diese sich widersprachen, gilt die Zeile hier. Statuswerte, Zählweise und Skripte: `README.md`.
+**Stand 10.10.2026, Korrektur Etappe 1j (bauende Sitzung).** Eine Tabelle für jeden Satz der alten Seite und der zugeordneten Handouts (Korrektur 1b, E). Sie ersetzt die abschnittsweisen Tabellen vom 08.10.2026 und den Abschnitt «Satz für Satz» der ersten Korrektur; wo diese sich widersprachen, gilt die Zeile hier. Statuswerte, Zählweise und Skripte: `README.md`.
 
 **Korrektur 1c:** Zeilen zu K-1 bis K-5 nachgeführt; Status und Bemerkungen der Stichprobe aus den Belegen der dritten Prüfrunde (Abschnitt 4) berichtigt.
 
@@ -13,6 +13,8 @@ Neue Seite: `content/beziehungen.html` · Bestand: `/verstehen/beziehungen` (kei
 **Korrektur 1h:** Bedeutungsschleife (Abbildung 1): Jede Station zeigt oben, wer handelt, in der Mitte den Beispielsatz und unten «Station n · …» (`KORREKTUR-ETAPPE-1H.md`, Abschnitt 5). Nr. 63, 140, 141, 144 und 147 haben deshalb den Status «umformuliert (Bildsprache, 1h)».
 
 **Korrektur 1i:** Entscheide zur vierten Prüfrunde (`KORREKTUR-ETAPPE-1I.md`, Abschnitte 3, 5, 8 und 9): Rücksprung «kann zum neuen Ereignis werden» (P4-F-17), Verantwortung für Verlauf und Beziehung getrennt (P4-F-3, Nr. 209), zwei gekürzte Sätze zurück in «Unterstützung verteilen» (P4-F-6, Nr. 162 und 163), Abschnittstitel in Verweisen in «…» (P4-S-3, Nr. 239 und 247). Status «umformuliert (Prüfrunde 4, 1i)», der frühere Status steht in der Bemerkung («bis 1h: …»). Der Rücksprung hat keine Bestandszeile.
+
+**Korrektur 1j:** Die Fachstelle hat Etappe 1 am 10.10.2026 fachlich freigegeben (`KORREKTUR-ETAPPE-1J.md`). Bemerkungen mit «Prüfbedarf» tragen den Vermerk «erledigt: Freigabe Etappe 1 durch die Fachstelle, 10.10.2026 (1j)»; der Prüfbedarf unten bleibt als Verlauf stehen.
 
 **Zählung:** 233 Sätze des Bestands, davon 23 übernommen, 11 gekürzt, 7 zusammengeführt, 23 verschoben, 0 geändert, 61 umformuliert (einfache Sprache, 1e), 3 umformuliert (einfache Sprache, 1f), 5 umformuliert (Bildsprache, 1h), 3 umformuliert (Prüfrunde 4, 1i), 63 entfällt, 34 Bezeichnung. Dazu 16 Zeilen ohne Bestandssatz: 13 neu (1e), 1 umformuliert (einfache Sprache, 1e), 2 umformuliert (Prüfrunde 4, 1i).
 
@@ -158,7 +160,7 @@ Neue Seite: `content/beziehungen.html` · Bestand: `/verstehen/beziehungen` (kei
 | 130 | `/verstehen/beziehungen` › Plötzliche Entfernung oder eine andere Erinnerung hat nicht nur eine Erklärung | Dissoziation | Bezeichnung | – | – | Vorschautexte der Akkordeons |
 | 131 | `/verstehen/beziehungen` › Plötzliche Entfernung oder eine andere Erinnerung hat nicht nur eine Erklärung | Verstummen, Unwirklichkeitsgefühle oder abweichende Erinnerungen können viele Gründe haben. | umformuliert (einfache Sprache, 1e) | Wenn jemand plötzlich verstummt, abwesend wirkt oder sich anders erinnert als Sie, kann das viele Gründe haben. | beziehungen#verstaerker | `verstaerker`, Station 4 (Korrektur 1c, K-5); bis 1d: übernommen (wörtlich); «Unwirklichkeitsgefühle» wird «abwesend wirkt», also das, was Angehörige sehen; das Gefühl selbst beschreibt der nächste Satz («wie abgetrennt oder nicht ganz da») |
 | 132 | `/verstehen/beziehungen` › Plötzliche Entfernung oder eine andere Erinnerung hat nicht nur eine Erklärung | Dissoziation ist eine mögliche Erklärung, aber keine, die Angehörige aus dem Verhalten allein feststellen können. | umformuliert (einfache Sprache, 1e) | Ein möglicher Grund ist eine Dissoziation: ein Gefühl, wie abgetrennt oder nicht ganz da zu sein. Ob das zutrifft, können Sie aus dem Verhalten allein nicht feststellen. | beziehungen#verstaerker | Station 4 (Korrektur 1b, B-2); bis 1d: übernommen |
-| 133 | `/verstehen/beziehungen` › Plötzliche Entfernung oder eine andere Erinnerung hat nicht nur eine Erklärung | Hilfreiche Einordnung: Weder beweist eine abweichende Erinnerung absichtliches Lügen, noch macht der Hinweis auf Dissoziation jede Aussage automatisch zutreffend. | entfällt | – | – | Kürzung W2-2 (09.10.2026). Der Satz danach steht in `verstaerker`, Station 4 («Kommen solche Erfahrungen wiederholt vor, gehören sie in die Behandlung.»). Prüfbedarf W1: ob auch dieser Satz zurück soll |
+| 133 | `/verstehen/beziehungen` › Plötzliche Entfernung oder eine andere Erinnerung hat nicht nur eine Erklärung | Hilfreiche Einordnung: Weder beweist eine abweichende Erinnerung absichtliches Lügen, noch macht der Hinweis auf Dissoziation jede Aussage automatisch zutreffend. | entfällt | – | – | Kürzung W2-2 (09.10.2026). Der Satz danach steht in `verstaerker`, Station 4 («Kommen solche Erfahrungen wiederholt vor, gehören sie in die Behandlung.»). Prüfbedarf W1: ob auch dieser Satz zurück soll; erledigt: Freigabe Etappe 1 durch die Fachstelle, 10.10.2026 (1j) |
 | 134 | `/verstehen/beziehungen` › Plötzliche Entfernung oder eine andere Erinnerung hat nicht nur eine Erklärung | Wiederkehrende Erfahrungen gehören in die Behandlung. | umformuliert (einfache Sprache, 1e) | Kommen solche Erfahrungen wiederholt vor, gehören sie in die Behandlung. | beziehungen#verstaerker | Station 4, «Was Sie tun können» (Korrektur 1b, B-2); bis 1d: übernommen (wörtlich) |
 | 135 | `/verstehen/beziehungen` › Plötzliche Entfernung oder eine andere Erinnerung hat nicht nur eine Erklärung | 04 · Wechselwirkung | Bezeichnung | – | – | Kicker |
 | 136 | `/verstehen/beziehungen` › Beide versuchen etwas Verständliches — und verfehlen sich | Eine Schwester sagt einen Besuch ab, weil sie erschöpft ist. | übernommen | wörtlich | beziehungen#schleife | `schleife`, nach «Ein erfundenes Beispiel:» (Korrektur 1e; bis 1d mit anderer Einleitung) |
@@ -276,6 +278,8 @@ Neue Seite: `content/beziehungen.html` · Bestand: `/verstehen/beziehungen` (kei
 | 248 | neue Seite › `verantwortung` | – | neu (1e) | Holen Sie sich selbst Unterstützung, zum Beispiel bei der Beratung der Fachstelle Angehörigenarbeit. | beziehungen#verantwortung | «Was Sie tun können», Link auf `index` › `beratung` wie auf `grenzen` › `kontakt` |
 
 ## Prüfbedarf für W1 (Stand 09.10.2026, Korrektur 1e)
+
+**Erledigt am 10.10.2026:** Die vierte Prüfrunde hat den offenen Prüfbedarf in die Fragen P4-F-1 bis P4-F-21 übernommen. Alle sind entschieden (Korrektur 1i), und die Fachstelle hat Etappe 1 fachlich freigegeben (Korrektur 1j). Was für Etappe 2 vorgemerkt ist, bleibt vorgemerkt. Die Liste bleibt als Verlauf stehen.
 
 Die Seite ist nach der fachlichen Durchsicht der Fachstelle in einfacher Sprache neu gefasst (`KORREKTUR-ETAPPE-1E.md`). Die Texte stehen im Wortlaut des Auftrags; nächster Schritt laut Auftrag: Die Fachstelle liest die Seite.
 

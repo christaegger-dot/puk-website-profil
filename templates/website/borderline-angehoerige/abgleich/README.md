@@ -1,6 +1,6 @@
 # Abgleich · Borderline-Website, Etappe 1
 
-Beleg für W1 nach UMBAUPLAN, Abschnitt 5: Jeder Satz des Bestands ist übernommen, gekürzt, zusammengeführt, verschoben, geändert oder mit Grund entfallen. Erstellt von der bauenden Sitzung am 08.10.2026, nachgeführt am 09.10.2026 (Korrektur Etappe 1, 1b, 1c, 1d, 1e, 1f, 1g, 1h und 1i). Das ist ein Arbeitsstand, keine Prüfung.
+Beleg für W1 nach UMBAUPLAN, Abschnitt 5: Jeder Satz des Bestands ist übernommen, gekürzt, zusammengeführt, verschoben, geändert oder mit Grund entfallen. Erstellt von der bauenden Sitzung am 08.10.2026, nachgeführt am 09.10.2026 (Korrektur Etappe 1, 1b, 1c, 1d, 1e, 1f, 1g, 1h, 1i und 1j). Das ist ein Arbeitsstand, keine Prüfung.
 
 - `index.md` · `/`, `/selbsttest`, `/wegweiser`
 - `verstehen.md` · `/verstehen` ohne Diagnostik-Teil, sechs Handouts; der Teil «Materialien zum Vertiefen» (Z. 277–396) steht seit Korrektur 1c am Ende der Tabelle (Nr. 474–540); seit Korrektur 1f mit zwei Zeilen für Sätze der neuen Seite ohne Bestandssatz am Ende (Nr. 541–542)
@@ -22,7 +22,7 @@ Je Seite eine Tabelle «Satz für Satz» mit jedem Satz der alten Seite und der 
 - **Ort neu:** `seite#abschnitt` (Abschnitts-ID der gebauten Seite, `kopf`, `kapitel`), `Fusszeile` oder «seite (Etappe 2)».
 - **Zustandekommen:** Ein Skript der bauenden Sitzung zerlegt den Bestand in Sätze und schlägt je Satz den ähnlichsten Satz im Zielabschnitt vor. Status, Zielabschnitt und jede schwache Zuordnung sind von Hand gesetzt und geprüft. Ob der genannte Satz die Aussage wirklich trägt, ist Gegenstand der Prüfung.
 
-**Prüfung der Tabellen:** `node abgleich/pruefe-abgleich.mjs`. Ergebnis am 10.10.2026 nach Korrektur 1i: **1763 Zeilen, 0 ohne Fundstelle** (1739 Bestandszeilen, 23 Zeilen ohne Bestandssatz – 16 auf `beziehungen`, 5 auf `verstehen`, 2 auf `grenzen` – und auf `verstehen` 1 Zeile mit Bestandssatz aus dem Handout `wenn-worte-treffen`, das sonst keiner Seite der Etappe 1 zugeordnet ist). Das Skript liest auch Text nur für Screenreader (`.puk-sr`, Kurzbeschreibungen der Bildlegenden), denn er steht auf der Seite. Geprüft wird je Zeile:
+**Prüfung der Tabellen:** `node abgleich/pruefe-abgleich.mjs`. Ergebnis am 10.10.2026 nach Korrektur 1j: **1763 Zeilen, 0 ohne Fundstelle** (1739 Bestandszeilen, 23 Zeilen ohne Bestandssatz – 16 auf `beziehungen`, 5 auf `verstehen`, 2 auf `grenzen` – und auf `verstehen` 1 Zeile mit Bestandssatz aus dem Handout `wenn-worte-treffen`, das sonst keiner Seite der Etappe 1 zugeordnet ist). Das Skript liest auch Text nur für Screenreader (`.puk-sr`, Kurzbeschreibungen der Bildlegenden), denn er steht auf der Seite. Geprüft wird je Zeile:
 
 - Den Ort gibt es.
 - Die neue Fassung steht dort wörtlich.
@@ -270,3 +270,14 @@ Grundlage: `KORREKTUR-ETAPPE-1I.md` (Entscheide der Fachstelle vom 10.10.2026 un
 | Verweise | Abschnittstitel in «…», Anführungszeichen ausserhalb des Links; Linkziele gleich (P4-S-3) | Abschnitt 8 |
 | `visualPlan` | `v-vs-anspannung` › `statement` Stelle 4; `v-vs-bewertungen` › `goal`, `source`, `statement` im Wortlaut des Auftrags (P4-V-1) | Abschnitt 9 |
 | Abgleich | Status «umformuliert (Prüfrunde 4, 1i)»; `verstehen` 29 Zeilen und 2 Zusatzzeilen, `beziehungen` 6 Zeilen und 2 Zusatzzeilen, `grenzen` 24 Zeilen geändert, `index` keine. Zurückgekehrte Sätze: b162, b163, g51, g79, g369, g228, g261, g627, v17, v49, v119, v126, v330, v377, v381; P4-F-5 (v89, v246, v289), P4-F-12 (v78), P4-F-13 (v61). P4-W1-9: v371 und v390 nennen die entfallenen Teile, g208 «verschoben», v138 und v140 bis v146 nennen die Quellenzeile, Nr. 546 der Bestandszeile aus `wenn-worte-treffen` zugeordnet. Bemerkungen zitieren alte Fassungen ohne «…» («bis 1h ohne «kann»»), weil das Prüfskript jedes Zitat auf den Seiten oder im Bestand sucht | Abschnitt 9 |
+
+## Korrektur Etappe 1j: Freigabe eintragen (10.10.2026)
+
+Grundlage: `KORREKTUR-ETAPPE-1J.md`. Die Fachstelle hat Etappe 1 am 10.10.2026 fachlich freigegeben (Stand `540c37d`); alle 21 Fragen P4-F-1 bis P4-F-21 sind entschieden.
+
+| Thema | Umsetzung | Quelle |
+| --- | --- | --- |
+| Quellenzeile der Ursachen | `verstehen` › `borderline`: NICE CG78 (2009) vor Linehan (1993); im Abgleich Nr. 34 bis 36 mit neuer Fassung, Status bleibt «gekürzt», Bemerkung «; NICE CG78 ergänzt (1j, P4-F-16)» | Abschnitte 3 und 4 |
+| Freigaben im Plan | `approvalStatus` «freigegeben» bei den sechs Abbildungen; Platzhalter, `editorialStatus` und Zeilen mit `format` «text» unverändert | Abschnitt 4 |
+| Prüfbedarf | Jede Bemerkung mit «Prüfbedarf» in den vier Tabellen endet mit «; erledigt: Freigabe Etappe 1 durch die Fachstelle, 10.10.2026 (1j)» (`verstehen` 11, `beziehungen` 1, `grenzen` 2, `index` 0 Zeilen). Unter jeder Überschrift «Prüfbedarf für W1 (Stand …)» steht als erster Absatz der Vermerk «Erledigt am 10.10.2026: …»; die Liste bleibt als Verlauf | Abschnitt 4 |
+| Kopfnotizen | «Korrektur 1j: …» und «Stand … Korrektur Etappe 1j» in allen vier Tabellen | Abschnitt 4 |

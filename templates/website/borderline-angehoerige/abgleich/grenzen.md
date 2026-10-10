@@ -2,7 +2,7 @@
 
 Neue Seite: `content/grenzen.html` · Bestand: `/grenzen`; Handouts `4-arten-von-grenzen`, `bruecke-gelaender`, `dear`, `grenzen-erkennen`, `grenzen-spickzettel`, `grenzen-ohne-eskalation`, `lmk`, `spiegeln-statt-aufsaugen`; zwei Szenarien aus `/uebungen`. Statuswerte und Zählweise: `README.md`.
 
-**Stand 10.10.2026, Korrektur Etappe 1i (bauende Sitzung).** Eine Tabelle für jeden Satz der alten Seite und der zugeordneten Handouts (Korrektur 1b, E). Sie ersetzt die abschnittsweisen Tabellen vom 08.10.2026 und den Abschnitt «Satz für Satz» der ersten Korrektur; wo diese sich widersprachen, gilt die Zeile hier. Statuswerte, Zählweise und Skripte: `README.md`.
+**Stand 10.10.2026, Korrektur Etappe 1j (bauende Sitzung).** Eine Tabelle für jeden Satz der alten Seite und der zugeordneten Handouts (Korrektur 1b, E). Sie ersetzt die abschnittsweisen Tabellen vom 08.10.2026 und den Abschnitt «Satz für Satz» der ersten Korrektur; wo diese sich widersprachen, gilt die Zeile hier. Statuswerte, Zählweise und Skripte: `README.md`.
 
 **Korrektur 1c:** Zeilen zu K-1 bis K-5 nachgeführt; Status und Bemerkungen der Stichprobe aus den Belegen der dritten Prüfrunde (Abschnitt 4) berichtigt.
 
@@ -13,6 +13,8 @@ Neue Seite: `content/grenzen.html` · Bestand: `/grenzen`; Handouts `4-arten-von
 Ab 1g ist DEAR Abbildung 1. Ältere Bemerkungen nennen sie Abbildung 2.
 
 **Korrektur 1i:** Entscheide zur vierten Prüfrunde (`KORREKTUR-ETAPPE-1I.md`, Abschnitte 3, 6, 7 und 9): gekürzte Sätze zurück (P4-F-6: Nr. 51, 79, 369, 228, 261), «Eine Grenze gilt auch, wenn die andere Person nicht zustimmt.» (P4-F-11, Nr. 627), Wortstellung im Suizid-Absatz auf `verstehen` (P4-F-9, Nr. 646), Ort der Beratung auf `index` (P4-F-19, Nr. 115 und 247), Verweis im Kopf (P4-S-3), «denn sie zeigen» (P4-S-5), «niedriger» (P4-S-6). Nr. 208 ist «verschoben» (P4-W1-9). Status «umformuliert (Prüfrunde 4, 1i)», der frühere Status steht in der Bemerkung («bis 1h: …»). Neu ohne Bestandszeile: der Verweissatz in `dear` auf `verstehen` › «Wenn die Anspannung steigt» (P4-W2-4).
+
+**Korrektur 1j:** Die Fachstelle hat Etappe 1 am 10.10.2026 fachlich freigegeben (`KORREKTUR-ETAPPE-1J.md`). Bemerkungen mit «Prüfbedarf» tragen den Vermerk «erledigt: Freigabe Etappe 1 durch die Fachstelle, 10.10.2026 (1j)»; der Prüfbedarf unten bleibt als Verlauf stehen.
 
 **Zählung:** 710 Sätze des Bestands, davon 120 übernommen, 54 gekürzt, 57 zusammengeführt, 65 verschoben, 10 geändert, 54 umformuliert (einfache Sprache, 1f), 12 umformuliert (einfache Sprache, 1g), 23 umformuliert (Prüfrunde 4, 1i), 304 entfällt, 11 Bezeichnung. Dazu 2 Zeilen ohne Bestandssatz: 1 umformuliert (einfache Sprache, 1f), 1 neu (1f).
 
@@ -146,7 +148,7 @@ Ab 1g ist DEAR Abbildung 1. Ältere Bemerkungen nennen sie Abbildung 2.
 | 118 | `/grenzen` › Welche Grenzen zuerst? | Beginnen Sie mit dem Schutz, den Sie gerade am dringendsten brauchen. | übernommen | Beginnen Sie mit dem Schutz, den Sie am dringendsten brauchen. | grenzen#reihenfolge | `reihenfolge` |
 | 119 | `/grenzen` › Welche Grenzen zuerst? | Wenn eine Grenze nicht umsetzbar ist, sind Anpassung und Unterstützung sinnvoll – kein Selbstvorwurf. | zusammengeführt | Lässt sich eine Grenze nicht umsetzen, holen Sie Unterstützung und passen sie an. | grenzen#konsequenz | `konsequenz`: «Lässt sich eine Grenze nicht umsetzen, holen Sie Unterstützung und passen sie an. Das ist kein Versagen.» |
 | 120 | `/grenzen` › Welche Grenzen zuerst? | Das folgende Raster ist eine redaktionelle Orientierungshilfe, keine fachliche Einstufung. | gekürzt | Die Reihenfolge ist eine Orientierung, keine fachliche Einstufung. | grenzen#reihenfolge | `reihenfolge`: «Die Reihenfolge ist eine Orientierung, keine fachliche Einstufung.» |
-| 121 | `/grenzen` › Welche Grenzen zuerst? | Dringlichkeit und Belastung können sich je nach Situation verändern. | entfällt | – | – | Kürzung W2-2 (09.10.2026). Prüfbedarf W1 |
+| 121 | `/grenzen` › Welche Grenzen zuerst? | Dringlichkeit und Belastung können sich je nach Situation verändern. | entfällt | – | – | Kürzung W2-2 (09.10.2026). Prüfbedarf W1; erledigt: Freigabe Etappe 1 durch die Fachstelle, 10.10.2026 (1j) |
 | 122 | `/grenzen` › Welche Grenzen zuerst? | Bedrohung oder Gewalt | zusammengeführt | Wenn Gewalt oder Bedrohung vorkommt | grenzen#gewalt | Kopf und `gewalt` (W2-4: Punkt «Bei Bedrohung oder Gewalt» in `reihenfolge` entfällt) |
 | 123 | `/grenzen` › Sofort schützen / Hilfe holen | Bei Bedrohung oder Gewalt setzen Sie eine Grenze nicht im direkten Gespräch durch. | zusammengeführt | Planen Sie Veränderungen wie eine Trennung möglichst mit einer geeigneten Fachstelle, und setzen Sie keine Grenze persönlich durch, die Sie gefährdet. | grenzen#gewalt | Kopf und `gewalt` (W2-4: Punkt «Bei Bedrohung oder Gewalt» in `reihenfolge` entfällt) |
 | 124 | `/grenzen` › Sofort schützen / Hilfe holen | Bringen Sie sich in Sicherheit und holen Sie Hilfe. | zusammengeführt | Bei akuter Gefahr oder Unsicherheit: Bringen Sie sich in Sicherheit und holen Sie Hilfe. | grenzen#gewalt | Kopf und `gewalt` (W2-4: Punkt «Bei Bedrohung oder Gewalt» in `reihenfolge` entfällt) |
@@ -675,7 +677,7 @@ Ab 1g ist DEAR Abbildung 1. Ältere Bemerkungen nennen sie Abbildung 2.
 | 647 | Handout `lmk` › Wenn Schutz wichtiger ist als ein Gespräch | Sie müssen keine unsichere Situation aushalten. | übernommen | wörtlich | grenzen#gewalt | `gewalt`, Schritt 1 |
 | 648 | Handout `lmk` › Wenn Schutz wichtiger ist als ein Gespräch | Quelle & Stand | entfällt | – | – | Handout-Rahmen (Textversion, Druckgrafik, Links, Stand, Freigabevermerke, Weiterführen) |
 | 649 | Handout `lmk` › Wenn Schutz wichtiger ist als ein Gespräch | Fachliche Bezugspunkte: NICE CG78 zu Wahlfreiheit und Angehörigeneinbezug mit Zustimmung; Opferhilfe Schweiz und Eidgenössisches Büro für die Gleichstellung von Frau und Mann (EBG) zu Schutz bei Gewalt. | gekürzt | Bezugspunkte: Opferhilfe Schweiz; Eidgenössisches Büro für die Gleichstellung von Frau und Mann (EBG); NICE CG78 (2009). | grenzen#gewalt | `gewalt`, Bezugspunkte |
-| 650 | Handout `lmk` › Wenn Schutz wichtiger ist als ein Gespräch | Eigene didaktische Orientierung der Fachstelle, keine standardisierte oder wissenschaftlich geprüfte Methode. | entfällt | – | – | Handout-Rahmen; Prüfbedarf W1: Das Handout `lmk` war im Bestand nicht freigegeben |
+| 650 | Handout `lmk` › Wenn Schutz wichtiger ist als ein Gespräch | Eigene didaktische Orientierung der Fachstelle, keine standardisierte oder wissenschaftlich geprüfte Methode. | entfällt | – | – | Handout-Rahmen; Prüfbedarf W1: Das Handout `lmk` war im Bestand nicht freigegeben; erledigt: Freigabe Etappe 1 durch die Fachstelle, 10.10.2026 (1j) |
 | 651 | Handout `lmk` › Wenn Schutz wichtiger ist als ein Gespräch | Vollbibliographie | entfällt | – | – | Handout-Rahmen (Textversion, Druckgrafik, Links, Stand, Freigabevermerke, Weiterführen) |
 | 652 | Handout `lmk` › Wenn Schutz wichtiger ist als ein Gespräch | Für Angehörige – Fachstelle Angehörigenarbeit, PUK Zürich – Ch. | entfällt | – | – | Handout-Rahmen (Textversion, Druckgrafik, Links, Stand, Freigabevermerke, Weiterführen) |
 | 653 | Handout `lmk` › Wenn Schutz wichtiger ist als ein Gespräch | Egger \| Entwurf – fachlich-redaktionelle Freigabe ausstehend \| Stand: 05.10.2026. | entfällt | – | – | Handout-Rahmen (Textversion, Druckgrafik, Links, Stand, Freigabevermerke, Weiterführen) |
@@ -739,6 +741,8 @@ Ab 1g ist DEAR Abbildung 1. Ältere Bemerkungen nennen sie Abbildung 2.
 | 711 | neue Seite › `konsequenz` | – | neu (1f) | Zum Beispiel: «Ich brauche jetzt Abstand. Ob und wann wir weiterreden, kläre ich später.» | grenzen#konsequenz | Beispielsatz zu «Was Sie tun können»; stammt aus dem Bestand, Handout `beispiel-dialog` (nicht in den Quellen dieser Tabelle); ähnlich Nr. 594 |
 
 ## Prüfbedarf für W1 (Stand 09.10.2026, Korrektur 1f)
+
+**Erledigt am 10.10.2026:** Die vierte Prüfrunde hat den offenen Prüfbedarf in die Fragen P4-F-1 bis P4-F-21 übernommen. Alle sind entschieden (Korrektur 1i), und die Fachstelle hat Etappe 1 fachlich freigegeben (Korrektur 1j). Was für Etappe 2 vorgemerkt ist, bleibt vorgemerkt. Die Liste bleibt als Verlauf stehen.
 
 1. **Schutz, Schritt 2** (Korrektur 1b, A-3): «Bei akuter Gefahr oder Unsicherheit: Bringen Sie sich in Sicherheit und holen Sie Hilfe.», danach der Verweis im Text mit dem geprüften Wortlaut, danach «Sie müssen die Dringlichkeit nicht allein einschätzen.»
 2. **Opferhilfe** (Korrektur 1c, K-1): Schritt 4 verlinkt «Opferhilfe Schweiz» auf `https://www.opferhilfe-schweiz.ch/de/`, ohne Nummer. Adresse geprüft durch Prüfung 1, 09.10.2026; die bauende Sitzung hat sie nach dem Auftrag nicht erneut aufgerufen.

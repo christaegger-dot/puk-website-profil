@@ -13,10 +13,10 @@ Gehört zur Website in diesem Ordner. Wer den Starter kopiert, übernimmt diese 
 
 | Stufe | Status | Datum | Geprüft durch | Ergebnis |
 | --- | --- | --- | --- | --- |
-| W1 Fachliche Prüfung | offen | 10.10.2026 | vierte Prüfrunde: eine Prüfsitzung (Claude, hat nicht gebaut); davor dritte Prüfrunde 09.10.2026 | Vorprüfung: 4 wichtig, 5 optional; 21 Fragen «Prüfbedarf für die Fachstelle» (P4-F-1 bis P4-F-21). Freigabe nur durch die Fachstelle. |
+| W1 Fachliche Prüfung | offen | 10.10.2026 | Fachstelle Angehörigenarbeit PUK (Freigabe Etappe 1); vierte Prüfrunde: eine Prüfsitzung (Claude, hat nicht gebaut) | Etappe 1 fachlich freigegeben (Abschnitt «Fachliche Freigabe der Fachstelle»); alle 21 Fragen P4-F-1 bis P4-F-21 entschieden. Offen, bis die Seiten von Etappe 2 geprüft und freigegeben sind. |
 | W2 Gesamtkohärenz | offen | 10.10.2026 | vierte Prüfrunde | 1 wichtig, 3 optional; offen weiter F-W2-02, F-W2-03 (jetzt P4-F-18, P4-F-19) |
 | S Sprach-Review | offen | 10.10.2026 | vierte Prüfrunde | 6 optional; Lesetest je Abschnitt und Kennzahlen; abschliessbar erst nach W1 und W2 |
-| Visualisierungs-Check | offen | 10.10.2026 | vierte Prüfrunde | 1 wichtig, 5 optional; Matrix 1–17 × 6 Figuren; keine Figur fachlich freigegeben |
+| Visualisierungs-Check | offen | 10.10.2026 | vierte Prüfrunde | 1 wichtig, 5 optional; Matrix 1–17 × 6 Figuren; seit 10.10.2026 alle sechs Figuren fachlich freigegeben (Fachstelle) |
 | Bedienung und Barrierefreiheit | offen | 10.10.2026 | vierte Prüfrunde, automatisiert | kein Befund; reale Screenreader-Läufe, Hardwaretastatur und Touch fehlen (nicht prüfbar) |
 | W3 Code-Review | offen | 10.10.2026 | vierte Prüfrunde: nur Stichprobe Technik und Zuständigkeit, kein volles W3 | Stichprobe ohne Befund; W3 erst nach Umsetzung von W2 und S |
 | R1 Profil-Audit | offen | | | noch nicht geprüft |
@@ -25,9 +25,48 @@ Gehört zur Website in diesem Ordner. Wer den Starter kopiert, übernimmt diese 
 
 Dazu 5 leichte Befunde zu Bericht und Abgleich. Die erste und zweite Prüfrunde stehen weiter unten zur Nachvollziehbarkeit; ihre Befunde sind durch die dritte Runde überholt, soweit sie nicht ausdrücklich als offen genannt sind.
 
+## Fachliche Freigabe der Fachstelle
+
+**10.10.2026 · Fachstelle Angehörigenarbeit PUK.** Von der bauenden Sitzung im Auftrag der Fachstelle übertragen (`KORREKTUR-ETAPPE-1J.md`).
+
+- **Etappe 1 ist fachlich freigegeben:** die Seiten `index`, `verstehen`, `beziehungen` und `grenzen` als Ganzes, mit allen Texten im Stand `540c37d` (nach Korrektur 1i) und der Quellenzeile aus Korrektur 1j.
+- **Die sechs Abbildungen sind fachlich freigegeben (P4-F-21):** Eisberg (`v-vs-eisberg`), Anspannungskurve (`v-vs-anspannung`), Momentaufnahmen (`v-vs-bewertungen`), Bedeutungsschleife (`v-bz-schleife`), Zwei Sichten (`v-bz-sichten`) und DEAR (`v-gr-dear`).
+- **Die neuen Beispielsätze sind fachlich freigegeben (P4-F-8):**
+  - `verstehen`: «Du bist die Einzige, die mich versteht.», «Sätze, die Angehörige hören können:» und «Erfahrungen in engen Beziehungen können mitwirken, neben vielen anderen Einflüssen.»
+  - `beziehungen`: «Wie hast du meine Absage verstanden?», «Ich bin bei der Arbeit. Ich melde mich heute Abend.», «Vorhin warst du plötzlich weit weg. Wie war das für dich?», «Ich habe den Eindruck, du bist enttäuscht von mir. Stimmt das?», «Vielleicht wirkt die Person bei Freunden oder bei der Arbeit ruhiger als bei Ihnen.» und «Das kann kränken.»
+  - `grenzen`: «Lass uns zusammen schauen, wer dich sonst noch unterstützen kann.»
+- **Quellen (P4-F-16):** Die Quellenzeilen tragen die Aussagen. Bei den Ursachen (`verstehen` › `borderline`) kommt NICE CG78 (2009) dazu, wie im Bestand. Fruzzetti (2006) und Gunderson et al. (1997) bleiben auf `beziehungen`. Die Bezugspunkte der Anspannungskurve stammen aus den Handouts des Bestands und bleiben.
+- **Alle 21 Fragen der vierten Prüfrunde sind entschieden:** P4-F-1 bis -7, -9 bis -15 und -17 bis -20 mit Korrektur 1i (P4-F-14, -15, -18 und -20 als Strukturentscheide), P4-F-8, -16 und -21 hier.
+- **Nicht Teil dieser Freigabe:** die zwölf Platzhalter und die Seiten von Etappe 2. Die Platzhalter markieren Seiten, die noch folgen, und entfallen, wenn diese gebaut sind.
+- **Weiter offen vor der Veröffentlichung:** W2, S, Visualisierungs-Check und W3 abschliessen, reale Screenreader-Läufe, Hardwaretastatur und Touch, danach R1 bis R3.
+
 ## Selbstprüfung der bauenden Sitzung
 
 Nach jedem Bau ohne Nachfrage ausfüllen: Visualisierungs-Check wie unten, mit Beleg je Punkt. Arbeitsstand, keine Prüfstufe.
+
+**Stand 10.10.2026 · Korrektur Etappe 1j · bauende Sitzung (Claude Code).** Umgesetzt ist `KORREKTUR-ETAPPE-1J.md` (Freigabe der Fachstelle eintragen). Sonst ist nichts geändert. Die Selbstprüfung von 1i steht darunter.
+
+| Punkt | Stand | Beleg |
+| --- | --- | --- |
+| Auftrag verschieben | umgesetzt | `KORREKTUR-ETAPPE-1J.md` aus `6ccb57a` unverändert im Website-Ordner (Commit `d0ca1ba`, `cmp`: gleich); im Stamm von `main` gelöscht (`878536e`); zusammengeführt (`ad2c971`) |
+| 3 Quellenzeile der Ursachen (P4-F-16) | umgesetzt | `verstehen` › `borderline`: «**Quellen:** WHO, ICD-11 (2024); American Psychiatric Association (2024); NICE CG78 (2009); Linehan (1993).»; «Quellen:» bleibt fett. `git diff --word-diff` auf den Seiten: nur «NICE CG78 (2009);» in `content/verstehen.html` und der gebauten `verstehen.html` |
+| 4 `visualPlan` (P4-F-21) | umgesetzt | `approvalStatus` «freigegeben» bei genau `v-vs-eisberg`, `v-vs-anspannung`, `v-vs-bewertungen`, `v-bz-schleife`, `v-bz-sichten`, `v-gr-dear` (Skript mit Prüfung je ID; `git diff`: 6 Zeilen). `editorialStatus`, die zwölf Platzhalter und die Zeilen mit `format` «text» sind unverändert |
+| 4 Abgleich, Quellenzeile | umgesetzt | `abgleich/verstehen.md` Nr. 34, 35 und 36: neue Zeile als Fassung, Status «gekürzt», Bemerkung endet mit «; NICE CG78 ergänzt (1j, P4-F-16)». Vergleich mit dem Stand vor 1j per Skript: keine andere Zeile geändert |
+| 4 Abgleich, Prüfbedarf | umgesetzt | Bemerkungen mit «Prüfbedarf» enden mit «; erledigt: Freigabe Etappe 1 durch die Fachstelle, 10.10.2026 (1j)»: `verstehen` 11, `beziehungen` 1, `grenzen` 2, `index` 0 Zeilen (Skript: alle mit Vermerk). Unter jeder Überschrift «Prüfbedarf für W1 (Stand …)» der vier Tabellen steht der Absatz «**Erledigt am 10.10.2026:** …» im Wortlaut als erster Absatz |
+| 4 Kopfnotizen, README | umgesetzt | «Korrektur 1j: …» und «Stand … Korrektur Etappe 1j» in allen vier Tabellen; `abgleich/README.md`: 1j in der Liste, Prüfergebnis nach 1j, Abschnitt «Korrektur Etappe 1j» |
+| 5a Abschnitt «Fachliche Freigabe der Fachstelle» | umgesetzt | zeichengleich aus dem Codeblock von 1J übertragen (Skript), direkt vor diesem Abschnitt |
+| 5b Statustabelle | umgesetzt | Zeile «W1 Fachliche Prüfung» zeichengleich ersetzt, Status «offen»; Zeile «Visualisierungs-Check»: «seit 10.10.2026 alle sechs Figuren fachlich freigegeben (Fachstelle)», Status «offen». Keine Stufe steht auf «erledigt» |
+| 5c Selbstprüfung | umgesetzt | dieser Block |
+| 2 Regeln | eingehalten | Per Skript gegen den Stand vor 1j geprüft: Der Prüfbericht ist ausser 5a, 5b und diesem Block gleich, die Seiten ausser der Quellenzeile |
+
+**Gates (Abschnitt 6):**
+
+- **`node tools/build.mjs`:** 0 blockierend, 14 Hinweise (bisher 20; die sechs Hinweise `visual-approval` entfallen): 12 × `placeholder-approval`, `site-url`, `review-report`.
+- **`node tools/gate.mjs --selftest`:** 53/53 bestanden.
+- **`node tools/gate.mjs --production`:** 13 blockierend (12 × `placeholder-approval`, 1 × `review-report`) und 1 Hinweis (`site-url`), wie erwartet.
+- **`node abgleich/pruefe-abgleich.mjs`:** 1763 Zeilen, 0 ohne Fundstelle.
+
+**Hinweis (nicht geändert):** Die Fusszeile aller Seiten sagt weiter «Redaktioneller Status: Entwurf – fachliche Prüfung ausstehend». Sie kommt aus `editorialStatus`, und den ändert 1J ausdrücklich nicht.
 
 **Stand 10.10.2026 · Korrektur Etappe 1i · bauende Sitzung (Claude Code).** Umgesetzt ist `KORREKTUR-ETAPPE-1I.md` mit den Entscheiden zur vierten Prüfrunde vom 10.10.2026:
 

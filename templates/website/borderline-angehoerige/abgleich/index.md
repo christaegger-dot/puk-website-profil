@@ -2,13 +2,15 @@
 
 Neue Seite: `content/index.html` · Bestand: `/` (Startseite), `/selbsttest`, `/wegweiser` (Branch `borderline-bestand`, `bestand/borderline-angehoerige/texte/`). Statuswerte und Zählweise: `README.md` in diesem Ordner.
 
-**Stand 10.10.2026, Korrektur Etappe 1i (bauende Sitzung).** Eine Tabelle für jeden Satz der alten Seite und der zugeordneten Handouts (Korrektur 1b, E). Sie ersetzt die abschnittsweisen Tabellen vom 08.10.2026 und den Abschnitt «Satz für Satz» der ersten Korrektur; wo diese sich widersprachen, gilt die Zeile hier. Statuswerte, Zählweise und Skripte: `README.md`.
+**Stand 10.10.2026, Korrektur Etappe 1j (bauende Sitzung).** Eine Tabelle für jeden Satz der alten Seite und der zugeordneten Handouts (Korrektur 1b, E). Sie ersetzt die abschnittsweisen Tabellen vom 08.10.2026 und den Abschnitt «Satz für Satz» der ersten Korrektur; wo diese sich widersprachen, gilt die Zeile hier. Statuswerte, Zählweise und Skripte: `README.md`.
 
 **Korrektur 1c:** Zeilen zu K-1 bis K-5 nachgeführt; Status und Bemerkungen der Stichprobe aus den Belegen der dritten Prüfrunde (Abschnitt 4) berichtigt.
 
 **Korrektur 1d:** Der Zuständigkeitsverweis in der Fusszeile hat einen neuen Wortlaut (D-1, Nr. 37 und 247).
 
 **Korrektur 1i:** Der Text der Fachstelle in `beratung` steht in fünf Sätzen und nennt den Ort (`KORREKTUR-ETAPPE-1I.md`, Abschnitt 7; P4-F-19, P4-S-6). Die Zeilen dazu stehen in `grenzen.md` (Nr. 115 und 247); auf dieser Seite ist keine Zeile betroffen.
+
+**Korrektur 1j:** Die Fachstelle hat Etappe 1 am 10.10.2026 fachlich freigegeben (`KORREKTUR-ETAPPE-1J.md`). Bemerkungen mit «Prüfbedarf» tragen den Vermerk «erledigt: Freigabe Etappe 1 durch die Fachstelle, 10.10.2026 (1j)»; der Prüfbedarf unten bleibt als Verlauf stehen.
 
 **Zählung:** 255 Sätze des Bestands, davon 6 übernommen, 2 gekürzt, 0 zusammengeführt, 12 verschoben, 5 geändert, 229 entfällt, 1 Bezeichnung.
 
@@ -278,6 +280,8 @@ Neue Seite: `content/index.html` · Bestand: `/` (Startseite), `/selbsttest`, `/
 | 254 | `/wegweiser` › Das könnte Sie auch interessieren | Entlastung für Ihre eigene Situation. | entfällt | – | – | Meta-Text: Verweise auf `krise`, `selbstfuersorge` (folgen mit Etappe 2) |
 
 ## Prüfbedarf für W1 (Stand 09.10.2026, Korrektur 1d)
+
+**Erledigt am 10.10.2026:** Die vierte Prüfrunde hat den offenen Prüfbedarf in die Fragen P4-F-1 bis P4-F-21 übernommen. Alle sind entschieden (Korrektur 1i), und die Fachstelle hat Etappe 1 fachlich freigegeben (Korrektur 1j). Was für Etappe 2 vorgemerkt ist, bleibt vorgemerkt. Die Liste bleibt als Verlauf stehen.
 
 Die Korrekturen 1b bis 1d haben den Inhalt dieser Seite nicht verändert; geändert ist nur die Fusszeile aller Seiten (Korrektur 1d, D-1, Nr. 37 und 247). Offen bleibt:
 
