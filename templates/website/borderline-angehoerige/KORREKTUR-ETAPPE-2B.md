@@ -1,13 +1,11 @@
 # Korrekturauftrag · Borderline-Website, Etappe 2b · nach der Prüfrunde 2b
 
-Stand 10.10.2026. Gilt für `templates/website/borderline-angehoerige/` auf dem Branch `borderline-umbau`. Für die **bauende Sitzung**.
-
-> **Entwurf zur Bestätigung durch die Fachstelle.** Die Entscheide in Abschnitt 1 folgen den Empfehlungen der Prüfrunde 2b. Vor der Übergabe an die bauende Sitzung bestätigt oder ändert die Fachstelle sie; danach wird dieser Kasten gelöscht.
+Stand 11.10.2026. Gilt für `templates/website/borderline-angehoerige/` auf dem Branch `borderline-umbau`. Für die **bauende Sitzung**.
 
 ## 1. Anlass und Entscheide
 
 - **Prüfrunde 2b** (`PRUEFBERICHT.md`, Abschnitt «Prüfrunde 2b», Commit `778b2f3`, geprüfter Stand `26af566`).
-- **Entscheide der Fachstelle** (Fragen P2b-F-1 bis -12):
+- **Entscheide der Fachstelle vom 11.10.2026** (Fragen P2b-F-1 bis -12, nach den Empfehlungen der Prüfrunde 2b):
   - **P2b-F-1:** Für den Anruf in akuter Gefahr steht auf `krise` überall «Notruf», ohne Nummer. «Leitstelle» und «Rettungsdienst» entfallen. In `danach` und `sagen` kommt je ein Verweis im Text dazu; in `sagen` werden die zwei Sätze zur Bedrohung zu einem (Abschnitt 3).
   - **P2b-F-2:** Die Handlungsanleitung in `belastung` nennt auch die Unsicherheit über die Dringlichkeit (Abschnitt 3).
   - **P2b-F-3:** «Was Sie in einer Krise vermeiden sollten», ohne «eher» (Abschnitt 4).
@@ -16,7 +14,7 @@ Stand 10.10.2026. Gilt für `templates/website/borderline-angehoerige/` auf dem 
   - **P2b-F-6:** Der Satz zur Fachstelle bleibt. «Diese Seite ersetzt keine professionelle Krisenberatung.» entfällt. Die Handlungsanleitung steht als erster Absatz von `belastung` (Abschnitt 3).
   - **P2b-F-7:** Die betroffene Person klärt die Nachsorge mit dem Behandlungsteam; zwei Sätze in Vertiefungen und «Fachteam» werden angeglichen (Abschnitt 4).
   - **P2b-F-8:** `krise` › `sagen` behält den Standardsatz und die Ausstiegssätze. Für die Schritte verweist der Abschnitt auf `kommunizieren` › «Wenn Gespräche kippen» (Abschnitt 3).
-  - **P2b-F-9:** «Linehan beschreibt fünf aufeinander aufbauende Formen und als sechste Form radikale Echtheit.» entfällt, ausser die Fachstelle bestätigt die Zuschreibung vor der Übergabe an der Quelle (Abschnitt 5).
+  - **P2b-F-9:** «Linehan beschreibt fünf aufeinander aufbauende Formen und als sechste Form radikale Echtheit.» entfällt; die Zuschreibung ist nicht an der Quelle bestätigt (Abschnitt 5).
   - **P2b-F-10:** bestätigt ohne Änderung: Medikamente und gefährliche Gegenstände im Wortlaut des Bestands; «Grenzen beim Geld sind oft besonders schwer, …»; «Dafür sind Sie nicht verantwortlich, auch wenn Sie versuchen, die Lage zu beruhigen.»; der Absatz zur Selbstverletzung in `suizid`.
   - **P2b-F-11 (Teil):** Die zwei Tassen rücken näher zur Tischmitte (Abschnitt 6).
   - **P2b-F-12:** Kürzungen K-K-a1, K-K-a2 und K-K-a3; K-C-a1 mit P2b-F-6. K-K-a4 und K-K-b1 nicht (Abschnitt 5).
@@ -131,7 +129,7 @@ Die übrigen Beschreibungen und Beispielsätze bleiben, auch «Ich merke, es wir
 
 ### b) Validierung in `anerkennen` (P2b-F-9)
 
-- «Linehan beschreibt fünf aufeinander aufbauende Formen und als sechste Form radikale Echtheit.» entfällt (k28 «entfällt (2b-K): Zuschreibung nicht an der Quelle geprüft, P2b-F-9»). Hat die Fachstelle den Satz vor der Übergabe bestätigt, bleibt er.
+- «Linehan beschreibt fünf aufeinander aufbauende Formen und als sechste Form radikale Echtheit.» entfällt (k28 «entfällt (2b-K): Zuschreibung nicht an der Quelle geprüft, P2b-F-9»).
 - «Sie sind keine Pflichtfolge, und nicht jeder Schritt passt in jedes Gespräch.» wird «Die Stufen sind keine Pflichtfolge, und nicht jeder Schritt passt in jedes Gespräch.».
 - «Übernehmen hiesse: Aus einer Beobachtung wird …» wird «Übernehmen heisst hier: Aus einer Beobachtung wird …».
 
