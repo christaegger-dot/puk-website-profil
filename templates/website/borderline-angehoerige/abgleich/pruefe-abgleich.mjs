@@ -9,7 +9,7 @@
 //   2. «Neue Fassung»: steht wörtlich im genannten Abschnitt; bei «wörtlich» steht dort der Satz aus dem Bestand.
 //   3. Jede Stelle in «…» in der Bemerkung steht auf einer der neuen Seiten, im Bestand oder in den Regeln des Profils
 //      (guidelines/, README.md im Projektstamm); Teile, die mit «…» abgekürzt sind, je für sich.
-//   4. Status «entfällt»: kein Ort und keine neue Fassung.
+//   4. Status «entfällt» (seit Korrektur 2b-K auch «entfällt (2b-K)»): kein Ort und keine neue Fassung.
 // Ausgabe: Zeilen ohne Fundstelle. Exit 1, wenn es solche Zeilen gibt.
 import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
@@ -92,7 +92,7 @@ for (const p of PAGES) {
     const [nr, , satz, status, neu, ort, bem] = cells(line);
     rowsChecked++;
     const where = `${p} Nr. ${nr}`;
-    if (status === 'entfällt') { if (ort !== '–' || neu !== '–') problems.push(`${where}: «entfällt» mit Ort oder neuer Fassung`); }
+    if (/^entfällt( \(|$)/.test(status)) { if (ort !== '–' || neu !== '–') problems.push(`${where}: «entfällt» mit Ort oder neuer Fassung`); }
     else if (status === 'Bezeichnung' && ort === '–') { /* Zwischentitel ohne Aussage, ohne Ort */ }
     else if (/^[a-z]+#[a-z0-9-]+$/.test(ort)) {
       const [pg, sec] = ort.split('#');

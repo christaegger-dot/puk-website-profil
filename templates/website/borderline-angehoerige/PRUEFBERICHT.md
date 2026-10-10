@@ -55,6 +55,236 @@ Dazu 5 leichte Befunde zu Bericht und Abgleich. Die erste und zweite Prüfrunde 
 
 Nach jedem Bau ohne Nachfrage ausfüllen: Visualisierungs-Check wie unten, mit Beleg je Punkt. Arbeitsstand, keine Prüfstufe.
 
+**Stand 11.10.2026 · Korrektur Etappe 2b-K · bauende Sitzung (Claude Code).** Umgesetzt ist `KORREKTUR-ETAPPE-2B.md` (Entscheide der Fachstelle vom 11.10.2026 zu P2b-F-1 bis -12; Auftrag im Website-Ordner seit `ec98cc8`, Grundlage `borderline-umbau` am Stand `ac7ea04`). Geändert sind nur:
+
+- `content/kommunizieren.html` und `content/krise.html` (und die zwei gebauten Seiten)
+- der Plan in `site.config.json` (`v-ko-tassen` › `statement`, `v-ko-moment`, `v-kr-sagen` und `v-kr-danach` › `reason`)
+- der Abgleich (`abgleich/kommunizieren.md`, `krise.md`, `grenzen.md`, `beziehungen.md`, `README.md`) und in `abgleich/pruefe-abgleich.mjs` eine Zeile für den Status «entfällt (2b-K)»
+
+Die Seiten der Etappen 1 und 2a und `index` sind unverändert (`git diff` leer). Keine Prüfstufe ist «erledigt». **Nachprüfung:** Die Korrektur prüft eine Sitzung, die weder gebaut noch 2b-K umgesetzt hat. Offen bis zur Freigabe bleiben P2b-F-11 a (die Liste unten) und die fachliche Freigabe von «Zwei Tassen». Der Block von Etappe 2b steht darunter.
+
+### Korrektur 2b-K: Stand je Punkt (Abschnitte 3 bis 7)
+
+| Punkt | Stand | Beleg |
+| --- | --- | --- |
+| 3 a `belastung`, Reihenfolge | umgesetzt | Quelltext in dieser Reihenfolge: 1. «Bei unmittelbarer Gefahr oder wenn Sie nicht einschätzen können, wie dringend es ist, holen Sie sofort Hilfe und schützen sich selbst.» 2. `<p data-responsibility-inline></p>` 3. «Die Fachstelle Angehörigenarbeit bietet Beratung und Orientierung, aber keine Krisenintervention. Sie können jederzeit direkt Hilfe holen. Diese Seite ist keine notwendige Vorstufe.» 4. «Die drei Bereiche unten …». Der Satz zur Seite und Krisenberatung kommt auf `krise` nicht mehr vor (`grep`: 0) |
+| 3 a `belastung`, Sätze | umgesetzt | «Die Bereiche bewerten keine Diagnose und sagen nicht voraus, wie sich eine Situation entwickeln wird.»; «Wenn Sie nicht wissen, ob die Person einen Plan hat, bedeutet das keine Sicherheit.». Abgleich: c29 und c65 «zusammengeführt (2b-K)» mit dem Satz zur Fachstelle und dem Hinweis in der Fusszeile («Diese Website ersetzt keine individuelle Abklärung, Beratung oder Behandlung.») |
+| 3 b `waehrend` | unverändert | Skript (Blöcke vor und nach der Korrektur): kein Block in `waehrend` geändert; «Bei unmittelbarer Gefahr holen Sie Hilfe über den Notruf.» mit dem Verweis im Text direkt danach |
+| 3 c `sagen` | umgesetzt | Nach «Sie müssen keine perfekten Worte finden. …»: «Bei Bedrohung oder Gewalt gehen Sie auf Abstand, bringen sich in Sicherheit und holen Hilfe über den Notruf.», direkt danach der Verweis im Text, dann die Begriffsliste. «Da sein» endet mit «Bieten Sie nur Nähe oder Erreichbarkeit an, die für Sie möglich und sicher ist.». «Wenn ein Gespräch kippt»: «Dann helfen Verbindung, …», «Ein Satz kann so klingen: «…»» und «Zum Aussteigen reicht: «…»» in einem Absatz, danach «Wie Sie ein kippendes Gespräch verlangsamen und eine Grenze in drei Teilen sagen, steht auf der Seite «Zugewandt und klar sprechen» im Abschnitt «Wenn Gespräche kippen».» (Link `kommunizieren.html#kippen`). Entfallen: der Satz zur Schrittfolge, die nummerierte Liste mit drei Schritten, der Satz mit der Leitstelle und der kurze Satz zu Bedrohung nach den Ausstiegssätzen. Abgleich: c106 und c279 «zusammengeführt (2b-K)», c252 und c254 bis c261 «entfällt (2b-K)» mit «verlinkt auf `kommunizieren#kippen`, P2b-F-8», c263 «Ein Satz kann so klingen:», c303 neuer Verweissatz |
+| 3 d `danach` | umgesetzt | «Bei möglicher unmittelbarer Lebensgefahr holen Sie sofort Hilfe über den Notruf.», direkt danach der Verweis im Text, vor «Für die betroffene Person» |
+| 3 e Ergebnis | erreicht | Sechs Verweise im Text auf `krise`: `belastung`, `waehrend`, `sagen`, `suizid`, `danach`, `bleibt` (Tabelle «Verweise im Text» unten), jeder direkt nach einer Handlungsanleitung, keiner in Figur oder Vertiefung, einer je Abschnitt (Build: kein Hinweis `inline-ref`). «Leitstelle» und «Rettungsdienst»: 0 auf `krise` (Quelltext und gebaute Seite) |
+| 4 a `vermeiden` | umgesetzt | Titel «Was Sie in einer Krise vermeiden sollten», Einleitung «In einer Krise sollten Sie vermeiden,»; die sechs Listenpunkte, der Kicker «05 · Was Sie vermeiden» und der Eintrag der Kapitelübersicht unverändert |
+| 4 b `suizid` | umgesetzt | Quellenzeile endet «… keine Vorhersage durch pauschale Risikostufen; WHO, Suicide: Questions and answers (2026), direktes Fragen löst nach heutigem Wissensstand keine suizidale Handlung aus.»; Text des Abschnitts unverändert (Skript: nur die Quellenzeile geändert) |
+| 4 c Nachsorge | umgesetzt | «Fachliche Nachsorge und erreichbare Kontakte klärt die betroffene Person mit dem Behandlungsteam.» («Drei mögliche Anliegen»); «Vereinbarte Hilfe überprüfen: Die betroffene Person klärt mit dem Behandlungsteam, welche professionelle Unterstützung vorgesehen und erreichbar ist, wenn sie möchte, gemeinsam mit Ihnen.» («Früh erkennen und Absprachen treffen»); «Weitere Behandlungsschritte klärt die betroffene Person mit dem Behandlungsteam.» (`bleibt`). «Fachteam»: 0 auf `krise`. «Welche fachliche Nachsorge nötig ist, klärt die betroffene Person mit dem Behandlungsteam. …» in `danach` unverändert |
+| 5 a «Pause statt Streit» | umgesetzt | Einleitung im Wortlaut des Auftrags; Begriffe «Wir können sprechen.», «Es wird eng.», «Es ist gerade zu viel.» (gleich wie die Stellen 1 bis 3 auf `verstehen` › `anspannung`); dritte Beschreibung endet «… Stoppen Sie, und schaffen Sie Abstand.». Beschreibungen und Beispielsätze sonst unverändert, auch «Ich merke, es wird schwierig. Ich unterbreche das Gespräch jetzt.»; der Verweissatz auf `verstehen#anspannung` steht weiter nach der Liste. Ebenfalls: «Grenzen dafür, wie lange oder wann Sie sprechen, wirken am besten, …» |
+| 5 b Validierung | umgesetzt | Der Satz zu fünf Formen und radikaler Echtheit entfällt (k28 «entfällt (2b-K): Zuschreibung nicht an der Quelle geprüft, P2b-F-9»); «Die Stufen sind keine Pflichtfolge, und nicht jeder Schritt passt in jedes Gespräch.»; «Übernehmen heisst hier: Aus einer Beobachtung wird …» |
+| 5 c `zuhoeren` | umgesetzt | «Sie dürfen zuhören, nachfragen oder eine Pause machen und dabei Ihre eigene Sicht behalten. Ihre eigenen Anliegen bleiben wichtig.» (K-K-a3); Listenpunkt «Kurze Sätze und Pausen können helfen.» (K-K-a2); «Verschiedene Gefühle, Meinungen oder Bedürfnisse nach Nähe sind nicht automatisch ein Zeichen fehlender Liebe.» (Bestand b184). «Ein hilfreicher Satz kann unterstützen, aber die Reaktion der anderen Person nicht garantieren.» bleibt; k14 «zusammengeführt (2b-K)» damit |
+| 5 d `worte` | umgesetzt | «Die folgenden Sätze sind Beispiele und nicht typisch für alle Menschen mit Borderline.» (k837) |
+| 5 e Nicht ändern | eingehalten | Die vier belastenden Aussagen in `worte` vollständig, auch «Du verstehst mich sowieso nicht.»; «Typische schwierige Situationen» sichtbar (Begriffsliste in `beispiele`, Block unverändert); der Satz zu Dazzi et al. in `suizid` unverändert; Namen und «Übernehmen / Spiegeln» unverändert |
+| 6 «Zwei Tassen» | umgesetzt | Linke Tasse mit Dampf und Henkel +60 Einheiten, rechte −60: Tassenkörper bei x 190–258 und 382–450 (vorher 130–198 und 442–510), freier Raum 124 Einheiten (vorher 244). Spiegelgleich zu x = 320: Für jedes Punktpaar ist die Summe der x-Werte 640 (Skript, alle 10 Pfade). Tisch und Bildausschnitt `0 60 640 200` Zeichen für Zeichen gleich; je zwei Dampflinien, Henkel aussen, gleich grosse Tassen. Nur `puk-vis-scene__ln`, `__ln--thin`, `__paper`, `__soft`; 0 Hexwerte, 0 `style`-Attribute. `p.puk-sr` und `statement`: «… stehen nebeneinander auf einem Tisch.», Rest gleich. `approvalStatus` «ausstehend». Fotos und Freundin-Test unten |
+| 7 Plan | umgesetzt | `v-ko-moment`: «… «Pause statt Streit» mit den drei Sätzen der Anspannungskurve («Wir können sprechen.», «Es wird eng.», «Es ist gerade zu viel.») als Begriffsliste …»; `v-kr-sagen`: Handlungsanleitung für Bedrohung mit Verweis im Text, Standardsatz und Ausstiegssätze, Schritte verlinkt auf `kommunizieren`; `v-kr-danach`: «Sicherheitshinweis als Handlungsanleitung mit Verweis im Text vor den Vertiefungen …»; `v-ko-tassen` › `statement` wie Abschnitt 6 |
+| 7 Abgleich (P2b-W1-7) | umgesetzt | k25 «… «Gründe» entfällt (nachgeführt 2b-K, P2b-W1-7)»; k726 «… «und wann» fehlt im Satz bei «Nächster Schritt» …»; c190 «… «sofort» steht nur noch bei Lebensgefahr; «unabhängig vom Zeitpunkt» trägt «Nötige medizinische oder psychiatrische Hilfe hat keine Wartefrist.» …»; k572 «… die Aussage steht auch sinngemäss auf keiner neuen Seite …»; k764, k765, k968 mit der neuen Einleitung; Nr. 17 der Liste von 2b entfällt |
+| 7 Abgleich, übrige Zeilen | umgesetzt | 53 Zeilen mit Status «umformuliert (2b-K)», «zusammengeführt (2b-K)», «entfällt (2b-K)» oder «neu (2b-K)» (`kommunizieren.md` 20, `krise.md` 28, `grenzen.md` 4, `beziehungen.md` 1), je mit der Nummer der Frage oder des Vorschlags und «bis 2b-K: …»; 7 Zeilen nur mit nachgeführter Bemerkung (k25, k572, k726; k758 und k776 nennen die neuen Begriffe; c1 die neue Lage in `belastung`; c283 die sechs Abschnitte mit Verweis im Text). Statuswerte in `abgleich/README.md` erklärt. Gefunden mit einem Skript, das jede Zeile aller acht Tabellen meldet, deren neue Fassung in einem geänderten oder entfallenen Block stand; Zeilen mit unverändertem Satz bleiben |
+
+### Korrektur 2b-K: Prüfungen nach Abschnitt 8
+
+- **`node tools/build.mjs`:** 0 blockierend, 11 Hinweise wie vorher (1 × `visual-approval`, 8 × `placeholder-approval`, `site-url`, `review-report`).
+- **`node tools/gate.mjs --selftest`:** 53/53 bestanden.
+- **`node tools/gate.mjs --production`:** 10 blockierend wie bisher (1 × `visual-approval`, 8 × `placeholder-approval`, 1 × `review-report`) und 1 Hinweis (`site-url`).
+- **`node abgleich/pruefe-abgleich.mjs`:** 4502 Zeilen, 0 ohne Fundstelle.
+- **«Zwei Tassen»:** bei 1280 und 360 px, je Standard und «kontrast» (vier Fotos der Abbildung, vier der Szene), angesehen; Beschreibung und Freundin-Test unten.
+- **Überlauf:** `kommunizieren` und `krise` bei 320, 360, 375, 414, 640, 768, 1024, 1280 und 1440 px, Vertiefungen zu und offen, beide Themes (72 Messungen): kein waagrechter Überlauf, kein Element ausserhalb des Fensters. Zoom 200 % (640 px bei Faktor 2 und 1280 px mit Schriftgrösse 200 %), Vertiefungen zu und offen: ohne Überlauf.
+- **Tastatur und Fokus** (1280 px, reduzierte Bewegung): Tabstopps bis zur Fusszeile `kommunizieren` 32, `krise` 25 (wie vorher; der neue Link in `sagen` ersetzt den alten); jeder mit sichtbarem Fokus und im Fenster, der erste «Zum Hauptinhalt». Vertiefungen: Enter öffnet 13 von 13, Leertaste schliesst 13 von 13; Pfeil nach unten führt in Akkordeons mit mehreren Einträgen zum nächsten Eintrag (8 von 8). «Grenzen des Bildes» öffnet mit Enter. Keine Animation nach dem Laden.
+- **Druckansicht** (`print`, dazu PDF beider Seiten, angesehen): alle 13 Panels und «Grenzen des Bildes» sichtbar; die geänderten Sätze in den Vertiefungen stehen vollständig im Druck (Foto der Seite mit «Früh erkennen und Absprachen treffen»).
+- **Ohne Skript:** 9 von 9 und 4 von 4 Panels sichtbar.
+- **`node abgleich/bedienung.mjs`:** `kommunizieren` 32 Tabstopps, 24 625 px bei 360 px (vorher 24 890), Zwei Tassen 716 px; `krise` 25 Tabstopps, 16 671 px (vorher 16 436: zwei Verweise im Text mehr). Übrige Seiten unverändert (`index` 15 / 4636 px, `verstehen` 20, `beziehungen` 18, `grenzen` 23, `rolle` 30, `selbstfuersorge` 28).
+- **Technik:** keine `style`-Attribute, keine Hexwerte, kein `tel:`, keine Telefonnummer in den zwei Quelltexten. Kontraste nicht neu gemessen: Farben und Klassen sind unverändert (2b: tiefster Textwert 4,71 : 1, Linien 4,71 und 10,08 : 1).
+- **Keine Änderung an Etappe 1, 2a und `index`:** `git diff` für `content/` und die gebauten Seiten von `index`, `verstehen`, `beziehungen`, `grenzen`, `rolle`, `selbstfuersorge`: leer.
+- **Nicht prüfbar in dieser Umgebung:** reale Screenreader-Läufe, Hardwaretastatur und Touch.
+
+### Korrektur 2b-K: Wörter im Lesefluss vorher und nachher (Zählweise C1)
+
+C1 wie in der Selbstprüfung 2b und der Prüfrunde 2b (Absätze, Listenpunkte und Begriffslisten in `<main>`, ohne Überschriften, Kicker, Bezeichnungen, Text nur für Screenreader und Quellenzeilen; im Lesefluss ohne die Panels der Akkordeons; Skript im Browser). «Vorher» ist der geprüfte Stand `26af566`; das Skript ergibt dort genau die Werte der Selbstprüfung 2b und der Prüfrunde 2b (2458 und 1507, je Abschnitt gleich). Der Verweis im Text ist ein Absatz und zählt mit (24 Wörter).
+
+| Seite › Abschnitt | C1 im Lesefluss vorher | C1 im Lesefluss nachher | Differenz | C1 mit Vertiefungen vorher → nachher |
+| --- | ---: | ---: | ---: | --- |
+| **`kommunizieren`** | **2458** | **2432** | **−26** | 3126 → 3100 |
+| Kopf | 28 | 28 | 0 | – |
+| `zuhoeren` | 193 | 176 | −17 | 278 → 261 |
+| `anerkennen` | 623 | 613 | −10 | 990 → 980 |
+| `moment` | 372 | 374 | +2 | 372 → 374 |
+| `kippen` | 419 | 419 | 0 | 536 → 536 |
+| `worte` | 270 | 269 | −1 | 270 → 269 |
+| `beispiele` | 516 | 516 | 0 | 516 → 516 |
+| `rollen` | 37 | 37 | 0 | 136 → 136 |
+| **`krise`** | **1507** | **1522** | **+15** | 1919 → 1945 |
+| Kopf | 36 | 36 | 0 | – |
+| `belastung` | 289 | 302 | +13 | 289 → 302 |
+| `waehrend` | 215 | 215 | 0 | 215 → 215 |
+| `sagen` | 263 | 239 | −24 | 263 → 239 |
+| `suizid` | 182 | 182 | 0 | 182 → 182 |
+| `vermeiden` | 57 | 56 | −1 | 57 → 56 |
+| `danach` | 259 | 286 | +27 | 671 → 709 |
+| `bleibt` | 206 | 206 | 0 | 206 → 206 |
+
+- **Gründe:** `zuhoeren` K-K-a3 (−6), K-K-a2 (−7), Bestandswortlaut b184 (−4); `anerkennen` Satz zu Linehan (−12, P2b-F-9), «Die Stufen sind» und «heisst hier» (+2); `moment` Einleitung (+3), Sätze der Kurve als Begriffe (+8), Satz zu den Grenzen (+6), Ausstiegssatz bei «Es ist gerade zu viel.» (−15, K-K-a1); `belastung` Unsicherheit in der Handlungsanleitung (+10), Subjekt (+1), Satz zum Plan (+8), Satz zur Seite und Krisenberatung (−6); `sagen` Schrittfolge mit Einleitung (−46), zwei Sätze zu Bedrohung (−22), kürzere Einleitung des Standardsatzes (−2), Handlungsanleitung (+17), Verweis im Text (+24), längerer Verweissatz (+5); `danach` Verweis im Text (+24), «über den Notruf» (+3), in den Vertiefungen Nachsorge mit Subjekt (+11); `vermeiden` Einleitung (−1).
+- **Weitere Kennzahlen:** `kennzahlen.mjs` gesamt `kommunizieren` 3370 → 3344, `krise` 2075 → 2117; im Lesefluss 2702 → 2676 und 1663 → 1694. Sätze im Lesefluss (C1) `kommunizieren` 258 → 251, mit Verneinung 70 → 68 (27 %); `krise` 159 → 153, mit Verneinung 39 → 37 (24 %). `verneinung.mjs`: `kommunizieren` 83 von 402 → 81 von 395 (21 %), `krise` 52 von 241 → 50 von 235 (21 %). Absicherungen je 100 Wörter 2,64 → 2,69 und 2,17 → 2,13. Semikolons 0 und 1 wie vorher.
+- **Ziel «höchstens etwa 2500»** (Bauauftrag 2b) weiter erreicht: 2432 und 1522.
+
+### Korrektur 2b-K: Verweise im Text
+
+Jeder Verweis im Text steht direkt nach einer Handlungsanleitung (Skript: Element unmittelbar vor dem Platzhalter). Lage bei 360 × 800 px, gemessen nach dem Laden der Schriften: Oberkante des Verweises ab Anfang des Abschnitts und ab dem Abschnittstitel, Unterkante ab Anfang des Abschnitts, Lage auf der Seite. Beim Sprung über die Kapitelübersicht steht der Abschnitt oben im Fenster; bei einer Unterkante unter 800 px ist der Verweis dann ohne Scrollen ganz sichtbar (Foto `sagen`).
+
+| Nr. | Seite › Abschnitt | Handlungsanleitung direkt davor | ab Abschnitt / ab Titel | Unterkante ab Abschnitt | Lage auf der Seite | Stand |
+| --- | --- | --- | ---: | ---: | ---: | --- |
+| 1 | `kommunizieren` › `kippen` | «Bei Bedrohung oder Gewalt beenden Sie das Gespräch, schaffen Abstand und bringen sich in Sicherheit.» | 605 / 521 px | 761 px | 13 056 von 24 625 px | wie 2b |
+| 2 | `kommunizieren` › `worte` | «Eine Aussage wie «Wenn du gehst, bringe ich mich um» gehört nicht in eine Liste von Vorwürfen. Nehmen Sie sie ernst, und holen Sie eine professionelle Einschätzung oder Hilfe dazu. Versuchen Sie nicht, Motiv oder Gefährdung allein zu beurteilen.» | 1855 / 1771 px | 2011 px | 17 912 px | wie 2b |
+| 3 | `krise` › `belastung` | «Bei unmittelbarer Gefahr oder wenn Sie nicht einschätzen können, wie dringend es ist, holen Sie sofort Hilfe und schützen sich selbst.» | 319 / 237 px | 475 px | 1663 von 16 671 px | Handlungsanleitung geändert, jetzt erster Absatz |
+| 4 | `krise` › `waehrend` | «Begrenzen Sie den Zugang zu Medikamenten oder gefährlichen Gegenständen nur ohne Eigengefährdung, möglichst gemeinsam und nach professioneller Anleitung. Nehmen Sie nichts aus der Hand oder gegen Widerstand weg; greifen Sie nicht körperlich ein. Bei unmittelbarer Gefahr holen Sie Hilfe über den Notruf.» | 807 / 724 px | 963 px | 4693 px | wie 2b |
+| 5 | `krise` › `sagen` | «Bei Bedrohung oder Gewalt gehen Sie auf Abstand, bringen sich in Sicherheit und holen Hilfe über den Notruf.» | 453 / 370 px | 609 px | 6215 px | neu (P2b-F-1 c) |
+| 6 | `krise` › `suizid` | «Wenn Sie sich konkret sorgen, fragen Sie ruhig und direkt, ob die Person Suizidgedanken oder einen Plan hat. Das kann helfen, die Lage zu verstehen. Zum Beispiel: «Ich mache mir Sorgen um dich. Denkst du gerade daran, dir das Leben zu nehmen?»» | 438 / 354 px | 594 px | 8408 px | wie 2b |
+| 7 | `krise` › `danach` | «Krisen verlaufen unterschiedlich. Ein ruhigerer Eindruck oder verstrichene Zeit beweist keine Sicherheit. Bei erneuter Sorge holen Sie eine professionelle Einschätzung. Bei möglicher unmittelbarer Lebensgefahr holen Sie sofort Hilfe über den Notruf.» | 404 / 321 px | 560 px | 11 062 px | neu (P2b-F-1 b) |
+| 8 | `krise` › `bleibt` | «Bei akuter Gefahr schützen Sie sich und holen sofort Hilfe.» | 801 / 717 px | 957 px | 14 818 px | wie 2b |
+
+Auf `krise` stehen damit sechs Verweise im Text in sieben Abschnitten (ohne `vermeiden`), bei 360 px im Abstand von 1522 bis 3756 px. Nr. 4 und 8 beginnen knapp unter dem ersten Bildschirm (807 und 801 px ab Abschnitt); davor stehen die Handlungsanleitung und die Liste der Hinweise. Weitere Handlungsanleitungen ohne eigenen Verweis: «Bei akuter Gefahr holen Erwachsene sofort Hilfe.» (`bleibt`, Kinder; der Abschnitt hat schon einen).
+
+### Korrektur 2b-K: «Zwei Tassen» nach dem Verschieben
+
+**Bildschirmfotos** (Chromium, Faktor 2): Abbildung und Szene bei 1280 und 360 px, Standard und «kontrast», alle angesehen.
+
+- **1280 px:** Die zwei Tassen stehen jetzt im mittleren Drittel des Tisches, zwischen ihnen knapp zwei Tassenbreiten Platz (124 Einheiten, im Bild 147 px); links und rechts bleibt Tisch frei. Die Sätze stehen weiter über ihrer Tasse: Der linke Satz (88–390 px im Fenster) endet über der linken Tasse (313–395 px), der rechte (546–848 px) beginnt über der rechten Tasse (541–623 px); die blaue Randlinie des rechten Satzes steht fast genau über dem linken Rand der rechten Tasse. Die Hinterkante des Tisches läuft hinter beiden Tassen durch.
+- **360 px:** Die Sätze stehen untereinander über der Zeichnung; die Tassen sind 34 px breit, etwa 62 px auseinander, klar als zwei gleiche dampfende Tassen erkennbar. Welche Tasse welchen Satz sagt, ergibt sich weiter nur aus der Reihenfolge (die Kurzbeschreibung nennt es).
+- **«kontrast»:** Linien dunkler, Tischfläche und Tassen gleich; nichts verschwindet.
+
+**Freundin-Test (bauende Sitzung):** besteht. Vorher standen die Tassen an den Tischenden mit leerer Mitte; das konnte als Abstand gelesen werden. Jetzt stehen sie nahe beisammen am selben Tisch, gleich gross, die Henkel spiegelbildlich nach aussen: zwei Menschen, die zusammen Tee trinken, auch wenn der eine Satz hart ist. Eine Angehörige könnte das Bild einer Freundin zeigen und sagen: «So möchte ich antworten, am selben Tisch, ohne mich zu verteidigen.» Ohne die Sätze bleibt es ein ruhiges Stillleben; die Aussage tragen die zwei Sätze.
+
+**Visualisierungs-Check `v-ko-tassen`** (Selbstprüfung, keine Prüfstufe; E = erfüllt · T = teilweise · N = nicht erfüllt · – = nicht anwendbar). Geändert gegenüber 2b sind die Punkte 1, 2, 8, 9, 12 und 17.
+
+| Nr. | Prüfpunkt | `v-ko-tassen` | Beleg | Massnahme |
+| --- | --- | --- | --- | --- |
+| 1 | Plan liegt vor, Seite entspricht ihm | E | Build ohne Hinweis `visual-plan`; `statement` «Zwei gleich grosse Tassen Tee stehen nebeneinander auf einem Tisch. …» wie die Zeichnung und `p.puk-sr` | – |
+| 2 | Zeile je Abschnitt; Begründungen für Text passen | E | je 7 Zeilen; `v-ko-moment`, `v-kr-sagen`, `v-kr-danach` nennen die neuen Fassungen (Abschnitt 7 des Auftrags) | – |
+| 3 | Prüffrage beantwortet und eingelöst | E | `understood` unverändert; das Satzpaar zeigt Anerkennen ohne Zustimmen | – |
+| 4 | Kernaussage und Erklärtext; Hauptaussage nicht nur in der Vertiefung | E | Kernaussage und Kurztext unverändert sichtbar | – |
+| 5 | Ansatzpunkt (B, C, G) | – | Illustration (Muster D) | – |
+| 6 | Mechanismus nicht doppelt gezeigt | E | einzige Abbildung der Seite; «Pause statt Streit» als Text mit den Sätzen der Anspannungskurve, keine zweite Kurve | – |
+| 7 | Kartenraster-Check | E | keine Kastenreihe | – |
+| 8 | Anordnung und Formen tragen Bedeutung | E | zwei gleich grosse Tassen, spiegelgleich zu x = 320, nahe beisammen auf demselben Tisch, beide dampfen; keine ist grösser, höher oder näher | – |
+| 9 | Verteilt, keine Textwand | T | eine Abbildung, wie entschieden; `kommunizieren` 2432 Wörter im Lesefluss (C1), 24 625 px bei 360 px | Fachstelle (Länge) |
+| 10 | Vereinfacht, nicht verfälscht; Grenzen benannt; Quelle | E | «Grenzen des Bildes» und Quelle unverändert | – |
+| 11 | Ohne Animation, Aufklappen und Skript verständlich | E | SVG ohne Animation; Sätze, Kernaussage und Kurztext sind HTML-Text | – |
+| 12 | Bei 320 px lesbar; Textalternative vollständig | E | kein Überlauf bei 320 und 360 px; Kurzbeschreibung «… stehen nebeneinander auf einem Tisch. …» über `aria-describedby` | – |
+| 13 | Theme «kontrast» geprüft | E | Fotos bei 1280 und 360 px; Klassen unverändert, keine festen Farben | – |
+| 14 | Inhalt fachlich freigegeben | N | `approvalStatus` «ausstehend»; Gate production `visual-approval` | Fachstelle (P2b-F-11 b) |
+| 15 | Bildsprache passt; Wirkung (`resonance`) eingelöst | E | Wiedererkennen beim harten Satz, Entlastung bei der Antwort; die Nähe der Tassen stützt «zugewandt» | – |
+| 16 | Ein Bild, eine Idee; Beschriftungen nennen Erleben | E | zwei gesprochene Sätze, kein Bildteil beschriftet | – |
+| 17 | Keine ungewollten Bedeutungen | T | Die leere Mitte (Abstand, Kühle) ist behoben; Plan und Kurzbeschreibung sagen jetzt «nebeneinander», wie gezeichnet. Bleibt: Tee kann ein ruhiges Gespräch nahelegen, schmal ist die Zuordnung der Sätze nur über die Reihenfolge erkennbar | R2 |
+
+### Korrektur 2b-K: Neue Sätze zur Freigabe (vollständig, Stand nach Korrektur 2b-K)
+
+Grundlage für die Freigabe durch die Fachstelle (P2b-F-11 a). Die Liste ersetzt die Liste von 2b darunter. Sie enthält alle Sätze von `kommunizieren`, `krise` und `index`, die nicht im Wortlaut aus dem Bestand stammen, und alle Sätze, die in dieser Korrektur neu gefasst sind. Die Nummern von 2b bleiben; neue Einträge tragen einen Buchstaben, in der Nähe ihres Orts. Jedes Zitat ist per Skript wörtlich auf der gebauten Seite gefunden (98 Zitate). **Stand:** «wie 2b» = unverändert aus der Liste von 2b · «geändert (2b-K)» = Satz in dieser Korrektur neu gefasst · «neu (2b-K)» = Satz neu in dieser Korrektur. **Abgleich:** k = `kommunizieren.md`, c = `krise.md`, i = `index.md`, g = `grenzen.md`, b = `beziehungen.md`, r = `rolle.md`.
+
+**Nicht mehr in der Liste** (Satz entfällt): Nr. 17 (Einleitung mit den drei Lagen; ersetzt durch Nr. 17a und 17b, P2b-F-5), Nr. 44 (Satz zur Seite und Krisenberatung, P2b-F-6), Nr. 50 (Satz zur Schrittfolge, P2b-F-8).
+
+| Nr. | Satz | Ort | Art | Stand | Abgleich |
+| --- | --- | --- | --- | --- | --- |
+| 1 | «Zuhören und die eigene Sicht behalten» (Abschnittstitel) | `kommunizieren` › `zuhoeren` | Auftrag (Abschnitt 3) | wie 2b | k957 |
+| 1a | «Sie dürfen zuhören, nachfragen oder eine Pause machen und dabei Ihre eigene Sicht behalten. Ihre eigenen Anliegen bleiben wichtig.» | `kommunizieren` › `zuhoeren` | Auftrag 2b-K, Abschnitt 5 c (K-K-a3, P2b-F-12) | neu (2b-K) | k5, k12, k20, k21 |
+| 1b | «Kurze Sätze und Pausen können helfen.» (Listenpunkt; der zweite Satz zur Reaktion entfällt, die Aussage trägt «Ein hilfreicher Satz kann unterstützen, aber die Reaktion der anderen Person nicht garantieren.») | `kommunizieren` › `zuhoeren` | Auftrag 2b-K, Abschnitt 5 c (K-K-a2, P2b-F-12) | geändert (2b-K) | k14 |
+| 2 | «Fragen Sie, was gerade gewünscht ist:» (Einleitung) | `kommunizieren` › `zuhoeren`, «Was Sie tun können» | neu | wie 2b | k958 |
+| 3 | «Und wenn Sie verschieden empfinden:» (Einleitung) | ebenda | neu | wie 2b | k959 |
+| 4 | «Verschiedene Gefühle, Meinungen oder Bedürfnisse nach Nähe sind nicht automatisch ein Zeichen fehlender Liebe.» | `kommunizieren` › `zuhoeren` | Auftrag 2b-K, Abschnitt 5 c (Bestandswortlaut) | geändert (2b-K) | b184 |
+| 5 | «Fragen zum Innehalten» (Titel der Vertiefung) | `kommunizieren` › `zuhoeren` | neu | wie 2b | k960 |
+| 6 | «Vor einer Antwort kann es helfen, kurz innezuhalten.» | ebenda, Vertiefung | neu | wie 2b | k961 |
+| 7 | «Die Fragen sind ein Angebot:» | ebenda, Vertiefung | neu | wie 2b | k962 |
+| 8 | «Wie eine Reaktion zum neuen Anlass werden kann, erklärt die Seite «Beziehungen» im Abschnitt «Nicht nur was geschieht, sondern was es bedeutet».» | ebenda, Vertiefung | Verweissatz | wie 2b | k963 |
+| 9 | «Sie können ein Gefühl anerkennen, ohne die Deutung zu übernehmen.» (Kernaussage) | `kommunizieren` › `anerkennen`, Abbildung 1 | Auftrag (Abschnitt 4) | wie 2b | k663 |
+| 10 | «Sie können sagen, dass der Schmerz echt ist, ohne die ganze Erklärung zu teilen oder pauschale Schuld zu übernehmen.» (Kurztext) | ebenda | Auftrag (Abschnitt 4) | wie 2b | k667 |
+| 11 | «Zeichnung: Zwei Tassen Tee stehen nebeneinander auf einem Tisch. Über der linken steht der Satz «Du verstehst mich sowieso nicht.», über der rechten «Vielleicht verstehe ich nicht alles. Wenn du möchtest, sag mir, was dir gerade besonders wichtig ist.»» (Kurzbeschreibung) | `kommunizieren` › `anerkennen`, Abbildung 1 | Auftrag 2b-K, Abschnitt 6 (P2b-F-11 b) | geändert (2b-K) | k964 |
+| 12 | «Wenn Sie zugleich eine Grenze brauchen:» (Einleitung) | `kommunizieren` › `anerkennen`, «Was Sie tun können» | neu | wie 2b | k965 |
+| 13 | «Eine pauschale Schuldzuweisung müssen Sie nicht übernehmen, etwa mit «Du hast recht, ich bin an allem schuld.» oder «Okay, dann mache ich es so, wie du willst.»» | `kommunizieren` › `anerkennen` | Verdichtung | wie 2b | k650, k653, k654 |
+| 14 | «Sechs Stufen der Validierung» (Zwischentitel) | `kommunizieren` › `anerkennen` | neu | wie 2b | k966 |
+| 14a | «Die Stufen sind keine Pflichtfolge, und nicht jeder Schritt passt in jedes Gespräch.» | `kommunizieren` › `anerkennen` | Auftrag 2b-K, Abschnitt 5 b | geändert (2b-K) | k30 |
+| 15 | «Übernehmen heisst hier: Aus einer Beobachtung wird die Annahme, Sie müssten das Erleben oder die Situation der anderen Person lösen.» | `kommunizieren` › `anerkennen` | Auftrag 2b-K, Abschnitt 5 b | geändert (2b-K) | g679, g683, g692 |
+| 16 | «Der richtige Moment» (Abschnittstitel) | `kommunizieren` › `moment` | Auftrag (Abschnitt 3) | wie 2b | k967 |
+| 17a | «Drei Stellen der Anspannungskurve können eine Orientierung geben, ob ein Gespräch gerade trägt.» (ersetzt Nr. 17) | `kommunizieren` › `moment` | Auftrag 2b-K, Abschnitt 5 a (P2b-F-5) | neu (2b-K) | k764, k968 |
+| 17b | «Diese Stellen sind keine festen Stufen und erlauben keine sichere Beurteilung, wie es einem Menschen innerlich geht.» | `kommunizieren` › `moment` | Auftrag 2b-K, Abschnitt 5 a (P2b-F-5) | neu (2b-K) | k765 |
+| 17c | «Wir können sprechen.», «Es wird eng.», «Es ist gerade zu viel.» (Begriffe der Begriffsliste, Sätze der Anspannungskurve von `verstehen`, freigegeben mit Etappe 1) | `kommunizieren` › `moment`, «Pause statt Streit» | Auftrag 2b-K, Abschnitt 5 a (P2b-F-5) | neu (2b-K) | k770, k778, k784 |
+| 18 | «Ein Gespräch ist möglich, Zuhören funktioniert, der Körper ist entspannt.» | `kommunizieren` › `moment`, «Wir können sprechen.» | Verdichtung | wie 2b | k771 bis k773 |
+| 19 | «Die Stimme wird lauter, Vorwürfe beginnen, der Körper spannt sich an.» | `kommunizieren` › `moment`, «Es wird eng.» | Verdichtung | wie 2b | k779 bis k781 |
+| 19a | «Stoppen Sie, und schaffen Sie Abstand.» (Ende der Beschreibung; der Beispielsatz danach entfällt) | `kommunizieren` › `moment`, «Es ist gerade zu viel.» | Auftrag 2b-K, Abschnitt 5 a (K-K-a1, P2b-F-12) | geändert (2b-K) | k787 bis k789, k659, k803 |
+| 20 | «Wie Anspannung in einem Gespräch steigen und wieder sinken kann, erklärt die Seite «Verstehen» im Abschnitt «Wenn die Anspannung steigt».» | `kommunizieren` › `moment` | Verweissatz | wie 2b | k969 |
+| 21 | «Dann müssen Sie ihn unter Anspannung nicht erst suchen.» | `kommunizieren` › `moment`, «Was Sie tun können» | Verdichtung | wie 2b | k807, k808 |
+| 22 | «Jetzt Sicherheit oder Pause, später Klärung» (Zwischentitel) | `kommunizieren` › `moment` | Verdichtung | wie 2b | k131 |
+| 23 | «Dafür sind Sie nicht verantwortlich, auch wenn Sie versuchen, die Lage zu beruhigen.» | `kommunizieren` › `moment` | Verdichtung | wie 2b | k134 |
+| 24 | «Auch wer verletzend war, kann später Verantwortung übernehmen:» (Einleitung) | `kommunizieren` › `moment` | neu | wie 2b | k970 |
+| 24a | «Grenzen dafür, wie lange oder wann Sie sprechen, wirken am besten, wenn Sie sie in einer ruhigen Situation ankündigen, nicht mitten in einem Konflikt.» | `kommunizieren` › `moment` | Auftrag 2b-K, Abschnitt 5 a | geändert (2b-K) | g208 |
+| 25 | «Wenn aus einem Austausch plötzlich Streit, Rückzug oder Rechtfertigung wird, können kurze Schritte helfen.» | `kommunizieren` › `kippen` | Verdichtung | wie 2b | k211, k692, k699 |
+| 26 | «Bei Bedrohung oder Gewalt beenden Sie das Gespräch, schaffen Abstand und bringen sich in Sicherheit.» (vor dem Verweis im Text) | `kommunizieren` › `kippen` | Verdichtung | wie 2b | k150, k719, k796, k925 |
+| 27 | «Was bei Gewalt wichtig ist, steht auf der Seite «Grenzen» im Abschnitt «Wenn Gewalt oder Bedrohung vorkommt».» | `kommunizieren` › `kippen` | Verweissatz | wie 2b | k971 |
+| 28 | «Sie können auch sagen, was Sie tun:» (Einleitung zu «Ich spreche langsamer.») | `kommunizieren` › `kippen`, Schritt 1 | neu | wie 2b | k972 |
+| 29 | «Eine Grenze in drei Teilen» (Zwischentitel) und «Drei kurze Teile helfen, eine Grenze klar zu sagen, ohne in lange Rechtfertigungen oder in Streit zu geraten.» | `kommunizieren` › `kippen` | Verdichtung | wie 2b | g575, g576, g581, g595 bis g597 |
+| 30 | «Wie Sie ein Anliegen in Ruhe vorbereiten, steht auf der Seite «Grenzen» im Abschnitt «DEAR: ein Anliegen klar formulieren».» | `kommunizieren` › `kippen` | Verweissatz | wie 2b | k973 |
+| 31 | «Beispiel-Dialog: von der Anspannung bis zur Pause» (Titel der Vertiefung) | `kommunizieren` › `kippen` | Verdichtung | wie 2b | k892 |
+| 32 | «Harte oder vorwurfsvolle Aussagen können treffen und Angehörige stark verunsichern.» | `kommunizieren` › `worte` | Verdichtung | wie 2b | k828, k835 |
+| 32a | «Die folgenden Sätze sind Beispiele und nicht typisch für alle Menschen mit Borderline.» | `kommunizieren` › `worte` | Auftrag 2b-K, Abschnitt 5 d | geändert (2b-K) | k837 |
+| 33 | «Wie Sie Suizidgedanken direkt ansprechen können, steht auf der Seite «Krisen begleiten» im Abschnitt «Wenn Suizidgedanken ein Thema sind».» | `kommunizieren` › `worte` | Verweissatz (Abschnitt 3) | wie 2b | k974 |
+| 34 | «So könnte es klingen» (Abschnittstitel) | `kommunizieren` › `beispiele` | Auftrag (Abschnitt 3) | wie 2b | k975 |
+| 35 | «Namen und «Person A» oder «Person B» bezeichnen keine festen Rollen und lassen sich nicht aus einer Diagnose ableiten.» | `kommunizieren` › `beispiele` | Verdichtung | wie 2b | r149, k265 |
+| 36 | «Nach einem Arztbesuch» (Titel des Beispiels) | `kommunizieren` › `beispiele` | neu | wie 2b | k507 |
+| 37 | «Robin kommt um 20 Uhr.» | ebenda | Verdichtung | wie 2b | k382 |
+| 38 | «Robin, wenn Zeit für ein Gespräch ist» und «Robin, wenn die Kraft nicht mehr reicht» (Bezeichnungen) | ebenda | neu | wie 2b | k976, k977 |
+| 39 | «Eine Bitte um Geld» (Titel) und «Grenzen beim Geld sind oft besonders schwer, weil sie sich anfühlen können wie «ich lasse dich fallen».» | `kommunizieren` › `beispiele` | Verdichtung | wie 2b | g209, g214 |
+| 40 | «Wie Sie nach einem Konflikt Kontakt anbieten können, steht auf der Seite «Ihre Rolle» im Abschnitt «Nach Konflikten und Rückzug».» | `kommunizieren` › `beispiele` | Verweissatz | wie 2b | k978 |
+| 41 | «Weitere Beispiele stehen auf der Seite «Grenzen» im Abschnitt «Sätze für typische Situationen».» | `kommunizieren` › `beispiele` | Verweissatz | wie 2b | k979 |
+| 42 | «Grundlage: Die Beispiele sind eigene didaktische Ableitungen aus den Ansätzen auf dieser Seite, kein auf Wirksamkeit geprüftes Übungsprogramm.» | `kommunizieren` › `beispiele` | Verdichtung | wie 2b | k263, k264 |
+| 43 | «Wie sich Grenzen je nach Rolle unterscheiden, steht auf der Seite «Grenzen» im Abschnitt «Grenzen in verschiedenen Angehörigenrollen».» | `kommunizieren` › `rollen` | Verweissatz | wie 2b | k980 |
+| 44a | «Bei unmittelbarer Gefahr oder wenn Sie nicht einschätzen können, wie dringend es ist, holen Sie sofort Hilfe und schützen sich selbst.» (erster Absatz, vor dem Verweis im Text) | `krise` › `belastung` | Auftrag 2b-K, Abschnitt 3 a (P2b-F-2, -6) | neu (2b-K) | c2, c68 |
+| 45 | «Sie können jederzeit direkt Hilfe holen.» | `krise` › `belastung` | Verdichtung | wie 2b | c11 |
+| 45a | «Die Bereiche bewerten keine Diagnose und sagen nicht voraus, wie sich eine Situation entwickeln wird.» | `krise` › `belastung` | Auftrag 2b-K, Abschnitt 3 a | geändert (2b-K) | c34 |
+| 45b | «Wenn Sie nicht wissen, ob die Person einen Plan hat, bedeutet das keine Sicherheit.» | `krise` › `belastung` | Auftrag 2b-K, Abschnitt 3 a | geändert (2b-K) | c69 |
+| 46 | «Während einer Krise» (Abschnittstitel) | `krise` › `waehrend` | Auftrag (Abschnitt 5) | wie 2b | c72 |
+| 47 | «Im Gespräch» (Zwischentitel) | `krise` › `waehrend` | neu | wie 2b | c300 |
+| 48 | «Wenn ein Gespräch kippt» (Zwischentitel) | `krise` › `sagen` | neu | wie 2b | c301 |
+| 49 | «Wie Sie Gefühle anerkennen können, ohne zuzustimmen, steht auf der Seite «Zugewandt und klar sprechen» im Abschnitt «Anerkennen, ohne zuzustimmen».» | `krise` › `sagen` | Verweissatz (Abschnitt 5) | wie 2b | c302 |
+| 49a | «Bei Bedrohung oder Gewalt gehen Sie auf Abstand, bringen sich in Sicherheit und holen Hilfe über den Notruf.» (vor dem Verweis im Text) | `krise` › `sagen` | Auftrag 2b-K, Abschnitt 3 c (P2b-F-1) | neu (2b-K) | c106, c279 |
+| 51 | «Ein Satz kann so klingen:» und «Zum Aussteigen reicht:» (Einleitungen) | `krise` › `sagen` | Auftrag 2b-K, Abschnitt 3 c (P2b-F-8) und neu | geändert (2b-K) | c263, c275, c276 |
+| 52 | «Wie Sie ein kippendes Gespräch verlangsamen und eine Grenze in drei Teilen sagen, steht auf der Seite «Zugewandt und klar sprechen» im Abschnitt «Wenn Gespräche kippen».» | `krise` › `sagen` | Verweissatz (Auftrag 2b-K, Abschnitt 3 c, P2b-F-8) | geändert (2b-K) | c303 |
+| 53 | «Wenn Sie sich konkret sorgen, fragen Sie ruhig und direkt, ob die Person Suizidgedanken oder einen Plan hat.» «Das kann helfen, die Lage zu verstehen.» «Bleiben Sie bei der Person nur, soweit dies für Sie sicher möglich ist.» «Direkt nachzufragen, löst nach heutigem Wissensstand keine suizidale Handlung aus.» | `krise` › `suizid` | Auftrag (Wortlaut von `verstehen`, Abschnitt 2b und 5) | wie 2b | c304 bis c307 |
+| 54 | «Diese Beurteilung ist Aufgabe von Fachpersonen, nicht von Angehörigen.» | `krise` › `suizid` | Verdichtung | wie 2b | c125 |
+| 54a | «Quellen: … NICE NG225 (2022), fachliche Beurteilung nach Selbstverletzung, keine Vorhersage durch pauschale Risikostufen; WHO, Suicide: Questions and answers (2026), direktes Fragen löst nach heutigem Wissensstand keine suizidale Handlung aus.» (Quellenzeile) | `krise` › `suizid` | Auftrag 2b-K, Abschnitt 4 b (P2b-F-4) | geändert (2b-K) | c123, c124 |
+| 55 | «Was Sie in einer Krise vermeiden sollten» (Abschnittstitel) und «In einer Krise sollten Sie vermeiden,» (Einleitung) | `krise` › `vermeiden` | Auftrag 2b-K, Abschnitt 4 a (P2b-F-3) | geändert (2b-K) | c126, c308 |
+| 55a | «Bei möglicher unmittelbarer Lebensgefahr holen Sie sofort Hilfe über den Notruf.» (vor dem Verweis im Text) | `krise` › `danach` | Auftrag 2b-K, Abschnitt 3 d (P2b-F-1) | geändert (2b-K) | c139, c190 |
+| 56 | «Nach einer Krise können Scham, Reue, Erleichterung, Ärger, Rückzug oder ganz andere Reaktionen auftreten.» | `krise` › `danach` | Auftrag (Wortlaut von `rolle`, Abschnitt 2b) | wie 2b | c141 |
+| 57 | «Welche fachliche Nachsorge nötig ist, klärt die betroffene Person mit dem Behandlungsteam. Dabei kann auch geklärt werden, welche Rolle Sie freiwillig übernehmen können.» | `krise` › `danach` | Verdichtung | wie 2b | c149 |
+| 57a | «Fachliche Nachsorge und erreichbare Kontakte klärt die betroffene Person mit dem Behandlungsteam.» | `krise` › `danach`, Vertiefung «Drei mögliche Anliegen» | Auftrag 2b-K, Abschnitt 4 c (P2b-F-7) | geändert (2b-K) | c188 |
+| 57b | «Vereinbarte Hilfe überprüfen: Die betroffene Person klärt mit dem Behandlungsteam, welche professionelle Unterstützung vorgesehen und erreichbar ist, wenn sie möchte, gemeinsam mit Ihnen.» | `krise` › `danach`, Vertiefung «Früh erkennen und Absprachen treffen» | Auftrag 2b-K, Abschnitt 4 c (P2b-F-7) | geändert (2b-K) | c204 |
+| 58 | «Wie die Fachstelle Angehörigenarbeit der PUK berät, steht auf der Startseite im Abschnitt «Beratung für Sie».» | `krise` › `danach` | Verweissatz | wie 2b | c309 |
+| 59 | «Kurze Übungen für Momente, in denen es zu viel ist, stehen auf der Seite «Auf sich achten» im Abschnitt «Wenn es gerade zu viel ist».» | `krise` › `danach` | Verweissatz | wie 2b | c310 |
+| 60 | «Wenn Sie später zurückschauen möchten:» (Einleitung) | `krise` › `danach` | neu | wie 2b | c311 |
+| 61 | «Sie dürfen dabei auch eigene Verletzungen und Grenzen ansprechen. Was Sie gemeinsam nicht klären können, können Sie mit Unterstützung von aussen besprechen.» | `krise` › `danach`, Vertiefung «Gemeinsame Nachbesprechung» | Verdichtung | wie 2b | c193, c194 |
+| 62 | «Dabei muss niemand nach einer einzigen Ursache suchen.» | `krise` › `danach`, Vertiefung | Verdichtung | wie 2b | c196 |
+| 63 | «Achten Sie auf diese Hinweise:» (Einleitung) | `krise` › `bleibt` | neu | wie 2b | c312 |
+| 64 | «Bei akuter Gefahr schützen Sie sich und holen sofort Hilfe.» (vor dem Verweis im Text) | `krise` › `bleibt` | Verdichtung | wie 2b | c212 |
+| 64a | «Weitere Behandlungsschritte klärt die betroffene Person mit dem Behandlungsteam.» | `krise` › `bleibt` | Auftrag 2b-K, Abschnitt 4 c (P2b-F-7) | geändert (2b-K) | c213 |
+| 65 | «Was bei Gewalt oder Bedrohung wichtig ist, steht auf der Seite «Grenzen» im Abschnitt «Wenn Gewalt oder Bedrohung vorkommt».» | `krise` › `bleibt` | Verweissatz | wie 2b | c239 |
+| 66 | «Vereinbaren Sie, welche vertraute erwachsene Person das Kind betreut, wohin es gehen kann und wer einspringt, wenn diese ausfällt. Besprechen Sie den Plan in einfachen Worten. Das Kind darf Fragen stellen, Gefühle zeigen und seinen Alltag behalten.» | `krise` › `bleibt`, Kinder | Auftrag (Wortlaut von `grenzen`, Abschnitt 2b) | wie 2b | c217 bis c219 |
+| 67 | «Wie Sie Kindern die Erkrankung erklären und die Betreuung planen, steht auf der Seite «Ihre Rolle» im Abschnitt «Wenn Kinder mitbetroffen sind».» | `krise` › `bleibt` | Verweissatz (Abschnitt 5) | wie 2b | c221, i39 |
+| 68 | «Ich weiss nicht, was ich sagen soll, wenn es schwierig wird.» (Anliegen) | `index` › `einstiege` | Auftrag (Abschnitt 6) | wie 2b | i257 |
+| 69 | «Zugewandt und klar sprechen: zuhören, nachfragen, eigene Anliegen nennen und Pausen machen.» (Beschreibung) | `index` › `einstiege` | Auftrag (Abschnitt 6) | wie 2b | i19, i20, k4 |
+| 70 | «Weitere Einstiege folgen: Genesung · Unterstützung finden.» (Platzhalter) | `index` › `einstiege` | Auftrag (Abschnitt 6) | wie 2b | i25 bis i28 |
+
+### Korrektur 2b-K: Aufgefallen, nicht geändert
+
+Der Auftrag sagt «Was dieser Auftrag nicht nennt, bleibt.» Diese Stellen sind deshalb nicht geändert:
+
+1. **Seitenbeschreibung von `krise`** (`site.config.json` › `pages` › `description`, Meta-Beschreibung): «… Suizidgedanken ansprechen, was Sie eher vermeiden, …» passt nicht mehr zum Titel «Was Sie in einer Krise vermeiden sollten» (P2b-F-3). Ebenso `v-kr-vermeiden` › `goal`: «Erkennen, was in einer Krise eher nicht hilft».
+2. **`v-ko-tassen` › `reason`:** «… die rechte Tasse steht 2 Einheiten weiter rechts als in der Skizze, damit beide Tassen spiegelgleich zur Tischmitte stehen.» beschreibt den Stand vor dem Verschieben; spiegelgleich sind die Tassen weiter, aber nicht mehr an der Stelle der Skizze.
+3. **K-K-a1 bei «Nächster Schritt»** (`kippen`): «Ich beende das Gespräch jetzt und entscheide später, ob ich wieder ansprechbar bin.» bleibt. Die Prüfrunde hatte auch diesen Satz zum Bündeln vorgeschlagen; der Auftrag nennt nur «Es ist gerade zu viel.» (Abschnitt 5 a) und hält in Abschnitt 7 (k726) den Satz fest.
+4. **Reihenfolge in «Pause statt Streit»:** Die Einleitung nennt die Anspannungskurve, der Verweissatz mit Link auf die Kurve steht erst nach der Liste. Wer `verstehen` nicht kennt, erfährt erst dort, welche Kurve gemeint ist. Vorschlag zur Prüfung: Verweissatz direkt nach der Einleitung.
+5. **Übrige Einzelstellen aus P2b-S-3** stehen weiter: «keinen statistisch signifikanten Anstieg» (`suizid`, der Dazzi-Satz bleibt nach Abschnitt 5 e). «radikale Echtheit» steht im Lesefluss nicht mehr, nur noch im Titel der Vertiefung «6 · Radikale Echtheit: auf Augenhöhe bleiben», wo die Stufe erklärt wird.
+6. **`sagen` nach der Korrektur:** Der Zwischentitel «Wenn ein Gespräch kippt» steht über zwei kurzen Absätzen und dem Verweissatz. Der Standardsatz und der Ausstiegssatz stehen wie bisher in einem Absatz; bei 360 px sind das acht Zeilen.
+
 **Stand 10.10.2026 · Etappe 2b · bauende Sitzung (Claude Code).** Umgesetzt ist `BAUAUFTRAG-ETAPPE-2B.md`: neue Seiten `kommunizieren` («Zugewandt und klar sprechen») und `krise` («Krisen begleiten»), ein neuer Einstieg auf `index`, `site.config.json` und der Abgleich. Die Seiten der Etappen 1 und 2a sind unverändert (`git diff` auf `content/` und den gebauten Seiten: nur `index` › `einstiege`, `kommunizieren`, `krise`). Keine Prüfstufe ist «erledigt»; W1 bis R3 für Etappe 2b braucht eine Sitzung, die nicht gebaut hat. Der Block «Freigabe 2a eintragen» steht darunter.
 
 **Auftrag im Website-Ordner:** Die Datei lag zuerst nicht im Stamm eines Branches. Die bauende Sitzung hat den Anhang aus dem Chat unverändert in den Website-Ordner gelegt (`7263395`). Danach kam `BAUAUFTRAG-ETAPPE-2B_1.md` in den Stamm von `main` (`921e586`); sie ist Zeichen für Zeichen gleich (`cmp`), ist dort gelöscht (`a92d5d1`) und in `borderline-umbau` zusammengeführt (`ca42f76`).
