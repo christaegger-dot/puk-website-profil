@@ -62,10 +62,22 @@
 .puk-vis-path__n{display:block;font:var(--type-caption);color:var(--text-default)}
 .puk-vis-path h3{margin:var(--space-1) 0;font:var(--type-body);font-weight:var(--fw-medium);color:var(--text-default)}
 .puk-vis-path p{margin:0;font:var(--type-body-sm);color:var(--text-muted)}
-/* D · Redaktionelle Illustration als abstrakter Platzhalter */
+/* D · Platzhalter für fremde Bilder ohne freigegebene Quelle oder eine noch fehlende Zeichnung */
 .puk-vis-illu{position:relative;aspect-ratio:16/9;background:var(--ui-field);border:1px dashed var(--puk-blue-50);overflow:hidden;display:grid;place-items:center}
 .puk-vis-illu svg{position:absolute;inset:0;width:100%;height:100%}
 .puk-vis-illu__stamp{position:relative;margin:0;padding:var(--space-2) var(--space-3);background:var(--puk-white);border:1px solid var(--border-default);font:var(--type-caption);color:var(--text-default);text-align:center;max-width:80%}
+/* D · Szene (Profilentscheid 10.10.2026): eigene Linienzeichnung, beschriftet mit Sätzen aus Sicht von Menschen als HTML-Text.
+   Ein Bild, eine Idee; keine Namen von Bildteilen, keine Liste zum Entschlüsseln. Kurven und runde Linienenden, keine Bauplan-Optik.
+   Höchstens eine Fläche __accent (Blau 100). Schmal stehen die Sätze über der Zeichnung. */
+.puk-vis-scene{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--space-3) var(--space-6);align-items:end;max-width:760px}
+.puk-vis-scene__say{margin:0;padding:var(--space-1) 0 var(--space-1) var(--space-3);border-left:2px solid var(--puk-blue-100);font:var(--type-body);color:var(--text-default);max-width:28ch}
+.puk-vis-scene__say--b{justify-self:end}
+.puk-vis-scene__art{grid-column:1/-1;display:block;width:100%;height:auto}
+.puk-vis-scene__ln{fill:none;stroke:var(--puk-blue-100);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;vector-effect:non-scaling-stroke}
+.puk-vis-scene__ln--thin{stroke-width:1.5}
+.puk-vis-scene__soft{fill:var(--puk-blue-25)}
+.puk-vis-scene__paper{fill:var(--puk-white)}
+.puk-vis-scene__accent{fill:var(--puk-blue-100)}
 .puk-vis-meta{margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:var(--space-3) var(--space-6)}
 .puk-vis-meta dt{font:var(--type-caption);color:var(--text-muted)}
 .puk-vis-meta dd{margin:0;font:var(--type-body-sm);color:var(--text-default)}
@@ -101,6 +113,8 @@
   .puk-vis-cycle ol::after{content:"";position:absolute;right:var(--space-3);top:28px;bottom:28px;width:var(--space-5);border:2px solid var(--puk-blue-100);border-left:0}
   .puk-vis-cycle ol::before{content:"";position:absolute;right:calc(var(--space-3) + var(--space-5));top:22px;border-style:solid;border-width:7px 10px 7px 0;border-color:transparent var(--puk-blue-100) transparent transparent}
   .puk-vis-compare,.puk-vis-decision__branches{grid-template-columns:minmax(0,1fr)}
+  .puk-vis-scene{grid-template-columns:minmax(0,1fr)}
+  .puk-vis-scene__say--b{justify-self:start}
 }
 @container (max-width:760px){
   .puk-vis-path{grid-template-columns:minmax(0,1fr);gap:0}

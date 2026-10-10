@@ -13,6 +13,7 @@ Wie Darstellungen geplant, gebaut und geprüft werden. Was dargestellt wird und 
 | Format | Text oder Muster A–K |
 | Aussage oder Beziehung | Die konkrete Aussage, die die Darstellung zeigt |
 | Was wird besser verstanden? | Antwort auf die Prüffrage |
+| Wirkung | Was eine Angehörige in der Darstellung wiedererkennen oder spüren soll, in einem Satz (`resonance`) |
 | Quelle bzw. Kennzeichnung | Fachliche Quelle oder «Eigene didaktische Darstellung» |
 | Textalternative | Entwurf; bei komplexen Darstellungen Langbeschreibung im HTML |
 | Ansatzpunkt für Angehörige | Bei Kreislauf, Prozesspfad und Modell in Schritten: wo Angehörige ansetzen können, oder «entfällt: Begründung» (`entryPoint`) |
@@ -20,14 +21,15 @@ Wie Darstellungen geplant, gebaut und geprüft werden. Was dargestellt wird und 
 | Freigabe | Status der fachlichen Freigabe |
 
 ```markdown
-| Abschnitt | Erkenntnisziel | Format | Aussage | Besser verstanden | Quelle / Kennzeichnung | Textalternative | Ansatzpunkt | Begründung | Freigabe |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 01 … | … | … | … | … | … | … | … | … | ausstehend |
+| Abschnitt | Erkenntnisziel | Format | Aussage | Besser verstanden | Wirkung | Quelle / Kennzeichnung | Textalternative | Ansatzpunkt | Begründung | Freigabe |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 01 … | … | … | … | … | … | … | … | … | … | ausstehend |
 ```
 
 - **MUSS:** Bei Beziehungen, Kreisläufen, Prozessen, Veränderungen, Zuständen, Entscheidungen und emotional schwer zugänglichem Erleben ist eine Erklärform Standard. Ein Verzicht wird in «Begründung» kurz begründet («Text ist klarer: Aufzählung ohne Beziehung»).
 - **MUSS:** Jeder Abschnitt hat eine Zeile im Plan – mit Erklärform oder begründetem Verzicht. Im Starter verbindet `sectionId` die Zeile mit der `section`; das Gate meldet Abschnitte ohne Zeile (Entwurf: Hinweis, Produktion: blockiert).
 - **MUSS:** Kreislauf, Prozesspfad und Modell in Schritten nennen in `entryPoint` den Ansatzpunkt für Angehörige oder «entfällt: Begründung». Ein genannter Ansatzpunkt ist in der Figur markiert; das Gate prüft beides (Entwurf: Hinweis, Produktion: blockiert).
+- **MUSS:** Jede Darstellung (Format ausser Text) nennt in `resonance` ihre Wirkung: Was soll eine Angehörige darin wiedererkennen oder spüren? Bei Metaphern und Illustrationen steht in «Aussage» zusätzlich eine Skizze in Worten. Das Gate meldet eine fehlende Wirkung (Entwurf: Hinweis, Produktion: blockiert; Profilentscheid 10.10.2026).
 - **MUSS NICHT:** Es gibt keine Mindestzahl. Dekorative Bilder oder Stimmungsbilder erfüllen den Plan nicht.
 - **MUSS:** Bei mehr als acht Hauptkapiteln zeigt der Plan, wie die zentralen Erkenntnisschritte visuell getragen werden (etwa eine visuelle Kapitelübersicht und je eine Darstellung pro Schlüsselbeziehung).
 
@@ -44,14 +46,27 @@ Wie Darstellungen geplant, gebaut und geprüft werden. Was dargestellt wird und 
 
 ## Diagramme im Web
 
-Profilentscheid 06.10.2026, gilt für alle Muster:
+Profilentscheid 06.10.2026, gilt für alle Muster. Für Metaphern und Illustrationen gilt zusätzlich der Abschnitt «Metaphern und Illustrationen zeichnen»; wo sich beide widersprechen, gilt er.
 
 - **Schrift:** Rubik als HTML-Text (`type-body`, `type-body-sm`, `type-caption`), damit Screenreader lesen und Text umbrechen kann.
 - **Linien:** Linien, Pfeile und Konturen einheitlich **2 px** in `puk-blue-100`. Breitere Akzente (z. B. die 4-px-Oberkante im Vergleich, Linienstärke im Kontinuum) sind bedeutungstragende Flächen, keine Linien.
 - **Felder:** weiss mit Kontur; **höchstens ein gefülltes blaues Feld** pro Darstellung. Hellblaue Flächen (`puk-blue-25`) nur für Inhalte innerhalb einer Form (Wasser im Gefäss, verborgener Teil im Schichtenmodell).
-- **Grundfläche** `surface-diagram`; keine Schatten, Verläufe oder Symbolik. Rot und Gelb nur, wenn genau eine Aussage als Warnung oder Ausnahme markiert werden muss.
+- **Grundfläche** `surface-diagram`; keine Schatten, keine Verläufe als Hintergrund, keine Symbole ohne Bedeutung (Herzen, Glühbirnen, Ausrufezeichen). Rot und Gelb nur, wenn genau eine Aussage als Warnung oder Ausnahme markiert werden muss.
 - **Kontrast:** Linien und grafische Objekte mindestens 3:1, Text mindestens 4,5:1.
 - **Bedeutung ausserhalb der Farbe:** Nummer, Beschriftung, Linienart (durchgezogen/gestrichelt/doppelt), Linienstärke, Position.
+
+## Metaphern und Illustrationen zeichnen
+
+Profilentscheid 10.10.2026. Gilt für Muster D und für jede Darstellung, die ein Motiv oder eine Metapher zeigt. Was erlaubt ist und warum: Abschnitt «Visuelle Wissensvermittlung», «Ein Bild, eine Idee». Kopiervorlage: Muster D in `visualisierungsmuster.html` (Klasse `.puk-vis-scene`).
+
+- **Linien:** 2 px in `puk-blue-100` wie sonst, feine Nebenlinien 1,5 px (`__ln--thin`); wo die Sache es erlaubt als Kurven, immer mit runden Linienenden (`.puk-vis-scene__ln`, `.puk-vis-ln`). Ein Motiv darf leicht unregelmässig gezeichnet sein, nicht mit Lineal und Zirkel.
+- **Flächen:** Weiss (`__paper`), `puk-blue-25` (`__soft`) und höchstens eine Fläche `puk-blue-100` (`__accent`) für das, worauf die Aufmerksamkeit fällt. Innerhalb der Illustration sind dezente Tonwertverläufe zwischen `puk-blue-25` und Weiss erlaubt, nie als Hintergrund der Seite. Linien und Formen, die Bedeutung tragen, haben mindestens 3:1.
+- **Keine Bauplan-Zeichen:** keine Kästen für Menschen oder Gefühle, keine Bemassung, kein Raster, keine Querschnitte, keine Nummern oder Namen an Bildteilen.
+- **Beschriftung:** wenige Sätze aus Sicht von Menschen als HTML-Text, nahe beim Motiv (`.puk-vis-scene__say`). Keine Liste, die Bildteile übersetzt.
+- **Menschen:** nur als ruhige Linienfiguren oder Silhouetten in realistischen Proportionen (Abschnitt «Bildsprache»).
+- **Text um das Bild:** Kernaussage und Erklärtext sagen, was das Bild für Angehörige heisst, nicht wie es aufgebaut ist. «Was Sie tun können» steht im Text, nicht als Teil der Zeichnung.
+- **Ablauf:** Vor dem Bau eine Skizze in Worten und die Wirkung im Plan. Nach dem Bau Bildschirmfotos bei 1280 und 360 px. Die Fachstelle sieht das Bild, bevor sie es freigibt.
+- **Platzhalter** (`.puk-vis-illu`) nur für fremde Bilder ohne freigegebene Quelle oder solange eine Zeichnung noch fehlt.
 
 ## Schmale Bildschirme
 
@@ -103,5 +118,8 @@ Redaktioneller Check vor der fachlichen Freigabe (Stufe 4 im Abschnitt «Prüfun
 - [ ] Bei 320 px lesbar; Textalternative bzw. Langbeschreibung vollständig.
 - [ ] Theme «Hoher Kontrast» geprüft (keine festen Farbwerte in SVG).
 - [ ] Inhalt fachlich freigegeben.
+- [ ] Bildsprache passt zum Thema: kein Bauplan, Schaltplan oder Formular, wo es um Erleben oder Beziehung geht; die Wirkung (`resonance`) steht im Plan und das Bild löst sie ein.
+- [ ] Metapher ohne Code: ein Bild, eine Idee; Beschriftungen nennen Erleben, nicht Bildteile; keine Liste, die Bildteile übersetzt.
+- [ ] Keine ungewollten Bedeutungen: kein Motiv zeigt die betroffene Person als Gefahr oder Defekt, Angehörige als Teil einer Maschine oder bewertet einen Menschen.
 
 Ergebnis im Prüfbericht (`PRUEFBERICHT.md`) als Tabelle: je Punkt Ergebnis und Beleg (Seite und Abschnitt, Figur, Zitat). Die Prüfsitzung füllt den Check zusätzlich **je Figur** aus (Matrix Prüfpunkt × Figur: erfüllt, teilweise, nicht erfüllt, nicht anwendbar); erst so fallen Figuren auf, die einzeln nicht tragen. Ein Punkt ohne Beleg gilt als nicht geprüft. Die bauende Sitzung füllt die Tabelle nach jedem Bau als Selbstprüfung aus; als Stufe zählt nur die Prüfung durch eine Sitzung oder Person, die nicht gebaut hat (Abschnitt «Prüfung und Freigabe»).
