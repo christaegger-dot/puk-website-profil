@@ -1,4 +1,4 @@
-# Psychoedukations-Starter · PUK Website Kit 1.10.1-r4 · abgeleitet · Build r4-6
+# Psychoedukations-Starter · PUK Website Kit 1.10.1-r4 · abgeleitet · Build r4-7
 
 Lokal lauffähiger Mehrseiten-Starter für psychoedukative Websites. Abgeleitetes Profil auf Basis der kanonischen Quelle **PUK Zürich Design System 1.10.1**, nicht deren neue offizielle Version. Alle Inhalte sind synthetisch: keine realen Kontakte, Personen, klinischen Aussagen, Freigaben oder Bildrechte.
 
@@ -60,6 +60,7 @@ Seiten über einen lokalen Webserver öffnen (z. B. `npx serve` im Projektstamm 
   - Figuren ohne Bildlegende, Titel, Textalternative, Kennzeichnung oder Plan-Eintrag
   - Kreisläufe ohne geschlossene Schleife, mit «Uhrzeigersinn» ausserhalb der breiten Leserichtung oder ohne sichtbaren Rücksprung zu Station 1
   - Platzhalter ohne `data-source-status`/`data-approval-status` oder ohne sichtbare Entwurfsmarke
+  - Illustration (`illustration`) ohne eigene Zeichnung (`.puk-vis-scene`) und ohne Bildquelle- und Freigabestatus
   - generische Quellenlinks ohne sprechendes `aria-label`
   - Inline-Skripte (Content-Security-Policy), Links mit `target="_blank"` ohne `rel="noopener noreferrer"`
   - interaktive Komponenten ohne lokal vorhandenes `interaktion.js`
@@ -79,9 +80,9 @@ Seiten über einen lokalen Webserver öffnen (z. B. `npx serve` im Projektstamm 
 - `index.html`: Einstieg mit Lesepfaden; der Vollbericht ist ein Download-Platzhalter.
 - `seitenvorlage.html`: Entwurf, nicht in der Navigation.
 
-Stand 10.10.2026 (Build r4-6, Bildsprache «Ein Bild, eine Idee»; Assets r4-6 wegen `.puk-vis-scene` in `visual-patterns.css`):
+Stand 10.10.2026 (Build r4-7: eigene Zeichnungen mit `.puk-vis-scene` gelten als Illustration ohne Platzhalter; Build r4-6: Bildsprache «Ein Bild, eine Idee», Assets r4-6 wegen `.puk-vis-scene` in `visual-patterns.css`):
 - **Entwurfsgate:** 0 blockierende Befunde.
 - **Produktionsgate:** blockiert die offenen Freigaben und den unvollständigen Prüfbericht. Das ist erwartet. Der Prüfbericht braucht neu auch die Zeilen R1, R2 und R3 (Abschnitt «Pre-Release-Audits»); R3 nur bei «Go» auf «erledigt».
-- **Selbsttest:** 52 von 52 bestanden, auch in Kopien des Starters (neu: Visualisierungsplan ohne Wirkung `resonance`; seit r4-5: Produktion blockiert ohne «Go» im Freigabe-Audit R3; seit r4-4: Verweis im Text mit eigenem Wortlaut, auf Seite ohne sensibles Thema, in einer Vertiefung, ungeprüft in Produktion).
+- **Selbsttest:** 53 von 53 bestanden, auch in Kopien des Starters (neu: Illustration ohne eigene Zeichnung und ohne Bildstatus; seit r4-6: Visualisierungsplan ohne Wirkung `resonance`; seit r4-5: Produktion blockiert ohne «Go» im Freigabe-Audit R3; seit r4-4: Verweis im Text mit eigenem Wortlaut, auf Seite ohne sensibles Thema, in einer Vertiefung, ungeprüft in Produktion).
 
 Offen sind reale Screenreader-Läufe, ein Test mit Hardwaretastatur sowie Fach-, Bild- und Absenderfreigaben.

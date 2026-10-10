@@ -74,13 +74,6 @@
   .bl-fig--kurve .bl-fig__label{display:none}
 }
 
-/* Muster E, Annahmen: je Zeile die Annahme (kleiner) und die Einordnung (hervorgehoben, Erklärung in Seitenschrift) */
-.bl-myths.puk-vis-compare{grid-template-columns:minmax(0,1fr);gap:var(--space-5)}
-.bl-myth{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,3fr);gap:var(--space-5);align-items:start}
-.bl-myth__claim{margin:0;padding-top:var(--space-5);font:var(--type-body-sm);color:var(--text-default)}
-.bl-myth .puk-vis-compare__col h3{margin:0}
-.bl-myth .puk-vis-compare__col p{margin:var(--space-2) 0 0;font-size:var(--web-size-body);font-weight:var(--web-fw-body);line-height:var(--lh-body);color:var(--text-default)}
-
 /* Muster E, Zwei Sichten: je Schritt eine Zeile mit beiden Sichten; schmal je Schritt beide Sichten nacheinander */
 .bl-sichten.puk-vis-compare{grid-template-columns:minmax(0,1fr);gap:var(--space-6)}
 .bl-sicht{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--space-3) var(--space-6)}
@@ -88,15 +81,13 @@
 .bl-sicht .puk-vis-compare__col p:not(.puk-vis-compare__key){margin:var(--space-2) 0 0;font-size:var(--web-size-body);font-weight:var(--web-fw-body);line-height:var(--lh-body);color:var(--text-default)}
 
 @container (max-width:560px){
-  .bl-myth{grid-template-columns:minmax(0,1fr);gap:var(--space-2)}
-  .bl-myth__claim{padding-top:0}
   .bl-sicht{grid-template-columns:minmax(0,1fr)}
 }
 
 /* Schrift in Figuren: Überschriften, «Was hilft» und Ansatzpunkte nicht kleiner als der Erklärtext daneben.
    Überschriften im stärksten Gewicht des Profils (--fw-medium; einen Token für Fett gibt es nicht).
-   Figuren mit Erklärtext in Seitenschrift (21 px): Anspannungskurve (Regeln dort), Annahmen, Zwei Sichten. */
-.bl-myth .puk-vis-compare__col h3,.bl-sicht>h3{font-size:var(--web-size-h4);font-weight:var(--fw-medium);line-height:var(--lh-subheading)}
+   Figuren mit Erklärtext in Seitenschrift (21 px): Anspannungskurve (Regeln dort), Zwei Sichten. */
+.bl-sicht>h3{font-size:var(--web-size-h4);font-weight:var(--fw-medium);line-height:var(--lh-subheading)}
 .bl-sicht .puk-vis-compare__key{font-size:var(--web-size-body);font-weight:var(--fw-regular);line-height:var(--lh-subheading)}
 /* Figuren mit Erklärtext in type-body-sm (15 px): Bezeichnung «Ansatzpunkt» in der Schleife und im Ansatzpunkt-Kasten */
 .puk-vis-cycle__key,.puk-vis-ansatz__key{font:var(--type-body-sm);font-weight:var(--fw-medium)}

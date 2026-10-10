@@ -44,10 +44,36 @@ Nach jedem Bau ohne Nachfrage ausfüllen: Visualisierungs-Check wie unten, mit B
 
 `index` ist unverändert. Die Prüfstufen bleiben offen. Diese Selbstprüfung ersetzt die der Korrektur 1g (Stand `3f94087`). Sie ist nicht die Stufe «Visualisierungs-Check».
 
+### Nachtrag: Gate-Korrektur r4-7 (10.10.2026)
+
+Das Profil-Update `update-2026-10-10b.patch` (Commit `664dff4` auf `main`) behebt die Gate-Lücke aus 1h. Eine Illustration mit `.puk-vis-scene` gilt jetzt als eigene Zeichnung.
+
+- **Zusammenführen:** `main` in `borderline-umbau`, ohne Konflikt (Merge-Commit `56f5438`). Damit sind auch `skizze-eisberg.png` und `skizze-momentaufnahmen.png` aus dem Stamm entfernt.
+- **Werkzeuge:** Aus dem Starter übernommen sind `tools/contract.js` und, auf Rückfrage wie in 1h, `gate.html` und `README.md`. `diff -rq tools/` und `cmp` gegen den Starter ergeben keine Unterschiede.
+- **«Momentaufnahmen»:** Auf der Seite steht `data-visual-type="illustration"`, im Plan `format` «illustration», wie 1H verlangt. Aus `reason` ist der Satz «Vorläufig als «figure» geführt: …» gestrichen; `reason` steht wieder im Wortlaut von 1H.
+- **`$comment`:** um «Gate-Korrektur 10.10.2026 übernommen: Build r4-7» ergänzt. `assetVersion` bleibt r4-6, weil das Patch keine Assets ändert.
+- **`borderline.css`:** Vorher `grep`: `bl-myth` kommt in keiner Seite und keinem Skript vor. Entfernt sind:
+  - der Kommentar «Muster E, Annahmen …»
+  - 5 Regeln `.bl-myths` / `.bl-myth*`
+  - 2 Zeilen in `@container (max-width:560px)`; `.bl-sicht` bleibt dort
+  - der Selektor `.bl-myth .puk-vis-compare__col h3` in der gemeinsamen Regel mit `.bl-sicht>h3`
+  - «Annahmen» im Sammelkommentar
+
+  Danach liefert `grep -c bl-myth` 0 Treffer.
+- **`abgleich/README.md`:** Notiz in der Zeile «Momentaufnahmen» der Entscheide 1h. Kein Satz ist geändert; `pruefe-abgleich` ergibt 1763 Zeilen, 0 ohne Fundstelle.
+- **Prüfungen:**
+  - **Build:** r4-7, 0 blockierend, 20 Hinweise wie zuvor, kein `placeholder-status`.
+  - **Selbsttest:** 53/53.
+  - **Produktionsgate:** 19 blockierend wie zuvor (6 × `visual-approval`, 12 × `placeholder-approval`, 1 × `review-report`).
+  - **Chromium:** kein Überlauf bei 320 bis 1440 px. Die Bildschirmfotos aller sechs Figuren bei 1280 und 360 px und im Theme «kontrast» sind pixelgleich mit dem Stand vor dem Nachtrag.
+- **Im Visualisierungs-Check angepasst:** Zeile 1 sowie die Punkte «Abweichungen vom Auftrag» und «Design-System». Die Bewertungen E/T/N bleiben.
+
+Die Angaben unten beschreiben den Stand von 1h. Wo der Nachtrag sie überholt, ist das vermerkt.
+
 **Gates und Skripte:**
 
 - **`node tools/build.mjs`:**
-  - 15 Seiten, Build r4-6, 0 blockierend.
+  - 15 Seiten, Build r4-6, 0 blockierend (seit dem Nachtrag Build r4-7).
   - 20 Hinweise:
     - 6 Visualisierungen nicht freigegeben
     - 12 Platzhalter nicht freigegeben
@@ -55,7 +81,7 @@ Nach jedem Bau ohne Nachfrage ausfüllen: Visualisierungs-Check wie unten, mit B
     - Prüfbericht offen
   - Vor 1h waren es 21 Hinweise. `v-vs-mythen` ist jetzt eine Textzeile im Plan.
   - Kein Hinweis `resonance` und kein Hinweis `visual-plan`.
-- **`node tools/gate.mjs --selftest`:** 52/52 bestanden.
+- **`node tools/gate.mjs --selftest`:** 52/52 bestanden (seit dem Nachtrag 53/53).
 - **`node tools/gate.mjs --production`:**
   - Blockiert erwartungsgemäss mit 19 Befunden:
     - 6 × `visual-approval`
@@ -100,7 +126,7 @@ Nach jedem Bau ohne Nachfrage ausfüllen: Visualisierungs-Check wie unten, mit B
 | 4 Kurve: Beschriftungen, Stelle 4 | umgesetzt | an der Kurve «Wir können sprechen.», «Es wird eng.», «Es ist gerade zu viel.», «Es wird wieder ruhiger.»; Überschrift in der Liste «Es wird wieder ruhiger.»; Text und Beispiel gleich |
 | 4 Kurve: Kurzbeschreibung | umgesetzt | «4 «Es wird wieder ruhiger.»» |
 | 4 Kurve: Prüfung bei 1280 px | erfüllt | Beschriftung 4 endet 152 px vor dem rechten Rand der Figur und überdeckt die Kurve nicht (Bildschirmfoto). Sie reicht 80 px über das Ende der Linie hinaus. Bei 768 px verbreiterte die längere Beschriftung die Seite um 16 px. Deshalb stehen unter 800 px Containerbreite (vorher 560 px) nur die Ziffern an der Kurve; die Liste darunter nennt alle vier Sätze |
-| 4 Momentaufnahmen: Figur | umgesetzt, eine Abweichung | `puk-vis-figure puk-vis-figure--open`, Bezeichnung, Kernaussage, Kurztext, Szene mit SVG zeichengleich, Vertiefung mit Titel, Kurzbeschreibung und Kennzeichnung nach dem Auftrag. **Abweichung:** `data-visual-type="figure"` statt «illustration». Das Gate r4-6 blockiert eine Illustration ohne Platzhalter oder Bild mit Bildnachweis (`placeholder-status`, `tools/contract.js` Zeile 333). Entscheid auf Rückfrage: vorläufig «figure»; die Lücke gehört ins Design-System |
+| 4 Momentaufnahmen: Figur | umgesetzt, eine Abweichung | `puk-vis-figure puk-vis-figure--open`, Bezeichnung, Kernaussage, Kurztext, Szene mit SVG zeichengleich, Vertiefung mit Titel, Kurzbeschreibung und Kennzeichnung nach dem Auftrag. **Abweichung:** `data-visual-type="figure"` statt «illustration». Das Gate r4-6 blockiert eine Illustration ohne Platzhalter oder Bild mit Bildnachweis (`placeholder-status`, `tools/contract.js` Zeile 333). Entscheid auf Rückfrage: vorläufig «figure». **Seit dem Nachtrag r4-7 erledigt:** `data-visual-type="illustration"` |
 | 4 Momentaufnahmen: CSS | umgesetzt | Pendel-Regeln, `.bl-parts` und der Pendel-Teil der Media Query entfernt (vorher `grep`). Regeln des alten Eisbergs gab es in `borderline.css` nicht. Die Szene nutzt nur Profilklassen |
 | 4 Annahmen | umgesetzt | `figure` entfällt mit «Abbildung 4», Bildlegende und Kurzbeschreibung. Kernaussage und Kurztext als zwei Absätze, sieben Paare als `dl` wie in `grenzen` › 09, Quellenzeile `<p><strong>Quellen:</strong> …</p>`. Die Liste steht vor dem Zwischentitel zum Suizid; Begründung unter «Entscheide» |
 | 5 Schleife: drei Zeilen | umgesetzt | je Station `bl-cycle__who` («Schwester» oder «Betroffene Person», `type-body-sm`, mittleres Gewicht), `bl-cycle__ex` (Beispielsatz, `type-body`), `puk-vis-cycle__n` («Station 1 · Ereignis» usw., `type-caption`). Wortlaut sonst gleich |
@@ -110,7 +136,7 @@ Nach jedem Bau ohne Nachfrage ausfüllen: Visualisierungs-Check wie unten, mit B
 | 6 DEAR | umgesetzt | `<span class="puk-vis-path__n">1</span>` bis `4`; sonst gleich (Skript) |
 | 7 `resonance` | umgesetzt | sechs Einträge im Wortlaut (Wortlaut-Skript); kein Gate-Hinweis `resonance` |
 | 7 `v-vs-eisberg` | umgesetzt | `statement`, `alternative` und Satz am Ende von `reason` im Wortlaut |
-| 7 `v-vs-bewertungen` | umgesetzt, eine Abweichung | `statement`, `understood`, `alternative`, `reason` und `approvalStatus` im Wortlaut. `format` «figure» statt «illustration» (siehe oben); `reason` nennt das in einem zweiten Satz |
+| 7 `v-vs-bewertungen` | umgesetzt, eine Abweichung | `statement`, `understood`, `alternative`, `reason` und `approvalStatus` im Wortlaut. `format` «figure» statt «illustration» (siehe oben); `reason` nannte das in einem zweiten Satz. **Seit dem Nachtrag r4-7:** `format` «illustration», `reason` ohne diesen Satz |
 | 7 `v-vs-mythen` | umgesetzt | `format` «text», `statement`, `source`, `alternative` «–», kein `understood`, `reason` im Wortlaut |
 | 2 Regeln | eingehalten, mit den genannten Abweichungen | keine eigenen Formulierungen auf den Seiten (Wortlaut-Skript); keine `style`-Attribute, keine festen Farben in SVG, keine `tel:`-Links (`grep`: 0); Beschriftungen als HTML-Text |
 
@@ -192,7 +218,7 @@ Skripte `abgleich/kennzahlen.mjs`, `abgleich/verneinung.mjs` und `abgleich/bedie
   - Suizid-Absatz und Verweis im Text sind unverändert.
 - **Fetter erster Satz bei Annahme 2:** Die Einordnung hatte als Überschrift zwei Sätze. Beide sind fett, damit der Wortlaut gleich bleibt.
 - **Schwellen 800 und 700 px:** für Eisberg und Kurve 800 px statt 560 px, für die Schleife 700 px statt 660 px; Begründung oben. Die Kommentare in `borderline.css` nennen den Grund.
-- **CSS der Annahmen:** Die Regeln `.bl-myth*` (8 Zeilen) werden nicht mehr verwendet. Der Auftrag nennt sie nicht; sie sind stehen geblieben.
+- **CSS der Annahmen:** Die Regeln `.bl-myth*` wurden nicht mehr verwendet. Sie sind mit dem Nachtrag r4-7 entfernt.
 - **Skizzen im Stamm:** siehe «Auftrag verschieben».
 
 ### Kennzahlen aller Seiten (Skript `abgleich/kennzahlen.mjs`)
@@ -223,7 +249,7 @@ Mit Korrektur 1h gibt es 6 Figuren:
 
 | Nr. | Prüfpunkt | Ergebnis | Beleg | Massnahme |
 | --- | --- | --- | --- | --- |
-| 1 | Visualisierungsplan liegt vor; die Seiten entsprechen ihm | erfüllt | Build ohne Hinweis `visual-plan`. Jede Figur trägt `data-visual-id` und `data-visual-type` wie im Plan. `v-vs-bewertungen` steht im Plan und auf der Seite vorläufig als «figure» | Format «illustration», sobald das Gate eigene SVG-Zeichnungen zulässt (Design-System) |
+| 1 | Visualisierungsplan liegt vor; die Seiten entsprechen ihm | erfüllt | Build ohne Hinweis `visual-plan`. Jede Figur trägt `data-visual-id` und `data-visual-type` wie im Plan. `v-vs-bewertungen` steht im Plan und auf der Seite als «illustration» (seit Build r4-7) | – |
 | 2 | Jeder Abschnitt hat eine Zeile im Plan; Begründungen für reinen Text passen zum Inhalt | teilweise | `v-vs-mythen` als Text: «Text ist klarer: Annahme und Einordnung sind Paare ohne Bildform; …». Schleife wie bisher: F-W2-02 | W2 entscheidet F-W2-02 |
 | 3 | Prüffrage je Darstellung konkret beantwortet; die Darstellung zeigt, was die Antwort verspricht | erfüllt | Momentaufnahmen: `understood` «… Das Album zeigt auf einen Blick, dass es mehr als zwei Bilder gibt.» Das Bild zeigt das Album mit kleinen Fotos und zwei herausgenommenen. Eisberg: Wörter im Bild, oben und unten ohne Zuordnung | – |
 | 4 | Jede Figur hat Kernaussage und Erklärtext; die Hauptaussage für Angehörige steht nicht nur in der Vertiefung | erfüllt | Momentaufnahmen: Kernaussage und Kurztext mit drei Sätzen sichtbar, Figur offen. Die Vertiefung ergänzt nur, was den Blick färben kann | – |
@@ -313,10 +339,9 @@ Mit Korrektur 1h gibt es 6 Figuren:
   - `beziehungen`: 1564 Wörter.
   - `grenzen`: 1601 Wörter.
 - **Abweichungen vom Auftrag**, mit Grund oben:
-  - `v-vs-bewertungen` als «figure» statt «illustration».
   - Schwellen 800 und 700 px.
   - `radius-md`, Entscheid auf Rückfrage.
-- **Design-System:** Das Gate r4-6 kennt für eine eigene SVG-Zeichnung als «illustration» keinen Weg ohne Platzhalter oder Bildnachweis. Das widerspricht der Arbeitsregel in `CLAUDE.md` des Repositorys: «Eigene Zeichnungen brauchen keine fremde Bildquelle, aber die fachliche Freigabe.»
+- **Design-System:** Die Gate-Lücke für eigene Zeichnungen als «illustration» ist mit Build r4-7 geschlossen (Gate-Korrektur 10.10.2026).
 - **Aus dem Audit offen:** BS-5 zweiter Teil (Fachstelle), BS-8 (Etappe 2).
 - **Offen für die Fachstelle:**
   - R3-W1-05, R3-W1-06, F-V-05, F-W1-11, F-W2-02, F-W2-03.
