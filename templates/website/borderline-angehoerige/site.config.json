@@ -133,11 +133,12 @@
           "sectionId": "eisberg",
           "goal": "Verstehen, dass Verhalten nur einen Teil zeigt und das Darunter offenbleibt",
           "format": "layer-model",
-          "statement": "Sichtbar: Wut, Vorwürfe, Lautwerden, Rückzug. Darunter möglich: Angst, Scham, Trauer, Einsamkeit, Anspannung. Keine Zuordnung zwischen oben und unten; was darunter liegt, lässt sich erfragen, nicht sicher ablesen. Der Abschnittstext nennt dieselben Begriffe (Korrektur W2-5, 09.10.2026; «Anspannung» statt «Stress» und Absicherung laut Korrektur 1b, D-4 und B-3).",
+          "statement": "Eisberg an einer weichen Wasserlinie, eigene Linienzeichnung: Über dem Wasser stehen im Eisberg Wut, Vorwürfe, Lautwerden, Rückzug; darunter Angst, Scham, Trauer, Einsamkeit, Anspannung – oder ganz andere Erfahrungen. Daneben die Frage «Wie ist es gerade für dich?». Keine Zuordnung zwischen oben und unten.",
           "understood": "Dass Verhalten nur die Oberfläche zeigt und das Darunter offenbleibt; die Schichten zeigen das auf einen Blick, auch die Grenze des Wissens.",
           "source": "Eigene didaktische Darstellung nach der Eisberg-Metapher (Handout «Eisberg»); Bezugspunkt Linehan (1993)",
-          "alternative": "Beschriftungen als HTML-Listen je Schicht; Textfassung über aria-describedby",
-          "reason": "Sichtbar und verborgen ist eine räumliche Beziehung. Zwei getrennte Schichten ohne Verbindungslinien zeigen zugleich, dass es keine Zuordnung gibt.",
+          "alternative": "Schmal: Zeichnung ohne Wörter, darunter beide Gruppen als Listen und die Frage; Textfassung über aria-describedby",
+          "reason": "Sichtbar und verborgen ist eine räumliche Beziehung. Zwei getrennte Schichten ohne Verbindungslinien zeigen zugleich, dass es keine Zuordnung gibt. Überarbeitet nach dem Bildsprache-Audit (BS-2), Entscheid Fachstelle 10.10.2026.",
+          "resonance": "Entlastung: Hinter einem heftigen Moment kann mehr stecken, und ich darf nachfragen, statt zu raten.",
           "approvalStatus": "ausstehend"
         },
         {
@@ -151,6 +152,7 @@
           "source": "Eigene didaktische Darstellung nach dem Handout «Die Anspannungskurve – Wann Reden hilft», mit Inhalten aus drei weiteren Handouts zur Anspannung (vereinfachtes Stressmodell, Hohe Anspannung, Zustands-Landkarte); Bezugspunkte Linehan (1993, 2015), Shields et al. (2016), Degasperi et al. (2021), Baranger et al. (2020), Santangelo et al. (2014), NICE CG78 (2009)",
           "alternative": "Die vier Stellen als geordnete Liste mit Nummer, Überschrift, Erklärsatz und Beispiel unter der Zeichnung, in allen Breiten; Beschriftungen als HTML-Text über der Zeichnung, unter 560 px entfallen nur diese, die Nummern bleiben; Textfassung über aria-describedby (p.puk-sr)",
           "reason": "Ein Verlauf im Gespräch lässt sich als Kurve zeigen. Alltagsworte statt Fachbegriffen, weil die Achse mit drei Bereichen für Laien verwirrend war (Rückmeldung der Fachstelle, 09.10.2026). Vier Handouts zum selben Mechanismus bleiben in einer Darstellung verbunden.",
+          "resonance": "Wiedererkennen und Erlaubnis: So kann ein Gespräch kippen, und ich darf eine Pause machen.",
           "approvalStatus": "ausstehend",
           "entryPoint": "Stelle 2 «Es wird eng»: nicht weiter argumentieren, weniger Druck machen, das eigene Tempo senken, auf die eigene Anspannung achten und eine Pause anbieten; die andere Person müssen Sie nicht beruhigen (in der Figur mit doppeltem Ring markiert)."
         },
@@ -160,11 +162,12 @@
           "sectionId": "bewertungen",
           "goal": "Verstehen, dass Bewertungen unter starker Anspannung weiter ausschlagen und zurückschwingen können",
           "format": "figure",
-          "statement": "Pendel mit Aufhängepunkt (Muster A), beide Bögen Kreisbögen um den Aufhängepunkt. Langer Bogen «unter starker Anspannung grösserer Ausschlag»: an seinen Enden die ausgelenkten Pendelkörper mit «Sehr positive Bewertung» (links) und «Sehr negative Bewertung» (rechts), unten die Ruhelage «Differenziertere Sicht». Kurzer Bogen mit dünner Linie «kleinerer Ausschlag», an seinen Enden kleine Marken. Keine Pfeilspitzen. Darunter in allen Breiten eine geordnete Liste der drei Lagen mit je einem Erklärsatz aus dem Handout. Kernaussage aus dem Handout: Weder eine sehr positive noch eine sehr negative Momentaufnahme muss die ganze Beziehung oder Person beschreiben (Korrektur V-2, 09.10.2026; Korrektur 1b, C-1; Korrektur 1c, K-7).",
-          "understood": "Dass ein einseitiges Urteil eine Auslenkung ist, die unter starker Anspannung grösser werden und wieder zurückschwingen kann, und dass die differenziertere Sicht die Ruhelage ist. Die beiden Bögen zeigen die Bahn bei kleinerem und bei grösserem Ausschlag nebeneinander; als Text bliebe der Unterschied eine Behauptung. Bewusst keine Achse wie in Abbildung 2, damit die beiden Figuren nicht gleich aussehen und Verschiedenes bedeuten.",
+          "statement": "Offenes Fotoalbum mit kleinen Fotos; zwei Fotos sind herausgenommen: ein helles mit Sonne und dem Satz «Du bist die Einzige, die mich versteht.», ein dunkles mit Regenwolke und dem Satz «Du bist wie alle anderen.».",
+          "understood": "Dass ein einzelner heller oder dunkler Moment nicht die ganze Beziehung beschreibt: Das Album zeigt auf einen Blick, dass es mehr als zwei Bilder gibt.",
           "source": "Eigene didaktische Pendel-Darstellung (Handout «Wenn Bewertungen unter Stress einseitiger werden»); Grundlage Linehan (1993), Hoffman et al. (2005)",
-          "alternative": "Die drei Lagen als geordnete Liste (links, Mitte, rechts) mit Überschrift und Erklärsatz unter der Zeichnung, in allen Breiten; Beschriftungen als HTML-Text über der Zeichnung, unter 560 px entfallen nur diese (R3-V-03, hingenommen laut Korrektur 1c, Abschnitt 3); Textfassung über aria-describedby",
-          "reason": "Ausschlag und Rückschwung sind eine Bewegung um eine Ruhelage; das Pendel zeigt sie als Bahn der Pendelkörper. Die Schritte für Angehörige stehen sichtbar im Abschnittstext.",
+          "alternative": "Sätze als HTML-Text über der Zeichnung, schmal untereinander; Textfassung über aria-describedby",
+          "reason": "Ersetzt das Pendel (Bildsprache-Audit BS-1: wirkte wie eine Physikskizze, schmal ohne Beschriftung). Das Bild nimmt das Wort «Momentaufnahme» aus dem Handout auf: ein Bild, eine Idee (Entscheid Fachstelle 10.10.2026). Vorläufig als «figure» geführt: Das Gate r4-6 lässt eine eigene SVG-Zeichnung als «illustration» noch nicht zu (Entscheid der Nutzerin 10.10.2026).",
+          "resonance": "Entlastung: Ein harter Satz in einem schwierigen Moment ist nicht unser ganzes Album.",
           "approvalStatus": "ausstehend"
         },
         {
@@ -172,12 +175,11 @@
           "section": "06 Annahmen",
           "sectionId": "mythen",
           "goal": "Verbreitete Annahmen durch eine realistischere Einordnung ersetzen",
-          "format": "comparison",
-          "statement": "Sieben Paare: verbreitete Annahme (kleiner, «Verbreitete Annahme: «…»») ↔ Einordnung als Hauptaussage (hervorgehoben). Kernaussage «Borderline ist behandelbar, und Angehörige sind nicht schuld.» (Korrektur V-6, W2-4, 09.10.2026; Korrektur 1b, C-4). Annahme 7 des Bestands («Wer bei anderen stabiler wirkt, spielt nur») steht nur auf `beziehungen` › Einflüsse.",
-          "understood": "Dass jede verbreitete Annahme eine realistischere Einordnung hat und diese das Wichtigere ist; Annahme und Einordnung stehen als Paar auf einer Zeile, die Einordnung ist hervorgehoben.",
-          "source": "Eigene didaktische Darstellung; Quellen Storebø et al. (2020), Zanarini et al. (2012), Porter et al. (2020), Qian et al. (2022), WHO (2024, 2026)",
-          "alternative": "Paare als Abfolge Annahme – Einordnung; Textfassung über aria-describedby",
-          "reason": "Jede Annahme steht auf gleicher Höhe neben ihrer Korrektur, schmal direkt darüber; im Bestand lag beides in einem geschlossenen Akkordeon. Die Handlungsanleitung zur Suizidfrage steht im Abschnittstext mit dem Verweis im Text, nicht in der Figur.",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: Annahme und Einordnung sind Paare ohne Bildform; als Liste im Abschnittstext statt als Abbildung (Bildsprache-Audit BS-3).",
           "approvalStatus": "ausstehend"
         },
         {
@@ -231,6 +233,7 @@
           "source": "Eigene didaktische Darstellung (Bedeutungsschleife des Bestands) mit erfundenem Beispiel; Quellen der Seite: APA (2024), NICE CG78 (2009), Foxhall et al. (2019), McLaren et al. (2022)",
           "alternative": "Stationen als geordnete Liste mit Leserichtung breit und schmal, sichtbarem Rücksprung zu Station 1 und Textfassung über aria-describedby",
           "reason": "Eine Rückkopplung ist im Fliesstext nur nacheinander zu beschreiben. Die fünf Reiter des Bestands werden zu einer sichtbaren Schleife; das Beispiel verbindet sie mit dem Vergleich in Abschnitt 04.",
+          "resonance": "Entlastung: Ich sehe, wie wir uns gegenseitig in eine Schleife bringen können, und wo ich anders reagieren kann.",
           "approvalStatus": "ausstehend",
           "entryPoint": "Station 5 «Wirkung» (Schwester): Statt sich weiter zu verteidigen, können Sie das Gefühl anerkennen, nachfragen, wie die Absage angekommen ist, und Ihre eigene Grenze halten (Korrektur V-1, 09.10.2026; ganze Sätze laut Korrektur 1b, D-2; Wortlaut und Beispielfrage Korrektur 1e)."
         },
@@ -257,6 +260,7 @@
           "source": "Eigene didaktische Darstellung mit erfundenem Beispiel (Bestand «Beide versuchen etwas Verständliches – und verfehlen sich»)",
           "alternative": "Je Schritt eine Überschrift und zwei beschriftete Sichten; Textfassung über aria-describedby",
           "reason": "Gleiche Schritte nebeneinander zeigen, dass beide Sichten zugleich verständlich sind. Dasselbe Beispiel wie in der Schleife: verbunden, nicht gedoppelt.",
+          "resonance": "Verständnis: Beide Sichten können gleichzeitig wahr sein.",
           "approvalStatus": "ausstehend"
         },
         {
@@ -381,6 +385,7 @@
           "source": "Fachmodell: Linehan (2015), DBT Skills Training Manual, 2. Auflage (DEAR MAN); deutschsprachige redaktionelle Anpassung mit eigenen Beispielen",
           "alternative": "Geordnete Liste mit Schrittnummer, Aufgabe und Beispielsatz; Textfassung über aria-describedby",
           "reason": "Reihenfolge und Aufgabe jedes Schritts werden auf einen Blick sichtbar; die Auswahl-Schaltflächen des Bestands werden zu einem sichtbaren Pfad.",
+          "resonance": "Sicherheit: Ich kann mein Anliegen in Ruhe vorbereiten.",
           "approvalStatus": "ausstehend",
           "entryPoint": "entfällt: Der ganze Ablauf beschreibt das eigene Handeln der Angehörigen."
         },

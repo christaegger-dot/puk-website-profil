@@ -11,7 +11,11 @@
 .bl-cycle--5 li:nth-child(3){grid-area:3/3;align-self:end}
 .bl-cycle--5 li:nth-child(4){grid-area:3/1;align-self:end}
 .bl-cycle--5 li:nth-child(5){grid-area:2/1}
-.bl-cycle__ex{font:var(--type-body-sm);color:var(--text-default)}
+/* Korrektur 1h (Bildsprache-Audit BS-4, Variante B): je Station drei Zeilen – wer handelt, der Beispielsatz als Hauptzeile,
+   klein Station und Modellbegriff; Felder mit weichen Ecken (radius-md, Entscheid der Nutzerin 10.10.2026). */
+.bl-cycle--5 li{border-radius:var(--radius-md)}
+.bl-cycle__who{font:var(--type-body-sm);font-weight:var(--fw-medium);color:var(--text-default)}
+.bl-cycle__ex{font:var(--type-body);color:var(--text-default)}
 /* Mit fünf Stationen trägt die Kreisanordnung nur bei voller Breite des Musters (600 px): darunter überlappen
    Station 4 und 5, und der Pfeil 4 → 5 verschwindet. Deshalb gilt die Liste des Musters hier schon bis 660 px
    Containerbreite (Regeln wie im Muster, Masse über Tokens). */
@@ -29,23 +33,12 @@
   .bl-cycle-fig [data-cycle-narrow]{display:inline}
 }
 
-/* Muster A mit direkter Beschriftung (Pendel, Anspannungskurve): Zeichnung als SVG, Beschriftungen als
+/* Muster A mit direkter Beschriftung (Anspannungskurve): Zeichnung als SVG, Beschriftungen als
    HTML-Text darüber (Leitlinie 07: Beschriftungen sind echter Text). Lage in Prozent der Zeichnung.
-   Pendel und Kurve: schmal entfallen nur die Beschriftungen im Bild; die Liste unter der Zeichnung steht in allen Breiten. */
+   Kurve: schmal entfallen nur die Beschriftungen im Bild; die Liste unter der Zeichnung steht in allen Breiten. */
 .bl-fig{position:relative;max-width:calc(var(--space-20) * 8);aspect-ratio:2/1;margin:0 auto var(--space-6)}
 .bl-fig>svg{position:absolute;inset:0;width:100%;height:100%}
 .bl-fig__label{position:absolute;margin:0;font:var(--type-body-sm);font-weight:var(--fw-medium);color:var(--text-default);line-height:var(--lh-subheading)}
-/* Pendel, Zeichnung 640 × 330: Aufhängepunkt (320, 16). Langer Bogen = Kreis um den Aufhängepunkt, Radius 250, ±36°,
-   mit den ausgelenkten Pendelkörpern an den Enden (x 173 / 467, y 218) und der Ruhelage unten (320, 266).
-   Kurzer Bogen = Kreis um den Aufhängepunkt, Radius 150, ±15°, mit kleinen Marken an den Enden (y 161, Scheitel 166).
-   Die Beschriftungen auf dem senkrechten Stab tragen den Grund der Figur, damit der Stab sie nicht durchkreuzt. */
-.bl-fig--pendel{aspect-ratio:640/330}
-.bl-fig--pendel .bl-fig__label--pos{right:76.3%;top:66.2%;max-width:23%;transform:translateY(-50%);text-align:right}
-.bl-fig--pendel .bl-fig__label--neg{left:76.3%;top:66.2%;max-width:23%;transform:translateY(-50%)}
-.bl-fig--pendel .bl-fig__label--klein,.bl-fig--pendel .bl-fig__label--mid{left:50%;max-width:40%;transform:translateX(-50%);text-align:center;padding:0 var(--space-1);background:var(--surface-structure)}
-.bl-fig--pendel .bl-fig__label--klein{top:52.1%;font-weight:var(--fw-regular)}
-.bl-fig--pendel .bl-fig__label--mid{bottom:25.5%}
-.bl-fig--pendel .bl-fig__label--gross{left:5%;right:5%;top:87.9%;text-align:center;font-weight:var(--fw-regular)}
 /* Anspannungskurve, Zeichnung 640 × 280: eine Kurve über den Gesprächsverlauf (links tief, Scheitel bei x 392).
    Die vier Stellen liegen auf der Kurve: 1 (99, 235), 2 (275, 139), 3 (392, 60), 4 (532, 151).
    Nummern als HTML-Marken wie in der Liste (Muster G); Stelle 2 ist der Ansatzpunkt, mit doppeltem Ring. */
@@ -57,6 +50,9 @@
 .bl-kurve__n--4{left:83.2%;top:54%}
 .puk-vis-build__n.bl-kurve__ansatz{outline:var(--border-width-strong) solid var(--puk-blue-100);outline-offset:var(--space-1)}
 .bl-fig--kurve .bl-fig__label{white-space:nowrap}
+/* Korrektur 1h: Die längere Beschriftung «Es wird wieder ruhiger.» an Stelle 4 hat erst ab 800 px Containerbreite rechts der Zeichnung Platz;
+   darunter ragte sie aus der Figur (768 px Fensterbreite: 16 px Überlauf). Dann gelten Nummern und Liste wie schmal. */
+@container (max-width:800px){.bl-fig--kurve .bl-fig__label{display:none}}
 .bl-fig--kurve .bl-kurve__label--1{left:15.5%;top:91.4%;transform:translateX(-50%)}
 .bl-fig--kurve .bl-kurve__label--2{right:61.4%;top:49.7%;transform:translateY(-50%)}
 .bl-fig--kurve .bl-kurve__label--3{left:61.3%;bottom:88.6%;transform:translateX(-50%)}
@@ -69,10 +65,9 @@
 .bl-kurve__liste .puk-say{margin:var(--space-3) 0 0}
 .bl-kurve__liste .puk-say__item{margin:0}
 .bl-kurve__liste .puk-vis-build__n.bl-kurve__ansatz{margin:var(--space-1)}
-.bl-parts li{grid-template-columns:minmax(0,1fr);padding-left:0}
 @container (max-width:560px){
   .bl-fig{max-width:calc(var(--space-20) * 5)}
-  .bl-fig--pendel .bl-fig__label,.bl-fig--kurve .bl-fig__label{display:none}
+  .bl-fig--kurve .bl-fig__label{display:none}
 }
 
 /* Muster E, Annahmen: je Zeile die Annahme (kleiner) und die Einordnung (hervorgehoben, Erklärung in Seitenschrift) */
@@ -101,3 +96,33 @@
 .bl-sicht .puk-vis-compare__key{font-size:var(--web-size-body);font-weight:var(--fw-regular);line-height:var(--lh-subheading)}
 /* Figuren mit Erklärtext in type-body-sm (15 px): Bezeichnung «Ansatzpunkt» in der Schleife und im Ansatzpunkt-Kasten */
 .puk-vis-cycle__key,.puk-vis-ansatz__key{font:var(--type-body-sm);font-weight:var(--fw-medium)}
+
+/* Eisberg (Korrektur 1h, Bildsprache-Audit BS-2): eigene Linienzeichnung 760 × 400 nach der Skizze der Fachstelle.
+   Die Wörter stehen als HTML-Text im Eisberg, Lage in Prozent der Zeichnung; die Gruppenüberschriften nur für Screenreader.
+   Schmal: Zeichnung ohne Wörter über die ganze Breite, darunter beide Gruppen als Listen und die Frage. Die schmale Darstellung
+   gilt schon unter 800 px Containerbreite (Auftrag: 560 px): Darunter ragen Wörter in type-body-sm über den Umriss
+   (gemessen bei 754 px: «Vorwürfe», bei 644 px drei Wörter), und kleiner als type-body-sm darf die Schrift nicht werden. */
+.bl-eis{position:relative;max-width:760px;aspect-ratio:760/400;margin:0 auto var(--space-6)}
+.bl-eis__art{position:absolute;inset:0;display:block;width:100%;height:100%}
+.bl-eis__zone ul{margin:0;padding:0;list-style:none}
+.bl-eis__key{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.bl-eis__w{position:absolute;margin:0;transform:translate(-50%,-50%);font:var(--type-body-sm);color:var(--text-default);white-space:nowrap}
+.bl-eis__w--1{left:44.5%;top:21%}
+.bl-eis__w--2{left:55.3%;top:21%}
+.bl-eis__w--3{left:42.9%;top:29.5%}
+.bl-eis__w--4{left:57.1%;top:29.5%}
+.bl-eis__w--5{left:41.6%;top:48.5%}
+.bl-eis__w--6{left:59.5%;top:48.5%}
+.bl-eis__w--7{left:39.5%;top:60%}
+.bl-eis__w--8{left:58.4%;top:60%}
+.bl-eis__w--9{left:50%;top:71.5%}
+.bl-eis__w--10{left:50.5%;top:81.5%}
+.bl-eis__frage{position:absolute;left:78.9%;top:14.5%;max-width:21%}
+@container (max-width:800px){
+  .bl-eis{aspect-ratio:auto;max-width:none}
+  .bl-eis__art{position:static;height:auto}
+  .bl-eis__key{position:static;width:auto;height:auto;margin:var(--space-4) 0 var(--space-2);overflow:visible;clip:auto;white-space:normal;font:var(--type-body);font-weight:var(--fw-medium);color:var(--text-default)}
+  .bl-eis__zone ul{display:flex;flex-wrap:wrap;gap:var(--space-1) var(--space-4)}
+  .bl-eis__w,.bl-eis__w--10{position:static;transform:none;white-space:normal;font:var(--type-body)}
+  .bl-eis__frage{position:static;max-width:none;margin-top:var(--space-5)}
+}
