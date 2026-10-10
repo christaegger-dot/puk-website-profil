@@ -1,0 +1,776 @@
+{
+  "$comment": "Website «Depression: Informationen für Angehörige» der Fachstelle Angehörigenarbeit PUK. Seitenvertrag nach dem Psychoedukations-Starter (PUK Website Kit 1.10.1-r4 · abgeleitet). Plan freigegeben von der Fachstelle am 10.10.2026; alle Texte sind Musterentwurf bis zur fachlichen Prüfung. Nach jeder Änderung: node tools/build.mjs, vor Veröffentlichung node tools/gate.mjs --production.",
+  "kitRevision": "PUK Website Kit 1.10.1-r4 · abgeleitet",
+  "canonicalSource": "PUK Zürich Design System 1.10.1 (unverändert)",
+  "assetVersion": "r4-6",
+  "siteTitle": "Depression: Informationen für Angehörige",
+  "shortDescription": "Informationen für Angehörige von Erwachsenen mit Depression: die Erkrankung verstehen, die eigene Belastung einordnen, begleiten, für sich sorgen, Rechte und Unterstützung im Kanton Zürich.",
+  "language": "de-CH",
+  "favicon": "assets/favicon.svg",
+  "logo": "assets/logo.svg",
+  "stylesheets": [
+    "../../../styles.css",
+    "../longform/visual-patterns.css",
+    "../longform/erklaermuster.css",
+    "starter.css"
+  ],
+  "contentOwner": "Ch. Egger, Fachstelle Angehörigenarbeit PUK",
+  "editorialStatus": "draft",
+  "editorialStatusLabel": "Musterentwurf, Stand 10.10.2026 – fachliche Prüfung ausstehend",
+  "disclaimer": "Diese Website ersetzt keine individuelle Abklärung, Beratung oder Behandlung.",
+  "responsibility": {
+    "label": "Zuständigkeit",
+    "text": "Die Fachstelle Angehörigenarbeit der PUK berät Angehörige kostenlos und vertraulich: angehoerigenarbeit@pukzh.ch. Sorgen Sie sich akut um das Leben oder die Sicherheit eines Menschen, holen Sie sofort Hilfe: ärztlicher Notfalldienst oder Notfallstation, bei Gefahr die Polizei.",
+    "owner": "Fachstelle Angehörigenarbeit PUK",
+    "reviewStatus": "geprueft",
+    "reviewedBy": "Fachstelle Angehörigenarbeit PUK",
+    "reviewedAt": "09.10.2026",
+    "inline": {
+      "text": "Sorgen Sie sich akut um das Leben oder die Sicherheit eines Menschen, holen Sie sofort Hilfe: ärztlicher Notfalldienst oder Notfallstation, bei Gefahr die Polizei.",
+      "reviewStatus": "geprueft",
+      "reviewedBy": "Fachstelle Angehörigenarbeit PUK",
+      "reviewedAt": "09.10.2026",
+      "$comment": "Standardwortlaut des Starters, von der Fachstelle fachlich geprüft am 09.10.2026. Nur über den Platzhalter <p data-responsibility-inline></p> einsetzen."
+    }
+  },
+  "sender": {
+    "orgUnit": "Fachstelle Angehörigenarbeit",
+    "institution": "Psychiatrische Universitätsklinik Zürich",
+    "email": "angehoerigenarbeit@pukzh.ch",
+    "status": "freigegeben",
+    "statusLabel": "Freigegeben"
+  },
+  "pages": [
+    {
+      "id": "index",
+      "title": "Übersicht",
+      "href": "index.html",
+      "navLabel": "Übersicht",
+      "status": "published",
+      "primaryTask": "Einen passenden Einstieg finden, von vorne oder nach Rolle und Frage",
+      "description": "Informationen für Angehörige von Erwachsenen mit Depression: das Wichtigste in Kürze und Einstiege nach Rolle und nach Frage.",
+      "sensitiveTopics": [
+        "selbstgefaehrdung"
+      ],
+      "visualPlan": [
+        {
+          "id": "v-idx-einstieg",
+          "section": "Worum es geht",
+          "sectionId": "einstieg",
+          "goal": "Wissen, worum es auf der Website geht und was sie nicht leistet",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: kurzer Einstieg ohne Zusammenhang, den eine Darstellung erklären müsste.",
+          "approvalStatus": "entfällt"
+        },
+        {
+          "id": "v-idx-kurz",
+          "section": "Das Wichtigste in Kürze",
+          "sectionId": "kurz",
+          "goal": "Die fünf Kernaussagen der Website kennen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: fünf eigenständige Kernsätze ohne Beziehung untereinander.",
+          "approvalStatus": "entfällt"
+        },
+        {
+          "id": "v-idx-lesepfade",
+          "section": "Wo Sie anfangen können",
+          "sectionId": "lesepfade",
+          "goal": "Nach Rolle oder Frage einen passenden Einstieg wählen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: gleichwertige Einstiege ohne Beziehung untereinander; ein Entscheidungsweg würde eine Reihenfolge vortäuschen.",
+          "approvalStatus": "entfällt"
+        },
+        {
+          "id": "v-idx-kapitel",
+          "section": "Die Seiten im Überblick",
+          "sectionId": "kapitel",
+          "goal": "Die sieben Themenseiten und ihre Reihenfolge kennen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: Inhaltsverzeichnis mit je einem Satz; die Reihenfolge zeigt bereits die Navigation.",
+          "approvalStatus": "entfällt"
+        }
+      ]
+    },
+    {
+      "id": "depression-verstehen",
+      "title": "Depression verstehen",
+      "href": "depression-verstehen.html",
+      "navLabel": "Depression",
+      "status": "published",
+      "primaryTask": "Erkennen, was eine Depression ist, wie sie sich im Alltag zeigen kann und warum niemand sie verschuldet hat",
+      "description": "Was eine Depression ist, wie sie sich im Alltag und in Beziehungen zeigen kann, wie sie entsteht und welche Formen es gibt – für Angehörige erklärt.",
+      "sensitiveTopics": [
+        "selbstgefaehrdung"
+      ],
+      "visualPlan": [
+        {
+          "id": "v-dv-was-ist",
+          "section": "01 Was eine Depression ist",
+          "sectionId": "was-ist",
+          "goal": "Wissen, woran man eine Depression erkennt und wer sie feststellt",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: knappe Kriterien; die Verbindung von Anzeichen und Erleben zeigt die Figur im nächsten Abschnitt.",
+          "approvalStatus": "entfällt"
+        },
+        {
+          "id": "v-dv-schichten",
+          "section": "02 Was Sie sehen und was dahinter liegen kann",
+          "sectionId": "dahinter",
+          "goal": "Rückzug und Gereiztheit als mögliche Zeichen der Krankheit einordnen, nicht als Ablehnung",
+          "format": "layer-model",
+          "statement": "Skizze: eine ruhige Wasserlinie; darüber eine kleine Kuppe einer weichen Form, darunter der grössere Teil. Am Ufer steht eine angehörige Person. Über der Linie Sätze, die Angehörige sehen und hören («Er sagt schon wieder ab.»), darunter Sätze, die die Person erleben kann («Ich habe keine Kraft, auch nicht für das, was ich mag.»).",
+          "understood": "Sichtbares Verhalten und inneres Erleben gehören zusammen: Die Lage über und unter der Wasserlinie zeigt auf einen Blick, warum Rückzug nicht gegen die Angehörigen gerichtet ist.",
+          "resonance": "«Ja, so erlebe ich es – und es hat nicht mit mir zu tun.»",
+          "source": "Eigene didaktische Darstellung; Anzeichen nach ICD-11 und NVL Unipolare Depression V3.2 (Recherchebericht Kap. 1)",
+          "alternative": "Zwei Listen «Was Sie sehen und hören» und «Was die Person erleben kann»; Kurzbeschreibung über aria-describedby",
+          "reason": "Sichtbar und verborgen ist ein Zusammenhang, den eine Schichtung sofort zeigt; im Fliesstext stünde beides nur nacheinander.",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-dv-anders",
+          "section": "03 Wenn Depression anders aussieht",
+          "sectionId": "anders",
+          "goal": "Gereiztheit, Alkohol oder körperliche Klagen als mögliche Zeichen kennen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: Die Hinweise ergänzen sich. Ein Vergleich Männer–Frauen würde einen Unterschied zuspitzen, den die Studien nur als Tendenz zeigen.",
+          "approvalStatus": "entfällt"
+        },
+        {
+          "id": "v-dv-entstehung",
+          "section": "04 Wie eine Depression entsteht",
+          "sectionId": "entstehung",
+          "goal": "Verstehen, dass Verletzlichkeit und Belastung zusammenwirken und niemand schuld ist",
+          "format": "stepwise-model",
+          "statement": "Zwei Säulen reichen an dieselbe gestrichelte Schwelle: bei der einen ist der Sockel «Verletzlichkeit» hoch und die Belastung klein, bei der anderen umgekehrt.",
+          "understood": "Verletzlichkeit und Belastung wirken zusammen. Zwei Säulen an derselben Schwelle zeigen sofort, warum bei zwei Menschen Unterschiedliches zur Depression führen kann und warum sie auch ohne erkennbaren Anlass beginnen kann.",
+          "resonance": "Entlastung: «Niemand ist schuld, auch ich nicht.»",
+          "entryPoint": "entfällt: Die Entstehung liegt nicht in der Hand der Angehörigen; die Darstellung soll entlasten. Was sie tun können, zeigt die Seite «Begleiten und Gespräche».",
+          "source": "Eigene didaktische Darstellung, angelehnt an das Vulnerabilitäts-Stress-Modell (NVL Unipolare Depression V3.2, Kap. 1.3)",
+          "alternative": "Nummerierte Liste der drei Teile; Kurzbeschreibung über aria-describedby",
+          "reason": "Ein Zusammenwirken von zwei Grössen an einer Schwelle ist als Bild schneller erfasst als als Satz.",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-dv-formen",
+          "section": "05 Formen und Abgrenzungen",
+          "sectionId": "formen",
+          "goal": "Die wichtigsten Formen kennen und die bipolare Störung abgrenzen können",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: eigenständige Formen ohne Wechselwirkung, als Begriffsliste.",
+          "approvalStatus": "entfällt"
+        },
+        {
+          "id": "v-dv-quellen",
+          "section": "Quellen",
+          "sectionId": "quellen",
+          "goal": "Nachvollziehen, worauf die Aussagen beruhen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: Quellenliste.",
+          "approvalStatus": "entfällt"
+        }
+      ]
+    },
+    {
+      "id": "behandlung-und-verlauf",
+      "title": "Behandlung und Verlauf",
+      "href": "behandlung-und-verlauf.html",
+      "navLabel": "Behandlung",
+      "status": "published",
+      "primaryTask": "Wissen, wie Depression behandelt wird und verläuft und wie man die Behandlung unterstützen kann, ohne Verantwortung dafür zu übernehmen",
+      "description": "Wie Depression behandelt wird, wie der Weg in die Behandlung im Kanton Zürich aussieht, wie sie verläuft und wie man gemeinsam Rückfällen vorbeugt.",
+      "sensitiveTopics": [
+        "selbstgefaehrdung"
+      ],
+      "visualPlan": [
+        {
+          "id": "v-bv-behandelbar",
+          "section": "01 Depression ist behandelbar",
+          "sectionId": "behandelbar",
+          "goal": "Wissen, dass sich die Behandlung nach dem Schweregrad richtet",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: Zuordnung Schweregrad und Empfehlung als Begriffsliste. Eine Skala würde zur Selbsteinschätzung verleiten.",
+          "approvalStatus": "entfällt"
+        },
+        {
+          "id": "v-bv-vergleich",
+          "section": "02 Psychotherapie und Medikamente",
+          "sectionId": "wege",
+          "goal": "Die beiden wichtigsten Behandlungswege nach gleichen Merkmalen vergleichen",
+          "format": "comparison",
+          "statement": "Psychotherapie und Antidepressiva unterscheiden sich darin, wie sie wirken, wann eine Besserung spürbar wird, worauf zu achten ist und wofür sie empfohlen werden.",
+          "understood": "Worin sich die beiden Wege unterscheiden: Gleiche Merkmale nebeneinander beantworten die häufigen Fragen von Angehörigen schneller als zwei Absätze.",
+          "resonance": "Ruhe: «Es gibt mehrere wirksame Wege, und oft hilft beides zusammen.»",
+          "source": "NVL Unipolare Depression V3.2; Schweizer Behandlungsempfehlungen SGAD/SGPP 2025",
+          "alternative": "Zwei Merkmalslisten in gleicher Reihenfolge; Kurzbeschreibung über aria-describedby",
+          "reason": "Ein Vergleich nach gleichen Merkmalen ist nebeneinander schneller lesbar als im Fliesstext.",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-bv-weg",
+          "section": "03 Der Weg in die Behandlung",
+          "sectionId": "weg",
+          "goal": "Die Stationen der Behandlung im Kanton Zürich kennen",
+          "format": "process",
+          "statement": "Fünf Schritte: erster Kontakt, Abklärung, ambulante Behandlung, wenn nötig Tagesklinik oder Klinik (gestrichelt), Weiterbehandlung nach der Besserung.",
+          "understood": "Die Reihenfolge der Stationen, dass Tagesklinik oder Klinik ein möglicher und kein zwingender Schritt ist und dass die Behandlung nach der Besserung weitergeht.",
+          "resonance": "Orientierung: «Ich weiss, wo man anfangen kann und was danach kommt.»",
+          "entryPoint": "Bei Schritt 1 «Erster Kontakt»: anbieten, bei der Terminsuche zu helfen oder mitzukommen, wenn die Person das möchte; eigene Beobachtungen dürfen Angehörige jederzeit mitteilen.",
+          "source": "Eigene didaktische Darstellung nach dem Recherchebericht (Versorgung Schweiz, Kanton Zürich)",
+          "alternative": "Geordnete Liste mit Schrittnummern; Kurzbeschreibung über aria-describedby",
+          "reason": "Eine Abfolge mit einem optionalen Schritt ist als Pfad auf einen Blick sichtbar.",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-bv-verlauf",
+          "section": "04 Wie eine Depression verläuft",
+          "sectionId": "verlauf",
+          "goal": "Wissen, dass Depression meist in Episoden verläuft, sich bessert und oft wiederkehrt",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: Ein Verlaufsdiagramm würde eine Regel vortäuschen, die es im Einzelfall nicht gibt.",
+          "approvalStatus": "entfällt"
+        },
+        {
+          "id": "v-bv-fruehzeichen",
+          "section": "05 Frühe Zeichen und gemeinsam vorbeugen",
+          "sectionId": "vorbeugen",
+          "goal": "Erkennen, dass zwischen «es geht gut» und «Rückfall» ein Bereich mit Spielraum liegt",
+          "format": "continuum",
+          "statement": "Eine Achse von «Es geht gut» über «Erste Zeichen» zu «Die Depression ist zurück»; im mittleren Bereich Beispielsätze aus Sicht der Person; ein Doppelpfeil zeigt, dass es in beide Richtungen gehen kann.",
+          "understood": "Zwischen «gut» und «Rückfall» liegt ein Bereich mit Spielraum. Die Lage auf der Achse zeigt das, eine Liste von Zeichen nicht.",
+          "resonance": "Zuversicht: «Wir sind dem nicht ausgeliefert, wir können früh reagieren.»",
+          "source": "Eigene didaktische Darstellung; Frühwarnzeichen nach dem Recherchebericht, Kap. 3",
+          "alternative": "Drei Bereiche als geordnete Liste von «Es geht gut» bis «Die Depression ist zurück»; Kurzbeschreibung über aria-describedby",
+          "reason": "Abstufung und Spielraum sind auf einer Achse sichtbar, im Text nicht.",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-bv-einbezug",
+          "section": "06 Einbezogen werden",
+          "sectionId": "einbezug",
+          "goal": "Wissen, dass Angehörige mit Einverständnis einbezogen werden sollen und darum bitten dürfen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: eine Empfehlung und ein Verweis.",
+          "approvalStatus": "entfällt"
+        },
+        {
+          "id": "v-bv-quellen",
+          "section": "Quellen",
+          "sectionId": "quellen",
+          "goal": "Nachvollziehen, worauf die Aussagen beruhen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: Quellenliste.",
+          "approvalStatus": "entfällt"
+        }
+      ]
+    },
+    {
+      "id": "ihre-situation",
+      "title": "Ihre Situation",
+      "href": "ihre-situation.html",
+      "navLabel": "Ihre Situation",
+      "status": "published",
+      "primaryTask": "Die eigene Belastung als häufig und berechtigt einordnen und erkennen, was sie verstärkt und was entlastet",
+      "description": "Wie stark Angehörige von Menschen mit Depression belastet sind, was die Belastung verstärkt und was entlastet, und wie sich Beziehung und Depression gegenseitig beeinflussen.",
+      "sensitiveTopics": [
+        "selbstgefaehrdung"
+      ],
+      "visualPlan": [
+        {
+          "id": "v-is-nicht-allein",
+          "section": "01 Sie sind nicht allein",
+          "sectionId": "nicht-allein",
+          "goal": "Wissen, dass die eigene Belastung häufig ist",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: wenige Kennzahlen als Sätze.",
+          "approvalStatus": "entfällt"
+        },
+        {
+          "id": "v-is-was-belastet",
+          "section": "02 Was am meisten belastet",
+          "sectionId": "was-belastet",
+          "goal": "Die häufigsten Belastungen kennen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: Aufzählung. Ein Balkendiagramm würde eine Rangfolge betonen, die für Angehörige nicht entscheidend ist.",
+          "approvalStatus": "entfällt"
+        },
+        {
+          "id": "v-is-gefaess",
+          "section": "03 Was zufliesst und was abfliessen kann",
+          "sectionId": "belastung",
+          "goal": "Erkennen, dass Belastung aus dem Verhältnis von Zufluss und Abfluss entsteht und wo man ansetzen kann",
+          "format": "stepwise-model",
+          "statement": "Skizze: ein Gefäss mit Zuflüssen von oben und einem Abfluss unten. Bei den Zuflüssen stehen Sätze wie «Sie ist seit Wochen schwer krank.» und «Niemand sagt mir, wie es weitergeht.», beim Abfluss «Meine Schwester übernimmt den Mittwoch.» und «Ich habe mit einer Beraterin gesprochen.». Der Abfluss ist mit einem doppelten Ring markiert.",
+          "understood": "Belastung entsteht aus dem Verhältnis von Zufluss und Abfluss. Das Bild zeigt, dass Angehörige an den Zuflüssen aus der Krankheit wenig ändern können, an den Abflüssen aber schon.",
+          "resonance": "Entlastung: «Dass es mir zu viel ist, ist kein Versagen. Und es gibt Stellen, an denen ich etwas für mich tun kann.»",
+          "entryPoint": "Bei den Abflüssen: Information holen, Beratung, Aufgaben teilen, eigene Auszeiten (Verweis auf die Seite «Für sich sorgen»).",
+          "source": "Eigene didaktische Darstellung; Faktoren nach Huang et al. 2026, van Wijngaarden et al. 2004 und 2009, Martire et al. 2010, Deutschland-Barometer Depression 2024",
+          "alternative": "Zwei Listen «Was zufliesst» und «Was abfliessen kann»; Kurzbeschreibung über aria-describedby",
+          "reason": "Das Verhältnis von Zufluss und Abfluss ist als Bild sofort verständlich; als Liste verstärkender und entlastender Faktoren ginge der Zusammenhang verloren.",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-is-gesundheit",
+          "section": "04 Die eigene Gesundheit",
+          "sectionId": "gesundheit",
+          "goal": "Wissen, dass die Belastung auch die eigene Gesundheit treffen kann",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: kurzer Befund mit Verweis auf die Warnsignale auf der Seite «Für sich sorgen».",
+          "approvalStatus": "entfällt"
+        },
+        {
+          "id": "v-is-kreislauf",
+          "section": "05 Wenn sich Beziehung und Depression gegenseitig verstärken",
+          "sectionId": "wechselwirkung",
+          "goal": "Die Wechselwirkung von Depression und Spannungen in der Beziehung ohne Schuldzuweisung verstehen",
+          "format": "cycle",
+          "statement": "Vier Stationen: Die Depression zeigt sich (Rückzug, Gereiztheit) → Angehörige sorgen sich, treiben an, übernehmen → Erschöpfung und Ungeduld wachsen → die Person fühlt sich unverstanden und zieht sich weiter zurück → zurück zu Station 1.",
+          "understood": "Die Schleife zeigt, wie sich die Reaktionen beider Seiten gegenseitig antreiben, ohne dass jemand der Auslöser ist. Im Fliesstext lässt sich das nur nacheinander lesen.",
+          "resonance": "Wiedererkennen ohne Schuld: «So geht es uns oft. Ich bin nicht die Ursache, aber ich kann an einer Stelle anders reagieren.»",
+          "entryPoint": "Bei Station 3: die eigene Ungeduld als Zeichen von Überlastung sehen und Entlastung für sich suchen (Verweis auf die Seite «Für sich sorgen»).",
+          "source": "Eigene didaktische Darstellung, angelehnt an Whisman & Uebelacker 2009 und Hooley & Gotlib 2000",
+          "alternative": "Geordnete Liste der vier Stationen mit sichtbarem Rücksprung zu Station 1; Textfassung über aria-describedby",
+          "reason": "Eine Rückkopplung ist als geschlossene Schleife sofort erkennbar; als Text verliert sie den Kreis.",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-is-angst",
+          "section": "06 Angst um das Leben der Person",
+          "sectionId": "angst",
+          "goal": "Die Angst vor einem Suizid als häufige und berechtigte Belastung einordnen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: Ein ernstes Thema braucht einen ruhigen, direkten Text mit Verweis.",
+          "approvalStatus": "entfällt"
+        },
+        {
+          "id": "v-is-quellen",
+          "section": "Quellen",
+          "sectionId": "quellen",
+          "goal": "Nachvollziehen, worauf die Aussagen beruhen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: Quellenliste.",
+          "approvalStatus": "entfällt"
+        }
+      ]
+    },
+    {
+      "id": "je-nach-rolle",
+      "title": "Je nach Rolle",
+      "href": "je-nach-rolle.html",
+      "navLabel": "Nach Rolle",
+      "status": "published",
+      "primaryTask": "Finden, was in der eigenen Rolle besonders zählt: als Partnerin oder Partner, Elternteil, Geschwister, erwachsenes Kind oder Freundin und Freund",
+      "description": "Was Partnerinnen und Partner, Eltern, Geschwister, erwachsene Kinder und Freunde von Menschen mit Depression erleben – und was Kindern in der Familie hilft.",
+      "sensitiveTopics": [
+        "selbstgefaehrdung"
+      ],
+      "visualPlan": [
+        {
+          "id": "v-ro-rollen",
+          "section": "Ihre Rolle",
+          "sectionId": "rollen",
+          "goal": "Den eigenen Abschnitt schnell finden",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: Einleitung mit Sprungzielen.",
+          "approvalStatus": "entfällt"
+        },
+        {
+          "id": "v-ro-partner",
+          "section": "01 Partnerinnen und Partner",
+          "sectionId": "partner",
+          "goal": "Schuld, Konflikte und Veränderungen in der Paarbeziehung einordnen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: Befunde und ein Gesprächsbeispiel; der Kreislauf auf der Seite «Ihre Situation» wird verlinkt, nicht wiederholt.",
+          "approvalStatus": "entfällt"
+        },
+        {
+          "id": "v-ro-kinder",
+          "section": "02 Wenn Kinder in der Familie leben",
+          "sectionId": "kinder",
+          "goal": "Wissen, was Kinder brauchen und was sie schützt",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: Schutzfaktoren als Liste ohne Wechselwirkung, die Kernzahl als Satz, die Fragen von Kindern als Begriffsliste.",
+          "approvalStatus": "entfällt"
+        },
+        {
+          "id": "v-ro-spannung",
+          "section": "03 Eltern erwachsener Kinder",
+          "sectionId": "eltern",
+          "goal": "Das Hin-und-hergerissen-Sein zwischen Unterstützen und Loslassen als zwei berechtigte Anliegen verstehen",
+          "format": "tension-field",
+          "statement": "Skizze: eine Waage. Links «Ich will helfen. Ich sehe doch, wie schlecht es ihr geht.», rechts «Er ist erwachsen. Er entscheidet selbst.», am Drehpunkt «Ich bin da, wenn du mich brauchst, und frage, bevor ich etwas unternehme.» Ein gestrichelter, gekippter Balken zeigt, dass sich die Mitte verschieben kann.",
+          "understood": "Das Hin-und-hergerissen-Sein ist kein Fehler, sondern bildet zwei berechtigte Anliegen ab. Die Waage zeigt beide zugleich, ein Text nur nacheinander.",
+          "resonance": "Entlastung: «Mein Hin und Her ist kein Versagen; beides ist richtig.»",
+          "source": "Eigene didaktische Darstellung; Befunde nach Kika et al. 2026, Greally et al. 2025 und Johansson et al. 2014",
+          "alternative": "Drei Abschnitte: linke Seite, Mitte, rechte Seite; Kurzbeschreibung über aria-describedby",
+          "reason": "Zwei berechtigte, gegenläufige Anliegen lassen sich als Waage gleichzeitig zeigen.",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-ro-geschwister",
+          "section": "04 Geschwister",
+          "sectionId": "geschwister",
+          "goal": "Die Belastung von Geschwistern erkennen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: kurzer Befund und Hinweise ohne Zusammenhang, den eine Darstellung erklären müsste.",
+          "approvalStatus": "entfällt"
+        },
+        {
+          "id": "v-ro-erwachsene-kinder",
+          "section": "05 Erwachsene Kinder",
+          "sectionId": "erwachsene-kinder",
+          "goal": "Die besondere Lage erwachsener Kinder eines Elternteils mit Depression einordnen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: wenige Hinweise und ein Angebot.",
+          "approvalStatus": "entfällt"
+        },
+        {
+          "id": "v-ro-freunde",
+          "section": "06 Freundinnen und Freunde",
+          "sectionId": "freunde",
+          "goal": "Wissen, wie Freundinnen und Freunde unterstützen können",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: kurze Hinweise.",
+          "approvalStatus": "entfällt"
+        },
+        {
+          "id": "v-ro-quellen",
+          "section": "Quellen",
+          "sectionId": "quellen",
+          "goal": "Nachvollziehen, worauf die Aussagen beruhen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: Quellenliste.",
+          "approvalStatus": "entfällt"
+        }
+      ]
+    },
+    {
+      "id": "begleiten",
+      "title": "Begleiten und Gespräche",
+      "href": "begleiten.html",
+      "navLabel": "Begleiten",
+      "status": "published",
+      "primaryTask": "Die Person ansprechen und im Alltag begleiten können; wissen, was bei Suizidgedanken zu tun ist",
+      "description": "Wie Angehörige einen Menschen mit Depression ansprechen und begleiten können, was im Alltag eher hilft und was bei Suizidgedanken zu tun ist.",
+      "sensitiveTopics": [
+        "selbstgefaehrdung",
+        "akute-krise",
+        "zwang"
+      ],
+      "visualPlan": [
+        {
+          "id": "v-bg-boot",
+          "section": "01 Begleiten, ohne zu übernehmen",
+          "sectionId": "haltung",
+          "goal": "Den Unterschied zwischen begleiten und übernehmen verstehen",
+          "format": "illustration",
+          "statement": "Skizze: ein Boot auf ruhigem Wasser, zwei Menschen als ruhige Linienfiguren, jede Person mit eigenem Ruder. Die erkrankte Person rudert langsam, die angehörige Person rudert auf ihrer Seite mit. Sätze: «Heute schaffe ich nur wenige Züge.» und «Ich bin da und rudere auf meiner Seite.»",
+          "understood": "Den Unterschied zwischen begleiten und übernehmen: Das Bild zeigt ihn als Alltagssituation, die man ohne Erklärung versteht.",
+          "resonance": "Entlastung: «Ich muss nicht für zwei rudern, und trotzdem bin ich nicht weg.»",
+          "source": "Eigene didaktische Darstellung; Metapher aus dem Arbeitsheft «Wenn dein Partner depressiv ist» der Fachstelle (Prüfbedarf: Abgleich mit dem Heft)",
+          "alternative": "Bildbeschreibung über aria-describedby",
+          "reason": "Die Haltung «begleiten, nicht übernehmen» ist als Bild sofort verständlich und entlastet; als Regel formuliert klingt sie leicht wie eine Pflicht.",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-bg-ansprechen",
+          "section": "02 Die Depression ansprechen",
+          "sectionId": "ansprechen",
+          "goal": "Ein Gespräch über die Veränderungen beginnen können",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: Hinweise und Gesprächsbeispiele «eher problematisch / eher hilfreich».",
+          "approvalStatus": "entfällt"
+        },
+        {
+          "id": "v-bg-alltag",
+          "section": "03 Was im Alltag eher hilft",
+          "sectionId": "alltag",
+          "goal": "Wissen, was im Umgang eher hilft und was eher nicht",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: einzelne Verhaltensweisen ohne Zusammenhang, als Gegenüberstellung (Inhaltscontainer, keine Erklärform).",
+          "approvalStatus": "entfällt"
+        },
+        {
+          "id": "v-bg-ablehnung",
+          "section": "04 Wenn die Person keine Hilfe will",
+          "sectionId": "ablehnung",
+          "goal": "Mit Ablehnung von Hilfe umgehen, ohne Druck oder Täuschung",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: Hinweise mit Gesprächsbeispiel. Ein Entscheidungsweg würde eine Triage nahelegen.",
+          "approvalStatus": "entfällt"
+        },
+        {
+          "id": "v-bg-suizid",
+          "section": "05 Wenn Sie befürchten, dass die Person nicht mehr leben will",
+          "sectionId": "suizidgedanken",
+          "goal": "Warnsignale kennen, direkt fragen und wissen, was dann zu tun ist",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: Bei einer möglichen Gefahr braucht es eine kurze, direkte Anleitung ohne Grafik.",
+          "approvalStatus": "entfällt"
+        },
+        {
+          "id": "v-bg-quellen",
+          "section": "Quellen",
+          "sectionId": "quellen",
+          "goal": "Nachvollziehen, worauf die Aussagen beruhen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: Quellenliste.",
+          "approvalStatus": "entfällt"
+        }
+      ]
+    },
+    {
+      "id": "fuer-sich-sorgen",
+      "title": "Für sich sorgen",
+      "href": "fuer-sich-sorgen.html",
+      "navLabel": "Für sich sorgen",
+      "status": "published",
+      "primaryTask": "Eigene Grenzen ernst nehmen und passende Entlastung finden",
+      "description": "Wie Angehörige von Menschen mit Depression Grenzen setzen, Unterstützung verteilen und erkennen, wann sie selbst Hilfe brauchen – mit einem ehrlichen Blick auf das, was nachweislich hilft.",
+      "sensitiveTopics": [
+        "selbstgefaehrdung",
+        "akute-krise"
+      ],
+      "visualPlan": [
+        {
+          "id": "v-fs-erlaubt",
+          "section": "01 Für sich sorgen ist kein Egoismus",
+          "sectionId": "erlaubt",
+          "goal": "Selbstsorge als berechtigt sehen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: kurzer, entlastender Einstieg.",
+          "approvalStatus": "entfällt"
+        },
+        {
+          "id": "v-fs-grenzen",
+          "section": "02 Grenzen setzen",
+          "sectionId": "grenzen",
+          "goal": "Grenzen als Entscheide über den eigenen Beitrag formulieren können",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: Hinweise und Gesprächsbeispiele.",
+          "approvalStatus": "entfällt"
+        },
+        {
+          "id": "v-fs-netz",
+          "section": "03 Wer mitträgt",
+          "sectionId": "netz",
+          "goal": "Erkennen, dass Unterstützung auf mehrere Menschen und Stellen verteilt werden kann",
+          "format": "relationship-map",
+          "statement": "Drei Kreise um «Sie»: nah (Familie, Freundinnen und Freunde), Umfeld (Arbeit, Nachbarschaft, Angehörigengruppe), fachliche Unterstützung (Hausarztpraxis, Fachstelle Angehörigenarbeit, Selbsthilfe); durchgezogen = besteht, gestrichelt = wäre möglich.",
+          "understood": "Unterstützung lässt sich auf mehrere Menschen und Stellen verteilen. Der Abstand zur Mitte macht Nähe sichtbar, eine Liste nicht.",
+          "resonance": "Entlastung: «Ich trage nicht allein; es gibt mehr Menschen und Stellen, als ich gerade denke.»",
+          "source": "Eigene didaktische Darstellung (Muster I)",
+          "alternative": "Nach Kreisen gegliederte Liste mit «besteht» und «wäre möglich»; Kurzbeschreibung über aria-describedby",
+          "reason": "Nähe und Abstand sind räumlich schneller erfassbar als in einer Aufzählung.",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-fs-was-hilft",
+          "section": "04 Was Angehörigen hilft, ehrlich betrachtet",
+          "sectionId": "was-hilft",
+          "goal": "Realistisch einschätzen, was Angebote für Angehörige bewirken",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: Angebote mit Belegstärke als Begriffsliste (Inhaltscontainer).",
+          "approvalStatus": "entfällt"
+        },
+        {
+          "id": "v-fs-eigene-krise",
+          "section": "05 Wann Sie selbst Hilfe brauchen",
+          "sectionId": "eigene-krise",
+          "goal": "Eigene Warnsignale erkennen und wissen, wohin man sich wenden kann",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: kurze, direkte Anleitung.",
+          "approvalStatus": "entfällt"
+        },
+        {
+          "id": "v-fs-quellen",
+          "section": "Quellen",
+          "sectionId": "quellen",
+          "goal": "Nachvollziehen, worauf die Aussagen beruhen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: Quellenliste.",
+          "approvalStatus": "entfällt"
+        }
+      ]
+    },
+    {
+      "id": "rechte-und-angebote",
+      "title": "Rechte und Unterstützung im Kanton Zürich",
+      "href": "rechte-und-angebote.html",
+      "navLabel": "Rechte und Angebote",
+      "status": "published",
+      "primaryTask": "Wissen, was man erfahren und mitteilen darf, welche Rechte man hat und wo es Unterstützung gibt",
+      "description": "Schweigepflicht und Information, Bezugsperson und Patientenverfügung, Arbeit und Geld sowie Angebote für Angehörige von Menschen mit Depression im Kanton Zürich.",
+      "sensitiveTopics": [
+        "selbstgefaehrdung"
+      ],
+      "visualPlan": [
+        {
+          "id": "v-ra-vergleich",
+          "section": "01 Was Sie erfahren und was Sie immer sagen dürfen",
+          "sectionId": "schweigepflicht",
+          "goal": "Wissen, was ohne und was erst mit Einwilligung der erkrankten Person möglich ist",
+          "format": "comparison",
+          "statement": "Zwei Spalten «Ohne Einwilligung» und «Mit Einwilligung» nach gleichen Merkmalen: eigene Beobachtungen mitteilen, allgemeine Informationen, Beratung für sich selbst, Auskunft über Gesundheitszustand und Behandlung, Einsicht in die Akten.",
+          "understood": "Was schon ohne Einwilligung geht und was erst mit ihr. Gleiche Merkmale nebeneinander zeigen, dass vieles möglich ist, was Angehörige oft für verboten halten.",
+          "resonance": "Ermutigung: «Ich darf anrufen und erzählen, was ich sehe, auch wenn das Team mir nichts sagen darf.»",
+          "source": "Art. 321 StGB; Patientinnen- und Patientengesetz Kanton Zürich §§ 2a, 15, 19; BAG, Empfehlungen für Fachpersonen (2021)",
+          "alternative": "Zwei Merkmalslisten in gleicher Reihenfolge; Kurzbeschreibung über aria-describedby",
+          "reason": "Ein Vergleich nach gleichen Merkmalen räumt das häufigste Missverständnis schneller aus als ein Rechtstext.",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-ra-vorsorge",
+          "section": "02 Bezugsperson, Entbindung von der Schweigepflicht, Patientenverfügung",
+          "sectionId": "vorsorge",
+          "goal": "Wissen, wie Angehörige mehr Rechte erhalten können",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: drei Begriffe mit kurzer Erklärung als Begriffsliste.",
+          "approvalStatus": "entfällt"
+        },
+        {
+          "id": "v-ra-arbeit-geld",
+          "section": "03 Arbeit und Geld",
+          "sectionId": "arbeit-geld",
+          "goal": "Die eigenen Ansprüche bei der Arbeit und bei Sozialversicherungen kennen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: vier Regelungen als Begriffsliste.",
+          "approvalStatus": "entfällt"
+        },
+        {
+          "id": "v-ra-angebote",
+          "section": "04 Unterstützung für Angehörige",
+          "sectionId": "angebote",
+          "goal": "Passende Angebote für sich finden",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: Liste eigenständiger Angebote ohne Beziehung untereinander; die Beziehungskarte auf der Seite «Für sich sorgen» zeigt das Netz.",
+          "approvalStatus": "entfällt"
+        },
+        {
+          "id": "v-ra-quellen",
+          "section": "Quellen",
+          "sectionId": "quellen",
+          "goal": "Nachvollziehen, worauf die Aussagen beruhen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: Quellenliste.",
+          "approvalStatus": "entfällt"
+        }
+      ]
+    }
+  ],
+  "siteUrl": "",
+  "interactionScript": "../../../components/interaktion.js"
+}
