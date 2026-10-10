@@ -13,10 +13,10 @@ Gehört zur Website in diesem Ordner. Wer den Starter kopiert, übernimmt diese 
 
 | Stufe | Status | Datum | Geprüft durch | Ergebnis |
 | --- | --- | --- | --- | --- |
-| W1 Fachliche Prüfung | offen | 10.10.2026 | Fachstelle Angehörigenarbeit PUK (Freigabe Etappe 1); vierte Prüfrunde: eine Prüfsitzung (Claude, hat nicht gebaut) | Etappe 1 fachlich freigegeben (Abschnitt «Fachliche Freigabe der Fachstelle»); alle 21 Fragen P4-F-1 bis P4-F-21 entschieden. Offen, bis die Seiten von Etappe 2 geprüft und freigegeben sind. |
-| W2 Gesamtkohärenz | offen | 10.10.2026 | vierte Prüfrunde | 1 wichtig, 3 optional; offen weiter F-W2-02, F-W2-03 (jetzt P4-F-18, P4-F-19) |
-| S Sprach-Review | offen | 10.10.2026 | vierte Prüfrunde | 6 optional; Lesetest je Abschnitt und Kennzahlen; abschliessbar erst nach W1 und W2 |
-| Visualisierungs-Check | offen | 10.10.2026 | vierte Prüfrunde | 1 wichtig, 5 optional; Matrix 1–17 × 6 Figuren; seit 10.10.2026 alle sechs Figuren fachlich freigegeben (Fachstelle) |
+| W1 Fachliche Prüfung | offen | 10.10.2026 | Fachstelle Angehörigenarbeit PUK (Freigabe Etappe 1); vierte Prüfrunde: eine Prüfsitzung (Claude, hat nicht gebaut) | Etappe 1 fachlich freigegeben (Abschnitt «Fachliche Freigabe der Fachstelle»); alle 21 Fragen P4-F-1 bis P4-F-21 entschieden. Offen, bis die Seiten von Etappe 2 geprüft und freigegeben sind. Prüfrunde 2a: 2 wichtig, 3 optional; 10 Fragen P2a-F-1 bis P2a-F-10. |
+| W2 Gesamtkohärenz | offen | 10.10.2026 | vierte Prüfrunde | 1 wichtig, 3 optional; offen weiter F-W2-02, F-W2-03 (jetzt P4-F-18, P4-F-19). Prüfrunde 2a: 5 optional |
+| S Sprach-Review | offen | 10.10.2026 | vierte Prüfrunde | 6 optional; Lesetest je Abschnitt und Kennzahlen; abschliessbar erst nach W1 und W2. Prüfrunde 2a: 1 wichtig (Länge), 3 optional; 24 Kürzungsvorschläge |
+| Visualisierungs-Check | offen | 10.10.2026 | vierte Prüfrunde | 1 wichtig, 5 optional; Matrix 1–17 × 6 Figuren; seit 10.10.2026 alle sechs Figuren fachlich freigegeben (Fachstelle). Prüfrunde 2a: 1 wichtig, 3 optional; Matrix 1–17 × 2 neue Figuren |
 | Bedienung und Barrierefreiheit | offen | 10.10.2026 | vierte Prüfrunde, automatisiert | kein Befund; reale Screenreader-Läufe, Hardwaretastatur und Touch fehlen (nicht prüfbar) |
 | W3 Code-Review | offen | 10.10.2026 | vierte Prüfrunde: nur Stichprobe Technik und Zuständigkeit, kein volles W3 | Stichprobe ohne Befund; W3 erst nach Umsetzung von W2 und S |
 | R1 Profil-Audit | offen | | | noch nicht geprüft |
@@ -560,6 +560,663 @@ Mit Korrektur 1h gibt es 6 Figuren:
 - **Statustabelle:** Die Zeilen R1 bis R3 fehlen noch; die Prüfsitzung trägt sie ein.
 - **Profil (später):** P-6, P-9.
 - **Offen für Stufe 5:** Screenreader-Läufe, Hardwaretastatur und Touch.
+
+## Prüfrunde 2a (10.10.2026, Stand 94afac7)
+
+**Geprüfter Stand:** Branch `borderline-umbau`, Commit `94afac7` (Etappe 2a, `git log -1` beim Start). Geprüft sind die Seiten `rolle` («Ihre Rolle klären») und `selbstfuersorge` («Auf sich achten») sowie auf `index` der Abschnitt `einstiege`. Etappe 1 (`index`, `verstehen`, `beziehungen`, `grenzen`) ist von der Fachstelle freigegeben; sie dient hier nur als Massstab für Begriffe, Ton und Absicherungen. Die Prüfsitzung hat die Website nicht gebaut. Sie hat keine Inhalte und keinen Code geändert und committet nur diesen Bericht.
+
+**Vorgehen**
+
+- **Grundlagen gelesen:** aus `guidelines/` die Abschnitte Ablauf (mit «Prüftiefe»), Fachliche Qualität, Gesamtkohärenz, Sprache und Ton, Visuelle Wissensvermittlung («Bildsprache», «Ein Bild, eine Idee»), Visualisierung umsetzen (Check 1–17, «Metaphern und Illustrationen zeichnen») und Pre-Release-Audits (R2 Teil 2 und 3); `README.md` («Zuständigkeit statt Krisenzugang», «Verweis im Text», «Kritische Information nie nur hinter …»); im Website-Ordner `BAUAUFTRAG-ETAPPE-2A.md`, die Selbstprüfung 2a, die vierte Prüfrunde, das Bildsprache-Audit, `UMBAUPLAN.md`, `site.config.json` und `abgleich/` (`README.md`, `rolle.md`, `selbstfuersorge.md`).
+- **Bestand:** Branch `origin/borderline-bestand`, `bestand/borderline-angehoerige/texte/` (73 Dateien) und `INVENTAR.md`, mit `git show` ausgelesen. Gelesen sind alle Bestandsquellen aus Bauauftrag Abschnitt 3 und 4: `unterstuetzen--uebersicht.md`, `unterstuetzen--alltag.md`, `selbstfuersorge.md` und die 16 Handouts.
+- **Abgleich:** `abgleich/rolle.md` (768 Zeilen) und `abgleich/selbstfuersorge.md` (671 Zeilen) per Skript in Zeilen zerlegt und nach Status gefiltert.
+- **Rückwärtsprüfung:** Ein Skript der Prüfsitzung sucht für jeden Satz der zwei Seiten (sichtbarer Text, 700 Sätze) den ähnlichsten Satz im ganzen Bestand (Wortüberlappung). Die 106 Sätze mit der schwächsten Übereinstimmung sind von Hand gegen den Bestand gelesen (Teil A3).
+- **Browser:** lokal `python3 -m http.server 8765` im Projektstamm, Chromium über Playwright. Bildschirmfotos beider Abbildungen bei 1280 und 360 px, je im Theme Standard und «kontrast» (acht Fotos, alle angesehen, nicht committet; die Belege beschreiben sie). Die Vorschau-Adresse auf Netlify war aus dieser Umgebung nicht erreichbar (Teil «Nicht geprüft»).
+- **Skripte der bauenden Sitzung:** selbst ausgeführt, Werte nicht übernommen (Teil F). Dazu eigene Skripte für Kennzahlen, Links, Überlauf, Tastatur und Kontrast.
+
+**Ergebnis in Kürze**
+
+- Die zwei Seiten übertragen den Bestand treu. In 48 verglichenen Aussagen ist keine Sicherheitsaussage entfallen, keine neue absolute Aussage über die betroffene Person dazugekommen, und die Absicherungen zu Person, Diagnose und Verlauf stehen wie im Bestand.
+- Zwei fachliche Stellen brauchen einen Entscheid der Fachstelle, bevor der Wortlaut freigegeben werden kann:
+  - `rolle` › `schuld` übernimmt Bestandssätze, die den Entscheiden zu Etappe 1 widersprechen: «… ohne die ganze Verantwortung für die Erkrankung … zu übernehmen» und «Behandlung und Genesung müssen Sie nicht allein tragen» (P2a-F-1).
+  - `rolle` › `kinder` verweist für das, was Kinder nicht übernehmen müssen, auf den Gewaltabschnitt von `grenzen`. Im Bestand stand dieser Inhalt auch ausserhalb des Gewaltkontexts (P2a-F-2, Vorschlag einer Fassung).
+- Die Seiten sind sehr lang (`rolle` 3339, `selbstfuersorge` 2955 Wörter, bei 360 px etwa 38 und 32 Bildschirmhöhen). Für die Prüfperson tragen sie als Nachschlagewerk, nicht als Lesestück. Die Abbildungen stehen spät im Abschnitt (P2a-V-1). Zwei Stufen von Kürzungen ohne Aussageverlust stehen in Teil C2.
+- Technik, Zuständigkeit, Bedienung und Kontrast sind ohne Befund. Die Kennzahlen der bauenden Sitzung stimmen auf das Wort.
+
+### Teil A · W1 Fachliche Vorprüfung
+
+#### A1 · 48 Aussagen gegen den Bestand
+
+Je Seite 24 Aussagen. Ausgewählt nach Auftrag: betroffene Person, Schuld, Verantwortung und Ursachen, Kinder, riskantes Verhalten, Substanzen und Geld, Schutz und Gewalt, Gesundheit der Angehörigen, Handlungshinweise. Nr. = Zeile im Abgleich (r = `abgleich/rolle.md`, s = `abgleich/selbstfuersorge.md`). Bestandsdateien in `texte/`; «Handout x» = `materialien--text--x.md`.
+
+**`rolle`**
+
+| # | Nr. | Bestand (Zitat, Datei) | Neue Fassung (Zitat, Seite › Abschnitt) | Urteil |
+| --- | --- | --- | --- | --- |
+| 1 | r470, s55 | «Sie können einen eigenen Fehler anerkennen, ohne die gesamte Verantwortung für die Erkrankung oder die Entscheidungen eines anderen Menschen zu übernehmen.» (`selbstfuersorge.md`, «Wenn Schuldgefühle dazukommen»); dazu Handout `schuld-verantwortung`: «… ohne für die gesamte Erkrankung oder Genesung einer anderen Person verantwortlich zu sein.» | «Sie können einen eigenen Fehler anerkennen, ohne die ganze Verantwortung für die Erkrankung oder die Entscheidungen eines anderen Menschen zu übernehmen.» (`rolle` › `schuld`) | gleichbedeutend mit dem Bestand. **Widerspricht** `verstehen` › Annahme 3: «Daraus folgt keine Schuld und keine Aufteilung von Verantwortung für die Erkrankung.» «Die ganze Verantwortung» setzt einen Teil voraus (P2a-F-1) |
+| 2 | r479 | «Behandlung und Genesung müssen Sie nicht allein tragen.» (Handout `schuld-verantwortung`, «Ich tue nicht genug.») | wörtlich (`schuld`, «Fünf Sätze …») | gleichbedeutend. **Spannung** zu `verstehen` › Annahme 3 («nicht für die Genesung verantwortlich») und `index` › `haltung`. Die Fachstelle hat bei P4-F-3 «nicht allein» für den Verlauf gestrichen und nur für die Beziehung behalten (P2a-F-1) |
+| 3 | r488 | «Sie müssen die Erkrankung nicht heilen und weder Behandlung noch Genesung allein tragen.» (Handout `schuld-verantwortung`, Merksatz) | wörtlich (`schuld`, Absatz nach den fünf Sätzen) | wie Nr. 2 |
+| 4 | r476 | «Belastende Erfahrungen können mitwirken; für konkrete verletzende Handlungen können Sie Verantwortung übernehmen.» (Handout `schuld-verantwortung`) | «Belastende Erfahrungen können mitwirken. Für konkrete verletzende Handlungen können Sie Verantwortung übernehmen.» (`schuld`, Antwort auf «Wenn ich ein besserer Elternteil gewesen wäre …») | gleichbedeutend. Die freigegebene Fassung auf `verstehen` ergänzt «… neben vielen anderen Einflüssen. Daraus folgt keine Schuld …». Hier steht der Satz ohne diese Einordnung direkt als Antwort an Eltern (P2a-F-1 c) |
+| 5 | r454 | «Aus der Diagnose lässt sich keine individuelle Schuldzuweisung ableiten; Verantwortung für konkrete verletzende oder gewalttätige Handlungen bleibt davon getrennt.» (Handout `schuld-verantwortung`) | «Aus einer Diagnose lässt sich keine persönliche Schuld ableiten.» und «Die Verantwortung für eigene verletzende oder gewalttätige Handlungen bleibt bestehen.» (`schuld`) | gleichbedeutend |
+| 6 | r480 | «Genesung hängt von vielen persönlichen, sozialen und professionellen Faktoren ab. Sie sind nicht für den Verlauf einer anderen Person verantwortlich.» (Handout `schuld-verantwortung`) | wörtlich (`schuld`) | gleichbedeutend |
+| 7 | r382–r384, r425 | «Behandlung, persönliche Entscheidungen und Lebensumstände beeinflussen den Verlauf. Angehörige können Genesung nicht herstellen. Eine schwierigere Phase beweist nicht, dass Sie zu wenig getan haben.» (Handout `garten`); «Genesung wird von der Person selbst mitgestaltet …» (Handout `leuchtturm`) | Kernaussage «Sie können begleiten. Genesung herstellen können Sie nicht.»; Kurztext «Die Person gestaltet ihre Genesung selbst mit. Auch Behandlung, Beziehungen, Lebensumstände und Unterstützung in der Gesellschaft beeinflussen den Verlauf. Eine schwierigere Phase …» (`anbieten`, Abbildung 1) | gleichbedeutend (zwei Handouts zusammengeführt) |
+| 8 | r373 | «Wie und wann ein Mensch sich verändert, lässt sich daraus nicht vorhersagen.» (Handout `garten`) | wörtlich (Abbildung 1, Vertiefung «Grenzen des Bildes») | gleichbedeutend. Die Absicherung steht nur in der Vertiefung; der Abschnittstext sagt aber selbst «können … unterstützen» (Garten-Satz) und ist damit abgesichert |
+| 9 | r18 | «Sie können nicht jede Krise verhindern, keine Entwicklung erzwingen und nicht dauerhaft die innere Regulation eines anderen Menschen übernehmen.» (`unterstuetzen--uebersicht.md`) | Liste «Sie können nicht:» mit «jede Krise oder Eskalation verhindern», «eine Entwicklung erzwingen», «auf Dauer die Gefühle eines anderen Menschen ausgleichen» (`an-grenzen`) | gleichbedeutend («Regulation» etwas enger, wie auf `beziehungen` freigegeben) |
+| 10 | r485 | «Betreuung, Unterstützung und Sicherheit müssen Erwachsene organisieren; Kinder brauchen altersgerechte Informationen und verlässliche Bezugspersonen.» (Handout `schuld-verantwortung`) | «Betreuung, Unterstützung und Sicherheit organisieren Erwachsene.» (`kinder`) | **Bedeutung leicht verschoben:** Aus der Pflicht («müssen») wird eine Beschreibung. README: «Bestehende Sorge- und Schutzaufgaben werden klar benannt.» (P2a-F-2) |
+| 11 | r68, r739 | «Kinder müssen weder Streit schlichten noch Medikamente kontrollieren oder einen Elternteil bewachen.» (`unterstuetzen--uebersicht.md`, «Wann Unterstützung an Grenzen kommt»; Handout `kinder`) | nur als Verweis: «Was Kinder nicht übernehmen müssen, steht auf der Seite «Grenzen» im Abschnitt «Wenn Gewalt oder Bedrohung vorkommt».» (`kinder`) | **Bedeutung verschoben:** Der Inhalt gilt im Bestand allgemein; der Verweis stellt ihn unter Gewalt (P2a-F-2) |
+| 12 | r72, r744 | «Bei akuter Gefahr holen Erwachsene sofort Hilfe.» (`unterstuetzen--uebersicht.md`) | auf `rolle` nicht; dort «Bei Angst, Gewalt oder fehlender Betreuung organisieren Erwachsene Hilfe.» (Handout `kinder`) | **Absicherung fehlt auf der Seite:** «sofort» bei akuter Gefahr steht nur auf `grenzen` › `gewalt` (P2a-F-2) |
+| 13 | r732 | «Das Kind muss weder die Behandlung erklären noch die Familie zusammenhalten.» (Handout `kinder`) | wörtlich (`kinder`) | gleichbedeutend |
+| 14 | r245 | «Bei unmittelbarer Selbst- oder Fremdgefährdung oder bei Gewalt holen Sie Hilfe und schützen sich.» (`unterstuetzen--alltag.md`) | «Gefährdet ein Mensch sich selbst oder andere unmittelbar, oder kommt es zu Gewalt: Holen Sie Hilfe und schützen Sie sich.» und danach der Verweis im Text (`an-grenzen`) | gleichbedeutend |
+| 15 | r247, r248 | «Riskante oder abrupte Entscheidungen können in unterschiedlichen Belastungslagen vorkommen. Sie treten nicht bei allen Menschen mit Borderline auf und sagen nichts über Charakter oder Absicht aus.» (`unterstuetzen--alltag.md`) | in drei Sätzen: «… können in unterschiedlichen belastenden Lagen vorkommen. Sie treten nicht bei allen Menschen mit Borderline auf. Über Charakter oder Absicht sagen sie nichts aus.» (`an-grenzen`) | gleichbedeutend |
+| 16 | r257 | «Beobachtbarer oder riskanter Konsum von Alkohol, Cannabis oder anderen Substanzen; die mögliche Funktion bleibt offen» (`unterstuetzen--alltag.md`) | «sichtbarer oder riskanter Konsum von Alkohol, Cannabis oder anderen Substanzen; wozu er dient, bleibt offen» (`an-grenzen`) | gleichbedeutend |
+| 17 | r281 | «Eigene Sicherheit priorisieren: Fahren mit unter Einfluss stehender Person ablehnen» (`unterstuetzen--alltag.md`) | «die eigene Sicherheit zuerst: nicht mitfahren, wenn die Person unter Einfluss steht» (`an-grenzen`) | gleichbedeutend |
+| 18 | r264 | «Gemeinsame Konten getrennt halten, wenn das Muster bekannt ist» (`unterstuetzen--alltag.md`) | wörtlich, klein geschrieben (`an-grenzen`) | gleichbedeutend |
+| 19 | r283 | «Wenn die Person das möchte, das Behandlungsteam einbeziehen; eigene Beratung können Sie unabhängig nutzen» (`unterstuetzen--alltag.md`) | «das Behandlungsteam einbeziehen, wenn die Person das möchte; eigene Beratung können Sie unabhängig davon nutzen» (`an-grenzen`) | gleichbedeutend |
+| 20 | r647 | «Angehörige müssen die Situation nicht allein beurteilen oder absichern.» (Handout `6-leitlinien`) | «Sie müssen die Lage nicht allein beurteilen oder absichern.» (`an-grenzen`, nach dem Verweis im Text) | gleichbedeutend |
+| 21 | r575 | «Transparente Absprachen können Orientierung geben; ihre Wirkung lässt sich nicht vorhersagen.» (Handout `konsistenz-prinzip`) | «Ob eine Absprache wirkt, lässt sich nicht vorhersagen.» (`alltag`) | gleichbedeutend |
+| 22 | r111, r112 | «Manche Angehörige berichten in belastenden Phasen von Anspannung, vorsichtigem Abtasten, Rückzug nach Konflikten, Schuldgefühlen oder Erreichbarkeitsdruck. Andere erleben den Alltag anders; aus einer Diagnose lässt sich der Beziehungsverlauf nicht vorhersagen.» (`unterstuetzen--alltag.md`) | «Manche Angehörige berichten von belastenden Phasen im Alltag. Sie sind angespannt, tasten sich vorsichtig heran oder ziehen sich nach Konflikten zurück. … Aus einer Diagnose lässt sich nicht vorhersagen, wie eine Beziehung verläuft.» (`alltag`) | gleichbedeutend; «Sie sind angespannt …» lässt sich als Anrede lesen (P2a-S-2) |
+| 23 | r655 | «Sicherheit und die Autonomie aller Beteiligten haben Vorrang.» (Handout `6-leitlinien`) | «Respekt gilt für alle Beteiligten.» (`alltag`) | **Bedeutung leicht verschoben** («Autonomie», «Vorrang»). Getragen von «Die betroffene Person darf ein Angebot annehmen, verändern oder ablehnen.» und «Ihre eigenen Warnsignale und Ihre Sicherheit haben Vorrang.»; kein Prüfbedarf, nur Abgleich (P2a-W1-4) |
+| 24 | r29 | «alles Schwierige stellvertretend zu regulieren» (`unterstuetzen--uebersicht.md`) | «alle Probleme stellvertretend zu lösen» (`anbieten`, Wortlaut Handout `rolle-klaeren`) | gleichbedeutend im Ganzen; die Regulation von Gefühlen steht in «jede Anspannung aufzufangen» |
+
+**`selbstfuersorge`**
+
+| # | Nr. | Bestand (Zitat, Datei) | Neue Fassung (Zitat, Seite › Abschnitt) | Urteil |
+| --- | --- | --- | --- | --- |
+| 25 | s15 | «Bei Gefahr hat Schutz Vorrang:» (`selbstfuersorge.md`, «Was Sie sich jetzt schenken können») | ersetzt durch den Verweis im Text (`eigenes-leben`); davor steht «Kurze Übungen finden Sie im Abschnitt «Wenn es gerade zu viel ist».» | Schutz getragen, der Verweis ist stärker. Der Anlass-Satz selbst fehlt, so dass der Verweis nicht nach einer Handlungsanleitung steht (P2a-T-1, P2a-F-4) |
+| 26 | s17, s19, s109 | «Wenn angenehm: vier Sekunden ein, sechs Sekunden aus, ohne Atemanhalten oder besonders tiefes Atmen. … Bei Schwindel oder Unwohlsein beenden Sie die Übung.»; «Bei Schwindel, Luftnot oder Unwohlsein stoppen Sie und atmen in Ihrem gewohnten Rhythmus weiter.» (`selbstfuersorge.md`) | «Wenn es für Sie angenehm ist: vier Sekunden ein, sechs Sekunden aus. Halten Sie den Atem nicht an, und atmen Sie nicht besonders tief. … Bei Schwindel, Luftnot oder Unwohlsein hören Sie auf und atmen in Ihrem gewohnten Rhythmus weiter.» (`zu-viel`) | gleichbedeutend |
+| 27 | s285 | «Langsames Atmen kann körperliche Regulationsprozesse und akute Anspannung beeinflussen (Zaccaro et al., 2018); daraus folgt keine Wirkungsgarantie für jede Person» (`selbstfuersorge.md`) | «Langsames Atmen kann Anspannung beeinflussen. Dass es bei jeder Person wirkt, ist nicht garantiert.» (`zu-viel`) | gleichbedeutend |
+| 28 | s104, s512 | «Bei Gewalt oder akuter Gefahr holen Sie Hilfe, statt weiterzuüben.» (`selbstfuersorge.md`); «Bei Bedrohung, Gewalt oder akuter Selbstgefährdung geht Hilfeholen vor dem Weiterüben.» (Handout `stopp-technik`) | «Bei Bedrohung, Gewalt, akuter Gefahr oder Selbstgefährdung holen Sie Hilfe, statt weiterzuüben.» und danach der Verweis im Text (`zu-viel`) | gleichbedeutend, im Sinn der Sicherheit etwas weiter |
+| 29 | s67 | «Diese Anzeichen sind unspezifisch: Sie können bei Überlastung auftreten, aber auch andere körperliche oder psychische Ursachen haben. Sie sind keine Diagnose und kein Beweis, dass Sie «zu wenig» für sich tun.» (`selbstfuersorge.md`) | «Die folgenden Anzeichen können bei Überlastung auftreten. Sie können aber auch andere körperliche oder psychische Ursachen haben. Sie sind keine Diagnose und kein Beweis, dass Sie «zu wenig» für sich tun.» (`warnsignale`) | gleichbedeutend |
+| 30 | s449 | «Sie erlauben keine Einschätzung der Dringlichkeit. Fehlende Anzeichen bedeuten keine Entwarnung …» (Handout `warnsignale`) | «Sie zeigt auch nicht, wie dringend etwas ist. Fehlende Anzeichen bedeuten keine Entwarnung.» (`warnsignale`) | gleichbedeutend |
+| 31 | s100 | «Sprechen Sie bei Bedarf mit Ihrer Hausärzt:in oder einer psychologischen Fachperson, damit auch andere Ursachen abgeklärt werden können.» (`selbstfuersorge.md`) | «Sprechen Sie bei Bedarf mit Ihrer Hausärztin, Ihrem Hausarzt oder einer psychologischen Fachperson. Dabei können auch andere Ursachen abgeklärt werden.» (`warnsignale`) | gleichbedeutend |
+| 32 | s481 | «Wenn Sie sich nicht mehr sicher fühlen oder die Dringlichkeit nicht einschätzen können, wenden Sie sich an professionelle Hilfe. Warten Sie nicht auf bestimmte Warnzeichen.» (Handout `warnsignale`) | «Wenn Sie sich nicht mehr sicher fühlen oder nicht einschätzen können, wie dringend es ist, wenden Sie sich an professionelle Hilfe. Warten Sie nicht auf bestimmte Warnzeichen.» und danach der Verweis im Text (`warnsignale`) | gleichbedeutend |
+| 33 | s176 | «Bei anhaltender Erschöpfung, Schlafproblemen oder depressiver Stimmung kann eine ärztliche oder psychotherapeutische Abklärung sinnvoll sein.» (`selbstfuersorge.md`) | «… oder gedrückter Stimmung kann …» (`kraft`) | gleichbedeutend (Alltagswort) |
+| 34 | s136 | «Wenn Sie merken, dass die Übung Sie eher zusätzlich stresst, lassen Sie sie weg …» (`selbstfuersorge.md`) | «Wenn die Übung Sie eher zusätzlich stresst, lassen Sie sie weg.» (`zu-viel`) | gleichbedeutend |
+| 35 | s391 | «Angehörigen- oder Sorgearbeit kann psychisch, körperlich, sozial und finanziell belasten.» (Handout `energie-konto`) | «Die Sorge für einen nahestehenden Menschen kann psychisch, körperlich, sozial und finanziell belasten.» (`kraft`) | gleichbedeutend |
+| 36 | s392 | «Nicht jede Belastung lässt sich durch persönliche Selbstfürsorge ausgleichen. Auch praktische Entlastung und Unterstützung von aussen gehören in den Blick.» (Handout `energie-konto`) | «Nicht jede Belastung lässt sich durch Selbstfürsorge ausgleichen. … Dann braucht es praktische Entlastung und Unterstützung von aussen.» (`kraft`) | gleichbedeutend |
+| 37 | s406 | «Wenig planbare Unterbrechungen und fehlende Pausen können Erholung erschweren.» (Handout `energie-konto`) | «Diese ständige Bereitschaft kann Kraft kosten, auch wenn nichts passiert.» (Abbildung 1, Kurztext) | gleichbedeutend im Kern; «auch wenn nichts passiert» ist neu (Liste Nr. 13) |
+| 38 | r111 | «Manche Angehörige berichten … von … Erreichbarkeitsdruck.» (`unterstuetzen--alltag.md`) | «Manche Angehörige bleiben auch an einem freien Abend innerlich auf Abruf.» (Abbildung 1, Kernaussage) | gleichbedeutend; Absicherung «manche» gehalten (nicht «viele» wie im Profilbeispiel) |
+| 39 | s303 | «Das ist eine mögliche Erfahrung, kein typischer oder aus der Diagnose vorhersehbarer Beziehungsverlauf.» (`unterstuetzen--alltag.md`) | «Das ist eine mögliche Erfahrung. Es ist kein typischer Verlauf und lässt sich nicht aus der Diagnose vorhersagen.» (`kraft`) | gleichbedeutend |
+| 40 | s307 | «Angehörige sind weder für die Vorhersehbarkeit einer Beziehung noch für die Regulation einer anderen Person verantwortlich.» (`unterstuetzen--alltag.md`) | «Sie sind aber weder dafür verantwortlich, dass eine Beziehung vorhersehbar ist, noch dafür, die Gefühle eines anderen Menschen auszugleichen.» (`kraft`) | gleichbedeutend |
+| 41 | s314 | «Vereinbaren Sie eine Verfügbarkeit, die Sie freiwillig übernehmen können, und klären Sie professionelle Hilfewege für Krisen.» (`unterstuetzen--alltag.md`) | «Vereinbaren Sie eine Erreichbarkeit, die Sie freiwillig übernehmen können. Und klären Sie, welche professionelle Hilfe es für Krisen gibt.» (`kraft`) | gleichbedeutend |
+| 42 | s344 | «Sie dürfen zuerst oder ausschliesslich für die eigene Sicherheit und Gesundheit sorgen.» (Handout `sauerstoffmaske`) | «Sie dürfen zuerst oder ausschliesslich für sich sorgen.» (`unterstuetzung`) | gleichbedeutend im Zusammenhang (der Satz davor nennt Sicherheit und Gesundheit) |
+| 43 | s354 | «Selbstfürsorge kann entlasten. Schuldgefühle können trotzdem bestehen bleiben oder zunächst stärker werden. Das ist kein Beweis, dass Sie etwas falsch machen.» (Handout `sauerstoffmaske`) | «… Schuldgefühle können trotzdem bleiben oder zuerst sogar stärker werden. Das beweist nicht, dass Sie etwas falsch machen.» (`unterstuetzung`) | gleichbedeutend |
+| 44 | s275 | «Ein Schuldgefühl allein erklärt weder die Erkrankung noch Ihre Verantwortung. Eigene Fehler lassen sich ernst nehmen, ohne für alles verantwortlich zu sein.» (`selbstfuersorge.md`, «Als Elternteil») | wörtlich (`eigenes-leben`, «Eltern») | gleichbedeutend; passt zu `verstehen` › Annahme 3 |
+| 45 | s557, s589 | «Akzeptanz heisst nicht bleiben, schweigen oder Gewalt tolerieren.»; «Bei Gefahr geht Schutz vor Akzeptanzübung.» (Handout `radikale-akzeptanz`) | «Akzeptanz heisst auch nicht, zu bleiben, zu schweigen oder Gewalt hinzunehmen. Bei Gefahr geht Schutz vor.» und Verweis auf `grenzen` › «Wenn Gewalt oder Bedrohung vorkommt» (`akzeptanz`) | gleichbedeutend |
+| 46 | s213 | «Das Konzept der Radikalen Akzeptanz ist ein zentrales Element der Dialektisch-Behavioralen Therapie (DBT).» (`selbstfuersorge.md`) | «Der Begriff stammt aus der Dialektisch-Behavioralen Therapie (DBT), einer wissenschaftlich untersuchten Psychotherapie für Borderline.» (`akzeptanz`) | **Zusatz aus anderer Bestandsquelle:** «wissenschaftlich untersuchten Psychotherapie für Borderline» stammt aus `glossar.md` Z. 108, nicht aus den Quellen der Seite, und fehlt in der Liste neuer Sätze; «zentrales Element» entfällt (P2a-F-9) |
+| 47 | s632 | «Pausen machen, wenn es zu viel wird – bei akuter Gefahr aber Hilfe holen.» (Handout `erlaubnis-karte`) | «Pausen machen und auftanken, wenn es zu viel wird» (`eigenes-leben`, Liste «Sie dürfen:»); die akute Gefahr trägt der Verweis im Text oben im selben Abschnitt | gleichbedeutend über den Verweis; hängt von P2a-F-4 ab |
+| 48 | s283 | «Die Übertragung in konkrete Alltagsschritte ist eine redaktionelle Orientierung, keine Wirkungsgarantie.» (`selbstfuersorge.md`, Forschungsstand) | «Das ist eine Orientierung, keine Garantie, dass sie wirken.» (`beratung`) | gleichbedeutend |
+
+**Bilanz:** 42 gleichbedeutend, davon 4 mit Widerspruch oder Spannung zu den Entscheiden der Etappe 1 (Nr. 1–4). Bei 3 ist die Bedeutung verschoben (Nr. 10, 11 und 23; Nr. 23 nur leicht und getragen). 2 Absicherungen fehlen auf der Seite (Nr. 12 Kinder bei akuter Gefahr; Nr. 25 Anlass-Satz des Verweises). 1 Zusatz stammt aus einer anderen Bestandsquelle (Nr. 46). Keine Aussage ist neu ohne Grundlage. Keine Sicherheitsaussage ist entfallen; die zwei fehlenden Stellen stehen auf `grenzen` bzw. im Verweis im Text.
+
+#### A2 · 25 Zeilen des Abgleichs mit Status «entfällt», «zusammengeführt» oder «verschoben»
+
+| Nr. | Status | Bestand (Kern) | Trägt die neue Fassung? Ist «entfällt» begründet? Stimmt die Vormerkung? |
+| --- | --- | --- | --- |
+| r67, r68 | verschoben → `grenzen#gewalt` | «Erwachsene organisieren Hilfe und Betreuung. Kinder müssen weder Streit schlichten …» | Fassung steht dort wörtlich. **Ort passt nicht:** Im Bestand stehen die Sätze in «Wann Unterstützung an Grenzen kommt», nicht nur bei Gewalt (P2a-F-2) |
+| r72 | verschoben → `grenzen#gewalt` | «Bei akuter Gefahr holen Erwachsene sofort Hilfe.» | wie oben; auf `rolle` › `kinder` fehlt der Satz |
+| r736 | verschoben → `grenzen#gewalt` | «Welche zweite erwachsene Person ist erreichbar, wenn die erste ausfällt?» | trägt («… und wer einspringt, wenn diese ausfällt»). Auf `rolle` steht dafür der Satz «Dort steht auch, wer einspringt, wenn die erste Person ausfällt.» ohne Bezug für «die erste Person» |
+| r737 | zusammengeführt | «Den Plan mit den beteiligten Erwachsenen vereinbaren und dem Kind erklären.» | nur teilweise: «… dem Kind erklären» steht nur auf `grenzen` («Besprechen Sie den Plan in einfachen Worten.»); die Bemerkung nennt das |
+| r125 | verschoben → `selbstfuersorge#kraft` | «Eine Pause gleicht dauerhafte Überlastung nicht automatisch aus; manchmal müssen sich Aufgaben oder Bedingungen ändern.» | trägt; die Fassung zitiert nur den zweiten Teil, der erste steht dort als «Auch eine Pause gleicht dauernde Überlastung nicht automatisch aus.» |
+| r145 | verschoben → `selbstfuersorge#kraft` | «Sie müssen nicht ständig erreichbar sein oder jede Stimmung ausgleichen.» | teilweise: «… oder jede Stimmung ausgleichen» fehlt in der Fassung; inhaltlich getragen von «… die Gefühle eines anderen Menschen auszugleichen» (`kraft`). Die Bemerkung nennt es nicht (P2a-W1-4) |
+| r148–r150 | verschoben → `kommunizieren (Etappe 2)` | Einleitung der Gesprächsbeispiele «Person A / Person B» | richtig vorgemerkt (Bauauftrag: Gesprächstechniken gehören zu `kommunizieren`) |
+| r453 | verschoben → `verstehen#borderline` | «Eine Borderline-Persönlichkeitsstörung hat keine einfache einzelne Ursache.» | trägt («Borderline hat nicht eine einzige Ursache.») |
+| r458 | verschoben → `verstehen#borderline` | «Sie bestimmen weder Erkrankung noch Verlauf allein.» (Genetik und Temperament) | teilweise: «Verlauf» ist auf `verstehen` nicht getragen; vertretbar, weil die Gene-Aussage dort nicht einzeln steht (P2a-W1-4) |
+| r460 | verschoben → `verstehen#borderline` | «Eine Diagnose erlaubt keine einfache Zuordnung von Ursache oder Schuld zu einer Person.» | trägt («Die Schuld bei der betroffenen Person oder bei Angehörigen zu suchen, ist zu einfach.»); auf `rolle` zusätzlich «Aus einer Diagnose lässt sich keine persönliche Schuld ableiten.» |
+| r461, r462 | verschoben → `verstehen#mythen` | Kindheitsbelastungen «stehen in Studien mit Borderline in Zusammenhang. Das beweist keine einfache individuelle Ursache …» | trägt (Annahme «Borderline ist dasselbe wie Trauma») |
+| r116 | zusammengeführt | «Das ist kein Auftrag, den Alltag einer anderen Person zu regulieren.» | trägt («Sie müssen keine andere Person beruhigen …», Kopf) |
+| r314 | zusammengeführt | «Therapie, Kontrolle und Verantwortung für die Genesung gehören nicht zu Ihrer Rolle.» | trägt (Liste «Was nicht Ihre Aufgabe ist:», auch «für den Verlauf der Genesung verantwortlich zu sein») |
+| r611, r646 | zusammengeführt | «In akuter Gefahr haben Sicherheit und professionelle Hilfe Vorrang.»; «Bei akuter Gefahr gelten die vorhandenen Sicherheits- und Notfallwege.» | trägt (Verweis im Text in `an-grenzen`) |
+| r655 | zusammengeführt | «Sicherheit und die Autonomie aller Beteiligten haben Vorrang.» | teilweise (A1 Nr. 23) |
+| r424 | zusammengeführt | «Die Metapher verteilt keine festen Rollen: Die betroffene Person ist kein steuerloses Schiff, und Sie müssen kein dauernd ruhiger Anker sein.» | trägt für die Angehörigen; der Teil über die betroffene Person entfällt mit der Leuchtturm-Bildwelt (Bauauftrag 2d), begründet |
+| r496–r500 | entfällt | Quelle Gunderson et al. (2018) | begründet (Ursachen stehen auf `verstehen`), als Prüfbedarf vermerkt (P2a-F-10) |
+| r331 | entfällt | «Die rechte Spalte grenzt bewusst ab …» | begründet (Erklärung der Druckgrafik) |
+| r108, r146, r246, r310 | entfällt | Links auf «Akute Hilfe und Notfallkontakte» | begründet (Profil); an ihrer Stelle Zuständigkeitsverweis und Verweis im Text |
+| s15 | zusammengeführt | «Bei Gefahr hat Schutz Vorrang:» | trägt im Schutz, siehe A1 Nr. 25 |
+| s55 | verschoben → `rolle#schuld` | «… ohne die gesamte Verantwortung für die Erkrankung …» | trägt; Widerspruch zu Etappe 1, siehe A1 Nr. 1 |
+| s62, s234 | verschoben → `index#beratung` | «Klären Sie direkt bei der Fachstelle, wer das Angebot nutzen kann, ob Kosten entstehen …» | trägt: `index` › `beratung` nennt «alle Angehörigen», «kostenlos», «Schweigepflicht», Ort und Form |
+| s238 | zusammengeführt → Fusszeile | «Die Fachstelle ist kein Krisendienst.» | trägt (Zuständigkeitsverweis in jeder Fusszeile) |
+| s327 | verschoben → `kommunizieren (Etappe 2)` | «Bei Sorge um Sicherheit finden wir passende professionelle Hilfe unter «Akute Hilfe und Notfallkontakte».» | richtig vorgemerkt; **Hinweis für 2b:** Beim Bau von `kommunizieren` gilt der Verweis im Text, kein Link auf eine Notfallseite |
+| s371, s420, s648 | entfällt | Kennzeichnungen «redaktionelle Reflexionsmetapher, kein validiertes Wirkungsmodell» (Sauerstoffmaske), «Redaktionelle Reflexionsmetapher» (Energie-Konto), «kein validiertes Instrument» (Erlaubnis-Karte) | begründet, weil die Seite die Metaphern nicht als Modell zeigt; als Prüfbedarf vermerkt (P2a-F-10) |
+
+**Weitere Feststellungen zum Abgleich:**
+
+- s213 (DBT) steht als «umformuliert (einfache Sprache, 2a)», obwohl die Fassung einen Zusatz aus `glossar.md` trägt (A1 Nr. 46). Richtig wäre «zusammengeführt» mit Nennung von `glossar.md`, oder «neu (2a)» für den Zusatz.
+- s65: Der Verweissatz «Wie die Fachstelle Angehörigenarbeit der PUK berät, steht auf der Startseite im Abschnitt «Beratung für Sie».» ist als «zusammengeführt» mit dem Linktext «Beratung für mich finden» geführt. Er ist ein Verweissatz wie Nr. 4–11 und 20–23 der Liste und fehlt dort.
+- Die Prüfbedarf-Abschnitte am Ende der zwei Tabellen (10 und 8 Punkte) sind in P2a-F-1 bis -10 aufgenommen, soweit sie etwas ändern würden.
+
+#### A3 · Neue Sätze
+
+**(a) Rückwärtsprüfung.** Gelesen sind die 106 Sätze mit der schwächsten Übereinstimmung zum Bestand (63 auf `rolle`, 43 auf `selbstfuersorge`, Wortüberlappung unter 0,36 bzw. 0,40). Fast alle sind Umformulierungen, Teilsätze geteilter Bestandssätze, Zwischentitel aus dem Bestand oder Sätze der Liste. Zwei Stellen fehlen in der Liste «Neue Sätze zur Freigabe»:
+
+- «… einer wissenschaftlich untersuchten Psychotherapie für Borderline.» (`selbstfuersorge` › `akzeptanz`; Grundlage `glossar.md` Z. 108, A1 Nr. 46).
+- «Wie die Fachstelle Angehörigenarbeit der PUK berät, steht auf der Startseite im Abschnitt «Beratung für Sie».» (`selbstfuersorge` › `beratung`, Verweissatz; Abgleich s65).
+
+Dazu kommt ein Verweissatz, der als Umformulierung eines Bestandslinks geführt ist: «Wie Sie Grenzen setzen und halten, steht auf der Seite «Grenzen setzen».» (`rolle` › `an-grenzen`, r43). Er nennt die Seite anders als die übrigen Verweise (P2a-W2-1).
+
+**(b) Die 25 Sätze der Liste.** Ohne die Verweissätze; die stehen gesammelt in der Tabelle danach.
+
+| Nr. | Satz (gekürzt) | Ort | fachlich tragbar | nahe am Bestand | Ton | Bemerkung |
+| --- | --- | --- | --- | --- | --- | --- |
+| 1 | «Sie können begleiten.» | `rolle` › Abb. 1, Kernaussage | ja | ja (`garten`: «Ich kann diesen Weg begleiten …») | ja | – |
+| 2 | Kurzbeschreibung «Zeichnung: Zwei Menschen gehen nebeneinander …» | `rolle` › Abb. 1 | ja | Wortlaut des Auftrags | ja | beschreibt das Bild zutreffend; die Gehbewegung ist im Bild kaum sichtbar (P2a-V-2) |
+| 3 | «Innehalten, bevor Sie reagieren» | `rolle` › `alltag`, Zwischentitel | ja | ja (`alltag`: «Nicht sofort reagieren …») | ja | – |
+| 12 | «Manche Angehörige bleiben auch an einem freien Abend innerlich auf Abruf.» | `selbstfuersorge` › Abb. 1 | ja | ja (A1 Nr. 38) | ja | – |
+| 13 | «Das Buch liegt bereit, der Tee wird kalt, … auch wenn nichts passiert.» | `selbstfuersorge` › Abb. 1 | ja | ja (A1 Nr. 37) | ja | Die Zeichnung zeigt Dampf über der Tasse; «wird kalt» und Dampf passen nur knapp zusammen (P2a-V-3) |
+| 14 | «Vielleicht ruft sie gleich an.» | `selbstfuersorge` › Abb. 1 | – | – | – | entschieden: wird «Vielleicht kommt gleich eine Nachricht.» (nicht erneut gefragt); der Satz steht dreimal (P2a-T-2) |
+| 15 | «Eigentlich wollte ich lesen.» | `selbstfuersorge` › Abb. 1 | ja | Profilbeispiel | ja | – |
+| 16 | «Nicht alle Angehörigen erleben das so, und es muss nicht so bleiben. Das Bild zeigt eine Erfahrung, die manche beschreiben, keine Pflicht und keinen Fehler.» | `selbstfuersorge` › Abb. 1, Vertiefung | ja | Wortlaut des Auftrags | ja | «keine Pflicht und keinen Fehler» liest sich beim ersten Mal schwer: Gemeint ist, dass ständige Bereitschaft weder Pflicht noch Fehler ist (P2a-S-4) |
+| 17 | Kurzbeschreibung «Zeichnung eines Tisches am Abend …» | `selbstfuersorge` › Abb. 1 | ja | Profilbeispiel | ja | enthält den Satz Nr. 14; ändert sich mit ihm |
+| 18 | «Ruhig atmen» | `selbstfuersorge` › `zu-viel` | ja | ja | ja | – |
+| 19 | «5-4-3-2-1: im Hier und Jetzt ankommen» | `selbstfuersorge` › `zu-viel` | ja | ja («im Hier und Jetzt zu verankern») | ja | – |
+| 24 | «Ich weiss nicht mehr, was meine Aufgabe ist und was nicht.» | `index` › `einstiege` | ja | Wortlaut des Auftrags | ja | trifft den Inhalt von `rolle` |
+| 25 | «Ich bin erschöpft und komme selbst zu kurz.» | `index` › `einstiege` | ja | Wortlaut des Auftrags | ja | liegt nahe bei «Ich kann nicht mehr …» (`grenzen`); beide Einstiege bleiben unterscheidbar, kein Befund |
+
+**Verweissätze** (Nr. 4–11, 20–23 und die zwei Sätze aus (a)). Geprüft sind Ziel, Linktext und ob der Abschnitt den angekündigten Inhalt hat.
+
+| Nr. | Ort | Seite und Abschnitt stimmen | Abschnitt hat den angekündigten Inhalt | Bemerkung |
+| --- | --- | --- | --- | --- |
+| 4 | `rolle` › `schuld` | ja (`verstehen#borderline`) | ja: «Borderline hat nicht eine einzige Ursache. Mehrere Dinge wirken zusammen …» | Für Eltern mit Schuldgefühlen wäre `verstehen` › «Häufige Annahmen – und was realistischer ist» (Annahme «Angehörige sind schuld.») das entlastendere Ziel. Das jetzige Ziel nennt «Erfahrungen … beim Aufwachsen» als Mitursache ohne die Einordnung von Annahme 3 (P2a-F-8) |
+| 5 | `rolle` › `alltag` | ja (`selbstfuersorge#kraft`) | ja: «Sie müssen nicht rund um die Uhr erreichbar sein. …» | – |
+| 6 | `rolle` › `alltag` | ja (`verstehen#anspannung`) | teilweise: Die Kurve zeigt Stellen («Es wird eng»), sagt aber: «Wo jemand gerade steht, lässt sich von aussen nicht sicher erkennen.» «Woran Sie merken» verspricht etwas mehr | Fassung wie Nr. 21 wäre genauer (P2a-W2-1) |
+| 7 | `rolle` › `nach-konflikten` | ja (`beziehungen#was-hilft`) | ja: «später, in einem eigenen Gespräch: klären, wer wofür Verantwortung übernimmt …» | – |
+| 8 | `rolle` › `kinder` | Ziel vorhanden (`grenzen#gewalt`) | ja, aber im Unterabschnitt «Wenn Kinder mitbetroffen sind» unter dem Gewaltabschnitt | stellt Kinder unter Gewalt (P2a-F-2) |
+| 9 | `rolle` › `kinder` | – (ohne Link) | ja («… und wer einspringt, wenn diese ausfällt») | «die erste Person» hat auf `rolle` keinen Bezug; doppelt zu «Halten Sie fest, wer das Kind betreut, wenn ein Elternteil ausfällt …» (P2a-F-2) |
+| 10 | `rolle` › `an-grenzen` | ja (`grenzen#gewalt`) | ja | – |
+| 11 | `rolle` › `an-grenzen` | ja (`selbstfuersorge.html`) | ja | – |
+| 20 | `selbstfuersorge` › `eigenes-leben` | ja (`#zu-viel`) | ja | – |
+| 21 | `selbstfuersorge` › `kraft` | ja (`verstehen#anspannung`) | ja | – |
+| 22 | `selbstfuersorge` › `unterstuetzung` | ja (`rolle#schuld`) | ja | nennt die Seite «Ihre Rolle klären», die Navigation «Ihre Rolle» (P2a-W2-1) |
+| 23 | `selbstfuersorge` › `akzeptanz` | ja (`grenzen#gewalt`) | ja | gleicher Wortlaut wie auf `beziehungen` («Was dann wichtig ist, …») |
+| (a) | `selbstfuersorge` › `beratung` | ja (`index#beratung`) | ja | nicht in der Liste (A3 a) |
+| (r43) | `rolle` › `an-grenzen` | ja (`grenzen.html`) | ja | nennt die Seite «Grenzen setzen», alle anderen Verweise «Grenzen» (P2a-W2-1) |
+
+#### A4 · Übereinstimmung mit den Entscheiden zu Etappe 1
+
+| Prüfpunkt | Ergebnis | Beleg |
+| --- | --- | --- |
+| Schuld wie `verstehen` › Annahme 3 | **nicht erfüllt** an einer Stelle | `rolle` › `schuld`: «… ohne die ganze Verantwortung für die Erkrankung … zu übernehmen» gegen «keine Aufteilung von Verantwortung für die Erkrankung» (A1 Nr. 1). Erfüllt dagegen: «Aus einer Diagnose lässt sich keine persönliche Schuld ableiten.», «Ein Schuldgefühl allein erklärt weder die Erkrankung noch Ihre Verantwortung.» (`selbstfuersorge` › `eigenes-leben`) |
+| Verantwortung wie `beziehungen` › `verantwortung` («Für den Verlauf der Erkrankung sind sie nicht verantwortlich, für die Beziehung nicht allein.») | **teilweise** | erfüllt: «für den Verlauf der Genesung verantwortlich zu sein» (Liste «Was nicht Ihre Aufgabe ist»), «Sie sind nicht für den Verlauf einer anderen Person verantwortlich.»; nicht erfüllt: «Behandlung und Genesung müssen Sie nicht allein tragen.» und «… weder Behandlung noch Genesung allein tragen.» (A1 Nr. 2, 3). Auch innerhalb von `rolle` uneinheitlich: Der Kopf sagt «… nicht ihre Behandlung oder Genesung tragen» (ohne «allein») |
+| Keine neue absolute Aussage über die betroffene Person | erfüllt | Alle Aussagen über die Person tragen die Absicherungen des Bestands, zum Beispiel «Sie treten nicht bei allen Menschen mit Borderline auf.», «Aus einer Handlung allein lassen sich weder Motiv noch Charakter eines Menschen ableiten.», «Was daraus folgt, ist individuell und lässt sich nicht aus einer Diagnose ableiten.». Unabgesichert ist nur «Die Person gestaltet ihre Genesung selbst mit.» (Abb. 1); sie steht so im Bestand (`leuchtturm`) und ist eine Aussage über Mitgestaltung, keine Prognose |
+| Absicherungen wie im Bestand | erfüllt bis auf A1 Nr. 10 und 12 | Absicherungen je 100 Wörter steigen (Teil F); die Kürzungen betreffen Wiederholungen |
+| Begriffe | weitgehend erfüllt | Teil B |
+| Zuständigkeit | erfüllt | Teil F |
+
+#### Prüfbedarf für die Fachstelle
+
+Nach Wichtigkeit sortiert. Jede Frage lässt sich mit Ja oder Nein oder mit einer Auswahl beantworten. Varianten halten den Bestand, wo es einen gibt. Nicht gefragt sind die schon entschiedenen Punkte («Vielleicht kommt gleich eine Nachricht.»; Verweise V1–V9 am Schluss von Etappe 2).
+
+1. **P2a-F-1 · Verantwortung für Erkrankung und Genesung** (`rolle` › `schuld`). Drei Bestandssätze widersprechen den Entscheiden zu Etappe 1 (`verstehen` › Annahme 3, P4-F-3):
+   - «Sie können einen eigenen Fehler anerkennen, ohne die ganze Verantwortung für die Erkrankung oder die Entscheidungen eines anderen Menschen zu übernehmen.»
+   - «Behandlung und Genesung müssen Sie nicht allein tragen.»
+   - «Sie müssen die Erkrankung nicht heilen und weder Behandlung noch Genesung allein tragen.»
+
+   Soll (a) der Bestandswortlaut bleiben, oder (b) an Etappe 1 angeglichen werden: «ganze» und beide «allein» entfallen, sodass die Sätze sagen, dass Angehörige keine Verantwortung für die Erkrankung und die Genesung tragen? Oder (c) gibt die Fachstelle eine Fassung vor?
+   Dazu, Ja/Nein: Soll bei «Belastende Erfahrungen können mitwirken.» (Antwort an Eltern) die Einordnung der freigegebenen Fassung stehen, «… neben vielen anderen Einflüssen. Daraus folgt keine Schuld …» (`verstehen` › Annahme 3)?
+2. **P2a-F-2 · Kinder** (`rolle` › `kinder`). Bewertung: Der Satz «Was Kinder nicht übernehmen müssen, steht auf der Seite «Grenzen» im Abschnitt «Wenn Gewalt oder Bedrohung vorkommt».» ordnet Kinder unter Gewalt ein. Im Bestand stand derselbe Inhalt auf «Unterstützen» unter «Wann Unterstützung an Grenzen kommt» und im Handout `kinder` allgemein. Dazu fehlen auf `rolle` die Pflicht («müssen Erwachsene organisieren») und «sofort» bei akuter Gefahr (A1 Nr. 10–12). **Vorgeschlagene Fassung** (nur Bestandssätze und ein Verweissatz):
+   - statt des Verweissatzes der Bestandssatz «Kinder müssen weder Streit schlichten noch Medikamente kontrollieren oder einen Elternteil bewachen.» (`unterstuetzen--uebersicht.md`, Handout `kinder`)
+   - statt «Dort steht auch, wer einspringt, wenn die erste Person ausfällt.» in «Was Sie tun können» die Bestandsfrage «Welche zweite erwachsene Person ist erreichbar, wenn die erste ausfällt?» (Handout `kinder`)
+   - «Betreuung, Unterstützung und Sicherheit müssen Erwachsene organisieren.» (mit «müssen», wie im Bestand)
+   - der Verweis auf `grenzen` nur für den Fall von Gewalt, nach «Bei Angst, Gewalt oder fehlender Betreuung organisieren Erwachsene Hilfe.»: «Was bei Gewalt oder Bedrohung für Sie und die Kinder wichtig ist, steht auf der Seite «Grenzen» im Abschnitt «Wenn Gewalt oder Bedrohung vorkommt».» (neuer Verweissatz)
+
+   Soll (a) die Fassung so umgesetzt werden, (b) zusätzlich der Bestandssatz «Bei akuter Gefahr holen Erwachsene sofort Hilfe.» mit Verweis im Text danach stehen (dann je ein Verweis in `kinder` und `an-grenzen`), oder (c) alles bleiben?
+3. **P2a-F-3 · Länge.** `rolle` hat 3339, `selbstfuersorge` 2955 Wörter; die Seiten der Etappe 1 haben je 1600 bis 1700 (Teil C2). Soll (a) nur Stufe a umgesetzt werden (verdichten ohne Aussageverlust: etwa −270 Wörter auf `rolle`, −305 auf `selbstfuersorge`, bauende Sitzung), (b) Stufe a und die Vorschläge der Stufe b, die die Fachstelle auswählt (Liste in C2, Spalte «Fachstelle»: K-R-b1, K-R-b2, K-R-b5, K-S-b1; je Ja/Nein), oder (c) keine Kürzung?
+4. **P2a-F-4 · Verweis im Text auf `selbstfuersorge` › `eigenes-leben`.** Er ersetzt «Bei Gefahr hat Schutz Vorrang» und steht nach «Kurze Übungen finden Sie im Abschnitt …», nicht nach einer Handlungsanleitung für eine akute Lage (README «Verweis im Text»). Soll (a) es so bleiben, (b) der Bestandssatz «Bei Gefahr hat Schutz Vorrang.» direkt davor stehen, oder (c) der Verweis hier entfallen? Bei (c) erhält der Erlaubnis-Punkt wieder den Bestandszusatz «– bei akuter Gefahr aber Hilfe holen». Die Verweise in `warnsignale` und `zu-viel` tragen (Teil F).
+5. **P2a-F-5 · Neue Sätze zur Freigabe** (Liste der Selbstprüfung und A3). Werden freigegeben, je Ja/Nein:
+   - (a) «Ein Stück Weg»: Nr. 1 und 2
+   - (b) Zwischentitel Nr. 3, 18 und 19
+   - (c) Verweissätze Nr. 4–11 und 20–23 sowie der Satz zur Startseite (A3 a), mit den Änderungen aus P2a-F-2 und P2a-F-8
+   - (d) «Ein freier Abend»: Nr. 12, 13, 15, 16 und 17 (Nr. 14 ist entschieden)
+   - (e) Einstiege Nr. 24 und 25
+6. **P2a-F-6 · Abbildungen** (`v-ro-weg`, `v-sf-abend`, `approvalStatus` «ausstehend»). Werden beide fachlich freigegeben (je Ja/Nein, nach Sicht auf die Abbildungen bei 1280 und 360 px)? Dazu, je Ja/Nein: Darf die bauende Sitzung «Ein Stück Weg» verfeinern (die Wegkanten enden nicht mehr in den Köpfen, eine leichte Schrittstellung; P2a-V-2)? Bei «Ein freier Abend»: Soll (a) der Dampf über der Tasse bleiben, (b) entfallen (Abweichung vom Profilbeispiel), oder (c) der Kurztext statt «der Tee wird kalt» etwas anderes sagen (P2a-V-3)?
+7. **P2a-F-7 · Zwei ähnliche Schrittfolgen.** `rolle` › `alltag` «Innehalten, bevor Sie reagieren» (vier Schritte, Handout `beziehungs-achtsamkeit`) und `selbstfuersorge` › `zu-viel` «STOPP» (fünf Schritte) haben denselben Kern: anhalten, wahrnehmen, Beobachtung und Vermutung trennen, einen nächsten Schritt wählen. Sollen (a) beide bleiben, (b) die vier Schritte auf `rolle` einem Satz mit Verweis auf STOPP weichen (oder in eine Vertiefung gehen), oder (c) umgekehrt?
+8. **P2a-F-8 · Verweisziel bei Schuld** (`rolle` › `schuld`). Soll der Verweis statt auf `verstehen` › «Was die Diagnose beschreiben kann» auf «Häufige Annahmen – und was realistischer ist» zeigen, wo Annahme 3 «Angehörige sind nicht schuld …» steht? (a) ja, (b) auf beide, (c) nein.
+9. **P2a-F-9 · DBT** (`selbstfuersorge` › `akzeptanz`). Bleibt der Zusatz «einer wissenschaftlich untersuchten Psychotherapie für Borderline» (Grundlage `glossar.md`, nicht eine Quelle der Seite)? Ja/Nein. Soll «zentrales Element» aus dem Bestand wieder stehen? Ja/Nein.
+10. **P2a-F-10 · Quellen und Kennzeichnungen.** Bleibt es dabei, dass Gunderson et al. (2018) aus dem Handout `schuld-verantwortung` nicht übernommen wird (Ja/Nein)? Bleibt es dabei, dass die Kennzeichnungen der Handouts entfallen, etwa «kein validiertes Instrument», «kein DBT-Protokoll», «keine validierte Methode» (Ja/Nein)? «Kein geprüftes Modell» (Drei Fragen), «eigene didaktische Ordnung» (Warnsignale) und «vereinfachte eigene Darstellung» (Akzeptanz) stehen weiter auf den Seiten.
+
+#### Befunde W1
+
+- **P2a-W1-1 · wichtig · Verantwortung für Erkrankung und Genesung widerspricht Etappe 1.**
+  - **Beleg:** A1 Nr. 1–3; A4.
+  - **Vorschlag:** Die drei Sätze an die Entscheide zu Etappe 1 angleichen, ohne die übrige Aussage zu ändern.
+  - **Zuständig:** Fachstelle (P2a-F-1), danach die bauende Sitzung.
+- **P2a-W1-2 · wichtig · Kinder unter Gewalt eingeordnet; Pflicht und «sofort» fehlen auf `rolle`.**
+  - **Beleg:** A1 Nr. 10–12; A2 r67, r68, r72, r736, r737; Verweissätze Nr. 8 und 9.
+  - **Vorschlag:** Fassung in P2a-F-2.
+  - **Zuständig:** Fachstelle (P2a-F-2), danach die bauende Sitzung.
+- **P2a-W1-3 · optional · Zusatz zur DBT aus einer anderen Bestandsquelle.**
+  - **Beleg:** A1 Nr. 46; A3 (a).
+  - **Zuständig:** Fachstelle (P2a-F-9).
+- **P2a-W1-4 · optional · Abgleich ungenau.**
+  - **Beleg:** r145 nennt das fehlende «oder jede Stimmung ausgleichen» nicht; r458 «Verlauf» nicht getragen; r655 Autonomie; s213 Status «umformuliert» trotz Zusatz; s65 Verweissatz als «zusammengeführt» und nicht in der Liste neuer Sätze.
+  - **Vorschlag:** Bemerkungen und Status nachführen; s65 und den DBT-Zusatz in die Liste «Neue Sätze zur Freigabe».
+  - **Zuständig:** bauende Sitzung.
+- **P2a-W1-5 · optional · Quellen und Kennzeichnungen.**
+  - **Beleg:** A2 r496–r500, s371, s420, s648.
+  - **Zuständig:** Fachstelle (P2a-F-10).
+
+### Teil B · W2 Gesamtkohärenz mit Etappe 1
+
+**Begriffe** (Zählung im sichtbaren Text ohne Kurzbeschreibungen, je `rolle` / `selbstfuersorge`):
+
+- **Betroffene Person:** «betroffene Person» 4 / 1, «andere Person» 8 / 2, wie in Etappe 1 (P4-W2: «die andere Person» bei direkter Ansprache). Einheitlich.
+- **Anspannung:** 6 / 7. «Stress» kommt nur in Quellentiteln vor. **Aber:** «Vielleicht merken Sie, dass Sie innerlich in Alarm gehen, …» (`rolle` › `alltag`). Etappe 1 hat «Alarm» zugunsten von «Anspannung» gestrichen (F-W2-01). Im Abgleich ersetzt r204 «im Alarm» durch «in grosser Anspannung», r205 behält «in Alarm» (P2a-W2-5).
+- **Grenze:** 31 / 7, einheitlich.
+- **Pause:** 3 / 10. Auf `selbstfuersorge` überwiegend als Erholungspause («eine kurze Pause», «verlässliche Pausen und Erholung»), also in einer dritten Bedeutung neben Gesprächspause und Kontaktpause (P4-W2-2). Meist klar aus dem Satz. Mehrdeutig ist `rolle` › `mehrere`: «… wann eine Pause möglich ist» (P2a-W2-5).
+- **Beratung:** 4 / 13, einheitlich («eigene Beratung», «Beratung für Angehörige»).
+- **Gemischte Gefühle:** `rolle` › `an-grenzen` sagt «zwiespältige Gefühle» (zweimal), `verstehen` › `erleben` (freigegeben) «gemischte Gefühle» für dasselbe (P2a-W2-5).
+
+**Widersprüche zu den freigegebenen Seiten:** einer, die Verantwortung für Erkrankung und Genesung (P2a-W1-1, A4). Schutz ist überall gleich: «Bei Gefahr geht Schutz vor.» (`selbstfuersorge` › `akzeptanz`) passt zu `grenzen` und `verstehen`. «Ein Schuldgefühl allein entscheidet nicht, ob Sie etwas falsch gemacht haben.» (`rolle`) passt zu «Ein Schuldgefühl heisst nicht, dass Sie etwas falsch gemacht haben.» (`grenzen` › `konsequenz`).
+
+**Doppelungen**
+
+| Thema | Stellen | Urteil |
+| --- | --- | --- |
+| Kinder | `rolle` › `kinder` (257 Wörter) und `grenzen` › `gewalt` › «Wenn Kinder mitbetroffen sind» | **Nützlich, aber falsch verteilt.** `rolle` › `kinder` ist nach dem Entscheid der Fachstelle der Ort für Kinder (Alltag, Worte, Betreuung). `grenzen` zeigt den Schutzfall. Schon jetzt doppeln sich Teile: «Betreuung, Unterstützung und Sicherheit organisieren Erwachsene.» ~ «Erwachsene organisieren Hilfe und Betreuung.»; «Kinder dürfen spielen …» ~ «… seinen Alltag behalten». Ausgerechnet die zwei Sätze, die Kinder am meisten entlasten, stehen nur im Gewaltabschnitt. Vorschlag: P2a-F-2; der Rückweg von `grenzen` nach `rolle#kinder` ist V9 (Entscheid am Schluss von Etappe 2) |
+| Erreichbarkeit | `selbstfuersorge` › `kraft` (Abbildung, «Sie müssen nicht rund um die Uhr erreichbar sein …», Liste «ständige Bereitschaft»), `rolle` › `alltag` («… nicht immer gleich reagieren oder jederzeit verfügbar bleiben», Verweis auf `kraft`), `grenzen` › «Kontakt halten, ohne immer verfügbar zu sein» | **Nützlich**, drei Blickwinkel: eigene Kraft, Absprache im Alltag, Grenze. `rolle` verweist schon richtig. Auf `selbstfuersorge` steht Erreichbarkeit siebenmal (dazu Warnsignale, Erwachsenes Kind, Liste «Was entlasten kann»); dort bündeln (K-S-a1) |
+| Schuldgefühle | `rolle` › `schuld` (593 Wörter) und auf `selbstfuersorge` in `eigenes-leben` (Eltern, Erlaubnis), `unterstuetzung` (mit Verweis auf `rolle#schuld`) | **Nützlich und gut gelöst:** eine Stelle führt aus, die andere nimmt den Blickwinkel der Selbstfürsorge («Schuldgefühle können trotzdem bleiben») und verweist |
+| Zwiespältige Gefühle | `rolle` › `an-grenzen` und `verstehen` › `erleben` | teilweise ersetzbar: Die Liste «Mögliche Reaktionen auf anhaltende Belastung» ist eigenständig, der Satz «… kein Zeichen fehlender Haltung» doppelt «… kein Zeichen mangelnder Liebe» (K-R-b5) |
+| Innehalten und STOPP | `rolle` › `alltag` (vier Schritte) und `selbstfuersorge` › `zu-viel` (STOPP) | **ersetzbar durch einen Verweis** (P2a-F-7) |
+| Entlastungsmöglichkeiten | `selbstfuersorge` › `kraft` («Was entlasten kann», sieben Punkte) und `selbstfuersorge` › `unterstuetzung` (Abgeben, Begrenzen, Beraten lassen, Eigenes Leben bewahren) | **Doppelung innerhalb der Seite** aus zwei Bestandsquellen (`alltag`, `selbstfuersorge.md`); zusammenführen (P2a-W2-4) |
+
+**Links der zwei Seiten** (13 Links, alle per Skript aufgerufen):
+
+- Alle Ziele und Anker existieren; der Linktext gleicht dem Titel der Zielstelle in allen elf Abschnittslinks (zum Beispiel «Was die Diagnose beschreiben kann» → `verstehen#borderline`, h2 gleich).
+- Zwei Seitenlinks: «Grenzen setzen» → `grenzen.html` (h1 «Grenzen setzen, das eigene Leben schützen», Navigation «Grenzen») und «Auf sich achten» → `selbstfuersorge.html`.
+- Kein Link auf eine Entwurfsseite (alle `a[href]` in `main` geprüft; Gate ohne Befund `link-draft`).
+- Etappe 1 nennt Seiten mit dem Navigationsnamen («Verstehen», «Beziehungen», «Grenzen»). Die neuen Seiten weichen zweimal ab: «Grenzen setzen» und «Ihre Rolle klären» (P2a-W2-1).
+
+**Befunde W2**
+
+- **P2a-W2-1 · optional · Seitennamen in Verweisen uneinheitlich.**
+  - **Beleg:** `rolle` › `an-grenzen` «… auf der Seite «Grenzen setzen».» neben dreimal «… auf der Seite «Grenzen» …»; `selbstfuersorge` › `unterstuetzung` «… auf der Seite «Ihre Rolle klären» …», Navigation «Ihre Rolle». Dazu Verweissatz Nr. 6: «Woran Sie merken, dass die Anspannung steigt, …» verspricht mehr als das Ziel; Nr. 21 sagt es genauer.
+  - **Vorschlag:** überall den Navigationsnamen; Nr. 6 im Wortlaut von Nr. 21.
+  - **Zuständig:** bauende Sitzung.
+- **P2a-W2-2 · optional · Verweisziel bei Schuld.**
+  - **Beleg:** Verweissatz Nr. 4.
+  - **Zuständig:** Fachstelle (P2a-F-8).
+- **P2a-W2-3 · optional · Innehalten und STOPP doppelt.**
+  - **Beleg:** `rolle` › `alltag` «Kurz innehalten: Halten Sie an, bevor Sie reagieren. … Genauer hinschauen: Was beobachte ich konkret? Was vermute ich nur? …»; `selbstfuersorge` › `zu-viel` «S – Stopp … O – Orientieren: … Was habe ich beobachtet, und was vermute ich nur? … P – Plan …».
+  - **Zuständig:** Fachstelle (P2a-F-7).
+- **P2a-W2-4 · optional · Entlastungsmöglichkeiten doppelt auf `selbstfuersorge`.**
+  - **Beleg:** `kraft`: «eine Aufgabe abgeben und konkret vereinbaren, wer was übernimmt», «eine Zeit vereinbaren, in der Sie nicht erreichbar sind», «vertraulich über Ihre Situation sprechen oder Beratung nutzen», «Zeit für Freunde, Interessen und Ihr eigenes Leben»; `unterstuetzung`: «Abgeben», «Begrenzen», «Beraten lassen», «Eigenes Leben bewahren», je mit Beispielsatz.
+  - **Vorschlag:** In `kraft` die vier Punkte durch einen Satz mit Verweis auf `unterstuetzung` ersetzen (K-S-a1). Die übrigen Punkte bleiben: Pausen, Kontakte, Interessen.
+  - **Zuständig:** bauende Sitzung.
+- **P2a-W2-5 · optional · Begriffe.**
+  - **Beleg:** «in Alarm gehen» (`rolle` › `alltag`); «zwiespältige Gefühle» (`rolle`) neben «gemischte Gefühle» (`verstehen`); «wann eine Pause möglich ist» (`rolle` › `mehrere`).
+  - **Vorschlag:** «Anspannung» wie in Etappe 1, etwa «… dass Ihre Anspannung steigt, …»; «gemischte Gefühle»; «Pause» mit Zusatz, wo mehrdeutig. Die Bedeutung bleibt.
+  - **Zuständig:** bauende Sitzung.
+
+### Teil C · S Sprach-Review und Länge
+
+#### C1 · Lesetest und Kennzahlen
+
+**Zählweise (Skript der Prüfsitzung, im Browser, Vertiefungen offen):**
+
+- **Fliesstext:** `p`, `li`, `dt`, `dd` in `main`, innerste Blöcke. Nicht gezählt: SVG, `.puk-sr`, Kapitelübersicht, Kicker, Eyebrow, Bezeichnung «Abbildung n · …» und Absätze, die mit «Quelle», «Quellen», «Bezugspunkte», «Grundlage» oder «Eigene didaktische Darstellung» beginnen.
+- **Sätze:** gleiche Satzregel wie `abgleich/verneinung.mjs`. Wörter wie in `kennzahlen.mjs`.
+- **Verneinung:** wie `verneinung.mjs` («nicht», «nichts», «nie», «niemals», «niemand», «weder», Formen von «kein»).
+- **Absicherungen:**
+  - eng wie `kennzahlen.mjs`: «kann» und Formen, «möglich…», «vielleicht», «nicht sicher», «nicht automatisch»
+  - weit: dazu «manche», «einige», «oft», «häufig», «meist», «eher», «individuell», «nicht bei allen», «nicht vorhersagen», «nicht ableiten», «nicht garantiert»
+  - je 100 Wörter Fliesstext
+- **«Was Sie tun können»:** Abschnitte, deren Text die Wendung enthält.
+
+| Seite | Wörter (`kennzahlen.mjs`) | Wörter Fliesstext | Sätze | mittlere Satzlänge (Median) | Sätze > 15 Wörter | > 25 | Sätze mit Verneinung | Absicherungen je 100 Wörter eng / weit | «Was Sie tun können» |
+| --- | ---: | ---: | ---: | --- | ---: | ---: | ---: | --- | --- |
+| `rolle` | 3339 | 3107 | 345 | 9,0 (8) | 32 (9 %) | 0 | 82 (24 %) | 2,29 / 3,15 | 6 von 7 |
+| `selbstfuersorge` | 2955 | 2682 | 289 | 9,3 (9) | 23 (8 %) | 0 | 66 (23 %) | 2,91 / 3,36 | 4 von 7 |
+| `beziehungen` (Vergleich) | 1600 | 1412 | 141 | 10,0 (9) | 23 (16 %) | 2 | 32 (23 %) | 4,75 / 4,82 | 4 von 6 |
+| `grenzen` (Vergleich) | 1667 | 1472 | 154 | 9,6 (9) | 18 (12 %) | 0 | 42 (27 %) | 2,72 / 3,53 | 4 von 10 |
+
+- **Satzlänge:** Die neuen Seiten haben kürzere Sätze als die Vorbilder (8 bis 9 % über 15 Wörter, kein Satz über 25). Die Vorgabe «meist unter 15 Wörtern» ist erfüllt.
+- **Verneinung:** im Bereich der Vorbilder (23 bis 27 %). Hoch sind `rolle` › `schuld` (22 von 56, 39 %), `selbstfuersorge` › `akzeptanz` (13 von 39, 33 %) und `warnsignale` (9 von 29, 31 %). Meist sind es Entlastungen aus dem Bestand («… kein Nachweis persönlicher Schuld», «… kein Beweis, dass Sie «zu wenig» für sich tun»).
+- **Absicherungen:** niedriger als auf `beziehungen`, ähnlich wie `grenzen`. Gehäuft stehen sie dort, wo Hinweise wie «Angebot, keine Pflicht» wiederholt werden, nicht bei Aussagen über die Person (P2a-S-3).
+- **Handlungsteil:** `rolle` 6 von 7 Abschnitten (ohne `an-grenzen`, das aber «Was eher hilft» hat), `selbstfuersorge` 4 von 7 (`warnsignale`, `zu-viel` und `beratung` haben Handlungshinweise ohne die Wendung).
+
+**Lesetest je Abschnitt** (Prüfperson: erschöpfte Mutter oder Partner, abends, Handy, 360 px).
+
+- a = beim ersten Lesen verstanden (ja / mit Mühe / nein)
+- b = weiss danach, was ich tun kann
+- d (Ton) ist überall warm, erwachsen und ohne Schuldzuweisung, ausser wo vermerkt
+- e (Absicherungen) steht nur, wo es einen Befund gibt
+
+| Seite | Abschnitt | a | b | Stolperstellen (c) und e | Priorität |
+| --- | --- | --- | --- | --- | --- |
+| `rolle` | Kopf | ja | – | «… nicht ihre Behandlung oder Genesung tragen» (ohne «allein») gegen `schuld` (P2a-F-1) | – |
+| `rolle` | `anbieten` | ja | ja | Lang (534 Wörter); «nächster Schritt» dreimal, «Abstand, ein Nein, Hilfe» dreimal. Das Bild mit der Kernaussage kommt erst nach 3487 px (P2a-V-1) | optional |
+| `rolle` | `schuld` | ja | ja | 39 % der Sätze verneint; dieselbe Entlastung zwei- bis dreimal (K-R-a3). «Selbstorientierung» ist abstrakt. e: P2a-F-1 | wichtig |
+| `rolle` | `alltag` | mit Mühe | ja | 818 Wörter in fünf Teilen. «Sie sind angespannt, tasten sich vorsichtig heran …» lässt sich als Anrede lesen (P2a-S-2); «in Alarm gehen» (P2a-W2-5) | optional |
+| `rolle` | `nach-konflikten` | ja | ja | – | – |
+| `rolle` | `mehrere` | ja | ja | «Grundlinien» abstrakt; Listen und «Was Sie tun können» wiederholen sich (K-R-a7) | optional |
+| `rolle` | `kinder` | ja | ja | Verweis auf den Gewaltabschnitt; «die erste Person» ohne Bezug. e: Pflicht und «sofort» fehlen (P2a-F-2) | wichtig |
+| `rolle` | `an-grenzen` | mit Mühe | ja | 679 Wörter in sechs Teilen. «Sie wollen helfen und möchten zugleich weg.» lässt sich als Anrede lesen und unterstellt dann Gefühle (P2a-S-2); «Charakter oder Absicht» zweimal | optional |
+| `selbstfuersorge` | Kopf | ja | – | Die Seite sagt gleich danach: «… hilft eine kurze Pause vielleicht mehr als weitere Informationen» und folgt mit 2955 Wörtern (P2a-S-1) | – |
+| `selbstfuersorge` | `eigenes-leben` | ja | ja | Der Verweis im Text steht vor jedem Inhalt (P2a-F-4); elf Erlaubnis-Sätze, dann drei Meta-Sätze und Rollenhinweise | optional |
+| `selbstfuersorge` | `kraft` | mit Mühe | ja | 790 Wörter: zwei Listen, dann die Abbildung, dann vier Absätze, dann «Langfristig für sich sorgen». Die Absätze aus «Wenn der Alltag angespannt erlebt wird» sind abstrakt («Stimmungen genauer beobachten, Worte abwägen»); die Entlastungsliste doppelt `unterstuetzung` | wichtig |
+| `selbstfuersorge` | `warnsignale` | ja | ja | – (Gesundheit klar: Hausärztin, Hausarzt, nicht warten) | – |
+| `selbstfuersorge` | `zu-viel` | ja | ja | Der Hinweis «anpassen, auslassen, beenden» steht viermal (K-S-a5) | optional |
+| `selbstfuersorge` | `unterstuetzung` | ja | ja | Nach «Vielleicht merken Sie, …» folgen vier Aussagesätze über die Leserin («Sie sind fast nur noch für andere da.»); «keine Pflicht, danach wieder zu unterstützen» dreifach gesagt (P2a-S-2, K-S-a6) | optional |
+| `selbstfuersorge` | `akzeptanz` | mit Mühe | ja | Der Begriff «Radikale Akzeptanz» klingt hart, ist aber im ersten Satz erklärt; Beispielsatz zweimal | optional |
+| `selbstfuersorge` | `beratung` | ja | ja | «Sie sind nicht allein.» und «… das Gefühl, nicht allein zu sein» hintereinander; der Absatz «Grundlage: …» mit Studiennamen ist lang | optional |
+| `index` | `einstiege` | ja | ja | Platzhalter sichtbar (Gate); die fünf Einstiege sind gleich gebaut | – |
+
+#### C2 · Länge
+
+**Urteil aus Sicht der Prüfperson:** Die Länge trägt nur zum Teil.
+
+- `rolle` hat 3339 Wörter, bei 360 px 30 067 px, etwa 38 Bildschirmhöhen; bei 200 Wörtern je Minute etwa 17 Minuten Lesezeit. `selbstfuersorge` hat 2955 Wörter, 25 453 px, etwa 32 Bildschirmhöhen und 15 Minuten. Die Seiten der Etappe 1 haben etwa 16 000 px und 8 Minuten.
+- Die Prüfperson liest abends auf dem Handy nach einem schwierigen Gespräch. Sie liest einen Abschnitt, nicht die Seite. Dafür sind die Seiten brauchbar: Die Kapitelübersicht springt zu jedem Abschnitt, und jeder Abschnitt ist für sich verständlich.
+- Drei Abschnitte sind für dieses Lesen zu lang: `rolle` › `alltag` (818 Wörter), `selbstfuersorge` › `kraft` (790) und `rolle` › `an-grenzen` (679).
+- Auf `selbstfuersorge` widerspricht die Länge dem eigenen ersten Satz: «… hilft eine kurze Pause vielleicht mehr als weitere Informationen.»
+- Der grösste Teil der Länge sind Wiederholungen innerhalb der Seite und gehäufte Hinweise wie «Angebot, keine Pflicht» (Zählung: «kein (zusätzliches) Programm / keine Pflicht(liste) / kein Auftrag» 6-mal und «kein (persönliches) Versagen» 3-mal auf `selbstfuersorge`; «nächster Schritt» 5-mal auf `rolle`). Fachliche Aussagen stehen kaum doppelt.
+
+**Kürzungsvorschläge.** Geschätzt sind die Wörter weniger im Lesefluss. Bei Stufe b bleibt der Text in einer Vertiefung erhalten oder zieht auf eine andere Seite um. Keine neuen Texte; die Änderung ist in Worten beschrieben. Absicherungen zu Person, Ursachen, Diagnose, Verlauf und Schutz, die nur einmal vorkommen, bleiben.
+
+**`rolle`, Stufe a (Verdichten)**
+
+| ID | Abschnitt | Was genau | Wörter weniger | Fachstelle |
+| --- | --- | --- | ---: | --- |
+| K-R-a1 | `anbieten` | Den Absatz «Unterstützung ist ein Angebot, keine feste Rolle. …» und den Absatz «Was eine andere Person entscheidet, …» mit «Was Sie tun können» zusammenführen; «Abstand, ein Nein oder Hilfe» und «nächster Schritt» je einmal | 45 | nein |
+| K-R-a2 | `anbieten` | Die Liste «Was nicht Ihre Aufgabe ist» und den Satz «Therapie, Psychiatrie und Beratung bieten Fachpersonen an. …» zusammenführen (Therapie und Kontrolle doppelt) | 12 | nein |
+| K-R-a3 | `schuld` | Den Merksatz-Absatz als einzige Zusammenfassung lassen. Im Einstieg je einmal: «Das Gefühl allein ist kein Nachweis …» / «Ein Schuldgefühl allein entscheidet nicht …»; «Aus einer Diagnose lässt sich keine persönliche Schuld ableiten.» / «Eine Diagnose weist Ihnen keine persönliche Schuld zu.»; «Eigene Grenzen, Selbstschutz und Unterstützung bleiben trotzdem berechtigt.» / «Grenzen, Schutz und eigene Unterstützung sind berechtigt.». Die zwei Fragenreihen zu einer | 60 | nein (Wortlaut nach P2a-F-1) |
+| K-R-a4 | `schuld` | Bei den drei Fragen die drei einleitenden und vier abschliessenden Hinweise zu zwei Sätzen bündeln; «kein geprüftes Modell» bleibt | 30 | nein |
+| K-R-a5 | `alltag` | In «Absprachen klar und anpassbar halten» vier Absicherungen in einem Satz bündeln, jede einmal behalten: «individuell», «nicht aus einer Diagnose ableiten», «nicht vorhersagen», «Verläufe sind individuell». In «Kleine gute Momente» eine Begründung statt drei | 35 | nein |
+| K-R-a6 | `an-grenzen` | Die Liste «Sie können nicht:» mit der Liste in `anbieten` zusammenführen (Krisenhilfe ersetzen, Anspannung auffangen doppelt). «Über Charakter oder Absicht sagen sie nichts aus.» und «Aus einer Handlung allein lassen sich weder Motiv noch Charakter … ableiten.» zu einem Satz | 50 | nein |
+| K-R-a7 | `mehrere` | «Niemand muss dieselbe Rolle oder Grenze übernehmen.» und «Unterschiedliche Angehörige dürfen unterschiedliche Grenzen haben.» einmal; die Liste «Was hilft» und «Was Sie tun können» überschneiden sich (ruhiger Moment, Unterschiede besprechen, anpassen) | 38 | nein |
+| | | **Summe Stufe a** | **270** | |
+
+**`rolle`, Stufe b (Umordnen)**
+
+| ID | Abschnitt | Was genau | Wörter weniger | Fachstelle |
+| --- | --- | --- | ---: | --- |
+| K-R-b1 | `an-grenzen` | «Grosse Ausgaben und finanzielle Risiken» und «Plötzliche Entscheidungen» (Was eher hilft / weniger hilft) in eine Vertiefung oder nach `krise` (Etappe 2b). «Substanzkonsum und riskantes Verhalten» bleibt sichtbar (Sicherheit: nicht mitfahren) | 120 | ja |
+| K-R-b2 | `alltag` | «Innehalten, bevor Sie reagieren»: ein Satz mit Verweis auf STOPP (`selbstfuersorge` › «Wenn es gerade zu viel ist») oder Vertiefung (P2a-F-7) | 90 | ja |
+| K-R-b3 | `schuld` | «Drei Fragen zur Selbstklärung» in eine Vertiefung oder nach `anbieten` (Thema Rolle, nicht Schuld) | 110 | nein (Struktur) |
+| K-R-b4 | `alltag` | «Kleine gute Momente schaffen» in eine Vertiefung (im Bestand ein Akkordeon) | 75 | nein |
+| K-R-b5 | `an-grenzen` | Der Absatz zu den zwiespältigen Gefühlen ohne die Liste: Verweis auf `verstehen` › «Was Angehörige erleben können» | 35 | ja |
+| | | **Summe Stufe b** | **430** | |
+
+**`selbstfuersorge`, Stufe a (Verdichten)**
+
+| ID | Abschnitt | Was genau | Wörter weniger | Fachstelle |
+| --- | --- | --- | ---: | --- |
+| K-S-a1 | `kraft` | In «Was entlasten kann» die vier Punkte, die `unterstuetzung` mit Beispielsatz bringt, durch einen Verweis ersetzen (P2a-W2-4) | 60 | nein |
+| K-S-a2 | `kraft` | «individuell», «persönlich» und «keine vollständige Liste» einmal; der Gedanke «Bleibt kein Raum, braucht es Entlastung, keine Disziplin» steht dreimal (Einleitung, «Kleine Auszeiten», «Kontakte») und soll einmal stehen; «Bewegung ist eine mögliche Ergänzung.» doppelt | 60 | nein |
+| K-S-a3 | `eigenes-leben` | Die drei Hinweise nach der Erlaubnis-Liste zu einem | 15 | nein |
+| K-S-a4 | `warnsignale` | «kein Test» und «keine Diagnose» einmal; «Was passt und verfügbar ist …» und «Disziplin» stehen schon in `kraft`. Alle Gesundheitshinweise bleiben | 25 | nein |
+| K-S-a5 | `zu-viel` | «Anpassen, Auslassen und Beenden sind erlaubt» und «kein richtiges Ergebnis» einmal in der Einleitung statt bei jeder Übung; die Warnzeichen beim Atmen (Schwindel, Luftnot, Unwohlsein) bleiben | 45 | nein |
+| K-S-a6 | `unterstuetzung` | Drei Sätze zu einem: «Daraus folgt keine Pflicht, danach wieder zu unterstützen.», «… muss nicht damit begründet werden …», «… als Ihr eigenes Recht verstehen …». «Kein persönliches Versagen» zweimal im Abschnitt; «eine Auswahl, kein zusätzliches Programm» steht schon in `kraft` | 60 | nein |
+| K-S-a7 | `akzeptanz` | «Angebot, kein Auftrag», «Haltung, keine Kapitulation» und die Liste «Akzeptanz heisst nicht» überschneiden sich; der Beispielsatz «So ist es gerade. …» steht in der Übung und in «Was Sie tun können» | 35 | nein |
+| K-S-a8 | `beratung` | «Sie sind nicht allein.» und «… das Gefühl, nicht allein zu sein» einmal | 5 | nein |
+| | | **Summe Stufe a** | **305** | |
+
+**`selbstfuersorge`, Stufe b (Umordnen)**
+
+| ID | Abschnitt | Was genau | Wörter weniger | Fachstelle |
+| --- | --- | --- | ---: | --- |
+| K-S-b1 | `kraft` | Die vier Absätze aus «Wenn der Alltag angespannt erlebt wird» («Einige Angehörige berichten …» bis «… auszugleichen») auf zwei Sätze verdichten oder in eine Vertiefung; die Absicherung «kein typischer Verlauf, nicht aus der Diagnose vorhersagen» bleibt | 110 | ja |
+| K-S-b2 | `kraft` | «Langfristig für sich sorgen» (Kleine Auszeiten, Bewegung, Kontakte; im Bestand ein Akkordeon) in eine Vertiefung. Der Satz zur ärztlichen oder psychotherapeutischen Abklärung bleibt sichtbar (Gesundheit) | 170 | nein |
+| K-S-b3 | `eigenes-leben` | «Je nach Ihrer Situation» (Partnerin oder Partner, Eltern, Erwachsenes Kind; im Bestand ein Akkordeon) in eine Vertiefung | 100 | nein |
+| K-S-b4 | `akzeptanz` | Die Übung in vier Schritten mit Beispiel in eine Vertiefung; «Was Sie tun können» verweist darauf; der Schutzsatz bleibt sichtbar | 100 | nein |
+| | | **Summe Stufe b** | **480** | |
+
+**Summen:**
+
+| Seite | heute | Stufe a | Stufe b | nach a und b (geschätzt) |
+| --- | ---: | ---: | ---: | ---: |
+| `rolle` | 3339 | −270 (8 %) | −430 (13 %) | etwa 2640 (−21 %) |
+| `selbstfuersorge` | 2955 | −305 (10 %) | −480 (16 %) | etwa 2170 (−27 %) |
+
+Stufe a braucht nur bei K-R-a3 den Wortlaut aus P2a-F-1. Bei Stufe b entscheidet die Fachstelle über vier Vorschläge (P2a-F-3); die übrigen sind Struktur.
+
+**Die drei wirksamsten Vorschläge je Seite:**
+
+- `rolle`: K-R-b1 (120 Wörter, Fachstelle), K-R-b3 (110), K-R-b2 (90, Fachstelle).
+- `selbstfuersorge`: K-S-b2 (170), K-S-b1 (110, Fachstelle), K-S-b3 und K-S-b4 (je 100).
+
+#### C3 · Schreibweise
+
+- Kein «ß», keine „…“ (`grep` in `content/rolle.html`, `content/selbstfuersorge.html`, `content/index.html`: 0).
+- Kein Telegrammstil im Fliesstext. Listenpunkte im Infinitiv wie in Etappe 1, zum Beispiel «Absprachen konkret und verständlich formulieren».
+- **«es» und «sie»:** P2a-S-2. Dazu der Verweissatz Nr. 9 «die erste Person» ohne Bezug (P2a-F-2).
+
+**Befunde S**
+
+- **P2a-S-1 · wichtig · Länge.**
+  - **Beleg:** C2.
+  - **Vorschlag:** Stufe a umsetzen; Stufe b nach Auswahl der Fachstelle.
+  - **Zuständig:** Fachstelle (P2a-F-3), danach die bauende Sitzung.
+- **P2a-S-2 · optional · «Sie» ohne klaren Bezug.**
+  - **Beleg:** `rolle` › `alltag`: «Manche Angehörige berichten von belastenden Phasen im Alltag. Sie sind angespannt, …». `rolle` › `an-grenzen`: «Viele Angehörige erleben … Sie wollen helfen und möchten zugleich weg. Sie wollen verstehen …». Am Satzanfang ist «Sie» (die Angehörigen) nicht von der Anrede zu unterscheiden; als Anrede gelesen unterstellt der Satz Gefühle (README: «Vielleicht erleben Sie …» statt «Sie fühlen sich …»). `selbstfuersorge` › `unterstuetzung`: Nach «Vielleicht merken Sie, dass …» folgen vier Aussagesätze über die Leserin.
+  - **Vorschlag:** Ein eindeutiges Subjekt («Manche sind angespannt …», «Viele wollen helfen …»); in `unterstuetzung` die vier Sätze als Aufzählung unter «Vielleicht merken Sie:». Die Bedeutung bleibt.
+  - **Zuständig:** bauende Sitzung.
+- **P2a-S-3 · optional · Gehäufte Hinweise.**
+  - **Beleg:** C2 (Zählung der Formeln).
+  - **Vorschlag:** K-S-a3, a5, a6, a7 und K-R-a4.
+  - **Zuständig:** bauende Sitzung.
+- **P2a-S-4 · optional · Einzelstellen.**
+  - **Beleg:** «Das Bild zeigt eine Erfahrung, die manche beschreiben, keine Pflicht und keinen Fehler.» (Vertiefung «Ein freier Abend», beim ersten Lesen schwer); «Sie sind nicht allein.» neben «… das Gefühl, nicht allein zu sein» (`beratung`).
+  - **Vorschlag:** In der Vertiefung sagen, was keine Pflicht und kein Fehler ist (die ständige Bereitschaft); Wortlaut der Fachstelle. Den zweiten Fall regelt K-S-a8.
+  - **Zuständig:** Fachstelle (Vertiefung, neuer Satz), bauende Sitzung.
+
+### Teil D · Visualisierungs-Check und Bildsprache
+
+**Bildschirmfotos** bei 1280 und 360 px, je Theme Standard und «kontrast», angesehen. Masse:
+
+| Figur | Figur 1280 px | Zeichnung 1280 px | Figur 360 px | Zeichnung 360 px | Lage im Abschnitt (Abstand vom Abschnittsanfang bei 360 / 1280 px) |
+| --- | --- | --- | --- | --- | --- |
+| «Ein Stück Weg» (`v-ro-weg`) | 1104 × 675 | 760 × 259 | 320 × 673 | 320 × 109 | 3487 von 4211 px / 2022 von 2781 px: am Ende von `anbieten`, nach der Quellenzeile |
+| «Ein freier Abend» (`v-sf-abend`) | 1104 × 687 | 760 × 321 | 320 × 680 | 320 × 135 | 2295 von 6199 px / 1368 von 3981 px: nach «Was Sie tun können» |
+
+**Beschreibung der Bildschirmfotos**
+
+- **«Ein Stück Weg», 1280 px:** Breit steht der Satz über der Zeichnung links, mit blauer Randlinie. Die Zeichnung zeigt eine Hügellinie, links einen runden Baum, rechts hinten einen kleinen Baum und einen Hügel. Ein hellblauer Weg kommt von unten und verengt sich zur Horizontlinie. Unten auf dem Weg stehen zwei Linienfiguren von hinten nebeneinander, ohne Gesicht, die Füsse auf gleicher Höhe. Die linke ist etwas grösser: Kopfradius 8,4 statt 7,9, Rumpf 32 statt 30 Einheiten breit, Rumpf 7 Einheiten höher. Die Beine sind gerade, die Arme hängen; eine Gehbewegung ist kaum zu sehen. Beide Wegkanten laufen von der Horizontlinie in die Köpfe: die linke an den Kopf der linken Figur, die rechte in den Kopf der rechten Figur, und hinter der rechten Figur weiter bis zum Knie.
+- **«Ein Stück Weg», 360 px:** Satz über der Zeichnung, die Zeichnung bleibt (320 × 109 px). Die Figuren sind 59 und 63 px hoch, als zwei Menschen von hinten erkennbar. Die Arme verschmelzen zu dicken Strichen; die Figuren wirken eher piktogrammartig. Die Wegkanten wirken wie zwei Striche, die aus den Köpfen wachsen.
+- **«Ein freier Abend», 1280 px:** Zwei Sätze nebeneinander über der Zeichnung, links «Vielleicht ruft sie gleich an.», rechts «Eigentlich wollte ich lesen.». Darunter ein hellblauer Tisch, links ein Mobiltelefon mit dicker, gefüllter Umrandung (die einzige Akzentfläche), in der Mitte eine Tasse mit Dampf, rechts ein geschlossenes Buch mit Lesebändchen, rechts oben ein Fenster mit Mondsichel.
+- **«Ein freier Abend», 360 px:** Die Sätze stehen untereinander über der Zeichnung (320 × 135 px). Telefon, Tasse, Buch und Mond bleiben erkennbar. Die Zuordnung der Sätze zu Telefon und Buch geht verloren; der Inhalt der Sätze trägt sie selbst.
+- **Theme «kontrast»:** Linien dunkelblau (#0028C2), Flächen unverändert; nichts verschwindet (vier Fotos).
+
+**Matrix** (E = erfüllt · T = teilweise · N = nicht erfüllt · – = nicht anwendbar)
+
+| Nr. | Prüfpunkt | «Ein Stück Weg» | «Ein freier Abend» |
+| --- | --- | --- | --- |
+| 1 | Plan liegt vor, Seite entspricht ihm | E | E |
+| 2 | Zeile je Abschnitt; Begründungen für Text passen | E | E |
+| 3 | Prüffrage beantwortet und eingelöst | **T** | E |
+| 4 | Kernaussage und Erklärtext; Hauptaussage nicht nur in der Vertiefung | E | E |
+| 5 | Ansatzpunkt (B, C, G) | – | – |
+| 6 | Mechanismus nicht doppelt gezeigt | E | E |
+| 7 | Kartenraster-Check | E | E |
+| 8 | Anordnung und Formen tragen Bedeutung | E | E |
+| 9 | Verteilt, keine Textwand | T | T |
+| 10 | Vereinfacht, nicht verfälscht; Grenzen; Quelle | E | E |
+| 11 | Ohne Animation, Aufklappen und Skript verständlich | E | E |
+| 12 | Bei 320 px lesbar; Textalternative vollständig | E | E |
+| 13 | Theme «kontrast» | E | E |
+| 14 | Fachlich freigegeben | N | N |
+| 15 | Bildsprache passt; Wirkung (`resonance`) eingelöst | E | T |
+| 16 | Ein Bild, eine Idee; Erleben beschriften | E | E |
+| 17 | Keine ungewollten Bedeutungen | T | T |
+
+**Abweichung von der Selbstprüfung** (fett): Punkt 3 bei «Ein Stück Weg» (T statt E). Bei Punkt 9 ist das Ergebnis gleich (T), der Grund ein anderer: nicht nur die Seitenlänge, sondern die späte Stellung der Abbildungen.
+
+**Belege je T und N**
+
+- **«Ein Stück Weg»:**
+  - **3 T:** `understood`: «Dass Begleiten und den Weg selbst gehen zwei verschiedene Dinge sind: Das Bild zeigt auf einen Blick, wer neben wem geht …». Das Bild zeigt das Nebeneinander, nicht den Unterschied; der trägt erst der Satz «… aber nicht für dich gehen». Zusammen mit dem Satz ist die Aussage da (deshalb 15 E). Die Planzeile verspricht es aber vom Bild (P2a-V-4).
+  - **9 T:** Die Abbildung steht am Ende von `anbieten`, nach der Quellenzeile, 3487 px nach dem Abschnittsanfang bei 360 px. Ihre Kernaussage «Sie können begleiten. Genesung herstellen können Sie nicht.» ist die Hauptaussage des Abschnitts und käme als Einstieg früher an (P2a-V-1).
+  - **14 N:** `approvalStatus` «ausstehend».
+  - **17 T:** Die Wegkanten enden in den Köpfen der Figuren, bei 360 px wie Striche aus den Köpfen. Der Weg «in die Ferne» kann ein Ziel nahelegen; die Vertiefung sagt, dass sich Veränderung nicht vorhersagen lässt. Die Grössenunterschiede lesen sich als zwei Erwachsene, nicht als Führung (P2a-V-2).
+- **«Ein freier Abend»:**
+  - **9 T:** Die Abbildung kommt nach zwei Listen, einem Absatz und «Was Sie tun können», 2295 px nach dem Abschnittsanfang bei 360 px (P2a-V-1).
+  - **14 N:** `approvalStatus` «ausstehend».
+  - **15 T:** `resonance`: «Wiedererkennen und Erlaubnis …». Das Wiedererkennen trägt das Bild. Die Erlaubnis («ich darf meine Erreichbarkeit begrenzen») steht erst im Text danach («Sie müssen nicht rund um die Uhr erreichbar sein.»); so auch die Selbstprüfung.
+  - **17 T:** «Vielleicht ruft sie gleich an.» nennt die betroffene Person weiblich; die Fachstelle hat am 10.10.2026 «Vielleicht kommt gleich eine Nachricht.» entschieden. Dampf über der Tasse neben «der Tee wird kalt» (P2a-V-3).
+
+**Bildsprache: Fragen B1–B11.** Die Fragen B1–B11 sind im Repository nicht ausgeschrieben; das Bildsprache-Audit nennt nur die Nummern. Die Prüfsitzung hat sie aus ihrer Verwendung im Audit und aus der Leitlinie (`00-visuelle-wissensvermittlung.md`, «Bildsprache», «Ein Bild, eine Idee»; `00-pre-release-audits.md`, R2 Teil 2) so zugeordnet:
+
+| Frage | Inhalt | Quelle |
+| --- | --- | --- |
+| B1 | erster Eindruck, fünf Sekunden, ohne Text | R2 B1 |
+| B2 | Form: organisch, keine Bauplan-, Raster-, Kasten- oder Formularoptik | Tabelle «Passt nicht», Regel 5 |
+| B3 | Ein Bild, eine Idee: keine Liste, die Bildteile übersetzt | Regel 1 |
+| B4 | Wiedererkennen und Ton (würdevoll, warm, nicht verniedlichend) | Regel 3; R2 B2, B4 |
+| B5 | Angehörige haben einen Platz im Bild | Regel 4 |
+| B6 | Nebenbedeutungen | Regel 6 |
+| B7 | Wirkung (`resonance`) eingelöst | Regel 7; R2 B3 |
+| B8 | Erleben beschriften, nicht Bildteile | Regel 2 |
+| B9 | fachlich richtig vereinfacht | Abschnitt «Fachlich richtig vereinfachen» |
+| B10 | Braucht es ein Bild? | Regel 8; R2 B5 |
+| B11 | Freundin-Test | R2 B6 |
+
+| Frage | «Ein Stück Weg» | «Ein freier Abend» |
+| --- | --- | --- |
+| B1 | ruhig, freundlich, etwas still; zwei Menschen am Anfang eines Weges, die eher stehen und schauen als gehen. Passt zum Thema Begleiten | ruhig, still, ein wenig einsam; Abendstimmung. Passt zum Thema Bereitschaft |
+| B2 | ja: Kurven, weiche Hügel, Bäume als runde Formen. Die Figuren haben einen rechteckigen Rumpf und wirken bei 360 px piktogrammartig | ja: weiche Linien, Alltagsgegenstände; das Fenster ist rechteckig, als Gegenstand passend |
+| B3 | ja, keine Legende | ja |
+| B4 | würdevoll, nicht verniedlichend; das Wiedererkennen kommt über den Satz | stark: «Eigentlich wollte ich lesen.» ist ein Satz, den Angehörige selbst sagen könnten |
+| B5 | ja, als eine der zwei Figuren; welche, bleibt offen (gewollt: gleichwertig) | ja, über die Gedanken (Satzpaar); keine Figur nötig |
+| B6 | Wegkanten in den Köpfen; der Weg «in die Ferne» kann ein Ziel nahelegen (Vertiefung relativiert); keine Gefahr- oder Defektbilder | «sie» (entschieden); Dampf neben «wird kalt»; das Telefon als einzige gefüllte Fläche ist gewollt (Aufmerksamkeit) |
+| B7 | ja, mit dem Satz («Ich darf begleiten …») | Wiedererkennen ja, Erlaubnis nur im Text (15 T) |
+| B8 | ja, ein Satz aus Sicht der Angehörigen | ja, zwei Gedanken aus Sicht der Angehörigen |
+| B9 | ja: «Das Bild ist eine Metapher. Wie und wann ein Mensch sich verändert, lässt sich daraus nicht vorhersagen.» | ja: «Manche» statt «viele»; die Vertiefung sagt «Nicht alle Angehörigen erleben das so …» |
+| B10 | ja, knapp: Der Satz trüge auch allein, das Bild gibt aber einen ruhigen Moment | ja, eindeutig |
+| B11 | eher ja, mit dem Satz; ohne Satz ist es ein allgemeines Wanderbild | ja |
+| **Bewertung** | **trägt** (kleine Verfeinerungen) | **trägt** |
+
+**Besonders geprüft: «Ein Stück Weg»**
+
+- **Wirken die zwei Menschen gleichwertig?** Ja. Sie sind gleich gezeichnet und stehen nebeneinander, die Füsse auf gleicher Höhe. Niemand ist vorn, niemand zieht oder trägt. Die linke Figur ist etwas grösser und reicht 7 Einheiten höher; das liest sich als zwei unterschiedliche Erwachsene, nicht als Führung. Beide überlappen an der Aussenseite den Wegrand, weil der Weg hinter ihnen schmaler wird als die zwei; das fällt kaum auf.
+- **Sind sie bei 360 px erkennbar?** Ja, als zwei Menschen von hinten (59 und 63 px hoch). Nicht erkennbar sind Gehbewegung und Arme; die Wegkanten wachsen sichtbar aus den Köpfen (P2a-V-2).
+
+**Befunde Visualisierungs-Check**
+
+- **P2a-V-1 · wichtig · Abbildungen stehen spät im Abschnitt.**
+  - **Beleg:** Punkt 9; Tabelle der Masse.
+  - **Vorschlag:** Die Abbildung jeweils nach dem ersten Absatz des Abschnitts setzen, vor die Listen; in `anbieten` jedenfalls vor die Quellenzeile.
+  - **Zuständig:** bauende Sitzung (Struktur).
+- **P2a-V-2 · optional · «Ein Stück Weg» verfeinern.**
+  - **Beleg:** Punkt 17; Beschreibung 1280 und 360 px.
+  - **Vorschlag:** im Rahmen von «Darfst du verfeinern» (Bauauftrag, Anhang A): die Wegkanten hinter den Figuren enden lassen oder den Fluchtpunkt über die Köpfe legen; eine leichte Schrittstellung; den Rumpf weniger rechteckig. Fest bleiben zwei gleichwertige Menschen nebeneinander, von hinten, auf einem Weg in die Ferne.
+  - **Zuständig:** Fachstelle (P2a-F-6), danach die bauende Sitzung.
+- **P2a-V-3 · optional · «Ein freier Abend».**
+  - **Beleg:** Punkt 17; A3 (b) Nr. 13.
+  - **Vorschlag:** P2a-F-6.
+  - **Zuständig:** Fachstelle.
+- **P2a-V-4 · optional · Planzeile «Ein Stück Weg».**
+  - **Beleg:** Punkt 3.
+  - **Vorschlag:** `understood` so fassen, dass Bild und Satz zusammen den Unterschied zeigen. Die Aussage bleibt.
+  - **Zuständig:** bauende Sitzung.
+
+### Teil E · Bedienung und Barrierefreiheit (automatisiert)
+
+Chromium über Playwright, lokal; alle Werte selbst gemessen.
+
+- **Überlauf** (`scrollWidth − clientWidth` und Elemente ausserhalb des Fensters): 84 Messungen, alle 0 px.
+  - Seiten: `rolle`, `selbstfuersorge`, `index`.
+  - Breiten: 320, 360, 768, 1280 und 1440 px.
+  - 200 %: 640 px Breite bei Faktor 2 und 1280 px mit Schriftgrösse 200 %.
+  - Je Theme Standard und «kontrast», je Vertiefungen zu und offen.
+  - `overflow-x` auf `html` und `body` ist `visible`; es versteckt keinen Überlauf.
+- **Tastatur** (1280 px, reduzierte Bewegung):
+  - Tabstopps bis zur Fusszeile: `rolle` 24, `selbstfuersorge` 21, `index` 14.
+  - Erster Stopp «Zum Hauptinhalt».
+  - Reihenfolge: Kopf (Logo, fünf Punkte der Navigation, E-Mail-Adresse), dann Kapitelübersicht, dann Links und Vertiefung im Text in Lesereihenfolge.
+  - Sichtbarer Fokus bei jedem Stopp (`box-shadow`, 2 px Weiss und Blau).
+  - Auf `index` liegt der Stopp «Ich kann nicht mehr …» mit der Unterkante genau am Fensterrand; der Fokusring wird dort unten angeschnitten. Browserübliches Scrollen, kein Befund.
+  - «Grenzen des Bildes» auf beiden Seiten: Enter öffnet, Leertaste schliesst.
+  - Nach dem Laden und nach den Tastendrücken läuft keine Animation (`document.getAnimations()`: leer).
+- **Kontrast** (WCAG 1.4.3): aller Text mit eigenem Textknoten in `main`, Vertiefungen offen, bei 1280 und 360 px, beide Themes.
+  - `rolle` 259, `selbstfuersorge` 200, `index` 26 Elemente; keines unter AA.
+  - Tiefster Wert 4,71:1 (Kicker, 14 px, und Links, Blau auf Weiss).
+  - Sätze in den Abbildungen und Kernaussagen: 15,91:1 in beiden Themes.
+  - Linien der Zeichnungen gegen Weiss (WCAG 1.4.11): 4,71:1 (Standard) und 10,1:1 («kontrast»); gegen die hellblaue Wegfläche 3,59:1. Keine Linie unter 3:1.
+  - **Hinweis (kein Befund dieser Website):** Links behalten im Theme «kontrast» ihre Standardfarbe (4,71:1), auch auf den Seiten der Etappe 1. Die Linien der Zeichnungen werden dunkler. AA ist erfüllt; ob «kontrast» auch Links abdunkeln soll, ist eine Frage an das Profil.
+- **Nicht prüfbar:**
+  - reale Screenreader-Läufe (z. B. VoiceOver mit Safari, NVDA mit Firefox), Hardwaretastatur und Touch. Sie brauchen eine Person (Stufe 5); sie sind **nicht** bestanden, sondern offen.
+  - Kontrast des Fokusrings gegen alle Hintergründe: nur gegen Weiss gemessen (4,71:1).
+
+### Teil F · Technik und Zuständigkeit (Stichprobe)
+
+| Prüfung | Ergebnis (selbst ausgeführt am Stand `94afac7`) |
+| --- | --- |
+| `node tools/build.mjs` | 15 Seiten, Build r4-7, Gate draft: **0 blockierend, 14 Hinweise**: 2 × `visual-approval` (`v-ro-weg`, `v-sf-abend`), 10 × `placeholder-approval`, 1 × `site-url`, 1 × `review-report`. `git status` danach ohne Änderung |
+| `node tools/gate.mjs --selftest` | **53/53 bestanden** |
+| `node tools/gate.mjs --production` | blockiert erwartungsgemäss mit **13 Befunden**: 2 × `visual-approval` (die zwei neuen Abbildungen), 10 × `placeholder-approval` (`index` › Einstiege und die Seitenplatzhalter von `diagnose`, `behandlung`, `kommunizieren`, `krise`, `genesung`, `unterstuetzung`, `fragen`, `quellen`, `ueber`), 1 × `review-report` (offen: W1, W2, S, Visualisierungs-Check, Bedienung, W3, R1, R2, R3); dazu 1 Hinweis `site-url`. Das entspricht dem Bauauftrag (Abschnitt 6) |
+| `node abgleich/pruefe-abgleich.mjs` | **3204 Zeilen, 0 ohne Fundstelle** |
+| `node abgleich/kennzahlen.mjs` | Wörter `rolle` 3339, `selbstfuersorge` 2955, `index` 283; Absicherungen je 100 Wörter alt → neu 1,94 → 2,16 / 2,27 → 2,64 / 1,85 → 1,41; Semikolons alt → neu 4 → 2 / 10 → 2 / 1 → 0 |
+| `node abgleich/verneinung.mjs` | `rolle` 83 von 389, `selbstfuersorge` 69 von 330, `index` 4 von 28 |
+| `node abgleich/bedienung.mjs` | Tabstopps `index` 14, `rolle` 24, `selbstfuersorge` 21 (Etappe 1: 20 / 18 / 23); Höhe bei 360 px 4408 / 30 067 / 25 453 px; Abbildungen 673 und 680 px |
+
+**Kennzahlen der bauenden Sitzung:** nachgerechnet und **bestätigt**, ohne Abweichung:
+
+- Wörter je Seite und je Abschnitt (`rolle` 534 / 593 / 818 / 196 / 192 / 257 / 679; `selbstfuersorge` 366 / 790 / 284 / 485 / 433 / 366 / 187; eigenes Skript mit der Zählweise von `kennzahlen.mjs`)
+- Absicherungen, Semikolons und Sätze mit Verneinung
+- Tabstopps, Seiten- und Figurhöhen
+- Selbsttest, Produktionsgate und Abgleich
+- «Menschen etwa 60 px hoch» bei 360 px (gemessen 59 und 63 px)
+
+Die eigene Satzzählung (Teil C1) zählt weniger Sätze (345 statt 384 auf `rolle`), weil sie Überschriften, Bezeichnungen und Quellenzeilen nicht mitzählt. Die Zahl der Sätze über 15 Wörter ist gleich (32 und 23).
+
+**Zuständigkeit und Krisenzugang** (`rolle.html`, `selbstfuersorge.html`, `index.html` und ihre `content/`-Dateien):
+
+- `tel:`-Links: 0.
+- Telefonnummern im sichtbaren Text: 0. Gesucht wurden «+41», «0800», Muster «0xx xxx xx xx» sowie 143, 144, 147, 117, 112 und 118. Die Treffer im Quelltext sind Koordinaten in den SVG-Pfaden.
+- Kein Notfallblock; `data-safety-access` steht nur am Zuständigkeitsverweis der Fusszeile.
+- **Verweis im Text:** nur über `<p data-responsibility-inline></p>` in `content/` (`rolle` 1, `selbstfuersorge` 3, `index` 0), gefüllt mit dem Wortlaut aus `responsibility.inline`. Keiner steht in `figure` oder `details`; höchstens einer je Abschnitt; beide Seiten haben `sensitiveTopics` `selbstgefaehrdung`, `gewalt`, `akute-krise`.
+
+| Seite › Abschnitt | Was davor steht | Nach einer Handlungsanleitung für eine akute Lage? | Trägt er? |
+| --- | --- | --- | --- |
+| `rolle` › `an-grenzen` | «Gefährdet ein Mensch sich selbst oder andere unmittelbar, oder kommt es zu Gewalt: Holen Sie Hilfe und schützen Sie sich.» | ja | ja |
+| `selbstfuersorge` › `eigenes-leben` | «Wenn Sie diese Seite gerade in grosser Erschöpfung lesen, hilft eine kurze Pause vielleicht mehr als weitere Informationen. Wählen Sie nur, was Ihnen guttut. Kurze Übungen finden Sie im Abschnitt «Wenn es gerade zu viel ist».» | **nein:** Der Bestandssatz «Bei Gefahr hat Schutz Vorrang» ist durch den Verweis ersetzt, nicht vorangestellt | teilweise. Er trägt den Zusatz der Erlaubnis-Karte («bei akuter Gefahr aber Hilfe holen»), steht aber vor jedem Inhalt und ohne Anlass (P2a-T-1) |
+| `selbstfuersorge` › `warnsignale` | «Wenn Sie sich nicht mehr sicher fühlen oder nicht einschätzen können, wie dringend es ist, wenden Sie sich an professionelle Hilfe. Warten Sie nicht auf bestimmte Warnzeichen.» | ja (Bestand: Handout `warnsignale` verwies hier auf «Akute Hilfe und Notfallkontakte») | ja |
+| `selbstfuersorge` › `zu-viel` | «Bei Bedrohung, Gewalt, akuter Gefahr oder Selbstgefährdung holen Sie Hilfe, statt weiterzuüben.» | ja | ja |
+
+**Sind drei Verweise auf `selbstfuersorge` zu viel?** Zwei tragen eindeutig (`warnsignale`, `zu-viel`). Sie stehen bei 360 px 813 px auseinander, also derselbe Satz zweimal innerhalb einer Bildschirmhöhe (12 550 und 13 363 px vom Seitenanfang). Der dritte (`eigenes-leben`, 1694 px) steht ohne Anlass-Satz. Er trägt nur, wenn der Bestandssatz «Bei Gefahr hat Schutz Vorrang.» davor steht; sonst ist er entbehrlich (P2a-F-4).
+
+**Technik:**
+
+- `style`-Attribute: 0.
+- Hexwerte, `rgb(` oder `fill=`/`stroke=`-Attribute in den zwei SVG: 0; Farben nur über Klassen (berechnet: Linien `puk-blue-100`, Flächen `puk-blue-25` und Weiss).
+
+**Etappe-1-Seiten unverändert:**
+
+- `git diff 67495c0 -- content/verstehen.html content/beziehungen.html content/grenzen.html`: leer.
+- `content/index.html`: nur die Zeile `einstiege` (zwei neue Einträge, neue Reihenfolge, neuer Platzhalter).
+- Gebaute Seiten `verstehen.html`, `beziehungen.html`, `grenzen.html` und `index.html`: nur die zwei neuen Punkte der Navigation («Ihre Rolle», «Auf sich achten»), auf `index` dazu die Einstiege (`git diff --word-diff`).
+
+**Befunde T**
+
+- **P2a-T-1 · optional · Verweis im Text in `eigenes-leben` ohne Anlass.**
+  - **Beleg:** Tabelle oben.
+  - **Zuständig:** Fachstelle (P2a-F-4), danach die bauende Sitzung.
+- **P2a-T-2 · optional · Der entschiedene Satz steht dreimal.**
+  - **Beleg:** «Vielleicht ruft sie gleich an.» steht in `content/selbstfuersorge.html` in der Szene (`p.puk-vis-scene__say`) und in der Kurzbeschreibung (`p.puk-sr`), dazu in `site.config.json` › `v-sf-abend` › `statement`. Ausserdem in `abgleich/selbstfuersorge.md` (Nr. 661, 664) und in der Liste «Neue Sätze zur Freigabe» (Nr. 14, 17).
+  - **Vorschlag:** In der nächsten Korrektur alle Stellen auf «Vielleicht kommt gleich eine Nachricht.» ändern.
+  - **Zuständig:** bauende Sitzung.
+
+### Zählung der Befunde der Prüfrunde 2a
+
+| Stufe | kritisch | wichtig | optional |
+| --- | ---: | ---: | ---: |
+| W1 | 0 | 2 | 3 |
+| W2 | 0 | 0 | 5 |
+| S | 0 | 1 | 3 |
+| V (Visualisierungs-Check) | 0 | 1 | 3 |
+| B (Bedienung und Barrierefreiheit) | 0 | 0 | 0 |
+| T (Technik und Zuständigkeit, Stichprobe) | 0 | 0 | 2 |
+
+Dazu 10 Fragen an die Fachstelle (P2a-F-1 bis P2a-F-10) und 24 Kürzungsvorschläge (K-R-a1 bis K-S-b4).
+
+**Gesamturteil:** Fachlich tragen die zwei Seiten. Sie übertragen den Bestand mit seinen Absicherungen und behandeln Sicherheit und Zuständigkeit richtig. Vor dem Wortlaut der Seiten muss die Fachstelle zwei Inhalte entscheiden: die Bestandssätze zur Verantwortung für Erkrankung und Genesung, die Etappe 1 widersprechen (P2a-F-1), und die Kinder (P2a-F-2). Dazu die Frage, wie stark gekürzt wird (P2a-F-3). Zu ändern ist vor der Durchsicht nichts; sinnvoll ist, dass die nächste Korrektur die Entscheide F-1 bis F-6, die Stellung der Abbildungen (P2a-V-1) und den Satz «Vielleicht kommt gleich eine Nachricht.» in einem Durchgang umsetzt, damit die Fachstelle danach die kürzere Fassung liest.
+
+**Nicht geprüft, und warum:**
+
+- **Vorschau auf Netlify:** Die Adresse `deploy-preview-10--puk-website-profil.netlify.app` war aus dieser Umgebung gesperrt (Proxy: «connect_rejected»). Geprüft ist der gebaute Stand im Repository über einen lokalen Server; ob die Vorschau denselben Stand zeigt, ist offen.
+- **Reale Screenreader-Läufe, Hardwaretastatur und Touch:** brauchen eine Person (Teil E).
+- **Verweise von den Etappe-1-Seiten (V1–V9):** auftragsgemäss nicht geprüft.
+- **Zweite, unabhängige Prüfsitzung** (Prüftiefe, empfohlen für W1 und Visualisierungs-Check): gibt es für diese Runde nicht; die Befunde stammen alle aus dieser einen Prüfung.
 
 ## Vierte Prüfrunde (10.10.2026, Stand f32c255)
 
