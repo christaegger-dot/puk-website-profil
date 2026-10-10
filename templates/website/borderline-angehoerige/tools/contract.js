@@ -8,7 +8,7 @@
 })(typeof self !== 'undefined' ? self : this, function () {
 'use strict';
 const VERSION = 'PUK Website Kit 1.10.1-r4 · abgeleitet';
-const BUILD = 'r4-5';
+const BUILD = 'r4-6';
 const FORMATS = ['text', 'figure', 'process', 'cycle', 'comparison', 'decision', 'illustration', 'stepwise-model', 'tension-field', 'relationship-map', 'continuum', 'layer-model'];
 /* Interaktive Komponenten und Erklärmuster G brauchen components/interaktion.js (HTML-Fassungen ohne React). */
 const INTERACTIVE = ['data-puk-accordion', 'data-puk-tabs', 'data-puk-disclosure', 'data-puk-dialog-open', 'data-vis-build'];
@@ -20,7 +20,8 @@ const DE_TERMS = /\b(Jugendamt|Betreuungsgerichts?|rechtliche[nr]? Betreuung|Bet
 const LABELS = /\b(?:die|der|den|des|dem|ein|eine|einen|einem|einer|als)\s+(Schizophrenen?|Psychotiker(?:in(?:nen)?)?|Borderliner(?:in(?:nen)?)?|Bipolaren|Süchtigen|Geisteskranken?|Irren)\b|\bpsychisch Kranken?\b/i;
 const INLINE_TOPICS = ['selbstgefaehrdung', 'gewalt', 'akute-krise'];
 const INLINE_RE = /<p data-responsibility-inline\s*>\s*<\/p>/g;
-const REVIEW_WARNINGS = ['orthography', 'swiss-context', 'person-first', 'card-grid', 'inline-style', 'figure-core', 'entry-point', 'plan-coverage'];
+const REVIEW_WARNINGS = ['orthography', 'swiss-context', 'person-first', 'card-grid', 'inline-style', 'figure-core', 'entry-point', 'plan-coverage', 'resonance'];
+/* Profilentscheid 10.10.2026: Jede Darstellung nennt im Plan ihre Wirkung («resonance»): Was soll eine Angehörige darin wiedererkennen oder spüren? Anlass: eine Metapher, die wie ein Bauplan wirkte. */
 /* Profilentscheid 08.10.2026: Erklärmodelle (Kreislauf, Prozesspfad, Modell in Schritten) prüfen, wo Angehörige ansetzen können – im Plan als «entryPoint» (Ansatzpunkt oder «entfällt: Begründung»), in der Figur als .puk-vis-ansatz. */
 const ENTRY_FORMATS = ['cycle', 'process', 'stepwise-model'];
 /* Profilentscheid 08.10.2026: Bauen und Prüfen sind getrennt; ohne vollständigen Prüfbericht (PRUEFBERICHT.md im Ordner der Website) keine Veröffentlichung.
@@ -208,6 +209,7 @@ function gate(cfg, files, opts = {}) {
       for (const k of ['id', 'section', 'goal', 'format', 'statement', 'source', 'alternative', 'reason', 'approvalStatus']) if (!v[k]) add('block', pid, 'visual-plan', `visualPlan ${v.id || '?'}: «${k}» fehlt`);
       if (!FORMATS.includes(v.format)) add('block', pid, 'visual-plan', `visualPlan ${v.id}: unbekanntes Format «${v.format}»`);
       if (v.format !== 'text' && !v.understood) add('block', pid, 'visual-plan', `visualPlan ${v.id}: «understood» fehlt – was versteht die Zielgruppe dadurch besser als durch einen kurzen Text allein?`);
+      if (v.format !== 'text' && !(v.resonance || '').trim()) prod(pid, 'resonance', `visualPlan ${v.id}: «resonance» fehlt – Wirkung: Was soll eine Angehörige in der Darstellung wiedererkennen oder spüren?`);
       if (v.format !== 'text' && v.approvalStatus !== 'freigegeben') prod(pid, 'visual-approval', `Visualisierung ${v.id} nicht freigegeben (${v.approvalStatus})`);
       if (ENTRY_FORMATS.includes(v.format) && !(v.entryPoint || '').trim()) prod(pid, 'entry-point', `visualPlan ${v.id}: «entryPoint» fehlt – Ansatzpunkt für Angehörige oder «entfällt: Begründung»`);
     }
@@ -395,6 +397,7 @@ const MUTATIONS = [
   ['Interner Link ins Leere', ['link-target'], (c, f) => rep(f, 'unterstuetzung-finden.html', 'class="puk-link--inline" href="behandlung-verstehen.html"', 'class="puk-link--inline" href="gibt-es-nicht.html"')],
   ['Zwei h1', ['h1'], (c, f) => rep(f, 'index.html', '</main>', '<h1>Zweite Überschrift</h1></main>')],
   ['Visualisierungsplan ohne «understood»', ['visual-plan'], c => { const v = pg(c, 'behandlung-verstehen').visualPlan.find(x => x.format !== 'text'); if (!v) return false; delete v.understood; }],
+  ['Visualisierungsplan ohne Wirkung («resonance»)', ['resonance'], c => { const v = pg(c, 'unterstuetzung-finden').visualPlan.find(x => x.format !== 'text'); if (!v) return false; delete v.resonance; }],
   ['Inline-Skript eingefügt', ['inline-script'], (c, f) => rep(f, 'behandlung-verstehen.html', '</main>', '<script>console.log(1)</script></main>')],
   ['Externer Link in neuem Fenster ohne rel', ['blank-target'], (c, f) => rep(f, 'behandlung-verstehen.html', '</main>', '<p><a href="https://www.example.org" target="_blank">Weitere Informationen der Beispielorganisation</a></p></main>')],
   ['Akkordeon ohne Interaktionsskript', ['interaction-script'], (c, f) => rex(f, 'unterstuetzung-finden.html', /<script src="[^"]*interaktion\.js[^"]*" defer><\/script>\n?/, '')],
