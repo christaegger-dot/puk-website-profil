@@ -67,6 +67,7 @@ Profilentscheid 10.10.2026. Gilt für Muster D und für jede Darstellung, die ei
 - **Text um das Bild:** Kernaussage und Erklärtext sagen, was das Bild für Angehörige heisst, nicht wie es aufgebaut ist. «Was Sie tun können» steht im Text, nicht als Teil der Zeichnung.
 - **Ablauf:** Vor dem Bau eine Skizze in Worten und die Wirkung im Plan. Nach dem Bau Bildschirmfotos bei 1280 und 360 px. Die Fachstelle sieht das Bild, bevor sie es freigibt.
 - **Platzhalter** (`.puk-vis-illu`) nur für fremde Bilder ohne freigegebene Quelle oder solange eine Zeichnung noch fehlt.
+- **Auszeichnung:** `data-visual-type="illustration"` mit `.puk-vis-scene`. Für eine eigene Zeichnung verlangt das Gate keinen Bildquellen- oder Platzhalterstatus; die Kennzeichnung «Eigene didaktische Darstellung» und die Freigabe im Plan prüft es wie bei jeder Figur (ab Build r4-7).
 
 ## Schmale Bildschirme
 

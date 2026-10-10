@@ -8,7 +8,7 @@
 })(typeof self !== 'undefined' ? self : this, function () {
 'use strict';
 const VERSION = 'PUK Website Kit 1.10.1-r4 · abgeleitet';
-const BUILD = 'r4-6';
+const BUILD = 'r4-7';
 const FORMATS = ['text', 'figure', 'process', 'cycle', 'comparison', 'decision', 'illustration', 'stepwise-model', 'tension-field', 'relationship-map', 'continuum', 'layer-model'];
 /* Interaktive Komponenten und Erklärmuster G brauchen components/interaktion.js (HTML-Fassungen ohne React). */
 const INTERACTIVE = ['data-puk-accordion', 'data-puk-tabs', 'data-puk-disclosure', 'data-puk-dialog-open', 'data-vis-build'];
@@ -330,7 +330,8 @@ function gate(cfg, files, opts = {}) {
         if (!ret || !/zurück zu station 1/i.test(txt(ret))) add('block', pid, 'cycle-return', `Kreislauf ${lab}: sichtbarer Rücksprung «zurück zu Station 1» fehlt`);
         if (db && !/station 1/i.test(db.split(/\s+/).map(x => txt(byId(doc, x))).join(' '))) add('block', pid, 'cycle-return', `Kreislauf ${lab}: Textfassung erklärt die Rückkopplung zu Station 1 nicht`);
       }
-      if (f.attrs['data-visual-type'] === 'illustration' && !one(f, x => has(x, 'data-placeholder') || (x.tag === 'img' && has(x, 'data-source-status')))) add('block', pid, 'placeholder-status', `Illustration ${lab}: Bildquelle- und Freigabestatus fehlen`);
+      /* Profilentscheid 10.10.2026: Eine eigene Zeichnung (.puk-vis-scene) braucht keine fremde Bildquelle; Kennzeichnung und Freigabe im Plan prüft das Gate wie bei jeder Figur. */
+      if (f.attrs['data-visual-type'] === 'illustration' && !one(f, x => has(x, 'data-placeholder') || (x.tag === 'img' && has(x, 'data-source-status')) || cls(x, 'puk-vis-scene'))) add('block', pid, 'placeholder-status', `Illustration ${lab}: weder eigene Zeichnung (.puk-vis-scene) noch Bildquelle- und Freigabestatus`);
     }
     for (const v of plan) if (v.format !== 'text' && !seen.has(v.id)) add('block', pid, 'visual-plan', `Plan-Eintrag ${v.id} (${v.format}) hat keine Figur auf der Seite`);
     /* Jeder Abschnitt hat eine Zeile im Visualisierungsplan (sectionId = id der section): Erklärform oder begründeter Verzicht. */
@@ -393,6 +394,7 @@ const MUTATIONS = [
   ['Figur ohne Kennzeichnung', ['figure-source'], (c, f) => rep(f, 'behandlung-verstehen.html', 'Eigene didaktische Darstellung', 'Darstellung', true)],
   ['Figur fehlt im Visualisierungsplan', ['visual-plan'], c => { const p = pg(c, 'behandlung-verstehen'); p.visualPlan = p.visualPlan.filter(v => v.format !== 'comparison'); }],
   ['Bildplatzhalter ohne Freigabestatus', ['placeholder-status'], (c, f) => rep(f, 'beziehungen-verstehen.html', ' data-approval-status="ausstehend"', '')],
+  ['Illustration ohne eigene Zeichnung und ohne Bildstatus', ['placeholder-status'], (c, f) => rep(f, 'beziehungen-verstehen.html', ' data-placeholder="image"', '')],
   ['Quellenlink ohne sprechendes aria-label', ['link-label'], (c, f) => rep(f, 'behandlung-verstehen.html', '</figcaption>', '<a href="#main-content">Quelle</a></figcaption>')],
   ['Interner Link ins Leere', ['link-target'], (c, f) => rep(f, 'unterstuetzung-finden.html', 'class="puk-link--inline" href="behandlung-verstehen.html"', 'class="puk-link--inline" href="gibt-es-nicht.html"')],
   ['Zwei h1', ['h1'], (c, f) => rep(f, 'index.html', '</main>', '<h1>Zweite Überschrift</h1></main>')],
