@@ -29,10 +29,9 @@
   .bl-cycle-fig [data-cycle-narrow]{display:inline}
 }
 
-/* Muster A mit direkter Beschriftung (Pendel, Brücke, Anspannungskurve): Zeichnung als SVG, Beschriftungen als
+/* Muster A mit direkter Beschriftung (Pendel, Anspannungskurve): Zeichnung als SVG, Beschriftungen als
    HTML-Text darüber (Leitlinie 07: Beschriftungen sind echter Text). Lage in Prozent der Zeichnung.
-   Pendel und Kurve: schmal entfallen nur die Beschriftungen im Bild; die Liste unter der Zeichnung steht in allen Breiten.
-   Brücke: alle Teile bleiben auch schmal im Bild beschriftet, dort mit einer schmaleren Zeichnung. */
+   Pendel und Kurve: schmal entfallen nur die Beschriftungen im Bild; die Liste unter der Zeichnung steht in allen Breiten. */
 .bl-fig{position:relative;max-width:calc(var(--space-20) * 8);aspect-ratio:2/1;margin:0 auto var(--space-6)}
 .bl-fig>svg{position:absolute;inset:0;width:100%;height:100%}
 .bl-fig__label{position:absolute;margin:0;font:var(--type-body-sm);font-weight:var(--fw-medium);color:var(--text-default);line-height:var(--lh-subheading)}
@@ -47,13 +46,6 @@
 .bl-fig--pendel .bl-fig__label--klein{top:52.1%;font-weight:var(--fw-regular)}
 .bl-fig--pendel .bl-fig__label--mid{bottom:25.5%}
 .bl-fig--pendel .bl-fig__label--gross{left:5%;right:5%;top:87.9%;text-align:center;font-weight:var(--fw-regular)}
-/* Brücke, Zeichnung 640 × 320 */
-.bl-fig--bruecke .bl-fig__label{transform:translate(-50%,-50%);text-align:center}
-.bl-fig--bruecke .bl-fig__label--sie{left:12%;top:67%}
-.bl-fig--bruecke .bl-fig__label--andere{left:87%;top:67%;max-width:24%}
-.bl-fig--bruecke .bl-fig__label--gelaender{left:50%;top:21.9%}
-.bl-fig--bruecke .bl-fig__label--fahrbahn{left:50%;top:50%;line-height:var(--lh-tight)}
-.bl-fig--bruecke .bl-fig__label--pfeiler{left:50%;top:78%}
 /* Anspannungskurve, Zeichnung 640 × 280: eine Kurve über den Gesprächsverlauf (links tief, Scheitel bei x 392).
    Die vier Stellen liegen auf der Kurve: 1 (99, 235), 2 (275, 139), 3 (392, 60), 4 (532, 151).
    Nummern als HTML-Marken wie in der Liste (Muster G); Stelle 2 ist der Ansatzpunkt, mit doppeltem Ring. */
@@ -78,19 +70,9 @@
 .bl-kurve__liste .puk-say__item{margin:0}
 .bl-kurve__liste .puk-vis-build__n.bl-kurve__ansatz{margin:var(--space-1)}
 .bl-parts li{grid-template-columns:minmax(0,1fr);padding-left:0}
-.bl-fig__narrow{display:none}
 @container (max-width:560px){
   .bl-fig{max-width:calc(var(--space-20) * 5)}
   .bl-fig--pendel .bl-fig__label,.bl-fig--kurve .bl-fig__label{display:none}
-  /* Brücke schmal: eigene, schmalere Zeichnung (400 × 360), damit alle Beschriftungen in type-body-sm Platz haben */
-  .bl-fig--bruecke{aspect-ratio:400/360}
-  .bl-fig--bruecke .bl-fig__wide{display:none}
-  .bl-fig--bruecke .bl-fig__narrow{display:block}
-  .bl-fig--bruecke .bl-fig__label--sie{left:12.5%;top:66.7%}
-  .bl-fig--bruecke .bl-fig__label--andere{left:87.5%;top:66.7%;max-width:25%}
-  .bl-fig--bruecke .bl-fig__label--gelaender{top:20%}
-  .bl-fig--bruecke .bl-fig__label--fahrbahn{top:49.4%}
-  .bl-fig--bruecke .bl-fig__label--pfeiler{top:75%}
 }
 
 /* Muster E, Annahmen: je Zeile die Annahme (kleiner) und die Einordnung (hervorgehoben, Erklärung in Seitenschrift) */

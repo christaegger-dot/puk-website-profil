@@ -339,12 +339,11 @@
           "section": "02 Grenze und Kontakt",
           "sectionId": "bruecke",
           "goal": "Verstehen, dass Grenzen Kontakt schützen können",
-          "format": "figure",
-          "statement": "Brücke mit Geländer zwischen zwei Ufern «Sie» und «die andere Person»: Fahrbahn (Verbindung), Geländer (Grenzen), Pfeiler (Absprachen, Pausen, Fachpersonen, Selbstschutz), direkt im Bild beschriftet. Kernaussage wie im Handout: «Kontakt braucht Geländer: Grenzen können Kontakt schützen.» (Korrektur W1-2, V-7, 09.10.2026)",
-          "understood": "Dass Grenzen zur Verbindung zwischen zwei Menschen gehören und Kontakt schützen können; das Bild zeigt beide Ufer, die Verbindung und das Geländer in einer Form.",
-          "source": "Eigene didaktische Darstellung (Handout «Die Brücke mit Geländer»); Bezugspunkte wie im Handout: Hoffman et al. (2005), NICE CG78 (2009), Linehan, Mason und Kreger (2014), Stand by You / Sotomo (2024) (Korrektur W1-6)",
-          "alternative": "Beschriftungen als HTML-Text über der Zeichnung, auch unter 560 px; Liste der drei Teile mit Erklärung; Textfassung über aria-describedby",
-          "reason": "Die Metapher verbindet Kontakt und Grenze in einer Form; Ufer, Fahrbahn, Geländer und Pfeiler sind direkt beschriftet, die Liste erklärt sie.",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: Die Fachstelle hat die Zeichnung als zu technisch und die Erklärungen als zu abstrakt beurteilt (Durchsicht 10.10.2026). Das Bild der Brücke steht als ein Satz im Text; zwei Beispielsätze aus dem Handout zeigen, was Angehörige tun können (Korrektur 1g).",
           "approvalStatus": "ausstehend"
         },
         {
