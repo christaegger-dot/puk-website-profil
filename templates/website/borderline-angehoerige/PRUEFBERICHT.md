@@ -13,12 +13,15 @@ Gehört zur Website in diesem Ordner. Wer den Starter kopiert, übernimmt diese 
 
 | Stufe | Status | Datum | Geprüft durch | Ergebnis |
 | --- | --- | --- | --- | --- |
-| W1 Fachliche Prüfung | offen | 09.10.2026 | dritte Prüfrunde: zwei Prüfsitzungen (Claude, haben nicht gebaut) | 1 mittel, 5 leicht; Prüfbedarf für die Fachstelle. Freigabe nur durch die Fachstelle. |
-| W2 Gesamtkohärenz | offen | 09.10.2026 | dritte Prüfrunde | kein neuer Befund; offen aus der zweiten Runde: F-W2-02, F-W2-03 (Fachstelle) |
-| S Sprach-Review | offen | 09.10.2026 | dritte Prüfrunde | 1 leicht; abschliessbar erst nach W1 und W2 |
-| Visualisierungs-Check | offen | 09.10.2026 | dritte Prüfrunde | 1 mittel, 3 leicht |
-| Bedienung und Barrierefreiheit | offen | 09.10.2026 | dritte Prüfrunde, automatisiert | 1 leicht; reale Screenreader-Läufe fehlen |
-| W3 Code-Review | offen | | | erst nach Umsetzung von W2 und S |
+| W1 Fachliche Prüfung | offen | 10.10.2026 | vierte Prüfrunde: eine Prüfsitzung (Claude, hat nicht gebaut); davor dritte Prüfrunde 09.10.2026 | Vorprüfung: 4 wichtig, 5 optional; 21 Fragen «Prüfbedarf für die Fachstelle» (P4-F-1 bis P4-F-21). Freigabe nur durch die Fachstelle. |
+| W2 Gesamtkohärenz | offen | 10.10.2026 | vierte Prüfrunde | 1 wichtig, 3 optional; offen weiter F-W2-02, F-W2-03 (jetzt P4-F-18, P4-F-19) |
+| S Sprach-Review | offen | 10.10.2026 | vierte Prüfrunde | 6 optional; Lesetest je Abschnitt und Kennzahlen; abschliessbar erst nach W1 und W2 |
+| Visualisierungs-Check | offen | 10.10.2026 | vierte Prüfrunde | 1 wichtig, 5 optional; Matrix 1–17 × 6 Figuren; keine Figur fachlich freigegeben |
+| Bedienung und Barrierefreiheit | offen | 10.10.2026 | vierte Prüfrunde, automatisiert | kein Befund; reale Screenreader-Läufe, Hardwaretastatur und Touch fehlen (nicht prüfbar) |
+| W3 Code-Review | offen | 10.10.2026 | vierte Prüfrunde: nur Stichprobe Technik und Zuständigkeit, kein volles W3 | Stichprobe ohne Befund; W3 erst nach Umsetzung von W2 und S |
+| R1 Profil-Audit | offen | | | noch nicht geprüft |
+| R2 Visualisierung und Laienverständlichkeit | offen | | | noch nicht geprüft (Lesetest und Bildsprache der vierten Runde sind Vorarbeit, kein R2) |
+| R3 Freigabe-Audit | offen | | | noch nicht geprüft |
 
 Dazu 5 leichte Befunde zu Bericht und Abgleich. Die erste und zweite Prüfrunde stehen weiter unten zur Nachvollziehbarkeit; ihre Befunde sind durch die dritte Runde überholt, soweit sie nicht ausdrücklich als offen genannt sind.
 
@@ -352,6 +355,585 @@ Mit Korrektur 1h gibt es 6 Figuren:
 - **Statustabelle:** Die Zeilen R1 bis R3 fehlen noch; die Prüfsitzung trägt sie ein.
 - **Profil (später):** P-6, P-9.
 - **Offen für Stufe 5:** Screenreader-Läufe, Hardwaretastatur und Touch.
+
+## Vierte Prüfrunde (10.10.2026, Stand f32c255)
+
+**Geprüfter Stand:** Branch `borderline-umbau`, Commit `f32c255` (nach Korrektur 1h und Gate-Korrektur r4-7). Etappe 1: `index`, `verstehen`, `beziehungen`, `grenzen`. Die Entwurfsseiten sind nicht Gegenstand dieser Runde. Die Prüfsitzung hat die Website nicht gebaut. Sie hat keine Inhalte und keinen Code geändert und committet nur diesen Bericht.
+
+**Vorgehen**
+
+- **Grundlagen gelesen:** `CLAUDE.md`; aus `guidelines/` die Abschnitte Ablauf, Fachliche Qualität, Gesamtkohärenz, Sprache, Visuelle Wissensvermittlung («Ein Bild, eine Idee»), Visualisierung umsetzen (Check 1–17) und Pre-Release-Audits (R2 Teil 2 und 3); `README.md` («Zuständigkeit statt Krisenzugang», «Verweis im Text»); dazu `KORREKTUR-ETAPPE-1E.md` bis `1H.md`, `site.config.json` und `abgleich/README.md`.
+- **Bestand:** Branch `origin/borderline-bestand`, `bestand/borderline-angehoerige/texte/` (73 Dateien) und `INVENTAR.md`, mit `git show` ausgelesen.
+- **Abgleich:** Die vier Tabellen in `abgleich/*.md` sind per Skript in 1763 Zeilen zerlegt. Jede zitierte Bestandsstelle ist im Bestandstext nachgesucht.
+- **Neue Sätze:** Ein Skript sammelt alle Stellen in «…» der vier Seiten (`content/*.html`). Es vergleicht sie mit dem Stand `0ba7013` (vor Korrektur 1e) und sucht sie im ganzen Bestand.
+- **Browser:** lokal `python3 -m http.server 8765` (am Ende beendet), Chromium über Playwright. Bildschirmfotos jeder Figur bei 1280 und 360 px, je im Theme Standard und «kontrast». Die Bildschirmfotos sind nicht committet; die Belege beschreiben sie.
+- **Skripte der bauenden Sitzung:** selbst ausgeführt, nicht übernommen (Teil F).
+
+**Ergebnis in Kürze:**
+
+- Etappe 1 ist technisch sauber: kein Überlauf, keine Kontrastverletzung, Tastatur in Ordnung, Gate und Skripte wie gemeldet.
+- Die Kennzahlen der bauenden Sitzung stimmen.
+- Kein kritischer Befund.
+- Fachlich bleibt eine Reihe von Fragen offen. Die wichtigsten betreffen die Neufassungen:
+  - eine neue absolute Aussage über die betroffene Person («Das geschieht ohne Absicht.»)
+  - die Spannung zwischen «Angehörige sind nicht die Ursache» und Beziehungserfahrungen als Mitursache
+  - «nicht allein verantwortlich für den Verlauf»
+  - die neuen Sätze in «Momentaufnahmen»
+- Dazu ist der Visualisierungsplan bei zwei Figuren veraltet.
+
+### Teil A · W1 Fachliche Vorprüfung
+
+#### A1 · 33 Aussagen gegen den Bestand
+
+29 Aussagen stammen aus den Neufassungen 1e bis 1h, 4 aus anderen Stellen (Suizid, Gewalt, Kinder, Anspannung). Nr. = Zeile im Abgleich (b = `beziehungen.md`, v = `verstehen.md`, g = `grenzen.md`). Bestandsdateien in `texte/`.
+
+| # | Korr. | Bestand (Zitat, Datei) | Neue Fassung (Zitat, Seite › Abschnitt) | Urteil |
+| --- | --- | --- | --- | --- |
+| 1 | 1e | «Eine Diagnose kann beeinflussen, wie Gefühle, Nähe oder Zurückweisung erlebt werden.» (`verstehen--beziehungen.md`, b17) | «Borderline kann beeinflussen, wie jemand Nähe oder Zurückweisung erlebt.» (`beziehungen` › Kopf) | gleichbedeutend («Gefühle» entfällt, im Abgleich genannt) |
+| 2 | 1e | «Die Zurückweisung kann aber auch real sein; beides muss offenbleiben.» (b60) | «Und manchmal war die Zurückweisung tatsächlich da.» und «Für die betroffene Person ist dieses Erleben real, auch wenn Sie es anders gemeint haben.» (`beziehungen` › `verstaerker`, Station 2) | gleichbedeutend |
+| 3 | 1e | «… können Abwehr, Selbstabwertung oder Rückzug die Klärung erschweren.» (b121) | «Dann können Abwehr oder Rückzug folgen, und eine Klärung wird schwieriger. Ob es im Einzelfall so ist, bleibt offen.» (`verstaerker`, Station 2) | gleichbedeutend; das «wird» ist durch den Folgesatz abgesichert |
+| 4 | 1e | «Unterschiedliches Verhalten beweist weder bewusste Kontrolle noch, dass Angehörige die Schwierigkeiten verursacht haben.» (b128) | «… beweist nicht, dass die Person bewusst steuert oder täuscht. Es beweist auch nicht, dass Sie die Schwierigkeiten verursacht haben.» (`verstaerker`, Station 5) | gleichbedeutend |
+| 5 | 1e | «Dissoziation ist eine mögliche Erklärung, aber keine, die Angehörige aus dem Verhalten allein feststellen können.» (b132) | «Ein möglicher Grund ist eine Dissoziation: ein Gefühl, wie abgetrennt oder nicht ganz da zu sein. Ob das zutrifft, können Sie aus dem Verhalten allein nicht feststellen.» (`verstaerker`, Station 4) | gleichbedeutend; die Erklärung ist gedeckt durch `glossar.md` Z. 122 («Abgetrenntsein von sich selbst») |
+| 6 | 1e | «Bei Suizidgedanken oder Selbstverletzung darf Hilfe nicht aus Sorge vor einer «Verstärkung» vorenthalten werden.» (b168) | «… darf Hilfe nie zurückgehalten werden – auch nicht aus der Sorge, Zuwendung könnte das Verhalten verstärken.» (`beziehungen` › `verantwortung`) | gleichbedeutend, im Sinn der Sicherheit verschärft («nie»); der Verweis im Text folgt |
+| 7 | 1e | «Dann braucht es eine angemessene professionelle Einschätzung.» (b169) | «Dann braucht es eine fachliche Einschätzung.» (ebd.) | gleichbedeutend |
+| 8 | 1e | «… sollte aber weder alle Regulation übernehmen noch Behandlung ersetzen.» (b191) | «Sie sollte aber weder alle schwierigen Gefühle auffangen noch eine Behandlung ersetzen.» (`was-hilft`) | leicht enger («Regulation»); die Fachstelle hat die Fassung 1e gelesen («es ist gut», 1F) |
+| 9 | 1e | «… sind aber weder Therapeut:innen noch allein für den Verlauf oder die Beziehung verantwortlich.» (b209) | «… keine Therapeutinnen oder Therapeuten und nicht allein verantwortlich für den Verlauf oder die Beziehung.» (`verantwortung`) | gleichbedeutend mit dem Bestand; widerspricht aber anderen Seiten (P4-W2-1) |
+| 10 | 1f | «Solche Erfahrungen kommen nicht bei allen Menschen mit Borderline vor und lassen sich aus der Diagnose nicht vorhersagen.» (`verstehen.md`, v17) | «Das ist nicht bei allen Menschen mit Borderline so.» (`verstehen` › `erleben`) | **Absicherung fehlt:** «aus der Diagnose nicht vorhersagen» entfällt; im Abgleich als Prüfbedarf genannt (P4-F-10) |
+| 11 | 1f | «Manche drücken starke Gefühle sichtbar aus, andere erleben sie eher nach innen gerichtet oder ziehen sich zurück.» (v26) | «Manche zeigen starke Gefühle nach aussen. Andere erleben sie eher nach innen oder ziehen sich zurück.» (`borderline`) | gleichbedeutend |
+| 12 | 1f | «Die Diagnose allein erlaubt keine Aussage darüber, ob von einem Menschen Gefahr ausgeht.» (v28) | «Die Diagnose allein sagt nichts darüber, ob von einem Menschen Gefahr ausgeht.» (`borderline`) | gleichbedeutend |
+| 13 | 1f | «Unter hoher emotionaler Überflutung verengt sich das Erleben häufig stark auf den aktuellen Schmerz, die aktuelle Angst oder den aktuellen Konflikt.» (v78) | «Bei hoher Anspannung zählt für einen Menschen oft nur noch der Schmerz oder Streit im Moment.» (`anspannung`) | **Bedeutung leicht verschoben:** «verengt sich stark» wird «zählt nur noch»; «Angst» entfällt (P4-F-12) |
+| 14 | 1f | «Borderline entsteht nicht durch eine einzige Ursache, sondern im Zusammenspiel biologischer Empfindlichkeit, Bindungs- und Entwicklungserfahrungen sowie Belastungsfaktoren.» (v100) | «Borderline hat nicht eine einzige Ursache. Mehrere Dinge wirken zusammen: eine biologische Empfindlichkeit, Erfahrungen in engen Beziehungen und beim Aufwachsen sowie Belastungen.» (`borderline`) | gleichbedeutend; Spannung zu Nr. 16 (P4-F-2) |
+| 15 | 1f | «Schuldzuweisungen an Betroffene oder Angehörige greifen zu kurz und helfen niemandem.» (v101) | «Die Schuld bei der betroffenen Person oder bei Angehörigen zu suchen, ist zu einfach.» (`borderline`) | gleichbedeutend (gekürzt, im Abgleich genannt) |
+| 16 | 1f | «Angehörige sind weder Ursache der Borderline-Erkrankung noch für die Genesung einer anderen Person verantwortlich.» (v117) | «Angehörige sind nicht die Ursache der Erkrankung und nicht für die Genesung verantwortlich.» (`mythen`, Annahme 3) | gleichbedeutend; Spannung zu Nr. 14 und Annahme 5 (P4-F-2) |
+| 17 | 1f | «Wechselseitigen Einfluss anzuerkennen bedeutet keine Schuldzuweisung und keine Aufteilung von Verantwortung für die Erkrankung.» (v119) | «Dass man sich in einer Beziehung gegenseitig beeinflusst, heisst nicht, dass jemand schuld ist.» (Annahme 3) | gleichbedeutend im Kern; «keine Aufteilung von Verantwortung» entfällt (im Abgleich genannt) |
+| 18 | 1f | «Solche Erfahrungen können Risikofaktoren sein; sie sind weder notwendig noch hinreichend …» (v123) | «Solche Erfahrungen können das Risiko erhöhen. Sie führen aber nicht zwingend zu Borderline, und Borderline kann auch ohne sie entstehen.» (Annahme 5) | gleichbedeutend |
+| 19 | 1f | «In klinischen Kontexten wird die Störung häufig als frauendominiert wahrgenommen; bevölkerungsbezogene Studien berichten teils keine signifikanten Unterschiede.» (v135) | «In Kliniken gilt Borderline oft als Erkrankung, die vor allem Frauen betrifft. Studien in der allgemeinen Bevölkerung finden aber teils keine statistisch bedeutsamen Unterschiede …» (Annahme 7) | gleichbedeutend |
+| 20 | 1f | «Eine Pendel-Metapher für einen vorübergehend verengten Blick – nicht für eine feste Eigenschaft oder Absicht.» (`verstehen.md` Z. 349, v504); «Sie beschreibt weder eine feste Eigenschaft einer Person noch eine Absicht …» (`materialien--text--spaltung.md`, v371) | «Das geschieht ohne Absicht.» (`verstehen` › `bewertungen`, Abschnittstext) | **Bedeutung verschoben, Absicherung fehlt:** Der Bestand sagt, das Bild beschreibe keine Absicht. Neu steht als Tatsache über die Person, es geschehe ohne Absicht (P4-F-1) |
+| 21 | 1f | «Eine Grenze gilt auch ohne Zustimmung der anderen Person; deren Reaktion können Sie nicht steuern.» (`materialien--text--lmk.md`, g627) | «Für die Reaktion der anderen Person sind Sie nicht verantwortlich.» (`grenzen` › `konsequenz`) | **Bedeutung verschoben:** «gilt auch ohne Zustimmung» fehlt; im Abgleich als «zusammengeführt» geführt (P4-F-11) |
+| 22 | 1f | «Welche Grenze passt, ist individuell und darf ohne moralische Bewertung entschieden werden.» (g271) | «Welche Grenze passt, ist individuell und keine Frage von moralisch richtig oder falsch.» (`rollen`) | gleichbedeutend |
+| 23 | 1f | «Sie beweisen keine Grenzverletzung.» / «Ein Signal sagt nicht automatisch, was die Ursache ist.» (`materialien--text--grenzen-erkennen.md`, g490, g500) | «Solche Signale beweisen nicht, dass jemand eine Grenze verletzt hat, und zeigen auch nicht sicher, woher die Belastung kommt.» (`erkennen`) | gleichbedeutend (F-W1-03 hier erledigt) |
+| 24 | 1g | «Bei starker Aktivierung können Zuhören, Abwägen und Impulse steuern vorübergehend schwerer werden.» (`materialien--text--alarm-modus.md`, v236) | «Dann kann es vorübergehend schwerfallen, zuzuhören, nachzudenken und sich zurückzuhalten.» (`anspannung`, Abbildung 2, Stelle 3) | gleichbedeutend |
+| 25 | 1g | «Grenzen können Kontakt schützen.» (`materialien--text--bruecke-gelaender.md`, g423) | «Grenzen können Kontakt auf ähnliche Weise schützen: Sie zeigen, was geht und was nicht.» (`grenzen` › `bruecke`) | gleichbedeutend (W1-2 der ersten Runde erledigt) |
+| 26 | 1h | «Das Eisberg-Bild ist eine mögliche Verständnishilfe, keine Aussage darüber, was in einer konkreten Person sicher «darunterliegt».» (`verstehen.md`, v61) | «Der Eisberg ist ein Bild dafür, was man von aussen sieht, keine Aussage darüber, was in einer bestimmten Person «darunterliegt».» (Abbildung 1, Vertiefung) | **leicht verschoben:** Das Bild handelt gerade auch vom Unsichtbaren, nicht nur vom Sichtbaren (P4-F-13; Wortlaut aus 1H) |
+| 27 | 1h | «Unter hoher Anspannung kann der Blick auf einen Menschen vorübergehend enger werden.» (spaltung, v391) | «Unter starker Anspannung kann ein einzelner Moment das ganze Bild bestimmen …» und «… der Blick kann sich wieder weiten.» (Abbildung 3, Kurztext) | gleichbedeutend |
+| 28 | 1h | «Sie gilt nicht für alle Menschen mit Borderline und erklärt keine einzelne Situation abschliessend.» (spaltung, v390) | «… und gilt nicht für alle Menschen mit Borderline.» (Abbildung 3, Vertiefung) | gleichbedeutend im Kern; «erklärt keine einzelne Situation abschliessend» entfällt, die Bemerkung im Abgleich nennt das nicht (P4-W1-9) |
+| 29 | 1h | Bestand-Handout: drei Bereiche «Rückzug», «Im Gespräch», «Zu viel Alarm»; dazu «Später nur dann neuen Kontakt anbieten, wenn es für Sie sicher und gewollt ist.» (`materialien--text--anspannungskurve.md`) | Stelle 4 «Es wird wieder ruhiger.» (Abbildung 2, Beschriftung und Überschrift) | **neu ohne Grundlage:** Der Bestand kennt keine vierte Stelle und kein Wiederabklingen als Satz. Das Beispiel bei Stelle 4 stammt aus «Bei Rückzug» (P4-F-7) |
+| 30 | – | «Wenn Sie sich konkret sorgen, fragen Sie ruhig und direkt, ob die Person Suizidgedanken oder einen Plan hat. Solche Fragen lösen nach heutigem Wissensstand keine suizidale Handlung aus; sie können helfen, die Lage zu verstehen …» (`verstehen.md` Z. 197) | wörtlich (`mythen`, Abschnittstext) und «Das kann helfen, die Lage zu verstehen.», danach der Verweis im Text; Annahme 6 «Direkt nachzufragen, löst nach heutigem Wissensstand keine suizidale Handlung aus.» | gleichbedeutend |
+| 31 | – | «Bringen Sie sich in Sicherheit und wenden Sie sich an passende professionelle Hilfe. Sie müssen die Dringlichkeit nicht allein einschätzen.» (`grenzen.md` Z. 476) | «Bringen Sie sich in Sicherheit und holen Sie Hilfe.», Verweis im Text, «Sie müssen die Dringlichkeit nicht allein einschätzen.» (`gewalt`, Schritt 2) | gleichbedeutend |
+| 32 | – | «Vereinbaren Sie, welche vertraute erwachsene Person das Kind betreut, wohin es gehen kann und wer erreichbar ist, wenn die erste Person ausfällt.» (`grenzen.md` Z. 491) | «… und wer einspringt, wenn diese ausfällt.» (`gewalt`, Kinder) | gleichbedeutend |
+| 33 | – | «Bei Gefahr haben Abstand, Schutz und professionelle Hilfe Vorrang.» (`materialien--text--alarm-modus.md`, v246) | «Bei Gefahr hat Schutz Vorrang.» (`anspannung`) | gekürzt: «professionelle Hilfe» fehlt (R3-W1-06, P4-F-5) |
+
+**Bilanz:** 24 gleichbedeutend (davon 3 mit bekanntem Spannungs- oder Widerspruchsbezug), 5 Bedeutung verschoben, 2 mit fehlender Absicherung (Nr. 10 und Nr. 20, Nr. 20 zugleich verschoben), 1 neu ohne Grundlage (Nr. 29), 1 gekürzt mit offenem Prüfbedarf (Nr. 33). Keine Sicherheitsaussage ist entfallen.
+
+#### A2 · 20 Zeilen des Abgleichs mit Status «umformuliert», «verschoben» oder «entfällt»
+
+| Nr. | Status | Bestand (Kern) | Trägt die neue Fassung / ist «entfällt» begründet? |
+| --- | --- | --- | --- |
+| v59 | entfällt | «Ärger oder Wut … müssen aber weder im Vordergrund stehen noch auf eine bestimmte Weise geäussert werden.» | Aussage getragen von `borderline` («Manche zeigen starke Gefühle nach aussen. Andere erleben sie eher nach innen …»); die Begründung «Kürzung W2-2» verweist nicht dorthin |
+| v330 | entfällt | «Der Wunsch nach Kontakt oder Abstand darf sich verändern.» | begründet (Figur zeigt nur Anspannung); im Abgleich als Prüfbedarf markiert (P4-F-6) |
+| v336 | entfällt | «Was kann die andere Person freiwillig anbieten, und wo liegt ihre Grenze?» | nur teilweise begründet: `erkennen` fragt nach dem eigenen Angebot, nicht nach dem der anderen Person |
+| v393 | entfällt | «… bedeutet nicht, verletzende Aussagen, Drohungen oder Gewalt hinzunehmen.» | getragen von `einordnung` («Verstehen bedeutet nicht, alles auszuhalten.») und `beziehungen` › `verantwortung` |
+| v27 | entfällt | «Ausdruck, Verlauf und Belastung unterscheiden sich deutlich.» | begründet (Wiederholung von «Kein einzelnes Merkmal trifft auf alle zu») |
+| b54 | entfällt | «Zunächst steht nur fest: Eine Antwort ist noch nicht da.» | begründet (Beispiel ersetzt durch die Absage) |
+| b158 | entfällt | «Diese Reaktionen sind verständlich und verdienen Aufmerksamkeit …» | getragen: Abbildung 2 «Beide Sichten sind nachvollziehbar»; Ansatzpunkt Station 5 |
+| b162 | entfällt | «… dauerhaft verfügbar bleiben, kann das kurzfristig entlasten und zugleich die eigene Belastung erhöhen.» | **Begründung überholt:** «Kürzung Umfang (Korrektur 1b)»; der Richtwert gilt seit 1c nicht mehr (R3-W1-05, P4-F-6) |
+| b163 | entfällt | «… keine einzelne Bezugsperson kann Sicherheit allein gewährleisten.» | **Begründung überholt** («Kürzung W2-2»); entlastende Aussage, nur teilweise getragen von «ich kann das nicht allein tragen» (P4-F-6) |
+| b39 | entfällt | «Unterschiede, die stehen bleiben dürfen» | **Begründung überholt** («Kürzung Umfang»; R3-W1-05) |
+| g60 | entfällt | «Wenn sie schwer einzuhalten ist, können kleinere Schritte oder eigene Beratung helfen.» | getragen von `konsequenz` («holen Sie Unterstützung und passen sie an») und `kontakt` |
+| g208 | entfällt | «Zeitgrenzen wirken am besten, wenn Sie sie in einer ruhigen Situation ankündigen …» | Status passt nicht: Die Bemerkung sagt «vorgemerkt für `kommunizieren`», das wäre «verschoben» (P4-W1-9) |
+| g234 | entfällt | «Bei Gefahr hat Schutz Vorrang.» | begründet (Kopf und `gewalt`) |
+| g264 | entfällt | «Die Beispiele können bei der individuellen Einordnung helfen.» | begründet (Meta-Satz) |
+| g425 | umformuliert (1g) | «Eine Grenze bewertet keinen Menschen.» | nur teilweise: «Sie beschreibt, was für Sie möglich ist.» Die Aussage «bewertet keinen Menschen» steht sinngemäss in «keine Strafe und kein Liebesentzug» und `rollen`; Wortlaut 1G |
+| g397 | umformuliert (1g) | «… keinen Kontakt versprechen, der für Sie nicht sicher oder tragbar ist.» | trägt («Sie entscheiden, welcher Kontakt für Sie sicher und tragbar ist.») |
+| v371 | umformuliert (1h) | «… weder eine feste Eigenschaft … noch eine Absicht und lässt sich nicht aus einer Diagnose vorhersagen.» | teilweise: Die Vertiefung sagt «nicht den Charakter»; «Absicht» steht verschoben im Abschnittstext (Nr. 20 oben); «nicht aus einer Diagnose vorhersagen» entfällt, die Bemerkung nennt das nicht |
+| v390 | umformuliert (1h) | «… erklärt keine einzelne Situation abschliessend.» | teilweise (siehe A1 Nr. 28) |
+| v380 | verschoben (1h) | «Kränkung, Angst oder Wut können den Blick stark färben.» | trägt (Vertiefung von Abbildung 3; keine Hauptaussage) |
+| b131 | umformuliert (1e) | «Verstummen, Unwirklichkeitsgefühle oder abweichende Erinnerungen …» | trägt («abwesend wirkt», das Gefühl beschreibt der Folgesatz) |
+
+**Weitere Feststellungen zum Abgleich:**
+
+- Der Abgleich markiert **24 Zeilen** als «Prüfbedarf». Die meisten sind Kürzungen für den Richtwert, der nicht mehr gilt: v17, v92, v126, v278–v283, v289, v326, v329–v331, v377, v381, v441, b133, g51, g79, g121, g261, g369, g650. Sie stehen gesammelt in P4-F-6.
+- «Du bist wie alle anderen.» ist als «neu (1h)» geführt. Der Bestand hat den Satz fast gleich als Vorwurf an Angehörige: «Du bist genau wie alle anderen.» (`materialien--text--wenn-worte-treffen.md` Z. 47).
+- v138 und v146 nennen weiter eine «Vertiefung «Quellen»», die es seit 1h nicht mehr gibt.
+
+#### A3 · Beispielsätze und Sätze in Abbildungen, neu seit Korrektur 1e
+
+Grundlage: alle Stellen in «…» auf den vier Seiten, verglichen mit dem Stand `0ba7013` und gesucht im ganzen Bestand. Dazu die Wörter im Eisberg.
+
+| Satz | Seite › Ort | Herkunft |
+| --- | --- | --- |
+| «Wie ist es gerade für dich?» | `verstehen` › `eisberg`, Text und Abbildung 1 | Bestand: `glossar.md` Z. 296 («Offene Frage: 'Wie ist es gerade für dich?'») |
+| «Es wird wieder ruhiger.» | `verstehen` › Abbildung 2, Stelle 4 | **neu** → P4-F-7 |
+| «Du bist die Einzige, die mich versteht.» | `verstehen` › Abbildung 3 | **neu** → P4-F-4 |
+| «Du bist wie alle anderen.» | `verstehen` › Abbildung 3 | gekürzt aus dem Bestand: «Du bist genau wie alle anderen.» (`wenn-worte-treffen.md` Z. 47, dort als Vorwurf an Angehörige mit Antwortvorschlag) → P4-F-4 |
+| «… oder ganz andere Erfahrungen» (Wort im Eisberg) | `verstehen` › Abbildung 1 | Bestand: `materialien--text--eisberg.md` Z. 91 |
+| Wörter «Rückzug», «Anspannung» im Eisberg | `verstehen` › Abbildung 1 | vor 1e im Text; das Handout nennt «Stress» statt «Anspannung» und kein «Rückzug» (Z. 15). Sachlich gedeckt durch den Begriffsentscheid W2-5 |
+| «Was trägt unsere Beziehung – und wann gelingt der Kontakt?» | `beziehungen` › `verbindung` | umformuliert aus `verstehen--beziehungen.md` Z. 70 |
+| «Wie hast du meine Absage verstanden?» | `beziehungen` › Abbildung 1, Ansatzpunkt | **neu** (1e) → P4-F-8 |
+| «Ich bin bei der Arbeit. Ich melde mich heute Abend.» | `beziehungen` › `verstaerker`, Station 2 | **neu** (1e) → P4-F-8 |
+| «Vorhin warst du plötzlich weit weg. Wie war das für dich?» | `verstaerker`, Station 4 | **neu** (1e) → P4-F-8 |
+| «Ich habe den Eindruck, du bist enttäuscht von mir. Stimmt das?» | `zwei-sichten` | **neu** (1e) → P4-F-8 |
+| Nicht in «…»: «Vielleicht wirkt die Person bei Freunden oder bei der Arbeit ruhiger als bei Ihnen.», «Das kann kränken.» | `verstaerker`, Station 5 | **neu** (1e, Abgleich b242, b243) → P4-F-8 |
+| «Ich bin da – und ich brauche einen ruhigen Ton.», «Das kann ich nicht allein tragen. Wir holen Unterstützung dazu.» | `grenzen` › `bruecke` | Bestand: `materialien--text--bruecke-gelaender.md` |
+| «Ich bin gerne für dich da – und ich kann nicht dein ganzes Netz sein. Lass uns zusammen schauen, wer dich sonst noch unterstützen kann.» | `grenzen` › `saetze` | erster Satz Bestand (`grenzen.md` Z. 396); zweiter Satz **neu**, im Bestand «Dafür brauchen wir gemeinsam andere Unterstützung.» → P4-F-8 |
+| «Ich brauche jetzt Abstand. Ob und wann wir weiterreden, kläre ich später.» | `grenzen` › `konsequenz` | Bestand: `materialien--text--beispiel-dialog.md` |
+
+#### A4 · Offener Prüfbedarf aus früheren Runden
+
+| Punkt | Stand | Beleg |
+| --- | --- | --- |
+| F-V-05 Schleife ohne Modellgrenzen, «kann» und «wird» gemischt | teilweise erledigt, Rest neu zu fassen | Grenze steht im Kurztext: «Das Modell ist eine mögliche Erklärung, keine sichere Aussage …» (1b, 1e). Es bleibt «Was die Schwester tut, wird zum neuen Ereignis.» neben der Kernaussage mit «kann» → P4-F-17 |
+| F-V-11 Annahmen als Kastenreihe | durch Korrektur 1h erledigt (BS-3) | `verstehen` › `mythen` ist eine `dl` ohne `figure`. Der Abschnitt ist bei 360 px 3430 px hoch, jetzt als Text |
+| F-W1-11 Quellenzuordnungen | noch offen | Ursachensatz mit Quellenzeile «WHO, ICD-11 (2024); American Psychiatric Association (2024); Linehan (1993)»; Fruzzetti (2006) und Gunderson et al. (1997) auf `beziehungen`; sechs Bezugspunkte bei Abbildung 2. Neu dazu nur Quellen, die der Bestand nennt: Momentaufnahmen wie `spaltung.md`, `bruecke` wie `bruecke-gelaender.md` → P4-F-16 |
+| F-W2-02 Planbegründungen `v-vs-erleben`, `v-bz-was-hilft` | noch offen | `v-bz-was-hilft`: «Inhaltscontainer, keine Beziehung untereinander». Die Liste nennt aber «Stellen, an denen sich die Schleife unterbrechen lässt», also eine Beziehung zu Abbildung 1 → P4-F-18 |
+| F-W2-03 Beratung «vor Ort» ohne Ort | noch offen | `index` › `beratung`: «Sie findet vor Ort oder telefonisch statt» → P4-F-19 |
+| R3-W1-05 Kürzungen an Aussagen für Angehörige | noch offen | b39, b45 (Teil «eine Person «handhabt» nicht die andere»), b162, g228 weiter entfallen, Begründung jeweils Kürzung für den Richtwert → P4-F-6 |
+| R3-W1-06 Anspannung ohne professionelle Hilfe | noch offen | `anspannung`: «Bei Gefahr hat Schutz Vorrang.»; Abgleich v246, v289 → P4-F-5 |
+| Spannung «Angehörige sind nicht die Ursache» und Kindheitserfahrungen als Risikofaktor | neu zu fassen, verschärft | Seit 1f nennt `borderline` «Erfahrungen in engen Beziehungen und beim Aufwachsen» als Mitursache. Annahme 3 sagt «nicht die Ursache», Annahme 5 «können das Risiko erhöhen» → P4-F-2 |
+| R3-W1-01 bis R3-W1-04 | durch Korrektur 1c/1e erledigt | Station 4 jetzt «kann das viele Gründe haben. Ein möglicher Grund ist eine Dissoziation …»; «Es gibt keine «perfekte» Reaktion …»; «Mögliche Sicht der …»; «Was könnte die Person innerlich erleben?» |
+| BS-5 zweiter Teil (eigene Anspannung als zweite Linie) | noch offen | Kurztext «Das gilt für die andere Person und auch für Sie.», im Bild eine Linie → P4-F-20 |
+| Skizzen im Stamm | erledigt | laut Nachtrag mit Merge `56f5438` entfernt; `ls` im Stamm: keine `skizze-*.png` |
+
+#### Prüfbedarf für die Fachstelle
+
+Nach Wichtigkeit sortiert. Jede Frage lässt sich mit Ja oder Nein oder mit einer Auswahl beantworten. Die Varianten halten den Bestand, wo es einen gibt.
+
+1. **P4-F-1 · Absicht.** `verstehen` › `bewertungen`: «Das geschieht ohne Absicht.» Der Bestand sagt nur, das Bild beschreibe «keine Absicht» (`spaltung.md`; `verstehen.md` Z. 349). Soll der Satz (a) so bleiben, (b) wie im Bestand abgesichert werden, etwa «Das beschreibt keine Absicht.», oder (c) entfallen?
+2. **P4-F-2 · Ursache und Angehörige.** `verstehen` sagt dreierlei:
+   - `borderline`: «Mehrere Dinge wirken zusammen: … Erfahrungen in engen Beziehungen und beim Aufwachsen …»
+   - Annahme 3: «Angehörige sind nicht die Ursache der Erkrankung …»
+   - Annahme 5: «Solche Erfahrungen können das Risiko erhöhen.»
+   
+   Eltern können das als Widerspruch lesen. Soll (a) alles so bleiben, (b) Annahme 3 den Bestandssatz wieder aufnehmen («… keine Aufteilung von Verantwortung für die Erkrankung», v119), oder (c) die Fachstelle einen Satz vorgeben, der beides verbindet?
+3. **P4-F-3 · Verantwortung für den Verlauf.** Die Seiten sagen Verschiedenes:
+   - `beziehungen` › `verantwortung`: «… nicht allein verantwortlich für den Verlauf oder die Beziehung»
+   - `index` › `haltung`: «Sie sind nicht für die Genesung eines anderen Menschen verantwortlich.»
+   - `verstehen` › Annahme 3: «… nicht für die Genesung verantwortlich.»
+   
+   «Nicht allein» kann eine Mitverantwortung für den Krankheitsverlauf nahelegen. Soll es heissen (a) wie bisher, (b) «nicht verantwortlich für den Verlauf der Erkrankung und nicht allein für die Beziehung», oder (c) anders?
+4. **P4-F-4 · Sätze in «Momentaufnahmen».** «Du bist die Einzige, die mich versteht.» ist neu. «Du bist wie alle anderen.» ist aus einem anderen Handout gekürzt (dort ein Vorwurf an Angehörige). Die Figur sagt nicht, wer spricht, und engt die Aussage auf Bewertungen der Angehörigen ein; das Handout meint Bewertungen allgemein. Werden (a) beide Sätze so freigegeben, (b) mit dem Bestandswortlaut «Du bist genau wie alle anderen.», (c) mit Angabe, wer spricht, oder (d) andere Sätze?
+5. **P4-F-5 · Professionelle Hilfe bei Anspannung** (R3-W1-06). `anspannung`: «Bei Gefahr hat Schutz Vorrang.» Das Handout sagt: «Bei Gefahr haben Abstand, Schutz und professionelle Hilfe Vorrang.» Soll der Handout-Wortlaut stehen (Ja/Nein)?
+6. **P4-F-6 · Gekürzte Aussagen für Angehörige.** Gekürzt wurde für den Richtwert, der seit 1c nicht mehr gilt. Betroffen sind R3-W1-05 und die 24 Zeilen «Prüfbedarf» im Abgleich (Liste in A2). Darunter:
+   - «Wenn Angehörige … dauerhaft verfügbar bleiben, kann das kurzfristig entlasten und zugleich die eigene Belastung erhöhen.» (b162)
+   - «keine einzelne Bezugsperson kann Sicherheit allein gewährleisten» (b163)
+   - «etwa bei Angst, Abhängigkeit oder fehlender Unterstützung» (g228)
+   - «Der Wunsch nach Kontakt oder Abstand darf sich verändern.» (v330)
+   
+   Sollen (a) alle, (b) nur b162, b163 und g228, oder (c) keine wieder aufgenommen werden?
+7. **P4-F-7 · Stelle 4 der Anspannungskurve.** «Es wird wieder ruhiger.» ist neu und klingt wie eine sichere Aussage über den Verlauf. Der Kurztext sagt «kann … wieder sinken». Das Beispiel «Ich lasse dir Raum …» steht im Handout bei «Rückzug». Soll (a) «Es wird wieder ruhiger.» bleiben, oder (b) «Es kann wieder ruhiger werden.» stehen? Bleibt das Beispiel bei Stelle 4 (Ja/Nein)?
+8. **P4-F-8 · Neue Beispielsätze aus 1e und 1f** (Liste in A3, 7 Stellen ohne Bestand). Die Fachstelle hat `beziehungen` nach 1e gelesen («es ist gut», 1F). Werden die Sätze damit ausdrücklich freigegeben (Ja/Nein, je Satz)?
+9. **P4-F-9 · Wortstellung im Suizid-Absatz.** `verstehen` › `mythen`: «Bleiben Sie nur bei der Person, soweit dies für Sie sicher möglich ist.» Man kann «nur bei der Person» lesen. Soll es heissen «Bleiben Sie bei der Person nur, soweit dies für Sie sicher möglich ist.»? Die Bedeutung bleibt gleich (Entscheid F-W1-02 «mit nur»). Ja/Nein.
+10. **P4-F-10 · Vorhersage aus der Diagnose.** `erleben`: «Das ist nicht bei allen Menschen mit Borderline so.» Soll «und lässt sich aus der Diagnose nicht vorhersagen» (v17) wieder dazu (Ja/Nein)?
+11. **P4-F-11 · Grenze ohne Zustimmung.** Soll «Eine Grenze gilt auch ohne Zustimmung der anderen Person» (g627) auf `grenzen` › `konsequenz` stehen (Ja/Nein)?
+12. **P4-F-12 · «nur noch».** `anspannung`: «… zählt für einen Menschen oft nur noch der Schmerz oder Streit im Moment.» Bestand: «verengt sich das Erleben häufig stark auf …». Bleibt «nur noch» (Ja/Nein)?
+13. **P4-F-13 · Grenzen des Eisberg-Bildes.** Vertiefung: «Der Eisberg ist ein Bild dafür, was man von aussen sieht …». Soll (a) der Wortlaut bleiben, oder (b) der Bestandssatz stehen: «Das Eisberg-Bild ist eine mögliche Verständnishilfe, keine Aussage darüber, was in einer konkreten Person sicher «darunterliegt».»?
+14. **P4-F-14 · Eisberg schmal.** Unter 800 px steht die Zeichnung ohne Wörter, darunter die Listen «Sichtbar» und «Darunter möglich». Das widerspricht Prüfpunkt 16 («keine Liste, die Bildteile übersetzt»), entspricht aber dem Auftrag 1H. Bleibt es so (Ja/Nein)?
+15. **P4-F-15 · Frage doppelt.** «Wie ist es gerade für dich?» steht in `eisberg` im Text und wenige Zeilen später in Abbildung 1. Soll sie (a) an beiden Stellen bleiben, oder (b) nur in der Abbildung stehen?
+16. **P4-F-16 · Quellenzuordnungen** (F-W1-11). Tragen die Quellenzeilen die genannten Aussagen? Betroffen sind die Ursachen (`borderline`), Fruzzetti und Gunderson auf `beziehungen` und die sechs Bezugspunkte der Anspannungskurve. Je Ja/Nein.
+17. **P4-F-17 · «wird» in der Schleife** (F-V-05). Soll «Was die Schwester tut, wird zum neuen Ereignis.» bleiben oder «kann zum neuen Ereignis werden» heissen?
+18. **P4-F-18 · Planbegründung `v-bz-was-hilft`** (F-W2-02). Bleibt der Abschnitt Text, oder sollen die drei Unterbrechungsstellen in Abbildung 1 markiert werden?
+19. **P4-F-19 · Ort der Beratung** (F-W2-03). Soll «vor Ort» einen Ort nennen (Ja/Nein; wenn Ja, welchen)?
+20. **P4-F-20 · Eigene Anspannung als zweite Linie** (BS-5, zweiter Teil). Ja/Nein.
+21. **P4-F-21 · Fachliche Freigaben.** Offen sind die sechs Visualisierungen (`approvalStatus` «ausstehend») und zwölf Platzhalter.
+
+#### Befunde W1
+
+- **P4-W1-1 · wichtig · «Das geschieht ohne Absicht.»**
+  - **Beleg:** A1 Nr. 20.
+  - **Vorschlag:** Den Satz wie im Bestand als Aussage über das Bild fassen, nicht über die Person.
+  - **Zuständig:** Fachstelle (P4-F-1).
+- **P4-W1-2 · wichtig · Ursache und Angehörige.**
+  - **Beleg:** A1 Nr. 14, 16, 18.
+  - **Vorschlag:** Die drei Stellen in ein Verhältnis setzen.
+  - **Zuständig:** Fachstelle (P4-F-2).
+- **P4-W1-3 · wichtig · Neue Sätze in «Momentaufnahmen».**
+  - **Beleg:** A3.
+  - **Zuständig:** Fachstelle (P4-F-4).
+- **P4-W1-4 · wichtig · Kürzungen für den Richtwert ohne Grundlage.**
+  - **Beleg:** A2 b39, b162, b163; 24 Zeilen «Prüfbedarf» im Abgleich.
+  - **Zuständig:** Fachstelle (P4-F-6), danach die bauende Sitzung.
+- **P4-W1-5 · optional · Stelle 4 neu.**
+  - **Beleg:** A1 Nr. 29.
+  - **Zuständig:** Fachstelle (P4-F-7).
+- **P4-W1-6 · optional · «nur noch».**
+  - **Beleg:** A1 Nr. 13.
+  - **Zuständig:** Fachstelle (P4-F-12).
+- **P4-W1-7 · optional · «gilt auch ohne Zustimmung» fehlt.**
+  - **Beleg:** A1 Nr. 21.
+  - **Zuständig:** Fachstelle (P4-F-11).
+- **P4-W1-8 · optional · Vertiefung Eisberg.**
+  - **Beleg:** A1 Nr. 26.
+  - **Zuständig:** Fachstelle (P4-F-13).
+- **P4-W1-9 · optional · Abgleich ungenau.**
+  - **Beleg:**
+    - Bei v371 und v390 nennt die Bemerkung die entfallenen Teile nicht.
+    - g208 steht auf «entfällt», ist laut Bemerkung aber vorgemerkt; das wäre «verschoben».
+    - v138 und v146 nennen eine «Vertiefung «Quellen»», die es nicht mehr gibt.
+    - «Du bist wie alle anderen.» ist ohne Bestandszeile geführt.
+  - **Vorschlag:** Die Bemerkungen nachführen; den Satz auf `wenn-worte-treffen.md` beziehen.
+  - **Zuständig:** bauende Sitzung.
+
+### Teil B · W2 Gesamtkohärenz
+
+**Begriffe** (Zählung im sichtbaren Text von `main`, je `index` / `verstehen` / `beziehungen` / `grenzen`):
+
+- **Anspannung:** einheitlich (1 / 18 / 2 / 1). «Stress» kommt nur im Quellentitel «WHO, Stress: Questions and answers» vor. «Alarm» und «Überflutung» kommen nicht vor. F-W2-01 ist erledigt.
+- **Grenze:** einheitlich.
+- **Betroffene Person:** Die Rolle heisst je nach Stelle «betroffene Person» (Schleife, Zwei Sichten), «die andere Person» (`verstehen` Abbildung 2, `grenzen`) oder «die Person». Wo Lesende direkt angesprochen werden, ist «die andere Person» verständlich. Kein Befund.
+- **Pause:** zwei Bedeutungen, siehe P4-W2-2.
+
+**Widersprüche:** einer, P4-W2-1. Schutz vor Gespräch ist überall gleich formuliert: «Bei Gefahr hat Schutz Vorrang.» (`verstehen`) und «Bei Bedrohung oder Gewalt geht Schutz vor jedem Gespräch» (`grenzen`).
+
+**Wiederholungen:**
+
+- Die Frage «Wie ist es gerade für dich?» steht zweimal im selben Abschnitt (P4-W2-3).
+- Den Beratungsabsatz gibt es nur auf `index`; die anderen Seiten verlinken ihn (`index.html#beratung`, zweimal). W2-4 der ersten Runde ist erledigt.
+
+**Wegweiser und Navigation:**
+
+- Die Hauptnavigation «Verstehen · Beziehungen · Grenzen» ist auf allen vier Seiten gleich, mit `aria-current`.
+- Jede Inhaltsseite hat einen Wegweiser «Auf dieser Seite»; alle Anker existieren.
+- Die drei Einstiege auf `index` passen zu den Seiten.
+
+**Verweise zwischen den Seiten:** Alle Ziele und Anker existieren.
+
+- `verstehen` verweist auf `beziehungen` und `grenzen`.
+- `beziehungen` verweist auf `verstehen#anspannung`, `verstehen#bewertungen`, `grenzen#gewalt` und `index#beratung`.
+- `grenzen` verweist nur auf `index#beratung` (P4-W2-4).
+
+**Entwurfsseiten:**
+
+- Keine der 12 Entwurfsseiten (einschliesslich `gate.html`) ist von den vier Seiten aus verlinkt; geprüft wurden alle `a[href]`.
+- Sie haben kein `noindex`. `tools/export.mjs` exportiert laut Code aber nur Seiten mit `status: "published"`; im Arbeitsordner sind sie nur über die direkte Adresse erreichbar. Kein Befund für diese Etappe; für W3 vormerken.
+- Der Platzhalter auf `index` («Entwurf · Platzhalter Weitere Einstiege folgen …») ist sichtbar als Entwurf markiert. Das Produktionsgate blockiert ihn.
+
+**Befunde W2**
+
+- **P4-W2-1 · wichtig · Verantwortung für den Verlauf.**
+  - **Beleg:** `beziehungen` › `verantwortung`: «nicht allein verantwortlich für den Verlauf oder die Beziehung». Dagegen `index` › `haltung`: «Sie sind nicht für die Genesung eines anderen Menschen verantwortlich.» und `verstehen` › Annahme 3.
+  - **Vorschlag:** Die Fachstelle entscheidet über die Abgrenzung von Krankheitsverlauf und Beziehung.
+  - **Zuständig:** Fachstelle (P4-F-3).
+- **P4-W2-2 · optional · «Pause» in zwei Bedeutungen.**
+  - **Beleg:** Gesprächspause (`verstehen` Abbildung 2; `grenzen` › `konsequenz` «eine Pause») neben Kontaktpause (`grenzen` › `kontakt` «eine vereinbarte Pause», `index` «Kontaktpausen»). Mehrdeutig ist `grenzen` › `bruecke`: «Absprachen, Pausen, …».
+  - **Vorschlag:** Wo beides gemeint sein kann, «Gesprächspause» oder «Kontaktpause» schreiben.
+  - **Zuständig:** bauende Sitzung, nach Freigabe des Wortlauts.
+- **P4-W2-3 · optional · Frage doppelt.**
+  - **Beleg:** `verstehen` › `eisberg`, Abschnittstext und Abbildung 1.
+  - **Zuständig:** Fachstelle (P4-F-15).
+- **P4-W2-4 · optional · `grenzen` ohne Rückverweis.**
+  - **Beleg:** `grenzen` nennt Pause, ruhige Situation und Anspannung (`dear`: «in einer ruhigen und sicheren Situation»), verweist aber nicht auf die Anspannungskurve oder die Schleife.
+  - **Vorschlag:** Ein Verweissatz, etwa bei `dear` auf `verstehen#anspannung`.
+  - **Zuständig:** bauende Sitzung.
+
+### Teil C · S Sprach-Review
+
+**Zählweise (eigenes Skript der Prüfsitzung, im Browser):**
+
+- **Text:** sichtbarer Text der Abschnitte in `main`, Vertiefungen geöffnet. Ohne SVG, ohne `.puk-sr` und ohne die nur schmal sichtbare Rücksprungzeile.
+- **Blöcke und Sätze:** je Blockelement (`p`, `li`, `dt`, `dd`, `h1`–`h3`, `summary`) zerlegt, mit derselben Satzregel wie `abgleich/verneinung.mjs`.
+- **Verneinung:** Satz mit «nicht», «nichts», «nie», «niemals», «niemand», «weder» oder einer Form von «kein». In Klammern die enge Zählung ohne «nie», «niemals», «niemand».
+- **Satzlänge:** nur Fliesstext (`p`, `li`, `dd`). Ohne Bezeichnungen und Kicker, ohne Quellenzeilen, ohne Beispielsätze in `.puk-say` und ohne Beschriftungen in Figuren; Kernaussage, Kurztext, Ansatzpunkt, Vertiefung und Liste der Kurve zählen mit. Wörter wie in `kennzahlen.mjs`.
+- **Handlungsteil:**
+  - eng: Der Abschnitt hat «Was Sie tun können» oder einen Ansatzpunkt für Angehörige.
+  - weit: dazu ein Beispielsatz zum Sagen, «Was hilft» oder nummerierte Handlungsschritte im Imperativ, von Hand bestimmt.
+
+| Seite | Sätze | mit Verneinung | Anteil | Fliesstext-Sätze | mittlere Satzlänge (Median) | Sätze > 25 Wörter | Abschnitte mit Handlungsteil eng / weit |
+| --- | ---: | ---: | ---: | ---: | --- | ---: | --- |
+| `index` | 24 | 3 (3) | 13 % | 16 | 11,7 (11) Wörter | 1 | 0 von 3 / 2 von 3 (`einstiege`, `beratung`) |
+| `verstehen` | 175 | 37 (37) | 21 % | 111 | 11,2 (10) | 1 | 4 von 7 / 5 von 7 (ohne `borderline`, `einordnung`) |
+| `beziehungen` | 162 | 33 (32) | 20 % | 104 | 11,1 (11) | 2 | 5 von 6 / 6 von 6 |
+| `grenzen` | 184 | 42 (41) | 23 % | 116 | 9,8 (9) | 0 | 4 von 10 / 9 von 10 (ohne `rollen`) |
+
+**Abweichung zur Zählung der bauenden Sitzung:** Die Zahl der Sätze mit Verneinung ist gleich (37 / 33 / 42). Die Gesamtzahl der Sätze ist kleiner (175 statt 183, 162 statt 169, 184 statt 195), weil hier `figcaption` und die schmale Rücksprungzeile nicht zählen.
+
+**Abschnitte mit hohem Verneinungsanteil:**
+
+- `verstehen` › `einordnung`: 5 von 11
+- `beziehungen` › `verantwortung`: 8 von 20
+- `grenzen` › `konsequenz`: 7 von 15
+
+Es sind überwiegend entlastende Sätze («… ist kein Versagen», «… heisst nicht, dass Sie etwas falsch gemacht haben»). Kein Befund; nur ein Hinweis für S nach W1.
+
+**Sätze über 25 Wörter:**
+
+- `index` › `beratung` (30 Wörter): «Die Fachstelle Angehörigenarbeit der PUK berät alle Angehörigen – …, auch wenn die betroffene Person nicht in der PUK behandelt wird und ohne ihre Vollmacht.»
+- `verstehen` › `borderline` (28): «Die Diagnose Borderline-Persönlichkeitsstörung kann unter anderem beschreiben: …»
+- `beziehungen` › Abbildung 1, Ansatzpunkt (27, mit Bezeichnung) und `zwei-sichten` (26, mit «Was Sie tun können:»): ohne die Bezeichnung unter 25 Wörtern.
+
+**Rechtschreibung:** kein «ß», keine „…“ (`grep` in den vier gebauten Seiten: 0). Der Build meldet keinen Hinweis zu Anführungszeichen.
+
+**Lesetest je Abschnitt** (Prüfperson: erschöpfte Mutter oder Partner, abends, Handy, 360 px).
+
+- a = beim ersten Lesen verstanden; b = weiss danach, was ich tun kann.
+- d (Ton) ist überall warm, erwachsen und ohne Schuldzuweisung, ausser wo vermerkt.
+- e (Absicherungen) steht nur, wo es einen Befund gibt.
+
+| Seite | Abschnitt | a | b | Stolperstellen (c) und e | Priorität |
+| --- | --- | --- | --- | --- | --- |
+| `index` | Kopf, `haltung` | ja | teils | – | – |
+| `index` | `einstiege` | ja | ja | Platzhalter «Entwurf · Platzhalter Weitere Einstiege folgen …» sichtbar | (Gate) |
+| `index` | `beratung` | ja | ja (E-Mail) | Satz mit 30 Wörtern (P4-S-6); «vor Ort» ohne Ort (P4-F-19) | optional |
+| `verstehen` | Kopf | ja | – | «… eine Krise nicht als persönliches Versagen»: wessen Versagen, bleibt offen (so im Bestand) | – |
+| `verstehen` | `erleben` | ja | ja | «Das ist nicht bei allen Menschen mit Borderline so.»: Bezug von «Das» unklar (P4-S-1); e: P4-F-10 | optional |
+| `verstehen` | `borderline` | mit Mühe | nein | 28 Wörter mit Doppelpunkt-Aufzählung; «innere Stabilität» abstrakt; Handlungsteil fehlt, für eine Begriffsklärung vertretbar | optional |
+| `verstehen` | `eisberg` | ja | ja | Frage zweimal (P4-W2-3) | optional |
+| `verstehen` | `anspannung` | ja | ja | Liste bei 360 px sehr lang (3282 px); e: «nur noch» (P4-F-12), Stelle 4 (P4-F-7) | optional |
+| `verstehen` | `bewertungen` | ja | ja | wer spricht in Abbildung 3? (P4-F-4); e: «Das geschieht ohne Absicht.» (P4-F-1) | wichtig |
+| `verstehen` | `mythen` | ja | teils (Annahme 2, Suizid) | «komplexe PTBS» nicht erklärt; «Bleiben Sie nur bei der Person …» (P4-S-2) | optional |
+| `verstehen` | `einordnung` | ja | nein (Verweis) | 5 von 11 Sätzen verneint | – |
+| `beziehungen` | `verbindung` | ja | ja | Liste mischt Stichwörter mit einem ganzen Satz (P4-S-4) | optional |
+| `beziehungen` | `schleife` | ja | ja | Ansatzpunkt mit 6 Sätzen auf dem Handy lang | – |
+| `beziehungen` | `verstaerker` | mit Mühe | ja | Titel «Spielraum zwischen Anlass und Reaktion» abstrakt; zweimal «Station 2» (R3-S-01); Links als Satzteile (P4-S-3) | optional |
+| `beziehungen` | `zwei-sichten` | ja | ja | – | – |
+| `beziehungen` | `was-hilft` | ja | ja | Listenpunkte im Infinitiv-Telegrammstil («eine Vermutung zuerst mit einer Frage prüfen») | optional |
+| `beziehungen` | `verantwortung` | ja | ja | «nicht allein verantwortlich für den Verlauf» (P4-W2-1); Link als Satzteil | wichtig |
+| `grenzen` | Kopf | ja | ja | Link «Wenn Gewalt oder Bedrohung vorkommt» als Satzteil (P4-S-3) | optional |
+| `grenzen` | `erkennen`, `arten`, `kontakt` | ja | ja | – | – |
+| `grenzen` | `bruecke` | ja | ja | «Sie zeigen, was geht und was nicht.»: «Sie» nach dem Doppelpunkt, Grenzen oder Anrede? (P4-S-5) | optional |
+| `grenzen` | `reihenfolge` | mit Mühe | ja | «emotional niedriger» (Punkt 2) neben «emotional niedrig» (Punkt 4) (P4-S-6) | optional |
+| `grenzen` | `dear` | ja | ja | «R · Verstärken»: Buchstabe aus dem englischen Kürzel, sichtbar nicht erklärt (P4-V-5) | optional |
+| `grenzen` | `saetze`, `konsequenz` | ja | ja | – | – |
+| `grenzen` | `rollen` | ja | nein | für Rollenbeschreibung vertretbar | – |
+| `grenzen` | `gewalt` | ja | ja | klar und direkt; Verweis im Text an der richtigen Stelle | – |
+
+**Befunde S**
+
+- **P4-S-1 · optional · Bezug von «Das».**
+  - **Beleg:** `verstehen` › `erleben`, Satz 3.
+  - **Vorschlag:** Subjekt nennen, etwa «Solche Erfahrungen machen nicht alle Angehörigen von Menschen mit Borderline.» Die Bedeutung bleibt; den Rest regelt P4-F-10.
+  - **Zuständig:** Fachstelle.
+- **P4-S-2 · optional · «Bleiben Sie nur bei der Person, …».**
+  - **Beleg:** `verstehen` › `mythen`.
+  - **Vorschlag:** Wortstellung nach P4-F-9.
+  - **Zuständig:** Fachstelle, weil es ein Sicherheitstext ist.
+- **P4-S-3 · optional · Links als Satzteile.**
+  - **Beleg:**
+    - `beziehungen` › `verstaerker`: «Mehr dazu auf der Seite «Verstehen»: Wenn die Anspannung steigt und Wenn Bewertungen einseitiger werden.» Das liest sich wie ein Nebensatz.
+    - `grenzen` › Kopf: «…: Wenn Gewalt oder Bedrohung vorkommt.»
+    - `beziehungen` › `verantwortung`.
+  - **Vorschlag:** Den Abschnittstitel als Titel kenntlich machen, etwa «im Abschnitt «Wenn die Anspannung steigt»».
+  - **Zuständig:** bauende Sitzung.
+- **P4-S-4 · optional · Liste in `verbindung`.**
+  - **Beleg:** Drei Stichwörter und ein ganzer Satz unter «Was eine Beziehung tragen kann:».
+  - **Vorschlag:** Den vierten Punkt als Stichwort fassen, etwa «dass beide zu Nähe, Klärung und Veränderung beitragen können».
+  - **Zuständig:** bauende Sitzung nach Freigabe.
+- **P4-S-5 · optional · «Sie zeigen …» nach Doppelpunkt.**
+  - **Beleg:** `grenzen` › `bruecke`.
+  - **Vorschlag:** «Grenzen können Kontakt auf ähnliche Weise schützen, denn sie zeigen, was geht und was nicht.»
+  - **Zuständig:** bauende Sitzung.
+- **P4-S-6 · optional · Einzelstellen.**
+  - **Beleg:** «emotional niedriger» / «emotional niedrig» (`reihenfolge`); Satz mit 30 Wörtern in `index` › `beratung`.
+  - **Vorschlag:** Einheitlich «emotional niedriger»; den Beratungssatz nach der Aufzählung teilen.
+  - **Zuständig:** bauende Sitzung (Beratungstext: Wortlaut der Fachstelle, deshalb Fachstelle).
+
+### Teil D · Visualisierungs-Check je Figur
+
+Bildschirmfotos aller sechs Figuren bei 1280 und 360 px, im Theme Standard und «kontrast», angesehen. Die Figurhöhen bei 1280 / 360 px:
+
+| Figur | 1280 px | 360 px |
+| --- | ---: | ---: |
+| Eisberg | 830 | 1071 |
+| Kurve | 1773 | 3282 |
+| Momentaufnahmen | 827 | 848 |
+| Schleife | 1266 | 1920 |
+| Zwei Sichten | 1106 | 2359 |
+| DEAR | 854 | 1791 |
+
+E = erfüllt · T = teilweise · N = nicht erfüllt · – = nicht anwendbar.
+
+| Nr. | Prüfpunkt | Eisberg | Kurve | Momentaufnahmen | Schleife | Zwei Sichten | DEAR |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | Plan liegt vor, Seite entspricht ihm | E | **T** | **T** | E | E | E |
+| 2 | Zeile je Abschnitt; Begründungen passen | E | E | E | T | E | E |
+| 3 | Prüffrage beantwortet und eingelöst | E | E | E | E | E | E |
+| 4 | Kernaussage und Erklärtext | E | E | E | E | E | E |
+| 5 | Ansatzpunkt (B, C, G) | – | E | – | E | – | E |
+| 6 | Mechanismus nicht doppelt | E | E | E | T | E | E |
+| 7 | Kartenraster-Check | E | E | E | E | E | E |
+| 8 | Form und Linien tragen Bedeutung | E | E | **T** | E | **T** | T |
+| 9 | Verteilt, keine Textwand | E | T | E | E | E | E |
+| 10 | Nicht verfälscht; Grenzen; Kennzeichnung | E | **T** | **T** | E | E | E |
+| 11 | Ohne Aufklappen und Skript verständlich | E | E | E | E | E | E |
+| 12 | 320 px lesbar; Textalternative | E | E | E | E | E | E |
+| 13 | Theme «Hoher Kontrast» | E | E | E | E | E | E |
+| 14 | Fachlich freigegeben | N | N | N | N | N | N |
+| 15 | Bildsprache passt; Wirkung eingelöst | E | E | **T** | T | E | T |
+| 16 | Metapher ohne Code | T | E | E | – | – | T |
+| 17 | Keine ungewollten Bedeutungen | T | E | E | E | E | E |
+
+**Abweichungen von der Selbstprüfung** (fett): Punkt 1 bei Kurve und Momentaufnahmen, Punkt 8 bei Momentaufnahmen und Zwei Sichten, Punkt 10 bei Kurve und Momentaufnahmen, Punkt 15 bei Momentaufnahmen. Bei Punkt 16 sind Schleife und Zwei Sichten Modelle, keine Metaphern («–» statt «E»).
+
+**Belege je T und N**
+
+- **Eisberg:**
+  - **16 T:** Bei 360 px ist die Zeichnung 278 × 146 px gross und ohne Wörter. Darunter übersetzen die Listen «Sichtbar» und «Darunter möglich» die Bildteile oben und unten (Bildschirmfoto 360). Das entspricht dem Auftrag 1H (P4-F-14).
+  - **17 T:** Kälte und Gefahr bleiben im Motiv; die Fachstelle hat das Motiv am 10.10.2026 bestätigt.
+  - **14 N:** `approvalStatus` «ausstehend».
+- **Kurve:**
+  - **1 T:** `visualPlan` › `v-vs-anspannung` › `statement` nennt «4 «Später»». Auf der Seite steht «Es wird wieder ruhiger.» (P4-V-1).
+  - **9 T:** 3282 px hoch bei 360 px. Die Liste ist eingerückt; der Text steht in 21 px in einer schmalen Spalte (Bildschirmfoto 360, Teil 1).
+  - **10 T:** Stelle 4 «Es wird wieder ruhiger.» ist kategorisch, der Kurztext sagt «kann … wieder sinken» (P4-F-7).
+- **Momentaufnahmen:**
+  - **1 T:** Der Plan ist teilweise vom Pendel übrig geblieben:
+    - `goal`: «… weiter ausschlagen und zurückschwingen können»
+    - `source`: «Eigene didaktische Pendel-Darstellung …» (P4-V-1)
+  - **8 T:** Das «sehr dunkle» Foto ist hellblau gefüllt, mit weisser Wolke. Hell und dunkel unterscheiden sich vor allem durch Sonne und Wolke, kaum durch die Helligkeit (Bildschirmfoto 1280; P4-V-2).
+  - **10 T:** Die Sätze engen die Aussage auf Bewertungen der Angehörigen ein; wer spricht, steht nirgends (P4-F-4).
+  - **15 T:** Die Wirkung «Ein harter Satz in einem schwierigen Moment ist nicht unser ganzes Album» trägt nur, wenn klar ist, dass die betroffene Person zur angehörigen Person spricht.
+- **Schleife:**
+  - **2 T, 6 T:** F-W2-02 (P4-F-18): Liste «an mehreren Stellen unterbrechen» neben der Figur.
+  - **15 T:** fünf Rechtecke mit Pfeilen, wirkt wie ein Ablaufschema. `radius-md` (4 px) ist bei 1280 px kaum als weiche Ecke sichtbar (Bildschirmfoto; P4-V-4).
+- **Zwei Sichten:**
+  - **8 T:** Beide Sichten haben dieselbe Kastenform und Oberkante. Der Unterschied steht nur in Lage und grauer Bezeichnung. Bei 360 px stehen acht gleiche Kästen untereinander (2359 px), der Vergleich ist nur über die Bezeichnung lesbar. Optional, weil die Bezeichnung trägt.
+- **DEAR:**
+  - **8 T, 15 T:** vier gefüllte Punkte auf einer Linie (P-6), wie eine Schrittanzeige. Die Ziffern «1» bis «4» stehen klein (13 px) unter den Punkten statt in ihnen (Bildschirmfoto 1280).
+  - **16 T:** «R · Verstärken» und «A · Anliegen nennen»: Die Buchstaben stammen aus dem englischen DEAR. Die Herkunft steht nur in der Vertiefung (P4-V-5).
+
+**B1–B6 nur für Figuren, die sich seit dem Bildsprache-Audit geändert haben**
+
+| Figur | B1 erster Eindruck | B2 Erleben der Angehörigen | B3 Wirkung eingelöst | B4 Ton | B5 Bild nötig? | B6 Freundin-Test |
+| --- | --- | --- | --- | --- | --- | --- |
+| Eisberg (neu) | ruhig, weich; der Unterteil wirkt eher wie ein Tropfen als wie Eis | ja, über die Frage «Wie ist es gerade für dich?»; sie steht ohne Person rechts oben | breit ja; schmal nur über die Listen | würdevoll | ja (Sichtbar/Verborgen als Raum) | eher ja, breit |
+| Kurve, Stelle 4 | ruhig, nachvollziehbar | ja, Sätze aus dem Erleben | ja | warm | ja | ja |
+| Momentaufnahmen (neu) | freundlich, alltagsnah, ruhig | ja: Sätze, die Angehörige hören; Sprecher offen | teilweise (siehe 15) | warm, nicht verniedlichend | ja | ja, wenn klar ist, wer spricht |
+| Schleife (drei Zeilen, 4-px-Radius) | geordnet, wie ein Ablaufschema | ja, «Schwester» oben in Lesegrösse | ja | sachlich | ja | eher ja |
+| Zwei Sichten (gleiche Oberkante) | ruhig, gleichwertig | ja, stärkste Sätze der Website | ja | warm | ja | ja |
+| DEAR (Nummern) | ordentlich, belehrend; weiter Schrittanzeige | Beispielsätze alltagsnah | ja | sachlich | knapp; eine nummerierte Liste trüge gleich | eher nein |
+
+**Befunde Visualisierungs-Check**
+
+- **P4-V-1 · wichtig · Visualisierungsplan veraltet.**
+  - **Beleg:**
+    - `site.config.json` › `v-vs-anspannung` › `statement`: «4 «Später»».
+    - `v-vs-bewertungen` › `goal`: «weiter ausschlagen und zurückschwingen».
+    - `v-vs-bewertungen` › `source`: «Eigene didaktische Pendel-Darstellung».
+    - Die Selbstprüfung setzt bei Punkt 1 überall E.
+  - **Gewicht:** Die fachliche Freigabe der Fachstelle bezieht sich auf die Planzeile.
+  - **Vorschlag:** Die drei Felder an die Seite angleichen, ohne Inhalt zu ändern.
+  - **Zuständig:** bauende Sitzung.
+- **P4-V-2 · optional · «sehr dunkel» nicht sichtbar.**
+  - **Beleg:** Momentaufnahmen, rechtes Foto in `puk-blue-25`.
+  - **Vorschlag:** Das dunkle Foto mit der einen erlaubten Akzentfläche (`__accent`) zeichnen.
+  - **Zuständig:** Fachstelle (Skizze freigegeben), danach die bauende Sitzung.
+- **P4-V-3 · optional · Eisberg schmal.**
+  - **Beleg:** Punkt 16.
+  - **Zuständig:** Fachstelle (P4-F-14).
+- **P4-V-4 · optional · Ecken der Schleife.**
+  - **Beleg:** `radius-md` mit 4 px wirkt eckig; BS-4 Variante B wollte «weiche Ecken».
+  - **Vorschlag:** einen grösseren Radius-Token des Profils, falls vorhanden; sonst Profilthema.
+  - **Zuständig:** bauende Sitzung oder Profil.
+- **P4-V-5 · optional · DEAR.**
+  - **Beleg:** Ziffern unter den Punkten; englische Kürzel ohne sichtbare Erklärung.
+  - **Vorschlag:** die Ziffer im Punkt; im Kurztext ein Satz, woher die Buchstaben kommen (Wortlaut aus der Vertiefung).
+  - **Zuständig:** bauende Sitzung, Fachstelle für den Wortlaut.
+- **P4-V-6 · optional · Schrifthierarchie und Länge der Kurve** (R3-V-04 weiter offen).
+  - **Beleg:** Listentext 21 px, Kurztext etwa 15 px; 3282 px bei 360 px.
+  - **Vorschlag:** schmal ohne Einzug; Hierarchie im Profil klären.
+  - **Zuständig:** Profil, bauende Sitzung.
+
+### Teil E · Bedienung und Barrierefreiheit (automatisiert)
+
+Chromium über Playwright, lokal. Alle Werte sind selbst gemessen.
+
+- **Überlauf** (`scrollWidth − innerWidth`): 0 px auf allen vier Seiten.
+  - Breiten: 320, 360, 768, 1280 und 1440 px.
+  - 200 %: 640 px Breite bei Faktor 2 und 1280 px mit Schriftgrösse 200 %.
+  - Theme «kontrast»: bei 360 und 1280 px.
+  - Kein `overflow-x:hidden` auf `html` oder `body`, das einen Überlauf verstecken könnte.
+- **Tastatur** (1280 px):
+  - Tabstopps bis zur Fusszeile: 10 / 18 / 16 / 20.
+  - Fokus sichtbar bei allen Stopps (`box-shadow`, 2 px weiss und 4 px Blau).
+  - Reihenfolge gleich der DOM-Reihenfolge; erster Stopp «Zum Hauptinhalt».
+  - Alle vier Vertiefungen per Tab erreichbar. Enter und Leertaste öffnen und schliessen.
+  - Die Fusszeile hat keinen fokussierbaren Link (Profilthema B-4 der ersten Runde, kein neuer Befund).
+- **Kontrast** (WCAG 1.4.3):
+  - **Umfang:** aller sichtbare Text in `main`, mit geöffneten Vertiefungen, je Seite bei 1280 und 360 px und in beiden Themes. Bei Text über SVG zählt die Füllung der Form unter dem Text.
+  - **Ergebnis:** kein Wert unter 4,5:1.
+  - **Tiefster Wert Standard:** 4,71:1 (Kicker, 14 px, Blau auf Weiss).
+  - **Tiefster Wert «kontrast»:** 7,65:1.
+  - Einzelwerte:
+
+  | Text | Hintergrund | Standard | «kontrast» |
+  | --- | --- | ---: | ---: |
+  | Eisberg, alle zehn Wörter einschliesslich «… oder ganz andere Erfahrungen», 1280 px | weisse Eisbergfläche (an allen fünf Messpunkten je Wort; kein Wort liegt auf dem Hellblau) | 15,91 | 15,91 |
+  | dieselben Wörter, 360 px (als Liste) | #F7F7F7 | 14,85 | 14,85 |
+  | Frage «Wie ist es gerade für dich?» | #F7F7F7 | 14,85 | 14,85 |
+  | Sätze der Szene «Momentaufnahmen» | Weiss | 15,91 | 15,91 |
+  | Beschriftungen der Kurve | – | 14,85 | 14,85 |
+  | Stationstexte der Schleife | – | 15,91 | 15,91 |
+  | `summary` | – | 5,94 bzw. 6,37 | 11,84 bzw. 12,68 |
+  | «Beispiel» (`.puk-say__label`) | – | 5,52 | 7,65 |
+  | Bezeichnungen der Zwei Sichten | – | 5,92 | 8,19 |
+
+  Hellblau unter Text (#D8E0FF) wäre rechnerisch etwa 12:1, kommt aber nicht vor.
+- **Eisberg-Geometrie:**
+  - Bei 1440, 1280, 1024 und 900 px liegen alle vier Ecken jedes Worts in der Eisbergform (`isPointInFill`).
+  - Die Zonen stimmen: die oberen Wörter über der Wasserlinie, die unteren darunter. Kleinster Abstand zur Wasserlinie: 20 Einheiten («Lautwerden», «Rückzug»).
+- **Pfeile der Schleife:** Die Spitzen enden 8,3 bis 35,3 px vor dem Zielkasten (1440, 1280, 768 px). R3-V-01 ist erledigt.
+- **Reduzierte Bewegung:** keine CSS-Animation. Beim Laden entstehen nur Übergänge von 0,01 ms aus der globalen Regel in `bundle.css`; nicht wahrnehmbar, kein Befund.
+- **Theme «kontrast»:** Linien und Punkte werden dunkelblau, Text bleibt lesbar (Bildschirmfotos aller sechs Figuren). Keine festen Farben in SVG (Teil F).
+- **Nicht prüfbar:**
+  - reale Screenreader-Läufe (z. B. VoiceOver mit Safari, NVDA mit Firefox), Hardwaretastatur und Touch: Sie brauchen eine Person (Stufe 5). Sie sind **nicht** bestanden, sondern offen.
+  - Kontrast von Fokusringen und Nicht-Text-Elementen (WCAG 1.4.11): nicht gemessen.
+
+### Teil F · Technik und Zuständigkeit (Stichprobe)
+
+| Prüfung | Ergebnis (selbst ausgeführt am Stand `f32c255`) |
+| --- | --- |
+| `node tools/build.mjs` | 15 Seiten, Build r4-7, Gate draft: **0 blockierend, 20 Hinweise**: 6 × `visual-approval`, 12 × `placeholder-approval`, 1 × `site-url`, 1 × `review-report`. `git status` danach ohne Änderung: Der Build verändert keine gebauten Dateien |
+| `node tools/gate.mjs --selftest` | **53/53 bestanden** |
+| `node tools/gate.mjs --production` | blockiert erwartungsgemäss mit **19 Befunden**: 6 × `visual-approval` (alle sechs Figuren), 12 × `placeholder-approval` (`index` › Einstiege und 11 Entwurfsseiten), 1 × `review-report` (offen: W1, W2, S, Visualisierungs-Check, Bedienung, W3, R1, R2, R3); dazu 1 Hinweis `site-url` |
+| `node abgleich/pruefe-abgleich.mjs` | **1763 Zeilen, 0 ohne Fundstelle** |
+| `node abgleich/kennzahlen.mjs` | Wörter 238 / 1602 / 1564 / 1601; Absicherungen je 100 Wörter 1,68 / 3,00 / 4,48 / 2,62; Semikolons 0 / 0 / 1 / 0 |
+| `node abgleich/verneinung.mjs` | 3 von 24 / 37 von 183 / 33 von 169 / 42 von 195 |
+| `abgleich/bedienung.mjs` | Tabstopps 10 / 18 / 16 / 20; Höhe bei 360 px 3863 / 16 071 / 15 199 / 16 500 px; höchste Figur Kurve 3282, Zwei Sichten 2359, DEAR 1791 px |
+
+**Kennzahlen der bauenden Sitzung:** Nachgerechnet und **bestätigt**, ohne Abweichung:
+
+- Wörter, Absicherungen und Semikolons
+- Sätze mit Verneinung
+- Tabstopps, Seitenhöhen und Figurhöhen bei 360 px (Eisberg 1071, Momentaufnahmen 848, Schleife 1920 px)
+- Pfeilabstände («8 bis 35 px»)
+- Selbsttest, Produktionsgate und Abgleich
+
+R3-K-01 (Seitenhöhen nicht reproduzierbar) ist damit erledigt. Die eigene Satzzählung aus Teil C weicht nur in der Gesamtzahl der Sätze ab (Zählweise dort).
+
+**Zuständigkeit und Krisenzugang** (alle 16 gebauten HTML-Dateien):
+
+- `tel:`-Links: 0.
+- Telefonnummern im sichtbaren Text: 0. Gesucht wurden Muster wie «0xx xxx xx xx», «+41», «0800» sowie 143, 144, 147, 117 und 112.
+- Kein Notfallblock.
+- **Verweis im Text:** je einmal auf `verstehen` (`mythen`, direkt nach «… fragen Sie ruhig und direkt, ob die Person Suizidgedanken oder einen Plan hat. Das kann helfen, die Lage zu verstehen.»), `beziehungen` (`verantwortung`, nach dem Satz zu Suizidgedanken und Selbstverletzung) und `grenzen` (`gewalt`, Schritt 2, nach «Bringen Sie sich in Sicherheit und holen Sie Hilfe.»).
+  - Er steht nur über den Platzhalter `<p data-responsibility-inline></p>` in `content/`; gefüllt mit dem Wortlaut aus `responsibility.inline`.
+  - Nie in `figure` oder `details`; höchstens einer je Abschnitt; nur auf Seiten mit `sensitiveTopics`.
+  - Auf `index` und den Entwurfsseiten: 0.
+- **Technik:**
+  - `style`-Attribute: 0.
+  - Hexwerte oder `rgb(` in SVG: 0.
+  - `borderline.css` hat keine freien `2px` mehr; R3-B-01 ist erledigt.
+- **Hinweis für W3:** Entwurfsseiten ohne `noindex`; der Export lässt sie laut `tools/export.mjs` weg.
+
+### Bericht und Abgleich
+
+- **P4-K-1 · Berichtigung · R3-K-02 war falsch.** Die dritte Runde meldete «`abgleich/kennzahlen.mjs` fehlt im Repository». Die Datei war vorhanden: angelegt mit Commit `242a74b`, dem Stand, den die dritte Runde geprüft hat. Die Prüfung hatte sie nicht geladen. Der Befund entfällt; der Text der dritten Runde bleibt unverändert.
+- **Weitere Befunde früherer Runden:**
+  - R3-K-03 ist erledigt: Die Zeilen Z. 277–396 stehen als Nr. 474–540 im Abgleich.
+  - R3-K-05 ist teilweise erledigt; der Rest steht in P4-V-1.
+
+### Zählung der Befunde der vierten Runde
+
+| Stufe | kritisch | wichtig | optional |
+| --- | ---: | ---: | ---: |
+| W1 | 0 | 4 | 5 |
+| W2 | 0 | 1 | 3 |
+| S | 0 | 0 | 6 |
+| Visualisierungs-Check | 0 | 1 | 5 |
+| Bedienung und Barrierefreiheit | 0 | 0 | 0 |
+| Technik und Zuständigkeit (Stichprobe) | 0 | 0 | 0 |
+
+Dazu P4-K-1 (Berichtigung) und 21 Fragen an die Fachstelle (P4-F-1 bis P4-F-21).
+
+**Gesamturteil:** Etappe 1 ist bereit, der Fachstelle zur fachlichen Durchsicht vorgelegt zu werden. Freigabereif ist sie noch nicht. Technik, Barrierefreiheit (automatisiert), Zuständigkeit und Kennzahlen sind ohne Befund. Vor der Freigabe muss die Fachstelle vier Fragen entscheiden: P4-F-1 bis P4-F-4. Ausserdem muss die bauende Sitzung den Visualisierungsplan angleichen (P4-V-1). Danach folgen S, die Screenreader-Läufe, W3 und R1 bis R3.
 
 ## Bildsprache-Audit (10.10.2026, Stand 3f94087)
 
