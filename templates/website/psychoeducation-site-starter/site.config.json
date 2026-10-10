@@ -2,7 +2,7 @@
   "$comment": "PUK Website Kit 1.10.1-r4 · abgeleitet – Seitenvertrag des Psychoedukations-Starters. Synthetische Musterwerte. Pflichtfelder und Regeln: README.md in diesem Ordner. Nach jeder Änderung: node tools/build.mjs, danach node tools/gate.mjs (Entwurf) bzw. node tools/gate.mjs --production.",
   "kitRevision": "PUK Website Kit 1.10.1-r4 · abgeleitet",
   "canonicalSource": "PUK Zürich Design System 1.10.1 (unverändert)",
-  "assetVersion": "r4-4",
+  "assetVersion": "r4-6",
   "siteTitle": "Psychoedukation verstehen – Musterwebsite",
   "shortDescription": "Synthetische Musterwebsite mit drei psychoedukativen Referenzseiten und Seitenvorlage. Keine fachlichen Aussagen, keine realen Kontakte.",
   "language": "de-CH",
@@ -102,6 +102,7 @@
           "reason": "Ein Kreislauf ist im Fliesstext schwer zu halten.",
           "approvalStatus": "ausstehend",
           "understood": "Dass die eigene Reaktion zum neuen Anlass werden kann – eine Schleife zeigt das sofort, ein Satz nur nacheinander.",
+          "resonance": "Entlastung: Ich sehe, wie wir beide in eine Schleife geraten – und dass ich an einer Stelle anders reagieren kann.",
           "entryPoint": "Bei Station 2 «Deutung»: nachfragen, wie etwas gemeint war, bevor man antwortet (Musterinhalt)."
         },
         {
@@ -113,9 +114,10 @@
           "statement": "Metapher: zwei Formen, die sich annähern und wieder Raum lassen",
           "source": "Bildquelle offen – abstrakter Platzhalter",
           "alternative": "Alternativtext-Entwurf im Freigabeblock",
-          "reason": "Erleichtert den emotionalen Zugang; bis zur Freigabe abstrakter Platzhalter.",
+          "reason": "Erleichtert den emotionalen Zugang; bis die eigene Zeichnung fertig und fachlich freigegeben ist, steht ein abstrakter Platzhalter.",
           "approvalStatus": "ausstehend",
-          "understood": "Nähe und Abstand als Bewegung zweier Formen: ein ruhiger, nicht wertender Zugang, den Text allein schwer schafft."
+          "understood": "Nähe und Abstand als Bewegung zweier Formen: ein ruhiger, nicht wertender Zugang, den Text allein schwer schafft.",
+          "resonance": "Wiedererkennen: Nähe und Abstand dürfen sich abwechseln; beides gehört zu einer Beziehung."
         },
         {
           "id": "v-bz-sicherheit",
@@ -165,6 +167,7 @@
           "reason": "Abfolge und Option werden auf einen Blick sichtbar.",
           "approvalStatus": "ausstehend",
           "understood": "Reihenfolge und den einen optionalen Schritt auf einen Blick.",
+          "resonance": "Sicherheit: Ich weiss, was als Nächstes kommt.",
           "entryPoint": "Bei Schritt 1 «Erstes Gespräch»: eigene Fragen mitbringen (Musterinhalt; siehe Abschnitt «Eigene Fragen notieren»)."
         },
         {
@@ -178,7 +181,8 @@
           "alternative": "Beschriftete Merkmalslisten; Kurzfassung über aria-describedby",
           "reason": "Gleiche Merkmale nebeneinander sind schneller vergleichbar als zwei Absätze.",
           "approvalStatus": "ausstehend",
-          "understood": "Die Unterschiede der beiden Terminformen, weil dieselben Merkmale nebeneinanderstehen."
+          "understood": "Die Unterschiede der beiden Terminformen, weil dieselben Merkmale nebeneinanderstehen.",
+          "resonance": "Ruhe: Ich kann wählen, welche Form für uns passt."
         },
         {
           "id": "v-bh-fragen",
@@ -215,7 +219,8 @@
           "alternative": "Geordnete Liste mit Ja-/Nein-Zweigen als Text; Kurzfassung über aria-describedby",
           "reason": "Verzweigungen sind als Weg leichter zu verfolgen als im Fliesstext.",
           "approvalStatus": "ausstehend",
-          "understood": "Welcher nächste Schritt passt – zwei Fragen als Weg sind schneller zu verfolgen als Wenn-dann-Sätze."
+          "understood": "Welcher nächste Schritt passt – zwei Fragen als Weg sind schneller zu verfolgen als Wenn-dann-Sätze.",
+          "resonance": "Orientierung: Ich finde ohne langes Suchen einen nächsten Schritt."
         },
         {
           "id": "v-us-netz",
@@ -225,6 +230,7 @@
           "format": "relationship-map",
           "statement": "Nah, Umfeld, fachliche Unterstützung als Kreise um «Sie»; gestrichelt = noch nicht genutzt",
           "understood": "Dass auch weiter entfernte Personen und Stellen mittragen können – der Abstand zur Mitte macht Nähe sichtbar, eine Liste nicht.",
+          "resonance": "Entlastung: Ich trage nicht allein; es gibt mehr Menschen und Stellen, als ich gerade denke.",
           "source": "Eigene didaktische Darstellung (Muster I), Musterinhalt",
           "alternative": "Nach Kreisen gegliederte Liste mit «besteht»/«wäre möglich»; Kurzfassung über aria-describedby",
           "reason": "Beziehungen und Nähe sind räumlich schneller erfassbar als in einer Aufzählung.",

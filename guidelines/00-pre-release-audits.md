@@ -2,12 +2,12 @@
 
 Drei Prüfungen auf dem fertigen Release-Kandidaten einer Website, nach W1, W2, S, Visualisierungs-Check, Bedienung und W3 (Abschnitt «Prüfung und Freigabe»). Sie ersetzen keine dieser Stufen. Sie prüfen das Ergebnis noch einmal als Ganzes: gegen das Profil, aus Sicht der Lesenden und auf Freigabe und Auslieferung.
 
-Profilentscheid 09.10.2026. Anlass: Bei der Borderline-Website fanden die technischen und fachlichen Prüfungen vieles. Erst die Durchsicht der Fachstelle zeigte aber Figuren mit Fachbegriffen, sichtbaren Text, der nur die Zeichnung beschreibt, einen abweisend formulierten Zuständigkeitsverweis und Seiten, die vor allem sagen, was nicht gilt.
+Profilentscheid 09.10.2026. Anlass: Bei der Borderline-Website fanden die technischen und fachlichen Prüfungen vieles. Erst die Durchsicht der Fachstelle zeigte aber Figuren mit Fachbegriffen, sichtbaren Text, der nur die Zeichnung beschreibt, einen abweisend formulierten Zuständigkeitsverweis und Seiten, die vor allem sagen, was nicht gilt. Am 10.10.2026 kam die Bildsprache dazu (Teil 2 von R2): Die Abbildung «Die Brücke mit Geländer» wirkte wie ein Bauplan und war nur mit einer Liste zu entschlüsseln; keine Prüfung hatte gefragt, ob ein Bild die Lesenden anspricht.
 
 | Audit | Frage | Wann | Ergebnis |
 | --- | --- | --- | --- |
 | R1 · Profil-Audit | Entspricht die Website dem PUK Website-Profil (Marke, Farben, Schrift, Navigation, Komponenten, Zuständigkeit)? | nach W3 | Befunde, getrennt nach Website und Profil |
-| R2 · Visualisierung und Laienverständlichkeit | Erklären die Figuren? Versteht eine belastete angehörige Person Text und Bilder beim ersten Lesen und weiss sie danach, was sie tun kann? | nach W3, parallel zu R1 | Matrix je Figur, Lesetest je Abschnitt, Kennzahlen |
+| R2 · Visualisierung und Laienverständlichkeit | Erklären die Figuren, und sprechen sie die Lesenden an? Versteht eine belastete angehörige Person Text und Bilder beim ersten Lesen und weiss sie danach, was sie tun kann? | nach W3, parallel zu R1 | Matrix je Figur, Bildsprache je Figur, Lesetest je Abschnitt, Kennzahlen |
 | R3 · Freigabe-Audit | Ist alles abgeschlossen, freigegeben und richtig ausgeliefert? | unmittelbar vor der Veröffentlichung, nach R1 und R2 | «Go», «Go mit Auflagen» oder «No-Go» |
 
 ## Regeln für alle drei
@@ -130,18 +130,36 @@ Teil 1 · Visualisierungs-Check je Figur
 Fotografiere jede Figur in main bei 1280 und 360 px und im Theme «kontrast» und sieh sie an.
 Fülle die Matrix Prüfpunkt × Figur aus (E erfüllt / T teilweise / N nicht erfüllt / – nicht
 anwendbar), mit Beleg je T und N.
-  1–14  Die 14 Punkte aus Leitlinie 07, Abschnitt «Prüfung: Visualisierungs-Check».
-  15. 10-Sekunden-Test: Wird die Kernaussage beim ersten Blick auf die Zeichnung klar, ohne
+  1–17  Die 17 Punkte aus Leitlinie 07, Abschnitt «Prüfung: Visualisierungs-Check».
+  18. 10-Sekunden-Test: Wird die Kernaussage beim ersten Blick auf die Zeichnung klar, ohne
       Liste und Vertiefung?
-  16. Alltagsworte: Keine Fachbegriffe als Beschriftung (z. B. «Modus», «Regulation»,
+  19. Alltagsworte: Keine Fachbegriffe als Beschriftung (z. B. «Modus», «Regulation»,
       «Kontinuum»), oder sie sind beim ersten Auftreten erklärt.
-  17. Kein sichtbarer Text, der nur die Zeichnung beschreibt («Über der Linie vier …»,
+  20. Kein sichtbarer Text, der nur die Zeichnung beschreibt («Über der Linie vier …»,
       «durchgezogene Linie»). Die Kurzbeschreibung steht als p.puk-sr nur für Screenreader.
-  18. Kurztext und Kernaussage erklären den Inhalt, nicht die Grafik.
-  19. Formen und Linien bedeuten auf der ganzen Website dasselbe (gestrichelt, doppelt, dicker).
-  20. Der Ansatzpunkt für Angehörige ist konkret: Was genau tue ich, mit einem Beispielsatz.
+  21. Kurztext und Kernaussage erklären den Inhalt, nicht die Grafik.
+  22. Formen und Linien bedeuten auf der ganzen Website dasselbe (gestrichelt, doppelt, dicker).
+  23. Der Ansatzpunkt für Angehörige ist konkret: Was genau tue ich, mit einem Beispielsatz.
 
-Teil 2 · Lesetest je Seite
+Teil 2 · Bildsprache und Wirkung je Figur
+Grundlage: Leitlinie 00-visuelle-wissensvermittlung.md, Abschnitte «Bildsprache» und «Ein Bild,
+eine Idee». Sieh dir jede Zeichnung zuerst ohne den Text darum herum an, dann mit Text. Prüfe
+auch die geplanten Figuren (visualPlan der Entwurfsseiten, UMBAUPLAN.md).
+  B1. Erster Eindruck, fünf Sekunden, ohne Text: Was löst das Bild aus (ruhig, warm, kalt,
+      technisch, bedrohlich, belehrend, nichts)? Passt das zum Thema des Abschnitts?
+  B2. Wiedererkennen: Kommt das Erleben der Angehörigen im Bild vor, oder nur ein Modell von
+      aussen? Ist ihr Platz oder ihre Sicht im Bild erkennbar?
+  B3. Wirkung: Löst das Bild die Wirkung ein, die im Plan steht (resonance)?
+  B4. Ton: würdevoll und warm; nicht verniedlichend, nicht dramatisierend, nicht belehrend.
+  B5. Braucht es hier ein Bild? Wäre ein kurzer Text mit Beispielsatz klarer und wärmer?
+  B6. Freundin-Test: Würde eine Angehörige dieses Bild einer Freundin zeigen, um zu erklären,
+      wie es ihr geht?
+Bewertung je Figur: «trägt» / «überarbeiten» / «neues Motiv» / «durch Text ersetzen». Für
+jede Figur, die nicht trägt, ein Vorschlag in Worten, ohne Code, höchstens zwei Varianten:
+was man sieht, die Beschriftungen als Sätze, was wegfällt. Bei «durch Text ersetzen» der Kern
+in zwei bis drei Sätzen.
+
+Teil 3 · Lesetest je Seite
 Lies jede Seite ganz, Abschnitt für Abschnitt, als die Prüfperson. Beantworte je Abschnitt:
   a. Verstehe ich beim ersten Lesen, worum es geht? (ja / mit Mühe / nein)
   b. Weiss ich danach, was ich tun kann? Gibt es ein «Was Sie tun können» oder einen
@@ -159,18 +177,23 @@ Satzlänge, Anteil Abschnitte mit Handlungsteil. Nenne die Zählweise, damit man
 Regeln
 - Nur änderungsrelevante Befunde. Priorität: kritisch / wichtig / optional.
 - Jeder Vorschlag hält die fachliche Bedeutung. Fachliche Fragen als «Prüfbedarf» markieren.
+- Bildvorschläge bleiben im Profil: Profil-Tokens, Linienzeichnung oder Diagramm, keine Fotos,
+  keine generierten Personenbilder, keine Stimmungsbilder.
 - Sicherheit: Hinweise zu Schutz, Gewalt und Suizidalität stehen sichtbar im Text, nie nur
   in Figur oder Vertiefung. Keine Krisennummern vorschlagen.
 - Rahmen Schweiz / Kanton Zürich; Schweizer Hochdeutsch (ss, «»).
 
 Ergebnis
 1. Gesamturteil in höchstens fünf Sätzen: Ist die Website für Laien verständlich und
-   praxisnah? Welche Figur trägt am besten, welche am schlechtesten?
+   praxisnah? Welche Figur trägt und spricht am besten an, welche am wenigsten?
 2. Matrix je Figur mit Belegen.
-3. Tabelle Lesetest: Seite | Abschnitt | a | b | Stolperstellen | Priorität.
-4. Die zehn schwierigsten Stellen der Website, je mit Zitat und einem Vorschlag, der die
+3. Tabelle Bildsprache: Seite › Abbildung | Motiv in einem Satz | erster Eindruck (B1) |
+   Befunde | Bewertung | Priorität; darunter die Vorschläge. Geplante Figuren als eigene,
+   kurze Tabelle.
+4. Tabelle Lesetest: Seite | Abschnitt | a | b | Stolperstellen | Priorität.
+5. Die zehn schwierigsten Stellen der Website, je mit Zitat und einem Vorschlag, der die
    Bedeutung hält.
-5. Kennzahlen je Seite.
+6. Kennzahlen je Seite.
 Trage das Ergebnis in PRUEFBERICHT.md unter «R2 Visualisierung und Laienverständlichkeit»
 ein. Committe nur den Prüfbericht.
 ```

@@ -46,6 +46,9 @@ Nach jedem Bau ohne Nachfrage ausfüllen: Visualisierungs-Check wie unten, mit B
 | 12 | Bei 320 px lesbar; Textalternative bzw. Langbeschreibung vollständig | | | |
 | 13 | Theme «Hoher Kontrast» geprüft (keine festen Farbwerte in SVG) | | | |
 | 14 | Inhalt fachlich freigegeben | | | |
+| 15 | Bildsprache passt zum Thema (kein Bauplan, wo es um Erleben geht); Wirkung im Plan und im Bild eingelöst | | | |
+| 16 | Metapher ohne Code: ein Bild, eine Idee; Beschriftungen nennen Erleben, nicht Bildteile | | | |
+| 17 | Keine ungewollten Bedeutungen (Gefahr, Defekt, Maschine, Bewertung eines Menschen) | | | |
 
 ### Matrix je Figur (Prüfsitzung)
 
@@ -67,6 +70,9 @@ E = erfüllt · T = teilweise · N = nicht erfüllt · – = nicht anwendbar. Je
 | 12 | 320 px lesbar; Textalternative | | |
 | 13 | Theme «Hoher Kontrast» | | |
 | 14 | Fachlich freigegeben | | |
+| 15 | Bildsprache passt; Wirkung eingelöst | | |
+| 16 | Metapher ohne Code | | |
+| 17 | Keine ungewollten Bedeutungen | | |
 
 ## Befunde je Stufe
 
