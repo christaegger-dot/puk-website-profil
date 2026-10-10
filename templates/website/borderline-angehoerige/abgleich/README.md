@@ -1,17 +1,19 @@
-# Abgleich · Borderline-Website, Etappe 1 und 2a
+# Abgleich · Borderline-Website, Etappe 1, 2a und 2b
 
-Beleg für W1 nach UMBAUPLAN, Abschnitt 5: Jeder Satz des Bestands ist übernommen, gekürzt, zusammengeführt, verschoben, geändert oder mit Grund entfallen. Erstellt von der bauenden Sitzung am 08.10.2026, nachgeführt am 09.10.2026 (Korrektur Etappe 1, 1b, 1c, 1d, 1e, 1f, 1g, 1h, 1i und 1j). Am 10.10.2026 um die Seiten `rolle` und `selbstfuersorge` erweitert (Etappe 2a) und nach der Prüfrunde 2a nachgeführt (Korrektur 2a-K, danach 2a-2); Freigabe Etappe 2a eingetragen. Das ist ein Arbeitsstand, keine Prüfung.
+Beleg für W1 nach UMBAUPLAN, Abschnitt 5: Jeder Satz des Bestands ist übernommen, gekürzt, zusammengeführt, verschoben, geändert oder mit Grund entfallen. Erstellt von der bauenden Sitzung am 08.10.2026, nachgeführt am 09.10.2026 (Korrektur Etappe 1, 1b, 1c, 1d, 1e, 1f, 1g, 1h, 1i und 1j). Am 10.10.2026 um die Seiten `rolle` und `selbstfuersorge` erweitert (Etappe 2a) und nach der Prüfrunde 2a nachgeführt (Korrektur 2a-K, danach 2a-2); Freigabe Etappe 2a eingetragen. Am 10.10.2026 um die Seiten `kommunizieren` und `krise` erweitert (Etappe 2b). Das ist ein Arbeitsstand, keine Prüfung.
 
-- `index.md` · `/`, `/selbsttest`, `/wegweiser`; seit Etappe 2a mit zwei Zeilen «neu (2a)» am Ende (Nr. 255–256)
+- `index.md` · `/`, `/selbsttest`, `/wegweiser`; seit Etappe 2a mit zwei Zeilen «neu (2a)» am Ende (Nr. 255–256), seit Etappe 2b mit einer Zeile «neu (2b)» (Nr. 257)
 - `verstehen.md` · `/verstehen` ohne Diagnostik-Teil, sechs Handouts; der Teil «Materialien zum Vertiefen» (Z. 277–396) steht seit Korrektur 1c am Ende der Tabelle (Nr. 474–540); seit Korrektur 1f mit zwei Zeilen für Sätze der neuen Seite ohne Bestandssatz am Ende (Nr. 541–542)
 - `beziehungen.md` · `/verstehen/beziehungen`; seit Korrektur 1e mit Zeilen für Sätze der neuen Seite ohne Bestandssatz am Ende (Nr. 233–248)
 - `grenzen.md` · `/grenzen`, acht Handouts, zwei Übungsszenarien; seit Korrektur 1f mit zwei Zeilen ohne Bestandssatz am Ende (Nr. 710–711)
 - `rolle.md` · seit Etappe 2a: `/unterstuetzen/uebersicht`, `/unterstuetzen/alltag` ohne «Begrenzte Verfügbarkeit» und «Wenn der Alltag angespannt erlebt wird», zehn Handouts (Nr. 0–756); dazu 11 Zeilen «neu (2a)» (Nr. 757–767), seit Korrektur 2a-K zwei weitere Zeilen «neu (2a-K)» (Nr. 768–769)
 - `selbstfuersorge.md` · seit Etappe 2a: `/selbstfuersorge`, die zwei Abschnitte aus `/unterstuetzen/alltag`, sechs Handouts (Nr. 0–658); dazu 12 Zeilen «neu (2a)» (Nr. 659–670), seit Korrektur 2a-K eine weitere Zeile «neu (2a-K)» (Nr. 671)
-- `kennzahlen.mjs` · Wörter, Absicherungen und Semikolons alt und neu (ohne Abhängigkeiten); seit Etappe 2a mit `rolle` und `selbstfuersorge`
-- `pruefe-abgleich.mjs` · prüft die Tabellen gegen die gebauten Seiten (ohne Abhängigkeiten); seit Etappe 2a mit sechs Tabellen
-- `verneinung.mjs` · Sätze mit Verneinung alt und neu, mit `--seite <id>` je Abschnitt und mit den gezählten Sätzen (ohne Abhängigkeiten; seit Korrektur 1e, seit Etappe 2a mit den neuen Seiten)
-- `bedienung.mjs` · Tabstopps, Seitenhöhen und Pfeile der Bedeutungsschleife im Browser, gemessen nach dem Laden der Webschriften (braucht Playwright und einen lokalen Server; seit Etappe 2a mit den neuen Seiten)
+- `kommunizieren.md` · seit Etappe 2b: `/kommunizieren`, `/uebungen`, fünf Handouts (Nr. 0–956); dazu 24 Zeilen «neu (2b)» (Nr. 957–980)
+- `krise.md` · seit Etappe 2b: `/unterstuetzen/krise`, Handout `krisenkommunikation` (Nr. 0–299); dazu 13 Zeilen «neu (2b)» (Nr. 300–312)
+- `kennzahlen.mjs` · Wörter, Absicherungen und Semikolons alt und neu (ohne Abhängigkeiten); seit Etappe 2a mit `rolle` und `selbstfuersorge`, seit Etappe 2b mit `kommunizieren` (alt: `/kommunizieren` und `/uebungen`) und `krise`
+- `pruefe-abgleich.mjs` · prüft die Tabellen gegen die gebauten Seiten (ohne Abhängigkeiten); seit Etappe 2a mit sechs Tabellen, seit Etappe 2b mit acht
+- `verneinung.mjs` · Sätze mit Verneinung alt und neu, mit `--seite <id>` je Abschnitt und mit den gezählten Sätzen (ohne Abhängigkeiten; seit Korrektur 1e, seit Etappe 2a und 2b mit den neuen Seiten)
+- `bedienung.mjs` · Tabstopps, Seitenhöhen und Pfeile der Bedeutungsschleife im Browser, gemessen nach dem Laden der Webschriften (braucht Playwright und einen lokalen Server; seit Etappe 2a und 2b mit den neuen Seiten)
 
 **Grundlage:** Branch `borderline-bestand`, `bestand/borderline-angehoerige/` (`INVENTAR.md`, `texte/`), erhoben aus Commit `5c8471c` der alten Website. Die beiden ersten Skripte lesen den Bestand mit `git show origin/borderline-bestand:…` oder aus einem Ordner (`--bestand <ordner>`).
 
@@ -24,7 +26,7 @@ Je Seite eine Tabelle «Satz für Satz» mit jedem Satz der alten Seite und der 
 - **Ort neu:** `seite#abschnitt` (Abschnitts-ID der gebauten Seite, `kopf`, `kapitel`), `Fusszeile` oder «seite (Etappe 2)».
 - **Zustandekommen:** Ein Skript der bauenden Sitzung zerlegt den Bestand in Sätze und schlägt je Satz den ähnlichsten Satz im Zielabschnitt vor. Status, Zielabschnitt und jede schwache Zuordnung sind von Hand gesetzt und geprüft. Ob der genannte Satz die Aussage wirklich trägt, ist Gegenstand der Prüfung.
 
-**Prüfung der Tabellen:** `node abgleich/pruefe-abgleich.mjs`. Ergebnis am 10.10.2026 nach dem Eintrag der Freigabe 2a: **3207 Zeilen, 0 ohne Fundstelle**. Ergebnis nach Korrektur 2a-2: **3207 Zeilen, 0 ohne Fundstelle** (fünf Zeilen geändert, keine neue). Ergebnis nach Korrektur 2a-K: **3207 Zeilen, 0 ohne Fundstelle** (drei Zeilen «neu (2a-K)» mehr als nach Etappe 2a). Ergebnis am 10.10.2026 nach Etappe 2a: **3204 Zeilen, 0 ohne Fundstelle** (3155 Bestandszeilen, 48 Zeilen ohne Bestandssatz – 16 auf `beziehungen`, 12 auf `selbstfuersorge`, 11 auf `rolle`, 5 auf `verstehen`, 2 auf `grenzen`, 2 auf `index` – und auf `verstehen` 1 Zeile mit Bestandssatz aus dem Handout `wenn-worte-treffen`, das sonst keiner Seite zugeordnet ist). Nach Korrektur 1j waren es 1763 Zeilen. Das Skript liest auch Text nur für Screenreader (`.puk-sr`, Kurzbeschreibungen der Bildlegenden), denn er steht auf der Seite. Geprüft wird je Zeile:
+**Prüfung der Tabellen:** `node abgleich/pruefe-abgleich.mjs`. Ergebnis am 10.10.2026 nach Etappe 2b: **4502 Zeilen, 0 ohne Fundstelle** (957 + 24 in `kommunizieren.md`, 300 + 13 in `krise.md`, 1 Zeile «neu (2b)» mehr in `index.md`; 125 vorgemerkte Zeilen in den bisherigen Tabellen mit neuem Ort). Ergebnis nach dem Eintrag der Freigabe 2a: **3207 Zeilen, 0 ohne Fundstelle**. Ergebnis nach Korrektur 2a-2: **3207 Zeilen, 0 ohne Fundstelle** (fünf Zeilen geändert, keine neue). Ergebnis nach Korrektur 2a-K: **3207 Zeilen, 0 ohne Fundstelle** (drei Zeilen «neu (2a-K)» mehr als nach Etappe 2a). Ergebnis am 10.10.2026 nach Etappe 2a: **3204 Zeilen, 0 ohne Fundstelle** (3155 Bestandszeilen, 48 Zeilen ohne Bestandssatz – 16 auf `beziehungen`, 12 auf `selbstfuersorge`, 11 auf `rolle`, 5 auf `verstehen`, 2 auf `grenzen`, 2 auf `index` – und auf `verstehen` 1 Zeile mit Bestandssatz aus dem Handout `wenn-worte-treffen`, das sonst keiner Seite zugeordnet ist). Nach Korrektur 1j waren es 1763 Zeilen. Das Skript liest auch Text nur für Screenreader (`.puk-sr`, Kurzbeschreibungen der Bildlegenden), denn er steht auf der Seite. Geprüft wird je Zeile:
 
 - Den Ort gibt es.
 - Die neue Fassung steht dort wörtlich.
@@ -57,6 +59,10 @@ Je Seite eine Tabelle «Satz für Satz» mit jedem Satz der alten Seite und der 
 | verschoben (2a-K) | Seit Korrektur 2a-K, nur `rolle.md` Nr. 67, 68, 72 und 736: Der Satz steht jetzt auch auf `rolle` › `kinder` (Entscheid P2a-F-2, Abschnitt 4 des Auftrags); `grenzen` bleibt unverändert. |
 | neu (2a-K) | Seit Korrektur 2a-K: Satz ohne Bestandssatz, neu oder neu gefasst in der Korrektur (Verweissätze, Wortlaut des Auftrags). Frei gewordene Zeilen «neu (2a)» werden dafür weiterverwendet, wenn der neue Satz dieselbe Aufgabe hat (zum Beispiel der Verweis bei Schuld). Jeder dieser Sätze steht in `../PRUEFBERICHT.md`, Selbstprüfung Korrektur 2a-K, in der Liste der neuen Sätze zur Freigabe. |
 | umformuliert (2a-2) | Seit Korrektur 2a-2 (`KORREKTUR-ETAPPE-2A2.md`): Der Satz, der die Aussage trägt, steht im Wortlaut dieses Auftrags (`rolle.md` Nr. 483, `selbstfuersorge.md` Nr. 303, 304, 307 und 310). Die Bemerkung nennt den Abschnitt des Auftrags und den früheren Status («bis 2a-K: …»). |
+| umformuliert (2b) | Seit Etappe 2b: Der Satz, der die Aussage trägt, steht auf `kommunizieren` oder `krise` in einfacher Sprache, mit klarem Subjekt oder mit den Begriffen des Bauauftrags 2b (Abschnitt 2a), gleiche Aussage und gleiche Absicherungen. Die neue Fassung steht in der Tabelle; fehlende Teile nennt die Bemerkung. In den bisherigen Tabellen auch für vorgemerkte Zeilen und für die Einstiege auf `index` (Nr. 19, 20); die Bemerkung beginnt dort mit «2b:» und endet mit dem früheren Stand («bis 2b: …»). |
+| verschoben (Vertiefung, 2b) | Seit Etappe 2b: Der Satz steht auf `kommunizieren` oder `krise` in einer Vertiefung (Akkordeon des Profils, ohne Skript offen, im Druck vollständig); die neue Fassung kann sprachlich geglättet sein. Die Bemerkung nennt den Titel der Vertiefung. |
+| neu (2b) | Seit Etappe 2b: Satz auf `kommunizieren`, `krise` oder `index` ohne Bestandssatz: Verweissätze, Einleitungen von Beispielsätzen, Zwischentitel, Wortlaut des Auftrags (zum Beispiel die Sätze von `verstehen` zu Suizidgedanken auf `krise`) und der Anliegen-Satz des neuen Einstiegs. Die Bemerkung nennt die Art (neu, Verweissatz, Auftrag). Jeder dieser Sätze steht auch in `../PRUEFBERICHT.md`, Selbstprüfung Etappe 2b, in der Liste «Neue Sätze zur Freigabe». «Satz (Bestand)» ist «–». |
+| entfällt: ersetzt durch Beispiele | Kein eigener Status, sondern der Grund in der Bemerkung bei «entfällt»: Die interaktiven Szenarien von `/uebungen` und die übrigen Gesprächsbeispiele sind durch drei Beispiele ersetzt (Entscheid der Fachstelle 08.10.2026, Bauauftrag 2b, Abschnitt 3). |
 
 ## Wörter und Absicherungen
 
@@ -74,6 +80,15 @@ Gemessen wird an der alten Seite allein, nicht an Seite plus Handouts. So verlan
 **Nachgerechnet (F-K-03):** Das Skript ergibt am Stand `2a4abb2` genau die Werte der zweiten Prüfrunde: 1301 / 1112 / 1510 Wörter und 2,15 / 2,70 / 1,79 Absicherungen je 100 Wörter.
 
 Die damals berichteten 1299 / 1099 / 1500 waren zu tief. Die Zählung der bauenden Sitzung hatte Bezeichnungen in eigenen `span` ohne Leerzeichen an das nächste Wort gehängt, zum Beispiel «Station 1 · Schwester» an «Ereignis» oder «Beispiel» an den Beispielsatz.
+
+**Stand 10.10.2026, nach Etappe 2b** (`kennzahlen.mjs`; «Lesefluss» = gleiche Zählweise ohne die Panels der Akkordeons; C1 = Zählweise der Prüfrunde 2a: Absätze, Listenpunkte und Begriffslisten im Lesefluss, ohne Überschriften, Kicker, Bezeichnungen und Quellenzeilen):
+
+| Seite | Alt: Seite allein | Neu | davon im Lesefluss | C1 im Lesefluss | Ziel (Bauauftrag 2b, Abschnitt 2d) | Absicherungen je 100 Wörter alt → neu | Semikolons alt → neu |
+| --- | ---: | ---: | ---: | ---: | ---: | --- | --- |
+| `kommunizieren` | 4114 | 3370 | 2702 | 2458 | etwa 2500 | 3,23 → 2,64 | 36 → 0 |
+| `krise` | 1916 | 2075 | 1663 | 1507 | etwa 2500 | 2,04 → 2,17 | 18 → 1 |
+
+«Alt» ist bei `kommunizieren` die Summe von `/kommunizieren` und `/uebungen`, bei `krise` die alte Seite `/unterstuetzen/krise` allein. `krise` ist länger als die alte Seite, weil das Handout `krisenkommunikation` und die bisher in Akkordeons verborgenen Teile im Text stehen. Das eine Semikolon auf `krise` steht in der Handlungsanleitung «Sicherheit prüfen», deren Wortlaut der Auftrag festhält. Je Abschnitt gesamt / im Lesefluss: `kommunizieren` `zuhoeren` 294 / 209 · `anerkennen` 1060 / 693 · `moment` 395 · `kippen` 568 / 451 · `worte` 296 · `beispiele` 554 · `rollen` 152 / 53; `krise` `belastung` 302 · `waehrend` 226 · `sagen` 283 · `suizid` 220 · `vermeiden` 68 · `danach` 697 / 285 · `bleibt` 219. `index` 283 → 302 (`einstiege` 143 → 162, ein neuer Einstieg). Sätze mit Verneinung (`verneinung.mjs`): `kommunizieren` alt 100 von 615 (16 %), neu 83 von 402 (21 %); `krise` alt 55 von 237 (23 %), neu 52 von 241 (22 %); `index` 4 von 29. Die Seiten der Etappen 1 und 2a sind unverändert; `rolle` 3145 und `selbstfuersorge` 2679 Wörter sind der Stand nach Korrektur 2a-2.
 
 **Stand 10.10.2026, nach Korrektur 2a-K** (`kennzahlen.mjs`; «Lesefluss» = gleiche Zählweise ohne die Panels der Akkordeons, Skript der bauenden Sitzung):
 
@@ -112,6 +127,8 @@ Je Abschnitt, nach 2a → nach 2a-K gesamt / im Lesefluss: `rolle` `anbieten` 53
   - `beziehungen` 1164 (nach 1d) und `grenzen` 1554: nur die Kurzbeschreibungen fallen aus der Zählung, der sichtbare Text ist gleich.
 - **Absicherungen auf `verstehen`:** 2,54 → 2,81 nach 1d, 2,82 nach 1e. Die neuen Texte aus D-3 und D-4 enthalten «kann», «können» und «könnten» (zum Beispiel «Anspannung kann im Gespräch ansteigen …», «… entschärfen könnten»); sie sind Wortlaut des Auftrags.
 - **Quote:** Die Quote «Neu / alt» misst nicht, wie stark gekürzt wurde. Die alte Seite enthält Teile, die nach Etappe 2 gehen, und Meta-Text. Die zweite Prüfrunde hat deshalb einen vergleichbaren Kern berechnet (Belege b, Abschnitt 4).
+
+**Bedienung nach Etappe 2b** (gleiches Skript): `kommunizieren` 32 Tabstopps, 24 890 px bei 360 px, Zuhören, ohne zuzustimmen 716 px; `krise` 25 Tabstopps, 16 436 px, keine Abbildung. `index` 15 Tabstopps (ein Einstieg mehr), 4636 px. Die Seiten der Etappen 1 und 2a sind unverändert (20, 18, 23, 30, 28 Tabstopps).
 
 **Bedienung nach Korrektur 2a-K** (gleiches Skript): `rolle` 30 Tabstopps (nach 2a 24), 26 243 px bei 360 px (30 067 px), Ein Stück Weg 673 px; `selbstfuersorge` 28 Tabstopps (21), 21 947 px (25 453 px), Ein freier Abend 707 px (680 px; der Gedanke «Vielleicht kommt gleich eine Nachricht.» bricht um). Neue Tabstopps sind die Knöpfe der Vertiefungen (4 und 7) und zwei neue Verweise auf `rolle`; auf `selbstfuersorge` kommt ein Verweis dazu, einer entfällt. `index` und die Seiten der Etappe 1 sind unverändert (14, 20, 18, 23 Tabstopps).
 
@@ -360,3 +377,19 @@ Grundlage: `FREIGABE-ETAPPE-2A.md`. Die Fachstelle hat Etappe 2a am 10.10.2026 f
 | Freigaben im Plan | `approvalStatus` «freigegeben» bei `v-ro-weg` und `v-sf-abend`; Platzhalter, `editorialStatus` und Zeilen mit `format` «text» unverändert | Abschnitt 3 |
 | Prüfbedarf | Jede Bemerkung mit «Prüfbedarf» in `rolle.md` und `selbstfuersorge.md` endet mit «; erledigt: Freigabe Etappe 2a durch die Fachstelle, 10.10.2026» (`rolle` 5 Zeilen: Nr. 496 bis 500; `selbstfuersorge` 0). Unter den zwei Überschriften «Prüfbedarf für W1 (Stand 10.10.2026, Etappe 2a)» steht als erster Absatz der Vermerk «Erledigt am 10.10.2026: …»; die Listen bleiben als Verlauf. Die Tabellen der Etappe 1 sind unverändert | Abschnitt 3 |
 | Kopfnotizen | «Freigabe Etappe 2a (10.10.2026): …» in `rolle.md` und `selbstfuersorge.md` | Abschnitt 3 |
+
+## Etappe 2b: neue Seiten `kommunizieren` und `krise` (10.10.2026)
+
+Grundlage: `BAUAUFTRAG-ETAPPE-2B.md`. Die Seiten der Etappen 1 und 2a sind inhaltlich unverändert; in ihren Tabellen ändern sich nur die 125 vorgemerkten Zeilen und die Einstiege auf `index`.
+
+| Thema | Umsetzung | Quelle |
+| --- | --- | --- |
+| Neue Tabellen | `kommunizieren.md` mit 957 Bestandszeilen (`/kommunizieren` Nr. 0–242, `/uebungen` Nr. 243–630, Handouts Nr. 631–956) und 24 Zeilen «neu (2b)»; `krise.md` mit 300 Bestandszeilen (`/unterstuetzen/krise` Nr. 0–240, Handout `krisenkommunikation` Nr. 241–299) und 13 Zeilen «neu (2b)». Die Zählung je Status steht im Kopf jeder Tabelle | Abschnitt 2f |
+| Übungen | Die Szenarien von `/uebungen` stehen als «entfällt» mit dem Grund «ersetzt durch Beispiele (Entscheid der Fachstelle 08.10.2026 …)». Übernommen sind zwei Szenarien als Beispiele in `kommunizieren` › `beispiele` («Nach einem Arztbesuch», «Ein Zeitpunkt, zwei Vorstellungen») und Sätze, die die Beispiele einordnen. DEAR verweist auf `grenzen#dear` | Abschnitt 1 und 3 |
+| Vorgemerkte Zeilen | 125 Zeilen mit Ort «kommunizieren (Etappe 2)» oder «krise (Etappe 2)» nennen den neuen Ort und die neue Fassung: `beziehungen` 14, `grenzen` 59, `rolle` 35, `selbstfuersorge` 12, `verstehen` 4 (davon 3 für `krise`), `index` 1 (für `krise`). Der Auftrag nennt 122 + 4; die 125 sind die Zeilen, deren Spalte «Ort neu» so lautet (eine weitere Fundstelle des Suchworts ist eine Erwähnung in diesem README). Die Bemerkung beginnt mit «2b:» und endet mit «bis 2b: verschoben, Ort …» und der früheren Bemerkung | Abschnitt 2f |
+| Gesprächsbeispiele aus `/unterstuetzen/alltag` | Einleitung (`rolle.md` Nr. 148 bis 150) in `kommunizieren` › `beispiele`; die vier Gesprächsbeispiele entfallen, ersetzt durch drei Beispiele; ihre Aussage steht schon auf `rolle#alltag` oder `grenzen#saetze` (in der Bemerkung zitiert) | Abschnitt 3 |
+| Einstiege auf `index` | Nr. 19 und 20 nennen den Einstieg zu `kommunizieren` («umformuliert (2b)»), Nr. 25 bis 28 den Platzhalter «Weitere Einstiege folgen: Genesung · Unterstützung finden.», Nr. 257 den Anliegen-Satz («neu (2b)»); `index.md` Nr. 39 (Kinder) nennt den Verweissatz auf `krise` | Abschnitt 6 |
+| Zuständigkeit | Links auf «Akute Hilfe und Notfallkontakte», `/soforthilfe` und den Situations-Wegweiser entfallen mit dem Grund «Profil (kein Krisenzugang) …». Wo der Bestand damit sagte, was in akuter Gefahr zu tun ist, nennt die Bemerkung den Abschnitt, in dem nach der Handlungsanleitung der Verweis im Text steht | Abschnitt 2c |
+| Statuswerte | neu «umformuliert (2b)», «verschoben (Vertiefung, 2b)» und «neu (2b)» (oben unter «Statuswerte») | Abschnitt 2f |
+| Zustandekommen | Ein Skript der bauenden Sitzung zerlegt den Bestand in Sätze (Klammermarken ohne eigene Zeile, Reaktionen der Übungen je eine Zeile) und schlägt je Satz den ähnlichsten Satz der gebauten Seiten vor. Status, Ort, neue Fassung und Bemerkung sind für 487 Zeilen von `kommunizieren.md` und 165 Zeilen von `krise.md` von Hand gesetzt (dazu die 37 Zeilen «neu (2b)» und die 125 vorgemerkten Zeilen); die übrigen sind wörtliche Fundstellen, Rahmen der Handouts und die Szenarien der Übungen | – |
+| Skripte | `pruefe-abgleich.mjs`: acht Tabellen, Bestandsquellen von `kommunizieren` und `krise`. `kennzahlen.mjs` und `verneinung.mjs`: `kommunizieren` = `kommunizieren.md` und `uebungen.md`, `krise` = `unterstuetzen--krise.md`, Richtwert «–». `bedienung.mjs`: acht Seiten | Abschnitt 2f |

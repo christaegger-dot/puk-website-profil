@@ -24,8 +24,10 @@ const opt = k => { const i = args.indexOf(k); return i >= 0 ? args[i + 1] : null
 export const PAGES = {
   index: ['startseite.md'], verstehen: ['verstehen.md'], beziehungen: ['verstehen--beziehungen.md'], grenzen: ['grenzen.md'],
   rolle: ['unterstuetzen--uebersicht.md', 'unterstuetzen--alltag.md'], selbstfuersorge: ['selbstfuersorge.md'],
+  // Etappe 2b: `kommunizieren` aus `/kommunizieren` und `/uebungen`, `krise` aus `/unterstuetzen/krise`
+  kommunizieren: ['kommunizieren.md', 'uebungen.md'], krise: ['unterstuetzen--krise.md'],
 };
-const RICHTWERT = { index: null, verstehen: 1300, beziehungen: 1100, grenzen: 1500, rolle: null, selbstfuersorge: null };
+const RICHTWERT = { index: null, verstehen: 1300, beziehungen: 1100, grenzen: 1500, rolle: null, selbstfuersorge: null, kommunizieren: null, krise: null };
 const C = createRequire(import.meta.url)(join(SITE, 'tools/contract.js'));
 
 const SKIP = new Set(['script', 'style', 'svg']);
