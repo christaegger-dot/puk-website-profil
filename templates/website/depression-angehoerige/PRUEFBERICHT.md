@@ -46,15 +46,19 @@ Gehört zur Website in diesem Ordner (`templates/website/depression-angehoerige/
 | Begleiten | ohne `zwang` | mit `zwang` | Der Text sagt «nie Täuschung, Zwang oder Drohungen»; Vertragsprüfung des Gates. |
 | Quellenangaben | – | Fachartikel als «Autorin et al. Jahr, Zeitschrift» statt mit Titel | Titel wurden in der Recherche nicht immer wörtlich erfasst; so wird kein Titel erfunden. |
 
+### Von der Fachstelle entschieden (10.10.2026, Ch. Egger)
+
+- Rechte und Angebote, Abbildung 1: Die Zürcher Regel zur Auskunft an Bezugspersonen (§ 15 Patientinnen- und Patientengesetz ZH) gilt auch in Privatpraxen. Markierung entfernt, Text unverändert.
+- Für sich sorgen › `was-hilft`: Der «Familiencoach Depression» ist aus der Schweiz nutzbar. Markierung entfernt, Text unverändert.
+- Für sich sorgen › Quellen: Die Meta-Analyse zu Achtsamkeitsprogrammen ohne vollständige Angabe wird weggelassen (siehe offener Punkt 1).
+
 ### Offener Prüfbedarf (für W1)
 
-1. Rechte und Angebote, Abbildung 1: Geltungsbereich von § 15 Patientinnen- und Patientengesetz ZH (gilt die vermutete Einwilligung auch in Privatpraxen?). Auf der Seite sichtbar markiert.
-2. Für sich sorgen › `was-hilft`: Ist der «Familiencoach Depression» aus der Schweiz nutzbar? Auf der Seite sichtbar markiert.
-3. Für sich sorgen › Quellen: vollständige Angabe der Meta-Analyse zu Achtsamkeitsprogrammen (International Journal of Mental Health Nursing, 2024). Sichtbar markiert.
-4. Begleiten, Abbildung 1: Bild und Aussage mit der Ruderboot-Metapher im Arbeitsheft «Wenn dein Partner depressiv ist» abgleichen.
-5. Je nach Rolle: Befunde zu Eltern erwachsener Kinder und zu erwachsenen Kindern stammen aus Studien zu Jugendlichen bzw. allgemein; auf der Seite benannt.
-6. Rechte und Angebote: Websites der Angebote vor der Veröffentlichung prüfen; Stand auf der Seite: 10.10.2026.
-7. Aktualisierung einplanen: NVL-Kapitel 10 (Gender, Alter, Peripartalzeit) bei Erscheinen; nächste NVL-Überprüfung 09/2027.
+1. Für sich sorgen › `was-hilft`, Eintrag «Achtsamkeit»: Die Quelle (Meta-Analyse, International Journal of Mental Health Nursing, 2024) wurde auf Entscheid der Fachstelle entfernt, weil die vollständige Angabe fehlte. Die Aussage steht jetzt ohne Beleg auf der Seite; W1 prüft, ob sie bleibt.
+2. Begleiten, Abbildung 1: Bild und Aussage mit der Ruderboot-Metapher im Arbeitsheft «Wenn dein Partner depressiv ist» abgleichen.
+3. Je nach Rolle: Befunde zu Eltern erwachsener Kinder und zu erwachsenen Kindern stammen aus Studien zu Jugendlichen bzw. allgemein; auf der Seite benannt.
+4. Rechte und Angebote: Websites der Angebote vor der Veröffentlichung prüfen; Stand auf der Seite: 10.10.2026.
+5. Aktualisierung einplanen: NVL-Kapitel 10 (Gender, Alter, Peripartalzeit) bei Erscheinen; nächste NVL-Überprüfung 09/2027.
 
 ## Selbstprüfung der bauenden Sitzung
 
