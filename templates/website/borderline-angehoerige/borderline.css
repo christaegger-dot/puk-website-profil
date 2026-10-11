@@ -168,6 +168,33 @@
 .bl-buch__titel{font-weight:var(--fw-medium)}
 .bl-buch__angaben,.bl-buch__fuer{font:var(--type-body-sm);color:var(--text-default)}
 
+/* Diagnose › Der Weg zur Abklärung (Bauauftrag 2c-2, Abschnitt 3): nummerierte Schritte wie die sechs Stufen auf «kommunizieren»
+   (.bl-stufen, «Schritt n» statt «Stufe n»). Der Name ist hier ein h3 direkt unter dem Abschnittstitel, in derselben Grösse wie
+   die Stufen (type-title-3). «Ihre Rolle» als abgesetzte Zeile mit kleiner Bezeichnung und Linie wie die hilfreiche Variante
+   von .puk-say. Keine Abbildung, kein figure. */
+.bl-stufen h3.bl-stufen__name{font:var(--type-title-3)}
+.bl-stufen>li>p.bl-stufen__rolle{margin-top:var(--space-3);padding:var(--space-1) 0 var(--space-1) var(--space-4);border-left:var(--border-width-strong) solid var(--puk-blue-100)}
+.bl-stufen__key{display:block;margin-bottom:var(--space-1);font:var(--type-caption);color:var(--text-muted)}
+
+/* Diagnose › Zweifel (Bauauftrag 2c-2, Abschnitt 3): «Was nicht hilft» und «Was möglich ist» als zwei Listen nebeneinander,
+   schmal untereinander. Ohne Abfrage: zwei Spalten, sobald jede mindestens 280 px (--space-20 × 3,5) breit sein kann,
+   also ab etwa 1024 px Fensterbreite; darunter eine Spalte. */
+.bl-zwei{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,calc(var(--space-20) * 3.5)),1fr));gap:0 var(--space-8)}
+.bl-zwei>div{min-width:0}
+
+/* Behandlung › Wer was beitragen kann (Bauauftrag 2c-2, Abschnitt 4 a): drei Rollen nebeneinander als Text, alles sichtbar,
+   ohne Auswahl-Schaltflächen und ohne figure. Über die volle Breite (.puk-vis-wide, Container), damit drei Spalten Platz haben;
+   je Rolle eine Linie oben, Name, «Kann beitragen» und «Nicht zu erwarten» als zwei kurze Listen in Seitenschrift.
+   Drei Spalten ab 860 px Containerbreite (ab etwa 1024 px Fensterbreite, Tablet quer); darunter untereinander, weil bei
+   768 px Fenster (707 px Container) eine Spalte nur 214 px breit wäre und Wörter wie «Behandlungsschritten» nicht passen. */
+.bl-rollen{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--space-8);font-size:var(--web-size-body);line-height:var(--lh-body);color:var(--text-default)}
+.bl-rollen>li{min-width:0;margin:0;padding-top:var(--space-4);border-top:var(--border-width-strong) solid var(--puk-blue-100)}
+.bl-rollen__name{margin:0;font:var(--type-title-3);color:var(--text-default)}
+.bl-rollen__key{margin:var(--space-4) 0 var(--space-1);font:var(--type-caption);color:var(--text-muted)}
+.bl-rollen ul{margin:0;padding-left:var(--space-5);list-style:disc}
+.bl-rollen ul li{margin-top:var(--space-1)}
+@container (max-width:860px){.bl-rollen{grid-template-columns:minmax(0,1fr);gap:var(--space-6)}}
+
 /* Druck (Bauauftrag 2c-1, Abschnitt 7): Zwischentitel stehen nicht allein am Seitenende, sondern mit dem folgenden Text auf
    derselben Seite. Im Druck ist das Abschnittsraster einspaltig; zwischen Rasterzeilen wirkt break-after:avoid in Chromium nicht
    (gemessen: «Wenn Gespräche kippen» allein am Seitenende, A4, Rand 15 mm, Skalierung 90 %). Deshalb steht der Abschnitt im Druck
@@ -178,5 +205,9 @@
   .puk-longform__section-grid{display:block}
   .puk-longform__section-heading:not(:empty){margin-bottom:var(--space-8)}
   main h2,main h3,main h4,main h5,main dt,.puk-acc__heading,.puk-longform__section-heading{break-after:avoid}
-  .bl-buecher>li,.bl-sicht{break-inside:avoid}
+  /* Etappe 2c-2: Auch der Kicker über dem Abschnittstitel steht nicht allein am Seitenende (gemessen: «02 · Behandlungsteam»
+     allein am Ende von Seite 2, `behandlung`, A4 ohne Rand); Kicker und Titel bleiben zusammen. */
+  .puk-longform__kicker{break-after:avoid}
+  .puk-longform__section-heading{break-inside:avoid}
+  .bl-buecher>li,.bl-sicht,.bl-rollen>li{break-inside:avoid}
 }

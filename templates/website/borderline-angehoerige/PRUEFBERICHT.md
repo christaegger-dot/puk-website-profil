@@ -68,6 +68,420 @@ Dazu 5 leichte Befunde zu Bericht und Abgleich. Die erste und zweite Prüfrunde 
 
 Nach jedem Bau ohne Nachfrage ausfüllen: Visualisierungs-Check wie unten, mit Beleg je Punkt. Arbeitsstand, keine Prüfstufe.
 
+**Stand 11.10.2026 · Etappe 2c-2 · bauende Sitzung (Claude Code).** Umgesetzt ist `BAUAUFTRAG-ETAPPE-2C2.md` (Seiten `diagnose` und `behandlung`, Korrekturen an `genesung` und `unterstuetzung`). Grundlage ist `borderline-umbau` am Stand `66d73b1`. Geändert sind nur:
+
+- `content/` und die gebauten Seiten von `diagnose` und `behandlung` (neu gebaut, Abschnitte 3 bis 5), `genesung` › `einfluesse` (zwei Sätze, Abschnitt 6) und `unterstuetzung` › `austausch` (ein Eintrag, Abschnitt 6)
+- `borderline.css`: Regeln für die Schritte auf `diagnose` (`.bl-stufen` mit h3, Zeile «Ihre Rolle»), die zwei Listen nebeneinander (`.bl-zwei`) und die drei Rollen (`.bl-rollen`); in der Druckregel Kicker und Titel zusammen (gilt für alle Seiten, nur im Druck)
+- `site.config.json`: `diagnose` und `behandlung` (Status, Aufgabe, Beschreibung, `sensitiveTopics`, `visualPlan`); in `unterstuetzung` die Begründung der Planzeile `v-un-austausch`
+- der Abgleich: zwei neue Tabellen, `genesung.md` (Nr. 145, 163, 396), `beziehungen.md` (Nr. 208), `README.md` und drei Skripte (`pruefe-abgleich.mjs`, `kennzahlen.mjs`, `bedienung.mjs`; `verneinung.mjs` übernimmt die Seiten aus `kennzahlen.mjs`)
+- in diesem Bericht nur dieser Block
+
+Die freigegebenen Seiten sind im Wortlaut unverändert (`git diff 66d73b1 --word-diff` über `content/` und die gebauten Seiten von `index`, `verstehen`, `beziehungen`, `grenzen`, `rolle`, `selbstfuersorge`, `kommunizieren` und `krise`: leer). Keine Prüfstufe ist «erledigt»; der Status bleibt in allen Zeilen «offen». Der Block «Etappe 2c-1» steht darunter.
+
+**Auftrag im Website-Ordner:** `BAUAUFTRAG-ETAPPE-2C2.md` lag im Stamm von `main` (`89fc0ef`). Die Datei liegt unverändert in diesem Ordner (`9d2e5be`; `cmp` und SHA-256 gleich). Sie ist aus dem Stamm von `main` entfernt (`16a4a87`, direkter Push auf `main`, wie bei 2c-1).
+
+### Etappe 2c-2: Stand je Abschnitt des Auftrags
+
+| Abschnitt | Stand | Beleg |
+| --- | --- | --- |
+| 1 Entscheide | umgesetzt | Eine Angebotsliste auf `behandlung` › `angebote`, nur mit Link zur Website, ohne Telefonnummern und ohne Stations-E-Mail; `diagnose` verweist dorthin («Angebote für Abklärung und Therapie stehen auf der Seite «Behandlung und Ihre Rolle darin» im Abschnitt «Angebote im Kanton Zürich».», dazu der Verweissatz zu HYPE Züri). «Kein Therapieplatz oder lange Wartezeit» steht nur auf `behandlung` › `wartezeit`. Zwei Textdarstellungen ohne Zeichnung und ohne `figure`: `diagnose` › `abklaerung` (fünf nummerierte Schritte) und `behandlung` › `rollen` (drei Rollen nebeneinander), beide im Plan mit Format `text`. Diagnostik-Text nicht wiederholt, Verweissatz auf `verstehen#borderline`; Medikamente und Begleiterkrankungen in der Behandlung auf `behandlung` › `therapieformen`, `diagnose` verweist dorthin; die Gruppe für Eltern auf `unterstuetzung` › `austausch`; Therapieformen als Begriffsliste. `navLabel` beider Seiten `null`, kein Einstieg auf `index` (`index` unverändert) |
+| 2 Regeln | umgesetzt, Rest siehe «Zur Prüfung» | Keine Semikolons im Fliesstext (`kennzahlen.mjs`: `diagnose` 20 → 0, `behandlung` 11 → 0). Personenzentriert und ohne Doppelpunkt: «betroffene Person» statt «erkrankte Person» (`behandlung.md` Nr. 48, 92), «Hausarztpraxis», «Patientinnen und Patienten», «Ärztinnen und Ärzte», «Psychiaterinnen und Psychiater» statt der Formen mit Doppelpunkt; Gate `person-first` ohne Hinweis. Verantwortung im Wortlaut von `verstehen`: «Angehörige sind nicht schuld an der Erkrankung und nicht für die Genesung verantwortlich.» (`diagnose` › `begleiterkrankungen`); kein «allein» bei Erkrankung, Behandlung oder Genesung (einziges «allein» auf beiden Seiten: «allein für die Qualität der Beziehung sorgen», Spalte «Die betroffene Person», und «Aus der Borderline-Diagnose allein …»). Akute Gefahr im Wortlaut von `krise` mit «Notruf»; keine Links auf `/soforthilfe`. Vier Verweise im Text (Tabelle unten), keiner in einer Vertiefung; Anleitungen aus Vertiefungen entfallen dort («zusammengeführt», `behandlung.md` Nr. 103, 121). Verlinkt statt wiederholt: `verstehen#borderline`, `rolle#anbieten`, `rolle#schuld`, `krise#suizid`, `krise#danach`, `index#beratung` (zweimal), `selbstfuersorge#warnsignale`, `#unterstuetzung`, `genesung#forschung`, `genesung#verlauf`, `unterstuetzung#beratung` (zweimal), `#austausch` (zweimal), `#kantone`, `diagnose#begleiterkrankungen` und die Links von `diagnose` auf `behandlung` (`#rollen`, `#angebote` zweimal, `#therapieformen`); nicht verlinkt: `selbstfuersorge#beratung` (der Bestand nennt dort «Beratung & Netzwerke», das trägt `unterstuetzung#beratung`). Keine Links auf `fragen`, `quellen`, `ueber` (Build ohne `link-draft`). Angebote nur mit Link, keine Nummer, kein `tel:` und kein `mailto:` in `main`. Quellen nur im Block «Quellen zu dieser Seite». Länge: `diagnose` 1538, `behandlung` 1677 Wörter im Lesefluss (Ziel je etwa 1800). Vertiefungen als Akkordeon des Profils, ohne Skript offen (4 von 4, 8 von 8) und im Druck vollständig. Abgleich vollständig (unten) |
+| 3 `diagnose` | umgesetzt, Gliederung wie vorgeschlagen, kleine Abweichungen (Entscheide Nr. 1 bis 4) | Kopf: H1 «Diagnose und Begleiterkrankungen» (nennt beide Themen), Einleitung aus dem Bestand mit «Die Seite ist keine Anleitung, jemanden zur Diagnose zu drängen, …» und einem Satz zu Begleiterkrankungen. 01 `abklaerung`: einleitende Sätze (wer abklärt, Gesamtbeurteilung, gestufter Prozess), fünf Schritte als `ol.bl-stufen` mit «Schritt n», Name, was geschieht, «Ihre Rolle» bei Schritt 1, 3, 4 und 5, bei Schritt 5 der Verweissatz auf `behandlung#rollen`; darunter «Eine Diagnose ist ein Anfang, kein Etikett.» und hervorgehoben «Die Diagnose ist eine fachliche Beurteilung über Zeit, nicht ein Stempel aus einem einzelnen Gespräch.»; «Bei Jugendlichen» sichtbar mit den Verweissätzen auf `behandlung#angebote` und `unterstuetzung#austausch`; Vertiefung «Wie die Diagnose beschrieben wird» (DSM-5-TR, ICD-11, Schweizer Kodierkontext mit F60.31, strukturierte Interviews). 02 `bedeutung`: Bestand, Verweissätze auf `verstehen#borderline` und `genesung#forschung`, «Was eine Diagnose nicht leistet». 03 `zweifel`: zwei Listen nebeneinander (`.bl-zwei`, schmal untereinander), «Klare Grenze» als Handlungsanleitung, danach der Verweis im Text. 04 `ohne-diagnose`: Wiedererkennen erlaubt keine Diagnose, Hausarztpraxis, «Sie müssen nicht warten, bis eine Diagnose gestellt ist» mit Verweissatz auf `index#beratung`, spezialisierte Stellen mit Verweissatz auf `behandlung#angebote`, «Bin ich auch betroffen?» mit «Diese Seite ist kein Selbstdiagnose-Werkzeug.» und Verweissatz auf `selbstfuersorge#warnsignale`. 05 `begleiterkrankungen`: Komorbidität erklärt, sechs Beispiele mit «Die Reihenfolge ist keine Rangfolge.», hervorgehoben «Mehrere Diagnosen heissen mehr Komplexität, nicht mehr Schuld. Sie müssen nicht sortieren, was was ist.», Differenzialdiagnostik in zwei Sätzen, Verweissatz auf `behandlung#therapieformen`, Unterkapitel «Depression» (nicht selbst unterscheiden, Beobachtungen benennen, Sorge nicht verharmlosen, eigene Belastung mit Verweissatz auf `selbstfuersorge#unterstuetzung`) und «Wenn Suizidgedanken dazukommen» (NICE-Gruppenbefund, professionelle Einschätzung, Handlungsanleitung, Verweis im Text, Verweissatz auf `krise#suizid`); Vertiefungen «Mögliche Hinweise auf eine depressive Phase» und «Weitere Begleiterkrankungen kurz». Quellenblock mit 13 Einträgen. `visualPlan` `v-di-abklaerung` mit der `reason` des Auftrags |
+| 4 `behandlung` | umgesetzt, Gliederung wie vorgeschlagen, kleine Abweichungen (Entscheide Nr. 5 bis 9) | Kopf: Einleitung des Bestands und «Behandlung kann Veränderung unterstützen.» (vorgemerkt). 01 `rollen`: «Was passt, hängt von Wünschen, Einwilligung, Situation und verfügbaren Kräften ab.», drei Rollen über die volle Breite in der Reihenfolge betroffene Person, Fachpersonen, Angehörige, je «Kann beitragen» und «Nicht zu erwarten», alles sichtbar, kein `figure`; bei «Angehörige» › «Nicht zu erwarten» die Punkte aus «Was Ihre Rolle ausdrücklich nicht ist», «Fortschritt kontrollieren» und «Behandlungsfortschritt nicht kontrollieren oder überwachen» als ein Punkt; danach die drei Kernsätze, hervorgehoben «Sie müssen eine Therapie weder zum Funktionieren bringen noch ihren Rahmen mittragen. …» und der Verweissatz auf `rolle#anbieten`. Grundlage (Linehan 1993, Gunderson und Hoffman 2005, AWMF 2022) im Quellenblock. 02 `kontakt`: drei Informationswege als Begriffsliste, Handlungsanleitung und Verweis im Text, «Die eigene Rolle und Ansprechwege klären» mit den vier Fragen sichtbar, sechs Vertiefungen (fünf Situationen und Musterbrief); in «Nach einer Krise» nur Entlassung und Austrittsbericht, dazu Verweissatz auf `krise#danach`. 03 `therapieformen`: Einordnung der Forschung, fünf Therapieformen als Begriffsliste mit je einem Satz, drei Settings, Unterkapitel «Begleiterkrankungen und Medikamente» (Abschnitt 4 b im Wortlaut, danach «Medikamente werden nur gemeinsam mit der behandelnden Fachperson geändert.»), Vertiefung «Programme für Angehörige». 04 `rueckschlaege`: Bestand, «Wenn Therapie gerade schwierig ist», «Was Sie tun können» mit «Therapie als Möglichkeit ansprechen, nicht als Drohung», offene Fragen, Dolmetschung, Verweissatz auf `genesung#verlauf`. 05 `angebote`: Angebotsliste (Abschnitt 5). 06 `wartezeit`: vier Schritte, bei Schritt 4 Handlungsanleitung und Verweis im Text, Verweissätze auf `unterstuetzung#kantone` und `#beratung`. Quellenblock mit 17 Einträgen. `visualPlan` `v-be-rollen` mit der `reason` des Auftrags |
+| 5 Angebotsliste | umgesetzt | Einleitung im Wortlaut des Auftrags («Die Liste ist nicht abschliessend. …», Kosten, «Aktuelle Bedingungen und Anmeldung stehen auf der Website des Angebots.»). Sechs Einträge mit Name, einem Satz, «Für: …» und Link; Adressen wie in der Tabelle des Auftrags (Prüfungen unten). Hinweise der Tabelle in der Liste «Zur Prüfung» (Nr. 15) |
+| 6 Korrekturen | umgesetzt | `genesung` › `einfluesse`: «Medikamente werden nur gemeinsam mit der behandelnden Fachperson geändert.» und nach «… braucht eine individuelle fachliche Abklärung.» der Verweissatz mit Link auf `diagnose.html#begleiterkrankungen`; `genesung.md` Nr. 163 mit diesem Ort. `unterstuetzung` › `austausch`: neuer Eintrag nach VASK Zürich mit dem Bestandstext, «Teilnahmebedingungen und Anmeldung stehen auf der Website.» und Link; im Abgleich `diagnose.md` Nr. 187 bis 191 mit Ort `unterstuetzung#austausch`. Sonst bleiben beide Seiten wie gebaut. `git diff --word-diff` (nur diese Stellen): `genesung`: [-Änderungen-] {+Medikamente werden+} nur {+gemeinsam+} mit der behandelnden [-Fachperson.-] {+Fachperson geändert.+} und {+Welche Begleiterkrankungen vorkommen können, steht auf der Seite «Diagnose und Begleiterkrankungen» im Abschnitt «Begleiterkrankungen».+}; `unterstuetzung`: {+Gruppe für Eltern von Jugendlichen mit Borderline · Für Eltern jugendlicher Betroffener gibt es … umgehen lernen. Teilnahmebedingungen und Anmeldung stehen auf der Website. · Website: Persönlichkeitsstörungen bei Jugendlichen auf www.pukzh.ch+} |
+| 7 `site.config.json` | umgesetzt | `diagnose` und `behandlung`: `status` «published», `primaryTask`, `description`, `sensitiveTopics` (`diagnose`: «selbstgefaehrdung», «akute-krise»; `behandlung`: dazu «gewalt» wegen «Gewaltgespräche»; ohne die Einträge blockiert `safety-contract`), `visualPlan` mit einer Zeile je Abschnitt und dem Quellenblock (6 und 7 Zeilen), alle Format `text`; `navLabel` `null`; die Zeilen `v-diagnose-geplant` und `v-behandlung-geplant` sind weg |
+| 8 Zur Prüfung | Liste unten | Tabelle «Zur Prüfung durch die Fachstelle» mit Bestandszitat |
+| 9 Danach | bestanden, Abweichungen siehe unten | Prüfungen unten. Nicht möglich: die Ziele der externen Links online aufrufen (Netzwerkrichtlinie dieser Umgebung, `CONNECT` abgelehnt); geprüft ist, dass jede Adresse der Adresse in Abschnitt 5 des Auftrags oder des Bestands entspricht |
+
+### Etappe 2c-2: Prüfungen nach Abschnitt 9
+
+- **`node tools/build.mjs`:** 0 blockierend, 6 Hinweise: 1 × `visual-approval` (`v-ge-trieb`), 3 × `placeholder-approval`, `site-url`, `review-report`.
+- **`node tools/gate.mjs --selftest`:** 53/53 bestanden.
+- **`node tools/gate.mjs --production`:** 5 blockierend und 1 Hinweis (`site-url`), wie erwartet: 1 × `visual-approval` («Ein neuer Trieb»), 3 × `placeholder-approval` (`fragen`, `quellen`, `ueber`), 1 × `review-report`.
+- **`node abgleich/pruefe-abgleich.mjs`:** 6067 Zeilen, 0 ohne Fundstelle (vorher 5342; dazu 388 + 17 in `diagnose.md`, 291 + 29 in `behandlung.md`). Vor dem Nachführen der Bemerkungen meldete es 11 Zeilen ohne Fundstelle (Zitate in Bemerkungen).
+- **Bildschirmfotos, angesehen** (68 Fotos): die Schritte (`diagnose` › `abklaerung`), die zwei Listen (`zweifel`) und die drei Rollen (`behandlung` › `rollen`) bei 1280 und 360 px, Standard und «kontrast»; jede Vertiefung offen bei 1280 und 360 px in beiden Themes (`diagnose`: «Wie die Diagnose beschrieben wird», «Mögliche Hinweise auf eine depressive Phase», «Weitere Begleiterkrankungen kurz», «Quellen zu dieser Seite»; `behandlung`: fünf Situationen, «Musterbrief für einen ersten Kontakt», «Programme für Angehörige», «Quellen zu dieser Seite»); dazu `genesung` › `einfluesse` und `unterstuetzung` › `austausch`.
+  - Schritte: senkrechte Linie mit Punkten wie die sechs Stufen auf `kommunizieren`; «Ihre Rolle» klein über einer Zeile mit blauer Linie; schmal ohne Abschneiden.
+  - Rollen: breit drei Spalten mit Linie oben, schmal untereinander; «Kontakt anbieten, wenn er gewünscht und für Sie tragbar ist» und «auf Wunsch bei Behandlungsschritten unterstützen» brechen sauber um.
+  - Zwei Listen: bei 1280 px nebeneinander, bei 360 px untereinander.
+  - «kontrast»: Linien und Punkte dunkler, nichts verschwindet.
+- **Überlauf:** 320, 360, 375, 414, 640, 768, 1024, 1280 und 1440 px, Vertiefungen zu und offen, `diagnose`, `behandlung`, `genesung` und `unterstuetzung` in beiden Themes (72 Messungen): kein waagrechter Überlauf, kein Element breiter als das Fenster. Zoom 200 % (640 px bei Faktor 2 und 1280 px mit Schriftgrösse 200 %), alle vier Seiten: 0 px Überlauf.
+- **Kontraste:** alle Textelemente mit eigenem Text in `main`, Kopf und Fusszeile der vier Seiten, beide Themes, 1280 und 360 px, Vertiefungen offen: keines unter AA; tiefster Wert 4,71 : 1 (Link der Absenderin, wie 2c-1). Die kleinen Bezeichnungen «Schritt n», «Ihre Rolle», «Kann beitragen», «Nicht zu erwarten» (`--text-muted`, `type-caption`) liegen darüber.
+- **Tastatur** (1280 px, reduzierte Bewegung):
+  - Tabstopps bis zur Fusszeile: `diagnose` 30, `behandlung` 35, `genesung` 21 (vorher 20, ein Link mehr), `unterstuetzung` 22 (vorher 21); jeder mit sichtbarem Fokus und im Fenster; der erste ist «Zum Hauptinhalt».
+  - Reihenfolge wie beim Lesen: Kopf, Navigation, Absenderin, Kapitelübersicht, dann Links und Vertiefungen im Text, zuletzt «Quellen zu dieser Seite».
+  - Vertiefungen: Enter öffnet 4 von 4 und 8 von 8, Leertaste schliesst sie. Nach dem Laden läuft keine Animation.
+- **Ohne Skript:** 4 von 4 und 8 von 8 Panels sichtbar.
+- **Druck:** PDFs aus Chromium in acht Einstellungen je Seite (A4 und Letter; Rand 0 bis 25 mm; Skalierung 70 bis 100 %), alle zwölf gebauten Themenseiten und `index`; je Seite die letzte Zeile gegen alle Titel, Begriffe, Kicker und die Bezeichnungen der Schritte und Rollen. Ergebnis nach der Ergänzung der Druckregel: 0 Titel allein am Seitenende. Vorher stand auf `behandlung` der Kicker «02 · Behandlungsteam» allein am Ende von Seite 2 (A4 ohne Rand), der Titel oben auf Seite 3; die Druckregel hält jetzt Kicker und Titel zusammen. Die Prüfung meldet einmal «Substanzgebrauchsstörungen» am Ende von Seite 8 (`diagnose`, A4 ohne Rand); das ist der vierte Punkt der Liste der Begleiterkrankungen, kein Titel. Die freigegebenen Seiten am Stand `66d73b1` (alte Druckregel) haben in denselben Einstellungen keinen Kicker allein am Seitenende. Seitenzahl A4 ohne Rand: `diagnose` 14, `behandlung` 18; Vertiefungen und externe Links (mit Adresse) im Druck sichtbar.
+- **`node abgleich/bedienung.mjs`:** `diagnose` 30 Tabstopps, 17 739 px bei 360 px; `behandlung` 35 Tabstopps, 21 298 px; `genesung` 21, 14 299 px; `unterstuetzung` 22, 13 707 px. Übrige Seiten unverändert.
+- **Sprung über die Kapitelübersicht zum letzten Abschnitt** (letzter Eintrag, Klick, Abstand der Abschnittsoberkante vom Fensterrand): 1280 × 900, 1920 × 1080 und 360 × 800 px je 24 px auf `diagnose` (`#begleiterkrankungen`), `behandlung` (`#wartezeit`), `genesung` (`#freiwillig`) und `unterstuetzung` (`#buecher`).
+- **Externe Links** (alle in `main`, Linktext beschreibt das Ziel, kein `target="_blank"`):
+  - `behandlung`: `https://www.pukzh.ch/unsere-angebote/kinder-und-jugendpsychiatrie/behandlungsschwerpunkte/persoenlichkeitsstoerungen/` (HYPE Züri), `https://www.pukzh.ch/unsere-angebote/erwachsenenpsychiatrie/behandlungsschwerpunkte/persoenlichkeitsstoerungen/` (PUK, Erwachsene), `https://ipw.ch/angebot/kinder-jugendliche-junge-erwachsene/psychotherapiestation-fuer-junge-erwachsene`, `https://www.sanatorium-kilchberg.ch`, `https://www.clienia.ch/de/standorte/clienia-schloessli/stationen/a2/`, `https://www.dachverband-dbt.de/dbt-therapieangebote`, `https://www.bag.admin.ch/de/neuregelung-der-psychologischen-psychotherapie-ab-1-juli-2022` (Kosten, Schritt 2).
+  - `unterstuetzung`: neu `https://www.pukzh.ch/unsere-angebote/kinder-und-jugendpsychiatrie/behandlungsschwerpunkte/persoenlichkeitsstoerungen/` (Gruppe für Eltern).
+  - `diagnose`: keine.
+  - Jede Adresse ist die Adresse der Tabelle in Abschnitt 5 bzw. 6 des Auftrags (dort am 11.10.2026 aufgerufen) oder des Bestands (BAG). **Nicht prüfbar:** Erreichbarkeit heute (Netzwerkrichtlinie dieser Umgebung).
+- **Nicht prüfbar in dieser Umgebung:** reale Screenreader-Läufe, Hardwaretastatur und Touch.
+
+### Etappe 2c-2: Wörter im Lesefluss (Zählweise C1)
+
+C1 wie in 2c-1 (innerste `p`, `li`, `dt`, `dd` in `<main>`, ohne SVG, Text nur für Screenreader, Kapitelübersicht, Kicker, Eyebrow, «Abbildung n · …», Quellenzeilen und den Block «Quellen zu dieser Seite»; «im Lesefluss» ohne die Panels der Akkordeons; der Verweis im Text zählt mit). Skript dieser bauenden Sitzung im Browser. Es ergibt am Stand `66d73b1` genau die Werte von 2c-1 für `index` (232), `unterstuetzung` (1057), `rolle` (2627), `selbstfuersorge` (2130) und `krise` (1523); auf Seiten mit Abbildung zählt es 4 bis 15 Wörter weniger (`genesung` 1143 statt 1147), wie schon in der Freigabe 2b vermerkt. `diagnose` und `behandlung` haben keine Abbildung.
+
+| Seite | Kopf | Abschnitte (C1 im Lesefluss) | C1 im Lesefluss | Ziel | C1 mit Vertiefungen | `kennzahlen.mjs` gesamt (alt → neu) |
+| --- | ---: | --- | ---: | ---: | ---: | --- |
+| `diagnose` | 60 | `abklaerung` 420 · `bedeutung` 114 · `zweifel` 185 · `ohne-diagnose` 251 · `begleiterkrankungen` 508 | **1538** | etwa 1800 | 1867 | 3769 → 2165 |
+| `behandlung` | 39 | `rollen` 261 · `kontakt` 336 · `therapieformen` 318 · `rueckschlaege` 215 · `angebote` 200 · `wartezeit` 308 | **1677** | etwa 1800 | 2344 | 2696 → 2700 |
+| `genesung` | 55 | `einfluesse` 245 → 262 (übrige Abschnitte gleich) | 1147 → **1164** | etwa 1800 | 1224 → 1241 | 1475 → 1492 |
+| `unterstuetzung` | 39 | `austausch` 88 → 136 (übrige gleich) | 1057 → **1105** | etwa 1500 | 1270 → 1318 | 1338 → 1393 |
+
+Beide Ziele sind erreicht. «Alt» bei `diagnose` ist die Summe von `/verstehen/diagnostik` und `/verstehen/begleiterkrankungen`, bei `behandlung` nur `/unterstuetzen/therapie`; `behandlung` enthält zusätzlich die Angebote und «Kein Therapieplatz» aus `/verstehen/diagnostik`, deshalb 100 %. Absicherungen je 100 Wörter (`kennzahlen.mjs`): `diagnose` 2,10 → 2,03, `behandlung` 2,74 → 2,59. Semikolons im Fliesstext 20 → 0 und 11 → 0. Sätze mit Verneinung (`verneinung.mjs`): `diagnose` 81 von 378 (21 %) → 46 von 215 (21 %), `behandlung` 56 von 295 (19 %) → 48 von 290 (17 %). Die Werte für `genesung` und `unterstuetzung` vorher sind die von 2c-1; nachher ist die Differenz aus den geänderten Sätzen addiert (Skript: 1143 → 1160 und 1057 → 1105).
+
+### Etappe 2c-2: Verweise im Text
+
+Vier, wie erwartet. Jeder steht direkt nach der Handlungsanleitung, keiner in einer Vertiefung, höchstens einer je Abschnitt (Gate `inline-ref` ohne Befund).
+
+| Nr. | Seite › Abschnitt | Handlungsanleitung davor | Bestand |
+| ---: | --- | --- | --- |
+| 1 | `diagnose` › `zweifel` | «Klare Grenze: Bei akuter Gefahr, etwa bei Suizidgefahr, schwerer Selbstverletzung oder Gefahr für andere Menschen, ist die Frage nach der Diagnose nachrangig. Dann holen Sie Hilfe über den Notruf.» | `diagnose.md` Nr. 108, 109 |
+| 2 | `diagnose` › `begleiterkrankungen` | «Bei akuter Gefahr oder Hinweisen auf eine konkrete suizidale Absicht holen Sie sofort Hilfe über den Notruf.» (Unterkapitel «Wenn Suizidgedanken dazukommen») | `diagnose.md` Nr. 298, 312 |
+| 3 | `behandlung` › `kontakt` | «Bei möglicher akuter Gefahr holen Sie sofort Hilfe über den Notruf und warten nicht auf eine Rückmeldung per E-Mail.» (nach den drei Informationswegen) | `behandlung.md` Nr. 67; zusammengeführt Nr. 103, 121, 140 |
+| 4 | `behandlung` › `wartezeit` | «Bei akuter Gefahr oder unklarer Dringlichkeit warten Sie nicht auf einen Therapieplatz. Bei unmittelbarer Gefahr holen Sie Hilfe über den Notruf.» (Schritt 4, der Verweis im selben Listenpunkt wie auf `grenzen` › `gewalt`) | `diagnose.md` Nr. 179, `behandlung.md` Nr. 198; zusammengeführt Nr. 272 |
+
+### Etappe 2c-2: Neue Sätze zur Freigabe
+
+Alle Sätze von `diagnose` und `behandlung`, die nicht wörtlich im Bestand der Seite stehen (Vergleich je Satz mit dem Bestand, Skript der bauenden Sitzung), dazu die Titel und Bezeichnungen, die neu sind oder anders lauten, und die neuen Sätze auf `genesung` und `unterstuetzung`. **Art:** neu · Verdichtung · umformuliert · gekürzt · Verweissatz · Auftrag · Satzzeichen (nur Satzzeichen, Gross- und Kleinschreibung, Paarform statt Doppelpunkt, «und» statt «&» oder Satzteilung) · Bezeichnung. **Abgleich:** d = `diagnose.md`, b = `behandlung.md`, g = `genesung.md`.
+
+**`diagnose`**
+
+| Nr. | Ort | Satz | Art | Abgleich |
+| ---: | --- | --- | --- | --- |
+| 1 | `diagnose` › `kopf` | «Diagnose und Begleiterkrankungen» | Auftrag | d1 |
+| 2 | `diagnose` › `kopf` | «Diese Seite zeigt, wer eine Borderline-Abklärung üblicherweise durchführt, wie sie abläuft und was eine Diagnose für Sie als Angehörige bedeuten kann.» | umformuliert | d2, d19 |
+| 3 | `diagnose` › `kopf` | «Die Seite ist keine Anleitung, jemanden zur Diagnose zu drängen, sondern eine Orientierung in einer Phase, in der vieles unklar ist.» | umformuliert | d3 |
+| 4 | `diagnose` › `kopf` | «Ausserdem geht es um Begleiterkrankungen: Bei vielen, aber nicht allen Menschen mit Borderline bestehen zusätzlich weitere psychische Erkrankungen.» | Verdichtung | d235 |
+| 5 | `diagnose` › `abklaerung` | «Eine vertiefte Abklärung findet je nach Fragestellung und Versorgungsweg zum Beispiel in psychiatrisch-psychotherapeutischen Praxen, Ambulatorien, spezialisierten Angeboten oder Kliniken statt.» | umformuliert | d22, d26 |
+| 6 | `diagnose` › `abklaerung` | «Schritt 1 Erste Anlaufstelle» | Bezeichnung | d47 |
+| 7 | `diagnose` › `abklaerung` | «Mögliche erste Anlaufstellen sind die Hausarztpraxis, eine psychiatrische oder psychotherapeutische Praxis oder ein Ambulatorium.» | neu | d394 |
+| 8 | `diagnose` › `abklaerung` | «Die Hausarztpraxis oder eine andere Facharztpraxis kann Beschwerden einordnen, andere Ursachen mitprüfen und an eine geeignete Fachperson überweisen.» | umformuliert | d24 |
+| 9 | `diagnose` › `abklaerung` | «Den ersten Kontakt dürfen Sie anregen oder begleiten.» | Satzzeichen | d47 |
+| 10 | `diagnose` › `abklaerung` | «Schritt 2 Fachliche Abklärung» | Bezeichnung | d49 |
+| 11 | `diagnose` › `abklaerung` | «Dafür qualifizierte Fachpersonen klären ab, je nach Versorgungsweg in Praxis, Ambulatorium oder Klinik.» | umformuliert | d49 |
+| 12 | `diagnose` › `abklaerung` | «In Gesprächen geht es um Lebensgeschichte, aktuelle Beschwerden und Beziehungsmuster, oft auch in einem strukturierten Interview.» | umformuliert | d32 |
+| 13 | `diagnose` › `abklaerung` | «Geprüft werden auch andere Erkrankungen, die ähnliche Muster zeigen können.» | umformuliert | d80 |
+| 14 | `diagnose` › `abklaerung` | «Das ist ein normaler Teil sorgfältiger Diagnostik und keine Verzögerungstaktik.» | umformuliert | d81 |
+| 15 | `diagnose` › `abklaerung` | «Schritt 3 Mehrere Gespräche» | Bezeichnung | d50 |
+| 16 | `diagnose` › `abklaerung` | «Geduld ist hier kein Nichtstun.» | Satzzeichen | d51 |
+| 17 | `diagnose` › `abklaerung` | «Schritt 4 Rückmeldung und Einordnung» | Bezeichnung | d52 |
+| 18 | `diagnose` › `abklaerung` | «Die Fachperson ordnet die Beschwerden ein und grenzt sie von anderen Erkrankungen ab.» | umformuliert | d52 |
+| 19 | `diagnose` › `abklaerung` | «Diese Einordnung sollte in einem Gespräch erklärt werden, mit Unsicherheiten, Bedeutung und möglichen nächsten Schritten.» | umformuliert | d42 |
+| 20 | `diagnose` › `abklaerung` | «Ob Sie einbezogen werden, hängt vom Einverständnis der betroffenen Person ab.» | umformuliert | d53 |
+| 21 | `diagnose` › `abklaerung` | «Das kann schwer sein.» | Satzzeichen | d53 |
+| 22 | `diagnose` › `abklaerung` | «Schritt 5 Behandlungsplanung» | Bezeichnung | d54 |
+| 23 | `diagnose` › `abklaerung` | «Danach entsteht ein Behandlungsplan, oft mit einer störungsspezifischen Psychotherapie wie der Dialektisch-Behavioralen Therapie (DBT).» | umformuliert | d54 |
+| 24 | `diagnose` › `abklaerung` | «Fragen Sie, wie Sie unterstützen können.» | Satzzeichen | d55 |
+| 25 | `diagnose` › `abklaerung` | «Wer in der Behandlung was beitragen kann, steht auf der Seite «Behandlung und Ihre Rolle darin» im Abschnitt «Wer was beitragen kann».» | Verweissatz | d395 |
+| 26 | `diagnose` › `abklaerung` | «Eine Fachperson der Kinder- und Jugendpsychiatrie beurteilt Beschwerden, Belastung und Entwicklungsverlauf gemeinsam.» | umformuliert | d56, d135 |
+| 27 | `diagnose` › `abklaerung` | «Manche Muster können zur Entwicklung gehören, andere brauchen gezielte Unterstützung.» | Satzzeichen | d136 |
+| 28 | `diagnose` › `abklaerung` | «Eine Momentaufnahme reicht für die Einordnung nicht aus.» | Satzzeichen | d136 |
+| 29 | `diagnose` › `abklaerung` | «Auch urteilsfähige Minderjährige haben ein Recht auf Vertraulichkeit.» | Satzzeichen | d58 |
+| 30 | `diagnose` › `abklaerung` | «Konkrete Fragen klären Sie mit der zuständigen Fachperson.» | Auftrag | d58 |
+| 31 | `diagnose` › `abklaerung` | «Das Frühinterventionsangebot HYPE Züri für Jugendliche steht auf der Seite «Behandlung und Ihre Rolle darin» im Abschnitt «Angebote im Kanton Zürich».» | Verweissatz | d396 |
+| 32 | `diagnose` › `abklaerung` | «Eine Gruppe für Eltern von Jugendlichen mit Borderline steht auf der Seite «Unterstützung finden» im Abschnitt «Austausch mit anderen Angehörigen».» | Verweissatz | d397 |
+| 33 | `diagnose` › `abklaerung` | «Wie die Diagnose beschrieben wird» | Auftrag | d398 |
+| 34 | `diagnose` › `abklaerung` | «Fachpersonen beschreiben Diagnosen mit Klassifikationssystemen.» | neu | d399 |
+| 35 | `diagnose` › `abklaerung` | «Für Borderline sind das vor allem das DSM-5-TR der American Psychiatric Association und die ICD-11 der Weltgesundheitsorganisation.» | neu | d399 |
+| 36 | `diagnose` › `abklaerung` | «DSM-5-TR und ICD-11 beschreiben nicht dasselbe Modell.» | Satzzeichen | d400 |
+| 37 | `diagnose` › `abklaerung` | «Geprüft werden neun Kriterien.» | umformuliert | d36, d60 |
+| 38 | `diagnose` › `abklaerung` | «Mindestens fünf müssen als anhaltendes und situationsübergreifendes Muster vorliegen.» | Satzzeichen | d36, d60 |
+| 39 | `diagnose` › `abklaerung` | «Zuerst wird der Schweregrad einer Persönlichkeitsstörung bestimmt.» | umformuliert | d37, d61 |
+| 40 | `diagnose` › `abklaerung` | «Das Borderline-Muster kann anschliessend mit dem Zusatzcode 6D11.5 beschrieben werden.» | Satzzeichen | d37, d61 |
+| 41 | `diagnose` › `abklaerung` | «Das ist eine begrenzte Vorgabe für die stationäre Kodierung.» | Satzzeichen | d64 |
+| 42 | `diagnose` › `abklaerung` | «Diese Vorgabe bedeutet nicht, dass ICD-10-GM, DSM-5-TR und ICD-11 inhaltlich gleich aufgebaut sind oder in jedem Versorgungssetting identisch verwendet werden.» | umformuliert | d64 |
+| 43 | `diagnose` › `abklaerung` | «Verfahren wie SCID-5-PD oder IPDE prüfen die Kriterien systematisch.» | Satzzeichen | d34 |
+| 44 | `diagnose` › `abklaerung` | «Diese Interviews sind keine Selbstauskunft, sondern ein Fachgespräch.» | umformuliert | d34 |
+| 45 | `diagnose` › `bedeutung` | «Was die Diagnose für Sie bedeuten kann» | Auftrag | d84 |
+| 46 | `diagnose` › `bedeutung` | «Die Diagnose kann helfen, eine passende strukturierte Psychotherapie zu planen und wiederkehrende Schwierigkeiten fachlich einzuordnen.» | umformuliert | d86 |
+| 47 | `diagnose` › `bedeutung` | «Eine Diagnose ist aber weder Voraussetzung für jede Hilfe noch eine vollständige Erklärung eines Menschen oder einer Beziehung.» | umformuliert | d87 |
+| 48 | `diagnose` › `bedeutung` | «Was die Diagnose beschreiben kann, steht auf der Seite «Borderline verstehen» im Abschnitt «Was die Diagnose beschreiben kann».» | Verweissatz | d401 |
+| 49 | `diagnose` › `bedeutung` | «Was Langzeitstudien über Besserung zeigen, steht auf der Seite «Genesung» im Abschnitt «Was die Forschung zeigt».» | Verweissatz | d89 |
+| 50 | `diagnose` › `bedeutung` | «Eine Diagnose hilft nicht automatisch der Beziehung.» | umformuliert | d90 |
+| 51 | `diagnose` › `bedeutung` | «Diese Erwartung ist verständlich, aber hoch.» | Satzzeichen | d92 |
+| 52 | `diagnose` › `bedeutung` | «Die Beziehung zu klären, bleibt eigene Arbeit, auch nachdem die Diagnose feststeht.» | umformuliert | d92 |
+| 53 | `diagnose` › `zweifel` | «Wenn die Diagnose nicht geteilt wird» | Satzzeichen | d93 |
+| 54 | `diagnose` › `zweifel` | «Auch eine fachlich gestellte Diagnose darf hinterfragt werden.» | Satzzeichen | d96 |
+| 55 | `diagnose` › `zweifel` | «Eine zweite fachliche Einschätzung ist legitim.» | Satzzeichen | d96 |
+| 56 | `diagnose` › `zweifel` | «offene Fragen mit der behandelnden Fachperson klären oder eine zweite fachliche Einschätzung einholen, sofern die Person das möchte» | Satzzeichen | d106 |
+| 57 | `diagnose` › `zweifel` | «bei der Fachstelle Angehörigenarbeit der PUK nach eigener Beratung fragen» | Satzzeichen | d107 |
+| 58 | `diagnose` › `zweifel` | «Klare Grenze: Bei akuter Gefahr, etwa bei Suizidgefahr, schwerer Selbstverletzung oder Gefahr für andere Menschen, ist die Frage nach der Diagnose nachrangig.» | umformuliert | d108 |
+| 59 | `diagnose` › `zweifel` | «Dann holen Sie Hilfe über den Notruf.» | umformuliert | d109 |
+| 60 | `diagnose` › `ohne-diagnose` | «Wenn noch keine Diagnose gestellt ist» | Satzzeichen | d120 |
+| 61 | `diagnose` › `ohne-diagnose` | «Vielleicht erkennen Sie Verhaltensweisen oder Erfahrungen aus den Beschreibungen auf dieser Website wieder.» | umformuliert | d121 |
+| 62 | `diagnose` › `ohne-diagnose` | «Das kann ein Anlass sein, Beobachtungen zu benennen und Beratung zu suchen.» | umformuliert | d121 |
+| 63 | `diagnose` › `ohne-diagnose` | «Mit der Hausarztpraxis sprechen» | Bezeichnung | d124 |
+| 64 | `diagnose` › `ohne-diagnose` | «Die Hausarztpraxis ist eine mögliche erste Anlaufstelle für Einschätzung, erste Abklärungen und Überweisung.» | umformuliert | d125 |
+| 65 | `diagnose` › `ohne-diagnose` | «Welche Aufgaben die Praxis selbst übernimmt, hängt von Qualifikation, Situation und Versorgungsweg ab.» | umformuliert | d126 |
+| 66 | `diagnose` › `ohne-diagnose` | «Die Fachstelle Angehörigenarbeit der PUK berät auch dann, wenn die Diagnostik noch nicht abgeschlossen ist oder mehrere Diagnosen im Raum stehen.» | umformuliert | d368 |
+| 67 | `diagnose` › `ohne-diagnose` | «Wie die Fachstelle Angehörigenarbeit der PUK berät, steht auf der Startseite im Abschnitt «Beratung für Sie».» | Verweissatz | d128, d195, d369, b74 |
+| 68 | `diagnose` › `ohne-diagnose` | «Spezialisierte Stellen anfragen» | Bezeichnung | d129 |
+| 69 | `diagnose` › `ohne-diagnose` | «Wenn die betroffene Person eine fachliche Abklärung wünscht, kann eine direkte Anfrage bei einer spezialisierten Stelle sinnvoll sein.» | umformuliert | d130 |
+| 70 | `diagnose` › `ohne-diagnose` | «Angebote für Abklärung und Therapie stehen auf der Seite «Behandlung und Ihre Rolle darin» im Abschnitt «Angebote im Kanton Zürich».» | neu | d27, d402 |
+| 71 | `diagnose` › `ohne-diagnose` | «Nach langer Belastung fragen sich manche Angehörige, ob sie selbst eine psychische Erkrankung entwickelt haben, etwa eine Erschöpfungsdepression, Angststörungen oder Schlafstörungen.» | Satzzeichen | d112 |
+| 72 | `diagnose` › `ohne-diagnose` | «Ihre Hausarztpraxis oder eine Psychotherapeutin oder ein Psychotherapeut kann eine Anlaufstelle sein.» | umformuliert | d119 |
+| 73 | `diagnose` › `ohne-diagnose` | «Das ist keine Pflicht, aber eine reale Option.» | umformuliert | d119 |
+| 74 | `diagnose` › `ohne-diagnose` | «Wie Sie eigene Überlastung erkennen, steht auf der Seite «Auf sich achten» im Abschnitt «Warnsignale für Überlastung».» | Verweissatz | d117 |
+| 75 | `diagnose` › `ohne-diagnose` | «Wo Sie Beratung finden, steht auf der Seite «Unterstützung finden» im Abschnitt «Beratung für Angehörige».» | Verweissatz | d118, d184, d365, b203 |
+| 76 | `diagnose` › `begleiterkrankungen` | «Komorbidität ist der medizinische Begriff für Begleiterkrankungen.» | umformuliert | d238 |
+| 77 | `diagnose` › `begleiterkrankungen` | «Er bedeutet, dass eine Person gleichzeitig oder im Verlauf mehrere Erkrankungen hat.» | umformuliert | d238 |
+| 78 | `diagnose` › `begleiterkrankungen` | «Bei Menschen mit Borderline kommen weitere psychische Diagnosen häufig vor, aber nicht bei allen.» | umformuliert | d239, d257, d322 |
+| 79 | `diagnose` › `begleiterkrankungen` | «In Studien werden unter anderem diese Begleiterkrankungen beschrieben.» | gekürzt | d241, d271 |
+| 80 | `diagnose` › `begleiterkrankungen` | «Die Reihenfolge ist keine Rangfolge.» | umformuliert | d218, d242, d266, d272 |
+| 81 | `diagnose` › `begleiterkrankungen` | «Mehrere Diagnosen heissen mehr Komplexität, nicht mehr Schuld.» | Satzzeichen | d249, d267 |
+| 82 | `diagnose` › `begleiterkrankungen` | «Davon zu unterscheiden ist die Differenzialdiagnostik: Bei der Abklärung prüfen Fachpersonen, ob ähnliche Muster zu einer anderen Erkrankung gehören, etwa zu bipolaren Störungen, einer PTBS, ADHS oder dissoziativen Störungen.» | umformuliert | d80, d82 |
+| 83 | `diagnose` › `begleiterkrankungen` | «Manche dieser Erkrankungen, zum Beispiel eine PTBS, können auch zusätzlich zu Borderline bestehen.» | umformuliert | d82 |
+| 84 | `diagnose` › `begleiterkrankungen` | «Wie Begleiterkrankungen behandelt werden und was für Medikamente gilt, steht auf der Seite «Behandlung und Ihre Rolle darin» im Abschnitt «Therapieformen».» | Verweissatz | d403 |
+| 85 | `diagnose` › `begleiterkrankungen` | «Depressive Erkrankungen werden in Studien zu Borderline häufig beschrieben.» | gekürzt | d278 |
+| 86 | `diagnose` › `begleiterkrankungen` | «Die älteren Studien dazu untersuchten Menschen, die zu Beginn stationär behandelt wurden.» | umformuliert | d279 |
+| 87 | `diagnose` › `begleiterkrankungen` | «Die Befunde dieser Studien zeigen nicht, wie häufig Depressionen bei allen Menschen mit Borderline sind, und sie sind keine persönliche Prognose.» | umformuliert | d280 |
+| 88 | `diagnose` › `begleiterkrankungen` | «Diese Unterscheidung ist Aufgabe der behandelnden Fachperson.» | Verdichtung | d281, d306 |
+| 89 | `diagnose` › `begleiterkrankungen` | «Was Sie tun können: Benennen Sie beobachtbare Veränderungen, und verharmlosen Sie Ihre Sorge nicht.» | umformuliert | d307 |
+| 90 | `diagnose` › `begleiterkrankungen` | «Wenn der Rückzug länger dauert, mehr Beschwerden dazukommen oder Hoffnungslosigkeit zentraler wird:» | umformuliert | d308 |
+| 91 | `diagnose` › `begleiterkrankungen` | «Sprechen Sie Ihre Sorge ruhig an, ohne zu drängen oder zu drohen.» | umformuliert | d309 |
+| 92 | `diagnose` › `begleiterkrankungen` | «Regen Sie, wenn möglich und gewünscht, gemeinsam eine fachliche Einschätzung an.» | umformuliert | d310 |
+| 93 | `diagnose` › `begleiterkrankungen` | «Bei Fragen zur Schweigepflicht oder zur eigenen Entlastung können Sie sich unabhängig beraten lassen.» | umformuliert | d311 |
+| 94 | `diagnose` › `begleiterkrankungen` | «Angehörige sind nicht schuld an der Erkrankung und nicht für die Genesung verantwortlich.» | Auftrag | d314, d315 |
+| 95 | `diagnose` › `begleiterkrankungen` | «Was Schuld von Verantwortung unterscheidet, steht auf der Seite «Ihre Rolle» im Abschnitt «Schuld, Verantwortung und was dazwischen liegt».» | Verweissatz | d316, d317 |
+| 96 | `diagnose` › `begleiterkrankungen` | «Eigene Erschöpfung ist kein Zeichen von Schwäche.» | Satzzeichen | d320, d363 |
+| 97 | `diagnose` › `begleiterkrankungen` | «Wie Sie für sich Unterstützung finden, steht auf der Seite «Auf sich achten» im Abschnitt «Auch Sie brauchen Unterstützung».» | Verweissatz | d364 |
+| 98 | `diagnose` › `begleiterkrankungen` | «Wenn Suizidgedanken dazukommen» | Auftrag | d293 |
+| 99 | `diagnose` › `begleiterkrankungen` | «Die britische Behandlungsleitlinie NICE beschreibt einen beobachteten Zusammenhang zwischen Borderline mit einer zusätzlichen Depression (Major Depression) und Suizidversuchen.» | umformuliert | d294 |
+| 100 | `diagnose` › `begleiterkrankungen` | «Suizidale Aussagen oder Hinweise auf konkrete Pläne brauchen eine professionelle Einschätzung, unabhängig von ihrer diagnostischen Zuordnung.» | umformuliert | d270, d296 |
+| 101 | `diagnose` › `begleiterkrankungen` | «Bei akuter Gefahr oder Hinweisen auf eine konkrete suizidale Absicht holen Sie sofort Hilfe über den Notruf.» | umformuliert | d298, d312 |
+| 102 | `diagnose` › `begleiterkrankungen` | «Wie Sie Suizidgedanken direkt ansprechen können, steht auf der Seite «Krisen begleiten» im Abschnitt «Wenn Suizidgedanken ein Thema sind».» | Verweissatz | d300 |
+| 103 | `diagnose` › `begleiterkrankungen` | «Diese Hinweise können im Zusammenhang mit Borderline auf eine depressive Phase deuten.» | neu | d404 |
+| 104 | `diagnose` › `begleiterkrankungen` | «Die Hinweise ersetzen keine fachliche Beurteilung.» | neu | d404 |
+| 105 | `diagnose` › `begleiterkrankungen` | «Weitere Begleiterkrankungen kurz» | Auftrag | d321 |
+| 106 | `diagnose` › `begleiterkrankungen` | «Diese Übersicht ist bewusst knapp und ohne Rangfolge.» | gekürzt | d323 |
+| 107 | `diagnose` › `begleiterkrankungen` | «Eine PTBS kann gleichzeitig bestehen oder bei der Differenzialdiagnostik geprüft werden.» | umformuliert | d328 |
+| 108 | `diagnose` › `begleiterkrankungen` | «ADHS kann gleichzeitig bestehen, und einzelne Merkmale wie Impulsivität oder Schwierigkeiten mit der Emotionsregulation können sich überschneiden.» | umformuliert | d338, d339 |
+| 109 | `diagnose` › `begleiterkrankungen` | «Aus der Borderline-Diagnose allein lässt sich ADHS nicht ableiten, eine Abklärung berücksichtigt unter anderem Entwicklungsgeschichte, Beginn und situationsübergreifendes Auftreten.» | umformuliert | d340 |
+
+**`behandlung`**
+
+| Nr. | Ort | Satz | Art | Abgleich |
+| ---: | --- | --- | --- | --- |
+| 110 | `behandlung` › `kopf` | «Behandlung und Ihre Rolle darin» | Auftrag | b2 |
+| 111 | `behandlung` › `kopf` | «Behandlung kann Veränderung unterstützen.» | Auftrag | b291 |
+| 112 | `behandlung` › `rollen` | «Wer was beitragen kann» | Auftrag | b16, b17 |
+| 113 | `behandlung` › `rollen` | «Die betroffene Person, Fachpersonen und Angehörige können Unterschiedliches beitragen, und von jeder Rolle ist manches nicht zu erwarten.» | neu | b297 |
+| 114 | `behandlung` › `rollen` | «Kann beitragen» | Auftrag | b21 |
+| 115 | `behandlung` › `rollen` | «eigene Ziele und Wünsche für die Behandlung benennen» | Satzzeichen | b40 |
+| 116 | `behandlung` › `rollen` | «Fertigkeiten (Skills) ausprobieren, wenn sie passen» | umformuliert | b41 |
+| 117 | `behandlung` › `rollen` | «Verantwortung für eigenes Handeln übernehmen, soweit es möglich ist» | umformuliert | b42 |
+| 118 | `behandlung` › `rollen` | «Warnzeichen mitteilen, wenn das möglich und gewünscht ist» | umformuliert | b43 |
+| 119 | `behandlung` › `rollen` | «Nicht zu erwarten» | Auftrag | b27, b243 |
+| 120 | `behandlung` › `rollen` | «allein für die Qualität der Beziehung sorgen» | umformuliert | b44 |
+| 121 | `behandlung` › `rollen` | «die Behandlung gemeinsam planen und fachlich begleiten» | umformuliert | b32 |
+| 122 | `behandlung` › `rollen` | «Skills anbieten und vermitteln, zum Beispiel in der DBT» | umformuliert | b33 |
+| 123 | `behandlung` › `rollen` | «Therapieziele mit der betroffenen Person vereinbaren» | umformuliert | b35 |
+| 124 | `behandlung` › `rollen` | «alle Beziehungsfragen stellvertretend lösen» | Satzzeichen | b38 |
+| 125 | `behandlung` › `rollen` | «rund um die Uhr erreichbar sein» | Satzzeichen | b39 |
+| 126 | `behandlung` › `rollen` | «eigene Grenzen mitteilen» | umformuliert | b23 |
+| 127 | `behandlung` › `rollen` | «auf Wunsch bei Behandlungsschritten unterstützen» | Satzzeichen | b24, b210 |
+| 128 | `behandlung` › `rollen` | «eigene Entlastung suchen» | Satzzeichen | b25 |
+| 129 | `behandlung` › `rollen` | «den Fortschritt kontrollieren oder überwachen» | umformuliert | b29, b247 |
+| 130 | `behandlung` › `rollen` | «Motivation dauerhaft aufrechterhalten» | umformuliert | b246 |
+| 131 | `behandlung` › `rollen` | «Therapiesprache ständig in den Alltag übersetzen» | umformuliert | b244 |
+| 132 | `behandlung` › `rollen` | «Behandlung liegt bei der betroffenen Person und den Fachpersonen.» | Auftrag | b48 |
+| 133 | `behandlung` › `rollen` | «Was Sie freiwillig anbieten können, steht auf der Seite «Ihre Rolle» im Abschnitt «Was Sie anbieten können und was nicht Ihre Aufgabe ist».» | Verweissatz | b55, b56, b211, b300 |
+| 134 | `behandlung` › `kontakt` | «Drei Wege sind zu unterscheiden:» | umformuliert | b61 |
+| 135 | `behandlung` › `kontakt` | «Wie die Fachstelle Angehörigenarbeit der PUK berät, steht auf der Startseite im Abschnitt «Beratung für Sie».» | Verweissatz | d128, d195, d369, b74 |
+| 136 | `behandlung` › `kontakt` | «Bei möglicher akuter Gefahr holen Sie sofort Hilfe über den Notruf und warten nicht auf eine Rückmeldung per E-Mail.» | umformuliert | b67, b103, b121, b140 |
+| 137 | `behandlung` › `kontakt` | «Welche eigenen konkreten Beobachtungen möchten Sie, möglichst mit Wissen der betroffenen Person, in ein gemeinsames Gespräch einbringen?» | Satzzeichen | b136 |
+| 138 | `behandlung` › `kontakt` | «Welche Unterstützung haben alle Beteiligten miteinander vereinbart, und was gehört ausdrücklich nicht zu Ihrer Rolle?» | Satzzeichen | b138 |
+| 139 | `behandlung` › `kontakt` | «Das Behandlungsteam entscheidet gemeinsam mit ihr über Ziele und Verlauf.» | Satzzeichen | b142 |
+| 140 | `behandlung` › `kontakt` | «Ich werde nicht zu Sitzungen eingeladen» | Auftrag | b81 |
+| 141 | `behandlung` › `kontakt` | «Sprechen Sie Ihren Wunsch nach Einbezug offen an, und respektieren Sie die Grenzen der Schweigepflicht.» | Satzzeichen | b88 |
+| 142 | `behandlung` › `kontakt` | «Das ist berechtigt.» | Satzzeichen | b90 |
+| 143 | `behandlung` › `kontakt` | «Sie dürfen Orientierung für Ihre eigene Rolle suchen.» | Satzzeichen | b90 |
+| 144 | `behandlung` › `kontakt` | «Bei der Fachstelle Angehörigenarbeit der PUK ist sie kostenlos und ohne Vollmacht der betroffenen Person möglich.» | umformuliert | b92 |
+| 145 | `behandlung` › `kontakt` | «Ein Beispiel:» vor dem Beispielsatz (Satz wörtlich) | Bezeichnung (statt «Formulierungsbeispiel:») | b101 |
+| 146 | `behandlung` › `kontakt` | «Bei begründeten Zweifeln an Diagnose oder Behandlung kann eine zweite fachliche Einschätzung sinnvoll sein.» | Satzzeichen | b104 |
+| 147 | `behandlung` › `kontakt` | «Eine pauschale Wartefrist von einem Jahr gibt es dafür nicht.» | Satzzeichen | b104 |
+| 148 | `behandlung` › `kontakt` | «Eigene konkrete Beobachtungen, vereinbarte Themen und den eigenen Unterstützungsbedarf, ohne Diagnose, Motiv- oder Verlaufsbewertung.» | umformuliert | b117 |
+| 149 | `behandlung` › `kontakt` | «Stimmen Sie nicht akute Angaben möglichst mit der betroffenen Person ab.» | Satzzeichen | b118 |
+| 150 | `behandlung` › `kontakt` | «Beobachtung statt Deutung: «Mir ist aufgefallen, dass … An wen kann ich mich mit meiner Sorge wenden?»» | Satzzeichen | b122 |
+| 151 | `behandlung` › `kontakt` | «Sagen Sie früh, was Sie freiwillig übernehmen können.» | Satzzeichen | b129 |
+| 152 | `behandlung` › `kontakt` | «Auch eine nicht übernommene Aufgabe muss im Nachsorgeplan berücksichtigt werden.» | Satzzeichen | b129 |
+| 153 | `behandlung` › `kontakt` | «Bitten Sie mit Einwilligung der betroffenen Person um die Informationen, die Sie für Ihre vereinbarte Rolle brauchen.» | umformuliert | b130 |
+| 154 | `behandlung` › `kontakt` | «Was nach einer Krise sonst hilft, steht auf der Seite «Krisen begleiten» im Abschnitt «Nach der Krise».» | Verweissatz | b124, b125, b126, b127 |
+| 155 | `behandlung` › `kontakt` | «Musterbrief für einen ersten Kontakt» | Auftrag | b222 |
+| 156 | `behandlung` › `kontakt` | «Wenn Sie als nahestehende Person Kontakt mit der behandelnden Fachperson aufnehmen möchten, kann eine kurze schriftliche Nachricht helfen.» | umformuliert | b224 |
+| 157 | `behandlung` › `kontakt` | «Das Muster dient als Ausgangspunkt, wenn Sie Ihre Perspektive einbringen oder nach einem Angehörigengespräch fragen möchten.» | umformuliert | b225 |
+| 158 | `behandlung` › `kontakt` | «Ich bin [Beziehung zu Vorname, z. B. Mutter, Vater oder Partnerin] von [Vorname].» | Satzzeichen (eigene Zeile, «Ich» gross) | b227 |
+| 159 | `behandlung` › `kontakt` | «Mit freundlichen Grüssen [Ihr Name] [Optional: Telefonnummer für Rückruf]» | Satzzeichen | b232 |
+| 160 | `behandlung` › `kontakt` | «Die behandelnde Fachperson ist an die Schweigepflicht gebunden und darf ohne Einwilligung der betroffenen Person keine Inhalte der Behandlung besprechen.» | umformuliert | b233 |
+| 161 | `behandlung` › `kontakt` | «Das ist keine Ablehnung, sondern professionelles Handeln.» | umformuliert | b234 |
+| 162 | `behandlung` › `therapieformen` | «Mehrere strukturierte Psychotherapien können bei Borderline helfen.» | umformuliert | b166 |
+| 163 | `behandlung` › `therapieformen` | «Für viele Einzelvergleiche sind die Forschungsergebnisse nur begrenzt sicher, und es gibt keine Methode, die für alle Menschen die beste ist.» | umformuliert | b166 |
+| 164 | `behandlung` › `therapieformen` | «Die DBT ist stark strukturiert und setzt den Schwerpunkt auf Emotionsregulation, Stresstoleranz, Achtsamkeit und zwischenmenschliche Fertigkeiten (Skills).» | umformuliert | b154 |
+| 165 | `behandlung` › `therapieformen` | «Die MBT konzentriert sich auf das Verstehen eigener und fremder innerer Zustände und auf das Beziehungsgeschehen.» | umformuliert | b156 |
+| 166 | `behandlung` › `therapieformen` | «Die Schematherapie arbeitet mit frühen Prägungen, Beziehungsmustern und inneren Zuständen, die unter Stress reaktiv werden.» | umformuliert | b158 |
+| 167 | `behandlung` › `therapieformen` | «Die TFP arbeitet mit dem Erleben in der Beziehung zur Therapeutin oder zum Therapeuten: Innere Konflikte werden dort im «Hier und Jetzt» betrachtet und bearbeitet.» | umformuliert | b160 |
+| 168 | `behandlung` › `therapieformen` | «Auch klar strukturierte, auf Borderline abgestimmte Behandlungen ohne spezialisiertes Therapielabel können wirksam sein.» | umformuliert | b162 |
+| 169 | `behandlung` › `therapieformen` | «Therapie ist in drei Formen möglich:» | umformuliert | b251 |
+| 170 | `behandlung` › `therapieformen` | «Ambulant» | Satzzeichen | b251, b302 |
+| 171 | `behandlung` › `therapieformen` | «Teilstationär» | Satzzeichen | b251 |
+| 172 | `behandlung` › `therapieformen` | «Stationär» | Satzzeichen | b251 |
+| 173 | `behandlung` › `therapieformen` | «Behandlungsziele und Fortschritt bewertet die betroffene Person gemeinsam mit dem Fachteam.» | Satzzeichen | b165 |
+| 174 | `behandlung` › `therapieformen` | «Begleiterkrankungen und Medikamente» | Auftrag | d341 |
+| 175 | `behandlung` › `therapieformen` | «Begleiterkrankungen werden in der Regel mitbehandelt.» | Auftrag | d342 |
+| 176 | `behandlung` › `therapieformen` | «Die Behandlung kann integriert, parallel oder schrittweise geplant werden.» | Auftrag | d290, d343, d345 |
+| 177 | `behandlung` › `therapieformen` | «Eine starre Reihenfolge gilt nicht, der Behandlungsplan wird individuell abgestimmt.» | umformuliert | d346, d350, d351, d352 |
+| 178 | `behandlung` › `therapieformen` | «Akute Gefährdungen, etwa eine schwere depressive Episode, eine Krise beim Substanzgebrauch oder eine Essstörung mit körperlicher Gefährdung, brauchen sofortige Aufmerksamkeit.» | umformuliert | d344 |
+| 179 | `behandlung` › `therapieformen` | «Ob ein Medikament passt, wird individuell mit der behandelnden ärztlichen Fachperson geklärt.» | umformuliert | d349, d354 |
+| 180 | `behandlung` › `therapieformen` | «Medikamente werden nur gemeinsam mit der behandelnden Fachperson geändert.» | Auftrag | b303 |
+| 181 | `behandlung` › `therapieformen` | «Welche Begleiterkrankungen vorkommen können, steht auf der Seite «Diagnose und Begleiterkrankungen» im Abschnitt «Begleiterkrankungen».» | Verweissatz | b304 |
+| 182 | `behandlung` › `therapieformen` | «Programme für Angehörige» | Auftrag | b305 |
+| 183 | `behandlung` › `therapieformen` | «Psychoedukative Angehörigenprogramme vermitteln verständliche Informationen zur Erkrankung und zum Umgang damit.» | neu | b306 |
+| 184 | `behandlung` › `therapieformen` | «Diese Programme können entlastende Unterstützung bieten und sind fachlich beschrieben.» | umformuliert | b168, b220 |
+| 185 | `behandlung` › `therapieformen` | «Family Connections ist ein solches Programm für Angehörige von Menschen mit Borderline.» | neu | b307 |
+| 186 | `behandlung` › `therapieformen` | «Dazu liegen inzwischen auch Daten aus einer randomisierten Studie vor: Die Studie von 2024 fand keinen statistisch signifikanten Vorteil gegenüber einer aktiven Vergleichsbehandlung.» | umformuliert | b169 |
+| 187 | `behandlung` › `therapieformen` | «Daraus folgt weder gesicherte Überlegenheit noch Gleichwertigkeit.» | Satzzeichen | b169 |
+| 188 | `behandlung` › `therapieformen` | «Ob ein Programm in Ihrer Nähe angeboten wird, ist getrennt von der Wirksamkeit zu klären.» | umformuliert | b171 |
+| 189 | `behandlung` › `therapieformen` | «Angebote für Austausch mit anderen Angehörigen stehen auf der Seite «Unterstützung finden» im Abschnitt «Austausch mit anderen Angehörigen».» | umformuliert | b221 |
+| 190 | `behandlung` › `rueckschlaege` | «Unterbrüche und Rückschläge» | Auftrag | b235 |
+| 191 | `behandlung` › `rueckschlaege` | «Diese Reaktionen sind verständlich.» | Satzzeichen | b238 |
+| 192 | `behandlung` › `rueckschlaege` | «Den Verlauf bewerten müssen Sie deshalb nicht.» | umformuliert | b238 |
+| 193 | `behandlung` › `rueckschlaege` | «Wenn Therapie gerade schwierig ist» | Bezeichnung | b107 |
+| 194 | `behandlung` › `rueckschlaege` | «Zwiespältige Gefühle gegenüber einer Therapie können viele Gründe haben, zum Beispiel Scham, Angst, Überforderung, schlechte Erfahrungen oder Misstrauen.» | umformuliert | b114 |
+| 195 | `behandlung` › `rueckschlaege` | «Sie können Motivation nicht erzwingen, aber Sie können Interesse zeigen.» | Satzzeichen | b110 |
+| 196 | `behandlung` › `rueckschlaege` | «In einer stabilen Phase direkt ansprechen» über dem Beispielsatz (Satz wörtlich) | Bezeichnung (statt «Direkt ansprechen (in stabiler Phase):») | b108 |
+| 197 | `behandlung` › `rueckschlaege` | «Was Sie tun können:» | Bezeichnung | – |
+| 198 | `behandlung` › `rueckschlaege` | «Sprechen Sie Therapie als Möglichkeit an, nicht als Drohung.» | umformuliert | b209 |
+| 199 | `behandlung` › `rueckschlaege` | «Fragen Sie nach, welche Veränderungen für die Person selbst bedeutsam sind.» | umformuliert | b212 |
+| 200 | `behandlung` › `rueckschlaege` | «Nehmen Sie schwierige Phasen ernst, ohne den Therapieverlauf von aussen zu bewerten.» | umformuliert | b213 |
+| 201 | `behandlung` › `rueckschlaege` | «Welche Art von Unterstützung ist jetzt gewünscht, oder auch nicht?» | Satzzeichen | b239, b240, b241 |
+| 202 | `behandlung` › `rueckschlaege` | «Wenn Sprache Gespräche erschwert» | neu | b308 |
+| 203 | `behandlung` › `rueckschlaege` | «Wenn Sprache, Scham oder Migrationserfahrungen Gespräche erschweren, schliesst das eine Behandlung nicht aus.» | umformuliert | b215 |
+| 204 | `behandlung` › `rueckschlaege` | «Wie Veränderung verlaufen kann, steht auf der Seite «Genesung» im Abschnitt «Veränderung verläuft unterschiedlich».» | Verweissatz | b308 |
+| 205 | `behandlung` › `angebote` | «Angebote im Kanton Zürich» | Satzzeichen | d139, b250 |
+| 206 | `behandlung` › `angebote` | «Für Abklärung und Therapie kommen verschiedene Stellen infrage.» | umformuliert | d141 |
+| 207 | `behandlung` › `angebote` | «Die Liste ist nicht abschliessend.» | Auftrag | d142 |
+| 208 | `behandlung` › `angebote` | «Auch niedergelassene Psychiaterinnen und Psychiater oder psychologische Psychotherapeutinnen und Psychotherapeuten mit Borderline-Erfahrung kommen infrage.» | umformuliert | d142 |
+| 209 | `behandlung` › `angebote` | «Die Hausarztpraxis kann ein erster Schritt sein und bei Bedarf an eine geeignete Fachperson überweisen.» | umformuliert | d143 |
+| 210 | `behandlung` › `angebote` | «Klären Sie die Kostenübernahme vorab.» | Auftrag | d161 |
+| 211 | `behandlung` › `angebote` | «Aktuelle Bedingungen und Anmeldung stehen auf der Website des Angebots.» | Auftrag | d145, d146, b256 |
+| 212 | `behandlung` › `angebote` | «HYPE Züri, Kinder- und Jugendpsychiatrie der PUK» | Auftrag | b252 |
+| 213 | `behandlung` › `angebote` | «HYPE Züri ist ein Frühinterventionsangebot bei Verdacht, Risiko oder bereits diagnostizierter Borderline-Persönlichkeitsstörung.» | umformuliert | d137, b253 |
+| 214 | `behandlung` › `angebote` | «Für: Jugendliche ab 13 Jahren» | Satzzeichen | b310 |
+| 215 | `behandlung` › `angebote` | «Website: Persönlichkeitsstörungen bei Jugendlichen auf www.pukzh.ch» | neu | b318 |
+| 216 | `behandlung` › `angebote` | «PUK Zürich, Erwachsene» | Satzzeichen | d144, b257 |
+| 217 | `behandlung` › `angebote` | «Die PUK bietet spezialisierte, an der DBT orientierte Behandlungsangebote.» | umformuliert | b258 |
+| 218 | `behandlung` › `angebote` | «Für: Erwachsene» | Satzzeichen | b311 |
+| 219 | `behandlung` › `angebote` | «Website: Persönlichkeitsstörungen bei Erwachsenen auf www.pukzh.ch» | neu | b319 |
+| 220 | `behandlung` › `angebote` | «ipw, Psychotherapiestation für junge Erwachsene» | Satzzeichen | d149, b260 |
+| 221 | `behandlung` › `angebote` | «Für: junge Erwachsene» | Satzzeichen | b312 |
+| 222 | `behandlung` › `angebote` | «Website: Psychotherapiestation für junge Erwachsene auf ipw.ch» | Bezeichnung | b264 |
+| 223 | `behandlung` › `angebote` | «Das Sanatorium Kilchberg ist eine Privatklinik für Psychiatrie und Psychotherapie am Zürichsee.» | umformuliert | d155 |
+| 224 | `behandlung` › `angebote` | «Für: Angaben auf der Website» | neu | b313 |
+| 225 | `behandlung` › `angebote` | «Website: www.sanatorium-kilchberg.ch» | gekürzt | d156 |
+| 226 | `behandlung` › `angebote` | «Clienia Schlössli, Oetwil am See» | Satzzeichen | d157, b265 |
+| 227 | `behandlung` › `angebote` | «Clienia Schlössli bietet eine spezialisierte DBT-Station für Menschen mit Borderline-Persönlichkeitsstörung.» | umformuliert | d158, b266 |
+| 228 | `behandlung` › `angebote` | «Für: Erwachsene ab 18 Jahren» | neu | b314 |
+| 229 | `behandlung` › `angebote` | «Website: Station A2 auf www.clienia.ch» | Bezeichnung | d159, b267 |
+| 230 | `behandlung` › `angebote` | «DBT-Therapeutensuche, Dachverband DBT» | Auftrag | b268 |
+| 231 | `behandlung` › `angebote` | «Der Dachverband DBT bietet einen Suchweg für zertifizierte DBT-Therapeutinnen und -Therapeuten.» | umformuliert | b269 |
+| 232 | `behandlung` › `angebote` | «Der Dachverband ist ein deutscher Verband.» | neu | b316 |
+| 233 | `behandlung` › `angebote` | «Für: Menschen, die eine DBT-Therapie suchen» | neu | b315 |
+| 234 | `behandlung` › `angebote` | «Website: DBT-Therapieangebote auf www.dachverband-dbt.de» | Bezeichnung | b270 |
+| 235 | `behandlung` › `wartezeit` | «Wenn kein Therapieplatz verfügbar ist, kann die betroffene Person mit der Hausarztpraxis oder einer bereits behandelnden Fachperson den nächsten Schritt besprechen.» | umformuliert | d164, b183 |
+| 236 | `behandlung` › `wartezeit` | «Anmeldung klären: Nimmt die Stelle neue Patientinnen und Patienten auf?» | umformuliert | d166, b185 |
+| 237 | `behandlung` › `wartezeit` | «Ist eine direkte Anmeldung möglich, oder braucht es eine Überweisung oder eine ärztliche Anordnung?» | umformuliert | d167, b186 |
+| 238 | `behandlung` › `wartezeit` | «Berücksichtigen Sie den vereinbarten Zugangsweg des Versicherungsmodells.» | umformuliert | d171, b190 |
+| 239 | `behandlung` › `wartezeit` | «Für psychologische Psychotherapie zulasten der Grundversicherung ist eine ärztliche Anordnung nötig.» | Satzzeichen | d172, b191 |
+| 240 | `behandlung` › `wartezeit` | «Nicht alle Ärztinnen und Ärzte sind regulär anordnungsberechtigt.» | umformuliert | d172, b191 |
+| 241 | `behandlung` › `wartezeit` | «Wer ist bis dahin ansprechbar, welche Zwischenhilfe ist möglich, und wann findet der nächste Kontakt statt?» | Satzzeichen | d176, b195 |
+| 242 | `behandlung` › `wartezeit` | «Bei Verschlechterung neu beurteilen lassen: Melden Sie veränderte Beschwerden der zuständigen Fachperson, und fragen Sie nach einem früheren Termin oder einer anderen Hilfe.» | Satzzeichen | d178, b197 |
+| 243 | `behandlung` › `wartezeit` | «Bei unmittelbarer Gefahr holen Sie Hilfe über den Notruf.» | Auftrag | d179, b198 |
+| 244 | `behandlung` › `wartezeit` | «In anderen Kantonen: Die Angebote auf dieser Seite sind keine schweizweite Liste.» | umformuliert | d182, b201 |
+| 245 | `behandlung` › `wartezeit` | «Wie Sie ausserhalb des Kantons Zürich Anlaufstellen finden, steht auf der Seite «Unterstützung finden» im Abschnitt «Ausserhalb des Kantons Zürich».» | Verweissatz | d181, b200 |
+| 246 | `behandlung` › `wartezeit` | «Eigene Unterstützung: Angehörigenberatung können Sie unabhängig von einer Diagnose oder einem Therapieplatz nutzen.» | umformuliert | d183, b202 |
+| 247 | `behandlung` › `wartezeit` | «Wo Sie Beratung finden, steht auf der Seite «Unterstützung finden» im Abschnitt «Beratung für Angehörige».» | Verweissatz | d118, d184, d365, b203 |
+
+**`genesung` und `unterstuetzung` (Abschnitt 6)**
+
+| Nr. | Ort | Satz | Art | Abgleich |
+| ---: | --- | --- | --- | --- |
+| 248 | `genesung` › `einfluesse` | «Medikamente werden nur gemeinsam mit der behandelnden Fachperson geändert.» | Auftrag (Frage Nr. 2 aus 2c-1) | g145, g396 |
+| 249 | `genesung` › `einfluesse` | «Welche Begleiterkrankungen vorkommen können, steht auf der Seite «Diagnose und Begleiterkrankungen» im Abschnitt «Begleiterkrankungen».» | Auftrag (Verweissatz) | g163 |
+| 250 | `unterstuetzung` › `austausch` | «Gruppe für Eltern von Jugendlichen mit Borderline» | neu (Zwischentitel) | d187 |
+| 251 | `unterstuetzung` › `austausch` | «Teilnahmebedingungen und Anmeldung stehen auf der Website.» | Auftrag | d191 |
+| 252 | `unterstuetzung` › `austausch` | «Persönlichkeitsstörungen bei Jugendlichen auf www.pukzh.ch» | Bezeichnung (Linktext) | – |
+
+Nicht in der Liste, weil wörtlich aus dem Bestand: die übrigen Sätze beider Seiten, zum Beispiel die Listen «Was nicht hilft» und «Was möglich ist» (ausser zwei Punkten), «Eine Diagnose ist ein Anfang, kein Etikett.» (Infografik), die drei Informationswege, die vier Fragen, die Situationen der Vertiefungen, die Sätze zu Family Connections nach dem ersten und die vier Schritte bei «Kein Therapieplatz» (ausser den genannten Sätzen). Der Eintrag der Gruppe für Eltern auf `unterstuetzung` steht im Bestandswortlaut.
+
+### Etappe 2c-2: Zur Prüfung durch die Fachstelle
+
+| Nr. | Ort | neu | Bestand (Zitat) | Frage |
+| ---: | --- | --- | --- | --- |
+| 1 | `diagnose` › `abklaerung`, Vertiefung «Wie die Diagnose beschrieben wird» | «Fachpersonen beschreiben Diagnosen mit Klassifikationssystemen. Für Borderline sind das vor allem das DSM-5-TR der American Psychiatric Association und die ICD-11 der Weltgesundheitsorganisation. DSM-5-TR und ICD-11 beschreiben nicht dasselbe Modell.» DSM-5-TR: «Geprüft werden neun Kriterien. Mindestens fünf müssen als anhaltendes und situationsübergreifendes Muster vorliegen.» ICD-11: «Zuerst wird der Schweregrad einer Persönlichkeitsstörung bestimmt. Das Borderline-Muster kann anschliessend mit dem Zusatzcode 6D11.5 beschrieben werden.» Schweizer Kodierkontext: «… gilt in der Schweiz 2026 weiterhin die ICD-10-GM 2024. Deshalb kann in entsprechenden Unterlagen der Code F60.31 erscheinen. …» | «DSM-5-TR und ICD-11 beschreiben nicht dasselbe Modell: Im DSM-5-TR werden neun Kriterien geprüft; mindestens fünf müssen als anhaltendes und situationsübergreifendes Muster vorliegen. In der ICD-11 wird zuerst der Schweregrad einer Persönlichkeitsstörung bestimmt; das Borderline-Muster kann anschliessend mit dem Zusatzcode 6D11.5 beschrieben werden.» · «Für die stationäre medizinische Statistik gilt in der Schweiz 2026 weiterhin die ICD-10-GM 2024. Deshalb kann in entsprechenden Unterlagen der Code F60.31 erscheinen.» | Wortlaut gehalten, Semikolons als Punkte. Neu sind die zwei Sätze, die DSM-5-TR und ICD-11 erklären. Stimmen sie? |
+| 2 | `diagnose` › `abklaerung`, «Bei Jugendlichen» | «Wie Eltern oder andere Bezugspersonen einbezogen werden, hängt unter anderem von Alter, Urteilsfähigkeit, Einwilligung, Behandlungsrahmen und Schutzbedarf ab. Auch urteilsfähige Minderjährige haben ein Recht auf Vertraulichkeit. Konkrete Fragen klären Sie mit der zuständigen Fachperson.» | «… Auch urteilsfähige Minderjährige haben ein Recht auf Vertraulichkeit; konkrete Fragen sollten mit der zuständigen Fachperson geklärt werden.» | Aufforderung statt «sollten … geklärt werden» (Wortlaut des Auftrags). Bestätigen |
+| 3 | `diagnose` › `abklaerung`, Schritt 4 | «Ob Sie einbezogen werden, hängt vom Einverständnis der betroffenen Person ab. Das kann schwer sein.» | «Ob Sie einbezogen werden, hängt vom Einverständnis Ihres/Ihrer Angehörigen ab – das kann schwer sein.» | Bestätigen. Bei Minderjährigen gilt das Unterkapitel «Bei Jugendlichen» |
+| 4 | `diagnose` › `begleiterkrankungen`, «Wenn Suizidgedanken dazukommen» | «Die britische Behandlungsleitlinie NICE beschreibt einen beobachteten Zusammenhang zwischen Borderline mit einer zusätzlichen Depression (Major Depression) und Suizidversuchen. Dieser Gruppenbefund erlaubt keine Vorhersage für eine einzelne Person.» | «Die NICE-Vollleitlinie (2009) beschreibt einen beobachteten Zusammenhang zwischen Borderline mit zusätzlicher Major Depression und Suizidversuchen. Dieser Gruppenbefund erlaubt keine Vorhersage für eine einzelne Person.» | «britische Behandlungsleitlinie» erklärt NICE; Jahr und Kapitel im Quellenblock. Ist «Depression (Major Depression)» fachlich richtig genug? |
+| 5 | `diagnose` › `zweifel` und `begleiterkrankungen` | (a) «Klare Grenze: Bei akuter Gefahr, etwa bei Suizidgefahr, schwerer Selbstverletzung oder Gefahr für andere Menschen, ist die Frage nach der Diagnose nachrangig. Dann holen Sie Hilfe über den Notruf.» (b) «Bei akuter Gefahr oder Hinweisen auf eine konkrete suizidale Absicht holen Sie sofort Hilfe über den Notruf.» Je danach der Verweis im Text | (a) «Klare Grenze: Bei akuter Gefahr — Suizidalität, schwerer Selbstverletzung oder Fremdgefährdung — ist die Diagnose-Frage nachrangig. Dann zählt die Soforthilfe.» (b) «Bei akuter Gefahr oder Hinweisen auf konkrete suizidale Absicht: Soforthilfe — Notfallnummern und Anlaufstellen für die akute Situation.» | Neuer Wortlaut mit «Notruf» (Auftrag, Wortlaut von `krise`). «Suizidgefahr» statt «Suizidalität», «Gefahr für andere Menschen» statt «Fremdgefährdung». Bestätigen |
+| 6 | `diagnose` › `begleiterkrankungen`, «Depression» | «Die älteren Studien dazu untersuchten Menschen, die zu Beginn stationär behandelt wurden. Die Befunde dieser Studien zeigen nicht, wie häufig Depressionen bei allen Menschen mit Borderline sind, und sie sind keine persönliche Prognose.» | «Die älteren Zanarini-Untersuchungen beruhen auf einer spezialisierten, zunächst stationär behandelten Stichprobe und betrachten Diagnosen im Lebenszeit- und Langzeitverlauf. Ihre Befunde sind keine Prävalenzschätzung für alle Menschen mit Borderline und keine individuelle Prognose.» | Einfache Sprache; «spezialisierte» Stichprobe und «Lebenszeit- und Langzeitverlauf» entfallen. Trägt das die Einschränkung? (nicht im Auftrag genannt) |
+| 7 | `diagnose` › `begleiterkrankungen`, «Depression» | «Depressive Episoden entstehen durch ein Zusammenspiel biologischer, psychischer und sozialer Faktoren. Angehörige sind nicht schuld an der Erkrankung und nicht für die Genesung verantwortlich. Was Schuld von Verantwortung unterscheidet, steht auf der Seite «Ihre Rolle» …» | «… Aus einer Diagnose lässt sich keine persönliche Schuld ableiten. Angehörige müssen die Erkrankung weder verhindern noch heilen. Beziehungen können das Befinden dennoch beeinflussen; Verantwortung für konkrete verletzende oder gewalttätige Handlungen bleibt davon getrennt. Veränderungen im Miteinander sind allein kein Beleg für die Ursache einer Erkrankung.» | Verantwortung im Wortlaut von `verstehen`; die Sätze zu Beziehungen und verletzenden Handlungen tragen der Verweis auf `rolle#schuld`. Genügt das? (nicht im Auftrag genannt) |
+| 8 | `behandlung` › `kontakt` | Drei Informationswege wörtlich, darunter «Vertraulichkeit Ihrer Mitteilung gegenüber der betroffenen Person kann nicht pauschal zugesichert werden.»; danach «Bei möglicher akuter Gefahr holen Sie sofort Hilfe über den Notruf und warten nicht auf eine Rückmeldung per E-Mail.» und der Verweis im Text | «Vertraulichkeit Ihrer Mitteilung gegenüber der betroffenen Person kann nicht pauschal zugesichert werden. Bei möglicher akuter Gefahr nutzen Sie die Notfallwege und warten nicht auf eine Rückmeldung per E-Mail.» | Wortlaut der Informationswege gehalten. Die Handlungsanleitung steht nach der Begriffsliste, weil sie für alle drei Wege gilt. Bestätigen |
+| 9 | `behandlung` › `therapieformen` | «Nach NICE sollen Medikamente nicht gezielt zur Behandlung von Borderline selbst oder ihrer einzelnen Kernsymptome eingesetzt werden. Bei einer zusätzlichen Depression kann eine Kombination aus einem Antidepressivum und psychologischer Behandlung erwogen werden. Ob ein Medikament passt, wird individuell mit der behandelnden ärztlichen Fachperson geklärt. Medikamente werden nur gemeinsam mit der behandelnden Fachperson geändert.» | «Medikation: Nach NICE sollen Medikamente … erwogen werden. Ob Medikation passt, wird individuell mit der behandelnden ärztlichen Fachperson geklärt.» | Wortlaut des Bestands gehalten, dazu der Satz von `genesung` (Auftrag). Bestätigen |
+| 10 | `behandlung` › `therapieformen`, Vertiefung «Programme für Angehörige» | «Psychoedukative Angehörigenprogramme vermitteln verständliche Informationen zur Erkrankung und zum Umgang damit. Diese Programme können entlastende Unterstützung bieten und sind fachlich beschrieben. Family Connections ist ein solches Programm für Angehörige von Menschen mit Borderline. Dazu liegen inzwischen auch Daten aus einer randomisierten Studie vor: Die Studie von 2024 fand keinen statistisch signifikanten Vorteil gegenüber einer aktiven Vergleichsbehandlung. Daraus folgt weder gesicherte Überlegenheit noch Gleichwertigkeit. Eine Beobachtungsstudie aus Frankreich und der Schweiz …» | «Psychoedukative Angehörigenprogramme können entlastende Unterstützung bieten. Für Family Connections liegen inzwischen auch randomisierte Daten vor: Die Studie von 2024 fand keinen statistisch signifikanten Vorteil gegenüber einer aktiven Vergleichsbehandlung; daraus folgt weder gesicherte Überlegenheit noch Gleichwertigkeit.» · «… sind nicht nur entlastende Zusatzangebote, sondern fachlich beschrieben.» | Einordnung der Studien wörtlich. Neu sind die Erklärung von «psychoedukativ» und der Satz zu Family Connections. Stimmen sie? |
+| 11 | `behandlung` › `wartezeit`, Schritt 2 | «Für psychologische Psychotherapie zulasten der Grundversicherung ist eine ärztliche Anordnung nötig. Nicht alle Ärztinnen und Ärzte sind regulär anordnungsberechtigt. Klären Sie, wer sie ausstellen kann. Die Voraussetzungen erläutert das Bundesamt für Gesundheit.» (Link auf die BAG-Seite) | «Für psychologische Psychotherapie zulasten der Grundversicherung ist eine ärztliche Anordnung nötig; nicht alle Ärzt:innen sind regulär anordnungsberechtigt. Klären Sie, wer sie ausstellen kann.» | Wortlaut gehalten, Paarform. Ist der Stand beim BAG aktuell (Link liess sich hier nicht aufrufen)? |
+| 12 | `behandlung` › `kontakt`, Vertiefung «Ich mache mir Sorgen um den Verlauf» | «Bei begründeten Zweifeln an Diagnose oder Behandlung kann eine zweite fachliche Einschätzung sinnvoll sein. Eine pauschale Wartefrist von einem Jahr gibt es dafür nicht.» | «…; eine pauschale Wartefrist von einem Jahr gibt es dafür nicht.» | Wortlaut gehalten. Bestätigen |
+| 13 | `behandlung` › `kontakt`, Vertiefung «Musterbrief für einen ersten Kontakt» | «Wenn Sie als nahestehende Person Kontakt mit der behandelnden Fachperson aufnehmen möchten, …» Muster: «Betreff: Kurze Anfrage als Angehörige von [Vorname]» · «Guten Tag Frau/Herr [Name]» · «Ich bin [Beziehung zu Vorname, z. B. Mutter, Vater oder Partnerin] von [Vorname]. …» · «Mit freundlichen Grüssen [Ihr Name] [Optional: Telefonnummer für Rückruf]»; danach «Die behandelnde Fachperson ist an die Schweigepflicht gebunden und darf ohne Einwilligung der betroffenen Person keine Inhalte der Behandlung besprechen. Das ist keine Ablehnung, sondern professionelles Handeln.» | «Kontakt mit dem Therapeuten …» · «ich bin …» · «Wichtig: Der Therapeut ist an die Schweigepflicht gebunden und darf ohne Einwilligung Ihres Angehörigen keine Inhalte der Behandlung besprechen. Das ist kein Ablehnen – sondern professionelles Handeln.» | «behandelnde Fachperson» statt «Therapeut», Text des Musters sonst wörtlich. Der Platzhalter für die eigene Telefonnummer bleibt (keine Nummer eines Angebots). Bestätigen |
+| 14 | `behandlung` › `rollen` | Spalte «Fachpersonen», «Nicht zu erwarten»: «Angehörige therapieren», «alle Beziehungsfragen stellvertretend lösen», «rund um die Uhr erreichbar sein»; Spalte «Die betroffene Person», «Nicht zu erwarten»: «allein für die Qualität der Beziehung sorgen» | Auswahl «Therapie» und «Person» ohne Trennung in zwei Listen (nur «Ihre Rolle» hat «MÖGLICHE BEITRÄGE» und «NICHT VON DIESER ROLLE ZU ERWARTEN») | Die Zuordnung zu «Nicht zu erwarten» ist abgeleitet. Stimmt sie? |
+| 15 | `behandlung` › `angebote` | HYPE Züri «Für: Jugendliche ab 13 Jahren»; PUK Erwachsene mit neuem Link statt Telefon und Stations-E-Mail; ipw «Für: junge Erwachsene» und der Satz «Klären Sie die aktuellen Alters- und Aufnahmebedingungen direkt mit dem Anbieter.»; Sanatorium Kilchberg «Das Sanatorium Kilchberg ist eine Privatklinik für Psychiatrie und Psychotherapie am Zürichsee.» mit «Für: Angaben auf der Website»; Clienia «Für: Erwachsene ab 18 Jahren»; Dachverband DBT mit «Der Dachverband ist ein deutscher Verband.» | `/unterstuetzen/therapie` und `/verstehen/diagnostik`: «Frühinterventionsangebot für Jugendliche ab 13 Jahren …» · «Spezialisierte DBT-orientierte Behandlungsangebote für Erwachsene. Telefon …» · «Privatklinik für Psychiatrie und Psychotherapie am Zürichsee.» · «Suchweg für zertifizierte DBT-Therapeutinnen und -Therapeuten.» | Auswahl, Sätze und Links prüfen. Die Website von HYPE nennt kein Mindestalter («ab 13»?). Die ipw nennt 17 bis 25 Jahre, aber nicht Borderline und DBT. Sanatorium Kilchberg: die Website nennt kein Angebot für Borderline, behalten? Dachverband: ob Schweizer Einträge enthalten sind, ist nicht belegt |
+| 16 | `behandlung` › `therapieformen` | «Auch klar strukturierte, auf Borderline abgestimmte Behandlungen ohne spezialisiertes Therapielabel können wirksam sein.» | «Auch klar strukturierte, störungsinformierte Behandlungen ohne spezialisiertes Therapielabel können wirksam sein.» | «auf Borderline abgestimmt» für «störungsinformiert». Trifft das? (nicht im Auftrag genannt) |
+| 17 | `behandlung` › `kontakt` und `wartezeit` | Handlungsanleitungen im neuen Wortlaut (Tabelle «Verweise im Text», Nr. 3 und 4); in `wartezeit`: «Bei akuter Gefahr oder unklarer Dringlichkeit warten Sie nicht auf einen Therapieplatz. Bei unmittelbarer Gefahr holen Sie Hilfe über den Notruf.» | «Bei akuter Gefahr oder unklarer Dringlichkeit warten Sie nicht auf einen Therapieplatz: Nutzen Sie den zuständigen Notfalldienst.» | Bei unklarer Dringlichkeit nennt der Verweis im Text den ärztlichen Notfalldienst, bei unmittelbarer Gefahr steht «Notruf». Bestätigen (der Auftrag nennt die Anleitungen nur für `diagnose`) |
+| 18 | `unterstuetzung` › `austausch` | «Gruppe für Eltern von Jugendlichen mit Borderline» · «Für Eltern jugendlicher Betroffener gibt es an der PUK Zürich die Gruppe «Eltern von Jugendlichen mit einer Borderline-Persönlichkeitsstörung». Sie bietet Austausch, Psychoedukation und Beratung für Eltern, die mit der Diagnose und ihren Folgen umgehen lernen. Teilnahmebedingungen und Anmeldung stehen auf der Website.» | `/verstehen/diagnostik`, «Für Eltern jugendlicher Betroffener»: derselbe Text, dazu «Mehr Informationen auf pukzh.ch» | Die Website nennt die Gruppe «Gruppentherapie für Eltern von Jugendlichen mit einer Borderline-Persönlichkeitsstörung» (Auftrag). Soll der Name auf der Seite so lauten? |
+
+### Etappe 2c-2: Verweise von freigegebenen Seiten (Vorschlag)
+
+Diese Seiten sind nicht geändert. Der Linktext ist jeweils der Titel der Zielstelle.
+
+| Nr. | Seite › Ort | nach dem Satz | Vorschlag |
+| ---: | --- | --- | --- |
+| 1 | `verstehen` › `borderline` | «Die Diagnose allein sagt nichts darüber, ob von einem Menschen Gefahr ausgeht.» | «Wie eine Abklärung abläuft und was eine Diagnose für Sie bedeuten kann, steht auf der Seite «Diagnose und Begleiterkrankungen» im Abschnitt «Der Weg zur Abklärung».» |
+| 2 | `verstehen` › `mythen`, Annahme «Borderline ist dasselbe wie Trauma.» | «Einzelne Merkmale können sich überschneiden, und die Diagnosen können zusammen auftreten.» | «Welche Begleiterkrankungen vorkommen können, steht auf der Seite «Diagnose und Begleiterkrankungen» im Abschnitt «Begleiterkrankungen».» (Bestand: «Begleiterkrankungen.», `verstehen.md` Nr. 127, entfällt mit Verweis auf `diagnose`) |
+| 3 | `rolle` › `anbieten`, «Was nicht Ihre Aufgabe ist» | «Therapie, Psychiatrie und Beratung bieten Fachpersonen an.» | «Wer in der Behandlung was beitragen kann, steht auf der Seite «Behandlung und Ihre Rolle darin» im Abschnitt «Wer was beitragen kann».» |
+| 4 | `krise` › `danach`, «Für die betroffene Person» | «Dabei kann auch geklärt werden, welche Rolle Sie freiwillig übernehmen können.» | «Wie Sie den Kontakt zum Behandlungsteam klären können, steht auf der Seite «Behandlung und Ihre Rolle darin» im Abschnitt «Kontakt zum Behandlungsteam».» |
+| 5 | `selbstfuersorge` › `warnsignale` | «Dabei können auch andere Ursachen abgeklärt werden.» | «Wenn Sie sich fragen, ob Sie selbst erkrankt sind, steht mehr dazu auf der Seite «Diagnose und Begleiterkrankungen» im Abschnitt «Wenn noch keine Diagnose gestellt ist».» |
+| 6 | `beziehungen` › `verantwortung` | «Angehörige dürfen zur Veränderung beitragen. Sie sind aber keine Therapeutinnen oder Therapeuten.» | «Was die Behandlung leisten kann und was Ihre Rolle darin ist, steht auf der Seite «Behandlung und Ihre Rolle darin».» (die vorgemerkte Zeile `beziehungen.md` Nr. 208 kommt von hier) |
+
+Dazu, auf Seiten der Etappe 2c (nicht freigegeben), ebenfalls nicht umgesetzt: `unterstuetzung` › `kantone` könnte auf `behandlung#angebote` verweisen, `genesung` › `einfluesse` («Strukturierte Behandlung») auf `behandlung#therapieformen`.
+
+### Etappe 2c-2: Entscheide der bauenden Sitzung (zur Prüfung)
+
+1. **H1 von `diagnose`:** «Diagnose und Begleiterkrankungen» (Seitentitel) statt «Wie eine Borderline-Diagnose entsteht», weil die Seite beide Themen hat; wie eine Diagnose entsteht, sagt die Einleitung.
+2. **`diagnose` › `abklaerung`:** vier statt zwei, drei einleitende Sätze; «Wer die diagnostische Gesamtbeurteilung übernimmt, hängt von Qualifikation, Setting und Behandlungsweg ab.» bleibt, damit die Aussage nicht entfällt. Die Schrittnamen sind h3 (direkt unter dem Abschnittstitel), in der Grösse der Stufen auf `kommunizieren`. Schritt 2 hat vier kurze Sätze statt ein bis zwei, weil der Auftrag dort drei Inhalte nennt.
+3. **`diagnose` › `ohne-diagnose`:** Reihenfolge des Bestands (Hausarztpraxis, Fachstelle, spezialisierte Stellen), «Bin ich auch betroffen?» zuletzt. Zusätzlicher Verweissatz auf `unterstuetzung#beratung` für «Beratung & Netzwerke» des Bestands.
+4. **`diagnose` › `begleiterkrankungen`:** Der Verweissatz auf `behandlung#therapieformen` steht direkt nach der Differenzialdiagnostik (vor «Depression»); die eigene Belastung in depressiven Phasen mit dem Verweissatz auf `selbstfuersorge#unterstuetzung` steht im Unterkapitel «Depression», weil sie dorthin gehört. So endet der sichtbare Teil mit dem Unterkapitel zu Suizidgedanken.
+5. **`behandlung` › `rollen`:** Die drei Rollen stehen über die volle Breite (`.puk-vis-wide`, ohne `figure`), drei Spalten ab 860 px Containerbreite, also ab etwa 1024 px Fensterbreite (Tablet quer). Bei 768 px Fenster wäre eine Spalte nur 214 px breit, und «Behandlungsschritten» passt in Seitenschrift nicht. Darunter stehen die Rollen untereinander. Ein Einleitungssatz nennt die drei Rollen. Die Bezeichnungen «Kann beitragen» und «Nicht zu erwarten» stehen im Wortlaut des Auftrags (auch bei «Fachpersonen» und «Angehörige»).
+6. **`behandlung` › `kontakt`:** Die Handlungsanleitung steht nach der Begriffsliste, weil sie für alle drei Wege gilt; «Bei akuten Sicherheitsbedenken holen Sie sofort professionelle Hilfe.» ist mit ihr zusammengeführt (höchstens ein Verweis im Text je Abschnitt).
+7. **`behandlung` › `therapieformen`:** Die Einordnung der Forschung steht vor der Begriffsliste (Kernaussage zuerst); die Settings stehen als Begriffsliste «Ambulant», «Teilstationär», «Stationär» mit «Formen» statt «Settings». Zusätzlicher Verweissatz auf `diagnose#begleiterkrankungen` im Wortlaut von `genesung`.
+8. **`behandlung` › `rueckschlaege`:** zwei Zwischentitel «Wenn Therapie gerade schwierig ist» (Bestand) und «Wenn Sprache Gespräche erschwert» (neu); der Beispielsatz als `.puk-say` mit der Bezeichnung «In einer stabilen Phase direkt ansprechen».
+9. **`behandlung` › `angebote`:** je Angebot ein Zwischentitel, ein Satz, «Für: …» und «Website: …» mit einem Linktext, der das Ziel nennt (zwei Seiten auf www.pukzh.ch). Sanatorium Kilchberg «Für: Angaben auf der Website», weil der Bestand keine Zielgruppe nennt.
+10. **Musterbrief:** als `.puk-say` mit der Bezeichnung «Muster-E-Mail», Betreff, Anrede, Text und Gruss je als eigene Zeile; «z. B.» mit festem Leerschlag.
+11. **`sensitiveTopics`:** `diagnose` «selbstgefaehrdung», «akute-krise»; `behandlung` dazu «gewalt» («Gewaltgespräche»). Ohne die Einträge blockiert `safety-contract`, und der Verweis im Text braucht eines dieser Themen.
+12. **Druckregel:** Kicker und Abschnittstitel bleiben im Druck zusammen (`break-after: avoid` am Kicker, `break-inside: avoid` am Titelblock). Gilt für alle Seiten, nur im Druck; am Bildschirm ändert sich nichts.
+13. **Quellen:** «Gunderson et al. (1997)» als Kurzname wie auf `rolle` und `beziehungen`; NICE CG78 und NG222 stehen auf beiden Seiten mit der jeweils verwendeten Aussage.
+
+### Etappe 2c-2: Aufgefallen, nicht geändert
+
+1. **«Kann beitragen» bei Mehrzahl:** Bei «Fachpersonen» und «Angehörige» wäre grammatisch «Können beitragen» richtig. Der Auftrag nennt «Kann beitragen» für alle drei Rollen.
+2. **Kennzahlen `behandlung`:** 100 % des alten Umfangs, weil die Seite auch die Angebote und «Kein Therapieplatz» aus `/verstehen/diagnostik` aufnimmt; im Lesefluss 1677 Wörter (Ziel etwa 1800).
+3. **Verneinung:** `diagnose` 21 % wie im Bestand, `behandlung` 17 % (Bestand 19 %).
+4. **Ein Link, zwei Einträge:** HYPE Züri (`behandlung`) und die Gruppe für Eltern (`unterstuetzung`) verlinken dieselbe Seite der PUK; das entspricht dem Auftrag.
+5. **`starter.css`** definiert `.puk-site-anchor-end` weiter (wie in 2c-1 vermerkt).
+6. **Zählweise C1:** Das Skript dieser Sitzung zählt auf Seiten mit Abbildung 4 bis 15 Wörter weniger als die Werte der früheren Selbstprüfungen; `diagnose` und `behandlung` sind davon nicht betroffen.
+
 **Stand 11.10.2026 · Etappe 2c-1 · bauende Sitzung (Claude Code).** Umgesetzt ist `BAUAUFTRAG-ETAPPE-2C1.md` (Seiten `genesung` und `unterstuetzung`, Einstiege auf `index`, zwei technische Reste aus 2b). Grundlage ist `borderline-umbau` am Stand `ed277d9`. Geändert sind nur:
 
 - `content/` und die gebauten Seiten von `genesung` und `unterstuetzung` (neu gebaut, Abschnitte 3 bis 5) und `index` (Einstiege, Abschnitt 6)

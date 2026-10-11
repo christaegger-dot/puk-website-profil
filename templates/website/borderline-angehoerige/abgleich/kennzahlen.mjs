@@ -28,8 +28,11 @@ export const PAGES = {
   kommunizieren: ['kommunizieren.md', 'uebungen.md'], krise: ['unterstuetzen--krise.md'],
   // Etappe 2c-1: `genesung` aus `/genesung`, `unterstuetzung` aus `/fachstelle`, `/beratung` und `/buchempfehlungen`
   genesung: ['genesung.md'], unterstuetzung: ['fachstelle.md', 'beratung.md', 'buchempfehlungen.md'],
+  // Etappe 2c-2: `diagnose` aus `/verstehen/diagnostik` und `/verstehen/begleiterkrankungen`, `behandlung` aus `/unterstuetzen/therapie`.
+  // Die Teile von `/verstehen/diagnostik`, die nach `behandlung` gehen (Angebote, Kosten, Wartezeit), zählen bei `diagnose`.
+  diagnose: ['verstehen--diagnostik.md', 'verstehen--begleiterkrankungen.md'], behandlung: ['unterstuetzen--therapie.md'],
 };
-const RICHTWERT = { index: null, verstehen: 1300, beziehungen: 1100, grenzen: 1500, rolle: null, selbstfuersorge: null, kommunizieren: null, krise: null, genesung: null, unterstuetzung: null };
+const RICHTWERT = { index: null, verstehen: 1300, beziehungen: 1100, grenzen: 1500, rolle: null, selbstfuersorge: null, kommunizieren: null, krise: null, genesung: null, unterstuetzung: null, diagnose: null, behandlung: null };
 const C = createRequire(import.meta.url)(join(SITE, 'tools/contract.js'));
 
 const SKIP = new Set(['script', 'style', 'svg']);

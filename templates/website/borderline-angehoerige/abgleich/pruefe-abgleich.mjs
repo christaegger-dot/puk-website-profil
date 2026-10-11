@@ -22,7 +22,7 @@ const args = process.argv.slice(2);
 const opt = k => { const i = args.indexOf(k); return i >= 0 ? args[i + 1] : null; };
 const C = createRequire(import.meta.url)(join(SITE, 'tools/contract.js'));
 const cfg = JSON.parse(readFileSync(join(SITE, 'site.config.json'), 'utf8'));
-const PAGES = ['index', 'verstehen', 'beziehungen', 'grenzen', 'rolle', 'selbstfuersorge', 'kommunizieren', 'krise', 'genesung', 'unterstuetzung'];
+const PAGES = ['index', 'verstehen', 'beziehungen', 'grenzen', 'rolle', 'selbstfuersorge', 'kommunizieren', 'krise', 'genesung', 'unterstuetzung', 'diagnose', 'behandlung'];
 const SOURCES = {
   index: ['startseite.md', 'selbsttest.md', 'wegweiser.md'],
   verstehen: ['verstehen.md', ...['eisberg', 'alarm-modus', 'gehirn', 'zustands-landkarte', 'spaltung', 'anspannungskurve'].map(h => `materialien--text--${h}.md`)],
@@ -37,6 +37,10 @@ const SOURCES = {
   // Etappe 2c-1
   genesung: ['genesung.md', ...['genesung-zahlen', 'remission-heilung', 'fortschritt-paradox', '5-faktoren-genesung', 'rolle-genesungsprozess'].map(h => `materialien--text--${h}.md`)],
   unterstuetzung: ['fachstelle.md', 'beratung.md', 'buchempfehlungen.md'],
+  // Etappe 2c-2: behandlung nimmt aus /verstehen/diagnostik die Angebote, die Kosten und «Kein Therapieplatz» und aus
+  // /verstehen/begleiterkrankungen «Was bedeutet das für die Behandlung?» auf (Zeilen in diagnose.md); als Fundstelle zählen die ganzen Dateien.
+  diagnose: ['verstehen--diagnostik.md', 'verstehen--begleiterkrankungen.md'],
+  behandlung: ['unterstuetzen--therapie.md', 'verstehen--diagnostik.md', 'verstehen--begleiterkrankungen.md'],
 };
 
 // Text wie im Browser: jede Elementgrenze trennt, SVG und .puk-vis-sr zählen nicht.
