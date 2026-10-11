@@ -325,7 +325,7 @@
         },
         {
           "id": "v-is-was-belastet",
-          "section": "02 Was am meisten belastet",
+          "section": "02 Was besonders belastet",
           "sectionId": "was-belastet",
           "goal": "Die häufigsten Belastungen kennen",
           "format": "text",
@@ -457,7 +457,7 @@
           "sectionId": "eltern",
           "goal": "Das Hin-und-hergerissen-Sein zwischen Unterstützen und Loslassen als zwei berechtigte Anliegen verstehen",
           "format": "tension-field",
-          "statement": "Skizze: eine Waage. Links «Ich will helfen. Ich sehe doch, wie schlecht es ihr geht.», rechts «Er ist erwachsen. Er entscheidet selbst.», am Drehpunkt «Ich bin da, wenn du mich brauchst, und frage, bevor ich etwas unternehme.» Ein gestrichelter, gekippter Balken zeigt, dass sich die Mitte verschieben kann.",
+          "statement": "Skizze: eine Waage. Links «Ich will helfen. Ich sehe doch, wie schlecht es ihm geht.», rechts «Er ist erwachsen. Er entscheidet selbst.», am Drehpunkt «Ich bin da, wenn du mich brauchst, und frage, bevor ich etwas unternehme.» Ein gestrichelter, gekippter Balken zeigt, dass sich die Mitte verschieben kann.",
           "understood": "Das Hin-und-hergerissen-Sein ist kein Fehler, sondern bildet zwei berechtigte Anliegen ab. Die Waage zeigt beide zugleich, ein Text nur nacheinander.",
           "resonance": "Entlastung: «Mein Hin und Her ist kein Versagen; beides ist richtig.»",
           "source": "Eigene didaktische Darstellung; Befunde nach Kika et al. 2026, Greally et al. 2025 und Johansson et al. 2014",
