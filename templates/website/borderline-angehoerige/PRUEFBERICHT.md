@@ -78,7 +78,7 @@ Nach jedem Bau ohne Nachfrage ausfüllen: Visualisierungs-Check wie unten, mit B
 
 `index` ist unverändert (`git diff 31215a8` leer). Keine Prüfstufe ist «erledigt»; der Status bleibt in allen Zeilen «offen». Der Block 2b-2 steht darunter.
 
-**Auftrag im Website-Ordner:** `FREIGABE-ETAPPE-2B.md` lag im Stamm von `main` (`744d849`). Die Datei liegt unverändert in diesem Ordner (`9183272`; `cmp` und SHA-256 gleich). Das Entfernen aus dem Stamm von `main` steht im Pull Request #22 (`19b3623`, Entwurf): Ein direkter Push auf `main` war in dieser Sitzung nicht erlaubt. Bis zum Merge liegt die Datei dort noch.
+**Auftrag im Website-Ordner:** `FREIGABE-ETAPPE-2B.md` lag im Stamm von `main` (`744d849`). Die Datei liegt unverändert in diesem Ordner (`9183272`; `cmp` und SHA-256 gleich). Sie ist aus dem Stamm von `main` entfernt (`19b3623`, über Pull Request #22, gemergt mit `ed717f4`; ein direkter Push auf `main` war in dieser Sitzung nicht erlaubt).
 
 ### Freigabe 2b: Stand je Punkt (Abschnitte 3 bis 6)
 
