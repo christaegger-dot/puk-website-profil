@@ -13,10 +13,10 @@ Gehört zur Website in diesem Ordner. Wer den Starter kopiert, übernimmt diese 
 
 | Stufe | Status | Datum | Geprüft durch | Ergebnis |
 | --- | --- | --- | --- | --- |
-| W1 Fachliche Prüfung | offen | 10.10.2026 | Fachstelle Angehörigenarbeit PUK (Freigabe Etappe 1); vierte Prüfrunde: eine Prüfsitzung (Claude, hat nicht gebaut); Fachstelle (Freigabe Etappe 2a); Prüfrunde 2b: eine Prüfsitzung (Claude, hat nicht gebaut); Fachstelle (Freigabe Etappe 2b) | Etappe 1 fachlich freigegeben (Abschnitt «Fachliche Freigabe der Fachstelle»); alle 21 Fragen P4-F-1 bis P4-F-21 entschieden. Offen, bis die Seiten von Etappe 2 geprüft und freigegeben sind. Prüfrunde 2a: 2 wichtig, 3 optional; 10 Fragen P2a-F-1 bis P2a-F-10. Etappe 2a (`rolle`, `selbstfuersorge`, Einstiege auf `index`) fachlich freigegeben am 10.10.2026. Prüfrunde 2b (`kommunizieren`, `krise`, Einstieg auf `index`): 4 wichtig, 3 optional; 12 Fragen P2b-F-1 bis P2b-F-12. Nachprüfung 2b-K (Stand `f9e2314`, eine Prüfsitzung, hat weder gebaut noch 2b-K umgesetzt): Korrektur wie beauftragt; 1 wichtig (Liste «Neue Sätze zur Freigabe»), 3 optional; 3 Fragen. Etappe 2b (`kommunizieren`, `krise`, Einstieg auf `index`) fachlich freigegeben am 11.10.2026. Prüfrunde 2c (Stand `7ee24ba`, `genesung`, `unterstuetzung`, `diagnose`, `behandlung`, Einstiege auf `index`; eine Prüfsitzung, hat weder 2c-1 noch 2c-2 gebaut): 2 wichtig, 5 optional; 17 Fragen P2c-F-1 bis P2c-F-17. |
-| W2 Gesamtkohärenz | offen | 10.10.2026 | vierte Prüfrunde | 1 wichtig, 3 optional; offen weiter F-W2-02, F-W2-03 (jetzt P4-F-18, P4-F-19). Prüfrunde 2a: 5 optional. Prüfrunde 2b: 1 wichtig, 3 optional Prüfrunde 2c: 2 optional |
-| S Sprach-Review | offen | 10.10.2026 | vierte Prüfrunde | 6 optional; Lesetest je Abschnitt und Kennzahlen; abschliessbar erst nach W1 und W2. Prüfrunde 2a: 1 wichtig (Länge), 3 optional; 24 Kürzungsvorschläge. Prüfrunde 2b: 4 optional; Längenziel nachgerechnet und erreicht; 6 Kürzungsvorschläge Prüfrunde 2c: 3 optional; Längenziele nachgerechnet und erreicht |
-| Visualisierungs-Check | offen | 10.10.2026 | vierte Prüfrunde | 1 wichtig, 5 optional; Matrix 1–17 × 6 Figuren; seit 10.10.2026 alle sechs Figuren fachlich freigegeben (Fachstelle). Prüfrunde 2a: 1 wichtig, 3 optional; Matrix 1–17 × 2 neue Figuren. Etappe 2a: beide Abbildungen fachlich freigegeben (Fachstelle, 10.10.2026). Prüfrunde 2b: 1 optional; Matrix 1–17 für «Zwei Tassen» (`v-ko-tassen`), trägt, Freigabe ausstehend. Nachprüfung 2b-K: «Zwei Tassen» nach dem Verschieben angesehen, trägt, Freundin-Test bestanden, Freigabe ausstehend. Etappe 2b: «Zwei Tassen» fachlich freigegeben (Fachstelle, 11.10.2026). Prüfrunde 2c: «Ein neuer Trieb» (`v-ge-trieb`), Matrix 1–17, trägt für die Kernaussage; 1 wichtig, 1 optional; Freigabe ausstehend. |
+| W1 Fachliche Prüfung | offen | 10.10.2026 | Fachstelle Angehörigenarbeit PUK (Freigabe Etappe 1); vierte Prüfrunde: eine Prüfsitzung (Claude, hat nicht gebaut); Fachstelle (Freigabe Etappe 2a); Prüfrunde 2b: eine Prüfsitzung (Claude, hat nicht gebaut); Fachstelle (Freigabe Etappe 2b) | Etappe 1 fachlich freigegeben (Abschnitt «Fachliche Freigabe der Fachstelle»); alle 21 Fragen P4-F-1 bis P4-F-21 entschieden. Offen, bis die Seiten von Etappe 2 geprüft und freigegeben sind. Prüfrunde 2a: 2 wichtig, 3 optional; 10 Fragen P2a-F-1 bis P2a-F-10. Etappe 2a (`rolle`, `selbstfuersorge`, Einstiege auf `index`) fachlich freigegeben am 10.10.2026. Prüfrunde 2b (`kommunizieren`, `krise`, Einstieg auf `index`): 4 wichtig, 3 optional; 12 Fragen P2b-F-1 bis P2b-F-12. Nachprüfung 2b-K (Stand `f9e2314`, eine Prüfsitzung, hat weder gebaut noch 2b-K umgesetzt): Korrektur wie beauftragt; 1 wichtig (Liste «Neue Sätze zur Freigabe»), 3 optional; 3 Fragen. Etappe 2b (`kommunizieren`, `krise`, Einstieg auf `index`) fachlich freigegeben am 11.10.2026. Prüfrunde 2c (Stand `7ee24ba`, `genesung`, `unterstuetzung`, `diagnose`, `behandlung`, Einstiege auf `index`; eine Prüfsitzung, hat weder 2c-1 noch 2c-2 gebaut): 2 wichtig, 5 optional; 17 Fragen P2c-F-1 bis P2c-F-17. Prüfrunde 2c, zweite Prüfsitzung (Stand `7ee24ba`): 2 wichtig, 1 optional; 15 Fragen P2c2-F-1 bis P2c2-F-15. |
+| W2 Gesamtkohärenz | offen | 10.10.2026 | vierte Prüfrunde | 1 wichtig, 3 optional; offen weiter F-W2-02, F-W2-03 (jetzt P4-F-18, P4-F-19). Prüfrunde 2a: 5 optional. Prüfrunde 2b: 1 wichtig, 3 optional Prüfrunde 2c: 2 optional Prüfrunde 2c, zweite Prüfsitzung: 1 wichtig, 2 optional. |
+| S Sprach-Review | offen | 10.10.2026 | vierte Prüfrunde | 6 optional; Lesetest je Abschnitt und Kennzahlen; abschliessbar erst nach W1 und W2. Prüfrunde 2a: 1 wichtig (Länge), 3 optional; 24 Kürzungsvorschläge. Prüfrunde 2b: 4 optional; Längenziel nachgerechnet und erreicht; 6 Kürzungsvorschläge Prüfrunde 2c: 3 optional; Längenziele nachgerechnet und erreicht Prüfrunde 2c, zweite Prüfsitzung: 6 optional; Längenziele nachgerechnet und erreicht. |
+| Visualisierungs-Check | offen | 10.10.2026 | vierte Prüfrunde | 1 wichtig, 5 optional; Matrix 1–17 × 6 Figuren; seit 10.10.2026 alle sechs Figuren fachlich freigegeben (Fachstelle). Prüfrunde 2a: 1 wichtig, 3 optional; Matrix 1–17 × 2 neue Figuren. Etappe 2a: beide Abbildungen fachlich freigegeben (Fachstelle, 10.10.2026). Prüfrunde 2b: 1 optional; Matrix 1–17 für «Zwei Tassen» (`v-ko-tassen`), trägt, Freigabe ausstehend. Nachprüfung 2b-K: «Zwei Tassen» nach dem Verschieben angesehen, trägt, Freundin-Test bestanden, Freigabe ausstehend. Etappe 2b: «Zwei Tassen» fachlich freigegeben (Fachstelle, 11.10.2026). Prüfrunde 2c: «Ein neuer Trieb» (`v-ge-trieb`), Matrix 1–17, trägt für die Kernaussage; 1 wichtig, 1 optional; Freigabe ausstehend. Prüfrunde 2c, zweite Prüfsitzung: «Ein neuer Trieb» trägt nur mit Änderung; 2 wichtig, 1 optional; zwei Textdarstellungen ohne Befund. |
 | Bedienung und Barrierefreiheit | offen | 10.10.2026 | vierte Prüfrunde, automatisiert | kein Befund; reale Screenreader-Läufe, Hardwaretastatur und Touch fehlen (nicht prüfbar). Prüfrunde 2b: kein Befund (automatisiert) Prüfrunde 2c: kein Befund (automatisiert) |
 | W3 Code-Review | offen | 10.10.2026 | vierte Prüfrunde: nur Stichprobe Technik und Zuständigkeit, kein volles W3 | Stichprobe ohne Befund; W3 erst nach Umsetzung von W2 und S. Prüfrunde 2b: Stichprobe Technik und Zuständigkeit ohne technischen Befund Prüfrunde 2c: Stichprobe Technik und Zuständigkeit, 1 optional (Plan), keine Nummer, kein `tel:` |
 | R1 Profil-Audit | offen | | | noch nicht geprüft |
@@ -2519,6 +2519,588 @@ Mit Korrektur 1h gibt es 6 Figuren:
 - **Statustabelle:** Die Zeilen R1 bis R3 fehlen noch; die Prüfsitzung trägt sie ein.
 - **Profil (später):** P-6, P-9.
 - **Offen für Stufe 5:** Screenreader-Läufe, Hardwaretastatur und Touch.
+
+## Prüfrunde 2c · zweite Prüfsitzung (11.10.2026, Stand 7ee24ba)
+
+**Verhältnis zur Prüfrunde 2c darunter:** Eine zweite Prüfsitzung hat denselben Auftrag am selben Stand unabhängig ausgeführt, ohne die erste Prüfung zu kennen (sie war beim Start noch nicht gemergt). Sie hat weder gebaut noch die erste Prüfung gemacht. Die IDs tragen deshalb das Präfix «P2c2-». Übereinstimmungen und Unterschiede zur ersten Prüfung stehen am Ende dieses Abschnitts. Das entspricht der «Prüftiefe» (zweite, unabhängige Prüfsitzung für W1 und Visualisierungs-Check).
+
+**Geprüfter Stand:** Branch `borderline-umbau`, Commit `7ee24ba` «main in borderline-umbau zusammengeführt (Profil 2026.10.1)» (`git log -1` beim Start). Geprüft sind die Seiten `genesung`, `unterstuetzung`, `diagnose` und `behandlung` sowie auf `index` die zwei neuen Einstiege (Genesung, Unterstützung finden). Die Etappen 1, 2a und 2b sind von der Fachstelle freigegeben. Sie dienen hier nur als Massstab für Begriffe, Ton, Verantwortung, Absicherungen und Wörter für Hilfe. Die Prüfsitzung hat die Website nicht gebaut. Sie hat keine Inhalte und keinen Code geändert und committet nur diesen Bericht.
+
+**Vorgehen**
+
+- **Grundlagen gelesen:** aus `guidelines/` Ablauf, Fachliche Qualität, Gesamtkohärenz, Sprache und Ton, Visuelle Wissensvermittlung («Ein Bild, eine Idee»), Visualisierung umsetzen (Check 1–17), Barrierefreiheit, Technische Qualität, Pre-Release-Audits (R2 Teil 3); `README.md` («Zuständigkeit statt Krisenzugang», «Verweis im Text», «Kritische Information nie nur hinter …»); im Website-Ordner `BAUAUFTRAG-ETAPPE-2C1.md`, `BAUAUFTRAG-ETAPPE-2C2.md`, `BAUAUFTRAG-ETAPPE-2B.md` (Abschnitt 2), die Selbstprüfungen 2c-1 und 2c-2, die Prüfrunde 2b, das Bildsprache-Audit, `UMBAUPLAN.md`, `site.config.json` und `abgleich/` (`README.md`, `genesung.md`, `unterstuetzung.md`, `diagnose.md`, `behandlung.md`).
+- **Bestand:** Branch `origin/borderline-bestand`, `bestand/borderline-angehoerige/texte/` mit `git archive` ausgelesen. Ganz gelesen: `verstehen--diagnostik.md`, `verstehen--begleiterkrankungen.md`, `unterstuetzen--therapie.md`, `genesung.md`; in Teilen `fachstelle.md`, `beratung.md`, `buchempfehlungen.md` und die Handouts `garten`, `fortschritt-paradox`, `remission-heilung`, `5-faktoren-genesung`.
+- **Abgleich:** die vier Tabellen nach Status gefiltert; 40 Zeilen «entfällt», «zusammengeführt» oder «verschoben» von Hand gegen Seite und Bestand gelesen (Teil A2), dazu gezielt alle Zeilen mit Inhalt zu Schutz, Nachsorge, Schuld und Medikamenten.
+- **Rückwärtsprüfung:** Ein Skript der Prüfsitzung zerlegt den sichtbaren Text der vier Seiten (mit Vertiefungen, ohne Quellenblock und SVG) in 619 Sätze, sucht für jeden den ähnlichsten Satz im ganzen Bestand (Wortüberlappung) und prüft, ob er in den Listen «Neue Sätze zur Freigabe» (2c-1 und 2c-2) steht. Die 60 schwächsten Sätze und alle 37 Sätze unter 80 % Übereinstimmung, die in keiner Liste stehen, sind von Hand gelesen (Teil A3).
+- **Browser:** lokal `python3 -m http.server 8765` im Projektstamm, Chromium über Playwright (`/opt/pw-browsers/chromium`). Zum Vergleich der Stand `2d5330b` in einem eigenen Arbeitsbaum auf Port 8766. Bildschirmfotos angesehen, nicht committet.
+- **Netz:** Externe Adressen und die Vorschau auf Netlify waren aus dieser Umgebung nicht erreichbar (`curl`: keine Verbindung; Abruf über das Werkzeug zum Laden von Webseiten: Name nicht auflösbar). Teil A4 stützt sich deshalb auf «Bekannt aus Prüfung 1», Punkt 3, und auf Abschnitt 5 des Bauauftrags 2c-2.
+
+**Ergebnis in Kürze**
+
+- Die vier Seiten übertragen den Bestand treu. In 70 verglichenen Aussagen ist keine Absicherung zu Person, Ursachen, Diagnose, Verlauf, Schweigepflicht oder Schutz ersatzlos entfallen. Es gibt keine neue absolute Aussage über die betroffene Person und kein Heilungsversprechen. Die Rückwärtsprüfung findet keinen neuen Satz ausserhalb der Listen.
+- Vor der Durchsicht durch die Fachstelle sind fünf Punkte wichtig:
+  - **Schutz:** In `behandlung` › `wartezeit` nennt der Satz für «unklare Dringlichkeit» keinen Weg. Er sollte den freigegebenen Wortlaut von `krise` übernehmen (P2c2-F-1).
+  - **Abbildung «Ein neuer Trieb»:** Die zwei Sätze stehen gleichrangig und ohne Kennzeichnung. Die Prüfperson kann den Satz «Eine schwierigere Phase entwertet alles.» als Aussage der Website lesen. Die Giesskanne trägt eine zweite Idee, die nur in der Vertiefung steht (P2c2-F-2).
+  - **Angebotsliste:** Das Kriterium der Liste ist nicht erkennbar. Für HYPE («ab 13 Jahren») und das Sanatorium Kilchberg trägt die Website die Angabe nicht (P2c2-F-3).
+  - **Rollen:** «Kann beitragen» passt nicht zu den Mehrzahlrollen, und die Liste der Angehörigen ist mit sieben Punkten zu lang (P2c2-F-4).
+  - **Widerspruch:** `genesung` sagt, weitere psychische Erkrankungen werden «eigenständig behandelt»; `behandlung` sagt «mitbehandelt» und «integriert» (P2c2-F-5).
+- Die Kennzahlen der bauenden Sitzung stimmen (Abweichungen von höchstens 4 Wörtern ausser bei `genesung`, siehe Teil C). Alle vier Seiten bleiben unter dem Längenziel; das Wichtige steht ohne Aufklappen. Technik, Zuständigkeit, Bedienung und Kontrast sind ohne Befund. Die freigegebenen Seiten sind im Wortlaut unverändert.
+
+### Teil A · W1 Fachliche Vorprüfung
+
+#### A1 · 70 Aussagen gegen den Bestand
+
+Je Seite mindestens 12, auf `diagnose` und `behandlung` je mindestens 18 (13 / 13 / 22 / 22). Ausgewählt nach Auftrag. Nr. = Zeile im Abgleich (g = `genesung.md`, u = `unterstuetzung.md`, d = `diagnose.md`, b = `behandlung.md`), wo die Prüfsitzung sie nachgeschlagen hat. Bestandsdateien in `texte/`; «Handout x» = `materialien--text--x.md`.
+
+**`genesung`**
+
+| # | Bestand (Zitat, Datei) | Neue Fassung (Zitat, Seite › Abschnitt) | Urteil |
+| --- | --- | --- | --- |
+| 1 | «93% erreichten während einer zehnjährigen Studie mindestens einmal eine symptomatische Remission über zwei Jahre.» (`genesung.md`) | wörtlich mit Leerschlag vor %, dazu aus dem Handout «Die Diagnosekriterien waren in diesem Zeitraum nicht mehr erfüllt. Einzelne Beschwerden konnten weiterhin bestehen.» (`forschung`) | gleichbedeutend (2c-1 Frage 1, entschieden) |
+| 2 | «50% erreichten im selben Beobachtungszeitraum eine mindestens zweijährige Recovery: Remission zusammen mit guter sozialer und beruflicher Funktionsfähigkeit nach der Studiendefinition.» | wörtlich (`forschung`) | gleichbedeutend |
+| 3 | «Hinweis: Untersucht wurden 290 Erwachsene, die zu Studienbeginn stationär behandelt wurden. Die Zahlen beschreiben jemals erreichte Zustände im Verlauf, nicht den Anteil dauerhaft beschwerdefreier Menschen am Studienende. Sie sind keine individuelle Prognose.» | Satz zur Stichprobe direkt nach den Zahlen; Liste «Was die Zahlen nicht sagen» mit drei Punkten, darunter «Die Zahlen beschreiben diese Studiengruppe und keine persönliche Prognose.» (`forschung`) | gleichbedeutend; Einschränkung sichtbar und direkt bei den Zahlen |
+| 4 | «10 Jahre beschreiben den Beobachtungszeitraum der Forschung. Daraus lässt sich keine feste Wartezeit bis zu einer Besserung ableiten.» | wörtlich, dazu «Veränderungen können früher eintreten.» (Handout `genesung-zahlen`, g255) | gleichbedeutend |
+| 5 | «Die diagnostischen Kriterien der Borderline-Störung werden über einen festgelegten Zeitraum nicht mehr erfüllt. Einzelne Beschwerden können trotzdem bestehen bleiben.» (`genesung.md`, Remission) | «In Verlaufsstudien bedeutet symptomatische Remission, dass die Diagnosekriterien während eines festgelegten Zeitraums nicht mehr erfüllt sind. … Remission bedeutet nicht automatisch, dass alle Beschwerden verschwunden sind oder keine Unterstützung mehr nötig ist.» (`begriffe`, Handout `remission-heilung`) | gleichbedeutend |
+| 6 | «Eine Einteilung in «geheilt» oder «für immer krank» wird individuellen Verläufen nicht gerecht.» (Handout `remission-heilung`) | wörtlich, Vertiefung «Zum Begriff «Heilung»» (`begriffe`) | gleichbedeutend; kein Heilungsversprechen; die Vertiefung ist Begriffsklärung, kein Schutzhinweis |
+| 7 | «Ein schwieriger Abschnitt macht frühere Erfahrungen oder Fähigkeiten nicht wertlos.» (`genesung.md`, g105) | Kernaussage von Abbildung 1 «Eine schwierigere Phase bedeutet nicht, dass alles Erreichte verloren ist.» (`verlauf`) | gleichbedeutend |
+| 8 | «erneute Belastung ernst nehmen, ohne bisherige Entwicklung für verloren zu erklären» (`genesung.md`, g111) | «Nehmen Sie erneute Belastungen ernst, ohne sie als persönliches Scheitern zu deuten.» (`verlauf`, Wortlaut Handout `fortschritt-paradox`) | gleichbedeutend über die Kernaussage (Nr. 7); die Bemerkung im Abgleich nennt das |
+| 9 | «Für Borderline selbst sind Medikamente keine Kernbehandlung; Änderungen nur mit der behandelnden Fachperson.» | «Für Borderline selbst sind Medikamente keine Kernbehandlung. Medikamente werden nur gemeinsam mit der behandelnden Fachperson geändert.» (`einfluesse`) | gleichbedeutend (Entscheid 11.10.2026); gleich wie `behandlung` |
+| 10 | «Körperliche Beschwerden und weitere psychische Erkrankungen werden eigenständig behandelt, bei Bedarf auch mit Medikamenten.» | wörtlich (`einfluesse`) | gleichbedeutend mit dem Bestand, aber **widersprüchlich** zu `behandlung` › `therapieformen` («mitbehandelt», «integriert») (P2c2-W2-1, P2c2-F-5) |
+| 11 | «Angehörige können Genesung nicht herstellen. Eine schwierigere Phase beweist nicht, dass Sie zu wenig getan haben.» (`genesung.md`, Garten, g34) | «Für Behandlung und Genesung sind Sie nicht verantwortlich.» (`freiwillig`); der Satz zu «zu wenig getan» steht wörtlich auf `rolle` › `anbieten` (Verweissatz); «Angehörige können Genesung nicht herstellen.» in «Grenzen des Bildes» | gleichbedeutend; Verantwortung im Wortlaut von `rolle` |
+| 12 | «Allgemeine Beratung ist auch ohne Zustimmung der betroffenen Person möglich; Auskünfte über ihre Behandlung gibt es grundsätzlich nur mit ihrer Zustimmung; gesetzliche Ausnahmen gelten etwa bei Minderjährigen oder fehlender Urteilsfähigkeit.» (Handout `rolle-genesungsprozess`) | drei Sätze, sichtbar (`freiwillig`) | gleichbedeutend; Schweigepflicht sichtbar (2c-1 Frage 3, entschieden) |
+| 13 | «Die fünf Bereiche sind eine eigene redaktionelle Synthese der Fachstelle, kein validiertes Fünf-Faktoren-Modell und keine individuelle Prognose.» | «… eine eigene Zusammenstellung der Fachstelle aus Behandlungsleitlinien, kein geprüftes Modell.»; «keine persönliche Prognose» im Satz davor (`einfluesse`) | gleichbedeutend (2c-1 Frage 4, entschieden) |
+
+**`unterstuetzung`**
+
+| # | Bestand (Zitat, Datei) | Neue Fassung (Zitat, Seite › Abschnitt) | Urteil |
+| --- | --- | --- | --- |
+| 14 | «Die Fachstelle ist kein Krisendienst und keine Therapie. Sie ist eine Anlaufstelle für Angehörige, die ihre Rolle klären, …» (`fachstelle.md`) | «Die Fachstelle ist eine Anlaufstelle für Angehörige, die … Die Fachstelle ist kein Krisendienst und keine Therapie.» (`beratung`) | gleichbedeutend; sichtbar |
+| 15 | «Fragen Sie, ob ein Gespräch zu Ihrer Rolle, Belastung oder einer konkreten Entscheidung möglich ist.» (`fachstelle.md`) | «Ein Gespräch zu Ihrer Rolle, Ihrer Belastung oder einer konkreten Entscheidung.» (`beratung`, Begriff «Beratung für Angehörige») | Bedeutung leicht verschoben (Angebot statt Frage), von der Fachstelle entschieden (2c-1 Frage 11) |
+| 16 | «Beratung kostet nichts und wird nicht an Krankenkassen weitergegeben.» (`verstehen--begleiterkrankungen.md`) | Verweissatz auf `index#beratung`; dort «Die Beratung ist kostenlos und untersteht der Schweigepflicht.» | gleichbedeutend über die Startseite (2c-1 Frage 10, entschieden) |
+| 17 | «Die Schweizerische Stiftung Pro Mente Sana bietet psychosoziale und juristische Beratung für Betroffene und Angehörige. Kostenlose Telefonberatung …» (`beratung.md`) | wörtlich, zweiter Satz als Satz (`beratung`) | gleichbedeutend |
+| 18 | «Ehemals VASK Schweiz – Dachverband der Vereinigungen von Angehörigen psychisch Erkrankter. Seit Januar 2024 unter neuem Namen.» | «Stand by You Schweiz ist der Dachverband der Vereinigungen von Angehörigen psychisch erkrankter Menschen. Bis Januar 2024 hiess er VASK Schweiz.» (`austausch`) | gleichbedeutend |
+| 19 | «Die Organisation bietet eine kostenlose HelpLine, die von Angehörigen für Angehörige betrieben wird.» | wörtlich, ohne Nummer und Zeiten (`austausch`) | gleichbedeutend; Profil eingehalten |
+| 20 | «Kantonale Vereinigung der Angehörigen von psychisch Kranken – mit regelmässigen Beratungs-Treffpunkten in Zürich und Winterthur.» | «Die VASK Zürich ist die kantonale Vereinigung für Angehörige von Menschen mit einer psychischen Erkrankung. Sie bietet regelmässige Beratungs-Treffpunkte in Zürich und Winterthur an.» (`austausch`) | gleichbedeutend, personenzentriert (2c-1 Frage 12, entschieden) |
+| 21 | «Für Eltern jugendlicher Betroffener gibt es an der PUK Zürich die Gruppe «Eltern von Jugendlichen mit einer Borderline-Persönlichkeitsstörung». Sie bietet Austausch, Psychoedukation und Beratung …» (`verstehen--diagnostik.md`, d187–d190) | wörtlich, dazu «Teilnahmebedingungen und Anmeldung stehen auf der Website.» (`austausch`) | gleichbedeutend; Name der Gruppe weicht von der Website ab (Frage 18, P2c2-F-12) |
+| 22 | «Selbsthilfegruppen für Angehörige von Menschen mit Borderline finden Sie über Selbsthilfe Schweiz – die zentrale Vermittlungsstelle …» (`beratung.md`) | zwei Sätze (`selbsthilfe`) | gleichbedeutend |
+| 23 | «Regional-Hinweis: Die hier aufgeführten Angebote sind primär für den Kanton Zürich relevant. Für andere Kantone führt der schnellste Weg …» (`beratung.md`) | «Die Angebote auf dieser Seite sind vor allem für den Kanton Zürich gedacht. Für andere Kantone führt der schnellste Weg über Selbsthilfe Schweiz. …» (`kantone`) | gleichbedeutend |
+| 24 | «Diese Liste ist eine persönliche Auswahl und erhebt keinen Anspruch auf Vollständigkeit.» (`buchempfehlungen.md`) | «Die Bücher sind eine persönliche Auswahl, überwiegend deutschsprachig und ohne Anspruch auf Vollständigkeit.» (`buecher`) | gleichbedeutend |
+| 25 | Kritische Einordnung «Schluss mit dem Eiertanz»: Krisenhinweise nicht als heutige Notfallanleitung (`buchempfehlungen.md`) | «Krisenhinweise nicht als heutige Notfallanleitung verwenden. Mit kritischer Distanz lesen.» (Vertiefung «Historisch einflussreich …») | gleichbedeutend; Einordnung bleibt beim Titel; Entscheid der Fachstelle (Bücher in Vertiefung) |
+| 26 | «Fachstelle Angehörigenarbeit PUK Zürich» mit Telefon, Adresse, E-Mail, Web (`beratung.md`) | Verweissatz auf `index#beratung`; keine Nummer, keine E-Mail im Abschnitt | gleichbedeutend über die Startseite; Profil (kein Krisenzugang) eingehalten |
+
+**`diagnose`**
+
+| # | Bestand (Zitat, Datei) | Neue Fassung (Zitat, Seite › Abschnitt) | Urteil |
+| --- | --- | --- | --- |
+| 27 | «Nicht als Anleitung, jemanden zur Diagnose zu drängen, sondern als Orientierung in einer Phase, in der vieles unklar ist.» (`verstehen--diagnostik.md`, Kopf) | «Die Seite ist keine Anleitung, jemanden zur Diagnose zu drängen, sondern eine Orientierung …» (`kopf`) | gleichbedeutend |
+| 28 | «Wer die diagnostische Gesamtbeurteilung übernimmt, hängt von Qualifikation, Setting und Behandlungsweg ab.» | wörtlich (`abklaerung`) | gleichbedeutend; «Setting» unerklärt (P2c2-S-3) |
+| 29 | «Den ersten Kontakt dürfen Sie anregen oder begleiten … Anbieten ja, erzwingen nein.» (Infografik) | wörtlich, «Ihre Rolle» bei Schritt 1 (`abklaerung`) | gleichbedeutend; Telegrammstil des Bestands (P2c2-S-5) |
+| 30 | «Ob Sie einbezogen werden, hängt vom Einverständnis Ihres/Ihrer Angehörigen ab – das kann schwer sein.» | «Ob Sie einbezogen werden, hängt vom Einverständnis der betroffenen Person ab. Das kann schwer sein.» (Schritt 4) | gleichbedeutend (Frage 3); bei Minderjährigen gilt das sichtbare Unterkapitel darunter |
+| 31 | «Eine Abklärung entsteht aus einem Muster über die Zeit, nicht aus einem einzelnen Moment.» | wörtlich (Schritt 3) | gleichbedeutend |
+| 32 | «Die Diagnose ist eine fachliche Beurteilung über Zeit, nicht ein Stempel aus einem einzelnen Gespräch.» | wörtlich, hervorgehoben (`abklaerung`) | gleichbedeutend |
+| 33 | «Auch urteilsfähige Minderjährige haben ein Recht auf Vertraulichkeit; konkrete Fragen sollten mit der zuständigen Fachperson geklärt werden.» | «Auch urteilsfähige Minderjährige haben ein Recht auf Vertraulichkeit. Konkrete Fragen klären Sie mit der zuständigen Fachperson.» (`abklaerung`, «Bei Jugendlichen», sichtbar) | gleichbedeutend (Frage 2); im Bestand nur in der Textversion und einem Akkordeon, jetzt sichtbar |
+| 34 | «Im DSM-5-TR werden neun Kriterien geprüft; mindestens fünf müssen als anhaltendes und situationsübergreifendes Muster vorliegen. In der ICD-11 wird zuerst der Schweregrad … bestimmt; das Borderline-Muster kann anschliessend mit dem Zusatzcode 6D11.5 beschrieben werden.» | wörtlich als Begriffsliste, Semikolons als Punkte (Vertiefung «Wie die Diagnose beschrieben wird») | gleichbedeutend (Frage 1) |
+| 35 | «Für die stationäre medizinische Statistik gilt in der Schweiz 2026 weiterhin die ICD-10-GM 2024. Deshalb kann in entsprechenden Unterlagen der Code F60.31 erscheinen. Das ist eine begrenzte Vorgabe …» | wörtlich, letzter Satz geteilt (Vertiefung) | gleichbedeutend; Quelle BFS (2026) im Quellenblock |
+| 36 | «Bei der Diagnose werden auch andere Erkrankungen geprüft, die ähnliche Muster zeigen können — etwa bipolare Störungen, posttraumatische Belastungsstörungen, ADHS oder dissoziative Störungen. Das ist normaler Teil sorgfältiger Diagnostik und keine Verzögerungstaktik.» | Schritt 2 (zweiter Satz wörtlich) und `begleiterkrankungen` («Davon zu unterscheiden ist die Differenzialdiagnostik: …») | gleichbedeutend |
+| 37 | «Wichtig: Eine Diagnose ist nicht dauerhaft fixiert. Recovery ist möglich — siehe Genesung.» | «Eine Diagnose ist nicht dauerhaft fixiert.» und Verweissatz auf `genesung#forschung` (`bedeutung`) | gleichbedeutend; Verweis statt Versprechen |
+| 38 | «Auch eine fachlich gestellte Diagnose darf hinterfragt werden; eine zweite fachliche Einschätzung ist legitim.» | zwei Sätze (`zweifel`) | gleichbedeutend |
+| 39 | «Klare Grenze: Bei akuter Gefahr — Suizidalität, schwerer Selbstverletzung oder Fremdgefährdung — ist die Diagnose-Frage nachrangig. Dann zählt die Soforthilfe.» | «… etwa bei Suizidgefahr, schwerer Selbstverletzung oder Gefahr für andere Menschen, ist die Frage nach der Diagnose nachrangig. Dann holen Sie Hilfe über den Notruf.» + Verweis im Text (`zweifel`) | gleichbedeutend (Frage 5); Wörter für Hilfe siehe P2c2-F-1 |
+| 40 | «Es erlaubt aber keine Diagnose der anderen Person.» (Wiedererkennen) | wörtlich (`ohne-diagnose`) | gleichbedeutend; Absicherung über die Person gehalten |
+| 41 | «Diese Seite ist kein Selbstdiagnose-Werkzeug. … Eigene Hausärzt:in oder Psychotherapeut:in — keine Pflicht, aber eine reale Option.» | wörtlich bzw. «Ihre Hausarztpraxis oder eine Psychotherapeutin oder ein Psychotherapeut kann eine Anlaufstelle sein. Das ist keine Pflicht, aber eine reale Option.» (`ohne-diagnose`, im Bestand Akkordeon, jetzt sichtbar) | gleichbedeutend |
+| 42 | «Bei Menschen mit Borderline kommen weitere psychische Diagnosen häufig vor.» / «bei vielen, aber nicht allen» (`verstehen--begleiterkrankungen.md`) | «… kommen weitere psychische Diagnosen häufig vor, aber nicht bei allen.» (`begleiterkrankungen`) | gleichbedeutend; Absicherung «nicht bei allen» im selben Satz |
+| 43 | «Mehrere Diagnosen heissen mehr Komplexität – nicht mehr Schuld. … Sie müssen nicht sortieren, was was ist.» (Infografik) | wörtlich, hervorgehoben (`begleiterkrankungen`) | gleichbedeutend |
+| 44 | «Die älteren Zanarini-Untersuchungen beruhen auf einer spezialisierten, zunächst stationär behandelten Stichprobe und betrachten Diagnosen im Lebenszeit- und Langzeitverlauf. Ihre Befunde sind keine Prävalenzschätzung für alle Menschen mit Borderline und keine individuelle Prognose.» | «Die älteren Studien dazu untersuchten Menschen, die zu Beginn stationär behandelt wurden. Die Befunde dieser Studien zeigen nicht, wie häufig Depressionen bei allen Menschen mit Borderline sind, und sie sind keine persönliche Prognose.» (`begleiterkrankungen` › «Depression») | gleichbedeutend im Kern; «spezialisierte» und «Lebenszeit- und Langzeitverlauf» entfallen (Frage 6, P2c2-F-8) |
+| 45 | «Die NICE-Vollleitlinie (2009) beschreibt einen beobachteten Zusammenhang zwischen Borderline mit zusätzlicher Major Depression und Suizidversuchen. Dieser Gruppenbefund erlaubt keine Vorhersage für eine einzelne Person.» | «Die britische Behandlungsleitlinie NICE beschreibt … mit einer zusätzlichen Depression (Major Depression) …» und der zweite Satz wörtlich | gleichbedeutend (Frage 4); Absicherung im nächsten Satz |
+| 46 | «Bei akuter Gefahr oder Hinweisen auf konkrete suizidale Absicht: Soforthilfe — Notfallnummern …» | «Bei akuter Gefahr oder Hinweisen auf eine konkrete suizidale Absicht holen Sie sofort Hilfe über den Notruf.» + Verweis im Text + Verweissatz auf `krise#suizid` | gleichbedeutend; ohne Nummern (Profil) |
+| 47 | «Aus einer Diagnose lässt sich keine persönliche Schuld ableiten. Angehörige müssen die Erkrankung weder verhindern noch heilen. Beziehungen können das Befinden dennoch beeinflussen; Verantwortung für konkrete verletzende oder gewalttätige Handlungen bleibt davon getrennt.» | «Angehörige sind nicht schuld an der Erkrankung und nicht für die Genesung verantwortlich.» (Wortlaut `verstehen`) und Verweissatz auf `rolle#schuld` | gleichbedeutend über `rolle#schuld` (Frage 7); die Nuance zu Beziehungen und verletzenden Handlungen steht dort |
+| 48 | «Ob Medikation passt, wird individuell mit der behandelnden ärztlichen Fachperson geklärt.» (Behandlung, d354) | auf `behandlung` › `therapieformen` wörtlich mit «ein Medikament»; auf `diagnose` Verweissatz | gleichbedeutend; verlinkt statt wiederholt |
+
+**`behandlung`**
+
+| # | Bestand (Zitat, Datei) | Neue Fassung (Zitat, Seite › Abschnitt) | Urteil |
+| --- | --- | --- | --- |
+| 49 | «Ob, wie und mit welchen Zielen sie stattfindet, entscheidet die betroffene Person gemeinsam mit Fachpersonen. Angehörige dürfen ihre eigene Rolle und Unterstützung unabhängig davon klären.» (`unterstuetzen--therapie.md`) | wörtlich (`kopf`) | gleichbedeutend |
+| 50 | Auswahl «Ihre Rolle»: «MÖGLICHE BEITRÄGE – WENN GEWÜNSCHT UND MÖGLICH … NICHT VON DIESER ROLLE ZU ERWARTEN»; «Was Ihre Rolle ausdrücklich nicht ist» (vier Punkte) | Spalte «Angehörige», «Kann beitragen» / «Nicht zu erwarten» mit sieben Punkten (`rollen`) | Inhalt gleichbedeutend; Bezeichnung und Länge siehe P2c2-F-4 |
+| 51 | «Behandlung liegt bei der erkrankten Person und den Fachpersonen.» | «… bei der betroffenen Person …» (`rollen`) | gleichbedeutend, personenzentriert |
+| 52 | «Sie müssen eine Therapie weder zum Funktionieren bringen noch ihren Rahmen mittragen.» | wörtlich (`rollen`) | gleichbedeutend |
+| 53 | «Vertraulichkeit Ihrer Mitteilung gegenüber der betroffenen Person kann nicht pauschal zugesichert werden. Bei möglicher akuter Gefahr nutzen Sie die Notfallwege und warten nicht auf eine Rückmeldung per E-Mail.» | erster Satz wörtlich im Begriff «Beobachtungen mitteilen»; zweiter Satz «… holen Sie sofort Hilfe über den Notruf …» nach der Begriffsliste + Verweis im Text (`kontakt`) | gleichbedeutend (Frage 8); sichtbar |
+| 54 | «Informationen über Diagnose, Sitzungen oder Verlauf dürfen grundsätzlich nur mit entsprechender Einwilligung oder einer anderen Rechtsgrundlage weitergegeben werden. Eine Mitteilung an das Team hebt die Schweigepflicht nicht auf.» | wörtlich (`kontakt`) | gleichbedeutend; Schweigepflicht sichtbar |
+| 55 | «Eigene Beratung gibt Ihnen keinen automatischen Zugang zu vertraulichen Behandlungsinformationen einer anderen Person.» | wörtlich (`kontakt`) | gleichbedeutend |
+| 56 | «Bei der Fachstelle Angehörigenarbeit der PUK ist sie kostenlos und ohne Vollmacht der erkrankten Person möglich.» | «… der betroffenen Person …» (Vertiefung «Ich möchte über meine eigene Belastung sprechen») | gleichbedeutend; gleich wie `index` › `beratung` |
+| 57 | «… kann eine zweite fachliche Einschätzung sinnvoll sein; eine pauschale Wartefrist von einem Jahr gibt es dafür nicht.» | zwei Sätze (Vertiefung «Ich mache mir Sorgen um den Verlauf») | gleichbedeutend (Frage 12) |
+| 58 | «Formulierungsbeispiel: «Ich beobachte weiterhin Selbstverletzungen …» Bei akuter Gefahr nutzen Sie den Notruf, statt auf eine Antwort zu warten.» (b103) | Beispielsatz wörtlich in der Vertiefung; der Notruf-Satz ist mit der sichtbaren Anleitung in `kontakt` zusammengeführt | gleichbedeutend; regelkonform (keine Anleitung in einer Vertiefung) |
+| 59 | «Eine Entlassung bedeutet nicht automatisch, dass Angehörige Betreuung übernehmen oder rund um die Uhr verfügbar sind. … kein allgemeiner Anspruch auf … den Austrittsbericht.»; «Notfallkontakt klären: «Wenn es wieder kritisch wird, rufe ich … an?»» (b127) | die zwei Punkte wörtlich (Vertiefung «Nach einer Krise»); «Notfallkontakt klären» zusammengeführt mit `krise` › `danach` («Welche Hilfe soll leicht erreichbar sein?») und der sichtbaren Frage «… an wen wenden Sie sich bei möglicher akuter Gefahr?» (`kontakt`) | gleichbedeutend; nachgeschlagen: beide Stellen vorhanden |
+| 60 | «Die Behandlung kann je nach Situation integriert, parallel oder schrittweise geplant werden. Eine starre Reihenfolge gilt nicht; der Gesamtbehandlungsplan wird individuell abgestimmt.» (`verstehen--begleiterkrankungen.md`) | zwei Sätze, der zweite als Kommasatz (`therapieformen`) | gleichbedeutend; Kommasatz (P2c2-S-1) |
+| 61 | «Nach NICE sollen Medikamente nicht gezielt zur Behandlung von Borderline selbst … Bei einer zusätzlichen Depression kann eine Kombination aus einem Antidepressivum und psychologischer Behandlung erwogen werden.» | wörtlich, dazu der Satz von `genesung` (`therapieformen`) | gleichbedeutend (Frage 9); gleich wie `genesung` |
+| 62 | «Für Family Connections liegen inzwischen auch randomisierte Daten vor: Die Studie von 2024 fand keinen statistisch signifikanten Vorteil gegenüber einer aktiven Vergleichsbehandlung; daraus folgt weder gesicherte Überlegenheit noch Gleichwertigkeit.» | wörtlich mit «Daten aus einer randomisierten Studie», Semikolon als Punkt (Vertiefung «Programme für Angehörige») | gleichbedeutend (Frage 10) |
+| 63 | «Auch klar strukturierte, störungsinformierte Behandlungen ohne spezialisiertes Therapielabel können wirksam sein.» | «… auf Borderline abgestimmte …» (`therapieformen`) | gleichbedeutend (Frage 16) |
+| 64 | «Diese Reaktionen sind verständlich; sie machen Sie nicht zur Bewertungsinstanz des Verlaufs.» | «Diese Reaktionen sind verständlich. Den Verlauf bewerten müssen Sie deshalb nicht.» (`rueckschlaege`) | gleichbedeutend |
+| 65 | «Kinder sollten Diagnose-, Krisen- oder Gewaltgespräche nicht dolmetschen müssen.» | wörtlich (`rueckschlaege`) | gleichbedeutend; sichtbar |
+| 66 | «Frühinterventionsangebot für Jugendliche ab 13 Jahren mit Verdacht, Risiko oder bereits diagnostizierter Borderline-Störung.» | «HYPE Züri ist ein Frühinterventionsangebot bei Verdacht, Risiko oder bereits diagnostizierter Borderline-Persönlichkeitsstörung.» und «Für: Jugendliche ab 13 Jahren» (`angebote`) | gleichbedeutend mit dem Bestand; die Website trägt «ab 13» laut Prüfung 1 nicht (P2c2-F-3) |
+| 67 | «Privatklinik für Psychiatrie und Psychotherapie am Zürichsee.» (`verstehen--diagnostik.md`) | «Das Sanatorium Kilchberg ist eine Privatklinik …» und «Für: Angaben auf der Website» (`angebote`) | gleichbedeutend mit dem Bestand; Bezug zu Borderline fehlt auf Seite und Website (P2c2-F-3) |
+| 68 | «Bei akuter Gefahr oder unklarer Dringlichkeit warten Sie nicht auf einen Therapieplatz: Nutzen Sie den zuständigen Notfalldienst.» | «Bei akuter Gefahr oder unklarer Dringlichkeit warten Sie nicht auf einen Therapieplatz. Bei unmittelbarer Gefahr holen Sie Hilfe über den Notruf.» + Verweis im Text (`wartezeit`, Schritt 4) | **Absicherung schwächer:** Für die unklare Dringlichkeit nennt die Anleitung selbst keinen Weg mehr; nur der Verweis im Text danach nennt den ärztlichen Notfalldienst (P2c2-W1-1, P2c2-F-1) |
+| 69 | «Für psychologische Psychotherapie zulasten der Grundversicherung ist eine ärztliche Anordnung nötig; nicht alle Ärzt:innen sind regulär anordnungsberechtigt.» | zwei Sätze, Paarform, Link auf das BAG (`wartezeit`, Schritt 2) | gleichbedeutend (Frage 11); Link nicht aufrufbar |
+| 70 | «Beratung und Selbsthilfe ersetzen keine notwendige Behandlung.» | wörtlich (`wartezeit`) | gleichbedeutend |
+
+**Bilanz:** 70 Aussagen (13 / 13 / 22 / 22). 66 gleichbedeutend, davon 6 mit Hinweis auf Wort, Name oder Angabe (Nr. 21, 28, 29, 44, 50, 60). 1 gleichbedeutend mit dem Bestand, aber widersprüchlich zu einer anderen neuen Seite (Nr. 10). 1 leicht verschoben, von der Fachstelle entschieden (Nr. 15). Bei 1 ist eine Absicherung schwächer (Nr. 68). 2 tragen den Bestand, aber die Angabe ist durch die Website nicht gedeckt (Nr. 66, 67). Keine Aussage ist neu ohne Grundlage. Keine Absicherung zu Person, Ursachen, Diagnose, Verlauf, Schweigepflicht oder Schutz ist ersatzlos entfallen; alle Schutzhinweise stehen im Lesefluss.
+
+#### A2 · 40 Zeilen des Abgleichs mit Status «entfällt», «zusammengeführt» oder «verschoben»
+
+Je Tabelle 10 Zeilen: jede siebte Zeile dieser Status (Stichprobe) und gezielt die Zeilen mit Inhalt zu Schutz, Nachsorge, Schuld, Schweigepflicht und Medikamenten.
+
+| Nr. | Status | Bestand (Kern) | Trägt die neue Fassung? Ist «entfällt» begründet? |
+| --- | --- | --- | --- |
+| g6 | entfällt | «Orientierung auf dieser Seite: Garten · Eigene didaktische Darstellung.» | begründet (Meta-Text) |
+| g22 | zusammengeführt | «Fragen Sie, welche Unterstützung gewünscht ist, und bieten Sie nur an, was für Sie möglich ist.» | trägt: `rolle` › `anbieten` (wörtlich dort, nachgeschlagen), Verweissatz in `freiwillig`; dazu sichtbar «Fragen Sie die Person selbst, …» |
+| g34 | zusammengeführt | «Eine schwierigere Phase beweist nicht, dass Sie zu wenig getan haben.» | trägt: wörtlich auf `rolle` › `anbieten` (nachgeschlagen) |
+| g46 | zusammengeführt | «Manchmal ist weniger Unterstützung, eine Kontaktpause oder zusätzliche professionelle Hilfe nötig.» | trägt: wörtlich auf `rolle` › `anbieten` |
+| g88 | verschoben | «Gunderson et al. (2011) – Ten-year course of BPD (CLPS)» | trägt: Quellenblock |
+| g105 | zusammengeführt | «Ein schwieriger Abschnitt macht frühere Erfahrungen oder Fähigkeiten nicht wertlos.» | trägt: Kernaussage von Abbildung 1 |
+| g109 | zusammengeführt | «Keine Verlaufskurve ist eine Prognose oder ein Ziel.» | trägt: «Das Bild ist eine Metapher, keine Vorhersage eines Genesungsverlaufs.» (Vertiefung der Abbildung); die Grenze ist kein Schutzhinweis, Vertiefung zulässig |
+| g111 | zusammengeführt | «… ohne bisherige Entwicklung für verloren zu erklären» | trägt über die Kernaussage (A1 Nr. 8) |
+| g137 | zusammengeführt | «Behandlung bleibt Entscheidung der Person und des Fachteams» | trägt: «Urteilsfähige Erwachsene entscheiden selbst über ihre Behandlung, gemeinsam mit den Behandelnden.» |
+| g163 | verschoben | «Mehr dazu auf der Seite Begleiterkrankungen.» | trägt: Verweissatz mit Link auf `diagnose#begleiterkrankungen` (Ziel vorhanden) |
+| u35 | entfällt | «Website der PUK Zürich.» | begründet (2c-1 Frage 9, entschieden) |
+| u49 | entfällt | Link «Soforthilfe» | begründet (Profil); keine Handlungsanleitung im Bestand, deshalb kein Verweis im Text |
+| u79 | entfällt | «E-Mail, Adresse und Angebotsbedingungen sind damit nicht abschliessend geprüft.» | begründet (Meta-Text) |
+| u93 | entfällt | «Mehr über die Fachstelle erfahren» | begründet (Inhalt im Abschnitt) |
+| u119 | entfällt | HelpLine-Zeiten | begründet (Profil, Bauauftrag 2c-1) |
+| u128 | entfällt | Prüfangabe VASK Zürich | begründet (Meta-Text) |
+| u22 | entfällt | «Direkt erreichen» (Zwischentitel) | begründet |
+| u42 | entfällt | «Aktuelle redaktionelle Änderungen und frühere Prüfangaben ersetzen keine … Freigabe.» | begründet (Meta-Text) |
+| u62 | entfällt | frühere Prüfangabe | begründet |
+| u4 | entfällt | Lesezeit | begründet |
+| d56 | zusammengeführt | «Bei Jugendlichen kann die Abklärung in der Kinder- und Jugendpsychiatrie erfolgen.» | trägt: «Eine Fachperson der Kinder- und Jugendpsychiatrie beurteilt …» (sichtbar) |
+| d83 | entfällt | «Mehr dazu auf der Seite Begleiterkrankungen.» | begründet (jetzt Abschnitt 05 derselben Seite) |
+| d123 | entfällt | Link auf `/selbsttest` («Passende Inhalte finden») | begründet (Seite entfällt); «Es erlaubt aber keine Diagnose der anderen Person.» trägt die Absicherung |
+| d153 | entfällt | Telefonnummern ipw | begründet (Profil) |
+| d249 | zusammengeführt | «Mehrere Diagnosen bedeuten mehr Komplexität, aber keine Rangfolge des Leids.» | trägt: «… nicht mehr Schuld.» und «Die Reihenfolge ist keine Rangfolge.» |
+| d252 | zusammengeführt | «Begleiterkrankungen sind weder eine zusätzliche «Strafe» noch etwas, das Angehörige selbst diagnostisch sortieren müssen.» | trägt: «Sie müssen nicht sortieren, was was ist.» und «nicht mehr Schuld» |
+| d312 | zusammengeführt | «Bei Hinweisen auf Suizidalität → siehe Soforthilfe.» | trägt: sichtbare Anleitung mit Verweis im Text (A1 Nr. 46) |
+| d316, d317 | zusammengeführt | Verantwortung für verletzende Handlungen; «Veränderungen im Miteinander sind allein kein Beleg für die Ursache einer Erkrankung.» | trägt über den Verweissatz auf `rolle#schuld` (A1 Nr. 47); auf `diagnose` selbst steht die Nuance nicht. Vertretbar, weil `rolle` freigegeben ist (P2c2-F-9) |
+| d333 | zusammengeführt | «Eine fachliche Abklärung kann passende Behandlungsschritte klären.» (Substanzgebrauch) | trägt: «Welche Erklärung passt, muss individuell abgeklärt werden.» |
+| d369 | zusammengeführt | «Beratung kostet nichts und wird nicht an Krankenkassen weitergegeben.» | trägt über `index#beratung` (A1 Nr. 16) |
+| b8 | entfällt | «Behandlungsentscheidungen und vertrauliche Informationen haben eigene Zuständigkeiten.» («Das können Sie mitnehmen») | begründet (Meta-Text); Inhalt trägt `kontakt` (Wege 1 und 2) |
+| b20 | entfällt | Auswahl-Schaltflächen | begründet (alle Rollen sichtbar) |
+| b76 | zusammengeführt | «Angehörigenberatung kontaktieren» | trägt: Verweissatz auf `index#beratung` |
+| b103 | zusammengeführt | «Bei akuter Gefahr nutzen Sie den Notruf, statt auf eine Antwort zu warten.» | trägt: sichtbare Anleitung in `kontakt` (A1 Nr. 58) |
+| b113 | zusammengeführt | «Die Mitteilung begründet keinen Anspruch auf vertrauliche Auskünfte.» | trägt: «Eine Mitteilung an das Team hebt die Schweigepflicht nicht auf.» |
+| b124, b125, b127 | zusammengeführt | Nachsorge, «Wer macht was?», Notfallkontakt | trägt: `krise` › `danach` «Unterstützung: Wer ist wofür zuständig?», «Fachliche Nachsorge und erreichbare Kontakte klärt die betroffene Person mit dem Behandlungsteam.», «Welche Hilfe soll leicht erreichbar sein?» (nachgeschlagen) |
+| b210 | zusammengeführt | «bei Organisation helfen, wenn das erwünscht ist» | trägt: Spalte «Angehörige» und `wartezeit` |
+| b211 | zusammengeführt | «gemeinsam üben, wenn die Person dies ausdrücklich möchte» | trägt: `rolle` › `anbieten` «gemeinsam üben, wenn das gewünscht und vereinbart ist» |
+| b273 | entfällt | «Zuständige Notfalldienste finden Sie unter Akute Hilfe und Notfallkontakte.» | begründet (Profil); der Verweis im Text in `wartezeit` ersetzt ihn |
+| b289 | entfällt | «Grundlagen zum Nachlesen: …» | begründet |
+
+**Ergebnis:** Alle 40 Zeilen tragen oder sind begründet. Keine Aussage zu Schutz, Sicherheit, Schweigepflicht oder Verantwortung ist weggefallen, die sonst nirgends steht. Die Fundstellen auf `rolle` und `krise` sind nachgeschlagen und vorhanden.
+
+#### A3 · Neue Sätze
+
+**(a) Rückwärtsprüfung (619 Sätze, davon 97 von Hand gelesen):** Kein Satz der vier Seiten ist neu und fehlt in den Listen. Die 37 Sätze unter 80 % Übereinstimmung, die nicht in einer Liste stehen, sind Bestand mit anderer Zeichensetzung: Buchangaben mit «und» statt «&» (sammelnd in 2c-1 Nr. 75 genannt), «Für: …»-Zeilen der Bücher, «Eine Einteilung in «geheilt» …» (Handout `remission-heilung`), «Erinnern Sie sich: Genesung ist individuell und keine Leistung der Familie.» (Handout `5-faktoren-genesung`), die Fragen aus den Vertiefungen auf `behandlung`.
+
+**(b) Stichprobe aus den Listen (44 Sätze):**
+
+| Nr. (Liste) | Satz (gekürzt) | Urteil |
+| --- | --- | --- |
+| 2c-2 Nr. 4 | «Ausserdem geht es um Begleiterkrankungen: Bei vielen, aber nicht allen …» | tragbar, nah am Bestand |
+| Nr. 7 | «Mögliche erste Anlaufstellen sind die Hausarztpraxis, eine psychiatrische oder psychotherapeutische Praxis oder ein Ambulatorium.» | tragbar; aus der Infografik |
+| Nr. 11 | «Dafür qualifizierte Fachpersonen klären ab, …» | tragbar; Satzbeginn holprig (P2c2-S-5) |
+| Nr. 12, 13, 14 | Gespräche, andere Erkrankungen, «keine Verzögerungstaktik» | tragbar |
+| Nr. 18, 19 | Rückmeldung und Einordnung | tragbar |
+| Nr. 26–30 | «Bei Jugendlichen» | tragbar (Frage 2) |
+| Nr. 34, 35 | «Fachpersonen beschreiben Diagnosen mit Klassifikationssystemen. Für Borderline sind das vor allem das DSM-5-TR der American Psychiatric Association und die ICD-11 der Weltgesundheitsorganisation.» | fachlich richtig (Herausgeber stimmen); tragbar (Frage 1) |
+| Nr. 46, 47, 50, 52 | Bedeutung der Diagnose | tragbar, wörtlich nahe |
+| Nr. 61, 62, 64, 65 | ohne Diagnose | tragbar |
+| Nr. 66, 67 | zwei Sätze mit «Fachstelle Angehörigenarbeit der PUK» direkt nacheinander | tragbar; Wiederholung (P2c2-S-2) |
+| Nr. 76–78 | Komorbidität | tragbar |
+| Nr. 85–88 | Depression, Stichprobe | tragbar (Frage 6) |
+| Nr. 89–93 | «Was Sie tun können» bei Depression | tragbar; Ton der Website |
+| Nr. 99, 100 | NICE, professionelle Einschätzung | tragbar (Frage 4) |
+| Nr. 103, 104 | Einleitung der Vertiefung «Mögliche Hinweise …» | tragbar; Absicherung «ersetzen keine fachliche Beurteilung» |
+| Nr. 109 | ADHS, Kommasatz | tragbar; Kommasatz (P2c2-S-1) |
+| Nr. 113 | «Die betroffene Person, Fachpersonen und Angehörige können Unterschiedliches beitragen, und von jeder Rolle ist manches nicht zu erwarten.» | tragbar |
+| Nr. 129–131 | «Nicht zu erwarten» der Angehörigen | tragbar; zwei Punkte fast gleich (P2c2-F-4) |
+| Nr. 136 | Akute Gefahr in `kontakt` | tragbar (P2c2-F-1) |
+| Nr. 160, 161 | Schweigepflicht im Musterbrief | tragbar (Frage 13) |
+| Nr. 162–168 | Therapieformen | tragbar |
+| Nr. 177 | «Eine starre Reihenfolge gilt nicht, der Behandlungsplan …» | tragbar; Kommasatz (P2c2-S-1) |
+| Nr. 183, 185 | Psychoedukation, Family Connections | fachlich richtig (Hoffman et al. 2005); tragbar (Frage 10) |
+| Nr. 213, 214 | HYPE Züri | Satz tragbar; «ab 13 Jahren» offen (P2c2-F-3) |
+| Nr. 224 | «Für: Angaben auf der Website» | gibt der Prüfperson keine Angabe (P2c2-F-3) |
+| Nr. 228 | «Für: Erwachsene ab 18 Jahren» (Clienia) | tragbar laut Auftrag (Website am 11.10.2026) |
+| Nr. 232 | «Der Dachverband ist ein deutscher Verband.» | tragbar; Kriterium der Liste siehe P2c2-F-3 |
+| Nr. 243 | «Bei unmittelbarer Gefahr holen Sie Hilfe über den Notruf.» | tragbar; der Satz davor braucht einen Weg (P2c2-F-1) |
+| 2c-1 Nr. 23 | «Peer-Unterstützung heisst: Unterstützung durch Menschen mit eigener Erfahrung.» | tragbar (entschieden) |
+| 2c-1 Nr. 59–62 | Stand by You, VASK Zürich | tragbar (entschieden) |
+
+**Verweissätze (eine Gruppe, 28 Links):** Jeder Verweissatz der vier Seiten ist geprüft (Skript der Prüfsitzung, Teil B). Ziel vorhanden: 28 von 28. Linktext gleich dem Titel der Zielstelle: 28 von 28. Der angekündigte Inhalt steht im Zielabschnitt: 28 von 28, nachgeschlagen zum Beispiel «Wie Sie Suizidgedanken direkt ansprechen können» → `krise#suizid` (Beispielsatz «Denkst du gerade daran, dir das Leben zu nehmen?»), «Wie Begleiterkrankungen behandelt werden und was für Medikamente gilt» → `behandlung#therapieformen` (Unterkapitel «Begleiterkrankungen und Medikamente»), «Was nach einer Krise sonst hilft» → `krise#danach`, «Wo Sie Unterstützung für sich finden» → `selbstfuersorge#beratung` («Nicht allein tragen»), «Wie Sie ausserhalb des Kantons Zürich Anlaufstellen finden» → `unterstuetzung#kantone`. Keine Links auf `fragen`, `quellen`, `ueber`.
+
+#### A4 · Externe Links
+
+**Nicht prüfbar:** Keine der zwölf Adressen liess sich aus dieser Umgebung aufrufen (`curl` ohne Verbindung, Namensauflösung gesperrt). Geprüft ist nur die Form: Jede Adresse gehört zur offiziellen Domain des Angebots (`pukzh.ch` zweimal, `ipw.ch`, `sanatorium-kilchberg.ch`, `clienia.ch`, `dachverband-dbt.de`, `bag.admin.ch`, `promentesana.ch`, `stand-by-you.ch`, `vaskzuerich.ch`, `selbsthilfeschweiz.ch`), ist `https`, ohne `target="_blank"`, mit beschreibendem Linktext oder der Adresse als Linktext. Die Bewertung der Inhalte stützt sich auf «Bekannt aus Prüfung 1», Punkt 3, und auf Abschnitt 5 des Bauauftrags (P2c2-F-3).
+
+#### A5 · Übereinstimmung mit den freigegebenen Seiten
+
+- **Verantwortung:** `genesung` «Für Behandlung und Genesung sind Sie nicht verantwortlich.» (Wortlaut `rolle`), `diagnose` «Angehörige sind nicht schuld an der Erkrankung und nicht für die Genesung verantwortlich.» (Wortlaut `verstehen`). «allein» steht nur bei «allein für die Qualität der Beziehung sorgen» (Spalte «Die betroffene Person») und «Aus der Borderline-Diagnose allein …»; nie bei Erkrankung, Behandlung oder Genesung. Erfüllt.
+- **Suizid:** `diagnose` beschreibt den NICE-Gruppenbefund mit Absicherung, verlangt eine professionelle Einschätzung und verweist für das Ansprechen auf `krise#suizid`; kein eigener, abweichender Wortlaut zum direkten Fragen. Erfüllt.
+- **Wörter für Hilfe:** «Notruf» in allen vier Anleitungen; keine «Leitstelle», kein «Rettungsdienst», kein «Notfalldienst» im eigenen Text (nur im Verweis im Text aus `site.config.json`). Uneinheitlich bleibt, wofür «Notruf» steht: auf `krise` für «unmittelbare Gefahr», auf `diagnose` und in `behandlung` › `kontakt` schon für «akute» bzw. «mögliche akute Gefahr»; für «unklare Dringlichkeit» fehlt der Weg (P2c2-F-1).
+- **Absolute Aussagen über die betroffene Person, Heilungsversprechen:** keine gefunden. Absicherungen wie im Bestand (A1).
+
+#### A6 · Fragen der Selbstprüfung 2c-2 und Punkte aus Prüfung 1
+
+Alle 18 Fragen und die fünf Punkte gehen in der Liste «Prüfbedarf für die Fachstelle» auf (Spalte «aus»).
+
+#### Prüfbedarf für die Fachstelle
+
+Sortiert nach Wichtigkeit. Jede Frage lässt sich mit Ja oder Nein oder mit einer Auswahl beantworten.
+
+| Nr. | Frage | Zitat und Ort | Empfehlung | aus |
+| --- | --- | --- | --- | --- |
+| P2c2-F-1 | **Akute Lagen einheitlich:** Soll `behandlung` › `wartezeit`, Schritt 4, den freigegebenen Wortlaut von `krise` › `belastung` übernehmen? Vorschlag: «Bei unmittelbarer Gefahr oder wenn Sie nicht einschätzen können, wie dringend es ist, warten Sie nicht auf einen Therapieplatz und holen sofort Hilfe.» Danach wie bisher der Verweis im Text. Die übrigen drei Anleitungen bleiben (Ja zu Frage 5 und 8). | jetzt: «Bei akuter Gefahr oder unklarer Dringlichkeit warten Sie nicht auf einen Therapieplatz. Bei unmittelbarer Gefahr holen Sie Hilfe über den Notruf.» (`behandlung` › `wartezeit`, Schritt 4). Bestand: «… Nutzen Sie den zuständigen Notfalldienst.» | **Ja.** Der Satz nennt für «unklare Dringlichkeit» heute keinen Weg; nur der Verweis im Text danach tut es. Der Vorschlag ist freigegebener Wortlaut, und der Verweis im Text nennt danach Notfalldienst, Notfallstation und Polizei. Die Anleitungen auf `diagnose` (`zweifel`, `begleiterkrankungen`) und in `kontakt` bestätigen: Sie stehen sichtbar, mit «Notruf» und mit Verweis im Text | Prüfung 1 Nr. 2; Fragen 5, 8, 17 |
+| P2c2-F-2 | **«Ein neuer Trieb»:** Welche Fassung soll die Fachstelle freigeben? (a) Sätze gekennzeichnet wie die Paare darunter («Weniger hilfreich» über «Eine schwierigere Phase entwertet alles.», «Tragfähiger» über «Schwierigere Phasen kommen vor …») und **ohne** Giesskanne; (b) Sätze gekennzeichnet, Giesskanne bleibt; (c) so lassen | Abbildung 1, `genesung` › `verlauf`. Die zwei Sätze stehen gleichrangig mit gleicher blauer Randlinie, bei 360 px untereinander; ohne Text ist nicht erkennbar, welcher Satz die weniger hilfreiche Sicht ist. Die Giesskanne trägt «Bedingungen anbieten, wachsen muss die Pflanze selbst»; das steht nur in «Grenzen des Bildes» («Angehörige können Genesung nicht herstellen.») | **(a).** Ohne Kennzeichnung kann die Prüfperson «Eine schwierigere Phase entwertet alles.» als Aussage der Website lesen (Teil D, Punkt 17). Die Giesskanne ist eine zweite Idee und wiederholt «Ein Stück Weg» auf `rolle`; ohne sie trägt das Bild nur den Rückschritt und unterscheidet sich klar von «Ein Stück Weg». Danach die Bildfreigabe (`approvalStatus`) | Teil D |
+| P2c2-F-3 | **Angebotsliste:** (1) Soll die Einleitung das Kriterium nennen: «Aufgeführt sind Angebote mit Schwerpunkt Borderline oder DBT, die Menschen aus dem Kanton Zürich nutzen können.»? (2) Je Eintrag: HYPE Züri «Für: Jugendliche» statt «ab 13 Jahren»; PUK Erwachsene so lassen; ipw behalten oder streichen; Sanatorium Kilchberg streichen; Clienia so lassen; Dachverband DBT behalten, mit «Die Suche lässt sich nach Land filtern.» statt «Der Dachverband ist ein deutscher Verband.» | `behandlung` › `angebote`. Prüfung 1: HYPE-Website ohne Mindestalter; Sanatorium Kilchberg ohne Angebot für Borderline; Dachverband DBT deutsch, Karte mit Filter nach Land, Clienia Station A2 von ihm zertifiziert. Auftrag 2c-2: ipw nennt 17 bis 25 Jahre, aber nicht Borderline und DBT | (1) **Ja**: Die Prüfperson soll verstehen, warum diese sechs Stellen stehen und andere nicht. (2) HYPE **ändern** (die Seite soll nichts sagen, was die Website nicht trägt; kennt die Fachstelle das Mindestalter, bleibt es); PUK **so lassen**; ipw: **Fachstelle entscheidet** nach Kenntnis des Angebots (nach dem Kriterium streichen, wenn kein Schwerpunkt besteht); Kilchberg **streichen** (erfüllt das Kriterium nicht, «Für: Angaben auf der Website» gibt keine Angabe); Clienia **so lassen**; Dachverband **ändern** (sagt, was die Prüfperson tun kann; der Bezug zur Schweiz ergibt sich über den Filter und Clienia) | Prüfung 1 Nr. 3; Frage 15 |
+| P2c2-F-4 | **Rollen:** (1) «Mögliche Beiträge» statt «Kann beitragen» bei allen drei Rollen? (2) Spalte «Angehörige» › «Nicht zu erwarten» mit fünf statt sieben Punkten: «Therapieziele bestimmen» · «den Fortschritt kontrollieren oder überwachen» · «Behandlung oder Krisenhilfe ersetzen» · «Motivation oder Genesung herstellen oder dauerhaft aufrechterhalten» · «Therapiesprache in den Alltag übersetzen oder jedes Verhalten mit Fachbegriffen einordnen»? (3) Zuordnung bei Fachpersonen und betroffener Person bestätigen? | `behandlung` › `rollen`. Bestand: «MÖGLICHE BEITRÄGE – WENN GEWÜNSCHT UND MÖGLICH»; «Was Ihre Rolle ausdrücklich nicht ist» | (1) **Ja** (Bestandswort, grammatisch für alle drei Rollen richtig). (2) **Ja** (keine Aussage entfällt; «ständig» entfällt, weil «übersetzen» als Erwartung schon verneint ist). (3) **Ja**: «Angehörige therapieren», «alle Beziehungsfragen stellvertretend lösen», «rund um die Uhr erreichbar sein» und «allein für die Qualität der Beziehung sorgen» sind im Bestand erkennbar Grenzen | Prüfung 1 Nr. 1; Frage 14 |
+| P2c2-F-5 | **Begleiterkrankungen behandeln:** Soll `genesung` › `einfluesse` statt «werden eigenständig behandelt» sagen «werden ebenfalls behandelt»? | `genesung`: «Körperliche Beschwerden und weitere psychische Erkrankungen werden eigenständig behandelt, bei Bedarf auch mit Medikamenten.» · `behandlung` › `therapieformen`: «Begleiterkrankungen werden in der Regel mitbehandelt. Die Behandlung kann integriert, parallel oder schrittweise geplant werden.» | **Ja.** «eigenständig» kann die Prüfperson als «getrennt» lesen; `behandlung` sagt «mitbehandelt», «integriert». Gemeint ist im Handout, dass sie nicht übergangen werden. Der Verweissatz auf `diagnose` folgt im selben Abschnitt | Teil B |
+| P2c2-F-6 | **Klassifikation** (DSM-5-TR, ICD-11, ICD-10-GM 2024, F60.31): bestätigen? | `diagnose`, Vertiefung «Wie die Diagnose beschrieben wird» | **Ja.** Wortlaut des Bestands; die zwei neuen Sätze nennen die richtigen Herausgeber (American Psychiatric Association, Weltgesundheitsorganisation) | Frage 1 |
+| P2c2-F-7 | **Jugendliche und Einverständnis:** «Konkrete Fragen klären Sie mit der zuständigen Fachperson.» und Schritt 4 «Ob Sie einbezogen werden, hängt vom Einverständnis der betroffenen Person ab. Das kann schwer sein.» bestätigen? | `diagnose` › `abklaerung` | **Ja.** Bedeutung gleich; das Unterkapitel «Bei Jugendlichen» steht sichtbar direkt darunter | Fragen 2, 3 |
+| P2c2-F-8 | **Depression und Suizid:** «Depression (Major Depression)» und die Einschränkung der älteren Studien («… untersuchten Menschen, die zu Beginn stationär behandelt wurden. … zeigen nicht, wie häufig Depressionen bei allen Menschen mit Borderline sind, und sie sind keine persönliche Prognose.») bestätigen? | `diagnose` › `begleiterkrankungen` | **Ja.** Der Fachbegriff steht in Klammern, die Laienform davor. Die Einschränkung trägt den Kern (stationäre Stichprobe, keine Häufigkeit für alle, keine Prognose); «spezialisierte» und «Lebenszeitverlauf» ändern für die Prüfperson nichts | Fragen 4, 6 |
+| P2c2-F-9 | **Verantwortung bei Depression:** genügt «Angehörige sind nicht schuld an der Erkrankung und nicht für die Genesung verantwortlich.» mit Verweissatz auf `rolle#schuld`? | `diagnose` › `begleiterkrankungen` | **Ja.** Wortlaut von `verstehen`; die Sätze zu Beziehungen und verletzenden Handlungen stehen auf `rolle#schuld` (nachgeschlagen) | Frage 7 |
+| P2c2-F-10 | **Therapieinhalte auf `behandlung`:** Medikamente nach NICE (Frage 9), «Programme für Angehörige» mit der Erklärung von «psychoedukativ» und dem Satz zu Family Connections (Frage 10), zweite Einschätzung ohne Wartefrist (Frage 12), «auf Borderline abgestimmt» für «störungsinformiert» (Frage 16): bestätigen? | `behandlung` › `therapieformen`, `kontakt` | **Ja**, alle vier. Wortlaut des Bestands oder sinngleich; die neuen Sätze sind fachlich richtig (Family Connections ist ein Angehörigenprogramm, Hoffman et al. 2005) | Fragen 9, 10, 12, 16 |
+| P2c2-F-11 | **Kosten (BAG):** «Für psychologische Psychotherapie zulasten der Grundversicherung ist eine ärztliche Anordnung nötig. Nicht alle Ärztinnen und Ärzte sind regulär anordnungsberechtigt.» bestätigen und den BAG-Link vor der Veröffentlichung einmal aufrufen? | `behandlung` › `wartezeit`, Schritt 2 | **Ja.** Wortlaut des Bestands; der Link liess sich auch in dieser Prüfung nicht aufrufen | Frage 11 |
+| P2c2-F-12 | **Gruppe für Eltern:** Soll der Text den Namen der Website verwenden («Gruppentherapie für Eltern von Jugendlichen mit einer Borderline-Persönlichkeitsstörung»)? | `unterstuetzung` › `austausch`: «… die Gruppe «Eltern von Jugendlichen mit einer Borderline-Persönlichkeitsstörung»» | **Ja.** Die Prüfperson findet das Angebot auf der verlinkten Seite unter diesem Namen. Der Zwischentitel bleibt | Frage 18 |
+| P2c2-F-13 | **Musterbrief:** bestätigen? | `behandlung` › `kontakt`, Vertiefung | **Ja.** Text wörtlich; «behandelnde Fachperson» statt «Therapeut»; der Platzhalter für die eigene Telefonnummer ist keine Nummer eines Angebots | Frage 13 |
+| P2c2-F-14 | **Vertiefungen in `kontakt`:** Soll «Was kann ich in einem vereinbarten Kontakt mitteilen?» entfallen und sein Beispielsatz («Mir ist aufgefallen, dass … An wen kann ich mich mit meiner Sorge wenden?») in den sichtbaren Begriff «Beobachtungen mitteilen» kommen? Die übrigen fünf Vertiefungen bleiben | `behandlung` › `kontakt`: sechs Vertiefungen; die Seite hat mit Vertiefungen 2345 Wörter | **Ja.** Die Vertiefung wiederholt den sichtbaren Begriff fast Punkt für Punkt (eigene Beobachtungen, ohne Bewertung, mit der Person abstimmen, Kontaktweg); etwa 55 Wörter weniger, ohne Aussageverlust («Eine laufende Überwachung ist nicht Ihre Aufgabe.» trägt sichtbar «den Fortschritt kontrollieren oder überwachen» in `rollen`). Die übrigen Vertiefungen sind als Situationen der Prüfperson («Ich werde nicht zu Sitzungen eingeladen») gut auffindbar; das Wichtige (drei Wege, akute Gefahr, vier Fragen) steht ohne Aufklappen | Prüfung 1 Nr. 5 |
+| P2c2-F-15 | **Kleinigkeiten:** zwei Kommasätze teilen und die doppelte Nennung der Fachstelle kürzen (Wortlaut in P2c2-S-1 und P2c2-S-2)? | `diagnose` › Vertiefung «Weitere Begleiterkrankungen kurz»; `behandlung` › `therapieformen`; `diagnose` › `ohne-diagnose` | **Ja**, ohne Bedeutungsänderung; kann die bauende Sitzung ohne weitere Fachfrage umsetzen | Prüfung 1 Nr. 4 |
+
+### Teil B · W2 Gesamtkohärenz mit den Etappen 1, 2a und 2b
+
+**Begriffe** (Zählung im sichtbaren Text der Seiten)
+
+| Begriff | Befund |
+| --- | --- |
+| «betroffene Person» | durchgehend; «erkrankt» nur in Vereinsnamen und einer Buchbeschreibung («Angehörigen psychisch erkrankter Menschen», «deren Eltern psychisch erkrankt sind») |
+| «Fachperson», «Behandlungsteam» | `behandlung`: 9 × «Behandlungsteam», dazu 2 × «Fachteam» («… mit dem Fachteam vereinbart hat», «… gemeinsam mit dem Fachteam»). Auf `krise` ist «Fachteam» seit 2b-K vereinheitlicht (P2c2-W2-2) |
+| «Beratung» | einheitlich; die Fachstelle immer «Fachstelle Angehörigenarbeit der PUK» |
+| «Genesung», «Recovery» | «Recovery» nur auf `genesung`, dort als Begriff erklärt; sonst «Genesung» |
+| Wörter für Hilfe | «Notruf»; Abstufung siehe A5 und P2c2-F-1 |
+
+**Widersprüche**
+
+- **Begleiterkrankungen:** `genesung` «eigenständig behandelt» gegen `behandlung` «mitbehandelt … integriert» (P2c2-W2-1, P2c2-F-5).
+- **Medikamente:** `genesung` und `behandlung` sagen dasselbe («keine Kernbehandlung» / «nicht gezielt … nach NICE»; beide «Medikamente werden nur gemeinsam mit der behandelnden Fachperson geändert.»). Kein Widerspruch.
+- **Häufigkeit von Begleiterkrankungen:** `genesung` «Bei vielen, nicht allen Menschen …», `diagnose` «… häufig vor, aber nicht bei allen». Kein Widerspruch.
+- Zu den freigegebenen Seiten: keiner gefunden.
+
+**Doppelungen**
+
+| Thema | Stellen | Sagen beide dasselbe? | Urteil |
+| --- | --- | --- | --- |
+| Was Angehörige anbieten können | `genesung` › `freiwillig`, `behandlung` › `rollen`, `rolle` › `anbieten` | je ein anderer Blickwinkel (Genesung, Behandlung, Alltag); beide neuen Seiten verlinken `rolle#anbieten` statt den Garten-Text zu wiederholen | nützlich, so lassen |
+| Nach einer Krise | `behandlung` › `kontakt` (Vertiefung), `krise` › `danach` | nein: auf `behandlung` nur Entlassung und Austrittsbericht, sonst Verweissatz | nützlich, so lassen |
+| Suizid | `diagnose` › `begleiterkrankungen`, `krise` › `suizid`, `verstehen` | `diagnose` nennt nur den Gruppenbefund und die Anleitung, das Ansprechen steht auf `krise` (Verweissatz) | nützlich, so lassen |
+| Eigene Belastung | `diagnose` › `ohne-diagnose` («Bin ich auch betroffen?»), `diagnose` › `begleiterkrankungen`, `selbstfuersorge` | Frage nach eigener Erkrankung ist neu gegenüber `selbstfuersorge`; sonst Verweissätze | nützlich, so lassen |
+| Beratung der Fachstelle | `unterstuetzung` › `beratung`, `index` › `beratung`, `behandlung` › `kontakt`, `diagnose` › `ohne-diagnose` | alle verlinken `index#beratung` statt Kontakt und Bedingungen zu wiederholen; `behandlung` nennt in einer Vertiefung «kostenlos und ohne Vollmacht» (gleich wie `index`) | so lassen; auf `diagnose` die doppelte Nennung kürzen (P2c2-S-2) |
+| Angebote und Austausch | `behandlung` › `angebote`, `unterstuetzung` | getrennt: Therapie und Abklärung auf `behandlung`, Beratung und Austausch auf `unterstuetzung`; HYPE und die Elterngruppe verlinken dieselbe PUK-Seite | so lassen |
+| Kontakt mitteilen | `behandlung` › `kontakt`, Begriff «Beobachtungen mitteilen» und Vertiefung «Was kann ich in einem vereinbarten Kontakt mitteilen?» | ja, fast Punkt für Punkt | ersetzbar (P2c2-W2-3, P2c2-F-14) |
+
+**Links** (Skript der Prüfsitzung über `content/` und die gebauten Seiten): 28 Links in den Verweissätzen der vier Seiten und 8 Einstiege auf `index`. Ziel vorhanden: 36 von 36. Linktext gleich dem Titel der Zielstelle: 28 von 28 Verweissätzen. Die Einstiege haben als Linktext den Satz der Angehörigen, danach steht der Seitentitel («Genesung: …», «Unterstützung finden: …»), gleich wie die freigegebenen Einstiege. Keine Links auf `fragen`, `quellen`, `ueber`.
+
+**Befunde W2**
+
+- **P2c2-W2-1 · wichtig · Begleiterkrankungen «eigenständig» gegen «mitbehandelt».**
+  - **Beleg:** `genesung` › `einfluesse`, Begriff «Körperliche und psychische Gesundheit»; `behandlung` › `therapieformen`, Unterkapitel «Begleiterkrankungen und Medikamente».
+  - **Vorschlag:** «eigenständig» durch «ebenfalls» ersetzen. Fachliche Frage.
+  - **Zuständig:** Fachstelle (P2c2-F-5).
+- **P2c2-W2-2 · optional · «Fachteam» neben «Behandlungsteam».**
+  - **Beleg:** `behandlung` › `kontakt`, Vertiefung «Ich mache mir Sorgen um den Verlauf» («… welche Ziele die Person mit dem Fachteam vereinbart hat»); `therapieformen` («… bewertet die betroffene Person gemeinsam mit dem Fachteam»).
+  - **Vorschlag:** an beiden Stellen «Behandlungsteam», wie auf `krise` nach 2b-K.
+  - **Zuständig:** bauende Sitzung.
+- **P2c2-W2-3 · optional · Doppelung in `kontakt`.**
+  - **Beleg:** Begriff «Beobachtungen mitteilen» und Vertiefung «Was kann ich in einem vereinbarten Kontakt mitteilen?».
+  - **Vorschlag:** wie P2c2-F-14.
+  - **Zuständig:** Fachstelle (Entscheid), danach bauende Sitzung.
+
+### Teil C · S Sprach-Review und Länge
+
+#### C1 · Lesetest je Abschnitt (R2 Teil 3, a–e)
+
+Gelesen als Mutter, deren Tochter gerade eine Diagnose bekommen hat, und als Partner, der auf einen Therapieplatz wartet; abends, auf dem Handy (360 px). a = verständlich beim ersten Lesen · b = weiss, was ich tun kann · c = Stolperstellen · d = Ton · e = Absicherungen am richtigen Ort.
+
+| Seite › Abschnitt | a | b | c | d | e |
+| --- | --- | --- | --- | --- | --- |
+| `genesung` › Kopf | ja | Kernsätze | – | warm, ermutigend | ja («keine persönliche Prognose») |
+| `genesung` › `forschung` | ja | nein, nötig nicht | «symptomatische Remission» erst im nächsten Abschnitt erklärt; trägt durch den Satz zu den Kriterien | sachlich | ja, direkt bei den Zahlen |
+| `genesung` › `begriffe` | mit Mühe (drei Fachbegriffe), aber erklärt | nein | – | sachlich | ja |
+| `genesung` › `verlauf` | ja | ja, «Was Sie tun können» | Satzpaar der Abbildung ohne Kennzeichnung (P2c2-F-2) | warm | ja |
+| `genesung` › `einfluesse` | ja | ja | «eigenständig behandelt» (P2c2-F-5) | sachlich | ja |
+| `genesung` › `freiwillig` | ja | ja, Selbstfrage | – | warm, entlastend | ja |
+| `unterstuetzung` › `beratung` | ja | ja, drei Fragen | – | sachlich | – |
+| `unterstuetzung` › `austausch` | ja | ja, Links | – | sachlich | – |
+| `unterstuetzung` › `selbsthilfe`, `kantone` | ja | ja | – | sachlich | – |
+| `unterstuetzung` › `buecher` | ja | ja | lang (648 Wörter), aber Liste mit Zwischentiteln nach Zielgruppe | sachlich | ja (Einordnung der vier Titel) |
+| `diagnose` › Kopf | ja | – | – | ruhig | ja («keine Anleitung, jemanden zur Diagnose zu drängen») |
+| `diagnose` › `abklaerung` | ja; einleitender Satz 21 Wörter | ja, «Ihre Rolle» bei vier Schritten | «Setting» (P2c2-S-3); «Anbieten ja, erzwingen nein.» (P2c2-S-5); «Geduld ist hier kein Nichtstun.» ohne Bezug, was Geduld hier heisst | ruhig, nicht drängend | ja |
+| `diagnose` › `bedeutung` | ja | nein, nötig nicht | – | ehrlich («Diese Erwartung ist verständlich, aber hoch.») | ja |
+| `diagnose` › `zweifel` | ja | ja, zwei Listen | – | respektvoll | ja; Schutz sichtbar |
+| `diagnose` › `ohne-diagnose` | ja | ja | Fachstelle zweimal (P2c2-S-2) | entlastend | ja («erlaubt keine Diagnose der anderen Person») |
+| `diagnose` › `begleiterkrankungen` | mit Mühe am Anfang («Komorbidität», «Differenzialdiagnostik»), beide erklärt | ja, «Was Sie tun können» | – | sachlich, entlastend («nicht mehr Schuld») | ja; Suizid sichtbar mit Verweis im Text |
+| `behandlung` › Kopf | ja | – | zwei fast gleiche Sätze («kann ein wichtiger Teil …», «kann Veränderung unterstützen») | ruhig | ja |
+| `behandlung` › `rollen` | ja | ja | «Kann beitragen» bei Mehrzahl (P2c2-S-4); sieben Punkte bei «Nicht zu erwarten» (P2c2-F-4) | entlastend | ja |
+| `behandlung` › `kontakt` | ja | ja, vier Fragen | – | sachlich | ja; Schweigepflicht und Schutz sichtbar |
+| `behandlung` › `therapieformen` | mit Mühe (fünf Therapieformen, «generalistisch») | nein, nötig nicht | «Auch strukturierte generalistische Behandlung ist relevant.» doppelt zum Begriff darunter; Kommasatz (P2c2-S-1) | sachlich | ja |
+| `behandlung` › `rueckschlaege` | ja | ja, «Was Sie tun können», Beispielsatz | – | warm | ja |
+| `behandlung` › `angebote` | ja | ja, Links | Kriterium unklar; «Für: Angaben auf der Website» (P2c2-F-3) | sachlich | ja («nicht abschliessend») |
+| `behandlung` › `wartezeit` | ja | ja, vier Schritte | – | sachlich, konkret | Schritt 4 (P2c2-F-1) |
+| `index` › Einstiege «Genesung», «Unterstützung finden» | ja | ja | – | in der Stimme der Angehörigen, wie die übrigen | – |
+
+#### C1 · Kennzahlen je Seite
+
+**Zählweise:** C1 wie in der Selbstprüfung (innerste `p`, `li`, `dt`, `dd` in `main`, ohne SVG, `.puk-sr`, Kapitelübersicht, Kicker, Eyebrow, «Abbildung n», Quellenzeilen und Quellenblock; «im Lesefluss» ohne Panels der Akkordeons). Sätze: Text im Lesefluss, getrennt nach «.», «!», «?», «:» oder «»» vor einem Grossbuchstaben oder «; Wörter = Folgen mit Buchstaben oder Ziffern. Verneinung (Prüfsitzung): Satz enthält «nicht», «kein…», «nie», «nichts», «weder» oder «ohne». Absicherungen: `kennzahlen.mjs`. Anteil «Was Sie tun können»: Abschnitte mit dieser Bezeichnung, ohne Quellenblock.
+
+| Seite | Wörter im Lesefluss | Sätze | mittlere Satzlänge | Sätze über 15 Wörter | Sätze mit Verneinung (Prüfsitzung / `verneinung.mjs`) | Absicherungen je 100 Wörter | Abschnitte mit «Was Sie tun können» |
+| --- | ---: | ---: | ---: | ---: | --- | ---: | --- |
+| `genesung` | 1133 (Selbstprüfung 1164) | 111 | 10,2 | 13 % | 37 % / 28 % | 2,21 | 3 von 5 |
+| `unterstuetzung` | 1105 | 99 | 11,2 | 28 % | 11 % / 8 % | 1,08 | 0 von 5 |
+| `diagnose` | 1542 | 114 | 13,5 | 32 % | 29 % / 21 % | 2,03 | 1 von 5 |
+| `behandlung` | 1678 | 137 | 12,2 | 25 % | 25 % / 17 % | 2,59 | 1 von 6 |
+| `rolle` (Vergleich) | 2599 (Selbstprüfung 2627) | 220 | 11,8 | 19 % | 31 % / 21 % | 2,22 | 6 von 7 |
+| `krise` (Vergleich) | 1523 | 147 | 10,4 | 18 % | 29 % / 22 % | 2,18 | 0 von 7 |
+
+**Einordnung:** `diagnose` hat die längsten Sätze der Website (13,5 Wörter im Mittel, ein Drittel über 15 Wörter); das trägt die Seite, weil die Sätze sachlich und erklärend sind, ist aber für die Prüfperson abends die anstrengendste Seite (P2c2-S-6). Die Verneinung auf `genesung` ist hoch; sie trägt meist Absicherungen des Bestands («keine persönliche Prognose», «nicht automatisch», «nicht verantwortlich») und ist nicht zu kürzen. Dass `unterstuetzung`, `diagnose` und `behandlung` selten «Was Sie tun können» haben, passt zu ihrer Aufgabe (Orientierung, Angebote); die Handlung steht dort als «Ihre Rolle», als Fragen oder als Schritte.
+
+#### C2 · Länge
+
+**Nachgerechnet** (Skript der Prüfsitzung im Browser, Stand `7ee24ba`):
+
+| Seite | Selbstprüfung | Prüfsitzung | Abweichung | Ziel |
+| --- | ---: | ---: | --- | ---: |
+| `genesung` | 1164 | 1133 | −31; das Skript der Prüfsitzung zählt die Abbildung anders (dieselbe Abweichung auf `rolle`, −28; `krise` ohne Abbildung stimmt auf das Wort). Die Abschnitte ohne Abbildung stimmen auf das Wort (`forschung` 184, `begriffe` 192, `einfluesse` 262, `freiwillig` 197) | etwa 1800 |
+| `unterstuetzung` | 1105 | 1105 | 0 | etwa 1500 |
+| `diagnose` | 1538 | 1542 | +4 (`abklaerung` 424 statt 420) | etwa 1800 |
+| `behandlung` | 1677 | 1678 | +1 (`rueckschlaege` 216 statt 215) | etwa 1800 |
+
+Mit Vertiefungen: `genesung` 1210, `unterstuetzung` 1318, `diagnose` 1871, `behandlung` 2345 (Selbstprüfung 1241, 1318, 1867, 2344). **Bestätigt:** Alle vier Seiten liegen unter dem Längenziel.
+
+**Trägt die Länge?** Ja. Auf allen vier Seiten steht das Wichtige oben und ohne Aufklappen: auf `genesung` die Hoffnung mit Einschränkung im Kopf und die Zahlen mit Stichprobe; auf `unterstuetzung` die Fachstelle mit «kein Krisendienst»; auf `diagnose` die Schritte mit «Ihre Rolle», die «Klare Grenze» und der Suizidteil; auf `behandlung` die Rollen, die drei Wege mit der Anleitung bei akuter Gefahr und die vier Schritte bei Wartezeit (über die Kapitelübersicht «Wartezeit» direkt erreichbar). Kritische Information (Schutz, Suizid, akute Gefahr, Schweigepflicht) steht auf allen vier Seiten im Lesefluss.
+
+**Kürzungen:** keine nötig. Zwei mögliche, ohne Aussageverlust:
+
+| ID | Abschnitt | was | Wörter weniger | Fachstelle? |
+| --- | --- | --- | ---: | --- |
+| K2-B-a1 | `behandlung` › `kontakt` | Vertiefung «Was kann ich in einem vereinbarten Kontakt mitteilen?» in den Begriff «Beobachtungen mitteilen» überführen | etwa 55 (mit Vertiefungen) | ja (P2c2-F-14) |
+| K2-B-a2 | `behandlung` › `therapieformen` | «Auch strukturierte generalistische Behandlung ist relevant.» (der Begriff darunter sagt es genauer) | 6 | nein |
+
+#### C3 · Schweizer Hochdeutsch und Form
+
+- «ss» statt «ß»: erfüllt (0 × «ß»). Guillemets: erfüllt. Semikolons im Fliesstext: 0 auf allen vier Seiten (`kennzahlen.mjs`). Doppelpunkt-Genderformen: 0 (Paarformen und neutrale Formen). «es» und «sie» mit klarem Bezug: keine Stelle gefunden.
+- Telegrammstil: «Anbieten ja, erzwingen nein.» (P2c2-S-5).
+
+**Befunde S**
+
+- **P2c2-S-1 · optional · Zwei Kommasätze.**
+  - **Beleg:** `diagnose`, Vertiefung «Weitere Begleiterkrankungen kurz», ADHS: «Aus der Borderline-Diagnose allein lässt sich ADHS nicht ableiten, eine Abklärung berücksichtigt …»; `behandlung` › `therapieformen`: «Eine starre Reihenfolge gilt nicht, der Behandlungsplan wird individuell abgestimmt.»
+  - **Vorschlag:** je zwei Sätze («… nicht ableiten. Eine Abklärung berücksichtigt …»; «Eine starre Reihenfolge gilt nicht. Der Behandlungsplan wird individuell abgestimmt.»).
+  - **Zuständig:** bauende Sitzung (P2c2-F-15).
+- **P2c2-S-2 · optional · Fachstelle zweimal hintereinander.**
+  - **Beleg:** `diagnose` › `ohne-diagnose`: «Die Fachstelle Angehörigenarbeit der PUK berät auch dann, … Wie die Fachstelle Angehörigenarbeit der PUK berät, steht auf der Startseite …»
+  - **Vorschlag:** den ersten Satz lassen und den Verweissatz kürzen: «Wie die Beratung abläuft, steht auf der Startseite im Abschnitt «Beratung für Sie».»
+  - **Zuständig:** bauende Sitzung (P2c2-F-15).
+- **P2c2-S-3 · optional · «Setting» unerklärt.**
+  - **Beleg:** `diagnose` › `abklaerung`: «… hängt von Qualifikation, Setting und Behandlungsweg ab.», Schritt 3: «… hängt von Fragestellung, Verlauf und Setting ab.»
+  - **Vorschlag:** «Behandlungsrahmen» (das Wort steht schon auf der Seite).
+  - **Zuständig:** bauende Sitzung.
+- **P2c2-S-4 · optional · «Kann beitragen» bei Mehrzahl.**
+  - **Beleg:** `behandlung` › `rollen`, Spalten «Fachpersonen» und «Angehörige».
+  - **Vorschlag:** «Mögliche Beiträge» (P2c2-F-4).
+  - **Zuständig:** Fachstelle, danach bauende Sitzung.
+- **P2c2-S-5 · optional · Telegrammstil und holpriger Satzbeginn auf `diagnose`.**
+  - **Beleg:** Schritt 1 «Anbieten ja, erzwingen nein.»; Schritt 2 «Dafür qualifizierte Fachpersonen klären ab, …».
+  - **Vorschlag:** «Sie können ihn anbieten, aber nicht erzwingen.»; «Die Abklärung machen dafür qualifizierte Fachpersonen, …» (Wortlaut der Textversion im Bestand).
+  - **Zuständig:** bauende Sitzung.
+- **P2c2-S-6 · optional · Lange Sätze auf `diagnose`.**
+  - **Beleg:** mittlere Satzlänge 13,5 Wörter, 32 % über 15 Wörter (`rolle` 11,8 und 19 %); zum Beispiel der erste Satz von `abklaerung` (21 Wörter).
+  - **Vorschlag:** den ersten Satz von `abklaerung` teilen: «Eine vertiefte Abklärung findet je nach Fragestellung und Versorgungsweg statt. Das kann zum Beispiel eine psychiatrisch-psychotherapeutische Praxis, ein Ambulatorium, ein spezialisiertes Angebot oder eine Klinik sein.»
+  - **Zuständig:** bauende Sitzung.
+
+### Teil D · Visualisierungs-Check, Bildsprache und Textdarstellungen
+
+#### D1 · «Ein neuer Trieb» (`v-ge-trieb`)
+
+**Bildschirmfotos** bei 1280 und 360 px, je Theme Standard und «kontrast» (vier Fotos), angesehen. Figur 1104 × 747 px (1280) und 320 × 766 px (360).
+
+- **1280 px:** Titel, Kernaussage als grosser Satz, Kurztext. Darunter zwei Sätze nebeneinander, beide mit derselben blauen Randlinie: links «Eine schwierigere Phase entwertet alles.» (über der Pflanze), rechts «Schwierigere Phasen kommen vor und müssen nicht alles kippen.» (über der Giesskanne). Darunter ein hellblauer Fenstersims, darauf ein Topf mit einer Pflanze mit sechs Blättern und einer Knospe oben, rechts davon eine Giesskanne, Ausguss zur Pflanze hin, ohne Wasser. Das abgefallene Blatt liegt auf dem Sims zwischen Topf und Giesskanne, etwa so gross wie die übrigen Blätter.
+- **360 px:** Die Sätze stehen untereinander, gleich gestaltet. Die Zeichnung ist 320 × 129 px: Topf und Giesskanne sind erkennbar; das abgefallene Blatt ist ein kleines Oval auf dem Sims und liest sich eher als Muster des Simses; die Knospe oben ist von den übrigen Blättern kaum zu unterscheiden. Die Pflanze wirkt gesund.
+- **«kontrast»:** Linien und Randlinien dunkler, Flächen bleiben, nichts verschwindet.
+- **Kontrast:** alle Sätze der Abbildung über 4,5 : 1 (Teil E).
+
+**Matrix** (E = erfüllt · T = teilweise · N = nicht erfüllt · – = nicht anwendbar)
+
+| Nr. | Prüfpunkt | «Ein neuer Trieb» | Beleg (bei T und N) |
+| --- | --- | --- | --- |
+| 1 | Plan liegt vor, Seite entspricht ihm | E | – |
+| 2 | Zeile je Abschnitt; Begründungen für Text passen | E | – |
+| 3 | Prüffrage beantwortet und eingelöst | **T** | `understood`: «Das abgefallene Blatt und der neue Trieb an derselben Pflanze zeigen auf einen Blick, …». Bei 360 px sind Blatt und Trieb kaum als solche erkennbar; die Pflanze wirkt einfach gesund |
+| 4 | Kernaussage und Erklärtext; Hauptaussage nicht nur in der Vertiefung | **T** | Die erste Idee steht sichtbar. Die zweite Idee der Abbildung (Giesskanne: Bedingungen anbieten, wachsen muss die Pflanze selbst) steht nur in «Grenzen des Bildes» («Angehörige können Genesung nicht herstellen.») |
+| 5 | Ansatzpunkt (B, C, G) | – | – |
+| 6 | Mechanismus nicht doppelt gezeigt | T | Die Giesskanne trägt dieselbe Idee wie «Ein Stück Weg» auf `rolle` («begleiten, nicht herstellen»), beide aus dem Garten-Handout |
+| 7 | Kartenraster-Check | E | – |
+| 8 | Anordnung und Formen tragen Bedeutung | **T** | Der Satz der weniger hilfreichen Sicht steht über der Pflanze, der tragfähigere über der Giesskanne; das legt nahe, die Pflanze (die betroffene Person) denke «entwertet alles». Das Blatt liegt neben der Giesskanne statt unter der Pflanze |
+| 9 | Verteilt, keine Textwand | E | – |
+| 10 | Vereinfacht, nicht verfälscht; Grenzen; Quelle | E | – |
+| 11 | Ohne Animation, Aufklappen und Skript verständlich | E | – |
+| 12 | Bei 320 px lesbar; Textalternative vollständig | **T** | Lesbar und ohne Überlauf; welcher Satz die weniger hilfreiche Sicht ist, sagt weder das Bild noch die Kurzbeschreibung |
+| 13 | Theme «kontrast» | E | – |
+| 14 | Fachlich freigegeben | N | `approvalStatus` «ausstehend»; Gate production `visual-approval` (P2c2-F-2) |
+| 15 | Bildsprache passt; Wirkung (`resonance`) eingelöst | **T** | «Ein Rückschritt macht nicht alles zunichte» über Kernaussage und Kurztext; «das Wachsen muss ich nicht machen» nur in der Vertiefung |
+| 16 | Ein Bild, eine Idee; Erleben beschriften | T | zwei Ideen; die Sätze nennen Erleben, aber ohne Kennzeichnung der Sicht |
+| 17 | Keine ungewollten Bedeutungen | **N** | Die Prüfperson kann «Eine schwierigere Phase entwertet alles.» als Aussage der Website lesen: Der Satz steht gleichrangig neben dem tragfähigen und hat dieselbe Gestaltung. Die ruhende Giesskanne kann «Angehörige tun nichts» heissen. Keine Schuld- oder Pflichtbotschaft gefunden |
+
+**Abweichungen von der Selbstprüfung** (fett): Punkte 3, 4, 8, 12 und 15 T statt E; Punkt 17 N statt T. Hauptgrund ist die fehlende Kennzeichnung der zwei Sätze; die Selbstprüfung hat sie nicht geprüft.
+
+**Bildsprache, Fragen B1–B11**
+
+| Frage | «Ein neuer Trieb» |
+| --- | --- |
+| B1 erster Eindruck | ruhig, häuslich, freundlich: eine Zimmerpflanze und eine Giesskanne. Kein Rückschritt sichtbar, eher «alles im grünen Bereich» |
+| B2 Form | organisch, weiche Linien, runde Enden; keine Kästen, keine Bemassung |
+| B3 Ein Bild, eine Idee | nein: Rückschritt und neues Wachsen (Blatt, Trieb) und begrenzter Einfluss (Giesskanne) |
+| B4 Wiedererkennen und Ton | «Eine schwierigere Phase entwertet alles.» ist ein Gedanke, den Angehörige kennen; würdevoll, nicht verniedlichend |
+| B5 Platz der Angehörigen | nur über die Giesskanne, ohne Text nicht erkennbar |
+| B6 Nebenbedeutungen | Pflanze als passives Wesen (wie im Garten-Handout); ruhende Giesskanne als Untätigkeit; der negative Satz über der Pflanze |
+| B7 Wirkung | Hoffnung über die Kernaussage eingelöst; Entlastung («das Wachsen muss ich nicht machen») nur mit Vertiefung |
+| B8 Erleben beschriften | ja, zwei Gedanken; ohne «Weniger hilfreich» und «Tragfähiger» unklar, welcher trägt |
+| B9 fachlich vereinfacht | ja: «Das Bild ist eine Metapher, keine Vorhersage eines Genesungsverlaufs.» |
+| B10 Braucht es ein Bild? | knapp ja für den Rückschritt; die Giesskanne braucht es nicht, weil «Ein Stück Weg» die Idee schon trägt |
+| B11 Freundin-Test | in der gebauten Form eher nein: Ohne Kennzeichnung der Sätze und mit kaum sichtbarem Rückschritt erklärt das Bild nicht, wie es ihr geht. Mit gekennzeichneten Sätzen und deutlichem abgefallenem Blatt eher ja |
+| **Bewertung** | **trägt nur mit Änderung** (P2c2-F-2, P2c2-V-1 bis -3) |
+
+**Trägt das Bild die Kernaussage?** Nur über den Text. Die Zeichnung allein zeigt bei 360 px keinen Rückschritt. **Giesskanne:** Ohne Text nicht als «Bedingungen anbieten, wachsen muss die Pflanze selbst» lesbar; sie legt weder Schuld noch Pflicht nahe, eher Untätigkeit. **Zuordnung der Sätze:** bei 1280 und 360 px nicht klar. **Unterschied zu «Ein Stück Weg»:** nur der Rückschritt ist neu; die Giesskanne wiederholt «begleiten, nicht herstellen».
+
+#### D2 · Textdarstellungen
+
+**Bildschirmfotos** bei 1280, 768 und 360 px, angesehen.
+
+- **`diagnose` › `abklaerung`** (Liste 720 × 1507, 433 × 2061, 320 × 2420 px): senkrechte Linie mit Punkten, je Schritt «Schritt n» klein, Name gross, Text, darunter abgesetzt «Ihre Rolle» mit blauer Randlinie. Reihenfolge und Zuordnung sind ohne Erklärung klar. Schritt 2 hat keine «Ihre Rolle»-Zeile (wie im Bestand); das fällt nicht auf. Kein Befund.
+- **`behandlung` › `rollen`** (Liste 1104 × 884, 707 × 1322, 320 × 2071 px): breit drei Spalten mit Linie oben, Name, darunter klein «Kann beitragen» und «Nicht zu erwarten». Zuordnung klar. Die Spalte «Angehörige» ist mit sieben Punkten fast doppelt so lang wie «Die betroffene Person» (ein Punkt); das lenkt den Blick auf die Liste, was Angehörige nicht müssen, und wirkt bei 1280 px unausgewogen (P2c2-F-4). **768 px:** Die drei Rollen stehen untereinander über die volle Breite, jede Zeile in einer Linie; das ist leichter zu lesen als drei schmale Spalten und passt. Kein Befund zur Anordnung.
+
+**Befunde V**
+
+- **P2c2-V-1 · wichtig · Satzpaar ohne Kennzeichnung.**
+  - **Beleg:** Punkte 12, 16, 17; Bildschirmfotos 1280 und 360 px.
+  - **Vorschlag:** über jedem Satz die Bezeichnung wie bei den Paaren darunter («Weniger hilfreich», «Tragfähiger»), in der Kurzbeschreibung ebenso; den tragfähigen Satz als zweiten oder rechten lassen.
+  - **Zuständig:** Fachstelle (P2c2-F-2), danach bauende Sitzung.
+- **P2c2-V-2 · wichtig · Zweite Idee nur in der Vertiefung.**
+  - **Beleg:** Punkte 4, 6, 15; B3, B10.
+  - **Vorschlag:** Giesskanne weglassen (P2c2-F-2 a). Bleibt sie, braucht der Kurztext einen sichtbaren Satz dazu (Fachstelle).
+  - **Zuständig:** Fachstelle.
+- **P2c2-V-3 · optional · Rückschritt bei 360 px kaum sichtbar.**
+  - **Beleg:** Punkte 3, 8; Beschreibung 360 px.
+  - **Vorschlag:** das abgefallene Blatt direkt unter die Pflanze, an den Topf gelehnt, und etwas grösser; den neuen Trieb oben heller oder kleiner als die übrigen Blätter, damit er als neu liest. Pfade nur so weit ändern; Fachstelle sieht das Ergebnis mit der Bildfreigabe.
+  - **Zuständig:** bauende Sitzung nach P2c2-F-2.
+
+### Teil E · Bedienung und Barrierefreiheit (automatisiert)
+
+Chromium über Playwright, lokal; alle Werte selbst gemessen.
+
+- **Überlauf** (`scrollWidth − clientWidth` und Elemente ausserhalb des Fensters): `genesung`, `unterstuetzung`, `diagnose`, `behandlung`, `index`; 320, 360, 768, 1280 und 1440 px; je Theme Standard und «kontrast»; je Vertiefungen zu und offen (100 Messungen). Zoom 200 % (640 px bei Faktor 2, Vertiefungen offen, 5 Messungen). Alle 0 px.
+- **Tastatur** (`abgleich/bedienung.mjs`, 1280 px, reduzierte Bewegung): Tabstopps bis zur Fusszeile `genesung` 21, `unterstuetzung` 22, `diagnose` 30, `behandlung` 35, `index` 17; erster Stopp «Zum Hauptinhalt»; kein Stopp ohne sichtbaren Fokus. Eigenes Skript: Enter öffnet jede Vertiefung des Profils (`genesung` 3, `unterstuetzung` 1, `diagnose` 4, `behandlung` 8). «Grenzen des Bildes» (`details`) ist mit der Tastatur erreichbar; Öffnen nicht eigens gemessen.
+- **Sprung über die Kapitelübersicht** (letzter Eintrag, Klick, 1280 × 900): Abschnittsoberkante 24 px unter dem Fensterrand auf `genesung`, `unterstuetzung`, `diagnose`, `behandlung`.
+- **Ohne Skript:** Panels 3 von 3, 1 von 1, 4 von 4, 8 von 8 sichtbar.
+- **Kontrast** (WCAG 1.4.3): aller Text mit eigenem Textknoten, Vertiefungen offen, 1280 px, beide Themes; `genesung` 146, `unterstuetzung` 173, `diagnose` 189, `behandlung` 239, `index` 49 Elemente, darunter die Sätze in der Abbildung und die Bezeichnungen «Schritt n», «Ihre Rolle», «Kann beitragen», «Nicht zu erwarten». Keines unter AA; tiefster Wert 4,71 : 1 (Link der Absenderin).
+- **Druck** (`page.pdf`, A4, Schriften geladen): `genesung` 9, `unterstuetzung` 9, `diagnose` 11, `behandlung` 15 Seiten; Kicker und Titel stehen auf allen vier Seiten und auf `krise` und `rolle` zusammen; kein Titel oder Kicker allein am Seitenende. Alle Vertiefungen vollständig im Druck (Stichworte aus jeder Vertiefung im PDF-Text gefunden). In einem ersten Lauf ohne Warten auf die Schriften und mit Rand 0 stand dreimal ein Kicker am Seitenende, der Titel oben auf der nächsten Seite (`genesung` «01 · Forschung», `diagnose` «02 · Bedeutung», «03 · Zweifel»); derselbe Lauf zeigt das Muster schon am Stand `2d5330b`. Mit geladenen Schriften trat es nicht auf. Kein Befund; zur Beobachtung in W3.
+- **Abweichung zur Selbstprüfung:** Seitenhöhe bei 360 px je Seite 162 px höher (`genesung` 14 461 statt 14 299, `diagnose` 17 901 statt 17 739, `behandlung` 21 460 statt 21 298, `unterstuetzung` 13 869 statt 13 707; `index` 5126). Ursache ist der Merge des Profils 2026.10.1 nach der Selbstprüfung (Fusszeile); Seitenzahl im Druck ebenso kleiner. Kein Befund.
+- **Nicht prüfbar:** reale Screenreader-Läufe, Hardwaretastatur und Touch. Sie brauchen eine Person und sind offen, nicht bestanden.
+
+**Befunde B:** keine.
+
+### Teil F · Technik und Zuständigkeit (Stichprobe)
+
+| Prüfung | Ergebnis (selbst ausgeführt am Stand `7ee24ba`) |
+| --- | --- |
+| `node tools/build.mjs` | 15 Seiten, Build r4-7, Gate draft: **0 blockierend, 6 Hinweise**: 1 × `visual-approval` (`v-ge-trieb`), 3 × `placeholder-approval` (`fragen`, `quellen`, `ueber`), `site-url`, `review-report`. `git status` danach ohne Änderung |
+| `node tools/gate.mjs --selftest` | **53/53 bestanden** |
+| `node tools/gate.mjs --production` | **5 blockierend, 1 Hinweis**: 1 × `visual-approval` («Ein neuer Trieb»), 3 × `placeholder-approval` (`fragen`, `quellen`, `ueber`), 1 × `review-report`; Hinweis `site-url`. Wie erwartet |
+| `node abgleich/pruefe-abgleich.mjs` | **6067 Zeilen, 0 ohne Fundstelle** |
+| `node abgleich/kennzahlen.mjs` | `genesung` 1620 → 1492, `unterstuetzung` 2010 → 1393, `diagnose` 3769 → 2165, `behandlung` 2696 → 2700 Wörter; Absicherungen je 100 Wörter 1,98 → 2,21, 0,90 → 1,08, 2,10 → 2,03, 2,74 → 2,59; Semikolons 7 → 0, 7 → 0, 20 → 0, 11 → 0 |
+| `node abgleich/verneinung.mjs` | `genesung` 45 von 159 (28 %), `unterstuetzung` 16 von 198 (8 %), `diagnose` 46 von 215 (21 %), `behandlung` 48 von 290 (17 %) |
+| `node abgleich/bedienung.mjs` | Tabstopps wie Selbstprüfung; Höhen +162 px (Teil E) |
+
+**Kennzahlen der bauenden Sitzung:** nachgerechnet und **bestätigt** für Build, Gates, Abgleich, `kennzahlen.mjs` (`diagnose`, `behandlung` auf die Stelle), `verneinung.mjs` (`diagnose`, `behandlung`), Tabstopps, Kontraste (tiefster Wert 4,71 : 1) und Wörter im Lesefluss (Abweichungen in Teil C2). `genesung` 159 statt 158 und `unterstuetzung` 198 statt 193 Sätze in `verneinung.mjs` sind die Änderungen aus 2c-2 (die Selbstprüfung nennt für diese zwei Seiten die Werte von 2c-1).
+
+**Zuständigkeit und Krisenzugang** (gebaute Seiten und `content/` von `genesung`, `unterstuetzung`, `diagnose`, `behandlung`):
+
+- `tel:`-Links: 0. `mailto:` in `main`: 0. `style`-Attribute: 0. Hexwerte in `content/` und in `borderline.css`: 0.
+- Telefonnummern im sichtbaren Text: 0 (gesucht: Muster «0xx xxx xx xx», 143, 144, 147, 117, 112; der einzige Treffer «147» ist eine Koordinate im SVG). Kein Notfallblock, kein Link auf eine Notfallseite.
+- **Verweise im Text:** `genesung` 0, `unterstuetzung` 0, `diagnose` 2, `behandlung` 2; nur über den Platzhalter, Wortlaut aus `responsibility.inline` («Sorgen Sie sich akut um das Leben oder die Sicherheit eines Menschen, holen Sie sofort Hilfe: ärztlicher Notfalldienst oder Notfallstation, bei Gefahr die Polizei.»); keiner in einer Vertiefung oder Figur; höchstens einer je Abschnitt.
+
+| Seite › Abschnitt | Was direkt davor steht | Nach einer Handlungsanleitung? | Trägt er? |
+| --- | --- | --- | --- |
+| `diagnose` › `zweifel` | «Klare Grenze: … Dann holen Sie Hilfe über den Notruf.» | ja | ja |
+| `diagnose` › `begleiterkrankungen` | «… holen Sie sofort Hilfe über den Notruf.» | ja | ja |
+| `behandlung` › `kontakt` | «Bei möglicher akuter Gefahr holen Sie sofort Hilfe über den Notruf und warten nicht auf eine Rückmeldung per E-Mail.» | ja | ja |
+| `behandlung` › `wartezeit` | «… Bei unmittelbarer Gefahr holen Sie Hilfe über den Notruf.» (Schritt 4) | ja | ja; der Satz davor braucht einen Weg (P2c2-F-1) |
+
+**Handlungsanleitungen für akute Lagen ohne Verweis im Text:**
+
+| Ort | Satz | Verweis nötig? |
+| --- | --- | --- |
+| `behandlung` › `therapieformen` | «Akute Gefährdungen, etwa eine schwere depressive Episode, eine Krise beim Substanzgebrauch oder eine Essstörung mit körperlicher Gefährdung, brauchen sofortige Aufmerksamkeit.» | nein: Aussage über die Behandlungsplanung, keine Anleitung an Angehörige |
+| `diagnose`, Vertiefung «Weitere Begleiterkrankungen kurz», Essstörungen | «Bei körperlicher Gefährdung braucht es rasch eine fachliche und medizinische Einschätzung.» | nein: Bestand, keine Anleitung zum Hilfeholen in einer akuten Lage; die Anleitungen für akute Gefahr stehen sichtbar im selben Abschnitt |
+| `behandlung` › `kontakt`, vierte Frage | «… an wen wenden Sie sich bei möglicher akuter Gefahr?» | nein: Frage zur Planung, der Verweis im Text steht im selben Abschnitt darüber |
+| `genesung`, `unterstuetzung` | keine Anleitung für akute Lagen | – |
+
+- **Freigegebene Seiten unverändert:** sichtbarer Text von `content/verstehen`, `beziehungen`, `grenzen`, `rolle`, `selbstfuersorge`, `kommunizieren`, `krise` am Stand `ed277d9` und `7ee24ba` Zeile für Zeile verglichen: 0 Unterschiede. `git diff ed277d9` zeigt auf diesen sieben Seiten nur die entfallene Klasse `puk-site-anchor-end` (Klassenvergleich je Seite: einzige Differenz). `index`: nur die zwei Einstiege statt des Platzhalters «Weitere Einstiege folgen …».
+
+**Befunde T**
+
+- **P2c2-T-1 · optional · Begründung im Plan veraltet.**
+  - **Beleg:** `site.config.json`, `v-ge-trieb` › `reason`: «Die Skizze ist unverändert übernommen (Pfade, Bildausschnitt `0 40 640 220`).» Gebaut ist `viewBox="60 44 530 214"` (Selbstprüfung 2c-1, Entscheid Nr. 4).
+  - **Vorschlag:** den Satz an den gebauten Bildausschnitt anpassen, mit der Änderung aus P2c2-F-2.
+  - **Zuständig:** bauende Sitzung.
+
+### Zählung der Befunde der Prüfrunde 2c (zweite Prüfsitzung)
+
+| Stufe | kritisch | wichtig | optional |
+| --- | ---: | ---: | ---: |
+| W1 | 0 | 2 | 1 |
+| W2 | 0 | 1 | 2 |
+| S | 0 | 0 | 6 |
+| V (Visualisierungs-Check) | 0 | 2 | 1 |
+| B (Bedienung und Barrierefreiheit) | 0 | 0 | 0 |
+| T (Technik und Zuständigkeit, Stichprobe) | 0 | 0 | 1 |
+
+**Befunde W1**
+
+- **P2c2-W1-1 · wichtig · Unklare Dringlichkeit ohne Weg.**
+  - **Beleg:** A1 Nr. 68; `behandlung` › `wartezeit`, Schritt 4.
+  - **Vorschlag:** Wortlaut von `krise` › `belastung` (P2c2-F-1).
+  - **Zuständig:** Fachstelle, danach bauende Sitzung.
+- **P2c2-W1-2 · wichtig · Angebotsliste ohne erkennbares Kriterium, zwei Angaben ohne Beleg.**
+  - **Beleg:** A1 Nr. 66, 67; A3 Nr. 224; «Bekannt aus Prüfung 1», Punkt 3.
+  - **Vorschlag:** P2c2-F-3.
+  - **Zuständig:** Fachstelle, danach bauende Sitzung.
+- **P2c2-W1-3 · optional · Einschränkung der älteren Studien gekürzt.**
+  - **Beleg:** A1 Nr. 44.
+  - **Vorschlag:** so lassen (P2c2-F-8).
+  - **Zuständig:** Fachstelle.
+
+Dazu 15 Fragen an die Fachstelle (P2c2-F-1 bis P2c2-F-15) und 2 Kürzungsvorschläge (K2-B-a1, K2-B-a2).
+
+**Gesamturteil:** Fachlich tragen die vier Seiten. Sie übertragen den Bestand mit seinen Absicherungen, übernehmen Verantwortung und Suizid im Wortlaut der freigegebenen Seiten, halten die Zuständigkeit ohne Nummern ein und bleiben unter dem Längenziel. Vor der Durchsicht durch die Fachstelle sollte die bauende Sitzung nichts ändern; die Fachstelle entscheidet zuerst P2c2-F-1 bis -5 (akute Lage auf `behandlung`, Abbildung «Ein neuer Trieb», Angebotsliste, Rollen, «eigenständig behandelt»). Danach kann eine Korrektur 2c-K diese Entscheide, die sprachlichen Punkte (P2c2-S-1 bis -6, P2c2-W2-2) und P2c2-T-1 in einem Durchgang umsetzen, und die Fachstelle kann die neuen Sätze und die Abbildung freigeben.
+
+**Nicht geprüft, und warum:**
+
+- **Externe Links und Vorschau auf Netlify:** aus dieser Umgebung nicht erreichbar (keine Verbindung, Namensauflösung gesperrt). Geprüft ist der gebaute Stand im Repository über einen lokalen Server; ob die Vorschau denselben Stand zeigt und ob die Websites der Angebote heute sagen, was die Seite verspricht, ist offen (Teil A4).
+- **Reale Screenreader-Läufe, Hardwaretastatur und Touch:** brauchen eine Person (Teil E).
+- **Verweise von den freigegebenen Seiten auf die neuen Seiten** (13 Vorschläge der bauenden Sitzung): auftragsgemäss nicht geprüft.
+- **Studien im Original** (Zanarini, NICE-Vollleitlinie, Guillén et al. 2024): nicht eingesehen; geprüft ist die Treue zum Bestand.
+- **Abgleich mit der ersten Prüfsitzung:** nur über die Liste der Befunde und Fragen, nicht Punkt für Punkt.
+
+### Vergleich mit der ersten Prüfsitzung 2c
+
+- **Gleich gefunden:** unklare Dringlichkeit in `wartezeit` (P2c-W1-1 / P2c2-W1-1), Angaben der Angebotsliste (P2c-W1-2 / P2c2-W1-2), Giesskanne nur in der Vertiefung (P2c-V-1 / P2c2-V-2), «Fachteam» (P2c-W2-2 / P2c2-W2-2), «Kann beitragen» (P2c-S-1 / P2c2-S-4), lange Sätze auf `diagnose` (P2c-S-2 / P2c2-S-6), veraltete Begründung im Plan (P2c-T-1 / P2c2-T-1).
+- **Anders gewichtet:** Zuordnung der zwei Sätze in «Ein neuer Trieb»: erste Prüfung optional (P2c-V-2), zweite wichtig (P2c2-V-1), weil der Satz «Eine schwierigere Phase entwertet alles.» ohne Kennzeichnung als Aussage der Website gelesen werden kann (Punkt 17 N). Essstörungen in der Vertiefung auf `diagnose`: erste Prüfung Befund (P2c-W1-7), zweite kein Befund (Teil F).
+- **Nur in der zweiten Prüfung:** Widerspruch «eigenständig behandelt» (`genesung`) gegen «mitbehandelt … integriert» (`behandlung`) (P2c2-W2-1, P2c2-F-5); konkrete Empfehlung je Angebot mit Kriteriumssatz (P2c2-F-3); Kürzung der Rollenliste auf fünf Punkte (P2c2-F-4).
+- **Nur in der ersten Prüfung:** unter anderem P2c-W1-3 bis -6 und P2c-W2-1 («Formen» für Settings). Die Fachstelle kann beide Listen zusammen entscheiden; wo sie sich decken, genügt ein Entscheid.
 
 ## Prüfrunde 2c (11.10.2026, Stand 7ee24ba)
 
