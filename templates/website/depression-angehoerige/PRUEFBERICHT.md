@@ -33,19 +33,19 @@ Ersetzt die Fassung vom Stand `9ff948b`. Was dort offen war, ist bis auf die hie
 - W1-F-21: die Texte und die 11 Darstellungen fachlich freigeben (Gate 11 × `visual-approval`; Visualisierungs-Check Punkt 14). Vorher entscheiden, welche Befunde aus R2 in die freigegebene Fassung kommen.
 - W1-F-15: das Boot-Bild mit dem Arbeitsheft abgleichen.
 - W1-F-19: die Angebote prüfen (Gruppe der VASK Zürich für erwachsene Kinder, HelpLine von Stand by You, Gruppen von Equilibrium).
-- W1-31 und S-32: Impressum und Datenschutz rechtlich prüfen lassen (mit der PUK): Widerspruch «keine Daten an andere Anbieter» und Netlify, geltendes Recht, verantwortliche Stelle, Aufbewahrung der Protokolle, Postadresse.
+- W1-31: Impressum und Datenschutz rechtlich prüfen lassen (mit der PUK): Widerspruch «keine Daten an andere Anbieter» und Netlify, geltendes Recht, verantwortliche Stelle, Aufbewahrung der Protokolle, Postadresse; dabei auch den neuen Wortlaut zu Herausgeberin und «kein offizielles Angebot» (S-32, umgesetzt am 11.10.2026).
 - R2-02 bis R2-07: entschieden und umgesetzt am 11.10.2026; den Wortlaut der neuen Erklärungen (R2-03) und Beispielsätze (R2-05) mit W1-F-21 freigeben.
 - Prüfbedarf aus R1 (Punkt 18): Gehört nach «Sie dürfen ein Gespräch beenden und den Raum verlassen» (`fuer-sich-sorgen` › `grenzen`) der Verweis im Text?
-- Optionale Befunde (V-08, V-09, S-31, R1-03): umsetzen lassen oder begründet zurückstellen.
+- Optionale Befunde V-08, V-09, S-31, S-32 und R1-03: entschieden und umgesetzt am 11.10.2026 (Eintrag unter «Umgesetzt nach den Prüfrunden»).
 
 **Bauende Sitzung** (nach Freigabe)
 
 - R2-01 (Website-Teil) und W1-32: umgesetzt am 11.10.2026 (Eintrag unter «Umgesetzt nach den Prüfrunden»); Nachprüfung durch eine andere Sitzung offen.
 - R2-02 bis R2-07: umgesetzt am 11.10.2026; Nachprüfung durch eine andere Sitzung offen.
-- Je nach Entscheid: V-08, V-09 (Website-Teil), S-31, R1-03.
+- V-08 und V-09 (Website-Teil), S-31, S-32, R1-03: umgesetzt am 11.10.2026; Nachprüfung durch eine andere Sitzung offen.
 - W1-09 Rest und W1-10 Rest: Abrufdaten, PatG § 19, NVL-Kapitel, Programmname «Familiencoach Depression», «drei bis vier Wochen», BAG «allgemein informieren» am Original prüfen, sobald die Originale erreichbar sind.
 - BD-09 / W3-10 Rest: Dateigrössen der 7 PDF-Dateien nachtragen.
-- Selbstprüfung nachführen: Punkte 18 und 19 der Leitlinie fehlen in der Tabelle der Selbstprüfung.
+- Selbstprüfung: Punkte 18 und 19 der Leitlinie stehen seit dem 11.10.2026 in der Tabelle (nachgeführt mit R2-01, zuletzt mit V-08 und V-09).
 
 **Profil** (Design-System-Artefakt, nicht in diesem Repository; danach neues Paket übernehmen)
 
@@ -53,7 +53,7 @@ Ersetzt die Fassung vom Stand `9ff948b`. Was dort offen war, ist bis auf die hie
 - W3-01 (Hinweis): Der Rückfall `details::details-content` ohne Skript druckt in Chromium 141 keine Vertiefung.
 - W3-12: kanonische Links und Sitemap mit `.html` gegenüber den Umschreibungen von Netlify.
 - R2-01 und R2-02, Profil-Teil: Muster E setzt «· durchgezogene Linie» und «· gestrichelte Linie» als sichtbare Schlüssel und Option B gestrichelt; Muster B verlangt die sichtbare «Leserichtung»; Muster-Kurztexte beschreiben die Grafik («Durchgezogene und gestrichelte Linie unterscheiden die Bereiche»). Das widerspricht R2, Punkt 22.
-- V-08 und V-09, Profil-Teil: Listenansicht der Beziehungskarte mit der Legende «Abstand zur Mitte» ohne sichtbaren Abstand; Kontinuum schmal mit Endbeschriftungen ohne Achse.
+- V-08 und V-09, Profil-Teil: Muster I setzt in der Legende weiterhin «Abstand zur Mitte: wie nah im Alltag», obwohl die Listenansicht keinen Abstand zeigt (auf dieser Website ersetzt); Kontinuum schmal mit Endbeschriftungen ohne Achse.
 - R1-01 (Trennpunkte der Absenderzeile am Zeilenanfang), R1-02 (freie px-Werte in `starter.css`), R1-04 (Kurztext und Ansatzpunkt in Figuren 15 px).
 - BD-08: Regionen in Figuren, erst nach den realen Screenreader-Läufen entscheiden.
 
@@ -63,7 +63,7 @@ Ersetzt die Fassung vom Stand `9ff948b`. Was dort offen war, ist bis auf die hie
 - Mindestens zwei reale Screenreader-Läufe (Protokollvorlage unter «Bedienung und Barrierefreiheit») und ein Test mit Hardwaretastatur und auf einem realen Touch-Gerät.
 - Die 69 externen Links prüfen (66 aus Runde 1 und 3 neue Quellen).
 - Lesetest mit Angehörigen, wo möglich trialogisch (R2 ersetzt ihn nicht).
-- Nachprüfung von R2-01 bis R2-07 und W1-32 durch eine Sitzung, die sie nicht umgesetzt hat (die Umsetzung stammt von der zweiten Prüfsitzung).
+- Nachprüfung von R2-01 bis R2-07, W1-32, V-08, V-09, S-31, S-32 und R1-03 durch eine Sitzung, die sie nicht umgesetzt hat (die Umsetzung stammt von der zweiten Prüfsitzung).
 - Nach den Korrekturen: die betroffenen Stufen nachprüfen, danach R3. R3 erst, wenn W1-F-21 und die Screenreader-Läufe vorliegen.
 
 ## Grundlage und Arbeitsstand der bauenden Sitzung
@@ -199,6 +199,16 @@ Ersetzt die Fassung vom Stand `9ff948b`. Was dort offen war, ist bis auf die hie
   - **Geprüft:** `node tools/build.mjs` → 10 Seiten, Gate draft 0 blockierend, 12 Hinweise; `--production` 12 blockierend wie vorher; gerenderte Seiten identisch mit den gebauten (10 von 10). Playwright, 10 Seiten bei 320, 360, 768, 1024, 1280, 1440 px mit CSP: kein Überlauf, 0 Konsolenfehler, 0 CSP-Verstösse; Text-Kontrast 0 unter der Schwelle. Kreislauf mit den längeren Sätzen: 0 überlappende Beschriftungen bei 768, 900, 1024, 1280, 1440 px und mit 200 % Schrift bei 768 bis 1440 px. Angesehen bei 1280 und 360 px: Kreislauf, Vergleich der Behandlungen, Pfad.
   - **Offen:** Profil-Teil von R2-02 (Muster E ohne wertende Linienart); Nachprüfung von R2-02 bis R2-07 durch eine andere Sitzung; fachliche Freigabe der neuen Erklärungen und Beispielsätze (W1-F-21).
 
+- **11.10.2026 · V-08, V-09, S-31, S-32 und R1-03 umgesetzt** (Auftrag der Fachstelle vom 11.10.2026: «Setze V-08, V-09, S-31, S-32 und R1-03 um»). Bauende Sitzung wie bei den beiden Einträgen davor (die zweite Prüfsitzung, Rollenwechsel); die Nachprüfung macht eine andere Sitzung. Geändert sind `content/`, die gebauten Seiten und in `site.config.json` nur `editorialStatusLabel`.
+  - **V-08 (Website-Teil):** `fuer-sich-sorgen` › Abb. 1 (`v-fs-netz`), dritter Eintrag der Legende: «geordnet von nah im Alltag nach weiter weg» statt «Abstand zur Mitte: wie nah im Alltag». Der Eintrag stimmt jetzt in beiden Ansichten: breit von innen nach aussen, schmal und bei 200 % Schrift von oben nach unten (Gruppen «Nah – im Alltag», «Umfeld», «Fachliche Unterstützung»). Der Kurztext war schon mit R2-01 geändert. Abweichung vom Vorschlag: Der Vorschlag «von nah nach weiter weg» war für die Listenansicht im Profil gedacht; hier ersetzt er den Eintrag in beiden Ansichten, mit «im Alltag» wie bisher. Unverändert: `understood` im Plan («Der Abstand zur Mitte macht Nähe sichtbar, eine Liste nicht.») gilt für die breite Ansicht; dass die schmale Ansicht eine Liste ist, gehört zu Muster I (Profil).
+  - **V-09 (Website-Teil):** `behandlung-und-verlauf` › Abb. 3 (`v-bv-fruehzeichen`), Vertiefung «Grenzen des Bildes»: «Das Bild zeigt Spielraum, keine feste Abfolge und keine Skala zum Selbsttest.» statt «Die Achse zeigt …». Der Kurztext des Schichtenmodells war schon mit R2-01 geändert. Die Endbeschriftungen «es geht gut» und «die Depression ist zurück» stehen bei 360 px weiterhin ohne Achse (Profil). Die Kurzbeschreibung für Screenreader nennt die Achse weiterhin; sie beschreibt die Zeichnung (R2, Punkt 22).
+  - **S-31:** `impressum-datenschutz` › `impressum`: «Für die Inhalte verlinkter Websites sind deren Anbieter verantwortlich.» – im Wortlaut des Vorschlags. Die Website spricht damit nirgends mehr als «wir»; «wir», «uns» und «unsere» stehen nur noch in Beispielsätzen (z. B. `begleiten` › `ablehnung`: «Wenn du magst, rufen wir zusammen an.») und im Begriff «Wir-Krankheit» (`je-nach-rolle`).
+  - **S-32:** `impressum-datenschutz` › `impressum`: «Herausgeberin: Fachstelle Angehörigenarbeit der Psychiatrischen Universitätsklinik Zürich» (Wortlaut des Vorschlags) und «Die Website ist ein Angebot der Fachstelle, kein offizielles Angebot der Klinik als Ganzes.» **Abweichung vom Vorschlag:** «Die Website gibt die Fachstelle heraus; …» ist zweideutig, weil «die Website» und «die Fachstelle» gleich lauten; man kann den Satz auch als «die Website gibt die Fachstelle heraus» lesen. Der neue Satz behält den Aufbau der bisherigen Fassung und den Inhalt des Entscheids W3-05; neu sind nur die Kurzform «der Fachstelle» und «der Klinik als Ganzes» aus dem Vorschlag. **Prüfbedarf:** Der Wortlaut gehört zur rechtlichen Prüfung unter W1-31.
+  - **R1-03:** `site.config.json` › `editorialStatusLabel`: «Musterentwurf, Stand 11.10.2026 – fachliche Prüfung ausstehend». Beleg: Fusszeile auf allen 10 gebauten Seiten mit «Stand 11.10.2026»; 0 Treffer für «Stand 10.10.2026 – fachliche» in den gebauten Seiten. Unverändert, weil sie den Stand der Recherche nennen: «Rechtliche Angaben: Stand 10.10.2026» und «Angaben zu den Angeboten: Stand 10.10.2026» auf `rechte-und-angebote`; die Zeile «Status aller Texte» unter «Grundlage und Arbeitsstand» beschreibt den Stand vom 10.10.2026.
+  - **Satzvergleich vorher/nachher** (gebaute Seiten, Skript): 15 Sätze oder Satzteile geändert, 15 neu. Davon 10 die Fusszeile (R1-03, je Seite einmal), 1 die Legende (V-08), 1 die Vertiefung (V-09), 3 das Impressum (S-31, S-32). Kein Satz still entfallen; die Satzzahl jeder Seite ist gleich geblieben.
+  - **Geprüft:** `node tools/build.mjs` → 10 Seiten, Build r4-8, Gate draft 0 blockierend, 12 Hinweise (11 × `visual-approval`, `review-report`); `node tools/gate.mjs --production` → 12 blockierend wie vorher; gerenderte Seiten identisch mit den gebauten (10 von 10), `sitemap.xml` unverändert. Playwright (Chromium 141), 10 Seiten bei 320, 360, 768, 1024, 1280, 1440 px mit der CSP aus `_headers`: kein Überlauf (60 von 60), 0 Konsolenfehler, 0 CSP-Verstösse, nur Anfragen an den eigenen Server. Angesehen: Netz bei 1280 px (Kreise, Legende in einer Zeile), bei 360 px und bei 1280 px mit 200 % Schrift (Listenansicht, Legende unter den Gruppen); Kontinuum bei 1280 und 360 px mit offener Vertiefung; Impressum bei 1280 und 360 px. Bildschirmfotos im Scratchpad, nicht im Repository.
+  - **Offen:** Profil-Teil von V-08 (Legende in Muster I) und V-09 (Endbeschriftungen des Kontinuums schmal); rechtliche Prüfung des Impressums (W1-31); Nachprüfung durch eine andere Sitzung.
+
 ### Begriffe nach den Entscheiden W2-F-01 bis W2-F-03 (bauende Sitzung, für S und W2-D)
 
 | Begriff | Gilt | Wo |
@@ -233,7 +243,7 @@ Ergebnis der Prüfsitzung zu diesen fünf Punkten: «W1-E · Offener Prüfbedarf
 
 ## Selbstprüfung der bauenden Sitzung
 
-Arbeitsstand vom 10.10.2026, nachgeführt am 11.10.2026 nach der Umsetzung von R2-01 (Punkte 16, 18 und 19) und R2-02 bis R2-07 (Punkte 15 und 17); keine Prüfstufe. Elf Figuren: `v-dv-schichten` (K), `v-dv-entstehung` (G), `v-bv-vergleich` (E), `v-bv-weg` (C), `v-bv-fruehzeichen` (J), `v-is-gefaess` (G), `v-is-kreislauf` (B), `v-ro-spannung` (H), `v-bg-boot` (D), `v-fs-netz` (I), `v-ra-vergleich` (E).
+Arbeitsstand vom 10.10.2026, nachgeführt am 11.10.2026 nach der Umsetzung von R2-01 (Punkte 16, 18 und 19), R2-02 bis R2-07 (Punkte 15 und 17) sowie V-08 und V-09 (Punkte 18 und 19); keine Prüfstufe. Elf Figuren: `v-dv-schichten` (K), `v-dv-entstehung` (G), `v-bv-vergleich` (E), `v-bv-weg` (C), `v-bv-fruehzeichen` (J), `v-is-gefaess` (G), `v-is-kreislauf` (B), `v-ro-spannung` (H), `v-bg-boot` (D), `v-fs-netz` (I), `v-ra-vergleich` (E).
 
 ## Visualisierungs-Check
 
@@ -256,8 +266,8 @@ Arbeitsstand vom 10.10.2026, nachgeführt am 11.10.2026 nach der Umsetzung von R
 | 15 | Bildsprache passt zum Thema; Wirkung im Plan und im Bild eingelöst | erfüllt (Selbsteinschätzung) | Wirkung (`resonance`) bei allen 11 Darstellungen im Plan. Boot: zwei ruhige Linienfiguren, je ein Ruder, Sätze aus Sicht der beiden Menschen; Gefäss: Sätze an Zu- und Abfluss. G Schwelle nutzt Rechtecke, ist aber ein Strukturmodell, kein Erlebensbild ; Kreislauf seit 11.10.2026 mit Sätzen aus Sicht der beiden statt Substantiven (R2-04) | Bilder von der Fachstelle am 10.10.2026 gutgeheissen («Die Bilder sind perfekt.»); Prüfsitzung prüft die Punkte trotzdem je Figur |
 | 16 | Metapher ohne Code: ein Bild, eine Idee; Beschriftungen nennen Erleben, nicht Bildteile | erfüllt | Gefäss: «Sie ist seit Wochen schwer krank.», «Meine Schwester übernimmt den Mittwoch.» – keine Namen von Bildteilen, keine Legende; seit 11.10.2026 auch die Bezeichnung des Ansatzpunkts ohne Bildteil: «Ansatzpunkt für Angehörige · beim Abfluss» (R2-01); Boot: «Heute schaffe ich nur wenige Züge.» / «Ich bin da und rudere auf meiner Seite.»; K: Sätze in beiden Schichten | – |
 | 17 | Keine ungewollten Bedeutungen | erfüllt (Selbsteinschätzung) | K bewusst ohne Eisberg (Gefahr für Schiffe); die Form ist eine weiche, neutrale Rundung. Kein Motiv zeigt die erkrankte Person als Gefahr oder Defekt. Seit 11.10.2026 ist die Spalte «Antidepressiva» nicht mehr gestrichelt wie sonst nur Mögliches (R2-02) | Prüfsitzung: Lesart der K-Form (Stein, Ei?) beurteilen |
-| 18 | Bei 200 % Schrift keine überlappenden Beschriftungen, keine Trennung mitten im Wort; der Kurztext verweist nicht auf schmal ausgeblendete Bildteile | erfüllt (Selbstprüfung 11.10.2026) | 200 %: gemessen in der Prüfrunde vom Stand `e63bd73` (0 Überlappungen bei 768 bis 1440 px). Kurztexte: kein Kurztext nennt mehr Wasserlinie, Abstand zur Mitte, Linienart, Linienstärke oder Nummern (R2-01). Bleibt im Profil: Legende «Abstand zur Mitte» in der Listenansicht des Netzes (V-08), Endbeschriftungen des Kontinuums schmal ohne Achse (V-09) | Profil: V-08, V-09; Nachprüfung durch eine andere Sitzung |
-| 19 | Was der Kurztext über die Anordnung verspricht, löst die Komponente bei allen Breiten ein | erfüllt (Selbstprüfung 11.10.2026) | Die Kurztexte versprechen keine Anordnung mehr (Vergleiche ohne «in derselben Reihenfolge», Netz ohne «Abstand zur Mitte»); Vergleiche bei 768 und 1280 px weiterhin auf gleicher Zeilenhöhe | Nachprüfung durch eine andere Sitzung |
+| 18 | Bei 200 % Schrift keine überlappenden Beschriftungen, keine Trennung mitten im Wort; der Kurztext verweist nicht auf schmal ausgeblendete Bildteile | erfüllt (Selbstprüfung 11.10.2026) | 200 %: gemessen in der Prüfrunde vom Stand `e63bd73` (0 Überlappungen bei 768 bis 1440 px). Kurztexte: kein Kurztext nennt mehr Wasserlinie, Abstand zur Mitte, Linienart, Linienstärke oder Nummern (R2-01). Netz: Legende seit 11.10.2026 «geordnet von nah im Alltag nach weiter weg»; bei 360 px und bei 1280 px mit 200 % Schrift angesehen, die Gruppen stehen von oben nach unten in dieser Reihenfolge (V-08). Bleibt im Profil: Endbeschriftungen des Kontinuums schmal ohne Achse (V-09) | Profil: V-08 (Legende in Muster I), V-09; Nachprüfung durch eine andere Sitzung |
+| 19 | Was der Kurztext über die Anordnung verspricht, löst die Komponente bei allen Breiten ein | erfüllt (Selbstprüfung 11.10.2026) | Die Kurztexte versprechen keine Anordnung mehr (Vergleiche ohne «in derselben Reihenfolge», Netz ohne «Abstand zur Mitte»); Vergleiche bei 768 und 1280 px weiterhin auf gleicher Zeilenhöhe. Seit 11.10.2026 verspricht auch die Legende des Netzes nur noch, was beide Ansichten zeigen (V-08), und die Vertiefung des Kontinuums spricht vom «Bild», nicht von der Achse, die schmal fehlt (V-09) | Nachprüfung durch eine andere Sitzung |
 
 ### Matrix je Figur (Prüfsitzung)
 
