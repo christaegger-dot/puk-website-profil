@@ -107,6 +107,8 @@ Zusammenfassung der Befunde unter «Befunde je Stufe»; gleiche Befunde aus Bedi
 
 - **11.10.2026 · W1-F-11 (Arbeit und Geld):** Der Abschnitt «Arbeit und Geld» auf `rechte-und-angebote` wird gestrichen. Begründung der Fachstelle: Das Thema müsste viel konkreter erklärt werden und sprengt den Rahmen der Website. Damit entfallen W1-21, der Prüfbedarf zu den Erklärungen in S-21 und die Aussage «auch bei einer psychischen Erkrankung» (W1-10).
 
+- **11.10.2026 · V-05, BD-05/W3-06, Familiencoach, W3-05, W3-08 (Ch. Egger):** V-05: Grenzen beim Kreislauf im Wortlaut «Nicht jede Familie gerät in diesen Kreis, und er kann an jeder Station beginnen. Das Bild zeigt eine mögliche Dynamik, keine Ursache.» BD-05/W3-06: Die acht Seiten bleiben; die Hauptnavigation wird auf dem Telefon ein aufklappbares Menü aus dem Profil (umgesetzt in Profil 2026.10.1, Pull Request #23; die Website übernimmt es nach dessen Zusammenführung). Familiencoach: «kostenlos» wird gestrichen (nicht belegt). W3-05: Die Website ist ein Angebot der Fachstelle Angehörigenarbeit der PUK, kein offizielles Angebot der PUK; Impressum und Datenschutz nennen die Fachstelle als Herausgeberin (Vorlage aus Profil 2026.10.1). W3-08: Veröffentlichung über Netlify; die genaue Adresse wird mit dem Anlegen der Netlify-Website festgelegt.
+
 ### Umgesetzt nach den Prüfrunden (bauende Sitzung)
 
 - **11.10.2026 · W2-01, W2-02 (Verweise L1 bis L12, `5ad9cc8`):** zwölf Verweise nach W2-C eingefügt, je ein Satz mit Link und ohne neue fachliche Aussage. L1 und L2 im Wortlaut von `ihre-situation` › `angst`; L9 als Link auf «Grenzen setzen» im bestehenden Satz; L12 als Übergangssatz (`.puk-longform__transition`) am Ende der Seiten 2 bis 7, nicht auf der letzten Seite. Geprüft: alle internen Links führen auf vorhandene Ziele; kein horizontaler Überlauf bei 320 und 1280 px; Gate 0 blockierend.
@@ -157,6 +159,8 @@ Zusammenfassung der Befunde unter «Befunde je Stufe»; gleiche Befunde aus Bedi
     - *Entscheid der Fachstelle:* V-05 (Wortlaut der Grenzen beim Kreislauf); BD-05 / W3-06 (Hauptnavigation mit 8 Punkten); W3-05 (Impressum und Datenschutzerklärung); W3-08 (Ziel-Adresse `siteUrl`, 404-Seite); «kostenlose» beim Familiencoach (`fuer-sich-sorgen` › `was-hilft`; die Studie nennt es nicht, W1-10); W1-F-15; W1-F-19; W1-F-21.
     - *Profil (Design-System-Artefakt):* W3-01; BD-01 / W3-07; BD-06 / W3-04; BD-03; BD-04; V-01 (Komponente); V-06 und V-07 (Vorlage H); BD-07; BD-11; W3-11.
     - *Prüfung am Original und durch Personen:* W1-09 Rest (Abrufdaten, PatG § 19, NVL-Kapitel) und W1-25; Grössen der 7 PDF-Dateien (BD-09 / W3-10); mindestens zwei reale Screenreader-Läufe; die externen Links.
+
+- **11.10.2026 · V-05 und Familiencoach:** Vertiefung von `v-is-kreislauf` («Was die Forschung sagt») um «Grenzen: …» im Wortlaut der Fachstelle ergänzt; `fuer-sich-sorgen` › `was-hilft`: «das kostenlose Programm» → «das Programm». **Wartet auf Profil 2026.10.1 (#23):** Menü-Navigation, Seiten «Impressum und Datenschutz» und 404, Name des Logo-Links, 44-px-Ziele, Vergleich mit gemeinsamen Zeilen und Druck – die Website übernimmt die neuen Starter-Dateien nach der Zusammenführung von #23 (Übernahmeliste im README des Profils). Geprüft: Gate 0 blockierend.
 
 ### Begriffe nach den Entscheiden W2-F-01 bis W2-F-03 (bauende Sitzung, für S und W2-D)
 
