@@ -24,6 +24,10 @@ Neue Seite: `content/selbstfuersorge.html` · Bestand: `/selbstfuersorge`; aus `
 
 **Zählung nach Korrektur 2b-2:** 659 Sätze des Bestands, davon 195 entfällt, 109 umformuliert (einfache Sprache, 2a), 101 zusammengeführt, 74 übernommen, 65 verschoben (Vertiefung, 2a-K), 55 umformuliert (2a-K), 22 Bezeichnung, 22 verschoben (2b-2), 8 verschoben, 4 umformuliert (2a-2), 3 umformuliert (2b-2), 1 gekürzt. Dazu 13 Zeilen ohne Bestandssatz: 8 neu (2a), 4 neu (2a-K), 1 entfällt.
 
+**Freigabe 2b (11.10.2026):** nachgeführt nach `FREIGABE-ETAPPE-2B.md`, Abschnitt 4: ein Verweissatz ohne Bestandssatz am Ende der Tabelle, Nr. 672 (`zu-viel`, Satz 7), «neu (Verweis, 2b-F)». Keine Bestandszeile geändert.
+
+**Zählung nach Freigabe 2b:** 659 Sätze des Bestands wie nach Korrektur 2b-2. Dazu 14 Zeilen ohne Bestandssatz: 8 neu (2a), 4 neu (2a-K), 1 entfällt, 1 neu (Verweis, 2b-F).
+
 - **Satz (Bestand):** Bestandstext in Sätze zerlegt, Listenpunkte und Zwischentitel als eigene Zeile. Die Nummer bleibt fest, damit Prüfberichte sie zitieren können. Gleiche Sätze aus Seite und Handout stehen je in ihrer Zeile.
 - **Neue Fassung:** der Satz der neuen Seite, der die Aussage trägt; «wörtlich», wenn er gleich lautet; «–», wenn der Satz entfällt oder auf eine spätere Seite vorgemerkt ist. Bei Zeilen ohne Bestandssatz steht in «Satz (Bestand)» «–».
 - **Ort neu:** `seite#abschnitt` der gebauten Seite (`kopf` = Seitenkopf, `kapitel` = Kapitelübersicht), `Fusszeile`, oder «seite (Etappe 2)» für eine vorgemerkte Entwurfsseite.
@@ -705,6 +709,7 @@ Neue Seite: `content/selbstfuersorge.html` · Bestand: `/selbstfuersorge`; aus `
 | 669 | neue Seite › Abschnitt 05, Verweis | – | neu (2a-K) | Mehr zu Schuldgefühlen steht auf der Seite «Ihre Rolle» im Abschnitt «Schuld, Verantwortung und was dazwischen liegt». | selbstfuersorge#unterstuetzung | 2a-K, P2a-W2-1: Seitenname wie in der Navigation; Freigabe: Liste der neuen Sätze, Selbstprüfung Korrektur 2a-K; bis 2a: neu (2a) |
 | 670 | neue Seite › Abschnitt 06, Verweis | – | neu (2a) | Was dann wichtig ist, steht auf der Seite «Grenzen» im Abschnitt «Wenn Gewalt oder Bedrohung vorkommt». | selbstfuersorge#akzeptanz | Verweissatz nach «Bei Gefahr geht Schutz vor.»; Freigabe: Liste der neuen Sätze in PRUEFBERICHT.md, Selbstprüfung Etappe 2a |
 | 671 | neue Seite › Abschnitt 02, Verweis | – | neu (2a-K) | Wie Sie Aufgaben abgeben, Ihre Erreichbarkeit begrenzen, sich beraten lassen und Ihr eigenes Leben bewahren können, steht im Abschnitt «Auch Sie brauchen Unterstützung». | selbstfuersorge#kraft | K-S-a1 (P2a-W2-4): Verweissatz an Stelle der vier Punkte, die `unterstuetzung` mit Beispielsatz bringt; Freigabe: Liste der neuen Sätze, Selbstprüfung Korrektur 2a-K |
+| 672 | neue Seite › Abschnitt 04, Verweis | – | neu (Verweis, 2b-F) | Was in einer Krise hilft, steht auf der Seite «Krisen begleiten» im Abschnitt «Wenn Belastung zunimmt». | selbstfuersorge#zu-viel | 2b-F (Freigabe 2b, Abschnitt 4, Satz 7): eigener Absatz direkt nach dem Verweis im Text, der auf «… holen Sie Hilfe, statt weiterzuüben.» folgt, vor «Ruhig atmen»; Link auf `krise#belastung` |
 
 ## Prüfbedarf für W1 (Stand 10.10.2026, Etappe 2a)
 

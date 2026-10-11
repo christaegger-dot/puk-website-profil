@@ -147,7 +147,4 @@
 .bl-stufen>li>p{margin:0}
 .bl-stufen .puk-say{margin:var(--space-3) 0 0}
 .bl-stufen .puk-say__item{margin:0}
-/* Vertiefung «Die sechs Stufen im Detail»: ein Eintrag je Stufe mit Zwischentitel in der Schrift der Vertiefung */
-.puk-acc__panel .bl-stufen__detail{margin:var(--space-6) 0 var(--space-2);font:inherit;font-weight:var(--fw-medium);color:var(--text-default)}
-.puk-acc__panel .bl-stufen__detail:first-child{margin-top:0}
 @media print{.bl-stufen>li{break-inside:avoid}}
