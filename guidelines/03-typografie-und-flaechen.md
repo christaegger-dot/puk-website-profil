@@ -56,3 +56,11 @@ Ecken standardmässig eckig; 2–4 px nur für kleine Bedienelemente.
 - **Ein Schwarz:** Text auf Websites ist `text-default` (#222222); `puk-web-text` (#000000) und `puk-web-field-text` werden nicht verwendet. Die Pflichtzeile der Karte «Web-Typografie» oben ist damit für neue Websites aufgehoben.
 - **Lesen in Seitenschrift, Bedienen in UI-Grösse:** Lesetext (auch in Card, Alert, Accordion, List) in `web-body`; Bedienelemente in `type-body`.
 - **Button-Radius:** einheitlich `radius-sm` (3 px); `web-radius-btn*` sind Messwerte des Bestandsauftritts und werden nicht verwendet.
+
+## Präzisierung der Fusszeile · AUDIT 04
+
+Die Textrolle bestimmt die Schriftgrösse auch in der Fusszeile. Absender-, Kontakt-, Zuständigkeits-, Datenschutz- und Abgrenzungstexte sind Lesetext: `web-body`, 21 px auf breiten und 19 px auf schmalen Bildschirmen. Der frühere pauschale 16-px-Wert im Web-Footer-Beispiel widerspricht dem Profilentscheid «Lesen in Seitenschrift» und entfällt.
+
+Datum, Version und Designherkunft dürfen ausdrücklich als Metadaten mit `type-caption` (13 px) gesetzt werden; dafür steht `.puk-web-footer__meta` bereit. Wesentliche Bedingungen und Handlungsinformationen gehören nicht in diese Ausnahme. Bedienelemente behalten die UI-Schrift `type-body`; ihre Bedienfläche bleibt unabhängig davon mindestens 44 px.
+
+`tokens/web.css` und die entsprechende Regel in `components/bundle.css` verwenden dieselbe Footer-Regel. Die allgemeinen Schriftgrössen-Tokens ändern sich dadurch nicht.
