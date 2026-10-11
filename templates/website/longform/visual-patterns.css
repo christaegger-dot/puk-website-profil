@@ -12,14 +12,15 @@
 .puk-vis-longdesc p{margin:0 0 var(--space-2);font:var(--type-body-sm)}
 .puk-vis-longdesc p:last-child{margin-bottom:0}
 /* A · Figur: zwei Bereiche mit gemeinsamem Anteil */
-.puk-vis-overlap{position:relative;max-width:640px;aspect-ratio:16/9;margin:0 auto}
+.puk-vis-overlap{position:relative;max-width:40rem;aspect-ratio:16/9;margin:0 auto}
 .puk-vis-overlap svg{position:absolute;inset:0;width:100%;height:100%}
 .puk-vis-overlap ul{position:absolute;inset:0;margin:0;padding:0 12.5%;list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:center}
 .puk-vis-overlap li{padding:var(--space-2);text-align:center;font:var(--type-body);color:var(--text-default);min-width:0}
 .puk-vis-overlap li:nth-child(2){font-weight:var(--fw-medium)}
-/* B · Kreislauf mit vier Stationen */
+/* B · Kreislauf mit vier Stationen. Höchstbreiten der Figuren in rem (Prüfbefund BD-04, 11.10.2026): Mit grösserer Schrift
+   wächst auch die Zeichnung, damit die Beschriftungen nicht mitten im Wort brechen (600 px = 37,5 rem bei Standardschrift). */
 .puk-vis-dir{margin:0 0 var(--space-5);font:var(--type-body-sm);max-width:70ch}
-.puk-vis-cycle{position:relative;max-width:600px;aspect-ratio:1;margin:0 auto}
+.puk-vis-cycle{position:relative;max-width:37.5rem;aspect-ratio:1;margin:0 auto}
 .puk-vis-cycle>svg{position:absolute;inset:0;width:100%;height:100%}
 .puk-vis-cycle ol{position:absolute;inset:0;margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:repeat(3,minmax(0,1fr))}
 .puk-vis-cycle li{align-self:center;margin:0 4%;padding:var(--space-3);background:var(--puk-white);border:2px solid var(--puk-blue-100);display:grid;gap:var(--space-1);text-align:center;min-width:0}
@@ -40,6 +41,18 @@
 .puk-vis-compare dl{margin:var(--space-4) 0 0;display:grid;gap:var(--space-3)}
 .puk-vis-compare dt{font:var(--type-caption);color:var(--text-muted)}
 .puk-vis-compare dd{margin:0;font:var(--type-body-sm);color:var(--text-default)}
+/* Gleiche Merkmale auf gleicher Höhe (Prüfbefund V-01, 11.10.2026): Beide Spalten teilen sich die Zeilen des Vergleichs
+   (subgrid). Zeile 1 Schlüssel, Zeile 2 Titel, ab Zeile 3 je Merkmal eine Zeile – höchstens acht Merkmale (mehr → Table).
+   Schmal (Spalten untereinander) gilt nur noch die gleiche Reihenfolge. Browser ohne subgrid zeigen die Spalten wie bisher. */
+@supports (grid-template-rows:subgrid){
+  .puk-vis-compare{row-gap:0}
+  .puk-vis-compare__col{display:grid;grid-row:span 10;grid-template-rows:subgrid;align-content:start}
+  .puk-vis-compare__key{grid-row:1}
+  .puk-vis-compare__col>h3{grid-row:2}
+  .puk-vis-compare__col>dl{grid-row:3/span 8;grid-template-rows:subgrid;gap:0;align-content:start}
+  .puk-vis-compare__col>dl>*{padding-top:var(--space-3)}
+  .puk-vis-compare__col>dl>:first-child{padding-top:0}
+}
 /* F · Entscheidungsweg */
 .puk-vis-decision{list-style:none;margin:0;padding:0}
 .puk-vis-decision__q{position:relative;padding:0 0 var(--space-6) var(--space-10);min-width:0}
@@ -69,7 +82,7 @@
 /* D · Szene (Profilentscheid 10.10.2026): eigene Linienzeichnung, beschriftet mit Sätzen aus Sicht von Menschen als HTML-Text.
    Ein Bild, eine Idee; keine Namen von Bildteilen, keine Liste zum Entschlüsseln. Kurven und runde Linienenden, keine Bauplan-Optik.
    Höchstens eine Fläche __accent (Blau 100). Schmal stehen die Sätze über der Zeichnung. */
-.puk-vis-scene{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--space-3) var(--space-6);align-items:end;max-width:760px}
+.puk-vis-scene{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--space-3) var(--space-6);align-items:end;max-width:47.5rem}
 .puk-vis-scene__say{margin:0;padding:var(--space-1) 0 var(--space-1) var(--space-3);border-left:2px solid var(--puk-blue-100);font:var(--type-body);color:var(--text-default);max-width:28ch}
 .puk-vis-scene__say--b{justify-self:end}
 .puk-vis-scene__art{grid-column:1/-1;display:block;width:100%;height:auto}
@@ -95,7 +108,10 @@
 .puk-vis-decide h3{margin:0 0 var(--space-1);font:var(--type-body);font-weight:var(--fw-medium)}
 .puk-vis-decide p{margin:0;font:var(--type-body-sm)}
 .puk-vis-check{margin:0;padding-left:1.2em;display:grid;gap:var(--space-2);font:var(--type-body-sm)}
-@container (max-width:560px){
+/* Schwellen in rem (Prüfbefund BD-04, 11.10.2026): Bei grösserer Schrift wechseln die Muster früher in die Listenansicht.
+   35 rem = 560 px, 47,5 rem = 760 px bei Standardschrift. rem statt em, weil em sich in Container-Abfragen auf die Schrift
+   des Containers bezieht, die unter 760 px von 21 auf 19 px wechselt; so bleibt das Verhalten bei Standardschrift unverändert. */
+@container (max-width:35rem){
   .puk-vis-overlap{aspect-ratio:auto}
   .puk-vis-overlap svg,.puk-vis-cycle>svg{display:none}
   .puk-vis-overlap ul{position:static;padding:0;grid-template-columns:minmax(0,1fr);gap:var(--space-2)}
@@ -113,15 +129,21 @@
   .puk-vis-cycle ol::after{content:"";position:absolute;right:var(--space-3);top:28px;bottom:28px;width:var(--space-5);border:2px solid var(--puk-blue-100);border-left:0}
   .puk-vis-cycle ol::before{content:"";position:absolute;right:calc(var(--space-3) + var(--space-5));top:22px;border-style:solid;border-width:7px 10px 7px 0;border-color:transparent var(--puk-blue-100) transparent transparent}
   .puk-vis-compare,.puk-vis-decision__branches{grid-template-columns:minmax(0,1fr)}
+  .puk-vis-compare{row-gap:var(--space-6)}
+  .puk-vis-compare__col{display:block;grid-row:auto}
+  .puk-vis-compare__col>dl{display:grid;grid-template-rows:none;gap:var(--space-3);margin-top:var(--space-4)}
+  .puk-vis-compare__col>dl>*{padding-top:0}
   .puk-vis-scene{grid-template-columns:minmax(0,1fr)}
   .puk-vis-scene__say--b{justify-self:start}
 }
-@container (max-width:760px){
+@container (max-width:47.5rem){
   .puk-vis-path{grid-template-columns:minmax(0,1fr);gap:0}
   .puk-vis-path li{padding:0 0 var(--space-6) var(--space-10)}
   .puk-vis-path li::before{left:11px;right:auto;top:24px;bottom:0;border-top:0;border-left:2px solid var(--puk-blue-100)}
   .puk-vis-path li.puk-vis-path--optional::before{border-left-style:dashed}
 }
+/* Schmale Spalten in Figuren trennen nach Silben statt mitten im Wort (Prüfbefund BD-04, Abschnitt «Technische Qualität», F). */
+.puk-vis-wide :where(li,dl,h3){hyphens:auto}
 /* 200 % Text: lange Roadmap-Einträge umbrechen statt überlaufen */
 .puk-longform__roadmap li,.puk-longform__roadmap a{min-width:0;max-width:100%;overflow-wrap:anywhere}
 /* Keine selbstlaufende Animation: Kreislaufpfeile sind statisch (Profilentscheid 06.10.2026, Abschnitt «Interaktionskonzept»). */
@@ -151,3 +173,17 @@
 .puk-vis-cycle__key{font:var(--type-caption);font-weight:var(--fw-medium);color:var(--text-default)}
 .puk-vis-path li.is-ansatz::after{box-shadow:0 0 0 3px var(--puk-white),0 0 0 5px var(--puk-blue-100)}
 .puk-vis-path .puk-vis-ansatz{margin-top:var(--space-2);color:var(--text-default)}
+/* Druck (Prüfbefund W3-11, 11.10.2026): Figuren kleiner und mit weniger Innenabstand, damit eine Figur auf eine A4-Seite
+   passt; die Grundschrift setzt bundle.css im Druck auf 13 px. */
+@media print{
+  .puk-vis-figure{padding:var(--space-4)}
+  .puk-vis-wide{margin-top:var(--space-5)}
+  .puk-vis-cycle{max-width:400px}
+  .puk-vis-overlap{max-width:480px}
+  .puk-vis-scene{max-width:560px}
+  .puk-vis-kern{margin-bottom:var(--space-2)}
+  .puk-vis-short{margin-bottom:var(--space-4)}
+  .puk-vis-caption{margin-top:var(--space-4);padding-top:var(--space-3)}
+  .puk-vis-more{margin-top:var(--space-3)}
+  .puk-vis-more>summary{min-height:0;padding-block:var(--space-2)}
+}

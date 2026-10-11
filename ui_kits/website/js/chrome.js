@@ -22,7 +22,7 @@ const NAVS = {
   website: {
     label: 'Hauptnavigation',
     logoHref: '#start',
-    logoLabel: 'Startseite der Psychiatrischen Universitätsklinik Zürich',
+    logoLabel: 'Psychiatrische Universitätsklinik Zürich – Startseite',
     items: [['start', 'Behandlung'], ['start/forschung', 'Forschung'], ['start/lehre', 'Lehre'], ['start/ueber-uns', 'Über uns']],
     current: {
       start: 'start'
@@ -31,19 +31,19 @@ const NAVS = {
   apps: {
     label: 'Anwendungsmuster',
     logoHref: '#situationsnavigator',
-    logoLabel: 'Startseite der Anwendungsmuster',
+    logoLabel: 'Psychiatrische Universitätsklinik Zürich – Startseite der Anwendungsmuster',
     items: [['situationsnavigator', 'Situationen'], ['kontaktwegweiser', 'Kontaktwege'], ['gespraechshilfe', 'Gesprächshilfe'], ['angebotsnavigator', 'Angebote'], ['kontaktwegweiser/sofort', 'Akute Hilfe', true]]
   },
   longform: {
     label: 'Langform-Referenzen',
     logoHref: '#grundlagenkapitel',
-    logoLabel: 'Start der Langform-Referenzen',
+    logoLabel: 'Psychiatrische Universitätsklinik Zürich – Start der Langform-Referenzen',
     items: [['grundlagenkapitel', 'Grundlagen'], ['handlungsuebersicht', 'Handlungsübersicht'], ['transfer-erholung', 'Transferfall']]
   },
   kit: {
     label: 'UI-Kit-Beispiele',
     logoHref: '#start',
-    logoLabel: 'Startseite der Website-Referenz',
+    logoLabel: 'Psychiatrische Universitätsklinik Zürich – Startseite der Website-Referenz',
     items: [['beispiel-visualisierung', 'Eigene Visualisierung'], ['visualisierungsmuster', 'Visualisierungsmuster']]
   }
 };

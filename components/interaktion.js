@@ -79,7 +79,9 @@
   }
 
   /* Dropdown-Menü: <div class="puk-disclosure" data-puk-disclosure>
-       <span class="puk-disclosure__label">Themen</span><ul class="puk-disclosure__panel"><li><a class="puk-disclosure__link" href="…">…</a></li></ul></div> */
+       <span class="puk-disclosure__label">Themen</span><ul class="puk-disclosure__panel"><li><a class="puk-disclosure__link" href="…">…</a></li></ul></div>
+     Ist die Schaltfläche per CSS ausgeblendet (Hauptnavigation des Starters auf breiten Bildschirmen, .puk-site-menu),
+     verhält sich die Liste wie eine normale Navigation: keine Pfeiltasten, kein Escape. */
   function disclosure(root) {
     var label = root.querySelector('.puk-disclosure__label'), panel = root.querySelector('.puk-disclosure__panel');
     if (!label || !panel) return;
@@ -91,6 +93,7 @@
     if (panel.querySelector('[aria-current="page"]')) btn.setAttribute('data-current', 'true');
     btn.setAttribute('aria-controls', id(panel, 'puk-menu'));
     var links = function () { return [].slice.call(panel.querySelectorAll('a')); };
+    var active = function () { return btn.getClientRects().length > 0; };
     function set(open, focusBtn) {
       btn.setAttribute('aria-expanded', String(open)); panel.hidden = !open;
       if (!open && focusBtn) btn.focus();
@@ -101,12 +104,13 @@
       if (e.key === 'ArrowDown') { e.preventDefault(); set(true); var l = links(); if (l[0]) l[0].focus(); }
     });
     panel.addEventListener('keydown', function (e) {
+      if (!active()) return;
       var l = links(), i = l.indexOf(document.activeElement);
       var n = { ArrowDown: Math.min(i + 1, l.length - 1), ArrowUp: i - 1, Home: 0, End: l.length - 1 }[e.key];
       if (n === undefined) return; e.preventDefault();
       if (n < 0) btn.focus(); else l[n].focus();
     });
-    root.addEventListener('keydown', function (e) { if (e.key === 'Escape' && btn.getAttribute('aria-expanded') === 'true') { e.preventDefault(); set(false, true); } });
+    root.addEventListener('keydown', function (e) { if (e.key === 'Escape' && active() && btn.getAttribute('aria-expanded') === 'true') { e.preventDefault(); set(false, true); } });
     document.addEventListener('pointerdown', function (e) { if (!root.contains(e.target)) set(false); });
     root.addEventListener('focusout', function (e) { if (e.relatedTarget && !root.contains(e.relatedTarget)) set(false); });
   }
@@ -172,7 +176,9 @@
     });
     dialogs(scope);
   }
-  /* Druck: aufklappbare Vertiefungen (details) vollständig drucken, danach Zustand wiederherstellen. */
+  /* Druck: aufklappbare Vertiefungen (details) vollständig drucken, danach Zustand wiederherstellen.
+     Der Starter bindet das Skript deshalb auf jeder Seite mit details ein (Prüfbefund W3-01, 11.10.2026);
+     Rückfall ohne Skript: details::details-content in den Druckregeln von bundle.css. */
   var printed = [];
   window.addEventListener('beforeprint', function () { printed = [].filter.call(document.querySelectorAll('details:not([open])'), function (d) { d.open = true; return true; }); });
   window.addEventListener('afterprint', function () { printed.forEach(function (d) { d.open = false; }); printed = []; });

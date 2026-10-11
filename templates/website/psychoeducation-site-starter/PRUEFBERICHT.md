@@ -49,6 +49,8 @@ Nach jedem Bau ohne Nachfrage ausfüllen: Visualisierungs-Check wie unten, mit B
 | 15 | Bildsprache passt zum Thema (kein Bauplan, wo es um Erleben geht); Wirkung im Plan und im Bild eingelöst | | | |
 | 16 | Metapher ohne Code: ein Bild, eine Idee; Beschriftungen nennen Erleben, nicht Bildteile | | | |
 | 17 | Keine ungewollten Bedeutungen (Gefahr, Defekt, Maschine, Bewertung eines Menschen) | | | |
+| 18 | Bei 200 % Schrift keine überlappenden Beschriftungen, keine Trennung mitten im Wort; Kurztext nennt keine schmal ausgeblendeten Bildteile | | | |
+| 19 | Was der Kurztext über die Anordnung verspricht, löst die Komponente bei allen Breiten ein | | | |
 
 ### Matrix je Figur (Prüfsitzung)
 
@@ -73,6 +75,8 @@ E = erfüllt · T = teilweise · N = nicht erfüllt · – = nicht anwendbar. Je
 | 15 | Bildsprache passt; Wirkung eingelöst | | |
 | 16 | Metapher ohne Code | | |
 | 17 | Keine ungewollten Bedeutungen | | |
+| 18 | 200 % Schrift; Kurztext ohne ausgeblendete Bildteile | | |
+| 19 | Versprechen des Kurztexts eingelöst | | |
 
 ## Befunde je Stufe
 

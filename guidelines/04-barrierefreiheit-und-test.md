@@ -7,8 +7,9 @@ Ziel ist WCAG 2.2 AA. Die Regeln stehen dort, wo sie gestaltet werden: Kontraste
 - `lang="de-CH"`, eindeutiger `title`, Meta-Description, lokal mitgeliefertes Favicon.
 - Skip-Link «Zum Hauptinhalt» als erster Tab-Stopp; genau ein `main` und ein `h1`; Überschriftenebenen ohne Sprünge.
 - Benannte Hauptnavigation, aktuelle Seite mit `aria-current="page"` und Unterstreichung, nie nur Farbe.
-- Buttons, Navigation und eigenständige Aktionen mindestens 44 px; Links im Fliesstext bleiben inline mit natürlicher Zeilenhöhe.
-- Kein waagrechter Überlauf bei 320, 360, 768 und 1440 px und bei 200 % Textgrösse (Ausnahmen: Reiterleiste, Karussell, breite Tabellen in eigenem Scrollbereich).
+- Buttons, Navigation und eigenständige Aktionen mindestens 44 px – auch Sprunglink, Lesepfade und die Links auf Impressum und Datenschutz; Links im Fliesstext bleiben inline mit natürlicher Zeilenhöhe.
+- Der Name des Logo-Links beginnt mit dem sichtbaren Logotext und nennt danach das Ziel: «Psychiatrische Universitätsklinik Zürich – Startseite …» (WCAG 2.5.3; Profilentscheid 11.10.2026, vorher «Startseite: …», was den Logotext verdrängte).
+- Kein waagrechter Überlauf bei 320, 360, 768 und 1440 px und bei 200 % Textgrösse (Ausnahmen: Reiterleiste, Karussell, breite Tabellen in eigenem Scrollbereich). 200 % Textgrösse heisst: Seitenzoom **und** Browser-Einstellung «Schriftgrösse»; Letztere wirkt, weil die Schriftgrade in `rem` stehen.
 - `prefers-reduced-motion` wird respektiert; nichts bewegt sich von selbst.
 - Sensible Eingaben (Reflexionsfragen, Auswahl in Anwendungen) werden standardmässig nicht gespeichert. Browser-Speicherung nur mit Vorabinformation, Aufbewahrungsregel, Löschmöglichkeit und freigegebener Datenrichtlinie (Vorlage `templates/website/website-data-policy.example.json`); keine Diagnose oder Scores aus Eingaben.
 
@@ -18,6 +19,7 @@ Ein Fokusbild für das ganze System: Eingabefelder färben ihren Rahmen blau mit
 
 - **Pflicht:** `:focus-visible` aus `tokens/base.css` nutzen; Eingabefelder ohne eigenen `border` inline. Fokus nie verdeckt (fixierte Elemente, Overlays).
 - **Vermeiden:** Fokusring entfernen, mit JavaScript-Zuständen nachbauen oder nur über Farbe andeuten.
+- **Erzwungene Farben** (Windows-Kontrastmodus): Der Browser entfernt Schatten und damit `--focus-ring`. Dort gilt eine Umrandung von 2 px in der Systemfarbe `CanvasText` (`bundle.css`, Profilentscheid 11.10.2026). Prüfen mit erzwungenen Farben im hellen und dunklen Schema.
 - **Status:** Ergänzung zu WCAG 2.2 AA (2.4.7 Fokus sichtbar, 2.4.11 Fokus nicht verdeckt); das CD-Manual regelt Fokus nicht.
 
 ## Lokale Auslieferung
@@ -65,7 +67,7 @@ Jeder Fall gilt für VO und NV. Ergebnis je Umgebung: `bestanden` / `nicht besta
 - Erwartet: vier Links «Behandlung», «Forschung», «Lehre», «Über uns»; **kein** Notfalllink. «Behandlung» wird als aktuelle Seite angesagt (`aria-current="page"`).
 
 #### SR-05 Logo und Bilder
-- Erwartet: Logo-Link wird als «Startseite der Psychiatrischen Universitätsklinik Zürich» angesagt. Der Bildplatzhalter wird als Bild mit der Beschreibung «Platzhalter für ein redaktionell beschriebenes Bild …» angesagt.
+- Erwartet: Logo-Link wird mit dem sichtbaren Logotext zuerst angesagt, danach das Ziel: im UI-Kit «Psychiatrische Universitätsklinik Zürich – Startseite», auf Websites aus dem Starter «Psychiatrische Universitätsklinik Zürich – Startseite <Titel der Website>». Mit Sprachsteuerung trifft «Psychiatrische Universitätsklinik Zürich» den Link (WCAG 2.5.3). Der Bildplatzhalter wird als Bild mit der Beschreibung «Platzhalter für ein redaktionell beschriebenes Bild …» angesagt.
 
 #### SR-06 Situationsnavigator: Filter (`#situationsnavigator`)
 1. Zum Filter «Worum geht es gerade?» navigieren. 2. Schalter «Sicherheit klären» aktivieren. 3. «Filter zurücksetzen» aktivieren.

@@ -4,7 +4,8 @@ HTML-Fassungen von Akkordeon, Reitern, Dropdown-Menü und Dialog für statische 
 
 - **Einbinden:** `components/bundle.css` (bzw. `styles.css` im Projektpaket) und `<script src="components/interaktion.js" defer></script>` – nur auf Seiten, die eine dieser Komponenten enthalten. Keine Abhängigkeiten, keine Inline-Skripte (verträglich mit einer strengen Content-Security-Policy).
 - **Progressive Verbesserung:** Ohne Skript stehen Akkordeon-Antworten und Reiter-Inhalte offen untereinander, die Menüliste steht im Fluss, der Dialog-Auslöser erscheint nicht. Ein Dialog darf deshalb nie der einzige Weg zu einer Information sein.
-- **Druck:** Akkordeons, Reiter und aufklappbare Vertiefungen werden vollständig gedruckt, Bedienelemente nicht.
+- **Druck:** Akkordeons, Reiter und aufklappbare Vertiefungen werden vollständig gedruckt, Bedienelemente nicht. Vertiefungen (`details`) öffnet das Skript vor dem Druck; deshalb gehört es auf jede Seite mit Vertiefung (der Starter bindet es dort ein). Ohne Skript hilft `details::details-content` in den Druckregeln, wo der Browser es kennt.
+- **Hauptnavigation mit Menü:** Der Starter setzt ab sieben Punkten die Navigation in `div.puk-disclosure.puk-site-menu[data-puk-disclosure]`; ist die Schaltfläche breit ausgeblendet, reagiert die Liste nicht auf Pfeiltasten.
 - **Buttons:** `.puk-btn` mit `--secondary`, `--accent`, `--ghost`, `--danger`, `--sm` entspricht der React-Komponente `Button`.
 - **Nachträglich eingefügte Inhalte:** `window.PUKInteraktion.init(element)`.
 
