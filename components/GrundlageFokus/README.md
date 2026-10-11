@@ -9,4 +9,5 @@ Referenz für das eine Fokusbild des Systems: Eingabefelder mit blauem Rahmen un
 - **Einsatz:** Nachschlagen, bevor ein eigenes Bedienelement gebaut oder ein bestehendes umgestaltet wird.
 - **Pflicht:** `:focus-visible` aus `tokens/base.css` nutzen; Eingabefelder über `[data-puk-field]`, ohne eigenen `border` inline.
 - **Vermeiden:** Fokusring entfernen, mit JavaScript-Zuständen nachbauen oder nur über Farbe andeuten.
-- **Status:** Ergänzung zu WCAG 2.1 AA; das CD-Manual regelt Fokus nicht.
+- **Erzwungene Farben:** Im Windows-Kontrastmodus entfernt der Browser Schatten; dort gilt eine 2-px-Umrandung in `CanvasText` (`bundle.css`, 11.10.2026).
+- **Status:** Ergänzung zu WCAG 2.2 AA; das CD-Manual regelt Fokus nicht.

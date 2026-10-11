@@ -23,7 +23,7 @@ Wie sich interaktive Elemente auf Websites der Fachstelle verhalten: Zustände, 
 - **Bedienziele:** mindestens 44 × 44 px für Buttons, Navigation und eigenständige Aktionen (`web-touch-target`). Auf Touch-Geräten (`pointer: coarse`) heben `Button`, `IconButton` und `Tag` ihre Höhe automatisch auf 44 px (`--puk-target-min`). Links im Fliesstext bleiben inline.
 - **Breakpoint:** Unter 760 px stapeln sich Kopf und Navigation; schwebende Ebenen (Dropdown) klappen im Fluss auf; Reiterleisten scrollen waagrecht statt umzubrechen; Dialoge nutzen die volle Breite mit 16 px Rand.
 - **Hover ist nie die einzige Auslösung.** Nichts öffnet sich bei Hover allein (Dropdown, Akkordeon); Hover zeigt nur an, dass etwas klickbar ist.
-- **Prüfen** bei 320, 360, 768 und 1440 px, mit 200 % Textgrösse, nur mit Tastatur und auf einem Touch-Gerät.
+- **Prüfen** bei 320, 360, 768 und 1440 px, mit 200 % Textgrösse (Seitenzoom und Browser-Einstellung «Schriftgrösse»), nur mit Tastatur, mit reduzierter Bewegung, mit erzwungenen Farben und auf einem Touch-Gerät.
 
 ## Zustände
 
@@ -103,7 +103,7 @@ Nicht zulässig: Federn, Einzoomen, Wackeln, Pulsieren, Endlosschleifen, Scroll-
 - **Verzichten, wenn:** bis sechs Hauptpunkte (→ sichtbare Navigation, unter 760 px als Raster); für Aktionen wie Drucken oder Teilen (→ Buttons); für Werte in Formularen (→ `Select`, `RadioGroup`); als einziger Weg zu wichtigen Seiten (→ zusätzlich Lesepfade auf der Startseite).
 - **Gestaltung:** Schaltfläche wie ein Navigationspunkt mit Chevron; offen in PUK-Blau. Die Liste schwebt auf breiten Bildschirmen (weiss, Haarlinie, `shadow-overlay`), Einträge 44 px hoch, optional mit Kurzbeschreibung; aktuelle Seite unterstrichen (`aria-current`).
 - **Verhalten:** Klick, Enter, Leertaste öffnen und schliessen (kein Öffnen bei Hover); Pfeil ab öffnet und springt zum ersten Link, Pfeil auf/ab bewegt; Escape schliesst und setzt den Fokus zurück; Klick ausserhalb und Wegtabben schliessen. Einträge sind normale Links (Disclosure-Muster, kein `role="menu"`).
-- **Desktop/Mobil:** unter 760 px klappt die Liste im Fluss auf, ohne Schatten.
+- **Desktop/Mobil:** unter 760 px klappt die Liste im Fluss auf, ohne Schatten. Als Hauptnavigation des Starters (`.puk-site-menu`) gibt es die Schaltfläche nur unter 760 px; breit verhält sich die Liste wie eine normale Navigation (keine Pfeiltasten, kein Escape).
 
 ### Auswahlliste (`Select`) – kein Dropdown-Menü
 
@@ -151,7 +151,8 @@ Nicht zulässig: Federn, Einzoomen, Wackeln, Pulsieren, Endlosschleifen, Scroll-
 ### Navigation und Kapitelorientierung
 
 - Kopf nicht fixiert; Skip-Link «Zum Hauptinhalt» als erster Tab-Stopp; aktuelle Seite mit `aria-current` und Unterstreichung.
-- Bis sechs Hauptpunkte sichtbar; unter 760 px als Raster mit Trennlinien; darüber `DisclosureMenu`.
+- Bis sechs Hauptpunkte sichtbar; unter 760 px als zweispaltiges Raster mit Trennlinien (bei grosser Schrift einspaltig).
+- **Ab sieben Hauptpunkten** (Profilentscheid 11.10.2026, nach dem Befund BD-05: acht Punkte untereinander machten den Kopf bei 360 px 592 px hoch): Der Starter setzt die Navigation in ein Dropdown-Menü. Unter 760 px öffnet die Schaltfläche «Menü» die Liste im Fluss (zweispaltig); breit bleiben alle Punkte sichtbar, die Schaltfläche entfällt. Ohne Skript steht die Liste offen. Das Gate blockiert mehr als sechs Punkte ohne Menü (`nav-menu`).
 - Lange Seiten (ab vier Hauptabschnitten) erhalten eine Kapitelorientierung mit Sprunglinks (`.puk-longform__roadmap`); Sprungziele mit `scroll-margin-top`, weiches Scrollen nur ohne reduzierte Bewegung.
 
 ## Entscheidungshilfe

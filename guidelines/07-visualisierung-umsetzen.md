@@ -71,7 +71,8 @@ Profilentscheid 10.10.2026. Gilt für Muster D und für jede Darstellung, die ei
 
 ## Schmale Bildschirme
 
-- Die Muster reagieren auf die **Breite ihres Containers** (`.puk-vis-wide`, Container-Abfragen bei 560 und 760 px), nicht nur auf die Bildschirmbreite.
+- Die Muster reagieren auf die **Breite ihres Containers** (`.puk-vis-wide`), nicht nur auf die Bildschirmbreite. Die Schwellen stehen in `rem` (35 rem = 560 px, 47,5 rem = 760 px bei Standardschrift; Beziehungskarte 40 rem = 640 px), ebenso die Höchstbreiten von Kreislauf, Beziehungskarte, Waage, Figur A und Szene: Bei grösserer Schrift wächst die Zeichnung mit oder die Figur wechselt früher in die Listenansicht, statt Beschriftungen zu überlagern oder mitten im Wort zu trennen (Profilentscheid 11.10.2026, nach BD-04).
+- Was nur in der breiten Darstellung sichtbar ist (Balken der Waage, Achse des Kontinuums, Zeichnung des Schichtenmodells), nennt der Kurztext nicht als Beleg; sonst verweist er schmal auf etwas, das fehlt.
 - Aus Kreis, Karte, Waage oder Achse wird eine gegliederte Liste; die Bedeutungsträger (Nummer, Linienart, Linienstärke, Gruppenüberschrift) bleiben sichtbar. Beschriftungen bleiben mindestens `type-body-sm`.
 - **Kreislauf:** Bei 768 und 1440 px eine sichtbare, geschlossene Schleife mit Pfeilen. Bei 320 und 360 px ist eine lineare Abfolge nur zulässig, wenn der Rücksprung «zurück zu Station 1» als Linie und als Text sichtbar bleibt. «Im Uhrzeigersinn» steht nur bei der Schleife (`[data-cycle-wide]`), nie bei einer Liste.
 
@@ -122,5 +123,7 @@ Redaktioneller Check vor der fachlichen Freigabe (Stufe 4 im Abschnitt «Prüfun
 - [ ] Bildsprache passt zum Thema: kein Bauplan, Schaltplan oder Formular, wo es um Erleben oder Beziehung geht; die Wirkung (`resonance`) steht im Plan und das Bild löst sie ein.
 - [ ] Metapher ohne Code: ein Bild, eine Idee; Beschriftungen nennen Erleben, nicht Bildteile; keine Liste, die Bildteile übersetzt.
 - [ ] Keine ungewollten Bedeutungen: kein Motiv zeigt die betroffene Person als Gefahr oder Defekt, Angehörige als Teil einer Maschine oder bewertet einen Menschen.
+- [ ] Bei 200 % Schrift (Browser-Einstellung «Schriftgrösse») keine überlappenden Beschriftungen und keine Trennung mitten im Wort; der Kurztext verweist nicht auf Bildteile, die schmal ausgeblendet sind (Punkt 18, ergänzt 11.10.2026 nach BD-04 und V-03).
+- [ ] Was der Kurztext über die Anordnung verspricht (z. B. «gleiche Merkmale auf gleicher Höhe»), löst die Komponente bei allen Breiten ein, oder der Satz nennt die Grenze (Punkt 19, ergänzt 11.10.2026 nach V-01).
 
 Ergebnis im Prüfbericht (`PRUEFBERICHT.md`) als Tabelle: je Punkt Ergebnis und Beleg (Seite und Abschnitt, Figur, Zitat). Die Prüfsitzung füllt den Check zusätzlich **je Figur** aus (Matrix Prüfpunkt × Figur: erfüllt, teilweise, nicht erfüllt, nicht anwendbar); erst so fallen Figuren auf, die einzeln nicht tragen. Ein Punkt ohne Beleg gilt als nicht geprüft. Die bauende Sitzung füllt die Tabelle nach jedem Bau als Selbstprüfung aus; als Stufe zählt nur die Prüfung durch eine Sitzung oder Person, die nicht gebaut hat (Abschnitt «Prüfung und Freigabe»).

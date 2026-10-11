@@ -14,14 +14,15 @@ Rahmen: Schweiz, Schweizer Hochdeutsch, Datenschutz nach DSG, Barrierefreiheit *
 ## B · Barrierefreiheit (WCAG 2.2 AA)
 
 - Semantisches HTML: Überschriftenhierarchie ohne Sprünge, Landmarks (`header`, `nav`, `main`, `footer`), echte Listen, Tabellen mit Kopfzellen und `caption`.
-- `lang="de-CH"`; Sprachwechsel ausgezeichnet.
-- Tastatur: alles erreichbar, logische Reihenfolge, Skip-Link, sichtbarer und **nicht verdeckter** Fokus (2.4.11).
+- `lang="de-CH"`; Sprachwechsel ausgezeichnet, auch fremdsprachige Quellentitel (`<span lang="en">…</span>`; das Gate meldet Verdachtsfälle als Hinweis `lang-part`).
+- Tastatur: alles erreichbar, logische Reihenfolge, Skip-Link, sichtbarer und **nicht verdeckter** Fokus (2.4.11) – auch mit erzwungenen Farben (Windows-Kontrastmodus), wo der Browser Schatten entfernt.
 - Kontraste von Text, Links, Buttons und Fokusmarkierung (Abschnitt «Farben und Kontrast»).
 - Alternativtexte sinnvoll, dekorative Bilder mit leerem `alt`; Formen in Darstellungen `aria-hidden`.
 - Aussagekräftige Linktexte, nie «hier klicken».
 - ARIA nur, wo nötig, und korrekt; native Elemente vor ARIA (`button`, `details`, `dialog`).
-- Zoom bis 200 % und 320 px ohne Informationsverlust.
-- Klickflächen mindestens 44 px (strenger als 2.5.8 mit 24 px); Wischen nie als einziger Weg (2.5.7).
+- Zoom bis 200 % und 320 px ohne Informationsverlust. Schriftgrade in `rem`, damit auch die Einstellung «Schriftgrösse» des Browsers wirkt; Figuren mit frei platzierten Beschriftungen wechseln bei grosser Schrift in die Listenansicht (Profilentscheid 11.10.2026).
+- Klickflächen mindestens 44 px (strenger als 2.5.8 mit 24 px), auch Sprunglink und Lesepfade; Wischen nie als einziger Weg (2.5.7).
+- Der Name eines Bildlinks beginnt mit dem sichtbaren Text im Bild (2.5.3), beim Logo-Link «Psychiatrische Universitätsklinik Zürich – Startseite …».
 - Hilfe und Kontakt an gleicher Stelle auf jeder Seite (3.2.6): Absenderin im Kopf, Zuständigkeitsverweis in der Fusszeile.
 - `prefers-reduced-motion` respektiert, nichts spielt automatisch ab.
 
@@ -32,7 +33,7 @@ Bei psychischer Erkrankung ist schon der Seitenbesuch eine sensible Information.
 - **Keine Übertragung an Dritte:** keine extern geladenen Schriften (auch nicht Google Fonts), kein Analytics oder Tracking, keine eingebetteten Videos, Karten oder Social-Media-Elemente, keine CDNs. Alles wird lokal ausgeliefert.
 - Keine Cookies. Lokale Speicherung nur mit Vorabinformation, Aufbewahrungsregel und Löschmöglichkeit; Reflexionseingaben standardmässig nicht speichern.
 - Formulare (z. B. Netlify Forms) nur, wenn transparent ist, welche Daten wohin gehen und wer sie liest.
-- Impressum und Datenschutzerklärung vorhanden und deckungsgleich mit dem, was der Code tatsächlich tut.
+- Impressum und Datenschutzerklärung vorhanden und deckungsgleich mit dem, was der Code tatsächlich tut. Im Starter: `site.config.json` › `legal` (Links in jeder Fusszeile); ohne Ziel blockiert das Produktionsgate. Je Website eine eigene Seite «Impressum und Datenschutz» (Vorlage `content/impressum-datenschutz.html`; Entscheid 11.10.2026): Herausgeberin Fachstelle Angehörigenarbeit, Inhalt und Umsetzung namentlich, Datenschutz so, wie der Code arbeitet.
 - **Vorziehen erlaubt:** Kritische Datenschutzbefunde (externe Schriften, Tracking) dürfen jederzeit, auch vor W1, behoben werden.
 
 ## D · Sicherheit
@@ -46,15 +47,15 @@ Bei psychischer Erkrankung ist schon der Seitenbesuch eine sensible Information.
 ## E · Performance
 
 - Bilder in passendem Format (SVG für Grafik, WebP/AVIF oder JPEG für Fotos), in Anzeigegrösse, mit `width`/`height` und `loading="lazy"` unterhalb des ersten Bildschirms.
-- Schriften selbst gehostet, nur die benötigten Schnitte (Rubik 300, 400, 500), `font-display: swap`.
-- Kein ungenutztes CSS oder JavaScript; das Interaktionsskript nur laden, wo interaktive Elemente vorkommen.
+- Schriften selbst gehostet, nur die benötigten Schnitte (Rubik 300, 400, 500), `font-display: swap`. Keine variable Rückfallschrift für fehlende Zeichen (Profilentscheid 11.10.2026: «Rubik Variable» lud für zwei Pfeilzeichen 110 kB nach); der Export liefert nur Schriften, die die Website nennt.
+- Kein ungenutztes CSS oder JavaScript; das Interaktionsskript nur laden, wo interaktive Elemente oder Vertiefungen (`details`) vorkommen.
 - Ziel: auf einem Smartphone mit mittlerer Verbindung in wenigen Sekunden lesbar. Logo als statisches SVG.
 
 ## F · Darstellung und Druck
 
 - Darstellung auf Smartphone, Tablet und Desktop konsistent; die im S-Protokoll markierten Stellen mit erhöhtem Platzbedarf laufen auch schmal nicht über.
-- **Druck:** Angehörige drucken Inhalte oft aus. `components/bundle.css` enthält die Druckregeln: Navigation, Skip-Link und Bedienelemente ausgeblendet, Akkordeons und Reiter vollständig gedruckt, Link-Adressen hinter externen Links sichtbar, Darstellungen nicht über Seitenumbrüche geteilt, Schwarz auf Weiss.
-- Typografie technisch korrekt: Guillemets in Vorlagen und Komponenten, Silbentrennung für Deutsch (`hyphens: auto` mit `lang="de-CH"`) bei langen Wörtern in schmalen Spalten.
+- **Druck:** Angehörige drucken Inhalte oft aus. `components/bundle.css` enthält die Druckregeln: Navigation, Skip-Link und Bedienelemente ausgeblendet, Akkordeons, Reiter und Vertiefungen vollständig gedruckt (Skript vor dem Druck, Rückfall `details::details-content`), Link-Adressen hinter externen Links sichtbar, Schwarz auf Weiss. Darstellungen nicht über Seitenumbrüche geteilt: Titel, Kernaussage, Darstellung und Kennzeichnung stehen auf einer A4-Seite, die Vertiefung folgt nach der Kennzeichnung und darf auf die nächste Seite fliessen (Profilentscheid 11.10.2026).
+- Typografie technisch korrekt: Guillemets in Vorlagen und Komponenten, Silbentrennung für Deutsch (`hyphens: auto` mit `lang="de-CH"`) bei langen Wörtern in schmalen Spalten – Navigation, Spalten und Stationen in Figuren. Fliesstext bleibt ohne automatische Trennung (`hyphens: manual`); so setzen es Starter und Muster (präzisiert 11.10.2026).
 - Der Zuständigkeitsverweis ist technisch an einer Stelle eingebunden (Fusszeilen-Vorlage bzw. `site.config.json`), nicht auf Seiten dupliziert. Der Verweis im Text kommt ebenfalls aus `site.config.json` (`responsibility.inline`) und wird nur über den Platzhalter `<p data-responsibility-inline></p>` eingesetzt.
 
 ## G · Wartbarkeit
@@ -64,10 +65,11 @@ Bei psychischer Erkrankung ist schon der Seitenbesuch eine sensible Information.
 - Kein toter Code, keine ungenutzten Dateien, keine veralteten Abhängigkeiten.
 - README mit Anleitung für Build und Veröffentlichung.
 - Metadaten: eindeutiger Seitentitel, Meta-Beschreibung, Open-Graph-Angaben (Titel, Beschreibung; ohne Tracking-Parameter), `sitemap.xml`.
+- Eine 404-Seite mit Rückweg zur Übersicht (Starter: Seite mit `"role": "not-found"` und `href` `404.html`; ohne Navigation, Sitemap und kanonischen Link, `noindex`; der Export setzt ihre Pfade ab dem Stamm der Website).
 
 ## Was der Starter automatisch prüft
 
-Das Gate des Psychoedukations-Starters prüft unter anderem Absenderin, Meta-Description, Navigation und aktiven Zustand, Telefonnummern und Notfallblöcke, Platzhalter, Visualisierungsplan sowie externe Ressourcen. Es ersetzt W3 nicht: Build-Warnungen, Sicherheits-Header im Hosting, echte Ladezeiten, Druckbild und Verhalten auf echten Geräten werden von Hand geprüft.
+Das Gate des Psychoedukations-Starters prüft unter anderem Absenderin, Meta-Description, Navigation und aktiven Zustand, Menü ab sieben Hauptpunkten, Name des Logo-Links, Interaktionsskript bei Vertiefungen, Impressum, Datenschutzerklärung und 404-Seite, Telefonnummern und Notfallblöcke, Platzhalter, Visualisierungsplan sowie externe Ressourcen. Es ersetzt W3 nicht: Build-Warnungen, Sicherheits-Header im Hosting, echte Ladezeiten, Druckbild und Verhalten auf echten Geräten werden von Hand geprüft.
 
 ## Review-Ergebnis
 

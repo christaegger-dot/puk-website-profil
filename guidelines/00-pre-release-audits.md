@@ -130,16 +130,17 @@ Teil 1 · Visualisierungs-Check je Figur
 Fotografiere jede Figur in main bei 1280 und 360 px und im Theme «kontrast» und sieh sie an.
 Fülle die Matrix Prüfpunkt × Figur aus (E erfüllt / T teilweise / N nicht erfüllt / – nicht
 anwendbar), mit Beleg je T und N.
-  1–17  Die 17 Punkte aus Leitlinie 07, Abschnitt «Prüfung: Visualisierungs-Check».
-  18. 10-Sekunden-Test: Wird die Kernaussage beim ersten Blick auf die Zeichnung klar, ohne
+  1–19  Die 19 Punkte aus Leitlinie 07, Abschnitt «Prüfung: Visualisierungs-Check» (18 und 19
+        ergänzt am 11.10.2026: 200 % Schrift, Versprechen des Kurztexts).
+  20. 10-Sekunden-Test: Wird die Kernaussage beim ersten Blick auf die Zeichnung klar, ohne
       Liste und Vertiefung?
-  19. Alltagsworte: Keine Fachbegriffe als Beschriftung (z. B. «Modus», «Regulation»,
+  21. Alltagsworte: Keine Fachbegriffe als Beschriftung (z. B. «Modus», «Regulation»,
       «Kontinuum»), oder sie sind beim ersten Auftreten erklärt.
-  20. Kein sichtbarer Text, der nur die Zeichnung beschreibt («Über der Linie vier …»,
+  22. Kein sichtbarer Text, der nur die Zeichnung beschreibt («Über der Linie vier …»,
       «durchgezogene Linie»). Die Kurzbeschreibung steht als p.puk-sr nur für Screenreader.
-  21. Kurztext und Kernaussage erklären den Inhalt, nicht die Grafik.
-  22. Formen und Linien bedeuten auf der ganzen Website dasselbe (gestrichelt, doppelt, dicker).
-  23. Der Ansatzpunkt für Angehörige ist konkret: Was genau tue ich, mit einem Beispielsatz.
+  23. Kurztext und Kernaussage erklären den Inhalt, nicht die Grafik.
+  24. Formen und Linien bedeuten auf der ganzen Website dasselbe (gestrichelt, doppelt, dicker).
+  25. Der Ansatzpunkt für Angehörige ist konkret: Was genau tue ich, mit einem Beispielsatz.
 
 Teil 2 · Bildsprache und Wirkung je Figur
 Grundlage: Leitlinie 00-visuelle-wissensvermittlung.md, Abschnitte «Bildsprache» und «Ein Bild,

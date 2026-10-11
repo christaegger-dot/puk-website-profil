@@ -1,6 +1,6 @@
 # PUK Website-Profil · Projektpaket
 
-Fachstellen-Profil 2026.10 (Stand 06.10.2026) – lauffähige Fassung des Design-Systems «PUK Zürich Website-Profil» für die Websites der Fachstelle Angehörigenarbeit. Alle Pfade sind aufgelöst: Vorlagen, Starter und UI-Kit laufen ohne Anpassung.
+Fachstellen-Profil 2026.10.1 (Stand 11.10.2026) – lauffähige Fassung des Design-Systems «PUK Zürich Website-Profil» für die Websites der Fachstelle Angehörigenarbeit. Alle Pfade sind aufgelöst: Vorlagen, Starter und UI-Kit laufen ohne Anpassung.
 
 ## Ansehen
 
@@ -22,7 +22,7 @@ Dann im Browser:
 ## Eine neue Website bauen
 
 1. Den Ordner `templates/website/psychoeducation-site-starter/` innerhalb von `templates/website/` kopieren, z. B. nach `templates/website/stress-verstehen/` (dort bleiben die Pfade zu Stylesheets und Skript gültig).
-2. `site.config.json` ausfüllen (Absenderin, Seiten, Visualisierungsplan, optional Zuständigkeitsverweis und `siteUrl`) und die Inhalte in `content/` schreiben.
+2. `site.config.json` ausfüllen (Absenderin, Seiten, Visualisierungsplan, Impressum und Datenschutzerklärung unter `legal`, 404-Seite, optional Zuständigkeitsverweis und `siteUrl`) und die Inhalte in `content/` schreiben.
 3. Bauen und prüfen (Node 18 oder neuer, keine Installation nötig):
 
    ```sh
