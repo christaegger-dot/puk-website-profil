@@ -26,8 +26,10 @@ export const PAGES = {
   rolle: ['unterstuetzen--uebersicht.md', 'unterstuetzen--alltag.md'], selbstfuersorge: ['selbstfuersorge.md'],
   // Etappe 2b: `kommunizieren` aus `/kommunizieren` und `/uebungen`, `krise` aus `/unterstuetzen/krise`
   kommunizieren: ['kommunizieren.md', 'uebungen.md'], krise: ['unterstuetzen--krise.md'],
+  // Etappe 2c-1: `genesung` aus `/genesung`, `unterstuetzung` aus `/fachstelle`, `/beratung` und `/buchempfehlungen`
+  genesung: ['genesung.md'], unterstuetzung: ['fachstelle.md', 'beratung.md', 'buchempfehlungen.md'],
 };
-const RICHTWERT = { index: null, verstehen: 1300, beziehungen: 1100, grenzen: 1500, rolle: null, selbstfuersorge: null, kommunizieren: null, krise: null };
+const RICHTWERT = { index: null, verstehen: 1300, beziehungen: 1100, grenzen: 1500, rolle: null, selbstfuersorge: null, kommunizieren: null, krise: null, genesung: null, unterstuetzung: null };
 const C = createRequire(import.meta.url)(join(SITE, 'tools/contract.js'));
 
 const SKIP = new Set(['script', 'style', 'svg']);

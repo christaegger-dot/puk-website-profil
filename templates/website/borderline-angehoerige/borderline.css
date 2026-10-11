@@ -148,3 +148,35 @@
 .bl-stufen .puk-say{margin:var(--space-3) 0 0}
 .bl-stufen .puk-say__item{margin:0}
 @media print{.bl-stufen>li{break-inside:avoid}}
+
+/* Genesung, Kopf (Bauauftrag 2c-1, Abschnitt 3): die drei Kernsätze des Bestands als Liste unter der Einleitung, in Seitenschrift. */
+.bl-kernsaetze{max-width:62ch;margin:var(--space-5) 0 0;padding-left:var(--space-6)}
+.bl-kernsaetze li{margin-top:var(--space-2);font-size:var(--web-size-body);line-height:var(--lh-body);color:var(--text-default)}
+
+/* Genesung › Forschung: Datenbotschaft (Leitlinie 05, Anwendungsmuster «Datenbotschaft»): Kernaussage zuerst, danach die Werte
+   als hervorgehobener Text mit Erklärung. Kein Diagramm (Entscheid im Bauauftrag 2c-1, Abschnitt 1). */
+.bl-zahlen dt{margin-top:var(--space-6);font-size:var(--web-size-h3-fluid);font-weight:var(--fw-medium);line-height:var(--lh-subheading);color:var(--text-default)}
+.bl-zahlen dt:first-child{margin-top:var(--space-4)}
+
+/* Unterstützung finden › Bücher (Bauauftrag 2c-1, Abschnitt 5): je Titel ein Eintrag ohne Aufzählungszeichen, getrennt durch eine
+   feine Linie; Titel hervorgehoben, Angaben und «Für: …» in der kleinen Lesegrösse. Ohne Bezugslinks. */
+.bl-buecher{list-style:none;margin:var(--space-4) 0 var(--space-6);padding:0}
+.bl-buecher>li{margin:0;padding:var(--space-4) 0;border-top:1px solid var(--ui-hairline)}
+.bl-buecher p{margin:0}
+.bl-buecher p+p{margin-top:var(--space-1)}
+.bl-buch__label{font:var(--type-caption);color:var(--text-muted)}
+.bl-buch__titel{font-weight:var(--fw-medium)}
+.bl-buch__angaben,.bl-buch__fuer{font:var(--type-body-sm);color:var(--text-default)}
+
+/* Druck (Bauauftrag 2c-1, Abschnitt 7): Zwischentitel stehen nicht allein am Seitenende, sondern mit dem folgenden Text auf
+   derselben Seite. Im Druck ist das Abschnittsraster einspaltig; zwischen Rasterzeilen wirkt break-after:avoid in Chromium nicht
+   (gemessen: «Wenn Gespräche kippen» allein am Seitenende, A4, Rand 15 mm, Skalierung 90 %). Deshalb steht der Abschnitt im Druck
+   im Blockfluss: Titelspalte über dem Text, Abstand wie die Rasterlücke bei schmaler Breite. Die Regel gilt für alle Titel in main,
+   auch in Abbildungen (Stationen, Schritte), und für Begriffe in Begriffslisten (dt). In «Zwei Sichten» (Raster je Schritt) bleibt
+   jeder Schritt zusammen. */
+@media print{
+  .puk-longform__section-grid{display:block}
+  .puk-longform__section-heading:not(:empty){margin-bottom:var(--space-8)}
+  main h2,main h3,main h4,main h5,main dt,.puk-acc__heading,.puk-longform__section-heading{break-after:avoid}
+  .bl-buecher>li,.bl-sicht{break-inside:avoid}
+}

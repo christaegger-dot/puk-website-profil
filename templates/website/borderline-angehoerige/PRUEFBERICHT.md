@@ -68,6 +68,279 @@ Dazu 5 leichte Befunde zu Bericht und Abgleich. Die erste und zweite Prüfrunde 
 
 Nach jedem Bau ohne Nachfrage ausfüllen: Visualisierungs-Check wie unten, mit Beleg je Punkt. Arbeitsstand, keine Prüfstufe.
 
+**Stand 11.10.2026 · Etappe 2c-1 · bauende Sitzung (Claude Code).** Umgesetzt ist `BAUAUFTRAG-ETAPPE-2C1.md` (Seiten `genesung` und `unterstuetzung`, Einstiege auf `index`, zwei technische Reste aus 2b). Grundlage ist `borderline-umbau` am Stand `ed277d9`. Geändert sind nur:
+
+- `content/` und die gebauten Seiten von `genesung` und `unterstuetzung` (neu gebaut, Abschnitte 3 bis 5) und `index` (Einstiege, Abschnitt 6)
+- auf den sieben Seiten mit Quellenblock (`verstehen`, `beziehungen`, `grenzen`, `rolle`, `selbstfuersorge`, `kommunizieren`, `krise`) nur die Klasse `puk-site-anchor-end` am Quellenblock (Abschnitt 7); der Seitentext ist gleich
+- `borderline.css`: Regeln für die Kernsätze, die Zahlen und die Bücherliste; die Druckregel aus Abschnitt 7
+- `site.config.json`: `genesung` und `unterstuetzung` (Status, Aufgabe, Beschreibung, `sensitiveTopics`, `visualPlan`)
+- der Abgleich: zwei neue Tabellen, `index.md`, `beziehungen.md`, `selbstfuersorge.md`, `README.md` und drei Skripte (`pruefe-abgleich.mjs`, `kennzahlen.mjs`, `bedienung.mjs`; `verneinung.mjs` übernimmt die Seiten aus `kennzahlen.mjs`)
+- in diesem Bericht nur dieser Block
+
+Keine Prüfstufe ist «erledigt»; der Status bleibt in allen Zeilen «offen». Der Block «Freigabe 2b eintragen» steht darunter.
+
+**Auftrag im Website-Ordner:** `BAUAUFTRAG-ETAPPE-2C1.md` lag im Stamm von `main` (`e693bde`, hochgeladen als «BAUAUFTRAG-ETAPPE-2C1 (1).md»). Die Datei liegt unverändert in diesem Ordner (`78f3da3`; `cmp` und SHA-256 gleich, nur der Dateiname ohne « (1)»). Sie ist aus dem Stamm von `main` entfernt (`d8f419e`, direkter Push auf `main`).
+
+### Etappe 2c-1: Stand je Abschnitt des Auftrags
+
+| Abschnitt | Stand | Beleg |
+| --- | --- | --- |
+| 1 Entscheide | umgesetzt | Reihenfolge: `genesung` und `unterstuetzung` gebaut, alle Einstiege der Startseite sind gebaut. Bild: `genesung` › `verlauf` Abbildung 1 «Ein neuer Trieb» (`v-ge-trieb`). Bücher: alle empfohlenen Titel sichtbar nach Zielgruppe (`unterstuetzung` › `buecher`, sechs Zwischentitel); die vier kritisch eingeordneten Titel mit Einordnung in der Vertiefung «Historisch einflussreich oder kritisch einzuordnen», ohne Bezugslinks. Angebote nur mit Link zur Website, ohne Telefonnummern und Telefonzeiten. Zahlen 93 % und 50 % als hervorgehobener Text (`dl.bl-zahlen`), kein Diagramm. Garten-Text nicht wiederholt, Verweissatz auf `rolle#anbieten`. `navLabel` beider Seiten `null` |
+| 2 Regeln | umgesetzt, Rest siehe «Zur Prüfung» | Einfache Sprache und klares Subjekt, zum Beispiel «Die Fachstelle ist eine Anlaufstelle …» statt «Sie ist …», «Die Bereiche sind eine Orientierung …»; keine Semikolons im Fliesstext (`kennzahlen.mjs`: 0 und 0; im Bestand 7 und 7). Absicherungen wie im Bestand: «Studienzahlen beschreiben Gruppen und keine persönliche Prognose.», «Veränderungen können früher eintreten.», «Was davon relevant ist und welche Behandlung passt, braucht eine individuelle fachliche Abklärung.»; kein Heilungsversprechen («Zum Begriff «Heilung»» steht in einer Vertiefung). Verantwortung im Wortlaut von `rolle`: «Für Behandlung und Genesung sind Sie nicht verantwortlich.» (`genesung` › `freiwillig`); kein «allein» bei Erkrankung, Behandlung oder Genesung. Verlinkt statt wiederholt: `rolle#anbieten`, `index#beratung` (zweimal), `selbstfuersorge#beratung`, `selbstfuersorge#warnsignale`, `kommunizieren`. Keine Links auf Entwurfsseiten (Build ohne `link-target`); der Satz zu Begleiterkrankungen steht ohne Link, der Link ist im Abgleich für `diagnose` (Etappe 2) vorgemerkt (`genesung.md` Nr. 163). Keine Nummer, kein `tel:`, kein Notfallblock; Links auf `/soforthilfe` entfallen (`unterstuetzung.md` Nr. 49 bis 51, `genesung.md` Nr. 223). Quellen im Block «Quellen zu dieser Seite» am Ende von `genesung`; die Quelle der Abbildung steht bei der Abbildung. Länge: `genesung` 1147, `unterstuetzung` 1057 Wörter im Lesefluss (Ziele etwa 1800 und 1500). Vertiefungen als Akkordeon des Profils, ohne Skript offen (3 von 3, 1 von 1) und im Druck vollständig (3 von 3, 1 von 1) |
+| 3 `genesung` | umgesetzt, Gliederung wie vorgeschlagen, eine Abweichung | Kopf: «Hoffnung ist bei Borderline berechtigt. …» und die drei Kernsätze als Liste. 01 `forschung`: Kernaussage zuerst («Langzeitstudien sprechen klar gegen das alte Bild einer hoffnungslosen Entwicklung. …»), dann 93 %, 50 %, 10 Jahre mit Erklärung, direkt danach «Untersucht wurden 290 Erwachsene, die zu Studienbeginn stationär behandelt wurden.» und «Was die Zahlen nicht sagen». 02 `begriffe`: drei Begriffe als Begriffsliste, «Zum Begriff «Heilung»» als Vertiefung. 03 `verlauf`: Abbildung 1 direkt nach dem ersten Absatz; danach «Weniger hilfreich / Tragfähiger» als `.puk-say` ohne das Satzpaar der Abbildung, die vier vorgemerkten Sätze aus `beziehungen` unter «Ein realistischer Massstab für Veränderung», «Was Sie tun können». 04 `einfluesse`: fünf Bereiche als Begriffsliste «ohne Reihenfolge, keine Formel und keine persönliche Prognose»; «Sozialberatungen können unterstützen.» bleibt; Begleiterkrankungen als Satz ohne Link. 05 `freiwillig`: kurz, Verweissatz auf `rolle#anbieten`; sichtbar die Selbstfrage und «Ihre Gesundheit zählt für sich, nicht erst als Beitrag zur Genesung einer anderen Person.»; Eltern Minderjähriger und Beistandschaft in einer Vertiefung. Abweichung: Titel von 05 «Freiwillige Unterstützung und eigene Grenzen» (Handout-Titel des Bestands) statt «Was Sie anbieten können und was nicht Ihre Aufgabe ist», weil dieser Titel schon auf `rolle` steht und der Verweissatz sonst denselben Titel zweimal nennt. Entfallen mit Grund: «Materialien & Infografiken», Lesezeit, «Schritt 7 von 8» (Abgleich «entfällt»); die Garten-Bereiche «zusammengeführt» mit Ort `rolle#anbieten` |
+| 4 Abbildung 1 | umgesetzt | Titel, Kernaussage, Kurztext (Semikolon als Punkt), die zwei Sätze der Szene, Kurzbeschreibung, «Grenzen des Bildes» (drei Teile) und Quelle im Wortlaut des Auftrags (Abgleich prüft jede Fassung auf der gebauten Seite). Zeichnung aus Anhang A, Pfade unverändert; verfeinert ist nur der Bildausschnitt: `viewBox` «60 44 530 214» statt «0 40 640 220», die leeren Ränder links und rechts entfallen, damit die Zeichnung schmal grösser ist (bei 360 px Fensterbreite 320 × 129 px; mit dem alten Ausschnitt wäre der gezeichnete Teil etwa 265 px breit). Fest bleibt: abgefallenes Blatt neben dem Topf, neuer Trieb oben, Giesskanne daneben, sie giesst nicht. Nur Profil-Klassen, keine Hexwerte, keine `style`-Attribute. Schmal stehen die Sätze untereinander über der Zeichnung. `resonance` und `approvalStatus` «ausstehend» wie im Auftrag |
+| 5 `unterstuetzung` | umgesetzt, Gliederung wie vorgeschlagen | Kopf aus `/beratung`. 01 `beratung`: Fachstelle mit vier Angeboten als Begriffsliste, «Die Fachstelle ist kein Krisendienst und keine Therapie.» sichtbar, Kontakt und Bedingungen über den Verweissatz auf `index#beratung`, «Was Sie vorab klären können» mit den drei Fragen, die die Startseite nicht beantwortet; Pro Mente Sana mit Link; die «Nächsten Schritte» als Verweissätze auf `selbstfuersorge#warnsignale` und `kommunizieren`. 02 `austausch`: Stand by You Schweiz (früher VASK Schweiz, HelpLine von Angehörigen für Angehörige, ohne Nummer und Zeiten) und VASK Zürich (Treffpunkte Zürich und Winterthur, ohne Termine); je Link. 03 `selbsthilfe`: Selbsthilfe Schweiz mit Link. 04 `kantone`: Regional-Hinweis. 05 `buecher`: alle empfohlenen Titel nach Zielgruppe mit Autorin oder Autor, Verlag und Jahr (wo der Bestand eines nennt), ein bis zwei Sätzen und «Für: …»; Hinweis zu den Empfehlungen; «Viele Bücher sind auch in Bibliotheken verfügbar …»; die vier kritisch eingeordneten Titel in der Vertiefung. Bezugslinks zu Ex Libris entfallen. «Einordnung dieser Website» im Abgleich «verschoben» mit Ort «ueber (Etappe 3)» (`unterstuetzung.md` Nr. 37, 38, 40; Nr. 39, die offene Freigabe des Bestands, entfällt als Meta-Text) |
+| 6 `index`, `site.config.json` | umgesetzt | Nach «Zugewandt und klar sprechen»: «Ich frage mich, ob es je besser wird.» mit «Genesung: Hoffnung, unterschiedliche Verläufe und Grenzen des eigenen Einflusses verbinden.» und «Ich suche Beratung oder Austausch mit anderen Angehörigen.» mit «Unterstützung finden: Beratung, Austausch mit anderen Angehörigen und Bücher.»; der Platzhalter «Weitere Einstiege folgen» ist weg; sonst ist `index` unverändert (`git diff --word-diff`: nur die Liste der Einstiege). `genesung` und `unterstuetzung`: `status` «published», `primaryTask`, `description`, `sensitiveTopics` (`genesung` keine; `unterstuetzung` «akute-krise», weil die Seite «kein Krisendienst», «seelische Krisen» und «Krisenhinweise» nennt; ohne den Eintrag blockiert das Gate `safety-contract`), `visualPlan` mit einer Zeile je Abschnitt (`genesung` 5 + Quellenblock; `unterstuetzung` 5, die Seite hat keinen Quellenblock, weil der Bestand dieser drei Seiten keine Quellen nennt); die Seitenplatzhalter sind weg |
+| 7 Technische Reste | umgesetzt | Mindesthöhe: `puk-site-anchor-end` ist auf allen sieben Seiten weg (`grep` findet die Klasse in `content/` nicht mehr); Sprung über die Kapitelübersicht zum letzten Abschnitt: Tabelle unten. Druck: Regel in `borderline.css` (Titel nicht allein am Seitenende); sie wirkt erst, seit das Abschnittsraster im Druck im Blockfluss steht. Vorher und nachher gemessen, Tabelle unten. Wortlaut der Seiten unverändert (sichtbarer Text der sieben Seiten vorher und nachher gleich) |
+| 8 Danach | bestanden, Abweichungen siehe unten | Prüfungen nach Abschnitt 8 unten. Nicht möglich: die Ziele der externen Links online aufrufen (die Netzwerkrichtlinie dieser Umgebung sperrt die vier Hosts); geprüft ist, dass jede Adresse der Website-Adresse im Bestand entspricht |
+
+### Etappe 2c-1: Prüfungen nach Abschnitt 8
+
+- **`node tools/build.mjs`:** 0 blockierend, 8 Hinweise: 1 × `visual-approval` (`v-ge-trieb`), 5 × `placeholder-approval`, `site-url`, `review-report`.
+- **`node tools/gate.mjs --selftest`:** 53/53 bestanden.
+- **`node tools/gate.mjs --production`:** 7 blockierend und 1 Hinweis (`site-url`), wie erwartet: 1 × `visual-approval` («Ein neuer Trieb»), 5 × `placeholder-approval` (`diagnose`, `behandlung`, `fragen`, `quellen`, `ueber`), 1 × `review-report`.
+- **`node abgleich/pruefe-abgleich.mjs`:** 5342 Zeilen, 0 ohne Fundstelle (vorher 4509; dazu 508 Zeilen in `genesung.md`, 323 in `unterstuetzung.md`, 2 in `index.md`). Vor dem Nachführen der bestehenden Zeilen meldete es 17 Zeilen ohne Fundstelle (Platzhalter auf `index`, Zitate in Bemerkungen).
+- **Bildschirmfotos, angesehen:** Abbildung 1 bei 1280 und 360 px, Standard und «kontrast» (vier Fotos); jede Vertiefung offen bei 1280 und 360 px in beiden Themes (`genesung`: «Zum Begriff «Heilung»», «Eltern Minderjähriger und Beistandschaft», «Quellen zu dieser Seite», «Grenzen des Bildes»; `unterstuetzung`: «Historisch einflussreich oder kritisch einzuordnen»), dazu Kopf, Zahlen und Bücherliste.
+  - «Ein neuer Trieb»: breit steht der Satz «Eine schwierigere Phase entwertet alles.» über der Pflanze, «Schwierigere Phasen kommen vor und müssen nicht alles kippen.» über der Giesskanne. Schmal stehen beide Sätze untereinander über der Zeichnung; die Zeichnung ist dann 320 × 129 px, Blatt, Trieb und Giesskanne sind erkennbar.
+  - «kontrast»: Linien dunkler, die Fläche des Fenstersimses und der Blätter bleibt, nichts verschwindet.
+  - Vertiefungen: Titel bei 360 px zwei- bis dreizeilig ohne Abschneiden; geöffnet vollständig.
+- **Überlauf:** 320, 360, 375, 414, 640, 768, 1024, 1280 und 1440 px, Vertiefungen zu und offen; `genesung`, `unterstuetzung` und `index` in beiden Themes, die übrigen sieben Seiten im Standard-Theme (234 Messungen): kein waagrechter Überlauf, kein Element breiter als das Fenster. Zoom 200 % (640 px bei Faktor 2 und 1280 px mit Schriftgrösse 200 %), alle zehn Seiten: 0 px Überlauf.
+- **Kontraste:** alle Textelemente mit eigenem Text in `main`, Kopf und Fusszeile von `genesung`, `unterstuetzung` und `index`, beide Themes, 1280 und 360 px: keines unter AA; tiefster Wert 4,71 : 1 (Link der Absenderin). Linien der Zeichnung gegen den Hintergrund der Figur 4,71 : 1 (Standard) und 10,08 : 1 («kontrast»), Linien gegen die hellblaue Fläche 3,59 : 1 und 7,70 : 1. Keine festen Farben in SVG, keine `style`-Attribute.
+- **Tastatur** (1280 px, reduzierte Bewegung):
+  - Tabstopps bis zur Fusszeile: `genesung` 20, `unterstuetzung` 21, `index` 17 (vorher 15, zwei neue Einstiege); jeder mit sichtbarem Fokus und im Fenster; der erste ist «Zum Hauptinhalt».
+  - Reihenfolge wie beim Lesen: Kopf, Navigation, Absenderin, Kapitelübersicht, dann Vertiefungen und Links im Text, zuletzt «Quellen zu dieser Seite».
+  - Vertiefungen: Enter öffnet 3 von 3 und 1 von 1, Leertaste schliesst sie; «Grenzen des Bildes» öffnet mit Enter.
+  - Nach dem Laden läuft keine Animation.
+- **Druck:** alle Panels und «Grenzen des Bildes» im Druck sichtbar; PDF von `genesung` (11 Seiten), `unterstuetzung` (10) und `kommunizieren` (21; je A4 ohne Rand) erzeugt und angesehen; externe Links zeigen im Druck die Adresse.
+- **Ohne Skript:** 3 von 3 und 1 von 1 Panels sichtbar.
+- **`node abgleich/bedienung.mjs`:** `genesung` 20 Tabstopps, 14 152 px bei 360 px, Abbildung 766 px; `unterstuetzung` 21 Tabstopps, 13 181 px; `index` 17 Tabstopps, 4964 px. Übrige Seiten ohne den Leerraum unter dem Quellenblock: `verstehen` 16 833, `beziehungen` 15 684, `grenzen` 17 093, `rolle` 25 771, `selbstfuersorge` 21 631, `kommunizieren` 25 246, `krise` 16 306 px; Tabstopps unverändert.
+- **Externe Links** (`unterstuetzung`): `https://www.promentesana.ch`, `https://www.stand-by-you.ch`, `https://www.vaskzuerich.ch`, `https://www.selbsthilfeschweiz.ch`. Jede Adresse ist die Website-Adresse des Bestands (`/beratung`); Linktext ist die Adresse, kein `target="_blank"`. **Nicht prüfbar:** Ob die Ziele heute erreichbar und die offizielle Website sind, liess sich hier nicht aufrufen (Netzwerkrichtlinie: `CONNECT` 403, Namensauflösung gesperrt). Das prüft die Fachstelle mit den Angaben der Angebote (Liste unten).
+- **Nicht prüfbar in dieser Umgebung:** reale Screenreader-Läufe, Hardwaretastatur und Touch.
+
+### Etappe 2c-1: Sprung zum letzten Abschnitt und Druck (Abschnitt 7)
+
+**Sprung über die Kapitelübersicht** (letzter Eintrag, Klick, danach Abstand der Abschnittsoberkante vom Fensterrand):
+
+| Fenster | `verstehen` | `beziehungen` | `grenzen` | `rolle` | `selbstfuersorge` | `kommunizieren` | `krise` | `genesung` | `unterstuetzung` |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 1280 × 900 | 24 px | 24 px | 24 px | 24 px | 24 px | 24 px | 24 px | 24 px | 24 px |
+| 1920 × 1080 | 24 px | 24 px | 24 px | 24 px | 24 px | 24 px | 24 px | 24 px | 24 px |
+| 360 × 800 | 24 px | 24 px | 24 px | 24 px | 24 px | 24 px | 24 px | 24 px | 24 px |
+
+Der letzte Abschnitt der Kapitelübersicht ist auf jeder Seite ein Inhaltsabschnitt, und darunter folgen Quellenblock und Fusszeile. Deshalb erreicht der Sprung den Abschnitt auch ohne Mindesthöhe; 24 px ist der Abstand des Profils über dem Ziel. `index` hat keine Kapitelübersicht.
+
+**Druck: Zwischentitel allein am Seitenende.** Gemessen mit PDFs aus Chromium, je Seite und Einstellung die letzte Zeile jeder Seite gegen alle Titel in `main` (h2 bis h5). «Vorher» ist der Stand `ed277d9` (alte `borderline.css` und, auf den sieben Seiten, die alte gebaute Seite).
+
+| Prüfung | vorher | nachher |
+| --- | --- | --- |
+| `kommunizieren`, 56 Einstellungen (A4 und Letter; Rand 0 bis 25 mm; Skalierung 70 bis 100 %) | 79 Titel allein am Seitenende, davon «Die sechs Stufen im Detail» zweimal (A4 ohne Rand, Seite 7; A4, Rand 12,7 mm, 90 %) | 0 |
+| übrige neun Seiten, je 6 Einstellungen (A4 ohne Rand, 10, 15, 20 mm; Letter ohne Rand, 12 mm) | auf 34 von 54 Seiten-Einstellungen mindestens ein Titel allein, zum Beispiel «Wenn Gespräche kippen», «Es wird eng.», «R · Verstärken», «Was die Zahlen nicht sagen» | 0 von 60 (alle zehn Seiten) |
+
+**Ursache und Lösung:** Eine Regel nur mit `break-after: avoid` (erster Versuch) änderte nichts: Im Druck ist das Abschnittsraster des Profils einspaltig, und zwischen Rasterzeilen beachtet Chromium `break-after` nicht. Die Regel stellt den Abschnitt deshalb im Druck auf Blockfluss um (Titelspalte über dem Text, Abstand `--space-8`), gilt für alle Titel in `main` und für Begriffe in Begriffslisten (`dt`) und hält in «Zwei Sichten» (`beziehungen`, ein kleines Raster je Schritt) jeden Schritt zusammen. Sie wirkt nur im Druck; am Bildschirm ändert sich nichts.
+
+### Etappe 2c-1: Wörter im Lesefluss (Zählweise C1)
+
+C1 wie in den Selbstprüfungen 2b bis Freigabe 2b: innerste `p`, `li`, `dt`, `dd` in `<main>`, ohne SVG, Text nur für Screenreader, Kapitelübersicht, Kicker, Eyebrow, «Abbildung n · …», Quellenzeilen und den Block «Quellen zu dieser Seite»; «im Lesefluss» ohne die Panels der Akkordeons, «Grenzen des Bildes» zählt mit. Skript der bauenden Sitzung im Browser; am Stand `ed277d9` ergibt es genau die Werte der Freigabe 2b (`index` 221, `verstehen` 1502, `beziehungen` 1452, `grenzen` 1508, `rolle` 2627, `selbstfuersorge` 2130, `kommunizieren` 2452, `krise` 1523).
+
+| Seite | Kopf | Abschnitte (C1 im Lesefluss) | C1 im Lesefluss | Ziel | C1 mit Vertiefungen | `kennzahlen.mjs` gesamt (alt → neu) |
+| --- | ---: | --- | ---: | ---: | ---: | --- |
+| `genesung` | 55 | `forschung` 184 · `begriffe` 192 · `verlauf` 274 · `einfluesse` 245 · `freiwillig` 197 | **1147** | etwa 1800 | 1224 | 1620 → 1475 |
+| `unterstuetzung` | 39 | `beratung` 205 · `austausch` 88 · `selbsthilfe` 35 · `kantone` 42 · `buecher` 648 | **1057** | etwa 1500 | 1270 | 2010 → 1338 |
+| `index` | 23 | `einstiege` 96 → 107 · `beratung` 73 · `haltung` 29 | 221 → 232 | – | gleich | 302 → 329 |
+
+Beide Ziele sind erreicht. «Alt» bei `unterstuetzung` ist die Summe von `/fachstelle`, `/beratung` und `/buchempfehlungen`. Absicherungen je 100 Wörter (`kennzahlen.mjs`): `genesung` 1,98 → 2,17, `unterstuetzung` 0,90 → 1,12. Semikolons im Fliesstext 7 → 0 und 7 → 0. Sätze mit Verneinung (`verneinung.mjs`): `genesung` 37 von 217 (17 %) → 45 von 158 (28 %); `unterstuetzung` 28 von 313 (9 %) → 16 von 193 (8 %). Auf `genesung` tragen die Verneinungen meist eine Absicherung des Bestands weiter («keine persönliche Prognose», «keine feste Wartezeit», «nicht automatisch», «nicht verantwortlich»). Die sieben übrigen Seiten haben dieselben Werte wie nach Freigabe 2b (sichtbarer Text unverändert).
+
+### Etappe 2c-1: Verweise im Text
+
+Keine. Auf `genesung` und `unterstuetzung` steht keine Handlungsanleitung für eine akute Lage; der Bestand nennt bei den Links auf «Akute Hilfe und Notfallkontakte» und `/soforthilfe` keine Handlungsanleitung (`genesung.md` Nr. 223, `unterstuetzung.md` Nr. 49 bis 51). Der Zuständigkeitsverweis steht wie auf allen Seiten in der Fusszeile. `unterstuetzung` hat `sensitiveTopics` «akute-krise» nur wegen der Stichwörter (Gate `safety-contract`), nicht für einen Verweis im Text.
+
+### Etappe 2c-1: Visualisierungs-Check «Ein neuer Trieb»
+
+Selbstprüfung, keine Prüfstufe. E = erfüllt · T = teilweise · N = nicht erfüllt · – = nicht anwendbar.
+
+| Nr. | Prüfpunkt | `v-ge-trieb` | Beleg | Massnahme |
+| --- | --- | --- | --- | --- |
+| 1 | Plan liegt vor, Seite entspricht ihm | E | Build ohne Hinweis `visual-plan`; `data-visual-id` «v-ge-trieb», `data-visual-type` «illustration» wie im Plan | – |
+| 2 | Zeile je Abschnitt; Begründungen für Text passen | E | `genesung` 5 Abschnitte + Quellenblock, 6 Zeilen; `unterstuetzung` 5 und 5. Zum Beispiel `v-ge-forschung`: «… Ein Balkendiagramm würde zwei Werte vergleichen, die Verschiedenes messen (Remission und Recovery), und die Einschränkungen von den Zahlen trennen.»; `v-ge-einfluesse`: «… Eine Figur mit fünf gleichen Feldern wäre ein Kartenraster …» | – |
+| 3 | Prüffrage beantwortet und eingelöst | E | `understood`: «Dass Rückschritt und neues Wachsen zugleich da sein können: Das abgefallene Blatt und der neue Trieb an derselben Pflanze zeigen auf einen Blick, dass eine schwierigere Phase das Erreichte nicht aufhebt. …»; die Zeichnung zeigt beides an einer Pflanze | – |
+| 4 | Kernaussage und Erklärtext; Hauptaussage nicht nur in der Vertiefung | E | Kernaussage «Eine schwierigere Phase bedeutet nicht, dass alles Erreichte verloren ist.» und Kurztext sichtbar; die Vertiefung nennt nur Grenzen des Bildes | – |
+| 5 | Ansatzpunkt (B, C, G) | – | Illustration (Muster D), kein Erklärmodell | – |
+| 6 | Mechanismus nicht doppelt gezeigt | T | einzige Abbildung der Seite; Zahlen, Begriffe und Bereiche als Text. Die Giesskanne trägt dieselbe Idee wie «Ein Stück Weg» auf `rolle` («Sie können begleiten. Genesung herstellen können Sie nicht.»); beide kommen aus dem Handout «Der Garten». Der Schwerpunkt hier ist der Rückschritt | Fachstelle (entschieden), R2 |
+| 7 | Kartenraster-Check | E | keine Kastenreihe; Begriffslisten, Listen und `.puk-say`; die Bücherliste ist eine Liste mit Trennlinien (Gate ohne `card-grid`) | – |
+| 8 | Anordnung und Formen tragen Bedeutung | E | Das Blatt liegt neben dem Topf, der neue Trieb wächst oben an derselben Pflanze; die Giesskanne steht daneben, Ausguss zur Pflanze hin, kein Wasser | – |
+| 9 | Verteilt, keine Textwand | E | eine Abbildung in der Mitte der Seite (Abschnitt 03); 1147 Wörter im Lesefluss (C1), 14 152 px bei 360 px; gegliedert durch Kapitelübersicht, hervorgehobene Zahlen, Begriffslisten, `.puk-say` und drei Vertiefungen | – |
+| 10 | Vereinfacht, nicht verfälscht; Grenzen benannt; Quelle | E | «Grenzen des Bildes»: «Das Bild ist eine Metapher, keine Vorhersage eines Genesungsverlaufs. Hilfreiche Bedingungen können Entwicklung unterstützen. Wie und wann ein Mensch sich verändert, lässt sich daraus nicht vorhersagen. Angehörige können Genesung nicht herstellen.»; Quelle im Wortlaut des Auftrags | – |
+| 11 | Ohne Animation, Aufklappen und Skript verständlich | E | SVG ohne Animation; Sätze, Kernaussage und Kurztext sind HTML-Text | – |
+| 12 | Bei 320 px lesbar; Textalternative vollständig | E | kein Überlauf bei 320 und 360 px; Sätze schmal untereinander; Kurzbeschreibung im Wortlaut des Auftrags, über `aria-describedby` verbunden | – |
+| 13 | Theme «kontrast» geprüft | E | Fotos bei 1280 und 360 px; Linien 10,08 : 1, gegen die Fläche 7,70 : 1; keine festen Farben | – |
+| 14 | Inhalt fachlich freigegeben | N | `approvalStatus` «ausstehend»; Gate production: `visual-approval` | Fachstelle |
+| 15 | Bildsprache passt; Wirkung (`resonance`) eingelöst | E | «Entlastung und realistische Hoffnung: Ein Rückschritt macht nicht alles zunichte, und das Wachsen muss ich nicht machen.»: Blatt und Trieb zeigen den ersten Teil, die Giesskanne, die nicht giesst, den zweiten | – |
+| 16 | Ein Bild, eine Idee; Beschriftungen nennen Erleben, nicht Bildteile | T | zwei gedachte Sätze, kein Bildteil beschriftet, keine Liste, die das Bild übersetzt. Das Bild trägt aber zwei Ideen (Rückschritt; begrenzter Einfluss). Die Sätze sprechen nur die erste an; die zweite erschliesst sich ohne Text erst beim zweiten Hinsehen | R2 |
+| 17 | Keine ungewollten Bedeutungen | T | Die betroffene Person erscheint nicht als Gefahr oder Defekt. Möglich sind: die Pflanze als passives Wesen, das gepflegt wird (der Garten des Bestands hat dieselbe Nebenbedeutung); die ruhende Giesskanne als «Angehörige tun nichts» statt «Angehörige bieten Bedingungen an». Das abgefallene Blatt kann nach Verlust aussehen; der neue Trieb daneben gleicht das aus | R2 |
+
+**Freundin-Test (bauende Sitzung):** besteht ihn mit Einschränkung. Eine Pflanze, die ein Blatt verliert und oben weiterwächst, versteht man ohne Erklärung; eine Angehörige könnte damit zeigen, dass ein Rückschritt nicht alles zunichtemacht. Die Giesskanne versteht man als «ich kann giessen, wachsen muss sie selbst» erst zusammen mit dem Text.
+
+### Etappe 2c-1: Neue Sätze zur Freigabe
+
+Alle Sätze von `genesung`, `unterstuetzung` und der neuen Einstiege auf `index`, die nicht wörtlich im Bestand stehen (Vergleich je Satz mit dem Bestand der Seite, Skript der bauenden Sitzung), dazu der Bildtitel und die neuen Zwischentitel. **Art:** neu · Verdichtung · umformuliert · gekürzt · Verweissatz · Auftrag · Satzzeichen (nur Satzzeichen, Gross- und Kleinschreibung, «und» statt «&» oder Satzteilung). **Abgleich:** g = `genesung.md`, u = `unterstuetzung.md`, i = `index.md`.
+
+**`genesung`**
+
+| Nr. | Ort | Satz | Art | Abgleich |
+| ---: | --- | --- | --- | --- |
+| 1 | Kopf, H1 | «Genesung ist möglich und kann unterschiedlich aussehen» | Satzzeichen (Gedankenstrich als «und») | g1 |
+| 2 | Kopf | «Wege, Tempo und Bedeutung von Veränderung sind individuell. Weder eine Diagnose noch eine einzelne Phase legt den weiteren Verlauf fest.» | Satzzeichen (Semikolon) | g3 |
+| 3 | Kopf, Kernsatz | «Besserung ist möglich. Verlauf und Tempo unterscheiden sich von Mensch zu Mensch.» | Satzzeichen (Semikolon) | g66 |
+| 4 | `forschung`, «10 Jahre» | «Veränderungen können früher eintreten.» | Satzzeichen (Semikolon; «Verläufe bleiben unterschiedlich» trägt `verlauf`) | g255 |
+| 5 | `forschung` | «93 %», «50 %» | Satzzeichen (Leerschlag) | g75, g78 |
+| 6 | `begriffe` | «Symptomatische Remission, Alltag und Teilhabe sowie persönliche Recovery beschreiben unterschiedliche Aspekte. Sie müssen sich nicht gleichzeitig verändern.» | Satzzeichen (zwei Sätze) | g282 |
+| 7 | `begriffe`, «Alltag und Teilhabe» | «Zu einer umfassenderen Genesung gehören auch Stabilität im Alltag und mehr Lebensqualität.» | Verdichtung | g100 |
+| 8 | `begriffe` | «Kein einzelner Begriff beschreibt den ganzen Genesungsweg.» | gekürzt (Rest im Satz danach) | g312 |
+| 9 | `verlauf`, Abbildung 1 | «Abbildung 1 · Ein neuer Trieb» | Auftrag | g498 |
+| 10 | `verlauf`, Abbildung 1, Kernaussage | «Eine schwierigere Phase bedeutet nicht, dass alles Erreichte verloren ist.» | wörtlich (Handout), hier zur Übersicht | g354 |
+| 11 | `verlauf`, Abbildung 1, Kurztext | «Genesungswege unterscheiden sich. Schwierigere Phasen können vorkommen und müssen ernst genommen werden. Sie sind weder vorgeschrieben noch ein Beleg für fehlenden Willen.» | Auftrag (Semikolon als Punkt) | g348, g349 |
+| 12 | `verlauf`, Abbildung 1, Szene | «Eine schwierigere Phase entwertet alles.» · «Schwierigere Phasen kommen vor und müssen nicht alles kippen.» | Auftrag (Bestand mit Schlusspunkt) | g121, g125 |
+| 13 | `verlauf`, Abbildung 1 | «Grenzen des Bildes» | Bezeichnung des Profils | g499 |
+| 14 | `verlauf`, Abbildung 1, Vertiefung | «Das Bild ist eine Metapher, keine Vorhersage eines Genesungsverlaufs.» | Auftrag («Der Garten» als «Das Bild») | g44 |
+| 15 | `verlauf`, Abbildung 1, Kurzbeschreibung | «Zeichnung: Eine Topfpflanze steht auf einem Fenstersims. Ein Blatt ist abgefallen und liegt neben dem Topf, oben wächst ein neuer Trieb. Daneben steht eine Giesskanne. Über der Zeichnung stehen die Sätze «Eine schwierigere Phase entwertet alles.» und «Schwierigere Phasen kommen vor und müssen nicht alles kippen.»» | Auftrag | g500 |
+| 16 | `verlauf`, Abbildung 1, Quelle | «Eigene didaktische Darstellung nach den Handouts «Veränderung verläuft unterschiedlich» und «Der Garten»; Bezug: Zanarini et al. (2012); NICE CG78 (2009).» | Auftrag | g64 |
+| 17 | `verlauf`, Gegenüberstellung | «Jetzt muss es doch endlich besser werden.» · «Besserung ist möglich und oft wahrscheinlich.» · «Wenn genug Wille da ist, geht es schnell.» · «Tempo und Zeitpunkt bleiben begrenzt steuerbar.» | Satzzeichen (Schlusspunkt, Guillemets) | g120, g124, g122, g126 |
+| 18 | `verlauf`, «Was Sie tun können» | «Bauen Sie auch in einer besseren Phase keinen Zeit- oder Erfolgsdruck auf.» | umformuliert (Aufforderung) | g113 |
+| 19 | `verlauf`, «Was Sie tun können» | «Halten Sie für eigene Grenzen und professionelle Kontakte einen kleinen Plan bereit.» | umformuliert (Aufforderung) | g114 |
+| 20 | `einfluesse`, Titel | «Was Genesung beeinflussen kann» | Auftrag (Gliederung) | g138 |
+| 21 | `einfluesse` | «Die folgenden Bereiche sind eine Orientierung ohne Reihenfolge, keine Formel und keine persönliche Prognose.» | gekürzt (ohne «redaktionelle») | g139 |
+| 22 | `einfluesse` | «Für Borderline selbst sind Medikamente keine Kernbehandlung. Änderungen nur mit der behandelnden Fachperson.» | Satzzeichen (Semikolon) | g145 |
+| 23 | `einfluesse` | «Peer-Unterstützung heisst: Unterstützung durch Menschen mit eigener Erfahrung.» | neu (Erklärung eines Fachworts) | g501 |
+| 24 | `einfluesse` | «Die fünf Bereiche sind eine eigene Zusammenstellung der Fachstelle aus Behandlungsleitlinien, kein geprüftes Modell.» | Verdichtung | g153, g154 |
+| 25 | `einfluesse`, «Was Sie tun können» | «Praktische oder strukturelle Belastungen, zum Beispiel beim Wohnen oder bei den Finanzen, lassen sich oft nicht innerhalb der Familie lösen. Sozialberatungen können unterstützen.» | Satzzeichen (Klammer, Semikolon) | g411 |
+| 26 | `freiwillig` | «Sie können auf Wunsch etwas anbieten, zum Beispiel Absprachen, Informationen oder Begleitung.» | Verdichtung | g431 |
+| 27 | `freiwillig` | «Fragen Sie die Person selbst, welche Unterstützung oder welcher Abstand hilfreich wäre.» | umformuliert (Aufforderung) | g133 |
+| 28 | `freiwillig` | «Die betroffene Person entscheidet mit.» | Satzzeichen (Semikolon; der Rest steht bei «Was Sie tun können») | g129 |
+| 29 | `freiwillig` | «Für Behandlung und Genesung sind Sie nicht verantwortlich.» | Auftrag (Wortlaut von `rolle`) | g469 |
+| 30 | `freiwillig` | «Wie Sie Ihre Rolle klären können, steht auf der Seite «Ihre Rolle» im Abschnitt «Was Sie anbieten können und was nicht Ihre Aufgabe ist».» | Verweissatz | g128 |
+| 31 | `freiwillig` | «Ihre Gesundheit zählt für sich, nicht erst als Beitrag zur Genesung einer anderen Person.» | Auftrag | g483 |
+| 32 | `freiwillig` | «Allgemeine Beratung ist auch ohne Zustimmung der betroffenen Person möglich. Auskünfte über ihre Behandlung gibt es grundsätzlich nur mit ihrer Zustimmung. Gesetzliche Ausnahmen gelten etwa bei Minderjährigen oder fehlender Urteilsfähigkeit.» | Auftrag (Semikolons als Punkte) | g482 |
+| 33 | `freiwillig` | «Wie die Fachstelle Angehörigenarbeit der PUK berät, steht auf der Startseite im Abschnitt «Beratung für Sie».» | Verweissatz (Wortlaut von `krise`, freigegeben) | g502 |
+| 34 | `freiwillig` | «Wo Sie Unterstützung für sich finden, steht auf der Seite «Auf sich achten» im Abschnitt «Nicht allein tragen».» | Verweissatz (Wortlaut von `grenzen`, Freigabe 2b, Satz 5) | g317, g360 |
+| 35 | `freiwillig`, Vertiefung | «Eltern Minderjähriger und Beistandschaft» | neu (Titel) | g503 |
+| 36 | `freiwillig`, Vertiefung | «Diese Hinweise richten sich an Angehörige erwachsener Personen.» | umformuliert («Dieses Blatt» als «Diese Hinweise») | g442 |
+| 37 | `freiwillig`, Vertiefung | «Angehörige ersetzen keine Behandlung und müssen sie nicht koordinieren, ausser etwa als Eltern Minderjähriger oder als Beistand.» | Satzzeichen (Gedankenstrich, «als») | g459 |
+| 38 | Kapitelübersicht und Kicker | «Genesung» (Eyebrow), «Forschung», «Begriffe», «Verläufe», «Einflüsse», «Ihre Unterstützung» | Bezeichnungen | g0, g71, g504 bis g507 |
+
+**`unterstuetzung`**
+
+| Nr. | Ort | Satz | Art | Abgleich |
+| ---: | --- | --- | --- | --- |
+| 39 | Kopf | «Wenn Belastung, Unsicherheit oder Erschöpfung zu gross werden, kann es entlasten, nicht nur in der Familie oder im eigenen Umfeld nach Lösungen zu suchen.» | umformuliert («im eigenen System») | u54 |
+| 40 | Kopf | «Hier finden Sie Beratung, Selbsthilfe und weitere Anlaufstellen für Angehörige in der Schweiz, dazu Bücher.» | umformuliert («dazu Bücher») | u55 |
+| 41 | `beratung`, Zwischentitel | «Fachstelle Angehörigenarbeit der PUK» | Bezeichnung (Schreibweise der Startseite) | u1, u75 |
+| 42 | `beratung` | «Die Fachstelle ist eine Anlaufstelle für Angehörige, die ihre Rolle klären, Belastung einordnen und passende nächste Schritte finden möchten.» | umformuliert (Subjekt) | u13 |
+| 43 | `beratung`, Angebote | «Ein Gespräch zu Ihrer Rolle, Ihrer Belastung oder einer konkreten Entscheidung.» | umformuliert (Angebot statt Frage) | u15 |
+| 44 | `beratung`, Angebote | «Verständliche Informationen und Materialien zur Erkrankung und zum Umgang damit, passend zu Ihrer Situation.» | umformuliert (Angebot; erklärt «Psychoedukation») | u17 |
+| 45 | `beratung`, Angebote | «Gemeinsam klären, welche weiteren Hilfen, Selbsthilfeangebote oder Anlaufstellen für Sie infrage kommen könnten.» | umformuliert (Angebot statt Frage) | u19 |
+| 46 | `beratung`, Angebote | «Aktuelle Angebote, Zielgruppen, Termine und mögliche Kosten erfragen Sie direkt bei der Fachstelle.» | Satzstellung | u21 |
+| 47 | `beratung`, Begriffe | «Psychoedukation und Materialien» · «Orientierung und Vermittlung» · «Schulungen und Weiterbildung» | Satzzeichen («und» statt «&») | u16, u18, u20 |
+| 48 | `beratung` | «Wie die Fachstelle Angehörigenarbeit der PUK berät, steht auf der Startseite im Abschnitt «Beratung für Sie».» | Verweissatz (Wortlaut von `krise`) | u158 |
+| 49 | `beratung` | «Was Sie vorab klären können:» | Bezeichnung (Zwischentitel des Bestands als Einleitung) | u319 |
+| 50 | `beratung` | «Ist Beratung zu Ihrer Situation möglich, auch wenn keine Diagnose vorliegt?» | gekürzt | u81 |
+| 51 | `beratung` | «Wie werden Termine vereinbart, und wie lange dauert ein Gespräch?» | umformuliert | u83 |
+| 52 | `beratung` | «Welche Angaben werden für eine Anfrage benötigt?» | umformuliert (Frage) | u32 |
+| 53 | `beratung`, Pro Mente Sana | «Die Telefonberatung zu Fragen rund um psychische Gesundheit ist kostenlos.» | umformuliert (Satz) | u96 |
+| 54 | `beratung`, `austausch`, `selbsthilfe` | «Website:» vor jedem Link | Bezeichnung | u320 |
+| 55 | `beratung` | «Wie Sie eigene Überlastung erkennen, steht auf der Seite «Auf sich achten» im Abschnitt «Warnsignale für Überlastung».» | Verweissatz | u159 |
+| 56 | `beratung` | «Wie Sie in belasteten Situationen sprechen können, steht auf der Seite «Zugewandt und klar sprechen».» | Verweissatz | u160 |
+| 57 | `austausch`, Titel | «Austausch mit anderen Angehörigen» | Auftrag (Gliederung) | u99 |
+| 58 | `austausch` | «Organisationen und Netzwerke ermöglichen Austausch, Orientierung und Entlastung für Angehörige.» | umformuliert (Satz) | u100 |
+| 59 | `austausch` | «Stand by You Schweiz ist der Dachverband der Vereinigungen von Angehörigen psychisch erkrankter Menschen.» | umformuliert (Satz, personenzentriert) | u102 |
+| 60 | `austausch` | «Bis Januar 2024 hiess er VASK Schweiz.» | umformuliert | u103 |
+| 61 | `austausch` | «Die VASK Zürich ist die kantonale Vereinigung für Angehörige von Menschen mit einer psychischen Erkrankung. Sie bietet regelmässige Beratungs-Treffpunkte in Zürich und Winterthur an.» | umformuliert (personenzentriert) | u125 |
+| 62 | `austausch` | «Die Treffpunkte sind offen für alle Angehörigen und Freunde.» | umformuliert (Satz) | u130 |
+| 63 | `austausch` | «Wann sie stattfinden, steht auf der Website.» | neu (ersetzt die Termine) | u321 |
+| 64 | `selbsthilfe` | «Selbsthilfegruppen für Angehörige von Menschen mit Borderline finden Sie über Selbsthilfe Schweiz. Das ist die zentrale Vermittlungsstelle für Selbsthilfegruppen in der ganzen Schweiz.» | Satzzeichen (zwei Sätze) | u151 |
+| 65 | `selbsthilfe` | «Es gibt Gruppen in mehreren Kantonen, vor Ort und online.» | gekürzt («sowohl … als auch») | u152 |
+| 66 | `kantone`, Titel | «Ausserhalb des Kantons Zürich» | Auftrag (Gliederung) | u322 |
+| 67 | `kantone` | «Die Angebote auf dieser Seite sind vor allem für den Kanton Zürich gedacht.» | umformuliert | u56 |
+| 68 | `kantone` | «Für andere Kantone führt der schnellste Weg über Selbsthilfe Schweiz. Dort finden Sie kantonale Stellen. Sie können auch in der Hausarztpraxis oder in der psychiatrischen Praxis vor Ort nachfragen.» | umformuliert | u57 |
+| 69 | `buecher` | «Die Bücher sind eine persönliche Auswahl, überwiegend deutschsprachig und ohne Anspruch auf Vollständigkeit.» | Verdichtung | u163, u312 |
+| 70 | `buecher` | «Sie verbinden Grundwissen, Beziehungsperspektiven, Selbstfürsorge und Erfahrungsnähe.» | umformuliert | u164 |
+| 71 | `buecher` | «Die Titel sind nach Zielgruppen geordnet.» | gekürzt | u168 |
+| 72 | `buecher` | «Die Bezeichnung «Empfehlung» meint eine redaktionelle Auswahl, keine wissenschaftliche Bewertung.» | umformuliert («Label») | u315 |
+| 73 | `buecher`, Zwischentitel | «Für Partnerinnen und Partner» | umformuliert («Partner & Ehepartner») | u170 |
+| 74 | `buecher`, Kinderbücher | «Ein Bilderbuch für Kinder, deren Eltern psychisch erkrankt sind.» | umformuliert (personenzentriert) | u235 |
+| 75 | `buecher`, Titelangaben | «… und …» statt «… & …» bei acht Titeln; «Schleuderprogramm der Gefühle» und «Monster» in Guillemets; Gedankenstriche als Komma oder Punkt (Windmüller, Sendera, Englischsprachig, «Zum Vertiefen») | Satzzeichen | u176, u200, u206, u215, u218, u224, u239, u254, u260, u262, u265, u268 |
+| 76 | `buecher`, Vertiefung | «Sie sind keine wissenschaftlichen Evidenzquellen. Ihre Sprache, Verallgemeinerungen und Krisenhinweise müssen kritisch eingeordnet werden.» | umformuliert («Solche Titel» als «Sie», Semikolon) | u314 |
+| 77 | `buecher`, Vertiefung | Einordnungen der vier Titel mit Semikolon als Punkt; «und» statt «&» | Satzzeichen | u282, u286, u290, u293, u300, u308 |
+| 78 | Kapitelübersicht und Kicker | «Unterstützung» (Eyebrow), «Beratung», «Austausch», «Selbsthilfegruppen», «Andere Kantone», «Bücher» | Bezeichnungen | u52, u71, u166, u317, u318 |
+
+**`index`**
+
+| Nr. | Ort | Satz | Art | Abgleich |
+| ---: | --- | --- | --- | --- |
+| 79 | `einstiege` | «Ich frage mich, ob es je besser wird.» | Auftrag | i258 |
+| 80 | `einstiege` | «Genesung: Hoffnung, unterschiedliche Verläufe und Grenzen des eigenen Einflusses verbinden.» | Auftrag (Lernweg der alten Startseite) | i25, i26 |
+| 81 | `einstiege` | «Ich suche Beratung oder Austausch mit anderen Angehörigen.» | Auftrag | i259 |
+| 82 | `einstiege` | «Unterstützung finden: Beratung, Austausch mit anderen Angehörigen und Bücher.» | Auftrag | i27, i28 |
+
+Nicht in der Liste, weil wörtlich aus dem Bestand: die übrigen Sätze beider Seiten, zum Beispiel «Untersucht wurden 290 Erwachsene, die zu Studienbeginn stationär behandelt wurden.» (ohne «Hinweis:»), die vier Sätze «Ein realistischer Massstab für Veränderung» (wörtlich aus `/verstehen/beziehungen`, `beziehungen.md` Nr. 194 bis 197) und alle Buchbeschreibungen ausser Nr. 74 bis 77.
+
+### Etappe 2c-1: Zur Prüfung durch die Fachstelle
+
+| Nr. | Ort | neu | Bestand (Zitat) | Frage |
+| ---: | --- | --- | --- | --- |
+| 1 | `genesung` › `forschung` | 93 %: «erreichten während einer zehnjährigen Studie mindestens einmal eine symptomatische Remission über zwei Jahre. Die Diagnosekriterien waren in diesem Zeitraum nicht mehr erfüllt. Einzelne Beschwerden konnten weiterhin bestehen.» 50 %: «… eine mindestens zweijährige Recovery: Remission zusammen mit guter sozialer und beruflicher Funktionsfähigkeit nach der Studiendefinition.» Danach: «Untersucht wurden 290 Erwachsene, die zu Studienbeginn stationär behandelt wurden.» und die Liste «Was die Zahlen nicht sagen» mit «Die Zahlen beschreiben diese Studiengruppe und keine persönliche Prognose.» | `/genesung`: «93% erreichten während einer zehnjährigen Studie mindestens einmal eine symptomatische Remission über zwei Jahre.» · «50% erreichten im selben Beobachtungszeitraum eine mindestens zweijährige Recovery: …» · «Hinweis: Untersucht wurden 290 Erwachsene, …» · «Sie sind keine individuelle Prognose.»; Handout: «Die Diagnosekriterien waren in diesem Zeitraum nicht mehr erfüllt. Einzelne Beschwerden konnten weiterhin bestehen.» | Trägt die Zusammenführung aus Seite und Handout die Studiendefinition richtig? Reicht «keine persönliche Prognose» in der Liste statt des eigenen Satzes «Sie sind keine individuelle Prognose.»? |
+| 2 | `genesung` › `einfluesse` | «Für Borderline selbst sind Medikamente keine Kernbehandlung. Änderungen nur mit der behandelnden Fachperson.» | «Für Borderline selbst sind Medikamente keine Kernbehandlung; Änderungen nur mit der behandelnden Fachperson.» | Wortlaut gehalten, nur Semikolon als Punkt. Der zweite Satz hat kein Verb; so verlangt es der Auftrag. Bleibt er so? |
+| 3 | `genesung` › `freiwillig` | «Allgemeine Beratung ist auch ohne Zustimmung der betroffenen Person möglich. Auskünfte über ihre Behandlung gibt es grundsätzlich nur mit ihrer Zustimmung. Gesetzliche Ausnahmen gelten etwa bei Minderjährigen oder fehlender Urteilsfähigkeit.» | «Allgemeine Beratung ist auch ohne Zustimmung der betroffenen Person möglich; Auskünfte über ihre Behandlung gibt es grundsätzlich nur mit ihrer Zustimmung; gesetzliche Ausnahmen gelten etwa bei Minderjährigen oder fehlender Urteilsfähigkeit.» | Wortlaut gehalten, sichtbar im Lesefluss. Bestätigen |
+| 4 | `genesung` › `einfluesse` | «Die fünf Bereiche sind eine eigene Zusammenstellung der Fachstelle aus Behandlungsleitlinien, kein geprüftes Modell.» | «Die fünf Bereiche sind eine eigene redaktionelle Synthese der Fachstelle, kein validiertes Fünf-Faktoren-Modell und keine individuelle Prognose. Sie ordnen Aussagen aus Behandlungsleitlinien und einem leitliniengestützten Recovery-Rahmen für diese Website.» | «Recovery-Rahmen» entfällt, «validiert» heisst «geprüft» (wie auf `rolle`). Trägt das die Einschränkung? |
+| 5 | `genesung` › `einfluesse` | «Peer-Unterstützung heisst: Unterstützung durch Menschen mit eigener Erfahrung.» | – (Fachwort im Bestand ohne Erklärung) | Erklärung fachlich richtig und gewünscht? |
+| 6 | `genesung` › `forschung`, Quellenblock | Gunderson et al. (2011) mit «Verwendet in: «Was die Forschung zeigt» (Ten-year course of BPD, CLPS)»; Zanarini et al. (2024) bei «Remission, Alltag und persönliche Recovery» | Gunderson: «Quellen zu Prognose- und Remissionsaussagen (3)»; Zanarini 2024: Quellenzeile des Handouts «Zanarini et al. (2012, 2024)» | Beide Quellen aus dem Bestand übernommen; kein Satz der Seite stützt sich allein auf sie. Behalten? |
+| 7 | `unterstuetzung` › `beratung`, `austausch`, `selbsthilfe` | Stand by You Schweiz (Dachverband, früher VASK Schweiz, kostenlose HelpLine), VASK Zürich (Treffpunkte Zürich und Winterthur, offen für alle Angehörigen und Freunde), Pro Mente Sana (psychosoziale und juristische Beratung, kostenlose Telefonberatung), Selbsthilfe Schweiz; je Link auf die Website | `/beratung`: «Frühere Prüfangabe: 30.04.2026», HelpLine-Zeiten, Treffpunkt-Termine («Jeden letzten Dienstag des Monats, 19:00 – 21:00 Uhr», «Jeden ersten Montag des Monats, …»), Adresse und E-Mail der VASK Zürich, «0848 800 858 (Normaltarif)» | Stand und Angaben prüfen. Die Links liessen sich hier nicht aufrufen (Netzwerk gesperrt). Ist «kostenlos» bei Pro Mente Sana richtig, obwohl der Bestand die Nummer mit «Normaltarif» nennt? |
+| 8 | `unterstuetzung` › `buecher` | alle Titel ohne Bezugslink | «Bei Ex Libris (CH)» bei jedem empfohlenen Titel | Bücher ohne Bezugslinks bestätigen (Auftrag). Drei Titel haben im Bestand kein Jahr: Glistrup (Kösel), Homeier (Mabuse-Verlag), Gliemann und Faichney (Monterosa); nicht ergänzt |
+| 9 | `unterstuetzung` › `beratung` | Link auf `www.pukzh.ch` entfällt | «Web www.pukzh.ch Website der PUK Zürich.» | Kontakt läuft über E-Mail (Startseite, Absenderin). Soll der Link auf die PUK bleiben? |
+| 10 | `unterstuetzung` › `beratung` | drei Fragen «Was Sie vorab klären können»; Kosten, Krankenkasse, Vertraulichkeit und Vollmacht verlinkt auf die Startseite | «Entstehen Kosten, und werden Informationen an eine Krankenkasse weitergegeben?» · «Wie wird mit vertraulichen Informationen umgegangen, und wird eine Vollmacht benötigt?» | Beantwortet «Die Beratung ist kostenlos und untersteht der Schweigepflicht.» auch die Frage nach der Krankenkasse? |
+| 11 | `unterstuetzung` › `beratung` | Angebote der Fachstelle als Beschreibung: «Ein Gespräch zu …», «Verständliche Informationen und Materialien zur Erkrankung und zum Umgang damit, …», «Gemeinsam klären, …» | «Fragen Sie, ob ein Gespräch … möglich ist.» · «Erfragen Sie, welche Informationen und Materialien … angeboten werden …» | Der Bestand formuliert vorsichtig als Fragen an die Fachstelle. Stimmen die Angebote so? |
+| 12 | `unterstuetzung` › `austausch` | «Die VASK Zürich ist die kantonale Vereinigung für Angehörige von Menschen mit einer psychischen Erkrankung.» | «Kantonale Vereinigung der Angehörigen von psychisch Kranken – …» | personenzentriert umformuliert (Gate `person-first`); der Vereinsname lautet anders. Passt das? |
+
+### Etappe 2c-1: Verweise von freigegebenen Seiten (Vorschlag)
+
+Diese Seiten sind nicht geändert. Der Linktext ist jeweils der Titel der Zielstelle.
+
+| Nr. | Seite › Ort | nach dem Satz | Vorschlag |
+| ---: | --- | --- | --- |
+| 1 | `verstehen` › `mythen`, Annahme «Borderline ist nicht behandelbar.» | «Viele erleben über Jahre deutliche Besserung, Remission (die Kriterien sind eine Zeit lang nicht mehr erfüllt) oder umfassendere Genesung.» | «Was Langzeitstudien zeigen, steht auf der Seite «Genesung» im Abschnitt «Was die Forschung zeigt».» (Bestand: «Mehr dazu auf Genesung.», `verstehen.md` Nr. 112) |
+| 2 | `rolle` › `anbieten`, nach der Abbildung | «Sie müssen diese Beiträge nicht alle leisten. Ihre eigenen Bedürfnisse, Grenzen und Möglichkeiten zählen ebenfalls.» | «Was Genesung beeinflussen kann, steht auf der Seite «Genesung» im Abschnitt «Was Genesung beeinflussen kann».» |
+| 3 | `beziehungen` › `was-hilft`, am Ende | – | «Woran sich Veränderung zeigen kann, steht auf der Seite «Genesung» im Abschnitt «Veränderung verläuft unterschiedlich».» (die vier Sätze «Ein realistischer Massstab» kommen von hier) |
+| 4 | `selbstfuersorge` › `beratung`, Begriff «Austausch mit anderen Angehörigen» | «Selbsthilfegruppen und Beratungsstellen bieten Orientierung, praktische Tipps und das Gefühl, nicht allein zu sein.» | «Angebote für Beratung und Austausch stehen auf der Seite «Unterstützung finden».» (`selbstfuersorge.md` Nr. 232) |
+| 5 | `index` › `beratung`, am Ende | «… Kontakt: angehoerigenarbeit@pukzh.ch» | «Weitere Beratung und Austausch mit anderen Angehörigen stehen auf der Seite «Unterstützung finden».» |
+| 6 | `rolle` › `kinder` | «Eine Fachstelle, die Kinderarztpraxis oder eine Familienberatung können beim Planen unterstützen.» | «Bücher für Kinder stehen auf der Seite «Unterstützung finden» im Abschnitt «Bücher für Angehörige».» |
+| 7 | `krise` › `danach`, nach dem Verweissatz auf die Beratung | «Wie die Fachstelle Angehörigenarbeit der PUK berät, steht auf der Startseite im Abschnitt «Beratung für Sie».» | «Weitere Angebote für Angehörige stehen auf der Seite «Unterstützung finden».» |
+
+### Etappe 2c-1: Entscheide der bauenden Sitzung (zur Prüfung)
+
+1. **Titel von `genesung` › 05:** «Freiwillige Unterstützung und eigene Grenzen» (Handout-Titel) statt des vorgeschlagenen «Was Sie anbieten können und was nicht Ihre Aufgabe ist», der auf `rolle` schon so heisst; sonst nennt der Verweissatz zweimal denselben Titel.
+2. **H1 von `genesung`:** die H1 der alten Seite, «Genesung ist möglich und kann unterschiedlich aussehen» (Gedankenstrich als «und»); der Seitentitel bleibt «Genesung». Die drei Kernsätze stehen als Liste unter der Einleitung (`bl-kernsaetze`).
+3. **Datenbotschaft:** die drei Werte als Begriffsliste mit grossem Wert (`bl-zahlen`, Schrift `--web-size-h3-fluid`), die Stichprobe als eigener Satz direkt danach, «Was die Zahlen nicht sagen» als Zwischentitel mit Liste. Die Herkunft der Werte steht im Quellenblock bei Zanarini et al. (2010): «die Werte 93 % und 50 % sowie der Zeitraum von zehn Jahren».
+4. **Abbildung 1:** Pfade unverändert, Bildausschnitt enger (`viewBox` «60 44 530 214»), damit die Zeichnung schmal grösser ist.
+5. **«Ein realistischer Massstab für Veränderung»** als Zwischentitel (Wortlaut des Bestands) statt eines neuen Titels «Woran sich Veränderung zeigen kann».
+6. **«Was Sie tun können» in `verlauf`:** aus Seite und zwei Handouts zu vier Punkten zusammengeführt; «Achten Sie auch auf Ihre eigenen Grenzen und holen Sie bei Bedarf Unterstützung.» trägt der Verweissatz auf «Nicht allein tragen» in `freiwillig`.
+7. **`unterstuetzung` ohne Quellenblock:** Die drei Bestandsseiten nennen keine Quellen; der Plan hat deshalb fünf Zeilen.
+8. **Fachstelle auf `unterstuetzung`:** Angebote als Begriffsliste in beschreibender Form; Kontakt, Ort, Kosten, Schweigepflicht und Vollmacht nur über den Verweissatz auf die Startseite; «Was Sie vorab klären können» mit den drei Fragen, die die Startseite nicht beantwortet (Diagnose, Termin und Dauer, Angaben für eine Anfrage).
+9. **«Nächste Schritte»:** «Nicht jede Unterstützung passt in jeder Lage.» und zwei Verweissätze am Ende von `beratung`; der dritte Weg (Beratungsgespräch anfragen) ist der Verweissatz auf die Startseite weiter oben.
+10. **VASK Zürich:** Termine der Treffpunkte entfallen («Wann sie stattfinden, steht auf der Website.»), weil sie nur eine frühere Prüfangabe tragen und Angebote nur mit Link stehen. Adresse, E-Mail und Beratungstelefon entfallen ebenso.
+11. **Stand by You:** «Stand by You macht Angehörige und Vertraute … sicht-, hör- und spürbar.» entfällt (Selbstdarstellung, keine Angabe zum Angebot).
+12. **Personenzentriert:** drei Stellen umformuliert, weil das Gate `person-first` «psychisch Kranken» meldete (VASK Zürich, Homeier, Stand by You).
+13. **`sensitiveTopics`:** `unterstuetzung` «akute-krise» (Stichwörter «Krisendienst», «seelische Krisen», «Krisenhinweise»; sonst blockiert `safety-contract`); `genesung` keine.
+14. **Druckregel** für alle Seiten in `borderline.css`: Abschnittsraster im Druck als Blockfluss, `break-after: avoid` für alle Titel und Begriffe in `main`, «Zwei Sichten» je Schritt zusammen. Sie ändert nur den Druck.
+15. **`puk-site-anchor-end`:** Klasse auf allen sieben Seiten entfernt; die Regel dafür steht weiter in `starter.css` (Kopie des Starters, nicht geändert).
+16. **«Empfehlung»** bleibt als kleine Bezeichnung über drei Titeln, wie im Bestand.
+
+### Etappe 2c-1: Aufgefallen, nicht geändert
+
+1. **Zwei Bilder aus dem Garten-Handout:** «Ein Stück Weg» (`rolle`) und «Ein neuer Trieb» (`genesung`) tragen beide «begleiten, nicht herstellen». Die Fachstelle hat beide gewählt; für R2 notiert (Visualisierungs-Check Nr. 6).
+2. **`starter.css`** definiert `.puk-site-anchor-end` weiter; keine Seite nutzt die Klasse mehr.
+3. **Verneinung auf `genesung`:** 28 % der Sätze (Bestand 17 %), vor allem Absicherungen des Bestands.
+4. **Seitentitel und H1 von `index`** bleiben; die Einstiege sind jetzt acht. Die Liste ist bei 360 px 1826 px hoch (vorher sechs Einstiege und der Platzhalter).
+5. **`index` › `beratung`** nennt «oder telefonisch», ohne Nummer; das ist der freigegebene Wortlaut.
+
 **Stand 11.10.2026 · Freigabe Etappe 2b eintragen · bauende Sitzung (Claude Code).** Umgesetzt ist `FREIGABE-ETAPPE-2B.md` (Entscheide der Fachstelle vom 11.10.2026: Etappe 2b als Ganzes freigegeben, letzte Anpassungen, Verweissätze auf den freigegebenen Seiten). Grundlage ist `borderline-umbau` am Stand `31215a8`. Geändert sind nur:
 
 - `content/` und die gebauten Seiten von `kommunizieren` (Abschnitt 3 a, 3 b und 3 d) und von `verstehen`, `beziehungen`, `grenzen` und `selbstfuersorge` (Abschnitt 4); auf allen sieben Seiten mit Quellenblock die Klasse `puk-site-anchor-end` (Abschnitt 3 c), auf `rolle` und `krise` nur diese
