@@ -10,8 +10,7 @@
 # Abweichung vom Export: frame-ancestors 'self' statt 'none', weil ui_kits/website/qa.html die Seiten
 # in Rahmen derselben Herkunft prüft. Netlify kann einen Header für Unterpfade nicht wieder aufheben.
 # Neue Website unter templates/website/<website>/: einen Block mit ihrem Ordner ergänzen – erst wenn ihr
-# gate.html ohne Inline-Skript und Inline-Stil ist (Starter ab Build r4-8). Die Website «Depression»
-# bekommt ihren Block deshalb erst mit der Übernahme von Profil 2026.10.1 (README, Übernahme Schritt 6).
+# gate.html ohne Inline-Skript und Inline-Stil ist (Starter ab Build r4-8).
 /templates/website/psychoeducation-site-starter/*
   Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'
 
@@ -22,4 +21,7 @@
   Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'
 
 /templates/website/applications/*
+  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'
+
+/templates/website/depression-angehoerige/*
   Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'

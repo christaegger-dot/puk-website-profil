@@ -28,7 +28,7 @@ if (r.blocks) { console.error(`\nBuild nicht geschrieben: ${r.blocks} blockieren
 for (const [path, html] of Object.entries(files)) await writeFile(join(dir, path), html);
 if (cfg.siteUrl) {
   const base = cfg.siteUrl.replace(/\/$/, '');
-  const urls = cfg.pages.filter(p => p.status === 'published' && p.href).map(p => `  <url><loc>${base}/${C.resolve('', p.href).path}</loc></url>`);
+  const urls = cfg.pages.filter(p => p.status === 'published' && p.href && p.role !== 'not-found').map(p => `  <url><loc>${base}/${C.resolve('', p.href).path}</loc></url>`);
   await writeFile(join(dir, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.join('\n')}\n</urlset>\n`);
 }
 console.log(`\n${Object.keys(files).length} Seiten geschrieben · ${C.VERSION} · Build ${C.BUILD} · Gate ${mode}: 0 blockierend, ${r.warns} Hinweise.`);
