@@ -1,8 +1,8 @@
 {
-  "$comment": "Borderline – Orientierung für Angehörige · Seitenvertrag, kopiert aus dem Psychoedukations-Starter (Build r4-3, Profil-Update 09.10.2026 übernommen: Build r4-4; Profil-Update 10.10.2026 übernommen: Build r4-6; Gate-Korrektur 10.10.2026 übernommen: Build r4-7). Etappe 1: index, verstehen, beziehungen, grenzen gebaut; übrige Seiten Entwurf. Pflichtfelder und Regeln: README.md. Nach jeder Änderung: node tools/build.mjs, danach node tools/gate.mjs bzw. node tools/gate.mjs --production.",
+  "$comment": "Borderline – Orientierung für Angehörige · Seitenvertrag, kopiert aus dem Psychoedukations-Starter (Build r4-3, Profil-Update 09.10.2026 übernommen: Build r4-4; Profil-Update 10.10.2026 übernommen: Build r4-6; Gate-Korrektur 10.10.2026 übernommen: Build r4-7; Profil 2026.10.1 übernommen in Etappe 3-1: Build r4-8, legal, 404-Seite, siteUrl). Alle 16 Seiten gebaut (Etappen 1 bis 3-1; Impressum und Datenschutz als eigene Seite nach Profilentscheid 11.10.2026), dazu die 404-Seite. Pflichtfelder und Regeln: README.md. Nach jeder Änderung: node tools/build.mjs, danach node tools/gate.mjs bzw. node tools/gate.mjs --production.",
   "kitRevision": "PUK Website Kit 1.10.1-r4 · abgeleitet",
   "canonicalSource": "PUK Zürich Design System 1.10.1 (unverändert)",
-  "assetVersion": "r4-6",
+  "assetVersion": "r4-8",
   "siteTitle": "Borderline – Orientierung für Angehörige",
   "shortDescription": "Psychoedukative Website der Fachstelle Angehörigenarbeit PUK für Angehörige von Menschen mit Borderline. Entwurf, fachliche Prüfung ausstehend.",
   "language": "de-CH",
@@ -39,6 +39,17 @@
     "email": "angehoerigenarbeit@pukzh.ch",
     "status": "freigegeben",
     "statusLabel": "Freigegeben"
+  },
+  "legal": {
+    "$comment": "Prüfbefund W3-05 (11.10.2026): Impressum und Datenschutzerklärung in jeder Fusszeile. Profilentscheid 11.10.2026: eigene Seite «Impressum und Datenschutz» je Website (Vorlage des Starters, wie auf der Depressions-Website), Herausgeberin Fachstelle Angehörigenarbeit, Inhalt und Umsetzung Ch. Egger; die Website ist ein Angebot der Fachstelle Angehörigenarbeit, kein offizielles Angebot der Psychiatrischen Universitätsklinik Zürich. Die Angaben zum Datenschutz beschreiben, was der Code tut; bei Änderungen am Code mitprüfen.",
+    "imprint": {
+      "label": "Impressum",
+      "href": "impressum-datenschutz.html#impressum"
+    },
+    "privacy": {
+      "label": "Datenschutz",
+      "href": "impressum-datenschutz.html#datenschutz"
+    }
   },
   "pages": [
     {
@@ -1269,21 +1280,110 @@
       "title": "Häufige Fragen",
       "href": "fragen.html",
       "navLabel": null,
-      "status": "draft",
-      "primaryTask": "Entwurf: Seite folgt in Etappe 3 des Umbaus",
-      "description": "Entwurf, Etappe 3: Häufige Fragen. Noch ohne Inhalt; Aufbau nach UMBAUPLAN.md.",
-      "sensitiveTopics": [],
+      "status": "published",
+      "primaryTask": "Eine kurze Antwort auf eine häufige Frage finden und zur ausführlichen Stelle weitergehen",
+      "description": "Kurze Antworten auf häufige Fragen von Angehörigen zu Diagnose, Ursachen und Verlauf, Gesprächen, Behandlung, Schutz und dem eigenen Leben, je mit Verweis auf die ausführliche Seite.",
+      "sensitiveTopics": [
+        "selbstgefaehrdung",
+        "gewalt",
+        "zwang",
+        "akute-krise"
+      ],
       "visualPlan": [
         {
-          "id": "v-fragen-geplant",
-          "section": "Entwurf",
-          "sectionId": "geplant",
-          "goal": "Platzhalter bis Etappe 3",
+          "id": "v-fr-diagnose",
+          "section": "01 Diagnose",
+          "sectionId": "diagnose",
+          "goal": "Fragen zur Diagnose kurz beantwortet finden",
           "format": "text",
           "statement": "–",
           "source": "–",
           "alternative": "–",
-          "reason": "Platzhalter: Der Visualisierungsplan entsteht vor dem Bau der Seite (Kandidaten in UMBAUPLAN.md, Abschnitt 3).",
+          "reason": "Text ist klarer: Frage und kurze Antwort mit Verweis auf die ausführliche Stelle. Keine Beziehung und kein Ablauf, den eine Darstellung erklären müsste. Der Weg zur Abklärung steht als nummerierte Schritte auf `diagnose`.",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-fr-verlauf",
+          "section": "02 Ursachen und Verlauf",
+          "sectionId": "verlauf",
+          "goal": "Fragen zu Ursachen, Begleiterkrankungen und Verlauf kurz beantwortet finden",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: kurze Antworten mit Verweis. Die Darstellungen zum Verlauf stehen auf `genesung` (Abbildung «Ein neuer Trieb»), hier nicht wiederholt (Verbinden statt doppeln).",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-fr-gespraeche",
+          "section": "03 Gespräche",
+          "sectionId": "gespraeche",
+          "goal": "Fragen zu Gesprächen und Konflikten kurz beantwortet finden",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: kurze Antworten mit Beispielsätzen und Verweis. Die Darstellungen zu Gesprächen stehen auf `kommunizieren` und `verstehen`.",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-fr-behandlung",
+          "section": "04 Behandlung",
+          "sectionId": "behandlung",
+          "goal": "Fragen zu Therapie, Medikamenten und Einweisung kurz beantwortet finden",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: kurze Antworten mit Verweis. Die Rollen in der Behandlung stehen als Textdarstellung auf `behandlung`.",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-fr-schutz",
+          "section": "05 Schutz",
+          "sectionId": "schutz",
+          "goal": "Fragen zu Schutz, Kindern und Trennung kurz beantwortet finden",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: Handlungsanleitungen für akute Lagen stehen sichtbar im Fliesstext, nicht in einer Darstellung oder Vertiefung.",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-fr-leben",
+          "section": "06 Ihr Leben",
+          "sectionId": "eigenes-leben",
+          "goal": "Fragen zum eigenen Leben und zum Umfeld kurz beantwortet finden",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: kurze Antworten mit Beispielsätzen und Verweis.",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-fr-weitere",
+          "section": "07 Weitere Fragen",
+          "sectionId": "weitere",
+          "goal": "Wissen, wo es weitere Antworten gibt",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: zwei Verweise.",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-fr-quellen",
+          "section": "Quellen zu dieser Seite",
+          "sectionId": "quellen",
+          "goal": "Quellen der Antworten nachvollziehen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: Liste der Quellen mit Abschnitten (Akkordeon des Profils wie auf den übrigen Seiten).",
           "approvalStatus": "ausstehend"
         }
       ]
@@ -1293,21 +1393,121 @@
       "title": "Quellen und Begriffe",
       "href": "quellen.html",
       "navLabel": null,
-      "status": "draft",
-      "primaryTask": "Entwurf: Seite folgt in Etappe 3 des Umbaus",
-      "description": "Entwurf, Etappe 3: Quellen und Begriffe. Noch ohne Inhalt; Aufbau nach UMBAUPLAN.md.",
-      "sensitiveTopics": [],
+      "status": "published",
+      "primaryTask": "Einen Fachbegriff nachschlagen oder eine Quelle der Website nachvollziehen",
+      "description": "Erklärungen von Fachbegriffen, die auf der Website vorkommen, und die vollständige Quellenliste mit Einordnung, nach Funktion geordnet.",
+      "sensitiveTopics": [
+        "selbstgefaehrdung",
+        "gewalt",
+        "akute-krise"
+      ],
       "visualPlan": [
         {
-          "id": "v-quellen-geplant",
-          "section": "Entwurf",
-          "sectionId": "geplant",
-          "goal": "Platzhalter bis Etappe 3",
+          "id": "v-qu-begriffe",
+          "section": "01 Begriffe",
+          "sectionId": "begriffe",
+          "goal": "Einen Fachbegriff verstehen",
           "format": "text",
           "statement": "–",
           "source": "–",
           "alternative": "–",
-          "reason": "Platzhalter: Der Visualisierungsplan entsteht vor dem Bau der Seite (Kandidaten in UMBAUPLAN.md, Abschnitt 3).",
+          "reason": "Text ist klarer: Begriffsliste mit kurzer Erklärung, Beispiel und Verweis. Die neun Kriterien des DSM-5-TR in einer Vertiefung (Akkordeon), wie im Bestand aufklappbar.",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-qu-einordnung",
+          "section": "02 Einordnung",
+          "sectionId": "einordnung",
+          "goal": "Wissen, wie die Quellen eingeordnet sind",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: vier kurze Absätze.",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-qu-forschung",
+          "section": "03 Forschung",
+          "sectionId": "forschung",
+          "goal": "Quellen dieser Gruppe nachvollziehen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: Literaturliste mit Angabe, kurzer Einordnung und den Seiten, auf denen die Quelle verwendet wird.",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-qu-therapie",
+          "section": "04 Therapie",
+          "sectionId": "therapie",
+          "goal": "Quellen dieser Gruppe nachvollziehen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: Literaturliste mit Angabe, kurzer Einordnung und den Seiten, auf denen die Quelle verwendet wird.",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-qu-angehoerige",
+          "section": "05 Angehörige",
+          "sectionId": "angehoerige",
+          "goal": "Quellen dieser Gruppe nachvollziehen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: Literaturliste mit Angabe, kurzer Einordnung und den Seiten, auf denen die Quelle verwendet wird.",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-qu-diagnostik",
+          "section": "06 Diagnostik",
+          "sectionId": "diagnostik",
+          "goal": "Quellen dieser Gruppe nachvollziehen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: Literaturliste mit Angabe, kurzer Einordnung und den Seiten, auf denen die Quelle verwendet wird.",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-qu-versorgung",
+          "section": "07 Versorgung",
+          "sectionId": "versorgung",
+          "goal": "Quellen dieser Gruppe nachvollziehen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: Literaturliste mit Angabe, kurzer Einordnung und den Seiten, auf denen die Quelle verwendet wird.",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-qu-leitlinien",
+          "section": "08 Leitlinien",
+          "sectionId": "leitlinien",
+          "goal": "Quellen dieser Gruppe nachvollziehen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: Literaturliste mit Angabe, kurzer Einordnung und den Seiten, auf denen die Quelle verwendet wird.",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-qu-schweiz",
+          "section": "09 Schweiz",
+          "sectionId": "schweiz",
+          "goal": "Quellen dieser Gruppe nachvollziehen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: Literaturliste mit Angabe, kurzer Einordnung und den Seiten, auf denen die Quelle verwendet wird.",
           "approvalStatus": "ausstehend"
         }
       ]
@@ -1317,26 +1517,124 @@
       "title": "Über diese Website",
       "href": "ueber.html",
       "navLabel": null,
-      "status": "draft",
-      "primaryTask": "Entwurf: Seite folgt in Etappe 3 des Umbaus",
-      "description": "Entwurf, Etappe 3: Über diese Website. Noch ohne Inhalt; Aufbau nach UMBAUPLAN.md.",
-      "sensitiveTopics": [],
+      "status": "published",
+      "primaryTask": "Wissen, warum es die Website gibt, nach welchen Grundsätzen die Texte geschrieben sind und wie man eine Rückmeldung gibt",
+      "description": "Warum es die Website gibt, Grundsätze der Texte, Barrierefreiheit und Rückmeldungen an die Fachstelle.",
+      "sensitiveTopics": [
+        "akute-krise"
+      ],
       "visualPlan": [
         {
-          "id": "v-ueber-geplant",
-          "section": "Entwurf",
-          "sectionId": "geplant",
-          "goal": "Platzhalter bis Etappe 3",
+          "id": "v-ue-warum",
+          "section": "01 Warum",
+          "sectionId": "warum",
+          "goal": "Wissen, wozu die Website da ist",
           "format": "text",
           "statement": "–",
           "source": "–",
           "alternative": "–",
-          "reason": "Platzhalter: Der Visualisierungsplan entsteht vor dem Bau der Seite (Kandidaten in UMBAUPLAN.md, Abschnitt 3).",
+          "reason": "Text ist klarer: drei kurze Absätze.",
           "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-ue-grundsaetze",
+          "section": "02 Grundsätze",
+          "sectionId": "grundsaetze",
+          "goal": "Die Grundsätze der Texte kennen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: vier Grundsätze als Begriffsliste, gleichwertig und ohne Beziehung untereinander.",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-ue-barrierefreiheit",
+          "section": "03 Barrierefreiheit",
+          "sectionId": "barrierefreiheit",
+          "goal": "Wissen, wie zugänglich die Website ist und wo es Einschränkungen gibt",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: Ziel, Liste und bekannte Einschränkungen.",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-ue-rueckmeldung",
+          "section": "04 Rückmeldung",
+          "sectionId": "rueckmeldung",
+          "goal": "Eine Rückmeldung geben können",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: Kontakt und kurze Hinweise.",
+          "approvalStatus": "ausstehend"
+        }
+      ]
+    },
+    {
+      "id": "impressum-datenschutz",
+      "title": "Impressum und Datenschutz",
+      "href": "impressum-datenschutz.html",
+      "navLabel": null,
+      "status": "published",
+      "primaryTask": "Wissen, wer die Website herausgibt und welche Daten beim Besuch anfallen",
+      "description": "Herausgeberin, Kontakt und Datenschutz: keine Cookies, keine Auswertung, keine Dienste anderer Anbieter beim Lesen.",
+      "sensitiveTopics": [],
+      "visualPlan": [
+        {
+          "id": "v-imp-impressum",
+          "section": "Impressum",
+          "sectionId": "impressum",
+          "goal": "Herausgeberin und Kontakt finden",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: wenige Angaben, keine Beziehung, die eine Darstellung erklären müsste (wie Vorlage des Starters).",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-imp-datenschutz",
+          "section": "Datenschutz",
+          "sectionId": "datenschutz",
+          "goal": "Wissen, welche Daten anfallen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: einzelne Angaben zu Daten, kein Ablauf und keine Beziehung (wie Vorlage des Starters).",
+          "approvalStatus": "ausstehend"
+        }
+      ]
+    },
+    {
+      "id": "404",
+      "role": "not-found",
+      "title": "Seite nicht gefunden",
+      "href": "404.html",
+      "navLabel": null,
+      "status": "published",
+      "primaryTask": "Von einer nicht vorhandenen Adresse zur Übersicht zurückfinden",
+      "description": "Diese Seite gibt es nicht. Von der Übersicht aus finden Sie alle Seiten.",
+      "sensitiveTopics": [],
+      "visualPlan": [
+        {
+          "id": "v-404-text",
+          "section": "Seite nicht gefunden",
+          "goal": "Zur Übersicht zurückfinden",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: ein Hinweis und ein Link, nichts zu erklären.",
+          "approvalStatus": "entfällt"
         }
       ]
     }
   ],
-  "siteUrl": "",
+  "siteUrl": "https://borderline-angehoerige.netlify.app",
   "interactionScript": "../../../components/interaktion.js"
 }

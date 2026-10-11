@@ -4,7 +4,7 @@
 //   node abgleich/pruefe-abgleich.mjs --bestand <ordner>   Bestand aus einem Ordner (bestand/borderline-angehoerige/texte/)
 //
 // Geprüft wird je Zeile:
-//   1. «Ort neu» `seite#abschnitt`: Die Seite ist gebaut und hat den Abschnitt (section id, «kopf» = Seitenkopf,
+//   1. «Ort neu» `seite#abschnitt` (seit Etappe 3-1 auch `impressum-datenschutz#…`): Die Seite ist gebaut und hat den Abschnitt (section id, «kopf» = Seitenkopf,
 //      «kapitel» = Kapitelübersicht). «Fusszeile» = Hinweis in der Fusszeile. «<seite> (Etappe n)» = Entwurfsseite im Vertrag.
 //   2. «Neue Fassung»: steht wörtlich im genannten Abschnitt; bei «wörtlich» steht dort der Satz aus dem Bestand.
 //   3. Jede Stelle in «…» in der Bemerkung steht auf einer der neuen Seiten, im Bestand oder in den Regeln des Profils
@@ -22,7 +22,9 @@ const args = process.argv.slice(2);
 const opt = k => { const i = args.indexOf(k); return i >= 0 ? args[i + 1] : null; };
 const C = createRequire(import.meta.url)(join(SITE, 'tools/contract.js'));
 const cfg = JSON.parse(readFileSync(join(SITE, 'site.config.json'), 'utf8'));
-const PAGES = ['index', 'verstehen', 'beziehungen', 'grenzen', 'rolle', 'selbstfuersorge', 'kommunizieren', 'krise', 'genesung', 'unterstuetzung', 'diagnose', 'behandlung'];
+const PAGES = ['index', 'verstehen', 'beziehungen', 'grenzen', 'rolle', 'selbstfuersorge', 'kommunizieren', 'krise', 'genesung', 'unterstuetzung', 'diagnose', 'behandlung', 'fragen', 'quellen', 'ueber'];
+// Etappe 3-1: Impressum und Datenschutz stehen auf einer eigenen Seite (Profilentscheid 11.10.2026); ihre Zeilen stehen in ueber.md.
+const BUILT = [...PAGES, 'impressum-datenschutz'];
 const SOURCES = {
   index: ['startseite.md', 'selbsttest.md', 'wegweiser.md'],
   verstehen: ['verstehen.md', ...['eisberg', 'alarm-modus', 'gehirn', 'zustands-landkarte', 'spaltung', 'anspannungskurve'].map(h => `materialien--text--${h}.md`)],
@@ -41,6 +43,10 @@ const SOURCES = {
   // /verstehen/begleiterkrankungen «Was bedeutet das für die Behandlung?» auf (Zeilen in diagnose.md); als Fundstelle zählen die ganzen Dateien.
   diagnose: ['verstehen--diagnostik.md', 'verstehen--begleiterkrankungen.md'],
   behandlung: ['unterstuetzen--therapie.md', 'verstehen--diagnostik.md', 'verstehen--begleiterkrankungen.md'],
+  // Etappe 3-1
+  fragen: ['faq.md'],
+  quellen: ['quellen.md', 'glossar.md'],
+  ueber: ['ueber-uns.md', 'impressum.md', 'datenschutz.md', 'barrierefreiheit.md', 'feedback.md'],
 };
 
 // Text wie im Browser: jede Elementgrenze trennt, SVG und .puk-vis-sr zählen nicht.
@@ -53,7 +59,7 @@ export const norm = s => decode(s).replace(/\*\*|`/g, '').replace(/[—]/g, '–
 const find = (n, pred) => { for (const c of n.children || []) { if (c.tag === '#text') continue; if (pred(c)) return c; const r = find(c, pred); if (r) return r; } return null; };
 
 const sections = {}; let siteText = '';
-for (const p of PAGES) {
+for (const p of BUILT) {
   const doc = C.parse(readFileSync(join(SITE, p + '.html'), 'utf8'));
   const main = find(doc, c => c.tag === 'main'); const foot = find(doc, c => c.tag === 'footer');
   const secs = { kopf: '', kapitel: '' };
@@ -101,7 +107,7 @@ for (const p of PAGES) {
     const where = `${p} Nr. ${nr}`;
     if (/^entfällt( \(|$)/.test(status)) { if (ort !== '–' || neu !== '–') problems.push(`${where}: «entfällt» mit Ort oder neuer Fassung`); }
     else if (status === 'Bezeichnung' && ort === '–') { /* Zwischentitel ohne Aussage, ohne Ort */ }
-    else if (/^[a-z]+#[a-z0-9-]+$/.test(ort)) {
+    else if (/^[a-z-]+#[a-z0-9-]+$/.test(ort)) {
       const [pg, sec] = ort.split('#');
       const text = sections[pg] && sections[pg][sec];
       if (text === undefined) problems.push(`${where}: Ort ${ort} gibt es nicht`);
