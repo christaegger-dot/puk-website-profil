@@ -1,0 +1,893 @@
+{
+  "browser": "Chromium 151.0.7922.173",
+  "os": "Linux",
+  "rows": [
+    {
+      "width": 320,
+      "css": "bundle",
+      "theme": "normal",
+      "text": "normal",
+      "state": {
+        "copy": "19px",
+        "meta": "13px",
+        "link": "19px",
+        "scrollWidth": 320,
+        "innerWidth": 320,
+        "fontsLoaded": true
+      },
+      "passed": true
+    },
+    {
+      "width": 320,
+      "css": "bundle",
+      "theme": "normal",
+      "text": "200%-CSS-Text",
+      "state": {
+        "copy": "38px",
+        "meta": "26px",
+        "link": "38px",
+        "scrollWidth": 320,
+        "innerWidth": 320,
+        "fontsLoaded": true
+      },
+      "passed": true
+    },
+    {
+      "width": 320,
+      "css": "bundle",
+      "theme": "normal",
+      "text": "Textabstaende",
+      "state": {
+        "copy": "19px",
+        "meta": "13px",
+        "link": "19px",
+        "scrollWidth": 320,
+        "innerWidth": 320,
+        "fontsLoaded": true
+      },
+      "passed": true
+    },
+    {
+      "width": 320,
+      "css": "bundle",
+      "theme": "kontrast",
+      "text": "normal",
+      "state": {
+        "copy": "19px",
+        "meta": "13px",
+        "link": "19px",
+        "scrollWidth": 320,
+        "innerWidth": 320,
+        "fontsLoaded": true
+      },
+      "passed": true
+    },
+    {
+      "width": 320,
+      "css": "bundle",
+      "theme": "kontrast",
+      "text": "200%-CSS-Text",
+      "state": {
+        "copy": "38px",
+        "meta": "26px",
+        "link": "38px",
+        "scrollWidth": 320,
+        "innerWidth": 320,
+        "fontsLoaded": true
+      },
+      "passed": true
+    },
+    {
+      "width": 320,
+      "css": "bundle",
+      "theme": "kontrast",
+      "text": "Textabstaende",
+      "state": {
+        "copy": "19px",
+        "meta": "13px",
+        "link": "19px",
+        "scrollWidth": 320,
+        "innerWidth": 320,
+        "fontsLoaded": true
+      },
+      "passed": true
+    },
+    {
+      "width": 320,
+      "css": "token-source",
+      "theme": "normal",
+      "text": "normal",
+      "state": {
+        "copy": "19px",
+        "meta": "13px",
+        "link": "19px",
+        "scrollWidth": 320,
+        "innerWidth": 320,
+        "fontsLoaded": true
+      },
+      "passed": true
+    },
+    {
+      "width": 320,
+      "css": "token-source",
+      "theme": "normal",
+      "text": "200%-CSS-Text",
+      "state": {
+        "copy": "38px",
+        "meta": "26px",
+        "link": "38px",
+        "scrollWidth": 320,
+        "innerWidth": 320,
+        "fontsLoaded": true
+      },
+      "passed": true
+    },
+    {
+      "width": 320,
+      "css": "token-source",
+      "theme": "normal",
+      "text": "Textabstaende",
+      "state": {
+        "copy": "19px",
+        "meta": "13px",
+        "link": "19px",
+        "scrollWidth": 320,
+        "innerWidth": 320,
+        "fontsLoaded": true
+      },
+      "passed": true
+    },
+    {
+      "width": 320,
+      "css": "token-source",
+      "theme": "kontrast",
+      "text": "normal",
+      "state": {
+        "copy": "19px",
+        "meta": "13px",
+        "link": "19px",
+        "scrollWidth": 320,
+        "innerWidth": 320,
+        "fontsLoaded": true
+      },
+      "passed": true
+    },
+    {
+      "width": 320,
+      "css": "token-source",
+      "theme": "kontrast",
+      "text": "200%-CSS-Text",
+      "state": {
+        "copy": "38px",
+        "meta": "26px",
+        "link": "38px",
+        "scrollWidth": 320,
+        "innerWidth": 320,
+        "fontsLoaded": true
+      },
+      "passed": true
+    },
+    {
+      "width": 320,
+      "css": "token-source",
+      "theme": "kontrast",
+      "text": "Textabstaende",
+      "state": {
+        "copy": "19px",
+        "meta": "13px",
+        "link": "19px",
+        "scrollWidth": 320,
+        "innerWidth": 320,
+        "fontsLoaded": true
+      },
+      "passed": true
+    },
+    {
+      "width": 360,
+      "css": "bundle",
+      "theme": "normal",
+      "text": "normal",
+      "state": {
+        "copy": "19px",
+        "meta": "13px",
+        "link": "19px",
+        "scrollWidth": 360,
+        "innerWidth": 360,
+        "fontsLoaded": true
+      },
+      "passed": true
+    },
+    {
+      "width": 360,
+      "css": "bundle",
+      "theme": "normal",
+      "text": "200%-CSS-Text",
+      "state": {
+        "copy": "38px",
+        "meta": "26px",
+        "link": "38px",
+        "scrollWidth": 360,
+        "innerWidth": 360,
+        "fontsLoaded": true
+      },
+      "passed": true
+    },
+    {
+      "width": 360,
+      "css": "bundle",
+      "theme": "normal",
+      "text": "Textabstaende",
+      "state": {
+        "copy": "19px",
+        "meta": "13px",
+        "link": "19px",
+        "scrollWidth": 360,
+        "innerWidth": 360,
+        "fontsLoaded": true
+      },
+      "passed": true
+    },
+    {
+      "width": 360,
+      "css": "bundle",
+      "theme": "kontrast",
+      "text": "normal",
+      "state": {
+        "copy": "19px",
+        "meta": "13px",
+        "link": "19px",
+        "scrollWidth": 360,
+        "innerWidth": 360,
+        "fontsLoaded": true
+      },
+      "passed": true
+    },
+    {
+      "width": 360,
+      "css": "bundle",
+      "theme": "kontrast",
+      "text": "200%-CSS-Text",
+      "state": {
+        "copy": "38px",
+        "meta": "26px",
+        "link": "38px",
+        "scrollWidth": 360,
+        "innerWidth": 360,
+        "fontsLoaded": true
+      },
+      "passed": true
+    },
+    {
+      "width": 360,
+      "css": "bundle",
+      "theme": "kontrast",
+      "text": "Textabstaende",
+      "state": {
+        "copy": "19px",
+        "meta": "13px",
+        "link": "19px",
+        "scrollWidth": 360,
+        "innerWidth": 360,
+        "fontsLoaded": true
+      },
+      "passed": true
+    },
+    {
+      "width": 360,
+      "css": "token-source",
+      "theme": "normal",
+      "text": "normal",
+      "state": {
+        "copy": "19px",
+        "meta": "13px",
+        "link": "19px",
+        "scrollWidth": 360,
+        "innerWidth": 360,
+        "fontsLoaded": true
+      },
+      "passed": true
+    },
+    {
+      "width": 360,
+      "css": "token-source",
+      "theme": "normal",
+      "text": "200%-CSS-Text",
+      "state": {
+        "copy": "38px",
+        "meta": "26px",
+        "link": "38px",
+        "scrollWidth": 360,
+        "innerWidth": 360,
+        "fontsLoaded": true
+      },
+      "passed": true
+    },
+    {
+      "width": 360,
+      "css": "token-source",
+      "theme": "normal",
+      "text": "Textabstaende",
+      "state": {
+        "copy": "19px",
+        "meta": "13px",
+        "link": "19px",
+        "scrollWidth": 360,
+        "innerWidth": 360,
+        "fontsLoaded": true
+      },
+      "passed": true
+    },
+    {
+      "width": 360,
+      "css": "token-source",
+      "theme": "kontrast",
+      "text": "normal",
+      "state": {
+        "copy": "19px",
+        "meta": "13px",
+        "link": "19px",
+        "scrollWidth": 360,
+        "innerWidth": 360,
+        "fontsLoaded": true
+      },
+      "passed": true
+    },
+    {
+      "width": 360,
+      "css": "token-source",
+      "theme": "kontrast",
+      "text": "200%-CSS-Text",
+      "state": {
+        "copy": "38px",
+        "meta": "26px",
+        "link": "38px",
+        "scrollWidth": 360,
+        "innerWidth": 360,
+        "fontsLoaded": true
+      },
+      "passed": true
+    },
+    {
+      "width": 360,
+      "css": "token-source",
+      "theme": "kontrast",
+      "text": "Textabstaende",
+      "state": {
+        "copy": "19px",
+        "meta": "13px",
+        "link": "19px",
+        "scrollWidth": 360,
+        "innerWidth": 360,
+        "fontsLoaded": true
+      },
+      "passed": true
+    },
+    {
+      "width": 768,
+      "css": "bundle",
+      "theme": "normal",
+      "text": "normal",
+      "state": {
+        "copy": "21px",
+        "meta": "13px",
+        "link": "21px",
+        "scrollWidth": 768,
+        "innerWidth": 768,
+        "fontsLoaded": true
+      },
+      "passed": true
+    },
+    {
+      "width": 768,
+      "css": "bundle",
+      "theme": "normal",
+      "text": "200%-CSS-Text",
+      "state": {
+        "copy": "42px",
+        "meta": "26px",
+        "link": "42px",
+        "scrollWidth": 768,
+        "innerWidth": 768,
+        "fontsLoaded": true
+      },
+      "passed": true
+    },
+    {
+      "width": 768,
+      "css": "bundle",
+      "theme": "normal",
+      "text": "Textabstaende",
+      "state": {
+        "copy": "21px",
+        "meta": "13px",
+        "link": "21px",
+        "scrollWidth": 768,
+        "innerWidth": 768,
+        "fontsLoaded": true
+      },
+      "passed": true
+    },
+    {
+      "width": 768,
+      "css": "bundle",
+      "theme": "kontrast",
+      "text": "normal",
+      "state": {
+        "copy": "21px",
+        "meta": "13px",
+        "link": "21px",
+        "scrollWidth": 768,
+        "innerWidth": 768,
+        "fontsLoaded": true
+      },
+      "passed": true
+    },
+    {
+      "width": 768,
+      "css": "bundle",
+      "theme": "kontrast",
+      "text": "200%-CSS-Text",
+      "state": {
+        "copy": "42px",
+        "meta": "26px",
+        "link": "42px",
+        "scrollWidth": 768,
+        "innerWidth": 768,
+        "fontsLoaded": true
+      },
+      "passed": true
+    },
+    {
+      "width": 768,
+      "css": "bundle",
+      "theme": "kontrast",
+      "text": "Textabstaende",
+      "state": {
+        "copy": "21px",
+        "meta": "13px",
+        "link": "21px",
+        "scrollWidth": 768,
+        "innerWidth": 768,
+        "fontsLoaded": true
+      },
+      "passed": true
+    },
+    {
+      "width": 768,
+      "css": "token-source",
+      "theme": "normal",
+      "text": "normal",
+      "state": {
+        "copy": "21px",
+        "meta": "13px",
+        "link": "21px",
+        "scrollWidth": 768,
+        "innerWidth": 768,
+        "fontsLoaded": true
+      },
+      "passed": true
+    },
+    {
+      "width": 768,
+      "css": "token-source",
+      "theme": "normal",
+      "text": "200%-CSS-Text",
+      "state": {
+        "copy": "42px",
+        "meta": "26px",
+        "link": "42px",
+        "scrollWidth": 768,
+        "innerWidth": 768,
+        "fontsLoaded": true
+      },
+      "passed": true
+    },
+    {
+      "width": 768,
+      "css": "token-source",
+      "theme": "normal",
+      "text": "Textabstaende",
+      "state": {
+        "copy": "21px",
+        "meta": "13px",
+        "link": "21px",
+        "scrollWidth": 768,
+        "innerWidth": 768,
+        "fontsLoaded": true
+      },
+      "passed": true
+    },
+    {
+      "width": 768,
+      "css": "token-source",
+      "theme": "kontrast",
+      "text": "normal",
+      "state": {
+        "copy": "21px",
+        "meta": "13px",
+        "link": "21px",
+        "scrollWidth": 768,
+        "innerWidth": 768,
+        "fontsLoaded": true
+      },
+      "passed": true
+    },
+    {
+      "width": 768,
+      "css": "token-source",
+      "theme": "kontrast",
+      "text": "200%-CSS-Text",
+      "state": {
+        "copy": "42px",
+        "meta": "26px",
+        "link": "42px",
+        "scrollWidth": 768,
+        "innerWidth": 768,
+        "fontsLoaded": true
+      },
+      "passed": true
+    },
+    {
+      "width": 768,
+      "css": "token-source",
+      "theme": "kontrast",
+      "text": "Textabstaende",
+      "state": {
+        "copy": "21px",
+        "meta": "13px",
+        "link": "21px",
+        "scrollWidth": 768,
+        "innerWidth": 768,
+        "fontsLoaded": true
+      },
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "css": "bundle",
+      "theme": "normal",
+      "text": "normal",
+      "state": {
+        "copy": "21px",
+        "meta": "13px",
+        "link": "21px",
+        "scrollWidth": 1440,
+        "innerWidth": 1440,
+        "fontsLoaded": true
+      },
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "css": "bundle",
+      "theme": "normal",
+      "text": "200%-CSS-Text",
+      "state": {
+        "copy": "42px",
+        "meta": "26px",
+        "link": "42px",
+        "scrollWidth": 1440,
+        "innerWidth": 1440,
+        "fontsLoaded": true
+      },
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "css": "bundle",
+      "theme": "normal",
+      "text": "Textabstaende",
+      "state": {
+        "copy": "21px",
+        "meta": "13px",
+        "link": "21px",
+        "scrollWidth": 1440,
+        "innerWidth": 1440,
+        "fontsLoaded": true
+      },
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "css": "bundle",
+      "theme": "kontrast",
+      "text": "normal",
+      "state": {
+        "copy": "21px",
+        "meta": "13px",
+        "link": "21px",
+        "scrollWidth": 1440,
+        "innerWidth": 1440,
+        "fontsLoaded": true
+      },
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "css": "bundle",
+      "theme": "kontrast",
+      "text": "200%-CSS-Text",
+      "state": {
+        "copy": "42px",
+        "meta": "26px",
+        "link": "42px",
+        "scrollWidth": 1440,
+        "innerWidth": 1440,
+        "fontsLoaded": true
+      },
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "css": "bundle",
+      "theme": "kontrast",
+      "text": "Textabstaende",
+      "state": {
+        "copy": "21px",
+        "meta": "13px",
+        "link": "21px",
+        "scrollWidth": 1440,
+        "innerWidth": 1440,
+        "fontsLoaded": true
+      },
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "css": "token-source",
+      "theme": "normal",
+      "text": "normal",
+      "state": {
+        "copy": "21px",
+        "meta": "13px",
+        "link": "21px",
+        "scrollWidth": 1440,
+        "innerWidth": 1440,
+        "fontsLoaded": true
+      },
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "css": "token-source",
+      "theme": "normal",
+      "text": "200%-CSS-Text",
+      "state": {
+        "copy": "42px",
+        "meta": "26px",
+        "link": "42px",
+        "scrollWidth": 1440,
+        "innerWidth": 1440,
+        "fontsLoaded": true
+      },
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "css": "token-source",
+      "theme": "normal",
+      "text": "Textabstaende",
+      "state": {
+        "copy": "21px",
+        "meta": "13px",
+        "link": "21px",
+        "scrollWidth": 1440,
+        "innerWidth": 1440,
+        "fontsLoaded": true
+      },
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "css": "token-source",
+      "theme": "kontrast",
+      "text": "normal",
+      "state": {
+        "copy": "21px",
+        "meta": "13px",
+        "link": "21px",
+        "scrollWidth": 1440,
+        "innerWidth": 1440,
+        "fontsLoaded": true
+      },
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "css": "token-source",
+      "theme": "kontrast",
+      "text": "200%-CSS-Text",
+      "state": {
+        "copy": "42px",
+        "meta": "26px",
+        "link": "42px",
+        "scrollWidth": 1440,
+        "innerWidth": 1440,
+        "fontsLoaded": true
+      },
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "css": "token-source",
+      "theme": "kontrast",
+      "text": "Textabstaende",
+      "state": {
+        "copy": "21px",
+        "meta": "13px",
+        "link": "21px",
+        "scrollWidth": 1440,
+        "innerWidth": 1440,
+        "fontsLoaded": true
+      },
+      "passed": true
+    },
+    {
+      "route": "/",
+      "width": 320,
+      "css": "actual-template",
+      "state": {
+        "size": "19px",
+        "copy": "19px"
+      },
+      "passed": true
+    },
+    {
+      "route": "/",
+      "width": 360,
+      "css": "actual-template",
+      "state": {
+        "size": "19px",
+        "copy": "19px"
+      },
+      "passed": true
+    },
+    {
+      "route": "/",
+      "width": 768,
+      "css": "actual-template",
+      "state": {
+        "size": "21px",
+        "copy": "21px"
+      },
+      "passed": true
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "css": "actual-template",
+      "state": {
+        "size": "21px",
+        "copy": "21px"
+      },
+      "passed": true
+    },
+    {
+      "route": "/templates/website/longform/grundlagenkapitel.html",
+      "width": 320,
+      "css": "actual-template",
+      "state": {
+        "size": "19px",
+        "copy": "19px"
+      },
+      "passed": true
+    },
+    {
+      "route": "/templates/website/longform/grundlagenkapitel.html",
+      "width": 360,
+      "css": "actual-template",
+      "state": {
+        "size": "19px",
+        "copy": "19px"
+      },
+      "passed": true
+    },
+    {
+      "route": "/templates/website/longform/grundlagenkapitel.html",
+      "width": 768,
+      "css": "actual-template",
+      "state": {
+        "size": "21px",
+        "copy": "21px"
+      },
+      "passed": true
+    },
+    {
+      "route": "/templates/website/longform/grundlagenkapitel.html",
+      "width": 1440,
+      "css": "actual-template",
+      "state": {
+        "size": "21px",
+        "copy": "21px"
+      },
+      "passed": true
+    },
+    {
+      "route": "/templates/website/longform/handlungsuebersicht.html",
+      "width": 320,
+      "css": "actual-template",
+      "state": {
+        "size": "19px",
+        "copy": "19px"
+      },
+      "passed": true
+    },
+    {
+      "route": "/templates/website/longform/handlungsuebersicht.html",
+      "width": 360,
+      "css": "actual-template",
+      "state": {
+        "size": "19px",
+        "copy": "19px"
+      },
+      "passed": true
+    },
+    {
+      "route": "/templates/website/longform/handlungsuebersicht.html",
+      "width": 768,
+      "css": "actual-template",
+      "state": {
+        "size": "21px",
+        "copy": "21px"
+      },
+      "passed": true
+    },
+    {
+      "route": "/templates/website/longform/handlungsuebersicht.html",
+      "width": 1440,
+      "css": "actual-template",
+      "state": {
+        "size": "21px",
+        "copy": "21px"
+      },
+      "passed": true
+    },
+    {
+      "route": "/templates/website/psychoeducation-site-starter/index.html",
+      "width": 320,
+      "css": "actual-template",
+      "state": {
+        "size": "19px",
+        "copy": "19px"
+      },
+      "passed": true
+    },
+    {
+      "route": "/templates/website/psychoeducation-site-starter/index.html",
+      "width": 360,
+      "css": "actual-template",
+      "state": {
+        "size": "19px",
+        "copy": "19px"
+      },
+      "passed": true
+    },
+    {
+      "route": "/templates/website/psychoeducation-site-starter/index.html",
+      "width": 768,
+      "css": "actual-template",
+      "state": {
+        "size": "21px",
+        "copy": "21px"
+      },
+      "passed": true
+    },
+    {
+      "route": "/templates/website/psychoeducation-site-starter/index.html",
+      "width": 1440,
+      "css": "actual-template",
+      "state": {
+        "size": "21px",
+        "copy": "21px"
+      },
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "counts": {
+    "cases": 64,
+    "failed": 0
+  },
+  "humanTests": false,
+  "realDevice": false
+}
