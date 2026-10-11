@@ -37,12 +37,12 @@ Ersetzt die Fassung vom Stand `9ff948b`. Was dort offen war, ist bis auf die hie
 - R2-02: entscheiden, ob die Antidepressiva im Vergleich weiter mit gestrichelter Linie stehen sollen (gestrichelt heisst auf der Website sonst «bei Bedarf» oder «wäre möglich»).
 - Prüfbedarf aus R2-03 und R2-04: Erklärungen für Fachbegriffe (EKT, rTMS, Esketamin, kognitive Verhaltenstherapie, interpersonelle Therapie) und die Perspektive von Station 4 im Kreislauf.
 - Prüfbedarf aus R1 (Punkt 18): Gehört nach «Sie dürfen ein Gespräch beenden und den Raum verlassen» (`fuer-sich-sorgen` › `grenzen`) der Verweis im Text?
-- Optionale Befunde (V-08, V-09, S-31, W1-32, R1-03, R2-05 bis R2-07): umsetzen lassen oder begründet zurückstellen.
+- Optionale Befunde (V-08, V-09, S-31, R1-03, R2-05 bis R2-07): umsetzen lassen oder begründet zurückstellen.
 
 **Bauende Sitzung** (nach Freigabe)
 
-- R2-01: sichtbaren Text, der nur die Zeichnung beschreibt, ersetzen (Kurztexte von Schichtenmodell, Pfad, Kreislauf, Netz, Kontinuum und beiden Vergleichen; Schlüssel «· durchgezogene Linie», «· gestrichelte Linie»; «doppelter Ring»; «im Bild der gefüllte untere Teil»). Vorschläge unter R2.
-- Je nach Entscheid: R2-02 bis R2-07, V-08, V-09 (Website-Teil), S-31, W1-32, R1-03.
+- R2-01 (Website-Teil) und W1-32: umgesetzt am 11.10.2026 (Eintrag unter «Umgesetzt nach den Prüfrunden»); Nachprüfung durch eine andere Sitzung offen.
+- Je nach Entscheid: R2-02 bis R2-07, V-08, V-09 (Website-Teil), S-31, R1-03.
 - W1-09 Rest und W1-10 Rest: Abrufdaten, PatG § 19, NVL-Kapitel, Programmname «Familiencoach Depression», «drei bis vier Wochen», BAG «allgemein informieren» am Original prüfen, sobald die Originale erreichbar sind.
 - BD-09 / W3-10 Rest: Dateigrössen der 7 PDF-Dateien nachtragen.
 - Selbstprüfung nachführen: Punkte 18 und 19 der Leitlinie fehlen in der Tabelle der Selbstprüfung.
@@ -63,6 +63,7 @@ Ersetzt die Fassung vom Stand `9ff948b`. Was dort offen war, ist bis auf die hie
 - Mindestens zwei reale Screenreader-Läufe (Protokollvorlage unter «Bedienung und Barrierefreiheit») und ein Test mit Hardwaretastatur und auf einem realen Touch-Gerät.
 - Die 69 externen Links prüfen (66 aus Runde 1 und 3 neue Quellen).
 - Lesetest mit Angehörigen, wo möglich trialogisch (R2 ersetzt ihn nicht).
+- Nachprüfung von R2-01 und W1-32 durch eine Sitzung, die sie nicht umgesetzt hat (die Umsetzung stammt von der zweiten Prüfsitzung).
 - Nach den Korrekturen: die betroffenen Stufen nachprüfen, danach R3. R3 erst, wenn W1-F-21 und die Screenreader-Läufe vorliegen.
 
 ## Grundlage und Arbeitsstand der bauenden Sitzung
@@ -171,6 +172,22 @@ Ersetzt die Fassung vom Stand `9ff948b`. Was dort offen war, ist bis auf die hie
   - **Übernommen, nicht selbst nachgemessen:** Fokus mit erzwungenen Farben (BD-03), Beschriftungen bei 200 % Schrift (BD-04), Logo im dunklen Kontrastmodus (BD-07), Schriftgrösse-Einstellung (BD-11). Alles aus «Wartet auf Profil 2026.10.1» ist damit umgesetzt; nachprüfen muss die Prüfsitzung.
   - **Beobachtung für das Profil (nicht geändert):** Bei 360 px bricht die Absenderzeile so um, dass ein Trennpunkt am Zeilenanfang steht («• Psychiatrische Universitätsklinik Zürich •»).
 
+- **11.10.2026 · R2-01 und W1-32 umgesetzt** (Auftrag der Fachstelle vom 11.10.2026: «Setze die Befunde R2-01 und W1-32 um»). **Rollenwechsel:** Diese Sitzung hat die Runden vom Stand `e63bd73` geprüft (zweite Prüfsitzung) und ist für diese Umsetzung bauende Sitzung. Die Nachprüfung von R2-01 und W1-32 macht deshalb eine andere Sitzung. Geändert sind nur `content/` und die gebauten Seiten; `site.config.json`, Plan und Figurenzeichnungen sind unverändert.
+  - **R2-01, Kurztexte (`p.puk-vis-short`):**
+    - `depression-verstehen` › Abb. 1 (`v-dv-schichten`): «Was Angehörige sehen und hören, ist nicht alles. Darunter kann liegen, was die erkrankte Person erlebt, oft ohne es zeigen oder sagen zu können. Das ist eine Möglichkeit, keine Gewissheit: Nachfragen hilft mehr als Deuten.» statt «Über der Wasserlinie steht, …». Abweichung vom Vorschlag: «ist nicht alles» statt «ist oft nur ein kleiner Teil», damit keine neue Mengenaussage entsteht.
+    - `behandlung-und-verlauf` › Abb. 1 (`v-bv-vergleich`): «Die Übersicht beantwortet Fragen, die Angehörige oft stellen: wie die Behandlung wirkt, wann es besser wird und worauf zu achten ist. Bei einer schweren Depression wirkt die Kombination beider am besten.» Der Satz zu Reihenfolge, Beschriftung und Linienart ist gestrichen. Abweichung: Der erste Satz ist neu, weil der Kurztext sonst nur einen Satz hätte (Leitlinie: zwei bis vier); er nennt die Merkmale der Abbildung, keine neue fachliche Aussage.
+    - `behandlung-und-verlauf` › Abb. 2 (`v-bv-weg`): «Eine Tagesklinik oder Klinik braucht es nur bei Bedarf, und auch wenn die Beschwerden abgeklungen sind, geht die Behandlung weiter. Schon beim ersten Schritt können Sie helfen.» statt «Nummer und Linie zeigen …». Abweichung: «Die meisten beginnen in der Hausarztpraxis.» weggelassen; die Kernaussage sagt schon «Der erste Schritt ist oft die Hausarztpraxis», und «die meisten» wäre stärker als «oft».
+    - `behandlung-und-verlauf` › Abb. 3 (`v-bv-fruehzeichen`): erster Satz «Die Linienstärke zeigt, wie stark die Depression wieder spürbar ist.» gestrichen; der Kurztext hat zwei Sätze.
+    - `ihre-situation` › Abb. 2 (`v-is-kreislauf`): «Rückzug und Gereiztheit können Sorge, Antreiben und Übernehmen auslösen. Das kann erschöpfen und ungeduldig machen, und wer sich unverstanden fühlt, zieht sich eher weiter zurück. An der eigenen Erschöpfung und Ungeduld können Sie ansetzen.» statt «Vier Stationen folgen aufeinander; …». Abweichung: vorsichtig formuliert («können», «eher») wie die Kernaussage; Station 4 bleibt ohne Zuordnung zu einer Person («wer sich unverstanden fühlt»), weil das Prüfbedarf ist (R2-04). Die Zeile «Leserichtung: …» bleibt: Leitlinie 07 und Muster B verlangen sie (Profil-Teil von R2-01).
+    - `fuer-sich-sorgen` › Abb. 1 (`v-fs-netz`): «Unterstützung kann von nahen Menschen, aus dem Umfeld und von Fachstellen kommen. Manches gibt es schon, anderes liesse sich nutzen.» statt «Der Abstand zur Mitte zeigt, …». Die Legende («besteht schon», «wäre möglich», «Abstand zur Mitte: wie nah im Alltag») bleibt; sie stammt aus Muster I (Profil-Teil von V-08).
+    - `rechte-und-angebote` › Abb. 1 (`v-ra-vergleich`): erster Satz «Die Merkmale stehen in beiden Spalten in derselben Reihenfolge.» gestrichen; der Kurztext hat drei Sätze.
+  - **R2-01, Beschriftungen:** Schlüssel «Weg A · durchgezogene Linie», «Weg B · gestrichelte Linie» (`behandlung-und-verlauf` › Abb. 1) und «Spalte A · durchgezogene Linie», «Spalte B · gestrichelte Linie» (`rechte-und-angebote` › Abb. 1) entfernt; die Spaltenüberschriften tragen die Unterscheidung. Die gestrichelte Oberkante der Spalte B bleibt (R2-02 ist nicht beauftragt). `ihre-situation` › Abb. 1 (`v-is-gefaess`): «Ansatzpunkt für Angehörige · beim Abfluss» statt «… beim Abfluss, doppelter Ring». `depression-verstehen` › Abb. 2 (`v-dv-entstehung`): Teil 1 endet mit «Sie ist bei jedem Menschen anders.» (ohne «im Bild der gefüllte untere Teil»); Teil 3: «Wird sie erreicht, kann eine Depression beginnen. Wer sehr verletzlich ist, erreicht sie schon mit wenig Belastung; bei anderen braucht es viel.» statt «Bei der linken Säule …».
+  - **Unverändert:** die Kurzbeschreibungen für Screenreader (`p.puk-sr`, `aria-describedby`, 193 bis 367 Zeichen) beschreiben die Zeichnungen weiterhin; das verlangt R2, Punkt 22.
+  - **W1-32:** `impressum-datenschutz` › Kopf: «Musterentwurf: noch nicht fachlich geprüft. Rechtliche Angaben: Stand 11.10.2026, rechtliche Prüfung ausstehend.» (`p.puk-longform__boundary`, wie auf `rechte-und-angebote`).
+  - **Satzvergleich vorher/nachher** (gebaute Seiten, Skript): 16 Sätze oder Satzteile entfernt oder geändert, 17 neu (gezählt an Satzzeichen, auch Schlüssel und Bezeichnungen), verteilt auf die 6 genannten Seiten; auf den übrigen 4 Seiten 0 Änderungen. «Die Merkmale stehen in beiden Spalten …» bleibt nur in den Kurzbeschreibungen für Screenreader.
+  - **Geprüft:** `node tools/build.mjs` → 10 Seiten, Build r4-8, Gate draft 0 blockierend, 12 Hinweise (11 × `visual-approval`, `review-report`); `node tools/gate.mjs --production` → 12 blockierend wie vorher; `sitemap.xml` unverändert. Playwright (Chromium 141), 10 Seiten bei 320, 360, 768, 1024, 1280, 1440 px mit der CSP aus `_headers`: kein Überlauf, 0 Konsolenfehler, 0 CSP-Verstösse; Text-Kontrast auf 10 Seiten bei 1280 und 360 px: 0 unter der Schwelle; Menü bei 320 px auf 10 von 10 Seiten wie vorher (Enter, Escape, Fokus zurück). Vergleiche: Merkmalszeilen ohne Schlüssel weiterhin auf gleicher Höhe (0 px Versatz bei 768 und 1280 px). Angesehen bei 1280 und 360 px: beide Vergleiche, Pfad, Kreislauf, Schichtenmodell, Impressum. Bildschirmfotos im Scratchpad, nicht im Repository.
+  - **Offen:** Profil-Teil von R2-01 (Muster E ohne sichtbare Schlüssel, Leserichtung in Muster B, Muster-Kurztexte in den Vorlagen); Nachprüfung von R2-01 und W1-32 durch eine andere Sitzung.
+
 ### Begriffe nach den Entscheiden W2-F-01 bis W2-F-03 (bauende Sitzung, für S und W2-D)
 
 | Begriff | Gilt | Wo |
@@ -205,7 +222,7 @@ Ergebnis der Prüfsitzung zu diesen fünf Punkten: «W1-E · Offener Prüfbedarf
 
 ## Selbstprüfung der bauenden Sitzung
 
-Arbeitsstand vom 10.10.2026, keine Prüfstufe. Elf Figuren: `v-dv-schichten` (K), `v-dv-entstehung` (G), `v-bv-vergleich` (E), `v-bv-weg` (C), `v-bv-fruehzeichen` (J), `v-is-gefaess` (G), `v-is-kreislauf` (B), `v-ro-spannung` (H), `v-bg-boot` (D), `v-fs-netz` (I), `v-ra-vergleich` (E).
+Arbeitsstand vom 10.10.2026, nachgeführt am 11.10.2026 nach der Umsetzung von R2-01 (Punkte 16, 18 und 19); keine Prüfstufe. Elf Figuren: `v-dv-schichten` (K), `v-dv-entstehung` (G), `v-bv-vergleich` (E), `v-bv-weg` (C), `v-bv-fruehzeichen` (J), `v-is-gefaess` (G), `v-is-kreislauf` (B), `v-ro-spannung` (H), `v-bg-boot` (D), `v-fs-netz` (I), `v-ra-vergleich` (E).
 
 ## Visualisierungs-Check
 
@@ -226,8 +243,10 @@ Arbeitsstand vom 10.10.2026, keine Prüfstufe. Elf Figuren: `v-dv-schichten` (K)
 | 13 | Theme «Hoher Kontrast» geprüft | teilweise | nur im Code geprüft: keine Hexwerte, Linien und Flächen über Klassen (`puk-vis-ln`, `puk-vis-scene__ln`, `puk-vis-water`); Kreislauf-Pfeile mit `var(--puk-blue-100)` wie im Starter. **Nicht im Browser mit dem Theme angesehen** | Prüfsitzung: Theme visuell prüfen |
 | 14 | Inhalt fachlich freigegeben | nicht erfüllt | alle 11 Darstellungen «ausstehend» im Plan; Texte Musterentwurf | Freigabe durch die Fachstelle nach W1 |
 | 15 | Bildsprache passt zum Thema; Wirkung im Plan und im Bild eingelöst | erfüllt (Selbsteinschätzung) | Wirkung (`resonance`) bei allen 11 Darstellungen im Plan. Boot: zwei ruhige Linienfiguren, je ein Ruder, Sätze aus Sicht der beiden Menschen; Gefäss: Sätze an Zu- und Abfluss. G Schwelle nutzt Rechtecke, ist aber ein Strukturmodell, kein Erlebensbild | Bilder von der Fachstelle am 10.10.2026 gutgeheissen («Die Bilder sind perfekt.»); Prüfsitzung prüft die Punkte trotzdem je Figur |
-| 16 | Metapher ohne Code: ein Bild, eine Idee; Beschriftungen nennen Erleben, nicht Bildteile | erfüllt | Gefäss: «Sie ist seit Wochen schwer krank.», «Meine Schwester übernimmt den Mittwoch.» – keine Namen von Bildteilen, keine Legende; Boot: «Heute schaffe ich nur wenige Züge.» / «Ich bin da und rudere auf meiner Seite.»; K: Sätze in beiden Schichten | – |
+| 16 | Metapher ohne Code: ein Bild, eine Idee; Beschriftungen nennen Erleben, nicht Bildteile | erfüllt | Gefäss: «Sie ist seit Wochen schwer krank.», «Meine Schwester übernimmt den Mittwoch.» – keine Namen von Bildteilen, keine Legende; seit 11.10.2026 auch die Bezeichnung des Ansatzpunkts ohne Bildteil: «Ansatzpunkt für Angehörige · beim Abfluss» (R2-01); Boot: «Heute schaffe ich nur wenige Züge.» / «Ich bin da und rudere auf meiner Seite.»; K: Sätze in beiden Schichten | – |
 | 17 | Keine ungewollten Bedeutungen | erfüllt (Selbsteinschätzung) | K bewusst ohne Eisberg (Gefahr für Schiffe); die Form ist eine weiche, neutrale Rundung. Kein Motiv zeigt die erkrankte Person als Gefahr oder Defekt | Prüfsitzung: Lesart der K-Form (Stein, Ei?) beurteilen |
+| 18 | Bei 200 % Schrift keine überlappenden Beschriftungen, keine Trennung mitten im Wort; der Kurztext verweist nicht auf schmal ausgeblendete Bildteile | erfüllt (Selbstprüfung 11.10.2026) | 200 %: gemessen in der Prüfrunde vom Stand `e63bd73` (0 Überlappungen bei 768 bis 1440 px). Kurztexte: kein Kurztext nennt mehr Wasserlinie, Abstand zur Mitte, Linienart, Linienstärke oder Nummern (R2-01). Bleibt im Profil: Legende «Abstand zur Mitte» in der Listenansicht des Netzes (V-08), Endbeschriftungen des Kontinuums schmal ohne Achse (V-09) | Profil: V-08, V-09; Nachprüfung durch eine andere Sitzung |
+| 19 | Was der Kurztext über die Anordnung verspricht, löst die Komponente bei allen Breiten ein | erfüllt (Selbstprüfung 11.10.2026) | Die Kurztexte versprechen keine Anordnung mehr (Vergleiche ohne «in derselben Reihenfolge», Netz ohne «Abstand zur Mitte»); Vergleiche bei 768 und 1280 px weiterhin auf gleicher Zeilenhöhe | Nachprüfung durch eine andere Sitzung |
 
 ### Matrix je Figur (Prüfsitzung)
 
