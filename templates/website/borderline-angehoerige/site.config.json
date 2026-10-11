@@ -193,6 +193,18 @@
           "alternative": "–",
           "reason": "Text ist klarer: Abschluss, was Verstehen leistet und was nicht, mit dem Merksatz für Angehörige als hervorgehobenem Kasten (puk-longform__reflection) und Verweis auf «Was zwischen Ihnen geschieht» und «Grenzen setzen»; keine Beziehung, die eine Darstellung zeigen müsste. Merksatz und Absätze aus dem Bestand «Verstehen hat Grenzen» wieder aufgenommen (Korrektur 1d, D-4).",
           "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-vs-quellen",
+          "section": "Quellen",
+          "sectionId": "quellen",
+          "goal": "Nachsehen, auf welche Quellen sich die Abschnitte der Seite stützen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: Quellenliste des Profils (ul.puk-longform__sources) als letzter Abschnitt, jede Quelle einmal mit «Verwendet in», in einem Akkordeon mit dem Eintrag «Quellen zu dieser Seite», ohne Skript offen und im Druck vollständig; nicht in der Kapitelübersicht (Entscheid der Fachstelle 11.10.2026, Korrektur 2b-2, Abschnitt 4).",
+          "approvalStatus": "ausstehend"
         }
       ]
     },
@@ -285,6 +297,18 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: Leitfragen und Schutzhinweise; bei möglicher Gefahr braucht es kurze, direkte Sätze ohne Grafik.",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-bz-quellen",
+          "section": "Quellen",
+          "sectionId": "quellen",
+          "goal": "Nachsehen, auf welche Quellen sich die Abschnitte der Seite stützen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: Quellenliste des Profils (ul.puk-longform__sources) als letzter Abschnitt, jede Quelle einmal mit «Verwendet in», in einem Akkordeon mit dem Eintrag «Quellen zu dieser Seite», ohne Skript offen und im Druck vollständig; nicht in der Kapitelübersicht (Entscheid der Fachstelle 11.10.2026, Korrektur 2b-2, Abschnitt 4).",
           "approvalStatus": "ausstehend"
         }
       ]
@@ -387,6 +411,18 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: Beobachtungen und Situationen sind Aufzählungen. Schutz und Gefahr stehen im Text mit Verweis im Text, nicht in einer Figur. Korrektur 2a-K: Grosse Ausgaben und plötzliche Entscheidungen stehen als Vertiefung (Akkordeon, K-R-b1); Substanzkonsum und riskantes Verhalten bleiben sichtbar.",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-ro-quellen",
+          "section": "Quellen",
+          "sectionId": "quellen",
+          "goal": "Nachsehen, auf welche Quellen sich die Abschnitte der Seite stützen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: Quellenliste des Profils (ul.puk-longform__sources) als letzter Abschnitt, jede Quelle einmal mit «Verwendet in», in einem Akkordeon mit dem Eintrag «Quellen zu dieser Seite», ohne Skript offen und im Druck vollständig; nicht in der Kapitelübersicht (Entscheid der Fachstelle 11.10.2026, Korrektur 2b-2, Abschnitt 4).",
           "approvalStatus": "ausstehend"
         }
       ]
@@ -526,6 +562,18 @@
           "alternative": "–",
           "reason": "Text ist klarer: In einer möglichen Gefahrensituation braucht es kurze, direkte Hinweise ohne Grafik.",
           "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-gr-quellen",
+          "section": "Quellen",
+          "sectionId": "quellen",
+          "goal": "Nachsehen, auf welche Quellen sich die Abschnitte der Seite stützen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: Quellenliste des Profils (ul.puk-longform__sources) als letzter Abschnitt, jede Quelle einmal mit «Verwendet in», in einem Akkordeon mit dem Eintrag «Quellen zu dieser Seite», ohne Skript offen und im Druck vollständig; nicht in der Kapitelübersicht (Entscheid der Fachstelle 11.10.2026, Korrektur 2b-2, Abschnitt 4).",
+          "approvalStatus": "ausstehend"
         }
       ]
     },
@@ -613,7 +661,7 @@
           "understood": "Wie Anerkennen ohne Zustimmen klingt: Auf einen harten Satz folgt eine Antwort, die das Gefühl ernst nimmt, ohne die Deutung zu übernehmen oder sich zu verteidigen. Zwei gleiche Tassen auf einem Tisch zeigen zwei gleichwertige Menschen im selben Gespräch.",
           "source": "Eigene didaktische Darstellung nach den Handouts «Zuhören ohne Zustimmen» und «Wenn Worte treffen»; Bezug: Fruzzetti (2006); Mason und Kreger (2014)",
           "alternative": "Sätze als HTML-Text über der Zeichnung, schmal untereinander; Kurzbeschreibung über aria-describedby",
-          "reason": "Entscheid der Fachstelle 10.10.2026 (Bauauftrag 2b, Abschnitt 4 und Anhang A): Zeichnung «Zwei Tassen» im Stil von «Ein freier Abend» (Muster D), direkt nach dem ersten Absatz des Abschnitts. Die Transformationen der Skizze sind in feste Pfade umgerechnet; die rechte Tasse steht 2 Einheiten weiter rechts als in der Skizze, damit beide Tassen spiegelgleich zur Tischmitte stehen. Bildausschnitt unverändert. Die sechs Stufen der Validierung stehen als Text ohne Treppenbild; «Aufmerksam sein» und «Spiegeln» im Lesefluss, die Stufen 3 bis 6 als Vertiefung (Akkordeon).",
+          "reason": "Entscheid der Fachstelle 10.10.2026 (Bauauftrag 2b, Abschnitt 4 und Anhang A): Zeichnung «Zwei Tassen» im Stil von «Ein freier Abend» (Muster D), direkt nach dem ersten Absatz des Abschnitts. Die Transformationen der Skizze sind in feste Pfade umgerechnet. Seit Korrektur 2b-K (P2b-F-11 b) stehen die zwei Tassen näher zur Tischmitte, spiegelgleich zu x = 320: Tassenkörper bei x 190–258 und 382–450, dazwischen 124 Einheiten frei; Henkel aussen. Tisch und Bildausschnitt unverändert. Die sechs Stufen der Validierung stehen als gestaltete Liste ohne Treppenbild, keine Abbildung: alle sechs sichtbar mit Leitsatz, Ziel und einem Beispiel, die Einzelheiten in der Vertiefung «Die sechs Stufen im Detail» (Korrektur 2b-2, Abschnitt 3).",
           "resonance": "Wiedererkennen und Entlastung: Ich kann zuhören und anerkennen, ohne mich zu verteidigen und ohne zuzustimmen.",
           "approvalStatus": "ausstehend"
         },
@@ -676,6 +724,18 @@
           "alternative": "–",
           "reason": "Text ist klarer: drei Rollen als Vertiefung (Akkordeon), wie im Bestand.",
           "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-ko-quellen",
+          "section": "Quellen",
+          "sectionId": "quellen",
+          "goal": "Nachsehen, auf welche Quellen sich die Abschnitte der Seite stützen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: Quellenliste des Profils (ul.puk-longform__sources) als letzter Abschnitt, jede Quelle einmal mit «Verwendet in», in einem Akkordeon mit dem Eintrag «Quellen zu dieser Seite», ohne Skript offen und im Druck vollständig; nicht in der Kapitelübersicht (Entscheid der Fachstelle 11.10.2026, Korrektur 2b-2, Abschnitt 4).",
+          "approvalStatus": "ausstehend"
         }
       ]
     },
@@ -686,7 +746,7 @@
       "navLabel": null,
       "status": "published",
       "primaryTask": "Sich in Krisen schützen, passende Hilfe holen und die eigenen Möglichkeiten kennen",
-      "description": "Wenn Belastung zunimmt, während einer Krise, was Sie sagen können, Suizidgedanken ansprechen, was Sie eher vermeiden, nach der Krise und wenn Belastung oder Gefahr bleibt.",
+      "description": "Wenn Belastung zunimmt, während einer Krise, was Sie sagen können, Suizidgedanken ansprechen, was Sie vermeiden sollten, nach der Krise und wenn Belastung oder Gefahr bleibt.",
       "sensitiveTopics": [
         "akute-krise",
         "selbstgefaehrdung",
@@ -745,7 +805,7 @@
           "id": "v-kr-vermeiden",
           "section": "05 Was Sie vermeiden",
           "sectionId": "vermeiden",
-          "goal": "Erkennen, was in einer Krise eher nicht hilft",
+          "goal": "Erkennen, was Sie in einer Krise vermeiden sollten",
           "format": "text",
           "statement": "–",
           "source": "–",
@@ -775,6 +835,18 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: vier Hinweise als Liste, Handlungsanleitung mit Verweis im Text. Krisenbezogene Sätze zu Kindern stehen sichtbar im Wortlaut von `grenzen`; Erklären und Betreuungsplan sind auf `rolle#kinder` verlinkt.",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-kr-quellen",
+          "section": "Quellen",
+          "sectionId": "quellen",
+          "goal": "Nachsehen, auf welche Quellen sich die Abschnitte der Seite stützen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: Quellenliste des Profils (ul.puk-longform__sources) als letzter Abschnitt, jede Quelle einmal mit «Verwendet in», in einem Akkordeon mit dem Eintrag «Quellen zu dieser Seite», ohne Skript offen und im Druck vollständig; nicht in der Kapitelübersicht (Entscheid der Fachstelle 11.10.2026, Korrektur 2b-2, Abschnitt 4).",
           "approvalStatus": "ausstehend"
         }
       ]
@@ -877,6 +949,18 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: kurze Hinweise und Verweis auf `index` (`beratung`); weitere Angebote folgen auf `unterstuetzung` (Etappe 2).",
+          "approvalStatus": "ausstehend"
+        },
+        {
+          "id": "v-sf-quellen",
+          "section": "Quellen",
+          "sectionId": "quellen",
+          "goal": "Nachsehen, auf welche Quellen sich die Abschnitte der Seite stützen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: Quellenliste des Profils (ul.puk-longform__sources) als letzter Abschnitt, jede Quelle einmal mit «Verwendet in», in einem Akkordeon mit dem Eintrag «Quellen zu dieser Seite», ohne Skript offen und im Druck vollständig; nicht in der Kapitelübersicht (Entscheid der Fachstelle 11.10.2026, Korrektur 2b-2, Abschnitt 4).",
           "approvalStatus": "ausstehend"
         }
       ]

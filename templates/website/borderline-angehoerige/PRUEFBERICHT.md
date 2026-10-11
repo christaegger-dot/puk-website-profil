@@ -55,6 +55,261 @@ Dazu 5 leichte Befunde zu Bericht und Abgleich. Die erste und zweite Prüfrunde 
 
 Nach jedem Bau ohne Nachfrage ausfüllen: Visualisierungs-Check wie unten, mit Beleg je Punkt. Arbeitsstand, keine Prüfstufe.
 
+**Stand 11.10.2026 · Korrektur Etappe 2b-2 · bauende Sitzung (Claude Code).** Umgesetzt ist `KORREKTUR-ETAPPE-2B2.md` (Entscheide der Fachstelle vom 11.10.2026: sechs Stufen der Validierung, Quellen am Seitenende, Reste aus 2b-K). Grundlage ist `borderline-umbau` am Stand `386b8fc`; die Seiten sind dort gleich wie im Stand der Nachprüfung 2b-K (`f9e2314`). Geändert sind nur:
+
+- `content/` und die gebauten Seiten von `verstehen`, `beziehungen`, `grenzen`, `rolle`, `selbstfuersorge`, `kommunizieren` und `krise`
+- `borderline.css`: die Klassen `bl-stufen`, `bl-stufen__n`, `bl-stufen__name` und `bl-stufen__detail` (nur Tokens) und eine Druckregel
+- `site.config.json`: je Seite eine Planzeile `v-…-quellen` für den Quellenblock; `krise` › `description`, `v-kr-vermeiden` › `goal`, `v-ko-tassen` › `reason`
+- der Abgleich: sieben Tabellen und `abgleich/README.md`
+
+`index` ist unverändert (`git diff f9e2314` leer). Keine Prüfstufe ist «erledigt». Danach liest die Fachstelle `kommunizieren` und `krise` und gibt sie frei (Auftrag, Abschnitt 1). Der Block von 2b-K steht darunter. Seine Liste «Neue Sätze zur Freigabe» ist mit dieser Korrektur nachgeführt.
+
+**Auftrag im Website-Ordner:** `KORREKTUR-ETAPPE-2B2.md` lag im Stamm von `main` (`8cd4ed2`). Die Datei liegt unverändert in diesem Ordner (`22bcf2c`; `cmp` und SHA-256 gleich) und ist aus dem Stamm von `main` entfernt (`c79e9aa`).
+
+### Korrektur 2b-2: Stand je Abschnitt (Abschnitte 2 bis 6)
+
+| Punkt | Stand | Beleg |
+| --- | --- | --- |
+| 2 Wortlaut, nichts geht verloren | eingehalten | Satzvergleich aller sieben Seiten (Quelltext `f9e2314` gegen heute, Skript). Nicht mehr wörtlich stehen nur: (a) die Quellenzeilen mit «Quellen:», «Quelle:», «Grundlage:», «Bezugspunkte:» oder «Bezug:», deren Quellen im Block stehen (Tabellen unten); (b) Bezeichnungen der Stufen (die Nummer vor dem Namen, «Ziel», «Beispiel» in der Begriffsliste, «Beispielsätze», «Oder:»); (c) die drei Stellen aus Abschnitt 5 (Satz zu Dazzi et al., Einleitung der Beispiele, Person A und Person B). Jede andere Aussage steht auf derselben Seite, im Text, in einer Vertiefung oder im Quellenblock |
+| 2 Vertiefungen | umgesetzt | «Die sechs Stufen im Detail» und «Quellen zu dieser Seite» sind `.puk-acc[data-puk-accordion]`. Ohne Skript sind alle Panels offen, im Druck sichtbar (Prüfungen unten) |
+| 2 Keine neue Abbildung | eingehalten | Figuren je Seite wie vorher (`data-visual-id`: `kommunizieren` 1, `krise` 0, die übrigen unverändert); keine «Abbildung n» dazu; das Gate meldet weiter 1 × `visual-approval` (`v-ko-tassen`) |
+| 2 Abgleich | umgesetzt | 185 Zeilen mit «verschoben (2b-2)» oder «umformuliert (2b-2)» und Bemerkung («2b-2 (Auftrag 2b-2, Abschnitt …): …; bis 2b-2: …»), 6 Zeilen nur mit nachgeführter Bemerkung; je Tabelle ein Absatz «Korrektur 2b-2» mit den Nummern und eine neue Zählung. Statuswerte erklärt in `abgleich/README.md`. `pruefe-abgleich.mjs`: vor dem Nachführen 94 Zeilen ohne Fundstelle, danach 4502 Zeilen, 0 ohne Fundstelle |
+| 3 Reihenfolge | umgesetzt | Im Unterabschnitt «Sechs Stufen der Validierung»: 1. die Einleitung «Die sechs Stufen lehnen sich an …» unverändert; 2. die Liste `ol.bl-stufen` mit allen sechs Stufen; 3. die Vertiefung «Die sechs Stufen im Detail»; 4. «Mitgefühl heisst nicht übernehmen. …», die Gegenüberstellung «Übernehmen / Spiegeln», «Spiegeln kann Verständnis erleichtern, …» und «Ein hilfreicher innerer Satz: …», je Zeichen für Zeichen wie vorher (Skript) |
+| 3 Je Stufe | umgesetzt | kleine Bezeichnung «Stufe 1» bis «Stufe 6»; der Name als Zwischentitel (h4): «Aufmerksam sein», «Spiegeln», «Zwischen den Zeilen verstehen», «Im biografischen Kontext verstehen», «Im aktuellen Kontext nachvollziehen», «Radikale Echtheit: auf Augenhöhe bleiben»; Leitsatz und Ziel in einem Absatz, zum Beispiel «Ich bin jetzt wirklich da.» Zugewandtheit und Aufmerksamkeit zeigen.; das Beispiel als `.puk-say__item--hilfreich` mit der Bezeichnung «Beispiel». Die sechs Beispiele lauten genau wie in der Tabelle des Auftrags (Skript: 6 von 6) |
+| 3 Vertiefung | umgesetzt | ein Akkordeon mit dem Eintrag «Die sechs Stufen im Detail»; darin sechs gleich gebaute Teile «Stufe 1 · Aufmerksam sein» bis «Stufe 6 · Radikale Echtheit: auf Augenhöhe bleiben» (h5), je mit «So kann es aussehen», «Typischer Stolperstein», «Weiterer Beispielsatz» und «Kurzer Beispiel-Dialog». Bei Stufe 1 und 2 enthält der Dialog den sichtbaren Beispielsatz noch einmal, weil Person A damit antwortet. «Oder:» entfällt als Verbindungswort, der Satz danach ist der weitere Beispielsatz. Lesart des Auftrags: Entscheide unten, Nr. 1 |
+| 3 Gestaltung | umgesetzt | Nummernpunkt `--space-6`, Linie `--border-width-strong` in `--puk-blue-100`, Einzug `--space-10` wie DEAR in der schmalen Darstellung, senkrecht bei jeder Breite. Bezeichnung in `--type-caption`; der Name 24 px (h4 des Profils), der Titel «Sechs Stufen der Validierung» 28 px; Leitsatz und Ziel 21 px (Seitenschrift). Nur die Klassen `bl-stufen…` in `borderline.css` und Profil-Klassen; in den neuen Regeln 0 Hexwerte und 0 Pixelwerte, auf den Seiten 0 `style`-Attribute. Überschriften: auf allen sieben Seiten ein h1 und kein Sprung über eine Ebene (Skript). Überlauf und Fotos unten |
+| 4 Was wandert | umgesetzt | 27 Zeilen: `verstehen` 2, `beziehungen` 1, `grenzen` 4, `rolle` 5, `selbstfuersorge` 7, `kommunizieren` 5, `krise` 3 (Tabellen unten). Auch «Bezug: NICE CG78 (2009).» (`grenzen` › `arten`): Der Auftrag nennt diese Bezeichnung nicht, die Zeile nennt aber eine Quelle ausserhalb einer Abbildung (Entscheide, Nr. 5). Skript: auf den sieben Seiten keine Zeile mehr mit «Quellen:», «Quelle:», «Grundlage:», «Bezugspunkte:» oder «Bezug:» ausserhalb einer `figcaption` |
+| 4 Was bleibt | eingehalten | Quellen in Abbildungen unverändert: `verstehen` Abbildungen 1 bis 3, `beziehungen` Abbildung 1 («Quellen am Seitenende.», das stimmt jetzt wörtlich), `grenzen` DEAR, `rolle` «Ein Stück Weg», `selbstfuersorge` «Ein freier Abend», `kommunizieren` «Zwei Tassen». Sätze ohne Quellennamen: Liste unten |
+| 4 Der Block | umgesetzt | letzter Abschnitt jeder der sieben Seiten (`section#quellen`, nach dem letzten Inhaltsabschnitt), nicht in der Kapitelübersicht (7 von 7, Skript); Akkordeon mit einem Eintrag «Quellen zu dieser Seite» (h2), ohne Skript offen, im Druck vollständig. Darin `ul.puk-longform__sources`: jede Quelle einmal im Wortlaut von heute, darunter `.puk-longform__source-use` «Verwendet in: «Abschnittstitel»», bei mehreren Abschnitten alle in der Reihenfolge der Seite. Angaben, wofür eine Quelle steht, in Klammern nach dem Abschnitt, zum Beispiel bei Dazzi et al. (2014): «Verwendet in: «Wenn Suizidgedanken ein Thema sind» (Übersicht zum direkten Fragen nach Suizidgedanken, in den eingeschlossenen Studien kein statistisch signifikanter Anstieg)». Reihenfolge alphabetisch nach erstem Autor oder Herausgeber |
+| 4 Prüfen | erfüllt | Tabellen je Seite unten (Skript: keine Quelle fehlt, keine ist dazugekommen, keine steht doppelt); `git diff --word-diff` unten. Links im Block: keine (0 `a` in `#quellen` auf allen sieben Seiten); der Vertrag (`contract.js`, Regel für Links in `puk-longform__sources`) meldet nichts |
+| 5 `krise` › `suizid` | umgesetzt | «Eine Übersicht über mehrere Studien (Dazzi et al., 2014) fand keine nachweisbare Zunahme von Suizidgedanken durch direktes Fragen.» |
+| 5 «Nach einem Arztbesuch» | umgesetzt | «Kim fühlt sich nach einem Arztbesuch nicht gehört. Sascha möchte nach dem Erleben fragen, …», die Bezeichnungen «Kim» und «Sascha», «Sascha muss den Arztbesuch nicht beurteilen …». «Person A» und «Person B» stehen auf `kommunizieren` nur noch in den Beispiel-Dialogen der sechs Stufen (je 6-mal) |
+| 5 Einleitung `beispiele` | umgesetzt | «Die Namen bezeichnen keine festen Rollen und lassen sich nicht aus einer Diagnose ableiten.»; der Rest des Absatzes ist gleich |
+| 5 «Pause statt Streit» | umgesetzt | Der Verweissatz «Wie Anspannung in einem Gespräch steigen und wieder sinken kann, erklärt die Seite «Verstehen» im Abschnitt «Wenn die Anspannung steigt».» steht als eigener Absatz direkt nach der Einleitung, vor der Begriffsliste. Nach der Liste bleibt «Eine Pause kann entlasten. Ihre Wirkung ist individuell. Ein späterer Kontakt ist keine Pflicht.» |
+| 5 `krise` › `description` | umgesetzt | «… Suizidgedanken ansprechen, was Sie vermeiden sollten, nach der Krise …»; die Meta-Beschreibung der gebauten Seite lautet gleich |
+| 5 `v-kr-vermeiden` › `goal` | umgesetzt | «Erkennen, was Sie in einer Krise vermeiden sollten» |
+| 5 `v-ko-tassen` › `reason` | umgesetzt | «… Seit Korrektur 2b-K (P2b-F-11 b) stehen die zwei Tassen näher zur Tischmitte, spiegelgleich zu x = 320: Tassenkörper bei x 190–258 und 382–450, dazwischen 124 Einheiten frei; Henkel aussen. Tisch und Bildausschnitt unverändert.» Der Satz zu den Stufen beschreibt jetzt das neue Layout |
+| 6 Danach | erfüllt | Prüfungen, Länge, Fotos und Listen unten |
+
+### Korrektur 2b-2: Sätze ohne Quellennamen (Ort vorher und nachher)
+
+Diese Sätze standen in Quellenzeilen, nennen aber keine Quelle. Sie bleiben im heutigen Wortlaut an ihrem Ort, nur ohne die Bezeichnung am Anfang und ohne die Quellennamen (Auftrag, Abschnitt 4).
+
+| Seite › Abschnitt | Satz | vorher | nachher |
+| --- | --- | --- | --- |
+| `beziehungen` › `verantwortung` | «Studien beschreiben Gruppen, nicht eine bestimmte Person oder Beziehung.» | letzter Absatz des Abschnitts, nach «Grundlage:» und vor «Quellen: …» | eigener Absatz an derselben Stelle |
+| `selbstfuersorge` › `warnsignale` | «Die fünf Bereiche sind eine eigene didaktische Ordnung.» | am Ende der Zeile «Quellen: WHO, Stress: …; NICE NG150 (2020), …», direkt nach dem Verweis im Text | eigener Absatz an derselben Stelle, direkt nach dem Verweis im Text |
+| `selbstfuersorge` › `akzeptanz` | «Die Übung in vier Schritten ist eine vereinfachte eigene Darstellung.» | letzter Absatz des Abschnitts, nach «Quelle: Linehan (2015), DBT Skills Training Manual;» mit kleinem «die» | eigener Absatz an derselben Stelle; der Satz beginnt gross (Entscheide, Nr. 9) |
+| `selbstfuersorge` › `beratung` | «Die Hinweise auf dieser Seite übertragen Forschung und eine Leitlinie in Schritte für den Alltag: eine Übersicht zur Belastung von Angehörigen, Forschung zu kurzer körperlicher Beruhigung und eine Leitlinie zur Unterstützung erwachsener Angehöriger, die unbezahlt betreuen.» und «Das ist eine Orientierung, keine Garantie, dass sie wirken.» | letzter Absatz des Abschnitts, nach «Grundlage:» und vor «Quellen: …» | eigener Absatz an derselben Stelle |
+| `kommunizieren` › `worte` | «Beispiele und Antwortsätze: eigene didaktische Darstellung.» | letzter Absatz des Abschnitts, nach «Bezugspunkte: …» | eigener Absatz an derselben Stelle |
+| `kommunizieren` › `beispiele` | «Die Beispiele sind eigene didaktische Ableitungen aus den Ansätzen auf dieser Seite, kein auf Wirksamkeit geprüftes Übungsprogramm.» | letzter Absatz des Abschnitts, nach «Grundlage:» | eigener Absatz an derselben Stelle |
+
+Angaben, die sagen, wofür eine Quelle steht, sind keine Aussage über den Inhalt der Seite. Sie stehen jetzt im Block bei ihrer Quelle, in Klammern nach dem Abschnitt: «für Körper, Gefühle und Gedanken» (WHO, Stress), «für Verhalten und Erholungsbedarf» und «nicht spezifisch für Borderline» (NICE NG150), «angepasste deutsche Fassung» (STOPP), «eine Übersicht über sechs Studien mit deutlichen Forschungslücken» (Bailey und Grenyer), die Angaben zu Dazzi et al., NICE NG225 und WHO, Suicide auf `krise`.
+
+### Korrektur 2b-2: Quellen je Seite (Quellenzeile → Eintrag im Block)
+
+Je Seite jede Quellenzeile bis 2b-2 mit den Einträgen, die sie im Block ergibt. Ein Skript vergleicht die alten Zeilen (Quelltext `f9e2314`) mit dem Block der gebauten Seite: Jede Quelle der alten Zeilen beginnt einen Eintrag, kein Eintrag nennt eine Quelle, die in den alten Zeilen fehlt, und kein Eintrag steht doppelt. Was keine Quelle ist, steht in der letzten Spalte.
+
+**`verstehen`** · 2 Quellenzeilen, 9 Einträge im Block
+
+| Abschnitt | Quellenzeile bis 2b-2 (Stand `f9e2314`) | Eintrag im Block | Im Text bleibt |
+| --- | --- | --- | --- |
+| `borderline` «Was die Diagnose beschreiben kann» | «Quellen: WHO, ICD-11 (2024); American Psychiatric Association (2024); NICE CG78 (2009); Linehan (1993).» | WHO, ICD-11 (2024); American Psychiatric Association (2024); NICE CG78 (2009); Linehan (1993) | – |
+| `mythen` «Häufige Annahmen – und was realistischer ist» | «Quellen: Storebø et al. (2020); Zanarini et al. (2012); Porter et al. (2020); Qian et al. (2022); WHO, ICD-11 (2024); WHO, Suicide: Questions and answers (2026).» | Storebø et al. (2020); Zanarini et al. (2012); Porter et al. (2020); Qian et al. (2022); WHO, ICD-11 (2024); WHO, Suicide: Questions and answers (2026) | – |
+
+Reihenfolge im Block (alphabetisch nach erstem Autor oder Herausgeber): American Psychiatric Association (2024); Linehan (1993); NICE CG78 (2009); Porter et al. (2020); Qian et al. (2022); Storebø et al. (2020); WHO, ICD-11 (2024); WHO, Suicide: Questions and answers (2026); Zanarini et al. (2012).
+
+**`beziehungen`** · 1 Quellenzeile, 9 Einträge im Block
+
+| Abschnitt | Quellenzeile bis 2b-2 (Stand `f9e2314`) | Eintrag im Block | Im Text bleibt |
+| --- | --- | --- | --- |
+| `verantwortung` «Verstehen ist keine Pflicht, alles auszuhalten» | «Grundlage: Studien beschreiben Gruppen, nicht eine bestimmte Person oder Beziehung. Quellen: American Psychiatric Association (2024); NICE CG78 (2009); Fruzzetti (2006); Gunderson et al. (1997); Foxhall et al. (2019); McLaren et al. (2022); Cavicchioli et al. (2021); Sutherland et al. (2020); Leonards et al. (2024).» | American Psychiatric Association (2024); NICE CG78 (2009); Fruzzetti (2006); Gunderson et al. (1997); Foxhall et al. (2019); McLaren et al. (2022); Cavicchioli et al. (2021); Sutherland et al. (2020); Leonards et al. (2024) | «Studien beschreiben Gruppen, nicht eine bestimmte Person oder Beziehung.» |
+
+Reihenfolge im Block (alphabetisch nach erstem Autor oder Herausgeber): American Psychiatric Association (2024); Cavicchioli et al. (2021); Foxhall et al. (2019); Fruzzetti (2006); Gunderson et al. (1997); Leonards et al. (2024); McLaren et al. (2022); NICE CG78 (2009); Sutherland et al. (2020).
+
+**`grenzen`** · 4 Quellenzeilen, 9 Einträge im Block
+
+| Abschnitt | Quellenzeile bis 2b-2 (Stand `f9e2314`) | Eintrag im Block | Im Text bleibt |
+| --- | --- | --- | --- |
+| `erkennen` «Woran Sie merken, dass eine Grenze nötig ist» | «Quellen: NICE NG150 (2020); WHO, Stress: Questions and answers (2026).» | NICE NG150 (2020); WHO, Stress: Questions and answers (2026) | – |
+| `bruecke` «Kontakt halten, ohne immer verfügbar zu sein» | «Bezugspunkte: Hoffman et al. (2005); NICE CG78 (2009); Linehan; Mason und Kreger (2014); Stand by You / Sotomo (2024).» | Hoffman et al. (2005); NICE CG78 (2009); Linehan; Mason und Kreger (2014); Stand by You / Sotomo (2024) | – |
+| `arten` «Vier Arten von Grenzen» | «Bezug: NICE CG78 (2009).» | NICE CG78 (2009) | – |
+| `gewalt` «Wenn Gewalt oder Bedrohung vorkommt» | «Bezugspunkte: Opferhilfe Schweiz; Eidgenössisches Büro für die Gleichstellung von Frau und Mann (EBG); NICE CG78 (2009).» | Opferhilfe Schweiz; Eidgenössisches Büro für die Gleichstellung von Frau und Mann (EBG); NICE CG78 (2009) | – |
+
+Reihenfolge im Block (alphabetisch nach erstem Autor oder Herausgeber): Eidgenössisches Büro für die Gleichstellung von Frau und Mann (EBG); Hoffman et al. (2005); Linehan; Mason und Kreger (2014); NICE CG78 (2009); NICE NG150 (2020); Opferhilfe Schweiz; Stand by You / Sotomo (2024); WHO, Stress: Questions and answers (2026).
+
+**`rolle`** · 5 Quellenzeilen, 10 Einträge im Block
+
+| Abschnitt | Quellenzeile bis 2b-2 (Stand `f9e2314`) | Eintrag im Block | Im Text bleibt |
+| --- | --- | --- | --- |
+| `anbieten` «Was Sie anbieten können und was nicht Ihre Aufgabe ist» | «Quellen: Berkowitz und Gunderson, Family Guidelines (NEABPD); Mason und Kreger (2014); NICE CG78 (2009); NICE NG150 (2020).» | Berkowitz und Gunderson, Family Guidelines (NEABPD); Mason und Kreger (2014); NICE CG78 (2009); NICE NG150 (2020) | – |
+| `schuld` «Schuld, Verantwortung und was dazwischen liegt» | «Quellen: Berkowitz und Gunderson, Family Guidelines (NEABPD); Hoffman et al. (2005); NICE CG78 (2009); NICE NG150 (2020).» | Berkowitz und Gunderson, Family Guidelines (NEABPD); Hoffman et al. (2005); NICE CG78 (2009); NICE NG150 (2020) | – |
+| `alltag` «Im Alltag unterstützen» | «Quellen: American Psychiatric Association (2024); NICE CG78 (2009); NICE NG150 (2020); NICE NG225; WHO, Doing What Matters in Times of Stress.» | American Psychiatric Association (2024); NICE CG78 (2009); NICE NG150 (2020); NICE NG225; WHO, Doing What Matters in Times of Stress | – |
+| `mehrere` «Wenn mehrere Angehörige beteiligt sind» | «Quellen: American Psychiatric Association (2024); NICE CG78 (2009).» | American Psychiatric Association (2024); NICE CG78 (2009) | – |
+| `kinder` «Wenn Kinder mitbetroffen sind» | «Quellen: Pro Juventute, Wenn ein Elternteil psychisch krank ist; PUK Zürich, Informationen für Angehörige.» | Pro Juventute, Wenn ein Elternteil psychisch krank ist; PUK Zürich, Informationen für Angehörige | – |
+
+Reihenfolge im Block (alphabetisch nach erstem Autor oder Herausgeber): American Psychiatric Association (2024); Berkowitz und Gunderson, Family Guidelines (NEABPD); Hoffman et al. (2005); Mason und Kreger (2014); NICE CG78 (2009); NICE NG150 (2020); NICE NG225; Pro Juventute, Wenn ein Elternteil psychisch krank ist; PUK Zürich, Informationen für Angehörige; WHO, Doing What Matters in Times of Stress.
+
+**`selbstfuersorge`** · 7 Quellenzeilen, 11 Einträge im Block
+
+| Abschnitt | Quellenzeile bis 2b-2 (Stand `f9e2314`) | Eintrag im Block | Im Text bleibt |
+| --- | --- | --- | --- |
+| `eigenes-leben` «Auch Ihr eigenes Leben zählt» | «Quellen: NICE NG150 (2020); WHO Europa, Caring for yourself while caring for others (2025).» | NICE NG150 (2020); WHO Europa, Caring for yourself while caring for others (2025) | – |
+| `kraft` «Was Kraft kostet und was entlastet» | «Quellen: NICE NG150 (2020); WHO Europa, Caring for yourself while caring for others (2025); Bundesamt für Gesundheit, Psychische Gesundheit.» | NICE NG150 (2020); WHO Europa, Caring for yourself while caring for others (2025); Bundesamt für Gesundheit, Psychische Gesundheit | – |
+| `warnsignale` «Warnsignale für Überlastung» | «Quellen: WHO, Stress: Questions and answers (2026), für Körper, Gefühle und Gedanken; NICE NG150 (2020), für Verhalten und Erholungsbedarf. Die fünf Bereiche sind eine eigene didaktische Ordnung.» | WHO, Stress: Questions and answers (2026) («Verwendet in» mit «für Körper, Gefühle und Gedanken»); NICE NG150 (2020) («Verwendet in» mit «für Verhalten und Erholungsbedarf») | «Die fünf Bereiche sind eine eigene didaktische Ordnung.» |
+| `zu-viel` «Wenn es gerade zu viel ist» | «Quellen: Carol Vivyan, STOPP (Getselfhelp), angepasste deutsche Fassung; NHS, Breathing exercises for stress; NHS inform, Grounding exercises; Zaccaro et al. (2018).» | Carol Vivyan, STOPP (Getselfhelp) («Verwendet in» mit «angepasste deutsche Fassung»); NHS, Breathing exercises for stress; NHS inform, Grounding exercises; Zaccaro et al. (2018) | – |
+| `unterstuetzung` «Auch Sie brauchen Unterstützung» | «Quellen: NICE NG150 (2020); Mason und Kreger (2014).» | NICE NG150 (2020); Mason und Kreger (2014) | – |
+| `akzeptanz` «Radikale Akzeptanz» | «Quelle: Linehan (2015), DBT Skills Training Manual; die Übung in vier Schritten ist eine vereinfachte eigene Darstellung.» | Linehan (2015), DBT Skills Training Manual | «Die Übung in vier Schritten ist eine vereinfachte eigene Darstellung.» |
+| `beratung` «Nicht allein tragen» | «Grundlage: Die Hinweise auf dieser Seite übertragen Forschung und eine Leitlinie in Schritte für den Alltag: eine Übersicht zur Belastung von Angehörigen, Forschung zu kurzer körperlicher Beruhigung und eine Leitlinie zur Unterstützung erwachsener Angehöriger, die unbezahlt betreuen. Das ist eine Orientierung, keine Garantie, dass sie wirken. Quellen: Bailey und Grenyer (2013), eine Übersicht über sechs Studien mit deutlichen Forschungslücken; Zaccaro et al. (2018); NICE NG150 (2020), nicht spezifisch für Borderline.» | Bailey und Grenyer (2013) («Verwendet in» mit «eine Übersicht über sechs Studien mit deutlichen Forschungslücken»); Zaccaro et al. (2018); NICE NG150 (2020) («Verwendet in» mit «nicht spezifisch für Borderline») | «Die Hinweise auf dieser Seite übertragen Forschung und eine Leitlinie in Schritte für den Alltag: eine Übersicht zur Belastung von Angehörigen, Forschung zu kurzer körperlicher Beruhigung und eine Leitlinie zur Unterstützung erwachsener Angehöriger, die unbezahlt betreuen. Das ist eine Orientierung, keine Garantie, dass sie wirken.» |
+
+Reihenfolge im Block (alphabetisch nach erstem Autor oder Herausgeber): Bailey und Grenyer (2013); Bundesamt für Gesundheit, Psychische Gesundheit; Linehan (2015), DBT Skills Training Manual; Mason und Kreger (2014); NHS, Breathing exercises for stress; NHS inform, Grounding exercises; NICE NG150 (2020); Carol Vivyan, STOPP (Getselfhelp); WHO, Stress: Questions and answers (2026); WHO Europa, Caring for yourself while caring for others (2025); Zaccaro et al. (2018).
+
+**`kommunizieren`** · 5 Quellenzeilen, 5 Einträge im Block
+
+| Abschnitt | Quellenzeile bis 2b-2 (Stand `f9e2314`) | Eintrag im Block | Im Text bleibt |
+| --- | --- | --- | --- |
+| `anerkennen` «Anerkennen, ohne zuzustimmen» | «Grundlage: Linehan (1997), «Validation and psychotherapy»; Fruzzetti (2006); Mason und Kreger (2014).» | Linehan (1997), «Validation and psychotherapy»; Fruzzetti (2006); Mason und Kreger (2014) | – |
+| `moment` «Der richtige Moment» | «Quellen: Linehan (1993); Mason und Kreger (2014).» | Linehan (1993); Mason und Kreger (2014) | – |
+| `kippen` «Wenn Gespräche kippen» | «Quellen: Mason und Kreger (2014); Linehan (1993); Fruzzetti (2006).» | Mason und Kreger (2014); Linehan (1993); Fruzzetti (2006) | – |
+| `worte` «Wenn Worte treffen» | «Bezugspunkte: Berkowitz und Gunderson, Family Guidelines (NEABPD); Linehan (1993). Beispiele und Antwortsätze: eigene didaktische Darstellung.» | Berkowitz und Gunderson, Family Guidelines (NEABPD); Linehan (1993) | «Beispiele und Antwortsätze: eigene didaktische Darstellung.» |
+| `beispiele` «So könnte es klingen» | «Grundlage: Die Beispiele sind eigene didaktische Ableitungen aus den Ansätzen auf dieser Seite, kein auf Wirksamkeit geprüftes Übungsprogramm.» | – (nennt keine Quelle) | «Die Beispiele sind eigene didaktische Ableitungen aus den Ansätzen auf dieser Seite, kein auf Wirksamkeit geprüftes Übungsprogramm.» |
+
+Reihenfolge im Block (alphabetisch nach erstem Autor oder Herausgeber): Berkowitz und Gunderson, Family Guidelines (NEABPD); Fruzzetti (2006); Linehan (1993); Linehan (1997), «Validation and psychotherapy»; Mason und Kreger (2014).
+
+**`krise`** · 3 Quellenzeilen, 6 Einträge im Block
+
+| Abschnitt | Quellenzeile bis 2b-2 (Stand `f9e2314`) | Eintrag im Block | Im Text bleibt |
+| --- | --- | --- | --- |
+| `belastung` «Wenn Belastung zunimmt» | «Grundlage: NICE NG225 (2022) und NICE CG78 (2009).» | NICE NG225 (2022); NICE CG78 (2009) | – |
+| `sagen` «Was Sie sagen können» | «Quellen: Mason und Kreger (2014); Linehan (1993).» | Mason und Kreger (2014); Linehan (1993) | – |
+| `suizid` «Wenn Suizidgedanken ein Thema sind» | «Quellen: Dazzi et al. (2014), Übersicht zum direkten Fragen nach Suizidgedanken, in den eingeschlossenen Studien kein statistisch signifikanter Anstieg; NICE NG225 (2022), fachliche Beurteilung nach Selbstverletzung, keine Vorhersage durch pauschale Risikostufen; WHO, Suicide: Questions and answers (2026), direktes Fragen löst nach heutigem Wissensstand keine suizidale Handlung aus.» | Dazzi et al. (2014) («Verwendet in» mit «Übersicht zum direkten Fragen nach Suizidgedanken, in den eingeschlossenen Studien kein statistisch signifikanter Anstieg»); NICE NG225 (2022) («Verwendet in» mit «fachliche Beurteilung nach Selbstverletzung, keine Vorhersage durch pauschale Risikostufen»); WHO, Suicide: Questions and answers (2026) («Verwendet in» mit «direktes Fragen löst nach heutigem Wissensstand keine suizidale Handlung aus») | – |
+
+Reihenfolge im Block (alphabetisch nach erstem Autor oder Herausgeber): Dazzi et al. (2014); Linehan (1993); Mason und Kreger (2014); NICE CG78 (2009); NICE NG225 (2022); WHO, Suicide: Questions and answers (2026).
+
+### Korrektur 2b-2: Prüfungen nach Abschnitt 6
+
+- **`node tools/build.mjs`:** 0 blockierend, 11 Hinweise wie vorher (1 × `visual-approval`, 8 × `placeholder-approval`, `site-url`, `review-report`). Vor dem Eintragen der Planzeilen für `#quellen` waren es 18 Hinweise (7 × `plan-coverage`).
+- **`node tools/gate.mjs --selftest`:** 53/53 bestanden.
+- **`node tools/gate.mjs --production`:** 10 blockierend wie bisher (1 × `visual-approval`, 8 × `placeholder-approval`, 1 × `review-report`) und 1 Hinweis (`site-url`).
+- **`node abgleich/pruefe-abgleich.mjs`:** 4502 Zeilen, 0 ohne Fundstelle.
+- **Länge:** Tabelle unten. `kommunizieren` 2469 und `krise` 1523 Wörter im Lesefluss (C1), beide unter etwa 2500.
+- **Stufen und Quellenblock im Browser:** Fotos bei 1280 und 360 px, je Standard und «kontrast» (unten).
+- **Überlauf:** die sieben Seiten bei 320, 360, 375, 414, 640, 768, 1024, 1280 und 1440 px, Vertiefungen zu und offen, beide Themes (252 Messungen): kein waagrechter Überlauf, kein Element der Stufen, der Vertiefung oder des Quellenblocks ausserhalb des Fensters. Zoom 200 % (640 px bei Faktor 2 und 1280 px mit Schriftgrösse 200 %), Vertiefungen zu und offen (28 Messungen): ohne Überlauf.
+- **Tastatur und Fokus** (1280 px, reduzierte Bewegung): Der Knopf «Quellen zu dieser Seite» ist auf allen sieben Seiten der letzte Tabstopp vor der Fusszeile (`verstehen` 21, `beziehungen` 19, `grenzen` 24, `rolle` 31, `selbstfuersorge` 29, `kommunizieren` 30, `krise` 26), «Die sechs Stufen im Detail» ist auf `kommunizieren` Tabstopp 19. Beide mit sichtbarem Fokus und im Fenster; Enter öffnet, Leertaste schliesst (8 von 8).
+- **Druck** (`print`, dazu PDF von `kommunizieren` und `krise`, Seite mit den Stufen angesehen): alle Panels sichtbar (`verstehen` 1, `beziehungen` 1, `grenzen` 1, `rolle` 5, `selbstfuersorge` 8, `kommunizieren` 7, `krise` 5), der Quellenblock mit allen Einträgen, die Stufen mit Punkten und Linie. Eine Stufe bricht nicht über den Seitenumbruch (Entscheide, Nr. 11).
+- **Ohne Skript:** alle Panels offen (dieselben Zahlen wie im Druck).
+- **Kontraste** (gemessen): Bezeichnung «Stufe n», Name, Leitsatz, Titel der Teile, Quellennamen und Knopf 15,91 : 1; «Beispiel» und «Verwendet in» 5,92 : 1 (Standard) und 8,19 : 1 («kontrast»); Punkt und Linie 4,71 : 1 und 10,08 : 1.
+- **`node abgleich/bedienung.mjs`:** Tabstopps je ein Stopp mehr für den Quellenblock, `kommunizieren` 32 → 30 (vier Vertiefungen der Stufen 3 bis 6 werden eine). Höhe bei 360 px: `verstehen` 16 540 → 16 430 px, `beziehungen` 15 527 → 15 516, `grenzen` 17 074 → 16 837, `rolle` 26 243 → 25 771, `selbstfuersorge` 22 123 → 21 494, `kommunizieren` 24 625 → 24 887, `krise` 16 671 → 16 306. Höchste Figur je Seite unverändert; `index` unverändert (15 Tabstopps, 4636 px).
+- **Technik:** in den sieben Quelltexten 0 `style`-Attribute, 0 Hexwerte, 0 `tel:`.
+- **Keine Änderung am Wortlaut der Etappen 1 und 2a und an `index`** (`git diff --word-diff f9e2314`):
+  - `index`: kein Unterschied (Quelltext und gebaute Seite).
+  - `verstehen`: zwei Quellenzeilen entfernt (`borderline`, `mythen`), Block angehängt.
+  - `beziehungen`: aus dem letzten Absatz von `verantwortung` entfallen «Grundlage:» und «Quellen: …»; Block angehängt.
+  - `grenzen`: vier Quellenzeilen entfernt (`erkennen`, `bruecke`, `arten`, `gewalt`), Block angehängt.
+  - `rolle`: fünf Quellenzeilen entfernt, Block angehängt.
+  - `selbstfuersorge`: sieben Quellenzeilen; in `warnsignale`, `akzeptanz` und `beratung` bleiben die Sätze ohne Quellennamen; einzige Änderung an einem Wort: «die» → «Die» am neuen Satzanfang in `akzeptanz`; Block angehängt.
+  - Sonst kein Unterschied, auch nicht in Bildlegenden und Vertiefungen.
+- **Nicht prüfbar in dieser Umgebung:** reale Screenreader-Läufe, Hardwaretastatur und Touch.
+
+### Korrektur 2b-2: Wörter im Lesefluss vorher und nachher (Zählweise C1)
+
+C1 wie in den Selbstprüfungen 2b und 2b-K und den Prüfrunden 2a und 2b: innerste `p`, `li`, `dt`, `dd` in `<main>`, ohne SVG, Text nur für Screenreader, Kapitelübersicht, Kicker, Eyebrow, «Abbildung n · …» und Absätze, die mit «Quelle», «Quellen», «Bezugspunkte», «Grundlage» oder «Eigene didaktische Darstellung» beginnen; im Lesefluss ohne die Panels der Akkordeons. Der Block «Quellen zu dieser Seite» zählt nicht (Quellenzeilen). «Vorher» ist `f9e2314`; das Skript ergibt dort genau die Werte der Selbstprüfung 2b-K (`kommunizieren` 2432 und 3100, `krise` 1522 und 1945, je Abschnitt gleich) und der Prüfrunde 2b (`rolle` 2627, `selbstfuersorge` 2051).
+
+| Seite | C1 im Lesefluss vorher | nachher | Differenz | C1 mit Vertiefungen vorher → nachher |
+| --- | ---: | ---: | ---: | --- |
+| `index` | 221 | 221 | 0 | 221 → 221 |
+| `verstehen` | 1444 | 1444 | 0 | 1444 → 1444 |
+| `beziehungen` | 1423 | 1432 | +9 | 1423 → 1432 |
+| `grenzen` | 1472 | 1468 | −4 | 1472 → 1468 |
+| `rolle` | 2627 | 2627 | 0 | 2914 → 2914 |
+| `selbstfuersorge` | 2051 | 2114 | +63 | 2390 → 2453 |
+| **`kommunizieren`** | **2432** | **2469** | **+37** | 3100 → 3135 |
+| **`krise`** | **1522** | **1523** | **+1** | 1945 → 1946 |
+
+**Geänderte Abschnitte und Gründe:**
+
+- `beziehungen` › `verantwortung` 187 → 196: «Studien beschreiben Gruppen, nicht eine bestimmte Person oder Beziehung.» steht ohne «Grundlage:» und zählt jetzt (+9).
+- `grenzen` › `arten` 149 → 145: «Bezug: NICE CG78 (2009).» zählte bisher in C1, weil «Bezug» nicht zu den ausgeschlossenen Anfängen gehört; die Zeile steht jetzt im Block (−4).
+- `selbstfuersorge` › `warnsignale` 232 → 240, `akzeptanz` 214 → 224, `beratung` 108 → 153: die Sätze ohne Quellennamen zählen jetzt (+8, +10, +45).
+- `kommunizieren` › `anerkennen` 613 → 637: Im Lesefluss standen bisher die Stufen 1 und 2 mit allen Teilen (135 Wörter); jetzt stehen alle sechs Stufen mit Leitsatz, Ziel, «Beispiel» und Beispielsatz (159 Wörter, +24). In der Vertiefung −2 (980 → 1002 mit Vertiefungen).
+- `kommunizieren` › `worte` 269 → 275: «Beispiele und Antwortsätze: eigene didaktische Darstellung.» zählt jetzt (+6).
+- `kommunizieren` › `beispiele` 516 → 523: Einleitung «Die Namen …» (−5), Kim und Sascha statt Person A und Person B, je im Text und in den Bezeichnungen (−5), «Die Beispiele sind …» ohne «Grundlage:» zählt jetzt (+17).
+- `krise` › `suizid` 182 → 183: der neue Satz zu Dazzi et al. hat 18 statt 17 Wörter (+1).
+
+**Weitere Kennzahlen** (`kennzahlen.mjs`, gesamt mit Vertiefungen und Quellenblock): `verstehen` 1676 → 1749, `beziehungen` 1600 → 1674, `grenzen` 1667 → 1749, `rolle` 3145 → 3236, `selbstfuersorge` 2679 → 2748, `kommunizieren` 3344 → 3429, `krise` 2117 → 2156. Die Zunahme kommt aus den Angaben «Verwendet in: …». Semikolons unverändert (0, 1, 0, 2, 2, 0, 1).
+
+### Korrektur 2b-2: Fotos
+
+**Bildschirmfotos** (Chromium, Ausschnitt des Elements): Stufen und Vertiefung offen bei 1280 und 360 px, je Standard und «kontrast» (8 Fotos); Quellenblock offen auf allen sieben Seiten bei 1280 und 360 px, je Standard und «kontrast» (28 Fotos); dazu der Übergang vom letzten Abschnitt zum Quellenblock auf `kommunizieren` und `verstehen` bei 1280 px und die Druckseite mit den Stufen. Alle angesehen.
+
+- **Stufen, 1280 px:** Punkte und Linie wie DEAR schmal, in der Textspalte. Über jedem Namen klein «Stufe n», darunter der Absatz mit Leitsatz und Ziel und das Beispiel mit blauer Randlinie. Die sechs Stufen lesen sich als Folge; der Name ist deutlich kleiner als «Sechs Stufen der Validierung» und grösser als der Text.
+- **Stufen, 360 px:** Punkte und Linie bleiben links, lange Namen umbrechen auf zwei Zeilen («Im biografischen Kontext verstehen», «Radikale Echtheit: auf Augenhöhe bleiben»). Kein Überlauf.
+- **«kontrast»:** Punkte und Linie dunkelblau, die Bezeichnungen «Beispiel» dunkler; nichts verschwindet.
+- **Vertiefung offen:** «Die sechs Stufen im Detail» auf dem Knopf; darin sechs fette Zwischentitel «Stufe n · …», je mit denselben vier Bezeichnungen in derselben Reihenfolge. Schmal gut lesbar, die Dialoge umbrechen.
+- **Quellenblock:** geschlossen eine Zeile «Quellen zu dieser Seite» mit Pfeil zwischen zwei Trennlinien, links die leere Spalte wie bei den Abschnitten. Offen je Quelle eine Zeile in Seitenschrift, darunter klein und grau «Verwendet in: …» mit den Abschnittstiteln in «…» und den Angaben in Klammern. Bei 360 px umbrechen lange Titel ohne Überlauf.
+
+### Korrektur 2b-2: Neue Sätze zur Freigabe
+
+Die Liste im Block «Korrektur 2b-K» ist nachgeführt; ihre Überschrift sagt jetzt «Stand nach Korrektur 2b-2».
+
+- **Die zwei geänderten Sätze aus Abschnitt 5:** Nr. 35 «Die Namen bezeichnen keine festen Rollen und lassen sich nicht aus einer Diagnose ableiten.» und Nr. 53a «Eine Übersicht über mehrere Studien (Dazzi et al., 2014) fand keine nachweisbare Zunahme von Suizidgedanken durch direktes Fragen.»
+- **Ebenfalls in dieser Korrektur neu oder neu gefasst** (Regel der Liste von 2b-K):
+  - Nr. 36a: Kim und Sascha in «Nach einem Arztbesuch»
+  - Nr. 14b und 14c: die Bezeichnungen der Stufen und der Vertiefung
+  - Nr. 42: ohne «Grundlage:»
+  - Nr. 43a: «Quellen zu dieser Seite» und «Verwendet in:»
+- **Neuer Ort:** Nr. 20 (Verweissatz in «Pause statt Streit») und Nr. 54a (Angabe zu WHO im Quellenblock).
+- **Geprüft:** 119 Stellen in «…» der Spalte «Satz» stehen wörtlich auf den gebauten Seiten `kommunizieren`, `krise` und `index` (Skript).
+
+### Korrektur 2b-2: Zur Prüfung durch die Fachstelle
+
+Die Zeile ergänzt die Liste «Etappe 2b: Zur Prüfung durch die Fachstelle» (Nr. 1 bis 11) weiter unten.
+
+| Nr. | Stelle | Bestand | Neu | Frage |
+| --- | --- | --- | --- | --- |
+| 12 | Satz zu Dazzi et al., `krise` › `suizid` (Auftrag 2b-2, Abschnitt 5) | «Die von Dazzi et al. ausgewerteten Studien zeigten keinen statistisch signifikanten Anstieg von Suizidgedanken durch direktes Fragen.» (`unterstuetzen--krise.md`, «Bei Suizidgedanken direkt ansprechen»); Quelle im Bestand: «Dazzi et al. (2014) — Übersicht zum direkten Fragen nach Suizidgedanken; in den eingeschlossenen Studien kein statistisch signifikanter Anstieg.» | «Eine Übersicht über mehrere Studien (Dazzi et al., 2014) fand keine nachweisbare Zunahme von Suizidgedanken durch direktes Fragen.» Im Quellenblock steht bei Dazzi et al. (2014) weiter die Angabe des Bestands («… in den eingeschlossenen Studien kein statistisch signifikanter Anstieg») | Trägt «keine nachweisbare Zunahme» dieselbe Aussage wie «kein statistisch signifikanter Anstieg»? Der Satz ist der einzige auf den sieben Seiten, der eine Quelle im Text nennt. |
+
+### Korrektur 2b-2: Entscheide der bauenden Sitzung (zur Prüfung)
+
+1. **Eine Vertiefung mit einem Eintrag.** «Eine Vertiefung «Die sechs Stufen im Detail» mit sechs Einträgen» ist gebaut als ein Akkordeon-Eintrag mit diesem Titel; die sechs Stufen sind darin Teile mit Zwischentitel (h5). So steht der Titel des Auftrags auf dem Knopf, und ein Tabstopp genügt (vorher vier). Möglich wäre auch: sechs Einträge «Stufe 1 · …» unter einem Zwischentitel «Die sechs Stufen im Detail». Das wäre nur eine Änderung im Markup.
+2. **Bezeichnungen in der Vertiefung.**
+   - «Weiterer Beispielsatz» ist neu (Liste, Nr. 14c). Nach dem sichtbaren Beispiel bleibt je Stufe genau ein Beispielsatz, «Beispielsätze» passte nicht mehr.
+   - Bei Stufe 1 und 2 heisst der Dialog wie bei den Stufen 3 bis 6 «Kurzer Beispiel-Dialog» (bisher «Beispiel»).
+3. **«Stufe n» im Zwischentitel.** Die Bezeichnung steht als eigene Zeile im h4. Screenreader lesen «Stufe 1 Aufmerksam sein»; in der Überschriftenliste ist die Stufe erkennbar. Die Liste ist zudem ein `ol`.
+4. **Quellenblock mit Abschnitts-ID und Planzeile.** Der Block ist `section#quellen`, je Seite mit einer Planzeile `v-…-quellen` (`format` «text»). Gründe:
+   - Der Abgleich braucht für den neuen Ort eine Abschnitts-ID (`pruefe-abgleich.mjs`).
+   - Das Gate verlangt für jeden Abschnitt mit ID eine Planzeile (`plan-coverage`).
+   - Die Planzeilen ändern nichts am Wortlaut der Seiten.
+5. **«Bezug:» mitverschoben.** «Bezug: NICE CG78 (2009).» (`grenzen` › `arten`) steht jetzt im Block, obwohl der Auftrag «Bezug:» nicht nennt. Grund ist der Entscheid «Auf allen Seiten stehen die Quellen nicht mehr im Text» (Abschnitt 1).
+6. **«Verwendet in».**
+   - Die Abschnitte stehen in der Reihenfolge der Seite.
+   - Eine Angabe, wofür eine Quelle steht, steht in Klammern direkt nach dem Abschnitt, aus dem sie stammt. NICE NG150 (2020) hat auf `selbstfuersorge` zwei solche Angaben.
+   - «angepasste deutsche Fassung» gilt als solche Angabe; der Quellenname bleibt «Carol Vivyan, STOPP (Getselfhelp)».
+   - Im Block stehen keine Semikolons, sonst zählte `kennzahlen.mjs` sie als Fliesstext.
+7. **Alphabetische Reihenfolge.**
+   - nach Nachname oder Herausgeber, Umlaute wie Grundbuchstaben: «Carol Vivyan, STOPP (Getselfhelp)» unter V, «Eidgenössisches Büro …» unter E
+   - NHS vor NHS inform vor NICE, WHO vor WHO Europa
+   - gleicher Autor nach Jahr: Linehan (1993) vor Linehan (1997)
+8. **Keine Links im Block.** Die Abschnittstitel stehen als Text: weniger Tabstopps, und die Kapitelübersicht führt schon zu den Abschnitten.
+9. **Grosser Satzanfang.** «Die Übung in vier Schritten …» beginnt gross, weil der Satzteil jetzt allein steht; sonst ist der Wortlaut gleich.
+10. **`puk-site-anchor-end` bleibt.** Die Klasse bleibt am letzten Inhaltsabschnitt. So steht dieser Abschnitt beim Sprung über die Kapitelübersicht weiter oben im Fenster. Folge: «Aufgefallen», Nr. 1.
+11. **Druck.** Für die Stufen gilt `break-inside: avoid`, damit Name, Leitsatz und Beispiel einer Stufe auf einer Seite stehen. Im ersten PDF brach Stufe 4 zwischen «Beispiel» und dem Satz.
+
+### Korrektur 2b-2: Aufgefallen, nicht geändert
+
+1. **Leerraum vor dem Quellenblock.**
+   - Breit ist der letzte Inhaltsabschnitt mindestens eine Fensterhöhe hoch (`puk-site-anchor-end`).
+   - Wo er kurz ist, steht zwischen dem letzten Absatz und dem Quellenblock Leerraum: bei 1280 × 900 px auf `kommunizieren` 321 px, auf `verstehen` 270 px (Foto).
+   - Schmal entsteht kein Leerraum, weil die Abschnitte länger als das Fenster sind.
+2. **Fachbegriff im Quellenblock.** Bei Dazzi et al. (2014) steht weiter «in den eingeschlossenen Studien kein statistisch signifikanter Anstieg». Das ist der Wortlaut der Quellenzeile, und Abschnitt 4 des Auftrags nennt genau diese Angabe. Im Text steht jetzt «keine nachweisbare Zunahme» (Prüfung durch die Fachstelle, Nr. 12).
+3. **Eine Quelle im Text.** «(Dazzi et al., 2014)» steht im neuen Satz (Wortlaut des Auftrags). Alle anderen Quellennamen stehen nur noch im Block oder in Bildlegenden.
+4. **Offene Befunde der Nachprüfung 2b-K**, die dieser Auftrag nicht nennt:
+   - N2bK-1: Der Liste fehlen zwei Verdichtungen und der Bildtitel, im Kopf fehlt die Regel von 2b.
+   - N2bK-2: zwei Einzelposten der Wortzahl
+   - N2bK-3: die Bemerkung von c253
+   - Erledigt mit Abschnitt 5 sind N2bK-4 und «Aufgefallen» 2b-K, Nr. 1, 2 und 4.
+5. **Überschriften nach der Vertiefung.** In `anerkennen` folgen auf die Vertiefung «Die sechs Stufen im Detail» (h4) «Mitgefühl heisst nicht übernehmen. …» und die übrigen Absätze ohne eigene Überschrift. In der Überschriftenliste gehören sie damit formal zu dieser Vertiefung, vorher zu «Sechs Stufen der Validierung». Der Auftrag sagt «unverändert».
+
 **Stand 11.10.2026 · Korrektur Etappe 2b-K · bauende Sitzung (Claude Code).** Umgesetzt ist `KORREKTUR-ETAPPE-2B.md` (Entscheide der Fachstelle vom 11.10.2026 zu P2b-F-1 bis -12; Auftrag im Website-Ordner seit `ec98cc8`, Grundlage `borderline-umbau` am Stand `ac7ea04`). Geändert sind nur:
 
 - `content/kommunizieren.html` und `content/krise.html` (und die zwei gebauten Seiten)
@@ -180,9 +435,9 @@ Auf `krise` stehen damit sechs Verweise im Text in sieben Abschnitten (ohne `ver
 | 16 | Ein Bild, eine Idee; Beschriftungen nennen Erleben | E | zwei gesprochene Sätze, kein Bildteil beschriftet | – |
 | 17 | Keine ungewollten Bedeutungen | T | Die leere Mitte (Abstand, Kühle) ist behoben; Plan und Kurzbeschreibung sagen jetzt «nebeneinander», wie gezeichnet. Bleibt: Tee kann ein ruhiges Gespräch nahelegen, schmal ist die Zuordnung der Sätze nur über die Reihenfolge erkennbar | R2 |
 
-### Korrektur 2b-K: Neue Sätze zur Freigabe (vollständig, Stand nach Korrektur 2b-K)
+### Korrektur 2b-K: Neue Sätze zur Freigabe (vollständig, Stand nach Korrektur 2b-2)
 
-Grundlage für die Freigabe durch die Fachstelle (P2b-F-11 a). Die Liste ersetzt die Liste von 2b darunter. Sie enthält alle Sätze von `kommunizieren`, `krise` und `index`, die nicht im Wortlaut aus dem Bestand stammen, und alle Sätze, die in dieser Korrektur neu gefasst sind. Die Nummern von 2b bleiben; neue Einträge tragen einen Buchstaben, in der Nähe ihres Orts. Jedes Zitat ist per Skript wörtlich auf der gebauten Seite gefunden (98 Zitate). **Stand:** «wie 2b» = unverändert aus der Liste von 2b · «geändert (2b-K)» = Satz in dieser Korrektur neu gefasst · «neu (2b-K)» = Satz neu in dieser Korrektur. **Abgleich:** k = `kommunizieren.md`, c = `krise.md`, i = `index.md`, g = `grenzen.md`, b = `beziehungen.md`, r = `rolle.md`.
+Grundlage für die Freigabe durch die Fachstelle (P2b-F-11 a). Die Liste ersetzt die Liste von 2b darunter. Sie enthält alle Sätze von `kommunizieren`, `krise` und `index`, die nicht im Wortlaut aus dem Bestand stammen, und alle Sätze, die in dieser Korrektur neu gefasst sind. Die Nummern von 2b bleiben; neue Einträge tragen einen Buchstaben, in der Nähe ihres Orts. Jedes Zitat ist per Skript wörtlich auf der gebauten Seite gefunden (nach Korrektur 2b-2: 119 Stellen in «…» der Spalte «Satz»; dieselbe Zählung ergibt am Stand vor 2b-2 97, die Selbstprüfung 2b-K nannte 98). **Stand:** «wie 2b» = unverändert aus der Liste von 2b · «geändert (2b-K)» = Satz in dieser Korrektur neu gefasst · «neu (2b-K)» = Satz neu in dieser Korrektur. **Nachgeführt mit Korrektur 2b-2** (`KORREKTUR-ETAPPE-2B2.md`, Abschnitt 6): «geändert (2b-2)», «neu (2b-2)» und «verschoben (2b-2)» bei Nr. 14b, 14c, 20, 35, 36a, 42, 43a, 53a und 54a; darunter die zwei geänderten Sätze aus Abschnitt 5 (Nr. 35 und 53a). **Abgleich:** k = `kommunizieren.md`, c = `krise.md`, i = `index.md`, g = `grenzen.md`, b = `beziehungen.md`, r = `rolle.md`.
 
 **Nicht mehr in der Liste** (Satz entfällt): Nr. 17 (Einleitung mit den drei Lagen; ersetzt durch Nr. 17a und 17b, P2b-F-5), Nr. 44 (Satz zur Seite und Krisenberatung, P2b-F-6), Nr. 50 (Satz zur Schrittfolge, P2b-F-8).
 
@@ -205,6 +460,8 @@ Grundlage für die Freigabe durch die Fachstelle (P2b-F-11 a). Die Liste ersetzt
 | 13 | «Eine pauschale Schuldzuweisung müssen Sie nicht übernehmen, etwa mit «Du hast recht, ich bin an allem schuld.» oder «Okay, dann mache ich es so, wie du willst.»» | `kommunizieren` › `anerkennen` | Verdichtung | wie 2b | k650, k653, k654 |
 | 14 | «Sechs Stufen der Validierung» (Zwischentitel) | `kommunizieren` › `anerkennen` | neu | wie 2b | k966 |
 | 14a | «Die Stufen sind keine Pflichtfolge, und nicht jeder Schritt passt in jedes Gespräch.» | `kommunizieren` › `anerkennen` | Auftrag 2b-K, Abschnitt 5 b | geändert (2b-K) | k30 |
+| 14b | «Stufe 1» bis «Stufe 6» (kleine Bezeichnungen), die Namen der Stufen als Zwischentitel ohne Nummer davor («Aufmerksam sein», «Spiegeln», «Zwischen den Zeilen verstehen», «Im biografischen Kontext verstehen», «Im aktuellen Kontext nachvollziehen», «Radikale Echtheit: auf Augenhöhe bleiben») und die Bezeichnung «Beispiel» je Stufe | `kommunizieren` › `anerkennen`, Sechs Stufen | Auftrag 2b-2, Abschnitt 3 | neu (2b-2) | k33, k51, k67, k82, k96, k113 |
+| 14c | «Die sechs Stufen im Detail» (Titel der Vertiefung) mit den Einträgen «Stufe 1 · Aufmerksam sein» bis «Stufe 6 · Radikale Echtheit: auf Augenhöhe bleiben»; darin die Bezeichnung «Weiterer Beispielsatz» (von der bauenden Sitzung, bis 2b-2 Beispielsätze) | `kommunizieren` › `anerkennen`, Vertiefung | Auftrag 2b-2, Abschnitt 3; Bezeichnung neu | neu (2b-2) | k42, k59, k75, k90, k104, k121 |
 | 15 | «Übernehmen heisst hier: Aus einer Beobachtung wird die Annahme, Sie müssten das Erleben oder die Situation der anderen Person lösen.» | `kommunizieren` › `anerkennen` | Auftrag 2b-K, Abschnitt 5 b | geändert (2b-K) | g679, g683, g692 |
 | 16 | «Der richtige Moment» (Abschnittstitel) | `kommunizieren` › `moment` | Auftrag (Abschnitt 3) | wie 2b | k967 |
 | 17a | «Drei Stellen der Anspannungskurve können eine Orientierung geben, ob ein Gespräch gerade trägt.» (ersetzt Nr. 17) | `kommunizieren` › `moment` | Auftrag 2b-K, Abschnitt 5 a (P2b-F-5) | neu (2b-K) | k764, k968 |
@@ -213,7 +470,7 @@ Grundlage für die Freigabe durch die Fachstelle (P2b-F-11 a). Die Liste ersetzt
 | 18 | «Ein Gespräch ist möglich, Zuhören funktioniert, der Körper ist entspannt.» | `kommunizieren` › `moment`, «Wir können sprechen.» | Verdichtung | wie 2b | k771 bis k773 |
 | 19 | «Die Stimme wird lauter, Vorwürfe beginnen, der Körper spannt sich an.» | `kommunizieren` › `moment`, «Es wird eng.» | Verdichtung | wie 2b | k779 bis k781 |
 | 19a | «Stoppen Sie, und schaffen Sie Abstand.» (Ende der Beschreibung; der Beispielsatz danach entfällt) | `kommunizieren` › `moment`, «Es ist gerade zu viel.» | Auftrag 2b-K, Abschnitt 5 a (K-K-a1, P2b-F-12) | geändert (2b-K) | k787 bis k789, k659, k803 |
-| 20 | «Wie Anspannung in einem Gespräch steigen und wieder sinken kann, erklärt die Seite «Verstehen» im Abschnitt «Wenn die Anspannung steigt».» | `kommunizieren` › `moment` | Verweissatz | wie 2b | k969 |
+| 20 | «Wie Anspannung in einem Gespräch steigen und wieder sinken kann, erklärt die Seite «Verstehen» im Abschnitt «Wenn die Anspannung steigt».» | `kommunizieren` › `moment`, «Pause statt Streit», seit 2b-2 direkt nach der Einleitung | Verweissatz (Ort: Auftrag 2b-2, Abschnitt 5) | verschoben (2b-2) | k969 |
 | 21 | «Dann müssen Sie ihn unter Anspannung nicht erst suchen.» | `kommunizieren` › `moment`, «Was Sie tun können» | Verdichtung | wie 2b | k807, k808 |
 | 22 | «Jetzt Sicherheit oder Pause, später Klärung» (Zwischentitel) | `kommunizieren` › `moment` | Verdichtung | wie 2b | k131 |
 | 23 | «Dafür sind Sie nicht verantwortlich, auch wenn Sie versuchen, die Lage zu beruhigen.» | `kommunizieren` › `moment` | Verdichtung | wie 2b | k134 |
@@ -230,15 +487,17 @@ Grundlage für die Freigabe durch die Fachstelle (P2b-F-11 a). Die Liste ersetzt
 | 32a | «Die folgenden Sätze sind Beispiele und nicht typisch für alle Menschen mit Borderline.» | `kommunizieren` › `worte` | Auftrag 2b-K, Abschnitt 5 d | geändert (2b-K) | k837 |
 | 33 | «Wie Sie Suizidgedanken direkt ansprechen können, steht auf der Seite «Krisen begleiten» im Abschnitt «Wenn Suizidgedanken ein Thema sind».» | `kommunizieren` › `worte` | Verweissatz (Abschnitt 3) | wie 2b | k974 |
 | 34 | «So könnte es klingen» (Abschnittstitel) | `kommunizieren` › `beispiele` | Auftrag (Abschnitt 3) | wie 2b | k975 |
-| 35 | «Namen und «Person A» oder «Person B» bezeichnen keine festen Rollen und lassen sich nicht aus einer Diagnose ableiten.» | `kommunizieren` › `beispiele` | Verdichtung | wie 2b | r149, k265 |
+| 35 | «Die Namen bezeichnen keine festen Rollen und lassen sich nicht aus einer Diagnose ableiten.» | `kommunizieren` › `beispiele` | Verdichtung; Wortlaut Auftrag 2b-2, Abschnitt 5 | geändert (2b-2) | r149, k265 |
 | 36 | «Nach einem Arztbesuch» (Titel des Beispiels) | `kommunizieren` › `beispiele` | neu | wie 2b | k507 |
+| 36a | «Kim fühlt sich nach einem Arztbesuch nicht gehört.», «Sascha möchte nach dem Erleben fragen, ohne eine Erklärung oder Lösung vorauszusetzen.», «Sascha muss den Arztbesuch nicht beurteilen oder eine Lösung finden, um zuzuhören.» und die Bezeichnungen «Kim» und «Sascha» (bis 2b-2 Person A und Person B) | `kommunizieren` › `beispiele`, «Nach einem Arztbesuch» | Auftrag 2b-2, Abschnitt 5 | geändert (2b-2) | k551, k552, k518 |
 | 37 | «Robin kommt um 20 Uhr.» | ebenda | Verdichtung | wie 2b | k382 |
 | 38 | «Robin, wenn Zeit für ein Gespräch ist» und «Robin, wenn die Kraft nicht mehr reicht» (Bezeichnungen) | ebenda | neu | wie 2b | k976, k977 |
 | 39 | «Eine Bitte um Geld» (Titel) und «Grenzen beim Geld sind oft besonders schwer, weil sie sich anfühlen können wie «ich lasse dich fallen».» | `kommunizieren` › `beispiele` | Verdichtung | wie 2b | g209, g214 |
 | 40 | «Wie Sie nach einem Konflikt Kontakt anbieten können, steht auf der Seite «Ihre Rolle» im Abschnitt «Nach Konflikten und Rückzug».» | `kommunizieren` › `beispiele` | Verweissatz | wie 2b | k978 |
 | 41 | «Weitere Beispiele stehen auf der Seite «Grenzen» im Abschnitt «Sätze für typische Situationen».» | `kommunizieren` › `beispiele` | Verweissatz | wie 2b | k979 |
-| 42 | «Grundlage: Die Beispiele sind eigene didaktische Ableitungen aus den Ansätzen auf dieser Seite, kein auf Wirksamkeit geprüftes Übungsprogramm.» | `kommunizieren` › `beispiele` | Verdichtung | wie 2b | k263, k264 |
+| 42 | «Die Beispiele sind eigene didaktische Ableitungen aus den Ansätzen auf dieser Seite, kein auf Wirksamkeit geprüftes Übungsprogramm.» (seit 2b-2 ohne die Bezeichnung Grundlage) | `kommunizieren` › `beispiele` | Verdichtung; Auftrag 2b-2, Abschnitt 4 | geändert (2b-2) | k263, k264 |
 | 43 | «Wie sich Grenzen je nach Rolle unterscheiden, steht auf der Seite «Grenzen» im Abschnitt «Grenzen in verschiedenen Angehörigenrollen».» | `kommunizieren` › `rollen` | Verweissatz | wie 2b | k980 |
+| 43a | «Quellen zu dieser Seite» (Eintrag des Akkordeons am Seitenende) und «Verwendet in:» mit den Abschnittstiteln (Angabe je Quelle) | `kommunizieren`, `krise` und die fünf Seiten der Etappen 1 und 2a, Block am Seitenende (`#quellen`) | Auftrag 2b-2, Abschnitt 4 | neu (2b-2) | Ort `seite#quellen` |
 | 44a | «Bei unmittelbarer Gefahr oder wenn Sie nicht einschätzen können, wie dringend es ist, holen Sie sofort Hilfe und schützen sich selbst.» (erster Absatz, vor dem Verweis im Text) | `krise` › `belastung` | Auftrag 2b-K, Abschnitt 3 a (P2b-F-2, -6) | neu (2b-K) | c2, c68 |
 | 45 | «Sie können jederzeit direkt Hilfe holen.» | `krise` › `belastung` | Verdichtung | wie 2b | c11 |
 | 45a | «Die Bereiche bewerten keine Diagnose und sagen nicht voraus, wie sich eine Situation entwickeln wird.» | `krise` › `belastung` | Auftrag 2b-K, Abschnitt 3 a | geändert (2b-K) | c34 |
@@ -251,8 +510,9 @@ Grundlage für die Freigabe durch die Fachstelle (P2b-F-11 a). Die Liste ersetzt
 | 51 | «Ein Satz kann so klingen:» und «Zum Aussteigen reicht:» (Einleitungen) | `krise` › `sagen` | Auftrag 2b-K, Abschnitt 3 c (P2b-F-8) und neu | geändert (2b-K) | c263, c275, c276 |
 | 52 | «Wie Sie ein kippendes Gespräch verlangsamen und eine Grenze in drei Teilen sagen, steht auf der Seite «Zugewandt und klar sprechen» im Abschnitt «Wenn Gespräche kippen».» | `krise` › `sagen` | Verweissatz (Auftrag 2b-K, Abschnitt 3 c, P2b-F-8) | geändert (2b-K) | c303 |
 | 53 | «Wenn Sie sich konkret sorgen, fragen Sie ruhig und direkt, ob die Person Suizidgedanken oder einen Plan hat.» «Das kann helfen, die Lage zu verstehen.» «Bleiben Sie bei der Person nur, soweit dies für Sie sicher möglich ist.» «Direkt nachzufragen, löst nach heutigem Wissensstand keine suizidale Handlung aus.» | `krise` › `suizid` | Auftrag (Wortlaut von `verstehen`, Abschnitt 2b und 5) | wie 2b | c304 bis c307 |
+| 53a | «Eine Übersicht über mehrere Studien (Dazzi et al., 2014) fand keine nachweisbare Zunahme von Suizidgedanken durch direktes Fragen.» (bis 2b-2 Bestandswortlaut) | `krise` › `suizid` | Auftrag 2b-2, Abschnitt 5 | geändert (2b-2) | c120 |
 | 54 | «Diese Beurteilung ist Aufgabe von Fachpersonen, nicht von Angehörigen.» | `krise` › `suizid` | Verdichtung | wie 2b | c125 |
-| 54a | «Quellen: … NICE NG225 (2022), fachliche Beurteilung nach Selbstverletzung, keine Vorhersage durch pauschale Risikostufen; WHO, Suicide: Questions and answers (2026), direktes Fragen löst nach heutigem Wissensstand keine suizidale Handlung aus.» (Quellenzeile) | `krise` › `suizid` | Auftrag 2b-K, Abschnitt 4 b (P2b-F-4) | geändert (2b-K) | c123, c124 |
+| 54a | «WHO, Suicide: Questions and answers (2026)» mit «Verwendet in: «Wenn Suizidgedanken ein Thema sind» (direktes Fragen löst nach heutigem Wissensstand keine suizidale Handlung aus)» (bis 2b-2 Teil der Quellenzeile von `suizid`, ergänzt in 2b-K) | `krise`, Block «Quellen zu dieser Seite» | Auftrag 2b-K, Abschnitt 4 b (P2b-F-4); Ort Auftrag 2b-2, Abschnitt 4 | verschoben (2b-2) | c123, c124 |
 | 55 | «Was Sie in einer Krise vermeiden sollten» (Abschnittstitel) und «In einer Krise sollten Sie vermeiden,» (Einleitung) | `krise` › `vermeiden` | Auftrag 2b-K, Abschnitt 4 a (P2b-F-3) | geändert (2b-K) | c126, c308 |
 | 55a | «Bei möglicher unmittelbarer Lebensgefahr holen Sie sofort Hilfe über den Notruf.» (vor dem Verweis im Text) | `krise` › `danach` | Auftrag 2b-K, Abschnitt 3 d (P2b-F-1) | geändert (2b-K) | c139, c190 |
 | 56 | «Nach einer Krise können Scham, Reue, Erleichterung, Ärger, Rückzug oder ganz andere Reaktionen auftreten.» | `krise` › `danach` | Auftrag (Wortlaut von `rolle`, Abschnitt 2b) | wie 2b | c141 |

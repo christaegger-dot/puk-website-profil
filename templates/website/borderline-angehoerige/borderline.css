@@ -130,3 +130,24 @@
 /* Auf sich achten, Abschnitt 02 (Etappe 2a): Text direkt nach der Abbildung «Ein freier Abend» (Bauauftrag 2a, Abschnitt 4).
    Zweites Raster im selben Abschnitt, linke Spalte leer; Abstand zur Figur wie .puk-vis-wide über der Figur. */
 .bl-nach-figur{margin-top:var(--space-8)}
+
+/* Zugewandt und klar sprechen, «Sechs Stufen der Validierung» (Korrektur 2b-2, Abschnitt 3): gestaltete Liste, keine Abbildung.
+   Gebaut wie die nummerierten Schritte von DEAR auf «Grenzen» in der schmalen Darstellung (Nummernpunkt, senkrechte Linie,
+   kleine Bezeichnung, Name als Zwischentitel, Beispiel als .puk-say), hier senkrecht bei jeder Breite. Leitsatz und Ziel in
+   Seitenschrift, der Name in der Grösse der Zwischentitel h4 des Profils (kleiner als der Titel «Sechs Stufen der Validierung»).
+   Masse wie DEAR, über Tokens: Punkt --space-6, Linie --border-width-strong in der Mitte des Punkts, Einzug --space-10. */
+.bl-stufen{list-style:none;margin:var(--space-5) 0 var(--space-6);padding:0}
+.bl-stufen>li{position:relative;min-width:0;padding:0 0 var(--space-6) var(--space-10)}
+.bl-stufen>li:last-child{padding-bottom:0}
+.bl-stufen>li::before{content:"";position:absolute;left:calc((var(--space-6) - var(--border-width-strong)) / 2);top:var(--space-6);bottom:0;border-left:var(--border-width-strong) solid var(--puk-blue-100)}
+.bl-stufen>li:last-child::before{display:none}
+.bl-stufen>li::after{content:"";position:absolute;left:0;top:0;width:var(--space-6);height:var(--space-6);box-sizing:border-box;border-radius:50%;background:var(--puk-blue-100)}
+.bl-stufen__n{display:block;font:var(--type-caption);color:var(--text-default)}
+.bl-stufen .bl-stufen__name{margin:0 0 var(--space-2);color:var(--text-default)}
+.bl-stufen>li>p{margin:0}
+.bl-stufen .puk-say{margin:var(--space-3) 0 0}
+.bl-stufen .puk-say__item{margin:0}
+/* Vertiefung «Die sechs Stufen im Detail»: ein Eintrag je Stufe mit Zwischentitel in der Schrift der Vertiefung */
+.puk-acc__panel .bl-stufen__detail{margin:var(--space-6) 0 var(--space-2);font:inherit;font-weight:var(--fw-medium);color:var(--text-default)}
+.puk-acc__panel .bl-stufen__detail:first-child{margin-top:0}
+@media print{.bl-stufen>li{break-inside:avoid}}
