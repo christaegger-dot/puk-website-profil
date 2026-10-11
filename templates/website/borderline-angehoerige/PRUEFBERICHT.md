@@ -68,6 +68,554 @@ Dazu 5 leichte Befunde zu Bericht und Abgleich. Die erste und zweite Prüfrunde 
 
 Nach jedem Bau ohne Nachfrage ausfüllen: Visualisierungs-Check wie unten, mit Beleg je Punkt. Arbeitsstand, keine Prüfstufe.
 
+**Stand 12.10.2026 · Korrektur 2c-K · bauende Sitzung (Claude Code).** Umgesetzt ist `KORREKTUR-ETAPPE-2C.md` (Entscheide der Fachstelle vom 12.10.2026 zu den zwei Prüfrunden 2c: P2c-F-1 bis -15, P2c2-F-1 bis -15, Kürzungen K2-B-a1 und -a2, Bericht und Abgleich P2c-W1-6). Grundlage ist `borderline-umbau` am Stand `e64815d` (beide Prüfberichte 2c gemergt, PR #25 und #26). Gearbeitet ist auf dem Branch `claude/new-session-u0sun2` (Stand gleich `borderline-umbau`); der Pull Request geht als Entwurf gegen `borderline-umbau`. Geändert sind nur:
+
+- `content/` und die gebauten Seiten von `genesung`, `unterstuetzung`, `diagnose` und `behandlung`
+- `site.config.json`: der Plan `v-ge-trieb` (Abschnitt 4 d); dazu in `v-be-rollen` die Bezeichnung «Mögliche Beiträge» und in `v-be-kontakt` «fünf Vertiefungen» (Regel 2, Entscheid Nr. 6 unten)
+- der Abgleich: `genesung.md`, `unterstuetzung.md`, `diagnose.md`, `behandlung.md` und `README.md`
+- in diesem Bericht nur dieser Block
+
+`borderline.css` ist unverändert: Die Bezeichnungen in «Ein neuer Trieb» nutzen die vorhandene Klasse `puk-say__label`. Die Seiten der Etappen 1, 2a und 2b und `index` sind unverändert (`git diff e64815d` über `content/` und die gebauten Seiten von `index`, `verstehen`, `beziehungen`, `grenzen`, `rolle`, `selbstfuersorge`, `kommunizieren` und `krise`: leer). Keine Prüfstufe ist «erledigt»; der Status bleibt in allen Zeilen «offen». **Nachprüfung:** Die Korrektur prüft eine Sitzung, die weder 2c-1 oder 2c-2 gebaut noch 2c-K umgesetzt hat. Offen bis zur Freigabe 2c bleiben die Freigabe der Abbildung (P2c-F-2 a), die Verweise von freigegebenen Seiten (P2c-F-16) und die Freigabe der neuen Sätze (P2c-F-17, Liste unten). Der Block von 2c-2 steht darunter.
+
+**Auftrag im Website-Ordner:** `KORREKTUR-ETAPPE-2C.md` kam als Anhang in diese Sitzung. Er liegt unverändert in diesem Ordner, wie die früheren Aufträge (`cmp` gleich, SHA-256 `6ab8df417f07fefbaccc8cd3c68ba0f0006d084af320ddc57f3835ec2cf7e9b4`).
+
+### Korrektur 2c-K: Stand je Punkt (Abschnitte 3 bis 7)
+
+| Punkt | Stand | Beleg |
+| --- | --- | --- |
+| 3 a `wartezeit`, Schritt 4 (P2c-F-1, P2c2-F-1) | umgesetzt | Schritt 4 endet: «… und fragen Sie nach einem früheren Termin oder einer anderen Hilfe. Bei unmittelbarer Gefahr oder wenn Sie nicht einschätzen können, wie dringend es ist, warten Sie nicht auf einen Therapieplatz und holen sofort Hilfe.»; direkt danach der Verweis im Text (`p[data-responsibility-inline]` im selben Listenpunkt, wie bisher). Der Satz folgt `krise` › `belastung` («Bei unmittelbarer Gefahr oder wenn Sie nicht einschätzen können, wie dringend es ist, holen Sie sofort Hilfe und schützen sich selbst.»). «Notruf» steht in `wartezeit` nicht mehr. Liste unten Nr. 342 (2c-2 Nr. 243); Abgleich d179, b198 «umformuliert (2c-K)», b272 «zusammengeführt (2c-K)» |
+| 3 a «In anderen Kantonen» (P2c-F-10) | umgesetzt | «**In anderen Kantonen:** Die Angebote auf dieser Seite sind keine schweizweite Liste. Fragen Sie in der Hausarztpraxis oder beim psychiatrischen Dienst Ihres Wohnkantons nach Anmeldung, Zuständigkeit und Zwischenversorgung. Wie Sie ausserhalb des Kantons Zürich Anlaufstellen finden, steht auf der Seite «Unterstützung finden» …». Abgleich d181 «umformuliert (2c-K)», Bemerkung beginnt «P2c-F-10; ‹Hausarztpraxis› statt ‹Hausärzt:in›». Derselbe Bestandssatz steht in `behandlung.md` Nr. 200; er ist gleich behandelt (Regel 2). Liste Nr. 344 |
+| 3 b `kontakt`, Vertiefung entfällt (P2c2-F-14, K2-B-a1) | umgesetzt | «Was kann ich in einem vereinbarten Kontakt mitteilen?» ist weg; es bleiben fünf Vertiefungen: «Ich werde nicht zu Sitzungen eingeladen», «Ich möchte über meine eigene Belastung sprechen», «Ich mache mir Sorgen um den Verlauf», «Nach einer Krise: Zuständigkeiten klären», «Musterbrief für einen ersten Kontakt». Begriff «Beobachtungen mitteilen»: «… ohne Motive, Diagnose oder Therapieverlauf zu bewerten. Zum Beispiel: «Mir ist aufgefallen, dass … An wen kann ich mich mit meiner Sorge wenden?» Klären Sie den geeigneten Kontaktweg. …». Abgleich: b116 «entfällt (2c-K)» (Titel); die vier Punkte b117, b118, b120, b122 «zusammengeführt (2c-K)» mit dem Satz im Begriff, der dasselbe sagt; b119 («Eine laufende Überwachung ist nicht Ihre Aufgabe.») «zusammengeführt (2c-K)» mit «den Fortschritt kontrollieren oder überwachen», Ort `behandlung#rollen`. Was dabei nicht eigens steht («vereinbarte Themen», «Anlass»), nennen die Bemerkungen. Liste Nr. 230 neu, Nr. 245 bis 247 entfällt |
+| 3 b «Ich mache mir Sorgen um den Verlauf» (P2c-F-15) | umgesetzt | «Sie sehen von aussen nicht, was in der Therapie geschieht und welche Ziele die Person mit dem Behandlungsteam vereinbart hat.»; Abgleich b98, Liste Nr. 242 |
+| 3 c `angebote` (P2c-F-3, P2c2-F-3) | umgesetzt | Einleitung: «… Die Liste ist nicht abschliessend. Aufgeführt sind Angebote mit Schwerpunkt Borderline oder DBT und Behandlungsangebote für junge Menschen, die Menschen aus dem Kanton Zürich nutzen können. Auch niedergelassene …». HYPE Züri «Für: Jugendliche». PUK Zürich, Erwachsene unverändert. ipw: «Die Station richtet sich an junge Erwachsene von 17 bis 25 Jahren. Klären Sie die aktuellen Alters- und Aufnahmebedingungen direkt mit dem Anbieter.», «Für: junge Erwachsene» bleibt. Sanatorium Kilchberg: ganzer Eintrag weg (Titel, Satz, «Für: …», Link). Clienia Schlössli unverändert. Dachverband DBT: «Der Dachverband DBT bietet einen Suchweg für zertifizierte DBT-Therapeutinnen und -Therapeuten. Die Suche lässt sich nach Land filtern.» **Fünf Einträge** (h3 in `angebote`: HYPE Züri, PUK Zürich Erwachsene, ipw, Clienia Schlössli, Dachverband DBT); externe Links auf `behandlung` 7 → 6, die übrigen Adressen unverändert. Abgleich: d154 bis d156 und b313 «entfällt (2c-K)» mit «kein Angebot mit Schwerpunkt Borderline oder DBT belegt, P2c-F-3, P2c2-F-3»; b310 und b316 «neu (2c-K)»; neu b320 (Kriterium) und b321 (ipw). Liste: Nr. 305 und 319 neu, 2c-2 Nr. 214 und 232 geändert (Nr. 312, 331), Nr. 221 bleibt (Nr. 320), Nr. 224 entfällt (Nr. 323; mit Nr. 223 und 225) |
+| 3 d `rollen` (P2c-F-15, P2c2-F-4) | umgesetzt | «Mögliche Beiträge» über der ersten Liste in allen drei Spalten («Kann beitragen»: 0), «Nicht zu erwarten» bleibt. Spalte «Angehörige» › «Nicht zu erwarten» mit fünf Punkten im Wortlaut des Auftrags, die übrigen Spalten unverändert. Plan `v-be-rollen` nennt «Mögliche Beiträge». Abgleich b21 «umformuliert (2c-K)», b31, b244 bis b246 «zusammengeführt (2c-K)»; Liste Nr. 209, 225, 226. Höhe der Spalten unten bei «Prüfungen» |
+| 3 e `therapieformen` (P2c-F-15, P2c2-S-1, K2-B-a2) | umgesetzt | erster Absatz endet «… und es gibt keine Methode, die für alle Menschen die beste ist.»; «Therapie kann in drei Rahmen stattfinden:»; «Behandlungsziele und Fortschritt bewertet die betroffene Person gemeinsam mit dem Behandlungsteam.»; «Eine starre Reihenfolge gilt nicht. Der Behandlungsplan wird individuell abgestimmt.». «Fachteam» auf `behandlung` (gebaute Seite): 0. Abgleich b167 «entfällt (2c-K)», b165, b251 «umformuliert (2c-K)», d346 «umformuliert (2c-K)», d350 bis d352 «zusammengeführt (2c-K)»; Liste Nr. 266, 270, 274 |
+| 4 a Bezeichnungen (P2c-F-2 c, P2c2-F-2, P2c2-V-1) | umgesetzt | `<span class="puk-say__label">Weniger hilfreich</span>` vor «Eine schwierigere Phase entwertet alles.», `<span class="puk-say__label">Tragfähiger</span>` vor «Schwierigere Phasen kommen vor und müssen nicht alles kippen.»; derselbe Klassenname wie die Bezeichnungen der Gegenüberstellung `.puk-say` weiter unten in `verlauf` (`type-caption`, `--text-muted`, eigene Zeile, 13 px). Der tragfähige Satz bleibt der zweite (bei 1280 px rechts, bei 360 px unten). Keine neue Regel, keine `style`-Attribute, keine festen Farben. Liste Nr. 12, Abgleich g119, g121, g123, g125 nachgeführt |
+| 4 b Giesskanne entfällt (P2c2-F-2 a; P2c-F-2 b, P2c-V-1, P2c2-V-2) | umgesetzt | Die sechs Pfade der Giesskanne (Körper, zwei Linien und Kopf des Ausgusses, Henkel oben und seitlich) sind weg; 20 statt 26 Pfade. Pflanze (Stängel, Zweige, Blätter), Topf, Sims, abgefallenes Blatt und neuer Trieb bleiben. Bildausschnitt `viewBox` «60 44 420 214» statt «60 44 530 214» (Pflanze in der Mitte). Die Sätze stehen bei 1280 px **nebeneinander** (Begründung: Entscheid Nr. 1 unten). Kernaussage, Kurztext, «Grenzen des Bildes» (mit «Angehörige können Genesung nicht herstellen.») und Quelle unverändert (`git diff`: in der Figur nur Szene und Kurzbeschreibung geändert) |
+| 4 c Rückschritt deutlicher (P2c2-V-3) | umgesetzt | **Blatt:** derselbe Blattumriss, ähnlich abgebildet (gedreht und 1,39-fach), Stielende auf dem Sims rechts vom Topf (342, 231), Spitze an der Topfwand (293, 204); gezeichnet nach dem Topf, damit es vor dem Topf lehnt. Länge 40 → 56 Einheiten; bei 360 px 37 × 22 px statt 24 × 9 px. **Trieb:** die zwei Blätter oben `puk-vis-scene__paper` (Weiss) statt `puk-vis-scene__soft` (Blau 25), Pfade gleich. Sonst keine Pfade geändert |
+| 4 d Kurzbeschreibung und Plan | umgesetzt | `p.puk-sr`: «Zeichnung: Eine Topfpflanze steht auf einem Fenstersims. Ein Blatt ist abgefallen und liegt am Topf, oben wächst ein neuer, heller Trieb. Über der Zeichnung stehen zwei Haltungen: als weniger hilfreich «Eine schwierigere Phase entwertet alles.», als tragfähiger «Schwierigere Phasen kommen vor und müssen nicht alles kippen.»». Plan `v-ge-trieb`: `goal`, `statement`, `understood` (letzter Satz entfällt), `resonance` im Wortlaut des Auftrags; `reason` beschreibt den neuen Stand (Giesskanne entfernt, Blatt und Trieb geändert, Bildausschnitt `60 44 420 214`, P2c2-F-2 und P2c2-V-3; P2c-T-1, P2c2-T-1). `approvalStatus` «ausstehend». Liste: 2c-1 Nr. 12 und 15 geändert; Nr. 11 (Kurztext) bleibt im Wortlaut, weil Abschnitt 4 b den Kurztext unverändert lässt (Entscheid Nr. 10) |
+| 4 e Ansehen | umgesetzt | Visualisierungs-Check unten (Fotos, Prüfpunkte, Freundin-Test) |
+| 5 a Begleiterkrankungen und Medikamente (P2c2-F-5, P2c-F-4 b, P2c2-F-10) | umgesetzt | `genesung` › `einfluesse`: «Körperliche Beschwerden und weitere psychische Erkrankungen werden ebenfalls behandelt, bei Bedarf auch mit Medikamenten. Für Borderline selbst sind Medikamente keine Kernbehandlung. Medikamente werden nur gemeinsam mit der behandelnden ärztlichen Fachperson geändert.»; `behandlung` › `therapieformen`: «… mit der behandelnden ärztlichen Fachperson geklärt. Medikamente werden nur gemeinsam mit der behandelnden ärztlichen Fachperson geändert.». Die übrigen Sätze zu Medikamenten unverändert. Abgleich g144, g145, g395, g396 «umformuliert (2c-K)», b303 «neu (2c-K)», d349 nachgeführt; Liste Nr. 23, 24, 277 |
+| 5 b `diagnose` Nr. 1 bis 8 (P2c-F-15, P2c2-F-15, P2c2-S-1 bis -6) | umgesetzt | Nr. 1 bis 5 in `abklaerung` (Liste Nr. 96, 97, 102, 104, 109, 110), Nr. 6 in `ohne-diagnose` (Nr. 162; nur hier: auf `genesung`, `unterstuetzung`, `behandlung` und `krise` steht der Verweissatz weiter mit «Wie die Fachstelle Angehörigenarbeit der PUK berät»), Nr. 7 und 8 in `begleiterkrankungen` (Nr. 177, 204), je im Wortlaut der Tabelle. «Setting» als Wort auf `diagnose`: 0 (zu «Versorgungssetting» siehe «Aufgefallen» Nr. 1). Abgleich d22, d25, d40, d48 bis d50, d340 «umformuliert (2c-K)», d26, d39, d128, d195 «zusammengeführt (2c-K)» |
+| 6 a Gruppe für Eltern (P2c-F-11, P2c2-F-12) | umgesetzt | «Für Eltern jugendlicher Betroffener gibt es an der PUK Zürich die «Gruppentherapie für Eltern von Jugendlichen mit einer Borderline-Persönlichkeitsstörung».»; Zwischentitel und Link unverändert. Abgleich d189, Liste Nr. 69 |
+| 6 b Kinderbuch (P2c-F-12) | umgesetzt | «Ein deutschsprachiges Kinderbuch speziell zum Thema Borderline. Erklärt kindgerecht …»; Abgleich u217, Liste Nr. 83 |
+| 6 c Krankenkasse (P2c-F-14) | umgesetzt | `unterstuetzung` › `beratung`, im selben Absatz direkt nach dem Verweissatz: «Wie die Fachstelle Angehörigenarbeit der PUK berät, steht auf der Startseite im Abschnitt «Beratung für Sie». Die Beratung der Fachstelle kostet nichts und wird nicht an Krankenkassen weitergegeben.» Abgleich: d369 und u82 mit Fundstelle `unterstuetzung#beratung`, «umformuliert (2c-K)», Bemerkung beginnt «P2c-F-14; ‹Die Beratung der Fachstelle› statt ‹Beratung›»; in d369 ist die Bemerkung korrigiert (P2c-W1-6: «wird nicht an Krankenkassen weitergegeben» stand bis 2c-K auf keiner Seite, die frühere Bemerkung verwies auf eine Frage aus 2c-1, die nur die Frage des Bestands nannte). Zu u82 Entscheid Nr. 8. Liste Nr. 52 |
+| 7 Liste 2c-2 Nr. 57 (P2c-W1-6) | umgesetzt | Art «gekürzt (im Bestand folgt «und die Zugangsbedingungen klären»; …)», Liste Nr. 152 |
+| 7 Kennzahlen `genesung`, `unterstuetzung` (P2c-W1-6) | umgesetzt | `kennzahlen.mjs`, Absicherungen je 100 Wörter: `genesung` 2,21 (nach 2c-2, die Selbstprüfung 2c-1 nannte 2,17) → 2,21; `unterstuetzung` 1,08 (2c-1: 1,12) → 1,07. `verneinung.mjs`: `genesung` 45 von 159 (28 %, 2c-1: 45 von 158) → 45 von 159 (28 %); `unterstuetzung` 16 von 198 (8 %, 2c-1: 16 von 193) → 17 von 199 (9 %; der neue Satz zur Krankenkasse hat «nicht»). Alle vier Seiten unten bei «Wörter» |
+| 7 Übrige Zeilen | umgesetzt | 53 Zeilen mit «umformuliert (2c-K)», «zusammengeführt (2c-K)», «entfällt (2c-K)» oder «neu (2c-K)» (`genesung.md` 5, `unterstuetzung.md` 2, `diagnose.md` 22, `behandlung.md` 24, davon 2 neue Zeilen Nr. 320, 321), je mit der Nummer der Frage und «bis 2c-K: …». 8 Zeilen nur mit nachgeführter Bemerkung, Status unverändert (`genesung.md` 119, 121, 123, 125; `diagnose.md` 137, 142 mit gekürzter Fassung, 349; `behandlung.md` 253). Neue Statuswerte in `abgleich/README.md`. Gefunden mit einem Skript, das jede Zeile aller zwölf Tabellen meldet, deren Fassung vor der Korrektur in einem geänderten oder entfallenen Block stand oder deren Bemerkung entfallenen Text zitiert (115 Treffer); Zeilen, deren eigener Satz unverändert blieb, sind unverändert (zum Beispiel d47, d80, d141, b166) |
+
+### Korrektur 2c-K: Prüfungen nach Abschnitt 8
+
+- **`node tools/build.mjs`:** 0 blockierend, 6 Hinweise (1 × `visual-approval` `v-ge-trieb`, 3 × `placeholder-approval`, `site-url`, `review-report`).
+- **`node tools/gate.mjs --selftest`:** 53/53 bestanden.
+- **`node tools/gate.mjs --production`:** 5 blockierend wie bisher (1 × `visual-approval` `v-ge-trieb`, 3 × `placeholder-approval` `fragen`, `quellen`, `ueber`, 1 × `review-report`), dazu der Hinweis `site-url`.
+- **`node abgleich/pruefe-abgleich.mjs`:** 6069 Zeilen, 0 ohne Fundstelle. Vor dem Nachführen meldete es 51 Zeilen ohne Fundstelle.
+- **«Ein neuer Trieb»:** Fotos bei 1280 und 360 px, je Standard und «kontrast», angesehen (Visualisierungs-Check unten). Druck: Seite 4 des PDF von `genesung` angesehen, Bezeichnungen, Zeichnung und «Grenzen des Bildes» vollständig.
+- **`rollen`** (Fotos bei 1280, 768 und 360 px; Höhe vom Spaltenanfang bis zum letzten Punkt, vorher → nachher):
+
+  | Breite | Die betroffene Person | Fachpersonen | Angehörige |
+  | --- | ---: | ---: | ---: |
+  | 1280 px (drei Spalten, je 347 px) | 498 → 498 px | 575 → 575 px | 884 → 811 px |
+  | 768 px (untereinander, 707 px) | 303 → 303 px | 413 → 413 px | 559 → 518 px |
+  | 360 px (untereinander, 320 px) | 498 → 498 px | 575 → 575 px | 949 → 876 px |
+
+  Die Spalte «Angehörige» ist ausgewogener, aber weiter die längste: bei 1280 px 1,41-mal so hoch wie «Fachpersonen» (vorher 1,54) und 1,63-mal so hoch wie «Die betroffene Person» (vorher 1,78). Die zwei zusammengeführten Punkte sind lang und brauchen in der Spalte von 347 px je drei Zeilen (Foto bei 1280 px), deshalb bleibt der Gewinn mit 73 px kleiner, als die Zahl der Punkte (7 → 5) vermuten lässt.
+- **Überlauf:** `genesung`, `unterstuetzung`, `diagnose`, `behandlung` bei 320, 360, 375, 414, 640, 768, 1024, 1280 und 1440 px, Standard und «kontrast», Vertiefungen zu und offen (144 Messungen): `scrollWidth` gleich `clientWidth` in allen 144, kein waagrechter Überlauf. Die Prüfung je Element meldet auf `genesung` bis 768 px einen Pfad: den Sims im SVG, dessen Umriss über den engeren Bildausschnitt hinausreicht. Das SVG schneidet ihn ab (`overflow: hidden`); sichtbar ist nichts ausserhalb der Figur. Zoom 200 % (640 px bei Faktor 2 und 1280 px mit Schriftgrösse 200 %, Vertiefungen offen): alle vier Seiten 0 px.
+- **Tastatur und Fokus** (1280 px, reduzierte Bewegung): Tabstopps bis zur Fusszeile (`bedienung.mjs`) `genesung` 21, `unterstuetzung` 22, `diagnose` 30 wie vorher, `behandlung` 35 → 33 (ein Link und eine Vertiefung weniger); erster Stopp «Zum Hauptinhalt», 0 Stopps ohne sichtbaren Fokus. Vertiefungen: Enter öffnet 3 von 3, 1 von 1, 4 von 4 und 7 von 7, Leertaste schliesst alle; Fokusring an allen 15 Schaltflächen. «Grenzen des Bildes» öffnet mit Enter. Die Zeichnung ist ein SVG ohne Animation.
+- **Ohne Skript:** 3 von 3, 1 von 1, 4 von 4 und 7 von 7 Panels sichtbar.
+- **Druckansicht mit allen Vertiefungen** (Medium `print`, dazu PDF A4 ohne Rand aus Chromium): alle Panels und «Grenzen des Bildes» sichtbar (4 von 4, 1 von 1, 4 von 4, 7 von 7). Seiten: `genesung` 9 → 9, `unterstuetzung` 9 → 9, `diagnose` 11 → 11, `behandlung` 15 → 14. Im PDF von `behandlung` stehen «Programme für Angehörige» und der Musterbrief, «Kilchberg» und die entfallene Vertiefung nicht.
+- **`node abgleich/bedienung.mjs`** (vorher am Stand `e64815d`, gleiches Skript): Höhe bei 360 px `genesung` 14 461 → 14 571 px (Abbildung 766 → 847 px), `unterstuetzung` 13 869 → 13 928, `diagnose` 17 901 → 17 930, `behandlung` 21 460 → 21 368 px. Übrige Seiten unverändert.
+- **Kontrast:** Bezeichnungen «Weniger hilfreich» und «Tragfähiger» 5,92 : 1, die Sätze der Szene 15,91 : 1, in beiden Themes. Die Linien der Zeichnung haben dieselben Klassen wie vorher.
+- **Technik** (`content/` der vier Seiten): `style`-Attribute 0, Hexwerte 0, `tel:` 0, keine Telefonnummer. «Fachteam» auf `behandlung` 0, «Setting» auf `diagnose` 0, «Kilchberg» 0, «Giesskanne» auf `genesung` 0.
+- **Keine Änderung an Etappe 1, 2a, 2b und `index`:** `git diff` leer (siehe oben).
+- **Externe Links:** nicht aufgerufen (Netzwerk dieser Umgebung); die Fachstelle hat am 12.10.2026 alle zwölf Ziele bestätigt. Adressen unverändert, der Link auf das Sanatorium Kilchberg entfällt mit dem Eintrag.
+- **Nicht prüfbar in dieser Umgebung:** reale Screenreader-Läufe, Hardwaretastatur und Touch.
+
+### Korrektur 2c-K: Wörter im Lesefluss vorher und nachher (Zählweise C1)
+
+C1 wie in 2c-2 (innerste `p`, `li`, `dt`, `dd` in `<main>`, ohne SVG, Text nur für Screenreader, Kapitelübersicht, Kicker, Eyebrow, «Abbildung n · …», Quellenzeile und den Block «Quellen zu dieser Seite»; «im Lesefluss» ohne die Panels der Akkordeons, «Grenzen des Bildes» zählt mit; der Verweis im Text zählt mit). Skript dieser Sitzung im Browser (`innerText`), vorher und nachher dasselbe Skript; «vorher» ist `e64815d`. Es ergibt dort genau die Werte von 2c-2 für `genesung` (1164 / 1241), `unterstuetzung` (1105 / 1318) und `index` (232) und die Werte der zweiten Prüfsitzung 2c für `diagnose` und `behandlung` mit Vertiefungen (1871, 2345). Im Lesefluss zählt es auf `diagnose` 4 und auf `behandlung` 1 Wort mehr als die Selbstprüfung 2c-2 (1542 statt 1538, 1678 statt 1677): Es trennt die Bezeichnungen «Ihre Rolle» und «In einer stabilen Phase direkt ansprechen» vom folgenden Wort.
+
+| Seite › Abschnitt | im Lesefluss vorher | nachher | Differenz | mit Vertiefungen vorher → nachher |
+| --- | ---: | ---: | ---: | --- |
+| **`genesung`** | **1164** | **1168** | **+4** | 1241 → 1245 |
+| Kopf · `forschung` · `begriffe` · `freiwillig` | 55 · 184 · 192 · 197 | gleich | 0 | gleich |
+| `verlauf` | 274 | 277 | +3 | 274 → 277 |
+| `einfluesse` | 262 | 263 | +1 | 262 → 263 |
+| **`unterstuetzung`** | **1105** | **1117** | **+12** | 1318 → 1330 |
+| Kopf · `selbsthilfe` · `kantone` | 39 · 35 · 42 | gleich | 0 | gleich |
+| `beratung` | 205 | 217 | +12 | 205 → 217 |
+| `austausch` | 136 | 137 | +1 | 136 → 137 |
+| `buecher` | 648 | 647 | −1 | 861 → 860 |
+| **`diagnose`** | **1542** | **1549** | **+7** | 1871 → 1878 |
+| Kopf · `bedeutung` · `zweifel` · `begleiterkrankungen` | 60 · 114 · 185 · 508 | gleich | 0 | gleich (`begleiterkrankungen` 703) |
+| `abklaerung` | 424 | 434 | +10 | 558 → 568 |
+| `ohne-diagnose` | 251 | 248 | −3 | 251 → 248 |
+| **`behandlung`** | **1678** | **1716** | **+38** | 2345 → 2327 |
+| Kopf · `rueckschlaege` | 39 · 216 | gleich | 0 | gleich |
+| `rollen` | 261 | 259 | −2 | 261 → 259 |
+| `kontakt` | 336 | 351 | +15 | 886 → 845 |
+| `therapieformen` | 318 | 313 | −5 | 435 → 430 |
+| `angebote` | 200 | 212 | +12 | 200 → 212 |
+| `wartezeit` | 308 | 326 | +18 | 308 → 326 |
+
+- **Gründe:** `verlauf` Bezeichnungen in der Abbildung (+3); `einfluesse` «ärztlichen» (+1); `beratung` Satz zur Krankenkasse (+12); `austausch` «die «Gruppentherapie für Eltern …»» (+1); `buecher` «Ein» statt «Das einzige» (−1); `abklaerung` erster Satz geteilt (+6), «Sie können ihn anbieten, aber nicht erzwingen.» (+3), «Die Abklärung machen …» (+1); `ohne-diagnose` kürzerer Verweissatz (−3); `rollen` fünf statt sieben Punkte (−2); `kontakt` Beispielsatz im Begriff (+15), die Vertiefung (−56) zählt nur mit Vertiefungen; `therapieformen` Satz zur generalistischen Behandlung (−6), «ärztlichen» (+1); `angebote` Kriterium (+21), Satz zur ipw (+12), «ab 13 Jahren» (−3), Sanatorium Kilchberg (−19), Dachverband (+1); `wartezeit` Handlungsanleitung (+2), Satz zum Wohnkanton (+16).
+- **Ziele** (etwa 1800 für `genesung`, `diagnose` und `behandlung`, etwa 1500 für `unterstuetzung`) weiter erreicht.
+- **`kennzahlen.mjs`** (gesamt, alt → vor 2c-K → nachher): `genesung` 1620 → 1492 → 1496, `unterstuetzung` 2010 → 1393 → 1405, `diagnose` 3769 → 2165 → 2172, `behandlung` 2696 → 2700 → 2672. Absicherungen je 100 Wörter: 2,21 → 2,21; 1,08 → 1,07; 2,03 → 2,12; 2,59 → 2,62. Semikolons im Fliesstext 0 auf allen vier Seiten.
+- **`verneinung.mjs`** (vor 2c-K → nachher): `genesung` 45 von 159 (28 %) → 45 von 159 (28 %), `unterstuetzung` 16 von 198 (8 %) → 17 von 199 (9 %), `diagnose` 46 von 215 (21 %) → 47 von 218 (22 %), `behandlung` 48 von 290 (17 %) → 46 von 281 (16 %).
+
+### Korrektur 2c-K: Verweise im Text
+
+Vier, wie vorher. Jeder steht direkt nach der Handlungsanleitung (Skript: Element unmittelbar davor), keiner in einer Figur oder Vertiefung, höchstens einer je Abschnitt (Build ohne Hinweis `inline-ref`). Lage bei 360 × 800 px nach dem Laden der Schriften: Oberkante ab Anfang des Abschnitts und ab dem Abschnittstitel, Unterkante ab Anfang des Abschnitts, Oberkante auf der Seite.
+
+| Nr. | Seite › Abschnitt | Handlungsanleitung direkt davor | ab Abschnitt / ab Titel | Unterkante ab Abschnitt | Lage auf der Seite | Stand |
+| ---: | --- | --- | ---: | ---: | ---: | --- |
+| 1 | `diagnose` › `zweifel` | «Klare Grenze: Bei akuter Gefahr, etwa bei Suizidgefahr, schwerer Selbstverletzung oder Gefahr für andere Menschen, ist die Frage nach der Diagnose nachrangig. Dann holen Sie Hilfe über den Notruf.» | 1679 / 1596 px | 1835 px | 9152 von 17 930 px | wie 2c-2 |
+| 2 | `diagnose` › `begleiterkrankungen` | «… Bei akuter Gefahr oder Hinweisen auf eine konkrete suizidale Absicht holen Sie sofort Hilfe über den Notruf.» | 4324 / 4241 px | 4480 px | 16 177 px | wie 2c-2 |
+| 3 | `behandlung` › `kontakt` | «Bei möglicher akuter Gefahr holen Sie sofort Hilfe über den Notruf und warten nicht auf eine Rückmeldung per E-Mail.» | 1843 / 1760 px | 1999 px | 6395 von 21 368 px | wie 2c-2; ab Abschnitt 88 px tiefer (vorher 1755 px) wegen des Beispielsatzes im Begriff |
+| 4 | `behandlung` › `wartezeit` | «Bei Verschlechterung neu beurteilen lassen: … Bei unmittelbarer Gefahr oder wenn Sie nicht einschätzen können, wie dringend es ist, warten Sie nicht auf einen Therapieplatz und holen sofort Hilfe.» (Schritt 4, im selben Listenpunkt) | 2078 / 1995 px | 2259 px | 19 400 px | Handlungsanleitung geändert (P2c-F-1, P2c2-F-1); vorher 2049 px ab Abschnitt |
+
+Alle vier liegen bei 360 px unterhalb des ersten Bildschirms ihres Abschnitts; davor stehen jeweils die Handlungsanleitung und der Text, auf den sie sich bezieht. Beim Sprung über die Kapitelübersicht steht der Abschnitt oben im Fenster.
+
+### Korrektur 2c-K: Visualisierungs-Check «Ein neuer Trieb» (`v-ge-trieb`)
+
+**Bildschirmfotos** (Chromium, Faktor 2): Abbildung bei 1280 und 360 px, Standard und «kontrast», alle angesehen; zum Vergleich drei verworfene Fassungen (Entscheid Nr. 1 und 2). Figur 1104 × 850 px (1280) und 320 × 847 px (360); Zeichnung 760 × 387 und 320 × 163 px.
+
+- **1280 px:** Titel, Kernaussage, Kurztext. Darunter links «Weniger hilfreich» klein und grau über «Eine schwierigere Phase entwertet alles.», rechts «Tragfähiger» über «Schwierigere Phasen kommen vor und müssen nicht alles kippen.», je mit blauer Randlinie. Darunter in der Mitte die Topfpflanze auf dem hellblauen Sims, der links mit seinem runden Ende beginnt und rechts aus dem Bild läuft. Die Pflanze steht in der Lücke zwischen den zwei Sätzen, keiner der Sätze steht über einem Bildteil. Rechts am Topf lehnt ein grosses, hellblaues Blatt, die Spitze an der Topfwand; oben am Stängel zwei kleine weisse Blätter.
+- **360 px:** Die Bezeichnungen stehen je über ihrem Satz, untereinander: zuerst «Weniger hilfreich», dann «Tragfähiger»; Bezeichnung und Satz bilden je einen Block mit eigener Randlinie (13 px, Abstand zum nächsten Block 12 px), die Zuordnung ist eindeutig. Zeichnung 320 × 163 px: Das Blatt am Topf ist 37 × 22 px gross und klar ein Blatt, das am Topf liegt; der weisse Trieb (zwei Blätter je 9 × 13 px) hebt sich von den hellblauen Blättern ab.
+- **«kontrast»:** Linien dunkelblau, die Bezeichnungen grau wie in der Gegenüberstellung darunter, Flächen bleiben, nichts verschwindet.
+
+**Visualisierungs-Check** (Selbstprüfung, keine Prüfstufe; E = erfüllt · T = teilweise · N = nicht erfüllt · – = nicht anwendbar). Bewertung geändert gegenüber der Selbstprüfung 2c-1: Punkte 6 und 16 (T → E); neuer Beleg bei 1 bis 4, 8, 12, 15 und 17. Die Punkte, die die zwei Prüfsitzungen mit T oder N bewertet haben (3, 4, 8, 12, 15 bis 17), sind mit Beleg neu bewertet.
+
+| Nr. | Prüfpunkt | `v-ge-trieb` | Beleg | Massnahme |
+| --- | --- | --- | --- | --- |
+| 1 | Plan liegt vor, Seite entspricht ihm | E | Build ohne Hinweis `visual-plan`; `statement` «Eine Topfpflanze steht auf einem Fenstersims. Ein Blatt ist abgefallen und liegt am Topf, oben wächst ein neuer, heller Trieb. Über der Zeichnung stehen zwei Haltungen, …» wie Zeichnung und Kurzbeschreibung | – |
+| 2 | Zeile je Abschnitt; Begründungen für Text passen | E | `genesung` 6 Zeilen; `reason` von `v-ge-trieb` nennt jetzt den gebauten Bildausschnitt `60 44 420 214` (P2c-T-1, P2c2-T-1 umgesetzt) | – |
+| 3 | Prüffrage beantwortet und eingelöst | E | `understood`: «Dass Rückschritt und neues Wachsen zugleich da sein können: Das abgefallene Blatt und der neue Trieb an derselben Pflanze zeigen auf einen Blick, dass eine schwierigere Phase das Erreichte nicht aufhebt.»; bei 360 px Blatt 37 × 22 px am Topf, Trieb weiss | – |
+| 4 | Kernaussage und Erklärtext; Hauptaussage nicht nur in der Vertiefung | E | Die Abbildung hat eine Idee (Rückschritt und neues Wachsen); sie steht sichtbar in Kernaussage und Kurztext. «Grenzen des Bildes» nennt nur Grenzen; «begleiten, nicht herstellen» trägt sichtbar «Ein Stück Weg» auf `rolle` und auf `genesung` › `freiwillig` «Für Behandlung und Genesung sind Sie nicht verantwortlich.» | – |
+| 5 | Ansatzpunkt (B, C, G) | – | Illustration (Muster D) | – |
+| 6 | Mechanismus nicht doppelt gezeigt | E | Die Giesskanne ist weg; das Bild wiederholt «Ein Stück Weg» nicht mehr | – |
+| 7 | Kartenraster-Check | E | keine Kastenreihe | – |
+| 8 | Anordnung und Formen tragen Bedeutung | E | Das Blatt liegt direkt unter der Pflanze am Topf (von ihr abgefallen), der helle Trieb wächst oben an derselben Pflanze; die zwei Haltungen stehen über dem Bild, nicht über Bildteilen | – |
+| 9 | Verteilt, keine Textwand | E | eine Abbildung in `verlauf`; 1168 Wörter im Lesefluss (C1), 14 571 px bei 360 px | – |
+| 10 | Vereinfacht, nicht verfälscht; Grenzen benannt; Quelle | E | «Grenzen des Bildes» und Quelle unverändert («Das Bild ist eine Metapher, keine Vorhersage eines Genesungsverlaufs. …») | – |
+| 11 | Ohne Animation, Aufklappen und Skript verständlich | E | SVG ohne Animation; Bezeichnungen, Sätze, Kernaussage und Kurztext sind HTML-Text | – |
+| 12 | Bei 320 px lesbar; Textalternative vollständig | E | kein Überlauf bei 320 und 360 px (`scrollWidth` 0); Bezeichnungen 13 px, 5,92 : 1, je über ihrem Satz; Kurzbeschreibung nennt beide Haltungen mit Bezeichnung, über `aria-describedby` | – |
+| 13 | Theme «kontrast» geprüft | E | Fotos bei 1280 und 360 px; nur Profil-Klassen, keine festen Farben | – |
+| 14 | Inhalt fachlich freigegeben | N | `approvalStatus` «ausstehend»; Gate production `visual-approval` | Fachstelle (Freigabe 2c, P2c-F-2 a) |
+| 15 | Bildsprache passt; Wirkung (`resonance`) eingelöst | E | «Entlastung und realistische Hoffnung: Ein Rückschritt macht nicht alles zunichte.»: abgefallenes Blatt und heller Trieb an derselben Pflanze, dazu die tragfähige Haltung | – |
+| 16 | Ein Bild, eine Idee; Beschriftungen nennen Erleben, nicht Bildteile | E | eine Idee; die zwei Sätze sind Gedanken von Angehörigen, als Haltungen bezeichnet; kein Bildteil beschriftet | – |
+| 17 | Keine ungewollten Bedeutungen | T | Die Lesart als Gespräch zwischen Pflanze und Giesskanne (P2c-V-2, P2c2-V-1) und die ruhende Kanne als «Angehörige tun nichts» entfallen. Bleiben: Die Pflanze ist ein passives Wesen (Garten-Metapher des Bestands); der helle Trieb kann auch als Knospe gelesen werden; der Sims läuft rechts aus dem Bild | R2, Nachprüfung |
+
+**Freundin-Test (bauende Sitzung):** besteht. Eine Zimmerpflanze, die ein Blatt verloren hat, das noch am Topf lehnt, und oben zwei neue, helle Blätter treibt: Das versteht man ohne Erklärung. Eine Angehörige könnte das Bild einer Freundin zeigen und sagen: «So ist es gerade bei uns. Es ist etwas verloren gegangen, aber es wächst auch wieder etwas.» Die zwei Sätze darüber sind jetzt erkennbar zwei Haltungen; der Satz «Eine schwierigere Phase entwertet alles.» liest sich als Gedanke, den man kennt, nicht als Aussage der Website. Ohne die Giesskanne fragt niemand mehr, warum sie nicht giesst.
+
+### Korrektur 2c-K: Neue Sätze zur Freigabe (vollständig, Stand nach Korrektur 2c-K)
+
+Grundlage für die Freigabe 2c (P2c-F-17). Die Liste fasst die Listen von 2c-1 (Nr. 1 bis 82) und 2c-2 (Nr. 1 bis 252) zusammen, mit allen Sätzen von `genesung`, `unterstuetzung`, `diagnose`, `behandlung` und den zwei Einstiegen auf `index`, die nicht im Wortlaut aus dem Bestand stammen, und mit allen Sätzen, die in dieser Korrektur neu oder geändert sind. Die Regeln der zwei Listen gelten weiter (Bestandssätze, die wörtlich oder nur mit anderen Satzzeichen stehen, nur im Abgleich). Reihenfolge je Seite wie in den zwei Listen; Einträge aus 2c-K stehen bei ihrem Ort. Jedes Zitat ist per Skript auf der gebauten Seite gesucht: 364 Stellen in «…» der Spalte «Satz» in 341 Zeilen, alle gefunden. Die sechs entfallenen Einträge stehen nicht mehr auf der Seite; nur der Beispielsatz von Nr. 247 steht jetzt im Begriff «Beobachtungen mitteilen» (Nr. 230). **Liste:** Nummer in der Liste von 2c-1 oder 2c-2, «–» für neue Einträge. **Stand:** «wie 2c-1» oder «wie 2c-2» = unverändert · «geändert (2c-K)» = in dieser Korrektur neu gefasst · «neu (2c-K)» = neu in der Liste mit dieser Korrektur (neuer Satz oder Bestandssatz, der jetzt anders lautet) · «entfällt (2c-K)» = steht nicht mehr auf der Seite. **Art** wie in den zwei Listen; bei geänderten Einträgen die Art der neuen Fassung. **Abgleich:** g = `genesung.md`, u = `unterstuetzung.md`, i = `index.md`, d = `diagnose.md`, b = `behandlung.md`.
+
+**Zählung:** 347 Einträge; 306 unverändert (78 aus 2c-1, 228 aus 2c-2), dazu Nr. 11 (2c-1, Kurztext), Nr. 22 (2c-1, seit 2c-2 nur der erste Satz) und Nr. 320 (2c-2 Nr. 221) mit Hinweis; 18 geändert (2c-K), 13 neu (2c-K), 6 entfällt (2c-K), bei Nr. 152 (2c-2 Nr. 57) nur die Art geändert.
+
+**`genesung`**
+
+| Nr. | Liste | Ort | Satz | Art | Stand | Abgleich |
+| ---: | --- | --- | --- | --- | --- | --- |
+| 1 | 2c-1 Nr. 1 | `genesung` › `kopf`, H1 | «Genesung ist möglich und kann unterschiedlich aussehen» | Satzzeichen (Gedankenstrich als «und») | wie 2c-1 | g1 |
+| 2 | 2c-1 Nr. 2 | `genesung` › `kopf` | «Wege, Tempo und Bedeutung von Veränderung sind individuell. Weder eine Diagnose noch eine einzelne Phase legt den weiteren Verlauf fest.» | Satzzeichen (Semikolon) | wie 2c-1 | g3 |
+| 3 | 2c-1 Nr. 3 | `genesung` › `kopf`, Kernsatz | «Besserung ist möglich. Verlauf und Tempo unterscheiden sich von Mensch zu Mensch.» | Satzzeichen (Semikolon) | wie 2c-1 | g66 |
+| 4 | 2c-1 Nr. 4 | `genesung` › `forschung`, «10 Jahre» | «Veränderungen können früher eintreten.» | Satzzeichen (Semikolon; «Verläufe bleiben unterschiedlich» trägt `verlauf`) | wie 2c-1 | g255 |
+| 5 | 2c-1 Nr. 5 | `genesung` › `forschung` | «93 %», «50 %» | Satzzeichen (Leerschlag) | wie 2c-1 | g75, g78 |
+| 6 | 2c-1 Nr. 6 | `genesung` › `begriffe` | «Symptomatische Remission, Alltag und Teilhabe sowie persönliche Recovery beschreiben unterschiedliche Aspekte. Sie müssen sich nicht gleichzeitig verändern.» | Satzzeichen (zwei Sätze) | wie 2c-1 | g282 |
+| 7 | 2c-1 Nr. 7 | `genesung` › `begriffe`, «Alltag und Teilhabe» | «Zu einer umfassenderen Genesung gehören auch Stabilität im Alltag und mehr Lebensqualität.» | Verdichtung | wie 2c-1 | g100 |
+| 8 | 2c-1 Nr. 8 | `genesung` › `begriffe` | «Kein einzelner Begriff beschreibt den ganzen Genesungsweg.» | gekürzt (Rest im Satz danach) | wie 2c-1 | g312 |
+| 9 | 2c-1 Nr. 9 | `genesung` › `verlauf`, Abbildung 1 | «Abbildung 1 · Ein neuer Trieb» | Auftrag | wie 2c-1 | g498 |
+| 10 | 2c-1 Nr. 10 | `genesung` › `verlauf`, Abbildung 1, Kernaussage | «Eine schwierigere Phase bedeutet nicht, dass alles Erreichte verloren ist.» | wörtlich (Handout), hier zur Übersicht | wie 2c-1 | g354 |
+| 11 | 2c-1 Nr. 11 | `genesung` › `verlauf`, Abbildung 1, Kurztext | «Genesungswege unterscheiden sich. Schwierigere Phasen können vorkommen und müssen ernst genommen werden. Sie sind weder vorgeschrieben noch ein Beleg für fehlenden Willen.» | Auftrag (Semikolon als Punkt) | wie 2c-1 (Kurztext bleibt, Auftrag 2c-K, Abschnitt 4 b) | g348, g349 |
+| 12 | 2c-1 Nr. 12 | `genesung` › `verlauf`, Abbildung 1, Szene | «Weniger hilfreich» über «Eine schwierigere Phase entwertet alles.» · «Tragfähiger» über «Schwierigere Phasen kommen vor und müssen nicht alles kippen.» | Auftrag (Sätze aus dem Bestand mit Schlusspunkt; Bezeichnungen wie die Gegenüberstellung, P2c-F-2 c, P2c2-F-2) | geändert (2c-K) | g119, g121, g123, g125 |
+| 13 | 2c-1 Nr. 13 | `genesung` › `verlauf`, Abbildung 1 | «Grenzen des Bildes» | Bezeichnung des Profils | wie 2c-1 | g499 |
+| 14 | 2c-1 Nr. 14 | `genesung` › `verlauf`, Abbildung 1, Vertiefung | «Das Bild ist eine Metapher, keine Vorhersage eines Genesungsverlaufs.» | Auftrag («Der Garten» als «Das Bild») | wie 2c-1 | g44 |
+| 15 | 2c-1 Nr. 15 | `genesung` › `verlauf`, Abbildung 1, Kurzbeschreibung | «Zeichnung: Eine Topfpflanze steht auf einem Fenstersims. Ein Blatt ist abgefallen und liegt am Topf, oben wächst ein neuer, heller Trieb. Über der Zeichnung stehen zwei Haltungen: als weniger hilfreich «Eine schwierigere Phase entwertet alles.», als tragfähiger «Schwierigere Phasen kommen vor und müssen nicht alles kippen.»» | Auftrag (Abschnitt 4 d) | geändert (2c-K) | g500 |
+| 16 | 2c-1 Nr. 16 | `genesung` › `verlauf`, Abbildung 1, Quelle | «Eigene didaktische Darstellung nach den Handouts «Veränderung verläuft unterschiedlich» und «Der Garten»; Bezug: Zanarini et al. (2012); NICE CG78 (2009).» | Auftrag | wie 2c-1 | g64 |
+| 17 | 2c-1 Nr. 17 | `genesung` › `verlauf`, Gegenüberstellung | «Jetzt muss es doch endlich besser werden.» · «Besserung ist möglich und oft wahrscheinlich.» · «Wenn genug Wille da ist, geht es schnell.» · «Tempo und Zeitpunkt bleiben begrenzt steuerbar.» | Satzzeichen (Schlusspunkt, Guillemets) | wie 2c-1 | g120, g124, g122, g126 |
+| 18 | 2c-1 Nr. 18 | `genesung` › `verlauf`, «Was Sie tun können» | «Bauen Sie auch in einer besseren Phase keinen Zeit- oder Erfolgsdruck auf.» | umformuliert (Aufforderung) | wie 2c-1 | g113 |
+| 19 | 2c-1 Nr. 19 | `genesung` › `verlauf`, «Was Sie tun können» | «Halten Sie für eigene Grenzen und professionelle Kontakte einen kleinen Plan bereit.» | umformuliert (Aufforderung) | wie 2c-1 | g114 |
+| 20 | 2c-1 Nr. 20 | `genesung` › `einfluesse`, Titel | «Was Genesung beeinflussen kann» | Auftrag (Gliederung) | wie 2c-1 | g138 |
+| 21 | 2c-1 Nr. 21 | `genesung` › `einfluesse` | «Die folgenden Bereiche sind eine Orientierung ohne Reihenfolge, keine Formel und keine persönliche Prognose.» | gekürzt (ohne «redaktionelle») | wie 2c-1 | g139 |
+| 22 | 2c-1 Nr. 22 | `genesung` › `einfluesse` | «Für Borderline selbst sind Medikamente keine Kernbehandlung.» | Satzzeichen (Semikolon) | geändert (2c-2): der zweite Satz steht in der nächsten Zeile | g145 |
+| 23 | 2c-2 Nr. 248 | `genesung` › `einfluesse` | «Medikamente werden nur gemeinsam mit der behandelnden ärztlichen Fachperson geändert.» | Auftrag (2c-2, Abschnitt 6; «ärztlichen»: 2c-K, Abschnitt 5 a, P2c-F-4 b) | geändert (2c-K) | g145, g396 |
+| 24 | – | `genesung` › `einfluesse` | «Körperliche Beschwerden und weitere psychische Erkrankungen werden ebenfalls behandelt, bei Bedarf auch mit Medikamenten.» | Auftrag («ebenfalls» statt «eigenständig», P2c2-F-5) | neu (2c-K) | g144, g395 |
+| 25 | 2c-2 Nr. 249 | `genesung` › `einfluesse` | «Welche Begleiterkrankungen vorkommen können, steht auf der Seite «Diagnose und Begleiterkrankungen» im Abschnitt «Begleiterkrankungen».» | Auftrag (Verweissatz) | wie 2c-2 | g163 |
+| 26 | 2c-1 Nr. 23 | `genesung` › `einfluesse` | «Peer-Unterstützung heisst: Unterstützung durch Menschen mit eigener Erfahrung.» | neu (Erklärung eines Fachworts) | wie 2c-1 | g501 |
+| 27 | 2c-1 Nr. 24 | `genesung` › `einfluesse` | «Die fünf Bereiche sind eine eigene Zusammenstellung der Fachstelle aus Behandlungsleitlinien, kein geprüftes Modell.» | Verdichtung | wie 2c-1 | g153, g154 |
+| 28 | 2c-1 Nr. 25 | `genesung` › `einfluesse`, «Was Sie tun können» | «Praktische oder strukturelle Belastungen, zum Beispiel beim Wohnen oder bei den Finanzen, lassen sich oft nicht innerhalb der Familie lösen. Sozialberatungen können unterstützen.» | Satzzeichen (Klammer, Semikolon) | wie 2c-1 | g411 |
+| 29 | 2c-1 Nr. 26 | `genesung` › `freiwillig` | «Sie können auf Wunsch etwas anbieten, zum Beispiel Absprachen, Informationen oder Begleitung.» | Verdichtung | wie 2c-1 | g431 |
+| 30 | 2c-1 Nr. 27 | `genesung` › `freiwillig` | «Fragen Sie die Person selbst, welche Unterstützung oder welcher Abstand hilfreich wäre.» | umformuliert (Aufforderung) | wie 2c-1 | g133 |
+| 31 | 2c-1 Nr. 28 | `genesung` › `freiwillig` | «Die betroffene Person entscheidet mit.» | Satzzeichen (Semikolon; der Rest steht bei «Was Sie tun können») | wie 2c-1 | g129 |
+| 32 | 2c-1 Nr. 29 | `genesung` › `freiwillig` | «Für Behandlung und Genesung sind Sie nicht verantwortlich.» | Auftrag (Wortlaut von `rolle`) | wie 2c-1 | g469 |
+| 33 | 2c-1 Nr. 30 | `genesung` › `freiwillig` | «Wie Sie Ihre Rolle klären können, steht auf der Seite «Ihre Rolle» im Abschnitt «Was Sie anbieten können und was nicht Ihre Aufgabe ist».» | Verweissatz | wie 2c-1 | g128 |
+| 34 | 2c-1 Nr. 31 | `genesung` › `freiwillig` | «Ihre Gesundheit zählt für sich, nicht erst als Beitrag zur Genesung einer anderen Person.» | Auftrag | wie 2c-1 | g483 |
+| 35 | 2c-1 Nr. 32 | `genesung` › `freiwillig` | «Allgemeine Beratung ist auch ohne Zustimmung der betroffenen Person möglich. Auskünfte über ihre Behandlung gibt es grundsätzlich nur mit ihrer Zustimmung. Gesetzliche Ausnahmen gelten etwa bei Minderjährigen oder fehlender Urteilsfähigkeit.» | Auftrag (Semikolons als Punkte) | wie 2c-1 | g482 |
+| 36 | 2c-1 Nr. 33 | `genesung` › `freiwillig` | «Wie die Fachstelle Angehörigenarbeit der PUK berät, steht auf der Startseite im Abschnitt «Beratung für Sie».» | Verweissatz (Wortlaut von `krise`, freigegeben) | wie 2c-1 | g502 |
+| 37 | 2c-1 Nr. 34 | `genesung` › `freiwillig` | «Wo Sie Unterstützung für sich finden, steht auf der Seite «Auf sich achten» im Abschnitt «Nicht allein tragen».» | Verweissatz (Wortlaut von `grenzen`, Freigabe 2b, Satz 5) | wie 2c-1 | g317, g360 |
+| 38 | 2c-1 Nr. 35 | `genesung` › `freiwillig`, Vertiefung | «Eltern Minderjähriger und Beistandschaft» | neu (Titel) | wie 2c-1 | g503 |
+| 39 | 2c-1 Nr. 36 | `genesung` › `freiwillig`, Vertiefung | «Diese Hinweise richten sich an Angehörige erwachsener Personen.» | umformuliert («Dieses Blatt» als «Diese Hinweise») | wie 2c-1 | g442 |
+| 40 | 2c-1 Nr. 37 | `genesung` › `freiwillig`, Vertiefung | «Angehörige ersetzen keine Behandlung und müssen sie nicht koordinieren, ausser etwa als Eltern Minderjähriger oder als Beistand.» | Satzzeichen (Gedankenstrich, «als») | wie 2c-1 | g459 |
+| 41 | 2c-1 Nr. 38 | `genesung` › Kapitelübersicht und Kicker | «Genesung» (Eyebrow), «Forschung», «Begriffe», «Verläufe», «Einflüsse», «Ihre Unterstützung» | Bezeichnungen | wie 2c-1 | g0, g71, g504 bis g507 |
+
+**`unterstuetzung`**
+
+| Nr. | Liste | Ort | Satz | Art | Stand | Abgleich |
+| ---: | --- | --- | --- | --- | --- | --- |
+| 42 | 2c-1 Nr. 39 | `unterstuetzung` › `kopf` | «Wenn Belastung, Unsicherheit oder Erschöpfung zu gross werden, kann es entlasten, nicht nur in der Familie oder im eigenen Umfeld nach Lösungen zu suchen.» | umformuliert («im eigenen System») | wie 2c-1 | u54 |
+| 43 | 2c-1 Nr. 40 | `unterstuetzung` › `kopf` | «Hier finden Sie Beratung, Selbsthilfe und weitere Anlaufstellen für Angehörige in der Schweiz, dazu Bücher.» | umformuliert («dazu Bücher») | wie 2c-1 | u55 |
+| 44 | 2c-1 Nr. 41 | `unterstuetzung` › `beratung`, Zwischentitel | «Fachstelle Angehörigenarbeit der PUK» | Bezeichnung (Schreibweise der Startseite) | wie 2c-1 | u1, u75 |
+| 45 | 2c-1 Nr. 42 | `unterstuetzung` › `beratung` | «Die Fachstelle ist eine Anlaufstelle für Angehörige, die ihre Rolle klären, Belastung einordnen und passende nächste Schritte finden möchten.» | umformuliert (Subjekt) | wie 2c-1 | u13 |
+| 46 | 2c-1 Nr. 43 | `unterstuetzung` › `beratung`, Angebote | «Ein Gespräch zu Ihrer Rolle, Ihrer Belastung oder einer konkreten Entscheidung.» | umformuliert (Angebot statt Frage) | wie 2c-1 | u15 |
+| 47 | 2c-1 Nr. 44 | `unterstuetzung` › `beratung`, Angebote | «Verständliche Informationen und Materialien zur Erkrankung und zum Umgang damit, passend zu Ihrer Situation.» | umformuliert (Angebot; erklärt «Psychoedukation») | wie 2c-1 | u17 |
+| 48 | 2c-1 Nr. 45 | `unterstuetzung` › `beratung`, Angebote | «Gemeinsam klären, welche weiteren Hilfen, Selbsthilfeangebote oder Anlaufstellen für Sie infrage kommen könnten.» | umformuliert (Angebot statt Frage) | wie 2c-1 | u19 |
+| 49 | 2c-1 Nr. 46 | `unterstuetzung` › `beratung`, Angebote | «Aktuelle Angebote, Zielgruppen, Termine und mögliche Kosten erfragen Sie direkt bei der Fachstelle.» | Satzstellung | wie 2c-1 | u21 |
+| 50 | 2c-1 Nr. 47 | `unterstuetzung` › `beratung`, Begriffe | «Psychoedukation und Materialien» · «Orientierung und Vermittlung» · «Schulungen und Weiterbildung» | Satzzeichen («und» statt «&») | wie 2c-1 | u16, u18, u20 |
+| 51 | 2c-1 Nr. 48 | `unterstuetzung` › `beratung` | «Wie die Fachstelle Angehörigenarbeit der PUK berät, steht auf der Startseite im Abschnitt «Beratung für Sie».» | Verweissatz (Wortlaut von `krise`) | wie 2c-1 | u158 |
+| 52 | – | `unterstuetzung` › `beratung` | «Die Beratung der Fachstelle kostet nichts und wird nicht an Krankenkassen weitergegeben.» | Auftrag (Bestand `/verstehen/begleiterkrankungen`: «Beratung kostet nichts …», P2c-F-14) | neu (2c-K) | u82, d369 |
+| 53 | 2c-1 Nr. 49 | `unterstuetzung` › `beratung` | «Was Sie vorab klären können:» | Bezeichnung (Zwischentitel des Bestands als Einleitung) | wie 2c-1 | u319 |
+| 54 | 2c-1 Nr. 50 | `unterstuetzung` › `beratung` | «Ist Beratung zu Ihrer Situation möglich, auch wenn keine Diagnose vorliegt?» | gekürzt | wie 2c-1 | u81 |
+| 55 | 2c-1 Nr. 51 | `unterstuetzung` › `beratung` | «Wie werden Termine vereinbart, und wie lange dauert ein Gespräch?» | umformuliert | wie 2c-1 | u83 |
+| 56 | 2c-1 Nr. 52 | `unterstuetzung` › `beratung` | «Welche Angaben werden für eine Anfrage benötigt?» | umformuliert (Frage) | wie 2c-1 | u32 |
+| 57 | 2c-1 Nr. 53 | `unterstuetzung` › `beratung`, Pro Mente Sana | «Die Telefonberatung zu Fragen rund um psychische Gesundheit ist kostenlos.» | umformuliert (Satz) | wie 2c-1 | u96 |
+| 58 | 2c-1 Nr. 54 | `unterstuetzung` › `beratung`, `austausch`, `selbsthilfe` | «Website:» vor jedem Link | Bezeichnung | wie 2c-1 | u320 |
+| 59 | 2c-1 Nr. 55 | `unterstuetzung` › `beratung` | «Wie Sie eigene Überlastung erkennen, steht auf der Seite «Auf sich achten» im Abschnitt «Warnsignale für Überlastung».» | Verweissatz | wie 2c-1 | u159 |
+| 60 | 2c-1 Nr. 56 | `unterstuetzung` › `beratung` | «Wie Sie in belasteten Situationen sprechen können, steht auf der Seite «Zugewandt und klar sprechen».» | Verweissatz | wie 2c-1 | u160 |
+| 61 | 2c-1 Nr. 57 | `unterstuetzung` › `austausch`, Titel | «Austausch mit anderen Angehörigen» | Auftrag (Gliederung) | wie 2c-1 | u99 |
+| 62 | 2c-1 Nr. 58 | `unterstuetzung` › `austausch` | «Organisationen und Netzwerke ermöglichen Austausch, Orientierung und Entlastung für Angehörige.» | umformuliert (Satz) | wie 2c-1 | u100 |
+| 63 | 2c-1 Nr. 59 | `unterstuetzung` › `austausch` | «Stand by You Schweiz ist der Dachverband der Vereinigungen von Angehörigen psychisch erkrankter Menschen.» | umformuliert (Satz, personenzentriert) | wie 2c-1 | u102 |
+| 64 | 2c-1 Nr. 60 | `unterstuetzung` › `austausch` | «Bis Januar 2024 hiess er VASK Schweiz.» | umformuliert | wie 2c-1 | u103 |
+| 65 | 2c-1 Nr. 61 | `unterstuetzung` › `austausch` | «Die VASK Zürich ist die kantonale Vereinigung für Angehörige von Menschen mit einer psychischen Erkrankung. Sie bietet regelmässige Beratungs-Treffpunkte in Zürich und Winterthur an.» | umformuliert (personenzentriert) | wie 2c-1 | u125 |
+| 66 | 2c-1 Nr. 62 | `unterstuetzung` › `austausch` | «Die Treffpunkte sind offen für alle Angehörigen und Freunde.» | umformuliert (Satz) | wie 2c-1 | u130 |
+| 67 | 2c-1 Nr. 63 | `unterstuetzung` › `austausch` | «Wann sie stattfinden, steht auf der Website.» | neu (ersetzt die Termine) | wie 2c-1 | u321 |
+| 68 | 2c-2 Nr. 250 | `unterstuetzung` › `austausch` | «Gruppe für Eltern von Jugendlichen mit Borderline» | neu (Zwischentitel) | wie 2c-2 | d187 |
+| 69 | – | `unterstuetzung` › `austausch` | «Für Eltern jugendlicher Betroffener gibt es an der PUK Zürich die «Gruppentherapie für Eltern von Jugendlichen mit einer Borderline-Persönlichkeitsstörung».» | Auftrag (Name wie auf der Website der PUK, P2c-F-11, P2c2-F-12) | neu (2c-K) | d189 |
+| 70 | 2c-2 Nr. 251 | `unterstuetzung` › `austausch` | «Teilnahmebedingungen und Anmeldung stehen auf der Website.» | Auftrag | wie 2c-2 | d191 |
+| 71 | 2c-2 Nr. 252 | `unterstuetzung` › `austausch` | «Persönlichkeitsstörungen bei Jugendlichen auf www.pukzh.ch» | Bezeichnung (Linktext) | wie 2c-2 | – |
+| 72 | 2c-1 Nr. 64 | `unterstuetzung` › `selbsthilfe` | «Selbsthilfegruppen für Angehörige von Menschen mit Borderline finden Sie über Selbsthilfe Schweiz. Das ist die zentrale Vermittlungsstelle für Selbsthilfegruppen in der ganzen Schweiz.» | Satzzeichen (zwei Sätze) | wie 2c-1 | u151 |
+| 73 | 2c-1 Nr. 65 | `unterstuetzung` › `selbsthilfe` | «Es gibt Gruppen in mehreren Kantonen, vor Ort und online.» | gekürzt («sowohl … als auch») | wie 2c-1 | u152 |
+| 74 | 2c-1 Nr. 66 | `unterstuetzung` › `kantone`, Titel | «Ausserhalb des Kantons Zürich» | Auftrag (Gliederung) | wie 2c-1 | u322 |
+| 75 | 2c-1 Nr. 67 | `unterstuetzung` › `kantone` | «Die Angebote auf dieser Seite sind vor allem für den Kanton Zürich gedacht.» | umformuliert | wie 2c-1 | u56 |
+| 76 | 2c-1 Nr. 68 | `unterstuetzung` › `kantone` | «Für andere Kantone führt der schnellste Weg über Selbsthilfe Schweiz. Dort finden Sie kantonale Stellen. Sie können auch in der Hausarztpraxis oder in der psychiatrischen Praxis vor Ort nachfragen.» | umformuliert | wie 2c-1 | u57 |
+| 77 | 2c-1 Nr. 69 | `unterstuetzung` › `buecher` | «Die Bücher sind eine persönliche Auswahl, überwiegend deutschsprachig und ohne Anspruch auf Vollständigkeit.» | Verdichtung | wie 2c-1 | u163, u312 |
+| 78 | 2c-1 Nr. 70 | `unterstuetzung` › `buecher` | «Sie verbinden Grundwissen, Beziehungsperspektiven, Selbstfürsorge und Erfahrungsnähe.» | umformuliert | wie 2c-1 | u164 |
+| 79 | 2c-1 Nr. 71 | `unterstuetzung` › `buecher` | «Die Titel sind nach Zielgruppen geordnet.» | gekürzt | wie 2c-1 | u168 |
+| 80 | 2c-1 Nr. 72 | `unterstuetzung` › `buecher` | «Die Bezeichnung «Empfehlung» meint eine redaktionelle Auswahl, keine wissenschaftliche Bewertung.» | umformuliert («Label») | wie 2c-1 | u315 |
+| 81 | 2c-1 Nr. 73 | `unterstuetzung` › `buecher`, Zwischentitel | «Für Partnerinnen und Partner» | umformuliert («Partner & Ehepartner») | wie 2c-1 | u170 |
+| 82 | 2c-1 Nr. 74 | `unterstuetzung` › `buecher`, Kinderbücher | «Ein Bilderbuch für Kinder, deren Eltern psychisch erkrankt sind.» | umformuliert (personenzentriert) | wie 2c-1 | u235 |
+| 83 | – | `unterstuetzung` › `buecher` | «Ein deutschsprachiges Kinderbuch speziell zum Thema Borderline.» | Auftrag («Ein» statt «Das einzige», P2c-F-12) | neu (2c-K) | u217 |
+| 84 | 2c-1 Nr. 75 | `unterstuetzung` › `buecher`, Titelangaben | «… und …» statt «… & …» bei acht Titeln; «Schleuderprogramm der Gefühle» und «Monster» in Guillemets; Gedankenstriche als Komma oder Punkt (Windmüller, Sendera, Englischsprachig, «Zum Vertiefen») | Satzzeichen | wie 2c-1 | u176, u200, u206, u215, u218, u224, u239, u254, u260, u262, u265, u268 |
+| 85 | 2c-1 Nr. 76 | `unterstuetzung` › `buecher`, Vertiefung | «Sie sind keine wissenschaftlichen Evidenzquellen. Ihre Sprache, Verallgemeinerungen und Krisenhinweise müssen kritisch eingeordnet werden.» | umformuliert («Solche Titel» als «Sie», Semikolon) | wie 2c-1 | u314 |
+| 86 | 2c-1 Nr. 77 | `unterstuetzung` › `buecher`, Vertiefung | Einordnungen der vier Titel mit Semikolon als Punkt; «und» statt «&» | Satzzeichen | wie 2c-1 | u282, u286, u290, u293, u300, u308 |
+| 87 | 2c-1 Nr. 78 | `unterstuetzung` › Kapitelübersicht und Kicker | «Unterstützung» (Eyebrow), «Beratung», «Austausch», «Selbsthilfegruppen», «Andere Kantone», «Bücher» | Bezeichnungen | wie 2c-1 | u52, u71, u166, u317, u318 |
+
+**`index` (zwei Einstiege)**
+
+| Nr. | Liste | Ort | Satz | Art | Stand | Abgleich |
+| ---: | --- | --- | --- | --- | --- | --- |
+| 88 | 2c-1 Nr. 79 | `index` › `einstiege` | «Ich frage mich, ob es je besser wird.» | Auftrag | wie 2c-1 | i258 |
+| 89 | 2c-1 Nr. 80 | `index` › `einstiege` | «Genesung: Hoffnung, unterschiedliche Verläufe und Grenzen des eigenen Einflusses verbinden.» | Auftrag (Lernweg der alten Startseite) | wie 2c-1 | i25, i26 |
+| 90 | 2c-1 Nr. 81 | `index` › `einstiege` | «Ich suche Beratung oder Austausch mit anderen Angehörigen.» | Auftrag | wie 2c-1 | i259 |
+| 91 | 2c-1 Nr. 82 | `index` › `einstiege` | «Unterstützung finden: Beratung, Austausch mit anderen Angehörigen und Bücher.» | Auftrag | wie 2c-1 | i27, i28 |
+
+**`diagnose`**
+
+| Nr. | Liste | Ort | Satz | Art | Stand | Abgleich |
+| ---: | --- | --- | --- | --- | --- | --- |
+| 92 | 2c-2 Nr. 1 | `diagnose` › `kopf` | «Diagnose und Begleiterkrankungen» | Auftrag | wie 2c-2 | d1 |
+| 93 | 2c-2 Nr. 2 | `diagnose` › `kopf` | «Diese Seite zeigt, wer eine Borderline-Abklärung üblicherweise durchführt, wie sie abläuft und was eine Diagnose für Sie als Angehörige bedeuten kann.» | umformuliert | wie 2c-2 | d2, d19 |
+| 94 | 2c-2 Nr. 3 | `diagnose` › `kopf` | «Die Seite ist keine Anleitung, jemanden zur Diagnose zu drängen, sondern eine Orientierung in einer Phase, in der vieles unklar ist.» | umformuliert | wie 2c-2 | d3 |
+| 95 | 2c-2 Nr. 4 | `diagnose` › `kopf` | «Ausserdem geht es um Begleiterkrankungen: Bei vielen, aber nicht allen Menschen mit Borderline bestehen zusätzlich weitere psychische Erkrankungen.» | Verdichtung | wie 2c-2 | d235 |
+| 96 | 2c-2 Nr. 5 | `diagnose` › `abklaerung` | «Eine vertiefte Abklärung findet je nach Fragestellung und Versorgungsweg statt. Das kann zum Beispiel eine psychiatrisch-psychotherapeutische Praxis, ein Ambulatorium, ein spezialisiertes Angebot oder eine Klinik sein.» | Auftrag (zwei Sätze, P2c2-S-6) | geändert (2c-K) | d22, d26 |
+| 97 | – | `diagnose` › `abklaerung` | «Wer die diagnostische Gesamtbeurteilung übernimmt, hängt von Qualifikation, Behandlungsrahmen und Behandlungsweg ab.» | Auftrag («Behandlungsrahmen» statt «Setting», P2c2-S-3) | neu (2c-K) | d25 |
+| 98 | 2c-2 Nr. 6 | `diagnose` › `abklaerung` | «Schritt 1 Erste Anlaufstelle» | Bezeichnung | wie 2c-2 | d47 |
+| 99 | 2c-2 Nr. 7 | `diagnose` › `abklaerung` | «Mögliche erste Anlaufstellen sind die Hausarztpraxis, eine psychiatrische oder psychotherapeutische Praxis oder ein Ambulatorium.» | neu | wie 2c-2 | d394 |
+| 100 | 2c-2 Nr. 8 | `diagnose` › `abklaerung` | «Die Hausarztpraxis oder eine andere Facharztpraxis kann Beschwerden einordnen, andere Ursachen mitprüfen und an eine geeignete Fachperson überweisen.» | umformuliert | wie 2c-2 | d24 |
+| 101 | 2c-2 Nr. 9 | `diagnose` › `abklaerung` | «Den ersten Kontakt dürfen Sie anregen oder begleiten.» | Satzzeichen | wie 2c-2 | d47 |
+| 102 | – | `diagnose` › `abklaerung` | «Sie können ihn anbieten, aber nicht erzwingen.» | Auftrag (Schritt 1, «Ihre Rolle»; statt «Anbieten ja, erzwingen nein.», P2c2-S-5) | neu (2c-K) | d48 |
+| 103 | 2c-2 Nr. 10 | `diagnose` › `abklaerung` | «Schritt 2 Fachliche Abklärung» | Bezeichnung | wie 2c-2 | d49 |
+| 104 | 2c-2 Nr. 11 | `diagnose` › `abklaerung` | «Die Abklärung machen dafür qualifizierte Fachpersonen, je nach Versorgungsweg in Praxis, Ambulatorium oder Klinik.» | Auftrag (Wortlaut der Textversion des Bestands, P2c2-S-5) | geändert (2c-K) | d49 |
+| 105 | 2c-2 Nr. 12 | `diagnose` › `abklaerung` | «In Gesprächen geht es um Lebensgeschichte, aktuelle Beschwerden und Beziehungsmuster, oft auch in einem strukturierten Interview.» | umformuliert | wie 2c-2 | d32 |
+| 106 | 2c-2 Nr. 13 | `diagnose` › `abklaerung` | «Geprüft werden auch andere Erkrankungen, die ähnliche Muster zeigen können.» | umformuliert | wie 2c-2 | d80 |
+| 107 | 2c-2 Nr. 14 | `diagnose` › `abklaerung` | «Das ist ein normaler Teil sorgfältiger Diagnostik und keine Verzögerungstaktik.» | umformuliert | wie 2c-2 | d81 |
+| 108 | 2c-2 Nr. 15 | `diagnose` › `abklaerung` | «Schritt 3 Mehrere Gespräche» | Bezeichnung | wie 2c-2 | d50 |
+| 109 | – | `diagnose` › `abklaerung` | «Eine Einordnung beruht auf einem Muster über die Zeit, nicht auf einem einzelnen Moment.» | Auftrag (Schritt 3; «Einordnung» statt «Abklärung», P2c-F-15) | neu (2c-K) | d39, d50 |
+| 110 | – | `diagnose` › `abklaerung` | «Wie viele Termine und wie viel Zeit nötig sind, hängt von Fragestellung, Verlauf und Behandlungsrahmen ab.» | Auftrag (Schritt 3; «Behandlungsrahmen» statt «Setting», P2c2-S-3) | neu (2c-K) | d40 |
+| 111 | 2c-2 Nr. 16 | `diagnose` › `abklaerung` | «Geduld ist hier kein Nichtstun.» | Satzzeichen | wie 2c-2 | d51 |
+| 112 | 2c-2 Nr. 17 | `diagnose` › `abklaerung` | «Schritt 4 Rückmeldung und Einordnung» | Bezeichnung | wie 2c-2 | d52 |
+| 113 | 2c-2 Nr. 18 | `diagnose` › `abklaerung` | «Die Fachperson ordnet die Beschwerden ein und grenzt sie von anderen Erkrankungen ab.» | umformuliert | wie 2c-2 | d52 |
+| 114 | 2c-2 Nr. 19 | `diagnose` › `abklaerung` | «Diese Einordnung sollte in einem Gespräch erklärt werden, mit Unsicherheiten, Bedeutung und möglichen nächsten Schritten.» | umformuliert | wie 2c-2 | d42 |
+| 115 | 2c-2 Nr. 20 | `diagnose` › `abklaerung` | «Ob Sie einbezogen werden, hängt vom Einverständnis der betroffenen Person ab.» | umformuliert | wie 2c-2 | d53 |
+| 116 | 2c-2 Nr. 21 | `diagnose` › `abklaerung` | «Das kann schwer sein.» | Satzzeichen | wie 2c-2 | d53 |
+| 117 | 2c-2 Nr. 22 | `diagnose` › `abklaerung` | «Schritt 5 Behandlungsplanung» | Bezeichnung | wie 2c-2 | d54 |
+| 118 | 2c-2 Nr. 23 | `diagnose` › `abklaerung` | «Danach entsteht ein Behandlungsplan, oft mit einer störungsspezifischen Psychotherapie wie der Dialektisch-Behavioralen Therapie (DBT).» | umformuliert | wie 2c-2 | d54 |
+| 119 | 2c-2 Nr. 24 | `diagnose` › `abklaerung` | «Fragen Sie, wie Sie unterstützen können.» | Satzzeichen | wie 2c-2 | d55 |
+| 120 | 2c-2 Nr. 25 | `diagnose` › `abklaerung` | «Wer in der Behandlung was beitragen kann, steht auf der Seite «Behandlung und Ihre Rolle darin» im Abschnitt «Wer was beitragen kann».» | Verweissatz | wie 2c-2 | d395 |
+| 121 | 2c-2 Nr. 26 | `diagnose` › `abklaerung` | «Eine Fachperson der Kinder- und Jugendpsychiatrie beurteilt Beschwerden, Belastung und Entwicklungsverlauf gemeinsam.» | umformuliert | wie 2c-2 | d56, d135 |
+| 122 | 2c-2 Nr. 27 | `diagnose` › `abklaerung` | «Manche Muster können zur Entwicklung gehören, andere brauchen gezielte Unterstützung.» | Satzzeichen | wie 2c-2 | d136 |
+| 123 | 2c-2 Nr. 28 | `diagnose` › `abklaerung` | «Eine Momentaufnahme reicht für die Einordnung nicht aus.» | Satzzeichen | wie 2c-2 | d136 |
+| 124 | 2c-2 Nr. 29 | `diagnose` › `abklaerung` | «Auch urteilsfähige Minderjährige haben ein Recht auf Vertraulichkeit.» | Satzzeichen | wie 2c-2 | d58 |
+| 125 | 2c-2 Nr. 30 | `diagnose` › `abklaerung` | «Konkrete Fragen klären Sie mit der zuständigen Fachperson.» | Auftrag | wie 2c-2 | d58 |
+| 126 | 2c-2 Nr. 31 | `diagnose` › `abklaerung` | «Das Frühinterventionsangebot HYPE Züri für Jugendliche steht auf der Seite «Behandlung und Ihre Rolle darin» im Abschnitt «Angebote im Kanton Zürich».» | Verweissatz | wie 2c-2 | d396 |
+| 127 | 2c-2 Nr. 32 | `diagnose` › `abklaerung` | «Eine Gruppe für Eltern von Jugendlichen mit Borderline steht auf der Seite «Unterstützung finden» im Abschnitt «Austausch mit anderen Angehörigen».» | Verweissatz | wie 2c-2 | d397 |
+| 128 | 2c-2 Nr. 33 | `diagnose` › `abklaerung` | «Wie die Diagnose beschrieben wird» | Auftrag | wie 2c-2 | d398 |
+| 129 | 2c-2 Nr. 34 | `diagnose` › `abklaerung` | «Fachpersonen beschreiben Diagnosen mit Klassifikationssystemen.» | neu | wie 2c-2 | d399 |
+| 130 | 2c-2 Nr. 35 | `diagnose` › `abklaerung` | «Für Borderline sind das vor allem das DSM-5-TR der American Psychiatric Association und die ICD-11 der Weltgesundheitsorganisation.» | neu | wie 2c-2 | d399 |
+| 131 | 2c-2 Nr. 36 | `diagnose` › `abklaerung` | «DSM-5-TR und ICD-11 beschreiben nicht dasselbe Modell.» | Satzzeichen | wie 2c-2 | d400 |
+| 132 | 2c-2 Nr. 37 | `diagnose` › `abklaerung` | «Geprüft werden neun Kriterien.» | umformuliert | wie 2c-2 | d36, d60 |
+| 133 | 2c-2 Nr. 38 | `diagnose` › `abklaerung` | «Mindestens fünf müssen als anhaltendes und situationsübergreifendes Muster vorliegen.» | Satzzeichen | wie 2c-2 | d36, d60 |
+| 134 | 2c-2 Nr. 39 | `diagnose` › `abklaerung` | «Zuerst wird der Schweregrad einer Persönlichkeitsstörung bestimmt.» | umformuliert | wie 2c-2 | d37, d61 |
+| 135 | 2c-2 Nr. 40 | `diagnose` › `abklaerung` | «Das Borderline-Muster kann anschliessend mit dem Zusatzcode 6D11.5 beschrieben werden.» | Satzzeichen | wie 2c-2 | d37, d61 |
+| 136 | 2c-2 Nr. 41 | `diagnose` › `abklaerung` | «Das ist eine begrenzte Vorgabe für die stationäre Kodierung.» | Satzzeichen | wie 2c-2 | d64 |
+| 137 | 2c-2 Nr. 42 | `diagnose` › `abklaerung` | «Diese Vorgabe bedeutet nicht, dass ICD-10-GM, DSM-5-TR und ICD-11 inhaltlich gleich aufgebaut sind oder in jedem Versorgungssetting identisch verwendet werden.» | umformuliert | wie 2c-2 | d64 |
+| 138 | 2c-2 Nr. 43 | `diagnose` › `abklaerung` | «Verfahren wie SCID-5-PD oder IPDE prüfen die Kriterien systematisch.» | Satzzeichen | wie 2c-2 | d34 |
+| 139 | 2c-2 Nr. 44 | `diagnose` › `abklaerung` | «Diese Interviews sind keine Selbstauskunft, sondern ein Fachgespräch.» | umformuliert | wie 2c-2 | d34 |
+| 140 | 2c-2 Nr. 45 | `diagnose` › `bedeutung` | «Was die Diagnose für Sie bedeuten kann» | Auftrag | wie 2c-2 | d84 |
+| 141 | 2c-2 Nr. 46 | `diagnose` › `bedeutung` | «Die Diagnose kann helfen, eine passende strukturierte Psychotherapie zu planen und wiederkehrende Schwierigkeiten fachlich einzuordnen.» | umformuliert | wie 2c-2 | d86 |
+| 142 | 2c-2 Nr. 47 | `diagnose` › `bedeutung` | «Eine Diagnose ist aber weder Voraussetzung für jede Hilfe noch eine vollständige Erklärung eines Menschen oder einer Beziehung.» | umformuliert | wie 2c-2 | d87 |
+| 143 | 2c-2 Nr. 48 | `diagnose` › `bedeutung` | «Was die Diagnose beschreiben kann, steht auf der Seite «Borderline verstehen» im Abschnitt «Was die Diagnose beschreiben kann».» | Verweissatz | wie 2c-2 | d401 |
+| 144 | 2c-2 Nr. 49 | `diagnose` › `bedeutung` | «Was Langzeitstudien über Besserung zeigen, steht auf der Seite «Genesung» im Abschnitt «Was die Forschung zeigt».» | Verweissatz | wie 2c-2 | d89 |
+| 145 | 2c-2 Nr. 50 | `diagnose` › `bedeutung` | «Eine Diagnose hilft nicht automatisch der Beziehung.» | umformuliert | wie 2c-2 | d90 |
+| 146 | 2c-2 Nr. 51 | `diagnose` › `bedeutung` | «Diese Erwartung ist verständlich, aber hoch.» | Satzzeichen | wie 2c-2 | d92 |
+| 147 | 2c-2 Nr. 52 | `diagnose` › `bedeutung` | «Die Beziehung zu klären, bleibt eigene Arbeit, auch nachdem die Diagnose feststeht.» | umformuliert | wie 2c-2 | d92 |
+| 148 | 2c-2 Nr. 53 | `diagnose` › `zweifel` | «Wenn die Diagnose nicht geteilt wird» | Satzzeichen | wie 2c-2 | d93 |
+| 149 | 2c-2 Nr. 54 | `diagnose` › `zweifel` | «Auch eine fachlich gestellte Diagnose darf hinterfragt werden.» | Satzzeichen | wie 2c-2 | d96 |
+| 150 | 2c-2 Nr. 55 | `diagnose` › `zweifel` | «Eine zweite fachliche Einschätzung ist legitim.» | Satzzeichen | wie 2c-2 | d96 |
+| 151 | 2c-2 Nr. 56 | `diagnose` › `zweifel` | «offene Fragen mit der behandelnden Fachperson klären oder eine zweite fachliche Einschätzung einholen, sofern die Person das möchte» | Satzzeichen | wie 2c-2 | d106 |
+| 152 | 2c-2 Nr. 57 | `diagnose` › `zweifel` | «bei der Fachstelle Angehörigenarbeit der PUK nach eigener Beratung fragen» | gekürzt (im Bestand folgt «und die Zugangsbedingungen klären»; bis 2c-K: Satzzeichen, P2c-W1-6) | Art geändert (2c-K) | d107 |
+| 153 | 2c-2 Nr. 58 | `diagnose` › `zweifel` | «Klare Grenze: Bei akuter Gefahr, etwa bei Suizidgefahr, schwerer Selbstverletzung oder Gefahr für andere Menschen, ist die Frage nach der Diagnose nachrangig.» | umformuliert | wie 2c-2 | d108 |
+| 154 | 2c-2 Nr. 59 | `diagnose` › `zweifel` | «Dann holen Sie Hilfe über den Notruf.» | umformuliert | wie 2c-2 | d109 |
+| 155 | 2c-2 Nr. 60 | `diagnose` › `ohne-diagnose` | «Wenn noch keine Diagnose gestellt ist» | Satzzeichen | wie 2c-2 | d120 |
+| 156 | 2c-2 Nr. 61 | `diagnose` › `ohne-diagnose` | «Vielleicht erkennen Sie Verhaltensweisen oder Erfahrungen aus den Beschreibungen auf dieser Website wieder.» | umformuliert | wie 2c-2 | d121 |
+| 157 | 2c-2 Nr. 62 | `diagnose` › `ohne-diagnose` | «Das kann ein Anlass sein, Beobachtungen zu benennen und Beratung zu suchen.» | umformuliert | wie 2c-2 | d121 |
+| 158 | 2c-2 Nr. 63 | `diagnose` › `ohne-diagnose` | «Mit der Hausarztpraxis sprechen» | Bezeichnung | wie 2c-2 | d124 |
+| 159 | 2c-2 Nr. 64 | `diagnose` › `ohne-diagnose` | «Die Hausarztpraxis ist eine mögliche erste Anlaufstelle für Einschätzung, erste Abklärungen und Überweisung.» | umformuliert | wie 2c-2 | d125 |
+| 160 | 2c-2 Nr. 65 | `diagnose` › `ohne-diagnose` | «Welche Aufgaben die Praxis selbst übernimmt, hängt von Qualifikation, Situation und Versorgungsweg ab.» | umformuliert | wie 2c-2 | d126 |
+| 161 | 2c-2 Nr. 66 | `diagnose` › `ohne-diagnose` | «Die Fachstelle Angehörigenarbeit der PUK berät auch dann, wenn die Diagnostik noch nicht abgeschlossen ist oder mehrere Diagnosen im Raum stehen.» | umformuliert | wie 2c-2 | d368 |
+| 162 | 2c-2 Nr. 67 | `diagnose` › `ohne-diagnose` | «Wie die Beratung abläuft, steht auf der Startseite im Abschnitt «Beratung für Sie».» | Verweissatz (Auftrag, nur auf `diagnose`, P2c2-F-15) | geändert (2c-K) | d128, d195 |
+| 163 | 2c-2 Nr. 68 | `diagnose` › `ohne-diagnose` | «Spezialisierte Stellen anfragen» | Bezeichnung | wie 2c-2 | d129 |
+| 164 | 2c-2 Nr. 69 | `diagnose` › `ohne-diagnose` | «Wenn die betroffene Person eine fachliche Abklärung wünscht, kann eine direkte Anfrage bei einer spezialisierten Stelle sinnvoll sein.» | umformuliert | wie 2c-2 | d130 |
+| 165 | 2c-2 Nr. 70 | `diagnose` › `ohne-diagnose` | «Angebote für Abklärung und Therapie stehen auf der Seite «Behandlung und Ihre Rolle darin» im Abschnitt «Angebote im Kanton Zürich».» | neu | wie 2c-2 | d27, d402 |
+| 166 | 2c-2 Nr. 71 | `diagnose` › `ohne-diagnose` | «Nach langer Belastung fragen sich manche Angehörige, ob sie selbst eine psychische Erkrankung entwickelt haben, etwa eine Erschöpfungsdepression, Angststörungen oder Schlafstörungen.» | Satzzeichen | wie 2c-2 | d112 |
+| 167 | 2c-2 Nr. 72 | `diagnose` › `ohne-diagnose` | «Ihre Hausarztpraxis oder eine Psychotherapeutin oder ein Psychotherapeut kann eine Anlaufstelle sein.» | umformuliert | wie 2c-2 | d119 |
+| 168 | 2c-2 Nr. 73 | `diagnose` › `ohne-diagnose` | «Das ist keine Pflicht, aber eine reale Option.» | umformuliert | wie 2c-2 | d119 |
+| 169 | 2c-2 Nr. 74 | `diagnose` › `ohne-diagnose` | «Wie Sie eigene Überlastung erkennen, steht auf der Seite «Auf sich achten» im Abschnitt «Warnsignale für Überlastung».» | Verweissatz | wie 2c-2 | d117 |
+| 170 | 2c-2 Nr. 75 | `diagnose` › `ohne-diagnose` | «Wo Sie Beratung finden, steht auf der Seite «Unterstützung finden» im Abschnitt «Beratung für Angehörige».» | Verweissatz | wie 2c-2 | d118, d184, d365, b203 |
+| 171 | 2c-2 Nr. 76 | `diagnose` › `begleiterkrankungen` | «Komorbidität ist der medizinische Begriff für Begleiterkrankungen.» | umformuliert | wie 2c-2 | d238 |
+| 172 | 2c-2 Nr. 77 | `diagnose` › `begleiterkrankungen` | «Er bedeutet, dass eine Person gleichzeitig oder im Verlauf mehrere Erkrankungen hat.» | umformuliert | wie 2c-2 | d238 |
+| 173 | 2c-2 Nr. 78 | `diagnose` › `begleiterkrankungen` | «Bei Menschen mit Borderline kommen weitere psychische Diagnosen häufig vor, aber nicht bei allen.» | umformuliert | wie 2c-2 | d239, d257, d322 |
+| 174 | 2c-2 Nr. 79 | `diagnose` › `begleiterkrankungen` | «In Studien werden unter anderem diese Begleiterkrankungen beschrieben.» | gekürzt | wie 2c-2 | d241, d271 |
+| 175 | 2c-2 Nr. 80 | `diagnose` › `begleiterkrankungen` | «Die Reihenfolge ist keine Rangfolge.» | umformuliert | wie 2c-2 | d218, d242, d266, d272 |
+| 176 | 2c-2 Nr. 81 | `diagnose` › `begleiterkrankungen` | «Mehrere Diagnosen heissen mehr Komplexität, nicht mehr Schuld.» | Satzzeichen | wie 2c-2 | d249, d267 |
+| 177 | 2c-2 Nr. 82 | `diagnose` › `begleiterkrankungen` | «Davon zu unterscheiden ist die Differenzialdiagnostik. Bei der Abklärung prüfen Fachpersonen, ob ähnliche Muster zu einer anderen Erkrankung gehören, etwa zu bipolaren Störungen, einer PTBS, ADHS oder dissoziativen Störungen.» | umformuliert (2c-K: Punkt statt Doppelpunkt, P2c-F-15) | geändert (2c-K) | d80, d82 |
+| 178 | 2c-2 Nr. 83 | `diagnose` › `begleiterkrankungen` | «Manche dieser Erkrankungen, zum Beispiel eine PTBS, können auch zusätzlich zu Borderline bestehen.» | umformuliert | wie 2c-2 | d82 |
+| 179 | 2c-2 Nr. 84 | `diagnose` › `begleiterkrankungen` | «Wie Begleiterkrankungen behandelt werden und was für Medikamente gilt, steht auf der Seite «Behandlung und Ihre Rolle darin» im Abschnitt «Therapieformen».» | Verweissatz | wie 2c-2 | d403 |
+| 180 | 2c-2 Nr. 85 | `diagnose` › `begleiterkrankungen` | «Depressive Erkrankungen werden in Studien zu Borderline häufig beschrieben.» | gekürzt | wie 2c-2 | d278 |
+| 181 | 2c-2 Nr. 86 | `diagnose` › `begleiterkrankungen` | «Die älteren Studien dazu untersuchten Menschen, die zu Beginn stationär behandelt wurden.» | umformuliert | wie 2c-2 | d279 |
+| 182 | 2c-2 Nr. 87 | `diagnose` › `begleiterkrankungen` | «Die Befunde dieser Studien zeigen nicht, wie häufig Depressionen bei allen Menschen mit Borderline sind, und sie sind keine persönliche Prognose.» | umformuliert | wie 2c-2 | d280 |
+| 183 | 2c-2 Nr. 88 | `diagnose` › `begleiterkrankungen` | «Diese Unterscheidung ist Aufgabe der behandelnden Fachperson.» | Verdichtung | wie 2c-2 | d281, d306 |
+| 184 | 2c-2 Nr. 89 | `diagnose` › `begleiterkrankungen` | «Was Sie tun können: Benennen Sie beobachtbare Veränderungen, und verharmlosen Sie Ihre Sorge nicht.» | umformuliert | wie 2c-2 | d307 |
+| 185 | 2c-2 Nr. 90 | `diagnose` › `begleiterkrankungen` | «Wenn der Rückzug länger dauert, mehr Beschwerden dazukommen oder Hoffnungslosigkeit zentraler wird:» | umformuliert | wie 2c-2 | d308 |
+| 186 | 2c-2 Nr. 91 | `diagnose` › `begleiterkrankungen` | «Sprechen Sie Ihre Sorge ruhig an, ohne zu drängen oder zu drohen.» | umformuliert | wie 2c-2 | d309 |
+| 187 | 2c-2 Nr. 92 | `diagnose` › `begleiterkrankungen` | «Regen Sie, wenn möglich und gewünscht, gemeinsam eine fachliche Einschätzung an.» | umformuliert | wie 2c-2 | d310 |
+| 188 | 2c-2 Nr. 93 | `diagnose` › `begleiterkrankungen` | «Bei Fragen zur Schweigepflicht oder zur eigenen Entlastung können Sie sich unabhängig beraten lassen.» | umformuliert | wie 2c-2 | d311 |
+| 189 | 2c-2 Nr. 94 | `diagnose` › `begleiterkrankungen` | «Angehörige sind nicht schuld an der Erkrankung und nicht für die Genesung verantwortlich.» | Auftrag | wie 2c-2 | d314, d315 |
+| 190 | 2c-2 Nr. 95 | `diagnose` › `begleiterkrankungen` | «Was Schuld von Verantwortung unterscheidet, steht auf der Seite «Ihre Rolle» im Abschnitt «Schuld, Verantwortung und was dazwischen liegt».» | Verweissatz | wie 2c-2 | d316, d317 |
+| 191 | 2c-2 Nr. 96 | `diagnose` › `begleiterkrankungen` | «Eigene Erschöpfung ist kein Zeichen von Schwäche.» | Satzzeichen | wie 2c-2 | d320, d363 |
+| 192 | 2c-2 Nr. 97 | `diagnose` › `begleiterkrankungen` | «Wie Sie für sich Unterstützung finden, steht auf der Seite «Auf sich achten» im Abschnitt «Auch Sie brauchen Unterstützung».» | Verweissatz | wie 2c-2 | d364 |
+| 193 | 2c-2 Nr. 98 | `diagnose` › `begleiterkrankungen` | «Wenn Suizidgedanken dazukommen» | Auftrag | wie 2c-2 | d293 |
+| 194 | 2c-2 Nr. 99 | `diagnose` › `begleiterkrankungen` | «Die britische Behandlungsleitlinie NICE beschreibt einen beobachteten Zusammenhang zwischen Borderline mit einer zusätzlichen Depression (Major Depression) und Suizidversuchen.» | umformuliert | wie 2c-2 | d294 |
+| 195 | 2c-2 Nr. 100 | `diagnose` › `begleiterkrankungen` | «Suizidale Aussagen oder Hinweise auf konkrete Pläne brauchen eine professionelle Einschätzung, unabhängig von ihrer diagnostischen Zuordnung.» | umformuliert | wie 2c-2 | d270, d296 |
+| 196 | 2c-2 Nr. 101 | `diagnose` › `begleiterkrankungen` | «Bei akuter Gefahr oder Hinweisen auf eine konkrete suizidale Absicht holen Sie sofort Hilfe über den Notruf.» | umformuliert | wie 2c-2 | d298, d312 |
+| 197 | 2c-2 Nr. 102 | `diagnose` › `begleiterkrankungen` | «Wie Sie Suizidgedanken direkt ansprechen können, steht auf der Seite «Krisen begleiten» im Abschnitt «Wenn Suizidgedanken ein Thema sind».» | Verweissatz | wie 2c-2 | d300 |
+| 198 | 2c-2 Nr. 103 | `diagnose` › `begleiterkrankungen` | «Diese Hinweise können im Zusammenhang mit Borderline auf eine depressive Phase deuten.» | neu | wie 2c-2 | d404 |
+| 199 | 2c-2 Nr. 104 | `diagnose` › `begleiterkrankungen` | «Die Hinweise ersetzen keine fachliche Beurteilung.» | neu | wie 2c-2 | d404 |
+| 200 | 2c-2 Nr. 105 | `diagnose` › `begleiterkrankungen` | «Weitere Begleiterkrankungen kurz» | Auftrag | wie 2c-2 | d321 |
+| 201 | 2c-2 Nr. 106 | `diagnose` › `begleiterkrankungen` | «Diese Übersicht ist bewusst knapp und ohne Rangfolge.» | gekürzt | wie 2c-2 | d323 |
+| 202 | 2c-2 Nr. 107 | `diagnose` › `begleiterkrankungen` | «Eine PTBS kann gleichzeitig bestehen oder bei der Differenzialdiagnostik geprüft werden.» | umformuliert | wie 2c-2 | d328 |
+| 203 | 2c-2 Nr. 108 | `diagnose` › `begleiterkrankungen` | «ADHS kann gleichzeitig bestehen, und einzelne Merkmale wie Impulsivität oder Schwierigkeiten mit der Emotionsregulation können sich überschneiden.» | umformuliert | wie 2c-2 | d338, d339 |
+| 204 | 2c-2 Nr. 109 | `diagnose` › `begleiterkrankungen` | «Aus der Borderline-Diagnose allein lässt sich ADHS nicht ableiten. Eine Abklärung berücksichtigt unter anderem Entwicklungsgeschichte, Beginn und situationsübergreifendes Auftreten.» | umformuliert (2c-K: zwei Sätze, P2c-F-15, P2c2-F-15) | geändert (2c-K) | d340 |
+
+**`behandlung`**
+
+| Nr. | Liste | Ort | Satz | Art | Stand | Abgleich |
+| ---: | --- | --- | --- | --- | --- | --- |
+| 205 | 2c-2 Nr. 110 | `behandlung` › `kopf` | «Behandlung und Ihre Rolle darin» | Auftrag | wie 2c-2 | b2 |
+| 206 | 2c-2 Nr. 111 | `behandlung` › `kopf` | «Behandlung kann Veränderung unterstützen.» | Auftrag | wie 2c-2 | b291 |
+| 207 | 2c-2 Nr. 112 | `behandlung` › `rollen` | «Wer was beitragen kann» | Auftrag | wie 2c-2 | b16, b17 |
+| 208 | 2c-2 Nr. 113 | `behandlung` › `rollen` | «Die betroffene Person, Fachpersonen und Angehörige können Unterschiedliches beitragen, und von jeder Rolle ist manches nicht zu erwarten.» | neu | wie 2c-2 | b297 |
+| 209 | 2c-2 Nr. 114 | `behandlung` › `rollen` | «Mögliche Beiträge» | Bezeichnung (Bestand «MÖGLICHE BEITRÄGE», in allen drei Spalten, P2c-F-15, P2c2-F-4) | geändert (2c-K) | b21 |
+| 210 | 2c-2 Nr. 115 | `behandlung` › `rollen` | «eigene Ziele und Wünsche für die Behandlung benennen» | Satzzeichen | wie 2c-2 | b40 |
+| 211 | 2c-2 Nr. 116 | `behandlung` › `rollen` | «Fertigkeiten (Skills) ausprobieren, wenn sie passen» | umformuliert | wie 2c-2 | b41 |
+| 212 | 2c-2 Nr. 117 | `behandlung` › `rollen` | «Verantwortung für eigenes Handeln übernehmen, soweit es möglich ist» | umformuliert | wie 2c-2 | b42 |
+| 213 | 2c-2 Nr. 118 | `behandlung` › `rollen` | «Warnzeichen mitteilen, wenn das möglich und gewünscht ist» | umformuliert | wie 2c-2 | b43 |
+| 214 | 2c-2 Nr. 119 | `behandlung` › `rollen` | «Nicht zu erwarten» | Auftrag | wie 2c-2 | b27, b243 |
+| 215 | 2c-2 Nr. 120 | `behandlung` › `rollen` | «allein für die Qualität der Beziehung sorgen» | umformuliert | wie 2c-2 | b44 |
+| 216 | 2c-2 Nr. 121 | `behandlung` › `rollen` | «die Behandlung gemeinsam planen und fachlich begleiten» | umformuliert | wie 2c-2 | b32 |
+| 217 | 2c-2 Nr. 122 | `behandlung` › `rollen` | «Skills anbieten und vermitteln, zum Beispiel in der DBT» | umformuliert | wie 2c-2 | b33 |
+| 218 | 2c-2 Nr. 123 | `behandlung` › `rollen` | «Therapieziele mit der betroffenen Person vereinbaren» | umformuliert | wie 2c-2 | b35 |
+| 219 | 2c-2 Nr. 124 | `behandlung` › `rollen` | «alle Beziehungsfragen stellvertretend lösen» | Satzzeichen | wie 2c-2 | b38 |
+| 220 | 2c-2 Nr. 125 | `behandlung` › `rollen` | «rund um die Uhr erreichbar sein» | Satzzeichen | wie 2c-2 | b39 |
+| 221 | 2c-2 Nr. 126 | `behandlung` › `rollen` | «eigene Grenzen mitteilen» | umformuliert | wie 2c-2 | b23 |
+| 222 | 2c-2 Nr. 127 | `behandlung` › `rollen` | «auf Wunsch bei Behandlungsschritten unterstützen» | Satzzeichen | wie 2c-2 | b24, b210 |
+| 223 | 2c-2 Nr. 128 | `behandlung` › `rollen` | «eigene Entlastung suchen» | Satzzeichen | wie 2c-2 | b25 |
+| 224 | 2c-2 Nr. 129 | `behandlung` › `rollen` | «den Fortschritt kontrollieren oder überwachen» | umformuliert | wie 2c-2 | b29, b247 |
+| 225 | 2c-2 Nr. 130 | `behandlung` › `rollen` | «Motivation oder Genesung herstellen oder dauerhaft aufrechterhalten» | Auftrag (mit «Motivation oder Genesung herstellen» in einem Punkt, P2c2-F-4) | geändert (2c-K) | b31, b246 |
+| 226 | 2c-2 Nr. 131 | `behandlung` › `rollen` | «Therapiesprache in den Alltag übersetzen oder jedes Verhalten mit Fachbegriffen einordnen» | Auftrag (zwei Punkte in einem, P2c2-F-4) | geändert (2c-K) | b244, b245 |
+| 227 | 2c-2 Nr. 132 | `behandlung` › `rollen` | «Behandlung liegt bei der betroffenen Person und den Fachpersonen.» | Auftrag | wie 2c-2 | b48 |
+| 228 | 2c-2 Nr. 133 | `behandlung` › `rollen` | «Was Sie freiwillig anbieten können, steht auf der Seite «Ihre Rolle» im Abschnitt «Was Sie anbieten können und was nicht Ihre Aufgabe ist».» | Verweissatz | wie 2c-2 | b55, b56, b211, b300 |
+| 229 | 2c-2 Nr. 134 | `behandlung` › `kontakt` | «Drei Wege sind zu unterscheiden:» | umformuliert | wie 2c-2 | b61 |
+| 230 | – | `behandlung` › `kontakt` | «Zum Beispiel: «Mir ist aufgefallen, dass … An wen kann ich mich mit meiner Sorge wenden?»» | Auftrag (Begriff «Beobachtungen mitteilen»; Beispielsatz aus der entfallenen Vertiefung, P2c2-F-14) | neu (2c-K) | b122 |
+| 231 | 2c-2 Nr. 135 | `behandlung` › `kontakt` | «Wie die Fachstelle Angehörigenarbeit der PUK berät, steht auf der Startseite im Abschnitt «Beratung für Sie».» | Verweissatz | wie 2c-2 | d128, d195, d369, b74 |
+| 232 | 2c-2 Nr. 136 | `behandlung` › `kontakt` | «Bei möglicher akuter Gefahr holen Sie sofort Hilfe über den Notruf und warten nicht auf eine Rückmeldung per E-Mail.» | umformuliert | wie 2c-2 | b67, b103, b121, b140 |
+| 233 | 2c-2 Nr. 137 | `behandlung` › `kontakt` | «Welche eigenen konkreten Beobachtungen möchten Sie, möglichst mit Wissen der betroffenen Person, in ein gemeinsames Gespräch einbringen?» | Satzzeichen | wie 2c-2 | b136 |
+| 234 | 2c-2 Nr. 138 | `behandlung` › `kontakt` | «Welche Unterstützung haben alle Beteiligten miteinander vereinbart, und was gehört ausdrücklich nicht zu Ihrer Rolle?» | Satzzeichen | wie 2c-2 | b138 |
+| 235 | 2c-2 Nr. 139 | `behandlung` › `kontakt` | «Das Behandlungsteam entscheidet gemeinsam mit ihr über Ziele und Verlauf.» | Satzzeichen | wie 2c-2 | b142 |
+| 236 | 2c-2 Nr. 140 | `behandlung` › `kontakt` | «Ich werde nicht zu Sitzungen eingeladen» | Auftrag | wie 2c-2 | b81 |
+| 237 | 2c-2 Nr. 141 | `behandlung` › `kontakt` | «Sprechen Sie Ihren Wunsch nach Einbezug offen an, und respektieren Sie die Grenzen der Schweigepflicht.» | Satzzeichen | wie 2c-2 | b88 |
+| 238 | 2c-2 Nr. 142 | `behandlung` › `kontakt` | «Das ist berechtigt.» | Satzzeichen | wie 2c-2 | b90 |
+| 239 | 2c-2 Nr. 143 | `behandlung` › `kontakt` | «Sie dürfen Orientierung für Ihre eigene Rolle suchen.» | Satzzeichen | wie 2c-2 | b90 |
+| 240 | 2c-2 Nr. 144 | `behandlung` › `kontakt` | «Bei der Fachstelle Angehörigenarbeit der PUK ist sie kostenlos und ohne Vollmacht der betroffenen Person möglich.» | umformuliert | wie 2c-2 | b92 |
+| 241 | 2c-2 Nr. 145 | `behandlung` › `kontakt` | «Ein Beispiel:» vor dem Beispielsatz (Satz wörtlich) | Bezeichnung (statt «Formulierungsbeispiel:») | wie 2c-2 | b101 |
+| 242 | – | `behandlung` › `kontakt` | «Sie sehen von aussen nicht, was in der Therapie geschieht und welche Ziele die Person mit dem Behandlungsteam vereinbart hat.» | Auftrag (Vertiefung «Ich mache mir Sorgen um den Verlauf»; «Behandlungsteam» statt «Fachteam», P2c-F-15) | neu (2c-K) | b98 |
+| 243 | 2c-2 Nr. 146 | `behandlung` › `kontakt` | «Bei begründeten Zweifeln an Diagnose oder Behandlung kann eine zweite fachliche Einschätzung sinnvoll sein.» | Satzzeichen | wie 2c-2 | b104 |
+| 244 | 2c-2 Nr. 147 | `behandlung` › `kontakt` | «Eine pauschale Wartefrist von einem Jahr gibt es dafür nicht.» | Satzzeichen | wie 2c-2 | b104 |
+| 245 | 2c-2 Nr. 148 | `behandlung` › `kontakt` | «Eigene konkrete Beobachtungen, vereinbarte Themen und den eigenen Unterstützungsbedarf, ohne Diagnose, Motiv- oder Verlaufsbewertung.» | umformuliert | entfällt (2c-K): die Vertiefung «Was kann ich in einem vereinbarten Kontakt mitteilen?» entfällt, die Aussage steht im Begriff «Beobachtungen mitteilen» (P2c2-F-14; Abgleich «zusammengeführt (2c-K)») | b117 |
+| 246 | 2c-2 Nr. 149 | `behandlung` › `kontakt` | «Stimmen Sie nicht akute Angaben möglichst mit der betroffenen Person ab.» | Satzzeichen | entfällt (2c-K): die Vertiefung «Was kann ich in einem vereinbarten Kontakt mitteilen?» entfällt, die Aussage steht im Begriff «Beobachtungen mitteilen» (P2c2-F-14; Abgleich «zusammengeführt (2c-K)») | b118 |
+| 247 | 2c-2 Nr. 150 | `behandlung` › `kontakt` | «Beobachtung statt Deutung: «Mir ist aufgefallen, dass … An wen kann ich mich mit meiner Sorge wenden?»» | Satzzeichen | entfällt (2c-K): die Vertiefung «Was kann ich in einem vereinbarten Kontakt mitteilen?» entfällt, die Aussage steht im Begriff «Beobachtungen mitteilen» (P2c2-F-14; Abgleich «zusammengeführt (2c-K)») | b122 |
+| 248 | 2c-2 Nr. 151 | `behandlung` › `kontakt` | «Sagen Sie früh, was Sie freiwillig übernehmen können.» | Satzzeichen | wie 2c-2 | b129 |
+| 249 | 2c-2 Nr. 152 | `behandlung` › `kontakt` | «Auch eine nicht übernommene Aufgabe muss im Nachsorgeplan berücksichtigt werden.» | Satzzeichen | wie 2c-2 | b129 |
+| 250 | 2c-2 Nr. 153 | `behandlung` › `kontakt` | «Bitten Sie mit Einwilligung der betroffenen Person um die Informationen, die Sie für Ihre vereinbarte Rolle brauchen.» | umformuliert | wie 2c-2 | b130 |
+| 251 | 2c-2 Nr. 154 | `behandlung` › `kontakt` | «Was nach einer Krise sonst hilft, steht auf der Seite «Krisen begleiten» im Abschnitt «Nach der Krise».» | Verweissatz | wie 2c-2 | b124, b125, b126, b127 |
+| 252 | 2c-2 Nr. 155 | `behandlung` › `kontakt` | «Musterbrief für einen ersten Kontakt» | Auftrag | wie 2c-2 | b222 |
+| 253 | 2c-2 Nr. 156 | `behandlung` › `kontakt` | «Wenn Sie als nahestehende Person Kontakt mit der behandelnden Fachperson aufnehmen möchten, kann eine kurze schriftliche Nachricht helfen.» | umformuliert | wie 2c-2 | b224 |
+| 254 | 2c-2 Nr. 157 | `behandlung` › `kontakt` | «Das Muster dient als Ausgangspunkt, wenn Sie Ihre Perspektive einbringen oder nach einem Angehörigengespräch fragen möchten.» | umformuliert | wie 2c-2 | b225 |
+| 255 | 2c-2 Nr. 158 | `behandlung` › `kontakt` | «Ich bin [Beziehung zu Vorname, z. B. Mutter, Vater oder Partnerin] von [Vorname].» | Satzzeichen (eigene Zeile, «Ich» gross) | wie 2c-2 | b227 |
+| 256 | 2c-2 Nr. 159 | `behandlung` › `kontakt` | «Mit freundlichen Grüssen [Ihr Name] [Optional: Telefonnummer für Rückruf]» | Satzzeichen | wie 2c-2 | b232 |
+| 257 | 2c-2 Nr. 160 | `behandlung` › `kontakt` | «Die behandelnde Fachperson ist an die Schweigepflicht gebunden und darf ohne Einwilligung der betroffenen Person keine Inhalte der Behandlung besprechen.» | umformuliert | wie 2c-2 | b233 |
+| 258 | 2c-2 Nr. 161 | `behandlung` › `kontakt` | «Das ist keine Ablehnung, sondern professionelles Handeln.» | umformuliert | wie 2c-2 | b234 |
+| 259 | 2c-2 Nr. 162 | `behandlung` › `therapieformen` | «Mehrere strukturierte Psychotherapien können bei Borderline helfen.» | umformuliert | wie 2c-2 | b166 |
+| 260 | 2c-2 Nr. 163 | `behandlung` › `therapieformen` | «Für viele Einzelvergleiche sind die Forschungsergebnisse nur begrenzt sicher, und es gibt keine Methode, die für alle Menschen die beste ist.» | umformuliert | wie 2c-2 | b166 |
+| 261 | 2c-2 Nr. 164 | `behandlung` › `therapieformen` | «Die DBT ist stark strukturiert und setzt den Schwerpunkt auf Emotionsregulation, Stresstoleranz, Achtsamkeit und zwischenmenschliche Fertigkeiten (Skills).» | umformuliert | wie 2c-2 | b154 |
+| 262 | 2c-2 Nr. 165 | `behandlung` › `therapieformen` | «Die MBT konzentriert sich auf das Verstehen eigener und fremder innerer Zustände und auf das Beziehungsgeschehen.» | umformuliert | wie 2c-2 | b156 |
+| 263 | 2c-2 Nr. 166 | `behandlung` › `therapieformen` | «Die Schematherapie arbeitet mit frühen Prägungen, Beziehungsmustern und inneren Zuständen, die unter Stress reaktiv werden.» | umformuliert | wie 2c-2 | b158 |
+| 264 | 2c-2 Nr. 167 | `behandlung` › `therapieformen` | «Die TFP arbeitet mit dem Erleben in der Beziehung zur Therapeutin oder zum Therapeuten: Innere Konflikte werden dort im «Hier und Jetzt» betrachtet und bearbeitet.» | umformuliert | wie 2c-2 | b160 |
+| 265 | 2c-2 Nr. 168 | `behandlung` › `therapieformen` | «Auch klar strukturierte, auf Borderline abgestimmte Behandlungen ohne spezialisiertes Therapielabel können wirksam sein.» | umformuliert | wie 2c-2 | b162 |
+| 266 | 2c-2 Nr. 169 | `behandlung` › `therapieformen` | «Therapie kann in drei Rahmen stattfinden:» | Auftrag («Rahmen» statt «Formen», P2c-F-15) | geändert (2c-K) | b251 |
+| 267 | 2c-2 Nr. 170 | `behandlung` › `therapieformen` | «Ambulant» | Satzzeichen | wie 2c-2 | b251, b302 |
+| 268 | 2c-2 Nr. 171 | `behandlung` › `therapieformen` | «Teilstationär» | Satzzeichen | wie 2c-2 | b251 |
+| 269 | 2c-2 Nr. 172 | `behandlung` › `therapieformen` | «Stationär» | Satzzeichen | wie 2c-2 | b251 |
+| 270 | 2c-2 Nr. 173 | `behandlung` › `therapieformen` | «Behandlungsziele und Fortschritt bewertet die betroffene Person gemeinsam mit dem Behandlungsteam.» | Auftrag («Behandlungsteam» statt «Fachteam», P2c-F-15) | geändert (2c-K) | b165 |
+| 271 | 2c-2 Nr. 174 | `behandlung` › `therapieformen` | «Begleiterkrankungen und Medikamente» | Auftrag | wie 2c-2 | d341 |
+| 272 | 2c-2 Nr. 175 | `behandlung` › `therapieformen` | «Begleiterkrankungen werden in der Regel mitbehandelt.» | Auftrag | wie 2c-2 | d342 |
+| 273 | 2c-2 Nr. 176 | `behandlung` › `therapieformen` | «Die Behandlung kann integriert, parallel oder schrittweise geplant werden.» | Auftrag | wie 2c-2 | d290, d343, d345 |
+| 274 | 2c-2 Nr. 177 | `behandlung` › `therapieformen` | «Eine starre Reihenfolge gilt nicht. Der Behandlungsplan wird individuell abgestimmt.» | Auftrag (zwei Sätze, P2c2-S-1) | geändert (2c-K) | d346, d350, d351, d352 |
+| 275 | 2c-2 Nr. 178 | `behandlung` › `therapieformen` | «Akute Gefährdungen, etwa eine schwere depressive Episode, eine Krise beim Substanzgebrauch oder eine Essstörung mit körperlicher Gefährdung, brauchen sofortige Aufmerksamkeit.» | umformuliert | wie 2c-2 | d344 |
+| 276 | 2c-2 Nr. 179 | `behandlung` › `therapieformen` | «Ob ein Medikament passt, wird individuell mit der behandelnden ärztlichen Fachperson geklärt.» | umformuliert | wie 2c-2 | d349, d354 |
+| 277 | 2c-2 Nr. 180 | `behandlung` › `therapieformen` | «Medikamente werden nur gemeinsam mit der behandelnden ärztlichen Fachperson geändert.» | Auftrag («ärztlichen», P2c-F-4 b) | geändert (2c-K) | b303 |
+| 278 | 2c-2 Nr. 181 | `behandlung` › `therapieformen` | «Welche Begleiterkrankungen vorkommen können, steht auf der Seite «Diagnose und Begleiterkrankungen» im Abschnitt «Begleiterkrankungen».» | Verweissatz | wie 2c-2 | b304 |
+| 279 | 2c-2 Nr. 182 | `behandlung` › `therapieformen` | «Programme für Angehörige» | Auftrag | wie 2c-2 | b305 |
+| 280 | 2c-2 Nr. 183 | `behandlung` › `therapieformen` | «Psychoedukative Angehörigenprogramme vermitteln verständliche Informationen zur Erkrankung und zum Umgang damit.» | neu | wie 2c-2 | b306 |
+| 281 | 2c-2 Nr. 184 | `behandlung` › `therapieformen` | «Diese Programme können entlastende Unterstützung bieten und sind fachlich beschrieben.» | umformuliert | wie 2c-2 | b168, b220 |
+| 282 | 2c-2 Nr. 185 | `behandlung` › `therapieformen` | «Family Connections ist ein solches Programm für Angehörige von Menschen mit Borderline.» | neu | wie 2c-2 | b307 |
+| 283 | 2c-2 Nr. 186 | `behandlung` › `therapieformen` | «Dazu liegen inzwischen auch Daten aus einer randomisierten Studie vor: Die Studie von 2024 fand keinen statistisch signifikanten Vorteil gegenüber einer aktiven Vergleichsbehandlung.» | umformuliert | wie 2c-2 | b169 |
+| 284 | 2c-2 Nr. 187 | `behandlung` › `therapieformen` | «Daraus folgt weder gesicherte Überlegenheit noch Gleichwertigkeit.» | Satzzeichen | wie 2c-2 | b169 |
+| 285 | 2c-2 Nr. 188 | `behandlung` › `therapieformen` | «Ob ein Programm in Ihrer Nähe angeboten wird, ist getrennt von der Wirksamkeit zu klären.» | umformuliert | wie 2c-2 | b171 |
+| 286 | 2c-2 Nr. 189 | `behandlung` › `therapieformen` | «Angebote für Austausch mit anderen Angehörigen stehen auf der Seite «Unterstützung finden» im Abschnitt «Austausch mit anderen Angehörigen».» | umformuliert | wie 2c-2 | b221 |
+| 287 | 2c-2 Nr. 190 | `behandlung` › `rueckschlaege` | «Unterbrüche und Rückschläge» | Auftrag | wie 2c-2 | b235 |
+| 288 | 2c-2 Nr. 191 | `behandlung` › `rueckschlaege` | «Diese Reaktionen sind verständlich.» | Satzzeichen | wie 2c-2 | b238 |
+| 289 | 2c-2 Nr. 192 | `behandlung` › `rueckschlaege` | «Den Verlauf bewerten müssen Sie deshalb nicht.» | umformuliert | wie 2c-2 | b238 |
+| 290 | 2c-2 Nr. 193 | `behandlung` › `rueckschlaege` | «Wenn Therapie gerade schwierig ist» | Bezeichnung | wie 2c-2 | b107 |
+| 291 | 2c-2 Nr. 194 | `behandlung` › `rueckschlaege` | «Zwiespältige Gefühle gegenüber einer Therapie können viele Gründe haben, zum Beispiel Scham, Angst, Überforderung, schlechte Erfahrungen oder Misstrauen.» | umformuliert | wie 2c-2 | b114 |
+| 292 | 2c-2 Nr. 195 | `behandlung` › `rueckschlaege` | «Sie können Motivation nicht erzwingen, aber Sie können Interesse zeigen.» | Satzzeichen | wie 2c-2 | b110 |
+| 293 | 2c-2 Nr. 196 | `behandlung` › `rueckschlaege` | «In einer stabilen Phase direkt ansprechen» über dem Beispielsatz (Satz wörtlich) | Bezeichnung (statt «Direkt ansprechen (in stabiler Phase):») | wie 2c-2 | b108 |
+| 294 | 2c-2 Nr. 197 | `behandlung` › `rueckschlaege` | «Was Sie tun können:» | Bezeichnung | wie 2c-2 | – |
+| 295 | 2c-2 Nr. 198 | `behandlung` › `rueckschlaege` | «Sprechen Sie Therapie als Möglichkeit an, nicht als Drohung.» | umformuliert | wie 2c-2 | b209 |
+| 296 | 2c-2 Nr. 199 | `behandlung` › `rueckschlaege` | «Fragen Sie nach, welche Veränderungen für die Person selbst bedeutsam sind.» | umformuliert | wie 2c-2 | b212 |
+| 297 | 2c-2 Nr. 200 | `behandlung` › `rueckschlaege` | «Nehmen Sie schwierige Phasen ernst, ohne den Therapieverlauf von aussen zu bewerten.» | umformuliert | wie 2c-2 | b213 |
+| 298 | 2c-2 Nr. 201 | `behandlung` › `rueckschlaege` | «Welche Art von Unterstützung ist jetzt gewünscht, oder auch nicht?» | Satzzeichen | wie 2c-2 | b239, b240, b241 |
+| 299 | 2c-2 Nr. 202 | `behandlung` › `rueckschlaege` | «Wenn Sprache Gespräche erschwert» | neu | wie 2c-2 | b308 |
+| 300 | 2c-2 Nr. 203 | `behandlung` › `rueckschlaege` | «Wenn Sprache, Scham oder Migrationserfahrungen Gespräche erschweren, schliesst das eine Behandlung nicht aus.» | umformuliert | wie 2c-2 | b215 |
+| 301 | 2c-2 Nr. 204 | `behandlung` › `rueckschlaege` | «Wie Veränderung verlaufen kann, steht auf der Seite «Genesung» im Abschnitt «Veränderung verläuft unterschiedlich».» | Verweissatz | wie 2c-2 | b308 |
+| 302 | 2c-2 Nr. 205 | `behandlung` › `angebote` | «Angebote im Kanton Zürich» | Satzzeichen | wie 2c-2 | d139, b250 |
+| 303 | 2c-2 Nr. 206 | `behandlung` › `angebote` | «Für Abklärung und Therapie kommen verschiedene Stellen infrage.» | umformuliert | wie 2c-2 | d141 |
+| 304 | 2c-2 Nr. 207 | `behandlung` › `angebote` | «Die Liste ist nicht abschliessend.» | Auftrag | wie 2c-2 | d142 |
+| 305 | – | `behandlung` › `angebote` | «Aufgeführt sind Angebote mit Schwerpunkt Borderline oder DBT und Behandlungsangebote für junge Menschen, die Menschen aus dem Kanton Zürich nutzen können.» | Auftrag (Kriterium der Liste, P2c-F-3, P2c2-F-3) | neu (2c-K) | b320 |
+| 306 | 2c-2 Nr. 208 | `behandlung` › `angebote` | «Auch niedergelassene Psychiaterinnen und Psychiater oder psychologische Psychotherapeutinnen und Psychotherapeuten mit Borderline-Erfahrung kommen infrage.» | umformuliert | wie 2c-2 | d142 |
+| 307 | 2c-2 Nr. 209 | `behandlung` › `angebote` | «Die Hausarztpraxis kann ein erster Schritt sein und bei Bedarf an eine geeignete Fachperson überweisen.» | umformuliert | wie 2c-2 | d143 |
+| 308 | 2c-2 Nr. 210 | `behandlung` › `angebote` | «Klären Sie die Kostenübernahme vorab.» | Auftrag | wie 2c-2 | d161 |
+| 309 | 2c-2 Nr. 211 | `behandlung` › `angebote` | «Aktuelle Bedingungen und Anmeldung stehen auf der Website des Angebots.» | Auftrag | wie 2c-2 | d145, d146, b256 |
+| 310 | 2c-2 Nr. 212 | `behandlung` › `angebote` | «HYPE Züri, Kinder- und Jugendpsychiatrie der PUK» | Auftrag | wie 2c-2 | b252 |
+| 311 | 2c-2 Nr. 213 | `behandlung` › `angebote` | «HYPE Züri ist ein Frühinterventionsangebot bei Verdacht, Risiko oder bereits diagnostizierter Borderline-Persönlichkeitsstörung.» | umformuliert | wie 2c-2 | d137, b253 |
+| 312 | 2c-2 Nr. 214 | `behandlung` › `angebote` | «Für: Jugendliche» | Auftrag («ab 13 Jahren» entfällt, P2c-F-3, P2c2-F-3) | geändert (2c-K) | b310 |
+| 313 | 2c-2 Nr. 215 | `behandlung` › `angebote` | «Website: Persönlichkeitsstörungen bei Jugendlichen auf www.pukzh.ch» | neu | wie 2c-2 | b318 |
+| 314 | 2c-2 Nr. 216 | `behandlung` › `angebote` | «PUK Zürich, Erwachsene» | Satzzeichen | wie 2c-2 | d144, b257 |
+| 315 | 2c-2 Nr. 217 | `behandlung` › `angebote` | «Die PUK bietet spezialisierte, an der DBT orientierte Behandlungsangebote.» | umformuliert | wie 2c-2 | b258 |
+| 316 | 2c-2 Nr. 218 | `behandlung` › `angebote` | «Für: Erwachsene» | Satzzeichen | wie 2c-2 | b311 |
+| 317 | 2c-2 Nr. 219 | `behandlung` › `angebote` | «Website: Persönlichkeitsstörungen bei Erwachsenen auf www.pukzh.ch» | neu | wie 2c-2 | b319 |
+| 318 | 2c-2 Nr. 220 | `behandlung` › `angebote` | «ipw, Psychotherapiestation für junge Erwachsene» | Satzzeichen | wie 2c-2 | d149, b260 |
+| 319 | – | `behandlung` › `angebote` | «Die Station richtet sich an junge Erwachsene von 17 bis 25 Jahren.» | Auftrag (ipw, vor «Klären Sie die aktuellen Alters- und Aufnahmebedingungen direkt mit dem Anbieter.», P2c-F-3, P2c2-F-3) | neu (2c-K) | b321 |
+| 320 | 2c-2 Nr. 221 | `behandlung` › `angebote` | «Für: junge Erwachsene» | Satzzeichen | wie 2c-2 (bleibt, Auftrag 2c-K, Abschnitt 3 c) | b312 |
+| 321 | 2c-2 Nr. 222 | `behandlung` › `angebote` | «Website: Psychotherapiestation für junge Erwachsene auf ipw.ch» | Bezeichnung | wie 2c-2 | b264 |
+| 322 | 2c-2 Nr. 223 | `behandlung` › `angebote` | «Das Sanatorium Kilchberg ist eine Privatklinik für Psychiatrie und Psychotherapie am Zürichsee.» | umformuliert | entfällt (2c-K): Sanatorium Kilchberg entfällt (P2c-F-3, P2c2-F-3) | d155 |
+| 323 | 2c-2 Nr. 224 | `behandlung` › `angebote` | «Für: Angaben auf der Website» | neu | entfällt (2c-K): Sanatorium Kilchberg entfällt (P2c-F-3, P2c2-F-3) | b313 |
+| 324 | 2c-2 Nr. 225 | `behandlung` › `angebote` | «Website: www.sanatorium-kilchberg.ch» | gekürzt | entfällt (2c-K): Sanatorium Kilchberg entfällt (P2c-F-3, P2c2-F-3) | d156 |
+| 325 | 2c-2 Nr. 226 | `behandlung` › `angebote` | «Clienia Schlössli, Oetwil am See» | Satzzeichen | wie 2c-2 | d157, b265 |
+| 326 | 2c-2 Nr. 227 | `behandlung` › `angebote` | «Clienia Schlössli bietet eine spezialisierte DBT-Station für Menschen mit Borderline-Persönlichkeitsstörung.» | umformuliert | wie 2c-2 | d158, b266 |
+| 327 | 2c-2 Nr. 228 | `behandlung` › `angebote` | «Für: Erwachsene ab 18 Jahren» | neu | wie 2c-2 | b314 |
+| 328 | 2c-2 Nr. 229 | `behandlung` › `angebote` | «Website: Station A2 auf www.clienia.ch» | Bezeichnung | wie 2c-2 | d159, b267 |
+| 329 | 2c-2 Nr. 230 | `behandlung` › `angebote` | «DBT-Therapeutensuche, Dachverband DBT» | Auftrag | wie 2c-2 | b268 |
+| 330 | 2c-2 Nr. 231 | `behandlung` › `angebote` | «Der Dachverband DBT bietet einen Suchweg für zertifizierte DBT-Therapeutinnen und -Therapeuten.» | umformuliert | wie 2c-2 | b269 |
+| 331 | 2c-2 Nr. 232 | `behandlung` › `angebote` | «Die Suche lässt sich nach Land filtern.» | Auftrag (P2c-F-3, P2c2-F-3) | geändert (2c-K) | b316 |
+| 332 | 2c-2 Nr. 233 | `behandlung` › `angebote` | «Für: Menschen, die eine DBT-Therapie suchen» | neu | wie 2c-2 | b315 |
+| 333 | 2c-2 Nr. 234 | `behandlung` › `angebote` | «Website: DBT-Therapieangebote auf www.dachverband-dbt.de» | Bezeichnung | wie 2c-2 | b270 |
+| 334 | 2c-2 Nr. 235 | `behandlung` › `wartezeit` | «Wenn kein Therapieplatz verfügbar ist, kann die betroffene Person mit der Hausarztpraxis oder einer bereits behandelnden Fachperson den nächsten Schritt besprechen.» | umformuliert | wie 2c-2 | d164, b183 |
+| 335 | 2c-2 Nr. 236 | `behandlung` › `wartezeit` | «Anmeldung klären: Nimmt die Stelle neue Patientinnen und Patienten auf?» | umformuliert | wie 2c-2 | d166, b185 |
+| 336 | 2c-2 Nr. 237 | `behandlung` › `wartezeit` | «Ist eine direkte Anmeldung möglich, oder braucht es eine Überweisung oder eine ärztliche Anordnung?» | umformuliert | wie 2c-2 | d167, b186 |
+| 337 | 2c-2 Nr. 238 | `behandlung` › `wartezeit` | «Berücksichtigen Sie den vereinbarten Zugangsweg des Versicherungsmodells.» | umformuliert | wie 2c-2 | d171, b190 |
+| 338 | 2c-2 Nr. 239 | `behandlung` › `wartezeit` | «Für psychologische Psychotherapie zulasten der Grundversicherung ist eine ärztliche Anordnung nötig.» | Satzzeichen | wie 2c-2 | d172, b191 |
+| 339 | 2c-2 Nr. 240 | `behandlung` › `wartezeit` | «Nicht alle Ärztinnen und Ärzte sind regulär anordnungsberechtigt.» | umformuliert | wie 2c-2 | d172, b191 |
+| 340 | 2c-2 Nr. 241 | `behandlung` › `wartezeit` | «Wer ist bis dahin ansprechbar, welche Zwischenhilfe ist möglich, und wann findet der nächste Kontakt statt?» | Satzzeichen | wie 2c-2 | d176, b195 |
+| 341 | 2c-2 Nr. 242 | `behandlung` › `wartezeit` | «Bei Verschlechterung neu beurteilen lassen: Melden Sie veränderte Beschwerden der zuständigen Fachperson, und fragen Sie nach einem früheren Termin oder einer anderen Hilfe.» | Satzzeichen | wie 2c-2 | d178, b197 |
+| 342 | 2c-2 Nr. 243 | `behandlung` › `wartezeit` | «Bei unmittelbarer Gefahr oder wenn Sie nicht einschätzen können, wie dringend es ist, warten Sie nicht auf einen Therapieplatz und holen sofort Hilfe.» | Auftrag (Wortlaut von `krise` › `belastung`, P2c-F-1, P2c2-F-1) | geändert (2c-K) | d179, b198, b272 |
+| 343 | 2c-2 Nr. 244 | `behandlung` › `wartezeit` | «In anderen Kantonen: Die Angebote auf dieser Seite sind keine schweizweite Liste.» | umformuliert | wie 2c-2 | d182, b201 |
+| 344 | – | `behandlung` › `wartezeit` | «Fragen Sie in der Hausarztpraxis oder beim psychiatrischen Dienst Ihres Wohnkantons nach Anmeldung, Zuständigkeit und Zwischenversorgung.» | Auftrag (Bestandssatz vor dem Verweissatz; «Hausarztpraxis» statt «Hausärzt:in», P2c-F-10) | neu (2c-K) | d181, b200 |
+| 345 | 2c-2 Nr. 245 | `behandlung` › `wartezeit` | «Wie Sie ausserhalb des Kantons Zürich Anlaufstellen finden, steht auf der Seite «Unterstützung finden» im Abschnitt «Ausserhalb des Kantons Zürich».» | Verweissatz | wie 2c-2 | d181, b200 |
+| 346 | 2c-2 Nr. 246 | `behandlung` › `wartezeit` | «Eigene Unterstützung: Angehörigenberatung können Sie unabhängig von einer Diagnose oder einem Therapieplatz nutzen.» | umformuliert | wie 2c-2 | d183, b202 |
+| 347 | 2c-2 Nr. 247 | `behandlung` › `wartezeit` | «Wo Sie Beratung finden, steht auf der Seite «Unterstützung finden» im Abschnitt «Beratung für Angehörige».» | Verweissatz | wie 2c-2 | d118, d184, d365, b203 |
+
+**Entfallen mit 2c-K, ohne Eintrag in den Listen** (Bestandssätze, die bisher wörtlich standen; je im Abgleich): «Auch strukturierte generalistische Behandlung ist relevant.» (b167), der Titel der Vertiefung «Was kann ich in einem vereinbarten Kontakt mitteilen?» (b116), «Vereinbaren Sie Anlass, Zuständigkeit und einen geeigneten Übermittlungsweg.» (b120, zusammengeführt), «Eine laufende Überwachung ist nicht Ihre Aufgabe.» (b119, zusammengeführt), der Titel «Sanatorium Kilchberg» (d154). Ersetzt durch neue Einträge: «Das einzige deutschsprachige Kinderbuch …» (Nr. 83), «Anbieten ja, erzwingen nein.» (Nr. 102), Schritt 3 (Nr. 109, 110), «… werden eigenständig behandelt, …» (Nr. 24).
+
+### Korrektur 2c-K: Entscheide der bauenden Sitzung (zur Prüfung)
+
+1. **Sätze bei 1280 px nebeneinander.** Ohne Giesskanne steht die Pflanze in der Mitte der Zeichnung und damit in der Lücke zwischen den zwei Sätzen. Keiner der Sätze steht über einem Bildteil, die Lesart als Gespräch zwischen Bildteilen (P2c-V-2) entfällt. Links «Weniger hilfreich», rechts «Tragfähiger» folgt der Leserichtung und der Reihenfolge der Gegenüberstellung darunter. Untereinander bei 1280 px habe ich mit einer Probe-Regel in `borderline.css` angesehen (danach wieder entfernt): Die Sätze stehen dann als schmale Spalte links, und die Figur wird um einen Satzblock höher; begrenzt man die Zeichnung, damit die Figur nicht zu hoch wird (Probe: 480 px), steht sie klein und abgesetzt darunter, rechts der Sätze bleibt die halbe Figur leer. Bei 360 px stehen die Sätze nach dem Muster ohnehin untereinander.
+2. **Bildausschnitt `60 44 420 214`:** Pflanze in der Mitte (Mitte des Ausschnitts x 270, Pflanze x 262), Sims links mit rundem Ende, rechts angeschnitten. Verworfen: der alte Ausschnitt (Pflanze links, rechts leerer Sims, wo die Kanne stand) und ein enger Ausschnitt um die Pflanze (`100 44 330 214`: bei 1280 px 760 × 493 px). Die Zeichnung ist bei 1280 px 387 statt 307 px hoch, bei 360 px 163 statt 129 px.
+3. **Blatt:** derselbe Umriss wie in der Skizze, mit einer Ähnlichkeitsabbildung auf die neue Lage gebracht (Stielende auf dem Sims rechts vom Topf, Spitze an der Topfwand, 1,39-fach), damit Form und Linienführung zum Rest passen; nach dem Topf gezeichnet, damit es vor ihm lehnt.
+4. **Trieb:** `puk-vis-scene__paper` (Weiss) ist die einzige hellere Flächenklasse des Musters; geändert ist nur die Fläche der zwei Blätter, nicht ihre Form.
+5. **Bezeichnungen:** `span.puk-say__label` im Satz (`p.puk-vis-scene__say`), wie in `.puk-say`; keine neue Regel. Die Randlinie beider Sätze bleibt blau, wie im Szenenmuster (siehe «Aufgefallen» Nr. 3).
+6. **Plan von `behandlung`:** `v-be-rollen` nennt «Mögliche Beiträge», `v-be-kontakt` «fünf Vertiefungen» mit Hinweis auf die entfallene Vertiefung. Beide Stellen nannten den alten Wortlaut oder die alte Zahl; Regel 2 verlangt den gleichen Wortlaut an allen Stellen, und der Plan soll der Seite entsprechen (Visualisierungs-Check Nr. 1 und 2).
+7. **Krankenkasse:** im selben Absatz direkt nach dem Verweissatz auf die Startseite («direkt nach»), nicht als eigener Absatz.
+8. **Abgleich `unterstuetzung.md`:** Der Satz «Beratung kostet nichts und wird nicht an Krankenkassen weitergegeben.» steht nicht in `/beratung`, sondern in `/verstehen/begleiterkrankungen` (d369). Die Zeile aus `/beratung` zu diesem Thema ist Nr. 82, die Frage «Entstehen Kosten, und werden Informationen an eine Krankenkasse weitergegeben?». Sie hat die Fundstelle, den Status und die Bemerkung des Auftrags bekommen, mit dem Zusatz, dass der Satz die Frage beantwortet.
+9. **Nur Bemerkung nachgeführt:** Zeilen, deren eigener Satz gleich bleibt, behalten ihren Status (wie in 2b-K), auch wenn ihr Absatz sich geändert hat. Bei d142 ist die Fassung auf den zweiten Satz gekürzt, weil zwischen ihren zwei Sätzen jetzt der Satz zum Kriterium steht.
+10. **Liste 2c-1 Nr. 11:** Abschnitt 4 d nennt Nr. 11, 12 und 15. Nr. 11 ist der Kurztext; er bleibt nach Abschnitt 4 b unverändert und steht deshalb mit Hinweis, nicht als «geändert». Die Bezeichnungen stehen bei Nr. 12.
+11. **Auftrag im Ordner:** `KORREKTUR-ETAPPE-2C.md` liegt unverändert im Website-Ordner, damit die Nachprüfung ihn findet.
+
+### Korrektur 2c-K: Aufgefallen, nicht geändert
+
+1. **«Versorgungssetting»:** In der Vertiefung «Wie die Diagnose beschrieben wird» (`diagnose` › `abklaerung`, «Schweizer Kodierkontext») steht «… in jedem Versorgungssetting identisch verwendet werden.». Abschnitt 5 b ersetzt «Setting» an den zwei genannten Stellen; das Wort «Setting» steht danach nicht mehr, das Kompositum schon. Bestandswortlaut, nicht im Auftrag.
+2. **«Grenzen des Bildes»** sagt weiter «Hilfreiche Bedingungen können Entwicklung unterstützen. … Angehörige können Genesung nicht herstellen.» Ohne Giesskanne zeigt das Bild keine Bedingungen mehr; als Grenze der Metapher bleiben die Sätze richtig. Ebenso nennt die Quelle weiter das Handout «Der Garten». Beides unverändert nach Abschnitt 4 b.
+3. **Randlinie in der Szene:** Beide Sätze haben die blaue Randlinie des Szenenmusters. In der Gegenüberstellung darunter hat «Weniger hilfreich» eine graue, dünnere Linie (`.puk-say__item` ohne `--hilfreich`). Die Bezeichnungen unterscheiden die Sätze; eine andere Linie bräuchte eine Regel in `borderline.css`, die der Auftrag nicht nennt.
+4. **`rollen`:** Die Spalte «Angehörige» bleibt die längste (bei 1280 px 811 px gegen 575 und 498 px).
+5. **«analysieren»** entfällt im neuen Punkt «Therapiesprache in den Alltag übersetzen oder jedes Verhalten mit Fachbegriffen einordnen» (Wortlaut des Auftrags); P2c2-F-4 nannte die Kürzung «ohne Aussageverlust». Abgleich b245.
+6. **Entfallene Vertiefung in `kontakt`:** «vereinbarte Themen» und «Anlass» stehen im Begriff «Beobachtungen mitteilen» nicht eigens; die Fragen darunter nennen die vereinbarte Unterstützung und den Kontaktweg (Abgleich b117, b120).
+7. **Plan:** `v-be-therapieformen` nennt in `goal` und `reason` weiter «Settings» (Planungssprache, nicht auf der Seite); `v-un-beratung` sagt, Kontakt und Bedingungen der Fachstelle seien verlinkt, «nicht wiederholt», die Seite nennt jetzt aber die Kosten; `v-ge-trieb` › `alternative` («Sätze als HTML-Text über der Zeichnung, schmal untereinander») stimmt weiter. Nicht im Auftrag.
+8. **Verweissatz auf die Startseite:** Auf `genesung`, `unterstuetzung`, `behandlung` und `krise` heisst er weiter «Wie die Fachstelle Angehörigenarbeit der PUK berät, …»; nur auf `diagnose` gilt die kürzere Fassung (Abschnitt 5 b, Nr. 6).
+9. **Zählweise C1:** Das Skript dieser Sitzung zählt auf `diagnose` 4 und auf `behandlung` 1 Wort mehr als das von 2c-2 (Bezeichnungen getrennt gezählt); die Differenzen oben sind mit demselben Skript gemessen.
+10. **Prüfung je Element:** Wer den Überlauf je Element misst, findet auf `genesung` bis 768 px den Umriss des Simses ausserhalb des Fensters; das SVG schneidet ihn ab, `scrollWidth` ist gleich der Fensterbreite.
+11. **Ein Link, zwei Einträge:** HYPE Züri (`behandlung`) und die Gruppe für Eltern (`unterstuetzung`) verlinken weiter dieselbe Seite der PUK (wie in 2c-2).
+
 **Stand 11.10.2026 · Etappe 2c-2 · bauende Sitzung (Claude Code).** Umgesetzt ist `BAUAUFTRAG-ETAPPE-2C2.md` (Seiten `diagnose` und `behandlung`, Korrekturen an `genesung` und `unterstuetzung`). Grundlage ist `borderline-umbau` am Stand `66d73b1`. Geändert sind nur:
 
 - `content/` und die gebauten Seiten von `diagnose` und `behandlung` (neu gebaut, Abschnitte 3 bis 5), `genesung` › `einfluesse` (zwei Sätze, Abschnitt 6) und `unterstuetzung` › `austausch` (ein Eintrag, Abschnitt 6)

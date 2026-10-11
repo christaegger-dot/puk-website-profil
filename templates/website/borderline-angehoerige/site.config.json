@@ -687,7 +687,7 @@
           "statement": "–",
           "source": "–",
           "alternative": "–",
-          "reason": "Entscheid der Fachstelle 11.10.2026: drei Rollen nebeneinander als Text statt Abbildung (UMBAUPLAN: `relationship-map`). Grundlage ist die alte Klick-Grafik «Rollen im Therapiesystem»; alles steht sichtbar, ohne Auswahl-Schaltflächen und ohne figure. Je Rolle «Kann beitragen» und «Nicht zu erwarten» als zwei kurze Listen (ul.bl-rollen über die volle Breite), drei Spalten ab 860 px Containerbreite, schmal untereinander (Bauauftrag 2c-2, Abschnitt 4 a).",
+          "reason": "Entscheid der Fachstelle 11.10.2026: drei Rollen nebeneinander als Text statt Abbildung (UMBAUPLAN: `relationship-map`). Grundlage ist die alte Klick-Grafik «Rollen im Therapiesystem»; alles steht sichtbar, ohne Auswahl-Schaltflächen und ohne figure. Je Rolle «Mögliche Beiträge» und «Nicht zu erwarten» als zwei kurze Listen (ul.bl-rollen über die volle Breite), drei Spalten ab 860 px Containerbreite, schmal untereinander (Bauauftrag 2c-2, Abschnitt 4 a).",
           "approvalStatus": "ausstehend"
         },
         {
@@ -699,7 +699,7 @@
           "statement": "–",
           "source": "–",
           "alternative": "–",
-          "reason": "Text ist klarer: die drei Informationswege als Begriffsliste, danach die Handlungsanleitung bei akuter Gefahr mit dem Verweis im Text und die vier Fragen sichtbar. Die Situationen des Bestands und der Musterbrief stehen in sechs Vertiefungen (Akkordeon), damit man nur die gesuchte öffnet (Bauauftrag 2c-2, Abschnitt 4).",
+          "reason": "Text ist klarer: die drei Informationswege als Begriffsliste, danach die Handlungsanleitung bei akuter Gefahr mit dem Verweis im Text und die vier Fragen sichtbar. Die Situationen des Bestands und der Musterbrief stehen in fünf Vertiefungen (Akkordeon), damit man nur die gesuchte öffnet (Bauauftrag 2c-2, Abschnitt 4). Die Vertiefung «Was kann ich in einem vereinbarten Kontakt mitteilen?» entfällt, ihr Beispielsatz steht im Begriff «Beobachtungen mitteilen» (Korrektur 2c-K, P2c2-F-14).",
           "approvalStatus": "ausstehend"
         },
         {
@@ -1142,14 +1142,14 @@
           "id": "v-ge-trieb",
           "section": "03 Verläufe",
           "sectionId": "verlauf",
-          "goal": "Verstehen, dass eine schwierigere Phase nicht alles Erreichte aufhebt und dass Angehörige Bedingungen anbieten, aber das Wachsen nicht machen",
+          "goal": "Verstehen, dass eine schwierigere Phase nicht alles Erreichte aufhebt",
           "format": "illustration",
-          "statement": "Eine Topfpflanze steht auf einem Fenstersims. Ein Blatt ist abgefallen und liegt neben dem Topf, oben wächst ein neuer Trieb. Daneben steht eine Giesskanne, sie giesst nicht. Über der Pflanze steht der Satz «Eine schwierigere Phase entwertet alles.», über der Giesskanne «Schwierigere Phasen kommen vor und müssen nicht alles kippen.».",
-          "understood": "Dass Rückschritt und neues Wachsen zugleich da sein können: Das abgefallene Blatt und der neue Trieb an derselben Pflanze zeigen auf einen Blick, dass eine schwierigere Phase das Erreichte nicht aufhebt. Die Giesskanne steht daneben und giesst nicht: Angehörige können Bedingungen anbieten, wachsen muss die Pflanze selbst.",
+          "statement": "Eine Topfpflanze steht auf einem Fenstersims. Ein Blatt ist abgefallen und liegt am Topf, oben wächst ein neuer, heller Trieb. Über der Zeichnung stehen zwei Haltungen, bezeichnet wie die Gegenüberstellung darunter: «Weniger hilfreich» mit «Eine schwierigere Phase entwertet alles.» und «Tragfähiger» mit «Schwierigere Phasen kommen vor und müssen nicht alles kippen.».",
+          "understood": "Dass Rückschritt und neues Wachsen zugleich da sein können: Das abgefallene Blatt und der neue Trieb an derselben Pflanze zeigen auf einen Blick, dass eine schwierigere Phase das Erreichte nicht aufhebt.",
           "source": "Eigene didaktische Darstellung nach den Handouts «Veränderung verläuft unterschiedlich» und «Der Garten»; Bezug: Zanarini et al. (2012); NICE CG78 (2009)",
           "alternative": "Sätze als HTML-Text über der Zeichnung, schmal untereinander; Kurzbeschreibung über aria-describedby",
-          "reason": "Entscheid der Fachstelle 11.10.2026 (Bauauftrag 2c-1, Abschnitt 4 und Anhang A): Zeichnung «Ein neuer Trieb» im Stil von «Zwei Tassen» (Muster D), direkt nach dem ersten Absatz von `verlauf`. Die Skizze ist unverändert übernommen (Pfade, Bildausschnitt `0 40 640 220`). Die Zahlen der Langzeitstudie stehen als hervorgehobener Text ohne Diagramm (`forschung`, Entscheid von Claude im Bauauftrag); der Garten-Text steht auf `rolle` › `anbieten` und ist verlinkt, nicht wiederholt.",
-          "resonance": "Entlastung und realistische Hoffnung: Ein Rückschritt macht nicht alles zunichte, und das Wachsen muss ich nicht machen.",
+          "reason": "Entscheid der Fachstelle 11.10.2026 (Bauauftrag 2c-1, Abschnitt 4 und Anhang A): Zeichnung «Ein neuer Trieb» im Stil von «Zwei Tassen» (Muster D), direkt nach dem ersten Absatz von `verlauf`. Korrektur 2c-K (P2c2-F-2 und P2c2-V-3; P2c-T-1, P2c2-T-1): Die Giesskanne ist entfernt. Das abgefallene Blatt liegt direkt unter der Pflanze, an den Topf gelehnt, und ist etwas grösser; die zwei Blätter des neuen Triebs sind heller als die übrigen (`puk-vis-scene__paper` statt `puk-vis-scene__soft`). Die übrigen Pfade sind wie in der Skizze. Bildausschnitt `60 44 420 214`, enger und mit der Pflanze in der Mitte (2c-1: `60 44 530 214`, Skizze: `0 40 640 220`). Die Zahlen der Langzeitstudie stehen als hervorgehobener Text ohne Diagramm (`forschung`, Entscheid von Claude im Bauauftrag); der Garten-Text steht auf `rolle` › `anbieten` und ist verlinkt, nicht wiederholt.",
+          "resonance": "Entlastung und realistische Hoffnung: Ein Rückschritt macht nicht alles zunichte.",
           "approvalStatus": "ausstehend"
         },
         {
