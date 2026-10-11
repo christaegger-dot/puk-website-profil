@@ -13,10 +13,10 @@ Gehört zur Website in diesem Ordner. Wer den Starter kopiert, übernimmt diese 
 
 | Stufe | Status | Datum | Geprüft durch | Ergebnis |
 | --- | --- | --- | --- | --- |
-| W1 Fachliche Prüfung | offen | 10.10.2026 | Fachstelle Angehörigenarbeit PUK (Freigabe Etappe 1); vierte Prüfrunde: eine Prüfsitzung (Claude, hat nicht gebaut); Fachstelle (Freigabe Etappe 2a); Prüfrunde 2b: eine Prüfsitzung (Claude, hat nicht gebaut) | Etappe 1 fachlich freigegeben (Abschnitt «Fachliche Freigabe der Fachstelle»); alle 21 Fragen P4-F-1 bis P4-F-21 entschieden. Offen, bis die Seiten von Etappe 2 geprüft und freigegeben sind. Prüfrunde 2a: 2 wichtig, 3 optional; 10 Fragen P2a-F-1 bis P2a-F-10. Etappe 2a (`rolle`, `selbstfuersorge`, Einstiege auf `index`) fachlich freigegeben am 10.10.2026. Prüfrunde 2b (`kommunizieren`, `krise`, Einstieg auf `index`): 4 wichtig, 3 optional; 12 Fragen P2b-F-1 bis P2b-F-12. |
+| W1 Fachliche Prüfung | offen | 10.10.2026 | Fachstelle Angehörigenarbeit PUK (Freigabe Etappe 1); vierte Prüfrunde: eine Prüfsitzung (Claude, hat nicht gebaut); Fachstelle (Freigabe Etappe 2a); Prüfrunde 2b: eine Prüfsitzung (Claude, hat nicht gebaut) | Etappe 1 fachlich freigegeben (Abschnitt «Fachliche Freigabe der Fachstelle»); alle 21 Fragen P4-F-1 bis P4-F-21 entschieden. Offen, bis die Seiten von Etappe 2 geprüft und freigegeben sind. Prüfrunde 2a: 2 wichtig, 3 optional; 10 Fragen P2a-F-1 bis P2a-F-10. Etappe 2a (`rolle`, `selbstfuersorge`, Einstiege auf `index`) fachlich freigegeben am 10.10.2026. Prüfrunde 2b (`kommunizieren`, `krise`, Einstieg auf `index`): 4 wichtig, 3 optional; 12 Fragen P2b-F-1 bis P2b-F-12. Nachprüfung 2b-K (Stand `f9e2314`, eine Prüfsitzung, hat weder gebaut noch 2b-K umgesetzt): Korrektur wie beauftragt; 1 wichtig (Liste «Neue Sätze zur Freigabe»), 3 optional; 3 Fragen. |
 | W2 Gesamtkohärenz | offen | 10.10.2026 | vierte Prüfrunde | 1 wichtig, 3 optional; offen weiter F-W2-02, F-W2-03 (jetzt P4-F-18, P4-F-19). Prüfrunde 2a: 5 optional. Prüfrunde 2b: 1 wichtig, 3 optional |
 | S Sprach-Review | offen | 10.10.2026 | vierte Prüfrunde | 6 optional; Lesetest je Abschnitt und Kennzahlen; abschliessbar erst nach W1 und W2. Prüfrunde 2a: 1 wichtig (Länge), 3 optional; 24 Kürzungsvorschläge. Prüfrunde 2b: 4 optional; Längenziel nachgerechnet und erreicht; 6 Kürzungsvorschläge |
-| Visualisierungs-Check | offen | 10.10.2026 | vierte Prüfrunde | 1 wichtig, 5 optional; Matrix 1–17 × 6 Figuren; seit 10.10.2026 alle sechs Figuren fachlich freigegeben (Fachstelle). Prüfrunde 2a: 1 wichtig, 3 optional; Matrix 1–17 × 2 neue Figuren. Etappe 2a: beide Abbildungen fachlich freigegeben (Fachstelle, 10.10.2026). Prüfrunde 2b: 1 optional; Matrix 1–17 für «Zwei Tassen» (`v-ko-tassen`), trägt, Freigabe ausstehend |
+| Visualisierungs-Check | offen | 10.10.2026 | vierte Prüfrunde | 1 wichtig, 5 optional; Matrix 1–17 × 6 Figuren; seit 10.10.2026 alle sechs Figuren fachlich freigegeben (Fachstelle). Prüfrunde 2a: 1 wichtig, 3 optional; Matrix 1–17 × 2 neue Figuren. Etappe 2a: beide Abbildungen fachlich freigegeben (Fachstelle, 10.10.2026). Prüfrunde 2b: 1 optional; Matrix 1–17 für «Zwei Tassen» (`v-ko-tassen`), trägt, Freigabe ausstehend. Nachprüfung 2b-K: «Zwei Tassen» nach dem Verschieben angesehen, trägt, Freundin-Test bestanden, Freigabe ausstehend |
 | Bedienung und Barrierefreiheit | offen | 10.10.2026 | vierte Prüfrunde, automatisiert | kein Befund; reale Screenreader-Läufe, Hardwaretastatur und Touch fehlen (nicht prüfbar). Prüfrunde 2b: kein Befund (automatisiert) |
 | W3 Code-Review | offen | 10.10.2026 | vierte Prüfrunde: nur Stichprobe Technik und Zuständigkeit, kein volles W3 | Stichprobe ohne Befund; W3 erst nach Umsetzung von W2 und S. Prüfrunde 2b: Stichprobe Technik und Zuständigkeit ohne technischen Befund |
 | R1 Profil-Audit | offen | | | noch nicht geprüft |
@@ -1408,6 +1408,256 @@ Mit Korrektur 1h gibt es 6 Figuren:
 - **Statustabelle:** Die Zeilen R1 bis R3 fehlen noch; die Prüfsitzung trägt sie ein.
 - **Profil (später):** P-6, P-9.
 - **Offen für Stufe 5:** Screenreader-Läufe, Hardwaretastatur und Touch.
+
+## Nachprüfung 2b-K (11.10.2026, Stand f9e2314)
+
+**Geprüfter Stand:** Branch `borderline-umbau`, Commit `f9e2314` (Merge von PR #20; Korrektur `c0b312c`). «Vorher» ist `ac7ea04`, die Grundlage der Korrektur. Seine Seiten sind gleich wie im Stand der Prüfrunde 2b (`26af566`): `git diff 26af566 ac7ea04` zeigt nur `PRUEFBERICHT.md` und `KORREKTUR-ETAPPE-2B.md`. Auftrag ist `KORREKTUR-ETAPPE-2B.md`, Abschnitt 8 («Nachprüfung»). Die Prüfsitzung hat weder Etappe 2b gebaut noch 2b-K umgesetzt. Sie hat keine Inhalte und keinen Code geändert und committet nur diesen Bericht.
+
+**Vorgehen**
+
+- **Gelesen:**
+  - `KORREKTUR-ETAPPE-2B.md`
+  - die Selbstprüfung «Korrektur 2b-K» (alle sieben Teile)
+  - aus der Prüfrunde 2b die Teile A3, C1 und C2 sowie die Fragen P2b-F-1 bis -12
+  - `abgleich/README.md` mit den neuen Statuswerten und den Zählweisen
+  - der ganze Diff `ac7ea04..f9e2314` (12 Dateien)
+- **Seiten:** Ein Skript der Prüfsitzung zerlegt `content/kommunizieren.html` und `content/krise.html` (vorher und nachher) in Textblöcke mit Abschnitt und Platzhalter. Ein `diff` vergleicht die Blöcke, und jede Änderung ist einem Punkt des Auftrags zugeordnet. Die Zeichnung «Zwei Tassen» ist Pfad für Pfad verglichen.
+- **Abgleich:**
+  - Alle 60 geänderten Zeilen sind von Hand gelesen: 53 mit Status 2b-K und 7, bei denen nur die Bemerkung nachgeführt ist.
+  - Für 29 geänderte Aussagen ist der Bestandssatz direkt in `bestand/borderline-angehoerige/texte/` nachgeschlagen (Branch `origin/borderline-bestand`; Teil A, Tabelle 2).
+  - Die Bemerkungen aller acht Tabellen sind nach Begriffen durchsucht, die mit 2b-K entfallen sind.
+- **Werkzeuge:** in einem eigenen Arbeitsbaum ausgeführt (`git worktree` ausserhalb des Repositorys), am Stand `f9e2314` und am Stand vorher.
+  - Der Build schreibt die Seiten Zeichen für Zeichen gleich (`git status` danach leer).
+  - Zwei lokale Server (`python3 -m http.server`), Chromium über Playwright.
+- **Eigene Skripte** (nicht committet):
+  - Zählweise C1 der Prüfrunde 2b im Browser
+  - Lesefluss wie `kennzahlen.mjs`
+  - Lage der Verweise im Text
+  - Überlauf, Tastatur und Druck
+  - Bildschirmfotos
+  - Liste gegen Seiten, Bestand und Abgleich
+
+**Ergebnis in Kürze**
+
+- **Abschnitte 3 bis 7:** wie beauftragt umgesetzt, im Wortlaut des Auftrags. Keine Änderung, die der Auftrag nicht nennt. `index` und die Seiten der Etappen 1 und 2a sind unverändert.
+- **Zahlen der Selbstprüfung:** Alle stimmen.
+  - C1 je Seite und Abschnitt auf das Wort, Verweise im Text auf ±1 px.
+  - Gates, `pruefe-abgleich.mjs`, `kennzahlen.mjs`, `verneinung.mjs` und `bedienung.mjs` ergeben dieselben Werte.
+  - Nur zwei Einzelposten der «Gründe» weichen um je ein Wort ab, die Summe stimmt (N2bK-2).
+- **Liste «Neue Sätze zur Freigabe»:** Sie enthält jeden Satz, den 2b-K neu bringt oder neu fasst. Als Grundlage der Freigabe ist sie nicht vollständig (N2bK-1):
+  - Ihr Kopf verspricht alle Sätze, die nicht wörtlich aus dem Bestand stammen. Die Regel von 2b fehlt: Umformulierte Einzelsätze stehen nur im Abgleich.
+  - Zwei Verdichtungen aus 2b fehlen, obwohl die Liste sie nach ihrer eigenen Regel enthalten müsste. Sie stehen nirgends im Bericht.
+- **«Aufgefallen, nicht geändert»:** Alle sechs Punkte treffen zu. Punkt 1 und 2 sind Folgeänderungen. Punkt 3 ist eine Frage an die Fachstelle. Punkt 4 und 6 sind Strukturvorschläge. Punkt 5 ist entschieden.
+- **«Zwei Tassen»:** Die Zeichnung trägt nach dem Verschieben, der Freundin-Test der Prüfsitzung ist bestanden. Die Freigabe bleibt ausstehend.
+
+### Teil A · Abschnitte 3 bis 7 gegen `kommunizieren`, `krise` und den Abgleich
+
+| Punkt | Auftrag | Seite (Stand `f9e2314`) | Abgleich | Urteil |
+| --- | --- | --- | --- | --- |
+| 3 a Reihenfolge in `belastung` | 1. Handlungsanleitung, 2. Platzhalter, 3. Satz zur Fachstelle, 4. «Die drei Bereiche unten …» | Die ersten vier Blöcke von `belastung` stehen genau so. «Diese Seite ersetzt keine professionelle Krisenberatung.» kommt auf `krise` nicht mehr vor (Quelltext und gebaute Seite: 0) | c29 und c65 «zusammengeführt (2b-K)», neue Fassung: Satz zur Fachstelle; die Bemerkung nennt den Hinweis in der Fusszeile. c1: Bemerkung nachgeführt | erfüllt |
+| 3 a Handlungsanleitung | «Bei unmittelbarer Gefahr oder wenn Sie nicht einschätzen können, wie dringend es ist, holen Sie sofort Hilfe und schützen sich selbst.» | wörtlich, erster Absatz | c2 «zusammengeführt (2b-K)», c68 «umformuliert (2b-K)», je P2b-F-2 | erfüllt |
+| 3 a Bereiche und Plan | «Die Bereiche bewerten …»; «Wenn Sie nicht wissen, ob die Person einen Plan hat, bedeutet das keine Sicherheit.» | beide wörtlich | c34 und c69 «umformuliert (2b-K)», P2b-S-3 | erfüllt |
+| 3 b `waehrend` | unverändert | Blockvergleich: kein Block in `waehrend` geändert. «Bei unmittelbarer Gefahr holen Sie Hilfe über den Notruf.», direkt danach der Platzhalter | – | erfüllt |
+| 3 c 1 Anfang von `sagen` | Handlungsanleitung für Bedrohung und Platzhalter nach dem ersten Absatz | so, vor der Begriffsliste «Da sein …» | c106 und c279 «zusammengeführt (2b-K)», P2b-F-1 | erfüllt |
+| 3 c 2 «Da sein» | Satz mit «Leitstelle» entfällt, der Satz zur Nähe bleibt | so | c106 | erfüllt |
+| 3 c 3 «Wenn ein Gespräch kippt» | drei Sätze und ein neuer Verweissatz mit Link `kommunizieren.html#kippen` | Wortlaut gleich. «Ein Satz kann so klingen: …» und «Zum Aussteigen reicht: …» stehen in einem Absatz, wie vorher. Der Link ist ein Tabstopp; das Ziel `#kippen` gibt es | c263 «umformuliert (2b-K)», c303 «neu (2b-K)» | erfüllt (Absatz: Teil E, Punkt 6) |
+| 3 c 4 Entfallen | Satz zur Schrittfolge, Liste «Verbinden / Kontakt / Grenze und Plan», «Bei Bedrohung oder Gewalt gehen Sie auf Abstand und holen Hilfe.» | alle drei entfallen | c252 und c254 bis c261 «entfällt (2b-K)» mit «verlinkt auf `kommunizieren#kippen`, P2b-F-8» | erfüllt (c253: N2bK-3) |
+| 3 d `danach` | «Bei möglicher unmittelbarer Lebensgefahr holen Sie sofort Hilfe über den Notruf.», Platzhalter vor «Für die betroffene Person» | so | c139 «umformuliert (2b-K)», c190 «zusammengeführt (2b-K)» | erfüllt |
+| 3 e Ergebnis | sechs Verweise im Text, je direkt nach einer Handlungsanleitung; kein «Leitstelle», kein «Rettungsdienst» | Sechs Platzhalter in `belastung`, `waehrend`, `sagen`, `suizid`, `danach` und `bleibt`. Das Element davor ist jedes Mal die Handlungsanleitung; keiner steht in einer Vertiefung oder Figur, einer je Abschnitt. «Leitstelle», «Rettungsdienst», «Fachteam», `tel:`: 0 (Quelltext und gebaute Seite mit Meta). «Notruf»: 3 | c283: Bemerkung nennt die sechs Abschnitte | erfüllt |
+| 4 a `vermeiden` | Titel und Einleitung ohne «eher» | wörtlich. Die sechs Listenpunkte, der Kicker «05 · Was Sie vermeiden» und die Kapitelübersicht sind unverändert | c126 «umformuliert (2b-K)», c308 «neu (2b-K)» | erfüllt (Meta-Beschreibung: Teil E, Punkt 1) |
+| 4 b `suizid` | Quellenzeile mit WHO (2026) | wörtlich. Der Text des Abschnitts ist unverändert. Die Quelle heisst im Bestand (`quellen.md`) und auf `verstehen` gleich | c123 und c124 «zusammengeführt (2b-K)» | erfüllt |
+| 4 c Nachsorge | drei Sätze mit der betroffenen Person als Subjekt | alle drei wörtlich. «Welche fachliche Nachsorge nötig ist, …» in `danach` ist unverändert | c188, c204 und c213 «umformuliert (2b-K)», P2b-F-7 | erfüllt |
+| 5 a «Pause statt Streit» | Einleitung, drei Begriffe, Kürzung K-K-a1 | Einleitung wörtlich. Die Begriffe «Wir können sprechen.», «Es wird eng.» und «Es ist gerade zu viel.» sind die Stellen 1 bis 3 der Anspannungskurve auf `verstehen` › `anspannung`; die Kurve hat vier Stellen, «Drei Stellen» stimmt. «… Stoppen Sie, und schaffen Sie Abstand.». «Ich merke, es wird schwierig. Ich unterbreche das Gespräch jetzt.» bleibt; der Verweissatz steht nach der Liste | k764, k765 und k770, k778, k784 «umformuliert (2b-K)», k968 «neu (2b-K)»; k787 bis k789, k803 und k659 zu K-K-a1; k758 und k776: Bemerkung nachgeführt | erfüllt |
+| 5 a Satz zu Grenzen | «Grenzen dafür, wie lange oder wann Sie sprechen, wirken am besten, …» | wörtlich | g208 «umformuliert (2b-K)» | erfüllt |
+| 5 b Validierung | Satz zu Linehan entfällt; «Die Stufen sind …»; «Übernehmen heisst hier: …» | so | k28 «entfällt (2b-K)» mit «Zuschreibung nicht an der Quelle geprüft, P2b-F-9»; k30; g679, g683 und g692 | erfüllt |
+| 5 c `zuhoeren` | K-K-a3, K-K-a2, Bestandswortlaut b184 | alle drei wörtlich; «Ein hilfreicher Satz kann unterstützen, aber die Reaktion der anderen Person nicht garantieren.» bleibt | k5, k12, k20 und k14 «zusammengeführt (2b-K)», k21 «umformuliert (2b-K)»; b184 «wörtlich» | erfüllt |
+| 5 d `worte` | ein Satz | wörtlich | k837 «umformuliert (2b-K)» | erfüllt |
+| 5 e Nicht ändern | vier Aussagen in `worte`, «Typische schwierige Situationen», Satz zu Dazzi et al., Namen und «Übernehmen / Spiegeln» | Blockvergleich: kein Block in `beispiele` und im Text von `suizid` geändert. In `worte` ist nur die Einleitung geändert (5 d); die vier Aussagen sind vollständig | – | erfüllt |
+| 6 «Zwei Tassen» | je etwa 60 Einheiten zur Mitte, spiegelgleich zu x = 320; fest bleiben Tisch und Bildausschnitt | Pfade 2 bis 6 je +60, Pfade 7 bis 11 je −60 Einheiten waagrecht; y unverändert. Tisch und `viewBox="0 60 640 200"` sind gleich. Jedes Punktpaar links/rechts summiert sich zu 640. Tassenkörper 190–258 und 382–450, frei 124 Einheiten. Klassen nur `puk-vis-scene__ln`, `__ln--thin`, `__paper`, `__soft`; 0 `style`, 0 Hexwerte. `p.puk-sr` und `statement`: «stehen nebeneinander auf einem Tisch»; `approvalStatus` «ausstehend» | k964 «neu (2b-K)» | erfüllt (Ansicht: Teil C) |
+| 7 Plan | vier Zeilen | `v-ko-moment`, `v-kr-sagen` und `v-kr-danach` › `reason` sowie `v-ko-tassen` › `statement` wie beauftragt. `understood` und `resonance` von `v-ko-tassen` sagen nicht «gegenüber» | – | erfüllt (`reason` von `v-ko-tassen`: Teil E, Punkt 2) |
+| 7 Abgleich (P2b-W1-7) | k25, k726, c190, k572, k764, k765, k968 | Alle Bemerkungen sagen, was der Auftrag verlangt; Nr. 17 der Liste von 2b entfällt | – | erfüllt |
+| 7 übrige Zeilen, Regeln aus Abschnitt 2 | Status mit «(2b-K)» und Nummer der Frage; neue Statuswerte im README; `pruefe-abgleich.mjs` ohne Zeile ohne Fundstelle | 53 Zeilen (k 20, c 28, g 4, b 1). Jede nennt eine Frage oder einen Vorschlag («P2b-…») und den früheren Stand («bis 2b-K»). Vier neue Statuswerte sind in `abgleich/README.md` erklärt. `pruefe-abgleich.mjs`: Eine Zeile behandelt «entfällt (2b-K)» wie «entfällt», die Prüfung «kein Ort, keine neue Fassung» bleibt, also keine Lockerung | – | erfüllt bis auf c253 (N2bK-3) |
+| Abschnitt 1 «Geändert werden nur …» | `kommunizieren`, `krise`, Plan, Abgleich | Diff: in `content/` und bei den gebauten Seiten nur `kommunizieren` und `krise`; `site.config.json` vier Zeilen im Plan; Abgleich mit `pruefe-abgleich.mjs` (eine Zeile, nötig für den neuen Status); Bericht. CSS und Skripte der Seiten sind unverändert | – | erfüllt |
+
+**Aussagen gegen den Bestand.** Die 29 Aussagen sind im Bestand nachgeschlagen (Datei in `texte/`). Die Spalte «trägt» sagt, ob der Stand nach 2b-K die Aussage trägt. b = `unterstuetzen--krise.md`, h = Handout (`materialien--text--…`).
+
+| Nr. | Abgleich | Bestand | Stand nach 2b-K | trägt |
+| --- | --- | --- | --- | --- |
+| 1 | c2 | «Bei akuter Gefahr oder wenn Sie die Dringlichkeit nicht sicher einschätzen können, wenden Sie sich an den zuständigen Notfalldienst.» (b) | Nr. 44a der Liste; die Stellen nennt der Verweis im Text direkt danach | ja; die Unsicherheit steht wieder in der Anleitung |
+| 2 | c29 | «Diese Inhalte ersetzen keine professionelle Krisenberatung.» (b) | Satz zur Fachstelle und Hinweis in der Fusszeile | ja (P2b-F-6) |
+| 3 | c65 | «Diese Einteilung ersetzt keine professionelle Krisenberatung.» (b) | ebenso; dazu «Die Bereiche sind keine Sicherheitsbewertung. …» in `belastung` | ja |
+| 4 | c34 | «Sie bewerten keine Diagnose …» (b) | «Die Bereiche bewerten keine Diagnose …» | ja |
+| 5 | c68 | «Bei unmittelbarer Gefahr holen Sie sofort Hilfe und schützen sich selbst.» (b) | Nr. 44a, erweitert | ja |
+| 6 | c69 | «… ein unbekannter Plan bedeutet keine Sicherheit.» (b) | Nr. 45b | ja, klarer |
+| 7 | c106 | «Bei Bedrohung bringen Sie sich in Sicherheit und informieren die Leitstelle.» (b) | Nr. 49a, «Notruf» statt «Leitstelle» | ja (P2b-F-1) |
+| 8 | c279 | «Bei Bedrohung oder Gewalt gehe ich auf Abstand und hole Hilfe.» (h `krisenkommunikation`) | Nr. 49a | ja |
+| 9 | c123 | «Dazzi et al. (2014) — Übersicht zum direkten Fragen nach Suizidgedanken; …» (b) | Quellenzeile von `suizid`, ergänzt um WHO (2026) | ja |
+| 10 | c126 | «Was Sie in der Krise vermeiden sollten» (b) | «Was Sie in einer Krise vermeiden sollten» | ja, Bestand |
+| 11 | c139 | «… bei möglicher unmittelbarer Lebensgefahr rufen Sie den Rettungsdienst.» (b) | Nr. 55a, «Notruf» | ja |
+| 12 | c190 | «Bei erneuten Sorgen um die Sicherheit sofort Hilfe holen, unabhängig vom Zeitpunkt» (b) | «Bei erneuter Sorge holen Sie eine professionelle Einschätzung.», Nr. 55a und «Nötige medizinische oder psychiatrische Hilfe hat keine Wartefrist.» | ja; «sofort» nur bei Lebensgefahr, so in der Bemerkung genannt (P2b-W1-7) |
+| 13 | c188 | «Fachliche Nachsorge und erreichbare Kontakte mit dem Behandlungsteam klären» (b) | Nr. 57a | ja (P2b-F-7) |
+| 14 | c204 | «Mit dem Behandlungsteam klären, welche professionelle Unterstützung vorgesehen und erreichbar ist» (b) | Nr. 57b | ja; Angehörige nur, wenn die Person das möchte |
+| 15 | c213 | «… klärt die betroffene Person mit dem Fachteam.» (b) | «… mit dem Behandlungsteam.» | ja |
+| 16 | c252 | «Die Grundidee ist bewusst knapp gehalten: zuerst Verbindung herstellen, dann Kontakt halten, dann Grenze und nächsten Schritt benennen.» (h `krisenkommunikation`) | entfällt; die Schritte stehen auf `kommunizieren` › `kippen` («Eigenes Tempo senken», «Verbinden», «Begrenzen oder beenden»), verlinkt | ja, sinngemäss (P2b-F-8) |
+| 17 | c255 | «Ich sehe, dass du gerade sehr aufgebracht bist.» (h) | entfällt; der Standardsatz «Ich sehe, dass du gerade sehr angespannt bist. …» bleibt (c264) | ja |
+| 18 | c260, c261 | «So kann ich nicht weiterreden. Ich beende das Gespräch jetzt.» (h) | «entfällt (2b-K)» wie beauftragt; derselbe Wortlaut steht weiter im Standardsatz (c265, c266) und im Ausstiegssatz (c277) | ja; die Aussage geht nicht verloren |
+| 19 | k28 | «Linehan beschreibt fünf aufeinander aufbauende Formen und als sechste Form radikale Echtheit.» (`kommunizieren.md`) | entfällt; «Die sechs Stufen lehnen sich an die Validierungsstufen von Linehan … an.» trägt | ja (P2b-F-9) |
+| 20 | k30 | «Sie sind keine Pflichtfolge, …» (`kommunizieren.md`) | «Die Stufen sind keine Pflichtfolge, …» | ja |
+| 21 | k12, k20 | «Zuhören, nachfragen und die eigene Sicht behalten dürfen gleichzeitig möglich sein.», «Sie dürfen zuhören, nachfragen oder eine Pause machen.» (`kommunizieren.md`) | Nr. 1a («… und dabei Ihre eigene Sicht behalten.») | ja; «gleichzeitig» als «dabei» |
+| 22 | k14 | «Kurze Sätze und Pausen können helfen; eine bestimmte Reaktion lässt sich nicht garantieren.» (`kommunizieren.md`) | Nr. 1b und «Ein hilfreicher Satz kann unterstützen, aber die Reaktion der anderen Person nicht garantieren.» im selben Abschnitt | ja |
+| 23 | b184 | «Verschiedene Gefühle, Meinungen oder Bedürfnisse nach Nähe sind nicht automatisch ein Zeichen fehlender Liebe.» (`verstehen--beziehungen.md`) | wörtlich | ja |
+| 24 | k764 | «Die Begriffe «stabil», «Warnstufe» und «Eskalation» sind eine redaktionelle Orientierung.» (h `pause-statt-streit`) | Nr. 17a, Begriffe der Kurve | ja (P2b-F-5) |
+| 25 | k765 | «Sie beschreiben keine verbindlichen Stufen und erlauben keine sichere Beurteilung des inneren Zustands einer Person.» (h) | Nr. 17b | ja |
+| 26 | k789 | «Ob und wann ich wieder ansprechbar bin, entscheide ich später.» (h) | Der Ausstiegssatz bei «Es ist gerade zu viel.» entfällt. Die Aussage tragen «Ob und wann ein neuer Kontakt für Sie möglich und sicher ist, können Sie später in Ruhe entscheiden.» (k659) und «Nächster Schritt» | ja. Als neue Fassung nennt k789 den Beispielsatz mit «Morgen kann ich dir sagen, …» (Bestand `kommunizieren.md`), wie es der Auftrag vorgibt; die Aussage «später, ohne Frist» trägt der Satz danach |
+| 27 | k837 | «Die Sätze sind Beispiele und nicht typisch für alle Menschen mit Borderline.» (h `wenn-worte-treffen`) | Nr. 32a | ja |
+| 28 | g208 | «Zeitgrenzen wirken am besten, wenn Sie sie in einer ruhigen Situation ankündigen — nicht mitten in einem Konflikt.» (`grenzen.md`) | Nr. 24a | ja; hat jetzt einen Bezug auf der Seite |
+| 29 | g679 | «Aus einer Beobachtung wird die Annahme, Sie müssten das Erleben oder die Situation der anderen Person lösen.» (h `spiegeln-statt-aufsaugen`) | Nr. 15, «Übernehmen heisst hier: …» | ja |
+
+Keine Sicherheitsaussage ist ersatzlos entfallen. Es gibt keine neue absolute Aussage über die betroffene Person.
+
+### Teil B · Zahlen der Selbstprüfung nachgerechnet
+
+**Wörter C1.** Die Zählweise der Prüfrunde 2b (Teil C1) ist als Skript im Browser nachgebaut. Am Stand vorher ergibt sie genau die Werte der Prüfrunde 2b, je Abschnitt gleich. Damit ist sie dieselbe Zählweise.
+
+| Seite | C1 im Lesefluss je Abschnitt (nachher) | C1 im Lesefluss vorher → nachher | mit Vertiefungen | Sätze im Lesefluss / mit Verneinung | Selbstprüfung |
+| --- | --- | ---: | --- | --- | --- |
+| `kommunizieren` | Kopf 28 · `zuhoeren` 176 · `anerkennen` 613 · `moment` 374 · `kippen` 419 · `worte` 269 · `beispiele` 516 · `rollen` 37 | 2458 → 2432 | 3126 → 3100 | 258 → 251 / 70 → 68 (27 %) | stimmt auf das Wort |
+| `krise` | Kopf 36 · `belastung` 302 · `waehrend` 215 · `sagen` 239 · `suizid` 182 · `vermeiden` 56 · `danach` 286 · `bleibt` 206 | 1507 → 1522 | 1919 → 1945 (`danach` 671 → 709) | 159 → 153 / 39 → 37 (24 %) | stimmt auf das Wort |
+
+- **Gründe** je Abschnitt nachgezählt: Alle Posten stimmen bis auf `sagen`. Dort hat die Schrittfolge mit Einleitung 47 Wörter (18 + 9 + 7 + 13), nicht 46. Die neue Handlungsanleitung hat 18 Wörter, nicht 17. Die Summe −24 stimmt (N2bK-2).
+- **Weitere Kennzahlen:** Alle Werte stimmen.
+  - `kennzahlen.mjs` gesamt: 3370 → 3344 und 2075 → 2117.
+  - Lesefluss: 2702 → 2676 und 1663 → 1694 (gleiche Zählung ohne `.puk-acc__panel`).
+  - Absicherungen je 100 Wörter: 2,64 → 2,69 und 2,17 → 2,13. Semikolons: 0 und 1.
+  - `verneinung.mjs`: 83 von 402 → 81 von 395 und 52 von 241 → 50 von 235.
+- **Ziel «höchstens etwa 2500»:** weiter erreicht.
+
+**Verweise im Text** bei 360 × 800 px, gemessen nach dem Laden der Schriften. Die Werte sind Oberkante ab Abschnitt / ab Titel, Unterkante ab Abschnitt und Lage auf der Seite. Das Element davor ist jedes Mal ein Absatz mit der Handlungsanleitung der Tabelle «Verweise im Text».
+
+| Nr. | Seite › Abschnitt | Prüfsitzung | Selbstprüfung | Urteil |
+| --- | --- | --- | --- | --- |
+| 1 | `kommunizieren` › `kippen` | 605 / 522 · 761 · 13 056 | 605 / 521 · 761 · 13 056 | stimmt |
+| 2 | `kommunizieren` › `worte` | 1854 / 1771 · 2010 · 17 912 | 1855 / 1771 · 2011 · 17 912 | stimmt |
+| 3 | `krise` › `belastung` | 319 / 237 · 475 · 1663 | gleich | stimmt |
+| 4 | `krise` › `waehrend` | 807 / 724 · 963 · 4693 | gleich | stimmt |
+| 5 | `krise` › `sagen` | 454 / 371 · 610 · 6215 | 453 / 370 · 609 · 6215 | stimmt |
+| 6 | `krise` › `suizid` | 438 / 355 · 594 · 8408 | 438 / 354 · 594 · 8408 | stimmt |
+| 7 | `krise` › `danach` | 404 / 321 · 560 · 11 062 | gleich | stimmt |
+| 8 | `krise` › `bleibt` | 801 / 718 · 957 · 14 818 | 801 / 717 · 957 · 14 818 | stimmt |
+
+Die Abstände zwischen den Verweisen auf `krise` betragen 3030, 1522, 2193, 2654 und 3756 px, wie angegeben «1522 bis 3756». Seitenhöhe bei 360 px: `kommunizieren` 24 625 px, `krise` 16 671 px.
+
+**Gates und Skripte** (Arbeitsbaum am Stand `f9e2314`):
+
+- `node tools/build.mjs`: 0 blockierend, 11 Hinweise (1 × `visual-approval`, 8 × `placeholder-approval`, `site-url`, `review-report`). Kein Hinweis `inline-ref`. Die geschriebenen Seiten sind gleich wie im Commit.
+- `node tools/gate.mjs --selftest`: 53/53.
+- `node tools/gate.mjs --production`: 10 blockierend (1 × `visual-approval`, 8 × `placeholder-approval`, 1 × `review-report`) und 1 Hinweis (`site-url`), wie bisher.
+- `node abgleich/pruefe-abgleich.mjs`: 4502 Zeilen, 0 ohne Fundstelle.
+  - Hinweis für künftige Prüfungen: Ohne den Branch `origin/borderline-bestand` meldet das Skript 659 Zeilen ohne Fundstelle, weil es die Bestandszitate nicht findet. Vorher `git fetch origin borderline-bestand`.
+- `node abgleich/bedienung.mjs`:
+  - `kommunizieren` 32 Tabstopps, 24 625 px (vorher 24 890), Zwei Tassen 716 px.
+  - `krise` 25 Tabstopps, 16 671 px (vorher 16 436).
+  - Übrige Seiten vorher und nachher gleich: `index` 15 / 4636, `verstehen` 20, `beziehungen` 18, `grenzen` 23, `rolle` 30, `selbstfuersorge` 28.
+  - Kein Tabstopp ohne sichtbaren Fokus.
+
+**Stichprobe Bedienung und Druck:**
+
+- **Überlauf:** kein waagrechter Überlauf auf `kommunizieren` und `krise`.
+  - bei 320, 360, 414, 640, 768, 1024, 1280 und 1440 px, Vertiefungen zu und offen (32 Messungen)
+  - ohne Skript bei 320, 360 und 640 px (alle Panels offen)
+  - bei 200 % Zoom (640 CSS-px bei Faktor 2), mit und ohne Skript
+- **Tastatur:** Enter öffnet und Leertaste schliesst 9 von 9 und 4 von 4 Vertiefungen.
+- **Druck** (`print`): 9 von 9 und 4 von 4 Panels sowie «Grenzen des Bildes» sichtbar. Die zwei geänderten Sätze in den Vertiefungen von `danach` sind sichtbar.
+- **Technik:** 0 `style`, 0 Hexwerte, 0 `tel:` und keine Telefonnummer in den zwei Quelltexten.
+
+### Teil C · «Zwei Tassen» nach dem Verschieben
+
+**Bildschirmfotos** (Chromium, Faktor 2): die Abbildung bei 1280 und 360 px, je Standard und «kontrast», vorher und nachher. Acht Fotos, angesehen, nicht committet.
+
+- **Masse bei 1280 px:**
+  - Die Zeichnung ist 760 px breit.
+  - Tassenkörper bei 313–395 und 541–623 px im Fenster (vorher 242–323 und 613–694).
+  - Satz links bei 88–390 px, rechts bei 546–848 px.
+  - Die Werte der Selbstprüfung stimmen.
+- **Masse bei 360 px:** Die Tassen sind 34 px breit und stehen 62 px auseinander. Die Sätze stehen untereinander über der Zeichnung.
+- **«kontrast»:** Die Linien sind dunkler, Fläche und Tassen gleich, nichts verschwindet.
+- **Wirkung (Prüfsitzung):**
+  - Die zwei Tassen stehen jetzt im mittleren Teil desselben Tisches, nahe beisammen, beide dampfen, die Henkel zeigen nach aussen. Das liest sich als zwei Menschen, die zusammen Tee trinken. Die leere Mitte von vorher ist weg.
+  - Bei 1280 px steht der rechte Satz mit seiner Randlinie genau über der rechten Tasse. Der linke beginnt am linken Rand der Abbildung, etwa 225 px vor seiner Tasse, und endet über ihr. Die Zuordnung links ist deshalb lockerer als rechts, bleibt aber über die Seite (links/rechts) klar.
+  - Kein Befund; Hinweis für R2.
+- **Freundin-Test (Prüfsitzung):** bestanden. Eine Angehörige könnte das Bild einer Freundin zeigen und sagen: «So sitzen wir da. Die eine Person sagt den harten Satz, die andere antwortet, ohne sich zu verteidigen, und beide bleiben am selben Tisch.» Ohne die Sätze bleibt ein ruhiges Bild von zwei Menschen beim Tee; die Aussage tragen die Sätze, wie im Plan vorgesehen.
+- **Visualisierungs-Check:** Die geänderten Punkte 1, 2, 8, 9, 12 und 17 der Selbstprüfung sind nachgeprüft, die Bewertungen bestätigt (E, E, E, T, E, T). Punkt 14 bleibt N, bis die Fachstelle die Abbildung freigibt (P2b-F-11 b).
+
+### Teil D · Liste «Neue Sätze zur Freigabe»
+
+- **Umfang:** 85 Zeilen.
+  - Aus der Liste von 2b stammen 70 Zeilen; 3 davon entfallen mit Grund (Nr. 17, 44, 50).
+  - 18 Einträge sind neu: 1a, 1b, 14a, 17a, 17b, 17c, 19a, 24a, 32a, 44a, 45a, 45b, 49a, 54a, 55a, 57a, 57b, 64a.
+  - 6 Einträge sind geändert: 4, 11, 15, 51, 52, 55.
+  - Die Nummern von 2b bleiben.
+- **Gegen 2b-K:** Jeder Satz, den die Korrektur neu bringt oder neu fasst, steht in der Liste, mit Ort, Art und Abgleichzeile (Blockvergleich, Teil A). Darin enthalten sind die drei Begriffe der Kurve (17c), die Kurzbeschreibung von «Zwei Tassen» (11) und die Quellenzeile (54a). Sätze, die in einer geänderten Abgleichzeile stehen, aber selbst gleich geblieben sind, fehlen zu Recht, z. B. «Bei Unsicherheit ist eine professionelle Einschätzung sinnvoll.» (c69).
+- **Zitate:** 97 Zitate auf oberster Ebene sind wörtlich auf der genannten Seite gefunden; Teile mit «…» sind je für sich geprüft. Die Selbstprüfung nennt 98, sie zählt anders. Kein Befund.
+- **Ganze Seiten:** Ein Skript der Prüfsitzung prüft jeden Satz auf `kommunizieren` und `krise` gegen den Bestand (alle 73 Dateien), die Liste und den Abgleich. Gezählt sind alle Sätze mit Vertiefungen, Titeln und Kurzbeschreibung, maschinell in Satzteile getrennt.
+  - 223 Satzteile stehen nicht wörtlich im Bestand und nicht in der Liste (143 auf `kommunizieren`, 80 auf `krise`).
+  - Davon sind 82 «umformuliert (2b)», 39 «verschoben (Vertiefung, 2b)», 28 Bezeichnungen und 27 «übernommen» mit geänderten Satzzeichen (z. B. Semikolon durch Punkt).
+  - 19 sind «zusammengeführt», 5 «verschoben».
+  - 17 haben keine eigene Zeile: Einleitungen wie «Zum Beispiel:», «Oder:» und «Was Sie tun können:», Bezeichnungen der Beispiele, der Bildtitel.
+  - 6 stehen in Zeilen mit 2b-K oder «neu (2b)» und sind gleich geblieben oder als Bezeichnung gelistet.
+- **Regel von 2b:** Nach ihr stehen umformulierte Einzelsätze nur im Abgleich. Fast alle 223 fehlen deshalb zu Recht. Nach derselben Regel gehören aber drei Stellen in die Liste und fehlen:
+  - «Legen Sie sich einen Satz für eine Pause zurecht, der für Sie natürlich klingt und kein Versprechen enthält, zurückzukommen.» (`kommunizieren` › `moment`, «Was Sie tun können»). Das ist eine Verdichtung aus k807, k808 und k931. Der Satz direkt danach aus denselben Zeilen steht als Nr. 21 in der Liste.
+  - «Schreiben Sie zwei oder drei typische Grenzsätze vorab auf, und üben Sie sie laut in Ihrer eigenen Sprache.» (`kommunizieren` › `kippen`, «Was Sie tun können»). Das ist eine Verdichtung aus g599, g600, k723 und k929.
+  - Der Bildtitel «Abbildung 1 · Zuhören, ohne zuzustimmen». Kernaussage, Kurztext und Kurzbeschreibung stehen als Nr. 9 bis 11 in der Liste, der Titel nicht.
+  - Alle drei stammen aus 2b und stehen nirgends im Bericht. Die Prüfrunde 2b hat in ihrer Rückwärtsprüfung die 70 Sätze mit der schwächsten Übereinstimmung gelesen; die zwei Verdichtungen nennt sie nicht.
+- **Kopf der Liste:** Er sagt «Sie enthält alle Sätze von `kommunizieren`, `krise` und `index`, die nicht im Wortlaut aus dem Bestand stammen, …». Die Einschränkung der Liste von 2b («Einzelne Bestandssätze in einfacher Sprache («umformuliert (2b)») stehen nur im Abgleich.») fehlt. Wer die Liste als Grundlage der Freigabe nimmt (P2b-F-11 a), hält sie damit für vollständiger, als sie ist (N2bK-1).
+
+**Ergebnis:** Für die Änderungen aus 2b-K ist die Liste vollständig. Als Grundlage der Freigabe von `kommunizieren`, `krise` und dem Einstieg auf `index` ist sie es nicht.
+
+### Teil E · «Aufgefallen, nicht geändert» bewertet
+
+| Nr. | Punkt der Selbstprüfung | Geprüft | Bewertung | Empfehlung | Zuständig |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Seitenbeschreibung von `krise` «… was Sie eher vermeiden, …» und `v-kr-vermeiden` › `goal` «Erkennen, was in einer Krise eher nicht hilft» | `site.config.json` › `pages` › `krise` › `description`; in `krise.html` als `meta name="description"` und `og:description` | Trifft zu. Der Auftrag nennt die Stellen nicht, deshalb sind sie zu Recht unverändert. Die Beschreibung ist nach aussen sichtbar (Suchergebnis, Vorschau beim Teilen) und schwächt wie vor P2b-F-3 den Schutzhinweis ab | Folgeänderung zu P2b-F-3: «… was Sie in einer Krise vermeiden sollten, …» und `goal` «Erkennen, was Sie in einer Krise vermeiden sollten». Kein neuer Entscheid nötig | bauende Sitzung, im nächsten Auftrag (N2bK-4) |
+| 2 | `v-ko-tassen` › `reason` mit «… die rechte Tasse steht 2 Einheiten weiter rechts als in der Skizze …» | Plan, Zeile 616 | Trifft zu. Der Satz beschreibt den Stand vor 2b-K. Die Tassen stehen jetzt je 60 Einheiten näher zur Mitte; spiegelgleich sind sie weiter (Teil A, Punkt 6) | Satz nachführen, z. B. «… beide Tassen je 60 Einheiten näher zur Tischmitte (P2b-F-11 b), spiegelgleich zu x = 320.» | bauende Sitzung, im nächsten Auftrag (N2bK-4) |
+| 3 | K-K-a1 bei «Nächster Schritt» | `kippen`: «Ich beende das Gespräch jetzt und entscheide später, ob ich wieder ansprechbar bin.» | Trifft zu. Der Auftrag beschränkt K-K-a1 auf «Es ist gerade zu viel.» (5 a) und hält k726 fest (7); unverändert ist richtig. Damit stehen in `kippen` weiter drei fast gleiche Sätze zum Beenden: Schritt «Begrenzen oder beenden», «Ein Satz darf reichen», «Nächster Schritt» | Frage an die Fachstelle: Gilt K-K-a1 auch für «Nächster Schritt» (nur die Beschreibung)? Dann entfällt auch der Unterschied «und wann» (k726) | Fachstelle (Beispielsätze des Bestands) |
+| 4 | Reihenfolge in «Pause statt Streit»: Die Einleitung nennt die Kurve, der Link folgt erst nach der Liste | bei 360 px: Einleitung bei 9960 px, Link bei 11 103 px, 1143 px später (mehr als eine Bildschirmhöhe) | Trifft zu. Abschnitt 5 a legt fest, dass der Verweissatz nach der Liste bleibt; unverändert ist richtig. Wer `verstehen` nicht kennt, liest «Anspannungskurve» eine Bildschirmhöhe lang ohne Erklärung | Strukturvorschlag: In der Einleitung das Wort «Anspannungskurve» als Link auf `verstehen#anspannung` setzen (Wortlaut bleibt) oder den Verweissatz direkt nach der Einleitung stellen | Fachstelle gibt frei, weil 5 a die Lage festlegt; danach bauende Sitzung |
+| 5 | Übrige Einzelstellen aus P2b-S-3 | «keinen statistisch signifikanten Anstieg» steht im Satz zu Dazzi et al.; «radikale Echtheit» nur noch im Titel der Vertiefung «6 · Radikale Echtheit: auf Augenhöhe bleiben» | Trifft zu. Der Satz zu Dazzi et al. bleibt nach 5 e im Wortlaut; die Stufe wird in ihrer Vertiefung erklärt | Keine Massnahme. Der Fachbegriff bleibt ein Punkt für den Lesetest in S | – |
+| 6 | `sagen`: Standardsatz und Ausstiegssatz in einem Absatz | bei 360 px 8 Zeilen (gemessen), dazu 3 Zeilen davor und 6 Zeilen Verweissatz | Trifft zu. Der Auftrag nennt keine Absätze; vorher war es auch ein Absatz | Optional: «Zum Aussteigen reicht: …» als eigener Absatz, damit der Ausstiegssatz in einer Krise schneller zu finden ist (Wortlaut gleich) | bauende Sitzung (Struktur) |
+
+### Befunde der Nachprüfung 2b-K
+
+- **N2bK-1 · wichtig · Liste «Neue Sätze zur Freigabe» als Grundlage der Freigabe unvollständig.**
+  - **Beleg:** Teil D.
+    - Der Kopf verspricht alle nicht wörtlichen Sätze; die Regel von 2b fehlt.
+    - Zwei Verdichtungen fehlen: «Legen Sie sich einen Satz für eine Pause zurecht, …» (k807, k808, k931) und «Schreiben Sie zwei oder drei typische Grenzsätze vorab auf, …» (g599, g600, k723, k929).
+    - Der Bildtitel «Abbildung 1 · Zuhören, ohne zuzustimmen» fehlt.
+    - Für die Änderungen aus 2b-K selbst ist die Liste vollständig.
+  - **Vorschlag:**
+    - Die Liste nachführen: die drei Einträge an ihrem Ort ergänzen (z. B. 8a, 20a, 29a) und den Satz der Regel von 2b wieder in den Kopf setzen.
+    - Oder die Fachstelle gibt die Seiten wie bei Etappe 2a «als Ganzes, mit allen Texten im Stand …» frei und die Liste dient als Übersicht der neuen Sätze.
+  - **Zuständig:** bauende Sitzung (Liste); Fachstelle (Form der Freigabe P2b-F-11 a).
+- **N2bK-2 · optional · Zwei Einzelposten der Wortzahl in `sagen`.**
+  - **Beleg:** Teil B. Die Schrittfolge mit Einleitung hat −47 Wörter (gemeldet −46), die Handlungsanleitung +18 (gemeldet +17); die Summe −24 stimmt.
+  - **Vorschlag:** Die zwei Zahlen in «Gründe» richtigstellen.
+  - **Zuständig:** bauende Sitzung.
+- **N2bK-3 · optional · Abgleich: Bemerkung von c253 veraltet.**
+  - **Beleg:** `krise.md` Nr. 253 («Die 3 Schritte», Bezeichnung): «Zwischentitel; die drei Schritte als nummerierte Liste». Auf `krise` steht keine Liste der Schritte mehr (P2b-F-8; im Quelltext ist das einzige `<ol>` die Kapitelübersicht). Das Skript der bauenden Sitzung hat die Zeile nicht gemeldet, weil sie keine neue Fassung hat.
+  - **Hinweis:** Zu c260 und c261 («entfällt (2b-K)», wie beauftragt) könnte die Bemerkung sagen, dass derselbe Wortlaut im Standardsatz weiter steht (c265, c266).
+  - **Vorschlag:** Bemerkung nachführen, z. B. «Zwischentitel; die Schritte sind seit 2b-K verlinkt (`kommunizieren#kippen`, P2b-F-8)».
+  - **Zuständig:** bauende Sitzung.
+- **N2bK-4 · optional · Folgeänderungen aus «Aufgefallen» 1 und 2.**
+  - **Beleg:** Teil E, Punkt 1 (Meta-Beschreibung und `goal` mit «eher») und Punkt 2 (`reason` von `v-ko-tassen`).
+  - **Vorschlag:** wie dort.
+  - **Zuständig:** bauende Sitzung, mit dem nächsten Auftrag.
+
+**Prüfbedarf für die Fachstelle**
+
+1. **Form der Freigabe (zu N2bK-1):** Sollen die Seiten wie bei Etappe 2a als Ganzes freigegeben werden, mit der nachgeführten Liste als Übersicht? Oder wird die Liste vorher ergänzt und einzeln freigegeben? **Empfehlung:** Liste nachführen und die Seiten als Ganzes freigeben.
+2. **K-K-a1 bei «Nächster Schritt»** (Teil E, Punkt 3): Soll dort nur die Beschreibung stehen, ohne eigenen Beispielsatz? Ja/Nein. **Empfehlung:** Ja; der Ausstiegssatz steht kurz davor im selben Abschnitt («Ein Satz darf reichen»).
+3. **Link auf die Anspannungskurve früher** (Teil E, Punkt 4): Darf das Wort «Anspannungskurve» in der Einleitung von «Pause statt Streit» als Link stehen, oder der Verweissatz direkt nach der Einleitung? Ja/Nein. **Empfehlung:** Ja, als Link in der Einleitung.
+
+**Nicht geprüft:** reale Screenreader-Läufe, Hardwaretastatur und Touch; die Vorschau auf Netlify. Kontraste sind nicht neu gemessen, weil Farben, Klassen und CSS unverändert sind (`git diff`: keine CSS-Datei, keine neue Klasse in der Zeichnung).
+
+**Zählung:** 1 wichtig (N2bK-1), 3 optional (N2bK-2 bis -4), 3 Fragen an die Fachstelle. Keine Prüfstufe ist «erledigt». Die Freigabe von «Zwei Tassen» und der neuen Sätze (P2b-F-11) bleibt offen.
 
 ## Prüfrunde 2b (10.10.2026, Stand 26af566)
 
