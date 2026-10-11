@@ -106,6 +106,8 @@ const byId = (doc, id) => id ? one(doc, x => x.attrs.id === id) : null;
 /* ---------- Pfade ---------- */
 const isExternalUrl = u => /^\s*(?:[a-z][a-z0-9+.-]*:)?\/\//i.test(u || '');
 const isInternal = h => !!h && !/^\s*[a-z][a-z0-9+.-]*:/i.test(h) && !/^\s*\/\//.test(h);
+const LEGAL_URL_RE = /^https?:\/\/[^\s/?#]+\.[a-z]{2,}(?:[/?#]\S*)?$/i;
+const noLoadRel = r => { const t = String(r || '').toLowerCase().split(/\s+/).filter(Boolean); return t.length > 0 && t.every(x => x === 'canonical' || x === 'alternate'); };
 function resolve(from, href) {
   const [pathPart, hash = ''] = String(href || '').split('#'); const clean = pathPart.split('?')[0];
   if (!clean) return { path: from, hash };
@@ -220,17 +222,17 @@ function gate(cfg, files, opts = {}) {
     if (!e || !e.href) prod('site', 'legal', `${name} fehlt: site.config.json › legal.${k} mit label und href (eigene Seite oder geprüfte Seite der PUK)`);
     else {
       if (!e.label) add('block', 'site', 'legal', `legal.${k}.label fehlt`);
-      if (isInternal(e.href) && !exists(resolve('', e.href).path)) add('block', 'site', 'legal', `Ziel von legal.${k} fehlt: ${e.href}`);
+      if (isInternal(e.href)) { if (!exists(resolve('', e.href).path)) add('block', 'site', 'legal', `Ziel von legal.${k} fehlt: ${e.href}`); }
+      else if (!LEGAL_URL_RE.test(e.href)) add('block', 'site', 'legal', `Ziel von legal.${k} ist keine Seite: ${e.href} – eigene Seite (relativer Pfad) oder https://…`);
     }
   }
-  /* 404-Seite (Prüfbefund W3-08, Pre-Release-Audit R3): Entwurf Hinweis, Produktion blockiert. */
+  /* 404-Seite (Prüfbefund W3-08, Pre-Release-Audit R3): Entwurf Hinweis, Produktion blockiert.
+     Ausgeliefert wird nur eine veröffentlichte Seite 404.html im Stamm (Export lässt Entwürfe weg, Netlify sucht nur diesen Namen). */
   const nf = pages.filter(isNotFound);
   if (!nf.length) prod('site', 'not-found', '404-Seite fehlt: Seite mit "role": "not-found" und href "404.html" im Seitenvertrag (Vorlage im Starter)');
+  else if (!nf.some(p => p.status === 'published' && p.href && pagePath(p) === '404.html')) prod('site', 'not-found', `404-Seite wird nicht ausgeliefert (${nf.map(p => `${p.href || '?'}, ${p.status || '?'}`).join('; ')}): nötig sind href "404.html" und status "published"`);
   if (nf.length > 1) add('block', 'site', 'not-found', 'Mehr als eine Seite mit role «not-found»');
-  for (const p of nf) {
-    if (p.navLabel) add('block', p.id || '?', 'not-found', '404-Seite gehört nicht in die Navigation (navLabel: null)');
-    if (p.href && pagePath(p) !== '404.html') add('warn', p.id || '?', 'not-found', `404-Seite heisst ${p.href}: Netlify zeigt nur 404.html im Stamm der Website`);
-  }
+  for (const p of nf) if (p.navLabel) add('block', p.id || '?', 'not-found', '404-Seite gehört nicht in die Navigation (navLabel: null)');
   const byPath = {}; pages.forEach(p => { if (p.href) byPath[pagePath(p)] = p; }); let inlineUsed = false;
   const ids = new Set();
   for (const p of pages) {
@@ -290,8 +292,9 @@ function gate(cfg, files, opts = {}) {
       else if (!exists(resolve(path, sc.attrs.src).path)) add('block', pid, 'interaction-script', 'Interaktionsskript nicht lokal vorhanden: ' + sc.attrs.src);
     }
     for (const cl of main ? all(main, y => cls(y, 'puk-web-card-list')) : []) { const n = cl.children.filter(y => y.tag === 'li').length; if (n >= 4) add('warn', pid, 'card-grid', `Kartenraster mit ${n} Karten: prüfen, ob eine Anordnung mit Beziehungen erklären müsste (Kartenraster-Check, Abschnitt «Visualisierung umsetzen»)`); }
-    /* Kanonischer und alternativer Link laden nichts (Nebenbefund 11.10.2026: mit gesetzter siteUrl blockierte sonst jeder Build). */
-    for (const x of all(doc, y => ['script', 'link', 'img', 'source', 'iframe', 'video', 'audio', 'embed', 'object', 'use', 'image'].includes(y.tag) && !(y.tag === 'link' && /(^|\s)(canonical|alternate)(\s|$)/i.test(y.attrs.rel || ''))))
+    /* Kanonischer und alternativer Link laden nichts (Nebenbefund 11.10.2026: mit gesetzter siteUrl blockierte sonst jeder Build).
+       Ausgenommen nur, wenn rel ausschliesslich diese Werte trägt – «alternate stylesheet» oder «canonical preload» laden. */
+    for (const x of all(doc, y => ['script', 'link', 'img', 'source', 'iframe', 'video', 'audio', 'embed', 'object', 'use', 'image'].includes(y.tag) && !(y.tag === 'link' && noLoadRel(y.attrs.rel))))
       for (const k of ['src', 'href', 'srcset', 'data', 'xlink:href']) { const u = x.attrs[k]; if (u && u.split(',').some(z => isExternalUrl(z.trim()))) add('block', pid, 'external', `Externe Laufzeitquelle: <${x.tag} ${k}="${u}">`); }
     for (const x of all(doc, y => y.tag === 'style')) if (/(@import|url\()\s*["']?(https?:)?\/\//i.test(txt(x))) add('block', pid, 'external', 'Externe Quelle in <style>');
     for (const x of all(doc, y => /url\(\s*["']?(https?:)?\/\//i.test(y.attrs.style || ''))) add('block', pid, 'external', 'Externe Quelle im style-Attribut');
@@ -484,6 +487,10 @@ const MUTATIONS = [
   ['Link auf das Impressum fehlt in der Fusszeile', ['legal'], (c, f) => rex(f, 'behandlung-verstehen.html', /<p class="puk-web-footer__copy puk-site-legal" data-site-legal>[\s\S]*?<\/p>/, '')],
   ['404-Seite fehlt', ['not-found'], c => { const n = c.pages.length; c.pages = c.pages.filter(p => !isNotFound(p)); return c.pages.length < n; }],
   ['404-Seite in der Navigation', ['not-found'], c => { const p = c.pages.find(isNotFound); if (!p) return false; p.navLabel = 'Seite fehlt'; }],
+  /* Code-Review 11.10.2026 (Pull Request zu 2026.10.1) */
+  ['404-Seite als Entwurf (nicht im Export)', ['not-found'], c => { const p = c.pages.find(isNotFound); if (!p) return false; p.status = 'draft'; }],
+  ['Impressum zeigt auf eine E-Mail-Adresse statt auf eine Seite', ['legal'], (c, f) => { const e = c.legal && c.legal.imprint; if (!e || !e.href) return false; const old = e.href; e.href = 'mailto:nobody@example.org'; let n = 0; for (const k of Object.keys(f)) if (rep(f, k, `href="${old}"`, `href="${e.href}"`, true)) n++; return n > 0; }],
+  ['Externes Stylesheet als «alternate stylesheet»', ['external'], (c, f) => rep(f, 'index.html', '</head>', '<link rel="alternate stylesheet" href="https://www.example.org/x.css">\n</head>')],
   ['Fremdsprachiger Quellentitel ohne lang', ['lang-part'], (c, f) => rep(f, 'behandlung-verstehen.html', '</main>', '<ol class="puk-longform__sources"><li>Muster A (2020): Supporting the families of people with depression: a review of the evidence.</li></ol></main>')]
 ];
 function pg(c, id) { const p = c.pages.find(x => x.id === id); if (!p) throw new Error('Seite ' + id + ' fehlt'); return p; }
