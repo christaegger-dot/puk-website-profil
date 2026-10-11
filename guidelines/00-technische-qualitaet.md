@@ -33,7 +33,7 @@ Bei psychischer Erkrankung ist schon der Seitenbesuch eine sensible Information.
 - **Keine Übertragung an Dritte:** keine extern geladenen Schriften (auch nicht Google Fonts), kein Analytics oder Tracking, keine eingebetteten Videos, Karten oder Social-Media-Elemente, keine CDNs. Alles wird lokal ausgeliefert.
 - Keine Cookies. Lokale Speicherung nur mit Vorabinformation, Aufbewahrungsregel und Löschmöglichkeit; Reflexionseingaben standardmässig nicht speichern.
 - Formulare (z. B. Netlify Forms) nur, wenn transparent ist, welche Daten wohin gehen und wer sie liest.
-- Impressum und Datenschutzerklärung vorhanden und deckungsgleich mit dem, was der Code tatsächlich tut. Im Starter: `site.config.json` › `legal` (Links in jeder Fusszeile); ohne Ziel blockiert das Produktionsgate.
+- Impressum und Datenschutzerklärung vorhanden und deckungsgleich mit dem, was der Code tatsächlich tut. Im Starter: `site.config.json` › `legal` (Links in jeder Fusszeile); ohne Ziel blockiert das Produktionsgate. Je Website eine eigene Seite «Impressum und Datenschutz» (Vorlage `content/impressum-datenschutz.html`; Entscheid 11.10.2026): Herausgeberin Fachstelle Angehörigenarbeit, Inhalt und Umsetzung namentlich, Datenschutz so, wie der Code arbeitet.
 - **Vorziehen erlaubt:** Kritische Datenschutzbefunde (externe Schriften, Tracking) dürfen jederzeit, auch vor W1, behoben werden.
 
 ## D · Sicherheit
