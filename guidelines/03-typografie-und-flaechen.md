@@ -63,3 +63,11 @@ Ecken standardmässig eckig; 2–4 px nur für kleine Bedienelemente.
 - **Grund:** Befunde BD-04 und BD-11 der Website «Depression»: Mit px-Graden wirkte die Browser-Einstellung «Schriftgrösse» nicht (0 von 30 Stichproben verändert); wer sie nutzt, bekam keinen grösseren Text.
 - **Folgen:** Abstände bleiben in px. Fluide Titel (`web-size-h*-fluid`) wachsen nur bis zu ihrem Höchstwert mit. Container-Abfragen und Höchstbreiten der Figuren stehen ebenfalls in rem (Abschnitt «Visualisierung umsetzen»). Im Druck setzt `bundle.css` die Grundschrift auf 13 px; alle Grade schrumpfen gleichmässig.
 - **Rückfallschrift:** `--font-core` ist auf Websites `"Rubik", Helvetica, sans-serif` – ohne «Rubik Variable». Zeichen, die in den statischen Schnitten fehlen (z. B. ← →), kommen aus der Systemschrift statt 110 kB nachzuladen.
+
+## Präzisierung der Fusszeile · AUDIT 04
+
+Die Textrolle bestimmt die Schriftgrösse auch in der Fusszeile. Absender-, Kontakt-, Zuständigkeits-, Datenschutz- und Abgrenzungstexte sind Lesetext: `web-body`, 21 px auf breiten und 19 px auf schmalen Bildschirmen. Der frühere pauschale 16-px-Wert im Web-Footer-Beispiel widerspricht dem Profilentscheid «Lesen in Seitenschrift» und entfällt.
+
+Datum, Version und Designherkunft dürfen ausdrücklich als Metadaten mit `type-caption` (13 px) gesetzt werden; dafür steht `.puk-web-footer__meta` bereit. Wesentliche Bedingungen und Handlungsinformationen gehören nicht in diese Ausnahme. Bedienelemente behalten die UI-Schrift `type-body`; ihre Bedienfläche bleibt unabhängig davon mindestens 44 px.
+
+`tokens/web.css` und die entsprechende Regel in `components/bundle.css` verwenden dieselbe Footer-Regel. Die allgemeinen Schriftgrössen-Tokens ändern sich dadurch nicht.
