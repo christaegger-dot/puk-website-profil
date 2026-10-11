@@ -1,5 +1,24 @@
 # Netlify-Vorschau des ganzen Repositorys: nicht in Suchmaschinen aufnehmen.
 # Netlify liest nur diese Datei im veröffentlichten Stamm; die _headers der Websites unter templates/website/ gelten erst für deren eigenständigen Export.
-# Keine Content-Security-Policy hier: ui_kits/website/qa.html braucht ein Inline-Skript.
+# Keine Content-Security-Policy für das ganze Repository: ui_kits/website/qa.html braucht ein Inline-Skript,
+# templates/website/Website.dc.html die Laufzeit von Claude Design (Inline-Stile).
 /*
   X-Robots-Tag: noindex, nofollow
+
+# Websites, Starter und Mustervorlagen in der Vorschau mit derselben Content-Security-Policy wie ihr Export
+# (_headers des Starters), damit die Vorschau CSP-Verstösse zeigt (Hinweis aus W3, 11.10.2026).
+# Neue Website unter templates/website/<website>/: einen Block mit ihrem Ordner ergänzen.
+/templates/website/psychoeducation-site-starter/*
+  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'
+
+/templates/website/depression-angehoerige/*
+  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'
+
+/templates/website/longform/*
+  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'
+
+/templates/website/interaktion/*
+  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'
+
+/templates/website/applications/*
+  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'
