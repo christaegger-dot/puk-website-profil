@@ -1,4 +1,4 @@
-# Psychoedukations-Starter · PUK Website Kit 1.10.1-r4 · abgeleitet · Build r4-7
+# Psychoedukations-Starter · PUK Website Kit 1.10.1-r4 · abgeleitet · Build r4-8
 
 Lokal lauffähiger Mehrseiten-Starter für psychoedukative Websites. Abgeleitetes Profil auf Basis der kanonischen Quelle **PUK Zürich Design System 1.10.1**, nicht deren neue offizielle Version. Alle Inhalte sind synthetisch: keine realen Kontakte, Personen, klinischen Aussagen, Freigaben oder Bildrechte.
 
@@ -10,7 +10,7 @@ Lokal lauffähiger Mehrseiten-Starter für psychoedukative Websites. Abgeleitete
 - `tools/gate.mjs`: prüft die gebauten Seiten. `--production` für die Veröffentlichung, `--selftest` für den Nachweis, dass jede bekannte Fehlerklasse erkannt wird. Der Selbsttest nutzt die feste Referenz in `tools/selftest/` und läuft deshalb auch in jeder Kopie des Starters.
 - `tools/contract.js`: gemeinsame Logik (Node und Browser), ohne Abhängigkeiten.
 - `PRUEFBERICHT.md`: Prüfbericht der Website – Statustabelle der Prüfstufen, Visualisierungs-Check mit Beleg je Punkt, Befunde. Ohne vollständigen Bericht blockiert das Produktionsgate (Abschnitt «Prüfung und Freigabe»).
-- `gate.html`: derselbe Bericht im Browser, mit sichtbarem Seitenvertrag und Visualisierungsplan pro Seite.
+- `gate.html`: derselbe Bericht im Browser, mit sichtbarem Seitenvertrag und Visualisierungsplan pro Seite (Skript und Stil in `tools/gate-browser.js` und `tools/gate.css`, damit die Seite mit der Content-Security-Policy läuft).
 - `tools/export.mjs`: schreibt eine eigenständige, veröffentlichbare Website in einen Zielordner (siehe «Veröffentlichen»).
 - `_headers`: Sicherheits-Header für Netlify (Content-Security-Policy nur mit eigenen Quellen, keine Inline-Skripte).
 - `starter.css`: Absenderin, Entwurfsmarken, Zuständigkeitsverweis, Platzhalter. Figuren kommen aus `../longform/visual-patterns.css` (Muster A–F) und `../longform/erklaermuster.css` (Muster G–K); Akkordeon, Reiter, Menü und Dialog aus `components/bundle.css` mit `components/interaktion.js`.
@@ -33,14 +33,16 @@ Seiten über einen lokalen Webserver öffnen (z. B. `npx serve` im Projektstamm 
 
 - `siteTitle`, `shortDescription`, `language` (de…), `favicon`, `logo`, `contentOwner`, `editorialStatus`
 - `sender`: `orgUnit` + `institution` + `email` (optional, erscheint als `mailto:`-Link) + `status`. Festgelegt für Websites: «Fachstelle Angehörigenarbeit» · «Psychiatrische Universitätsklinik Zürich» · `angehoerigenarbeit@pukzh.ch`. Die Absenderin erscheint auf jeder Seite sichtbar im Kopf. Solange `status` nicht `freigegeben` ist, steht daneben «Platzhalter, nicht freigegeben». Eine amtliche Freigabe wird nicht behauptet.
-- `pages[]`: `id`, `title`, `href`, `navLabel` (`null` = nicht in der Navigation), `status` (`draft`/`published`), `primaryTask`, `description`, `sensitiveTopics`, `visualPlan`.
-- Die Hauptnavigation entsteht aus allen Seiten mit `status: "published"` und `navLabel`. Entwürfe erscheinen nie in der Navigation.
+- `pages[]`: `id`, `title`, `href`, `navLabel` (`null` = nicht in der Navigation), `status` (`draft`/`published`), `primaryTask`, `description`, `sensitiveTopics`, `visualPlan`; optional `role: "not-found"` für die 404-Seite (`href` `404.html`, `navLabel` `null`; ohne Sitemap, kanonischen Link und Erreichbarkeitsprüfung, mit `noindex`; der Export setzt ihre Pfade ab dem Stamm der Website). Fehlt sie, blockiert das Produktionsgate (`not-found`).
+- Die Hauptnavigation entsteht aus allen Seiten mit `status: "published"` und `navLabel`. Entwürfe erscheinen nie in der Navigation. Ab sieben Punkten setzt der Build sie in ein Dropdown-Menü: unter 760 px mit der Schaltfläche «Menü», breit bleiben alle Punkte sichtbar (Profilentscheid 11.10.2026).
+- Der Logo-Link heisst «<sender.institution> – Startseite <siteTitle>»: Der Name beginnt mit dem sichtbaren Logotext (WCAG 2.5.3).
+- `legal`: `imprint` und `privacy`, je mit `label` und `href` (eigene Seite des Seitenvertrags oder geprüfte Seite der PUK). Die Links stehen in jeder Fusszeile; zeigen beide auf dieselbe Seite, entsteht ein Link. Ohne `href` erscheint ein sichtbarer Platzhalter, und das Produktionsgate blockiert (`legal`).
 - `disclaimer`: gut auffindbarer Hinweis, dass die Website keine individuelle Abklärung, Beratung oder Behandlung ersetzt; erscheint in jeder Fusszeile (fehlt er, meldet das Gate einen Hinweis).
 - `responsibility` (site-weit, optional): ein Zuständigkeitsverweis an einer festen, von jeder Seite aus erreichbaren Stelle – in jeder Fusszeile –, der ohne Nummern auf die zuständigen Stellen verweist (alternativ `targetHref` auf eine Impressum-Stelle; die Fusszeile gilt als eine Stelle). Felder: `label`, `text`, `owner`, `reviewStatus`, optional `targetHref` (lokal, existierend) + `targetLabel`; bei `geprueft` zusätzlich `reviewedBy` und `reviewedAt`. Der Prüfvermerk erscheint nicht auf der Website; ein ungeprüfter Verweis zeigt in der Fusszeile eine Warnung. Seitenweise `safetyAccess`-Varianten gibt es nicht mehr; `persistent-subdued` und `direct` sind gesperrt (Profilentscheid 06.10.2026: Die Fachstelle bietet keine Krisenintervention).
 - `responsibility.inline` (optional, Profilentscheid 09.10.2026): Wortlaut des **Verweises im Text** (`text`, `reviewStatus`, bei `geprueft` auch `reviewedBy` und `reviewedAt`). Seiten setzen ihn nur über den Platzhalter `<p data-responsibility-inline></p>` direkt nach einer Handlungsanleitung für akute Lagen ein; der Build füllt den Wortlaut ein. Erlaubt nur auf Seiten, deren `sensitiveTopics` Selbstgefährdung, Gewalt oder akute Krise nennen, im Fliesstext (nicht in Figur oder Vertiefung), höchstens einer je Abschnitt, ohne Nummern. Der Starter enthält den von der Fachstelle am 09.10.2026 fachlich geprüften Standardwortlaut. Wird er geändert, gilt er als ungeprüft (`reviewStatus: "ausstehend"`), und das Produktionsgate blockiert, solange ein verwendeter Verweis nicht geprüft ist.
 - `visualPlan[]`: `section`, `sectionId` (Pflicht: `id` der zugehörigen `section`; jeder Abschnitt braucht eine Zeile), `goal`, `format` (`text`; Muster A–F `figure`, `cycle`, `process`, `illustration`, `comparison`, `decision`; Muster G–K `stepwise-model`, `tension-field`, `relationship-map`, `continuum`, `layer-model`), `statement`, `understood` (Pflicht ausser bei `text`: Was versteht die Zielgruppe dadurch besser als durch einen kurzen Text allein?), `resonance` (Pflicht ausser bei `text`: Wirkung – was eine Angehörige in der Darstellung wiedererkennen oder spüren soll; Profilentscheid 10.10.2026), `entryPoint` (Pflicht bei `cycle`, `process`, `stepwise-model`: Ansatzpunkt für Angehörige oder «entfällt: Begründung»; ein genannter Ansatzpunkt ist in der Figur als `.puk-vis-ansatz` markiert), `source`, `alternative`, `reason`, `approvalStatus`.
 - `siteUrl` (optional): öffentliche Adresse; erzeugt `sitemap.xml` und kanonische Links. Fehlt sie, meldet das Gate einen Hinweis.
-- `interactionScript`: Pfad zu `components/interaktion.js`. Der Build bindet es nur auf Seiten ein, die Akkordeon, Reiter, Menü, Dialog oder Muster G enthalten.
+- `interactionScript`: Pfad zu `components/interaktion.js`. Der Build bindet es nur auf Seiten ein, die Akkordeon, Reiter, Menü, Dialog, Muster G oder eine Vertiefung (`details`) enthalten – das Skript öffnet die Vertiefungen vor dem Druck.
 - Der Build schreibt zusätzlich Open-Graph-Angaben (Titel, Beschreibung, Sprache) ohne Tracking-Parameter.
 
 ## Was konstruktiv verhindert wird und was das Gate meldet
@@ -63,11 +65,13 @@ Seiten über einen lokalen Webserver öffnen (z. B. `npx serve` im Projektstamm 
   - Illustration (`illustration`) ohne eigene Zeichnung (`.puk-vis-scene`) und ohne Bildquelle- und Freigabestatus
   - generische Quellenlinks ohne sprechendes `aria-label`
   - Inline-Skripte (Content-Security-Policy), Links mit `target="_blank"` ohne `rel="noopener noreferrer"`
-  - interaktive Komponenten ohne lokal vorhandenes `interaktion.js`
+  - interaktive Komponenten oder Vertiefungen (`details`) ohne lokal vorhandenes `interaktion.js`
+  - mehr als sechs Hauptpunkte ohne Menü; Logo-Link, dessen Name nicht mit dem sichtbaren Logotext beginnt
+  - Links auf Impressum und Datenschutzerklärung fehlen in der Fusszeile (wenn `legal` Ziele nennt); eine 404-Seite in der Navigation
   - Visualisierungsplan ohne `understood` bei einer Darstellung
   - Planzeile mit `sectionId`, die es auf der Seite nicht gibt
-- **Hinweise im Entwurf, Blocker in Produktion:** Figur ohne Kernaussage (`.puk-vis-kern`), fehlender oder nicht markierter Ansatzpunkt (`entryPoint`), fehlende Wirkung (`resonance`), Abschnitt ohne Zeile im Visualisierungsplan.
-- **Hinweise (keine Blocker):** Kartenraster mit vier oder mehr Karten (Kartenraster-Check), `style`-Attribute im Inhalt, fehlende `siteUrl`, Orthografie, deutsche Rechtsbegriffe, etikettierende Bezeichnungen.
+- **Hinweise im Entwurf, Blocker in Produktion:** Figur ohne Kernaussage (`.puk-vis-kern`), fehlender oder nicht markierter Ansatzpunkt (`entryPoint`), fehlende Wirkung (`resonance`), Abschnitt ohne Zeile im Visualisierungsplan, fehlendes Impressum oder fehlende Datenschutzerklärung (`legal`), fehlende 404-Seite (`not-found`).
+- **Hinweise (keine Blocker):** Kartenraster mit vier oder mehr Karten (Kartenraster-Check), `style`-Attribute im Inhalt, fehlende `siteUrl`, Orthografie, deutsche Rechtsbegriffe, etikettierende Bezeichnungen, fremdsprachige Quellentitel ohne `lang` (`lang-part`, Stichwortprüfung).
 - **Gate blockiert zusätzlich in Produktion:** nicht freigegebene Absenderin, ungeprüfte Zuständigkeitsverweise, Platzhalter und Visualisierungen sowie ein fehlender oder unvollständiger Prüfbericht (`PRUEFBERICHT.md`).
 - **Sensible Themen:** Erwähnt der Inhalt Selbstgefährdung, Gewalt, Zwang oder eine akute Krise, muss `sensitiveTopics` das Thema nennen. Ein Zuständigkeitsverweis (`responsibility`) ist dann empfohlen, aber nicht Pflicht (Hinweis, kein Blocker); ist er gesetzt, steht er auf jeder Seite. Inhalte zum Umgang mit Krisen (Frühwarnzeichen, Krisenplan) sind Psychoedukation und zulässig. Mögliche Kurznummern wie 143 oder 144 meldet das Gate als Hinweis zur Prüfung. Zusätzliche Hinweise (keine Blocker) aus dem Website-Review Teil 1: «ß» und „…“ statt «…», deutsche Rechtsbegriffe und Angebote (z. B. Jugendamt, rechtliche Betreuung, Pflegegrad), etikettierende Bezeichnungen (z. B. «der Schizophrene»). Das ist eine Vertragsprüfung nach Stichwörtern, keine medizinische Triage.
 
@@ -79,10 +83,11 @@ Seiten über einen lokalen Webserver öffnen (z. B. `npx serve` im Projektstamm 
 - Alle Seiten: Zuständigkeitsverweis und Hinweis «ersetzt keine Abklärung» in der Fusszeile (site-weit).
 - `index.html`: Einstieg mit Lesepfaden; der Vollbericht ist ein Download-Platzhalter.
 - `seitenvorlage.html`: Entwurf, nicht in der Navigation.
+- `404.html`: Seite «nicht gefunden» mit Rückweg zur Übersicht (Musterwortlaut, fachlich freizugeben).
 
-Stand 10.10.2026 (Build r4-7: eigene Zeichnungen mit `.puk-vis-scene` gelten als Illustration ohne Platzhalter; Build r4-6: Bildsprache «Ein Bild, eine Idee», Assets r4-6 wegen `.puk-vis-scene` in `visual-patterns.css`):
+Stand 11.10.2026 (Build r4-8: Befunde der Prüfung der Website «Depression» – Interaktionsskript bei Vertiefungen, Name des Logo-Links, Menü ab sieben Punkten, Impressum und Datenschutzerklärung, 404-Seite, Hinweis `lang-part`, kanonischer Link nicht mehr als externe Quelle gewertet; Build r4-7: eigene Zeichnungen mit `.puk-vis-scene` gelten als Illustration ohne Platzhalter; Build r4-6: Bildsprache «Ein Bild, eine Idee»):
 - **Entwurfsgate:** 0 blockierende Befunde.
-- **Produktionsgate:** blockiert die offenen Freigaben und den unvollständigen Prüfbericht. Das ist erwartet. Der Prüfbericht braucht neu auch die Zeilen R1, R2 und R3 (Abschnitt «Pre-Release-Audits»); R3 nur bei «Go» auf «erledigt».
-- **Selbsttest:** 53 von 53 bestanden, auch in Kopien des Starters (neu: Illustration ohne eigene Zeichnung und ohne Bildstatus; seit r4-6: Visualisierungsplan ohne Wirkung `resonance`; seit r4-5: Produktion blockiert ohne «Go» im Freigabe-Audit R3; seit r4-4: Verweis im Text mit eigenem Wortlaut, auf Seite ohne sensibles Thema, in einer Vertiefung, ungeprüft in Produktion).
+- **Produktionsgate:** blockiert die offenen Freigaben, die Platzhalter für Impressum und Datenschutzerklärung und den unvollständigen Prüfbericht. Das ist erwartet. Der Prüfbericht braucht neu auch die Zeilen R1, R2 und R3 (Abschnitt «Pre-Release-Audits»); R3 nur bei «Go» auf «erledigt».
+- **Selbsttest:** 62 von 62 bestanden, auch in Kopien des Starters (neu in r4-8: Vertiefung ohne Interaktionsskript, Logo-Link-Name, Menü, Impressum und Datenschutzerklärung, 404-Seite, fremdsprachiger Quellentitel, kanonischer Link; seit r4-7: Illustration ohne eigene Zeichnung und ohne Bildstatus; seit r4-6: Visualisierungsplan ohne Wirkung `resonance`; seit r4-5: Produktion blockiert ohne «Go» im Freigabe-Audit R3; seit r4-4: Verweis im Text mit eigenem Wortlaut, auf Seite ohne sensibles Thema, in einer Vertiefung, ungeprüft in Produktion).
 
 Offen sind reale Screenreader-Läufe, ein Test mit Hardwaretastatur sowie Fach-, Bild- und Absenderfreigaben.

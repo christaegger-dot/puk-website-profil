@@ -2,7 +2,7 @@
 
 Wer gehört dazu, und wie nah? Personen und Stellen auf Kreisen um eine Mitte.
 
-Live-Muster aus `templates/website/longform/erklaermuster.html` mit `erklaermuster.css` (nach `visual-patterns.css` und `components/bundle.css` laden). Regeln: Abschnitt «Visuelle Wissensvermittlung». Alle Beschriftungen sind HTML-Text, Formen und Linien `aria-hidden`; schmal (unter 560 px Containerbreite) wird die Darstellung zur gegliederten Liste. Die Beispielinhalte sind fachlich freigegeben (Fachstelle Angehörigenarbeit PUK, 06.10.2026); für eine neue Website gelten eigene Inhalte, die wiederum freizugeben sind.
+Live-Muster aus `templates/website/longform/erklaermuster.html` mit `erklaermuster.css` (nach `visual-patterns.css` und `components/bundle.css` laden). Regeln: Abschnitt «Visuelle Wissensvermittlung». Alle Beschriftungen sind HTML-Text, Formen und Linien `aria-hidden`; schmal (unter 40 rem Containerbreite, bei Standardschrift 640 px; früher als die anderen Muster, damit Einträge nicht mitten im Wort brechen) wird die Darstellung zur gegliederten Liste. Die Karte wächst mit der Schrift (Höchstbreite 40 rem). Die Beispielinhalte sind fachlich freigegeben (Fachstelle Angehörigenarbeit PUK, 06.10.2026); für eine neue Website gelten eigene Inhalte, die wiederum freizugeben sind.
 
 **Bedeutung tragen:** Abstand zur Mitte (Nähe im Alltag), Linienart (besteht/wäre möglich); die Kreise sind beschriftet.
 

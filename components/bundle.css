@@ -660,3 +660,50 @@ html.puk-scroll-lock{overflow:hidden}
 .puk-say__item--hilfreich{border-left:3px solid var(--puk-blue-100)}
 .puk-say__label{display:block;margin-bottom:var(--space-1);font:var(--type-caption);color:var(--text-muted)}
 .puk-site-inline-ref{margin:var(--space-5) 0}
+
+/* ==== Prüfbefunde 11.10.2026 (ergänzt, nicht Teil der Quelle) ====
+   Befunde der Prüfung der Website «Depression: Informationen für Angehörige» (Bedienung BD, Code-Review W3).
+   1. Schriftgrade in rem statt px (BD-04, BD-11): Die Browser-Einstellung «Schriftgrösse» wirkt jetzt. Bei
+      Standardeinstellung (1 rem = 16 px) bleiben alle Grade gleich, z. B. 21 px = 1,3125 rem. Die Quellwerte oben
+      bleiben stehen; dieser Block überschreibt sie.
+   2. Schriftfamilie ohne «Rubik Variable» als Rückfall (W3-09): Zeichen, die in den statischen Schnitten fehlen
+      (z. B. ← →), luden sonst 110 kB nach; sie kommen jetzt aus der Systemschrift.
+   3. Sprunglink mindestens 44 px hoch (BD-06, W3-04); Navigation trennt lange Wörter nach Silben.
+   4. Erzwungene Farben (Windows-Kontrastmodus): Fokus als Umrandung, weil der Browser Schatten entfernt (BD-03);
+      Logo im dunklen Schema hell (BD-07). Keine Hexwerte: Systemfarbe CanvasText, Logo per Filter.
+   5. Druck: Vertiefungen auch ohne Skript offen, wo der Browser ::details-content kennt (W3-01); Grundschrift
+      13 statt 16 px und kleinere Zeichnungen, damit eine Figur auf eine A4-Seite passt; Kennzeichnung direkt unter
+      der Darstellung, die Vertiefung danach (W3-11, Figurgrössen in den Mustern). */
+:root{
+  --font-core:"Rubik",Helvetica,sans-serif;
+  --size-display-1:4rem;--size-display-2:3rem;--size-title-1:2.25rem;--size-title-2:1.75rem;--size-title-3:1.5rem;
+  --size-lead:1.25rem;--size-body:1.0625rem;--size-body-sm:.9375rem;--size-caption:.8125rem;--size-micro:.6875rem;
+  --web-size-body:1.3125rem;--web-size-lead:1.640625rem;--web-size-h1:7.125rem;--web-size-h2:3.5625rem;--web-size-h3:2.5rem;
+  --web-size-h4:1.3125rem;--web-size-h5:1.125rem;--web-size-h6:1rem;
+  --web-size-h1-fluid:clamp(2.75rem,8vw,var(--web-size-h1));--web-size-h2-fluid:clamp(2rem,4.5vw,var(--web-size-h2));--web-size-h3-fluid:clamp(1.625rem,3vw,var(--web-size-h3));
+}
+.puk-web-skip{display:inline-flex;align-items:center;min-height:var(--web-touch-target);font-size:1rem}
+.puk-web-nav__link{font-size:1.125rem;hyphens:auto}
+.puk-web-eyebrow{font-size:.875rem}
+.puk-web-media{font-size:.75rem}
+.puk-web-footer{font-size:1rem}
+.puk-longform__intro{font-size:clamp(1.3125rem,2.1vw,var(--web-size-lead))}
+.puk-longform__boundary,.puk-longform__roadmap a,.puk-longform__figure-relation{font-size:1rem}
+.puk-longform__roadmap-label,.puk-longform__kicker,.puk-longform__privacy{font-size:.875rem}
+.puk-longform__figure figcaption,.puk-longform__source-use{font-size:.9375rem}
+@media (max-width:760px){.puk-web-page{font-size:1.1875rem;--puk-read-size:1.1875rem}}
+@media (forced-colors:active){
+  :focus-visible:not([tabindex="-1"]){outline:2px solid CanvasText!important;outline-offset:2px!important}
+}
+@media (forced-colors:active) and (prefers-color-scheme:dark){.puk-web-logo img{filter:invert(1)}}
+@media print{
+  html{font-size:81.25%}
+  .puk-vis-more>summary::before,.puk-acc__chevron{display:none}
+  /* Figur als Spalte: Titel, Kernaussage, Darstellung und Kennzeichnung bleiben zusammen; die Vertiefung steht
+     im Druck nach der Kennzeichnung und darf auf die nächste Seite fliessen. */
+  .puk-vis-figure{display:flex;flex-direction:column;break-inside:auto}
+  .puk-vis-figure>*{width:100%;break-inside:avoid}
+  .puk-vis-figure>:not(.puk-vis-more):not(figcaption){break-after:avoid}
+  .puk-vis-figure>.puk-vis-more{order:1}
+}
+@media print{details::details-content{content-visibility:visible;display:block}}

@@ -9,4 +9,5 @@ Die drei Langform-Referenzen prüfen dasselbe Systemmuster in unterschiedlichen 
 
 Gemeinsam geprüft werden 320, 360, 768 und 1440 px, natürliche Inline-Link-Zeilenhöhe, 44-px-Aktionsziele, Lesebreite, Fokus, Quellenzuordnung und horizontaler Reflow.
 - r4: `visualisierungsmuster.html` um Vergleich und Entscheidungsweg erweitert; Kreislauf mit getrennter Leserichtung breit/schmal und sichtbarem Rücksprung. Mehrseitige Websites: `../psychoeducation-site-starter/`.
+- 11.10.2026: Vergleich (E) mit gemeinsamen Zeilen; Container-Schwellen und Figurbreiten in rem (Beziehungskarte ab 40 rem als Liste); Spannungsfeld (H) ohne Schlüssel für Bildteile und schmal in DOM-Reihenfolge; Kontinuum (J) ohne Pfeilzeichen; Druck: Figuren auf einer A4-Seite.
 - Erklärmuster G–K (06.10.2026): `erklaermuster.html` + `erklaermuster.css` (nach `visual-patterns.css` laden): Modell in Schritten, Spannungsfeld, Beziehungskarte, Kontinuum, Schichtenmodell. Regeln: Abschnitt «Visuelle Wissensvermittlung». Beispielinhalte fachlich freigegeben (06.10.2026).

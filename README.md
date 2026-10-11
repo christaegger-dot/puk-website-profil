@@ -2,7 +2,7 @@ Website-Profil der **Psychiatrischen Universitätsklinik Zürich (PUK)** für We
 
 ## Verbindlichkeit und Version
 
-**Fachstellen-Profil 2026.10** (Stand 06.10.2026) auf Basis des PUK Zürich Design Systems 1.10.1, Arbeitsstand PUK Website Kit 1.10.1-r4. Vier Ebenen – bei Widerspruch gilt die obere:
+**Fachstellen-Profil 2026.10.1** (Stand 11.10.2026) auf Basis des PUK Zürich Design Systems 1.10.1, Arbeitsstand PUK Website Kit 1.10.1-r4. Vier Ebenen – bei Widerspruch gilt die obere:
 
 | Ebene | Umfasst | Erkennbar an | Ändern darf |
 | --- | --- | --- | --- |
@@ -84,13 +84,14 @@ Die Fachstelle Angehörigenarbeit bietet Beratung und Psychoedukation für Angeh
 - **UI-Skala** für Komponenten: `type-display-1` 64 · `type-display-2` 48 · `type-title-1` 36 · `type-title-2` 28 · `type-title-3` 24 · `type-lead` 20 · `type-body` 17 · `type-body-sm` 15 · `type-caption` 13 px. Im CSS über die Kurzformen `font: var(--type-body)`.
 - **Lesen in Seitenschrift, Bedienen in UI-Grösse:** Was man liest, steht auf Websites in `web-body` (21 px Light, unter 760 px 19 px) – auch Lesetext in `Card`, `Alert`, `Accordion` und `List`; das geschieht innerhalb von `.puk-web-page` automatisch. Was man bedient (Buttons, Felder, Auswahl, Tabs), bleibt bei `type-body` (17 px). Beispiel: Karte «Lesen und Bedienen».
 - Satzschreibung, keine Versaltitel. Lauftext 45–75 ch (`web-content-measure` 68ch).
+- **Grade in rem** (Profilentscheid 11.10.2026): Auf Websites stehen alle Schriftgrade in `rem`, damit die Browser-Einstellung «Schriftgrösse» wirkt; bei Standardeinstellung bleibt jeder Grad gleich (21 px = 1,3125 rem). Rückfallschrift ohne «Rubik Variable». Details: Abschnitt «Typografie und Flächen».
 
 ## Raum und Layout
 
 - **4-px-Raster:** `space-1` … `space-24`. Karteninnenabstand `space-6`, Stapel `space-3`/`stack-default`, Abschnittsabstand `space-16` (`gutter-section`). Keine freien Pixelwerte.
 - **Website:** Container max. `web-container-max` (1200 px), Seitenrand `web-gutter-inline`, Abschnittsabstand `web-section-space`, Touch-Ziel `web-touch-target` (44 px) für Buttons, Navigation und Aktionslinks.
-- Kopf nicht fixiert; Skip-Link «Zum Hauptinhalt»; genau ein `main` und ein `h1`. Kartenraster `auto-fit minmax(260px,1fr)` als Liste ausgezeichnet (`.puk-web-card-list`). Unter 760 px stapelt der Kopf, die Navigation wird zum Raster mit Trennlinien.
-- Prüfen bei 320, 360, 768 und 1440 px, mit 200 % Textgrösse und per Tastatur.
+- Kopf nicht fixiert; Skip-Link «Zum Hauptinhalt»; genau ein `main` und ein `h1`. Kartenraster `auto-fit minmax(260px,1fr)` als Liste ausgezeichnet (`.puk-web-card-list`). Unter 760 px stapelt der Kopf, die Navigation wird zum zweispaltigen Raster mit Trennlinien; ab sieben Hauptpunkten öffnet dort die Schaltfläche «Menü» die Liste (Profilentscheid 11.10.2026).
+- Prüfen bei 320, 360, 768 und 1440 px, mit 200 % Textgrösse (Seitenzoom und Schriftgrösse), per Tastatur, mit reduzierter Bewegung und mit erzwungenen Farben.
 
 ## Flächen, Linien, Ecken
 
@@ -149,7 +150,7 @@ Die Fachstelle Angehörigenarbeit bietet Beratung und Psychoedukation für Angeh
 - `templates/website/psychoeducation-site-starter/` – **Startpunkt jeder mehrseitigen psychoedukativen Website**: Seitenvertrag `site.config.json` → `node tools/build.mjs` → `node tools/gate.mjs --production`. Navigation, `lang`, Titel, Meta, Favicon, Skip-Link, Absenderin und Zuständigkeitsverweis entstehen aus dem Vertrag, nie von Hand.
 - `ui_kits/website/` – klickbare Rekonstruktion der Referenzansichten des Original-Kits mit `qa.html` (zeigt auch Kit-Varianten, die für die Fachstelle nicht gelten).
 - `tokens/*.css` – die Quell-CSS unverändert.
-- **Projektpaket** `puk-website-profil-2026.10.zip` (separat ausgeliefert, ZIP-Dateien kann das Design-System nicht speichern): lauffähige Fassung mit aufgelösten Pfaden (`styles.css`, Schriften, Logos, React-Laufzeit für das UI-Kit), Leitlinien, React-Quellen mit Build-Skript und Anleitung `START-HIER.md`. Im Design-System selbst verweisen Vorlagen, Starter und UI-Kit auf diese Kit-Pfade und laufen erst im Paket.
+- **Projektpaket** `puk-website-profil-2026.10.1.zip` (separat ausgeliefert, ZIP-Dateien kann das Design-System nicht speichern): lauffähige Fassung mit aufgelösten Pfaden (`styles.css`, Schriften, Logos, React-Laufzeit für das UI-Kit), Leitlinien, React-Quellen mit Build-Skript und Anleitung `START-HIER.md`. Im Design-System selbst verweisen Vorlagen, Starter und UI-Kit auf diese Kit-Pfade und laufen erst im Paket.
 - **Veröffentlichen:** `node tools/export.mjs <zielordner> --production` im Starter schreibt eine eigenständige Website mit `css/site.css`, lokalen Schriften, `_headers` (Sicherheits-Header) und `sitemap.xml`.
 
 ## Offene Punkte
@@ -157,6 +158,13 @@ Die Fachstelle Angehörigenarbeit bietet Beratung und Psychoedukation für Angeh
 Entscheide der Fachstelle:
 
 - **Erster Durchlauf mit echtem Inhalt:** Material wird in einem späteren Schritt festgelegt.
+- **Fragen aus der Überarbeitung 2026.10.1** (11.10.2026; die Profilentscheide sind umgesetzt und gelten, bis die Fachstelle anders entscheidet):
+  1. **Impressum und Datenschutzerklärung:** eigene Seite je Website oder Link auf die Seiten der PUK? Wer liefert den Wortlaut (Kommunikation, Rechtsdienst)? Der Starter enthält nur das Feld `legal`; ohne Ziel blockiert das Produktionsgate.
+  2. **Vorlage H, Kurztext:** «… – der gestrichelte, gekippte Balken zeigt das; …» nennt einen Bildteil, der unter 560 px ausgeblendet ist. Der Wortlaut ist fachlich freigegeben (06.10.2026) und deshalb nicht geändert. Vorschlag: «Es geht nicht um ein Entweder-oder. Das Gleichgewicht verschiebt sich je nach Phase der Erkrankung; wichtig ist, dass keine Seite dauerhaft wegfällt.»
+  3. **Navigation ab sieben Punkten:** Der Starter zeigt breit alle Punkte und nur unter 760 px ein «Menü». Bestätigen – oder als Regel auf höchstens sechs Hauptpunkte kürzen?
+  4. **Druck:** Die Vertiefung steht im Ausdruck nach der Kennzeichnung (am Bildschirm davor), damit Bild und Kennzeichnung auf einer Seite bleiben. Einverstanden?
+  5. **404-Seite:** Musterwortlaut «Diese Seite gibt es nicht. Vielleicht ist die Adresse veraltet oder falsch geschrieben. Von der Übersicht aus finden Sie alle Seiten.» für alle Websites freigeben?
+  6. **Produktionsgate:** Fehlendes Impressum, fehlende Datenschutzerklärung und fehlende 404-Seite blockieren die Veröffentlichung. Fremdsprachige Quellentitel ohne `lang` sind nur ein Hinweis. Einverstanden?
 
 Arbeit am System:
 
@@ -165,6 +173,19 @@ Arbeit am System:
 
 ## Änderungsprotokoll
 
+- **11.10.2026 · Version 2026.10.1 · Befunde aus der Prüfung der Website «Depression: Informationen für Angehörige»** (Visualisierungs-Check, Bedienung und Barrierefreiheit, W3; Prüfbericht `templates/website/depression-angehoerige/PRUEFBERICHT.md`, Branch `website/depression-angehoerige-pruefung`). Die Fehler lagen in Starter, Komponenten und Vorlagen, nicht in der Website. Starter Build r4-8, Selbsttest 62/62 (vorher 53). Nachgemessen an einer Kopie der Website mit dem neuen Profil (Chromium, Tastatur, 320–1440 px, Schrift 100–200 %, reduzierte Bewegung, erzwungene Farben, Druck A4, Content-Security-Policy).
+  - **Blockierend:** Vertiefungen im Druck (W3-01): Interaktionsskript auf jeder Seite mit `details`, Rückfall `details::details-content` in `bundle.css` – gedruckt 11 von 11 statt 2 von 11, auch ohne Skript. Name des Logo-Links (BD-01, W3-07): «Psychiatrische Universitätsklinik Zürich – Startseite …», Gate-Prüfung `logo-name`, SR-05 angepasst, auch Vorlagen und UI-Kit. Bedienziele (BD-06, W3-04): Sprunglink und Lesepfade 44 px.
+  - **Wichtig:** Fokus mit erzwungenen Farben (BD-03): Umrandung in `CanvasText`; gemessen auf drei Seiten hat jeder Tab-Stopp ein Fokusbild (vorher keiner). Vergleich E (V-01): gemeinsame Zeilen (`subgrid`), Versatz 0 statt bis 96 px. Schrift in rem (BD-04, BD-11): Die Schriftgrösse-Einstellung wirkt; Container-Schwellen und Figurbreiten in rem, bei 200 % keine überlappenden Beschriftungen. Navigation (BD-05, W3-06): unter 760 px zweispaltig, ab sieben Punkten «Menü»; Kopf bei 360 px 270 statt 592 px. Vorlage H (V-06, V-07): ohne Schlüssel für Bildteile, schmal Pol A · Mitte · Pol B wie im DOM.
+  - **Optional und Hinweise:** Logo im Kontrastmodus mit dunklem Schema hell (BD-07). Figuren im Druck auf einer A4-Seite (W3-11): Grundschrift 13 px, kleinere Zeichnungen, Kennzeichnung vor der Vertiefung – geteilt 0 statt 8 von 11. Rückfallschrift ohne «Rubik Variable», Pfeile aus Muster J entfernt (W3-09): Die Seite «Behandlung und Verlauf» lädt 337 statt 424 kB. Silbentrennung präzisiert (Fliesstext `manual`, schmale Spalten `auto`). Export liefert nur verwendete Schriften (225 kB weniger). Feld `legal` für Impressum und Datenschutzerklärung in der Fusszeile (W3-05). 404-Seite im Seitenvertrag (`role: "not-found"`) und im Export (W3-08). Gate-Hinweis `lang-part` für fremdsprachige Quellentitel (BD-02). `gate.html` ohne Inline-Skript; Repository-Vorschau mit Content-Security-Policy für die Website-Ordner (Stamm-`_headers`, nur Repository).
+  - **Nebenbefund beim Prüfen:** Mit gesetzter `siteUrl` blockierte das Gate jeden Build, weil es den kanonischen Link als externe Laufzeitquelle wertete. Behoben, mit Selbsttest-Fall.
+  - **Profilentscheide** (begründet in den Abschnitten; Fragen unter «Offene Punkte»): Schriftgrade in rem und Rückfallschrift («Typografie und Flächen»); Menü ab sieben Hauptpunkten («Interaktionskonzept»); Druckreihenfolge und Silbentrennung («Technische Qualität»); Logo-Link-Name und Fokus mit erzwungenen Farben («Barrierefreiheit und Test», «Marke und Logo»); Vergleich nach gemeinsamen Zeilen, Spannungsfeld ohne Schlüssel («Visuelle Wissensvermittlung», «Visualisierung umsetzen»); Impressum, Datenschutzerklärung und 404-Seite blockieren in Produktion.
+  - **Übernahme für bestehende Websites** (`templates/website/<website>/` hat eigene Kopien von `tools/`, `starter.css` und `_headers`):
+    1. Aus dem Starter ersetzen: den ganzen Ordner `tools/` (mit `selftest/`, neu `gate.css` und `gate-browser.js`), `starter.css` und `gate.html`. `_headers` bleibt unverändert.
+    2. `site.config.json` ergänzen: `legal` mit `imprint` und `privacy` (`label`, `href`), die Seite `404` mit `"role": "not-found"` (Eintrag und `content/404.html` aus dem Starter), `assetVersion` auf `r4-8`.
+    3. Nichts zu kopieren: `components/bundle.css`, `components/interaktion.js`, `templates/website/longform/visual-patterns.css` und `erklaermuster.css` laden die Websites über relative Pfade; sie gelten nach dem Neubau.
+    4. `node tools/build.mjs` und `node tools/gate.mjs --selftest`; danach Kopf, Navigation, Druck und Figuren ansehen.
+    5. Inhalte prüfen (bauende Sitzung): Kurztexte, die «gleiche Höhe» oder schmal ausgeblendete Bildteile nennen; Schlüssel in Muster H; ← → in Muster J; englische Quellentitel (`lang-part`).
+    6. Repository-Vorschau: im Stamm-`_headers` einen Block mit dem Ordner der Website ergänzen (Vorlage dort).
 - **10.10.2026 · Gate-Korrektur für eigene Zeichnungen:** Das Gate verlangte bei `illustration` weiterhin einen Platzhalter- oder Bildquellenstatus und blockierte damit eigene Zeichnungen nach Muster D (Befund beim Bau der Borderline-Website, Abbildung «Momentaufnahmen»). Korrigiert: Eine Illustration mit `.puk-vis-scene` gilt als eigene Zeichnung; Kennzeichnung und Freigabe im Plan prüft das Gate wie bei jeder Figur. Starter Build r4-7, Selbsttest 53/53.
 - **10.10.2026 · Bildsprache: ein Bild, eine Idee:** Anlass: Die Fachstelle hat die Abbildung «Die Brücke mit Geländer» der Borderline-Website gestrichen; sie wirkte wie ein Bauplan und war nur mit einer Liste zu entschlüsseln. Das Profil wollte warme, organische Bilder, hatte aber Lücken: Die Diagramm-Regeln galten für alle Muster, Muster D erlaubte ohne fremde Bildquelle nur einen Platzhalter, und keine Prüfung fragte nach der Wirkung. Neu: Abschnitt «Ein Bild, eine Idee» (acht Regeln, Freundin-Test), Abschnitt «Metaphern und Illustrationen zeichnen», Diagramm-Regeln gelten für Metaphern nur, soweit sie nicht widersprechen; eigene Zeichnungen ohne fremde Quelle zulässig; Planfeld `resonance` (Wirkung) mit Gate-Prüfung (Entwurf: Hinweis, Produktion: blockiert); Visualisierungs-Check um drei Punkte erweitert (15–17); R2 mit Teil 2 «Bildsprache und Wirkung je Figur»; Muster D als Beispielszene «Ein freier Abend» mit `.puk-vis-scene` (Musterinhalt, fachliche Freigabe ausstehend). Starter Build r4-6, Selbsttest 52/52.
 - **09.10.2026 · Pre-Release-Audits:** Neuer Abschnitt mit drei Prüfaufträgen für den fertigen Release-Kandidaten: R1 Profil-Audit (Marke, Farben, Schrift, Navigation, Komponenten, Zuständigkeit), R2 Visualisierung und Laienverständlichkeit (Matrix je Figur, Lesetest je Abschnitt aus Sicht einer belasteten angehörigen Person, «Was Sie tun können»), R3 Freigabe-Audit mit «Go» oder «No-Go». Prüfbericht-Vorlage mit Zeilen R1 bis R3; das Produktionsgate prüft sie (Starter Build r4-5, Selbsttest 51/51).

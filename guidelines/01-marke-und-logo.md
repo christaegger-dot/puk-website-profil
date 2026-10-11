@@ -18,7 +18,8 @@ Grundregeln der Markenanwendung: Schwarz auf Weiss ist Standard, Weiss auf Blau 
 Das Logo «Perspektiven», statisch und positiv: Schwarz auf Weiss als Standardanwendung.
 
 - **Einsatz:** Auf Websites und in Browser-Anwendungen immer im Seitenkopf (Profilentscheid 08.10.2026).
-- **Pflicht:** `PUK_Logo_statisch_positiv_de.svg`; in der Regel oben links; Wortmarke nie ohne Symbol.
+- **Pflicht:** `PUK_Logo_statisch_positiv_de.svg`; in der Regel oben links; Wortmarke nie ohne Symbol. Der Name des Logo-Links beginnt mit dem Logotext: «Psychiatrische Universitätsklinik Zürich – Startseite …» (WCAG 2.5.3, Profilentscheid 11.10.2026).
+- **Erzwungene Farben:** Im Windows-Kontrastmodus mit dunklem Schema blieb das dunkle Logo auf Schwarz kaum sichtbar (1,3:1). `bundle.css` kehrt es dort hell (`filter: invert(1)`, ohne Farbwert); im hellen Schema bleibt es unverändert (Profilentscheid 11.10.2026).
 - **Vermeiden:** Nachgezeichnete oder rekonstruierte Logos.
 
 ## Logo animiert

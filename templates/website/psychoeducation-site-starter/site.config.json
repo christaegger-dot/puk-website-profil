@@ -2,7 +2,7 @@
   "$comment": "PUK Website Kit 1.10.1-r4 · abgeleitet – Seitenvertrag des Psychoedukations-Starters. Synthetische Musterwerte. Pflichtfelder und Regeln: README.md in diesem Ordner. Nach jeder Änderung: node tools/build.mjs, danach node tools/gate.mjs (Entwurf) bzw. node tools/gate.mjs --production.",
   "kitRevision": "PUK Website Kit 1.10.1-r4 · abgeleitet",
   "canonicalSource": "PUK Zürich Design System 1.10.1 (unverändert)",
-  "assetVersion": "r4-6",
+  "assetVersion": "r4-8",
   "siteTitle": "Psychoedukation verstehen – Musterwebsite",
   "shortDescription": "Synthetische Musterwebsite mit drei psychoedukativen Referenzseiten und Seitenvorlage. Keine fachlichen Aussagen, keine realen Kontakte.",
   "language": "de-CH",
@@ -39,6 +39,17 @@
     "email": "angehoerigenarbeit@pukzh.ch",
     "status": "freigegeben",
     "statusLabel": "Freigegeben"
+  },
+  "legal": {
+    "$comment": "Prüfbefund W3-05 (11.10.2026): Impressum und Datenschutzerklärung stehen in jeder Fusszeile. href zeigt auf eine eigene Seite des Seitenvertrags oder auf die geprüfte Seite der PUK; Ziel und Wortlaut legt die Fachstelle mit der PUK fest. Leeres href: Platzhalter in der Fusszeile, das Produktionsgate blockiert.",
+    "imprint": {
+      "label": "Impressum",
+      "href": ""
+    },
+    "privacy": {
+      "label": "Datenschutz",
+      "href": ""
+    }
   },
   "pages": [
     {
@@ -270,6 +281,30 @@
           "source": "–",
           "alternative": "–",
           "reason": "Platzhalter: vor dem Bau durch den echten Visualisierungsplan ersetzen.",
+          "approvalStatus": "entfällt"
+        }
+      ]
+    },
+    {
+      "id": "404",
+      "role": "not-found",
+      "title": "Seite nicht gefunden",
+      "href": "404.html",
+      "navLabel": null,
+      "status": "published",
+      "primaryTask": "Von einer nicht vorhandenen Adresse zur Übersicht zurückfinden",
+      "description": "Diese Seite gibt es nicht. Von der Übersicht aus finden Sie alle Seiten.",
+      "sensitiveTopics": [],
+      "visualPlan": [
+        {
+          "id": "v-404-text",
+          "section": "Seite nicht gefunden",
+          "goal": "Zur Übersicht zurückfinden",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: ein Hinweis und ein Link, nichts zu erklären.",
           "approvalStatus": "entfällt"
         }
       ]

@@ -56,3 +56,10 @@ Ecken standardmässig eckig; 2–4 px nur für kleine Bedienelemente.
 - **Ein Schwarz:** Text auf Websites ist `text-default` (#222222); `puk-web-text` (#000000) und `puk-web-field-text` werden nicht verwendet. Die Pflichtzeile der Karte «Web-Typografie» oben ist damit für neue Websites aufgehoben.
 - **Lesen in Seitenschrift, Bedienen in UI-Grösse:** Lesetext (auch in Card, Alert, Accordion, List) in `web-body`; Bedienelemente in `type-body`.
 - **Button-Radius:** einheitlich `radius-sm` (3 px); `web-radius-btn*` sind Messwerte des Bestandsauftritts und werden nicht verwendet.
+
+## Profilentscheid 11.10.2026: Schriftgrade in rem
+
+- **Entscheid:** Auf Websites stehen alle Schriftgrade in `rem` statt `px` (`bundle.css`, Block «Prüfbefunde 11.10.2026»). Bei Standardeinstellung (1 rem = 16 px) bleibt jeder Grad gleich: `web-size-body` 21 px = 1,3125 rem, `size-body` 17 px = 1,0625 rem. Die Quellwerte in `tokens/*.css` und `tokens.json` bleiben als Messwerte stehen und werden überschrieben.
+- **Grund:** Befunde BD-04 und BD-11 der Website «Depression»: Mit px-Graden wirkte die Browser-Einstellung «Schriftgrösse» nicht (0 von 30 Stichproben verändert); wer sie nutzt, bekam keinen grösseren Text.
+- **Folgen:** Abstände bleiben in px. Fluide Titel (`web-size-h*-fluid`) wachsen nur bis zu ihrem Höchstwert mit. Container-Abfragen und Höchstbreiten der Figuren stehen ebenfalls in rem (Abschnitt «Visualisierung umsetzen»). Im Druck setzt `bundle.css` die Grundschrift auf 13 px; alle Grade schrumpfen gleichmässig.
+- **Rückfallschrift:** `--font-core` ist auf Websites `"Rubik", Helvetica, sans-serif` – ohne «Rubik Variable». Zeichen, die in den statischen Schnitten fehlen (z. B. ← →), kommen aus der Systemschrift statt 110 kB nachzuladen.
