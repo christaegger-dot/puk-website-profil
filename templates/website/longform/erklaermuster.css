@@ -28,7 +28,7 @@
 @media (prefers-reduced-motion:no-preference){.puk-vis-build [data-step]{transition:opacity var(--dur-base,200ms) var(--ease-standard,ease)}}
 
 /* H · Spannungsfeld: zwei berechtigte Pole und was das Gleichgewicht hält */
-.puk-vis-balance{max-width:860px;margin-inline:auto}
+.puk-vis-balance{max-width:53.75rem;margin-inline:auto}
 .puk-vis-balance__beam{display:block;width:100%;height:auto;margin:0}
 .puk-vis-balance__grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1fr);gap:var(--space-6);align-items:start}
 .puk-vis-balance__pole{min-width:0;padding-top:var(--space-4);border-top:4px solid var(--puk-blue-100)}
@@ -39,7 +39,7 @@
 .puk-vis-balance__hold{min-width:0;padding:var(--space-4) var(--space-5);background:var(--ui-field);border:2px solid var(--puk-blue-100)}
 
 /* I · Beziehungskarte: Nähe als Abstand, Status als Linienart */
-.puk-vis-net{position:relative;max-width:640px;aspect-ratio:1;margin:0 auto}
+.puk-vis-net{position:relative;max-width:40rem;aspect-ratio:1;margin:0 auto}
 .puk-vis-net>svg{position:absolute;inset:0;width:100%;height:100%}
 .puk-vis-net__ring{margin:0;padding:0;list-style:none}
 .puk-vis-net__ring li,.puk-vis-net__me{position:absolute;left:calc(var(--x,50) * 1%);top:calc(var(--y,50) * 1%);transform:translate(-50%,-50%);width:25%;box-sizing:border-box;padding:var(--space-2);hyphens:auto;background:var(--puk-white);border:2px solid var(--puk-blue-100);font:var(--type-body-sm);line-height:1.25;color:var(--text-default);text-align:center;overflow-wrap:break-word}
@@ -78,18 +78,14 @@
 .puk-vis-layers__art{position:absolute;z-index:1;left:4%;top:0;bottom:0;width:32%;pointer-events:none}
 .puk-vis-layers__art svg{width:100%;height:100%;display:block}
 
-@container (max-width:560px){
+/* Schwellen in rem (Prüfbefund BD-04, 11.10.2026): 35 rem = 560 px bei Standardschrift; bei grösserer Schrift früher Listenansicht. */
+@container (max-width:35rem){
   .puk-vis-build{grid-template-columns:minmax(0,1fr);gap:var(--space-5)}
   .puk-vis-build__art{max-width:280px}
   .puk-vis-build__status{margin-left:0;flex-basis:100%}
   .puk-vis-balance__beam{display:none}
+  /* Keine Umsortierung: schmal Pol A · Mitte · Pol B wie im DOM und in der Leitlinie (Prüfbefund V-07, 11.10.2026; vorher stand die Mitte am Schluss). */
   .puk-vis-balance__grid{grid-template-columns:minmax(0,1fr)}
-  .puk-vis-balance__hold{order:3}
-  .puk-vis-net{aspect-ratio:auto;max-width:none;display:grid;gap:var(--space-5)}
-  .puk-vis-net>svg{display:none}
-  .puk-vis-net__me{position:static;transform:none;width:auto;aspect-ratio:auto;border-radius:0;padding:var(--space-3);text-align:left;display:block}
-  .puk-vis-net__ring{display:grid;gap:var(--space-2);padding-left:var(--space-4);border-left:2px solid var(--puk-blue-100)}
-  .puk-vis-net__ring li{position:static;transform:none;width:auto;text-align:left}
   .puk-vis-cont__axis{display:none}
   .puk-vis-cont__zones{grid-template-columns:minmax(0,1fr)}
   .puk-vis-cont__zones>li{border-top:0;border-left:var(--w,2px) solid var(--puk-blue-100);padding:0 0 0 var(--space-4)}
@@ -99,9 +95,24 @@
 }
 .puk-vis-btn[hidden]{display:none}
 .puk-vis-net__ring h3{position:absolute;left:50%;top:calc((50 - var(--r)) * 1%);transform:translate(-50%,-50%);width:auto;height:auto;clip:auto;overflow:visible;margin:0;padding:0 6px;background:var(--puk-white);font:var(--type-caption);color:var(--text-muted);white-space:nowrap}
-@container (max-width:560px){.puk-vis-net__ring h3{position:static;transform:none;padding:0;background:none;white-space:normal}}
+/* I · Beziehungskarte schon unter 40 rem (640 px) als Liste: In der Kreisansicht brachen die Einträge sonst mitten im Wort
+   (Prüfbefund BD-04, 11.10.2026: «Angehörigenarb/eit» bei 640 px). */
+@container (max-width:40rem){
+  .puk-vis-net{aspect-ratio:auto;max-width:none;display:grid;gap:var(--space-5)}
+  .puk-vis-net>svg{display:none}
+  .puk-vis-net__me{position:static;transform:none;width:auto;aspect-ratio:auto;border-radius:0;padding:var(--space-3);text-align:left;display:block}
+  .puk-vis-net__ring{display:grid;gap:var(--space-2);padding-left:var(--space-4);border-left:2px solid var(--puk-blue-100)}
+  .puk-vis-net__ring li{position:static;transform:none;width:auto;text-align:left}
+  .puk-vis-net__ring h3{position:static;transform:none;padding:0;background:none;white-space:normal}
+}
 .puk-vis-net__ring ul{margin:0;padding:0;list-style:none}
-@container (max-width:560px){.puk-vis-net__ring ul{display:grid;gap:var(--space-2)}}
+@container (max-width:40rem){.puk-vis-net__ring ul{display:grid;gap:var(--space-2)}}
 
 /* SVG-Linien und -Flächen über Tokens, damit das Theme «Hoher Kontrast» greift */
 .puk-vis-ln{fill:none;stroke:var(--puk-blue-100);stroke-width:2;vector-effect:non-scaling-stroke;stroke-linecap:round;stroke-linejoin:round}.puk-vis-ln--thin{stroke-width:1.5}.puk-vis-ln--paper{fill:var(--puk-white)}.puk-vis-ln--water,.puk-vis-water{fill:var(--puk-blue-25)}.puk-vis-paper{fill:var(--puk-white)}.puk-vis-fill{fill:var(--puk-blue-100)}.puk-vis-mark{fill:var(--puk-white);stroke:var(--puk-blue-100);stroke-width:2}.puk-vis-marktext{fill:var(--text-default)}
+/* Druck (Prüfbefund W3-11, 11.10.2026): Zeichnungen kleiner, damit eine Figur auf eine A4-Seite passt. */
+@media print{
+  .puk-vis-net{max-width:480px}
+  .puk-vis-build__art{max-width:240px}
+  .puk-vis-balance{max-width:720px}
+}

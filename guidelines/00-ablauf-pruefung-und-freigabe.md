@@ -11,7 +11,7 @@ Ein Ablauf für alle Websites der Fachstelle – von der Planung bis zur Veröff
 | 2 · W2 Gesamtkohärenz | Website als Ganzes: Ziel, Aufbaulogik, Begriffe, Quereinstieg, Lücken | «Gesamtkohärenz und Aufbau» | Strukturänderungen **vor** Stufe 3 umsetzen |
 | 3 · S Sprach-Review | Verständlichkeit und Ton des feststehenden Textes | «Sprache und Ton» | freigegebene Textfassung |
 | 4 · Visualisierungs-Check | Prüffrage, Plan pro Abschnitt, drei Ebenen, Ansatzpunkte, Kartenraster, Bildsprache und Wirkung, Textalternativen, Theme «Hoher Kontrast» | «Visualisierung umsetzen» | Tabelle mit Ergebnis und Beleg je Punkt im Prüfbericht |
-| 5 · Bedienung und Barrierefreiheit | Breiten 320–1440 px, 200 % Text, Tastatur, Touch, reduzierte Bewegung, Screenreader | «Barrierefreiheit und Test», «Interaktionskonzept» | Protokoll, mindestens zwei reale Screenreader-Läufe |
+| 5 · Bedienung und Barrierefreiheit | Breiten 320–1440 px, 200 % Text (Seitenzoom und Schriftgrösse), Tastatur, Touch, reduzierte Bewegung, erzwungene Farben, Druck, Screenreader | «Barrierefreiheit und Test», «Interaktionskonzept» | Protokoll, mindestens zwei reale Screenreader-Läufe |
 | 6 · W3 Code-Review | Funktion, Barrierefreiheit, Datenschutz, Sicherheit, Performance, Darstellung und Druck, Wartbarkeit | «Technische Qualität» | Befundliste; Umsetzung erst nach Freigabe |
 | 6a · R1 und R2 Pre-Release-Audits | Release-Kandidat gegen das Profil prüfen (R1) und aus Sicht der Lesenden: Figuren, Lesetest, «Was Sie tun können» (R2) | «Pre-Release-Audits» | Befunde mit Beleg; Korrekturen vor R3 |
 | 7 · R3 Freigabe-Audit und Produktionsfreigabe | R3 mit Ergebnis «Go»; `node tools/gate.mjs --production` ohne blockierende Befunde – setzt einen vollständigen Prüfbericht voraus; fachliche Freigabe dokumentiert | dieser Abschnitt | Freigabe mit Datum und Person |
@@ -52,7 +52,7 @@ Committe nur den Prüfbericht.
 
 ## Was das Gate prüft – und was nicht
 
-Das Gate des Psychoedukations-Starters (`node tools/gate.mjs`, mit `--production` vor der Veröffentlichung) blockiert unter anderem: fehlenden oder unvollständigen Prüfbericht (Produktion; Stufen 1 bis 6 und R1 bis R3), fehlende oder versteckte Absenderin, Telefonnummern, `tel:`-Links und Notfallblöcke, ungeprüften Zuständigkeitsverweis, Platzhalter ohne Freigabe, nicht freigegebene Visualisierungen, fehlenden Visualisierungsplan. Hinweise (keine Blocker) gibt es für «ß», falsche Anführungszeichen, deutsche Rechtsbegriffe und etikettierende Bezeichnungen.
+Das Gate des Psychoedukations-Starters (`node tools/gate.mjs`, mit `--production` vor der Veröffentlichung) blockiert unter anderem: fehlenden oder unvollständigen Prüfbericht (Produktion; Stufen 1 bis 6 und R1 bis R3), fehlende oder versteckte Absenderin, Telefonnummern, `tel:`-Links und Notfallblöcke, ungeprüften Zuständigkeitsverweis, Platzhalter ohne Freigabe, nicht freigegebene Visualisierungen, fehlenden Visualisierungsplan, fehlendes Impressum, fehlende Datenschutzerklärung und 404-Seite (Produktion), mehr als sechs Hauptpunkte ohne Menü, einen Logo-Link, dessen Name nicht mit dem Logotext beginnt, und Vertiefungen ohne Interaktionsskript (Druck). Hinweise (keine Blocker) gibt es für fremdsprachige Quellentitel ohne `lang`, «ß», falsche Anführungszeichen, deutsche Rechtsbegriffe und etikettierende Bezeichnungen.
 
 **Abdeckungsgrenze:** Automatisierte Prüfungen ersetzen keinen realen Tastatur- und Screenreader-Test, keine fachliche Prüfung und keine Datenschutz-, Inhalts- oder Betriebsfreigabe. Sie werden nie als solche bezeichnet.
 

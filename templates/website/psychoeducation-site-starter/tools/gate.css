@@ -1,0 +1,11 @@
+/* Gate-Bericht im Browser (gate.html). Ausgelagert, damit die Seite mit der Content-Security-Policy aus _headers läuft (11.10.2026). */
+body{margin:0;font-family:var(--font-core);color:var(--text-default);background:var(--puk-white)}
+.g{max-width:1200px;margin:0 auto;padding:32px 20px 64px}
+h1{font:var(--type-title-2);margin:0 0 8px}h2{font:var(--type-title-3);margin:40px 0 12px}h3{font:var(--type-body);font-weight:var(--fw-medium);margin:24px 0 8px}
+p{font:var(--type-body-sm);max-width:80ch}
+.wrap{overflow-x:auto;border:1px solid var(--border-hairline)}.wrap:focus-visible{outline:none;box-shadow:var(--focus-ring)}
+table{border-collapse:collapse;width:100%;font:var(--type-caption)}caption{text-align:left;padding:8px 12px;font:var(--type-body-sm);font-weight:var(--fw-medium)}
+th,td{border-top:1px solid var(--border-hairline);padding:6px 12px;text-align:left;vertical-align:top}thead th{background:var(--surface-structure)}
+.block td:first-child{color:var(--text-danger);font-weight:var(--fw-medium)}.fail td:last-child{color:var(--text-danger);font-weight:var(--fw-medium)}
+#summary{font:var(--type-body);font-weight:var(--fw-medium)}
+a{color:var(--text-link)}a:hover{color:var(--text-link-hover)}

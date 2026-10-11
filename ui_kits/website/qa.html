@@ -32,7 +32,7 @@ th,td{border-bottom:1px solid var(--border-hairline);padding:4px 8px;text-align:
 <h1 style="margin-top:24px">Interaktionen</h1>
 <table><thead><tr><th>Prüfung</th><th>Erwartet</th><th>Ergebnis</th></tr></thead><tbody id="func"></tbody></table>
 <div id="stage"></div>
-<script src="../../templates/website/psychoeducation-site-starter/tools/contract.js?v=r4-7"></script>
+<script src="../../templates/website/psychoeducation-site-starter/tools/contract.js?v=r4-8"></script>
 <script>
 const VIEWS=['start','situationsnavigator','kontaktwegweiser','gespraechshilfe','angebotsnavigator','grundlagenkapitel','handlungsuebersicht','transfer-erholung','beispiel-visualisierung','visualisierungsmuster','site:index','site:beziehungen-verstehen','site:behandlung-verstehen','site:unterstuetzung-finden'];
 const RUNS=[];
@@ -172,7 +172,7 @@ function grow(name,exp,got,ok){const tr=document.createElement('tr');tr.classNam
 async function gateRuns(){const C=window.PUKSiteContract;const {cfg,files,exists}=await C.loadSite(SITE);
   const d=C.gate(cfg,files,{mode:'draft',exists});const p=C.gate(cfg,files,{mode:'production',exists});
   grow('Gate Entwurf: blockierende Befunde','0',String(d.blocks));
-  const need=['placeholder-approval','visual-approval']; /* Absenderin freigegeben und Zuständigkeitsverweis geprüft (Fachstelle Angehörigenarbeit, 06.10.2026); sie blockieren nicht mehr – der Selbsttest belegt die Prüfungen weiterhin */grow('Gate Produktion blockiert genau die offenen Freigaben',need.join(', '),[...new Set(p.findings.filter(x=>x.level==='block').map(x=>x.id))].sort().join(', '));
+  const need=['placeholder-approval','visual-approval']; /* Absenderin freigegeben und Zuständigkeitsverweis geprüft (Fachstelle Angehörigenarbeit, 06.10.2026); sie blockieren nicht mehr – der Selbsttest belegt die Prüfungen weiterhin. Impressum und Datenschutz: eigene Seite im Starter (11.10.2026) */grow('Gate Produktion blockiert genau die offenen Freigaben',need.join(', '),[...new Set(p.findings.filter(x=>x.level==='block').map(x=>x.id))].sort().join(', '));
   for(const r of C.selftest(cfg,files,{exists}))grow('Selbsttest: '+r.name,r.expected,r.got,r.ok);}
 function row(name,exp,got,doc){const tr=document.createElement('tr');if(doc&&!doc.hasFocus()){got='nicht prüfbar (Dokument ohne Fokus)';tr.className='na';}else tr.className=exp===got?'ok':'bad';tr.innerHTML=`<td>${name}</td><td>${exp}</td><td>${got}</td>`;document.getElementById('func').appendChild(tr);return exp===got;}
 async function functional(){
