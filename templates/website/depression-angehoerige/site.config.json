@@ -2,7 +2,7 @@
   "$comment": "Website «Depression: Informationen für Angehörige» der Fachstelle Angehörigenarbeit PUK. Seitenvertrag nach dem Psychoedukations-Starter (PUK Website Kit 1.10.1-r4 · abgeleitet). Plan freigegeben von der Fachstelle am 10.10.2026; alle Texte sind Musterentwurf bis zur fachlichen Prüfung. Nach jeder Änderung: node tools/build.mjs, vor Veröffentlichung node tools/gate.mjs --production.",
   "kitRevision": "PUK Website Kit 1.10.1-r4 · abgeleitet",
   "canonicalSource": "PUK Zürich Design System 1.10.1 (unverändert)",
-  "assetVersion": "r4-6",
+  "assetVersion": "r4-8",
   "siteTitle": "Depression: Informationen für Angehörige",
   "shortDescription": "Informationen für Angehörige von Erwachsenen mit Depression: die Erkrankung verstehen, die eigene Belastung einordnen, begleiten, für sich sorgen, Rechte und Unterstützung im Kanton Zürich.",
   "language": "de-CH",
@@ -39,6 +39,17 @@
     "email": "angehoerigenarbeit@pukzh.ch",
     "status": "freigegeben",
     "statusLabel": "Freigegeben"
+  },
+  "legal": {
+    "$comment": "Entscheid der Fachstelle 11.10.2026: eigene Seite «Impressum und Datenschutz»; die Website ist ein Angebot der Fachstelle Angehörigenarbeit, kein offizielles Angebot der Psychiatrischen Universitätsklinik Zürich. Die Angaben zum Datenschutz beschreiben, was der Code tut; bei Änderungen am Code mitprüfen.",
+    "imprint": {
+      "label": "Impressum",
+      "href": "impressum-datenschutz.html#impressum"
+    },
+    "privacy": {
+      "label": "Datenschutz",
+      "href": "impressum-datenschutz.html#datenschutz"
+    }
   },
   "pages": [
     {
@@ -325,7 +336,7 @@
         },
         {
           "id": "v-is-was-belastet",
-          "section": "02 Was am meisten belastet",
+          "section": "02 Was besonders belastet",
           "sectionId": "was-belastet",
           "goal": "Die häufigsten Belastungen kennen",
           "format": "text",
@@ -457,7 +468,7 @@
           "sectionId": "eltern",
           "goal": "Das Hin-und-hergerissen-Sein zwischen Unterstützen und Loslassen als zwei berechtigte Anliegen verstehen",
           "format": "tension-field",
-          "statement": "Skizze: eine Waage. Links «Ich will helfen. Ich sehe doch, wie schlecht es ihr geht.», rechts «Er ist erwachsen. Er entscheidet selbst.», am Drehpunkt «Ich bin da, wenn du mich brauchst, und frage, bevor ich etwas unternehme.» Ein gestrichelter, gekippter Balken zeigt, dass sich die Mitte verschieben kann.",
+          "statement": "Skizze: eine Waage. Links «Ich will helfen. Ich sehe doch, wie schlecht es ihm geht.», rechts «Er ist erwachsen. Er entscheidet selbst.», am Drehpunkt «Ich bin da, wenn du mich brauchst, und sage dir, bevor ich etwas unternehme.» Ein gestrichelter, gekippter Balken zeigt, dass sich die Mitte verschieben kann.",
           "understood": "Das Hin-und-hergerissen-Sein ist kein Fehler, sondern bildet zwei berechtigte Anliegen ab. Die Waage zeigt beide zugleich, ein Text nur nacheinander.",
           "resonance": "Entlastung: «Mein Hin und Her ist kein Versagen; beides ist richtig.»",
           "source": "Eigene didaktische Darstellung; Befunde nach Kika et al. 2026, Greally et al. 2025 und Johansson et al. 2014",
@@ -648,7 +659,7 @@
           "sectionId": "netz",
           "goal": "Erkennen, dass Unterstützung auf mehrere Menschen und Stellen verteilt werden kann",
           "format": "relationship-map",
-          "statement": "Drei Kreise um «Sie»: nah (Familie, Freundinnen und Freunde), Umfeld (Arbeit, Nachbarschaft, Angehörigengruppe), fachliche Unterstützung (Hausarztpraxis, Fachstelle Angehörigenarbeit, Selbsthilfe); durchgezogen = besteht, gestrichelt = wäre möglich.",
+          "statement": "Drei Kreise um «Sie»: nah (eine Schwester oder ein Bruder, eine Freundin), Umfeld (Chor oder Verein, Arbeitgeberin oder Arbeitgeber, Nachbarschaft), fachliche Unterstützung (Hausarztpraxis, Fachstelle Angehörigenarbeit, Angehörigengruppe); durchgezogen = besteht, gestrichelt = wäre möglich.",
           "understood": "Unterstützung lässt sich auf mehrere Menschen und Stellen verteilen. Der Abstand zur Mitte macht Nähe sichtbar, eine Liste nicht.",
           "resonance": "Entlastung: «Ich trage nicht allein; es gibt mehr Menschen und Stellen, als ich gerade denke.»",
           "source": "Eigene didaktische Darstellung (Muster I)",
@@ -701,7 +712,7 @@
       "navLabel": "Rechte und Angebote",
       "status": "published",
       "primaryTask": "Wissen, was man erfahren und mitteilen darf, welche Rechte man hat und wo es Unterstützung gibt",
-      "description": "Schweigepflicht und Information, Bezugsperson und Patientenverfügung, Arbeit und Geld sowie Angebote für Angehörige von Menschen mit Depression im Kanton Zürich.",
+      "description": "Schweigepflicht und Information, Bezugsperson und Patientenverfügung sowie Angebote für Angehörige von Menschen mit Depression im Kanton Zürich.",
       "sensitiveTopics": [
         "selbstgefaehrdung",
         "zwang"
@@ -734,20 +745,8 @@
           "approvalStatus": "entfällt"
         },
         {
-          "id": "v-ra-arbeit-geld",
-          "section": "03 Arbeit und Geld",
-          "sectionId": "arbeit-geld",
-          "goal": "Die eigenen Ansprüche bei der Arbeit und bei Sozialversicherungen kennen",
-          "format": "text",
-          "statement": "–",
-          "source": "–",
-          "alternative": "–",
-          "reason": "Text ist klarer: vier Regelungen als Begriffsliste.",
-          "approvalStatus": "entfällt"
-        },
-        {
           "id": "v-ra-angebote",
-          "section": "04 Unterstützung für Angehörige",
+          "section": "03 Unterstützung für Angehörige",
           "sectionId": "angebote",
           "goal": "Passende Angebote für sich finden",
           "format": "text",
@@ -770,8 +769,68 @@
           "approvalStatus": "entfällt"
         }
       ]
+    },
+    {
+      "id": "impressum-datenschutz",
+      "title": "Impressum und Datenschutz",
+      "href": "impressum-datenschutz.html",
+      "navLabel": null,
+      "status": "published",
+      "primaryTask": "Wissen, wer die Website herausgibt und welche Daten beim Besuch anfallen",
+      "description": "Herausgeberin, Kontakt und Datenschutz: keine Cookies, keine Auswertung, keine Dienste anderer Anbieter beim Lesen.",
+      "sensitiveTopics": [],
+      "visualPlan": [
+        {
+          "id": "v-imp-text",
+          "section": "Impressum",
+          "sectionId": "impressum",
+          "goal": "Herausgeberin und Kontakt finden",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: wenige Angaben, keine Beziehung, die eine Darstellung erklären müsste.",
+          "approvalStatus": "entfällt"
+        },
+        {
+          "id": "v-ds-text",
+          "section": "Datenschutz",
+          "sectionId": "datenschutz",
+          "goal": "Wissen, welche Daten anfallen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: einzelne Angaben zu Daten, kein Ablauf und keine Beziehung.",
+          "approvalStatus": "entfällt"
+        }
+      ]
+    },
+    {
+      "id": "404",
+      "role": "not-found",
+      "title": "Seite nicht gefunden",
+      "href": "404.html",
+      "navLabel": null,
+      "status": "published",
+      "primaryTask": "Von einer nicht vorhandenen Adresse zur Übersicht zurückfinden",
+      "description": "Diese Seite gibt es nicht. Von der Übersicht aus finden Sie alle Seiten.",
+      "sensitiveTopics": [],
+      "visualPlan": [
+        {
+          "id": "v-404-text",
+          "section": "Seite nicht gefunden",
+          "goal": "Zur Übersicht zurückfinden",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Text ist klarer: ein Hinweis und ein Link, nichts zu erklären.",
+          "approvalStatus": "entfällt"
+        }
+      ]
     }
   ],
-  "siteUrl": "",
+  "siteUrl": "https://depression-angehoerige.netlify.app",
   "interactionScript": "../../../components/interaktion.js"
 }

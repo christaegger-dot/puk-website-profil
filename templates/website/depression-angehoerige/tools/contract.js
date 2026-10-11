@@ -8,10 +8,24 @@
 })(typeof self !== 'undefined' ? self : this, function () {
 'use strict';
 const VERSION = 'PUK Website Kit 1.10.1-r4 · abgeleitet';
-const BUILD = 'r4-7';
+const BUILD = 'r4-8';
 const FORMATS = ['text', 'figure', 'process', 'cycle', 'comparison', 'decision', 'illustration', 'stepwise-model', 'tension-field', 'relationship-map', 'continuum', 'layer-model'];
-/* Interaktive Komponenten und Erklärmuster G brauchen components/interaktion.js (HTML-Fassungen ohne React). */
+/* Interaktive Komponenten und Erklärmuster G brauchen components/interaktion.js (HTML-Fassungen ohne React).
+   Prüfbefund W3-01 (11.10.2026): auch jede Seite mit aufklappbarer Vertiefung (details) – das Skript öffnet sie vor dem Druck. */
 const INTERACTIVE = ['data-puk-accordion', 'data-puk-tabs', 'data-puk-disclosure', 'data-puk-dialog-open', 'data-vis-build'];
+const DETAILS_RE = /<details[\s>]/i;
+const needsScript = html => INTERACTIVE.some(a => html.includes(a)) || DETAILS_RE.test(html);
+/* Interaktionskonzept: bis sechs Hauptpunkte sichtbar; darüber baut der Starter unter 760 px ein «Menü» (Dropdown-Menü, Profilentscheid 11.10.2026). */
+const NAV_MAX = 6;
+/* Prüfbefund BD-01 (11.10.2026, WCAG 2.5.3): Der Name des Logo-Links beginnt mit dem sichtbaren Logotext (sender.institution) und nennt danach das Ziel. */
+const logoName = cfg => `${(cfg.sender || {}).institution || ''} – Startseite ${cfg.siteTitle || ''}`.trim();
+/* Prüfbefund W3-08 (11.10.2026): Eine Seite mit role «not-found» ist die 404-Seite – ohne Navigation, Sitemap und kanonischen Link, nicht von der Startseite verlinkt. */
+const isNotFound = p => !!p && p.role === 'not-found';
+/* Prüfbefund W3-05 (11.10.2026): Impressum und Datenschutzerklärung in der Fusszeile, Ziele aus site.config.json › legal. */
+const LEGAL = [['imprint', 'Impressum'], ['privacy', 'Datenschutzerklärung']];
+/* Prüfbefund BD-02 (11.10.2026): Quellenangaben mit fremdsprachigem Titel brauchen lang (WCAG 3.1.2). Stichwortprüfung, nur Hinweis. */
+const EN_WORDS = new Set('the of and for with to on an among between from by is are their its how what who when versus'.split(' '));
+const DE_WORDS = new Set('der die das und mit von für bei den dem des ein eine einer eines zur zum auf ist sind im wie was'.split(' '));
 const SAFETY = ['none', 'responsibility'];
 /* Profilentscheid 06.10.2026: Die Fachstelle Angehörigenarbeit bietet keine Krisenintervention. Psychoedukative Seiten tragen keine Krisennummern und keinen Notfallblock; zulässig ist ein Zuständigkeitsverweis ohne Nummern in der Fusszeile. */
 const LEGACY_SAFETY = ['persistent-subdued', 'direct'];
@@ -20,7 +34,7 @@ const DE_TERMS = /\b(Jugendamt|Betreuungsgerichts?|rechtliche[nr]? Betreuung|Bet
 const LABELS = /\b(?:die|der|den|des|dem|ein|eine|einen|einem|einer|als)\s+(Schizophrenen?|Psychotiker(?:in(?:nen)?)?|Borderliner(?:in(?:nen)?)?|Bipolaren|Süchtigen|Geisteskranken?|Irren)\b|\bpsychisch Kranken?\b/i;
 const INLINE_TOPICS = ['selbstgefaehrdung', 'gewalt', 'akute-krise'];
 const INLINE_RE = /<p data-responsibility-inline\s*>\s*<\/p>/g;
-const REVIEW_WARNINGS = ['orthography', 'swiss-context', 'person-first', 'card-grid', 'inline-style', 'figure-core', 'entry-point', 'plan-coverage', 'resonance'];
+const REVIEW_WARNINGS = ['orthography', 'swiss-context', 'person-first', 'card-grid', 'inline-style', 'figure-core', 'entry-point', 'plan-coverage', 'resonance', 'legal', 'not-found', 'lang-part'];
 /* Profilentscheid 10.10.2026: Jede Darstellung nennt im Plan ihre Wirkung («resonance»): Was soll eine Angehörige darin wiedererkennen oder spüren? Anlass: eine Metapher, die wie ein Bauplan wirkte. */
 /* Profilentscheid 08.10.2026: Erklärmodelle (Kreislauf, Prozesspfad, Modell in Schritten) prüfen, wo Angehörige ansetzen können – im Plan als «entryPoint» (Ansatzpunkt oder «entfällt: Begründung»), in der Figur als .puk-vis-ansatz. */
 const ENTRY_FORMATS = ['cycle', 'process', 'stepwise-model'];
@@ -92,6 +106,8 @@ const byId = (doc, id) => id ? one(doc, x => x.attrs.id === id) : null;
 /* ---------- Pfade ---------- */
 const isExternalUrl = u => /^\s*(?:[a-z][a-z0-9+.-]*:)?\/\//i.test(u || '');
 const isInternal = h => !!h && !/^\s*[a-z][a-z0-9+.-]*:/i.test(h) && !/^\s*\/\//.test(h);
+const LEGAL_URL_RE = /^https?:\/\/[^\s/?#]+\.[a-z]{2,}(?:[/?#]\S*)?$/i;
+const noLoadRel = r => { const t = String(r || '').toLowerCase().split(/\s+/).filter(Boolean); return t.length > 0 && t.every(x => x === 'canonical' || x === 'alternate'); };
 function resolve(from, href) {
   const [pathPart, hash = ''] = String(href || '').split('#'); const clean = pathPart.split('?')[0];
   if (!clean) return { path: from, hash };
@@ -119,6 +135,17 @@ function renderPage(cfg, page, content) {
   const body = inl && inl.text ? content.replace(INLINE_RE, `<p class="puk-longform__boundary puk-site-inline-ref" data-responsibility-inline>${esc(inl.text)}</p>`) : content;
   const subdued = sa.variant === 'responsibility' ? `<section class="puk-site-safety puk-site-safety--responsibility" data-safety-access="responsibility" data-review-status="${esc(sa.reviewStatus)}" aria-labelledby="puk-safety-title"><h2 class="puk-web-footer__heading" id="puk-safety-title">${esc(sa.label || 'Zuständigkeit')}</h2><p class="puk-web-footer__copy">${esc(sa.text)}</p>${sa.targetHref ? `<p class="puk-web-footer__copy"><a href="${esc(sa.targetHref)}">${esc(sa.targetLabel)}</a></p>` : ''}${review ? `<p class="puk-web-footer__copy puk-site-review">${review}</p>` : ''}</section>` : '';
   const draftbar = page.status === 'draft' ? `<p class="puk-site-draftbar" data-page-status="draft"><span class="puk-web-container">Entwurf · nicht in der Navigation · nicht veröffentlichen</span></p>` : '';
+  const menu = nav.length > NAV_MAX;
+  const navItems = nav.map(p => `<li><a class="puk-web-nav__link" href="${esc(p.href)}"${p.id === page.id ? ' aria-current="page"' : ''}>${esc(p.navLabel)}</a></li>`).join('\n');
+  const navHtml = menu
+    ? `<nav class="puk-web-nav puk-site-nav--menu" aria-label="Hauptnavigation"><div class="puk-disclosure puk-site-menu" data-puk-disclosure><span class="puk-disclosure__label">Menü</span><ul class="puk-web-nav__list puk-disclosure__panel" role="list">\n${navItems}\n</ul></div></nav>`
+    : `<nav class="puk-web-nav" aria-label="Hauptnavigation"><ul class="puk-web-nav__list" role="list">\n${navItems}\n</ul></nav>`;
+  const script = cfg.interactionScript && (menu || needsScript(body));
+  const lg = cfg.legal || {}; const legalLinks = [];
+  for (const [k] of LEGAL) { const e = lg[k]; if (!e || !e.href || !e.label) continue; const same = legalLinks.find(x => x.href === e.href); if (same) same.label += ' und ' + e.label; else legalLinks.push({ href: e.href, label: e.label }); }
+  const legalMissing = cfg.legal ? LEGAL.filter(([k]) => !(lg[k] && lg[k].href)).map(([, n]) => n) : [];
+  const legalHtml = legalLinks.length || legalMissing.length ? `<p class="puk-web-footer__copy puk-site-legal" data-site-legal>${legalLinks.map(l => `<a href="${esc(l.href)}"${isExternalUrl(l.href) ? ' rel="noopener noreferrer"' : ''}>${esc(l.label)}</a>`).join('<span aria-hidden="true"> · </span>')}${legalMissing.length ? `${legalLinks.length ? ' ' : ''}<span class="puk-site-draft">${esc(legalMissing.join(' und '))}: Platzhalter, Ziel nicht festgelegt</span>` : ''}</p>` : '';
+  const notFound = isNotFound(page);
   return `<!DOCTYPE html>
 <html lang="${esc(cfg.language)}" data-puk-site-build="${BUILD}" data-page-id="${esc(page.id)}">
 <head>
@@ -126,29 +153,27 @@ function renderPage(cfg, page, content) {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="${esc(page.description)}">
 <meta name="generator" content="${esc(VERSION)} · psychoeducation-site-starter">
-<title>${esc(page.title)} | ${esc(cfg.siteTitle)}</title>
+${notFound ? '<meta name="robots" content="noindex">\n' : ''}<title>${esc(page.title)} | ${esc(cfg.siteTitle)}</title>
 <meta property="og:type" content="website">
 <meta property="og:locale" content="de_CH">
 <meta property="og:site_name" content="${esc(cfg.siteTitle)}">
 <meta property="og:title" content="${esc(page.title)}">
 <meta property="og:description" content="${esc(page.description)}">
-${cfg.siteUrl ? `<link rel="canonical" href="${esc(cfg.siteUrl.replace(/\/$/, '') + '/' + pagePath(page))}">\n` : ''}<link rel="icon" href="${esc(cfg.favicon)}" type="image/svg+xml">
+${cfg.siteUrl && !notFound ? `<link rel="canonical" href="${esc(cfg.siteUrl.replace(/\/$/, '') + '/' + pagePath(page))}">\n` : ''}<link rel="icon" href="${esc(cfg.favicon)}" type="image/svg+xml">
 ${(cfg.stylesheets || []).map(h => `<link rel="stylesheet" href="${esc(h)}${v}">`).join('\n')}
-${cfg.interactionScript && INTERACTIVE.some(a => content.includes(a)) ? `<script src="${esc(cfg.interactionScript)}${v}" defer></script>\n` : ''}</head>
+${script ? `<script src="${esc(cfg.interactionScript)}${v}" defer></script>\n` : ''}</head>
 <body><div class="puk-web-page puk-longform" data-web-profile="website" data-longform-pattern="longform-psychoeducation">
 <a class="puk-web-skip" href="#main-content">Zum Hauptinhalt</a>
 ${draftbar}<header class="puk-web-header"><div class="puk-web-container puk-web-header__inner">
-<a class="puk-web-logo" href="${esc(pagePath(cfg.pages.find(p => p.id === 'index') || nav[0]))}" aria-label="Startseite: ${esc(cfg.siteTitle)}"><img src="${esc(cfg.logo)}" alt="${esc(s.institution)}"></a>
-<nav class="puk-web-nav" aria-label="Hauptnavigation"><ul class="puk-web-nav__list" role="list">
-${nav.map(p => `<li><a class="puk-web-nav__link" href="${esc(p.href)}"${p.id === page.id ? ' aria-current="page"' : ''}>${esc(p.navLabel)}</a></li>`).join('\n')}
-</ul></nav></div>
+<a class="puk-web-logo" href="${esc(pagePath(cfg.pages.find(p => p.id === 'index') || nav[0]))}" aria-label="${esc(logoName(cfg))}"><img src="${esc(cfg.logo)}" alt="${esc(s.institution)}"></a>
+${navHtml}</div>
 <div class="puk-web-container"><p class="puk-site-sender" data-sender><span class="puk-site-sender__label">Absenderin</span><span class="puk-site-sender__name" data-sender-unit>${esc(s.orgUnit)}</span><span aria-hidden="true">·</span><span data-sender-institution>${esc(s.institution)}</span>${s.email ? `<span aria-hidden="true">·</span><a class="puk-link--inline" data-sender-email href="mailto:${esc(s.email)}">${esc(s.email)}</a>` : ''}${senderBadge}</p></div>
 </header>
 ${direct}<main id="main-content" class="puk-web-main" tabindex="-1">
 ${body.trim()}
 </main>
 <footer class="puk-web-footer" data-safety-variant="${esc(sa.variant)}"><div class="puk-web-container puk-web-footer__grid">
-${subdued}<section aria-labelledby="puk-site-info-title"><h2 class="puk-web-footer__heading" id="puk-site-info-title">Über diese Seiten</h2>${cfg.disclaimer ? `<p class="puk-web-footer__copy" data-disclaimer>${esc(cfg.disclaimer)}</p>` : ''}<p class="puk-web-footer__copy">Inhaltsverantwortung: ${esc(cfg.contentOwner)}</p><p class="puk-web-footer__copy">Redaktioneller Status: ${esc(cfg.editorialStatusLabel || cfg.editorialStatus)}</p><p class="puk-web-footer__copy">${esc(VERSION)} – abgeleitetes Profil auf Basis des PUK Zürich Design System 1.10.1, nicht dessen offizielle Version.</p></section>
+${subdued}<section aria-labelledby="puk-site-info-title"><h2 class="puk-web-footer__heading" id="puk-site-info-title">Über diese Seiten</h2>${cfg.disclaimer ? `<p class="puk-web-footer__copy" data-disclaimer>${esc(cfg.disclaimer)}</p>` : ''}<p class="puk-web-footer__copy">Inhaltsverantwortung: ${esc(cfg.contentOwner)}</p><p class="puk-web-footer__copy">Redaktioneller Status: ${esc(cfg.editorialStatusLabel || cfg.editorialStatus)}</p>${legalHtml}<p class="puk-web-footer__copy">${esc(VERSION)} – abgeleitetes Profil auf Basis des PUK Zürich Design System 1.10.1, nicht dessen offizielle Version.</p></section>
 </div></footer>
 </div></body>
 </html>
@@ -190,6 +215,24 @@ function gate(cfg, files, opts = {}) {
   }
   const pages = Array.isArray(cfg.pages) ? cfg.pages : [];
   if (!pages.length) add('block', 'site', 'config', 'pages fehlt');
+  /* Impressum und Datenschutzerklärung (Prüfbefund W3-05, Abschnitt «Technische Qualität», C): Entwurf Hinweis, Produktion blockiert. */
+  const lg = cfg.legal || {};
+  for (const [k, name] of LEGAL) {
+    const e = lg[k];
+    if (!e || !e.href) prod('site', 'legal', `${name} fehlt: site.config.json › legal.${k} mit label und href (eigene Seite oder geprüfte Seite der PUK)`);
+    else {
+      if (!e.label) add('block', 'site', 'legal', `legal.${k}.label fehlt`);
+      if (isInternal(e.href)) { if (!exists(resolve('', e.href).path)) add('block', 'site', 'legal', `Ziel von legal.${k} fehlt: ${e.href}`); }
+      else if (!LEGAL_URL_RE.test(e.href)) add('block', 'site', 'legal', `Ziel von legal.${k} ist keine Seite: ${e.href} – eigene Seite (relativer Pfad) oder https://…`);
+    }
+  }
+  /* 404-Seite (Prüfbefund W3-08, Pre-Release-Audit R3): Entwurf Hinweis, Produktion blockiert.
+     Ausgeliefert wird nur eine veröffentlichte Seite 404.html im Stamm (Export lässt Entwürfe weg, Netlify sucht nur diesen Namen). */
+  const nf = pages.filter(isNotFound);
+  if (!nf.length) prod('site', 'not-found', '404-Seite fehlt: Seite mit "role": "not-found" und href "404.html" im Seitenvertrag (Vorlage im Starter)');
+  else if (!nf.some(p => p.status === 'published' && p.href && pagePath(p) === '404.html')) prod('site', 'not-found', `404-Seite wird nicht ausgeliefert (${nf.map(p => `${p.href || '?'}, ${p.status || '?'}`).join('; ')}): nötig sind href "404.html" und status "published"`);
+  if (nf.length > 1) add('block', 'site', 'not-found', 'Mehr als eine Seite mit role «not-found»');
+  for (const p of nf) if (p.navLabel) add('block', p.id || '?', 'not-found', '404-Seite gehört nicht in die Navigation (navLabel: null)');
   const byPath = {}; pages.forEach(p => { if (p.href) byPath[pagePath(p)] = p; }); let inlineUsed = false;
   const ids = new Set();
   for (const p of pages) {
@@ -242,20 +285,34 @@ function gate(cfg, files, opts = {}) {
     for (const x of all(doc, y => y.tag === 'script' && !y.attrs.src)) add('block', pid, 'inline-script', 'Inline-Skript: mit strenger Content-Security-Policy nicht zulässig – in eine Datei auslagern');
     if (main && all(main, y => !!y.attrs.style).length) add('warn', pid, 'inline-style', 'style-Attribute im Inhalt: mit strenger Content-Security-Policy nicht zulässig – Klassen verwenden');
     for (const a of all(doc, y => y.tag === 'a' && y.attrs.target === '_blank')) if (!/noopener/.test(a.attrs.rel || '')) add('block', pid, 'blank-target', 'Link mit target="_blank" ohne rel="noopener noreferrer": ' + (a.attrs.href || ''));
-    if (INTERACTIVE.some(at => one(doc, y => has(y, at)))) {
+    const hasDetails = !!one(doc, y => y.tag === 'details');
+    if (INTERACTIVE.some(at => one(doc, y => has(y, at))) || hasDetails) {
       const sc = one(doc, y => y.tag === 'script' && /interaktion\.js(\?|$)/.test(y.attrs.src || ''));
-      if (!sc) add('block', pid, 'interaction-script', 'Interaktive Komponente ohne components/interaktion.js – ohne Skript bleibt sie statisch (site.config.interactionScript)');
+      if (!sc) add('block', pid, 'interaction-script', INTERACTIVE.some(at => one(doc, y => has(y, at))) ? 'Interaktive Komponente ohne components/interaktion.js – ohne Skript bleibt sie statisch (site.config.interactionScript)' : 'Vertiefung (details) ohne components/interaktion.js – sie wird sonst nicht vollständig gedruckt (Abschnitt «Technische Qualität», F)');
       else if (!exists(resolve(path, sc.attrs.src).path)) add('block', pid, 'interaction-script', 'Interaktionsskript nicht lokal vorhanden: ' + sc.attrs.src);
     }
     for (const cl of main ? all(main, y => cls(y, 'puk-web-card-list')) : []) { const n = cl.children.filter(y => y.tag === 'li').length; if (n >= 4) add('warn', pid, 'card-grid', `Kartenraster mit ${n} Karten: prüfen, ob eine Anordnung mit Beziehungen erklären müsste (Kartenraster-Check, Abschnitt «Visualisierung umsetzen»)`); }
-    for (const x of all(doc, y => ['script', 'link', 'img', 'source', 'iframe', 'video', 'audio', 'embed', 'object', 'use', 'image'].includes(y.tag)))
+    /* Kanonischer und alternativer Link laden nichts (Nebenbefund 11.10.2026: mit gesetzter siteUrl blockierte sonst jeder Build).
+       Ausgenommen nur, wenn rel ausschliesslich diese Werte trägt – «alternate stylesheet» oder «canonical preload» laden. */
+    for (const x of all(doc, y => ['script', 'link', 'img', 'source', 'iframe', 'video', 'audio', 'embed', 'object', 'use', 'image'].includes(y.tag) && !(y.tag === 'link' && noLoadRel(y.attrs.rel))))
       for (const k of ['src', 'href', 'srcset', 'data', 'xlink:href']) { const u = x.attrs[k]; if (u && u.split(',').some(z => isExternalUrl(z.trim()))) add('block', pid, 'external', `Externe Laufzeitquelle: <${x.tag} ${k}="${u}">`); }
     for (const x of all(doc, y => y.tag === 'style')) if (/(@import|url\()\s*["']?(https?:)?\/\//i.test(txt(x))) add('block', pid, 'external', 'Externe Quelle in <style>');
     for (const x of all(doc, y => /url\(\s*["']?(https?:)?\/\//i.test(y.attrs.style || ''))) add('block', pid, 'external', 'Externe Quelle im style-Attribut');
+    const logo = one(doc, x => x.tag === 'a' && cls(x, 'puk-web-logo'));
+    if (logo && s.institution) {
+      const img = one(logo, x => x.tag === 'img'); const name = norm(logo.attrs['aria-label'] || (img && img.attrs.alt) || txt(logo));
+      if (!name.toLowerCase().startsWith(norm(s.institution).toLowerCase())) add('block', pid, 'logo-name', `Name des Logo-Links «${name}» beginnt nicht mit dem sichtbaren Logotext «${s.institution}» (WCAG 2.5.3)`);
+    }
+    if (cfg.legal && LEGAL.some(([k]) => cfg.legal[k] && cfg.legal[k].href)) {
+      const lgEl = one(doc, x => has(x, 'data-site-legal'));
+      if (!lgEl || !up(lgEl, x => x.tag === 'footer')) add('block', pid, 'legal', 'Links auf Impressum und Datenschutzerklärung fehlen in der Fusszeile');
+      else for (const [k] of LEGAL) { const e = cfg.legal[k]; if (e && e.href && !one(lgEl, x => x.tag === 'a' && x.attrs.href === e.href)) add('block', pid, 'legal', `Link auf ${e.href} (legal.${k}) fehlt in der Fusszeile`); }
+    }
     const navEl = one(doc, x => x.tag === 'nav' && x.attrs['aria-label'] === 'Hauptnavigation');
     if (!navEl) add('block', pid, 'nav', 'Hauptnavigation fehlt');
     else {
       const links = all(navEl, x => x.tag === 'a'); const got = links.map(a => resolve(path, a.attrs.href).path);
+      if (links.length > NAV_MAX && !one(navEl, x => has(x, 'data-puk-disclosure'))) add('block', pid, 'nav-menu', `${links.length} Hauptpunkte ohne Menü – ab ${NAV_MAX + 1} Punkten braucht die Navigation unter 760 px ein Dropdown-Menü (Abschnitt «Interaktionskonzept»; tools/build.mjs erzeugt es)`);
       links.forEach(a => { const r = resolve(path, a.attrs.href); if (!exists(r.path)) add('block', pid, 'nav-target', 'Navigationsziel fehlt: ' + a.attrs.href); else if (byPath[r.path] && byPath[r.path].status !== 'published') add('block', pid, 'nav', 'Entwurf in der Navigation: ' + a.attrs.href); });
       if (got.join('|') !== navExp.join('|')) add('block', pid, 'nav', `Navigation weicht vom Seitenvertrag ab: ${got.join(', ') || 'leer'} statt ${navExp.join(', ')}`);
       const cur = links.filter(a => a.attrs['aria-current'] === 'page'); const inNav = navExp.includes(path);
@@ -281,6 +338,15 @@ function gate(cfg, files, opts = {}) {
         if (new Set(refs.map(r => up(r, x => x.tag === 'section'))).size < refs.length) add('block', pid, 'inline-ref', 'Mehr als ein Verweis im Text in einem Abschnitt');
         if (refs.some(r => !up(r, x => x.tag === 'main') || up(r, x => x.tag === 'figure' || x.tag === 'details'))) add('block', pid, 'inline-ref', 'Verweis im Text gehört sichtbar in den Fliesstext – nicht in Fusszeile, Figur oder Vertiefung');
       } }
+    { let foreign = 0; let example = '';
+      for (const li of main ? all(main, x => x.tag === 'li' && !!up(x, y => cls(y, 'puk-longform__sources'))) : []) {
+        if (one(li, x => !!x.attrs.lang) || up(li, x => x.tag !== 'html' && !!x.attrs.lang)) continue;
+        const use = all(li, x => cls(x, 'puk-longform__source-use')).map(txt).join(' ');
+        const words = txt(li).replace(use, ' ').toLowerCase().match(/[a-zäöüß]+/g) || [];
+        const en = words.filter(w => EN_WORDS.has(w)).length, de = words.filter(w => DE_WORDS.has(w)).length;
+        if (en >= 3 && de <= 1) { foreign++; if (!example) example = norm(txt(li)).slice(0, 80); }
+      }
+      if (foreign) add('warn', pid, 'lang-part', `${foreign} Quellenangabe(n) wirken fremdsprachig ohne lang-Attribut, z. B. «${example}…» – Titel in <span lang="en">…</span> fassen (WCAG 3.1.2)`); }
     { if (/ß/.test(mainText)) add('warn', pid, 'orthography', 'ß im Text – Schweizer Hochdeutsch schreibt ss');
       const q = mainText.match(/[„“”]/); if (q) add('warn', pid, 'orthography', `Anführungszeichen ${q[0]} – Schweizer Guillemets «…» verwenden`);
       const de = mainText.match(DE_TERMS); if (de) add('warn', pid, 'swiss-context', `«${de[0]}» ist ein deutscher Rechtsbegriff oder ein deutsches Angebot – Schweizer Begriff und Zuständigkeit prüfen (z. B. KESB, Beistandschaft, fürsorgerische Unterbringung)`);
@@ -353,7 +419,7 @@ function gate(cfg, files, opts = {}) {
   if (startP && docOf(pagePath(startP))) {
     const seenP = new Set([pagePath(startP)]); const queue = [pagePath(startP)];
     while (queue.length) { const cp = queue.shift(); const d = docOf(cp); if (!d) continue; for (const a of all(d, x => x.tag === 'a' && has(x, 'href'))) { if (!isInternal(a.attrs.href)) continue; const r = resolve(cp, a.attrs.href).path; if (!seenP.has(r) && byPath[r]) { seenP.add(r); queue.push(r); } } }
-    for (const p of pages) if (p.status === 'published' && p.href && !seenP.has(pagePath(p))) add('block', p.id, 'reachability', `Seite ${p.href} ist von der Startseite aus über keinen Link erreichbar`);
+    for (const p of pages) if (p.status === 'published' && p.href && !isNotFound(p) && !seenP.has(pagePath(p))) add('block', p.id, 'reachability', `Seite ${p.href} ist von der Startseite aus über keinen Link erreichbar`);
   }
   if (inlineUsed && cfg.responsibility && cfg.responsibility.inline && cfg.responsibility.inline.reviewStatus !== 'geprueft') prod('site', 'inline-review', `Verweis im Text nicht fachlich geprüft (responsibility.inline.reviewStatus: ${cfg.responsibility.inline.reviewStatus || 'fehlt'})`);
   if (opts.report !== undefined) {
@@ -412,7 +478,20 @@ const MUTATIONS = [
   ['Verweis im Text mit eigenem Wortlaut', ['inline-ref'], (c, f) => { c.responsibility.inline = { text: INLINE_T, reviewStatus: 'ausstehend' }; return rep(f, 'beziehungen-verstehen.html', '</main>', '<p class="puk-longform__boundary" data-responsibility-inline>Rufen Sie sofort jemanden an.</p></main>'); }],
   ['Verweis im Text auf Seite ohne sensibles Thema', ['inline-ref'], (c, f) => { c.responsibility.inline = { text: INLINE_T, reviewStatus: 'ausstehend' }; return rep(f, 'index.html', '</main>', `<p class="puk-longform__boundary" data-responsibility-inline>${INLINE_T}</p></main>`); }],
   ['Verweis im Text versteckt in einer Vertiefung', ['inline-ref'], (c, f) => { c.responsibility.inline = { text: INLINE_T, reviewStatus: 'ausstehend' }; return rep(f, 'beziehungen-verstehen.html', '</summary>', `</summary><p class="puk-longform__boundary" data-responsibility-inline>${INLINE_T}</p>`); }],
-  ['Entwurf in der Navigation', ['nav', 'link-draft'], (c, f) => rep(f, 'index.html', '</ul></nav>', '<li><a class="puk-web-nav__link" href="seitenvorlage.html">Vorlage</a></li>\n</ul></nav>')]
+  ['Entwurf in der Navigation', ['nav', 'link-draft'], (c, f) => rep(f, 'index.html', '</ul></nav>', '<li><a class="puk-web-nav__link" href="seitenvorlage.html">Vorlage</a></li>\n</ul></nav>')],
+  /* Prüfbefunde 11.10.2026 (Website «Depression: Informationen für Angehörige») */
+  ['Vertiefung ohne Interaktionsskript (Druck)', ['interaction-script'], (c, f) => rex(f, 'behandlung-verstehen.html', /<script src="[^"]*interaktion\.js[^"]*" defer><\/script>\n?/, '')],
+  ['Name des Logo-Links ohne sichtbaren Logotext', ['logo-name'], (c, f) => rex(f, 'index.html', /(<a class="puk-web-logo"[^>]*aria-label=")[^"]*"/, '$1Startseite: Musterwebsite"')],
+  ['Mehr als sechs Hauptpunkte ohne Menü', ['nav-menu'], (c, f) => rep(f, 'index.html', '\n</ul></nav>', '\n<li><a class="puk-web-nav__link" href="index.html">A</a></li><li><a class="puk-web-nav__link" href="index.html">B</a></li><li><a class="puk-web-nav__link" href="index.html">C</a></li>\n</ul></nav>')],
+  ['Impressum und Datenschutzerklärung fehlen', ['legal'], c => { if (!c.legal) return false; delete c.legal; }],
+  ['Link auf das Impressum fehlt in der Fusszeile', ['legal'], (c, f) => rex(f, 'behandlung-verstehen.html', /<p class="puk-web-footer__copy puk-site-legal" data-site-legal>[\s\S]*?<\/p>/, '')],
+  ['404-Seite fehlt', ['not-found'], c => { const n = c.pages.length; c.pages = c.pages.filter(p => !isNotFound(p)); return c.pages.length < n; }],
+  ['404-Seite in der Navigation', ['not-found'], c => { const p = c.pages.find(isNotFound); if (!p) return false; p.navLabel = 'Seite fehlt'; }],
+  /* Code-Review 11.10.2026 (Pull Request zu 2026.10.1) */
+  ['404-Seite als Entwurf (nicht im Export)', ['not-found'], c => { const p = c.pages.find(isNotFound); if (!p) return false; p.status = 'draft'; }],
+  ['Impressum zeigt auf eine E-Mail-Adresse statt auf eine Seite', ['legal'], (c, f) => { const e = c.legal && c.legal.imprint; if (!e || !e.href) return false; const old = e.href; e.href = 'mailto:nobody@example.org'; let n = 0; for (const k of Object.keys(f)) if (rep(f, k, `href="${old}"`, `href="${e.href}"`, true)) n++; return n > 0; }],
+  ['Externes Stylesheet als «alternate stylesheet»', ['external'], (c, f) => rep(f, 'index.html', '</head>', '<link rel="alternate stylesheet" href="https://www.example.org/x.css">\n</head>')],
+  ['Fremdsprachiger Quellentitel ohne lang', ['lang-part'], (c, f) => rep(f, 'behandlung-verstehen.html', '</main>', '<ol class="puk-longform__sources"><li>Muster A (2020): Supporting the families of people with depression: a review of the evidence.</li></ol></main>')]
 ];
 function pg(c, id) { const p = c.pages.find(x => x.id === id); if (!p) throw new Error('Seite ' + id + ' fehlt'); return p; }
 function rep(f, file, a, b, every) { if (f[file] == null || !f[file].includes(a)) return false; f[file] = every ? f[file].split(a).join(b) : f[file].replace(a, () => b); return true; }
@@ -423,7 +502,8 @@ function selftest(cfg, files, opts = {}) {
   rows.push({ name: 'Ausgangslage Entwurf: 0 blockierende Befunde', expected: '0', got: String(b0.blocks), ok: b0.blocks === 0 });
   const unreviewed = {}; for (const [k, v] of Object.entries(files)) unreviewed[k] = typeof v === 'string' ? v.split('data-review-status="geprueft"').join('data-review-status="ausstehend"') : v;
   const bp = gate(Object.assign({}, cfg, { sender: Object.assign({}, cfg.sender, { status: 'placeholder' }), responsibility: cfg.responsibility && Object.assign({}, cfg.responsibility, { reviewStatus: 'ausstehend', reviewedBy: undefined, reviewedAt: undefined }) }), unreviewed, { mode: 'production', exists: base }); /* Absenderin und Zuständigkeitsverweis hier absichtlich ungeklärt, damit die Prüfung belegt bleibt, auch wenn beide freigegeben sind */ const need = ['sender-status', 'safety-review', 'placeholder-approval', 'visual-approval'];
-  const hit = need.filter(id => bp.findings.some(x => x.level === 'block' && x.id === id)); const structural = bp.findings.filter(x => x.level === 'block' && !need.includes(x.id));
+  /* Offene Angaben vor der Veröffentlichung (Impressum, Datenschutzerklärung, 404-Seite) gelten wie offene Freigaben, nicht als Strukturfehler. */
+  const hit = need.filter(id => bp.findings.some(x => x.level === 'block' && x.id === id)); const structural = bp.findings.filter(x => x.level === 'block' && !need.includes(x.id) && !['legal', 'not-found'].includes(x.id));
   rows.push({ name: 'Produktion blockiert ungeklärte Absenderin, Zuständigkeitsverweise, Platzhalter und Visualisierungen', expected: need.join(', ') + ' · keine Strukturfehler', got: hit.join(', ') + ' · ' + (structural.length ? structural.length + ' Strukturfehler' : 'keine Strukturfehler'), ok: hit.length === need.length && !structural.length });
   const done = '| Stufe | Status |\n| --- | --- |\n' + REPORT_STAGES.map(([n]) => `| ${n} | erledigt |`).join('\n');
   const noRep = gate(cfg, files, { mode: 'production', exists: base, report: null }).findings.some(x => x.level === 'block' && x.id === 'review-report');
@@ -433,6 +513,9 @@ function selftest(cfg, files, opts = {}) {
   const noR3 = done.split('\n').filter(l => !/^\|\s*R3\b/i.test(l)).join('\n') + '\n| R3 Freigabe-Audit | offen |';
   const r3open = gate(cfg, files, { mode: 'production', exists: base, report: noR3 }).findings.some(x => x.level === 'block' && x.id === 'review-report' && /R3/.test(x.message || x.msg || ''));
   rows.push({ name: 'Produktion blockiert ohne «Go» im Freigabe-Audit R3', expected: 'review-report (R3)', got: r3open ? 'review-report (R3)' : 'nicht erkannt', ok: r3open });
+  { const f = Object.assign({}, files); const ok = rep(f, 'index.html', '</head>', '<link rel="canonical" href="https://www.example.org/index.html">\n</head>');
+    const ext = ok && gate(cfg, f, { mode: 'draft', exists: base }).findings.some(x => x.id === 'external');
+    rows.push({ name: 'Kanonischer Link (siteUrl) gilt nicht als externe Laufzeitquelle', expected: 'kein external', got: ok ? (ext ? 'external' : 'kein external') : 'Mutation nicht anwendbar', ok: ok && !ext }); }
   { const c = JSON.parse(JSON.stringify(cfg)); const f = Object.assign({}, files); c.responsibility = Object.assign({}, c.responsibility, { inline: { text: INLINE_T, reviewStatus: 'ausstehend' } });
     const ok = rep(f, 'beziehungen-verstehen.html', '</main>', `<section id="x-inline"><p class="puk-longform__boundary" data-responsibility-inline>${INLINE_T}</p></section></main>`);
     const hitI = ok && gate(c, f, { mode: 'production', exists: base }).findings.some(x => x.level === 'block' && x.id === 'inline-review');
