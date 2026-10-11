@@ -701,7 +701,7 @@
       "navLabel": "Rechte und Angebote",
       "status": "published",
       "primaryTask": "Wissen, was man erfahren und mitteilen darf, welche Rechte man hat und wo es Unterstützung gibt",
-      "description": "Schweigepflicht und Information, Bezugsperson und Patientenverfügung, Arbeit und Geld sowie Angebote für Angehörige von Menschen mit Depression im Kanton Zürich.",
+      "description": "Schweigepflicht und Information, Bezugsperson und Patientenverfügung sowie Angebote für Angehörige von Menschen mit Depression im Kanton Zürich.",
       "sensitiveTopics": [
         "selbstgefaehrdung",
         "zwang"
@@ -734,20 +734,8 @@
           "approvalStatus": "entfällt"
         },
         {
-          "id": "v-ra-arbeit-geld",
-          "section": "03 Arbeit und Geld",
-          "sectionId": "arbeit-geld",
-          "goal": "Die eigenen Ansprüche bei der Arbeit und bei Sozialversicherungen kennen",
-          "format": "text",
-          "statement": "–",
-          "source": "–",
-          "alternative": "–",
-          "reason": "Text ist klarer: vier Regelungen als Begriffsliste.",
-          "approvalStatus": "entfällt"
-        },
-        {
           "id": "v-ra-angebote",
-          "section": "04 Unterstützung für Angehörige",
+          "section": "03 Unterstützung für Angehörige",
           "sectionId": "angebote",
           "goal": "Passende Angebote für sich finden",
           "format": "text",
