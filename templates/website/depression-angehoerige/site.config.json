@@ -1,5 +1,5 @@
 {
-  "$comment": "Website «Depression: Informationen für Angehörige» der Fachstelle Angehörigenarbeit PUK. Seitenvertrag nach dem Psychoedukations-Starter (PUK Website Kit 1.10.1-r4 · abgeleitet). Plan freigegeben von der Fachstelle am 10.10.2026; alle Texte sind Musterentwurf bis zur fachlichen Prüfung. Nach jeder Änderung: node tools/build.mjs, vor Veröffentlichung node tools/gate.mjs --production.",
+  "$comment": "Website «Depression: Informationen für Angehörige» der Fachstelle Angehörigenarbeit PUK. Seitenvertrag nach dem Psychoedukations-Starter (PUK Website Kit 1.10.1-r4 · abgeleitet). Plan freigegeben von der Fachstelle am 10.10.2026; Texte und Darstellungen fachlich freigegeben am 12.10.2026, Abbildung «Mit im Boot» noch ausstehend; rechtliche Angaben auf rechte-und-angebote und impressum-datenschutz unter Vorbehalt der rechtlichen Prüfung. Nach jeder Änderung: node tools/build.mjs, vor Veröffentlichung node tools/gate.mjs --production.",
   "kitRevision": "PUK Website Kit 1.10.1-r4 · abgeleitet",
   "canonicalSource": "PUK Zürich Design System 1.10.1 (unverändert)",
   "assetVersion": "r4-8",
@@ -15,8 +15,8 @@
     "starter.css"
   ],
   "contentOwner": "Ch. Egger, Fachstelle Angehörigenarbeit PUK",
-  "editorialStatus": "draft",
-  "editorialStatusLabel": "Musterentwurf, Stand 11.10.2026 – fachliche Prüfung ausstehend",
+  "editorialStatus": "freigegeben",
+  "editorialStatusLabel": "Fachlich freigegeben am 12.10.2026 (Fachstelle Angehörigenarbeit PUK); Abbildung «Mit im Boot» noch ausstehend",
   "disclaimer": "Diese Website ersetzt keine individuelle Abklärung, Beratung oder Behandlung.",
   "responsibility": {
     "label": "Zuständigkeit",
@@ -150,7 +150,7 @@
           "source": "Eigene didaktische Darstellung; Anzeichen nach ICD-11 und NVL Unipolare Depression V3.2 (Recherchebericht Kap. 1)",
           "alternative": "Zwei Listen «Was Sie sehen und hören» und «Was die Person erleben kann»; Kurzbeschreibung über aria-describedby",
           "reason": "Sichtbar und verborgen ist ein Zusammenhang, den eine Schichtung sofort zeigt; im Fliesstext stünde beides nur nacheinander.",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-dv-anders",
@@ -177,7 +177,7 @@
           "source": "Eigene didaktische Darstellung, angelehnt an das Vulnerabilitäts-Stress-Modell (NVL Unipolare Depression V3.2, Kap. 1.3)",
           "alternative": "Nummerierte Liste der drei Teile; Kurzbeschreibung über aria-describedby",
           "reason": "Ein Zusammenwirken von zwei Grössen an einer Schwelle ist als Bild schneller erfasst als als Satz.",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-dv-formen",
@@ -241,7 +241,7 @@
           "source": "NVL Unipolare Depression V3.2; Schweizer Behandlungsempfehlungen SGAD/SGPP 2025",
           "alternative": "Zwei Merkmalslisten in gleicher Reihenfolge; Kurzbeschreibung über aria-describedby",
           "reason": "Ein Vergleich nach gleichen Merkmalen ist nebeneinander schneller lesbar als im Fliesstext.",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-bv-weg",
@@ -249,14 +249,14 @@
           "sectionId": "weg",
           "goal": "Die Stationen der Behandlung im Kanton Zürich kennen",
           "format": "process",
-          "statement": "Fünf Schritte: erster Kontakt, Abklärung, ambulante Behandlung, wenn nötig Tagesklinik oder Klinik (gestrichelt), Weiterbehandlung nach der Besserung.",
+          "statement": "Fünf Schritte: erster Kontakt, Abklärung, ambulante Behandlung, wenn nötig Tagesklinik oder Klinik (gestrichelt), Weiterbehandlung nach dem Abklingen der Beschwerden.",
           "understood": "Die Reihenfolge der Stationen, dass Tagesklinik oder Klinik ein möglicher und kein zwingender Schritt ist und dass die Behandlung nach der Besserung weitergeht.",
           "resonance": "Orientierung: «Ich weiss, wo man anfangen kann und was danach kommt.»",
           "entryPoint": "Bei Schritt 1 «Erster Kontakt»: anbieten, bei der Terminsuche zu helfen oder mitzukommen, wenn die Person das möchte; eigene Beobachtungen dürfen Angehörige jederzeit mitteilen.",
           "source": "Eigene didaktische Darstellung nach dem Recherchebericht (Versorgung Schweiz, Kanton Zürich)",
           "alternative": "Geordnete Liste mit Schrittnummern; Kurzbeschreibung über aria-describedby",
           "reason": "Eine Abfolge mit einem optionalen Schritt ist als Pfad auf einen Blick sichtbar.",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-bv-verlauf",
@@ -282,7 +282,7 @@
           "source": "Eigene didaktische Darstellung; Frühwarnzeichen nach dem Recherchebericht, Kap. 3",
           "alternative": "Drei Bereiche als geordnete Liste von «Es geht gut» bis «Die Depression ist zurück»; Kurzbeschreibung über aria-describedby",
           "reason": "Abstufung und Spielraum sind auf einer Achse sichtbar, im Text nicht.",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-bv-einbezug",
@@ -359,7 +359,7 @@
           "source": "Eigene didaktische Darstellung; Faktoren nach Huang et al. 2026, van Wijngaarden et al. 2004 und 2009, Martire et al. 2010, Deutschland-Barometer Depression 2024",
           "alternative": "Zwei Listen «Was zufliesst» und «Was abfliessen kann»; Kurzbeschreibung über aria-describedby",
           "reason": "Das Verhältnis von Zufluss und Abfluss ist als Bild sofort verständlich; als Liste verstärkender und entlastender Faktoren ginge der Zusammenhang verloren.",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-is-gesundheit",
@@ -386,7 +386,7 @@
           "source": "Eigene didaktische Darstellung, angelehnt an Whisman & Uebelacker 2009 und Hooley & Gotlib 2000",
           "alternative": "Geordnete Liste der vier Stationen mit sichtbarem Rücksprung zu Station 1; Textfassung über aria-describedby",
           "reason": "Eine Rückkopplung ist als geschlossene Schleife sofort erkennbar; als Text verliert sie den Kreis.",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-is-angst",
@@ -474,7 +474,7 @@
           "source": "Eigene didaktische Darstellung; Befunde nach Kika et al. 2026, Greally et al. 2025 und Johansson et al. 2014",
           "alternative": "Drei Abschnitte: linke Seite, Mitte, rechte Seite; Kurzbeschreibung über aria-describedby",
           "reason": "Zwei berechtigte, gegenläufige Anliegen lassen sich als Waage gleichzeitig zeigen.",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-ro-geschwister",
@@ -665,7 +665,7 @@
           "source": "Eigene didaktische Darstellung (Muster I)",
           "alternative": "Nach Kreisen gegliederte Liste mit «besteht» und «wäre möglich»; Kurzbeschreibung über aria-describedby",
           "reason": "Nähe und Abstand sind räumlich schneller erfassbar als in einer Aufzählung.",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-fs-was-hilft",
@@ -730,7 +730,7 @@
           "source": "Art. 321 StGB; Patientinnen- und Patientengesetz Kanton Zürich §§ 2a, 15, 19; BAG, Empfehlungen für Fachpersonen (2021)",
           "alternative": "Zwei Merkmalslisten in gleicher Reihenfolge; Kurzbeschreibung über aria-describedby",
           "reason": "Ein Vergleich nach gleichen Merkmalen räumt das häufigste Missverständnis schneller aus als ein Rechtstext.",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-ra-vorsorge",

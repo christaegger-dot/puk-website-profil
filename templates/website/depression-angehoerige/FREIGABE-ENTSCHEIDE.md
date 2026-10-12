@@ -14,6 +14,8 @@ Gilt für `templates/website/depression-angehoerige/` am Stand `72560d0`. Belege
 - Abschnitt 4 leiten Sie unverändert an den Rechtsdienst der PUK weiter.
 - Abschnitt 7 geben Sie den Personen, die die Tests machen.
 
+**Antwort der Fachstelle vom 12.10.2026:** «alle Vorschläge: OK; Arbeitsheft: wird nich[t] angehängt.» (eingetragen von der bauenden Sitzung)
+
 **Übersicht der Entscheide**
 
 | Nr. | Worum es geht | Empfehlung |
