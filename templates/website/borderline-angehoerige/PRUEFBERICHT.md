@@ -132,6 +132,28 @@ Dazu 5 leichte Befunde zu Bericht und Abgleich. Die erste und zweite Prüfrunde 
 - **Geltung:** bis das Profil geändert ist. R1 prüft gegen die Regel und die eingetragene Ausnahme. Die Profiländerung leitet die Fachstelle im Design-System-Artefakt ein; ist sie vor R1 als neues Paket eingespielt, gilt die neue Regel.
 - **Nicht ausgenommen:** die Bedeutungsschleife (`v-bz-schleife`). Ihre Kennzeichnung ist im Druck an die Darstellung gebunden (SPZ-43, Korrektur SP2-K-19).
 
+### Neue Freigabe nach der Nachprüfung SP2-K (12.10.2026)
+
+**12.10.2026 · Fachstelle Angehörigenarbeit PUK.** Entscheid der Fachstelle in der Sitzung der Nachprüfung SP2-K («Ja, Freigabe»), von dieser Sitzung übertragen. Grundlage: Abschnitt «Nachprüfung SP2-K», Teil C. Beide Abbildungen sind dort bei 1280 und 360 px, Standard und «kontrast», angesehen, der Freundin-Test ist bestanden (`ENTSCHEIDE-SCHLUSSPRUEFUNG.md`, Abschnitt 4, M7).
+
+- **Die Abbildung «Anspannungskurve» (`v-vs-anspannung`) ist fachlich freigegeben,** im Stand `5d59aba`: mit Stelle 3 «Sicherheit geht vor Klärung. Eine Pause, Abstand und weniger Reize können helfen.» (N6, SPZ-F-8) und der Legende «… nach dem früheren Handout «Die Anspannungskurve» …» (N7).
+- **Die Abbildung «Ein neuer Trieb» (`v-ge-trieb`) ist fachlich freigegeben,** im Stand `5d59aba`: mit dem Sims, der rechts innerhalb des Bildes mit runder Kante endet (Wortlaut 3.7, SPZ-F-30), und der Legende «… nach den früheren Handouts …» (N7).
+- **Noch nicht umgesetzt:** In `site.config.json` stehen die beiden Zeilen weiter auf `approvalStatus` «ausstehend». Diesen Eintrag setzt die bauende Sitzung im nächsten Schritt um (`KORREKTUR-SCHLUSSPRUEFUNG-2.md`, Abschnitt 15, Punkt 2; Entscheide, Abschnitt 6, Schritt 3). Im selben Schritt setzt sie:
+  - `approvalStatus` dieser zwei Zeilen auf «freigegeben»
+  - `editorialStatus` auf «Fachlich freigegeben am TT.MM.JJJJ», Datum nach SPZ-F-2
+  - `shortDescription` nach RF-5
+  - die 98 Textzeilen des Plans auf «freigegeben» (SPZ-F-3)
+  - danach baut sie neu und trägt das Ergebnis in den Prüfbericht ein.
+- **Nicht Teil dieser Freigabe:** NSK-F-1 (Schwelle der Schleife in Firefox und WebKit, reale Tests) und die optionalen Befunde NSK-1 bis NSK-3. Sie bleiben offen.
+- **Weiter offen vor der Veröffentlichung:**
+  - die rechtliche Prüfung mit SPZ-F-13 und -14
+  - SPZ-F-21
+  - der Release-Kandidat auf der Vorschau und die realen Tests (SPZ-F-33)
+  - NK-F-3 spätestens vor R3
+  - Netlify und PR #659 nach Abschnitt 5 der Entscheide
+  - danach R1 bis R3
+- Die Statustabelle bleibt unverändert; jede Stufe bleibt «offen».
+
 ## Nachprüfung SP2-K (12.10.2026, Stand 5d59aba)
 
 **Prüfsitzung (Claude Code), 12.10.2026.** Nachprüfung der Korrektur SP2-K nach `KORREKTUR-SCHLUSSPRUEFUNG-2.md`, Abschnitt 15, Punkt 1. Geprüft ist der Branch `korrektur-sp2-k` am Commit `5d59aba` (Entwurfs-PR christaegger-dot/puk-website-profil#68); Bezugsstand ist `2c7078a`. Diese Sitzung hat die Website weder gebaut noch korrigiert noch geprüft und nichts entschieden. An Schlussprüfung, Entscheiden, Korrekturauftrag und Korrektur SP2-K hat sie nicht mitgearbeitet. Gelesen: `CLAUDE.md`, `guidelines/00-ablauf-pruefung-und-freigabe.md`, `KORREKTUR-SCHLUSSPRUEFUNG-2.md` ganz, `ENTSCHEIDE-SCHLUSSPRUEFUNG.md` Abschnitte 3, 4, 5 und 6, in diesem Bericht der Block «Korrektur SP2-K» der Selbstprüfung und «Begründete Ausnahme · Druckregel (SPZ-F-32)». Geändert ist nur dieser Abschnitt. **Keine Freigabe eingetragen, keine Stufe «erledigt», Statustabelle unverändert.** Neue IDs: «NSK-» (Befunde), «NSK-F-» (Fragen).
@@ -451,6 +473,7 @@ Kein Befund «wichtig». Kein neuer fachlicher Prüfbedarf: Die neuen Sätze sin
   - NSK-1 bis NSK-3 (optional);
   - danach Schritt 3 der Entscheide (Freigabe, `editorialStatus`, Textzeilen des Plans), die rechtliche Prüfung, SPZ-F-21, die realen Tests, R1 bis R3.
 - **Status:** Keine Stufe ist «erledigt». Die Statustabelle ist unverändert; alle Stufen W1 bis R3 bleiben «offen». PR #68 bleibt ein Entwurf.
+- **Nachtrag 12.10.2026:** Die Fachstelle hat die Freigabe der zwei Abbildungen erteilt. Der Eintrag steht im Abschnitt «Fachliche Freigabe der Fachstelle», Unterabschnitt «Neue Freigabe nach der Nachprüfung SP2-K».
 
 ## Schlussprüfung · Zusammenführung der beiden Prüfsitzungen (12.10.2026, Stand f1d6572)
 
