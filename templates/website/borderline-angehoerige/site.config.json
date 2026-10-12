@@ -135,7 +135,7 @@
           "statement": "–",
           "source": "–",
           "alternative": "–",
-          "reason": "Text ist klarer: Begriffsklärung mit gezielten Einschränkungen. Kriterien und Begleiterkrankungen folgen auf «Diagnose und Begleiterkrankungen» (Etappe 2).",
+          "reason": "Text ist klarer: Begriffsklärung mit gezielten Einschränkungen. Kriterien und Begleiterkrankungen stehen auf «Diagnose und Begleiterkrankungen»; ein Verweissatz nach «Die Diagnose allein sagt nichts darüber, ob von einem Menschen Gefahr ausgeht.» verlinkt dort den Abschnitt «Der Weg zur Abklärung» (Freigabe 2c und 3-1, P2c-F-16).",
           "approvalStatus": "ausstehend"
         },
         {
@@ -409,7 +409,7 @@
           "statement": "–",
           "source": "–",
           "alternative": "–",
-          "reason": "Text ist klarer: Beispielsätze für Kinder und konkrete Fragen zur Betreuung. Was Kinder nicht übernehmen müssen und was bei akuter Gefahr gilt, steht im Abschnitt selbst (Entscheid P2a-F-2); bei Gewalt oder Bedrohung verweist er auf `grenzen` (`gewalt`).",
+          "reason": "Text ist klarer: Beispielsätze für Kinder und konkrete Fragen zur Betreuung. Was Kinder nicht übernehmen müssen und was bei akuter Gefahr gilt, steht im Abschnitt selbst (Entscheid P2a-F-2); bei Gewalt oder Bedrohung verweist er auf `grenzen` (`gewalt`), für Bücher für Kinder auf `unterstuetzung` (`buecher`; Freigabe 2c und 3-1, P2c-F-16).",
           "approvalStatus": "ausstehend"
         },
         {
@@ -717,12 +717,12 @@
           "id": "v-be-therapieformen",
           "section": "03 Therapieformen",
           "sectionId": "therapieformen",
-          "goal": "Die wichtigsten Therapieformen, Settings und die Regeln zu Medikamenten kennen",
+          "goal": "Die wichtigsten Therapieformen, die drei Rahmen der Behandlung und die Regeln zu Medikamenten kennen",
           "format": "text",
           "statement": "–",
           "source": "–",
           "alternative": "–",
-          "reason": "Text ist klarer (Entscheid von Claude, Bauauftrag 2c-2, Abschnitt 1): Die Therapieformen stehen als Begriffsliste mit je einem Satz. Ein Vergleich nach Ziel, Form und Einbezug (UMBAUPLAN: `comparison`) entfällt, weil der Bestand je Form nur den Schwerpunkt nennt. Settings als Begriffsliste, «Begleiterkrankungen und Medikamente» als Zwischentitel, «Programme für Angehörige» als Vertiefung.",
+          "reason": "Text ist klarer (Entscheid von Claude, Bauauftrag 2c-2, Abschnitt 1): Die Therapieformen stehen als Begriffsliste mit je einem Satz. Ein Vergleich nach Ziel, Form und Einbezug (UMBAUPLAN: `comparison`) entfällt, weil der Bestand je Form nur den Schwerpunkt nennt. Die drei Rahmen als Begriffsliste, «Begleiterkrankungen und Medikamente» als Zwischentitel, «Programme für Angehörige» als Vertiefung.",
           "approvalStatus": "ausstehend"
         },
         {
@@ -1098,7 +1098,7 @@
           "statement": "–",
           "source": "–",
           "alternative": "–",
-          "reason": "Text ist klarer: kurze Hinweise und Verweis auf `index` (`beratung`); weitere Angebote folgen auf `unterstuetzung` (Etappe 2).",
+          "reason": "Text ist klarer: kurze Hinweise und Verweis auf `index` (`beratung`); weitere Angebote stehen auf `unterstuetzung`, verlinkt beim Begriff «Austausch mit anderen Angehörigen» (Freigabe 2c und 3-1, P2c-F-16).",
           "approvalStatus": "ausstehend"
         },
         {
@@ -1159,9 +1159,9 @@
           "understood": "Dass Rückschritt und neues Wachsen zugleich da sein können: Das abgefallene Blatt und der neue Trieb an derselben Pflanze zeigen auf einen Blick, dass eine schwierigere Phase das Erreichte nicht aufhebt.",
           "source": "Eigene didaktische Darstellung nach den Handouts «Veränderung verläuft unterschiedlich» und «Der Garten»; Bezug: Zanarini et al. (2012); NICE CG78 (2009)",
           "alternative": "Sätze als HTML-Text über der Zeichnung, schmal untereinander; Kurzbeschreibung über aria-describedby",
-          "reason": "Entscheid der Fachstelle 11.10.2026 (Bauauftrag 2c-1, Abschnitt 4 und Anhang A): Zeichnung «Ein neuer Trieb» im Stil von «Zwei Tassen» (Muster D), direkt nach dem ersten Absatz von `verlauf`. Korrektur 2c-K (P2c2-F-2 und P2c2-V-3; P2c-T-1, P2c2-T-1): Die Giesskanne ist entfernt. Das abgefallene Blatt liegt direkt unter der Pflanze, an den Topf gelehnt, und ist etwas grösser; die zwei Blätter des neuen Triebs sind heller als die übrigen (`puk-vis-scene__paper` statt `puk-vis-scene__soft`). Die übrigen Pfade sind wie in der Skizze. Bildausschnitt `60 44 420 214`, enger und mit der Pflanze in der Mitte (2c-1: `60 44 530 214`, Skizze: `0 40 640 220`). Die Zahlen der Langzeitstudie stehen als hervorgehobener Text ohne Diagramm (`forschung`, Entscheid von Claude im Bauauftrag); der Garten-Text steht auf `rolle` › `anbieten` und ist verlinkt, nicht wiederholt.",
+          "reason": "Entscheid der Fachstelle 11.10.2026 (Bauauftrag 2c-1, Abschnitt 4 und Anhang A): Zeichnung «Ein neuer Trieb» im Stil von «Zwei Tassen» (Muster D), direkt nach dem ersten Absatz von `verlauf`. Korrektur 2c-K (P2c2-F-2 und P2c2-V-3; P2c-T-1, P2c2-T-1): Die Giesskanne ist entfernt. Das abgefallene Blatt liegt direkt unter der Pflanze, an den Topf gelehnt, und ist etwas grösser; die zwei Blätter des neuen Triebs sind heller als die übrigen (`puk-vis-scene__paper` statt `puk-vis-scene__soft`). Die übrigen Pfade sind wie in der Skizze. Bildausschnitt `60 44 420 214`, enger und mit der Pflanze in der Mitte (2c-1: `60 44 530 214`, Skizze: `0 40 640 220`). Die Zahlen der Langzeitstudie stehen als hervorgehobener Text ohne Diagramm (`forschung`, Entscheid von Claude im Bauauftrag); der Garten-Text steht auf `rolle` › `anbieten` und ist verlinkt, nicht wiederholt. Freigabe 2c und 3-1 (NK2c-2): In der Szene hat der Satz unter «Weniger hilfreich» dieselbe graue Linie wie «Weniger hilfreich» in der Gegenüberstellung `.puk-say` desselben Abschnitts (Regel in `borderline.css`); Wortlaut, Bezeichnungen, Zeichnung und Kurzbeschreibung unverändert.",
           "resonance": "Entlastung und realistische Hoffnung: Ein Rückschritt macht nicht alles zunichte.",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-ge-einfluesse",
@@ -1222,7 +1222,7 @@
           "statement": "–",
           "source": "–",
           "alternative": "–",
-          "reason": "Text ist klarer: Angebote mit Name, kurzer Beschreibung und Link auf die offizielle Website (Muster «Kontakt und Übergabe» ohne Telefonnummern, Bauauftrag 2c-1, Abschnitt 5). Kontakt und Bedingungen der Fachstelle sind auf `index` › `beratung` verlinkt, nicht wiederholt.",
+          "reason": "Text ist klarer: Angebote mit Name, kurzer Beschreibung und Link auf die offizielle Website (Muster «Kontakt und Übergabe» ohne Telefonnummern, Bauauftrag 2c-1, Abschnitt 5). Kontakt und Bedingungen der Fachstelle sind auf `index` › `beratung` verlinkt; wiederholt ist nur, dass die Beratung der Fachstelle nichts kostet und nicht an Krankenkassen weitergegeben wird (P2c-F-14).",
           "approvalStatus": "ausstehend"
         },
         {

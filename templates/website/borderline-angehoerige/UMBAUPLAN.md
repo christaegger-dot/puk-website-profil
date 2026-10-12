@@ -1,6 +1,6 @@
 # Umbauplan · Borderline-Website ins PUK Website-Profil
 
-Stand 08.10.2026, Abschnitte 2 und 7 nachgeführt am 12.10.2026 (Korrektur 3-1-K) · Grundlage: Bestandsaufnahme `bestand/borderline-angehoerige/` (Branch `borderline-bestand`, Commit `5c8471c` der alten Website) · Profil 2026.10, Starter Build r4-3
+Stand 08.10.2026, Abschnitte 2 und 7 nachgeführt am 12.10.2026 (Korrektur 3-1-K), Abschnitt 2 und Stand am 12.10.2026 (Freigabe 2c und 3-1) · **Stand:** Etappen 2c und 3-1 freigegeben (Fachstelle, 12.10.2026, `FREIGABE-ETAPPE-2C-3-1.md`), als Nächstes Etappe 3-2 · Grundlage: Bestandsaufnahme `bestand/borderline-angehoerige/` (Branch `borderline-bestand`, Commit `5c8471c` der alten Website) · Profil 2026.10, Starter Build r4-3
 
 Dieser Plan gehört zur Website `templates/website/borderline-angehoerige/`. Er hält die Entscheide der Fachstelle fest, legt die neue Struktur und den Visualisierungsplan im Entwurf fest und teilt den Bau in Etappen. Struktur und Technik hat Claude entschieden; inhaltliche Punkte stehen unter «Offen für W1».
 
@@ -25,7 +25,7 @@ Durch das Profil bereits entschieden und nicht verhandelbar:
 
 ## 2. Neue Struktur
 
-Aus 72 Seiten (rund 65'000 Wörter) werden 16 Seiten (15 nach dem ersten Plan, seit Etappe 3-1 dazu «Impressum und Datenschutz» als eigene Seite). Richtwerte für den Umfang danach in Klammern. Nachgeführt am 12.10.2026 (Korrektur 3-1-K): Zeilen `rolle`, `kommunizieren`, `grenzen`, `selbstfuersorge` (Ort von drei Handouts), `fragen`, `quellen`, `ueber` und `impressum-datenschutz`.
+Aus 72 Seiten (rund 65'000 Wörter) werden 16 Seiten (15 nach dem ersten Plan, seit Etappe 3-1 dazu «Impressum und Datenschutz» als eigene Seite). Richtwerte für den Umfang danach in Klammern. Nachgeführt am 12.10.2026 (Korrektur 3-1-K): Zeilen `rolle`, `kommunizieren`, `grenzen`, `selbstfuersorge` (Ort von drei Handouts), `fragen`, `quellen`, `ueber` und `impressum-datenschutz`. Mit der Freigabe 2c und 3-1 (12.10.2026): Zeilen `ueber` und `impressum-datenschutz`, für beide gilt kein Richtwert (NK-F-7).
 
 | Seite (`id`) | Titel (Vorschlag) | Navigation | Kommt aus (alte Routen) |
 | --- | --- | --- | --- |
@@ -43,8 +43,8 @@ Aus 72 Seiten (rund 65'000 Wörter) werden 16 Seiten (15 nach dem ersten Plan, s
 | `unterstuetzung` | Unterstützung finden | – (Startseite; verlinkt aus Ihre Rolle, Auf sich achten) | `/fachstelle`, `/beratung`, `/buchempfehlungen` (600) |
 | `fragen` | Häufige Fragen | – (Startseite, Abschnitt «Haltung»; `ueber`) | `/faq` (kein Richtwert, Entscheid zu S-Nr. 1 in `KORREKTUR-ETAPPE-3-1.md`; kurze Antworten mit Link auf die Themenseite) |
 | `quellen` | Quellen und Begriffe | – (Block «Quellen zu dieser Seite» jeder Themenseite; `ueber`) | `/quellen`, `/glossar` (Quellenliste vollständig; Glossar nur Begriffe, die im Text vorkommen) |
-| `ueber` | Über diese Website | – (Startseite, Abschnitt «Beratung»; Impressum) | `/ueber-uns`, `/barrierefreiheit`, `/feedback` (900 zusammen mit `impressum-datenschutz`) |
-| `impressum-datenschutz` | Impressum und Datenschutz | – (Fusszeile, Links «Impressum» und «Datenschutz») | `/impressum`, `/datenschutz` (eigene Seite nach Profilentscheid 11.10.2026, Vorlage des Starters) |
+| `ueber` | Über diese Website | – (Startseite, Abschnitt «Beratung»; Impressum) | `/ueber-uns`, `/barrierefreiheit`, `/feedback` (kein Richtwert, Entscheid zu NK-F-7 in `FREIGABE-ETAPPE-2C-3-1.md`; bis dahin 900 zusammen mit `impressum-datenschutz`) |
+| `impressum-datenschutz` | Impressum und Datenschutz | – (Fusszeile, Links «Impressum» und «Datenschutz») | `/impressum`, `/datenschutz` (eigene Seite nach Profilentscheid 11.10.2026, Vorlage des Starters; kein Richtwert, Entscheid zu NK-F-7 in `FREIGABE-ETAPPE-2C-3-1.md`) |
 
 Entfallen ersatzlos, mit Begründung:
 

@@ -28,6 +28,10 @@ Neue Seite: `content/index.html` · Bestand: `/` (Startseite), `/selbsttest`, `/
 
 **Korrektur 3-1-K (12.10.2026):** nachgeführt nach `KORREKTUR-ETAPPE-3-1.md`, Abschnitt 6 (Z31-W2-1): zwei Zeilen ohne Bestandssatz am Ende der Tabelle, Nr. 260 (V1 in `haltung`, Verweissatz auf `fragen`) und Nr. 261 (V2 in `beratung`, Verweissatz auf `ueber`), beide «neu (3-1-K)». Übrige Zeilen unverändert.
 
+**Freigabe 2c und 3-1 (12.10.2026):** nachgeführt nach `FREIGABE-ETAPPE-2C-3-1.md`, Abschnitt 4 (P2c-F-16): eine Zeile ohne Bestandssatz am Ende der Tabelle, Nr. 262 (`beratung`, Satz 13, Verweissatz auf `unterstuetzung`), «neu (Verweis, 2c-3-1-F)». Keine Bestandszeile geändert.
+
+**Zählung nach Freigabe 2c und 3-1:** 255 Sätze des Bestands, davon 229 entfällt, 10 geändert, 6 übernommen, 4 umformuliert (2c-1), 2 gekürzt, 2 umformuliert (2b), 1 Bezeichnung, 1 verschoben. Dazu 8 Zeilen ohne Bestandssatz: 2 neu (2a), 2 neu (2c-1), 2 neu (3-1-K), 1 neu (2b), 1 neu (Verweis, 2c-3-1-F).
+
 
 - **Satz (Bestand):** Bestandstext in Sätze zerlegt, Listenpunkte und Zwischentitel als eigene Zeile. Die Nummer bleibt fest, damit Prüfberichte sie zitieren können. Gleiche Sätze aus Seite und Handout stehen je in ihrer Zeile.
 - **Neue Fassung:** der Satz der neuen Seite, der die Aussage trägt; «wörtlich», wenn er gleich lautet; «–», wenn der Satz entfällt oder auf eine spätere Seite vorgemerkt ist. Bei Zeilen ohne Bestandssatz steht in «Satz (Bestand)» «–».
@@ -300,6 +304,7 @@ Neue Seite: `content/index.html` · Bestand: `/` (Startseite), `/selbsttest`, `/
 | 259 | neue Seite › Einstiege, Anliegen | – | neu (2c-1) | «Ich suche Beratung oder Austausch mit anderen Angehörigen.» | index#einstiege | Anliegen-Satz des Einstiegs zu `unterstuetzung` im Wortlaut des Bauauftrags 2c-1 (Abschnitt 6); Freigabe: Liste der neuen Sätze in PRUEFBERICHT.md, Selbstprüfung Etappe 2c-1 |
 | 260 | neue Seite › `haltung` | – | neu (3-1-K) | Antworten auf häufige Fragen stehen auf der Seite «Häufige Fragen». | index#haltung | Verweissatz (V1), eigener Absatz nach «Sie sind nicht für die Genesung eines anderen Menschen verantwortlich.», Link auf `fragen.html`; 3-1-K, Abschnitt 6, Z31-W2-1 |
 | 261 | neue Seite › `beratung` | – | neu (3-1-K) | Wer die Website herausgibt und welche Grundsätze für die Texte gelten, steht auf der Seite «Über diese Website». | index#beratung | Verweissatz (V2), eigener Absatz nach der Kontaktadresse, Link auf `ueber.html`; 3-1-K, Abschnitt 6, Z31-W2-1 |
+| 262 | neue Seite › `beratung`, Verweis | – | neu (Verweis, 2c-3-1-F) | Weitere Beratung und Austausch mit anderen Angehörigen stehen auf der Seite «Unterstützung finden». | index#beratung | 2c-3-1-F (Abschnitt 4, Nr. 13), P2c-F-16: eigener Absatz direkt nach der Kontaktadresse und vor V2 («Wer die Website herausgibt …», Nr. 261); Link auf `unterstuetzung.html` (ohne Anker); Vorschlag 2c-1 Nr. 5 |
 
 ## Prüfbedarf für W1 (Stand 09.10.2026, Korrektur 1d)
 

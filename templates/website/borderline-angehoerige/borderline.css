@@ -56,8 +56,10 @@
 .bl-fig--kurve .bl-fig__label{white-space:nowrap}
 /* Korrektur 1h/1i: Die Beschriftung an Stelle 4 («Es kann wieder ruhiger werden.», seit 1i) hat erst ab 960 px Containerbreite
    rechts der Zeichnung Platz; darunter ragte sie aus der Figur (900 px Fensterbreite: 48 px, Seite 12 px Überlauf; 1h: 800 px).
-   Dann gelten Nummern und Liste wie schmal. */
-@container (max-width:960px){.bl-fig--kurve .bl-fig__label{display:none}}
+   Dann gelten Nummern und Liste wie schmal. Freigabe 2c und 3-1 (NK31-1): Die Grenze steht in em der Schrift des Containers
+   (.puk-vis-wide, 21 px: 45.71em ≈ 960 px), damit sie mit der Schriftgrösse wächst; bei 200 % Schrift ragte die Beschriftung
+   an Stelle 4 bei 1280 px Fensterbreite sonst 48 px aus der Seite. */
+@container (max-width:45.71em){.bl-fig--kurve .bl-fig__label{display:none}}
 .bl-fig--kurve .bl-kurve__label--1{left:15.5%;top:91.4%;transform:translateX(-50%)}
 .bl-fig--kurve .bl-kurve__label--2{right:61.4%;top:49.7%;transform:translateY(-50%)}
 .bl-fig--kurve .bl-kurve__label--3{left:61.3%;bottom:88.6%;transform:translateX(-50%)}
@@ -157,6 +159,11 @@
    als hervorgehobener Text mit Erklärung. Kein Diagramm (Entscheid im Bauauftrag 2c-1, Abschnitt 1). */
 .bl-zahlen dt{margin-top:var(--space-6);font-size:var(--web-size-h3-fluid);font-weight:var(--fw-medium);line-height:var(--lh-subheading);color:var(--text-default)}
 .bl-zahlen dt:first-child{margin-top:var(--space-4)}
+
+/* Genesung › «Ein neuer Trieb» (Freigabe 2c und 3-1, NK2c-2): In der Szene hat der Satz unter «Weniger hilfreich» dieselbe Linie
+   wie «Weniger hilfreich» in der Gegenüberstellung .puk-say desselben Abschnitts (Profil: grau, --ui-hairline), nicht die blaue
+   Linie des Musters. Nur diese Abbildung; der zweite Satz («Tragfähiger», .puk-vis-scene__say--b) bleibt wie im Muster. */
+[data-visual-id="v-ge-trieb"] .puk-vis-scene__say:not(.puk-vis-scene__say--b){border-left:var(--border-width-strong) solid var(--ui-hairline)}
 
 /* Unterstützung finden › Bücher (Bauauftrag 2c-1, Abschnitt 5): je Titel ein Eintrag ohne Aufzählungszeichen, getrennt durch eine
    feine Linie; Titel hervorgehoben, Angaben und «Für: …» in der kleinen Lesegrösse. Ohne Bezugslinks. */
