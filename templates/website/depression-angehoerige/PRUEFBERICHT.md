@@ -24,7 +24,7 @@ Gehört zur Website in diesem Ordner (`templates/website/depression-angehoerige/
 | R2 Visualisierung und Laienverständlichkeit | offen | 11./12.10.2026 | zweite Prüfsitzung (Claude Code, hat nicht gebaut); Runde 2: dritte Prüfsitzung (hat die Befunde nicht umgesetzt) | Matrix 11 × 25, Bildsprache je Figur (8 tragen, 3 überarbeiten), Lesetest für 41 Abschnitte, Kennzahlen je Seite; 2 wichtige Befunde (R2-01 Text, der die Zeichnung beschreibt; R2-02 gestrichelte Linie bei Antidepressiva), 5 optionale; ersetzt keinen Lesetest mit Angehörigen. Runde 2 (`5f68c39`): R2-01 bis R2-07 erledigt (Website-Teil); Bildsprache 10 tragen, 1 überarbeiten (`v-ra-vergleich`); Lesetest und Kennzahlen nachgeführt; 1 neuer, optionaler Befund (R2-08) |
 | R3 Freigabe-Audit | offen | | | «Go», «Go mit Auflagen» oder «No-Go»; noch nicht durchgeführt (W1-F-21 und die realen Screenreader-Läufe fehlen) |
 
-### Offene Punkte nach Zuständigkeit (dritte Prüfsitzung, 12.10.2026, Stand `5f68c39`; nachgeführt mit dem Nachtrag W1-F-19 und nach der Umsetzung von S-33, V-11 und BD-12)
+### Offene Punkte nach Zuständigkeit (dritte Prüfsitzung, 12.10.2026, Stand `5f68c39`; nachgeführt mit dem Nachtrag W1-F-19 und nach der Umsetzung von S-33, V-11, BD-12 und K1)
 
 Ersetzt die Fassung vom Stand `e63bd73`. Die dort offene Nachprüfung von R2-01 bis R2-07, W1-32, V-08, V-09, S-31, S-32 und R1-03 ist gemacht: alle umgesetzt wie beschrieben, jede Abweichung vom Vorschlag vertretbar (Nachweise in den Runden vom Stand `5f68c39` unter «Visualisierungs-Check», «Befunde je Stufe» und «Pre-Release-Audits»). Neu sind fünf optionale Befunde (S-33, V-10, V-11, BD-12, R2-08). Code- und Textbefunde setzt die bauende Sitzung erst nach Freigabe durch die Fachstelle um.
 
@@ -38,7 +38,7 @@ Nachgeführt am 12.10.2026 mit dem Nachtrag W1-F-19 (Quellen- und Linkabgleich, 
   - die Sätze im Kreislauf (R2-04), besonders Station 4 «Er fühlt sich unverstanden.»: Die bauende Sitzung hat sie der erkrankten Person zugeordnet und sich dafür auf den freigegebenen Plan berufen («die Person fühlt sich unverstanden und zieht sich weiter zurück»);
   - die neuen Kurztexte aus R2-01, darunter «Die Übersicht beantwortet Fragen, die Angehörige oft stellen: …» (Liste in W1, Prüfrunde 5).
 - W1-F-15: das Boot-Bild mit dem Arbeitsheft abgleichen.
-- W1-F-19: Quellen- und Linkabgleich am 12.10.2026 abgeschlossen (Nachtrag unten). Stand by You und EQUILIBRIUM bestätigt; bei VASK ist K1 an zwei Textstellen offen (Flyer: neue Gruppe im Aufbau). Offen ist der Entscheid über K1: den vorgeschlagenen Wortlaut (Nachtrag, Abschnitt 4) für `rechte-und-angebote` › `angebote` und `je-nach-rolle` › `erwachsene-kinder` übernehmen, anpassen oder verwerfen. Keine fachliche Freigabe erteilt.
+- W1-F-19: Quellen- und Linkabgleich am 12.10.2026 abgeschlossen (Nachtrag unten). Stand by You und EQUILIBRIUM bestätigt. K1 am 12.10.2026 entschieden (Vorschlag übernehmen) und umgesetzt; offen ist nur noch die Nachprüfung. Keine fachliche Freigabe erteilt.
 - W1-31: Impressum und Datenschutz rechtlich prüfen lassen (mit der PUK): Widerspruch «keine Daten an andere Anbieter» und Netlify, geltendes Recht, verantwortliche Stelle, Aufbewahrung der Protokolle, Postadresse; dabei den Wortlaut aus S-32 («Herausgeberin: Fachstelle Angehörigenarbeit der Psychiatrischen Universitätsklinik Zürich», «… kein offizielles Angebot der Klinik als Ganzes») und den Vermerk aus W1-32.
 - Prüfbedarf aus R1 (Punkt 18), unverändert offen: Gehört nach «Sie dürfen ein Gespräch beenden und den Raum verlassen» (`fuer-sich-sorgen` › `grenzen`) der Verweis im Text?
 - Neue optionale Befunde der Website: am 12.10.2026 entschieden. S-33, V-11 und BD-12 sind umgesetzt (Eintrag unter «Umgesetzt nach den Prüfrunden»), R2-08 ist zurückgestellt (siehe Profil).
@@ -46,7 +46,7 @@ Nachgeführt am 12.10.2026 mit dem Nachtrag W1-F-19 (Quellen- und Linkabgleich, 
 **Bauende Sitzung** (nach Freigabe)
 
 - S-33, V-11 und BD-12: umgesetzt am 12.10.2026 (Rollenwechsel der dritten Prüfsitzung); Nachprüfung durch eine andere Sitzung offen. R2-08: zurückgestellt (Entscheid der Fachstelle).
-- K1 (W1-F-19) nach dem Entscheid der Fachstelle an beiden Stellen umsetzen, beim Gruppenhinweis mit Link auf die Treffpunkte der VASK Zürich (Nachtrag, Abschnitt 4); den Stand-Vermerk «Angaben zu den Angeboten: Stand 10.10.2026» nicht pauschal ändern.
+- K1 (W1-F-19): umgesetzt am 12.10.2026 an beiden Stellen, mit Link auf die Treffpunkte der VASK Zürich; Stand-Vermerk unverändert (Eintrag unter «Umgesetzt nach den Prüfrunden»). Nachprüfung durch eine andere Sitzung offen.
 - W1-09 Rest und W1-10 Rest: Abrufdaten, PatG § 19, NVL-Kapitel, Programmname «Familiencoach Depression», «drei bis vier Wochen», BAG «allgemein informieren» am Original prüfen, sobald die Originale erreichbar sind.
 - BD-09 / W3-10 Rest: Dateigrössen der 7 PDF-Dateien nachtragen.
 - Selbstprüfung: Punkte 17 und 18 am 12.10.2026 nachgeführt (200 % neu gemessen, erledigte Massnahme gestrichen), dazu die Punkte 12, 15 und 19.
@@ -70,7 +70,8 @@ Nachgeführt am 12.10.2026 mit dem Nachtrag W1-F-19 (Quellen- und Linkabgleich, 
 - Die 69 externen Links prüfen (66 aus Runde 1 und 3 neue Quellen; seither keine neuen). Teilnachweis vom 12.10.2026: die drei bestehenden Anbieterlinks aus W1-F-19 geprüft; kein Gesamtabschluss des Linktests.
 - Lesetest mit Angehörigen, wo möglich trialogisch (R2 ersetzt ihn nicht).
 - Nachprüfung von S-33, V-11 und BD-12 (umgesetzt am 12.10.2026) durch eine Sitzung, die sie nicht umgesetzt hat: Satzvergleich gegen `7cc4e1b`, Kurztext und Kurzbeschreibung des Kreislaufs, Absatz vor dem Vergleich der Behandlungen.
-- Nach weiteren Korrekturen (K1, Freigabe-Änderungen aus W1-F-21, später R2-08): die betroffenen Stufen in einer Sitzung nachprüfen, die die Korrekturen nicht umgesetzt hat; bei K1 genügt der Abgleich der zwei geänderten Stellen und des Linkziels (Nachtrag, Abschnitt 4). R3 erst, wenn W1-F-21 und die realen Screenreader-Läufe vorliegen.
+- Nachprüfung von K1 (umgesetzt am 12.10.2026): die zwei geänderten Stellen und die Linkziele gegen den Vorschlag im Nachtrag, Abschnitt 4, und gegen `b8288d0`; dabei die beiden VASK-Adressen am Original aufrufen.
+- Nach weiteren Korrekturen (Freigabe-Änderungen aus W1-F-21, später R2-08): die betroffenen Stufen in einer Sitzung nachprüfen, die die Korrekturen nicht umgesetzt hat. R3 erst, wenn W1-F-21 und die realen Screenreader-Läufe vorliegen.
 
 ## Nachtrag W1-F-19 · Quellen- und Linkabgleich (12.10.2026)
 
@@ -227,6 +228,8 @@ Alle Quellen **abgerufen am 12.10.2026**. Wo kein redaktionelles Änderungsdatum
 
 - **12.10.2026 · S-33, V-11, BD-12 und R2-08 (Ch. Egger):** S-33, V-11 und BD-12 umsetzen («Setze S-33, V-11, BD-12 und R2-08 um»). R2-08 auf Rückfrage zurückgestellt («Zurückstellen»): Der Rechte-Vergleich bleibt mit fünf Zeilen, bis Muster E eine gemeinsame Zeile über beide Spalten hat. Eine fachliche Freigabe (W1-F-21) ist damit nicht erteilt.
 
+- **12.10.2026 · K1 (W1-F-19):** den Vorschlag K1 aus dem Nachtrag W1-F-19 (Abschnitt 4) an beiden Stellen übernehmen («Setze K1 um»). Eine fachliche Freigabe (W1-F-21) ist damit nicht erteilt.
+
 ### Umgesetzt nach den Prüfrunden (bauende Sitzung)
 
 - **11.10.2026 · W2-01, W2-02 (Verweise L1 bis L12, `5ad9cc8`):** zwölf Verweise nach W2-C eingefügt, je ein Satz mit Link und ohne neue fachliche Aussage. L1 und L2 im Wortlaut von `ihre-situation` › `angst`; L9 als Link auf «Grenzen setzen» im bestehenden Satz; L12 als Übergangssatz (`.puk-longform__transition`) am Ende der Seiten 2 bis 7, nicht auf der letzten Seite. Geprüft: alle internen Links führen auf vorhandene Ziele; kein horizontaler Überlauf bei 320 und 1280 px; Gate 0 blockierend.
@@ -341,6 +344,18 @@ Alle Quellen **abgerufen am 12.10.2026**. Wo kein redaktionelles Änderungsdatum
     - Alle 11 Figuren bei 360 bis 1440 px mit 16 und 32 px Standardschrift: 0 überlappende Textzeilen. Kreislauf im Accessibility-Baum: Name «Abbildung 2 · Ein Kreis, in den Paare und Familien geraten können», Beschreibung = neue Kurzbeschreibung.
     - Angesehen: Kreislauf bei 1280 und 360 px. Freundin-Test: unverändert «eher ja»; der Kurztext sagt jetzt, wer erschöpft ist und wer sich unverstanden fühlt. Bildschirmfotos im Scratchpad, nicht im Repository.
   - **Offen:** Nachprüfung von S-33, V-11 und BD-12 durch eine andere Sitzung; BD-12 im realen Screenreader-Lauf anhören; fachliche Freigabe der Kreislauf-Sätze und Kurztexte (W1-F-21); R2-08 im Profil.
+- **12.10.2026 · K1 (W1-F-19) umgesetzt** (Auftrag der Fachstelle vom 12.10.2026: «Setze K1 um»). Bauende Sitzung wie beim Eintrag davor (die dritte Prüfsitzung im Rollenwechsel; den Nachtrag W1-F-19 mit K1 hat eine andere, unabhängige Prüfung geschrieben). Die Nachprüfung macht eine andere Sitzung. Geändert sind nur `content/rechte-und-angebote.html`, `content/je-nach-rolle.html` und die beiden gebauten Seiten.
+  - **`rechte-und-angebote` › `angebote`, VASK Zürich** (Wortlaut des Vorschlags): «Beratung, offene Treffpunkte in Zürich und Winterthur sowie Angehörigenkurse. Für erwachsene Kinder psychisch erkrankter Eltern befindet sich laut VASK-Flyer eine neue Gruppe im Aufbau. Zum aktuellen Stand und zur Anmeldung informiert die VASK Zürich.» statt «Beratung, offene Treffpunkte in Zürich und Winterthur, Angehörigenkurse, Gruppe für erwachsene Kinder.» Links wie beim Eintrag der Fachstelle darüber, getrennt mit « · »: «vaskzuerich.ch» (Startseite, für Beratung und Kurse, wie bisher) und neu «Treffpunkte auf vaskzuerich.ch» (`https://www.vaskzuerich.ch/de/Angebote-der-VASK/Treffpunkte`, gezielt für den Gruppenhinweis, wie im Vorschlag). Die Domain steht in beiden Linktexten (W3-10); die Namen unterscheiden sich (BD-10).
+  - **`je-nach-rolle` › `erwachsene-kinder`** (Wortlaut des Vorschlags, erster Satz unverändert): «Bei der VASK Zürich (vaskzuerich.ch) befindet sich laut Flyer eine neue Gruppe für erwachsene Kinder psychisch erkrankter Eltern im Aufbau. Die VASK informiert über den aktuellen Stand und die Anmeldung.» statt «Die VASK Zürich (vaskzuerich.ch) bietet eine Gruppe für erwachsene Kinder psychisch erkrankter Eltern an.» Der Link «VASK Zürich (vaskzuerich.ch)» führt jetzt auf die Treffpunkte statt auf die Startseite, weil der Satz nur von der Gruppe handelt (Begründung wie im Vorschlag für `rechte-und-angebote`). Abweichung vom Vorschlag: nur dieses Linkziel; der Vorschlag nennt für diese Stelle keines.
+  - **Unverändert,** wie im Nachtrag verlangt: Stand by You, Equilibrium und der Vermerk «Angaben zu den Angeboten: Stand 10.10.2026, vor der Veröffentlichung zu prüfen.»
+  - **Satzvergleich vorher/nachher** (gebaute Seiten gegen `main` `b8288d0`, ganzer `body`): 2 Einheiten geändert, 5 neu, nur auf `je-nach-rolle` (1/2) und `rechte-und-angebote` (1/3); übrige 8 Seiten unverändert; kein Satz still entfallen. Kennzahlen nach der Zählweise von R2: `je-nach-rolle` 88 → 89 Sätze, Verneinung unverändert 13, Sätze über 25 Wörter unverändert 4; der VASK-Eintrag auf `rechte-und-angebote` endet wie vorher mit einem Link und zählt in dieser Zählweise nicht.
+  - **Geprüft:**
+    - `node tools/build.mjs` → 10 Seiten, Build r4-8, Gate draft 0 blockierend, 12 Hinweise; `--production` 12 blockierend wie vorher; `--selftest` 65/65; `sitemap.xml` unverändert.
+    - Playwright mit CSP aus `_headers`, 10 Seiten × 320 bis 1440 px (70 Messungen): kein Überlauf, 0 Konsolenfehler, 0 CSP-Verstösse, keine fremden Anfragen.
+    - Auf beiden Seiten keine zwei gleichnamigen Links mit verschiedenem Ziel.
+    - Angesehen: VASK-Eintrag bei 1280 und 360 px, Abschnitt «Erwachsene Kinder» bei 1280 und 360 px.
+    - **Nicht geprüft:** die Erreichbarkeit der VASK-Adressen. Aus dieser Arbeitsumgebung sind externe Adressen gesperrt (`curl`: keine Verbindung). Der Nachtrag W1-F-19 nennt für beide Adressen HTTP 200 am 12.10.2026.
+  - **Offen:** Nachprüfung durch eine andere Sitzung; nach dem Nachtrag genügt der Abgleich der zwei geänderten Stellen und der Linkziele. Danach ist W1-F-19 abgeschlossen.
 
 ### Begriffe nach den Entscheiden W2-F-01 bis W2-F-03 (bauende Sitzung, für S und W2-D)
 
@@ -376,7 +391,7 @@ Ergebnis der Prüfsitzung zu diesen fünf Punkten: «W1-E · Offener Prüfbedarf
 
 ## Selbstprüfung der bauenden Sitzung
 
-Arbeitsstand vom 10.10.2026, nachgeführt am 11.10.2026 nach der Umsetzung von R2-01 (Punkte 16, 18 und 19), R2-02 bis R2-07 (Punkte 15 und 17) sowie V-08 und V-09 (Punkte 18 und 19), am 12.10.2026 nach S-33, V-11 und BD-12 (Punkte 12, 15, 17, 18 und 19); keine Prüfstufe. Elf Figuren: `v-dv-schichten` (K), `v-dv-entstehung` (G), `v-bv-vergleich` (E), `v-bv-weg` (C), `v-bv-fruehzeichen` (J), `v-is-gefaess` (G), `v-is-kreislauf` (B), `v-ro-spannung` (H), `v-bg-boot` (D), `v-fs-netz` (I), `v-ra-vergleich` (E).
+Arbeitsstand vom 10.10.2026, nachgeführt am 11.10.2026 nach der Umsetzung von R2-01 (Punkte 16, 18 und 19), R2-02 bis R2-07 (Punkte 15 und 17) sowie V-08 und V-09 (Punkte 18 und 19), am 12.10.2026 nach S-33, V-11 und BD-12 (Punkte 12, 15, 17, 18 und 19); nach K1 (12.10.2026) unverändert, weil keine Figur betroffen ist; keine Prüfstufe. Elf Figuren: `v-dv-schichten` (K), `v-dv-entstehung` (G), `v-bv-vergleich` (E), `v-bv-weg` (C), `v-bv-fruehzeichen` (J), `v-is-gefaess` (G), `v-is-kreislauf` (B), `v-ro-spannung` (H), `v-bg-boot` (D), `v-fs-netz` (I), `v-ra-vergleich` (E).
 
 ## Visualisierungs-Check
 
