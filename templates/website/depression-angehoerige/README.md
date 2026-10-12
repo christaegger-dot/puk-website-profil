@@ -1,10 +1,10 @@
 # Depression: Informationen für Angehörige
 
-Website der Fachstelle Angehörigenarbeit, Psychiatrische Universitätsklinik Zürich, gebaut mit dem Psychoedukations-Starter des PUK Website-Profils 2026.10 (Build r4-7).
+Website der Fachstelle Angehörigenarbeit, Psychiatrische Universitätsklinik Zürich, gebaut mit dem Psychoedukations-Starter des PUK Website-Profils 2026.10 (Build r4-8).
 
 - **Zielgruppe:** Angehörige und nahe Bezugspersonen von Erwachsenen mit Depression; Anrede «Sie».
 - **Aufbau:** acht Seiten, vom Verstehen über die eigene Situation zum Handeln, mit Lesepfaden nach Rolle und nach Frage auf der Startseite.
-- **Stand:** Musterentwurf vom 10.10.2026. Alle Texte und alle elf Darstellungen sind noch nicht fachlich freigegeben. Prüfstufen und Selbstprüfung: `PRUEFBERICHT.md`.
+- **Stand:** fachlich freigegeben am 12.10.2026 (Fachstelle Angehörigenarbeit PUK). Prüfstufen, offene Punkte und Selbstprüfung: `PRUEFBERICHT.md`.
 - **Inhaltsverantwortung:** Ch. Egger, Fachstelle Angehörigenarbeit PUK.
 
 ## Bearbeiten
