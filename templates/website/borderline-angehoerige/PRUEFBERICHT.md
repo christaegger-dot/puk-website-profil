@@ -109,6 +109,20 @@ Dazu 5 leichte Befunde zu Bericht und Abgleich. Die erste und zweite Prüfrunde 
   - danach R1 bis R3
 - Die Statustabelle bleibt unverändert; jede Stufe bleibt «offen».
 
+### Entscheide zu den Rückfragen RF-1 bis RF-5 (Korrekturauftrag SP2-K, 12.10.2026, im Auftrag der Fachstelle)
+
+**12.10.2026 · Auftrag der Fachstelle.** Der Korrekturauftrag `KORREKTUR-SCHLUSSPRUEFUNG-2.md` (SP2-K) nannte fünf Lücken in `ENTSCHEIDE-SCHLUSSPRUEFUNG.md` als Rückfragen an die Fachstelle (RF-1 bis RF-5). Die Fachstelle hat am 12.10.2026 entschieden, dass Claude sie anstelle der Fachstelle entscheidet. Entschieden hat die Sitzung, die den Korrekturauftrag geschrieben hat; sie hat an der Website weder gebaut, korrigiert noch geprüft und ist von Korrektur und Nachprüfung ausgeschlossen.
+
+**Entscheide im Auftrag der Fachstelle durch Claude; nicht von einer Person der Fachstelle geprüft.**
+
+- **RF-1 (SPZ-38):** `borderline.css` Z. 75 (Anspannungskurve) bleibt in `px`; nur Z. 86 («Zwei Sichten») wird umgestellt.
+- **RF-2 (SPZ-11):** `abgleich/rolle.md` Nr. 457 und `abgleich/index.md` Nr. 228 werden mit SP2-K berichtigt.
+- **RF-3 (SPZ-F-19):** Im Plan von `v-vs-anspannung` bleibt «mit Inhalten aus drei weiteren Handouts zur Anspannung», wie beim Eisberg.
+- **RF-4 (SPZ-22):** `404` › `primaryTask` und `v-404-text` › `goal`: «Übersicht» → «Startseite».
+- **RF-5 (SPZ-F-2):** In Schritt 3 entfällt in `shortDescription` der Satz «Entwurf, fachliche Prüfung ausstehend.»
+- **Begründung und Beleg:** `KORREKTUR-SCHLUSSPRUEFUNG-2.md`, Abschnitt 11. Kein neuer sichtbarer Satz; die Liste «Neue Sätze zur Freigabe» der Entscheide bleibt, wie sie ist.
+- Die Statustabelle bleibt unverändert; jede Stufe bleibt «offen».
+
 ## Schlussprüfung · Zusammenführung der beiden Prüfsitzungen (12.10.2026, Stand f1d6572)
 
 Diesen Block hat die Sitzung von Prüfung 2 erstellt, nach `PRUEFAUFTRAG-SCHLUSSPRUEFUNG.md`, Abschnitt 2, IDs «SPZ-». Er führt zwei Blöcke zusammen: «Schlussprüfung · zweite Prüfsitzung» (Prüfung 2, IDs «SP2-») und «Schlussprüfung (12.10.2026, Stand f1d6572)» (Prüfung 1, IDs «SP1-», mit den Berichtigungen aus PR #54). Jeder Befund nennt seine Quelle: Prüfung 1, Prüfung 2 oder beide. Fachliche Entscheide bleiben bei der Fachstelle. Keine Stufe wird «erledigt».

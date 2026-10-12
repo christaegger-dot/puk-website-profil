@@ -2,6 +2,8 @@
 
 Stand 12.10.2026. Gilt für `templates/website/borderline-angehoerige/` auf dem Branch `main`, Stand `2c7078a` (Merge von PR #61). Für eine **bauende Sitzung**. Ersetzt `KORREKTUR-SCHLUSSPRUEFUNG.md` (SP-K); jener Auftrag gilt nicht und wird nicht ausgeführt.
 
+**Nachgeführt am 12.10.2026:** Die Rückfragen RF-1 bis RF-5 sind entschieden, von Claude im Auftrag der Fachstelle (Abschnitt 11). Die Stellen in SP2-K-6, -8, -17 und -25 und Abschnitt 15 sind danach angepasst.
+
 ## 1. Anlass, Grundlage, Stand
 
 - **Anlass:** die Schlussprüfung, zwei unabhängige Prüfungen und ihre Zusammenführung in `PRUEFBERICHT.md`, Block «Schlussprüfung · Zusammenführung der beiden Prüfsitzungen». Darin stehen 60 Befunde (SPZ-1 bis -60, davon 6 wichtig) und 39 Fragen (SPZ-F-1 bis -39).
@@ -20,7 +22,7 @@ Stand 12.10.2026. Gilt für `templates/website/borderline-angehoerige/` auf dem 
   | Verweissatz «manipulieren bewusst» | ein Ziel | zwei Ziele, Wortlaut 3.3 (SP2-K-3) |
   | `/FAQ`, `/Soforthilfe` | neue Weiterleitungen | keine (SPZ-F-39) |
   | alte `-v1`-PDFs | neun Regeln mit Ersatzzielen | nur `-v1`-Fassungen, deren `-v3`-Fassung auf einen Abschnitt leitet (SP2-K-26) |
-  | Guillén et al. (2024), «didaktisch», `404` › `primaryTask` | geändert | bleiben (SPZ-16 bewusst nicht korrigiert; SPZ-26 nur W7 bis W10; W1 bis W3 nur Text und Beschreibung) |
+  | Guillén et al. (2024), «didaktisch» | geändert | bleiben (SPZ-16 bewusst nicht korrigiert; SPZ-26 nur W7 bis W10) |
   | Abgleich des Diagnostik-Teils | in `abgleich/verstehen.md` | in `abgleich/diagnose.md` (SPZ-F-4) |
   | Status im Abgleich | «(SP-K)» | «(SPZ-E)» |
   | Anspannungskurve | bleibt «freigegeben» | `approvalStatus` «ausstehend» bis zur neuen Freigabe (SP2-K-18) |
@@ -63,7 +65,7 @@ Stand 12.10.2026. Gilt für `templates/website/borderline-angehoerige/` auf dem 
 
 - **`content/`:** `404.html`, `behandlung.html`, `beziehungen.html`, `diagnose.html`, `fragen.html`, `genesung.html`, `grenzen.html`, `kommunizieren.html`, `krise.html`, `quellen.html`, `rolle.html`, `selbstfuersorge.html`, `unterstuetzung.html`, `verstehen.html`, je nur an den Stellen dieses Auftrags. `index.html`, `ueber.html` und `impressum-datenschutz.html` ändern sich nicht.
 - **Gebaute Seiten** (`*.html` im Website-Ordner, `sitemap.xml`): nur durch `node tools/build.mjs`.
-- **`site.config.json`:** `description` von `index`, `fragen`, `impressum-datenschutz` und `404` (W3 bis W6); `visualPlan` › `source` von fünf Abbildungen (SP2-K-6); `approvalStatus` von zwei Abbildungen (SP2-K-18); `reason` von drei Textzeilen (SP2-K-21).
+- **`site.config.json`:** `description` von `index`, `fragen`, `impressum-datenschutz` und `404` (W3 bis W6); `primaryTask` von `404` und `goal` von `v-404-text` (SP2-K-8, RF-4); `visualPlan` › `source` von fünf Abbildungen (SP2-K-6); `approvalStatus` von zwei Abbildungen (SP2-K-18); `reason` von drei Textzeilen (SP2-K-21).
 - **`borderline.css`** (SP2-K-15 bis -17, SP2-K-19)
 - **`_redirects`** (SP2-K-26)
 - **`abgleich/`:** die Tabellen `*.md` nach SP2-K-22 bis -25, `README.md` (neue Statuswerte), `kennzahlen.mjs`, `bedienung.mjs` (SP2-K-27)
@@ -166,7 +168,7 @@ Sonst nichts. Insbesondere bleiben `tools/`, `components/`, `guidelines/`, `temp
   | `v-ko-tassen` | «Eigene didaktische Darstellung nach den Handouts «Zuhören ohne Zustimmen» und «Wenn Worte treffen»; …» | «Eigene didaktische Darstellung nach den früheren Handouts «Zuhören ohne Zustimmen» und «Wenn Worte treffen»; …» |
   | `v-ge-trieb` | «Eigene didaktische Darstellung nach den Handouts «Veränderung verläuft unterschiedlich» und «Der Garten»; …» | «Eigene didaktische Darstellung nach den früheren Handouts «Veränderung verläuft unterschiedlich» und «Der Garten»; …» |
 
-- Bei `v-vs-anspannung` bleibt «mit Inhalten aus drei weiteren Handouts zur Anspannung» im Plan, wie es ist. Die Legende nennt diese Handouts nicht; ob das Wort dort auch dazukommt, ist offen (Rückfrage RF-3, Abschnitt 11).
+- Bei `v-vs-anspannung` bleibt «mit Inhalten aus drei weiteren Handouts zur Anspannung» im Plan, wie es ist. Die Legende nennt diese Handouts nicht; wie beim Eisberg bleibt der Plan dort (RF-3, entschieden in Abschnitt 11).
 - Die Zeichnungen bleiben; die Abbildungen bleiben freigegeben, bis auf SP2-K-18 (Entscheide, Abschnitt 4: «Nur ein Wort der Kennzeichnung ändert sich, freigegeben mit dieser Liste»).
 
 ### SP2-K-7 · `genesung` › Abbildung «Ein neuer Trieb» (`v-ge-trieb`), Zeichnung (SPZ-41, SPZ-F-30; Wortlaut 3.7)
@@ -215,7 +217,15 @@ W21 (`editorialStatus`) gehört nicht in diese Korrektur (Abschnitt 11).
 - **W11:** «Für: Partner, Familienmitglieder» steht heute einmal allein und einmal als Anfang von «Für: Partner, Familienmitglieder, enge Freunde»; die Entscheide zählen das als «zweimal». Jede der fünf Fassungen wird durch die Fassung an derselben Stelle der Spalte «neu» ersetzt. Danach steht in `content/unterstuetzung.html` kein «Für: Partner,» und kein «Partner in» mehr ohne «Partnerinnen und».
 - **W8:** «…» heisst: Der Rest des Satzes bleibt.
 - **W3 bis W6** erscheinen in `<meta name="description">` und `og:description`; der Build übernimmt sie.
-- **W1 bis W3:** Die Dachzeile «Übersicht» auf `index` bleibt. `primaryTask` («Von einer nicht vorhandenen Adresse zur Übersicht zurückfinden») und `visualPlan` › `v-404-text` › `goal` («Zur Übersicht zurückfinden») der Seite `404` nennen die Entscheide nicht; sie bleiben (Rückfrage RF-4, Abschnitt 11).
+- **W1 bis W3:** Die Dachzeile «Übersicht» auf `index` bleibt.
+- **Dazu, nach RF-4 (entschieden in Abschnitt 11), in `site.config.json` bei der Seite `404`:**
+
+  | Feld | heute | neu |
+  | --- | --- | --- |
+  | `primaryTask` | «Von einer nicht vorhandenen Adresse zur Übersicht zurückfinden» | «Von einer nicht vorhandenen Adresse zur Startseite zurückfinden» |
+  | `visualPlan` › `v-404-text` › `goal` | «Zur Übersicht zurückfinden» | «Zur Startseite zurückfinden» |
+
+  Beides ist nicht sichtbar auf der Website; `gate.html` zeigt `primaryTask` als «Hauptaufgabe». Kein Satz zur Freigabe.
 
 ## 5. Figuren bei grosser Schrift und im Druck
 
@@ -235,7 +245,7 @@ Leitregel: «Figuren mit frei platzierten Beschriftungen wechseln bei grosser Sc
 
 - **Vorgabe:** ««Zwei Sichten»: Schwelle `@container (max-width:560px)` (`borderline.css` Z. 75, 86) in `rem` oder `em`, wie SPZ-2»
 - **Stelle heute:** Z. 86 `@container (max-width:560px){.bl-sicht{grid-template-columns:minmax(0,1fr)}}`.
-- **Nur Z. 86.** Z. 75 ist die schmale Regel der Anspannungskurve (`.bl-fig`, `.bl-fig--kurve .bl-fig__label`), nicht von «Zwei Sichten». Sie bleibt in `px` (Rückfrage RF-1, Abschnitt 11).
+- **Nur Z. 86.** Z. 75 ist die schmale Regel der Anspannungskurve (`.bl-fig`, `.bl-fig--kurve .bl-fig__label`), nicht von «Zwei Sichten». Sie bleibt in `px` (RF-1, entschieden in Abschnitt 11).
 
 ### Für SP2-K-15 bis -17 gemeinsam
 
@@ -272,7 +282,7 @@ Leitregel: «Figuren mit frei platzierten Beschriftungen wechseln bei grosser Sc
 
 - **Vorgabe (Entscheide, Abschnitt 6):** «Nur die Schleife: Die Kennzeichnung im Druck an die Darstellung binden (Regel in `borderline.css`, nur mit Tokens), so dass Titel, Kernaussage, Darstellung und Kennzeichnung auf einer A4-Seite stehen. Für `v-vs-anspannung` und `v-bz-sichten`: im Prüfbericht als begründete Ausnahme eintragen, bis das Profil geändert ist (SPZ-F-32, 5.6 Nr. 1)»
 - **Druck prüfen:** `beziehungen` als PDF (A4, Chromium) vor und nach der Änderung; danach stehen Titel, Kernaussage, Darstellung und Kennzeichnung der Schleife auf einer Seite. Die Regel gilt nur für die Schleife (z. B. über `[data-visual-id="v-bz-schleife"]`, wie Z. 166 für «Ein neuer Trieb»).
-- **Eintrag im Prüfbericht:** Setze diesen Unterabschnitt unverändert direkt nach «### Entscheide zur Schlussprüfung (12.10.2026, im Auftrag der Fachstelle)» und vor «## Schlussprüfung · Zusammenführung der beiden Prüfsitzungen …» ein. Der Wortlaut stammt aus den Entscheiden, Abschnitt 5.6 Nr. 1 und Abschnitt 6.
+- **Eintrag im Prüfbericht:** Setze diesen Unterabschnitt unverändert direkt nach «### Entscheide zu den Rückfragen RF-1 bis RF-5 (Korrekturauftrag SP2-K, 12.10.2026, im Auftrag der Fachstelle)» und vor «## Schlussprüfung · Zusammenführung der beiden Prüfsitzungen …» ein. Der Wortlaut stammt aus den Entscheiden, Abschnitt 5.6 Nr. 1 und Abschnitt 6.
 
 ```
 ### Begründete Ausnahme · Druckregel (SPZ-F-32)
@@ -377,10 +387,12 @@ Nur Plantext in `site.config.json`, nichts Sichtbares. Vorgaben der Entscheide (
   | `kommunizieren.md` | 466 | «entfällt», die Aussage steht auf `fragen` › `behandlung` («Ob jemand eine Therapie beginnt, entscheidet die betroffene Person.») | SP2-W1B-5 (E2) |
   | `quellen.md` | 490 | «entfällt», die Aussage steht auf `fragen` › `gespraeche` | SP2-W1B-5 (E3) |
   | `quellen.md` | 175, 162 | «übernommen», aber gekürzt (First et al. 2017: «Arlington, VA» → «Arlington»; Bundesamt für Statistik: «(BFS)» entfällt) | SP1-15 |
+  | `rolle.md` | 457 | «verschoben», aber umformuliert, und «Temperament» entfällt (`grep -c Temperament content/*.html`: 0). Neu: «umformuliert (SPZ-E)»; die Bemerkung nennt «Temperament» als entfallen | SP2-W1B-4; RF-2 |
+  | `index.md` | 228 | «entfällt», die Aussage steht aber auf `quellen` › `begriffe`, Begriff «Grenzen setzen»: «Klar sagen, was für Sie möglich, sicher und tragbar ist.» Neu: «umformuliert (SPZ-E)», Fundstelle `quellen#begriffe` | SP2-W1B-5 (E20); RF-2 |
 
 - Die Belege stehen in `PRUEFBERICHT.md`: Prüfung 1, Teile 5.1 d und e; Prüfung 2, Teil 5.1 Punkt 3 (W1B), Befunde SP2-W1B-3 bis -5.
 - Nur Status, Fundstelle, Neue Fassung und Bemerkung, kein Seitentext. «übernommen» nur, wenn inhaltlich gleich (`abgleich/README.md`, «Statuswerte»); sonst «gekürzt» oder «umformuliert», und die Bemerkung nennt, was entfällt. «entfällt» nur, wenn die Aussage nicht auf der Website steht; sonst Status und Fundstelle nachführen.
-- `rolle.md` Nr. 457 (SP2-W1B-4) und `index.md` Nr. 228 (SP2-W1B-5) stehen in den Befunden von Prüfung 2, aber nicht in der Liste von SPZ-11. Sie bleiben (Rückfrage RF-2, Abschnitt 11).
+- `rolle.md` Nr. 457 und `index.md` Nr. 228 stehen nicht im Befundtext von SPZ-11, aber in dessen Quellen SP2-W1B-4 und -5. Sie gehören dazu (RF-2, entschieden in Abschnitt 11). Damit stehen 22 Zeilen in dieser Tabelle, dazu Nr. 91, 240 und 288 aus SP2-K-23.
 
 ## 9. Weiterleitungen (SP2-K-26; SPZ-54)
 
@@ -422,17 +434,17 @@ Danach läuft `node abgleich/kennzahlen.mjs` ohne Fehler.
 - **Ohne eigene Handlung in der Korrektur:** SPZ-14 (Entscheide 6): «`404` freigegeben mit diesem Dokument (Abschnitt 4)»; SPZ-15: «SPZ-F-8» (= SP2-K-5).
 - **Die Freigabe** der neuen Sätze gilt mit Abschnitt 4 der Entscheide für den dort stehenden Wortlaut. Die Freigabe der Abbildungen `v-vs-anspannung` und `v-ge-trieb` folgt nach der Nachprüfung (SP2-K-18).
 
-### Offene Rückfragen an die Fachstelle
+### Entscheide zu den Rückfragen RF-1 bis RF-5
 
-Die Sitzung, die diesen Auftrag geschrieben hat, hat in den Entscheiden Lücken gefunden, die sich nicht ohne Rückfrage in einen Wortlaut übersetzen lassen. Sie stehen im PR zu diesem Auftrag. **Bis zur Antwort gilt die Spalte «bis dahin».** Liegt eine Antwort der Fachstelle vor, gilt sie.
+**12.10.2026 · von Claude im Auftrag der Fachstelle entschieden.** Der Auftrag nannte zuerst fünf Lücken in den Entscheiden als Rückfragen an die Fachstelle. Die Fachstelle hat am 12.10.2026 entschieden, dass Claude sie anstelle der Fachstelle entscheidet («DU sollst für die Fachstelle entscheiden und diese Pendenzen erledigen!»). Entschieden hat die Sitzung, die diesen Auftrag geschrieben hat. Sie hat an der Website weder gebaut, korrigiert noch geprüft und ist von Korrektur und Nachprüfung ausgeschlossen. Massstäbe wie bei den Entscheiden (`ENTSCHEIDAUFTRAG-SCHLUSSPRUEFUNG.md`, Abschnitt 4, M1 bis M7). Keiner der Entscheide bringt einen neuen sichtbaren Satz; die Liste «Neue Sätze zur Freigabe» der Entscheide bleibt, wie sie ist.
 
-| Nr. | Frage | Bezug | bis dahin |
-| --- | --- | --- | --- |
-| RF-1 | Gilt die Umrechnung in `rem` oder `em` auch für `borderline.css` Z. 75? Die Entscheide nennen bei «Zwei Sichten» Z. 75 und 86; Z. 75 ist aber die schmale Regel der Anspannungskurve (`.bl-fig`). | SPZ-38, SP2-K-17 | nur Z. 86 |
-| RF-2 | Sollen auch `rolle.md` Nr. 457 (SP2-W1B-4) und `index.md` Nr. 228 (SP2-W1B-5) berichtigt werden? Sie stehen in den Befunden von Prüfung 2, nicht in der Liste von SPZ-11. | SPZ-11, SP2-K-25 | bleiben |
-| RF-3 | Kommt «früheren» im Plan von `v-vs-anspannung` auch zu «mit Inhalten aus drei weiteren Handouts zur Anspannung»? Die Legende nennt diese Handouts nicht. | SPZ-F-19, SP2-K-6 | bleibt |
-| RF-4 | Ändern sich mit W1 bis W3 auch `404` › `primaryTask` («… zur Übersicht zurückfinden») und `v-404-text` › `goal` («Zur Übersicht zurückfinden»)? Beide sind nicht sichtbar. | SPZ-22, SP2-K-8 | bleiben |
-| RF-5 | Ändert sich in Schritt 3 mit `editorialStatus` auch `shortDescription` («… Entwurf, fachliche Prüfung ausstehend.»)? Nicht Teil dieser Korrektur. | SPZ-F-2, Schritt 3 | bleibt |
+| Nr. | Frage | Entscheid | Begründung und Beleg | Folge |
+| --- | --- | --- | --- | --- |
+| RF-1 | Gilt die Umrechnung in `rem` oder `em` auch für `borderline.css` Z. 75? | **Nein.** Z. 75 bleibt in `px`; umgestellt wird nur Z. 86. | SPZ-38 betrifft nur «Zwei Sichten» («Schwelle `@container (max-width:560px)` in px; bei 768 px mit 200 % zwei schmale Spalten, «Unterstützung» bricht im Wort», `PRUEFBERICHT.md`, SPZ-38). Z. 75 hat dieselbe Schwelle, gehört aber zur Anspannungskurve (`.bl-fig`). Deren Verhalten bei grosser Schrift regelt schon Z. 62 in `em` (NK31-1, `FREIGABE-ETAPPE-2C-3-1.md` Abschnitt 3 d, freigegeben). Gemessen: Container bei 1280 und 1440 px 1104 px; Z. 75 in `rem` (35rem) griffe bei 200 % Schrift (1120 px) und würde die Zeichnung nur auf `calc(var(--space-20) * 5)` = 400 px verkleinern, die Beschriftungen blendet Z. 62 dann schon aus. Eine kleinere Zeichnung bei grösserer Schrift widerspricht der Leitlinie («Bei grösserer Schrift wächst die Zeichnung mit», `guidelines/07-visualisierung-umsetzen.md` Z. 74). M4. | SP2-K-17 |
+| RF-2 | Sollen `abgleich/rolle.md` Nr. 457 und `abgleich/index.md` Nr. 228 mit berichtigt werden? | **Ja**, nach denselben Regeln wie die übrigen Zeilen in SP2-K-25. | SPZ-11 nennt als Quelle «SP2-W1B-3, -4, -5». SP2-W1B-4 nennt `rolle.md` Nr. 457, SP2-W1B-5 nennt `index.md` Nr. 228 (`PRUEFBERICHT.md`, Befunde SP2-W1B-4 und -5, Stichprobe E20). Die Liste im Befundtext hat sie ausgelassen, die Zusammenführung hat sie nicht verworfen. Gleiche Fehlerart, nur Abgleich, kein Seitentext (M4). Nachgesehen: «Temperament» steht auf keiner Seite; «Klar sagen, was für Sie möglich, sicher und tragbar ist.» steht auf `quellen` › `begriffe`. | SP2-K-25, zwei Zeilen mehr |
+| RF-3 | Kommt «früheren» im Plan von `v-vs-anspannung` auch zu «mit Inhalten aus drei weiteren Handouts zur Anspannung»? | **Nein.** Der Teil bleibt, wie er ist. | Die Entscheide regeln den gleichen Fall beim Eisberg: «Beim Eisberg (`v-vs-eisberg`) nennt nur der Plan das Handout, die Legende nicht; dort bleibt der Plan, wie er ist.» (Wortlaut 3.6). Die drei weiteren Handouts nennt ebenfalls nur der Plan. Der Grund von SPZ-F-19 (Lesende suchen «das Handout» vergeblich) betrifft nur die sichtbaren Legenden. M1, M4. | SP2-K-6 |
+| RF-4 | Ändern sich mit W1 bis W3 auch `404` › `primaryTask` und `v-404-text` › `goal`? | **Ja.** «Übersicht» wird in beiden Feldern «Startseite»; Wortlaut in SP2-K-8. | SPZ-22: Die Startseite hat zwei Namen; die Entscheide wählen «Startseite», «Name wie im `<title>` und im Logo» (W1). Beide Felder beschreiben den Link, der nach W2 «Zur Startseite» heisst. `gate.html` zeigt `primaryTask` als «Hauptaufgabe» (`tools/gate-browser.js` Z. 8). Nur dieses Wort ändert sich; nicht sichtbar auf der Website, kein Satz zur Freigabe. Regel «Ein Satz steht an mehreren Stellen» (Abschnitt 2). | SP2-K-8 |
+| RF-5 | Ändert sich in Schritt 3 mit `editorialStatus` auch `shortDescription`? | **Ja, in Schritt 3:** Der Satz «Entwurf, fachliche Prüfung ausstehend.» entfällt. Neu: «Psychoedukative Website der Fachstelle Angehörigenarbeit PUK für Angehörige von Menschen mit Borderline.» | Nach Schritt 3 wäre der Satz falsch (SPZ-F-2). Den Status mit Datum trägt `editorialStatus`. Ein zweiter Ort mit Status müsste bei jeder neuen Freigabe mitgeführt werden («Ändert sich danach ein Inhalt …, wird das Datum mit der neuen Freigabe nachgeführt», SPZ-F-2). `shortDescription` steht auf keiner gebauten Seite; es ist nur ein Pflichtfeld (`tools/contract.js` Z. 190). Die Website «Depression» im selben Repository nennt in `shortDescription` keinen Status. Der erste Satz bleibt wörtlich. | Abschnitt 15, Schritt 3; nicht Teil von SP2-K |
 
 ## 12. Selbstprüfung (SP2-K-28)
 
@@ -494,7 +506,7 @@ Reihenfolge nach Abschnitt 6 der Entscheide; die Handlungen der Fachstelle nach 
    - den Abgleich (Stichprobe aus SP2-K-22 bis -25, `pruefe-abgleich.mjs`) und `verwendet-auf.mjs` in beiden Modi;
    - SPZ-6: PR `christaegger-dot/borderline-angehoerige#659` ist weiter ein Entwurf (`draft: true`), nur lesen;
    - dass an Netlify und im Repository `christaegger-dot/borderline-angehoerige` nichts geändert wurde.
-2. **Freigabe eintragen** (Entscheide, Abschnitt 6, Schritt 3): Eine Entscheidsitzung trägt im Auftrag der Fachstelle die neue Freigabe der zwei Abbildungen ein. Danach setzt eine bauende Sitzung `editorialStatus` auf «Fachlich freigegeben am TT.MM.JJJJ» (W21, Datum nach SPZ-F-2) und die 98 Textzeilen des Plans auf «freigegeben» (SPZ-F-3), baut neu und trägt die Freigabe in den Prüfbericht ein.
+2. **Freigabe eintragen** (Entscheide, Abschnitt 6, Schritt 3): Eine Entscheidsitzung trägt im Auftrag der Fachstelle die neue Freigabe der zwei Abbildungen ein. Danach setzt eine bauende Sitzung `editorialStatus` auf «Fachlich freigegeben am TT.MM.JJJJ» (W21, Datum nach SPZ-F-2), kürzt `shortDescription` auf «Psychoedukative Website der Fachstelle Angehörigenarbeit PUK für Angehörige von Menschen mit Borderline.» (RF-5), setzt die 98 Textzeilen des Plans auf «freigegeben» (SPZ-F-3), baut neu und trägt die Freigabe in den Prüfbericht ein.
 3. **Vor R1** (Entscheide, Abschnitt 6, Schritt 4, und Abschnitt 5): rechtliche Prüfung (5.5) und SPZ-F-21; Release-Kandidat mit `--production` auf der Vorschau (5.1 Nr. 3); reale Tests (5.4). Danach R1, R2, R3. NK-F-3 bis spätestens vor R3.
 
 ## 16. Startnachricht für die bauende Sitzung
@@ -506,7 +518,8 @@ Setze den Korrekturauftrag KORREKTUR-SCHLUSSPRUEFUNG-2.md (Korrektur «SP2-K») 
 Website templates/website/borderline-angehoerige/ um. Grundlage sind die Entscheide in
 ENTSCHEIDE-SCHLUSSPRUEFUNG.md im selben Ordner, Fassung aus PR #60 mit dem Nachtrag aus
 PR #61, von Claude im Auftrag der Fachstelle entschieden (Delegation vom 12.10.2026).
-KORREKTUR-SCHLUSSPRUEFUNG.md (SP-K) gilt nicht; übernimm daraus nichts.
+KORREKTUR-SCHLUSSPRUEFUNG.md (SP-K) gilt nicht; übernimm daraus nichts. Die Rückfragen
+RF-1 bis RF-5 sind entschieden (Abschnitt 11 des Auftrags).
 Du bist die bauende Sitzung. An der Schlussprüfung, ihrer Zusammenführung, den
 Entscheiden und am Korrekturauftrag hast du nicht mitgearbeitet.
 Lies zuerst CLAUDE.md, guidelines/00-ablauf-pruefung-und-freigabe.md, den Korrekturauftrag
