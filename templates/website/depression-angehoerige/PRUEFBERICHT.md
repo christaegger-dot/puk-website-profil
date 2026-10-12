@@ -14,7 +14,7 @@ Gehört zur Website in diesem Ordner (`templates/website/depression-angehoerige/
 
 | Stufe | Status | Datum | Geprüft durch | Ergebnis |
 | --- | --- | --- | --- | --- |
-| W1 Fachliche Prüfung | offen | 10./11./12.10.2026 | Prüfsitzung (Claude Code, hat nicht gebaut); Runde 4: zweite Prüfsitzung (Claude Code, hat nicht gebaut); Runde 5: dritte Prüfsitzung (Claude Code, hat nicht gebaut und die nachgeprüften Befunde nicht umgesetzt) | Runde 1: 25 Befunde, 21 Fragen an die Fachstelle; Seiteninventar für W2. Runde 2 (`f413f69`): 19 erledigt, 4 teilweise, 2 offen; 5 neue (W1-26 bis W1-30). Runde 3 (`9ff948b`): W1-26 bis W1-30 erledigt, W1-21 entfällt (Entscheid). Runde 4 (`e63bd73`): W1-10 bis auf drei Stellen am Original erledigt, Impressum, Datenschutz und 404 geprüft; 2 neue Befunde (W1-31 wichtig, W1-32 optional). Runde 5 (`5f68c39`): W1-32 erledigt; 33 geänderte Stellen je einem Befund zugeordnet, keine Aussage still entfallen; neue Erklärungen (R2-03), Beispielsätze (R2-05) und die Sätze im Kreislauf (R2-04) als Prüfbedarf an W1-F-21; keine neuen Befunde. Offen: W1-09 Rest, W1-10 Rest, W1-25, W1-31, W1-F-15, W1-F-19, W1-F-21 |
+| W1 Fachliche Prüfung | offen | 10./11./12.10.2026 | Prüfsitzung (Claude Code, hat nicht gebaut); Runde 4: zweite Prüfsitzung (Claude Code, hat nicht gebaut); Runde 5: dritte Prüfsitzung (Claude Code, hat nicht gebaut und die nachgeprüften Befunde nicht umgesetzt); Nachtrag W1-F-19: Codex, unabhängige Quellenprüfung (hat nicht gebaut) | Runde 1: 25 Befunde, 21 Fragen an die Fachstelle; Seiteninventar für W2. Runde 2 (`f413f69`): 19 erledigt, 4 teilweise, 2 offen; 5 neue (W1-26 bis W1-30). Runde 3 (`9ff948b`): W1-26 bis W1-30 erledigt, W1-21 entfällt (Entscheid). Runde 4 (`e63bd73`): W1-10 bis auf drei Stellen am Original erledigt, Impressum, Datenschutz und 404 geprüft; 2 neue Befunde (W1-31 wichtig, W1-32 optional). Runde 5 (`5f68c39`): W1-32 erledigt; 33 geänderte Stellen je einem Befund zugeordnet, keine Aussage still entfallen; neue Erklärungen (R2-03), Beispielsätze (R2-05) und die Sätze im Kreislauf (R2-04) als Prüfbedarf an W1-F-21; keine neuen Befunde. Nachtrag 12.10.2026 (`5f68c39`): Quellenabgleich W1-F-19 für die drei Angebote abgeschlossen, Textpräzisierung K1 (VASK, zwei Stellen) offen; keine Gesamtfreigabe. Offen: W1-09 Rest, W1-10 Rest, W1-25, W1-31, W1-F-15, W1-F-19 (nur noch K1), W1-F-21 |
 | W2 Gesamtkohärenz | erledigt | 10./11.10.2026 | Prüfsitzung (Claude Code, hat nicht gebaut; dieselbe wie W1) | Runde 1: Aufbau trägt, 11 Befunde, 8 Fragen. Runde 2 (Stand `f413f69`): alle Befunde erledigt, W2-08 an S übergeben; keine neuen Befunde. Nicht neu geprüft in Runde 4 (Auftrag); neu sind nur Impressum, Datenschutz, 404 und das Menü |
 | S Sprach-Review | offen | 11./12.10.2026 | Prüfsitzung (Claude Code, hat nicht gebaut; dieselbe wie W1 und W2); Runde 3: zweite Prüfsitzung; Runde 4: dritte Prüfsitzung | Runde 1 (`f413f69`): 27 Befunde, 2 Fragen. Runde 2 (`9ff948b`): alle 27 umgesetzt, Textfassung mit S-F-01 freigegeben; 3 neue, optionale Befunde (S-28 bis S-30). Runde 3 (`e63bd73`): S-28 bis S-30 erledigt; neue Seiten geprüft, 2 neue, optionale Befunde (S-31, S-32). Runde 4 (`5f68c39`, dritte Prüfsitzung): S-31 und S-32 erledigt; alle geänderten Sätze geprüft; 1 neuer, optionaler Befund (S-33) |
 | Visualisierungs-Check | offen | 11./12.10.2026 | Prüfsitzung (Claude Code, hat nicht gebaut; dieselbe wie W1, W2 und S); Runde 2: zweite Prüfsitzung; Runde 3: dritte Prüfsitzung | Runde 1: Matrix 11 × 17, V-01 bis V-07. Runde 2 (`e63bd73`): Matrix 11 × 19; V-01 bis V-07 erledigt; 2 neue, optionale Befunde (V-08, V-09); fachliche Freigabe der 11 Darstellungen fehlt weiterhin (Punkt 14). Runde 3 (`5f68c39`, dritte Prüfsitzung): V-08 und V-09 (Website-Teil) erledigt; Matrix für die 9 geänderten Figuren neu, die «teilweise» aus Runde 2 in den Punkten 15 bis 19 erledigt; 2 neue, optionale Befunde (V-10 Profil, Punkt 8 Kreislauf; V-11 Website, Punkt 19 Vergleich der Behandlungen); Punkt 14 weiterhin nicht erfüllt |
@@ -24,9 +24,11 @@ Gehört zur Website in diesem Ordner (`templates/website/depression-angehoerige/
 | R2 Visualisierung und Laienverständlichkeit | offen | 11./12.10.2026 | zweite Prüfsitzung (Claude Code, hat nicht gebaut); Runde 2: dritte Prüfsitzung (hat die Befunde nicht umgesetzt) | Matrix 11 × 25, Bildsprache je Figur (8 tragen, 3 überarbeiten), Lesetest für 41 Abschnitte, Kennzahlen je Seite; 2 wichtige Befunde (R2-01 Text, der die Zeichnung beschreibt; R2-02 gestrichelte Linie bei Antidepressiva), 5 optionale; ersetzt keinen Lesetest mit Angehörigen. Runde 2 (`5f68c39`): R2-01 bis R2-07 erledigt (Website-Teil); Bildsprache 10 tragen, 1 überarbeiten (`v-ra-vergleich`); Lesetest und Kennzahlen nachgeführt; 1 neuer, optionaler Befund (R2-08) |
 | R3 Freigabe-Audit | offen | | | «Go», «Go mit Auflagen» oder «No-Go»; noch nicht durchgeführt (W1-F-21 und die realen Screenreader-Läufe fehlen) |
 
-### Offene Punkte nach Zuständigkeit (dritte Prüfsitzung, 12.10.2026, Stand `5f68c39`)
+### Offene Punkte nach Zuständigkeit (dritte Prüfsitzung, 12.10.2026, Stand `5f68c39`; nachgeführt mit dem Nachtrag W1-F-19)
 
 Ersetzt die Fassung vom Stand `e63bd73`. Die dort offene Nachprüfung von R2-01 bis R2-07, W1-32, V-08, V-09, S-31, S-32 und R1-03 ist gemacht: alle umgesetzt wie beschrieben, jede Abweichung vom Vorschlag vertretbar (Nachweise in den Runden vom Stand `5f68c39` unter «Visualisierungs-Check», «Befunde je Stufe» und «Pre-Release-Audits»). Neu sind fünf optionale Befunde (S-33, V-10, V-11, BD-12, R2-08). Code- und Textbefunde setzt die bauende Sitzung erst nach Freigabe durch die Fachstelle um.
+
+Nachgeführt am 12.10.2026 mit dem Nachtrag W1-F-19 (Quellen- und Linkabgleich, unten) beim Zusammenführen mit `main` (`1bcce0a`). An der Website hat sich seit `5f68c39` nichts geändert: `git diff 5f68c39 1bcce0a` betrifft nur diesen Bericht. Neu aus dem Nachtrag ist nur K1 (VASK, zwei Textstellen); die übrigen Punkte gelten unverändert.
 
 **Fachstelle**
 
@@ -36,7 +38,7 @@ Ersetzt die Fassung vom Stand `e63bd73`. Die dort offene Nachprüfung von R2-01 
   - die Sätze im Kreislauf (R2-04), besonders Station 4 «Er fühlt sich unverstanden.»: Die bauende Sitzung hat sie der erkrankten Person zugeordnet und sich dafür auf den freigegebenen Plan berufen («die Person fühlt sich unverstanden und zieht sich weiter zurück»);
   - die neuen Kurztexte aus R2-01, darunter «Die Übersicht beantwortet Fragen, die Angehörige oft stellen: …» (Liste in W1, Prüfrunde 5).
 - W1-F-15: das Boot-Bild mit dem Arbeitsheft abgleichen.
-- W1-F-19: die Angebote prüfen (Gruppe der VASK Zürich für erwachsene Kinder, HelpLine von Stand by You, Gruppen von Equilibrium).
+- W1-F-19: Quellen- und Linkabgleich am 12.10.2026 abgeschlossen (Nachtrag unten). Stand by You und EQUILIBRIUM bestätigt; bei VASK ist K1 an zwei Textstellen offen (Flyer: neue Gruppe im Aufbau). Offen ist der Entscheid über K1: den vorgeschlagenen Wortlaut (Nachtrag, Abschnitt 4) für `rechte-und-angebote` › `angebote` und `je-nach-rolle` › `erwachsene-kinder` übernehmen, anpassen oder verwerfen. Keine fachliche Freigabe erteilt.
 - W1-31: Impressum und Datenschutz rechtlich prüfen lassen (mit der PUK): Widerspruch «keine Daten an andere Anbieter» und Netlify, geltendes Recht, verantwortliche Stelle, Aufbewahrung der Protokolle, Postadresse; dabei den Wortlaut aus S-32 («Herausgeberin: Fachstelle Angehörigenarbeit der Psychiatrischen Universitätsklinik Zürich», «… kein offizielles Angebot der Klinik als Ganzes») und den Vermerk aus W1-32.
 - Prüfbedarf aus R1 (Punkt 18), unverändert offen: Gehört nach «Sie dürfen ein Gespräch beenden und den Raum verlassen» (`fuer-sich-sorgen` › `grenzen`) der Verweis im Text?
 - Neue optionale Befunde der Website entscheiden (umsetzen oder zurückstellen): S-33 (Kurztext Kreislauf, Bezug von «wer sich unverstanden fühlt»), V-11 («nebeneinander» vor dem Vergleich der Behandlungen), BD-12 (Kurzbeschreibung Kreislauf für Screenreader), R2-08 (gleiche Zeilen im Rechte-Vergleich zusammenfassen).
@@ -44,6 +46,7 @@ Ersetzt die Fassung vom Stand `e63bd73`. Die dort offene Nachprüfung von R2-01 
 **Bauende Sitzung** (nach Freigabe)
 
 - S-33, V-11, BD-12 und R2-08 nach dem Entscheid der Fachstelle.
+- K1 (W1-F-19) nach dem Entscheid der Fachstelle an beiden Stellen umsetzen, beim Gruppenhinweis mit Link auf die Treffpunkte der VASK Zürich (Nachtrag, Abschnitt 4); den Stand-Vermerk «Angaben zu den Angeboten: Stand 10.10.2026» nicht pauschal ändern.
 - W1-09 Rest und W1-10 Rest: Abrufdaten, PatG § 19, NVL-Kapitel, Programmname «Familiencoach Depression», «drei bis vier Wochen», BAG «allgemein informieren» am Original prüfen, sobald die Originale erreichbar sind.
 - BD-09 / W3-10 Rest: Dateigrössen der 7 PDF-Dateien nachtragen.
 - Selbstprüfung (Arbeitsstand, kein Befund): Punkt 18 stützt den Beleg zu 200 % auf die Messung vom Stand `e63bd73`, obwohl seither 9 Figuren geändert wurden (Ergebnis in Visualisierungs-Check, Runde 3, bestätigt); Punkt 17 nennt noch die Massnahme «Lesart der K-Form beurteilen», die seit Runde 1 beantwortet ist.
@@ -61,11 +64,122 @@ Ersetzt die Fassung vom Stand `e63bd73`. Die dort offene Nachprüfung von R2-01 
 
 **Prüfung durch Personen oder weitere Prüfsitzungen**
 
-- W1-25: Leitlinien, Recht, Statistiken und Angebote am Original prüfen. Aus der Prüfumgebung sind die Originale weiterhin gesperrt.
+- W1-25: Leitlinien, Recht, Statistiken und weitere Angebote am Original prüfen. Ausnahme seit 12.10.2026: Die drei Angebote aus W1-F-19 wurden am Original geprüft (Nachtrag unten); die übrigen Teilprüfungen bleiben offen. Aus der Prüfumgebung der dritten Prüfsitzung waren die Originale gesperrt.
 - Mindestens zwei reale Screenreader-Läufe (Protokollvorlage unter «Bedienung und Barrierefreiheit») und ein Test mit Hardwaretastatur und auf einem realen Touch-Gerät; dabei den Kreislauf mit den neuen Sätzen und seine Kurzbeschreibung anhören (BD-12).
-- Die 69 externen Links prüfen (66 aus Runde 1 und 3 neue Quellen; seither keine neuen).
+- Die 69 externen Links prüfen (66 aus Runde 1 und 3 neue Quellen; seither keine neuen). Teilnachweis vom 12.10.2026: die drei bestehenden Anbieterlinks aus W1-F-19 geprüft; kein Gesamtabschluss des Linktests.
 - Lesetest mit Angehörigen, wo möglich trialogisch (R2 ersetzt ihn nicht).
-- Nach weiteren Korrekturen (S-33, V-11, BD-12, R2-08, Freigabe-Änderungen aus W1-F-21): die betroffenen Stufen in einer Sitzung nachprüfen, die die Korrekturen nicht umgesetzt hat. R3 erst, wenn W1-F-21 und die realen Screenreader-Läufe vorliegen.
+- Nach weiteren Korrekturen (S-33, V-11, BD-12, R2-08, K1, Freigabe-Änderungen aus W1-F-21): die betroffenen Stufen in einer Sitzung nachprüfen, die die Korrekturen nicht umgesetzt hat; bei K1 genügt der Abgleich der zwei geänderten Stellen und des Linkziels (Nachtrag, Abschnitt 4). R3 erst, wenn W1-F-21 und die realen Screenreader-Läufe vorliegen.
+
+## Nachtrag W1-F-19 · Quellen- und Linkabgleich (12.10.2026)
+
+**Geprüft durch:** Codex, unabhängige Quellenprüfung; diese Sitzung hat die Website nicht erstellt und ändert ausschliesslich diesen Prüfbericht.
+
+**Ergebnis:** Die Quellenprüfung für die drei Angebote ist abgeschlossen. Stand by You und EQUILIBRIUM sind im bestehenden Wortlaut redaktionell bestätigt. Bei VASK ist das aufgeführte Angebot bestätigt, der laufende Betrieb der Gruppe für erwachsene Kinder jedoch nicht eindeutig nachgewiesen: Der verlinkte Flyer beschreibt eine neue Gruppe im Aufbau. Die unten formulierte Präzisierung K1 ist offen. **W1 insgesamt bleibt offen; insbesondere W1-F-15 und W1-F-21 bleiben vorbehalten.** Dieser Nachtrag ist keine fachliche Freigabe der Texte oder Visualisierungen und keine Veröffentlichungsfreigabe.
+
+### 1. Prüfstand und genaue Fundstellen
+
+[PR #19](https://github.com/christaegger-dot/puk-website-profil/pull/19) wurde laut GitHub am **11.10.2026 um 21:49:01 UTC** zusammengeführt (Merge `e63bd73ef9d4686845dadca0ce0da39811d1d226`). Sein letzter Head war `51892c5a9e48e4851aa8bc06ccb3e0c6b238f27a`; der Branch `website/depression-angehoerige-pruefung` war beim Abruf nicht mehr auflösbar. Deshalb wurden dieser feste PR-Stand und der aktuelle Stand `5f68c39a855fe25e713fd9cacda013dd46109f8c` abgeglichen. Die drei Angebotseinträge sowie ihr Datumsvermerk sind in beiden Ständen wortgleich.
+
+**Seite:** «Rechte und Unterstützung im Kanton Zürich», Abschnitt `#angebote` / «Unterstützung für Angehörige», Datei `content/rechte-und-angebote.html`. [Fester Dateistand](https://github.com/christaegger-dot/puk-website-profil/blob/5f68c39a855fe25e713fd9cacda013dd46109f8c/templates/website/depression-angehoerige/content/rechte-und-angebote.html).
+
+| Fundstelle | Tatsächlicher Wortlaut ohne Linklabel | Bewertung |
+| --- | --- | --- |
+| Zeile 32, «Im Kanton Zürich» / VASK Zürich | «Beratung, offene Treffpunkte in Zürich und Winterthur, Angehörigenkurse, Gruppe für erwachsene Kinder.» | Beratung, offene Treffpunkte und Kursangebot bestätigt. Beim letzten Teil Zielgruppe und Angebotsstand präzisieren: geschlossener Treffpunkt für erwachsene Kinder psychisch erkrankter Eltern; Flyer nennt neue Gruppe im Aufbau. |
+| Zeile 37, «In der ganzen Schweiz» / Stand by You Schweiz | «Verband der Angehörigen psychisch erkrankter Menschen, früher VASK Schweiz; kostenlose, anonyme HelpLine, beantwortet von geschulten Angehörigen.» | Bestätigt; keine notwendige Textkorrektur. Anbieter bezeichnet sich als Dachorganisation/Verein und bestätigt die Umbenennung Anfang 2024. Seine HelpLine-Seite belegt Kostenfreiheit, Anonymität und Ausbildung in Telefonbegleitung. |
+| Zeile 39, «In der ganzen Schweiz» / Equilibrium | «Verein für Menschen mit Depression; Selbsthilfegruppen in der Region und online, auch für Angehörige.» | Auf Ebene des Vereinsangebots bestätigt; keine notwendige Textkorrektur. Kein Nachweis, dass an jedem regionalen Standort eine eigene Angehörigengruppe besteht; das behauptet der Eintrag auch nicht ausdrücklich. |
+| Zeile 43 | «Angaben zu den Angeboten: Stand 10.10.2026, vor der Veröffentlichung zu prüfen.» | Nicht pauschal auf «alle Angebote geprüft» ändern: Diese Nachprüfung umfasst nur die drei hier genannten Anbieter. |
+
+Mitgeprüft wurde der bereits in W1-F-19 erwähnte Querverweis: [ `content/je-nach-rolle.html`, Zeile 58](https://github.com/christaegger-dot/puk-website-profil/blob/5f68c39a855fe25e713fd9cacda013dd46109f8c/templates/website/depression-angehoerige/content/je-nach-rolle.html#L58), Abschnitt `#erwachsene-kinder`: Dort wird die VASK-Gruppe ebenfalls ohne Hinweis auf den Aufbau genannt. K1 betrifft beide Stellen.
+
+### 2. Aussage- und Zugangsabgleich
+
+#### VASK Zürich
+
+- **Beratung und Kurse:** Die Beratungsstelle richtet sich an Angehörige und weitere nahestehende Personen; Kontaktaufnahme und Terminvereinbarung sind vorgesehen. Die persönliche Beratung hat gestaffelte Gebühren für Mitglieder und Nichtmitglieder [V3]. Der Angehörigenkurs «Wegweiser» ist ausgeschrieben, mit Anmeldung beziehungsweise Warteliste; die Kursseite nennt CHF 150 für Mitglieder und CHF 200 für Nichtmitglieder, aber keinen nächsten Kursbeginn [V4]. Das bestehende Wort «Beratung» oder «Angehörigenkurse» verspricht weder Kostenfreiheit noch sofortige Teilnahme und kann bleiben.
+- **Offene Treffpunkte:** Zürich und Winterthur sowie die Zielgruppe Angehörige/Freundeskreis sind bestätigt [V1]. Der Flyer 2026 nennt für diese beiden offenen Treffen keine Anmeldepflicht [V5, Seite 1 und Seite 2 unten]. Diese Zugangserleichterung darf nicht auf die geschlossene Gruppe übertragen werden.
+- **Erwachsene Kinder:** Die Angebotsseite führt einen geschlossenen Treffpunkt für erwachsene Kinder psychisch erkrankter Eltern auf und verweist für Informationen und Anmeldung an `treffpunkte@vaskzuerich.ch` [V1, letzte Angebotsüberschrift]. Der dort direkt verlinkte einseitige Flyer enthält jedoch «Neue Gruppe im Aufbau» [V2, Seite 1 unter der Zielgruppe]. Der aktuelle Anbieterauftritt belegt somit das ausgeschriebene Angebot und den Anmeldeweg, aber keinen bereits laufenden regelmässigen Betrieb, Starttermin oder freien Platz.
+- **Zeitbezug:** Die Monatsschemata der offenen Treffen haben im Jahresflyer Ausnahmen, unter anderem Zürich im Dezember und Winterthur im April sowie Ferienpausen [V5, Seite 2]. Die geprüfte Website nennt keine konkreten Termine; daran muss nichts korrigiert werden.
+- **Verbleibend:** Bei einer gewünschten Aussage «die Gruppe findet bereits statt» wäre eine Auskunft der VASK zum Start/Betrieb nötig. Für die vorsichtige Formulierung unter K1 ist diese zusätzliche Zusage nicht erforderlich. Gebühren oder Mitgliedschaftsvoraussetzungen der geschlossenen Gruppe sind in V1/V2 nicht genannt; daraus keine Kostenfreiheit oder Pflichtmitgliedschaft ableiten.
+
+#### Stand by You Schweiz
+
+- **Organisation:** Die offizielle Organisationsseite bestätigt die frühere Bezeichnung VASK Schweiz und den Namenswechsel Anfang 2024 [S2].
+- **HelpLine:** Unter «Hilfe bekommen» nennt der Anbieter Kostenfreiheit und Anonymität ausdrücklich. Die Begleitpersonen sind Angehörige oder Vertraute mit eigener Erfahrung und Ausbildung in Telefonbegleitung [S1]. Der bestehende Ausdruck «geschulte Angehörige» ist als Kurzbeschreibung ausreichend gestützt; eine Umformulierung ist nicht nötig.
+- **Zugang und Zeiten, Stand 12.10.2026:** Direkter Telefonkontakt; zusätzlich E-Mail an `helpline@stand-by-you.ch`. Telefonzeiten: Mo 9.30–19.00, Di 10.00–14.00 und 17.00–19.00, Mi 10.00–12.00, Do 10.00–12.00 und 13.30–15.30, Fr 8.30–18.00 Uhr; öffentliche Feiertage ausgenommen. Bei besetzter Leitung wird E-Mail angeboten und eine Rückmeldung innerhalb von 48 Stunden genannt [S1]. Eine Anmeldung, Zuweisung oder Mitgliedschaft wird als Voraussetzung nicht verlangt. Eine telefonische Rund-um-die-Uhr-Verfügbarkeit ist nicht ausgewiesen und wird von der geprüften Website nicht behauptet.
+- **Gegencheck:** Das BAG bestätigt Kostenfreiheit und Vertraulichkeit für Angehörige und Vertrauenspersonen [S3]. PDGR bestätigt die kostenlose, anonyme HelpLine [S4]. Die dort zusätzlich genannte E-Mail-Adresse weicht von S1 ab; für Kontaktangaben ist die aktuelle Anbieterquelle S1 massgebend. Die Website selbst enthält keine solche abweichende E-Mail-Adresse.
+- **Entscheid:** Wortlaut und Direktlink beibehalten. Kein offener Nachweis zu den vorhandenen Aussagen.
+
+#### EQUILIBRIUM
+
+- **Angebot und Zielgruppen:** «Selbsthilfe» richtet sich ausdrücklich an Betroffene oder Angehörige und bietet Hilfe bei der Suche nach oder Gründung von Gruppen [E1]. Die verlinkte Karte nennt regionale Standorte sowie getrennte Onlinegruppen für Betroffene und Angehörige [E3]. Der Vereinszweck ist auf der Startseite beschrieben [E4].
+- **Zugang zur Online-Angehörigengruppe:** Die Detailseite nennt Austausch am dritten Donnerstag im Monat, 19.00–21.00 Uhr. Meeting-ID und Zugangscode werden per E-Mail verschickt; An- beziehungsweise Abmeldung ist vorgesehen. Genannt sind Verschwiegenheit, Respekt, Pünktlichkeit und die Nutzung von Kopfhörern [E2]. Die Gruppenkarte nennt `shg-ang@depressionen.ch` als Angehörigenkoordination [E3]; die E-Mail-Anzeige auf den HTML-Seiten setzt JavaScript voraus.
+- **Zeitbezug:** Ausgeschrieben sind 17.09., 15.10., 19.11. und 17.12.2026 [E2, «Termine 2026»]. Am Prüftag 12.10.2026 liegt der Septembertermin in der Vergangenheit; der nächste ausgeschriebene Termin ist der 15.10.2026. Die geprüfte Website enthält keine veraltete Datumsangabe zu dieser Gruppe. Diese Termine gehören als Prüfnachweis in den Bericht; für aktuelle Termine weiterhin zum Anbieter verweisen.
+- **Nicht gleichsetzen:** Die ausdrücklich für Mitglieder kostenlose fachliche Beratung auf E1 ist ein anderes Angebot als die Selbsthilfegruppen. Die geprüften Gruppenseiten nennen keine eindeutige allgemeine Gebühren- oder Mitgliedschaftsregel für die Teilnahme. Solche Voraussetzungen weder behaupten noch als ausgeschlossen darstellen. Die vorhandene Website verspricht hier keine Kostenfreiheit.
+- **Entscheid:** Bestehender Kurztext ausreichend nachgewiesen. Regionale Angehörigengruppen, freie Plätze und künftige Termine sind bei konkretem Vermittlungsbedarf gruppenspezifisch abzuklären; kein zusätzlicher Blocker für den vorhandenen allgemeinen Hinweis.
+
+### 3. Technischer Linkabgleich
+
+Am **12.10.2026** wurden die folgenden Adressen per HTTPS-GET ohne Anmeldung abgerufen. **Alle sieben lieferten HTTP 200; die Endadresse blieb jeweils unverändert.** Die Zielinhalte wurden zusätzlich gelesen; eine reine Statuscode-Prüfung war nicht die Grundlage des Sachurteils.
+
+| Link im Bestand oder im Nachweis | Technisches und inhaltliches Ergebnis |
+| --- | --- |
+| [VASK-Startseite](https://www.vaskzuerich.ch/de/) – tatsächlich in Zeile 32 verlinkt | 200; richtige Organisation. Allgemeiner Einstieg, kein Direktlink zur Gruppe. |
+| [Stand by You / Kontakt](https://stand-by-you.ch/kontakt/) – tatsächlich in Zeile 37 verlinkt | 200; unmittelbar zur HelpLine mit Leistungsbeschreibung, Zeiten und Kontaktwegen. Passender Direktlink. |
+| [EQUILIBRIUM-Startseite](https://www.depressionen.ch/) – tatsächlich in Zeile 39 verlinkt | 200; richtige Organisation; Selbsthilfe-Navigation und Online-Angehörigengruppe erreichbar. |
+| [VASK / Treffpunkte](https://www.vaskzuerich.ch/de/Angebote-der-VASK/Treffpunkte) | 200; zielgenauer Beleg und sinnvoller Link für den Gruppenhinweis in K1. |
+| [VASK / Flyer erwachsene Kinder 2026](https://www.vaskzuerich.ch/media/archive1/vask_flyer/FLVO_TreffpunktEKA5_2026_neuesLogo.pdf) | 200, PDF; eine Seite; «Neue Gruppe im Aufbau» auch visuell geprüft. |
+| [EQUILIBRIUM / Selbsthilfe](https://www.depressionen.ch/selbsthilfe) | 200; direkter Zugang zur Beschreibung und Gruppenkoordination. Präziser als die Startseite, aber kein zwingender Link-Fix. |
+| [EQUILIBRIUM / Online-Angehörigengruppe](https://www.depressionen.ch/18-aktuelles/veranstaltungen/shg/shg-angehoerige/82-shg-angehoerige) | 200; Zielgruppe, Termine und Zugangsbedingungen vorhanden. |
+
+**Prüfgrenze:** Keine Testanrufe, E-Mails oder Anmeldungen versandt; keine freien Plätze oder Durchführung einzelner Treffen zugesichert. Die Formulare wurden als Informationsquelle gelesen, nicht abgeschickt. Das ist ein vollständiger Link- und Aussagenabgleich für die drei Angebotseinträge, kein vollständiger Linktest der Website und kein Test der Erreichbarkeit des Personals.
+
+### 4. Ausschliesslich notwendige Textpräzisierung K1
+
+**K1 · VASK-Gruppe: ausgeschriebenes Angebot und gesicherter Betriebsstand unterscheiden.** Der bisherige knappe Eintrag ist nicht als widerlegt zu streichen. Er nennt aber weder die vollständige Zielgruppe noch den Aufbauhinweis und kann laufende Verfügbarkeit nahelegen.
+
+**Vorschlag für `rechte-und-angebote.html` / VASK:**
+
+> Beratung, offene Treffpunkte in Zürich und Winterthur sowie Angehörigenkurse. Für erwachsene Kinder psychisch erkrankter Eltern befindet sich laut VASK-Flyer eine neue Gruppe im Aufbau. Zum aktuellen Stand und zur Anmeldung informiert die VASK Zürich.
+
+Den allgemeinen VASK-Link für Beratung/Kurse kann man beibehalten; beim Hinweis zur Gruppe gezielt auf [Treffpunkte der VASK Zürich](https://www.vaskzuerich.ch/de/Angebote-der-VASK/Treffpunkte) verlinken.
+
+**Konsistenzkorrektur derselben Aussage in `je-nach-rolle.html` / `#erwachsene-kinder`:** Den ersten Satz zu Grenzen und eigener Unterstützung belassen; nur den anschliessenden VASK-Satz ersetzen:
+
+> Bei der VASK Zürich befindet sich laut Flyer eine neue Gruppe für erwachsene Kinder psychisch erkrankter Eltern im Aufbau. Die VASK informiert über den aktuellen Stand und die Anmeldung.
+
+**Status:** Vorschläge formuliert, nicht in die Website übernommen. Keine Textänderung bei Stand by You oder EQUILIBRIUM erforderlich. Keine pauschale Aktualisierung des Prüfdatums aller Angebote. Nach Übernahme von K1 sind lediglich beide geänderten Stellen auf Übereinstimmung und Linkziel nachzuprüfen; dieser Bericht verlangt keine neue umfassende Prüfung bestätigter Angaben.
+
+### 5. Quellenregister mit Fundstellen
+
+Alle Quellen **abgerufen am 12.10.2026**. Wo kein redaktionelles Änderungsdatum ausgewiesen ist, gilt das Abrufdatum; Jahreszahlen in Flyern und konkrete Termine sind gesonderte Aktualitätsbelege.
+
+| ID | Anbieter / Quelle | Genaue Fundstelle und Verwendung |
+| --- | --- | --- |
+| V1 | [VASK Zürich: Beratungs-Treffpunkte](https://www.vaskzuerich.ch/de/Angebote-der-VASK/Treffpunkte) | Untere drei Angebotsüberschriften: offene Treffen Zürich/Winterthur, geschlossener Treffpunkt erwachsene Kinder; unmittelbar darunter Information/Anmeldung und Flyerlink. |
+| V2 | [VASK Zürich: Treffpunkt für erwachsene Kinder, Flyer 2026](https://www.vaskzuerich.ch/media/archive1/vask_flyer/FLVO_TreffpunktEKA5_2026_neuesLogo.pdf) | Seite 1, unter der Zielgruppe: Aufbauhinweis; unten: Anmelde- und Auskunftsadresse. PDF zusätzlich visuell geprüft. |
+| V3 | [VASK Zürich: Beratungsstelle](https://www.vaskzuerich.ch/de/Angebote-der-VASK/Beratungsstelle) | Einleitung sowie «Standort», «Kontakt und Anmeldung» und Kostentabelle. |
+| V4 | [VASK Zürich: Angehörigenkurse](https://www.vaskzuerich.ch/de/Angebote-der-VASK/Angehoerigen-Kurse) | «Wegweiser», «Ort und Leitung», «Kursgebühren», Anmeldung/Warteliste; [Anmeldeformular](https://www.vaskzuerich.ch/de/Angebote-der-VASK/Angehoerigen-Kurse/Anmeldung-zum-Anhoerigenseminar) aufrufbar. |
+| V5 | [VASK Zürich: Offene Beratungs-Treffpunkte 2026, Flyer](https://www.vaskzuerich.ch/media/archive1/vask_flyer/FLVO_Beratungs-Treffpunkte2026_alle%28ohneQRCode%29_neuesLogo.pdf) | Seite 1: Teilnahme ohne Anmeldung; Seite 2: Kalender mit Ausnahmen und Abgrenzung zum geschlossenen Treffpunkt. |
+| S1 | [Stand by You Schweiz: Kontakt](https://stand-by-you.ch/kontakt/) | «Hilfe bekommen», direkt bei der HelpLine: Zeiten, Kosten/Anonymität, Ausbildung, Mailkontakt/Rückmeldung. Primärbeleg für den bestehenden Satz. |
+| S2 | [Stand by You Schweiz: Organisation](https://stand-by-you.ch/organisation/) | «Dafür setzen wir uns ein – unser Manifest», «Statuten», «Aktuelle Jahresberichte», «So arbeiten wir zusammen»: Dachorganisation, Namenswechsel, Vereinsstruktur. |
+| S3 | [BAG: Hilfsangebote zur psychischen Gesundheit](https://www.bag.admin.ch/de/hilfsangebote-zur-psychischen-gesundheit) | «Weitere Informations- und Beratungsangebote» → «Für Angehörige»: Kostenfreiheit, Vertraulichkeit, Zielgruppe. |
+| S4 | [PDGR: Für Angehörige](https://www.pdgr.ch/erwachsenenpsychiatrie/angehoerige/) | «Beratung» → «Stand by You – für Angehörige und Vertraute …» → HelpLine: Kostenfreiheit und Anonymität. Nur ergänzender Beleg, keine Übernahme der abweichenden Mailadresse. |
+| E1 | [EQUILIBRIUM: Selbsthilfe](https://www.depressionen.ch/selbsthilfe) | Einleitungsabsätze, Koordination Betroffene/Angehörige, Kartenlink; darunter gesonderter Abschnitt «Hotline» für fachliche Mitgliederberatung. |
+| E2 | [EQUILIBRIUM: SHG Angehörige Online](https://www.depressionen.ch/18-aktuelles/veranstaltungen/shg/shg-angehoerige/82-shg-angehoerige) | Titel/Einladung; Zugangscode per E-Mail; «Termine 2026»; «Die wichtigsten SHG Grundregeln». |
+| E3 | [EQUILIBRIUM: SHG-Schweizerkarte](https://www.depressionen.ch/images/pdf/SHG-Karte.pdf) | Seite 1, Standortliste Nr. 22/23 sowie «SHG-Koordination» mit getrennter Angehörigenadresse. |
+| E4 | [EQUILIBRIUM: Startseite](https://www.depressionen.ch/) | «Depressionen gehen uns Alle an» sowie «Nächste Termine» → «SHG Angehörige Online». Nicht alle dort noch als «nächste» bezeichneten Termine liegen nach dem Prüftag. |
+
+### 6. Eintrag für die weitere Bearbeitung
+
+| Teilauftrag | Status nach dieser Prüfung |
+| --- | --- |
+| Existenz und Beschreibung der drei Angebote anhand aktueller Quellen abgleichen | erledigt im dokumentierten Umfang; VASK nur mit Aufbauvorbehalt |
+| Drei bestehende Links technisch und inhaltlich prüfen | erledigt; 3/3 HTTP 200 ohne Weiterleitung; ergänzend vier Nachweis-/Direktlinks ebenso geprüft |
+| Notwendige Korrekturen formulieren | erledigt; ausschliesslich K1 an zwei VASK-Fundstellen |
+| K1 in der Website umsetzen und nachprüfen | offen |
+| Bereits laufende VASK-Gruppe, Starttermin oder freie Plätze bestätigen | nicht nachgewiesen; nur erforderlich, wenn eine solche konkrete Zusage aufgenommen werden soll |
+| Weitere Anbieter und sämtliche übrigen externen Links der Website | ausserhalb dieses Auftrags; frühere offenen Prüfpunkte bleiben bestehen |
+| Fachstellenentscheid W1-F-15 und fachliche Freigabe W1-F-21 | unverändert offen; nicht Gegenstand dieser Quellenprüfung |
 
 ## Grundlage und Arbeitsstand der bauenden Sitzung
 
