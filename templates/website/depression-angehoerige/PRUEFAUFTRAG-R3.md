@@ -10,7 +10,7 @@ Diesen Auftrag hat auf Wunsch der Fachstelle («Schreib den Auftrag: … in R3 (
 | --- | --- | --- | --- |
 | **A · jetzt** | R3, Punkt 13: alle 73 externen Adressen am Original (Anhang A), dazu SGPP S. 7, NVL Kapitel 12 und die Grössen der 7 PDF-Dateien | Internetzugang (Schritt 1) | W1 und W3 auf «erledigt», wenn ohne Befund |
 | **B · später** | Ergebnisblätter der realen Tests eintragen | die Fachstelle übergibt die Blätter (`FREIGABE-ENTSCHEIDE.md`, Abschnitt 7 e) | Bedienung auf «erledigt», wenn vollständig |
-| **C · zuletzt** | R3 nach `guidelines/00-pre-release-audits.md`, unverändert | W1, W3 und Bedienung «erledigt»; Entwurfs-Deploy des Exports (Abschnitt 6) | «Go», «Go mit Auflagen» oder «No-Go» |
+| **C · zuletzt** | R3 nach `guidelines/00-pre-release-audits.md`, unverändert | W1, W3 und Bedienung «erledigt»; neues Repository, Netlify-Site und Entwurfs-Deploy (Abschnitt 6) | «Go», «Go mit Auflagen» oder «No-Go» |
 
 Eine Sitzung macht jeden Teil, dessen Voraussetzung erfüllt ist, und hört dann auf. Der Rest bleibt für eine spätere Sitzung mit demselben Auftrag.
 
@@ -212,18 +212,68 @@ Alle `mailto:` und der sichtbare Text gleich `angehoerigenarbeit@pukzh.ch`, glei
 4. **Status:** Bedienung auf «erledigt», wenn der Mindestumfang erfüllt ist und kein wichtiger Befund offen bleibt. BD-08 bleibt zurückgestellt; braucht es nach den Läufen einen Entscheid, unter «Fragen an die Fachstelle».
 5. **Eintrag:** Block «#### Prüfrunde Bedienung 8 · reale Tests (TT.MM.JJJJ, Stand `<sha>`)» nach «Prüfrunde Bedienung 7», Statuszeile, offene Punkte; Commit wie Schritt 12.
 
-## 6. Teil C · R3 Freigabe-Audit
+## 6. Ziel der Veröffentlichung (entschieden am 12.10.2026)
+
+**Entscheid:** Die neunte Prüfsitzung hat nach einem Blick in die beiden bestehenden Repositories empfohlen: eine neue Netlify-Site mit eigenem Repository nur für den Export; die alte Site bleibt bestehen und leitet nach dem Start weiter. Antwort der Fachstelle am 12.10.2026: «ja, ergänze den Auftrag so».
+
+| Was | Festlegung |
+| --- | --- |
+| Ziel-Adresse | `https://depression-angehoerige.netlify.app`, gleich wie `site.config.json` › `siteUrl`; an der Website ändert sich nichts |
+| Netlify-Site | neu: `depression-angehoerige` |
+| Repository | neu: `christaegger-dot/depression-angehoerige`, enthält nur den Export |
+| Aufbau des Repositorys | `site/` = Export von `node tools/export.mjs`; im Stamm nur `README.md` mit Herkunft (Repository `puk-website-profil`, Ordner, Quell-Commit, Exportbefehl) |
+| Netlify-Einstellungen | Produktionsbranch `main`; Basisverzeichnis leer; Build-Befehl leer; Veröffentlichungsordner `site`; Deploy-Vorschauen für Pull Requests eingeschaltet. Solange `main` keinen Ordner `site/` hat, veröffentlicht Netlify nichts |
+| Quelle der Wahrheit | weiterhin `templates/website/depression-angehoerige/` in `puk-website-profil`; im neuen Repository nichts von Hand ändern |
+
+**Bestand, nicht verwendet** (am 12.10.2026 nur gelesen):
+- `christaegger-dot/Archiv-puk-depression-angehoerige`: die alte öffentliche Website (früher `puk-depression-angehoerige`), Netlify-Site `puk-depression-angehoerige`; die Adresse `https://puk-depression-angehoerige.netlify.app` antwortete um 22.09 UTC mit 401 (Zugangsschutz von Netlify).
+- `christaegger-dot/depression-verstehen-und-begleiten`: Zusammenführungsversuch vom 07. bis 09.10.2026 mit Ziel `puk-depression-angehoerige`; die Umstellung ist laut `NETLIFY-CUTOVER.md` nicht erfolgt. Enthält Hilfewege mit 144, gegen die Profilregel «kein Krisenzugang».
+
+Beide bleiben unverändert. Ob sie archiviert werden, entscheidet die Fachstelle nach dem Start.
+
+**Vor Teil C:**
+1. **Fachstelle:** das Repository `christaegger-dot/depression-angehoerige` anlegen, mit einer `README.md` im Stamm; Sichtbarkeit nach Wahl der Fachstelle.
+2. **Fachstelle:** die Netlify-Site `depression-angehoerige` anlegen, mit dem Repository verknüpfen und wie oben einstellen.
+3. **Bauende Sitzung** (technischer Schritt, keine Änderung an Inhalten; Startnachricht in Abschnitt 8):
+   - in einem Worktree von `puk-website-profil` am Stand, den R3 prüfen soll: `node tools/export.mjs <ordner>` (Entwurf, ohne `--production`; das Produktionsgate lässt `--production` erst nach R3 «Go» zu);
+   - den Inhalt des Ordners als `site/` auf den Branch `release-kandidat` des neuen Repositorys legen und einen Pull Request gegen `main` öffnen, **nicht mergen**;
+   - im Pull Request festhalten: Quell-Commit, Befehl mit Ausgabe, Dateiliste.
+
+   Netlify baut dazu eine Deploy-Vorschau (`https://deploy-preview-<Nr>--depression-angehoerige.netlify.app`). Das ist der Entwurfs-Deploy für Teil C.
+
+**Nach «Go»** (nicht Teil dieses Auftrags):
+1. Die Fachstelle gibt die Veröffentlichung frei.
+2. **Bauende Sitzung:** `node tools/export.mjs <ordner> --production` am geprüften Stand; mit `site/` im Pull Request vergleichen (`diff -r`), bei Unterschieden den Branch nachführen; dann den Pull Request mergen. Netlify veröffentlicht auf der Ziel-Adresse.
+3. **Prüfsitzung:** die R3-Punkte 17 und 21 auf der Ziel-Adresse kurz bestätigen (Indexierung erlaubt, Links und Sprungziele, W3-12).
+4. **Alte Site `puk-depression-angehoerige`:** zuerst nur noch Weiterleitungen ausliefern (301), z. B. die Verknüpfung mit dem alten Repository lösen und einen Ordner mit einer einzigen Datei `_redirects` deployen; danach den Zugangsschutz aufheben, damit alte Links und Lesezeichen ankommen. Vorschlag für die Zuordnung, Entscheid der Fachstelle (Ziel jeweils `https://depression-angehoerige.netlify.app` mit dem Pfad):
+
+   | alte Adresse | Titel der alten Seite | neue Adresse |
+   | --- | --- | --- |
+   | `/`, `/index.html` | Depression verstehen und begleiten | `/` |
+   | `/m1`, `/m1.html` | Was ist eine Depression? | `/depression-verstehen.html` |
+   | `/m1b`, `/m1b.html` | Wie wird Depression behandelt? | `/behandlung-und-verlauf.html` |
+   | `/m2`, `/m2.html` | Wie kann ich mit ihr oder ihm sprechen? | `/begleiten.html` |
+   | `/m3`, `/m3.html` | Was passiert mit unserer Beziehung? | `/ihre-situation.html` |
+   | `/m4`, `/m4.html` | Was zusätzlich auftreten kann | `/depression-verstehen.html` (keine eigene Entsprechung) |
+   | `/m5`, `/m5.html` | Wie schütze ich mich? | `/fuer-sich-sorgen.html` |
+   | `/m6`, `/m6.html` | Wo finde ich Hilfe? | `/rechte-und-angebote.html` |
+   | `/zusammenfassung`, `/zusammenfassung.html` | Orientierung auf einer Seite | `/` |
+   | `/krisenplan`, `/krisenplan.html`, `/krisenplan-v2.html` | Persönlicher Krisenplan | `/` (keine Entsprechung; die neue Website hat nach dem Profil keine Krisenseite) |
+   | alle übrigen, auch die PDF-Infografiken | – | `/` |
+
+## 7. Teil C · R3 Freigabe-Audit
 
 **Voraussetzung:** W1, W3 und Bedienung stehen auf «erledigt». Sonst entfällt Teil C; R3 bleibt «offen».
 
-**Vorher durch die Fachstelle:** Die Ziel-Adresse `https://depression-angehoerige.netlify.app` antwortete am 12.10.2026 um 21.30 UTC mit 404, und das Produktionsgate lässt `node tools/export.mjs <ordner> --production` erst nach R3 «Go» zu. Damit R3 die Punkte 17 (Indexierung) und 21 (Links auf der Ziel-Adresse) prüfen kann, den Export als Entwurf (`node tools/export.mjs <ordner>`) im Netlify-Projekt der Ziel-Adresse als Entwurfs-Deploy bereitstellen, unter einer eigenen Adresse, nicht als Produktion. Ohne das sind die Punkte 17 und 21 «nicht prüfbar», und R3 kann nicht «Go» ergeben.
+**Vorher:** die Schritte 1 bis 3 aus Abschnitt 6 (Repository, Netlify-Site, Entwurfs-Deploy als Deploy-Vorschau). Die Ziel-Adresse `https://depression-angehoerige.netlify.app` antwortete am 12.10.2026 um 21.30 UTC mit 404, und das Produktionsgate lässt `node tools/export.mjs <ordner> --production` erst nach R3 «Go» zu. Ohne den Entwurfs-Deploy sind die Punkte 17 (Indexierung) und 21 (Links auf der Ziel-Adresse) «nicht prüfbar», und R3 kann nicht «Go» ergeben.
 
 **Auftrag:** den R3-Auftrag aus `guidelines/00-pre-release-audits.md` unverändert ausführen, mit diesem Kontext:
 
 ```
 - Website: templates/website/depression-angehoerige/   Branch: main   Stand (Commit): <git rev-parse HEAD>
-- Vorschau: https://puk-website-profil.netlify.app/templates/website/depression-angehoerige/
-  Entwurfs-Deploy des Exports: <Adresse von der Fachstelle>
+- Vorschau: <Deploy-Vorschau des Pull Requests im Repository christaegger-dot/depression-angehoerige>
+  (Arbeitsstand im Repository puk-website-profil:
+  https://puk-website-profil.netlify.app/templates/website/depression-angehoerige/)
 - Ziel-Adresse nach Veröffentlichung: https://depression-angehoerige.netlify.app
 ```
 
@@ -237,14 +287,14 @@ Alle `mailto:` und der sichtbare Text gleich `angehoerigenarbeit@pukzh.ch`, glei
 | 11 Produktionsgate | Vor dem Eintrag nennt `review-report` die offene Zeile «R3 Freigabe-Audit». Zweimal festhalten: vor dem Eintrag und, bei «Go», mit dem nachgeführten Bericht im Worktree |
 | 13 Links | Teil A. Liegt Teil A nicht am selben Tag: Schritt 4 für alle 73 Adressen wiederholen; die inhaltlichen Ergebnisse (Schritte 5 bis 7) gelten weiter, wenn die Adressen gleich sind |
 | 17 Indexierung | Vorschau mit `X-Robots-Tag: noindex, nofollow` (`_headers` im Stamm); `_headers` des Exports und `<meta name="robots">` der Seiten; Entwurfs-Deploy |
-| 19 Export | im Exportordner keine Arbeitsdateien, z. B. `PRUEFBERICHT.md`, `FREIGABE-ENTSCHEIDE.md`, `KORREKTUR-*.md`, `NACHPRUEFUNG-*.md`, `PRUEFAUFTRAG-R3.md`, `README.md`, `content/`, `tools/`, `gate.html`, `site.config.json` |
-| 21 Ziel-Adresse | auf dem Entwurfs-Deploy; hier wird W3-12 entschieden (kanonische Links und Sitemap mit `.html` gegenüber den Umschreibungen von Netlify) |
+| 19 Export | den eigenen Export desselben Stands mit `site/` im Pull Request des neuen Repositorys vergleichen (`diff -r`); im Exportordner keine Arbeitsdateien, z. B. `PRUEFBERICHT.md`, `FREIGABE-ENTSCHEIDE.md`, `KORREKTUR-*.md`, `NACHPRUEFUNG-*.md`, `PRUEFAUFTRAG-R3.md`, `README.md`, `content/`, `tools/`, `gate.html`, `site.config.json` |
+| 21 Ziel-Adresse | auf der Deploy-Vorschau des neuen Repositorys, nach dem Start kurz auf der Ziel-Adresse (Abschnitt 6, «Nach «Go»»); hier wird W3-12 entschieden (kanonische Links und Sitemap mit `.html` gegenüber den Umschreibungen von Netlify) |
 
 **Eintrag:** unter «### R3 Freigabe-Audit» den Absatz «Noch nicht durchgeführt …» ersetzen (den bisherigen unter «Verlauf» behalten): Entscheid in einem Satz, Tabelle | Nr. | Prüfpunkt | Ergebnis | Beleg | Priorität |, Liste der blockierenden Punkte mit Zuständigkeit. R3 steht nur bei «Go» auf «erledigt». Statuszeile, offene Punkte; Commit wie Schritt 12.
 
-**Nach «Go»** (nicht Teil dieses Auftrags): Freigabe durch die Fachstelle, `node tools/export.mjs <ordner> --production`, Veröffentlichung auf der Ziel-Adresse, dort die Punkte 17 und 21 kurz bestätigen.
+**Nach «Go»:** siehe Abschnitt 6, «Nach «Go»» (nicht Teil dieses Auftrags).
 
-## 7. Startnachrichten
+## 8. Startnachrichten
 
 **Teil A** (jetzt; neue Sitzung im selben Repository mit Internetzugang):
 
@@ -269,11 +319,23 @@ Lies zuerst CLAUDE.md und den Auftrag ganz. Ändere keine Inhalte und keinen Cod
 Committe nur PRUEFBERICHT.md auf einem eigenen Branch und öffne einen Entwurfs-PR gegen main.
 ```
 
-**Teil C** (wenn W1, W3 und Bedienung erledigt sind und der Entwurfs-Deploy bereitsteht):
+**Entwurfs-Deploy** (bauende Sitzung, Abschnitt 6, Schritt 3; nach dem Anlegen von Repository und Netlify-Site):
+
+```
+Lege nach PRUEFAUFTRAG-R3.md, Abschnitt 6, Schritt 3 den Entwurfs-Export von
+templates/website/depression-angehoerige/ (main, Stand <git rev-parse HEAD>) im Repository
+christaegger-dot/depression-angehoerige an. Ändere in puk-website-profil nichts.
+Erzeuge den Export in einem Worktree mit node tools/export.mjs <ordner> (ohne --production),
+lege ihn als site/ auf den Branch release-kandidat und öffne einen Pull Request gegen main,
+ohne zu mergen. Nenne im Pull Request Quell-Commit, Befehl mit Ausgabe und Dateiliste
+und gib mir die Adresse der Deploy-Vorschau.
+```
+
+**Teil C** (wenn W1, W3 und Bedienung erledigt sind und die Deploy-Vorschau bereitsteht):
 
 ```
 Mach das R3 Freigabe-Audit für templates/website/depression-angehoerige/ auf main nach
-PRUEFAUFTRAG-R3.md, Teil C. Entwurfs-Deploy des Exports: <Adresse>.
+PRUEFAUFTRAG-R3.md, Teil C. Deploy-Vorschau im neuen Repository: <Adresse>.
 Du hast die Website nicht gebaut, nichts daran korrigiert oder entschieden.
 Lies zuerst CLAUDE.md, guidelines/00-ablauf-pruefung-und-freigabe.md,
 guidelines/00-pre-release-audits.md und den Auftrag ganz. Ändere keine Inhalte und keinen

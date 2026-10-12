@@ -34,9 +34,14 @@ Ersetzt die Fassung der achten Prüfsitzung mit der Nachführung der bauenden Si
 
 Keine Fragen und kein Prüfbedarf. Der Entscheid «Für W1-39 und W3-13: umsetzen» ist an beiden Stellen im Wortlaut umgesetzt (W1, Prüfrunde 11, Punkt 1; W3, Prüfrunde 8, Punkt 2).
 
+- **Ziel der Veröffentlichung, entschieden am 12.10.2026** («ja, ergänze den Auftrag so», auf die Empfehlung der neunten Prüfsitzung): neue Netlify-Site `depression-angehoerige` (Ziel-Adresse wie `siteUrl`) mit eigenem Repository `christaegger-dot/depression-angehoerige` nur für den Export; die alte Site `puk-depression-angehoerige` bleibt und leitet nach dem Start weiter. Einzelheiten: `PRUEFAUFTRAG-R3.md`, Abschnitt 6.
+- **Offen vor R3:** das Repository und die Netlify-Site anlegen (Abschnitt 6, Schritte 1 und 2).
+- **Offen nach dem Start:** die Weiterleitungen der alten Site entscheiden (Vorschlag in Abschnitt 6) und ob die Repositories `Archiv-puk-depression-angehoerige` und `depression-verstehen-und-begleiten` archiviert werden.
+
 **Bauende Sitzung**
 
 - Aus W1-39 und W3-13 ist nichts offen.
+- **Vor R3:** den Entwurfs-Export als `site/` auf den Branch `release-kandidat` im neuen Repository legen und einen Pull Request ohne Merge öffnen; dessen Deploy-Vorschau ist der Entwurfs-Deploy für R3 (`PRUEFAUFTRAG-R3.md`, Abschnitt 6, Schritt 3). Keine Änderung an Inhalten.
 - Bei der nächsten Änderung am Plan: `v-bv-weg` › `understood` «nach der Besserung» an das `statement` angleichen («nach dem Abklingen der Beschwerden»); kein Befund, nicht sichtbar (W1, Prüfrunde 10, Punkt 6).
 
 **Profil** (Design-System-Artefakt, nicht in diesem Repository; danach neues Paket übernehmen) – am 12.10.2026 von der Fachstelle mit Begründung zurückgestellt (Antwort 5): bis zum nächsten Profilpaket, W3-12 bis R3, BD-08 bis nach den realen Läufen
@@ -64,7 +69,7 @@ Keine Fragen und kein Prüfbedarf. Der Entscheid «Für W1-39 und W3-13: umsetze
   Ohne neuen Befund setzt die Sitzung, die das nachholt, W1 und W3 auf «erledigt». Auftrag: `PRUEFAUFTRAG-R3.md`, Teil A (auf Wunsch der Fachstelle geschrieben am 12.10.2026 von der neunten Prüfsitzung).
 - **Vor der Veröffentlichung:** «Angaben zu den Angeboten: Stand 12.10.2026.» bleibt der letzte Absatz von `rechte-und-angebote` › `angebote`; sonst den Satz auf `je-nach-rolle` («… am Schluss steht dort auch der Stand der Angaben.») anpassen. Liegt die Veröffentlichung später als der Stand, die Angebote kurz nachprüfen und das Datum nachführen.
 - **Lesetest mit Angehörigen,** wo möglich trialogisch (R2 ersetzt ihn nicht).
-- **R3** durch eine Sitzung, die nichts gebaut, korrigiert oder entschieden hat (`guidelines/00-pre-release-audits.md`), mit Export und Ziel-Adresse, wenn W1, W3 und Bedienung abgeschlossen sind. Auftrag: `PRUEFAUFTRAG-R3.md` (Teil A Prüfung am Original, Teil B Ergebnisse der realen Tests, Teil C R3); für Teil C empfiehlt er der Fachstelle, den Export vorher als Entwurfs-Deploy unter der Ziel-Adresse bereitzustellen (Punkte 17 und 21).
+- **R3** durch eine Sitzung, die nichts gebaut, korrigiert oder entschieden hat (`guidelines/00-pre-release-audits.md`), mit Export und Ziel-Adresse, wenn W1, W3 und Bedienung abgeschlossen sind. Auftrag: `PRUEFAUFTRAG-R3.md` (Teil A Prüfung am Original, Teil B Ergebnisse der realen Tests, Teil C R3); Teil C prüft die Punkte 17 und 21 auf der Deploy-Vorschau des neuen Repositorys (Abschnitt 6).
 
 **Erledigt mit dieser Nachprüfung:** W1-39 und W3-13; S wieder erledigt. Früher erledigt und nachgeprüft: W1-F-21, W1-09 Rest, W1-25 (Ausnahmen), W1-31, W1-35 bis W1-38, Stand-Vermerk, BD-09 und W3-10 Rest, R1 Punkt 18 (achte Prüfsitzung); W1-F-15 entfällt; W1-F-19, S-33, V-11, BD-12, K1, W1-33, S-34, W1-34 (Variante 2).
 
