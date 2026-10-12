@@ -59,7 +59,7 @@
       "navLabel": null,
       "status": "published",
       "primaryTask": "Einen Einstieg nach dem eigenen Anliegen wählen",
-      "description": "Orientierung für Angehörige von Menschen mit Borderline: Einstiege nach Anliegen zu Verstehen, Beziehungen und Grenzen sowie die kostenlose Beratung der Fachstelle Angehörigenarbeit PUK.",
+      "description": "Orientierung für Angehörige von Menschen mit Borderline: Einstiege nach Anliegen, von Verstehen und Grenzen bis Genesung und Unterstützung, und die kostenlose Beratung der Fachstelle Angehörigenarbeit PUK.",
       "sensitiveTopics": [],
       "visualPlan": [
         {
@@ -83,7 +83,7 @@
           "statement": "–",
           "source": "–",
           "alternative": "–",
-          "reason": "Text ist klarer: Angebot und Kontaktweg ohne Beziehung. Wortlaut der Fachstelle vom 09.10.2026 (Korrektur W1-4); steht nur hier, andere Seiten verweisen darauf.",
+          "reason": "Text ist klarer: Angebot und Kontaktweg ohne Beziehung. Wortlaut der Fachstelle vom 09.10.2026 (Korrektur W1-4). Die Beratung der Fachstelle steht auf `index`, `unterstuetzung` wiederholt Kosten und Vertraulichkeit (wie `v-un-beratung` › `reason` seit der Freigabe 2c; SPZ-8).",
           "approvalStatus": "ausstehend"
         },
         {
@@ -95,7 +95,7 @@
           "statement": "–",
           "source": "–",
           "alternative": "–",
-          "reason": "Text ist klarer: kurze Haltungsaussage. Das Spannungsfeld Fürsorge – eigene Gesundheit ist für «Auf sich achten» als Muster H vorgesehen (Etappe 2); hier genügt der Satz.",
+          "reason": "Text ist klarer: kurze Haltungsaussage; hier genügt der Satz (SPZ-9).",
           "approvalStatus": "ausstehend"
         }
       ]
@@ -160,11 +160,11 @@
           "format": "figure",
           "statement": "Die Anspannungskurve (Muster A, freie Figur): eine ruhige Kurve über den Gesprächsverlauf, links tief, dann steigend, oben ein Scheitel, rechts wieder sinkend; keine Skala, keine Zahlen, keine Achse. Vier nummerierte Stellen mit Alltagsworten: 1 «Wir können sprechen», 2 «Es wird eng» (Ansatzpunkt, doppelter Ring), 3 «Es ist gerade zu viel», 4 «Es kann wieder ruhiger werden.». Darunter in allen Breiten die Liste der vier Stellen mit Erklärsatz, «Was hilft», Ansatzpunkt und Beispielsätzen aus dem Handout; Stelle 2 hat nur den Ansatzpunkt, ohne eigenes «Was hilft» (Korrektur 1e, Abschnitt 3). Kurztext: Anspannung kann ansteigen und wieder sinken, bei der anderen Person und bei Ihnen, und ist von aussen nicht sicher erkennbar. Ersetzt die Achse mit drei Bereichen (Entscheid der Fachstelle, 09.10.2026; Korrektur 1d, D-3). «Bei Gefahr hat Schutz Vorrang» steht im Abschnittstext (Korrektur 1b, A-2).",
           "understood": "Wann Reden hilft und wann eine Pause besser ist: Die Kurve zeigt, dass Anspannung im Gespräch ansteigen und wieder sinken kann und dass dasselbe Gespräch je nach Stelle etwas anderes braucht. Als Text blieben die vier Stellen eine Aufzählung; die Kurve zeigt ihren Zusammenhang im Verlauf.",
-          "source": "Eigene didaktische Darstellung nach dem Handout «Die Anspannungskurve – Wann Reden hilft», mit Inhalten aus drei weiteren Handouts zur Anspannung (vereinfachtes Stressmodell, Hohe Anspannung, Zustands-Landkarte); Bezugspunkte Linehan (1993, 2015), Shields et al. (2016), Degasperi et al. (2021), Baranger et al. (2020), Santangelo et al. (2014), NICE CG78 (2009)",
+          "source": "Eigene didaktische Darstellung nach dem früheren Handout «Die Anspannungskurve – Wann Reden hilft», mit Inhalten aus drei weiteren Handouts zur Anspannung (vereinfachtes Stressmodell, Hohe Anspannung, Zustands-Landkarte); Bezugspunkte Linehan (1993, 2015), Shields et al. (2016), Degasperi et al. (2021), Baranger et al. (2020), Santangelo et al. (2014), NICE CG78 (2009)",
           "alternative": "Die vier Stellen als geordnete Liste mit Nummer, Überschrift, Erklärsatz und Beispiel unter der Zeichnung, in allen Breiten; Beschriftungen als HTML-Text über der Zeichnung, unter 560 px entfallen nur diese, die Nummern bleiben; Textfassung über aria-describedby (p.puk-sr)",
           "reason": "Ein Verlauf im Gespräch lässt sich als Kurve zeigen. Alltagsworte statt Fachbegriffen, weil die Achse mit drei Bereichen für Laien verwirrend war (Rückmeldung der Fachstelle, 09.10.2026). Vier Handouts zum selben Mechanismus bleiben in einer Darstellung verbunden.",
           "resonance": "Wiedererkennen und Erlaubnis: So kann ein Gespräch kippen, und ich darf eine Pause machen.",
-          "approvalStatus": "freigegeben",
+          "approvalStatus": "ausstehend",
           "entryPoint": "Stelle 2 «Es wird eng»: nicht weiter argumentieren, weniger Druck machen, das eigene Tempo senken, auf die eigene Anspannung achten und eine Pause anbieten; die andere Person müssen Sie nicht beruhigen (in der Figur mit doppeltem Ring markiert)."
         },
         {
@@ -346,7 +346,7 @@
           "format": "illustration",
           "statement": "Zwei Menschen gehen nebeneinander auf einem Weg, von hinten gesehen, in leichter Schrittstellung; der Weg führt durch eine Hügellandschaft in die Ferne. Beide wirken gleichwertig: Niemand führt, zieht oder trägt den anderen. Darüber der Satz «Ich kann diesen Weg begleiten, aber nicht für dich gehen.».",
           "understood": "Dass Begleiten und den Weg selbst gehen zwei verschiedene Dinge sind: Das Bild zeigt auf einen Blick, wer neben wem geht, ohne eine Liste von Aufgaben.",
-          "source": "Eigene didaktische Darstellung nach dem Handout «Der Garten»; Bezug: NICE CG78 (2009)",
+          "source": "Eigene didaktische Darstellung nach dem früheren Handout «Der Garten»; Bezug: NICE CG78 (2009)",
           "alternative": "Satz als HTML-Text über der Zeichnung, schmal darüber; Kurzbeschreibung über aria-describedby",
           "reason": "Entscheid der Fachstelle 10.10.2026 (Bauauftrag 2a, Anhang A): Skizze «Ein Stück Weg». Ersetzt das geplante Garten-Bild mit drei Zonen (Bildsprache-Audit: wirkt wie eine Zielscheibe, die betroffene Person darf nicht als Pflanze erscheinen). Ein Bild, eine Idee: begleiten, nicht für jemanden gehen. Korrektur 2a-K: steht direkt nach dem ersten Absatz von `anbieten` (P2a-V-1); verfeinert nach P2a-V-2 (die Wegkanten berühren die Köpfe nicht mehr, leichte Schrittstellung, Arme bei 360 px vom Körper getrennt). «Drei Fragen zur Selbstklärung» steht in diesem Abschnitt als Vertiefung (Akkordeon, K-R-b3). Korrektur 2a-2: Der Weg ist wieder gewunden wie in der gewählten Skizze (weiche Kurven, eine Biegung in der Ferne); die Figuren aus 2a-K bleiben.",
           "resonance": "Entlastung: Ich darf begleiten, ohne den Weg für die andere Person gehen zu müssen.",
@@ -523,7 +523,7 @@
           "statement": "–",
           "source": "–",
           "alternative": "–",
-          "reason": "Text ist klarer: drei Situationen mit Gegenüberstellung «eher problematisch / eher hilfreich» als Komponente .puk-say (Leitlinie 06, Formulierungsbeispiele). Die übrigen Beispiele des Bestands sind für «Zugewandt und klar sprechen» (Etappe 2) vorgemerkt (Korrektur W2-2, W2-3, 09.10.2026).",
+          "reason": "Text ist klarer: drei Situationen mit Gegenüberstellung «eher problematisch / eher hilfreich» als Komponente .puk-say (Leitlinie 06, Formulierungsbeispiele). Die für «Zugewandt und klar sprechen» vorgemerkten Beispiele des Bestands stehen dort im Abschnitt «So könnte es klingen» (Etappe 2b; vorgemerkt mit Korrektur W2-2, W2-3, 09.10.2026; SPZ-9).",
           "approvalStatus": "ausstehend"
         },
         {
@@ -809,7 +809,7 @@
           "format": "illustration",
           "statement": "Zwei gleich grosse Tassen Tee stehen nebeneinander auf einem Tisch. Über der linken steht der Satz «Du verstehst mich sowieso nicht.», über der rechten «Vielleicht verstehe ich nicht alles. Wenn du möchtest, sag mir, was dir gerade besonders wichtig ist.».",
           "understood": "Wie Anerkennen ohne Zustimmen klingt: Auf einen harten Satz folgt eine Antwort, die das Gefühl ernst nimmt, ohne die Deutung zu übernehmen oder sich zu verteidigen. Zwei gleiche Tassen auf einem Tisch zeigen zwei gleichwertige Menschen im selben Gespräch.",
-          "source": "Eigene didaktische Darstellung nach den Handouts «Zuhören ohne Zustimmen» und «Wenn Worte treffen»; Bezug: Fruzzetti (2006); Mason und Kreger (2014)",
+          "source": "Eigene didaktische Darstellung nach den früheren Handouts «Zuhören ohne Zustimmen» und «Wenn Worte treffen»; Bezug: Fruzzetti (2006); Mason und Kreger (2014)",
           "alternative": "Sätze als HTML-Text über der Zeichnung, schmal untereinander; Kurzbeschreibung über aria-describedby",
           "reason": "Entscheid der Fachstelle 10.10.2026 (Bauauftrag 2b, Abschnitt 4 und Anhang A): Zeichnung «Zwei Tassen» im Stil von «Ein freier Abend» (Muster D), direkt nach dem ersten Absatz des Abschnitts. Die Transformationen der Skizze sind in feste Pfade umgerechnet. Seit Korrektur 2b-K (P2b-F-11 b) stehen die zwei Tassen näher zur Tischmitte, spiegelgleich zu x = 320: Tassenkörper bei x 190–258 und 382–450, dazwischen 124 Einheiten frei; Henkel aussen. Tisch und Bildausschnitt unverändert. Die sechs Stufen der Validierung stehen als gestaltete Liste ohne Treppenbild, keine Abbildung: alle sechs sichtbar mit Leitsatz, Ziel und einem Beispiel (Korrektur 2b-2, Abschnitt 3). Die Einzelheiten stehen unter dem Zwischentitel «Die sechs Stufen im Detail» in einer Vertiefung mit sechs Einträgen, einer je Stufe, damit man nur die gesuchte Stufe öffnet (Freigabe 2b, Abschnitt 3 a). «Mitgefühl heisst nicht übernehmen» ist ein eigener Zwischentitel (Freigabe 2b, Abschnitt 3 b).",
           "resonance": "Wiedererkennen und Entlastung: Ich kann zuhören und anerkennen, ohne mich zu verteidigen und ohne zuzustimmen.",
@@ -1035,7 +1035,7 @@
           "format": "illustration",
           "statement": "Tisch am Abend mit einer Tasse Tee, einem Mobiltelefon und einem geschlossenen Buch; im Fenster steht der Mond. Über dem Telefon der Gedanke «Vielleicht kommt gleich eine Nachricht.», über dem Buch «Eigentlich wollte ich lesen.».",
           "understood": "Was ständige Erreichbarkeit im Alltag heisst: Zwei Gedanken am selben Abend zeigen, dass ein Teil der Aufmerksamkeit beim Telefon bleibt, ohne dass etwas geschieht.",
-          "source": "Eigene didaktische Darstellung; Bezug: Handout «Energie-Konto»",
+          "source": "Eigene didaktische Darstellung; Bezug: früheres Handout «Energie-Konto»",
           "alternative": "Sätze als HTML-Text über der Zeichnung, schmal untereinander; Kurzbeschreibung über aria-describedby",
           "reason": "Entscheid der Fachstelle 10.10.2026 (Bauauftrag 2a): Zeichnung und Satzpaar aus dem Profilbeispiel (Muster D), Kernaussage und Kurztext abgesichert wie der Bestand. Ersetzt das geplante Spannungsfeld (Bildsprache-Audit: eine Waage kann nach Urteil aussehen). Das Energie-Konto steht als Text, ohne Konto- oder Bilanzbild. Korrektur 2a-K: steht direkt nach dem ersten Absatz von `kraft` (P2a-V-1); Gedanke «Vielleicht kommt gleich eine Nachricht.» (P2a-T-2); Zeichnung unverändert (P2a-V-3). «Langfristig für sich sorgen» steht in diesem Abschnitt als Akkordeon (K-S-b2).",
           "resonance": "Wiedererkennen und Erlaubnis: So fühlt sich ständige Bereitschaft an, und ich darf meine Erreichbarkeit begrenzen.",
@@ -1157,11 +1157,11 @@
           "format": "illustration",
           "statement": "Eine Topfpflanze steht auf einem Fenstersims. Ein Blatt ist abgefallen und liegt am Topf, oben wächst ein neuer, heller Trieb. Über der Zeichnung stehen zwei Haltungen, bezeichnet wie die Gegenüberstellung darunter: «Weniger hilfreich» mit «Eine schwierigere Phase entwertet alles.» und «Tragfähiger» mit «Schwierigere Phasen kommen vor und müssen nicht alles kippen.».",
           "understood": "Dass Rückschritt und neues Wachsen zugleich da sein können: Das abgefallene Blatt und der neue Trieb an derselben Pflanze zeigen auf einen Blick, dass eine schwierigere Phase das Erreichte nicht aufhebt.",
-          "source": "Eigene didaktische Darstellung nach den Handouts «Veränderung verläuft unterschiedlich» und «Der Garten»; Bezug: Zanarini et al. (2012); NICE CG78 (2009)",
+          "source": "Eigene didaktische Darstellung nach den früheren Handouts «Veränderung verläuft unterschiedlich» und «Der Garten»; Bezug: Zanarini et al. (2012); NICE CG78 (2009)",
           "alternative": "Sätze als HTML-Text über der Zeichnung, schmal untereinander; Kurzbeschreibung über aria-describedby",
           "reason": "Entscheid der Fachstelle 11.10.2026 (Bauauftrag 2c-1, Abschnitt 4 und Anhang A): Zeichnung «Ein neuer Trieb» im Stil von «Zwei Tassen» (Muster D), direkt nach dem ersten Absatz von `verlauf`. Korrektur 2c-K (P2c2-F-2 und P2c2-V-3; P2c-T-1, P2c2-T-1): Die Giesskanne ist entfernt. Das abgefallene Blatt liegt direkt unter der Pflanze, an den Topf gelehnt, und ist etwas grösser; die zwei Blätter des neuen Triebs sind heller als die übrigen (`puk-vis-scene__paper` statt `puk-vis-scene__soft`). Die übrigen Pfade sind wie in der Skizze. Bildausschnitt `60 44 420 214`, enger und mit der Pflanze in der Mitte (2c-1: `60 44 530 214`, Skizze: `0 40 640 220`). Die Zahlen der Langzeitstudie stehen als hervorgehobener Text ohne Diagramm (`forschung`, Entscheid von Claude im Bauauftrag); der Garten-Text steht auf `rolle` › `anbieten` und ist verlinkt, nicht wiederholt. Freigabe 2c und 3-1 (NK2c-2): In der Szene hat der Satz unter «Weniger hilfreich» dieselbe graue Linie wie «Weniger hilfreich» in der Gegenüberstellung `.puk-say` desselben Abschnitts (Regel in `borderline.css`); Wortlaut, Bezeichnungen, Zeichnung und Kurzbeschreibung unverändert.",
           "resonance": "Entlastung und realistische Hoffnung: Ein Rückschritt macht nicht alles zunichte.",
-          "approvalStatus": "freigegeben"
+          "approvalStatus": "ausstehend"
         },
         {
           "id": "v-ge-einfluesse",
@@ -1282,7 +1282,7 @@
       "navLabel": null,
       "status": "published",
       "primaryTask": "Eine kurze Antwort auf eine häufige Frage finden und zur ausführlichen Stelle weitergehen",
-      "description": "Kurze Antworten auf häufige Fragen von Angehörigen zu Diagnose, Ursachen und Verlauf, Gesprächen, Behandlung, Schutz und dem eigenen Leben, je mit Verweis auf die ausführliche Seite.",
+      "description": "Kurze Antworten auf häufige Fragen von Angehörigen zu Diagnose, Ursachen und Verlauf, Gesprächen, Behandlung, Schutz und dem eigenen Leben, meist mit Verweis auf die ausführliche Seite.",
       "sensitiveTopics": [
         "selbstgefaehrdung",
         "gewalt",
@@ -1581,7 +1581,7 @@
       "navLabel": null,
       "status": "published",
       "primaryTask": "Wissen, wer die Website herausgibt und welche Daten beim Besuch anfallen",
-      "description": "Herausgeberin, Kontakt und Datenschutz: keine Cookies, keine Auswertung, keine Dienste anderer Anbieter beim Lesen.",
+      "description": "Herausgeberin, Kontakt und Datenschutz: keine Cookies, keine Auswertung, beim Lesen keine Daten an andere Anbieter als den Dienst, der die Website ausliefert.",
       "sensitiveTopics": [],
       "visualPlan": [
         {
@@ -1617,14 +1617,14 @@
       "href": "404.html",
       "navLabel": null,
       "status": "published",
-      "primaryTask": "Von einer nicht vorhandenen Adresse zur Übersicht zurückfinden",
-      "description": "Diese Seite gibt es nicht. Von der Übersicht aus finden Sie alle Seiten.",
+      "primaryTask": "Von einer nicht vorhandenen Adresse zur Startseite zurückfinden",
+      "description": "Diese Seite gibt es nicht. Von der Startseite aus erreichen Sie alle Seiten.",
       "sensitiveTopics": [],
       "visualPlan": [
         {
           "id": "v-404-text",
           "section": "Seite nicht gefunden",
-          "goal": "Zur Übersicht zurückfinden",
+          "goal": "Zur Startseite zurückfinden",
           "format": "text",
           "statement": "–",
           "source": "–",

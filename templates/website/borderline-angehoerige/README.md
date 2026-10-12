@@ -29,6 +29,10 @@ Seiten über einen lokalen Webserver öffnen (z. B. `npx serve` im Projektstamm 
 
 `node tools/export.mjs <zielordner> --production` baut alle Seiten, prüft sie mit dem Produktionsgate und schreibt nur, was veröffentlicht wird: die veröffentlichten Seiten, `assets/`, eine zusammengeführte `css/site.css` mit lokalen Schriften, `js/interaktion.js` (falls gebraucht), `_headers` und `sitemap.xml` (wenn `siteUrl` gesetzt ist). Der Zielordner lässt sich unverändert auf Netlify hochladen oder als eigenes Repository führen. Projektquellen, Entwürfe und `site.config.json` werden nicht ausgeliefert. Ablauf und Prüfstufen: Abschnitt «Prüfung und Freigabe»; technische Kriterien: «Technische Qualität».
 
+1. In einen leeren Zielordner exportieren: `node tools/export.mjs <zielordner> --production`.
+2. `_redirects` von Hand in den Zielordner kopieren (der Export kopiert die Datei nicht).
+3. Danach Weiterleitungen und Kopfzeilen auf der Vorschau prüfen.
+
 ## Seitenvertrag
 
 - `siteTitle`, `shortDescription`, `language` (de…), `favicon`, `logo`, `contentOwner`, `editorialStatus`
