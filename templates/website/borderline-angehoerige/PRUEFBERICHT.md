@@ -177,6 +177,19 @@ Dazu 5 leichte Befunde zu Bericht und Abgleich. Die erste und zweite Prüfrunde 
   - danach R1 bis R3
 - Die Statustabelle bleibt unverändert; jede Stufe bleibt «offen».
 
+### Entscheide zur Veröffentlichung (13.10.2026, im Auftrag der Fachstelle)
+
+**13.10.2026 · von Claude im Auftrag der Fachstelle entschieden** (Delegation im Chat: «Du musst das selber entscheiden, oder anders lösen/weglassen»). Zu V-2 und V-3 hat die Fachstelle auf Rückfrage selbst gewählt. Wortlaut, Begründung und Beleg stehen in `ENTSCHEIDE-VEROEFFENTLICHUNG.md`. Entschieden hat die bauende Sitzung; sie prüft keine Stufe.
+
+- **V-1 SPZ-F-21:** keine Ergänzung; der Text bleibt.
+- **V-2 Rechtliche Prüfung:** entfällt vor der Veröffentlichung; Impressum und Datenschutz bleiben, wie sie freigegeben sind. Das Restrisiko trägt die Fachstelle. Empfohlen bleibt die Durchsicht durch den Rechtsdienst nach der Veröffentlichung.
+- **V-3 Reale Tests:** nach der Veröffentlichung, als Auflage mit Frist 13.01.2027. Die Prüfsitzung beurteilt «Bedienung und Barrierefreiheit» mit dieser begründeten Ausnahme; R3 ergibt höchstens «Go mit Auflagen».
+- **V-4 NK-F-3:** Die Angabe «Balance Buch + Medien Verlag, 2014» bleibt.
+- **V-5 Lizenz der Schrift:** `OFL.txt` wird mit dem Export ausgeliefert.
+- **V-6 Release-Kandidat:** Export im Entwurfsmodus, dieselben Dateien wie mit `--production`, auf den Umzugs-Branch von PR #659. Vor dem Merge wird mit `--production` neu exportiert und verglichen.
+- **V-7 bis V-9:** Abschlussprüfung W1 bis W3 in einer eigenen Sitzung, danach R1 und R2, dann R3 auf der Vorschau. Veröffentlicht wird nur nach R3 und mit ausdrücklicher Zustimmung der Fachstelle.
+- Die Statustabelle bleibt unverändert; jede Stufe bleibt «offen».
+
 ## Nachprüfung SP2-K (12.10.2026, Stand 5d59aba)
 
 **Prüfsitzung (Claude Code), 12.10.2026.** Nachprüfung der Korrektur SP2-K nach `KORREKTUR-SCHLUSSPRUEFUNG-2.md`, Abschnitt 15, Punkt 1. Geprüft ist der Branch `korrektur-sp2-k` am Commit `5d59aba` (Entwurfs-PR christaegger-dot/puk-website-profil#68); Bezugsstand ist `2c7078a`. Diese Sitzung hat die Website weder gebaut noch korrigiert noch geprüft und nichts entschieden. An Schlussprüfung, Entscheiden, Korrekturauftrag und Korrektur SP2-K hat sie nicht mitgearbeitet. Gelesen: `CLAUDE.md`, `guidelines/00-ablauf-pruefung-und-freigabe.md`, `KORREKTUR-SCHLUSSPRUEFUNG-2.md` ganz, `ENTSCHEIDE-SCHLUSSPRUEFUNG.md` Abschnitte 3, 4, 5 und 6, in diesem Bericht der Block «Korrektur SP2-K» der Selbstprüfung und «Begründete Ausnahme · Druckregel (SPZ-F-32)». Geändert ist nur dieser Abschnitt. **Keine Freigabe eingetragen, keine Stufe «erledigt», Statustabelle unverändert.** Neue IDs: «NSK-» (Befunde), «NSK-F-» (Fragen).
