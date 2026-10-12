@@ -1,8 +1,8 @@
-# Prüfauftrag · Borderline-Website · Schlussprüfung (Entwurf zur Bestätigung)
+# Prüfauftrag · Borderline-Website · Schlussprüfung
 
 Stand 12.10.2026. Gilt für `templates/website/borderline-angehoerige/` auf dem Branch `borderline-umbau`, Stand `f1d6572`. Für eine **Prüfsitzung**.
 
-**Entwurf:** Die bauende Sitzung der Etappen «Freigabe 2c und 3-1» und 3-2 hat diesen Auftrag auf Wunsch der Fachstelle vorbereitet. Er legt nur Umfang, Bezugsstände, Vorgehen und Form fest, keine erwarteten Ergebnisse. Gültig wird er, wenn die Fachstelle ihn bestätigt oder ändert.
+**Bestätigt:** Die bauende Sitzung der Etappen «Freigabe 2c und 3-1» und 3-2 hat diesen Auftrag auf Wunsch der Fachstelle vorbereitet. Er legt nur Umfang, Bezugsstände, Vorgehen und Form fest, keine erwarteten Ergebnisse. Die Fachstelle hat ihn am 12.10.2026 bestätigt, mit zwei unabhängigen Prüfungen (Abschnitt 2).
 
 ## 1. Anlass
 
@@ -24,7 +24,7 @@ Stand 12.10.2026. Gilt für `templates/website/borderline-angehoerige/` auf dem 
   - **Prüfung 1:** IDs mit Präfix «SP1-»
   - **Prüfung 2:** IDs mit Präfix «SP2-». Sie liest weder Branch noch Bericht von Prüfung 1.
   - **Zusammenführung:** die Sitzung von Prüfung 2, erst wenn beide Berichte fertig sind; IDs «SPZ-», jeder Befund nennt seine Quelle (Prüfung 1, 2 oder beide).
-- Entscheidet die Fachstelle sich für nur eine Prüfung, entfallen Präfix-Nummer und Zusammenführung; IDs «SP-».
+- **Start:** Beide Prüfsitzungen startet die bauende Sitzung auf Wunsch der Fachstelle, je mit der Startnachricht aus Abschnitt 8 und ohne weiteren Inhalt. Prüfung 1 arbeitet auf dem Branch `schlusspruefung-1`, Prüfung 2 auf `schlusspruefung-2`.
 
 ## 3. Gegenstand und Bezugsstände
 
