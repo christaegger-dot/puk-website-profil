@@ -154,6 +154,29 @@ Dazu 5 leichte Befunde zu Bericht und Abgleich. Die erste und zweite Prüfrunde 
   - danach R1 bis R3
 - Die Statustabelle bleibt unverändert; jede Stufe bleibt «offen».
 
+### Freigabe nach der Korrektur NSK und Schritt 3 der Entscheide (13.10.2026)
+
+**13.10.2026 · Fachstelle Angehörigenarbeit PUK.** Entscheid der Fachstelle im Chat der bauenden Sitzung («Alles freigegeben»), am 13.10.2026 kurz nach Mitternacht (Zürcher Zeit). Die Antwort galt der Frage, ob die bauende Sitzung Schritt 3 der Entscheide jetzt umsetzt (`KORREKTUR-SCHLUSSPRUEFUNG-2.md`, Abschnitt 15, Punkt 2). Von der bauenden Sitzung übertragen und umgesetzt. Stand der Freigabe: `main` am Commit `6034e0a` (Merge von PR #68; die Dateien der Website sind gleich wie am Stand `6146a81`).
+
+- **Die Website ist fachlich freigegeben:** alle 17 Seiten als Ganzes im Stand `6034e0a`, mit den Korrekturen SP2-K und NSK-1 bis NSK-3.
+- **Der neue Satz aus NSK-3 ist fachlich freigegeben:** «Die Treffpunkte sind offen für alle Angehörigen sowie Freundinnen und Freunde.» (`unterstuetzung` › `austausch`).
+- **Die 98 Textzeilen des Plans sind freigegeben (SPZ-F-3).** Die Zeile `v-404-text` bleibt «entfällt».
+- **Umgesetzt** (Entscheide, Abschnitt 6, Schritt 3):
+  - `approvalStatus` von `v-vs-anspannung` und `v-ge-trieb` «freigegeben» (Freigabe vom 12.10.2026, Unterabschnitt oben)
+  - `approvalStatus` der 98 Zeilen mit `format` «text» «freigegeben»; im Plan stehen jetzt 108 Zeilen auf «freigegeben» und 1 auf «entfällt»
+  - `editorialStatus` «Fachlich freigegeben am 13.10.2026» (W21; Datum nach SPZ-F-2, der Tag dieses Eintrags); die Fusszeile aller 17 Seiten lautet «Redaktioneller Status: Fachlich freigegeben am 13.10.2026» (N15)
+  - `shortDescription` «Psychoedukative Website der Fachstelle Angehörigenarbeit PUK für Angehörige von Menschen mit Borderline.» (RF-5)
+  - neu gebaut; Selbstprüfung im Block «Schritt 3 der Entscheide» des Abschnitts «Selbstprüfung der bauenden Sitzung»
+- **Nicht nachgeprüft:** Die Korrekturen NSK-1 bis NSK-3 hat keine Sitzung nachgeprüft, die nicht gebaut hat. Die Fachstelle hat sie ohne diese Nachprüfung freigegeben.
+- **Nicht Teil dieser Freigabe** (Prüfungen und Handlungen, keine fachliche Freigabe):
+  - die rechtliche Prüfung mit SPZ-F-13 und -14
+  - SPZ-F-21
+  - der Release-Kandidat mit `--production` auf der Vorschau und die realen Tests (SPZ-F-33), dazu NSK-F-1 und die Silbentrennung aus NSK-2
+  - NK-F-3 spätestens vor R3
+  - Netlify und PR #659 nach Abschnitt 5 der Entscheide
+  - danach R1 bis R3
+- Die Statustabelle bleibt unverändert; jede Stufe bleibt «offen».
+
 ## Nachprüfung SP2-K (12.10.2026, Stand 5d59aba)
 
 **Prüfsitzung (Claude Code), 12.10.2026.** Nachprüfung der Korrektur SP2-K nach `KORREKTUR-SCHLUSSPRUEFUNG-2.md`, Abschnitt 15, Punkt 1. Geprüft ist der Branch `korrektur-sp2-k` am Commit `5d59aba` (Entwurfs-PR christaegger-dot/puk-website-profil#68); Bezugsstand ist `2c7078a`. Diese Sitzung hat die Website weder gebaut noch korrigiert noch geprüft und nichts entschieden. An Schlussprüfung, Entscheiden, Korrekturauftrag und Korrektur SP2-K hat sie nicht mitgearbeitet. Gelesen: `CLAUDE.md`, `guidelines/00-ablauf-pruefung-und-freigabe.md`, `KORREKTUR-SCHLUSSPRUEFUNG-2.md` ganz, `ENTSCHEIDE-SCHLUSSPRUEFUNG.md` Abschnitte 3, 4, 5 und 6, in diesem Bericht der Block «Korrektur SP2-K» der Selbstprüfung und «Begründete Ausnahme · Druckregel (SPZ-F-32)». Geändert ist nur dieser Abschnitt. **Keine Freigabe eingetragen, keine Stufe «erledigt», Statustabelle unverändert.** Neue IDs: «NSK-» (Befunde), «NSK-F-» (Fragen).
@@ -5089,6 +5112,46 @@ Keine Stufe ist «erledigt». W1: 2 wichtig, 2 optional, 6 Fragen. W2: 2 wichtig
 ## Selbstprüfung der bauenden Sitzung
 
 Nach jedem Bau ohne Nachfrage ausfüllen: Visualisierungs-Check wie unten, mit Beleg je Punkt. Arbeitsstand, keine Prüfstufe.
+
+**Stand 13.10.2026 · Schritt 3 der Entscheide (Freigabe, Fusszeile, Plan) · bauende Sitzung (Claude Code).** Umgesetzt nach `KORREKTUR-SCHLUSSPRUEFUNG-2.md`, Abschnitt 15, Punkt 2, und `ENTSCHEIDE-SCHLUSSPRUEFUNG.md`, Abschnitt 6, Schritt 3, auf die Freigabe der Fachstelle vom 13.10.2026 (Abschnitt «Fachliche Freigabe der Fachstelle», Unterabschnitt «Freigabe nach der Korrektur NSK und Schritt 3 der Entscheide»). Branch `claude/bold-johnson-ja07vq`, abgezweigt von `main` am Stand `6034e0a`. Geändert sind `site.config.json`, die 17 gebauten Seiten (nur die Fusszeile) und dieser Bericht. Keine Stufe ist «erledigt»; die Statustabelle ist unverändert.
+
+**Nicht erfüllt oder offen (Kurzfassung):**
+
+1. **Keine Prüfstufe abgeschlossen.** Das Produktionsgate blockiert weiter mit `review-report` (W1 bis R3 offen). Erwartet.
+2. **Nachprüfung NSK-1 bis NSK-3** durch eine Sitzung, die nicht gebaut hat, ist nicht erfolgt; die Fachstelle hat ohne sie freigegeben.
+3. **Datum der Fusszeile:** Die Freigabe kam am 13.10.2026 kurz nach Mitternacht Zürcher Zeit (nach UTC noch am 12.10.2026). Eingetragen ist das Zürcher Datum; die Fachstelle hat den 13.10.2026 auf Rückfrage bestätigt. Erledigt.
+4. **Weiter offen vor der Veröffentlichung:**
+   - die rechtliche Prüfung
+   - SPZ-F-21
+   - der Release-Kandidat auf der Vorschau
+   - die realen Tests, mit NSK-F-1, der Silbentrennung aus NSK-2, Screenreader, Touch und Hardwaretastatur
+   - NK-F-3
+   - R1 bis R3
+
+| Punkt | Stand | Beleg |
+| --- | --- | --- |
+| `approvalStatus` der zwei Abbildungen (SP2-K-18, Freigabe 12.10.2026) | umgesetzt | `verstehen` › `v-vs-anspannung` und `genesung` › `v-ge-trieb`: «ausstehend» → «freigegeben» |
+| 98 Textzeilen (SPZ-F-3) | umgesetzt | Zählung über alle Seiten, vorher: Text «ausstehend» 98, Text «entfällt» 1, Abbildung «freigegeben» 8, Abbildung «ausstehend» 2; nachher 108 «freigegeben», 1 «entfällt» (`v-404-text`). `git diff site.config.json`: 100 Zeilen `approvalStatus`, sonst nur die zwei Felder unten |
+| `editorialStatus` (W21, SPZ-F-2) | umgesetzt | «Entwurf – fachliche Prüfung ausstehend» → «Fachlich freigegeben am 13.10.2026». Fusszeile «Redaktioneller Status: Fachlich freigegeben am 13.10.2026» auf 17 von 17 Seiten (`grep`; `gate.html` hat keine Fusszeile) |
+| `shortDescription` (RF-5) | umgesetzt | «… von Menschen mit Borderline. Entwurf, fachliche Prüfung ausstehend.» → «Psychoedukative Website der Fachstelle Angehörigenarbeit PUK für Angehörige von Menschen mit Borderline.» Der erste Satz ist wörtlich gleich; er steht auf keiner gebauten Seite (`grep` in `*.html`: 0) |
+| Gebaute Seiten | nur Fusszeile | Skript: Jede der 17 Seiten ist gleich wie am Stand `6034e0a`, wenn man «Entwurf – fachliche Prüfung ausstehend» durch «Fachlich freigegeben am 13.10.2026» ersetzt (17 geändert, 0 mit weiterer Änderung). `content/`, `borderline.css` und `abgleich/` sind unverändert |
+
+**Visualisierungs-Check:** Keine Figur, kein Abschnitt und kein Text ausserhalb der Fusszeile ist geändert (Beleg: Zeile «Gebaute Seiten» oben). Die Ergebnisse je Prüfpunkt gelten deshalb wie im Block «Korrektur nach der Nachprüfung SP2-K» und im Block «Korrektur SP2-K». Neu ist nur der Status: Alle zehn Abbildungen stehen im Plan auf «freigegeben».
+
+**Prüfungen:**
+- `node tools/build.mjs` → «Gate draft: 0 blockierend, 2 Hinweise»; vorher 4, die zwei Hinweise `visual-approval` sind entfallen; es bleiben `crisis-number-check` «144» auf `quellen` (bekannt) und `review-report`
+- `node tools/gate.mjs --selftest` → 65/65
+- `node tools/gate.mjs --production` → «1 blockierend, 1 Hinweise» (`review-report`; vorher zusätzlich `visual-approval`)
+- `node abgleich/pruefe-abgleich.mjs` → «7406 Zeilen, 0 ohne Fundstelle»
+- `node abgleich/verwendet-auf.mjs` in beiden Modi → 0 mit anderer Angabe
+- `tel:` 0, `style=` 0
+
+**Neue Sätze zur Freigabe:** keine. Sichtbar ändert sich nur die Fusszeile, im Wortlaut nach SPZ-F-2 (N15).
+
+**Aufgefallen, nicht geändert:**
+
+1. `UMBAUPLAN.md` Z. 121 nennt als Status des Umbaus weiter `editorialStatus` «Entwurf – fachliche Prüfung ausstehend», Z. 3 «Stand: Etappen 2c und 3-1 freigegeben». Schritt 3 nennt den Plan nicht.
+2. Im Druck steht auf `verstehen` weiter eine leere Seite vor der Anspannungskurve (SP1-39; Aufgefallen Nr. 1 im Block «Korrektur nach der Nachprüfung SP2-K»).
 
 **Stand 12.10.2026 · Korrektur nach der Nachprüfung SP2-K (NSK-1 bis NSK-3) · bauende Sitzung (Claude Code).** Die Fachstelle hat am 12.10.2026 im Chat entschieden, dass die bauende Sitzung der Korrektur SP2-K die Befunde der Nachprüfung selbst korrigiert («Nein, bitte korrigiere die Punkte gleich selber»), ohne Entscheidsitzung dazwischen. Grundlage: Abschnitt «Nachprüfung SP2-K» (Commit `52c27f2`). Geändert sind `borderline.css`, `content/unterstuetzung.html` (und die gebaute Seite), `abgleich/unterstuetzung.md` und `abgleich/README.md`, dazu dieser Bericht. Keine Stufe ist «erledigt»; die Statustabelle ist unverändert; keine Freigabe eingetragen.
 
