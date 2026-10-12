@@ -39,13 +39,11 @@ Ersetzt die Fassung der dritten Prüfsitzung (Stand `5f68c39`, nachgeführt mit 
 - W1-F-19: **abgeschlossen** (12.10.2026). Quellen- und Linkabgleich im Nachtrag unten; K1 entschieden, umgesetzt (`16da1ec`) und in W1, Prüfrunde 6 nachgeprüft. Keine fachliche Freigabe erteilt.
 - W1-31: Impressum und Datenschutz rechtlich prüfen lassen (mit der PUK): Widerspruch «keine Daten an andere Anbieter» und Netlify, geltendes Recht, verantwortliche Stelle, Aufbewahrung der Protokolle, Postadresse; dabei den Wortlaut aus S-32 («Herausgeberin: Fachstelle Angehörigenarbeit der Psychiatrischen Universitätsklinik Zürich», «… kein offizielles Angebot der Klinik als Ganzes») und den Vermerk aus W1-32.
 - Prüfbedarf aus R1 (Punkt 18), unverändert offen: Gehört nach «Sie dürfen ein Gespräch beenden und den Raum verlassen» (`fuer-sich-sorgen` › `grenzen`) der Verweis im Text?
-- Neue optionale Befunde (vierte Prüfsitzung): entscheiden, ob umsetzen.
-  - W1-33: Die VASK-Gruppe «im Aufbau» ist eine zeitgebundene Angabe; auf `je-nach-rolle` steht kein Stand-Vermerk. Vor der Veröffentlichung an beiden Stellen nachprüfen (Vorschlag ohne Textänderung) oder einen Vermerk ergänzen.
-  - S-34: «laut Flyer» auf `je-nach-rolle` nennt nicht, wessen Flyer; auf `rechte-und-angebote` steht «laut VASK-Flyer».
+- Neue optionale Befunde der vierten Prüfsitzung (W1-33, S-34): am 12.10.2026 entschieden und umgesetzt (Eintrag unter «Umgesetzt nach den Prüfrunden»).
 
 **Bauende Sitzung** (nach Freigabe)
 
-- S-34 und W1-33, falls die Fachstelle sie umsetzen lässt.
+- S-34 und W1-33: umgesetzt am 12.10.2026 (Rollenwechsel der vierten Prüfsitzung); Nachprüfung durch eine andere Sitzung offen.
 - W1-09 Rest und W1-10 Rest: Abrufdaten, PatG § 19, NVL-Kapitel, Programmname «Familiencoach Depression», «drei bis vier Wochen», BAG «allgemein informieren» am Original prüfen, sobald die Originale erreichbar sind.
 - BD-09 / W3-10 Rest: Dateigrössen der 7 PDF-Dateien nachtragen.
 - Erledigt und nachgeprüft: S-33, V-11, BD-12 (#40), K1 (#41); Selbstprüfung Punkte 12, 15, 17, 18 und 19 (Visualisierungs-Check, Runde 4).
@@ -68,7 +66,8 @@ Ersetzt die Fassung der dritten Prüfsitzung (Stand `5f68c39`, nachgeführt mit 
 - Mindestens zwei reale Screenreader-Läufe (Protokollvorlage unter «Bedienung und Barrierefreiheit») und ein Test mit Hardwaretastatur und auf einem realen Touch-Gerät; dabei den Kreislauf mit den neuen Sätzen und der seit 12.10.2026 umgestellten Kurzbeschreibung anhören (BD-12).
 - Die 70 externen Links prüfen (69 bis `b8288d0` und neu die Treffpunkte-Seite der VASK Zürich aus K1). Teilnachweis vom 12.10.2026: die Anbieterlinks aus W1-F-19 und die Treffpunkte-Seite im Nachtrag geprüft (HTTP 200); kein Gesamtabschluss des Linktests. Dabei die VASK-Gruppe an beiden Stellen auf den aktuellen Stand prüfen (W1-33).
 - Lesetest mit Angehörigen, wo möglich trialogisch (R2 ersetzt ihn nicht).
-- Nach weiteren Korrekturen (Freigabe-Änderungen aus W1-F-21, W1-33, S-34, später R2-08): die betroffenen Stufen in einer Sitzung nachprüfen, die die Korrekturen nicht umgesetzt hat. R3 erst, wenn W1-F-21, W1-31 und die realen Screenreader-Läufe vorliegen.
+- Nachprüfung von W1-33 und S-34 (umgesetzt am 12.10.2026) durch eine Sitzung, die sie nicht umgesetzt hat: Satzvergleich gegen `f24e5af` (nur `je-nach-rolle` › `erwachsene-kinder`), neuer Verweis auf `rechte-und-angebote#angebote`, Abweichung bei W1-33.
+- Nach weiteren Korrekturen (Freigabe-Änderungen aus W1-F-21, später R2-08): die betroffenen Stufen in einer Sitzung nachprüfen, die die Korrekturen nicht umgesetzt hat. R3 erst, wenn W1-F-21, W1-31 und die realen Screenreader-Läufe vorliegen.
 
 ## Nachtrag W1-F-19 · Quellen- und Linkabgleich (12.10.2026)
 
@@ -227,6 +226,8 @@ Alle Quellen **abgerufen am 12.10.2026**. Wo kein redaktionelles Änderungsdatum
 
 - **12.10.2026 · K1 (W1-F-19):** den Vorschlag K1 aus dem Nachtrag W1-F-19 (Abschnitt 4) an beiden Stellen übernehmen («Setze K1 um»). Eine fachliche Freigabe (W1-F-21) ist damit nicht erteilt.
 
+- **12.10.2026 · W1-33 und S-34:** beide umsetzen («setze W1-33 and S-34 um»). Eine fachliche Freigabe (W1-F-21) ist damit nicht erteilt.
+
 ### Umgesetzt nach den Prüfrunden (bauende Sitzung)
 
 - **11.10.2026 · W2-01, W2-02 (Verweise L1 bis L12, `5ad9cc8`):** zwölf Verweise nach W2-C eingefügt, je ein Satz mit Link und ohne neue fachliche Aussage. L1 und L2 im Wortlaut von `ihre-situation` › `angst`; L9 als Link auf «Grenzen setzen» im bestehenden Satz; L12 als Übergangssatz (`.puk-longform__transition`) am Ende der Seiten 2 bis 7, nicht auf der letzten Seite. Geprüft: alle internen Links führen auf vorhandene Ziele; kein horizontaler Überlauf bei 320 und 1280 px; Gate 0 blockierend.
@@ -354,6 +355,16 @@ Alle Quellen **abgerufen am 12.10.2026**. Wo kein redaktionelles Änderungsdatum
     - **Nicht geprüft:** die Erreichbarkeit der VASK-Adressen. Aus dieser Arbeitsumgebung sind externe Adressen gesperrt (`curl`: keine Verbindung). Der Nachtrag W1-F-19 nennt für beide Adressen HTTP 200 am 12.10.2026.
   - **Offen:** Nachprüfung durch eine andere Sitzung; nach dem Nachtrag genügt der Abgleich der zwei geänderten Stellen und der Linkziele. Danach ist W1-F-19 abgeschlossen.
 
+- **12.10.2026 · W1-33 und S-34 umgesetzt** (Auftrag der Fachstelle vom 12.10.2026: «setze W1-33 and S-34 um»). **Rollenwechsel:** Diese Sitzung hat als vierte Prüfsitzung den Stand `1a328f5` geprüft und beide Befunde selbst vorgeschlagen; für diese Umsetzung ist sie bauende Sitzung. Die Nachprüfung macht deshalb eine andere Sitzung. Geändert sind nur `content/je-nach-rolle.html` und die gebaute Seite; `site.config.json`, Plan und Figuren sind unverändert.
+  - **S-34:** `je-nach-rolle` › `erwachsene-kinder`: «… befindet sich laut VASK-Flyer eine neue Gruppe …» statt «laut Flyer». Zweite Variante des Vorschlags, gewählt, weil `rechte-und-angebote` denselben Ausdruck verwendet.
+  - **W1-33:** Prüfung vor der Veröffentlichung: Die VASK-Gruppe steht an beiden Stellen in «Offene Punkte › Prüfung durch Personen» (seit dem Bericht der vierten Prüfsitzung). Dazu im selben Absatz ein neuer Satz mit Verweis auf den Eintrag, unter dem der Stand-Vermerk steht: «Weitere Angebote und den Stand dieser Angaben finden Sie unter Unterstützung für Angehörige.» (Link `rechte-und-angebote.html#angebote`, Linkname wie auf `fuer-sich-sorgen`). **Abweichung vom Vorschlag:** Der Satz zur Gruppe behält seinen Zeitbezug («neue Gruppe … im Aufbau»). Ihn ohne Zeitbezug zu fassen, hiesse die Aussage aus K1 zu ändern, die die Fachstelle so entschieden hat; der Verweis führt stattdessen zum Stand-Vermerk. Keine neue fachliche Aussage.
+  - **Satzvergleich vorher/nachher** (gebaute Seiten gegen `main` `f24e5af`, ganzer `body`): 1 Satz geändert, 2 neu, nur auf `je-nach-rolle` (S-34 1/1, W1-33 0/1); übrige 9 Seiten unverändert; kein Satz entfallen. Kennzahlen nach der Zählweise von R2: `je-nach-rolle` 89 → 90 Sätze, Verneinung unverändert 13, Sätze über 25 Wörter unverändert 4 (neue Sätze 21 und 13 Wörter).
+  - **Geprüft:**
+    - `node tools/build.mjs` → 10 Seiten, Build r4-8, Gate draft 0 blockierend, 12 Hinweise; `--production` 12 blockierend wie vorher; `--selftest` 65/65; `sitemap.xml` unverändert.
+    - Playwright (Chromium) mit CSP aus `_headers` per Route, 10 Seiten × 320, 360, 640, 768, 1024, 1280, 1440 px (70 Messungen): kein Überlauf, 0 Konsolenfehler, 0 CSP-Verstösse (Positivkontrolle meldet Inline-Skript und `style`-Attribut), keine fremden Anfragen. 200 %: 0 Überlauf auf 10 Seiten bei 360 bis 1440 px; 0 überlappende Textzeilen in allen 11 Figuren (132 Messungen).
+    - `je-nach-rolle`: keine zwei gleichnamigen Links mit verschiedenem Ziel; axe-core 4.10.3 bei 1280 und 360 px: 0 Verstösse. Abschnitt «Erwachsene Kinder» bei 360 px angesehen. Bildschirmfotos im Scratchpad, nicht im Repository.
+  - **Offen:** Nachprüfung durch eine andere Sitzung; die VASK-Angaben an beiden Stellen vor der Veröffentlichung prüfen (W1-33).
+
 ### Begriffe nach den Entscheiden W2-F-01 bis W2-F-03 (bauende Sitzung, für S und W2-D)
 
 | Begriff | Gilt | Wo |
@@ -388,7 +399,7 @@ Ergebnis der Prüfsitzung zu diesen fünf Punkten: «W1-E · Offener Prüfbedarf
 
 ## Selbstprüfung der bauenden Sitzung
 
-Arbeitsstand vom 10.10.2026, nachgeführt am 11.10.2026 nach der Umsetzung von R2-01 (Punkte 16, 18 und 19), R2-02 bis R2-07 (Punkte 15 und 17) sowie V-08 und V-09 (Punkte 18 und 19), am 12.10.2026 nach S-33, V-11 und BD-12 (Punkte 12, 15, 17, 18 und 19); nach K1 (12.10.2026) unverändert, weil keine Figur betroffen ist; keine Prüfstufe. Elf Figuren: `v-dv-schichten` (K), `v-dv-entstehung` (G), `v-bv-vergleich` (E), `v-bv-weg` (C), `v-bv-fruehzeichen` (J), `v-is-gefaess` (G), `v-is-kreislauf` (B), `v-ro-spannung` (H), `v-bg-boot` (D), `v-fs-netz` (I), `v-ra-vergleich` (E).
+Arbeitsstand vom 10.10.2026, nachgeführt am 11.10.2026 nach der Umsetzung von R2-01 (Punkte 16, 18 und 19), R2-02 bis R2-07 (Punkte 15 und 17) sowie V-08 und V-09 (Punkte 18 und 19), am 12.10.2026 nach S-33, V-11 und BD-12 (Punkte 12, 15, 17, 18 und 19); nach K1 sowie nach W1-33 und S-34 (12.10.2026) unverändert, weil keine Figur betroffen ist; keine Prüfstufe. Elf Figuren: `v-dv-schichten` (K), `v-dv-entstehung` (G), `v-bv-vergleich` (E), `v-bv-weg` (C), `v-bv-fruehzeichen` (J), `v-is-gefaess` (G), `v-is-kreislauf` (B), `v-ro-spannung` (H), `v-bg-boot` (D), `v-fs-netz` (I), `v-ra-vergleich` (E).
 
 ## Visualisierungs-Check
 
