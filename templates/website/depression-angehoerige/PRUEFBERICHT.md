@@ -43,7 +43,7 @@ Kein Prüfbedarf. Die Entscheide vom 12.10.2026 sind an allen Stellen umgesetzt;
 
 - W1-39 und W3-13 · **umgesetzt am 12.10.2026** (Rollenwechsel, siehe oben).
 - Bei der nächsten Änderung am Plan: `v-bv-weg` › `understood` «nach der Besserung» an das `statement` angleichen («nach dem Abklingen der Beschwerden»); kein Befund, nicht sichtbar (W1, Prüfrunde 10, Punkt 6).
-- **Offen:** Nachprüfung durch eine Sitzung, die nicht umgesetzt hat: W1 (W1-39), S (die geänderte Zeile), W3 (W3-13); nicht die achte Prüfsitzung.
+- **Offen:** Nachprüfung durch eine Sitzung, die nicht umgesetzt hat: W1 (W1-39), S (die geänderte Zeile), W3 (W3-13); nicht die achte Prüfsitzung. Auftrag: `NACHPRUEFUNG-W1-39-W3-13.md` im Website-Ordner (auf Wunsch der Fachstelle geschrieben am 12.10.2026), mit den Prüfungen am Original, wenn die Umgebung Internetzugang hat.
 
 **Profil** (Design-System-Artefakt, nicht in diesem Repository; danach neues Paket übernehmen) – am 12.10.2026 von der Fachstelle mit Begründung zurückgestellt (Antwort 5): bis zum nächsten Profilpaket, W3-12 bis R3, BD-08 bis nach den realen Läufen
 
@@ -498,7 +498,7 @@ Alle Quellen **abgerufen am 12.10.2026**. Wo kein redaktionelles Änderungsdatum
   - **W3-13:** `README.md` des Website-Ordners: «… Website-Profils 2026.10 (Build r4-8).» statt «(Build r4-7)»; «**Stand:** fachlich freigegeben am 12.10.2026 (Fachstelle Angehörigenarbeit PUK). Prüfstufen, offene Punkte und Selbstprüfung: `PRUEFBERICHT.md`.» statt «**Stand:** Musterentwurf vom 10.10.2026. Alle Texte und alle elf Darstellungen sind noch nicht fachlich freigegeben. Prüfstufen und Selbstprüfung: `PRUEFBERICHT.md`.». Das README wird nicht exportiert.
   - **Satzvergleich vorher/nachher** (gebaute Seiten an `df9cd52` gegen den neuen Bau, ganzer `body`, Skript aus W1, Prüfrunde 10): 1 Einheit geändert, nur auf `begleiten` (129 → 129 Einheiten), die Quellenzeile oben; übrige 9 Seiten 0 / 0. Entfallen ist nur «Warnsignale und» in der «Verwendung». Kennzahlen nach R2: unverändert (die Quellenliste zählt nicht; `begleiten` 55 Sätze, 15 mit Verneinung, 1 über 25 Wörter).
   - **Geprüft:** `node tools/build.mjs` → «10 Seiten geschrieben · … Build r4-8 · Gate draft: 0 blockierend, 1 Hinweise.» (`review-report`); `node tools/gate.mjs --production` → 1 blockierend (`review-report`); `--selftest` 65/65; `git status`: geändert nur `content/begleiten.html`, `begleiten.html` und `README.md`. Playwright 1.56.1 (Chromium 141, CSP aus `_headers` per Route): 10 Seiten × 320 bis 1440 px (70 Messungen) ohne Überlauf, Konsolenfehler, CSP-Verstösse und fremde Anfragen; Positivkontrolle meldet `style-src-attr`, `script-src-elem` und `img-src`.
-  - **Offen:** Nachprüfung durch eine Sitzung, die diese Umsetzung nicht gemacht hat: W1 (W1-39), S (die geänderte Zeile), W3 (W3-13). S steht deshalb wieder auf «offen», weil sich eine Zeile geändert hat. Dazu die Adressen und PDF-Grössen am Original (W1, Prüfrunde 10, Punkt 9), die realen Tests und R3.
+  - **Offen:** Nachprüfung durch eine Sitzung, die diese Umsetzung nicht gemacht hat: W1 (W1-39), S (die geänderte Zeile), W3 (W3-13); Auftrag: `NACHPRUEFUNG-W1-39-W3-13.md`. S steht deshalb wieder auf «offen», weil sich eine Zeile geändert hat. Dazu die Adressen und PDF-Grössen am Original (W1, Prüfrunde 10, Punkt 9), die realen Tests und R3.
 
 ### Begriffe nach den Entscheiden W2-F-01 bis W2-F-03 (bauende Sitzung, für S und W2-D)
 
