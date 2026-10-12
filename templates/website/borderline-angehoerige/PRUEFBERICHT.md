@@ -138,12 +138,13 @@ Dazu 5 leichte Befunde zu Bericht und Abgleich. Die erste und zweite Prüfrunde 
 
 - **Die Abbildung «Anspannungskurve» (`v-vs-anspannung`) ist fachlich freigegeben,** im Stand `5d59aba`: mit Stelle 3 «Sicherheit geht vor Klärung. Eine Pause, Abstand und weniger Reize können helfen.» (N6, SPZ-F-8) und der Legende «… nach dem früheren Handout «Die Anspannungskurve» …» (N7).
 - **Die Abbildung «Ein neuer Trieb» (`v-ge-trieb`) ist fachlich freigegeben,** im Stand `5d59aba`: mit dem Sims, der rechts innerhalb des Bildes mit runder Kante endet (Wortlaut 3.7, SPZ-F-30), und der Legende «… nach den früheren Handouts …» (N7).
-- **Noch nicht umgesetzt:** In `site.config.json` stehen die beiden Zeilen weiter auf `approvalStatus` «ausstehend». Diesen Eintrag setzt die bauende Sitzung im nächsten Schritt um (`KORREKTUR-SCHLUSSPRUEFUNG-2.md`, Abschnitt 15, Punkt 2; Entscheide, Abschnitt 6, Schritt 3). Im selben Schritt setzt sie:
-  - `approvalStatus` dieser zwei Zeilen auf «freigegeben»
-  - `editorialStatus` auf «Fachlich freigegeben am TT.MM.JJJJ», Datum nach SPZ-F-2
+- **Umgesetzt am 12.10.2026** (Selbstprüfung, Block «Freigabe nach der Nachprüfung SP2-K umgesetzt»):
+  - `approvalStatus` der zwei Zeilen auf «freigegeben»
+  - `editorialStatus` «Fachlich freigegeben am 12.10.2026» (SPZ-F-2)
   - `shortDescription` nach RF-5
   - die 98 Textzeilen des Plans auf «freigegeben» (SPZ-F-3)
-  - danach baut sie neu und trägt das Ergebnis in den Prüfbericht ein.
+  - danach neu gebaut
+  - Umgesetzt hat auf Auftrag der Fachstelle die Sitzung der Nachprüfung, keine eigene bauende Sitzung (Abweichung vom Ablauf, dort begründet).
 - **Nicht Teil dieser Freigabe:** NSK-F-1 (Schwelle der Schleife in Firefox und WebKit, reale Tests) und die optionalen Befunde NSK-1 bis NSK-3. Sie bleiben offen.
 - **Weiter offen vor der Veröffentlichung:**
   - die rechtliche Prüfung mit SPZ-F-13 und -14
@@ -5089,6 +5090,59 @@ Keine Stufe ist «erledigt». W1: 2 wichtig, 2 optional, 6 Fragen. W2: 2 wichtig
 ## Selbstprüfung der bauenden Sitzung
 
 Nach jedem Bau ohne Nachfrage ausfüllen: Visualisierungs-Check wie unten, mit Beleg je Punkt. Arbeitsstand, keine Prüfstufe.
+
+**Stand 12.10.2026 · Freigabe nach der Nachprüfung SP2-K umgesetzt (`KORREKTUR-SCHLUSSPRUEFUNG-2.md`, Abschnitt 15, Punkt 2; Entscheide, Abschnitt 6, Schritt 3) · Sitzung der Nachprüfung SP2-K (Claude Code), auf Auftrag der Fachstelle.** Grundlage ist die Freigabe der Fachstelle vom 12.10.2026 (Abschnitt «Fachliche Freigabe der Fachstelle», «Neue Freigabe nach der Nachprüfung SP2-K», Commit `af32508`), dazu SPZ-F-2, SPZ-F-3 und RF-5. Branch `korrektur-sp2-k`. Geändert sind nur `site.config.json`, die 17 gebauten Seiten und dieser Bericht. Keine Stufe ist «erledigt»; die Statustabelle ist unverändert.
+
+**Abweichung vom Ablauf:** Nach Abschnitt 15 setzt eine bauende Sitzung diesen Schritt um. Die Fachstelle hat entschieden, dass ihn die Sitzung der Nachprüfung SP2-K selbst umsetzt («Bitte führe es gleich selber aus»).
+- **Nachprüfung bleibt gültig:** Sie galt dem Stand `5d59aba` und war vor diesem Bau abgeschlossen.
+- **Folge für spätere Prüfungen:** Für R1 bis R3 gilt diese Sitzung als bauend und ist dort ausgeschlossen.
+- **Nicht unabhängig geprüft:** die Änderungen dieses Schritts; R1 prüft sie mit.
+
+**Nicht erfüllt oder offen (Kurzfassung):**
+
+1. **Eigene bauende Sitzung:** Der Schritt ist nicht von einer eigenen bauenden Sitzung umgesetzt (oben).
+2. **Produktionsgate:** blockiert weiter mit `review-report`, weil alle Stufen offen sind. Erwartet.
+3. **Weiter offen:**
+   - NSK-F-1 (Schwelle der Schleife in Firefox und WebKit, reale Tests) und die optionalen Befunde NSK-1 bis NSK-3
+   - die rechtliche Prüfung (SPZ-F-13, -14) und SPZ-F-21
+   - der Release-Kandidat mit `--production` auf der Vorschau und die realen Tests
+   - NK-F-3; danach R1 bis R3
+
+### Freigabe nach SP2-K: Stand je Punkt
+
+| Punkt | Stand | Beleg |
+| --- | --- | --- |
+| `approvalStatus` von `v-vs-anspannung` und `v-ge-trieb` | umgesetzt | `site.config.json`: «freigegeben»; übrige Felder unverändert |
+| 98 Textzeilen des Plans (SPZ-F-3) | umgesetzt | Skript über `pages[].visualPlan`: vorher 100 Zeilen «ausstehend», davon 98 mit `format` «text» und die zwei Abbildungen. Nachher 109 Zeilen: 10 Abbildungen und 98 Text «freigegeben», 1 Text «entfällt» (unverändert) |
+| `editorialStatus` (W21, SPZ-F-2) | umgesetzt | «Fachlich freigegeben am 12.10.2026». Das Datum ist der Tag des Freigabe-Eintrags nach der Nachprüfung (SPZ-F-2) |
+| `shortDescription` (RF-5) | umgesetzt | «Psychoedukative Website der Fachstelle Angehörigenarbeit PUK für Angehörige von Menschen mit Borderline.»; der erste Satz bleibt wörtlich, «Entwurf, fachliche Prüfung ausstehend.» entfällt. Steht auf keiner gebauten Seite (`grep "Entwurf, fachliche Prüfung" *.html`: 0) |
+| Bau | umgesetzt | `node tools/build.mjs`: «17 Seiten geschrieben · … · Gate draft: 0 blockierend, 2 Hinweise.» (`crisis-number-check` «144» auf `quellen`, `review-report`); `visual-approval` entfällt |
+| Satzdiff | geprüft | `git diff --word-diff=porcelain` über die gebauten Seiten: 17 Seiten, je genau eine Änderung, «Entwurf – fachliche Prüfung ausstehend» → «Fachlich freigegeben am 12.10.2026». Sie steht in der Fusszeile («Redaktioneller Status: Fachlich freigegeben am 12.10.2026», direkt unter «Inhaltsverantwortung: Fachstelle Angehörigenarbeit PUK»); sonst keine Änderung. `gate.html` und `sitemap.xml` unverändert; «Entwurf – fachliche Prüfung ausstehend» auf keiner gebauten Seite mehr |
+| weitere Prüfungen | geprüft | `node tools/gate.mjs --selftest`: «65/65 bestanden»; `--production`: «1 blockierend, 1 Hinweise» (`review-report`); `node abgleich/pruefe-abgleich.mjs`: «7406 Zeilen, 0 ohne Fundstelle»; `verwendet-auf.mjs` in beiden Modi «0 mit anderer Angabe» |
+
+### Freigabe nach SP2-K: Neue und entfallene Sätze
+
+| N | Ort | vorher | neu |
+| --- | --- | --- | --- |
+| N15 | Fusszeile aller 17 Seiten | Redaktioneller Status: Entwurf – fachliche Prüfung ausstehend | Redaktioneller Status: Fachlich freigegeben am 12.10.2026 |
+
+Der Wortlaut entspricht N15 der Entscheide («Redaktioneller Status: Fachlich freigegeben am TT.MM.JJJJ») mit dem Datum nach SPZ-F-2. Kein weiterer sichtbarer Satz ist neu oder entfallen.
+
+### Freigabe nach SP2-K: Visualisierungs-Check
+
+An keiner Figur ändern sich Markup, Text oder CSS (Wortdiff oben). Es ändert sich nur Prüfpunkt 14 «Fachlich freigegeben».
+
+| Figur | Punkt 14 vorher | Punkt 14 nachher | Beleg |
+| --- | --- | --- | --- |
+| Anspannungskurve (`v-vs-anspannung`) | N | E | `approvalStatus` «freigegeben»; Freigabe der Fachstelle vom 12.10.2026 nach der Nachprüfung SP2-K, Teil C |
+| Ein neuer Trieb (`v-ge-trieb`) | N | E | wie oben |
+| Eisberg, Schleife, Zwei Sichten, Momentaufnahmen, DEAR, Weg, Abend, Tassen | E | E | unverändert «freigegeben» |
+
+Die übrigen Prüfpunkte gelten wie in der Nachprüfung SP2-K (Teile C und D) und im Block «Korrektur SP2-K». Kein Punkt ist durch diesen Schritt neu zu prüfen. Freundin-Test: Die Bilder sind unverändert, er gilt wie in der Nachprüfung SP2-K, Teil C.
+
+**Aufgefallen, nicht geändert:** In «Fachliche Freigabe der Fachstelle» › «Entscheide zur Schlussprüfung» steht unter «Weiter offen» noch «Fusszeile und Textzeilen des Plans nach SPZ-F-2 und SPZ-F-3, nach der Nachprüfung». Der Punkt ist mit diesem Schritt erledigt. Der Eintrag bleibt als Verlauf stehen.
+
+**Status:** Keine Stufe ist «erledigt»; die Statustabelle ist unverändert. Offen sind alle Stufen W1 bis R3.
 
 **Stand 12.10.2026 · Korrektur SP2-K (nach der Schlussprüfung, Entscheide PR #60 und #61) · bauende Sitzung (Claude Code).** Umgesetzt ist `KORREKTUR-SCHLUSSPRUEFUNG-2.md` (SP2-K-1 bis SP2-K-28) auf dem Branch `korrektur-sp2-k`, abgezweigt von `main` am Stand `d8320a7` (Merge von PR #66; die Dateien der Website sind dort gleich wie am Stand `2c7078a`, geändert sind seither nur Auftrag, Entscheide zu RF-1 bis RF-5 und dieser Bericht). Grundlage sind `ENTSCHEIDE-SCHLUSSPRUEFUNG.md` (Fassung aus PR #60 mit Nachtrag aus PR #61) und Abschnitt 11 des Auftrags (RF-1 bis RF-5). `KORREKTUR-SCHLUSSPRUEFUNG.md` (SP-K) ist nicht verwendet. Diese Sitzung hat an der Schlussprüfung, ihrer Zusammenführung, den Entscheiden und am Korrekturauftrag nicht mitgearbeitet. Geändert sind nur die Dateien aus Abschnitt 1 des Auftrags. Netlify und `christaegger-dot/borderline-angehoerige` sind unverändert; dort ist nur `client/public/_redirects` auf `main` (`f46038b`) gelesen. Keine Stufe ist «erledigt»; die Statustabelle ist unverändert.
 
