@@ -1,6 +1,6 @@
 # Umbauplan · Borderline-Website ins PUK Website-Profil
 
-Stand 08.10.2026, Abschnitte 2 und 7 nachgeführt am 12.10.2026 (Korrektur 3-1-K) · Grundlage: Bestandsaufnahme `bestand/borderline-angehoerige/` (Branch `borderline-bestand`, Commit `5c8471c` der alten Website) · Profil 2026.10, Starter Build r4-3
+Stand 08.10.2026, Abschnitte 2 und 7 nachgeführt am 12.10.2026 (Korrektur 3-1-K), Abschnitt 2 und Stand am 12.10.2026 (Freigabe 2c und 3-1) · **Stand:** Etappen 2c und 3-1 freigegeben (Fachstelle, 12.10.2026, `FREIGABE-ETAPPE-2C-3-1.md`). Etappe 3-2 begonnen (12.10.2026): React-Fassung gesichert (Branch `react-archiv`), Entwurfs-Export im Repository `borderline-angehoerige` (Branch `umzug-puk-profil-1791821335`, PR #659, nicht gemergt); als Nächstes die Prüfung der Netlify-Vorschau und die Schlussprüfungen · Grundlage: Bestandsaufnahme `bestand/borderline-angehoerige/` (Branch `borderline-bestand`, Commit `5c8471c` der alten Website) · Profil 2026.10, Starter Build r4-3
 
 Dieser Plan gehört zur Website `templates/website/borderline-angehoerige/`. Er hält die Entscheide der Fachstelle fest, legt die neue Struktur und den Visualisierungsplan im Entwurf fest und teilt den Bau in Etappen. Struktur und Technik hat Claude entschieden; inhaltliche Punkte stehen unter «Offen für W1».
 
@@ -25,7 +25,7 @@ Durch das Profil bereits entschieden und nicht verhandelbar:
 
 ## 2. Neue Struktur
 
-Aus 72 Seiten (rund 65'000 Wörter) werden 16 Seiten (15 nach dem ersten Plan, seit Etappe 3-1 dazu «Impressum und Datenschutz» als eigene Seite). Richtwerte für den Umfang danach in Klammern. Nachgeführt am 12.10.2026 (Korrektur 3-1-K): Zeilen `rolle`, `kommunizieren`, `grenzen`, `selbstfuersorge` (Ort von drei Handouts), `fragen`, `quellen`, `ueber` und `impressum-datenschutz`.
+Aus 72 Seiten (rund 65'000 Wörter) werden 16 Seiten (15 nach dem ersten Plan, seit Etappe 3-1 dazu «Impressum und Datenschutz» als eigene Seite). Richtwerte für den Umfang danach in Klammern. Nachgeführt am 12.10.2026 (Korrektur 3-1-K): Zeilen `rolle`, `kommunizieren`, `grenzen`, `selbstfuersorge` (Ort von drei Handouts), `fragen`, `quellen`, `ueber` und `impressum-datenschutz`. Mit der Freigabe 2c und 3-1 (12.10.2026): Zeilen `ueber` und `impressum-datenschutz`, für beide gilt kein Richtwert (NK-F-7).
 
 | Seite (`id`) | Titel (Vorschlag) | Navigation | Kommt aus (alte Routen) |
 | --- | --- | --- | --- |
@@ -43,8 +43,8 @@ Aus 72 Seiten (rund 65'000 Wörter) werden 16 Seiten (15 nach dem ersten Plan, s
 | `unterstuetzung` | Unterstützung finden | – (Startseite; verlinkt aus Ihre Rolle, Auf sich achten) | `/fachstelle`, `/beratung`, `/buchempfehlungen` (600) |
 | `fragen` | Häufige Fragen | – (Startseite, Abschnitt «Haltung»; `ueber`) | `/faq` (kein Richtwert, Entscheid zu S-Nr. 1 in `KORREKTUR-ETAPPE-3-1.md`; kurze Antworten mit Link auf die Themenseite) |
 | `quellen` | Quellen und Begriffe | – (Block «Quellen zu dieser Seite» jeder Themenseite; `ueber`) | `/quellen`, `/glossar` (Quellenliste vollständig; Glossar nur Begriffe, die im Text vorkommen) |
-| `ueber` | Über diese Website | – (Startseite, Abschnitt «Beratung»; Impressum) | `/ueber-uns`, `/barrierefreiheit`, `/feedback` (900 zusammen mit `impressum-datenschutz`) |
-| `impressum-datenschutz` | Impressum und Datenschutz | – (Fusszeile, Links «Impressum» und «Datenschutz») | `/impressum`, `/datenschutz` (eigene Seite nach Profilentscheid 11.10.2026, Vorlage des Starters) |
+| `ueber` | Über diese Website | – (Startseite, Abschnitt «Beratung»; Impressum) | `/ueber-uns`, `/barrierefreiheit`, `/feedback` (kein Richtwert, Entscheid zu NK-F-7 in `FREIGABE-ETAPPE-2C-3-1.md`; bis dahin 900 zusammen mit `impressum-datenschutz`) |
+| `impressum-datenschutz` | Impressum und Datenschutz | – (Fusszeile, Links «Impressum» und «Datenschutz») | `/impressum`, `/datenschutz` (eigene Seite nach Profilentscheid 11.10.2026, Vorlage des Starters; kein Richtwert, Entscheid zu NK-F-7 in `FREIGABE-ETAPPE-2C-3-1.md`) |
 
 Entfallen ersatzlos, mit Begründung:
 
@@ -132,4 +132,4 @@ Die alte Website bleibt bis zum Umzug unverändert online.
 
 Alle alten Routen leiten auf die neue Seite und, wo möglich, den passenden Abschnitt weiter (Netlify `_redirects`, Status 301). `/soforthilfe`, `/notfall`, `/notfallkarte` und `/notfallkarte.html` leiten auf die Startseite; deren Fusszeile enthält den Zuständigkeitsverweis. `/materialien/text/<id>` leitet auf den Abschnitt, in den das Handout eingegangen ist (Zuordnung Abschnitt 2).
 
-Umgesetzt in Etappe 3-1 und Korrektur 3-1-K: `_redirects` im Ordner der Website (85 Regeln). Netlify liest die Datei nur im veröffentlichten Stamm, und `tools/export.mjs` kopiert sie nicht. Beim Umzug (Etappe 3-2) wird `_redirects` deshalb von Hand in den Zielordner kopiert, und die alte `netlify.toml` im Zielordner (Repository `borderline-angehoerige`) wird ersetzt; ihre Weiterleitungen stehen in `_redirects`. Das Verhalten (gleichnamige Routen, Schrägstrich am Ende, Anker im Ziel) wird auf der Netlify-Vorschau geprüft.
+Umgesetzt in Etappe 3-1 und Korrektur 3-1-K: `_redirects` im Ordner der Website (85 Regeln). Netlify liest die Datei nur im veröffentlichten Stamm, und `tools/export.mjs` kopiert sie nicht. Beim Umzug (Etappe 3-2) wird `_redirects` deshalb von Hand in den Zielordner kopiert, und die alte `netlify.toml` im Zielordner (Repository `borderline-angehoerige`) wird ersetzt; ihre Weiterleitungen stehen in `_redirects`. Das Verhalten (gleichnamige Routen, Schrägstrich am Ende, Anker im Ziel) wird auf der Netlify-Vorschau geprüft. Etappe 3-2 (12.10.2026): `_redirects` in den Stamm des Export-Branchs kopiert, `netlify.toml` ersetzt (statisch, ohne Build; Branch `umzug-puk-profil-1791821335`, PR #659 im Repository `borderline-angehoerige`). Die Prüfung auf der Vorschau steht aus (`PRUEFBERICHT.md`, Selbstprüfung «Etappe 3-2»).

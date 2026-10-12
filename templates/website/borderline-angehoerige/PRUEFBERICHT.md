@@ -13,10 +13,10 @@ Gehört zur Website in diesem Ordner. Wer den Starter kopiert, übernimmt diese 
 
 | Stufe | Status | Datum | Geprüft durch | Ergebnis |
 | --- | --- | --- | --- | --- |
-| W1 Fachliche Prüfung | offen | 10.10.2026 | Fachstelle Angehörigenarbeit PUK (Freigabe Etappe 1); vierte Prüfrunde: eine Prüfsitzung (Claude, hat nicht gebaut); Fachstelle (Freigabe Etappe 2a); Prüfrunde 2b: eine Prüfsitzung (Claude, hat nicht gebaut); Fachstelle (Freigabe Etappe 2b); Prüfrunde 3-1: eine Prüfsitzung (Claude, hat nicht gebaut) | Etappe 1 fachlich freigegeben (Abschnitt «Fachliche Freigabe der Fachstelle»); alle 21 Fragen P4-F-1 bis P4-F-21 entschieden. Offen, bis die Seiten von Etappe 2 geprüft und freigegeben sind. Prüfrunde 2a: 2 wichtig, 3 optional; 10 Fragen P2a-F-1 bis P2a-F-10. Etappe 2a (`rolle`, `selbstfuersorge`, Einstiege auf `index`) fachlich freigegeben am 10.10.2026. Prüfrunde 2b (`kommunizieren`, `krise`, Einstieg auf `index`): 4 wichtig, 3 optional; 12 Fragen P2b-F-1 bis P2b-F-12. Nachprüfung 2b-K (Stand `f9e2314`, eine Prüfsitzung, hat weder gebaut noch 2b-K umgesetzt): Korrektur wie beauftragt; 1 wichtig (Liste «Neue Sätze zur Freigabe»), 3 optional; 3 Fragen. Etappe 2b (`kommunizieren`, `krise`, Einstieg auf `index`) fachlich freigegeben am 11.10.2026. Prüfrunde 2c (Stand `7ee24ba`, `genesung`, `unterstuetzung`, `diagnose`, `behandlung`, Einstiege auf `index`; eine Prüfsitzung, hat weder 2c-1 noch 2c-2 gebaut): 2 wichtig, 5 optional; 17 Fragen P2c-F-1 bis P2c-F-17. Prüfrunde 2c, zweite Prüfsitzung (Stand `7ee24ba`): 2 wichtig, 1 optional; 15 Fragen P2c2-F-1 bis P2c2-F-15. Prüfrunde 3-1 (Stand `c898b67`, `fragen`, `quellen`, `ueber`, `impressum-datenschutz`; eine Prüfsitzung, hat nicht gebaut): 70 Aussagen gegen den Bestand; 2 wichtig (Liste «Neue Sätze» unvollständig, ein Halbsatz still entfallen), 2 optional; 6 Fragen P3-F-1 bis P3-F-6. Prüfrunde 3-1, zweite Prüfsitzung (Stand `c898b67`, `fragen`, `quellen`, `ueber`, `impressum-datenschutz`): 10 wichtig, 5 optional; 20 Fragen P3b-F-1 bis P3b-F-20. Prüfrunde 3-1 zusammengeführt (beide Prüfsitzungen, 12.10.2026): 10 wichtig, 6 optional; 22 Fragen Z31-F-1 bis Z31-F-22. Nachprüfung 2c-K und 3-1-K (Stand `f3cb270`, eine Prüfsitzung, hat weder gebaut noch geprüft noch entschieden): beide Korrekturen im Wortlaut der Aufträge umgesetzt, Liste «Neue Sätze zur Freigabe» 3-1-K ohne Lücke; 2 optional (NK31-2, NK31-4), 3 Fragen, darunter die neue Freigabe der Sätze auf den freigegebenen Seiten (NK-F-1). |
+| W1 Fachliche Prüfung | offen | 10.10.2026 | Fachstelle Angehörigenarbeit PUK (Freigabe Etappe 1); vierte Prüfrunde: eine Prüfsitzung (Claude, hat nicht gebaut); Fachstelle (Freigabe Etappe 2a); Prüfrunde 2b: eine Prüfsitzung (Claude, hat nicht gebaut); Fachstelle (Freigabe Etappe 2b); Prüfrunde 3-1: eine Prüfsitzung (Claude, hat nicht gebaut); Fachstelle (Freigabe Etappen 2c und 3-1) | Etappe 1 fachlich freigegeben (Abschnitt «Fachliche Freigabe der Fachstelle»); alle 21 Fragen P4-F-1 bis P4-F-21 entschieden. Offen, bis die Seiten von Etappe 2 geprüft und freigegeben sind. Prüfrunde 2a: 2 wichtig, 3 optional; 10 Fragen P2a-F-1 bis P2a-F-10. Etappe 2a (`rolle`, `selbstfuersorge`, Einstiege auf `index`) fachlich freigegeben am 10.10.2026. Prüfrunde 2b (`kommunizieren`, `krise`, Einstieg auf `index`): 4 wichtig, 3 optional; 12 Fragen P2b-F-1 bis P2b-F-12. Nachprüfung 2b-K (Stand `f9e2314`, eine Prüfsitzung, hat weder gebaut noch 2b-K umgesetzt): Korrektur wie beauftragt; 1 wichtig (Liste «Neue Sätze zur Freigabe»), 3 optional; 3 Fragen. Etappe 2b (`kommunizieren`, `krise`, Einstieg auf `index`) fachlich freigegeben am 11.10.2026. Prüfrunde 2c (Stand `7ee24ba`, `genesung`, `unterstuetzung`, `diagnose`, `behandlung`, Einstiege auf `index`; eine Prüfsitzung, hat weder 2c-1 noch 2c-2 gebaut): 2 wichtig, 5 optional; 17 Fragen P2c-F-1 bis P2c-F-17. Prüfrunde 2c, zweite Prüfsitzung (Stand `7ee24ba`): 2 wichtig, 1 optional; 15 Fragen P2c2-F-1 bis P2c2-F-15. Prüfrunde 3-1 (Stand `c898b67`, `fragen`, `quellen`, `ueber`, `impressum-datenschutz`; eine Prüfsitzung, hat nicht gebaut): 70 Aussagen gegen den Bestand; 2 wichtig (Liste «Neue Sätze» unvollständig, ein Halbsatz still entfallen), 2 optional; 6 Fragen P3-F-1 bis P3-F-6. Prüfrunde 3-1, zweite Prüfsitzung (Stand `c898b67`, `fragen`, `quellen`, `ueber`, `impressum-datenschutz`): 10 wichtig, 5 optional; 20 Fragen P3b-F-1 bis P3b-F-20. Prüfrunde 3-1 zusammengeführt (beide Prüfsitzungen, 12.10.2026): 10 wichtig, 6 optional; 22 Fragen Z31-F-1 bis Z31-F-22. Nachprüfung 2c-K und 3-1-K (Stand `f3cb270`, eine Prüfsitzung, hat weder gebaut noch geprüft noch entschieden): beide Korrekturen im Wortlaut der Aufträge umgesetzt, Liste «Neue Sätze zur Freigabe» 3-1-K ohne Lücke; 2 optional (NK31-2, NK31-4), 3 Fragen, darunter die neue Freigabe der Sätze auf den freigegebenen Seiten (NK-F-1). Etappen 2c (`genesung`, `unterstuetzung`, `diagnose`, `behandlung`, Einstiege auf `index`) und 3-1 (`fragen`, `quellen`, `ueber`, `impressum-datenschutz`, `_redirects`) fachlich freigegeben am 12.10.2026; rechtliche Prüfung von Impressum und Datenschutz offen. |
 | W2 Gesamtkohärenz | offen | 10.10.2026 | vierte Prüfrunde | 1 wichtig, 3 optional; offen weiter F-W2-02, F-W2-03 (jetzt P4-F-18, P4-F-19). Prüfrunde 2a: 5 optional. Prüfrunde 2b: 1 wichtig, 3 optional Prüfrunde 2c: 2 optional Prüfrunde 2c, zweite Prüfsitzung: 1 wichtig, 2 optional. Prüfrunde 3-1: 2 wichtig (Erreichbarkeit von `fragen`, `quellen`, `ueber`; Kopf von `fragen`), 2 optional. Prüfrunde 3-1, zweite Prüfsitzung: 2 wichtig, 3 optional. Prüfrunde 3-1 zusammengeführt (beide Prüfsitzungen, 12.10.2026): 2 wichtig, 3 optional. Nachprüfung 2c-K und 3-1-K: V1, V2 und der Verweissatz im Quellenblock stehen wie beauftragt, `fragen`, `ueber` und `quellen` sind von `index` in höchstens zwei Seitenwechseln erreichbar; kein Befund. |
 | S Sprach-Review | offen | 10.10.2026 | vierte Prüfrunde | 6 optional; Lesetest je Abschnitt und Kennzahlen; abschliessbar erst nach W1 und W2. Prüfrunde 2a: 1 wichtig (Länge), 3 optional; 24 Kürzungsvorschläge. Prüfrunde 2b: 4 optional; Längenziel nachgerechnet und erreicht; 6 Kürzungsvorschläge Prüfrunde 2c: 3 optional; Längenziele nachgerechnet und erreicht Prüfrunde 2c, zweite Prüfsitzung: 6 optional; Längenziele nachgerechnet und erreicht. Prüfrunde 3-1: 3 optional; Kennzahlen nachgerechnet, Richtwerte für `fragen` und `ueber` nicht erreicht. Prüfrunde 3-1, zweite Prüfsitzung: 7 optional; Längen nachgerechnet, Richtwerte `fragen` und `ueber` nicht erreicht (bekannt). Prüfrunde 3-1 zusammengeführt (beide Prüfsitzungen, 12.10.2026): 10 optional. Nachprüfung 2c-K und 3-1-K: Wortlaut beider Aufträge umgesetzt, Wörter C1 nachgezählt; 1 optional (NK31-3), 4 Fragen (NK-F-4 bis -7). |
-| Visualisierungs-Check | offen | 10.10.2026 | vierte Prüfrunde | 1 wichtig, 5 optional; Matrix 1–17 × 6 Figuren; seit 10.10.2026 alle sechs Figuren fachlich freigegeben (Fachstelle). Prüfrunde 2a: 1 wichtig, 3 optional; Matrix 1–17 × 2 neue Figuren. Etappe 2a: beide Abbildungen fachlich freigegeben (Fachstelle, 10.10.2026). Prüfrunde 2b: 1 optional; Matrix 1–17 für «Zwei Tassen» (`v-ko-tassen`), trägt, Freigabe ausstehend. Nachprüfung 2b-K: «Zwei Tassen» nach dem Verschieben angesehen, trägt, Freundin-Test bestanden, Freigabe ausstehend. Etappe 2b: «Zwei Tassen» fachlich freigegeben (Fachstelle, 11.10.2026). Prüfrunde 2c: «Ein neuer Trieb» (`v-ge-trieb`), Matrix 1–17, trägt für die Kernaussage; 1 wichtig, 1 optional; Freigabe ausstehend. Prüfrunde 2c, zweite Prüfsitzung: «Ein neuer Trieb» trägt nur mit Änderung; 2 wichtig, 1 optional; zwei Textdarstellungen ohne Befund. Prüfrunde 3-1: vier Seiten ohne Abbildung, 23 Textzeilen des Plans geprüft, kein Befund. Prüfrunde 3-1, zweite Prüfsitzung: vier Seiten ohne Abbildung, 23 Textzeilen des Plans ohne Befund. Prüfrunde 3-1 zusammengeführt (beide Prüfsitzungen, 12.10.2026): kein Befund für die vier Seiten. Nachprüfung 2c-K und 3-1-K: «Ein neuer Trieb» nach 2c-K, Matrix 1–17 bei 1280 und 360 px, Standard und «kontrast», trägt, Freundin-Test bestanden, Freigabe ausstehend (NK-F-2); 2 optional (NK2c-1, NK2c-2). |
+| Visualisierungs-Check | offen | 10.10.2026 | vierte Prüfrunde | 1 wichtig, 5 optional; Matrix 1–17 × 6 Figuren; seit 10.10.2026 alle sechs Figuren fachlich freigegeben (Fachstelle). Prüfrunde 2a: 1 wichtig, 3 optional; Matrix 1–17 × 2 neue Figuren. Etappe 2a: beide Abbildungen fachlich freigegeben (Fachstelle, 10.10.2026). Prüfrunde 2b: 1 optional; Matrix 1–17 für «Zwei Tassen» (`v-ko-tassen`), trägt, Freigabe ausstehend. Nachprüfung 2b-K: «Zwei Tassen» nach dem Verschieben angesehen, trägt, Freundin-Test bestanden, Freigabe ausstehend. Etappe 2b: «Zwei Tassen» fachlich freigegeben (Fachstelle, 11.10.2026). Prüfrunde 2c: «Ein neuer Trieb» (`v-ge-trieb`), Matrix 1–17, trägt für die Kernaussage; 1 wichtig, 1 optional; Freigabe ausstehend. Prüfrunde 2c, zweite Prüfsitzung: «Ein neuer Trieb» trägt nur mit Änderung; 2 wichtig, 1 optional; zwei Textdarstellungen ohne Befund. Prüfrunde 3-1: vier Seiten ohne Abbildung, 23 Textzeilen des Plans geprüft, kein Befund. Prüfrunde 3-1, zweite Prüfsitzung: vier Seiten ohne Abbildung, 23 Textzeilen des Plans ohne Befund. Prüfrunde 3-1 zusammengeführt (beide Prüfsitzungen, 12.10.2026): kein Befund für die vier Seiten. Nachprüfung 2c-K und 3-1-K: «Ein neuer Trieb» nach 2c-K, Matrix 1–17 bei 1280 und 360 px, Standard und «kontrast», trägt, Freundin-Test bestanden, Freigabe ausstehend (NK-F-2); 2 optional (NK2c-1, NK2c-2). Etappe 2c: «Ein neuer Trieb» fachlich freigegeben (Fachstelle, 12.10.2026). |
 | Bedienung und Barrierefreiheit | offen | 10.10.2026 | vierte Prüfrunde, automatisiert | kein Befund; reale Screenreader-Läufe, Hardwaretastatur und Touch fehlen (nicht prüfbar). Prüfrunde 2b: kein Befund (automatisiert) Prüfrunde 2c: kein Befund (automatisiert) Prüfrunde 3-1: kein Befund (automatisiert, 320–1440 px, 200 % Schrift, Tastatur, ohne Skript, Druck, reduzierte Bewegung). Prüfrunde 3-1, zweite Prüfsitzung: kein Befund (automatisiert, 320–1440 px, 200 % Text, Tastatur, Druck, ohne Skript, erzwungene Farben). Prüfrunde 3-1 zusammengeführt (beide Prüfsitzungen, 12.10.2026): kein Befund (automatisiert). Nachprüfung 2c-K und 3-1-K: 16 Seiten automatisiert, kein Befund durch die Korrekturen; 1 wichtig: Überlauf auf `verstehen` bei 1280 px mit 200 % Schrift seit `7ee24ba` (NK31-1). |
 | W3 Code-Review | offen | 10.10.2026 | vierte Prüfrunde: nur Stichprobe Technik und Zuständigkeit, kein volles W3 | Stichprobe ohne Befund; W3 erst nach Umsetzung von W2 und S. Prüfrunde 2b: Stichprobe Technik und Zuständigkeit ohne technischen Befund Prüfrunde 2c: Stichprobe Technik und Zuständigkeit, 1 optional (Plan), keine Nummer, kein `tel:` Prüfrunde 3-1: Werkzeuge, `legal`, `404`, `lang`-Auszeichnung, Zuständigkeit und `_redirects` geprüft; 1 wichtig vor Etappe 3-2 (Export und `netlify.toml`), 2 optional. Prüfrunde 3-1, zweite Prüfsitzung: Review Werkzeuge, Code der vier Seiten und `_redirects` (82 Regeln); 2 wichtig für Etappe 3-2, 4 optional. Prüfrunde 3-1 zusammengeführt (beide Prüfsitzungen, 12.10.2026): 2 wichtig vor Etappe 3-2, 5 optional. Nachprüfung 2c-K und 3-1-K: Gates, Selbsttest 65/65, Abgleich 7361 Zeilen, 0 ohne Fundstelle, `verwendet-auf.mjs` in beiden Modi und `_redirects` (85 Regeln, alle Ziele vorhanden) nachgeprüft; kein Befund. |
 | R1 Profil-Audit | offen | | | noch nicht geprüft |
@@ -63,6 +63,25 @@ Dazu 5 leichte Befunde zu Bericht und Abgleich. Die erste und zweite Prüfrunde 
 - **Verweise auf die neuen Seiten:** Die sieben Verweissätze auf `verstehen`, `beziehungen`, `grenzen` und `selbstfuersorge` aus `FREIGABE-ETAPPE-2B.md` sind freigegeben. Verweise auf die Seiten der Etappe 2c folgen mit 2c.
 - **Nicht Teil dieser Freigabe:** die Seiten der Etappe 2c und die Platzhalter.
 - **Weiter offen vor der Veröffentlichung:** wie bei Etappe 1 und 2a. Dazu kommt in der Schlussprüfung eine unabhängige Prüfung der Korrekturen 2b-K und 2b-2 und der Anpassungen aus `FREIGABE-ETAPPE-2B.md`.
+
+### Etappen 2c und 3-1
+
+**12.10.2026 · Fachstelle Angehörigenarbeit PUK.** Von der bauenden Sitzung im Auftrag der Fachstelle übertragen (`FREIGABE-ETAPPE-2C-3-1.md`).
+
+- **Etappe 2c ist fachlich freigegeben:** die Seiten `genesung` («Genesung»), `unterstuetzung` («Unterstützung finden»), `diagnose` («Diagnose und Begleiterkrankungen») und `behandlung` («Behandlung und Ihre Rolle darin») als Ganzes und auf `index` die zwei Einstiege, im Stand nach der Korrektur 2c-K und den Anpassungen aus `FREIGABE-ETAPPE-2C-3-1.md`.
+- **Etappe 3-1 ist fachlich freigegeben:** die Seiten `fragen` («Häufige Fragen»), `quellen` («Quellen und Begriffe»), `ueber` («Über diese Website») und `impressum-datenschutz` als Ganzes und die Weiterleitungen in `_redirects`, im Stand nach der Korrektur 3-1-K und den Anpassungen aus `FREIGABE-ETAPPE-2C-3-1.md`. Für `impressum-datenschutz` gilt die Freigabe unter Vorbehalt der rechtlichen Prüfung (unten).
+- **Die neuen Sätze sind freigegeben (P2c-F-17, Etappe 3-1):** alle Sätze der Listen «Neue Sätze zur Freigabe» der Blöcke «Korrektur 2c-K» und «Korrektur 3-1-K», im nachgeführten Stand. Die Listen sind die Übersicht zur Freigabe als Ganzes.
+- **Die Abbildung «Ein neuer Trieb» (`v-ge-trieb`) ist fachlich freigegeben (P2c-F-2 a, NK-F-2).**
+- **Sätze auf freigegebenen Seiten (NK-F-1, P2c-F-16):** Freigegeben sind V1 und V2 auf `index`, der Verweissatz auf `quellen` im Quellenblock der Themenseiten, «Linehan (2015)» auf `grenzen` und die 13 Verweissätze auf die Seiten der Etappe 2c. Die Freigaben der Etappen 1 bis 2b gelten für diese Seiten weiter.
+- **Alle Fragen sind entschieden:** P2c-F-1 bis -17, P2c2-F-1 bis -15, Z31-F-1 bis -22 (bis auf die rechtlichen Punkte), die Fragen der Selbstprüfungen 2c und 3-1 und NK-F-1 bis -8 der Nachprüfung 2c-K und 3-1-K.
+- **Offen bis vor R3:**
+  - die rechtliche Prüfung von Impressum und Datenschutz: Verantwortlichkeit nach DSG und DSGVO, Angaben zu Netlify, Protokolle beim Betrieb (S-Nr. 5 und 6, Z31-F-9, Z31-F-19, NK-F-8)
+  - die Bestätigung der Ausgabe von «Schluss mit dem Eiertanz» am Buch (NK-F-3)
+- **Weiter offen vor der Veröffentlichung:**
+  - Etappe 3-2
+  - die Schlussprüfungen W2, S, Visualisierungs-Check, Bedienung und W3; darin auch eine unabhängige Prüfung der Anpassungen aus `FREIGABE-ETAPPE-2C-3-1.md`
+  - reale Screenreader-Läufe, Hardwaretastatur und Touch
+  - danach R1 bis R3
 
 ## Nachprüfung 2c-K und 3-1-K (12.10.2026, Stand f3cb270)
 
@@ -1039,6 +1058,269 @@ Keine Stufe ist «erledigt». W1: 2 wichtig, 2 optional, 6 Fragen. W2: 2 wichtig
 
 Nach jedem Bau ohne Nachfrage ausfüllen: Visualisierungs-Check wie unten, mit Beleg je Punkt. Arbeitsstand, keine Prüfstufe.
 
+**Stand 12.10.2026 · Etappe 3-2 (Sicherung und Vorschau) · bauende Sitzung (Claude Code).** Umgesetzt ist der zweite Teil von UMBAUPLAN, Etappe 3 («Umzug»). Der Auftrag kam in dieser Sitzung von der Fachstelle («starte Etappe 3-2»), die zwei Entscheide auf Rückfrage: Umfang «Sichern + Vorschau», Zielstruktur «React-Quellen ersetzen». Grundlage ist `borderline-umbau` am Stand `f78aae9` (nach PR #42). In diesem Repository geändert sind nur dieser Block und `UMBAUPLAN.md` (Stand, Abschnitt 7). Inhalte, gebaute Seiten, `site.config.json`, CSS, Werkzeuge und Abgleich sind unverändert. Keine Prüfstufe ist «erledigt».
+
+**Nicht erfüllt oder offen (Kurzfassung):**
+
+1. **Die Vorschau zeigt die alte React-Fassung (Z31-W3-2 bleibt offen).** Geprüft am 12.10.2026 (Abschnitt «Prüfung der Vorschau» unten): Unter der Vorschau von #659 liefert Netlify die alte React-Fassung aus, nicht den Export. Keine der 85 Weiterleitungen greift, die Kopfzeilen stammen aus der alten `netlify.toml`. Die Ursache liegt in den Build-Einstellungen des Netlify-Projekts oder im Deploy selbst; aus dem Repository allein ist sie nicht erkennbar.
+2. **Netlify meldet die Zahlen der alten Konfiguration.** Laut Zusammenfassung des Vorschau-Deploys sind es 37 Weiterleitungs- und 4 Header-Regeln. Das sind die Zahlen der alten Konfiguration: 15 Regeln in der alten `netlify.toml` und 22 in `client/public/_redirects`, dazu 4 Header-Blöcke. Erwartet wären 88 (85 in `_redirects`, 3 in `netlify.toml`) und 1. Auf der Vorschau ist zuerst zu prüfen, ob sie die neue Website und `_redirects` ausliefert (Aufgefallen Nr. 1). **Berichtigt nach der Prüfung der Vorschau (unten):** Die Zahlen stimmen. Die Vorschau liefert tatsächlich die alte React-Fassung mit ihrer Konfiguration aus. Der frühere Nachtrag, sie seien nur eine übernommene Zusammenfassung, war falsch: Die 31 Dateien der Secret-Prüfung sind die Quelle des Branchs, nicht die veröffentlichten Dateien.
+3. **Nur Entwurfs-Export.** Das Produktionsgate sperrt den Export mit `--production` (`review-report`, offene Stufen).
+4. **Nicht veröffentlicht.** Veröffentlicht wird erst nach vollständigem Prüfbericht, mit einem neuen Export mit `--production` und dem Merge von christaegger-dot/borderline-angehoerige#659.
+
+### Etappe 3-2: Stand je Punkt
+
+| Punkt | Stand | Beleg |
+| --- | --- | --- |
+| Sicherung der React-Fassung | umgesetzt | Branch `react-archiv` im Repository `borderline-angehoerige`, Commit `f46038b`, gleich wie `main` (`git ls-remote`: beide `f46038b…`) |
+| Export | umgesetzt (Entwurf) | `node tools/export.mjs <ziel>` am Stand `f78aae9`: 17 Seiten, `css/site.css`, 3 Schriftdateien (Rubik 300, 400, 500), `js/interaktion.js`, `assets/` (Logo, Favicon), `_headers`, `sitemap.xml`; Gate draft 0 blockierend, 2 Hinweise. Mit `--production` abgebrochen: 1 blockierend (`review-report`) |
+| Zielstruktur | umgesetzt | Branch `umzug-puk-profil-1791821335`, Commit `8120051`. Der Export steht im Stamm. Entfernt sind 968 Dateien: React-Quellen, Build-Werkzeuge, Tests, QA-Material, Workflows, Netlify-Funktion `material-download`, Handouts und Dokumente des alten Projekts. `CLAUDE.md` ist unverändert, `README.md` neu (Quelle, Entstehung, Stand), `.gitignore` neu; mit `e5c8441` schliesst sie wieder Abhängigkeiten, Build-Ausgaben und `.env*` aus (Codex-Befund) |
+| `_redirects` | umgesetzt | von Hand in den Stamm kopiert, `cmp` gleich wie `templates/website/borderline-angehoerige/_redirects`; 85 Regeln |
+| `netlify.toml` | ersetzt | statisch: `publish = "."`, Befehl ohne Build; Regeln mit 404 für `/404` (wie in der alten Datei; Codex-Befund, `e5c8441`) und für `README.md`, `CLAUDE.md`, `netlify.toml`. Die Weiterleitungen der alten Datei stehen in `_redirects` (`/notfallkarte`, `/soforthilfe` usw. auf die Startseite) |
+| Pull Request | offen, Entwurf | christaegger-dot/borderline-angehoerige#659 gegen `main`, Titel mit «NICHT MERGEN» |
+| Vorschau | gebaut, nicht geprüft | Netlify-Deploy `6acd06551b118d9d720307c8`, Zustand «ready», Kontext «deploy-preview»; Checks «Redirect rules» und «Header rules» «success», «Pages changed» «neutral»; Adresse `https://deploy-preview-659--borderline-angehoerige.netlify.app` (mit Team-Anmeldung) |
+| Produktion | unverändert | aktueller Deploy `6acacec096879ee730291803`, Commit `f46038b`, veröffentlicht 10.10.2026 |
+| `UMBAUPLAN.md` | nachgeführt | Kopf («**Stand:** Etappe 3-2 begonnen …») und Abschnitt 7 |
+
+### Etappe 3-2: Prüfungen
+
+- **Branch gegen Export:** Die Website-Dateien im Branch sind Zeichen für Zeichen gleich wie der Export (`diff -r`, ohne `README.md`, `CLAUDE.md`, `netlify.toml`, `.gitignore`).
+- **Export gegen gebaute Seiten:** `<main>` der 17 exportierten Seiten ist gleich wie auf den gebauten Seiten in diesem Ordner, 16 Zeichen für Zeichen. Auf `404` steht der Link «Zur Übersicht» ab dem Stamm (`/index.html`), wie `tools/export.mjs` es für die 404-Seite vorsieht.
+- **Lokal im Browser** (Export über einen lokalen Server, Chromium):
+  - 17 Seiten, 0 fehlgeschlagene Anfragen, 0 Anfragen an fremde Adressen, 0 Konsolenfehler
+  - Rubik 300, 400 und 500 geladen, Logo geladen
+  - 157 interne Linkziele, alle vorhanden, Anker eingeschlossen
+- **`_redirects`, statisch geprüft:**
+  - 85 Regeln, alle 301, keine Quelle doppelt
+  - jedes Ziel und jeder Anker im Export vorhanden
+  - keine Quelle trifft eine vorhandene Datei (sonst hätte die Datei bei Netlify Vorrang)
+- **Technik:** 0 `style`-Attribute, 0 Inline-Skripte, 0 `tel:`, keine fremden Quellen; `_headers` aus dem Export mit Content-Security-Policy.
+- **Netlify** (Angaben des Deploys über die Netlify-Schnittstelle gelesen):
+  - Deploy «ready», «No functions deployed»
+  - «37 redirect rules processed», «4 header rules processed»; das widerspricht der neuen Konfiguration (oben Nr. 2)
+- **Nicht prüfbar:** die Vorschau selbst (Netzwerk, Team-Anmeldung), reale Screenreader-Läufe, Hardwaretastatur, Touch.
+
+### Etappe 3-2: Auf der Vorschau zu prüfen (Z31-W3-2)
+
+1. Die Startseite der Vorschau zeigt die neue Website (Kopf mit PUK-Logo und Absenderin), nicht die React-Fassung.
+2. `/soforthilfe`, `/notfallkarte`, `/soforthilfe/` und `/soforthilfe/irgendwas` leiten auf die Startseite.
+3. Gleichnamige Routen ohne Regel zeigen die neue Seite: `/verstehen`, `/grenzen`, `/kommunizieren`, `/selbstfuersorge`, `/genesung`, `/quellen`, je auch mit Schrägstrich am Ende.
+4. Ziele mit Anker, z. B. `/therapieangebote` → `/behandlung.html#angebote`, `/selbsthilfegruppen` → `/unterstuetzung.html#selbsthilfe`.
+5. `/verstehen.html` und `/verstehen`: ob Netlify zusätzlich umleitet («Pretty URLs»).
+6. Gross- und Kleinschreibung: `/Notfallkarte-Zuerich-Psychische-Krise.pdf` → Startseite.
+7. Eine fehlende Adresse in der Tiefe (z. B. `/a/b/c`) zeigt die 404-Seite mit Schrift und Logo.
+8. `/404`, `/README.md`, `/CLAUDE.md` und `/netlify.toml` antworten mit 404.
+9. Konsole ohne Fehler der Content-Security-Policy; Kopfzeilen nach `_headers`.
+10. `/verstehen/` mit Schrägstrich: Seite mit Schrift, Logo und funktionierenden Links? Die Seiten verweisen relativ (`css/site.css`); unter `/verstehen/` lösen sich diese Pfade unter dem Ordner auf (Codex-Befund P1, Thread in #659 offen).
+
+### Etappe 3-2: Prüfung der Vorschau (12.10.2026)
+
+**Vorgehen:**
+- Im Auftrag der Fachstelle hat die bauende Sitzung die Team-Anmeldung für Nicht-Produktions-Deploys über die Netlify-Verbindung für rund zwei Minuten ausgeschaltet (etwa 16:30 bis 16:32 UTC) und danach wieder eingeschaltet.
+- Kontrolle danach: Die Vorschau antwortet mit 401, die Einstellung lautet wieder «Team-Anmeldung für Nicht-Produktion». Die Produktion war nicht betroffen.
+- Die Netzwerkfreigabe für `*.netlify.app` hat die Fachstelle in den Einstellungen der Umgebung eingetragen.
+
+**Ergebnis** (Deploy `6acd09958fdf9be93e413bf2`, Commit `e5c8441`; Prüfung per `curl` ohne Folgen der Umleitung und in Chromium):
+
+- **Ausgeliefert wird die alte React-Fassung**, unter der Vorschau-Adresse und unter dem Permalink des Deploys:
+  - Titel «Startseite – Borderline · Hilfe für Angehörige», Stylesheet `/assets/index-bmLiOMct.css`, Kompass-Symbol und «Soforthilfe öffnen» (Foto angesehen)
+  - `/verstehen` zeigt «Borderline verstehen» der React-Fassung, `/soforthilfe` die Seite «Soforthilfe bei akuter Gefahr» (200)
+  - `/css/site.css` und `/behandlung.html` antworten mit 404
+- **Weiterleitungen:** 0 von 85 wie in `_redirects`. Es gelten die alten Regeln, z. B. `/notfallkarte` → `/soforthilfe` und `/therapieangebote` → `/unterstuetzen/therapie#therapieangebote`.
+- **Kopfzeilen:** die der alten `netlify.toml`, z. B. Content-Security-Policy mit `style-src 'self' 'unsafe-inline'` und `geolocation=(self)`, nicht die aus `_headers`.
+- **Zu Codex P1 (Schrägstrich):** Auf diesem Deploy leitet Netlify `/verstehen/` mit 301 auf `/verstehen` um, `/VERSTEHEN` ebenso. Das ist ein Hinweis auf das Verhalten von Netlify, aber an der alten Fassung beobachtet, nicht am Export.
+
+**Folgerung:** Netlify veröffentlicht für diesen Branch nicht den Stamm nach der neuen `netlify.toml`, sondern Dateien der alten Fassung. Netlify meldete das schon: «All files already uploaded by a previous deploy», 37 Weiterleitungs- und 4 Header-Regeln. Zu prüfen im Netlify-Projekt:
+- das Deploy-Log
+- die Build-Einstellungen: Base directory, Publish directory, Build command, eine abweichende Angabe zum Pfad der Konfigurationsdatei
+- den Build-Cache (leeren und neu bauen)
+
+Erst danach ist Z31-W3-2 prüfbar. **#659 darf so nicht gemergt werden.** Ob die Produktion nach einem Merge die neue Fassung zeigen würde, ist ungeklärt.
+
+**Nachtrag, Neubau mit geleertem Cache:** Die Fachstelle hat die Vorschau neu bauen lassen (Deploy `6acd0d62f6d6ec4728458a6c`, 16:40 UTC). Der Deploy ist fehlgeschlagen: «Failed during stage 'building site': Build script returned non-zero exit code: 2».
+- Die `netlify.toml` des Branchs (auf GitHub geprüft: im Stamm, `publish = "."`, Build-Befehl nur `echo`) kann das nicht auslösen.
+- Netlify führt also einen anderen Build-Befehl aus, vermutlich den der React-Fassung aus den Projekteinstellungen. Die früheren Vorschauen kamen aus dem Build-Cache der alten Fassung.
+- Ein Merge würde voraussichtlich auch den Produktions-Build scheitern lassen; Netlify behielte dann die bisherige Produktion.
+- Zum Beheben nötig: das Deploy-Log und die Build-Einstellungen des Netlify-Projekts (Base directory, Build command, Publish directory, Pfad der Konfigurationsdatei). Beides ist über die vorhandene Netlify-Verbindung nicht lesbar.
+- Der Schutz der Vorschauen war danach aus (Einstellung der Fachstelle).
+
+### Etappe 3-2: Visualisierungs-Check
+
+Keine Abbildung, kein Text und keine Zeile des Plans geändert. Der Export übernimmt `<main>` unverändert (oben), die Figuren also auch. Freundin-Test entfällt.
+
+### Etappe 3-2: Entscheide der bauenden Sitzung (zur Prüfung)
+
+1. **Branchname ohne `claude/`.** Im Repository `borderline-angehoerige` erstellt `auto-merge-claude.yml` für jeden Push auf `claude/**` einen PR gegen `main` und mergt ihn, wenn die Prüfungen durchlaufen. Das hiesse Veröffentlichung. `CLAUDE.md` des Ziel-Repositorys verlangt `claude/<beschreibung>-<Zeitstempel>`. Übernommen ist der Zeitstempel, der doppelte Namen verhindert; das Präfix nicht.
+2. **Workflows entfernt.** Sie gehören zur React-Fassung (pnpm, Tests, visuelle Regression) und würden im PR rot laufen. Ohne die Datei auf dem Branch kann auch der Auto-Merge-Workflow für ihn nicht starten. Erhalten sind sie in `react-archiv` und auf `main`.
+3. **404 für Dateien des Repositorys.** Netlify liefert alles im Stamm aus. Drei Regeln in `netlify.toml` sperren `README.md`, `CLAUDE.md` und `netlify.toml`; Seiten und Weiterleitungen sind davon nicht berührt.
+4. **`CLAUDE.md` behalten, `README.md` neu.** `CLAUDE.md` enthält die Konventionen des Ziel-Repositorys, unabhängig von React. Das alte `README.md` beschrieb die React-Fassung; das neue nennt Quelle, Entstehung und Stand, ohne Telefonnummer.
+5. **`react-archiv` aus `main`.** `main` ist die veröffentlichte Fassung (Deploy `6acacec…`). Die übrigen elf Branches des Repositorys (`codex/…`, `copilot/…`) bleiben unberührt.
+6. **Entwurfsmodus.** Der Export mit `--production` ist gesperrt. Der Entwurf zeigt in der Fusszeile jeder Seite «Redaktioneller Status: Entwurf – fachliche Prüfung ausstehend» (`editorialStatus`). Vor dem Merge wird neu mit `--production` exportiert.
+
+### Etappe 3-2: Aufgefallen, nicht geändert
+
+1. **37 und 4 Regeln:** Die Zusammenfassung des Vorschau-Deploys nennt genau die Zahlen des aktuellen Produktions-Deploys der React-Fassung, beide mit dem Vermerk «All files already uploaded by a previous deploy with the same commits». Der Deploy meldet aber «No functions deployed» und kein Framework, wie es zum neuen Branch passt. Ob Netlify die neue `netlify.toml` und `_redirects` anwendet, zeigt erst die Vorschau (oben Nr. 1, 2 und 8). Wenn nicht: die Build-Einstellungen des Netlify-Projekts prüfen (Base directory, Publish directory, Build-Cache leeren und neu bauen). Zweiter Deploy `6acd09958fdf9be93e413bf2` (Commit `e5c8441`): wieder 37 und 4. Die Prüfung der Vorschau bestätigt die alte Fassung (unten); die Zahlen sind also echt.
+2. **Vorschau nur mit Team-Anmeldung:** Das Netlify-Projekt verlangt für alle Deploys ausser der Produktion die Anmeldung im Team. Wer prüft, braucht ein Konto im Team.
+3. **`siteUrl`** (Z31-W3-4): `https://borderline-angehoerige.netlify.app` ist die Produktionsadresse desselben Netlify-Projekts. Kanonische Links und `sitemap.xml` stimmen deshalb nach dem Merge. Auf der Vorschau zeigen sie auf die Produktionsadresse.
+4. **Schriftlizenz:** Der Export enthält die Rubik-Dateien, aber nicht die Lizenz (OFL, im Profil unter `licenses/`). Das betrifft `tools/export.mjs` im Profil, nicht diese Website.
+5. **Netlify-Funktion `material-download`:** Sie entfällt mit der React-Fassung. `/api/material-download/*` leitet laut `_redirects` auf die Startseite.
+6. **Codex-Review von #659** (drei Befunde):
+   - umgesetzt in `e5c8441`: `.gitignore` für ältere Checkouts (P2) und `/404` mit Status 404 (P2)
+   - offen: P1, relative Pfade unter einer Adresse mit Schrägstrich am Ende. Netlify normalisiert nach meinem Verständnis nur Ordner (`x/index.html`) auf den Schrägstrich, nicht einzelne Dateien wie `verstehen.html`; prüfbar nur auf der Vorschau (oben Nr. 10). Bestätigt es sich, gehört die Korrektur in `tools/export.mjs` des Profils (Pfade ab dem Stamm oder `<base href="/">`), nicht von Hand in den Export.
+
+**Stand 12.10.2026 · Freigabe 2c und 3-1 eintragen · bauende Sitzung (Claude Code).** Umgesetzt ist `FREIGABE-ETAPPE-2C-3-1.md` (Entscheide der Fachstelle vom 12.10.2026: Etappen 2c und 3-1 als Ganzes freigegeben, letzte Anpassungen, 13 Verweissätze auf den freigegebenen Seiten). Grundlage ist `borderline-umbau` am Stand `55e98cb`, dazu der Auftrag selbst (`0e6b119`); gearbeitet auf dem Branch `claude/dazzling-mendel-3v1pwo`. Geändert sind nur:
+
+- `content/` und die gebauten Seiten von `diagnose` (3 a), `ueber` (3 b) und `quellen` (3 c) und von `verstehen`, `beziehungen`, `rolle`, `selbstfuersorge`, `krise` und `index` (Abschnitt 4)
+- `borderline.css`: die Container-Abfrage der Kurvenbeschriftung in `em` (3 d) und eine Regel für die Linie in «Ein neuer Trieb» (3 e)
+- `site.config.json` (Abschnitt 5)
+- der Abgleich: neun Tabellen und `abgleich/README.md`
+- `UMBAUPLAN.md` (6 d)
+- in diesem Bericht: der Eintrag der Fachstelle (6 a), die Statustabelle (6 b), dieser Block (6 c), im Block «Korrektur 3-1-K» zwei Angaben (NK31-2) und in den Listen «Neue Sätze zur Freigabe» der Blöcke «Korrektur 3-1-K» und «Korrektur 2c-K» die Zeilen aus 6 c (NK31-4, 3 a, 3 b, Abschnitt 4)
+
+`grenzen`, `kommunizieren`, `genesung`, `unterstuetzung`, `behandlung`, `fragen` und `impressum-datenschutz` sind unverändert (`git diff 55e98cb` leer für `content/` und gebaute Seite). Keine Prüfstufe ist «erledigt»; der Status bleibt in allen Zeilen «offen». Der Block «Korrektur 3-1-K» steht darunter.
+
+**Auftrag im Website-Ordner:** `FREIGABE-ETAPPE-2C-3-1.md` lag im Stamm von `main` (`28462ef`). Die Datei liegt unverändert in diesem Ordner (`0e6b119` auf `borderline-umbau`; `cmp` und SHA-256 gleich) und ist aus dem Stamm von `main` entfernt (`e0456f4`, direkt auf `main`).
+
+**Nicht erfüllt oder offen (Kurzfassung):** (1) Das Produktionsgate meldet neben `review-report` den Hinweis `crisis-number-check` («144» ist die Seitenzahl «134–144» bei Guillén et al. 2021), nicht `siteUrl`, wie der Auftrag erwartet: `siteUrl` ist seit Etappe 3-1 gesetzt. (2) 3 e: Die Linie unter «Weniger hilfreich» ist jetzt grau wie in `.puk-say`, aber gleich breit wie die blaue Linie unter «Tragfähiger» in der Szene (je 2 px); dünner ist sie nur gegenüber «Tragfähiger» in `.puk-say` (3 px), siehe «Entscheide», Nr. 3. (3) Verweissatz Nr. 5 steht am Ende des Absatzes, nicht direkt nach dem Satz des Auftrags (Begründung unten). (4) Nicht prüfbar hier: reale Screenreader-Läufe, Hardwaretastatur, Touch, die externen Links online.
+
+### Freigabe 2c und 3-1: Stand je Punkt (Abschnitte 3 bis 6)
+
+| Punkt | Stand | Beleg |
+| --- | --- | --- |
+| 3 a `diagnose` | umgesetzt | `abklaerung`, Vertiefung «Wie die Diagnose beschrieben wird»: «Diese Vorgabe bedeutet nicht, dass ICD-10-GM, DSM-5-TR und ICD-11 inhaltlich gleich aufgebaut sind oder in jedem Behandlungsrahmen identisch verwendet werden.» Danach auf `diagnose` 0 Treffer für «Setting» (ohne Gross- und Kleinschreibung, `content/` und gebaute Seite). Abgleich `diagnose.md` Nr. 64 «umformuliert (2c-3-1-F)»; Liste 2c-K Nr. 137 |
+| 3 b `ueber` | umgesetzt | `warum`: «Viele wollen helfen und fühlen sich zugleich hilflos, sie lieben und sind erschöpft, sie verstehen nicht, was geschieht, und haben Angst, etwas falsch zu machen.» Abgleich `ueber.md` Nr. 9 bis 11 «umformuliert (2c-3-1-F)»; Liste 3-1-K Nr. 455 |
+| 3 c `quellen` | umgesetzt | LeDoux (1996): «… Simon & Schuster, New York.» (im Quelltext `&amp;` wie bei «Neuroscience &amp; Biobehavioral Reviews»). Abgleich `quellen.md` Nr. 228 «übernommen (2c-3-1-F)»; nicht in der Liste (bibliografische Angabe, Kopf der Liste 3-1-K) |
+| 3 d Überlauf | umgesetzt | eine Regel in `borderline.css`: `@container (max-width:45.71em){.bl-fig--kurve .bl-fig__label{display:none}}` statt `max-width:960px`; Kommentar nachgeführt. Wortlaut, Pfade und Bezeichnungen unverändert (die drei Abbildungen in `content/verstehen.html` Zeichen für Zeichen gleich wie am Stand `55e98cb`). Messungen unten |
+| 3 e Randlinie | umgesetzt | eine Regel in `borderline.css`: `[data-visual-id="v-ge-trieb"] .puk-vis-scene__say:not(.puk-vis-scene__say--b){border-left:var(--border-width-strong) solid var(--ui-hairline)}`, nur Tokens, kein Hexwert. Wortlaut, Bezeichnungen, Zeichnung und Kurzbeschreibung unverändert (`content/genesung.html` und `genesung.html` ohne Diff). Fotos unten |
+| 4 Verweissätze | umgesetzt | 13 Sätze im Wortlaut des Auftrags (Tabelle unten); Linktext gleich dem Titel der Zielstelle (Skript: 13 von 13, `h2` des Abschnitts oder `h1` und `title` der Seite) |
+| 4 Ort | wie Auftrag, ausser Nr. 5 | Nr. 1 bis 4 und 6 bis 13 am Ort des Auftrags; Nr. 5 am Ende des Absatzes (Begründung in der Tabelle und unter «Entscheide», Nr. 5). Keiner steht zwischen einer Handlungsanleitung und dem Verweis im Text, keiner in einer Abbildung, Vertiefung oder in `details` (Skript im Browser: bei keinem folgt `[data-responsibility-inline]` direkt; Nr. 5 und 8 stehen im Absatz direkt nach einem Verweis im Text) |
+| 4 Links | umgesetzt | Ziele wie in der Tabelle des Auftrags: `genesung.html#forschung` (1), `#verlauf` (4), `#einfluesse` (6), `diagnose.html#begleiterkrankungen` (2), `#abklaerung` (3), `#ohne-diagnose` (10), `behandlung.html` (5), `#rollen` (7), `#kontakt` (12), `unterstuetzung.html#buecher` (8), `unterstuetzung.html` (9, 11, 13); jedes Ziel und jeder Anker vorhanden (Build ohne `link-target`) |
+| 4 Herkunft und Abgleich | umgesetzt | `verstehen.md` Nr. 112 (Nr. 1) und 127 (Nr. 2) nachgeführt, dort stand der Verweis im Bestand; ebenso `selbstfuersorge.md` Nr. 232 (Nr. 9, Link des Bestands «Alle Beratungsangebote & Netzwerke ansehen.»); `beziehungen.md` Nr. 208 (vorgemerkte Zeile zu Nr. 5) «verschoben (2c-3-1-F)»; neu `verstehen.md` Nr. 551, `beziehungen.md` Nr. 251 und 252, `rolle.md` Nr. 771 bis 773, `selbstfuersorge.md` Nr. 674, `krise.md` Nr. 314 und 315, `index.md` Nr. 262, je «neu (Verweis, 2c-3-1-F)» |
+| 2 Abgleich | eingehalten | jede betroffene Zeile mit Status «(2c-3-1-F)» und Bemerkung mit Frage oder Befund (NK-F-4, NK-F-5, NK31-3, P2c-F-16); neue Werte «umformuliert (2c-3-1-F)», «übernommen (2c-3-1-F)», «verschoben (2c-3-1-F)», «neu (Verweis, 2c-3-1-F)» in `abgleich/README.md` (Statuswerte und Abschnitt «Freigabe Etappen 2c und 3-1 eintragen»); Kopf und Zählung der neun Tabellen nachgeführt; `pruefe-abgleich.mjs` 7371 Zeilen, 0 ohne Fundstelle |
+| 5 `v-ge-trieb` | umgesetzt | `approvalStatus` «freigegeben»; im Plan jetzt 10 × «freigegeben». `reason` endet mit einem Satz zu 3 e |
+| 5 `v-be-therapieformen` | umgesetzt | `goal` «Die wichtigsten Therapieformen, die drei Rahmen der Behandlung und die Regeln zu Medikamenten kennen»; in `reason` nur «Die drei Rahmen als Begriffsliste, …» statt «Settings als Begriffsliste, …» |
+| 5 `v-un-beratung` | umgesetzt | `reason` endet: «… sind auf `index` › `beratung` verlinkt; wiederholt ist nur, dass die Beratung der Fachstelle nichts kostet und nicht an Krankenkassen weitergegeben wird (P2c-F-14).» |
+| 5 Plan-Zeilen | umgesetzt | nachgeführt, wo sich durch 3 e die Abbildung ändert (`v-ge-trieb`, letzter Satz der `reason`) und wo eine `reason` einen Verweis aufzählt oder auf Etappe 2 vertröstet: `v-vs-borderline` (Verweissatz Nr. 3 statt «folgen … (Etappe 2)»), `v-ro-kinder` (dazu `unterstuetzung` › `buecher`, Nr. 8), `v-sf-beratung` (Nr. 9 statt «folgen auf `unterstuetzung` (Etappe 2)»). Die übrigen Zeilen der sechs Seiten zählen keine Verweise auf (z. B. `v-vs-mythen`, `v-bz-was-hilft`, `v-kr-danach`) |
+| 5 Text-Zeilen | wie Auftrag | alle übrigen Zeilen behalten «ausstehend». `git diff` zeigt in `site.config.json` acht geänderte Zeilen: `v-ge-trieb` › `approvalStatus` und `reason`, `v-be-therapieformen` › `goal` und `reason`, `v-un-beratung` › `reason`, dazu `reason` von `v-vs-borderline`, `v-ro-kinder` und `v-sf-beratung` |
+| 6 a Eintrag der Fachstelle | übertragen | «### Etappen 2c und 3-1» unverändert aus Abschnitt 6 a des Auftrags (Skript: Text zwischen den Code-Zäunen Zeichen für Zeichen übernommen), am Ende von «## Fachliche Freigabe der Fachstelle», direkt nach «### Etappe 2b» und vor «## Nachprüfung 2c-K und 3-1-K» |
+| 6 b Statustabelle | umgesetzt | W1: «Geprüft durch» endet mit «; Fachstelle (Freigabe Etappen 2c und 3-1)», «Ergebnis» mit dem Satz des Auftrags («… fachlich freigegeben am 12.10.2026; rechtliche Prüfung von Impressum und Datenschutz offen.»). Visualisierungs-Check: «Ergebnis» endet mit «Etappe 2c: «Ein neuer Trieb» fachlich freigegeben (Fachstelle, 12.10.2026).» Status in allen Zeilen «offen» |
+| 6 c Selbstprüfung | umgesetzt | dieser Block, über dem Block «Korrektur 3-1-K». NK31-2: im Block «Korrektur 3-1-K» die Zeile «zehn Themenseiten mit Quellenblock» («je +12, `grenzen` +13 …») und die Gründe bei `forschung` (dazu Baranger +2, Dazzi +1, Shields −1), je mit «berichtigt mit der Freigabe 2c und 3-1»; nachgerechnet mit `kennzahlen.mjs --abschnitte` an `7e8fa4e` und `f3cb270` (`grenzen` 1789 → 1802, Quellenblock 130 → 143; `forschung` 1547 → 1546) und Wortvergleich des Abschnitts. NK31-4: Liste 3-1-K Nr. 110 und Liste 2c-K Nr. 342 (Entscheide, Nr. 7). Listen: 2c-K Nr. 137 (3 a), 3-1-K Nr. 455 (3 b), 2c-K Nr. 348 bis 360 (Abschnitt 4) |
+| 6 d `UMBAUPLAN.md` | umgesetzt | Abschnitt 2: Zeilen `ueber` und `impressum-datenschutz` «kein Richtwert, Entscheid zu NK-F-7»; Kopf: «**Stand:** Etappen 2c und 3-1 freigegeben (…), als Nächstes Etappe 3-2» |
+| 7 Danach | erfüllt, ausser Hinweis `siteUrl` | Prüfungen unten |
+
+### Freigabe 2c und 3-1: Prüfungen nach Abschnitt 7
+
+- **`node tools/build.mjs`:** 17 Seiten, 0 blockierend, 2 Hinweise (`crisis-number-check` auf `quellen`, `review-report`); vorher 3, `visual-approval` entfällt.
+- **`node tools/gate.mjs --selftest`:** 65/65 bestanden (Gate unverändert).
+- **`node tools/gate.mjs --production`:** 1 blockierend (`review-report`), 1 Hinweis (`crisis-number-check`, Seitenzahl «134–144»). Der Auftrag erwartet als Hinweis `siteUrl`; den gibt es nicht, weil `site.config.json` › `siteUrl` seit Etappe 3-1 gesetzt ist (`https://borderline-angehoerige.netlify.app`).
+- **`node abgleich/pruefe-abgleich.mjs`:** 7371 Zeilen, 0 ohne Fundstelle (vorher 7361). Nach den Textänderungen und vor dem Nachführen meldete es 4 Zeilen ohne Fundstelle (`diagnose.md` Nr. 64, `ueber.md` Nr. 9 bis 11).
+- **Überlauf** (Chromium, alle 17 Seiten mit `404`, Standard und «kontrast», je mit Skript und Vertiefungen zu, mit Skript und Vertiefungen offen, ohne Skript): 320, 360, 375, 414, 640, 768, 1024, 1280 und 1440 px; Zoom 200 % (640 px bei Faktor 2); Schrift 200 % (Schriftgrösse des Browsers 32 px) bei 1280, 1440 und 640 px. 1292 Messungen, **0 mit Überlauf** (`scrollWidth` gleich der Fensterbreite, kein sichtbares Element rechts ausserhalb, das nicht abgeschnitten wird).
+- **Tastatur** (1280 px, reduzierte Bewegung): Alle 13 neuen Links werden mit Tab erreicht, jeder mit sichtbarem Fokus und im Fenster; Enter auf dem ersten neuen Link je Seite öffnet das Ziel (`genesung.html#forschung`, `#verlauf`, `#einfluesse`, `unterstuetzung.html` auf `selbstfuersorge` und `krise`; auf `index` der neue Link in `beratung`, Tabstopp 18, → `unterstuetzung.html`). `abgleich/bedienung.mjs`, gleicher Server, Ausgangsstand `55e98cb` in einem Ordner daneben (danach gelöscht): Tabstopps `index` 19 → 20, `verstehen` 24 → 27, `beziehungen` 20 → 22, `rolle` 31 → 34, `selbstfuersorge` 30 → 32, `krise` 26 → 28, je einer je neuem Link; erster Stopp «Zum Hauptinhalt», 0 Stopps ohne sichtbaren Fokus; alle übrigen Seiten mit gleichen Tabstopps und gleicher Höhe.
+- **Druck** (Medium `print` und PDF A4 der sechs Seiten): Alle 13 Sätze sichtbar und im Text der PDF gefunden (`pdftotext`): `verstehen` 3, `beziehungen` 2, `rolle` 3, `selbstfuersorge` 2, `krise` 2, `index` 1.
+- **Höhe bei 360 px** (`bedienung.mjs`): `index` 5449 → 5558, `verstehen` 16 962 → 17 315, `beziehungen` 15 813 → 16 048, `rolle` 25 900 → 26 224, `selbstfuersorge` 21 761 → 22 026, `krise` 16 435 → 16 641 px; höchste Figur je Seite unverändert; `genesung` 14 538 px und «Ein neuer Trieb» 847 px wie vorher.
+- **Freigegebene Seiten** (`git diff --word-diff 55e98cb`, `content/` und gebaute Seite): `verstehen` 3, `beziehungen` 2, `rolle` 3, `selbstfuersorge` 2, `krise` 2, `index` 1 eingefügte Sätze, sonst nichts (bei `verstehen` Nr. 3 nur «</strong>» vor dem Satz statt am Absatzende, bei `index` ein neuer Absatz). `grenzen` und `kommunizieren`: kein Unterschied. `borderline.css`: nur die Regeln aus 3 d und 3 e mit Kommentar.
+- **Technik:** in allen gebauten Seiten und `content/` 0 `tel:`, 0 `style`-Attribute, 0 Inline-Skripte, 0 Hexwerte in `content/`; keine Telefonnummer im Text. In `borderline.css` keine neue Farbe und kein Hexwert.
+- **Listen «Neue Sätze zur Freigabe»** (Skript, jedes Zitat der Spalte «Satz» auf der gebauten Seite gesucht): Liste 2c-K 378 Stellen in 354 Zeilen (ohne die Zeilen «entfällt (2c-K)»), alle gefunden ausser den zwei beschreibenden Zeilen Nr. 84 und 86 («&»); Liste 3-1-K 558 Stellen in 558 Zeilen, alle gefunden ausser der beschreibenden Zeile Nr. 155. Die neuen und geänderten Zeilen (2c-K Nr. 137, 348 bis 360; 3-1-K Nr. 455) stehen wörtlich auf ihren Seiten.
+- **Nicht prüfbar in dieser Umgebung:** reale Screenreader-Läufe, Hardwaretastatur und Touch; die externen Links online.
+
+### Freigabe 2c und 3-1: Messungen zu 3 d (alle Seiten)
+
+- **Vorher** (Stand `55e98cb`, Schriftgrösse des Browsers 32 px): `verstehen` bei 1280 px `scrollWidth` 1328, die Bezeichnung «Es kann wieder ruhiger werden.» (`p.bl-kurve__label--4`) ragt 48 px über den Rand, in Standard und «kontrast»; bei 1024 und 1440 px kein Überlauf (bei 1440 px stehen die Bezeichnungen noch im Bild).
+- **Nachher:** Bei Schrift 200 % sind die Bezeichnungen der Kurve bei 1280 und 1440 px ausgeblendet; es gelten Nummern und die Liste unter der Zeichnung wie schmal. Alle 17 Seiten bei 1280 und 1440 px, Standard und «kontrast», mit Skript (zu und offen) und ohne Skript: 204 Messungen, 0 px Überlauf; dazu bei 640 px 102 Messungen, 0 px.
+- **Gegenprobe:** Mit der alten Regel per Stil nachgestellt (`@container (min-width:960.01px)` Bezeichnungen sichtbar) meldet dieselbe Messung auf `verstehen` wieder `scrollWidth` 1328.
+- **Standardschrift unverändert:** Container `.puk-vis-wide` bei 1280 px 1104 px breit, Schrift 21 px. Umschaltpunkt gemessen von 980 bis 1100 px Fensterbreite in 1-px-Schritten: Bezeichnungen sichtbar ab 1044 px (Container 960,5 px), wie mit der alten Regel (> 960 px). Bei 1280 und 1440 px sichtbar wie vorher.
+- **Fotos** (angesehen, nicht committet): Kurve bei 1280 px mit Standardschrift (vier Bezeichnungen im Bild) und mit 200 % (Nummern ohne Bezeichnungen, kein Überlauf).
+
+### Freigabe 2c und 3-1: Fotos zu 3 e
+
+**Bildschirmfotos** (Chromium), alle angesehen, nicht committet: «Ein neuer Trieb» bei 1280 und 360 px, je Standard und «kontrast» (4 Fotos), dazu die erste Gegenüberstellung `.puk-say` in `verlauf` bei 1280 px.
+
+- **Breit (1280 px):** Die zwei Haltungen stehen nebeneinander über der Zeichnung. Links «Weniger hilfreich» mit einer feinen grauen Linie, rechts «Tragfähiger» mit der blauen Linie. In der Gegenüberstellung darunter dieselbe graue Linie bei «Weniger hilfreich». Pflanze, Blatt und Sims unverändert.
+- **Schmal (360 px):** Die Haltungen stehen untereinander, die graue Linie oben, die blaue darunter; kein Überlauf.
+- **«kontrast»:** Die graue Linie ist dunkler (`--ui-hairline` #8A8A8A im Profil), die blaue dunkler blau; beide gut sichtbar.
+- **Gemessen** (berechnete Werte): Szene «Weniger hilfreich» 2 px solid rgb(233, 233, 233), in «kontrast» rgb(138, 138, 138), gleich wie `.puk-say` «Weniger hilfreich». Szene «Tragfähiger» 2 px blau (rgb(60, 100, 255), in «kontrast» rgb(0, 40, 194)), wie bisher; `.puk-say` «Tragfähiger» 3 px.
+
+### Freigabe 2c und 3-1: Verweissätze (Ort, Satz davor, Linkziel)
+
+| Nr. | Seite › Abschnitt | Satz direkt davor | Verweissatz | Linkziel | Ort |
+| --- | --- | --- | --- | --- | --- |
+| 1 | `verstehen` › `mythen`, Annahme «Borderline ist nicht behandelbar.» | «Viele erleben über Jahre deutliche Besserung, Remission (die Kriterien sind eine Zeit lang nicht mehr erfüllt) oder umfassendere Genesung.» | «Was Langzeitstudien zeigen, steht auf der Seite «Genesung» im Abschnitt «Was die Forschung zeigt».» | `genesung.html#forschung` | am Ende der Antwort, im selben Eintrag der Liste (`dd`) |
+| 2 | `verstehen` › `mythen`, Annahme «Borderline ist dasselbe wie Trauma.» | «Einzelne Merkmale können sich überschneiden, und die Diagnosen können zusammen auftreten.» | «Welche Begleiterkrankungen vorkommen können, steht auf der Seite «Diagnose und Begleiterkrankungen» im Abschnitt «Begleiterkrankungen».» | `diagnose.html#begleiterkrankungen` | in der Antwort direkt nach dem Satz; danach «In klinischen Studien berichten viele, …» |
+| 3 | `verstehen` › `borderline` | «Die Diagnose allein sagt nichts darüber, ob von einem Menschen Gefahr ausgeht.» | «Wie eine Abklärung abläuft und was eine Diagnose für Sie bedeuten kann, steht auf der Seite «Diagnose und Begleiterkrankungen» im Abschnitt «Der Weg zur Abklärung».» | `diagnose.html#abklaerung` | im selben Absatz, nach dem fett gesetzten Satz |
+| 4 | `beziehungen` › `was-hilft` | «Wie Sie Gefühle anerkennen können, ohne zuzustimmen, steht auf der Seite «Zugewandt und klar sprechen» im Abschnitt «Anerkennen, ohne zuzustimmen».» (Freigabe 2b) | «Woran sich Veränderung zeigen kann, steht auf der Seite «Genesung» im Abschnitt «Veränderung verläuft unterschiedlich».» | `genesung.html#verlauf` | am Ende des Abschnitts, im Absatz des Verweissatzes aus 2b |
+| 5 | `beziehungen` › `verantwortung` | «Es gibt keine «perfekte» Reaktion, die eine Beziehung repariert.» | «Was die Behandlung leisten kann und was Ihre Rolle darin ist, steht auf der Seite «Behandlung und Ihre Rolle darin».» | `behandlung.html` | am Ende des Absatzes, der mit «Angehörige dürfen zur Veränderung beitragen. Sie sind aber keine Therapeutinnen oder Therapeuten.» beginnt. Direkt nach diesen zwei Sätzen stünde der Verweissatz vor «Für den Verlauf der Erkrankung sind sie nicht verantwortlich, für die Beziehung nicht allein.»; das «sie» bezöge sich dann nicht mehr klar auf die Angehörigen. Also ans Ende des Absatzes (Regel in Abschnitt 2). Der Absatz folgt auf den Verweis im Text; die Handlungsanleitung steht davor |
+| 6 | `rolle` › `anbieten`, nach der Abbildung | «Sie müssen diese Beiträge nicht alle leisten. Ihre eigenen Bedürfnisse, Grenzen und Möglichkeiten zählen ebenfalls.» | «Was Genesung beeinflussen kann, steht auf der Seite «Genesung» im Abschnitt «Was Genesung beeinflussen kann».» | `genesung.html#einfluesse` | im selben Absatz; die Abbildung «Ein Stück Weg» steht davor |
+| 7 | `rolle` › `anbieten`, «Was nicht Ihre Aufgabe ist» | «Therapie, Psychiatrie und Beratung bieten Fachpersonen an.» | «Wer in der Behandlung was beitragen kann, steht auf der Seite «Behandlung und Ihre Rolle darin» im Abschnitt «Wer was beitragen kann».» | `behandlung.html#rollen` | am Ende des ersten Listenpunkts, direkt nach dem Satz; kein neuer Listenpunkt |
+| 8 | `rolle` › `kinder` | «Eine Fachstelle, die Kinderarztpraxis oder eine Familienberatung können beim Planen unterstützen.» | «Bücher für Kinder stehen auf der Seite «Unterstützung finden» im Abschnitt «Bücher für Angehörige».» | `unterstuetzung.html#buecher` | im selben Absatz, am Ende des Abschnitts; der Absatz folgt auf den Verweis im Text |
+| 9 | `selbstfuersorge` › `beratung`, Begriff «Austausch mit anderen Angehörigen» | «Selbsthilfegruppen und Beratungsstellen bieten Orientierung, praktische Tipps und das Gefühl, nicht allein zu sein.» | «Angebote für Beratung und Austausch stehen auf der Seite «Unterstützung finden».» | `unterstuetzung.html` | am Ende des Begriffs (`dd`) |
+| 10 | `selbstfuersorge` › `warnsignale` | «Dabei können auch andere Ursachen abgeklärt werden.» | «Wenn Sie sich fragen, ob Sie selbst erkrankt sind, steht mehr dazu auf der Seite «Diagnose und Begleiterkrankungen» im Abschnitt «Wenn noch keine Diagnose gestellt ist».» | `diagnose.html#ohne-diagnose` | im selben Absatz; danach die Handlungsanleitung «Wenn Sie sich nicht mehr sicher fühlen …» und der Verweis im Text, der Satz steht nicht dazwischen |
+| 11 | `krise` › `danach`, «Für Sie» | «Wie die Fachstelle Angehörigenarbeit der PUK berät, steht auf der Startseite im Abschnitt «Beratung für Sie».» | «Weitere Angebote für Angehörige stehen auf der Seite «Unterstützung finden».» | `unterstuetzung.html` | im selben Absatz direkt danach, vor «Kurze Übungen für Momente, …» |
+| 12 | `krise` › `danach`, «Für die betroffene Person» | «Dabei kann auch geklärt werden, welche Rolle Sie freiwillig übernehmen können.» | «Wie Sie den Kontakt zum Behandlungsteam klären können, steht auf der Seite «Behandlung und Ihre Rolle darin» im Abschnitt «Kontakt zum Behandlungsteam».» | `behandlung.html#kontakt` | am Ende des letzten Listenpunkts, direkt nach dem Satz; kein neuer Listenpunkt |
+| 13 | `index` › `beratung` | «Kontakt: angehoerigenarbeit@pukzh.ch» | «Weitere Beratung und Austausch mit anderen Angehörigen stehen auf der Seite «Unterstützung finden».» | `unterstuetzung.html` | eigener Absatz direkt nach der Kontaktadresse und vor V2 («Wer die Website herausgibt …») |
+
+### Freigabe 2c und 3-1: Wörter
+
+`node abgleich/kennzahlen.mjs --abschnitte`, gleiche Zählweise wie bisher; «vorher» ist der Stand `55e98cb`.
+
+| Seite | vorher | nachher | Abschnitte |
+| --- | ---: | ---: | --- |
+| `index` | 357 | 370 | `beratung` 95 → 108 (Nr. 13) |
+| `verstehen` | 1819 | 1872 | `borderline` 115 → 140 (Nr. 3), `mythen` 422 → 450 (Nr. 1, 2) |
+| `beziehungen` | 1706 | 1741 | `was-hilft` 207 → 222 (Nr. 4), `verantwortung` 206 → 226 (Nr. 5) |
+| `rolle` | 3248 | 3299 | `anbieten` 626 → 663 (Nr. 6, 7), `kinder` 294 → 308 (Nr. 8) |
+| `selbstfuersorge` | 2776 | 2813 | `warnsignale` 245 → 271 (Nr. 10), `beratung` 158 → 169 (Nr. 9) |
+| `krise` | 2168 | 2200 | `danach` 735 → 767 (Nr. 11, 12) |
+| `quellen` | 5507 | 5506 | `leitlinien` 948 → 947 («&» zählt nicht als Wort, «und» schon) |
+| `diagnose`, `ueber` | 2184, 608 | gleich | ein Wort ersetzt (3 a, 3 b) |
+
+### Freigabe 2c und 3-1: Visualisierungs-Check
+
+Selbstprüfung, keine Prüfstufe. Geändert sind nur die Linie in «Ein neuer Trieb» (3 e) und bei 200 % Schrift die Anzeige der Bezeichnungen der Anspannungskurve (3 d); kein Verweissatz steht in einer Abbildung. E = erfüllt · T = teilweise · N = nicht erfüllt · – = nicht anwendbar.
+
+| Nr. | Prüfpunkt | `v-ge-trieb` | Beleg | Massnahme |
+| --- | --- | --- | --- | --- |
+| 1 | Plan liegt vor, Seite entspricht ihm | E | `statement` unverändert und weiter zutreffend; Build ohne Hinweis `visual-plan` | – |
+| 2 | Zeile je Abschnitt; Begründungen passen | E | `reason` nennt jetzt die Linie aus 3 e; `v-be-therapieformen` und `v-un-beratung` entsprechen den Seiten (NK2c-1) | – |
+| 3 | Prüffrage beantwortet und eingelöst | E | wie Nachprüfung 2c-K, Teil A; Zeichnung unverändert | – |
+| 4 | Kernaussage und Erklärtext; Hauptaussage nicht nur in der Vertiefung | E | unverändert sichtbar (Fotos) | – |
+| 5 | Ansatzpunkt | – | Illustration (Muster D) | – |
+| 6 | Mechanismus nicht doppelt gezeigt | E | wie Nachprüfung 2c-K | – |
+| 7 | Kartenraster-Check | E | keine Kastenreihe | – |
+| 8 | Anordnung und Formen tragen Bedeutung | E | Die Linien unterscheiden die Haltungen jetzt wie in `.puk-say`: grau «Weniger hilfreich», blau «Tragfähiger»; die Bezeichnungen tragen die Zuordnung weiter | – |
+| 9 | Verteilt, keine Textwand | E | eine Abbildung in `verlauf`; `genesung` unverändert | – |
+| 10 | Vereinfacht, Grenzen benannt, Quelle | E | «Grenzen des Bildes» und Quelle unverändert | – |
+| 11 | Ohne Animation, Aufklappen und Skript verständlich | E | unverändert; ohne Skript ohne Überlauf | – |
+| 12 | Bei 320 px lesbar; Textalternative vollständig | E | 0 px Überlauf von 320 bis 1440 px; `p.puk-sr` unverändert | – |
+| 13 | Theme «kontrast» geprüft | E | Fotos 1280 und 360 px in «kontrast»; graue Linie rgb(138, 138, 138) | – |
+| 14 | Inhalt fachlich freigegeben | E | `approvalStatus` «freigegeben» (Fachstelle, 12.10.2026, P2c-F-2 a, NK-F-2); Gate production ohne `visual-approval` | – |
+| 15 | Bildsprache passt; Wirkung eingelöst | E | wie Nachprüfung 2c-K | – |
+| 16 | Ein Bild, eine Idee; Beschriftungen nennen Erleben | E | wie Nachprüfung 2c-K | – |
+| 17 | Keine ungewollten Bedeutungen | T | wie Nachprüfung 2c-K (Pflanze als passives Wesen, Grösse des Blatts, Sims) | R2 |
+
+**Anspannungskurve (`v-vs-anspannung`):** Punkt 12 jetzt auch bei 200 % Schrift erfüllt (0 px Überlauf bei 1280 und 1440 px); bei 200 % Schrift stehen statt der Bezeichnungen im Bild die Nummern und die Liste darunter, wie schmal (Punkt 11 unverändert erfüllt: Die Liste steht in allen Breiten). Inhalt und Freigabe unverändert.
+
+**Freundin-Test:** «Ein neuer Trieb» bei 1280 und 360 px angesehen: bestanden, wie in der Nachprüfung; die Zeichnung ist gleich, die graue Linie macht nur die Zuordnung der zwei Haltungen gleich wie in der Gegenüberstellung darunter.
+
+### Freigabe 2c und 3-1: Entscheide der bauenden Sitzung (zur Prüfung)
+
+1. **3 d in `em`, nicht in `rem`.** Der Auftrag nennt `em`. In einer Container-Abfrage bezieht sich `em` auf die Schrift des Containers (`.puk-vis-wide`, 21 px bei Standardschrift, wächst mit der Schriftgrösse des Browsers). 45.71em ergibt bei Standardschrift denselben Umschaltpunkt wie 960 px (gemessen: sichtbar ab 1044 px Fensterbreite, vorher ebenso). Die Breite von 960 px war für die Beschriftung an Stelle 4 bemessen; sie wächst mit der Schrift, die Grenze jetzt auch.
+2. **3 e über `data-visual-id`.** Die Regel wählt die Szene von «Ein neuer Trieb» über das vorhandene Attribut der Figur aus; das Markup bleibt unverändert, und die Szenen der übrigen Abbildungen (z. B. «Momentaufnahmen») behalten die Linie des Musters.
+3. **«Dieselbe Linie» wörtlich.** Der Satz unter «Weniger hilfreich» hat jetzt genau die Linie von `.puk-say__item` (Profil: `--border-width-strong`, `--ui-hairline`). «Grau und dünner» trifft in `.puk-say` zu, weil dort «Tragfähiger» 3 px breit ist. In der Szene ist «Tragfähiger» 2 px breit (Muster); der Auftrag ändert diese Linie nicht. Die graue Linie ist deshalb gleich breit, wirkt aber heller und feiner. Soll auch «Tragfähiger» in der Szene 3 px bekommen, ist das eine weitere Regel (nicht umgesetzt).
+4. **Angehängt oder eigener Absatz.** Angehängt, wo der Auftrag einen Satz als Ort nennt (Nr. 1 bis 4 und 6 bis 12), auch in Listen am Ende des Eintrags (Nr. 1, 2, 9 in `dd`, Nr. 7 und 12 in `li`, wie Satz 3 der Freigabe 2b), damit kein neuer Listenpunkt entsteht. Nr. 4 steht im Absatz des Verweissatzes aus 2b, wie die zwei Verweissätze in `krise` › `danach`. Eigener Absatz nur bei Nr. 13: Die Kontaktzeile endet ohne Punkt mit der Adresse, ein angehängter Satz läse sich als Teil der Adresse; V2 steht dort ebenfalls als eigener Absatz.
+5. **Ort von Nr. 5** (Abschnitt 2 des Auftrags): siehe Tabelle. Direkt nach «… keine Therapeutinnen oder Therapeuten.» bräche der Verweissatz den Bezug von «sie» im nächsten Satz; am Ende des Absatzes steht er vor «Was Sie tun können: Holen Sie sich selbst Unterstützung, …».
+6. **Abgleich bei Verweisen des Bestands.** Wo der Bestand an derselben Stelle einen Verweis oder Link hatte, trägt die Bestandszeile den neuen Verweissatz («umformuliert (2c-3-1-F)»): `verstehen.md` Nr. 112 und 127 nach dem Auftrag, `selbstfuersorge.md` Nr. 232 aus demselben Grund (ihre Bemerkung nannte den Verweis als Vorschlag). `beziehungen.md` Nr. 208 trägt eine Aussage, keinen Verweis; sie bleibt auf `behandlung` und bekommt «verschoben (2c-3-1-F)» mit Hinweis auf die neue Zeile Nr. 252.
+7. **NK31-4.** Die Art lautet in beiden Listen «Bedingung im Wortlaut von `krise` › `belastung`, Handlung nach Auftrag». Die Einordnung davor bleibt («umformuliert (3-1-K)» in 3-1-K, «Auftrag» mit den Fragen in 2c-K), damit die Zählungen nach Art der Listen gleich bleiben.
+8. **Listen.** Die 13 Verweissätze stehen in der Liste 2c-K (Nr. 348 bis 360), weil sie auf die Seiten der Etappe 2c zeigen (P2c-F-16, P2c-F-17); 3 a ist eine Zeile der Liste 2c-K (Nr. 137), 3 b eine der Liste 3-1-K (Nr. 455). Beide Listen haben unter der Zählung einen Vermerk «Nachgeführt mit der Freigabe 2c und 3-1».
+9. **Plan.** Nachgeführt sind nur die Zeilen, deren `reason` einen Verweis aufzählt oder auf Etappe 2 vertröstet; die übrigen Zeilen der sechs Seiten nennen keine Verweise und bleiben.
+
+### Freigabe 2c und 3-1: Aufgefallen, nicht geändert
+
+1. **Ziffern der Anspannungskurve bei 200 % Schrift:** Die Nummern 1 bis 4 wachsen mit der Schrift, die Kreise in der Zeichnung nicht; bei 200 % sind die Ziffern grösser als ihre Kreise (Foto bei 1280 px). Das gilt unabhängig von 3 d: Die Regeln für die Nummern sind unverändert, und bei 1024 px, wo die Bezeichnungen schon vorher ausgeblendet waren, sieht es gleich aus (Foto). Für Bedienung und R2 notiert.
+2. **Kontrast der grauen Linie:** `--ui-hairline` ist im Standard #E9E9E9 auf Weiss (etwa 1,2 : 1). Die Linie trägt keine Information allein (die Bezeichnung «Weniger hilfreich» steht darüber), und so ist sie im Profil auch in `.puk-say` gesetzt.
+3. **`v-ix-beratung`** (`index`): Die `reason` sagt, der Wortlaut der Fachstelle «steht nur hier, andere Seiten verweisen darauf». Seit 2c-K wiederholt `unterstuetzung` die Kosten und die Weitergabe an Krankenkassen (P2c-F-14, jetzt in `v-un-beratung` genannt). Der Auftrag nennt die Zeile nicht; sie bleibt.
+4. **`verstehen.md` Nr. 116** («Mehr dazu auf Kommunizieren und Grenzen.»): weiter «entfällt», Bemerkung «Verweis (folgt mit Etappe 2)». Der Verweis betrifft Seiten der Etappen 1 und 2b und nicht diesen Auftrag.
+5. **Bei 1440 px und 200 % Schrift** standen die Bezeichnungen der Kurve bisher ohne Überlauf im Bild; jetzt gelten dort Nummern und Liste. Das folgt aus der Grenze in `em` und ist so gewollt (3 d), sei aber genannt.
+6. **Verweissatz und V2 auf `index` › `beratung`:** Am Ende des Abschnitts stehen jetzt zwei Verweissätze hintereinander, je als eigener Absatz.
+
 **Stand 12.10.2026 · Korrektur 3-1-K · bauende Sitzung (Claude Code).** Umgesetzt ist `KORREKTUR-ETAPPE-3-1.md` (Entscheide zu den zwei Prüfungen 3-1, getroffen von der Sitzung der zweiten Prüfung im Auftrag der Fachstelle vom 12.10.2026). Grundlage ist `borderline-umbau` am Stand `7e8fa4e` (nach dem Merge von PR #32 und #35); gearbeitet auf dem Branch `korrektur-3-1-k`. Diese Sitzung hat Etappe 3-1 nicht gebaut, nicht geprüft und nicht entschieden; die Nachprüfung 3-1-K macht nach Abschnitt 1 des Auftrags eine Sitzung, die weder gebaut, noch geprüft, noch entschieden hat. Geändert sind nur:
 
 - **`fragen`, `quellen`, `ueber`, `impressum-datenschutz`:** die Stellen aus den Abschnitten 3 bis 5 des Auftrags
@@ -1101,10 +1383,10 @@ Keine Prüfstufe ist «erledigt»; der Status bleibt in allen Zeilen «offen». 
 | `ueber` | 1304 | 595 | 608 | 0,34 → 0,33 | 11 von 68 → 12 von 70 |
 | `impressum-datenschutz` | 1382 | 447 | 501 | 1,57 → 1,60 | 11 von 56 → 12 von 60 |
 | `index` | 433 | 329 | 357 | 1,22 → 1,12 | – |
-| zehn Themenseiten mit Quellenblock | – | – | je +12 | – | – |
+| zehn Themenseiten mit Quellenblock | – | – | je +12, `grenzen` +13 (dazu «(2015)»; berichtigt mit der Freigabe 2c und 3-1) | – | – |
 | `unterstuetzung` | 2010 | 1405 | 1408 | 1,07 → 1,07 | – |
 
-`fragen` nach Abschnitt: `verlauf` 479 → 486, `gespraeche` 501 → 502, `behandlung` 561 → 570, Kopf +1, übrige gleich. `quellen`: `begriffe` 1316 → 1314, `forschung` 1547 → 1546 (DOIs +20, Einordnung zu Zanarini 2024 −7, vier Angaben «Verwendet auf: «Verstehen»» statt «Hintergrund, …» −16), `therapie` 365 → 367, `angehoerige` 445 → 453, `diagnostik` 337 → 347, `leitlinien` 914 → 948. Gekürzt ist nichts; die Korrektur nimmt Sätze und Angaben wieder auf. `ueber` mit `impressum-datenschutz`: 1109 Wörter (Richtwert 900).
+`fragen` nach Abschnitt: `verlauf` 479 → 486, `gespraeche` 501 → 502, `behandlung` 561 → 570, Kopf +1, übrige gleich. `quellen`: `begriffe` 1316 → 1314, `forschung` 1547 → 1546 (DOIs +20, Einordnung zu Zanarini 2024 −7, vier Angaben «Verwendet auf: «Verstehen»» statt «Hintergrund, …» −16, Baranger «, nicht essentialistische» +2, Dazzi «PubMed» +1, Shields «&» statt «and» −1; berichtigt mit der Freigabe 2c und 3-1), `therapie` 365 → 367, `angehoerige` 445 → 453, `diagnostik` 337 → 347, `leitlinien` 914 → 948. Gekürzt ist nichts; die Korrektur nimmt Sätze und Angaben wieder auf. `ueber` mit `impressum-datenschutz`: 1109 Wörter (Richtwert 900).
 
 ### Korrektur 3-1-K: Verweise im Text und Visualisierungs-Check
 
@@ -1124,6 +1406,8 @@ Ersetzt die Liste im Block «Etappe 3-1» (Abschnitt 8 des Auftrags, Z31-W1-1, Z
 **Berichtigt gegenüber der Liste von Etappe 3-1 (Z31-W1-1):** Nr. 35 «Was bedeutet das?» → Bezeichnung, f92 (nicht f325); Nr. 69 und 102 → umformuliert («ein», «den Begriff» ergänzt), Abgleich f219 und f192 ebenso berichtigt; Nr. 147/148, 310, 372, 438 (Bruchstücke) → ganze Sätze oder Teil der Zeile «Quellenblock»; Nr. 188 «Komorbidität ist der medizinische Begriff für Begleiterkrankungen.» → neu, Wortlaut von `diagnose` (kein Bestandssatz, q403 ist nur der Begriff); Nr. 202 → q461 (nicht q294); Nr. 255 → q27 (nicht q94); Nr. 279 → Satzteilung von q58 (keine Bezeichnung); Nr. 314 und 341 → Satzteilung, der zweite Teil steht seit 3-1-K wieder als eigener Satz; Nr. 362 → Sotomo-Satz mit «Opt-in» (3-1-K); Nr. 410 → Verweissatz; Nr. 432 → gekürzt («Es ist kein Notfalldienst» entfällt, Zuständigkeitsverweis in der Fusszeile); Nr. 456 → drei Sätze nach Abschnitt 5 b. **Neu in der Liste, weil sie fehlten:** die elf am Ende gekürzten Sätze (q46 als Satzteilung, q48, q101, q126, q172, q214, q226, q232, q246, q258, u230), die Einordnung zu Dazzi et al. (2014), «Dazu gehören:» (jetzt «Umgesetzt sind unter anderem:»), h2 «Warum es diese Website gibt», dt «Kontakt» und «Änderungen», der Verweissatz auf `krise#suizid` in `gespraeche` (Abgleich jetzt f335), dazu weitere Satzteilungen und Bezeichnungen, die die exakte Prüfung findet. Insgesamt stehen 162 Zeilen neu in der Liste, davon 32 Sätze dieses Auftrags. u230 steht wörtlich in `/feedback` (Bestand der Seite) und ist nur gegenüber `/datenschutz` gekürzt; die Zeile steht trotzdem in der Liste, weil der Auftrag sie nennt.
 
 **Zählung:** 562 Zeilen: `fragen` 155, `quellen` 290, `ueber` 55, `impressum-datenschutz` 48, andere Seiten 14. Nach Art (vier Seiten): umformuliert 232, Satzzeichen 115 (davon Satzteilung 58), Bezeichnung 81, neu 48, Zeilen mit Bezug auf diese Korrektur 36, gekürzt 11, Verdichtung 9, Verweissatz 8, Verweis im Text 6, Quellenblock 1, verschoben 1.
+
+**Nachgeführt mit der Freigabe 2c und 3-1 (12.10.2026):** Nr. 455 im Wortlaut von Abschnitt 3 b (NK-F-5); bei Nr. 110 die Art nach NK31-4. Die 13 Verweissätze aus Abschnitt 4 stehen in der Liste «Korrektur 2c-K» (Nr. 348 bis 360). Zeilenzahl unverändert 562.
 
 **`fragen`**
 
@@ -1238,7 +1522,7 @@ Ersetzt die Liste im Block «Etappe 3-1» (Abschnitt 8 des Auftrags, Z31-W1-1, Z
 | 107 | `fragen` › `behandlung` | «Mehr dazu steht auf der Seite «Genesung» im Abschnitt «Veränderung verläuft unterschiedlich».» | umformuliert | f251 |
 | 108 | `fragen` › `behandlung` | «Zuständig ist grundsätzlich die Kindes- und Erwachsenenschutzbehörde (KESB).» | umformuliert (3-1-K) (Abkürzung ausgeschrieben; Satzteilung) | f147 |
 | 109 | `fragen` › `behandlung` | «Kantonal bezeichnete Ärztinnen und Ärzte können ebenfalls befugt sein.» | Satzzeichen (Satzteilung, Paarform statt Doppelpunkt) | f147 |
-| 110 | `fragen` › `behandlung` | «Bei unmittelbarer Gefahr oder wenn Sie nicht einschätzen können, wie dringend es ist, holen Sie sofort Hilfe.» | umformuliert (3-1-K), Wortlaut von `krise` | f149 |
+| 110 | `fragen` › `behandlung` | «Bei unmittelbarer Gefahr oder wenn Sie nicht einschätzen können, wie dringend es ist, holen Sie sofort Hilfe.» | umformuliert (3-1-K), Bedingung im Wortlaut von `krise` › `belastung`, Handlung nach Auftrag | f149 |
 | 111 | `fragen` › `behandlung` | «Sorgen Sie sich akut um das Leben oder die Sicherheit eines Menschen, holen Sie sofort Hilfe: ärztlicher Notfalldienst oder Notfallstation, bei Gefahr die Polizei.» | Verweis im Text (Platzhalter, Wortlaut aus `site.config.json`, geprüft 09.10.2026) | f327 |
 | 112 | `fragen` › `schutz` | «05 · Schutz» | Bezeichnung | f319 |
 | 113 | `fragen` › `schutz` | «Schutz, Kinder und Trennung» | Bezeichnung | f141 |
@@ -1593,7 +1877,7 @@ Ersetzt die Liste im Block «Etappe 3-1» (Abschnitt 8 des Auftrags, Z31-W1-1, Z
 | 452 | `ueber` › `warum` | «01 · Warum» | Bezeichnung | u360 |
 | 453 | `ueber` › `warum` | «Warum es diese Website gibt» | Bezeichnung | u8 |
 | 454 | `ueber` › `warum` | «Wenn ein nahestehender Mensch eine Borderline-Persönlichkeitsstörung hat, stehen Angehörige oft vor einer doppelten Herausforderung.» | umformuliert (3-1-K) (Satz geteilt) | u9 |
-| 455 | `ueber` › `warum` | «Sie wollen helfen und fühlen sich zugleich hilflos, sie lieben und sind erschöpft, sie verstehen nicht, was geschieht, und haben Angst, etwas falsch zu machen.» | umformuliert (3-1-K) (Satz geteilt) | u9, u10, u11 |
+| 455 | `ueber` › `warum` | «Viele wollen helfen und fühlen sich zugleich hilflos, sie lieben und sind erschöpft, sie verstehen nicht, was geschieht, und haben Angst, etwas falsch zu machen.» | umformuliert (3-1-K) (Satz geteilt); «Viele» statt «Sie» (Freigabe 2c und 3-1, Abschnitt 3 b, NK-F-5) | u9, u10, u11 |
 | 456 | `ueber` › `warum` | «Er ist eine Metapher für Belastung, keine wissenschaftliche Erklärung der betroffenen Person oder ihrer Motive.» | umformuliert | u13 |
 | 457 | `ueber` › `warum` | «Diese Website möchte Angehörigen fachlich fundierte Orientierung geben.» | Satzzeichen (Satzteilung) | u14 |
 | 458 | `ueber` › `warum` | «Es geht nicht darum, eine Erkrankung von aussen zu «lösen».» | umformuliert | u14 |
@@ -2546,6 +2830,8 @@ Grundlage für die Freigabe 2c (P2c-F-17). Die Liste fasst die Listen von 2c-1 (
 
 **Zählung:** 347 Einträge; 306 unverändert (78 aus 2c-1, 228 aus 2c-2), dazu Nr. 11 (2c-1, Kurztext), Nr. 22 (2c-1, seit 2c-2 nur der erste Satz) und Nr. 320 (2c-2 Nr. 221) mit Hinweis; 18 geändert (2c-K), 13 neu (2c-K), 6 entfällt (2c-K), bei Nr. 152 (2c-2 Nr. 57) nur die Art geändert.
 
+**Nachgeführt mit der Freigabe 2c und 3-1 (12.10.2026):** Nr. 137 im Wortlaut von Abschnitt 3 a (NK-F-4, «Stand» «geändert (2c-3-1-F)»); bei Nr. 342 die Art nach NK31-4; neu Nr. 348 bis 360, die 13 Verweissätze auf den freigegebenen Seiten aus Abschnitt 4 (P2c-F-16), nach Nr. 347 unter «Freigegebene Seiten». Sie stehen in dieser Liste, weil sie auf die Seiten der Etappe 2c zeigen. Danach 360 Einträge. Zitate: siehe Block «Freigabe 2c und 3-1 eintragen».
+
 **`genesung`**
 
 | Nr. | Liste | Ort | Satz | Art | Stand | Abgleich |
@@ -2701,7 +2987,7 @@ Grundlage für die Freigabe 2c (P2c-F-17). Die Liste fasst die Listen von 2c-1 (
 | 134 | 2c-2 Nr. 39 | `diagnose` › `abklaerung` | «Zuerst wird der Schweregrad einer Persönlichkeitsstörung bestimmt.» | umformuliert | wie 2c-2 | d37, d61 |
 | 135 | 2c-2 Nr. 40 | `diagnose` › `abklaerung` | «Das Borderline-Muster kann anschliessend mit dem Zusatzcode 6D11.5 beschrieben werden.» | Satzzeichen | wie 2c-2 | d37, d61 |
 | 136 | 2c-2 Nr. 41 | `diagnose` › `abklaerung` | «Das ist eine begrenzte Vorgabe für die stationäre Kodierung.» | Satzzeichen | wie 2c-2 | d64 |
-| 137 | 2c-2 Nr. 42 | `diagnose` › `abklaerung` | «Diese Vorgabe bedeutet nicht, dass ICD-10-GM, DSM-5-TR und ICD-11 inhaltlich gleich aufgebaut sind oder in jedem Versorgungssetting identisch verwendet werden.» | umformuliert | wie 2c-2 | d64 |
+| 137 | 2c-2 Nr. 42 | `diagnose` › `abklaerung` | «Diese Vorgabe bedeutet nicht, dass ICD-10-GM, DSM-5-TR und ICD-11 inhaltlich gleich aufgebaut sind oder in jedem Behandlungsrahmen identisch verwendet werden.» | umformuliert; «Behandlungsrahmen» statt «Versorgungssetting» (Freigabe 2c und 3-1, Abschnitt 3 a, NK-F-4) | geändert (2c-3-1-F) | d64 |
 | 138 | 2c-2 Nr. 43 | `diagnose` › `abklaerung` | «Verfahren wie SCID-5-PD oder IPDE prüfen die Kriterien systematisch.» | Satzzeichen | wie 2c-2 | d34 |
 | 139 | 2c-2 Nr. 44 | `diagnose` › `abklaerung` | «Diese Interviews sind keine Selbstauskunft, sondern ein Fachgespräch.» | umformuliert | wie 2c-2 | d34 |
 | 140 | 2c-2 Nr. 45 | `diagnose` › `bedeutung` | «Was die Diagnose für Sie bedeuten kann» | Auftrag | wie 2c-2 | d84 |
@@ -2911,12 +3197,30 @@ Grundlage für die Freigabe 2c (P2c-F-17). Die Liste fasst die Listen von 2c-1 (
 | 339 | 2c-2 Nr. 240 | `behandlung` › `wartezeit` | «Nicht alle Ärztinnen und Ärzte sind regulär anordnungsberechtigt.» | umformuliert | wie 2c-2 | d172, b191 |
 | 340 | 2c-2 Nr. 241 | `behandlung` › `wartezeit` | «Wer ist bis dahin ansprechbar, welche Zwischenhilfe ist möglich, und wann findet der nächste Kontakt statt?» | Satzzeichen | wie 2c-2 | d176, b195 |
 | 341 | 2c-2 Nr. 242 | `behandlung` › `wartezeit` | «Bei Verschlechterung neu beurteilen lassen: Melden Sie veränderte Beschwerden der zuständigen Fachperson, und fragen Sie nach einem früheren Termin oder einer anderen Hilfe.» | Satzzeichen | wie 2c-2 | d178, b197 |
-| 342 | 2c-2 Nr. 243 | `behandlung` › `wartezeit` | «Bei unmittelbarer Gefahr oder wenn Sie nicht einschätzen können, wie dringend es ist, warten Sie nicht auf einen Therapieplatz und holen sofort Hilfe.» | Auftrag (Wortlaut von `krise` › `belastung`, P2c-F-1, P2c2-F-1) | geändert (2c-K) | d179, b198, b272 |
+| 342 | 2c-2 Nr. 243 | `behandlung` › `wartezeit` | «Bei unmittelbarer Gefahr oder wenn Sie nicht einschätzen können, wie dringend es ist, warten Sie nicht auf einen Therapieplatz und holen sofort Hilfe.» | Auftrag (Bedingung im Wortlaut von `krise` › `belastung`, Handlung nach Auftrag; P2c-F-1, P2c2-F-1) | geändert (2c-K) | d179, b198, b272 |
 | 343 | 2c-2 Nr. 244 | `behandlung` › `wartezeit` | «In anderen Kantonen: Die Angebote auf dieser Seite sind keine schweizweite Liste.» | umformuliert | wie 2c-2 | d182, b201 |
 | 344 | – | `behandlung` › `wartezeit` | «Fragen Sie in der Hausarztpraxis oder beim psychiatrischen Dienst Ihres Wohnkantons nach Anmeldung, Zuständigkeit und Zwischenversorgung.» | Auftrag (Bestandssatz vor dem Verweissatz; «Hausarztpraxis» statt «Hausärzt:in», P2c-F-10) | neu (2c-K) | d181, b200 |
 | 345 | 2c-2 Nr. 245 | `behandlung` › `wartezeit` | «Wie Sie ausserhalb des Kantons Zürich Anlaufstellen finden, steht auf der Seite «Unterstützung finden» im Abschnitt «Ausserhalb des Kantons Zürich».» | Verweissatz | wie 2c-2 | d181, b200 |
 | 346 | 2c-2 Nr. 246 | `behandlung` › `wartezeit` | «Eigene Unterstützung: Angehörigenberatung können Sie unabhängig von einer Diagnose oder einem Therapieplatz nutzen.» | umformuliert | wie 2c-2 | d183, b202 |
 | 347 | 2c-2 Nr. 247 | `behandlung` › `wartezeit` | «Wo Sie Beratung finden, steht auf der Seite «Unterstützung finden» im Abschnitt «Beratung für Angehörige».» | Verweissatz | wie 2c-2 | d118, d184, d365, b203 |
+
+**Freigegebene Seiten (Verweissätze aus `FREIGABE-ETAPPE-2C-3-1.md`, Abschnitt 4, P2c-F-16; nachgeführt mit der Freigabe 2c und 3-1)**
+
+| Nr. | Liste | Ort | Satz | Art | Stand | Abgleich |
+| ---: | --- | --- | --- | --- | --- | --- |
+| 348 | Freigabe 2c und 3-1 Nr. 1 | `verstehen` › `mythen` | «Was Langzeitstudien zeigen, steht auf der Seite «Genesung» im Abschnitt «Was die Forschung zeigt».» | Verweissatz (P2c-F-16) | neu (2c-3-1-F) | `verstehen.md` Nr. 112 |
+| 349 | Freigabe 2c und 3-1 Nr. 2 | `verstehen` › `mythen` | «Welche Begleiterkrankungen vorkommen können, steht auf der Seite «Diagnose und Begleiterkrankungen» im Abschnitt «Begleiterkrankungen».» | Verweissatz (P2c-F-16) | neu (2c-3-1-F) | `verstehen.md` Nr. 127 |
+| 350 | Freigabe 2c und 3-1 Nr. 3 | `verstehen` › `borderline` | «Wie eine Abklärung abläuft und was eine Diagnose für Sie bedeuten kann, steht auf der Seite «Diagnose und Begleiterkrankungen» im Abschnitt «Der Weg zur Abklärung».» | Verweissatz (P2c-F-16) | neu (2c-3-1-F) | `verstehen.md` Nr. 551 |
+| 351 | Freigabe 2c und 3-1 Nr. 4 | `beziehungen` › `was-hilft` | «Woran sich Veränderung zeigen kann, steht auf der Seite «Genesung» im Abschnitt «Veränderung verläuft unterschiedlich».» | Verweissatz (P2c-F-16) | neu (2c-3-1-F) | `beziehungen.md` Nr. 251 |
+| 352 | Freigabe 2c und 3-1 Nr. 5 | `beziehungen` › `verantwortung` | «Was die Behandlung leisten kann und was Ihre Rolle darin ist, steht auf der Seite «Behandlung und Ihre Rolle darin».» | Verweissatz (P2c-F-16) | neu (2c-3-1-F) | `beziehungen.md` Nr. 252 (dazu Nr. 208) |
+| 353 | Freigabe 2c und 3-1 Nr. 6 | `rolle` › `anbieten` | «Was Genesung beeinflussen kann, steht auf der Seite «Genesung» im Abschnitt «Was Genesung beeinflussen kann».» | Verweissatz (P2c-F-16) | neu (2c-3-1-F) | `rolle.md` Nr. 771 |
+| 354 | Freigabe 2c und 3-1 Nr. 7 | `rolle` › `anbieten` | «Wer in der Behandlung was beitragen kann, steht auf der Seite «Behandlung und Ihre Rolle darin» im Abschnitt «Wer was beitragen kann».» | Verweissatz (P2c-F-16) | neu (2c-3-1-F) | `rolle.md` Nr. 772 |
+| 355 | Freigabe 2c und 3-1 Nr. 8 | `rolle` › `kinder` | «Bücher für Kinder stehen auf der Seite «Unterstützung finden» im Abschnitt «Bücher für Angehörige».» | Verweissatz (P2c-F-16) | neu (2c-3-1-F) | `rolle.md` Nr. 773 |
+| 356 | Freigabe 2c und 3-1 Nr. 9 | `selbstfuersorge` › `beratung` | «Angebote für Beratung und Austausch stehen auf der Seite «Unterstützung finden».» | Verweissatz (P2c-F-16) | neu (2c-3-1-F) | `selbstfuersorge.md` Nr. 232 |
+| 357 | Freigabe 2c und 3-1 Nr. 10 | `selbstfuersorge` › `warnsignale` | «Wenn Sie sich fragen, ob Sie selbst erkrankt sind, steht mehr dazu auf der Seite «Diagnose und Begleiterkrankungen» im Abschnitt «Wenn noch keine Diagnose gestellt ist».» | Verweissatz (P2c-F-16) | neu (2c-3-1-F) | `selbstfuersorge.md` Nr. 674 |
+| 358 | Freigabe 2c und 3-1 Nr. 11 | `krise` › `danach` | «Weitere Angebote für Angehörige stehen auf der Seite «Unterstützung finden».» | Verweissatz (P2c-F-16) | neu (2c-3-1-F) | `krise.md` Nr. 314 |
+| 359 | Freigabe 2c und 3-1 Nr. 12 | `krise` › `danach` | «Wie Sie den Kontakt zum Behandlungsteam klären können, steht auf der Seite «Behandlung und Ihre Rolle darin» im Abschnitt «Kontakt zum Behandlungsteam».» | Verweissatz (P2c-F-16) | neu (2c-3-1-F) | `krise.md` Nr. 315 |
+| 360 | Freigabe 2c und 3-1 Nr. 13 | `index` › `beratung` | «Weitere Beratung und Austausch mit anderen Angehörigen stehen auf der Seite «Unterstützung finden».» | Verweissatz (P2c-F-16) | neu (2c-3-1-F) | `index.md` Nr. 262 |
 
 **Entfallen mit 2c-K, ohne Eintrag in den Listen** (Bestandssätze, die bisher wörtlich standen; je im Abgleich): «Auch strukturierte generalistische Behandlung ist relevant.» (b167), der Titel der Vertiefung «Was kann ich in einem vereinbarten Kontakt mitteilen?» (b116), «Vereinbaren Sie Anlass, Zuständigkeit und einen geeigneten Übermittlungsweg.» (b120, zusammengeführt), «Eine laufende Überwachung ist nicht Ihre Aufgabe.» (b119, zusammengeführt), der Titel «Sanatorium Kilchberg» (d154). Ersetzt durch neue Einträge: «Das einzige deutschsprachige Kinderbuch …» (Nr. 83), «Anbieten ja, erzwingen nein.» (Nr. 102), Schritt 3 (Nr. 109, 110), «… werden eigenständig behandelt, …» (Nr. 24).
 
