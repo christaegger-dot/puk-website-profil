@@ -377,3 +377,26 @@ Im Prüfbericht ein neuer Block «Korrektur SP-K (nach der Schlussprüfung)» in
 3. Nachprüfung durch eine Sitzung, die weder gebaut, noch geprüft, noch entschieden hat: Umsetzung dieses Auftrags, SPZ-6 (`draft:true`), Abbildungen bei grosser Schrift.
 4. Danach trägt die Entscheidsitzung (oder eine Sitzung, die die Fachstelle dafür bestimmt) im Auftrag der Fachstelle die Freigabe der neuen Sätze und der Abbildungen `v-vs-anspannung` und `v-bz-schleife` ein.
 5. Reale Tests (Entscheide 5.3), rechtliche Prüfung (5.2), NK-F-3; danach R1, R2 und R3.
+
+## 14. Startnachricht für die Korrektursitzung
+
+Voraussetzung: PR #59 ist in `main` gemergt. Sonst in der Nachricht «abgezweigt von main nach dem Merge von PR #59» durch «abgezweigt von entscheide-schlusspruefung» ersetzen.
+
+```
+Setze den Korrekturauftrag KORREKTUR-SCHLUSSPRUEFUNG.md (Korrektur «SP-K») für die Website
+templates/website/borderline-angehoerige/ um. Grundlage sind die Entscheide in
+ENTSCHEIDE-SCHLUSSPRUEFUNG.md im selben Ordner, von Claude im Auftrag der Fachstelle
+entschieden (Delegation vom 12.10.2026). Du bist die bauende Sitzung. An der Schlussprüfung,
+ihrer Zusammenführung und den Entscheiden hast du nicht mitgearbeitet.
+Lies zuerst CLAUDE.md, guidelines/00-ablauf-pruefung-und-freigabe.md, den Korrekturauftrag
+ganz und die Abschnitte 3 und 6 der Entscheide.
+Halte dich an die Wortlaute des Auftrags. Ändere nur die Stellen, die er nennt, und weder
+Leitlinien noch Tokens, Komponenten oder Starter-Werkzeuge. Was dir sonst auffällt, nennst
+du in der Selbstprüfung.
+Bei SP-K 5.7 (F60.31) und 8.2 (alte -v1-PDFs) gilt die Bedingung im Auftrag: Geht der
+Nachweis nicht, setzt du nichts ein und meldest es.
+Trage keine Stufe als «erledigt» ein; die Statustabelle bleibt unverändert.
+Arbeite auf dem Branch korrektur-schlusspruefung, abgezweigt von main nach dem Merge von
+PR #59. Committe erst, wenn die Prüfungen aus Abschnitt 12 des Auftrags durchlaufen, und
+öffne einen Entwurfs-PR gegen main, der die offenen Stufen nennt.
+```
