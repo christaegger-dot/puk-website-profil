@@ -1,3 +1,5 @@
+Gilt nicht, ersetzt durch KORREKTUR-SCHLUSSPRUEFUNG-2.md (Entscheide PR #60, #61)
+
 # Korrekturauftrag · Borderline-Website · nach der Schlussprüfung (SP-K)
 
 Stand 12.10.2026. Gilt für `templates/website/borderline-angehoerige/` auf `main`, nach dem Merge der Entscheide (`ENTSCHEIDE-SCHLUSSPRUEFUNG.md`). Für eine **bauende Sitzung**.
