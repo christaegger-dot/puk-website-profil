@@ -90,10 +90,11 @@ Dazu 5 leichte Befunde zu Bericht und Abgleich. Die erste und zweite Prüfrunde 
 **Fachliche Entscheide im Auftrag der Fachstelle durch Claude; nicht von einer Person der Fachstelle geprüft.**
 
 - **Dokument:** `ENTSCHEIDE-SCHLUSSPRUEFUNG.md` mit Begründung und Beleg je Frage, den Wortlauten, der Liste «Neue Sätze zur Freigabe», den Handlungen für die Fachstelle und den Folgen für den Korrekturauftrag.
+- **Zwei Fassungen:** Eine andere Entscheidsitzung hat dieselben Fragen unabhängig entschieden (PR #59). Nach einem Vergleich sind hier SPZ-F-7, -10 und -27 berichtigt. Welche Fassung gilt, entscheidet die Fachstelle.
 - **Prüfauftrag (SPZ-F-1):** `PRUEFAUFTRAG-SCHLUSSPRUEFUNG.md` gilt mit der Delegation vom 12.10.2026 als bestätigt.
 - **Entschieden (38 von 39):**
-  - keine Änderung (17): SPZ-F-1, -9, -10, -11, -12, -16, -17, -20, -23, -24, -25, -26, -27, -28, -29, -31, -39
-  - Änderung (12): SPZ-F-2, -3, -4, -5, -6, -7, -8, -15, -18, -19, -22, -30
+  - keine Änderung (16): SPZ-F-1, -7, -9, -11, -12, -16, -17, -20, -23, -24, -25, -26, -28, -29, -31, -39
+  - Änderung (13): SPZ-F-2, -3, -4, -5, -6, -8, -10, -15, -18, -19, -22, -27, -30
   - Profilebene, in dieser Website keine Änderung (2): SPZ-F-32, -34
   - Handlung der Fachstelle (5): SPZ-F-33, -35, -36, -37, -38 (PR #659 ist seit 12.10.2026, 18:19 UTC wieder ein Entwurf; erledigt durch die Fachstelle)
   - in die rechtliche Prüfung aufgenommen, bis dahin bleibt der heutige Text (2): SPZ-F-13, -14
