@@ -1,6 +1,6 @@
 # Umbauplan · Borderline-Website ins PUK Website-Profil
 
-Stand 08.10.2026 · Grundlage: Bestandsaufnahme `bestand/borderline-angehoerige/` (Branch `borderline-bestand`, Commit `5c8471c` der alten Website) · Profil 2026.10, Starter Build r4-3
+Stand 08.10.2026, Abschnitte 2 und 7 nachgeführt am 12.10.2026 (Korrektur 3-1-K) · Grundlage: Bestandsaufnahme `bestand/borderline-angehoerige/` (Branch `borderline-bestand`, Commit `5c8471c` der alten Website) · Profil 2026.10, Starter Build r4-3
 
 Dieser Plan gehört zur Website `templates/website/borderline-angehoerige/`. Er hält die Entscheide der Fachstelle fest, legt die neue Struktur und den Visualisierungsplan im Entwurf fest und teilt den Bau in Etappen. Struktur und Technik hat Claude entschieden; inhaltliche Punkte stehen unter «Offen für W1».
 
@@ -25,7 +25,7 @@ Durch das Profil bereits entschieden und nicht verhandelbar:
 
 ## 2. Neue Struktur
 
-Aus 72 Seiten (rund 65'000 Wörter) werden 15 Seiten. Richtwerte für den Umfang danach in Klammern.
+Aus 72 Seiten (rund 65'000 Wörter) werden 16 Seiten (15 nach dem ersten Plan, seit Etappe 3-1 dazu «Impressum und Datenschutz» als eigene Seite). Richtwerte für den Umfang danach in Klammern. Nachgeführt am 12.10.2026 (Korrektur 3-1-K): Zeilen `rolle`, `kommunizieren`, `grenzen`, `selbstfuersorge` (Ort von drei Handouts), `fragen`, `quellen`, `ueber` und `impressum-datenschutz`.
 
 | Seite (`id`) | Titel (Vorschlag) | Navigation | Kommt aus (alte Routen) |
 | --- | --- | --- | --- |
@@ -33,17 +33,18 @@ Aus 72 Seiten (rund 65'000 Wörter) werden 15 Seiten. Richtwerte für den Umfang
 | `verstehen` | Borderline verstehen | Verstehen | `/verstehen` ohne Diagnostik-Teil; Handouts eisberg, alarm-modus, gehirn, zustands-landkarte, spaltung, anspannungskurve (1100) |
 | `beziehungen` | Was zwischen Ihnen geschieht | Beziehungen | `/verstehen/beziehungen` (1000) |
 | `diagnose` | Diagnose und Begleiterkrankungen | – (verlinkt aus Verstehen) | `/verstehen/diagnostik`, `/verstehen/begleiterkrankungen`, Diagnostik-Teil von `/verstehen` (1300) |
-| `rolle` | Ihre Rolle klären | Ihre Rolle | `/unterstuetzen/uebersicht`, `/unterstuetzen/alltag`; Handouts rolle-klaeren, garten (Einflussbereiche), leuchtturm, schuld-verantwortung, drei-saeulen, konsistenz-prinzip, 4-alltags-tipps, 6-leitlinien, beziehungs-achtsamkeit, kinder (1200) |
+| `rolle` | Ihre Rolle klären | Ihre Rolle | `/unterstuetzen/uebersicht`, `/unterstuetzen/alltag`; Handouts rolle-klaeren, garten (Einflussbereiche), leuchtturm, schuld-verantwortung, drei-saeulen, konsistenz-prinzip, 4-alltags-tipps, 6-leitlinien, kinder (1200) |
 | `behandlung` | Behandlung und Ihre Rolle darin | – (verlinkt aus Rolle) | `/unterstuetzen/therapie` (1000) |
-| `kommunizieren` | Zugewandt und klar sprechen | – (Startseite; verlinkt aus Verstehen, Beziehungen, Grenzen) | `/kommunizieren`, `/uebungen`; Handouts zuhoeren-ohne-zustimmen, gespraeche-kippen, pause-statt-streit, wenn-worte-treffen, beispiel-dialog (1000) |
-| `grenzen` | Grenzen setzen | Grenzen | `/grenzen`; Handouts 4-arten-von-grenzen, bruecke-gelaender, dear, grenzen-erkennen, grenzen-spickzettel, grenzen-ohne-eskalation, lmk, spiegeln-statt-aufsaugen (1200) |
+| `kommunizieren` | Zugewandt und klar sprechen | – (Startseite; verlinkt aus Verstehen, Beziehungen, Grenzen) | `/kommunizieren`, `/uebungen`; Handouts zuhoeren-ohne-zustimmen, gespraeche-kippen, pause-statt-streit, wenn-worte-treffen, beispiel-dialog; seit Etappe 2b auch grenzen-ohne-eskalation (Abschnitt `kippen`) und spiegeln-statt-aufsaugen (Abschnitt `anerkennen`) (1000) |
+| `grenzen` | Grenzen setzen | Grenzen | `/grenzen`; Handouts 4-arten-von-grenzen, bruecke-gelaender, dear, grenzen-erkennen, grenzen-spickzettel, lmk (1200) |
 | `krise` | Krisen begleiten | – (verlinkt aus Rolle, Kommunizieren, Grenzen) | `/unterstuetzen/krise`; Handout krisenkommunikation (800) |
-| `selbstfuersorge` | Auf sich achten | Auf sich achten | `/selbstfuersorge`; Handouts sauerstoffmaske, energie-konto, warnsignale, stopp-technik, radikale-akzeptanz, erlaubnis-karte (1000) |
+| `selbstfuersorge` | Auf sich achten | Auf sich achten | `/selbstfuersorge`; Handouts sauerstoffmaske, energie-konto, warnsignale, stopp-technik, radikale-akzeptanz, erlaubnis-karte; seit Etappe 2a auch beziehungs-achtsamkeit (Abschnitt `zu-viel`) (1000) |
 | `genesung` | Genesung | – (Startseite; verlinkt aus Verstehen, Ihre Rolle) | `/genesung`; Handouts genesung-zahlen, remission-heilung, fortschritt-paradox, 5-faktoren-genesung, rolle-genesungsprozess (800) |
 | `unterstuetzung` | Unterstützung finden | – (Startseite; verlinkt aus Ihre Rolle, Auf sich achten) | `/fachstelle`, `/beratung`, `/buchempfehlungen` (600) |
-| `fragen` | Häufige Fragen | – (Fusszeile) | `/faq` (1500; kurze Antworten mit Link auf die Themenseite) |
-| `quellen` | Quellen und Begriffe | – (Fusszeile) | `/quellen`, `/glossar` (Quellenliste vollständig; Glossar nur Begriffe, die im Text vorkommen) |
-| `ueber` | Über diese Website | – (Fusszeile) | `/ueber-uns`, `/impressum`, `/datenschutz`, `/barrierefreiheit`, `/feedback` (900) |
+| `fragen` | Häufige Fragen | – (Startseite, Abschnitt «Haltung»; `ueber`) | `/faq` (kein Richtwert, Entscheid zu S-Nr. 1 in `KORREKTUR-ETAPPE-3-1.md`; kurze Antworten mit Link auf die Themenseite) |
+| `quellen` | Quellen und Begriffe | – (Block «Quellen zu dieser Seite» jeder Themenseite; `ueber`) | `/quellen`, `/glossar` (Quellenliste vollständig; Glossar nur Begriffe, die im Text vorkommen) |
+| `ueber` | Über diese Website | – (Startseite, Abschnitt «Beratung»; Impressum) | `/ueber-uns`, `/barrierefreiheit`, `/feedback` (900 zusammen mit `impressum-datenschutz`) |
+| `impressum-datenschutz` | Impressum und Datenschutz | – (Fusszeile, Links «Impressum» und «Datenschutz») | `/impressum`, `/datenschutz` (eigene Seite nach Profilentscheid 11.10.2026, Vorlage des Starters) |
 
 Entfallen ersatzlos, mit Begründung:
 
@@ -130,3 +131,5 @@ Die alte Website bleibt bis zum Umzug unverändert online.
 ## 7. Weiterleitungen (Etappe 3)
 
 Alle alten Routen leiten auf die neue Seite und, wo möglich, den passenden Abschnitt weiter (Netlify `_redirects`, Status 301). `/soforthilfe`, `/notfall`, `/notfallkarte` und `/notfallkarte.html` leiten auf die Startseite; deren Fusszeile enthält den Zuständigkeitsverweis. `/materialien/text/<id>` leitet auf den Abschnitt, in den das Handout eingegangen ist (Zuordnung Abschnitt 2).
+
+Umgesetzt in Etappe 3-1 und Korrektur 3-1-K: `_redirects` im Ordner der Website (85 Regeln). Netlify liest die Datei nur im veröffentlichten Stamm, und `tools/export.mjs` kopiert sie nicht. Beim Umzug (Etappe 3-2) wird `_redirects` deshalb von Hand in den Zielordner kopiert, und die alte `netlify.toml` im Zielordner (Repository `borderline-angehoerige`) wird ersetzt; ihre Weiterleitungen stehen in `_redirects`. Das Verhalten (gleichnamige Routen, Schrägstrich am Ende, Anker im Ziel) wird auf der Netlify-Vorschau geprüft.

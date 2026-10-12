@@ -20,6 +20,8 @@ Die vorgemerkten Zeilen aus anderen Tabellen (Gesprächsbeispiele aus `/unterstu
 
 **Zählung nach Freigabe 2b:** 957 Sätze des Bestands, davon 501 entfällt, 97 Bezeichnung, 90 verschoben (2b-2), 87 übernommen, 67 zusammengeführt, 52 umformuliert (2b), 25 verschoben (Vertiefung, 2b), 18 umformuliert (2b-2), 9 umformuliert (2b-K), 8 zusammengeführt (2b-K), 1 entfällt (2b-K), 1 zusammengeführt (2b-F), 1 verschoben. Dazu 24 Zeilen ohne Bestandssatz: 21 neu (2b), 2 neu (2b-K), 1 verschoben (2b-2).
 
+**Korrektur 3-1-K (12.10.2026):** nachgeführt nach `KORREKTUR-ETAPPE-3-1.md`, Abschnitt 6 (Z31-W2-1): eine Zeile ohne Bestandssatz am Ende der Tabelle, Nr. 981 «neu (3-1-K)», der Verweissatz auf `quellen` als erster Satz im Block «Quellen zu dieser Seite». Übrige Zeilen unverändert.
+
 - **Satz (Bestand):** Bestandstext in Sätze zerlegt, Listenpunkte und Zwischentitel als eigene Zeile, Klammermarken der Erhebung ohne eigene Zeile. Die Nummer bleibt fest, damit Prüfberichte sie zitieren können. Gleiche Sätze aus Seite und Handout stehen je in ihrer Zeile.
 - **Neue Fassung:** der Satz der neuen Seite, der die Aussage trägt; «wörtlich», wenn er gleich lautet; «–», wenn der Satz entfällt. Bei Zeilen ohne Bestandssatz steht in «Satz (Bestand)» «–».
 - **Ort neu:** `seite#abschnitt` der gebauten Seite (`kopf` = Seitenkopf, `kapitel` = Kapitelübersicht) oder `Fusszeile`.
@@ -1011,3 +1013,4 @@ Die vorgemerkten Zeilen aus anderen Tabellen (Gesprächsbeispiele aus `/unterstu
 | 978 | – | – | neu (2b) | Wie Sie nach einem Konflikt Kontakt anbieten können, steht auf der Seite «Ihre Rolle» im Abschnitt «Nach Konflikten und Rückzug». | kommunizieren#beispiele | Verweissatz; Verlinken statt wiederholen |
 | 979 | – | – | neu (2b) | Weitere Beispiele stehen auf der Seite «Grenzen» im Abschnitt «Sätze für typische Situationen». | kommunizieren#beispiele | Verweissatz; Verlinken statt wiederholen (Bauauftrag 2b, Abschnitt 3) |
 | 980 | – | – | neu (2b) | Wie sich Grenzen je nach Rolle unterscheiden, steht auf der Seite «Grenzen» im Abschnitt «Grenzen in verschiedenen Angehörigenrollen». | kommunizieren#rollen | Verweissatz; Verlinken statt wiederholen |
+| 981 | neue Seite › `quellen` | – | neu (3-1-K) | Vollständige Angaben zu den Quellen stehen auf der Seite «Quellen und Begriffe». | kommunizieren#quellen | Verweissatz, erster Satz im Block «Quellen zu dieser Seite», Link auf `quellen.html`; 3-1-K, Abschnitt 6, Z31-W2-1: gleicher Satz wie auf `fragen`, damit `quellen` von jeder Themenseite in einem Schritt erreichbar ist |

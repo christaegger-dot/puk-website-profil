@@ -12,6 +12,8 @@ Die vier vorgemerkten Zeilen (`beziehungen.md` Nr. 194 bis 197, «Ein realistisc
 
 **Zählung nach Korrektur 2c-K:** 498 Sätze des Bestands, davon 180 entfällt, 101 Bezeichnung, 92 übernommen, 89 zusammengeführt, 16 verschoben, 8 umformuliert (2c-1), 6 verschoben (Vertiefung, 2c-1), 4 umformuliert (2c-K), 2 gekürzt. Dazu 10 Zeilen ohne Bestandssatz: 9 neu (2c-1), 1 neu (2c-K).
 
+**Korrektur 3-1-K (12.10.2026):** nachgeführt nach `KORREKTUR-ETAPPE-3-1.md`, Abschnitt 6 (Z31-W2-1): eine Zeile ohne Bestandssatz am Ende der Tabelle, Nr. 508 «neu (3-1-K)», der Verweissatz auf `quellen` als erster Satz im Block «Quellen zu dieser Seite». Übrige Zeilen unverändert.
+
 - **Satz (Bestand):** Bestandstext in Sätze zerlegt, Listenpunkte und Zwischentitel als eigene Zeile, Klammermarken der Erhebung ohne eigene Zeile. Die Nummer bleibt fest, damit Prüfberichte sie zitieren können. Gleiche Sätze aus Seite und Handout stehen je in ihrer Zeile; der Garten-Teil der alten Seite steht zweimal im Bestand (Auswahl und «Alle Bereiche zusammen lesen») und hat deshalb je zwei Zeilen.
 - **Neue Fassung:** der Satz der neuen Seite, der die Aussage trägt; «wörtlich», wenn er gleich lautet; «–», wenn der Satz entfällt. Bei Zeilen ohne Bestandssatz steht in «Satz (Bestand)» «–».
 - **Ort neu:** `seite#abschnitt` der gebauten Seite (`kopf` = Seitenkopf, `kapitel` = Kapitelübersicht, `quellen` = Block «Quellen zu dieser Seite»), `Fusszeile` oder «seite (Etappe 2)» für eine vorgemerkte Entwurfsseite.
@@ -530,3 +532,4 @@ Die vier vorgemerkten Zeilen (`beziehungen.md` Nr. 194 bis 197, «Ein realistisc
 | 505 | neue Seite › Kapitelübersicht | – | neu (2c-1) | Verläufe | genesung#kapitel | Bezeichnung: Eintrag der Kapitelübersicht und Kicker «03 · Verläufe» |
 | 506 | neue Seite › Kapitelübersicht | – | neu (2c-1) | Einflüsse | genesung#kapitel | Bezeichnung: Eintrag der Kapitelübersicht und Kicker «04 · Einflüsse» |
 | 507 | neue Seite › Kapitelübersicht | – | neu (2c-1) | Ihre Unterstützung | genesung#kapitel | Bezeichnung: Eintrag der Kapitelübersicht und Kicker «05 · Ihre Unterstützung» |
+| 508 | neue Seite › `quellen` | – | neu (3-1-K) | Vollständige Angaben zu den Quellen stehen auf der Seite «Quellen und Begriffe». | genesung#quellen | Verweissatz, erster Satz im Block «Quellen zu dieser Seite», Link auf `quellen.html`; 3-1-K, Abschnitt 6, Z31-W2-1: gleicher Satz wie auf `fragen`, damit `quellen` von jeder Themenseite in einem Schritt erreichbar ist |

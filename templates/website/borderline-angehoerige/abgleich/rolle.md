@@ -24,6 +24,8 @@ Neue Seite: `content/rolle.html` · Bestand: `/unterstuetzen/uebersicht`; `/unte
 
 **Zählung nach Korrektur 2b-2:** 757 Sätze des Bestands, davon 280 entfällt, 97 zusammengeführt, 94 umformuliert (einfache Sprache, 2a), 90 übernommen, 68 umformuliert (2a-K), 47 verschoben (Vertiefung, 2a-K), 29 verschoben, 28 Bezeichnung, 17 verschoben (2b-2), 4 verschoben (2a-K), 1 gekürzt, 1 umformuliert (2a-2), 1 umformuliert (2b-2). Dazu 13 Zeilen ohne Bestandssatz: 6 neu (2a), 6 neu (2a-K), 1 entfällt.
 
+**Korrektur 3-1-K (12.10.2026):** nachgeführt nach `KORREKTUR-ETAPPE-3-1.md`, Abschnitt 6 (Z31-W2-1): eine Zeile ohne Bestandssatz am Ende der Tabelle, Nr. 770 «neu (3-1-K)», der Verweissatz auf `quellen` als erster Satz im Block «Quellen zu dieser Seite». Übrige Zeilen unverändert.
+
 - **Satz (Bestand):** Bestandstext in Sätze zerlegt, Listenpunkte und Zwischentitel als eigene Zeile. Die Nummer bleibt fest, damit Prüfberichte sie zitieren können. Gleiche Sätze aus Seite und Handout stehen je in ihrer Zeile.
 - **Neue Fassung:** der Satz der neuen Seite, der die Aussage trägt; «wörtlich», wenn er gleich lautet; «–», wenn der Satz entfällt oder auf eine spätere Seite vorgemerkt ist. Bei Zeilen ohne Bestandssatz steht in «Satz (Bestand)» «–».
 - **Ort neu:** `seite#abschnitt` der gebauten Seite (`kopf` = Seitenkopf, `kapitel` = Kapitelübersicht), `Fusszeile`, oder «seite (Etappe 2)» für eine vorgemerkte Entwurfsseite.
@@ -803,6 +805,7 @@ Neue Seite: `content/rolle.html` · Bestand: `/unterstuetzen/uebersicht`; `/unte
 | 767 | neue Seite › Abschnitt 07, Verweis | – | neu (2a) | Wie Sie auf sich achten können, steht auf der Seite «Auf sich achten». | rolle#an-grenzen | Verweissatz; Freigabe: Liste der neuen Sätze in PRUEFBERICHT.md, Selbstprüfung Etappe 2a |
 | 768 | neue Seite › Abschnitt 02 | – | neu (2a-K) | Daraus folgt keine Schuld und keine Aufteilung von Verantwortung für die Erkrankung. | rolle#schuld | P2a-F-1: Wortlaut des Korrekturauftrags (Abschnitt 3), gleich wie `verstehen`, Annahme 3; Freigabe: Liste der neuen Sätze, Selbstprüfung Korrektur 2a-K |
 | 769 | neue Seite › Abschnitt 07, Verweis | – | neu (2a-K) | Dass solche gemischten Gefühle oft zur Belastung dazugehören, steht auf der Seite «Verstehen» im Abschnitt «Was Angehörige erleben können». | rolle#an-grenzen | K-R-b5: Verweissatz an Stelle des Absatzes zu den gemischten Gefühlen; Freigabe: Liste der neuen Sätze, Selbstprüfung Korrektur 2a-K |
+| 770 | neue Seite › `quellen` | – | neu (3-1-K) | Vollständige Angaben zu den Quellen stehen auf der Seite «Quellen und Begriffe». | rolle#quellen | Verweissatz, erster Satz im Block «Quellen zu dieser Seite», Link auf `quellen.html`; 3-1-K, Abschnitt 6, Z31-W2-1: gleicher Satz wie auf `fragen`, damit `quellen` von jeder Themenseite in einem Schritt erreichbar ist |
 
 ## Prüfbedarf für W1 (Stand 10.10.2026, Etappe 2a)
 

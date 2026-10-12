@@ -38,6 +38,8 @@ Ab 1h ist Abschnitt 06 keine Abbildung mehr; ältere Bemerkungen «Abbildung 4»
 
 **Zählung nach Freigabe 2b:** 542 Sätze des Bestands wie nach Korrektur 2b-2. Dazu 8 Zeilen ohne Bestandssatz: 3 neu (Verweis, 2b-F), 2 neu (1f), 2 neu (1h), 1 umformuliert (Prüfrunde 4, 1i).
 
+**Korrektur 3-1-K (12.10.2026):** nachgeführt nach `KORREKTUR-ETAPPE-3-1.md`, Abschnitt 6 (Z31-W2-1): eine Zeile ohne Bestandssatz am Ende der Tabelle, Nr. 550 «neu (3-1-K)», der Verweissatz auf `quellen` als erster Satz im Block «Quellen zu dieser Seite». Übrige Zeilen unverändert.
+
 - **Satz (Bestand):** Bestandstext in Sätze zerlegt, Listenpunkte und Zwischentitel als eigene Zeile. Die Nummer bleibt fest, damit Prüfberichte sie zitieren können. Gleiche Sätze aus Seite und Handout stehen je in ihrer Zeile.
 - **Neue Fassung:** der Satz der neuen Seite, der die Aussage trägt; «wörtlich», wenn er gleich lautet; «–», wenn der Satz entfällt oder auf eine spätere Seite vorgemerkt ist. Bei Zeilen ohne Bestandssatz steht in «Satz (Bestand)» «–».
 - **Ort neu:** `seite#abschnitt` der gebauten Seite (`kopf` = Seitenkopf, `kapitel` = Kapitelübersicht), `Fusszeile`, oder «seite (Etappe 2)» für eine vorgemerkte Entwurfsseite.
@@ -597,6 +599,7 @@ Ab 1h ist Abschnitt 06 keine Abbildung mehr; ältere Bemerkungen «Abbildung 4»
 | 547 | neue Seite › `mythen`, Verweis | – | neu (Verweis, 2b-F) | Wie Sie Suizidgedanken direkt ansprechen können, steht auf der Seite «Krisen begleiten» im Abschnitt «Wenn Suizidgedanken ein Thema sind». | verstehen#mythen | 2b-F (Freigabe 2b, Abschnitt 4, Satz 1): am Ende des Teils «Wenn Sie sich wegen Suizid sorgen», im Absatz nach dem Verweis im Text («Bleiben Sie bei der Person nur, soweit dies für Sie sicher möglich ist.»); Link auf `krise#suizid`; wortgleich auf `kommunizieren#worte` (`kommunizieren.md` Nr. 974). Ort: «Direkt nachzufragen, löst nach heutigem Wissensstand keine suizidale Handlung aus.» steht hier als Antwort in der Liste der Annahmen, nicht im Teil; direkt nach der Handlungsanleitung stünde der Satz vor dem Verweis im Text |
 | 548 | neue Seite › `anspannung`, Verweis | – | neu (Verweis, 2b-F) | Wie Sie eine Pause ankündigen können, steht auf der Seite «Zugewandt und klar sprechen» im Abschnitt «Der richtige Moment». | verstehen#anspannung | 2b-F (Freigabe 2b, Abschnitt 4, Satz 2): eigener Absatz am Ende des Abschnittstexts, vor Abbildung 2, nicht in der Abbildung; Link auf `kommunizieren#moment` |
 | 549 | neue Seite › `mythen`, Verweis | – | neu (Verweis, 2b-F) | Wie Sie mit Schuldgefühlen umgehen können, steht auf der Seite «Ihre Rolle» im Abschnitt «Schuld, Verantwortung und was dazwischen liegt». | verstehen#mythen | 2b-F (Freigabe 2b, Abschnitt 4, Satz 3): am Ende der Antwort zu «Angehörige sind schuld.», nach «Daraus folgt keine Schuld und keine Aufteilung von Verantwortung für die Erkrankung.»; Link auf `rolle#schuld` |
+| 550 | neue Seite › `quellen` | – | neu (3-1-K) | Vollständige Angaben zu den Quellen stehen auf der Seite «Quellen und Begriffe». | verstehen#quellen | Verweissatz, erster Satz im Block «Quellen zu dieser Seite», Link auf `quellen.html`; 3-1-K, Abschnitt 6, Z31-W2-1: gleicher Satz wie auf `fragen`, damit `quellen` von jeder Themenseite in einem Schritt erreichbar ist |
 
 ## Prüfbedarf für W1 (Stand 09.10.2026, Korrektur 1f)
 

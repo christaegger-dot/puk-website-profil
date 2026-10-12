@@ -30,6 +30,8 @@ Neue Seite: `content/selbstfuersorge.html` · Bestand: `/selbstfuersorge`; aus `
 
 **Etappe 2c-1 (11.10.2026):** Nr. 232 («Alle Beratungsangebote & Netzwerke ansehen.»), vorgemerkt für `unterstuetzung`, nennt den neuen Ort `unterstuetzung#beratung`. Status «verschoben» bleibt: Die Angebote stehen auf `unterstuetzung`; `selbstfuersorge` ist freigegeben und bleibt unverändert, ein Verweis von dort ist als Vorschlag in der Selbstprüfung 2c-1 genannt.
 
+**Korrektur 3-1-K (12.10.2026):** nachgeführt nach `KORREKTUR-ETAPPE-3-1.md`, Abschnitt 6 (Z31-W2-1): eine Zeile ohne Bestandssatz am Ende der Tabelle, Nr. 673 «neu (3-1-K)», der Verweissatz auf `quellen` als erster Satz im Block «Quellen zu dieser Seite». Übrige Zeilen unverändert.
+
 
 - **Satz (Bestand):** Bestandstext in Sätze zerlegt, Listenpunkte und Zwischentitel als eigene Zeile. Die Nummer bleibt fest, damit Prüfberichte sie zitieren können. Gleiche Sätze aus Seite und Handout stehen je in ihrer Zeile.
 - **Neue Fassung:** der Satz der neuen Seite, der die Aussage trägt; «wörtlich», wenn er gleich lautet; «–», wenn der Satz entfällt oder auf eine spätere Seite vorgemerkt ist. Bei Zeilen ohne Bestandssatz steht in «Satz (Bestand)» «–».
@@ -713,6 +715,7 @@ Neue Seite: `content/selbstfuersorge.html` · Bestand: `/selbstfuersorge`; aus `
 | 670 | neue Seite › Abschnitt 06, Verweis | – | neu (2a) | Was dann wichtig ist, steht auf der Seite «Grenzen» im Abschnitt «Wenn Gewalt oder Bedrohung vorkommt». | selbstfuersorge#akzeptanz | Verweissatz nach «Bei Gefahr geht Schutz vor.»; Freigabe: Liste der neuen Sätze in PRUEFBERICHT.md, Selbstprüfung Etappe 2a |
 | 671 | neue Seite › Abschnitt 02, Verweis | – | neu (2a-K) | Wie Sie Aufgaben abgeben, Ihre Erreichbarkeit begrenzen, sich beraten lassen und Ihr eigenes Leben bewahren können, steht im Abschnitt «Auch Sie brauchen Unterstützung». | selbstfuersorge#kraft | K-S-a1 (P2a-W2-4): Verweissatz an Stelle der vier Punkte, die `unterstuetzung` mit Beispielsatz bringt; Freigabe: Liste der neuen Sätze, Selbstprüfung Korrektur 2a-K |
 | 672 | neue Seite › Abschnitt 04, Verweis | – | neu (Verweis, 2b-F) | Was in einer Krise hilft, steht auf der Seite «Krisen begleiten» im Abschnitt «Wenn Belastung zunimmt». | selbstfuersorge#zu-viel | 2b-F (Freigabe 2b, Abschnitt 4, Satz 7): eigener Absatz direkt nach dem Verweis im Text, der auf «… holen Sie Hilfe, statt weiterzuüben.» folgt, vor «Ruhig atmen»; Link auf `krise#belastung` |
+| 673 | neue Seite › `quellen` | – | neu (3-1-K) | Vollständige Angaben zu den Quellen stehen auf der Seite «Quellen und Begriffe». | selbstfuersorge#quellen | Verweissatz, erster Satz im Block «Quellen zu dieser Seite», Link auf `quellen.html`; 3-1-K, Abschnitt 6, Z31-W2-1: gleicher Satz wie auf `fragen`, damit `quellen` von jeder Themenseite in einem Schritt erreichbar ist |
 
 ## Prüfbedarf für W1 (Stand 10.10.2026, Etappe 2a)
 
