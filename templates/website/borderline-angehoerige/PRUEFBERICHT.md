@@ -1136,6 +1136,13 @@ Nach jedem Bau ohne Nachfrage ausfüllen: Visualisierungs-Check wie unten, mit B
 
 Erst danach ist Z31-W3-2 prüfbar. **#659 darf so nicht gemergt werden.** Ob die Produktion nach einem Merge die neue Fassung zeigen würde, ist ungeklärt.
 
+**Nachtrag, Neubau mit geleertem Cache:** Die Fachstelle hat die Vorschau neu bauen lassen (Deploy `6acd0d62f6d6ec4728458a6c`, 16:40 UTC). Der Deploy ist fehlgeschlagen: «Failed during stage 'building site': Build script returned non-zero exit code: 2».
+- Die `netlify.toml` des Branchs (auf GitHub geprüft: im Stamm, `publish = "."`, Build-Befehl nur `echo`) kann das nicht auslösen.
+- Netlify führt also einen anderen Build-Befehl aus, vermutlich den der React-Fassung aus den Projekteinstellungen. Die früheren Vorschauen kamen aus dem Build-Cache der alten Fassung.
+- Ein Merge würde voraussichtlich auch den Produktions-Build scheitern lassen; Netlify behielte dann die bisherige Produktion.
+- Zum Beheben nötig: das Deploy-Log und die Build-Einstellungen des Netlify-Projekts (Base directory, Build command, Publish directory, Pfad der Konfigurationsdatei). Beides ist über die vorhandene Netlify-Verbindung nicht lesbar.
+- Der Schutz der Vorschauen war danach aus (Einstellung der Fachstelle).
+
 ### Etappe 3-2: Visualisierungs-Check
 
 Keine Abbildung, kein Text und keine Zeile des Plans geändert. Der Export übernimmt `<main>` unverändert (oben), die Figuren also auch. Freundin-Test entfällt.
