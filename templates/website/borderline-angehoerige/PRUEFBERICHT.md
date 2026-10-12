@@ -1058,14 +1058,16 @@ Keine Stufe ist «erledigt». W1: 2 wichtig, 2 optional, 6 Fragen. W2: 2 wichtig
 
 Nach jedem Bau ohne Nachfrage ausfüllen: Visualisierungs-Check wie unten, mit Beleg je Punkt. Arbeitsstand, keine Prüfstufe.
 
-**Stand 12.10.2026 · Etappe 3-2 (Sicherung und Vorschau) · bauende Sitzung (Claude Code).** Umgesetzt ist der zweite Teil von UMBAUPLAN, Etappe 3 («Umzug»). Der Auftrag kam in dieser Sitzung von der Fachstelle («starte Etappe 3-2»), die zwei Entscheide auf Rückfrage: Umfang «Sichern + Vorschau», Zielstruktur «React-Quellen ersetzen». Grundlage ist `borderline-umbau` am Stand `f78aae9` (nach PR #42). In diesem Repository geändert sind nur dieser Block und `UMBAUPLAN.md` (Stand, Abschnitt 7). Inhalte, gebaute Seiten, `site.config.json`, CSS, Werkzeuge und Abgleich sind unverändert. Keine Prüfstufe ist «erledigt».
+**Stand 12.10.2026 · Etappe 3-2 (Sicherung und Vorschau) · bauende Sitzung (Claude Code).** Umgesetzt ist der zweite Teil von UMBAUPLAN, Etappe 3 («Umzug»). Der Auftrag kam in dieser Sitzung von der Fachstelle («starte Etappe 3-2»). Ihre Entscheide auf Rückfrage: Umfang «Sichern + Vorschau», Zielstruktur «React-Quellen ersetzen», für die Prüfung der Vorschau «Schutz kurz aus, danach wieder an» und nach dem gescheiterten Neubau der Vorschau «Export in Unterordner `site/`». Grundlage ist `borderline-umbau` am Stand `f78aae9` (nach PR #42). In diesem Repository geändert sind nur dieser Block und `UMBAUPLAN.md` (Stand, Abschnitt 7). Inhalte, gebaute Seiten, `site.config.json`, CSS, Werkzeuge und Abgleich sind unverändert. Keine Prüfstufe ist «erledigt».
 
 **Nicht erfüllt oder offen (Kurzfassung):**
 
-1. **Die Vorschau zeigt die alte React-Fassung (Z31-W3-2 bleibt offen).** Geprüft am 12.10.2026 (Abschnitt «Prüfung der Vorschau» unten): Unter der Vorschau von #659 liefert Netlify die alte React-Fassung aus, nicht den Export. Keine der 85 Weiterleitungen greift, die Kopfzeilen stammen aus der alten `netlify.toml`. Die Ursache liegt in den Build-Einstellungen des Netlify-Projekts oder im Deploy selbst; aus dem Repository allein ist sie nicht erkennbar.
-2. **Netlify meldet die Zahlen der alten Konfiguration.** Laut Zusammenfassung des Vorschau-Deploys sind es 37 Weiterleitungs- und 4 Header-Regeln. Das sind die Zahlen der alten Konfiguration: 15 Regeln in der alten `netlify.toml` und 22 in `client/public/_redirects`, dazu 4 Header-Blöcke. Erwartet wären 88 (85 in `_redirects`, 3 in `netlify.toml`) und 1. Auf der Vorschau ist zuerst zu prüfen, ob sie die neue Website und `_redirects` ausliefert (Aufgefallen Nr. 1). **Berichtigt nach der Prüfung der Vorschau (unten):** Die Zahlen stimmen. Die Vorschau liefert tatsächlich die alte React-Fassung mit ihrer Konfiguration aus. Der frühere Nachtrag, sie seien nur eine übernommene Zusammenfassung, war falsch: Die 31 Dateien der Secret-Prüfung sind die Quelle des Branchs, nicht die veröffentlichten Dateien.
-3. **Nur Entwurfs-Export.** Das Produktionsgate sperrt den Export mit `--production` (`review-report`, offene Stufen).
-4. **Nicht veröffentlicht.** Veröffentlicht wird erst nach vollständigem Prüfbericht, mit einem neuen Export mit `--production` und dem Merge von christaegger-dot/borderline-angehoerige#659.
+1. **Z31-W3-2 nur von der bauenden Sitzung geprüft.** Auf der Vorschau (Deploy `6acd0e03ea79a5743fa2824e`, Commit `34a2e58`) wirken alle 85 Weiterleitungen wie vorgesehen, und die zehn Punkte der Liste sind erfüllt (Abschnitt «Prüfung der Vorschau»). Eine Prüfstufe ist das nicht; nachprüfen muss eine Prüfsitzung (W3, R3).
+2. **Netlify verändert die ausgelieferten Seiten.** Die Projekteinstellung «Pretty URLs» schreibt die Seitenlinks beim Ausliefern um, z. B. `verstehen.html` → `/verstehen` und `index.html` → `/` (297 Links auf 18 geprüften Seiten). Die Links funktionieren: 450 von 450, ohne Umleitung, alle Anker vorhanden. Ausgeliefert wird aber nicht Zeichen für Zeichen der geprüfte Export, und die kanonische Adresse (`…/verstehen.html`) weicht von den Links ab. Entscheid der Fachstelle (Aufgefallen Nr. 3).
+3. **Produktion nach dem Merge ungeprüft.** Die Vorschau belegt, dass Netlify die `netlify.toml` anwendet (`publish = "site"`, kein Build). Die Produktion baut aus derselben Datei. Die Build-Einstellungen des Netlify-Projekts sind über die Netlify-Verbindung aber nicht lesbar (Aufgefallen Nr. 4).
+4. **Schutz der Vorschauen aus.** Die Fachstelle hat die Team-Anmeldung für Vorschauen nach der ersten Prüfung ausgeschaltet (Stand: `requiresSSOTeamLogin: false`). Die Entwurfs-Vorschau ist ohne Anmeldung erreichbar (`curl` ohne Anmeldung: 200), mit `x-robots-tag: noindex`. Empfehlung: wieder einschalten.
+5. **Nur Entwurfs-Export.** Das Produktionsgate sperrt den Export mit `--production` (`review-report`, offene Stufen).
+6. **Nicht veröffentlicht.** Veröffentlicht wird erst nach vollständigem Prüfbericht, mit einem neuen Export mit `--production` und dem Merge von christaegger-dot/borderline-angehoerige#659.
 
 ### Etappe 3-2: Stand je Punkt
 
@@ -1073,19 +1075,19 @@ Nach jedem Bau ohne Nachfrage ausfüllen: Visualisierungs-Check wie unten, mit B
 | --- | --- | --- |
 | Sicherung der React-Fassung | umgesetzt | Branch `react-archiv` im Repository `borderline-angehoerige`, Commit `f46038b`, gleich wie `main` (`git ls-remote`: beide `f46038b…`) |
 | Export | umgesetzt (Entwurf) | `node tools/export.mjs <ziel>` am Stand `f78aae9`: 17 Seiten, `css/site.css`, 3 Schriftdateien (Rubik 300, 400, 500), `js/interaktion.js`, `assets/` (Logo, Favicon), `_headers`, `sitemap.xml`; Gate draft 0 blockierend, 2 Hinweise. Mit `--production` abgebrochen: 1 blockierend (`review-report`) |
-| Zielstruktur | umgesetzt | Branch `umzug-puk-profil-1791821335`, Commit `8120051`. Der Export steht im Stamm. Entfernt sind 968 Dateien: React-Quellen, Build-Werkzeuge, Tests, QA-Material, Workflows, Netlify-Funktion `material-download`, Handouts und Dokumente des alten Projekts. `CLAUDE.md` ist unverändert, `README.md` neu (Quelle, Entstehung, Stand), `.gitignore` neu; mit `e5c8441` schliesst sie wieder Abhängigkeiten, Build-Ausgaben und `.env*` aus (Codex-Befund) |
-| `_redirects` | umgesetzt | von Hand in den Stamm kopiert, `cmp` gleich wie `templates/website/borderline-angehoerige/_redirects`; 85 Regeln |
-| `netlify.toml` | ersetzt | statisch: `publish = "."`, Befehl ohne Build; Regeln mit 404 für `/404` (wie in der alten Datei; Codex-Befund, `e5c8441`) und für `README.md`, `CLAUDE.md`, `netlify.toml`. Die Weiterleitungen der alten Datei stehen in `_redirects` (`/notfallkarte`, `/soforthilfe` usw. auf die Startseite) |
-| Pull Request | offen, Entwurf | christaegger-dot/borderline-angehoerige#659 gegen `main`, Titel mit «NICHT MERGEN» |
-| Vorschau | gebaut, nicht geprüft | Netlify-Deploy `6acd06551b118d9d720307c8`, Zustand «ready», Kontext «deploy-preview»; Checks «Redirect rules» und «Header rules» «success», «Pages changed» «neutral»; Adresse `https://deploy-preview-659--borderline-angehoerige.netlify.app` (mit Team-Anmeldung) |
-| Produktion | unverändert | aktueller Deploy `6acacec096879ee730291803`, Commit `f46038b`, veröffentlicht 10.10.2026 |
+| Zielstruktur | umgesetzt | Branch `umzug-puk-profil-1791821335`: Export mit `8120051`, mit `34a2e58` unverändert in den Ordner `site/` verschoben (`git mv`; Entscheid der Fachstelle, Entscheide Nr. 3). Im Stamm liegen nur `netlify.toml`, `README.md` (neu: Quelle, Entstehung, Stand, Aufbau mit `site/`), `CLAUDE.md` (unverändert) und `.gitignore`; diese schliesst seit `e5c8441` wieder Abhängigkeiten, Build-Ausgaben und `.env*` aus (Codex-Befund). Entfernt sind 968 Dateien: React-Quellen, Build-Werkzeuge, Tests, QA-Material, Workflows, Netlify-Funktion `material-download`, Handouts und Dokumente des alten Projekts |
+| `_redirects` | umgesetzt | von Hand in den Publish-Ordner `site/` kopiert, `cmp` gleich wie `templates/website/borderline-angehoerige/_redirects`; 85 Regeln |
+| `netlify.toml` | ersetzt | statisch: `publish = "site"`, Befehl nur `echo`, kein Build. Eine Regel: `/404` mit Status 404, wie in der alten Datei (Codex-Befund, `e5c8441`). Die Regeln für `README.md`, `CLAUDE.md` und `netlify.toml` sind mit `34a2e58` entfallen, weil die Dateien nicht mehr im Publish-Ordner liegen (Vorschau: alle drei 404). Die Weiterleitungen der alten Datei stehen in `site/_redirects` (`/notfallkarte`, `/soforthilfe` usw. auf die Startseite) |
+| Pull Request | offen, nicht gemergt | christaegger-dot/borderline-angehoerige#659 gegen `main`, Titel mit «NICHT MERGEN»; von der Fachstelle als «bereit» markiert, kein Entwurf mehr |
+| Vorschau | geprüft (bauende Sitzung) | Netlify-Deploy `6acd0e03ea79a5743fa2824e`, Commit `34a2e58`, Zustand «ready». Netlify meldet: «18 new files uploaded» (17 Seiten, 1 Asset), «86 redirect rules processed» (85 aus `_redirects`, 1 aus `netlify.toml`), «1 header rule processed», «No functions deployed». Ergebnis unten |
+| Produktion | unverändert | React-Fassung, Commit `f46038b`. Aktueller Deploy `6acd0c5b463098574672246a`: am 12.10.2026 um 16:36 UTC aus demselben Commit neu gebaut, Framework vite, 37 Weiterleitungs- und 4 Header-Regeln, Funktion `material-download`. Davor `6acacec096879ee730291803` vom 10.10.2026 |
 | `UMBAUPLAN.md` | nachgeführt | Kopf («**Stand:** Etappe 3-2 begonnen …») und Abschnitt 7 |
 
 ### Etappe 3-2: Prüfungen
 
-- **Branch gegen Export:** Die Website-Dateien im Branch sind Zeichen für Zeichen gleich wie der Export (`diff -r`, ohne `README.md`, `CLAUDE.md`, `netlify.toml`, `.gitignore`).
+- **Branch gegen Export:** Die Dateien in `site/` sind Zeichen für Zeichen gleich wie der Export (`diff -r` gegen den Exportordner ohne Abweichung, nach dem Verschieben wiederholt).
 - **Export gegen gebaute Seiten:** `<main>` der 17 exportierten Seiten ist gleich wie auf den gebauten Seiten in diesem Ordner, 16 Zeichen für Zeichen. Auf `404` steht der Link «Zur Übersicht» ab dem Stamm (`/index.html`), wie `tools/export.mjs` es für die 404-Seite vorsieht.
-- **Lokal im Browser** (Export über einen lokalen Server, Chromium):
+- **Lokal im Browser** (Export über einen lokalen Server, Chromium; ohne die Kopfzeilen aus `_headers`, die erst auf Netlify wirken):
   - 17 Seiten, 0 fehlgeschlagene Anfragen, 0 Anfragen an fremde Adressen, 0 Konsolenfehler
   - Rubik 300, 400 und 500 geladen, Logo geladen
   - 157 interne Linkziele, alle vorhanden, Anker eingeschlossen
@@ -1094,12 +1096,12 @@ Nach jedem Bau ohne Nachfrage ausfüllen: Visualisierungs-Check wie unten, mit B
   - jedes Ziel und jeder Anker im Export vorhanden
   - keine Quelle trifft eine vorhandene Datei (sonst hätte die Datei bei Netlify Vorrang)
 - **Technik:** 0 `style`-Attribute, 0 Inline-Skripte, 0 `tel:`, keine fremden Quellen; `_headers` aus dem Export mit Content-Security-Policy.
-- **Netlify** (Angaben des Deploys über die Netlify-Schnittstelle gelesen):
-  - Deploy «ready», «No functions deployed»
-  - «37 redirect rules processed», «4 header rules processed»; das widerspricht der neuen Konfiguration (oben Nr. 2)
-- **Nicht prüfbar:** die Vorschau selbst (Netzwerk, Team-Anmeldung), reale Screenreader-Läufe, Hardwaretastatur, Touch.
+- **Netlify:** Angaben der Deploys über die Netlify-Schnittstelle gelesen (Stand je Punkt, Verlauf unten).
+- **Nicht prüfbar:** reale Screenreader-Läufe, Hardwaretastatur, Touch; die Produktion nach dem Merge.
 
 ### Etappe 3-2: Auf der Vorschau zu prüfen (Z31-W3-2)
+
+Ergebnis je Punkt im nächsten Abschnitt.
 
 1. Die Startseite der Vorschau zeigt die neue Website (Kopf mit PUK-Logo und Absenderin), nicht die React-Fassung.
 2. `/soforthilfe`, `/notfallkarte`, `/soforthilfe/` und `/soforthilfe/irgendwas` leiten auf die Startseite.
@@ -1110,62 +1112,84 @@ Nach jedem Bau ohne Nachfrage ausfüllen: Visualisierungs-Check wie unten, mit B
 7. Eine fehlende Adresse in der Tiefe (z. B. `/a/b/c`) zeigt die 404-Seite mit Schrift und Logo.
 8. `/404`, `/README.md`, `/CLAUDE.md` und `/netlify.toml` antworten mit 404.
 9. Konsole ohne Fehler der Content-Security-Policy; Kopfzeilen nach `_headers`.
-10. `/verstehen/` mit Schrägstrich: Seite mit Schrift, Logo und funktionierenden Links? Die Seiten verweisen relativ (`css/site.css`); unter `/verstehen/` lösen sich diese Pfade unter dem Ordner auf (Codex-Befund P1, Thread in #659 offen).
+10. `/verstehen/` mit Schrägstrich: Seite mit Schrift, Logo und funktionierenden Links? Die Seiten verweisen relativ (`css/site.css`); unter `/verstehen/` lösen sich diese Pfade unter dem Ordner auf (Codex-Befund P1 in #659).
 
 ### Etappe 3-2: Prüfung der Vorschau (12.10.2026)
 
-**Vorgehen:**
-- Im Auftrag der Fachstelle hat die bauende Sitzung die Team-Anmeldung für Nicht-Produktions-Deploys über die Netlify-Verbindung für rund zwei Minuten ausgeschaltet (etwa 16:30 bis 16:32 UTC) und danach wieder eingeschaltet.
-- Kontrolle danach: Die Vorschau antwortet mit 401, die Einstellung lautet wieder «Team-Anmeldung für Nicht-Produktion». Die Produktion war nicht betroffen.
-- Die Netzwerkfreigabe für `*.netlify.app` hat die Fachstelle in den Einstellungen der Umgebung eingetragen.
+**Verlauf:**
 
-**Ergebnis** (Deploy `6acd09958fdf9be93e413bf2`, Commit `e5c8441`; Prüfung per `curl` ohne Folgen der Umleitung und in Chromium):
+1. **Erste Prüfung, alte Fassung ausgeliefert** (Deploy `6acd09958fdf9be93e413bf2`, Commit `e5c8441`):
+   - Titel «Startseite – Borderline · Hilfe für Angehörige», Stylesheet `/assets/index-bmLiOMct.css`, `/css/site.css` und `/behandlung.html` 404
+   - 0 von 85 Weiterleitungen wie in `_redirects`; es galten die alten Regeln (z. B. `/notfallkarte` → `/soforthilfe`)
+   - Kopfzeilen der alten `netlify.toml` (`style-src 'self' 'unsafe-inline'`, `geolocation=(self)`); Netlify meldete 37 Weiterleitungs- und 4 Header-Regeln, wie die Produktion
+   - Zugang: Im Auftrag der Fachstelle hat die bauende Sitzung die Team-Anmeldung für Nicht-Produktions-Deploys über die Netlify-Verbindung rund zwei Minuten ausgeschaltet (etwa 16:30 bis 16:32 UTC) und danach wieder eingeschaltet. Kontrolle danach: 401, Einstellung wieder «Team-Anmeldung für Nicht-Produktion»; die Produktion war nicht betroffen. Die Netzwerkfreigabe für `*.netlify.app` hat die Fachstelle in den Einstellungen der Umgebung eingetragen.
+2. **Neubau mit geleertem Cache, fehlgeschlagen** (Deploy `6acd0d62f6d6ec4728458a6c`, 16:40 UTC, ausgelöst von der Fachstelle): «Failed during stage 'building site'». Im Deploy-Log, das die Fachstelle geliefert hat: aufgelöste Konfiguration mit Befehl `echo 'Statische Website: kein Build'` und `publish` `/opt/build/repo`, danach «Deploy did not succeed: Deploy directory 'dist/public' does not exist».
+3. **Ursache:** Netlify las die `netlify.toml` und führte ihren Befehl aus. Den Publish-Ordner `"."` übernahm es nicht, weil er mit dem Stamm zusammenfällt, sondern nahm den aus den Projekteinstellungen (`dist/public` der React-Fassung). Mit Cache lagen dort die Dateien der alten Fassung (erste Prüfung), ohne Cache fehlte der Ordner (Neubau). Damit ist die Vermutung im früheren Nachtrag berichtigt, Netlify führe den Build-Befehl der React-Fassung aus.
+4. **Korrektur:** Export in den Unterordner `site/` (Entscheid der Fachstelle), `publish = "site"`, Commit `34a2e58`. Deploy `6acd0e03ea79a5743fa2824e` (16:42 UTC): «ready», 86 Weiterleitungs- und 1 Header-Regel.
 
-- **Ausgeliefert wird die alte React-Fassung**, unter der Vorschau-Adresse und unter dem Permalink des Deploys:
-  - Titel «Startseite – Borderline · Hilfe für Angehörige», Stylesheet `/assets/index-bmLiOMct.css`, Kompass-Symbol und «Soforthilfe öffnen» (Foto angesehen)
-  - `/verstehen` zeigt «Borderline verstehen» der React-Fassung, `/soforthilfe` die Seite «Soforthilfe bei akuter Gefahr» (200)
-  - `/css/site.css` und `/behandlung.html` antworten mit 404
-- **Weiterleitungen:** 0 von 85 wie in `_redirects`. Es gelten die alten Regeln, z. B. `/notfallkarte` → `/soforthilfe` und `/therapieangebote` → `/unterstuetzen/therapie#therapieangebote`.
-- **Kopfzeilen:** die der alten `netlify.toml`, z. B. Content-Security-Policy mit `style-src 'self' 'unsafe-inline'` und `geolocation=(self)`, nicht die aus `_headers`.
-- **Zu Codex P1 (Schrägstrich):** Auf diesem Deploy leitet Netlify `/verstehen/` mit 301 auf `/verstehen` um, `/VERSTEHEN` ebenso. Das ist ein Hinweis auf das Verhalten von Netlify, aber an der alten Fassung beobachtet, nicht am Export.
+**Ergebnis je Punkt** (Deploy `6acd0e03ea79a5743fa2824e`, Commit `34a2e58`; `curl` erst ohne, dann mit Folgen der Umleitung; Chromium bei 1280 px, Fotos von `/`, `/verstehen/` und `/a/b/c` angesehen):
 
-**Folgerung:** Netlify veröffentlicht für diesen Branch nicht den Stamm nach der neuen `netlify.toml`, sondern Dateien der alten Fassung. Netlify meldete das schon: «All files already uploaded by a previous deploy», 37 Weiterleitungs- und 4 Header-Regeln. Zu prüfen im Netlify-Projekt:
-- das Deploy-Log
-- die Build-Einstellungen: Base directory, Publish directory, Build command, eine abweichende Angabe zum Pfad der Konfigurationsdatei
-- den Build-Cache (leeren und neu bauen)
+| Nr. | Ergebnis | Beleg |
+| --- | --- | --- |
+| 1 Startseite | erfüllt | `/` 200: h1 «Borderline – Orientierung für Angehörige», Stylesheet `/css/site.css`, Schrift Rubik, Logo geladen (214 px breit), Absenderin vorhanden |
+| 2 Krisenrouten | erfüllt | `/soforthilfe`, `/soforthilfe/`, `/soforthilfe/irgendwas`, `/notfallkarte`: je 301 → `/index.html`, Ziel 200; im Browser endet `/soforthilfe` auf der Startseite |
+| 3 Gleichnamige Routen | erfüllt | `/verstehen`, `/grenzen`, `/kommunizieren`, `/selbstfuersorge`, `/genesung`, `/quellen`: je 200 mit dem Titel der neuen Seite, z. B. «Grenzen setzen \| Borderline – Orientierung für Angehörige». Mit Schrägstrich am Ende je 301 auf die Adresse ohne Schrägstrich, dann 200 |
+| 4 Anker im Ziel | erfüllt | `/therapieangebote` → 301 `/behandlung.html#angebote`, `/selbsthilfegruppen` → 301 `/unterstuetzung.html#selbsthilfe`; Ziel 200, Anker vorhanden; im Browser h1 «Behandlung und Ihre Rolle darin» |
+| 5 `/x.html` und `/x` | erfüllt | `/verstehen.html` 200 und `/verstehen` 200, beide ohne weitere Umleitung; die Ziele in `_redirects` brauchen also nur einen Schritt. Zum Umschreiben der Links durch «Pretty URLs» siehe «Zusätzlich geprüft» |
+| 6 Gross- und Kleinschreibung | erfüllt, mit Hinweis | `/Notfallkarte-Zuerich-Psychische-Krise.pdf` → 301 `/index.html`, `/VERSTEHEN` → 301 `/verstehen`. Die durchgehend klein geschriebene Variante `/notfallkarte-zuerich-psychische-krise.pdf` antwortet mit 404 (Aufgefallen Nr. 6) |
+| 7 404 in der Tiefe | erfüllt | `/a/b/c` 404: h1 «Diese Seite gibt es nicht», Rubik, Logo, Absenderin (Foto) |
+| 8 404 für `/404` und Repository-Dateien | erfüllt | `/404`, `/README.md`, `/CLAUDE.md`, `/netlify.toml`, `/_redirects`, `/_headers`: je 404; `/404.html` 200 |
+| 9 Konsole und Kopfzeilen | erfüllt für die Website | Kopfzeilen von `/verstehen` wie `_headers`: Content-Security-Policy `default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; … frame-ancestors 'none'`, `referrer-policy: no-referrer`, `permissions-policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()`, `x-frame-options: DENY`, `x-content-type-options: nosniff`; dazu von Netlify `strict-transport-security` und auf der Vorschau `x-robots-tag: noindex`. Konsole: je Seite 4 Meldungen (17 Seiten, 68), alle ausgelöst durch einen Block, den Netlify auf Vorschauen vor `</body>` einfügt: `<div data-netlify-deploy-id=… style="position:fixed">` mit `<script async src="/.netlify/scripts/cdp">`. Gemeldet werden das `style`-Attribut dieses Blocks (`style-src-attr`, Zeile 117 der ausgelieferten Seite, die Zeile des Blocks), der Rahmen `app.netlify.com` (`frame-src`) und zwei Hinweise der Permissions-Policy (Kamera, Mikrofon). Gegenprobe mit gesperrtem `/.netlify/`: je Seite nur noch das `style`-Attribut des Blocks und die gesperrte Anfrage selbst. Aus der Website selbst: 0 Verstösse. Die Produktion (React) enthält den Block nicht (`grep` auf der Startseite: 0) |
+| 10 `/verstehen/` (Codex P1) | erfüllt, Befund widerlegt | `/verstehen/` → 301 `/verstehen` → 200; im Browser Endadresse `/verstehen` mit Schrift, Logo und Absenderin (Foto). Netlify leitet hier vom Schrägstrich weg, nicht zu ihm hin; die relativen Pfade lösen sich richtig auf. Thread in #659 mit diesem Beleg beantwortet und geschlossen |
 
-Erst danach ist Z31-W3-2 prüfbar. **#659 darf so nicht gemergt werden.** Ob die Produktion nach einem Merge die neue Fassung zeigen würde, ist ungeklärt.
+**Zusätzlich geprüft:**
 
-**Nachtrag, Neubau mit geleertem Cache:** Die Fachstelle hat die Vorschau neu bauen lassen (Deploy `6acd0d62f6d6ec4728458a6c`, 16:40 UTC). Der Deploy ist fehlgeschlagen: «Failed during stage 'building site': Build script returned non-zero exit code: 2».
-- Die `netlify.toml` des Branchs (auf GitHub geprüft: im Stamm, `publish = "."`, Build-Befehl nur `echo`) kann das nicht auslösen.
-- Netlify führt also einen anderen Build-Befehl aus, vermutlich den der React-Fassung aus den Projekteinstellungen. Die früheren Vorschauen kamen aus dem Build-Cache der alten Fassung.
-- Ein Merge würde voraussichtlich auch den Produktions-Build scheitern lassen; Netlify behielte dann die bisherige Produktion.
-- Zum Beheben nötig: das Deploy-Log und die Build-Einstellungen des Netlify-Projekts (Base directory, Build command, Publish directory, Pfad der Konfigurationsdatei). Beides ist über die vorhandene Netlify-Verbindung nicht lesbar.
-- Der Schutz der Vorschauen war danach aus (Einstellung der Fachstelle).
+- **Links auf der Vorschau:** 18 Seiten (die 17 Seiten und `/a/b/c`), 451 Verweise auf 131 verschiedene Ziele. 450 antworten mit 200, ohne Umleitung, und jeder Anker steht im Ziel. Der eine Rest ist der Sprunglink `#main-content` der 404-Seite auf sich selbst (Status 404 erwartet).
+- **Ausgeliefert gegen Export:** Alle 17 Seiten weichen roh vom Export ab. Nach Abzug von drei Eingriffen durch Netlify sind alle 17 gleich:
+  - der Vorschau-Block vor `</body>` (oben Nr. 9)
+  - «Pretty URLs»: Seitenlinks ohne `.html` und ab dem Stamm, z. B. `verstehen.html` → `/verstehen`, `index.html` → `/`, `diagnose.html#abklaerung` → `/diagnose#abklaerung`; auf der 404-Seite, deren Links schon im Export ab dem Stamm stehen, `/verstehen.html` → `/verstehen`
+  - die umgeschriebenen `<a>`-Tags mit einfachen Anführungszeichen und neu geordneten Attributen
+- **Unverändert ausgeliefert:** die Pfade zu CSS, Skript, Logo und Schriften (relativ) und `<link rel="canonical">` (z. B. `https://borderline-angehoerige.netlify.app/verstehen.html`).
+- **Fremde Anfragen:** 0 auf allen 17 Seiten; fehlgeschlagene Anfragen ausser `/.netlify/`: 0.
+
+**Folgerung:** Z31-W3-2 ist auf der Vorschau ohne blockierenden Befund geprüft, von der bauenden Sitzung. Offen sind die Entscheide zu «Pretty URLs» und zum Schutz der Vorschauen und die Prüfung der Produktion nach dem Merge. **#659 bleibt ungemergt** bis zu den Schlussprüfungen.
 
 ### Etappe 3-2: Visualisierungs-Check
 
-Keine Abbildung, kein Text und keine Zeile des Plans geändert. Der Export übernimmt `<main>` unverändert (oben), die Figuren also auch. Freundin-Test entfällt.
+Keine Abbildung, kein Text und keine Zeile des Plans geändert. Der Export übernimmt `<main>` unverändert (oben), die Figuren also auch; Netlify ändert in `<main>` nur die Form der Links. Freundin-Test entfällt.
 
 ### Etappe 3-2: Entscheide der bauenden Sitzung (zur Prüfung)
 
 1. **Branchname ohne `claude/`.** Im Repository `borderline-angehoerige` erstellt `auto-merge-claude.yml` für jeden Push auf `claude/**` einen PR gegen `main` und mergt ihn, wenn die Prüfungen durchlaufen. Das hiesse Veröffentlichung. `CLAUDE.md` des Ziel-Repositorys verlangt `claude/<beschreibung>-<Zeitstempel>`. Übernommen ist der Zeitstempel, der doppelte Namen verhindert; das Präfix nicht.
 2. **Workflows entfernt.** Sie gehören zur React-Fassung (pnpm, Tests, visuelle Regression) und würden im PR rot laufen. Ohne die Datei auf dem Branch kann auch der Auto-Merge-Workflow für ihn nicht starten. Erhalten sind sie in `react-archiv` und auf `main`.
-3. **404 für Dateien des Repositorys.** Netlify liefert alles im Stamm aus. Drei Regeln in `netlify.toml` sperren `README.md`, `CLAUDE.md` und `netlify.toml`; Seiten und Weiterleitungen sind davon nicht berührt.
-4. **`CLAUDE.md` behalten, `README.md` neu.** `CLAUDE.md` enthält die Konventionen des Ziel-Repositorys, unabhängig von React. Das alte `README.md` beschrieb die React-Fassung; das neue nennt Quelle, Entstehung und Stand, ohne Telefonnummer.
-5. **`react-archiv` aus `main`.** `main` ist die veröffentlichte Fassung (Deploy `6acacec…`). Die übrigen elf Branches des Repositorys (`codex/…`, `copilot/…`) bleiben unberührt.
+3. **Export im Unterordner `site/`** (von der bauenden Sitzung vorgeschlagen, von der Fachstelle entschieden). Einen Publish-Ordner im Stamm übernimmt Netlify nicht aus der `netlify.toml` (Verlauf Nr. 3). Nebenwirkung: `README.md`, `CLAUDE.md` und `netlify.toml` liegen ausserhalb des Publish-Ordners. Die drei 404-Regeln für sie sind deshalb entfallen.
+4. **`CLAUDE.md` behalten, `README.md` neu.** `CLAUDE.md` enthält die Konventionen des Ziel-Repositorys, unabhängig von React. Das alte `README.md` beschrieb die React-Fassung; das neue nennt Quelle, Entstehung, Stand und Aufbau, ohne Telefonnummer.
+5. **`react-archiv` aus `main`.** `main` ist die veröffentlichte Fassung. Die übrigen elf Branches des Repositorys (`codex/…`, `copilot/…`) bleiben unberührt.
 6. **Entwurfsmodus.** Der Export mit `--production` ist gesperrt. Der Entwurf zeigt in der Fusszeile jeder Seite «Redaktioneller Status: Entwurf – fachliche Prüfung ausstehend» (`editorialStatus`). Vor dem Merge wird neu mit `--production` exportiert.
+7. **Codex P1 ohne Änderung.** `tools/export.mjs` bleibt bei relativen Pfaden: Auf der Vorschau leitet Netlify `/verstehen/` auf `/verstehen` um (Punkt 10).
+8. **Netlify-Einstellungen nicht geändert,** ausser dem vereinbarten kurzen Ausschalten des Schutzes. «Pretty URLs», Build-Einstellungen und Schutz der Vorschauen entscheidet die Fachstelle (Aufgefallen Nr. 2 bis 4).
 
 ### Etappe 3-2: Aufgefallen, nicht geändert
 
-1. **37 und 4 Regeln:** Die Zusammenfassung des Vorschau-Deploys nennt genau die Zahlen des aktuellen Produktions-Deploys der React-Fassung, beide mit dem Vermerk «All files already uploaded by a previous deploy with the same commits». Der Deploy meldet aber «No functions deployed» und kein Framework, wie es zum neuen Branch passt. Ob Netlify die neue `netlify.toml` und `_redirects` anwendet, zeigt erst die Vorschau (oben Nr. 1, 2 und 8). Wenn nicht: die Build-Einstellungen des Netlify-Projekts prüfen (Base directory, Publish directory, Build-Cache leeren und neu bauen). Zweiter Deploy `6acd09958fdf9be93e413bf2` (Commit `e5c8441`): wieder 37 und 4. Die Prüfung der Vorschau bestätigt die alte Fassung (unten); die Zahlen sind also echt.
-2. **Vorschau nur mit Team-Anmeldung:** Das Netlify-Projekt verlangt für alle Deploys ausser der Produktion die Anmeldung im Team. Wer prüft, braucht ein Konto im Team.
-3. **`siteUrl`** (Z31-W3-4): `https://borderline-angehoerige.netlify.app` ist die Produktionsadresse desselben Netlify-Projekts. Kanonische Links und `sitemap.xml` stimmen deshalb nach dem Merge. Auf der Vorschau zeigen sie auf die Produktionsadresse.
-4. **Schriftlizenz:** Der Export enthält die Rubik-Dateien, aber nicht die Lizenz (OFL, im Profil unter `licenses/`). Das betrifft `tools/export.mjs` im Profil, nicht diese Website.
-5. **Netlify-Funktion `material-download`:** Sie entfällt mit der React-Fassung. `/api/material-download/*` leitet laut `_redirects` auf die Startseite.
-6. **Codex-Review von #659** (drei Befunde):
+1. **Zahlen der ersten Deploys:** 37 Weiterleitungs- und 4 Header-Regeln meldeten die ersten beiden Vorschauen (`6acd06551b118d9d720307c8`, `6acd09958fdf9be93e413bf2`). Das sind die Zahlen der alten Konfiguration, wie bei der Produktion. Ursache war der Publish-Ordner (Verlauf Nr. 3). Der dritte Deploy meldet 86 und 1, wie erwartet.
+2. **Schutz der Vorschauen:** Bis zur Prüfung verlangte das Netlify-Projekt für alle Deploys ausser der Produktion die Anmeldung im Team. Jetzt ist der Schutz aus (Kurzfassung Nr. 4). Wer die Vorschau-Adresse kennt, sieht den Entwurf.
+3. **«Pretty URLs» in den Netlify-Einstellungen** (Nachbearbeitung der Assets): Netlify schreibt die Seitenlinks beim Ausliefern um (oben). Folgen:
+   - Ausgeliefert wird nicht Zeichen für Zeichen der Export, den Gate und Prüfungen sehen.
+   - Jede Seite ist unter zwei Adressen erreichbar (`/verstehen` und `/verstehen.html`). Kanonische Adresse und `sitemap.xml` nennen `.html`, die Links die Adresse ohne Endung.
+   - Funktional ohne Befund (450 von 450).
+   - Ausgeschaltet liefert Netlify den Export unverändert aus; die Links bleiben dann relativ mit `.html` (lokal geprüft: 157 Linkziele).
+   - Entscheid der Fachstelle; für W3 und R1 vorzulegen.
+4. **Build-Einstellungen des Netlify-Projekts:** Sie nennen vermutlich weiterhin Build-Befehl und Publish-Ordner der React-Fassung (`dist/public`, lesbar nur im Netlify-Projekt). Die `netlify.toml` überschreibt beides; auf der Vorschau ist das belegt. Vorschlag:
+   - nach dem Merge die Produktion mit denselben Prüfungen wie die Vorschau prüfen (ohne den Vorschau-Block)
+   - scheitert der Deploy, behält Netlify die bisherige Produktion; ein fehlerhafter Deploy lässt sich durch erneutes Veröffentlichen des vorherigen zurücknehmen
+   - die Projekteinstellungen an die neue Fassung angleichen (Publish-Ordner `site`, kein Build-Befehl), damit sie nicht mehr widersprechen
+5. **`siteUrl`** (Z31-W3-4): `https://borderline-angehoerige.netlify.app` ist die Produktionsadresse desselben Netlify-Projekts. Kanonische Links und `sitemap.xml` stimmen deshalb nach dem Merge. Auf der Vorschau zeigen sie auf die Produktionsadresse.
+6. **PDF-Adresse in Kleinschreibung:** `/notfallkarte-zuerich-psychische-krise.pdf` antwortet mit 404; die Regel für `/Notfallkarte-Zuerich-Psychische-Krise.pdf` greift hier nur in der Schreibweise der Regel. Die alte Fassung verwies nur auf die Schreibweise mit Grossbuchstaben (`git grep` in `f46038b`: 13 Dateien mit dieser Schreibweise, 0 mit einer anderen). Keine Änderung nötig.
+7. **Schriftlizenz:** Der Export enthält die Rubik-Dateien, aber nicht die Lizenz (OFL, im Profil unter `licenses/`). Das betrifft `tools/export.mjs` im Profil, nicht diese Website.
+8. **Netlify-Funktion `material-download`:** Sie entfällt mit der React-Fassung. `/api/material-download/*` leitet laut `_redirects` auf die Startseite.
+9. **Codex-Review von #659** (drei Befunde):
    - umgesetzt in `e5c8441`: `.gitignore` für ältere Checkouts (P2) und `/404` mit Status 404 (P2)
-   - offen: P1, relative Pfade unter einer Adresse mit Schrägstrich am Ende. Netlify normalisiert nach meinem Verständnis nur Ordner (`x/index.html`) auf den Schrägstrich, nicht einzelne Dateien wie `verstehen.html`; prüfbar nur auf der Vorschau (oben Nr. 10). Bestätigt es sich, gehört die Korrektur in `tools/export.mjs` des Profils (Pfade ab dem Stamm oder `<base href="/">`), nicht von Hand in den Export.
+   - P1 (relative Pfade unter einer Adresse mit Schrägstrich am Ende): auf der Vorschau widerlegt (Punkt 10); Thread mit Beleg beantwortet und geschlossen
 
 **Stand 12.10.2026 · Freigabe 2c und 3-1 eintragen · bauende Sitzung (Claude Code).** Umgesetzt ist `FREIGABE-ETAPPE-2C-3-1.md` (Entscheide der Fachstelle vom 12.10.2026: Etappen 2c und 3-1 als Ganzes freigegeben, letzte Anpassungen, 13 Verweissätze auf den freigegebenen Seiten). Grundlage ist `borderline-umbau` am Stand `55e98cb`, dazu der Auftrag selbst (`0e6b119`); gearbeitet auf dem Branch `claude/dazzling-mendel-3v1pwo`. Geändert sind nur:
 
