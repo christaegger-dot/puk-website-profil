@@ -5119,7 +5119,7 @@ Nach jedem Bau ohne Nachfrage ausfüllen: Visualisierungs-Check wie unten, mit B
 
 1. **Keine Prüfstufe abgeschlossen.** Das Produktionsgate blockiert weiter mit `review-report` (W1 bis R3 offen). Erwartet.
 2. **Nachprüfung NSK-1 bis NSK-3** durch eine Sitzung, die nicht gebaut hat, ist nicht erfolgt; die Fachstelle hat ohne sie freigegeben.
-3. **Datum der Fusszeile:** Die Freigabe kam am 13.10.2026 kurz nach Mitternacht Zürcher Zeit (nach UTC noch am 12.10.2026). Eingetragen ist das Zürcher Datum. Soll die Fusszeile den 12.10.2026 nennen, ändert sich nur `editorialStatus`.
+3. **Datum der Fusszeile:** Die Freigabe kam am 13.10.2026 kurz nach Mitternacht Zürcher Zeit (nach UTC noch am 12.10.2026). Eingetragen ist das Zürcher Datum; die Fachstelle hat den 13.10.2026 auf Rückfrage bestätigt. Erledigt.
 4. **Weiter offen vor der Veröffentlichung:**
    - die rechtliche Prüfung
    - SPZ-F-21
