@@ -90,7 +90,7 @@ Dazu 5 leichte Befunde zu Bericht und Abgleich. Die erste und zweite Prüfrunde 
 **Fachliche Entscheide im Auftrag der Fachstelle durch Claude; nicht von einer Person der Fachstelle geprüft.**
 
 - **Dokument:** `ENTSCHEIDE-SCHLUSSPRUEFUNG.md` mit Begründung und Beleg je Frage, den Wortlauten, der Liste «Neue Sätze zur Freigabe», den Handlungen für die Fachstelle und den Folgen für den Korrekturauftrag.
-- **Zwei Fassungen:** Eine andere Entscheidsitzung hat dieselben Fragen unabhängig entschieden (PR #59). Nach einem Vergleich sind hier SPZ-F-7, -10 und -27 berichtigt. Die Fachstelle hat am 12.10.2026 entschieden, dass diese Fassung gilt; PR #59 ist ohne Merge geschlossen.
+- **Zwei Fassungen:** Eine andere Entscheidsitzung hat dieselben Fragen unabhängig entschieden (PR #59). Nach einem Vergleich sind hier SPZ-F-7, -10 und -27 berichtigt. Die Fachstelle hat am 12.10.2026 entschieden, dass diese Fassung gilt; PR #59 war vorher schon auf `main` gemergt worden (`e811be1`, 12.10.2026, 18:51 UTC); mit dem Merge von PR #60 (`3cc979b`) ersetzt diese Fassung die von #59. **Der Korrekturauftrag `KORREKTUR-SCHLUSSPRUEFUNG.md` (SP-K) kam mit #59 und setzt dessen Entscheide um. Er gilt nicht und wird nicht ausgeführt.** Ein neuer Korrekturauftrag nach Abschnitt 6 dieser Fassung entsteht in einer anderen Sitzung, nicht in der Entscheidsitzung.
 - **Prüfauftrag (SPZ-F-1):** `PRUEFAUFTRAG-SCHLUSSPRUEFUNG.md` gilt mit der Delegation vom 12.10.2026 als bestätigt.
 - **Entschieden (38 von 39):**
   - keine Änderung (16): SPZ-F-1, -7, -9, -11, -12, -16, -17, -20, -23, -24, -25, -26, -28, -29, -31, -39
