@@ -61,10 +61,10 @@ Keine Fragen und kein Prüfbedarf. Der Entscheid «Für W1-39 und W3-13: umsetze
   - SGPP Teil 1, S. 7 gegen «Verwendung: Risikofaktoren, gefährliche Mittel sichern.» auf `begleiten`;
   - in NVL Kapitel 12 nachlesen, ob «Äusserungen über den Tod, über Sinnlosigkeit oder darüber, anderen nur eine Last zu sein» und «starker Rückzug, mehr Alkohol oder Drogen» dort stehen; wenn nicht, Prüfbedarf an die Fachstelle (Bestätigung als Fachwissen wie in 1 e). Kein Befund (W1, Prüfrunde 11, Punkt 4).
 
-  Ohne neuen Befund setzt die Sitzung, die das nachholt, W1 und W3 auf «erledigt».
+  Ohne neuen Befund setzt die Sitzung, die das nachholt, W1 und W3 auf «erledigt». Auftrag: `PRUEFAUFTRAG-R3.md`, Teil A (auf Wunsch der Fachstelle geschrieben am 12.10.2026 von der neunten Prüfsitzung).
 - **Vor der Veröffentlichung:** «Angaben zu den Angeboten: Stand 12.10.2026.» bleibt der letzte Absatz von `rechte-und-angebote` › `angebote`; sonst den Satz auf `je-nach-rolle` («… am Schluss steht dort auch der Stand der Angaben.») anpassen. Liegt die Veröffentlichung später als der Stand, die Angebote kurz nachprüfen und das Datum nachführen.
 - **Lesetest mit Angehörigen,** wo möglich trialogisch (R2 ersetzt ihn nicht).
-- **R3** durch eine Sitzung, die nichts gebaut, korrigiert oder entschieden hat (`guidelines/00-pre-release-audits.md`), mit Export und Ziel-Adresse, wenn W1, W3 und Bedienung abgeschlossen sind.
+- **R3** durch eine Sitzung, die nichts gebaut, korrigiert oder entschieden hat (`guidelines/00-pre-release-audits.md`), mit Export und Ziel-Adresse, wenn W1, W3 und Bedienung abgeschlossen sind. Auftrag: `PRUEFAUFTRAG-R3.md` (Teil A Prüfung am Original, Teil B Ergebnisse der realen Tests, Teil C R3); für Teil C empfiehlt er der Fachstelle, den Export vorher als Entwurfs-Deploy unter der Ziel-Adresse bereitzustellen (Punkte 17 und 21).
 
 **Erledigt mit dieser Nachprüfung:** W1-39 und W3-13; S wieder erledigt. Früher erledigt und nachgeprüft: W1-F-21, W1-09 Rest, W1-25 (Ausnahmen), W1-31, W1-35 bis W1-38, Stand-Vermerk, BD-09 und W3-10 Rest, R1 Punkt 18 (achte Prüfsitzung); W1-F-15 entfällt; W1-F-19, S-33, V-11, BD-12, K1, W1-33, S-34, W1-34 (Variante 2).
 
@@ -4543,7 +4543,7 @@ Ton (d): unverändert warm und sachlich, keine Schuldzuweisung. Absicherungen (e
 
 ### R3 Freigabe-Audit
 
-Noch nicht durchgeführt (Stand `30cfc92`, neunte Prüfsitzung, 12.10.2026; Auftrag: R3 noch nicht). W1-39 und W3-13 sind nachgeprüft und erledigt (W1, Prüfrunde 11; W3, Prüfrunde 8); S ist wieder erledigt (S, Prüfrunde 9). W1 und W3 haben keinen offenen Befund mehr, bleiben aber offen, weil die sechs Adressen und die Grössen der 7 PDF-Dateien am Original noch nicht von einer Prüfsitzung bestätigt sind: Der Proxy hat sie in der achten und neunten Prüfsitzung gesperrt (Punkt 13). Es fehlen ausserdem die realen Tests (Bedienung). Das Produktionsgate blockiert nur wegen des Prüfberichts (`review-report`). Die Ziel-Adresse wurde nicht abgerufen.
+Noch nicht durchgeführt (Stand `30cfc92`, neunte Prüfsitzung, 12.10.2026; Auftrag: R3 noch nicht). W1-39 und W3-13 sind nachgeprüft und erledigt (W1, Prüfrunde 11; W3, Prüfrunde 8); S ist wieder erledigt (S, Prüfrunde 9). W1 und W3 haben keinen offenen Befund mehr, bleiben aber offen, weil die sechs Adressen und die Grössen der 7 PDF-Dateien am Original noch nicht von einer Prüfsitzung bestätigt sind: Der Proxy hat sie in der achten und neunten Prüfsitzung gesperrt (Punkt 13). Es fehlen ausserdem die realen Tests (Bedienung). Das Produktionsgate blockiert nur wegen des Prüfberichts (`review-report`). Die Ziel-Adresse antwortet am 12.10.2026 um 21.30 UTC mit 404. Auftrag für R3 mit der Prüfung am Original: `PRUEFAUFTRAG-R3.md`.
 
 _Verlauf: Bis zur neunten Prüfsitzung stand hier zuerst der folgende Absatz (Stand `70bc624`, achte Prüfsitzung)._
 
