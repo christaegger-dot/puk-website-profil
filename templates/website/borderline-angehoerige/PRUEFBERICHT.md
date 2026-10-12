@@ -1073,9 +1073,9 @@ Nach jedem Bau ohne Nachfrage ausfüllen: Visualisierungs-Check wie unten, mit B
 | --- | --- | --- |
 | Sicherung der React-Fassung | umgesetzt | Branch `react-archiv` im Repository `borderline-angehoerige`, Commit `f46038b`, gleich wie `main` (`git ls-remote`: beide `f46038b…`) |
 | Export | umgesetzt (Entwurf) | `node tools/export.mjs <ziel>` am Stand `f78aae9`: 17 Seiten, `css/site.css`, 3 Schriftdateien (Rubik 300, 400, 500), `js/interaktion.js`, `assets/` (Logo, Favicon), `_headers`, `sitemap.xml`; Gate draft 0 blockierend, 2 Hinweise. Mit `--production` abgebrochen: 1 blockierend (`review-report`) |
-| Zielstruktur | umgesetzt | Branch `umzug-puk-profil-1791821335`, Commit `8120051`. Der Export steht im Stamm. Entfernt sind 968 Dateien: React-Quellen, Build-Werkzeuge, Tests, QA-Material, Workflows, Netlify-Funktion `material-download`, Handouts und Dokumente des alten Projekts. `CLAUDE.md` ist unverändert, `README.md` neu (Quelle, Entstehung, Stand), `.gitignore` neu |
+| Zielstruktur | umgesetzt | Branch `umzug-puk-profil-1791821335`, Commit `8120051`. Der Export steht im Stamm. Entfernt sind 968 Dateien: React-Quellen, Build-Werkzeuge, Tests, QA-Material, Workflows, Netlify-Funktion `material-download`, Handouts und Dokumente des alten Projekts. `CLAUDE.md` ist unverändert, `README.md` neu (Quelle, Entstehung, Stand), `.gitignore` neu; mit `e5c8441` schliesst sie wieder Abhängigkeiten, Build-Ausgaben und `.env*` aus (Codex-Befund) |
 | `_redirects` | umgesetzt | von Hand in den Stamm kopiert, `cmp` gleich wie `templates/website/borderline-angehoerige/_redirects`; 85 Regeln |
-| `netlify.toml` | ersetzt | statisch: `publish = "."`, Befehl ohne Build; drei Regeln mit 404 für `README.md`, `CLAUDE.md`, `netlify.toml`. Die Weiterleitungen der alten Datei stehen in `_redirects` (`/notfallkarte`, `/soforthilfe` usw. auf die Startseite) |
+| `netlify.toml` | ersetzt | statisch: `publish = "."`, Befehl ohne Build; Regeln mit 404 für `/404` (wie in der alten Datei; Codex-Befund, `e5c8441`) und für `README.md`, `CLAUDE.md`, `netlify.toml`. Die Weiterleitungen der alten Datei stehen in `_redirects` (`/notfallkarte`, `/soforthilfe` usw. auf die Startseite) |
 | Pull Request | offen, Entwurf | christaegger-dot/borderline-angehoerige#659 gegen `main`, Titel mit «NICHT MERGEN» |
 | Vorschau | gebaut, nicht geprüft | Netlify-Deploy `6acd06551b118d9d720307c8`, Zustand «ready», Kontext «deploy-preview»; Checks «Redirect rules» und «Header rules» «success», «Pages changed» «neutral»; Adresse `https://deploy-preview-659--borderline-angehoerige.netlify.app` (mit Team-Anmeldung) |
 | Produktion | unverändert | aktueller Deploy `6acacec096879ee730291803`, Commit `f46038b`, veröffentlicht 10.10.2026 |
@@ -1108,8 +1108,9 @@ Nach jedem Bau ohne Nachfrage ausfüllen: Visualisierungs-Check wie unten, mit B
 5. `/verstehen.html` und `/verstehen`: ob Netlify zusätzlich umleitet («Pretty URLs»).
 6. Gross- und Kleinschreibung: `/Notfallkarte-Zuerich-Psychische-Krise.pdf` → Startseite.
 7. Eine fehlende Adresse in der Tiefe (z. B. `/a/b/c`) zeigt die 404-Seite mit Schrift und Logo.
-8. `/README.md`, `/CLAUDE.md`, `/netlify.toml` antworten mit 404.
+8. `/404`, `/README.md`, `/CLAUDE.md` und `/netlify.toml` antworten mit 404.
 9. Konsole ohne Fehler der Content-Security-Policy; Kopfzeilen nach `_headers`.
+10. `/verstehen/` mit Schrägstrich: Seite mit Schrift, Logo und funktionierenden Links? Die Seiten verweisen relativ (`css/site.css`); unter `/verstehen/` lösen sich diese Pfade unter dem Ordner auf (Codex-Befund P1, Thread in #659 offen).
 
 ### Etappe 3-2: Visualisierungs-Check
 
@@ -1131,6 +1132,9 @@ Keine Abbildung, kein Text und keine Zeile des Plans geändert. Der Export über
 3. **`siteUrl`** (Z31-W3-4): `https://borderline-angehoerige.netlify.app` ist die Produktionsadresse desselben Netlify-Projekts. Kanonische Links und `sitemap.xml` stimmen deshalb nach dem Merge. Auf der Vorschau zeigen sie auf die Produktionsadresse.
 4. **Schriftlizenz:** Der Export enthält die Rubik-Dateien, aber nicht die Lizenz (OFL, im Profil unter `licenses/`). Das betrifft `tools/export.mjs` im Profil, nicht diese Website.
 5. **Netlify-Funktion `material-download`:** Sie entfällt mit der React-Fassung. `/api/material-download/*` leitet laut `_redirects` auf die Startseite.
+6. **Codex-Review von #659** (drei Befunde):
+   - umgesetzt in `e5c8441`: `.gitignore` für ältere Checkouts (P2) und `/404` mit Status 404 (P2)
+   - offen: P1, relative Pfade unter einer Adresse mit Schrägstrich am Ende. Netlify normalisiert nach meinem Verständnis nur Ordner (`x/index.html`) auf den Schrägstrich, nicht einzelne Dateien wie `verstehen.html`; prüfbar nur auf der Vorschau (oben Nr. 10). Bestätigt es sich, gehört die Korrektur in `tools/export.mjs` des Profils (Pfade ab dem Stamm oder `<base href="/">`), nicht von Hand in den Export.
 
 **Stand 12.10.2026 · Freigabe 2c und 3-1 eintragen · bauende Sitzung (Claude Code).** Umgesetzt ist `FREIGABE-ETAPPE-2C-3-1.md` (Entscheide der Fachstelle vom 12.10.2026: Etappen 2c und 3-1 als Ganzes freigegeben, letzte Anpassungen, 13 Verweissätze auf den freigegebenen Seiten). Grundlage ist `borderline-umbau` am Stand `55e98cb`, dazu der Auftrag selbst (`0e6b119`); gearbeitet auf dem Branch `claude/dazzling-mendel-3v1pwo`. Geändert sind nur:
 
