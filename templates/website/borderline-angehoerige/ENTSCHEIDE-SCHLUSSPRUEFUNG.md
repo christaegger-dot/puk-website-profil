@@ -221,13 +221,13 @@ Je Änderung: Seite › Abschnitt, Wortlaut heute, Wortlaut neu, Quelle. Die Wor
 
 ## 5. Handlungen für die Fachstelle
 
-Reihenfolge im Ablauf: **vor der Korrektur** – nichts. **Während Korrektur und Nachprüfung** – Netlify unverändert lassen. **Nach der Nachprüfung, vor R1** – 5.4. **Vor R3** – 5.5. **Nach R3, vor dem Merge** – 5.1, 5.2, 5.3 a. **Nach dem Merge** – 5.3 b.
+Reihenfolge im Ablauf: **vor der Korrektur** – nichts. **Während Korrektur und Nachprüfung** – Netlify unverändert lassen. **Nach der Nachprüfung, vor R1** – 5.1 Nr. 3 (Release-Kandidat auf die Vorschau), 5.4, 5.5 und SPZ-F-21. **Nach R3, vor dem Merge** – 5.1 Nr. 4 und 5, 5.2, 5.3 a. **Nach dem Merge** – 5.3 b.
 
 ### 5.1 PR #659 (SPZ-F-38)
 
 1. Erledigt: Der PR ist seit 12.10.2026, 18:19 UTC ein Entwurf.
 2. Er bleibt ein Entwurf, bis R3 «Go» ergibt und `node tools/gate.mjs --production` ohne blockierende Befunde besteht.
-3. Vor dem Merge den Export mit `--production` neu erzeugen (Fusszeile nach SPZ-F-2) und auf den Umzugs-Branch übertragen; danach die Vorschau noch einmal ansehen.
+3. **Vor den realen Tests und vor R1:** Sobald Fusszeile und Plan nach SPZ-F-2 und SPZ-F-3 gesetzt sind (Abschnitt 6, Schritt 3), erzeugt eine bauende Sitzung den Export mit `--production` und überträgt ihn auf den Umzugs-Branch. Das ist der Release-Kandidat. Die realen Tests (5.4) und R1 bis R3 prüfen genau diesen Stand auf der Vorschau. Ändert sich danach etwas (z. B. nach einem Befund aus R1 bis R3), wird neu exportiert, und die betroffenen Prüfungen werden auf dem neuen Stand wiederholt. Gemergt wird nur der Stand, für den R3 «Go» ergab.
 4. In der Beschreibung von #659 festhalten: Mit dem Merge entfallen auf `main` die fünf Workflows und `netlify/functions/material-download.ts`; sie bleiben in `react-archiv` (`f46038b`).
 5. Erst dann «Ready for review» und Merge, durch die Fachstelle.
 
@@ -246,7 +246,7 @@ a) **Vor dem Merge:**
 4. Diese Einstellungen in der Beschreibung von #659 festhalten.
 
 b) **Nach dem Merge:**
-1. Eine Prüfsitzung, die weder gebaut noch entschieden hat, prüft die Produktion: die zehn Punkte von Z31-W3-2, alle 85 Weiterleitungen, die Kopfzeilen gegen `_headers`, `/verstehen/` → `/verstehen` und dass die Seiten ihre Stile laden.
+1. Eine Prüfsitzung, die weder gebaut noch entschieden hat, prüft die Produktion: die zehn Punkte von Z31-W3-2, alle Regeln des gemergten `_redirects` (heute 85, dazu die neuen Regeln aus SPZ-54), die Kopfzeilen gegen `_headers`, `/verstehen/` → `/verstehen` und dass die Seiten ihre Stile laden.
 2. Ergebnis mit Beleg in `PRUEFBERICHT.md`.
 3. Bei einem Befund: Fachstelle entscheidet über Rücknahme oder Korrektur.
 
@@ -266,14 +266,14 @@ b) **Nach dem Merge:**
   | VO-iOS | VoiceOver + Safari, iPhone | empfohlen |
   | TB | TalkBack + Chrome, Android | empfohlen |
 
-- **Aufgaben:** A1 bis A14 aus dem Vorschlag von Prüfung 2 (`PRUEFBERICHT.md` Z. 1812–1825), unverändert. Dazu aus Prüfung 1 (Z. 3343–3344):
+- **Aufgaben:** A1 bis A14 aus dem Vorschlag von Prüfung 2 (`PRUEFBERICHT.md` Z. 1812–1825), mit einer Anpassung an die Korrektur: In A10 heisst der Link auf `404` «Zur Startseite» statt «Zur Übersicht» (SPZ-22, W2); erwartet wird, dass er zu `index` führt. Dazu aus Prüfung 1 (Z. 3343–3344):
   - A15 (T, NV): Fusszeile und Absenderin: «Impressum», «Datenschutz» und der E-Mail-Link der Absenderin sind mit einem Tippen ohne Fehltipp treffbar und mit Tab erreichbar.
   - A16 (NV, VO-mac): `quellen`: Sprung über «Weg durch die Seite», danach beginnt das Lesen an der richtigen Stelle.
 - **Bestanden,** wenn alle Pflichtkombinationen bei ihren Aufgaben kein «nicht bestanden» haben (NV und VO-mac: A1–A11, A14, A16; HK: A13; T: A12, A15). Jede Abweichung wird als Befund mit Seite, Aufgabe und Kombination in `PRUEFBERICHT.md` eingetragen; über Korrekturen entscheidet die Fachstelle.
 
 ### 5.5 Rechtliche Prüfung (SPZ-F-13, SPZ-F-14; dazu S-Nr. 5 und 6, Z31-F-9, Z31-F-19, NK-F-8)
 
-- **Wann:** vor R3. Bis zum Ergebnis bleiben die heutigen Texte.
+- **Wann:** nach der Nachprüfung, vor R1, zusammen mit SPZ-F-21. Die Fachstelle hatte «bis vor R3» festgelegt (`PRUEFBERICHT.md` Z. 77–79); vor R1 ist strenger und vermeidet, dass R1 und R2 Texte prüfen, die sich danach noch ändern (Cookie-Satz, Urheberrecht, Meta-Beschreibung W6). Ergibt die Prüfung neue Wortlaute, setzt sie eine bauende Sitzung um, bevor der Release-Kandidat entsteht (5.1 Nr. 3). Bis zum Ergebnis bleiben die heutigen Texte.
 - **Zusätzlich aufnehmen:**
   - **Cookies (SPZ-F-13).** Vorschlag, aus dem Bestand: «Die Website setzt selbst keine Cookies und verwendet keine Dienste, die Besuche auswerten oder Werbung zeigen. Beim geprüften Seitenaufruf wurde auch kein Cookie durch den Hosting-Dienst gesetzt. Diese einzelne Beobachtung ist keine Zusicherung für alle Seitenaufrufe oder zukünftigen Hosting-Konfigurationen.» (Bestand `datenschutz.md` Z. 107, Satz 2 und 3 wörtlich; im ersten Satz kommt «selbst» dazu.)
   - **Urheberrecht (SPZ-F-14).** Vorschlag: «Die Abbildungen dürfen im Rahmen der Angehörigenberatung und für den persönlichen Gebrauch verwendet werden.» (Bestand `impressum.md` Z. 101; «Infografiken und Handouts» → «Abbildungen», weil es keine Handouts mehr gibt). Zu klären ist, ob die Fachstelle auch Texte freigeben will und ob angepasste Modelle Dritter (z. B. DEAR nach Linehan 2015) ausgenommen werden müssen.
@@ -285,6 +285,7 @@ b) **Nach dem Merge:**
 Leitlinien, Starter und Komponenten werden in diesem Repository nicht geändert (`CLAUDE.md`). Die Vorschläge gehen an das Design-System-Artefakt «PUK Zürich Website-Profil»:
 
 1. **Druckregel (SPZ-F-32):** Ergänzen: «Ist eine Darstellung mit ihrer Liste länger als eine A4-Seite, stehen Titel, Kernaussage und der Anfang der Darstellung auf einer Seite; die Darstellung darf danach umbrechen, die Kennzeichnung folgt direkt auf das Ende der Darstellung. Eine leere Seite davor entsteht nicht.» In `components/bundle.css` dafür `break-inside: avoid` nur auf Titel und Kernaussage, nicht auf die ganze Figur, wenn sie länger als eine Seite ist.
+   **Bis das Profil geändert ist:** Die Abweichung bei `v-vs-anspannung` und `v-bz-sichten` gilt als begründete Ausnahme. Grund: Die Figuren sind mit ihrer Liste länger als eine A4-Seite; die heutige Regel ist für sie nicht einhaltbar (SP2-B-1). Die Korrektur trägt sie im Prüfbericht als begründete Ausnahme ein («Ergebnis jeder Stufe … begründete Ausnahmen», `00-ablauf-pruefung-und-freigabe.md`, «Inhaltsverantwortung und Status»). R1 prüft gegen die Regel und die eingetragene Ausnahme. Die Profiländerung leitet die Fachstelle im Design-System-Artefakt ein; ist sie vor R1 als neues Paket eingespielt, gilt die neue Regel.
 2. **E-Mail-Link der Absenderin (SPZ-F-34):** Die Absenderin als eigenständige Aktion behandeln, weil sie auf jeder Seite der einzige Kontaktweg ist: Zielhöhe 44 px über den Innenabstand des Links, ohne die Zeile sichtbar zu verändern.
 3. **Fusszeile und Gate (SPZ-1, SPZ-F-2):** `gate.mjs --production` blockiert, wenn `editorialStatus` «Entwurf» enthält oder kein Datum nennt. Die Vorlage im Starter nennt das Format «Fachlich freigegeben am TT.MM.JJJJ».
 4. Die übrigen Profilbefunde der Schlussprüfung: SPZ-34 (Webtexte des Starters), SPZ-39 (Ziffernkreise wachsen nicht mit), SPZ-40 (Trennung langer Wörter), SPZ-47 (`gate.html`), SPZ-48 (Kopfzeilen: CSP, HSTS, `Cache-Control`), SPZ-49 (Lizenztext der Schrift im Export), SPZ-50 (C2PA-Manifest im Logo), SPZ-51 (ungenutztes CSS), SPZ-53 (`robots.txt` mit Hinweis auf `sitemap.xml` im Export).
@@ -296,7 +297,7 @@ Leitlinien, Starter und Komponenten werden in diesem Repository nicht geändert 
 1. **Korrektur** durch eine bauende Sitzung, nach einem Korrekturauftrag aus diesem Abschnitt. Abgleich: Status mit «(SPZ-E)», Bemerkung mit der ID; neue Werte in `abgleich/README.md`; `node abgleich/pruefe-abgleich.mjs` meldet 0 ohne Fundstelle.
 2. **Nachprüfung** durch eine Sitzung, die weder gebaut, noch geprüft, noch entschieden hat.
 3. **Freigabe eintragen:** neue Freigabe der zwei Abbildungen (Abschnitt 4) durch eine Entscheidsitzung im Auftrag der Fachstelle; danach setzt eine bauende Sitzung `editorialStatus` (SPZ-F-2, W21) und die 98 Textzeilen (SPZ-F-3), baut neu und trägt die Freigabe in den Prüfbericht ein.
-4. Reale Tests (5.4), rechtliche Prüfung und NK-F-3 (5.5), danach R1, R2, R3.
+4. Rechtliche Prüfung (5.5) und SPZ-F-21, Release-Kandidat auf die Vorschau (5.1 Nr. 3), reale Tests (5.4), danach R1, R2, R3. NK-F-3 bis spätestens vor R3, wie von der Fachstelle festgelegt.
 
 ### Wichtige Befunde
 
@@ -333,7 +334,7 @@ Leitlinien, Starter und Komponenten werden in diesem Repository nicht geändert 
 | SPZ-37 | W17 bis W20 |
 | SPZ-38 | «Zwei Sichten»: Schwelle `@container (max-width:560px)` (`borderline.css` Z. 75, 86) in `rem` oder `em`, wie SPZ-2 |
 | SPZ-41 | SPZ-F-30, Wortlaut 3.7 |
-| SPZ-43 | Nur die Schleife: Die Kennzeichnung im Druck an die Darstellung binden (Regel in `borderline.css`, nur mit Tokens), so dass Titel, Kernaussage, Darstellung und Kennzeichnung auf einer A4-Seite stehen. Für `v-vs-anspannung` und `v-bz-sichten` Profilebene (SPZ-F-32) |
+| SPZ-43 | Nur die Schleife: Die Kennzeichnung im Druck an die Darstellung binden (Regel in `borderline.css`, nur mit Tokens), so dass Titel, Kernaussage, Darstellung und Kennzeichnung auf einer A4-Seite stehen. Für `v-vs-anspannung` und `v-bz-sichten`: im Prüfbericht als begründete Ausnahme eintragen, bis das Profil geändert ist (SPZ-F-32, 5.6 Nr. 1) |
 | SPZ-44 | `abgleich/bedienung.mjs`: `404` in `PAGES` aufnehmen |
 | SPZ-46 | SPZ-F-3 (Schritt 3) |
 | SPZ-52 | Im `README.md` der Website die Schritte für den Produktions-Export festhalten: in einen leeren Zielordner exportieren, `_redirects` von Hand kopieren, danach Weiterleitungen und Kopfzeilen auf der Vorschau prüfen |

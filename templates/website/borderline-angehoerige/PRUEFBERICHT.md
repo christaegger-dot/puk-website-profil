@@ -104,7 +104,7 @@ Dazu 5 leichte Befunde zu Bericht und Abgleich. Die erste und zweite Prüfrunde 
 - **Weiter offen vor der Veröffentlichung:**
   - Korrektur nach Abschnitt 6 der Entscheide, danach Nachprüfung durch eine Sitzung, die weder gebaut, noch geprüft, noch entschieden hat
   - Fusszeile und Textzeilen des Plans nach SPZ-F-2 und SPZ-F-3, nach der Nachprüfung
-  - reale Tests (SPZ-F-33), rechtliche Prüfung mit SPZ-F-13 und -14, NK-F-3, SPZ-F-21
+  - vor R1: rechtliche Prüfung mit SPZ-F-13 und -14, SPZ-F-21, der Release-Kandidat auf der Vorschau und die realen Tests (SPZ-F-33); NK-F-3 spätestens vor R3
   - Netlify und PR #659 nach Abschnitt 5 der Entscheide
   - danach R1 bis R3
 - Die Statustabelle bleibt unverändert; jede Stufe bleibt «offen».
