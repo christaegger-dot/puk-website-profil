@@ -16,7 +16,7 @@ Gilt für `templates/website/depression-angehoerige/` am Stand `72560d0`. Belege
 
 **Antwort der Fachstelle vom 12.10.2026:** «alle Vorschläge: OK; Arbeitsheft: wird nich[t] angehängt.» (eingetragen von der bauenden Sitzung)
 
-**Nachtrag der Fachstelle vom 12.10.2026:** «Arbeitsheft: bitte löschen, dies wird nicht thematis[i]ert» und «Rechtsdienst: nicht involviert, löschen!». Auf Rückfrage: W1-31 korrigieren, W1-37 auf den Wortlaut des Gesetzes kürzen, Abbildung «Mit im Boot» freigeben (je «wie empfohlen»). Damit entfallen die Abschnitte 2 und 4; Hinweise darauf in den übrigen Abschnitten sind überholt. Massgebend für offene Punkte ist `PRUEFBERICHT.md`. (eingetragen von der bauenden Sitzung)
+**Nachtrag der Fachstelle vom 12.10.2026:** «Arbeitsheft: bitte löschen, dies wird nicht thematis[i]ert» und «Rechtsdienst: nicht involviert, löschen!». Auf Rückfrage: W1-31 korrigieren, W1-37 auf den Wortlaut des Gesetzes kürzen, Abbildung «Mit im Boot» freigeben (je «wie empfohlen»). Ergänzung vom selben Tag: «Rechtliche Angaben auch löschen» (die Kopfvermerke «Rechtliche Angaben: Stand …» entfallen). Damit entfallen die Abschnitte 2 und 4; Hinweise darauf in den übrigen Abschnitten sind überholt. Massgebend für offene Punkte ist `PRUEFBERICHT.md`. (eingetragen von der bauenden Sitzung)
 
 **Übersicht der Entscheide**
 

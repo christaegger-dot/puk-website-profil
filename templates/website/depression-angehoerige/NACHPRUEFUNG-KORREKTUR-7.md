@@ -1,13 +1,13 @@
 # Prüfauftrag · Depression-Website · Nachprüfung der Korrektur 7 und des Nachtrags
 
-Stand 12.10.2026. Gilt für `templates/website/depression-angehoerige/` auf `main` nach dem Merge des Nachtrags (Abschnitt 3). Für eine **Prüfsitzung**.
+Stand 12.10.2026. Gilt für `templates/website/depression-angehoerige/` auf `main` nach dem Merge des Nachtrags und der Ergänzung (Abschnitt 3). Für eine **Prüfsitzung**.
 
 Die bauende Sitzung der Korrektur 7 hat diesen Auftrag auf Wunsch der Fachstelle geschrieben («Nachprüfung: schreib den konkreten Auftrag»). Er legt Umfang, Bezugsstände, Vorgehen und Form fest, keine erwarteten Ergebnisse.
 
 ## 1. Anlass
 
 - **Korrektur 7** (PR #62, Commit `b07fffb`): Umsetzung von `KORREKTUR-PRUEFUNG-7.md` nach der Antwort der Fachstelle «alle Vorschläge: OK; Arbeitsheft: wird nich[t] angehängt.»
-- **Nachtrag** (Commit nach `8f0630a`, Abschnitt 3): Entscheid der Fachstelle «Arbeitsheft: bitte löschen, dies wird nicht thematis[i]ert» und «Rechtsdienst: nicht involviert, löschen!». Auf Rückfrage: W1-31 korrigieren, W1-37 auf das Gesetz kürzen, Abbildung «Mit im Boot» freigeben.
+- **Nachtrag** (Commits nach `8f0630a`, Abschnitt 3): Entscheid der Fachstelle «Arbeitsheft: bitte löschen, dies wird nicht thematis[i]ert» und «Rechtsdienst: nicht involviert, löschen!», ergänzt um «Rechtliche Angaben auch löschen». Auf Rückfrage: W1-31 korrigieren, W1-37 auf das Gesetz kürzen, Abbildung «Mit im Boot» freigeben.
 - **Stand der Freigabe:** Alle Texte und alle 11 Darstellungen sind fachlich freigegeben. Es gibt keine rechtliche Prüfung. Belege: `PRUEFBERICHT.md` › «Von der Fachstelle entschieden», zwei Einträge vom 12.10.2026.
 - **Ziel:** die betroffenen Stufen nachprüfen und jede Stufe auf «erledigt» setzen, die vollständig belegt ist. Betroffen sind W1, S, Visualisierungs-Check, W3, R1 und R2, dazu der automatische Teil von «Bedienung und Barrierefreiheit».
 - **Nicht Teil dieses Auftrags:**
@@ -38,8 +38,8 @@ Die bauende Sitzung der Korrektur 7 hat diesen Auftrag auf Wunsch der Fachstelle
 | --- | --- | --- |
 | vor der Korrektur | `3cc979b`; der Website-Ordner ist dort gleich wie `76dcf9b` und `72560d0`, ausser `PRUEFBERICHT.md` und `FREIGABE-ENTSCHEIDE.md` | `git show 3cc979b:templates/website/depression-angehoerige/<datei>` |
 | Korrektur 7 | `b07fffb` (PR #62, gemergt als `8f0630a`) | `git show b07fffb` |
-| Nachtrag | der Commit nach `8f0630a` auf diesem Ordner | `git log --oneline 8f0630a..main -- templates/website/depression-angehoerige` |
-| geprüfter Stand | `main` nach Merge des Nachtrags | `git rev-parse HEAD` festhalten; Arbeitsbaum |
+| Nachtrag | die Commits nach `8f0630a` auf diesem Ordner (PR #63 und der Folge-PR mit der Ergänzung «Rechtliche Angaben auch löschen») | `git log --oneline 8f0630a..main -- templates/website/depression-angehoerige` |
+| geprüfter Stand | `main` nach Merge des Nachtrags und der Ergänzung | `git rev-parse HEAD` festhalten; Arbeitsbaum |
 | Auftrag und Entscheide | `KORREKTUR-PRUEFUNG-7.md` (Wortlaut); `FREIGABE-ENTSCHEIDE.md` (Antwortzeilen unter «So antworten Sie»); `PRUEFBERICHT.md` › «Von der Fachstelle entschieden» | im Ordner |
 | Selbstprüfung der bauenden Sitzung | `PRUEFBERICHT.md` › «Umgesetzt nach den Prüfrunden», zwei Einträge vom 12.10.2026; Abschnitt «Selbstprüfung der bauenden Sitzung» | im Ordner |
 
@@ -78,21 +78,21 @@ Kriterien: «Fachliche Qualität und Haltung».
    | K9 | Quellenangaben c1 bis c8 | 5 c | 6 Seiten, siehe Auftrag |
    | K10 | Plan beim Pfad | 5 d | `v-bv-weg` › `statement` |
    | N1 | Arbeitsheft gelöscht, Boot freigegeben | Nachtrag | `begleiten` › Abb. 1 (Kennzeichnung) und Quellen; `v-bg-boot` (`source`, `approvalStatus`); Fusszeile; `$comment` |
-   | N2 | Rechtsvermerke gelöscht | Nachtrag | `rechte-und-angebote`: Kopf, Kennzeichnung Abb. 1; `impressum-datenschutz`: Kopf, «Stand:» am Schluss |
+   | N2 | Rechtsvermerke und Kopfvermerke «Rechtliche Angaben» gelöscht | Nachtrag und Ergänzung | `rechte-und-angebote`: Kopf (Absatz entfällt), Kennzeichnung Abb. 1; `impressum-datenschutz`: Kopf (Absatz entfällt), «Stand: 12.10.2026» am Schluss |
    | N3 | W1-31 korrigiert | Nachtrag | `impressum-datenschutz` › Datenschutz, Eintrag «Schriften und Skripte» |
    | N4 | W1-37 auf das Gesetz gekürzt | Nachtrag | `rechte-und-angebote` › Abb. 1: Kurztext, Merkmal in beiden Spalten, Kurzbeschreibung (`p.puk-sr`); `v-ra-vergleich` › `statement` |
 
 2. **Änderungen ausserhalb des Auftrags?** `git diff 3cc979b <geprüfter Stand> -- templates/website/depression-angehoerige` vollständig lesen. Jede Änderung einem Punkt aus 1 zuordnen. Dazu die drei eigenen Entscheide der bauenden Sitzung bewerten:
    - der Zusatz im `$comment` in Korrektur 7 (mit dem Nachtrag überholt)
-   - das Datum 12.10.2026 in den Stand-Vermerken von `rechte-und-angebote` und `impressum-datenschutz` (Begründung im Eintrag zum Nachtrag)
+   - das Datum «Stand: 12.10.2026» am Schluss von `impressum-datenschutz` (Begründung im Eintrag zum Nachtrag)
    - Hooley und Gotlib ohne Schlusspunkt nach «9(3)»
 3. **Satzvergleich nachrechnen:** gebaute Seiten an `3cc979b` gegen den geprüften Stand, ganzer `body`, alle 10 Seiten.
    - Jede entfallene, geänderte und neue Einheit einem Punkt aus 1 zuordnen.
-   - Gewollt entfallen nur Entwurfsvermerke, «fachliche Freigabe ausstehend», «rechtliche Prüfung ausstehend», der Quelleneintrag zum Arbeitsheft und die in 1 genannten Wortlaute. Sonst darf kein Satz still entfallen.
-   - Mit den Zählungen der bauenden Sitzung vergleichen (Korrektur 7: 46 / 47 Einheiten gegen `3cc979b`; Nachtrag: 24 / 22 gegen `8f0630a`).
+   - Gewollt entfallen nur Entwurfsvermerke, «fachliche Freigabe ausstehend», «rechtliche Prüfung ausstehend», die Kopfvermerke «Rechtliche Angaben: …», der Quelleneintrag zum Arbeitsheft und die in 1 genannten Wortlaute. Sonst darf kein Satz still entfallen.
+   - Mit den Zählungen der bauenden Sitzung vergleichen (Korrektur 7: 46 / 47 Einheiten gegen `3cc979b`; Nachtrag mit Ergänzung: 24 / 20 gegen `8f0630a`).
 4. **Freigaben und Reste:**
    - alle 11 `approvalStatus` «freigegeben»; `editorialStatus`, Fusszeile auf allen 10 Seiten
-   - in `content/` und `site.config.json` kein «Musterentwurf», «ausstehend», «Arbeitsheft», «Wenn dein Partner» und «rechtliche Prüfung» mehr, ausser «keine rechtliche Prüfung» im `$comment`
+   - in `content/` und `site.config.json` kein «Musterentwurf», «ausstehend», «Arbeitsheft», «Wenn dein Partner», «Rechtliche Angaben» und «rechtliche Prüfung» mehr, ausser «keine rechtliche Prüfung» im `$comment`
 5. **W1-31 und W1-37 fachlich:**
    - Stimmt der neue Datenschutzsatz mit dem überein, was die Website tut? Abgleich mit 5.4, Punkt 4.
    - Steht «Auskunft über den Gesundheitszustand» an allen Stellen? Passen die Werte der Spalten («im Kanton Zürich an Bezugspersonen möglich, …», «möglich, im vereinbarten Umfang») und die Quellenzeile zum PatG noch dazu?
@@ -116,7 +116,7 @@ Kriterien: «Sprache und Ton».
 
 - **Alle neuen und geänderten Sätze** aus 5.1, Punkt 3. Dazu gehören:
   - der Satz mit «EKT» und «rTMS» (26 Wörter, in einer Vertiefung)
-  - Kopfvermerke, Stand-Vermerke, Fusszeile, Kennzeichnungen
+  - Kopfvermerk auf `begleiten`, Stand-Vermerke, Fusszeile, Kennzeichnungen
   - Abrufdatum, Linktexte mit «(PDF, 0,3 MB)», die neuen Quellentitel (c3, c4, c7), der Eintrag zu NVL Kapitel 12.1, «Rechtskurse auf promentesana.ch»
   - Datenschutz: Überschrift und zwei Sätze
   - Rechte › Abb. 1: Kurztext und Merkmal
