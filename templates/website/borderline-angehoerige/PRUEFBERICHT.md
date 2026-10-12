@@ -13,12 +13,12 @@ Gehört zur Website in diesem Ordner. Wer den Starter kopiert, übernimmt diese 
 
 | Stufe | Status | Datum | Geprüft durch | Ergebnis |
 | --- | --- | --- | --- | --- |
-| W1 Fachliche Prüfung | offen | 10.10.2026 | Fachstelle Angehörigenarbeit PUK (Freigabe Etappe 1); vierte Prüfrunde: eine Prüfsitzung (Claude, hat nicht gebaut); Fachstelle (Freigabe Etappe 2a); Prüfrunde 2b: eine Prüfsitzung (Claude, hat nicht gebaut); Fachstelle (Freigabe Etappe 2b); Prüfrunde 3-1: eine Prüfsitzung (Claude, hat nicht gebaut); Fachstelle (Freigabe Etappen 2c und 3-1) | Etappe 1 fachlich freigegeben (Abschnitt «Fachliche Freigabe der Fachstelle»); alle 21 Fragen P4-F-1 bis P4-F-21 entschieden. Offen, bis die Seiten von Etappe 2 geprüft und freigegeben sind. Prüfrunde 2a: 2 wichtig, 3 optional; 10 Fragen P2a-F-1 bis P2a-F-10. Etappe 2a (`rolle`, `selbstfuersorge`, Einstiege auf `index`) fachlich freigegeben am 10.10.2026. Prüfrunde 2b (`kommunizieren`, `krise`, Einstieg auf `index`): 4 wichtig, 3 optional; 12 Fragen P2b-F-1 bis P2b-F-12. Nachprüfung 2b-K (Stand `f9e2314`, eine Prüfsitzung, hat weder gebaut noch 2b-K umgesetzt): Korrektur wie beauftragt; 1 wichtig (Liste «Neue Sätze zur Freigabe»), 3 optional; 3 Fragen. Etappe 2b (`kommunizieren`, `krise`, Einstieg auf `index`) fachlich freigegeben am 11.10.2026. Prüfrunde 2c (Stand `7ee24ba`, `genesung`, `unterstuetzung`, `diagnose`, `behandlung`, Einstiege auf `index`; eine Prüfsitzung, hat weder 2c-1 noch 2c-2 gebaut): 2 wichtig, 5 optional; 17 Fragen P2c-F-1 bis P2c-F-17. Prüfrunde 2c, zweite Prüfsitzung (Stand `7ee24ba`): 2 wichtig, 1 optional; 15 Fragen P2c2-F-1 bis P2c2-F-15. Prüfrunde 3-1 (Stand `c898b67`, `fragen`, `quellen`, `ueber`, `impressum-datenschutz`; eine Prüfsitzung, hat nicht gebaut): 70 Aussagen gegen den Bestand; 2 wichtig (Liste «Neue Sätze» unvollständig, ein Halbsatz still entfallen), 2 optional; 6 Fragen P3-F-1 bis P3-F-6. Prüfrunde 3-1, zweite Prüfsitzung (Stand `c898b67`, `fragen`, `quellen`, `ueber`, `impressum-datenschutz`): 10 wichtig, 5 optional; 20 Fragen P3b-F-1 bis P3b-F-20. Prüfrunde 3-1 zusammengeführt (beide Prüfsitzungen, 12.10.2026): 10 wichtig, 6 optional; 22 Fragen Z31-F-1 bis Z31-F-22. Nachprüfung 2c-K und 3-1-K (Stand `f3cb270`, eine Prüfsitzung, hat weder gebaut noch geprüft noch entschieden): beide Korrekturen im Wortlaut der Aufträge umgesetzt, Liste «Neue Sätze zur Freigabe» 3-1-K ohne Lücke; 2 optional (NK31-2, NK31-4), 3 Fragen, darunter die neue Freigabe der Sätze auf den freigegebenen Seiten (NK-F-1). Etappen 2c (`genesung`, `unterstuetzung`, `diagnose`, `behandlung`, Einstiege auf `index`) und 3-1 (`fragen`, `quellen`, `ueber`, `impressum-datenschutz`, `_redirects`) fachlich freigegeben am 12.10.2026; rechtliche Prüfung von Impressum und Datenschutz offen. |
-| W2 Gesamtkohärenz | offen | 10.10.2026 | vierte Prüfrunde | 1 wichtig, 3 optional; offen weiter F-W2-02, F-W2-03 (jetzt P4-F-18, P4-F-19). Prüfrunde 2a: 5 optional. Prüfrunde 2b: 1 wichtig, 3 optional Prüfrunde 2c: 2 optional Prüfrunde 2c, zweite Prüfsitzung: 1 wichtig, 2 optional. Prüfrunde 3-1: 2 wichtig (Erreichbarkeit von `fragen`, `quellen`, `ueber`; Kopf von `fragen`), 2 optional. Prüfrunde 3-1, zweite Prüfsitzung: 2 wichtig, 3 optional. Prüfrunde 3-1 zusammengeführt (beide Prüfsitzungen, 12.10.2026): 2 wichtig, 3 optional. Nachprüfung 2c-K und 3-1-K: V1, V2 und der Verweissatz im Quellenblock stehen wie beauftragt, `fragen`, `ueber` und `quellen` sind von `index` in höchstens zwei Seitenwechseln erreichbar; kein Befund. |
-| S Sprach-Review | offen | 10.10.2026 | vierte Prüfrunde | 6 optional; Lesetest je Abschnitt und Kennzahlen; abschliessbar erst nach W1 und W2. Prüfrunde 2a: 1 wichtig (Länge), 3 optional; 24 Kürzungsvorschläge. Prüfrunde 2b: 4 optional; Längenziel nachgerechnet und erreicht; 6 Kürzungsvorschläge Prüfrunde 2c: 3 optional; Längenziele nachgerechnet und erreicht Prüfrunde 2c, zweite Prüfsitzung: 6 optional; Längenziele nachgerechnet und erreicht. Prüfrunde 3-1: 3 optional; Kennzahlen nachgerechnet, Richtwerte für `fragen` und `ueber` nicht erreicht. Prüfrunde 3-1, zweite Prüfsitzung: 7 optional; Längen nachgerechnet, Richtwerte `fragen` und `ueber` nicht erreicht (bekannt). Prüfrunde 3-1 zusammengeführt (beide Prüfsitzungen, 12.10.2026): 10 optional. Nachprüfung 2c-K und 3-1-K: Wortlaut beider Aufträge umgesetzt, Wörter C1 nachgezählt; 1 optional (NK31-3), 4 Fragen (NK-F-4 bis -7). |
-| Visualisierungs-Check | offen | 10.10.2026 | vierte Prüfrunde | 1 wichtig, 5 optional; Matrix 1–17 × 6 Figuren; seit 10.10.2026 alle sechs Figuren fachlich freigegeben (Fachstelle). Prüfrunde 2a: 1 wichtig, 3 optional; Matrix 1–17 × 2 neue Figuren. Etappe 2a: beide Abbildungen fachlich freigegeben (Fachstelle, 10.10.2026). Prüfrunde 2b: 1 optional; Matrix 1–17 für «Zwei Tassen» (`v-ko-tassen`), trägt, Freigabe ausstehend. Nachprüfung 2b-K: «Zwei Tassen» nach dem Verschieben angesehen, trägt, Freundin-Test bestanden, Freigabe ausstehend. Etappe 2b: «Zwei Tassen» fachlich freigegeben (Fachstelle, 11.10.2026). Prüfrunde 2c: «Ein neuer Trieb» (`v-ge-trieb`), Matrix 1–17, trägt für die Kernaussage; 1 wichtig, 1 optional; Freigabe ausstehend. Prüfrunde 2c, zweite Prüfsitzung: «Ein neuer Trieb» trägt nur mit Änderung; 2 wichtig, 1 optional; zwei Textdarstellungen ohne Befund. Prüfrunde 3-1: vier Seiten ohne Abbildung, 23 Textzeilen des Plans geprüft, kein Befund. Prüfrunde 3-1, zweite Prüfsitzung: vier Seiten ohne Abbildung, 23 Textzeilen des Plans ohne Befund. Prüfrunde 3-1 zusammengeführt (beide Prüfsitzungen, 12.10.2026): kein Befund für die vier Seiten. Nachprüfung 2c-K und 3-1-K: «Ein neuer Trieb» nach 2c-K, Matrix 1–17 bei 1280 und 360 px, Standard und «kontrast», trägt, Freundin-Test bestanden, Freigabe ausstehend (NK-F-2); 2 optional (NK2c-1, NK2c-2). Etappe 2c: «Ein neuer Trieb» fachlich freigegeben (Fachstelle, 12.10.2026). |
-| Bedienung und Barrierefreiheit | offen | 10.10.2026 | vierte Prüfrunde, automatisiert | kein Befund; reale Screenreader-Läufe, Hardwaretastatur und Touch fehlen (nicht prüfbar). Prüfrunde 2b: kein Befund (automatisiert) Prüfrunde 2c: kein Befund (automatisiert) Prüfrunde 3-1: kein Befund (automatisiert, 320–1440 px, 200 % Schrift, Tastatur, ohne Skript, Druck, reduzierte Bewegung). Prüfrunde 3-1, zweite Prüfsitzung: kein Befund (automatisiert, 320–1440 px, 200 % Text, Tastatur, Druck, ohne Skript, erzwungene Farben). Prüfrunde 3-1 zusammengeführt (beide Prüfsitzungen, 12.10.2026): kein Befund (automatisiert). Nachprüfung 2c-K und 3-1-K: 16 Seiten automatisiert, kein Befund durch die Korrekturen; 1 wichtig: Überlauf auf `verstehen` bei 1280 px mit 200 % Schrift seit `7ee24ba` (NK31-1). |
-| W3 Code-Review | offen | 10.10.2026 | vierte Prüfrunde: nur Stichprobe Technik und Zuständigkeit, kein volles W3 | Stichprobe ohne Befund; W3 erst nach Umsetzung von W2 und S. Prüfrunde 2b: Stichprobe Technik und Zuständigkeit ohne technischen Befund Prüfrunde 2c: Stichprobe Technik und Zuständigkeit, 1 optional (Plan), keine Nummer, kein `tel:` Prüfrunde 3-1: Werkzeuge, `legal`, `404`, `lang`-Auszeichnung, Zuständigkeit und `_redirects` geprüft; 1 wichtig vor Etappe 3-2 (Export und `netlify.toml`), 2 optional. Prüfrunde 3-1, zweite Prüfsitzung: Review Werkzeuge, Code der vier Seiten und `_redirects` (82 Regeln); 2 wichtig für Etappe 3-2, 4 optional. Prüfrunde 3-1 zusammengeführt (beide Prüfsitzungen, 12.10.2026): 2 wichtig vor Etappe 3-2, 5 optional. Nachprüfung 2c-K und 3-1-K: Gates, Selbsttest 65/65, Abgleich 7361 Zeilen, 0 ohne Fundstelle, `verwendet-auf.mjs` in beiden Modi und `_redirects` (85 Regeln, alle Ziele vorhanden) nachgeprüft; kein Befund. |
+| W1 Fachliche Prüfung | offen | 10.10.2026; 12.10.2026 | Fachstelle Angehörigenarbeit PUK (Freigabe Etappe 1); vierte Prüfrunde: eine Prüfsitzung (Claude, hat nicht gebaut); Fachstelle (Freigabe Etappe 2a); Prüfrunde 2b: eine Prüfsitzung (Claude, hat nicht gebaut); Fachstelle (Freigabe Etappe 2b); Prüfrunde 3-1: eine Prüfsitzung (Claude, hat nicht gebaut); Fachstelle (Freigabe Etappen 2c und 3-1); Schlussprüfung: zweite Prüfsitzung (Claude, hat weder gebaut, korrigiert, entschieden noch geprüft); Schlussprüfung, Prüfung 1 (Claude, hat weder gebaut noch korrigiert, entschieden oder geprüft); Zusammenführung der Schlussprüfung: Sitzung von Prüfung 2 | Etappe 1 fachlich freigegeben (Abschnitt «Fachliche Freigabe der Fachstelle»); alle 21 Fragen P4-F-1 bis P4-F-21 entschieden. Offen, bis die Seiten von Etappe 2 geprüft und freigegeben sind. Prüfrunde 2a: 2 wichtig, 3 optional; 10 Fragen P2a-F-1 bis P2a-F-10. Etappe 2a (`rolle`, `selbstfuersorge`, Einstiege auf `index`) fachlich freigegeben am 10.10.2026. Prüfrunde 2b (`kommunizieren`, `krise`, Einstieg auf `index`): 4 wichtig, 3 optional; 12 Fragen P2b-F-1 bis P2b-F-12. Nachprüfung 2b-K (Stand `f9e2314`, eine Prüfsitzung, hat weder gebaut noch 2b-K umgesetzt): Korrektur wie beauftragt; 1 wichtig (Liste «Neue Sätze zur Freigabe»), 3 optional; 3 Fragen. Etappe 2b (`kommunizieren`, `krise`, Einstieg auf `index`) fachlich freigegeben am 11.10.2026. Prüfrunde 2c (Stand `7ee24ba`, `genesung`, `unterstuetzung`, `diagnose`, `behandlung`, Einstiege auf `index`; eine Prüfsitzung, hat weder 2c-1 noch 2c-2 gebaut): 2 wichtig, 5 optional; 17 Fragen P2c-F-1 bis P2c-F-17. Prüfrunde 2c, zweite Prüfsitzung (Stand `7ee24ba`): 2 wichtig, 1 optional; 15 Fragen P2c2-F-1 bis P2c2-F-15. Prüfrunde 3-1 (Stand `c898b67`, `fragen`, `quellen`, `ueber`, `impressum-datenschutz`; eine Prüfsitzung, hat nicht gebaut): 70 Aussagen gegen den Bestand; 2 wichtig (Liste «Neue Sätze» unvollständig, ein Halbsatz still entfallen), 2 optional; 6 Fragen P3-F-1 bis P3-F-6. Prüfrunde 3-1, zweite Prüfsitzung (Stand `c898b67`, `fragen`, `quellen`, `ueber`, `impressum-datenschutz`): 10 wichtig, 5 optional; 20 Fragen P3b-F-1 bis P3b-F-20. Prüfrunde 3-1 zusammengeführt (beide Prüfsitzungen, 12.10.2026): 10 wichtig, 6 optional; 22 Fragen Z31-F-1 bis Z31-F-22. Nachprüfung 2c-K und 3-1-K (Stand `f3cb270`, eine Prüfsitzung, hat weder gebaut noch geprüft noch entschieden): beide Korrekturen im Wortlaut der Aufträge umgesetzt, Liste «Neue Sätze zur Freigabe» 3-1-K ohne Lücke; 2 optional (NK31-2, NK31-4), 3 Fragen, darunter die neue Freigabe der Sätze auf den freigegebenen Seiten (NK-F-1). Etappen 2c (`genesung`, `unterstuetzung`, `diagnose`, `behandlung`, Einstiege auf `index`) und 3-1 (`fragen`, `quellen`, `ueber`, `impressum-datenschutz`, `_redirects`) fachlich freigegeben am 12.10.2026; rechtliche Prüfung von Impressum und Datenschutz offen. Schlussprüfung, zweite Prüfsitzung (Stand `f1d6572`): sechs Korrekturen und Anpassungen im Wortlaut umgesetzt, 128 Aussagen gegen den Bestand; 2 wichtig (SP2-W1-1 Fusszeile «Entwurf», SP2-W1B-1 Diagnostik-Teil des Bestands ohne Abgleich), 7 optional, 5 Fragen. Schlussprüfung, Prüfung 1 (Stand `f1d6572`): sechs Aufträge (2a-K, 2a-2, 2b-K, 2b-2, Freigabe 2b, Freigabe 2c/3-1) im Wortlaut umgesetzt, Freigabestände gegen heute ohne Änderung ausserhalb eines Auftrags, 136 Aussagen gegen den Bestand, Zuständigkeit und Haltung ohne Befund; 2 wichtig (SP1-4 Satz still entfallen, SP1-5 Lücke im Abgleich), 10 optional; 11 Fragen. Rechtliche Prüfung und NK-F-3 offen. Schlussprüfung zusammengeführt (beide Prüfsitzungen, 12.10.2026): 3 wichtig (SPZ-1 Fusszeile, SPZ-4 Diagnostik-Teil ohne Abgleich, SPZ-5 «Sie sind es nicht.» entfallen), 12 optional; Fragen SPZ-F-1 bis -17. |
+| W2 Gesamtkohärenz | offen | 10.10.2026; 12.10.2026 | vierte Prüfrunde; Schlussprüfung: zweite Prüfsitzung (Claude, hat weder gebaut, korrigiert, entschieden noch geprüft); Schlussprüfung, Prüfung 1 (Claude, hat weder gebaut noch korrigiert, entschieden oder geprüft); Zusammenführung der Schlussprüfung: Sitzung von Prüfung 2 | 1 wichtig, 3 optional; offen weiter F-W2-02, F-W2-03 (jetzt P4-F-18, P4-F-19). Prüfrunde 2a: 5 optional. Prüfrunde 2b: 1 wichtig, 3 optional Prüfrunde 2c: 2 optional Prüfrunde 2c, zweite Prüfsitzung: 1 wichtig, 2 optional. Prüfrunde 3-1: 2 wichtig (Erreichbarkeit von `fragen`, `quellen`, `ueber`; Kopf von `fragen`), 2 optional. Prüfrunde 3-1, zweite Prüfsitzung: 2 wichtig, 3 optional. Prüfrunde 3-1 zusammengeführt (beide Prüfsitzungen, 12.10.2026): 2 wichtig, 3 optional. Nachprüfung 2c-K und 3-1-K: V1, V2 und der Verweissatz im Quellenblock stehen wie beauftragt, `fragen`, `ueber` und `quellen` sind von `index` in höchstens zwei Seitenwechseln erreichbar; kein Befund. Schlussprüfung, zweite Prüfsitzung (Stand `f1d6572`): 1 wichtig (SP2-W2-1 = Fusszeile), 9 optional, 6 Fragen. Schlussprüfung, Prüfung 1 (Stand `f1d6572`): 1 wichtig (SP1-3 Fusszeile «Entwurf» auch nach `--production`), 8 optional; jede der 16 verlinkten Seiten in höchstens 2 Seitenwechseln von `index` (`404` ausgenommen), alle Verweisziele vorhanden. Schlussprüfung zusammengeführt (beide Prüfsitzungen, 12.10.2026): 1 wichtig (SPZ-1), 12 optional. |
+| S Sprach-Review | offen | 10.10.2026; 12.10.2026 | vierte Prüfrunde; Schlussprüfung: zweite Prüfsitzung (Claude, hat weder gebaut, korrigiert, entschieden noch geprüft); Schlussprüfung, Prüfung 1 (Claude, hat weder gebaut noch korrigiert, entschieden oder geprüft); Zusammenführung der Schlussprüfung: Sitzung von Prüfung 2 | 6 optional; Lesetest je Abschnitt und Kennzahlen; abschliessbar erst nach W1 und W2. Prüfrunde 2a: 1 wichtig (Länge), 3 optional; 24 Kürzungsvorschläge. Prüfrunde 2b: 4 optional; Längenziel nachgerechnet und erreicht; 6 Kürzungsvorschläge Prüfrunde 2c: 3 optional; Längenziele nachgerechnet und erreicht Prüfrunde 2c, zweite Prüfsitzung: 6 optional; Längenziele nachgerechnet und erreicht. Prüfrunde 3-1: 3 optional; Kennzahlen nachgerechnet, Richtwerte für `fragen` und `ueber` nicht erreicht. Prüfrunde 3-1, zweite Prüfsitzung: 7 optional; Längen nachgerechnet, Richtwerte `fragen` und `ueber` nicht erreicht (bekannt). Prüfrunde 3-1 zusammengeführt (beide Prüfsitzungen, 12.10.2026): 10 optional. Nachprüfung 2c-K und 3-1-K: Wortlaut beider Aufträge umgesetzt, Wörter C1 nachgezählt; 1 optional (NK31-3), 4 Fragen (NK-F-4 bis -7). Schlussprüfung, zweite Prüfsitzung (Stand `f1d6572`): Lesetest aller 97 Abschnitte und `404`, Längen und Kürzungsquoten nachgerechnet und bestätigt; 1 wichtig (SP2-S-1 = Fusszeile), 20 optional, 2 Fragen. Schlussprüfung, Prüfung 1 (Stand `f1d6572`): 8 optional (darunter SP1-25 Längen über Richtwert ohne Eintrag im Bericht, Frage SP1-F-12); Typografie ohne Befund, Wortzahlen nachgerechnet. Schlussprüfung zusammengeführt (beide Prüfsitzungen, 12.10.2026): 1 wichtig (SPZ-1), 7 optional. |
+| Visualisierungs-Check | offen | 10.10.2026; 12.10.2026 | vierte Prüfrunde; Schlussprüfung: zweite Prüfsitzung (Claude, hat weder gebaut, korrigiert, entschieden noch geprüft); Schlussprüfung, Prüfung 1 (Claude, hat weder gebaut noch korrigiert, entschieden oder geprüft); Zusammenführung der Schlussprüfung: Sitzung von Prüfung 2 | 1 wichtig, 5 optional; Matrix 1–17 × 6 Figuren; seit 10.10.2026 alle sechs Figuren fachlich freigegeben (Fachstelle). Prüfrunde 2a: 1 wichtig, 3 optional; Matrix 1–17 × 2 neue Figuren. Etappe 2a: beide Abbildungen fachlich freigegeben (Fachstelle, 10.10.2026). Prüfrunde 2b: 1 optional; Matrix 1–17 für «Zwei Tassen» (`v-ko-tassen`), trägt, Freigabe ausstehend. Nachprüfung 2b-K: «Zwei Tassen» nach dem Verschieben angesehen, trägt, Freundin-Test bestanden, Freigabe ausstehend. Etappe 2b: «Zwei Tassen» fachlich freigegeben (Fachstelle, 11.10.2026). Prüfrunde 2c: «Ein neuer Trieb» (`v-ge-trieb`), Matrix 1–17, trägt für die Kernaussage; 1 wichtig, 1 optional; Freigabe ausstehend. Prüfrunde 2c, zweite Prüfsitzung: «Ein neuer Trieb» trägt nur mit Änderung; 2 wichtig, 1 optional; zwei Textdarstellungen ohne Befund. Prüfrunde 3-1: vier Seiten ohne Abbildung, 23 Textzeilen des Plans geprüft, kein Befund. Prüfrunde 3-1, zweite Prüfsitzung: vier Seiten ohne Abbildung, 23 Textzeilen des Plans ohne Befund. Prüfrunde 3-1 zusammengeführt (beide Prüfsitzungen, 12.10.2026): kein Befund für die vier Seiten. Nachprüfung 2c-K und 3-1-K: «Ein neuer Trieb» nach 2c-K, Matrix 1–17 bei 1280 und 360 px, Standard und «kontrast», trägt, Freundin-Test bestanden, Freigabe ausstehend (NK-F-2); 2 optional (NK2c-1, NK2c-2). Etappe 2c: «Ein neuer Trieb» fachlich freigegeben (Fachstelle, 12.10.2026). Schlussprüfung, zweite Prüfsitzung (Stand `f1d6572`): Matrix 1–17 × 10 Figuren, 99 Textzeilen ohne Befund; 2 wichtig (SP2-V-01 Eisberg überlappt bei 200 % Schrift, SP2-V-02 Schwellen in px), 3 optional, 4 Fragen. Schlussprüfung, Prüfung 1 (Stand `f1d6572`): Matrix 1–19 × 10 Figuren, 99 Textzeilen, Fotos 1280/360 px, Standard und «kontrast», 200 % Schrift; 1 wichtig (SP1-1 Eisberg bei 200 % Schrift überlagert), 6 optional; 5 Fragen. Schlussprüfung zusammengeführt (beide Prüfsitzungen, 12.10.2026): 2 wichtig (SPZ-2 Eisberg bei 200 %, SPZ-3 Schleife bei 150 % Schrift), 5 optional. |
+| Bedienung und Barrierefreiheit | offen | 10.10.2026; 12.10.2026 | vierte Prüfrunde, automatisiert; Schlussprüfung: zweite Prüfsitzung (Claude, hat weder gebaut, korrigiert, entschieden noch geprüft); Schlussprüfung, Prüfung 1 (Claude, hat weder gebaut noch korrigiert, entschieden oder geprüft); Zusammenführung der Schlussprüfung: Sitzung von Prüfung 2 | kein Befund; reale Screenreader-Läufe, Hardwaretastatur und Touch fehlen (nicht prüfbar). Prüfrunde 2b: kein Befund (automatisiert) Prüfrunde 2c: kein Befund (automatisiert) Prüfrunde 3-1: kein Befund (automatisiert, 320–1440 px, 200 % Schrift, Tastatur, ohne Skript, Druck, reduzierte Bewegung). Prüfrunde 3-1, zweite Prüfsitzung: kein Befund (automatisiert, 320–1440 px, 200 % Text, Tastatur, Druck, ohne Skript, erzwungene Farben). Prüfrunde 3-1 zusammengeführt (beide Prüfsitzungen, 12.10.2026): kein Befund (automatisiert). Nachprüfung 2c-K und 3-1-K: 16 Seiten automatisiert, kein Befund durch die Korrekturen; 1 wichtig: Überlauf auf `verstehen` bei 1280 px mit 200 % Schrift seit `7ee24ba` (NK31-1). Schlussprüfung, zweite Prüfsitzung (Stand `f1d6572`, automatisiert): 17 Seiten, 714 Überlauf-Messungen ohne Befund, NK31-1 behoben; 4 optional, 2 Fragen; reale Screenreader-Läufe, Hardwaretastatur, Touch und Windows-Kontrastmodus offen. Schlussprüfung, Prüfung 1 (Stand `f1d6572`, automatisiert): kein Überlauf (1496 Messungen), Tastatur, Kontrast, Struktur ohne Befund, NK31-1 behoben; wichtig SP1-1 und SP1-2 (Überlagerungen bei grosser Schrift), 5 optional. Reale Screenreader-Läufe, Hardwaretastatur und Touch offen (Protokoll vorgeschlagen). Schlussprüfung zusammengeführt (beide Prüfsitzungen, 12.10.2026): 2 wichtig (SPZ-2, SPZ-3), 3 optional; reale Tests offen (SPZ-F-33). |
+| W3 Code-Review | offen | 10.10.2026; 12.10.2026 | vierte Prüfrunde: nur Stichprobe Technik und Zuständigkeit, kein volles W3; Schlussprüfung: zweite Prüfsitzung (Claude, hat weder gebaut, korrigiert, entschieden noch geprüft); Schlussprüfung, Prüfung 1 (Claude, hat weder gebaut noch korrigiert, entschieden oder geprüft); Zusammenführung der Schlussprüfung: Sitzung von Prüfung 2 | Stichprobe ohne Befund; W3 erst nach Umsetzung von W2 und S. Prüfrunde 2b: Stichprobe Technik und Zuständigkeit ohne technischen Befund Prüfrunde 2c: Stichprobe Technik und Zuständigkeit, 1 optional (Plan), keine Nummer, kein `tel:` Prüfrunde 3-1: Werkzeuge, `legal`, `404`, `lang`-Auszeichnung, Zuständigkeit und `_redirects` geprüft; 1 wichtig vor Etappe 3-2 (Export und `netlify.toml`), 2 optional. Prüfrunde 3-1, zweite Prüfsitzung: Review Werkzeuge, Code der vier Seiten und `_redirects` (82 Regeln); 2 wichtig für Etappe 3-2, 4 optional. Prüfrunde 3-1 zusammengeführt (beide Prüfsitzungen, 12.10.2026): 2 wichtig vor Etappe 3-2, 5 optional. Nachprüfung 2c-K und 3-1-K: Gates, Selbsttest 65/65, Abgleich 7361 Zeilen, 0 ohne Fundstelle, `verwendet-auf.mjs` in beiden Modi und `_redirects` (85 Regeln, alle Ziele vorhanden) nachgeprüft; kein Befund. Schlussprüfung, zweite Prüfsitzung (Stand `f1d6572`): Werkzeuge, Export gegen `site/` (`34a2e58`), 85 Weiterleitungen und Kopfzeilen auf der Vorschau (Z31-W3-2) geprüft; 1 wichtig (SP2-W3-1 = Fusszeile), 10 optional, 4 Fragen. Schlussprüfung, Prüfung 1 (Stand `f1d6572`, nur Review): Werkzeuge, Technik-Regeln, Export gegen `site/` (`34a2e58`), Z31-W3-2 auf der Vorschau nachgeprüft (85 von 85 Weiterleitungen, 10 von 10 Punkten); 1 wichtig neu (SP1-6 PR #659 kein Entwurf), dazu SP1-1 bis SP1-3; 11 optional; 4 Fragen. Schlussprüfung zusammengeführt (beide Prüfsitzungen, 12.10.2026): 2 wichtig (SPZ-1, SPZ-6 PR #659 kein Entwurf), 15 optional. |
 | R1 Profil-Audit | offen | | | noch nicht geprüft |
 | R2 Visualisierung und Laienverständlichkeit | offen | | | noch nicht geprüft (Lesetest und Bildsprache der vierten Runde sind Vorarbeit, kein R2) |
 | R3 Freigabe-Audit | offen | | | noch nicht geprüft |
@@ -82,6 +82,3646 @@ Dazu 5 leichte Befunde zu Bericht und Abgleich. Die erste und zweite Prüfrunde 
   - die Schlussprüfungen W2, S, Visualisierungs-Check, Bedienung und W3; darin auch eine unabhängige Prüfung der Anpassungen aus `FREIGABE-ETAPPE-2C-3-1.md`
   - reale Screenreader-Läufe, Hardwaretastatur und Touch
   - danach R1 bis R3
+
+## Schlussprüfung · Zusammenführung der beiden Prüfsitzungen (12.10.2026, Stand f1d6572)
+
+Diesen Block hat die Sitzung von Prüfung 2 erstellt, nach `PRUEFAUFTRAG-SCHLUSSPRUEFUNG.md`, Abschnitt 2, IDs «SPZ-». Er führt zwei Blöcke zusammen: «Schlussprüfung · zweite Prüfsitzung» (Prüfung 2, IDs «SP2-») und «Schlussprüfung (12.10.2026, Stand f1d6572)» (Prüfung 1, IDs «SP1-», mit den Berichtigungen aus PR #54). Jeder Befund nennt seine Quelle: Prüfung 1, Prüfung 2 oder beide. Fachliche Entscheide bleiben bei der Fachstelle. Keine Stufe wird «erledigt».
+
+### Stand und Vorgehen
+
+- **Stand:** `borderline-umbau` `37c9ce0`. Seit `f1d6572` haben sich nur `PRUEFBERICHT.md` und `PRUEFAUFTRAG-SCHLUSSPRUEFUNG.md` geändert (`git diff --stat f1d6572 37c9ce0`). Inhalte, Code und Werkzeuge sind also gleich wie im geprüften Stand.
+- **Anstoss:** Die Sitzung von Prüfung 1 hat der Fachstelle gemeldet, dass beide Berichte fertig sind, und deren Auftrag zur Zusammenführung weitergeleitet. Die Merges #52, #53 und #54 sind in der Geschichte von `borderline-umbau` nachgeprüft.
+- **Unabhängigkeit:** Prüfung 2 hat den Block von Prüfung 1 erst nach dem Merge des eigenen Berichts (#52) gelesen. Ihr eigener Block ist unverändert.
+- **Vorgehen:**
+  - Die Befundlisten beider Prüfungen gegenübergestellt und gleiche Befunde zusammengelegt.
+  - Weichen Gewicht oder Urteil ab, stehen die Belege beider Prüfungen in der Tabelle.
+  - Wo die Prüfungen sich widersprechen oder nur eine Prüfung einen wichtigen Befund hat, hat diese Sitzung selbst nachgeprüft (nächster Abschnitt).
+  - Die Fragen an die Fachstelle zu einer Liste zusammengeführt.
+
+### Unterschiede zwischen den Prüfungen, selbst nachgeprüft
+
+| Punkt | Prüfung 1 | Prüfung 2 | Nachprüfung der Zusammenführung | Ergebnis |
+| --- | --- | --- | --- | --- |
+| «Sie sind es nicht.» (Bestand `grenzen`) | SP1-4, wichtig: still entfallen | nicht gefunden | Bestand `texte/grenzen.md` Z. 378: «Finanzielle Grenzen sind besonders schwer, weil sie sich anfühlen wie «ich lasse dich fallen». Sie sind es nicht.» `content/kommunizieren.html`: «Grenzen beim Geld sind oft besonders schwer, weil sie sich anfühlen können wie «ich lasse dich fallen».» `grep -rn "Sie sind es nicht" content/ abgleich/` ohne Treffer; `abgleich/grenzen.md` Nr. 214 deckt nur den ersten Satz | bestätigt, wichtig (SPZ-5) |
+| Diagnostik-Teil der alten Seite `/verstehen` | SP1-5, wichtig: Lücke im Abgleich, «inhaltlich kein Verlust» | SP2-W1B-1, wichtig: Lücke; die Einschränkung zu Häufigkeitsangaben ist still entfallen | Auf `diagnose` › `begleiterkrankungen` steht: «Bei Menschen mit Borderline kommen weitere psychische Diagnosen häufig vor, aber nicht bei allen. Wie sie zusammenhängen, ist individuell verschieden.» Für Depression steht: «… sind keine persönliche Prognose.» Es fehlt der allgemeine Satz zur Liste: «Häufigkeitsangaben unterscheiden sich je nach Stichprobe, Erhebungszeitraum und Diagnoseverfahren. Die Liste sagt deshalb nichts über die Wahrscheinlichkeit bei einer einzelnen Person aus.» (Bestand Z. 271) | Lücke im Abgleich bestätigt, wichtig. Inhaltlich ist die Aussage «nicht bei allen, individuell» erhalten, der Satz zur Abhängigkeit von der Stichprobe fehlt: Prüfbedarf (SPZ-4, SPZ-F-4) |
+| Bedeutungsschleife bei grosser Schrift | SP1-2, wichtig: bei 150 % Schrift überlagert | SP2-V-02, wichtig: bei 200 % eine «Mischform» | Bildschirmfotos bei 1280 px angesehen, Schrift über CDP `Page.setFontSizes`. **24 px (150 %):** Station 5 deckt Station 4 (sichtbar nur «Nachrichten»), Station 3 schneidet «allein.»» ab. **32 px (200 %):** gestufte Liste, «Leserichtung: von oben nach unten», ohne Überlappung | bestätigt bei 150 %, wichtig (SPZ-3). Bei 200 % lesbar, kein eigener Befund |
+| «Zwei Sichten» bei 200 % | SP1-33, optional | SP2-V-02, wichtig (zusammen mit der Schleife) | Bildschirmfoto bei 768 px mit 32 px Schrift: zwei schmale Spalten, Text vollständig, keine Überlappung | optional (SPZ-38). Das Gewicht von Prüfung 2 entfällt, weil das Gewicht dort aus der Schleife kam |
+| PR #659 kein Entwurf | SP1-6, wichtig | SP2-F-W3N-3: Frage, kein Befund | `pull_request_read` #659 um 17:59 UTC: `"draft":false`, `"mergeable_state":"clean"`, Titel «… (Entwurf, NICHT MERGEN)» | wichtig (SPZ-6). Ein versehentlicher Merge würde die Website veröffentlichen |
+| «Pretty URLs», Zahl der umgeschriebenen Links | SP1-52: 288 | SP2-W3N (Frage): 297 | 17 Seiten der Vorschau über `/<seite>.html` abgerufen, Links in einfachen Anführungszeichen gezählt: `grep -o "href='[^']*'"` = 288 (davon 137 ohne Anker). Prüfung 2 hat vermutlich andere Adressen gezählt | Umschreibung bestätigt, Zahl 288 (SPZ-56) |
+| Abgleichzeilen, deren Bestandssatz nicht wörtlich im Bestand steht | – | Teil 5.6 A: 101; Teil 5.1 B: 30 | Andere Zählweise, im Block von Prüfung 2 erklärt. Beide Teile finden keinen erfundenen Satz | kein eigener Befund, unter SPZ-10 |
+| Längen der Seiten von Etappe 1 | SP1-25: über dem Richtwert, optional (in Teil 5.3 wichtig) | kein Befund (Längenziele 2a–2c erreicht) | Richtwert aufgehoben in `KORREKTUR-ETAPPE-1E.md` Z. 15 (von Prüfung 1 zitiert) | optional (SPZ-31), Bestätigung offen (SPZ-F-15) |
+
+### Befunde zusammengeführt
+
+Gewicht nach Abschnitt 4 des Auftrags. «Beide» heisst: beide Prüfungen haben den Befund unabhängig gefunden. Die Belege im Einzelnen stehen in den Blöcken der Prüfungen.
+
+| ID | Stufe | Gewicht | Befund | Beleg | Quelle |
+| --- | --- | --- | --- | --- | --- |
+| SPZ-1 | W1, W2, S, W3 | wichtig | Die Fusszeile aller 17 Seiten sagt «Redaktioneller Status: Entwurf – fachliche Prüfung ausstehend», obwohl alle Seiten fachlich freigegeben sind. `--production` ändert den Wert nicht, das Gate prüft ihn nicht. Ein Prüfdatum fehlt | `site.config.json` Z. 19; `tools/contract.js` Z. 176; `index.html` | beide (SP1-3; SP2-W1-1, -W2-1, -S-1, -W3-1) |
+| SPZ-2 | Visualisierungs-Check, Bedienung | wichtig | Eisberg (`v-vs-eisberg`) bei 200 % Schrift ab 1024 px: «Wut» über «Vorwürfe», «Lautwerden» über «Rückzug», Zitat Wort für Wort über der Wasserlinie; im Standard und im Theme «Hoher Kontrast». Ursache ist die Schwelle in px | `borderline.css` Z. 103–125 (`@container (max-width:800px)`); Fotos beider Prüfungen | beide (SP1-1; SP2-V-01) |
+| SPZ-3 | Bedienung, Visualisierungs-Check | wichtig | Bedeutungsschleife (`v-bz-schleife`) bei 150 % Schrift überlagert: Station 5 deckt Station 4, Station 3 schneidet Station 2 ab. Ursache sind die feste Kreisanordnung und die Schwelle in px | `borderline.css` Z. 19, 26; Nachprüfung oben | beide (SP1-2 bei 150 %; SP2-V-02 b bei 200 %) |
+| SPZ-4 | W1 | wichtig | Der Diagnostik- und Begleiterkrankungsteil der alten Seite `/verstehen` hat keine Abgleichzeile. Die allgemeine Einschränkung zu Häufigkeitsangaben steht nicht auf der Website (Prüfbedarf SPZ-F-4) | Bestand `texte/verstehen.md` Z. 224–275; `abgleich/verstehen.md` Z. 3; `abgleich/diagnose.md` Z. 3 | beide (SP1-5; SP2-W1B-1), Urteil zum Inhalt abweichend, siehe oben |
+| SPZ-5 | W1 | wichtig | Satz still entfallen: «Sie sind es nicht.» nach «Finanzielle Grenzen sind besonders schwer …». Der erste Satz ist dazu abgeschwächt («anfühlen können») | Nachprüfung oben; Frage SPZ-F-5 | Prüfung 1 (SP1-4), nachgeprüft |
+| SPZ-6 | W3 | wichtig | PR `christaegger-dot/borderline-angehoerige#659` ist kein Entwurf und jederzeit mergebar. Ein Merge veröffentlicht die Entwurfsfassung. Nach `CLAUDE.md` bleibt ein PR ein Entwurf, solange Stufen offen sind | `draft:false`, `mergeable_state:clean`; Frage SPZ-F-38 | beide (SP1-6; SP2-F-W3N-3 als Frage) |
+| SPZ-7 | W1 (Abgleich) | optional | 17 Abgleichzeilen versprechen Verweise «folgt mit Etappe 2». Bei `verstehen.md` Nr. 116 («manipulieren bewusst») ist der Verweis des Bestands ohne Entscheid entfallen | Frage SPZ-F-6 | beide (SP1-10; SP2-W1-3, SP2-SB-6) |
+| SPZ-8 | W1, Visualisierungs-Check (Plan) | optional | `v-ix-beratung.reason` «steht nur hier, andere Seiten verweisen darauf» widerspricht `unterstuetzung` | `site.config.json` | beide (SP1-9; SP2-V-05, SP2-SB-5) |
+| SPZ-9 | Visualisierungs-Check (Plan) | optional | Veraltete Begründungen im Plan: `v-ix-haltung` verweist auf ein nie gebautes «Muster H»; dazu `grenzen` › `saetze` | `site.config.json` | beide (SP1-36; SP2-V-05, SP2-SB-4) |
+| SPZ-10 | W1, W3 (Werkzeug) | optional | `pruefe-abgleich.mjs` prüft weder den Bestandssatz einer Zeile noch, ob jeder Bestandssatz eine Zeile hat. «0 ohne Fundstelle» konnte SPZ-4 deshalb nicht zeigen. `verwendet-auf.mjs` endet auch bei Abweichungen mit Exit 0 | `abgleich/pruefe-abgleich.mjs` Z. 6–13 | beide (SP1-49; SP2-W1B-2, SP2-W3-5) |
+| SPZ-11 | W1 (Abgleich) | optional | Abgleichzeilen mit falschem Status, falscher Fundstelle oder fehlender Bemerkung, ohne fachlichen Verlust: `verstehen` 401, 91, 204; `selbstfuersorge` 449; `grenzen` 285, 287, 202, 638, 509; `beziehungen` 206, 142, 145, 151; `unterstuetzung` 40; `genesung` 264, 315; `behandlung` 266; `kommunizieren` 466; `quellen` 490, 175, 162 | Teile 5.1 d/e (P1) und 5.1 B (P2) | beide (SP1-13, -14, -15; SP2-W1B-3, -4, -5) |
+| SPZ-12 | W1 | optional | Die Liste «Entfallene Sätze» (Block «Korrektur 2a-K») ist nicht auf dem Stand von 2a-2 | Teil 5.1 a (P1) | Prüfung 1 (SP1-8) |
+| SPZ-13 | W1 | optional | 2a-K hat einen Verweissatz in `rolle` › `alltag` ohne Auftrag neu gefasst. Er ist ausgewiesen und mit Freigabe 2a abgedeckt; nur zur Kenntnis | Teil 5.1 a (P1) | Prüfung 1 (SP1-7) |
+| SPZ-14 | W1 (Freigabe) | optional | `404` steht in keinem Freigabeeintrag | Bericht, «Fachliche Freigabe» | Prüfung 1 (SP1-11) |
+| SPZ-15 | W1 | optional | Anspannungskurve, Stelle 3, absolut: «Eine Pause, Abstand und weniger Reize helfen.» Der Bestand sicherte ab. Wortlaut aus Auftrag 1D, freigegeben | Frage SPZ-F-8 | Prüfung 1 (SP1-12) |
+| SPZ-16 | W1 | optional | Originaltitel Guillén et al. (2024) mit Guillemets statt der Anführungszeichen des Originals | `quellen` | Prüfung 1 (SP1-16) |
+| SPZ-17 | W1 | optional | Leichte Sinnverschiebung auf `verstehen` › `mythen`: «Die Abgrenzung gehört in eine fachliche Abklärung.» steht nicht mehr direkt bei den PTBS-Sätzen | Frage SPZ-F-7 | Prüfung 2 (SP2-W1B-6) |
+| SPZ-18 | W1 (Bericht) | optional | Veraltete «offen»-Angaben im Prüfbericht zu entschiedenen Fragen (z. B. Statustabelle W2: «offen weiter … P4-F-18, P4-F-19») | Statustabelle | Prüfung 2 (SP2-W1-2) |
+| SPZ-19 | W2, S | optional | Die Meta-Beschreibung von `index` nennt 3 von 8 Einstiegen | `site.config.json` | beide (SP1-17; SP2-W2-2, SP2-S-6) |
+| SPZ-20 | W2, S | optional | Meta-Beschreibungen von `fragen` («je mit Verweis», 2 von 27 Antworten ohne) und `impressum-datenschutz` (Ausnahme für den ausliefernden Dienst fehlt) | `site.config.json` | Prüfung 1 (SP1-18, -19) |
+| SPZ-21 | W2 | optional | Linktexte weichen vom Titel des Ziels ab: «Beratung der Fachstelle Angehörigenarbeit» statt «Beratung für Sie»; «Borderline verstehen» statt «Verstehen» | Anhang A (P2) | beide (SP1-21; SP2-W2-4, SP2-S-11) |
+| SPZ-22 | W2, S | optional | Die Startseite heisst «Startseite» und «Übersicht». Auf `404` stimmt «Von der Übersicht aus finden Sie alle Seiten.» nur mit zwei Seitenwechseln | `404`, `index` | beide (SP1-22; SP2-W2-3, SP2-S-14) |
+| SPZ-23 | W2 | optional | «Verwendet in» und die Quellenblöcke lassen die Quellen aus Bildlegenden weg; auf `verstehen` fehlen sie im Block ganz | Frage SPZ-F-18 | beide (SP1-24; SP2-W2-5) |
+| SPZ-24 | W2 | optional | «Recovery» ist auf `fragen`, `genesung` und `quellen` verschieden beschrieben | Frage SPZ-F-16 | Prüfung 1 (SP1-20) |
+| SPZ-25 | W2 | optional | Kicker von `selbstfuersorge` «Selbstfürsorge» statt «Auf sich achten»; ein Eintrag der Kapitelübersicht auf `rolle` weicht ab | `content/` | Prüfung 1 (SP1-23) |
+| SPZ-26 | W2, S | optional | Abkürzungen und Fachwörter ohne Erklärung beim ersten Vorkommen: «BPS», «DBT» (auf `behandlung` vor der Erklärung), «NICE» (auf `behandlung`), «SET-UP», «Psychoedukation», «SCID-5-PD», «IPDE», «didaktisch» | Teile 5.2/5.3 beider Prüfungen | beide (SP1-29; SP2-W2-6, -7, SP2-S-5, -7, -19) |
+| SPZ-27 | W2 | optional | Einzelne Begriffsvarianten, z. B. «Fachleute» neben «Fachpersonen» | Anhang B (P2) | Prüfung 2 (SP2-W2-8) |
+| SPZ-28 | W2 | optional | Bildlegenden verweisen auf Handouts, die es auf der Website nicht mehr gibt | Frage SPZ-F-19 | Prüfung 2 (SP2-W2-9) |
+| SPZ-29 | W2 | optional | Der UMBAUPLAN nennt Verweise, die fehlen: `rolle`/`grenzen` → `krise`, `grenzen` → `kommunizieren` | Frage SPZ-F-22 | Prüfung 2 (SP2-W2-10) |
+| SPZ-30 | W2, Bedienung | optional | `krise`, `diagnose` und `behandlung` sind weder in der Navigation noch auf der Startseite verlinkt, nur über Verweise im Text (höchstens zwei Seitenwechsel) | Frage SPZ-F-22 | Prüfung 1 (SP1-41); Prüfung 2 stellt dieselbe Erreichbarkeit fest, ohne Befund |
+| SPZ-31 | S | optional | `verstehen`, `beziehungen` und `grenzen` liegen über dem früheren Richtwert. Aufgehoben ist er nur in den Aufträgen, ein Eintrag im Bericht fehlt | Frage SPZ-F-15 | Prüfung 1 (SP1-25) |
+| SPZ-32 | S, W3 | optional | Die Richtwerte in `kennzahlen.mjs` und `UMBAUPLAN.md` widersprechen den Entscheiden (`fragen`, `ueber`) | `abgleich/kennzahlen.mjs` Z. 40 | beide (SP1-26; SP2-S-18, SP2-W3-4) |
+| SPZ-33 | S | optional | Geschlechtergerechte Sprache stellenweise uneinheitlich («Partner in einer Borderline-Beziehung», «enge Freunde» u. a.) | Teile 5.3 | beide (SP1-30; SP2-S-13) |
+| SPZ-34 | S (Profil) | optional | Webtexte des Starters sind für Laien schwer verständlich (Versionszeile der Fusszeile, Logo-`aria-label`). Änderung nur im Design-System | `tools/contract.js` | beide (SP1-32; SP2-S-15) |
+| SPZ-35 | S | optional | Schwer lesbare oder belehrende Stellen: 36-Wort-Satz auf `selbstfuersorge` › `beratung`, Wiederholungen im Kopf von `genesung` und `behandlung`, Nominalstil auf `diagnose` › `abklaerung` und `behandlung` › `wartezeit`, belehrende Sätze, «Sie müssen … nicht» gehäuft in `rolle` › `anbieten` | Lesetest in Teil 5.3 beider Prüfungen | beide (SP1-27, -28; SP2-S-4, -16, -17, -20, -21) |
+| SPZ-36 | S | optional | Grammatisch unklar oder falsch: `grenzen` › `konsequenz` «… passen sie an», `grenzen`, Kopf: «… können sie aber nicht garantieren» (liest sich als Anrede), «Mir ist noch beklemmend zumute.» | Teile 5.3 | beide (SP1-31; SP2-S-2, -3) |
+| SPZ-37 | S | optional | Uneinheitliche Schreibweisen: «Posttraumatische» gross, Ziffern und Zahlwörter, zwei Datumsformen, Gross- und Kleinschreibung nach Doppelpunkt | Teil 5.3 (P2) | Prüfung 2 (SP2-S-8, -9, -10, -12) |
+| SPZ-38 | Visualisierungs-Check | optional | «Zwei Sichten»: Schwelle `@container (max-width:560px)` in px; bei 768 px mit 200 % zwei schmale Spalten, «Unterstützung» bricht im Wort | Nachprüfung oben | beide (SP1-33 optional; SP2-V-02 a wichtig, herabgestuft) |
+| SPZ-39 | Visualisierungs-Check, Bedienung | optional (Profil) | Die Ziffernkreise der Anspannungskurve wachsen nicht mit (28 px fest), bei 200 % ragen die Ziffern heraus | `erklaermuster.css` Z. 19 | beide (SP1-34; SP2-V-04, SP2-SB-3) |
+| SPZ-40 | Visualisierungs-Check, Bedienung | optional (Profil) | Lange Wörter brechen in Figuren und Überschriften ohne Trennstrich, bei 320–414 px oder mit 200 % Schrift (z. B. «Begleiterkrank\|ungen», «Momentaufn\|ahme») | Teile 5.4/5.5 beider Prüfungen | beide (SP1-35, -40; SP2-V-03, SP2-B-2) |
+| SPZ-41 | Visualisierungs-Check | optional | «Ein neuer Trieb»: Sims und Brett sind rechts hart abgeschnitten (Pfad über die `viewBox` hinaus) | Frage SPZ-F-30 | beide (SP1-38; SP2-B-3, SP2-F-V-04) |
+| SPZ-42 | Visualisierungs-Check | optional | Der Erklärtext der Tassen hat nur einen Satz (Leitlinie: zwei bis vier) | `kommunizieren` | Prüfung 1 (SP1-37) |
+| SPZ-43 | Bedienung (Druck) | optional | Im Druck stehen die Anspannungskurve und «Zwei Sichten» auf zwei A4-Seiten, mit leerer Seite davor. Bei der Schleife steht die Kennzeichnung allein auf der Folgeseite. Das widerspricht der Druckregel vom 11.10.2026 | Teile 5.5 beider Prüfungen; Frage SPZ-F-32 | beide (SP1-39; SP2-B-1) |
+| SPZ-44 | Bedienung (Werkzeug) | optional | `abgleich/bedienung.mjs` prüft `404` nicht und wertet jeden `box-shadow` als Fokusring | `PAGES` ohne `404` | beide (SP1-43; SP2-B-4) |
+| SPZ-45 | Bedienung (Profil) | optional | Der E-Mail-Link der Absenderin ist 23 px hoch; WCAG 2.5.8 ist über den Abstand erfüllt | Frage SPZ-F-34 | Prüfung 1 (SP1-42) |
+| SPZ-46 | W3 | optional | 98 Textzeilen des Visualisierungsplans stehen weiter auf `approvalStatus` «ausstehend» | `site.config.json`; Frage SPZ-F-3 | Prüfung 2 (SP2-W3-2) |
+| SPZ-47 | W3 (Profil) | optional | `gate.html` zeigt andere Ergebnisse als die Kommandozeile («Produktion 0 blockierend», «Selbsttest 22/65») | `tools/gate-browser.js` | Prüfung 2 (SP2-W3-3) |
+| SPZ-48 | W3 (Profil) | optional | Kopfzeilen: CSP enger fassbar, HSTS fehlt, kein `Cache-Control` für Schriften und Logo | `_headers` | beide (SP1-48; SP2-W3-6) |
+| SPZ-49 | W3 (Profil) | optional | Der Lizenztext der Schrift (OFL) fehlt im Export | `tools/export.mjs` | beide (SP1-46; SP2-W3-7) |
+| SPZ-50 | W3 (Profil) | optional | Das Logo enthält ein C2PA-Manifest (7,7 kB) | `assets/logo.svg` | Prüfung 2 (SP2-W3-8) |
+| SPZ-51 | W3 (Profil) | optional | Mehr als die Hälfte von `site.css` wird auf keiner Seite angewendet | Teil 5.6 a (P1) | Prüfung 1 (SP1-47) |
+| SPZ-52 | W3 | optional | `_redirects` bleibt Handarbeit, `export.mjs` leert den Zielordner nicht; die Schritte für den Produktions-Export fehlen | `tools/export.mjs` | Prüfung 1 (SP1-44); Prüfung 2 erwähnt den Handschritt ohne Befund |
+| SPZ-53 | W3 | optional | `/robots.txt` und `/og-image.jpg` entfallen ersatzlos, `sitemap.xml` wird nirgends angekündigt, `/favicon.ico` kommt nicht aus `site/` | Teile 5.6 beider Prüfungen | beide (SP1-45; SP2-W3N-3) |
+| SPZ-54 | W3 | optional | Alte `-v1`-PDF-Adressen führen auf die Startseite statt auf den Abschnitt | `_redirects` | Prüfung 1 (SP1-50) |
+| SPZ-55 | W3 | optional | Alte Adressen in anderer Schreibweise (`/FAQ`, `/Soforthilfe`) enden mit 404; die heutige Produktion leitet sie weiter | Frage SPZ-F-39 | beide (SP1-51; SP2-W3N-1) |
+| SPZ-56 | W3 | optional | «Pretty URLs»: Ausgeliefert wird nicht der Export (288 umgeschriebene Links); `canonical` und `sitemap.xml` stehen mit `.html`, die Links ohne | Nachprüfung oben; Frage SPZ-F-35 | beide (SP1-52; SP2-F-W3N-1, SP2-F-SB-1 als Frage) |
+| SPZ-57 | W3 | optional | Der Schutz der Vorschauen ist weiter aus (`requiresSSOTeamLogin:false`) | Frage SPZ-F-36 | beide (SP1-53; SP2-F-W3N-2, SP2-F-SB-2 als Frage) |
+| SPZ-58 | W3 | optional; wichtig, falls «Pretty URLs» ausgeschaltet wird | Die Widerlegung von Codex P1 gilt nur, solange Netlify `/verstehen/` auf `/verstehen` umleitet | Teil 5.6 b (P1) | beide (SP1-54; SP2-F-SB-1) |
+| SPZ-59 | W3, 5.7 | optional | Die Linkzahlen der Selbstprüfung 3-2 (451 Verweise, 131 Ziele) sind nicht nachrechenbar; das Ergebnis selbst stimmt | Teile 5.6 B, 5.7 (P2) | Prüfung 2 (SP2-W3N-2, SP2-SB-2) |
+| SPZ-60 | W3, 5.7 | optional | Nach dem Merge von #659 fehlen auf `main` alle fünf Workflows und die Funktion `material-download`. Die Selbstprüfung sagt, sie blieben auf `main` erhalten | Teil 5.7 (P2); Frage SPZ-F-37 | Prüfung 2 (SP2-SB-1) |
+
+### Fragen an die Fachstelle zusammengeführt
+
+«Prüfbedarf» heisst: fachliche Frage, von den Prüfungen nicht entschieden. «Vor der Veröffentlichung» heisst: vor R3 zu entscheiden.
+
+| ID | Frage | Bezug | Quelle |
+| --- | --- | --- | --- |
+| SPZ-F-1 | Bestätigt die Fachstelle den Prüfauftrag («Entwurf zur Bestätigung»), und wo wird das eingetragen? | Kopf beider Blöcke | beide (SP1-F-1; SP2-F-23) |
+| SPZ-F-2 | Welcher Wortlaut und welches Prüfdatum gelten in der Fusszeile bei der Veröffentlichung, und wer setzt sie vor dem Export mit `--production`? (vor der Veröffentlichung) | SPZ-1 | beide (SP1-F-15; SP2-F-1) |
+| SPZ-F-3 | Werden die 98 Textzeilen des Visualisierungsplans mit der Seitenfreigabe auf «freigegeben» gesetzt? | SPZ-46 | Prüfung 2 (SP2-F-2) |
+| SPZ-F-4 | **Prüfbedarf:** Soll der Satz zu Häufigkeitsangaben der Begleiterkrankungen (Bestand `verstehen` Z. 271) auf `diagnose` stehen, oder genügt «nicht bei allen … individuell verschieden»? Und wird der Diagnostik-Teil im Abgleich nachgeführt? | SPZ-4 | beide (SP2-F-3; SP1-5) |
+| SPZ-F-5 | **Prüfbedarf:** Kommt «Sie sind es nicht.» zurück, oder entfällt der Satz bewusst (dann mit Abgleichzeile und Grund)? | SPZ-5 | Prüfung 1 (SP1-F-7) |
+| SPZ-F-6 | **Prüfbedarf:** Bei «Menschen mit Borderline manipulieren bewusst.» einen Verweis auf `kommunizieren` oder `grenzen` wie im Bestand setzen, oder entfällt er endgültig? | SPZ-7 | beide (SP1-F-6; SP2-F-5) |
+| SPZ-F-7 | **Prüfbedarf:** «Die Abgrenzung gehört in eine fachliche Abklärung.» wieder direkt zu den PTBS-Sätzen? | SPZ-17 | Prüfung 2 (SP2-F-4) |
+| SPZ-F-8 | **Prüfbedarf:** Anspannungskurve, Stelle 3, wieder «können helfen»? | SPZ-15 | Prüfung 1 (SP1-F-8) |
+| SPZ-F-9 | **Prüfbedarf:** Bei der Schleife sagen, dass die Stationen keine feste Abfolge sind (Bestand)? | SPZ-11 | Prüfung 1 (SP1-F-9) |
+| SPZ-F-10 | Vertiefung «Eltern» auf `selbstfuersorge` an den Wortlaut von `rolle` angleichen? | Teil 5.1 a (P1) | Prüfung 1 (SP1-F-2) |
+| SPZ-F-11 | Ist «Beides kann nebeneinander bestehen.» (E14) verzichtbar? | Teil 5.1 a (P1) | Prüfung 1 (SP1-F-3) |
+| SPZ-F-12 | Genügt auf `selbstfuersorge` › `beratung` der Satz «Das ist eine Orientierung, keine Garantie …», nachdem die Hinweise zur Forschungslage in den Quellenblock gewandert sind? | Teil 5.1 b (P1) | Prüfung 1 (SP1-F-4) |
+| SPZ-F-13 | Datenschutz: «Die Website setzt keine Cookies» absolut stehen lassen? In die rechtliche Prüfung aufnehmen | Teil 5.1 e (P1) | Prüfung 1 (SP1-F-10) |
+| SPZ-F-14 | Urheberrecht: Ist die Erweiterung auf «Die Inhalte» (Bestand: «Infografiken und Handouts») gewollt? | Teil 5.1 e (P1) | Prüfung 1 (SP1-F-11) |
+| SPZ-F-15 | Gilt für `verstehen`, `beziehungen` und `grenzen` ein Richtwert? Wenn nicht: als Entscheid festhalten und `UMBAUPLAN.md` und `kennzahlen.mjs` nachführen | SPZ-31, SPZ-32 | Prüfung 1 (SP1-F-12) |
+| SPZ-F-16 | «Recovery» auf `fragen` wie auf `genesung` und im Glossar beschreiben? | SPZ-24 | Prüfung 1 (SP1-F-13) |
+| SPZ-F-17 | **Prüfbedarf:** Rechte und Schweigepflicht (FU, KESB, Meldepflichten, Einwilligung) stehen verteilt. Reicht das, oder braucht es einen gebündelten Abschnitt auf einer Themenseite? | Teil 5.2 beider Prüfungen | Prüfung 1 (SP1-F-14); Prüfung 2 stellt die Verteilung fest, ohne Frage |
+| SPZ-F-18 | Sollen die Quellenblöcke und «Verwendet in» auch die Quellen aus Bildlegenden nennen? | SPZ-23 | beide (SP1-F-16; SP2-F-8) |
+| SPZ-F-19 | Sollen die Bildlegenden die entfallenen Handouts weiter nennen? | SPZ-28 | Prüfung 2 (SP2-F-9) |
+| SPZ-F-20 | **Prüfbedarf:** Geschwister und Freundinnen und Freunde als eigene Angehörigenrolle? | Teil 5.2 (P2) | Prüfung 2 (SP2-F-6) |
+| SPZ-F-21 | **Prüfbedarf:** Die Bezeichnung zum Code F60.31 auf `diagnose` oder im Glossar nennen? | Teil 5.2 (P2) | Prüfung 2 (SP2-F-7) |
+| SPZ-F-22 | `krise`, `diagnose` und `behandlung` auf der Startseite verlinken? Die Verweise aus dem UMBAUPLAN (`rolle`/`grenzen` → `krise`, `grenzen` → `kommunizieren`) setzen oder den Plan nachführen? | SPZ-29, SPZ-30 | beide (SP1-F-22; SP2-F-10) |
+| SPZ-F-23 | **Prüfbedarf:** Dürfen gleichlautende Absicherungen innerhalb eines Abschnitts gebündelt werden? | Teil 5.3 (P2) | Prüfung 2 (SP2-F-11) |
+| SPZ-F-24 | **Prüfbedarf:** «Ein neuer Trieb» zeigt Genesung als Pflanze; bei «Ein Stück Weg» wurde das Garten-Bild deshalb verworfen. Ist die Lesart «betroffene Person als Pflanze» hier in Kauf genommen? | Teil 5.4 beider Prüfungen | beide (SP1-F-17; SP2-F-12) |
+| SPZ-F-25 | «Zwei Tassen»: Genügt es, dass die Sätze die Aussage tragen (Freundin-Test nur teilweise)? Für R2 | Teil 5.4 (P1) | Prüfung 1 (SP1-F-18) |
+| SPZ-F-26 | DEAR: Sind die Kürzel für Laien verständlich, wenn «DEAR MAN» nur in der Vertiefung erklärt ist? | Teil 5.4 (P1) | Prüfung 1 (SP1-F-19) |
+| SPZ-F-27 | **Prüfbedarf:** `beziehungen` › `was-hilft` nennt mehrere Unterbrechungsstellen, das Modell markiert nur Station 5. Text oder Modell klarer fassen? | Teil 5.4 beider Prüfungen | beide (SP1-F-20; SP2-F-13) |
+| SPZ-F-28 | «Ein freier Abend»: Kurztext «der Tee wird kalt», im Bild dampft die Tasse. Ist das gewollt? | Teil 5.4 (P1) | Prüfung 1 (SP1-F-21) |
+| SPZ-F-29 | Braucht der Eisberg (Schichtenmodell) einen `entryPoint`? | Teil 5.4 (P2) | Prüfung 2 (SP2-F-14) |
+| SPZ-F-30 | «Ein neuer Trieb»: Ist der rechts abgeschnittene Sims gewollt? | SPZ-41 | Prüfung 2 (SP2-F-15) |
+| SPZ-F-31 | «Ein neuer Trieb»: Der Auftrag sagt für die Randlinie «grau und dünner», umgesetzt ist sie gleich breit. Soll «Tragfähiger» 3 px bekommen? | Teil 5.7 beider Prüfungen | beide (SP1-F-5; SP2-F-16) |
+| SPZ-F-32 | Gilt für Figuren, die länger als eine A4-Seite sind, eine Ausnahme von der Druckregel? | SPZ-43 | Prüfung 2 (SP2-F-17) |
+| SPZ-F-33 | Wer führt die realen Screenreader-Läufe, die Tests mit Hardwaretastatur und Touch und den Test im Windows-Kontrastmodus durch, und bis wann? Protokollvorschläge stehen in Teil 5.5 beider Prüfungen | Teil 5.5 | beide (SP2-F-18; P1 «nicht geprüft», Protokoll) |
+| SPZ-F-34 | E-Mail-Link der Absenderin: Link im Text oder eigenständige Aktion (44 px)? Profilebene | SPZ-45 | Prüfung 1 (SP1-F-23) |
+| SPZ-F-35 | «Pretty URLs» lassen oder ausschalten? Die Einstellung gilt auch für die Produktion; nach einer Änderung SPZ-58 und die Vorschau neu prüfen (vor der Veröffentlichung) | SPZ-56, SPZ-58 | beide (SP1-F-24; SP2-F-19) |
+| SPZ-F-36 | Wann wird die Team-Anmeldung für Vorschauen wieder eingeschaltet? | SPZ-57 | beide (SP1-F-25; SP2-F-20) |
+| SPZ-F-37 | Werden die Build-Einstellungen des Netlify-Projekts vor dem Merge angeglichen, und wer prüft die Produktion danach? Mit dem Merge entfallen auf `main` die Workflows und `material-download` (vor der Veröffentlichung) | SPZ-60 | beide (SP2-F-21; P1 «weiter offen») |
+| SPZ-F-38 | PR #659 wieder als Entwurf markieren, bis R3 «Go» ergibt? | SPZ-6 | beide (SP1-F-26; SP2-F-22) |
+| SPZ-F-39 | Alte Adressen auch in anderer Schreibweise weiterleiten, oder genügt die 404-Seite? | SPZ-55 | Prüfung 1 (SP1-F-27) |
+
+**Weiter offen aus früheren Runden** (von beiden Prüfungen festgestellt):
+- die rechtliche Prüfung von Impressum und Datenschutz (S-Nr. 5 und 6, Z31-F-9, Z31-F-19, NK-F-8)
+- NK-F-3 (Ausgabe von «Schluss mit dem Eiertanz»)
+
+Alle übrigen Fragen der früheren Runden sind laut den Freigabeeinträgen entschieden.
+
+### Zählung und Stand der Stufen
+
+**Befunde:** Prüfung 1 hat 54 Befunde (6 wichtig), Prüfung 2 hat 66 IDs (7 wichtig, 59 optional; 4 wichtige und 48 optionale verschiedene). Zusammengeführt sind es **60 Befunde: 6 wichtig, 54 optional**.
+
+**Quellen:**
+- beide: 33 Befunde, davon 5 wichtig
+- nur Prüfung 1: 16 Befunde, davon 1 wichtig (SPZ-5, nachgeprüft)
+- nur Prüfung 2: 11 Befunde, alle optional
+
+**Fragen:** Prüfung 1 hat 27, Prüfung 2 hat 23. Zusammengeführt sind es **39 Fragen** (SPZ-F-1 bis -39), davon 14 aus beiden Prüfungen.
+
+| Stufe | wichtig | optional | Stand |
+| --- | --- | --- | --- |
+| W1 Fachliche Prüfung | SPZ-1, SPZ-4, SPZ-5 | SPZ-7 bis -18 | offen: drei wichtige Befunde, 13 Fragen mit Prüfbedarf oder zum Wortlaut; dazu die rechtliche Prüfung und NK-F-3 |
+| W2 Gesamtkohärenz | SPZ-1 | SPZ-19 bis -30 | offen |
+| S Sprach-Review | SPZ-1 | SPZ-31 bis -37 | offen |
+| Visualisierungs-Check | SPZ-2, SPZ-3 | SPZ-38 bis -42 | offen |
+| Bedienung und Barrierefreiheit | SPZ-2, SPZ-3 | SPZ-43 bis -45 | offen; reale Screenreader-Läufe, Hardwaretastatur, Touch und Windows-Kontrastmodus fehlen (SPZ-F-33) |
+| W3 Code-Review | SPZ-1, SPZ-6 | SPZ-46 bis -60 | offen |
+| R1 bis R3 | – | – | offen, nicht Teil dieses Auftrags |
+
+Mehrfach zugeordnete Befunde stehen bei jeder Stufe, gezählt sind sie einmal. **Keine Stufe ist «erledigt».**
+
+**Nächste Schritte** nach Abschnitt 7 des Auftrags:
+1. Entscheide der Fachstelle zu SPZ-F-1 bis -39
+2. ein Korrekturauftrag für die wichtigen Befunde SPZ-1 bis SPZ-6 und die gewünschten optionalen Befunde
+3. Korrektur durch eine bauende Sitzung
+4. Nachprüfung durch eine Sitzung, die weder gebaut, noch geprüft, noch entschieden hat
+5. reale Tests, rechtliche Prüfung und NK-F-3
+6. danach R1 bis R3
+
+## Schlussprüfung · zweite Prüfsitzung (12.10.2026, Stand f1d6572)
+
+**Prüfung 2** nach `PRUEFAUFTRAG-SCHLUSSPRUEFUNG.md`, IDs «SP2-». Fachliche Freigaben trägt nur die Fachstelle ein; dieser Block enthält Befunde und Fragen, keine Freigabe.
+
+### Geprüfter Stand, Unabhängigkeit, Vorgehen
+
+- **Stand:** `borderline-umbau` `f1d6572`, Website-Ordner `templates/website/borderline-angehoerige/`. Geprüft wurde ein eigener, sauberer Arbeitsbaum dieses Stands. Den Auftrag selbst gibt es erst ab `c3306d4`, dort kommt nur `PRUEFAUFTRAG-SCHLUSSPRUEFUNG.md` dazu (`git diff --stat f1d6572 c3306d4`: 1 Datei). Ziel-Repository `christaegger-dot/borderline-angehoerige` nur lesend: `umzug-puk-profil-1791821335` = `34a2e58`, `react-archiv` = `main` = `f46038b`. Netlify-Vorschau `deploy-preview-659` ohne Anmeldung erreichbar (HTTP 200).
+- **Auftrag:** Der Auftrag trägt den Vermerk «Entwurf zur Bestätigung». Geprüft wurde auf die Startnachricht hin, die Abschnitt 8 vorgibt. Eine Bestätigung der Fachstelle ist im Repository nicht eingetragen (Frage SP2-F-23).
+- **Unabhängigkeit:** Diese Sitzung hat an der Website weder gebaut noch korrigiert, entschieden oder geprüft. Branch und Bericht von Prüfung 1 hat sie nicht gelesen; geholt wurden nur `borderline-umbau` und `borderline-bestand`.
+- **Vorgehen:** Die Sitzung hat die Stufen auf neun Teilprüfungen verteilt (5.1 in zwei Teilen, 5.2, 5.3, 5.4, 5.5, 5.6 in zwei Teilen, 5.7). Jede Teilprüfung lief in einer eigenen Kopie des Arbeitsbaums, mit eigenen Skripten, und hat nichts geändert. Danach hat die Sitzung die Teile zusammengeführt und drei Kernbefunde selbst nachgeprüft:
+  - die Fusszeile: `site.config.json` Z. 19 `"editorialStatus": "Entwurf – fachliche Prüfung ausstehend"`, `tools/contract.js` Z. 176, `index.html` «Redaktioneller Status: Entwurf – fachliche Prüfung ausstehend»
+  - den Diagnostik-Teil des Bestands: `git show origin/borderline-bestand:bestand/borderline-angehoerige/texte/verstehen.md`, Z. 224–275; `grep -ril Häufigkeitsangaben content/` ohne Treffer
+  - den Eisberg bei 1280 px mit 200 % Schrift, Bildschirmfoto angesehen: «Wut» überdeckt «Vorwürfe», «Lautwerden» überdeckt «Rückzug», «… oder ganz andere Erfahrungen» läuft über den Umriss, das Zitat bricht in Einzelwörter
+- **Belege:** Skripte, Ausgaben und Bildschirmfotos der Teilprüfungen lagen im Arbeitsbereich der Sitzung. Nach Abschnitt 4 des Auftrags wird nur dieser Bericht committet. Befehle und Zahlen stehen deshalb in den Teilen unten, so dass jede Prüfung wiederholbar ist.
+- **Zwei Zählweisen beim Abgleich:**
+  - Teil 5.6 A zählt 101 Abgleichzeilen, deren Satz nicht wörtlich im Bestand steht. Er prüft 7117 Zeilen mit Bestandssatz gegen die zugeordnete Datei, mit der Normalisierung von `pruefe-abgleich.mjs`.
+  - Teil 5.1 B zählt 30 solche Zeilen. Er prüft alle 7371 Zeilen gegen alle Bestandsdateien der Seite, mit eigener Normalisierung, die Vorschau- und Grafikmarken auflöst.
+  - Beide finden keinen erfundenen Bestandssatz. Die Differenz liegt in der Methode, nicht im Bestand.
+
+### Ergebnis in Kürze
+
+- **4 wichtige Befunde** (7 IDs, weil mehrere Teile denselben Befund unabhängig fanden):
+  1. **Fusszeile «Redaktioneller Status: Entwurf – fachliche Prüfung ausstehend»** auf allen 17 Seiten, obwohl alle Seiten fachlich freigegeben sind. Weder `export.mjs --production` noch das Gate ändern oder prüfen den Wert. Gefunden von vier Teilen unabhängig: SP2-W1-1, SP2-W2-1, SP2-S-1, SP2-W3-1.
+  2. **SP2-W1B-1:** Der Teil «Diagnostischer Überblick» und «Begleiterkrankungen — mögliche Kombinationen» der alten Seite `/verstehen` (Bestand `texte/verstehen.md` Z. 224–275, 37 von 40 Sätzen und Listenpunkten) hat in keiner Abgleich-Tabelle eine Zeile. Die Einschränkung «Häufigkeitsangaben unterscheiden sich je nach Stichprobe, Erhebungszeitraum und Diagnoseverfahren. Die Liste sagt deshalb nichts über die Wahrscheinlichkeit bei einer einzelnen Person aus.» steht nirgends auf der Website. Das ist still entfallen; Prüfbedarf SP2-F-3.
+  3. **SP2-V-01:** Eisberg (`v-vs-eisberg`) bei 1280 px und 200 % Schrift: Beschriftungen überlappen und laufen über Umriss und Wasserlinie, im Standard und im Theme «Hoher Kontrast». Ursache ist die Container-Schwelle in px (`borderline.css` Z. 119, `@container (max-width:800px)`). Frühere Runden haben nur `scrollWidth` gemessen.
+  4. **SP2-V-02:** Weitere Schwellen in px (`borderline.css` Z. 26 `700px`, Z. 75 und 86 `560px`) ergeben bei 200 % Schrift falsche Ansichten: «Zwei Sichten» bricht «Unterstützun|g», die Schleife zeigt eine Mischform mit versetzten Stationen.
+- **59 optionale Befunde**, nach Zusammenlegen der Doppelfunde 48 verschiedene (Doppelfunde siehe Übersicht).
+- **28 Fragen** in den Teilen, zusammengeführt zu **23 Fragen an die Fachstelle** (SP2-F-1 bis -23, unten).
+- **Ohne Befund**, je mit Beleg in den Teilen:
+  - **Korrekturen und Anpassungen:** Alle sechs Korrekturen und Anpassungen sind im Wortlaut der Aufträge umgesetzt. Jede Änderung seit den Freigabeständen geht auf einen Auftrag zurück.
+  - **Zuständigkeit:** keine Telefonnummer, kein `tel:`, kein Notfallblock. Alle 26 Verweise im Text stehen im Wortlaut von `responsibility.inline` direkt nach einer Handlungsanleitung. Die Fusszeile trägt den Verweis auf 17 von 17 Seiten.
+  - **Haltung:** 154 Treffer für absolute Aussagen im Kontext beurteilt, keine absolute Zuschreibung, kein Heilungsversprechen.
+  - **Bestand:** 128 Aussagen verglichen (1: 31, 2a: 22, 2b: 22, 2c: 30, 3-1: 23).
+  - **Navigation:** alle Seiten in höchstens zwei Seitenwechseln ab `index`, 400 interne Links und 263 Anker ohne Fehler.
+  - **Sprache:** kein «ß», Guillemets, «Sie» durchgehend, Längen und Kürzungsquoten nachgerechnet und bestätigt.
+  - **Textzeilen des Plans:** 99 nachgezählt, bei allen ist Text die richtige Form.
+  - **Bedienung:** 714 Überlauf-Messungen ohne Befund; NK31-1 besteht nicht mehr. Tastatur, Kontrast (6757 Textpaare), ohne Skript und reduzierte Bewegung ohne Befund.
+  - **Werkzeuge:** Build reproduzierbar, Selbsttest 65/65, `tools/` gleich wie im Starter, keine externen Ressourcen, 0 CSP-Verstösse.
+  - **Export:** gleich wie `site/` auf `34a2e58`, `_redirects` byte-gleich.
+  - **Vorschau:** 85 von 85 Weiterleitungen mit richtigem Status und Ziel; die zehn Punkte von Z31-W3-2 erfüllt.
+- **Nicht durch diese Sitzung prüfbar:**
+  - reale Screenreader-Läufe, Hardwaretastatur, Touch, echter Windows-Kontrastmodus (Protokollvorschlag in 5.5)
+  - die Build-Einstellungen des Netlify-Projekts
+  - die Produktion nach dem Merge
+- **Status:** Alle geprüften Stufen bleiben «offen» (Zählung unten).
+
+### Befunde · Übersicht
+
+Wichtige Befunde:
+
+| ID | Stufe | Gewicht | Befund | Beleg |
+| --- | --- | --- | --- | --- |
+| SP2-W1-1 = SP2-W2-1 = SP2-S-1 = SP2-W3-1 | W1, W2, S, W3 | wichtig | Fusszeile aller 17 Seiten: «Redaktioneller Status: Entwurf – fachliche Prüfung ausstehend», obwohl alle Seiten fachlich freigegeben sind. `--production` und Gate ändern oder prüfen den Wert nicht. | `site.config.json` Z. 19; `tools/contract.js` Z. 176; gebaute Seiten, z. B. `index.html`; Teile 5.1 A, 5.2, 5.3, 5.6 A |
+| SP2-W1B-1 | W1 | wichtig | Diagnostik- und Begleiterkrankungsteil der alten Seite `/verstehen` ohne Abgleich, Einschränkung zu Häufigkeitsangaben still entfallen. | Bestand `texte/verstehen.md` Z. 224–275; `abgleich/*.md` ohne Zeile; Teil 5.1 B |
+| SP2-V-01 | Visualisierungs-Check | wichtig | Eisberg bei 1280 px mit 200 % Schrift: Beschriftungen überlappen. | `borderline.css` Z. 119; Teil 5.4 |
+| SP2-V-02 | Visualisierungs-Check | wichtig | Weitere Container-Schwellen in px; falsche Ansicht bei 200 % Schrift (Zwei Sichten, Schleife). | `borderline.css` Z. 26, 75, 86; Teil 5.4 |
+
+Optionale Befunde: einzeln in den Teilen unten. Doppelfunde, die bei der Korrektur zusammen behandelt werden können:
+
+- Meta-Beschreibung `index` veraltet: SP2-W2-2 = SP2-S-6
+- «BPS» unerklärt: SP2-W2-7 = SP2-S-7
+- veraltete Richtwerte in `kennzahlen.mjs`: SP2-W3-4 = SP2-S-18
+- `pruefe-abgleich.mjs` prüft Bestandssatz und Vollständigkeit nicht: SP2-W3-5 = SP2-W1B-2
+- `abgleich/verstehen.md` Nr. 116 «folgt mit Etappe 2»: SP2-W1-3 = SP2-SB-6
+- Linkzahlen der Selbstprüfung 3-2 nicht nachrechenbar: SP2-W3N-2 = SP2-SB-2
+- Ziffern der Anspannungskurve bei 200 %: SP2-V-04 = SP2-SB-3
+- veraltete Plan-Begründungen: SP2-V-05 umfasst SP2-SB-4 und SP2-SB-5
+- Worttrennung ohne Trennstrich: SP2-B-2 ≈ SP2-V-03 (Ursache Profilregel)
+- Fachwörter auf `behandlung` ohne Erklärung: SP2-W2-6 ≈ SP2-S-5
+
+### Fragen an die Fachstelle
+
+Zusammengeführt aus den Teilen; in Klammern die IDs in den Teilen. «Prüfbedarf» heisst: fachliche Frage, von der Prüfung nicht entschieden.
+
+| ID | Frage | Teil-IDs |
+| --- | --- | --- |
+| SP2-F-1 | Welcher redaktionelle Status soll vor der Veröffentlichung in der Fusszeile stehen, und wer setzt ihn vor dem Export mit `--production`? (vor der Veröffentlichung) | SP2-F-W1-1, SP2-F-W2-1, SP2-F-S-1, SP2-F-W3-1 |
+| SP2-F-2 | Sollen die 98 Textzeilen des Visualisierungsplans mit der Seitenfreigabe auf «freigegeben» gesetzt werden? | SP2-F-W3-1, SP2-W3-2 |
+| SP2-F-3 | **Prüfbedarf:** Soll die Einschränkung zu Häufigkeitsangaben der Begleiterkrankungen (Bestand `verstehen`) auf `diagnose` stehen? Und wird der Diagnostik-Teil des Bestands im Abgleich nachgeführt? | SP2-F-W1B-1 |
+| SP2-F-4 | **Prüfbedarf:** Soll «Die Abgrenzung gehört in eine fachliche Abklärung.» wieder direkt bei den Sätzen zu Borderline und PTBS stehen (`verstehen` › `mythen`)? | SP2-F-W1B-2 |
+| SP2-F-5 | **Prüfbedarf:** Soll bei «Menschen mit Borderline manipulieren bewusst.» (`verstehen` › `mythen`) ein Verweissatz auf `kommunizieren` oder `grenzen` stehen wie im Bestand, oder entfällt er endgültig? | SP2-F-W1-2, SP2-F-SB-5 |
+| SP2-F-6 | **Prüfbedarf:** Sollen Geschwister und Freundinnen und Freunde als eigene Angehörigenrolle vorkommen? | SP2-F-W2-2 |
+| SP2-F-7 | **Prüfbedarf:** Soll die Bezeichnung zum Code F60.31 («emotional instabile Persönlichkeitsstörung, Borderline-Typ») auf `diagnose` oder im Glossar stehen? | SP2-F-W2-3 |
+| SP2-F-8 | Sollen die Quellenblöcke in «Verwendet in» auch die Abschnitte nennen, deren Bildlegende die Quelle nennt? | SP2-F-W2-4 |
+| SP2-F-9 | Sollen die Bildlegenden die entfallenen Handouts weiter nennen? | SP2-F-W2-5 |
+| SP2-F-10 | Fehlende Verweise aus dem UMBAUPLAN (`grenzen`/`rolle` → `krise`, `grenzen` → `kommunizieren`): setzen oder den Plan nachführen? | SP2-F-W2-6 |
+| SP2-F-11 | **Prüfbedarf:** Dürfen gleichlautende Absicherungen innerhalb eines Abschnitts gebündelt werden (z. B. `krise` › `belastung`)? | SP2-F-S-2 |
+| SP2-F-12 | **Prüfbedarf:** «Ein neuer Trieb» zeigt Genesung als Pflanze. Für «Ein Stück Weg» wurde das Garten-Bild verworfen, weil die betroffene Person nicht als Pflanze erscheinen soll. Gilt das hier nicht? | SP2-F-V-01 |
+| SP2-F-13 | **Prüfbedarf:** «Mehrere Stellen» in `beziehungen` › `was-hilft` und der eine Ansatzpunkt der Schleife (Station 5): angleichen? | SP2-F-V-02 |
+| SP2-F-14 | Braucht der Eisberg (Schichtenmodell) einen `entryPoint`? Der Auftrag nennt ihn, das Profil verlangt ihn nur für B, C und G. | SP2-F-V-03 |
+| SP2-F-15 | «Ein neuer Trieb»: Ist der rechts gerade abgeschnittene Sims gewollt? | SP2-F-V-04, SP2-B-3 |
+| SP2-F-16 | «Ein neuer Trieb»: Der Auftrag 3 e sagt für die Randlinie «grau und dünner», umgesetzt ist grau, aber gleich breit (je 2 px). Genügt das? | SP2-F-SB-4 |
+| SP2-F-17 | Gilt für Figuren, die länger als eine A4-Seite sind, eine Ausnahme von der Druckregel? | SP2-F-B-1 |
+| SP2-F-18 | Wer führt die realen Screenreader-Läufe, Hardwaretastatur, Touch und den Windows-Kontrastmodus durch, und bis wann? (Protokollvorschlag in 5.5) | SP2-F-B-2 |
+| SP2-F-19 | «Pretty URLs» im Netlify-Projekt lassen oder ausschalten? Die Einstellung gilt auch für die Produktion; nach einer Änderung ist die Vorschau neu zu prüfen. (vor der Veröffentlichung) | SP2-F-W3N-1, SP2-F-SB-1, SP2-F-W1-3 |
+| SP2-F-20 | Wann wird die Team-Anmeldung für Vorschauen wieder eingeschaltet? Zurzeit ist der Entwurf für alle mit der Adresse sichtbar (`requiresSSOTeamLogin: false`). | SP2-F-W3N-2, SP2-F-SB-2, SP2-F-W1-3 |
+| SP2-F-21 | Werden die Build-Einstellungen des Netlify-Projekts vor dem Merge angeglichen (Publish-Ordner `site`, kein Build), und wer prüft die Produktion nach dem Merge? Mit dem Merge entfallen auf `main` auch die fünf Workflows und `material-download` (SP2-SB-1). (vor der Veröffentlichung) | SP2-F-SB-3, SP2-F-W1-3 |
+| SP2-F-22 | PR `christaegger-dot/borderline-angehoerige#659` wieder als Entwurf markieren? Er ist «bereit» und ohne Konflikt mergebar; ein Merge veröffentlicht die Website. | SP2-F-W3N-3 |
+| SP2-F-23 | Bestätigt die Fachstelle den Prüfauftrag (Vermerk «Entwurf zur Bestätigung»), und wo wird das eingetragen? | Kopf dieses Blocks; Teil 5.1 A, Punkt 6 |
+
+### Zählung und Stand der Stufen
+
+| Stufe | wichtig | optional | Fragen (in den Teilen) | Empfehlung Status |
+| --- | --- | --- | --- | --- |
+| W1 (5.1 A und B) | 2 (SP2-W1-1, SP2-W1B-1) | 7 | 5 | offen: SP2-W1B-1 offen; dazu rechtliche Prüfung und NK-F-3 (Auftrag Abschnitt 4) |
+| W2 (5.2) | 1 (= Fusszeile) | 9 | 6 | offen |
+| S (5.3) | 1 (= Fusszeile) | 20 | 2 | offen |
+| Visualisierungs-Check (5.4) | 2 (SP2-V-01, SP2-V-02) | 3 | 4 | offen |
+| Bedienung und Barrierefreiheit (5.5) | 0 | 4 | 2 | offen: reale Screenreader-Läufe, Hardwaretastatur, Touch, Windows-Kontrastmodus fehlen; 4 optionale Befunde |
+| W3 (5.6 A und B) | 1 (= Fusszeile) | 10 | 4 | offen |
+| Selbstprüfungen (5.7) | 0 | 6 | 5 | – (keine eigene Stufe) |
+| **Summe** | **7 IDs, 4 verschiedene** | **59 IDs, 48 verschiedene** | **28, zusammengeführt 23** | |
+
+R1 bis R3 sind nicht Teil dieses Auftrags. Die Zusammenführung mit Prüfung 1 (IDs «SPZ-») folgt, wenn beide Berichte fertig sind.
+
+### 5.1 W1 · Teil A: Korrekturen und Anpassungen, Freigabestände, Zuständigkeit, Haltung, offene Fragen (Prüfung 2)
+
+**Geprüfter Stand:** `f1d6572` (Arbeitsbaum `scratchpad/wt`), Geschichte gelesen mit `git show` und `git diff` im Repository `/home/user/puk-website-profil`. Kriterien: `guidelines/00-fachliche-qualitaet-und-haltung.md`, dazu `CLAUDE.md` (Zuständigkeit) und `guidelines/00-ablauf-pruefung-und-freigabe.md`. Nichts geändert; Werkzeuge nur in der Kopie `scratchpad/kopie-w1a`.
+
+**Vorgehen und Skripte** (alle in `scratchpad/w1a/bin/`):
+
+- `textify.py`: zerlegt eine Inhaltsseite in Textblöcke und Sätze (mit `alt`, `aria-label`, Linkzielen und Platzhalter `data-responsibility-inline`).
+- `oc.py A B "<seiten>" <zeilen>`: Satzvergleich zwischen zwei Commits. Je neuer Satz: steht er in den genannten Zeilen von `PRUEFBERICHT.md` (Listen «Neue Sätze zur Freigabe», «Entfallene Sätze»)? Steht er heute (`f1d6572`) noch so da? Je entfallener Satz: steht er in diesen Listen?
+- `attr.py <freigabestand> <seite>`: jede Satzänderung vom Freigabestand bis `f1d6572` dem Commit zugeordnet, der sie eingeführt hat (Kette `--first-parent`).
+- `cfg.py`: `site.config.json` je Seite und global zwischen zwei Commits verglichen.
+- `inline.py`: jeder Verweis im Text mit Abschnitt, Satz davor, Satz danach, Lage in Figur oder Vertiefung und Wortlautvergleich mit `responsibility.inline`. Ausgabe: `scratchpad/w1a/inline-gebaut.txt`.
+- Weitere Ausgaben: `scratchpad/w1a/wstk.txt` (alle «Was Sie tun können»), `absolut.txt` und `absolut-klassiert.txt` (Treffer für absolute Aussagen).
+- In der Kopie: `node tools/build.mjs` (17 Seiten, «Gate draft: 0 blockierend, 2 Hinweise»; die neu gebauten Seiten sind byte-gleich mit den eingecheckten, `cmp` ohne Abweichung) und `node abgleich/pruefe-abgleich.mjs` («Abgleich geprüft: 7371 Zeilen, 0 ohne Fundstelle.»).
+
+#### Punkt 1 · Je Auftrag gegen den Diff
+
+**a) Korrektur 2a-K** (`KORREKTUR-ETAPPE-2A.md`, `git diff 8d33dbb^ 8d33dbb`)
+
+| Auftragspunkt | umgesetzt? | Beleg (Zitat aus dem Diff, `content/`) |
+| --- | --- | --- |
+| 3 Verantwortung, vier Sätze | ja | «+ Sie können einen eigenen Fehler anerkennen, ohne Verantwortung für die Erkrankung …», «+ Für Behandlung und Genesung sind Sie nicht verantwortlich.», «+ Sie müssen die Erkrankung nicht heilen und sind weder für die Behandlung noch für die Genesung verantwortlich.», «+ Belastende Erfahrungen können mitwirken, neben vielen anderen Einflüssen.» / «+ Daraus folgt keine Schuld und keine Aufteilung von Verantwortung für die Erkrankung.» |
+| 3 ganze Seite ohne Teilverantwortung | ja | `textify.py` über `rolle` (`f1d6572`): 30 Sätze mit «verantwort», «tragen», «Schuld» gelesen; keiner weist Angehörigen Verantwortung für Erkrankung, Behandlung oder Genesung zu. Kopf: «Sie müssen keine andere Person beruhigen und nicht ihre Behandlung oder Genesung tragen.»; Vertiefung «Plötzliche Entscheidungen», weniger hilfreich: «Verantwortung für die Folgen übernehmen» |
+| 4 Kinder, erster Absatz | ja | «+ Betreuung, Unterstützung und Sicherheit müssen Erwachsene organisieren.» «+ Kinder müssen weder Streit schlichten …» |
+| 4 «Was Sie tun können» | ja | «- Was Kinder nicht übernehmen müssen, steht auf der Seite «Grenzen» …», «+ Welche zweite erwachsene Person ist erreichbar, wenn die erste ausfällt?» |
+| 4 letzter Absatz, Reihenfolge | ja | gebaut `rolle#kinder`: «Bei Angst, Gewalt …» · «Bei akuter Gefahr holen Erwachsene sofort Hilfe.» · Verweis im Text · «Was bei Gewalt oder Bedrohung …» · «Eine Fachstelle, die Kinderarztpraxis …» |
+| 4 Abgleich r67, r68, r72, r736 | ja | `abgleich/rolle.md`: alle vier «verschoben (2a-K)», Ort `rolle#kinder` |
+| 5 K-R-a1 bis a7 | ja | z. B. «+ Wählen Sie Ihren nächsten Schritt danach, was Ihnen wichtig, möglich und sicher ist: ein Angebot oder eine Grenze.» (a1); «- Sie können nicht:» und die fünf Punkte, «+ jede Krise oder Eskalation zu verhindern oder alle Auslöser zu vermeiden» (a6); «- Unterschiedliche Angehörige dürfen unterschiedliche Grenzen haben.», «- Was hilft:» (a7) |
+| 5 K-R-b1, b3, b4 (Vertiefungen) | ja | `8d33dbb:content/rolle.html`: `puk-acc__heading` «Drei Fragen zur Selbstklärung», «Kleine gute Momente schaffen», «Grosse Ausgaben und finanzielle Risiken», «Plötzliche Entscheidungen …»; «Substanzkonsum und riskantes Verhalten» sichtbar (gebaut `f1d6572`) |
+| 5 K-R-b2 (STOPP) | ja | «- Innehalten, bevor Sie reagieren» und vier Schritte; «+ Wie Sie dann innehalten können, bevor Sie reagieren, steht auf der Seite «Auf sich achten» im Abschnitt «Wenn es gerade zu viel ist».» |
+| 5 K-R-b5 | ja | «+ Dass solche gemischten Gefühle oft zur Belastung dazugehören, steht auf der Seite «Verstehen» im Abschnitt «Was Angehörige erleben können».»; Liste «Mögliche Reaktionen …» unverändert |
+| 5 K-S-a1 bis a8, K-S-b1 bis b4 | ja | z. B. «+ Wie Sie Aufgaben abgeben, Ihre Erreichbarkeit begrenzen …» (a1); «+ Die Liste ist kein Test, keine Diagnose und kein Beweis …» (a4); «- Sie sind nicht allein.» (a8); Akkordeons «Partnerin oder Partner / Eltern / Erwachsenes Kind» (b3), «Kleine Auszeiten / Bewegung / Kontakte» unter «Langfristig für sich sorgen» (b2, der Satz zur ärztlichen Abklärung steht nach `</div></div></div>`, also sichtbar), «Eine freiwillige Übung in vier Schritten» (b4) |
+| 5 Ziel Wörter | nicht geprüft | Längen gehören zum Sprach-Review (5.3) |
+| 6 Schutzsatz (P2a-F-4) | ja | gebaut `selbstfuersorge#eigenes-leben`: «Bei Gefahr hat Schutz Vorrang.» direkt vor dem Verweis im Text |
+| 6 Verweis bei Schuld | ja | «+ Warum Angehörige nicht schuld sind, erklärt die Seite «Verstehen» im Abschnitt «Häufige Annahmen – und was realistischer ist».» `[→verstehen.html#mythen]` |
+| 6 DBT, s213 | ja | `selbstfuersorge.md` Nr. 213 «zusammengeführt», Bemerkung «… mit `glossar.md` Z. 108 als zweiter Quelle» |
+| 6 «Vielleicht kommt gleich eine Nachricht.» | ja | Szene, `p.puk-sr` und `statement` geändert; `git grep 'ruft sie' f1d6572 -- content site.config.json`: kein Treffer |
+| 6 Vertiefung «Ein freier Abend» | ja | «+ Ständige Bereitschaft ist keine Pflicht, und wer sie spürt, macht nichts falsch.» |
+| 6 Lage der Abbildungen, Quellenzeilen | ja | Abbildungen im Diff nach dem ersten Absatz verschoben; Quellenzeilen am Abschnittsende (seit 2b-2 im Quellenblock) |
+| 6 «Ein Stück Weg» verfeinern / «Ein freier Abend» unverändert | ja / ja | SVG von `v-ro-weg` geändert (MD5 vorher ≠ nachher); SVG von `v-sf-abend` ohne den Gedankensatz gleich vor 2a-K, nach 2a-K und heute (MD5 `e7696a67…` dreimal). Gestalt selbst: Visualisierungs-Check (5.4) |
+| 6 Seitennamen, Begriffe, klares Subjekt | ja | «+ … auf der Seite «Grenzen».», «+ … Seite «Ihre Rolle» …»; «Alarm», «zwiespältig»: 0 Treffer in `content/` und Plan; «+ … wann jemand eine Pause von der Unterstützung machen kann …»; «+ Manche sind angespannt …», «+ Viele wollen helfen …», «+ Vielleicht merken Sie:» mit fünf Listenpunkten |
+| 6 Abgleich r145, r458, r655, s213, s65 | ja | alle fünf Zeilen mit «Nachgeführt 2a-K (P2a-W1-4)» bzw. «2a-K, P2a-W1-4» |
+
+- **Ausserhalb des Auftrags:** nur Folgen des Auftrags. Die Quellenzeile von `anbieten` bekam «NICE NG150 (2020)», weil «Drei Fragen» mit ihrer Quelle umzog (Selbstprüfung 2a-K, K-R-b3: «Quellenzeile um NICE NG150 (2020) ergänzt (Handout `drei-saeulen` …)»). `abgleich/verstehen.md` zwei Zeilen; keine Inhaltsänderung an Etappe 1 und `index` (`oc.py`: leer für `index`, `verstehen`, `beziehungen`, `grenzen`).
+- **Neue und entfallene Sätze:** Alle 37 neuen Sätze auf `rolle` und 21 auf `selbstfuersorge` stehen in der Liste «Korrektur 2a-K: Neue Sätze zur Freigabe» (Z. 4999 ff.). Alle 74 bzw. 54 entfallenen Sätze stehen in «Entfallene Sätze» E1 bis E143 mit Ersatzfassung, z. B. E93 «Sie sind aber weder dafür verantwortlich, dass eine Beziehung vorhersehbar ist …» (mit 2a-2 zurückgekommen) und E122 «gutheissen: …» → «Radikale Akzeptanz heisst: anerkennen, was gerade ist, ohne es gutzuheissen.». Kein still entfallener Satz gefunden.
+- **Heute noch gleich:** ja, bis auf Änderungen späterer Aufträge: Quellenzeilen (2b-2), «Das ist kein typischer Verlauf …» (2a-2), SVG «Ein Stück Weg» (2a-2).
+
+**b) Korrektur 2a-2** (`KORREKTUR-ETAPPE-2A2.md`, `git diff 8d33dbb 416f6d0`)
+
+| Auftragspunkt | umgesetzt? | Beleg |
+| --- | --- | --- |
+| 2 Weg gewunden, Figuren wie 2a-K | ja (Text und Plan) | SVG von `v-ro-weg` geändert (MD5 `43a0…` → `bb0b…`, heute `bb0b…`); Gestalt: 5.4 |
+| 3 `kraft`, Absatz | ja | «+ Das ist eine mögliche Erfahrung, kein typischer Verlauf, und lässt sich nicht aus der Diagnose vorhersagen.» «+ Wenn Sie sich oft wachsam oder erschöpft fühlen, verdient das Aufmerksamkeit, auch wenn von aussen wenig sichtbar ist.» «+ Sie sind weder dafür verantwortlich, dass eine Beziehung vorhersehbar ist, noch dafür, die Gefühle eines anderen Menschen auszugleichen.» |
+| 4 `schuld` | ja | «- Ein Vergleich mit anderen Familien erklärt weder die Ursachen noch Ihre persönliche Verantwortung.» «+ Ein Vergleich mit anderen Familien erklärt nicht, warum jemand erkrankt.» «+ Daraus folgt keine Schuld.» |
+| 5 Liste nachgeführt | ja | alle fünf Sätze in der Liste (Nr. 51b u. a.) |
+
+Sonst keine Änderung (`oc.py`: nur diese Sätze; `index` leer). Heute unverändert (`attr.py rolle/selbstfuersorge` ab `416f6d0`: keine dieser Stellen geändert).
+
+**c) Korrektur 2b-K** (`KORREKTUR-ETAPPE-2B.md`, `git diff c0b312c^ c0b312c`)
+
+| Auftragspunkt | umgesetzt? | Beleg |
+| --- | --- | --- |
+| 3 a `belastung` | ja | «+ Bei unmittelbarer Gefahr oder wenn Sie nicht einschätzen können, wie dringend es ist, holen Sie sofort Hilfe und schützen sich selbst.», «- Diese Seite ersetzt keine professionelle Krisenberatung.», «+ Die Bereiche bewerten keine Diagnose …», «+ Wenn Sie nicht wissen, ob die Person einen Plan hat, bedeutet das keine Sicherheit.»; Reihenfolge gebaut: Anleitung · Verweis im Text · «Die Fachstelle Angehörigenarbeit bietet …» |
+| 3 c `sagen` | ja | «+ Bei Bedrohung oder Gewalt gehen Sie auf Abstand, bringen sich in Sicherheit und holen Hilfe über den Notruf.», «- Bei Bedrohung bringen Sie sich in Sicherheit und informieren die Leitstelle.», «- Zuerst stellen Sie Verbindung her …», Liste entfallen, «+ Ein Satz kann so klingen: …», «+ Wie Sie ein kippendes Gespräch verlangsamen …» |
+| 3 d `danach` | ja | «+ Bei möglicher unmittelbarer Lebensgefahr holen Sie sofort Hilfe über den Notruf.» |
+| 3 e sechs Verweise, keine «Leitstelle»/«Rettungsdienst» | ja | `krise`: 6 × `data-responsibility-inline` (`c0b312c` und `f1d6572`), 0 Treffer für beide Wörter |
+| 4 a, b, c | ja | «+ Was Sie in einer Krise vermeiden sollten», «+ In einer Krise sollten Sie vermeiden,»; WHO (2026) in der Quellenzeile `suizid`; drei Nachsorge-Sätze im Wortlaut |
+| 5 a bis d | ja | «+ Drei Stellen der Anspannungskurve …», «+ Wir können sprechen.» / «+ Es wird eng.» / «+ Es ist gerade zu viel.», «+ Stoppen Sie, und schaffen Sie Abstand.», «+ Grenzen dafür, wie lange oder wann Sie sprechen …», «- Linehan beschreibt fünf …», «+ Die Stufen sind keine Pflichtfolge …», «+ Übernehmen heisst hier: …», `zuhoeren` und `worte` im Wortlaut |
+| 6 «Zwei Tassen» | ja (Text) | `p.puk-sr` und `statement`: «stehen nebeneinander auf einem Tisch»; `viewBox="0 60 640 200"` unverändert; Gestalt: 5.4 |
+| 7 Plan | ja | `v-ko-moment`, `v-kr-sagen`, `v-kr-danach` › `reason`, `v-ko-tassen` › `statement` (Diff `site.config.json`, vier Zeilen) |
+| 7 Abgleich k25, k726, c190, k572, k764, k765, k968; c29, c65, c106, c279, c252–c261, c263, c303; k14, k28 | ja | je Zeile Status und Bemerkung mit Fragennummer, z. B. c303 «neu (2b-K) … (P2b-F-8)», k28 «entfällt (2b-K): Zuschreibung nicht an der Quelle geprüft, P2b-F-9» |
+
+Keine Änderung an Etappe 1, 2a und `index` (`oc.py`: leer). Neue Sätze alle in der Liste (2b-K Z. 4485 ff., z. B. Nr. 1a, 4, 49a, 51, 54a, 55a). Heute gleich, bis auf die Quellenzeile `suizid` (2b-2: in den Quellenblock).
+
+**d) Korrektur 2b-2** (`KORREKTUR-ETAPPE-2B2.md`, `git diff 31215a8^ 31215a8`)
+
+| Auftragspunkt | umgesetzt? | Beleg |
+| --- | --- | --- |
+| 3 sechs Stufen sichtbar, Vertiefung | ja | «+ Stufe 1 Aufmerksam sein» … «+ Stufe 6 Radikale Echtheit: auf Augenhöhe bleiben», je «Beispiel» mit dem Wortlaut der Tabelle; «+ Die sechs Stufen im Detail» (seit Freigabe 2b sechs Einträge) |
+| 4 Quellen in den Block, sieben Seiten | ja | z. B. `beziehungen`: «- Grundlage: Studien beschreiben Gruppen …» → «+ Studien beschreiben Gruppen, nicht eine bestimmte Person oder Beziehung.» im Text; `selbstfuersorge`: «+ Die Übung in vier Schritten ist eine vereinfachte eigene Darstellung.»; je Seite «+ Quellen zu dieser Seite» mit «Verwendet in» |
+| 4 Bildlegenden bleiben | ja | `grenzen` DEAR: `figcaption` «Quelle: Linehan (2015), DBT Skills Training Manual (DEAR MAN) …» unverändert |
+| 4 keine Quelle fehlt oder kommt dazu | ja | Satzvergleich: jede Quelle der entfallenen Zeilen steht im Block, keine neue (z. B. `rolle`: zehn Quellen vorher, zehn Einträge nachher) |
+| 5 Reste | ja | «+ Eine Übersicht über mehrere Studien (Dazzi et al., 2014) fand keine nachweisbare Zunahme …», «+ Kim fühlt sich …», «+ Die Namen bezeichnen keine festen Rollen …», Verweissatz nach der Einleitung; `description` «… was Sie vermeiden sollten …», `v-kr-vermeiden` › `goal`, `v-ko-tassen` › `reason` |
+| Etappe 1 und 2a nur Quellenort | ja | `oc.py` für `verstehen`, `beziehungen`, `grenzen`, `rolle`, `selbstfuersorge`: nur Quellenzeilen entfallen, Block neu, Aussagesätze ohne Quellennamen im Text; `index` leer |
+
+- **Ausserhalb des Wortlauts:** «Bezug: NICE CG78 (2009).» (`grenzen` › `arten`) mitverschoben; als Entscheid Nr. 5 begründet, von der Fachstelle mit Freigabe 2b bestätigt («Entscheide der bauenden Sitzung 2b-2 (Nr. 1 bis 11): bestätigt, ausser Nr. 1»).
+- **Liste:** Nr. 35, 36a, 53a, 14b, 14c, 42, 43a nachgeführt; «Zur Prüfung» Nr. 12 mit Bestandszitat (Z. 4311 ff.).
+- **Heute:** gleich bis auf Freigabe 2b (3 a, 3 b) und «Linehan (2015)» (3-1-K, freigegeben NK-F-1).
+
+**e) Anpassungen Freigabe 2b** (`FREIGABE-ETAPPE-2B.md`, `git diff 7925eaf^ 7925eaf`)
+
+| Auftragspunkt | umgesetzt? | Beleg |
+| --- | --- | --- |
+| 3 a sechs Einträge | ja | `h4` «Die sechs Stufen im Detail», darunter sechs `h5.puk-acc__heading` «Stufe 1 ·» bis «Stufe 6 ·» |
+| 3 b Zwischentitel | ja | `h3` «Mitgefühl heisst nicht übernehmen», Absatz beginnt «Sie können Beobachtungen vorsichtig spiegeln, …» |
+| 3 c Leerraum | ja | `puk-site-anchor-end` vom letzten Inhaltsabschnitt an den Quellenblock (Diff `rolle`, `krise`); seit Bauauftrag 2c-1, Abschnitt 7, ganz entfernt |
+| 3 d «Nächster Schritt» | ja | «+ Nennen Sie einen Schritt, den Sie selbst in der Hand haben.»; k726 «zusammengeführt (2b-F)» |
+| 4 sieben Verweissätze | ja | alle sieben im Wortlaut (`oc.py`); Orte gebaut geprüft, z. B. Satz 7 direkt nach dem Verweis im Text in `selbstfuersorge#zu-viel`, Satz 1 nach dem Verweis im Text in `verstehen#mythen` |
+| 5 Plan | ja | `v-ko-tassen` › `approvalStatus` «freigegeben», `reason` um 3 a und 3 b ergänzt |
+
+Keine weitere Wortänderung; `index` leer. Alle neuen Sätze in der Liste (2b-K). Heute gleich (Kette `attr.py`: keine spätere Änderung dieser Sätze).
+
+**f) Anpassungen Freigabe 2c und 3-1** (`FREIGABE-ETAPPE-2C-3-1.md`, `git diff 55e98cb f78aae9`)
+
+| Auftragspunkt | umgesetzt? | Beleg |
+| --- | --- | --- |
+| 3 a «Behandlungsrahmen» | ja | «+ … oder in jedem Behandlungsrahmen identisch verwendet werden.»; «setting» auf `diagnose`: 0 Treffer (`content/` und gebaut) |
+| 3 b «Viele wollen helfen …» | ja | «+ Viele wollen helfen und fühlen sich zugleich hilflos, …» |
+| 3 c LeDoux | ja | «+ Simon & Schuster, New York.» |
+| 3 d Container-Abfrage in `em` | ja | `@container (max-width:45.71em)` statt `960px` |
+| 3 e Linie «Weniger hilfreich» | ja | `[data-visual-id="v-ge-trieb"] .puk-vis-scene__say:not(.puk-vis-scene__say--b){border-left:var(--border-width-strong) solid var(--ui-hairline)}` |
+| 4 13 Verweissätze, Linkziele | ja | alle 13 Sätze im Wortlaut; neue `href`: `genesung.html#forschung`, `#verlauf`, `#einfluesse`, `diagnose.html#begleiterkrankungen`, `#abklaerung`, `#ohne-diagnose`, `behandlung.html`, `#rollen`, `#kontakt`, `unterstuetzung.html#buecher`, dreimal `unterstuetzung.html` – genau die Tabelle des Auftrags |
+| 5 Plan | ja | `v-ge-trieb` «freigegeben»; `v-be-therapieformen` › `goal` und `reason`, `v-un-beratung` › `reason` im Wortlaut; nachgeführt `v-vs-borderline`, `v-ro-kinder`, `v-sf-beratung` |
+| 6 c NK31-2, NK31-4 | ja | Z. 1277 «`grenzen` +13 … berichtigt mit der Freigabe 2c und 3-1»; Listen 3-1-K Nr. 110 und 2c-K Nr. 342: «Bedingung im Wortlaut von `krise` › `belastung`, Handlung nach Auftrag» |
+| 6 d `UMBAUPLAN.md` | ja | `ueber` und `impressum-datenschutz` «kein Richtwert, Entscheid zu NK-F-7»; Stand «Etappen 2c und 3-1 freigegeben» |
+
+- `grenzen`, `kommunizieren`, `genesung`, `unterstuetzung`, `behandlung`, `fragen`, `impressum-datenschutz`: kein Satz geändert (`oc.py` leer). In `borderline.css` nur die Regeln aus 3 d und 3 e.
+- Nr. 5 steht am Absatzende statt direkt nach dem Satz: erlaubt (Abschnitt 2) und begründet (Entscheid Nr. 5).
+- Alle neuen Sätze aus 3 a, 3 b und 4 stehen in den Listen (2c-K Nr. 137, 348–360; 3-1-K Nr. 455). Abgleich: 10 neue Zeilen «neu (Verweis, 2c-3-1-F)», 7361 + 10 = 7371 Zeilen, 0 ohne Fundstelle (selbst ausgeführt).
+- **Heute:** `git diff --stat f78aae9 f1d6572` zeigt nur `PRUEFBERICHT.md` (133 Zeilen) und `UMBAUPLAN.md` (4). Alle Stellen gleich.
+
+#### Punkt 2 · Freigabestände gegen heute
+
+Freigabestände: Etappe 1 `540c37d` + `67495c0` (1j); 2a `416f6d0`; 2b `7925eaf` (Stand nach 2b-K, 2b-2 und den Anpassungen der Freigabe; der nächste Commit an `kommunizieren` oder `krise` ist `66d73b1`); 2c und 3-1 `f78aae9`.
+
+| Seite (Freigabestand) | Änderungen bis `f1d6572` | zugeordnet |
+| --- | --- | --- |
+| alle Etappe-1-Seiten (`540c37d` → `67495c0`) | nur Quellenzeile `verstehen` «+ NICE CG78 (2009)» | Korrektur 1j, P4-F-16 |
+| `index` (`67495c0`) | Einstiege `rolle`, `selbstfuersorge` (`94afac7`), `kommunizieren` (`26af566`), `genesung`, `unterstuetzung` (`66d73b1`), Platzhalter entfallen; V1, V2 (`f3cb270`); Verweissatz Nr. 13 (`f78aae9`) | Bauaufträge 2a, 2b, 2c-1 Abschnitt 6 (je freigegeben); 3-1-K und Freigabe 2c/3-1 (NK-F-1, P2c-F-16) |
+| `verstehen`, `beziehungen`, `grenzen` (`67495c0`) | Quellen in den Block (`31215a8`); 3 + 1 + 2 Verweissätze (`7925eaf`); `puk-site-anchor-end` entfernt (`66d73b1`); `<span lang="en">` (`3ff1fb8`); Verweissatz auf `quellen`, «Linehan (2015)» (`f3cb270`); 3 + 2 Verweissätze (`f78aae9`) | 2b-2; Freigabe 2b; Bauauftrag 2c-1 Abschnitt 7; Etappe 3-1 (Markup, Wortlaut gleich); 3-1-K (NK-F-1); Freigabe 2c/3-1 |
+| `rolle`, `selbstfuersorge` (`416f6d0`) | wie oben: Quellenblock, 1 Verweissatz (`7925eaf`), Klasse, `lang`, Verweissatz auf `quellen`, 3 + 2 Verweissätze | dieselben Aufträge |
+| `kommunizieren`, `krise` (`7925eaf`) | Klasse (`66d73b1`), `lang` (`3ff1fb8`), Verweissatz auf `quellen` (`f3cb270`), `krise` 2 Verweissätze (`f78aae9`) | dieselben Aufträge |
+| `genesung`, `unterstuetzung`, `diagnose`, `behandlung`, `fragen`, `quellen`, `ueber`, `impressum-datenschutz`, `404`, `_redirects`, ganze `site.config.json` (`f78aae9`) | keine | – |
+
+- **Linkziele:** Vergleich aller `href` je Seite. Neu sind nur die Ziele der genannten Verweissätze und Einstiege (z. B. `verstehen`: `diagnose.html#abklaerung`, `#begleiterkrankungen`, `genesung.html#forschung`, `kommunizieren.html#moment`, `krise.html#suizid`, `quellen.html`, `rolle.html#schuld`).
+- **`site.config.json` je Seite** (`cfg.py`): neu sind nur die Planzeilen `v-…-quellen` (2b-2), `approvalStatus` «freigegeben» (Freigaben), nachgeführte `reason` (`v-vs-borderline`, `v-ro-kinder`, `v-sf-beratung`, Freigabe 2c/3-1). Global: `assetVersion`, `legal`, `siteUrl`, `$comment` (Etappe 3-1, technisch). `responsibility` ist seit dem Freigabestand Etappe 1 unverändert.
+- **Ergebnis:** Jede Änderung geht auf einen Auftrag zurück. Die `lang`-Auszeichnung aus Etappe 3-1 hat keinen eigenen Auftragstext im Ordner (Auftrag der Fachstelle vom 11.10.2026 nach UMBAUPLAN, Selbstprüfung 3-1: «englische Quellentitel in `<span lang="en">` … Wortlaut unverändert»). Sie ändert nur Markup, keinen Wortlaut; kein Befund.
+
+#### Punkt 4 · Zuständigkeit
+
+| Prüfpunkt | Ergebnis | Beleg |
+| --- | --- | --- |
+| Telefonnummern | keine | Regex (`+41`, `0xx xxx xx xx`, `08xx`, `1[0-4]x`, `117`, `112`, `143`, `144`, `147`, `xxx xx xx`) über den sichtbaren Text, `alt`, `aria-label` und `title` aller 18 gebauten `*.html`, aller 17 `content/*.html` und aller Zeichenketten in `site.config.json`. Treffer nur Studienangaben auf `quellen` («134 Teilnehmenden», «103–111», «149 Teilnehmenden», «134–144», «121 Angehörigen») und in `v-ko-tassen` › `reason` («Tassenkörper bei x 190–258 und 382–450»). Hinweis des Gates «144» = Seitenzahl «134–144» (Guillén et al. 2021) |
+| `tel:` | keine | `grep -i 'tel:'` über gebaute Seiten, `content/`, `site.config.json`, `_redirects`: 0 |
+| Notfallblock | keiner | Fusszeile aller 17 Seiten `data-safety-variant="responsibility"`, sonst keine Sicherheitsvariante; keine Klasse mit «emergency» oder «crisis» |
+| Seite «Hilfe in der Krise» | keine | 0 Treffer; Seite `krise` heisst «Krisen begleiten» (freigegeben 11.10.2026); `_redirects` Z. 8–18: alte Notfall-Adressen auf `/index.html` |
+| Verweise im Text | 26, alle richtig | je 26 Platzhalter in `content/` und gebaut (`behandlung` 2, `beziehungen` 1, `diagnose` 2, `fragen` 6, `grenzen` 1, `kommunizieren` 2, `krise` 6, `rolle` 2, `selbstfuersorge` 3, `verstehen` 1). Gebaut 26 × Wortlaut exakt «Sorgen Sie sich akut um das Leben oder die Sicherheit eines Menschen, holen Sie sofort Hilfe: ärztlicher Notfalldienst oder Notfallstation, bei Gefahr die Polizei.» = `responsibility.inline.text`. Keiner in Figur oder Vertiefung, höchstens einer je Abschnitt. Jeder steht direkt nach einer Handlungsanleitung für akute Lagen (Liste `inline-gebaut.txt`), z. B. `krise#suizid` nach «Zum Beispiel: «Ich mache mir Sorgen um dich. Denkst du gerade daran, dir das Leben zu nehmen?»», `behandlung#kontakt` nach «Bei möglicher akuter Gefahr holen Sie sofort Hilfe über den Notruf …». Grenzfälle mit Entscheid: `selbstfuersorge#eigenes-leben` nach «Bei Gefahr hat Schutz Vorrang.» (P2a-F-4); `fragen#gespraeche` nach «Bei Bedrohung oder Gewalt haben Abstand und Schutz Vorrang vor dem Gespräch.» (Etappe 3-1, freigegeben) |
+| Fusszeile, site-weiter Verweis | 17 von 17 | je Seite `section.puk-site-safety` «Zuständigkeit» mit Text exakt gleich `responsibility.text`, nicht verborgen |
+| Weitere Fundstellen | ohne Befund | «Notruf» ohne Nummer (Entscheid P2b-F-1); `unterstuetzung`: «Die Telefonberatung zu Fragen rund um psychische Gesundheit ist kostenlos.» (Pro Mente Sana, ohne Nummer, freigegeben); `behandlung`: Musterbrief «[Optional: Telefonnummer für Rückruf]» (eigene Nummer der Angehörigen) |
+
+Beim Lesen der Fusszeile aufgefallen: «Redaktioneller Status: Entwurf – fachliche Prüfung ausstehend» auf allen 17 Seiten (Befund SP2-W1-1).
+
+#### Punkt 5 · Haltung
+
+- **`entryPoint` (3):**
+  - `v-vs-anspannung`: «nicht weiter argumentieren, weniger Druck machen, das eigene Tempo senken, auf die eigene Anspannung achten und eine Pause anbieten; die andere Person müssen Sie nicht beruhigen»
+  - `v-bz-schleife`: «Statt sich weiter zu verteidigen, können Sie das Gefühl anerkennen, nachfragen … und Ihre eigene Grenze halten»
+  - `v-gr-dear`: «entfällt: Der ganze Ablauf beschreibt das eigene Handeln der Angehörigen.»
+  - Alle drei beschreiben eigenes Handeln, keine Verantwortung für Behandlung oder Verlauf. In der Figur gleich (`p.puk-vis-ansatz` auf `verstehen` und `beziehungen`).
+  - `v-vs-eisberg` hat das Format `layer-model` ohne `entryPoint`; das Gate verlangt ihn nur für `cycle`, `process`, `stepwise-model` (`tools/contract.js` Z. 40). Ob ein Schichtenmodell einen Ansatzpunkt braucht, prüft 5.4.
+- **«Was Sie tun können» (34 Stellen auf 9 Seiten, `wstk.txt`):** alle gelesen. Alle beschreiben eigene Möglichkeiten: fragen, anbieten, Pause, Grenze, eigene Beratung. Wo Behandlung vorkommt, bleibt sie bei der betroffenen Person:
+  - `beziehungen`: «Kommen solche Erfahrungen wiederholt vor, gehören sie in die Behandlung. Sie können die Person ermutigen, sie dort anzusprechen.»
+  - `behandlung`: «Nehmen Sie schwierige Phasen ernst, ohne den Therapieverlauf von aussen zu bewerten.»
+  - `diagnose`: «Regen Sie, wenn möglich und gewünscht, gemeinsam eine fachliche Einschätzung an.»
+  - `genesung`: «Erinnern Sie sich: Genesung ist individuell und keine Leistung der Familie.»
+  - Entlastend dazu, z. B. `kommunizieren`: «Dafür sind Sie nicht verantwortlich, auch wenn Sie versuchen, die Lage zu beruhigen.»
+  - Kein Befund.
+- **Absolute Aussagen** («immer», «nie», «alle», «jede…», «stets», «garantiert», «heilbar», «Heilung», «vollständig», «typisch», «zwingend», «sicher»): 154 Treffer, alle im Kontext beurteilt (`absolut-klassiert.txt`):
+  - 40 verneinen oder relativieren, z. B. «Kein einzelnes Merkmal trifft auf alle zu …» (`verstehen`), «Keine Formulierung garantiert einen bestimmten Verlauf.» (`krise`)
+  - 30 nennen «sicher» als Bedingung
+  - 9 sind Zitate oder als «Eher problematisch» markierte Beispiele, z. B. «Du rufst immer zur falschen Zeit an.» (`grenzen`)
+  - 5 sind Abschnittstitel im Quellenblock
+  - 70 einzeln gelesen: Keiner schreibt der betroffenen Person ausnahmslos ein Merkmal zu. Grenzfälle, alle ohne Befund:
+    - «Nehmen Sie Suizidäusserungen immer ernst, …» (`fragen`, Handlungsanleitung)
+    - «Bei Suizidgedanken oder Selbstverletzung darf Hilfe nie zurückgehalten werden …» (`beziehungen`, freigegeben)
+    - «Borderline wird von jeder Person anders erlebt.» (`verstehen`, betont das Einzelne)
+    - «Diese Fähigkeit nutzen alle Menschen.» (`quellen`, Mentalisieren)
+- **«sind»-Sätze über Betroffene** (Regex «Menschen mit Borderline / Betroffene / betroffene Person … sind/ist/haben/wollen/manipulier…»): 8 Treffer, keine Zuschreibung. Einzig «Für die betroffene Person ist dieses Erleben real, auch wenn Sie es anders gemeint haben.» (`beziehungen` › Station 2): steht nach «… können schnell wie Ablehnung … wirken» und vor «Und manchmal war die Zurückweisung tatsächlich da.», also bedingt; Etappe 1, freigegeben.
+- **Heilungsversprechen:** keines. `fragen`: «Der Begriff «heilbar» ist dafür zu ungenau.», «Viele Menschen erreichen im Verlauf eine deutliche Besserung oder Remission. Zeitpunkt, Ausmass und persönliche Genesung unterscheiden sich aber.»; `genesung`: 93 % und 50 % mit «Die Zahlen beschreiben diese Studiengruppe und keine persönliche Prognose.»
+
+#### Punkt 6 · Offene Fragen aller Runden
+
+| Fragen | entschieden? | Beleg |
+| --- | --- | --- |
+| frühere Runden (F-W1-…, F-W2-…, R3-…, BS-…) | in P4-F überführt und entschieden | «A4 · Offener Prüfbedarf aus früheren Runden» (Z. 8418 ff., z. B. «F-W1-11 … → P4-F-16», «BS-5 zweiter Teil … → P4-F-20»); `KORREKTUR-ETAPPE-1I.md` Z. 20 «P4-F-20: Es gibt keine zweite Linie» |
+| P4-F-1 bis -21 | ja | Freigabe Etappe 1 (Z. 39): «Alle 21 Fragen der vierten Prüfrunde sind entschieden» |
+| P2a-F-1 bis -10 | ja | Freigabe 2a (Z. 50) |
+| Vorschläge V1–V9 (2a), Nr. 1–9 (2b) | ja, durch Auswahl | `FREIGABE-ETAPPE-2B.md` Abschnitt 4: sieben Verweissätze (aus V1, V6, V9 und 2b Nr. 1, 2, 4, 9); die übrigen sind nicht übernommen |
+| P2b-F-1 bis -12; Selbstprüfung 2b Nr. 1–12; drei Fragen der Nachprüfung 2b-K | ja | Freigabe 2b (Z. 61) |
+| «Freigabe 2b: Zur Prüfung» Nr. 1 (Mindesthöhe) | ja | `BAUAUFTRAG-ETAPPE-2C1.md` Z. 162 «Die Mindesthöhe (`puk-site-anchor-end`) fällt ganz weg.»; umgesetzt `66d73b1` |
+| P2c-F-1 bis -17, P2c2-F-1 bis -15 | ja | `KORREKTUR-ETAPPE-2C.md` (Entscheide der Fachstelle 12.10.2026), Freigabe 2c/3-1 (Z. 76) |
+| Selbstprüfung 2c-1 Nr. 1–12, 2c-2 Nr. 1–18, Vorschläge 2c-1 und 2c-2 | ja | Freigabe 2c/3-1 (Z. 76: «die Fragen der Selbstprüfungen 2c und 3-1»); alle 13 Vorschläge umgesetzt |
+| P3-F-1 bis -6, P3b-F-1 bis -20 | in Z31-F überführt | Z. 496 ff.; P3b-F-2 und -14 zurückgezogen |
+| Z31-F-1 bis -22, S-Nr. 1–17 (3-1) | ja, ausser den rechtlichen | `KORREKTUR-ETAPPE-3-1.md` Abschnitt 1 und 7; Freigabe 2c/3-1 (Z. 76). Entschieden hat nach `KORREKTUR-ETAPPE-3-1.md` Z. 8 im Auftrag der Fachstelle die Sitzung der zweiten Prüfung; die Fachstelle hat die Entscheide mit der Freigabe übernommen |
+| NK-F-1 bis -8 | ja (NK-F-3, -8 mit Folgeschritt) | `FREIGABE-ETAPPE-2C-3-1.md` Z. 21–32 |
+
+**Offen (mit Beleg):**
+
+1. **Rechtliche Prüfung** von Impressum und Datenschutz: S-Nr. 5 und 6, Z31-F-9, Z31-F-19, NK-F-8 («Offen bis vor R3», Z. 77–78; `KORREKTUR-ETAPPE-3-1.md` Z. 180–184).
+2. **NK-F-3:** Verlag, Auflage und Jahr von «Schluss mit dem Eiertanz» am Buch bestätigen (Z. 79).
+3. **Etappe 3-2,** Entscheide der Fachstelle, in `f1d6572` nicht dokumentiert:
+   - «Pretty URLs» («Entscheid der Fachstelle; für W3 und R1 vorzulegen», Aufgefallen Nr. 3)
+   - Schutz der Vorschauen wieder einschalten («Empfehlung: wieder einschalten», Kurzfassung Nr. 4)
+   - Build-Einstellungen des Netlify-Projekts angleichen (Aufgefallen Nr. 4, Vorschlag)
+4. **Freigabe 2c und 3-1,** Selbstprüfung, nicht entschieden:
+   - Entscheid Nr. 3: «Soll auch «Tragfähiger» in der Szene 3 px bekommen …» (Gestaltung)
+   - Aufgefallen Nr. 3: `v-ix-beratung` › `reason` «steht nur hier» stimmt seit P2c-F-14 nicht mehr
+   - Aufgefallen Nr. 4: `abgleich/verstehen.md` Nr. 116 (Befund SP2-W1-3)
+   - Aufgefallen Nr. 1 (Ziffern bei 200 % Schrift) ist für Bedienung und R2 notiert.
+5. **Prüfauftrag** `PRUEFAUFTRAG-SCHLUSSPRUEFUNG.md`: «Entwurf zur Bestätigung … Gültig wird er, wenn die Fachstelle ihn bestätigt» (Z. 1–5). Eine Bestätigung ist in `2b675f5` nicht vermerkt.
+
+#### Befunde
+
+| ID | Stufe | Gewicht | Befund | Beleg |
+| --- | --- | --- | --- | --- |
+| SP2-W1-1 | W1 (Inhaltsverantwortung und Status) | wichtig | Die Fusszeile aller 17 Seiten sagt «Redaktioneller Status: Entwurf – fachliche Prüfung ausstehend», obwohl alle Seiten fachlich freigegeben sind (10. bis 12.10.2026). Der Export mit `--production` ändert das nicht: Die Fusszeile nimmt `cfg.editorialStatusLabel \|\| cfg.editorialStatus` unabhängig vom Modus (`tools/contract.js` Z. 176); `tools/export.mjs` kennt kein `editorialStatus`. Die Selbstprüfung 3-2 (Entscheid Nr. 6) setzt voraus, dass der neue Export mit `--production` den Entwurfsvermerk löst. Ohne Änderung in `site.config.json` erscheint der Vermerk auch in der Produktion. Ebenso veraltet, aber nicht ausgegeben: `shortDescription` «… Entwurf, fachliche Prüfung ausstehend.» | `site.config.json` Z. 7 und 19; gebaute Fusszeile, z. B. `index.html`; `grep -l 'fachliche Prüfung ausstehend' *.html`: 17 Seiten; Leitlinie «Prüfung und Freigabe», Inhaltsverantwortung und Status: Freigabesprache «redaktionell bestätigt», «fachlich freigegeben» |
+| SP2-W1-2 | W1 (Prüfbericht) | optional | Veraltete «offen»-Angaben im Prüfbericht zu entschiedenen Fragen: Statustabelle, Zeile W2: «offen weiter F-W2-02, F-W2-03 (jetzt P4-F-18, P4-F-19)», obwohl P4-F-18 und -19 entschieden sind. Abschnitt «Visualisierungs-Check» (Z. 5720): «Aus dem Audit offen: BS-5 zweiter Teil (Fachstelle)», entschieden mit P4-F-20 | `PRUEFBERICHT.md` Z. 17, Z. 39 («P4-F-14, -15, -18 und -20 als Strukturentscheide»), Z. 5720; `KORREKTUR-ETAPPE-1I.md` Z. 20 |
+| SP2-W1-3 | W1 (Abgleich) | optional | `abgleich/verstehen.md` Nr. 116: Der Bestandsverweis «Mehr dazu auf Kommunizieren und Grenzen.» (bei «Menschen mit Borderline manipulieren bewusst.») steht als «entfällt» mit der Bemerkung «Verweis (folgt mit Etappe 2)». Etappe 2 ist abgeschlossen, an dieser Stelle steht kein Verweis, und keine Freigabe nennt die Stelle. Die Bemerkung verspricht etwas, das nicht kommt (Fachfrage SP2-F-W1-2) | `abgleich/verstehen.md` Nr. 116; Selbstprüfung «Freigabe 2c und 3-1», Aufgefallen Nr. 4; `FREIGABE-ETAPPE-2B.md` Abschnitt 4 und `FREIGABE-ETAPPE-2C-3-1.md` Abschnitt 4 ohne diese Stelle |
+
+#### Fragen an die Fachstelle
+
+| ID | Frage | Beleg |
+| --- | --- | --- |
+| SP2-F-W1-1 | **Prüfbedarf:** Welcher redaktionelle Status soll vor der Veröffentlichung in der Fusszeile stehen, z. B. «fachlich freigegeben (Fachstelle Angehörigenarbeit PUK, 12.10.2026)»? Wer ändert `editorialStatus` und `shortDescription` und wann (vor dem Export mit `--production`)? | SP2-W1-1 |
+| SP2-F-W1-2 | **Prüfbedarf:** `verstehen` › `mythen`, Annahme «Menschen mit Borderline manipulieren bewusst.»: Soll dort ein Verweissatz auf `kommunizieren` oder `grenzen` stehen, wie im Bestand («Mehr dazu auf Kommunizieren und Grenzen.»)? Oder entfällt der Verweis bewusst? | `abgleich/verstehen.md` Nr. 116 |
+| SP2-F-W1-3 | Die drei Netlify-Entscheide aus Etappe 3-2 sind offen: «Pretty URLs», Schutz der Vorschauen, Build-Einstellungen. Sind sie vor R3 zu treffen, und wo werden sie im Prüfbericht eingetragen? | Selbstprüfung «Etappe 3-2», Kurzfassung Nr. 4, Aufgefallen Nr. 3 und 4 |
+
+#### Zählung
+
+- **Befunde:** 1 wichtig (SP2-W1-1), 2 optional (SP2-W1-2, SP2-W1-3).
+- **Fragen:** 3 (SP2-F-W1-1 bis -3).
+- **Offen aus früheren Runden:** rechtliche Prüfung (S-Nr. 5 und 6, Z31-F-9, Z31-F-19, NK-F-8) und NK-F-3.
+- **Nicht in diesem Teil:**
+  - Punkt 3 (Bestand, 100 Aussagen)
+  - Längen und Ziel-Wortzahlen von 2a-K (5.3)
+  - Gestalt der geänderten Zeichnungen «Ein Stück Weg», «Zwei Tassen», «Ein neuer Trieb» (5.4)
+- **Empfehlung:** W1 bleibt «offen». Die Punkte 1, 2, 4, 5 und 6 sind mit Beleg geprüft. Offen bleiben SP2-W1-1, die rechtliche Prüfung und NK-F-3 (Abschnitt 4 des Prüfauftrags: «W1 bleibt «offen», solange die rechtliche Prüfung und NK-F-3 offen sind»).
+
+### 5.1 Punkt 3 · W1 Bestandsvergleich (Prüfung 2, Teil W1B)
+
+**Vorgehen.** Geprüfter Stand `f1d6572` (Arbeitsbaum `wt`). Bestand aus `origin/borderline-bestand` mit `git archive` nach `scratchpad/w1b/bestand/` entpackt (73 Textdateien, `INVENTAR.md`). Nichts im Repository oder Arbeitsbaum geändert (`git status --porcelain` leer vor und nach den Läufen). Eigene Skripte in `scratchpad/w1b/`:
+
+- `parse.py` liest alle Tabellen «Satz für Satz» der 15 Abgleichdateien (7371 Zeilen, gleiche Zahl wie `node abgleich/pruefe-abgleich.mjs --bestand …`: «Abgleich geprüft: 7371 Zeilen, 0 ohne Fundstelle.») und prüft je Zeile, ob der **Bestandssatz** wörtlich (normalisiert) in den Bestandsdateien der Seite steht. Das prüft `pruefe-abgleich.mjs` nicht (es prüft nur Ort, neue Fassung und Zitate in der Bemerkung).
+- `site.py` liest den Text der 17 gebauten Seiten je Abschnitt; `fig.py` den Text der zehn Abbildungen; `ctx.py` zeigt je gewählter Zeile die Fundstelle mit Umfeld und listet Bestandswörter, die nirgends auf der Website stehen.
+- `coverage.py` zerlegt jede zugeordnete Bestandsdatei in Sätze (≥ 25 Zeichen) und sucht jeden in der Spalte «Satz (Bestand)» aller Tabellen (Rückwärtsprüfung: still entfallene Sätze).
+- `ent.py` sucht für alle 932 inhaltlichen «entfällt»-Zeilen den ähnlichsten Satz der Website (Wortüberlappung).
+- `table.py` erzeugt die Tabelle unten; die Urteile sind von Hand, je nach Lesen von Bestand, Abgleichzeile und Umfeld auf der Seite.
+
+**Gesamtprüfungen (über die Stichprobe hinaus)**
+
+| Punkt | Ergebnis | Beleg |
+| --- | --- | --- |
+| Bestandssatz der Abgleichzeile steht im Bestand | 7341 von 7371 Zeilen wörtlich; 30 nicht wörtlich, davon keine erfundene: 23 «Vorschau: …» statt «[Vorschautext bei geschlossenem Akkordeon: …]», 4 Grafiktexte aus einer Bestandszeile `[Grafik: … \| Text in der Grafik: …]`, `grenzen.md` Nr. 708 (zwei Sätze aus `uebungen.md` Z. 226 und 244 zusammengesetzt), Nr. 709 (Satz ohne «So kann ich auch andere Dinge verabreden.», entfällt), `verstehen.md` Nr. 546 (Handout `wenn-worte-treffen`, nicht in den Quellen der Seite, Bemerkung sagt es) | `parse.py`, Ausgabe «nicht wörtlich im Bestand der Seite: 30» |
+| Neue Fassung steht im genannten Abschnitt | alle Zeilen mit Ort `seite#abschnitt` ausser Kapitelübersicht und «–» (34 technische Fälle) | `cand.py` (`neufound`), bestätigt durch `pruefe-abgleich.mjs` |
+| Jeder Bestandssatz hat eine Zeile (Rückwärtsprüfung) | 7171 Sätze; ohne Zeile nach Abzug von Überschriften, Klammermarken, Kopfzeilen und Auswahllisten von `/uebungen` (deren Sätze einzeln geführt sind): **nur `verstehen.md` Z. 225–275** (Akkordeons «Diagnostischer Überblick» und «Begleiterkrankungen — mögliche Kombinationen»), 37 von 40 Sätzen und Listenpunkten ohne Zeile | `coverage.py`; `abgleich/verstehen.md` Z. 3 «Bestand: `/verstehen` ohne Diagnostik-Teil»; `abgleich/diagnose.md` Z. 3 nur `verstehen--diagnostik` und `verstehen--begleiterkrankungen`; `UMBAUPLAN.md` Z. 35 ordnet den «Diagnostik-Teil von `/verstehen`» `diagnose` zu; `BAUAUFTRAG-ETAPPE-2C2.md` Z. 14 «steht schon auf `verstehen` › `borderline`» – dort stehen weder DSM-Liste noch Begleiterkrankungsliste |
+| Neue Sätze der Stichprobe in einer Liste «Neue Sätze zur Freigabe» | alle 16 geprüften neuen oder ergänzten Sätze stehen in einer Liste (2a, 2a-K, 2b, 2b-K, 2b-2, 2c-2, 2c-K, 3-1-K); Etappe 1 hatte keine Liste (Freigabe als Ganzes, 540c37d) | Skript in `w1b` (Blockgrenzen PRUEFBERICHT Z. 1420, 2851, 3357, 4298, 4485, 4702, 4999, 5302), z. B. «17 bis 25 Jahren» Z. 3201, «Ständige Bereitschaft ist keine Pflicht» Z. 5057 |
+| Status «übernommen» bei gekürzten Sätzen | 117 von 1050 «übernommen»-Zeilen mit Ähnlichkeit < 0,8 zur neuen Fassung; 54 davon bibliografische Kurzangaben auf `quellen` (vertretbar); Rest teils echte Kürzungen | `cand.py`, Beispiele unter SP2-W1B-4 |
+
+**Vergleich Aussage für Aussage** (128 Aussagen; Etappe 1: 31, 2a: 22, 2b: 22, 2c: 30, 3-1: 23; alle zehn Abbildungen: `v-vs-eisberg` Nr. 14–15, `v-vs-anspannung` 16–17, `v-vs-bewertungen` 18–19, `v-bz-schleife` 20–21, `v-bz-sichten` 22, `v-gr-dear` 25–26, `v-ro-weg` 39–40, `v-sf-abend` 49–50, `v-ko-tassen` 54–55, `v-ge-trieb` 81–82; heikle Stellen: Ursachen Nr. 6, 9, 10, 31, 32, 107; Diagnose 4, 5, 85–87, 118, 119, 127, 128; Medikamente 79, 96, 97, 112, 113; Suizid und Selbstverletzung 11, 12, 24, 63, 64, 66, 70, 71, 89–91, 109; Prognose und Genesung 7, 74–78, 83, 105, 106; Behandlungsformen 94, 95, 99, 111; Zahlen 75–77, 98, 115, 116; Quellen 51, 115–117, 120). An jeder Stelle ist das Umfeld (Bestandssätze davor und danach) über die Rückwärtsprüfung abgedeckt; still entfallen ist im Umfeld der Stichprobe nichts ausser Nr. 127–128.
+
+| Nr | Etappe | Seite › Abschnitt (Figur) | Aussage heute (Zitat) | Bestand (Datei und Zitat) | Abgleich-Zeile (Zitat, Kategorie) | Ergebnis |
+| ---: | --- | --- | --- | --- | --- | --- |
+| 1 | 1 | index › beratung | «Sie dürfen auch mit Erschöpfung, Schuldgefühlen oder schwierigen Entscheidungen eigene Beratung suchen.» | `startseite.md`: «Sie dürfen auch mit Erschöpfung, Schuldgefühlen oder schwierigen Entscheidungen eigene Beratung suchen.» | `abgleich/index.md` Nr. 32: «Sie dürfen auch mit Erschöpfung, Schuldgefühlen oder …» → übernommen | **inhaltsgleich**: wörtlich; Kategorie richtig |
+| 2 | 1 | Fusszeile | «Sorgen Sie sich akut um das Leben oder die Sicherheit eines Menschen, holen Sie sofort Hilfe: ärztlicher Notfalldienst oder Notfallstation, bei Gefahr die Polizei.» | `startseite.md`: «Die Fachstelle ist kein Krisendienst.» | `abgleich/index.md` Nr. 37: «Die Fachstelle ist kein Krisendienst.» → geändert | **verändert**: Satz «kein Krisendienst» ersetzt durch den Zuständigkeitsverweis; seit 3-1-K steht «keine Krisenintervention» wieder auf `ueber` › `warum` (ueber.md Nr. 122); Kategorie «geändert» richtig |
+| 3 | 1 | index › haltung | «Antworten auf häufige Fragen stehen auf der Seite «Häufige Fragen».» | kein Bestandssatz | `abgleich/index.md` Nr. 260: «–» → neu (3-1-K) | **neu**: Verweissatz, Liste 3-1-K (PRUEFBERICHT Z. 2008); keine fachliche Aussage |
+| 4 | 1 | verstehen › borderline | «Die Diagnose Borderline-Persönlichkeitsstörung kann unter anderem beschreiben: sehr starke oder schnell wechselnde Gefühle und Schwierigkeiten mit der inneren …» | `verstehen.md`: «Borderline kann Gefühle, Selbstbild und Beziehungen belasten und zeigt sich unterschiedlich.» | `abgleich/verstehen.md` Nr. 9: «Borderline kann Gefühle, Selbstbild und Beziehungen …» → umformuliert (einfache Sprache, 1f) | **verändert**: einfache Sprache 1f; Aussage gleich, Kategorie richtig |
+| 5 | 1 | verstehen › borderline | «Die Diagnose allein sagt nichts darüber, ob von einem Menschen Gefahr ausgeht.» | `verstehen.md`: «Die Diagnose allein erlaubt keine Aussage darüber, ob von einem Menschen Gefahr ausgeht.» | `abgleich/verstehen.md` Nr. 28: «Die Diagnose allein erlaubt keine Aussage darüber, ob von …» → umformuliert (einfache Sprache, 1f) | **inhaltsgleich**: «erlaubt keine Aussage» → «sagt nichts»; Kategorie richtig |
+| 6 | 1 | verstehen › borderline | «Borderline hat nicht eine einzige Ursache. Mehrere Dinge wirken zusammen: eine biologische Empfindlichkeit, Erfahrungen in engen Beziehungen und beim Aufwachsen sowie …» | `verstehen.md`: «Borderline entsteht nicht durch eine einzige Ursache, sondern im Zusammenspiel biologischer Empfindlichkeit, Bindungs- und Entwicklungserfahrungen sowie …» | `abgleich/verstehen.md` Nr. 100: «Borderline entsteht nicht durch eine einzige Ursache, …» → umformuliert (einfache Sprache, 1f) | **verändert**: Ursachen: «Bindungs- und Entwicklungserfahrungen» → «Erfahrungen in engen Beziehungen und beim Aufwachsen», «Belastungsfaktoren» → «Belastungen»; keine Abschwächung |
+| 7 | 1 | verstehen › mythen | «Viele erleben über Jahre deutliche Besserung, Remission (die Kriterien sind eine Zeit lang nicht mehr erfüllt) oder umfassendere Genesung.» | `verstehen.md`: «Viele Menschen erleben über Jahre deutliche Besserungen, Remission oder umfassendere Genesung — mit individuell unterschiedlichen, fachlich gut dokumentierten Verläufen.» | `abgleich/verstehen.md` Nr. 111: «Viele Menschen erleben über Jahre deutliche Besserungen, …» → gekürzt | **verändert**: Remission erklärt; «mit … fachlich gut dokumentierten Verläufen» entfällt (in Bemerkung genannt); Etappe 1 freigegeben |
+| 8 | 1 | verstehen › mythen | «Angehörige sind nicht schuld an der Erkrankung und nicht für die Genesung verantwortlich.» | `verstehen.md`: «Angehörige sind weder Ursache der Borderline-Erkrankung noch für die Genesung einer anderen Person verantwortlich.» | `abgleich/verstehen.md` Nr. 117: «Angehörige sind weder Ursache der Borderline-Erkrankung …» → umformuliert (Prüfrunde 4, 1i) | **verändert**: «weder Ursache» → «nicht schuld» (Entscheid P4-F-2); Kategorie richtig |
+| 9 | 1 | verstehen › mythen | «In klinischen Studien berichten viele, aber nicht alle Menschen mit Borderline von belastenden Kindheitserfahrungen.» | `verstehen.md`: «In klinischen Studien berichten viele, aber nicht alle Menschen mit Borderline von Misshandlung, Vernachlässigung oder anderen belastenden Kindheitserfahrungen.» | `abgleich/verstehen.md` Nr. 122: «In klinischen Studien berichten viele, aber nicht alle …» → gekürzt | **verändert**: «Misshandlung, Vernachlässigung» zu «belastenden» zusammengefasst; Wörter nirgends auf der Website; in Bemerkung genannt |
+| 10 | 1 | verstehen › mythen | «Solche Erfahrungen können das Risiko erhöhen. Sie führen aber nicht zwingend zu Borderline, und Borderline kann auch ohne sie entstehen.» | `verstehen.md`: «Solche Erfahrungen können Risikofaktoren sein; sie sind weder notwendig noch hinreichend für eine Borderline-Diagnose.» | `abgleich/verstehen.md` Nr. 123: «Solche Erfahrungen können Risikofaktoren sein; sie sind …» → umformuliert (einfache Sprache, 1f) | **verändert**: «weder notwendig noch hinreichend» in einfacher Sprache, gleiche Aussage |
+| 11 | 1 | verstehen › mythen | «Wenn Sie sich konkret sorgen, fragen Sie ruhig und direkt, ob die Person Suizidgedanken oder einen Plan hat.» | `verstehen.md`: «Wenn Sie sich konkret sorgen, fragen Sie ruhig und direkt, ob die Person Suizidgedanken oder einen Plan hat.» | `abgleich/verstehen.md` Nr. 128: «Wenn Sie sich konkret sorgen, fragen Sie ruhig und direkt, …» → übernommen | **inhaltsgleich**: wörtlich, in eigenem Absatz «Wenn Sie sich wegen Suizid sorgen», danach Verweis im Text |
+| 12 | 1 | verstehen › mythen | «Direkt nachzufragen, löst nach heutigem Wissensstand keine suizidale Handlung aus.» | `verstehen.md`: «Solche Fragen lösen nach heutigem Wissensstand keine suizidale Handlung aus; sie können helfen, die Lage zu verstehen und passende professionelle Hilfe einzubeziehen.» | `abgleich/verstehen.md` Nr. 129: «Solche Fragen lösen nach heutigem Wissensstand keine …» → geändert | **verändert**: zweiter Halbsatz verteilt: «Das kann helfen, die Lage zu verstehen.» und Verweis im Text; Bemerkung belegt es |
+| 13 | 1 | verstehen › mythen | «In Kliniken gilt Borderline oft als Erkrankung, die vor allem Frauen betrifft. Studien in der allgemeinen Bevölkerung finden aber teils keine statistisch bedeutsamen …» | `verstehen.md`: «In klinischen Kontexten wird die Störung häufig als frauendominiert wahrgenommen; bevölkerungsbezogene Studien berichten teils keine signifikanten Unterschiede.» | `abgleich/verstehen.md` Nr. 135: «In klinischen Kontexten wird die Störung häufig als …» → umformuliert (einfache Sprache, 1f) | **verändert**: «signifikant» → «statistisch bedeutsam»; gleiche Aussage |
+| 14 | 1 | verstehen › eisberg (Figur `v-vs-eisberg`) | «Aus einem beobachtbaren Verhalten lässt sich kein bestimmtes Gefühl, Bedürfnis oder Motiv ablesen.» | `verstehen.md`: «Ein Verhalten lässt keine sichere Aussage über Diagnose oder innere Motive zu.» | `abgleich/verstehen.md` Nr. 10: «Ein Verhalten lässt keine sichere Aussage über Diagnose …» → zusammengeführt | **inhaltsgleich (Figur)**: Kernaussage Abbildung 1 Eisberg; «Diagnose» aus dem Bestandssatz trägt Nr. 28 |
+| 15 | 1 | verstehen › eisberg (Figur `v-vs-eisberg`) | «Es soll Wut nicht verharmlosen.» | `materialien--text--eisberg.md`: «Sie soll Wut nicht verharmlosen und keine verborgene Ursache behaupten.» | `abgleich/verstehen.md` Nr. 170: «Sie soll Wut nicht verharmlosen und keine verborgene …» → umformuliert (Prüfrunde 4, 1i) | **verändert (Figur)**: Vertiefung Eisberg; «keine verborgene Ursache behaupten» entfällt (Bemerkung nennt es; Kernaussage «lässt sich erfragen, nicht sicher ablesen» trägt es sinngemäss) |
+| 16 | 1 | verstehen › anspannung (Figur `v-vs-anspannung`) | «Die Kurve zeigt kein «Borderline-Gehirn», und solche Verläufe sind nicht auf Borderline beschränkt.» | `materialien--text--gehirn.md`: «Das funktionale Stressmodell beschreibt Möglichkeiten – kein «Borderline-Gehirn».» | `abgleich/verstehen.md` Nr. 266: «Das funktionale Stressmodell beschreibt Möglichkeiten – …» → zusammengeführt | **inhaltsgleich (Figur)**: Vertiefung Anspannungskurve |
+| 17 | 1 | verstehen › anspannung (Figur `v-vs-anspannung`) | «Sie müssen die andere Person nicht beruhigen.» | `verstehen.md`: «Sie müssen die andere Person nicht beruhigen können.» | `abgleich/verstehen.md` Nr. 88: «Sie müssen die andere Person nicht beruhigen können.» → übernommen | **inhaltsgleich (Figur)**: Ansatzpunkt Stelle 2; «können» entfällt, Status «übernommen» vertretbar |
+| 18 | 1 | verstehen › bewertungen (Figur `v-vs-bewertungen`) | «Das Bild beschreibt eine mögliche Reaktion auf Anspannung, nicht den Charakter eines Menschen, und gilt nicht für alle Menschen mit Borderline.» | `materialien--text--spaltung.md`: «Sie beschreibt weder eine feste Eigenschaft einer Person noch eine Absicht und lässt sich nicht aus einer Diagnose vorhersagen.» | `abgleich/verstehen.md` Nr. 371: «Sie beschreibt weder eine feste Eigenschaft einer Person …» → umformuliert (Bildsprache, 1h) | **verändert (Figur)**: Vertiefung Momentaufnahmen; Entfallenes in Bemerkung aufgeführt |
+| 19 | 1 | verstehen › bewertungen (Figur `v-vs-bewertungen`) | ««Du bist genau wie alle anderen.»» | `materialien--text--wenn-worte-treffen.md (andere Seite)`: ««Du bist genau wie alle anderen.»» | `abgleich/verstehen.md` Nr. 546: ««Du bist genau wie alle anderen.»» → übernommen | **inhaltsgleich (Figur)**: Satz über dem dunklen Foto; Bestand aus Handout `wenn-worte-treffen` (nicht in den Quellen von `verstehen`), Bemerkung sagt das |
+| 20 | 1 | beziehungen › schleife (Figur `v-bz-schleife`) | «Das Modell ist eine mögliche Erklärung, keine sichere Aussage darüber, was eine bestimmte Person denkt oder will.» | `verstehen.md`: «Daraus ergibt sich keine feste Abfolge, und die Diagnose einer Person erklärt den Verlauf nicht allein.» | `abgleich/verstehen.md` Nr. 91: «Daraus ergibt sich keine feste Abfolge, und die Diagnose …» → umformuliert (einfache Sprache, 1e) | **verändert (Figur)**: Kurztext Bedeutungsschleife; «die Diagnose einer Person erklärt den Verlauf nicht allein» trägt `beziehungen#kopf` |
+| 21 | 1 | beziehungen › schleife (Figur `v-bz-schleife`) | «Schwester Sie sagt den Besuch ab. Station 1 · Ereignis» | `verstehen--beziehungen.md`: «Die Schwester sagt den Besuch ab.» | `abgleich/beziehungen.md` Nr. 140: «Die Schwester sagt den Besuch ab.» → umformuliert (Bildsprache, 1h) | **inhaltsgleich (Figur)**: Station 1 |
+| 22 | 1 | beziehungen › zwei-sichten (Figur `v-bz-sichten`) | «Mögliche Sicht der betroffenen Person» | `verstehen--beziehungen.md`: «Mögliche Sicht der Angehörigen: «Heute schaffe ich es nicht.» | `abgleich/beziehungen.md` Nr. 142: «Mögliche Sicht der Angehörigen: «Heute schaffe ich es nicht.» → übernommen | **inhaltsgleich (Figur); Abgleich falsch**: Sicht im Bild vorhanden («Mögliche Sicht der Schwester «Heute schaffe ich es nicht. Ich brauche Ruhe.»»), Spalte «Neue Fassung» nennt die falsche Bezeichnung → SP2-W1B-3 |
+| 23 | 1 | beziehungen › verstaerker | «Ein möglicher Grund ist eine Dissoziation: ein Gefühl, wie abgetrennt oder nicht ganz da zu sein. Ob das zutrifft, können Sie aus dem Verhalten allein nicht feststellen.» | `verstehen--beziehungen.md`: «Dissoziation ist eine mögliche Erklärung, aber keine, die Angehörige aus dem Verhalten allein feststellen können.» | `abgleich/beziehungen.md` Nr. 132: «Dissoziation ist eine mögliche Erklärung, aber keine, die …» → umformuliert (einfache Sprache, 1e) | **verändert**: Dissoziation erklärt; gleiche Absicherung |
+| 24 | 1 | beziehungen › verantwortung | «Bei Suizidgedanken oder Selbstverletzung darf Hilfe nie zurückgehalten werden – auch nicht aus der Sorge, Zuwendung könnte das Verhalten verstärken.» | `verstehen--beziehungen.md`: «Wichtig: Bei Suizidgedanken oder Selbstverletzung darf Hilfe nicht aus Sorge vor einer «Verstärkung» vorenthalten werden.» | `abgleich/beziehungen.md` Nr. 168: «Wichtig: Bei Suizidgedanken oder Selbstverletzung darf …» → umformuliert (einfache Sprache, 1e) | **verändert**: «nicht vorenthalten» → «nie zurückgehalten», «Verstärkung» ausgeschrieben; leicht verschärft («nie»), kein Befund |
+| 25 | 1 | grenzen › dear (Figur `v-gr-dear`) | «DEAR garantiert keine Kooperation: Sie können klar sein und trotzdem auf Ablehnung stossen.» | `grenzen.md`: «DEAR garantiert keine Kooperation.» | `abgleich/grenzen.md` Nr. 167: «DEAR garantiert keine Kooperation.» → übernommen | **inhaltsgleich (Figur)**: Kurztext DEAR, um Folge ergänzt |
+| 26 | 1 | grenzen › dear (Figur `v-gr-dear`) | «DEAR sind die ersten vier Schritte der Fertigkeit DEAR MAN aus der Dialektisch-Behavioralen Therapie (DBT), einer wissenschaftlich untersuchten Psychotherapie für …» | `grenzen.md`: «DEAR sind die ersten vier inhaltlichen Schritte der DBT-Fertigkeit DEAR MAN.» | `abgleich/grenzen.md` Nr. 163: «DEAR sind die ersten vier inhaltlichen Schritte der …» → gekürzt | **verändert (Figur)**: DBT als «wissenschaftlich untersuchte Psychotherapie für Borderline» ergänzt (Zusatz aus `glossar.md`, gleicher Satz in Liste 2a-K, PRUEFBERICHT Z. 5070); Etappe 1 freigegeben |
+| 27 | 1 | grenzen › gewalt | «Körperliche Gewalt ist kein Beziehungsproblem, sondern eine Sicherheitsfrage.» | `grenzen.md`: «Körperliche Gewalt ist kein Beziehungsproblem — sie ist eine Sicherheitsfrage.» | `abgleich/grenzen.md` Nr. 275: «Körperliche Gewalt ist kein Beziehungsproblem — sie ist …» → übernommen | **inhaltsgleich**: Gedankenstrich → «sondern» |
+| 28 | 1 | grenzen › gewalt | «Fragen Sie eine spezialisierte Fachstelle nach Dokumentation und Spurensicherung, auch wenn Sie zunächst keine Anzeige erstatten möchten.» | `grenzen.md`: «Fragen Sie eine spezialisierte Fachstelle direkt nach Dokumentation und Spurensicherung und klären Sie dort das Vorgehen, wenn Sie zunächst keine Anzeige erstatten …» | `abgleich/grenzen.md` Nr. 287: «Fragen Sie eine spezialisierte Fachstelle direkt nach …» → übernommen | **verändert; Kategorie falsch**: «direkt» und «klären Sie dort das Vorgehen» entfallen; Status «übernommen», Bemerkung «(gekürzt)» → SP2-W1B-4 |
+| 29 | 1 | grenzen › gewalt | «Planen Sie Veränderungen wie eine Trennung möglichst mit einer geeigneten Fachstelle, und setzen Sie keine Grenze persönlich durch, die Sie gefährdet.» | `grenzen.md`: «Bei Bedrohung oder Gewalt setzen Sie eine Grenze nicht im direkten Gespräch durch.» | `abgleich/grenzen.md` Nr. 123: «Bei Bedrohung oder Gewalt setzen Sie eine Grenze nicht im …» → zusammengeführt | **verändert**: Zusammengeführt mit Kopfsatz «Bei Bedrohung oder Gewalt geht Schutz vor jedem Gespräch.»; Absicherung bleibt |
+| 30 | 2a | rolle › schuld | «Eine Diagnose weist Ihnen keine persönliche Schuld zu.» | `materialien--text--schuld-verantwortung.md`: «Aus einer Diagnose lässt sich keine persönliche Schuld ableiten.» | `abgleich/rolle.md` Nr. 441: «Aus einer Diagnose lässt sich keine persönliche Schuld …» → umformuliert (2a-K) | **verändert**: Wortlaut Merksatz; gleiche Aussage |
+| 31 | 2a | verstehen › borderline | «Mehrere Dinge wirken zusammen: eine biologische Empfindlichkeit, Erfahrungen in engen Beziehungen und beim Aufwachsen sowie Belastungen.» | `materialien--text--schuld-verantwortung.md`: «Genetische Einflüsse und Temperament können zur Verletzlichkeit beitragen.» | `abgleich/rolle.md` Nr. 457: «Genetische Einflüsse und Temperament können zur …» → verschoben | **verändert; Kategorie ungenau**: «Genetische Einflüsse und Temperament» → «biologische Empfindlichkeit» auf `verstehen`; «Temperament» nirgends; Genetik auf `fragen` › `verlauf` («Genetische Einflüsse können die Anfälligkeit mitbestimmen.»); Status «verschoben» statt «zusammengeführt» |
+| 32 | 2a | verstehen › mythen | «Solche Erfahrungen können das Risiko erhöhen.» | `materialien--text--schuld-verantwortung.md`: «Kindheitsbelastungen, etwa Misshandlung oder Vernachlässigung, stehen in Studien mit Borderline in Zusammenhang.» | `abgleich/rolle.md` Nr. 461: «Kindheitsbelastungen, etwa Misshandlung oder …» → verschoben | **verändert**: «Misshandlung oder Vernachlässigung» nirgends (wie Nr. 122 in verstehen.md) |
+| 33 | 2a | rolle › schuld | «Belastende Erfahrungen können mitwirken, neben vielen anderen Einflüssen. Daraus folgt keine Schuld und keine Aufteilung von Verantwortung für die Erkrankung. Für …» | `materialien--text--schuld-verantwortung.md`: «Belastende Erfahrungen können mitwirken; für konkrete verletzende Handlungen können Sie Verantwortung übernehmen.» | `abgleich/rolle.md` Nr. 476: «Belastende Erfahrungen können mitwirken; für konkrete …» → umformuliert (2a-K) | **verändert**: Wortlaut 2a-K, P2a-F-1; neuer Mittelsatz in Liste 2a-K |
+| 34 | 2a | rolle › schuld | «Ein Vergleich mit anderen Familien erklärt nicht, warum jemand erkrankt. Daraus folgt keine Schuld.» | `materialien--text--schuld-verantwortung.md`: «Ein Vergleich mit anderen Familien erklärt weder die Ursachen noch Ihre persönliche Verantwortung.» | `abgleich/rolle.md` Nr. 483: «Ein Vergleich mit anderen Familien erklärt weder die …» → umformuliert (2a-2) | **verändert**: Wortlaut 2a-2 |
+| 35 | 2a | rolle › kinder | «Sie sind nicht für die Erkrankung oder Behandlung ihrer Eltern verantwortlich.» | `materialien--text--schuld-verantwortung.md`: «Kinder sind nicht für die Erkrankung oder Behandlung ihrer Eltern verantwortlich.» | `abgleich/rolle.md` Nr. 484: «Kinder sind nicht für die Erkrankung oder Behandlung ihrer …» → umformuliert (einfache Sprache, 2a) | **inhaltsgleich**: Subjekt «Sie» = Kinder (Satz davor) |
+| 36 | 2a | rolle › kinder | «Betreuung, Unterstützung und Sicherheit müssen Erwachsene organisieren.» | `materialien--text--schuld-verantwortung.md`: «Betreuung, Unterstützung und Sicherheit müssen Erwachsene organisieren; Kinder brauchen altersgerechte Informationen und verlässliche Bezugspersonen.» | `abgleich/rolle.md` Nr. 485: «Betreuung, Unterstützung und Sicherheit müssen Erwachsene …» → umformuliert (2a-K) | **verändert**: zweiter Teil durch «Kinder brauchen verständliche Worte, verlässliche Erwachsene …» getragen |
+| 37 | 2a | rolle › an-grenzen | «Gefährdet ein Mensch sich selbst oder andere unmittelbar, oder kommt es zu Gewalt: Holen Sie Hilfe und schützen Sie sich.» | `unterstuetzen--alltag.md`: «Bei unmittelbarer Selbst- oder Fremdgefährdung oder bei Gewalt holen Sie Hilfe und schützen sich.» | `abgleich/rolle.md` Nr. 245: «Bei unmittelbarer Selbst- oder Fremdgefährdung oder bei …» → umformuliert (einfache Sprache, 2a) | **verändert**: einfache Sprache; danach Verweis im Text |
+| 38 | 2a | rolle › an-grenzen | «sichtbarer oder riskanter Konsum von Alkohol, Cannabis oder anderen Substanzen; wozu er dient, bleibt offen» | `unterstuetzen--alltag.md`: «Beobachtbarer oder riskanter Konsum von Alkohol, Cannabis oder anderen Substanzen; die mögliche Funktion bleibt offen» | `abgleich/rolle.md` Nr. 257: «Beobachtbarer oder riskanter Konsum von Alkohol, Cannabis …» → umformuliert (einfache Sprache, 2a) | **inhaltsgleich**: «die mögliche Funktion» → «wozu er dient» |
+| 39 | 2a | rolle › anbieten (Figur `v-ro-weg`) | «Genesung herstellen können Sie nicht.» | `materialien--text--garten.md`: «Angehörige können Genesung nicht herstellen.» | `abgleich/rolle.md` Nr. 383: «Angehörige können Genesung nicht herstellen.» → umformuliert (einfache Sprache, 2a) | **inhaltsgleich (Figur)**: Kernaussage Ein Stück Weg |
+| 40 | 2a | rolle › anbieten (Figur `v-ro-weg`) | «Auch Behandlung, Beziehungen, Lebensumstände und Unterstützung in der Gesellschaft beeinflussen den Verlauf.» | `materialien--text--garten.md`: «Behandlung, persönliche Entscheidungen und Lebensumstände beeinflussen den Verlauf.» | `abgleich/rolle.md` Nr. 382: «Behandlung, persönliche Entscheidungen und Lebensumstände …» → zusammengeführt | **verändert (Figur)**: «persönliche Entscheidungen» → «Die Person gestaltet ihre Genesung selbst mit.», ergänzt um Beziehungen und Gesellschaft (Handout `leuchtturm`) |
+| 41 | 2a | rolle › schuld | «Daraus folgt keine Schuld und keine Aufteilung von Verantwortung für die Erkrankung.» | kein Bestandssatz | `abgleich/rolle.md` Nr. 768: «–» → neu (2a-K) | **neu**: Liste 2a-K (PRUEFBERICHT Z. 5021), freigegeben P2a-F-5 |
+| 42 | 2a | selbstfuersorge › kraft | «Bei anhaltender Erschöpfung, Schlafproblemen oder gedrückter Stimmung kann eine ärztliche oder psychotherapeutische Abklärung sinnvoll sein.» | `selbstfuersorge.md`: «Bei anhaltender Erschöpfung, Schlafproblemen oder depressiver Stimmung kann eine ärztliche oder psychotherapeutische Abklärung sinnvoll sein.» | `abgleich/selbstfuersorge.md` Nr. 176: «Bei anhaltender Erschöpfung, Schlafproblemen oder …» → umformuliert (einfache Sprache, 2a) | **verändert**: «depressiver» → «gedrückter» Stimmung; leichte Abschwächung des Fachworts, gleiche Handlungsanleitung |
+| 43 | 2a | selbstfuersorge › akzeptanz | «Der Begriff stammt aus der Dialektisch-Behavioralen Therapie (DBT), einer wissenschaftlich untersuchten Psychotherapie für Borderline.» | `selbstfuersorge.md`: «Das Konzept der Radikalen Akzeptanz ist ein zentrales Element der Dialektisch-Behavioralen Therapie (DBT).» | `abgleich/selbstfuersorge.md` Nr. 213: «Das Konzept der Radikalen Akzeptanz ist ein zentrales …» → zusammengeführt | **verändert**: «zentrales Element» entfällt (P2a-F-9), Zusatz in Liste 2a-K |
+| 44 | 2a | selbstfuersorge › warnsignale | «Sie können aber auch andere körperliche oder psychische Ursachen haben.» | `selbstfuersorge.md`: «Diese Anzeichen sind unspezifisch: Sie können bei Überlastung auftreten, aber auch andere körperliche oder psychische Ursachen haben.» | `abgleich/selbstfuersorge.md` Nr. 67: «Diese Anzeichen sind unspezifisch: Sie können bei …» → umformuliert (einfache Sprache, 2a) | **verändert**: «unspezifisch» ausgeführt |
+| 45 | 2a | selbstfuersorge › warnsignale | «Sprechen Sie bei Bedarf mit Ihrer Hausärztin, Ihrem Hausarzt oder einer psychologischen Fachperson.» | `selbstfuersorge.md`: «Sprechen Sie bei Bedarf mit Ihrer Hausärzt:in oder einer psychologischen Fachperson, damit auch andere Ursachen abgeklärt werden können.» | `abgleich/selbstfuersorge.md` Nr. 100: «Sprechen Sie bei Bedarf mit Ihrer Hausärzt:in oder einer …» → umformuliert (einfache Sprache, 2a) | **verändert**: zweiter Teil als eigener Satz «Dabei können auch andere Ursachen abgeklärt werden.» |
+| 46 | 2a | selbstfuersorge › zu-viel | «Bei Bedrohung, Gewalt, akuter Gefahr oder Selbstgefährdung holen Sie Hilfe, statt weiterzuüben.» | `materialien--text--stopp-technik.md`: «Bei Bedrohung, Gewalt oder akuter Selbstgefährdung geht Hilfeholen vor dem Weiterüben.» | `abgleich/selbstfuersorge.md` Nr. 512: «Bei Bedrohung, Gewalt oder akuter Selbstgefährdung geht …» → zusammengeführt | **verändert**: erweitert um «akute Gefahr» |
+| 47 | 2a | selbstfuersorge › akzeptanz | «Akzeptanz heisst auch nicht, zu bleiben, zu schweigen oder Gewalt hinzunehmen.» | `materialien--text--radikale-akzeptanz.md`: «Akzeptanz heisst nicht bleiben, schweigen oder Gewalt tolerieren.» | `abgleich/selbstfuersorge.md` Nr. 557: «Akzeptanz heisst nicht bleiben, schweigen oder Gewalt …» → umformuliert (einfache Sprache, 2a) | **inhaltsgleich**: «tolerieren» → «hinnehmen» |
+| 48 | 2a | selbstfuersorge › kraft | «Das ist eine mögliche Erfahrung, kein typischer Verlauf, und lässt sich nicht aus der Diagnose vorhersagen.» | `unterstuetzen--alltag.md`: «Das ist eine mögliche Erfahrung, kein typischer oder aus der Diagnose vorhersehbarer Beziehungsverlauf.» | `abgleich/selbstfuersorge.md` Nr. 303: «Das ist eine mögliche Erfahrung, kein typischer oder aus …» → umformuliert (2a-2) | **verändert**: Wortlaut 2a-2 |
+| 49 | 2a | selbstfuersorge › kraft (Figur `v-sf-abend`) | «Das Buch liegt bereit, der Tee wird kalt, und ein Teil der Aufmerksamkeit bleibt beim Telefon. Diese ständige Bereitschaft kann Kraft kosten, auch wenn nichts passiert.» | kein Bestandssatz | `abgleich/selbstfuersorge.md` Nr. 660: «–» → neu (2a) | **neu (Figur)**: Kurztext Ein freier Abend; Liste 2a (PRUEFBERICHT Z. 5320) |
+| 50 | 2a | selbstfuersorge › kraft (Figur `v-sf-abend`) | «Nicht alle Angehörigen erleben das so, und es muss nicht so bleiben. Ständige Bereitschaft ist keine Pflicht, und wer sie spürt, macht nichts falsch.» | kein Bestandssatz | `abgleich/selbstfuersorge.md` Nr. 663: «–» → neu (2a-K) | **neu (Figur)**: Vertiefung; Liste 2a-K (Z. 5057) |
+| 51 | 2a | selbstfuersorge › quellen | «Bailey und Grenyer (2013) Verwendet in: «Nicht allein tragen» (eine Übersicht über sechs Studien mit deutlichen Forschungslücken)» | `selbstfuersorge.md`: «Bailey & Grenyer (2013) – Systematische Übersicht zu Belastung und Unterstützungsbedarf von Angehörigen — Sechs eingeschlossene Studien; die Autor:innen benennen …» | `abgleich/selbstfuersorge.md` Nr. 284: «Bailey & Grenyer (2013) – Systematische Übersicht zu …» → verschoben (2b-2) | **verändert**: Quellenzeile im Block «Quellen zu dieser Seite» |
+| 52 | 2b | kommunizieren › anerkennen | «Validierung heisst: Sie behandeln das Erleben der anderen Person als nachvollziehbar. Dafür müssen Sie nicht jeden Vorwurf, jede Deutung oder jedes Verhalten bestätigen.» | `kommunizieren.md`: «Validierung bedeutet, dass Sie das Erleben Ihres Gegenübers als nachvollziehbar behandeln, ohne jeden Vorwurf, jede Interpretation oder jedes Verhalten zu bestätigen.» | `abgleich/kommunizieren.md` Nr. 23: «Validierung bedeutet, dass Sie das Erleben Ihres Gegenübers …» → umformuliert (2b) | **verändert**: «Interpretation» → «Deutung»; gleiche Aussage |
+| 53 | 2b | kommunizieren › anerkennen | «Die sechs Stufen lehnen sich an die Validierungsstufen von Linehan aus der Dialektisch-Behavioralen Therapie (DBT) an.» | `kommunizieren.md`: «Die sechs Stufen lehnen sich an Linehans Validierungsstufen der Dialektisch-Behavioralen Therapie (DBT) an.» | `abgleich/kommunizieren.md` Nr. 27: «Die sechs Stufen lehnen sich an Linehans Validierungsstufen …» → umformuliert (2b) | **inhaltsgleich**: Satzbau |
+| 54 | 2b | kommunizieren › anerkennen (Figur `v-ko-tassen`) | «Sie können ein Gefühl anerkennen, ohne die Deutung zu übernehmen.» | `materialien--text--zuhoeren-ohne-zustimmen.md`: «Sie können Gefühle anerkennen, ohne die Interpretation zu übernehmen.» | `abgleich/kommunizieren.md` Nr. 663: «Sie können Gefühle anerkennen, ohne die Interpretation zu …» → umformuliert (2b) | **inhaltsgleich (Figur)**: Kernaussage Zwei Tassen |
+| 55 | 2b | kommunizieren › anerkennen (Figur `v-ko-tassen`) | «Sie können sagen, dass der Schmerz echt ist, ohne die ganze Erklärung zu teilen oder pauschale Schuld zu übernehmen.» | `materialien--text--zuhoeren-ohne-zustimmen.md`: «Sie können sagen, dass der Schmerz real ist, ohne automatisch die ganze Erklärung zu teilen oder pauschale Schuld zu übernehmen.» | `abgleich/kommunizieren.md` Nr. 667: «Sie können sagen, dass der Schmerz real ist, ohne …» → umformuliert (2b) | **inhaltsgleich (Figur)**: «automatisch» entfällt (in Bemerkung) |
+| 56 | 2b | kommunizieren › anerkennen | «Anerkennen heisst nicht automatisch zustimmen.» | `uebungen.md`: «Validierung bedeutet nicht, einer Aussage zuzustimmen.» | `abgleich/kommunizieren.md` Nr. 522: «Validierung bedeutet nicht, einer Aussage zuzustimmen.» → zusammengeführt | **verändert**: «Validierung» → «Anerkennen», «automatisch» ergänzt |
+| 57 | 2b | kommunizieren › anerkennen | «Sie dürfen gleichzeitig zuhören und Grenzen setzen. Validieren heisst nicht, verletzendes Verhalten gutzuheissen.» | `materialien--text--zuhoeren-ohne-zustimmen.md`: «Sie dürfen gleichzeitig zuhören und Grenzen setzen; Validieren heisst nicht, verletzendes Verhalten gutzuheissen.» | `abgleich/kommunizieren.md` Nr. 672: «Sie dürfen gleichzeitig zuhören und Grenzen setzen; …» → umformuliert (2b) | **inhaltsgleich**: Semikolon → Punkt |
+| 58 | 2b | kommunizieren › kippen | «Bei Bedrohung oder Gewalt beenden Sie das Gespräch, schaffen Abstand und bringen sich in Sicherheit.» | `materialien--text--gespraeche-kippen.md`: «Bei Bedrohung oder Gewalt: Beenden Sie das Gespräch, schaffen Sie Abstand und bringen Sie sich in Sicherheit.» | `abgleich/kommunizieren.md` Nr. 719: «Bei Bedrohung oder Gewalt: Beenden Sie das Gespräch, …» → umformuliert (2b) | **inhaltsgleich**: Satzbau; danach Verweis im Text |
+| 59 | 2b | kommunizieren › worte | «Sie müssen die Aussage weder widerlegen noch als Merkmal der Diagnose deuten.» | `materialien--text--wenn-worte-treffen.md`: «Sie müssen die Aussage weder widerlegen noch als Diagnosemerkmal deuten.» | `abgleich/kommunizieren.md` Nr. 857: «Sie müssen die Aussage weder widerlegen noch als …» → umformuliert (2b) | **inhaltsgleich**: Begriff aufgelöst |
+| 60 | 2b | kommunizieren › rollen | «Bei erwachsenen Kindern hilft es, Selbstbestimmung und Verantwortung aller Beteiligten zu beachten. Bei Minderjährigen gelten andere Schutz- und Sorgepflichten.» | `kommunizieren.md`: «Bei erwachsenen Kindern hilft es, Selbstbestimmung und Verantwortung aller Beteiligten zu beachten; bei Minderjährigen gelten andere Schutz- und Sorgepflichten.» | `abgleich/kommunizieren.md` Nr. 194: «Bei erwachsenen Kindern hilft es, Selbstbestimmung und …» → verschoben (Vertiefung, 2b) | **inhaltsgleich**: Semikolon → Punkt, in Vertiefung |
+| 61 | 2b | kommunizieren › beispiele | «Die Beispiele sind eigene didaktische Ableitungen aus den Ansätzen auf dieser Seite, kein auf Wirksamkeit geprüftes Übungsprogramm.» | `uebungen.md`: «Diese erfundenen Szenarien sind eigene didaktische Ableitungen aus den auf der Kommunikations-Seite erläuterten Ansätzen.» | `abgleich/kommunizieren.md` Nr. 263: «Diese erfundenen Szenarien sind eigene didaktische …» → umformuliert (2b-2) | **verändert**: «erfundenen Szenarien» → «Die Beispiele»; dass sie erfunden sind, steht auf `kommunizieren` nicht mehr (auf `beziehungen`: «Ein erfundenes Beispiel») |
+| 62 | 2b | krise › waehrend | «Begrenzen Sie den Zugang zu Medikamenten oder gefährlichen Gegenständen nur ohne Eigengefährdung, möglichst gemeinsam und nach professioneller Anleitung.» | `unterstuetzen--krise.md`: «Begrenzen Sie den Zugang zu Medikamenten oder gefährlichen Gegenständen nur ohne Eigengefährdung, möglichst gemeinsam und nach professioneller Anleitung.» | `abgleich/krise.md` Nr. 78: «Begrenzen Sie den Zugang zu Medikamenten oder gefährlichen …» → übernommen | **inhaltsgleich**: Wortlaut gehalten (fachlich heikel) |
+| 63 | 2b | krise › suizid | «Selbstverletzung kann ohne Todesabsicht erfolgen, schliesst Suizidgedanken aber nicht aus.» | `unterstuetzen--krise.md`: «Selbstverletzung kann ohne Todesabsicht erfolgen, schliesst Suizidgedanken aber nicht aus.» | `abgleich/krise.md` Nr. 98: «Selbstverletzung kann ohne Todesabsicht erfolgen, schliesst …» → übernommen | **inhaltsgleich**: wörtlich |
+| 64 | 2b | krise › suizid | «Fragen Sie ausdrücklich nach Suizidgedanken. Wenn Selbstverletzung im Raum steht, können Sie zusätzlich fragen: «Denkst du gerade daran, dich zu verletzen?»» | `unterstuetzen--krise.md`: «Fragen Sie ausdrücklich nach Suizidgedanken; wenn Selbstverletzung im Raum steht, können Sie zusätzlich fragen: «Denkst du gerade daran, dich zu verletzen?»» | `abgleich/krise.md` Nr. 100: «Fragen Sie ausdrücklich nach Suizidgedanken; wenn …» → übernommen | **inhaltsgleich**: Semikolon → Punkt |
+| 65 | 2b | krise › sagen | «Bei Bedrohung oder Gewalt gehen Sie auf Abstand, bringen sich in Sicherheit und holen Hilfe über den Notruf.» | `unterstuetzen--krise.md`: «Bei Bedrohung bringen Sie sich in Sicherheit und informieren die Leitstelle.» | `abgleich/krise.md` Nr. 106: «Bei Bedrohung bringen Sie sich in Sicherheit und …» → zusammengeführt (2b-K) | **verändert**: «informieren die Leitstelle» → «holen Hilfe über den Notruf» (2b-K, P2b-F-1) |
+| 66 | 2b | krise › suizid | «Eine Übersicht über mehrere Studien (Dazzi et al., 2014) fand keine nachweisbare Zunahme von Suizidgedanken durch direktes Fragen.» | `unterstuetzen--krise.md`: «Die von Dazzi et al. ausgewerteten Studien zeigten keinen statistisch signifikanten Anstieg von Suizidgedanken durch direktes Fragen.» | `abgleich/krise.md` Nr. 120: «Die von Dazzi et al. ausgewerteten Studien zeigten keinen …» → umformuliert (2b-2) | **verändert**: Wortlaut 2b-2; «statistisch signifikant» → «nachweisbar»; Jahr 2014 ergänzt (Liste 2b-2) |
+| 67 | 2b | krise › danach | «Diese Beschreibung ist keine Diagnose. Bei anhaltenden oder beeinträchtigenden Beschwerden ist fachliche Unterstützung sinnvoll.» | `unterstuetzen--krise.md`: «Diese Beschreibung ist keine Diagnose; bei anhaltenden oder beeinträchtigenden Beschwerden ist fachliche Unterstützung sinnvoll.» | `abgleich/krise.md` Nr. 154: «Diese Beschreibung ist keine Diagnose; bei anhaltenden oder …» → übernommen | **inhaltsgleich**: Semikolon → Punkt |
+| 68 | 2b | krise › danach | «Nach einer Krise kann gemeinsam geprüft werden, welche Veränderungen beobachtbar waren und welche Hinweise oder Hilfen künftig gewünscht sind. Dabei muss niemand nach …» | `unterstuetzen--krise.md`: «Nach einer Krise kann gemeinsam und ohne Ursachenzwang geprüft werden, welche Veränderungen beobachtbar waren und welche Hinweise oder Hilfen künftig gewünscht sind.» | `abgleich/krise.md` Nr. 196: «Nach einer Krise kann gemeinsam und ohne Ursachenzwang …» → verschoben (Vertiefung, 2b) | **inhaltsgleich**: «ohne Ursachenzwang» als eigener Satz |
+| 69 | 2b | krise › bleibt | «Kinder müssen weder Streit schlichten noch Medikamente kontrollieren oder einen Elternteil bewachen.» | `unterstuetzen--krise.md`: «Kinder müssen weder Streit schlichten noch Medikamente kontrollieren oder einen Elternteil bewachen.» | `abgleich/krise.md` Nr. 216: «Kinder müssen weder Streit schlichten noch Medikamente …» → übernommen | **inhaltsgleich**: wörtlich |
+| 70 | 2b | krise › suizid | «Wenn Sie sich konkret sorgen, fragen Sie ruhig und direkt, ob die Person Suizidgedanken oder einen Plan hat.» | kein Bestandssatz | `abgleich/krise.md` Nr. 304: «–» → neu (2b) | **neu**: Wortlaut von `verstehen` (Nr. 128); Liste 2b |
+| 71 | 2b | krise › suizid | «Direkt nachzufragen, löst nach heutigem Wissensstand keine suizidale Handlung aus.» | kein Bestandssatz | `abgleich/krise.md` Nr. 307: «–» → neu (2b) | **neu**: Wortlaut von `verstehen` (Nr. 129); Liste 2b |
+| 72 | 2b | krise › belastung | «Die Bereiche bewerten keine Diagnose und sagen nicht voraus, wie sich eine Situation entwickeln wird.» | `unterstuetzen--krise.md`: «Sie bewerten keine Diagnose und sagen nicht voraus, wie sich eine Situation entwickeln wird.» | `abgleich/krise.md` Nr. 34: «Sie bewerten keine Diagnose und sagen nicht voraus, wie …» → umformuliert (2b-K) | **inhaltsgleich**: Subjekt genannt |
+| 73 | 2b | krise › vermeiden | «Vorwürfe zu machen oder Schuld zuzuweisen» | `unterstuetzen--krise.md`: «✗ Vorwürfe machen oder Schuld zuweisen» | `abgleich/krise.md` Nr. 128: «✗ Vorwürfe machen oder Schuld zuweisen» → umformuliert (2b) | **inhaltsgleich**: Infinitiv |
+| 74 | 2c | genesung › forschung | «Langzeitstudien sprechen klar gegen das alte Bild einer hoffnungslosen Entwicklung.» | `genesung.md`: «Langzeitstudien sprechen klar gegen das alte Bild einer hoffnungslosen Entwicklung.» | `abgleich/genesung.md` Nr. 73: «Langzeitstudien sprechen klar gegen das alte Bild einer …» → übernommen | **inhaltsgleich**: wörtlich |
+| 75 | 2c | genesung › forschung | «erreichten während einer zehnjährigen Studie mindestens einmal eine symptomatische Remission über zwei Jahre.» | `genesung.md`: «erreichten während einer zehnjährigen Studie mindestens einmal eine symptomatische Remission über zwei Jahre.» | `abgleich/genesung.md` Nr. 76: «erreichten während einer zehnjährigen Studie mindestens …» → übernommen | **inhaltsgleich**: Zahl 93 % wörtlich, Bestand `genesung.md` |
+| 76 | 2c | genesung › forschung | «erreichten im selben Beobachtungszeitraum eine mindestens zweijährige Recovery: Remission zusammen mit guter sozialer und beruflicher Funktionsfähigkeit nach der …» | `genesung.md`: «erreichten im selben Beobachtungszeitraum eine mindestens zweijährige Recovery: Remission zusammen mit guter sozialer und beruflicher Funktionsfähigkeit nach der …» | `abgleich/genesung.md` Nr. 79: «erreichten im selben Beobachtungszeitraum eine mindestens …» → übernommen | **inhaltsgleich**: Zahl 50 % wörtlich |
+| 77 | 2c | genesung › forschung | «Untersucht wurden 290 Erwachsene, die zu Studienbeginn stationär behandelt wurden.» | `genesung.md`: «Hinweis: Untersucht wurden 290 Erwachsene, die zu Studienbeginn stationär behandelt wurden.» | `abgleich/genesung.md` Nr. 89: «Hinweis: Untersucht wurden 290 Erwachsene, die zu …» → übernommen | **inhaltsgleich**: 290 Erwachsene, stationär; wörtlich ohne «Hinweis:» |
+| 78 | 2c | genesung › forschung | «Die Zahlen beschreiben jemals erreichte Zustände im Verlauf, nicht den Anteil dauerhaft beschwerdefreier Menschen am Studienende.» | `genesung.md`: «Die Zahlen beschreiben jemals erreichte Zustände im Verlauf, nicht den Anteil dauerhaft beschwerdefreier Menschen am Studienende.» | `abgleich/genesung.md` Nr. 90: «Die Zahlen beschreiben jemals erreichte Zustände im …» → übernommen | **inhaltsgleich**: wörtlich |
+| 79 | 2c | genesung › einfluesse | «Für Borderline selbst sind Medikamente keine Kernbehandlung. Medikamente werden nur gemeinsam mit der behandelnden ärztlichen Fachperson geändert.» | `genesung.md`: «Für Borderline selbst sind Medikamente keine Kernbehandlung; Änderungen nur mit der behandelnden Fachperson.» | `abgleich/genesung.md` Nr. 145: «Für Borderline selbst sind Medikamente keine …» → umformuliert (2c-K) | **verändert**: «ärztlichen» ergänzt (Verschärfung, Entscheid P2c-F-4 b / P2c2-F-10; Liste 2c-K) |
+| 80 | 2c | genesung › einfluesse | «Die fünf Bereiche sind eine eigene Zusammenstellung der Fachstelle aus Behandlungsleitlinien, kein geprüftes Modell.» | `genesung.md`: «Die fünf Bereiche sind eine eigene redaktionelle Synthese der Fachstelle, kein validiertes Fünf-Faktoren-Modell und keine individuelle Prognose.» | `abgleich/genesung.md` Nr. 153: «Die fünf Bereiche sind eine eigene redaktionelle Synthese …» → umformuliert (2c-1) | **verändert**: «validiertes Fünf-Faktoren-Modell» → «geprüftes Modell», «aus Behandlungsleitlinien» ergänzt (aus Nr. 154) |
+| 81 | 2c | genesung › verlauf (Figur `v-ge-trieb`) | «Eine schwierigere Phase bedeutet nicht, dass alles Erreichte verloren ist.» | `genesung.md`: «Ein schwieriger Abschnitt macht frühere Erfahrungen oder Fähigkeiten nicht wertlos.» | `abgleich/genesung.md` Nr. 105: «Ein schwieriger Abschnitt macht frühere Erfahrungen oder …» → zusammengeführt | **inhaltsgleich (Figur)**: Kernaussage Ein neuer Trieb |
+| 82 | 2c | genesung › verlauf (Figur `v-ge-trieb`) | «Das Bild ist eine Metapher, keine Vorhersage eines Genesungsverlaufs. Hilfreiche Bedingungen können Entwicklung unterstützen.» | `genesung.md`: «Der Garten ist eine Metapher: Hilfreiche Bedingungen können Entwicklung unterstützen.» | `abgleich/genesung.md` Nr. 42: «Der Garten ist eine Metapher: Hilfreiche Bedingungen können …» → umformuliert (2c-1) | **inhaltsgleich (Figur)**: Vertiefung «Grenzen des Bildes» |
+| 83 | 2c | genesung › begriffe | «Studien und Leitlinien sprechen meist nicht von «Heilung», sondern genauer von Remission, Alltag und Teilhabe, Lebensqualität oder persönlicher Recovery.» | `materialien--text--remission-heilung.md`: «Studien und Leitlinien sprechen meist nicht von «Heilung», sondern genauer von Remission, Alltag und Teilhabe, Lebensqualität oder persönlicher Recovery.» | `abgleich/genesung.md` Nr. 307: «Studien und Leitlinien sprechen meist nicht von «Heilung», …» → verschoben (Vertiefung, 2c-1) | **inhaltsgleich**: wörtlich, Vertiefung «Zum Begriff «Heilung»» |
+| 84 | 2c | genesung › freiwillig | «Die betroffene Person entscheidet mit.» | `genesung.md`: «Die betroffene Person entscheidet mit; Sie dürfen Unterstützung anbieten, begrenzen oder ablehnen.» | `abgleich/genesung.md` Nr. 129: «Die betroffene Person entscheidet mit; Sie dürfen …» → übernommen | **inhaltsgleich**: zweiter Teil bei «Was Sie tun können» |
+| 85 | 2c | diagnose › abklaerung | «Geprüft werden neun Kriterien. Mindestens fünf müssen als anhaltendes und situationsübergreifendes Muster vorliegen.» | `verstehen--diagnostik.md`: «Das DSM-5-TR beschreibt neun Kriterien; mindestens fünf müssen als anhaltendes, situationsübergreifendes Muster erfüllt sein.» | `abgleich/diagnose.md` Nr. 36: «Das DSM-5-TR beschreibt neun Kriterien; mindestens fünf …» → zusammengeführt | **verändert**: DSM-5-TR: neun Kriterien, mindestens fünf; Zahlen gleich |
+| 86 | 2c | diagnose › abklaerung | «Für die stationäre medizinische Statistik gilt in der Schweiz 2026 weiterhin die ICD-10-GM 2024.» | `verstehen--diagnostik.md`: «Schweizer Kodierkontext: Für die stationäre medizinische Statistik gilt in der Schweiz 2026 weiterhin die ICD-10-GM 2024.» | `abgleich/diagnose.md` Nr. 62: «Schweizer Kodierkontext: Für die stationäre medizinische …» → verschoben (Vertiefung, 2c-2) | **inhaltsgleich**: ICD-10-GM 2024, Code F60.31 im Folgesatz wie im Bestand |
+| 87 | 2c | diagnose › begleiterkrankungen | «Bei der Abklärung prüfen Fachpersonen, ob ähnliche Muster zu einer anderen Erkrankung gehören, etwa zu bipolaren Störungen, einer PTBS, ADHS oder dissoziativen Störungen.» | `verstehen--diagnostik.md`: «Bei der Diagnose werden auch andere Erkrankungen geprüft, die ähnliche Muster zeigen können — etwa bipolare Störungen, posttraumatische Belastungsstörungen, ADHS oder …» | `abgleich/diagnose.md` Nr. 80: «Bei der Diagnose werden auch andere Erkrankungen geprüft, …» → umformuliert (2c-2) | **verändert**: Differenzialdiagnostik in einfacher Sprache |
+| 88 | 2c | diagnose › bedeutung | «Eine Diagnose ist nicht dauerhaft fixiert.» | `verstehen--diagnostik.md`: «Wichtig: Eine Diagnose ist nicht dauerhaft fixiert.» | `abgleich/diagnose.md` Nr. 88: «Wichtig: Eine Diagnose ist nicht dauerhaft fixiert.» → übernommen | **inhaltsgleich**: ohne «Wichtig:» |
+| 89 | 2c | diagnose › zweifel | «Bei akuter Gefahr, etwa bei Suizidgefahr, schwerer Selbstverletzung oder Gefahr für andere Menschen, ist die Frage nach der Diagnose nachrangig.» | `verstehen--diagnostik.md`: «Klare Grenze: Bei akuter Gefahr — Suizidalität, schwerer Selbstverletzung oder Fremdgefährdung — ist die Diagnose-Frage nachrangig.» | `abgleich/diagnose.md` Nr. 108: «Klare Grenze: Bei akuter Gefahr — Suizidalität, schwerer …» → umformuliert (2c-2) | **verändert**: «Suizidalität» → «Suizidgefahr», «Fremdgefährdung» → «Gefahr für andere Menschen» |
+| 90 | 2c | diagnose › begleiterkrankungen | «Suizidale Aussagen oder Hinweise auf konkrete Pläne brauchen eine professionelle Einschätzung, unabhängig von ihrer diagnostischen Zuordnung.» | `verstehen--begleiterkrankungen.md`: «Bei deutlicher Verschlechterung, Hoffnungslosigkeit oder Sorge um die Sicherheit braucht es eine professionelle Einschätzung – unabhängig von der diagnostischen …» | `abgleich/diagnose.md` Nr. 270: «Bei deutlicher Verschlechterung, Hoffnungslosigkeit oder …» → zusammengeführt | **verändert**: Auslöser auf zwei Sätze verteilt («Nehmen Sie auch anhaltende Hoffnungslosigkeit oder deutliche Veränderungen ernst.»); kein Verlust |
+| 91 | 2c | diagnose › begleiterkrankungen | «Die britische Behandlungsleitlinie NICE beschreibt einen beobachteten Zusammenhang zwischen Borderline mit einer zusätzlichen Depression (Major Depression) und …» | `verstehen--begleiterkrankungen.md`: «Die NICE-Vollleitlinie (2009) beschreibt einen beobachteten Zusammenhang zwischen Borderline mit zusätzlicher Major Depression und Suizidversuchen.» | `abgleich/diagnose.md` Nr. 294: «Die NICE-Vollleitlinie (2009) beschreibt einen beobachteten …» → umformuliert (2c-2) | **verändert**: «NICE-Vollleitlinie (2009)» → «britische Behandlungsleitlinie NICE» |
+| 92 | 2c | diagnose › begleiterkrankungen | «Bei Menschen mit Borderline kommen weitere psychische Diagnosen häufig vor, aber nicht bei allen.» | `verstehen--begleiterkrankungen.md`: «Bei Menschen mit Borderline kommen weitere psychische Diagnosen häufig vor.» | `abgleich/diagnose.md` Nr. 239: «Bei Menschen mit Borderline kommen weitere psychische …» → übernommen | **verändert**: «aber nicht bei allen» ergänzt (aus Grafiktext); Status «übernommen» vertretbar |
+| 93 | 2c | behandlung › angebote | «Klären Sie die Kostenübernahme vorab.» | `verstehen--diagnostik.md`: «Klären Sie die Kostenübernahme bei der abklärenden Stelle und bei Ihrer Krankenversicherung vorab.» | `abgleich/diagnose.md` Nr. 161: «Klären Sie die Kostenübernahme bei der abklärenden Stelle …» → gekürzt | **verändert**: «bei der abklärenden Stelle und bei Ihrer Krankenversicherung» entfällt; getragen von `wartezeit` («Fragen Sie Praxis und Krankenversicherung …») |
+| 94 | 2c | behandlung › therapieformen | «Mehrere strukturierte Psychotherapien können bei Borderline helfen. Für viele Einzelvergleiche sind die Forschungsergebnisse nur begrenzt sicher, und es gibt keine …» | `unterstuetzen--therapie.md`: «Mehrere strukturierte Psychotherapien können bei BPS helfen; die Sicherheit der Evidenz ist für viele Einzelvergleiche begrenzt, und es gibt keine für alle Menschen …» | `abgleich/behandlung.md` Nr. 166: «Mehrere strukturierte Psychotherapien können bei BPS …» → umformuliert (2c-2) | **verändert**: «Sicherheit der Evidenz» in einfacher Sprache |
+| 95 | 2c | behandlung › therapieformen | «Dazu liegen inzwischen auch Daten aus einer randomisierten Studie vor: Die Studie von 2024 fand keinen statistisch signifikanten Vorteil gegenüber einer aktiven …» | `unterstuetzen--therapie.md`: «Für Family Connections liegen inzwischen auch randomisierte Daten vor: Die Studie von 2024 fand keinen statistisch signifikanten Vorteil gegenüber einer aktiven …» | `abgleich/behandlung.md` Nr. 169: «Für Family Connections liegen inzwischen auch randomisierte …» → verschoben (Vertiefung, 2c-2) | **inhaltsgleich**: Family Connections, RCT 2024: Aussage gleich |
+| 96 | 2c | behandlung › therapieformen | «Nach NICE sollen Medikamente nicht gezielt zur Behandlung von Borderline selbst oder ihrer einzelnen Kernsymptome eingesetzt werden.» | `verstehen--begleiterkrankungen.md`: «NICE empfiehlt keine gezielte medikamentöse Behandlung von Borderline selbst oder einzelner Kernsymptome; bei einer zusätzlichen Depression kann Medikation gemeinsam mit …» | `abgleich/diagnose.md` Nr. 353: «NICE empfiehlt keine gezielte medikamentöse Behandlung von …» → zusammengeführt | **inhaltsgleich**: Medikamente: zweiter Teil steht im Folgesatz («Bei einer zusätzlichen Depression kann eine Kombination aus einem Antidepressivum …», Bestand Nr. 348) |
+| 97 | 2c | behandlung › therapieformen | «Nach NICE sollen Medikamente nicht gezielt zur Behandlung von Borderline selbst oder ihrer einzelnen Kernsymptome eingesetzt werden.» | `verstehen--begleiterkrankungen.md`: «Medikation: Nach NICE sollen Medikamente nicht gezielt zur Behandlung von Borderline selbst oder ihrer einzelnen Kernsymptome eingesetzt werden.» | `abgleich/diagnose.md` Nr. 347: «Medikation: Nach NICE sollen Medikamente nicht gezielt zur …» → übernommen | **inhaltsgleich**: NICE-Medikamentensatz wörtlich |
+| 98 | 2c | behandlung › angebote | «Die Station richtet sich an junge Erwachsene von 17 bis 25 Jahren.» | kein Bestandssatz | `abgleich/behandlung.md` Nr. 321: «–» → neu (2c-K) | **neu**: neue Altersangabe «17 bis 25 Jahren», nach Website des Angebots; Liste 2c-K (PRUEFBERICHT Z. 3201), freigegeben P2c-F-17 |
+| 99 | 2c | behandlung › therapieformen | «Therapie kann in drei Rahmen stattfinden:» | `unterstuetzen--therapie.md`: «Therapie ist in drei Settings möglich: ambulant mit regelmässigen Terminen und Leben zu Hause, teilstationär in einer Tagesklinik mit Übernachtung zu Hause oder …» | `abgleich/behandlung.md` Nr. 251: «Therapie ist in drei Settings möglich: ambulant mit …» → umformuliert (2c-K) | **verändert**: «Settings» → «Rahmen», Begriffsliste |
+| 100 | 2c | behandlung › kontakt | «Die behandelnde Fachperson ist an die Schweigepflicht gebunden und darf ohne Einwilligung der betroffenen Person keine Inhalte der Behandlung besprechen.» | `unterstuetzen--therapie.md`: «Wichtig: Der Therapeut ist an die Schweigepflicht gebunden und darf ohne Einwilligung Ihres Angehörigen keine Inhalte der Behandlung besprechen.» | `abgleich/behandlung.md` Nr. 233: «Wichtig: Der Therapeut ist an die Schweigepflicht gebunden …» → verschoben (Vertiefung, 2c-2) | **verändert**: «Der Therapeut» → «Die behandelnde Fachperson» |
+| 101 | 2c | unterstuetzung › buecher | «Ein deutschsprachiges Kinderbuch speziell zum Thema Borderline.» | `buchempfehlungen.md`: «Das einzige deutschsprachige Kinderbuch speziell zum Thema Borderline.» | `abgleich/unterstuetzung.md` Nr. 217: «Das einzige deutschsprachige Kinderbuch speziell zum Thema …» → umformuliert (2c-K) | **verändert**: «Das einzige» → «Ein» (P2c-F-12, Abschwächung mit Grund); Liste 2c-K |
+| 102 | 2c | unterstuetzung › beratung | «Die Beratung der Fachstelle kostet nichts und wird nicht an Krankenkassen weitergegeben.» | `beratung.md`: «Entstehen Kosten, und werden Informationen an eine Krankenkasse weitergegeben?» | `abgleich/unterstuetzung.md` Nr. 82: «Entstehen Kosten, und werden Informationen an eine …» → umformuliert (2c-K) | **verändert**: Frage des Bestands beantwortet (P2c-F-14) |
+| 103 | 2c | unterstuetzung › buecher | «Anspruchsvoller als ein niederschwelliger Einstieg. Auch Neurobiologie und Psychopharmakotherapie kommen vor.» | `buchempfehlungen.md`: «Anspruchsvoller als ein niederschwelliger Einstieg — auch Neurobiologie und Psychopharmakotherapie kommen vor.» | `abgleich/unterstuetzung.md` Nr. 265: «Anspruchsvoller als ein niederschwelliger Einstieg — auch …» → übernommen | **inhaltsgleich**: Gedankenstrich → Punkt |
+| 104 | 3-1 | fragen › kopf | «Manche Fragen lassen sich nicht allgemein beantworten, weil Sicherheit, Kinder, Gewalt, Trennung oder akute Suizidalität eine eigene Einschätzung brauchen.» | `faq.md`: «Manche Fragen lassen sich nicht allgemein beantworten, weil Sicherheit, Kinder, Gewalt, Trennung oder akute Suizidalität eine eigene Einschätzung brauchen.» | `abgleich/fragen.md` Nr. 8: «Manche Fragen lassen sich nicht allgemein beantworten, weil …» → übernommen | **inhaltsgleich**: wörtlich |
+| 105 | 3-1 | fragen › verlauf | «Remission bedeutet, dass die Diagnosekriterien während eines festgelegten Zeitraums nicht mehr erfüllt sind.» | `faq.md`: «Remission bedeutet, dass die Diagnosekriterien nicht mehr erfüllt sind; Recovery umfasst darüber hinaus persönliche Lebensqualität, Beziehungen und Teilhabe.» | `abgleich/fragen.md` Nr. 26: «Remission bedeutet, dass die Diagnosekriterien nicht mehr …» → umformuliert (3-1-K) | **verändert**: «während eines festgelegten Zeitraums» ergänzt (Z31-F-2) |
+| 106 | 3-1 | fragen › verlauf | «Zeitpunkt, Ausmass und persönliche Genesung unterscheiden sich aber.» | `faq.md`: «Viele Menschen erreichen im Verlauf eine deutliche Besserung oder Remission, doch Zeitpunkt, Ausmass und persönliche Genesung unterscheiden sich.» | `abgleich/fragen.md` Nr. 27: «Viele Menschen erreichen im Verlauf eine deutliche …» → umformuliert (3-1) | **inhaltsgleich**: zwei Sätze, beide vorhanden |
+| 107 | 3-1 | fragen › verlauf | «Genetische Einflüsse können die Anfälligkeit mitbestimmen.» | `faq.md`: «Genetische Einflüsse können die Anfälligkeit mitbestimmen; das bedeutet keine sichere Weitergabe einer Diagnose.» | `abgleich/fragen.md` Nr. 36: «Genetische Einflüsse können die Anfälligkeit mitbestimmen; …» → umformuliert (3-1) | **inhaltsgleich**: zwei Sätze, beide vorhanden |
+| 108 | 3-1 | fragen › diagnose | «Bei akuter Gefahr ist die Frage nach der Diagnose nachrangig.» | `faq.md`: «Bei akuter Gefahr ist die Diagnose-Frage nachrangig – dann zählt die Soforthilfe.» | `abgleich/fragen.md` Nr. 70: «Bei akuter Gefahr ist die Diagnose-Frage nachrangig – dann …» → umformuliert (3-1) | **verändert**: «Soforthilfe» → «Hilfe über den Notruf» und Verweis im Text |
+| 109 | 3-1 | fragen › gespraeche | «Nehmen Sie Suizidäusserungen immer ernst, und schalten Sie professionelle Hilfe ein.» | `faq.md`: «Suizidäusserungen immer ernst nehmen und professionelle Hilfe einschalten – sagen Sie klar: «Wenn du sagst, du willst dir etwas antun, hole ich Hilfe.» Bei anderen …» | `abgleich/fragen.md` Nr. 104: «Suizidäusserungen immer ernst nehmen und professionelle …» → umformuliert (3-1) | **inhaltsgleich**: drei Sätze, alle vorhanden |
+| 110 | 3-1 | fragen › behandlung | «Eine stationäre Aufnahme und eine fürsorgerische Unterbringung (FU) sind unterschiedliche Fragen.» | `faq.md`: «Eine stationäre Aufnahme und eine fürsorgerische Unterbringung (FU) sind unterschiedliche Fragen.» | `abgleich/fragen.md` Nr. 143: «Eine stationäre Aufnahme und eine fürsorgerische …» → übernommen | **inhaltsgleich**: wörtlich |
+| 111 | 3-1 | fragen › behandlung | «Auch strukturierte generalistische Behandlungen können wirksam sein.» | `faq.md`: «Dazu gehören zum Beispiel DBT, MBT, Schematherapie oder TFP; auch strukturierte generalistische Behandlungen können wirksam sein.» | `abgleich/fragen.md` Nr. 218: «Dazu gehören zum Beispiel DBT, MBT, Schematherapie oder …» → umformuliert (3-1) | **inhaltsgleich**: zwei Sätze, beide vorhanden |
+| 112 | 3-1 | fragen › behandlung | «Für Borderline selbst sind Medikamente keine Kernbehandlung.» | `faq.md`: «Es gibt keine etablierte medikamentöse Kernbehandlung der Borderline-Persönlichkeitsstörung; strukturierte Psychotherapie steht im Zentrum.» | `abgleich/fragen.md` Nr. 225: «Es gibt keine etablierte medikamentöse Kernbehandlung der …» → umformuliert (3-1) | **inhaltsgleich**: zwei Sätze, beide vorhanden |
+| 113 | 3-1 | fragen › behandlung | «Unwirksame oder nicht mehr nötige Medikamente gehören überprüft.» | `faq.md`: «Ziel, erwarteter Nutzen, Risiken, Dauer und Überprüfung sollten ärztlich festgelegt werden; unwirksame oder nicht mehr nötige Medikamente gehören überprüft.» | `abgleich/fragen.md` Nr. 227: «Ziel, erwarteter Nutzen, Risiken, Dauer und Überprüfung …» → umformuliert (3-1) | **inhaltsgleich**: zwei Sätze, beide vorhanden |
+| 114 | 3-1 | fragen › schutz | «Aus einer Borderline-Diagnose lässt sich das Motiv nicht ableiten.» | `faq.md`: «Eifersucht und kontrollierendes Verhalten können viele Ursachen haben; aus einer Borderline-Diagnose lässt sich das Motiv nicht ableiten.» | `abgleich/fragen.md` Nr. 280: «Eifersucht und kontrollierendes Verhalten können viele …» → umformuliert (3-1) | **inhaltsgleich**: zwei Sätze, beide vorhanden |
+| 115 | 3-1 | quellen › forschung | «Storebø, O. J. et al. (2020).» | `quellen.md`: «Storebø, O. J. et al. (2020). Psychological therapies for people with borderline personality disorder. Cochrane Database of Systematic Reviews 5(5), CD012955. · PubMed» | `abgleich/quellen.md` Nr. 19: «Storebø, O. J. et al. (2020). Psychological therapies for …» → übernommen | **inhaltsgleich**: Angabe vollständig; Einordnung «75 randomisierten Studien mit 4507 Teilnehmenden» = Bestand «(4'507 Teilnehmer:innen)» |
+| 116 | 3-1 | quellen › forschung | «Randomisierte Studie zur ambulanten Mentalisierungsbasierten Therapie (MBT) mit 134 Teilnehmenden über 18 Monate.» | `quellen.md`: «134 Teilnehmer:innen, 18 Monate.» | `abgleich/quellen.md` Nr. 61: «134 Teilnehmer:innen, 18 Monate.» → umformuliert (3-1) | **verändert**: 134 Teilnehmende, 18 Monate; Zahlen gleich |
+| 117 | 3-1 | quellen › angehoerige | «Mason, P. T. und Kreger, R. (2007, 8. Auflage 2014).» | `quellen.md`: «Mason, P. T. & Kreger, R. (2007 / 2014). Schluss mit dem Eiertanz. Balance Buch + Medien Verlag (bisher erfasste deutsche Ausgabe 2007, 8. Auflage 2014; in diesem …» | `abgleich/quellen.md` Nr. 125: «Mason, P. T. & Kreger, R. (2007 / 2014). Schluss mit dem …» → übernommen | **verändert**: «bisher erfasste … nicht neu unabhängig geprüft» entfällt; Ausgabe offen (NK-F-3) |
+| 118 | 3-1 | quellen › begriffe | «Im DSM-5-TR gehören mindestens 5 der folgenden 9 Merkmale zur Diagnose.» | `glossar.md`: «Im DSM-5-TR gehören mindestens 5 der folgenden 9 Merkmale zur Diagnose.» | `abgleich/quellen.md` Nr. 287: «Im DSM-5-TR gehören mindestens 5 der folgenden 9 Merkmale …» → verschoben (Vertiefung, 3-1) | **inhaltsgleich**: wörtlich, Vertiefung |
+| 119 | 3-1 | quellen › begriffe | «Die Liste ermöglicht keine Selbst- oder Fremddiagnose.» | `glossar.md`: «Verlauf und mögliche andere Erklärungen werden fachlich beurteilt; die Liste ermöglicht keine Selbst- oder Fremddiagnose:» | `abgleich/quellen.md` Nr. 289: «Verlauf und mögliche andere Erklärungen werden fachlich …» → verschoben (Vertiefung, 3-1) | **inhaltsgleich**: zwei Sätze, beide vorhanden |
+| 120 | 3-1 | quellen › leitlinien | «LeDoux, J. E. (1996).» | `quellen.md`: «LeDoux, J. E. (1996). The Emotional Brain: The Mysterious Underpinnings of Emotional Life. Simon & Schuster, New York.» | `abgleich/quellen.md` Nr. 228: «LeDoux, J. E. (1996). The Emotional Brain: The Mysterious …» → übernommen (2c-3-1-F) | **inhaltsgleich**: «Simon & Schuster» wie Bestand (2c-3-1-F) |
+| 121 | 3-1 | ueber › warum | «Der in der älteren Angehörigenliteratur verbreitete Begriff «Eiertanz» beschreibt das Erleben, ständig auf der Hut zu sein und Angst vor der nächsten Eskalation zu haben.» | `ueber-uns.md`: «Der in der älteren Angehörigenliteratur verbreitete Begriff «Eiertanz» beschreibt das Erleben, ständig auf der Hut zu sein und Angst vor der nächsten Eskalation zu haben.» | `abgleich/ueber.md` Nr. 12: «Der in der älteren Angehörigenliteratur verbreitete Begriff …» → übernommen | **inhaltsgleich**: wörtlich |
+| 122 | 3-1 | ueber › grundsaetze | «Angehörige werden weder beschuldigt noch für Regulation, Behandlung oder Genesung verantwortlich gemacht.» | `ueber-uns.md`: «Angehörige werden weder beschuldigt noch für Regulation, Behandlung oder Genesung verantwortlich gemacht.» | `abgleich/ueber.md` Nr. 23: «Angehörige werden weder beschuldigt noch für Regulation, …» → übernommen | **inhaltsgleich**: wörtlich |
+| 123 | 3-1 | index › beratung | «Die Beratung ist kostenlos und untersteht der Schweigepflicht.» | `impressum.md`: «Die Beratung für Angehörige ist kostenlos und steht Angehörigen von psychisch kranken Menschen im Kanton Zürich vertraulich zur Verfügung.» | `abgleich/ueber.md` Nr. 108: «Die Beratung für Angehörige ist kostenlos und steht …» → zusammengeführt | **verändert**: «im Kanton Zürich» steht auf `index` nicht; Frage S-Nr. 11 der Selbstprüfung 3-1, laut Freigabe entschieden |
+| 124 | 3-1 | ueber › warum | «Die Fachstelle bietet Beratung und Psychoedukation, keine Krisenintervention.» | `impressum.md`: «Die Fachstelle Angehörigenarbeit bietet keine Krisenintervention.» | `abgleich/ueber.md` Nr. 122: «Die Fachstelle Angehörigenarbeit bietet keine …» → wieder aufgenommen (3-1-K) | **verändert**: wieder aufgenommen (3-1-K) |
+| 125 | 3-1 | impressum-datenschutz › impressum | «Die Website ist ein Angebot der Fachstelle Angehörigenarbeit, kein offizielles Angebot der Psychiatrischen Universitätsklinik Zürich.» | `ueber-uns.md`: «Die Website ist ein eigenständig gestaltetes Informationsangebot und kein offizieller Kommunikationskanal der PUK Zürich.» | `abgleich/ueber.md` Nr. 73: «Die Website ist ein eigenständig gestaltetes …» → umformuliert (3-1) | **verändert**: Profilentscheid 11.10.2026 |
+| 126 | 3-1 | ueber › warum | «Diese Website möchte Angehörigen fachlich fundierte Orientierung geben.» | `ueber-uns.md`: «Diese Website möchte Angehörigen fachlich fundierte Orientierung geben – nicht um eine Erkrankung von aussen zu «lösen», sondern um Dynamiken besser einzuordnen, …» | `abgleich/ueber.md` Nr. 14: «Diese Website möchte Angehörigen fachlich fundierte …» → umformuliert (3-1) | **inhaltsgleich**: drei Sätze, alle vorhanden |
+| 127 | 1 | (kein Ort) – Bestand `/verstehen` › «Begleiterkrankungen — mögliche Kombinationen» | nirgends auf der Website (Suche nach «Häufigkeitsangaben», «Erhebungszeitraum», «Wahrscheinlichkeit»: keine Treffer) | `verstehen.md` Z. 271: «Häufigkeitsangaben unterscheiden sich je nach Stichprobe, Erhebungszeitraum und Diagnoseverfahren. Die Liste sagt deshalb nichts über die Wahrscheinlichkeit bei einer einzelnen Person aus.» | **keine Zeile** in irgendeiner Tabelle (`verstehen.md` schliesst den «Diagnostik-Teil» aus, `diagnose.md` nimmt nur `verstehen--diagnostik` und `verstehen--begleiterkrankungen` auf) | **still entfallen**: Einschränkung zur Häufigkeit fehlt; ähnlich, aber nicht gleich: `diagnose` › `begleiterkrankungen` «Die Reihenfolge ist keine Rangfolge.» → SP2-W1B-1 |
+| 128 | 1 | `quellen` › `begriffe`, Vertiefung «Die neun Kriterien im DSM-5-TR» (Ersatz) | «Die Liste ermöglicht keine Selbst- oder Fremddiagnose.» | `verstehen.md` Z. 231: «Die folgende Liste ist eine gekürzte Orientierung, keine Checkliste zur Selbst- oder Fremddiagnose.» und Z. 233–241 (neun Kriterien in eigener Fassung) | **keine Zeile**; die Fassung auf `quellen` stammt aus `glossar.md` (quellen.md Nr. 287–298) | **inhaltlich vorhanden, im Abgleich nicht belegt** → SP2-W1B-1 |
+
+**Stichprobe 20 «entfällt»-Zeilen** (ausgewählt über 10 Tabellen; Schwerpunkt Zeilen, deren Aussage die Suche auf der Website noch fand, und fachliche Sätze)
+
+| E | Zeile | Satz (Bestand, gekürzt) | Begründung im Abgleich | Suche auf der Website (eigenes Skript `ent.py`, beste Satzüberlappung) | Urteil |
+| ---: | --- | --- | --- | --- | --- |
+| 1 | `genesung.md` Nr. 264, entfällt | «Time to attainment of recovery … 10-year prospective follow-up study.» | Literaturangabe folgt auf `quellen` (nachgeführt 3-1) | wörtlich auf `quellen` › `forschung` | Begründung stimmt, **Status veraltet**: Aussage steht (verschoben) → SP2-W1B-5 |
+| 2 | `kommunizieren.md` Nr. 466, entfällt | «Ob eine Therapie gesucht wird, entscheidet die betroffene Person.» | ersetzt durch Beispiele | `fragen` › `behandlung`: «Ob jemand eine Therapie beginnt, entscheidet die betroffene Person.» | Aussage **steht** auf der Website; Status müsste «zusammengeführt» sein → SP2-W1B-5 |
+| 3 | `quellen.md` Nr. 490, entfällt | «Das tritt nicht bei allen Menschen mit Borderline auf und erlaubt keinen Schluss auf Absicht oder Charakter.» | Begriff «Splitting» entfällt | `fragen` › `gespraeche`: «Es tritt aber nicht bei allen Menschen mit Borderline auf und sagt nichts Sicheres über Absicht oder Charakter.» | Begründung plausibel (Begriff), Aussage steht aber auf `fragen` → SP2-W1B-5 |
+| 4 | `verstehen.md` Nr. 136, entfällt | «Unterschiede in Symptompräsentation, Begleiterkrankungen und Behandlungswegen sind beschrieben, die Forschung ist jedoch heterogen.» | Kürzung W2-2 | «heterogen»: kein Treffer | plausibel, wirklich entfallen; freigegeben mit Etappe 1 |
+| 5 | `verstehen.md` Nr. 137, entfällt | «Menschen aller Geschlechter und ihre Angehörigen sind hier mit gemeint.» | Kürzung W2-2, Paarform im Profil | «aller Geschlechter»: kein Treffer | plausibel |
+| 6 | `verstehen.md` Nr. 204, entfällt | «Verstehen bedeutet nicht, Beschimpfungen, Drohungen oder Gewalt auszuhalten.» | Kürzung; `einordnung` «Verstehen bedeutet nicht, alles auszuhalten.» | `verstehen` › `einordnung` wie genannt | plausibel (verallgemeinert, Aussage bleibt) |
+| 7 | `grenzen.md` Nr. 509, entfällt | «Signale sind Hinweise, keine Diagnose – und Erschöpfung ist kein persönliches Versagen.» | «Kürzung; verschoben nach `selbstfuersorge` (Etappe 2)» | `selbstfuersorge` › `kraft`: «Wenig Kraft zu haben, ist kein persönliches Versagen.»; › `warnsignale`: «kein Test, keine Diagnose» | Begründung widerspricht dem Status (verschoben ≠ entfällt) → SP2-W1B-5 |
+| 8 | `beziehungen.md` Nr. 133, entfällt | «Weder beweist eine abweichende Erinnerung absichtliches Lügen, noch macht der Hinweis auf Dissoziation jede Aussage automatisch zutreffend.» | Kürzung W2-2; Prüfbedarf erledigt mit Freigabe Etappe 1 | «Lügen»: kein Treffer (nur «Soll ich lügen …» auf `fragen`) | plausibel, entschieden |
+| 9 | `beziehungen.md` Nr. 206, entfällt | «Kinder tragen keine partnerschaftliche Verantwortung für die emotionale Stabilität eines Elternteils.» | Wiederholung: `grenzen` › `gewalt` | `grenzen`/`rolle`/`krise`: «Kinder müssen weder Streit schlichten …»; `rolle` › `kinder`: «nicht für die Erkrankung oder Behandlung ihrer Eltern verantwortlich» | plausibel |
+| 10 | `kommunizieren.md` Nr. 28, entfällt (2b-K) | «Linehan beschreibt fünf aufeinander aufbauende Formen und als sechste Form radikale Echtheit.» | P2b-F-9 | kein Treffer | plausibel, entschieden |
+| 11 | `quellen.md` Nr. 396, entfällt | «Das Gegenteil von Validierung: …» (Invalidierung) | Begriff kommt nicht vor | «Invalidierung»: kein Treffer | plausibel |
+| 12 | `selbstfuersorge.md` Nr. 371, entfällt | «Die Sauerstoffmaske ist eine redaktionelle Reflexionsmetapher, kein validiertes Wirkungsmodell.» | Metapher nur als Satz | kein Modell auf der Website | plausibel |
+| 13 | `behandlung.md` Nr. 261, entfällt | «Diese Telefonnummer gehört zur Psychotherapiestation für junge Erwachsene.» | Profil: keine Telefonnummern | keine Nummer, kein `tel:` | plausibel |
+| 14 | `index.md` Nr. 33, entfällt | «Klären Sie direkt bei der Fachstelle, wer das Angebot nutzen kann, ob Kosten entstehen …» | W1-4: Wortlaut der Fachstelle | `index` › `beratung`: «kostenlos und untersteht der Schweigepflicht», «berät alle Angehörigen» | plausibel |
+| 15 | `grenzen.md` Nr. 643, entfällt | «Diese Schutzregel gilt diagnoseunabhängig in jeder Beziehung.» | Kürzung | `grenzen` › `gewalt`: «Sie lässt sich nicht aus einer Borderline-Diagnose ableiten …» | plausibel |
+| 16 | `verstehen.md` Nr. 322, entfällt | «Sie stellt keine Diagnose, misst keine Gefährdung und sagt nicht voraus, was als Nächstes geschieht.» | Einschränkungen in Abbildung 2 | `verstehen` › `anspannung`: «Gefahr lässt sich aus der Stelle auf der Kurve nicht ableiten.» | plausibel |
+| 17 | `index.md` Nr. 245, entfällt | «Krisen und Belastungen können unabhängig von einer Diagnose auftreten.» | Wegweiser ersetzt durch Einstiege | kein gleicher Satz | plausibel |
+| 18 | `behandlung.md` Nr. 167, entfällt (2c-K) | «Auch strukturierte generalistische Behandlung ist relevant.» | K2-B-a2: Begriff darunter sagt es genauer | `behandlung` › `therapieformen`: «Auch klar strukturierte, auf Borderline abgestimmte Behandlungen …»; `fragen`: «Auch strukturierte generalistische Behandlungen können wirksam sein.» | plausibel, Aussage bleibt |
+| 19 | `quellen.md` Nr. 554, entfällt (3-1-K) | (kein Bestandssatz; Einordnung zu Zanarini 2024) | Z31-F-8: ohne Beleg im Bestand | `quellen` und `genesung` › `quellen`: nur Kurzangabe mit «Verwendet in» | plausibel |
+| 20 | `index.md` Nr. 228, entfällt | «Grenzen beschreiben, was für Sie möglich, sicher und tragbar ist.» | Selbsttest ersetzt | `quellen` › `begriffe` «Grenzen setzen»: «Klar sagen, was für Sie möglich, sicher und tragbar ist.» | Aussage steht → SP2-W1B-5 |
+
+Ergebnis Stichprobe: 15 von 20 Begründungen plausibel und Aussage wirklich nicht (oder nur verallgemeinert) auf der Website; 5 Zeilen (E1, E2, E3, E7, E20) mit Aussage auf der Website, Status «entfällt» damit falsch oder veraltet. Kein fachlicher Verlust.
+
+#### Befunde
+
+| ID | Stufe | Gewicht | Befund | Beleg |
+| --- | --- | --- | --- | --- |
+| SP2-W1B-1 | W1 | wichtig | **Bestandsteil ohne Abgleich, Sätze still entfallen.** `verstehen.md` Z. 225–275 (Akkordeons «Diagnostischer Überblick» und «Begleiterkrankungen — mögliche Kombinationen») hat in keiner Tabelle eine Zeile (37 von 40 Sätzen und Listenpunkten). `abgleich/verstehen.md` schliesst den «Diagnostik-Teil» aus, `abgleich/diagnose.md` nimmt ihn nicht auf, obwohl `UMBAUPLAN.md` Z. 35 ihn `diagnose` zuordnet; die Zählungen («542 Sätze des Bestands») wirken vollständig. Inhaltlich steht das meiste anderswo (DSM-Kriterien auf `quellen` › `begriffe` aus `glossar.md`; Begleiterkrankungen auf `diagnose`). **Nirgends auf der Website** stehen: «Häufigkeitsangaben unterscheiden sich je nach Stichprobe, Erhebungszeitraum und Diagnoseverfahren. Die Liste sagt deshalb nichts über die Wahrscheinlichkeit bei einer einzelnen Person aus.» sowie die Beispiele in Klammern («Bulimie, Binge-Eating», «Panik, soziale Phobie, generalisierte Angst», «Alkohol, Medikamente, illegale Substanzen»). Prüfbedarf: siehe SP2-F-W1B-1. | `coverage.py`; Tabelle Nr. 127–128; `abgleich/verstehen.md` Z. 3; `abgleich/diagnose.md` Z. 3; `BAUAUFTRAG-ETAPPE-2C2.md` Z. 14; Suche «Häufigkeitsangaben», «Erhebungszeitraum», «Wahrscheinlichkeit», «Bulimie», «soziale Phobie», «illegale» auf allen 17 Seiten: 0 Treffer |
+| SP2-W1B-2 | W1 (Werkzeug) | optional | `abgleich/pruefe-abgleich.mjs` prüft weder, ob der Bestandssatz einer Zeile im Bestand steht, noch ob jeder Bestandssatz eine Zeile hat. Deshalb meldet es «0 ohne Fundstelle», obwohl SP2-W1B-1 besteht und Nr. 142 in `beziehungen.md` eine falsche Fundstelle hat (SP2-W1B-3). Vorschlag: Rückwärtsprüfung wie `coverage.py` ins Werkzeug. | `pruefe-abgleich.mjs` Z. 5–13 (Liste der Prüfungen 1–4); eigener Lauf 7371 Zeilen, 0 ohne Fundstelle |
+| SP2-W1B-3 | W1 | optional | Falsche oder leere Zuordnung in `abgleich/beziehungen.md`: Nr. 142, 145 und 151 nennen als «Neue Fassung» nur die Bezeichnung «Mögliche Sicht der betroffenen Person», nicht den Satz; bei Nr. 142 ist es die falsche Bezeichnung (Bestand «Mögliche Sicht der Angehörigen: «Heute schaffe ich es nicht.»», heute in `v-bz-sichten` «Mögliche Sicht der Schwester «Heute schaffe ich es nicht. Ich brauche Ruhe.»»), Status «übernommen» trotz «Angehörigen» → «Schwester». Die Aussagen stehen in der Abbildung; nur der Beleg ist falsch. | Tabelle Nr. 22; `abgleich/beziehungen.md` Z. 201, 204, 210; `figs.json` (`v-bz-sichten`) |
+| SP2-W1B-4 | W1 | optional | Status «übernommen» bei gekürzten Sätzen (Definition README Z. 48: «inhaltlich gleich»; «gekürzt» Z. 49): `grenzen.md` Nr. 287 («direkt» und «klären Sie dort das Vorgehen» entfallen, Bemerkung selbst «(gekürzt)»), Nr. 285 (Fassung ist ein anderer Satz; «Spurensicherung» trägt Nr. 287), Nr. 202 («oder an Wochenenden» entfällt, nirgends auf der Website), Nr. 638 («oder zu einer bestimmten Reaktion zu bringen» entfällt, nirgends); `rolle.md` Nr. 457 «verschoben», obwohl «Temperament» entfällt und die Fassung umformuliert ist. Die Zählungen der Kategorien sind dadurch ungenau; fachlich kein Verlust festgestellt. | Tabelle Nr. 28, 31; `abgleich/grenzen.md` Z. 252, 335, 337, 688; Suche «Wochenende», «bestimmten Reaktion», «Temperament»: 0 Treffer |
+| SP2-W1B-5 | W1 | optional | «entfällt»-Zeilen, deren Aussage auf der Website steht (Status veraltet oder falsch): `genesung.md` Nr. 264, `kommunizieren.md` Nr. 466, `quellen.md` Nr. 490, `grenzen.md` Nr. 509 (Bemerkung «verschoben nach `selbstfuersorge` (Etappe 2)»), `index.md` Nr. 228. Die Zahl «entfällt» ist damit überzeichnet; kein Verlust. | Stichprobe E1, E2, E3, E7, E20 mit Fundstellen |
+| SP2-W1B-6 | W1 | optional | Sinnverschiebung (leicht) auf `verstehen` › `mythen`, Annahme «Borderline ist dasselbe wie Trauma»: Im Bestand folgt «Die Abgrenzung gehört in eine fachliche Diagnostik.» auf die PTBS-Sätze; heute steht «Die Abgrenzung gehört in eine fachliche Abklärung.» nach den Sätzen zu Kindheitserfahrungen, getrennt von den PTBS-Sätzen zusätzlich durch den Verweissatz aus 2c-3-1-F. Der Bezug (Borderline gegen PTBS) ist so unklar. Reihenfolge seit `540c37d` (freigegeben), der Verweissatz nach Auftrag platziert. Prüfbedarf: SP2-F-W1B-2. | Bestand `verstehen.md` Z. 191–193; `git show 540c37d:…/content/verstehen.html` und `f1d6572` (Reihenfolge wie beschrieben); Tabelle Nr. 9–10 (Abgleich `verstehen.md` Nr. 122–127) |
+
+#### Fragen an die Fachstelle
+
+- **SP2-F-W1B-1 (zu SP2-W1B-1, Prüfbedarf):** Der Diagnostik-Teil der alten Seite `/verstehen` ist nirgends abgeglichen. Soll die Einschränkung «Häufigkeitsangaben unterscheiden sich je nach Stichprobe, Erhebungszeitraum und Diagnoseverfahren. Die Liste sagt deshalb nichts über die Wahrscheinlichkeit bei einer einzelnen Person aus.» auf `diagnose` › `begleiterkrankungen` stehen, oder genügen «Die Reihenfolge ist keine Rangfolge.» und «Wie sie zusammenhängen, ist individuell verschieden.»? Sollen die Beispiele in Klammern (Bulimie, Binge-Eating; Panik, soziale Phobie, generalisierte Angst; Alkohol, Medikamente, illegale Substanzen) entfallen? Beleg: Bestand `verstehen.md` Z. 262–271; `diagnose` › `begleiterkrankungen`.
+- **SP2-F-W1B-2 (zu SP2-W1B-6, Prüfbedarf):** Soll «Die Abgrenzung gehört in eine fachliche Abklärung.» wieder direkt nach «Einzelne Merkmale können sich überschneiden, und die Diagnosen können zusammen auftreten.» stehen, damit klar ist, dass die Abgrenzung von Borderline und PTBS gemeint ist? Beleg: `content/verstehen.html`, Abschnitt `mythen`; Bestand `verstehen.md` Z. 191.
+
+#### Zählung
+
+- Verglichene Aussagen: **128** (Etappe 1: **31** · 2a: **22** · 2b: **22** · 2c: **30** · 3-1: **23**), dazu 20 «entfällt»-Zeilen. Alle zehn Abbildungen mit mindestens einer Aussage.
+- Ergebnisse der 128: inhaltsgleich 61 (davon 12 Figur), verändert 58 (davon 5 Figur), neu 7 (davon 2 Figur), still entfallen 1 (Nr. 127), im Abgleich nicht belegt 1 (Nr. 128). Darin enthalten: Abgleichfehler bei inhaltlich richtiger Seite in Nr. 22 und 28, ungenaue Kategorie in Nr. 31. Keine fachliche Verschiebung ohne Entscheid oder Liste gefunden ausser SP2-W1B-1 und SP2-W1B-6.
+- Befunde: **1 wichtig** (SP2-W1B-1), **5 optional** (SP2-W1B-2 bis -6); **2 Fragen** (SP2-F-W1B-1, -2).
+- Empfehlung Status: Punkt 3 von 5.1 (W1 Bestand) **offen**, bis SP2-W1B-1 entschieden und im Abgleich nachgeführt ist.
+
+### 5.2 W2 · Gesamtkohärenz (Prüfung 2)
+
+**Geprüfter Stand:** `f1d6572` (Arbeitsbaum `scratchpad/wt`). Leitlinie «Gesamtkohärenz und Aufbau» (`guidelines/00-gesamtkohaerenz-und-aufbau.md`), Auftrag 5.2. Grundlage sind die 17 gebauten Seiten, `content/` und `site.config.json`. Entscheide aus `PRUEFBERICHT.md` › «Fachliche Freigabe der Fachstelle», `BAUAUFTRAG-*`, `KORREKTUR-*` und `FREIGABE-*` sind berücksichtigt. Nichts geändert.
+
+**Vorgehen (eigene Skripte in `scratchpad/w2/`, Node 18, ohne Abhängigkeiten):**
+
+- `struktur.mjs`: Titel, h1, h2/h3 und Abschnitts-IDs je Seite.
+- `links.mjs`: alle `<a href>` der 17 gebauten Seiten (400 interne Links, davon 263 mit Anker). Prüft Datei und Anker gegen die vorhandenen `id`. Baut den Linkgraphen und rechnet eine Breitensuche ab `index`, einmal mit Kopf und Fusszeile, einmal nur mit `<main>`.
+- `verweise.mjs`: jeder interne Link in `<main>` (247; 152 auf andere Seiten, 95 innerhalb der Seite). Vergleicht den Linktext mit dem Titel der Zielstelle (h2 des Ankers oder `title`, h1 und `navLabel` der Seite) und den Seitennamen im Satz («Seite «X» im Abschnitt …») mit `title` und `navLabel`.
+- `begriffe.mjs`: zählt Begriffsvarianten je Seite im Text von `<main>`. `doppel.mjs`: wortgleiche Sätze (≥ 6 Wörter) auf mehreren Seiten, ohne Verweissätze und Verweis im Text.
+- `quellenbloecke.mjs`: liest jeden Block «Quellen zu dieser Seite» und prüft, ob jeder Abschnitt in «Verwendet in» als h2 oder h3 existiert. `alt-vergleich.mjs`: vergleicht die Blöcke von 7 Seiten mit den Quellenzeilen vor Korrektur 2b-2 (`git show f9e2314:…/content/<seite>.html`). `stichwort.mjs`: Stichproben, ob der genannte Abschnitt den Inhalt der Quelle enthält (2c-Seiten und `fragen`). `verwendet-auf-eigen.mjs`: ordnet jede Kurzangabe eines Blocks einem Eintrag auf `quellen` zu, unabhängig von `abgleich/verwendet-auf.mjs`, und prüft «Verwendet auf» in beide Richtungen.
+- Projektwerkzeug in eigener Kopie (`scratchpad/kopie-w2`): `node abgleich/verwendet-auf.mjs` und `node abgleich/verwendet-auf.mjs --ohne-legenden`. Dazu `node tools/build.mjs`: «0 blockierend, 2 Hinweise» (`crisis-number-check` «144» auf `quellen`, `review-report`). `git status` danach leer, die gebauten Seiten entsprechen also dem Build.
+
+#### Ergebnis je Punkt
+
+| Punkt | Ergebnis | Beleg |
+| --- | --- | --- |
+| **1 Ziel** | erfüllt | `ueber` › `warum`: «Es geht darum, Dynamiken besser einzuordnen, tragfähiger zu reagieren und sich selbst nicht zu verlieren.» `index` › Kopf: «Hier finden Sie Wissen für den Alltag und für Ihre eigene Entlastung.» `index` › `haltung`: «Mitgefühl und Selbstschutz gehören zusammen». Jede Seite hat in `site.config.json` eine `primaryTask`, die auf dieses Ziel einzahlt (z. B. `krise`: «Sich in Krisen schützen, passende Hilfe holen und die eigenen Möglichkeiten kennen»). |
+| **1 Aufbaulogik** | erfüllt, ein Hinweis | Benannt auf `index` › `einstiege`: «Beginnen Sie dort, wo Ihr Anliegen liegt. Die Seiten bauen nicht aufeinander auf, die Reihenfolge ist ein Angebot.» Logik: Einstieg nach Anliegen, dazu ein Weg vom Verstehen über die Beziehung und die eigene Rolle zu Grenzen und Selbstfürsorge (Navigation). Die Reihenfolge ist an drei Stellen verschieden. `site.config.json` › `pages` und `sitemap.xml`: … `grenzen`, `diagnose`, `behandlung`, `kommunizieren`, `krise`, `selbstfuersorge` … Einstiege auf `index`: … `grenzen`, `selbstfuersorge`, `kommunizieren`, `genesung`, `unterstuetzung`. `UMBAUPLAN.md` Abschnitt 2: … `beziehungen`, `diagnose`, `rolle`, `behandlung`, `kommunizieren`, `grenzen` … Sichtbar ist nur die Navigation, und die folgt `pages`. Weil `index` die Reihenfolge ausdrücklich als Angebot bezeichnet, ist das kein Befund. |
+| **1 Gewichtung** | erfüllt | Wörter in `<main>` ohne Quellenblock (`doppel.mjs`, Absätze, Listen, h3/h4): `kommunizieren` 3284, `rolle` 3046, `fragen` 2895, `selbstfuersorge` 2586, `behandlung` 2380, `krise` 1998, `diagnose` 1900, `verstehen` 1751, `grenzen` 1547, `beziehungen` 1405, `unterstuetzung` 1341, `genesung` 1297, `ueber` 544, `index` 330. Den meisten Raum haben Kommunikation, Rolle und Selbstfürsorge, also die Handlungsthemen der Angehörigen. Nebenthemen sind nicht aufgebläht. Dass `kommunizieren` nicht in der Navigation steht, ist entschieden (UMBAUPLAN Abschnitt 1, 09.10.2026). |
+| **2 Hauptpunkte** | erfüllt | 5 Punkte, im Kopf jeder Seite gleich: «Verstehen · Beziehungen · Ihre Rolle · Grenzen · Auf sich achten». Höchstens 6 erlaubt (Gate-Regel). Build: kein Befund zur Navigation. Die Reihenfolge entspricht `pages`. |
+| **2 Erreichbarkeit** | erfüllt | Breitensuche (Tabelle unten): jede der 16 Seiten ist ab `index` in höchstens 2 Seitenwechseln erreichbar, auch nur über `<main>`. `404` hat keinen eingehenden Link, wie es sein soll. Keine Waise. Direkt von `index` aus nicht verlinkt sind `diagnose`, `behandlung`, `krise` und `quellen` (je 2 Seitenwechsel). Entschieden: BAUAUFTRAG 2B Z. 183 («Für `krise` gibt es keinen Einstieg»), BAUAUFTRAG 2C2 Z. 23 (`diagnose`, `behandlung` «bekommen keinen Einstieg»), KORREKTUR 3-1 («höchstens zwei Schritten»). Die Folge auf `404` steht in SP2-W2-3. |
+| **2 Links und Anker** | erfüllt | `links.mjs`: 400 interne Links, 263 mit Anker; **0** fehlende Dateien, **0** fehlende Anker. |
+| **3 Begriffe** | teilweise | Zählung je Seite im Anhang B. Weitgehend einheitlich: «Borderline» 151×, «Borderline-Persönlichkeitsstörung» 13× (Glossar wie `verstehen` › `borderline`: «Die Diagnose Borderline-Persönlichkeitsstörung kann unter anderem beschreiben …»), «Angehörige» 166×, «betroffene Person» 64× und «Mensch(en) mit Borderline» 19×, «Fachperson(en)» 47×, «Validierung» (`kommunizieren`, Glossar), «Recovery» und «Remission» (`genesung`, `fragen`, Glossar). Kein «Borderliner», «Selbstmord» oder «erkrankte Person». «Grenzen setzen», «Validierung», «DBT», «TFP», «Komorbidität» sind auf den Themenseiten so definiert wie im Glossar auf `quellen` (Vergleich der Definitionssätze, Anhang B). Remission: `verstehen` «die Kriterien sind eine Zeit lang nicht mehr erfüllt», `genesung` und `fragen` «die Diagnosekriterien während eines festgelegten Zeitraums nicht mehr erfüllt», Glossar «nicht mehr genügend Kriterien für die Diagnose erfüllt». Die Bedeutung ist gleich, für `fragen` entschieden (Z31-F-2). Abweichungen: Einzelvarianten (SP2-W2-8), Abkürzung «BPS» (SP2-W2-7), offizieller ICD-10-Name fehlt (SP2-F-W2-3). |
+| **4 Quereinstieg** | erfüllt mit Hinweisen | Jede Seite hat eine Einleitung, die das Thema einordnet (Kopf je Seite, z. B. `diagnose`: «Diese Seite zeigt, wer eine Borderline-Abklärung üblicherweise durchführt, wie sie abläuft und was eine Diagnose für Sie als Angehörige bedeuten kann.»). Fachbegriffe beim ersten Auftreten auf der Seite (Skript, erstes Vorkommen je Seite): erklärt z. B. PTBS (`verstehen`: «PTBS heisst posttraumatische Belastungsstörung.»), Dissoziation (`beziehungen`), DBT (`grenzen`, `diagnose`, `kommunizieren`, `selbstfuersorge`, `ueber`), Komorbidität (`diagnose`, `fragen`), FU und KESB (`fragen`), Remission (`verstehen`, `genesung`, `fragen`). Begriffe von anderen Seiten stehen mit Verweis, z. B. `kommunizieren`: «An welcher Stelle könnten wir die Schleife unterbrechen?» und gleich danach der Verweis auf «Beziehungen». Ohne Erklärung beim ersten Auftreten: «DBT» auf `behandlung` (SP2-W2-6), «BPS» auf `unterstuetzung` (SP2-W2-7), Handouts in fünf Bildlegenden (SP2-W2-9). DBT, MBT und TFP auf `fragen` sind entschieden (KORREKTUR 3-1: Z31-S-10, nur KESB und PTBS ausgeschrieben). |
+| **5 Verweissätze** | erfüllt mit einer Abweichung | 152 Links auf andere Seiten (Anhang A): Ziel vorhanden 152/152. Linktext gleich dem Titel der Zielstelle: 130/132 im Fliesstext und 11/11 im Quellenblock. Der Seitenname im Satz («Seite «X» im Abschnitt …») stimmt mit `navLabel` oder `title` in allen Fällen (0 Abweichungen). So ist es seit Prüfrunde 2b Muster (PRUEFBERICHT Z. 7254: «Seitenname wie in der Navigation bzw. Titel»). Die 8 Einstiege auf `index` haben als Linktext den Satz der Angehörigen, darunter steht der Seitentitel («Borderline verstehen: …», «Genesung: …»); das ist das freigegebene Muster. Abweichend: 2 Links «Beratung der Fachstelle Angehörigenarbeit» auf `index#beratung`, dessen Titel «Beratung für Sie» ist (SP2-W2-4). Innerhalb der Seite: die 92 Einträge der Kapitelübersichten haben Kurzformen (Muster des Profils), die 3 Links im Text haben den Titel der Zielstelle (`grenzen` → «Wenn Gewalt oder Bedrohung vorkommt», `selbstfuersorge` → «Wenn es gerade zu viel ist», «Auch Sie brauchen Unterstützung»). `fragen`: 25 von 27 Antworten verweisen auf eine Seite. Ausnahmen sind «Wann ist eine Einweisung nötig?» und «Wie erkläre ich die Situation Freunden oder der Familie?», passend zum Kopf «Die meisten Antworten nennen die Seite, …». |
+| **6 Doppelungen** | erfüllt | `doppel.mjs`: 27 wortgleiche Sätze auf mehreren Seiten, fast alle bewusste Wiederaufnahmen mit Verweis. **Suizid** an 5 Stellen, je kurz und mit Link auf `krise#suizid`: `verstehen` › «Wenn Sie sich wegen Suizid sorgen» 65 Wörter, `diagnose` › «Wenn Suizidgedanken dazukommen» 93, `kommunizieren` › «Wenn Suizid angesprochen wird» 75, `fragen` › «Wie reagiere ich auf bedrohlich wirkende Aussagen?» 104; ausführlich nur auf `krise` › `suizid` (185). Vier Sätze sind wortgleich zwischen `verstehen` › `mythen` und `krise` › `suizid`, z. B. «Direkt nachzufragen, löst nach heutigem Wissensstand keine suizidale Handlung aus.» (gleicher Wortlaut gewollt, P2b-F-4). **Kinder** auf `grenzen` › `gewalt` und `krise` › `bleibt`: wortgleicher Block mit 89 Wörtern, der auf `rolle` › `kinder` (286 Wörter) verweist (Freigabe 2b, Satz 6). **Antworten auf `fragen`** wiederholen Kernsätze der Themenseiten («Für Borderline selbst sind Medikamente keine Kernbehandlung.» auch auf `genesung`), wie es der Seitentyp vorsieht. Die drei Abschnitte «je nach Rolle» (`kommunizieren` › `rollen` 120 Wörter, `grenzen` › `rollen` 70, `selbstfuersorge` › `eigenes-leben`) behandeln je das Seitenthema, ohne Doppelung. Kein Thema steht an zwei Orten ausführlich. |
+| **6 Lücken** | erfüllt, zwei Fragen | Prüfliste der Leitlinie: Störungsbild (`verstehen`), Diagnose und Verlauf (`diagnose`, `genesung`), Behandlung (`behandlung`), Kommunikation (`kommunizieren`), Ablehnung von Hilfe (`fragen` › «Was, wenn die betroffene Person keine Therapie möchte?», `diagnose` › `zweifel`, `rolle` › `anbieten`), eigene Belastung und Grenzen (`selbstfuersorge`, `grenzen`), Unterstützungsangebote (`unterstuetzung`, `index` › `beratung`). Rechte und Schweigepflicht stehen verteilt: `behandlung` › `kontakt` (Einwilligung, Schweigepflicht), `fragen` (FU, KESB), `genesung` › «Eltern Minderjähriger und Beistandschaft», `index` (Schweigepflicht der Beratung, keine Vollmacht). Geschwister: ein Satz auf `rolle` › `kinder` («Auch Geschwister eines erkrankten Kindes brauchen Aufmerksamkeit und Freiräume.»). Die Rollenabschnitte nennen nur Partnerin oder Partner, Eltern und erwachsenes Kind. Geschwister, Freundinnen und Freunde fehlen dort (SP2-F-W2-2). Krisenthemen sind ohne Krisenzugang behandelt. |
+| **7 Quellenblöcke: Abschnitte vorhanden** | erfüllt | `quellenbloecke.mjs`: 11 Blöcke mit 116 Einträgen. Jeder Abschnitt in «Verwendet in» existiert als h2 der Seite (0 fehlend). `unterstuetzung` hat keinen Block (Kopf von `verwendet-auf.mjs`: «`unterstuetzung` hat keinen Quellenblock.»). |
+| **7 Quellenblöcke: Abschnitte richtig** | teilweise | (a) **Etappen 1 bis 2b** (`verstehen`, `beziehungen`, `grenzen`, `rolle`, `selbstfuersorge`, `kommunizieren`, `krise`): `alt-vergleich.mjs` vergleicht jede Quellenzeile vor 2b-2 (`f9e2314`) mit dem Block. Quelle und Abschnitte sind gleich, einzige Abweichung «Linehan» → «Linehan (2015)» auf `grenzen` (entschieden, Z31-F-22, NK-F-1). (b) **2c und `fragen`**: 27 Stichproben, ob der genannte Abschnitt den Inhalt enthält. 26 passen direkt, z. B. «Kanton Zürich, Anlaufstellen und Zweitmeinung» → `behandlung` › `kontakt`: «Bei begründeten Zweifeln … zweite fachliche Einschätzung … Eine pauschale Wartefrist von einem Jahr gibt es dafür nicht.». Einer passt über den Bestand: «NICE NG225 (2022)» → `fragen` › «Fragen zur Diagnose», belegt in `abgleich/fragen.md` Nr. 74 («NICE NG225, 1.5.1 – Professionelle psychosoziale …»). (c) **Bildlegenden** fehlen in «Verwendet in», obwohl die Legenden Quellen nennen (SP2-W2-5). |
+| **7 «Verwendet auf» auf `quellen`** | erfüllt | Kopie: `node abgleich/verwendet-auf.mjs` → «85 Einträge, 0 mit anderer Angabe, 0 Kurzangaben nicht zugeordnet.» `--ohne-legenden` → «85 Einträge, 6 mit anderer Angabe» (Baranger, Degasperi, Santangelo, Shields: «Verstehen» → «Hintergrund»; Linehan 2015 und Hoffman 2005 ohne «Verstehen»), wie erwartet: Diese sechs stammen nur aus den Legenden auf `verstehen`. Eigenes Skript: alle 116 Kurzangaben eindeutig einem Eintrag zugeordnet; die Seite steht in dessen «Verwendet auf» (0 fehlend). Umgekehrt nennt `quellen` nur bei diesen sechs Einträgen eine Seite ohne Blockeintrag, alle mit Beleg in der Legende auf `verstehen` («Bezugspunkte: Linehan (1993, 2015); Shields et al. (2016); Degasperi et al. (2021); Baranger et al. (2020); Santangelo et al. (2014); NICE CG78 (2009).», «Grundlage: Linehan (1993); Hoffman et al. (2005).»). |
+| **Profil: Absenderin** | erfüllt | Alle 17 Seiten: `data-sender-unit` «Fachstelle Angehörigenarbeit», `data-sender-institution` «Psychiatrische Universitätsklinik Zürich», `mailto:angehoerigenarbeit@pukzh.ch` (je 1×, `grep`). |
+| **Profil: kein Krisenzugang, ein Zuständigkeitsverweis** | erfüllt | 0 × `tel:`, keine Telefonnummer (einziger Treffer «144» = Seitenzahl auf `quellen`, Build-Hinweis bekannt); keine Seite «Hilfe in der Krise» oder «Soforthilfe» (`grep`). Zuständigkeit je 1× in der Fusszeile (`puk-site-safety--responsibility`), Hinweis «ersetzt keine individuelle Abklärung, Beratung oder Behandlung» je 1× (`data-disclaimer`). 26 Verweise im Text, alle über den Platzhalter mit dem Wortlaut von `responsibility.inline`, je direkt nach einer Handlungsanleitung. Beispiel `krise` › `belastung`: «… holen Sie sofort Hilfe und schützen sich selbst.» (Liste aller 26 mit Satz davor: `w2/inline.py`, Ausgabe `w2/verweis-im-text.txt`). |
+| **Weitere Kohärenz** | zwei Befunde | Fusszeile aller Seiten «Redaktioneller Status: Entwurf – fachliche Prüfung ausstehend» (SP2-W2-1). Meta-Beschreibung von `index` veraltet (SP2-W2-2). Seitenvertrag in `UMBAUPLAN.md` und Links weichen ab (SP2-W2-10). |
+
+**Erreichbarkeit ab `index`** (`links.mjs`, Breitensuche über `<a href>` der gebauten Seiten)
+
+| Seite | Seitenwechsel ab index (alle Links) | Pfad | Seitenwechsel nur Hauptinhalt | eingehende Seiten (alle/Hauptinhalt) |
+| index.html | 0 | – | 0 | 16/10 |
+| verstehen.html | 1 | index.html > verstehen.html | 1 | 16/8 |
+| beziehungen.html | 1 | index.html > beziehungen.html | 1 | 16/4 |
+| rolle.html | 1 | index.html > rolle.html | 1 | 16/10 |
+| grenzen.html | 1 | index.html > grenzen.html | 1 | 16/9 |
+| diagnose.html | 2 | index.html > verstehen.html > diagnose.html | 2 | 6/6 |
+| behandlung.html | 2 | index.html > beziehungen.html > behandlung.html | 2 | 6/6 |
+| kommunizieren.html | 1 | index.html > kommunizieren.html | 1 | 7/7 |
+| krise.html | 2 | index.html > verstehen.html > krise.html | 2 | 6/6 |
+| selbstfuersorge.html | 1 | index.html > selbstfuersorge.html | 1 | 16/9 |
+| genesung.html | 1 | index.html > genesung.html | 1 | 8/8 |
+| unterstuetzung.html | 1 | index.html > unterstuetzung.html | 1 | 8/8 |
+| fragen.html | 1 | index.html > fragen.html | 1 | 2/2 |
+| quellen.html | 2 | index.html > verstehen.html > quellen.html | 2 | 12/12 |
+| ueber.html | 1 | index.html > ueber.html | 1 | 2/2 |
+| impressum-datenschutz.html | 1 | index.html > impressum-datenschutz.html | 2 | 16/1 |
+| 404.html | unerreichbar | 404.html | unerreichbar | 0/0 |
+
+#### Befunde
+
+| ID | Stufe | Gewicht | Befund | Beleg |
+| --- | --- | --- | --- | --- |
+| SP2-W2-1 | W2 | wichtig | **Redaktioneller Status veraltet.** Die Fusszeile aller 17 Seiten sagt «Redaktioneller Status: Entwurf – fachliche Prüfung ausstehend». Alle Seiten sind inzwischen fachlich freigegeben. Kein Werkzeug ändert den Wert beim Export, auch nicht mit `--production`. So würde die Angabe veröffentlicht. | `site.config.json` › `editorialStatus` «Entwurf – fachliche Prüfung ausstehend»; `tools/contract.js` Z. 176: «Redaktioneller Status: ${esc(cfg.editorialStatusLabel \|\| cfg.editorialStatus)}»; `grep -rn editorialStatus tools/` findet sonst nur den Pflichtfeld-Check (Z. 190); `grep -c` auf den 17 Seiten: je 1. PRUEFBERICHT › «Fachliche Freigabe der Fachstelle»: Etappen 1 bis 3-1 freigegeben (10. bis 12.10.2026). Dazu `shortDescription` «… Entwurf, fachliche Prüfung ausstehend.»; dieser Wert erscheint in keiner gebauten Seite. Wortlaut vor R3 festlegen (SP2-F-W2-1). |
+| SP2-W2-2 | W2 | optional | **Meta-Beschreibung von `index` veraltet.** Sie nennt Einstiege nur «zu Verstehen, Beziehungen und Grenzen». Die Seite hat acht Einstiege. Die Beschreibung erscheint in Suchergebnissen und beim Teilen. | `site.config.json` › `pages[index].description` = `<meta name="description">` und `og:description` in `index.html`: «Orientierung für Angehörige von Menschen mit Borderline: Einstiege nach Anliegen zu Verstehen, Beziehungen und Grenzen sowie die kostenlose Beratung …». `index` › `einstiege`: 8 Links (`verstehen` bis `unterstuetzung`). Seit Korrektur 1i unverändert (`git log -S`: `2c5d88b`). Berührt auch S (Meta-Texte). |
+| SP2-W2-3 | W2 | optional | **`404` verspricht «alle Seiten» von der Übersicht.** Von `index` aus sind 10 der 15 übrigen Seiten direkt verlinkt, `impressum-datenschutz` über die Fusszeile. `diagnose`, `behandlung`, `krise` und `quellen` stehen erst nach einem weiteren Seitenwechsel. Ausserdem heisst dieselbe Seite «Übersicht» (`404`, Eyebrow), «Startseite» (Verweissätze, Logo, `title`) und «Borderline – Orientierung für Angehörige» (h1). | `content/404.html`: «Von der Übersicht aus finden Sie alle Seiten.», Schaltfläche «Zur Übersicht». Breitensuche (Tabelle oben): `diagnose`, `behandlung`, `krise`, `quellen` = 2. Verweissatz z. B. `krise` › `danach`: «… steht auf der Startseite im Abschnitt «Beratung für Sie».» Der Wortlaut stammt aus dem Starter (PRUEFBERICHT Z. 2054: «die Seite `404` (Wortlaut des Starters …)»), also möglicherweise ein Profilthema. |
+| SP2-W2-4 | W2 | optional | **Zwei Linktexte ungleich dem Titel der Zielstelle.** Beide zeigen auf `index#beratung` (Titel «Beratung für Sie») mit dem Linktext «Beratung der Fachstelle Angehörigenarbeit». Alle anderen 130 Verweise im Fliesstext nennen den Titel. Die Stellen stehen auf Seiten von Etappe 1 und sind älter als die Regel. | `beziehungen` › `verantwortung`: «Holen Sie sich selbst Unterstützung, zum Beispiel bei der <a href="index.html#beratung">Beratung der Fachstelle Angehörigenarbeit</a>.» `grenzen` › `kontakt`: «… Wünsche, Bindungen und Abhängigkeiten zu sortieren: <a href="index.html#beratung">Beratung der Fachstelle Angehörigenarbeit</a>.» h2 von `index#beratung`: «Beratung für Sie». `verweise.mjs`, Anhang A Nr. 27 und 45. |
+| SP2-W2-5 | W2 | optional | **«Verwendet in» ohne die Abschnitte mit Bildlegende.** Die Blöcke nennen nur die Abschnitte der früheren Quellenzeilen. Abschnitte, deren Abbildung die Quelle in der Legende nennt, fehlen. Auf `quellen` zählen diese Legenden dagegen mit (seit 3-1-K). Auf `verstehen` nennt `quellen` sechs Quellen mit «Verstehen», die im Block der Seite gar nicht stehen. | `verstehen`: Linehan (1993) nur «Was die Diagnose beschreiben kann», die Legenden von `eisberg`, `anspannung` und `bewertungen` nennen ihn ebenfalls («Bezugspunkt: Emotionsregulation nach Linehan (1993).»). NICE CG78 fehlt bei «Wenn die Anspannung steigt». Linehan (2015), Shields, Degasperi, Baranger, Santangelo und Hoffman (2005) fehlen im Block ganz. `grenzen`: Linehan (2015) → nur «Kontakt halten, ohne immer verfügbar zu sein», die Legende in «DEAR: ein Anliegen klar formulieren» lautet «Quelle: Linehan (2015), DBT Skills Training Manual (DEAR MAN) …». `genesung`: NICE CG78 ohne «Veränderung verläuft unterschiedlich» (Legende `v-ge-trieb`: «Bezug: Zanarini et al. (2012); NICE CG78 (2009).»). `rolle` und `kommunizieren` stimmen. `KORREKTUR-ETAPPE-2B2.md` Z. 63: «Quellen in Abbildungen … bleiben bei der Abbildung.» Entscheid dazu: SP2-F-W2-4. |
+| SP2-W2-6 | W2 | optional | **Quereinstieg `behandlung`: «DBT» vor der Erklärung.** Das Kürzel steht zuerst im Abschnitt `rollen`, ausgeschrieben wird es erst rund 8000 Zeichen später in `therapieformen`. | `behandlung` › `rollen` › Fachpersonen: «Skills anbieten und vermitteln, zum Beispiel in der DBT». `begriffe`-Skript: «DBT» an Zeichen 1179, «Dialektisch-Behavioral» an Zeichen 9441. Bisher in keinem Befund (`grep` PRUEFBERICHT: nur Liste Nr. 217/122). |
+| SP2-W2-7 | W2 | optional | **Abkürzung «BPS» nur einmal und unerklärt.** Sonst steht auf der Website «Borderline» oder «Borderline-Persönlichkeitsstörung», auf `quellen` die englische Abkürzung «BPD». | `unterstuetzung` › `buecher`, Aguirre: «Englischsprachiges Standardwerk zu BPS bei Jugendlichen.» Zählung Anhang B: «BPS/BPD» `genesung` 1 (Titel «Ten-year course of BPD»), `unterstuetzung` 1, `quellen` 2 («Borderline Personality Disorder (BPD)», «BPD Alliance»). |
+| SP2-W2-8 | W2 | optional | **Einzelne Begriffsvarianten.** Je einmal eine Variante neben dem sonst einheitlichen Begriff. | «Fachleute» 1× (`beziehungen` › `verantwortung`: «weitere Bezugspersonen und Fachleute können mittragen») neben «Fachperson(en)» 47× auf 12 Seiten. «den Behandelnden» 1× (`genesung` › `freiwillig`: «gemeinsam mit den Behandelnden») neben «Behandlungsteam» 21× und «Fachpersonen». «Betroffenen» als Nomen 1× im Fliesstext (`verstehen` › `mythen`: «hilft Angehörigen, Betroffenen und Fachpersonen») neben «betroffene Person» 64×. `beziehungen` und `verstehen` sind Etappe 1, also freigegeben: Änderung nur auf Entscheid. |
+| SP2-W2-9 | W2 | optional | **Bildlegenden verweisen auf Handouts, die es auf der Website nicht gibt.** Lesende können «das Handout» nicht finden. Die 42 Textfassungen sind entfallen (UMBAUPLAN Abschnitt 1). | Legenden: `verstehen` `v-vs-anspannung` «nach dem Handout «Die Anspannungskurve»»; `rolle` `v-ro-weg` «nach dem Handout «Der Garten»»; `selbstfuersorge` `v-sf-abend` «Bezug: Handout «Energie-Konto»»; `kommunizieren` `v-ko-tassen` «nach den Handouts «Zuhören ohne Zustimmen» und «Wenn Worte treffen»»; `genesung` `v-ge-trieb` «nach den Handouts «Veränderung verläuft unterschiedlich» und «Der Garten»». Die Abbildungen sind freigegeben, deshalb als Frage: SP2-F-W2-5. |
+| SP2-W2-10 | W2 | optional | **Seitenvertrag im UMBAUPLAN und Links weichen ab.** Der Plan nennt Querverweise, die es nicht gibt. | `UMBAUPLAN.md` Abschnitt 2: `krise` «– (verlinkt aus Rolle, Kommunizieren, Grenzen)», `kommunizieren` «– (Startseite; verlinkt aus Verstehen, Beziehungen, Grenzen)». Linkgraph (Hauptinhalt): `rolle` → genesung, behandlung, verstehen, selbstfuersorge, beziehungen, grenzen, unterstuetzung, quellen (kein `krise`); `grenzen` → selbstfuersorge, verstehen, index, rolle, quellen (weder `krise` noch `kommunizieren`). `krise` wird verlinkt von verstehen, diagnose, behandlung, kommunizieren, selbstfuersorge, fragen. Entweder den Plan nachführen oder die Verweise ergänzen (SP2-F-W2-6). |
+
+#### Fragen an die Fachstelle
+
+| ID | Frage | Beleg |
+| --- | --- | --- |
+| SP2-F-W2-1 | Welcher redaktionelle Status soll in der veröffentlichten Fusszeile stehen (z. B. «Fachlich freigegeben, Stand …»), und wer setzt ihn vor dem Export mit `--production`? | SP2-W2-1; Leitlinie «Prüfung und Freigabe» › «Inhaltsverantwortung und Status»: Freigabesprache «fachlich freigegeben». |
+| SP2-F-W2-2 | **Prüfbedarf Lücken:** Sollen Geschwister sowie Freundinnen und Freunde als eigene Angehörigenrolle vorkommen? Die drei Rollenabschnitte nennen nur Partnerin oder Partner, Eltern und erwachsenes Kind, während `index` › `beratung` ausdrücklich «Familie, Partnerinnen und Partner, Freundinnen und Freunde» anspricht. Braucht es zu Rechten und Schweigepflicht einen Ort, an dem man das gebündelt findet, oder genügen die verteilten Stellen? | `kommunizieren` › `rollen`, `grenzen` › `rollen` (dt: «Partnerin oder Partner», «Eltern eines erwachsenen Kindes», «Erwachsenes Kind»), `selbstfuersorge` › `eigenes-leben`. Geschwister nur in `rolle` › `kinder` (1 Satz). Im Bestand ebenso selten (`git grep -c Geschwister origin/borderline-bestand` in `texte/`: `materialien--text--kinder.md` 1, `verstehen--beziehungen.md` 1, `quellen.md` 2). Rechte: `behandlung` › `kontakt`, `fragen` › «Wann ist eine Einweisung nötig?», `genesung` › «Eltern Minderjähriger und Beistandschaft». Leitlinie: Prüfliste, kein Pflichtprogramm. |
+| SP2-F-W2-3 | **Prüfbedarf Begriff:** Soll auf `diagnose` (Schweizer Kodierkontext) oder im Glossar die Bezeichnung zum Code F60.31 stehen («emotional instabile Persönlichkeitsstörung, Borderline-Typ»)? Angehörige können sie in Berichten lesen. Die Website nennt nur den Code. | `diagnose` › Vertiefung «Wie die Diagnose beschrieben wird»: «Deshalb kann in entsprechenden Unterlagen der Code F60.31 erscheinen.» `begriffe.mjs`: «emotional instabil…» 0× auf allen Seiten; im Bestand ebenfalls 0 (`git grep -i "emotional instabil" origin/borderline-bestand`). |
+| SP2-F-W2-4 | Sollen die Quellenblöcke in «Verwendet in» auch die Abschnitte nennen, deren Bildlegende die Quelle nennt? Dann stimmen Block und «Verwendet auf» auf `quellen` überein. Oder bleibt es bei «Quellen in Abbildungen bleiben bei der Abbildung»? Dann wäre ein Hinweis im Block denkbar, dass Abbildungen ihre Quellen selbst nennen. | SP2-W2-5; `node abgleich/verwendet-auf.mjs --ohne-legenden`: 6 Abweichungen, alle `verstehen`. |
+| SP2-F-W2-5 | Sollen die Bildlegenden die Handouts weiter nennen, etwa als Herkunft («nach dem früheren Handout …»), oder ohne Handout auskommen? | SP2-W2-9. |
+| SP2-F-W2-6 | Sollen `grenzen` › `gewalt` und `rolle` › `an-grenzen` auf «Krisen begleiten» und `grenzen` auf «Zugewandt und klar sprechen» verweisen, wie im UMBAUPLAN vorgesehen? Oder wird der Plan an die freigegebenen Verweise angepasst? | SP2-W2-10. `grenzen` › `gewalt` beginnt mit Schutz bei Bedrohung, `krise` › `bleibt` behandelt «Wenn Belastung oder Gefahr bleibt». |
+
+#### Zählung
+
+- **Befunde:** 1 wichtig (SP2-W2-1), 9 optional (SP2-W2-2 bis -10).
+- **Fragen an die Fachstelle:** 6 (SP2-F-W2-1 bis -6), davon 2 mit Prüfbedarf (SP2-F-W2-2, -3).
+- **Ohne Befund und mit Beleg geprüft:** Ziel, Gewichtung, Hauptpunkte (5), Erreichbarkeit (alle ≤ 2 Seitenwechsel, keine Waise), 400 interne Links und 263 Anker (0 kaputt), 150 von 152 Verweisen auf andere Seiten, Doppelungen (nur bewusste Wiederaufnahmen mit Verweis), «Verwendet auf» auf `quellen` (Werkzeug in beiden Modi und eigenes Skript), Absenderin und Zuständigkeit auf allen 17 Seiten.
+- **Nicht geprüft:** ob jede Quelle inhaltlich trägt, was der Abschnitt sagt. Das ist W1. Hier ist nur die Zuordnung zu Abschnitten geprüft (Etappen 1 bis 2b vollständig, 2c und `fragen` mit 27 Stichproben).
+- **Empfehlung zum Status W2:** **offen.** Alle Punkte sind mit Beleg geprüft, aber SP2-W2-1 ist vor der Veröffentlichung zu beheben. Die optionalen Befunde und die Fragen entscheidet die Fachstelle. Strukturänderungen aus W2 gibt es keine; SP2-W2-10 und SP2-F-W2-6 betreffen nur Verweissätze.
+
+#### Anhang A · Alle Verweise auf andere Seiten (`verweise.mjs`, 152)
+
+Art: Einstieg (index › einstiege), Fliesstext, Quellenblock (Satz «Vollständige Angaben …»), Aktion (404). «gleich Titel» = Linktext gleich h2 des Ankers bzw. `title`/h1/`navLabel` der Seite.
+
+| Nr. | Art | von | nach | Linktext | Ergebnis |
+|---|---|---|---|---|---|
+| 1 | Einstieg | index | verstehen | «Ich verstehe nicht, warum Gespräche so schnell kippen.» | Satz der Angehörigen (Muster der Einstiege), Seitentitel in der Zeile darunter |
+| 2 | Einstieg | index | beziehungen | «Wir verfehlen uns immer wieder, obwohl wir es beide gut meinen.» | Satz der Angehörigen (Muster der Einstiege), Seitentitel in der Zeile darunter |
+| 3 | Einstieg | index | rolle | «Ich weiss nicht mehr, was meine Aufgabe ist und was nicht.» | Satz der Angehörigen (Muster der Einstiege), Seitentitel in der Zeile darunter |
+| 4 | Einstieg | index | grenzen | «Ich kann nicht mehr und weiss nicht, wie ich Nein sagen soll.» | Satz der Angehörigen (Muster der Einstiege), Seitentitel in der Zeile darunter |
+| 5 | Einstieg | index | selbstfuersorge | «Ich bin erschöpft und komme selbst zu kurz.» | Satz der Angehörigen (Muster der Einstiege), Seitentitel in der Zeile darunter |
+| 6 | Einstieg | index | kommunizieren | «Ich weiss nicht, was ich sagen soll, wenn es schwierig wird.» | Satz der Angehörigen (Muster der Einstiege), Seitentitel in der Zeile darunter |
+| 7 | Einstieg | index | genesung | «Ich frage mich, ob es je besser wird.» | Satz der Angehörigen (Muster der Einstiege), Seitentitel in der Zeile darunter |
+| 8 | Einstieg | index | unterstuetzung | «Ich suche Beratung oder Austausch mit anderen Angehörigen.» | Satz der Angehörigen (Muster der Einstiege), Seitentitel in der Zeile darunter |
+| 9 | Fliesstext | index | unterstuetzung | Unterstützung finden | gleich Titel |
+| 10 | Fliesstext | index | ueber | Über diese Website | gleich Titel |
+| 11 | Fliesstext | index | fragen | Häufige Fragen | gleich Titel |
+| 12 | Fliesstext | verstehen | diagnose#abklaerung | Der Weg zur Abklärung | gleich Titel |
+| 13 | Fliesstext | verstehen | kommunizieren#moment | Der richtige Moment | gleich Titel |
+| 14 | Fliesstext | verstehen | genesung#forschung | Was die Forschung zeigt | gleich Titel |
+| 15 | Fliesstext | verstehen | rolle#schuld | Schuld, Verantwortung und was dazwischen liegt | gleich Titel |
+| 16 | Fliesstext | verstehen | diagnose#begleiterkrankungen | Begleiterkrankungen | gleich Titel |
+| 17 | Fliesstext | verstehen | krise#suizid | Wenn Suizidgedanken ein Thema sind | gleich Titel |
+| 18 | Fliesstext | verstehen | beziehungen | Was zwischen Ihnen geschieht | gleich Titel |
+| 19 | Fliesstext | verstehen | grenzen | Grenzen setzen | gleich Titel |
+| 20 | Quellenblock | verstehen | quellen | Quellen und Begriffe | gleich Titel |
+| 21 | Fliesstext | beziehungen | verstehen#anspannung | Wenn die Anspannung steigt | gleich Titel |
+| 22 | Fliesstext | beziehungen | verstehen#bewertungen | Wenn Bewertungen einseitiger werden | gleich Titel |
+| 23 | Fliesstext | beziehungen | kommunizieren#anerkennen | Anerkennen, ohne zuzustimmen | gleich Titel |
+| 24 | Fliesstext | beziehungen | genesung#verlauf | Veränderung verläuft unterschiedlich | gleich Titel |
+| 25 | Fliesstext | beziehungen | grenzen#gewalt | Wenn Gewalt oder Bedrohung vorkommt | gleich Titel |
+| 26 | Fliesstext | beziehungen | behandlung | Behandlung und Ihre Rolle darin | gleich Titel |
+| 27 | Fliesstext | beziehungen | index#beratung | Beratung der Fachstelle Angehörigenarbeit | abweichend: Titel «Beratung für Sie» |
+| 28 | Quellenblock | beziehungen | quellen | Quellen und Begriffe | gleich Titel |
+| 29 | Fliesstext | rolle | genesung#einfluesse | Was Genesung beeinflussen kann | gleich Titel |
+| 30 | Fliesstext | rolle | behandlung#rollen | Wer was beitragen kann | gleich Titel |
+| 31 | Fliesstext | rolle | verstehen#mythen | Häufige Annahmen – und was realistischer ist | gleich Titel |
+| 32 | Fliesstext | rolle | selbstfuersorge#kraft | Was Kraft kostet und was entlastet | gleich Titel |
+| 33 | Fliesstext | rolle | selbstfuersorge#zu-viel | Wenn es gerade zu viel ist | gleich Titel |
+| 34 | Fliesstext | rolle | verstehen#anspannung | Wenn die Anspannung steigt | gleich Titel |
+| 35 | Fliesstext | rolle | beziehungen#was-hilft | Was die Beziehung stärken kann | gleich Titel |
+| 36 | Fliesstext | rolle | grenzen#gewalt | Wenn Gewalt oder Bedrohung vorkommt | gleich Titel |
+| 37 | Fliesstext | rolle | unterstuetzung#buecher | Bücher für Angehörige | gleich Titel |
+| 38 | Fliesstext | rolle | verstehen#erleben | Was Angehörige erleben können | gleich Titel |
+| 39 | Fliesstext | rolle | grenzen | Grenzen | gleich Titel |
+| 40 | Fliesstext | rolle | grenzen#gewalt | Wenn Gewalt oder Bedrohung vorkommt | gleich Titel |
+| 41 | Fliesstext | rolle | selbstfuersorge | Auf sich achten | gleich Titel |
+| 42 | Quellenblock | rolle | quellen | Quellen und Begriffe | gleich Titel |
+| 43 | Fliesstext | grenzen | selbstfuersorge#beratung | Nicht allein tragen | gleich Titel |
+| 44 | Fliesstext | grenzen | verstehen#anspannung | Wenn die Anspannung steigt | gleich Titel |
+| 45 | Fliesstext | grenzen | index#beratung | Beratung der Fachstelle Angehörigenarbeit | abweichend: Titel «Beratung für Sie» |
+| 46 | Fliesstext | grenzen | rolle#kinder | Wenn Kinder mitbetroffen sind | gleich Titel |
+| 47 | Quellenblock | grenzen | quellen | Quellen und Begriffe | gleich Titel |
+| 48 | Fliesstext | diagnose | behandlung#rollen | Wer was beitragen kann | gleich Titel |
+| 49 | Fliesstext | diagnose | behandlung#angebote | Angebote im Kanton Zürich | gleich Titel |
+| 50 | Fliesstext | diagnose | unterstuetzung#austausch | Austausch mit anderen Angehörigen | gleich Titel |
+| 51 | Fliesstext | diagnose | verstehen#borderline | Was die Diagnose beschreiben kann | gleich Titel |
+| 52 | Fliesstext | diagnose | genesung#forschung | Was die Forschung zeigt | gleich Titel |
+| 53 | Fliesstext | diagnose | index#beratung | Beratung für Sie | gleich Titel |
+| 54 | Fliesstext | diagnose | behandlung#angebote | Angebote im Kanton Zürich | gleich Titel |
+| 55 | Fliesstext | diagnose | selbstfuersorge#warnsignale | Warnsignale für Überlastung | gleich Titel |
+| 56 | Fliesstext | diagnose | unterstuetzung#beratung | Beratung für Angehörige | gleich Titel |
+| 57 | Fliesstext | diagnose | behandlung#therapieformen | Therapieformen | gleich Titel |
+| 58 | Fliesstext | diagnose | rolle#schuld | Schuld, Verantwortung und was dazwischen liegt | gleich Titel |
+| 59 | Fliesstext | diagnose | selbstfuersorge#unterstuetzung | Auch Sie brauchen Unterstützung | gleich Titel |
+| 60 | Fliesstext | diagnose | krise#suizid | Wenn Suizidgedanken ein Thema sind | gleich Titel |
+| 61 | Quellenblock | diagnose | quellen | Quellen und Begriffe | gleich Titel |
+| 62 | Fliesstext | behandlung | rolle#anbieten | Was Sie anbieten können und was nicht Ihre Aufgabe ist | gleich Titel |
+| 63 | Fliesstext | behandlung | index#beratung | Beratung für Sie | gleich Titel |
+| 64 | Fliesstext | behandlung | krise#danach | Nach der Krise | gleich Titel |
+| 65 | Fliesstext | behandlung | diagnose#begleiterkrankungen | Begleiterkrankungen | gleich Titel |
+| 66 | Fliesstext | behandlung | unterstuetzung#austausch | Austausch mit anderen Angehörigen | gleich Titel |
+| 67 | Fliesstext | behandlung | genesung#verlauf | Veränderung verläuft unterschiedlich | gleich Titel |
+| 68 | Fliesstext | behandlung | unterstuetzung#kantone | Ausserhalb des Kantons Zürich | gleich Titel |
+| 69 | Fliesstext | behandlung | unterstuetzung#beratung | Beratung für Angehörige | gleich Titel |
+| 70 | Quellenblock | behandlung | quellen | Quellen und Begriffe | gleich Titel |
+| 71 | Fliesstext | kommunizieren | beziehungen#schleife | Nicht nur was geschieht, sondern was es bedeutet | gleich Titel |
+| 72 | Fliesstext | kommunizieren | verstehen#anspannung | Wenn die Anspannung steigt | gleich Titel |
+| 73 | Fliesstext | kommunizieren | grenzen#gewalt | Wenn Gewalt oder Bedrohung vorkommt | gleich Titel |
+| 74 | Fliesstext | kommunizieren | grenzen#dear | DEAR: ein Anliegen klar formulieren | gleich Titel |
+| 75 | Fliesstext | kommunizieren | krise#suizid | Wenn Suizidgedanken ein Thema sind | gleich Titel |
+| 76 | Fliesstext | kommunizieren | rolle#nach-konflikten | Nach Konflikten und Rückzug | gleich Titel |
+| 77 | Fliesstext | kommunizieren | grenzen#saetze | Sätze für typische Situationen | gleich Titel |
+| 78 | Fliesstext | kommunizieren | grenzen#rollen | Grenzen in verschiedenen Angehörigenrollen | gleich Titel |
+| 79 | Quellenblock | kommunizieren | quellen | Quellen und Begriffe | gleich Titel |
+| 80 | Fliesstext | krise | kommunizieren#anerkennen | Anerkennen, ohne zuzustimmen | gleich Titel |
+| 81 | Fliesstext | krise | kommunizieren#kippen | Wenn Gespräche kippen | gleich Titel |
+| 82 | Fliesstext | krise | behandlung#kontakt | Kontakt zum Behandlungsteam | gleich Titel |
+| 83 | Fliesstext | krise | index#beratung | Beratung für Sie | gleich Titel |
+| 84 | Fliesstext | krise | unterstuetzung | Unterstützung finden | gleich Titel |
+| 85 | Fliesstext | krise | selbstfuersorge#zu-viel | Wenn es gerade zu viel ist | gleich Titel |
+| 86 | Fliesstext | krise | grenzen#gewalt | Wenn Gewalt oder Bedrohung vorkommt | gleich Titel |
+| 87 | Fliesstext | krise | rolle#kinder | Wenn Kinder mitbetroffen sind | gleich Titel |
+| 88 | Quellenblock | krise | quellen | Quellen und Begriffe | gleich Titel |
+| 89 | Fliesstext | selbstfuersorge | diagnose#ohne-diagnose | Wenn noch keine Diagnose gestellt ist | gleich Titel |
+| 90 | Fliesstext | selbstfuersorge | krise#belastung | Wenn Belastung zunimmt | gleich Titel |
+| 91 | Fliesstext | selbstfuersorge | rolle#schuld | Schuld, Verantwortung und was dazwischen liegt | gleich Titel |
+| 92 | Fliesstext | selbstfuersorge | grenzen#gewalt | Wenn Gewalt oder Bedrohung vorkommt | gleich Titel |
+| 93 | Fliesstext | selbstfuersorge | index#beratung | Beratung für Sie | gleich Titel |
+| 94 | Fliesstext | selbstfuersorge | unterstuetzung | Unterstützung finden | gleich Titel |
+| 95 | Quellenblock | selbstfuersorge | quellen | Quellen und Begriffe | gleich Titel |
+| 96 | Fliesstext | genesung | diagnose#begleiterkrankungen | Begleiterkrankungen | gleich Titel |
+| 97 | Fliesstext | genesung | rolle#anbieten | Was Sie anbieten können und was nicht Ihre Aufgabe ist | gleich Titel |
+| 98 | Fliesstext | genesung | index#beratung | Beratung für Sie | gleich Titel |
+| 99 | Fliesstext | genesung | selbstfuersorge#beratung | Nicht allein tragen | gleich Titel |
+| 100 | Quellenblock | genesung | quellen | Quellen und Begriffe | gleich Titel |
+| 101 | Fliesstext | unterstuetzung | index#beratung | Beratung für Sie | gleich Titel |
+| 102 | Fliesstext | unterstuetzung | selbstfuersorge#warnsignale | Warnsignale für Überlastung | gleich Titel |
+| 103 | Fliesstext | unterstuetzung | kommunizieren | Zugewandt und klar sprechen | gleich Titel |
+| 104 | Fliesstext | fragen | diagnose#abklaerung | Der Weg zur Abklärung | gleich Titel |
+| 105 | Fliesstext | fragen | diagnose#abklaerung | Der Weg zur Abklärung | gleich Titel |
+| 106 | Fliesstext | fragen | kommunizieren#zuhoeren | Zuhören und die eigene Sicht behalten | gleich Titel |
+| 107 | Fliesstext | fragen | diagnose#zweifel | Wenn die Diagnose nicht geteilt wird | gleich Titel |
+| 108 | Fliesstext | fragen | rolle#schuld | Schuld, Verantwortung und was dazwischen liegt | gleich Titel |
+| 109 | Fliesstext | fragen | genesung#begriffe | Remission, Alltag und persönliche Recovery | gleich Titel |
+| 110 | Fliesstext | fragen | genesung#verlauf | Veränderung verläuft unterschiedlich | gleich Titel |
+| 111 | Fliesstext | fragen | diagnose#begleiterkrankungen | Begleiterkrankungen | gleich Titel |
+| 112 | Fliesstext | fragen | diagnose#begleiterkrankungen | Begleiterkrankungen | gleich Titel |
+| 113 | Fliesstext | fragen | krise#suizid | Wenn Suizidgedanken ein Thema sind | gleich Titel |
+| 114 | Fliesstext | fragen | krise#suizid | Wenn Suizidgedanken ein Thema sind | gleich Titel |
+| 115 | Fliesstext | fragen | kommunizieren#anerkennen | Anerkennen, ohne zuzustimmen | gleich Titel |
+| 116 | Fliesstext | fragen | verstehen#bewertungen | Wenn Bewertungen einseitiger werden | gleich Titel |
+| 117 | Fliesstext | fragen | verstehen#mythen | Häufige Annahmen – und was realistischer ist | gleich Titel |
+| 118 | Fliesstext | fragen | kommunizieren#anerkennen | Anerkennen, ohne zuzustimmen | gleich Titel |
+| 119 | Fliesstext | fragen | behandlung#angebote | Angebote im Kanton Zürich | gleich Titel |
+| 120 | Fliesstext | fragen | behandlung#therapieformen | Therapieformen | gleich Titel |
+| 121 | Fliesstext | fragen | behandlung#therapieformen | Therapieformen | gleich Titel |
+| 122 | Fliesstext | fragen | behandlung#kontakt | Kontakt zum Behandlungsteam | gleich Titel |
+| 123 | Fliesstext | fragen | genesung#verlauf | Veränderung verläuft unterschiedlich | gleich Titel |
+| 124 | Fliesstext | fragen | rolle#kinder | Wenn Kinder mitbetroffen sind | gleich Titel |
+| 125 | Fliesstext | fragen | grenzen#kontakt | Wie viel Kontakt ist für Sie tragbar? | gleich Titel |
+| 126 | Fliesstext | fragen | grenzen#saetze | Sätze für typische Situationen | gleich Titel |
+| 127 | Fliesstext | fragen | selbstfuersorge#warnsignale | Warnsignale für Überlastung | gleich Titel |
+| 128 | Fliesstext | fragen | selbstfuersorge#eigenes-leben | Auch Ihr eigenes Leben zählt | gleich Titel |
+| 129 | Fliesstext | fragen | unterstuetzung#austausch | Austausch mit anderen Angehörigen | gleich Titel |
+| 130 | Fliesstext | fragen | behandlung#rueckschlaege | Unterbrüche und Rückschläge | gleich Titel |
+| 131 | Fliesstext | fragen | index#beratung | Beratung für Sie | gleich Titel |
+| 132 | Fliesstext | fragen | quellen#begriffe | Begriffe | gleich Titel |
+| 133 | Quellenblock | fragen | quellen | Quellen und Begriffe | gleich Titel |
+| 134 | Fliesstext | quellen | verstehen#borderline | Was die Diagnose beschreiben kann | gleich Titel |
+| 135 | Fliesstext | quellen | selbstfuersorge#warnsignale | Warnsignale für Überlastung | gleich Titel |
+| 136 | Fliesstext | quellen | grenzen#dear | DEAR: ein Anliegen klar formulieren | gleich Titel |
+| 137 | Fliesstext | quellen | behandlung#therapieformen | Therapieformen | gleich Titel |
+| 138 | Fliesstext | quellen | grenzen | Grenzen | gleich Titel |
+| 139 | Fliesstext | quellen | diagnose#begleiterkrankungen | Begleiterkrankungen | gleich Titel |
+| 140 | Fliesstext | quellen | behandlung#therapieformen | Therapieformen | gleich Titel |
+| 141 | Fliesstext | quellen | genesung#begriffe | Remission, Alltag und persönliche Recovery | gleich Titel |
+| 142 | Fliesstext | quellen | genesung#forschung | Was die Forschung zeigt | gleich Titel |
+| 143 | Fliesstext | quellen | selbstfuersorge#eigenes-leben | Auch Ihr eigenes Leben zählt | gleich Titel |
+| 144 | Fliesstext | quellen | unterstuetzung#buecher | Bücher für Angehörige | gleich Titel |
+| 145 | Fliesstext | quellen | selbstfuersorge#zu-viel | Wenn es gerade zu viel ist | gleich Titel |
+| 146 | Fliesstext | quellen | behandlung#therapieformen | Therapieformen | gleich Titel |
+| 147 | Fliesstext | quellen | kommunizieren#anerkennen | Anerkennen, ohne zuzustimmen | gleich Titel |
+| 148 | Fliesstext | ueber | impressum-datenschutz | Impressum und Datenschutz | gleich Titel |
+| 149 | Fliesstext | ueber | quellen#einordnung | Wie die Quellen eingeordnet sind | gleich Titel |
+| 150 | Fliesstext | ueber | fragen | Häufige Fragen | gleich Titel |
+| 151 | Fliesstext | impressum-datenschutz | ueber | Über diese Website | gleich Titel |
+| 152 | Aktion | 404 | index | Zur Übersicht | Schaltfläche «Zur Übersicht» (Vorlage des Starters) |
+
+#### Anhang B · Begriffsvarianten je Seite (`begriffe.mjs`, Text in `<main>` der gebauten Seiten, Quellenblock eingeschlossen)
+
+Spalten gekürzt auf 6 Zeichen der Seiten-ID; «·» = 0. Muster sind reguläre Ausdrücke, «Borderline (alle)» zählt jedes Vorkommen, auch in Komposita.
+
+**Störungsbild**
+
+| Variante | index | verste | bezieh | rolle | grenze | diagno | behand | kommun | krise | selbst | genesu | unters | fragen | quelle | ueber | impres | 404 | Summe |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Borderline-Persönlichkeitsstörung | · | 1 | · | · | · | 1 | 3 | · | · | · | · | 2 | 1 | 4 | 1 | · | · | 13 |
+| Borderline-Störung | · | · | · | · | · | · | · | · | · | · | · | 1 | · | · | · | · | · | 1 |
+| emotional instabil… | · | · | · | · | · | · | · | · | · | · | · | · | · | · | · | · | · | 0 |
+| BPS/BPD | · | · | · | · | · | · | · | · | · | · | 1 | 1 | · | 2 | · | · | · | 4 |
+| Persönlichkeitsstörung (ohne Borderline-) | · | · | · | · | · | 1 | 2 | · | · | · | · | 1 | · | 7 | · | · | · | 11 |
+| Borderline (alle) | 3 | 21 | 1 | 2 | 2 | 17 | 12 | 1 | · | 2 | 4 | 16 | 14 | 54 | 2 | · | · | 151 |
+| Borderliner | · | · | · | · | · | · | · | · | · | · | · | · | · | · | · | · | · | 0 |
+
+**Angehörige**
+
+| Variante | index | verste | bezieh | rolle | grenze | diagno | behand | kommun | krise | selbst | genesu | unters | fragen | quelle | ueber | impres | 404 | Summe |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Angehörige(n) | 5 | 12 | 5 | 17 | 1 | 7 | 23 | 2 | 5 | 11 | 9 | 25 | 10 | 27 | 6 | 1 | · | 166 |
+| Bezugsperson | · | · | 2 | · | · | 1 | · | · | · | · | · | 2 | 1 | · | · | · | · | 6 |
+| Nahestehende/nahestehend | 1 | · | · | · | · | · | 1 | · | · | 1 | · | · | 1 | · | 1 | · | · | 5 |
+| Familienangehörige | · | · | · | · | · | · | · | · | · | · | · | · | · | · | · | · | · | 0 |
+
+**betroffene Person**
+
+| Variante | index | verste | bezieh | rolle | grenze | diagno | behand | kommun | krise | selbst | genesu | unters | fragen | quelle | ueber | impres | 404 | Summe |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| betroffene Person | 2 | 1 | 6 | 4 | · | 3 | 17 | · | 8 | 1 | 7 | · | 13 | · | 2 | · | · | 64 |
+| Betroffene (Nomen) | · | 1 | · | · | · | · | · | · | · | · | · | 1 | · | 1 | · | · | · | 3 |
+| erkrankte Person | · | · | · | · | · | · | · | · | · | · | · | · | · | · | · | · | · | 0 |
+| Mensch(en) mit Borderline | 1 | 4 | · | 1 | · | 3 | 2 | 1 | · | · | 2 | 2 | 1 | 2 | · | · | · | 19 |
+| Person mit Borderline | · | · | · | · | · | · | · | · | · | · | · | · | · | · | · | · | · | 0 |
+| Patient/in | · | · | · | · | · | · | 2 | · | · | · | · | · | · | 5 | · | · | · | 7 |
+| Kranke(r) | · | · | · | · | · | · | · | · | · | · | · | · | · | 1 | · | · | · | 1 |
+
+**DBT**
+
+| Variante | index | verste | bezieh | rolle | grenze | diagno | behand | kommun | krise | selbst | genesu | unters | fragen | quelle | ueber | impres | 404 | Summe |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| DBT | · | · | · | · | 2 | 1 | 14 | 1 | · | 2 | · | 3 | 1 | 12 | 1 | · | · | 37 |
+| Dialektisch-Behaviorale Therapie | · | · | · | · | 1 | 1 | 1 | 1 | · | 1 | · | 2 | · | 3 | 1 | · | · | 11 |
+| Dialektisch Behaviorale (ohne Bindestrich) | · | · | · | · | · | · | · | · | · | · | · | · | · | · | · | · | · | 0 |
+
+**Mentalisierung**
+
+| Variante | index | verste | bezieh | rolle | grenze | diagno | behand | kommun | krise | selbst | genesu | unters | fragen | quelle | ueber | impres | 404 | Summe |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Mentalisierung | · | · | · | · | · | · | · | · | · | · | · | · | · | 1 | · | · | · | 1 |
+| mentalisierungsbasiert | · | · | · | · | · | · | 1 | · | · | · | · | · | · | 3 | · | · | · | 4 |
+| MBT | · | · | · | · | · | · | 3 | · | · | · | · | · | 1 | 4 | · | · | · | 8 |
+| mentalisieren | · | · | · | · | · | · | · | · | · | · | · | · | · | · | · | · | · | 0 |
+
+**Validieren**
+
+| Variante | index | verste | bezieh | rolle | grenze | diagno | behand | kommun | krise | selbst | genesu | unters | fragen | quelle | ueber | impres | 404 | Summe |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Validierung | · | · | · | · | · | · | · | 4 | · | · | · | · | · | 4 | · | · | · | 8 |
+| validieren/validiert | · | 1 | · | · | · | · | · | · | · | · | · | · | · | · | · | · | · | 1 |
+| anerkennen/Anerkennung | · | · | 3 | 3 | · | · | · | 13 | 4 | 3 | · | · | 4 | 1 | · | · | · | 31 |
+| Bestätigen/bestätigen | · | · | · | · | · | · | · | 1 | 1 | · | · | · | · | 1 | · | · | · | 3 |
+
+**Grenzen**
+
+| Variante | index | verste | bezieh | rolle | grenze | diagno | behand | kommun | krise | selbst | genesu | unters | fragen | quelle | ueber | impres | 404 | Summe |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Grenze(n) | 4 | 11 | 4 | 29 | 32 | 1 | 2 | 30 | 5 | 7 | 7 | 1 | 12 | 17 | 2 | 1 | · | 165 |
+| Abgrenzung/abgrenzen | · | 1 | · | · | · | · | · | · | · | · | · | · | · | · | · | · | · | 1 |
+
+**Krise**
+
+| Variante | index | verste | bezieh | rolle | grenze | diagno | behand | kommun | krise | selbst | genesu | unters | fragen | quelle | ueber | impres | 404 | Summe |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Krise(n) | · | 3 | 1 | 4 | 2 | 1 | 7 | 1 | 18 | 4 | · | 2 | 5 | 7 | 2 | · | · | 57 |
+| Notfall | · | 2 | 2 | 4 | 2 | 4 | 4 | 4 | 12 | 6 | · | 1 | 12 | 2 | · | · | · | 55 |
+| akut | · | 1 | 1 | 3 | 3 | 4 | 7 | 3 | 8 | 5 | · | · | 13 | 2 | · | · | · | 50 |
+
+**Selbstverletzung**
+
+| Variante | index | verste | bezieh | rolle | grenze | diagno | behand | kommun | krise | selbst | genesu | unters | fragen | quelle | ueber | impres | 404 | Summe |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Selbstverletzung | · | · | 1 | · | · | 1 | 2 | · | 3 | · | · | · | 1 | 5 | · | · | · | 13 |
+| selbstverletzend | · | · | · | · | · | · | · | · | · | · | · | · | · | · | · | · | · | 0 |
+| sich (selbst) verletzen | · | · | · | · | · | · | · | · | · | · | · | · | · | · | · | · | · | 0 |
+| Selbstschädigung/selbstschädigend | · | · | · | · | · | · | · | · | · | · | · | · | · | 2 | · | · | · | 2 |
+| Selbstgefährdung | · | · | · | · | · | · | · | · | · | 1 | · | · | · | · | · | · | · | 1 |
+
+**Suizid**
+
+| Variante | index | verste | bezieh | rolle | grenze | diagno | behand | kommun | krise | selbst | genesu | unters | fragen | quelle | ueber | impres | 404 | Summe |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Suizidgedanken | · | 3 | 1 | · | · | 5 | · | 2 | 11 | · | · | · | 4 | 3 | · | · | · | 29 |
+| Suizid (andere) | · | 2 | · | · | · | 4 | · | 1 | · | · | · | · | 4 | 3 | · | · | · | 14 |
+| Selbstmord | · | · | · | · | · | · | · | · | · | · | · | · | · | · | · | · | · | 0 |
+| sich das Leben nehmen | · | · | · | · | · | · | · | · | 1 | · | · | · | · | · | · | · | · | 1 |
+| lebensmüde | · | · | · | · | · | · | · | · | · | · | · | · | · | · | · | · | · | 0 |
+
+**Genesung**
+
+| Variante | index | verste | bezieh | rolle | grenze | diagno | behand | kommun | krise | selbst | genesu | unters | fragen | quelle | ueber | impres | 404 | Summe |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Genesung | 2 | 3 | 1 | 10 | · | 2 | 3 | 2 | · | · | 17 | · | 7 | 15 | 2 | · | · | 64 |
+| Recovery | · | · | · | · | · | · | · | · | · | · | 13 | · | 2 | 9 | · | · | · | 24 |
+| Remission | · | 1 | · | · | · | · | · | · | · | · | 14 | · | 3 | 9 | · | · | · | 27 |
+| Heilung/heilbar | · | · | · | · | · | · | · | · | · | · | 3 | · | 2 | · | · | · | · | 5 |
+| Besserung | · | 1 | · | · | · | 1 | · | · | · | · | 5 | · | 1 | · | · | · | · | 8 |
+
+**Fachpersonen**
+
+| Variante | index | verste | bezieh | rolle | grenze | diagno | behand | kommun | krise | selbst | genesu | unters | fragen | quelle | ueber | impres | 404 | Summe |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Fachperson(en) | 1 | 1 | · | 2 | 1 | 12 | 11 | · | 2 | 1 | 2 | 4 | 6 | 4 | · | · | · | 47 |
+| Fachleute | · | · | 1 | · | · | · | · | · | · | · | · | · | · | · | · | · | · | 1 |
+| Fachkräfte | · | · | · | · | · | · | · | · | · | · | · | · | · | · | · | · | · | 0 |
+| Behandlungsteam | · | · | · | 1 | · | · | 11 | · | 7 | · | · | · | 2 | · | · | · | · | 21 |
+| Behandelnde | · | · | · | · | · | · | · | · | · | · | 1 | · | · | · | · | · | · | 1 |
+| Therapeut/in | · | · | 2 | 2 | · | · | 5 | 1 | · | · | · | · | · | 3 | · | · | · | 13 |
+| Ärztin/Arzt | · | · | · | · | · | 1 | 1 | 4 | · | · | · | · | 1 | 1 | · | · | · | 8 |
+| Fachstelle | 1 | · | 1 | 2 | 3 | 2 | 2 | · | 3 | 1 | 2 | 6 | 2 | 1 | 2 | 5 | · | 33 |
+
+**Therapie/Behandlung**
+
+| Variante | index | verste | bezieh | rolle | grenze | diagno | behand | kommun | krise | selbst | genesu | unters | fragen | quelle | ueber | impres | 404 | Summe |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Therapie | · | · | · | 2 | 1 | 4 | 39 | 1 | 1 | 1 | 1 | 4 | 19 | 16 | 2 | · | · | 91 |
+| Psychotherapie | · | · | · | · | 1 | 2 | 7 | · | · | 3 | 1 | · | 3 | 8 | · | · | · | 25 |
+| Behandlung | · | · | 4 | 9 | · | 16 | 36 | 1 | 3 | 1 | 11 | 2 | 26 | 31 | 1 | 1 | · | 142 |
+
+### 5.3 S · Sprach-Review (Prüfung 2)
+
+**Geprüfter Stand:** `f1d6572`, Arbeitsbaum `scratchpad/wt` (unverändert). Werkzeuge mit Schreibzugriff nur in der eigenen Kopie `scratchpad/kopie-s` (`node tools/build.mjs`: 17 Seiten, 0 blockierend, 2 Hinweise `crisis-number-check` «144» und `review-report`; keine Hinweise zu «ß», Anführungszeichen oder Etikettierung; `git status` danach leer, die gebauten Seiten sind also gleich).
+
+**Kriterien:** `guidelines/00-sprache-und-ton.md`, dazu `00-fachliche-qualitaet-und-haltung.md` (Etikettierung) und `00-pre-release-audits.md` Z. 168 (Stolperstellen: Sätze über 25 Wörter, Fachwörter).
+
+**Vorgehen und eigene Skripte** (alle in `scratchpad/teil-s/`):
+
+- `dump.mjs`: zieht aus allen 17 gebauten Seiten jeden sichtbaren und webspezifischen Text als Zeile (Seite, Abschnitt, Element, Text) nach `dump.tsv` (2689 Zeilen). Erfasst sind `<title>`, Meta-Beschreibung, `og:title`, `og:description`, `og:site_name`, `alt`, `aria-label`, Navigation, Absenderin, Sprunglink, Überschriften h1 bis h6, `summary`, `figcaption`, Bildtexte, Text nur für Screenreader (`.puk-sr`), Quellenblock und Fusszeile. Die Fusszeile entsteht in `tools/contract.js` Z. 176.
+- `checks.mjs`: Prüfungen mit regulären Ausdrücken auf `dump.tsv`. Gesucht wurde nach «ß», „“”‚‘’ und geraden Anführungszeichen, du/dein ausserhalb von «…», Varianten von E-Mail, Abkürzungen ohne Leerschlag, « - » als Gedankenstrich, Geviertstrich, Prozent ohne Leerschlag, etikettierenden Wörtern, Ausrufezeichen, wir/uns, «man» und «Sie müssen/sollten».
+- `saetze.mjs`: zerlegt den Lesetext in Sätze und listet alle Sätze über 25 Wörter, je Seite mit Durchschnitt.
+- `lesen.sh`: Lesefassung je Seite. Alle 17 Seiten habe ich ganz gelesen, Abschnitt für Abschnitt.
+- `c1.mjs`: Zählweise C1, nachgebaut nach der Beschreibung im Prüfbericht (Z. 298, 2776, 3335). Gezählt werden die innersten `p`, `li`, `dt` und `dd` in `<main>`. Nicht gezählt werden SVG, `.puk-sr`/`.puk-vis-sr`, die Kapitelübersicht, Kicker, Eyebrow, «Abbildung n · …», `figcaption`, «Verwendet auf» und der Block «Quellen zu dieser Seite». «Im Lesefluss» lässt die Panels der Akkordeons weg. Die Vertiefung einer Abbildung und «Grenzen des Bildes» zählen mit.
+- `extra.mjs`: zählt den ganzen sichtbaren Text in `<main>`, den Quellenblock, die Überschriften und die Panels einzeln.
+- `alt.py`: eigene Zählung der alten Seiten aus `git show origin/borderline-bestand:bestand/borderline-angehoerige/texte/<route>.md`, unabhängig von `kennzahlen.mjs`.
+- Projektwerkzeug zum Vergleich: `node abgleich/kennzahlen.mjs --abschnitte` in der Kopie.
+
+#### Ergebnis je Punkt
+
+| Punkt | Ergebnis | Beleg |
+| --- | --- | --- |
+| Kein «ß» | erfüllt | `checks.mjs`: «ß: 0» über alle 2689 Textzeilen, auch in `<title>`, Meta, `alt`, `aria-label` und Fusszeile |
+| Guillemets statt „“, "" | erfüllt | „“”‚‘" und gerade Anführungszeichen: 0. Einziger Treffer ist der typografische Apostroph im englischen Buchtitel «I Hate You – Don’t Leave Me» (`quellen` › `angehoerige`), dort richtig |
+| Anrede «Sie» konsequent | erfüllt | du/dein/dich/dir ausserhalb von «…»: 1 Treffer, der Buchtitel «Ich hasse dich – verlass mich nicht» (`unterstuetzung` › `buecher`). Alle anderen Du-Formen stehen in Beispielsätzen in «…» (z. B. `grenzen` › `saetze`, `kommunizieren` › `anerkennen`). «wir» kommt ausserhalb von Beispielsätzen nicht vor (40 Treffer, alle in «…» oder Figurentext wie «Wir können sprechen.») |
+| E-Mail einheitlich | erfüllt | 4 Treffer, alle «E-Mail» bzw. «E-Mail-Dienst» (`behandlung` › `kontakt`, `ueber` › `rueckmeldung`, `impressum-datenschutz` › `datenschutz`). Keine Variante «Email», «Mail» |
+| Gedankenstrich, Bindestrich, Auslassung | erfüllt | « - » als Gedankenstrich: 0. Geviertstrich: 0. «...»: 0, nur «…». Ergänzungsstriche richtig («Kopf- oder andere Schmerzen», «Diagnose-, Krisen- oder Gewaltgespräche») |
+| Abkürzungen, Prozent, Uhrzeiten | erfüllt | «z.B.»/«d.h.» ohne Leerschlag: 0. «z. B.» kommt 2× vor, «zum Beispiel» 15×, «Zum Beispiel:» 22×. Prozent mit Leerschlag («93 %»). Uhrzeiten einheitlich «21 Uhr», «23 Uhr» |
+| Zahlen einheitlich | **nicht ganz** | `quellen` › `begriffe`: «mindestens 5 der folgenden 9 Merkmale». `diagnose` › `abklaerung`: «Geprüft werden neun Kriterien. Mindestens fünf …» (SP2-S-9). Datumsformate im Quellenverzeichnis gemischt (SP2-S-10) |
+| Gross- und Kleinschreibung | **nicht ganz** | «eine Posttraumatische Belastungsstörung (PTBS)» mitten im Satz (`fragen` › `verlauf`), sonst «posttraumatische» (`verstehen` › `mythen`, `diagnose` › `begleiterkrankungen`) (SP2-S-8). «Für: Jüngere Kinder ab 4 Jahren», «Für: Alle, die verstehen wollen», «Für: Erwachsene Kinder …» (`unterstuetzung` › `buecher`) (SP2-S-12) |
+| Etikettierende Sprache | erfüllt | «Borderliner», «Borderlinerin», «leidet an/unter», «die Kranke», «Erkrankte»: 0. «Patientinnen und Patienten» nur in Sachzusammenhängen (`behandlung` › `wartezeit`, `quellen` › `diagnostik`). Für die betroffene Person steht 64× «betroffene Person». Das Substantiv «Betroffene» steht 3× im Fliesstext (`verstehen` › `mythen`, `unterstuetzung` › `beratung`, `quellen` › `schweiz`), dazu in Buchbeschreibungen. Kein Befund |
+| Geschlechtergerechte Sprache einheitlich | **nicht ganz** | Die Website verwendet sonst Paarformen («Partnerinnen und Partner», «Fachärztinnen und Fachärzte»). Generisches Maskulinum steht in den Zielgruppen der Bücher («Für: Partner, Familienmitglieder», «Für: Partner in Paarbeziehungen», «enge Freunde»), dazu «allfällige Zeugen» (`grenzen` › `gewalt`) und «Siegern oder Schuldigen» (`kommunizieren` › `beispiele`) (SP2-S-13) |
+| Begriffe einheitlich | erfüllt, eine Ausnahme | «Website» 83×, «Webseite» 0. «Fachperson» 47×, «Fachleute» 1×. «Notfallstation» einheitlich. «Remission»/«Recovery» erklärt und einheitlich. Ausnahme: Abkürzung «BPS» (`unterstuetzung` › `buecher`, «Standardwerk zu BPS bei Jugendlichen») neben «BPD» (`quellen` › `begriffe`), sonst überall «Borderline» (SP2-S-7) |
+| Seitennamen in Verweisen | **nicht ganz** | Die Verweise nennen die Seite meist mit dem Namen aus der Navigation, z. B. «Verstehen» 9×, «Grenzen» 14×, «Ihre Rolle» 10×. Ausnahmen: «Borderline verstehen» 1× (`diagnose` › `bedeutung`); «Mehr dazu unter Was zwischen Ihnen geschieht und Grenzen setzen.» ohne «Seite» und ohne «…» (`verstehen` › `einordnung`); «steht auf der Seite «Grenzen» unter «Wenn Gewalt …»» statt «im Abschnitt» (`beziehungen` › `verantwortung`). Für denselben Ort stehen «Startseite» (7 Verweise, `<title>`) und «Übersicht» (Eyebrow auf `index`, Text und Link auf `404`) (SP2-S-11, SP2-S-14) |
+| Webspezifische Texte | **nicht ganz** | Navigation, Sprunglink «Zum Hauptinhalt», «Auf dieser Seite», `alt` «Psychiatrische Universitätsklinik Zürich», Link auf `404` «Zur Übersicht»: ohne Befund. Befunde: Die Fusszeile aller 17 Seiten sagt «Redaktioneller Status: Entwurf – fachliche Prüfung ausstehend», obwohl alle Seiten fachlich freigegeben sind (SP2-S-1). Die Meta-Beschreibung von `index` nennt nur drei der acht Einstiege (SP2-S-6). Die Versionszeile der Fusszeile sagt «abgeleitet – abgeleitetes Profil …» (SP2-S-15). Das `aria-label` der Kapitelübersicht ist «Weg durch die Seite», sichtbar steht «Auf dieser Seite»; das ist Profiltext, kein Befund. Texte aus `components/interaktion.js` erscheinen nur als Beschriftung der Akkordeons (Überschrift wird Schaltfläche). Die Schritt-Steuerung («Schritt für Schritt aufbauen») nutzt keine Seite (`data-vis-build`: 0 Treffer) |
+| Sätze über 25 Wörter | erfüllt (wenige) | `saetze.mjs`: 21 Sätze über 25 Wörter auf 3577 Sätzen, davon 8 auf `quellen` (Quellentitel). Durchschnitt je Seite 7,3 bis 11,7 Wörter. Die längsten Sätze im Lesetext: `selbstfuersorge` › `beratung` (36), `fragen` › `behandlung` (35, FU-Satz, entschieden Z31-S-4), `fragen` › `gespraeche` (30), `rolle` › `mehrere` (29) |
+| Lesetest je Abschnitt | alle 97 h2-Abschnitte und `404` gelesen | Tabelle «Lesetest» unten |
+| Ton: zugewandt, nicht belehrend | erfüllt, Einzelstellen | Keine Schuldzuweisung gefunden. Kein Heilsversprechen: «Borderline ist behandelbar», «Hoffnung ist bei Borderline berechtigt» und «Besserung ist oft real» stehen immer mit Einschränkung. Belehrend klingen einzelne Sätze: «Leisten Sie keine Aufarbeitung, solange Sie selbst noch aufgewühlt sind.» (`krise` › `danach`) und «Erinnern Sie sich: Genesung ist individuell und keine Leistung der Familie.» (`genesung` › `einfluesse`) (SP2-S-16) |
+| Häufungen «Sie müssen/dürfen» | geprüft, optional | «Sie müssen … (nicht)» 42×, «Sie dürfen» 33×, «Was Sie tun können:» 34×. Fast alle «Sie müssen» sind entlastend verneint und passen zur Haltung. Gehäuft stehen sie auf `rolle` › `anbieten`: «Sie müssen diese Beiträge nicht alle leisten.», «Sie müssen nicht dauernd ruhig und stabil sein …», «Sie müssen nicht versprechen, wie die andere Person darauf reagiert.», dazu der Kopf «Sie müssen keine andere Person beruhigen …» (SP2-S-17) |
+| Häufung von Absicherungen | Prüfbedarf | `krise` › `belastung`: drei Absätze nacheinander sagen fast dasselbe. «Die Bereiche bewerten keine Diagnose und sagen nicht voraus …» – «Die Bereiche sind keine Sicherheitsbewertung. Die Einteilung zeigt nur … Sie kann nicht beurteilen, ob eine Situation sicher ist.» – «Kein Bereich bedeutet automatisch «sicher» oder «gefährlich». Die Einteilung entscheidet weder über Behandlung noch über die Dringlichkeit von Hilfe.» Die Leitlinie, Abschnitt 5, sagt dazu: «Allgemeine redaktionelle Hinweise bündeln». Absicherungen sind fachlich geschützt (Bauauftrag 2a, Z. 48), deshalb nur als Frage (SP2-F-S-2) |
+| Längen nachgerechnet | erfüllt; die Werte der bauenden Sitzung stimmen | Tabellen «Längen» unten |
+
+#### Längen
+
+**Zählweise C1 nachvollzogen.** Mein Skript `c1.mjs` ergibt an früheren Ständen genau die Werte, die im Prüfbericht stehen:
+
+- am Stand `e64815d`: `genesung` 1164/1241, `unterstuetzung` 1105/1318, `diagnose` 1542/1871, `behandlung` 1678/2347 (wie die Prüfsitzung im Prüfbericht Z. 298; die Selbstprüfung nennt 2345), `index` 232, `verstehen` 1502
+- am Stand `f3cb270`: `genesung` 1168/1245, `unterstuetzung` 1117/1333, `diagnose` 1549/1878, `behandlung` 1716/2329, `index` 260, `fragen` 2697/2731, `quellen` 4776/4890, `ueber` 574, `impressum-datenschutz` 492
+
+Alle diese Werte stimmen auf das Wort, auch je Abschnitt (Prüfbericht Z. 298–313, 2774 ff.). `kennzahlen.mjs` ergibt am Stand `f1d6572` genau die Werte der Selbstprüfung «Freigabe 2c und 3-1» (Prüfbericht Z. 1288–1297): `index` 370, `verstehen` 1872, `beziehungen` 1741, `rolle` 3299, `selbstfuersorge` 2813, `krise` 2200, `quellen` 5506, `diagnose` 2184, `ueber` 608.
+
+**Wörter je Seite am Stand `f1d6572`** (eigene Skripte; «Neu gesamt» ist der ganze sichtbare Text in `<main>` mit Überschriften und Quellenblock, gezählt wie `kennzahlen.mjs`; «Alt» ist die alte Seite allein):
+
+| Seite | Alt (`alt.py`) | Neu gesamt | Neu / alt | C1 im Lesefluss (ohne Vertiefungen) | C1 mit Vertiefungen | Quellenblock (separat) | Letzter Wert der bauenden Sitzung (C1 im Lesefluss) | Ziel oder Richtwert | Urteil |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | --- | --- | --- |
+| `index` | 433 | 370 | 85 % | 273 | 273 | 0 | 260 (Nachprüfung, `f3cb270`) + 13 (Freigabe Nr. 13) = 273 | kein gültiger (UMBAUPLAN «300», seit 1c nicht mehr gültig) | stimmt |
+| `verstehen` | 2524 | 1872 | 74 % | 1555 | 1555 | 124 | 1502 + 53 (Nr. 1–3) = 1555 | kein gültiger (Korrektur 1c, Z. 12; Etappe 1 freigegeben) | stimmt |
+| `beziehungen` | 2149 | 1741 | 81 % | 1487 | 1487 | 121 | 1452 + 35 (Nr. 4, 5) = 1487 | kein gültiger | stimmt |
+| `grenzen` | 2985 | 1802 | 60 % | 1508 | 1508 | 143 | 1508 | kein gültiger | stimmt |
+| `rolle` | 2736 | 3299 | 121 % | 2678 | 2965 | 180 | 2627 + 51 (Nr. 6–8) = 2678 | etwa 2640 (Korrektur 2a, Z. 84; ±10 %) | +1,4 %, im Rahmen |
+| `selbstfuersorge` | 2419 | 2813 | 116 % | 2167 | 2506 | 194 | 2130 + 37 (Nr. 9, 10) = 2167 | etwa 2170 (Korrektur 2a, Z. 84) | erreicht |
+| `kommunizieren` | 4114 | 3428 | 83 % | 2452 | 3118 | 75 | 2452 | höchstens etwa 2500 (Bauauftrag 2b, Z. 70) | erreicht |
+| `krise` | 1916 | 2200 | 115 % | 1555 | 1978 | 112 | 1523 + 32 (Nr. 11, 12) = 1555 | höchstens etwa 2500 | erreicht |
+| `genesung` | 1620 | 1508 | 93 % | 1168 | 1245 | 164 | 1168 | höchstens etwa 1800 (Bauauftrag 2c-1, Z. 50) | erreicht |
+| `unterstuetzung` | 2010 | 1408 | 70 % | 1117 | 1333 | 0 | 1117 | höchstens etwa 1500 | erreicht |
+| `diagnose` | 3769 | 2184 | 58 % | 1549 | 1878 | 187 | 1549 | höchstens etwa 1800 (Bauauftrag 2c-2, Z. 56) | erreicht |
+| `behandlung` | 2696 | 2684 | 100 % | 1716 | 2329 | 228 | 1716 | höchstens etwa 1800 | erreicht |
+| `fragen` | 4684 | 3250 | 69 % | 2697 | 2731 | 257 | 2697 | kein Richtwert (`KORREKTUR-ETAPPE-3-1.md` Z. 18) | Entscheid umgesetzt (keine Kürzung) |
+| `quellen` | 6693 | 5506 | 82 % | 4775 | 4889 | 0 | 4776 − 1 («&» statt «und», Prüfbericht Z. 1296) = 4775 | keiner | stimmt |
+| `ueber` | 1304 | 608 | 47 % | 574 | 574 | 0 | 574 | kein Richtwert (NK-F-7) | – |
+| `impressum-datenschutz` | 1382 | 501 | 36 % | 492 | 492 | 0 | 492 | kein Richtwert (NK-F-7) | – |
+| `404` | – | 25 | – | 16 | 16 | 0 | – | – | – |
+
+- **Abweichungen:** keine. Die bauende Sitzung hat nach «Freigabe 2c und 3-1» keine Werte nach C1 mehr berichtet, nur `kennzahlen.mjs` (Prüfbericht Z. 1284–1297). Die Spalte «Letzter Wert» rechnet deshalb deren letzte C1-Werte (Prüfbericht Z. 3765 ff., 3333 ff., 298 ff.) mit den Differenzen dieser Freigabe fort. Die geänderten Sätze sind Fliesstext, `kennzahlen.mjs` und C1 zählen dort also gleich. Jede fortgerechnete Zahl trifft meinen Messwert auf das Wort.
+- **Kürzungsquote** (alte Seite allein): Meine eigene Zählung der alten Seiten ergibt dieselben Werte wie `kennzahlen.mjs` (433, 2524, 2149 …), wenn die Nummern nummerierter Listen («1.») nicht als Wort zählen. Mit diesen Nummern zählt sie 0 bis 14 Wörter mehr (z. B. `index` 441, `diagnose` 3783). Die Quoten «Neu / alt» der bauenden Sitzung stimmen alle auf das Prozent, auch die im Text genannten: `fragen` 69 %, `quellen` 82 %, `ueber` 47 %, `impressum-datenschutz` 36 % (`abgleich/README.md` Z. 133 ff.). Eine Kürzungsquote, die alte Seite und Handouts zusammenrechnet, nennt die bauende Sitzung nicht.
+- **Widerspruch in den Unterlagen** (SP2-S-18): `abgleich/kennzahlen.mjs` Z. 40 druckt weiter die Richtwerte `verstehen` 1300, `beziehungen` 1100, `grenzen` 1500, `fragen` 1500 und `ueber` 900. Nach `KORREKTUR-ETAPPE-3-1.md` und NK-F-7 gibt es für `fragen` und `ueber` keinen Richtwert. Für die Seiten der Etappe 1 gilt seit Korrektur 1c keiner (`BAUAUFTRAG-ETAPPE-2A.md` Z. 27). `UMBAUPLAN.md` Abschnitt 2 nennt in Klammern noch andere Zahlen (`verstehen` 1100, `beziehungen` 1000, `grenzen` 1200, `rolle` 1200 …), ohne zu sagen, dass sie nicht mehr gelten.
+
+#### Lesetest je Abschnitt
+
+Ein Satz Urteil je h2-Abschnitt (97, dazu `404`; die Quellenblöcke «Quellen zu dieser Seite» sind keine eigenen h2-Abschnitte im Lesefluss). Schwierige Stellen sind wörtlich zitiert. «leicht» heisst: verständlich ohne Vorwissen, kurze Sätze, Fachwörter erklärt.
+
+| Seite › Abschnitt | Urteil | Schwierige Stellen (Zitat) |
+| --- | --- | --- |
+| `index` › `einstiege` | leicht, die Einstiege nennen klar den Inhalt | – |
+| `index` › `beratung` | leicht | – |
+| `index` › `haltung` | leicht, zugewandt | – |
+| `verstehen` › `erleben` | leicht, zugewandt, nimmt gemischte Gefühle ernst | – |
+| `verstehen` › `borderline` | gut, ein langer Doppelpunktsatz | «Die Diagnose Borderline-Persönlichkeitsstörung kann unter anderem beschreiben: sehr starke oder schnell wechselnde Gefühle und Schwierigkeiten mit der inneren Stabilität, mit dem Bild von sich selbst oder mit Beziehungen.» (28 Wörter) |
+| `verstehen` › `eisberg` | leicht; die Bildlegende sagt «mitwirken», der Titel «liegen» | Titel «Was man sieht – und was darunter liegen kann», Abbildung «… und was darunter mitwirken kann» |
+| `verstehen` › `anspannung` | leicht, die Stellen der Kurve sind Sätze aus dem Erleben | – |
+| `verstehen` › `bewertungen` | leicht | – |
+| `verstehen` › `mythen` | gut, PTBS gleich danach erklärt, Remission in Klammern erklärt | – |
+| `verstehen` › `einordnung` | leicht; der Verweis am Schluss weicht in der Form ab | «Mehr dazu unter Was zwischen Ihnen geschieht und Grenzen setzen.» (SP2-S-11) |
+| `beziehungen` › `verbindung` | leicht | – |
+| `beziehungen` › `schleife` | gut; der Ansatzpunkt ist ein langer Satz | «Statt sich weiter zu verteidigen, können Sie das Gefühl anerkennen, nachfragen, wie die Absage angekommen ist, und Ihre eigene Grenze halten.» |
+| `beziehungen` › `verstaerker` | gut, Dissoziation erklärt; der Titel ist abstrakt | Titel «Was den Spielraum zwischen Anlass und Reaktion verengen kann» |
+| `beziehungen` › `zwei-sichten` | leicht | – |
+| `beziehungen` › `was-hilft` | leicht | – |
+| `beziehungen` › `verantwortung` | gut; der letzte Satz steht ohne Übergang | «Studien beschreiben Gruppen, nicht eine bestimmte Person oder Beziehung.» (nach «Was Sie tun können: …») |
+| `grenzen` › `erkennen` | leicht | – |
+| `grenzen` › `bruecke` | leicht, Bild vom Geländer verständlich | – |
+| `grenzen` › `arten` | leicht | – |
+| `grenzen` › `reihenfolge` | gut; Fachjargon der Einteilung | «Dringend und emotional hoch», «Langfristig und emotional niedriger» |
+| `grenzen` › `dear` | gut; «DEAR» steht im Titel, die Herkunft nur in der Vertiefung | «DEAR: ein Anliegen klar formulieren» |
+| `grenzen` › `saetze` | leicht, die Beispiele klingen natürlich | – |
+| `grenzen` › `konsequenz` | gut; mehrere Einzelsätze als eigene Absätze (Stakkato), ein Satz grammatisch unklar | «Lässt sich eine Grenze nicht umsetzen, holen Sie Unterstützung und passen sie an.» (SP2-S-2) |
+| `grenzen` › `kontakt` | leicht | – |
+| `grenzen` › `rollen` | leicht | – |
+| `grenzen` › `gewalt` | leicht, dringend und klar | – |
+| `rolle` › `anbieten` | gut; viele Entlastungen nacheinander | vier Sätze mit «Sie müssen … nicht» (SP2-S-17); «Selbstorientierung: Was hilft mir, mich selbst zu orientieren?» |
+| `rolle` › `schuld` | leicht, zugewandt | – |
+| `rolle` › `alltag` | leicht | – |
+| `rolle` › `nach-konflikten` | leicht | – |
+| `rolle` › `mehrere` | gut; ein langer Satz | «Was Sie tun können: Klären Sie gemeinsam, soweit die Beteiligten das möchten, wer was übernehmen möchte, wann jemand eine Pause von der Unterstützung machen kann und welche Grenzen gelten.» (29 Wörter) |
+| `rolle` › `kinder` | leicht | – |
+| `rolle` › `an-grenzen` | leicht | – |
+| `selbstfuersorge` › `eigenes-leben` | leicht, zugewandt | – |
+| `selbstfuersorge` › `kraft` | leicht | – |
+| `selbstfuersorge` › `warnsignale` | gut; Meta-Satz am Schluss | «Die fünf Bereiche sind eine eigene didaktische Ordnung.» (SP2-S-19) |
+| `selbstfuersorge` › `zu-viel` | gut; Wiederholung «angenehm», Fachwort | «Ruhiges Atmen kann bei Anspannung angenehm sein. Wenn es für Sie angenehm ist: …»; «Wenn Atemfokus unangenehm ist» |
+| `selbstfuersorge` › `unterstuetzung` | leicht | – |
+| `selbstfuersorge` › `akzeptanz` | gut, Begriff erklärt | – |
+| `selbstfuersorge` › `beratung` | gut; der längste Satz der Themenseiten, Nominalstil | «Die Hinweise auf dieser Seite übertragen Forschung und eine Leitlinie in Schritte für den Alltag: eine Übersicht zur Belastung von Angehörigen, Forschung zu kurzer körperlicher Beruhigung und eine Leitlinie zur Unterstützung erwachsener Angehöriger, die unbezahlt betreuen.» (36 Wörter) |
+| `kommunizieren` › `zuhoeren` | leicht | – |
+| `kommunizieren` › `anerkennen` | gut, Validierung erklärt; Fachbegriffe in den Stufen | «Im biografischen Kontext verstehen», «Radikale Echtheit: auf Augenhöhe bleiben» |
+| `kommunizieren` › `moment` | leicht | – |
+| `kommunizieren` › `kippen` | leicht; viermal sinngleich «keine Garantie» auf der Seite | «Keine Formulierung garantiert eine bestimmte Reaktion.» (SP2-F-S-2) |
+| `kommunizieren` › `worte` | leicht | – |
+| `kommunizieren` › `beispiele` | leicht, die Beispiele klingen natürlich | – |
+| `kommunizieren` › `rollen` | leicht | – |
+| `krise` › `belastung` | gut, aber drei Absätze mit fast gleichen Absicherungen | siehe «Häufung von Absicherungen» (SP2-F-S-2) |
+| `krise` › `waehrend` | leicht, dringend und klar | – |
+| `krise` › `sagen` | leicht | – |
+| `krise` › `suizid` | leicht, direkt | – |
+| `krise` › `vermeiden` | leicht | – |
+| `krise` › `danach` | gut; ein ungewöhnlicher Beispielsatz, ein belehrender Satz | «Mir ist noch beklemmend zumute.» (SP2-S-3); «Leisten Sie keine Aufarbeitung, solange Sie selbst noch aufgewühlt sind.» (SP2-S-16) |
+| `krise` › `bleibt` | leicht (der Kinderabsatz steht wortgleich auch auf `grenzen` › `gewalt`; Doppelung ist Sache von W2) | – |
+| `genesung` › `forschung` | gut, Zahlen erklärt | – |
+| `genesung` › `begriffe` | gut; ein Fachwort ohne Erklärung | «weniger Impulsdurchbrüche» |
+| `genesung` › `verlauf` | gut; zwei «tragfähigere» Sätze klingen nach Fachtext | «Tempo und Zeitpunkt bleiben begrenzt steuerbar.», «Besserung ist möglich und oft wahrscheinlich.» (SP2-S-20) |
+| `genesung` › `einfluesse` | gut, Peer-Unterstützung erklärt | «Ein personenzentrierter Behandlungsplan»; «Erinnern Sie sich: …» (SP2-S-16) |
+| `genesung` › `freiwillig` | gut | «Urteilsfähige Erwachsene entscheiden selbst über ihre Behandlung, gemeinsam mit den Behandelnden.» |
+| `unterstuetzung` › `beratung` | leicht | – |
+| `unterstuetzung` › `austausch` | leicht | – |
+| `unterstuetzung` › `selbsthilfe` | leicht | – |
+| `unterstuetzung` › `kantone` | leicht | – |
+| `unterstuetzung` › `buecher` | gut; Abkürzungen und Fachwörter in den Buchbeschreibungen | «BPS», «Adoleszente», «SET-UP-Methode», «Psychopharmakotherapie» (SP2-S-7) |
+| `diagnose` › `abklaerung` | **schwer** im ersten Absatz: Nominalstil und Fachwörter | «Wer die diagnostische Gesamtbeurteilung übernimmt, hängt von Qualifikation, Behandlungsrahmen und Behandlungsweg ab. Eine Borderline-Diagnostik ist kein einzelner Test, sondern ein gestufter Prozess.»; «Die Abklärung machen dafür qualifizierte Fachpersonen …»; Vertiefung: «SCID-5-PD oder IPDE» (SP2-S-4) |
+| `diagnose` › `bedeutung` | gut | – |
+| `diagnose` › `zweifel` | gut; «legitim» | «Eine zweite fachliche Einschätzung ist legitim.» |
+| `diagnose` › `ohne-diagnose` | gut; «legitim» und «Option» wiederholt | «Die Frage ist legitim …», «eine legitime und oft hilfreiche Option», «Das ist keine Pflicht, aber eine reale Option.» (SP2-S-21) |
+| `diagnose` › `begleiterkrankungen` | gut, Komorbidität und Differenzialdiagnostik erklärt | – |
+| `behandlung` › `rollen` | leicht | – |
+| `behandlung` › `kontakt` | gut; Passiv und Nominalstil an Rechtsstellen | «Vertraulichkeit Ihrer Mitteilung gegenüber der betroffenen Person kann nicht pauschal zugesichert werden.» |
+| `behandlung` › `therapieformen` | gut; mehrere Fachwörter | «Strukturierte generalistische Behandlung», «ohne spezialisiertes Therapielabel», «die unter Stress reaktiv werden»; «keinen statistisch signifikanten Vorteil gegenüber einer aktiven Vergleichsbehandlung. Daraus folgt weder gesicherte Überlegenheit noch Gleichwertigkeit.»; «Nach NICE …» ohne Erklärung auf dieser Seite (SP2-S-5) |
+| `behandlung` › `rueckschlaege` | leicht | – |
+| `behandlung` › `angebote` | gut; «ipw» ohne Erklärung | «ipw, Psychotherapiestation für junge Erwachsene» |
+| `behandlung` › `wartezeit` | **schwer** im Absatz zu den Kosten | «Fragen Sie Praxis und Krankenversicherung nach Anordnung oder Zuweisung, Kostenübernahme, einer allfälligen Kostengutsprache und eigener Kostenbeteiligung. Berücksichtigen Sie den vereinbarten Zugangsweg des Versicherungsmodells. … Nicht alle Ärztinnen und Ärzte sind regulär anordnungsberechtigt.» (SP2-S-4) |
+| `fragen` › `diagnose` | gut | «Wer die diagnostische Gesamtbeurteilung übernimmt, hängt von Qualifikation, Fragestellung und Behandlungsrahmen ab.» |
+| `fragen` › `verlauf` | gut; ein Grossbuchstabe | «eine Posttraumatische Belastungsstörung (PTBS)» (SP2-S-8); «Der Verlauf bleibt begrenzt vorhersehbar.» |
+| `fragen` › `gespraeche` | gut | 30-Wort-Satz «Bei anderen bedrohlich wirkenden Aussagen …» |
+| `fragen` › `behandlung` | gut; FU-Satz entschieden (Z31-S-4) | «Angehörige müssen nicht zum Medikamenten-Management werden.» |
+| `fragen` › `schutz` | gut | – |
+| `fragen` › `eigenes-leben` | leicht | – |
+| `fragen` › `weitere` | leicht | – |
+| `quellen` › `begriffe` | gut; Begriffe erklärt, mit Beispielen | «mindestens 5 der folgenden 9 Merkmale» (SP2-S-9) |
+| `quellen` › `einordnung` | schwer für Laien, Fachsprache | «Die Auswahl ist kuratiert, nicht vollständig bibliografisch.», «Evidenzstatus», «schweizerisch-rechtliche Freigabe» |
+| `quellen` › `forschung` | Quellentexte; Einordnungen kurz und verständlich | lange englische Titel (Quellenangabe, kein Befund) |
+| `quellen` › `therapie` | Quellentexte, verständlich | – |
+| `quellen` › `angehoerige` | Quellentexte, verständlich; Statistiksprache | «Ein fehlender signifikanter Unterschied beweist auch keine Gleichwertigkeit der Angebote.» |
+| `quellen` › `diagnostik` | Quellentexte, Fachsprache angemessen | – |
+| `quellen` › `versorgung` | Quellentexte | – |
+| `quellen` › `leitlinien` | Quellentexte; Daten uneinheitlich | «Veröffentlicht am 29.06.2022» neben «veröffentlicht am 22. Januar 2020» (SP2-S-10) |
+| `quellen` › `schweiz` | Quellentexte | – |
+| `ueber` › `warum` | gut (Satz nach Z31-S-6 geteilt) | – |
+| `ueber` › `grundsaetze` | gut; Fachsprache | «Entstigmatisierend und perspektivenbewusst», «für Regulation … verantwortlich gemacht» |
+| `ueber` › `barrierefreiheit` | gut («Landmarken» bleibt; Z31-S-9 entschieden) | – |
+| `ueber` › `rueckmeldung` | leicht | – |
+| `impressum-datenschutz` › `impressum` | gut, Rechtssprache (rechtliche Prüfung offen, nicht Teil von S) | – |
+| `impressum-datenschutz` › `datenschutz` | gut | «Je nach anwendbarem Recht und unter den jeweiligen gesetzlichen Voraussetzungen können Sie insbesondere Auskunft …» (27 Wörter) |
+| `404` (ohne h2) | leicht; Schaltfläche nennt die Handlung | «Zur Übersicht» (SP2-S-14) |
+
+**Gesamturteil Lesetest:** 98 Zeilen (97 h2-Abschnitte und `404`). 56 sind ohne Stolperstelle, 39 haben einzelne Stolperstellen, 3 sind schwer: `diagnose` › `abklaerung` (erster Absatz), `behandlung` › `wartezeit` (Kosten) und `quellen` › `einordnung`. Die dritte ist für Laien schwer, als Meta-Text aber vertretbar. Die Sätze sind im Mittel kurz (9 bis 10 Wörter). An einzelnen Stellen wirkt der Text abgehackt, weil Einschränkungen als einzelne Absätze folgen (`grenzen` › `konsequenz`, `krise` › `belastung`).
+
+#### Befunde
+
+| ID | Stufe | Gewicht | Befund | Beleg |
+| --- | --- | --- | --- | --- |
+| SP2-S-1 | S | wichtig | Die Fusszeile aller 17 Seiten nennt einen überholten Status. Alle Seiten sind fachlich freigegeben, die Fusszeile sagt aber «Entwurf – fachliche Prüfung ausstehend». `--production` ändert den Text nicht: Weder `tools/export.mjs` noch das Gate prüfen `editorialStatus`. Der Wortlaut muss vor der Veröffentlichung entschieden werden (SP2-F-S-1). | `site.config.json` Z. 19 `"editorialStatus": "Entwurf – fachliche Prüfung ausstehend"`; `tools/contract.js` Z. 176; `dump.tsv` (z. B. `index` Fusszeile); Prüfbericht › «Fachliche Freigabe der Fachstelle» (alle Etappen freigegeben); Prüfbericht Z. 1168 und 5406 (bekannt, «vor dem Merge neu exportieren») |
+| SP2-S-2 | S | optional | Der Satz ist grammatisch unklar: Das zweite «Sie» fehlt, «sie» kann sich auf die Person beziehen. Vorschlag: «Lässt sich eine Grenze nicht umsetzen, holen Sie Unterstützung und passen Sie die Grenze an.» | `grenzen` › `konsequenz`: «Lässt sich eine Grenze nicht umsetzen, holen Sie Unterstützung und passen sie an.» |
+| SP2-S-3 | S | optional | Die Wendung im Beispielsatz ist falsch und klingt nicht gesprochen. «Beklemmend» passt zu einer Lage, nicht zu einer Person; richtig wäre «beklommen». Vorschlag: «Ich bin noch ziemlich mitgenommen. Ich bin trotzdem hier.» (Leitlinie, Abschnitt 3: «Würde eine Person … das so sagen?») | `krise` › `danach`, Vertiefung «Vertrauen wieder aufbauen»: «Mir ist noch beklemmend zumute. Ich bin trotzdem hier.» |
+| SP2-S-4 | S | optional | Zwei Absätze sind für Laien schwer: Nominalstil und Fachwörter gehäuft. Vorschläge ohne Sinnänderung: (a) «Wer am Ende die Diagnose stellt, hängt davon ab, wo die Abklärung stattfindet und welche Ausbildung die Fachperson hat.» und «Die Abklärung machen Fachpersonen, die dafür ausgebildet sind, …» (b) Den Kostenabsatz als kurze Liste von Fragen an Praxis und Krankenversicherung schreiben («Braucht es eine ärztliche Anordnung oder eine Zuweisung? Übernimmt die Grundversicherung die Kosten? Was zahle ich selbst?»). | `diagnose` › `abklaerung` Abs. 1: «Wer die diagnostische Gesamtbeurteilung übernimmt, hängt von Qualifikation, Behandlungsrahmen und Behandlungsweg ab.»; Schritt 2: «Die Abklärung machen dafür qualifizierte Fachpersonen …»; `behandlung` › `wartezeit`: «… nach Anordnung oder Zuweisung, Kostenübernahme, einer allfälligen Kostengutsprache und eigener Kostenbeteiligung. Berücksichtigen Sie den vereinbarten Zugangsweg des Versicherungsmodells.» |
+| SP2-S-5 | S | optional | Fachwörter ohne Erklärung, und `behandlung` ist ohne `diagnose` nicht verständlich: Auf `behandlung` steht «NICE» ohne Erklärung, erklärt ist es nur auf `diagnose` («Die britische Behandlungsleitlinie NICE»). Dazu kommen «Therapielabel», «reaktiv werden» und «ipw». Vorschlag: «Nach der britischen Behandlungsleitlinie NICE …», «ohne spezialisierten Namen». | `behandlung` › `therapieformen`: «Nach NICE sollen Medikamente …», «ohne spezialisiertes Therapielabel», «die unter Stress reaktiv werden»; `behandlung` › `angebote`: «ipw, Psychotherapiestation …»; `diagnose` › `begleiterkrankungen`: «Die britische Behandlungsleitlinie NICE …» |
+| SP2-S-6 | S | optional | Die Meta-Beschreibung (auch `og:description`) von `index` passt nicht mehr: Sie nennt nur drei Einstiege, auf der Seite stehen acht (auch Ihre Rolle, Auf sich achten, Zugewandt und klar sprechen, Genesung, Unterstützung finden). | `index.html` `<meta name="description">`: «… Einstiege nach Anliegen zu Verstehen, Beziehungen und Grenzen sowie die kostenlose Beratung …»; `index` › `einstiege`: acht Einstiege |
+| SP2-S-7 | S | optional | Abkürzung uneinheitlich und unerklärt: «BPS» steht nur hier. Auf `quellen` heisst die Abkürzung «BPD», sonst steht überall «Borderline». Vorschlag: «Englischsprachiges Standardwerk zu Borderline bei Jugendlichen». «Adoleszente» → «Jugendliche». | `unterstuetzung` › `buecher`: «Englischsprachiges Standardwerk zu BPS bei Jugendlichen. … McLean-Hospital-Programm für Adoleszente.»; `quellen` › `begriffe`: «Borderline Personality Disorder (BPD)» |
+| SP2-S-8 | S | optional | Grossschreibung des Adjektivs mitten im Satz; sonst steht überall «posttraumatische». | `fragen` › `verlauf`: «… oder eine Posttraumatische Belastungsstörung (PTBS) kommen …»; `diagnose` › `begleiterkrankungen`: «posttraumatische Belastungsstörung (PTBS)»; `verstehen` › `mythen`: «posttraumatische Belastungsstörung» |
+| SP2-S-9 | S | optional | Für dieselbe Angabe stehen auf `quellen` Ziffern, auf `diagnose` ausgeschriebene Zahlen. Vorschlag: «mindestens fünf der folgenden neun Merkmale». | `quellen` › `begriffe`, Vertiefung «Die neun Kriterien im DSM-5-TR»: «mindestens 5 der folgenden 9 Merkmale»; `diagnose` › `abklaerung`: «Geprüft werden neun Kriterien. Mindestens fünf …» |
+| SP2-S-10 | S | optional | Die Daten im Quellenverzeichnis sind in zwei Formen geschrieben. Vorschlag: eine Form, z. B. «22. Januar 2020». | `quellen` › `leitlinien`: «veröffentlicht am 22. Januar 2020», «Veröffentlicht am 29.06.2022», «Zuletzt überprüft am 30. Juli 2024»; `quellen` › `diagnostik`: «Version 2.0 vom 14.11.2022», «Gültigkeit bis 31.05.2026»; `quellen` › `schweiz`: «Stand 1. Juli 2026» |
+| SP2-S-11 | S | optional | Verweise weichen vom Muster «steht auf der Seite «…» im Abschnitt «…»» ab (101× verwendet). Vorschlag (a): «Mehr dazu steht auf den Seiten «Beziehungen» und «Grenzen».» Vorschlag (b): «Borderline verstehen» → «Verstehen», wie in den 9 anderen Verweisen. Vorschlag (c): «unter» → «im Abschnitt». | (a) `verstehen` › `einordnung`: «Mehr dazu unter Was zwischen Ihnen geschieht und Grenzen setzen.»; (b) `diagnose` › `bedeutung`: «steht auf der Seite «Borderline verstehen»»; (c) `beziehungen` › `verantwortung`: «steht auf der Seite «Grenzen» unter «Wenn Gewalt oder Bedrohung vorkommt»»; Zählung `checks`-Skript: «steht auf der Seite» 101× |
+| SP2-S-12 | S | optional | Grossschreibung nach Doppelpunkt in den Zielgruppen der Bücher uneinheitlich. Ist es kein ganzer Satz, folgt nach Doppelpunkt klein. Vorschlag: «Für: jüngere Kinder ab 4 Jahren», «Für: alle, die verstehen wollen», «Für: erwachsene Kinder von Betroffenen». | `unterstuetzung` › `buecher`: «Für: Jüngere Kinder ab 4 Jahren», «Für: Alle, die verstehen wollen», «Für: Alle Angehörigen, auch Betroffene selbst», «Für: Erwachsene Kinder von Betroffenen» |
+| SP2-S-13 | S | optional | Geschlechtergerechte Sprache uneinheitlich: Sonst stehen Paarformen, an diesen Stellen das generische Maskulinum. Vorschlag: «Für: Partnerinnen und Partner, Familienmitglieder», «enge Freundinnen und Freunde», «allfällige Zeuginnen und Zeugen». | `unterstuetzung` › `buecher`: «Für: Partner, Familienmitglieder», «Für: Partner in Paarbeziehungen», «Für: Angehörige, Partner», «enge Freunde»; `grenzen` › `gewalt`: «allfällige Zeugen»; `behandlung` › `kontakt` Musterbrief: «Kurze Anfrage als Angehörige von [Vorname]» (nur weiblich) |
+| SP2-S-14 | S | optional | Für die Startseite stehen zwei Namen: «Startseite» im `<title>`, im `aria-label` des Logos und in 7 Verweisen («steht auf der Startseite im Abschnitt …»), «Übersicht» im Eyebrow von `index` und auf `404`. Vorschlag: auf `404` «Zur Startseite» und «Von der Startseite aus finden Sie alle Seiten.» | `index` `<title>` «Startseite \| …»; `index` Eyebrow «Übersicht»; `404`: «Von der Übersicht aus finden Sie alle Seiten.», Link «Zur Übersicht» |
+| SP2-S-15 | S | optional | Die Versionszeile der Fusszeile ist für Laien technisch und wiederholt «abgeleitet». Profiltext (`tools/contract.js`), Änderung nur im Design-System-Artefakt (CLAUDE.md, «Leitlinien, Tokens und Komponenten nicht in diesem Repository ändern»). | Fusszeile aller Seiten: «PUK Website Kit 1.10.1-r4 · abgeleitet – abgeleitetes Profil auf Basis des PUK Zürich Design System 1.10.1, nicht dessen offizielle Version.»; `tools/contract.js` Z. 176 |
+| SP2-S-16 | S | optional | Zwei Sätze klingen belehrend (Leitlinie, Abschnitt 2). Vorschläge mit gleicher Empfehlung: «Nehmen Sie sich eine Aufarbeitung erst vor, wenn Sie selbst weniger aufgewühlt sind.» und «Genesung ist individuell und keine Leistung der Familie.» (ohne «Erinnern Sie sich:»). | `krise` › `danach`: «Leisten Sie keine Aufarbeitung, solange Sie selbst noch aufgewühlt sind.»; `genesung` › `einfluesse`: «Erinnern Sie sich: Genesung ist individuell und keine Leistung der Familie.» |
+| SP2-S-17 | S | optional | «Sie müssen … nicht» gehäuft. Site-weit 42× ist es Teil der Haltung. In `rolle` › `anbieten` stehen aber drei solche Sätze, dazu einer im Kopf. Vorschlag: einen davon positiv fassen, z. B. «Wie die andere Person reagiert, liegt nicht bei Ihnen.» statt «Sie müssen nicht versprechen, wie die andere Person darauf reagiert.» | `rolle` › `anbieten`: «Sie müssen diese Beiträge nicht alle leisten.», «Sie müssen nicht dauernd ruhig und stabil sein …», «Sie müssen nicht versprechen, …»; Kopf: «Sie müssen keine andere Person beruhigen …»; Zählung: «Sie müssen» 42×, davon `rolle` 8 |
+| SP2-S-18 | S | optional | Die Richtwerte in den Unterlagen widersprechen den Entscheiden. Wer `kennzahlen.mjs` liest, sieht Richtwerte, die nicht mehr gelten. | `abgleich/kennzahlen.mjs` Z. 40: `verstehen: 1300, beziehungen: 1100, grenzen: 1500, … fragen: 1500, … ueber: 900`; Ausgabe «\| `fragen` \| 4684 \| 3250 \| 69 % \| 1500 \| 1575 \|», «\| `ueber` \| … \| 900 \| 945 \|»; dagegen `KORREKTUR-ETAPPE-3-1.md` Z. 18, `FREIGABE-ETAPPE-2C-3-1.md` Z. 31 (NK-F-7), `BAUAUFTRAG-ETAPPE-2A.md` Z. 27; `UMBAUPLAN.md` Z. 28 «Richtwerte für den Umfang danach in Klammern» ohne Hinweis, dass sie seit 1c nicht gelten |
+| SP2-S-19 | S | optional | Das Fachwort «didaktisch» steht 15× sichtbar, meist in Quellenzeilen («Eigene didaktische Darstellung»). Für Laien unklar ist es vor allem in Sätzen im Fliesstext. Vorschlag: «Die Einteilung in fünf Bereiche hat die Fachstelle selbst gewählt.» und «Die Beispiele hat die Fachstelle selbst aus den Ansätzen dieser Seite abgeleitet.» | `selbstfuersorge` › `warnsignale`: «Die fünf Bereiche sind eine eigene didaktische Ordnung.»; `kommunizieren` › `beispiele`: «Die Beispiele sind eigene didaktische Ableitungen …»; Zählung «didaktisch» 15× |
+| SP2-S-20 | S | optional | Die Gegenüberstellung soll eine Haltung zeigen, die man sich selbst sagen kann. Zwei der «tragfähigeren» Sätze klingen aber nach Fachtext (Leitlinie, Abschnitt 3). «Oft wahrscheinlich» ist zudem unklar. Vorschläge mit gleichem Sinn: «Es kann besser werden, und oft wird es das auch.» und «Wie schnell es geht, kann niemand genau steuern.» Ist eine Abschwächung oder Verschiebung zu befürchten, nur als Prüfbedarf behandeln. | `genesung` › `verlauf`: «Tragfähiger «Besserung ist möglich und oft wahrscheinlich.»», «Tragfähiger «Tempo und Zeitpunkt bleiben begrenzt steuerbar.»» |
+| SP2-S-21 | S | optional | «legitim» und «Option» im selben Abschnitt wiederholt, Fremdwörter. Vorschlag: «Die Frage ist berechtigt …», «… ist eigene Beratung oder Therapie ein guter Schritt. … Das ist keine Pflicht.» | `diagnose` › `ohne-diagnose`: «Die Frage ist legitim und kein Zeichen von Schwäche.», «… eine legitime und oft hilfreiche Option.», «Das ist keine Pflicht, aber eine reale Option.»; `diagnose` › `zweifel`: «Eine zweite fachliche Einschätzung ist legitim.» |
+
+#### Fragen an die Fachstelle
+
+| ID | Frage | Beleg |
+| --- | --- | --- |
+| SP2-F-S-1 | Welcher «Redaktionelle Status» soll nach der Veröffentlichung in der Fusszeile stehen? Mögliche Wortlaute: «fachlich freigegeben (12.10.2026)» oder «fachlich freigegeben, Stand Oktober 2026». Wer setzt ihn vor dem Export mit `--production`? (zu SP2-S-1) | `site.config.json` Z. 19; Prüfbericht Z. 1168 |
+| SP2-F-S-2 | **Prüfbedarf:** Dürfen gleichlautende Absicherungen innerhalb eines Abschnitts gebündelt werden, ohne eine Einschränkung zu streichen? Das empfiehlt die Leitlinie («Allgemeine redaktionelle Hinweise bündeln»). Beispiel `krise` › `belastung`: drei Absätze sagen, die Bereiche seien keine Bewertung von Diagnose, Sicherheit oder Dringlichkeit. Dazu kommt `kommunizieren`: viermal «garantiert keine …». Der Bauauftrag 2a, Z. 48, schützt die Absicherungen. Deshalb entscheidet hier die Fachstelle. | `krise` › `belastung` Abs. 3–5 (Zitate oben); `kommunizieren`: «garantiert/garantieren» 4× (Kopf, `zuhoeren`, `anerkennen`, `kippen`); `guidelines/00-sprache-und-ton.md` Abschnitt 5 |
+
+#### Zählung
+
+- **Befunde:** 1 wichtig (SP2-S-1), 20 optional (SP2-S-2 bis SP2-S-21)
+- **Fragen an die Fachstelle:** 2 (SP2-F-S-1, SP2-F-S-2, davon 1 Prüfbedarf)
+- **Ohne Befund geprüft:** «ß», Guillemets, Anrede «Sie», E-Mail, Striche, Abkürzungen, Prozent, Uhrzeiten, Etikettierung, Heilsversprechen, Schuldzuweisung, Längen und Kürzungsquoten. Die Zahlen der bauenden Sitzung stimmen auf das Wort; die Längenziele der Bauaufträge 2a bis 2c sind erreicht. Die Entscheide zu `fragen`, `ueber` und `impressum-datenschutz` sind umgesetzt.
+- **Nicht wiederholt, weil entschieden:** Z31-S-2 (Notruf-Satz vor dem Verweis im Text), Z31-S-3 (Länge `fragen`), Z31-S-4 («setzt … voraus»), Z31-S-5 (Kommas), Z31-S-9 («Landmarken») (`KORREKTUR-ETAPPE-3-1.md` Z. 19, 38, 178).
+- **Empfehlung zum Status S:** **offen**. Alle Punkte sind mit Beleg geprüft, aber SP2-S-1 ist wichtig und offen, und SP2-F-S-1 ist zu entscheiden. Die optionalen Befunde blockieren nicht. Die Fachstelle kann sie gesammelt annehmen oder ablehnen.
+
+### 5.4 Visualisierungs-Check (Prüfung 2)
+
+**Kriterien:** «Visuelle Wissensvermittlung» (`guidelines/00-visuelle-wissensvermittlung.md`) und «Visualisierung umsetzen» (`guidelines/07-visualisierung-umsetzen.md`, Abschnitt «Prüfung: Visualisierungs-Check»). Die Matrix folgt der Nummerierung der Checkliste dort, Punkte 1–17; die Punkte 18 und 19 (ergänzt 11.10.2026) stehen als Zusatzzeilen darunter, weil der Auftrag 200 % Schrift verlangt.
+
+**Vorgehen** (Stand `f1d6572`, Arbeitsbaum `wt`, nichts geändert):
+
+- Lektüre: Plan `site.config.json` › `pages[].visualPlan` (alle 109 Zeilen), `content/*.html`, `borderline.css`, `templates/website/longform/visual-patterns.css` und `erklaermuster.css`, `components/bundle.css` (Theme `:root[data-theme="kontrast"]`, Zeile 499).
+- Figuren als lesbarer Auszug: `scratchpad/teil-v-arbeit/figs.mjs` → `figs.txt`.
+- Ansehen: `python3 -m http.server 8731` im Stamm von `wt`, Chromium 1194 über Playwright (`/opt/node-tools/node_modules/playwright`). Skripte `scratchpad/teil-v-arbeit/shots.mjs` (100 %) und `shots200.mjs` (200 %). Je Figur 1280, 360 und 320 px; Standard und «Hoher Kontrast» (`document.documentElement.setAttribute('data-theme','kontrast')`); 200 % Schrift bei 1280 (beide Themes), 768 und 360 px. 200 % Schrift als Wurzelschrift 32 px (`html{font-size:200%}`, entspricht der Browser-Schriftgrösse; eine Kontrollmessung mit `Page.setFontSizes` über CDP ergab dieselben Messwerte). 90 Bildschirmfotos in `scratchpad/v/` (Name `<figur>_<breite>_<theme>_<schrift>.png`), Übersichtsbögen `sheet_<figur>_breit.png` / `_schmal.png`; mit dem Read-Werkzeug angesehen.
+- Messung je Figur: `scrollWidth`/`clientWidth` der `figure`; Überlappung von Textzeilen verschiedener Elemente (Rechtecke über `Range.getClientRects`, ohne `.puk-sr` und geschlossene Vertiefungen); Wörter, die über zwei Zeilen laufen; Kontrast jeder Textzeile gegen den ersten deckenden Hintergrund; berechnete Strich- und Füllfarben der SVG-Pfade. Rohdaten `scratchpad/v/messwerte.json`, `messwerte-200.json`.
+- Textzeilen und Abgleich `sectionId` ↔ `<section id>`: Node-Einzeiler (Befehl unter «Textzeilen»).
+- Freigabestand der Figuren: `figure`-Blöcke in `content/` der Freigabe-Commits (`67495c0`, `416f6d0`, `7925eaf`, `f78aae9`) gegen `f1d6572` per MD5 verglichen: alle zehn gleich.
+
+#### Messwerte (Figur `scrollWidth/clientWidth` in px)
+
+Ü = Anzahl überlappender Textzeilen (ohne die zwei in der breiten Ansicht visuell versteckten Schlüssel «Sichtbar»/«Darunter möglich», die das Skript als Überlappung mitzählt), T = Wörter über zwei Zeilen (enthält legitime Umbrüche am Bindestrich, z. B. «Eisberg-|Metapher», «Energie-|Konto»). Kein Dokument hat waagrechten Überlauf (`documentElement.scrollWidth` = Fensterbreite in allen 90 Messungen).
+
+| Figur | 1280 Std. 100 % | 1280 Kontr. 100 % | 360 Std. 100 % | 360 Kontr. 100 % | 320 Std. 100 % | 1280 Std. 200 % | 1280 Kontr. 200 % | 768 Std. 200 % | 360 Std. 200 % |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `v-vs-eisberg` | 1102/1102 | 1102/1102 | 318/318 | 318/318 | 278/278 | 1102/1102 **Ü2** | 1102/1102 **Ü2** | 705/705 | 318/318 T1 |
+| `v-vs-anspannung` | 1102/1102 | 1102/1102 | 318/318 | 318/318 | 278/278 | 1102/1102 | 1102/1102 | 705/705 | 318/318 T20 |
+| `v-vs-bewertungen` | 1104/1104 | 1104/1104 | 320/320 | 320/320 | 280/280 | 1104/1104 | 1104/1104 | 707/707 | 320/320 T2 |
+| `v-bz-schleife` | 1102/1102 | 1102/1102 | 318/318 | 318/318 | 278/278 | 1102/1102 | 1102/1102 | 705/705 | 318/318 T2 |
+| `v-bz-sichten` | 1102/1102 | 1102/1102 | 318/318 | 318/318 | 278/278 | 1102/1102 | 1102/1102 | 705/705 T2 | 318/318 T3 |
+| `v-gr-dear` | 1102/1102 | 1102/1102 | 318/318 | 318/318 | 278/278 | 1102/1102 | 1102/1102 | 705/705 | 318/318 T4 |
+| `v-ro-weg` | 1104/1104 | 1104/1104 | 320/320 | 320/320 | 280/280 | 1104/1104 | 1104/1104 | 707/707 | 320/320 |
+| `v-sf-abend` | 1104/1104 | 1104/1104 | 320/320 | 320/320 | 280/280 | 1104/1104 | 1104/1104 | 707/707 | 320/320 T1 |
+| `v-ko-tassen` | 1104/1104 | 1104/1104 | 320/320 | 320/320 | 280/280 | 1104/1104 | 1104/1104 | 707/707 | 320/320 |
+| `v-ge-trieb` | 1104/1104 | 1104/1104 | 320/320 | 320/320 | 280/280 | 1104/1104 | 1104/1104 | 707/707 | 320/320 |
+
+Mindestkontrast Text in der Figur (eigenes Skript, Text gegen ersten deckenden Hintergrund): Standard 5.52:1, «Hoher Kontrast» 7.65:1.
+
+**Lesart der Fotos** (angesehen, Auswahl der Belege):
+
+- **Eisberg, 1280 px, 200 % Schrift** (`v-vs-eisberg_1280_std_200.png`, ebenso `…_kontrast_200.png`): «Wut» und «Vorwürfe» sowie «Lautwerden» und «Rückzug» überdecken sich; «Lautwerden», «Rückzug» und «… oder ganz andere Erfahrungen» laufen über den Umriss des Eisbergs; «Wie ist es gerade für dich?» bricht in fünf Zeilen und läuft über Wasserlinie und Wellenstriche. Bei 768 px mit 200 % und bei 360/320 px gilt die Listenansicht ohne Überlappung.
+- **Bedeutungsschleife, 1280 und 768 px, 200 %** (`v-bz-schleife_1280_std_200.png`, `…_768_std_200.png`): Listenansicht, aber die Stationen sind ungleich breit und seitlich versetzt (Station 1 schmal und eingerückt, Station 3 rechts eingerückt); die kurzen Verbindungsstriche treffen die nächste Station nicht. Bei 360 und 320 px (100 %) saubere senkrechte Liste mit Rücksprunglinie.
+- **Zwei Sichten, 768 px, 200 %** (`v-bz-sichten_768_std_200.png`): beide Sichten weiter nebeneinander in Spalten von rund 270 px; «Unterstützun|g» und «richtigstellen.|»» brechen ohne Trennstrich.
+- **Anspannungskurve, 200 %** (`v-vs-anspannung_1280_std_200.png`): Bezeichnungen im Bild ausgeblendet, Liste darunter (so gewollt); die Ziffern 1–4 sind grösser als ihre Kreise und liegen auf der Kurvenlinie.
+- **360 px, 200 %**: Trennungen mitten im Wort ohne Trennstrich, z. B. DEAR-Kernaussage «vorzubereit|en.», «Entgegenkomme|n.»; Anspannung «Anspannu|ng», «verstehen|.»; Titel «Momentaufnahme|n», «Bedeutungsschl|eife»; Schleife «vorwurfsvoll|e» (`v-gr-dear_360_std_200.png`, `v-vs-anspannung_360_std_200.png`, `v-vs-bewertungen_360_std_200.png`, `v-bz-schleife_360_std_200.png`).
+- **«Hoher Kontrast»**: alle zehn Figuren wechseln Linien und Text auf die Kontrastwerte (SVG-Strich `rgb(60,100,255)` → `rgb(0,40,194)`, gemessen an jeder Figur mit SVG); kein fester Farbwert im SVG (`fill="#…"`, `stroke="#…"`, `style=` in den zehn Figuren: 0; `borderline.css` ohne Hexwert). Mindestkontrast Text 7,65 : 1 (Standard 5,52 : 1, beide über 4,5 : 1).
+- **Ein neuer Trieb**: Der Sims endet links rund und ist rechts vom Bildausschnitt gerade abgeschnitten, in allen Breiten sichtbar (`v-ge-trieb_1280_std_100.png`, `…_360_std_100.png`; Messung: Pfad `puk-vis-scene__soft` reicht bei 360 px bis x = 415, Figur endet bei 340).
+- Alle übrigen Ansichten: keine Überlappung, nichts abgeschnitten, Beschriftungen lesbar. Bei 360 px sind die Zeichnungen der Szenen klein (Album, Weg, Pflanze rund 200–280 px breit); die Sätze stehen darüber und tragen die Aussage.
+
+#### Matrix Prüfpunkt × Figur
+
+E = erfüllt · T = teilweise · N = nicht erfüllt · – = entfällt. Ziffern in Klammern verweisen auf die Belege unter der Matrix.
+
+| Nr. | Prüfpunkt (Leitlinie 07) | Eisberg `v-vs-eisberg` | Anspannung `v-vs-anspannung` | Momentaufn. `v-vs-bewertungen` | Schleife `v-bz-schleife` | Zwei Sichten `v-bz-sichten` | DEAR `v-gr-dear` | Weg `v-ro-weg` | Abend `v-sf-abend` | Tassen `v-ko-tassen` | Trieb `v-ge-trieb` |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | Plan liegt vor, Seite entspricht ihm | E (1) | E (1) | E (1) | E (1) | E (1) | E (1) | E (1) | E (1) | E (1) | E (1) |
+| 2 | Zeile je Abschnitt; Begründung passt | E (2) | E (2) | E (2) | E (2) | E (2) | E (2) | E (2) | E (2) | E (2) | E (2) |
+| 3 | Prüffrage konkret, Darstellung löst sie ein | E (3) | E (3) | E (3) | E (3) | E (3) | E (3) | E (3) | E (3) | E (3) | E (3) |
+| 4 | Kernaussage und Erklärtext; Hauptaussage nicht nur in Vertiefung | E (4) | E (4) | E (4) | E (4) | E (4) | E (4) | E (4) | E (4) | E (4) | E (4) |
+| 5 | B, C, G: Ansatzpunkt markiert oder Verzicht begründet; keine Verantwortung | – (5) | E (5) | – | E (5) | – | E (5) | – | – | – | – |
+| 6 | Derselbe Mechanismus verbunden, nicht getrennt | E | E (6) | E | E (6) | E (6) | E | E | E | E | E (6) |
+| 7 | Kartenraster-Check | E | E | E | E (7) | E (7) | E (7) | E | E | E | E |
+| 8 | Anordnung, Verbindungen, Formen tragen Bedeutung | E (8) | E (8) | E (8) | E (8) | E (8) | E (8) | E (8) | E (8) | E (8) | E (8) |
+| 9 | Über den Erkenntnisweg verteilt | E (9) | E (9) | E (9) | E (9) | E (9) | E (9) | E (9) | E (9) | E (9) | E (9) |
+| 10 | Vereinfacht, nicht verfälscht; Grenzen; Quelle/Kennzeichnung | E (10) | E (10) | E (10) | E (10) | E (10) | E (10) | E (10) | E (10) | E (10) | E (10) |
+| 11 | Grundaussage ohne Animation, Aufklappen, Skript | E (11) | E (11) | E (11) | E (11) | E (11) | E (11) | E (11) | E (11) | E (11) | E (11) |
+| 12 | 320 px lesbar; Textalternative vollständig | E (12) | E (12) | E (12) | E (12) | E (12) | E (12) | E (12) | E (12) | E (12) | E (12) |
+| 13 | Theme «Hoher Kontrast», keine festen Farben im SVG | E (13) | E (13) | E (13) | E (13) | E (13) | E (13) | E (13) | E (13) | E (13) | E (13) |
+| 14 | Fachlich freigegeben | E (14) | E (14) | E (14) | E (14) | E (14) | E (14) | E (14) | E (14) | E (14) | E (14) |
+| 15 | Bildsprache passt; `resonance` im Plan und eingelöst | E (15) | E (15) | E (15) | E (15) | E (15) | E (15) | E (15) | E (15) | E (15) | E (15) |
+| 16 | Metapher: ein Bild, eine Idee; Erleben statt Bildteile; keine Übersetzungsliste | E (16) | E (16) | E (16) | – | – | – | E (16) | E (16) | E (16) | E (16) |
+| 17 | Keine ungewollten Bedeutungen | E (17) | E (17) | E (17) | E | E | E | E (17) | E (17) | E (17) | E (17) |
+| 18 | 200 % Schrift: keine Überlappung, keine Trennung mitten im Wort | **N** (18) | T (18) | T (18) | T (18) | **N** (18) | T (18) | E (18) | E (18) | E (18) | E (18) |
+| 19 | Was der Kurztext über die Anordnung verspricht, gilt in allen Breiten | E (19) | E (19) | E (19) | E (19) | E (19) | E (19) | E (19) | E (19) | E (19) | E (19) |
+
+**Belege zur Matrix**
+
+1. **Plan ↔ Seite** (`statement` gegen `content/`): Eisberg – Wörter über und unter der Wasserlinie, «Wie ist es gerade für dich?» daneben, keine Verbindungslinien (`verstehen.html`, `.bl-eis__w--1`…`--10`, `.bl-eis__frage`); schmal Zeichnung ohne Wörter, darunter zwei Listen (Foto 360 px), wie `alternative`. Anspannung – Kurve ohne Achse und Zahlen, vier nummerierte Stellen mit den vier Sätzen, Stelle 2 nur mit Ansatzpunkt ohne «Was hilft» (`ol.bl-kurve__liste`, zweites `li`). Momentaufnahmen – Album, helles Foto mit Sonne, dunkles mit Wolke, Zeile «Sätze, die Angehörige hören können:» (`p.bl-scene__lead`). Schleife – fünf Stationen mit `bl-cycle__who` «Schwester» bei 1 und 5, «Betroffene Person» bei 2–4; Grenze im Kurztext «Das Modell ist eine mögliche Erklärung, keine sichere Aussage …». Zwei Sichten – vier Schritte mit den Überschriften aus dem Plan und den Bezeichnungen «Mögliche Sicht der betroffenen Person» / «… der Schwester». DEAR – vier Schritte, je Aufgabe und `.puk-say` «Beispiel». Weg – zwei Figuren nebeneinander von hinten, gewundener Weg (Foto, Zoom `chk_weg_zoom.png`: beide stehen auf dem Weg). Abend – Tasse, Telefon, Buch, Mond im Fenster, die zwei Sätze. Tassen – zwei gleiche Tassen auf einem Tisch, die zwei Sätze. Trieb – Topfpflanze, abgefallenes Blatt am Topf, zwei hellere Blätter oben (Zoom `chk_trieb_zoom.png`), «Weniger hilfreich»/«Tragfähiger». Das Planwort «Fenstersims» ist im Bild ein Brett ohne Fenster (kein Befund, auch in `p.puk-sr`).
+2. **Zeilen:** Jeder der zehn Figur-Abschnitte (`eisberg`, `anspannung`, `bewertungen`, `schleife`, `zwei-sichten`, `dear`, `anbieten`, `kraft`, `anerkennen`, `verlauf`) hat genau eine Planzeile. Abgleich aller Seiten unter «Textzeilen»: 0 Abschnitte ohne Zeile, 0 Zeilen ohne Abschnitt. Drei Begründungen von Textzeilen sind veraltet (SP2-V-05); sie betreffen keine Figur.
+3. **Prüffrage (`understood`) je Figur vorhanden und eingelöst:** z. B. Eisberg «Dass Verhalten nur die Oberfläche zeigt und das Darunter offenbleibt» – die Wasserlinie trennt zwei Wortgruppen ohne Zuordnung; Anspannung «dass dasselbe Gespräch je nach Stelle etwas anderes braucht» – Stelle und «Was hilft» je Stelle; Zwei Sichten «Schritt für Schritt nebeneinander (schmal direkt nacheinander)» – Fotos 1280 und 360 px; Abend «ein Teil der Aufmerksamkeit bleibt beim Telefon» – Satz über dem Telefon. Momentaufnahmen «Das Album zeigt auf einen Blick, dass es mehr als zwei Bilder gibt» – bei 1280 px erkennbar, bei 360 px ist das Album rund 200 px breit und die kleinen Fotos sind kaum zu erkennen (Hinweis, kein Befund: die Kernaussage trägt).
+4. **Drei Ebenen:** Alle zehn Figuren haben `p.puk-vis-kern` (ganzer Satz) und `p.puk-vis-short`; Vertiefung `details.puk-vis-more` bei neun (Zwei Sichten ohne Vertiefung; nicht verlangt). Die Hauptaussage für Angehörige steht nie nur in der Vertiefung: Eisberg Kern «… lässt sich erfragen, nicht sicher ablesen.»; Anspannung Kern «Sie dürfen eine Pause machen oder das Gespräch beenden.» und Ansatzpunkt sichtbar in der Liste; Schleife `p.puk-vis-ansatz` sichtbar unter der Figur; Weg Kern «Sie können begleiten. Genesung herstellen können Sie nicht.»; Abend, Tassen, Trieb: Kern über der Zeichnung. Die Vertiefungen enthalten «Grenzen des Bildes» bzw. «Herkunft des Modells».
+5. **Ansatzpunkte** (Tabelle «Ansatzpunkte» unten). Eisberg ist Muster K; die Checkliste verlangt den Ansatzpunkt nur für B, C, G (Frage SP2-F-V-03).
+6. **Verbunden:** Zwei Sichten nimmt das Beispiel der Schleife auf («Das Beispiel der Schleife aus zwei Sichten», Schritte «Zu Station 1 und 2», «Station 4», «Station 5», «Zurück zu Station 1»); `verstaerker` ordnet jeden Einfluss einer Station zu («Station 2 · …», «Station 3 · …», «Station 4 · …»). `kommunizieren` › `moment` verweist auf die Anspannungskurve statt eine zweite Kurve zu zeichnen («Wie Anspannung in einem Gespräch steigen und wieder sinken kann, erklärt die Seite «Verstehen» …»). Trieb: Garten-Text nur verlinkt (Plan `reason`). Offen ist, wie die drei «Stellen» in `was-hilft` zur Schleife stehen (SP2-F-V-02).
+7. **Karten:** Schleife – fünf Felder im Kreis mit Pfeilen (Muster B); Zwei Sichten – je Schritt zwei Felder unter einer gemeinsamen Überschrift (Muster E, die Paarung trägt den Vergleich); DEAR – Pfad mit Linie und Punkten, keine Kartenreihe.
+8. **Anordnung:** Eisberg über/unter der Wasserlinie; Anspannung Lage auf der Kurve, doppelter Ring bei 2; Momentaufnahmen helles und dunkles Foto ausserhalb des Albums; Schleife Kreis im Uhrzeigersinn mit Rücksprung; Zwei Sichten nebeneinander je Schritt; DEAR Reihenfolge 1–4 auf einer Linie; Weg nebeneinander, niemand führt; Abend Satz über Telefon bzw. Buch; Tassen zwei gleiche Tassen auf einem Tisch; Trieb Blatt unten, Trieb oben an derselben Pflanze.
+9. **Verteilung:** Jede Figur steht in ihrem Abschnitt direkt nach dem Text (`verstehen` Abschnitte 03, 04, 05; `beziehungen` 02 und 04; `grenzen` 05; `rolle` 01; `selbstfuersorge` 02; `kommunizieren` 02; `genesung` 03), keine Sammlung am Seitenende.
+10. **Grenzen und Kennzeichnung:** Eisberg «keine Aussage darüber, was in einer bestimmten Person sicher «darunterliegt»»; Anspannung «kein validiertes Messinstrument»; Momentaufnahmen «nicht den Charakter eines Menschen»; Schleife im Kurztext; Zwei Sichten über «Mögliche Sicht» und «erfundenem Beispiel»; DEAR «garantiert keine Kooperation»; Weg, Trieb «Das Bild ist eine Metapher»; Abend «Nicht alle Angehörigen erleben das so»; Tassen «Von aussen lässt sich nicht sicher erkennen …». Legende: neun Mal «Eigene didaktische Darstellung», DEAR «Quelle: Linehan (2015) …».
+11. **Ohne Aufklappen/Skript:** Kern, Kurztext, Beschriftungen und Listen sind statisches HTML; Vertiefungen sind native `details`; keine Animation (SVG ohne `animate`, kein Skript in `content/`). Grundzustand in allen Fotos (Vertiefungen zu) vollständig verständlich.
+12. **320 px und Textalternativen:** 320 px: Figur 278/278 bzw. 280/280, 0 Überlappungen, 0 Trennungen (Messtabelle). Alle `svg` mit `aria-hidden="true"` (9 von 9), jede Figur mit `aria-labelledby` und `aria-describedby` auf vorhandene Ids (je 1 Treffer) und `p.puk-sr`. Bei Schleife, Zwei Sichten und DEAR beschreibt `p.puk-sr` nur den Aufbau («Fünf Stationen im Kreis …», «Vier Schritte mit Aufgabe und Beispielsatz.»), weil alle Inhalte HTML-Text in der Figur sind – so verlangt es die Leitlinie («Sie sagt, wie die Grafik aufgebaut ist»).
+13. **Kontrast-Theme:** gemessen (siehe «Lesart der Fotos»); Ein neuer Trieb: die graue Linie unter «Weniger hilfreich» (`--ui-hairline`, im Standard etwa 1,2 : 1, Selbstprüfung «Freigabe 2c und 3-1», Aufgefallen Nr. 2) trägt keine Information allein; im Kontrast-Theme #8A8A8A.
+14. **Freigabe:** `PRUEFBERICHT.md` › «Fachliche Freigabe der Fachstelle»: P4-F-21 (sechs Abbildungen Etappe 1), P2a-F-6 (`v-ro-weg`, `v-sf-abend`), P2b-F-11 b (`v-ko-tassen`), Etappe 2c (`v-ge-trieb`); `approvalStatus` «freigegeben» bei allen zehn. `figure`-Blöcke seit den Freigabe-Commits unverändert (MD5-Vergleich).
+15. **Bildsprache und Wirkung:** `resonance` bei allen zehn vorhanden, je ein Satz (z. B. Weg «Ich darf begleiten, ohne den Weg für die andere Person gehen zu müssen.»). Eingelöst: Kernaussagen nehmen die Wirkung auf (Anspannung «Sie dürfen eine Pause machen»; Abend «innerlich auf Abruf»). Schleife und Zwei Sichten sind Strukturmuster (B, E) mit Kästen; das ist für Kreislauf und Vergleich zulässig, und die Felder enthalten Erleben als Sätze («Wenn es mir schlecht geht, bin ich allein.»). Keine Bauplan-Zeichen (Bemassung, Raster, Querschnitt, Nummern an Bildteilen) in den Szenen.
+16. **Ein Bild, eine Idee:** Beschriftungen sind Sätze aus Sicht von Menschen (Anspannung «Es wird eng.», Abend «Eigentlich wollte ich lesen.», Tassen, Weg, Momentaufnahmen) oder Wörter des Erlebens (Eisberg). Keine Namen von Bildteilen, keine Legende. Eisberg schmal: Zeichnung ohne Wörter, darunter «Sichtbar»/«Darunter möglich» als Listen – das ist die schmale Form von Muster K («zwei Schichten untereinander»), keine Übersetzungsliste für Bildteile. Trieb: «Weniger hilfreich»/«Tragfähiger» bezeichnen Haltungen wie die Gegenüberstellung darunter (Entscheid NK2c-2, kein Befund).
+17. **Nebenbedeutungen:** keine Gefahr- oder Defektmotive, keine Maschine, keine Skala (Anspannung ohne Achse und Zahlen; Grenze «keine Beurteilung des Zustands einer Person»). Eisberg ist im Profil als Metapher genannt («Eisberg | sichtbar und verborgen | K»). Trieb: Frage SP2-F-V-01 (Pflanze als Bild für die Genesung einer Person, Abgleich mit dem Bildsprache-Audit zu `rolle`).
+18. **200 % Schrift:** Eisberg N – Überlappungen bei 1280 px (SP2-V-01). Zwei Sichten N – «Unterstützun|g» bei 768 px (SP2-V-02). Schleife T – versetzte Liste bei 1280/768 px (SP2-V-02), Trennungen bei 360 px (SP2-V-03). Anspannung T – Ziffern grösser als Kreise (SP2-V-04), Trennungen bei 360 px (SP2-V-03). Momentaufnahmen T, DEAR T – Trennungen bei 360 px (SP2-V-03). Weg, Abend, Tassen, Trieb: bei 1280, 768 und 360 px keine Überlappung, keine Trennung im Wort (Abend nur «Energie-|Konto» am Bindestrich). Bei 200 % stehen in den Szenen die Sätze untereinander über der Zeichnung statt über ihrem Gegenstand (z. B. Abend 1280 px); das ist die vorgesehene schmale Form (`alternative`: «schmal untereinander»).
+19. **Kurztext und Anordnung:** Kein sichtbarer Kurztext (`p.puk-vis-short`) beschreibt eine Anordnung, die schmal fehlt (z. B. Anspannung «Anspannung kann im Gespräch ansteigen und später wieder sinken.» – Kurve bleibt bei 320 px sichtbar; Eisberg-Kurztext ohne Bildbezug). `p.puk-sr` beschreibt die breite Zeichnung («links …, rechts …»); sie ist für Screenreader und betrifft Punkt 19 nicht.
+
+#### Ansatzpunkte (Kreislauf, Prozess, Schichtenmodell, dazu die Kurve)
+
+| Figur | Muster | `entryPoint` im Plan | Auf der Seite sichtbar umgesetzt | Eigene Möglichkeit statt Verantwortung |
+| --- | --- | --- | --- | --- |
+| `v-bz-schleife` | B Kreislauf | «Station 5 «Wirkung» (Schwester): Statt sich weiter zu verteidigen, …» | ja: Station 5 `li.is-ansatz` (doppelte Kontur, Foto 1280 px), `span.puk-vis-cycle__key` «Ansatzpunkt», darunter `p.puk-vis-ansatz` «Ansatzpunkt für Angehörige · bei Station 5 …» | ja: «Sie müssen die Schleife nicht allein unterbrechen: Der Ansatzpunkt ist eine Möglichkeit, keine Pflicht.» |
+| `v-gr-dear` | C Prozesspfad | «entfällt: Der ganze Ablauf beschreibt das eigene Handeln der Angehörigen.» | entfällt, Begründung trifft zu (alle vier Schritte in der Sie-Form) | ja: «DEAR garantiert keine Kooperation» |
+| `v-vs-anspannung` | A (Kurve) | «Stelle 2 «Es wird eng»: nicht weiter argumentieren, …» | ja: Ziffer 2 mit doppeltem Ring in der Zeichnung und in der Liste (`.bl-kurve__ansatz`), `p.puk-vis-ansatz` «Ansatzpunkt für Angehörige» | ja: «Sie müssen die andere Person nicht beruhigen.» |
+| `v-vs-eisberg` | K Schichtenmodell | kein Feld `entryPoint` | Handlungsmöglichkeit im Bild als Frage «Wie ist es gerade für dich?» und im Kern «… lässt sich erfragen» | ja: Abschnittstext «Prüfen Sie vorher für sich: Ist Nachfragen gerade gewollt und sicher?» |
+
+#### `understood` und `resonance` je Figur
+
+Bei allen zehn Figuren vorhanden (Plan-Auszug oben im Vorgehen). Sinnvoll: Beide Felder beantworten je eine eigene Frage (Erkenntnis bzw. Wiedererkennen), in einem Satz, ohne Bildaufbau. Auffällig nur `v-vs-bewertungen`: das versprochene «auf einen Blick … mehr als zwei Bilder» trägt schmal wenig (Beleg 3).
+
+#### Freundin-Test
+
+| Figur | Ergebnis | Begründung |
+| --- | --- | --- |
+| Eisberg | ja | Bekanntes Bild; «Was man sieht – und was darunter liegen kann» erklärt einer Freundin, warum ein Wutausbruch nicht alles ist. Schmal trägt die Liste, die Zeichnung ist dann leer. |
+| Anspannungskurve | ja | Die vier Wir-Sätze («Es wird eng.», «Es ist gerade zu viel.») beschreiben ein Gespräch, wie Angehörige es erleben; «Hier hätte ich eine Pause machen dürfen» lässt sich zeigen. |
+| Momentaufnahmen | bedingt | Breit gut lesbar (helles und dunkles Foto, zwei bekannte Sätze); das Album selbst ist klein und seine Fotos leer, schmal kaum erkennbar. Die Sätze tragen die Wirkung. |
+| Bedeutungsschleife | bedingt | Strukturdiagramm, kein Bild zum Zeigen; als Erklärung «so drehen wir uns im Kreis» aber brauchbar, weil jede Station ein Satz ist. |
+| Zwei Sichten | ja (als Text) | Zitate beider Seiten nebeneinander; eine Angehörige erkennt «Ich muss diese falsche Darstellung richtigstellen.» wieder. |
+| DEAR | entfällt | Handlungsanleitung, kein Erleben. |
+| Ein Stück Weg | ja | Zwei Menschen nebeneinander auf einem Weg, dazu ein Satz; ohne Erklärung verständlich. |
+| Ein freier Abend | ja | Alltagsszene mit zwei Gedanken; trägt die Aussage am klarsten. |
+| Zwei Tassen | ja | Zwei gleiche Tassen zeigen Gleichwertigkeit; die Aussage tragen die zwei Sätze, das Bild gibt den ruhigen Rahmen. |
+| Ein neuer Trieb | bedingt | Abgefallenes Blatt und heller Trieb sind breit erkennbar; die Etiketten «Weniger hilfreich»/«Tragfähiger» machen das Bild eher zur Lehrtafel (entschieden NK2c-2, kein Befund); schmal sind Blatt und Trieb klein. Siehe auch SP2-F-V-01 und SP2-F-V-04. |
+
+#### Textzeilen des Visualisierungsplans
+
+**Zählung nachgerechnet:** 109 Planzeilen, davon 10 mit Darstellung und **99 mit Format `text`** (Auftrag: 99 – stimmt). Je Seite: index 3, verstehen 5, beziehungen 5, rolle 7, grenzen 10, diagnose 6, behandlung 7, kommunizieren 7, krise 8, selbstfuersorge 7, genesung 5, unterstuetzung 5, fragen 8, quellen 9, ueber 4, impressum-datenschutz 2, 404 1. `approvalStatus` der Textzeilen: 98 «ausstehend», 1 «entfällt» (404); das Produktionsgate verlangt «freigegeben» nur für Darstellungen (Leitlinie 07, «Platzhalter und Freigabestatus»), die Seiten sind als Ganzes freigegeben.
+
+**Abgleich `sectionId` ↔ Abschnitte:** Befehl `node -e` über `site.config.json` und `content/<id>.html` (`<section … id="…">`): auf allen 17 Seiten 0 Abschnitte ohne Planzeile, 0 Planzeilen ohne Abschnitt, keine doppelte `sectionId`. Einzige Zeile ohne `sectionId`: `v-404-text` (Seite `404` hat keinen Abschnitt mit `id`; passt).
+
+**Ergebnis:** Bei allen 99 Zeilen ist Text die richtige Form; keine Zeile verlangt eine Darstellung, die fehlt. Die Begründungen passen zum Inhalt (Aufzählungen ohne Beziehung, Handlungsanleitungen für akute Lagen ohne Grafik, Literaturlisten, Entscheide der Fachstelle zu `diagnose` › `abklaerung`, `behandlung` › `rollen`, `krise` › `belastung`, `grenzen` › `bruecke`). Geprüft und als Text bestätigt sind auch die Grenzfälle mit möglicher Struktur: `grenzen` › `reihenfolge` (2×2-Raster: die Quelle nennt es «keine fachliche Einstufung», die Seite sagt «Die Reihenfolge ist eine Orientierung, keine fachliche Einstufung.»), `grenzen` › `kontakt` (keine Achse: «eine vereinbarte Pause kann weniger Kontakt bedeuten als getrenntes Wohnen»), `kommunizieren` › `moment` (Verweis auf die Kurve statt zweiter Kurve), `selbstfuersorge` › `zu-viel` (STOPP als Liste, Bildsprache-Audit). Drei Begründungen sind veraltet (SP2-V-05), eine Zeile wirft eine Frage auf (SP2-F-V-02).
+
+
+**Tabelle der 99 Textzeilen**
+
+| Nr. | Seite | sectionId | Form | Ergebnis | Beleg (Wörter im Abschnitt · Struktur · Begründung im Plan, gekürzt) |
+| --- | --- | --- | --- | --- | --- |
+| 1 | index | `einstiege` | text | Text ist richtige Form | 189 W. · ol · «Text ist klarer: gleichwertige Einstiege ohne feste Reihenfolge («die Reihenfolge ist ein Angebot»), formuliert als Anliegen der Lesenden (K …» |
+| 2 | index | `beratung` | text | Text ist richtige Form; Begründung veraltet (SP2-V-05) | 112 W. · Absätze · «Text ist klarer: Angebot und Kontaktweg ohne Beziehung. Wortlaut der Fachstelle vom 09.10.2026 (Korrektur W1-4); steht nur hier, andere Seit …» |
+| 3 | index | `haltung` | text | Text ist richtige Form; Begründung veraltet (SP2-V-05) | 47 W. · Absätze · «Text ist klarer: kurze Haltungsaussage. Das Spannungsfeld Fürsorge – eigene Gesundheit ist für «Auf sich achten» als Muster H vorgesehen (Et …» |
+| 4 | verstehen | `erleben` | text | Text ist richtige Form | 108 W. · Absätze · «Text ist klarer: Einstieg aus der Sicht der Angehörigen, Aufzählung von Erfahrungen ohne darzustellende Beziehung.» |
+| 5 | verstehen | `borderline` | text | Text ist richtige Form | 143 W. · Absätze · «Text ist klarer: Begriffsklärung mit gezielten Einschränkungen. Kriterien und Begleiterkrankungen stehen auf «Diagnose und Begleiterkrankung …» |
+| 6 | verstehen | `mythen` | text | Text ist richtige Form | 436 W. · dl · «Text ist klarer: Annahme und Einordnung sind Paare ohne Bildform; als Liste im Abschnittstext statt als Abbildung (Bildsprache-Audit BS-3).» |
+| 7 | verstehen | `einordnung` | text | Text ist richtige Form | 108 W. · Absätze · «Text ist klarer: Abschluss, was Verstehen leistet und was nicht, mit dem Merksatz für Angehörige als hervorgehobenem Kasten (puk-longform__r …» |
+| 8 | verstehen | `quellen` | text | Text ist richtige Form | 132 W. · ul/Akkordeon · «Text ist klarer: Quellenliste des Profils (ul.puk-longform__sources) als letzter Abschnitt, jede Quelle einmal mit «Verwendet in», in einem  …» |
+| 9 | beziehungen | `verbindung` | text | Text ist richtige Form | 82 W. · ul · «Text ist klarer: Aufzählung eigenständiger Ressourcen ohne Beziehung untereinander. Die Personenillustration des Bestands entfällt (Entschei …» |
+| 10 | beziehungen | `verstaerker` | text | Text ist richtige Form | 484 W. · dl · «Text ist klarer: höchstens fünf Einflüsse, je einer Station derselben Schleife (Abbildung 1) zugeordnet; eine zweite Grafik würde denselben  …» |
+| 11 | beziehungen | `was-hilft` | text | Text ist richtige Form; Bezug zur Schleife unklar (SP2-F-V-02) | 228 W. · ul/dl · «Text ist klarer: drei Stellen, an denen sich die Schleife unterbrechen lässt, als kurze Liste, dann unabhängige Möglichkeiten mit Formulieru …» |
+| 12 | beziehungen | `verantwortung` | text | Text ist richtige Form | 209 W. · Absätze · «Text ist klarer: Leitfragen und Schutzhinweise; bei möglicher Gefahr braucht es kurze, direkte Sätze ohne Grafik.» |
+| 13 | beziehungen | `quellen` | text | Text ist richtige Form | 123 W. · ul/Akkordeon · «Text ist klarer: Quellenliste des Profils (ul.puk-longform__sources) als letzter Abschnitt, jede Quelle einmal mit «Verwendet in», in einem  …» |
+| 14 | rolle | `schuld` | text | Text ist richtige Form | 422 W. · dl · «Text ist klarer: Die fünf Sätze sind Zitate mit je einer Einordnung; eine Figur würde sie nur umrahmen. Warum Angehörige nicht schuld sind,  …» |
+| 15 | rolle | `alltag` | text | Text ist richtige Form | 669 W. · ul/dl/Akkordeon · «Text ist klarer: unabhängige Möglichkeiten mit Beispielsätzen, ohne Beziehung untereinander. Je Seite genau eine Abbildung (Bauauftrag 2a).  …» |
+| 16 | rolle | `nach-konflikten` | text | Text ist richtige Form | 199 W. · ul · «Text ist klarer: zwei kurze Listen und ein Beispielsatz; ein Ablauf in Schritten würde eine feste Reihenfolge nahelegen.» |
+| 17 | rolle | `mehrere` | text | Text ist richtige Form | 162 W. · ul · «Text ist klarer: was belastet als Liste, was hilft im Handlungssatz (K-R-a7); eine Beziehungskarte bliebe ohne konkrete Beteiligte eine leer …» |
+| 18 | rolle | `kinder` | text | Text ist richtige Form | 289 W. · dl · «Text ist klarer: Beispielsätze für Kinder und konkrete Fragen zur Betreuung. Was Kinder nicht übernehmen müssen und was bei akuter Gefahr gi …» |
+| 19 | rolle | `an-grenzen` | text | Text ist richtige Form | 627 W. · ul/dl/Akkordeon · «Text ist klarer: Beobachtungen und Situationen sind Aufzählungen. Schutz und Gefahr stehen im Text mit Verweis im Text, nicht in einer Figur …» |
+| 20 | rolle | `quellen` | text | Text ist richtige Form | 182 W. · ul/Akkordeon · «Text ist klarer: Quellenliste des Profils (ul.puk-longform__sources) als letzter Abschnitt, jede Quelle einmal mit «Verwendet in», in einem  …» |
+| 21 | grenzen | `erkennen` | text | Text ist richtige Form | 150 W. · ul · «Text ist klarer: Signale und Fragen sind Aufzählungen ohne Beziehung; eine Skala würde eine Selbstdiagnose nahelegen (Muster J: nie als Selb …» |
+| 22 | grenzen | `bruecke` | text | Text ist richtige Form | 158 W. · Absätze · «Text ist klarer: Die Fachstelle hat die Zeichnung als zu technisch und die Erklärungen als zu abstrakt beurteilt (Durchsicht 10.10.2026). Da …» |
+| 23 | grenzen | `arten` | text | Text ist richtige Form | 153 W. · dl · «Text ist klarer: vier gleichrangige Bereiche ohne Beziehung untereinander; eine Figur würde nur eine Liste umrahmen (Korrektur V-5, 09.10.20 …» |
+| 24 | grenzen | `reihenfolge` | text | Text ist richtige Form | 92 W. · ol · «Im Bau geprüft (UMBAUPLAN, Abschnitt 3: Raster 2×2 oder Text): Text ist klarer. Die Liste nennt die vier Felder des Rasters aus der Quelle a …» |
+| 25 | grenzen | `saetze` | text | Text ist richtige Form; Begründung veraltet (SP2-V-05) | 169 W. · say · «Text ist klarer: drei Situationen mit Gegenüberstellung «eher problematisch / eher hilfreich» als Komponente .puk-say (Leitlinie 06, Formuli …» |
+| 26 | grenzen | `konsequenz` | text | Text ist richtige Form | 175 W. · Absätze · «Text ist klarer: Hinweise zur Umsetzung ohne darzustellende Beziehung.» |
+| 27 | grenzen | `kontakt` | text | Text ist richtige Form | 99 W. · ul · «Im Bau geprüft (UMBAUPLAN, Abschnitt 3: Kontinuum J, Steigerung?): Text ist klarer. Die vier Möglichkeiten liegen nicht auf einer Achse – ei …» |
+| 28 | grenzen | `rollen` | text | Text ist richtige Form | 73 W. · dl · «Text ist klarer: drei Rollen ohne Beziehung untereinander (Korrektur W2-2, 09.10.2026), seit Korrektur 1f als Begriffsliste (dl) mit einem S …» |
+| 29 | grenzen | `gewalt` | text | Text ist richtige Form | 269 W. · ol · «Text ist klarer: In einer möglichen Gefahrensituation braucht es kurze, direkte Hinweise ohne Grafik.» |
+| 30 | grenzen | `quellen` | text | Text ist richtige Form | 146 W. · ul/Akkordeon · «Text ist klarer: Quellenliste des Profils (ul.puk-longform__sources) als letzter Abschnitt, jede Quelle einmal mit «Verwendet in», in einem  …» |
+| 31 | diagnose | `abklaerung` | text | Text ist richtige Form | 608 W. · ol/dl/Akkordeon · «Entscheid der Fachstelle 11.10.2026: Textdarstellung als nummerierte Schritte statt Abbildung (UMBAUPLAN: `process`). Fünf Schritte aus der  …» |
+| 32 | diagnose | `bedeutung` | text | Text ist richtige Form | 133 W. · Absätze · «Text ist klarer: zwei Absätze und «Was eine Diagnose nicht leistet»; was die Diagnose beschreiben kann und was die Forschung zu Genesung zei …» |
+| 33 | diagnose | `zweifel` | text | Text ist richtige Form | 176 W. · ul · «Text ist klarer: «Was nicht hilft» und «Was möglich ist» als zwei Listen nebeneinander, schmal untereinander (Bauauftrag 2c-2, Abschnitt 3); …» |
+| 34 | diagnose | `ohne-diagnose` | text | Text ist richtige Form | 286 W. · Absätze · «Text ist klarer: vier kurze Zwischentitel (Hausarztpraxis, nicht warten, spezialisierte Stellen, «Bin ich auch betroffen?») mit Verweissätze …» |
+| 35 | diagnose | `begleiterkrankungen` | text | Text ist richtige Form | 704 W. · ul/dl/Akkordeon · «Text ist klarer (UMBAUPLAN, Etappe 2: `text`): Die alte Grafik war eine Liste von sechs gleich grossen, unverbundenen Diagnosen und zeigte k …» |
+| 36 | diagnose | `quellen` | text | Text ist richtige Form | 189 W. · ul/Akkordeon · «Text ist klarer: Quellenliste des Profils (ul.puk-longform__sources) als letzter Abschnitt, jede Quelle einmal mit «Verwendet in», in einem  …» |
+| 37 | behandlung | `rollen` | text | Text ist richtige Form | 273 W. · ul · «Entscheid der Fachstelle 11.10.2026: drei Rollen nebeneinander als Text statt Abbildung (UMBAUPLAN: `relationship-map`). Grundlage ist die a …» |
+| 38 | behandlung | `kontakt` | text | Text ist richtige Form | 870 W. · ul/dl/say/Akkordeon · «Text ist klarer: die drei Informationswege als Begriffsliste, danach die Handlungsanleitung bei akuter Gefahr mit dem Verweis im Text und di …» |
+| 39 | behandlung | `therapieformen` | text | Text ist richtige Form | 447 W. · dl/Akkordeon · «Text ist klarer (Entscheid von Claude, Bauauftrag 2c-2, Abschnitt 1): Die Therapieformen stehen als Begriffsliste mit je einem Satz. Ein Ver …» |
+| 40 | behandlung | `rueckschlaege` | text | Text ist richtige Form | 233 W. · ul/say · «Text ist klarer: kurze Absätze, ein Beispielsatz (.puk-say), «Was Sie tun können» als Liste und ein Verweissatz auf `genesung` › `verlauf` ( …» |
+| 41 | behandlung | `angebote` | text | Text ist richtige Form | 242 W. · Absätze · «Text ist klarer: Angebotsliste mit Name, einem Satz, «Für: …» und Link auf die Website, ohne Telefonnummern und ohne E-Mail-Adressen (Entsch …» |
+| 42 | behandlung | `wartezeit` | text | Text ist richtige Form | 315 W. · ol · «Text ist klarer: vier nummerierte Schritte des Bestands; bei Schritt 4 die Handlungsanleitung bei akuter Gefahr mit dem Verweis im Text. «In …» |
+| 43 | behandlung | `quellen` | text | Text ist richtige Form | 230 W. · ul/Akkordeon · «Text ist klarer: Quellenliste des Profils (ul.puk-longform__sources) als letzter Abschnitt, jede Quelle einmal mit «Verwendet in», in einem  …» |
+| 44 | kommunizieren | `zuhoeren` | text | Text ist richtige Form | 280 W. · ul/Akkordeon · «Text ist klarer: Haltung und Erlaubnis als kurze Sätze und eine Liste mit drei Punkten. Die Bildunterschrift des Bestands steht als Satz im  …» |
+| 45 | kommunizieren | `moment` | text | Text ist richtige Form | 393 W. · ul/dl · «Text ist klarer (Bauauftrag 2b, Abschnitt 2e): «Pause statt Streit» mit den drei Sätzen der Anspannungskurve («Wir können sprechen.», «Es wi …» |
+| 46 | kommunizieren | `kippen` | text | Text ist richtige Form | 527 W. · ol/dl/Akkordeon · «Text ist klarer (Bauauftrag 2b, Abschnitt 2e): die drei Schritte als nummerierte Liste; die Grenze in drei Teilen als Begriffsliste; der Bei …» |
+| 47 | kommunizieren | `worte` | text | Text ist richtige Form | 265 W. · dl · «Text ist klarer: vier Aussagen mit möglichen Antworten als Begriffsliste. Das Sicherheitssignal (Suizid) steht sichtbar unter einer eigenen  …» |
+| 48 | kommunizieren | `beispiele` | text | Text ist richtige Form | 549 W. · dl/say · «Formulierungsbeispiele mit der Komponente `.puk-say` (Profil). Drei Beispiele ersetzen die interaktiven Szenarien von `/uebungen` (Entscheid …» |
+| 49 | kommunizieren | `rollen` | text | Text ist richtige Form | 155 W. · Akkordeon · «Text ist klarer: drei Rollen als Vertiefung (Akkordeon), wie im Bestand.» |
+| 50 | kommunizieren | `quellen` | text | Text ist richtige Form | 79 W. · ul/Akkordeon · «Text ist klarer: Quellenliste des Profils (ul.puk-longform__sources) als letzter Abschnitt, jede Quelle einmal mit «Verwendet in», in einem  …» |
+| 51 | krise | `belastung` | text | Text ist richtige Form | 284 W. · dl · «Entscheid der Fachstelle 10.10.2026 (Bauauftrag 2b): kein Bild. Die drei Bereiche stehen als kurze Liste (Begriffsliste) je mit «Eher hilfre …» |
+| 52 | krise | `waehrend` | text | Text ist richtige Form | 203 W. · dl · «Text ist klarer: Handlungsanleitung «Sicherheit prüfen» im Wortlaut des Bestands, der Verweis im Text folgt direkt danach. Drei Gesprächsvor …» |
+| 53 | krise | `sagen` | text | Text ist richtige Form | 233 W. · dl · «Text ist klarer: Handlungsanleitung für Bedrohung am Anfang, der Verweis im Text folgt direkt danach (Korrektur 2b-K, P2b-F-1). Beispielsätz …» |
+| 54 | krise | `suizid` | text | Text ist richtige Form | 167 W. · Absätze · «Text ist klarer: Handlungsanleitung mit Verweis im Text (Profilentscheid 09.10.2026), Wortlaut wie auf `verstehen`, wo dieselbe Aussage steh …» |
+| 55 | krise | `vermeiden` | text | Text ist richtige Form | 68 W. · ul · «Text ist klarer: kurze Liste wie im Bestand.» |
+| 56 | krise | `danach` | text | Text ist richtige Form | 752 W. · ul/dl/Akkordeon · «Text ist klarer: Sicherheitshinweis als Handlungsanleitung mit Verweis im Text vor den Vertiefungen (Korrektur 2b-K, P2b-F-1), «Für die betr …» |
+| 57 | krise | `bleibt` | text | Text ist richtige Form | 200 W. · ul · «Text ist klarer: vier Hinweise als Liste, Handlungsanleitung mit Verweis im Text. Krisenbezogene Sätze zu Kindern stehen sichtbar im Wortlau …» |
+| 58 | krise | `quellen` | text | Text ist richtige Form | 114 W. · ul/Akkordeon · «Text ist klarer: Quellenliste des Profils (ul.puk-longform__sources) als letzter Abschnitt, jede Quelle einmal mit «Verwendet in», in einem  …» |
+| 59 | selbstfuersorge | `eigenes-leben` | text | Text ist richtige Form | 321 W. · ul/Akkordeon · «Text ist klarer: Die Erlaubnis-Sätze sind eine Liste zum Auswählen; eine Karte als Bild würde nur die Liste umrahmen. Die Bildunterschrift d …» |
+| 60 | selbstfuersorge | `warnsignale` | text | Text ist richtige Form | 250 W. · dl · «Text ist klarer: fünf Bereiche als Liste ohne Stufen; keine Skala, keine Ampel und kein Selbsttest (Muster J: nie als Selbstdiagnose-Skala).» |
+| 61 | selbstfuersorge | `zu-viel` | text | Text ist richtige Form | 429 W. · ol · «Text ist klarer: STOPP als nummerierte Liste im Wortlaut der Schritte, ohne Prozesspfad (Bildsprache-Audit: wieder ein Stepper wie bei DEAR) …» |
+| 62 | selbstfuersorge | `unterstuetzung` | text | Text ist richtige Form | 378 W. · ul/dl · «Text ist klarer: vier unabhängige Möglichkeiten mit Beispielsatz. Die Sauerstoffmaske steht nur als Satz, nicht als Bild (Bildsprache-Audit: …» |
+| 63 | selbstfuersorge | `akzeptanz` | text | Text ist richtige Form | 329 W. · ol/ul/Akkordeon · «Text ist klarer: zwei kurze Listen und eine Übung in vier Schritten als Vertiefung (Akkordeon, K-S-b4); eine Figur würde die Listen nur umra …» |
+| 64 | selbstfuersorge | `beratung` | text | Text ist richtige Form | 174 W. · dl · «Text ist klarer: kurze Hinweise und Verweis auf `index` (`beratung`); weitere Angebote stehen auf `unterstuetzung`, verlinkt beim Begriff «A …» |
+| 65 | selbstfuersorge | `quellen` | text | Text ist richtige Form | 196 W. · ul/Akkordeon · «Text ist klarer: Quellenliste des Profils (ul.puk-longform__sources) als letzter Abschnitt, jede Quelle einmal mit «Verwendet in», in einem  …» |
+| 66 | genesung | `forschung` | text | Text ist richtige Form | 198 W. · ul/dl · «Text ist klarer (Entscheid von Claude, Bauauftrag 2c-1, Abschnitt 1): Datenbotschaft des Profils ohne Diagramm. Kernaussage zuerst, danach d …» |
+| 67 | genesung | `begriffe` | text | Text ist richtige Form | 239 W. · ul/dl/Akkordeon · «Text ist klarer: drei Begriffe als Begriffsliste nebeneinander, je mit Erklärung (Bauauftrag 2c-1, Abschnitt 3). Ein Vergleich (Muster E) wü …» |
+| 68 | genesung | `einfluesse` | text | Text ist richtige Form | 272 W. · dl · «Text ist klarer: fünf Bereiche als Begriffsliste, ausdrücklich ohne Reihenfolge und ohne Formel (Bauauftrag 2c-1, Abschnitt 3). Eine Figur m …» |
+| 69 | genesung | `freiwillig` | text | Text ist richtige Form | 257 W. · Akkordeon · «Text ist klarer: kurz, mit Verweis auf `rolle` › `anbieten` (Verlinken statt wiederholen); die Selbstfrage, der Satz zur eigenen Gesundheit  …» |
+| 70 | genesung | `quellen` | text | Text ist richtige Form | 170 W. · ul/Akkordeon · «Text ist klarer: Quellenliste des Profils (ul.puk-longform__sources) als letzter Abschnitt, jede Quelle einmal mit «Verwendet in», in einem  …» |
+| 71 | unterstuetzung | `beratung` | text | Text ist richtige Form | 236 W. · ul/dl · «Text ist klarer: Angebote mit Name, kurzer Beschreibung und Link auf die offizielle Website (Muster «Kontakt und Übergabe» ohne Telefonnumme …» |
+| 72 | unterstuetzung | `austausch` | text | Text ist richtige Form | 157 W. · Absätze · «Text ist klarer: zwei Organisationen und die Gruppe für Eltern von Jugendlichen an der PUK, je mit kurzer Beschreibung und Link auf die Webs …» |
+| 73 | unterstuetzung | `selbsthilfe` | text | Text ist richtige Form | 40 W. · Absätze · «Text ist klarer: eine Vermittlungsstelle mit kurzer Beschreibung und Link auf die Website.» |
+| 74 | unterstuetzung | `kantone` | text | Text ist richtige Form | 50 W. · Absätze · «Text ist klarer: ein kurzer Hinweis aus dem Bestand (Regional-Hinweis).» |
+| 75 | unterstuetzung | `buecher` | text | Text ist richtige Form | 908 W. · ul/Akkordeon · «Text ist klarer: Liste nach Zielgruppe, je Titel Autorin oder Autor, Verlag und Jahr, ein Satz und «Für: …» (Entscheid der Fachstelle 11.10. …» |
+| 76 | fragen | `diagnose` | text | Text ist richtige Form | 361 W. · Absätze · «Text ist klarer: Frage und kurze Antwort mit Verweis auf die ausführliche Stelle. Keine Beziehung und kein Ablauf, den eine Darstellung erkl …» |
+| 77 | fragen | `verlauf` | text | Text ist richtige Form | 475 W. · Absätze · «Text ist klarer: kurze Antworten mit Verweis. Die Darstellungen zum Verlauf stehen auf `genesung` (Abbildung «Ein neuer Trieb»), hier nicht  …» |
+| 78 | fragen | `gespraeche` | text | Text ist richtige Form | 490 W. · Absätze · «Text ist klarer: kurze Antworten mit Beispielsätzen und Verweis. Die Darstellungen zu Gesprächen stehen auf `kommunizieren` und `verstehen`.» |
+| 79 | fragen | `behandlung` | text | Text ist richtige Form | 557 W. · Absätze · «Text ist klarer: kurze Antworten mit Verweis. Die Rollen in der Behandlung stehen als Textdarstellung auf `behandlung`.» |
+| 80 | fragen | `schutz` | text | Text ist richtige Form | 458 W. · ul/Akkordeon · «Text ist klarer: Handlungsanleitungen für akute Lagen stehen sichtbar im Fliesstext, nicht in einer Darstellung oder Vertiefung.» |
+| 81 | fragen | `eigenes-leben` | text | Text ist richtige Form | 450 W. · ul · «Text ist klarer: kurze Antworten mit Beispielsätzen und Verweis.» |
+| 82 | fragen | `weitere` | text | Text ist richtige Form | 54 W. · Absätze · «Text ist klarer: zwei Verweise.» |
+| 83 | fragen | `quellen` | text | Text ist richtige Form | 261 W. · ul/Akkordeon · «Text ist klarer: Liste der Quellen mit Abschnitten (Akkordeon des Profils wie auf den übrigen Seiten).» |
+| 84 | quellen | `begriffe` | text | Text ist richtige Form | 1345 W. · ol/dl/Akkordeon · «Text ist klarer: Begriffsliste mit kurzer Erklärung, Beispiel und Verweis. Die neun Kriterien des DSM-5-TR in einer Vertiefung (Akkordeon),  …» |
+| 85 | quellen | `einordnung` | text | Text ist richtige Form | 132 W. · Absätze · «Text ist klarer: vier kurze Absätze.» |
+| 86 | quellen | `forschung` | text | Text ist richtige Form | 1582 W. · ul · «Text ist klarer: Literaturliste mit Angabe, kurzer Einordnung und den Seiten, auf denen die Quelle verwendet wird.» |
+| 87 | quellen | `therapie` | text | Text ist richtige Form | 375 W. · ul · «Text ist klarer: Literaturliste mit Angabe, kurzer Einordnung und den Seiten, auf denen die Quelle verwendet wird.» |
+| 88 | quellen | `angehoerige` | text | Text ist richtige Form | 464 W. · ul · «Text ist klarer: Literaturliste mit Angabe, kurzer Einordnung und den Seiten, auf denen die Quelle verwendet wird.» |
+| 89 | quellen | `diagnostik` | text | Text ist richtige Form | 355 W. · ul · «Text ist klarer: Literaturliste mit Angabe, kurzer Einordnung und den Seiten, auf denen die Quelle verwendet wird.» |
+| 90 | quellen | `versorgung` | text | Text ist richtige Form | 216 W. · ul · «Text ist klarer: Literaturliste mit Angabe, kurzer Einordnung und den Seiten, auf denen die Quelle verwendet wird.» |
+| 91 | quellen | `leitlinien` | text | Text ist richtige Form | 971 W. · ul · «Text ist klarer: Literaturliste mit Angabe, kurzer Einordnung und den Seiten, auf denen die Quelle verwendet wird.» |
+| 92 | quellen | `schweiz` | text | Text ist richtige Form | 165 W. · ul · «Text ist klarer: Literaturliste mit Angabe, kurzer Einordnung und den Seiten, auf denen die Quelle verwendet wird.» |
+| 93 | ueber | `warum` | text | Text ist richtige Form | 147 W. · Absätze · «Text ist klarer: drei kurze Absätze.» |
+| 94 | ueber | `grundsaetze` | text | Text ist richtige Form | 177 W. · dl · «Text ist klarer: vier Grundsätze als Begriffsliste, gleichwertig und ohne Beziehung untereinander.» |
+| 95 | ueber | `barrierefreiheit` | text | Text ist richtige Form | 133 W. · ul · «Text ist klarer: Ziel, Liste und bekannte Einschränkungen.» |
+| 96 | ueber | `rueckmeldung` | text | Text ist richtige Form | 107 W. · ul · «Text ist klarer: Kontakt und kurze Hinweise.» |
+| 97 | impressum-datenschutz | `impressum` | text | Text ist richtige Form | 162 W. · dl · «Text ist klarer: wenige Angaben, keine Beziehung, die eine Darstellung erklären müsste (wie Vorlage des Starters).» |
+| 98 | impressum-datenschutz | `datenschutz` | text | Text ist richtige Form | 326 W. · dl · «Text ist klarer: einzelne Angaben zu Daten, kein Ablauf und keine Beziehung (wie Vorlage des Starters).» |
+| 99 | 404 | (leer) | text | Text ist richtige Form; Zeile ohne sectionId (Seite hat keinen Abschnitt mit id) | 0 W. · Absätze · «Text ist klarer: ein Hinweis und ein Link, nichts zu erklären.» |
+
+#### Befunde
+
+| ID | Stufe | Gewicht | Befund | Beleg |
+| --- | --- | --- | --- | --- |
+| SP2-V-01 | Visualisierungs-Check (Punkt 18, 12) | wichtig | **Eisberg bei 200 % Schrift und breitem Fenster: Beschriftungen überlappen.** Bei 1280 px (Standard und «Hoher Kontrast») überdecken sich «Wut»/«Vorwürfe» und «Lautwerden»/«Rückzug»; Wörter laufen über den Umriss des Eisbergs, die Frage über Wasserlinie und Wellenstriche. Ursache: Die Umschaltung auf die Listenansicht hängt an `@container (max-width:800px)` in px; die Wörter stehen absolut und mit `white-space:nowrap`. Das Profil verlangt Schwellen in `rem`, damit die Figur bei grösserer Schrift früher in die Listenansicht wechselt (Leitlinie 07, «Schmale Bildschirme», Profilentscheid 11.10.2026). Frühere Runden haben nur `scrollWidth` gemessen (0 px Überlauf) und die Überlappung nicht erfasst. Behebung nur in `borderline.css`, ohne Änderung an Wortlaut oder Zeichnung. | Messung: 2 Überlappungen (`messwerte-200.json`, `v-vs-eisberg` 1280); Fotos `v/v-vs-eisberg_1280_std_200.png`, `…_1280_kontrast_200.png`; `borderline.css` Zeile 107 (`.bl-eis__w{position:absolute;…;white-space:nowrap}`) und Zeile 119 (`@container (max-width:800px)`). |
+| SP2-V-02 | Visualisierungs-Check (Punkt 18) | wichtig | **Weitere Container-Schwellen in px statt rem; bei 200 % Schrift falsche Ansicht.** (a) Zwei Sichten: `.bl-sicht` wechselt erst unter 560 px Container auf eine Spalte; bei 768 px und 200 % bleiben zwei Spalten von rund 270 px, «Unterstützun\|g» und «richtigstellen.\|»» brechen ohne Trennstrich. (b) Bedeutungsschleife: Das Muster schaltet bei `47.5rem` auf die Liste, die Anpassung für fünf Stationen (`.bl-cycle--5`) erst bei `700px`; bei 1280 und 768 px mit 200 % entsteht eine Mischform – Stationen ungleich breit und seitlich versetzt, Verbindungsstriche treffen die nächste Station nicht. | (a) `borderline.css` Zeile 86–87, Foto `v/v-bz-sichten_768_std_200.png`, Messung T2 («Unterstützung», «richtigstellen.»»). (b) `borderline.css` Zeile 11–13 und 26; `visual-patterns.css` Zeile 139 (`@container (max-width:47.5rem)`); Fotos `v/v-bz-schleife_1280_std_200.png`, `…_768_std_200.png`. |
+| SP2-V-03 | Visualisierungs-Check (Punkt 18) | optional | **360 px mit 200 % Schrift: Trennung mitten im Wort ohne Trennstrich** in Kernaussagen, Titeln und Listen von sechs Figuren, z. B. DEAR «vorzubereit\|en.», «Entgegenkomme\|n.»; Anspannung «Anspannu\|ng», «verstehen\|.»; «Momentaufnahme\|n»; «Bedeutungsschl\|eife»; «vorwurfsvoll\|e». Ursache seitenweit: `overflow-wrap:break-word` mit `hyphens:manual` (`starter.css` Zeile 27). Gewicht optional, weil 360 px bei 200 % Schrift einer Breite von 180 CSS-px entspricht (unter der WCAG-Reflow-Grenze von 320 CSS-px); Punkt 18 nennt aber keine Breite. Prüfbedarf: ob die Fachstelle diese Kombination als Ziel festlegt (Profilfrage, nicht Website). | Messung T20 (Anspannung), T4 (DEAR), T3 (Zwei Sichten), T2 (Momentaufnahmen, Schleife) in `messwerte-200.json`; Fotos `v/chk_ansp360_200b.png`, `v/chk_dear360_200.png`, `v/v-vs-bewertungen_360_std_200.png`. |
+| SP2-V-04 | Visualisierungs-Check (Punkt 18) | optional | **Anspannungskurve: Ziffern bei 200 % grösser als ihre Kreise.** Die Kreise haben feste 28 px, die Ziffern wachsen mit; sie liegen auf der Kurvenlinie. Bestätigt die Beobachtung der Selbstprüfung «Freigabe 2c und 3-1», Aufgefallen Nr. 1. Ursache in der Vorlage des Profils (`erklaermuster.css`), daher Änderung im Design-System-Artefakt, nicht im Repository. | `templates/website/longform/erklaermuster.css` Zeile 19 (`.puk-vis-build__n{…width:28px;height:28px…}`); Foto `v/chk_ansp200_crop.png` (Ausschnitt aus `v-vs-anspannung_1280_std_200.png`). |
+| SP2-V-05 | Visualisierungs-Check (Punkt 2) | optional | **Drei Begründungen im Plan sind veraltet.** `index` › `beratung`: «steht nur hier, andere Seiten verweisen darauf» – `unterstuetzung` wiederholt «Die Beratung der Fachstelle kostet nichts …». `index` › `haltung`: «Das Spannungsfeld Fürsorge – eigene Gesundheit ist für «Auf sich achten» als Muster H vorgesehen (Etappe 2)» – auf `selbstfuersorge` steht stattdessen «Ein freier Abend» («Ersetzt das geplante Spannungsfeld», `v-sf-abend` › `reason`). `grenzen` › `saetze`: «Die übrigen Beispiele des Bestands sind für «Zugewandt und klar sprechen» (Etappe 2) vorgemerkt» – Etappe 2b ist gebaut und freigegeben. Nur Plantext, keine sichtbare Änderung. | `site.config.json` › `pages[index].visualPlan` (`v-ix-beratung`, Zeile `haltung`), `pages[grenzen].visualPlan` (`saetze`); `content/unterstuetzung.html` (grep «Krankenkass»). Zu `beratung` auch Selbstprüfung «Freigabe 2c und 3-1», Aufgefallen Nr. 3. |
+
+#### Fragen an die Fachstelle
+
+- **SP2-F-V-01 · Prüfbedarf · Ein neuer Trieb und das Bildsprache-Audit zu `rolle`.** Für «Ein Stück Weg» wurde das Garten-Bild verworfen, unter anderem weil «die betroffene Person nicht als Pflanze erscheinen» darf (`v-ro-weg` › `reason`: «Bildsprache-Audit: wirkt wie eine Zielscheibe, die betroffene Person darf nicht als Pflanze erscheinen»). «Ein neuer Trieb» (`genesung`, freigegeben 2c) zeigt die Genesung als Pflanze mit abgefallenem Blatt und neuem Trieb. Sieht die Fachstelle darin keinen Widerspruch, weil die Pflanze den Verlauf und nicht die Person zeigt, oder soll die Grenze des Bildes das sagen? Beleg: Plan `v-ro-weg` und `v-ge-trieb`; Vertiefung «Das Bild ist eine Metapher, keine Vorhersage eines Genesungsverlaufs.»
+- **SP2-F-V-02 · Prüfbedarf · «Mehrere Stellen» in `beziehungen` › `was-hilft` und der Ansatzpunkt der Schleife.** Abbildung 1 markiert genau einen Ansatzpunkt (Station 5, «Angehörige setzen bei ihrer eigenen Reaktion an.»). `was-hilft` nennt drei Stellen: «bei der Bedeutung» (in Abbildung 1 ist Station 2 «Bedeutung» der betroffenen Person zugeordnet), «bei der Unterstützung» (keine Station) und «später, in einem eigenen Gespräch». Der Wortlaut ist entschieden (Korrektur 1e); gefragt ist nur, ob Lesende den Bezug zur Abbildung so verstehen sollen, oder ob die Liste die Stationen der Abbildung nennen soll. Beleg: `content/beziehungen.html` `#schleife` (`li.is-ansatz` nur bei Station 5) und `#was-hilft`.
+- **SP2-F-V-03 · Ansatzpunkt beim Schichtenmodell.** Der Prüfauftrag (5.4) nennt Ansatzpunkte «bei Kreislauf, Prozess und Schichtenmodell (`entryPoint`)»; Profil und Gate verlangen `entryPoint` nur für B, C und G. `v-vs-eisberg` hat kein `entryPoint`, zeigt die Möglichkeit der Angehörigen aber im Bild («Wie ist es gerade für dich?») und im Kern. Soll das Feld für den Eisberg nachgetragen werden (Nachvollziehbarkeit im Plan), oder genügt der heutige Stand? Beleg: Plan `v-vs-eisberg` ohne `entryPoint`; Leitlinie 07, «Visualisierungsplan», dritter MUSS-Punkt.
+- **SP2-F-V-04 · Bildausschnitt «Ein neuer Trieb».** Der Sims endet links rund und ist rechts vom engeren Bildausschnitt (`viewBox 60 44 420 214`, Korrektur 2c-K) gerade abgeschnitten, in allen Breiten sichtbar. Ist das so gewollt? Eine Änderung würde die freigegebene Zeichnung berühren und braucht deshalb Ihren Entscheid. Beleg: Fotos `v/v-ge-trieb_1280_std_100.png`, `v/v-ge-trieb_360_std_100.png`; Messung Pfad `puk-vis-scene__soft` bis x = 415 bei Figurende 340 (360 px).
+
+#### Zählung
+
+- Befunde: **2 wichtig** (SP2-V-01, SP2-V-02), **3 optional** (SP2-V-03, -04, -05)
+- Fragen an die Fachstelle: **4** (SP2-F-V-01 bis -04)
+- Matrix: 190 Zellen (19 Punkte × 10 Figuren), davon 2 N und 4 T (alle Punkt 18), 10 «entfällt», 174 E; jede Zelle mit Beleg.
+- **Empfehlung Status Visualisierungs-Check: «offen».** Alle Punkte sind mit Beleg geprüft, aber SP2-V-01 und SP2-V-02 sind vor der Veröffentlichung zu beheben (nur CSS in `borderline.css`, keine Inhalte), danach 200 % Schrift bei 768, 1024, 1280 und 1440 px erneut ansehen (Überlappung messen, nicht nur `scrollWidth`).
+
+### 5.5 Bedienung und Barrierefreiheit (Prüfung 2, Teil B)
+
+**Geprüfter Stand:** `f1d6572`, Arbeitsbaum `scratchpad/wt`, alle Messungen in der eigenen Kopie `scratchpad/kopie-b` (keine Datei in `wt` oder im Repository geändert). Den Prüfauftrag `PRUEFAUFTRAG-SCHLUSSPRUEFUNG.md` gibt es im Stand `f1d6572` nicht. Er liegt erst in `2b675f5`/`c3306d4` im Repository vor und wurde dort nur gelesen.
+
+**Kriterien:** `guidelines/04-barrierefreiheit-und-test.md`, `guidelines/09-interaktionskonzept.md`, dazu `guidelines/00-technische-qualitaet.md` › F (Druck) und `guidelines/02-farben-und-kontrast.md`.
+
+**Vorgehen:**
+- **Server:** `python3 -m http.server 8741` im Stamm von `kopie-b`.
+- **Browser:** Playwright 1.56.1 (global), Chromium `/opt/pw-browsers/chromium-1194/chrome-linux/chrome`.
+- **axe:** nicht installiert (`npm ls -g`: chromedriver, eslint, playwright, prettier usw., kein axe-core). Ersatz sind eigene Checks.
+- **Eigene Skripte** in `scratchpad/teil-b/`, Ausgaben daneben:
+  - `ueberlauf.mjs` → `ueberlauf-ausgabe.txt`
+  - `sweep.mjs` (Breitenraster)
+  - `nk31.mjs`
+  - `tastatur.mjs` → `tastatur-1280.txt`, `tastatur-360.txt`
+  - `modi.mjs` → `modi-ausgabe.txt` (ohne Skript, reduzierte Bewegung, erzwungene Farben, Druck)
+  - `druckfig.mjs` → `druckfig.txt`
+  - `kontrast.mjs` → `kontrast-ausgabe.txt`
+  - `struktur.mjs` → `struktur-ausgabe.txt`
+  - `wortbruch.mjs` → `wortbruch.txt`
+  - `textabstand.mjs` → `textabstand.txt`
+  - `svgbox.mjs`, `anim.mjs`
+  - Bildschirmfotos in `shots/`, PDFs in `pdf/` und `pdf1cm/`
+- **Methoden:**
+  - **200 % Seitenzoom:** Fensterbreite halbiert bei `deviceScaleFactor: 2`. Beispiel: Fenster 1280 px → Viewport 640 CSS-px. So rechnet der Browser bei Zoom 200 %.
+  - **200 % Schriftgrösse:** Browser-Standardschrift 32 px über CDP `Page.setFontSizes({standard: 32})`. Das entspricht der Einstellung «Schriftgrösse» im Browser. Kontrolle: `getComputedStyle(html).fontSize` = `32px` in allen Läufen (siehe Ausgabe «Root-Schriftgrösse»).
+  - **Überlauf:** `documentElement.scrollWidth − clientWidth > 0`.
+  - **Abgeschnitten:** Element mit `overflow` hidden/clip und `scrollWidth > clientWidth + 1` (bzw. Höhe). Ausgenommen sind nur Elemente für Screenreader (clip, 1 px).
+  - **Text ausserhalb:** jede Textzeile (`Range.getClientRects`) mit rechtem Rand > `clientWidth + 1` oder linkem Rand < −1.
+  - **Zwei Zustände je Seite:** Vertiefungen zu und offen. Offen heisst: `details.open = true` und alle Akkordeon-Panels sichtbar.
+- **Projektwerkzeug:** `NODE_PATH=$(npm root -g) PW_CHROMIUM=… node abgleich/bedienung.mjs http://localhost:8741/templates/website/borderline-angehoerige/`. Ausgabe in `teil-b/bedienung-ausgabe.txt`.
+
+#### Ergebnis je Punkt
+
+| Punkt | Ergebnis | Beleg |
+| --- | --- | --- |
+| `node abgleich/bedienung.mjs` | ausgeführt; erster Tabstopp überall «Zum Hauptinhalt», 0 Stopps ohne sichtbaren Fokus | Ausgabe siehe unten. Das Werkzeug misst `404` nicht (Liste `PAGES` mit 16 Seiten, Zeile 21), daher SP2-B-4. |
+| Zahlen der bauenden Sitzung nachgerechnet | stimmen | Höhen bei 360 px wie in der Selbstprüfung «Freigabe 2c und 3-1» (`PRUEFBERICHT.md` Z. 1243): `index` 5558, `verstehen` 17 315, `beziehungen` 16 048, `rolle` 26 224, `selbstfuersorge` 22 026, `krise` 16 641, `genesung` 14 538, «Ein neuer Trieb» 847 px. Tabstopps: `bedienung.mjs` und `tastatur.mjs` zählen gleich (eigene Zählung minus 2 Fusszeilenstopps, z. B. `quellen` 87 − 2 = 85, `fragen` 48 − 2 = 46). |
+| Breiten 320, 360, 768, 1024, 1280, 1440 px | kein Überlauf, nichts abgeschnitten, kein Text ausserhalb | Tabelle «Überlauf», 17 Seiten × 6 Breiten × 2 Zustände |
+| 200 % Seitenzoom (Fenster 640, 768, 1024, 1280, 1440) | wie oben | Tabelle «Überlauf» |
+| 200 % Schriftgrösse (320 bis 1440 px), dazu Zoom und Schrift zusammen bei 1280 | kein Überlauf, nichts abgeschnitten. Wörter brechen aber ohne Trennstrich mitten im Wort, siehe SP2-B-2. | Tabelle «Überlauf», `wortbruch.txt` |
+| Ohne Skript bei 320 px, 1280 px mit 200 % Schrift und 1280 px mit 200 % Zoom | kein Überlauf | Tabelle «Überlauf» |
+| Breitenraster 300–1920 px in 20-px-Schritten × Schrift 16, 18, 20, 24, 28, 32 px, sieben Seiten mit Figuren | 3444 Messungen, 0 mit Überlauf | `node sweep.mjs` → «Messungen 3444 mit Überlauf 0» |
+| **NK31-1** (Überlauf `verstehen`, 1280 px, 200 % Schrift) | **besteht nicht mehr** | `nk31.mjs`: bei 1280 px und 32 px `scrollWidth` 1280 = `clientWidth` 1280. Die Beschriftung «Es kann wieder ruhiger werden.» ist dann ausgeblendet (Rect 0/0). Bei 16 px steht sie bei x 877–1102. Ursache der Behebung: `borderline.css` Z. 62 `@container (max-width:45.71em){.bl-fig--kurve .bl-fig__label{display:none}}`, Kommentar «Freigabe 2c und 3-1 (NK31-1)», eingeführt in `dc3ffa6` (`git log -S"45.71em"`). Gegenprobe 1024–1920 px × 16, 24, 32 px: kein Überlauf. |
+| Textabstände (WCAG 1.4.12, Zusatz): Zeilenhöhe 1,5, Zeichen 0,12 em, Wort 0,16 em, Absatz 2 em | kein Überlauf, nichts abgeschnitten bei 320, 360, 768, 1280 px | `textabstand.txt` |
+| Sprunglink | erster Stopp auf allen 17 Seiten, bei 1280 und 360 px. Sichtbar beim Fokus (8/8 px, 153 × 44 px). Enter → Fokus auf `main#main-content`, Hash `#main-content`. Nächster Tab im Hauptinhalt. | `tastatur-*.txt`, z. B. `index`: «-> Fokus {"active":"main-content"} -> nächster Tab {… "inMain":true}». Foto `shots/fokus-skip-1280.png` angesehen: weisses Feld mit blauem Ring über dem Logo. |
+| Tab-Reihenfolge | logisch: Sprunglink → Logo → 5 Navigationspunkte → E-Mail der Absenderin → Kapitelweg → Inhalt → Fusszeile (Impressum, Datenschutz). Kein `tabindex > 0`. | Stopps gesamt (1280 px, gleich bei 360 px): `index` 22, `verstehen` 29, `beziehungen` 24, `grenzen` 28, `rolle` 36, `selbstfuersorge` 34, `kommunizieren` 37, `krise` 30, `genesung` 23, `unterstuetzung` 24, `diagnose` 32, `behandlung` 35, `fragen` 48, `quellen` 87, `ueber` 19, `impressum-datenschutz` 14, `404` 11. Erste 15 je Seite in `tastatur-1280.txt`. Beispiel `genesung`: «… 9. a «Forschung» \| … \| 13. a «Ihre Unterstützung» \| 14. button[false] «Zum Begriff «Heilung»» \| 15. summary «Grenzen des Bildes»». |
+| Sichtbarer Fokus | alle 1066 Stopps (533 je Breite) mit Fokusbild `box-shadow: rgb(255,255,255) 0 0 0 2px, rgb(60,100,255) 0 0 0 4px` (`--focus-ring`). Keiner versteckt, verdeckt oder ausserhalb des Fensters. | `tastatur-*.txt`: «Ringe:» einheitlich; «ohne Ring/versteckt/verdeckt: 0» auf 17/17 Seiten. Verdeckt geprüft mit `elementFromPoint` je Zeilenrechteck. Foto `shots/fokus-quellen-1280.png` angesehen: zweizeiliger Link mit blauem Ring. |
+| Vertiefungen (`details`) mit Enter und Leertaste | 8 von 8 öffnen und schliessen (Enter bzw. Leertaste im Wechsel) | `tastatur-1280.txt` «Interaktion», z. B. `verstehen`: «summary «Grenzen des Bildes» Space: auf=true zu=true» |
+| Akkordeons mit Enter und Leertaste | 51 Kopfzeilen auf 13 Seiten. `aria-expanded` und `hidden` wechseln jeweils true/false → false/true. Pfeil ab, Ende und Pos1 springen zwischen Kopfzeilen. | z. B. `kommunizieren`: «Pfeil ab -> «Stufe 2 · Spiegeln», Ende -> «Stufe 6 …», Pos1 -> «Stufe 1 …»» |
+| Escape | nicht anwendbar: kein Dropdown-Menü (5 Navigationspunkte, kein `.puk-site-menu`), kein Dialog, kein Tooltip, keine Reiter. Das Interaktionskonzept sieht Escape für Akkordeons nicht vor. | `grep -l "puk-site-menu\|data-puk-dialog\|puk-tabs\|puk-carousel" *.html` → keine Treffer |
+| Bedienziele ≥ 44 px | alle Ziele ≥ 44 px bei 1280 und 360 px: Sprunglink, Logo, Navigation, Kapitelweg, Akkordeon-Kopfzeilen, `summary`, Fusszeilenlinks, Aktionslinks, Buttons | `struktur-ausgabe.txt`: keine Zeile «Ziele < 44 px» |
+| Ohne Skript | alle Inhalte zugänglich. Akkordeon-Panels offen (0 ausgeblendet). `details` per Klick öffnbar (8/8). Text der Hauptspalte ohne Skript nach Öffnen ≥ Text mit Skript. | `modi-ausgabe.txt`, z. B. `kommunizieren`: «0/12 \| 1/1; ohne JS nach Öffnen 23916». `selbstfuersorge`, `kommunizieren`, `diagnose`, `behandlung` haben ohne Skript mehr Text, weil Akkordeons ohne `data-multiple` mit Skript nur einen Eintrag offen halten (Messartefakt). |
+| Reduzierte Bewegung | mit `reduce` keine Transition und keine Animation > 0,02 ms auf 17 Seiten (Elemente, `::before`, `::after`). Nach Klick auf ein Akkordeon 0 laufende Animationen. `scroll-behavior: auto`. Ohne `reduce` nur Farbwechsel 120 ms und Chevron-Drehung 200 ms, wie im Interaktionskonzept. Nichts bewegt sich von selbst. | `modi-ausgabe.txt` «reduce: … 0»; `anim.mjs`: «reduce nach Klick []», «no-preference nach Klick [CSSTransition:color:120, CSSTransition:transform:200]» |
+| Erzwungene Farben | Fokus als Umrandung 2 px `CanvasText`: hell `rgb(0,0,0)`, dunkel `rgb(255,255,255)`, auf allen 17 Seiten. **Nur teilweise prüfbar:** Chromium (headless) erfüllt mit `forcedColors: 'active'` zwar die Media-Abfrage und löst Systemfarben auf, zeichnet aber die Seitenfarben nicht um. Die Fotos zeigen weiter Blau-25-Flächen. Im dunklen Schema wird das Logo (`filter: invert(1)`) hell auf weissem Grund, auch das ein Artefakt der Emulation. Figuren, Grenzkästen und Flächen unter echtem Kontrastmodus: **nicht geprüft**, siehe Protokoll. | `modi-ausgabe.txt` «light: … 2px solid rgb(0, 0, 0)», «dark: … rgb(255, 255, 255)»; Fotos `shots/m-light.png`, `shots/m-dark.png` angesehen (Akkordeon mit schwarzer Umrandung, Figuren unverändert farbig) |
+| Druck | Navigation und Sprunglink ausgeblendet (0 sichtbar). Vertiefungen 8/8 und Akkordeon-Panels 51/51 im Druck sichtbar. Externe Links mit Adresse (`::after`), z. B. `quellen` 53/53, `behandlung` 6/6. Text der Vertiefungen im PDF. **Drei Figuren über zwei A4-Seiten geteilt** (SP2-B-1). | `modi-ausgabe.txt` Tabelle «Druck»; `pdftotext pdf/verstehen.pdf` findet «Das Eisberg-Bild ist eine mögliche Verständnishilfe …» und «Sie ist kein validiertes Messinstrument …»; `druckfig.txt`, PDF-Seiten angesehen (`teil-b/pdfimg/vs-all.png`, `bz-all.png`) |
+| Kontrast, Tokenpaare | Text- und Linkpaare, die auf der Website vorkommen, ≥ 4,5:1. Fokusring und Figurlinien ≥ 3:1. Theme «Hoher Kontrast» überall höher. Zwei Tokenpaare liegen unter 4,5:1 (Link Blau 100 auf `surface-structure` 4,40, auf `ui-field` 4,25), kommen aber gerendert nicht vor (Zeile unten). | `kontrast-ausgabe.txt` Tabelle «Tokenpaare», eigene WCAG-Formel |
+| Kontrast, gerendert | 6757 Textelemente (17 Seiten × 1280/360 px, Vertiefungen offen), effektiver Hintergrund über die Vorfahren aufgelöst: **0 Paare unter Soll**, im Standard und mit `data-theme="kontrast"`. Beispiel: «Grenzen des Bildes» in Figuren ist Blau 125 auf #F7F7F7 (6,0:1). | `kontrast-ausgabe.txt`; `k2.mjs`: `rgb(43, 79, 224)` auf `rgb(247, 247, 247)` |
+| Dunkles Farbschema, Theme «Hoher Kontrast» | kein dunkles Farbschema vorhanden (`prefers-color-scheme` nur für das Logo bei erzwungenen Farben, `bundle.css` Z. 700). «Hoher Kontrast» ist im Profil über `<html data-theme="kontrast">` vorhanden, die Website bietet aber keinen Umschalter an. Mit gesetztem Attribut gemessen: kein Kontrastbefund. | `grep data-theme` → nur `components/bundle.css` |
+| Eigene Strukturchecks (axe-Ersatz) | auf allen 17 Seiten bei 1280 und 360 px ohne Befund: `lang="de-CH"`, Titel eindeutig (17/17), genau ein `main` und ein `h1`, Überschriften ohne Sprünge, keine leeren Überschriften, keine doppelten ids, alle `aria-labelledby`/`-describedby`/`-controls`/`for` und Sprungziele vorhanden, nur gültige `aria-*`-Attribute und -Werte, kein `aria-hidden` mit fokussierbarem Inhalt, Logo-`img` mit alt «Psychiatrische Universitätsklinik Zürich», alle SVG `aria-hidden`, 10 Figuren mit Name und Beschreibung (43–325 Zeichen), keine leeren oder vagen Linktexte, kein gleicher Linktext mit anderem Ziel, kein `tel:`, kein neues Fenster, keine Formularfelder. Landmarks: `header`, `nav` «Hauptnavigation» (dazu «Weg durch die Seite» auf 14 Seiten), `main`, `footer`. `aria-current="page"` mit Unterstreichung auf den 5 Seiten der Navigation. | `struktur-ausgabe.txt`, jede Seite «Befunde: keine»; «Titel eindeutig: true» |
+| Abgeschnittene Figurteile (SVG über `viewBox`, Zusatz) | ein sichtbarer Fall: das Brett unter «Ein neuer Trieb» ist rechts gerade abgeschnitten (SP2-B-3). Die übrigen Treffer sind gewollt: Wasserlinie des Eisbergs von Rand zu Rand, Weg in `v-ro-weg` 2 Einheiten über den unteren Rand. | `svgbox.mjs`: «genesung … vb [60,44,480,258] … path bbox 72,223,578,251»; Foto `shots/trieb-1280-16.png` angesehen |
+| Reale Screenreader-Läufe (mindestens zwei), Hardwaretastatur, Touch, echter Windows-Kontrastmodus | **offen, nicht durch die Prüfsitzung** (Auftrag 5.5). Protokollvorschlag unten. | – |
+
+**Ausgabe `node abgleich/bedienung.mjs`** (gekürzt auf die Spalten Tabstopps, erster Stopp, ohne Fokus, Höhe):
+
+```
+| `index` | 20 | «Zum Hauptinhalt» | 0 | 5558 px | – |
+| `verstehen` | 27 | «Zum Hauptinhalt» | 0 | 17315 px | v-vs-anspannung 3379 px |
+| `beziehungen` | 22 | «Zum Hauptinhalt» | 0 | 16048 px | v-bz-sichten 2359 px |
+| `grenzen` | 26 | «Zum Hauptinhalt» | 0 | 17222 px | v-gr-dear 1791 px |
+| `rolle` | 34 | «Zum Hauptinhalt» | 0 | 26224 px | v-ro-weg 673 px |
+| `selbstfuersorge` | 32 | «Zum Hauptinhalt» | 0 | 22026 px | v-sf-abend 707 px |
+| `kommunizieren` | 35 | «Zum Hauptinhalt» | 0 | 25375 px | v-ko-tassen 716 px |
+| `krise` | 28 | «Zum Hauptinhalt» | 0 | 16641 px | – |
+| `genesung` | 21 | «Zum Hauptinhalt» | 0 | 14538 px | v-ge-trieb 847 px |
+| `unterstuetzung` | 22 | «Zum Hauptinhalt» | 0 | 13895 px | – |
+| `diagnose` | 30 | «Zum Hauptinhalt» | 0 | 17898 px | – |
+| `behandlung` | 33 | «Zum Hauptinhalt» | 0 | 21335 px | – |
+| `fragen` | 46 | «Zum Hauptinhalt» | 0 | 27710 px | – |
+| `quellen` | 85 | «Zum Hauptinhalt» | 0 | 51940 px | – |
+| `ueber` | 17 | «Zum Hauptinhalt» | 0 | 7580 px | – |
+| `impressum-datenschutz` | 12 | «Zum Hauptinhalt» | 0 | 5932 px | – |
+Pfeile der Bedeutungsschleife: 1440/1280/768 px je 28,6/13,9 · 35,3/20,3 · 8,3/12,8 · 10,3/8,6 · 9,4/11,9; 720 px schmale Liste, keine Pfeile im Bild
+```
+
+Alle Pfeilspitzen enden vor dem Zielkasten (positive Werte), keine Spitze liegt im Kasten.
+
+**Überlauf, Seite × Bedingung.** Die Spalten (Bedingungen):
+- Standardschrift: 320, 360, 768, 1024, 1280, 1440 px
+- Zoom 200 % bei Fensterbreite 640, 768, 1024, 1280, 1440 px
+- Schrift 200 % bei 320, 360, 768, 1024, 1280, 1440 px
+- Zoom und Schrift 200 % zusammen bei 1280 px
+- ohne Skript bei 320 px, ohne Skript mit Schrift 200 % bei 1280 px, ohne Skript mit Zoom 200 % bei 1280 px
+
+Ergebnis: alle 17 Seiten in allen 21 Bedingungen «ok», je mit Vertiefungen zu und offen. Das sind 714 Messungen, 0 mit Überlauf, 0 mit abgeschnittenem Element, 0 mit Text ausserhalb des Fensters. Volle Tabelle: `teil-b/ueberlauf-ausgabe.txt`.
+
+**Wörter ohne Trennstrich gebrochen** (`wortbruch.txt`, Wörter ab 4 Zeichen, deren Zeichen auf mehreren Zeilen stehen, bei `hyphens: manual`):
+
+| Bedingung | Wörter ohne Trennstrich gebrochen | Beispiele |
+| --- | ---: | --- |
+| 320 px, Standardschrift | 9 | `diagnose` h1 «Begleiterkrankungen» (Foto: «Begleiterkrank / ungen»), `genesung` h1 «unterschiedlich», `behandlung` h3 «Psychotherapiestation», `quellen` h2 «Gesundheitsinformationen» |
+| 360 px, Standardschrift | 3 | `diagnose` h1 «Begleiterkrankungen», li «Hyperaktivitätsstörung», `quellen` h2 |
+| 320 px, Schrift 200 % | 1094 | `index` h1 «Borderl / ine – Orienti / erung für Angeh / örige», Einleitung «nahestehende / r» (Foto `shots/font200-320-kopf.png`) |
+| 360 px, Schrift 200 % | 530 | `grenzen` h1 «schützen» |
+| 768 px, Schrift 200 % | 257 | h2 auf allen Seiten |
+| 1280 px, Schrift 200 % | 41 | `krise` h2 «Wenn Suizidgedan / ken ein Thema sind» (Foto `shots/m-wort.png`), `rolle` h2 «Verantwortung» |
+
+Ursache: Überschriften und Fliesstext mit `overflow-wrap: break-word` und `hyphens: manual` (berechnete Werte des h2 auf `krise`). Bei 1280 px mit 200 % Schrift bleibt das zweispaltige Abschnittsraster bestehen. Die Überschriftenspalte ist dann 294 px breit bei 52 px Schriftgrösse.
+
+#### Befunde
+
+| ID | Stufe | Gewicht | Befund | Beleg |
+| --- | --- | --- | --- | --- |
+| SP2-B-1 | Bedienung (Druck) | optional | **Drei Figuren stehen im Druck auf zwei A4-Seiten.** Das widerspricht der Regel «Titel, Kernaussage, Darstellung und Kennzeichnung stehen auf einer A4-Seite» (Profilentscheid 11.10.2026). `v-vs-anspannung`: Titel S. 7, Stationen 3–4 und Kennzeichnung S. 8. `v-bz-schleife`: nur die Kennzeichnung «Eigene didaktische Darstellung mit erfundenem Beispiel …» allein oben auf S. 4. `v-bz-sichten`: Titel S. 7, Station 5, «Zurück zu Station 1» und Kennzeichnung S. 8. Bei `v-vs-anspannung` und `v-bz-sichten` ist die Darstellung samt Liste länger als eine A4-Seite, die Regel ist dort nicht einhaltbar. Bei `v-bz-schleife` fehlt nur die Kennzeichnung. Die übrigen 7 Figuren stehen auf einer Seite. Bisher in keiner Prüfrunde genannt. | `druckfig.mjs` (Chromium, A4, Rand 1 cm, Medium `print`) → `druckfig.txt`: «verstehen v-vs-anspannung: Titel S.7 Kern S.7 Kennzeichnung S.8», «beziehungen v-bz-schleife: Titel S.3 Kern S.3 Kennzeichnung S.4», «beziehungen v-bz-sichten: Titel S.7 … Kennzeichnung S.8». PDF-Seiten angesehen: `teil-b/pdfimg/vs-all.png`, `bz-all.png`. Regel: `guidelines/00-technische-qualitaet.md` › F. |
+| SP2-B-2 | Bedienung (200 % Schrift, schmale Breiten) | optional | **Lange Wörter brechen ohne Trennstrich mitten im Wort.** Betroffen sind vor allem Überschriften. Bei Standardschrift 9 Wörter bei 320 px, z. B. h1 «Begleiterkrank / ungen» auf `diagnose`. Bei 200 % Schrift 41 Wörter bei 1280 px bis 1094 bei 320 px, z. B. `krise` h2 «Suizidgedan / ken». Kein Verlust von Inhalt, kein Verstoss gegen WCAG 1.4.4/1.4.10, aber schlechter lesbar. Ursache ist die Profilregel `overflow-wrap: break-word` mit `hyphens: manual`. Die Leitlinie verlangt `hyphens: auto` nur für «Navigation, Spalten und Stationen». Behebung gehört ins Profil (Design-System-Artefakt), nicht in dieses Repository (CLAUDE.md). | `wortbruch.txt`; `h2shot.mjs`: «krise-1280-200 {… "ow":"break-word","wb":"normal","hy":"manual","w":294,"fs":"52px"}»; Fotos `shots/m-wort.png`, `shots/font200-320-kopf.png` angesehen |
+| SP2-B-3 | Bedienung / Visualisierung | optional | **«Ein neuer Trieb» (`genesung`, `v-ge-trieb`): Das Brett unter dem Topf ist rechts gerade abgeschnitten.** Links hat es eine runde Kante. Der Pfad reicht bis x 578, die `viewBox` endet bei 480, das SVG hat `overflow: hidden`. Sichtbar bei 1280 und 360 px. Vielleicht ein gewollter Bildausschnitt (Topf mittig); im Visualisierungs-Check (5.4) ansehen und entscheiden. | `genesung.html`: `viewBox="60 44 420 214"`, erster Pfad «M84 226 C230 222 420 222 566 226 C574 226 578 230 578 236 …»; `svgbox.mjs`: «path bbox 72,223,578,251»; Foto `shots/trieb-1280-16.png` angesehen |
+| SP2-B-4 | Bedienung (Werkzeug) | optional | **`abgleich/bedienung.mjs` misst die Seite `404` nicht.** `PAGES` hat 16 Einträge ohne `404`. Die Seite ist hier mit eigenen Skripten geprüft (11 Stopps, Fokus, Überlauf, Druck, Struktur: ohne Befund). Künftige Läufe des Werkzeugs decken sie aber nicht ab. | `abgleich/bedienung.mjs` Z. 21 `const PAGES = ['index', … 'impressum-datenschutz'];` |
+
+#### Fragen an die Fachstelle
+
+- **SP2-F-B-1 (zu SP2-B-1):** Gilt für Figuren, die mit ihrer Liste länger als eine A4-Seite sind (`v-vs-anspannung`, `v-bz-sichten`), eine Ausnahme von der Druckregel? Oder soll der Druck dort nur Titel, Kernaussage und Bild zusammenhalten? Für `v-bz-schleife` genügt es, die Kennzeichnung an die Darstellung zu binden. Beleg: `druckfig.txt`.
+- **SP2-F-B-2:** Wer führt die realen Screenreader-Läufe, den Test mit Hardwaretastatur und Touch und den Test im echten Windows-Kontrastmodus durch, mit welchen Geräten und bis wann? Die Prüfsitzung kann sie nicht durchführen; die Emulation der erzwungenen Farben in Chromium zeichnet die Farben nicht um (Beleg: Zeile «Erzwungene Farben» oben). Vorschlag:
+
+**Protokollvorschlag für die realen Tests** (je Lauf festhalten: Datum, Person, Gerät, System- und Browserversion, Screenreader-Version, Sprache Deutsch; Ergebnis je Aufgabe «bestanden / nicht bestanden / nicht geprüft» mit Notiz; Vorlage `templates/website/website-screenreader-test.example.json`)
+
+| Kombination | Gerät | Pflicht |
+| --- | --- | --- |
+| NV | NVDA (aktuell) + Firefox, Windows, Laptop mit Hardwaretastatur | ja |
+| VO-mac | VoiceOver + Safari, macOS | ja |
+| VO-iOS | VoiceOver + Safari, iPhone (Touch, Wischgesten) | empfohlen |
+| TB | TalkBack + Chrome, Android-Telefon | empfohlen |
+| HK | Windows-Kontrastmodus (Kontrastdesign dunkel und hell) + Edge, ohne Screenreader | ja |
+
+| Nr. | Seite | Aufgabe | Erfolgskriterium |
+| --- | --- | --- | --- |
+| A1 | `index` | Seite laden, Titel und Sprache anhören; Tab bis «Zum Hauptinhalt», aktivieren | Titel «Startseite \| Borderline – Orientierung für Angehörige» deutsch angesagt; nach dem Sprunglink beginnt das Lesen im Hauptinhalt |
+| A2 | `index` | Orientierungspunkte und Überschriften auflisten (VO-Rotor / NVDA D, H); einen Einstieg wählen | genau ein Hauptbereich, «Hauptnavigation», Fussbereich; ein h1, h2 ohne Sprünge; Linktexte allein verständlich |
+| A3 | `verstehen` | Navigation «Weg durch die Seite» → «Anspannung» aktivieren; Abbildung 2 lesen | Sprungziel angesagt; Figur mit Titel «Abbildung 2 · …» und Kurzbeschreibung angesagt; Kurve selbst nicht vorgelesen; Stationen 1–4 als Liste verständlich |
+| A4 | `verstehen` | Vertiefung «Grenzen des Bildes» öffnen und schliessen (Enter/Leertaste, Doppeltippen) | Zustand «reduziert / erweitert» angesagt; Inhalt danach lesbar |
+| A5 | `beziehungen` | Abbildung 1 (Bedeutungsschleife) lesen, einmal breit, einmal bei 320 px / Telefon | Leserichtung angesagt; fünf Stationen in Reihenfolge; Rückkehr zu Station 1 verständlich |
+| A6 | `kommunizieren` | Akkordeon «Die sechs Stufen im Detail»: Stufe 3 öffnen, mit Pfeil ab zu Stufe 4 (nur Tastatur) | Schaltfläche mit Zustand angesagt; Pfeiltasten bewegen den Fokus; Inhalt der offenen Stufe erreichbar |
+| A7 | `krise` | Abschnitt «Suizidgedanken» lesen bis zum Verweis auf die zuständigen Stellen | Verweis direkt nach der Handlungsanleitung vorgelesen; keine Telefonnummer, kein Notfallblock |
+| A8 | `quellen` | per Linkliste (NVDA K / Rotor) einen PubMed-Link finden; englischen Titel anhören | Linkname = Titel der Studie; englische Aussprache (`lang="en"`) |
+| A9 | `fragen` | Überschriftenebenen durchgehen; Akkordeon «Meldepflichten …» öffnen | Ebenen ohne Sprung (h4 unter h3); Zustand angesagt |
+| A10 | `impressum-datenschutz`, `404` | Fusszeile lesen; auf `404` «Zur Übersicht» aktivieren | Zuständigkeit und Absenderin vorgelesen; Link führt zu `index` |
+| A11 | alle Seiten, Hardwaretastatur ohne Screenreader | ganze Seite mit Tab und Umschalt+Tab durchgehen | Fokus immer sichtbar und nie verdeckt; Reihenfolge wie Lesereihenfolge; keine Falle |
+| A12 | `index`, `verstehen`, `kommunizieren` auf Telefon (Touch) | Navigation, Einstiege, Vertiefung und Akkordeon antippen; Browser-Schriftgrösse auf Maximum | jedes Ziel mit einem Tippen getroffen; kein waagrechtes Scrollen; nichts abgeschnitten |
+| A13 | `verstehen`, `beziehungen`, `genesung`, `grenzen` im Kontrastmodus (HK) | Figuren, Grenzkästen, Fokus und Akkordeon-Chevron ansehen; Tab durch eine Seite | Linien und Beschriftungen der Figuren sichtbar; Fokus als Umrandung sichtbar; Logo im dunklen Kontrastdesign hell |
+| A14 | eine Seite mit Figur, Browser-Zoom 200 % und Schriftgrösse 200 % | A1, A4 und A6 wiederholen | Fokus bleibt sichtbar und im Fenster; Ansagen unverändert |
+
+Bestanden ist der Test, wenn alle Pflichtkombinationen A1–A11 und A13 (HK) ohne «nicht bestanden» abschliessen; Abweichungen werden als Befund mit Seite, Aufgabe und Kombination eingetragen.
+
+#### Zählung
+
+- 0 wichtig, 4 optional (SP2-B-1 bis SP2-B-4), 2 Fragen an die Fachstelle (SP2-F-B-1, SP2-F-B-2).
+- NK31-1 ist im Stand `f1d6572` behoben (Beleg oben, `dc3ffa6`).
+- **Empfehlung Status «Bedienung und Barrierefreiheit»: offen.** Grund: Die realen Screenreader-Läufe (mindestens zwei), Hardwaretastatur, Touch und der echte Windows-Kontrastmodus fehlen (nicht durch die Prüfsitzung). Dazu sind die vier optionalen Befunde und SP2-F-B-1 zu entscheiden. Alle automatisiert prüfbaren Punkte sind mit Beleg geprüft und ohne wichtigen Befund.
+
+### 5.6 W3 · Code-Review, Teil A (Punkte 1, 2 und 5) · Prüfung 2
+
+**Geprüfter Stand:** `f1d6572` (Arbeitsbaum `scratchpad/wt`, `git rev-parse HEAD` = `f1d657215efe61b99067000c7e0f84f6f3c79a30`). Kriterien: `guidelines/00-technische-qualitaet.md` (A–G). Nur Review: Im Repository, im Arbeitsbaum und in `borderline-angehoerige` ist nichts geändert. Alle schreibenden Werkzeuge liefen in der eigenen Kopie `scratchpad/kopie-w3a` (Kopie von `wt`).
+
+**Nicht Teil dieses Teils:** Export, Ziel-Repository und Netlify-Vorschau (5.6 Punkte 3 und 4). Wo ein Befund dorthin gehört, steht «→ 5.6.3/5.6.4».
+
+**Vorgehen und Werkzeuge** (Node v22.22.0, Chromium aus `/opt/pw-browsers` über das global installierte Playwright):
+
+- Werkzeuge des Projekts in `kopie-w3a/templates/website/borderline-angehoerige/`: `node tools/build.mjs`, `node tools/gate.mjs --production`, `node tools/gate.mjs`, `node tools/gate.mjs --selftest`, `node abgleich/pruefe-abgleich.mjs`, `node abgleich/kennzahlen.mjs`, `node abgleich/verwendet-auf.mjs` und `node abgleich/verwendet-auf.mjs --ohne-legenden`. Ausgaben in `scratchpad/w3a/*.txt`.
+- Vergleich mit dem Starter: `diff -r` (Werkzeuge, `starter.css`, `_headers`, `gate.html`, `assets/`).
+- Eigene Skripte in `scratchpad/w3a/`:
+  - `redirects.mjs`: Regeln zählen, Syntax, Status, Duplikate, Ketten, Ziele und Anker, Shadowing, Splat-Reihenfolge, Gross- und Kleinschreibung
+  - `technik.mjs`: externe Adressen, Skripte, `on*`-Attribute, `javascript:`, `style`-Attribute und -Elemente, Einbettungen, `target="_blank"`, `mailto:`, `tel:`, Bilder, `lang`
+  - `server.mjs`: lokaler Server, der die Header aus `_headers` mitsendet (CSP wie auf Netlify)
+  - `requests.cjs`: alle 17 Seiten und `gate.html` in Chromium laden; Anfragen, Grössen, Schriften, CSP-Verstösse, Konsole, Cookies und Speicher protokollieren
+  - `interakt.cjs`: Akkordeons und Vertiefungen anklicken, Druck auslösen, bei 360 px unter CSP
+  - `gatebrowser.cjs`: Gate-Bericht `gate.html` im Browser gegen die Kommandozeile
+  - `woerter.cjs`: eigene Wortzählung im Browser
+  - `bestandsatz.mjs`: Spalte «Satz (Bestand)» der Abgleichtabellen gegen den Bestand
+  - `ids.cjs`, `links.mjs`: doppelte IDs, ARIA-Bezüge, interne Links und Anker
+
+#### Punkt 1 · Website-Ordner und Werkzeuge
+
+| Punkt | Ergebnis | Beleg |
+| --- | --- | --- |
+| `node tools/build.mjs` | läuft, Exit 0, 0 blockierend, 2 Hinweise | Ausgabe: «17 Seiten geschrieben · PUK Website Kit 1.10.1-r4 · abgeleitet · Build r4-8 · Gate draft: 0 blockierend, 2 Hinweise.» Hinweise: `quellen` `crisis-number-check` «144» und `site` `review-report` |
+| Build reproduzierbar | ja: Die gebauten Seiten und `sitemap.xml` im Stand f1d6572 sind byte-gleich mit einem frischen Build | in der Kopie nach dem Build: `git status --short` leer; `diff -rq wt/…/borderline-angehoerige kopie-w3a/…/borderline-angehoerige` ohne Ausgabe |
+| Hinweis «144» | Fehlalarm: Seitenzahl, keine Notrufnummer | `quellen.html` › `angehoerige`: «Family Process 60(1), 134–144.» (Guillén et al. 2021). Sonst «144» nur in Adressen (`…/15514413/`, `…/assets/36144081/…`). In früheren Runden schon so bewertet (`PRUEFBERICHT.md` Z. 289, 560) |
+| `node tools/gate.mjs --production` | blockiert wie erwartet, Exit 1; **einziger Blocker ist der Prüfbericht** | «BLOCK site review-report Prüfbericht: offene Stufen W1, W2, S, Visualisierungs-Check, Bedienung und Barrierefreiheit, W3, R1 Profil-Audit, R2 Visualisierung und Laienverständlichkeit, R3 Freigabe-Audit …» · «Gate production: 1 blockierend, 1 Hinweise.» Daneben nur der Hinweis «144». Keine offene Bildfreigabe (alle 10 Abbildungen «freigegeben»). Dazu Befund SP2-W3-1: Das Gate prüft `editorialStatus` nicht |
+| `node tools/gate.mjs` (Entwurf) | Exit 0 | «Gate draft: 0 blockierend, 2 Hinweise.» |
+| `node tools/gate.mjs --selftest` | 65/65, selbst nachgezählt | Ausgabe «Selbsttest: 65/65 bestanden.»; `grep -c '^OK '` = 65, keine Zeile «FAIL». Der Selbsttest läuft an der festen Referenz `tools/selftest/`, nicht an dieser Website (`gate.mjs` Z. 18–24) |
+| `node abgleich/pruefe-abgleich.mjs` | «Abgleich geprüft: 7371 Zeilen, 0 ohne Fundstelle.» Exit 0 | Eigene Zählung der Tabellenzeilen (`^\| *Zahl *\|` in den 15 Tabellen): 323 + 253 + 406 + 336 + 509 + 715 + 263 + 982 + 316 + 572 + 774 + 675 + 372 + 323 + 552 = **7371**. Das stimmt mit dem jüngsten Wert der bauenden Sitzung überein (`abgleich/README.md`, `PRUEFBERICHT.md`: «7371 Zeilen, 0 ohne Fundstelle»). Der im Auftrag genannte Wert 7361 ist der ältere Stand nach Korrektur 3-1-K. Grenzen des Skripts: Befund SP2-W3-5 |
+| `node abgleich/kennzahlen.mjs` | Exit 0; Wortzahlen mit eigener Zählung nachgerechnet: alle 16 Seiten gleich | eigene Zählung im Browser (`woerter.cjs`), z. B. `index` 370, `verstehen` 1872, `rolle` 3299, `kommunizieren` 3428, `fragen` 3250, `quellen` 5506, `ueber` 608, `impressum-datenschutz` 501. `beziehungen` zuerst 1730 statt 1741: Meine Zählung hatte den nur schmal sichtbaren Satz «von oben nach unten; nach Station 5 zurück zu Station 1.» (11 Wörter, `data-cycle-narrow`) entfernt. Nach der Regel zählt er einmal, also 1741, gleich. Mängel der Ausgabe: Befund SP2-W3-4 |
+| `node abgleich/verwendet-auf.mjs` | «85 Einträge, 0 mit anderer Angabe, 0 Kurzangaben nicht zugeordnet.» | eigene Zählung: 85 × `puk-longform__source-use` in `quellen.html` |
+| `node abgleich/verwendet-auf.mjs --ohne-legenden` | «85 Einträge, 6 mit anderer Angabe, 0 Kurzangaben nicht zugeordnet (ohne Legenden).» Erwartet: Die sechs Abweichungen sind Quellen, die nur in Bildlegenden oder Bezugspunkten auf `verstehen` stehen | Baranger (2020), Degasperi (2021), Santangelo (2014), Shields (2016): «Verstehen» → «Hintergrund …»; Linehan (2015) und Hoffman (2005): ohne «Verstehen» |
+| `tools/` gegen den Starter | **identisch** | `diff -r borderline-angehoerige/tools psychoeducation-site-starter/tools` ohne Ausgabe, Exit 0 (auch `tools/selftest/`) |
+| `starter.css`, `_headers`, `gate.html`, `assets/` gegen den Starter | identisch; die Regel «Leitlinien, Tokens und Komponenten nicht ändern» ist eingehalten | `diff` je ohne Ausgabe, Exit 0. Website-eigen sind nur `borderline.css`, `site.config.json`, `content/`, `_redirects`, `abgleich/` |
+| Code `build.mjs`, `gate.mjs`, `export.mjs` | ohne Fehler im geprüften Ablauf. `build.mjs` schreibt nur ohne blockierende Befunde und nur Seiten aus dem Vertrag. `gate.mjs` liest alle `*.html` im Stamm ausser `gate.html` | gelesen; eine verwaiste HTML-Datei im Stamm würde das Gate mitprüfen, es gibt keine (17 Seiten + `gate.html`) |
+| Code `gate-browser.js` / `gate.html` | **weicht von der Kommandozeile ab** | Befund SP2-W3-3 |
+| Code `abgleich/*.mjs` | lauffähig; Mängel in der Robustheit und veraltete Richtwerte | Befunde SP2-W3-4 und SP2-W3-5 |
+| `_redirects` Syntax | 85 Regeln, alle mit drei Feldern, alle Status 301 | `redirects.mjs`: «Regeln: 85 Syntax-Abweichungen (≠3 Felder): 0» · «Status: { '301': 85 }». Bestätigt «85 Weiterleitungen» der bauenden Sitzung |
+| Duplikate, Ketten, Schleifen | keine | «Duplikate (case-insens.): []» · «Ketten: 0»; alle Ziele sind `.html`-Dateien, keine Quelle endet so, also keine Schleife |
+| Ziele und Anker vorhanden | alle 48 verschiedenen Ziele vorhanden, alle Anker sind `id` auf der Zielseite | «Ziele fehlen: 0, Anker fehlen: 0» |
+| Shadowing | keines: Keine Quelle (auch nicht als `<quelle>.html` oder `<quelle>/index.html`) existiert als Datei im Website-Ordner | «Shadowing: 0». Splat-Regeln `/soforthilfe/*`, `/materialien/text/*`, `/infografiken/*`, `/api/material-download/*` stehen je nach den spezifischen Regeln mit gleichem Anfang |
+| Gross- und Kleinschreibung | eine Quelle mit Grossbuchstaben: Z. 16 `/Notfallkarte-Zuerich-Psychische-Krise.pdf`; alle Ziele klein | Verhalten auf Netlify → 5.6.4 (Auftrag: «PDF-Adresse in Kleinschreibung») |
+| Abdeckung der alten Routen | alle Routen aus `INVENTAR.md` haben eine Regel, eine Splat-Regel oder eine gleichnamige neue Seite | Abgleich der 129 Pfade aus `git show origin/borderline-bestand:…/INVENTAR.md`. Übrig blieben nur Kurzformen in Fliesstext (`/beispiel-dialog`, `/gespraeche-kippen` = `/materialien/text/…`), `/route-prerender.js` (Datei, keine Route) und `/notfallkarte/erstellen`, das schon auf der alten Website 404 lieferte (INVENTAR Z. 2074) |
+| `_redirects` im Export | Die Datei wird nicht exportiert, das ist dokumentiert | Kopf von `_redirects`: «tools/export.mjs kopiert die Datei nicht; beim Umzug (Etappe 3-2) von Hand in den Zielordner kopieren»; `export.mjs` Schritt 4 kopiert nur `assets/`, `_headers` und `sitemap.xml` → 5.6.3 |
+| `sitemap.xml` | 16 URLs, alle veröffentlichten Seiten ausser 404; vom Build reproduziert | Adressen mit `.html`, gleich wie `canonical`. Ob Netlify «Pretty URLs» diese Adressen umleitet → 5.6.4 |
+| `404.html` | `noindex`, kein `canonical`, nicht in der Navigation, Rückweg «Zur Übersicht» | `<meta name="robots" content="noindex">`; kein `rel="canonical"`; `site.config.json` 404 ohne `navLabel`. Die Kopfnavigation ist da wie im Starter (`psychoeducation-site-starter/404.html` hat sie auch); «ohne Navigation» meint laut `contract.js` Z. 22 und 235 «nicht in der Navigation». Pfade ab Stamm setzt erst der Export → 5.6.3 |
+| `gate.html` in der Veröffentlichung | gehört nicht hinein und kommt nicht hinein | `export.mjs` schreibt nur Seiten aus `cfg.pages` mit `status` «published»; `gate.html` steht nicht im Vertrag. Es braucht `site.config.json` per `fetch`, und die Datei wird nicht exportiert |
+
+#### Punkt 2 · Technik-Regeln (alle gebauten Seiten, CSS)
+
+| Regel | Ergebnis | Beleg |
+| --- | --- | --- |
+| externe Schriften, Skripte, CDNs | keine | `technik.mjs`: Alle 82 `href` mit `https://` sind Links `<a class="puk-link--inline">` oder `<link rel="canonical">` (17 × `borderline-angehoerige.netlify.app`). Kein `src`, `srcset`, `@import` oder `url()` nach aussen. CSS-Kette: `styles.css` → `tokens/fonts.css`, `components/bundle.css` (lokal), `visual-patterns.css`, `erklaermuster.css`, `starter.css`, `borderline.css`. Einziges `url()` ausser Schriften: `data:image/svg+xml` in `bundle.css` Z. 394 |
+| Laufzeit: Anfragen an fremde Adressen | **0** auf allen 17 Seiten und `gate.html` | `requests.cjs`: «EXTERN 0 []» |
+| Tracking | keins | keine Analytics- oder Tracking-Skripte. Der einzige Treffer «gtag» ist «Traurig**tag**e» (`unterstuetzung.html`, «Sonnige Traurigtage»). 0 Cookies, `localStorage` und `sessionStorage` leer auf allen Seiten |
+| Inline-Skripte | keine | 0 × `<script>` ohne `src`, 0 × `on*=`, 0 × `javascript:`. Skripte: `components/interaktion.js` auf 13 Seiten (`defer`), `gate.html` mit `tools/contract.js` und `tools/gate-browser.js` |
+| Interaktionsskript nur wo nötig | ja | mit Skript: 13 Seiten mit `data-puk-accordion` oder `<details>`; ohne Skript: `index`, `ueber`, `impressum-datenschutz`, `404`, die beides nicht haben |
+| `style`-Attribute, `<style>` | keine, auch nicht in inline-SVG und auch nicht nach Skript und Druck | `technik.mjs`: 0 und 0. `interakt.cjs`: nach Klick auf alle Akkordeons und Vertiefungen und `beforeprint` 0 Elemente mit `[style]` (verstehen, fragen, quellen, kommunizieren, unterstuetzung) |
+| Farben nur über Tokens | eingehalten | Literale nach Entfernen von Kommentaren, `var(--…)` und Token-Definitionen: in `borderline.css` nur `transparent` (Z. 34, Rahmen der Pfeilspitze `.bl-cycle--5 ol::before`; Schlüsselwort, keine Farbe), sonst nur `white-space`; in `starter.css` keine. Inline-SVG in `content/` (9 SVG auf 6 Seiten) ohne `fill`, `stroke` oder `stop-color`: Farben kommen über Klassen. `assets/logo.svg` und `favicon.svg` mit `fill="#222222"`: Profil-Asset, gleich wie im Starter |
+| Content-Security-Policy | passt zu dem, was die Seiten laden; **0 Verstösse** | mit `_headers`-Headern ausgeliefert (`server.mjs`), `securitypolicyviolation`-Protokoll leer auf allen 18 Seiten, auch nach Interaktion und Druck. Bewertung je Direktive siehe unten |
+| `lang` | `lang="de-CH"` auf allen 17 Seiten (und `gate.html`); 91 × `lang="en"` | `technik.mjs`: «lang-werte { 'de-CH': 18, en: 91 }». Gate: kein Hinweis `lang-part`. Eigene Suche nach englischen Wortfolgen ausserhalb von `lang="en"`: nur Eigennamen (Zeitschrift «Bulletin of the Menninger Clinic», «National Institute for Health and Care Excellence»), nach WCAG 3.1.2 ausgenommen |
+| doppelte IDs, ARIA-Bezüge, interne Links | keine Fehler | `ids.cjs`: keine doppelte `id`, keine ins Leere zeigende `aria-labelledby`, `aria-describedby`, `aria-controls` oder `for`, keine Sprungmarke ohne Ziel, alle Bilder geladen. `links.mjs`: 502 interne `href`, 0 defekt (Datei und Anker) |
+
+**CSP je Direktive** (`_headers`, gleich wie im Starter):
+
+| Direktive | Bewertung |
+| --- | --- |
+| `default-src 'self'` | passend |
+| `script-src 'self'` | passend; nur `interaktion.js` (lokal), kein Inline-Skript, kein `eval` |
+| `style-src 'self'` | passend; keine `style`-Attribute, auch nicht in SVG; `interaktion.js` setzt keine Inline-Styles (kein `.style.`, `cssText`, `setAttribute('style'…)`) |
+| `img-src 'self' data:` | `data:` wird auf den Seiten nicht gebraucht (nur das Häkchen `[data-puk-check]` in `bundle.css`, kommt nicht vor); enger möglich (SP2-W3-6) |
+| `font-src 'self'` | passend, Rubik lokal |
+| `connect-src 'self'` | auf den Seiten keine Abrufe; nur `gate.html` braucht `fetch`, wird aber nicht veröffentlicht; `'none'` wäre möglich (SP2-W3-6) |
+| `object-src 'none'`, `base-uri 'self'`, `frame-ancestors 'none'` | passend |
+| `form-action 'self'` | keine Formulare; `'none'` möglich (SP2-W3-6) |
+
+#### Punkt 5 · Datenschutz, Sicherheit, Performance
+
+| Punkt | Ergebnis | Beleg |
+| --- | --- | --- |
+| Anfragen an fremde Adressen | keine | `requests.cjs`, alle Seiten geladen bis `networkidle` und `document.fonts.ready`: «EXTERN 0 []». Keine Konsolenfehler, keine `pageerror`, keine Antwort ≥ 400 |
+| lokale Schriften | nur Rubik 300, 400, 500 (je woff2), `font-display: swap`; «Rubik Variable» wird nicht geladen | geladen laut `document.fonts`: «Rubik 300 normal», «Rubik 400 normal», «Rubik 500 normal» auf jeder Seite. Dateien: `assets/fonts/Rubik-Light.woff2` 55 800 B, `-Regular` 61 088 B, `-Medium` 61 716 B |
+| Lizenz der Schriften | OFL liegt im Projekt (`assets/fonts/OFL.txt`, `licenses/Rubik-OFL.txt`), nicht im Website-Ordner. `export.mjs` kopiert nur Schriftdateien, auf die `url()` zeigt | SP2-W3-7 (→ 5.6.3) |
+| Dateigrössen je Seite | ungepackt 328–406 kB, gepackt (gzip -9) etwa 218–240 kB. Die Schriften machen 178,6 kB aus (woff2, schon gepackt) | siehe Tabelle unten |
+| Sicherheits-Header | CSP, `X-Content-Type-Options: nosniff`, `Referrer-Policy: no-referrer`, `Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()`, `X-Frame-Options: DENY` (dazu `frame-ancestors 'none'`); deckt Leitlinie D ab | `_headers`. Kein `Strict-Transport-Security`: Für `*.netlify.app` erzwingt der Browser HTTPS schon, weil die ganze Endung `.app` auf der HSTS-Preload-Liste steht; bei einer eigenen Domain wäre HSTS nötig (SP2-W3-6). Ob Netlify die Header wirklich ausliefert → 5.6.4 |
+| `target="_blank"` | kommt nicht vor | `technik.mjs`: 0. Externe Links öffnen im selben Fenster; mit `Referrer-Policy: no-referrer` geht die besuchte Seite nicht an Dritte |
+| `mailto:` | 22 Links, alle `mailto:angehoerigenarbeit@pukzh.ch` ohne Parameter | je Seite 1 (Absenderin), `index` 2, `ueber` 3, `impressum-datenschutz` 3, `404` 1; `gate.html` 0 |
+| `tel:` | 0 | `technik.mjs` |
+| Zugangsdaten im Website-Ordner | keine Treffer | `grep -rliE "passwor|api[_-]?key|secret|bearer |ghp_|token="` ohne Treffer |
+| Bilder | nur `assets/logo.svg` (SVG) | 17 × `<img src="assets/logo.svg" alt="Psychiatrische Universitätsklinik Zürich">` ohne `width` und `height`. Breite per CSS `--web-logo-width`. Das Logo hat 39 725 B, davon 7 736 B `<metadata>` mit C2PA-Manifest (SP2-W3-8) |
+
+**Gewicht je Seite** (eigene Messung; ungepackt aus `requests.cjs`; gepackt mit `gzip -9`. CSS gepackt 30 568 B für die 7 Dateien, `interaktion.js` gepackt 3 930 B, Logo gepackt 7 551 B, Schriften 178 604 B):
+
+| Seite | HTML ungepackt | HTML gepackt | Skript | gesamt ungepackt (Browser) | gesamt gepackt |
+| --- | ---: | ---: | :---: | ---: | ---: |
+| index | 9 211 | 2 981 | – | 332 575 | 219 704 |
+| verstehen | 32 312 | 9 763 | ja | 368 298 | 230 416 |
+| beziehungen | 25 679 | 7 610 | ja | 361 665 | 228 263 |
+| grenzen | 25 713 | 7 647 | ja | 361 699 | 228 300 |
+| rolle | 42 028 | 12 740 | ja | 378 014 | 233 393 |
+| selbstfuersorge | 35 273 | 10 993 | ja | 371 259 | 231 646 |
+| kommunizieren | 41 124 | 12 044 | ja | 377 110 | 232 697 |
+| krise | 27 077 | 8 017 | ja | 363 063 | 228 670 |
+| genesung | 25 287 | 7 671 | ja | 361 273 | 228 324 |
+| unterstuetzung | 21 911 | 6 759 | ja | 357 897 | 227 412 |
+| diagnose | 29 177 | 8 479 | ja | 365 163 | 229 132 |
+| behandlung | 35 152 | 10 114 | ja | 371 138 | 230 767 |
+| fragen | 38 555 | 10 495 | ja | 374 541 | 231 148 |
+| quellen | 70 026 | 19 490 | ja | 406 012 | 240 143 |
+| ueber | 11 878 | 4 046 | – | 335 242 | 220 769 |
+| impressum-datenschutz | 9 798 | 3 432 | – | 333 162 | 220 155 |
+| 404 | 4 812 | 1 679 | – | 328 176 | 218 402 |
+
+Im Arbeitsbaum lädt jede Seite 7 Stylesheets, teils hintereinander über `@import`. Der Export führt sie zu einer `css/site.css` zusammen → 5.6.3. Für eine mittlere Mobilverbindung sind etwa 220–240 kB unkritisch. Echte Ladezeiten auf der Vorschau → 5.6.4.
+
+**Nicht geprüft in diesem Teil:** Erreichbarkeit der externen Links (Netzwerk; nicht in den Punkten 1, 2 und 5) und `npm audit`. Die Website hat keine Abhängigkeiten; `quellcode/komponenten/` gehört zum Profil.
+
+#### Befunde
+
+| ID | Stufe | Gewicht | Befund | Beleg |
+| --- | --- | --- | --- | --- |
+| SP2-W3-1 | W3 (G, Metadaten) | wichtig | Die Fusszeile aller 17 Seiten sagt «Redaktioneller Status: Entwurf – fachliche Prüfung ausstehend», obwohl alle Seiten fachlich freigegeben sind (10.–12.10.2026). Das Produktionsgate prüft `editorialStatus` nicht: Ein Export mit `--production` nach erledigten Stufen würde «Entwurf» veröffentlichen. Der Wert ist vor dem Produktionsexport zu ändern; den Wortlaut entscheidet die Fachstelle (SP2-F-W3-1). Bisher nur als «Hinweis (nicht geändert)» festgehalten, ohne Entscheid | `index.html` Fusszeile: «Redaktioneller Status: Entwurf – fachliche Prüfung ausstehend» (17 von 17 Seiten); `site.config.json` › `editorialStatus`; `contract.js` Z. 176 (Ausgabe) und Z. 190 (nur Pflichtfeld, keine Prüfung auf «Entwurf»); `gate.mjs --production` blockiert nur `review-report`; `PRUEFBERICHT.md` Z. 1168 und 5406 |
+| SP2-W3-2 | W3 (G) | optional | Im Visualisierungsplan stehen 98 Textzeilen weiter auf `approvalStatus` «ausstehend», obwohl ihre Seiten freigegeben sind. Das Gate wertet Textzeilen nicht aus (`contract.js` Z. 256 nur `format !== 'text'`), `gate.html` zeigt aber «ausstehend». Uneinheitliche Daten; eintragen darf nur die Fachstelle (SP2-F-W3-1) | `site.config.json`: «text \| ausstehend: 98», «text \| entfällt: 1», 10 Abbildungen «freigegeben» (eigene Auszählung) |
+| SP2-W3-3 | W3 (A, G) | optional (Profil) | Der Gate-Bericht im Browser (`gate.html`, `tools/gate-browser.js`) zeigt andere Ergebnisse als die Kommandozeile. «Produktion: 0 blockierend», weil `report` nicht übergeben wird (keine Prüfung `review-report`). «Selbsttest: 22/65 bestanden», weil der Selbsttest an den Seiten dieser Website läuft statt an `tools/selftest/`; die Fehlerklassen setzen Starter-Dateien voraus (`unterstuetzung-finden.html`, `behandlung-verstehen.html`). Die Plantabelle zeigt `sectionId`, `understood`, `resonance` und `entryPoint` nicht. Die Seite behauptet «dieselbe Prüfung wie `node tools/gate.mjs`». Die Datei ist gleich wie im Starter, also an das Profil melden; bis dahin `gate.html` nicht als Beleg verwenden. Nicht im Export | `gatebrowser.cjs`: «summary: Entwurf: 0 blockierend · Produktion: 0 blockierend (erwartet: offene Freigaben) · Selbsttest: 22/65 bestanden»; Kommandozeile: «Gate production: 1 blockierend», «Selbsttest: 65/65»; `gate-browser.js` Z. 13 und 16; `contract.js` Z. 471 und 483 |
+| SP2-W3-4 | W3 (G) | optional | `abgleich/kennzahlen.mjs` gibt noch Richtwerte aus, die nach den Entscheiden nicht gelten: `fragen` 1500/1575 (gilt nicht, `KORREKTUR-ETAPPE-3-1.md` Z. 18) und `ueber` 900/945 (kein Richtwert, NK-F-7, `UMBAUPLAN.md`). So erscheinen `fragen` mit 3250 Wörtern und «+5 %» 1575 als Überschreitung. Ausserdem zählt «Semikolons alt» alle Semikolons des Bestands, auch in Quellen; «neu» zählt ohne Quellenabsätze. Die Spalte vergleicht Ungleiches (`quellen` «136 → 0», `fragen` «153 → 0») | `kennzahlen.mjs` Z. 39 (`RICHTWERT`) und `oldPage()` (`text.match(/;/g)`) gegen `semicolons()` mit `SOURCE`; Ausgabe «\| `fragen` \| 4684 \| 3250 \| 69 % \| 1500 \| 1575 \|» |
+| SP2-W3-5 | W3 (G) | optional | `pruefe-abgleich.mjs` prüft weder die Spalte «Satz (Bestand)» gegen den Bestand noch die Vollständigkeit (jeder Bestandssatz hat eine Zeile). «0 ohne Fundstelle» beweist daher nur Ort, neue Fassung und Zitate. `bestand()` verschluckt Git-Fehler (`catch { return null; }`) ohne Meldung. `verwendet-auf.mjs` endet auch bei Abweichungen mit Exit 0. Eigene Prüfung: Von 7117 Zeilen mit Bestandssatz stehen 7016 nach der Normalisierung des Skripts wörtlich in den zugeordneten Bestandsdateien, 101 nicht (67 `quellen`, 16 `ueber`, 9 `diagnose`, 3 `behandlung`, 2 `grenzen`, je 1 `verstehen`, `kommunizieren`, `krise`, `genesung`). Sichtbar meist Formatierung («Vorschau: …», «[Grafik: …]», Literaturangaben). Ob die Aussage stimmt, ist Sache von W1; Liste an W1 | `scratchpad/w3a/bestandsatz.txt` (z. B. «krise Nr. 5: In der Krise unterstützen», «quellen Nr. 32: Shah, R. & Zanarini, M. C. (2018) …»); `pruefe-abgleich.mjs` Z. 6–13 und `bestand()`; `verwendet-auf.mjs` letzte Zeile ohne `process.exit` |
+| SP2-W3-6 | W3 (D) | optional (Profil) | Die CSP und weitere Header lassen sich enger fassen: `img-src` ohne `data:` (auf den Seiten nicht gebraucht), `connect-src 'none'` und `form-action 'none'` (keine Abrufe, keine Formulare auf den veröffentlichten Seiten), `Permissions-Policy` mit `browsing-topics=()`. HSTS fehlt; für `*.netlify.app` ist das wegen der Preload-Liste für `.app` ohne Folge, bei einer eigenen Domain ergänzen. `_headers` ist gleich wie im Starter, also an das Profil | `_headers`; `requests.cjs` und `interakt.cjs`: 0 Verstösse, keine `data:`-Bilder, kein `fetch` auf den 17 Seiten |
+| SP2-W3-7 | W3 (C, E) | optional, Prüfbedarf (→ 5.6.3) | Die Rubik-Dateien stehen unter der SIL Open Font License 1.1. Ihre Bedingung 2 verlangt beim Weitergeben Copyright-Hinweis und Lizenz. `export.mjs` kopiert nur die Schriftdateien, nicht `OFL.txt`. Ob die veröffentlichte Website die Lizenz mitliefern soll (z. B. `fonts/OFL.txt`), entscheidet das Profil; prüfen, ob der Export sie enthält | `assets/fonts/OFL.txt` Z. 3 und 9; `export.mjs` Schritt 2 (`copied` nur aus `url()`) |
+| SP2-W3-8 | W3 (E) | optional (Profil) | `assets/logo.svg` hat 39 725 B, davon ein `<metadata>`-Block von 7 736 B mit einem C2PA-Manifest (base64, dekodiert 5 762 B). Herkunftsangabe «Claude provided this file», Signatur «Anthropic Claude Content Signing». Das Manifest ist für die Darstellung unnötig, und beim offiziellen Logo der Klinik ist die Herkunftsangabe zumindest erklärungsbedürftig. `<img>` ohne `width` und `height` (kleine Layoutverschiebung beim Laden). Gleich wie im Starter, also an das Profil | Python-Auszug der Zeichenketten aus dem Manifest: «com.anthropic.claude.provided», «Claude provided this file», «Anthropic Claude Content Signing»; `index.html` `<img src="assets/logo.svg" alt="…">` |
+
+#### Fragen an die Fachstelle
+
+| ID | Frage | Beleg |
+| --- | --- | --- |
+| SP2-F-W3-1 | Welcher «Redaktionelle Status» soll nach der Freigabe in der Fusszeile stehen (z. B. Datum der fachlichen Prüfung)? Sollen die 98 Textzeilen des Visualisierungsplans mit der Seitenfreigabe auf «freigegeben» gesetzt werden? Beides trägt nur die Fachstelle ein | SP2-W3-1, SP2-W3-2; `site.config.json` › `editorialStatus` und `pages[].visualPlan[].approvalStatus` |
+
+**Hinweise an andere Teile** (keine eigenen Befunde): `_redirects` wird nicht exportiert (dokumentierter Handschritt), Lizenzdatei der Schriften, Zusammenführung der CSS → 5.6.3. Grossbuchstaben in Z. 16 `/Notfallkarte-Zuerich-Psychische-Krise.pdf`, «Pretty URLs» gegen `canonical` und `sitemap.xml` mit `.html`, ausgelieferte Header → 5.6.4. 101 Abgleichzeilen, deren Bestandssatz nicht wörtlich im Bestand steht → W1.
+
+#### Zählung
+
+- **wichtig:** 1 (SP2-W3-1)
+- **optional:** 7 (SP2-W3-2 bis SP2-W3-8; davon 4 an das Profil: W3-3, W3-6, W3-7, W3-8)
+- **Fragen an die Fachstelle:** 1 (SP2-F-W3-1)
+
+**Empfehlung zum Status W3:** «offen». Für die Punkte 1, 2 und 5 ist alles mit Beleg geprüft, aber SP2-W3-1 ist offen. Die Punkte 3 und 4 (Export, Ziel-Repository, Netlify-Vorschau) prüft ein anderer Teil, ebenso die Erreichbarkeit der externen Links.
+
+### 5.6 W3 · Punkte 3 und 4: Export, Ziel-Repository, Netlify-Vorschau (Z31-W3-2) · Prüfung 2
+
+**Geprüfter Stand:** Website `f1d6572` (Arbeitsbaum `wt`), Ziel-Repository `christaegger-dot/borderline-angehoerige` Branch `umzug-puk-profil-1791821335` (`34a2e58`), `main` und `react-archiv` (`f46038b`), Vorschau `https://deploy-preview-659--borderline-angehoerige.netlify.app` (12.10.2026, ca. 17:15–17:45 UTC). Nichts geändert: Werkzeuge nur in der eigenen Kopie `scratchpad/kopie-w3b` (dort `.git`-Verweis entfernt), Ziel-Repository nur gelesen (`git show`, `git archive`, `git diff`), GitHub und Netlify nur lesend (`pull_request_read`, `get-project`, `get-deploy-for-site`).
+
+**Vorgehen (Skripte und Ausgaben in `scratchpad/w3b/`):**
+- Export: `node tools/export.mjs scratchpad/w3b/export` und `… scratchpad/w3b/export-prod --production` in `kopie-w3b/templates/website/borderline-angehoerige`; `site/` mit `git archive origin/umzug-puk-profil-1791821335 site` nach `w3b/site/`; `diff -r`, SHA-256-Listen (`hash-export.txt`, `hash-site.txt`), `cmp` für `_redirects`.
+- Ziel-Repository: `git diff --name-status origin/main origin/umzug-puk-profil-1791821335` (`diff-main-umzug.txt`), `git rev-parse` für Commit und Tree, alte Routen aus `client/src/app/routes.ts`, `client/public/sitemap.xml`, `client/public/_redirects`, alte `netlify.toml`, Handout-IDs aus `client/src/content/handoutTextMetas.ts`.
+- Weiterleitungen: `skripte/redirects.py` (je Regel `curl -sS -o /dev/null -w '%{http_code} %{redirect_url}'` ohne Folgen, mit bis zu 3 Versuchen bei Netzfehler `000`; Ziel ohne Anker abrufen, Status, `<title>`, `id="<anker>"`); Ergebnis `redirects.json`. Varianten mit `curl` von Hand (Ausgaben unten).
+- Browser: `skripte/browser.mjs` (Playwright global, Chromium aus `/opt/pw-browsers`, über den Proxy, 1280 px): 17 Seiten als `/<id>.html` sowie `/`, `/verstehen`, `/verstehen/`, `/a/b/c`; Konsole, fehlgeschlagene und fremde Anfragen, geladene Schriften, Logo, Stylesheets, Absenderin, `lang`, Netlify-Block; Fotos `foto_.png`, `foto_verstehen_.png`, `foto_a_b_c.png`. Gegenprobe `skripte/gegenprobe.mjs`: (a) `/.netlify/**` gesperrt, (b) Netlify-Block vor dem Rendern aus dem HTML entfernt.
+- Kopfzeilen: `skripte/kopf.sh` (je Adresse `curl -D -`, CSP und Permissions-Policy als MD5 gegen die Werte aus `site/_headers`).
+- Ausgeliefert gegen Export: rohe Seiten nach `w3b/roh/`, `skripte/vergleich.py` (Netlify-Block entfernen, `<a>`-Tags normalisieren: Attribute sortiert, Anführungszeichen vereinheitlicht, im Export `x.html` → `/x`, `index.html` → `/`), CSS, JS, Schriften, Logo, Favicon, `sitemap.xml` per SHA-256.
+- Links: `skripte/links.py` (alle `href`/`src` der 17 ausgelieferten Seiten, gegen die Seitenadresse aufgelöst, Ziel abgerufen, Anker im Ziel geprüft).
+
+#### Punkt 3 · Export und Ziel-Repository
+
+| Punkt | Ergebnis | Beleg |
+| --- | --- | --- |
+| 3.1 Export selbst erzeugt (Entwurf) | erfüllt | Ausgabe: «Export nach …/w3b/export: 17 Seiten · css/site.css · 3 Schriftdateien · js/interaktion.js · Gate draft: 0 blockierend, 2 Hinweise.» (rc 0) |
+| 3.1 Export mit `--production` | blockiert, wie erwartet | rc 1: «BLOCK site review-report Prüfbericht: offene Stufen W1, W2, S, Visualisierungs-Check, Bedienung und Barrierefreiheit, W3, R1 Profil-Audit, R2 Visualisierung und Laienverständlichkeit, R3 Freigabe-Audit – Status «erledigt» oder «entfällt: Begründung»» / «Export abgebrochen: 1 blockierende Befunde (production).»; Zielordner nicht angelegt |
+| 3.1 Eigener Export gegen `site/` (`34a2e58`) | gleich bis auf `_redirects` | `diff -r export site/site`: einzige Ausgabe «Only in …/site/site: _redirects». SHA-256 über 26 Dateien gleich (`diff hash-export.txt hash-site.txt`: nur die Zeile `_redirects`). Dateiliste `site/`: 17 Seiten, `_headers`, `_redirects`, `assets/favicon.svg`, `assets/logo.svg`, `css/site.css`, `fonts/Rubik-{Light,Regular,Medium}.woff2`, `js/interaktion.js`, `sitemap.xml` (27 Dateien). Bewertung: `site/` wurde aus `f78aae9` exportiert, der eigene Export aus `f1d6572`; Gleichheit bestätigt die Angabe «Inhalte gleich wie `f78aae9`». `_redirects` fehlt im Export erwartungsgemäss (`tools/export.mjs` Z. 85 kopiert nur `_headers`; bekannt als P3b-W3-1, von Hand kopiert, im README des Ziel-Repositorys beschrieben) – keine Abweichung zu bewerten |
+| 3.2 `_redirects` in `site/` gegen Website-Ordner | byte-gleich | `cmp` ohne Ausgabe; SHA-256 beider Dateien `dc69176f557551d29aa77c1c348f5634e77089cb692e231822c13d6af3ba9333`. 85 Regeln (eigene Zählung `grep -vE '^\s*(#\|$)' _redirects \| wc -l` = 85), alle 3 Felder mit Status 301, keine Quelle doppelt (`uniq -d` leer) |
+| 3.3 `netlify.toml` | ohne Befund | `[build] publish = "site"`, `command = "echo 'Statische Website: kein Build'"`; einzige Regel `/404` → `/404.html` Status 404 `force = true`; keine `[[headers]]` (Header nur in `site/_headers`, auf der Vorschau wirksam, unten 4.3), keine Einstellungen zu Pretty URLs oder Nachbearbeitung. Kopfkommentar erklärt den Unterordner. Netlify bestätigt «86 redirect rules processed», «1 header rule processed», `commit_ref` `34a2e58` (`get-deploy-for-site` für Deploy `6acd0e03ea79a5743fa2824e`) |
+| 3.3 `README.md` | ohne Befund | nennt Absenderin und Kontakt, Inhalt von `site/`, Quelle, Entstehung (`node tools/export.mjs`, `--production`, `_redirects` von Hand), `react-archiv`, Stand «Entwurfs-Export»; keine Telefonnummer (`grep -cE` auf `tel:` und Ziffernfolgen im README: 0) |
+| 3.3 `.gitignore` | ohne Befund | schliesst `**/node_modules`, `dist/`, `build/`, `coverage/`, `playwright-report/`, `test-results/`, `.env`, `.env.*`, `.netlify`, `.claude/`, Editor- und Systemdateien aus |
+| 3.3 Stamm insgesamt | ohne Befund | `git ls-tree --name-only origin/umzug-puk-profil-1791821335`: `.gitignore`, `CLAUDE.md`, `README.md`, `netlify.toml`, `site`. `CLAUDE.md` unverändert (Branch-Benennung `claude/<beschreibung>-<zeitstempel>`, iCloud-Artefakte) |
+| 3.4 Entfernte Dateien | 968 gelöscht, 2 umbenannt, 3 geändert, 25 neu | `git diff --name-status origin/main origin/umzug-puk-profil-1791821335`: D 968, M 3 (`.gitignore`, `README.md`, `netlify.toml`), R100 2 (`client/public/puk/logo.svg` → `site/assets/logo.svg`, `client/public/puk/symbol.svg` → `site/assets/favicon.svg`), A 25. Gelöscht nach Ordner: `qa` 410, `client` 348, `docs` 54, `e2e` 41, `_dev` 34, `handouts` 30, `.github` 16, `scripts` 9, `server` 4, `shared` 3, `netlify` 1 (Funktion), dazu Konfigurationsdateien. Zahl 968 der bauenden Sitzung bestätigt |
+| 3.4 Braucht die neue Website etwas davon? Regelziele | nein | Alle 85 Regelziele sind Seiten in `site/` (Ziel 200 auf der Vorschau, 64 von 64 Ankern vorhanden, Tabelle 4.2). Kein Regelziel zeigt auf ein PDF, Bild oder Handout |
+| 3.4 Alte Routen abgedeckt | ja | Alle 29 Routen aus `client/src/app/routes.ts` und alle 27 Adressen der alten `sitemap.xml` sind Regelquelle oder gleichnamige neue Seite (`/`, `/verstehen`, `/grenzen`, `/kommunizieren`, `/selbstfuersorge`, `/genesung`, `/quellen`). 42 Handout-IDs aus `HANDOUT_TEXT_VERSION_IDS` = 42 Quellen `/materialien/text/<id>` (`comm -3`: nur die Platzhalterregel `*` zusätzlich). Die 5 PDFs aus `client/public/infografiken/` haben je eine Regel, alle übrigen Dateien unter `/infografiken/` (auch die `-v1`-Weiterleitungen aus dem alten `client/public/_redirects` und die `.webp`) fallen unter `/infografiken/*` |
+| 3.4 Öffentliche Dateien ohne Regel | 404, ohne Seitenbezug | Aus `client/public/` ohne Regel und nicht im Export: `/robots.txt`, `/og-image.jpg`, `/manifest.json`, `/apple-touch-icon.png`, `/favicon-192.png`, `/favicon-512.png`, `/fonts/*`, `/puk/*` (ausser Logo), `/print.css`, `/fallback.css` u. a. Vorschau: `/robots.txt` 404, `/og-image.jpg` 404, `/manifest.json` 404; Produktion heute: `/robots.txt` 200 (mit `Sitemap:`-Zeile), `/og-image.jpg` 200. `/favicon.ico` antwortet auf der Vorschau mit 200 `image/vnd.microsoft.icon`, obwohl `site/` keine solche Datei enthält (von Netlify geliefert). Siehe SP2-W3N-3 |
+| 3.5 `react-archiv` gleich wie `main` | erfüllt | `git rev-parse`: beide `f46038b04bba7f849cc6691892d3729f9c5aa7f8`, Tree beider `2f35f70d76da66a712c8657c93c06ff3e8232cd7`; `git ls-remote`: `refs/heads/main` und `refs/heads/react-archiv` je `f46038b…` |
+| PR #659 | offen, nicht gemergt, kein Entwurf | `pull_request_read get`: `state open`, `draft false`, `merged false`, `mergeable_state clean`, Kopf `34a2e58`, Basis `main` `f46038b`, 998 Dateien. Titel «… (Entwurf, NICHT MERGEN)». Status: «netlify/borderline-angehoerige/deploy-preview: Deploy Preview ready!» für `34a2e58`. Siehe SP2-F-W3N-3 |
+
+#### Punkt 4 · Netlify-Vorschau
+
+**Zugang:** Die Vorschau ist ohne Anmeldung erreichbar (`curl` ohne Anmeldung `/` 200). `get-project`: `requiresSSOTeamLogin: false`, `requiresPassword: false`. Alles prüfbar.
+
+**Stand der Vorschau = `34a2e58`:** erfüllt. `get-deploy-for-site`: Deploy `6acd0e03ea79a5743fa2824e`, `context: deploy-preview`, `review_id 659`, `commit_ref 34a2e58c…`, «17 generated pages and 1 asset changed». Ausgeliefert gegen `site/`: `css/site.css`, `js/interaktion.js`, `assets/logo.svg`, `assets/favicon.svg`, drei Schriften und `sitemap.xml` SHA-256-gleich (z. B. `css/site.css` `537aa385bf764b4b…` beidseits). Alle 17 Seiten roh abweichend, nach Abzug von Netlify-Block und Umschreiben der `<a>`-Tags alle 17 gleich (`vergleich.py`: «nach Abzug gleich» × 17; 288 umgeschriebene `<a>`-Tags auf 17 Seiten, mit den 9 der Seite `/a/b/c` 297 – Zahl der bauenden Sitzung bestätigt).
+
+##### 4.1 Die zehn Punkte «Etappe 3-2: Auf der Vorschau zu prüfen (Z31-W3-2)»
+
+| Nr. | Ergebnis | Beleg (eigene Prüfung) |
+| --- | --- | --- |
+| 1 Startseite neu | erfüllt | Browser `/`: 200, Titel «Startseite \| Borderline – Orientierung für Angehörige», h1 «Borderline – Orientierung für Angehörige», Stylesheet `/css/site.css?v=r4-8`, Rubik 300/400/500 geladen, Logo `assets/logo.svg` 214 px, Absenderin vorhanden; Foto `foto_.png` zeigt Kopf mit PUK-Logo und Zeile «ABSENDERIN Fachstelle Angehörigenarbeit · Psychiatrische Universitätsklinik Zürich · angehoerigenarbeit@pukzh.ch» |
+| 2 Krisenrouten | erfüllt | `/soforthilfe -> 301 /index.html`, `/notfallkarte -> 301 /index.html`, `/soforthilfe/ -> 301 /index.html`, `/soforthilfe/irgendwas -> 301 /index.html`, `/soforthilfe/index.html -> 301 /index.html`, `/notfall/ -> 301 /index.html`; Ziel `/index.html` 200 |
+| 3 Gleichnamige Routen | erfüllt | `/verstehen`, `/grenzen`, `/kommunizieren`, `/selbstfuersorge`, `/genesung`, `/quellen` je `200`; je mit Schrägstrich `301` auf die Adresse ohne (`/verstehen/ -> 301 /verstehen` usw.). Browser `/verstehen`: Titel «Borderline verstehen \| …» |
+| 4 Anker im Ziel | erfüllt | `/therapieangebote -> 301 /behandlung.html#angebote`, `/selbsthilfegruppen -> 301 /unterstuetzung.html#selbsthilfe`; Ziele 200, `id="angebote"` bzw. `id="selbsthilfe"` im Ziel; alle 64 Regeln mit Anker: Anker vorhanden (4.2) |
+| 5 `/x.html` und `/x` | erfüllt | `/verstehen.html -> 200`, `/verstehen -> 200`, keine weitere Umleitung; `/index.html -> 200`. Zusätzlich: `/index -> 301 /`, `/verstehen.html/ -> 301 /verstehen` |
+| 6 Gross- und Kleinschreibung | erfüllt für die genannte Adresse; Rest siehe SP2-W3N-1 | `/Notfallkarte-Zuerich-Psychische-Krise.pdf -> 301 /index.html`; `/notfallkarte-zuerich-psychische-krise.pdf -> 404`, `/NOTFALLKARTE-ZUERICH-PSYCHISCHE-KRISE.PDF -> 404`; Seiten: `/VERSTEHEN -> 301 /verstehen`, `/Verstehen.html -> 301 /verstehen`. Regelquellen in anderer Schreibung: `/FAQ -> 404`, `/Faq/ -> 404`, `/Soforthilfe -> 404`, `/SOFORTHILFE/ -> 404`, `/Therapieangebote -> 404`, `/Infografiken/puk-garten-v1.pdf -> 404`; in der Platzhalterregel `/materialien/text/DEAR -> 301 /index.html#einstiege` (statt `/grenzen.html#dear`) |
+| 7 404 in der Tiefe | erfüllt | Browser `/a/b/c`: 404, h1 «Diese Seite gibt es nicht», Rubik 3 Schnitte, Logo `/assets/logo.svg` 214 px, Stylesheet `/css/site.css?v=r4-8`, Absenderin; Foto `foto_a_b_c.png`. `/foo.html -> 404` |
+| 8 404 für `/404` und Repository-Dateien | erfüllt | `/404 -> 404`, `/README.md -> 404`, `/CLAUDE.md -> 404`, `/netlify.toml -> 404`, `/_redirects -> 404`, `/_headers -> 404`; `/404.html -> 200` |
+| 9 Konsole und Kopfzeilen | erfüllt für die Website | Kopfzeilen 4.3 (25 Adressen, alle wie `_headers`). Konsole: 21 geladene Adressen × 4 Meldungen (dazu auf `/a/b/c` die 404 der Seite selbst): «Refused to apply inline style … "style-src 'self'"», «Refused to frame 'https://app.netlify.com/' … 'default-src 'self''», «Potential permissions policy violation: camera …», «… microphone …». Gegenprobe (a) `/.netlify/**` gesperrt: je Seite nur noch «Refused to apply inline style» und «Failed to load resource: net::ERR_FAILED» (34 auf 17 Seiten). Gegenprobe (b) Block entfernt: **0 Meldungen auf allen 17 Seiten**. 0 fehlgeschlagene Anfragen, 0 fremde Anfragen (Browser, alle 21 Adressen) |
+| 10 `/verstehen/` (Codex P1) | erfüllt, Befund widerlegt | `/verstehen/ -> 301 /verstehen`; Browser: Endadresse `/verstehen`, Stylesheet geladen, Rubik, Logo 214 px, Absenderin; Foto `foto_verstehen_.png` mit Kopf, Navigation («Verstehen» markiert) und Schrift |
+
+##### 4.2 Alle Weiterleitungen aus `_redirects`
+
+Gezählt: **85 Regeln** (gleich wie Auftrag). Ergebnis `redirects.py`: «85 Regeln; 85 Status+Ziel wie Regel; 85 Ziel 200; 64 Anker vorhanden von 64». Beim ersten Lauf lieferte Regel 13 einmal `000` (Netzfehler im Proxy); drei Wiederholungen von Hand: `301 …/beziehungen.html`. Platzhalterregeln mit `beispiel-xyz` für `*` geprüft. `Location` jeweils absolut (`https://deploy-preview-659--…/<ziel>` mit Anker), unten ohne Host.
+
+Varianten (Auszug, `curl` ohne Folgen): mit Schrägstrich am Ende greifen die Regeln (`/faq/ -> 301 /fragen.html`, `/therapieangebote/ -> 301 /behandlung.html#angebote`, `/materialien/text/dear/ -> 301 /grenzen.html#dear`, `/verstehen/diagnostik/ -> 301 /diagnose.html`, `/impressum/ -> 301 /impressum-datenschutz.html#impressum`, `/unterstuetzen/ -> 301 /rolle.html`); in anderer Gross- und Kleinschreibung nicht (4.1 Nr. 6).
+
+| Nr. | Quelle (geprüft) | Regelziel | Antwort | Location | Ziel | Anker | Titel des Ziels |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | `/soforthilfe` | `/index.html` | 301 | `/index.html` | 200 | – | Startseite |
+| 2 | `/soforthilfe/beispiel-xyz` | `/index.html` | 301 | `/index.html` | 200 | – | Startseite |
+| 3 | `/notfall` | `/index.html` | 301 | `/index.html` | 200 | – | Startseite |
+| 4 | `/notfallkarte` | `/index.html` | 301 | `/index.html` | 200 | – | Startseite |
+| 5 | `/notfallkarte.html` | `/index.html` | 301 | `/index.html` | 200 | – | Startseite |
+| 6 | `/materialien/text/notfallplan-krise` | `/index.html` | 301 | `/index.html` | 200 | – | Startseite |
+| 7 | `/notfallplan-krise-v04.pdf` | `/index.html` | 301 | `/index.html` | 200 | – | Startseite |
+| 8 | `/Notfallkarte-Zuerich-Psychische-Krise.pdf` | `/index.html` | 301 | `/index.html` | 200 | – | Startseite |
+| 9 | `/notfallkarte-preview.webp` | `/index.html` | 301 | `/index.html` | 200 | – | Startseite |
+| 10 | `/notfallplan-krise-v04-preview.webp` | `/index.html` | 301 | `/index.html` | 200 | – | Startseite |
+| 11 | `/verstehen/diagnostik` | `/diagnose.html` | 301 | `/diagnose.html` | 200 | – | Diagnose und Begleiterkrankungen |
+| 12 | `/verstehen/begleiterkrankungen` | `/diagnose.html#begleiterkrankungen` | 301 | `/diagnose.html#begleiterkrankungen` | 200 | vorhanden | Diagnose und Begleiterkrankungen |
+| 13 | `/verstehen/beziehungen` | `/beziehungen.html` | 301 | `/beziehungen.html` | 200 | – | Was zwischen Ihnen geschieht |
+| 14 | `/unterstuetzen/uebersicht` | `/rolle.html` | 301 | `/rolle.html` | 200 | – | Ihre Rolle klären |
+| 15 | `/unterstuetzen/alltag` | `/rolle.html#alltag` | 301 | `/rolle.html#alltag` | 200 | vorhanden | Ihre Rolle klären |
+| 16 | `/unterstuetzen/therapie` | `/behandlung.html` | 301 | `/behandlung.html` | 200 | – | Behandlung und Ihre Rolle darin |
+| 17 | `/unterstuetzen/krise` | `/krise.html` | 301 | `/krise.html` | 200 | – | Krisen begleiten |
+| 18 | `/uebungen` | `/kommunizieren.html#beispiele` | 301 | `/kommunizieren.html#beispiele` | 200 | vorhanden | Zugewandt und klar sprechen |
+| 19 | `/selbsttest` | `/index.html#einstiege` | 301 | `/index.html#einstiege` | 200 | vorhanden | Startseite |
+| 20 | `/wegweiser` | `/index.html#einstiege` | 301 | `/index.html#einstiege` | 200 | vorhanden | Startseite |
+| 21 | `/materialien` | `/index.html#einstiege` | 301 | `/index.html#einstiege` | 200 | vorhanden | Startseite |
+| 22 | `/fachstelle` | `/unterstuetzung.html#beratung` | 301 | `/unterstuetzung.html#beratung` | 200 | vorhanden | Unterstützung finden |
+| 23 | `/beratung` | `/unterstuetzung.html#beratung` | 301 | `/unterstuetzung.html#beratung` | 200 | vorhanden | Unterstützung finden |
+| 24 | `/buchempfehlungen` | `/unterstuetzung.html#buecher` | 301 | `/unterstuetzung.html#buecher` | 200 | vorhanden | Unterstützung finden |
+| 25 | `/faq` | `/fragen.html` | 301 | `/fragen.html` | 200 | – | Häufige Fragen |
+| 26 | `/glossar` | `/quellen.html#begriffe` | 301 | `/quellen.html#begriffe` | 200 | vorhanden | Quellen und Begriffe |
+| 27 | `/ueber-uns` | `/ueber.html` | 301 | `/ueber.html` | 200 | – | Über diese Website |
+| 28 | `/barrierefreiheit` | `/ueber.html#barrierefreiheit` | 301 | `/ueber.html#barrierefreiheit` | 200 | vorhanden | Über diese Website |
+| 29 | `/feedback` | `/ueber.html#rueckmeldung` | 301 | `/ueber.html#rueckmeldung` | 200 | vorhanden | Über diese Website |
+| 30 | `/impressum` | `/impressum-datenschutz.html#impressum` | 301 | `/impressum-datenschutz.html#impressum` | 200 | vorhanden | Impressum und Datenschutz |
+| 31 | `/datenschutz` | `/impressum-datenschutz.html#datenschutz` | 301 | `/impressum-datenschutz.html#datenschutz` | 200 | vorhanden | Impressum und Datenschutz |
+| 32 | `/unterstuetzen` | `/rolle.html` | 301 | `/rolle.html` | 200 | – | Ihre Rolle klären |
+| 33 | `/diagnostik` | `/diagnose.html` | 301 | `/diagnose.html` | 200 | – | Diagnose und Begleiterkrankungen |
+| 34 | `/begleiterkrankungen` | `/diagnose.html#begleiterkrankungen` | 301 | `/diagnose.html#begleiterkrankungen` | 200 | vorhanden | Diagnose und Begleiterkrankungen |
+| 35 | `/selbsthilfegruppen` | `/unterstuetzung.html#selbsthilfe` | 301 | `/unterstuetzung.html#selbsthilfe` | 200 | vorhanden | Unterstützung finden |
+| 36 | `/therapieangebote` | `/behandlung.html#angebote` | 301 | `/behandlung.html#angebote` | 200 | vorhanden | Behandlung und Ihre Rolle darin |
+| 37 | `/materialien/text/4-alltags-tipps` | `/rolle.html#anbieten` | 301 | `/rolle.html#anbieten` | 200 | vorhanden | Ihre Rolle klären |
+| 38 | `/materialien/text/4-arten-von-grenzen` | `/grenzen.html#arten` | 301 | `/grenzen.html#arten` | 200 | vorhanden | Grenzen setzen |
+| 39 | `/materialien/text/5-faktoren-genesung` | `/genesung.html#einfluesse` | 301 | `/genesung.html#einfluesse` | 200 | vorhanden | Genesung |
+| 40 | `/materialien/text/6-leitlinien` | `/rolle.html#alltag` | 301 | `/rolle.html#alltag` | 200 | vorhanden | Ihre Rolle klären |
+| 41 | `/materialien/text/alarm-modus` | `/verstehen.html#anspannung` | 301 | `/verstehen.html#anspannung` | 200 | vorhanden | Borderline verstehen |
+| 42 | `/materialien/text/anspannungskurve` | `/verstehen.html#anspannung` | 301 | `/verstehen.html#anspannung` | 200 | vorhanden | Borderline verstehen |
+| 43 | `/materialien/text/beispiel-dialog` | `/kommunizieren.html#kippen` | 301 | `/kommunizieren.html#kippen` | 200 | vorhanden | Zugewandt und klar sprechen |
+| 44 | `/materialien/text/beziehungs-achtsamkeit` | `/selbstfuersorge.html#zu-viel` | 301 | `/selbstfuersorge.html#zu-viel` | 200 | vorhanden | Auf sich achten |
+| 45 | `/materialien/text/bruecke-gelaender` | `/grenzen.html#bruecke` | 301 | `/grenzen.html#bruecke` | 200 | vorhanden | Grenzen setzen |
+| 46 | `/materialien/text/dear` | `/grenzen.html#dear` | 301 | `/grenzen.html#dear` | 200 | vorhanden | Grenzen setzen |
+| 47 | `/materialien/text/drei-saeulen` | `/rolle.html#anbieten` | 301 | `/rolle.html#anbieten` | 200 | vorhanden | Ihre Rolle klären |
+| 48 | `/materialien/text/eisberg` | `/verstehen.html#eisberg` | 301 | `/verstehen.html#eisberg` | 200 | vorhanden | Borderline verstehen |
+| 49 | `/materialien/text/energie-konto` | `/selbstfuersorge.html#kraft` | 301 | `/selbstfuersorge.html#kraft` | 200 | vorhanden | Auf sich achten |
+| 50 | `/materialien/text/erlaubnis-karte` | `/selbstfuersorge.html#eigenes-leben` | 301 | `/selbstfuersorge.html#eigenes-leben` | 200 | vorhanden | Auf sich achten |
+| 51 | `/materialien/text/fortschritt-paradox` | `/genesung.html#verlauf` | 301 | `/genesung.html#verlauf` | 200 | vorhanden | Genesung |
+| 52 | `/materialien/text/garten` | `/rolle.html#anbieten` | 301 | `/rolle.html#anbieten` | 200 | vorhanden | Ihre Rolle klären |
+| 53 | `/materialien/text/gehirn` | `/verstehen.html#anspannung` | 301 | `/verstehen.html#anspannung` | 200 | vorhanden | Borderline verstehen |
+| 54 | `/materialien/text/genesung-zahlen` | `/genesung.html#forschung` | 301 | `/genesung.html#forschung` | 200 | vorhanden | Genesung |
+| 55 | `/materialien/text/gespraeche-kippen` | `/kommunizieren.html#kippen` | 301 | `/kommunizieren.html#kippen` | 200 | vorhanden | Zugewandt und klar sprechen |
+| 56 | `/materialien/text/grenzen-erkennen` | `/grenzen.html#erkennen` | 301 | `/grenzen.html#erkennen` | 200 | vorhanden | Grenzen setzen |
+| 57 | `/materialien/text/grenzen-ohne-eskalation` | `/kommunizieren.html#kippen` | 301 | `/kommunizieren.html#kippen` | 200 | vorhanden | Zugewandt und klar sprechen |
+| 58 | `/materialien/text/grenzen-spickzettel` | `/grenzen.html#dear` | 301 | `/grenzen.html#dear` | 200 | vorhanden | Grenzen setzen |
+| 59 | `/materialien/text/kinder` | `/rolle.html#kinder` | 301 | `/rolle.html#kinder` | 200 | vorhanden | Ihre Rolle klären |
+| 60 | `/materialien/text/konsistenz-prinzip` | `/rolle.html#alltag` | 301 | `/rolle.html#alltag` | 200 | vorhanden | Ihre Rolle klären |
+| 61 | `/materialien/text/krisenkommunikation` | `/krise.html#sagen` | 301 | `/krise.html#sagen` | 200 | vorhanden | Krisen begleiten |
+| 62 | `/materialien/text/leuchtturm` | `/rolle.html#anbieten` | 301 | `/rolle.html#anbieten` | 200 | vorhanden | Ihre Rolle klären |
+| 63 | `/materialien/text/lmk` | `/grenzen.html#konsequenz` | 301 | `/grenzen.html#konsequenz` | 200 | vorhanden | Grenzen setzen |
+| 64 | `/materialien/text/pause-statt-streit` | `/kommunizieren.html#moment` | 301 | `/kommunizieren.html#moment` | 200 | vorhanden | Zugewandt und klar sprechen |
+| 65 | `/materialien/text/radikale-akzeptanz` | `/selbstfuersorge.html#akzeptanz` | 301 | `/selbstfuersorge.html#akzeptanz` | 200 | vorhanden | Auf sich achten |
+| 66 | `/materialien/text/remission-heilung` | `/genesung.html#begriffe` | 301 | `/genesung.html#begriffe` | 200 | vorhanden | Genesung |
+| 67 | `/materialien/text/rolle-genesungsprozess` | `/genesung.html#freiwillig` | 301 | `/genesung.html#freiwillig` | 200 | vorhanden | Genesung |
+| 68 | `/materialien/text/rolle-klaeren` | `/rolle.html#anbieten` | 301 | `/rolle.html#anbieten` | 200 | vorhanden | Ihre Rolle klären |
+| 69 | `/materialien/text/sauerstoffmaske` | `/selbstfuersorge.html#unterstuetzung` | 301 | `/selbstfuersorge.html#unterstuetzung` | 200 | vorhanden | Auf sich achten |
+| 70 | `/materialien/text/schuld-verantwortung` | `/rolle.html#schuld` | 301 | `/rolle.html#schuld` | 200 | vorhanden | Ihre Rolle klären |
+| 71 | `/materialien/text/spaltung` | `/verstehen.html#bewertungen` | 301 | `/verstehen.html#bewertungen` | 200 | vorhanden | Borderline verstehen |
+| 72 | `/materialien/text/spiegeln-statt-aufsaugen` | `/kommunizieren.html#anerkennen` | 301 | `/kommunizieren.html#anerkennen` | 200 | vorhanden | Zugewandt und klar sprechen |
+| 73 | `/materialien/text/stopp-technik` | `/selbstfuersorge.html#zu-viel` | 301 | `/selbstfuersorge.html#zu-viel` | 200 | vorhanden | Auf sich achten |
+| 74 | `/materialien/text/warnsignale` | `/selbstfuersorge.html#warnsignale` | 301 | `/selbstfuersorge.html#warnsignale` | 200 | vorhanden | Auf sich achten |
+| 75 | `/materialien/text/wenn-worte-treffen` | `/kommunizieren.html#worte` | 301 | `/kommunizieren.html#worte` | 200 | vorhanden | Zugewandt und klar sprechen |
+| 76 | `/materialien/text/zuhoeren-ohne-zustimmen` | `/kommunizieren.html#anerkennen` | 301 | `/kommunizieren.html#anerkennen` | 200 | vorhanden | Zugewandt und klar sprechen |
+| 77 | `/materialien/text/zustands-landkarte` | `/verstehen.html#anspannung` | 301 | `/verstehen.html#anspannung` | 200 | vorhanden | Borderline verstehen |
+| 78 | `/materialien/text/beispiel-xyz` | `/index.html#einstiege` | 301 | `/index.html#einstiege` | 200 | vorhanden | Startseite |
+| 79 | `/infografiken/puk-garten-v1.pdf` | `/rolle.html#anbieten` | 301 | `/rolle.html#anbieten` | 200 | vorhanden | Ihre Rolle klären |
+| 80 | `/infografiken/manus-genesung-zahlen-v3.pdf` | `/genesung.html#forschung` | 301 | `/genesung.html#forschung` | 200 | vorhanden | Genesung |
+| 81 | `/infografiken/manus-kinder-v3.pdf` | `/rolle.html#kinder` | 301 | `/rolle.html#kinder` | 200 | vorhanden | Ihre Rolle klären |
+| 82 | `/infografiken/puk-4-arten-von-grenzen-v1.pdf` | `/grenzen.html#arten` | 301 | `/grenzen.html#arten` | 200 | vorhanden | Grenzen setzen |
+| 83 | `/infografiken/manus-stopp-technik-v3.pdf` | `/selbstfuersorge.html#zu-viel` | 301 | `/selbstfuersorge.html#zu-viel` | 200 | vorhanden | Auf sich achten |
+| 84 | `/infografiken/beispiel-xyz` | `/index.html` | 301 | `/index.html` | 200 | – | Startseite |
+| 85 | `/api/material-download/beispiel-xyz` | `/index.html` | 301 | `/index.html` | 200 | – | Startseite |
+
+##### 4.3 Kopfzeilen gegen `_headers`
+
+`site/_headers` (`/*`): `Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'`, `X-Content-Type-Options: nosniff`, `Referrer-Policy: no-referrer`, `Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()`, `X-Frame-Options: DENY`. MD5 des CSP-Werts aus der Datei `ac6c2b55`, der Permissions-Policy `4bf39311`.
+
+| Adressen | Status | CSP | Referrer | Permissions | X-Frame | nosniff | dazu von Netlify |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 17 Seiten als `/<id>.html` | 200 | `ac6c2b55` | `no-referrer` | `4bf39311` | `DENY` | `nosniff` | `strict-transport-security: max-age=31536000; includeSubDomains; preload`, `x-robots-tag: noindex`, `cache-control: public,max-age=0,must-revalidate` |
+| `/`, `/verstehen` | 200 | gleich | gleich | gleich | gleich | gleich | gleich |
+| `/a/b/c` | 404 | gleich | gleich | gleich | gleich | gleich | gleich |
+| `/css/site.css?v=r4-8` (`text/css`), `/js/interaktion.js` (`application/javascript`), `/assets/logo.svg`, `/fonts/Rubik-Regular.woff2` (`font/woff2`), `/sitemap.xml` | 200 | gleich | gleich | gleich | gleich | gleich | gleich |
+
+Ergebnis: Die Kopfzeilen aus `_headers` werden auf allen 25 geprüften Adressen tatsächlich ausgeliefert. Der Deploy-Permalink `https://6acd0e03ea79a5743fa2824e--borderline-angehoerige.netlify.app/verstehen.html` liefert dieselbe CSP.
+
+##### 4.4 Links im ausgelieferten HTML
+
+`links.py` über die 17 rohen Seiten: «Verweise 481 verschiedene Ziele 38 {('200', 'Anker ok'): 481} nicht intern: {'mailto': 22, 'extern': 82}». Darin enthalten sind 17 Verweise auf `/.netlify/scripts/cdp` aus dem Netlify-Block; ohne ihn **464 interne Verweise** (400 `a`, 34 `link`, 17 `img`, 13 `script`) auf 178 Ziele mit Anker, alle 200 ohne Umleitung, jeder Anker im Ziel vorhanden. Die externen Verweise (82, inkl. `canonical` auf die Produktionsadresse) gehören zu 5.6 Punkt 5 bzw. zur Prüfung der externen Links und sind hier nicht abgerufen.
+
+##### 4.5 Bewertungen der bauenden Sitzung nachgeprüft
+
+| Aussage der Selbstprüfung | Ergebnis | Beleg |
+| --- | --- | --- |
+| «Pretty URLs» schreibt Seitenlinks um (`verstehen.html` → `/verstehen`, `index.html` → `/`), 297 Links auf 18 Seiten; Pfade zu CSS, Skript, Logo, Schriften und `canonical` unverändert | bestätigt | `diff site/site/verstehen.html roh/verstehen.html`: z. B. `href="verstehen.html" aria-current="page"` → `aria-current='page' … href='/verstehen'`, `href="diagnose.html#abklaerung"` → `href='/diagnose#abklaerung'`; 288 + 9 = 297 umgeschriebene `<a>`-Tags; `<link rel="canonical" href="https://borderline-angehoerige.netlify.app/verstehen.html">` und `css/site.css?v=r4-8` unverändert. `/verstehen.html` und `/verstehen` beide 200 (keine Umleitung von `.html` weg), `sitemap.xml` nennt `.html`. Funktional ohne Fehler (4.4). Die Umschreibung gilt auch auf dem Deploy-Permalink (gleiches Ergebnis im `diff`), also nicht nur auf der Vorschau, sondern für jeden Deploy des Projekts. Entscheid offen: SP2-F-W3N-1 |
+| Netlify fügt auf Vorschauen vor `</body>` einen Block ein (`<div data-netlify-deploy-id=… style="position:fixed">` mit `<script async src="/.netlify/scripts/cdp">`); er löst die CSP-Meldungen aus; die Website selbst 0 Verstösse | bestätigt | Roh-HTML Zeile 117–121 von `/verstehen.html`: «`<div data-netlify-deploy-id="6acd0e03ea79a5743fa2824e" data-netlify-site-id="73a027a4-…" data-vcs="github" style="position:fixed">` … `<script async src="/.netlify/scripts/cdp"></script>`». Gegenprobe (b) ohne Block: 0 Konsolenmeldungen auf 17 Seiten. Der Block verletzt die CSP (`style-src-attr`, `frame-src` über `default-src`) und wird von ihr blockiert; die Website ist dadurch nicht beeinträchtigt (Schrift, Logo, Links wie oben) |
+| Der Block betrifft die Produktion nicht | bestätigt, soweit prüfbar | Produktion heute (React) `grep -c "data-netlify-deploy-id\|.netlify/scripts"` = 0. Neu: derselbe Deploy unter dem Permalink `https://6acd0e03ea79a5743fa2824e--borderline-angehoerige.netlify.app/verstehen.html` (200) enthält den Block nicht (`grep -c` 0; `diff` gegen die Vorschau: nur die Zeilen 117–121). Der Block hängt also an der Adresse `deploy-preview-659--…`, nicht am Deploy. Die neue Produktion selbst ist erst nach dem Merge prüfbar |
+| PDF-Adresse in Kleinschreibung antwortet 404, keine Änderung nötig; die alte Fassung verwies nur auf die Schreibweise mit Grossbuchstaben (13 Dateien) | bestätigt, kein Befund | `git grep -l "Notfallkarte-Zuerich-Psychische-Krise.pdf" origin/main \| wc -l` = 13, kleingeschrieben 0. Zusätzlich: Die Produktion antwortet heute schon auf beide Schreibweisen mit 404 (`/Notfallkarte-Zuerich-Psychische-Krise.pdf -> 404`, `/notfallkarte-zuerich-psychische-krise.pdf -> 404`); die Regel fängt also eine Adresse ab, die schon jetzt keine Datei liefert. Keine Verschlechterung |
+| Links «450 von 450» bzw. «451 Verweise auf 131 Ziele» auf 18 Seiten | Ergebnis bestätigt, Zahl nicht nachvollziehbar | Eigene Zählung 464 interne Verweise auf 17 Seiten (mit `/a/b/c` 477; als Paare Seite–Ziel 439; Ziele 178), alle 200. Die Zählweise der bauenden Sitzung ist nicht angegeben; mit keiner der eigenen Zählweisen ergibt sich 451 oder 131. Siehe SP2-W3N-2 |
+| «86 Weiterleitungs-, 1 Header-Regel», Deploy `6acd0e03…`, Commit `34a2e58` | bestätigt | `get-deploy-for-site` (oben) |
+| Schutz der Vorschauen aus, Empfehlung wieder einschalten | bestätigt (Stand 12.10.2026, ca. 17:40 UTC) | `get-project`: `requiresSSOTeamLogin: false`; Vorschau ohne Anmeldung 200, `x-robots-tag: noindex`. Siehe SP2-F-W3N-2 |
+| Produktion nach dem Merge ungeprüft; Build-Einstellungen des Projekts nicht lesbar | bestätigt, nicht prüfbar | `get-project` liefert keine Build-Einstellungen (nur Zugang, URLs, aktueller Deploy `6acd0c5b463098574672246a`). Belegt ist nur, dass die Vorschau `publish = "site"` aus der `netlify.toml` anwendet (Deploy «ready», 17 Seiten ausgeliefert) |
+| `siteUrl` = Produktionsadresse desselben Projekts (Aufgefallen Nr. 5) | bestätigt | `get-project`: `primarySiteUrl http://borderline-angehoerige.netlify.app`; `canonical` und `sitemap.xml` nennen `https://borderline-angehoerige.netlify.app/…` |
+| `/api/material-download/*` auf die Startseite (Aufgefallen Nr. 8) | bestätigt | `/api/material-download/x -> 301 /index.html`; Deploy: «No functions deployed» |
+| Schriftlizenz fehlt im Export (Aufgefallen Nr. 7) | bestätigt | Dateiliste `site/`: keine Lizenzdatei; die alte Fassung lieferte `/fonts/Rubik-OFL.txt` aus `client/public/fonts/`. Betrifft `tools/export.mjs` im Profil (dort zu entscheiden), kein neuer Befund hier |
+| Entscheid Nr. 3 (Unterordner `site/`) und Nr. 7 (Codex P1 ohne Änderung) | kein Befund | 4.1 Nr. 8 und Nr. 10 |
+
+#### Befunde
+
+| ID | Stufe | Gewicht | Befund | Beleg |
+| --- | --- | --- | --- | --- |
+| SP2-W3N-1 | W3 (Z31-W3-2) | optional | Regelquellen greifen nur in der Schreibweise der Regel. Alte Adressen in anderer Gross- und Kleinschreibung, die auf der heutigen Produktion funktionieren, enden auf der neuen Website mit 404; Handout-Adressen in anderer Schreibung landen über die Platzhalterregel auf der Startseite statt im passenden Abschnitt. Die Selbstprüfung (Nr. 6 «erfüllt, mit Hinweis») hat nur die PDF-Adresse und `/VERSTEHEN` geprüft. Wirkung klein (Links von aussen in abweichender Schreibung sind selten); vor R3 entscheiden, ob hinnehmen oder z. B. die häufigsten Varianten ergänzen | Vorschau: `/FAQ -> 404`, `/Soforthilfe -> 404`, `/Therapieangebote -> 404`, `/Infografiken/puk-garten-v1.pdf -> 404`, `/materialien/text/DEAR -> 301 /index.html#einstiege`. Produktion heute: `/FAQ -> 301 /faq`, `/Soforthilfe -> 301 /soforthilfe/`, `/materialien/text/DEAR -> 301 /materialien/text/dear` (`/Therapieangebote` auch dort 404) |
+| SP2-W3N-2 | W3 (Selbstprüfung 3-2) | optional | Die Linkzahlen der Selbstprüfung «Etappe 3-2» (451 Verweise, 131 Ziele, 18 Seiten; PR-Text «450 von 450») sind ohne Angabe der Zählweise nicht nachrechenbar. Das Ergebnis (alle Verweise 200, alle Anker vorhanden) ist bestätigt | `links.py` und Nachzählung: 464 Verweise (17 Seiten), 477 mit `/a/b/c`, 439 Paare, 178 Ziele; keine Zählweise ergibt 451/131 |
+| SP2-W3N-3 | W3 (Export, Ziel-Repository) | optional | Mit den React-Quellen entfallen öffentlich ausgelieferte Nebendateien ohne Ersatz und ohne Regel, vor allem `/robots.txt` (heute 200 mit Verweis auf die Sitemap) und `/og-image.jpg`. Für die Seiten selbst wird nichts davon gebraucht (kein Verweis im Export). Ohne `robots.txt` fehlt Suchmaschinen der Hinweis auf `sitemap.xml`; `/favicon.ico` liefert auf der Vorschau eine Datei, die nicht aus `site/` stammt. Ob `robots.txt` (und ggf. `favicon.ico`) zum Profil gehören, ist im Profil (`tools/export.mjs`) zu entscheiden, nicht in dieser Website | Vorschau `/robots.txt -> 404`, `/og-image.jpg -> 404`, `/manifest.json -> 404`, `/favicon.ico -> 200 image/vnd.microsoft.icon`; Produktion `/robots.txt -> 200` («Sitemap: https://borderline-angehoerige.netlify.app/sitemap.xml»), `/og-image.jpg -> 200`; `site/` ohne `robots.txt`, ohne `favicon.ico`; Seiten verweisen auf `assets/favicon.svg` |
+
+#### Fragen an die Fachstelle
+
+| ID | Frage | Beleg |
+| --- | --- | --- |
+| SP2-F-W3N-1 | «Pretty URLs» im Netlify-Projekt lassen oder ausschalten? Eingeschaltet liefert Netlify nicht Zeichen für Zeichen den geprüften Export aus: 297 Seitenlinks sind ohne `.html` und ab dem Stamm, während `canonical` und `sitemap.xml` die Adressen mit `.html` nennen; jede Seite ist unter zwei Adressen erreichbar. Funktional ohne Fehler. Die Umschreibung gilt für jeden Deploy des Projekts, also auch für die Produktion nach dem Merge. (Technischer Hinweis, nicht geprüft: Netlify kennt dafür neben der Projekteinstellung auch einen Eintrag in der `netlify.toml`; vor einer Änderung in der Netlify-Dokumentation bestätigen.) | 4.5 Zeile 1; Permalink-`diff` |
+| SP2-F-W3N-2 | Team-Anmeldung für Vorschauen wieder einschalten, wenn die Prüfungen der Vorschau abgeschlossen sind (auch Prüfung 1)? Zurzeit ist der Entwurf für jede Person mit der Adresse sichtbar | `get-project`: `requiresSSOTeamLogin: false`; `curl` ohne Anmeldung `/` 200 |
+| SP2-F-W3N-3 | PR christaegger-dot/borderline-angehoerige#659 wieder als Entwurf markieren? Er ist «bereit», ohne Konflikte mergebar, und ein Merge veröffentlicht die Website. Nach `CLAUDE.md` des Profils bleibt ein PR mit einer neuen Website ein Entwurf, solange Prüfstufen offen sind; der Titel «NICHT MERGEN» ist der einzige Schutz | `pull_request_read`: `draft false`, `mergeable_state clean`, Titel «… (Entwurf, NICHT MERGEN)» |
+
+#### Nicht geprüft
+
+- Die Produktion nach dem Merge (Build-Einstellungen, Pretty URLs, Kopfzeilen, Weiterleitungen dort): erst nach dem Merge möglich; Build-Einstellungen über `get-project` nicht lesbar.
+- Externe Links (82 Verweise) und Punkt 5 (Datenschutz, Sicherheit, Performance) gehören nicht zu diesem Teil.
+
+#### Zählung
+
+- wichtig: 0
+- optional: 3 (SP2-W3N-1 bis SP2-W3N-3)
+- Fragen an die Fachstelle: 3 (SP2-F-W3N-1 bis SP2-F-W3N-3)
+- **Z31-W3-2:** alle zehn Punkte und alle 85 Weiterleitungen mit Beleg geprüft; Vorschau liefert `34a2e58` aus; Kopfzeilen wie `_headers`; 0 CSP-Verstösse aus der Website. Kein blockierender Befund.
+- **Empfehlung zum Status:** Teil 5.6 Punkte 3 und 4 ohne wichtigen Befund. Die Stufe W3 bleibt dennoch «offen»: drei optionale Befunde, drei offene Fragen (Pretty URLs, Schutz der Vorschauen, Entwurfsstatus von #659) und die nur nach dem Merge prüfbare Produktion.
+
+### 5.7 Selbstprüfungen bewerten (Prüfung 2)
+
+**Gegenstand:** `PRUEFBERICHT.md` am Stand `f1d6572`, Abschnitte «Etappe 3-2: Entscheide der bauenden Sitzung (zur Prüfung)» (Z. 1161, 8 Punkte), «Etappe 3-2: Aufgefallen, nicht geändert» (Z. 1172, 9 Punkte), «Freigabe 2c und 3-1: Entscheide der bauenden Sitzung (zur Prüfung)» (Z. 1327, 9 Punkte), «Freigabe 2c und 3-1: Aufgefallen, nicht geändert» (Z. 1339, 6 Punkte). 32 Punkte, jeder einzeln bewertet. Der Bericht diente nur als Liste der Punkte. Jeden Beleg habe ich selbst erhoben.
+
+**Vorgehen (nichts geändert, Werkzeuge nur in der Kopie `scratchpad/kopie-sb`, Skripte und Ausgaben in `scratchpad/sb/`):**
+
+- **Ziel-Repository** `/home/user/borderline-angehoerige` (nur lesend, flacher Klon): `git ls-tree`, `git show`, `git diff --name-status origin/main origin/umzug-puk-profil-1791821335`, `git grep` in `origin/main` (= `f46038b`, gleich `origin/react-archiv`). PR #659 lesend über die REST-Schnittstelle (`gh api …/pulls/659`, `…/ccr/review_threads`).
+- **Export:** `node tools/export.mjs scratchpad/sb/export` in der Kopie (Stand `f1d6572`), dann `diff -r` gegen `site/` aus `git archive 34a2e58 site`. Mit `--production` ebenfalls ausgeführt, als Gegenprobe.
+- **Vorschau** `https://deploy-preview-659--borderline-angehoerige.netlify.app`: `curl` auf 23 Adressen. `sb/live.mjs` holt alle 17 Seiten und `/a/b/c` und vergleicht sie normalisiert mit dem Export. `sb/links.mjs` prüft jeden internen Link (Status ohne Umleitung, Anker im Ziel).
+- **Netlify, nur lesend:** `get-deploy` für `6acd0e03…`, `6acd0655…`, `6acd0995…` und `6acd0c5b…`; `get-project` für das Projekt `73a027a4…`.
+- **Browser** (Playwright 1.x, Chromium 141, eigener Server `127.0.0.1:8977` auf der Kopie):
+  - `sb/mess.cjs`: Überlauf bei Schrift 32 px, 17 Seiten × 1280/1440/640 px × Standard/«kontrast»
+  - `sb/mess2.cjs`: Kurve neu gegen die CSS von `55e98cb` und Umschaltpunkt
+  - `sb/trieb.cjs`: Randlinien in «Ein neuer Trieb»
+  - `sb/scene.cjs`: Szenen der übrigen Abbildungen
+  - `sb/kurve.cjs`: Fotos der Kurve
+  - `sb/verweis.cjs`: die 13 Verweissätze gegen die Tabelle in `FREIGABE-ETAPPE-2C-3-1.md`, Abschnitt 4
+- **Kennzahlen:**
+  - `node abgleich/kennzahlen.mjs --abschnitte` an `f1d6572` und an `55e98cb` (`git archive`)
+  - zusätzlich eine eigene Wortzählung der 13 Verweissätze (Token mit Buchstabe oder Ziffer)
+  - `node abgleich/pruefe-abgleich.mjs`, `node tools/build.mjs`, `node tools/gate.mjs --production` und `--selftest` in der Kopie
+  - Den ersten Messlauf auf Port 8731 habe ich verworfen: Der Port gehörte einer fremden Instanz. Alle Werte unten stammen vom eigenen Server.
+
+#### Nachgerechnete Kennzahlen
+
+| Kennzahl der Selbstprüfung | eigenes Ergebnis | Beleg | Bewertung |
+| --- | --- | --- | --- |
+| Wörter je Abschnitt (Tabelle «Freigabe 2c und 3-1: Wörter», 10 Abschnitte, 7 Seiten) | alle gleich | `kennzahlen.mjs --abschnitte` an `55e98cb` und `f1d6572`: `index` 357 → 370 (`beratung` 95 → 108), `verstehen` 1819 → 1872 (`borderline` 115 → 140, `mythen` 422 → 450), `beziehungen` 1706 → 1741 (207 → 222, 206 → 226), `rolle` 3248 → 3299 (626 → 663, 294 → 308), `selbstfuersorge` 2776 → 2813 (245 → 271, 158 → 169), `krise` 2168 → 2200 (735 → 767), `quellen` 5507 → 5506. Eigene Zählung der Sätze: Nr. 13 = 13, Nr. 3 = 25, Nr. 1 + 2 = 28, Nr. 4 = 15, Nr. 5 = 20, Nr. 6 + 7 = 37, Nr. 8 = 14, Nr. 10 = 26, Nr. 9 = 11, Nr. 11 + 12 = 32. Jede Differenz stimmt | stimmt |
+| Messungen zu 3 d: vorher `scrollWidth` 1328 (48 px), nachher 0 px; Umschaltpunkt bei 1044 px (Container 960,5 px); Container 1104 px und 21 px | alle gleich | `mess2.cjs`, Schrift 32 px, 1280 px: CSS `55e98cb` `sw` 1328, Label rechts 1327,5, 4 Labels sichtbar; CSS `f1d6572` `sw` 1280, 0 Labels. Standardschrift: bei 1043 px Container 959,56 px, 0 Labels; bei 1044 px Container 960,5 px, 4 Labels, für alt und neu gleich. Container bei 1280 px: 1104 px, Schrift 21 px (bei Schrift 200 %: 42 px). `mess.cjs`: 102 Messungen (17 Seiten, 1280/1440/640, Standard und «kontrast»), 0 mit Überlauf | stimmt (Teilmenge: ohne Skript und mit offenen Vertiefungen nicht wiederholt) |
+| Verweissätze: 13 im Wortlaut, Linktext = Titel des Ziels, Ziele wie im Auftrag | 13 von 13 | `verweis.cjs`: jeder Satz auf der gebauten Seite gefunden, `href` wie in der Tabelle des Auftrags, Linktext gleich `h2` des Ankers bzw. `h1`, keiner in `figure`/`details`/Abbildung, bei keinem folgt `[data-responsibility-inline]` direkt; der Satz davor stimmt bei Nr. 1–3, 6–12; Nr. 4 nach dem Verweissatz aus 2b; Nr. 5 und 13 siehe unten | stimmt |
+| `pruefe-abgleich.mjs` 7371 Zeilen, 0 ohne Fundstelle; Build 0 blockierend, 2 Hinweise; production 1 blockierend; Selbsttest 65/65 | gleich | Ausgaben: «Abgleich geprüft: 7371 Zeilen, 0 ohne Fundstelle.» · «Gate draft: 0 blockierend, 2 Hinweise» · «Gate production: 1 blockierend, 1 Hinweise» · «Selbsttest: 65/65 bestanden.»; Build in der Kopie ohne Änderung an gebauten Seiten (`git status` leer) | stimmt |
+| Netlify: «18 new files uploaded», «86 redirect rules», «1 header rule», «No functions»; erste Vorschauen 37/4 | gleich | `get-deploy 6acd0e03ea79a5743fa2824e`: genau diese vier Meldungen, `commit_ref` `34a2e58…`, `state` ready; `6acd0655…` (Commit `8120051`) und `6acd0995…` (Commit `e5c8441`): je «37 redirect rules», «4 header rules»; Produktion `6acd0c5b…`: 37/4, Funktion `material-download`, Framework vite | stimmt |
+| `_redirects` 85 Regeln, `cmp` gleich | gleich | `cmp site/_redirects …/_redirects` ohne Ausgabe; 85 Zeilen ohne Kommentar | stimmt |
+| 968 entfernte Dateien | 968 | `git diff --name-status origin/main 34a2e58`: 968 D, 25 A, 3 M, 2 R100 | stimmt |
+| «Pretty URLs»: 297 umgeschriebene Links auf 18 Seiten | 297 | `live.mjs`: 288 auf den 17 Seiten + 9 auf `/a/b/c` (= 404-Seite) | stimmt |
+| Links auf der Vorschau: «451 Verweise auf 131 verschiedene Ziele», «450 von 450» | **nicht nachvollziehbar** | `links.mjs`: 410 interne `<a href>` auf 18 Seiten (499 insgesamt, 89 extern oder `mailto:`), 149 verschiedene `href`, 175 verschiedene aufgelöste Ziele; 409 mit 200 ohne Umleitung und Anker vorhanden; der Rest ist `/a/b/c#main-content` (404) | Ergebnis gleich, Zahlen nicht → SP2-SB-2 |
+| PDF-Schreibweise: 13 Dateien, 0 andere | gleich | `git grep -l "Notfallkarte-Zuerich-Psychische-Krise" origin/main` → 13; `git grep -ioh "notfallkarte-zuerich[A-Za-z0-9_.-]*"`: 28 × `…-Psychische-Krise.pdf`; die übrigen 38 Treffer sind die ID `notfallkarte-zuerich` (u. a. `/api/material-download/notfallkarte-zuerich`), keine PDF-Adresse | stimmt |
+
+#### Ergebnis je Punkt
+
+| Abschnitt | Nr | Punkt (Kurzzitat) | Bewertung | Beleg |
+| --- | --- | --- | --- | --- |
+| Etappe 3-2 › Entscheide | 1 | «Branchname ohne `claude/`» | kein Befund | `origin/main:.github/workflows/auto-merge-claude.yml`: `on: push: branches: - "claude/**"`, danach `gh pr create … --base main` und Merge. `origin/main:CLAUDE.md` Z. 8: `claude/<beschreibung>-$(date +%s)`. Branch `umzug-puk-profil-1791821335` endet mit Zeitstempel, ohne Präfix: Der Workflow greift nicht. Begründung trägt |
+| Etappe 3-2 › Entscheide | 2 | «Workflows entfernt … Erhalten sind sie in `react-archiv` und auf `main`» | Befund SP2-SB-1 (optional) | `git diff --name-status origin/main 34a2e58`: `D .github/workflows/{allow-prs,audit-regression,auto-merge-claude,ci,visual-regression}.yml`, `D netlify/functions/material-download.ts`. Auf dem Branch läuft keiner (`ci.yml`: `pull_request: branches: [main]`, im Merge-Stand gelöscht). Die Aussage «auf `main` erhalten» gilt aber nur bis zum Merge: Mit dem Merge von #659 verschwinden alle fünf Workflows auch aus `main`, nur `react-archiv` (`f46038b`) behält sie |
+| Etappe 3-2 › Entscheide | 3 | «Export im Unterordner `site/` … drei 404-Regeln entfallen» | kein Befund | `34a2e58:netlify.toml`: `publish = "site"`, Befehl `echo`, eine Regel `/404` → `/404.html` 404. `curl`: `/README.md`, `/CLAUDE.md`, `/netlify.toml`, `/_redirects`, `/_headers`, `/404` je 404, `/404.html` 200. `get-deploy`: «86 redirect rules», «1 header rule». CSP der Vorschau wie `site/_headers` (`default-src 'self'; script-src 'self'; style-src 'self'; …`) |
+| Etappe 3-2 › Entscheide | 4 | «`CLAUDE.md` behalten, `README.md` neu» | kein Befund | `git diff origin/main 34a2e58 -- CLAUDE.md` leer. `CLAUDE.md` (18 Zeilen): Branch-Namen und iCloud-Kopien; `grep -i "react\|pnpm\|vite\|npm\|test"` 0 Treffer. Neues `README.md`: Quelle, Entstehung, Stand und Aufbau mit `site/`; `grep -E "tel:\|144\|143\|147\|[0-9]{3} ?[0-9]{3} ?[0-9]{2}"` 0 Treffer |
+| Etappe 3-2 › Entscheide | 5 | «`react-archiv` aus `main` … elf Branches unberührt» | kein Befund | `git rev-parse origin/main origin/react-archiv`: beide `f46038b04bba…`. `git branch -a`: 6 × `codex/…`, 5 × `copilot/…` = 11. Ob sie unberührt sind, war nur am Zustand prüfbar (flacher Klon, keine Push-Historie) |
+| Etappe 3-2 › Entscheide | 6 | «Entwurfsmodus … vor dem Merge neu mit `--production`» | kein Befund | `grep -l "Redaktioneller Status" site/*.html`: 17 von 17, Wortlaut «Redaktioneller Status: Entwurf – fachliche Prüfung ausstehend». Eigener Export mit `--production`: «BLOCK site review-report … Export abgebrochen: 1 blockierende Befunde». PR #659 laut REST: `state` open, `draft` false, `merged` false, Titel «… (Entwurf, NICHT MERGEN)» (Hinweis bei SP2-F-SB-3) |
+| Etappe 3-2 › Entscheide | 7 | «Codex P1 ohne Änderung … Netlify leitet `/verstehen/` auf `/verstehen` um» | kein Befund für den heutigen Stand; Vorbehalt in SP2-F-SB-1 | `curl`: `/verstehen/` → 301 `/verstehen`, `/grenzen/` → 301 `/grenzen`, Ziel 200. `site/verstehen.html` verweist relativ (`css/site.css`); unter `/verstehen` lösen sich die Pfade im Stamm auf. Thread `site/verstehen.html` Z. 16: `resolved: true`. Der Nachweis stammt aus einer Vorschau mit eingeschalteten «Pretty URLs». Ob Netlify ohne diese Einstellung auch vom Schrägstrich weg leitet, ist nicht belegt |
+| Etappe 3-2 › Entscheide | 8 | «Netlify-Einstellungen nicht geändert, ausser dem … kurzen Ausschalten» | kein Befund, mit Hinweis | `get-project`: `requiresSSOTeamLogin: false`, `requiresPassword: false`. Der Schutz ist heute aus. Laut Bericht hat ihn die Fachstelle ausgeschaltet; ob sie es war, lässt sich über die Schnittstelle nicht prüfen. Entscheid offen: SP2-F-SB-2 |
+| Etappe 3-2 › Aufgefallen | 1 | «37 Weiterleitungs- und 4 Header-Regeln meldeten die ersten beiden Vorschauen» | kein Befund | `get-deploy 6acd06551b118d9d720307c8` (Commit `8120051`) und `6acd09958fdf9be93e413bf2` (Commit `e5c8441`): je «37 redirect rules processed», «4 header rules processed», wie die Produktion `6acd0c5b…`; der Deploy `6acd0655…` meldet zudem `scannedFilesCount` 31877 (alte Build-Ausgabe statt 31 Dateien). `6acd0e03…`: 86/1 |
+| Etappe 3-2 › Aufgefallen | 2 | «Schutz der Vorschauen … jetzt ist der Schutz aus» | Frage SP2-F-SB-2 | `get-project`: `requiresSSOTeamLogin: false`. `curl` ohne Anmeldung auf `/`: 200; Kopfzeile `x-robots-tag: noindex` |
+| Etappe 3-2 › Aufgefallen | 3 | «Pretty URLs … Ausgeliefert wird nicht Zeichen für Zeichen der Export» | Frage SP2-F-SB-1 (zu entscheiden vor der Veröffentlichung); Zählung SP2-SB-2 | `curl /verstehen.html`: `<a … href='/verstehen'>` (Export: `href="verstehen.html"`). `live.mjs`: 17 von 17 Seiten nach Abzug des Vorschau-Blocks und mit Abbildung `x.html` → `/x` gleich wie der Export, 297 Links umgeschrieben. `<link rel="canonical" href="https://borderline-angehoerige.netlify.app/verstehen.html">` und `sitemap.xml` (`<loc>…/verstehen.html</loc>`) nennen `.html`; `/verstehen` und `/verstehen.html` antworten je mit 200 |
+| Etappe 3-2 › Aufgefallen | 4 | «Build-Einstellungen … vermutlich weiterhin … `dist/public`» | Frage SP2-F-SB-3; nicht geprüft: Build-Einstellungen | `get-project` liefert keine Build-Einstellungen (nur Zugang, URLs, aktueller Deploy). Belegt ist nur, dass die Vorschau `publish = "site"` anwendet (Inhalt = Export) und dass die Produktion `6acd0c5b…` mit Framework «vite» baut. Die Prüfung der Produktion nach dem Merge steht aus (`PRUEFAUFTRAG-SCHLUSSPRUEFUNG.md` Abschnitt 7 Nr. 6) |
+| Etappe 3-2 › Aufgefallen | 5 | «`siteUrl` … die Produktionsadresse desselben Netlify-Projekts» | kein Befund | `site.config.json` Z. 1638: `"siteUrl": "https://borderline-angehoerige.netlify.app"`; `get-project`: `primarySiteUrl` `http://borderline-angehoerige.netlify.app`, Deploy `6acd0e03…` `ssl_url` gleich. Die Vorschau-Seiten zeigen kanonisch auf die Produktionsadresse (siehe Nr. 3) |
+| Etappe 3-2 › Aufgefallen | 6 | «PDF-Adresse in Kleinschreibung … 404 … keine Änderung nötig» | kein Befund | `curl`: `/Notfallkarte-Zuerich-Psychische-Krise.pdf` → 301 `/index.html`, `/notfallkarte-zuerich-psychische-krise.pdf` → 404 (auch auf der Produktion: 404). `git grep` in `f46038b`: nur die Schreibweise mit Grossbuchstaben (13 Dateien, 28 Treffer), siehe Kennzahlen |
+| Etappe 3-2 › Aufgefallen | 7 | «Schriftlizenz: Der Export enthält die Rubik-Dateien, aber nicht die Lizenz» | kein Befund | `git ls-tree 34a2e58`: keine Lizenzdatei. In den Schriftdateien steht der Hinweis aber in den Metadaten: `sb/woff2name.js` (WOFF2 mit Brotli entpackt, `name`-Tabelle) findet in `site/fonts/Rubik-Regular.woff2` «Copyright 2015 The Rubik Project Authors (https://github.com/googlefonts/rubik)» und «This Font Software is licensed under the SIL Open Font License, Version 1.1. … https://scripts.sil.org/OFL». OFL 1.1, Bedingung 2, lässt den Hinweis «in the appropriate machine-readable metadata fields» zu. Den Volltext daneben zu legen (`licenses/Rubik-OFL.txt` im Profil) wäre zusätzlich möglich; das betrifft `tools/export.mjs` im Profil |
+| Etappe 3-2 › Aufgefallen | 8 | «`material-download` entfällt … leitet auf die Startseite» | kein Befund | `D netlify/functions/material-download.ts`; `get-deploy 6acd0e03…`: «No functions deployed». `_redirects` Z. 102: `/api/material-download/* /index.html 301`; `curl /api/material-download/x` → 301 `/index.html` |
+| Etappe 3-2 › Aufgefallen | 9 | «Codex-Review von #659 (drei Befunde)» | kein Befund | `gh api …/pulls/659/ccr/review_threads`: drei Threads, alle `resolved: true` (`site/verstehen.html` Z. 16, `.gitignore` Z. 22, `netlify.toml`). `34a2e58:.gitignore` enthält `**/node_modules`, `dist/`, `.env`, `.env.*`; `netlify.toml` Regel `/404` mit 404; `curl /404` → 404. Zu P1 siehe Entscheide Nr. 7 |
+| Freigabe 2c/3-1 › Entscheide | 1 | «3 d in `em`, nicht in `rem`» | kein Befund | `borderline.css` Z. 62: `@container (max-width:45.71em){.bl-fig--kurve .bl-fig__label{display:none}}`. Gemessen: Schrift des Containers 21 px, Umschaltpunkt 1044 px (Container 960,5 px), alt und neu gleich; bei Schrift 200 % ist der Container 42 px, die Labels sind bei 1280 und 1440 px ausgeblendet, `scrollWidth` 1280/1440 (vorher 1328). 45,71 × 21 = 959,9 px |
+| Freigabe 2c/3-1 › Entscheide | 2 | «3 e über `data-visual-id`» | kein Befund | `borderline.css` Z. 166: `[data-visual-id="v-ge-trieb"] .puk-vis-scene__say:not(.puk-vis-scene__say--b){…}`. `scene.cjs`: Szenen in `v-ko-tassen`, `v-vs-eisberg`, `v-vs-bewertungen`, `v-ro-weg`, `v-sf-abend` behalten `rgb(60, 100, 255)`. `git diff 55e98cb f78aae9 -- content/genesung.html genesung.html` leer |
+| Freigabe 2c/3-1 › Entscheide | 3 | «‹Dieselbe Linie› wörtlich … gleich breit, wirkt aber heller und feiner» | Frage SP2-F-SB-4 | `trieb.cjs`, 1280 und 360 px: Szene «Weniger hilfreich» `2px solid rgb(233, 233, 233)` («kontrast»: `rgb(138, 138, 138)`), Szene «Tragfähiger» `2px … rgb(60, 100, 255)`; `.puk-say__item` «Weniger hilfreich» 2 px grau, `--hilfreich` 3 px blau. Der Auftrag (3 e) sagt «dieselbe Linie wie ‹Weniger hilfreich› in der Gegenüberstellung …, also grau und dünner». Grau ist umgesetzt, dünner als «Tragfähiger» ist die Linie in der Szene nicht |
+| Freigabe 2c/3-1 › Entscheide | 4 | «Angehängt oder eigener Absatz» | kein Befund | `verweis.cjs`: Nr. 1, 2, 9 im `dd`, Nr. 7, 12 im `li`, Nr. 3, 6, 8, 10, 11 im `p` direkt nach dem Satz des Auftrags; Nr. 4 im `p` nach dem Verweissatz aus 2b («… im Abschnitt «Anerkennen, ohne zuzustimmen».»). Nr. 13 eigener `p`: davor «Kontakt: <a href="mailto:angehoerigenarbeit@pukzh.ch">…</a></p>» ohne Schlusspunkt, danach V2 «Wer die Website herausgibt …» |
+| Freigabe 2c/3-1 › Entscheide | 5 | «Ort von Nr. 5 … am Ende des Absatzes» | kein Befund | `content/beziehungen.html` Z. 26: `<p data-responsibility-inline></p>`, dann `<p>Angehörige dürfen zur Veränderung beitragen. Sie sind aber keine Therapeutinnen oder Therapeuten. Für den Verlauf der Erkrankung sind sie nicht verantwortlich, für die Beziehung nicht allein. Es gibt keine «perfekte» Reaktion, die eine Beziehung repariert. Was die Behandlung leisten kann … «<a … href="behandlung.html">Behandlung und Ihre Rolle darin</a>».</p>`, dann «Was Sie tun können: …». Nach Regel 2 des Auftrags käme der Satz «ans Ende des nächsten Absatzes»; das wäre der Absatz «Was Sie tun können: …» (Handlungsanleitung). Das Ende desselben Absatzes ist begründet und sinngemäss |
+| Freigabe 2c/3-1 › Entscheide | 6 | «Abgleich bei Verweisen des Bestands» | kein Befund | `abgleich/verstehen.md` Nr. 112 («Mehr dazu auf Genesung.») und Nr. 127 («Begleiterkrankungen.») je «umformuliert (2c-3-1-F)» mit dem neuen Satz; `selbstfuersorge.md` Nr. 232 («Alle Beratungsangebote & Netzwerke ansehen.») «umformuliert (2c-3-1-F)»; `beziehungen.md` Nr. 208 «verschoben (2c-3-1-F)», Ort `behandlung#kopf`; Nr. 252 «neu (Verweis, 2c-3-1-F)». `pruefe-abgleich.mjs`: 0 ohne Fundstelle |
+| Freigabe 2c/3-1 › Entscheide | 7 | «NK31-4 … Art in beiden Listen» | kein Befund | `PRUEFBERICHT.md` Z. 1549 (3-1-K Nr. 110): «umformuliert (3-1-K), Bedingung im Wortlaut von `krise` › `belastung`, Handlung nach Auftrag»; Z. 3224 (2c-K Nr. 342): «Auftrag (Bedingung im Wortlaut v…». Vermerke Z. 1434 und Z. 2857 |
+| Freigabe 2c/3-1 › Entscheide | 8 | «Listen … 2c-K (Nr. 348 bis 360)» | kein Befund | `PRUEFBERICHT.md` Z. 3235 «348 \| Freigabe 2c und 3-1 Nr. 1 \| `verstehen` › `mythen`» bis Z. 3247 «360 \| Freigabe 2c und 3-1 Nr. 13 \| `index` › `beratung`», je «Verweissatz (P2c-F-16)» |
+| Freigabe 2c/3-1 › Entscheide | 9 | «Plan. Nachgeführt sind nur die Zeilen, deren `reason` einen Verweis aufzählt oder auf Etappe 2 vertröstet» | Befund SP2-SB-4 (optional) | `git diff 55e98cb f78aae9 -- site.config.json`: 8 Zeilen `+`. Auf `index`, einer der sechs Seiten, vertröstet `v-ix-haltung` aber weiter: «Das Spannungsfeld Fürsorge – eigene Gesundheit ist für «Auf sich achten» als Muster H vorgesehen (Etappe 2); hier genügt der Satz.» `selbstfuersorge` hat kein Muster H (Plan: `v-sf-abend` Muster D, sonst Text). Auch die Begründung «die übrigen Zeilen … nennen keine Verweise» trifft nicht zu (z. B. `v-vs-einordnung` «Verweis auf ‹Was zwischen Ihnen geschieht› und ‹Grenzen setzen›», `v-ro-schuld`, `v-ro-alltag`). Deren Abschnitte haben aber keinen neuen Verweissatz |
+| Freigabe 2c/3-1 › Aufgefallen | 1 | «Ziffern der Anspannungskurve bei 200 % Schrift … grösser als ihre Kreise» | Befund SP2-SB-3 (optional) | Fotos `sb/kurve-1280-32.png` (neu) und `sb/kurve-alt-1024-32.png` (CSS `55e98cb`), angesehen: Die Ziffern 1, 3 und 4 ragen über ihre Kreise und überlagern die Kurve, alt und neu gleich. Bei Standardschrift (`kurve-1024-16.png`) sitzen sie in den Kreisen. Unabhängig von 3 d, wie die Selbstprüfung sagt |
+| Freigabe 2c/3-1 › Aufgefallen | 2 | «Kontrast der grauen Linie … etwa 1,2 : 1» | kein Befund | `bundle.css` Z. 68: `--ui-hairline:#E9E9E9`; relative Leuchtdichte 0,815, Kontrast zu Weiss (1,05)/(0,865) = 1,21 : 1. Die Linie trägt keine Information allein: «Weniger hilfreich» steht als Text darüber (`trieb.cjs`: Text «Weniger hilfreich«Eine schwierigere Phase …»). `.puk-say__item` im Profil (Z. 661) hat dieselbe Linie (`2px solid var(--ui-hairline)`) |
+| Freigabe 2c/3-1 › Aufgefallen | 3 | «`v-ix-beratung` … ‹steht nur hier, andere Seiten verweisen darauf›» | Befund SP2-SB-5 (optional) | `v-ix-beratung` › `reason`: «… Wortlaut der Fachstelle vom 09.10.2026 (Korrektur W1-4); steht nur hier, andere Seiten verweisen darauf.» `content/unterstuetzung.html`: «Die Beratung der Fachstelle kostet nichts und wird nicht an Krankenkassen weitergegeben.»; `content/index.html`: «Die Beratung ist kostenlos und untersteht der Schweigepflicht.» Die Wiederholung ist entschieden (P2c-F-14), die `reason` ist veraltet |
+| Freigabe 2c/3-1 › Aufgefallen | 4 | «`verstehen.md` Nr. 116 … weiter ‹entfällt›, Bemerkung ‹Verweis (folgt mit Etappe 2)›» | Befund SP2-SB-6 (optional) und Frage SP2-F-SB-5 | `abgleich/verstehen.md` Nr. 116: «Mehr dazu auf Kommunizieren und Grenzen. \| entfällt \| – \| – \| Verweis (folgt mit Etappe 2)». Etappe 2 ist abgeschlossen; die Antwort zu «Menschen mit Borderline manipulieren bewusst.» auf `verstehen` › `mythen` endet mit «Bleiben Sie bei der Wirkung, Ihrer Sicherheit und Ihrer Grenze.», ohne Link (Links nach `kommunizieren`/`grenzen` auf `verstehen`: nur `kommunizieren.html#moment` und `grenzen.html`, an anderer Stelle) |
+| Freigabe 2c/3-1 › Aufgefallen | 5 | «Bei 1440 px und 200 % Schrift … jetzt Nummern und Liste» | kein Befund | `mess2.cjs`: CSS `55e98cb`, 1440 px, Schrift 32 px: 4 Labels, rechter Rand 1407,5 px (kein Überlauf); neu: 0 Labels, `sw` 1440. Folge der Grenze in `em`, im Auftrag (3 d) als Lösung genannt |
+| Freigabe 2c/3-1 › Aufgefallen | 6 | «Verweissatz und V2 auf `index` › `beratung` … zwei Verweissätze hintereinander» | kein Befund (Hinweis für S) | `content/index.html` Z. 3: `<p>Weitere Beratung und Austausch mit anderen Angehörigen stehen auf der Seite «…Unterstützung finden…».</p><p>Wer die Website herausgibt und welche Grundsätze für die Texte gelten, steht auf der Seite «…Über diese Website…».</p>`. Ort im Wortlaut des Auftrags (Abschnitt 4, Nr. 13: «direkt nach … und vor V2») |
+
+#### Befunde
+
+| ID | Stufe | Gewicht | Befund | Beleg |
+| --- | --- | --- | --- | --- |
+| SP2-SB-1 | 5.7 (Etappe 3-2, Entscheide Nr. 2) | optional | Die Selbstprüfung sagt, die Workflows seien «in `react-archiv` und auf `main`» erhalten. Mit dem Merge von #659 verschwinden alle fünf Workflows (auch `ci.yml`) und die Funktion `material-download` aus `main`. Danach liegen sie nur noch in `react-archiv`. Das gehört vor dem Merge in die Unterlagen der Fachstelle. Bis zum Merge bleibt `auto-merge-claude.yml` auf `main` aktiv, und das `CLAUDE.md` des Ziel-Repositorys verlangt weiter `claude/…`-Branches. | `git diff --name-status origin/main 34a2e58`: `D .github/workflows/allow-prs.yml`, `…/audit-regression.yml`, `…/auto-merge-claude.yml`, `…/ci.yml`, `…/visual-regression.yml`, `D netlify/functions/material-download.ts` |
+| SP2-SB-2 | 5.7 (Etappe 3-2, Aufgefallen Nr. 3; Kurzfassung Nr. 2) | optional | Die Kennzahl «451 Verweise auf 131 verschiedene Ziele, 450 von 450» lässt sich nicht nachvollziehen; die Zählweise ist nicht angegeben. Das Ergebnis selbst stimmt: alle internen Links ohne Umleitung, Anker vorhanden, ein Rest. | `sb/links.mjs`: 410 interne `<a href>` auf 18 Seiten, 149 verschiedene `href`, 175 verschiedene aufgelöste Ziele, 409 mit 200; Rest `/a/b/c#main-content` (404) |
+| SP2-SB-3 | 5.7 (Freigabe 2c/3-1, Aufgefallen Nr. 1) → Bedienung, R2 | optional | Anspannungskurve (`v-vs-anspannung`): Bei Schrift 200 % ragen die Ziffern 1, 3 und 4 über ihre Kreise und überlagern die Kurve. Das war schon vor 3 d so. Die Ziffern bleiben lesbar. | Fotos `scratchpad/sb/kurve-1280-32.png`, `kurve-alt-1024-32.png`; zum Vergleich `kurve-1024-16.png` |
+| SP2-SB-4 | 5.7 (Freigabe 2c/3-1, Entscheide Nr. 9) → Visualisierungs-Check | optional | Die Plan-Zeile `v-ix-haltung` vertröstet weiter auf ein «Muster H» für «Auf sich achten (Etappe 2)», das nicht gebaut wurde. Nach dem eigenen Massstab von Entscheid Nr. 9 («auf Etappe 2 vertröstet») hätte sie nachgeführt werden müssen. Die Begründung «die übrigen Zeilen … nennen keine Verweise» ist zudem ungenau. | `site.config.json` › `index` › `v-ix-haltung` › `reason`: «… ist für «Auf sich achten» als Muster H vorgesehen (Etappe 2); hier genügt der Satz.»; Plan `selbstfuersorge`: `v-sf-abend` Muster D, sonst «Text ist klarer»; `v-vs-einordnung`: «Verweis auf ‹Was zwischen Ihnen geschieht› und ‹Grenzen setzen›» |
+| SP2-SB-5 | 5.7 (Freigabe 2c/3-1, Aufgefallen Nr. 3) → Visualisierungs-Check, W2 | optional | Die `reason` von `v-ix-beratung` («steht nur hier, andere Seiten verweisen darauf») widerspricht der Seite `unterstuetzung`, die Kosten und Weitergabe wiederholt (P2c-F-14). Plan und Seite stimmen hier nicht überein. Nur der Plan wäre nachzuführen, kein Text. | `v-ix-beratung` › `reason`; `content/unterstuetzung.html`: «Die Beratung der Fachstelle kostet nichts und wird nicht an Krankenkassen weitergegeben.» |
+| SP2-SB-6 | 5.7 (Freigabe 2c/3-1, Aufgefallen Nr. 4) → W2 | optional | Der Abgleich `verstehen.md` Nr. 116 vertröstet weiter auf Etappe 2 («Verweis (folgt mit Etappe 2)»), obwohl Etappe 2 abgeschlossen ist. Der Verweis des Bestands ist weder umgesetzt, noch ist sein Entfallen begründet. | `abgleich/verstehen.md` Nr. 116; `verstehen` › `mythen`, Antwort zu «Menschen mit Borderline manipulieren bewusst.» ohne Link |
+
+#### Fragen an die Fachstelle
+
+| ID | Frage | Beleg |
+| --- | --- | --- |
+| SP2-F-SB-1 | **«Pretty URLs» (vor der Veröffentlichung zu entscheiden):** Soll die Netlify-Einstellung aus sein, damit Netlify genau den geprüften Export ausliefert? Dann stimmen Links, kanonische Adresse und `sitemap.xml` überein. Oder bleibt sie an, mit Seiten unter zwei Adressen und Links ohne `.html`? Wird sie geändert, sind auf der Vorschau die Punkte 3, 5 und 10 von Z31-W3-2 neu zu prüfen. Der Nachweis zu Codex P1 (Entscheide 3-2 Nr. 7, `/verstehen/` → `/verstehen`) wurde nur mit eingeschalteter Einstellung erhoben. | `live.mjs`: 297 umgeschriebene Links, 17 von 17 Seiten nur in Links und im Vorschau-Block verschieden; `curl`: `/verstehen` 200, `/verstehen.html` 200, `/verstehen/` → 301 `/verstehen`; kanonisch `…/verstehen.html` |
+| SP2-F-SB-2 | **Schutz der Vorschauen:** Wann wird die Team-Anmeldung für Vorschauen wieder eingeschaltet? Vorschlag: sobald die Prüfungen auf der Vorschau abgeschlossen sind, die sie brauchen (Schlussprüfung, Nachprüfung, R3). Bis dahin ist der Entwurf für alle sichtbar, die die Adresse kennen (mit `noindex`). | `get-project`: `requiresSSOTeamLogin: false`; `curl /` ohne Anmeldung 200, `x-robots-tag: noindex` |
+| SP2-F-SB-3 | **Netlify-Projekt vor dem Merge:** Sollen die Build-Einstellungen vor dem Merge an die neue Fassung angeglichen werden (Publish-Ordner `site`, kein Build)? Und wer prüft die Produktion nach dem Merge mit denselben Punkten wie die Vorschau? Dazu ein Hinweis: PR #659 ist kein Entwurf mehr (`draft: false`) und nur durch den Titel «NICHT MERGEN» geschützt. Ein versehentlicher Merge wäre eine Veröffentlichung. | Build-Einstellungen über `get-project` nicht lesbar; Produktion `6acd0c5b…`: Framework vite, 37/4 Regeln; `gh api …/pulls/659`: `draft` false, `merged` false |
+| SP2-F-SB-4 | **«Ein neuer Trieb», Randlinie (Prüfbedarf, Gestaltung einer freigegebenen Abbildung):** Der Auftrag 3 e sagt «grau und dünner». Umgesetzt ist grau, gleich breit wie «Tragfähiger» in der Szene (je 2 px). Genügt das, oder soll «Tragfähiger» in der Szene 3 px bekommen wie in `.puk-say`? | `trieb.cjs`: Szene 2 px grau / 2 px blau; `.puk-say` 2 px grau / 3 px blau |
+| SP2-F-SB-5 | **`verstehen` › `mythen`, «Menschen mit Borderline manipulieren bewusst.» (Prüfbedarf, freigegebene Seite):** Der Bestand hatte hier «Mehr dazu auf Kommunizieren und Grenzen.» Soll ein Verweissatz nach dem Muster der Freigabe 2c und 3-1 kommen? Oder entfällt der Verweis endgültig? Dann bekommt der Abgleich eine Begründung. | `abgleich/verstehen.md` Nr. 116; Antwort auf `verstehen` endet ohne Link |
+
+#### Zählung
+
+- **Punkte:** 32 bewertet, je mit eigenem Beleg:
+  - 23 «kein Befund», davon drei mit Hinweis oder Vorbehalt: Entscheide 3-2 Nr. 7 und 8, Aufgefallen 2c Nr. 6
+  - 5 als Befund: Entscheide 3-2 Nr. 2, Entscheide 2c Nr. 9, Aufgefallen 2c Nr. 1, 3 und 4
+  - 4 als Frage: Aufgefallen 3-2 Nr. 2, 3 und 4, Entscheide 2c Nr. 3
+  - Aufgefallen 2c Nr. 4 führt zusätzlich zu SP2-F-SB-5, Aufgefallen 3-2 Nr. 3 zusätzlich zu SP2-SB-2.
+- **Befunde:** 0 wichtig, 6 optional (SP2-SB-1 bis SP2-SB-6).
+- **Fragen an die Fachstelle:** 5 (SP2-F-SB-1 bis -5); SP2-F-SB-1 und SP2-F-SB-3 vor der Veröffentlichung zu entscheiden.
+- **Kennzahlen:** 10 nachgerechnet, 9 stimmen, 1 nicht nachvollziehbar (SP2-SB-2, Ergebnis gleich).
+- **Nicht geprüft:**
+  - die Build-Einstellungen des Netlify-Projekts (über die Schnittstelle nicht lesbar)
+  - wer den Vorschau-Schutz ausgeschaltet hat
+  - ob die elf übrigen Branches unberührt sind (flacher Klon)
+  - das Verhalten von `/verstehen/` ohne «Pretty URLs»
+  - Überlaufmessungen ohne Skript und mit offenen Vertiefungen (nur Teilmenge wiederholt)
+- **Empfehlung zum Status 5.7:** «offen». Alle Punkte sind mit Beleg bewertet, aber 6 optionale Befunde und 5 Fragen sind offen.
+
+## Schlussprüfung (12.10.2026, Stand f1d6572)
+
+**Prüfung 1 von 2** nach `PRUEFAUFTRAG-SCHLUSSPRUEFUNG.md` (IDs «SP1-»). Prüfung 2 (IDs «SP2-») liest diesen Block nicht; die Zusammenführung (IDs «SPZ-») macht die Sitzung von Prüfung 2, wenn beide Berichte fertig sind.
+
+**Geprüfter Stand:** Branch `borderline-umbau`, Commit `f1d6572`. `git diff --stat f1d6572 c3306d4` (Kopf von `borderline-umbau` bei Beginn) zeigt nur den Prüfauftrag selbst; Inhalte, gebaute Seiten, `site.config.json`, CSS, Werkzeuge und Abgleich sind gleich. Inhalte gleich wie `f78aae9` (`git diff --stat f78aae9 f1d6572`: nur `PRUEFBERICHT.md` und `UMBAUPLAN.md`, Teil 5.1 C). Bezugsstände nach Abschnitt 3 des Auftrags; die Freigabestände selbst bestimmt: Etappe 1 `67495c0` (`540c37d` + Korrektur 1j), 2a `416f6d0`, 2b `7925eaf` (inhaltsgleich mit `ed277d9`), 2c und 3-1 `f78aae9`. Export und Ziel: `christaegger-dot/borderline-angehoerige`, Branch `umzug-puk-profil-1791821335` (`34a2e58`), PR #659, `react-archiv` und `main` (`f46038b`); Vorschau `https://deploy-preview-659--borderline-angehoerige.netlify.app` (Deploy `6acd0e03…`).
+
+**Zeilenangaben:** «Z. …» zu `PRUEFBERICHT.md` in diesem Block beziehen sich auf den Bericht am geprüften Stand `f1d6572`, also vor dem Einfügen der beiden Blöcke der Schlussprüfung (`git show f1d6572:templates/website/borderline-angehoerige/PRUEFBERICHT.md`). Zeilenangaben zu anderen Dateien gelten für `f1d6572`.
+
+**Unabhängigkeit:** Die Prüfsitzung (Claude Code) hat an der Borderline-Website nichts gebaut, korrigiert, entschieden oder geprüft und den Prüfauftrag nicht vorbereitet. Sie hat keine Inhalte und keinen Code geändert, im Repository `borderline-angehoerige` nur gelesen (Klon, Arbeitsbaum), an Netlify und GitHub nichts geändert und committet nur diesen Bericht. Der Auftrag trägt im Kopf den Vermerk «Entwurf zur Bestätigung»; die Prüfung wurde mit der Startnachricht aus Abschnitt 8 des Auftrags gestartet. Eine Bestätigung des Auftrags durch die Fachstelle steht nicht im Bericht (Frage SP1-F-1).
+
+**Vorgehen**
+
+- **Gelesen:** `CLAUDE.md`, `guidelines/00-ablauf-pruefung-und-freigabe.md`, der Auftrag ganz, je Stufe die Leitlinie der Kriterien (`00-fachliche-qualitaet-und-haltung.md`, `00-gesamtkohaerenz-und-aufbau.md`, `00-sprache-und-ton.md`, `00-visuelle-wissensvermittlung.md`, `07-visualisierung-umsetzen.md`, `04-barrierefreiheit-und-test.md`, `09-interaktionskonzept.md`, `00-technische-qualitaet.md`), alle genannten Aufträge, die Selbstprüfungen «Etappe 3-2» und «Freigabe 2c und 3-1» ganz, frühere Prüfrunden nur als Hinweis, was zu prüfen ist.
+- **Arbeitsbäume ausserhalb des Repositorys:** `f1d6572` (dort `node tools/build.mjs` ohne Änderung, `git status` leer), Bestand `origin/borderline-bestand` (`bestand/borderline-angehoerige/texte/`, 73 Dateien, `INVENTAR.md`), dazu je Teil `8d33dbb`, `416f6d0`, `55e98cb` und der Umzugs-Branch. Lokaler Server, Chromium über Playwright; 200 % Schrift als Browser-Einstellung über CDP `Page.setFontSizes` (Wurzel 32 px gemessen), 200 % Seitenzoom als halbierter CSS-Viewport, Theme «Hoher Kontrast» über `data-theme="kontrast"` nach dem Laden.
+- **Zehn Teilprüfungen derselben Prüfsitzung**, je mit eigenen Skripten (nicht committet): W1 2a-K und 2a-2 · W1 2b-K, 2b-2 und Freigabe 2b · W1 Freigabe 2c/3-1, Freigabestände, Zuständigkeit, Haltung, offene Fragen · Bestand Etappen 1 bis 2b · Bestand Etappen 2c und 3-1 · W2 und S · Visualisierungs-Check · Bedienung · W3 Werkzeuge, Technik, Export · W3 Netlify-Vorschau. Die wichtigen Befunde hat die Prüfsitzung zusätzlich selbst nachgeprüft: «Sie sind es nicht.» (`texte/grenzen.md` Z. 378, kein Treffer in `content/` und `abgleich/`), Kopf von `abgleich/verstehen.md` «ohne Diagnostik-Teil» und `abgleich/diagnose.md` Nr. 0–387 nur Unterseiten, die Fotos von Eisberg (200 %) und Bedeutungsschleife (150 %), PR #659 (`draft: false`).
+- **Projektwerkzeuge selbst ausgeführt** (Arbeitsbaum `f1d6572`): `node tools/build.mjs` → «17 Seiten geschrieben · … Gate draft: 0 blockierend, 2 Hinweise» (`crisis-number-check` «144» auf `quellen`, `review-report`); `node tools/gate.mjs --production` → «1 blockierend, 1 Hinweise» (`review-report`); `--selftest` → «Selbsttest: 65/65 bestanden.»; `node abgleich/pruefe-abgleich.mjs` → «Abgleich geprüft: 7371 Zeilen, 0 ohne Fundstelle.»; `kennzahlen.mjs`, `verwendet-auf.mjs` (beide Modi), `verneinung.mjs`, `bedienung.mjs`, `tools/export.mjs` (Entwurf, Ziel ausserhalb des Repositorys).
+
+**Ergebnis in Kürze**
+
+- **5.1 W1:** Die sechs Aufträge (2a-K, 2a-2, 2b-K, 2b-2, Freigabe 2b, Freigabe 2c/3-1) sind im Wortlaut umgesetzt, jeder Punkt mit Diff und Zitat belegt; jede Änderung seit den Freigabeständen geht auf einen Auftrag zurück. 136 Aussagen mit dem Bestand verglichen (Etappe 1: 32, 2a: 28, 2b: 27, 2c: 27, 3-1: 22). **Wichtig:** ein Satz still entfallen («Sie sind es nicht.», SP1-4) und eine Lücke im Abgleich (Diagnostik-Teil von `/verstehen` ohne Zeile, SP1-5). Zuständigkeit: 0 Nummern, 0 `tel:`, 26 von 26 Verweisen im Text im Wortlaut von `responsibility.inline`; Haltung ohne Befund.
+- **5.2 W2:** Navigation, Erreichbarkeit (jede der 16 verlinkten Seiten in höchstens 2 Seitenwechseln von `index`; `404` als Fehlerseite ohne eingehenden Link), 155 Verweise und 92 Einträge der Kapitelübersicht ohne fehlendes Ziel. **Wichtig:** Fusszeile aller Seiten «Entwurf – fachliche Prüfung ausstehend», auch nach einem Export mit `--production` (SP1-3). 8 optional.
+- **5.3 S:** Typografie ohne Befund (0 «ß», 0 falsche Anführungszeichen), Wortzahlen nachgerechnet und gleich wie `kennzahlen.mjs`. 8 optional, darunter die Längen von `verstehen`, `beziehungen`, `grenzen` über Richtwert (SP1-25, Frage SP1-F-12).
+- **5.4 Visualisierungs-Check:** Matrix 1–19 × 10 Figuren, 99 Textzeilen des Plans (109 Zeilen, 10 Abbildungen), 70 Fotos angesehen. **Wichtig:** Eisberg bei 200 % Schrift überlagert (SP1-1). 6 optional; Freundin-Test bei sechs Figuren klar bestanden, bei Tassen und Zwei Sichten teilweise (Fragen).
+- **5.5 Bedienung:** 1496 Messungen ohne waagrechten Überlauf, 533 Tabstopps mit sichtbarem Ring, Kontrast AA (min. 4,71 : 1), NK31-1 behoben. **Wichtig:** Überlagerungen bei grosser Schrift, die die Messung des Überlaufs nicht erfasst: Eisberg (SP1-1) und Bedeutungsschleife bei 150 % (SP1-2). 5 optional. Reale Screenreader-Läufe, Hardwaretastatur und Touch offen (Protokoll im Teil 5.5).
+- **5.6 W3:** Werkzeuge, Technik-Regeln, Export (gleich wie `site/` bis auf das von Hand kopierte `_redirects`), `react-archiv` = `main`. Z31-W3-2 auf der Vorschau selbst nachgeprüft: zehn Punkte erfüllt, 85 von 85 Weiterleitungen (301, Ziel 200, 64 Anker vorhanden), Kopfzeilen wie `_headers`, 0 Verstösse aus der Website. **Wichtig:** PR #659 ist kein Entwurf (SP1-6) und SP1-1 bis SP1-3. 11 optional.
+- **5.7 Selbstprüfungen:** 32 Punkte bewertet (Freigabe 2c/3-1: 15, Etappe 3-2: 17): 25 kein Befund, 6 Befund (SP1-9, -10, -34, -52, -53, -54), 1 Frage an die Fachstelle (SP1-F-5).
+- **Zählung:** 54 Befunde, 6 wichtig, 48 optional; 27 Fragen an die Fachstelle. Keine Stufe wird «erledigt».
+
+### SP1 · 5.1 W1 · unabhängige Prüfung der Korrekturen und Anpassungen
+
+Kriterien «Fachliche Qualität und Haltung». Punkt 1 je Auftrag in den Teilen 5.1 a bis c, Punkt 2 (Freigabestände gegen heute) in 5.1 c, Teil B, Punkt 3 (Bestand) in 5.1 d und e, Punkte 4 bis 6 in 5.1 c, Teile C bis E. Befunde mit ihren SP1-IDs; die Übersicht steht unter «SP1 · Befunde».
+
+#### 5.1 a · Korrekturen 2a-K und 2a-2
+
+**Vorgehen**
+
+- **Gelesen:** `CLAUDE.md`, `guidelines/00-ablauf-pruefung-und-freigabe.md`, `guidelines/00-fachliche-qualitaet-und-haltung.md`, `PRUEFAUFTRAG-SCHLUSSPRUEFUNG.md`, beide Korrekturaufträge ganz, `FREIGABE-ETAPPE-2A.md` (Freigabe Grundlage `416f6d0`), in `PRUEFBERICHT.md` gezielt: Prüfrunde 2a, Teil C2 (Kürzungsvorschläge K-R-a1 bis K-S-b4, Z. 7985–8050), Selbstprüfungen 2a-2 und 2a-K (Z. 4836–4998), Liste «Neue Sätze zur Freigabe» (Z. 4999–5078), «Entfallene Sätze» (Z. 5080–5214); `abgleich/rolle.md`, `selbstfuersorge.md`, `verstehen.md`, `index.md` (Zeilen der Aufträge).
+- **Commits:** `git show --stat` für `8d33dbb`, `416f6d0` und die Zwischen-Commits `17856ee`, `5e5464e`, `41eb8c7`, `cfb482e` (nur die Auftragsdatei). Spätere Änderungen an `content/rolle.html` und `content/selbstfuersorge.html`: `git log 416f6d0..f1d6572` → `31215a8`, `7925eaf`, `66d73b1`, `3ff1fb8`, `3fd10ca`, `dc3ffa6`, je Commit Satzdiff.
+- **Eigene Skripte** (unter `SP/w1a/`):
+  - `saetze.py <commit> <seite>`: sichtbarer Text von `content/<seite>.html` (auch Vertiefungen, `p.puk-sr`), je Block in Sätze zerlegt, mit Abschnitts-`id`.
+  - `diff.py <a> <b> <seite>`: Satzdiff (neu/entfallen, mit Häufigkeit). Ausgaben `diff-2aK.txt`, `diff-2a2.txt`, `diff-netto.txt` (`8d33dbb^` → `416f6d0`), `diff-nachher.txt` (`416f6d0` → `f1d6572`).
+  - `abgleich_liste.py`: jeder neue Satz des Nettodiffs gegen die Liste «Neue Sätze», jeder entfallene gegen «Entfallene Sätze» (Zeichenfolge ohne Anführungszeichen).
+  - `liste_auf_seite.py <commit>`: jedes Zitat der Liste «Neue Sätze» (Nr. 1–66, 17a/b, 51a/b) auf den gebauten Seiten `rolle`, `selbstfuersorge`, `index`.
+  - `acc.py`, Inline-Skript: Inhalt der Akkordeon-Panels; Prüfung, ob Schutz-, Gefahr- und Gesundheitssätze nur in Panels stehen.
+  - `woerter.py`: Wörter in `<main>` mit und ohne Panels (Gegenrechnung zu `kennzahlen.mjs`).
+  - `foto.js`, `acc-check.js` (Playwright, lokaler Server Port 8731): `v-ro-weg` bei 1280/360 px, Standard und `data-theme="kontrast"`; Panels mit/ohne Skript, Bildschirm/Druck.
+- **Projektwerkzeuge** in eigenen Arbeitsbäumen `8d33dbb` und `416f6d0` (danach entfernt) und im Arbeitsbaum `f1d6572`: `pruefe-abgleich.mjs`, `build.mjs`, `gate.mjs --selftest`, `gate.mjs --production`, `kennzahlen.mjs`.
+
+**Ergebnis je Punkt**
+
+##### 2a-K (`KORREKTUR-ETAPPE-2A.md`, `8d33dbb`)
+
+| Punkt | Ergebnis | Beleg |
+| --- | --- | --- |
+| 1 Nur `rolle`, `selbstfuersorge`, Plan, Abgleich | eingehalten | `git show --stat 8d33dbb`: `content/rolle.html`, `content/selbstfuersorge.html`, die zwei gebauten Seiten, `site.config.json`, `abgleich/rolle.md`, `selbstfuersorge.md`, `verstehen.md` (1 Zeile, Nr. 485, ein `rolle`-Satz), `abgleich/README.md`, `PRUEFBERICHT.md`. `site.config.json`: nur `visualPlan` von `rolle` (7 Felder) und `selbstfuersorge` (4 Felder), per JSON-Vergleich. `index`, Etappe 1, CSS: kein Diff |
+| 2 Bestandswortlaut, keine Aussage verloren | eingehalten, ein Satz ohne Träger offen ausgewiesen | Alle 127 im Wortlaut entfallenen Sätze stehen in «Entfallene Sätze» mit Träger (Skript: 0 Lücken). Ohne Träger nur «Beides kann nebeneinander bestehen.» (E14; Abgleich s54 «entfällt», K-R-a3), offen genannt |
+| 2 Einmalige Absicherungen bleiben | eingehalten | `alltag`: «Was daraus folgt und ob eine Absprache wirkt, lässt sich weder aus einer Diagnose ableiten noch vorhersagen, denn Verläufe sind individuell.»; `kraft`: «… kein typischer Verlauf, und lässt sich nicht aus der Diagnose vorhersagen.»; `anbieten`, Vertiefung: «… kein geprüftes Modell …» |
+| 2 Vertiefungen: Akkordeon, ohne Skript lesbar, Druck; Schutz nie nur in Vertiefung | eingehalten | `div.puk-acc[data-puk-accordion]`; `acc-check.js`: mit Skript 0/5 bzw. 0/8 Panels offen, ohne Skript 5/5 und 8/8, Druck 5/5 und 8/8. In Panels kein Satz zu Gefahr, Gewalt, Schutz oder ärztlicher Abklärung (Skript; Treffer nur «Krisen» als Wort, «schützen» kleiner Momente, «Gesundheit» bei Bewegung). «Bei Gefahr geht Schutz vor.», «Substanzkonsum und riskantes Verhalten», «… ärztliche oder psychotherapeutische Abklärung …», «Mögliche Reaktionen auf anhaltende Belastung sind:» ausserhalb der Panels |
+| 2 Satz an mehreren Stellen gleich | eingehalten | «Vielleicht kommt gleich eine Nachricht.» in Szene, `p.puk-sr` und `site.config.json` (je 2 Treffer in `content/selbstfuersorge.html` und Config), «ruft sie gleich»: 0 |
+| 2 Abgleich mit Status und Auftragsnummer, 0 ohne Fundstelle | eingehalten | Alle 154 + 131 + 1 geänderten Zeilen tragen «2a-K» (Skript: 0 ohne). `pruefe-abgleich.mjs` am Stand `8d33dbb` und `416f6d0`: «3207 Zeilen, 0 ohne Fundstelle»; am Stand `f1d6572`: «7371 Zeilen, 0 ohne Fundstelle». Neu «entfällt» in 2a-K: nur s54 (E14), r765 und s668 (Verweissätze aus 2a) |
+| 3 Verantwortung, vier Sätze | im Wortlaut, steht so heute | `rolle` › `schuld`: «Sie können einen eigenen Fehler anerkennen, ohne Verantwortung für die Erkrankung oder die Entscheidungen eines anderen Menschen zu übernehmen.» · «Für Behandlung und Genesung sind Sie nicht verantwortlich.» · «Sie müssen die Erkrankung nicht heilen und sind weder für die Behandlung noch für die Genesung verantwortlich.» · «Belastende Erfahrungen können mitwirken, neben vielen anderen Einflüssen. Daraus folgt keine Schuld und keine Aufteilung von Verantwortung für die Erkrankung.» |
+| 3 Ganze Seite: keine Teilverantwortung | eingehalten | Alle Sätze von `rolle` (f1d6572) mit «verantwort», «allein», «tragen»: keiner legt Teilverantwortung für Erkrankung, Behandlung oder Genesung nahe. Kopf: «Sie müssen keine andere Person beruhigen und nicht ihre Behandlung oder Genesung tragen.» (ohne «allein»). Auf `selbstfuersorge` siehe Frage SP1-F-2 |
+| 4.1 Kinder, erster Absatz | im Wortlaut | «Betreuung, Unterstützung und Sicherheit müssen Erwachsene organisieren.» direkt gefolgt von «Kinder müssen weder Streit schlichten noch Medikamente kontrollieren oder einen Elternteil bewachen.» |
+| 4.2 «Was Sie tun können» | im Wortlaut | Die zwei Verweissätze entfallen (Satzdiff `8d33dbb`); «Welche zweite erwachsene Person ist erreichbar, wenn die erste ausfällt?» steht |
+| 4.3 Letzter Absatz, Reihenfolge | im Wortlaut | Quelltext `f1d6572`: «Bei Angst, Gewalt oder fehlender Betreuung organisieren Erwachsene Hilfe. Bei akuter Gefahr holen Erwachsene sofort Hilfe.» → `<p data-responsibility-inline></p>` → «Was bei Gewalt oder Bedrohung für Sie und die Kinder wichtig ist, … «Wenn Gewalt oder Bedrohung vorkommt».» (`grenzen.html#gewalt`) → «Eine Fachstelle, die Kinderarztpraxis oder eine Familienberatung können beim Planen unterstützen.» Danach seit `dc3ffa6` (Freigabe 2c/3-1) «Bücher für Kinder stehen auf der Seite «Unterstützung finden» …» angehängt; Reihenfolge des Auftrags bleibt |
+| 4.4 Abgleich r67, r68, r72, r736 | umgesetzt | je Ort `rolle#kinder`, Status «verschoben (2a-K)», Bemerkung «2a-K, P2a-F-2 …»; `grenzen` unverändert |
+| 5 K-R-a1 bis a7 | umgesetzt | Satzdiff `diff-2aK.txt` gegen Teil C2: a1 «Wählen Sie Ihren nächsten Schritt danach, was Ihnen wichtig, möglich und sicher ist: ein Angebot oder eine Grenze.»; a2 «Therapeutin oder Therapeut zu sein, die Therapie zu kontrollieren oder Krisenhilfe zu ersetzen»; a3 Doppelungen entfallen (E9, E10, E16), Fragenreihen eine; a4 zwei Sätze, «kein geprüftes Modell» bleibt; a5 ein Satz mit vier Absicherungen; a6 Liste in `anbieten`, «Über Charakter oder Absicht …» entfällt, «Aus einer Handlung allein lassen sich weder Motiv noch Charakter eines Menschen ableiten.» bleibt; a7 «Unterschiedliche Angehörige …» entfällt, «Niemand muss dieselbe Rolle oder Grenze übernehmen.» bleibt |
+| 5 K-R-b1 | umgesetzt | Akkordeon in `an-grenzen` mit «Grosse Ausgaben und finanzielle Risiken» und «Plötzliche Entscheidungen: Kündigung, Umzug, Trennung»; «Substanzkonsum und riskantes Verhalten» sichtbar; nichts nach `krise` |
+| 5 K-R-b2 (P2a-F-7) | umgesetzt | vier Schritte und Titel «Innehalten, bevor Sie reagieren» entfallen (E34–E47); «Wie Sie dann innehalten können, bevor Sie reagieren, steht auf der Seite «Auf sich achten» im Abschnitt «Wenn es gerade zu viel ist».» (`selbstfuersorge.html#zu-viel`, Überschrift dort gleich); Abgleich: 21 Zeilen «zusammengeführt» |
+| 5 K-R-b3, b4 | umgesetzt | Akkordeon «Drei Fragen zur Selbstklärung» in `anbieten` (107 Wörter); Akkordeon «Kleine gute Momente schaffen» in `alltag` |
+| 5 K-R-b5 | umgesetzt | «Dass solche gemischten Gefühle oft zur Belastung dazugehören, steht auf der Seite «Verstehen» im Abschnitt «Was Angehörige erleben können».» (`verstehen.html#erleben`, Überschrift gleich); Liste «Mögliche Reaktionen auf anhaltende Belastung sind:» sichtbar |
+| 5 K-S-a1 bis a8 | umgesetzt | Satzdiff gegen C2: a1 Verweissatz «Wie Sie Aufgaben abgeben, …» statt vier Punkten; a2 «Was wie schwer wiegt, ist persönlich.» und «Bewegung ist eine mögliche Ergänzung.» entfallen; a3 «Die Sätze sind Angebote zum Auswählen, keine Pflichtliste.»; a4 «Die Liste ist kein Test, keine Diagnose und kein Beweis, …»; a5 Einleitung einmal, Warnzeichen beim Atmen bleiben; a6 «Selbstfürsorge dürfen Sie als Ihr eigenes Recht verstehen: Daraus folgt keine Pflicht, danach wieder zu unterstützen.»; a7 «Er beschreibt eine Haltung, in der …»; a8 «Sie sind nicht allein.» entfällt |
+| 5 K-S-b1 | umgesetzt (2a-K), danach durch 2a-2 geändert | 2a-K: zwei Sätze. Seit `416f6d0` vier Sätze nach Auftrag 2a-2, Abschnitt 3 |
+| 5 K-S-b2, b3, b4 | umgesetzt | Akkordeons «Kleine Auszeiten», «Bewegung», «Kontakte» (`kraft`), «Partnerin oder Partner», «Eltern», «Erwachsenes Kind» (`eigenes-leben`), «Eine freiwillige Übung in vier Schritten» (`akzeptanz`); Abklärungssatz und «Bei Gefahr geht Schutz vor.» sichtbar; «Was Sie tun können: Probieren Sie die Übung in vier Schritten …» verweist darauf |
+| 5 Ziel Wörter (±10 %) | erreicht, Zahlen bestätigt | `kennzahlen.mjs` (`8d33dbb`): `rolle` 3144, `selbstfuersorge` 2649 wie gemeldet. Eigene Zählung `<main>`: 3208/2714, ohne Panels 2920/2374, Panels 288/340 (Selbstprüfung 287/339; Differenz 64/65 Wörter ist die Tokenisierung, gleich mit und ohne Panels) → Lesefluss 2857 (+8,2 % zu 2640) und 2310 (+6,5 % zu 2170). Nach 2a-2: `selbstfuersorge` +30 → 2340 (+7,8 %) |
+| 6 Schutzsatz (P2a-F-4) | im Wortlaut, steht so heute | `selbstfuersorge` › `eigenes-leben`: `<p>Bei Gefahr hat Schutz Vorrang.</p><p data-responsibility-inline></p>` |
+| 6 Verweis bei Schuld (P2a-F-8) | im Wortlaut | «Warum Angehörige nicht schuld sind, erklärt die Seite «Verstehen» im Abschnitt «Häufige Annahmen – und was realistischer ist».», Link `verstehen.html#mythen`, dort `<h2 id="mythen-title">Häufige Annahmen – und was realistischer ist` |
+| 6 DBT (P2a-F-9) | umgesetzt | s213 «zusammengeführt», neue Fassung «Der Begriff stammt aus der Dialektisch-Behavioralen Therapie (DBT), einer wissenschaftlich untersuchten Psychotherapie für Borderline.», Bemerkung nennt `glossar.md` Z. 108; «zentrales Element» nicht auf der Seite |
+| 6 Satz im Abendbild | umgesetzt | siehe Punkt 2 |
+| 6 Vertiefung «Ein freier Abend» (P2a-S-4) | im Wortlaut | «Nicht alle Angehörigen erleben das so, und es muss nicht so bleiben. Ständige Bereitschaft ist keine Pflicht, und wer sie spürt, macht nichts falsch.» |
+| 6 Lage der Abbildungen (P2a-V-1) | umgesetzt; Quellenzeilen später geändert | «Ein Stück Weg» direkt nach «… annehmen, verändern oder ablehnen.»; «Ein freier Abend» direkt nach dem ersten Absatz von `kraft`. Quellenzeilen am Abschnittsende in 2a-K umgesetzt, seit `31215a8` (Korrektur 2b-2) im Block «Quellen zu dieser Seite» am Seitenende |
+| 6 «Ein Stück Weg» verfeinern (P2a-V-2) | umgesetzt (Weg in 2a-2 neu) | Fotos `fotos/weg-1280.png`, `weg-360.png`, `weg-*-kontrast.png` (Stand `f1d6572`, SVG seit `416f6d0` unverändert): Kanten laufen zwischen und hinter den Figuren, berühren keinen Kopf; je ein Bein kürzer mit Sohle; Arme bei 360 px abgesetzt; zwei Figuren gleich gross, nebeneinander, von hinten. 0 `style`, 0 Hexwerte, 0 `fill`/`stroke`, nur `puk-vis-*`-Klassen |
+| 6 «Ein freier Abend» unverändert (P2a-V-3) | eingehalten | `git diff 8d33dbb^ f1d6572 -- content/selbstfuersorge.html`: 0 geänderte SVG-Zeilen; in 2a-K nur Szenensatz, Vertiefung, `p.puk-sr` |
+| 6 Seitennamen (P2a-W2-1) | umgesetzt | «… auf der Seite «Grenzen».», «… auf der Seite «Ihre Rolle» …»; «Grenzen setzen»/«Ihre Rolle klären» als Seitenname: 0 auf beiden Seiten |
+| 6 Begriffe (P2a-W2-5) | umgesetzt | «Alarm», «zwiespältig»: 0; «gemischte Gefühle» 2×; `mehrere`: «… wann jemand eine Pause von der Unterstützung machen kann …» |
+| 6 Klares Subjekt (P2a-S-2) | umgesetzt | «Manche sind angespannt, …»; «Viele wollen helfen und möchten zugleich weg. Oder sie wollen …»; `unterstuetzung`: «Vielleicht merken Sie:» mit fünf Punkten |
+| 6 Abgleich r145, r458, r655, s213, s65 | nachgeführt | je Bemerkung «Nachgeführt 2a-K (P2a-W1-4)» bzw. «2a-K, P2a-W1-4»; s65 «umformuliert (2a-K)», in der Liste Nr. 64 |
+| 7 Build und Gates | bestätigt | Arbeitsbaum `8d33dbb` und `416f6d0`: `build.mjs` «Gate draft: 0 blockierend, 14 Hinweise», `git status` danach leer (gebaute Seiten = Quellen); `--selftest` «53/53 bestanden»; `--production` 13 blockierend (2 × `visual-approval`, 10 × `placeholder-approval`, 1 × `review-report`) |
+| 7 Liste «Neue Sätze» vollständig | bestätigt | siehe Abschnitt «Neue und entfallene Sätze» unten |
+| 7 Keine Änderung an Etappe 1 und `index` | eingehalten | `git diff --stat 8d33dbb^ 416f6d0` für `content/index.html`, `index.html`, `abgleich/index.md`, `content/verstehen.html`, `beziehungen.html`, `grenzen.html`: leer |
+| Änderungen ausserhalb des Auftrags | eine, offen ausgewiesen | Verweissatz `rolle` › `alltag` neu gefasst (SP1-7). Sonst: NICE NG150 in der Quellenzeile von `anbieten` folgt den verschobenen «Drei Fragen» (K-R-b3, E8); Plan-Begründungen beschreiben nur die Umsetzung; `abgleich/verstehen.md` Nr. 485 ist ein `rolle`-Satz |
+
+##### 2a-2 (`KORREKTUR-ETAPPE-2A2.md`, `416f6d0`)
+
+| Punkt | Ergebnis | Beleg |
+| --- | --- | --- |
+| 1 Nur die genannten Stellen | eingehalten | `git show --stat 416f6d0`: `content/rolle.html` (3 Weg-Pfade, Absatz `schuld`), `content/selbstfuersorge.html` (Absatz `kraft`), gebaute Seiten, `site.config.json` (nur `v-ro-weg.reason`, JSON-Vergleich), `abgleich/rolle.md`, `selbstfuersorge.md`, `README.md`, Bericht. Satzdiff: nur die Sätze aus Abschnitt 3 und 4 |
+| 2 Weg gewunden | umgesetzt | `git diff 416f6d0^ 416f6d0`: drei Pfade (Fläche, zwei Kanten) ersetzt, sonst SVG gleich. Fotos: Weg in Kurven zum Horizont, oben eine Biegung; kein Dreieck |
+| 2 Figuren wie 2a-K, fest bleibt, Technik | eingehalten | Fotos 1280/360 px, Standard und «kontrast»: kein Kopf berührt, Ferse gehoben, Arme getrennt, zwei gleichwertige Figuren von hinten; Linien im Kontrast dunkler, nichts verschwindet. 0 `style`, 0 Hexwerte. Abstand Kante–Kopf nicht selbst nachgemessen (siehe 5) |
+| 3 `selbstfuersorge` › `kraft` | im Wortlaut, steht so heute | «Einige Angehörige berichten auch von Phasen, in denen sie Stimmungen genauer beobachten, Worte abwägen oder mit Rückzug und Ärger rechnen. Das ist eine mögliche Erfahrung, kein typischer Verlauf, und lässt sich nicht aus der Diagnose vorhersagen. Wenn Sie sich oft wachsam oder erschöpft fühlen, verdient das Aufmerksamkeit, auch wenn von aussen wenig sichtbar ist. Sie sind weder dafür verantwortlich, dass eine Beziehung vorhersehbar ist, noch dafür, die Gefühle eines anderen Menschen auszugleichen.» |
+| 3 Abgleich s303, s307 | umgesetzt | s303, s304, s307, s310 «umformuliert (2a-2)» mit neuer Fassung, Ort `selbstfuersorge#kraft` |
+| 4 `rolle` › `schuld` | im Wortlaut, steht so heute | nach «Andere Familien haben dieses Problem nicht.»: «Ein Vergleich mit anderen Familien erklärt nicht, warum jemand erkrankt. Daraus folgt keine Schuld.» |
+| 4 Abgleich | umgesetzt | r483 «umformuliert (2a-2)», neue Fassung, Bemerkung «Korrekturauftrag 2a-2, Abschnitt 4» |
+| 5 Build und Gates | bestätigt | wie 2a-K, Punkt 7: 0 blockierend, 53/53, 13 blockierend; Abgleich 3207/0 |
+| 5 Liste «Neue Sätze» nachgeführt | bestätigt | Nr. 17a, 17b, 51, 51a, 51b im Wortlaut |
+| 5 Keine Änderung an Etappe 1 und `index` | eingehalten | wie oben |
+
+##### Neue und entfallene Sätze (Skriptabgleich)
+
+| Prüfung | Ergebnis | Beleg |
+| --- | --- | --- |
+| Neue Sätze `8d33dbb^` → `416f6d0` gegen Liste «Neue Sätze» | 0 Lücken | `abgleich_liste.py`: alle 63 neuen und 133 entfallenen Satzstücke (Nettodiff) von `rolle` und `selbstfuersorge` geprüft; jeder neue steht in «Neue Sätze», jeder entfallene in «Entfallene Sätze» oder (2a-2) im Abgleich. Einzige Ausgaben ohne Treffer: «Für die weiteren Termine brauchen wir eine andere Lösung.»» (gleicher Satz, nur die Zerlegung am Zitatende) und die Quellenzeile `anbieten` mit «NICE NG150 (2020)» (keine Aussage; in E8 genannt). `index`: 0 neue, 0 entfallene Sätze |
+| Entfallene Sätze gegen «Entfallene Sätze» und Abgleich | 0 stille Lücken | Alle 127 in 2a-K entfallenen Sätze in E1–E127. Der in 2a-2 ersetzte Satz «Ein Vergleich mit anderen Familien erklärt weder die Ursachen noch Ihre persönliche Verantwortung.» fehlt in der Liste, steht aber im Abgleich (r483) – siehe SP1-8 |
+| Zitate der Liste auf der Seite | 0 fehlend | `liste_auf_seite.py`: alle Zitate der Nr. 1–66 auf den gebauten Seiten, am Stand `416f6d0` und `f1d6572` |
+| Liste 2a-K freigegeben | ja | `FREIGABE-ETAPPE-2A.md`, Z. 43–44: Seiten als Ganzes im Stand `416f6d0`, «alle Sätze der Liste «Neue Sätze zur Freigabe»» |
+| Stand heute (`416f6d0` → `f1d6572`) | jeder Satz aus 2a-K/2a-2 steht noch | Satzdiff: entfallen nur die Quellenzeilen der Abschnitte (`31215a8`, Korrektur 2b-2, jetzt Block «Quellen zu dieser Seite» mit «Verwendet in»). Neu: «Was in einer Krise hilft, …» (`7925eaf`, Freigabe 2b); «Was Genesung beeinflussen kann, …», «Wer in der Behandlung was beitragen kann, …», «Bücher für Kinder …», «Wenn Sie sich fragen, ob Sie selbst erkrankt sind, …», «Angebote für Beratung und Austausch …» (`dc3ffa6`, Freigabe 2c/3-1); «Die Übung in vier Schritten ist eine vereinfachte eigene Darstellung.» und der Grundlagen-Satz in `beratung` ohne Präfix «Quelle:»/«Grundlage:» (`31215a8`). Diese gehören zu anderen Aufträgen (andere Teilprüfungen) |
+
+**Nicht geprüft oder nicht prüfbar**
+
+- **Kleinster Abstand Wegkante–Kopfrand** (2a-2, 11,3 SVG-Einheiten) nicht mit `getPointAtLength` nachgemessen; nur auf Fotos bei 1280 und 360 px angesehen (kein Kontakt sichtbar).
+- **Wortzahlen der Zählweise C1** (2626/2021) nicht nachgerechnet; nachgerechnet sind `kennzahlen.mjs` und «Lesefluss» (siehe Punkt 5, Ziel).
+- **Bildsprache und Freundin-Test** von `v-ro-weg` und `v-sf-abend` gehören zum Visualisierungs-Check (5.4), hier nur die Auftragspunkte.
+- **Zuständigkeitsverweis** (Wortlaut `responsibility.inline`) nur auf Lage geprüft (direkt nach «Bei akuter Gefahr holen Erwachsene sofort Hilfe.» bzw. «Bei Gefahr hat Schutz Vorrang.»), Wortlaut in 5.1 Punkt 4.
+- **Spätere Änderungen** an `rolle` und `selbstfuersorge` (`31215a8`, `7925eaf`, `dc3ffa6`) nur festgestellt, nicht gegen ihre Aufträge geprüft (andere Teilprüfungen).
+
+#### 5.1 b · Korrektur 2b-K, Korrektur 2b-2, Anpassungen Freigabe 2b
+
+**Vorgehen**
+
+- **Gelesen:** `CLAUDE.md`, `guidelines/00-ablauf-pruefung-und-freigabe.md`, `guidelines/00-fachliche-qualitaet-und-haltung.md`, `PRUEFAUFTRAG-SCHLUSSPRUEFUNG.md` (ganz), die drei Aufträge `KORREKTUR-ETAPPE-2B.md`, `KORREKTUR-ETAPPE-2B2.md`, `FREIGABE-ETAPPE-2B.md`; im `PRUEFBERICHT.md` gezielt: Listen «Korrektur 2b-K: Neue Sätze zur Freigabe (vollständig, Stand nach Freigabe 2b)» (Z. 4485–4595), «Korrektur 2b-2: Neue Sätze zur Freigabe» (Z. 4298–4317), «Sätze ohne Quellennamen» (Z. 4141 ff.), «Freigabe 2b: Stand je Punkt» und «Verweissätze» (Z. 3978–4038), Statustabelle (Z. 16, 19). Abgleich `abgleich/krise.md`, `kommunizieren.md`, `grenzen.md`, `beziehungen.md`, `verstehen.md`, `selbstfuersorge.md` am Stand `f1d6572` (Zeilen einzeln nachgeschlagen).
+- **Commits:** `git show --stat` und `--word-diff=plain|porcelain` für `c0b312c`, `31215a8`, `7925eaf`; alle Dateien je Commit durchgesehen. Zwischenstände: `git diff --stat c0b312c 31215a8~1` (nur Auftrag 2b-2 und Prüfbericht), `git diff --stat 31215a8 7925eaf~1` (nur Auftrag Freigabe 2b).
+- **Eigene Skripte** unter `SP/w1b/`:
+  - `satzdiff.py <A> <B> <pfad>`: sichtbarer Text (ohne `script`/`style`) blockweise, in Sätze zerlegt, je Abschnitt (`section id`); Ausgabe entfallene, neue und verschobene Sätze (Multimenge). Gelaufen je Commit für alle betroffenen `content/*.html` und gebauten Seiten, dazu `7925eaf → f1d6572` für alle acht Seiten (Bestand der Umsetzung heute).
+  - `sektion.py`: Text einer Sektion in Reihenfolge (für `anerkennen`, `moment` vorher/nachher).
+  - `quellencheck.py <A> <B> <seite>`: alle Zeilen mit «Quellen:», «Quelle:», «Grundlage:», «Bezugspunkte:», «Bezug:» am Stand vorher (mit Abschnitt, Kennzeichen `figcaption`) gegen die Einträge des Blocks «Quellen zu dieser Seite» nachher; prüft, ob jeder Titel in «Verwendet in» ein `h2` der Seite ist.
+  - Inline-Skripte: Koordinaten der SVG «Zwei Tassen» in drei Ständen; Lage der sechs `data-responsibility-inline` auf `krise`; Linkziel und Linktext der neun Verweissätze gegen `h2` der Zielseite; Eintrag der Fachstelle Zeichen für Zeichen im Bericht.
+- **Projektwerkzeug:** `node abgleich/pruefe-abgleich.mjs` im Arbeitsbaum `f1d6572`: «Abgleich geprüft: 7371 Zeilen, 0 ohne Fundstelle.» (`git status` danach leer).
+
+**Ergebnis je Punkt**
+
+##### 2.1 Korrektur 2b-K (`KORREKTUR-ETAPPE-2B.md`, `c0b312c`)
+
+| Punkt | Ergebnis | Beleg |
+| --- | --- | --- |
+| 3 a `belastung`: Handlungsanleitung neu | umgesetzt, steht heute | `satzdiff c0b312c~1 c0b312c content/krise.html`: − «Bei unmittelbarer Gefahr holen Sie sofort Hilfe und schützen sich selbst.» + «Bei unmittelbarer Gefahr oder wenn Sie nicht einschätzen können, wie dringend es ist, holen Sie sofort Hilfe und schützen sich selbst.» |
+| 3 a Reihenfolge 1–4 | umgesetzt | Word-Diff: `<p>Bei unmittelbarer Gefahr oder …</p><p data-responsibility-inline></p><p>Die Fachstelle Angehörigenarbeit bietet …</p><p>Die drei Bereiche unten …` |
+| 3 a «Diese Seite ersetzt keine professionelle Krisenberatung.» entfällt; c29, c65 | umgesetzt | Satzdiff «−»; `krise.md` Nr. 29 und 65 «zusammengeführt (2b-K)» mit «Die Fachstelle Angehörigenarbeit bietet Beratung und Orientierung, aber keine Krisenintervention.», Bemerkung nennt Fusszeile |
+| 3 a «Die Bereiche bewerten …», «Wenn Sie nicht wissen, ob die Person einen Plan hat, bedeutet das keine Sicherheit.» | umgesetzt | Satzdiff «+» beide im Wortlaut; c34, c69 «umformuliert (2b-K)» |
+| 3 b `waehrend` unverändert | erfüllt | Satzdiff: keine Zeile in `waehrend`; Verweis im Text nach «Bei unmittelbarer Gefahr holen Sie Hilfe über den Notruf.» (Skript, Stand `f1d6572`) |
+| 3 c 1 `sagen`: Handlungsanleitung + Verweis im Text nach dem ersten Absatz | umgesetzt | Word-Diff: «… keine Formulierung garantiert einen bestimmten Verlauf.</p><p>Bei Bedrohung oder Gewalt gehen Sie auf Abstand, bringen sich in Sicherheit und holen Hilfe über den Notruf.</p><p data-responsibility-inline></p><dl>» |
+| 3 c 2 «Leitstelle»-Satz entfällt, Nähe-Satz bleibt | umgesetzt | «−» «Bei Bedrohung bringen Sie sich in Sicherheit und informieren die Leitstelle.»; «Bieten Sie nur Nähe oder Erreichbarkeit an, die für Sie möglich und sicher ist.» unverändert |
+| 3 c 3 «Wenn ein Gespräch kippt» neu (vier Sätze, Link `kommunizieren.html#kippen`) | umgesetzt, Wortlaut gleich | «+» «Ein Satz kann so klingen: «Ich sehe, dass du gerade sehr angespannt bist. …»», Ausstiegssatz unverändert, «+» Verweissatz «Wie Sie ein kippendes Gespräch verlangsamen und eine Grenze in drei Teilen sagen, …»; Linkziel `h2` «Wenn Gespräche kippen» (Skript: OK) |
+| 3 c 4 Entfallen: Schrittsatz, Liste, «Bei Bedrohung oder Gewalt gehen Sie auf Abstand und holen Hilfe.» | umgesetzt | Satzdiff «−» alle drei (Liste mit 7 Teilsätzen) |
+| 3 c 5 Abgleich c106, c279, c252, c254–c261, c263, c303 | umgesetzt | `krise.md` Nr. 106/279 «zusammengeführt (2b-K)»; 252, 254–261 «entfällt (2b-K)» mit «verlinkt auf `kommunizieren#kippen`, P2b-F-8»; 263 «Ein Satz kann so klingen:» |
+| 3 d `danach` Notruf + Verweis im Text | umgesetzt | «+» «Bei möglicher unmittelbarer Lebensgefahr holen Sie sofort Hilfe über den Notruf.» `</p><p data-responsibility-inline></p><h3 …>Für die betroffene Person` |
+| 3 e sechs Verweise im Text, kein «Leitstelle»/«Rettungsdienst» | erfüllt, heute so | Skript `f1d6572`: Verweise in `belastung`, `waehrend`, `sagen`, `suizid`, `danach`, `bleibt`, je direkt nach einer Handlungsanleitung; `grep -c 'Leitstelle\|Rettungsdienst' krise.html content/krise.html`: 0, 0 |
+| 4 a `vermeiden` Titel und Einleitung | umgesetzt | «+» «Was Sie in einer Krise vermeiden sollten», «In einer Krise sollten Sie vermeiden,»; Kicker «05 · Was Sie vermeiden», Kapitelübersicht `href="#vermeiden">Was Sie vermeiden` unverändert; sechs Listenpunkte unverändert |
+| 4 b WHO (2026) in der Quellenzeile | umgesetzt; seit 2b-2 im Quellenblock | Quellenzeile «…; WHO, Suicide: Questions and answers (2026), direktes Fragen löst nach heutigem Wissensstand keine suizidale Handlung aus.»; heute Block-Eintrag mit gleicher Angabe (Liste Nr. 54a) |
+| 4 c Nachsorge (drei Stellen) | umgesetzt, Wortlaut gleich | «+» «Fachliche Nachsorge und erreichbare Kontakte klärt die betroffene Person mit dem Behandlungsteam.», «Vereinbarte Hilfe überprüfen: Die betroffene Person klärt mit dem Behandlungsteam, …, wenn sie möchte, gemeinsam mit Ihnen.», «Weitere Behandlungsschritte klärt die betroffene Person mit dem Behandlungsteam.»; c188, c204, c213 «umformuliert (2b-K)» |
+| 5 a «Pause statt Streit» (Einleitung, drei Begriffe, K-K-a1) | umgesetzt | `content/kommunizieren.html` «+» «Drei Stellen der Anspannungskurve …», «Diese Stellen sind keine festen Stufen …», «Wir können sprechen.», «Es wird eng.», «Es ist gerade zu viel.», «Stoppen Sie, und schaffen Sie Abstand.»; «Ich merke, es wird schwierig. Ich unterbreche das Gespräch jetzt.» bleibt (`sektion.py moment`) |
+| 5 a «Grenzen dafür, wie lange oder wann Sie sprechen, …» | umgesetzt | «+» im Wortlaut; `grenzen.md` Nr. 208 «umformuliert (2b-K)» |
+| 5 b Linehan-Satz entfällt; «Die Stufen sind …»; «Übernehmen heisst hier: …» | umgesetzt | «−» «Linehan beschreibt fünf aufeinander aufbauende Formen …»; k28 «entfällt (2b-K): Zuschreibung nicht an der Quelle geprüft, P2b-F-9»; «+» beide neuen Fassungen; g679, g683, g692 nachgeführt |
+| 5 c `zuhoeren` (K-K-a3, K-K-a2, b184) | umgesetzt | «+» «Sie dürfen zuhören, nachfragen oder eine Pause machen und dabei Ihre eigene Sicht behalten.», «Ihre eigenen Anliegen bleiben wichtig.», «Verschiedene Gefühle, Meinungen oder Bedürfnisse nach Nähe sind nicht automatisch ein Zeichen fehlender Liebe.»; «−» «Eine bestimmte Reaktion lässt sich nicht garantieren.»; k14 «zusammengeführt (2b-K)» mit «Ein hilfreicher Satz kann unterstützen, …»; `beziehungen.md` 184 «umformuliert (2b-K)», «wörtlich» |
+| 5 d `worte` | umgesetzt | «+» «Die folgenden Sätze sind Beispiele und nicht typisch für alle Menschen mit Borderline.»; k837 |
+| 5 e Nicht ändern (vier belastende Aussagen, «Typische schwierige Situationen», Dazzi-Satz, Namen) | erfüllt | Satzdiff `worte`, `beispiele`, `suizid`: ausser 5 d keine Zeile; Dazzi-Satz unverändert bis 2b-2 |
+| 6 «Zwei Tassen» näher zur Mitte, spiegelgleich, Rest fest | umgesetzt, heute so | SVG vorher Körper x 130–198 / 442–510, nachher 190–258 / 382–450 (je ±60, Dampf und Henkel mit); 190+450 = 640 → Achse x = 320; frei 258→382 = 124 Einheiten; Tisch-Pfad und `viewBox="0 60 640 200"` gleich; nur Klassen `puk-vis-scene__*`. Stand `f1d6572` identisch mit `c0b312c` |
+| 6 Kurzbeschreibung und `statement` «stehen nebeneinander auf einem Tisch» | umgesetzt | `p.puk-sr` «Zeichnung: Zwei Tassen Tee stehen nebeneinander auf einem Tisch. …»; `site.config.json` `statement` gleich geändert |
+| 7 Plan (`v-ko-moment`, `v-kr-sagen`, `v-kr-danach`, `v-ko-tassen`) | umgesetzt | Diff `site.config.json`: vier Zeilen wie im Auftrag; Wortlaut heute siehe `site.config.json` (Skript) |
+| 7 Abgleich k25, k726, c190, k572, k764/765/968 | umgesetzt | k25 Bemerkung «„Gründe“ entfällt (nachgeführt 2b-K, P2b-W1-7)»; c190 «zusammengeführt (2b-K)»; k572 «… steht auch sinngemäss auf keiner neuen Seite»; k764, k765, k968 neue Fassung; k726 seit 2b-F neu gefasst (siehe 2.3) |
+| Änderungen ausserhalb des Auftrags | keine an Seiten | Commit-Dateien: `kommunizieren`, `krise` (Quelle und gebaut), `site.config.json`, `abgleich/*` (README, `beziehungen.md`, `grenzen.md`, `kommunizieren.md`, `krise.md`, `pruefe-abgleich.mjs`), `PRUEFBERICHT.md`. `beziehungen.md`/`grenzen.md`: nur Zeilen mit Ort `kommunizieren` (b184, g208, g679, g683, g692). `pruefe-abgleich.mjs`: Regel 4 erkennt zusätzlich «entfällt (2b-K)» (`/^entfällt( \(|$)/`), Teil des Abgleichs. Gebaute Seiten: gleiche Satzdifferenz wie die Quelle, dazu der Wortlaut `responsibility.inline` an den neuen Platzhaltern |
+| Satzdiff gesamt | vollständig erklärt | `krise`: 21 entfallen / 13 neu; `kommunizieren`: 21 / 14. Jeder entfallene Satz ist im Auftrag genannt und im Abgleich mit Status 2b-K; jeder neue steht in der Liste 2b-K (Nr. 1a, 1b, 4, 11, 14a, 15, 17a–c, 19a, 24a, 32a, 44a, 45a, 45b, 49a, 51, 52, 54a, 55, 55a, 57a, 57b, 64a) |
+| Stand `f1d6572` | unverändert | `satzdiff 7925eaf f1d6572`: auf `krise` und `kommunizieren` 0 entfallen (nur Verweissätze aus 2c/3-1 neu) |
+
+##### 2.2 Korrektur 2b-2 (`KORREKTUR-ETAPPE-2B2.md`, `31215a8`)
+
+| Punkt | Ergebnis | Beleg |
+| --- | --- | --- |
+| 3.1 Einleitung unverändert | erfüllt | `sektion.py anerkennen`: «Die sechs Stufen lehnen sich an …» Zeichen gleich vorher/nachher |
+| 3.2 Sechs Schritte sichtbar (Bezeichnung, Name, Leitsatz + Ziel, Beispiel `.puk-say`) | umgesetzt | Stand nachher: «Stufe 1 Aufmerksam sein» / «„Ich bin jetzt wirklich da.“ Zugewandtheit und Aufmerksamkeit zeigen.» / «Beispiel„Ich bin da. Erzähl mir, was los ist.“» usw. für 1–6; die sechs Beispiele gleich der Tabelle des Auftrags (Stufe 1–6 einzeln verglichen) |
+| 3.3 Vertiefung «Die sechs Stufen im Detail» | umgesetzt, Form seit 2b-F geändert | sechs Einträge je «So kann es aussehen», «Typischer Stolperstein», «Weiterer Beispielsatz», «Kurzer Beispiel-Dialog»; alle Beispielsätze und Dialoge von vorher vorhanden (Satzdiff: keine Aussage entfallen; «Ziel» als Bezeichnung entfällt, das Ziel steht im Schritt; «Oder:» vor zweiten Beispielsätzen entfällt) |
+| 3.4 Danach unverändert «Mitgefühl …», Gegenüberstellung, «Spiegeln kann …», «Ein hilfreicher innerer Satz» | umgesetzt | Reihenfolge nachher: Vertiefung → «Mitgefühl heisst nicht übernehmen. …» → «Übernehmen»/«Spiegeln» → «Spiegeln kann …» → «Ein hilfreicher innerer Satz …» (vorher stand der Mitgefühl-Block zwischen Stufe 2 und 3) |
+| 3 Regel «nur umgeordnet, nicht neu geschrieben» | erfüllt bis auf Bezeichnungen | neu sind nur Bezeichnungen «Stufe 1»–«Stufe 6», «Beispiel», «Weiterer Beispielsatz», «Kurzer Beispiel-Dialog» (bei Stufe 1 und 2 vorher «Beispiel»); in Liste 2b-K Nr. 14b und 14c offengelegt und mit 2b freigegeben |
+| 4 Quellenzeilen → Block, je Seite | umgesetzt, jede Zeile zugeordnet | `quellencheck.py`: `verstehen` 2 Zeilen → 9 Einträge; `beziehungen` 1 → 9; `grenzen` 4 → 9; `rolle` 5 → 10; `selbstfuersorge` 7 → 11; `krise` 3 → 6; `kommunizieren` 4 → 5. Jede Quelle der alten Zeile hat einen Eintrag mit dem Titel ihres Abschnitts in «Verwendet in»; keine Quelle fehlt, keine ist dazugekommen; Kurzangaben im Wortlaut («Linehan», «NICE NG225» ohne Jahr). Jeder Titel in «Verwendet in» ist ein `h2` der Seite (Skript: keine Meldung) |
+| 4 Angaben «wofür» | umgesetzt | z. B. `krise` Dazzi «(Übersicht zum direkten Fragen nach Suizidgedanken, in den eingeschlossenen Studien kein statistisch signifikanter Anstieg)»; `selbstfuersorge` NICE NG150 «(für Verhalten und Erholungsbedarf)», «(nicht spezifisch für Borderline)», Bailey und Grenyer «(eine Übersicht über sechs Studien mit deutlichen Forschungslücken)», Vivyan «(angepasste deutsche Fassung)» |
+| 4 Quellen in Abbildungen bleiben | erfüllt | `figcaption`-Zeilen unverändert: `verstehen` (Anspannungskurve, Bewertungen), `grenzen` DEAR «Quelle: Linehan (2015), DBT Skills Training Manual (DEAR MAN), redaktionell angepasst.», `rolle` Garten, `selbstfuersorge` Energie-Konto, `kommunizieren` Tassen |
+| 4 Sätze ohne Quellennamen bleiben im Text | erfüllt | «Studien beschreiben Gruppen, …» (`beziehungen`), «Die fünf Bereiche sind eine eigene didaktische Ordnung.», «Die Übung in vier Schritten …» (vorher klein «die»), «Die Hinweise auf dieser Seite übertragen …», «Das ist eine Orientierung, keine Garantie, dass sie wirken.» (`selbstfuersorge`), «Beispiele und Antwortsätze: eigene didaktische Darstellung.», «Die Beispiele sind eigene didaktische Ableitungen …» (`kommunizieren`); alle am alten Ort (Satzdiff: Abschnitt gleich) |
+| 4 Block: letzter Abschnitt, nicht in Kapitelübersicht, Akkordeon, alphabetisch | erfüllt (heute) | `f1d6572`: auf allen sieben Seiten ist `section#quellen` letzte Sektion, `href="#quellen"` 0-mal; `.puk-acc[data-puk-accordion]` mit `h2` «Quellen zu dieser Seite»; Reihenfolge je Seite nach erstem Autor/Herausgeber (Vivyan unter V) |
+| 4 Etappe 1 und 2a: «nur Ort der Quellen, kein Wortlaut» | erfüllt im Sinne des Auftrags | Porcelain-Word-Diff `verstehen`, `beziehungen`, `grenzen`, `rolle`, `selbstfuersorge`: nur entfernte Quellenzeilen und der neue Block, dazu die vom Auftrag (Abschnitt 4, «Was im Text bleibt») verlangten Randänderungen: «Grundlage:» vor «Studien beschreiben Gruppen …» und vor «Die Hinweise …» entfällt, «die Übung» → «Die Übung», «Die fünf Bereiche …» als eigener Absatz, die «wofür»-Angaben in den Block. Kein anderer Satz geändert (Satzdiff: 0 weitere). Gebaute Seiten zusätzlich `interaktion.js` auf `verstehen`, `grenzen` (Akkordeon) |
+| 5 Dazzi-Satz | umgesetzt | «−» «Die von Dazzi et al. ausgewerteten Studien zeigten keinen statistisch signifikanten Anstieg …» «+» «Eine Übersicht über mehrere Studien (Dazzi et al., 2014) fand keine nachweisbare Zunahme von Suizidgedanken durch direktes Fragen.»; c120 «umformuliert (2b-2)»; Frage 12 der Selbstprüfung von der Fachstelle bestätigt (`FREIGABE-ETAPPE-2B.md`, 1) |
+| 5 Kim und Sascha; Einleitung | umgesetzt | «+» «Kim fühlt sich …», «Sascha möchte …», «Sascha muss …», Bezeichnungen «Kim», «Sascha»; «Die Namen bezeichnen keine festen Rollen und lassen sich nicht aus einer Diagnose ableiten.»; in den Stufen bleiben «Person A»/«Person B» |
+| 5 Verweissatz in «Pause statt Streit» nach der Einleitung | umgesetzt | `sektion.py moment`: Zeile 16 nachher direkt nach der Einleitung, vor «Wir können sprechen.»; Wortlaut gleich |
+| 5 `description`, `v-kr-vermeiden` `goal`, `v-ko-tassen` `reason` | umgesetzt | Meta heute «… was Sie vermeiden sollten …»; `goal` «Erkennen, was Sie in einer Krise vermeiden sollten»; `reason` «… Tassenkörper bei x 190–258 und 382–450, dazwischen 124 Einheiten frei» (nachgerechnet, stimmt) |
+| Änderungen ausserhalb des Auftrags | keine | Commit-Dateien: sieben Seiten (Quelle und gebaut), `borderline.css` (+21, `bl-stufen`), `site.config.json` (sieben Zeilen `v-…-quellen`, drei Reste), `abgleich/*`, `PRUEFBERICHT.md`; `index` nicht im Commit |
+| Abgleich | umgesetzt | Zeilen mit Status «(2b-2)» heute: `verstehen` 11, `beziehungen` 8, `grenzen` 9, `rolle` 18, `selbstfuersorge` 25, `kommunizieren` 109, `krise` 5; z. B. `grenzen.md` 83 «verschoben (2b-2)», Ort `grenzen#quellen`; `pruefe-abgleich.mjs`: 0 ohne Fundstelle |
+| Neue Sätze gegen Liste | vollständig | 2b-2-Sätze in Liste Nr. 14b, 14c, 20, 35, 36a, 42, 43a, 53a, 54a |
+| Stand `f1d6572` | steht, eine spätere Änderung | `satzdiff 7925eaf f1d6572`: einzige Änderung an Block-Einträgen ist `grenzen` «Linehan» → «Linehan (2015)» (Korrektur 3-1-K, `3fd10ca`, `KORREKTUR-ETAPPE-3-1.md` Z. 99, freigegeben in `FREIGABE-ETAPPE-2C-3-1.md` Z. 176); dazu je Block der Verweissatz auf `quellen` (gleiche Freigabe) |
+
+##### 2.3 Anpassungen Freigabe 2b (`FREIGABE-ETAPPE-2B.md`, `7925eaf`)
+
+| Punkt | Ergebnis | Beleg |
+| --- | --- | --- |
+| 3 a sechs Einträge, Zwischentitel darüber | umgesetzt | `f1d6572`: `h4.puk-site-subheading` «Die sechs Stufen im Detail», darunter `.puk-acc[data-multiple]` mit 6 × `h5.puk-acc__heading` «Stufe 1 · Aufmerksam sein» … «Stufe 6 · Radikale Echtheit: auf Augenhöhe bleiben»; Satzdiff `7925eaf~1→7925eaf`: kein Satz der Einträge geändert |
+| 3 b Zwischentitel «Mitgefühl heisst nicht übernehmen» | umgesetzt | `h3.puk-site-subheading` (gleiche Ebene und Klasse wie «Sechs Stufen der Validierung»); Absatz beginnt «Sie können Beobachtungen vorsichtig spiegeln, …»; g663 «umformuliert (2b-F)» |
+| 3 c Leerraum vor dem Quellenblock | umgesetzt, später geändert | `7925eaf`: `puk-site-anchor-end` von der letzten Inhaltssektion an `section#quellen` (alle sieben Seiten). `f1d6572`: Klasse auf keiner Seite; entfernt mit Etappe 2c-1 (`66d73b1`, `BAUAUFTRAG-ETAPPE-2C1.md` Z. 162 «Die Mindesthöhe … fällt ganz weg.») |
+| 3 d «Nächster Schritt» | umgesetzt | «−» «Nennen Sie einen Schritt, den Sie selbst in der Hand haben: «Ich beende das Gespräch jetzt und entscheide später, …»» «+» «Nennen Sie einen Schritt, den Sie selbst in der Hand haben.»; k726, g590, g591, c274 nachgeführt |
+| 3 e N2bK-1 Liste vollständig | umgesetzt | Liste Z. 4485 ff.: Regel im Kopf, Nr. 8a, 20a, 29b, 14c, 14d, 29a, 71–77 vorhanden |
+| 3 e N2bK-3 Bemerkungen c253, c260, c261 | umgesetzt | `krise.md` 253 «… (nachgeführt 2b-F, N2bK-3)»; 260 «derselbe Wortlaut steht weiter im Standardsatz (Nr. 265)»; 261 Hinweis auf Nr. 266 |
+| 4 Satz 1 (`verstehen` › `mythen`) | Wortlaut gleich; Ort begründet abweichend | Satz am Ende des Teils «Wenn Sie sich wegen Suizid sorgen», nach «Bleiben Sie bei der Person nur, soweit dies für Sie sicher möglich ist.». «Direkt nachzufragen, …» steht in der Annahmenliste (`dd`); der nächste Absatz ist die Handlungsanleitung mit Verweis im Text danach. Regel «Kein Verweissatz zwischen Handlungsanleitung und Verweis im Text» und Ortsregel des Auftrags («ans Ende des nächsten Absatzes») sind damit eingehalten; Begründung in der Selbstprüfung Z. 4031 |
+| 4 Sätze 2–7 | Wortlaut und Ort wie Auftrag | Satzdiff «+» je einmal, Wortlaut gleich Auftrag; Orte: Satz 2 eigener Absatz nach «… professionelle Hilfe Vorrang.» (vor der Abbildung); Satz 3 in der Antwort nach «Daraus folgt keine Schuld …»; Satz 4 Ende `was-hilft`; Satz 5 im Absatz nach «… können mittragen.»; Satz 6 nach «Bei akuter Gefahr holen Erwachsene sofort Hilfe.» (dort folgt kein Verweis im Text); Satz 7 direkt nach dem Verweis im Text in `zu-viel` |
+| 4 Satz 1 = `kommunizieren` › `worte`, Satz 6 = `krise` › `bleibt` | erfüllt | gleiche Zeichenfolge auf beiden Seiten (Kontextausgabe `f1d6572`) |
+| 4 Linktext = Titel der Zielstelle, Ziel vorhanden | erfüllt | Skript: 7/7 (+ 2 auf `krise`) Linktext gleich `h2` der Zielsektion; Ziel-`id` vorhanden |
+| 4 nicht in Abbildung/Vertiefung | erfüllt | Kontext: alle in `p` bzw. `dd` der Lesefläche; Satz 2 vor der `figure` |
+| 5 `approvalStatus` `v-ko-tassen` | umgesetzt | heute «freigegeben» |
+| 6 a Eintrag der Fachstelle | unverändert übertragen | Skript: Block aus dem Auftrag Zeichen für Zeichen im Bericht (`7925eaf` und `f1d6572`), direkt vor «## Selbstprüfung der bauenden Sitzung» |
+| 6 b Statustabelle | umgesetzt | Word-Diff: «; Fachstelle (Freigabe Etappe 2b)», «Etappe 2b (`kommunizieren`, `krise`, Einstieg auf `index`) fachlich freigegeben am 11.10.2026.», «Etappe 2b: «Zwei Tassen» fachlich freigegeben (Fachstelle, 11.10.2026).»; Status «offen» |
+| Änderungen ausserhalb des Auftrags | keine | Commit: `content/` und gebaute Seiten von sieben Themenseiten, `borderline.css` (−3, Klasse `bl-stufen__detail` nach 3 a überflüssig), `site.config.json` (2 Zeilen), `abgleich/*`, `PRUEFBERICHT.md`. `rolle` und `krise`: nur die Klasse aus 3 c. `index` nicht im Commit. Etappe 1/2a: nur sieben Verweissätze und Klasse 3 c (Porcelain-Diff) |
+| Neue Sätze gegen Liste | vollständig | Liste Nr. 71–77 gleich dem Wortlaut auf den Seiten; Abgleich v547–v549, b249, g712, g713, s672 «neu (Verweis, 2b-F)» |
+| Stand `f1d6572` | steht | `satzdiff 7925eaf f1d6572`: kein Satz aus 7925eaf entfallen |
+
+##### 2.4 Fachliche Qualität und Haltung der neuen Sätze (Stichprobe aller neuen Sätze der drei Aufträge)
+
+| Punkt | Ergebnis | Beleg |
+| --- | --- | --- |
+| Autonomie, keine Verantwortung für Behandlung | erfüllt | Nachsorge mit der betroffenen Person als Subjekt: «Fachliche Nachsorge und erreichbare Kontakte klärt die betroffene Person mit dem Behandlungsteam.», «… wenn sie möchte, gemeinsam mit Ihnen.» |
+| Krisenthemen ruhig, kein Krisenzugang | erfüllt | «Notruf» ohne Nummer; kein `tel:` in den geänderten Abschnitten; jeder neue Platzhalter direkt nach Handlungsanleitung |
+| Stärke der Formulierung zur Evidenz | erfüllt im Text, siehe Frage | Dazzi-Satz «keine nachweisbare Zunahme» (Fachstelle bestätigt); Linehan-Zuschreibung entfernt (P2b-F-9) |
+| keine Garantie- oder Heilungsaussagen | erfüllt | Kürzung K-K-a2 trägt «Ein hilfreicher Satz kann unterstützen, aber die Reaktion der anderen Person nicht garantieren.» (steht) |
+
+**Nicht geprüft oder nicht prüfbar**
+
+- **Darstellung im Browser** (Tassen bei 1280/360 px, Kontrast-Theme, Überlauf, Druck, Tastatur der Akkordeons): Teil 5.4/5.5, nicht dieser Teil.
+- **Build und Gates** (`build.mjs`, `gate.mjs --production`, `--selftest`) nicht selbst ausgeführt: Teil 5.6. Nur `pruefe-abgleich.mjs` ausgeführt.
+- **Wortzahlen C1** (2b-2: `kommunizieren`, `krise` höchstens etwa 2500) nicht nachgerechnet: Zählweise C1 gehört zu Teil 5.3.
+- **Quellen inhaltlich** (deckt die Quelle die Aussage, z. B. WHO 2026 zum direkten Fragen, Dazzi 2014): nicht an den Originalen geprüft; nur Übereinstimmung von Quellenzeile und Block.
+- **Bestand Satz für Satz** nur an den Abgleichzeilen, die diese drei Aufträge berühren (rund 40 Zeilen), nicht als Stichprobe von 20 Aussagen je Etappe (Punkt 3 des Auftrags, anderer Teil).
+
+#### 5.1 c · Anpassungen Freigabe 2c und 3-1, Freigabestände, Zuständigkeit, Haltung, offene Fragen (Teil F gehört zu 5.7)
+
+**Vorgehen**
+
+- **Gelesen:** `CLAUDE.md`, `guidelines/00-ablauf-pruefung-und-freigabe.md`, `guidelines/00-fachliche-qualitaet-und-haltung.md`, `PRUEFAUFTRAG-SCHLUSSPRUEFUNG.md` (ganz), `FREIGABE-ETAPPE-2C-3-1.md` (ganz), `KORREKTUR-ETAPPE-3-1.md` (Abschnitt 7), `PRUEFBERICHT.md` gezielt: Z. 1–85 (Status, Freigaben), 386–408 (NK-F), 496–524 (Z31-F), 1057–1209 (Selbstprüfung 3-2), 1209–1360 (Selbstprüfung «Freigabe 2c und 3-1»), 2039–2063, 2649–2670, 4092–4100, 4311–4318, 7050–7070.
+- **Bezugsstände selbst bestimmt:** Etappe 1 `67495c0` (= `540c37d` + Korrektur 1j, `merge-base --is-ancestor` geprüft); 2a `416f6d0`; 2b `7925eaf` (`git diff 7925eaf ed277d9` ändert nur `PRUEFBERICHT.md`, also inhaltsgleich); 2c/3-1 `f78aae9`. `git diff --stat f78aae9 f1d6572`: nur `PRUEFBERICHT.md` und `UMBAUPLAN.md` (Kopf, Abschnitt 7 zu 3-2); `site.config.json` ohne Unterschied.
+- **Eigene Skripte** unter `SP/w1c/`:
+  - `satzdiff.mjs` (Segment-Diff zweier Stände mit LCS), `zuordnung.mjs`/`zuordnung2.mjs` (Textsätze Freigabestand → `f1d6572`, jede Änderung dem Commit zugeordnet, der sie einführte; `content/` und gebaute Seite), `attrdiff.sh` (`title`, Meta-Beschreibung, `aria-label`, `alt` der gebauten Seiten), `jsondiff.mjs` (`site.config.json` nach Seiten und Plan-IDs)
+  - `links13.mjs`, `vorfahren.py` (13 Verweissätze: Ziel, Anker, Überschrift, Vorfahren `figure`/`details`/Akkordeon, folgendes Element), Wortlautabgleich der 13 Sätze und 3 a–c gegen die Tabelle des Auftrags (Python, Zeichen für Zeichen)
+  - `zustaendigkeit.mjs` (Ziffernmuster, Kurznummern 143/144/147/112/117/118/145/1414/0800/0848, `tel:`, Notfall-Stichwörter, «Hilfe in der Krise», jeder `data-responsibility-inline` mit Abschnitt, Satz davor und Wortlaut, Fusszeile gegen `responsibility.text`)
+  - `haltung.mjs`, `abs2.py` (Blöcke «Was Sie tun können», «Ihre Rolle», «Ansatzpunkt für Angehörige», «Was hilft»; Stichwörter für Verantwortung, absolute Aussagen, Heilungsversprechen mit Kontext)
+  - `mess3d3e.cjs`, `szenen.cjs` (Playwright, Chromium; 200 % Schrift über CDP `Page.setFontSizes` standard 32 px; Theme über `data-theme="kontrast"`; Gegenprobe mit `borderline.css` von `55e98cb` per `page.route`); Fotos in `SP/w1c/fotos/` angesehen
+  - `quellenort.mjs` (Quellenangaben, die 2b-2 aus den Quellenzeilen entfernt hat, im Quellenblock wiedergefunden)
+- **Projektwerkzeuge im Arbeitsbaum:** `node abgleich/pruefe-abgleich.mjs` → «7371 Zeilen, 0 ohne Fundstelle»; `node tools/gate.mjs --production` → «1 blockierend (`review-report`), 1 Hinweis (`crisis-number-check`, «144», `quellen`)»; `--selftest` → «65/65 bestanden».
+
+**Ergebnis je Punkt**
+
+##### A · Anpassungen Freigabe 2c und 3-1 (`git diff 55e98cb f78aae9`)
+
+| Punkt | Ergebnis | Beleg |
+| --- | --- | --- |
+| Umfang des Diffs | nur erlaubte Dateien | `git diff --stat`: 9 × `content/` + 9 gebaute Seiten (dieselben Seiten), `borderline.css`, `site.config.json`, 9 Abgleich-Tabellen + `abgleich/README.md`, `UMBAUPLAN.md`, `PRUEFBERICHT.md`, `FREIGABE-ETAPPE-2C-3-1.md`. `grenzen`, `kommunizieren`, `genesung`, `unterstuetzung`, `behandlung`, `fragen`, `impressum-datenschutz`: kein Unterschied |
+| Gebaute Seiten = `content/` | erfüllt | Segment-Diff `content/<s>.html` und `<s>.html` für alle 9 Seiten md5-gleich |
+| 3 a `diagnose` | im Wortlaut | «… oder in jedem Behandlungsrahmen identisch verwendet werden.» gefunden; «setting» (ohne Gross-/Kleinschreibung) in `content/diagnose.html` + `diagnose.html`: 0 |
+| 3 b `ueber` › `warum` | im Wortlaut | «Viele wollen helfen und fühlen sich zugleich hilflos, sie lieben und sind erschöpft, …» gefunden; «Sie wollen helfen» 0 |
+| 3 c `quellen` LeDoux | im Wortlaut | «Simon & Schuster, New York.» (Quelltext `&amp;`); «Simon und Schuster» 0 |
+| 3 d Überlauf | umgesetzt, gemessen | `borderline.css`: `@container (max-width:45.71em)` statt `960px`, sonst nur Kommentar. 17 Seiten × 1280/1440 px × Standard/«kontrast» bei 200 % Schrift: 68 Messungen, 0 mit Überlauf. Gegenprobe mit CSS von `55e98cb`: `verstehen` 1280 px `scrollWidth` 1328, «P.bl-kurve__label--4» 47,5 px über dem Rand (Standard und «kontrast»). Umschaltpunkt bei Standardschrift unverändert: 1043 px Bezeichnungen aus (Container 959,6 px), 1044 px an (960,5 px). Wortlaut der Figur unverändert (Diff `verstehen` zeigt nur die drei Verweissätze) |
+| 3 e Randlinie | umgesetzt; «dünner» nur gegenüber `.puk-say` | Regel nur mit Tokens, Selektor `[data-visual-id="v-ge-trieb"]`. Gemessen 1280/360 px: Szene «Weniger hilfreich» 2 px `rgb(233,233,233)` («kontrast» `rgb(138,138,138)`) = `.puk-say` «Weniger hilfreich»; Szene «Tragfähiger» 2 px blau; `.puk-say` «Tragfähiger» 3 px. Andere Szenen (`v-vs-eisberg`, `v-vs-bewertungen`, `v-ro-weg`, `v-sf-abend`, `v-ko-tassen`) unverändert 2 px blau. Fotos `trieb-1280/360-standard/kontrast.png` angesehen: Zeichnung, Wortlaut, Kurzbeschreibung unverändert (`genesung` ohne Diff). Zu «dünner» siehe Frage SP1-F-5 |
+| 4 · 13 Verweissätze, Wortlaut | 13/13 wörtlich | jeder Satz aus Spalte «Satz (neu)» genau einmal im Text seiner Seite |
+| 4 · Linktext = Titel, Ziel | 13/13 | Linktext gleich `h2` des Ankers (Nr. 1–4, 6–8, 10, 12) bzw. Seitentitel aus `site.config.json` (Nr. 5, 9, 11, 13: «Behandlung und Ihre Rolle darin», «Unterstützung finden»); alle Anker vorhanden; Ziele wie Tabelle des Auftrags |
+| 4 · Ort | wie Auftrag, ausser Nr. 5 (begründet) | Satz davor je wie Auftrag (Skript, Kontextzitate). Nr. 5 steht am Ende des Absatzes nach «Es gibt keine «perfekte» Reaktion, die eine Beziehung repariert.», nicht direkt nach «… keine Therapeutinnen oder Therapeuten.»; Begründung (Bezug von «sie» im Folgesatz) trifft zu. Abschnitt 2 nennt als Ausweichort «Ende des nächsten Absatzes»; genommen ist das Ende desselben Absatzes. Kein Befund: Zweck der Regel erfüllt, dokumentiert (Selbstprüfung Entscheid 5) |
+| 4 · keiner in Abbildung, Vertiefung, zwischen Anleitung und Verweis | erfüllt | `vorfahren.py`: kein Link in `figure`, `details`, `.puk-acc`, `.puk-vis*`. Nur bei Nr. 10 folgt ein Verweis im Text, und zwar nach dem nächsten Absatz («Wenn Sie sich nicht mehr sicher fühlen … Warten Sie nicht auf bestimmte Warnzeichen.»); der Verweissatz steht davor, nicht dazwischen |
+| 5 `site.config.json` | im Wortlaut | `v-ge-trieb.approvalStatus` «ausstehend» → «freigegeben»; `v-be-therapieformen.goal` und `reason` («Die drei Rahmen als Begriffsliste, …», Rest gleich); `v-un-beratung.reason` wörtlich. Plan-Zeilen nachgeführt: `v-vs-borderline`, `v-ro-kinder`, `v-sf-beratung`, `v-ge-trieb` (je Satz zu 2c/3-1). Keine weitere Änderung (`jsondiff.mjs`) |
+| 6 a Eintrag der Fachstelle | Zeichen für Zeichen | Text zwischen den Code-Zäunen in Abschnitt 6 a gegen `PRUEFBERICHT.md` Z. 67–84: `diff` ohne Unterschied (nur Leerzeile danach) |
+| 6 b Statustabelle | im Wortlaut | Z. 16: «; Fachstelle (Freigabe Etappen 2c und 3-1)» und Schlusssatz «… rechtliche Prüfung von Impressum und Datenschutz offen.»; Z. 19: «Etappe 2c: «Ein neuer Trieb» fachlich freigegeben (Fachstelle, 12.10.2026).»; alle Stufen «offen» |
+| 6 c NK31-2 | richtig berichtigt | Eigene Zählung (Wörter aus `content/`): `grenzen` 1776 → 1789 (+13), `verstehen` 1914 → 1926 (+12) zwischen `7e8fa4e` und `f3cb270`. `forschung`: +20 −7 −16 +2 +1 −1 = −1, passt zu 1547 → 1546 (Z. 1413) |
+| 6 c NK31-4 | im Wortlaut | Liste 3-1-K Nr. 110 und Liste 2c-K Nr. 342: «Bedingung im Wortlaut von `krise` › `belastung`, Handlung nach Auftrag» |
+| 6 c Listen | vollständig | Liste 2c-K Nr. 137 (3 a), Nr. 348–360 (13 Sätze, je mit Abgleichzeile); Liste 3-1-K Nr. 455 (3 b); Vermerke «Nachgeführt mit der Freigabe 2c und 3-1» in beiden Listen |
+| 6 d `UMBAUPLAN.md` | umgesetzt | Kopf «Etappen 2c und 3-1 freigegeben …, als Nächstes Etappe 3-2»; Abschnitt 2: `ueber`, `impressum-datenschutz` ohne Richtwert (NK-F-7) |
+| Abgleich | erfüllt | jede betroffene Zeile mit «(2c-3-1-F)»; `pruefe-abgleich.mjs` 7371 Zeilen, 0 ohne Fundstelle. `selbstfuersorge.md` Nr. 232 zusätzlich auf «umformuliert (2c-3-1-F)» gesetzt (Link des Bestands «Alle Beratungsangebote & Netzwerke ansehen.» → Verweissatz Nr. 9): sachlich richtig, Abgleich durfte geändert werden |
+| Änderungen ausserhalb des Auftrags | keine | Satz-Diff aller 9 Seiten: nur die 13 Sätze und die drei Wörter aus 3 a–c; bei `verstehen` Nr. 3 nur `</strong>` vor dem neuen Satz |
+| Fachliche Aussage still entfallen / neu ohne Freigabe | nein | entfernt sind nur «Versorgungssetting», «Sie» (Satzanfang), «und» (Verlag); neu sind nur die 13 Verweissätze (Liste 2c-K Nr. 348–360, Freigabe Z. 75) |
+| Gates nach Abschnitt 7 | wie Selbstprüfung | production: `review-report` blockierend, Hinweis `crisis-number-check` (nicht `siteUrl`, das seit 3-1 gesetzt ist); Selbsttest 65/65 |
+
+##### B · Freigabestände gegen `f1d6572` (je Seite: `content/`, gebaute Seite, `site.config.json`-Teil)
+
+Allgemein für alle gebauten Seiten seit Etappe 1/2a/2b: Logo-`aria-label` «Startseite: Borderline – …» → «Psychiatrische Universitätsklinik Zürich – Startseite Borderline – …» und Fusszeilenlinks «Impressum · Datenschutz» (Profil 2026.10.1, Werkzeuge Build r4-8, Etappe 3-1 `3ff1fb8`); Navigation um «Ihre Rolle», «Auf sich achten» (Etappe 2a). Sonst keine Änderung an `title`, Meta-Beschreibung, `alt`.
+
+| Seite | Freigabestand | Änderungen bis `f1d6572` und Zuordnung | Ergebnis |
+| --- | --- | --- | --- |
+| `index` | `67495c0`; Einstiege 2a/2b/2c in `416f6d0`/`7925eaf`/`f78aae9` | `94afac7` 2 Einstiege (2a), `26af566` 1 Einstieg (2b), `66d73b1` 2 Einstiege (2c-1), Platzhalter «Weitere Einstiege folgen …» entfernt; `3fd10ca` V1, V2 (3-1-K, NK-F-1); `dc3ffa6` Nr. 13. Einstiege heute = Stand `f78aae9` | jede Änderung zugeordnet |
+| `verstehen` | `67495c0` | `31215a8` Quellenzeilen → Block «Quellen zu dieser Seite» (2b-2); `7925eaf` 3 Verweissätze (Freigabe 2b); `66d73b1` Klasse `puk-site-anchor-end` entfernt (Bauauftrag 2c-1, Abschnitt 7); `3ff1fb8` `<span lang="en">` (3-1, nur Markup); `3fd10ca` Verweissatz auf `quellen` (NK-F-1); `dc3ffa6` Nr. 1–3. Plan: `v-vs-quellen` neu (2b-2), `v-vs-borderline.reason` (2c/3-1) | zugeordnet |
+| `beziehungen` | `67495c0` | 2b-2 (Block; «Grundlage:» entfällt, Satz bleibt), Freigabe 2b (1 Satz), 2c-1 (Klasse), 3-1-K (Verweissatz `quellen`), `dc3ffa6` Nr. 4, 5; Plan `v-bz-quellen` (2b-2) | zugeordnet |
+| `grenzen` | `67495c0` | 2b-2 (Block; «Bezugspunkte:», «Bezug:» entfallen), Freigabe 2b (2 Sätze), 2c-1, 3-1 (`lang`), 3-1-K (Verweissatz, «Linehan (2015)» statt «Linehan»); Plan `v-gr-quellen` | zugeordnet |
+| `rolle` | `416f6d0` | 2b-2 (Block), Freigabe 2b (nur Klasse `puk-site-anchor-end` verschoben, 3 c), 2c-1 (Klasse entfernt), 3-1 (`lang`), 3-1-K (Verweissatz), `dc3ffa6` Nr. 6–8; Plan `v-ro-weg.approvalStatus` (Freigabe 2a), `v-ro-kinder.reason`, `v-ro-quellen` | zugeordnet |
+| `selbstfuersorge` | `416f6d0` | 2b-2 (Block; «Quelle: Linehan (2015) …; die Übung …» → «Die Übung in vier Schritten ist eine vereinfachte eigene Darstellung.» + Eintrag im Block), Freigabe 2b (1 Satz), 2c-1, 3-1 (`lang`), 3-1-K, `dc3ffa6` Nr. 9, 10; Plan `v-sf-abend.approvalStatus`, `v-sf-beratung.reason`, `v-sf-quellen` | zugeordnet |
+| `kommunizieren` | `7925eaf` | 2c-1 (Klasse), 3-1 (`lang`, «Validation and psychotherapy»), 3-1-K (Verweissatz) | zugeordnet |
+| `krise` | `7925eaf` | 2c-1, 3-1 (`lang`), 3-1-K, `dc3ffa6` Nr. 11, 12 | zugeordnet |
+| `genesung`, `unterstuetzung`, `diagnose`, `behandlung`, `fragen`, `quellen`, `ueber`, `impressum-datenschutz` | `f78aae9` | keine (`content/`, gebaute Seite und `site.config.json` gleich) | ohne Änderung |
+| `404` | in keiner Freigabe genannt | seit `3ff1fb8` unverändert; nur Hinweis und Link, Plan «entfällt» | siehe SP1-11 |
+
+Zusatz 2b-2: Jede Angabe der entfernten Quellenzeilen auf `verstehen`, `beziehungen`, `grenzen`, `rolle`, `selbstfuersorge` steht im Quellenblock (`quellenort.mjs` plus Einzelprüfung «Energie-Konto», Zaccaro, Shields, Santangelo, Sotomo, Mason und Kreger). `site.config.json` site-weit seit `67495c0` nur `$comment`, `assetVersion`, `siteUrl`, `legal`; `responsibility` unverändert.
+
+##### C · Zuständigkeit (17 gebaute Seiten)
+
+| Punkt | Ergebnis | Beleg |
+| --- | --- | --- |
+| Telefonnummern | keine | Muster `+41/0041/0xx …`, `0800`, `0848`: 0 Treffer ausser `quellen` «09081130» = DOI «10.1176/appi.ajp.2009.09081130». Kurznummern 143/144/147/112/117/118/145/1414: nur `quellen` «Family Process 60(1), 134–144» |
+| «144» auf `quellen` | kein Befund | Seitenzahl Guillén et al. (2021), keine Nummer; Gate-Hinweis `crisis-number-check` ist ein Fehlalarm, kein Blocker |
+| `tel:` | 0 auf 17 Seiten | `zustaendigkeit.mjs` |
+| Notfallblock | keiner | einziger Sicherheitsblock: Fusszeile `<section class="puk-site-safety puk-site-safety--responsibility" data-safety-access="responsibility">`. «Notfall…» kommt nur im Wortlaut des Verweises vor und auf `quellen` und `unterstuetzung` in «keine heutige Notfallanleitung». «Notruf» ohne Nummer (`diagnose`, `behandlung`, `krise`, `fragen`) |
+| Seite «Hilfe in der Krise» | keine | Titel `krise` «Krisen begleiten»; alte Krisen-Adressen (`/soforthilfe`, `/notfall`, `/notfallkarte*`, `/Notfallkarte-Zuerich-Psychische-Krise.pdf`, …) → `/index.html` 301 (`_redirects` Z. 8–17) |
+| Fusszeile | 17/17 | Fusszeilentext enthält `responsibility.text` wörtlich |
+| `data-responsibility-inline`, Wortlaut | 26/26 gleich `responsibility.inline.text` | `verstehen` 1, `beziehungen` 1, `rolle` 2, `grenzen` 1, `diagnose` 2, `behandlung` 2, `kommunizieren` 2, `krise` 6, `selbstfuersorge` 3, `fragen` 6 |
+| Satz davor = Handlungsanleitung für akute Lage | 26/26, eine Stelle entschieden | z. B. `verstehen` › `mythen` «… fragen Sie ruhig und direkt, ob die Person Suizidgedanken oder einen Plan hat. Das kann helfen, die Lage zu verstehen.»; `beziehungen` › `verantwortung` «… darf Hilfe nie zurückgehalten werden … Dann braucht es eine fachliche Einschätzung.»; `rolle` › `kinder` «Bei akuter Gefahr holen Erwachsene sofort Hilfe.»; `rolle` › `an-grenzen` «… Holen Sie Hilfe und schützen Sie sich.»; `grenzen` › `gewalt` «Bringen Sie sich in Sicherheit und holen Sie Hilfe.»; `diagnose` › `zweifel` «Dann holen Sie Hilfe über den Notruf.», › `begleiterkrankungen` «… holen Sie sofort Hilfe über den Notruf.»; `behandlung` › `kontakt` «… holen Sie sofort Hilfe über den Notruf und warten nicht auf eine Rückmeldung per E-Mail.», › `wartezeit` «… warten Sie nicht auf einen Therapieplatz und holen sofort Hilfe.»; `kommunizieren` › `kippen` «… beenden Sie das Gespräch, schaffen Abstand und bringen sich in Sicherheit.», › `worte` «Versuchen Sie nicht, Motiv oder Gefährdung allein zu beurteilen.»; `krise` › `belastung`, `waehrend`, `sagen`, `suizid` (Beispielfrage «Denkst du gerade daran, dir das Leben zu nehmen?»), `danach`, `bleibt` je mit «holen (Sie) … Hilfe»; `selbstfuersorge` › `warnsignale` «… wenden Sie sich an professionelle Hilfe. Warten Sie nicht auf bestimmte Warnzeichen.», › `zu-viel` «… holen Sie Hilfe, statt weiterzuüben.», › `eigenes-leben` «Bei Gefahr hat Schutz Vorrang.» (Vorrangregel statt Anleitung; entschieden P2a-F-4, Bericht Z. 4909); `fragen` › `diagnose`, `verlauf`, `gespraeche` («Bei Bedrohung oder Gewalt haben Abstand und Schutz Vorrang vor dem Gespräch.»), `behandlung`, `schutz`, `eigenes-leben` |
+
+##### D · Haltung
+
+| Punkt | Ergebnis | Beleg |
+| --- | --- | --- |
+| `entryPoint` (3 im Plan) | eigene Möglichkeiten | `v-vs-anspannung`: «nicht weiter argumentieren, weniger Druck machen, das eigene Tempo senken … die andere Person müssen Sie nicht beruhigen»; `v-bz-schleife`: «… können Sie das Gefühl anerkennen, nachfragen … und Ihre eigene Grenze halten»; `v-gr-dear`: «entfällt: Der ganze Ablauf beschreibt das eigene Handeln der Angehörigen.». Gate verlangt `entryPoint` nur für `cycle`, `process`, `stepwise-model` (`tools/contract.js` Z. 40); `v-vs-eisberg` (`layer-model`) hat keinen, zulässig |
+| In der Figur | entsprechen dem Plan | Kurve: «Ansatzpunkt für Angehörige: Argumentieren Sie nicht weiter … Sie müssen die andere Person nicht beruhigen.»; Schleife: «… Der Ansatzpunkt ist eine Möglichkeit, keine Pflicht.» |
+| «Was Sie tun können», «Ihre Rolle» (alle Seiten, 43 Blöcke) | eigene Möglichkeiten, keine Verantwortung für Behandlung/Verlauf | z. B. `behandlung` › `rueckschlaege` «Sprechen Sie Therapie als Möglichkeit an, nicht als Drohung. … ohne den Therapieverlauf von aussen zu bewerten»; `genesung` › `verlauf` «… statt den Verlauf von aussen zu bewerten», › `freiwillig` «Sie dürfen Unterstützung anbieten, begrenzen oder ablehnen.»; `diagnose` › `abklaerung` «Sie können ihn anbieten, aber nicht erzwingen.»; `diagnose` › `begleiterkrankungen` «Regen Sie, wenn möglich und gewünscht, gemeinsam eine fachliche Einschätzung an.»; `behandlung` › `rollen`, Angehörige «Nicht zu erwarten: … den Fortschritt kontrollieren oder überwachen … Motivation oder Genesung herstellen». Kein Treffer für «sorgen Sie dafür», «stellen Sie sicher», «Ihre Aufgabe ist», «verantwortlich für …» ausser in Verneinungen |
+| Absolute Aussagen über die Person | keine | 55 Treffer (`abs2.py`) einzeln bewertet: «immer/nie» nur in Beispielsätzen als «Eher problematisch» (`grenzen`, `kommunizieren`, `quellen`), in Anweisungen an Angehörige («Nehmen Sie Suizidäusserungen immer ernst», `fragen` › `gespraeche`; «Hilfe nie zurückgehalten», `beziehungen`) oder als Relativierung («nicht für alle Menschen mit Borderline», `verstehen`, `kommunizieren`, `genesung`; «garantiert keine …» 10×) |
+| Heilungsversprechen | keines | «Ist Borderline heilbar? Der Begriff «heilbar» ist dafür zu ungenau.» (`fragen` › `verlauf`); «Eine Einteilung in «geheilt» oder «für immer krank» wird individuellen Verläufen nicht gerecht.» (`genesung`); «Sie müssen die Erkrankung nicht heilen …» (`rolle`); «Borderline ist belastend, aber behandelbar.» (`verstehen`) ohne Versprechen. «verschwind…» nur `fragen` (Lebensbereiche der Angehörigen) |
+
+##### E · Offene Fragen aller Runden
+
+Gesammelt (Skript über `PRUEFBERICHT.md`): P4-F-1…21, P2a-F-1…10, P2b-F-1…12, P2c-F-1…17, P2c2-F-1…15, P3-F-1…6, P3b-F-1…20, Z31-F-1…22, NK-F-1…8, F-W2-01…03, 3 Fragen Nachprüfung 2b-K, Selbstprüfungen «Zur Prüfung durch die Fachstelle» (2b Nr. 1–11, 2b-2 Nr. 12, Freigabe 2b Nr. 1, 2c-1, 2c-2, 3-1 Nr. 1–17), Selbstprüfung 3-2.
+
+| Fragen | Stand | Beleg |
+| --- | --- | --- |
+| P4-F-1…21 | entschieden | Z. 37 «Alle 21 Fragen der vierten Prüfrunde sind entschieden» |
+| F-W2-01…03 | erledigt / entschieden | F-W2-01 «ist erledigt» (Z. 8517); -02, -03 = P4-F-18, -19 (Z. 16) |
+| P2a-F-1…10 | entschieden | Z. 48 |
+| P2b-F-1…12, Selbstprüfung bis Nr. 12, Nachprüfung 2b-K (3) | entschieden | Z. 61. Freigabe 2b «Zur Prüfung» Nr. 1 (Mindesthöhe) durch Bauauftrag 2c-1 Abschnitt 7 erledigt («fällt ganz weg») |
+| P2c-F-1…17, P2c2-F-1…15, Selbstprüfungen 2c und 3-1, NK-F-1, -2, -4…-7 | entschieden | Z. 76 «Alle Fragen sind entschieden: …»; NK-F im Auftrag Abschnitt 1 |
+| P3-F-1…6, P3b-F-1…20 | über Z31-F entschieden | Z31-Tabelle Z. 500–521: P3-F-1…6 → Z31-F-1…6; P3b-F → Z31-F (alle ausser -2, -14, «zurückgezogen», Z. 523) |
+| Z31-F-1…22 ausser rechtlichen | entschieden | Z. 76 «(bis auf die rechtlichen Punkte)»; entschieden von der Sitzung der zweiten Prüfung im Auftrag der Fachstelle (`KORREKTUR-ETAPPE-3-1.md` Z. 8), durch die Fachstelle mit Z. 76 bestätigt |
+| **rechtliche Prüfung**: S-Nr. 5, 6 (3-1), Z31-F-9, Z31-F-19, NK-F-8 | **offen** | Z. 77–78 «Offen bis vor R3: die rechtliche Prüfung …»; `KORREKTUR-ETAPPE-3-1.md` Z. 180–184 |
+| **NK-F-3** («Schluss mit dem Eiertanz», Ausgabe am Buch) | **offen** | Z. 79 |
+| **3-2: «Pretty URLs»** | **offen** | Z. 1066 «Entscheid der Fachstelle (Aufgefallen Nr. 3)»; Z. 1181 «Entscheid der Fachstelle; für W3 und R1 vorzulegen.» |
+| **3-2: Schutz der Vorschauen** | **offen** | Z. 1068 «Schutz der Vorschauen aus … Empfehlung: wieder einschalten.»; Auftrag 3-2 lautete «Schutz kurz aus, danach wieder an» (Z. 1061); Z. 1155 «Offen sind die Entscheide zu «Pretty URLs» und zum Schutz der Vorschauen» |
+| **3-2: Build-Einstellungen des Netlify-Projekts** | **offen** | Z. 1170 «… Build-Einstellungen und Schutz der Vorschauen entscheidet die Fachstelle»; Z. 1182–1186 Vorschlag (angleichen an `site`, kein Build-Befehl) |
+| 3-2: Export in `site/` | entschieden (nur Beleg der bauenden Sitzung) | Z. 1061, 1165 «von der Fachstelle entschieden»; nicht im Abschnitt «Fachliche Freigabe» |
+| Freigabe 2c/3-1, Entscheid 3 (3 px auch für «Tragfähiger» in der Szene?) | offen, nicht gestellt | Z. 1337 «Soll auch «Tragfähiger» in der Szene 3 px bekommen, ist das eine weitere Regel (nicht umgesetzt).» → SP1-F-5 |
+| Bestätigung des Prüfauftrags Schlussprüfung | nicht dokumentiert | `PRUEFAUFTRAG-SCHLUSSPRUEFUNG.md` Z. 5 «Gültig wird er, wenn die Fachstelle ihn bestätigt oder ändert.»; im Bericht keine Bestätigung (grep) |
+
+##### F · 5.7: Selbstprüfung «Freigabe 2c und 3-1» (Z. 1327–1346)
+
+**Entscheide der bauenden Sitzung**
+
+| Nr. | Bewertung | Beleg |
+| --- | --- | --- |
+| 1 `em` statt `rem` | kein Befund | Container `.puk-vis-wide` 21 px (Standard) / 42 px (200 %); Umschaltpunkt 1043/1044 px wie mit 960 px; 200 % Schrift 0 px Überlauf (68 Messungen) |
+| 2 Selektor `data-visual-id` | kein Befund | Linien der übrigen Szenen unverändert 2 px blau (`szenen.cjs`, 5 Abbildungen); Markup von `genesung` ohne Diff |
+| 3 «Dieselbe Linie» wörtlich | Frage (SP1-F-5) | gemessen: Szene «Weniger hilfreich» 2 px grau = `.puk-say`; Szene «Tragfähiger» ebenfalls 2 px. «also grau und dünner» trifft in der Szene nicht zu, die Hauptanweisung («dieselbe Linie wie … `.puk-say`») schon |
+| 4 Angehängt oder eigener Absatz | kein Befund | Nr. 1, 2, 9 in `dd`, Nr. 7, 12 in `li` angehängt; Nr. 13 eigener Absatz nach «Kontakt: angehoerigenarbeit@pukzh.ch», vor V2 (Text von `index` › `beratung`) |
+| 5 Ort von Nr. 5 | kein Befund | siehe A, «4 · Ort»; Folgesatz «Für den Verlauf der Erkrankung sind sie nicht verantwortlich, …» bezieht «sie» auf «Angehörige» |
+| 6 Abgleich bei Verweisen des Bestands | kein Befund | `verstehen.md` Nr. 112, 127, `selbstfuersorge.md` Nr. 232 «umformuliert (2c-3-1-F)»; `beziehungen.md` Nr. 208 «verschoben (2c-3-1-F)», Ort `behandlung#kopf` («Behandlung kann Veränderung unterstützen.» steht dort) |
+| 7 NK31-4 | kein Befund | Liste 3-1-K Nr. 110 und 2c-K Nr. 342 (Zitat in A) |
+| 8 Listen | kein Befund | 2c-K Nr. 137, 348–360; 3-1-K Nr. 455; alle 13 Sätze wörtlich auf ihren Seiten |
+| 9 Plan | kein Befund für 2c/3-1 | übrige `reason` der sechs Seiten zählen keine Verweise auf (`v-vs-mythen`, `v-bz-was-hilft`, `v-bz-verantwortung`, `v-kr-danach`, `v-sf-warnsignale` gelesen). Zu `v-ix-beratung` siehe SP1-9 |
+
+**Aufgefallen, nicht geändert**
+
+| Nr. | Bewertung | Beleg |
+| --- | --- | --- |
+| 1 Ziffern der Kurve bei 200 % | kein Befund (Hinweis für R2) | Kreis 28 × 28 px fest, Ziffer 26 px Schrift (Textkasten 12 × 31 px) bei 200 %; Foto `kurve-1280-200.png`: Ziffern 1–4 stehen lesbar in ihren Kreisen, knapp, ohne Überdeckung der Linie; bei 1024 px gleich (CSS der Nummern seit `55e98cb` unverändert) |
+| 2 Kontrast graue Linie | kein Befund | `rgb(233,233,233)` auf Weiss ≈ 1,2 : 1; Linie trägt keine Information allein (Bezeichnung «Weniger hilfreich» darüber), wie `.puk-say` im Profil; «kontrast» `rgb(138,138,138)` |
+| 3 `v-ix-beratung` | Befund SP1-9 (optional) | `reason` «steht nur hier, andere Seiten verweisen darauf»; `unterstuetzung`: «Die Beratung der Fachstelle kostet nichts und wird nicht an Krankenkassen weitergegeben.» |
+| 4 `verstehen.md` Nr. 116 | Befund SP1-10 (optional), Frage SP1-F-6 | Zeile «Mehr dazu auf Kommunizieren und Grenzen.» «entfällt», Bemerkung «Verweis (folgt mit Etappe 2)»; `verstehen` › `mythen` verlinkt nur `genesung#forschung`, `rolle#schuld`, `diagnose#begleiterkrankungen`, `krise#suizid`. Dazu 16 weitere Zeilen mit «(folgen mit Etappe 2)»: `beziehungen.md` Nr. 221–231, `index.md` Nr. 250–254 |
+| 5 1440 px bei 200 %: Bezeichnungen ausgeblendet | kein Befund | gemessen: `none` bei 1280 und 1440 px (200 %), Liste unter der Zeichnung trägt alle vier Stellen; Folge der `em`-Grenze, wie beauftragt |
+| 6 Zwei Verweissätze hintereinander auf `index` › `beratung` | kein Befund für W1 (für S notiert) | eigene Absätze «Weitere Beratung und Austausch …» und «Wer die Website herausgibt …» |
+
+**Nicht geprüft oder nicht prüfbar**
+
+- 5.1.1 für die Aufträge 2a-K, 2a-2, 2b-K, 2b-2, Freigabe 2b und 5.1.3 (Bestand, 100 Aussagen): andere Teilprüfungen. Hier nur die Zuordnung der Änderungen zu den Aufträgen (B) und der Verbleib der Quellenangaben aus 2b-2.
+- Die Richtigkeit der fachlichen Aussagen der 13 Zielabschnitte selbst (freigegeben, nicht Teil dieses Teils).
+- Netlify-Vorschau, `_redirects` online, externe Links: nicht Teil dieses Teils (W3).
+- Echte Schriftgrösse des Browsers: 200 % ist über CDP `Page.setFontSizes` (standard 32 px) nachgestellt; Chromium-Einstellungen über `Preferences` wirkten headless nicht (gemessen 16 px).
+- Reale Screenreader-Läufe, Hardwaretastatur, Touch.
+
+#### 5.1 d · Bestand, Etappen 1, 2a und 2b (87 Aussagen)
+
+**Vorgehen**
+
+- Gelesen: `CLAUDE.md`, `PRUEFAUFTRAG-SCHLUSSPRUEFUNG.md` (Abschnitte 1–5.1, 5.7, 6), `abgleich/README.md` (Aufbau, Statuswerte), Kopf und Tabellen von `abgleich/{index,verstehen,beziehungen,grenzen,rolle,selbstfuersorge,kommunizieren,krise}.md`, die Bestandstexte `startseite`, `verstehen`, `verstehen--beziehungen`, `grenzen`, `unterstuetzen--uebersicht`, `unterstuetzen--alltag`, `selbstfuersorge`, `kommunizieren`, `unterstuetzen--krise`, `uebungen` und 36 Handouts dieser Seiten, `UMBAUPLAN.md` Z. 33–35, `BAUAUFTRAG-ETAPPE-2C2.md` (Bestandsquellen), `KORREKTUR-ETAPPE-1D.md` Z. 46.
+- Eigene Skripte unter `SP/best1/`:
+  - `lib.mjs`: zerlegt jede Abgleichtabelle in Zeilen (Nr., Quelle, Satz, Status, Fassung, Ort, Bemerkung) und jede gebaute Seite in Abschnittstexte nach `<section id>`.
+  - `show.mjs <seite> <Nr…>`: zeigt die Abgleichzeile und den Text der gebauten Seite rund um die genannte Fassung im genannten Abschnitt (so ist jedes «Heute»-Zitat unten aus der gebauten Seite, nicht aus der Tabelle).
+  - `cand.mjs`: Auswahl der Stichprobe nach Suchmustern (Zahlen, Ursache, Schuld, Behandlung, Suizid, Gewalt, «nie», «immer», Kinder, Warnsignale …).
+  - `cover2.mjs <bestandsdatei> <route|H:handout>`: zerlegt eine Bestandsdatei in Sätze und Listenpunkte und prüft, ob jeder als Zeile mit derselben Quelle in einer Abgleichtabelle steht.
+  - `drop.mjs`: Heuristik für Zeilen «übernommen/umformuliert/gekürzt/zusammengeführt», deren Bestandssatz Inhaltswörter hat, die weder in der Fassung noch im Zielabschnitt stehen, und deren Bemerkung keine Auslassung nennt (Kandidaten danach von Hand geprüft).
+- Projektwerkzeug zur Kontrolle: `node abgleich/pruefe-abgleich.mjs` → «Abgleich geprüft: 7371 Zeilen, 0 ohne Fundstelle.» Das Werkzeug prüft nur Fundstellen, nicht die Bedeutung.
+- Vollständigkeit der Tabellen (`cover2.mjs`, Sätze ohne eigene Zeile, nach Durchsicht): `startseite` 56/5, `verstehen` 276/60, `verstehen--beziehungen` 236/21, `grenzen` 389/37, `unterstuetzen--uebersicht` 124/20, `unterstuetzen--alltag` 235/31, `selbstfuersorge` 311/29, `kommunizieren` 225/6, `unterstuetzen--krise` 233/2, `uebungen` 438/15, 36 Handouts. Fast alle Lücken sind Überschriften, die in der Spalte «Quelle › Abschnitt» stehen, Auswahl-Schaltflächen und Teile von Quellenangaben. Echte Lücken: `verstehen.md` Z. 225–271 (SP1-5) und `grenzen.md` Z. 378 (SP1-4).
+- Ganz gelesene Bestandsabschnitte (Satz für Satz gegen Tabelle und Seite): `verstehen.md` «Häufige Mythen» (Z. 169–215), «Diagnostischer Überblick» und «Begleiterkrankungen» (Z. 225–271), `verstehen--beziehungen.md` Z. 221–263, `grenzen.md` «Finanzielle Grenzen» (Z. 370–378), `materialien--text--schuld-verantwortung.md` Z. 68–95, Handouts `eisberg`, `spaltung`, `zustands-landkarte` (Zeilen 159–218, 362–416, 337–346 der Tabelle `verstehen.md`).
+
+**Ergebnis je Punkt**
+
+Urteile: sinngleich · gekürzt ohne fachlichen Verlust · Bedeutung verändert · still entfallen · Abgleich falsch. «B» = Bestand `texte/…`, «A» = `abgleich/…`. 87 Aussagen: Etappe 1: 32, 2a: 28, 2b: 27.
+
+| Nr. | Etappe | Bestand (Datei, Zitat) | Abgleich (Datei Nr., Art) | Heute (Seite › Abschnitt, Zitat) | Urteil |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 1 | `verstehen` › Sie müssen nicht alles allein tragen: «Borderline entsteht nicht durch eine einzige Ursache, sondern im Zusammenspiel biologischer Empfindlichkeit, Bindungs- und Entwicklungserfahrungen sowie Belastungsfaktoren.» | `verstehen` 100, umformuliert (1f) | `verstehen` › `borderline`: «Borderline hat nicht eine einzige Ursache. Mehrere Dinge wirken zusammen: eine biologische Empfindlichkeit, Erfahrungen in engen Beziehungen und beim Aufwachsen sowie Belastungen.» | sinngleich |
+| 2 | 1 | ebd.: «Schuldzuweisungen an Betroffene oder Angehörige greifen zu kurz und helfen niemandem.» | `verstehen` 101, umformuliert (1f), «und helfen niemandem» entfällt genannt | `borderline`: «Die Schuld bei der betroffenen Person oder bei Angehörigen zu suchen, ist zu einfach.» | gekürzt ohne fachlichen Verlust |
+| 3 | 1 | `verstehen` › Mythen: «Viele Menschen erleben über Jahre deutliche Besserungen, Remission oder umfassendere Genesung — mit individuell unterschiedlichen, fachlich gut dokumentierten Verläufen.» | `verstehen` 111, gekürzt | `mythen`: «Viele erleben über Jahre deutliche Besserung, Remission (die Kriterien sind eine Zeit lang nicht mehr erfüllt) oder umfassendere Genesung.» + Verweis auf `genesung` | gekürzt ohne fachlichen Verlust |
+| 4 | 1 | ebd.: «Angehörige sind weder Ursache der Borderline-Erkrankung noch für die Genesung einer anderen Person verantwortlich.» | `verstehen` 117, umformuliert (1i), P4-F-2 | `mythen`: «Angehörige sind nicht schuld an der Erkrankung und nicht für die Genesung verantwortlich.» | sinngleich (Wortlaut auf Entscheid) |
+| 5 | 1 | ebd.: «… von Misshandlung, Vernachlässigung oder anderen belastenden Kindheitserfahrungen.» / «… sie sind weder notwendig noch hinreichend für eine Borderline-Diagnose.» | `verstehen` 122 gekürzt, 123 umformuliert (1f) | `mythen`: «… berichten viele, aber nicht alle Menschen mit Borderline von belastenden Kindheitserfahrungen. … Sie führen aber nicht zwingend zu Borderline, und Borderline kann auch ohne sie entstehen.» | gekürzt ohne fachlichen Verlust (Beispiele entfallen); 123 sinngleich |
+| 6 | 1 | ebd.: «Solche Fragen lösen nach heutigem Wissensstand keine suizidale Handlung aus; sie können helfen, die Lage zu verstehen und passende professionelle Hilfe einzubeziehen.» | `verstehen` 129, geändert (1b, A-1) | `mythen`: «Direkt nachzufragen, löst nach heutigem Wissensstand keine suizidale Handlung aus.» und «Das kann helfen, die Lage zu verstehen.», danach Verweis im Text | sinngleich |
+| 7 | 1 | ebd.: «In klinischen Kontexten wird die Störung häufig als frauendominiert wahrgenommen; bevölkerungsbezogene Studien berichten teils keine signifikanten Unterschiede.» | `verstehen` 135, umformuliert (1f) | `mythen`: «In Kliniken gilt Borderline oft als Erkrankung, die vor allem Frauen betrifft. Studien in der allgemeinen Bevölkerung finden aber teils keine statistisch bedeutsamen Unterschiede …» | sinngleich |
+| 8 | 1 | ebd.: «Unterschiede in Symptompräsentation, Begleiterkrankungen und Behandlungswegen sind beschrieben, die Forschung ist jedoch heterogen.» | `verstehen` 136, entfällt, «Kürzung W2-2» | – | entfällt mit Grund; Fachinformation ohne Handlungsbezug |
+| 9 | 1 | `verstehen` › Denken unter Stress: «Unter hoher emotionaler Überflutung verengt sich das Erleben häufig stark auf den aktuellen Schmerz, die aktuelle Angst oder den aktuellen Konflikt.» | `verstehen` 78, umformuliert (1i), «Angst» entfällt genannt | `anspannung`: «Bei hoher Anspannung dreht sich für einen Menschen häufig fast alles um den Schmerz oder Streit im Moment.» | gekürzt ohne fachlichen Verlust |
+| 10 | 1 | Handout `gehirn`: «Hohe Anspannung kann Verhalten beeinflussen, hebt die Verantwortung für eigenes Verhalten aber nicht auf.» | `verstehen` 291, umformuliert (1f) | `anspannung`: «Das erklärt manches. Die Verantwortung für das eigene Verhalten bleibt trotzdem.» | sinngleich |
+| 11 | 1 | Figur `v-vs-anspannung`: Handout `alarm-modus` «Zeit, weniger Reize, selbst gewählte Unterstützung oder Abstand können helfen.»; `gehirn` «… können helfen – aber nicht immer und nicht jeder Person gleich.»; `eisberg` «Ihre Wirkung ist individuell und nicht garantiert …» | `verstehen` 240, 288, 194, je zusammengeführt; 288 nennt nur fehlende Beispiele, keine der drei Zeilen die entfallene Absicherung | `anspannung`, Abbildung 2, Stelle 3, «Was hilft»: «Sicherheit geht vor Klärung. Eine Pause, Abstand und weniger Reize helfen.» | Bedeutung verändert (Absicherung entfallen; Wortlaut aus `KORREKTUR-ETAPPE-1D.md` Z. 46) → SP1-12, Prüfbedarf |
+| 12 | 1 | Handout `zustands-landkarte`: «Sie müssen eine Eskalation nicht verhindern, die Gefühle eines anderen Menschen nicht regulieren und keine unsichere Situation aushalten.» | `verstehen` 341, zusammengeführt | `anspannung`, Stelle 2: «Sie müssen die andere Person nicht beruhigen.»; Stelle 3: «Sicherheit geht vor Klärung.» | gekürzt ohne fachlichen Verlust |
+| 13 | 1 | ebd.: «Versuchen Sie nicht, Gefahr aus einer Position auf dieser Landkarte abzuleiten oder allein zu beurteilen.» / «… nutzen Sie die separat gepflegte Soforthilfe …» | `verstehen` 345 zusammengeführt, 343 umformuliert (1i), Soforthilfe entfällt (Profil) | `anspannung`, Vertiefung: «Gefahr lässt sich aus der Stelle auf der Kurve nicht ableiten.»; Abschnitt: «Bei Gefahr haben Abstand, Schutz und professionelle Hilfe Vorrang.» | sinngleich; Soforthilfe nach Profil entfallen |
+| 14 | 1 | Figur `v-vs-eisberg`, `verstehen`: «Das Eisberg-Bild ist eine mögliche Verständnishilfe, keine Aussage darüber, was in einer konkreten Person sicher «darunterliegt».» | `verstehen` 61, umformuliert (1i), P4-F-13 | `eisberg`, «Grenzen des Bildes»: «… keine Aussage darüber, was in einer bestimmten Person sicher darunterliegt.» | sinngleich |
+| 15 | 1 | Handout `eisberg`: «Sie soll Wut nicht verharmlosen und keine verborgene Ursache behaupten.» | `verstehen` 170, umformuliert (1i), Teil entfällt genannt | `eisberg`: «Es soll Wut nicht verharmlosen.» (zweiter Teil getragen von Nr. 14) | gekürzt ohne fachlichen Verlust |
+| 16 | 1 | Handout `eisberg`: «Verstehen bedeutet nicht, Beschimpfungen, Drohungen oder Gewalt auszuhalten.» | `verstehen` 204, entfällt (Kürzung W2-2), Bemerkung nennt `einordnung` | `einordnung`: «Verstehen bedeutet nicht, alles auszuhalten.» | gekürzt ohne fachlichen Verlust; Status «entfällt» zu streng (SP1-13) |
+| 17 | 1 | Figur `v-vs-bewertungen`, Handout `spaltung`: «Weder eine sehr positive noch eine sehr negative Momentaufnahme muss die ganze Beziehung oder Person beschreiben.» | `verstehen` 392, übernommen | `bewertungen`, Abbildung 3, Kernaussage: wörtlich | sinngleich |
+| 18 | 1 | ebd.: «Sie beschreibt weder eine feste Eigenschaft einer Person noch eine Absicht und lässt sich nicht aus einer Diagnose vorhersagen.» | `verstehen` 371, umformuliert (1h), Teile entfallen genannt | `bewertungen`: «Das Bild beschreibt eine mögliche Reaktion auf Anspannung, nicht den Charakter eines Menschen …»; «Wenn das geschieht, ist es keine Absicht.» | gekürzt ohne fachlichen Verlust |
+| 19 | 1 | ebd.: «Eine ruhige Antwort ist ein Angebot, keine Erfolgsgarantie und nicht Ihre Pflicht.» | `verstehen` 401, **übernommen**; Bemerkung nennt «keine Erfolgsgarantie» nicht | `bewertungen`: «Eine ruhige Antwort ist ein Angebot, nicht Ihre Pflicht.» | gekürzt ohne fachlichen Verlust; Abgleich falsch (Status) → SP1-13 |
+| 20 | 1 | `verstehen` › Diagnostischer Überblick / Begleiterkrankungen (Z. 225–271), z. B. «Angehörige müssen diese Zuordnung nicht selbst vornehmen.», «Häufigkeitsangaben unterscheiden sich je nach Stichprobe, Erhebungszeitraum und Diagnoseverfahren.» | **keine Zeile** in irgendeiner Tabelle (`grep` in `abgleich/*.md` leer; `verstehen.md` nimmt den Teil aus, `diagnose.md` deckt nur `/verstehen/diagnostik` und `/begleiterkrankungen` ab) | `diagnose` › `begleiterkrankungen`: «Sie müssen nicht sortieren, was was ist.»; «… sie sind keine persönliche Prognose.»; DSM/ICD in `diagnose` › `abklaerung`, Kriterien in `quellen` › `begriffe` | Abgleich falsch (Lücke) → SP1-5; inhaltlich kein Verlust gefunden |
+| 21 | 1 | `verstehen` › Nähe und Belastung: «… sind aber weder diagnoseexklusiv noch bei jeder Person vorhanden.» | `verstehen` 53, umformuliert (1e) → `beziehungen#verstaerker` | Ort laut Tabelle: «Einen ganzen Menschen erklären sie nicht.» (andere Aussage); sinngleich in `verstehen` › `borderline`: «Kein einzelnes Merkmal trifft auf alle zu, und ähnliche Erfahrungen gibt es auch ohne diese Diagnose.» | gekürzt ohne fachlichen Verlust auf der Website; Fundstelle schwach |
+| 22 | 1 | `verstehen` › Wechselwirkungen: «Daraus ergibt sich keine feste Abfolge, und die Diagnose einer Person erklärt den Verlauf nicht allein.» | `verstehen` 91, umformuliert (1e), keine Auslassung genannt | `beziehungen` › `schleife`: «Das Modell ist eine mögliche Erklärung, keine sichere Aussage darüber, was eine bestimmte Person denkt oder will.» | «keine feste Abfolge» still entfallen (bei einer Figur mit nummerierten Stationen) → SP1-13, Frage SP1-F-9 |
+| 23 | 1 | `verstehen--beziehungen`: «Das bedeutet weder, dass jede Person so reagiert, noch dass erlebte Zurückweisung immer eingebildet ist.» | `beziehungen` 97, umformuliert (1e) | `verstaerker`, Station 2: «Und manchmal war die Zurückweisung tatsächlich da.» | sinngleich |
+| 24 | 1 | ebd.: «Unterschiedliches Verhalten beweist weder bewusste Kontrolle noch, dass Angehörige die Schwierigkeiten verursacht haben.» | `beziehungen` 128, umformuliert (1e) | `verstaerker`, Station 5: «… beweist nicht, dass die Person bewusst steuert oder täuscht. Es beweist auch nicht, dass Sie die Schwierigkeiten verursacht haben.» | sinngleich |
+| 25 | 1 | ebd.: «Wechselseitiger Einfluss ist keine mathematische Schuldteilung.» / «… nicht, wer «zu 50 Prozent» verantwortlich ist.» | `beziehungen` 154, 155, entfällt (Wiederholung W2-4) | `verstehen` › `mythen`: «Daraus folgt keine Schuld und keine Aufteilung von Verantwortung für die Erkrankung.» | entfällt mit Grund, Aussage auf der Website |
+| 26 | 1 | ebd.: «Wichtig: Bei Suizidgedanken oder Selbstverletzung darf Hilfe nicht aus Sorge vor einer «Verstärkung» vorenthalten werden.» | `beziehungen` 168, umformuliert (1e) | `verantwortung`: «… darf Hilfe nie zurückgehalten werden – auch nicht aus der Sorge, Zuwendung könnte das Verhalten verstärken.», danach Verweis im Text | sinngleich |
+| 27 | 1 | ebd.: «Angehörige dürfen beitragen, sind aber weder Therapeut:innen noch allein für den Verlauf oder die Beziehung verantwortlich.» | `beziehungen` 209, umformuliert (1i), P4-F-3 | `verantwortung`: «Für den Verlauf der Erkrankung sind sie nicht verantwortlich, für die Beziehung nicht allein.» | sinngleich (präzisiert auf Entscheid) |
+| 28 | 1 | ebd.: «Kinder tragen keine partnerschaftliche Verantwortung für die emotionale Stabilität eines Elternteils.» | `beziehungen` 206, entfällt (Wiederholung), Fundstelle `grenzen#gewalt` | `grenzen` › `gewalt` nur «Kinder müssen weder Streit schlichten …»; tragend `rolle` › `kinder`: «Sie sind nicht für die Erkrankung oder Behandlung ihrer Eltern verantwortlich.» | entfällt mit Grund; Fundstelle unscharf (SP1-13) |
+| 29 | 1 | `grenzen` › Gewalt: «Sie lässt sich nicht aus einer Borderline-Diagnose ableiten und wird dadurch nicht entschuldigt.» | `grenzen` 277, übernommen | `gewalt`: wörtlich | sinngleich |
+| 30 | 1 | ebd.: «Nach sexueller oder häuslicher Gewalt: Spurensicherung mitdenken» | `grenzen` 285, **übernommen**, Fassung «… Bei Verletzungen holen Sie medizinische Hilfe.» | `gewalt`: nächster Satz «Fragen Sie eine spezialisierte Fachstelle nach Dokumentation und Spurensicherung …» | sinngleich; Abgleich nennt den falschen Satz (SP1-13) |
+| 31 | 1 | `grenzen` › Sofort schützen / Kontakt: «Bei Bedrohung oder Gewalt setzen Sie eine Grenze nicht im direkten Gespräch durch.» / «… planen Sie Veränderungen möglichst mit einer geeigneten Fachstelle.» | `grenzen` 123 zusammengeführt, 244 verschoben | `gewalt`: «Planen Sie Veränderungen wie eine Trennung möglichst mit einer geeigneten Fachstelle, und setzen Sie keine Grenze persönlich durch, die Sie gefährdet.» | sinngleich |
+| 32 | 1 | Figur `v-gr-dear`, `grenzen` › D: «Vermeiden Sie Vermutungen über Absichten sowie «immer» und «nie».»; «DEAR sind die ersten vier inhaltlichen Schritte der DBT-Fertigkeit DEAR MAN.»; «In belasteten Beziehungen braucht gute Begrenzung meist Wiederholung, innere Festigkeit …» | `grenzen` 144 gekürzt, 163 gekürzt, 261 umformuliert (1i) | `dear`: «Beschreiben Sie eine konkrete Beobachtung, ohne Vermutungen über Absichten und ohne immer oder nie.»; Vertiefung «Herkunft des Modells»: «… aus der Dialektisch-Behavioralen Therapie (DBT) …»; `konsequenz`: «Grenzen brauchen oft Wiederholung. Sie dürfen an einer Grenze festhalten, auch wenn Schuldgefühle bleiben.» | sinngleich / gekürzt ohne Verlust («innere Festigkeit» entfällt, genannt) |
+| — | 1 | ausserdem geprüft, ohne Befund: `index` 42 (wörtlich `haltung`), 37/247 («kein Krisendienst» → Fusszeile, wörtlich auf `krise` › `belastung`), 187 (entfällt, Aussage in `haltung`); `grenzen` 41, 170; `beziehungen` 105, 191 | | | |
+| 33 | 2a | `unterstuetzen--uebersicht`: «Sie müssen keine andere Person beruhigen oder ihre Behandlung und Genesung tragen.» | `rolle` 4, umformuliert (2a) | `rolle` › Kopf: «Sie müssen keine andere Person beruhigen und nicht ihre Behandlung oder Genesung tragen.» | sinngleich |
+| 34 | 2a | ebd.: «Gleichzeitig ist Unterstützung nie allmächtig.» | `rolle` 17, umformuliert (2a) | `anbieten`: «Unterstützung ist wichtig, aber nicht allmächtig.» | sinngleich |
+| 35 | 2a | ebd.: «… die eigene Ambivalenz: helfen wollen und gleichzeitig wegwollen, verstehen wollen und gleichzeitig innerlich hart werden, Grenzen setzen wollen und dann aus Schuld doch wieder nachgeben.» | `rolle` 33, umformuliert (2a-K) | `an-grenzen`: «… eigene gemischte Gefühle. Viele wollen helfen und möchten zugleich weg. Oder sie wollen verstehen und werden innerlich hart. Oder … geben dann aus Schuld doch wieder nach.» | sinngleich |
+| 36 | 2a | ebd.: «… vor allem schützen müssen: bei eigener Erschöpfung, bei Gewalt oder massiver Grenzverletzung, wenn Kinder mitbetroffen sind oder wenn sich das ganze Leben nur noch um Krisen dreht.» | `rolle` 64, umformuliert (2a) | `an-grenzen`, Liste: «bei Gewalt oder schweren Grenzverletzungen …» | sinngleich |
+| 37 | 2a | `unterstuetzen--alltag`: «Bei unmittelbarer Selbst- oder Fremdgefährdung oder bei Gewalt holen Sie Hilfe und schützen sich.» | `rolle` 245, umformuliert (2a) | `an-grenzen`: «Gefährdet ein Mensch sich selbst oder andere unmittelbar, oder kommt es zu Gewalt: Holen Sie Hilfe und schützen Sie sich.», danach Verweis | sinngleich |
+| 38 | 2a | ebd.: «Beobachtbarer oder riskanter Konsum von Alkohol, Cannabis oder anderen Substanzen; die mögliche Funktion bleibt offen» | `rolle` 257, umformuliert (2a) | `an-grenzen`: «… wozu er dient, bleibt offen» | sinngleich |
+| 39 | 2a | ebd.: «Wenn die Person das möchte, das Behandlungsteam einbeziehen; eigene Beratung können Sie unabhängig nutzen» | `rolle` 283, umformuliert (2a) | `an-grenzen`: «das Behandlungsteam einbeziehen, wenn die Person das möchte; eigene Beratung können Sie unabhängig davon nutzen» | sinngleich |
+| 40 | 2a | Handout `rolle-klaeren`: «Therapie, Kontrolle und Verantwortung für die Genesung gehören nicht zu Ihrer Rolle.» | `rolle` 314, umformuliert (2a-K) | `anbieten`: «Was nicht Ihre Aufgabe ist: Therapeutin oder Therapeut zu sein, die Therapie zu kontrollieren oder Krisenhilfe zu ersetzen.»; Genesung in `schuld`: «… weder für die Behandlung noch für die Genesung verantwortlich.» | sinngleich (auf der Seite) |
+| 41 | 2a | Figur `v-ro-weg`, Handouts `garten`/`leuchtturm`: «Behandlung, persönliche Entscheidungen und Lebensumstände beeinflussen den Verlauf.»; «Genesung wird von der Person selbst mitgestaltet und zugleich von Behandlung, Beziehungen, materiellen Bedingungen und gesellschaftlicher Unterstützung beeinflusst.» | `rolle` 382, 425, zusammengeführt | `anbieten`, Abbildung 1: «Die Person gestaltet ihre Genesung selbst mit. Auch Behandlung, Beziehungen, Lebensumstände und Unterstützung in der Gesellschaft beeinflussen den Verlauf.» | sinngleich |
+| 42 | 2a | Handout `schuld-verantwortung`: «Aus der Diagnose lässt sich keine individuelle Schuldzuweisung ableiten; Verantwortung für konkrete verletzende oder gewalttätige Handlungen bleibt davon getrennt.» | `rolle` 441, 454, umformuliert (2a-K) | `schuld`: «Eine Diagnose weist Ihnen keine persönliche Schuld zu. … Die Verantwortung für eigene verletzende oder gewalttätige Handlungen bleibt bestehen.» | sinngleich |
+| 43 | 2a | ebd.: «Sie müssen die Erkrankung nicht heilen und weder Behandlung noch Genesung allein tragen.» | `rolle` 488, umformuliert (2a-K), P2a-F-1 | `schuld`: «… und sind weder für die Behandlung noch für die Genesung verantwortlich.» | Bedeutung verändert auf Auftrag (Entscheid P2a-F-1, dokumentiert, freigegeben) |
+| 44 | 2a | ebd.: «Ein Vergleich mit anderen Familien erklärt weder die Ursachen noch Ihre persönliche Verantwortung.» | `rolle` 483, umformuliert (2a-2) | `schuld`: «Ein Vergleich mit anderen Familien erklärt nicht, warum jemand erkrankt. Daraus folgt keine Schuld.» | sinngleich (Wortlaut 2a-2) |
+| 45 | 2a | Handouts `konsistenz-prinzip`, `6-leitlinien`: «Konsistenz bedeutet keine starre Einheitsreaktion und keine Garantie für eine bestimmte Wirkung.»; «Sie beschreibt keine feste Ursache-Wirkungs-Kette.»; «Es gibt keine Garantie für eine bestimmte Wirkung.» | `rolle` 573, 566, 654, umformuliert (2a-K) | `alltag`: «Was daraus folgt und ob eine Absprache wirkt, lässt sich weder aus einer Diagnose ableiten noch vorhersagen …» und «Klare Absprachen heissen nicht Härte.» | sinngleich |
+| 46 | 2a | Handout `4-alltags-tipps`: «In akuter Gefahr haben Sicherheit und professionelle Hilfe Vorrang.» | `rolle` 611, zusammengeführt | `an-grenzen`: Handlungsanleitung und Verweis im Text | sinngleich |
+| 47 | 2a | Handout `kinder`: «Kinder sind nicht für die Erkrankung oder Behandlung ihrer Eltern verantwortlich.»; «Fachstelle, Kinderarztpraxis oder eine geeignete Familienberatung können beim Planen unterstützen.» | `rolle` 484, 743, umformuliert (2a) | `kinder`: «Sie sind nicht für die Erkrankung oder Behandlung ihrer Eltern verantwortlich.»; «Eine Fachstelle, die Kinderarztpraxis oder eine Familienberatung können beim Planen unterstützen.» | sinngleich |
+| 48 | 2a | `selbstfuersorge` › Warnsignale: «Diese Anzeichen sind unspezifisch: Sie können bei Überlastung auftreten, aber auch andere körperliche oder psychische Ursachen haben.» | `selbstfuersorge` 67, umformuliert (2a) | `warnsignale`: «Die folgenden Anzeichen können bei Überlastung auftreten. Sie können aber auch andere körperliche oder psychische Ursachen haben.» | sinngleich |
+| 49 | 2a | ebd.: «Sprechen Sie bei Bedarf mit Ihrer Hausärzt:in oder einer psychologischen Fachperson, damit auch andere Ursachen abgeklärt werden können.» | `selbstfuersorge` 100, umformuliert (2a) | `warnsignale`: zwei Sätze, «Dabei können auch andere Ursachen abgeklärt werden.» | sinngleich |
+| 50 | 2a | ebd.: «Bei Gewalt oder akuter Gefahr holen Sie Hilfe, statt weiterzuüben.» | `selbstfuersorge` 104, zusammengeführt | `zu-viel`: «Bei Bedrohung, Gewalt, akuter Gefahr oder Selbstgefährdung holen Sie Hilfe, statt weiterzuüben.», danach Verweis | sinngleich |
+| 51 | 2a | ebd.: «Bei anhaltender Erschöpfung, Schlafproblemen oder depressiver Stimmung kann eine ärztliche oder psychotherapeutische Abklärung sinnvoll sein.» | `selbstfuersorge` 176, umformuliert (2a) | `kraft`: «… oder gedrückter Stimmung …» | sinngleich |
+| 52 | 2a | ebd.: «Langsames Atmen kann körperliche Regulationsprozesse und akute Anspannung beeinflussen (Zaccaro et al., 2018); daraus folgt keine Wirkungsgarantie für jede Person» | `selbstfuersorge` 285, zusammengeführt | `zu-viel`: «Langsames Atmen kann Anspannung beeinflussen. Dass es bei jeder Person wirkt, ist nicht garantiert.» | sinngleich |
+| 53 | 2a | `unterstuetzen--alltag`: «Wenn Sie sich häufig wachsam oder erschöpft fühlen, verdient diese Belastung Aufmerksamkeit — auch wenn äusserlich gerade wenig sichtbar ist.» | `selbstfuersorge` 304, umformuliert (2a-2) | `kraft`: «Wenn Sie sich oft wachsam oder erschöpft fühlen, verdient das Aufmerksamkeit, auch wenn von aussen wenig sichtbar ist.» | sinngleich |
+| 54 | 2a | Figur `v-sf-abend`, ebd.: «Vereinbaren Sie eine Verfügbarkeit, die Sie freiwillig übernehmen können, und klären Sie professionelle Hilfewege für Krisen.»; «Verlauf und Basislinie sind individuell …» | `selbstfuersorge` 314 umformuliert (2a), 311 umformuliert (2a-K) | `kraft`, direkt nach Abbildung 1: «Vereinbaren Sie eine Erreichbarkeit, die Sie freiwillig übernehmen können. Und klären Sie, welche professionelle Hilfe es für Krisen gibt.»; «Was Kraft kostet oder entlastet, ist individuell und kann sich verändern.» | sinngleich / gekürzt ohne Verlust (Grafik «Basislinie» entfällt nach Bauauftrag) |
+| 55 | 2a | Handout `sauerstoffmaske`: «Schuldgefühle können trotzdem bestehen bleiben oder zunächst stärker werden.» | `selbstfuersorge` 354, umformuliert (2a) | `unterstuetzung`: «Schuldgefühle können trotzdem bleiben oder zuerst sogar stärker werden. Das beweist nicht, dass Sie etwas falsch machen.» | sinngleich |
+| 56 | 2a | Handout `warnsignale`: «Fehlende Anzeichen bedeuten keine Entwarnung; Unterstützung ist auch ohne Zuordnung zu einem Bereich möglich.» | `selbstfuersorge` 449, umformuliert (2a); Bemerkung nennt den entfallenen Teil nicht | `warnsignale`: «Fehlende Anzeichen bedeuten keine Entwarnung.»; Rest getragen von «Sie dürfen Beratung, Begleitung oder ein Gespräch suchen, sobald Sie das brauchen.» | gekürzt ohne fachlichen Verlust; Abgleich unvollständig (SP1-13) |
+| 57 | 2a | ebd.: «Warnsignale sind Orientierung, keine Diagnose und kein Beweis, dass Sie zu wenig für sich tun.» | `selbstfuersorge` 453, umformuliert (2a-K) | `warnsignale`: «Die Liste ist kein Test, keine Diagnose und kein Beweis, dass Sie zu wenig für sich tun.» | sinngleich |
+| 58 | 2a | Handout `radikale-akzeptanz`: «Akzeptanz heisst nicht bleiben, schweigen oder Gewalt tolerieren.» | `selbstfuersorge` 557, umformuliert (2a) | `akzeptanz`: «Akzeptanz heisst auch nicht, zu bleiben, zu schweigen oder Gewalt hinzunehmen. Bei Gefahr geht Schutz vor.» | sinngleich |
+| 59 | 2a | `selbstfuersorge` › Radikale Akzeptanz: «Dieses Konzept aus der DBT … lässt Gefühle, Grenzen, Unterstützung und den Einsatz für Veränderung ausdrücklich zu.» | `selbstfuersorge` 194, umformuliert (2a-K) | `akzeptanz`: «Er beschreibt eine Haltung, in der Gefühle, Grenzen, Unterstützung und der Einsatz für Veränderung ausdrücklich Platz haben.» | sinngleich |
+| 60 | 2a | `unterstuetzen--uebersicht`/Handouts: 20 Zeilen «entfällt» mit Inhalt geprüft (`rolle` 7, 90–108, 143, 146, 246, 301–310, 331; `selbstfuersorge` 6, 63, 235–268, 309, 483, 601–604, 648) | entfällt: Teaser, Links, Telefonnummern, Grafikbeschreibungen, Profil | Inhalte der beschriebenen Grafiken stehen als Text (`akzeptanz`: Listen, Übung, Beispiel, Schutz) | entfällt mit Grund |
+| 61 | 2b | `unterstuetzen--krise`: «Die Fachstelle Angehörigenarbeit bietet Beratung und Orientierung, aber keine Krisenintervention.» | `krise` 1, übernommen | `belastung`: wörtlich, nach Handlungsanleitung und Verweis | sinngleich |
+| 62 | 2b | ebd.: «Bei akuter Gefahr oder wenn Sie die Dringlichkeit nicht sicher einschätzen können, wenden Sie sich an den zuständigen Notfalldienst.» | `krise` 2, zusammengeführt (2b-K) | `belastung`: «Bei unmittelbarer Gefahr oder wenn Sie nicht einschätzen können, wie dringend es ist, holen Sie sofort Hilfe und schützen sich selbst.», danach Verweis | sinngleich |
+| 63 | 2b | ebd.: «Akute Hilfe ist jederzeit direkt erreichbar; diese Seite ist keine notwendige Vorstufe.» | `krise` 11, umformuliert (2b) | `belastung`: «Sie können jederzeit direkt Hilfe holen. Diese Seite ist keine notwendige Vorstufe.» | sinngleich |
+| 64 | 2b | ebd.: «Wenn Sie sich um die Sicherheit einer Person sorgen, verlassen Sie diese Einteilung und holen professionelle Unterstützung.»; «Kein Bereich bedeutet automatisch «sicher» oder «gefährlich».» | `krise` 38, 63, übernommen | `belastung`: wörtlich | sinngleich |
+| 65 | 2b | ebd.: «Bei Unsicherheit ist professionelle Einschätzung sinnvoll; ein unbekannter Plan bedeutet keine Sicherheit.» | `krise` 69, umformuliert (2b-K) | `belastung`: «… Wenn Sie nicht wissen, ob die Person einen Plan hat, bedeutet das keine Sicherheit.» | sinngleich (präzisiert) |
+| 66 | 2b | ebd.: «Begrenzen Sie den Zugang zu Medikamenten oder gefährlichen Gegenständen nur ohne Eigengefährdung, möglichst gemeinsam und nach professioneller Anleitung.»; «Bei unmittelbarer Gefahr holen Sie Hilfe über den Notruf.» | `krise` 78, 80, übernommen | `waehrend`: wörtlich, danach Verweis | sinngleich |
+| 67 | 2b | ebd.: «Selbstverletzung kann ohne Todesabsicht erfolgen, schliesst Suizidgedanken aber nicht aus.»; «Auch eine klein wirkende Verletzung erlaubt keine Entwarnung.» | `krise` 98, 99, übernommen | `suizid`: wörtlich | sinngleich |
+| 68 | 2b | ebd.: «Die von Dazzi et al. ausgewerteten Studien zeigten keinen statistisch signifikanten Anstieg von Suizidgedanken durch direktes Fragen.» | `krise` 120, umformuliert (2b-2) | `suizid`: «Eine Übersicht über mehrere Studien (Dazzi et al., 2014) fand keine nachweisbare Zunahme von Suizidgedanken durch direktes Fragen.» | sinngleich (Wortlaut 2b-2) |
+| 69 | 2b | ebd.: «Bei Bedrohung bringen Sie sich in Sicherheit und informieren die Leitstelle.» | `krise` 106, zusammengeführt (2b-K), «Leitstelle» entfällt genannt | `sagen`: «Bei Bedrohung oder Gewalt gehen Sie auf Abstand, bringen sich in Sicherheit und holen Hilfe über den Notruf.», danach Verweis | sinngleich |
+| 70 | 2b | ebd.: «Bei erneuter Sorge holen Sie professionelle Einschätzung; bei möglicher unmittelbarer Lebensgefahr rufen Sie den Rettungsdienst.» | `krise` 139, umformuliert (2b-K) | `danach`: «… Bei möglicher unmittelbarer Lebensgefahr holen Sie sofort Hilfe über den Notruf.» | sinngleich |
+| 71 | 2b | ebd.: «Nach einer Krise können Scham, Rückzug, Erleichterung oder andere Gefühle auftreten.» | `krise` 141, umformuliert (2b), «Reue», «Ärger» aus `rolle` genannt | `danach`: «… Scham, Reue, Erleichterung, Ärger, Rückzug oder ganz andere Reaktionen …» | sinngleich (erweitert aus Bestand) |
+| 72 | 2b | ebd.: «Nötige medizinische oder psychiatrische Hilfe hat keine Wartefrist.»; «Niemand ist verpflichtet, eine nächste Krise vorherzusagen oder rechtzeitig zu melden.» | `krise` 148 übernommen, 162 verschoben (Vertiefung, 2b) | `danach`: wörtlich, 162 in der Vertiefung «Gemeinsame Nachbesprechung» | sinngleich |
+| 73 | 2b | ebd.: «Dauernde Alarmbereitschaft, Schreckhaftigkeit, Angst vor der nächsten Eskalation oder emotionale Taubheit können nach belastenden Ereignissen auftreten.» + «Diese Beschreibung ist keine Diagnose …» | `krise` 153 umformuliert (2b), 154 übernommen | `danach`: «… ständige Wachsamkeit, Schreckhaftigkeit …»; «Diese Beschreibung ist keine Diagnose.» | sinngleich |
+| 74 | 2b | ebd.: «Sonst kann jede beteiligte Person eigene Beratung nutzen; weitere Behandlungsschritte klärt die betroffene Person mit dem Fachteam.» | `krise` 213, umformuliert (2b-K) | `bleibt`: «… mit dem Behandlungsteam.» | sinngleich |
+| 75 | 2b | Handout `krisenkommunikation`: «Die Grundidee …: zuerst Verbindung herstellen, dann Kontakt halten, dann Grenze und nächsten Schritt benennen.» und Schritte (Nr. 252–261) | `krise` 252–261, entfällt (2b-K), P2b-F-8 | `kommunizieren` › `kippen`: «Eine Grenze in drei Teilen …»; `krise` › `sagen` behält «Standardsatz» | entfällt mit Grund (Entscheid), Inhalt auf `kommunizieren` |
+| 76 | 2b | `kommunizieren`: «In belasteten Beziehungen kippt Kommunikation oft schnell in Verteidigung, Beschuldigung, Rückzug oder Übererklärung.» | `kommunizieren` 18, umformuliert (2b) | `zuhoeren`: «… kippt ein Gespräch oft schnell. Dann verteidigt sich jemand, macht Vorwürfe, zieht sich zurück oder erklärt zu viel.» | sinngleich |
+| 77 | 2b | ebd.: «Validierung bedeutet, dass Sie das Erleben Ihres Gegenübers als nachvollziehbar behandeln, ohne jeden Vorwurf, jede Interpretation oder jedes Verhalten zu bestätigen.» | `kommunizieren` 23, umformuliert (2b) | `anerkennen`: «Validierung heisst: Sie behandeln das Erleben der anderen Person als nachvollziehbar. Dafür müssen Sie nicht jeden Vorwurf, jede Deutung oder jedes Verhalten bestätigen.» | sinngleich |
+| 78 | 2b | ebd.: «Die sechs Stufen lehnen sich an Linehans Validierungsstufen … an.» / «Linehan beschreibt fünf aufeinander aufbauende Formen und als sechste Form radikale Echtheit.» | `kommunizieren` 27 umformuliert (2b); 28 entfällt (2b-K), «Zuschreibung nicht an der Quelle geprüft, P2b-F-9» | `anerkennen`: «Die sechs Stufen lehnen sich an die Validierungsstufen von Linehan aus der Dialektisch-Behavioralen Therapie (DBT) an.» | 27 sinngleich; 28 entfällt mit Grund (Entscheid) |
+| 79 | 2b | ebd.: «Ob ein Muster bestehen bleibt, hängt von vielen Faktoren ab; Deeskalation macht Sie dafür nicht verantwortlich.» | `kommunizieren` 134, umformuliert (2b) | `moment`: «… Dafür sind Sie nicht verantwortlich, auch wenn Sie versuchen, die Lage zu beruhigen.» | sinngleich |
+| 80 | 2b | ebd.: «Bei Bedrohung oder akuter Gefahr: Soforthilfe.» | `kommunizieren` 150, umformuliert (2b), Link entfällt (Profil) | `kippen`: «Bei Bedrohung oder Gewalt beenden Sie das Gespräch, schaffen Abstand und bringen sich in Sicherheit.», danach Verweis | sinngleich; Profil umgesetzt |
+| 81 | 2b | Figur `v-ko-tassen`, Handout `zuhoeren-ohne-zustimmen`: «Sie können Gefühle anerkennen, ohne die Interpretation zu übernehmen.»; «Sie können sagen, dass der Schmerz real ist, ohne automatisch die ganze Erklärung zu teilen oder pauschale Schuld zu übernehmen.» | `kommunizieren` 663, 667, umformuliert (2b), «automatisch» entfällt genannt | `anerkennen`, Abbildung 1: «Sie können ein Gefühl anerkennen, ohne die Deutung zu übernehmen. Sie können sagen, dass der Schmerz echt ist, ohne die ganze Erklärung zu teilen oder pauschale Schuld zu übernehmen.» | sinngleich |
+| 82 | 2b | ebd.: «Von aussen lässt sich nicht sicher erkennen, was hinter einem Satz steht.»; «Sie dürfen zugleich entscheiden, wie viel Sie in diesem Moment aufnehmen können.» | `kommunizieren` 842, 853, übernommen | `anerkennen`, Abbildung 1, Vertiefung «Grenzen des Bildes»: wörtlich | sinngleich |
+| 83 | 2b | Handout `grenzen-ohne-eskalation` (Bestand Etappe 1): «Die 3-Teile-Formel hält Grenzsetzung knapp: Fakt, Ich-Grenze, nächster Schritt.» | `grenzen` 575 umformuliert (2b), 581 zusammengeführt | `kippen`: «Eine Grenze in drei Teilen … Fakt … Ich-Grenze … Nächster Schritt» | sinngleich |
+| 84 | 2b | `grenzen` › Finanzielle Grenzen (Z. 378): «Finanzielle Grenzen sind besonders schwer, weil sie sich anfühlen wie «ich lasse dich fallen». **Sie sind es nicht.**» | `grenzen` 214, umformuliert (2b), nur der erste Satz; für «Sie sind es nicht.» **keine Zeile** (`grep` in `abgleich/` und `content/` leer) | `kommunizieren` › `beispiele`: «Grenzen beim Geld sind oft besonders schwer, weil sie sich anfühlen können wie «ich lasse dich fallen».» – danach «Eher problematisch …» | erster Satz sinngleich; zweiter Satz **still entfallen** → SP1-4 |
+| 85 | 2b | `uebungen`: «Eine offen benannte Pause kann verhindern, dass Sie aus Überforderung verletzend reagieren.»; «Sie bieten nur Unterstützung an, die für Sie möglich ist; Sie übernehmen keine Behandlungsentscheidung.» | `kommunizieren` 314, 463, entfällt («ersetzt durch Beispiele», Entscheid Fachstelle 08.10.2026) | sinngemäss `kommunizieren` › `moment`/`kippen`: «Kündigen Sie früh eine Pause an …»; `rolle` › `anbieten` | entfällt mit Grund (303 Zeilen der Übungen, Entscheid) |
+| 86 | 2b | `kommunizieren` › Spiegeln: «Du hast gesagt, dass du dich heute allein gelassen gefühlt hast.» | `kommunizieren` 61, entfällt, «Kürzung im Lesefluss» | `anerkennen`, Stufe Spiegeln: «Du fühlst dich gerade allein gelassen und vergessen.» | entfällt mit Grund, Aussage vorhanden |
+| 87 | 2b | Handout `gespraeche-kippen`: «Angehörige dürfen Schritte auslassen, eine Pause ohne Rückkehrversprechen machen oder das Gespräch beenden.» | `kommunizieren` 730, zusammengeführt | `kippen`: «Die Schritte sind keine feste Reihenfolge. Eine Pause oder eine Grenze darf am Anfang stehen.»; Pausensatz «… kein Versprechen enthält, zurückzukommen.» | sinngleich |
+
+Ergänzende Prüfung (eigene Skripte, nicht Teil der Zählung): `drop.mjs` meldete für die acht Tabellen 151 Kandidaten; nach Durchsicht von rund 40 sind die Abweichungen sprachlich oder im Abgleich genannt, ausser den Stellen unter SP1-13.
+
+**Nicht geprüft oder nicht prüfbar**
+
+- Etappen 2c und 3-1: nicht mein Teil. SP1-5 berührt `diagnose` (2c-2); geprüft habe ich dort nur, ob die Aussagen des Bestandsabschnitts heute irgendwo stehen.
+- Abbildungen des Bestands (`abbildungen/`) nicht mit den neuen Figuren verglichen. Verglichen sind nur Text, Beschriftung und Vertiefung der Figuren über die Abgleichzeilen.
+- Statuszählungen im Kopf der Abgleichtabellen nicht nachgerechnet (eigene Zählung je Status siehe `lib.mjs`-Lauf, z. B. `verstehen` 552 Zeilen, `rolle` 774, `kommunizieren` 982). Nicht verlangt.
+- `drop.mjs` ist eine Heuristik: Von 151 Kandidaten habe ich rund 40 von Hand geprüft. Ungeprüfte Kandidaten können weitere Fälle wie SP1-13 enthalten.
+- Wo eine Bemerkung auf einen Entscheid der Fachstelle verweist (P4-F-…, P2a-F-…, P2b-F-…), habe ich nur geprüft, ob der Wortlaut auf der Seite steht. Den Entscheid selbst habe ich nicht nachgelesen.
+
+#### 5.1 e · Bestand, Etappen 2c und 3-1 (49 Aussagen)
+
+**Vorgehen**
+
+- **Gelesen:** `KONTEXT.md`, `PRUEFAUFTRAG-SCHLUSSPRUEFUNG.md` (Abschnitte 1–5.1), `abgleich/README.md` (Statuswerte, Spalten), die Abgleichtabellen `genesung.md`, `unterstuetzung.md`, `diagnose.md`, `behandlung.md`, `fragen.md`, `quellen.md`, `ueber.md` (gezielt mit `grep`); Bestand `SP/wt-bestand/bestand/borderline-angehoerige/texte/`: `genesung.md`, Handouts `genesung-zahlen`, `remission-heilung`, `fortschritt-paradox`, `verstehen--diagnostik.md`, `verstehen--begleiterkrankungen.md`, `unterstuetzen--therapie.md`, `fachstelle.md`, `buchempfehlungen.md`, `faq.md`, `quellen.md`, `glossar.md`, `ueber-uns.md`, `impressum.md`, `datenschutz.md`, `barrierefreiheit.md`, `feedback.md`. `PRUEFBERICHT.md` nur gezielt (`grep -n`), um bekannte Fragen zu erkennen, nicht als Beleg.
+- **Eigene Skripte** (`SP/best2/`):
+  - `text.py`: zieht den Text der Inhaltsseiten `content/<seite>.html` je `<section id>` heraus (`SP/best2/txt/<seite>.txt`, Zeilen «[id] Text»). Daraus stammen alle Zitate «Heute».
+  - `ab.sh <tabelle> <muster>`: gibt Abgleichzeilen gekürzt aus (Nr., Quelle, Bestandssatz, Status, neue Fassung, Ort, Bemerkung).
+  - `stichprobe.py` mit `auswahl.json`: prüft für 114 ausgewählte Abgleichzeilen (alle Zeilen der Tabelle unten und weitere aus denselben Abschnitten), ob die «Neue Fassung» (bei «wörtlich» der Bestandssatz) im genannten Abschnitt der Inhaltsseite steht. Ergebnis: **102 gefunden, 12 ohne Ort («entfällt»), 0 nicht gefunden** (`SP/best2/stichprobe.txt`).
+- **Projektwerkzeug zusätzlich:** `node abgleich/pruefe-abgleich.mjs --bestand SP/wt-bestand/bestand/borderline-angehoerige/texte` → «Abgleich geprüft: 7371 Zeilen, 0 ohne Fundstelle.» `git status` des Arbeitsbaums danach leer.
+- **Zählungen nachgerechnet** (eigene `awk`-Zählung der Spalte «Status»): `genesung.md` 498 Bestandssätze = 180 entfällt + 101 Bezeichnung + 92 übernommen + 89 zusammengeführt + 16 verschoben + 8 umformuliert (2c-1) + 6 verschoben (Vertiefung) + 4 umformuliert (2c-K) + 2 gekürzt; dazu 9 neu (2c-1), 1 neu (2c-K), 1 neu (3-1-K). Stimmt mit «Zählung nach Korrektur 2c-K» überein. `unterstuetzung.md` 317 = 94 + 75 + 54 + 24 + 23 + 23 + 18 + 2 + 2 + 1 + 1; stimmt mit «Zählung nach Korrektur 3-1-K».
+- **Auswahl der Aussagen:** Zahlen (93 %, 50 %, 10 Jahre, 290, 85 %/12 %, 17–25 Jahre), Diagnosekriterien (DSM-5-TR, ICD-11, F60.31), Behandlung und Wirksamkeit (Family Connections, Therapieformen), Medikamente, Kosten und Grundversicherung, Angebote, Quellenangaben Zeichen für Zeichen, Begriffe auf `quellen`, rechtliche Angaben; dazu bewusst Zeilen mit «entfällt», «gekürzt», «zusammengeführt», «umformuliert».
+- **Satz für Satz ganz durchgegangen** (jeder Bestandssatz gegen Abgleich und Seite): `/genesung` › «Was die Forschung zeigt» (13 Sätze) und «Mögliche Einflussbereiche rund um Genesung» (14 Sätze); `/verstehen/diagnostik` › «Was, wenn die Diagnose nicht geteilt wird …» (14 Sätze und Listenpunkte); `/verstehen/begleiterkrankungen` › «Was Sie als Angehörige wissen sollten» (12); `/faq` › «Helfen Medikamente bei Borderline?» (5); `/datenschutz` › «Cookies» (3) und «Kontaktaufnahme per E-Mail» (5).
+- **Netlify-Vorschau:** `curl -D -` auf `/`, `/genesung`, `/impressum-datenschutz` der Vorschau #659: Antwort `HTTP/2 200`, kein `Set-Cookie`.
+
+**Ergebnis je Punkt**
+
+##### 2.1 Aussagen mit Bestand verglichen (49 Aussagen: 2c 27, 3-1 22)
+
+Urteile: **sinngleich** · **gekürzt ohne fachlichen Verlust** · **Bedeutung verändert** · **still entfallen** · **Abgleich falsch** (Status oder Bemerkung trifft nicht zu). «auf Auftrag» = Änderung mit genanntem Entscheid der Fachstelle oder Bauauftrag.
+
+| Nr. | Etappe | Bestand (Datei, Zitat) | Abgleich (Datei Nr., Art) | Heute (Seite › Abschnitt, Zitat) | Urteil |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 2c | `genesung.md`: «93% erreichten während einer zehnjährigen Studie mindestens einmal eine symptomatische Remission über zwei Jahre.» | `genesung.md` Nr. 75, übernommen («93 %») | `genesung` › `forschung`: «93 % erreichten während einer zehnjährigen Studie mindestens einmal eine symptomatische Remission über zwei Jahre.» | sinngleich |
+| 2 | 2c | `genesung.md`: «50% erreichten im selben Beobachtungszeitraum eine mindestens zweijährige Recovery: Remission zusammen mit guter sozialer und beruflicher Funktionsfähigkeit nach der Studiendefinition.» | Nr. 78, übernommen | `genesung` › `forschung`: wörtlich, «50 %» | sinngleich |
+| 3 | 2c | `genesung.md`: «Hinweis: Untersucht wurden 290 Erwachsene, die zu Studienbeginn stationär behandelt wurden.» | Nr. 89, übernommen | `genesung` › `forschung`: «Untersucht wurden 290 Erwachsene, die zu Studienbeginn stationär behandelt wurden.» | sinngleich |
+| 4 | 2c | `genesung.md`: «Die Werte 93 % und 50 % sowie der Zeitraum von zehn Jahren stammen aus Zanarini et al. (2010). Die Studie von 2012 berichtet ein separates 16-Jahres-Follow-up …» | Nr. 84, 85, verschoben (Quellenblock) | `genesung` › `quellen`: «Zanarini et al. (2010) Verwendet in: «Was die Forschung zeigt»: die Werte 93 % und 50 % sowie der Zeitraum von zehn Jahren»; «Zanarini et al. (2012) … (separates 16-Jahres-Follow-up …)» | sinngleich |
+| 5 | 2c | Handout `genesung-zahlen`: «Zehn Jahre sind der Beobachtungszeitraum, keine Wartefrist.» | Nr. 254, zusammengeführt | `genesung` › `forschung`: «Daraus lässt sich keine feste Wartezeit bis zu einer Besserung ableiten. Veränderungen können früher eintreten.» | sinngleich |
+| 6 | 2c | `genesung.md`: «Die diagnostischen Kriterien der Borderline-Störung werden über einen festgelegten Zeitraum nicht mehr erfüllt.» | Nr. 96, zusammengeführt | `genesung` › `begriffe`: «In Verlaufsstudien bedeutet symptomatische Remission, dass die Diagnosekriterien während eines festgelegten Zeitraums nicht mehr erfüllt sind.» | sinngleich |
+| 7 | 2c | `genesung.md`: «Zusätzlich zur Symptomverbesserung kommen alltagsbezogene Stabilität, Beziehungen, Arbeit oder Ausbildung und mehr Lebensqualität in den Blick.» | Nr. 100, umformuliert (2c-1) | `genesung` › `begriffe`: «Zu einer umfassenderen Genesung gehören auch Stabilität im Alltag und mehr Lebensqualität.» (Beziehungen, Arbeit im Satz davor) | gekürzt ohne fachlichen Verlust |
+| 8 | 2c | `genesung.md`: «Ein schwieriger Abschnitt macht frühere Erfahrungen oder Fähigkeiten nicht wertlos.» | Nr. 105, zusammengeführt (Kernaussage Abbildung 1) | `genesung` › `verlauf`, Figur `v-ge-trieb`: «Eine schwierigere Phase bedeutet nicht, dass alles Erreichte verloren ist.» | sinngleich |
+| 9 | 2c | `genesung.md`: «Redaktionelle Metapher, kein Erklärungsmodell für den individuellen Verlauf. Bezug: NICE CG78, …» | Nr. 63, zusammengeführt; Nr. 64, gekürzt | `genesung` › `verlauf`, `v-ge-trieb`, «Grenzen des Bildes»: «Das Bild ist eine Metapher, keine Vorhersage eines Genesungsverlaufs.»; Quellenzeile «… Bezug: Zanarini et al. (2012); NICE CG78 (2009).» | sinngleich |
+| 10 | 2c | `genesung.md`: «Körperliche Beschwerden und weitere psychische Erkrankungen werden eigenständig behandelt, bei Bedarf auch mit Medikamenten.» | Nr. 144, umformuliert (2c-K, P2c2-F-5) | `genesung` › `einfluesse`: «… werden ebenfalls behandelt, bei Bedarf auch mit Medikamenten.» | Bedeutung leicht verändert, auf Auftrag (P2c2-F-5); kein Befund |
+| 11 | 2c | `genesung.md`: «Für Borderline selbst sind Medikamente keine Kernbehandlung; Änderungen nur mit der behandelnden Fachperson.» | Nr. 145, umformuliert (2c-K) | `genesung` › `einfluesse`: «Für Borderline selbst sind Medikamente keine Kernbehandlung. Medikamente werden nur gemeinsam mit der behandelnden ärztlichen Fachperson geändert.» | sinngleich, auf Auftrag präzisiert |
+| 12 | 2c | `genesung.md`: «Sie ordnen Aussagen aus Behandlungsleitlinien und einem leitliniengestützten Recovery-Rahmen für diese Website.» | Nr. 154, gekürzt | `genesung` › `einfluesse`: «Die fünf Bereiche sind eine eigene Zusammenstellung der Fachstelle aus Behandlungsleitlinien, kein geprüftes Modell.» | gekürzt ohne fachlichen Verlust (Recovery-Rahmen steht auf `quellen` › `leitlinien` bei AWMF 2025: «Kapitel 7.2 beschreibt Schlüsselfaktoren persönlicher Recovery …») |
+| 13 | 2c | Handout `remission-heilung`: «Fragen Sie – wenn die Person darüber sprechen möchte –, welche Veränderungen für sie selbst bedeutsam sind, statt Fortschritt von aussen festzulegen.» | Nr. 315, zusammengeführt | `genesung` › `verlauf`: «Fragen Sie die betroffene Person, was die aktuelle Phase für sie bedeutet, statt den Verlauf von aussen zu bewerten.» (wörtlich aus Handout `fortschritt-paradox`) | gekürzt ohne fachlichen Verlust; Bemerkung nennt das entfallene «wenn die Person darüber sprechen möchte» nicht (SP1-15) |
+| 14 | 2c | `genesung.md`: «auf Wunsch Angebote suchen; Behandlung bleibt Entscheidung der Person und des Fachteams» | Nr. 137, zusammengeführt | `genesung` › `freiwillig`: «Urteilsfähige Erwachsene entscheiden selbst über ihre Behandlung, gemeinsam mit den Behandelnden.» (Handout `rolle-genesungsprozess`) | sinngleich |
+| 15 | 2c | `verstehen--diagnostik.md`: «Das DSM-5-TR beschreibt neun Kriterien; mindestens fünf müssen als anhaltendes, situationsübergreifendes Muster erfüllt sein.» | `diagnose.md` Nr. 36, 60 | `diagnose` › `abklaerung`, Vertiefung: «Geprüft werden neun Kriterien. Mindestens fünf müssen als anhaltendes und situationsübergreifendes Muster vorliegen.» | sinngleich |
+| 16 | 2c | `verstehen--diagnostik.md`: «… gilt in der Schweiz 2026 weiterhin die ICD-10-GM 2024. Deshalb kann in entsprechenden Unterlagen der Code F60.31 erscheinen.» | Nr. 62, 63, verschoben (Vertiefung) | `diagnose` › `abklaerung`: wörtlich | sinngleich |
+| 17 | 2c | `verstehen--diagnostik.md`: «Recovery ist möglich — siehe Genesung.» | Nr. 89, umformuliert (2c-2) | `diagnose` › `bedeutung`: «Was Langzeitstudien über Besserung zeigen, steht auf der Seite «Genesung» im Abschnitt «Was die Forschung zeigt».» | sinngleich (die Aussage trägt die Zielseite) |
+| 18 | 2c | `verstehen--diagnostik.md`: «Klare Grenze: Bei akuter Gefahr — Suizidalität, schwerer Selbstverletzung oder Fremdgefährdung — ist die Diagnose-Frage nachrangig. Dann zählt die Soforthilfe.» | Nr. 108, 109, umformuliert (2c-2) | `diagnose` › `zweifel`: «… etwa bei Suizidgefahr, schwerer Selbstverletzung oder Gefahr für andere Menschen, ist die Frage nach der Diagnose nachrangig. Dann holen Sie Hilfe über den Notruf.» | sinngleich (Profil: kein Krisenzugang) |
+| 19 | 2c | `verstehen--diagnostik.md`: «Bei der Fachstelle … nach eigener Beratung fragen und die Zugangsbedingungen klären» | Nr. 107, gekürzt | `diagnose` › `zweifel`: «bei der Fachstelle Angehörigenarbeit der PUK nach eigener Beratung fragen» | gekürzt ohne fachlichen Verlust (Bedingungen über Verweissatz in `ohne-diagnose`) |
+| 20 | 2c | `verstehen--begleiterkrankungen.md`: «Die älteren Zanarini-Untersuchungen beruhen auf einer spezialisierten, zunächst stationär behandelten Stichprobe und betrachten Diagnosen im Lebenszeit- und Langzeitverlauf.» | Nr. 279, umformuliert (2c-2) | `diagnose` › `begleiterkrankungen`: «Die älteren Studien dazu untersuchten Menschen, die zu Beginn stationär behandelt wurden.» | gekürzt; von der Fachstelle bestätigt (P2c2-F-8, `PRUEFBERICHT.md` Z. 5973) |
+| 21 | 2c | `verstehen--begleiterkrankungen.md`: «Beziehungen können das Befinden dennoch beeinflussen; Verantwortung für konkrete verletzende oder gewalttätige Handlungen bleibt davon getrennt.» | Nr. 316, zusammengeführt (Verweissatz) | `diagnose` › `begleiterkrankungen`: Verweissatz auf `rolle` › `schuld`; dort: «Die Verantwortung für eigene verletzende oder gewalttätige Handlungen bleibt bestehen.», «Belastende Erfahrungen können mitwirken …» | gekürzt ohne fachlichen Verlust (über Verweis) |
+| 22 | 2c | `verstehen--begleiterkrankungen.md`: «Medikation: Nach NICE sollen Medikamente nicht gezielt zur Behandlung von Borderline selbst oder ihrer einzelnen Kernsymptome eingesetzt werden. Bei einer zusätzlichen Depression kann eine Kombination aus einem Antidepressivum und psychologischer Behandlung erwogen werden.» | Nr. 347, 348, übernommen | `behandlung` › `therapieformen`: wörtlich | sinngleich |
+| 23 | 2c | `verstehen--diagnostik.md`: «Ein spezialisiertes Frühinterventions-Angebot … ist HYPE Züri … für Jugendliche ab 13 Jahren mit Verdacht, Risiko oder bereits diagnostizierter Borderline- Persönlichkeitsstörung.» | Nr. 137, verschoben | `behandlung` › `angebote`: «HYPE Züri ist ein Frühinterventionsangebot bei Verdacht, Risiko oder bereits diagnostizierter Borderline-Persönlichkeitsstörung.» «Für: Jugendliche» | Bedeutung verändert («ab 13 Jahren» entfällt), auf Auftrag (P2c-F-3, P2c2-F-3) |
+| 24 | 2c | `unterstuetzen--therapie.md`: «Clienia Schlössli: Weiterführendes stationäres Emotionsregulationsprogramm.» | `behandlung.md` Nr. 266, zusammengeführt | `behandlung` › `angebote`: «Clienia Schlössli bietet eine spezialisierte DBT-Station für Menschen mit Borderline-Persönlichkeitsstörung.» | gekürzt ohne fachlichen Verlust; «weiterführend» entfällt, Bemerkung nennt es nicht (SP1-15) |
+| 25 | 2c | `verstehen--diagnostik.md`: «Ob und unter welchen Voraussetzungen die Grundversicherung Kosten übernimmt, hängt von Leistung, Zuweisung und Versicherungsmodell ab.» · «Für psychologische Psychotherapie zulasten der Grundversicherung ist eine ärztliche Anordnung nötig; nicht alle Ärzt:innen sind regulär anordnungsberechtigt.» | `diagnose.md` Nr. 160, übernommen; Nr. 172, umformuliert (2c-2) | `behandlung` › `angebote`: wörtlich; › `wartezeit`: «… ist eine ärztliche Anordnung nötig. Nicht alle Ärztinnen und Ärzte sind regulär anordnungsberechtigt.» | sinngleich |
+| 26 | 2c | `unterstuetzen--therapie.md`: «Für Family Connections liegen inzwischen auch randomisierte Daten vor: Die Studie von 2024 fand keinen statistisch signifikanten Vorteil gegenüber einer aktiven Vergleichsbehandlung; daraus folgt weder gesicherte Überlegenheit noch Gleichwertigkeit.» | `behandlung.md` Nr. 169, verschoben (Vertiefung) | `behandlung` › `therapieformen`, «Programme für Angehörige»: «Dazu liegen inzwischen auch Daten aus einer randomisierten Studie vor: Die Studie von 2024 fand keinen statistisch signifikanten Vorteil … Daraus folgt weder gesicherte Überlegenheit noch Gleichwertigkeit.» | sinngleich |
+| 27 | 2c | `buchempfehlungen.md`: «Das einzige deutschsprachige Kinderbuch speziell zum Thema Borderline.» · `fachstelle.md`: «Erfragen Sie, welche Informationen und Materialien zu Ihrer Situation angeboten werden und welchen aktuellen Stand sie haben.» · `verstehen--begleiterkrankungen.md`: «Beratung kostet nichts und wird nicht an Krankenkassen weitergegeben.» | `unterstuetzung.md` Nr. 217, umformuliert (2c-K, P2c-F-12); Nr. 17, umformuliert (2c-1); `diagnose.md` Nr. 369, umformuliert (2c-K) | `unterstuetzung` › `buecher`: «Ein deutschsprachiges Kinderbuch …»; › `beratung`: «Verständliche Informationen und Materialien zur Erkrankung und zum Umgang damit, passend zu Ihrer Situation.»; «Die Beratung der Fachstelle kostet nichts und wird nicht an Krankenkassen weitergegeben.» | sinngleich bzw. auf Auftrag abgeschwächt (Nr. 217); Nr. 17: Frage wird Angebotsbeschreibung, freigegeben (Liste neue Sätze) |
+| 28 | 3-1 | `faq.md` «Ist Borderline heilbar?»: «Remission bedeutet, dass die Diagnosekriterien nicht mehr erfüllt sind; Recovery umfasst darüber hinaus persönliche Lebensqualität, Beziehungen und Teilhabe.» | `fragen.md` Nr. 26, umformuliert (3-1-K, Z31-F-2) | `fragen` › `verlauf`: «Remission bedeutet, dass die Diagnosekriterien während eines festgelegten Zeitraums nicht mehr erfüllt sind. Recovery umfasst darüber hinaus …» | sinngleich, auf Auftrag präzisiert |
+| 29 | 3-1 | `faq.md`: «Angehörige müssen weder die Behandlung noch die Genesung allein tragen.» | Nr. 40, umformuliert (3-1) | `fragen` › `verlauf`: «Angehörige sind nicht schuld an der Erkrankung und nicht für die Genesung verantwortlich.» | Bedeutung verändert (von «nicht allein tragen» zu «nicht verantwortlich»), auf Auftrag (Bauauftrag 2c-1, Abschnitt 2; Wortlaut `verstehen`); fachlich freigegeben |
+| 30 | 3-1 | `faq.md`: «Es gibt keine etablierte medikamentöse Kernbehandlung der Borderline-Persönlichkeitsstörung; strukturierte Psychotherapie steht im Zentrum.» | Nr. 225, umformuliert (3-1) | `fragen` › `behandlung`: «Für Borderline selbst sind Medikamente keine Kernbehandlung. Im Zentrum steht eine strukturierte Psychotherapie.» | sinngleich |
+| 31 | 3-1 | `faq.md`: «Einnahme, Umstellung oder Absetzen erfolgen ärztlich begleitet.» | Nr. 228, umformuliert (3-1) | `fragen` › `behandlung`: «Medikamente werden nur gemeinsam mit der behandelnden ärztlichen Fachperson geändert.» | sinngleich («Einnahme» ist in «Ziel, erwarteter Nutzen … ärztlich festgelegt» enthalten) |
+| 32 | 3-1 | `faq.md` «Wann ist eine Einweisung nötig?»: «Eine FU setzt die gesetzlichen Voraussetzungen voraus: Eine Person darf wegen einer psychischen Störung, geistigen Behinderung oder schweren Verwahrlosung … Zuständig ist grundsätzlich die KESB; kantonal bezeichnete Ärzt:innen können ebenfalls befugt sein. Angehörige ordnen keine FU an.» | Nr. 145 und 148 übernommen (wörtlich); Nr. 147 umformuliert (3-1-K, Z31-S-10) | `fragen` › `behandlung`: wörtlich, «KESB» ausgeschrieben, Semikolon als Punkt | sinngleich |
+| 33 | 3-1 | `faq.md`: «Bei akuter Gefahr oder Unsicherheit finden Sie passende Anlaufstellen auf der Soforthilfe-Seite.» | Nr. 149, umformuliert (3-1-K) | `fragen` › `behandlung`: «Bei unmittelbarer Gefahr oder wenn Sie nicht einschätzen können, wie dringend es ist, holen Sie sofort Hilfe.» | sinngleich (Profil) |
+| 34 | 3-1 | `faq.md`: «Nicht jede überforderte Familie braucht sofort eine Meldung – aber Kinder brauchen Schutz vor Gewalt, massiver Alarmstimmung und Krisensituationen …» | Nr. 169, umformuliert (3-1) | `fragen` › `schutz`: «Aber Kinder brauchen Schutz vor Gewalt, vor einer massiv angespannten Stimmung und vor Krisensituationen …» | sinngleich |
+| 35 | 3-1 | `faq.md`: «Kurzdefinition: Remission = Diagnosekriterien werden über längere Zeit nicht mehr erfüllt; Recovery = Remission plus stabiles soziales/berufliches Funktionsniveau.» | Nr. 308, umformuliert (3-1-K) | `fragen` › `verlauf` (Remission); Recovery-Studiendefinition `quellen` › `begriffe`: «… eine mindestens zweijährige symptomatische Remission zusammen mit gutem sozialem und beruflichem Funktionieren.» | sinngleich (verteilt) |
+| 36 | 3-1 | `quellen.md`: «Zanarini, M. C. et al. (2010). Time to attainment of recovery … A 10-year prospective follow-up study. American Journal of Psychiatry 167(6), 663–667. DOI: 10.1176/appi.ajp.2009.09081130.» | `quellen.md`, Stichprobe gefunden | `quellen` › `forschung`: Zeichen für Zeichen gleich (ohne Markdown und Linktext) | sinngleich |
+| 37 | 3-1 | `quellen.md`: «Zanarini … (2012) … 169(5), 476–483. DOI: 10.1176/appi.ajp.2011.11101550.» · «Diese Publikation ist nicht die Quelle für die 10-Jahres-Werte von 93% und 50%; diese stammen aus Zanarini et al. (2010).» | Stichprobe gefunden | `quellen` › `forschung`: Angabe gleich; «Die Zehnjahreswerte von 93 % und 50 % stammen nicht aus dieser Publikation, sondern aus Zanarini et al. (2010).» | sinngleich |
+| 38 | 3-1 | `quellen.md`, Gunderson (2011): «Komplementär zur Zanarini-McLean-Studie: 85% Remission, 12% Rückfallrate über zehn Jahre.» | Nr. 45, umformuliert (3-1) | `quellen` › `forschung`: «Ergänzt die Studie von Zanarini: 85 % Remission und 12 % Rückfälle über zehn Jahre.» | sinngleich |
+| 39 | 3-1 | `quellen.md`: «Guillén, V. et al. (2024). *"Family Connections", a program …*. Family Process 63(4), 2195–2214. DOI: 10.1111/famp.13089.» | Nr. 145, wieder aufgenommen (3-1-K), «Zeichen für Zeichen aus dem Bestand» | `quellen` › `angehoerige`: «Guillén, V. et al. (2024). «Family Connections», a program …» | Angabe sonst gleich; Anführungszeichen im englischen Originaltitel als Guillemets (SP1-16) |
+| 40 | 3-1 | `quellen.md`: «First, M. B., Williams, J. B. W., Benjamin, L. S. & Spitzer, R. L. (2017). … American Psychiatric Association Publishing, Arlington, VA.» · «Bundesamt für Statistik (BFS) (2026).» | Nr. 175 und 162, übernommen, Bemerkung nur «&» als «und» | `quellen` › `diagnostik`: «… Publishing, Arlington.» · «Bundesamt für Statistik (2026).» | gekürzt ohne fachlichen Verlust; Abgleich ungenau (SP1-15) |
+| 41 | 3-1 | `quellen.md`, AWMF (2022): «Im AWMF-Register mit Gültigkeit bis 31.05.2026 geführt (Abgleich 22.09.2026). Die angegebene Gültigkeit ist abgelaufen; hier als datierte Quelle verwendet …» | Nr. 172, umformuliert (3-1) | `quellen` › `diagnostik`: «Im AWMF-Register mit Gültigkeit bis 31.05.2026 geführt. Die angegebene Gültigkeit ist abgelaufen. Die Leitlinie ist hier eine datierte Quelle, keine aktuell gültige Leitlinie.» | sinngleich |
+| 42 | 3-1 | `quellen.md`, NICE NG150: «… Unterstützung erwachsener unbezahlter Betreuungspersonen.» | Nr. 203, umformuliert (3-1) | `quellen` › `leitlinien`: «… Unterstützung erwachsener Angehöriger, die Betreuung übernehmen.» | gekürzt ohne fachlichen Verlust |
+| 43 | 3-1 | `glossar.md`, DSM-5-Kriterien 1–9 und Einleitung «mindestens 5 der folgenden 9 Merkmale …» | Stichprobe (Zeilen `/glossar` › B) | `quellen` › `begriffe`, «Die neun Kriterien im DSM-5-TR»: alle neun Merkmale wörtlich, «z. B.» statt «z.B.» | sinngleich |
+| 44 | 3-1 | `glossar.md`, Komorbidität: «Bei Borderline besonders häufig: Depression, Angststörungen, PTBS, Essstörungen, Substanzgebrauchsstörungen.» | Nr. 406, umformuliert (3-1) | `quellen` › `begriffe`: «Bei Borderline häufig, aber nicht bei allen: Depression, …» | sinngleich, vorsichtiger |
+| 45 | 3-1 | `glossar.md`, SET: «Redaktionelle Orientierung. … Praxisbegriff und Beispiel sind keine klinisch geprüfte Intervention oder Pflichtfolge.» | Nr. 474, entfällt (Meta-Text) | `quellen` › `begriffe`, SET: «Er ist kein allgemein empfohlenes oder verpflichtendes Schema.» | gekürzt ohne fachlichen Verlust (Kernaussage bleibt) |
+| 46 | 3-1 | `impressum.md`: «Die Website ist ein eigenständig gestaltetes Informationsangebot und kein offizieller Kommunikationskanal der PUK Zürich.» | `ueber.md` Nr. 73, 98; `unterstuetzung.md` Nr. 40, umformuliert (3-1) | `impressum-datenschutz` › `impressum`: «Die Website ist ein Angebot der Fachstelle Angehörigenarbeit, kein offizielles Angebot der Psychiatrischen Universitätsklinik Zürich.» | Profilentscheid 11.10.2026; `unterstuetzung.md` Nr. 40 nennt noch «Wortlaut der Vorlage des Starters»: **Abgleich falsch** (SP1-14) |
+| 47 | 3-1 | `impressum.md`: «Die Infografiken und Handouts dürfen im Rahmen der Angehörigenberatung und für den persönlichen Gebrauch verwendet werden.» | Nr. 149, wieder aufgenommen (3-1-K) | `impressum-datenschutz` › `impressum`: «Die Inhalte dürfen im Rahmen der Angehörigenberatung …» | Bedeutung erweitert (alle Inhalte statt Handouts), auf Auftrag (S-Nr. 8); rechtliche Prüfung offen |
+| 48 | 3-1 | `datenschutz.md`: «Die Website setzt nach aktuellem technischem Stand selbst keine Tracking- oder Werbe-Cookies. Beim geprüften Seitenaufruf wurde auch kein Cookie durch den Hosting-Dienst gesetzt. Diese einzelne Beobachtung ist keine Zusicherung …» | Nr. 217 umformuliert (3-1); Nr. 218, 219 entfällt | `impressum-datenschutz` › `datenschutz`: «Die Website setzt keine Cookies und verwendet keine Dienste, die Besuche auswerten oder Werbung zeigen.» | Bedeutung verändert (absolut statt eingeschränkt); bekannt (P3b-W1-13, Z31-F-9), rechtliche Prüfung offen; eigene Stichprobe: Vorschau setzt kein Cookie (Frage SP1-F-10) |
+| 49 | 3-1 | `datenschutz.md`: «Je nach räumlichem Anwendungsbereich kann ergänzend die EU-Datenschutz-Grundverordnung (DSGVO/GDPR …) anwendbar sein.» · `feedback.md`: «Es ist kein Notfalldienst; eine zeitnahe Antwort wird nicht zugesichert.» · `datenschutz.md`: «Eine vertrauliche Beratung oder zeitnahe Bearbeitung eines Notfalls über dieses Postfach wird hier nicht zugesichert.» | `ueber.md` Nr. 178 entfällt (rechtlicher Prüfbedarf); Nr. 332 umformuliert; Nr. 232 entfällt (Prüfbedarf) | `impressum-datenschutz` › `datenschutz` nennt nur das DSG; `ueber` › `rueckmeldung`: «Eine zeitnahe Antwort wird nicht zugesichert.»; Fusszeile: Zuständigkeitsverweis | mit Grund entfallen, je als Prüfbedarf ausgewiesen (`PRUEFBERICHT.md` «Zur Prüfung» Nr. 5, 10); nicht still |
+
+##### 2.2 Satz-für-Satz-Abschnitte
+
+| Punkt | Ergebnis | Beleg |
+| --- | --- | --- |
+| `/genesung` › «Was die Forschung zeigt» (13 Sätze) | alle Sätze haben eine Zeile und eine Fundstelle; keiner still entfallen | Nr. 75–91; «Veränderungen können früher eintreten.» kommt aus dem Handout (Nr. 254) |
+| `/genesung` › «Mögliche Einflussbereiche …» (14 Sätze) | 11 wörtlich oder sinngleich, 2 auf Auftrag geändert (Nr. 144, 145), 1 gekürzt (Nr. 154), 1 Meta entfällt (Nr. 155 «Eine verantwortete fachliche Freigabe bleibt davon getrennt.») | `genesung` › `einfluesse` |
+| `/verstehen/diagnostik` › «Was, wenn die Diagnose nicht geteilt wird …» (14) | alle fünf «Was nicht hilft» und vier «Was möglich ist» wörtlich; Nr. 107 gekürzt mit Grund; Nr. 108–109 umformuliert (Profil) | `diagnose` › `zweifel` |
+| `/verstehen/begleiterkrankungen` › «Was Sie als Angehörige wissen sollten» (12) | keine still entfallene Aussage; Nr. 314–317 über Verweissatz auf `rolle` › `schuld`, dort inhaltlich vorhanden | `rolle` › `schuld`: «Die Verantwortung für eigene verletzende oder gewalttätige Handlungen bleibt bestehen.» |
+| `/faq` › «Helfen Medikamente …» (5) | alle Sätze vorhanden (2 umformuliert, 3 wörtlich) | `fragen` › `behandlung` |
+| `/datenschutz` › «Cookies» (3), «Kontaktaufnahme per E-Mail» (5) | 2 Cookie-Sätze und 2 E-Mail-Sätze entfallen, je mit Grund in der Bemerkung und als rechtlicher Prüfbedarf | `ueber.md` Nr. 217–219, 229–232 |
+| Abgleichzeilen der Stichprobe gegen gebaute Seiten | 114 Zeilen: 102 Fassung im genannten Abschnitt gefunden, 12 ohne Ort, 0 nicht gefunden | `python3 -I SP/best2/stichprobe.py …` |
+| Zählungen `genesung.md`, `unterstuetzung.md` | stimmen | eigene `awk`-Zählung, siehe Vorgehen |
+
+**Gesamt:** In 49 geprüften Aussagen (2c: 27, 3-1: 22) und sechs Satz-für-Satz-Abschnitten ist **keine fachliche Aussage still entfallen**. Bedeutungsänderungen (Nr. 10, 23, 29, 47, 48) gehen auf genannte Aufträge oder Entscheide zurück oder sind als rechtlicher Prüfbedarf offen. Drei Ungenauigkeiten im Abgleich (SP1-14 bis SP1-16).
+
+**Nicht geprüft oder nicht prüfbar**
+
+| Punkt | Grund |
+| --- | --- |
+| Etappen 1, 2a, 2b | nicht Teil dieser Teilprüfung |
+| Netlify-Produktion (Cookies, Header) | nicht veröffentlicht; nur Vorschau #659 mit drei Seiten geprüft |
+| Fachliche Richtigkeit der Zahlen gegenüber den Originalstudien (Zanarini 2010/2012, Gunderson 2011) | geprüft wurde Übereinstimmung mit dem Bestand, nicht mit den Publikationen (kein Volltextzugriff in dieser Teilprüfung) |
+| Ausgabe von «Schluss mit dem Eiertanz» (`unterstuetzung.md` Nr. 283) | NK-F-3, bei der Fachstelle (Auftrag Abschnitt 1) |
+| Rechtliche Richtigkeit von Impressum und Datenschutz | rechtliche Prüfung bei der Fachstelle (Auftrag Abschnitt 1) |
+| Figur `v-ge-trieb` bei 1280 und 360 px | Visualisierungs-Check nicht Teil dieser Teilprüfung; hier nur Text der Figur (Kernaussage, «Grenzen des Bildes», Quellenzeile) gegen den Bestand |
+
+### SP1 · 5.2 W2 Gesamtkohärenz und 5.3 S Sprach-Review
+
+Kriterien «Gesamtkohärenz und Aufbau» und «Sprache und Ton». Beide Stufen in einem Teil, weil Linktexte, Begriffe und Meta-Texte beide betreffen.
+
+#### 5.2 und 5.3 · W2 und S, alle 17 Seiten und `site.config.json`
+
+**Vorgehen**
+
+- **Gelesen:** `CLAUDE.md`, `guidelines/00-ablauf-pruefung-und-freigabe.md`, `00-gesamtkohaerenz-und-aufbau.md`, `00-sprache-und-ton.md`, `PRUEFAUFTRAG-SCHLUSSPRUEFUNG.md` (ganz); `site.config.json` (ohne `visualPlan`); `UMBAUPLAN.md` Abschnitt 2; `KORREKTUR-ETAPPE-1.md` (W2-2), `-1C`, `-1E`, `-1F`, `-2B2` (Abschnitt 4), `-3-1` (Entscheidtabelle), `BAUAUFTRAG-ETAPPE-2A/-2B/-2C2` (Einstiege), `FREIGABE-ETAPPE-2C-3-1.md` (NK-F-7). Aus `PRUEFBERICHT.md` gezielt: Status, «Fachliche Freigabe», Z31, P3b-W2/-S, Teil B/C (nur als Hinweis, was zu prüfen ist, nicht als Beleg).
+- **Eigene Skripte** (alle unter `SP/w2s/`, Python mit BeautifulSoup, lesen nur die gebauten Seiten):
+  - `extract.py` → `pages.json`: Titel, h1, `description`, Abschnitte, Links, `id` je Seite
+  - `bfs.py`: Breitensuche ab `index` über (a) Hauptnavigation + Logo, (b) alle Links, (c) alle Links ohne Fusszeile; dazu alle Paare und eingehende Links
+  - `links.py`, `saetze.py`: alle internen Links in `<main>` ausser Kapitelübersicht (155): Zielseite, Anker, Linktext gegen Titel/h1/`navLabel` bzw. h2/h3 des Ziels; Satz um jeden abweichenden Link
+  - Kapitelübersicht: 92 Links gegen Anker und Kicker (Inline-Skript)
+  - `texte.py`, `begriffe.py`: sichtbarer Text je Abschnitt; Zählung von 50 Begriffsvarianten je Seite
+  - `verwendet.py`, `verwendet_vor.py`, `legenden.py`: «Verwendet in» gegen (a) Zitate im Text, (b) Ort der Quellenzeilen vor Korrektur 2b-2 (`22bcf2c` = `31215a8^`, `content/*.html` per `git show`), (c) Quellen in den Legenden der Abbildungen; Titel in «Verwendet in» gegen h2/h3
+  - `erstes.py`: erstes Auftreten von 60 Fachwörtern/Abkürzungen je Seite mit Kontext
+  - `doppel.py`: wortgleiche Sätze (≥ 8 Wörter) auf mehreren Seiten
+  - `typo.py`, `quotes.py`: «ß», „“ ” " ‚‘ ' ’ ‹›, Guillemet-Gleichgewicht je Textblock (2479 Blöcke) und in `alt`/`aria-label`/`title`/`content`, «du»-Formen ausserhalb « »
+  - `lesetest.py` → `lesetest.json`: je Abschnitt Satzzahl, Ø-Satzlänge, Sätze > 25 Wörter, verschachtelte Sätze, Wörter ≥ 20 Zeichen, Abkürzungen
+  - `woerter.py`: Wortzählung in vier Varianten (A alles in `<main>`, B ohne Quellenblock, C zusätzlich ohne Vertiefungen `details`, D zusätzlich ohne Kapitelübersicht); Akkordeon-Einträge separat gezählt
+- **Projektwerkzeuge:** `node abgleich/kennzahlen.mjs`, `node abgleich/verwendet-auf.mjs` und `--ohne-legenden` (im Arbeitsbaum, nur lesend).
+
+**Ergebnis je Punkt**
+
+##### 5.2 W2 Gesamtkohärenz
+
+| Punkt | Ergebnis | Beleg |
+| --- | --- | --- |
+| Ziel | erfüllt | `index` Kopf: «Hier finden Sie Wissen für den Alltag und für Ihre eigene Entlastung.»; jede Seite mit `primaryTask` in `site.config.json`, z. B. `krise`: «Sich in Krisen schützen, passende Hilfe holen und die eigenen Möglichkeiten kennen» |
+| Aufbaulogik benannt | erfüllt | nach Anliegen: `index` › `einstiege` «Beginnen Sie dort, wo Ihr Anliegen liegt. Die Seiten bauen nicht aufeinander auf, die Reihenfolge ist ein Angebot.»; 8 Einstiege als Anliegen in Ich-Form (Entscheid W2-6, `KORREKTUR-ETAPPE-1.md`) |
+| Reihenfolge `pages` und Navigation | erfüllt | `pages`: index, verstehen, beziehungen, rolle, grenzen, diagnose, behandlung, kommunizieren, krise, selbstfuersorge, genesung, unterstuetzung, fragen, quellen, ueber, impressum-datenschutz, 404. Navigation = Seiten mit `navLabel` in dieser Reihenfolge: «Verstehen · Beziehungen · Ihre Rolle · Grenzen · Auf sich achten» (`verstehen.html`, `nav.puk-web-nav`) |
+| Hauptpunkte | erfüllt | 5 Hauptpunkte (≤ 6, kein Menü nötig); Startseite über das Logo |
+| Erreichbarkeit nur Hauptnavigation | 6 von 16 Seiten | `bfs.py` (a): `verstehen`, `beziehungen`, `rolle`, `grenzen`, `selbstfuersorge` je 1 Wechsel; die übrigen 11 nicht über die Navigation erreichbar (so geplant: `navLabel` `null`, `BAUAUFTRAG-ETAPPE-2B.md` Z. 17, `-2C2` Z. 23) |
+| Erreichbarkeit alle Links | erfüllt | `bfs.py` (b): von `index` 1 Wechsel zu verstehen, beziehungen, rolle, grenzen, kommunizieren, selbstfuersorge, genesung, unterstuetzung, fragen, ueber, impressum-datenschutz; 2 Wechsel zu diagnose, behandlung, krise, quellen. Ohne Fusszeile (c): gleich, `impressum-datenschutz` 2. Alle Paare: von jeder der 16 verlinkten Seiten jede andere in höchstens 2 Wechseln. `404` ist ausgenommen: keinen eingehenden Link (richtig, Fehlerseite), von `404` aus alle Seiten über die Navigation erreichbar |
+| Einstiege ohne `krise`, `diagnose`, `behandlung` | entschieden | `BAUAUFTRAG-ETAPPE-2B.md` Z. 183 «Für `krise` gibt es keinen Einstieg»; `-2C2` Z. 23 «bekommen keinen Einstieg auf `index`» |
+| Eingehende Links | Hinweis | ohne Fusszeile: `fragen` ← 2 Seiten (`index`, `ueber`), `ueber` ← 2, `impressum-datenschutz` ← 1, `quellen` ← 12 (Quellenblöcke); entspricht Entscheid zu Z31-W2-1 (V1, V2, Verweissatz im Quellenblock) |
+| Begriffe einheitlich | erfüllt mit Befund | `begriffe.py`: «Borderliner» 0; «erkrankte Person» 0, «betroffene Person» 64; «Borderline-Störung» und «BPS» je 1 nur auf `unterstuetzung` (Buchtitel bzw. Buchbeschreibung, SP1-29); «Validierung/validieren» nur `kommunizieren` › `anerkennen` (erklärt: «Validierung heisst: …») und `quellen`; «anerkennen» als Alltagswort; «DBT» erklärt beim ersten Auftreten auf `grenzen`, `diagnose`, `kommunizieren`, `selbstfuersorge`, `ueber`; «Notfall» nur in «Notfallstation/Notfalldienst» (Zuständigkeitsverweis); «Spannung» 1× für Spannungen zwischen Angehörigen (`rolle` › `mehrere`), sonst «Anspannung». Abweichend: «Recovery» dreimal verschieden beschrieben (SP1-20) |
+| Begriffe gegen `quellen` › `begriffe` (15 Einträge) | erfüllt mit Befund | Remission gleich auf `genesung` › `begriffe`, `fragen` › `verlauf` und Glossar («während eines festgelegten Zeitraums»); Zahlen 93 %/50 %/290/zehn Jahre gleich auf `genesung`, `quellen` › `begriffe`, `quellen` › `forschung`; Validierung, DBT, MBT, TFP, Komorbidität, Dissoziation gleich bedeutend; jeder Glossar-Link «Mehr dazu …» zeigt auf vorhandenen Abschnitt (Teil der 155 Links). Recovery: SP1-20 |
+| Seitennamen in Verweissätzen | erfüllt mit Befund | Seiten mit Navigation heissen nach `navLabel` («Verstehen» 9×, «Grenzen» 14×, «Ihre Rolle» 10×, «Beziehungen» 2×), übrige nach Titel; Ausnahme `diagnose` › `abklaerung`: «Seite «Borderline verstehen»» (SP1-21) |
+| Quereinstieg | erfüllt | Kopf jeder Seite ordnet das Thema ein, z. B. `diagnose`: «Diese Seite zeigt, wer eine Borderline-Abklärung üblicherweise durchführt …»; `krise`: «Viele Angehörige erleben Phasen starker Anspannung …»; `kommunizieren`: «Konkrete Sätze können Gespräche erleichtern.» Fachwörter beim ersten Auftreten erklärt (`erstes.py`): PTBS (`verstehen` › `mythen` «PTBS heisst posttraumatische Belastungsstörung»), Remission (`verstehen` › `mythen` in Klammer), Dissoziation (`beziehungen` › `verstaerker`), Komorbidität (`diagnose` › `begleiterkrankungen`), DEAR (Schritte D/E/A/R in Abb. 1 `grenzen` › `dear`), Validierung (`kommunizieren` › `anerkennen`). Ausnahmen: `behandlung` › `rollen` «zum Beispiel in der DBT» vor der Erklärung in `therapieformen`; `fragen` › `behandlung` DBT, MBT, TFP (nach Entscheid 3-1-K ohne Erklärung, nur KESB/PTBS ausgeschrieben); unerklärte Abkürzungen auf `unterstuetzung`, `diagnose` (SP1-29) |
+| Verweissätze: Ziel vorhanden | erfüllt | `links.py`: 155 interne Links in `<main>` ausser Kapitelübersicht, 0 fehlende Zielseiten, 0 fehlende Anker. Kapitelübersicht: 92 Links, alle Anker vorhanden, Reihenfolge = Abschnitte |
+| Verweissätze: Linktext = Titel | 23 Abweichungen, einzeln bewertet | 8 Einstiege auf `index` (Linktext = Anliegen, Titel im Satz danach, z. B. «Borderline verstehen: Anspannung, …»): gewollt, kein Befund. 404 «Zur Übersicht» → `index`: Schaltfläche, kein Befund (Benennung SP1-22). 12 Treffer: Satzmuster mit zwei Seitennamen im Absatz, im Satz selbst stimmt der Name (`saetze.py`, z. B. `rolle` › `kinder`: «… auf der Seite «Unterstützung finden» im Abschnitt «Bücher für Angehörige».»): kein Befund. **2 echte Abweichungen:** `beziehungen` › `verantwortung` und `grenzen` › `kontakt`: Linktext «Beratung der Fachstelle Angehörigenarbeit» → `index#beratung`, h2 «Beratung für Sie» (SP1-21). Kapitelübersicht: `rolle` «Anbieten», Kicker «01 · Ihre Rolle» (SP1-23) |
+| Doppelungen | erfüllt mit Hinweis | `doppel.py`: 16 wortgleiche Sätze auf 2–3 Seiten. Grösster Block: Kinder bei Gewalt/Krise, 3 Sätze auf `grenzen` › `gewalt` und `krise` › `bleibt` («Vereinbaren Sie, welche vertraute erwachsene Person das Kind betreut, …»), dazu «Kinder müssen weder Streit schlichten …» auch auf `rolle` › `kinder`: Sicherheitsinhalt für den Quereinstieg, freigegeben, kein Befund. `fragen` wiederholt Themenseiten (Z31-S-3, entschieden «keine Kürzung», `KORREKTUR-ETAPPE-3-1.md`). Beratungsabsatz der Fachstelle: ausführlich nur `index` › `beratung` und `unterstuetzung` › `beratung`, sonst Verweissatz |
+| Lücken (Prüfliste der Leitlinie) | erfüllt mit Frage | vorhanden: Störungsbild (`verstehen`), Diagnose und Verlauf (`diagnose`, `genesung`), Behandlung (`behandlung`), Kommunikation (`kommunizieren`), Umgang mit Ablehnung von Hilfe (`diagnose` › `zweifel`, `fragen` «Was, wenn die betroffene Person keine Therapie möchte?»), Belastung und Grenzen (`grenzen`, `selbstfuersorge`), Schweigepflicht (`behandlung` › `kontakt`), Kinder (`rolle` › `kinder`), Geschwister (1 Satz `rolle` › `kinder`), Unterstützungsangebote (`unterstuetzung`). FU, KESB und Meldepflichten nur auf `fragen` (`behandlung`, `schutz`), ohne Themenseite; «Wann ist eine Einweisung nötig?» hat darum keinen Verweis (Frage SP1-F-14) |
+| Quellenblöcke «Verwendet in» | erfüllt mit Befund | (a) Seiten 1–2b, Ort der Quellenzeilen vor 2b-2 (`verwendet_vor.py`): 59 Einträge, 0 echte Abweichungen (2 Skripttreffer geprüft: «NICE NG225» steht vor 2b-2 nur in `alltag`, «Linehan» ohne Jahr in `bruecke` = Linehan (2015), Z31-F-22). (b) Alle Titel in «Verwendet in» sind Überschriften der Seite: 166 Nennungen, 159 h2, 7 h3 (`diagnose` 2× «Wie die Diagnose beschrieben wird» in `abklaerung`, `behandlung` 5× «Programme für Angehörige» in `therapieformen`), 0 fehlend. (c) Quellen in Bildlegenden zählen nach `KORREKTUR-ETAPPE-2B2.md` Z. 63 nicht als Quellenzeile; auf `verstehen` fehlen 6 davon im Block (`legenden.py`: Linehan 2015, Shields 2016, Degasperi 2021, Baranger 2020, Santangelo 2014 aus Abb. 2; Hoffman 2005 aus Abb. 3), auf allen anderen Seiten stehen die Legendenquellen im Block (SP1-24). `unterstuetzung` ohne Quellenblock (Buchliste, so gewollt, Kommentar in `verwendet-auf.mjs`) |
+| `verwendet-auf.mjs` (Seite `quellen`) | erfüllt | Standard: «85 Einträge, 0 mit anderer Angabe, 0 Kurzangaben nicht zugeordnet.» `--ohne-legenden`: «6 mit anderer Angabe» (Shields, Santangelo, Degasperi, Baranger, Linehan 2015, Hoffman 2005), genau die Legendenquellen von `verstehen`; bestätigt (c) |
+
+##### 5.3 S Sprach-Review
+
+| Punkt | Ergebnis | Beleg |
+| --- | --- | --- |
+| kein «ß» | erfüllt | `typo.py`: 0 im sichtbaren Text, `title`, `meta description`, `og:*`, `alt`, `aria-label` aller 17 Seiten |
+| Guillemets | erfüllt | 0× „ “ ” " ‚ ‘ ‹ ›; `quotes.py`: 2479 Textblöcke und alle Attribute mit « », 0 unausgeglichen; verschachtelt richtig, z. B. «… auf der Seite «Genesung» im Abschnitt «Veränderung verläuft unterschiedlich».» |
+| Apostrophe | erfüllt | 0× gerades «'»; 1× «’» im englischen Buchtitel «I Hate You – Don’t Leave Me» (`quellen`), richtig |
+| Anrede «Sie» | erfüllt | `quotes.py`: «du»-Formen ausserhalb von « » 1×, Buchtitel «Ich hasse dich – verlass mich nicht» (`unterstuetzung`); Kleinschreibung «ihnen» 1× als 3. Person («wie ihnen die … Therapie geholfen hat»); Beispielsätze unter Angehörigen in «du» |
+| Ton, keine etikettierenden Bezeichnungen | erfüllt mit Befund | «Borderliner» 0; «manipulieren» nur als widerlegte Annahme (`verstehen` › `mythen` «Verbreitete Annahme: «Menschen mit Borderline manipulieren bewusst.»»); «Kinder psychisch Kranker» nur als Buchtitel (`quellen`). Bejahte «müssen/sollten» ohne Druck auf die Lesenden (21 Sätze geprüft, z. B. «Betreuung, Unterstützung und Sicherheit müssen Erwachsene organisieren.»); «müssen … nicht» entlastend (z. B. `krise`: «Niemand muss eine Krise vorhersagen oder rechtzeitig melden.»). Befund: «Partner in einer Borderline-Beziehung» (SP1-30) |
+| Lesetest je Abschnitt | verständlich, Hürden einzeln | Tabelle unten; 118 Abschnitte (mit Köpfen), Ø-Satzlänge je Seite 8,2 bis 11,4 Wörter |
+| Längen nachgerechnet | erfüllt (Zählung); Befund (Entscheid) | Tabelle unten; Variante A deckt sich mit `kennzahlen.mjs` auf allen 16 Seiten |
+| Webspezifische Texte | erfüllt mit Befunden | 17 `title` nach Muster «Titel \| Borderline – Orientierung für Angehörige»; 17 `description` 72–233 Zeichen (SP1-17, SP1-18, SP1-19); `alt` 1 («Psychiatrische Universitätsklinik Zürich»); 9 `aria-label` (Logo-Label SP1-32); Schaltfläche 404 «Zur Übersicht» nennt die Handlung; 404: «Vielleicht ist die Adresse veraltet oder falsch geschrieben. Von der Übersicht aus finden Sie alle Seiten.» (SP1-22); 3 `summary` («Grenzen des Bildes», «Herkunft des Modells», «Was den Blick färben kann – und Grenzen des Bildes») und 41 Akkordeon-Titel kündigen den Inhalt an; Sprunglink «Zum Hauptinhalt»; Fusszeile SP1-3, SP1-32 |
+
+**Lesetest je Seite** (`lesetest.py`; Sätze aus innersten Blöcken; «lang» > 25 Wörter; Treffer, die zwei Sätze sind, ausgeschieden)
+
+| Seite | Ø Wörter/Satz | auffällige Abschnitte, Zitat | Urteil |
+| --- | --- | --- | --- |
+| `index` | 9,7 | keine (max. 18 Wörter) | verständlich |
+| `verstehen` | 9,7 | `borderline` 28 W.: «Die Diagnose Borderline-Persönlichkeitsstörung kann unter anderem beschreiben: sehr starke oder schnell wechselnde Gefühle …» (Aufzählung nach Doppelpunkt, lesbar) | verständlich |
+| `beziehungen` | 8,6 | `schleife` 27 W.: «Statt sich weiter zu verteidigen, können Sie das Gefühl anerkennen, nachfragen, …» (Aufzählung) | verständlich |
+| `rolle` | 8,8 | `mehrere` 25 W. mit Einschub: «Klären Sie gemeinsam, soweit die Beteiligten das möchten, wer was übernehmen möchte, …» | verständlich |
+| `grenzen` | 8,5 | Kopf: «Wie die andere Person reagiert, können sie aber nicht garantieren.» (SP1-31) | verständlich |
+| `diagnose` | 10,8 | `abklaerung` (Akkordeon «Wie die Diagnose beschrieben wird»): «SCID-5-PD oder IPDE», «Zusatzcode 6D11.5», «Schweizer Kodierkontext»; `begleiterkrankungen`: «Differenzialdiagnostik» (im Satz danach erklärt) | verständlich; Vertiefung mit Hürde (SP1-29) |
+| `behandlung` | 9,8 | `wartezeit`: «zugangsweg des Versicherungsmodells», «regulär anordnungsberechtigt» (Sache, im Satz erklärt); `rollen` «zum Beispiel in der DBT» vor der Erklärung | verständlich |
+| `kommunizieren` | 9,0 | keine Sätze > 25 W. nach Bereinigung; «Validierung» erklärt | verständlich |
+| `krise` | 9,2 | `sagen` 26 W. ist ein Verweissatz | verständlich |
+| `selbstfuersorge` | 8,9 | `beratung` 36 W.: «Die Hinweise auf dieser Seite übertragen Forschung und eine Leitlinie in Schritte für den Alltag: eine Übersicht zur Belastung von Angehörigen, …» (SP1-27) | verständlich, eine Hürde |
+| `genesung` | 9,3 | Kopf: 9 Sätze, Ø 6,9 W., dreimal dieselbe Aussage (SP1-28) | verständlich |
+| `unterstuetzung` | 8,2 | `buecher`: «BPS», «SET-UP-Methode»; `beratung`: «Psychoedukation und Materialien» (SP1-29) | verständlich, einzelne Hürden |
+| `fragen` | 11,4 | `behandlung` 28 W.: «Eine Person darf wegen einer psychischen Störung, geistigen Behinderung oder schweren Verwahrlosung … untergebracht werden, …» (Gesetzestext, Bestand); DBT, MBT, TFP unerklärt (entschieden) | verständlich |
+| `quellen` | 8,4 | `begriffe` 26 W. (Co-Abhängigkeit), `therapie` 27 W. (APA-Leitlinie); Fachliteratur | mit Hürde (Nachschlageseite, erwartbar) |
+| `ueber` | 10,6 | `warum` max. 25 W. (Z31-S-6 umgesetzt); `barrierefreiheit` «Landmarken», «Fokus», «NVDA» (entschieden Z31-S-9) | verständlich |
+| `impressum-datenschutz` | 9,8 | `datenschutz` 27 W.: «Je nach anwendbarem Recht und unter den jeweiligen gesetzlichen Voraussetzungen können Sie …» | mit Hürde (Rechtstext) |
+| `404` | 7,0 | keine | verständlich |
+
+**Längen** (Wörter im sichtbaren Text in `<main>`; `woerter.py` gegen `node abgleich/kennzahlen.mjs`)
+
+| Seite | A alles (= `kennzahlen.mjs`) | B ohne Quellenblock | C ohne Quellenblock und Vertiefungen | Richtwert (+5 %) | Entscheid |
+| --- | ---: | ---: | ---: | --- | --- |
+| `verstehen` | 1872 (1872) | 1748 | 1575 | 1300 (1365) | über Richtwert, auch C; siehe SP1-25 |
+| `beziehungen` | 1741 (1741) | 1620 | 1620 | 1100 (1155) | über Richtwert, auch C; siehe SP1-25 |
+| `grenzen` | 1802 (1802) | 1659 | 1635 | 1500 (1575) | über Richtwert, auch C; siehe SP1-25 |
+| `fragen` | 3250 (3250) | 2993 | 2993 | kein (`KORREKTUR-ETAPPE-3-1.md` Z. 18) | gilt |
+| `ueber` / `impressum-datenschutz` | 608 / 501 (gleich) | gleich | gleich | kein (NK-F-7, `FREIGABE-ETAPPE-2C-3-1.md` Z. 31) | gilt |
+| übrige 11 Seiten | index 370, rolle 3299, diagnose 2184, behandlung 2684, kommunizieren 3428, krise 2200, selbstfuersorge 2813, genesung 1508, unterstuetzung 1408, quellen 5506 (alle gleich wie `kennzahlen.mjs`) | – | – | kein Richtwert im Werkzeug | – |
+
+Vertiefungen (`details`) auf den drei Seiten: `verstehen` 3 (173 W.), `grenzen` 1 (24), `beziehungen` 0; keine Akkordeons ausser dem Quellenblock. Variante D (ohne Kapitelübersicht) ändert je Seite 9 bis 21 Wörter. Auf `beziehungen` zählen beide Leserichtungs-Varianten (`data-cycle-wide` 7 W., `data-cycle-narrow` 11 W.), in `kennzahlen.mjs` ebenso, obwohl der Kopfkommentar «zählt je einmal» sagt (Abweichung ≤ 11 Wörter, ohne Folgen).
+
+**Warum über Richtwert, Entscheid?** Grep nach «Richtwert», «Länge», «Umfang»: Die Richtwerte 1300/1100/1500 setzt `KORREKTUR-ETAPPE-1.md` W2-2. Danach: Dritte Prüfrunde (`PRUEFBERICHT.md` Z. 8996, Prüfsitzung): «Für die nächste Korrektur gilt der Richtwert deshalb nicht mehr. Über die Länge entscheidet die Fachstelle in W1.»; `KORREKTUR-ETAPPE-1C.md`: «Der Richtwert gilt für diese Korrektur nicht. … Über die Länge entscheidet die Fachstelle in W1.»; `-1E.md` (Entscheid der Fachstelle zu `beziehungen`): «Die Seite wird länger (geschätzt +25 %); das ist so gewollt.»; `-1F.md` (`verstehen`, `grenzen`): «Der Richtwert für die Länge gilt nicht.»; `BAUAUFTRAG-ETAPPE-2A.md` Z. 27: «Die Richtwerte für den Umfang in Abschnitt 2 gelten nicht mehr (seit Korrektur 1c).» Die Freigabe Etappe 1 (`PRUEFBERICHT.md` Z. 30–42) gibt die Seiten «als Ganzes» frei, nennt die Länge aber nicht; die Freigabe 2c/3-1 fügt +53/+35 Wörter hinzu (Z. 1291–1292). Ein ausdrücklicher Entscheid der Fachstelle zur Länge dieser drei Seiten steht im Bericht nicht; `UMBAUPLAN.md` Abschnitt 2 nennt weiter (1100)/(1000)/(1200), `kennzahlen.mjs` 1300/1100/1500 → SP1-25, SP1-26.
+
+**Nicht geprüft oder nicht prüfbar**
+
+- **Lesetest mit realen Lesenden:** nicht möglich; das Urteil «verständlich/mit Hürde» beruht auf Satzlängen, Fachwörtern und Lektüre der auffälligen Stellen.
+- **Fachliche Richtigkeit** der Begriffe und Zahlen: nur Gleichheit zwischen Seiten geprüft, nicht gegen Quellen (W1).
+- **Netlify-Vorschau:** Texte nicht dort geprüft; gleicher Build-Stand, Abweichungen prüft W3.
+- **Vorlesen der `aria-label`-Texte** mit einem Screenreader (Abschnitt 5.5, nicht durch die Prüfsitzung).
+- **`visualPlan`-Zeilen** und Figuren-Texte als Bildsprache: Teil des Visualisierungs-Checks (5.4).
+
+### SP1 · 5.4 Visualisierungs-Check
+
+Kriterien «Visuelle Wissensvermittlung», «Visualisierung umsetzen». Matrix Prüfpunkt × Figur für alle zehn Abbildungen; die Leitlinie zählt heute 19 Prüfpunkte (18 und 19 seit 11.10.2026), deshalb 1–19.
+
+#### 5.4 · Zehn Abbildungen und 99 Textzeilen
+
+**Vorgehen**
+
+- **Gelesen:** `CLAUDE.md`, `guidelines/00-ablauf-pruefung-und-freigabe.md`, `PRUEFAUFTRAG-SCHLUSSPRUEFUNG.md` (ganz), `guidelines/00-visuelle-wissensvermittlung.md`, `guidelines/07-visualisierung-umsetzen.md` (Prüfpunkte 1–19; der Auftrag nennt 1–17, Punkte 18 und 19 sind seit 11.10.2026 Teil des Checks und hier mitgeprüft), Vorlage `psychoeducation-site-starter/PRUEFBERICHT.md`, `site.config.json` › `pages[].visualPlan`, die zehn Figuren in den gebauten Seiten, `borderline.css`, `starter.css`, `components/bundle.css` (Theme), `longform/erklaermuster.css`, `visual-patterns.css`. Aus `PRUEFBERICHT.md` nur gezielt: NK31-1, «Freigabe 2c und 3-1: Messungen zu 3 d», «Aufgefallen» Nr. 1 und 5.
+- **Server:** `python3 -m http.server 8461` im Arbeitsbaum `wt-f1d6572`; Chromium (Playwright).
+- **Skripte** (alle unter `SP/vis/`):
+  - `abdeckung.mjs` – `section[id]` und `h2[id]` je gebaute Seite gegen `visualPlan[].sectionId`; Pflichtfelder je Darstellung; `data-visual-id` im HTML.
+  - `textzeilen.mjs` – alle Textzeilen mit Abschnittstitel, Wortzahl, Listen, Akkordeons, `reason`, `approvalStatus` (Ausgabe `textzeilen.txt`); daraus `textzeilen-tabelle.md`.
+  - `figs.mjs` – die zehn `figure` aus den gebauten Seiten (`fig/*.html`).
+  - `fotos.mjs` – Ausschnittfotos (Playwright `locator.screenshot`) Standard und «kontrast» bei 1280 und 360 px; Messung je Figur bei 320, 360, 768, 1024, 1280, 1440 px: `scrollWidth`, Textträger ausserhalb des Viewports, Überlappung der positionierten Beschriftungen, Grösse Ziffernkreis gegen Ziffer.
+  - `fotos200.cjs` – 200 % Schrift, Fotos bei 1280, 1440, 360 px.
+  - `trennung.cjs` – Wörter, die in einer Figur über zwei Zeilen laufen (`Range.getClientRects`), Standard und 200 %, 320–1280 px.
+  - `farben.cjs`, `hy.cjs` – berechnete SVG- und Rahmenfarben je Theme; `hyphens` je Element.
+- **Theme «Hoher Kontrast»:** `:root[data-theme="kontrast"]` (`components/bundle.css` Z. 494–509), keine Umschaltung auf der Website. Gesetzt per `document.documentElement.setAttribute('data-theme','kontrast')` **nach** dem Laden. Hinweis zur Methode: Mit `addInitScript` vor dem Laden blieb das Attribut `null` (erster Lauf verworfen, Gegenprobe `k.cjs`: vorher `--puk-blue-100` #3C64FF, nachher #0028C2, Linie `rgb(0, 40, 194)`).
+- **200 % Schrift:** Chromium-Einstellung Schriftgrösse über CDP `Page.setFontSizes({standard:32, fixed:26})` (Wurzel 32 px statt 16 px, gemessen). Nicht per CSS. Zwei Fallen dokumentiert: (a) `Preferences` im Profil wirkt in diesem Chromium nicht (Wurzel blieb 16 px); (b) Playwrights Fotos und `captureBeyondViewport` setzen die Schrift zurück (Kernaussage 48 → 24 px). Deshalb Fotos per CDP `Page.captureScreenshot` im Viewport (Höhe 14 000 px); Schrift vor und nach dem Foto 32 px.
+- **Fotos:** 70 (10 Figuren × 1280/360 × Standard/«kontrast» = 40; 200 % × 1280/1440/360 = 30), alle angesehen (lange Fotos in Teilen oder als Gegenüberstellung). Nicht committet.
+
+**Ergebnis je Punkt**
+
+##### 2.1 Plan und Abdeckung
+
+| Punkt | Ergebnis | Beleg |
+| --- | --- | --- |
+| Zeilen im Plan | 109 Zeilen, davon **99 Text** und **10 Darstellungen** – Zahl des Auftrags stimmt | `abdeckung.mjs`: `{ tot: 109, txt: 99, fig: 10 }`; Formate: text 99, illustration 5, layer-model, figure, cycle, comparison, process je 1 |
+| Abschnitt ↔ Planzeile | erfüllt: jede `section[id]` aller 17 Seiten hat eine Zeile, jede Zeile eine `section`, keine doppelt | `abdeckung.mjs`: alle Seiten `ohneZeile=[] ohneSection=[] doppelt=[]`; `404`: 0 Abschnitte, 1 Zeile ohne `sectionId` («Seite nicht gefunden»), Status «entfällt». Die einzigen `h2[id]` ohne Abschnitt sind `puk-safety-title`, `puk-site-info-title` (Fusszeile) |
+| Figuren im HTML | erfüllt: alle zehn `data-visual-id` auf der geplanten Seite, im geplanten Abschnitt | `inHtml=true` je Figur |
+| `understood`, `resonance`, `statement`, `source`, `alternative`, `reason` | erfüllt für alle zehn | `abdeckung.mjs`: `fehlend=[]` je Figur |
+| `entryPoint` (B, C, G) | erfüllt: `v-bz-schleife` (cycle) Station 5; `v-gr-dear` (process) «entfällt: Der ganze Ablauf beschreibt das eigene Handeln der Angehörigen.»; zusätzlich `v-vs-anspannung` (figure) Stelle 2 | `site.config.json`; Eisberg (K) hat keinen `entryPoint`, die Leitlinie verlangt ihn nur für B, C, G (siehe 2.7) |
+| Freigabe | 10 Darstellungen «freigegeben»; Textzeilen: 98 «ausstehend», 1 «entfällt» | `textzeilen.mjs` (stderr `{ ausstehend: 98, 'entfällt': 1 }`); das Gate verlangt «freigegeben» nur für Formate ausser Text |
+
+##### 2.2 Matrix Prüfpunkt × Figur
+
+E = erfüllt · T = teilweise · N = nicht erfüllt · – = entfällt. Fussnoten unter der Tabelle.
+
+| Nr. | Prüfpunkt | `vs-eisberg` | `vs-anspannung` | `vs-bewertungen` | `bz-schleife` | `bz-sichten` | `gr-dear` | `ro-weg` | `sf-abend` | `ko-tassen` | `ge-trieb` |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | Plan liegt vor, Seite entspricht ihm | E ¹ | E ¹ | E ¹ | E ¹ | E ¹ | E ¹ | E ¹ | E ¹ | E ¹ | E ¹ |
+| 2 | Zeile je Abschnitt; Begründungen passen | E | E | E | E | E | E | E | E | E | E |
+| 3 | Prüffrage beantwortet und eingelöst | E ² | E ² | E ² | E ² | E ² | E ² | E ² | T ³ | T ⁴ | E ² |
+| 4 | Kernaussage und Erklärtext; Hauptaussage nicht nur in Vertiefung | E | E | E | E | E | E ⁵ | E | E | T ⁶ | E |
+| 5 | Ansatzpunkt richtig (B, C, G) | – ⁷ | E ⁸ | – | E ⁸ | – | E ⁹ | – | – | – | – |
+| 6 | Mechanismus nicht doppelt | E | E ¹⁰ | E | E ¹⁰ | E ¹⁰ | E | E | E | E | E |
+| 7 | Kartenraster-Check | E | E | E | E | E ¹¹ | E | E | E | E | E |
+| 8 | Form, Linien tragen Bedeutung | E Lage über/unter Wasserlinie | E Kurvenverlauf, Doppelring | E helles/dunkles Foto aus Album | E Schleife, Pfeile, Doppelkontur | E gleiche Zeile je Schritt | E Reihenfolge, Linie | E nebeneinander gehen | E Gedanke über Gegenstand | T ⁴ | E Blatt unten, Trieb oben |
+| 9 | Verteilt, keine Textwand | E ¹² | E ¹² | E ¹² | E | E | E | E | E | E | E |
+| 10 | Nicht verfälscht; Grenzen; Kennzeichnung | E ¹³ | E ¹³ | E ¹³ | E ¹³ | E ¹³ | E ¹³ | E ¹³ | E ¹³ | E ¹³ | E ¹³ |
+| 11 | Ohne Animation, Aufklappen, Skript verständlich | E ¹⁴ | E | E | E | E | E | E | E | E | E |
+| 12 | Bei 320 px lesbar; Textalternative vollständig | E ¹⁵ | E | E | E | E | E | E | E | E | E |
+| 13 | Theme «Hoher Kontrast» | E ¹⁶ | E | E | E | E | E | E | E | E | E ¹⁶ |
+| 14 | Fachlich freigegeben | E | E | E | E | E | E | E | E | E | E |
+| 15 | Bildsprache, Wirkung eingelöst | E | E | E | E ¹⁷ | E ¹⁷ | E ¹⁷ | E | E | T ⁴ | T ¹⁸ |
+| 16 | Ein Bild, eine Idee; Erleben statt Bildteile | E ¹⁹ | E | E | – | – | T ²⁰ | E | E | E | E |
+| 17 | Keine ungewollten Bedeutungen | E | E ²¹ | E | E | E | E | E | E | E | T ¹⁸ |
+| 18 | 200 % Schrift: keine Überlappung, keine Trennung im Wort; Kurztext ohne ausgeblendete Teile | **N** ²² | T ²³ | T ²⁴ | T ²⁴ | **N** ²⁵ | T ²⁴ | E | E | E | E |
+| 19 | Versprochene Anordnung bei allen Breiten | E | E | E | E ²⁶ | E | E | E | E | E | E |
+
+1. Darstellung entspricht `statement` (Fotos 1280 px Standard): Eisberg mit «Wut, Vorwürfe, Lautwerden, Rückzug» über und «Angst … – oder ganz andere Erfahrungen» unter der Linie, Frage daneben; Kurve ohne Achse mit vier Stellen, Doppelring bei 2; Album mit zwei herausgenommenen Fotos (Sonne, Regenwolke); fünf Stationen mit «Schwester»/«Betroffene Person»; vier Schrittzeilen mit zwei Sichten; vier Schritte DEAR mit Beispiel; zwei Menschen von hinten auf gewundenem Weg; Tisch mit Tee, Telefon, Buch, Mond im Fenster; zwei gleiche Tassen; Topfpflanze mit Blatt am Topf und hellerem Trieb (oberste zwei Blätter `__paper`).
+2. `understood` je Figur konkret und im Bild eingelöst, z. B. Schleife: «Dass eine Reaktion beim Gegenüber zum neuen Anlass wird» – Rücksprung «Nach Station 5: zurück zu Station 1.» sichtbar breit (Pfeil) und schmal (Linie und Satz).
+3. `v-sf-abend`: Kurztext «… der Tee wird kalt …», die Tasse dampft im Bild. Kein Widerspruch im engen Sinn («wird»), aber das Bild zeigt das Gegenteil des Satzbilds (Frage SP1-F-21). Sonst eingelöst.
+4. `v-ko-tassen`: `understood` «Zwei gleiche Tassen auf einem Tisch zeigen zwei gleichwertige Menschen im selben Gespräch» ist eingelöst; die Kernaussage «Sie können ein Gefühl anerkennen, ohne die Deutung zu übernehmen» tragen allein die zwei Sätze. Ohne die Sätze zeigt das Bild «zwei Menschen beim Tee», nicht «anerkennen ohne zustimmen» (Freundin-Test 2.5, Frage SP1-F-18).
+5. `v-gr-dear`: Kernaussage «Vier Schritte helfen, ein Anliegen vorzubereiten.»; Kurztext nennt die Grenze («DEAR garantiert keine Kooperation …») und «Vereinbaren Sie für Krisen passende professionelle Anlaufstellen.» – der zweite Satz hat keinen Bezug zur Darstellung, ist aber freigegeben.
+6. `v-ko-tassen`: Kurztext ist **ein** Satz («Sie können sagen, dass der Schmerz echt ist, ohne die ganze Erklärung zu teilen oder pauschale Schuld zu übernehmen.»); Leitlinie: «zwei bis vier zusammenhängende Sätze» (SP1-37). Alle anderen: 2–3 Sätze (Zählung `SP/vis`, Satzenden im `p.puk-vis-short`).
+7. Schichtenmodell K: kein `entryPoint` verlangt. Die Möglichkeit steht trotzdem in Ebene 1 und 2 («lässt sich erfragen», «Nachfragen hilft mehr als Gedankenlesen.») und im Bild als Frage «Wie ist es gerade für dich?» – erfüllt den Sinn von Grundsatz 7.
+8. Ansatzpunkt im Modell markiert und im Text sichtbar: Kurve Stelle 2 mit Doppelring (`outline`) in Zeichnung und Liste, `p.puk-vis-ansatz` «Ansatzpunkt für Angehörige … Sie müssen die andere Person nicht beruhigen.»; Schleife `li.is-ansatz` Station 5 (Doppelkontur, «Ansatzpunkt»), `p.puk-vis-ansatz` «… Der Ansatzpunkt ist eine Möglichkeit, keine Pflicht.» Beide beschreiben eigenes Handeln, keine Verantwortung für Behandlung oder Verlauf.
+9. DEAR: Verzicht begründet; der Ablauf ist ganz eigenes Handeln. Keine Verantwortung zugeschoben.
+10. Verbunden statt gedoppelt: `kommunizieren` › `moment` verweist auf die Kurve statt einer zweiten Kurve; Schleife und Zwei Sichten nutzen dasselbe Beispiel und dieselben Stationsnummern («Zu Station 1 und 2 · Absage» …); `beziehungen` › `verstaerker` ordnet jeden Einfluss einer Station zu.
+11. `v-bz-sichten`: acht gleich gestaltete Felder (4px-Oberkante), aber Muster E mit gemeinsamer Zeile je Schritt – die Anordnung trägt den Vergleich. Kein Kartenraster im Sinn des Checks. Bei 1280 px sind die Felder hoch und grösstenteils leer (Foto), nur optisch.
+12. `verstehen`: drei Figuren in Abschnitt 3, 4, 5 von 8, dazwischen Text; nicht am Ende gesammelt.
+13. Grenzen benannt: Vertiefung «Grenzen des Bildes» bei Eisberg, Kurve, Weg, Abend, Tassen, Trieb, «… und Grenzen des Bildes» bei Momentaufnahmen; Schleife im Kurztext («Das Modell ist eine mögliche Erklärung …»); Sichten mit «Mögliche Sicht» und «erfundenem Beispiel»; DEAR im Kurztext und «Herkunft des Modells». Kennzeichnung: neunmal «Eigene didaktische Darstellung», DEAR «Quelle: Linehan (2015) … redaktionell angepasst.»
+14. Keine Figur braucht Skript: `components/interaktion.js` enthält weder «cycle» noch «visual» (`grep -c` 0); Leserichtung schaltet per CSS (`[data-cycle-wide]`, `borderline.css` Z. 36). Kernaussagen stehen ausserhalb der `details`.
+15. 320 px: 0 px Überlauf bei allen zehn (`fotos.mjs`: `doc 320/320`, `out=0 ov=0`). Textalternativen: `aria-labelledby` (Titel) und `aria-describedby` → `p.puk-sr` je Figur; alle Beschriftungen HTML-Text, SVG `aria-hidden`. Kurzbeschreibungen beschreiben den Aufbau (z. B. Momentaufnahmen: «Zeichnung eines offenen Fotoalbums … links ein helles mit Sonne …»). Schleife, Sichten, DEAR mit knapper Kurzbeschreibung, Inhalt vollständig als HTML-Liste.
+16. Keine Farbwerte in SVG (`grep` auf `fill|stroke="#"` und `rgb(` in den zehn Figuren: 0). «kontrast» greift: Linien `rgb(60,100,255)` → `rgb(0,40,194)` (4,4 → 9,4 : 1 auf #F7F7F7), Grautext 5,5 → 7,7 : 1, Feldrahmen der Sichten `rgb(210,210,210)` → `rgb(118,118,118)`. Trieb: graue Linie «Weniger hilfreich» Standard `rgb(233,233,233)` = 1,2 : 1, in «kontrast» 3,5 : 1; trägt keine Information allein (Bezeichnung darüber). Fotos: alle 20 «kontrast» dunkler, nichts verschwindet; Wasser/Erde `puk-blue-25` bleibt gleich (1,3 : 1 zu Weiss, Kontur trägt).
+17. Diagramme B, E, C: Kästen und Raster gehören zum Muster (Leitlinie, Muster B «Station mit doppelter Kontur»); hier geht es um Ablauf und Ordnung, nicht um Erleben als Bild. Sätze in den Stationen sind Erleben aus Sicht der Beteiligten («Wenn es mir schlecht geht, bin ich allein.»).
+18. `v-ge-trieb`: Angehörige haben keinen Platz im Bild (Regel 4 «Ein Bild, eine Idee»); und die Pflanze steht für den Genesungsverlauf der betroffenen Person. Das Bildsprache-Audit hat beim Garten-Bild festgehalten: «die betroffene Person darf nicht als Pflanze erscheinen» (`site.config.json`, `v-ro-weg` › `reason`). Prüfbedarf, Frage SP1-F-17.
+19. Eisberg: die Wörter im Bild sind Gefühle und Verhalten (Erleben), keine Bildteile; Gruppenüberschriften «Sichtbar» / «Darunter möglich» breit nur für Screenreader (`.bl-eis__key` visuell versteckt), schmal sichtbar als Listenüberschrift – das ist eine Gliederung, keine Liste, die Bildteile übersetzt.
+20. DEAR: «D · Beschreiben», «E · Empfinden ausdrücken», «A · Anliegen nennen», «R · Verstärken» – englische Anfangsbuchstaben vor deutschen Wörtern; die Herkunft (DEAR MAN) steht nur in der Vertiefung. Kein Bild im engen Sinn; Frage SP1-F-19.
+21. Kurve: «Gefahr lässt sich aus der Stelle auf der Kurve nicht ableiten.» und «… kein validiertes Messinstrument …» – keine Bewertung eines Menschen.
+22. **Eisberg 200 %:** bei 1024, 1280, 1440 px überlappen Beschriftungen: «Wut»×«Vorwürfe», «Lautwerden»×«Rückzug», «… oder ganz andere Erfahrungen» läuft über die Kontur des Eisbergs, «Wie ist es gerade für dich?» bricht Wort für Wort über die Wasserlinie (Fotos `v-vs-eisberg_1280_f200.png`, `_1440_f200`; Messung 7 Überlappungen je Breite, auch «kontrast»). SP1-1.
+23. Kurve 200 %: Bezeichnungen bei 1280/1440 ausgeblendet (Liste gilt), aber Ziffern stehen auf/unter dem Kreisrand (Kreis 28×28 px fest, Ziffernzeile 31 px; Zeichnung und Liste, 320–1440 px). Bei 320/360 px Trennung mitten im Wort, z. B. «Anspannungsku|rve» im Titel, «Anspannun|g» in der Kernaussage. SP1-34, SP1-35.
+24. Trennung mitten im Wort nur bei 320–414 px mit 200 % (Wirkbreite 160–207 px): Momentaufnahmen «Momentaufnahme|n» (Titel), «Momentaufn|ahme» (Kernaussage); Schleife «Bedeutungsschl|eife»; DEAR «vorzubereit|en», «Entgegenkomme|n». SP1-35.
+25. **Zwei Sichten 200 %:** bei 768 px bleiben beide Spalten nebeneinander, «Unterstützung» bricht mitten im Wort («Unterstützu|ng», `trennung.cjs`); bei 360 px zusätzlich «Verständlic|hes» (Kernaussage), «richtigstellen.». Ursache: `@container (max-width:560px)` in px (`borderline.css` Z. 86). SP1-33.
+26. Schleife: «im Uhrzeigersinn» nur breit (`data-cycle-wide`), schmal «von oben nach unten; nach Station 5 zurück zu Station 1.» – auch bei 1280 px mit 200 % (Liste, Foto) richtig.
+
+##### 2.3 Textzeilen des Plans (99)
+
+Gezählt: 99 Textzeilen (98 mit `sectionId`, 1 auf `404`). Urteil: **96 «Text richtig»**, **3 «Text vertretbar»** (Fachstellenentscheide bzw. Hinweis für R2), **0** Zeilen, in denen eine Darstellung klar mehr Verständnis brächte. Zwei Zeilen mit veralteter Begründung (Nr. 2, 3). Tabelle: `SP/vis/textzeilen-tabelle.md`, hier vollständig:
+
+| Nr. | Seite › `sectionId` | Urteil |
+| --- | --- | --- |
+| 1 | index › `einstiege` | Text richtig: gleichwertige Einstiege, Bild würde Links in Kästen verteilen |
+| 2 | index › `beratung` | Text richtig (Angebot, Kontakt). `reason` «steht nur hier» überholt, `unterstuetzung` wiederholt Kosten (bekannt: Aufgefallen 2c/3-1 Nr. 3) |
+| 3 | index › `haltung` | Text richtig (Haltungssatz). `reason` veraltet: nennt Muster H für «Auf sich achten», dort steht seit 2a die Szene `v-sf-abend` (SP1-36) |
+| 4 | verstehen › `erleben` | Text richtig: Einstieg aus der Sicht der Angehörigen, Aufzählung von Erfahrungen ohne … |
+| 5 | verstehen › `borderline` | Text richtig: Begriffsklärung mit gezielten Einschränkungen |
+| 6 | verstehen › `mythen` | Text richtig: Paare Annahme/Einordnung ohne Bildform (BS-3) |
+| 7 | verstehen › `einordnung` | Text richtig: Abschluss mit Merksatz, keine Beziehung zu zeigen |
+| 8 | verstehen › `quellen` | Text richtig: Quellenblock (Akkordeon) |
+| 9 | beziehungen › `verbindung` | Text richtig: Aufzählung eigenständiger Ressourcen ohne Beziehung untereinander |
+| 10 | beziehungen › `verstaerker` | Text richtig: je Einfluss eine Station derselben Schleife; zweite Grafik würde doppeln |
+| 11 | beziehungen › `was-hilft` | Text richtig; aber drei Unterbrechungsstellen im Text, im Modell nur Station 5 markiert (Frage SP1-F-20) |
+| 12 | beziehungen › `verantwortung` | Text richtig: Leitfragen und Schutzhinweise |
+| 13 | beziehungen › `quellen` | Text richtig: Quellenblock (Akkordeon) |
+| 14 | rolle › `schuld` | Text richtig: Die fünf Sätze sind Zitate mit je einer Einordnung |
+| 15 | rolle › `alltag` | Text richtig: unabhängige Möglichkeiten (669 Wörter, Teil als Vertiefung) |
+| 16 | rolle › `nach-konflikten` | Text richtig: Schritte würden feste Reihenfolge nahelegen |
+| 17 | rolle › `mehrere` | Text richtig: Beziehungskarte ohne konkrete Beteiligte wäre leer |
+| 18 | rolle › `kinder` | Text richtig: Beispielsätze für Kinder und konkrete Fragen zur Betreuung |
+| 19 | rolle › `an-grenzen` | Text richtig: Aufzählungen, Schutz im Text |
+| 20 | rolle › `quellen` | Text richtig: Quellenblock (Akkordeon) |
+| 21 | grenzen › `erkennen` | Text richtig: keine Selbstdiagnose-Skala |
+| 22 | grenzen › `bruecke` | Text richtig: Bild von der Fachstelle gestrichen (Bauplan-Optik), Satz trägt |
+| 23 | grenzen › `arten` | Text richtig: vier gleichrangige Bereiche ohne Beziehung untereinander |
+| 24 | grenzen › `reihenfolge` | Text richtig: ein gezeichnetes 2×2-Raster legte eine Einstufung nahe; Begründung passt |
+| 25 | grenzen › `saetze` | Text richtig: drei Situationen mit Gegenüberstellung «eher problematisch / eher hilfreich» als … |
+| 26 | grenzen › `konsequenz` | Text richtig: Hinweise zur Umsetzung ohne darzustellende Beziehung |
+| 27 | grenzen › `kontakt` | Text richtig: Möglichkeiten liegen nicht auf einer Achse; Kontinuum wäre verfälschend |
+| 28 | grenzen › `rollen` | Text richtig: drei Rollen ohne Beziehung untereinander (Korrektur W2-2, 09 |
+| 29 | grenzen › `gewalt` | Text richtig: Gefahrenlage, kurze direkte Sätze |
+| 30 | grenzen › `quellen` | Text richtig: Quellenblock (Akkordeon) |
+| 31 | diagnose › `abklaerung` | Text vertretbar (Fachstellenentscheid 11.10.): fünf Schritte als nummerierte Liste mit «Ihre Rolle» zeigen die Reihenfolge; ein Prozesspfad C hätte wenig mehr gezeigt |
+| 32 | diagnose › `bedeutung` | Text richtig: zwei Absätze und «Was eine Diagnose nicht leistet» |
+| 33 | diagnose › `zweifel` | Text richtig: Listen stehen nicht Punkt für Punkt gegenüber (kein E) |
+| 34 | diagnose › `ohne-diagnose` | Text richtig: vier kurze Zwischentitel |
+| 35 | diagnose › `begleiterkrankungen` | Text richtig: alte Grafik war unverbundene Liste |
+| 36 | diagnose › `quellen` | Text richtig: Quellenblock (Akkordeon) |
+| 37 | behandlung › `rollen` | Text vertretbar (Fachstellenentscheid 11.10.): drei Spalten «Mögliche Beiträge / Nicht zu erwarten» zeigen die Verteilung; eine Beziehungskarte I brächte keine zusätzliche Beziehung |
+| 38 | behandlung › `kontakt` | Text vertretbar; 894 Wörter, längster Abschnitt. Drei Informationswege «unterscheiden» (Ziel) wäre ein Fall für Muster E; als Begriffsliste ausreichend (Hinweis für R2, kein Befund) |
+| 39 | behandlung › `therapieformen` | Text richtig: Bestand nennt keine gleichen Merkmale je Form (E entfällt begründet) |
+| 40 | behandlung › `rueckschlaege` | Text richtig: kurze Absätze, ein Beispielsatz ( |
+| 41 | behandlung › `angebote` | Text richtig: Angebotsliste mit Name, einem Satz, «Für |
+| 42 | behandlung › `wartezeit` | Text richtig: vier nummerierte Schritte des Bestands |
+| 43 | behandlung › `quellen` | Text richtig: Quellenblock (Akkordeon) |
+| 44 | kommunizieren › `zuhoeren` | Text richtig: Haltung und Erlaubnis als kurze Sätze und eine Liste mit drei Punkten |
+| 45 | kommunizieren › `moment` | Text richtig: verbindet mit der Anspannungskurve statt zweiter Kurve (Punkt 6) |
+| 46 | kommunizieren › `kippen` | Text richtig: drei Schritte als nummerierte Liste; Schutz vorab |
+| 47 | kommunizieren › `worte` | Text richtig: vier Aussagen mit möglichen Antworten als Begriffsliste |
+| 48 | kommunizieren › `beispiele` | Text richtig |
+| 49 | kommunizieren › `rollen` | Text richtig: drei Rollen als Vertiefung (Akkordeon), wie im Bestand |
+| 50 | kommunizieren › `quellen` | Text richtig: Quellenblock (Akkordeon) |
+| 51 | krise › `belastung` | Text richtig (Fachstellenentscheid): keine Ampel/Skala, weil keine Sicherheitsbewertung |
+| 52 | krise › `waehrend` | Text richtig: Handlungsanleitung in Krise |
+| 53 | krise › `sagen` | Text richtig: Handlungsanleitung für Bedrohung am Anfang, der Verweis im Text folgt direkt … |
+| 54 | krise › `suizid` | Text richtig: Handlungsanleitung |
+| 55 | krise › `vermeiden` | Text richtig: kurze Liste wie im Bestand |
+| 56 | krise › `danach` | Text richtig: Sicherheitshinweis als Handlungsanleitung mit Verweis im Text vor den … |
+| 57 | krise › `bleibt` | Text richtig: vier Hinweise als Liste, Handlungsanleitung mit Verweis im Text |
+| 58 | krise › `quellen` | Text richtig: Quellenblock (Akkordeon) |
+| 59 | selbstfuersorge › `eigenes-leben` | Text richtig: Die Erlaubnis-Sätze sind eine Liste zum Auswählen |
+| 60 | selbstfuersorge › `warnsignale` | Text richtig: keine Skala, kein Selbsttest |
+| 61 | selbstfuersorge › `zu-viel` | Text richtig: STOPP als nummerierte Liste, kein Stepper (Bildsprache-Audit) |
+| 62 | selbstfuersorge › `unterstuetzung` | Text richtig: Sauerstoffmaske als Krisenbild bewusst nur als Satz |
+| 63 | selbstfuersorge › `akzeptanz` | Text richtig: zwei kurze Listen und eine Übung in vier Schritten als Vertiefung |
+| 64 | selbstfuersorge › `beratung` | Text richtig: kurze Hinweise und Verweis auf `index` |
+| 65 | selbstfuersorge › `quellen` | Text richtig: Quellenblock (Akkordeon) |
+| 66 | genesung › `forschung` | Text richtig: Remission und Recovery messen Verschiedenes, Balkendiagramm würde verfälschen |
+| 67 | genesung › `begriffe` | Text richtig: keine gleichen Merkmale (E entfällt begründet) |
+| 68 | genesung › `einfluesse` | Text richtig: fünf gleiche Felder wären Kartenraster/Scheinmodell |
+| 69 | genesung › `freiwillig` | Text richtig: kurz, mit Verweis auf `rolle` › `anbieten` |
+| 70 | genesung › `quellen` | Text richtig: Quellenblock (Akkordeon) |
+| 71 | unterstuetzung › `beratung` | Text richtig: Angebote mit Name, kurzer Beschreibung und Link auf die offizielle Website |
+| 72 | unterstuetzung › `austausch` | Text richtig: zwei Organisationen und die Gruppe für Eltern von Jugendlichen an der PUK |
+| 73 | unterstuetzung › `selbsthilfe` | Text richtig: eine Vermittlungsstelle mit kurzer Beschreibung und Link auf die Website |
+| 74 | unterstuetzung › `kantone` | Text richtig: ein kurzer Hinweis aus dem Bestand (Regional-Hinweis) |
+| 75 | unterstuetzung › `buecher` | Text richtig: Liste nach Zielgruppe |
+| 76 | fragen › `diagnose` | Text richtig: Frage und kurze Antwort mit Verweis |
+| 77 | fragen › `verlauf` | Text richtig: Frage und kurze Antwort mit Verweis |
+| 78 | fragen › `gespraeche` | Text richtig: Frage und kurze Antwort mit Verweis |
+| 79 | fragen › `behandlung` | Text richtig: Frage und kurze Antwort mit Verweis |
+| 80 | fragen › `schutz` | Text richtig: Frage und kurze Antwort mit Verweis |
+| 81 | fragen › `eigenes-leben` | Text richtig: Frage und kurze Antwort mit Verweis |
+| 82 | fragen › `weitere` | Text richtig: Frage und kurze Antwort mit Verweis |
+| 83 | fragen › `quellen` | Text richtig: Quellenblock (Akkordeon) |
+| 84 | quellen › `begriffe` | Text richtig: Quellenliste/Literatur |
+| 85 | quellen › `einordnung` | Text richtig: Quellenliste/Literatur |
+| 86 | quellen › `forschung` | Text richtig: Quellenliste/Literatur |
+| 87 | quellen › `therapie` | Text richtig: Quellenliste/Literatur |
+| 88 | quellen › `angehoerige` | Text richtig: Quellenliste/Literatur |
+| 89 | quellen › `diagnostik` | Text richtig: Quellenliste/Literatur |
+| 90 | quellen › `versorgung` | Text richtig: Quellenliste/Literatur |
+| 91 | quellen › `leitlinien` | Text richtig: Quellenliste/Literatur |
+| 92 | quellen › `schweiz` | Text richtig: Quellenliste/Literatur |
+| 93 | ueber › `warum` | Text richtig: Angaben ohne Beziehung |
+| 94 | ueber › `grundsaetze` | Text richtig: Angaben ohne Beziehung |
+| 95 | ueber › `barrierefreiheit` | Text richtig: Angaben ohne Beziehung |
+| 96 | ueber › `rueckmeldung` | Text richtig: Angaben ohne Beziehung |
+| 97 | impressum-datenschutz › `impressum` | Text richtig: Angaben ohne Beziehung |
+| 98 | impressum-datenschutz › `datenschutz` | Text richtig: Angaben ohne Beziehung |
+| 99 | 404 › `–` | Text richtig: Hinweis und Link |
+
+##### 2.4 Ansehen (Fotos und Messungen)
+
+Messung `fotos.mjs`/`fotos200.cjs`: Standard 60 Messungen (6 Breiten × 10), «kontrast» 20, 200 % 60 (320–1440 px) plus 10 (1280 px, «kontrast»). **Waagrechter Überlauf: 0** in allen 150 Messungen (`scrollWidth` = Viewport, kein Textträger ausserhalb).
+
+| Figur | 1280 Standard / «kontrast» | 360 Standard / «kontrast» | 200 % (1280, 1440, 360) |
+| --- | --- | --- | --- |
+| `v-vs-eisberg` | Wörter im Eisberg, Frage rechts, ruhig; «kontrast» dunklere Linien | Zeichnung ohne Wörter, darunter «Sichtbar», «Darunter möglich», Frage | **1280/1440: Wörter überlappen, Frage Wort für Wort über der Wasserlinie (SP1-1).** 360: Listen, sauber |
+| `v-vs-anspannung` | vier Bezeichnungen um die Kurve, Doppelring bei 2; Liste darunter | Kurve nur mit Ziffern, Liste vollständig | 1280/1440: Bezeichnungen aus, Ziffern grösser als Kreise und nach unten versetzt, in Kurve und Liste (SP1-34); 360: zusätzlich Wörter getrennt (SP1-35) |
+| `v-vs-bewertungen` | zwei Sätze über den passenden Fotos, Album darunter | Sätze untereinander, Album klein, erkennbar | 1280/1440: Sätze untereinander links, Zuordnung Satz–Foto nur noch über die Reihenfolge (wie schmal, nach Muster D zulässig); 360: «Momentaufnahme\|n» (SP1-35) |
+| `v-bz-schleife` | Kreis aus fünf Feldern, Pfeile, Doppelkontur Station 5 | Liste mit Rücklauflinie und Satz | 1280/1440: Liste, Felder ungleich breit und gegeneinander versetzt (nur optisch); 360: «Bedeutungsschl\|eife», «vorwurfsvoll\|e» (SP1-35) |
+| `v-bz-sichten` | vier Zeilen à zwei Felder, viel Leerraum je Feld | Sichten nacheinander | 768: Spalten bleiben, «Unterstützu\|ng» (SP1-33); 360: weitere Trennungen |
+| `v-gr-dear` | Pfad mit vier Punkten, Spalten | senkrechter Pfad | 1280/1440: senkrechter Pfad, sauber; 360: «vorzubereit\|en», «Entgegenkomme\|n» (SP1-35) |
+| `v-ro-weg` | zwei Figuren auf Weg, Satz links oben | Zeichnung klein (Figuren etwa 40 px hoch), erkennbar | sauber |
+| `v-sf-abend` | Sätze über Telefon und Buch | Sätze untereinander | sauber; Sätze untereinander |
+| `v-ko-tassen` | Sätze über den Tassen | Sätze untereinander | sauber |
+| `v-ge-trieb` | Haltungen nebeneinander; Fenstersims rechts hart abgeschnitten (SP1-38) | Haltungen untereinander | sauber |
+
+**Frühere Punkte, selbst gemessen:**
+
+- **NK31-1 (Überlauf `verstehen` 1280 px, 200 %): behoben.** `verstehen` bei 1280 px, 200 %: `scrollWidth` 1280, Standard und «kontrast»; die vier `p.bl-fig__label` sind `display:none` (`hiddenLabels=4`). Bei 1440 px ebenso 1440.
+- **«Bei 1440 px und 200 % Schrift» (Aufgefallen 2c/3-1 Nr. 5): kein Befund.** Bei 1440 px mit 200 % sind die Bezeichnungen ausgeblendet, es gelten Ziffern und Liste (Foto `v-vs-anspannung_1440_f200`). Der Kurztext nennt keine Bezeichnung als Beleg. Entspricht der Regel «wechselt früher in die Listenansicht».
+- **«Ziffern der Anspannungskurve bei 200 % Schrift» (Aufgefallen Nr. 1): bestätigt, Befund SP1-34.** Ursache ist `.puk-vis-build__n{width:28px;height:28px}` in `templates/website/longform/erklaermuster.css` Z. 19 (Profilkomponente, px), Schrift wächst (Ziffernzeile 31 px).
+- **Nicht früher gefunden:** SP1-1. Die Messungen zu 3 d prüften nur `scrollWidth` (Bericht Z. 1251–1254), keine Überlappung.
+
+##### 2.5 Bildsprache und Freundin-Test
+
+| Figur | Ein Bild, eine Idee | Beschriftung | Bauplan-Optik | Freundin-Test (Urteil) |
+| --- | --- | --- | --- | --- |
+| `v-vs-eisberg` | ja: «nur die Spitze sieht man» | Gefühle und Verhalten, Frage aus Sicht der Angehörigen | nein, weiche Linie | **Ja.** Bekanntes Bild; «Wie ist es gerade für dich?» gibt der Angehörigen eine Stimme |
+| `v-vs-anspannung` | ja: Gespräch steigt an und fällt | Sätze «Wir können sprechen.», «Es wird eng.» | keine Achse, keine Skala | **Ja.** «So kippt es bei uns» lässt sich zeigen |
+| `v-vs-bewertungen` | ja: Momentaufnahme aus einem Album | zwei gehörte Sätze, Einleitung «Sätze, die Angehörige hören können:» | Fotos sind rechteckig wie Fotos, kein Raster | **Eher ja.** Die Sätze tragen den Schmerz, das Album die Entlastung; Sonne/Regen ohne Satz verständlich |
+| `v-bz-schleife` | Diagramm B, kein Bild | Sätze in Stationen | Kästen musterkonform | **Eher ja** als Erklärung («so schaukeln wir uns hoch»), kein Bild zum Zeigen im Sinn von D |
+| `v-bz-sichten` | Vergleich E | Gedanken als Zitate | Felder musterkonform | **Teilweise:** man würde die Sätze zeigen, nicht die Felder |
+| `v-gr-dear` | Prozess C | Aufgaben, Beispielsätze | Pfad musterkonform | **Entfällt** (Werkzeug, nicht Erleben) |
+| `v-ro-weg` | ja: neben jemandem gehen | ein Satz «Ich kann diesen Weg begleiten, aber nicht für dich gehen.» | nein | **Ja.** Klar, würdig, beide gleich gross |
+| `v-sf-abend` | ja: Abend «auf Abruf» | zwei Gedanken | nein | **Ja, am stärksten.** Wiedererkennen ohne Erklärung |
+| `v-ko-tassen` | teilweise: Bild zeigt Gespräch, nicht Anerkennen | zwei Sätze | nein | **Teilweise.** Ohne die Sätze sagt das Bild nur «Tee zu zweit»; die Aussage tragen die Sätze (SP1-F-18) |
+| `v-ge-trieb` | ja: Blatt fällt, Trieb wächst | zwei Haltungen «Weniger hilfreich» / «Tragfähiger» | nein | **Eher ja** für die Hoffnung; offen, ob die Pflanze als «die Person» gelesen wird (SP1-F-17) |
+
+Keine Liste, die Bildteile übersetzt, in allen zehn. Keine technischen Namen an Bildteilen. Keine Kulleraugen, Sprechblasen, Ausrufezeichen.
+
+##### 2.6 Textalternativen und drei Ebenen
+
+| Figur | Kernaussage (Ebene 1) | Erklärtext (Ebene 2, gekürzt) | Vertiefung (Ebene 3) | Kurzbeschreibung (`aria-describedby`) | Hauptaussage nur in Vertiefung? |
+| --- | --- | --- | --- | --- | --- |
+| eisberg | «Was Sie sehen, ist nur ein Teil. Was darunter mitwirkt, lässt sich erfragen, nicht sicher ablesen.» | «Nachfragen hilft mehr als Gedankenlesen. …» | «Grenzen des Bildes» | Aufbau und alle Wörter | nein |
+| anspannung | «Bei hoher Anspannung können Worte schwerer ankommen. Sie dürfen eine Pause machen oder das Gespräch beenden.» | «Anspannung kann im Gespräch ansteigen und später wieder sinken. …» | «Grenzen des Bildes» | Kurve, vier Stellen, Ansatzpunkt | nein; Ansatzpunkt sichtbar in der Liste |
+| bewertungen | «Weder eine sehr positive noch eine sehr negative Momentaufnahme muss die ganze Beziehung oder Person beschreiben.» | «Unter starker Anspannung kann ein einzelner Moment das ganze Bild bestimmen …» | «Was den Blick färben kann – und Grenzen des Bildes» | Album, Fotos, Sätze | nein |
+| schleife | «Eine Reaktion kann beim Gegenüber zum neuen Anlass werden – so kann sich eine Schleife verstärken.» | «… Angehörige setzen bei ihrer eigenen Reaktion an.» | keine; Ansatzpunkt-Kasten sichtbar | «Fünf Stationen im Kreis, danach zurück zu Station 1, mit Ansatzpunkt bei Station 5.» | nein |
+| sichten | «In jedem Schritt versuchen beide etwas Verständliches – und verfehlen sich trotzdem.» | «Beide Sichten sind nachvollziehbar …» | keine | «Vier Schritte aus Abbildung 1, je mit der möglichen Sicht …» | nein |
+| dear | «Vier Schritte helfen, ein Anliegen vorzubereiten.» | «DEAR garantiert keine Kooperation …» | «Herkunft des Modells» | «Vier Schritte mit Aufgabe und Beispielsatz.» | nein |
+| weg | «Sie können begleiten. Genesung herstellen können Sie nicht.» | «Die Person gestaltet ihre Genesung selbst mit. …» | «Grenzen des Bildes» | Zeichnung und Satz | nein |
+| abend | «Manche Angehörige bleiben auch an einem freien Abend innerlich auf Abruf.» | «Das Buch liegt bereit, der Tee wird kalt …» | «Grenzen des Bildes» | Tisch, Gegenstände, Gedanken | nein |
+| tassen | «Sie können ein Gefühl anerkennen, ohne die Deutung zu übernehmen.» | ein Satz (SP1-37) | «Grenzen des Bildes» | Tassen und Sätze | nein |
+| trieb | «Eine schwierigere Phase bedeutet nicht, dass alles Erreichte verloren ist.» | «Genesungswege unterscheiden sich. …» | «Grenzen des Bildes» (u. a. «Angehörige können Genesung nicht herstellen.») | Pflanze, Blatt, Trieb, Haltungen | nein |
+
+`alt` entfällt (keine `img`); alle SVG `aria-hidden="true" focusable="false"`; Titel über `aria-labelledby`.
+
+##### 2.7 Ansatzpunkte
+
+| Figur (Muster) | `entryPoint` | Im Bild markiert | Im Text sichtbar | Eigene Möglichkeit, keine Verantwortung |
+| --- | --- | --- | --- | --- |
+| `v-bz-schleife` (B) | Station 5 «Wirkung» (Schwester) | ja, `li.is-ansatz` Doppelkontur + «Ansatzpunkt» (Fotos breit und schmal) | ja, «Ansatzpunkt für Angehörige · bei Station 5 …» ausserhalb jeder Vertiefung | ja: «Der Ansatzpunkt ist eine Möglichkeit, keine Pflicht.» |
+| `v-vs-anspannung` (A, Prozess im Gespräch) | Stelle 2 «Es wird eng» | ja, Doppelring in Kurve und Liste (bei 200 % von der Ziffer überlagert, SP1-34) | ja | ja: «Sie müssen die andere Person nicht beruhigen.» |
+| `v-gr-dear` (C) | «entfällt: Der ganze Ablauf beschreibt das eigene Handeln der Angehörigen.» | – | – | Begründung trägt |
+| `v-vs-eisberg` (K) | keiner (nicht verlangt) | Frage im Bild | «Nachfragen hilft mehr als Gedankenlesen.» | ja |
+| `v-ro-weg` (D, Weg) | keiner (Illustration, nicht C) | – | Kernaussage «Sie können begleiten.» | ja: «Genesung herstellen können Sie nicht.» |
+
+Hinweis: `beziehungen` › `was-hilft` nennt drei Stellen, «an denen sich die Schleife unterbrechen lässt», darunter «bei der Bedeutung: eine Vermutung zuerst mit einer Frage prüfen»; im Modell ist nur Station 5 markiert, und Station 2 «Bedeutung» gehört dort der betroffenen Person (Frage SP1-F-20).
+
+**Nicht geprüft oder nicht prüfbar**
+
+- **Silbentrennung mit Wörterbuch:** Das Chromium dieser Umgebung trennt `hyphens:auto` nicht (Wörter ohne Bindestrich umbrochen). Wie Chrome, Firefox, Safari mit deutschem Wörterbuch bei 320–414 px und 200 % trennen, ist hier nicht prüfbar (SP1-35).
+- **200 % Seitenzoom** (statt Schriftgrösse), erzwungene Farben, Druck, Firefox/Safari: nicht Teil dieses Teils (5.5).
+- **Fotos bei 320 px:** nur gemessen (0 px Überlauf, keine Überlappung), nicht fotografiert; 360 px fotografiert.
+- **Reale Wirkung (Freundin-Test)** ist ein Urteil dieser Sitzung, kein Test mit Angehörigen.
+- **Vertiefungen offen** nicht fotografiert; Inhalt aus dem HTML zitiert.
+
+### SP1 · 5.5 Bedienung und Barrierefreiheit
+
+Kriterien «Barrierefreiheit und Test», «Interaktionskonzept». Die Überlagerungen bei grosser Schrift (SP1-1, SP1-2) hat der Teil W3 gefunden; die Messung des Überlaufs in diesem Teil erfasst sie nicht (kein waagrechter Überlauf, aber Text über Text). Sie gehören auch zu dieser Stufe.
+
+#### 5.5 · Alle 17 Seiten
+
+**Vorgehen**
+
+- **Gelesen:** `CLAUDE.md`, `guidelines/00-ablauf-pruefung-und-freigabe.md`, `PRUEFAUFTRAG-SCHLUSSPRUEFUNG.md` (Abschnitte 1–5), `guidelines/04-barrierefreiheit-und-test.md`, `guidelines/09-interaktionskonzept.md`; `components/bundle.css` (Druck, reduzierte Bewegung, erzwungene Farben, Theme «Hoher Kontrast» Z. 494–512), `components/interaktion.js` (Akkordeon, Druck), `abgleich/bedienung.mjs`; im `PRUEFBERICHT.md` nur NK31-1 (Z. 20, 114, 320, 361) und `FREIGABE-ETAPPE-2C-3-1.md` Abschnitt 3 d.
+- **Gegenstand:** 17 gebaute Seiten im Arbeitsbaum `SP/wt-f1d6572/templates/website/borderline-angehoerige/` (`git status` leer), ausgeliefert mit `python3 -m http.server 8731` im Stamm des Arbeitsbaums (je Skriptlauf neu gestartet über `SP/bed/run.sh`, weil der Server im Hintergrund wiederholt beendet wurde). Chromium (Playwright, `/opt/pw-browsers`).
+- **Eigene Skripte** (alle unter `SP/bed/`, Rohdaten als JSON/TXT daneben):
+  - `ueberlauf.mjs` – 1496 Messungen: `documentElement.scrollWidth > clientWidth`, jedes sichtbare Element mit rechter/linker Kante ausserhalb des Viewports (ausser in einem eigenen Scrollbereich), Elemente mit `overflow:hidden/clip` und `scrollWidth > clientWidth` bzw. `scrollHeight > clientHeight`, `text-overflow:ellipsis`; je Seite × Breite × Vertiefungen zu/offen × Theme Standard/«kontrast».
+  - `tastatur.mjs`, `fokusring.mjs` – Tab-Durchgang aller Seiten bei 1280 und 360 px; Ring je Stopp nach 250 ms (normal und erzwungene Farben); Sprunglink; `details` mit Enter/Leertaste.
+  - `struktur.mjs` – Akkordeons (Enter, Leertaste, Pfeil ab, `aria-expanded` gegen `hidden`), reduzierte Bewegung (berechnete Dauern inkl. `::before/::after`, `document.getAnimations()`), Logo, ohne Skript, Überschriften, Landmarken, Bilder, Linknamen, ids, ARIA-Bezüge, Anker.
+  - `kontrast.mjs` – jeder sichtbare Textknoten gegen den zusammengesetzten Hintergrund (Vorfahren, Deckkraft), Vertiefungen und Akkordeons offen, 1280 und 360 px, Standard und «kontrast»; mit `reducedMotion:'reduce'` und 400 ms Wartezeit nach dem Theme-Wechsel (ohne Wartezeit misst man wegen `a{transition:color}` Zwischenwerte – erster Lauf verworfen).
+  - `erzwungen2.mjs`, `fcdark.mjs` – erzwungene Farben hell/dunkel, Fotos von sechs Figuren, Fokusumrandung.
+  - `druck.mjs`, `druckalle.mjs` – `emulateMedia print` alle Seiten mit/ohne Skript; PDF (A4) aller 17 Seiten, leere PDF-Seiten mit `pdftotext` gezählt, Seiten mit `pdftoppm` angesehen.
+  - `ziele.mjs` (Zielgrössen und Abstand), `wortbruch.mjs`, `h1.mjs`, `h1b.mjs` (Wortumbrüche), `schmal.mjs`, `nk31.mjs`, `nk31b.mjs`.
+- **Methoden 200 %:**
+  - **Schriftgrösse 200 %:** CDP `Page.setFontSizes({standard:32, fixed:26})` vor dem Laden – entspricht der Browser-Einstellung «Schriftgrösse», nicht einer Änderung am CSS. Wirkung belegt: `html` berechnet 32 px auf allen 17 Seiten, Fliesstext `.puk-longform__copy p` auf `verstehen` 42 px statt 21 px. Achtung: Playwright-Elementfotos verlieren diese Einstellung (Elementfoto zeigte normale Schrift); deshalb nur Ansichtsfotos verwendet.
+  - **Seitenzoom 200 %:** CSS-Viewport halbiert (1280 → 640, 1440 → 720, 1024 → 512, 360 → 180, 320 → 160). Layout entspricht Browser-Zoom 200 %, weil Zoom die CSS-Breite halbiert; `deviceScaleFactor` ändert das Layout nicht.
+
+**Ergebnis je Punkt**
+
+| Punkt | Ergebnis | Beleg |
+| --- | --- | --- |
+| Breiten 320, 360, 390, 768, 1024, 1280, 1440 px | erfüllt: kein Überlauf, nichts abgeschnitten | `ueberlauf.mjs`, Modus «standard»: 17 Seiten × 7 Breiten × 2 Themes × Vertiefungen zu/offen = 476 Messungen, 0 mit `scrollWidth > clientWidth`, 0 Elemente über dem Rand, 0 `overflow:hidden` mit abgeschnittenem Inhalt, 0 `ellipsis`, 0 waagrechte Scrollbereiche. `html`/`body` `overflow-x: visible` (kein verdeckter Überlauf). |
+| Schriftgrösse 200 % bei allen 7 Breiten | erfüllt (Überlauf); Wortumbrüche siehe SP1-40 | 476 Messungen, 0 Auffälligkeiten. Fotos `s320-schrift200-*.png`: Kopf, Navigation, Absenderin, Eisberg, Schleife, Tassen lesbar, nichts überdeckt. |
+| Seitenzoom 200 % | erfüllt für 1280, 1440, 1024, 360 (= 640, 720, 512, 180 CSS-px) | je 68 Messungen, 0 Auffälligkeiten. Bei 320 px Gerät (160 CSS-px, unter der WCAG-Anforderung 1.4.10 von 320 CSS-px) ragt auf allen 17 Seiten `a.puk-web-logo` 20 px über (rechts 180 bei 160): kein Befund, nur festgehalten. |
+| ohne Skript, Überlauf | erfüllt | 320, 360, 1280 px, 204 Messungen, 0 Auffälligkeiten. |
+| NK31-1 (Überlauf `verstehen`, 1280 px, 200 % Schrift) | behoben | `scrollWidth` 1280 = `clientWidth` bei 1280, 1440 (und 1024), Standard und «kontrast», Vertiefungen zu und offen. Die vier `p.bl-fig__label` der Anspannungskurve haben bei 200 % `display:none`; die Bezeichnungen stehen in der Liste darunter (Foto `nk31-verstehen-1280-schrift200-viewport.png`: Kurve mit Nummern 1–4, darunter «Wir können sprechen.» …). Alle anderen Seiten bei 1280/1440 mit 200 %: 0 px Überlauf (Auftrag 3 d «danach überall 0 px» erfüllt). |
+| Tab-Reihenfolge | erfüllt, logisch nach DOM | Stopps je Seite bei 1280 (= 360): `index` 22, `verstehen` 29, `beziehungen` 24, `grenzen` 28, `rolle` 36, `selbstfuersorge` 34, `kommunizieren` 37, `krise` 30, `genesung` 23, `unterstuetzung` 24, `diagnose` 32, `behandlung` 35, `fragen` 48, `quellen` 87, `ueber` 19, `impressum-datenschutz` 14, `404` 11; je 7 im Kopf, 2 in der Fusszeile. Kein `tabindex > 0`, kein fokussierbares Element in `aria-hidden`. Erste 15 auf `verstehen`: 1 «Zum Hauptinhalt» (#main-content) · 2 Logo (index.html) · 3–7 Verstehen, Beziehungen, Ihre Rolle, Grenzen, Auf sich achten · 8 angehoerigenarbeit@pukzh.ch (mailto) · 9–15 Wegweiser Erleben, Diagnose, Sichtbar und verborgen, Anspannung, Bewertungen, Annahmen, Einordnung; letzte drei «Quellen zu dieser Seite», Impressum, Datenschutz. `index`: 1–8 wie oben, 9–15 die Lesepfade «Ich verstehe nicht, warum …» (verstehen) bis «Ich frage mich, ob es je besser wird.» (genesung). `kommunizieren`: 9–15 Wegweiser Zuhören … Je nach Rolle. `quellen`: 9–15 Wegweiser Begriffe … Versorgung; letzter Inhalt «Schweizerisches Zivilgese[tzbuch]». |
+| sichtbarer Fokus | erfüllt | `fokusring.mjs`: 533 Tabstopps (alle Seiten, 1280 px), nach 250 ms 0 ohne Ring; Ring = Schatten `rgb(255,255,255) 0 0 0 2px, rgb(60,100,255) 0 0 0 4px`. Unmittelbar nach dem Tab ist der Schatten bei `summary` noch transparent (`rgba(0,0,0,0)`), nach 400 ms gesetzt (`summ.mjs`). Fokus nie ausserhalb des Bildes, nie verdeckt (Mittelpunkt-Test, 0 von 1066 Stopps bei 1280 und 360). |
+| Sprunglink | erfüllt | 17/17 Seiten: erster Stopp «Zum Hauptinhalt», bei Fokus im Bild, 44 px hoch; Enter → `location.hash` `#main-content`, Ziel `MAIN#main-content` mit `tabindex="-1"` hat den Fokus; nächster Tab im `main` (z. B. `verstehen` «Erleben»). |
+| Vertiefungen (`details`) | erfüllt | 8 `details` (`verstehen` 3, `grenzen`, `rolle`, `selbstfuersorge`, `kommunizieren`, `genesung` je 1): Enter öffnet, Leertaste schliesst, Leertaste öffnet, Enter schliesst – 8/8; `summary` ≥ 44 px. |
+| Akkordeons (`aria-expanded`) | erfüllt | 51 Schaltflächen `.puk-acc__button` auf 13 Seiten: Grundzustand `false`/Panel `hidden`; Enter → `true`/sichtbar; Leertaste → `false`/`hidden`; `aria-expanded` stimmt in allen 153 Zuständen mit `hidden` überein; Pfeil ab springt zur nächsten Kopfzeile; Höhe ≥ 57 px. `aria-controls`/`aria-labelledby` zeigen auf vorhandene ids. |
+| Menü, Escape | entfällt | Hauptnavigation hat 5 Punkte, kein Dropdown-Menü, keine Dialoge, keine Reiter (`[role=menu]`, `dialog`, `[data-puk-disclosure]` 0). |
+| Sprung aus dem Wegweiser | erfüllt | `verstehen`: Wegweiser «Anspannung» Enter → `#anspannung`, nächster Tab «Der richtige Moment» in `section#anspannung`. |
+| Zielgrössen | erfüllt bis auf Absender-E-Mail | Minimum über alle Seiten bei 1280/360: Navigation 44/44, Wegweiser 44/44, Lesepfade 46/77, Fusszeile 57/51, Akkordeon 59/57, `summary` 44/44, Aktionslink 45/44 px. Absender-E-Mail 23 px hoch, nächstes Ziel ≥ 46 px entfernt (SP1-42). |
+| ohne Skript | erfüllt | `struktur.mjs`: auf allen 17 Seiten `[hidden]` in `main` 0; alle 51 Akkordeon-Panels offen sichtbar, 8 `details` aufklappbar (nativ); Textlänge von `main` (alles offen) ohne Skript = mit Skript auf jeder Seite (z. B. `quellen` 44 467 = 44 467, `kommunizieren` 23 916 = 23 916). |
+| reduzierte Bewegung | erfüllt | Alle Seiten: grösste `transition-duration` 0,01 ms (globale Regel `bundle.css` Z. 404 f., «sofort»), Animationen 0, `getAnimations()` 0, `scroll-behavior: auto`. Ohne reduzierte Bewegung: Übergänge höchstens 200 ms, keine Animation läuft nach 1,5 s, nichts bewegt sich von selbst. Logo: `img assets/logo.svg`, kein `[data-motion]`, kein animiertes Logo. |
+| erzwungene Farben | erfüllt | Chromium `forcedColors:'active'` (berechnete Farben werden ersetzt: `body` Weiss/Schwarz bzw. Schwarz/Weiss, Links `rgb(0,0,159)`). Fokus: 533 Stopps mit `outline: 2px solid CanvasText` (hell `rgb(0,0,0)`, dunkel `rgb(255,255,255)`), 0 ohne. Fotos `fc-light-*`/`fc-dark-*` (Eisberg, Anspannungskurve, Schleife, Trieb, Tassen, Weg) angesehen: Text lesbar (im Eisberg dunkel mit Hintergrundplatte), Kästen der Schleife mit Systemrahmen, Pfeile und Linien bleiben sichtbar (SVG in Hausblau), «Grenzen des Bildes» als Link-/Schaltfarbe, Figurrahmen sichtbar. Nichts verschwindet. |
+| Druck | erfüllt bis auf leere Seiten (SP1-39) | `emulateMedia print`, alle Seiten mit und ohne Skript: Hauptnavigation und Sprunglink `display:none`; alle 8 `details` mit sichtbarem Inhalt (auch ohne Skript, über `::details-content`); alle 51 Akkordeon-Panels sichtbar; externe Links 66, alle mit Adresse (`::after` `attr(href)`), z. B. `quellen` 53/53. Interne Links (bis 37 je Seite) ohne Adresse – so vorgesehen (Regel nur für `http`). Wegweiser «Weg durch die Seite» wird mitgedruckt. PDF `verstehen` (12 S.) angesehen: Kopf mit Logo und Absenderin, Vertiefung «Die Kurve stellt den Verlauf beispielhaft dar …» gedruckt (pdftotext 1 Treffer), Figuren einspaltig. |
+| Kontrast Standard | erfüllt (AA) | 6667 Textelemente (17 Seiten, 1280+360 px, alles offen), 0 unter AA. Geringste: Links `rgb(60,100,255)` auf Weiss 4,71 : 1 (680×), `rgb(43,79,224)` auf `rgb(216,224,255)` 4,86 : 1 (2×, `grenzen`, Hinweiskasten), `rgb(100,100,100)` auf `rgb(247,247,247)` 5,52 : 1 (30×, Bezeichnungen in Figuren). Kein Text auf Hintergrundbild, kein Text in SVG. |
+| Kontrast «Hoher Kontrast» | erfüllt (≥ 7 : 1) | Aktivierung `html[data-theme="kontrast"]` (`bundle.css` Z. 494 ff.; auf der Website kein Schalter). 6651 Textelemente, 0 unter AA, geringster 7,65 : 1 (`rgb(79,79,79)` auf `rgb(247,247,247)`, «Beispiel» 13 px, `verstehen`); Links `rgb(0,40,194)` 10,08 : 1. Zusage «jede Textfarbe ≥ 7 : 1» eingehalten. |
+| Struktur | erfüllt | 17/17: `lang="de-CH"`, genau ein `h1`, 0 übersprungene Ebenen (ohne Panels in `[hidden]`), je 1 `header`, 1 `main#main-content`, 1 `footer`; `nav` «Hauptnavigation» überall, dazu «Weg durch die Seite» auf 14 Seiten (nicht `index`, `impressum-datenschutz`, `404`). `aria-current="page"` auf den 5 Seiten der Navigation. Bilder: 1 je Seite (Logo) mit `alt`; 0 SVG ohne Namen oder `aria-hidden`. Links: 0 ohne Namen, 0 vage («hier», «mehr»), 0 gleicher Name mit verschiedenem Ziel; 0 `target=_blank`. Formularfelder 0. Doppelte ids 0, tote ARIA-Bezüge 0, tote Seitenanker 0. |
+| `node abgleich/bedienung.mjs` | ausgeführt, stimmt mit eigenen Messungen | Basis `http://localhost:8731/…/`. Tabstopps ohne Fusszeile: `index` 20, `verstehen` 27, `beziehungen` 22, `grenzen` 26, `rolle` 34, `selbstfuersorge` 32, `kommunizieren` 35, `krise` 28, `genesung` 21, `unterstuetzung` 22, `diagnose` 30, `behandlung` 33, `fragen` 46, `quellen` 85, `ueber` 17, `impressum-datenschutz` 12 – je genau meine Zählung minus 2 Fusszeilen-Stopps; erster Stopp überall «Zum Hauptinhalt»; ohne sichtbaren Fokus 0 (eigene Messung nach 250 ms ebenfalls 0). Höhe bei 360 px z. B. `verstehen` 17 315, `quellen` 51 940; höchste Figur `v-vs-anspannung` 3379 px. Pfeile der Bedeutungsschleife bei 1440/1280/768 px gleich, Spitzen 8,3–35,3 px vor dem Kasten, bei 720 px Liste ohne Pfeile. Abweichung zu früher: `index` 20 statt 19 (PRUEFBERICHT Z. 296, Stand 3-1-K), passt zu den seither freigegebenen Sätzen V1/V2 auf `index`. Grenzen des Werkzeugs: SP1-43. |
+
+**Nicht geprüft oder nicht prüfbar**
+
+- **Reale Screenreader, Hardwaretastatur, Touch:** nicht durch diese Sitzung (Auftrag 5.5). Offen. Vorschlag für ein Protokoll (Vorlage `templates/website/website-screenreader-test.example.json`, je Lauf Datum, Person, Versionen):
+  - **Geräte:** (1) NVDA aktuell + Firefox, Windows, Hardwaretastatur; (2) VoiceOver iOS + Safari, iPhone (Touch); empfohlen (3) VoiceOver macOS + Safari; (4) TalkBack + Chrome, Android. Zusätzlich einmal Windows-Kontrastmodus (dunkel) und Browser-Schriftgrösse «sehr gross».
+  - **Seiten:** `index`, `verstehen` (drei Figuren, `details`), `beziehungen` (Schleife), `kommunizieren` (12 Akkordeons), `krise`, `quellen` (lange Liste), `404`.
+  1. `index` laden: Titel und deutsche Aussprache; Tab bis «Zum Hauptinhalt», aktivieren – liest danach der Hauptinhalt, nicht die Navigation?
+  2. Orientierungspunkte/Überschriften (NVDA D/H, VO-Rotor): ein Banner, «Hauptnavigation», «Weg durch die Seite», ein Hauptbereich, eine Fusszeile; eine Ebene 1, keine Sprünge. Aktuelle Seite in der Navigation angesagt.
+  3. `verstehen` › Abbildung 2 (Anspannungskurve) im Lesemodus: Titel, Kernaussage, Liste «Wir können sprechen.» … verständlich ohne Bild? Kreise und Linien nicht vorgelesen?
+  4. `verstehen` › «Grenzen des Bildes» mit Enter/Doppeltipp öffnen und schliessen: Zustand «erweitert/reduziert» angesagt?
+  5. `kommunizieren`: ein Akkordeon öffnen, Pfeil ab zur nächsten Kopfzeile; Zustand angesagt, Inhalt direkt danach erreichbar?
+  6. `beziehungen` › Bedeutungsschleife auf dem Telefon (schmal): Leserichtung und Reihenfolge Station 1 → 5 → 1 verständlich?
+  7. Fusszeile: Zuständigkeit ohne Telefonnummer, Links «Impressum» und «Datenschutz» erreichbar und mit Touch ohne Fehltipp treffbar (auch der E-Mail-Link der Absenderin, SP1-42).
+  8. `404` und `quellen`: Link «Zur Übersicht» bzw. Wegweiser-Sprung, danach Lesen an der richtigen Stelle.
+- **Theme «Hoher Kontrast» per Bedienung:** Die Website hat keinen Schalter; geprüft durch Setzen von `data-theme="kontrast"`.
+- **Erzwungene Farben unter Windows:** nur Chromium-Emulation (berechnete Farben werden ersetzt, Fotos angesehen); echter Windows-Kontrastmodus offen (Protokoll oben).
+- **Druck in Firefox/Safari:** nur Chromium-PDF; `::details-content` (Rückfall ohne Skript) kennt nicht jeder Browser.
+- **Netlify-Vorschau:** nicht Teil dieses Teils (lokaler Server, Stand `f1d6572`).
+
+### SP1 · 5.6 W3 Code-Review (nur Review, keine Änderungen)
+
+Kriterien «Technische Qualität».
+
+#### 5.6 a · Website-Ordner, Werkzeuge, Technik-Regeln, Export und Ziel-Repository, Datenschutz, Sicherheit, Performance (Punkte 1, 2, 3, 5)
+
+**Vorgehen**
+
+- **Gelesen:** `CLAUDE.md`, `guidelines/00-ablauf-pruefung-und-freigabe.md`, `guidelines/00-technische-qualitaet.md`, `PRUEFAUFTRAG-SCHLUSSPRUEFUNG.md` (Abschnitte 1–4, 5.6), im `PRUEFBERICHT.md` gezielt die Selbstprüfung «Etappe 3-2» (Z. 1057–1208) und die früheren W3-Teile (P3b Z. 740–768, Teil H Z. 1030–1053, Z31 Z. 488–494) als Liste dessen, was zu prüfen ist.
+- **Projektwerkzeuge selbst ausgeführt** im Arbeitsbaum (Ausgaben unter `SP/w3a/*.txt`): `build.mjs`, `gate.mjs --production`, `gate.mjs --selftest`, `abgleich/pruefe-abgleich.mjs`, `kennzahlen.mjs`, `verwendet-auf.mjs` (beide Modi), `verneinung.mjs`, `export.mjs SP/w3a/export` (Entwurf).
+- **Eigene Skripte** unter `SP/w3a/`:
+  - `redir.mjs`: `_redirects` (Regeln, Status, doppelte Quellen, Ketten, Ziel und Anker vorhanden, Quelle trifft Datei) und alle `href`/`src` der Seiten gegen einen Exportordner
+  - `technik.mjs`: Inline-Skripte, `on*=`, `javascript:`, `style`-Attribute und -Elemente, externe Ressourcen, `data:`, Formulare/Einbettungen, Farbliterale in CSS und SVG-Attributen, `lang`, Tracking-Wörter, `target="_blank"`, `tel:`
+  - `lang.mjs`: englische Wortfolgen in `<main>` ausserhalb von `lang="en"` (Heuristik)
+  - `server.mjs`: statischer Server, der die Kopfzeilen aus `site/_headers` setzt (CSP lokal wirksam)
+  - `requests.cjs` (Playwright): 17 Seiten und `/a/b/c`, Anfragen, fremde Hosts, Fehler, Konsole, Bytes je Seite, geladene Schriften
+  - `coverage.cjs`: CSS-/JS-Abdeckung über 17 Seiten bei 1280 und 360 px
+  - `ueberlappung.cjs`, `shot3.cjs`: Textüberlappung in allen Figuren bei Browser-Schriftgrösse 16/24/32 px (`Page.setFontSizes`) und 1024/1280/1440 px, Fotos
+  - `woff2.mjs`: entpackt die WOFF2-Daten und sucht Copyright- und Lizenzangaben
+
+**Ergebnis je Punkt**
+
+##### Punkt 1 · Website-Ordner und Werkzeuge
+
+| Punkt | Ergebnis | Beleg |
+| --- | --- | --- |
+| `node tools/build.mjs` | erfüllt | «17 Seiten geschrieben · PUK Website Kit 1.10.1-r4 · abgeleitet · Build r4-8 · Gate draft: 0 blockierend, 2 Hinweise» (`crisis-number-check` «144» auf `quellen`, `review-report`); Exit 0 |
+| `git status` danach | leer | `git status --short \| wc -l` → 0 (vor und nach Build, Abgleich-Skripten und Export) |
+| `node tools/gate.mjs --production` | blockiert wie erwartet | Exit 1; «BLOCK site review-report Prüfbericht: offene Stufen W1, W2, S, …, R3» und 1 Hinweis (`crisis-number-check`). «144» ist Seitenzahl: Text um den Treffer «Family Process 60(1), 134–144» (eigene Suche ohne SVG, einziger Treffer auf 17 Seiten) |
+| `node tools/gate.mjs --selftest` | erfüllt | «Selbsttest: 65/65 bestanden.», Exit 0 |
+| `abgleich/pruefe-abgleich.mjs` | erfüllt | «Abgleich geprüft: 7371 Zeilen, 0 ohne Fundstelle.», Exit 0 |
+| `abgleich/kennzahlen.mjs` | läuft, Tabelle ausgegeben | 15 Zeilen, z. B. «`verstehen` \| 2524 \| 1872 \| 74 %», «`impressum-datenschutz` \| 1382 \| 501 \| 36 %»; Nachrechnen der Werte gehört zu W1/W2 |
+| `abgleich/verwendet-auf.mjs` (Standard: Quellenblöcke und Legenden) | erfüllt | «85 Einträge, 0 mit anderer Angabe, 0 Kurzangaben nicht zugeordnet.» Eigene Zählung: 85 `<li><p><strong>` und 85 `puk-longform__source-use` in `content/quellen.html`, das Skript erfasst also alle Einträge |
+| `verwendet-auf.mjs --ohne-legenden` | wie erwartet | 6 Abweichungen, alle «Verstehen»: Baranger 2020, Degasperi 2021, Santangelo 2014, Shields 2016 → «Hintergrund …»; Linehan 2015 und Hoffman 2005 ohne «Verstehen». Das sind genau die Quellen, die auf `verstehen` nur in Bildlegenden/Bezugspunkten stehen; der Modus dient nur dem Vergleich (Kopf Z. 7) und schreibt nichts |
+| `verwendet-auf.mjs` als Prüfwerkzeug | Hinweis | Exit 0 auch bei Abweichungen oder nicht zugeordneten Kurzangaben (Ende des Skripts ohne `process.exit`); `pruefe-abgleich.mjs` endet dagegen mit 1 bei Problemen (Z. 131). SP1-49 |
+| `abgleich/verneinung.mjs` | läuft | 15 Zeilen, z. B. «`fragen` \| 145 von 449 (32 %) \| 65 von 287 (23 %)»; Bewertung gehört zu S |
+| `abgleich/*.mjs` Wartbarkeit | erfüllt | ohne Abhängigkeiten ausser `bedienung.mjs` (Playwright, mit Fehlermeldung und Exit 2 bei Fehlen, Z. 21); Pfade relativ zum Skript (`fileURLToPath(import.meta.url)`) |
+| `tools/` gegen Starter | gleich | `diff -r tools ../psychoeducation-site-starter/tools` ohne Ausgabe; keine Abweichung zu bewerten. Im Hauptrepository ist der Starter seit `f1d6572` unverändert (`git diff --stat f1d6572 HEAD`: nur der Prüfauftrag) |
+| `starter.css`, `_headers`, `gate.html`, `content/404.html` gegen Starter | gleich | `cmp` je ohne Ausgabe |
+| Profil-Komponenten | erfüllt | Stylesheets wie im Starter (`../../../styles.css`, `visual-patterns.css`, `erklaermuster.css`, `starter.css`), dazu `borderline.css`; Skript `../../../components/interaktion.js`. Exportiertes `js/interaktion.js` = `components/interaktion.js` (`cmp` gleich). `bundle.css`/`bundle.js` sind die React-/Kettenfassung und werden von der Website nicht geladen (wie im Starter) |
+| Versionen | konsistent | `contract.js`: `VERSION` «PUK Website Kit 1.10.1-r4 · abgeleitet», `BUILD` «r4-8»; `assetVersion` «r4-8» wie im Starter; 17 von 17 Seiten `data-puk-site-build="r4-8"`; Kopf von `css/site.css` «… 1.10.1-r4 · abgeleitet · Build r4-8» |
+| `site.config.json` | erfüllt | 17 Seiten, alle `published`, `404` mit `role` «not-found»; 109 Plan-Zeilen (99 Text + 10 Figuren); `content/` hat genau die 17 Dateien der Seiten-IDs (`diff` leer); `legal` → `impressum-datenschutz.html#impressum`/`#datenschutz` |
+| `borderline.css` | erfüllt mit Befund | 0 Farbliterale (`grep` Hex/rgb/hsl: 0; Farben nur `var(--…)`, einmal `transparent`), 0 `!important`, Schriftgrade nur über Tokens. Container-Abfragen: eine in `em` (Kurve, Z. «45.71em»), fünf in px (Z. 26 `700px`, 75 und 86 `560px`, 119 `800px`, `860px`); zwei davon führen bei grosser Schrift zu Überlappungen: SP1-1, SP1-2 |
+| `_redirects` (Website-Ordner) | erfüllt | siehe Punkt 3 (Datei byte-gleich mit `site/_redirects`) |
+| Export-Werkzeug (Fehlerfälle) | Hinweise | `export.mjs` leert den Zielordner nicht (nur `mkdir`/`writeFile`, Z. 31, 78) und kopiert `_redirects` nicht (Z. 85 nur `_headers`): SP1-44 |
+
+##### Punkt 2 · Technik-Regeln (eigene Skripte, 17 gebaute Seiten + `gate.html`, `borderline.css`, `starter.css`; Gegenprobe auf `site/` und `css/site.css`)
+
+| Punkt | Ergebnis | Beleg |
+| --- | --- | --- |
+| Externe Schriften, Skripte, CDNs | keine | `technik.mjs`: 0 externe `src`/`href` auf `script`, `link`, `img`, `iframe`, `source`, `use` ausser `rel="canonical"` (16); `css/site.css`: `url()` nur `../fonts/Rubik-*.woff2` (3) und ein `data:image/svg+xml` (Profil); 0 `@import` |
+| Tracking | keins | 0 Treffer für google, gtag, analytics, matomo, plausible, facebook, hotjar, cdn., unpkg, jsdelivr (einziger Treffer «gtag» ist «Sonnige Traurig*tag*e», `unterstuetzung`); `interaktion.js`: 0 `localStorage`, `sessionStorage`, `document.cookie`, `fetch(`, `XMLHttpRequest`, `sendBeacon` |
+| Inline-Skripte | keine | 0 `<script>` ohne `src`, 0 `on*=`-Attribute, 0 `javascript:`; 13 Seiten mit `<script src="…interaktion.js?v=r4-8" defer>`, `gate.html` mit zwei `src`-Skripten (nicht im Export) |
+| `style`-Attribute, `<style>` | keine | 0 `style=` und 0 `<style` auf allen Seiten, auch nicht in den 9 Inline-SVG; `assets/logo.svg`, `favicon.svg`: 0 `style=`, 0 `<style`, 0 `<script` |
+| Farben nur über Tokens | erfüllt (Website) | `borderline.css` 0 Literale; `starter.css` 1 Treffer nur im Kommentar Z. 40; Inline-SVG: 0 `fill`/`stroke`/`stop-color`-Attribute (Farbe über Klassen). In `css/site.css` (Profil) 4 Literale ausserhalb von Token-Definitionen (`::backdrop rgba(34,34,34,.55)`, `body{background:#fff}`, `.puk-vis-btn` Rückfallwerte) und `fill="#222222"` in `logo.svg`/`favicon.svg`: Profilsache, kein Befund an der Website |
+| Content-Security-Policy | erfüllt | `_headers`: `default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'`. Lokal mit diesen Kopfzeilen (`server.mjs`) 17 Seiten + `/a/b/c`: 0 CSP-Meldungen; einzige Konsolenmeldung die erwartete 404 von `/a/b/c`. `data:` nur im CSS (`img-src data:` erlaubt); keine Formulare, `iframe`, `embed`, `object` |
+| `lang` | erfüllt | 17/17 Seiten `<html lang="de-CH">`; 91 `lang="en"` auf 12 Seiten; Gate ohne `lang-part`. `lang.mjs`: alle englischen Quellentitel ausgezeichnet; ohne `lang` stehen nur Zeitschriften- und Herausgebernamen, z. B. «American Journal of Psychiatry», «National Education Alliance for Borderline Personality Disorder (NEABPD)» (19 Treffer auf `quellen`). Eigennamen sind von WCAG 3.1.2 ausgenommen; die Leitlinie verlangt `lang` für Quellentitel. Kein Befund |
+| Externe Links | erfüllt | 0 `target="_blank"`, 0 `tel:`; 27 externe Hosts, nur als Links |
+
+##### Punkt 3 · Export und Ziel-Repository
+
+| Punkt | Ergebnis | Beleg |
+| --- | --- | --- |
+| Export selbst erzeugt | erfüllt | `node tools/export.mjs SP/w3a/export`: «17 Seiten · css/site.css · 3 Schriftdateien · js/interaktion.js · Gate draft: 0 blockierend, 2 Hinweise.» |
+| Inhalte `f78aae9` = `f1d6572` | bestätigt | `git diff --stat f78aae9 f1d6572`: nur `PRUEFBERICHT.md` (+133) und `UMBAUPLAN.md` (4 Zeilen) |
+| Export gegen `site/` (`34a2e58`) | gleich bis auf eine erwartete Datei | `diff -r SP/w3a/export SP/w3a/umzug/site` → einzige Ausgabe «Only in …/umzug/site: _redirects». 26 Dateien Zeichen für Zeichen gleich. Erklärung: `export.mjs` kopiert `_redirects` nicht (Z. 85), die Datei ist von Hand kopiert |
+| `_redirects` in `site/` gegen Website-Ordner | gleich | `cmp` ohne Ausgabe |
+| 85 Regeln selbst gezählt | erfüllt | `redir.mjs`: «Regeln 85, Status {"301":85}, Splat 4, Anker 64, Fehler 0, doppelte Quellen 0, Quelle trifft Datei 0»; 0 Ketten (kein Ziel ist Quelle einer Regel); jedes Ziel und jeder Anker in `site/` vorhanden. Auffangregeln (`/soforthilfe/*`, `/materialien/text/*`, `/infografiken/*`, `/api/material-download/*`) stehen nach den Einzelregeln |
+| `netlify.toml` | erfüllt | `publish = "site"`, `command = "echo 'Statische Website: kein Build'"`, eine Regel `/404` → `/404.html` Status 404 `force`; keine Header-Regeln (Kopfzeilen aus `site/_headers`), keine Funktionen. Kommentar erklärt den Unterordner |
+| `README.md` | erfüllt | nennt Quelle, Entstehung (Export, `_redirects` von Hand), `react-archiv`, Stand «Entwurfs-Export»; Kontakt nur `angehoerigenarbeit@pukzh.ch`; Suche nach Telefonmustern, `tel:`, `+41`, 143/144/147 in `README.md`, `CLAUDE.md`, `netlify.toml`: 0 (einziger Zifferntreffer der Zeitstempel im Branch-Beispiel von `CLAUDE.md`) |
+| `.gitignore` | sinnvoll | `**/node_modules`, `.pnpm-store/`, `dist/`, `build/`, `coverage/`, Testberichte, `.env`, `.env.*`, `.netlify`, `.claude/`, Editor- und Systemdateien; `site/` nicht ausgeschlossen |
+| Was mit den React-Quellen entfernt ist | nichts, was die neue Website braucht | `git diff --name-status origin/main origin/umzug-…`: 968 D, 25 A, 3 M, 2 R100 (Logo und Symbol nach `site/assets/`). Alle 464 internen Verweise der 17 Seiten (130 Ziele) und alle 85 Regelziele liegen in `site/` (`redir.mjs`: fehlend 0). Keine Seite verlinkt PDFs, Handouts oder `/api/material-download/` (`grep`: 0); die alten PDF-Adressen leiten weiter. `material-download` entfällt, `/api/material-download/*` → `/index.html` |
+| Alte Adressen ohne Gegenstück | Hinweise | `robots.txt` (auf `main` mit «Sitemap: …/sitemap.xml») entfällt ersatzlos: SP1-45. Die alte `client/public/_redirects` (auf `main`) leitete neun `…-v1`-Dateien auf `…-v3` weiter; jetzt fallen `/infografiken/manus-*-v1.pdf` unter `/infografiken/*` → Startseite, die `-v3`-Fassung derselben Handouts aber auf den Abschnitt: SP1-50. `/notfallkarte/erstellen`, `/notfallkarte-print.html`, `/soforthilfe-print.html` waren 404 und bleiben 404. `favicon.ico`, `apple-touch-icon.png`, `manifest.json`, `og-image.jpg` entfallen; die Seiten nennen `assets/favicon.svg` und kein `og:image`: kein Befund |
+| `react-archiv` gleich wie `main` | erfüllt | `git rev-parse origin/react-archiv origin/main` → beide `f46038b04bba7f849cc6691892d3729f9c5aa7f8` (nach `git fetch`); `origin/umzug-…` = `34a2e58c33a2…` |
+| Verlauf des Branchs | nicht vollständig prüfbar | Klon ist flach (`--is-shallow-repository` true); sichtbar nur `34a2e58` (Elter `e5c8441`, nicht im Klon). Die Selbstprüfung nennt `8120051` und `e5c8441`; nicht nachgeprüft |
+| Späterer `--production`-Export | Befund | `export.mjs` rendert die Seiten ohne Modus (`C.renderPage(cfg, p, …)`, Z. 25); `--production` ändert nur das Gate. Die Fusszeile kommt aus `site.config.json` (`contract.js` Z. 176: «Redaktioneller Status: ${cfg.editorialStatusLabel \|\| cfg.editorialStatus}»), heute «Entwurf – fachliche Prüfung ausstehend» auf 17/17 Seiten von `site/`. Das Gate prüft nur, ob `editorialStatus` gesetzt ist (Z. 190). Ein `--production`-Export ohne Änderung an `site.config.json` liefert also dieselben Bytes wie der Entwurf, mit «Entwurf» in der Fusszeile. Die Selbstprüfung (Entscheide Nr. 6) setzt voraus, dass der neue Export das ändert: SP1-3. Sonst gleich bleiben: Hinweis `crisis-number-check`; `_redirects` erneut von Hand (SP1-44) |
+
+##### Punkt 5 · Datenschutz, Sicherheit, Performance
+
+| Punkt | Ergebnis | Beleg |
+| --- | --- | --- |
+| Anfragen an fremde Adressen | 0 | `requests.cjs` mit CSP-Kopfzeilen, Chromium 1280 px, Vertiefungen geöffnet, gescrollt: 17 Seiten + `/a/b/c`, «fremde Anfragen 0, fehlgeschlagen 0, Konsolenmeldungen 1» (404 von `/a/b/c`); je Seite 6–7 Anfragen (Seite, `site.css`, `logo.svg`, 3 Schriften, ggf. `interaktion.js`) |
+| Lokale Schriften | erfüllt | 3 Dateien `Rubik-Light/Regular/Medium.woff2` (55,8/61,1/61,7 kB), je `font-display:swap`; geladen auf allen 18 Aufrufen «Rubik 300, 400, 500»; «Rubik Variable» aufrecht und kursiv im Export entfernt (Kommentar «entfällt, nicht verwendet») |
+| Schriftlizenz (Selbstprüfung 3-2, Aufgefallen Nr. 7) | bestätigt, abgeschwächt | Keine OFL-Datei im Export (`find`: 0); im Profil `licenses/Rubik-OFL.txt`, `assets/fonts/OFL.txt`. Eigene Entpackung der WOFF2 (`woff2.mjs`): alle drei Dateien enthalten «Copyright 2015 The Rubik Project Authors (https://github.com/googlefonts/rubik)» und «This Font Software is licensed under the SIL Open Font License, Version 1.1 … https://scripts.sil.org/OFL». OFL 1.1, Bedingung 2, lässt Copyright und Lizenz in Metadaten zu; der volle Lizenztext liegt aber nicht bei: SP1-46 (Profil) |
+| Dateigrössen | erfüllt | Seiten 4,6 kB (`404`) bis 69,8 kB (`quellen`); `css/site.css` 104,7 kB (gzip 26,4 kB); `js/interaktion.js` 12,6 kB (gzip 3,9 kB); Schriften 178,6 kB; `logo.svg` 39,7 kB (gzip 7,6 kB). Je Seite ungepackt 320 kB (`404`) bis 396 kB (`quellen`), mit gzip geschätzt 209–230 kB, davon 175 kB Schriften. Mittlere Mobilverbindung: wenige Sekunden |
+| Ungenutztes CSS/JS | Hinweis | Abdeckung über 17 Seiten × 1280/360 px: `site.css` 42 489 von 104 234 Zeichen genutzt (41 %; Druck, Themes und Zustände wie `:hover` zählen nicht, also Untergrenze); `interaktion.js` nur auf den 13 Seiten mit Akkordeon oder `details` (je Seite gezählt: `index`, `ueber`, `impressum-datenschutz`, `404` ohne beides und ohne Skript): SP1-47 (Profil) |
+| Caching | Hinweis | `_headers` ohne `Cache-Control`; die alte `netlify.toml` hatte `immutable` für `/assets/*` und `/*.woff2`. CSS und JS tragen `?v=r4-8`, die Schriften nicht: SP1-48 |
+| Sicherheits-Header (`_headers`) | erfüllt | CSP (oben), `X-Content-Type-Options: nosniff`, `Referrer-Policy: no-referrer`, `Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()`, `X-Frame-Options: DENY`; gleich wie Starter. HSTS nicht in `_headers` (die alte `netlify.toml` hatte `max-age=31536000; includeSubDomains`); die Leitlinie verlangt es nicht, Netlify setzt es auf HTTPS selbst (auf der Vorschau zu belegen, Punkt 4) |
+| Datenschutzangaben gegen Code | erfüllt | `impressum-datenschutz` «Keine Cookies, keine Auswertung», «Schriften, Bilder und Skripte liegen auf demselben Server», Netlify als Auslieferung: entspricht 0 fremden Anfragen, 0 Speicherzugriffen, 0 Formularen |
+| Abhängigkeiten | keine | `site/` ohne `package.json`, ohne Fremdbibliothek; `interaktion.js` ohne `eval`, `new Function`, `innerHTML`, `insertAdjacentHTML`, `.style.` |
+| Zugangsdaten, Fallmaterial | keine | Stamm des Branchs: nur `.gitignore`, `CLAUDE.md`, `README.md`, `netlify.toml`, `site/` |
+
+**Nicht geprüft oder nicht prüfbar**
+
+- **Netlify-Vorschau, ausgelieferte Kopfzeilen, HSTS, «Pretty URLs»:** Punkt 4, andere Teilprüfung.
+- **`--production`-Export:** nicht ausführbar (Gate blockiert `review-report`); Verhalten aus dem Code bewertet (`export.mjs` Z. 25–28).
+- **Verlauf `8120051`/`e5c8441`:** Klon flach, nicht im Klon; nicht nachgeladen (nur lesen).
+- **`npm audit`:** entfällt für `site/` (keine Abhängigkeiten); `package.json` der React-Fassung auf `main` nicht Gegenstand.
+- **Lighthouse, echte Ladezeiten, reale Geräte, Screenreader:** nicht ausgeführt; Grössen und Abdeckung gemessen, gzip geschätzt (Netlify liefert Brotli/gzip).
+- **Kennzahlen und Verneinungsanteile inhaltlich:** nur Lauf der Skripte; Nachrechnen gehört zu W1/S.
+- **Externe Links online:** nicht geprüft (27 Hosts nur gezählt).
+- **Grosse Schrift bei Breiten unter 1024 px:** Überlappungsprüfung nur bei 1024/1280/1440 px; Seitenzoom 200 % (640 px) nicht wiederholt.
+
+#### 5.6 b · Netlify-Vorschau, Z31-W3-2 nachgeprüft (Punkt 4; Teil G gehört zu 5.7)
+
+**Vorgehen**
+
+- **Gelesen:** `CLAUDE.md`, `guidelines/00-ablauf-pruefung-und-freigabe.md`, `PRUEFAUFTRAG-SCHLUSSPRUEFUNG.md` (ganz), `guidelines/00-technische-qualitaet.md`; im `PRUEFBERICHT.md` der ganze Block «Etappe 3-2» (Z. 1060–1207), Z31-W3-2 (Z. 489), P3b-W3-1/-2 (Z. 761 f.).
+- **Netlify nur lesend:** `get-project` (Projekt `73a027a4…`) und `get-deploy-for-site` für `6acd0e03…` und `6acd09958…`.
+- **GitHub nur lesend:** `gh api repos/christaegger-dot/borderline-angehoerige/pulls/659`, `…/commits/34a2e58…/check-runs`, `…/status`, `…/branches/main/protection`.
+- **Skripte unter `SP/w3n/`:**
+  - `redirects.py`: liest `_redirects` (Website-Ordner `f1d6572`), je Regel `curl` ohne Folgen (Status, `location`), Ziel ohne Anker ohne Folgen (Status), Anker als `id="…"` im Ziel-HTML. Platzhalter `*` mit Beispielpfad `beispiel/tief` ersetzt (`:splat` kommt in keinem Ziel vor). Ergebnis `redirects.json`.
+  - `konsole.js` (Playwright/Chromium, 1280 × 900, über den Proxy): 17 Seiten (`/`, `/<id>`, 404 über `/a/b/c`), Lauf A normal, Lauf B mit `page.route('**/.netlify/**', abort)`; erfasst Konsole, `securitypolicyviolation`-Ereignisse, `pageerror`, fehlgeschlagene und fremde Anfragen, geladene Schriften, Logo-Breite; Fotos `foto-index.png`, `foto-verstehen-slash.png`, `foto-404.png` (angesehen). Ergebnis `konsole.json`.
+  - `links.py`: ausgeliefertes HTML (`served/`, per `curl`) gegen Export (`export/`, `git show origin/umzug-puk-profil-1791821335:site/<id>.html`) auf Token-Ebene (Attribute sortiert, Netlify-Block entfernt, `href` nach der Regel «x.html → /x, index.html → /» normalisiert); dazu alle `href`/`src` aller 17 Adressen aufgelöst und mit `curl` ohne Folgen geprüft, Anker im Ziel-HTML.
+  - `woff2lic.js`: liest den `name`-Table der drei WOFF2-Dateien im Export (Lizenzfelder 13/14).
+  - Kopfzeilen, Varianten (Schreibweise, Schrägstrich, Querystring), Produktion: `curl -sS -I` bzw. `-o /dev/null -w '%{http_code} %{redirect_url}'` in Bash-Schleifen (Befehle unten je Punkt).
+
+**Ergebnis je Punkt**
+
+##### A · Die zehn Punkte «Etappe 3-2: Auf der Vorschau zu prüfen»
+
+| Punkt | Ergebnis | Beleg |
+| --- | --- | --- |
+| 1 Startseite neu | erfüllt | `/` 200, Titel «Startseite \| Borderline – Orientierung für Angehörige»; Foto `foto-index.png`: PUK-Logo, Navigation «Verstehen … Auf sich achten», Zeile «ABSENDERIN Fachstelle Angehörigenarbeit • Psychiatrische Universitätsklinik Zürich • angehoerigenarbeit@pukzh.ch», h1 «Borderline – Orientierung für Angehörige»; Rubik 300/400/500 geladen, Logo `naturalWidth` 214 |
+| 2 Krisenrouten | erfüllt | `/soforthilfe` 301 `/index.html`; `/soforthilfe/` 301 `/index.html`; `/soforthilfe/irgendwas` und `/soforthilfe/a/b` 301 `/index.html`; `/notfallkarte` 301 `/index.html`; Ziel `/index.html` 200 ohne weitere Umleitung |
+| 3 Gleichnamige Routen | erfüllt | `/verstehen`, `/grenzen`, `/kommunizieren`, `/selbstfuersorge`, `/genesung`, `/quellen` je 200; mit Schrägstrich je 301 auf die Adresse ohne Schrägstrich (z. B. `/grenzen/ -> 301 /grenzen`). Alle 27 Adressen der `sitemap.xml` der Produktion (React) enden auf der Vorschau mit 200 (`curl -L`, 0 bis 1 Umleitung) |
+| 4 Anker im Ziel | erfüllt | `/therapieangebote` 301 `/behandlung.html#angebote`, `/selbsthilfegruppen` 301 `/unterstuetzung.html#selbsthilfe`; Ziele 200, `id="angebote"` und `id="selbsthilfe"` im Ziel-HTML (Teil B: alle 64 Regeln mit Anker) |
+| 5 `/x.html` und `/x` | erfüllt | `/verstehen.html` 200 und `/verstehen` 200, ohne Umleitung, gleiches HTML (`cmp` gleich); `/index` 301 `/`. Folge: zwei Adressen je Seite (siehe F und SP1-52) |
+| 6 Schreibweise | erfüllt, mit Befund | `/Notfallkarte-Zuerich-Psychische-Krise.pdf` 301 `/index.html`; `/VERSTEHEN`, `/Verstehen`, `/Verstehen.html`, `/verstehen.HTML` je 301 `/verstehen`. Regeln greifen nur in exakter Schreibweise: `/notfallkarte-zuerich-psychische-krise.pdf`, `/NOTFALLKARTE-ZUERICH-PSYCHISCHE-KRISE.PDF`, `/Soforthilfe`, `/SOFORTHILFE`, `/Notfallkarte`, `/FAQ`, `/Faq`, `/Materialien/Text/Eisberg` je 404 (SP1-51) |
+| 7 404 in der Tiefe | erfüllt | `/a/b/c` 404, h1 «Diese Seite gibt es nicht», Rubik geladen, Logo 214 px, Absenderin, Schaltfläche «Zur Übersicht» (Foto `foto-404.png`) |
+| 8 404 für `/404` und Repository-Dateien | erfüllt | `/404`, `/README.md`, `/CLAUDE.md`, `/netlify.toml`, `/_redirects`, `/_headers`, `/robots.txt` je 404; `/404.html` 200 |
+| 9 Konsole und Kopfzeilen | erfüllt für die Website | Teil C und D: Kopfzeilen auf allen 17 Seiten und 10 Dateien wortgleich mit `_headers`; alle Konsolenmeldungen stammen vom Netlify-Vorschau-Block bzw. vom 404-Status des Dokuments; aus der Website 0 Verstösse |
+| 10 `/verstehen/` (Codex P1) | erfüllt (bei heutiger Einstellung) | `/verstehen/` 301 `/verstehen` 200; im Browser Endadresse `/verstehen`, `font-family` «Rubik, Helvetica, sans-serif», Logo `assets/logo.svg` 214 px (Foto `foto-verstehen-slash.png`). Gilt nur, solange Netlify vom Schrägstrich wegleitet (SP1-54) |
+
+##### B · Alle 85 Weiterleitungen
+
+`python3 -I SP/w3n/redirects.py …/_redirects …/redirects.json` → «Regeln 85 alles erfuellt 85». Je Regel geprüft: Status 301, `location` gleich dem Ziel der Regel (Pfad und Anker), Ziel ohne Anker antwortet 200 **ohne** weitere Umleitung, Anker als `id` im Ziel-HTML. `site/_redirects` auf `34a2e58` ist `cmp`-gleich mit `_redirects` im Website-Ordner; `grep -cvE '^\s*(#|$)'` → 85 Regeln; Netlify meldet «86 redirect rules processed» (85 + 1 aus `netlify.toml`).
+
+| Gruppe | Regeln | 301 | `location` = Ziel | Ziel 200 | Anker vorhanden |
+| --- | --- | --- | --- | --- | --- |
+| Krisenzugang entfällt (`/soforthilfe` … `/notfallplan-krise-v04-preview.webp`), davon 1 Platzhalter `/soforthilfe/*` | 10 | 10 | 10 | 10 | – (kein Anker) |
+| Seiten (`/verstehen/diagnostik` … `/datenschutz`) | 21 | 21 | 21 | 21 | 14 von 14 |
+| Alte Weiterleitungen (`/unterstuetzen` … `/therapieangebote`) | 5 | 5 | 5 | 5 | 3 von 3 |
+| Textfassungen `/materialien/text/…`, davon 1 Platzhalter `/materialien/text/*` | 42 | 42 | 42 | 42 | 42 von 42 |
+| PDFs und Download (`/infografiken/…`, `/infografiken/*`, `/api/material-download/*`) | 7 | 7 | 7 | 7 | 5 von 5 |
+| **Summe** | **85** | **85** | **85** | **85** | **64 von 64** |
+
+Einzelergebnisse aller 85 Regeln (Quelle, Testpfad, Status, `location`, Zielstatus, Anker) in `SP/w3n/redirects.json`. Beispiele: `/materialien/text/eisberg` 301 `/verstehen.html#eisberg` (Ziel 200, `id="eisberg"`); `/materialien/text/*` mit `/materialien/text/beispiel/tief` 301 `/index.html#einstiege`; `/api/material-download/*` mit `…/beispiel/tief` 301 `/index.html`.
+
+**Varianten** (`curl -o /dev/null -w '%{http_code} %{redirect_url}'`):
+
+| Variante | Ergebnis |
+| --- | --- |
+| Schrägstrich am Ende einer Regelquelle | greift: `/notfallkarte/` 301 `/index.html`, `/faq/` 301 `/fragen.html`, `/materialien/text/eisberg/` 301 `/verstehen.html#eisberg`, `/therapieangebote/` 301 `/behandlung.html#angebote` |
+| Platzhalter ohne Unterpfad | `/infografiken` und `/infografiken/` 301 `/index.html`; `/api/material-download` und `…/` 301 `/index.html` |
+| Querystring | wird durchgereicht, Anker bleibt am Ende: `/faq?utm=a` 301 `/fragen.html?utm=a`; `/materialien/text/eisberg?a=b` 301 `/verstehen.html?a=b#eisberg`; `/therapieangebote?x=1` 301 `/behandlung.html?x=1#angebote`. Antwortkopf `netlify-vary: query` |
+| Gross- und Kleinschreibung | Regeln nur exakt: `/Soforthilfe`, `/FAQ`, `/Notfallkarte`, `/Materialien/Text/Eisberg` 404. Vorhandene Dateien dagegen tolerant: `/Verstehen` 301 `/verstehen`. Produktion (React) heute: `/Soforthilfe` 301 `/soforthilfe/`, `/FAQ` 301 `/faq` (SP1-51) |
+| Alte Quellen aus `netlify.toml` (`origin/main`, 15 `from`) | alle neuen Ziele erreichbar; `/notfallkarte/erstellen`, `/notfallkarte-print.html`, `/soforthilfe-print.html` 404 auf der Vorschau, wie auf der Produktion (dort bewusst `status = 404`, `netlify.toml` auf `main`) – kein Rückschritt |
+
+##### C · Kopfzeilen gegen `_headers`
+
+Bash-Schleife über 17 Seiten, `/verstehen.html`, `/404.html`, `/a/b/c`, `css/site.css`, `js/interaktion.js?v=r4-8`, drei Schriften, `assets/logo.svg`, `assets/favicon.svg`, `sitemap.xml`, `/soforthilfe` (28 Adressen), Vergleich als Zeichenkette:
+
+| Kopfzeile | Ergebnis | Beleg |
+| --- | --- | --- |
+| `content-security-policy` | 28 von 28 wortgleich | «default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'» (auch auf der 301-Antwort und auf `/a/b/c`) |
+| `x-content-type-options`, `referrer-policy`, `permissions-policy`, `x-frame-options` | 28 von 28 wortgleich | «nosniff», «no-referrer», «camera=(), microphone=(), geolocation=(), payment=(), usb=()», «DENY» |
+| zusätzlich von Netlify | alle 28 | `strict-transport-security: max-age=31536000; includeSubDomains; preload` |
+| `cache-control` | alle 28 Netlify-Vorgabe | «public,max-age=0,must-revalidate» (auch Schriften und Logo); `_headers` setzt keine; das Skript ist über `?v=r4-8` versioniert. Kein Befund (Profil verlangt keine Cache-Regel) |
+| `x-robots-tag` | Vorschau ja, Produktion nein | Vorschau alle 28 «noindex»; Produktion `curl -I /`: keine `x-robots-tag`-Zeile |
+| `content-type` | passend | HTML `text/html; charset=UTF-8`, CSS `text/css`, JS `application/javascript`, Schriften `font/woff2`, SVG `image/svg+xml`, Sitemap `application/xml` |
+
+##### D · Konsole (Playwright, 17 Seiten)
+
+| Lauf | Meldungen | Herkunft | Beleg |
+| --- | --- | --- | --- |
+| A normal | 69 (16 Seiten je 4, `/a/b/c` 5) | je Seite: 1 × «Refused to apply inline style … style-src 'self'» (CSP-Ereignis `style-src-attr`, Zeile 117 = Zeile des Netlify-Blocks), 1 × «Refused to frame 'https://app.netlify.com/'» aus `/.netlify/scripts/cdp`, 2 × «Potential permissions policy violation: camera/microphone»; auf `/a/b/c` zusätzlich «Failed to load resource … 404» (Status des Dokuments, erwartet) | `konsole.json`; je Seite 2 CSP-Ereignisse (`style-src-attr` inline, `frame-src` `https://app.netlify.com`) |
+| B `/.netlify/` gesperrt | 35 (je Seite 2, `/a/b/c` 3) | je Seite nur noch der `style`-Verstoss des Blocks und «Failed to load resource: net::ERR_FAILED @/.netlify/scripts/cdp» | CSP-Ereignisse je Seite 1 (`style-src-attr`, Zeile 117) |
+| beide | 0 `pageerror`, 0 fremde Anfragen, 0 fehlgeschlagene Anfragen ausser `/.netlify/` | Website selbst: 0 Inline-Skripte, `style`-Attribute nur im Block (Lauf B: 1 Element = der Block; Lauf A: 2 = Block und von `cdp` erzeugtes Element); Export: `grep -c 'style='` 0 in allen 17 Dateien | `konsole.json` |
+
+Die Zählung der bauenden Sitzung («je Seite 4 Meldungen (17 Seiten, 68)») stimmt für 16 Seiten; die 404-Seite unter `/a/b/c` hat 5 (die fünfte ist der 404-Status selbst). Kein Befund.
+
+##### E · Links im ausgelieferten HTML
+
+| Punkt | Ergebnis | Beleg |
+| --- | --- | --- |
+| Verweise | 585 `href`/`src` auf 17 Adressen (`/`, 15 Seiten, `/impressum-datenschutz`, `/a/b/c`); davon 481 auf die Vorschau: 400 `a`, 34 `link` (Stylesheet, Icon), 30 `script` (13 × `interaktion.js`, 17 × `/.netlify/scripts/cdp`), 17 `img`; 263 mit Anker; 126 verschiedene `a`-Ziele | `links.py` |
+| Status und Anker | alle 481 internen Verweise 200 ohne Umleitung, jeder Anker im Ziel; einziger Rest `#main-content` auf `/a/b/c` (Seite selbst 404, erwartet) | `links.py`: «nicht 200 oder Anker fehlt 1 [('/a/b/c', '#main-content', '404 ', …)]» |
+| Externe und Produktionsadressen | 104 (Quellen, `mailto:`, kanonische Links); externe Hosts über den Proxy nicht erreichbar (Status 000), daher hier nicht bewertet. Kanonische Links zeigen auf `https://borderline-angehoerige.netlify.app/<id>.html`; die Produktion (React) antwortet heute auf 9 davon mit 404 – erwartet bis zum Merge | `links.py`, Liste der 404 |
+| Ausgeliefert gegen Export | roh alle 17 verschieden; nach Entfernen des Blocks und Normalisieren der Links **17 von 17 gleich** (Token-Vergleich, keine weitere Abweichung). Netlify führt genau zwei Änderungen ein: (1) den Block vor `</body>`: `<div data-netlify-deploy-id="6acd0e03…" data-netlify-site-id="73a027a4…" data-vcs="github" style="position:fixed">` mit `<script async src="/.netlify/scripts/cdp">`; (2) «Pretty URLs»: 288 `a`-Tags umgeschrieben (`verstehen.html` → `/verstehen`, `index.html` → `/`, `diagnose.html#abklaerung` → `/diagnose#abklaerung`; auf `404` `/verstehen.html` → `/verstehen`), dabei einfache Anführungszeichen und neu geordnete Attribute. Unverändert: CSS-, Skript-, Bild- und Schriftpfade (relativ), `canonical`, `og:`-Angaben | `links.py`: je Seite 9 bis 38 umgeschriebene Links, «ABWEICHUNGEN: []»; `diff` z. B. `verstehen` Z. 188 |
+| Zahl der bauenden Sitzung | 297 = 288 + 9 (die 404-Seite zweimal gezählt, als `/404.html` und `/a/b/c`): bestätigt. «451 Verweise auf 131 Ziele» anders gezählt (18 Adressen, Elementauswahl nicht genannt); nicht deckungsgleich nachrechenbar, Ergebnis gleich (alle erreichbar) | eigene Zählung oben |
+
+##### F · Bewertungen der bauenden Sitzung
+
+| Punkt | Ergebnis | Beleg |
+| --- | --- | --- |
+| «Pretty URLs»: Umschreiben | bestätigt | Teil E: 288 umgeschriebene Links, sonst 17 von 17 gleich |
+| «Pretty URLs»: doppelte Adressen | bestätigt | `/verstehen` und `/verstehen.html` je 200, ohne Umleitung, `cmp` gleich |
+| kanonisch, `sitemap.xml` gegen Links | bestätigt, uneinheitlich | `canonical` «…/verstehen.html», `sitemap.xml` 16 `<loc>` mit `.html` (z. B. «…/index.html»), Links ohne Endung (`/verstehen`, `/`). Siehe SP1-52 |
+| Netlify-Block nur auf Vorschau | bestätigt, soweit prüfbar | Deploy-Kontext «deploy-preview»; Produktion: `curl -sS / | grep -c data-netlify-deploy-id` → 0, `/verstehen` `grep -c netlify/scripts/cdp` → 0, keine `x-robots-tag`. Ob die Produktion der statischen Fassung nach dem Merge ebenfalls ohne Block ausgeliefert wird, ist erst nach dem Merge prüfbar |
+| PDF in Kleinschreibung | bestätigt, keine Änderung nötig | Vorschau `/notfallkarte-zuerich-psychische-krise.pdf` 404. `git grep -l "Notfallkarte-Zuerich-Psychische-Krise.pdf" origin/main` → 13 Dateien, `git grep -l "notfallkarte-zuerich-psychische-krise" origin/main` → 0; «notfallkarte-zuerich» sonst nur als Kennung (`handoutGovernance.ts:65`, Tests) und in `/api/material-download/notfallkarte-zuerich` (Regel `/api/material-download/*` greift). Produktion heute: `curl -I` auf Gross- **und** Kleinschreibung je 404 – die alte Fassung bediente die PDF gar nicht mehr (zurückgezogen, `qa/retired-handouts/…`) |
+| Team-Anmeldung für Vorschauen | weiter aus | `get-project`: `"requiresSSOTeamLogin":false`, `"requiresPassword":false`; ohne Anmeldung: Alias `/` 200, Permalink `https://6acd0e03ea79a5743fa2824e--borderline-angehoerige.netlify.app/` 200. Empfehlung: nach Abschluss beider Prüfungen und der Zusammenführung wieder einschalten (Prüfung 2 braucht den Zugang). Siehe SP1-53 |
+| Netlify-Standard-Icon | Hinweis, kein Befund | `/favicon.ico` 200 `image/vnd.microsoft.icon` 15 086 Byte mit `cache-status … fwd-status=404` (Netlify-Rückfall, nicht im Export); die Seiten verweisen auf `assets/favicon.svg` (34 `link` = 17 × Stylesheet + 17 × Icon) |
+
+##### G · 5.7 Selbstprüfung «Etappe 3-2»
+
+**Entscheide der bauenden Sitzung (zur Prüfung)**
+
+| Nr. | Bewertung | Beleg |
+| --- | --- | --- |
+| 1 Branchname ohne `claude/` | kein Befund | `origin/main:.github/workflows/auto-merge-claude.yml`: `on: push: branches: - "claude/**"`, erstellt PR gegen `main` und mergt; Branch `umzug-puk-profil-1791821335` passt nicht. Das `CLAUDE.md` des Ziel-Repositorys verlangt «claude/<beschreibung>-$(date +%s)»; die Abweichung ist begründet |
+| 2 Workflows entfernt | kein Befund | `git ls-tree -r --name-only origin/umzug-puk-profil-1791821335 | grep -c ^.github` → 0; auf `main` 5 Workflows (`allow-prs`, `audit-regression`, `auto-merge-claude`, `ci`, `visual-regression`), keiner mit `pull_request_target`; `gh api …/actions/runs?branch=umzug-puk-profil-1791821335` → `total_count` 0. Check-Runs von `34a2e58`: nur Netlify («Redirect rules», «Header rules» success, «Pages changed» neutral, «deploy-preview» success). Nach dem Merge hat `main` keine Workflows und kein `CODEOWNERS` mehr; Schutzregeln für `main` sind im Tarif nicht verfügbar (`…/branches/main/protection` → 403 «Upgrade to GitHub Pro») |
+| 3 Export in `site/` | kein Befund | `git ls-tree origin/umzug-…`: Stamm nur `.gitignore`, `CLAUDE.md`, `README.md`, `netlify.toml`, `site`; `netlify.toml` `publish = "site"`; `/README.md`, `/CLAUDE.md`, `/netlify.toml` je 404 auf der Vorschau |
+| 4 `CLAUDE.md` behalten, `README.md` neu | kein Befund | `git diff origin/main origin/umzug-… -- CLAUDE.md` leer (18 Zeilen, nur Branch-Namen und Aufräumregel, nichts zu React); `README.md` nennt Quelle, Entstehung, Stand, «Hier wird nichts von Hand geändert»; `grep -c tel:` 0, keine Nummer |
+| 5 `react-archiv` aus `main` | kein Befund | `git rev-parse origin/main origin/react-archiv` → beide `f46038b04bba…`; übrige Branches: 6 `codex/…`, 5 `copilot/…` = 11 |
+| 6 Entwurfsmodus | kein Befund | «Redaktioneller Status: Entwurf – fachliche Prüfung ausstehend» in allen 20 geladenen Dokumenten (`grep -l … served/*.html`) |
+| 7 Codex P1 ohne Änderung | Befund SP1-54 | Auf der Vorschau richtig (A 10). Die Widerlegung beruht auf der Umleitung `/verstehen/` → `/verstehen`, die Netlify heute ausführt; ob sie bei ausgeschalteten «Pretty URLs» (Empfehlung zu SP1-52) bestehen bleibt, ist nicht belegt |
+| 8 Netlify-Einstellungen nicht geändert | kein Befund, soweit lesbar | `get-project`: Zugriffsschutz aus, Formulare «not enabled»; Build- und Nachbearbeitungseinstellungen über die Verbindung nicht lesbar (`get-project` liefert sie nicht) |
+
+**Aufgefallen, nicht geändert**
+
+| Nr. | Bewertung | Beleg |
+| --- | --- | --- |
+| 1 Zahlen der ersten Deploys | kein Befund | `get-deploy-for-site 6acd09958…` (Commit `e5c8441`): «37 redirect rules processed», «4 header rules processed»; `6acd0e03…`: «86 …», «1 header rule processed», «18 new files uploaded» |
+| 2 Schutz der Vorschauen aus | Befund SP1-53, Frage SP1-F-25 | `"requiresSSOTeamLogin":false`; Alias und Permalink ohne Anmeldung 200. Der Entscheid war laut Bericht «Schutz kurz aus, danach wieder an» |
+| 3 «Pretty URLs» | Befund SP1-52, Frage SP1-F-24 | Teil E und F |
+| 4 Build-Einstellungen | kein Befund, offen bis nach dem Merge | über die Verbindung nicht lesbar (wie die bauende Sitzung); die Vorschau belegt `publish = "site"` (ausgeliefert = `site/`, 17 von 17). Vorschlag der bauenden Sitzung (Produktion nach dem Merge prüfen, Projekteinstellungen angleichen) ist schlüssig |
+| 5 `siteUrl` | kein Befund | Projekt-URL `http://borderline-angehoerige.netlify.app` (`get-project` › `primarySiteUrl`) = Ziel der kanonischen Links; bis zum Merge zeigen 9 von 16 auf eine 404-Adresse der React-Produktion (erwartet) |
+| 6 PDF in Kleinschreibung | kein Befund | Teil F |
+| 7 Schriftlizenz | kein Befund | `woff2lic.js`: alle drei Dateien tragen im `name`-Table «Copyright 2015 The Rubik Project Authors», nameID 13 «This Font Software is licensed under the SIL Open Font License, Version 1.1 …», nameID 14 «https://scripts.sil.org/OFL»; OFL 1.1 Abschnitt 2 lässt den Hinweis in maschinenlesbaren Metadaten zu. Eine `OFL.txt` fehlt im Export (`git ls-tree … | grep -i ofl` leer; auf `main` lag `client/public/fonts/Rubik-OFL.txt`); das betrifft `tools/export.mjs` im Profil |
+| 8 Funktion `material-download` | kein Befund | Deploy: «No functions deployed»; `/api/material-download/beispiel/tief`, `/api/material-download`, `/api/material-download/` je 301 `/index.html` |
+| 9 Codex-Review | kein Befund zu P2; P1 siehe SP1-54 | `.gitignore` auf dem Branch mit `**/node_modules`, `dist/`, `.env`, `.env.*`; `/404` 404 |
+
+**Kurzfassung der Selbstprüfung, nachgeprüft:** Nr. 1 (Z31-W3-2) – von dieser Prüfung unabhängig bestätigt: 85 von 85 Weiterleitungen, 10 von 10 Punkten. Nr. 4 – Schutz weiter aus. **Zusätzlich:** PR #659 ist kein Entwurf (SP1-6).
+
+**Nicht geprüft oder nicht prüfbar**
+
+- **Produktion nach dem Merge:** Block, `x-robots-tag`, Build-Einstellungen, Weiterleitungen und Kopfzeilen der statischen Fassung auf `borderline-angehoerige.netlify.app` – erst nach dem Merge prüfbar (Auftrag Abschnitt 7 Nr. 6).
+- **Projekteinstellungen von Netlify** (Build-Befehl, Publish-Ordner, «Pretty URLs»): über die Netlify-Verbindung nicht lesbar; nur aus dem Verhalten erschlossen.
+- **Verhalten ohne «Pretty URLs»:** nicht prüfbar ohne Änderung der Einstellung (SP1-54).
+- **Externe Links** (104, darunter PubMed, DOI, BFS, Fedlex, IPW): über den Proxy nicht erreichbar (Status 000); nicht Teil dieses Teils.
+- **Gerätetests** (Screenreader, Hardwaretastatur, Touch): nicht Teil dieses Teils.
+- **Inhalt des `cdp`-Skripts** von Netlify: nicht untersucht; nur seine Wirkung (Konsole, Anfragen) mit und ohne Sperre.
+
+### SP1 · 5.7 Selbstprüfungen bewertet
+
+Je Punkt Bewertung und Beleg in 5.1 c, Teil F (Block «Freigabe 2c und 3-1») und 5.6 b, Teil G (Block «Etappe 3-2»). Zusammengefasst:
+
+| Block | Punkt | Bewertung |
+| --- | --- | --- |
+| Freigabe 2c und 3-1 · Entscheide | 1 `em` statt `rem`, 2 Selektor, 4 Ort der Verweissätze, 5 Ort von Nr. 5, 6 Abgleich bei Verweisen, 7 NK31-4, 8 Listen, 9 Plan | kein Befund (8) |
+| Freigabe 2c und 3-1 · Entscheide | 3 «Dieselbe Linie» wörtlich | Frage SP1-F-5 |
+| Freigabe 2c und 3-1 · Aufgefallen | 2 Kontrast der grauen Linie, 5 1440 px bei 200 %, 6 zwei Verweissätze auf `index` › `beratung` | kein Befund (3) |
+| Freigabe 2c und 3-1 · Aufgefallen | 1 Ziffern der Kurve bei 200 % | Befund SP1-34 (optional). Teil 5.1 c wertete «kein Befund, Hinweis für R2»; die Teile 5.4 und 5.5 haben die Ziffer auf dem Kreisrand fotografiert (Kreis 28 px fest, Ziffer 31 px hoch). Die Prüfung übernimmt den Befund |
+| Freigabe 2c und 3-1 · Aufgefallen | 3 `v-ix-beratung`, 4 `verstehen.md` Nr. 116 | Befund SP1-9, SP1-10 (optional; zu Nr. 4 Frage SP1-F-6) |
+| Etappe 3-2 · Entscheide | 1 Branchname, 2 Workflows, 3 `site/`, 4 `CLAUDE.md`/`README.md`, 5 `react-archiv`, 6 Entwurfsmodus, 8 Netlify-Einstellungen | kein Befund (7). Zu Nr. 6: Der Entwurfsmodus selbst ist richtig, aber «Vor dem Merge wird neu mit `--production` exportiert» genügt nicht, siehe SP1-3 |
+| Etappe 3-2 · Entscheide | 7 Codex P1 ohne Änderung | Befund SP1-54 (optional; wichtig, falls «Pretty URLs» ausgeschaltet wird) |
+| Etappe 3-2 · Aufgefallen | 1 Zahlen der ersten Deploys, 4 Build-Einstellungen, 5 `siteUrl`, 6 PDF in Kleinschreibung, 7 Schriftlizenz, 8 `material-download`, 9 Codex-Review | kein Befund (7). Zu Nr. 7: Lizenzangabe in den Metadaten der WOFF2 vorhanden; der Lizenztext fehlt im Export (SP1-46, Profilsache) |
+| Etappe 3-2 · Aufgefallen | 2 Schutz der Vorschauen, 3 «Pretty URLs» | Befund SP1-53, SP1-52 (optional; Fragen SP1-F-25, SP1-F-24) |
+| Etappe 3-2 · Kurzfassung | Nr. 1 Z31-W3-2 | unabhängig bestätigt: 10 von 10 Punkten, 85 von 85 Weiterleitungen (5.6 b, Teile A und B) |
+
+**Zählung 5.7:** 32 Punkte (15 und 17): 25 kein Befund, 6 Befund, 1 Frage. Zusätzlich zur Selbstprüfung: PR #659 ist kein Entwurf (SP1-6).
+
+### SP1 · Befunde
+
+Gewicht nach Abschnitt 4 des Auftrags: «wichtig» heisst vor der Veröffentlichung zu beheben oder zu entscheiden. Die Belege im Einzelnen stehen im genannten Teil. Zusammengelegt sind Befunde, die zwei Teile unabhängig gefunden haben (SP1-1: Teile 5.4 und 5.6 a; SP1-3: Teile 5.2 und 5.6 a). Ein Gewicht ist bei der Zusammenführung geändert: SP1-25 hatte Teil 5.3 als «wichtig» eingestuft. Die Prüfung stuft ihn auf «optional» herab, weil die Fachstelle den Richtwert in ihren Aufträgen 1C bis 1F aufgehoben hat (`KORREKTUR-ETAPPE-1E.md` Z. 15: «Der Richtwert für die Länge gilt nicht. Die Seite wird länger (geschätzt +25 %); das ist so gewollt.») und Etappe 1 «als Ganzes» freigegeben ist. Offen bleibt nur die ausdrückliche Bestätigung (SP1-F-12).
+
+| ID | Stufe | Gewicht | Befund | Beleg |
+| --- | --- | --- | --- | --- |
+| SP1-1 | Visualisierungs-Check, Bedienung, W3 | wichtig | **Eisberg (`v-vs-eisberg`) bei 200 % Schrift überlagert:** bei 1024, 1280 und 1440 px «Wut» über «Vorwürfe», «Lautwerden» über «Rückzug», «… oder ganz andere Erfahrungen» über der Kontur, die Frage «Wie ist es gerade für dich?» Wort für Wort über der Wasserlinie; Standard und «kontrast». Ursache: `.bl-eis{max-width:760px}` und `@container (max-width:800px)` in px, Wörter absolut gesetzt; die Figur schaltet bei grosser Schrift nicht in die Liste. Widerspricht «Figuren mit frei platzierten Beschriftungen wechseln bei grosser Schrift in die Listenansicht» (Profilentscheid 11.10.2026). Frühere 200-%-Prüfungen haben nur den Überlauf gemessen. Freigegebene Abbildung; Abhilfe nur im CSS (Schwelle in `em` wie bei der Kurve, 3 d) | `borderline.css` Z. 103–125; Fotos `cdp-eis-1280.png`, `cdp-eis-1440.png`, `v-vs-eisberg_1280_f200.png` (von der Prüfsitzung angesehen); Überlappungsmessung 7 Paare je Breite |
+| SP1-2 | Bedienung, Visualisierungs-Check, W3 | wichtig | **Bedeutungsschleife (`v-bz-schleife`) bei 150 % Schrift überlagert:** Station 3 deckt das Ende von Station 2 («geht, bin ich allein.»» abgeschnitten), Station 5 deckt Station 4 (sichtbar nur «Nachrichten»), bei 1024, 1280 und 1440 px. Ursache: feste Kreisanordnung (`.bl-cycle--5{max-width:640px}`) und Umschaltung in px (`@container (max-width:700px)`). Bei 200 % schaltet die Figur um, deshalb in den Messungen bei 200 % unauffällig | `borderline.css` Z. 19, 26; Foto `schleife4.png` (angesehen); Kastenmasse Station 2 top 596 h 322, Station 3 top 823 |
+| SP1-3 | W2, S, W3 | wichtig | **Fusszeile «Redaktioneller Status: Entwurf – fachliche Prüfung ausstehend» auf allen 17 Seiten**, obwohl alle Seiten fachlich freigegeben sind; ein Export mit `--production` ändert sie nicht (`tools/contract.js` Z. 176 schreibt `editorialStatus` unabhängig vom Modus, `export.mjs` rendert unabhängig vom Modus, das Gate prüft nur, ob das Feld gesetzt ist). Ohne Änderung in `site.config.json` ginge die Website als «Entwurf» online. Die Selbstprüfung 3-2 (Entscheid 6) nennt den Schritt nicht. Dazu fehlt das Prüfdatum, das «Inhaltsverantwortung und Status» verlangt | `site.config.json` Z. 19; `site/index.html` auf `34a2e58`; Frage SP1-F-15 |
+| SP1-4 | W1 | wichtig | **Satz still entfallen:** «Finanzielle Grenzen sind besonders schwer, weil sie sich anfühlen wie «ich lasse dich fallen». Sie sind es nicht.» Der zweite, entlastende Satz steht weder auf `kommunizieren` › `beispiele` noch im Abgleich; `abgleich/grenzen.md` Nr. 214 («umformuliert (2b)») deckt nur den ersten Satz | Bestand `texte/grenzen.md` Z. 378; `grep -rn "Sie sind es nicht" content/ abgleich/` → leer (von der Prüfsitzung nachgeprüft); Frage SP1-F-7 |
+| SP1-5 | W1 | wichtig | **Lücke im Abgleich:** Die Akkordeons «Diagnostischer Überblick» und «Begleiterkrankungen — mögliche Kombinationen» von `/verstehen` (Bestand Z. 225–271: 28 Sätze und Listenpunkte, darunter die neun DSM-5-TR-Kriterien) haben in keiner Tabelle eine Zeile. `verstehen.md` nimmt sie aus («ohne Diagnostik-Teil»), `diagnose.md` deckt nur `/verstehen/diagnostik` und `/verstehen/begleiterkrankungen`. Inhaltlich fand die Prüfung keinen Verlust (Aussagen auf `diagnose`); die Aussage des Abgleichs «Jeder Satz des Bestands ist …» stimmt aber nicht, und der Nachweis fehlt | `abgleich/verstehen.md` Z. 3; `abgleich/diagnose.md` Z. 3 (von der Prüfsitzung nachgeprüft); `UMBAUPLAN.md` Z. 33/35; Teil 5.1 d |
+| SP1-6 | W3 | wichtig | **PR christaegger-dot/borderline-angehoerige#659 ist kein Entwurf**, obwohl Stufen offen sind (`CLAUDE.md`: «Solange Stufen offen sind, bleibt er ein Entwurf.»). Er ist zusammenführbar, `main` hat keine Schutzregel, der Branch keine Workflows; ein Merge veröffentlicht den Entwurf auf der Produktionsadresse. Nur der Titel «NICHT MERGEN» hält ab. Laut Selbstprüfung 3-2 hat die Fachstelle ihn als «bereit» markiert | `pull_request_read` #659: `"draft":false`, `"mergeable_state":"clean"` (von der Prüfsitzung nachgeprüft); Bericht Z. 1080; Frage SP1-F-26 |
+| SP1-7 | W1 | optional | 2a-K hat einen Verweissatz in `rolle` › `alltag` neu gefasst, ohne dass der Auftrag es verlangte; offen ausgewiesen, Liste Nr. 22, mit Freigabe 2a abgedeckt. Nur zur Kenntnis | 5.1 a |
+| SP1-8 | W1 | optional | Liste «Entfallene Sätze» (Block «Korrektur 2a-K») nicht auf dem Stand von 2a-2: ein ersetzter Satz fehlt, E85–E88 und E93 nennen veraltete Träger. Keine Aussage fehlt | 5.1 a; Bericht Z. 5170–5178 |
+| SP1-9 | W1 (Plan) | optional | `v-ix-beratung.reason` «steht nur hier, andere Seiten verweisen darauf» widerspricht `unterstuetzung` › `beratung` (wiederholt einen Satz seit 2c-K) | 5.1 c, Teil F |
+| SP1-10 | W1 (Abgleich) | optional | 17 Abgleichzeilen versprechen Verweise «folgt/folgen mit Etappe 2»; bei `verstehen.md` Nr. 116 («manipulieren bewusst») ist der Verweis des Bestands ohne Entscheid entfallen | 5.1 c; Frage SP1-F-6 |
+| SP1-11 | W1 (Freigabe) | optional | `404` steht in keinem Freigabeeintrag, der Auftrag sagt «Alle Seiten sind fachlich freigegeben» | 5.1 c; Bericht Z. 28–85 |
+| SP1-12 | W1 | optional | Anspannungskurve Stelle 3 sagt absolut «Eine Pause, Abstand und weniger Reize helfen.»; der Bestand sicherte ab («können helfen», «nicht garantiert»). Wortlaut aus Auftrag 1D, freigegeben; der Abgleich nennt den Verlust nicht | 5.1 d; `abgleich/verstehen.md` Nr. 194, 240, 288; Frage SP1-F-8 |
+| SP1-13 | W1 (Abgleich) | optional | Sechs Abgleichzeilen mit falschem Status oder ungenauer Fundstelle (`verstehen` 401, 91, 204; `selbstfuersorge` 449; `grenzen` 285; `beziehungen` 206) | 5.1 d; Frage SP1-F-9 |
+| SP1-14 | W1 (Abgleich) | optional | `unterstuetzung.md` Nr. 40 begründet «kein offizielles Angebot der PUK» noch mit der Vorlage des Starters (in `ueber.md` Nr. 73 berichtigt, Z31-W1-12) | 5.1 e |
+| SP1-15 | W1 (Abgleich) | optional | Bemerkungen nennen entfallene Teile nicht: `genesung.md` 315, `behandlung.md` 266, `quellen.md` 175 und 162. Fachlich ohne Verlust | 5.1 e |
+| SP1-16 | W1 | optional | Originaltitel Guillén et al. (2024) mit Guillemets statt der Anführungszeichen des Originals; Bemerkung Nr. 145 «Zeichen für Zeichen aus dem Bestand» | 5.1 e |
+| SP1-17 | W2, S | optional | `index` › `description` nennt 3 von 8 Einstiegen | 5.2/5.3 |
+| SP1-18 | W2, S | optional | `fragen` › `description` «je mit Verweis»; 2 von 27 Antworten ohne Verweis | 5.2/5.3 |
+| SP1-19 | W2, S | optional | `impressum-datenschutz` › `description` ohne die Ausnahme für den ausliefernden Dienst | 5.2/5.3 |
+| SP1-20 | W2 | optional | «Recovery» auf `fragen`, `genesung` und `quellen` verschieden beschrieben | 5.2/5.3; Frage SP1-F-13 |
+| SP1-21 | W2 | optional | Linktexte «Beratung der Fachstelle Angehörigenarbeit» statt «Beratung für Sie»; `diagnose` «Borderline verstehen» statt «Verstehen» | 5.2/5.3 |
+| SP1-22 | W2 | optional | Startseite heisst «Startseite» und «Übersicht»; 404 «Von der Übersicht aus finden Sie alle Seiten.» gilt nur in zwei Schritten | 5.2/5.3 |
+| SP1-23 | W2 | optional | Kicker `selbstfuersorge` «Selbstfürsorge» statt «Auf sich achten»; ein Eintrag der Kapitelübersicht auf `rolle` weicht vom Kicker ab | 5.2/5.3 |
+| SP1-24 | W2 | optional | Quellenblock `verstehen` ohne die 6 Legendenquellen (auf allen anderen Seiten stehen sie im Block); «Verwendet in» auf `diagnose`, `behandlung` mit h3 | 5.2/5.3; Frage SP1-F-16 |
+| SP1-25 | S | optional (in Teil 5.3 «wichtig», siehe oben) | `verstehen` 1872 Wörter (Richtwert 1300), `beziehungen` 1741 (1100), `grenzen` 1802 (1500), auch ohne Quellenblock und Vertiefungen über Richtwert + 5 %. Aufhebung nur in Aufträgen der Fachstelle, kein Eintrag im Bericht | 5.2/5.3; `kennzahlen.mjs` (nachgerechnet); Frage SP1-F-12 |
+| SP1-26 | S | optional | Richtwerte in `UMBAUPLAN.md` und `kennzahlen.mjs` widersprechen sich und den Entscheiden (`fragen`, `ueber`) | 5.2/5.3 |
+| SP1-27 | S | optional | 36-Wort-Satz auf `selbstfuersorge` › `beratung` | 5.2/5.3 |
+| SP1-28 | S | optional | Wiederholungen im Kopf von `genesung` und `behandlung` (freigegeben, nur mit Entscheid ändern) | 5.2/5.3 |
+| SP1-29 | S | optional | Unerklärte Abkürzungen: «BPS», «SET-UP», «Psychoedukation», «SCID-5-PD», «IPDE» | 5.2/5.3 |
+| SP1-30 | S | optional | «Partner in einer Borderline-Beziehung» (einzige Stelle ohne Paarform) | 5.2/5.3 |
+| SP1-31 | S | optional | `grenzen` Kopf: «… können sie aber nicht garantieren» liest sich als Anrede | 5.2/5.3 |
+| SP1-32 | S | optional (Profil) | Webtexte des Starters schwer verständlich (Fusszeile «PUK Website Kit … abgeleitet …», Logo-`aria-label`) | 5.2/5.3 |
+| SP1-33 | Visualisierungs-Check | optional | «Zwei Sichten»: Schwelle `@container (max-width:560px)` in px; bei 768 px mit 200 % zwei schmale Spalten, «Unterstützung» bricht im Wort | 5.4 |
+| SP1-34 | Visualisierungs-Check, Bedienung | optional | Ziffernkreise der Anspannungskurve wachsen nicht mit (28 px fest, `erklaermuster.css` Z. 19); bei 200 % steht die Ziffer auf dem Kreisrand, nicht mittig. Profilkomponente; von 5.4 und 5.5 unabhängig gefunden | 5.4, 5.5 |
+| SP1-35 | Visualisierungs-Check | optional | Trennung mitten im Wort in Figuren bei 320–414 px mit 200 % («Momentaufn\|ahme», «Bedeutungsschl\|eife») | 5.4 |
+| SP1-36 | Visualisierungs-Check | optional | `v-ix-haltung.reason` verweist auf ein «Muster H» für «Auf sich achten», das seit 2a nicht mehr vorgesehen ist | 5.4 |
+| SP1-37 | Visualisierungs-Check | optional | Erklärtext der Tassen nur ein Satz (Leitlinie: zwei bis vier) | 5.4 |
+| SP1-38 | Visualisierungs-Check | optional | Fenstersims in «Ein neuer Trieb» rechts hart abgeschnitten | 5.4 |
+| SP1-39 | Bedienung | optional | Druck: leere PDF-Seite vor der Anspannungskurve (`verstehen`) und vor «Zwei Sichten» (`beziehungen`) | 5.5 |
+| SP1-40 | Bedienung | optional | Lange Wörter in Überschriften brechen auf schmalen Bildschirmen ohne Trennstrich (`diagnose` h1 bei 360/390 px, `genesung` h1 bei 320 px) | 5.5 |
+| SP1-41 | Bedienung, W2 | optional | `krise`, `diagnose`, `behandlung` weder in der Navigation noch auf der Startseite verlinkt, nur über Verweise im Text | 5.5; Frage SP1-F-22 |
+| SP1-42 | Bedienung | optional (Profil) | E-Mail-Link der Absenderin 23 px hoch (Profil 44 px für eigenständige Aktionen; WCAG 2.5.8 über Abstand erfüllt) | 5.5; Frage SP1-F-23 |
+| SP1-43 | Bedienung (Werkzeug) | optional | `abgleich/bedienung.mjs` prüft `404` nicht und wertet jeden `box-shadow` als sichtbaren Fokusring | 5.5 |
+| SP1-44 | W3 | optional | `_redirects` bleibt Handarbeit, `export.mjs` leert den Zielordner nicht; Schritte für den Produktions-Export festhalten | 5.6 a |
+| SP1-45 | W3 | optional | `robots.txt` entfällt ersatzlos, `sitemap.xml` wird nirgends angekündigt | 5.6 a |
+| SP1-46 | W3 (Profil) | optional | OFL-Lizenztext fehlt im Export (Angabe in den WOFF2-Metadaten vorhanden) | 5.6 a, 5.6 b |
+| SP1-47 | W3 (Profil) | optional | Mehr als die Hälfte von `site.css` wird auf keiner Seite angewendet (gepackt 26 kB) | 5.6 a |
+| SP1-48 | W3 | optional | Kein `Cache-Control` für Schriften und Logo (alte `netlify.toml` hatte `immutable`) | 5.6 a |
+| SP1-49 | W3 (Werkzeug) | optional | `verwendet-auf.mjs` endet auch bei Abweichungen mit Exit 0 | 5.6 a |
+| SP1-50 | W3 | optional | Alte `-v1`-PDF-Adressen führen auf die Startseite statt auf den Abschnitt | 5.6 a |
+| SP1-51 | W3 | optional | Alte Adressen in anderer Schreibweise (`/FAQ`, `/Soforthilfe`, `/Notfallkarte`) enden mit 404; die React-Produktion leitete sie um | 5.6 b; Frage SP1-F-27 |
+| SP1-52 | W3 | optional | «Pretty URLs»: ausgeliefert ≠ Export (288 umgeschriebene Links), je Seite zwei Adressen, `canonical` und `sitemap.xml` mit `.html`, Links ohne | 5.6 b; Frage SP1-F-24 |
+| SP1-53 | W3 | optional | Schutz der Vorschauen weiter aus (`requiresSSOTeamLogin:false`), obwohl «danach wieder an» entschieden war | 5.6 b; Frage SP1-F-25 |
+| SP1-54 | W3 | optional; wichtig, falls «Pretty URLs» ausgeschaltet wird | Widerlegung von Codex P1 gilt nur, solange Netlify `/verstehen/` auf `/verstehen` umleitet; nach einer Änderung neu prüfen | 5.6 b |
+
+### SP1 · Fragen an die Fachstelle
+
+| ID | Frage | Bezug |
+| --- | --- | --- |
+| SP1-F-1 | Der Prüfauftrag ist als «Entwurf zur Bestätigung» bezeichnet. Bitte die Bestätigung (oder Änderungen) im Bericht festhalten | Kopf dieses Blocks |
+| SP1-F-2 | Vertiefung «Eltern» auf `selbstfuersorge` («… ohne für alles verantwortlich zu sein») an den Wortlaut von `rolle` angleichen? | 5.1 a |
+| SP1-F-3 | Ist «Beides kann nebeneinander bestehen.» (E14) verzichtbar? | 5.1 a |
+| SP1-F-4 | Genügt «Das ist eine Orientierung, keine Garantie …» auf `selbstfuersorge` › `beratung`, nachdem die Hinweise zur dünnen Forschungslage in den Quellenblock gewandert sind? | 5.1 b |
+| SP1-F-5 | «Ein neuer Trieb»: soll «Tragfähiger» in der Szene 3 px bekommen, damit «dünner» auch dort gilt? | 5.1 c, 5.7 |
+| SP1-F-6 | `verstehen` › `mythen`, «manipulieren bewusst»: Verweis auf `kommunizieren` oder `grenzen` wie im Bestand, oder bleibt er entfallen? | SP1-10 |
+| SP1-F-7 | Kommt «Sie sind es nicht.» zurück, oder entfällt der Satz bewusst (dann Zeile mit Grund)? | SP1-4 |
+| SP1-F-8 | Anspannungskurve Stelle 3 wieder «können helfen»? | SP1-12 |
+| SP1-F-9 | Bei der Bedeutungsschleife sagen, dass die Stationen keine feste Abfolge sind (Bestand)? | SP1-13 |
+| SP1-F-10 | Datenschutz: «Die Website setzt keine Cookies» absolut stehen lassen? In die rechtliche Prüfung aufnehmen | 5.1 e |
+| SP1-F-11 | Urheberrecht: Ist die erweiterte Erlaubnis «Die Inhalte» (Bestand: «Infografiken und Handouts») gewollt? | 5.1 e |
+| SP1-F-12 | Gilt für `verstehen`, `beziehungen`, `grenzen` ein Richtwert? Wenn nicht: als Entscheid festhalten und `UMBAUPLAN.md` und `kennzahlen.mjs` nachführen lassen | SP1-25, SP1-26 |
+| SP1-F-13 | «Recovery» auf `fragen` wie auf `genesung` und im Glossar beschreiben? | SP1-20 |
+| SP1-F-14 | Rechtliches (FU, KESB, Meldepflichten) nur auf `fragen` – reicht das, oder ein Abschnitt auf einer Themenseite? | 5.2/5.3 |
+| SP1-F-15 | Welcher Wortlaut und welches Prüfdatum gelten bei der Veröffentlichung in der Fusszeile (z. B. «fachlich freigegeben, <Datum>»)? | SP1-3 |
+| SP1-F-16 | Legendenquellen auf `verstehen` auch im Block «Quellen zu dieser Seite»? | SP1-24 |
+| SP1-F-17 | «Ein neuer Trieb»: Ist die Lesart «betroffene Person als Pflanze» bewusst in Kauf genommen, und dass Angehörige im Bild keinen Platz haben? | 5.4 |
+| SP1-F-18 | «Zwei Tassen»: Genügt es, dass die Sätze die Aussage tragen (Freundin-Test nur teilweise)? Für R2 | 5.4 |
+| SP1-F-19 | DEAR: Sind die Kürzel «D · Beschreiben» usw. für Laien verständlich, wenn «DEAR MAN» nur in der Vertiefung erklärt ist? | 5.4 |
+| SP1-F-20 | `beziehungen` › `was-hilft`: drei Unterbrechungsstellen im Text, im Modell nur Station 5 markiert – Text oder Modell klarer? | 5.4 |
+| SP1-F-21 | «Ein freier Abend»: Kurztext «der Tee wird kalt», im Bild dampft die Tasse – gewollt? | 5.4 |
+| SP1-F-22 | Einstieg für `krise`, `diagnose`, `behandlung` auf der Startseite? | SP1-41 |
+| SP1-F-23 | E-Mail-Link der Absenderin: Link im Text oder eigenständige Aktion (44 px)? Profilebene | SP1-42 |
+| SP1-F-24 | Netlify «Pretty URLs» ausschalten oder die Abweichung hinnehmen? Bei Änderung SP1-54 nachprüfen | SP1-52 |
+| SP1-F-25 | Wann wird die Team-Anmeldung für Vorschauen wieder eingeschaltet (Vorschlag: nach Prüfung 2 und der Zusammenführung)? | SP1-53 |
+| SP1-F-26 | PR #659 wieder als Entwurf, bis R3 «Go» ergibt? | SP1-6 |
+| SP1-F-27 | Alte Adressen auch in anderer Schreibweise weiterleiten, oder genügt die 404-Seite? | SP1-51 |
+
+**Weiter offen aus früheren Runden** (5.1 c, Teil E, mit Beleg): die rechtliche Prüfung von Impressum und Datenschutz (S-Nr. 5 und 6, Z31-F-9, Z31-F-19, NK-F-8), NK-F-3 (Ausgabe von «Schluss mit dem Eiertanz»), die Build-Einstellungen des Netlify-Projekts nach dem Merge. Alle übrigen Fragen der Runden P4, P2a, P2b, P2c, P2c2, P3, P3b, Z31 und NK sind laut den Freigabeeinträgen entschieden.
+
+### SP1 · Zählung und Stand der Stufen
+
+**Befunde:** 54 (6 wichtig, 48 optional).
+
+| Stufe | wichtig | optional | Fragen | Stand nach Prüfung 1 |
+| --- | ---: | ---: | ---: | --- |
+| W1 (5.1) | 2 (SP1-4, -5) | 10 (SP1-7 bis -16) | 11 (SP1-F-1 bis -11) | offen: zwei wichtige Befunde; rechtliche Prüfung und NK-F-3 offen |
+| W2 (5.2) | 1 (SP1-3) | 8 (SP1-17 bis -24) | 3 (SP1-F-13, -14, -16) | offen |
+| S (5.3) | – (SP1-3 unter W2 gezählt) | 8 (SP1-25 bis -32) | 2 (SP1-F-12, -15) | offen |
+| Visualisierungs-Check (5.4) | 1 (SP1-1) | 6 (SP1-33 bis -38) | 5 (SP1-F-17 bis -21) | offen |
+| Bedienung und Barrierefreiheit (5.5) | 1 (SP1-2; dazu SP1-1) | 5 (SP1-39 bis -43) | 2 (SP1-F-22, -23) | offen; reale Screenreader-Läufe, Hardwaretastatur, Touch offen |
+| W3 (5.6) | 1 (SP1-6; dazu SP1-1 bis -3) | 11 (SP1-44 bis -54) | 4 (SP1-F-24 bis -27) | offen |
+| 5.7 Selbstprüfungen | – | – | – | 32 Punkte bewertet |
+
+Mehrfach zugeordnete Befunde zählen einmal (bei der ersten Stufe der Tabelle «Befunde»). **Keine Stufe ist «erledigt».** Vor dem Abschluss: Prüfung 2, Zusammenführung, Entscheide der Fachstelle zu SP1-F-1 bis -27, Korrektur der wichtigen Befunde durch eine bauende Sitzung und Nachprüfung (Auftrag Abschnitt 7).
+
+**Nicht geprüft oder nicht prüfbar in dieser Prüfung:** reale Screenreader-Läufe, Hardwaretastatur und Touch (Protokoll in 5.5); die Produktion nach dem Merge; die Build- und Nachbearbeitungseinstellungen des Netlify-Projekts (über die Verbindung nicht lesbar); externe Links online (Proxy); Silbentrennung mit deutschem Wörterbuch (Chromium hier ohne); echter Windows-Kontrastmodus; Druck in Firefox und Safari; Zahlen gegen die Originalstudien (nur gegen den Bestand); der Export mit `--production` (gesperrt, aus dem Code bewertet). Nach Auftrag ausgeschlossen: R1 bis R3, die rechtliche Prüfung, NK-F-3.
 
 ## Nachprüfung 2c-K und 3-1-K (12.10.2026, Stand f3cb270)
 
@@ -1058,14 +4698,16 @@ Keine Stufe ist «erledigt». W1: 2 wichtig, 2 optional, 6 Fragen. W2: 2 wichtig
 
 Nach jedem Bau ohne Nachfrage ausfüllen: Visualisierungs-Check wie unten, mit Beleg je Punkt. Arbeitsstand, keine Prüfstufe.
 
-**Stand 12.10.2026 · Etappe 3-2 (Sicherung und Vorschau) · bauende Sitzung (Claude Code).** Umgesetzt ist der zweite Teil von UMBAUPLAN, Etappe 3 («Umzug»). Der Auftrag kam in dieser Sitzung von der Fachstelle («starte Etappe 3-2»), die zwei Entscheide auf Rückfrage: Umfang «Sichern + Vorschau», Zielstruktur «React-Quellen ersetzen». Grundlage ist `borderline-umbau` am Stand `f78aae9` (nach PR #42). In diesem Repository geändert sind nur dieser Block und `UMBAUPLAN.md` (Stand, Abschnitt 7). Inhalte, gebaute Seiten, `site.config.json`, CSS, Werkzeuge und Abgleich sind unverändert. Keine Prüfstufe ist «erledigt».
+**Stand 12.10.2026 · Etappe 3-2 (Sicherung und Vorschau) · bauende Sitzung (Claude Code).** Umgesetzt ist der zweite Teil von UMBAUPLAN, Etappe 3 («Umzug»). Der Auftrag kam in dieser Sitzung von der Fachstelle («starte Etappe 3-2»). Ihre Entscheide auf Rückfrage: Umfang «Sichern + Vorschau», Zielstruktur «React-Quellen ersetzen», für die Prüfung der Vorschau «Schutz kurz aus, danach wieder an» und nach dem gescheiterten Neubau der Vorschau «Export in Unterordner `site/`». Grundlage ist `borderline-umbau` am Stand `f78aae9` (nach PR #42). In diesem Repository geändert sind nur dieser Block und `UMBAUPLAN.md` (Stand, Abschnitt 7). Inhalte, gebaute Seiten, `site.config.json`, CSS, Werkzeuge und Abgleich sind unverändert. Keine Prüfstufe ist «erledigt».
 
 **Nicht erfüllt oder offen (Kurzfassung):**
 
-1. **Die Vorschau zeigt die alte React-Fassung (Z31-W3-2 bleibt offen).** Geprüft am 12.10.2026 (Abschnitt «Prüfung der Vorschau» unten): Unter der Vorschau von #659 liefert Netlify die alte React-Fassung aus, nicht den Export. Keine der 85 Weiterleitungen greift, die Kopfzeilen stammen aus der alten `netlify.toml`. Die Ursache liegt in den Build-Einstellungen des Netlify-Projekts oder im Deploy selbst; aus dem Repository allein ist sie nicht erkennbar.
-2. **Netlify meldet die Zahlen der alten Konfiguration.** Laut Zusammenfassung des Vorschau-Deploys sind es 37 Weiterleitungs- und 4 Header-Regeln. Das sind die Zahlen der alten Konfiguration: 15 Regeln in der alten `netlify.toml` und 22 in `client/public/_redirects`, dazu 4 Header-Blöcke. Erwartet wären 88 (85 in `_redirects`, 3 in `netlify.toml`) und 1. Auf der Vorschau ist zuerst zu prüfen, ob sie die neue Website und `_redirects` ausliefert (Aufgefallen Nr. 1). **Berichtigt nach der Prüfung der Vorschau (unten):** Die Zahlen stimmen. Die Vorschau liefert tatsächlich die alte React-Fassung mit ihrer Konfiguration aus. Der frühere Nachtrag, sie seien nur eine übernommene Zusammenfassung, war falsch: Die 31 Dateien der Secret-Prüfung sind die Quelle des Branchs, nicht die veröffentlichten Dateien.
-3. **Nur Entwurfs-Export.** Das Produktionsgate sperrt den Export mit `--production` (`review-report`, offene Stufen).
-4. **Nicht veröffentlicht.** Veröffentlicht wird erst nach vollständigem Prüfbericht, mit einem neuen Export mit `--production` und dem Merge von christaegger-dot/borderline-angehoerige#659.
+1. **Z31-W3-2 nur von der bauenden Sitzung geprüft.** Auf der Vorschau (Deploy `6acd0e03ea79a5743fa2824e`, Commit `34a2e58`) wirken alle 85 Weiterleitungen wie vorgesehen, und die zehn Punkte der Liste sind erfüllt (Abschnitt «Prüfung der Vorschau»). Eine Prüfstufe ist das nicht; nachprüfen muss eine Prüfsitzung (W3, R3).
+2. **Netlify verändert die ausgelieferten Seiten.** Die Projekteinstellung «Pretty URLs» schreibt die Seitenlinks beim Ausliefern um, z. B. `verstehen.html` → `/verstehen` und `index.html` → `/` (297 Links auf 18 geprüften Seiten). Die Links funktionieren: 450 von 450, ohne Umleitung, alle Anker vorhanden. Ausgeliefert wird aber nicht Zeichen für Zeichen der geprüfte Export, und die kanonische Adresse (`…/verstehen.html`) weicht von den Links ab. Entscheid der Fachstelle (Aufgefallen Nr. 3).
+3. **Produktion nach dem Merge ungeprüft.** Die Vorschau belegt, dass Netlify die `netlify.toml` anwendet (`publish = "site"`, kein Build). Die Produktion baut aus derselben Datei. Die Build-Einstellungen des Netlify-Projekts sind über die Netlify-Verbindung aber nicht lesbar (Aufgefallen Nr. 4).
+4. **Schutz der Vorschauen aus.** Die Fachstelle hat die Team-Anmeldung für Vorschauen nach der ersten Prüfung ausgeschaltet (Stand: `requiresSSOTeamLogin: false`). Die Entwurfs-Vorschau ist ohne Anmeldung erreichbar (`curl` ohne Anmeldung: 200), mit `x-robots-tag: noindex`. Empfehlung: wieder einschalten.
+5. **Nur Entwurfs-Export.** Das Produktionsgate sperrt den Export mit `--production` (`review-report`, offene Stufen).
+6. **Nicht veröffentlicht.** Veröffentlicht wird erst nach vollständigem Prüfbericht, mit einem neuen Export mit `--production` und dem Merge von christaegger-dot/borderline-angehoerige#659.
 
 ### Etappe 3-2: Stand je Punkt
 
@@ -1073,19 +4715,19 @@ Nach jedem Bau ohne Nachfrage ausfüllen: Visualisierungs-Check wie unten, mit B
 | --- | --- | --- |
 | Sicherung der React-Fassung | umgesetzt | Branch `react-archiv` im Repository `borderline-angehoerige`, Commit `f46038b`, gleich wie `main` (`git ls-remote`: beide `f46038b…`) |
 | Export | umgesetzt (Entwurf) | `node tools/export.mjs <ziel>` am Stand `f78aae9`: 17 Seiten, `css/site.css`, 3 Schriftdateien (Rubik 300, 400, 500), `js/interaktion.js`, `assets/` (Logo, Favicon), `_headers`, `sitemap.xml`; Gate draft 0 blockierend, 2 Hinweise. Mit `--production` abgebrochen: 1 blockierend (`review-report`) |
-| Zielstruktur | umgesetzt | Branch `umzug-puk-profil-1791821335`, Commit `8120051`. Der Export steht im Stamm. Entfernt sind 968 Dateien: React-Quellen, Build-Werkzeuge, Tests, QA-Material, Workflows, Netlify-Funktion `material-download`, Handouts und Dokumente des alten Projekts. `CLAUDE.md` ist unverändert, `README.md` neu (Quelle, Entstehung, Stand), `.gitignore` neu; mit `e5c8441` schliesst sie wieder Abhängigkeiten, Build-Ausgaben und `.env*` aus (Codex-Befund) |
-| `_redirects` | umgesetzt | von Hand in den Stamm kopiert, `cmp` gleich wie `templates/website/borderline-angehoerige/_redirects`; 85 Regeln |
-| `netlify.toml` | ersetzt | statisch: `publish = "."`, Befehl ohne Build; Regeln mit 404 für `/404` (wie in der alten Datei; Codex-Befund, `e5c8441`) und für `README.md`, `CLAUDE.md`, `netlify.toml`. Die Weiterleitungen der alten Datei stehen in `_redirects` (`/notfallkarte`, `/soforthilfe` usw. auf die Startseite) |
-| Pull Request | offen, Entwurf | christaegger-dot/borderline-angehoerige#659 gegen `main`, Titel mit «NICHT MERGEN» |
-| Vorschau | gebaut, nicht geprüft | Netlify-Deploy `6acd06551b118d9d720307c8`, Zustand «ready», Kontext «deploy-preview»; Checks «Redirect rules» und «Header rules» «success», «Pages changed» «neutral»; Adresse `https://deploy-preview-659--borderline-angehoerige.netlify.app` (mit Team-Anmeldung) |
-| Produktion | unverändert | aktueller Deploy `6acacec096879ee730291803`, Commit `f46038b`, veröffentlicht 10.10.2026 |
+| Zielstruktur | umgesetzt | Branch `umzug-puk-profil-1791821335`: Export mit `8120051`, mit `34a2e58` unverändert in den Ordner `site/` verschoben (`git mv`; Entscheid der Fachstelle, Entscheide Nr. 3). Im Stamm liegen nur `netlify.toml`, `README.md` (neu: Quelle, Entstehung, Stand, Aufbau mit `site/`), `CLAUDE.md` (unverändert) und `.gitignore`; diese schliesst seit `e5c8441` wieder Abhängigkeiten, Build-Ausgaben und `.env*` aus (Codex-Befund). Entfernt sind 968 Dateien: React-Quellen, Build-Werkzeuge, Tests, QA-Material, Workflows, Netlify-Funktion `material-download`, Handouts und Dokumente des alten Projekts |
+| `_redirects` | umgesetzt | von Hand in den Publish-Ordner `site/` kopiert, `cmp` gleich wie `templates/website/borderline-angehoerige/_redirects`; 85 Regeln |
+| `netlify.toml` | ersetzt | statisch: `publish = "site"`, Befehl nur `echo`, kein Build. Eine Regel: `/404` mit Status 404, wie in der alten Datei (Codex-Befund, `e5c8441`). Die Regeln für `README.md`, `CLAUDE.md` und `netlify.toml` sind mit `34a2e58` entfallen, weil die Dateien nicht mehr im Publish-Ordner liegen (Vorschau: alle drei 404). Die Weiterleitungen der alten Datei stehen in `site/_redirects` (`/notfallkarte`, `/soforthilfe` usw. auf die Startseite) |
+| Pull Request | offen, nicht gemergt | christaegger-dot/borderline-angehoerige#659 gegen `main`, Titel mit «NICHT MERGEN»; von der Fachstelle als «bereit» markiert, kein Entwurf mehr |
+| Vorschau | geprüft (bauende Sitzung) | Netlify-Deploy `6acd0e03ea79a5743fa2824e`, Commit `34a2e58`, Zustand «ready». Netlify meldet: «18 new files uploaded» (17 Seiten, 1 Asset), «86 redirect rules processed» (85 aus `_redirects`, 1 aus `netlify.toml`), «1 header rule processed», «No functions deployed». Ergebnis unten |
+| Produktion | unverändert | React-Fassung, Commit `f46038b`. Aktueller Deploy `6acd0c5b463098574672246a`: am 12.10.2026 um 16:36 UTC aus demselben Commit neu gebaut, Framework vite, 37 Weiterleitungs- und 4 Header-Regeln, Funktion `material-download`. Davor `6acacec096879ee730291803` vom 10.10.2026 |
 | `UMBAUPLAN.md` | nachgeführt | Kopf («**Stand:** Etappe 3-2 begonnen …») und Abschnitt 7 |
 
 ### Etappe 3-2: Prüfungen
 
-- **Branch gegen Export:** Die Website-Dateien im Branch sind Zeichen für Zeichen gleich wie der Export (`diff -r`, ohne `README.md`, `CLAUDE.md`, `netlify.toml`, `.gitignore`).
+- **Branch gegen Export:** Die Dateien in `site/` sind Zeichen für Zeichen gleich wie der Export (`diff -r` gegen den Exportordner ohne Abweichung, nach dem Verschieben wiederholt).
 - **Export gegen gebaute Seiten:** `<main>` der 17 exportierten Seiten ist gleich wie auf den gebauten Seiten in diesem Ordner, 16 Zeichen für Zeichen. Auf `404` steht der Link «Zur Übersicht» ab dem Stamm (`/index.html`), wie `tools/export.mjs` es für die 404-Seite vorsieht.
-- **Lokal im Browser** (Export über einen lokalen Server, Chromium):
+- **Lokal im Browser** (Export über einen lokalen Server, Chromium; ohne die Kopfzeilen aus `_headers`, die erst auf Netlify wirken):
   - 17 Seiten, 0 fehlgeschlagene Anfragen, 0 Anfragen an fremde Adressen, 0 Konsolenfehler
   - Rubik 300, 400 und 500 geladen, Logo geladen
   - 157 interne Linkziele, alle vorhanden, Anker eingeschlossen
@@ -1094,12 +4736,12 @@ Nach jedem Bau ohne Nachfrage ausfüllen: Visualisierungs-Check wie unten, mit B
   - jedes Ziel und jeder Anker im Export vorhanden
   - keine Quelle trifft eine vorhandene Datei (sonst hätte die Datei bei Netlify Vorrang)
 - **Technik:** 0 `style`-Attribute, 0 Inline-Skripte, 0 `tel:`, keine fremden Quellen; `_headers` aus dem Export mit Content-Security-Policy.
-- **Netlify** (Angaben des Deploys über die Netlify-Schnittstelle gelesen):
-  - Deploy «ready», «No functions deployed»
-  - «37 redirect rules processed», «4 header rules processed»; das widerspricht der neuen Konfiguration (oben Nr. 2)
-- **Nicht prüfbar:** die Vorschau selbst (Netzwerk, Team-Anmeldung), reale Screenreader-Läufe, Hardwaretastatur, Touch.
+- **Netlify:** Angaben der Deploys über die Netlify-Schnittstelle gelesen (Stand je Punkt, Verlauf unten).
+- **Nicht prüfbar:** reale Screenreader-Läufe, Hardwaretastatur, Touch; die Produktion nach dem Merge.
 
 ### Etappe 3-2: Auf der Vorschau zu prüfen (Z31-W3-2)
+
+Ergebnis je Punkt im nächsten Abschnitt.
 
 1. Die Startseite der Vorschau zeigt die neue Website (Kopf mit PUK-Logo und Absenderin), nicht die React-Fassung.
 2. `/soforthilfe`, `/notfallkarte`, `/soforthilfe/` und `/soforthilfe/irgendwas` leiten auf die Startseite.
@@ -1110,62 +4752,84 @@ Nach jedem Bau ohne Nachfrage ausfüllen: Visualisierungs-Check wie unten, mit B
 7. Eine fehlende Adresse in der Tiefe (z. B. `/a/b/c`) zeigt die 404-Seite mit Schrift und Logo.
 8. `/404`, `/README.md`, `/CLAUDE.md` und `/netlify.toml` antworten mit 404.
 9. Konsole ohne Fehler der Content-Security-Policy; Kopfzeilen nach `_headers`.
-10. `/verstehen/` mit Schrägstrich: Seite mit Schrift, Logo und funktionierenden Links? Die Seiten verweisen relativ (`css/site.css`); unter `/verstehen/` lösen sich diese Pfade unter dem Ordner auf (Codex-Befund P1, Thread in #659 offen).
+10. `/verstehen/` mit Schrägstrich: Seite mit Schrift, Logo und funktionierenden Links? Die Seiten verweisen relativ (`css/site.css`); unter `/verstehen/` lösen sich diese Pfade unter dem Ordner auf (Codex-Befund P1 in #659).
 
 ### Etappe 3-2: Prüfung der Vorschau (12.10.2026)
 
-**Vorgehen:**
-- Im Auftrag der Fachstelle hat die bauende Sitzung die Team-Anmeldung für Nicht-Produktions-Deploys über die Netlify-Verbindung für rund zwei Minuten ausgeschaltet (etwa 16:30 bis 16:32 UTC) und danach wieder eingeschaltet.
-- Kontrolle danach: Die Vorschau antwortet mit 401, die Einstellung lautet wieder «Team-Anmeldung für Nicht-Produktion». Die Produktion war nicht betroffen.
-- Die Netzwerkfreigabe für `*.netlify.app` hat die Fachstelle in den Einstellungen der Umgebung eingetragen.
+**Verlauf:**
 
-**Ergebnis** (Deploy `6acd09958fdf9be93e413bf2`, Commit `e5c8441`; Prüfung per `curl` ohne Folgen der Umleitung und in Chromium):
+1. **Erste Prüfung, alte Fassung ausgeliefert** (Deploy `6acd09958fdf9be93e413bf2`, Commit `e5c8441`):
+   - Titel «Startseite – Borderline · Hilfe für Angehörige», Stylesheet `/assets/index-bmLiOMct.css`, `/css/site.css` und `/behandlung.html` 404
+   - 0 von 85 Weiterleitungen wie in `_redirects`; es galten die alten Regeln (z. B. `/notfallkarte` → `/soforthilfe`)
+   - Kopfzeilen der alten `netlify.toml` (`style-src 'self' 'unsafe-inline'`, `geolocation=(self)`); Netlify meldete 37 Weiterleitungs- und 4 Header-Regeln, wie die Produktion
+   - Zugang: Im Auftrag der Fachstelle hat die bauende Sitzung die Team-Anmeldung für Nicht-Produktions-Deploys über die Netlify-Verbindung rund zwei Minuten ausgeschaltet (etwa 16:30 bis 16:32 UTC) und danach wieder eingeschaltet. Kontrolle danach: 401, Einstellung wieder «Team-Anmeldung für Nicht-Produktion»; die Produktion war nicht betroffen. Die Netzwerkfreigabe für `*.netlify.app` hat die Fachstelle in den Einstellungen der Umgebung eingetragen.
+2. **Neubau mit geleertem Cache, fehlgeschlagen** (Deploy `6acd0d62f6d6ec4728458a6c`, 16:40 UTC, ausgelöst von der Fachstelle): «Failed during stage 'building site'». Im Deploy-Log, das die Fachstelle geliefert hat: aufgelöste Konfiguration mit Befehl `echo 'Statische Website: kein Build'` und `publish` `/opt/build/repo`, danach «Deploy did not succeed: Deploy directory 'dist/public' does not exist».
+3. **Ursache:** Netlify las die `netlify.toml` und führte ihren Befehl aus. Den Publish-Ordner `"."` übernahm es nicht, weil er mit dem Stamm zusammenfällt, sondern nahm den aus den Projekteinstellungen (`dist/public` der React-Fassung). Mit Cache lagen dort die Dateien der alten Fassung (erste Prüfung), ohne Cache fehlte der Ordner (Neubau). Damit ist die Vermutung im früheren Nachtrag berichtigt, Netlify führe den Build-Befehl der React-Fassung aus.
+4. **Korrektur:** Export in den Unterordner `site/` (Entscheid der Fachstelle), `publish = "site"`, Commit `34a2e58`. Deploy `6acd0e03ea79a5743fa2824e` (16:42 UTC): «ready», 86 Weiterleitungs- und 1 Header-Regel.
 
-- **Ausgeliefert wird die alte React-Fassung**, unter der Vorschau-Adresse und unter dem Permalink des Deploys:
-  - Titel «Startseite – Borderline · Hilfe für Angehörige», Stylesheet `/assets/index-bmLiOMct.css`, Kompass-Symbol und «Soforthilfe öffnen» (Foto angesehen)
-  - `/verstehen` zeigt «Borderline verstehen» der React-Fassung, `/soforthilfe` die Seite «Soforthilfe bei akuter Gefahr» (200)
-  - `/css/site.css` und `/behandlung.html` antworten mit 404
-- **Weiterleitungen:** 0 von 85 wie in `_redirects`. Es gelten die alten Regeln, z. B. `/notfallkarte` → `/soforthilfe` und `/therapieangebote` → `/unterstuetzen/therapie#therapieangebote`.
-- **Kopfzeilen:** die der alten `netlify.toml`, z. B. Content-Security-Policy mit `style-src 'self' 'unsafe-inline'` und `geolocation=(self)`, nicht die aus `_headers`.
-- **Zu Codex P1 (Schrägstrich):** Auf diesem Deploy leitet Netlify `/verstehen/` mit 301 auf `/verstehen` um, `/VERSTEHEN` ebenso. Das ist ein Hinweis auf das Verhalten von Netlify, aber an der alten Fassung beobachtet, nicht am Export.
+**Ergebnis je Punkt** (Deploy `6acd0e03ea79a5743fa2824e`, Commit `34a2e58`; `curl` erst ohne, dann mit Folgen der Umleitung; Chromium bei 1280 px, Fotos von `/`, `/verstehen/` und `/a/b/c` angesehen):
 
-**Folgerung:** Netlify veröffentlicht für diesen Branch nicht den Stamm nach der neuen `netlify.toml`, sondern Dateien der alten Fassung. Netlify meldete das schon: «All files already uploaded by a previous deploy», 37 Weiterleitungs- und 4 Header-Regeln. Zu prüfen im Netlify-Projekt:
-- das Deploy-Log
-- die Build-Einstellungen: Base directory, Publish directory, Build command, eine abweichende Angabe zum Pfad der Konfigurationsdatei
-- den Build-Cache (leeren und neu bauen)
+| Nr. | Ergebnis | Beleg |
+| --- | --- | --- |
+| 1 Startseite | erfüllt | `/` 200: h1 «Borderline – Orientierung für Angehörige», Stylesheet `/css/site.css`, Schrift Rubik, Logo geladen (214 px breit), Absenderin vorhanden |
+| 2 Krisenrouten | erfüllt | `/soforthilfe`, `/soforthilfe/`, `/soforthilfe/irgendwas`, `/notfallkarte`: je 301 → `/index.html`, Ziel 200; im Browser endet `/soforthilfe` auf der Startseite |
+| 3 Gleichnamige Routen | erfüllt | `/verstehen`, `/grenzen`, `/kommunizieren`, `/selbstfuersorge`, `/genesung`, `/quellen`: je 200 mit dem Titel der neuen Seite, z. B. «Grenzen setzen \| Borderline – Orientierung für Angehörige». Mit Schrägstrich am Ende je 301 auf die Adresse ohne Schrägstrich, dann 200 |
+| 4 Anker im Ziel | erfüllt | `/therapieangebote` → 301 `/behandlung.html#angebote`, `/selbsthilfegruppen` → 301 `/unterstuetzung.html#selbsthilfe`; Ziel 200, Anker vorhanden; im Browser h1 «Behandlung und Ihre Rolle darin» |
+| 5 `/x.html` und `/x` | erfüllt | `/verstehen.html` 200 und `/verstehen` 200, beide ohne weitere Umleitung; die Ziele in `_redirects` brauchen also nur einen Schritt. Zum Umschreiben der Links durch «Pretty URLs» siehe «Zusätzlich geprüft» |
+| 6 Gross- und Kleinschreibung | erfüllt, mit Hinweis | `/Notfallkarte-Zuerich-Psychische-Krise.pdf` → 301 `/index.html`, `/VERSTEHEN` → 301 `/verstehen`. Die durchgehend klein geschriebene Variante `/notfallkarte-zuerich-psychische-krise.pdf` antwortet mit 404 (Aufgefallen Nr. 6) |
+| 7 404 in der Tiefe | erfüllt | `/a/b/c` 404: h1 «Diese Seite gibt es nicht», Rubik, Logo, Absenderin (Foto) |
+| 8 404 für `/404` und Repository-Dateien | erfüllt | `/404`, `/README.md`, `/CLAUDE.md`, `/netlify.toml`, `/_redirects`, `/_headers`: je 404; `/404.html` 200 |
+| 9 Konsole und Kopfzeilen | erfüllt für die Website | Kopfzeilen von `/verstehen` wie `_headers`: Content-Security-Policy `default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; … frame-ancestors 'none'`, `referrer-policy: no-referrer`, `permissions-policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()`, `x-frame-options: DENY`, `x-content-type-options: nosniff`; dazu von Netlify `strict-transport-security` und auf der Vorschau `x-robots-tag: noindex`. Konsole: je Seite 4 Meldungen (17 Seiten, 68), alle ausgelöst durch einen Block, den Netlify auf Vorschauen vor `</body>` einfügt: `<div data-netlify-deploy-id=… style="position:fixed">` mit `<script async src="/.netlify/scripts/cdp">`. Gemeldet werden das `style`-Attribut dieses Blocks (`style-src-attr`, Zeile 117 der ausgelieferten Seite, die Zeile des Blocks), der Rahmen `app.netlify.com` (`frame-src`) und zwei Hinweise der Permissions-Policy (Kamera, Mikrofon). Gegenprobe mit gesperrtem `/.netlify/`: je Seite nur noch das `style`-Attribut des Blocks und die gesperrte Anfrage selbst. Aus der Website selbst: 0 Verstösse. Die Produktion (React) enthält den Block nicht (`grep` auf der Startseite: 0) |
+| 10 `/verstehen/` (Codex P1) | erfüllt, Befund widerlegt | `/verstehen/` → 301 `/verstehen` → 200; im Browser Endadresse `/verstehen` mit Schrift, Logo und Absenderin (Foto). Netlify leitet hier vom Schrägstrich weg, nicht zu ihm hin; die relativen Pfade lösen sich richtig auf. Thread in #659 mit diesem Beleg beantwortet und geschlossen |
 
-Erst danach ist Z31-W3-2 prüfbar. **#659 darf so nicht gemergt werden.** Ob die Produktion nach einem Merge die neue Fassung zeigen würde, ist ungeklärt.
+**Zusätzlich geprüft:**
 
-**Nachtrag, Neubau mit geleertem Cache:** Die Fachstelle hat die Vorschau neu bauen lassen (Deploy `6acd0d62f6d6ec4728458a6c`, 16:40 UTC). Der Deploy ist fehlgeschlagen: «Failed during stage 'building site': Build script returned non-zero exit code: 2».
-- Die `netlify.toml` des Branchs (auf GitHub geprüft: im Stamm, `publish = "."`, Build-Befehl nur `echo`) kann das nicht auslösen.
-- Netlify führt also einen anderen Build-Befehl aus, vermutlich den der React-Fassung aus den Projekteinstellungen. Die früheren Vorschauen kamen aus dem Build-Cache der alten Fassung.
-- Ein Merge würde voraussichtlich auch den Produktions-Build scheitern lassen; Netlify behielte dann die bisherige Produktion.
-- Zum Beheben nötig: das Deploy-Log und die Build-Einstellungen des Netlify-Projekts (Base directory, Build command, Publish directory, Pfad der Konfigurationsdatei). Beides ist über die vorhandene Netlify-Verbindung nicht lesbar.
-- Der Schutz der Vorschauen war danach aus (Einstellung der Fachstelle).
+- **Links auf der Vorschau:** 18 Seiten (die 17 Seiten und `/a/b/c`), 451 Verweise auf 131 verschiedene Ziele. 450 antworten mit 200, ohne Umleitung, und jeder Anker steht im Ziel. Der eine Rest ist der Sprunglink `#main-content` der 404-Seite auf sich selbst (Status 404 erwartet).
+- **Ausgeliefert gegen Export:** Alle 17 Seiten weichen roh vom Export ab. Nach Abzug von drei Eingriffen durch Netlify sind alle 17 gleich:
+  - der Vorschau-Block vor `</body>` (oben Nr. 9)
+  - «Pretty URLs»: Seitenlinks ohne `.html` und ab dem Stamm, z. B. `verstehen.html` → `/verstehen`, `index.html` → `/`, `diagnose.html#abklaerung` → `/diagnose#abklaerung`; auf der 404-Seite, deren Links schon im Export ab dem Stamm stehen, `/verstehen.html` → `/verstehen`
+  - die umgeschriebenen `<a>`-Tags mit einfachen Anführungszeichen und neu geordneten Attributen
+- **Unverändert ausgeliefert:** die Pfade zu CSS, Skript, Logo und Schriften (relativ) und `<link rel="canonical">` (z. B. `https://borderline-angehoerige.netlify.app/verstehen.html`).
+- **Fremde Anfragen:** 0 auf allen 17 Seiten; fehlgeschlagene Anfragen ausser `/.netlify/`: 0.
+
+**Folgerung:** Z31-W3-2 ist auf der Vorschau ohne blockierenden Befund geprüft, von der bauenden Sitzung. Offen sind die Entscheide zu «Pretty URLs» und zum Schutz der Vorschauen und die Prüfung der Produktion nach dem Merge. **#659 bleibt ungemergt** bis zu den Schlussprüfungen.
 
 ### Etappe 3-2: Visualisierungs-Check
 
-Keine Abbildung, kein Text und keine Zeile des Plans geändert. Der Export übernimmt `<main>` unverändert (oben), die Figuren also auch. Freundin-Test entfällt.
+Keine Abbildung, kein Text und keine Zeile des Plans geändert. Der Export übernimmt `<main>` unverändert (oben), die Figuren also auch; Netlify ändert in `<main>` nur die Form der Links. Freundin-Test entfällt.
 
 ### Etappe 3-2: Entscheide der bauenden Sitzung (zur Prüfung)
 
 1. **Branchname ohne `claude/`.** Im Repository `borderline-angehoerige` erstellt `auto-merge-claude.yml` für jeden Push auf `claude/**` einen PR gegen `main` und mergt ihn, wenn die Prüfungen durchlaufen. Das hiesse Veröffentlichung. `CLAUDE.md` des Ziel-Repositorys verlangt `claude/<beschreibung>-<Zeitstempel>`. Übernommen ist der Zeitstempel, der doppelte Namen verhindert; das Präfix nicht.
 2. **Workflows entfernt.** Sie gehören zur React-Fassung (pnpm, Tests, visuelle Regression) und würden im PR rot laufen. Ohne die Datei auf dem Branch kann auch der Auto-Merge-Workflow für ihn nicht starten. Erhalten sind sie in `react-archiv` und auf `main`.
-3. **404 für Dateien des Repositorys.** Netlify liefert alles im Stamm aus. Drei Regeln in `netlify.toml` sperren `README.md`, `CLAUDE.md` und `netlify.toml`; Seiten und Weiterleitungen sind davon nicht berührt.
-4. **`CLAUDE.md` behalten, `README.md` neu.** `CLAUDE.md` enthält die Konventionen des Ziel-Repositorys, unabhängig von React. Das alte `README.md` beschrieb die React-Fassung; das neue nennt Quelle, Entstehung und Stand, ohne Telefonnummer.
-5. **`react-archiv` aus `main`.** `main` ist die veröffentlichte Fassung (Deploy `6acacec…`). Die übrigen elf Branches des Repositorys (`codex/…`, `copilot/…`) bleiben unberührt.
+3. **Export im Unterordner `site/`** (von der bauenden Sitzung vorgeschlagen, von der Fachstelle entschieden). Einen Publish-Ordner im Stamm übernimmt Netlify nicht aus der `netlify.toml` (Verlauf Nr. 3). Nebenwirkung: `README.md`, `CLAUDE.md` und `netlify.toml` liegen ausserhalb des Publish-Ordners. Die drei 404-Regeln für sie sind deshalb entfallen.
+4. **`CLAUDE.md` behalten, `README.md` neu.** `CLAUDE.md` enthält die Konventionen des Ziel-Repositorys, unabhängig von React. Das alte `README.md` beschrieb die React-Fassung; das neue nennt Quelle, Entstehung, Stand und Aufbau, ohne Telefonnummer.
+5. **`react-archiv` aus `main`.** `main` ist die veröffentlichte Fassung. Die übrigen elf Branches des Repositorys (`codex/…`, `copilot/…`) bleiben unberührt.
 6. **Entwurfsmodus.** Der Export mit `--production` ist gesperrt. Der Entwurf zeigt in der Fusszeile jeder Seite «Redaktioneller Status: Entwurf – fachliche Prüfung ausstehend» (`editorialStatus`). Vor dem Merge wird neu mit `--production` exportiert.
+7. **Codex P1 ohne Änderung.** `tools/export.mjs` bleibt bei relativen Pfaden: Auf der Vorschau leitet Netlify `/verstehen/` auf `/verstehen` um (Punkt 10).
+8. **Netlify-Einstellungen nicht geändert,** ausser dem vereinbarten kurzen Ausschalten des Schutzes. «Pretty URLs», Build-Einstellungen und Schutz der Vorschauen entscheidet die Fachstelle (Aufgefallen Nr. 2 bis 4).
 
 ### Etappe 3-2: Aufgefallen, nicht geändert
 
-1. **37 und 4 Regeln:** Die Zusammenfassung des Vorschau-Deploys nennt genau die Zahlen des aktuellen Produktions-Deploys der React-Fassung, beide mit dem Vermerk «All files already uploaded by a previous deploy with the same commits». Der Deploy meldet aber «No functions deployed» und kein Framework, wie es zum neuen Branch passt. Ob Netlify die neue `netlify.toml` und `_redirects` anwendet, zeigt erst die Vorschau (oben Nr. 1, 2 und 8). Wenn nicht: die Build-Einstellungen des Netlify-Projekts prüfen (Base directory, Publish directory, Build-Cache leeren und neu bauen). Zweiter Deploy `6acd09958fdf9be93e413bf2` (Commit `e5c8441`): wieder 37 und 4. Die Prüfung der Vorschau bestätigt die alte Fassung (unten); die Zahlen sind also echt.
-2. **Vorschau nur mit Team-Anmeldung:** Das Netlify-Projekt verlangt für alle Deploys ausser der Produktion die Anmeldung im Team. Wer prüft, braucht ein Konto im Team.
-3. **`siteUrl`** (Z31-W3-4): `https://borderline-angehoerige.netlify.app` ist die Produktionsadresse desselben Netlify-Projekts. Kanonische Links und `sitemap.xml` stimmen deshalb nach dem Merge. Auf der Vorschau zeigen sie auf die Produktionsadresse.
-4. **Schriftlizenz:** Der Export enthält die Rubik-Dateien, aber nicht die Lizenz (OFL, im Profil unter `licenses/`). Das betrifft `tools/export.mjs` im Profil, nicht diese Website.
-5. **Netlify-Funktion `material-download`:** Sie entfällt mit der React-Fassung. `/api/material-download/*` leitet laut `_redirects` auf die Startseite.
-6. **Codex-Review von #659** (drei Befunde):
+1. **Zahlen der ersten Deploys:** 37 Weiterleitungs- und 4 Header-Regeln meldeten die ersten beiden Vorschauen (`6acd06551b118d9d720307c8`, `6acd09958fdf9be93e413bf2`). Das sind die Zahlen der alten Konfiguration, wie bei der Produktion. Ursache war der Publish-Ordner (Verlauf Nr. 3). Der dritte Deploy meldet 86 und 1, wie erwartet.
+2. **Schutz der Vorschauen:** Bis zur Prüfung verlangte das Netlify-Projekt für alle Deploys ausser der Produktion die Anmeldung im Team. Jetzt ist der Schutz aus (Kurzfassung Nr. 4). Wer die Vorschau-Adresse kennt, sieht den Entwurf.
+3. **«Pretty URLs» in den Netlify-Einstellungen** (Nachbearbeitung der Assets): Netlify schreibt die Seitenlinks beim Ausliefern um (oben). Folgen:
+   - Ausgeliefert wird nicht Zeichen für Zeichen der Export, den Gate und Prüfungen sehen.
+   - Jede Seite ist unter zwei Adressen erreichbar (`/verstehen` und `/verstehen.html`). Kanonische Adresse und `sitemap.xml` nennen `.html`, die Links die Adresse ohne Endung.
+   - Funktional ohne Befund (450 von 450).
+   - Ausgeschaltet liefert Netlify den Export unverändert aus; die Links bleiben dann relativ mit `.html` (lokal geprüft: 157 Linkziele).
+   - Entscheid der Fachstelle; für W3 und R1 vorzulegen.
+4. **Build-Einstellungen des Netlify-Projekts:** Sie nennen vermutlich weiterhin Build-Befehl und Publish-Ordner der React-Fassung (`dist/public`, lesbar nur im Netlify-Projekt). Die `netlify.toml` überschreibt beides; auf der Vorschau ist das belegt. Vorschlag:
+   - nach dem Merge die Produktion mit denselben Prüfungen wie die Vorschau prüfen (ohne den Vorschau-Block)
+   - scheitert der Deploy, behält Netlify die bisherige Produktion; ein fehlerhafter Deploy lässt sich durch erneutes Veröffentlichen des vorherigen zurücknehmen
+   - die Projekteinstellungen an die neue Fassung angleichen (Publish-Ordner `site`, kein Build-Befehl), damit sie nicht mehr widersprechen
+5. **`siteUrl`** (Z31-W3-4): `https://borderline-angehoerige.netlify.app` ist die Produktionsadresse desselben Netlify-Projekts. Kanonische Links und `sitemap.xml` stimmen deshalb nach dem Merge. Auf der Vorschau zeigen sie auf die Produktionsadresse.
+6. **PDF-Adresse in Kleinschreibung:** `/notfallkarte-zuerich-psychische-krise.pdf` antwortet mit 404; die Regel für `/Notfallkarte-Zuerich-Psychische-Krise.pdf` greift hier nur in der Schreibweise der Regel. Die alte Fassung verwies nur auf die Schreibweise mit Grossbuchstaben (`git grep` in `f46038b`: 13 Dateien mit dieser Schreibweise, 0 mit einer anderen). Keine Änderung nötig.
+7. **Schriftlizenz:** Der Export enthält die Rubik-Dateien, aber nicht die Lizenz (OFL, im Profil unter `licenses/`). Das betrifft `tools/export.mjs` im Profil, nicht diese Website.
+8. **Netlify-Funktion `material-download`:** Sie entfällt mit der React-Fassung. `/api/material-download/*` leitet laut `_redirects` auf die Startseite.
+9. **Codex-Review von #659** (drei Befunde):
    - umgesetzt in `e5c8441`: `.gitignore` für ältere Checkouts (P2) und `/404` mit Status 404 (P2)
-   - offen: P1, relative Pfade unter einer Adresse mit Schrägstrich am Ende. Netlify normalisiert nach meinem Verständnis nur Ordner (`x/index.html`) auf den Schrägstrich, nicht einzelne Dateien wie `verstehen.html`; prüfbar nur auf der Vorschau (oben Nr. 10). Bestätigt es sich, gehört die Korrektur in `tools/export.mjs` des Profils (Pfade ab dem Stamm oder `<base href="/">`), nicht von Hand in den Export.
+   - P1 (relative Pfade unter einer Adresse mit Schrägstrich am Ende): auf der Vorschau widerlegt (Punkt 10); Thread mit Beleg beantwortet und geschlossen
 
 **Stand 12.10.2026 · Freigabe 2c und 3-1 eintragen · bauende Sitzung (Claude Code).** Umgesetzt ist `FREIGABE-ETAPPE-2C-3-1.md` (Entscheide der Fachstelle vom 12.10.2026: Etappen 2c und 3-1 als Ganzes freigegeben, letzte Anpassungen, 13 Verweissätze auf den freigegebenen Seiten). Grundlage ist `borderline-umbau` am Stand `55e98cb`, dazu der Auftrag selbst (`0e6b119`); gearbeitet auf dem Branch `claude/dazzling-mendel-3v1pwo`. Geändert sind nur:
 
