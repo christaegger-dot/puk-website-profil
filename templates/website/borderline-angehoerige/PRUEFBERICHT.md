@@ -5090,6 +5090,45 @@ Keine Stufe ist «erledigt». W1: 2 wichtig, 2 optional, 6 Fragen. W2: 2 wichtig
 
 Nach jedem Bau ohne Nachfrage ausfüllen: Visualisierungs-Check wie unten, mit Beleg je Punkt. Arbeitsstand, keine Prüfstufe.
 
+**Stand 12.10.2026 · Korrektur nach der Nachprüfung SP2-K (NSK-1 bis NSK-3) · bauende Sitzung (Claude Code).** Die Fachstelle hat am 12.10.2026 im Chat entschieden, dass die bauende Sitzung der Korrektur SP2-K die Befunde der Nachprüfung selbst korrigiert («Nein, bitte korrigiere die Punkte gleich selber»), ohne Entscheidsitzung dazwischen. Grundlage: Abschnitt «Nachprüfung SP2-K» (Commit `52c27f2`). Geändert sind `borderline.css`, `content/unterstuetzung.html` (und die gebaute Seite), `abgleich/unterstuetzung.md` und `abgleich/README.md`, dazu dieser Bericht. Keine Stufe ist «erledigt»; die Statustabelle ist unverändert; keine Freigabe eingetragen.
+
+**Nicht erfüllt oder offen (Kurzfassung):**
+
+1. **Neuer Satz ohne Freigabe (NSK-3):** «Die Treffpunkte sind offen für alle Angehörigen sowie Freundinnen und Freunde.» Den Wortlaut hat die bauende Sitzung gewählt, er steht nicht in Abschnitt 4 der Entscheide. Er braucht die Freigabe der Fachstelle.
+2. **NSK-2 in diesem Chromium nicht sichtbar prüfbar:** Das Chromium hier trennt Deutsch nicht (Test: Kasten 90 px, `lang="de"`, `hyphens:auto`, kein Trennstrich, Wörter laufen über). Geprüft sind der berechnete Stil und dass sich sonst nichts ändert. Ob Firefox, Safari und Chrome mit Trennwörterbuch mit Trennstrich trennen, gehört in die realen Tests (wie NSK-F-1).
+3. **Nachprüfung der drei Korrekturen** durch eine Sitzung, die nicht gebaut hat, steht aus (Ablauf, Regel 2).
+4. **Nicht Teil dieser Korrektur:** NSK-4 (Hinweis, Netlify bleibt unverändert) und NSK-F-1 (Frage an die Fachstelle zu den realen Tests). Die leere Seite vor der Anspannungskurve auf `verstehen` (SP1-39) hat dieselbe Ursache wie NSK-1, ist aber kein Befund der Nachprüfung und bleibt (Aufgefallen Nr. 1).
+
+| Befund | Stand | Umsetzung und Beleg |
+| --- | --- | --- |
+| NSK-1 | umgesetzt | **Ursache:** Die Hülle `.puk-vis-wide` ist im Druck unteilbar (`components/bundle.css`, `@media print`: `.puk-vis-figure,.puk-vis-wide,figure,table{break-inside:avoid}`; die Figur selbst ist dort wieder `break-inside:auto`, die Hülle nicht). «Zwei Sichten» ist länger als eine A4-Seite; Chromium schob die ganze Figur auf eine neue Seite und liess davor eine leere Seite stehen (vorher in 6 von 6 Einstellungen, auch am Stand `2c7078a`), bei 15 mm Rand nach SP2-K-19 dazu eine Seite mit zwei Zeilen. **Regel** in `borderline.css`, `@media print`: `.puk-vis-wide:has(>[data-visual-id="v-bz-sichten"]),[data-visual-id="v-bz-sichten"]>.bl-sichten{break-inside:auto}`. Die Figur bricht zwischen den Schritten um; jeder Schritt bleibt zusammen (`.bl-sicht{break-inside:avoid}`), Titel, Kernaussage und Kurztext bleiben beim ersten Schritt. Druck: Tabelle unten. **Bericht:** Die Angabe «Seitenzahl des PDF vorher und nachher 11» im Block «Korrektur SP2-K», Abschnitt «Druck», ist an Ort und Stelle berichtigt. Verworfen: nur `.bl-sichten` teilbar (leere Seite weg, Zweizeilenseite bei 15 mm blieb); `display:block` oder `break-after:auto` an der Figur (ohne Wirkung) |
+| NSK-2 | umgesetzt (Wirkung hier nicht sichtbar, Kurzfassung Nr. 2) | `borderline.css`: `@container (max-width:12rem){.puk-vis-figure{hyphens:auto}}`. 12rem = 192 px bei 16 px Schrift (Container mindestens 280 px: nie), 288 px bei 24 px (nur bei 320 px Fenster), 384 px bei 32 px (bei 320 und 360 px Fenster). Berechneter Stil von `.puk-vis-label` in Schleife, Zwei Sichten, Kurve und Trieb: `auto` bei 24 px/320 px, 32 px/320 px und 32 px/360 px; `manual` in allen übrigen Kombinationen (16, 24, 32 px × 320, 360, 1024, 1280 px). Im Druck (Wurzel 13 px, 12rem = 156 px) nie. Das Profil bleibt unverändert (SPZ-40, Entscheide 5.6) |
+| NSK-3 | umgesetzt | `content/unterstuetzung.html` › `austausch`, VASK Zürich: «Die Treffpunkte sind offen für alle Angehörigen und Freunde.» → «Die Treffpunkte sind offen für alle Angehörigen sowie Freundinnen und Freunde.» Paarform wie W11 bis W13 (SPZ-33); «sowie», damit nicht zweimal «und» steht. Abgleich `unterstuetzung.md` Nr. 130 und 136: «umformuliert (NSK)», neuer Statuswert in `abgleich/README.md`. Sonst steht der Satz nirgends (`grep` in `content/`, gebauten Seiten, `site.config.json`, `abgleich/`) |
+
+**Druck `beziehungen`** (A4, Chromium, wie Abschnitt «Druck» im Block «Korrektur SP2-K»; Seitenzahl · leere Seiten · Seiten unter 60 Wörtern · Seiten von Titel und Kennzeichnung der Schleife):
+
+| Einstellung | vorher (`2c7078a`) | nach SP2-K (`5d59aba`) | nach NSK-1 |
+| --- | --- | --- | --- |
+| Rand 0, 100 % | 11 · 1 leer · – · S. 3 / S. 4 | 11 · 1 leer · – · S. 3 / S. 3 | 10 · 0 · – · S. 3 / S. 3 |
+| Rand 10 mm, 100 % | 11 · 1 leer · – · S. 3 / S. 4 | 11 · 1 leer · – · S. 3 / S. 3 | 10 · 0 · – · S. 3 / S. 3 |
+| Rand 15 mm, 100 % | 11 · 1 leer · – · S. 3 / S. 4 | 12 · 1 leer · S. 6 (28 W) · S. 3 / S. 3 | 10 · 0 · – · S. 3 / S. 3 |
+| Rand 15 mm, 90 % | 11 · 1 leer · – · S. 3 / S. 4 | 11 · 1 leer · – · S. 3 / S. 3 | 10 · 0 · – · S. 3 / S. 3 |
+| Rand 10 mm, 80 % | 10 · 1 leer · S. 2 (48 W) · S. 3 / S. 3 | 10 · 1 leer · S. 2 · S. 3 / S. 3 | 9 · 0 · S. 2 (48 W) · S. 3 / S. 3 |
+| Rand 10 mm, 110 % | 13 · 1 leer · – · S. 3 / S. 4 | 13 · 1 leer · – · S. 3 / S. 3 | 11 · 0 · S. 7 (55 W) · S. 3 / S. 3 |
+
+S. 2 bei 80 % (Abschnittsanfang vor der Schleife) war vorher gleich. S. 7 bei 110 % ist eine volle Seite mit den Schritten «Station 4» und «Station 5» von «Zwei Sichten» (angesehen). Seiten 5 bis 7 bei 15 mm und 6 bis 8 bei 110 % angesehen: «Zwei Sichten» beginnt direkt nach dem Text auf derselben Seite, kein Schritt ist geteilt.
+
+**Fotos:** alle 192 Fotos der acht Figuren (360, 1024, 1280, 1440 px × 100, 150, 200 % × Standard und «kontrast», wie im Block «Korrektur SP2-K») neu aufgenommen und mit der Serie am Stand `5d59aba` pixelweise verglichen: 192 gleich, 0 verschieden.
+
+**Prüfungen:** `node tools/build.mjs` → «Gate draft: 0 blockierend, 4 Hinweise» (wie vorher); `node tools/gate.mjs --selftest` → 65/65; `node abgleich/pruefe-abgleich.mjs` → vor dem Nachführen «7406 Zeilen, 2 ohne Fundstelle» (Nr. 130, 136), danach «7406 Zeilen, 0 ohne Fundstelle»; `node abgleich/verwendet-auf.mjs` in beiden Modi 0 mit anderer Angabe; `node abgleich/kennzahlen.mjs` läuft (`unterstuetzung` 1422 → 1424 Wörter); `tel:` 0, `style="` 0.
+
+**Neue Sätze zur Freigabe:** «Die Treffpunkte sind offen für alle Angehörigen sowie Freundinnen und Freunde.» (`unterstuetzung` › `austausch`; ersetzt «Die Treffpunkte sind offen für alle Angehörigen und Freunde.»). Kein weiterer sichtbarer Satz geändert.
+
+**Aufgefallen, nicht geändert:**
+
+1. `verstehen` hat im Druck dieselbe leere Seite vor der Anspannungskurve (SP1-39; gemessen: Rand 0 S. 5, Rand 10 und 15 mm S. 6). Ursache wie bei NSK-1; dieselbe Regel für `v-vs-anspannung` würde sie beheben. Kein Befund der Nachprüfung, deshalb nicht geändert.
+2. Lange Wörter ausserhalb der Figuren brechen bei 360 px mit 200 % ebenfalls ohne Trennstrich (z. B. «Bedeutungsschleife» im Seitentext). NSK-2 betrifft nur Figuren (Visualisierungs-Check, Punkt 18).
+
 **Stand 12.10.2026 · Korrektur SP2-K (nach der Schlussprüfung, Entscheide PR #60 und #61) · bauende Sitzung (Claude Code).** Umgesetzt ist `KORREKTUR-SCHLUSSPRUEFUNG-2.md` (SP2-K-1 bis SP2-K-28) auf dem Branch `korrektur-sp2-k`, abgezweigt von `main` am Stand `d8320a7` (Merge von PR #66; die Dateien der Website sind dort gleich wie am Stand `2c7078a`, geändert sind seither nur Auftrag, Entscheide zu RF-1 bis RF-5 und dieser Bericht). Grundlage sind `ENTSCHEIDE-SCHLUSSPRUEFUNG.md` (Fassung aus PR #60 mit Nachtrag aus PR #61) und Abschnitt 11 des Auftrags (RF-1 bis RF-5). `KORREKTUR-SCHLUSSPRUEFUNG.md` (SP-K) ist nicht verwendet. Diese Sitzung hat an der Schlussprüfung, ihrer Zusammenführung, den Entscheiden und am Korrekturauftrag nicht mitgearbeitet. Geändert sind nur die Dateien aus Abschnitt 1 des Auftrags. Netlify und `christaegger-dot/borderline-angehoerige` sind unverändert; dort ist nur `client/public/_redirects` auf `main` (`f46038b`) gelesen. Keine Stufe ist «erledigt»; die Statustabelle ist unverändert.
 
 **Nicht erfüllt oder offen (Kurzfassung):**
@@ -5365,7 +5404,7 @@ Prüfpunkte 1 bis 19 wie in der Schlussprüfung (Prüfung 2, Teil 5.4, Leitlinie
 | Rand 10 mm, 80 % | S. 3 / S. 3 | S. 3 / S. 3 |
 | Rand 10 mm, 110 % | S. 3 / S. 4 | S. 3 / S. 4 |
 
-Nachher stehen Titel, Kernaussage, Darstellung und Kennzeichnung der Schleife in allen sechs Einstellungen auf einer Seite. Die Darstellung im Druck ist wie vorher: bei Rand 0 der Kreis (640 px), bei 10 und 15 mm Rand die Liste; Eisberg im Druck weiter als Liste. Zuerst geprüft und verworfen: (a) `break-inside:avoid` auf der ganzen Figur: kein Unterschied zu ohne Regel, weil die Figur mit dem Kasten höher ist als die Seite; (b) Schwellen nur in `rem`: Die Kennzeichnung blieb bei 15 mm Rand auf S. 4, und der Druck von Eisberg und Schleife änderte sich (Abschnitt «Schwellen»). Seitenzahl des PDF vorher und nachher 11.
+Nachher stehen Titel, Kernaussage, Darstellung und Kennzeichnung der Schleife in allen sechs Einstellungen auf einer Seite. Die Darstellung im Druck ist wie vorher: bei Rand 0 der Kreis (640 px), bei 10 und 15 mm Rand die Liste; Eisberg im Druck weiter als Liste. Zuerst geprüft und verworfen: (a) `break-inside:avoid` auf der ganzen Figur: kein Unterschied zu ohne Regel, weil die Figur mit dem Kasten höher ist als die Seite; (b) Schwellen nur in `rem`: Die Kennzeichnung blieb bei 15 mm Rand auf S. 4, und der Druck von Eisberg und Schleife änderte sich (Abschnitt «Schwellen»). Seitenzahl des PDF vorher und nachher 11 bei Rand 0 (berichtigt nach NSK-1: bei 15 mm Rand war es nachher 12 statt 11; nach der Korrektur NSK-1 sind es 10, Block «Korrektur nach der Nachprüfung SP2-K»).
 
 ### Korrektur SP2-K: Schwellen
 
