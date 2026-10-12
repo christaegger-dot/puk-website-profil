@@ -1122,7 +1122,7 @@ Keine Abbildung, kein Text und keine Zeile des Plans geändert. Der Export über
 3. **404 für Dateien des Repositorys.** Netlify liefert alles im Stamm aus. Drei Regeln in `netlify.toml` sperren `README.md`, `CLAUDE.md` und `netlify.toml`; Seiten und Weiterleitungen sind davon nicht berührt.
 4. **`CLAUDE.md` behalten, `README.md` neu.** `CLAUDE.md` enthält die Konventionen des Ziel-Repositorys, unabhängig von React. Das alte `README.md` beschrieb die React-Fassung; das neue nennt Quelle, Entstehung und Stand, ohne Telefonnummer.
 5. **`react-archiv` aus `main`.** `main` ist die veröffentlichte Fassung (Deploy `6acacec…`). Die übrigen elf Branches des Repositorys (`codex/…`, `copilot/…`) bleiben unberührt.
-6. **Entwurfsmodus.** Der Export mit `--production` ist gesperrt. Der Entwurf zeigt im Kopf «Entwurf – fachliche Prüfung ausstehend» (`editorialStatus`). Vor dem Merge wird neu mit `--production` exportiert.
+6. **Entwurfsmodus.** Der Export mit `--production` ist gesperrt. Der Entwurf zeigt in der Fusszeile jeder Seite «Redaktioneller Status: Entwurf – fachliche Prüfung ausstehend» (`editorialStatus`). Vor dem Merge wird neu mit `--production` exportiert.
 
 ### Etappe 3-2: Aufgefallen, nicht geändert
 
