@@ -16,6 +16,8 @@ Gilt für `templates/website/depression-angehoerige/` am Stand `72560d0`. Belege
 
 **Antwort der Fachstelle vom 12.10.2026:** «alle Vorschläge: OK; Arbeitsheft: wird nich[t] angehängt.» (eingetragen von der bauenden Sitzung)
 
+**Nachtrag der Fachstelle vom 12.10.2026:** «Arbeitsheft: bitte löschen, dies wird nicht thematis[i]ert» und «Rechtsdienst: nicht involviert, löschen!». Auf Rückfrage: W1-31 korrigieren, W1-37 auf den Wortlaut des Gesetzes kürzen, Abbildung «Mit im Boot» freigeben (je «wie empfohlen»). Damit entfallen die Abschnitte 2 und 4; Hinweise darauf in den übrigen Abschnitten sind überholt. Massgebend für offene Punkte ist `PRUEFBERICHT.md`. (eingetragen von der bauenden Sitzung)
+
 **Übersicht der Entscheide**
 
 | Nr. | Worum es geht | Empfehlung |
@@ -27,9 +29,9 @@ Gilt für `templates/website/depression-angehoerige/` am Stand `72560d0`. Belege
 | 1 e | Sätze, die am Original keinen Beleg haben | bestätigen und Quellen ergänzen |
 | 1 f | Stand der Angebote und VASK | «Angaben zu den Angeboten: Stand 12.10.2026.»; VASK-Sätze bleiben |
 | 1 g | zwei Quellen, die sich nicht prüfen liessen | Ausnahme annehmen |
-| 2 | Boot-Bild und Arbeitsheft | Ihre Antwort auf vier Fragen |
+| 2 | Boot-Bild und Arbeitsheft | entfällt (12.10.2026): Heft nicht mehr genannt, Abbildung freigegeben |
 | 3 | Verweis im Text nach «den Raum verlassen» | ja |
-| 4 | rechtliche Prüfung durch die PUK | Abschnitt 4 weiterleiten |
+| 4 | rechtliche Prüfung durch die PUK | entfällt (12.10.2026): kein Rechtsdienst; W1-31 und W1-37 von der Fachstelle entschieden |
 | 5 | optionale Befunde und Profil-Befunde | 3 umsetzen, 11 zurückstellen |
 | 6 | Weg zu R3 «Go» | zur Kenntnis |
 
@@ -186,26 +188,9 @@ Zur Kenntnis; das setzt die bauende Sitzung um. Danach baut sie neu (`node tools
 
 > **Antwort 1 g:** wie empfohlen / anders: …
 
-## 2. Boot-Bild und Arbeitsheft (W1-F-15)
+## 2. Boot-Bild und Arbeitsheft (W1-F-15) · entfällt
 
-**Worum es geht:** Die Abbildung «Mit im Boot» auf «Begleiten und Gespräche» nennt als Grundlage Ihr Arbeitsheft «Wenn dein Partner depressiv ist». Ob Bild, Sätze und Kurztext zur Metapher im Heft passen, kann nur prüfen, wer das Heft vor sich hat. Das Heft lag dieser Prüfsitzung nicht vor (im Auftrag erwähnt, aber nicht beigelegt); dieser Punkt bleibt offen.
-
-**Fundstelle:** [Begleiten › Abb. 1](https://deploy-preview-57--puk-website-profil.netlify.app/templates/website/depression-angehoerige/begleiten.html#haltung)
-- Kernaussage: «Sie können mit im Boot sitzen und mitrudern. Für die andere Person rudern können Sie nicht.»
-- Kurztext: «Wer begleitet, rudert auf der eigenen Seite mit. Wie schnell es vorangeht, lässt sich nicht erzwingen. Manchmal geht es nur langsam, und das ist in Ordnung.»
-- Sätze im Bild: «Heute schaffe ich nur wenige Züge.» und «Ich bin da und rudere auf meiner Seite.»
-- Zeichnung: zwei Menschen hintereinander im Boot, jede Person mit eigenem Ruder; die linke etwas gebeugt, die rechte aufrecht.
-- Kennzeichnung: «Metapher nach dem Arbeitsheft «Wenn dein Partner depressiv ist» der Fachstelle»; Quellenzeile: «Fachstelle Angehörigenarbeit, Psychiatrische Universitätsklinik Zürich (2026): Wenn dein Partner depressiv ist. Ein Arbeitsheft für Partnerinnen. Verwendung: Ruderboot-Metapher «Unterstützen ohne zu übernehmen» (Abbildung 1).»
-
-**Fragen an Sie** (je eine kurze Antwort):
-1. Sitzen im Heft beide Menschen im selben Boot, und hat jede Person ein eigenes Ruder? Wenn nicht: Wie ist das Bild im Heft?
-2. Passt die Kernaussage «Für die andere Person rudern können Sie nicht» zur Aussage des Hefts «Unterstützen ohne zu übernehmen»?
-3. Gibt es im Heft einen Satz, der dem Bild widerspricht, zum Beispiel zum Aussteigen, Steuern oder Tempo?
-4. Auf welcher Seite steht die Metapher, und welche Fassung des Hefts gilt (Version, Monat, Jahr)? Die Prüfsitzung schlägt vor, beides in die Quellenzeile zu setzen.
-
-**Empfehlung:** Antworten Sie aus Ihrer Kenntnis des Hefts. Passt alles, geben Sie Abb. 9 mit 1 a frei. Weicht das Heft ab, beschreiben Sie die Abweichung; die bauende Sitzung schlägt dann eine Anpassung vor. Möchten Sie eine unabhängige Prüfung, legen Sie das PDF einer Prüfsitzung vor.
-
-> **Antwort 2:** 1. … 2. … 3. … 4. …
+**Gelöscht am 12.10.2026** auf Entscheid der Fachstelle: «Arbeitsheft: bitte löschen, dies wird nicht thematis[i]ert». Die Website nennt das Arbeitsheft nicht mehr; die Abbildung «Mit im Boot» ist eine eigene didaktische Darstellung und freigegeben. Die Fragen zum Heft sind entfernt; die frühere Fassung steht in der Git-Geschichte (Commit `b07fffb`).
 
 ## 3. Verweis im Text nach «den Raum verlassen» (R1, Punkt 18)
 
@@ -227,111 +212,9 @@ Zur Kenntnis; das setzt die bauende Sitzung um. Danach baut sie neu (`node tools
 
 > **Antwort 3:** wie empfohlen / anders: …
 
-## 4. Vorlage für die rechtliche Prüfung durch die PUK (W1-31)
+## 4. Rechtliche Prüfung (W1-31, W1-37) · entfällt
 
-Diesen Abschnitt können Sie unverändert an den Rechtsdienst weiterleiten.
-
----
-
-**An den Rechtsdienst der Psychiatrischen Universitätsklinik Zürich**
-**Betreff:** Rechtliche Prüfung von Impressum und Datenschutz der Website «Depression: Informationen für Angehörige» der Fachstelle Angehörigenarbeit
-**Stand:** 12.10.2026. Vorbereitet von einer Prüfsitzung (Claude Code) im Auftrag der Fachstelle.
-
-> **Hinweis:** Dies ist keine Rechtsauskunft. Alle Wortlaute sind Vorschläge zur Prüfung. Die Prüfsitzung hat die Technik gemessen; die rechtliche Beurteilung liegt bei Ihnen.
-
-**Ausgangslage**
-- Die Website informiert Angehörige von Erwachsenen mit Depression. Sie hat acht Inhaltsseiten und eine Seite «Impressum und Datenschutz».
-- Herausgeberin ist die Fachstelle Angehörigenarbeit der PUK. Entscheid der Fachstelle vom 11.10.2026: «Die Website ist ein Angebot der Fachstelle Angehörigenarbeit der PUK, kein offizielles Angebot der PUK».
-- Die Website wird über Netlify (Netlify, Inc., USA) ausgeliefert, unter `https://depression-angehoerige.netlify.app` (Entscheid vom 11.10.2026; noch nicht veröffentlicht).
-- Vorschau der heutigen Fassung: [Impressum und Datenschutz](https://deploy-preview-57--puk-website-profil.netlify.app/templates/website/depression-angehoerige/impressum-datenschutz.html).
-
-**1. Was die Seite heute sagt** (Zitate)
-
-*Kopf:* «Musterentwurf: noch nicht fachlich geprüft. Rechtliche Angaben: Stand 11.10.2026, rechtliche Prüfung ausstehend.»
-
-*Impressum:*
-- «Herausgeberin: Fachstelle Angehörigenarbeit der Psychiatrischen Universitätsklinik Zürich»
-- «Inhalt und Umsetzung: Ch. Egger, Fachstelle Angehörigenarbeit»
-- «Kontakt: angehoerigenarbeit@pukzh.ch»
-- «Die Website ist ein Angebot der Fachstelle, kein offizielles Angebot der Klinik als Ganzes.»
-- «Die Website gibt allgemeine Informationen für Angehörige. Sie ersetzt keine individuelle Abklärung, Beratung oder Behandlung. Für die Inhalte verlinkter Websites sind deren Anbieter verantwortlich.»
-
-*Datenschutz:*
-- «Diese Website erhebt so wenige Daten wie möglich.»
-- «Keine Cookies, keine Auswertung: Die Website setzt keine Cookies und verwendet keine Dienste, die Besuche auswerten oder Werbung zeigen.»
-- «Keine Dienste anderer Anbieter: Schriften, Bilder und Skripte liegen auf demselben Server wie die Seiten. Beim Lesen gehen keine Daten an andere Anbieter.»
-- «Protokolle beim Betrieb: Die Website wird über den Dienst Netlify (Netlify, Inc., USA) ausgeliefert. Netlify speichert beim Aufruf einer Seite technisch notwendige Angaben, zum Beispiel IP-Adresse, Zeitpunkt, aufgerufene Seite und Browser, und braucht sie für einen sicheren Betrieb. Diese Angaben können auch in den USA bearbeitet werden.»
-- «E-Mail an die Fachstelle: Wenn Sie der Fachstelle schreiben, verwendet sie Ihre Angaben, um Ihnen zu antworten. Gewöhnliche E-Mails sind nicht durchgehend verschlüsselt; schreiben Sie nur, was Sie auf diesem Weg mitteilen möchten.»
-- «Links auf andere Websites: Wenn Sie einem Link auf eine andere Website folgen, gelten dort deren Regeln zum Datenschutz.»
-- «Fragen zum Datenschutz: angehoerigenarbeit@pukzh.ch» · «Stand: 11.10.2026»
-
-**2. Widersprüche und Lücken**
-
-| Nr. | Punkt | Was auffällt |
-| --- | --- | --- |
-| L1 | «keine Daten an andere Anbieter» | widerspricht dem nächsten Eintrag zu Netlify: Netlify ist für Lesende ein anderer Anbieter und erhält IP-Adresse, Zeitpunkt, Seite und Browser. |
-| L2 | geltendes Recht | Die Seite nennt kein Datenschutzgesetz. Offen ist, ob für eine Website einer Fachstelle der PUK das kantonale Recht (IDG ZH) oder das Bundesgesetz (DSG) gilt. |
-| L3 | verantwortliche Stelle | Die Seite nennt keine verantwortliche Stelle für die Bearbeitung von Personendaten, nur die Herausgeberin und eine E-Mail-Adresse. |
-| L4 | Aufbewahrung der Server-Protokolle | Dauer, Zweck und Grundlage der Protokolle bei Netlify sind nicht genannt. Die Dauer ist der Fachstelle nicht bekannt; sie steht im Vertrag oder in den Unterlagen von Netlify. |
-| L5 | Bearbeitung in den USA | Die Seite sagt, dass Angaben in den USA bearbeitet werden können, aber nicht, auf welcher Grundlage. Ob ein Vertrag mit Netlify besteht und wer ihn abgeschlossen hat, ist der Prüfsitzung nicht bekannt. |
-| L6 | Postadresse | Das Impressum nennt nur eine E-Mail-Adresse. Die PUK nennt für die Beratung der Fachstelle die Lenggstrasse 31 in Zürich (pukzh.ch, «Informationen für Angehörige», abgerufen am 12.10.2026). |
-| L7 | Herausgeberin und «kein offizielles Angebot» (S-32) | Wer den Unterschied zwischen Fachstelle und Klinik nicht kennt, liest «Herausgeberin: … der Psychiatrischen Universitätsklinik Zürich» und gleich danach «kein offizielles Angebot der Klinik als Ganzes». Die PUK selbst nennt die Beratung der Fachstelle auf pukzh.ch eine «kostenlose Dienstleistung der Psychiatrischen Universitätsklinik Zürich». |
-| L8 | Prüfvermerk (W1-32) | Der Kopf trägt «Rechtliche Angaben: Stand 11.10.2026, rechtliche Prüfung ausstehend.». Er wird nach Ihrer Prüfung ersetzt. |
-| L9 | Rechte der Besuchenden | Auskunft, Berichtigung, Löschung und eine Aufsichtsbehörde sind nicht genannt. Ob das nötig ist, hängt von L2 ab. |
-
-**3. Was technisch tatsächlich geschieht** (gemessen; keine rechtliche Wertung)
-- **Keine Cookies, kein Tracking:** Alle 10 Seiten in Chromium geladen (lokaler Server, 12.10.2026): 0 Cookies, 0 Einträge im Browser-Speicher (`localStorage`, `sessionStorage`). Netlify sendete in der Vorschau beim Abruf der Seite «Impressum und Datenschutz» keinen `Set-Cookie`-Header (12.10.2026). Frühere Prüfungen bestätigen das für Arbeitsordner und Export (Prüfbericht, W3: Runde 1 «Kein Tracking, keine Cookies, keine Speicherung» erfüllt; Runde 2 «0 Cookies, 0 Einträge in `localStorage`/`sessionStorage`»).
-- **Keine externen Schriften, Skripte oder Bilder:** 120 Anfragen beim Laden aller 10 Seiten, alle an denselben Server. Schriften: drei Dateien «Rubik» (Light, Regular, Medium) aus dem eigenen Ordner. Einziges Skript: `interaktion.js` vom selben Server.
-- **Keine Formulare:** 0 `form`, `input` und `textarea` in den Inhalten (Prüfbericht, W1, Runde 4). Kontakt nur über einen E-Mail-Link.
-- **Sicherheitsregeln des Servers** (Datei `_headers` im Website-Ordner). Sie wird mit dem Export auf die Ziel-Adresse übertragen. In der Vorschau gelten andere Regeln des Repositorys (dort z. B. ohne `Referrer-Policy`). Ob Netlify die Regeln auf der Ziel-Adresse anwendet, lässt sich erst nach der Veröffentlichung prüfen (R3).
-  - `Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; … frame-ancestors 'none'`: Der Browser lädt nur Dateien vom eigenen Server.
-  - `Referrer-Policy: no-referrer`: Beim Klick auf einen Link zu einer anderen Website gibt der Browser nicht weiter, von welcher Seite die Person kommt.
-  - `X-Frame-Options: DENY`, `X-Content-Type-Options: nosniff`, `Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()`.
-- **Was die Prüfsitzung nicht messen konnte:** was Netlify auf seinen Servern protokolliert und wie lange. Das ist eine Frage an Netlify bzw. an den Vertrag. Ebenso nicht die Ziel-Adresse: Sie war am 12.10.2026 noch nicht veröffentlicht (Antwort 404).
-
-**4. Vorschlag für den geänderten Wortlaut** (zur Prüfung; eckige Klammern füllen Sie nach Ihren Antworten)
-
-*Kopf:* «Rechtliche Angaben: Stand [Datum Ihrer Prüfung].»
-
-*Impressum:*
-- «Herausgeberin: Fachstelle Angehörigenarbeit der Psychiatrischen Universitätsklinik Zürich»
-- «Postadresse: [Psychiatrische Universitätsklinik Zürich, Fachstelle Angehörigenarbeit, Lenggstrasse 31, 8032 Zürich; Postleitzahl und Postfach bitte bestätigen]»
-- «Inhalt und Umsetzung: Ch. Egger, Fachstelle Angehörigenarbeit»
-- «Kontakt: angehoerigenarbeit@pukzh.ch»
-- «Die Website ist ein Angebot der Fachstelle, kein offizielles Angebot der Klinik als Ganzes.» (heutiger Wortlaut; anpassen nach Ihrer Antwort auf Frage 3)
-- «Die Website gibt allgemeine Informationen für Angehörige. Sie ersetzt keine individuelle Abklärung, Beratung oder Behandlung. Für die Inhalte verlinkter Websites sind deren Anbieter verantwortlich.» (unverändert)
-
-*Datenschutz:*
-- «Verantwortlich für die Bearbeitung von Personendaten auf dieser Website ist [Stelle nach Frage 2, mit Adresse].» [und gegebenenfalls: «Es gilt [Gesetz nach Frage 1].»]
-- «Keine Cookies, keine Auswertung: Die Website setzt keine Cookies und verwendet keine Dienste, die Besuche auswerten oder Werbung zeigen.» (unverändert)
-- «Schriften und Skripte: Schriften, Bilder und Skripte kommen von derselben Adresse wie die Seiten. Ausser dem Dienst, über den die Website ausgeliefert wird (siehe «Protokolle beim Betrieb»), erhält beim Lesen kein anderer Anbieter Daten.» (aus W1-31)
-- «Protokolle beim Betrieb: Die Website wird über den Dienst Netlify (Netlify, Inc., USA) ausgeliefert. Beim Aufruf einer Seite speichert Netlify technisch notwendige Angaben, zum Beispiel IP-Adresse, Zeitpunkt, aufgerufene Seite und Browser. Netlify braucht sie für einen sicheren Betrieb und löscht sie nach [Dauer]. Diese Angaben können auch in den USA bearbeitet werden; [Grundlage nach Frage 4].»
-- «E-Mail an die Fachstelle: Wenn Sie der Fachstelle schreiben, verwendet sie Ihre Angaben, um Ihnen zu antworten[, und bewahrt sie [Dauer] auf]. Gewöhnliche E-Mails sind nicht durchgehend verschlüsselt; schreiben Sie nur, was Sie auf diesem Weg mitteilen möchten.»
-- «Links auf andere Websites: Wenn Sie einem Link auf eine andere Website folgen, gibt diese Website nicht weiter, von welcher Seite Sie kommen. Dort gelten die Regeln der anderen Website zum Datenschutz.» (Der erste Satz stimmt nur, wenn `Referrer-Policy: no-referrer` auf der Ziel-Adresse wirkt; sonst weglassen.)
-- «Ihre Rechte: [nach Frage 6, z. B. Auskunft, Berichtigung, Löschung; zuständige Aufsichtsbehörde].»
-- «Fragen zum Datenschutz: angehoerigenarbeit@pukzh.ch» · «Stand: [Datum Ihrer Prüfung]»
-
-**5. Fragen an den Rechtsdienst**
-1. Welches Datenschutzrecht gilt für diese Website: das Gesetz über die Information und den Datenschutz des Kantons Zürich (IDG) oder das Bundesgesetz über den Datenschutz (DSG)? Ändert es etwas, dass eine Fachstelle der PUK sie herausgibt?
-2. Wer ist die verantwortliche Stelle, und muss sie mit Postadresse genannt werden? Braucht es eine eigene Kontaktstelle für Datenschutz?
-3. Darf die Fachstelle als Herausgeberin auftreten, und ist der Satz «kein offizielles Angebot der Klinik als Ganzes» so zulässig und verständlich (L7)? Welcher Wortlaut ist richtig?
-4. Ist das Hosting bei Netlify (USA) zulässig? Was braucht es dafür (Vertrag, Auftragsbearbeitung, Bekanntgabe ins Ausland)? Besteht ein solcher Vertrag, und wer schliesst ihn ab?
-5. Was muss zu den Server-Protokollen stehen (Inhalt, Zweck, Dauer, Grundlage)?
-6. Müssen die Rechte der Besuchenden und eine Aufsichtsbehörde genannt werden?
-7. Muss die Seite sagen, wie lange die Fachstelle E-Mails aufbewahrt?
-8. Genügt der Satz zur Verantwortung für verlinkte Websites?
-9. Ist der Wortlaut in Teil 4 nach Ihren Antworten so verwendbar? Was ist zu ändern?
-
-**Anhang · Seite «Rechte und Unterstützung im Kanton Zürich»** (sie trägt ebenfalls «Rechtliche Angaben: Stand 10.10.2026, rechtliche Prüfung ausstehend.»; [Vorschau](https://deploy-preview-57--puk-website-profil.netlify.app/templates/website/depression-angehoerige/rechte-und-angebote.html#schweigepflicht))
-
-10. **§ 15 Abs. 2 Patientinnen- und Patientengesetz (W1-37):** Die Website sagt im Kurztext der Abbildung: «Bezugspersonen erhalten im Kanton Zürich auch Auskunft über Gesundheitszustand und Behandlung, solange die erkrankte Person nicht widerspricht.» Das Gesetz vermutet das Einverständnis «für Informationen über den Gesundheitszustand an … die Bezugspersonen …, soweit die Patientin oder der Patient sich nicht dagegen ausgesprochen hat». Umfasst das auch Auskunft über die Behandlung? Wenn nicht, schlägt die Prüfsitzung vor: «Auskunft über den Gesundheitszustand».
-11. Bitte die übrigen rechtlichen Aussagen der Seite mitprüfen: Schweigepflicht der Fachpersonen (Art. 321 StGB), Bezugspersonen ohne Bezeichnung (§ 2 a Abs. 2 PatG ZH), Akteneinsicht nur mit Einverständnis (§ 19 Abs. 2 PatG ZH), «Zuhören, allgemein informieren und Sie beraten dürfen Fachpersonen immer» (BAG, Empfehlungen 2021), Patientenverfügung mit Vertretungsperson (Art. 370 ZGB). Die Prüfsitzung hat diese Aussagen am 12.10.2026 mit dem Gesetzestext und der BAG-Broschüre verglichen; sie sind gedeckt (Prüfbericht, W1, Prüfrunde 9, Nr. 38, 39 und 41 bis 44). Das ersetzt Ihre Prüfung nicht.
-
----
-
-**Empfehlung an die Fachstelle:** Abschnitt 4 jetzt weiterleiten. Die fachliche Freigabe (Abschnitt 1) hängt nicht davon ab; nur die Entwurfsvermerke auf diesen zwei Seiten bleiben bis zur Antwort stehen.
-
-> **Antwort 4:** weitergeleitet am … / anders: …
+**Gelöscht am 12.10.2026** auf Entscheid der Fachstelle: «Rechtsdienst: nicht involviert, löschen!». Die Vorlage für den Rechtsdienst ist entfernt; die frühere Fassung steht in der Git-Geschichte (Commit `b07fffb`). W1-31 und W1-37 hat die Fachstelle selbst entschieden (Prüfbericht, «Von der Fachstelle entschieden», 12.10.2026, Nachtrag).
 
 ## 5. Optionale Befunde und Profil-Befunde
 

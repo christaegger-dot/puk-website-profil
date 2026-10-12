@@ -1,5 +1,5 @@
 {
-  "$comment": "Website «Depression: Informationen für Angehörige» der Fachstelle Angehörigenarbeit PUK. Seitenvertrag nach dem Psychoedukations-Starter (PUK Website Kit 1.10.1-r4 · abgeleitet). Plan freigegeben von der Fachstelle am 10.10.2026; Texte und Darstellungen fachlich freigegeben am 12.10.2026, Abbildung «Mit im Boot» noch ausstehend; rechtliche Angaben auf rechte-und-angebote und impressum-datenschutz unter Vorbehalt der rechtlichen Prüfung. Nach jeder Änderung: node tools/build.mjs, vor Veröffentlichung node tools/gate.mjs --production.",
+  "$comment": "Website «Depression: Informationen für Angehörige» der Fachstelle Angehörigenarbeit PUK. Seitenvertrag nach dem Psychoedukations-Starter (PUK Website Kit 1.10.1-r4 · abgeleitet). Plan freigegeben von der Fachstelle am 10.10.2026; Texte und Darstellungen fachlich freigegeben am 12.10.2026; keine rechtliche Prüfung (Entscheid der Fachstelle vom 12.10.2026). Nach jeder Änderung: node tools/build.mjs, vor Veröffentlichung node tools/gate.mjs --production.",
   "kitRevision": "PUK Website Kit 1.10.1-r4 · abgeleitet",
   "canonicalSource": "PUK Zürich Design System 1.10.1 (unverändert)",
   "assetVersion": "r4-8",
@@ -16,7 +16,7 @@
   ],
   "contentOwner": "Ch. Egger, Fachstelle Angehörigenarbeit PUK",
   "editorialStatus": "freigegeben",
-  "editorialStatusLabel": "Fachlich freigegeben am 12.10.2026 (Fachstelle Angehörigenarbeit PUK); Abbildung «Mit im Boot» noch ausstehend",
+  "editorialStatusLabel": "Fachlich freigegeben am 12.10.2026 (Fachstelle Angehörigenarbeit PUK)",
   "disclaimer": "Diese Website ersetzt keine individuelle Abklärung, Beratung oder Behandlung.",
   "responsibility": {
     "label": "Zuständigkeit",
@@ -549,10 +549,10 @@
           "statement": "Skizze: ein Boot auf ruhigem Wasser, zwei Menschen als ruhige Linienfiguren, jede Person mit eigenem Ruder. Die erkrankte Person rudert langsam, die angehörige Person rudert auf ihrer Seite mit. Sätze: «Heute schaffe ich nur wenige Züge.» und «Ich bin da und rudere auf meiner Seite.»",
           "understood": "Den Unterschied zwischen begleiten und übernehmen: Das Bild zeigt ihn als Alltagssituation, die man ohne Erklärung versteht.",
           "resonance": "Entlastung: «Ich muss nicht für zwei rudern, und trotzdem bin ich nicht weg.»",
-          "source": "Eigene didaktische Darstellung; Metapher aus dem Arbeitsheft «Wenn dein Partner depressiv ist» der Fachstelle (Prüfbedarf: Abgleich mit dem Heft)",
+          "source": "Eigene didaktische Darstellung",
           "alternative": "Bildbeschreibung über aria-describedby",
           "reason": "Die Haltung «begleiten, nicht übernehmen» ist als Bild sofort verständlich und entlastet; als Regel formuliert klingt sie leicht wie eine Pflicht.",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-bg-ansprechen",
@@ -724,7 +724,7 @@
           "sectionId": "schweigepflicht",
           "goal": "Wissen, was ohne und was erst mit Einverständnis der erkrankten Person möglich ist",
           "format": "comparison",
-          "statement": "Zwei Spalten «Ohne Einverständnis» und «Mit Einverständnis» nach gleichen Merkmalen: eigene Beobachtungen mitteilen, allgemeine Informationen, Beratung für sich selbst, Auskunft über Gesundheitszustand und Behandlung, Einsicht in die Akten.",
+          "statement": "Zwei Spalten «Ohne Einverständnis» und «Mit Einverständnis» nach gleichen Merkmalen: eigene Beobachtungen mitteilen, allgemeine Informationen, Beratung für sich selbst, Auskunft über den Gesundheitszustand, Einsicht in die Akten.",
           "understood": "Was schon ohne Einverständnis geht und was erst mit ihm. Gleiche Merkmale nebeneinander zeigen, dass vieles möglich ist, was Angehörige oft für verboten halten.",
           "resonance": "Ermutigung: «Ich darf anrufen und erzählen, was ich sehe, auch wenn das Team mir vielleicht nichts sagen darf.»",
           "source": "Art. 321 StGB; Patientinnen- und Patientengesetz Kanton Zürich §§ 2a, 15, 19; BAG, Empfehlungen für Fachpersonen (2021)",
