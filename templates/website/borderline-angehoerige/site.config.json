@@ -4,7 +4,7 @@
   "canonicalSource": "PUK Zürich Design System 1.10.1 (unverändert)",
   "assetVersion": "r4-8",
   "siteTitle": "Borderline – Orientierung für Angehörige",
-  "shortDescription": "Psychoedukative Website der Fachstelle Angehörigenarbeit PUK für Angehörige von Menschen mit Borderline. Entwurf, fachliche Prüfung ausstehend.",
+  "shortDescription": "Psychoedukative Website der Fachstelle Angehörigenarbeit PUK für Angehörige von Menschen mit Borderline.",
   "language": "de-CH",
   "favicon": "assets/favicon.svg",
   "logo": "assets/logo.svg",
@@ -16,7 +16,7 @@
     "borderline.css"
   ],
   "contentOwner": "Fachstelle Angehörigenarbeit PUK",
-  "editorialStatus": "Entwurf – fachliche Prüfung ausstehend",
+  "editorialStatus": "Fachlich freigegeben am 13.10.2026",
   "disclaimer": "Diese Website ersetzt keine individuelle Abklärung, Beratung oder Behandlung.",
   "responsibility": {
     "label": "Zuständigkeit",
@@ -72,7 +72,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: gleichwertige Einstiege ohne feste Reihenfolge («die Reihenfolge ist ein Angebot»), formuliert als Anliegen der Lesenden (Korrektur W2-6, 09.10.2026); eine Darstellung würde nur Links in Kästen verteilen. Ersetzt Selbsttest und Wegweiser des Bestands («sichtbar vor versteckt»).",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-ix-beratung",
@@ -84,7 +84,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: Angebot und Kontaktweg ohne Beziehung. Wortlaut der Fachstelle vom 09.10.2026 (Korrektur W1-4). Die Beratung der Fachstelle steht auf `index`, `unterstuetzung` wiederholt Kosten und Vertraulichkeit (wie `v-un-beratung` › `reason` seit der Freigabe 2c; SPZ-8).",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-ix-haltung",
@@ -96,7 +96,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: kurze Haltungsaussage; hier genügt der Satz (SPZ-9).",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         }
       ]
     },
@@ -124,7 +124,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: Einstieg aus der Sicht der Angehörigen, Aufzählung von Erfahrungen ohne darzustellende Beziehung.",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-vs-borderline",
@@ -136,7 +136,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: Begriffsklärung mit gezielten Einschränkungen. Kriterien und Begleiterkrankungen stehen auf «Diagnose und Begleiterkrankungen»; ein Verweissatz nach «Die Diagnose allein sagt nichts darüber, ob von einem Menschen Gefahr ausgeht.» verlinkt dort den Abschnitt «Der Weg zur Abklärung» (Freigabe 2c und 3-1, P2c-F-16).",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-vs-eisberg",
@@ -164,7 +164,7 @@
           "alternative": "Die vier Stellen als geordnete Liste mit Nummer, Überschrift, Erklärsatz und Beispiel unter der Zeichnung, in allen Breiten; Beschriftungen als HTML-Text über der Zeichnung, unter 560 px entfallen nur diese, die Nummern bleiben; Textfassung über aria-describedby (p.puk-sr)",
           "reason": "Ein Verlauf im Gespräch lässt sich als Kurve zeigen. Alltagsworte statt Fachbegriffen, weil die Achse mit drei Bereichen für Laien verwirrend war (Rückmeldung der Fachstelle, 09.10.2026). Vier Handouts zum selben Mechanismus bleiben in einer Darstellung verbunden.",
           "resonance": "Wiedererkennen und Erlaubnis: So kann ein Gespräch kippen, und ich darf eine Pause machen.",
-          "approvalStatus": "ausstehend",
+          "approvalStatus": "freigegeben",
           "entryPoint": "Stelle 2 «Es wird eng»: nicht weiter argumentieren, weniger Druck machen, das eigene Tempo senken, auf die eigene Anspannung achten und eine Pause anbieten; die andere Person müssen Sie nicht beruhigen (in der Figur mit doppeltem Ring markiert)."
         },
         {
@@ -191,7 +191,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: Annahme und Einordnung sind Paare ohne Bildform; als Liste im Abschnittstext statt als Abbildung (Bildsprache-Audit BS-3).",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-vs-einordnung",
@@ -203,7 +203,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: Abschluss, was Verstehen leistet und was nicht, mit dem Merksatz für Angehörige als hervorgehobenem Kasten (puk-longform__reflection) und Verweis auf «Was zwischen Ihnen geschieht» und «Grenzen setzen»; keine Beziehung, die eine Darstellung zeigen müsste. Merksatz und Absätze aus dem Bestand «Verstehen hat Grenzen» wieder aufgenommen (Korrektur 1d, D-4).",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-vs-quellen",
@@ -215,7 +215,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: Quellenliste des Profils (ul.puk-longform__sources) als letzter Abschnitt, jede Quelle einmal mit «Verwendet in», in einem Akkordeon mit dem Eintrag «Quellen zu dieser Seite», ohne Skript offen und im Druck vollständig; nicht in der Kapitelübersicht (Entscheid der Fachstelle 11.10.2026, Korrektur 2b-2, Abschnitt 4).",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         }
       ]
     },
@@ -243,7 +243,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: Aufzählung eigenständiger Ressourcen ohne Beziehung untereinander. Die Personenillustration des Bestands entfällt (Entscheid der Fachstelle).",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-bz-schleife",
@@ -270,7 +270,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: höchstens fünf Einflüsse, je einer Station derselben Schleife (Abbildung 1) zugeordnet; eine zweite Grafik würde denselben Mechanismus doppeln. Als Begriffsliste (dl), vom Profil gestaltet (Korrektur V-8, 09.10.2026). Jeder Punkt mit «Was Sie tun können» und Beispielsatz als zweitem Absatz (Korrektur 1e).",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-bz-sichten",
@@ -296,7 +296,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: drei Stellen, an denen sich die Schleife unterbrechen lässt, als kurze Liste, dann unabhängige Möglichkeiten mit Formulierungsbeispielen (Inhaltscontainer, keine Beziehung untereinander; Korrektur 1e).",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-bz-verantwortung",
@@ -308,7 +308,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: Leitfragen und Schutzhinweise; bei möglicher Gefahr braucht es kurze, direkte Sätze ohne Grafik.",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-bz-quellen",
@@ -320,7 +320,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: Quellenliste des Profils (ul.puk-longform__sources) als letzter Abschnitt, jede Quelle einmal mit «Verwendet in», in einem Akkordeon mit dem Eintrag «Quellen zu dieser Seite», ohne Skript offen und im Druck vollständig; nicht in der Kapitelübersicht (Entscheid der Fachstelle 11.10.2026, Korrektur 2b-2, Abschnitt 4).",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         }
       ]
     },
@@ -362,7 +362,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: Die fünf Sätze sind Zitate mit je einer Einordnung; eine Figur würde sie nur umrahmen. Warum Angehörige nicht schuld sind, steht auf `verstehen` (`mythen`) und wird verlinkt (Verlinken statt wiederholen, P2a-F-8).",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-ro-alltag",
@@ -374,7 +374,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: unabhängige Möglichkeiten mit Beispielsätzen, ohne Beziehung untereinander. Je Seite genau eine Abbildung (Bauauftrag 2a). Korrektur 2a-K: «Kleine gute Momente schaffen» steht als Vertiefung (Akkordeon, K-R-b4); statt der vier Schritte «Innehalten» verweist ein Satz auf STOPP (`selbstfuersorge` › `zu-viel`, K-R-b2).",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-ro-konflikte",
@@ -386,7 +386,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: zwei kurze Listen und ein Beispielsatz; ein Ablauf in Schritten würde eine feste Reihenfolge nahelegen.",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-ro-mehrere",
@@ -398,7 +398,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: was belastet als Liste, was hilft im Handlungssatz (K-R-a7); eine Beziehungskarte bliebe ohne konkrete Beteiligte eine leere Form.",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-ro-kinder",
@@ -410,7 +410,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: Beispielsätze für Kinder und konkrete Fragen zur Betreuung. Was Kinder nicht übernehmen müssen und was bei akuter Gefahr gilt, steht im Abschnitt selbst (Entscheid P2a-F-2); bei Gewalt oder Bedrohung verweist er auf `grenzen` (`gewalt`), für Bücher für Kinder auf `unterstuetzung` (`buecher`; Freigabe 2c und 3-1, P2c-F-16).",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-ro-grenzen",
@@ -422,7 +422,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: Beobachtungen und Situationen sind Aufzählungen. Schutz und Gefahr stehen im Text mit Verweis im Text, nicht in einer Figur. Korrektur 2a-K: Grosse Ausgaben und plötzliche Entscheidungen stehen als Vertiefung (Akkordeon, K-R-b1); Substanzkonsum und riskantes Verhalten bleiben sichtbar.",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-ro-quellen",
@@ -434,7 +434,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: Quellenliste des Profils (ul.puk-longform__sources) als letzter Abschnitt, jede Quelle einmal mit «Verwendet in», in einem Akkordeon mit dem Eintrag «Quellen zu dieser Seite», ohne Skript offen und im Druck vollständig; nicht in der Kapitelübersicht (Entscheid der Fachstelle 11.10.2026, Korrektur 2b-2, Abschnitt 4).",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         }
       ]
     },
@@ -461,7 +461,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: Signale und Fragen sind Aufzählungen ohne Beziehung; eine Skala würde eine Selbstdiagnose nahelegen (Muster J: nie als Selbstdiagnose-Skala).",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-gr-bruecke",
@@ -473,7 +473,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: Die Fachstelle hat die Zeichnung als zu technisch und die Erklärungen als zu abstrakt beurteilt (Durchsicht 10.10.2026). Das Bild der Brücke steht als ein Satz im Text; zwei Beispielsätze aus dem Handout zeigen, was Angehörige tun können (Korrektur 1g).",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-gr-arten",
@@ -485,7 +485,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: vier gleichrangige Bereiche ohne Beziehung untereinander; eine Figur würde nur eine Liste umrahmen (Korrektur V-5, 09.10.2026). Als Begriffsliste (dl), vom Profil gestaltet.",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-gr-reihenfolge",
@@ -497,7 +497,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Im Bau geprüft (UMBAUPLAN, Abschnitt 3: Raster 2×2 oder Text): Text ist klarer. Die Liste nennt die vier Felder des Rasters aus der Quelle als vier Punkte: dringend oder langfristig, emotional hoch oder niedriger (Korrektur 1b, B-4). Die Quelle nennt das Raster selbst «keine fachliche Einstufung»; gezeichnet würde es eine feste Einordnung der Beispiele nahelegen. Die Seite sagt dazu «Die Reihenfolge ist eine Orientierung, keine fachliche Einstufung.» Schutz bei Bedrohung oder Gewalt steht im Kopf und im Abschnitt «Schutz» (Korrektur W2-4, 09.10.2026).",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-gr-dear",
@@ -524,7 +524,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: drei Situationen mit Gegenüberstellung «eher problematisch / eher hilfreich» als Komponente .puk-say (Leitlinie 06, Formulierungsbeispiele). Die für «Zugewandt und klar sprechen» vorgemerkten Beispiele des Bestands stehen dort im Abschnitt «So könnte es klingen» (Etappe 2b; vorgemerkt mit Korrektur W2-2, W2-3, 09.10.2026; SPZ-9).",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-gr-konsequenz",
@@ -536,7 +536,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: Hinweise zur Umsetzung ohne darzustellende Beziehung.",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-gr-kontakt",
@@ -548,7 +548,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Im Bau geprüft (UMBAUPLAN, Abschnitt 3: Kontinuum J, Steigerung?): Text ist klarer. Die vier Möglichkeiten liegen nicht auf einer Achse – eine vereinbarte Pause kann weniger Kontakt bedeuten als getrenntes Wohnen –, und ein Kontinuum mit wachsender Linienstärke würde eine Steigerung und eine Reihenfolge nahelegen, die der Text nicht meint («Die Beziehung zu erhalten, ist kein Ziel, das Sie erreichen müssen.», und welche Möglichkeit passt, ergibt sich nicht aus der Diagnose allein; Wortlaut Korrektur 1f). Die Liste trägt die Aussage, dass es mehrere Möglichkeiten gibt.",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-gr-rollen",
@@ -560,7 +560,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: drei Rollen ohne Beziehung untereinander (Korrektur W2-2, 09.10.2026), seit Korrektur 1f als Begriffsliste (dl) mit einem Schlusssatz.",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-gr-gewalt",
@@ -572,7 +572,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: In einer möglichen Gefahrensituation braucht es kurze, direkte Hinweise ohne Grafik.",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-gr-quellen",
@@ -584,7 +584,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: Quellenliste des Profils (ul.puk-longform__sources) als letzter Abschnitt, jede Quelle einmal mit «Verwendet in», in einem Akkordeon mit dem Eintrag «Quellen zu dieser Seite», ohne Skript offen und im Druck vollständig; nicht in der Kapitelübersicht (Entscheid der Fachstelle 11.10.2026, Korrektur 2b-2, Abschnitt 4).",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         }
       ]
     },
@@ -611,7 +611,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Entscheid der Fachstelle 11.10.2026: Textdarstellung als nummerierte Schritte statt Abbildung (UMBAUPLAN: `process`). Fünf Schritte aus der alten Infografik «Den Weg zur Abklärung begleiten» als gestaltete Liste wie «Die sechs Stufen» auf `kommunizieren` (ol.bl-stufen, «Schritt n»), je Name, was geschieht und, wo der Bestand es sagt, die abgesetzte Zeile «Ihre Rolle». Kein figure, keine Abbildungsnummer (Bauauftrag 2c-2, Abschnitt 3). «Bei Jugendlichen» sichtbar, «Wie die Diagnose beschrieben wird» als Vertiefung (Akkordeon).",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-di-bedeutung",
@@ -623,7 +623,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: zwei Absätze und «Was eine Diagnose nicht leistet»; was die Diagnose beschreiben kann und was die Forschung zu Genesung zeigt, steht über Verweissätze auf `verstehen` › `borderline` und `genesung` › `forschung` (Verlinken statt wiederholen, Bauauftrag 2c-2, Abschnitt 2).",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-di-zweifel",
@@ -635,7 +635,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: «Was nicht hilft» und «Was möglich ist» als zwei Listen nebeneinander, schmal untereinander (Bauauftrag 2c-2, Abschnitt 3); kein Vergleichsmuster (E), weil die Listen nicht Punkt für Punkt einander gegenüberstehen. Danach die Handlungsanleitung bei akuter Gefahr mit dem Verweis im Text.",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-di-ohne-diagnose",
@@ -647,7 +647,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: vier kurze Zwischentitel (Hausarztpraxis, nicht warten, spezialisierte Stellen, «Bin ich auch betroffen?») mit Verweissätzen auf `index` › `beratung`, `behandlung` › `angebote`, `selbstfuersorge` › `warnsignale` und `unterstuetzung` › `beratung` (Bauauftrag 2c-2, Abschnitt 3).",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-di-begleiterkrankungen",
@@ -659,7 +659,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer (UMBAUPLAN, Etappe 2: `text`): Die alte Grafik war eine Liste von sechs gleich grossen, unverbundenen Diagnosen und zeigte keine Beziehung. Die sechs Beispiele stehen als Liste mit dem Satz, dass die Reihenfolge keine Rangfolge ist. «Depression» und «Wenn Suizidgedanken dazukommen» sichtbar, «Mögliche Hinweise auf eine depressive Phase» und «Weitere Begleiterkrankungen kurz» als Vertiefungen (Akkordeon, Bauauftrag 2c-2, Abschnitt 3).",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-di-quellen",
@@ -671,7 +671,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: Quellenliste des Profils (ul.puk-longform__sources) als letzter Abschnitt, jede Quelle einmal mit «Verwendet in», in einem Akkordeon mit dem Eintrag «Quellen zu dieser Seite», ohne Skript offen und im Druck vollständig; nicht in der Kapitelübersicht (Entscheid der Fachstelle 11.10.2026, Korrektur 2b-2, Abschnitt 4; Bauauftrag 2c-2, Abschnitt 2).",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         }
       ]
     },
@@ -699,7 +699,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Entscheid der Fachstelle 11.10.2026: drei Rollen nebeneinander als Text statt Abbildung (UMBAUPLAN: `relationship-map`). Grundlage ist die alte Klick-Grafik «Rollen im Therapiesystem»; alles steht sichtbar, ohne Auswahl-Schaltflächen und ohne figure. Je Rolle «Mögliche Beiträge» und «Nicht zu erwarten» als zwei kurze Listen (ul.bl-rollen über die volle Breite), drei Spalten ab 860 px Containerbreite, schmal untereinander (Bauauftrag 2c-2, Abschnitt 4 a).",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-be-kontakt",
@@ -711,7 +711,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: die drei Informationswege als Begriffsliste, danach die Handlungsanleitung bei akuter Gefahr mit dem Verweis im Text und die vier Fragen sichtbar. Die Situationen des Bestands und der Musterbrief stehen in fünf Vertiefungen (Akkordeon), damit man nur die gesuchte öffnet (Bauauftrag 2c-2, Abschnitt 4). Die Vertiefung «Was kann ich in einem vereinbarten Kontakt mitteilen?» entfällt, ihr Beispielsatz steht im Begriff «Beobachtungen mitteilen» (Korrektur 2c-K, P2c2-F-14).",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-be-therapieformen",
@@ -723,7 +723,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer (Entscheid von Claude, Bauauftrag 2c-2, Abschnitt 1): Die Therapieformen stehen als Begriffsliste mit je einem Satz. Ein Vergleich nach Ziel, Form und Einbezug (UMBAUPLAN: `comparison`) entfällt, weil der Bestand je Form nur den Schwerpunkt nennt. Die drei Rahmen als Begriffsliste, «Begleiterkrankungen und Medikamente» als Zwischentitel, «Programme für Angehörige» als Vertiefung.",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-be-rueckschlaege",
@@ -735,7 +735,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: kurze Absätze, ein Beispielsatz (.puk-say), «Was Sie tun können» als Liste und ein Verweissatz auf `genesung` › `verlauf` (Bauauftrag 2c-2, Abschnitt 4).",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-be-angebote",
@@ -747,7 +747,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: Angebotsliste mit Name, einem Satz, «Für: …» und Link auf die Website, ohne Telefonnummern und ohne E-Mail-Adressen (Entscheid der Fachstelle 11.10.2026, Bauauftrag 2c-2, Abschnitt 5).",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-be-wartezeit",
@@ -759,7 +759,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: vier nummerierte Schritte des Bestands; bei Schritt 4 die Handlungsanleitung bei akuter Gefahr mit dem Verweis im Text. «In anderen Kantonen» und «Eigene Unterstützung» als Verweissätze auf `unterstuetzung` (Bauauftrag 2c-2, Abschnitt 4).",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-be-quellen",
@@ -771,7 +771,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: Quellenliste des Profils (ul.puk-longform__sources) als letzter Abschnitt, jede Quelle einmal mit «Verwendet in», in einem Akkordeon mit dem Eintrag «Quellen zu dieser Seite», ohne Skript offen und im Druck vollständig; nicht in der Kapitelübersicht (Entscheid der Fachstelle 11.10.2026, Korrektur 2b-2, Abschnitt 4; Bauauftrag 2c-2, Abschnitt 2).",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         }
       ]
     },
@@ -799,7 +799,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: Haltung und Erlaubnis als kurze Sätze und eine Liste mit drei Punkten. Die Bildunterschrift des Bestands steht als Satz im Text (Bauauftrag 2b, Abschnitt 3); das Personenbild entfällt. Die Fragen zum Innehalten stehen als Vertiefung (Akkordeon).",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-ko-tassen",
@@ -825,7 +825,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer (Bauauftrag 2b, Abschnitt 2e): «Pause statt Streit» mit den drei Sätzen der Anspannungskurve («Wir können sprechen.», «Es wird eng.», «Es ist gerade zu viel.») als Begriffsliste, mit Verweis auf die Anspannungskurve auf `verstehen` (Korrektur 2b-K, P2b-F-5); keine zweite Kurve. «Eher jetzt» und «Eher später» als zwei kurze Listen.",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-ko-kippen",
@@ -837,7 +837,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer (Bauauftrag 2b, Abschnitt 2e): die drei Schritte als nummerierte Liste; die Grenze in drei Teilen als Begriffsliste; der Beispiel-Dialog als Vertiefung (Akkordeon). Schutz bei Bedrohung oder Gewalt steht vor den Schritten, mit Verweis im Text.",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-ko-worte",
@@ -849,7 +849,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: vier Aussagen mit möglichen Antworten als Begriffsliste. Das Sicherheitssignal (Suizid) steht sichtbar unter einer eigenen Zwischenüberschrift, mit Verweis im Text und Verweissatz auf `krise`.",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-ko-beispiele",
@@ -861,7 +861,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Formulierungsbeispiele mit der Komponente `.puk-say` (Profil). Drei Beispiele ersetzen die interaktiven Szenarien von `/uebungen` (Entscheid der Fachstelle 08.10.2026); die übrigen Szenarien entfallen im Abgleich. Typische schwierige Situationen als Begriffsliste.",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-ko-rollen",
@@ -873,7 +873,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: drei Rollen als Vertiefung (Akkordeon), wie im Bestand.",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-ko-quellen",
@@ -885,7 +885,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: Quellenliste des Profils (ul.puk-longform__sources) als letzter Abschnitt, jede Quelle einmal mit «Verwendet in», in einem Akkordeon mit dem Eintrag «Quellen zu dieser Seite», ohne Skript offen und im Druck vollständig; nicht in der Kapitelübersicht (Entscheid der Fachstelle 11.10.2026, Korrektur 2b-2, Abschnitt 4).",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         }
       ]
     },
@@ -913,7 +913,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Entscheid der Fachstelle 10.10.2026 (Bauauftrag 2b): kein Bild. Die drei Bereiche stehen als kurze Liste (Begriffsliste) je mit «Eher hilfreich». Keine Ampel, keine Skala und keine Stufen als Bild, weil die Bereiche keine Sicherheitsbewertung sind; das steht sichtbar im Text.",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-kr-waehrend",
@@ -925,7 +925,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: Handlungsanleitung «Sicherheit prüfen» im Wortlaut des Bestands, der Verweis im Text folgt direkt danach. Drei Gesprächsvorschläge als Begriffsliste.",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-kr-sagen",
@@ -937,7 +937,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: Handlungsanleitung für Bedrohung am Anfang, der Verweis im Text folgt direkt danach (Korrektur 2b-K, P2b-F-1). Beispielsätze als Begriffsliste. Wenn ein Gespräch kippt: der Standardsatz und die Ausstiegssätze aus dem Handout «Krisenkommunikation»; die Schritte sind auf `kommunizieren` verlinkt statt als zweite Schrittfolge wiederholt (P2b-F-8), ebenso Anerkennen.",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-kr-suizid",
@@ -949,7 +949,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: Handlungsanleitung mit Verweis im Text (Profilentscheid 09.10.2026), Wortlaut wie auf `verstehen`, wo dieselbe Aussage steht.",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-kr-vermeiden",
@@ -961,7 +961,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: kurze Liste wie im Bestand.",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-kr-danach",
@@ -973,7 +973,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: Sicherheitshinweis als Handlungsanleitung mit Verweis im Text vor den Vertiefungen (Korrektur 2b-K, P2b-F-1), «Für die betroffene Person» und «Für Sie» im Lesefluss; Nachbesprechung, Vertrauen, drei mögliche Anliegen und Früherkennung als Vertiefung (Akkordeon mit vier Einträgen).",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-kr-bleibt",
@@ -985,7 +985,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: vier Hinweise als Liste, Handlungsanleitung mit Verweis im Text. Krisenbezogene Sätze zu Kindern stehen sichtbar im Wortlaut von `grenzen`; Erklären und Betreuungsplan sind auf `rolle#kinder` verlinkt.",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-kr-quellen",
@@ -997,7 +997,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: Quellenliste des Profils (ul.puk-longform__sources) als letzter Abschnitt, jede Quelle einmal mit «Verwendet in», in einem Akkordeon mit dem Eintrag «Quellen zu dieser Seite», ohne Skript offen und im Druck vollständig; nicht in der Kapitelübersicht (Entscheid der Fachstelle 11.10.2026, Korrektur 2b-2, Abschnitt 4).",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         }
       ]
     },
@@ -1025,7 +1025,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: Die Erlaubnis-Sätze sind eine Liste zum Auswählen; eine Karte als Bild würde nur die Liste umrahmen. Die Bildunterschrift des Bestands steht als Satz im Text. Korrektur 2a-K: «Je nach Ihrer Situation» steht als Akkordeon (Varianten für einzelne Situationen, K-S-b3).",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-sf-abend",
@@ -1051,7 +1051,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: fünf Bereiche als Liste ohne Stufen; keine Skala, keine Ampel und kein Selbsttest (Muster J: nie als Selbstdiagnose-Skala).",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-sf-zu-viel",
@@ -1063,7 +1063,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: STOPP als nummerierte Liste im Wortlaut der Schritte, ohne Prozesspfad (Bildsprache-Audit: wieder ein Stepper wie bei DEAR). Atem- und Sinnesübung als Text.",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-sf-unterstuetzung",
@@ -1075,7 +1075,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: vier unabhängige Möglichkeiten mit Beispielsatz. Die Sauerstoffmaske steht nur als Satz, nicht als Bild (Bildsprache-Audit: Ein Flugzeugnotfall ist ein Krisenbild).",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-sf-akzeptanz",
@@ -1087,7 +1087,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: zwei kurze Listen und eine Übung in vier Schritten als Vertiefung (Akkordeon, K-S-b4); eine Figur würde die Listen nur umrahmen.",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-sf-beratung",
@@ -1099,7 +1099,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: kurze Hinweise und Verweis auf `index` (`beratung`); weitere Angebote stehen auf `unterstuetzung`, verlinkt beim Begriff «Austausch mit anderen Angehörigen» (Freigabe 2c und 3-1, P2c-F-16).",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-sf-quellen",
@@ -1111,7 +1111,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: Quellenliste des Profils (ul.puk-longform__sources) als letzter Abschnitt, jede Quelle einmal mit «Verwendet in», in einem Akkordeon mit dem Eintrag «Quellen zu dieser Seite», ohne Skript offen und im Druck vollständig; nicht in der Kapitelübersicht (Entscheid der Fachstelle 11.10.2026, Korrektur 2b-2, Abschnitt 4).",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         }
       ]
     },
@@ -1135,7 +1135,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer (Entscheid von Claude, Bauauftrag 2c-1, Abschnitt 1): Datenbotschaft des Profils ohne Diagramm. Kernaussage zuerst, danach die drei Werte (93 %, 50 %, 10 Jahre) als hervorgehobene Begriffsliste mit Erklärung, direkt dabei die Stichprobe und «Was die Zahlen nicht sagen». Ein Balkendiagramm würde zwei Werte vergleichen, die Verschiedenes messen (Remission und Recovery), und die Einschränkungen von den Zahlen trennen.",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-ge-begriffe",
@@ -1147,7 +1147,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: drei Begriffe als Begriffsliste nebeneinander, je mit Erklärung (Bauauftrag 2c-1, Abschnitt 3). Ein Vergleich (Muster E) würde gleiche Merkmale je Begriff verlangen, die Begriffe beschreiben aber verschiedene Seiten einer Veränderung. «Zum Begriff «Heilung»» als Vertiefung (Akkordeon).",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-ge-trieb",
@@ -1161,7 +1161,7 @@
           "alternative": "Sätze als HTML-Text über der Zeichnung, schmal untereinander; Kurzbeschreibung über aria-describedby",
           "reason": "Entscheid der Fachstelle 11.10.2026 (Bauauftrag 2c-1, Abschnitt 4 und Anhang A): Zeichnung «Ein neuer Trieb» im Stil von «Zwei Tassen» (Muster D), direkt nach dem ersten Absatz von `verlauf`. Korrektur 2c-K (P2c2-F-2 und P2c2-V-3; P2c-T-1, P2c2-T-1): Die Giesskanne ist entfernt. Das abgefallene Blatt liegt direkt unter der Pflanze, an den Topf gelehnt, und ist etwas grösser; die zwei Blätter des neuen Triebs sind heller als die übrigen (`puk-vis-scene__paper` statt `puk-vis-scene__soft`). Die übrigen Pfade sind wie in der Skizze. Bildausschnitt `60 44 420 214`, enger und mit der Pflanze in der Mitte (2c-1: `60 44 530 214`, Skizze: `0 40 640 220`). Die Zahlen der Langzeitstudie stehen als hervorgehobener Text ohne Diagramm (`forschung`, Entscheid von Claude im Bauauftrag); der Garten-Text steht auf `rolle` › `anbieten` und ist verlinkt, nicht wiederholt. Freigabe 2c und 3-1 (NK2c-2): In der Szene hat der Satz unter «Weniger hilfreich» dieselbe graue Linie wie «Weniger hilfreich» in der Gegenüberstellung `.puk-say` desselben Abschnitts (Regel in `borderline.css`); Wortlaut, Bezeichnungen, Zeichnung und Kurzbeschreibung unverändert.",
           "resonance": "Entlastung und realistische Hoffnung: Ein Rückschritt macht nicht alles zunichte.",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-ge-einfluesse",
@@ -1173,7 +1173,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: fünf Bereiche als Begriffsliste, ausdrücklich ohne Reihenfolge und ohne Formel (Bauauftrag 2c-1, Abschnitt 3). Eine Figur mit fünf gleichen Feldern wäre ein Kartenraster und könnte ein Modell nahelegen, das die Bereiche nicht sind.",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-ge-freiwillig",
@@ -1185,7 +1185,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: kurz, mit Verweis auf `rolle` › `anbieten` (Verlinken statt wiederholen); die Selbstfrage, der Satz zur eigenen Gesundheit und die Hinweise zu Beratung und Auskünften stehen sichtbar. Eltern Minderjähriger und Beistandschaft als Vertiefung (Akkordeon).",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-ge-quellen",
@@ -1197,7 +1197,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: Quellenliste des Profils (ul.puk-longform__sources) als letzter Abschnitt, jede Quelle einmal mit «Verwendet in», in einem Akkordeon mit dem Eintrag «Quellen zu dieser Seite», ohne Skript offen und im Druck vollständig; nicht in der Kapitelübersicht (Entscheid der Fachstelle 11.10.2026, Korrektur 2b-2, Abschnitt 4; Bauauftrag 2c-1, Abschnitt 2).",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         }
       ]
     },
@@ -1223,7 +1223,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: Angebote mit Name, kurzer Beschreibung und Link auf die offizielle Website (Muster «Kontakt und Übergabe» ohne Telefonnummern, Bauauftrag 2c-1, Abschnitt 5). Kontakt und Bedingungen der Fachstelle sind auf `index` › `beratung` verlinkt; wiederholt ist nur, dass die Beratung der Fachstelle nichts kostet und nicht an Krankenkassen weitergegeben wird (P2c-F-14).",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-un-austausch",
@@ -1235,7 +1235,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: zwei Organisationen und die Gruppe für Eltern von Jugendlichen an der PUK, je mit kurzer Beschreibung und Link auf die Website, ohne Telefonnummern, HelpLine-Zeiten und Termine (Bauauftrag 2c-1, Abschnitt 5; Gruppe für Eltern seit Bauauftrag 2c-2, Abschnitt 6).",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-un-selbsthilfe",
@@ -1247,7 +1247,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: eine Vermittlungsstelle mit kurzer Beschreibung und Link auf die Website.",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-un-kantone",
@@ -1259,7 +1259,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: ein kurzer Hinweis aus dem Bestand (Regional-Hinweis).",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-un-buecher",
@@ -1271,7 +1271,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: Liste nach Zielgruppe, je Titel Autorin oder Autor, Verlag und Jahr, ein Satz und «Für: …» (Entscheid der Fachstelle 11.10.2026, Bauauftrag 2c-1, Abschnitt 1). Ohne Bezugslinks. Die vier kritisch eingeordneten Titel mit Einordnung in einer Vertiefung (Akkordeon).",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         }
       ]
     },
@@ -1300,7 +1300,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: Frage und kurze Antwort mit Verweis auf die ausführliche Stelle. Keine Beziehung und kein Ablauf, den eine Darstellung erklären müsste. Der Weg zur Abklärung steht als nummerierte Schritte auf `diagnose`.",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-fr-verlauf",
@@ -1312,7 +1312,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: kurze Antworten mit Verweis. Die Darstellungen zum Verlauf stehen auf `genesung` (Abbildung «Ein neuer Trieb»), hier nicht wiederholt (Verbinden statt doppeln).",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-fr-gespraeche",
@@ -1324,7 +1324,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: kurze Antworten mit Beispielsätzen und Verweis. Die Darstellungen zu Gesprächen stehen auf `kommunizieren` und `verstehen`.",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-fr-behandlung",
@@ -1336,7 +1336,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: kurze Antworten mit Verweis. Die Rollen in der Behandlung stehen als Textdarstellung auf `behandlung`.",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-fr-schutz",
@@ -1348,7 +1348,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: Handlungsanleitungen für akute Lagen stehen sichtbar im Fliesstext, nicht in einer Darstellung oder Vertiefung.",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-fr-leben",
@@ -1360,7 +1360,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: kurze Antworten mit Beispielsätzen und Verweis.",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-fr-weitere",
@@ -1372,7 +1372,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: zwei Verweise.",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-fr-quellen",
@@ -1384,7 +1384,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: Liste der Quellen mit Abschnitten (Akkordeon des Profils wie auf den übrigen Seiten).",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         }
       ]
     },
@@ -1412,7 +1412,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: Begriffsliste mit kurzer Erklärung, Beispiel und Verweis. Die neun Kriterien des DSM-5-TR in einer Vertiefung (Akkordeon), wie im Bestand aufklappbar.",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-qu-einordnung",
@@ -1424,7 +1424,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: vier kurze Absätze.",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-qu-forschung",
@@ -1436,7 +1436,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: Literaturliste mit Angabe, kurzer Einordnung und den Seiten, auf denen die Quelle verwendet wird.",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-qu-therapie",
@@ -1448,7 +1448,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: Literaturliste mit Angabe, kurzer Einordnung und den Seiten, auf denen die Quelle verwendet wird.",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-qu-angehoerige",
@@ -1460,7 +1460,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: Literaturliste mit Angabe, kurzer Einordnung und den Seiten, auf denen die Quelle verwendet wird.",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-qu-diagnostik",
@@ -1472,7 +1472,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: Literaturliste mit Angabe, kurzer Einordnung und den Seiten, auf denen die Quelle verwendet wird.",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-qu-versorgung",
@@ -1484,7 +1484,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: Literaturliste mit Angabe, kurzer Einordnung und den Seiten, auf denen die Quelle verwendet wird.",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-qu-leitlinien",
@@ -1496,7 +1496,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: Literaturliste mit Angabe, kurzer Einordnung und den Seiten, auf denen die Quelle verwendet wird.",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-qu-schweiz",
@@ -1508,7 +1508,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: Literaturliste mit Angabe, kurzer Einordnung und den Seiten, auf denen die Quelle verwendet wird.",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         }
       ]
     },
@@ -1534,7 +1534,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: drei kurze Absätze.",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-ue-grundsaetze",
@@ -1546,7 +1546,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: vier Grundsätze als Begriffsliste, gleichwertig und ohne Beziehung untereinander.",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-ue-barrierefreiheit",
@@ -1558,7 +1558,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: Ziel, Liste und bekannte Einschränkungen.",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-ue-rueckmeldung",
@@ -1570,7 +1570,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: Kontakt und kurze Hinweise.",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         }
       ]
     },
@@ -1594,7 +1594,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: wenige Angaben, keine Beziehung, die eine Darstellung erklären müsste (wie Vorlage des Starters).",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         },
         {
           "id": "v-imp-datenschutz",
@@ -1606,7 +1606,7 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: einzelne Angaben zu Daten, kein Ablauf und keine Beziehung (wie Vorlage des Starters).",
-          "approvalStatus": "ausstehend"
+          "approvalStatus": "freigegeben"
         }
       ]
     },
