@@ -85,25 +85,29 @@ Dazu 5 leichte Befunde zu Bericht und Abgleich. Die erste und zweite Prüfrunde 
 
 ### Entscheide zur Schlussprüfung (12.10.2026, im Auftrag der Fachstelle)
 
-**12.10.2026 · von Claude im Auftrag der Fachstelle entschieden (Delegation vom 12.10.2026).** Die Fachstelle hat die Fragen SPZ-F-1 bis -39 an Claude übertragen («selbständig anstelle der Fachstelle», `ENTSCHEIDAUFTRAG-SCHLUSSPRUEFUNG.md`). Entschieden hat eine Sitzung, die an der Website weder gebaut, korrigiert noch geprüft hat. Grundlage: `main`, Stand `3a6e966`. Alle Entscheide mit Begründung, Beleg, Wortlauten und Folgen für die Korrektur: `ENTSCHEIDE-SCHLUSSPRUEFUNG.md`.
+**12.10.2026 · Delegation der Fachstelle.** Die Fachstelle hat am 12.10.2026 entschieden, dass Claude die Fragen SPZ-F-1 bis -39 der Schlussprüfung «selbständig anstelle der Fachstelle» beantwortet (`ENTSCHEIDAUFTRAG-SCHLUSSPRUEFUNG.md`). Die Entscheide hat eine Entscheidsitzung getroffen, die an der Website weder gebaut, noch korrigiert, noch geprüft hat; Stand `main` `3f9a1e4` (Website-Ordner gleich wie `3a6e966`). Jeder Entscheid ist von Claude im Auftrag der Fachstelle entschieden (Delegation vom 12.10.2026).
 
-Fachliche Entscheide im Auftrag der Fachstelle durch Claude; nicht von einer Person der Fachstelle geprüft.
+**Fachliche Entscheide im Auftrag der Fachstelle durch Claude; nicht von einer Person der Fachstelle geprüft.**
 
-- **Entschieden, keine Änderung (16):** SPZ-F-1 (Prüfauftrag gilt als bestätigt), -7, -11, -12, -16, -17, -19, -20, -23, -24, -25, -26, -28, -29, -30, -31.
-- **Entschieden, Änderung (14):** SPZ-F-2 (Fusszeile), -3 (Textzeilen des Plans), -4 (Satz zu Häufigkeitsangaben, Abgleich des Diagnostik-Teils), -5 («Sie sind es nicht.»), -6 (Verweissatz), -8 (Anspannungskurve «können helfen»), -9 (Schleife «keine feste Abfolge»), -10 (Vertiefung «Eltern»), -15 (kein Richtwert), -18 (Legendenquellen auf `verstehen`), -21 (Bezeichnung zu F60.31, unter Bedingung), -22 (nur `UMBAUPLAN.md`), -27 («eigene Vermutung»), -39 (zwei Weiterleitungen).
-- **Profilebene (2):** SPZ-F-32 (Druck), -34 (E-Mail-Link); in dieser Website keine Änderung.
-- **Handlung der Fachstelle (5):** SPZ-F-33 (reale Tests), -35 («Pretty URLs» bleiben), -36 (Team-Anmeldung nach R3), -37 (Build-Einstellungen vor dem Merge, Prüfung der Produktion), -38 (PR #659 ist Entwurf: erledigt durch die Fachstelle, SPZ-6 behoben, Nachprüfung bestätigt).
-- **Rechtliche Prüfung (2):** SPZ-F-13, -14; bis dahin bleibt der heutige Text.
-- **Zurück an die Fachstelle:** keine.
-- **Offen:**
-  - Person und Termin der realen Tests (SPZ-F-33)
-  - das Ergebnis der rechtlichen Prüfung (SPZ-F-13, -14, dazu S-Nr. 5 und 6, Z31-F-9, Z31-F-19, NK-F-8)
-  - NK-F-3
-  - das Datum der Produktionsfreigabe für die Fusszeile (SPZ-F-2)
-  - die erneute Freigabe der geänderten Abbildungen `v-vs-anspannung` und `v-bz-schleife` nach der Nachprüfung
-- **Neue Sätze:** freigegeben im Auftrag der Fachstelle, unter dem Vorbehalt der Nachprüfung (Liste in `ENTSCHEIDE-SCHLUSSPRUEFUNG.md`, Abschnitt 4).
-- **Nächste Schritte:** Korrekturauftrag aus Abschnitt 6 der Entscheide (wichtig SPZ-1 bis -5; SPZ-6 erledigt), Korrektur, Nachprüfung durch eine Sitzung, die weder gebaut, geprüft noch entschieden hat, reale Tests und rechtliche Prüfung, danach R1 bis R3.
-- **Stand der Stufen:** unverändert, alle «offen».
+- **Dokument:** `ENTSCHEIDE-SCHLUSSPRUEFUNG.md` mit Begründung und Beleg je Frage, den Wortlauten, der Liste «Neue Sätze zur Freigabe», den Handlungen für die Fachstelle und den Folgen für den Korrekturauftrag.
+- **Zwei Fassungen:** Eine andere Entscheidsitzung hat dieselben Fragen unabhängig entschieden (PR #59). Nach einem Vergleich sind hier SPZ-F-7, -10 und -27 berichtigt. Die Fachstelle hat am 12.10.2026 entschieden, dass diese Fassung gilt; PR #59 ist ohne Merge geschlossen.
+- **Prüfauftrag (SPZ-F-1):** `PRUEFAUFTRAG-SCHLUSSPRUEFUNG.md` gilt mit der Delegation vom 12.10.2026 als bestätigt.
+- **Entschieden (38 von 39):**
+  - keine Änderung (16): SPZ-F-1, -7, -9, -11, -12, -16, -17, -20, -23, -24, -25, -26, -28, -29, -31, -39
+  - Änderung (13): SPZ-F-2, -3, -4, -5, -6, -8, -10, -15, -18, -19, -22, -27, -30
+  - Profilebene, in dieser Website keine Änderung (2): SPZ-F-32, -34
+  - Handlung der Fachstelle (5): SPZ-F-33, -35, -36, -37, -38 (PR #659 ist seit 12.10.2026, 18:19 UTC wieder ein Entwurf; erledigt durch die Fachstelle)
+  - in die rechtliche Prüfung aufgenommen, bis dahin bleibt der heutige Text (2): SPZ-F-13, -14
+- **Offen (1):** SPZ-F-21 geht zurück an die Fachstelle (Bezeichnung zu F60.31 nur mit der amtlichen Fassung der ICD-10-GM 2024).
+- **Neue Sätze:** Die Sätze der Liste in `ENTSCHEIDE-SCHLUSSPRUEFUNG.md`, Abschnitt 4, sind im dort stehenden Wortlaut freigegeben, im Auftrag der Fachstelle. Die Seite `404` ist mit dieser Liste freigegeben (SPZ-14).
+- **Neue Freigabe nach der Nachprüfung:** die Abbildungen «Anspannungskurve» (`v-vs-anspannung`, SPZ-F-8) und «Ein neuer Trieb» (`v-ge-trieb`, SPZ-F-30).
+- **Weiter offen vor der Veröffentlichung:**
+  - Korrektur nach Abschnitt 6 der Entscheide, danach Nachprüfung durch eine Sitzung, die weder gebaut, noch geprüft, noch entschieden hat
+  - Fusszeile und Textzeilen des Plans nach SPZ-F-2 und SPZ-F-3, nach der Nachprüfung
+  - reale Tests (SPZ-F-33), rechtliche Prüfung mit SPZ-F-13 und -14, NK-F-3, SPZ-F-21
+  - Netlify und PR #659 nach Abschnitt 5 der Entscheide
+  - danach R1 bis R3
+- Die Statustabelle bleibt unverändert; jede Stufe bleibt «offen».
 
 ## Schlussprüfung · Zusammenführung der beiden Prüfsitzungen (12.10.2026, Stand f1d6572)
 
