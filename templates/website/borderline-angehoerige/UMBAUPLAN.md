@@ -118,7 +118,7 @@ Die alte Website bleibt bis zum Umzug unverändert online.
 - **Wortlaut der Fachstelle schonen:** Gesprächsbeispiele («So könnte es klingen») und Merksätze werden wörtlich übernommen, wenn sie stimmen; nur gekürzt, nicht umformuliert.
 - **Quellen:** Je Abschnitt in der Vertiefung (`details.puk-vis-more` bei Figuren, sonst kurzer Quellenhinweis mit Link auf `quellen`). Die Quellenliste wird vollständig übernommen; Uneinheitlichkeiten werden bereinigt (z. B. drei Ausgaben von «Schluss mit dem Eiertanz»), nicht still, sondern im Abgleich vermerkt.
 - **Sprache:** Schweizer Hochdeutsch, «Sie», Guillemets, aus Sicht der Lesenden. Keine neuen fachlichen Aussagen.
-- **Status:** `editorialStatus` «Entwurf – fachliche Prüfung ausstehend». Keine Freigabe, kein Prüfvermerk wird gesetzt.
+- **Status:** `editorialStatus` «Entwurf – fachliche Prüfung ausstehend». Keine Freigabe, kein Prüfvermerk wird gesetzt. Seit Schritt 3 der Entscheide (13.10.2026) «Fachlich freigegeben am 13.10.2026» (nachgeführt nach Hinweis AP-2 der Abschlussprüfung).
 
 ## 6. Offen für W1 (Fachstelle)
 
