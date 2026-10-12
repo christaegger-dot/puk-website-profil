@@ -26,6 +26,8 @@ Neue Seite: `content/index.html` · Bestand: `/` (Startseite), `/selbsttest`, `/
 
 **Nur Bemerkung nachgeführt (2c-1):** Nr. 17 bis 24 nennen den Platzhalter in der Bemerkung ohne Guillemets (Platzhalter (Weitere Einstiege folgen)), weil es ihn auf der Seite nicht mehr gibt; Status und Fassung bleiben.
 
+**Korrektur 3-1-K (12.10.2026):** nachgeführt nach `KORREKTUR-ETAPPE-3-1.md`, Abschnitt 6 (Z31-W2-1): zwei Zeilen ohne Bestandssatz am Ende der Tabelle, Nr. 260 (V1 in `haltung`, Verweissatz auf `fragen`) und Nr. 261 (V2 in `beratung`, Verweissatz auf `ueber`), beide «neu (3-1-K)». Übrige Zeilen unverändert.
+
 
 - **Satz (Bestand):** Bestandstext in Sätze zerlegt, Listenpunkte und Zwischentitel als eigene Zeile. Die Nummer bleibt fest, damit Prüfberichte sie zitieren können. Gleiche Sätze aus Seite und Handout stehen je in ihrer Zeile.
 - **Neue Fassung:** der Satz der neuen Seite, der die Aussage trägt; «wörtlich», wenn er gleich lautet; «–», wenn der Satz entfällt oder auf eine spätere Seite vorgemerkt ist. Bei Zeilen ohne Bestandssatz steht in «Satz (Bestand)» «–».
@@ -296,6 +298,8 @@ Neue Seite: `content/index.html` · Bestand: `/` (Startseite), `/selbsttest`, `/
 | 257 | neue Seite › Einstiege, Anliegen | – | neu (2b) | «Ich weiss nicht, was ich sagen soll, wenn es schwierig wird.» | index#einstiege | Anliegen-Satz des Einstiegs zu `kommunizieren` im Wortlaut des Bauauftrags 2b (Abschnitt 6); Freigabe: Liste der neuen Sätze in PRUEFBERICHT.md, Selbstprüfung Etappe 2b |
 | 258 | neue Seite › Einstiege, Anliegen | – | neu (2c-1) | «Ich frage mich, ob es je besser wird.» | index#einstiege | Anliegen-Satz des Einstiegs zu `genesung` im Wortlaut des Bauauftrags 2c-1 (Abschnitt 6); Freigabe: Liste der neuen Sätze in PRUEFBERICHT.md, Selbstprüfung Etappe 2c-1 |
 | 259 | neue Seite › Einstiege, Anliegen | – | neu (2c-1) | «Ich suche Beratung oder Austausch mit anderen Angehörigen.» | index#einstiege | Anliegen-Satz des Einstiegs zu `unterstuetzung` im Wortlaut des Bauauftrags 2c-1 (Abschnitt 6); Freigabe: Liste der neuen Sätze in PRUEFBERICHT.md, Selbstprüfung Etappe 2c-1 |
+| 260 | neue Seite › `haltung` | – | neu (3-1-K) | Antworten auf häufige Fragen stehen auf der Seite «Häufige Fragen». | index#haltung | Verweissatz (V1), eigener Absatz nach «Sie sind nicht für die Genesung eines anderen Menschen verantwortlich.», Link auf `fragen.html`; 3-1-K, Abschnitt 6, Z31-W2-1 |
+| 261 | neue Seite › `beratung` | – | neu (3-1-K) | Wer die Website herausgibt und welche Grundsätze für die Texte gelten, steht auf der Seite «Über diese Website». | index#beratung | Verweissatz (V2), eigener Absatz nach der Kontaktadresse, Link auf `ueber.html`; 3-1-K, Abschnitt 6, Z31-W2-1 |
 
 ## Prüfbedarf für W1 (Stand 09.10.2026, Korrektur 1d)
 

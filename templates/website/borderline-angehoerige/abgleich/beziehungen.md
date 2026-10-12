@@ -40,6 +40,8 @@ Neue Seite: `content/beziehungen.html` · Bestand: `/verstehen/beziehungen` (kei
 
 **Zählung nach Etappe 2c-1:** 233 Sätze des Bestands, davon 63 entfällt, 60 umformuliert (einfache Sprache, 1e), 36 Bezeichnung, 27 übernommen, 10 verschoben, 7 verschoben (2b-2), 7 zusammengeführt, 5 umformuliert (Bildsprache, 1h), 5 verschoben (Vertiefung, 2b), 4 gekürzt, 3 umformuliert (einfache Sprache, 1f), 3 umformuliert (Prüfrunde 4, 1i), 1 umformuliert (2b), 1 umformuliert (2b-K), 1 umformuliert (2b-2). Dazu 17 Zeilen ohne Bestandssatz.
 
+**Korrektur 3-1-K (12.10.2026):** nachgeführt nach `KORREKTUR-ETAPPE-3-1.md`, Abschnitt 6 (Z31-W2-1): eine Zeile ohne Bestandssatz am Ende der Tabelle, Nr. 250 «neu (3-1-K)», der Verweissatz auf `quellen` als erster Satz im Block «Quellen zu dieser Seite». Übrige Zeilen unverändert.
+
 
 - **Satz (Bestand):** Bestandstext in Sätze zerlegt, Listenpunkte und Zwischentitel als eigene Zeile. Die Nummer bleibt fest, damit Prüfberichte sie zitieren können. Gleiche Sätze aus Seite und Handout stehen je in ihrer Zeile.
 - **Neue Fassung:** der Satz der neuen Seite, der die Aussage trägt; «wörtlich», wenn er gleich lautet; «–», wenn der Satz entfällt oder auf eine spätere Seite vorgemerkt ist. Bei Zeilen ohne Bestandssatz steht in «Satz (Bestand)» «–».
@@ -300,6 +302,7 @@ Neue Seite: `content/beziehungen.html` · Bestand: `/verstehen/beziehungen` (kei
 | 247 | neue Seite › `verantwortung` | – | umformuliert (Prüfrunde 4, 1i) | Was dann wichtig ist, steht auf der Seite «Grenzen» unter «Wenn Gewalt oder Bedrohung vorkommt». | beziehungen#verantwortung | Verweis ohne Bestandszeile, Link wie bisher auf `grenzen` › `gewalt`; bis 1d nach Nr. 205 mit Doppelpunkt; Abschnittstitel in «…» (P4-S-3); bis 1h: umformuliert (einfache Sprache, 1e) |
 | 248 | neue Seite › `verantwortung` | – | neu (1e) | Holen Sie sich selbst Unterstützung, zum Beispiel bei der Beratung der Fachstelle Angehörigenarbeit. | beziehungen#verantwortung | «Was Sie tun können», Link auf `index` › `beratung` wie auf `grenzen` › `kontakt` |
 | 249 | neue Seite › `was-hilft`, Verweis | – | neu (Verweis, 2b-F) | Wie Sie Gefühle anerkennen können, ohne zuzustimmen, steht auf der Seite «Zugewandt und klar sprechen» im Abschnitt «Anerkennen, ohne zuzustimmen». | beziehungen#was-hilft | 2b-F (Freigabe 2b, Abschnitt 4, Satz 4): eigener Absatz am Ende des Abschnitts, nach der Begriffsliste («Unterstützung verteilen»); Link auf `kommunizieren#anerkennen`; wortgleich auf `krise#sagen` (`krise.md` Nr. 302) |
+| 250 | neue Seite › `quellen` | – | neu (3-1-K) | Vollständige Angaben zu den Quellen stehen auf der Seite «Quellen und Begriffe». | beziehungen#quellen | Verweissatz, erster Satz im Block «Quellen zu dieser Seite», Link auf `quellen.html`; 3-1-K, Abschnitt 6, Z31-W2-1: gleicher Satz wie auf `fragen`, damit `quellen` von jeder Themenseite in einem Schritt erreichbar ist |
 
 ## Prüfbedarf für W1 (Stand 09.10.2026, Korrektur 1e)
 

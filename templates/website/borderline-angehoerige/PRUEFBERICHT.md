@@ -716,6 +716,708 @@ Keine Stufe ist «erledigt». W1: 2 wichtig, 2 optional, 6 Fragen. W2: 2 wichtig
 
 Nach jedem Bau ohne Nachfrage ausfüllen: Visualisierungs-Check wie unten, mit Beleg je Punkt. Arbeitsstand, keine Prüfstufe.
 
+**Stand 12.10.2026 · Korrektur 3-1-K · bauende Sitzung (Claude Code).** Umgesetzt ist `KORREKTUR-ETAPPE-3-1.md` (Entscheide zu den zwei Prüfungen 3-1, getroffen von der Sitzung der zweiten Prüfung im Auftrag der Fachstelle vom 12.10.2026). Grundlage ist `borderline-umbau` am Stand `7e8fa4e` (nach dem Merge von PR #32 und #35); gearbeitet auf dem Branch `korrektur-3-1-k`. Diese Sitzung hat Etappe 3-1 nicht gebaut, nicht geprüft und nicht entschieden; die Nachprüfung 3-1-K macht nach Abschnitt 1 des Auftrags eine Sitzung, die weder gebaut, noch geprüft, noch entschieden hat. Geändert sind nur:
+
+- **`fragen`, `quellen`, `ueber`, `impressum-datenschutz`:** die Stellen aus den Abschnitten 3 bis 5 des Auftrags
+- **`index`:** zwei Verweissätze (V1 in `haltung`, V2 in `beratung`); **zehn Themenseiten:** ein Verweissatz als erster Satz im Block «Quellen zu dieser Seite»; **`grenzen`:** dazu die Kurzangabe «Linehan (2015)»; **`unterstuetzung`:** die Ausgabe von «Schluss mit dem Eiertanz» (Abschnitt 4 g)
+- **«Verwendet auf»:** neu als Skript im Repository, `abgleich/verwendet-auf.mjs` (das Skript von Etappe 3-1 lag nicht im Repository; mit `--ohne-legenden` ergibt das neue Skript genau den Stand von Etappe 3-1)
+- **`_redirects`**, **der Abgleich** (`fragen.md`, `quellen.md`, `ueber.md`, `unterstuetzung.md`, `index.md`, die zehn Tabellen der Themenseiten, `README.md`), **`UMBAUPLAN.md`** (Stand, Abschnitte 2 und 7)
+- in diesem Bericht dieser Block und unter «Etappe 3-1: Neue Sätze zur Freigabe» ein Hinweis auf die neue Liste
+
+Keine Prüfstufe ist «erledigt»; der Status bleibt in allen Zeilen «offen». Die fachliche Freigabe von Etappe 3-1 trägt nur die Fachstelle ein. Der Block «Etappe 3-1» steht darunter.
+
+**Nicht erfüllt oder offen (Kurzfassung):** (1) Die rechtlichen Fragen bleiben offen (Abschnitt 7 des Auftrags: Verantwortlichkeit nach DSG und DSGVO, tatsächliche Protokollierung bei Netlify, Standardvertragsklauseln und Data Privacy Framework für das Konto der neuen Website); Impressum und Datenschutz stehen bis dahin im vorsichtigeren Wortlaut des Bestands. (2) `ueber` mit `impressum-datenschutz` hat jetzt 1109 Wörter (Richtwert 900; vorher 1042); `fragen` 3250 Wörter (ohne Quellenblock 2993), der Richtwert gilt nach Abschnitt 1 nicht mehr. (3) Die Liste «Neue Sätze zur Freigabe» ist neu und länger (562 Zeilen statt 473), weil sie jetzt jeden Satz enthält, der nicht wörtlich im Bestand steht; sie ist von der Fachstelle nicht freigegeben. (4) `_redirects` wirkt erst nach dem Umzug; `tools/export.mjs` kopiert die Datei nicht (Kopf und UMBAUPLAN Abschnitt 7 sagen jetzt, dass sie von Hand kopiert wird). (5) Die externen Links (neu: PubMed zu Dazzi) sind in dieser Umgebung nicht erreichbar und nicht online geprüft. (6) Nicht prüfbar hier: reale Screenreader-Läufe, Hardwaretastatur, Touch. (7) Zwei Stellen aus dem Wortlaut des Auftrags sind unter «Aufgefallen» Nr. 1 und 2 zur sprachlichen Prüfung genannt.
+
+### Korrektur 3-1-K: Stand je Punkt
+
+| Abschnitt des Auftrags | Stand | Beleg |
+| --- | --- | --- |
+| 1 Entscheide | umgesetzt, wie in der Tabelle des Auftrags | je Zeile die Abschnitte 3 bis 8 unten; «–»-Zeilen (Länge `fragen`, Notruf-Satz, Komorbidität, 18 Einträge, Begriffe, Herausgeberin, bestätigt ohne Änderung) ohne Änderung, `git diff` an diesen Stellen leer |
+| 2 Regeln | eingehalten | Wortlaut aus dem Auftrag übernommen (Python-Ersetzung mit genau einem Treffer je Stelle); Verweis im Text weiter nur über den Platzhalter, je Abschnitt einer, nach der Einweisung direkt nach dem neuen Satz (Gate `inline-ref` ohne Befund); geänderte Sätze stehen weder im Plan (`site.config.json`, Suche ohne Treffer) noch in anderen Texten; neue externe Adresse nur PubMed zu Dazzi, DOIs als Text «DOI: …» wie im Bestand; Abgleich mit «umformuliert (3-1-K)», «wieder aufgenommen (3-1-K)», «entfällt (3-1-K)», «neu (3-1-K)», erklärt in `abgleich/README.md`; `pruefe-abgleich.mjs` 0 ohne Fundstelle |
+| 3 `fragen` | umgesetzt | Kopf «Die meisten Antworten nennen …»; `verlauf`: «… während eines festgelegten Zeitraums …» und «… oder eine Posttraumatische Belastungsstörung (PTBS) …»; `gespraeche`: «Warum verhält sich die betroffene Person bei anderen stabiler?» (Anker `f-stabiler` bleibt); `behandlung`: «Zuständig ist grundsätzlich die Kindes- und Erwachsenenschutzbehörde (KESB).» (erstes Vorkommen auf der Seite; `schutz` folgt danach) und «Bei unmittelbarer Gefahr oder wenn Sie nicht einschätzen können, wie dringend es ist, holen Sie sofort Hilfe.», direkt danach der Verweis im Text |
+| 4 a Teilaussagen | umgesetzt | DSM-5-TR, AWMF 038-020, NICE CG78, Sotomo, Baranger im Wortlaut der Tabelle; «Text Revision» mit `lang="en"` (Entscheid Nr. 5 unten) |
+| 4 b DOIs | umgesetzt | zwölf Einträge mit «DOI: …» am Ende der Angabe, aus `bestand/…/texte/quellen.md` per Skript übernommen (Zeichen für Zeichen); vorher 0, jetzt 12 Treffer «DOI:» auf `quellen`; bestehende Links unverändert |
+| 4 c «Verwendet auf» | umgesetzt | `abgleich/verwendet-auf.mjs`: 85 Einträge, 6 geänderte Angaben, 0 Kurzangaben ohne Eintrag. Shields, Degasperi, Baranger, Santangelo: «Verwendet auf: «Verstehen»»; Linehan (2015): «Verstehen», «Grenzen», «Auf sich achten», «Behandlung und Ihre Rolle darin»; Hoffman et al. (2005) dazu «Verstehen» (derselbe Titel, Entscheid Nr. 2). `grenzen` › Quellenblock: «Linehan (2015)» |
+| 4 d Einordnungen | umgesetzt | Zanarini et al. (2024): nur Kurzangabe mit «Verwendet auf: «Genesung»»; Dazzi et al. (2014): Einordnung bleibt, dazu «PubMed» mit Link auf PMID 24998511 und `aria-label` «Dazzi et al. (2014) auf PubMed» (Gate `link-label` ohne Befund) |
+| 4 e Wortlaut des Bestands | umgesetzt | LeDoux, NICE CG78 (Empfehlung 1.3.4.5), Begriff TFP im Wortlaut der Tabelle |
+| 4 f Sprache | umgesetzt | Ogden «Wie Siegel (1999) ein didaktisches Modell …»; `lang="en"` für «Window of Tolerance» (zweimal), «Third Edition», «Family Connections» (Guillén 2024) und «Family Guidelines» (Gunderson 1997), wo sie ohne Auszeichnung standen; «Neuroscience & Biobehavioral Reviews», «Avery / Penguin» |
+| 4 g Einheitliche Angaben | umgesetzt | `unterstuetzung` › `buecher`: «Paul T. Mason und Randi Kreger · Balance Buch + Medien Verlag, 2014»; Kreisman auf `quellen`: «… Avery / Penguin. Deutsche Ausgabe: Kösel, 2012.»; NG222: «… Veröffentlicht am 29.06.2022.» |
+| 5 a Impressum | umgesetzt | Haftung in zwei Sätzen des Bestands; Urheberrecht mit «Die Inhalte dürfen im Rahmen der Angehörigenberatung und für den persönlichen Gebrauch verwendet werden.» |
+| 5 b Datenschutz | umgesetzt | «… an andere Anbieter als den Dienst, der die Website ausliefert (siehe «Protokolle beim Betrieb»).»; Protokolle in drei Sätzen nach dem Auftrag; E-Mail mit dem Satz zur Übermittlung nach dem ersten Satz; «Stand: 12.10.2026» |
+| 5 c `ueber` | umgesetzt | `warum`: Satz geteilt, am Ende des letzten Absatzes «Die Fachstelle bietet Beratung und Psychoedukation, keine Krisenintervention.»; `barrierefreiheit`: «Umgesetzt sind unter anderem:», «Web Content Accessibility Guidelines» mit `lang="en"`; `impressum-datenschutz`: «Swiss-U.S. Data Privacy Framework» mit `lang="en"` |
+| 6 Erreichbarkeit und Weiterleitungen | umgesetzt | V1 und V2 auf `index` je als eigener Absatz mit Link (Entscheid Nr. 6); Verweissatz mit Link auf `quellen.html` in den zehn Quellenblöcken; `_redirects`: `/selbsthilfegruppen` → `/unterstuetzung.html#selbsthilfe`, drei Adressen im Block «Krisenzugang entfällt» auf `/index.html`, Kopf Zeile 3–4 neu; 85 Regeln, alle 301, jedes Ziel und jeder Anker vorhanden |
+| 7 Bestätigt und offen | nichts zu ändern | offen bleiben S-Nr. 5, 6 und Z31-F-9, Z31-F-19 (rechtliche Prüfung vor R3) |
+| 8 Liste, Abgleich, Plan | umgesetzt | Liste unten, neu und vollständig; Abgleich: `ueber.md` Nr. 73 und 98 «Profilentscheid 11.10.2026 (`site.config.json` › `legal`)», Bemerkungen nach Z31-W1-13 (`fragen.md` Nr. 70, 322) und Z31-W1-14 (`ueber.md` Nr. 31, 218, 219; «ebenso»-Hinweise in `quellen.md` Nr. 94, 101, 107, 126, 132, 147, 148, 159, 254, 280, 333, 459); UMBAUPLAN Abschnitt 2 (drei Handouts am tatsächlichen Ort, `impressum-datenschutz` als eigene Seite, `fragen` ohne Richtwert, Navigationsspalte) und Abschnitt 7 (`_redirects` von Hand kopieren, alte `netlify.toml` ersetzen) |
+| 9 Prüfungen | erfüllt, Werte unten | Build, Gates, Selbsttest, Abgleich, Wortlaut der freigegebenen Seiten, Bedienung |
+
+### Korrektur 3-1-K: Prüfungen nach Abschnitt 9
+
+- **`node tools/build.mjs`:** 17 Seiten, 0 blockierend, 3 Hinweise wie vorher: `visual-approval` (`v-ge-trieb`), `crisis-number-check` auf `quellen` («144» = Seitenzahl «134–144» bei Guillén et al. 2021), `review-report`.
+- **`node tools/gate.mjs --production`:** 2 blockierend, nur `visual-approval` (`v-ge-trieb`) und `review-report`; 1 Hinweis (`crisis-number-check`).
+- **`node tools/gate.mjs --selftest`:** 65/65 bestanden (Gate unverändert).
+- **`node abgleich/pruefe-abgleich.mjs`:** 7361 Zeilen, 0 ohne Fundstelle (vorher 7344). Nach den Textänderungen und vor dem Nachführen meldete es 39 Zeilen ohne Fundstelle.
+- **`node abgleich/verwendet-auf.mjs`:** 85 Einträge, 0 mit anderer Angabe, 0 Kurzangaben nicht zugeordnet; mit `--ohne-legenden` am Stand `7e8fa4e`: 0 Abweichungen zum Stand von Etappe 3-1, 1 Kurzangabe nicht zugeordnet («Linehan» auf `grenzen`, wie in der Selbstprüfung 3-1 genannt).
+- **Wortlaut der freigegebenen Seiten** (Text ohne Markup von `content/<seite>.html`, MD5 gegen den Stand `7e8fa4e`, nach Entfernen der Sätze aus Abschnitt 6 und mit «Linehan» statt «Linehan (2015)»): gleich für `index` (1e68f1e31c…), `verstehen`, `beziehungen`, `grenzen`, `rolle`, `selbstfuersorge`, `kommunizieren`, `krise` und für `genesung`, `diagnose`, `behandlung` (Etappe 2c, in Prüfung). `unterstuetzung` weicht nur durch Abschnitt 4 g ab: mit «Psychiatrie-Verlag, 2010» statt der neuen Angabe ist der Text gleich (d539a150f5…).
+- **Überlauf** (Chromium, `fragen`, `quellen`, `ueber`, `impressum-datenschutz`, `index`, `grenzen`, `unterstuetzung`; 320, 360 und 1280 px): `scrollWidth` gleich der Fensterbreite, kein Element in `<main>` breiter als das Fenster (auch die DOIs bei 320 px). Schriftgrösse 200 % bei 1280 und 640 px: 0 px Überlauf auf den vier Seiten.
+- **Bildschirmfotos, angesehen** (320 und 1280 px): `index` V1 und V2, `fragen` Kopf und Einweisung, `ueber` › `warum` und `barrierefreiheit`, `impressum-datenschutz` Haftung, Protokolle und E-Mail, `quellen` Dazzi, Kreisman, NG222 und DSM-5-TR, `grenzen` Quellenblock geöffnet. Keine abgeschnittene Zeile; «Avery / Penguin» bricht bei 320 px nach dem Schrägstrich um.
+- **Tastatur** (`bedienung.mjs`, 1280 px): erster Tabstopp «Zum Hauptinhalt», 0 Stopps ohne sichtbaren Fokus; `fragen` 46, `quellen` 85 (vorher 84: Link «PubMed»), `ueber` 17, `impressum-datenschutz` 12, `index` 19 (die zwei neuen Links). Vertiefungen mit Enter auf, mit Leertaste zu (`aria-expanded` false → true → false): `fragen` 2 von 2, `quellen` 1 von 1, `grenzen` 1 von 1; im geöffneten Quellenblock von `grenzen` ist der nächste Tabstopp der Link «Quellen und Begriffe» → `quellen.html`.
+- **Ohne Skript:** alle Panels sichtbar (`fragen` 2 von 2, `quellen` 1 von 1, `grenzen` 1 von 1). **Druck** (Chromium, A4, PDF erzeugt): alle Panels sichtbar (`fragen` 2, `quellen` 1, `grenzen` 1; `ueber` und `impressum-datenschutz` ohne Panel).
+- **Reduzierte Bewegung:** nach 1,5 s keine laufende Animation auf `fragen`, `quellen`, `ueber`, `impressum-datenschutz`, `index`.
+- **Erreichbarkeit:** `fragen` von `index` in einem Schritt (V1), `ueber` in einem Schritt (V2), `quellen` in zwei Schritten (Themenseite → Quellenblock, oder `fragen` → Quellenblock). Gate `reachability` ohne Befund.
+- **Externe Links:** 54 auf `quellen` und `impressum-datenschutz` (vorher 53; neu PubMed zu Dazzi), keiner mit `target`. **Nicht prüfbar:** Erreichbarkeit der Ziele (Netzwerkrichtlinie dieser Umgebung).
+- **Nicht prüfbar in dieser Umgebung:** reale Screenreader-Läufe, Hardwaretastatur und Touch.
+
+### Korrektur 3-1-K: Wörter vorher und nachher
+
+`node abgleich/kennzahlen.mjs` und `verneinung.mjs`, gleiche Zählweise wie bisher. «Vorher» ist der Stand `7e8fa4e`.
+
+| Seite | Alt (Bestand) | Neu vorher | Neu nachher | Absicherungen je 100 Wörter | Sätze mit Verneinung |
+| --- | ---: | ---: | ---: | --- | --- |
+| `fragen` | 4684 | 3232 (ohne Quellenblock 2975) | 3250 (ohne Quellenblock 2993) | 1,61 → 1,63 | 64 von 287 → 65 von 287 |
+| `quellen` | 6693 | 5456 | 5507 | 0,60 → 0,60 | 73 von 649 → 74 von 654 |
+| `ueber` | 1304 | 595 | 608 | 0,34 → 0,33 | 11 von 68 → 12 von 70 |
+| `impressum-datenschutz` | 1382 | 447 | 501 | 1,57 → 1,60 | 11 von 56 → 12 von 60 |
+| `index` | 433 | 329 | 357 | 1,22 → 1,12 | – |
+| zehn Themenseiten mit Quellenblock | – | – | je +12 | – | – |
+| `unterstuetzung` | 2010 | 1405 | 1408 | 1,07 → 1,07 | – |
+
+`fragen` nach Abschnitt: `verlauf` 479 → 486, `gespraeche` 501 → 502, `behandlung` 561 → 570, Kopf +1, übrige gleich. `quellen`: `begriffe` 1316 → 1314, `forschung` 1547 → 1546 (DOIs +20, Einordnung zu Zanarini 2024 −7, vier Angaben «Verwendet auf: «Verstehen»» statt «Hintergrund, …» −16), `therapie` 365 → 367, `angehoerige` 445 → 453, `diagnostik` 337 → 347, `leitlinien` 914 → 948. Gekürzt ist nichts; die Korrektur nimmt Sätze und Angaben wieder auf. `ueber` mit `impressum-datenschutz`: 1109 Wörter (Richtwert 900).
+
+### Korrektur 3-1-K: Verweise im Text und Visualisierungs-Check
+
+- **Verweise im Text:** weiter sechs, alle auf `fragen`, je einer in sechs Abschnitten, keiner in einer Vertiefung (Gate `inline-ref` ohne Befund). Geändert ist nur der Satz davor in `behandlung`: «Bei unmittelbarer Gefahr oder wenn Sie nicht einschätzen können, wie dringend es ist, holen Sie sofort Hilfe.» (Wortlaut von `krise` › `belastung` ohne «und schützen sich selbst», wie im Auftrag). Die übrigen fünf Handlungsanleitungen und der Notruf-Satz in den anderen Abschnitten bleiben (Z31-F-7).
+- **Visualisierungs-Check:** keine Abbildung, keine Legende und keine Zeile des Plans geändert. Die vier Seiten bleiben reine Textdarstellungen (Plan: 23 Zeilen mit Format `text`, Begründungen passen weiter, Beleg wie im Block «Etappe 3-1»). Die Legenden von `verstehen`, `grenzen`, `rolle`, `kommunizieren` und `genesung` werden jetzt für «Verwendet auf» gelesen, aber nicht verändert. Freundin-Test entfällt (kein Bild geändert).
+
+### Korrektur 3-1-K: Neue Sätze zur Freigabe (neu und vollständig, Stand nach Korrektur 3-1-K)
+
+Ersetzt die Liste im Block «Etappe 3-1» (Abschnitt 8 des Auftrags, Z31-W1-1, Z31-F-5). Die Liste ist die Übersicht zur Freigabe als Ganzes.
+
+**Was in der Liste steht:** jeder Satz des sichtbaren Texts in `<main>` von `fragen`, `quellen`, `ueber` und `impressum-datenschutz` (Vertiefungen eingeschlossen), der nicht **wörtlich als ganzer Satz** im Bestand der Seite steht (`faq.md`; `quellen.md` und `glossar.md`; `ueber-uns.md`, `barrierefreiheit.md`, `feedback.md`; `impressum.md`, `datenschutz.md`), in der Reihenfolge der Seite und je Vorkommen. Neu gegenüber der Liste von Etappe 3-1 zählt jetzt auch ein Satz, dessen Anfang wörtlich im Bestand steht, der dort aber weitergeht: **am Ende gekürzte Sätze** (Art «gekürzt») und **Satzteilungen** an Semikolon, Doppelpunkt, Gedankenstrich oder Komma (Art «Satzzeichen (Satzteilung)»). Dazu Bezeichnungen (Kapitelübersicht, Kicker, Zwischentitel, Begriffe der Begriffsliste, `dt`), die nicht wörtlich im Bestand stehen, und **jeder Satz aus dem Korrekturauftrag**, auch wenn er wörtlich im Bestand steht (Art «wieder aufgenommen (3-1-K), Wortlaut des Bestands»). Am Ende die Sätze und Angaben aus dem Auftrag auf anderen Seiten.
+
+**Was nicht in der Liste steht:** bibliografische Angaben des Bestands (Autor, Jahr, Titel, Zeitschrift, Verlag, Ort, Herausgeber, Stand, DOI), auch wenn Satzzeichen oder die Form abweichen; die zwölf DOIs aus Abschnitt 4 b gehören dazu (`quellen.md` Nr. 24, 29, 32, 35, 38, 41, 67, 83, 86, 89, 145, 150). Aufgenommen sind aber Angaben im ersten Absatz eines Eintrags, die aus einer Einordnung des Bestands umformuliert sind (Nr. 129, 171, 215 im Abgleich) oder aus dem Auftrag kommen. Die 18 Einträge ohne Bestand in `/quellen` stehen je als eine Zeile mit der ganzen Angabe. Die Kurzangaben im Quellenblock von `fragen` stehen als eine Zeile «Quellenblock wie auf den Themenseiten» (Z31-W1-11); «Verwendet auf:» und «Hintergrund, auf den Seiten nicht einzeln zitiert» je einmal je Abschnitt. Nicht als Zeile: Linktexte, die zugleich Titel sind, und der Verweis im Text als Satz nur dort, wo er steht (Art «Verweis im Text»).
+
+**Zustandekommen:** Ein Skript dieser Sitzung zerlegt den Text der gebauten Seiten und den Bestand mit derselben Satzzerlegung (Abkürzungen wie «z. B.», «Art.», «et al.», «Ch.» und Ordnungszahlen trennen nicht) und vergleicht ganze Sätze. Art und Abgleich sind aus der Liste von Etappe 3-1 übernommen, wo der Satz an derselben Stelle gleich ist (366 Zeilen); berichtigt sind 20 Zeilen (die elf Nummern aus Z31-W1-1 unten, der Verweissatz Nr. 48 jetzt mit f335, «Verwendet auf:» in sieben Abschnitten und Zanarini et al. 2024); die übrigen 162 Zeilen sind aus dem Abgleich bestimmt und von Hand geprüft. **Art:** wie in der Liste von Etappe 3-1 (neu · Verdichtung · umformuliert · gekürzt · Verweissatz · Verweis im Text · Satzzeichen · Bezeichnung; «Wortlaut von `seite`»); dazu «Satzzeichen (Satzteilung)» und für Sätze dieses Auftrags «umformuliert (3-1-K)», «wieder aufgenommen (3-1-K)», «neu (3-1-K)». **Abgleich:** f = `fragen.md`, q = `quellen.md`, u = `ueber.md` (auch für `impressum-datenschutz`); auf anderen Seiten Datei und Nummer.
+
+**Berichtigt gegenüber der Liste von Etappe 3-1 (Z31-W1-1):** Nr. 35 «Was bedeutet das?» → Bezeichnung, f92 (nicht f325); Nr. 69 und 102 → umformuliert («ein», «den Begriff» ergänzt), Abgleich f219 und f192 ebenso berichtigt; Nr. 147/148, 310, 372, 438 (Bruchstücke) → ganze Sätze oder Teil der Zeile «Quellenblock»; Nr. 188 «Komorbidität ist der medizinische Begriff für Begleiterkrankungen.» → neu, Wortlaut von `diagnose` (kein Bestandssatz, q403 ist nur der Begriff); Nr. 202 → q461 (nicht q294); Nr. 255 → q27 (nicht q94); Nr. 279 → Satzteilung von q58 (keine Bezeichnung); Nr. 314 und 341 → Satzteilung, der zweite Teil steht seit 3-1-K wieder als eigener Satz; Nr. 362 → Sotomo-Satz mit «Opt-in» (3-1-K); Nr. 410 → Verweissatz; Nr. 432 → gekürzt («Es ist kein Notfalldienst» entfällt, Zuständigkeitsverweis in der Fusszeile); Nr. 456 → drei Sätze nach Abschnitt 5 b. **Neu in der Liste, weil sie fehlten:** die elf am Ende gekürzten Sätze (q46 als Satzteilung, q48, q101, q126, q172, q214, q226, q232, q246, q258, u230), die Einordnung zu Dazzi et al. (2014), «Dazu gehören:» (jetzt «Umgesetzt sind unter anderem:»), h2 «Warum es diese Website gibt», dt «Kontakt» und «Änderungen», der Verweissatz auf `krise#suizid` in `gespraeche` (Abgleich jetzt f335), dazu weitere Satzteilungen und Bezeichnungen, die die exakte Prüfung findet. Insgesamt stehen 162 Zeilen neu in der Liste, davon 32 Sätze dieses Auftrags. u230 steht wörtlich in `/feedback` (Bestand der Seite) und ist nur gegenüber `/datenschutz` gekürzt; die Zeile steht trotzdem in der Liste, weil der Auftrag sie nennt.
+
+**Zählung:** 562 Zeilen: `fragen` 155, `quellen` 290, `ueber` 55, `impressum-datenschutz` 48, andere Seiten 14. Nach Art (vier Seiten): umformuliert 232, Satzzeichen 115 (davon Satzteilung 58), Bezeichnung 81, neu 48, Zeilen mit Bezug auf diese Korrektur 36, gekürzt 11, Verdichtung 9, Verweissatz 8, Verweis im Text 6, Quellenblock 1, verschoben 1.
+
+**`fragen`**
+
+| Nr. | Ort | Satz | Art | Abgleich |
+| ---: | --- | --- | --- | --- |
+| 1 | `fragen` › `kopf` | «Fragen» | Bezeichnung (Kicker des Seitenkopfs) | f0 |
+| 2 | `fragen` › `kopf` | «Kurze Antworten auf Fragen, die Angehörige oft stellen.» | umformuliert | f2 |
+| 3 | `fragen` › `kopf` | «Die meisten Antworten nennen die Seite, auf der das Thema ausführlicher steht.» | neu (3-1-K) | f317 |
+| 4 | `fragen` › `kapitel` | «Auf dieser Seite» | Bezeichnung | f318 |
+| 5 | `fragen` › `kapitel` | «Diagnose» | Bezeichnung | f318 |
+| 6 | `fragen` › `kapitel` | «Ursachen und Verlauf» | Bezeichnung | f318 |
+| 7 | `fragen` › `kapitel` | «Gespräche» | Bezeichnung | f318 |
+| 8 | `fragen` › `kapitel` | «Behandlung» | Bezeichnung | f318 |
+| 9 | `fragen` › `kapitel` | «Schutz» | Bezeichnung | f318 |
+| 10 | `fragen` › `kapitel` | «Ihr Leben» | Bezeichnung | f318 |
+| 11 | `fragen` › `kapitel` | «Weitere Fragen» | Bezeichnung | f318 |
+| 12 | `fragen` › `diagnose` | «01 · Diagnose» | Bezeichnung | f319 |
+| 13 | `fragen` › `diagnose` | «Fragen zur Diagnose» | Bezeichnung | f13 |
+| 14 | `fragen` › `diagnose` | «Eine vertiefte Abklärung übernehmen häufig Fachärztinnen und Fachärzte für Psychiatrie und Psychotherapie oder entsprechend qualifizierte psychologische Psychotherapeutinnen und Psychotherapeuten.» | umformuliert | f56 |
+| 15 | `fragen` › `diagnose` | «Die Hausarztpraxis kann Beschwerden einordnen, andere Ursachen mitprüfen und an eine geeignete Fachperson überweisen.» | umformuliert | f57 |
+| 16 | `fragen` › `diagnose` | «Wer die diagnostische Gesamtbeurteilung übernimmt, hängt von Qualifikation, Fragestellung und Behandlungsrahmen ab.» | umformuliert | f58 |
+| 17 | `fragen` › `diagnose` | «Mehr dazu steht auf der Seite «Diagnose und Begleiterkrankungen» im Abschnitt «Der Weg zur Abklärung».» | umformuliert | f59, f79 |
+| 18 | `fragen` › `diagnose` | «Wie viele Termine und wie viel Zeit nötig sind, hängt von Fragestellung, Verlauf und Behandlungsrahmen ab.» | umformuliert, Wortlaut von `diagnose` | f77 |
+| 19 | `fragen` › `diagnose` | «Mehr dazu steht auf der Seite «Diagnose und Begleiterkrankungen» im Abschnitt «Der Weg zur Abklärung».» | umformuliert | f59, f79 |
+| 20 | `fragen` › `diagnose` | «Wenn keine Diagnose gestellt wurde oder die Einordnung nicht geteilt wird, bleiben Sie bei konkreten Beobachtungen und Ihrem eigenen Erleben.» | Satzzeichen (Satzteilung) | f19 |
+| 21 | `fragen` › `diagnose` | «Zum Beispiel:» | Satzzeichen | f321 |
+| 22 | `fragen` › `diagnose` | «Mehr dazu steht auf der Seite «Zugewandt und klar sprechen» im Abschnitt «Zuhören und die eigene Sicht behalten».» | umformuliert | f20 |
+| 23 | `fragen` › `diagnose` | «Drängen, Beweisen oder das Etikett im Konflikt einzusetzen, hilft nicht.» | Satzzeichen | f66 |
+| 24 | `fragen` › `diagnose` | «Fragen Sie, was unklar ist, sprechen Sie über konkrete Beobachtungen, und respektieren Sie die Entscheidung der Person.» | Satzzeichen | f67 |
+| 25 | `fragen` › `diagnose` | «Bei akuter Gefahr ist die Frage nach der Diagnose nachrangig.» | umformuliert | f70 |
+| 26 | `fragen` › `diagnose` | «Dann holen Sie Hilfe über den Notruf.» | neu, Wortlaut von `diagnose` | f322 |
+| 27 | `fragen` › `diagnose` | «Sorgen Sie sich akut um das Leben oder die Sicherheit eines Menschen, holen Sie sofort Hilfe: ärztlicher Notfalldienst oder Notfallstation, bei Gefahr die Polizei.» | Verweis im Text (Platzhalter, Wortlaut aus `site.config.json`, geprüft 09.10.2026) | f324 |
+| 28 | `fragen` › `diagnose` | «Mehr dazu steht auf der Seite «Diagnose und Begleiterkrankungen» im Abschnitt «Wenn die Diagnose nicht geteilt wird».» | umformuliert | f71 |
+| 29 | `fragen` › `verlauf` | «02 · Ursachen und Verlauf» | Bezeichnung | f319 |
+| 30 | `fragen` › `verlauf` | «Ursachen, Begleiterkrankungen und Verlauf» | neu | f320 |
+| 31 | `fragen` › `verlauf` | «Borderline hat nicht eine einzige Ursache.» | umformuliert, Wortlaut von `verstehen` | f35 |
+| 32 | `fragen` › `verlauf` | «Genetische Einflüsse können die Anfälligkeit mitbestimmen.» | Satzzeichen (Satzteilung) | f36 |
+| 33 | `fragen` › `verlauf` | «Das bedeutet keine sichere Weitergabe einer Diagnose.» | Satzzeichen | f36 |
+| 34 | `fragen` › `verlauf` | «Angehörige sind nicht schuld an der Erkrankung und nicht für die Genesung verantwortlich.» | umformuliert, Wortlaut von `verstehen` | f40 |
+| 35 | `fragen` › `verlauf` | «Wie Sie Schuldgefühle und Verantwortung unterscheiden können, steht auf der Seite «Ihre Rolle» im Abschnitt «Schuld, Verantwortung und was dazwischen liegt».» | umformuliert | f42 |
+| 36 | `fragen` › `verlauf` | «Remission bedeutet, dass die Diagnosekriterien während eines festgelegten Zeitraums nicht mehr erfüllt sind.» | umformuliert (3-1-K), Wortlaut von `genesung` | f26, f308 |
+| 37 | `fragen` › `verlauf` | «Recovery umfasst darüber hinaus persönliche Lebensqualität, Beziehungen und Teilhabe.» | Satzzeichen (Satzteilung) | f26 |
+| 38 | `fragen` › `verlauf` | «Viele Menschen erreichen im Verlauf eine deutliche Besserung oder Remission.» | Satzzeichen (Satzteilung) | f27 |
+| 39 | `fragen` › `verlauf` | «Zeitpunkt, Ausmass und persönliche Genesung unterscheiden sich aber.» | umformuliert | f27 |
+| 40 | `fragen` › `verlauf` | «Mehr dazu steht auf der Seite «Genesung» im Abschnitt «Remission, Alltag und persönliche Recovery».» | umformuliert | f29 |
+| 41 | `fragen` › `verlauf` | «Der Verlauf bleibt begrenzt vorhersehbar.» | Satzzeichen (Satzteilung) | f300 |
+| 42 | `fragen` › `verlauf` | «Manche Menschen erleben nach Monaten deutliche Fortschritte, bei anderen dauert es länger, und Genesung kann unterschiedlich aussehen.» | Satzzeichen (Satzteilung) | f300 |
+| 43 | `fragen` › `verlauf` | «Mehr dazu steht auf der Seite «Genesung» im Abschnitt «Veränderung verläuft unterschiedlich».» | umformuliert | f304 |
+| 44 | `fragen` › `verlauf` | «Begleiterkrankungen wie Depression, Angststörungen oder eine Posttraumatische Belastungsstörung (PTBS) kommen bei Borderline häufig vor, aber nicht bei allen Menschen.» | umformuliert (3-1-K) (Abkürzung ausgeschrieben) | f84 |
+| 45 | `fragen` › `verlauf` | «Welche Beschwerden gemeinsam oder nacheinander behandelt werden, wird individuell mit der betroffenen Person entschieden.» | Satzzeichen (Satzteilung) | f87 |
+| 46 | `fragen` › `verlauf` | «Akut bedrohliche Situationen brauchen zuerst Sicherheit und passende Hilfe.» | Satzzeichen | f87 |
+| 47 | `fragen` › `verlauf` | «Mehr dazu steht auf der Seite «Diagnose und Begleiterkrankungen» im Abschnitt «Begleiterkrankungen».» | umformuliert | f88 |
+| 48 | `fragen` › `verlauf` | «Die betroffene Person hat zusätzlich eine Depression.» | Bezeichnung | f92 |
+| 49 | `fragen` › `verlauf` | «Was bedeutet das?» | Bezeichnung (zweiter Teil des Zwischentitels, Satzteilung) | f92 |
+| 50 | `fragen` › `verlauf` | «Dauer oder Wechsel einer Stimmung reichen für Angehörige nicht aus, um die Ursache einzuordnen.» | Satzzeichen (Satzteilung) | f94 |
+| 51 | `fragen` › `verlauf` | «Das ist Aufgabe einer fachlichen Abklärung.» | Satzzeichen | f94 |
+| 52 | `fragen` › `verlauf` | «Wenn Sie anhaltende Hoffnungslosigkeit oder konkrete Aussagen mit suizidalem Inhalt wahrnehmen, nehmen Sie diese ernst und holen Sie professionelle Hilfe, unabhängig von einer bestehenden Diagnose.» | Satzzeichen | f96 |
+| 53 | `fragen` › `verlauf` | «Bei akuter Gefahr oder Hinweisen auf eine konkrete suizidale Absicht holen Sie sofort Hilfe über den Notruf.» | neu, Wortlaut von `diagnose` | f323 |
+| 54 | `fragen` › `verlauf` | «Sorgen Sie sich akut um das Leben oder die Sicherheit eines Menschen, holen Sie sofort Hilfe: ärztlicher Notfalldienst oder Notfallstation, bei Gefahr die Polizei.» | Verweis im Text (Platzhalter, Wortlaut aus `site.config.json`, geprüft 09.10.2026) | f325 |
+| 55 | `fragen` › `verlauf` | «Mehr dazu steht auf der Seite «Diagnose und Begleiterkrankungen» im Abschnitt «Begleiterkrankungen».» | umformuliert | f88 |
+| 56 | `fragen` › `verlauf` | «Wie Sie Suizidgedanken direkt ansprechen können, steht auf der Seite «Krisen begleiten» im Abschnitt «Wenn Suizidgedanken ein Thema sind».» | umformuliert, Wortlaut von `verstehen` | f97 |
+| 57 | `fragen` › `gespraeche` | «03 · Gespräche» | Bezeichnung | f319 |
+| 58 | `fragen` › `gespraeche` | «Gespräche und Konflikte» | Bezeichnung | f102 |
+| 59 | `fragen` › `gespraeche` | «Nehmen Sie Suizidäusserungen immer ernst, und schalten Sie professionelle Hilfe ein.» | umformuliert | f104 |
+| 60 | `fragen` › `gespraeche` | «Sagen Sie klar:» | Satzzeichen | f104 |
+| 61 | `fragen` › `gespraeche` | «Bei anderen bedrohlich wirkenden Aussagen bleiben Sie bei dem, was Sie tatsächlich wahrnehmen: Fragen Sie nach der Bedeutung, achten Sie auf konkrete Hinweise auf Gefahr, und benennen Sie Ihre Grenze.» | Satzzeichen | f104 |
+| 62 | `fragen` › `gespraeche` | «Sorgen Sie sich akut um das Leben oder die Sicherheit eines Menschen, holen Sie sofort Hilfe: ärztlicher Notfalldienst oder Notfallstation, bei Gefahr die Polizei.» | Verweis im Text (Platzhalter, Wortlaut aus `site.config.json`, geprüft 09.10.2026) | f326 |
+| 63 | `fragen` › `gespraeche` | «Wie Sie Suizidgedanken direkt ansprechen können, steht auf der Seite «Krisen begleiten» im Abschnitt «Wenn Suizidgedanken ein Thema sind».» | Verweissatz, Wortlaut von `verstehen`; Zeile im Abgleich nachgetragen (3-1-K) | f335 |
+| 64 | `fragen` › `gespraeche` | «Was sage ich, wenn mich die betroffene Person beschuldigt?» | Bezeichnung | f112 |
+| 65 | `fragen` › `gespraeche` | «Versuchen Sie zunächst zu klären, was die andere Person erlebt.» | Satzzeichen (Satzteilung) | f114 |
+| 66 | `fragen` › `gespraeche` | «Zum Beispiel:» | Satzzeichen | f321 |
+| 67 | `fragen` › `gespraeche` | «Eine Pause kann helfen.» | Satzzeichen (Satzteilung) | f115 |
+| 68 | `fragen` › `gespraeche` | «Sie dürfen auch sagen, wenn Sie das Gespräch heute nicht fortsetzen.» | Satzzeichen (Satzteilung) | f115 |
+| 69 | `fragen` › `gespraeche` | «Mehr dazu steht auf der Seite «Zugewandt und klar sprechen» im Abschnitt «Anerkennen, ohne zuzustimmen».» | umformuliert | f117, f136 |
+| 70 | `fragen` › `gespraeche` | «Das kann sich als stark wechselnde Bewertung einer Person oder Situation zeigen.» | Satzzeichen (Satzteilung) | f123 |
+| 71 | `fragen` › `gespraeche` | «Es tritt aber nicht bei allen Menschen mit Borderline auf und sagt nichts Sicheres über Absicht oder Charakter.» | umformuliert | f123 |
+| 72 | `fragen` › `gespraeche` | «Bleiben Sie bei Ihrer Wahrnehmung, und fragen Sie nach:» | Satzzeichen | f124 |
+| 73 | `fragen` › `gespraeche` | ««Gestern haben wir uns nah gefühlt.» | Satzzeichen (Satzteilung) | f124 |
+| 74 | `fragen` › `gespraeche` | «Gerade erlebe ich viel Distanz.» | Satzzeichen | f124 |
+| 75 | `fragen` › `gespraeche` | «Mehr dazu steht auf der Seite «Verstehen» im Abschnitt «Wenn Bewertungen einseitiger werden».» | umformuliert | f126 |
+| 76 | `fragen` › `gespraeche` | «Warum verhält sich die betroffene Person bei anderen stabiler?» | Bezeichnung (3-1-K) | f47 |
+| 77 | `fragen` › `gespraeche` | «Bleiben Sie bei beobachtbarem Verhalten, und benennen Sie Ihre eigene Grenze, statt ein Motiv als sicher anzunehmen.» | Satzzeichen | f50 |
+| 78 | `fragen` › `gespraeche` | «Mehr dazu steht auf der Seite «Verstehen» im Abschnitt «Häufige Annahmen – und was realistischer ist».» | umformuliert | f51 |
+| 79 | `fragen` › `gespraeche` | «Frühere Verletzungen, aktuelle Unsicherheit oder Erfahrungen mit Stigmatisierung können Vertrauen erschweren.» | Satzzeichen (Satzteilung) | f132 |
+| 80 | `fragen` › `gespraeche` | «Das ist individuell verschieden und nicht allein durch eine Diagnose erklärt.» | Satzzeichen | f132 |
+| 81 | `fragen` › `gespraeche` | «Sprechen Sie ehrlich und respektvoll, verwenden Sie Ich-Aussagen, und teilen Sie nur, was Sie verantworten können.» | Satzzeichen | f133 |
+| 82 | `fragen` › `gespraeche` | «Mehr dazu steht auf der Seite «Zugewandt und klar sprechen» im Abschnitt «Anerkennen, ohne zuzustimmen».» | umformuliert | f117, f136 |
+| 83 | `fragen` › `behandlung` | «04 · Behandlung» | Bezeichnung | f319 |
+| 84 | `fragen` › `behandlung` | «Therapie und Behandlung» | Satzzeichen | f203 |
+| 85 | `fragen` › `behandlung` | «Was, wenn die betroffene Person keine Therapie möchte?» | Bezeichnung | f204 |
+| 86 | `fragen` › `behandlung` | «Bei unmittelbarer Gefahr holen Sie Hilfe über den Notruf.» | umformuliert, Wortlaut von `krise` | f210 |
+| 87 | `fragen` › `behandlung` | «Ob eine Intervention nötig ist, beurteilen Fachpersonen.» | umformuliert | f210 |
+| 88 | `fragen` › `behandlung` | «Angebote im Kanton Zürich stehen auf der Seite «Behandlung und Ihre Rolle darin» im Abschnitt «Angebote im Kanton Zürich».» | umformuliert | f211 |
+| 89 | `fragen` › `behandlung` | «Dazu gehören zum Beispiel DBT, MBT, Schematherapie oder TFP.» | Satzzeichen (Satzteilung) | f218 |
+| 90 | `fragen` › `behandlung` | «Auch strukturierte generalistische Behandlungen können wirksam sein.» | Satzzeichen (Satzteilung) | f218 |
+| 91 | `fragen` › `behandlung` | «Methode, Qualifikation der Fachperson, gemeinsam vereinbarte Ziele, ein verlässlicher Rahmen, Zugänglichkeit und therapeutische Zusammenarbeit sind gemeinsam wichtig.» | umformuliert («ein» ergänzt) | f219 |
+| 92 | `fragen` › `behandlung` | «Mehr dazu steht auf der Seite «Behandlung und Ihre Rolle darin» im Abschnitt «Therapieformen».» | umformuliert | f220, f230 |
+| 93 | `fragen` › `behandlung` | «Für Borderline selbst sind Medikamente keine Kernbehandlung.» | umformuliert, Wortlaut von `genesung` | f225 |
+| 94 | `fragen` › `behandlung` | «Im Zentrum steht eine strukturierte Psychotherapie.» | umformuliert | f225 |
+| 95 | `fragen` › `behandlung` | «Ziel, erwarteter Nutzen, Risiken, Dauer und Überprüfung sollten ärztlich festgelegt werden.» | Satzzeichen (Satzteilung) | f227 |
+| 96 | `fragen` › `behandlung` | «Unwirksame oder nicht mehr nötige Medikamente gehören überprüft.» | Satzzeichen | f227 |
+| 97 | `fragen` › `behandlung` | «Medikamente werden nur gemeinsam mit der behandelnden ärztlichen Fachperson geändert.» | umformuliert, Wortlaut von `genesung` | f228 |
+| 98 | `fragen` › `behandlung` | «Mehr dazu steht auf der Seite «Behandlung und Ihre Rolle darin» im Abschnitt «Therapieformen».» | umformuliert | f220, f230 |
+| 99 | `fragen` › `behandlung` | «Bringen Sie Ihre eigene Perspektive ein, und hören Sie auch die anderen Sichtweisen an.» | Satzzeichen | f239 |
+| 100 | `fragen` › `behandlung` | «Es geht nicht darum, Schuld oder Recht zu verteilen.» | Satzzeichen | f239 |
+| 101 | `fragen` › `behandlung` | «Mehr dazu steht auf der Seite «Behandlung und Ihre Rolle darin» im Abschnitt «Kontakt zum Behandlungsteam».» | umformuliert | f242 |
+| 102 | `fragen` › `behandlung` | «Dauer und Behandlungsrahmen einer Borderline-Behandlung werden individuell vereinbart.» | umformuliert | f247 |
+| 103 | `fragen` › `behandlung` | «Ambulante und stationäre Behandlungen können unterschiedliche Aufgaben haben.» | Satzzeichen (Satzteilung) | f249 |
+| 104 | `fragen` › `behandlung` | «Aus der Diagnose lässt sich weder eine feste Zahl von Wochen noch ein sicherer Erfolgszeitpunkt ableiten.» | Satzzeichen | f249 |
+| 105 | `fragen` › `behandlung` | «Verläufe unterscheiden sich.» | Satzzeichen (Satzteilung) | f250 |
+| 106 | `fragen` › `behandlung` | «Schwierigere Phasen sind kein Zeichen von Versagen.» | Satzzeichen | f250 |
+| 107 | `fragen` › `behandlung` | «Mehr dazu steht auf der Seite «Genesung» im Abschnitt «Veränderung verläuft unterschiedlich».» | umformuliert | f251 |
+| 108 | `fragen` › `behandlung` | «Zuständig ist grundsätzlich die Kindes- und Erwachsenenschutzbehörde (KESB).» | umformuliert (3-1-K) (Abkürzung ausgeschrieben; Satzteilung) | f147 |
+| 109 | `fragen` › `behandlung` | «Kantonal bezeichnete Ärztinnen und Ärzte können ebenfalls befugt sein.» | Satzzeichen (Satzteilung, Paarform statt Doppelpunkt) | f147 |
+| 110 | `fragen` › `behandlung` | «Bei unmittelbarer Gefahr oder wenn Sie nicht einschätzen können, wie dringend es ist, holen Sie sofort Hilfe.» | umformuliert (3-1-K), Wortlaut von `krise` | f149 |
+| 111 | `fragen` › `behandlung` | «Sorgen Sie sich akut um das Leben oder die Sicherheit eines Menschen, holen Sie sofort Hilfe: ärztlicher Notfalldienst oder Notfallstation, bei Gefahr die Polizei.» | Verweis im Text (Platzhalter, Wortlaut aus `site.config.json`, geprüft 09.10.2026) | f327 |
+| 112 | `fragen` › `schutz` | «05 · Schutz» | Bezeichnung | f319 |
+| 113 | `fragen` › `schutz` | «Schutz, Kinder und Trennung» | Bezeichnung | f141 |
+| 114 | `fragen` › `schutz` | «Nicht jede überforderte Familie braucht sofort eine Meldung.» | Satzzeichen (Satzteilung) | f169 |
+| 115 | `fragen` › `schutz` | «Aber Kinder brauchen Schutz vor Gewalt, vor einer massiv angespannten Stimmung und vor Krisensituationen, die sie nicht einschätzen können.» | umformuliert | f169 |
+| 116 | `fragen` › `schutz` | «Wenn ein Kind selbst stark belastet ist, können der schulpsychologische Dienst, die Kinder- und Jugendpsychiatrie oder die örtliche Mütter- und Väterberatung passende Unterstützung bieten.» | Satzzeichen | f175 |
+| 117 | `fragen` › `schutz` | «Eine Kindesschutzberatung kann beim Einordnen helfen.» | Satzzeichen (Satzteilung) | f178 |
+| 118 | `fragen` › `schutz` | «Warten Sie dann nicht auf eine Beratung oder die Bearbeitung einer Meldung.» | umformuliert | f178 |
+| 119 | `fragen` › `schutz` | «Sorgen Sie sich akut um das Leben oder die Sicherheit eines Menschen, holen Sie sofort Hilfe: ärztlicher Notfalldienst oder Notfallstation, bei Gefahr die Polizei.» | Verweis im Text (Platzhalter, Wortlaut aus `site.config.json`, geprüft 09.10.2026) | f328 |
+| 120 | `fragen` › `schutz` | «Meldepflichten in bestimmten Berufen und Ämtern» | neu | f330 |
+| 121 | `fragen` › `schutz` | «Berufsgeheimnis und zusätzliche kantonale Pflichten können relevant sein.» | Satzzeichen (Satzteilung) | f180 |
+| 122 | `fragen` › `schutz` | «Lassen Sie Ihre konkrete Rolle fachlich klären.» | Satzzeichen | f180 |
+| 123 | `fragen` › `schutz` | «Wie Kinder im Alltag entlastet werden können, steht auf der Seite «Ihre Rolle» im Abschnitt «Wenn Kinder mitbetroffen sind».» | umformuliert | f182 |
+| 124 | `fragen` › `schutz` | «Darf ich die betroffene Person verlassen?» | Bezeichnung | f156 |
+| 125 | `fragen` › `schutz` | «Ihre Sicherheit und Selbstbestimmung haben Vorrang.» | Satzzeichen (Satzteilung) | f159 |
+| 126 | `fragen` › `schutz` | «Sie dürfen eine Beziehung beenden oder eine Situation verlassen, auch wenn die andere Person psychisch erkrankt oder akut belastet ist.» | Satzzeichen (Satzteilung) | f159 |
+| 127 | `fragen` › `schutz` | «Mehr dazu steht auf der Seite «Grenzen» im Abschnitt «Wie viel Kontakt ist für Sie tragbar?».» | umformuliert | f163 |
+| 128 | `fragen` › `schutz` | «Eifersucht und kontrollierendes Verhalten können viele Ursachen haben.» | Satzzeichen (Satzteilung) | f280 |
+| 129 | `fragen` › `schutz` | «Aus einer Borderline-Diagnose lässt sich das Motiv nicht ableiten.» | Satzzeichen | f280 |
+| 130 | `fragen` › `schutz` | «Die Grenze schützt Ihre Privatsphäre.» | Satzzeichen (Satzteilung) | f283 |
+| 131 | `fragen` › `schutz` | «Sie soll die andere Person weder bestrafen noch zu einer Veränderung zwingen.» | Satzzeichen | f283 |
+| 132 | `fragen` › `schutz` | «Mehr dazu steht auf der Seite «Grenzen» im Abschnitt «Sätze für typische Situationen».» | umformuliert | f285 |
+| 133 | `fragen` › `eigenes-leben` | «06 · Ihr Leben» | Bezeichnung | f319 |
+| 134 | `fragen` › `eigenes-leben` | «Ihr eigenes Leben und Ihr Umfeld» | Bezeichnung | f256 |
+| 135 | `fragen` › `eigenes-leben` | «Verwenden Sie den Begriff «Co-Abhängigkeit» nicht, um sich oder andere Angehörige zu diagnostizieren.» | umformuliert («den Begriff» ergänzt) | f192 |
+| 136 | `fragen` › `eigenes-leben` | «Mehr dazu steht auf der Seite «Auf sich achten» im Abschnitt «Warnsignale für Überlastung».» | umformuliert | f198 |
+| 137 | `fragen` › `eigenes-leben` | «Mehr dazu steht auf der Seite «Auf sich achten» im Abschnitt «Auch Ihr eigenes Leben zählt».» | Verweissatz | f294 |
+| 138 | `fragen` › `eigenes-leben` | «Austausch mit anderen Angehörigen steht auf der Seite «Unterstützung finden» im Abschnitt «Austausch mit anderen Angehörigen».» | umformuliert | f294 |
+| 139 | `fragen` › `eigenes-leben` | «Wie erkläre ich die Situation Freunden oder der Familie?» | Bezeichnung | f257 |
+| 140 | `fragen` › `eigenes-leben` | «Sagen Sie nur so viel, wie für Ihre eigene Unterstützung nötig ist.» | Satzzeichen (Satzteilung) | f259 |
+| 141 | `fragen` › `eigenes-leben` | «Zum Beispiel:» | Satzzeichen | f321 |
+| 142 | `fragen` › `eigenes-leben` | «Was, wenn Deutsch nicht die Hauptsprache ist oder psychische Erkrankungen in der Familie tabu sind?» | Bezeichnung | f264 |
+| 143 | `fragen` › `eigenes-leben` | «Fragen Sie in Praxis, Klinik oder Beratung aktiv nach professioneller Dolmetschung, wenn Deutsch nicht für alle sicher genug ist.» | umformuliert, Wortlaut von `behandlung` | f269 |
+| 144 | `fragen` › `eigenes-leben` | «Kinder sollten Diagnose-, Krisen- oder Gewaltgespräche nicht dolmetschen müssen.» | umformuliert, Wortlaut von `behandlung` | f270 |
+| 145 | `fragen` › `eigenes-leben` | «Bei akuter Gefahr geht Sicherheit vor.» | umformuliert | f272 |
+| 146 | `fragen` › `eigenes-leben` | «Holen Sie dann früh Hilfe, auch wenn noch nicht alle Begriffe, Hintergründe oder Familienkonflikte geklärt sind.» | umformuliert | f273 |
+| 147 | `fragen` › `eigenes-leben` | «Sorgen Sie sich akut um das Leben oder die Sicherheit eines Menschen, holen Sie sofort Hilfe: ärztlicher Notfalldienst oder Notfallstation, bei Gefahr die Polizei.» | Verweis im Text (Platzhalter, Wortlaut aus `site.config.json`, geprüft 09.10.2026) | f329 |
+| 148 | `fragen` › `eigenes-leben` | «Mehr dazu steht auf der Seite «Behandlung und Ihre Rolle darin» im Abschnitt «Unterbrüche und Rückschläge».» | umformuliert | f274 |
+| 149 | `fragen` › `weitere` | «07 · Weitere Fragen» | Bezeichnung | f319 |
+| 150 | `fragen` › `weitere` | «Die Fachstelle Angehörigenarbeit der PUK berät Sie auch zu Ihrer persönlichen Frage.» | umformuliert | f315 |
+| 151 | `fragen` › `weitere` | «Wie die Beratung abläuft und wie Sie die Fachstelle erreichen, steht auf der Startseite im Abschnitt «Beratung für Sie».» | Verweissatz | f331 |
+| 152 | `fragen` › `weitere` | «Fachbegriffe erklärt die Seite «Quellen und Begriffe» im Abschnitt «Begriffe».» | umformuliert | f316 |
+| 153 | `fragen` › `quellen` | «Quellen zu dieser Seite» | neu, Wortlaut von `verstehen` | f332 |
+| 154 | `fragen` › `quellen` | «Vollständige Angaben zu den Quellen stehen auf der Seite «Quellen und Begriffe».» | Verweissatz | f333 |
+| 155 | `fragen` › `quellen` | «Quellenblock wie auf den Themenseiten: 14 Kurzangaben mit «Verwendet in:»» | Quellenblock wie auf den Themenseiten (Kurzangaben, keine Sätze; Z31-W1-11) | f334 und die Quellenvermerke «verschoben» |
+
+**`quellen`**
+
+| Nr. | Ort | Satz | Art | Abgleich |
+| ---: | --- | --- | --- | --- |
+| 156 | `quellen` › `kopf` | «Quellen» | Bezeichnung | q0 |
+| 157 | `quellen` › `kopf` | «Quellen und Begriffe» | Bezeichnung | q1 |
+| 158 | `quellen` › `kopf` | «Erklärungen von Fachbegriffen, die auf diesen Seiten vorkommen, und die Quellen der Website, nach ihrer Funktion geordnet.» | umformuliert | q3, q266 |
+| 159 | `quellen` › `kapitel` | «Auf dieser Seite» | Bezeichnung | q534 |
+| 160 | `quellen` › `kapitel` | «Begriffe» | Bezeichnung | q534 |
+| 161 | `quellen` › `kapitel` | «Einordnung» | Bezeichnung | q534 |
+| 162 | `quellen` › `kapitel` | «Forschung» | Bezeichnung | q534 |
+| 163 | `quellen` › `kapitel` | «Therapie» | Bezeichnung | q534 |
+| 164 | `quellen` › `kapitel` | «Angehörige» | Bezeichnung | q534 |
+| 165 | `quellen` › `kapitel` | «Diagnostik» | Bezeichnung | q534 |
+| 166 | `quellen` › `kapitel` | «Versorgung» | Bezeichnung | q534 |
+| 167 | `quellen` › `kapitel` | «Leitlinien» | Bezeichnung | q534 |
+| 168 | `quellen` › `kapitel` | «Schweiz» | Bezeichnung | q534 |
+| 169 | `quellen` › `begriffe` | «01 · Begriffe» | Bezeichnung | q535 |
+| 170 | `quellen` › `begriffe` | «Begriffe» | Bezeichnung | q530 |
+| 171 | `quellen` › `begriffe` | «Die Erklärungen sind für Angehörige vereinfacht.» | umformuliert | q531 |
+| 172 | `quellen` › `begriffe` | «In Fachliteratur und klinischer Praxis werden die Begriffe oft differenzierter verwendet.» | umformuliert | q532 |
+| 173 | `quellen` › `begriffe` | «Borderline-Persönlichkeitsstörung» | Bezeichnung | q278 |
+| 174 | `quellen` › `begriffe` | «Die Diagnose Borderline-Persönlichkeitsstörung kann unter anderem beschreiben: sehr starke oder schnell wechselnde Gefühle und Schwierigkeiten mit der inneren Stabilität, mit dem Bild von sich selbst oder mit Beziehungen.» | umformuliert, Wortlaut von `verstehen` | q280 |
+| 175 | `quellen` › `begriffe` | «Im DSM-5-TR ist sie eine eigenständige Persönlichkeitsstörung, in der ICD-11 ein «Borderline-Muster» (Code 6D11.5).» | umformuliert | q282 |
+| 176 | `quellen` › `begriffe` | «Die neun Kriterien im DSM-5-TR» | neu | q536 |
+| 177 | `quellen` › `begriffe` | «Verlauf und mögliche andere Erklärungen werden fachlich beurteilt.» | Satzzeichen (Satzteilung) | q289 |
+| 178 | `quellen` › `begriffe` | «Die Liste ermöglicht keine Selbst- oder Fremddiagnose.» | Satzzeichen | q289 |
+| 179 | `quellen` › `begriffe` | «Impulsivität in mindestens zwei potenziell selbstschädigenden Bereichen (z. B. Geldausgaben, Substanzkonsum, Sexualität, rücksichtsloses Fahren, Essanfälle)» | Satzzeichen | q293 |
+| 180 | `quellen` › `begriffe` | «Mehr dazu steht auf der Seite «Verstehen» im Abschnitt «Was die Diagnose beschreiben kann».» | umformuliert | q299 |
+| 181 | `quellen` › `begriffe` | «Welche Verantwortung gehört zu mir und welche nicht?»» | Satzzeichen | q311 |
+| 182 | `quellen` › `begriffe` | «Mehr dazu steht auf der Seite «Auf sich achten» im Abschnitt «Warnsignale für Überlastung».» | umformuliert | q312 |
+| 183 | `quellen` › `begriffe` | «Eine Struktur aus der DBT für klare Bitten und Grenzen: Describe (beschreiben), Express (ausdrücken), Assert (klar benennen), Reinforce (verstärken und positive Folgen benennen), Mindful (achtsam beim Ziel bleiben), Appear confident (klar auftreten), Negotiate (verhandeln).» | umformuliert | q319 |
+| 184 | `quellen` › `begriffe` | «Beispiel: Statt «Du hörst mir nie zu!»:» | Satzzeichen | q321 |
+| 185 | `quellen` › `begriffe` | ««Wenn ich spreche und du aufs Handy schaust (D), fühle ich mich unwichtig (E).» | Satzzeichen | q321 |
+| 186 | `quellen` › `begriffe` | «Ich wünsche mir, dass du das Handy weglegst (A).»» | Satzzeichen | q322 |
+| 187 | `quellen` › `begriffe` | «Mehr dazu steht auf der Seite «Grenzen» im Abschnitt «DEAR: ein Anliegen klar formulieren».» | umformuliert | q323 |
+| 188 | `quellen` › `begriffe` | «Dialektisch-Behaviorale Therapie (DBT)» | Bezeichnung | q327 |
+| 189 | `quellen` › `begriffe` | «Sie wurde von Marsha Linehan entwickelt und verbindet Verhaltenstherapie mit Achtsamkeitsübungen.» | umformuliert | q330 |
+| 190 | `quellen` › `begriffe` | ««Dialektisch» meint die Balance zwischen Akzeptanz (so, wie es ist) und Veränderung (was besser werden kann).» | umformuliert | q331 |
+| 191 | `quellen` › `begriffe` | «Beispiel: In der DBT lernen Betroffene konkrete Fertigkeiten (Skills) zur Emotionsregulation, Stresstoleranz, zwischenmenschlichen Fertigkeiten und Achtsamkeit.» | umformuliert | q333, q475 |
+| 192 | `quellen` › `begriffe` | «Mehr dazu steht auf der Seite «Behandlung und Ihre Rolle darin» im Abschnitt «Therapieformen».» | umformuliert | q334, q504, q537 |
+| 193 | `quellen` › `begriffe` | «Dissoziation kann sich etwa als Gefühl der Unwirklichkeit, als Abgetrenntsein von sich selbst oder als Erinnerungslücke zeigen.» | umformuliert | q340 |
+| 194 | `quellen` › `begriffe` | «Sie kann unter starker Anspannung oder im Zusammenhang mit belastenden Erfahrungen auftreten, hat aber unterschiedliche Formen und kommt auch ausserhalb von Borderline vor.» | umformuliert | q341 |
+| 195 | `quellen` › `begriffe` | «Beispiel: Betroffene beschreiben es als «neben sich stehen», «wie in Watte gepackt sein» oder «die Welt wirkt unwirklich».» | Satzzeichen | q343 |
+| 196 | `quellen` › `begriffe` | «Klar sagen, was für Sie möglich, sicher und tragbar ist.» | umformuliert | q374 |
+| 197 | `quellen` › `begriffe` | «Grenzen können beide Seiten schützen.» | Satzzeichen (Satzteilung) | q375 |
+| 198 | `quellen` › `begriffe` | «Sie brauchen weder Zustimmung noch ein Versprechen auf späteren Kontakt.» | Satzzeichen | q375 |
+| 199 | `quellen` › `begriffe` | ««Ich möchte dieses Gespräch so nicht weiterführen.» | Satzzeichen | q376 |
+| 200 | `quellen` › `begriffe` | «Ich beende es jetzt und entscheide später, ob und wann ich wieder ansprechbar bin.»» | Satzzeichen | q377 |
+| 201 | `quellen` › `begriffe` | «Mehr dazu steht auf der Seite «Grenzen».» | umformuliert | q378 |
+| 202 | `quellen` › `begriffe` | «Komorbidität ist der medizinische Begriff für Begleiterkrankungen.» | neu, Wortlaut von `diagnose` | q403, q405 |
+| 203 | `quellen` › `begriffe` | «Er bedeutet, dass eine Person gleichzeitig oder im Verlauf mehrere Erkrankungen hat.» | umformuliert, Wortlaut von `diagnose` | q405 |
+| 204 | `quellen` › `begriffe` | «Bei Borderline häufig, aber nicht bei allen: Depression, Angststörungen, PTBS, Essstörungen und Substanzgebrauchsstörungen.» | umformuliert | q406 |
+| 205 | `quellen` › `begriffe` | «Mehr dazu steht auf der Seite «Diagnose und Begleiterkrankungen» im Abschnitt «Begleiterkrankungen».» | umformuliert | q408 |
+| 206 | `quellen` › `begriffe` | «Unter hoher Anspannung kann sie vorübergehend schwerer zugänglich sein, auch bei manchen Menschen mit Borderline.» | Satzzeichen | q429 |
+| 207 | `quellen` › `begriffe` | «Sie lässt sich in der Therapie üben, etwa in der Mentalisierungsbasierten Therapie (MBT).» | umformuliert | q430 |
+| 208 | `quellen` › `begriffe` | «Vielleicht gibt es noch andere Erklärungen.» | Satzzeichen (Satzteilung) | q432 |
+| 209 | `quellen` › `begriffe` | «Ich kann nachfragen, statt mir sicher zu sein.»» | Satzzeichen | q432 |
+| 210 | `quellen` › `begriffe` | «Mehr dazu steht auf der Seite «Behandlung und Ihre Rolle darin» im Abschnitt «Therapieformen».» | umformuliert | q334, q504, q537 |
+| 211 | `quellen` › `begriffe` | «In der zehnjährigen Studie von Zanarini et al. (2010) bezeichnete Recovery eine mindestens zweijährige symptomatische Remission zusammen mit gutem sozialem und beruflichem Funktionieren.» | Satzzeichen (Satzteilung) | q439 |
+| 212 | `quellen` › `begriffe` | «50 % der 290 zu Beginn stationär behandelten Erwachsenen erreichten diesen Studienendpunkt mindestens einmal.» | Satzzeichen | q439 |
+| 213 | `quellen` › `begriffe` | «Mehr dazu steht auf der Seite «Genesung» im Abschnitt «Remission, Alltag und persönliche Recovery».» | umformuliert | q442 |
+| 214 | `quellen` › `begriffe` | «In der zehnjährigen Studie von Zanarini et al. (2010) erreichten 93 % der 290 zu Beginn stationär behandelten Erwachsenen mindestens einmal eine zweijährige Remission.» | Satzzeichen | q449 |
+| 215 | `quellen` › `begriffe` | «Mehr dazu steht auf der Seite «Genesung» im Abschnitt «Was die Forschung zeigt».» | umformuliert | q451 |
+| 216 | `quellen` › `begriffe` | «Bewusste Handlungen, um die eigene körperliche, emotionale und psychische Gesundheit zu erhalten.» | umformuliert | q458 |
+| 217 | `quellen` › `begriffe` | «Angehörige dürfen ihre Bedürfnisse und Grenzen schützen, unabhängig davon, wie viel Unterstützung sie geben können oder möchten.» | umformuliert | q459 |
+| 218 | `quellen` › `begriffe` | «Mehr dazu steht auf der Seite «Auf sich achten» im Abschnitt «Auch Ihr eigenes Leben zählt».» | Verweissatz | q461 |
+| 219 | `quellen` › `begriffe` | «SET» | Bezeichnung | q465 |
+| 220 | `quellen` › `begriffe` | «SET steht für Support (Unterstützung), Empathy (Empathie) und Truth (Wahrheit oder Realität).» | umformuliert | q467 |
+| 221 | `quellen` › `begriffe` | «Er ist kein allgemein empfohlenes oder verpflichtendes Schema.» | Satzzeichen (Satzteilung) | q469 |
+| 222 | `quellen` › `begriffe` | «Einzelne Elemente wie begrenzte Präsenz, vorsichtiges Spiegeln und Klarheit können je nach Situation nützlich sein.» | umformuliert | q469 |
+| 223 | `quellen` › `begriffe` | «Beispiel: Begrenzte Präsenz:» | Satzzeichen (Satzteilung) | q470 |
+| 224 | `quellen` › `begriffe` | ««Ich kann dir jetzt zehn Minuten zuhören.»» | Satzzeichen (Satzteilung) | q470 |
+| 225 | `quellen` › `begriffe` | «Offene Frage:» | Satzzeichen (Satzteilung) | q470 |
+| 226 | `quellen` › `begriffe` | ««Wie ist es gerade für dich?»» | Satzzeichen (Satzteilung) | q470 |
+| 227 | `quellen` › `begriffe` | «Klarheit:» | Satzzeichen (Satzteilung) | q470 |
+| 228 | `quellen` › `begriffe` | ««Danach beende ich das Gespräch für heute.»» | Satzzeichen | q470 |
+| 229 | `quellen` › `begriffe` | «Mehr dazu steht auf der Seite «Unterstützung finden» im Abschnitt «Bücher für Angehörige».» | umformuliert | q471 |
+| 230 | `quellen` › `begriffe` | «Sie sollen helfen, mit intensiven Gefühlen, Krisen und zwischenmenschlichen Spannungen anders umzugehen, ohne sofort auf selbstschädigende oder eskalierende Muster zurückzugreifen.» | umformuliert | q478 |
+| 231 | `quellen` › `begriffe` | «Beispiel: Den Kontakt der Füsse zum Boden wahrnehmen und einige Dinge im Raum benennen.» | umformuliert | q479 |
+| 232 | `quellen` › `begriffe` | «Skills sollten nicht verletzen und zur Person passen.» | Satzzeichen (Satzteilung) | q480 |
+| 233 | `quellen` › `begriffe` | «Geeignete Strategien können mit einer Fachperson vereinbart werden.» | Satzzeichen | q480 |
+| 234 | `quellen` › `begriffe` | «Mehr dazu steht auf der Seite «Auf sich achten» im Abschnitt «Wenn es gerade zu viel ist».» | umformuliert | q482 |
+| 235 | `quellen` › `begriffe` | «Übertragungsfokussierte Psychotherapie (TFP)» | Satzzeichen | q498 |
+| 236 | `quellen` › `begriffe` | «Die TFP arbeitet mit dem Erleben in der Beziehung zur Therapeutin oder zum Therapeuten: Innere Konflikte werden dort im «Hier und Jetzt» sichtbar und können bearbeitet werden.» | umformuliert | q501 |
+| 237 | `quellen` › `begriffe` | «Welche Therapie passt und angeboten wird, wird individuell mit einer Fachperson geklärt.» | umformuliert (3-1-K), Wortlaut des Bestands | q502 |
+| 238 | `quellen` › `begriffe` | «Beispiel: Wenn sich das Erleben der Therapeutin stark zwischen Sicherheit und Enttäuschung verändert, kann diese Erfahrung gemeinsam untersucht werden, ohne sie als Absicht oder Charakterzug zu bewerten.» | Satzzeichen | q503 |
+| 239 | `quellen` › `begriffe` | «Mehr dazu steht auf der Seite «Behandlung und Ihre Rolle darin» im Abschnitt «Therapieformen».» | umformuliert | q334, q504, q537 |
+| 240 | `quellen` › `begriffe` | ««Du sagst, dass dich meine verspätete Rückkehr verletzt hat.» | Satzzeichen | q513 |
+| 241 | `quellen` › `begriffe` | «Möchtest du erzählen, was daran für dich besonders schwierig war?»» | Satzzeichen | q514 |
+| 242 | `quellen` › `begriffe` | «Mehr dazu steht auf der Seite «Zugewandt und klar sprechen» im Abschnitt «Anerkennen, ohne zuzustimmen».» | umformuliert | q515 |
+| 243 | `quellen` › `einordnung` | «02 · Einordnung» | Bezeichnung | q535 |
+| 244 | `quellen` › `einordnung` | «Wie die Quellen eingeordnet sind» | Bezeichnung | q260 |
+| 245 | `quellen` › `einordnung` | «Wissenschaftliche Forschung und Leitlinien tragen medizinische Aussagen.» | Satzzeichen (Satzteilung), aus `/ueber-uns` | u40, u46 |
+| 246 | `quellen` › `einordnung` | «Praxis- und Angehörigenliteratur ergänzt Perspektiven, ohne denselben Evidenzstatus zu beanspruchen.» | Satzzeichen (Satzteilung), aus `/ueber-uns` | u40 |
+| 247 | `quellen` › `einordnung` | «Die Auswahl ist kuratiert, nicht vollständig bibliografisch.» | verschoben, wörtlich aus `/ueber-uns` | u56 |
+| 248 | `quellen` › `einordnung` | «Quellenangaben sind keine klinische oder schweizerisch-rechtliche Freigabe.» | umformuliert | q14 |
+| 249 | `quellen` › `einordnung` | «Auf jeder Themenseite steht am Ende der Block «Quellen zu dieser Seite».» | umformuliert | q15 |
+| 250 | `quellen` › `einordnung` | «Er nennt die Quellen in Kurzform und die Abschnitte, in denen sie verwendet werden.» | neu | q538 |
+| 251 | `quellen` › `forschung` | «03 · Forschung» | Bezeichnung | q535 |
+| 252 | `quellen` › `forschung` | «Studien und Forschung» | Satzzeichen | q18 |
+| 253 | `quellen` › `forschung` | «Eingeschlossen wurden sechs Studien mit insgesamt 465 Angehörigen.» | umformuliert | q91 |
+| 254 | `quellen` › `forschung` | «Fünf davon bezogen sich auf Borderline.» | umformuliert | q91 |
+| 255 | `quellen` › `forschung` | «Die Ergebnisse weisen auf Belastungen hin.» | Satzzeichen (Satzteilung) | q92 |
+| 256 | `quellen` › `forschung` | «Die Autorinnen und Autoren betonen zugleich erhebliche Forschungslücken.» | umformuliert | q92 |
+| 257 | `quellen` › `forschung` | «Verwendet auf:» | neu (seit 3-1-K auch aus den Bildlegenden berechnet) | q539 |
+| 258 | `quellen` › `forschung` | «In zwei grossen Stichproben mit zusammen 2398 Personen waren Borderline-Merkmale nach Korrektur für multiples Testen mit keinem der 152 untersuchten Strukturmasse verbunden.» | umformuliert | q75 |
+| 259 | `quellen` › `forschung` | «Das stützt eine zurückhaltende, nicht essentialistische Darstellung neurobiologischer Befunde.» | wieder aufgenommen (3-1-K), Wortlaut des Bestands | q76 |
+| 260 | `quellen` › `forschung` | «Randomisierte Studie zur ambulanten Mentalisierungsbasierten Therapie (MBT) mit 134 Teilnehmenden über 18 Monate.» | umformuliert | q60, q61 |
+| 261 | `quellen` › `forschung` | «Beide Bedingungen verbesserten sich.» | umformuliert | q62 |
+| 262 | `quellen` › `forschung` | «Die MBT-Gruppe zeigte einen steileren Rückgang von Suizidversuchen, Selbstverletzung, Spitalaufenthalten und selbstberichteten Symptomen.» | umformuliert | q62 |
+| 263 | `quellen` › `forschung` | «Cavicchioli et al. (2021). Scham, Metaanalyse.» | neu (Quelle von `beziehungen`) | q546 |
+| 264 | `quellen` › `forschung` | «Dazzi et al. (2014). Übersicht über mehrere Studien zur Frage, ob direktes Fragen nach Suizidgedanken diese verstärkt. PubMed.» | neu (Quelle von `krise`); Einordnung freigegeben (Z31-F-4), Zeile im Abgleich nachgetragen; Link «PubMed» neu (3-1-K) | q551, q568, q569 |
+| 265 | `quellen` › `forschung` | «Die Übersicht fand keine nachweisbare Zunahme von Suizidgedanken durch direktes Fragen.» | neu | q552 |
+| 266 | `quellen` › `forschung` | «Das garantiert keine bestimmte Wirkung im einzelnen Gespräch.» | neu, Wortlaut von `krise` | q552 |
+| 267 | `quellen` › `forschung` | «Über unterschiedliche Aufgaben hinweg zeigte sich kein einheitliches Aktivierungsmuster.» | umformuliert | q72 |
+| 268 | `quellen` › `forschung` | «Die begrenzten Befunde bei Emotionsaufgaben waren in Sensitivitätsanalysen nicht robust.» | Satzzeichen | q72 |
+| 269 | `quellen` › `forschung` | «Foxhall et al. (2019). Zurückweisungssensibilität, systematischer Review und Metaanalyse.» | neu (Quelle von `beziehungen`) | q547 |
+| 270 | `quellen` › `forschung` | «Ergänzt die Studie von Zanarini: 85 % Remission und 12 % Rückfälle über zehn Jahre.» | umformuliert | q45 |
+| 271 | `quellen` › `forschung` | «Belegt zudem anhaltende Beeinträchtigungen im sozialen Funktionieren.» | umformuliert | q46 |
+| 272 | `quellen` › `forschung` | «Remission ist nicht gleichbedeutend mit voller funktioneller Genesung.» | Satzzeichen (Satzteilung) | q46 |
+| 273 | `quellen` › `forschung` | «Studie zur psychoedukativen Familienarbeit bei Borderline.» | umformuliert | q51 |
+| 274 | `quellen` › `forschung` | «Wissenschaftliche Grundlage des später entwickelten Manuals «Family Guidelines» (Abschnitt «Versorgung und Praxismaterialien»).» | umformuliert | q52 |
+| 275 | `quellen` › `forschung` | «Übersichtsarbeit zu Diagnose, Verlauf, Behandlung und Versorgung.» | gekürzt | q48 |
+| 276 | `quellen` › `forschung` | «Leonards et al. (2024). Empathie, emotionale Ansteckung und Mitgefühl, Metaanalyse.» | neu (Quelle von `beziehungen`) | q548 |
+| 277 | `quellen` › `forschung` | «Beschreibt das biosoziale Modell und Behandlungsansätze.» | umformuliert | q66 |
+| 278 | `quellen` › `forschung` | «Primärquelle zu den Stufen der Validierung in der DBT.» | umformuliert | q68 |
+| 279 | `quellen` › `forschung` | «Forschung zu Burnout, nicht spezifisch für Borderline.» | umformuliert | q94 |
+| 280 | `quellen` › `forschung` | «Beleg für soziale Unterstützung als Schutz vor Überlastung und Erschöpfung.» | umformuliert | q95 |
+| 281 | `quellen` › `forschung` | «Hintergrund, auf den Seiten nicht einzeln zitiert» | neu | q539 |
+| 282 | `quellen` › `forschung` | «McLaren et al. (2022). Hypermentalisieren, metaanalytische Übersicht.» | neu (Quelle von `beziehungen`) | q549 |
+| 283 | `quellen` › `forschung` | «Der Zusammenhang belegt keine einfache Ursache.» | Satzzeichen (Satzteilung) | q31 |
+| 284 | `quellen` › `forschung` | «Entsprechende Erfahrungen sind weder notwendig noch hinreichend für die Diagnose.» | Satzzeichen | q31 |
+| 285 | `quellen` › `forschung` | «Übersicht zu Unterschieden zwischen Frauen und Männern bei Borderline.» | umformuliert | q25 |
+| 286 | `quellen` › `forschung` | «Klinische Stichproben werden häufig als von Frauen dominiert wahrgenommen.» | umformuliert | q26 |
+| 287 | `quellen` › `forschung` | «Bevölkerungsbezogene Studien berichten teils keine signifikanten Unterschiede.» | Satzzeichen | q26 |
+| 288 | `quellen` › `forschung` | «Erscheinungsbild, Begleiterkrankungen und Behandlungswege unterscheiden sich in Teilen.» | umformuliert | q27 |
+| 289 | `quellen` › `forschung` | «Die Forschung ist uneinheitlich.» | umformuliert (Satzteilung) | q27 |
+| 290 | `quellen` › `forschung` | «Sie ordnet Veränderungen von Gefühlen und Beziehungen als dynamische, kontextabhängige Prozesse ein.» | umformuliert | q82 |
+| 291 | `quellen` › `forschung` | «Daraus lässt sich kein allgemeingültiger Ablauf in festen Phasen ableiten.» | umformuliert | q82 |
+| 292 | `quellen` › `forschung` | «Sie stützt die allgemeine Einordnung affektiver Erkrankungen sowie von Angst-, Substanzgebrauchs- und Essstörungen, aber keine pauschale Häufigkeitszahl für alle Menschen mit Borderline.» | umformuliert | q34 |
+| 293 | `quellen` › `forschung` | «Metaanalyse zu akutem Stress, Arbeitsgedächtnis, Hemmung und geistiger Flexibilität.» | umformuliert | q78 |
+| 294 | `quellen` › `forschung` | «Sie begründet vorsichtige Aussagen über vorübergehend erschwertes Abwägen, nicht die Lokalisierung eines individuellen Zustands in einzelnen Hirnregionen.» | umformuliert | q79 |
+| 295 | `quellen` › `forschung` | «Übersicht über die klinische Längsschnittstudie CLPS zu Verlauf, Beeinträchtigungen und Behandlung von Persönlichkeitsstörungen.» | umformuliert | q84 |
+| 296 | `quellen` › `forschung` | «Keine bevölkerungsbezogene Studie zur Häufigkeit.» | umformuliert | q85 |
+| 297 | `quellen` › `forschung` | «Cochrane-Übersichtsarbeit zu 75 randomisierten Studien mit 4507 Teilnehmenden.» | umformuliert | q20 |
+| 298 | `quellen` › `forschung` | «Psychotherapie zeigte gegenüber Vergleichsbedingungen im Mittel Vorteile.» | Satzzeichen (Satzteilung) | q21 |
+| 299 | `quellen` › `forschung` | «Die Vertrauenswürdigkeit der Evidenz war für viele Ergebnisse jedoch niedrig oder sehr niedrig.» | Satzzeichen | q21 |
+| 300 | `quellen` › `forschung` | «Nur bei der Schwere der Borderline-Symptome wurde der vorab festgelegte Schwellenwert für klinische Relevanz erreicht.» | umformuliert | q22 |
+| 301 | `quellen` › `forschung` | «Sutherland et al. (2020). Unterstützung und Belastung von Angehörigen, systematischer Review.» | neu (Quelle von `beziehungen`) | q550 |
+| 302 | `quellen` › `forschung` | «Bevölkerungsbezogene Untersuchung von 2053 Erwachsenen von 18 bis 65 Jahren in Oslo, erhoben 1994 bis 1997 nach DSM-III-R. Die Häufigkeit von Borderline lag in dieser Stichprobe bei 0,7 %.» | umformuliert | q87 |
+| 303 | `quellen` › `forschung` | «Dieser Wert ist keine allgemeingültige oder Schweizer Angabe.» | umformuliert | q88 |
+| 304 | `quellen` › `forschung` | «Sie begründet die Nennung von ADHS als mögliche Begleiterkrankung, keine allgemeine Häufigkeitsangabe.» | umformuliert | q37 |
+| 305 | `quellen` › `forschung` | «Systematischer Review zur Wirkung langsamer Atmung auf Körper und Psyche.» | umformuliert | q97 |
+| 306 | `quellen` › `forschung` | «Beleg dafür, dass kurze Übungen akute Anspannung im Körper senken können.» | umformuliert | q98 |
+| 307 | `quellen` › `forschung` | «Zanarini et al. (2024).» | neu (Quelle von `genesung`); Einordnung entfällt (3-1-K) | q553, q554 |
+| 308 | `quellen` › `forschung` | «Grundlage für die Zehnjahresangaben auf der Seite «Genesung»: Von 290 zu Beginn stationär behandelten Erwachsenen erreichten 93 % mindestens einmal eine zweijährige symptomatische Remission und 50 % mindestens einmal die zweijährige, zusätzlich sozial und beruflich definierte Recovery.» | umformuliert | q39 |
+| 309 | `quellen` › `forschung` | «Spezialisierte Stichprobe, keine individuelle Prognose.» | Satzzeichen | q40 |
+| 310 | `quellen` › `forschung` | «Die Zehnjahreswerte von 93 % und 50 % stammen nicht aus dieser Publikation, sondern aus Zanarini et al. (2010).» | umformuliert | q43 |
+| 311 | `quellen` › `forschung` | «Klassische Studie zur Komorbidität über die Lebenszeit bei Borderline.» | umformuliert | q54 |
+| 312 | `quellen` › `forschung` | «Sie beschreibt sehr hohe Raten von Major Depression, Angststörungen und PTBS.» | umformuliert | q55 |
+| 313 | `quellen` › `forschung` | «Verlaufsstudie über sechs Jahre zur Komorbidität bei Borderline.» | umformuliert | q57 |
+| 314 | `quellen` › `forschung` | «Sie zeigt, dass die Komorbiditätsraten im Verlauf abnehmen.» | umformuliert | q58 |
+| 315 | `quellen` › `forschung` | «Das stützt die Perspektive auf Recovery.» | umformuliert (Satzteilung) | q58 |
+| 316 | `quellen` › `therapie` | «04 · Therapie» | Bezeichnung | q535 |
+| 317 | `quellen` › `therapie` | «Fachliteratur zu Therapie und Behandlung» | Bezeichnung | q99 |
+| 318 | `quellen` › `therapie` | «Aktuelle US-amerikanische Behandlungsleitlinie.» | gekürzt | q101 |
+| 319 | `quellen` › `therapie` | «Sie empfiehlt eine strukturierte Psychotherapie, die auf die zentralen Merkmale und die damit verbundenen Beeinträchtigungen ausgerichtet ist, ohne ein einzelnes Verfahren pauschal an erste Stelle zu setzen.» | umformuliert | q102 |
+| 320 | `quellen` › `therapie` | «Verwendet auf:» | neu (seit 3-1-K auch aus den Bildlegenden berechnet) | q540 |
+| 321 | `quellen` › `therapie` | «Grundlage der Mentalisierungsbasierten Therapie (MBT).» | umformuliert | q114 |
+| 322 | `quellen` › `therapie` | «Neuere Wirksamkeitsdaten: Bateman und Fonagy (2009), Abschnitt «Studien und Forschung».» | Verdichtung | q63, q115 |
+| 323 | `quellen` › `therapie` | «Hintergrund, auf den Seiten nicht einzeln zitiert» | neu | q540 |
+| 324 | `quellen` › `therapie` | «Grundlage für Inhalte zu Validierung und Kommunikation.» | umformuliert | q118 |
+| 325 | `quellen` › `therapie` | «Verbindet die klinische Perspektive und die Perspektive von Angehörigen.» | umformuliert | q120 |
+| 326 | `quellen` › `therapie` | «Standardwerk für die DBT-Behandlung.» | umformuliert | q112 |
+| 327 | `quellen` › `therapie` | «Standardmanual zu den DBT-Fertigkeiten: Achtsamkeit, Stresstoleranz, Emotionsregulation und zwischenmenschliche Fertigkeiten.» | umformuliert | q107 |
+| 328 | `quellen` › `therapie` | «Quelle für Radikale Akzeptanz und DEAR MAN.» | umformuliert | q108 |
+| 329 | `quellen` › `therapie` | «Die Website zeigt von DEAR MAN bewusst nur die ersten vier inhaltlichen Schritte.» | umformuliert | q109 |
+| 330 | `quellen` › `therapie` | «Standardwerk zu Verlauf, Recovery und Modellen mit mehreren Einflussfaktoren.» | umformuliert | q104 |
+| 331 | `quellen` › `therapie` | «Didaktische Anregung für Darstellungen von Verlauf und Genesung, nicht als wörtliches Zitat.» | umformuliert | q105 |
+| 332 | `quellen` › `therapie` | «In der klinischen Praxis breit verwendet, besonders in Trauma- und Körpertherapien.» | umformuliert | q122 |
+| 333 | `quellen` › `therapie` | «Die zugrunde liegenden neurobiologischen Mechanismen sind in der Forschung umstritten.» | umformuliert | q123 |
+| 334 | `quellen` › `therapie` | «Deshalb nur als didaktisches Modell mit Vorbehalt verwendbar.» | umformuliert | q123 |
+| 335 | `quellen` › `angehoerige` | «05 · Angehörige» | Bezeichnung | q535 |
+| 336 | `quellen` › `angehoerige` | «Literatur für Angehörige» | Bezeichnung | q124 |
+| 337 | `quellen` › `angehoerige` | «Nach dem Programm wurden unter anderem weniger Belastung und weniger depressive Symptome berichtet.» | umformuliert | q152 |
+| 338 | `quellen` › `angehoerige` | «Ohne randomisierte Kontrollgruppe lassen sich diese Veränderungen nicht sicher auf das Programm zurückführen.» | Satzzeichen (Satzteilung) | q153 |
+| 339 | `quellen` › `angehoerige` | «Die Studie belegt auch keine aktuelle Verfügbarkeit eines Angebots vor Ort.» | Satzzeichen | q153 |
+| 340 | `quellen` › `angehoerige` | «Verwendet auf:» | neu (seit 3-1-K auch aus den Bildlegenden berechnet) | q541 |
+| 341 | `quellen` › `angehoerige` | «Systematische Übersicht zu Angeboten für Familien und Betreuungspersonen.» | umformuliert | q143 |
+| 342 | `quellen` › `angehoerige` | «Die Ergebnisse sind ermutigend.» | Satzzeichen (Satzteilung) | q144 |
+| 343 | `quellen` › `angehoerige` | «Die Autorinnen und Autoren fordern jedoch methodisch stärkere Studien, bevor die Wirksamkeit verlässlich beurteilt werden kann.» | umformuliert | q144 |
+| 344 | `quellen` › `angehoerige` | «Randomisierte Studie mit 121 Angehörigen aus 82 Familien in Spanien, verglichen mit einem aktiven Angebot ähnlicher Dauer.» | umformuliert | q146, q147 |
+| 345 | `quellen` › `angehoerige` | «Zwischen den Bedingungen fanden sich keine statistisch signifikanten Unterschiede.» | Satzzeichen (Satzteilung) | q148 |
+| 346 | `quellen` › `angehoerige` | «Günstigere Mittelwerte in der Gruppe mit Family Connections belegen keine Überlegenheit.» | umformuliert | q148 |
+| 347 | `quellen` › `angehoerige` | «Psychoedukatives Programm für Angehörige.» | umformuliert | q139 |
+| 348 | `quellen` › `angehoerige` | «Studien berichten vielversprechende Verbesserungen bei Belastung, Trauer und Bewältigung.» | Satzzeichen (Satzteilung) | q140 |
+| 349 | `quellen` › `angehoerige` | «Wegen kleinerer Studien und begrenzter Vergleichsdaten bleibt die Evidenz vorläufig.» | Satzzeichen | q140 |
+| 350 | `quellen` › `angehoerige` | «Deutsche Ausgabe: Kösel, 2012.» | neu (3-1-K) | q570 |
+| 351 | `quellen` › `angehoerige` | «Nicht als diagnostische Grundlage oder pauschale Erklärung von Motiven verwenden.» | umformuliert | q137 |
+| 352 | `quellen` › `angehoerige` | «Hintergrund, auf den Seiten nicht einzeln zitiert» | neu | q541 |
+| 353 | `quellen` › `angehoerige` | «Englische Originalausgabe 1998.» | umformuliert | q129 |
+| 354 | `quellen` › `angehoerige` | «Historisch einflussreicher Ratgeber für Angehörige, keine wissenschaftliche Studie.» | gekürzt | q126 |
+| 355 | `quellen` › `angehoerige` | «Einzelne Beschreibungen verallgemeinern Beziehungsmuster und Motive.» | Satzzeichen (Satzteilung) | q127 |
+| 356 | `quellen` › `angehoerige` | «Krisenhinweise sind nicht als heutige Notfallanleitung zu verwenden.» | Satzzeichen (Satzteilung) | q127 |
+| 357 | `quellen` › `angehoerige` | «Englische 3. Auflage.» | gekürzt (Monat und ISBN entfallen) | q130 |
+| 358 | `quellen` › `angehoerige` | «Ratgeber- und Praxisliteratur, keine klinische Evidenzquelle und keine heutige Notfallanleitung.» | umformuliert | q132 |
+| 359 | `quellen` › `diagnostik` | «06 · Diagnostik» | Bezeichnung | q535 |
+| 360 | `quellen` › `diagnostik` | «Diagnostik und Klassifikation» | Satzzeichen | q154 |
+| 361 | `quellen` › `diagnostik` | «Die Borderline-Kriterien sind gegenüber dem DSM-5 von 2013 inhaltlich unverändert.» | umformuliert (Satzteilung; der zweite Teil steht seit 3-1-K wieder als eigener Satz) | q157 |
+| 362 | `quellen` › `diagnostik` | «Die Text Revision aktualisiert vor allem epidemiologische und kontextuelle Beschreibungen.» | wieder aufgenommen (3-1-K) (Satzteilung) | q157 |
+| 363 | `quellen` › `diagnostik` | «Verwendet auf:» | neu (seit 3-1-K auch aus den Bildlegenden berechnet) | q542 |
+| 364 | `quellen` › `diagnostik` | «AWMF-Registernummer 038-015, Version 2.0 vom 14.11.2022.» | umformuliert | q171 |
+| 365 | `quellen` › `diagnostik` | «Im AWMF-Register mit Gültigkeit bis 31.05.2026 geführt.» | gekürzt | q172 |
+| 366 | `quellen` › `diagnostik` | «Die angegebene Gültigkeit ist abgelaufen.» | Satzzeichen (Satzteilung) | q173 |
+| 367 | `quellen` › `diagnostik` | «Die Leitlinie ist hier eine datierte Quelle, keine aktuell gültige Leitlinie.» | umformuliert | q173 |
+| 368 | `quellen` › `diagnostik` | «Urteilsfähige minderjährige Patientinnen und Patienten haben ein Recht auf vertrauliche Behandlung ihres Gesundheitszustands.» | umformuliert | q169 |
+| 369 | `quellen` › `diagnostik` | «Die Urteilsfähigkeit hängt von der konkreten Situation und Fragestellung ab.» | umformuliert | q169 |
+| 370 | `quellen` › `diagnostik` | «Für stationäre Austritte in der Schweiz ab 1. Januar 2026 gilt die ICD-10-GM 2024.» | umformuliert («die» ergänzt) | q163, q164 |
+| 371 | `quellen` › `diagnostik` | «Diese Vorgabe für die stationäre Kodierung ist keine Aussage über jedes andere Dokumentationssystem.» | umformuliert | q166 |
+| 372 | `quellen` › `diagnostik` | «Standardverfahren für ein strukturiertes Interview zu Persönlichkeitsstörungen nach DSM-5.» | umformuliert | q176 |
+| 373 | `quellen` › `diagnostik` | «Es wird in der klinischen Diagnostik bei Verdacht auf Borderline eingesetzt.» | umformuliert | q177 |
+| 374 | `quellen` › `diagnostik` | «International verbreitetes Interviewverfahren zur Diagnose von Persönlichkeitsstörungen.» | umformuliert | q179 |
+| 375 | `quellen` › `diagnostik` | «Eine deutsche Version ist verfügbar.» | umformuliert | q180 |
+| 376 | `quellen` › `diagnostik` | «In der ICD-11 wird eine Persönlichkeitsstörung zuerst nach Schweregrad codiert.» | umformuliert | q159 |
+| 377 | `quellen` › `diagnostik` | «Dieses Modell ist nicht identisch mit der Diagnose nach DSM-5-TR.» | umformuliert | q161 |
+| 378 | `quellen` › `versorgung` | «07 · Versorgung» | Bezeichnung | q535 |
+| 379 | `quellen` › `versorgung` | «Versorgung und Praxismaterialien» | Bezeichnung | q181 |
+| 380 | `quellen` › `versorgung` | «Praxismanual für Angehörige, beruht auf der psychoedukativen Forschungsarbeit von Gunderson, Berkowitz und Ruiz-Sancho (1997).» | umformuliert | q192 |
+| 381 | `quellen` › `versorgung` | «NEABPD heisst seit 2024 BPD Alliance.» | umformuliert | q193 |
+| 382 | `quellen` › `versorgung` | «Verwendet auf:» | neu (seit 3-1-K auch aus den Bildlegenden berechnet) | q543 |
+| 383 | `quellen` › `versorgung` | «Schweizer Information zum Anordnungsmodell, zur Zulassung und zur Kostenübernahme psychologischer Psychotherapie.» | umformuliert | q183 |
+| 384 | `quellen` › `versorgung` | «Eine ärztliche Anordnung ist erforderlich.» | Satzzeichen (Satzteilung) | q184 |
+| 385 | `quellen` › `versorgung` | «Die reguläre Anordnungsbefugnis ist auf bestimmte Qualifikationen begrenzt.» | Satzzeichen | q184 |
+| 386 | `quellen` › `versorgung` | «Den konkreten Zugangsweg und die Kostenübernahme klären Sie mit Praxis und Krankenversicherung.» | umformuliert | q186 |
+| 387 | `quellen` › `versorgung` | «Hintergrund, auf den Seiten nicht einzeln zitiert» | neu | q543 |
+| 388 | `quellen` › `versorgung` | «Kanton Zürich. Anlaufstellen und Zweitmeinung.» | neu (Quelle von `behandlung`) | q555 |
+| 389 | `quellen` › `versorgung` | «Anlaufstellen und Hinweise zur Zweitmeinung.» | neu (Einordnung der neuen Quelle) | q555 |
+| 390 | `quellen` › `versorgung` | «Pro Juventute. Wenn ein Elternteil psychisch krank ist. projuventute.ch/de/eltern/familie-gesellschaft/psychisch-kranke-eltern.» | neu (Quelle von `rolle`) | q557 |
+| 391 | `quellen` › `versorgung` | «Versorgungsmaterial eines australischen Forschungs- und Versorgungsprogramms zu Persönlichkeitsstörungen, online frei verfügbar.» | umformuliert | q188, q189 |
+| 392 | `quellen` › `versorgung` | «Psychiatrische Universitätsklinik Zürich. Informationen für Angehörige. PUK Zürich.» | neu (Quelle von `behandlung`) | q556 |
+| 393 | `quellen` › `leitlinien` | «08 · Leitlinien» | Bezeichnung | q535 |
+| 394 | `quellen` › `leitlinien` | «Leitlinien, Gesundheitsinformationen und Hintergrund» | Bezeichnung | q194 |
+| 395 | `quellen` › `leitlinien` | «Kapitel 7.2 beschreibt Schlüsselfaktoren persönlicher Recovery.» | umformuliert | q211 |
+| 396 | `quellen` › `leitlinien` | «Die Leitlinie ist nicht spezifisch für Borderline.» | umformuliert (Satzteilung; der zweite Teil steht seit 3-1-K wieder als eigener Satz) | q212 |
+| 397 | `quellen` › `leitlinien` | «Auf der Seite «Genesung» dient sie als fachlicher Rahmen einer ausdrücklich redaktionellen Zusammenfassung.» | wieder aufgenommen (3-1-K) | q212 |
+| 398 | `quellen` › `leitlinien` | «Verwendet auf:» | neu (seit 3-1-K auch aus den Bildlegenden berechnet) | q544 |
+| 399 | `quellen` › `leitlinien` | «Bundesamt für Gesundheit. Psychische Gesundheit. BAG.» | neu (Quelle von `selbstfuersorge`) | q562 |
+| 400 | `quellen` › `leitlinien` | «Deutsche Dachorganisation der Angehörigen psychisch erkrankter Menschen.» | Satzzeichen (Satzteilung) | q246 |
+| 401 | `quellen` › `leitlinien` | «Ergänzende Praxisquelle zu Kindern als Angehörige.» | umformuliert | q247 |
+| 402 | `quellen` › `leitlinien` | «Hintergrund, auf den Seiten nicht einzeln zitiert» | neu | q544 |
+| 403 | `quellen` › `leitlinien` | «Übersichtsarbeit, die die Schwierigkeiten mit der Emotionsregulation bei Borderline nach Linehans biosozialem Modell in vier Komponenten gliedert.» | gekürzt | q220 |
+| 404 | `quellen` › `leitlinien` | «Fachliche Grundlage für die Darstellung der Anspannungskurve.» | umformuliert | q221 |
+| 405 | `quellen` › `leitlinien` | «Historisches Grundlagenwerk zur Verarbeitung von Angst und Bedrohung, nicht spezifisch für Borderline.» | umformuliert | q229 |
+| 406 | `quellen` › `leitlinien` | «Wegen der uneinheitlichen heutigen Befunde aus der Bildgebung wird es nicht mehr als zentrale Begründung für ein lokalisierendes Modell des Gehirns verwendet.» | umformuliert (3-1-K), Wortlaut des Bestands | q230 |
+| 407 | `quellen` › `leitlinien` | «Standardwerk zu Belastungen, Schutzfaktoren und Unterstützung von Kindern psychisch erkrankter Eltern, nicht spezifisch für Borderline.» | umformuliert | q240, q241 |
+| 408 | `quellen` › `leitlinien` | «Niederschwelliges Fach- und Ratgeberwerk mit Fokus auf die Kinder psychisch erkrankter Eltern.» | umformuliert | q243 |
+| 409 | `quellen` › `leitlinien` | «Zuletzt überprüft am 30. Juli 2024.» | umformuliert | q215 |
+| 410 | `quellen` › `leitlinien` | «Britische Leitlinie zu Erkennung und Behandlung.» | gekürzt | q214 |
+| 411 | `quellen` › `leitlinien` | «Die Überprüfung 2024 vereinfachte die Darstellung und änderte die Empfehlungen inhaltlich nicht.» | umformuliert | q216 |
+| 412 | `quellen` › `leitlinien` | «Empfehlung 1.3.4.5 lautet, für Frauen mit Borderline, bei denen die Verringerung wiederholter Selbstverletzung ein vorrangiges Ziel ist, ein umfassendes DBT-Programm in Betracht zu ziehen.» | umformuliert (3-1-K), Wortlaut des Bestands | q217 |
+| 413 | `quellen` › `leitlinien` | «Diese Eingrenzung beschreibt den Geltungsbereich der ursprünglichen Empfehlung.» | wieder aufgenommen (3-1-K) | q218 |
+| 414 | `quellen` › `leitlinien` | «Sie begründet keine allgemeine Rangfolge der Verfahren und schliesst einen Nutzen für andere Personen nicht aus.» | umformuliert (3-1-K) (Satzteilung) | q218 |
+| 415 | `quellen` › `leitlinien` | «Britische Leitlinie zur Information und zur praktischen, emotionalen und sozialen Unterstützung erwachsener Angehöriger, die Betreuung übernehmen.» | umformuliert | q203 |
+| 416 | `quellen` › `leitlinien` | «Nicht spezifisch für Borderline und nicht ohne Weiteres auf Schweizer Rechtsansprüche übertragbar.» | umformuliert | q204 |
+| 417 | `quellen` › `leitlinien` | «National Institute for Health and Care Excellence (NICE) (2022). Depression in adults (NG222). NICE guideline NG222.» | neu (Quelle von `diagnose`) | q558 |
+| 418 | `quellen` › `leitlinien` | «Britische Leitlinie zu Depression bei Erwachsenen, darunter Empfehlungen zur Einschätzung von Suizidalität durch Fachpersonen, zum Absetzen von Antidepressiva und zu Depression bei Persönlichkeitsstörungen.» | neu | q559 |
+| 419 | `quellen` › `leitlinien` | «Veröffentlicht am 29.06.2022.» | neu (3-1-K) | q571 |
+| 420 | `quellen` › `leitlinien` | «Risikoskalen oder Einstufungen in niedriges, mittleres oder hohes Risiko sollen nicht zur Vorhersage von Suizid oder erneuter Selbstverletzung verwendet werden.» | umformuliert | q208 |
+| 421 | `quellen` › `leitlinien` | «NHS. Breathing exercises for stress. nhs.uk.» | neu (Quelle von `selbstfuersorge`) | q563 |
+| 422 | `quellen` › `leitlinien` | «Grundlage der Atemhinweise auf der Seite «Auf sich achten».» | neu | q564 |
+| 423 | `quellen` › `leitlinien` | «NHS inform. Grounding exercises. NHS inform.» | neu (Quelle von `selbstfuersorge`) | q565 |
+| 424 | `quellen` › `leitlinien` | «Überträgt das «Window of Tolerance» in die körperorientierte Traumatherapie.» | gekürzt | q226 |
+| 425 | `quellen` › `leitlinien` | «Wie Siegel (1999) ein didaktisches Modell für die Anspannungskurve, keine Quelle speziell zu Borderline.» | umformuliert (3-1-K) («ein» ergänzt) | q227 |
+| 426 | `quellen` › `leitlinien` | «Prägt das Konzept des «Window of Tolerance», des Bereichs, in dem Menschen Belastung verarbeiten können.» | umformuliert | q223 |
+| 427 | `quellen` › `leitlinien` | «Didaktisches Modell für die Anspannungskurve, nicht spezifisch für Borderline.» | umformuliert | q224 |
+| 428 | `quellen` › `leitlinien` | «Bericht vom März 2024.» | gekürzt | q232 |
+| 429 | `quellen` › `leitlinien` | «Befragung vom November 2023 mit 2042 ausgewerteten Personen aus der Deutschschweiz und der französischsprachigen Schweiz, Opt-in-Online-Panel mit Gewichtung nach Geschlecht, Alter und Bildung.» | wieder aufgenommen (3-1-K) («Opt-in»), sonst umformuliert | q233, q234, q235, q236 |
+| 430 | `quellen` › `leitlinien` | «Die Ergebnisse sind innerhalb dieses Geltungsbereichs und der Grenzen einer solchen Befragung einzuordnen.» | Satzzeichen | q236 |
+| 431 | `quellen` › `leitlinien` | «Schweizer Kontextquelle, nicht spezifisch für Borderline.» | umformuliert | q238 |
+| 432 | `quellen` › `leitlinien` | «Vivyan, C. STOPP. Getselfhelp, deutschsprachige angepasste Fassung.» | neu (Quelle von `selbstfuersorge`) | q566 |
+| 433 | `quellen` › `leitlinien` | «WHO Europa (2025). Caring for yourself while caring for others. WHO Regionalbüro für Europa.» | neu (Quelle von `selbstfuersorge`) | q561 |
+| 434 | `quellen` › `leitlinien` | «World Health Organization. Doing What Matters in Times of Stress. WHO.» | neu (Quelle von `rolle`) | q560 |
+| 435 | `quellen` › `leitlinien` | «Die fünf Bereiche auf der Seite «Auf sich achten» sind eine eigene Ordnung und kein Kategoriensystem der WHO.» | umformuliert | q201 |
+| 436 | `quellen` › `schweiz` | «09 · Schweiz» | Bezeichnung | q535 |
+| 437 | `quellen` › `schweiz` | «Professionelle Sprachvermittlung im Schweizer Gesundheitsbereich.» | Satzzeichen (Satzteilung) | q258 |
+| 438 | `quellen` › `schweiz` | «Die Finanzierung ist kantonal unterschiedlich.» | umformuliert | q258 |
+| 439 | `quellen` › `schweiz` | «Verwendet auf:» | neu (seit 3-1-K auch aus den Bildlegenden berechnet) | q545 |
+| 440 | `quellen` › `schweiz` | «Eidgenössisches Büro für die Gleichstellung von Frau und Mann (EBG). Informationen zu Schutz bei Gewalt.» | neu (Quelle von `grenzen`) | q567 |
+| 441 | `quellen` › `schweiz` | «Fachempfehlung für professionelle Dolmetschung und gegen den Einsatz von Kindern als Dolmetschende.» | umformuliert | q256 |
+| 442 | `quellen` › `schweiz` | «Kein gesetzliches Verbot und kein Anspruch auf Kostenübernahme.» | umformuliert | q256 |
+| 443 | `quellen` › `schweiz` | «Allgemeiner Schutz bei Gewalt und Bedrohung für Betroffene und Kinder, kein Ablauf speziell für Borderline.» | umformuliert | q254 |
+| 444 | `quellen` › `schweiz` | «Art. 307, 314c und 314d betreffen Kindesschutzmassnahmen, Melderechte und Meldepflichten bestimmter Rollen.» | umformuliert | q250 |
+| 445 | `quellen` › `schweiz` | «Einzelfall und kantonales Recht sind gesondert zu klären.» | umformuliert | q252 |
+
+**`ueber`**
+
+| Nr. | Ort | Satz | Art | Abgleich |
+| ---: | --- | --- | --- | --- |
+| 446 | `ueber` › `kopf` | «Warum es diese Website gibt, nach welchen Grundsätzen die Texte geschrieben sind, wie zugänglich sie ist und wie Sie eine Rückmeldung geben können.» | umformuliert | u2, u6 |
+| 447 | `ueber` › `kopf` | «Wer sie herausgibt und welche Daten bei Ihrem Besuch anfallen, steht auf der Seite «Impressum und Datenschutz».» | Verweissatz | u359 |
+| 448 | `ueber` › `kapitel` | «Auf dieser Seite» | Bezeichnung | u5 |
+| 449 | `ueber` › `kapitel` | «Warum» | Bezeichnung | u5 |
+| 450 | `ueber` › `kapitel` | «Grundsätze» | Bezeichnung | u5 |
+| 451 | `ueber` › `kapitel` | «Rückmeldung» | Bezeichnung | u5 |
+| 452 | `ueber` › `warum` | «01 · Warum» | Bezeichnung | u360 |
+| 453 | `ueber` › `warum` | «Warum es diese Website gibt» | Bezeichnung | u8 |
+| 454 | `ueber` › `warum` | «Wenn ein nahestehender Mensch eine Borderline-Persönlichkeitsstörung hat, stehen Angehörige oft vor einer doppelten Herausforderung.» | umformuliert (3-1-K) (Satz geteilt) | u9 |
+| 455 | `ueber` › `warum` | «Sie wollen helfen und fühlen sich zugleich hilflos, sie lieben und sind erschöpft, sie verstehen nicht, was geschieht, und haben Angst, etwas falsch zu machen.» | umformuliert (3-1-K) (Satz geteilt) | u9, u10, u11 |
+| 456 | `ueber` › `warum` | «Er ist eine Metapher für Belastung, keine wissenschaftliche Erklärung der betroffenen Person oder ihrer Motive.» | umformuliert | u13 |
+| 457 | `ueber` › `warum` | «Diese Website möchte Angehörigen fachlich fundierte Orientierung geben.» | Satzzeichen (Satzteilung) | u14 |
+| 458 | `ueber` › `warum` | «Es geht nicht darum, eine Erkrankung von aussen zu «lösen».» | umformuliert | u14 |
+| 459 | `ueber` › `warum` | «Es geht darum, Dynamiken besser einzuordnen, tragfähiger zu reagieren und sich selbst nicht zu verlieren.» | umformuliert | u14 |
+| 460 | `ueber` › `warum` | «Die Website verbindet dafür wissenschaftliche Quellen, klinische Erfahrung aus der Angehörigenarbeit und praktische Hilfen für Gesprächs-, Krisen- und Belastungssituationen.» | umformuliert | u112 |
+| 461 | `ueber` › `warum` | «Die Fachstelle bietet Beratung und Psychoedukation, keine Krisenintervention.» | wieder aufgenommen (3-1-K), Wortlaut der Leitlinie «Sprache und Ton» | u122 |
+| 462 | `ueber` › `grundsaetze` | «02 · Grundsätze» | Bezeichnung | u360 |
+| 463 | `ueber` › `grundsaetze` | «Grundsätze der Texte» | Bezeichnung | u15 |
+| 464 | `ueber` › `grundsaetze` | «Fachlich fundiert» | Bezeichnung | u17 |
+| 465 | `ueber` › `grundsaetze` | «Medizinische und therapeutische Aussagen stützen sich auf wissenschaftliche Quellen und bewährte Therapieansätze wie die Dialektisch-Behaviorale Therapie (DBT).» | umformuliert | u18 |
+| 466 | `ueber` › `grundsaetze` | «Orientierungstexte sind mit klinischer Erfahrung aus der Angehörigenarbeit ergänzt.» | umformuliert | u19 |
+| 467 | `ueber` › `grundsaetze` | «Entstigmatisierend und perspektivenbewusst» | Bezeichnung | u20 |
+| 468 | `ueber` › `grundsaetze` | «Die Texte beschreiben konkrete Situationen, ohne Motive, Gefährlichkeit oder Beziehungsfähigkeit aus Borderline abzuleiten.» | umformuliert | u22 |
+| 469 | `ueber` › `grundsaetze` | «Auf sich achten» | Bezeichnung, Wortlaut von `index` | u25 |
+| 470 | `ueber` › `grundsaetze` | «Grenzen und Unterstützung sind auch dann berechtigt, wenn sie der betroffenen Person nicht unmittelbar nützen.» | umformuliert | u27 |
+| 471 | `ueber` › `grundsaetze` | «Praxisnah» | Bezeichnung | u28 |
+| 472 | `ueber` › `grundsaetze` | «Deshalb verbinden die Texte Hintergrundwissen mit Orientierung für reale Gesprächs-, Krisen- und Belastungssituationen.» | umformuliert | u30 |
+| 473 | `ueber` › `grundsaetze` | «Wissenschaftliche Forschung und Leitlinien tragen medizinische Aussagen.» | Satzzeichen (Satzteilung) | u40 |
+| 474 | `ueber` › `grundsaetze` | «Praxis- und Angehörigenliteratur ergänzt Perspektiven, ohne denselben Evidenzstatus zu beanspruchen.» | Satzzeichen (Satzteilung) | u40 |
+| 475 | `ueber` › `grundsaetze` | «Wie die Quellen eingeordnet sind, steht auf der Seite «Quellen und Begriffe» im Abschnitt «Wie die Quellen eingeordnet sind».» | Verweissatz | u130 |
+| 476 | `ueber` › `grundsaetze` | «Antworten auf häufige Fragen von Angehörigen stehen auf der Seite «Häufige Fragen».» | Verweissatz | u361 |
+| 477 | `ueber` › `barrierefreiheit` | «03 · Barrierefreiheit» | Bezeichnung | u360 |
+| 478 | `ueber` › `barrierefreiheit` | «Diese Website soll für alle Menschen zugänglich sein, unabhängig von körperlichen, sensorischen oder kognitiven Einschränkungen.» | umformuliert | u272 |
+| 479 | `ueber` › `barrierefreiheit` | «Sie orientiert sich an den Web Content Accessibility Guidelines (WCAG) 2.2, Stufe AA.» | umformuliert | u275 |
+| 480 | `ueber` › `barrierefreiheit` | «Das ist ein Ziel.» | umformuliert | u276 |
+| 481 | `ueber` › `barrierefreiheit` | «Eine vollständige Konformitätsprüfung steht aus.» | umformuliert | u277 |
+| 482 | `ueber` › `barrierefreiheit` | «Eine vollständige Konformität wird deshalb nicht erklärt.» | umformuliert | u277 |
+| 483 | `ueber` › `barrierefreiheit` | «Umgesetzt sind unter anderem:» | neu (3-1-K) | u362 |
+| 484 | `ueber` › `barrierefreiheit` | «ein Link, der direkt zum Hauptinhalt springt» | umformuliert | u288 |
+| 485 | `ueber` › `barrierefreiheit` | «Bedienung mit der Tastatur und sichtbare Markierung des Fokus» | umformuliert | u289 |
+| 486 | `ueber` › `barrierefreiheit` | «Darstellungen für schmale und breite Bildschirme» | umformuliert | u292 |
+| 487 | `ueber` › `barrierefreiheit` | «eine klare Struktur mit Überschriften und Landmarken» | umformuliert | u293 |
+| 488 | `ueber` › `barrierefreiheit` | «keine Bewegung, die von selbst startet, und Rücksicht auf die Einstellung «Bewegung reduzieren»» | umformuliert | u295 |
+| 489 | `ueber` › `barrierefreiheit` | «Die vollständige Prüfung mit Screenreadern wie VoiceOver und NVDA sowie auf realen Mobilgeräten steht aus.» | umformuliert | u298 |
+| 490 | `ueber` › `barrierefreiheit` | «Wenn Sie auf Barrieren stossen oder Verbesserungsvorschläge haben, schreiben Sie bitte an angehoerigenarbeit@pukzh.ch.» | umformuliert | u306, u308 |
+| 491 | `ueber` › `barrierefreiheit` | «Stand: 11.10.2026» | umformuliert | u311, u312 |
+| 492 | `ueber` › `rueckmeldung` | «04 · Rückmeldung» | Bezeichnung | u360 |
+| 493 | `ueber` › `rueckmeldung` | «Ihre Erfahrungen und Anregungen helfen, diese Website für andere Angehörige hilfreicher zu gestalten.» | Verdichtung | u80, u323 |
+| 494 | `ueber` › `rueckmeldung` | «Rückmeldungen nimmt die Fachstelle per E-Mail entgegen, ob Lob, Verbesserungsvorschläge oder Hinweise auf Fehler: angehoerigenarbeit@pukzh.ch» | Verdichtung | u79, u326 |
+| 495 | `ueber` › `rueckmeldung` | «Besonders hilfreich sind Hinweise darauf:» | Bezeichnung | u336 |
+| 496 | `ueber` › `rueckmeldung` | «welche Inhalte, Formulierungen oder Darstellungen für Sie hilfreich oder entlastend waren» | umformuliert | u338 |
+| 497 | `ueber` › `rueckmeldung` | «welche Fragen offen geblieben sind oder welche Inhalte Sie vermissen» | umformuliert | u340 |
+| 498 | `ueber` › `rueckmeldung` | «wo es technische Probleme, unklare Stellen oder fehlerhafte Angaben gibt» | umformuliert | u342 |
+| 499 | `ueber` › `rueckmeldung` | «Bitte senden Sie keine Diagnosen, Gesundheitsdaten oder identifizierenden Angaben über andere Personen.» | gekürzt gegenüber `/datenschutz` («für Website-Feedback» entfällt); wörtlich in `/feedback` (Z31-W1-1) | u230, u329 |
+| 500 | `ueber` › `rueckmeldung` | «Eine zeitnahe Antwort wird nicht zugesichert.» | gekürzt («Es ist kein Notfalldienst» entfällt; Zuständigkeitsverweis in der Fusszeile) | u332 |
+
+**`impressum-datenschutz`**
+
+| Nr. | Ort | Satz | Art | Abgleich |
+| ---: | --- | --- | --- | --- |
+| 501 | `impressum-datenschutz` › `kopf` | «Über diese Website» | Bezeichnung (Kicker der Vorlage des Starters) | u363 |
+| 502 | `impressum-datenschutz` › `kopf` | «Impressum und Datenschutz» | neu | u363 |
+| 503 | `impressum-datenschutz` › `kopf` | «Wer diese Website herausgibt und welche Daten bei Ihrem Besuch anfallen.» | Verdichtung | u94, u164 |
+| 504 | `impressum-datenschutz` › `impressum` | «Herausgeberin» | neu | u364 |
+| 505 | `impressum-datenschutz` › `impressum` | «Fachstelle Angehörigenarbeit, Psychiatrische Universitätsklinik Zürich» | neu | u365 |
+| 506 | `impressum-datenschutz` › `impressum` | «Inhalt und Umsetzung» | Bezeichnung | u95 |
+| 507 | `impressum-datenschutz` › `impressum` | «Ch. Egger, Fachstelle Angehörigenarbeit» | umformuliert | u71, u96 |
+| 508 | `impressum-datenschutz` › `impressum` | «Kontakt» | Bezeichnung | u106 |
+| 509 | `impressum-datenschutz` › `impressum` | «Die Website ist ein Angebot der Fachstelle Angehörigenarbeit, kein offizielles Angebot der Psychiatrischen Universitätsklinik Zürich.» | umformuliert | u73, u98 |
+| 510 | `impressum-datenschutz` › `impressum` | «Warum es sie gibt und nach welchen Grundsätzen die Texte geschrieben sind, steht auf der Seite «Über diese Website».» | Verweissatz | u366 |
+| 511 | `impressum-datenschutz` › `impressum` | «Die Website gibt allgemeine Informationen für Angehörige.» | umformuliert | u66 |
+| 512 | `impressum-datenschutz` › `impressum` | «Sie ersetzt keine individuelle Abklärung, Beratung oder Behandlung.» | Verdichtung | u65, u121 |
+| 513 | `impressum-datenschutz` › `impressum` | «Die Inhalte wurden mit grösster Sorgfalt erstellt.» | umformuliert | u119 |
+| 514 | `impressum-datenschutz` › `impressum` | «Für externe Links wird keine Haftung übernommen.» | wieder aufgenommen (3-1-K), Wortlaut des Bestands | u125 |
+| 515 | `impressum-datenschutz` › `impressum` | «Für den Inhalt der verlinkten Seiten sind ausschliesslich deren Betreiber verantwortlich.» | wieder aufgenommen (3-1-K), Wortlaut des Bestands | u126, u236 |
+| 516 | `impressum-datenschutz` › `impressum` | «Kopien dieser Seiten sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.» | umformuliert | u148 |
+| 517 | `impressum-datenschutz` › `impressum` | «Die Inhalte dürfen im Rahmen der Angehörigenberatung und für den persönlichen Gebrauch verwendet werden.» | wieder aufgenommen (3-1-K) | u149 |
+| 518 | `impressum-datenschutz` › `datenschutz` | «Diese Website erhebt so wenige Daten wie möglich.» | Verdichtung | u163, u193 |
+| 519 | `impressum-datenschutz` › `datenschutz` | «Sie unterliegt dem Bundesgesetz über den Datenschutz (DSG) der Schweiz.» | umformuliert | u176, u177 |
+| 520 | `impressum-datenschutz` › `datenschutz` | «Keine Cookies, keine Auswertung» | Bezeichnung | u215, u220 |
+| 521 | `impressum-datenschutz` › `datenschutz` | «Die Website setzt keine Cookies und verwendet keine Dienste, die Besuche auswerten oder Werbung zeigen.» | Verdichtung | u190, u194, u217, u222 |
+| 522 | `impressum-datenschutz` › `datenschutz` | «Sie bindet keine Inhalte sozialer Netzwerke ein.» | umformuliert | u225 |
+| 523 | `impressum-datenschutz` › `datenschutz` | «Keine Dienste anderer Anbieter» | neu | u367 |
+| 524 | `impressum-datenschutz` › `datenschutz` | «Schriften, Bilder und Skripte liegen auf demselben Server wie die Seiten.» | neu | u368 |
+| 525 | `impressum-datenschutz` › `datenschutz` | «Beim Lesen gehen keine Daten an andere Anbieter als den Dienst, der die Website ausliefert (siehe «Protokolle beim Betrieb»).» | neu (3-1-K) | u369 |
+| 526 | `impressum-datenschutz` › `datenschutz` | «Protokolle beim Betrieb» | Bezeichnung | u181, u197 |
+| 527 | `impressum-datenschutz` › `datenschutz` | «Die Website wird über den Dienst Netlify (Netlify, Inc., USA) ausgeliefert.» | umformuliert | u183, u184 |
+| 528 | `impressum-datenschutz` › `datenschutz` | «Beim Aufruf einer Seite fallen bei Netlify technisch notwendige Angaben an.» | umformuliert (3-1-K) | u179, u185, u199, u206, u224 |
+| 529 | `impressum-datenschutz` › `datenschutz` | «Nach Angaben von Netlify können dazu insbesondere IP-Adresse, Gerätetyp, Betriebssystem sowie Browsertyp und -version gehören.» | wieder aufgenommen (3-1-K), Wortlaut des Bestands | u186, u200 bis u205 |
+| 530 | `impressum-datenschutz` › `datenschutz` | «Diese Angaben können ausserhalb der Schweiz bearbeitet werden, insbesondere in den USA.» | wieder aufgenommen (3-1-K) | u187 |
+| 531 | `impressum-datenschutz` › `datenschutz` | «Frühere Einträge im Browser» | Bezeichnung | u208 |
+| 532 | `impressum-datenschutz` › `datenschutz` | «Eine frühere Fassung dieser Website bot ein Werkzeug für persönliche Einträge an.» | umformuliert | u210 |
+| 533 | `impressum-datenschutz` › `datenschutz` | «Falls Sie es genutzt haben, können Ihre Einträge noch lokal im Browser auf Ihrem Gerät liegen.» | umformuliert | u211 |
+| 534 | `impressum-datenschutz` › `datenschutz` | «Sie wurden nicht an die Website übertragen.» | umformuliert | u214, u250 |
+| 535 | `impressum-datenschutz` › `datenschutz` | «Entfernen können Sie sie in den Einstellungen Ihres Browsers.» | Verdichtung | u212, u213, u251 |
+| 536 | `impressum-datenschutz` › `datenschutz` | «E-Mail an die Fachstelle» | Bezeichnung | u226 |
+| 537 | `impressum-datenschutz` › `datenschutz` | «Wenn Sie der Fachstelle schreiben, verwendet sie Ihre Angaben, um Ihnen zu antworten.» | Verdichtung | u229 |
+| 538 | `impressum-datenschutz` › `datenschutz` | «Wenn Sie eine Nachricht senden, werden Absenderadresse, Inhalt und gegebenenfalls Anhänge über Ihren E-Mail-Dienst an den empfangenden Dienst übermittelt.» | wieder aufgenommen (3-1-K), Wortlaut des Bestands | u229, u191 |
+| 539 | `impressum-datenschutz` › `datenschutz` | «Gewöhnliche E-Mails sind nicht durchgehend verschlüsselt.» | neu | u370 |
+| 540 | `impressum-datenschutz` › `datenschutz` | «Schreiben Sie nur, was Sie auf diesem Weg mitteilen möchten.» | neu | u371 |
+| 541 | `impressum-datenschutz` › `datenschutz` | «Links auf andere Websites» | Bezeichnung | u233 |
+| 542 | `impressum-datenschutz` › `datenschutz` | «Wenn Sie einem Link auf eine andere Website folgen, gelten dort deren Regeln zum Datenschutz.» | umformuliert | u235, u237 |
+| 543 | `impressum-datenschutz` › `datenschutz` | «Je nach anwendbarem Recht und unter den jeweiligen gesetzlichen Voraussetzungen können Sie insbesondere Auskunft über Ihre Daten verlangen, ihre Berichtigung oder Löschung verlangen und ihrer Bearbeitung widersprechen.» | umformuliert | u245, u246, u247, u248 |
+| 544 | `impressum-datenschutz` › `datenschutz` | «Änderungen» | Bezeichnung | u252 |
+| 545 | `impressum-datenschutz` › `datenschutz` | «Diese Angaben können angepasst werden, wenn sich rechtliche Anforderungen oder die Website ändern.» | umformuliert | u254 |
+| 546 | `impressum-datenschutz` › `datenschutz` | «Es gilt die jeweils aktuelle Fassung.» | umformuliert | u255 |
+| 547 | `impressum-datenschutz` › `datenschutz` | «Fragen zum Datenschutz: angehoerigenarbeit@pukzh.ch» | umformuliert | u195 |
+| 548 | `impressum-datenschutz` › `datenschutz` | «Stand: 12.10.2026» | umformuliert (3-1-K) | u258 |
+
+**Andere Seiten (nur Sätze und Angaben aus dem Korrekturauftrag 3-1-K)**
+
+| Nr. | Ort | Satz | Art | Abgleich |
+| ---: | --- | --- | --- | --- |
+| 549 | `index` › `haltung` | «Antworten auf häufige Fragen stehen auf der Seite «Häufige Fragen».» | Verweissatz (3-1-K, V1) | `index.md` Nr. 260 |
+| 550 | `index` › `beratung` | «Wer die Website herausgibt und welche Grundsätze für die Texte gelten, steht auf der Seite «Über diese Website».» | Verweissatz (3-1-K, V2) | `index.md` Nr. 261 |
+| 551 | `verstehen` › `quellen` | «Vollständige Angaben zu den Quellen stehen auf der Seite «Quellen und Begriffe».» | Verweissatz (3-1-K), gleicher Satz wie auf `fragen` | `verstehen.md` Nr. 550 |
+| 552 | `beziehungen` › `quellen` | «Vollständige Angaben zu den Quellen stehen auf der Seite «Quellen und Begriffe».» | Verweissatz (3-1-K), gleicher Satz wie auf `fragen` | `beziehungen.md` Nr. 250 |
+| 553 | `rolle` › `quellen` | «Vollständige Angaben zu den Quellen stehen auf der Seite «Quellen und Begriffe».» | Verweissatz (3-1-K), gleicher Satz wie auf `fragen` | `rolle.md` Nr. 770 |
+| 554 | `grenzen` › `quellen` | «Vollständige Angaben zu den Quellen stehen auf der Seite «Quellen und Begriffe».» | Verweissatz (3-1-K), gleicher Satz wie auf `fragen` | `grenzen.md` Nr. 714 |
+| 555 | `diagnose` › `quellen` | «Vollständige Angaben zu den Quellen stehen auf der Seite «Quellen und Begriffe».» | Verweissatz (3-1-K), gleicher Satz wie auf `fragen` | `diagnose.md` Nr. 405 |
+| 556 | `behandlung` › `quellen` | «Vollständige Angaben zu den Quellen stehen auf der Seite «Quellen und Begriffe».» | Verweissatz (3-1-K), gleicher Satz wie auf `fragen` | `behandlung.md` Nr. 322 |
+| 557 | `kommunizieren` › `quellen` | «Vollständige Angaben zu den Quellen stehen auf der Seite «Quellen und Begriffe».» | Verweissatz (3-1-K), gleicher Satz wie auf `fragen` | `kommunizieren.md` Nr. 981 |
+| 558 | `krise` › `quellen` | «Vollständige Angaben zu den Quellen stehen auf der Seite «Quellen und Begriffe».» | Verweissatz (3-1-K), gleicher Satz wie auf `fragen` | `krise.md` Nr. 313 |
+| 559 | `selbstfuersorge` › `quellen` | «Vollständige Angaben zu den Quellen stehen auf der Seite «Quellen und Begriffe».» | Verweissatz (3-1-K), gleicher Satz wie auf `fragen` | `selbstfuersorge.md` Nr. 673 |
+| 560 | `genesung` › `quellen` | «Vollständige Angaben zu den Quellen stehen auf der Seite «Quellen und Begriffe».» | Verweissatz (3-1-K), gleicher Satz wie auf `fragen` | `genesung.md` Nr. 508 |
+| 561 | `grenzen` › `quellen` | «Linehan (2015)» | Kurzangabe (3-1-K), Jahr wie in der Legende der Abbildung DEAR (Z31-F-22) | `grenzen.md` Nr. 429, 430 (Bemerkung) |
+| 562 | `unterstuetzung` › `buecher` | «Paul T. Mason und Randi Kreger · Balance Buch + Medien Verlag, 2014» | umformuliert (3-1-K), Angabe wie auf `quellen` (S-Nr. 15) | `unterstuetzung.md` Nr. 283 |
+
+### Korrektur 3-1-K: Entscheide der bauenden Sitzung (zur Prüfung)
+
+Struktur und Technik, wo der Auftrag offen lässt, wie etwas umgesetzt wird. Kein Wortlaut ist dadurch geändert.
+
+1. **Generator von «Verwendet auf» im Repository** (Abschnitt 4 c): Das Skript von Etappe 3-1 lag nicht im Repository. `abgleich/verwendet-auf.mjs` rechnet dasselbe nach (mit `--ohne-legenden` 0 Abweichungen zum Stand von Etappe 3-1) und liest zusätzlich `figcaption` und Absätze mit «Bezugspunkte:» oder «Grundlage:». Damit kann die Nachprüfung die Angaben selbst nachrechnen. Kurzangaben, die nicht über Nachname und Jahr eindeutig sind (NICE, WHO, BAG, AWMF, APA, Mason und Kreger), ordnet eine Tabelle im Skript zu.
+2. **Hoffman et al. (2005) auf `verstehen`** (Abschnitt 4 c): Die Legende «Grundlage: Linehan (1993); Hoffman et al. (2005).» stammt aus dem Handout `spaltung` («Hoffman, P. D. et al. (2005)»), und `verstehen.md` des Bestands verlinkt «Hoffman et al. (2005) zu Family Connections». Das ist derselbe Titel wie der Eintrag auf `quellen`, der dort «Hoffman, P. D. et al. (2005)» heisst (der Auftrag schreibt «Hoffman, P. D. (2005)»; einen Eintrag ohne «et al.» gibt es nicht). Zugeordnet; der Eintrag nennt jetzt auch «Verstehen».
+3. **DOIs als Text** (Abschnitt 4 b): «DOI: …» steht wie im Bestand als Text am Ende der Angabe, nicht als Link; die bestehenden Links (Titel) bleiben. So kommt keine neue Linkadresse dazu, und das Gate `link-label` braucht kein `aria-label` für die Nummern.
+4. **PubMed-Link zu Dazzi** (Abschnitt 4 d): Linktext «PubMed» am Ende des ersten Absatzes, nach der Einordnung, mit `aria-label` «Dazzi et al. (2014) auf PubMed» (sichtbarer Text enthalten, vier Wörter oder mehr).
+5. **`lang="en"` auch für «Text Revision»** im wieder aufgenommenen Satz zum DSM-5-TR (Abschnitt 4 a): dieselbe Regel wie in Abschnitt 4 f; der Wortlaut bleibt.
+6. **V1 und V2 als eigene Absätze** (Abschnitt 6): Der Verweissatz folgt dem genannten Satz als eigener Absatz, wie der gleiche Satz auf `ueber` («Antworten auf häufige Fragen von Angehörigen …»); der Link liegt auf dem Seitentitel in «…».
+7. **Ort der neuen Angaben auf `quellen`** (Abschnitt 4 g): «Deutsche Ausgabe: Kösel, 2012.» am Ende der Angabe von Kreisman und Straus, nach dem Verlag; «Veröffentlicht am 29.06.2022.» am Ende der Einordnung von NG222.
+8. **Abgleich, Status berichtigt:** `fragen.md` Nr. 192 und 219 «umformuliert (3-1)» statt «übernommen» (Wort ergänzt, Z31-W1-1 zu Nr. 69 und 102); `quellen.md` Nr. 251 «übernommen, wörtlich» statt «umformuliert (3-1)» mit Bruchstück; Fassung als ganzer Satz bei `quellen.md` Nr. 164 und 250 («keine Bruchstücke», Abschnitt 8). Die Sätze auf den Seiten sind unverändert.
+9. **Abgleich, Zeilen mit geändertem Satz an mehreren Stellen** (Abschnitt 2, Regel 3): Wo eine Zeile nur auf einen geänderten Satz zeigt, ohne dass ihre eigene Aussage sich ändert (`quellen.md` Nr. 233 bis 235 zu «Opt-in»), ist die Fassung nachgeführt und der Status geblieben («Fassung nachgeführt 3-1-K»); sonst hat jede geänderte Zeile einen Status 3-1-K.
+10. **Liste der neuen Sätze** (Abschnitt 8): exakter Satzvergleich statt Vergleich des Satzanfangs; bibliografische Angaben ausgenommen (auch DOIs), Angaben aus Einordnungen des Bestands im ersten Absatz eines Eintrags aufgenommen; Sätze des Auftrags auch dann, wenn sie wörtlich im Bestand stehen. Die Liste von Etappe 3-1 bleibt im Block «Etappe 3-1» als damaliger Stand stehen, mit einem Hinweis auf diese Liste.
+11. **`ueber` › `barrierefreiheit`, «Stand: 11.10.2026»:** bleibt, weil Abschnitt 5 b das Datum nur für den Datenschutz ändert (siehe «Aufgefallen» Nr. 4).
+
+### Korrektur 3-1-K: Aufgefallen, nicht geändert
+
+1. **`ueber` › `warum`, zweiter Satz** (Wortlaut des Auftrags, Z31-S-6): «Sie wollen helfen und fühlen sich zugleich hilflos, …» beginnt mit «Sie». Am Satzanfang kann man das als Anrede der Lesenden lesen; Etappe 3-1 hatte den Satz deshalb ohne «Sie» gefasst (Bauauftrag 2b, Abschnitt 2 a: kein «Sie», das die Lesenden meinen könnte). Für das Sprach-Review: «Angehörige wollen helfen …» oder «Viele wollen helfen …» würde die Mehrdeutigkeit vermeiden.
+2. **`fragen` › «Wann ist eine Einweisung nötig?»:** Der neue Satz endet mit «holen Sie sofort Hilfe.», der Verweis im Text direkt danach beginnt mit «Sorgen Sie sich akut um das Leben oder die Sicherheit eines Menschen, holen Sie sofort Hilfe: …». «holen Sie sofort Hilfe» steht damit zweimal hintereinander. Z31-F-7 lässt Notruf-Satz und Verweis bewusst hintereinander stehen; hier ist es dieselbe Wendung. Für das Sprach-Review.
+3. **Datenschutz, Protokolle:** Mit dem Wortlaut des Bestands (Abschnitt 5 b) entfallen aus dem bisherigen Satz der Zweck («für einen sicheren Betrieb») und die Beispiele «Zeitpunkt» und «aufgerufene Seite»; der Zweck steht nur noch als «technisch notwendige». Der Bestand nannte den Zweck in einem eigenen Satz («Bereitstellung, Absicherung und Fehleranalyse», `ueber.md` Nr. 179, 206). Das gehört zur offenen rechtlichen Prüfung (Abschnitt 7).
+4. **«Stand» auf `ueber` und `impressum-datenschutz`:** `impressum-datenschutz` nennt jetzt «Stand: 12.10.2026», `ueber` › `barrierefreiheit` weiter «Stand: 11.10.2026» (dort hat sich an der Barrierefreiheit nichts geändert).
+5. **Verlag bei LeDoux (1996):** Auf `quellen` steht «Simon und Schuster», im Bestand «Simon & Schuster». Abschnitt 4 f nennt nur die Zeitschrift bei Shields und den Verlag bei Kreisman; der Eigenname bei LeDoux ist nicht geändert.
+6. **Abschnitt 9, Wortlaut der freigegebenen Seiten:** Die Prüfregel nennt die Sätze aus Abschnitt 6 und «Linehan (2015)». Abschnitt 4 g ändert zusätzlich `unterstuetzung` (Etappe 2c, noch nicht freigegeben); die MD5-Prüfung zeigt, dass das die einzige weitere Änderung ist.
+7. **`abgleich/unterstuetzung.md`, Zählung nach 2c-K:** Sie ist vor dem Zusammenführen mit Etappe 3-1 entstanden und nennt noch «3 verschoben» (Nr. 37, 38, 40). Die neue Zählung nach 3-1-K steht darunter; die alte ist nicht geändert.
+8. **«Avery / Penguin»** bricht bei 320 px nach dem Schrägstrich um. Lesbar; ein geschütztes Leerzeichen wäre eine Formatfrage.
+9. **Länge `ueber` mit `impressum-datenschutz`:** 1109 Wörter statt 1042 (Richtwert 900). Der Mehrumfang kommt aus den wieder aufgenommenen Sätzen des Bestands (Haftung, Netlify, E-Mail, Urheberrecht, Krisenintervention); der Auftrag sieht keine Kürzung vor.
+10. **Erreichbarkeit von `quellen`:** Der neue Verweissatz steht im Block «Quellen zu dieser Seite», der als Akkordeon geschlossen ist; ohne Skript und im Druck ist er offen. Von `index` aus ist `quellen` auch über `fragen` in zwei Schritten erreichbar.
+
 **Stand 11.10.2026 · Etappe 3-1 · bauende Sitzung (Claude Code).** Umgesetzt ist der erste Teil von UMBAUPLAN, Etappe 3 («Rahmen und Umzug»), im Auftrag der Fachstelle vom 11.10.2026: Umfang «nur Rahmen» (Seiten `fragen`, `quellen`, `ueber`, Werkzeuge auf Profil 2026.10.1, Weiterleitungen), Vorgehen «direkt bauen» nach UMBAUPLAN (Abschnitte 2, 4, 5, 7) und den Regeln von Bauauftrag 2c; Impressum und Datenschutz wie auf der Depressions-Website. Der Umzug (Sicherung `react-archiv`, Export ins Repository `borderline-angehoerige`) folgt als Etappe 3-2 nach der Prüfung. Grundlage ist `borderline-umbau` am Stand `e64815d`; danach ist Korrektur 2c-K (`4a211b3`, PR #30, parallel gebaut) mit diesem Stand zusammengeführt (Merge, Werte unten nach dem Zusammenführen). Geändert sind nur:
 
 - **Werkzeuge auf Profil 2026.10.1:** `tools/` (Build r4-8, 65 Fälle im Selbsttest, `gate-browser.js`, `gate.css`), `gate.html` und `starter.css` aus dem Starter; in `site.config.json` `assetVersion` «r4-8», `siteUrl`, `legal` und die Seite `404` (Wortlaut des Starters, Profilentscheid 11.10.2026, Nr. 5). Alle gebauten Seiten haben dadurch in der Fusszeile die Links «Impressum» und «Datenschutz»; dazu `404.html` und `sitemap.xml`
@@ -813,6 +1515,8 @@ Sechs, alle auf `fragen`, je einer in sechs Abschnitten, jeder direkt nach der H
 Die Antwort auf «Was, wenn die betroffene Person keine Therapie möchte?» (`behandlung`) nennt ebenfalls den Notruf («Bei unmittelbarer Gefahr holen Sie Hilfe über den Notruf.»); der Verweis im Text steht in diesem Abschnitt bei der Einweisung (höchstens einer je Abschnitt).
 
 ### Etappe 3-1: Neue Sätze zur Freigabe
+
+**Ersetzt** durch die Liste «Korrektur 3-1-K: Neue Sätze zur Freigabe» oben (12.10.2026, Abschnitt 8 von `KORREKTUR-ETAPPE-3-1.md`). Diese Liste bleibt als Stand von Etappe 3-1 stehen.
 
 Alle Sätze von `fragen`, `quellen`, `ueber` und `impressum-datenschutz`, die nicht wörtlich im Bestand der Seite stehen (Vergleich je Satz mit dem Bestand, Skript der bauenden Sitzung), dazu die Titel und Bezeichnungen, die neu sind oder anders lauten, und die 18 neuen Einträge der Quellenliste. Bibliografische Angaben des Bestands (Autor, Titel, Zeitschrift) stehen nicht in der Liste, auch wenn Satzzeichen oder Gross- und Kleinschreibung abweichen. **Art:** neu · Verdichtung · umformuliert · gekürzt · Verweissatz · Verweis im Text · Satzzeichen (nur Satzzeichen, Gross- und Kleinschreibung, Paarform statt Doppelpunkt, «und» statt «&» oder Satzteilung) · Bezeichnung; «Wortlaut von `seite`»: der Satz steht so auf einer freigegebenen Seite. **Abgleich:** f = `fragen.md`, q = `quellen.md`, u = `ueber.md` (auch für `impressum-datenschutz`).
 

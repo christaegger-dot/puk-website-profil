@@ -1,7 +1,7 @@
 # Weiterleitungen der alten Borderline-Website (React-Fassung) auf die neue Website, Netlify, Status 301.
 # UMBAUPLAN, Abschnitt 7. Erstellt in Etappe 3-1 (11.10.2026), bauende Sitzung. Wirksam erst nach dem Umzug (Etappe 3-2):
-# Netlify liest _redirects nur im veröffentlichten Stamm; tools/export.mjs kopiert die Datei nicht, sie wird beim Export
-# in den Zielordner kopiert. Ziel ist die neue Seite und, wo möglich, der Abschnitt, in den der Inhalt eingegangen ist.
+# Netlify liest _redirects nur im veröffentlichten Stamm. tools/export.mjs kopiert die Datei nicht; beim Umzug (Etappe 3-2)
+# von Hand in den Zielordner kopieren. Ziel ist die neue Seite und, wo möglich, der Abschnitt, in den der Inhalt eingegangen ist.
 # Alte Routen mit gleichem Namen wie eine neue Seite (/verstehen, /grenzen, /kommunizieren, /selbstfuersorge, /genesung,
 # /quellen) brauchen keine Regel: Netlify liefert verstehen.html auch unter /verstehen aus.
 
@@ -13,6 +13,9 @@
 /notfallkarte.html                           /index.html                                  301
 /materialien/text/notfallplan-krise          /index.html                                  301
 /notfallplan-krise-v04.pdf                   /index.html                                  301
+/Notfallkarte-Zuerich-Psychische-Krise.pdf   /index.html                                  301
+/notfallkarte-preview.webp                   /index.html                                  301
+/notfallplan-krise-v04-preview.webp          /index.html                                  301
 
 # Seiten
 /verstehen/diagnostik                        /diagnose.html                               301
@@ -41,7 +44,7 @@
 /unterstuetzen                               /rolle.html                                  301
 /diagnostik                                  /diagnose.html                               301
 /begleiterkrankungen                         /diagnose.html#begleiterkrankungen           301
-/selbsthilfegruppen                          /unterstuetzung.html#beratung                301
+/selbsthilfegruppen                          /unterstuetzung.html#selbsthilfe             301
 /therapieangebote                            /behandlung.html#angebote                    301
 
 # Textfassungen der Handouts: Abschnitt mit den meisten Zeilen des Handouts im Abgleich (abgleich/<seite>.md)

@@ -20,6 +20,8 @@ Die vier vorgemerkten Zeilen (`index.md` Nr. 39, `verstehen.md` Nr. 337 bis 339)
 
 **Zählung nach Freigabe 2b:** 300 Sätze des Bestands, davon 82 übernommen, 67 entfällt, 46 Bezeichnung, 39 verschoben (Vertiefung, 2b), 30 umformuliert (2b), 9 entfällt (2b-K), 9 umformuliert (2b-K), 6 zusammengeführt, 6 zusammengeführt (2b-K), 4 verschoben (2b-2), 1 umformuliert (2b-2), 1 zusammengeführt (2b-F). Dazu 13 Zeilen ohne Bestandssatz: 11 neu (2b), 2 neu (2b-K).
 
+**Korrektur 3-1-K (12.10.2026):** nachgeführt nach `KORREKTUR-ETAPPE-3-1.md`, Abschnitt 6 (Z31-W2-1): eine Zeile ohne Bestandssatz am Ende der Tabelle, Nr. 313 «neu (3-1-K)», der Verweissatz auf `quellen` als erster Satz im Block «Quellen zu dieser Seite». Übrige Zeilen unverändert.
+
 - **Satz (Bestand):** Bestandstext in Sätze zerlegt, Listenpunkte und Zwischentitel als eigene Zeile, Klammermarken der Erhebung ohne eigene Zeile. Die Nummer bleibt fest, damit Prüfberichte sie zitieren können. Gleiche Sätze aus Seite und Handout stehen je in ihrer Zeile.
 - **Neue Fassung:** der Satz der neuen Seite, der die Aussage trägt; «wörtlich», wenn er gleich lautet; «–», wenn der Satz entfällt. Bei Zeilen ohne Bestandssatz steht in «Satz (Bestand)» «–».
 - **Ort neu:** `seite#abschnitt` der gebauten Seite (`kopf` = Seitenkopf, `kapitel` = Kapitelübersicht) oder `Fusszeile`.
@@ -343,3 +345,4 @@ Die vier vorgemerkten Zeilen (`index.md` Nr. 39, `verstehen.md` Nr. 337 bis 339)
 | 310 | – | – | neu (2b) | Kurze Übungen für Momente, in denen es zu viel ist, stehen auf der Seite «Auf sich achten» im Abschnitt «Wenn es gerade zu viel ist». | krise#danach | Verweissatz; Verlinken statt wiederholen (STOPP) |
 | 311 | – | – | neu (2b) | Wenn Sie später zurückschauen möchten: | krise#danach | neu; Einleitung der Vertiefungen |
 | 312 | – | – | neu (2b) | Achten Sie auf diese Hinweise: | krise#bleibt | neu; Einleitung der Liste; Bestand: «Hinweise: wenn Belastung oder Gefahr bestehen bleibt» (Nr. 207) |
+| 313 | neue Seite › `quellen` | – | neu (3-1-K) | Vollständige Angaben zu den Quellen stehen auf der Seite «Quellen und Begriffe». | krise#quellen | Verweissatz, erster Satz im Block «Quellen zu dieser Seite», Link auf `quellen.html`; 3-1-K, Abschnitt 6, Z31-W2-1: gleicher Satz wie auf `fragen`, damit `quellen` von jeder Themenseite in einem Schritt erreichbar ist |
