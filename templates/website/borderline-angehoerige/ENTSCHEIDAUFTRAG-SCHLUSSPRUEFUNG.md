@@ -49,7 +49,7 @@ Die Entscheidsitzung hält diese Punkte fest, entscheidet aber nicht endgültig 
 | --- | --- | --- |
 | SPZ-F-13 (Cookies), SPZ-F-14 (Urheberrecht) | rechtliche Fragen; die rechtliche Prüfung von Impressum und Datenschutz ist ausdrücklich offen | einen Wortlaut vorschlagen und entscheiden: «in die rechtliche Prüfung aufnehmen»; bis dahin bleibt der heutige Text |
 | SPZ-F-33 (reale Tests) | Claude kann keine realen Screenreader-, Tastatur-, Touch- und Kontrastmodus-Tests durchführen | Umfang und Protokoll festlegen (Vorlagen in Teil 5.5 beider Prüfungen), dazu den Hinweis, dass eine Person die Tests durchführt; Person und Termin bleiben offen |
-| SPZ-F-35, -36, -37, -38 (Netlify, PR #659) | Handlungen ausserhalb dieses Repositorys | entscheiden, was gelten soll, und die Handlung Schritt für Schritt beschreiben (Liste «Handlungen für die Fachstelle»). Keine Netlify-Einstellung ändern, im Repository `borderline-angehoerige` nichts ändern, PR #659 nicht anfassen |
+| SPZ-F-35, -36, -37 (Netlify) | Handlungen ausserhalb dieses Repositorys | entscheiden, was gelten soll, und die Handlung Schritt für Schritt beschreiben (Liste «Handlungen für die Fachstelle»). Keine Netlify-Einstellung ändern, im Repository `borderline-angehoerige` nichts ändern, PR #659 nicht anfassen |
 | SPZ-F-1 (Bestätigung des Prüfauftrags) | betrifft die Fachstelle selbst | festhalten, dass der Prüfauftrag mit der Delegation vom 12.10.2026 als bestätigt gilt, und auf diesen Auftrag verweisen |
 
 Ausdrücklich nicht Teil dieses Auftrags sind die rechtliche Prüfung, NK-F-3 (Ausgabe von «Schluss mit dem Eiertanz»), die Korrektur selbst und R1 bis R3.
@@ -77,9 +77,9 @@ Die Fragen stehen im Block der Zusammenführung, Tabelle «Fragen an die Fachste
 - **SPZ-F-4, -5:** Diese Fragen gehören zu den wichtigen Befunden SPZ-4 und SPZ-5. Bei «entfällt» braucht es je eine Abgleichzeile mit Grund.
 - **SPZ-F-24, -31:** «Ein neuer Trieb» ist freigegeben. Eine Änderung des Bildes braucht eine neue Freigabe (Massstab 7).
 - **SPZ-F-35:** Den Entscheid mit SPZ-58 abstimmen (Codex P1). Wird «Pretty URLs» ausgeschaltet, muss die Vorschau neu geprüft werden.
-- **SPZ-F-38:** Den Entscheid mit `CLAUDE.md` begründen («Solange Stufen offen sind, bleibt er ein Entwurf»).
+- **SPZ-F-38 (PR #659):** Bereits umgesetzt. Auf Wunsch der Fachstelle ist `christaegger-dot/borderline-angehoerige#659` seit 12.10.2026, 18:19 UTC wieder ein Entwurf; nachgeprüft: `"draft":true`, ungemergt. Die Entscheidsitzung entscheidet nicht neu. Sie trägt «erledigt durch die Fachstelle» mit Beleg ein und hält fest, dass der PR ein Entwurf bleibt, bis R3 «Go» ergibt (`CLAUDE.md`: «Solange Stufen offen sind, bleibt er ein Entwurf»). Damit ist auch der wichtige Befund SPZ-6 behoben; die Nachprüfung bestätigt das.
 
-**Zu den wichtigen Befunden ohne Frage** (SPZ-2, SPZ-3: Eisberg und Schleife bei grosser Schrift; SPZ-6): Sie sind technisch und brauchen keinen fachlichen Entscheid. Die Entscheidsitzung bestätigt nur, dass sie in die Korrektur gehören, und nennt die Leitregel: «Figuren mit frei platzierten Beschriftungen wechseln bei grosser Schrift in die Listenansicht», Profilentscheid 11.10.2026.
+**Zu den wichtigen Befunden ohne Frage** (SPZ-2, SPZ-3: Eisberg und Schleife bei grosser Schrift): Sie sind technisch und brauchen keinen fachlichen Entscheid. Die Entscheidsitzung bestätigt nur, dass sie in die Korrektur gehören, und nennt die Leitregel: «Figuren mit frei platzierten Beschriftungen wechseln bei grosser Schrift in die Listenansicht», Profilentscheid 11.10.2026.
 
 ## 7. Regeln
 
