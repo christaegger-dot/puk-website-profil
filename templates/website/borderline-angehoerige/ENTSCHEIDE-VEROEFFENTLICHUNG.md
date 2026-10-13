@@ -65,8 +65,12 @@ Nachgeführt nach der Veröffentlichung, im Auftrag der Leitsitzung der Veröffe
 - **Merge:** PR #659 am 13.10.2026, 06.43 Uhr (04.43.50 UTC), Merge-Commit `ef2e491`, Baum gleich wie `f4074fd`. Produktions-Deploy `6acdb7093632f42d43ca4b49`, veröffentlicht 04.44 UTC unter `https://borderline-angehoerige.netlify.app`. Beleg: «Prüfung der Produktion AR3-2», geprüfter Stand und Punkt 9.
 - **Prüfung der Produktion (AR3-2, 5.3 b, dazu `Set-Cookie` nach V-2):** erfüllt, 9 von 9 Punkten, 0-mal `Set-Cookie` auf 50 Adressen. Beleg: `PRUEFBERICHT.md`, Abschnitt «Prüfung der Produktion AR3-2», PR christaegger-dot/puk-website-profil#87 (Merge `d2a34db`).
 
-**Offene Auflagen** (Wortlaut im Abschnitt «R3 Freigabe-Audit» von `PRUEFBERICHT.md`), je mit Frist **13.01.2027**:
+**Auflagen** (Wortlaut im Abschnitt «R3 Freigabe-Audit» von `PRUEFBERICHT.md`), je mit Frist **13.01.2027**. Nachgeführt am 13.10.2026 nach AR3-4:
 - **AR3-3 reale Tests** (V-3): Unterlage `REALE-TESTS-AR3-3.md`.
-- **AR3-4 Quellenangaben vervollständigen.**
+- **AR3-4 Quellenangaben vervollständigen:** erledigt am 13.10.2026. Belege:
+  - Freigabe: `PRUEFBERICHT.md`, «Freigabe AR3-4 (13.10.2026, im Auftrag der Fachstelle)»
+  - Nachprüfung: «Nachprüfung AR3-4», Urteil «erfüllt», mit Runde 4 und 5
+  - Veröffentlichung: PR christaegger-dot/borderline-angehoerige#660, Merge `8d81ae7`
+  - Prüfung der Produktion: «Prüfung der Produktion AR3-4», Deploy `6acdc7b`, «erfüllt»; Bericht-PR christaegger-dot/puk-website-profil#95
 - **AR3-5 Ausnahme R1-1 beenden:** Profiländerung nach `/ENTSCHEIDE-PROFIL-2026-10-2.md`.
 - **Dazu empfohlen (V-2):** die Durchsicht von Impressum und Datenschutz durch den Rechtsdienst nach der Veröffentlichung; Unterlage `UNTERLAGE-RECHTSDIENST.md`.
