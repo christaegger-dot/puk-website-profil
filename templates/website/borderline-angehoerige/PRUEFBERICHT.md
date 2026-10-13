@@ -56,6 +56,14 @@ Gehört zur Website in diesem Ordner. Wer den Starter kopiert, übernimmt diese 
 
 **Vollständiger Befund und Grenzen:** `ZERO-PARTICIPANT-AUDIT-2026-10-13.md`.
 
+### Selbstprüfung · Massnahmenplan «Kurz und klar» · 13.10.2026
+
+**Umgesetzt:** Eine ergänzende Kurzübersicht verdichtet freigegebene Kernaussagen für Situationen mit wenig Zeit oder Kraft. Sie ist auf jeder Inhaltsseite neben der Suche erreichbar und führt für Einzelheiten auf die kanonischen Hauptseiten. Die Startseite bietet denselben Einstieg sichtbar an. Die Seite bezeichnet sich ausdrücklich nicht als geprüfte Fassung in Leichter Sprache.
+
+**Konstruktive Grenzen:** Keine Übersetzung, keine neue fachliche Aussage, keine duplizierten Kontaktdaten und keine Änderung des institutionellen Krisenprofils. Tatsächliche Verständlichkeit, emotionale Wirkung und Eignung für Menschen mit geringer Gesundheitskompetenz bleiben ohne Teilnehmende unbelegt.
+
+**Wiederholbare Nachweise:** `node abgleich/kurzorientierung.mjs`, `node abgleich/nutzerwege.mjs`, `node abgleich/zero-participant-audit.mjs`, Produktionsgate, Exportprüfung und Browsermessung. Vollständiger Plan: `KURZORIENTIERUNG-MASSNAHMENPLAN-2026-10-13.md`.
+
 - **Bauen und Prüfen sind getrennt.** Die Stufen unten prüft eine Sitzung oder Person, die die Website nicht gebaut hat. Die bauende Sitzung macht nur die Selbstprüfung (unten) und trägt keine Stufe als «erledigt» ein.
 - **Jeder Punkt braucht einen Beleg** (Seite und Abschnitt, Figur, Zitat). Ein Punkt ohne Beleg gilt als nicht geprüft. Ein Gesamturteil ersetzt keine Einzelprüfung.
 - **Kein Merge ohne Prüfbericht.** Ein Pull Request mit einer neuen oder geänderten Website enthält diesen Bericht im aktuellen Stand und verweist in der Beschreibung darauf.

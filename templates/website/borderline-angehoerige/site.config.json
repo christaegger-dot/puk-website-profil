@@ -1,8 +1,8 @@
 {
-  "$comment": "Borderline – Orientierung für Angehörige · Seitenvertrag, kopiert aus dem Psychoedukations-Starter (Build r4-3, Profil-Update 09.10.2026 übernommen: Build r4-4; Profil-Update 10.10.2026 übernommen: Build r4-6; Gate-Korrektur 10.10.2026 übernommen: Build r4-7; Profil 2026.10.1 übernommen in Etappe 3-1: Build r4-8, legal, 404-Seite, siteUrl). 20 Inhaltsseiten plus 404-Seite; seit dem Zero-Participant-Audit zusätzlich eine kanonische Seite für mitbetroffene Kinder und eine lokale Abschnittssuche. Pflichtfelder und Regeln: README.md. Nach jeder Änderung: node tools/build.mjs, danach node tools/gate.mjs bzw. node tools/gate.mjs --production.",
+  "$comment": "Borderline – Orientierung für Angehörige · Seitenvertrag, kopiert aus dem Psychoedukations-Starter (Build r4-3, Profil-Update 09.10.2026 übernommen: Build r4-4; Profil-Update 10.10.2026 übernommen: Build r4-6; Gate-Korrektur 10.10.2026 übernommen: Build r4-7; Profil 2026.10.1 übernommen in Etappe 3-1: Build r4-8, legal, 404-Seite, siteUrl). 21 Inhaltsseiten plus 404-Seite; seit dem Zero-Participant-Audit zusätzlich eine kanonische Seite für mitbetroffene Kinder, eine lokale Abschnittssuche und die belastungsarme Kurzübersicht «Kurz und klar». Pflichtfelder und Regeln: README.md. Nach jeder Änderung: node tools/build.mjs, danach node tools/gate.mjs bzw. node tools/gate.mjs --production.",
   "kitRevision": "PUK Website Kit 1.10.1-r4 · abgeleitet",
   "canonicalSource": "PUK Zürich Design System 1.10.1 (unverändert)",
-  "assetVersion": "r4-11",
+  "assetVersion": "r4-12",
   "siteTitle": "Borderline – Orientierung für Angehörige",
   "shortDescription": "Psychoedukative Website der Fachstelle Angehörigenarbeit PUK für Angehörige von Menschen mit Borderline.",
   "language": "de-CH",
@@ -14,6 +14,16 @@
     "../longform/erklaermuster.css",
     "starter.css",
     "borderline.css"
+  ],
+  "utilityNav": [
+    {
+      "pageId": "kurz",
+      "label": "Kurz und klar"
+    },
+    {
+      "pageId": "suche",
+      "label": "Website durchsuchen"
+    }
   ],
   "contentOwner": "Fachstelle Angehörigenarbeit der Psychiatrischen Universitätsklinik Zürich (PUK)",
   "editorialStatus": "Inhaltlicher Stand: Oktober 2026",
@@ -123,6 +133,100 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: kurze Haltungsaussage; hier genügt der Satz (SPZ-9).",
+          "approvalStatus": "freigegeben"
+        }
+      ]
+    },
+    {
+      "id": "kurz",
+      "title": "Kurz und klar",
+      "href": "kurz.html",
+      "navLabel": null,
+      "groupRootId": "index",
+      "showInSectionNav": false,
+      "status": "published",
+      "primaryTask": "Mit wenig Zeit oder Kraft die wichtigsten nächsten Schritte finden",
+      "description": "Eine kurze Orientierung zu Gesprächen, Rolle, Grenzen, Erschöpfung, Kindern, Sicherheit und den wichtigsten nächsten Schritten.",
+      "searchAliases": [
+        "kurz",
+        "einfach",
+        "schnell",
+        "Überblick",
+        "wenig Zeit",
+        "wenig Kraft",
+        "wo anfangen"
+      ],
+      "sectionSearchAliases": {
+        "jetzt-title": [
+          "was tun",
+          "sofort orientieren",
+          "nächster Schritt"
+        ],
+        "borderline-title": [
+          "Borderline einfach erklärt",
+          "Diagnose kurz"
+        ],
+        "grundsaetze-title": [
+          "Grundregeln",
+          "Merksätze"
+        ],
+        "weiter-title": [
+          "wie weiter",
+          "Hilfe finden"
+        ]
+      },
+      "sensitiveTopics": [
+        "selbstgefaehrdung",
+        "gewalt",
+        "akute-krise"
+      ],
+      "visualPlan": [
+        {
+          "id": "v-ku-jetzt",
+          "section": "Was ist jetzt wichtig?",
+          "sectionId": "jetzt",
+          "goal": "Mit wenig Zeit einen passenden nächsten Schritt finden",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Kurze Situationsüberschriften, ein Handlungssatz und je ein primäres Ziel sind bei hoher Belastung klarer als eine zusätzliche Darstellung.",
+          "approvalStatus": "freigegeben"
+        },
+        {
+          "id": "v-ku-borderline",
+          "section": "Borderline kurz erklärt",
+          "sectionId": "borderline",
+          "goal": "Die Diagnose in fünf Sätzen einordnen, ohne Menschen darauf zu reduzieren",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Fünf eigenständige Klartextsätze sind kürzer und eindeutiger als ein Modell; vertiefende Zusammenhänge bleiben auf der Hauptseite «Verstehen».",
+          "approvalStatus": "freigegeben"
+        },
+        {
+          "id": "v-ku-grundsaetze",
+          "section": "Drei Grundsätze",
+          "sectionId": "grundsaetze",
+          "goal": "Drei übertragbare Orientierungen erinnern",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Eine nummerierte Liste macht die drei Merksätze ohne zusätzliche Legende direkt zugänglich.",
+          "approvalStatus": "freigegeben"
+        },
+        {
+          "id": "v-ku-weiter",
+          "section": "Wie geht es weiter?",
+          "sectionId": "weiter",
+          "goal": "Genau einen passenden Vertiefungsweg wählen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Vier sprechende Links reichen als Abschluss; Karten oder eine Weggrafik würden die Auswahl unnötig aufblasen.",
           "approvalStatus": "freigegeben"
         }
       ]

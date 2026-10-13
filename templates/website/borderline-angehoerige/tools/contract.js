@@ -8,7 +8,7 @@
 })(typeof self !== 'undefined' ? self : this, function () {
 'use strict';
 const VERSION = 'PUK Website Kit 1.10.1-r4 · abgeleitet';
-const BUILD = 'r4-11';
+const BUILD = 'r4-12';
 const FORMATS = ['text', 'figure', 'process', 'cycle', 'comparison', 'decision', 'illustration', 'stepwise-model', 'tension-field', 'relationship-map', 'continuum', 'layer-model'];
 /* Interaktive Komponenten und Erklärmuster G brauchen components/interaktion.js (HTML-Fassungen ohne React).
    Prüfbefund W3-01 (11.10.2026): auch jede Seite mit aufklappbarer Vertiefung (details) – das Skript öffnet sie vor dem Druck. */
@@ -163,8 +163,11 @@ function renderPage(cfg, page, content) {
   const legalHtml = legalLinks.length || legalMissing.length ? `<p class="puk-web-footer__copy puk-site-legal" data-site-legal>${legalLinks.map(l => `<a href="${esc(l.href)}"${isExternalUrl(l.href) ? ' rel="noopener noreferrer"' : ''}>${esc(l.label)}</a>`).join('<span aria-hidden="true"> · </span>')}${legalMissing.length ? `${legalLinks.length ? ' ' : ''}<span class="puk-site-draft">${esc(legalMissing.join(' und '))}: Platzhalter, Ziel nicht festgelegt</span>` : ''}</p>` : '';
   const notFound = isNotFound(page);
   const startPage = cfg.pages.find(p => p.id === 'index') || nav[0];
-  const searchPage = cfg.pages.find(p => p.id === 'suche' && p.status === 'published');
-  const searchLink = searchPage && !notFound ? `<a class="puk-site-search-link" href="${esc(searchPage.href)}"${page.id === searchPage.id ? ' aria-current="page"' : ''}>Website durchsuchen</a>` : '';
+  const defaultSearchPage = cfg.pages.find(p => p.id === 'suche' && p.status === 'published');
+  const utilityEntries = Array.isArray(cfg.utilityNav) && cfg.utilityNav.length
+    ? cfg.utilityNav.map(entry => ({ ...entry, page: cfg.pages.find(p => p.id === entry.pageId && p.status === 'published') })).filter(entry => entry.page)
+    : (defaultSearchPage ? [{ pageId: defaultSearchPage.id, label: 'Website durchsuchen', page: defaultSearchPage }] : []);
+  const utilityNav = utilityEntries.length && !notFound ? `<nav class="puk-site-utility" aria-label="Direkteinstiege">${utilityEntries.map(entry => `<a class="puk-site-utility__link" href="${esc(entry.page.href)}"${page.id === entry.page.id ? ' aria-current="page"' : ''}>${esc(entry.label || entry.page.title)}</a>`).join('')}</nav>` : '';
   const breadcrumbParts = page.id === 'index' || notFound ? [] : [
     `<li><a href="${esc(startPage.href)}">Übersicht</a></li>`,
     ...(groupRoot.id !== page.id && groupRoot.id !== startPage.id ? [`<li><a href="${esc(groupRoot.href)}">${esc(groupRoot.navLabel || groupRoot.title)}</a></li>`] : []),
@@ -201,7 +204,7 @@ ${script ? `<script src="${esc(cfg.interactionScript)}${v}" defer></script>\n` :
 <a class="puk-web-skip" href="#main-content">Zum Hauptinhalt</a>
 ${draftbar}<header class="puk-web-header"><div class="puk-web-container puk-web-header__inner">
 <a class="puk-web-logo" href="${esc(pagePath(startPage))}" aria-label="${esc(logoName(cfg))}"><img src="${esc(cfg.logo)}" alt="${esc(s.institution)}"></a>
-${navHtml}${searchLink}</div>
+${navHtml}${utilityNav}</div>
 <div class="puk-web-container"><p class="puk-site-sender" data-sender><span class="puk-site-sender__label">${esc(senderLabel)}</span><span class="puk-site-sender__name" data-sender-unit>${esc(senderName)}</span>${senderInstitution}${s.email ? `${contactLabel}<a class="puk-link--inline" data-sender-email href="mailto:${esc(s.email)}">${esc(s.email)}</a>` : ''}${senderBadge}</p></div>
 </header>
 ${breadcrumb}${direct}<main id="main-content" class="puk-web-main" tabindex="-1"${page.filterSelector ? ` data-puk-filter data-filter-selector="${esc(page.filterSelector)}"` : ''}>
@@ -251,6 +254,20 @@ function gate(cfg, files, opts = {}) {
   }
   const pages = Array.isArray(cfg.pages) ? cfg.pages : [];
   if (!pages.length) add('block', 'site', 'config', 'pages fehlt');
+  if (cfg.utilityNav !== undefined) {
+    if (!Array.isArray(cfg.utilityNav) || !cfg.utilityNav.length) add('block', 'site', 'utility-nav', 'utilityNav muss mindestens einen Direkteinstieg enthalten');
+    else {
+      const utilityIds = new Set();
+      for (const entry of cfg.utilityNav) {
+        if (!entry.pageId || !entry.label) add('block', 'site', 'utility-nav', 'utilityNav-Eintrag braucht pageId und label');
+        if (utilityIds.has(entry.pageId)) add('block', 'site', 'utility-nav', 'utilityNav enthält pageId doppelt: ' + entry.pageId);
+        utilityIds.add(entry.pageId);
+        const target = pages.find(p => p.id === entry.pageId);
+        if (!target) add('block', 'site', 'utility-nav', 'utilityNav-Ziel fehlt: ' + entry.pageId);
+        else if (target.status !== 'published') add('block', 'site', 'utility-nav', 'utilityNav-Ziel ist nicht veröffentlicht: ' + entry.pageId);
+      }
+    }
+  }
   /* Impressum und Datenschutzerklärung (Prüfbefund W3-05, Abschnitt «Technische Qualität», C): Entwurf Hinweis, Produktion blockiert. */
   const lg = cfg.legal || {};
   for (const [k, name] of LEGAL) {
@@ -471,6 +488,7 @@ function gate(cfg, files, opts = {}) {
 /* ---------- Selbsttest: jede bekannte Fehlerklasse muss vom Gate erkannt werden ---------- */
 const INLINE_T = 'Sorgen Sie sich akut um das Leben oder die Sicherheit eines Menschen, holen Sie sofort Hilfe: ärztlicher Notfalldienst oder Notfallstation, bei Gefahr die Polizei.';
 const MUTATIONS = [
+  ['Direkteinstieg verweist auf fehlende Seite', ['utility-nav'], c => { c.utilityNav = [{ pageId: 'fehlt', label: 'Fehlt' }]; }],
   ['Navigationsziel fehlt (Link zeigt auf nicht vorhandene Seite)', ['nav-target', 'nav'], (c, f) => rep(f, 'index.html', 'class="puk-web-nav__link" href="beziehungen-verstehen.html"', 'class="puk-web-nav__link" href="beziehungen.html"')],
   ['Seitenvertrag verweist auf fehlende Datei', ['page-file'], c => { pg(c, 'behandlung-verstehen').href = 'behandlung.html'; }],
   ['lang fehlt', ['lang'], (c, f) => rep(f, 'behandlung-verstehen.html', '<html lang="de-CH"', '<html')],

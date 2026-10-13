@@ -6,6 +6,7 @@ Diese Matrix legt fest, welche Seite ein Thema vollständig erklärt. Andere Sei
 
 | Thema | Verantwortliche Hauptseite | Zulässiger Kurzkontext auf anderen Seiten |
 | --- | --- | --- |
+| Belastungsarme Kurzübersicht | `kurz.html` | Verdichtet nur freigegebene Kernaussagen und verlinkt für Einzelheiten auf die jeweilige Hauptseite; keine neue fachliche Hauptquelle |
 | Was Borderline beschreibt und was nicht | `verstehen.html` | Ein Satz gegen Diagnose- und Motivzuschreibungen |
 | Diagnostik und Begleiterkrankungen | `diagnose.html` | Hinweis auf fachliche Abklärung |
 | Beziehungsmuster | `beziehungen.html` | Verweis auf die Bedeutungsschleife |
