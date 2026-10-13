@@ -2,6 +2,8 @@
 
 **Stand 13.10.2026.** Vorbereitet von der Leitsitzung der Veröffentlichung, im Auftrag der Fachstelle.
 
+**Statusentscheid 13.10.2026:** Die Fachstelle führt die vorgeschlagene Stichprobe nicht durch. Dieses Dokument bleibt als Beschreibung der nicht ausgeführten Prüfung erhalten. Das Zero-Participant-Audit ersetzt diese realen Tests nicht; eine WCAG-, ISO- oder Wirkungs-Gesamtkonformität wird daraus nicht abgeleitet.
+
 - **Frist:** 13.01.2027 (R3 Freigabe-Audit, Auflage AR3-3; `ENTSCHEIDE-VEROEFFENTLICHUNG.md`, V-3).
 - **Grundlage:** `ENTSCHEIDE-SCHLUSSPRUEFUNG.md`, Abschnitt 5.4, und die Aufgaben aus `PRUEFBERICHT.md` (Bedienung und Barrierefreiheit, Prüfung 2, Vorschlag für reale Tests).
 - **Adresse:** https://borderline-angehoerige.netlify.app (veröffentlicht am 13.10.2026).

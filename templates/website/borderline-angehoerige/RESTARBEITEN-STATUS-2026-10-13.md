@@ -29,7 +29,11 @@ Solange diese Angaben nicht institutionell bestätigt sind, werden sie nicht auf
 
 ## Benötigt reale Testpersonen und Geräte
 
-Die in `REALE-TESTS-AR3-3.md` beschriebenen Prüfungen bleiben offen. Automatisierte Tests oder eine Codeprüfung ersetzen sie nicht:
+Die Fachstelle hat am 13.10.2026 entschieden, dass die vorgeschlagene Stichprobe mit Angehörigen, Menschen mit Borderline-Erfahrung, AT-Nutzenden und unabhängigen Fachpersonen nicht durchgeführt wird. Sie wird nicht durch simulierte oder als Nutzerforschung bezeichnete KI-Tests ersetzt.
+
+Stattdessen wurde das in `ZERO-PARTICIPANT-AUDIT-2026-10-13.md` dokumentierte Aufgaben-, Such-, Kohärenz-, Inhalts- und technische Audit umgesetzt. Es reduziert bekannte Risiken, belegt aber keine tatsächliche Verständlichkeit oder Wirkung.
+
+Die in `REALE-TESTS-AR3-3.md` beschriebenen Prüfungen sind damit nicht erledigt und derzeit nicht vorgesehen:
 
 - NVDA mit Firefox
 - VoiceOver mit Safari
@@ -40,3 +44,13 @@ Die in `REALE-TESTS-AR3-3.md` beschriebenen Prüfungen bleiben offen. Automatisi
 - Bedarfsprüfung für Einfache Sprache und priorisierte Übersetzungen
 
 Eine WCAG- oder ISO-Gesamtkonformität wird bis zum dokumentierten Abschluss dieser Prüfungen nicht behauptet.
+
+## Zero-Participant-Audit umgesetzt
+
+- 25 kritische Such- und Aufgabenszenarien, alle mit erwarteter Fundstelle unter den ersten drei Treffern
+- lokale Abschnittssuche mit 175 geprüften Seiten- und Ankerzielen
+- aufgabenbezogene Startseite und eindeutiger Borderline-Angebotsumfang
+- konsistentere Bereichstitel für Alltag/Beziehungen sowie Fragen/Nachschlagen
+- kanonische Seite für mitbetroffene Kinder
+- verbindliches Begriffssystem
+- acht strukturelle Nutzerwege und Erreichbarkeit aller veröffentlichten Inhaltsseiten

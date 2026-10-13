@@ -337,8 +337,8 @@ Was nur die alte Website beschreibt (React-Fassung, Übungen, Handouts, Notfallk
 | 308 | `/barrierefreiheit` › Feedback und Kontakt | Nutzen Sie dafür unsere Feedback-Seite oder wenden Sie sich an die im Impressum genannte verantwortliche Person. | zusammengeführt | Wenn Sie auf Barrieren stossen oder Verbesserungsvorschläge haben, schreiben Sie bitte an angehoerigenarbeit@pukzh.ch. | ueber#barrierefreiheit | Kontakt direkt per E-Mail; Rückmeldungen stehen im Abschnitt «Rückmeldung geben» derselben Seite |
 | 309 | `/barrierefreiheit` › Feedback und Kontakt | Stand | Bezeichnung | – | – | Eyebrow oder Zwischentitel der alten Seite ohne eigene Aussage |
 | 310 | `/barrierefreiheit` › Aktualität | Aktualität | Bezeichnung | – | – | Eyebrow oder Zwischentitel der alten Seite ohne eigene Aussage |
-| 311 | `/barrierefreiheit` › Aktualität | Redaktioneller Stand: 6. | umformuliert (3-1) | Stand: 11.10.2026 | ueber#barrierefreiheit | Fassung für die neue Website |
-| 312 | `/barrierefreiheit` › Aktualität | Oktober 2026 | umformuliert (3-1) | Stand: 11.10.2026 | ueber#barrierefreiheit | Fassung für die neue Website |
+| 311 | `/barrierefreiheit` › Aktualität | Redaktioneller Stand: 6. | umformuliert (3-1) | Stand: 13.10.2026 | ueber#barrierefreiheit | Fassung für die neue Website; Datum nach Abschluss des Zero-Participant-Audits aktualisiert |
+| 312 | `/barrierefreiheit` › Aktualität | Oktober 2026 | umformuliert (3-1) | Stand: 13.10.2026 | ueber#barrierefreiheit | Fassung für die neue Website; Datum nach Abschluss des Zero-Participant-Audits aktualisiert |
 | 313 | `/barrierefreiheit` › Aktualität | Weiterführen | Bezeichnung | – | – | Eyebrow oder Zwischentitel der alten Seite ohne eigene Aussage |
 | 314 | `/barrierefreiheit` › Das könnte Sie auch interessieren | Das könnte Sie auch interessieren | entfällt | – | – | Weiterführen-Block der alten Seite («Das könnte Sie auch interessieren») |
 | 315 | `/barrierefreiheit` › Das könnte Sie auch interessieren | Feedback | entfällt | – | – | Weiterführen-Block der alten Seite («Das könnte Sie auch interessieren») |

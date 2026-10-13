@@ -74,3 +74,7 @@ Nachgeführt nach der Veröffentlichung, im Auftrag der Leitsitzung der Veröffe
   - Prüfung der Produktion: «Prüfung der Produktion AR3-4», Deploy `6acdc7b`, «erfüllt»; Bericht-PR christaegger-dot/puk-website-profil#95
 - **AR3-5 Ausnahme R1-1 beenden:** Profiländerung nach `/ENTSCHEIDE-PROFIL-2026-10-2.md`.
 - **Dazu empfohlen (V-2):** die Durchsicht von Impressum und Datenschutz durch den Rechtsdienst nach der Veröffentlichung; Unterlage `UNTERLAGE-RECHTSDIENST.md`.
+
+## Nachtrag: reale Tests und Zero-Participant-Audit
+
+Die Fachstelle hat am 13.10.2026 entschieden, die vorgeschlagene Stichprobe nicht durchzuführen. AR3-3 bleibt deshalb materiell unerfüllt und wird nicht durch KI-Personas oder simulierte Nutzerforschung geschlossen. Als risikoreduzierende, aber nicht gleichwertige Alternative wurde das in `ZERO-PARTICIPANT-AUDIT-2026-10-13.md` dokumentierte Audit umgesetzt. Die Aussagegrenzen stehen zusätzlich auf der öffentlichen Seite «Über diese Website».

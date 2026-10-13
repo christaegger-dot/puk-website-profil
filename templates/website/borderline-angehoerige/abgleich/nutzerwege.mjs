@@ -12,7 +12,7 @@ const journeys = [
   {
     id: 'U1',
     need: 'Ein belastendes Gespräch vorbereiten',
-    steps: [['index.html', 'kommunizieren.html'], ['kommunizieren.html', '#kippen'], ['kommunizieren.html', 'grenzen.html']]
+    steps: [['index.html', 'kommunizieren.html#kippen'], ['kommunizieren.html', '#kippen'], ['kommunizieren.html', 'grenzen.html']]
   },
   {
     id: 'U2',
@@ -38,6 +38,16 @@ const journeys = [
     id: 'U6',
     need: 'Behandlungsmöglichkeiten verstehen und eine Anlaufstelle finden',
     steps: [['index.html', 'behandlung.html'], ['behandlung.html', '#therapieformen'], ['behandlung.html', 'unterstuetzung.html#beratung']]
+  },
+  {
+    id: 'U7',
+    need: 'Mitbetroffene Kinder erklären, betreuen und schützen',
+    steps: [['index.html', 'kinder.html'], ['kinder.html', '#alltag'], ['kinder.html', 'grenzen.html#gewalt']]
+  },
+  {
+    id: 'U8',
+    need: 'Mit eigenen Wörtern eine Fundstelle suchen',
+    steps: [['index.html', 'fragen.html'], ['fragen.html', 'suche.html'], ['suche.html', 'kinder.html']]
   }
 ];
 

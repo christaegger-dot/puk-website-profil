@@ -11,6 +11,7 @@ Diese Matrix legt fest, welche Seite ein Thema vollständig erklärt. Andere Sei
 | Beziehungsmuster | `beziehungen.html` | Verweis auf die Bedeutungsschleife |
 | Rolle und Verantwortung von Angehörigen | `rolle.html` | Ein Satz: Unterstützung ist freiwillig und begrenzt |
 | Grenzen, Gewalt und tragbarer Kontakt | `grenzen.html` | Sicherheitsrelevante Grenze direkt nennen; Vertiefung verlinken |
+| Mitbetroffene Kinder: Erklärung, Betreuung, Eskalation und Schutz | `kinder.html` | Den unmittelbar nötigen Schutzsatz direkt nennen; für Planung und Vertiefung verlinken |
 | Gesprächsführung und Beispielsätze | `kommunizieren.html` | Höchstens ein unmittelbar passender Beispielsatz |
 | Krise, Suizidgedanken und Nachsorge | `krise.html` | Geprüfter Zuständigkeitsverweis darf am Handlungspunkt wiederholt werden |
 | Behandlung, Schweigepflicht und Angebote | `behandlung.html` | Nur rollenbezogene Kurzfassung und Link |
@@ -29,6 +30,7 @@ Diese Matrix legt fest, welche Seite ein Thema vollständig erklärt. Andere Sei
 3. Kontaktbedingungen der Fachstelle werden auf `unterstuetzung.html#beratung` gepflegt. Startseite und Footer enthalten nur Absender, E-Mail und Übergang.
 4. Angebotsdaten werden auf der jeweiligen Angebotsseite gepflegt und mit Prüfdatum versehen. Andere Seiten verlinken dorthin.
 5. Bei neuen Texten wird vor der Freigabe geprüft, ob ein Thema bereits eine Hauptseite hat. Wenn ja, wird gekürzt und verlinkt.
+6. Suchbegriffe und Synonyme werden aus den Abschnittsinhalten und den im Seitenvertrag gepflegten Alternativbegriffen erzeugt. Produktive Suchanfragen werden nicht protokolliert.
 
 ## Prüfkriterium
 
