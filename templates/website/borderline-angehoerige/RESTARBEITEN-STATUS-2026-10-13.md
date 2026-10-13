@@ -11,6 +11,7 @@ Stand: 13.10.2026
 - Tastaturfokus bei direkten Sprunglinks in FAQ und Glossar
 - konkreter Ablauf für die erste Beratungsanfrage, ohne nicht veröffentlichte Öffnungs- oder Antwortzeiten zu erfinden
 - verbindliche Matrix für kanonische Inhalte und zulässige Wiederholungen
+- global erreichbare Kurzübersicht «Kurz und klar» für Situationen mit wenig Zeit oder Kraft; ausdrücklich keine geprüfte Fassung in Leichter Sprache
 
 ## Bewusster Institutionsentscheid – nicht als erledigt ausweisen
 
@@ -53,4 +54,5 @@ Eine WCAG- oder ISO-Gesamtkonformität wird bis zum dokumentierten Abschluss die
 - konsistentere Bereichstitel für Alltag/Beziehungen sowie Fragen/Nachschlagen
 - kanonische Seite für mitbetroffene Kinder
 - verbindliches Begriffssystem
-- acht strukturelle Nutzerwege und Erreichbarkeit aller veröffentlichten Inhaltsseiten
+- neun strukturelle Nutzerwege und Erreichbarkeit aller veröffentlichten Inhaltsseiten
+- ergänzende Kurzorientierung mit automatisierten Kriterien für Umfang, Satzlänge, Übergänge und globale Erreichbarkeit

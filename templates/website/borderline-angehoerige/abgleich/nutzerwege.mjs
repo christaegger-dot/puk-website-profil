@@ -48,6 +48,11 @@ const journeys = [
     id: 'U8',
     need: 'Mit eigenen Wörtern eine Fundstelle suchen',
     steps: [['index.html', 'fragen.html'], ['fragen.html', 'suche.html'], ['suche.html', 'kinder.html']]
+  },
+  {
+    id: 'U9',
+    need: 'Mit wenig Zeit oder Kraft einen nächsten Schritt finden',
+    steps: [['index.html', 'kurz.html'], ['kurz.html', '#jetzt'], ['kurz.html', 'unterstuetzung.html']]
   }
 ];
 

@@ -37,8 +37,8 @@ Dieses Audit ersetzt keine Nutzerforschung, keine reale Screenreader-Prüfung un
 - Alternative Begriffe werden im Seitenvertrag gepflegt.
 - Die Eingabe wird nicht übertragen oder gespeichert.
 - Ohne JavaScript bleibt ein vollständiges Verzeichnis der Themenseiten sichtbar.
-- 25 dokumentierte Suchszenarien: 25 bestanden; erwartete Fundstelle jeweils unter den ersten drei Treffern.
-- 175 erzeugte lokale Suchziele wurden auf vorhandene Seiten und Anker geprüft.
+- Nach Ergänzung der Kurzübersicht 26 dokumentierte Suchszenarien: 26 bestanden; erwartete Fundstelle jeweils unter den ersten drei Treffern.
+- 180 erzeugte lokale Suchziele wurden auf vorhandene Seiten und Anker geprüft.
 - Browserprüfung bei 1280 und 360 CSS-Pixeln: 13 von 13 Prüfungen bestanden. Geprüft wurden die priorisierten Treffer für «DBT» und «Meldepflicht», Live-Status, horizontaler Überlauf, Laufzeitfehler, das automatische Öffnen und Fokussieren eines Glossar-Direktlinks sowie das Sprungziel auf der Kinderseite.
 
 ### 3. Konsistentere Bereichslogik
@@ -105,7 +105,7 @@ Ein Szenario gilt als bestanden, wenn die vereinbarte Fundstelle unter den erste
 - Produktionsgate: 0 blockierende Befunde.
 - Historischer Satzabgleich: 0 Zeilen ohne Fundstelle, ausser explizit dokumentierten vollständigen Aufgabenrestrukturierungen.
 - Strukturierte Nutzerwege: alle bestanden; alle veröffentlichten Inhaltsseiten von der Startseite erreichbar.
-- Zero-Participant-Suche: 25 von 25 Szenarien bestanden; alle erzeugten Suchanker vorhanden.
+- Zero-Participant-Suche: 26 von 26 Szenarien bestanden; alle erzeugten Suchanker vorhanden.
 - Keine Übertragung oder Speicherung von Suchbegriffen.
 - Kein `tel:`-Link und keine neu eingeführte Krisennummer.
 - Kein horizontaler Überlauf bei 320 beziehungsweise 360 CSS-Pixeln.
@@ -117,10 +117,11 @@ Ein Szenario gilt als bestanden, wenn die vereinbarte Fundstelle unter den erste
 | --- | --- |
 | `node tools/build.mjs --production` | 21 Seiten; 0 blockierend; 1 bekannter Fehlalarm zur bibliografischen Seitenzahl 144 |
 | `node tools/gate.mjs --production` | 0 blockierend; derselbe bekannte Hinweis |
-| `node tools/gate.mjs --selftest` | 65/65 bestanden |
+| `node tools/gate.mjs --selftest` | nach Ergänzung der Direkteinstieg-Prüfung: 66/66 bestanden |
 | `node abgleich/pruefe-abgleich.mjs` | 7’412 Zeilen; 0 ohne Fundstelle |
 | `node abgleich/nutzerwege.mjs` | 8/8 Wege; 20/20 veröffentlichte Inhaltsseiten erreichbar |
-| `node abgleich/zero-participant-audit.mjs` | 25/25 Szenarien; 175 Suchziele; 0 Fehler |
+| `node abgleich/zero-participant-audit.mjs` | nach Ergänzung der Kurzübersicht: 26/26 Szenarien; 180 Suchziele; 0 Fehler |
 | `node abgleich/zero-participant-audit.mjs <export-ordner>` | derselbe Test auf dem eigenständigen Produktions-Export; verhindert einen leeren Export-Suchindex |
+| `node abgleich/kurzorientierung.mjs` | Umfang, Satzlänge, Aussagegrenze, Übergänge und globale Direkteinstiege |
 | `PW_CHROMIUM=/usr/bin/chromium node abgleich/bedienung.mjs` | alle 21 Seiten: Sprunglink erster Tabstopp; 0 Fokusstellen ohne sichtbaren Fokus |
 | gezielte Chromium-Prüfung der neuen Suche und Direktlinks | 13/13 bestanden; 0 Laufzeitfehler; 0 horizontaler Überlauf bei 360 und 1280 CSS-Pixeln |

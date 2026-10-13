@@ -40,6 +40,7 @@ function results(query) {
 }
 
 const scenarios = [
+  ['Kurzer Einstieg bei wenig Kraft', 'wenig Kraft', ['kurz.html']],
   ['Ein Gespräch kippt', 'Gespräch kippt', ['kommunizieren.html#kommunizieren-schnell', 'kommunizieren.html#kippen']],
   ['Eine kurze Gesprächsgrenze', 'Grenze drei Teile', ['kommunizieren.html#kippen']],
   ['Was ist nicht meine Aufgabe?', 'nicht meine Aufgabe', ['rolle.html']],

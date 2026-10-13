@@ -33,6 +33,7 @@ Dieses Begriffssystem ergänzt die Inhaltsverantwortungsmatrix. Es soll verhinde
 4. Sicherheitsbegriffe werden nicht als Metaphern verwendet.
 5. «Sie» bezeichnet die lesende angehörige Person. Wechsel der Perspektive werden ausdrücklich markiert.
 6. Beispiele sind Möglichkeiten, keine garantierten Wirkungen oder Pflichtfolgen.
+7. «Kurz und klar» bezeichnet eine redaktionelle Kurzübersicht. Ohne qualifizierte Sprachprüfung wird sie nicht als «Einfache Sprache» oder «Leichte Sprache» bezeichnet.
 
 ## Prüffrage vor der Freigabe
 
