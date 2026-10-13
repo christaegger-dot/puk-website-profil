@@ -765,6 +765,8 @@ Ab 1g ist DEAR Abbildung 1. Ältere Bemerkungen nennen sie Abbildung 2.
 | 715 | `/grenzen` › Finanzielle Grenzen | Sie sind es nicht. | übernommen (SPZ-E) | wörtlich | kommunizieren#beispiele | SPZ-F-5, SP2-K-2 |
 | 716 | neue Seite › `dear`, Abbildung 1 | – | neu (R2-K) | Wenn Sie etwas ansprechen möchten, helfen vier Schritte: beschreiben, was war, sagen, was es bei Ihnen auslöst, um etwas bitten und sagen, was es für Sie beide leichter macht. | grenzen#dear | R2-K, R2-6 (Pre-Release-Audit R2, 13.10.2026): erster Satz des Kurztexts der Abbildung «DEAR in vier Schritten»; fasst die vier Schritte der Figur zusammen, keine neue Aussage |
 | 717 | neue Seite › `dear`, Abbildung 1 | – | neu (R2-K) | DEAR steht für die englischen Anfangsbuchstaben der vier Schritte. | grenzen#dear | R2-K, R2-6: zweiter Satz des Kurztexts; erklärt das Kürzel; die Herkunft steht in der Vertiefung «Herkunft des Modells» |
+| 718 | neue Seite › `quellen` | – | neu (AR3-4) | Kanton Zürich (laufend), Opferbetreuung durch Forensic Nurses | grenzen#quellen | AR3-4 Runde 3 (E3): Kurzangabe zum neuen Eintrag auf `quellen`, Abschnitt `schweiz`; kein Bestandssatz |
+| 719 | neue Seite › `quellen` | – | neu (AR3-4) | Eidgenössisches Büro für die Gleichstellung von Frau und Mann (EBG) (laufend), Häusliche Gewalt | grenzen#quellen | AR3-4 Runde 3 (E1): Kurzangabe mit Titel der verlinkten Seite; bis AR3-4 ohne eigene Zeile |
 
 ## Prüfbedarf für W1 (Stand 09.10.2026, Korrektur 1f)
 

@@ -658,3 +658,14 @@ Grundlage: Entscheide F1 bis F6, P1 und P2 der Leitsitzung im Auftrag der Fachst
 | `ZUORDNUNG` | 6 Schlüssel auf die neuen Kurzangaben (Family Guidelines, BAG, Kanton Zürich, NHS, WHO, BFS); Erkennungstexte für BAG (URL), Kanton Zürich (Seitentitel), `INTERPRET (2019`, `Schweizerische Eidgenossenschaft (2026`, `Sotomo (2024`. Berechnung unverändert |
 | Zustandekommen | `pruefe-abgleich.mjs` meldete nach dem Bau 25 Zeilen ohne Fundstelle; dazu alle Zeilen gesucht, deren Fassung eine geänderte Angabe enthält, und von Hand gelesen: 28 Zeilen nachgeführt (21 neu mit AR3-4). Danach 7409 Zeilen, 0 ohne Fundstelle; 52 Zeilen mit Status AR3-4 |
 
+### AR3-4, Runde 3 (13.10.2026)
+
+Grundlage: Entscheide E1 bis E5 der Leitsitzung (`../PRUEFBERICHT.md`, Selbstprüfung «AR3-4 Quellenangaben», Runde 3). Freigabe ausstehend. Nur Quellenangaben, kein Satz der Themenseiten (die Satzänderung aus E2 setzt die Leitsitzung um).
+
+| Thema | Umsetzung |
+| --- | --- |
+| Einträge auf `quellen` | EBG neu gefasst mit Link auf «Häusliche Gewalt» (`quellen.md` Nr. 567 «neu (AR3-4)»); Opferhilfe mit zweitem Link (keine Zeile betroffen); neuer Eintrag Kanton Zürich, Forensic Nurses, ohne Link (Nr. 572 «neu (AR3-4)»); AWMF 038-015 mit «laut Register in Überarbeitung» (Nr. 171 «umformuliert (AR3-4)») |
+| Kurzangaben | `grenzen.md` Nr. 718 (Forensic Nurses) und 719 (EBG), je «neu (AR3-4)»; die «Verwendet in»-Zusätze bei NHS und Zaccaro auf `selbstfuersorge` betreffen keine Zeile |
+| `ZUORDNUNG` | Schlüssel EBG auf die neue Kurzangabe, Erkennung über die URL; neuer Schlüssel für Forensic Nurses |
+| Zustandekommen | `pruefe-abgleich.mjs` meldete 1 Zeile ohne Fundstelle (Nr. 567). Danach 7412 Zeilen, 0 ohne Fundstelle |
+

@@ -6383,6 +6383,59 @@ Die Kurzangaben der Einträge mit neuem Abrufdatum (F6) sind unverändert, wie e
 - **Satzdiff gegen Runde 1 (`a0d5b01`):** 37 Stellen, alle bibliografisch: 30 auf `quellen` und 7 Kurzangaben. Auf `quellen` erscheinen dabei drei unveränderte Sätze des Eintrags Family Guidelines («Praxismanual für Angehörige …», «NEABPD heisst seit 2024 BPD Alliance.», «Verwendet auf: …») als entfallen und neu, weil der Eintrag in der Liste verschoben ist; ihr Wortlaut ist gleich. Kein anderer Satz geändert.
 - **Satzdiff gegen `main` (`85cf129`):** Runde 1 und 2 zusammen, nur Quellenangaben und die Verschiebung oben.
 
+#### Runde 3 (13.10.2026)
+
+**Grundlage:** Entscheide E1 bis E5 der Leitsitzung der Veröffentlichung, übermittelt am 13.10.2026 (`send_message`). Die Fachstelle hat ihr dort geschrieben: «recherchiere und entscheide alles selbst». Die Leitsitzung trägt die Entscheide und die Freigabe selbst unter «Fachliche Freigabe der Fachstelle» ein. **Freigabe der Runde 3 ausstehend (Leitsitzung im Auftrag der Fachstelle).** Alle Belege der Leitsitzung hat diese Sitzung am 13.10.2026 selbst abgerufen und nachgeprüft. Geändert sind nur Quellenangaben. Kein Satz der Themenseiten ist geändert.
+
+**Nicht umgesetzt: E2, Satzänderung.** Auf `grenzen` › `gewalt` sollte «Unterstützung gibt es auch für Männer, Angehörige und Vertrauenspersonen.» zu «… Angehörige und nahestehende Personen.» werden. Der Auftrag AR3-4 an diese Sitzung erlaubt nur bibliografische Angaben, keinen Satz der Seiten. Die Leitsitzung setzt den Satz selbst um, wie sie es angeboten hat. Umgesetzt ist von E2 nur der zweite Link im Eintrag der Opferhilfe.
+
+| Nr. | Abschnitt | Vorher | Nachher | URL | Abruf | Beleg aus dem Abruf | Krisenregel |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| R3-1 (E1) | `schweiz` | Eidgenössisches Büro für die Gleichstellung von Frau und Mann (EBG). Informationen zu Schutz bei Gewalt. | Eidgenössisches Büro für die Gleichstellung von Frau und Mann (EBG) (laufend, Abruf 13.10.2026). Häusliche Gewalt (Link, mit `aria-label`). Mit den Informationsblättern B1 «Gewalt in Trennungssituationen» und B2 «Stalking» (2020). | `https://www.ebg.admin.ch/de/hausliche-gewalt` | 13.10.2026, `curl` 200 | Titel «Häusliche Gewalt». Seite: «Gewalthandlungen in Ehe und Partnerschaft und gegen Kinder sind Offizialdelikte. Das heisst, diese werden von Amtes wegen verfolgt, ohne dass das Opfer Strafanzeige einreichen muss.» In der Liste der Seite: «B1. Gewalt in Trennungssituationen · Infoblatt · PDF · 1. Juni 2020», «B2. Stalking · Infoblatt · PDF · 1. Juni 2020». **B1** (`curl` 200, PDF): «Trennungssituationen bergen deshalb ein erhöhtes Risiko für häusliche Gewalt …», «Information und Beratung, Schutz und Unterbringung, Risikoabschätzung und Sicherheitsplanung …». **B2**: «Dokumentieren und archivieren: … Empfohlen wird, für … Datum und Uhrzeit, Ort, Vorfall, allfällige Zeuginnen und Zeugen, ausgelöste Gefühle sowie psychische und physische Folgen beim Opfer festzuhalten.» | Seite bestanden: keine Notrufnummer. Die einzigen Treffer für «147» sind Dateigrössen («147.15 kB»). B1 und B2 nennen am Ende «Polizei: www.polizei.ch, Telefon 117» und «Medizinische Hilfe: www.erstehilfe.ch, Telefon 144» und sind deshalb **nicht verlinkt**. |
+| R3-2 (E2, Link) | `schweiz` | Opferhilfe Schweiz (laufend, Abruf 13.10.2026). Schutz (Link). Offizielle Informationsseite der Opferhilfe Schweiz (SODK). | … Schutz (Link) und Für wen ist die Opferhilfe? (Link) Offizielle Informationsseiten der Opferhilfe Schweiz (SODK). | `https://www.opferhilfe-schweiz.ch/de/was-ist-opferhilfe/fur-wen-ist-die-opferhilfe/` | 13.10.2026, Chromium 200 | Titel «Für wen ist die Opferhilfe? - Opferhilfe Schweiz». «Auch die Angehörigen von Opfern und ihnen nahestehende Personen können Opferhilfe erhalten.», «Die Opferhilfe hilft unabhängig davon, ob eine Strafanzeige eingereicht wurde …». | bestanden: kein Treffer im ersten Bildschirm und auf der ganzen Seite. |
+| R3-3 (E3) | `schweiz`, neu | – | Kanton Zürich, Gesundheitsdirektion, Amt für Gesundheit (laufend, Abruf 13.10.2026). Opferbetreuung durch Forensic Nurses. Website des Kantons Zürich. | ohne Link: `https://www.zh.ch/de/gesundheit/strategien-programme/forensic-nurses.html` | 13.10.2026, `curl` 200 | Titel «Opferbetreuung durch Forensic Nurses \| Kanton Zürich». Herausgeber im Kontaktblock: «Gesundheitsdirektion – Amt für Gesundheit». Belegsätze: «Sie können die Spuren von einer Forensic Nurse sichern lassen und bekommen medizinische Hilfe, falls sie diese brauchen.», «Sie können im Spital auch die Spuren der Tat sichern lassen.», «Sie können später immer noch eine Anzeige bei der Polizei machen, wenn sie dies möchten.» | nicht bestanden: Die Seite nennt 142, 117 und «0800 09 09 09». Deshalb **ohne Link und ohne URL**. |
+| R3-4 (E4) | `selbstfuersorge`, Kurzangaben | NHS (2026), Breathing exercises for stress · Verwendet in: «Wenn es gerade zu viel ist» | … Verwendet in: «Wenn es gerade zu viel ist» (Ablauf der Atemübung) | unverändert | 13.10.2026 (Runde 2) | «Breathe in gently and regularly. Some people find it helpful to count steadily from 1 to 5.» | Link unverändert |
+| R3-5 (E4) | `selbstfuersorge`, Kurzangaben | Zaccaro et al. (2018) · Verwendet in: «Wenn es gerade zu viel ist», «Nicht allein tragen» | … Verwendet in: «Wenn es gerade zu viel ist» (langsames Atmen, weniger als zehn Atemzüge pro Minute), «Nicht allein tragen» | `https://doi.org/10.3389/fnhum.2018.00353` (Eintrag unverändert) | 13.10.2026, `curl` 200 (frontiersin.org) | Titel «How Breath-Control Can Change Your Life: A Systematic Review on Psycho-Physiological Correlates of Slow Breathing». Im Abstract: «slow breathing techniques (<10 breaths/minute)». Vier Sekunden ein und sechs aus ergeben 6 Atemzüge pro Minute. | Link unverändert |
+| R3-6 (E5) | `diagnostik` | … AWMF-Registernummer 038-015, Version 2.0 vom 14. November 2022. | … Version 2.0 vom 14. November 2022, laut Register in Überarbeitung. | unverändert | 13.10.2026, Chromium 200 (Runde 2) | Register sichtbar: «Stand: 14.11.2022», «Gültig bis: 31.05.2026 (in Überarbeitung)». Das Abrufdatum steht im Kopf seit Runde 2. | Link unverändert |
+
+**Kurzangaben, Runde 3 (auf `grenzen`):**
+- «Eidgenössisches Büro für die Gleichstellung von Frau und Mann (EBG)» wird zu «Eidgenössisches Büro für die Gleichstellung von Frau und Mann (EBG) (laufend), Häusliche Gewalt». «Verwendet in» bleibt.
+- Neu, alphabetisch vor «Linehan (2015)»: «Kanton Zürich (laufend), Opferbetreuung durch Forensic Nurses», mit «Verwendet in: «Wenn Gewalt oder Bedrohung vorkommt» (Spurensicherung ohne Anzeige; Beispiel Kanton Zürich)».
+
+`verwendet-auf.mjs --schreiben` hat beim neuen Eintrag «Verwendet auf: «Grenzen»» gesetzt.
+
+**Prüfbedarf aus Runde 2, Stand nach Runde 3:**
+- **R2-P1 · EBG:** entschieden (Leitsitzung, E1–E5); umgesetzt (R3-1).
+- **R2-P2 · Opferhilfe (P1):** entschieden (Leitsitzung, E1–E5). Umgesetzt: zweiter Link (R3-2) und Beleg zur Spurensicherung (R3-3, R3-1/B2). **Offen:** die Satzänderung aus E2, bei der Leitsitzung.
+- **R2-P3 · NHS, 4 und 6 Sekunden:** entschieden (Leitsitzung, E1–E5). Der Text bleibt; Beleg über Zaccaro et al. (2018) (R3-4, R3-5).
+- **R2-P4 · AWMF 038-015:** entschieden (Leitsitzung, E1–E5); umgesetzt (R3-6).
+- **R2-P5 · «2026» auf `diagnose`:** unverändert. Die Leitsitzung hat es nicht entschieden; es ist ein Gültigkeitsjahr, keine Quellenangabe.
+
+**Zählung nach Runde 3** (`quellen`, Abschnitte `forschung` bis `schweiz`, jetzt 86 Einträge):
+- **Ohne Jahr und ohne «laufend»: 0** (vor AR3-4: 9).
+- **Online-Quellen ohne Abrufdatum: 29.** 27 mit PubMed-Link und 2 mit DOI-Link: Zeitschriftenartikel mit dauerhafter Kennung, ausdrücklich nicht Teil von F6.
+- Alle Einträge mit Web- oder PDF-Link haben ein Abrufdatum.
+- Zwei Einträge ohne Link tragen das Abrufdatum, weil die Seiten Notrufnummern zeigen: Pro Juventute und Kanton Zürich (Forensic Nurses).
+- «WHO Europa (2025). Caring for yourself while caring for others.» hat keinen Link und deshalb kein Abrufdatum. Nicht Teil dieses Auftrags; gemeldet zur Kenntnis.
+
+**Abgleich:** 3 Zeilen nachgeführt bzw. neu:
+- `quellen.md` Nr. 567 «neu (AR3-4)» und Nr. 171 «umformuliert (AR3-4)»
+- neu `quellen.md` Nr. 572 und `grenzen.md` Nr. 718, 719, je «neu (AR3-4)»
+
+`ZUORDNUNG`: Schlüssel EBG auf die neue Kurzangabe (Erkennung über die URL), neuer Schlüssel «Kanton Zürich (laufend), Opferbetreuung durch Forensic Nurses».
+
+**Ergebnisse der Befehle (Runde 3):**
+- `node tools/build.mjs` → «Gate draft: 0 blockierend, 1 Hinweise» («144», wie bisher). Vorher meldete der Build einen blockierenden Befund: Link «Häusliche Gewalt» ohne sprechendes `aria-label`. Der Link hat jetzt eines.
+- `node tools/gate.mjs --selftest` → «Selbsttest: 65/65 bestanden.»
+- `node tools/gate.mjs --production` → «Gate production: 0 blockierend, 1 Hinweise»
+- `node abgleich/pruefe-abgleich.mjs` → «7412 Zeilen, 0 ohne Fundstelle». Vorher meldete das Skript 1 Zeile ohne Fundstelle: `quellen.md` Nr. 567.
+- `node abgleich/verwendet-auf.mjs`, beide Modi → «86 Einträge, 0 mit anderer Angabe, 0 Kurzangaben nicht zugeordnet»
+- **Satzdiff gegen `638dc8e`:** nur Quellenangaben.
+  - `grenzen`: 2 Kurzangaben (EBG geändert, Forensic Nurses neu)
+  - `selbstfuersorge`: 2 Angaben «Verwendet in»
+  - `quellen`: EBG-Eintrag (3 Sätze), Opferhilfe (2 Sätze), neuer Eintrag Kanton Zürich (4 Sätze mit «Verwendet auf») und der Zusatz bei AWMF (1 Satz)
+  - **Kein Satz der Themenseiten geändert**, also auch nicht der Satz aus E2.
+
 ### Frühere Stände der Selbstprüfung (vor AR3-4)
 
 **Stand 13.10.2026 · Nachtrag Korrektur AR3-1 (NAR3-1, NAR3-2) · bauende Sitzung (Claude Code).** Nach der Nachprüfung AR3-1 (PR christaegger-dot/puk-website-profil#80) zeigt das Linkziel der Quelle «Family Guidelines» in `content/quellen.html` › `versorgung` direkt auf das PDF bei der BPD Alliance (`https://bpdalliance.org/wp-content/uploads/2026/03/Family-Guidelines-standard.pdf`, 200, `application/pdf`), nicht mehr auf die Ressourcenseite mit Krisenblock (NAR3-2). Das bleibt im Rahmen des Entscheids der Fachstelle «Auf BPD Alliance umstellen». Kein sichtbarer Text ändert sich. Im Bericht ist der Abschnittsname von `angehoerige` auf `versorgung` berichtigt (NAR3-1). «(laufend)» bleibt bis AR3-4. Neuer Export und kurze Nachprüfung folgen.
