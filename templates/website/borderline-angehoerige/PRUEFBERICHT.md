@@ -6397,6 +6397,7 @@ Die Kurzangaben der Einträge mit neuem Abrufdatum (F6) sind unverändert, wie e
 | R3-4 (E4) | `selbstfuersorge`, Kurzangaben | NHS (2026), Breathing exercises for stress · Verwendet in: «Wenn es gerade zu viel ist» | … Verwendet in: «Wenn es gerade zu viel ist» (Ablauf der Atemübung) | unverändert | 13.10.2026 (Runde 2) | «Breathe in gently and regularly. Some people find it helpful to count steadily from 1 to 5.» | Link unverändert |
 | R3-5 (E4) | `selbstfuersorge`, Kurzangaben | Zaccaro et al. (2018) · Verwendet in: «Wenn es gerade zu viel ist», «Nicht allein tragen» | … Verwendet in: «Wenn es gerade zu viel ist» (langsames Atmen, weniger als zehn Atemzüge pro Minute), «Nicht allein tragen» | `https://doi.org/10.3389/fnhum.2018.00353` (Eintrag unverändert) | 13.10.2026, `curl` 200 (frontiersin.org) | Titel «How Breath-Control Can Change Your Life: A Systematic Review on Psycho-Physiological Correlates of Slow Breathing». Im Abstract: «slow breathing techniques (<10 breaths/minute)». Vier Sekunden ein und sechs aus ergeben 6 Atemzüge pro Minute. | Link unverändert |
 | R3-6 (E5) | `diagnostik` | … AWMF-Registernummer 038-015, Version 2.0 vom 14. November 2022. | … Version 2.0 vom 14. November 2022, laut Register in Überarbeitung. | unverändert | 13.10.2026, Chromium 200 (Runde 2) | Register sichtbar: «Stand: 14.11.2022», «Gültig bis: 31.05.2026 (in Überarbeitung)». Das Abrufdatum steht im Kopf seit Runde 2. | Link unverändert |
+| R3-7 (E6) | `versorgung`, Family Guidelines | NEABPD heisst seit 2024 BPD Alliance. | Die National Education Alliance for Borderline Personality Disorder (NEABPD) tritt heute als BPD Alliance auf. | nicht verlinkt: `https://bpdalliance.org/about/` (leitet auf `/about-us/`) | 13.10.2026, `curl` 200 | «The BPD Alliance, also known as the National Education Alliance for Borderline Personality Disorder, began in 2001 …». Die Jahreszahl 2024 kommt auf der Seite nicht vor. Der Link des Eintrags bleibt auf dem PDF. | nicht bestanden: «U.S. Crisis Support Dial or Text 988 …», «Europe Crisis Support Dial or Text 112 …»; deshalb kein Link |
 
 **Kurzangaben, Runde 3 (auf `grenzen`):**
 - «Eidgenössisches Büro für die Gleichstellung von Frau und Mann (EBG)» wird zu «Eidgenössisches Büro für die Gleichstellung von Frau und Mann (EBG) (laufend), Häusliche Gewalt». «Verwendet in» bleibt.
@@ -6409,7 +6410,7 @@ Die Kurzangaben der Einträge mit neuem Abrufdatum (F6) sind unverändert, wie e
 - **R2-P2 · Opferhilfe (P1):** entschieden (Leitsitzung, E1–E5). Umgesetzt: zweiter Link (R3-2) und Beleg zur Spurensicherung (R3-3, R3-1/B2). **Offen:** die Satzänderung aus E2, bei der Leitsitzung.
 - **R2-P3 · NHS, 4 und 6 Sekunden:** entschieden (Leitsitzung, E1–E5). Der Text bleibt; Beleg über Zaccaro et al. (2018) (R3-4, R3-5).
 - **R2-P4 · AWMF 038-015:** entschieden (Leitsitzung, E1–E5); umgesetzt (R3-6).
-- **R2-P5 · «2026» auf `diagnose`:** unverändert. Die Leitsitzung hat es nicht entschieden; es ist ein Gültigkeitsjahr, keine Quellenangabe.
+- **R2-P5 · «2026» auf `diagnose`:** R2-P5 entschieden (Leitsitzung): keine Änderung. «2026» ist das Jahr, für das die Vorgabe gilt (Austritte ab 1. Januar 2026, «Medizinisches Kodierungshandbuch 2026»), kein Erscheinungsjahr; die Quellenangabe nennt (2025).
 
 **Zählung nach Runde 3** (`quellen`, Abschnitte `forschung` bis `schweiz`, jetzt 86 Einträge):
 - **Ohne Jahr und ohne «laufend»: 0** (vor AR3-4: 9).
@@ -6418,7 +6419,7 @@ Die Kurzangaben der Einträge mit neuem Abrufdatum (F6) sind unverändert, wie e
 - Zwei Einträge ohne Link tragen das Abrufdatum, weil die Seiten Notrufnummern zeigen: Pro Juventute und Kanton Zürich (Forensic Nurses).
 - «WHO Europa (2025). Caring for yourself while caring for others.» hat keinen Link und deshalb kein Abrufdatum. Nicht Teil dieses Auftrags; gemeldet zur Kenntnis.
 
-**Abgleich:** 3 Zeilen nachgeführt bzw. neu:
+**Abgleich:** 3 Zeilen nachgeführt bzw. neu, dazu `quellen.md` Nr. 193 «umformuliert (AR3-4)» (E6):
 - `quellen.md` Nr. 567 «neu (AR3-4)» und Nr. 171 «umformuliert (AR3-4)»
 - neu `quellen.md` Nr. 572 und `grenzen.md` Nr. 718, 719, je «neu (AR3-4)»
 
@@ -6434,6 +6435,7 @@ Die Kurzangaben der Einträge mit neuem Abrufdatum (F6) sind unverändert, wie e
   - `grenzen`: 2 Kurzangaben (EBG geändert, Forensic Nurses neu)
   - `selbstfuersorge`: 2 Angaben «Verwendet in»
   - `quellen`: EBG-Eintrag (3 Sätze), Opferhilfe (2 Sätze), neuer Eintrag Kanton Zürich (4 Sätze mit «Verwendet auf») und der Zusatz bei AWMF (1 Satz)
+  - `quellen`, Nachtrag E6: der Satz zum Herausgeber im Eintrag Family Guidelines (1 Satz, Quellenangabe)
   - **Kein Satz der Themenseiten geändert**, also auch nicht der Satz aus E2.
 
 ### Frühere Stände der Selbstprüfung (vor AR3-4)

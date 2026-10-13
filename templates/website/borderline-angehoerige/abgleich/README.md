@@ -667,5 +667,6 @@ Grundlage: Entscheide E1 bis E5 der Leitsitzung (`../PRUEFBERICHT.md`, Selbstpr�
 | Einträge auf `quellen` | EBG neu gefasst mit Link auf «Häusliche Gewalt» (`quellen.md` Nr. 567 «neu (AR3-4)»); Opferhilfe mit zweitem Link (keine Zeile betroffen); neuer Eintrag Kanton Zürich, Forensic Nurses, ohne Link (Nr. 572 «neu (AR3-4)»); AWMF 038-015 mit «laut Register in Überarbeitung» (Nr. 171 «umformuliert (AR3-4)») |
 | Kurzangaben | `grenzen.md` Nr. 718 (Forensic Nurses) und 719 (EBG), je «neu (AR3-4)»; die «Verwendet in»-Zusätze bei NHS und Zaccaro auf `selbstfuersorge` betreffen keine Zeile |
 | `ZUORDNUNG` | Schlüssel EBG auf die neue Kurzangabe, Erkennung über die URL; neuer Schlüssel für Forensic Nurses |
-| Zustandekommen | `pruefe-abgleich.mjs` meldete 1 Zeile ohne Fundstelle (Nr. 567). Danach 7412 Zeilen, 0 ohne Fundstelle |
+| Nachtrag E6 | `quellen.md` Nr. 193 «umformuliert (AR3-4)»: Satz zum Herausgeber im Eintrag Family Guidelines nach der Seite der BPD Alliance |
+| Zustandekommen | `pruefe-abgleich.mjs` meldete 1 Zeile ohne Fundstelle (Nr. 567), nach E6 noch einmal 1 (Nr. 193). Danach 7412 Zeilen, 0 ohne Fundstelle |
 
