@@ -17,8 +17,8 @@ await discover.goto(BASE + 'suche.html', { waitUntil: 'load' });
 const targets = await discover.locator('[data-search-level="section"] a[href*="#"]').evaluateAll(links => [...new Set(links.map(link => link.getAttribute('href')))]);
 await discover.close();
 
-async function run(width, selected, label) {
-  const context = await browser.newContext({ viewport: { width, height: 900 }, reducedMotion: 'reduce' });
+async function run(width, selected, label, options = {}) {
+  const context = await browser.newContext({ viewport: { width, height: 900 }, reducedMotion: 'reduce', ...options });
   const page = await context.newPage();
   const runtime = [];
   page.on('pageerror', error => runtime.push(`pageerror: ${error.message}`));
@@ -50,12 +50,19 @@ async function run(width, selected, label) {
         exists: Boolean(target),
         visible: Boolean(rect && rect.bottom > 0 && rect.top < innerHeight),
         detailsOpen: !details || details.open,
-        inDetails: Boolean(details)
+        inDetails: Boolean(details),
+        focusVisible: (() => {
+          const active = document.activeElement;
+          if (!active) return false;
+          const style = getComputedStyle(active);
+          return (style.outlineStyle !== 'none' && parseFloat(style.outlineWidth) > 0) || (style.boxShadow && style.boxShadow !== 'none');
+        })()
       };
     }, id);
     if (!state.exists) failures.push(`${href}: Ziel fehlt`);
     if (!state.visible) failures.push(`${href}: Ziel liegt nach dem Sprung ausserhalb des Ansichtsfensters`);
     if (!state.detailsOpen) failures.push(`${href}: umgebende Vertiefung bleibt geschlossen`);
+    if (!state.focusVisible) failures.push(`${href}: fokussiertes Sprungziel hat keinen sichtbaren Fokus`);
     if (state.inDetails) openedDetails++;
   }
   if (runtime.length) failures.push(...runtime);
@@ -69,7 +76,8 @@ const mobileTargets = targets.filter(href => formerlyStatic.has(href.split('#')[
 let failures = 0;
 failures += await run(1280, targets, 'vollständiger Suchindex bei 1280 CSS-Pixeln');
 failures += await run(360, mobileTargets, 'früher nicht fokussierbare Ziele bei 360 CSS-Pixeln');
+failures += await run(1280, targets, 'vollständiger Suchindex bei erzwungenen Farben', { forcedColors: 'active' });
 await browser.close();
 
-console.log(`\nBrowser-Sprungzielprüfung: ${targets.length} vollständige Ziele · ${mobileTargets.length} mobile Gegenproben · ${failures} Fehler`);
+console.log(`\nBrowser-Sprungzielprüfung: ${targets.length} vollständige Ziele · ${mobileTargets.length} mobile Gegenproben · ${targets.length} Kontrast-Gegenproben · ${failures} Fehler`);
 if (targets.length !== 160 || mobileTargets.length !== 19 || failures) process.exit(1);
