@@ -220,6 +220,25 @@ Dazu 5 leichte Befunde zu Bericht und Abgleich. Die erste und zweite Prüfrunde 
 - Die Statustabelle bleibt unverändert; R1, R2 und R3 bleiben «offen», bis eine Prüfsitzung sie setzt.
 - **Nachtrag 13.10.2026:** Die Nachprüfung R2-K (PR christaegger-dot/puk-website-profil#78) bestätigt, dass die Sätze wörtlich und am genannten Ort stehen; die Freigabe gilt damit. Die Fachstelle hat sie zusätzlich im Entwurfs-PR christaegger-dot/borderline-angehoerige#659 zum Kandidaten `5d5aed4` bestätigt («Genehmigt; R2-K-Sätzen», etwa 05.45 Uhr), von der Sitzung, die #659 beobachtet, weitergeleitet.
 
+### Annahme von «Go mit Auflagen» (13.10.2026)
+
+**13.10.2026 · Fachstelle Angehörigenarbeit PUK.** Entscheid nach V-8 auf Rückfrage der bauenden Sitzung, von ihr übertragen. Frage: «Nimmst du «Go mit Auflagen» als Freigabe für die Veröffentlichung an?» Antwort: «Ja, mit Auflagen annehmen».
+
+- **Was das ist:** ein Entscheid der Fachstelle, keine Prüfung. Das Prüfergebnis bleibt im Abschnitt «R3 Freigabe-Audit» unverändert «Go mit Auflagen». Die Leitlinie setzt R3 nur bei «Go» auf «erledigt» (`guidelines/00-pre-release-audits.md`). Die Annahme gilt deshalb als begründete Ausnahme, wie R1-1 und SPZ-F-32.
+- **Grund:** Nur AR3-1 betrifft den Stand vor der Veröffentlichung, und AR3-1 verlangt einen Nachweis, keine Änderung der Website. AR3-2 prüft die Produktion am Tag des Merge. AR3-3 bis AR3-5 verbessern die Website danach, mit Frist.
+- **Auflagen** (Wortlaut und Zuständigkeit im Abschnitt «R3 Freigabe-Audit»):
+  - AR3-1 externe Links: vor dem Merge von #659
+  - AR3-2 Prüfung der Produktion: am Tag des Merge
+  - AR3-3 reale Tests: bis 13.01.2027
+  - AR3-4 Quellenangaben vervollständigen: bis 13.01.2027
+  - AR3-5 Ausnahme R1-1 beenden: bis 13.01.2027
+- **Stand AR3-1 (13.10.2026):**
+  - Die 27 PubMed-Links sind bestätigt. Abgefragt über die PubMed-Schnittstelle der Sitzung (Werkzeug «PubMed», Artikel-Metadaten) von der bauenden Sitzung: alle 27 PMIDs vorhanden, je mit Titel und Zeitschrift.
+  - Die 37 übrigen externen Links sind noch nicht geprüft. Die Netzwerkrichtlinie der Umgebung sperrte sie (Proxy 403). Die Fachstelle gibt das Netz frei; danach prüft die bauende Sitzung und trägt das Ergebnis hier nach.
+  - Die 9 Verweise auf `borderline-angehoerige.netlify.app` antworten heute mit 404, weil dort noch die React-Fassung läuft. Sie gehören zu AR3-2.
+- **Statuszeile R3:** Wer sie nach diesem Entscheid setzt, entscheidet die Fachstelle. Die bauende Sitzung setzt keine Stufe (Ablauf, Regel 2); bis dahin bleibt sie «offen».
+- **Veröffentlichung:** Sie braucht ein eigenes Ja der Fachstelle (V-9). Am 13.10.2026 auf Rückfrage: «Noch nicht». Die Schritte werden vorbereitet; Netlify und #659 bleiben bis dahin unverändert.
+
 ## Nachprüfung R2-K (13.10.2026, Stand 5d474eb)
 
 **Prüfsitzung (Claude Code), 13.10.2026.** Dieselbe Sitzung, die R1 und R2 geprüft hat (Abschnitt «Pre-Release-Audits R1 und R2»). Sie hat die Website weder gebaut noch die Korrektur R2-K umgesetzt, und sie hat nichts entschieden. Auftrag der bauenden Sitzung im Auftrag der Fachstelle: Korrektur R2-K nachprüfen und die Zeilen R1 und R2 nach der Leitlinie setzen. Geprüft ist `puk-website-profil` am Commit `5d474eb` (PR #76) und der Release-Kandidat auf der Vorschau `https://deploy-preview-659--borderline-angehoerige.netlify.app` (Export von `5d474eb`, `borderline-angehoerige` Commit `5d5aed4`, nur gelesen).
