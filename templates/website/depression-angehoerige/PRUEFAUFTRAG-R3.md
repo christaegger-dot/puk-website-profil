@@ -22,7 +22,7 @@ Eine Sitzung macht jeden Teil, dessen Voraussetzung erfüllt ist, und hört dann
 
 ## 2. Wer prüft
 
-- **Eine neue Sitzung**, die an dieser Website nichts gebaut, korrigiert oder entschieden hat. Ausgeschlossen sind auch die neunte Prüfsitzung (#71; hat diesen Auftrag geschrieben), die zehnte (hat ihn nachgeführt) und die achte (hat W1-39 und W3-13 im Rollenwechsel umgesetzt).
+- **Eine neue Sitzung**, die an dieser Website nichts gebaut, korrigiert oder entschieden hat. Ausgeschlossen sind auch die neunte Prüfsitzung (#71; hat diesen Auftrag geschrieben), die zehnte (hat ihn nachgeführt) und die achte (hat W1-39 und W3-13 im Rollenwechsel umgesetzt). _Nachtrag 13.10.2026:_ ausgeschlossen sind ausserdem die neunte Prüfsitzung B (hat W1-40 und W1-F-22 umgesetzt) und die zwölfte (hat den Entwurfs-Deploy gemacht). R3 übernimmt nach Entscheid der Fachstelle eine andere KI (`PRUEFBERICHT.md`, «Von der Fachstelle entschieden», 13.10.2026).
 - **Netz:** Am einfachsten freier Internetzugang für diese Sitzung (Einstellungen der Umgebung › Network access), weil die 46 DOI-Links auf Verlagsseiten weiterleiten. Sonst mindestens diese Hosts: `www.leitlinien.de`, `icd.who.int`, `doi.org`, `api.crossref.org`, `promentesana.ch`, `stand-by-you.ch`, `swisslife.ch`, `deutschebahnstiftung.de`, `www.bag.admin.ch`, `www.depressionen.ch`, `www.deutsche-depressionshilfe.de`, `www.fedlex.admin.ch`, `www.kinderseele.ch`, `www.mhfa.com.au`, `www.obsan.admin.ch`, `www.psychiatrie.ch`, `www.pukzh.ch`, `www.selbsthilfezuerich.ch`, `www.vaskzuerich.ch`, `www.wie-gehts-dir.ch`, `www.zh.ch`, `*.netlify.app`.
 - **Bot-Schutz:** `www.deutsche-depressionshilfe.de` (Anhang A, Nr. 35, Barometer 2018) antwortete am 12.10.2026 auf `curl` mit 403 von Cloudflare, auch auf `HEAD`. Die Datei ist im eingebauten Browser der Claude-Desktop-App am Original bestätigt (W3, Prüfrunde 10). Bleibt die Sperre bestehen, die Adresse nicht umgehen. Dann gilt sie als «nicht geprüft», und die Prüfung erfolgt im Browser durch eine Person oder mit Zustimmung der Fachstelle.
 - **IDs neuer Befunde:** W1-41, W3-14, BD-13, Fragen an die Fachstelle W1-F-23, R3-01. W1-40 und W1-F-22 sind seit W1, Prüfrunde 12 vergeben.
@@ -211,6 +211,8 @@ Alle `mailto:` und der sichtbare Text gleich `angehoerigenarbeit@pukzh.ch`, glei
 
 **Voraussetzung:** Die Fachstelle gibt der Sitzung die Ergebnisblätter (`FREIGABE-ENTSCHEIDE.md`, Abschnitt 7 e) in der Startnachricht oder als Datei. Fehlen sie, entfällt Teil B.
 
+_Nachtrag 13.10.2026:_ Die Fachstelle hat entschieden, dass es keine realen Tests gibt («reale Tests: wird es nicht geben!»). Teil B entfällt; Bedienung und Barrierefreiheit steht auf «entfällt» mit dieser Begründung (`PRUEFBERICHT.md`, «Von der Fachstelle entschieden» und «Bedienung und Barrierefreiheit» › «Entscheid der Fachstelle zu den realen Tests»).
+
 1. **Eintragen,** Fall für Fall und wörtlich: Screenreader unter «Bedienung und Barrierefreiheit» › «Protokoll reale Screenreader-Läufe (offen)» (Spalten VO, NV, VO-iOS), Tastatur und Touch unter «Protokoll Hardwaretastatur und Touch (offen)». Kopfangaben je Umgebung: Gerät, System, Screenreader, Browser, Versionen, Datum, Person oder Kürzel. «nicht geprüft» bleibt «nicht geprüft».
 2. **Mindestumfang prüfen:** zwei Screenreader-Läufe (z. B. VoiceOver und NVDA), ein Durchgang mit Hardwaretastatur, einer auf einem Touch-Gerät.
 3. **Befunde:** jeder Fall «nicht bestanden» als BD-13 ff. mit Gewicht und Beleg. Beobachtungen zu BD-08 (Schritte VO-3 und NV-3), zum Kreislauf (BD-12) und zu Wortumbrüchen bei grosser Schrift für die Fachstelle festhalten.
@@ -269,6 +271,8 @@ Beide bleiben unverändert. Ob sie archiviert werden, entscheidet die Fachstelle
 ## 7. Teil C · R3 Freigabe-Audit
 
 **Voraussetzung:** W1, W3 und Bedienung stehen auf «erledigt». Sonst entfällt Teil C; R3 bleibt «offen».
+
+_Nachtrag 13.10.2026:_ W1 und W3 sind erledigt (Nr. 35 und 62 im Browser der Fachstelle geprüft, W1, Nachtrag zu Prüfrunde 14). Bedienung steht nach Entscheid der Fachstelle auf «entfällt» (keine realen Tests); Teil C ist damit möglich. R3 beurteilt die Abweichung von der Leitlinie (Stufe 5: mindestens zwei reale Screenreader-Läufe). Der Entwurfs-Deploy steht bereit: Deploy-Vorschau `https://deploy-preview-1--depression-angehoerige.netlify.app` (Pull Request #1 im Repository `christaegger-dot/depression-angehoerige`, Quell-Commit `da9f1f2`). Netlify schreibt dort interne Links ohne `.html` um (W3-12, Punkt 21) und fügt den Netlify Drawer ein (Punkte 17 und 19); Einzelheiten in `PRUEFBERICHT.md`, «Umgesetzt nach den Prüfrunden», Eintrag «Entwurfs-Deploy für R3».
 
 **Vorher:** die Schritte 1 bis 3 aus Abschnitt 6 (Repository, Netlify-Site, Entwurfs-Deploy als Deploy-Vorschau). Die Ziel-Adresse `https://depression-angehoerige.netlify.app` antwortete am 12.10.2026 um 21.30 UTC mit 404, und das Produktionsgate lässt `node tools/export.mjs <ordner> --production` erst nach R3 «Go» zu. Ohne den Entwurfs-Deploy sind die Punkte 17 (Indexierung) und 21 (Links auf der Ziel-Adresse) «nicht prüfbar», und R3 kann nicht «Go» ergeben.
 
