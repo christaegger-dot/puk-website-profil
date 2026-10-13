@@ -8,7 +8,7 @@
 })(typeof self !== 'undefined' ? self : this, function () {
 'use strict';
 const VERSION = 'PUK Website Kit 1.10.1-r4 · abgeleitet';
-const BUILD = 'r4-8';
+const BUILD = 'r4-9';
 const FORMATS = ['text', 'figure', 'process', 'cycle', 'comparison', 'decision', 'illustration', 'stepwise-model', 'tension-field', 'relationship-map', 'continuum', 'layer-model'];
 /* Interaktive Komponenten und Erklärmuster G brauchen components/interaktion.js (HTML-Fassungen ohne React).
    Prüfbefund W3-01 (11.10.2026): auch jede Seite mit aufklappbarer Vertiefung (details) – das Skript öffnet sie vor dem Druck. */
@@ -102,6 +102,7 @@ const has = (nd, k) => !!nd.attrs && Object.prototype.hasOwnProperty.call(nd.att
 const cls = (nd, c) => (' ' + ((nd.attrs && nd.attrs.class) || '') + ' ').includes(' ' + c + ' ');
 const up = (nd, pred) => { for (let p = nd.parent; p; p = p.parent) if (p.attrs && pred(p)) return p; return null; };
 const byId = (doc, id) => id ? one(doc, x => x.attrs.id === id) : null;
+const foldFaqAnswers = html => String(html || '').replace(/(<h3\s+class="puk-site-subheading"\s+id="f-[^"]+">[\s\S]*?<\/h3>)([\s\S]*?)(?=<h3\s+class="puk-site-subheading"\s+id="f-|<\/div><\/div><\/section>)/g, (m, heading, answer) => answer.includes('data-responsibility-inline') ? m : `<details class="puk-site-faq"><summary>${heading}</summary><div class="puk-site-faq__answer">${answer.trim()}</div></details>\n`);
 
 /* ---------- Pfade ---------- */
 const isExternalUrl = u => /^\s*(?:[a-z][a-z0-9+.-]*:)?\/\//i.test(u || '');
@@ -132,11 +133,16 @@ function renderPage(cfg, page, content) {
   const direct = '';
   /* Profilentscheid 09.10.2026: Verweis im Text auf die zuständigen Stellen. Der Platzhalter <p data-responsibility-inline></p> wird mit dem geprüften Wortlaut aus site.config.json › responsibility.inline gefüllt; Seiten schreiben ihn nie selbst. */
   const inl = cfg.responsibility && cfg.responsibility.inline;
-  const body = inl && inl.text ? content.replace(INLINE_RE, `<p class="puk-longform__boundary puk-site-inline-ref" data-responsibility-inline>${esc(inl.text)}</p>`) : content;
+  const contentWithResponsibility = inl && inl.text ? content.replace(INLINE_RE, `<p class="puk-longform__boundary puk-site-inline-ref" data-responsibility-inline>${esc(inl.text)}</p>`) : content;
+  const body = page.id === 'fragen' ? foldFaqAnswers(contentWithResponsibility) : contentWithResponsibility;
   const subdued = sa.variant === 'responsibility' ? `<section class="puk-site-safety puk-site-safety--responsibility" data-safety-access="responsibility" data-review-status="${esc(sa.reviewStatus)}" aria-labelledby="puk-safety-title"><h2 class="puk-web-footer__heading" id="puk-safety-title">${esc(sa.label || 'Zuständigkeit')}</h2><p class="puk-web-footer__copy">${esc(sa.text)}</p>${sa.targetHref ? `<p class="puk-web-footer__copy"><a href="${esc(sa.targetHref)}">${esc(sa.targetLabel)}</a></p>` : ''}${review ? `<p class="puk-web-footer__copy puk-site-review">${review}</p>` : ''}</section>` : '';
   const draftbar = page.status === 'draft' ? `<p class="puk-site-draftbar" data-page-status="draft"><span class="puk-web-container">Entwurf · nicht in der Navigation · nicht veröffentlichen</span></p>` : '';
   const menu = nav.length > NAV_MAX;
-  const navItems = nav.map(p => `<li><a class="puk-web-nav__link" href="${esc(p.href)}"${p.id === page.id ? ' aria-current="page"' : ''}>${esc(p.navLabel)}</a></li>`).join('\n');
+  const groupRoot = cfg.pages.find(p => p.id === page.groupRootId) || page;
+  const navItems = nav.map(p => {
+    const current = p.id === page.id ? ' aria-current="page"' : (p.id === groupRoot.id ? ' aria-current="location" data-current-section="true"' : '');
+    return `<li><a class="puk-web-nav__link" href="${esc(p.href)}"${current}>${esc(p.navLabel)}</a></li>`;
+  }).join('\n');
   const navHtml = menu
     ? `<nav class="puk-web-nav puk-site-nav--menu" aria-label="Hauptnavigation"><div class="puk-disclosure puk-site-menu" data-puk-disclosure><span class="puk-disclosure__label">Menü</span><ul class="puk-web-nav__list puk-disclosure__panel" role="list">\n${navItems}\n</ul></div></nav>`
     : `<nav class="puk-web-nav" aria-label="Hauptnavigation"><ul class="puk-web-nav__list" role="list">\n${navItems}\n</ul></nav>`;
@@ -146,6 +152,23 @@ function renderPage(cfg, page, content) {
   const legalMissing = cfg.legal ? LEGAL.filter(([k]) => !(lg[k] && lg[k].href)).map(([, n]) => n) : [];
   const legalHtml = legalLinks.length || legalMissing.length ? `<p class="puk-web-footer__copy puk-site-legal" data-site-legal>${legalLinks.map(l => `<a href="${esc(l.href)}"${isExternalUrl(l.href) ? ' rel="noopener noreferrer"' : ''}>${esc(l.label)}</a>`).join('<span aria-hidden="true"> · </span>')}${legalMissing.length ? `${legalLinks.length ? ' ' : ''}<span class="puk-site-draft">${esc(legalMissing.join(' und '))}: Platzhalter, Ziel nicht festgelegt</span>` : ''}</p>` : '';
   const notFound = isNotFound(page);
+  const startPage = cfg.pages.find(p => p.id === 'index') || nav[0];
+  const breadcrumbParts = page.id === 'index' || notFound ? [] : [
+    `<li><a href="${esc(startPage.href)}">Übersicht</a></li>`,
+    ...(groupRoot.id !== page.id && groupRoot.id !== startPage.id ? [`<li><a href="${esc(groupRoot.href)}">${esc(groupRoot.navLabel || groupRoot.title)}</a></li>`] : []),
+    `<li><span aria-current="page">${esc(page.title)}</span></li>`
+  ];
+  const breadcrumb = breadcrumbParts.length ? `<nav class="puk-site-breadcrumb" aria-label="Brotkrümelnavigation"><div class="puk-web-container"><ol role="list">${breadcrumbParts.join('')}</ol></div></nav>` : '';
+  const sectionPages = cfg.pages.filter(p => p.status === 'published' && p.id !== page.id && p.id !== '404' && p.showInSectionNav !== false && (p.id === groupRoot.id || p.groupRootId === groupRoot.id));
+  const sectionNav = !notFound && groupRoot.id !== 'index' && sectionPages.length ? `<nav class="puk-site-related" aria-labelledby="puk-related-title"><div class="puk-web-container"><h2 class="puk-web-h2" id="puk-related-title">Weitere Themen in diesem Bereich</h2><ul role="list">${sectionPages.map(p => `<li><a href="${esc(p.href)}">${esc(p.title)}</a></li>`).join('')}</ul></div></nav>` : '';
+  const senderLabel = s.displayLabel || 'Absenderin';
+  const senderName = s.displayName || s.orgUnit;
+  const senderInstitution = s.displayName ? '' : `<span aria-hidden="true">·</span><span data-sender-institution>${esc(s.institution)}</span>`;
+  const contactLabel = s.contactLabel ? `<span class="puk-site-sender__contact">${esc(s.contactLabel)}:</span>` : '<span aria-hidden="true">·</span>';
+  const footer = cfg.footer || {};
+  const footerHtml = footer.about || footer.editorialCredit || footer.serviceBoundary || footer.contentDate
+    ? `<section aria-labelledby="puk-site-info-title"><h2 class="puk-web-footer__heading" id="puk-site-info-title">Über diese Website</h2>${footer.about ? `<p class="puk-web-footer__copy">${esc(footer.about)}</p>` : ''}${footer.editorialCredit ? `<p class="puk-web-footer__copy">${esc(footer.editorialCredit)}</p>` : ''}${cfg.disclaimer ? `<p class="puk-web-footer__copy" data-disclaimer>${esc(cfg.disclaimer)}</p>` : ''}${footer.serviceBoundary ? `<p class="puk-web-footer__copy">${esc(footer.serviceBoundary)}</p>` : ''}${footer.contentDate ? `<p class="puk-web-footer__copy">${esc(footer.contentDate)}</p>` : ''}${legalHtml}</section>`
+    : `<section aria-labelledby="puk-site-info-title"><h2 class="puk-web-footer__heading" id="puk-site-info-title">Über diese Seiten</h2>${cfg.disclaimer ? `<p class="puk-web-footer__copy" data-disclaimer>${esc(cfg.disclaimer)}</p>` : ''}<p class="puk-web-footer__copy">Inhaltsverantwortung: ${esc(cfg.contentOwner)}</p><p class="puk-web-footer__copy">${esc(cfg.editorialStatusLabel || `Redaktioneller Status: ${cfg.editorialStatus}`)}</p>${legalHtml}</section>`;
   return `<!DOCTYPE html>
 <html lang="${esc(cfg.language)}" data-puk-site-build="${BUILD}" data-page-id="${esc(page.id)}">
 <head>
@@ -153,7 +176,7 @@ function renderPage(cfg, page, content) {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="${esc(page.description)}">
 <meta name="generator" content="${esc(VERSION)} · psychoeducation-site-starter">
-${notFound ? '<meta name="robots" content="noindex">\n' : ''}<title>${esc(page.title)} | ${esc(cfg.siteTitle)}</title>
+${cfg.robots || notFound ? `<meta name="robots" content="${esc(cfg.robots || 'noindex, nofollow')}">\n` : ''}<title>${esc(page.title)} | ${esc(cfg.siteTitle)}</title>
 <meta property="og:type" content="website">
 <meta property="og:locale" content="de_CH">
 <meta property="og:site_name" content="${esc(cfg.siteTitle)}">
@@ -165,15 +188,16 @@ ${script ? `<script src="${esc(cfg.interactionScript)}${v}" defer></script>\n` :
 <body><div class="puk-web-page puk-longform" data-web-profile="website" data-longform-pattern="longform-psychoeducation">
 <a class="puk-web-skip" href="#main-content">Zum Hauptinhalt</a>
 ${draftbar}<header class="puk-web-header"><div class="puk-web-container puk-web-header__inner">
-<a class="puk-web-logo" href="${esc(pagePath(cfg.pages.find(p => p.id === 'index') || nav[0]))}" aria-label="${esc(logoName(cfg))}"><img src="${esc(cfg.logo)}" alt="${esc(s.institution)}"></a>
+<a class="puk-web-logo" href="${esc(pagePath(startPage))}" aria-label="${esc(logoName(cfg))}"><img src="${esc(cfg.logo)}" alt="${esc(s.institution)}"></a>
 ${navHtml}</div>
-<div class="puk-web-container"><p class="puk-site-sender" data-sender><span class="puk-site-sender__label">Absenderin</span><span class="puk-site-sender__name" data-sender-unit>${esc(s.orgUnit)}</span><span aria-hidden="true">·</span><span data-sender-institution>${esc(s.institution)}</span>${s.email ? `<span aria-hidden="true">·</span><a class="puk-link--inline" data-sender-email href="mailto:${esc(s.email)}">${esc(s.email)}</a>` : ''}${senderBadge}</p></div>
+<div class="puk-web-container"><p class="puk-site-sender" data-sender><span class="puk-site-sender__label">${esc(senderLabel)}</span><span class="puk-site-sender__name" data-sender-unit>${esc(senderName)}</span>${senderInstitution}${s.email ? `${contactLabel}<a class="puk-link--inline" data-sender-email href="mailto:${esc(s.email)}">${esc(s.email)}</a>` : ''}${senderBadge}</p></div>
 </header>
-${direct}<main id="main-content" class="puk-web-main" tabindex="-1">
+${breadcrumb}${direct}<main id="main-content" class="puk-web-main" tabindex="-1">
 ${body.trim()}
+${sectionNav}
 </main>
 <footer class="puk-web-footer" data-safety-variant="${esc(sa.variant)}"><div class="puk-web-container puk-web-footer__grid">
-${subdued}<section aria-labelledby="puk-site-info-title"><h2 class="puk-web-footer__heading" id="puk-site-info-title">Über diese Seiten</h2>${cfg.disclaimer ? `<p class="puk-web-footer__copy" data-disclaimer>${esc(cfg.disclaimer)}</p>` : ''}<p class="puk-web-footer__copy">Inhaltsverantwortung: ${esc(cfg.contentOwner)}</p><p class="puk-web-footer__copy">Redaktioneller Status: ${esc(cfg.editorialStatusLabel || cfg.editorialStatus)}</p>${legalHtml}<p class="puk-web-footer__copy">${esc(VERSION)} – abgeleitetes Profil auf Basis des PUK Zürich Design System 1.10.1, nicht dessen offizielle Version.</p></section>
+${subdued}${footerHtml}
 </div></footer>
 </div></body>
 </html>
@@ -278,7 +302,7 @@ function gate(cfg, files, opts = {}) {
     if (!skip || skip.attrs.href !== '#main-content') add('block', pid, 'skip', 'Skip-Link auf #main-content fehlt');
     const snd = one(doc, x => has(x, 'data-sender')); const st = snd ? norm(txt(snd)) : '';
     const hidden = x => has(x, 'hidden') || x.attrs['aria-hidden'] === 'true' || /display\s*:\s*none|visibility\s*:\s*hidden/i.test(x.attrs.style || '') || cls(x, 'kit-visually-hidden') || cls(x, 'visually-hidden');
-    if (!snd || !s.orgUnit || !st.includes(s.orgUnit) || !st.includes(s.institution || '\u0000')) add('block', pid, 'sender', 'Fachstellen-Absenderin nicht sichtbar (Organisationseinheit und Institution)');
+    if (!snd || (s.displayName ? !st.includes(s.displayName) : (!s.orgUnit || !st.includes(s.orgUnit) || !st.includes(s.institution || '\u0000')))) add('block', pid, 'sender', 'Fachstellen-Absenderin nicht sichtbar (Organisationseinheit und Institution)');
     else if (hidden(snd) || up(snd, hidden)) add('block', pid, 'sender', 'Fachstellen-Absenderin ist versteckt');
     else if (s.email && !one(snd, x => x.tag === 'a' && has(x, 'data-sender-email') && x.attrs.href === 'mailto:' + s.email)) add('block', pid, 'sender', 'E-Mail der Absenderin fehlt im Kopf: ' + s.email);
     /* Technische Qualität (W3): keine Inline-Skripte (Content-Security-Policy), externe Fenster abgesichert, Interaktionsskript vorhanden, Kartenraster prüfen */
@@ -422,6 +446,9 @@ function gate(cfg, files, opts = {}) {
     for (const p of pages) if (p.status === 'published' && p.href && !isNotFound(p) && !seenP.has(pagePath(p))) add('block', p.id, 'reachability', `Seite ${p.href} ist von der Startseite aus über keinen Link erreichbar`);
   }
   if (inlineUsed && cfg.responsibility && cfg.responsibility.inline && cfg.responsibility.inline.reviewStatus !== 'geprueft') prod('site', 'inline-review', `Verweis im Text nicht fachlich geprüft (responsibility.inline.reviewStatus: ${cfg.responsibility.inline.reviewStatus || 'fehlt'})`);
+  const ra = cfg.releaseApproval;
+  if (ra && ra.institutionalResponsibility !== 'bestaetigt') prod('site', 'institutional-approval', 'Die organisatorische Verantwortung der PUK ist noch nicht formell bestätigt.');
+  if (ra && ra.independentReview !== 'bestaetigt') prod('site', 'change-review', 'Die Änderungsrunde IA 13.10.2026 wurde noch nicht unabhängig geprüft.');
   if (opts.report !== undefined) {
     if (opts.report === null) prod('site', 'review-report', 'PRUEFBERICHT.md fehlt – ohne Prüfbericht keine Veröffentlichung (Abschnitt «Prüfung und Freigabe»)');
     else { const rs = reportStatus(opts.report); if (rs.open.length) prod('site', 'review-report', `Prüfbericht: offene Stufen ${rs.open.join(', ')} – Status «erledigt» oder «entfällt: Begründung»`); }
