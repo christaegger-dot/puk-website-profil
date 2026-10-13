@@ -190,6 +190,35 @@ Dazu 5 leichte Befunde zu Bericht und Abgleich. Die erste und zweite Prüfrunde 
 - **V-7 bis V-9:** Abschlussprüfung W1 bis W3 in einer eigenen Sitzung, danach R1 und R2, dann R3 auf der Vorschau. Veröffentlicht wird nur nach R3 und mit ausdrücklicher Zustimmung der Fachstelle.
 - Die Statustabelle bleibt unverändert; jede Stufe bleibt «offen».
 
+### Begründete Ausnahme · Verweis im Text (R1-1)
+
+**13.10.2026 · von Claude im Auftrag der Fachstelle entschieden**, auf Rückfrage bestätigt («Ja, so umsetzen»).
+
+- **Befund R1-1 (Profil, wichtig):** `components/bundle.css` setzt `.puk-longform__boundary` auf 16 px. Der Verweis im Text steht so neben Fliesstext in 19 bis 21 px, an allen 28 Stellen auf 11 Seiten (Abschnitt «Pre-Release-Audits R1 und R2», R1 Punkt 9).
+- **Ausnahme:** Bis ein neues Profilpaket den Schriftgrad ändert, gilt die Abweichung als begründete Ausnahme («Ergebnis jeder Stufe … begründete Ausnahmen», `guidelines/00-ablauf-pruefung-und-freigabe.md`, «Inhaltsverantwortung und Status»). Grund: Komponenten werden in diesem Repository nicht geändert (`CLAUDE.md`). Die Website ändert nichts.
+- **Vorschlag für das Profil:** `.puk-longform__boundary` im Lesegrad setzen (`font: var(--web-body)`), wie R1-1. Die Fachstelle leitet die Änderung im Design-System-Artefakt ein.
+- **Geltung:** R1 prüft gegen die Regel und diese Ausnahme. Ist das neue Paket eingespielt, gilt die neue Regel.
+
+### Freigabe der Korrektur R2-K (13.10.2026)
+
+**13.10.2026 · Fachstelle Angehörigenarbeit PUK.** Entscheid auf Rückfrage der bauenden Sitzung («Ja, so umsetzen»), von ihr übertragen. Die Sätze unten und die geänderte Abbildung «DEAR in vier Schritten» (`v-gr-dear`) gelten als freigegeben, sobald die Nachprüfung bestätigt, dass sie wörtlich und am genannten Ort stehen. Grundlage: Abschnitt «Pre-Release-Audits R1 und R2», Befunde R2-1 bis R2-9. Umgesetzt im Block «Korrektur R2-K» der Selbstprüfung.
+
+| Befund | Seite › Abschnitt | Bisher | Neu |
+| --- | --- | --- | --- |
+| R2-1 | `rolle` › `schuld` | «Die Verantwortung für eigene verletzende oder gewalttätige Handlungen bleibt bestehen.» | «Wer verletzend oder gewalttätig handelt, bleibt dafür verantwortlich, auch mit einer Erkrankung.» |
+| R2-1 | `fragen` › `verlauf` | «Verantwortung für konkrete verletzende oder gewalttätige Handlungen bleibt davon getrennt.» | «Wer verletzend oder gewalttätig handelt, bleibt dafür verantwortlich, auch mit einer Erkrankung.» |
+| R2-2 | `krise` › `suizid` | «Holen Sie bei Sorge eine professionelle Einschätzung. Sie müssen nicht auf vollständige Antworten warten.» am Ende des Absatzes zur Studie | dieselben zwei Sätze direkt nach «Bleiben Sie bei der Person nur, soweit dies für Sie sicher möglich ist.», vor dem Absatz zur Studie; kein neuer Satz |
+| R2-3 | `krise` › `waehrend` | «… nur ohne Eigengefährdung, möglichst gemeinsam …» | «Begrenzen Sie den Zugang zu Medikamenten oder gefährlichen Gegenständen nur, wenn das für Sie selbst ohne Gefahr möglich ist, möglichst gemeinsam und nach professioneller Anleitung.» |
+| R2-4 | `beziehungen` › `verantwortung` | «Bei Suizidgedanken oder Selbstverletzung darf Hilfe nie zurückgehalten werden – auch nicht aus der Sorge, Zuwendung könnte das Verhalten verstärken. Dann braucht es eine fachliche Einschätzung.» | «Denkt die Person an Suizid oder verletzt sie sich, braucht sie Hilfe und Zuwendung, auch wenn Sie gehört haben, Zuwendung könne solches Verhalten verstärken. Holen Sie eine fachliche Einschätzung dazu.» |
+| R2-5 | `krise` › `belastung` | «Wenn Sie nicht wissen, ob die Person einen Plan hat, bedeutet das keine Sicherheit.» | «Wenn Sie nicht wissen, ob die Person an Suizid denkt oder einen Plan dafür hat, bedeutet das keine Sicherheit.» |
+| R2-6 | `grenzen` › `dear`, Kurztext der Abbildung | «DEAR garantiert keine Kooperation: … Vereinbaren Sie für Krisen passende professionelle Anlaufstellen.» | davor neu: «Wenn Sie etwas ansprechen möchten, helfen vier Schritte: beschreiben, was war, sagen, was es bei Ihnen auslöst, um etwas bitten und sagen, was es für Sie beide leichter macht. DEAR steht für die englischen Anfangsbuchstaben der vier Schritte.»; die zwei bisherigen Sätze bleiben |
+| R2-7 | `behandlung` › `kontakt` | «Vertraulichkeit Ihrer Mitteilung gegenüber der betroffenen Person kann nicht pauschal zugesichert werden.» | «Das Behandlungsteam kann Ihnen nicht in jedem Fall zusagen, dass die betroffene Person nichts von Ihrer Nachricht erfährt.» |
+| R2-8 | `unterstuetzung` › `beratung` | kein Kontaktweg im Abschnitt | neu vor «Was Sie vorab klären können:»: «Schreiben Sie an angehoerigenarbeit@pukzh.ch.» (E-Mail als Link); die drei Fragen bleiben |
+| R2-9 | `genesung` › `forschung` | «Die Zahlen beschreiben jemals erreichte Zustände im Verlauf, nicht den Anteil dauerhaft beschwerdefreier Menschen am Studienende.» | «Die Zahlen sagen, wie viele Menschen irgendwann in den zehn Jahren eine solche Besserung erreicht haben. Sie sagen nicht, wie vielen es am Ende der Studie dauerhaft gut ging.» |
+
+- **Bewusst nicht umgesetzt:** Bei R2-5 bleiben die Absätze mit den Einschränkungen, wie sie sind; nur «Plan» ist erklärt. Bei R2-6 bleiben der Satz zu Krisen in der Figur und der Beispielsatz in `saetze` (Entscheid W1-7, V-12 vom 09.10.2026). Bei R2-8 bleiben die drei Fragen. Die optionalen Befunde von R1 und R2 bleiben offen.
+- Die Statustabelle bleibt unverändert; R1, R2 und R3 bleiben «offen», bis eine Prüfsitzung sie setzt.
+
 ## Pre-Release-Audits R1 und R2 (13.10.2026, Release-Kandidat d44c765)
 
 **Prüfsitzung (Claude Code), 13.10.2026.** Aufträge R1 und R2 aus `guidelines/00-pre-release-audits.md`, unverändert, nach `ENTSCHEIDE-VEROEFFENTLICHUNG.md`, V-8. Geprüft ist der Release-Kandidat auf der Vorschau `https://deploy-preview-659--borderline-angehoerige.netlify.app` (Export von `d44c765`, PR christaegger-dot/borderline-angehoerige#659, Entwurf). Dieser Abschnitt steht auf einem eigenen Branch ab `cd9ae92`.
@@ -5793,6 +5822,39 @@ Keine Stufe ist «erledigt». W1: 2 wichtig, 2 optional, 6 Fragen. W2: 2 wichtig
 ## Selbstprüfung der bauenden Sitzung
 
 Nach jedem Bau ohne Nachfrage ausfüllen: Visualisierungs-Check wie unten, mit Beleg je Punkt. Arbeitsstand, keine Prüfstufe.
+
+**Stand 13.10.2026 · Korrektur R2-K (nach den Pre-Release-Audits R1 und R2) · bauende Sitzung (Claude Code).** Umgesetzt sind R2-1 bis R2-9 im Wortlaut, den die Fachstelle freigegeben hat (Abschnitt «Fachliche Freigabe der Fachstelle», Unterabschnitt «Freigabe der Korrektur R2-K»), und R1-1 als begründete Ausnahme. Branch `claude/bold-johnson-ja07vq`, auf dem Stand von `1f02a1b` (R1 und R2) mit den Hinweisen AP-1 und AP-2 (`6ae0ac1`). Geändert sind acht Dateien in `content/` und die gebauten Seiten dazu, `site.config.json` (nur `statement` von `v-gr-dear`), neun Tabellen in `abgleich/` und dieser Bericht. Keine Stufe ist «erledigt»; die Statustabelle ist unverändert.
+
+**Nicht erfüllt oder offen (Kurzfassung):**
+
+1. **Nachprüfung der Korrektur R2-K** durch eine Sitzung, die nicht gebaut hat, steht aus. Erst danach gilt die Freigabe der neuen Sätze, und R1 und R2 können gesetzt werden.
+2. **Kurztext der Abbildung DEAR** hat jetzt 58 Wörter in vier Sätzen (vorher 20 in zwei). Er erklärt zuerst den Inhalt (R2 Punkt 23), bleibt aber lang, weil die zwei bisherigen Sätze bleiben (bewusst, Freigabe R2-K).
+3. **Teilweise umgesetzt nach Entscheid:** R2-5 (nur «Plan» erklärt), R2-6 (Satz zu Krisen bleibt), R2-8 (drei Fragen bleiben). Die Nachprüfung beurteilt, ob R2 damit «erledigt» sein kann.
+4. **Release-Kandidat:** muss neu exportiert und übertragen werden (V-6); R3 prüft danach.
+
+| Befund | Stand | Beleg |
+| --- | --- | --- |
+| R1-1 | begründete Ausnahme | Eintrag «Begründete Ausnahme · Verweis im Text (R1-1)»; `components/bundle.css` unverändert |
+| R2-1 | umgesetzt | `content/rolle.html` › `schuld` und `content/fragen.html` › `verlauf`: je «Wer verletzend oder gewalttätig handelt, bleibt dafür verantwortlich, auch mit einer Erkrankung.»; Abgleich `rolle.md` Nr. 489 und `fragen.md` Nr. 39 «umformuliert (R2-K)», `rolle.md` Nr. 454 Bemerkung nachgeführt |
+| R2-2 | umgesetzt | `content/krise.html` › `suizid`: Absatz nach dem Verweis im Text jetzt «Bleiben Sie bei der Person nur, soweit dies für Sie sicher möglich ist. Holen Sie bei Sorge eine professionelle Einschätzung. Sie müssen nicht auf vollständige Antworten warten.»; der Absatz zur Studie endet mit «Das garantiert keine bestimmte Wirkung im einzelnen Gespräch.» Der Verweis im Text steht weiter direkt nach der Frage (geprüft: auf «… dir das Leben zu nehmen?»» folgt `<p data-responsibility-inline>`) |
+| R2-3 | umgesetzt | `content/krise.html` › `waehrend`; Abgleich `krise.md` Nr. 78 «umformuliert (R2-K)» |
+| R2-4 | umgesetzt | `content/beziehungen.html` › `verantwortung`; der Verweis im Text folgt direkt auf «Holen Sie eine fachliche Einschätzung dazu.» (Handlungsanleitung); Abgleich `beziehungen.md` Nr. 168 und 169 |
+| R2-5 | umgesetzt (nur «Plan») | `content/krise.html` › `belastung`; Abgleich `krise.md` Nr. 69 |
+| R2-6 | umgesetzt | `content/grenzen.html` › `dear`, `.puk-vis-short`; Plan `v-gr-dear` › `statement` nachgeführt; Abgleich `grenzen.md` Nr. 716 und 717 «neu (R2-K)». Fotos bei 1280 und 360 px, Standard und «kontrast», angesehen: Zeichnung unverändert, kein Überlauf, Kurztext 6 Zeilen bei 1280 px und 10 bei 360 px. Freundin-Test: unverändert, die Figur zeigt das eigene Vorgehen der Angehörigen |
+| R2-7 | umgesetzt | `content/behandlung.html` › `kontakt`; Abgleich `behandlung.md` Nr. 66 |
+| R2-8 | umgesetzt | `content/unterstuetzung.html` › `beratung`: neuer Absatz mit `mailto:`-Link, Klasse `puk-link--inline`; Abgleich `unterstuetzung.md` Nr. 323 «neu (R2-K)» |
+| R2-9 | umgesetzt | `content/genesung.html` › `forschung`, erster Punkt unter «Was die Zahlen nicht sagen»; Abgleich `genesung.md` Nr. 90 und 253 |
+
+**Wortzahlen** (`node abgleich/kennzahlen.mjs`, vorher → nachher): `beziehungen` 1742 → 1747, `grenzen` 1811 → 1849, `rolle` 3300 → 3302, `krise` 2200 → 2212, `genesung` 1512 → 1525, `unterstuetzung` 1424 → 1428, `behandlung` 2689 → 2695, `fragen` 3250 → 3252. Übrige Seiten unverändert.
+
+**Prüfungen:**
+- `node tools/build.mjs` → «Gate draft: 0 blockierend, 2 Hinweise» (`crisis-number-check` «144», `review-report` R1 bis R3)
+- `node tools/gate.mjs --selftest` → 65/65
+- `node abgleich/pruefe-abgleich.mjs` → vor dem Nachführen «7406 Zeilen, 11 ohne Fundstelle», danach «7409 Zeilen, 0 ohne Fundstelle»
+- `node abgleich/verwendet-auf.mjs` in beiden Modi → 0 mit anderer Angabe
+- `tel:` 0, `style=` 0
+
+**Neue Sätze zur Freigabe:** die Sätze in der Tabelle «Freigabe der Korrektur R2-K»; sonst keiner.
 
 **Stand 13.10.2026 · Schritt 3 der Entscheide (Freigabe, Fusszeile, Plan) · bauende Sitzung (Claude Code).** Umgesetzt nach `KORREKTUR-SCHLUSSPRUEFUNG-2.md`, Abschnitt 15, Punkt 2, und `ENTSCHEIDE-SCHLUSSPRUEFUNG.md`, Abschnitt 6, Schritt 3, auf die Freigabe der Fachstelle vom 13.10.2026 (Abschnitt «Fachliche Freigabe der Fachstelle», Unterabschnitt «Freigabe nach der Korrektur NSK und Schritt 3 der Entscheide»). Branch `claude/bold-johnson-ja07vq`, abgezweigt von `main` am Stand `6034e0a`. Geändert sind `site.config.json`, die 17 gebauten Seiten (nur die Fusszeile) und dieser Bericht. Keine Stufe ist «erledigt»; die Statustabelle ist unverändert.
 

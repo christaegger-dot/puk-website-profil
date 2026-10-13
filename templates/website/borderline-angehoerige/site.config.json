@@ -505,7 +505,7 @@
           "sectionId": "dear",
           "goal": "Ein Anliegen in vier Schritten vorbereiten",
           "format": "process",
-          "statement": "D Beschreiben · E Empfinden ausdrücken · A Anliegen nennen · R Verstärken (positive Folgen benennen); vier Schritte helfen, ein Anliegen vorzubereiten. Je Schritt Aufgabe in ganzen Sätzen und abgesetzter Beispielsatz (.puk-say). Kurztext mit der Grenze des Modells und dem Hinweis auf vereinbarte Anlaufstellen für Krisen (Korrektur W1-7, V-12, 09.10.2026; Korrektur 1b, A-5, B-4, D-2). Fachmodell aus der DBT.",
+          "statement": "D Beschreiben · E Empfinden ausdrücken · A Anliegen nennen · R Verstärken (positive Folgen benennen); vier Schritte helfen, ein Anliegen vorzubereiten. Je Schritt Aufgabe in ganzen Sätzen und abgesetzter Beispielsatz (.puk-say). Kurztext mit dem Inhalt der vier Schritte und dem Kürzel (Korrektur R2-K, R2-6, 13.10.2026), danach die Grenze des Modells und der Hinweis auf vereinbarte Anlaufstellen für Krisen (Korrektur W1-7, V-12, 09.10.2026; Korrektur 1b, A-5, B-4, D-2). Fachmodell aus der DBT.",
           "understood": "Dass ein Anliegen in vier Schritten vorbereitet werden kann und jeder Schritt eine eigene Aufgabe hat; Aufgabe und Beispielsatz stehen je Schritt sichtbar getrennt.",
           "source": "Fachmodell: Linehan (2015), DBT Skills Training Manual, 2. Auflage (DEAR MAN); deutschsprachige redaktionelle Anpassung mit eigenen Beispielen",
           "alternative": "Geordnete Liste mit Schrittnummer, Aufgabe und Beispielsatz; Textfassung über aria-describedby",
