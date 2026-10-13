@@ -50,12 +50,19 @@ async function run(width, selected, label) {
         exists: Boolean(target),
         visible: Boolean(rect && rect.bottom > 0 && rect.top < innerHeight),
         detailsOpen: !details || details.open,
-        inDetails: Boolean(details)
+        inDetails: Boolean(details),
+        focusVisible: (() => {
+          const active = document.activeElement;
+          if (!active) return false;
+          const style = getComputedStyle(active);
+          return (style.outlineStyle !== 'none' && parseFloat(style.outlineWidth) > 0) || (style.boxShadow && style.boxShadow !== 'none');
+        })()
       };
     }, id);
     if (!state.exists) failures.push(`${href}: Ziel fehlt`);
     if (!state.visible) failures.push(`${href}: Ziel liegt nach dem Sprung ausserhalb des Ansichtsfensters`);
     if (!state.detailsOpen) failures.push(`${href}: umgebende Vertiefung bleibt geschlossen`);
+    if (!state.focusVisible) failures.push(`${href}: fokussiertes Sprungziel hat keinen sichtbaren Fokus`);
     if (state.inDetails) openedDetails++;
   }
   if (runtime.length) failures.push(...runtime);

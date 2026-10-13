@@ -15,6 +15,7 @@ Die lokale Website-Suche enthält 160 eindeutige Links auf einzelne Abschnitte. 
 - `site.config.json` aktiviert `deepLinkFocus` verbindlich.
 - Der Seitenvertrag bindet das bestehende progressive Interaktionsskript auf allen 22 veröffentlichten Seiten ein.
 - `revealHashTarget` öffnet weiterhin eine umgebende Vertiefung, setzt den Fokus auf das Ziel beziehungsweise ihre Zusammenfassung und verändert den Inhalt ohne JavaScript nicht.
+- Programmatisch fokussierte Abschnitte und Überschriften erhalten einen sichtbaren Fokusindikator; der Hauptinhalt des bestehenden Skip-Links bleibt von der seitenbreiten Markierung ausgenommen.
 - Das Produktions-Gate blockiert eine fehlende Konfiguration und ein fehlendes Skript auf jeder einzelnen Seite.
 - Zwei Gate-Gegenproben erkennen eine gelöschte `deepLinkFocus`-Konfiguration und das fehlende Skript auf einer sonst statischen Seite.
 - `abgleich/sprungziele.mjs` prüft alle veröffentlichten Seiten, sämtliche internen Fragmentlinks und alle 160 Such-Sprungziele.
@@ -24,7 +25,7 @@ Die lokale Website-Suche enthält 160 eindeutige Links auf einzelne Abschnitte. 
 
 1. Alle 22 veröffentlichten Seiten laden genau die lokale Interaktionslogik; es gibt keine externe Laufzeitabhängigkeit.
 2. Alle 160 eindeutigen Abschnittstreffer der Suche führen zu einem vorhandenen Ziel.
-3. Jeder direkte Such-Sprung setzt den Tastaturfokus auf das Ziel oder bei einer Vertiefung auf deren Zusammenfassung.
+3. Jeder direkte Such-Sprung setzt den Tastaturfokus sichtbar auf das Ziel oder bei einer Vertiefung auf deren Zusammenfassung.
 4. Eine umgebende Vertiefung ist nach dem Sprung geöffnet; das Ziel liegt im Ansichtsfenster.
 5. Die 19 zuvor betroffenen Ziele bestehen zusätzlich bei 360 CSS-Pixeln.
 6. Produktionsbuild und Produktions-Gate melden null blockierende Befunde; der Gate-Selbsttest erkennt beide neuen Fehlerklassen.
@@ -39,6 +40,6 @@ Die Browserprüfung misst Fokus, Sichtbarkeit und Laufzeitfehler in Chromium. Re
 - Produktionsbuild und Produktions-Gate: 22 Seiten, 0 blockierende Befunde; ein bekannter Hinweis zur bibliografischen Zeichenfolge `144`.
 - Gate-Selbsttest: 73/73 Gegenproben bestanden, darunter beide neuen Fehlerklassen.
 - Strukturelle Sprungzielprüfung: 22/22 Seiten mit Fokuslogik, 160/160 Such-Sprungziele und 507/507 interne Fragmentlinks ohne Fehler.
-- Chromium: 160/160 Such-Sprungziele bei 1280 CSS-Pixeln; 53 umgebende Vertiefungen korrekt geöffnet; 19/19 zuvor betroffene Ziele zusätzlich bei 360 CSS-Pixeln; keine Laufzeitfehler.
+- Chromium: 160/160 Such-Sprungziele bei 1280 CSS-Pixeln mit sichtbarem Fokus; 53 umgebende Vertiefungen korrekt geöffnet; 19/19 zuvor betroffene Ziele zusätzlich bei 360 CSS-Pixeln mit sichtbarem Fokus; keine Laufzeitfehler.
 - Regression: 22 Seiten in vier Darstellungen, 88 Läufe ohne Axe-Verletzung, horizontalen Überlauf, Laufzeit- oder Ressourcenfehler. Der Tastaturdurchgang meldet auf allen 22 Seiten den Sprunglink als ersten Stopp und null Fokusstellen ohne sichtbaren Fokus.
 - Produktions-Export: 22 Seiten, alle 22 mit gebündeltem lokalem `js/interaktion.js`; gebündeltes CSS, drei lokale Schriftdateien, `robots.txt`, keine Sitemap.
