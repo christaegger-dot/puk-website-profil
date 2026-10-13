@@ -646,3 +646,15 @@ Grundlage: Auflage AR3-4 (`../PRUEFBERICHT.md`, Abschnitt «R3 Freigabe-Audit»,
 | Zuordnung in `verwendet-auf.mjs` | Nur die Tabelle `ZUORDNUNG`: 9 Schlüssel tragen die neue Kurzangabe; bei «Interkulturelles Dolmetschen», «Opferhilfe Schweiz» und «Pro Juventute» ist auch der Erkennungstext an den neuen Kopf des Eintrags angepasst. Ohne diese Anpassung meldete das Skript 11 Kurzangaben «nicht zugeordnet» und 7 Einträge mit anderer Angabe. Die Berechnung selbst ist unverändert. Danach in beiden Modi: 85 Einträge, 0 mit anderer Angabe, 0 nicht zugeordnet | Auftrag 3 |
 | Nicht geändert | Die fünf Einträge ohne URL (BAG «Psychische Gesundheit», BApK, NHS «Breathing exercises for stress», WHO «Doing What Matters in Times of Stress», EBG) und ihre Kurzangaben: Es gibt keine URL zum Abrufen; Vorschläge stehen im Prüfbericht unter «Angaben zur Freigabe». Ebenso die Kurzangabe zum ZGB | Auftrag 1, 4 |
 | Zustandekommen | `pruefe-abgleich.mjs` meldete nach dem Bau 24 Zeilen ohne Fundstelle. Dazu sind alle Zeilen aller Tabellen gesucht, deren Fassung eine der geänderten Angaben enthält (auch als Teil, z. B. «Opferhilfe Schweiz», «Vivyan, C.»), und von Hand gelesen: 31 Zeilen. Danach 7409 Zeilen, 0 ohne Fundstelle | – |
+
+### AR3-4, Runde 2 (13.10.2026)
+
+Grundlage: Entscheide F1 bis F6, P1 und P2 der Leitsitzung im Auftrag der Fachstelle (`../PRUEFBERICHT.md`, Selbstprüfung «AR3-4 Quellenangaben», Runde 2). Freigabe der Runde 2 ausstehend. Nur bibliografische Angaben, kein Satz.
+
+| Thema | Umsetzung |
+| --- | --- |
+| Einträge auf `quellen` | 21 Einträge geändert (R2-1 bis R2-21). Zeilen: `quellen.md` Nr. 130, 158, 162, 170, 195, 199, 202, 205, 210, 213, 231, 245, 249, 255 «übernommen (AR3-4)» oder «gekürzt (AR3-4)», Nr. 562 «neu (AR3-4)»; Nr. 187 und 191 (schon AR3-4) mit neuer Fassung. Der Eintrag Family Guidelines steht jetzt alphabetisch unter G; die Zeilen behalten ihre Nummer |
+| Kurzangaben | `rolle.md` Nr. 348, 492, 493 (schon AR3-4), 697, 698; `kommunizieren.md` Nr. 874 (schon AR3-4); `selbstfuersorge.md` Nr. 152, 529; `behandlung.md` Nr. 80 (schon AR3-4); `diagnose.md` Nr. 75, 76. Status «verschoben (AR3-4)», Bemerkung «AR3-4 Runde 2 (…)» |
+| `ZUORDNUNG` | 6 Schlüssel auf die neuen Kurzangaben (Family Guidelines, BAG, Kanton Zürich, NHS, WHO, BFS); Erkennungstexte für BAG (URL), Kanton Zürich (Seitentitel), `INTERPRET (2019`, `Schweizerische Eidgenossenschaft (2026`, `Sotomo (2024`. Berechnung unverändert |
+| Zustandekommen | `pruefe-abgleich.mjs` meldete nach dem Bau 25 Zeilen ohne Fundstelle; dazu alle Zeilen gesucht, deren Fassung eine geänderte Angabe enthält, und von Hand gelesen: 28 Zeilen nachgeführt (21 neu mit AR3-4). Danach 7409 Zeilen, 0 ohne Fundstelle; 52 Zeilen mit Status AR3-4 |
+
