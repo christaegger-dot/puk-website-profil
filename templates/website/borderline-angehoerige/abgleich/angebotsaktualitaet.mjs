@@ -20,6 +20,7 @@ const entries = [];
 
 const attrs = value => Object.fromEntries([...value.matchAll(/([\w-]+)(?:="([^"]*)")?/g)].map(match => [match[1], match[2] ?? '']));
 const plain = value => value.replace(/<[^>]+>/g, ' ').replace(/&[a-z#0-9]+;/gi, ' ').replace(/\s+/g, ' ').trim();
+const displayDate = value => new Intl.DateTimeFormat('de-CH', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }).format(value);
 const pass = (condition, label) => {
   console.log(`${condition ? 'PASS' : 'FAIL'} ${label}`);
   if (!condition) failures.push(label);
@@ -44,9 +45,11 @@ for (const entry of entries) {
   const prefix = `${entry.file} · ${entry.id || 'ohne Kennung'}`;
   pass(/^\d{4}-\d{2}-\d{2}$/.test(entry.reviewed || ''), `${prefix}: maschinenlesbares Prüfdatum`);
   const reviewed = new Date(`${entry.reviewed}T00:00:00Z`);
+  const validReviewed = Number.isFinite(reviewed.getTime()) && reviewed.toISOString().slice(0, 10) === entry.reviewed;
   const age = Math.floor((asOf - reviewed) / 86400000);
-  pass(Number.isFinite(age) && age >= 0 && age <= maxAgeDays, `${prefix}: Prüfdatum höchstens ${maxAgeDays} Tage alt (${age} Tage)`);
-  pass(entry.times.length === 1 && entry.times[0][2] && entry.times[0][2].includes('Oktober 2026'), `${prefix}: Prüfdatum ist sichtbar`);
+  pass(validReviewed && Number.isFinite(age) && age >= 0 && age <= maxAgeDays, `${prefix}: Prüfdatum höchstens ${maxAgeDays} Tage alt (${age} Tage)`);
+  const expectedDisplay = validReviewed ? displayDate(reviewed) : '';
+  pass(entry.times.length === 1 && plain(entry.times[0][2]) === expectedDisplay, `${prefix}: sichtbares Prüfdatum entspricht «${expectedDisplay || 'ungültiges Datum'}»`);
   pass(entry.times[0]?.[1] !== undefined && entry.times[0][1] === entry.reviewed, `${prefix}: sichtbares und maschinenlesbares Datum stimmen überein`);
   pass(entry.links.length === 1, `${prefix}: genau ein offizielles HTTPS-Ziel (${entry.links.length})`);
   if (entry.offer) {

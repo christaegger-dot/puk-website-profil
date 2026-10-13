@@ -8,7 +8,7 @@
 })(typeof self !== 'undefined' ? self : this, function () {
 'use strict';
 const VERSION = 'PUK Website Kit 1.10.1-r4 · abgeleitet';
-const BUILD = 'r4-13';
+const BUILD = 'r4-14';
 const FORMATS = ['text', 'figure', 'process', 'cycle', 'comparison', 'decision', 'illustration', 'stepwise-model', 'tension-field', 'relationship-map', 'continuum', 'layer-model'];
 /* Interaktive Komponenten und Erklärmuster G brauchen components/interaktion.js (HTML-Fassungen ohne React).
    Prüfbefund W3-01 (11.10.2026): auch jede Seite mit aufklappbarer Vertiefung (details) – das Skript öffnet sie vor dem Druck. */
@@ -291,6 +291,8 @@ function gate(cfg, files, opts = {}) {
   const requiredServiceIds = Array.isArray(serviceReview.requiredIds) ? serviceReview.requiredIds : [];
   const maxServiceAgeDays = Number(serviceReview.maxAgeDays);
   const seenServiceIds = new Set();
+  const publishedServiceIds = new Set();
+  let serviceItemsFound = 0;
   if (cfg.serviceReview && (!Number.isInteger(maxServiceAgeDays) || maxServiceAgeDays < 1)) add('block', 'site', 'service-review', 'serviceReview.maxAgeDays muss eine positive ganze Zahl sein');
   if (cfg.serviceReview && (!Array.isArray(serviceReview.requiredIds) || !requiredServiceIds.length)) add('block', 'site', 'service-review', 'serviceReview.requiredIds muss mindestens eine Angebots-ID enthalten');
   if (new Set(requiredServiceIds).size !== requiredServiceIds.length) add('block', 'site', 'service-review', 'serviceReview.requiredIds enthält doppelte Angebots-IDs');
@@ -334,11 +336,12 @@ function gate(cfg, files, opts = {}) {
     if (mains.length !== 1) add('block', pid, 'main', mains.length + ' main-Elemente statt 1');
     if (main && main.attrs.id !== 'main-content') add('block', pid, 'main', 'main ohne id="main-content"');
     for (const item of main ? all(main, x => has(x, 'data-service-item')) : []) {
+      serviceItemsFound++;
       const sid = (item.attrs['data-service-id'] || '').trim();
       const reviewed = (item.attrs['data-reviewed'] || '').trim();
       if (!sid) add('block', pid, 'service-review', 'Dynamisches Angebot ohne data-service-id');
       else if (seenServiceIds.has(sid)) add('block', pid, 'service-review', `Doppelte Angebots-ID: ${sid}`);
-      else seenServiceIds.add(sid);
+      else { seenServiceIds.add(sid); if (p.status === 'published') publishedServiceIds.add(sid); }
       const validIso = /^\d{4}-\d{2}-\d{2}$/.test(reviewed);
       const reviewedDate = validIso ? new Date(reviewed + 'T00:00:00Z') : null;
       const exactDate = reviewedDate && !Number.isNaN(reviewedDate.getTime()) && reviewedDate.toISOString().slice(0, 10) === reviewed;
@@ -350,7 +353,8 @@ function gate(cfg, files, opts = {}) {
         else if (ageDays > maxServiceAgeDays) add('block', pid, 'service-review', `${sid || 'Angebot'}: Prüfdatum ${reviewed} ist ${ageDays} Tage alt (höchstens ${maxServiceAgeDays})`);
       }
       const times = all(item, x => x.tag === 'time');
-      if (times.length !== 1 || times[0].attrs.datetime !== reviewed || !norm(txt(times[0]))) add('block', pid, 'service-review', `${sid || 'Angebot'}: sichtbares time-Element muss data-reviewed genau entsprechen`);
+      const expectedDisplay = exactDate ? new Intl.DateTimeFormat('de-CH', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }).format(reviewedDate) : '';
+      if (times.length !== 1 || times[0].attrs.datetime !== reviewed || norm(txt(times[0])) !== expectedDisplay) add('block', pid, 'service-review', `${sid || 'Angebot'}: sichtbares time-Element muss data-reviewed vollständig entsprechen («${expectedDisplay || 'ungültiges Datum'}»)`);
       const officialLinks = all(item, x => x.tag === 'a' && /^https:\/\//i.test(x.attrs.href || ''));
       if (officialLinks.length !== 1) add('block', pid, 'service-review', `${sid || 'Angebot'}: genau ein offizieller HTTPS-Link nötig, gefunden: ${officialLinks.length}`);
       if (cls(item, 'puk-site-offer')) {
@@ -500,7 +504,8 @@ function gate(cfg, files, opts = {}) {
       if (GENERIC.test(t2) || t2.split(' ').length < 3) { const l = norm(a.attrs['aria-label']); if (l.split(' ').length < 4 || !l.toLowerCase().includes(t2.toLowerCase())) add('block', pid, 'link-label', `Link «${t2}» ohne sprechendes aria-label (mind. 4 Wörter, sichtbarer Text enthalten)`); }
     }
   }
-  for (const sid of requiredServiceIds) if (!seenServiceIds.has(sid)) add('block', 'site', 'service-review', `Pflichtangebot fehlt: ${sid}`);
+  if (serviceItemsFound && !cfg.serviceReview) add('block', 'site', 'service-review', 'Dynamische Angebote vorhanden, aber site.config.json › serviceReview fehlt');
+  for (const sid of requiredServiceIds) if (!publishedServiceIds.has(sid)) add('block', 'site', 'service-review', `Pflichtangebot fehlt auf veröffentlichten Seiten: ${sid}`);
   const startP = pages.find(q => q.id === 'index') || pages[0];
   if (startP && docOf(pagePath(startP))) {
     const seenP = new Set([pagePath(startP)]); const queue = [pagePath(startP)];
@@ -585,6 +590,15 @@ const MUTATIONS = [
   ['Veraltetes Prüfdatum eines Angebots', ['service-review'], (c, f) => {
     c.serviceReview = { maxAgeDays: 183, requiredIds: ['test-service'] };
     return rep(f, 'behandlung-verstehen.html', '</main>', '<article data-service-item data-service-id="test-service" data-reviewed="2020-01-01"><a href="https://example.org">Offizielle Angebotsseite</a><time datetime="2020-01-01">1. Januar 2020</time></article></main>');
+  }],
+  ['Angebot ohne serviceReview-Konfiguration', ['service-review'], (c, f) => {
+    delete c.serviceReview;
+    return rep(f, 'behandlung-verstehen.html', '</main>', '<article data-service-item data-service-id="test-service" data-reviewed="2026-10-13"><a href="https://example.org">Offizielle Angebotsseite</a><time datetime="2026-10-13">13. Oktober 2026</time></article></main>');
+  }],
+  ['Pflichtangebot nur auf einer Entwurfsseite', ['service-review'], (c, f) => {
+    c.serviceReview = { maxAgeDays: 183, requiredIds: ['test-service'] };
+    pg(c, 'behandlung-verstehen').status = 'draft';
+    return rep(f, 'behandlung-verstehen.html', '</main>', '<article data-service-item data-service-id="test-service" data-reviewed="2026-10-13"><a href="https://example.org">Offizielle Angebotsseite</a><time datetime="2026-10-13">13. Oktober 2026</time></article></main>');
   }]
 ];
 function pg(c, id) { const p = c.pages.find(x => x.id === id); if (!p) throw new Error('Seite ' + id + ' fehlt'); return p; }
