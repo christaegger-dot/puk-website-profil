@@ -8,7 +8,7 @@
 })(typeof self !== 'undefined' ? self : this, function () {
 'use strict';
 const VERSION = 'PUK Website Kit 1.10.1-r4 · abgeleitet';
-const BUILD = 'r4-9';
+const BUILD = 'r4-10';
 const FORMATS = ['text', 'figure', 'process', 'cycle', 'comparison', 'decision', 'illustration', 'stepwise-model', 'tension-field', 'relationship-map', 'continuum', 'layer-model'];
 /* Interaktive Komponenten und Erklärmuster G brauchen components/interaktion.js (HTML-Fassungen ohne React).
    Prüfbefund W3-01 (11.10.2026): auch jede Seite mit aufklappbarer Vertiefung (details) – das Skript öffnet sie vor dem Druck. */
@@ -160,7 +160,7 @@ function renderPage(cfg, page, content) {
   ];
   const breadcrumb = breadcrumbParts.length ? `<nav class="puk-site-breadcrumb" aria-label="Brotkrümelnavigation"><div class="puk-web-container"><ol role="list">${breadcrumbParts.join('')}</ol></div></nav>` : '';
   const sectionPages = cfg.pages.filter(p => p.status === 'published' && p.id !== page.id && p.id !== '404' && p.showInSectionNav !== false && (p.id === groupRoot.id || p.groupRootId === groupRoot.id));
-  const sectionNav = !notFound && groupRoot.id !== 'index' && sectionPages.length ? `<nav class="puk-site-related" aria-labelledby="puk-related-title"><div class="puk-web-container"><h2 class="puk-web-h2" id="puk-related-title">Weitere Themen in diesem Bereich</h2><ul role="list">${sectionPages.map(p => `<li><a href="${esc(p.href)}">${esc(p.title)}</a></li>`).join('')}</ul></div></nav>` : '';
+  const sectionNav = !notFound && groupRoot.id !== 'index' && sectionPages.length ? `<nav class="puk-site-related" aria-labelledby="puk-related-title"><div class="puk-web-container"><h2 class="puk-web-h2" id="puk-related-title">Weitere Themen in diesem Bereich</h2><ul role="list">${sectionPages.map(p => `<li><a href="${esc(p.href)}" aria-label="${esc(`${p.title}: zu dieser Themenseite wechseln`)}">${esc(p.title)}</a></li>`).join('')}</ul></div></nav>` : '';
   const senderLabel = s.displayLabel || 'Absenderin';
   const senderName = s.displayName || s.orgUnit;
   const senderInstitution = s.displayName ? '' : `<span aria-hidden="true">·</span><span data-sender-institution>${esc(s.institution)}</span>`;

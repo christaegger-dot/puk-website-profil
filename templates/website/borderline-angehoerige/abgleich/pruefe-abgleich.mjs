@@ -24,7 +24,7 @@ const C = createRequire(import.meta.url)(join(SITE, 'tools/contract.js'));
 const cfg = JSON.parse(readFileSync(join(SITE, 'site.config.json'), 'utf8'));
 const PAGES = ['index', 'verstehen', 'beziehungen', 'grenzen', 'rolle', 'selbstfuersorge', 'kommunizieren', 'krise', 'genesung', 'unterstuetzung', 'diagnose', 'behandlung', 'fragen', 'quellen', 'ueber'];
 // Etappe 3-1: Impressum und Datenschutz stehen auf einer eigenen Seite (Profilentscheid 11.10.2026); ihre Zeilen stehen in ueber.md.
-const BUILT = [...PAGES, 'impressum-datenschutz'];
+const BUILT = [...PAGES, 'begriffe', 'buecher', 'impressum-datenschutz'];
 const SOURCES = {
   index: ['startseite.md', 'selbsttest.md', 'wegweiser.md'],
   verstehen: ['verstehen.md', ...['eisberg', 'alarm-modus', 'gehirn', 'zustands-landkarte', 'spaltung', 'anspannungskurve'].map(h => `materialien--text--${h}.md`)],
