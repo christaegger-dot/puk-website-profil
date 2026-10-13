@@ -44,7 +44,8 @@ Seiten über einen lokalen Webserver öffnen (z. B. `npx serve` im Projektstamm 
 - `responsibility.inline` (optional, Profilentscheid 09.10.2026): Wortlaut des **Verweises im Text** (`text`, `reviewStatus`, bei `geprueft` auch `reviewedBy` und `reviewedAt`). Seiten setzen ihn nur über den Platzhalter `<p data-responsibility-inline></p>` direkt nach einer Handlungsanleitung für akute Lagen ein; der Build füllt den Wortlaut ein. Erlaubt nur auf Seiten, deren `sensitiveTopics` Selbstgefährdung, Gewalt oder akute Krise nennen, im Fliesstext (nicht in Figur oder Vertiefung), höchstens einer je Abschnitt, ohne Nummern. Der Starter enthält den von der Fachstelle am 09.10.2026 fachlich geprüften Standardwortlaut. Wird er geändert, gilt er als ungeprüft (`reviewStatus: "ausstehend"`), und das Produktionsgate blockiert, solange ein verwendeter Verweis nicht geprüft ist.
 - `visualPlan[]`: `section`, `sectionId` (Pflicht: `id` der zugehörigen `section`; jeder Abschnitt braucht eine Zeile), `goal`, `format` (`text`; Muster A–F `figure`, `cycle`, `process`, `illustration`, `comparison`, `decision`; Muster G–K `stepwise-model`, `tension-field`, `relationship-map`, `continuum`, `layer-model`), `statement`, `understood` (Pflicht ausser bei `text`: Was versteht die Zielgruppe dadurch besser als durch einen kurzen Text allein?), `resonance` (Pflicht ausser bei `text`: Wirkung – was eine Angehörige in der Darstellung wiedererkennen oder spüren soll; Profilentscheid 10.10.2026), `entryPoint` (Pflicht bei `cycle`, `process`, `stepwise-model`: Ansatzpunkt für Angehörige oder «entfällt: Begründung»; ein genannter Ansatzpunkt ist in der Figur als `.puk-vis-ansatz` markiert), `source`, `alternative`, `reason`, `approvalStatus`.
 - `siteUrl` (optional): öffentliche Adresse; erzeugt `sitemap.xml` und kanonische Links. Fehlt sie, meldet das Gate einen Hinweis.
-- `interactionScript`: Pfad zu `components/interaktion.js`. Der Build bindet es nur auf Seiten ein, die Akkordeon, Reiter, Menü, Dialog oder Muster G enthalten.
+- `interactionScript`: Pfad zu `components/interaktion.js`.
+- `deepLinkFocus`: muss `true` sein. Der Build bindet das Interaktionsskript auf allen Seiten ein, damit direkte Abschnittslinks aus Suche, Kapitelwegen und Querverweisen einen nachvollziehbaren Tastaturfokus setzen. Ohne JavaScript bleiben Inhalte sichtbar und der native Browsersprung erhalten.
 - Der Build schreibt zusätzlich Open-Graph-Angaben (Titel, Beschreibung, Sprache) ohne Tracking-Parameter.
 
 ## Was konstruktiv verhindert wird und was das Gate meldet
@@ -67,7 +68,7 @@ Seiten über einen lokalen Webserver öffnen (z. B. `npx serve` im Projektstamm 
   - Illustration (`illustration`) ohne eigene Zeichnung (`.puk-vis-scene`) und ohne Bildquelle- und Freigabestatus
   - generische Quellenlinks ohne sprechendes `aria-label`
   - Inline-Skripte (Content-Security-Policy), Links mit `target="_blank"` ohne `rel="noopener noreferrer"`
-  - interaktive Komponenten ohne lokal vorhandenes `interaktion.js`
+  - deaktivierte site-weite Sprungzielfokussierung oder eine Seite ohne lokal vorhandenes `interaktion.js`
   - Visualisierungsplan ohne `understood` bei einer Darstellung
   - Planzeile mit `sectionId`, die es auf der Seite nicht gibt
 - **Hinweise im Entwurf, Blocker in Produktion:** Figur ohne Kernaussage (`.puk-vis-kern`), fehlender oder nicht markierter Ansatzpunkt (`entryPoint`), fehlende Wirkung (`resonance`), Abschnitt ohne Zeile im Visualisierungsplan.
