@@ -128,6 +128,8 @@ Je Seite eine Tabelle «Satz für Satz» mit jedem Satz der alten Seite und der 
 | verschoben (AR3-4) | Seit der Auflage AR3-4 «Quellenangaben vervollständigen» (`../PRUEFBERICHT.md`, Abschnitt «R3 Freigabe-Audit», Punkt 14; Selbstprüfung «AR3-4 Quellenangaben»), 13.10.2026, bauende Sitzung: Die Kurzangabe im Block «Quellen zu dieser Seite» trägt jetzt das Jahr oder «(laufend)» wie der Eintrag auf `quellen`. Nur die bibliografische Angabe ändert sich, kein Satz. Die Bemerkung beginnt mit «AR3-4» und nennt den Status bis AR3-4. |
 | übernommen (AR3-4) | Seit AR3-4: wie «verschoben (AR3-4)», für Einträge auf `quellen`, deren Kopf jetzt Jahr oder «laufend» und das Abrufdatum nennt (`quellen.md` Nr. 167, 187, 191, 253, 257). Der übrige Eintrag ist unverändert. |
 | neu (AR3-4) | Seit AR3-4: wie «übernommen (AR3-4)», für Einträge auf `quellen` ohne Bestandssatz (`quellen.md` Nr. 555 bis 557 und 566). |
+| gekürzt (AR3-4) | Seit AR3-4, Runde 2: wie «übernommen (AR3-4)», wenn vom Bestandseintrag nur der Kopf mit der bibliografischen Angabe bleibt und ein Teil davon wegfällt (`quellen.md` Nr. 162, BFS: Erscheinungsjahr aus dem Impressum). Kein Satz ändert sich. |
+| umformuliert (AR3-4) | Seit AR3-4, Runde 3: Der Wortlaut ändert sich nach einem Entscheid der Leitsitzung im Auftrag der Fachstelle (E2, E5, E6; `../PRUEFBERICHT.md`, «Freigabe AR3-4»). Bei E2 (`grenzen.md` Nr. 290, umgesetzt von der Leitsitzung) und E6 (`quellen.md` Nr. 193, umgesetzt von der bauenden Sitzung) folgt die Fassung dem Wortlaut der Quelle, bei E5 (`quellen.md` Nr. 171) dem Register. Die Bemerkung nennt den Entscheid und den Status bis AR3-4. |
 
 ## Wörter und Absicherungen
 
@@ -667,6 +669,7 @@ Grundlage: Entscheide E1 bis E5 der Leitsitzung (`../PRUEFBERICHT.md`, Selbstpr�
 | Einträge auf `quellen` | EBG neu gefasst mit Link auf «Häusliche Gewalt» (`quellen.md` Nr. 567 «neu (AR3-4)»); Opferhilfe mit zweitem Link (keine Zeile betroffen); neuer Eintrag Kanton Zürich, Forensic Nurses, ohne Link (Nr. 572 «neu (AR3-4)»); AWMF 038-015 mit «laut Register in Überarbeitung» (Nr. 171 «umformuliert (AR3-4)») |
 | Kurzangaben | `grenzen.md` Nr. 718 (Forensic Nurses) und 719 (EBG), je «neu (AR3-4)»; die «Verwendet in»-Zusätze bei NHS und Zaccaro auf `selbstfuersorge` betreffen keine Zeile |
 | `ZUORDNUNG` | Schlüssel EBG auf die neue Kurzangabe, Erkennung über die URL; neuer Schlüssel für Forensic Nurses |
-| Nachtrag E6 | `quellen.md` Nr. 193 «umformuliert (AR3-4)»: Satz zum Herausgeber im Eintrag Family Guidelines nach der Seite der BPD Alliance |
+| Nachtrag E6 | `quellen.md` Nr. 193 «umformuliert (AR3-4)»: Satz zum Herausgeber im Eintrag Family Guidelines nach der Seite der BPD Alliance; die englischen Namen hat die Leitsitzung mit `lang="en"` ausgezeichnet |
 | Zustandekommen | `pruefe-abgleich.mjs` meldete 1 Zeile ohne Fundstelle (Nr. 567), nach E6 noch einmal 1 (Nr. 193). Danach 7412 Zeilen, 0 ohne Fundstelle |
+| Leitsitzung (E2) | Ein Satz, umgesetzt von der Leitsitzung: `grenzen` › `gewalt` «… Angehörige und nahestehende Personen.» (`grenzen.md` Nr. 290, «umformuliert (AR3-4)»). Dazu die Statuswerte «gekürzt (AR3-4)» und «umformuliert (AR3-4)» oben |
 

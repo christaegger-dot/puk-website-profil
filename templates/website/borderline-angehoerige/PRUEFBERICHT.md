@@ -255,6 +255,65 @@ Dazu 5 leichte Befunde zu Bericht und Abgleich. Die erste und zweite Prüfrunde 
   - **Zählung AR3-1:** Im Punkt «Stand AR3-1» oben ist «9 Verweise» nach PAR3-3 auf 16 berichtigt. Im Abschnitt «Nachprüfung AR3-1», Teil C, steht weiter «9»; den Abschnitt hat eine Prüfsitzung geschrieben, er bleibt unverändert.
   - **Offen:** AR3-3 bis AR3-5 mit Frist 13.01.2027 (`ENTSCHEIDE-VEROEFFENTLICHUNG.md`, «Stand 13.10.2026»).
 
+### Freigabe AR3-4 (13.10.2026, im Auftrag der Fachstelle)
+
+**13.10.2026 · entschieden und freigegeben von der Leitsitzung der Veröffentlichung, im Auftrag der Fachstelle.**
+- **Übertragung:** Die Fachstelle hat der Leitsitzung am 13.10.2026 im Chat die Freigaben für AR3-4 übertragen («Delegation für Phase 3: ja, du darfst»). Zu den offenen Fragen schrieb sie: «recherchiere und entscheide alles selbst».
+- **Rolle der Leitsitzung:** Sie hat die Website nicht gebaut und prüft sie nicht. Den Satz aus E2 und die Auszeichnung `lang="en"` in E6 hat sie selbst umgesetzt; Beleg im Nachtrag der Selbstprüfung «AR3-4 Quellenangaben». Den Satz aus E6 hat die bauende Sitzung umgesetzt (R3-7).
+- **Grundlage:** Auflage AR3-4, Abschnitt «R3 Freigabe-Audit», Punkt 14.
+- **Gültigkeit:** Die Freigabe gilt, sobald die Nachprüfung bestätigt, dass die Angaben wörtlich und am genannten Ort stehen.
+
+**Freigegeben:**
+- **Runde 1** (`f282039`): Q1 bis Q10 und die 15 Kurzangaben.
+- **Runde 2** (`638dc8e`): R2-1 bis R2-21 und die Kurzangaben der Runde 2.
+- **Runde 3** (`94452c3`, `938e4bf`): R3-1 bis R3-7 und die Kurzangaben der Runde 3.
+- **E2 und E6** (Tabelle unten): E2 umgesetzt von der Leitsitzung, E6 von der bauenden Sitzung (R3-7), mit `lang="en"` von der Leitsitzung.
+- **Tabelle `ZUORDNUNG`** in `abgleich/verwendet-auf.mjs`. Geändert sind nur Daten, die Berechnung ist unverändert. Die Abweichung vom Auftrag ist damit angenommen.
+
+**Regel für neue oder geänderte Links** (wie NAR3-2): Kein Link auf eine Seite, die oben oder in einem hervorgehobenen Kasten einen Krisen- oder Notfallblock mit Telefonnummern zeigt. Die Angabe steht dann ohne Link, mit «(laufend, Abruf …)» oder dem Jahr. Ein Beratungs- oder Kontakttelefon in der Fusszeile einer Organisation gilt nicht als Notfallblock, z. B. SeeleFon beim BApK.
+
+**Entscheide zu Runde 1:**
+- **F1 · Family Guidelines:** Angaben aus dem PDF: Gunderson und Berkowitz (2006), «Family Guidelines. Multiple Family Group Program at McLean Hospital» (Revised 2006), New England Personality Disorder Association, PDF bei der BPD Alliance.
+- **F2 · Einträge ohne URL:**
+  - NHS (2026) und WHO (2020) mit Link.
+  - BAG: Unterseite «Was tun für die psychische Gesundheit?», ohne 143 und 147. Die Seite «Psychische Gesundheit» zeigt beide Nummern und bleibt unverlinkt.
+  - BApK: Seite «Medien des BApK».
+  - EBG: siehe E1.
+- **F3 · Kanton Zürich:** Titel der Seite übernommen. Ein Datum, das nur in den Metadaten steht, zählt nicht.
+- **F4 · ZGB:** keine Änderung. Gesetze werden nach Artikel zitiert; Jahr und Stand stehen im Eintrag.
+- **F5 · Pro Juventute:** keine Änderung. Die Adresse bleibt Text ohne Link, weil die Seite in der Navigation «147» zeigt.
+- **F6 · Abrufdatum:** für alle Online-Quellen mit Web- oder PDF-Link. Artikel mit PubMed- oder DOI-Link sind dauerhaft gekennzeichnet und brauchen keines.
+- **P1:** siehe E1 bis E3.
+- **P2 · Project Air:** Die genannte Ressource ist gefunden und direkt verlinkt, ein PDF von 2018 ohne Notrufnummern.
+
+**Entscheide zu Runde 2 und 3:**
+- **BFS:** Erscheinungsjahr 2025 aus dem Impressum; «Version 2026» bleibt im Titel.
+- **R2-P5 · `diagnose`, «2026»:** keine Änderung. Das Jahr nennt, ab wann die Vorgabe gilt (Austritte ab 1. Januar 2026, «Medizinisches Kodierungshandbuch 2026»). Es ist kein Erscheinungsjahr.
+
+| Nr. | Frage | Entscheid | Beleg (Abruf 13.10.2026, Leitsitzung; von der bauenden Sitzung nachgeprüft) |
+| --- | --- | --- | --- |
+| E1 | EBG: Der Eintrag hatte keine URL, die Seite «Gewalt gegen Frauen …» deckt den Abschnitt nicht, und «Hilfe erhalten» zeigt 117 und 144 (R2-P1) | Eintrag «Häusliche Gewalt», Link auf die HTML-Seite. Die Informationsblätter B1 «Gewalt in Trennungssituationen» und B2 «Stalking» (2020) sind genannt, aber nicht verlinkt, weil die PDF am Ende 117 und 144 nennen | Seite `https://www.ebg.admin.ch/de/hausliche-gewalt`, ohne Notrufnummer: «Gewalthandlungen in Ehe und Partnerschaft und gegen Kinder sind Offizialdelikte.» B1: Trennungen bergen «ein erhöhtes Risiko für häusliche Gewalt»; Angebote umfassen «Information und Beratung … Risikoabschätzung und Sicherheitsplanung». B2, Kap. 4: «Dokumentieren und archivieren», mit Datum und Uhrzeit, Ort, Vorfall und allfälligen Zeuginnen und Zeugen |
+| E2 | Opferhilfe: «Angehörige und Vertrauenspersonen» ist nicht gedeckt (P1) | Zweiter Link auf «Für wen ist die Opferhilfe?». Der Satz folgt dem Wortlaut der Quelle (Tabelle unten) | `https://www.opferhilfe-schweiz.ch/de/was-ist-opferhilfe/fur-wen-ist-die-opferhilfe/`, ohne Notrufnummer: «Auch die Angehörigen von Opfern und ihnen nahestehende Personen können Opferhilfe erhalten.»; «Die Opferhilfe hilft unabhängig davon, ob eine Strafanzeige eingereicht wurde …». «Vertrauensperson» bezeichnet im Strafverfahren die Begleitperson des Opfers und passt hier nicht |
+| E3 | Spurensicherung ohne Anzeige ist nicht belegt (P1) | Neuer Eintrag «Kanton Zürich, Gesundheitsdirektion, Amt für Gesundheit (laufend). Opferbetreuung durch Forensic Nurses». Ohne Link, weil die Seite 117, 142 und eine 24/7-Nummer zeigt. Der Text bleibt; «Fragen Sie eine spezialisierte Fachstelle …» gilt unabhängig vom Kanton | Seite des Kantons Zürich: «Sie können im Spital auch die Spuren der Tat sichern lassen. … Dafür müssen sie keine Anzeige erstatten.»; «Sie können später immer noch eine Anzeige bei der Polizei machen …» |
+| E4 | NHS zählt 1–5 und 1–5, der Text sagt «vier Sekunden ein, sechs Sekunden aus» (R2-P3) | Der Text bleibt; «Die Zahlen sind eine Orientierung, keine Vorgabe» steht schon da. Den Ablauf belegt NHS, den Rhythmus Zaccaro et al. (2018); beides steht unter «Verwendet in» | NHS: «Breathe in gently and regularly. Some people find it helpful to count steadily from 1 to 5.» Zaccaro et al. (2018), Front Hum Neurosci 12:353, doi:10.3389/fnhum.2018.00353: «slow breathing techniques (<10 breaths/minute)». Vier Sekunden ein und sechs aus sind sechs Atemzüge pro Minute |
+| E5 | AWMF 038-015: «Gültig bis 31.05.2026 (in Überarbeitung)» (R2-P4) | Der Eintrag nennt den Ablauf schon («Die Leitlinie ist hier eine datierte Quelle, keine aktuell gültige Leitlinie.»). Ergänzt ist nur «laut Register in Überarbeitung» | Register 038-015, sichtbar: «Gültig bis: 31.05.2026 (in Überarbeitung)» |
+| E6 | Family Guidelines: Der Zusatz «NEABPD heisst seit 2024 BPD Alliance.» ist nicht belegt | Ohne Jahreszahl: «Die National Education Alliance for Borderline Personality Disorder (NEABPD) tritt heute als BPD Alliance auf.» Die Website der BPD Alliance zeigt 988 und 112 und bleibt unverlinkt; der Link führt auf das PDF | `https://bpdalliance.org/about/`: «The BPD Alliance, also known as the National Education Alliance for Borderline Personality Disorder, began in 2001 …». Eine Jahreszahl der Umbenennung steht dort nicht |
+
+**Geänderte Sätze (2):**
+
+| Nr. | Seite › Abschnitt | Bisher | Neu |
+| --- | --- | --- | --- |
+| E2 | `grenzen` › `gewalt` | «Unterstützung gibt es auch für Männer, Angehörige und Vertrauenspersonen.» | «Unterstützung gibt es auch für Männer, Angehörige und nahestehende Personen.» |
+| E6 | `quellen` › `versorgung`, Eintrag Family Guidelines | «NEABPD heisst seit 2024 BPD Alliance.» | «Die National Education Alliance for Borderline Personality Disorder (NEABPD) tritt heute als BPD Alliance auf.» |
+
+- **Zählung nach AR3-4:**
+  - 0 Einträge ohne Jahr und ohne «laufend»; vor AR3-4 waren es 9.
+  - Alle Online-Quellen mit Web- oder PDF-Link haben ein Abrufdatum.
+  - 29 Artikel mit PubMed- oder DOI-Link brauchen keines.
+- **Nicht Teil dieser Freigabe:** «WHO Europa (2025)» hat keinen Link und deshalb kein Abrufdatum; das bleibt so. Die optionalen Befunde früherer Prüfungen bleiben offen.
+- **Danach:** Nachprüfung durch eine Prüfsitzung, die weder gebaut noch entschieden hat. Dann folgen der Export mit `--production`, die Übertragung nach `site/` und die Prüfung der Produktion.
+- Die Statustabelle bleibt unverändert.
+
 ## Prüfung der Produktion AR3-2 (13.10.2026, Deploy 6acdb70)
 
 **Prüfsitzung (Claude Code), 13.10.2026, etwa 04.45 bis 05.00 UTC.** Auftrag: Auflage AR3-2 nach Entscheide zur Schlussprüfung 5.3 b, V-2 und V-9. Diese Sitzung hat die Website weder gebaut noch korrigiert. Sie hat nichts entschieden und keine frühere Stufe geprüft.
@@ -6437,6 +6496,22 @@ Die Kurzangaben der Einträge mit neuem Abrufdatum (F6) sind unverändert, wie e
   - `quellen`: EBG-Eintrag (3 Sätze), Opferhilfe (2 Sätze), neuer Eintrag Kanton Zürich (4 Sätze mit «Verwendet auf») und der Zusatz bei AWMF (1 Satz)
   - `quellen`, Nachtrag E6: der Satz zum Herausgeber im Eintrag Family Guidelines (1 Satz, Quellenangabe)
   - **Kein Satz der Themenseiten geändert**, also auch nicht der Satz aus E2.
+
+#### Runde 3 · Nachtrag der Leitsitzung (E2, Auszeichnung E6)
+
+**13.10.2026 · umgesetzt von der Leitsitzung der Veröffentlichung im Auftrag der Fachstelle**, auf `94452c3`, zusammengeführt mit `938e4bf` (Nachtrag E6 und R2-P5 der bauenden Sitzung, R3-7). Die Leitsitzung hat die Website nicht gebaut und prüft sie nicht. Für den Satz aus E2 und die Auszeichnung in E6 ist sie bauende Sitzung. Entscheide und Belege stehen unter «Fachliche Freigabe der Fachstelle» › «Freigabe AR3-4».
+
+- **E2:** `content/grenzen.html`, Abschnitt `gewalt`: «… Angehörige und Vertrauenspersonen.» wird zu «… Angehörige und nahestehende Personen.» Abgleich: `grenzen.md` Nr. 290 «umformuliert (AR3-4)».
+- **E6:** Den Satz hat die bauende Sitzung umgesetzt (R3-7, `938e4bf`), mit demselben Wortlaut wie die Leitsitzung. Die Leitsitzung hat beim Zusammenführen ihre Fassung mit `lang="en"` für «National Education Alliance for Borderline Personality Disorder» und «BPD Alliance» behalten. Abgleich: `quellen.md` Nr. 193 in der Fassung der bauenden Sitzung.
+- **R2-P5:** entschieden, keine Änderung (Freigabe AR3-4). Die bauende Sitzung hat das in `938e4bf` nachgetragen.
+- **`abgleich/README.md`:** Die Statuswerte «gekürzt (AR3-4)» und «umformuliert (AR3-4)» sind jetzt erklärt; Runde 2 und 3 hatten sie ohne Erklärung verwendet. Die Tabelle «AR3-4, Runde 3» hat eine neue Zeile «Leitsitzung (E2, E6)».
+- **Befehle:**
+  - `node tools/build.mjs` → «17 Seiten geschrieben … Gate draft: 0 blockierend, 1 Hinweise» («144» auf `quellen`, wie bisher)
+  - `node tools/gate.mjs --selftest` → «Selbsttest: 65/65 bestanden.»
+  - `node tools/gate.mjs --production` → «Gate production: 0 blockierend, 1 Hinweise»
+  - `node abgleich/pruefe-abgleich.mjs` → «7412 Zeilen, 0 ohne Fundstelle». Vorher meldete es 3 Zitate in den neuen Bemerkungen ohne Fundstelle; sie sind jetzt ohne Guillemets gefasst.
+  - `node abgleich/verwendet-auf.mjs`, beide Modi → «86 Einträge, 0 mit anderer Angabe, 0 Kurzangaben nicht zugeordnet»
+- **Satzdiff der gebauten Seiten gegen `94452c3`:** genau 2 geänderte Sätze (E2 auf `grenzen`, E6 auf `quellen`). Gegen `938e4bf` ist es nur der Satz aus E2, dazu die Auszeichnung `lang="en"` in E6. Sonst ist nichts geändert, auch keine Abbildung.
 
 ### Frühere Stände der Selbstprüfung (vor AR3-4)
 
