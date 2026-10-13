@@ -242,6 +242,99 @@ Dazu 5 leichte Befunde zu Bericht und Abgleich. Die erste und zweite Prüfrunde 
 - **Statuszeile R3:** Auf Rückfrage hat die Fachstelle entschieden, dass die bauende Sitzung die Zeile setzt («Du, als Übertragung»), ausdrücklich abweichend von der Regel, dass die bauende Sitzung keine Stufe setzt (Ablauf, Regel 2). Die Zeile lautet «erledigt: Go mit Auflagen, als Freigabe angenommen (Fachstelle, 13.10.2026, V-8)». Sie überträgt den Entscheid der Fachstelle und ist kein Prüfergebnis.
 - **Veröffentlichung:** Sie braucht ein eigenes Ja der Fachstelle (V-9). Am 13.10.2026 auf Rückfrage: «Noch nicht». Die Schritte werden vorbereitet; Netlify und #659 bleiben bis dahin unverändert.
 
+## Nachprüfung AR3-1 (13.10.2026, Stand ec0be6a)
+
+**Prüfsitzung (Claude Code), 13.10.2026.** Dieselbe Sitzung, die R1, R2 und R2-K geprüft hat. Sie hat die Website weder gebaut noch die Korrektur AR3-1 umgesetzt und nichts entschieden. Auftrag der bauenden Sitzung im Auftrag der Fachstelle: die Umstellung eines toten Links nach Auflage AR3-1 nachprüfen.
+
+**Geprüfter Stand:**
+- `puk-website-profil` am Commit `ec0be6a` (PR #76)
+- Release-Kandidat `borderline-angehoerige` am Commit `fe482c6` (Branch `umzug-puk-profil-1791821335`), gegen den Kandidaten `5d5aed4`; das Repository nur gelesen (flacher Klon)
+- die Vorschau `https://deploy-preview-659--borderline-angehoerige.netlify.app`
+
+**Geändert:** nur dieser Abschnitt, auf einem eigenen Branch ab `ec0be6a`. Keine Inhalte, kein Code, keine Statuszeile. Das Netz war in dieser Sitzung frei.
+
+### Ergebnis in Kürze
+
+- Auf der Website hat sich gegenüber `5d474eb` nur das Linkziel der Quellenangabe «Family Guidelines for Borderline Personality Disorder» geändert, sonst nichts:
+  - in `content/`
+  - in den gebauten Seiten
+  - in `site/` von `fe482c6` gegenüber `5d5aed4`
+  - auf der Vorschau
+- Das neue Ziel ist erreichbar und gehört zur BPD Alliance. Es führt aber auf eine Übersichtsseite, die oben einen Krisenblock mit US- und EU-Notrufnummern zeigt (NAR3-2, optional).
+- Die Stichproben aus der Linkliste bestätigen den Bericht.
+- `node tools/gate.mjs --production`: 0 blockierend. Der Export mit `--production` ist gleich wie `site/` von `fe482c6`, ohne `_redirects` und `fonts/OFL.txt`.
+- Die Statuszeile R3 ist klar als Übertragung des Entscheids der Fachstelle dokumentiert.
+- Zwei optionale Befunde: falscher Abschnitt im Bericht (NAR3-1), Linkziel mit Krisenblock (NAR3-2).
+
+### Teil A · Nur das Linkziel geändert
+
+| Ort | Vergleich | Ergebnis |
+| --- | --- | --- |
+| `content/` und gebaute Seiten | `git diff 5d474eb ec0be6a` | geändert nur `content/quellen.html` und `quellen.html`, je eine Zeile; Wortdiff: nur `href="https://www.borderlinepersonalitydisorder.org/wp-content/uploads/2011/08/Family-Guidelines-standard.pdf"` → `href="https://bpdalliance.org/documents/family-guidelines/"`. Der sichtbare Text bleibt. Sonst geändert sind nur Arbeitsdateien: `PRUEFBERICHT.md`, `abgleich/README.md` und `abgleich/krise.md` Nr. 122, also NR2K-1 und NR2K-2 wie vorgeschlagen. `components/`, `tools/`, `templates/website/longform/`, `borderline.css` und `site.config.json` unverändert |
+| `site/` | `git diff 5d5aed4 fe482c6` im Repository `borderline-angehoerige` | 1 Datei, 1 Zeile: `site/quellen.html`, dasselbe `href` |
+| Vorschau | `/quellen` | enthält `href="https://bpdalliance.org/documents/family-guidelines/"`, den alten Link nicht mehr |
+| Build | `node tools/build.mjs` am Stand `ec0be6a` | ändert keine Datei; «Gate draft: 0 blockierend, 1 Hinweise» («144» als Seitenzahl in `quellen`) |
+
+### Teil B · Neues Linkziel
+
+- `https://bpdalliance.org/documents/family-guidelines/` antwortet mit 200, nach Weiterleitung auf `https://bpdalliance.org/bpd-resources/?resource_id=15053`. Die erste Abfrage brauchte 40 s, die zweite 3 s.
+  - Titel der Seite: «Borderline Personality Disorder Resources | BPD Alliance»
+  - Der Eintrag 15053 verweist auf `https://bpdalliance.org/wp-content/uploads/2026/03/Family-Guidelines-standard.pdf`. Das PDF antwortet mit 200, `application/pdf`, 246 kB. Erste Seite: «FAMILY GUIDELINES · Multiple Family Group Program at McLean Hospital · by John G. Gunderson, M.D. and Cynthia Berkowitz, M.D. … Family Guidelines: Revised 2006».
+- Die Seite gehört zur BPD Alliance (`bpdalliance.org`). Die alte Domain `borderlinepersonalitydisorder.org` leitet dorthin; der alte Pfad antwortet heute mit 404. Der Text der Quellenangabe nennt NEABPD und «NEABPD heisst seit 2024 BPD Alliance.»
+- **Ort:** Die Quellenangabe steht in `quellen` › `versorgung` («Versorgung und Praxismaterialien»), nicht in `quellen` › `angehoerige`, wie es im Abschnitt «Annahme von «Go mit Auflagen»», Punkt «Stand AR3-1», und im Block «Korrektur AR3-1» steht (NAR3-1). Der Abgleich führt sie richtig unter «Versorgungs-Materialien & Praxis-Manuale» (`abgleich/quellen.md` Nr. 191).
+
+### Teil C · Stichproben aus der Linkliste
+
+`site/` von `fe482c6` enthält 80 verschiedene externe Ziele (27 PubMed, 9 auf `borderline-angehoerige.netlify.app`, dazu 44 übrige). Abgefragt mit `curl -L` und Browser-Kennung:
+
+| Ziel | Antwort |
+| --- | --- |
+| `opferhilfe-schweiz.ch/de/was-ist-opferhilfe/schutz/` | 200 |
+| `nice.org.uk/guidance/cg78` | 200 |
+| `promentesana.ch` | 200 |
+| `vaskzuerich.ch` | 200 |
+| `doi.org/10.1371/journal.pone.0279015` | 200 |
+| `register.awmf.org/de/leitlinien/detail/038-015` | 200 |
+| `bag.admin.ch/de/berufs-oder-arztgeheimnis` | 200 |
+| `zh.ch/de/gesundheit/anlaufstellen-gesundheitswesen/patientinnen-patienten-angehoerige.html` | 200 |
+| `who.int/news-room/questions-and-answers/item/suicide` | 200 |
+| `newharbinger.com/9781684036899/stop-walking-on-eggshells/` | 200 |
+| `pukzh.ch/patienten-angehoerige/informationen-fuer-angehoerige/` | 403 (Bot-Schutz, wie im Bericht) |
+| PubMed 11386989, 29795363, 9842784 | 203, mit Inhalt |
+
+Alle Stichproben stimmen mit «Stand AR3-1» überein. AR3-1 ist damit für die automatisch prüfbaren Links erfüllt. Die 5 Links hinter dem Bot-Schutz öffnet laut Bericht die Fachstelle im eigenen Browser; bis dahin ist AR3-1 nicht ganz abgeschlossen.
+
+### Teil D · Gate und Export
+
+- `node tools/gate.mjs --production` am Stand `ec0be6a`: «Gate production: 0 blockierend, 1 Hinweise» («144»).
+- `node tools/export.mjs <ziel> --production` in einen leeren Ordner ausserhalb des Repositorys: 17 Seiten, `css/site.css`, 3 Schriftdateien, `js/interaktion.js`, 0 blockierend.
+- `diff -rq` gegen `site/` von `fe482c6`: gleich bis auf `_redirects` und `fonts/OFL.txt`; beide kommen von Hand dazu (README, V-5).
+
+### Teil E · Statuszeile R3
+
+Bewertet wird nur die Dokumentation, nicht der Entscheid.
+
+- **Statuszeile:**
+  - Spalte Status: «erledigt: Go mit Auflagen, als Freigabe angenommen (Fachstelle, 13.10.2026, V-8)».
+  - Spalte «Geprüft durch»: «Statuszeile von der bauenden Sitzung im Auftrag der Fachstelle gesetzt (13.10.2026), Übertragung ihres Entscheids, kein Prüfergebnis».
+  - Spalte Ergebnis: Sie beginnt mit «**«Go mit Auflagen»** – nach der Leitlinie nicht «erledigt» (nur bei «Go»)» und nennt die Auflagen AR3-1 bis AR3-5.
+- **Unterabschnitt «Annahme von «Go mit Auflagen» (13.10.2026)»:**
+  - Er nennt Frage und Antwort der Fachstelle.
+  - Er sagt «ein Entscheid der Fachstelle, keine Prüfung» und dass das Prüfergebnis «Go mit Auflagen» bleibt.
+  - Er ordnet die Annahme als begründete Ausnahme ein.
+  - Der Punkt «Statuszeile R3» nennt ausdrücklich die Abweichung von Regel 2 des Ablaufs («Du, als Übertragung»).
+  - Die Veröffentlichung braucht danach ein eigenes Ja (V-9, «Noch nicht»).
+- **Beurteilung:** Klar dokumentiert. Wer die Zeile liest, sieht, dass sie kein Prüfergebnis ist, wer sie gesetzt hat und warum. Das Produktionsgate liest die Zeile als «erledigt» (0 blockierend). Ein Hinweis: Im Unterabschnitt «Freigabe der Korrektur R2-K» steht weiter «R1, R2 und R3 bleiben «offen», bis eine Prüfsitzung sie setzt.» Das war am Tag des Eintrags richtig; der Nachtrag darunter ordnet es ein. Kein Befund.
+
+### Befunde der Nachprüfung
+
+| Nr. | Befund | Vorschlag | Priorität |
+| --- | --- | --- | --- |
+| NAR3-1 | Der Bericht nennt den Ort der Quellenangabe «`quellen` › `angehoerige`»; sie steht in `quellen` › `versorgung` (Abschnitt «Annahme …», Punkt «Stand AR3-1», und Block «Korrektur AR3-1») | an beiden Stellen «`quellen` › `versorgung`» | optional |
+| NAR3-2 | Das neue Linkziel ist keine Dokumentseite, sondern die allgemeine Ressourcenseite der BPD Alliance; der Eintrag öffnet sich dort nur als Fenster. Oben steht «GET HELP NOW … U.S. Crisis Support Dial or Text 988 … Europe Crisis Support Dial or Text 112». Die Website selbst nennt keine Nummern; das Ziel ist extern. Wer aber aus Zürich auf die Quelle klickt, landet zuerst bei einer US-Krisennummer | Prüfbedarf für die Fachstelle: direkt auf das PDF der BPD Alliance verlinken, `https://bpdalliance.org/wp-content/uploads/2026/03/Family-Guidelines-standard.pdf` (200, «Family Guidelines: Revised 2006», Gunderson und Berkowitz). Dabei die Angabe «(laufend)» mit «Revised 2006» abgleichen. Das PDF nennt als Herausgeberin die «New England Personality Disorder Association», der Eintrag die NEABPD | optional |
+
+Kein kritischer oder wichtiger Befund. Die Zeilen R1 und R2 bleiben «erledigt». Die Zeile R3 ist nicht Sache dieser Prüfung.
+
 ## Nachprüfung R2-K (13.10.2026, Stand 5d474eb)
 
 **Prüfsitzung (Claude Code), 13.10.2026.** Dieselbe Sitzung, die R1 und R2 geprüft hat (Abschnitt «Pre-Release-Audits R1 und R2»). Sie hat die Website weder gebaut noch die Korrektur R2-K umgesetzt, und sie hat nichts entschieden. Auftrag der bauenden Sitzung im Auftrag der Fachstelle: Korrektur R2-K nachprüfen und die Zeilen R1 und R2 nach der Leitlinie setzen. Geprüft ist `puk-website-profil` am Commit `5d474eb` (PR #76) und der Release-Kandidat auf der Vorschau `https://deploy-preview-659--borderline-angehoerige.netlify.app` (Export von `5d474eb`, `borderline-angehoerige` Commit `5d5aed4`, nur gelesen).
