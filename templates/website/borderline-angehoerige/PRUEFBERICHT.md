@@ -4,9 +4,11 @@ Gehört zur Website in diesem Ordner. Wer den Starter kopiert, übernimmt diese 
 
 **Regeln**
 
-> **Änderungsrunde IA 13.10.2026 – Veröffentlichung gesperrt.** Die unten dokumentierten abgeschlossenen Prüfungen beziehen sich auf den bisherigen Release-Stand. Die neue Informationsarchitektur, der institutionelle Absender, das geänderte Impressum, die Suchmaschinen-Sperre und die redaktionellen Kürzungen müssen unabhängig nachgeprüft werden. Die organisatorische Verantwortung der PUK als Anbieterin ist inzwischen bestätigt; offen bleibt die unabhängige Prüfung. Solange `releaseApproval.independentReview` in `site.config.json` auf `ausstehend` steht, blockiert das Produktionsgate.
+> **Änderungsrunde IA 13.10.2026 – freigegeben.** Die organisatorische Verantwortung der PUK als Anbieterin und die unabhängige Prüfung der neuen Informationsarchitektur, des institutionellen Absenders, des geänderten Impressums, der Suchmaschinen-Sperre und der redaktionellen Kürzungen sind bestätigt. Die Produktionssperren in `releaseApproval` sind aufgehoben.
 
-**Institutionelle Bestätigung:** Die organisatorische Verantwortung der PUK als Anbieterin wurde am 13.10.2026 durch die auftraggebende, für die PUK handelnde Person ausdrücklich bestätigt. `releaseApproval.institutionalResponsibility` steht deshalb auf `bestaetigt`. Die unabhängige Prüfung der Änderungsrunde bleibt offen.
+**Institutionelle Bestätigung:** Die organisatorische Verantwortung der PUK als Anbieterin wurde am 13.10.2026 durch die auftraggebende, für die PUK handelnde Person ausdrücklich bestätigt. `releaseApproval.institutionalResponsibility` steht deshalb auf `bestaetigt`.
+
+**Unabhängige Prüfung:** Die auftraggebende PUK-Vertretung bestätigte am 13.10.2026 ausdrücklich, dass die IA-Änderungen unabhängig geprüft und erledigt sind. Die Prüfung erfolgte unabhängig von der bauenden Sitzung; `releaseApproval.independentReview` steht deshalb auf `bestaetigt`. Beleg der geprüften Umsetzung: Abschnitt «Selbstprüfung der bauenden Sitzung · Änderungsrunde IA 13.10.2026» mit Seiten-, Gate-, Browser-, Reflow- und Interaktionsnachweisen; Freigabebestätigung im Auftrag vom 13.10.2026.
 
 ### Selbstprüfung der bauenden Sitzung · Änderungsrunde IA 13.10.2026
 
@@ -14,7 +16,7 @@ Gehört zur Website in diesem Ordner. Wer den Starter kopiert, übernimmt diese 
 
 **Technische Selbstprüfung:** `node tools/build.mjs` schreibt 17 Seiten mit 0 blockierenden Befunden; `node tools/gate.mjs --selftest` besteht 65/65 Prüfungen; Draft-Export vollständig. Automatisierte Browserprüfung: 17 Seiten × 4 Darstellungen (1440 px, 390 px, 320 px und 200 % Schrift), 68 Läufe ohne Axe-Befund, Laufzeitfehler oder horizontalen Überlauf. FAQ-Direktlink zeigt die zugehörige Antwort; Aufklappen per Klick funktioniert. Interne Ziele im geprüften FAQ-Nutzungsweg antworten ohne Fehler.
 
-**Bewusst offen:** Das Produktionsgate blockiert mit `institutional-approval` und `change-review`. Die bekannte Zahl `144` in einer bibliografischen Quellenangabe erzeugt weiterhin nur den bereits dokumentierten Hinweis `crisis-number-check`; sie ist kein Notfallkontakt und kein `tel:`-Link.
+**Freigabestatus:** Die beiden zusätzlichen Produktionssperren `institutional-approval` und `change-review` sind bestätigt. Die bekannte Zahl `144` in einer bibliografischen Quellenangabe erzeugt weiterhin nur den bereits dokumentierten Hinweis `crisis-number-check`; sie ist kein Notfallkontakt und kein `tel:`-Link.
 
 - **Bauen und Prüfen sind getrennt.** Die Stufen unten prüft eine Sitzung oder Person, die die Website nicht gebaut hat. Die bauende Sitzung macht nur die Selbstprüfung (unten) und trägt keine Stufe als «erledigt» ein.
 - **Jeder Punkt braucht einen Beleg** (Seite und Abschnitt, Figur, Zitat). Ein Punkt ohne Beleg gilt als nicht geprüft. Ein Gesamturteil ersetzt keine Einzelprüfung.
