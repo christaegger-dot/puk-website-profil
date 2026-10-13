@@ -144,6 +144,7 @@ Dazu 5 leichte Befunde zu Bericht und Abgleich. Die erste und zweite Prüfrunde 
   - `shortDescription` nach RF-5
   - die 98 Textzeilen des Plans auf «freigegeben» (SPZ-F-3)
   - danach baut sie neu und trägt das Ergebnis in den Prüfbericht ein.
+- **Nachtrag 13.10.2026 · umgesetzt:** Der Punkt oben ist überholt. Die bauende Sitzung hat Schritt 3 am 13.10.2026 umgesetzt, nach der Freigabe «Alles freigegeben» (Unterabschnitt «Freigabe nach der Korrektur NSK und Schritt 3 der Entscheide (13.10.2026)»). Commits: `abc1f60` (Freigabe eingetragen, Fusszeile und Plan nach Schritt 3) und `f554df5` (Datum der Freigabe bestätigt), in `main` mit PR #73 (Merge `c028d6e`); die Korrektur NSK-1 bis NSK-3 davor in `6146a81`. Die Abschlussprüfung hat beides nachgeprüft (Abschnitt «Abschlussprüfung», Teil A). Die Freigabe in diesem Unterabschnitt bleibt unverändert.
 - **Nicht Teil dieser Freigabe:** NSK-F-1 (Schwelle der Schleife in Firefox und WebKit, reale Tests) und die optionalen Befunde NSK-1 bis NSK-3. Sie bleiben offen.
 - **Weiter offen vor der Veröffentlichung:**
   - die rechtliche Prüfung mit SPZ-F-13 und -14
@@ -238,10 +239,21 @@ Dazu 5 leichte Befunde zu Bericht und Abgleich. Die erste und zweite Prüfrunde 
     - **31 erreichbar** (200). 7 davon leiten weiter, alle auf passende Ziele: die zwei `doi.org`-Links zu den Verlagen (`psycnet.apa.org`, `journals.plos.org`); `promentesana.ch`, `selbsthilfeschweiz.ch`, `stand-by-you.ch` und `vaskzuerich.ch` auf ihre Hauptadresse; `projectairstrategy.org` auf `uow.edu.au/project-air/` (Project Air, University of Wollongong).
     - **5 nicht automatisch prüfbar:** Ein Bot-Schutz (Cloudflare) antwortet mit 403, auch in Chromium («Attention Required», «Nur einen Moment…»): die drei Links auf `pukzh.ch`, `ipw.ch` (Psychotherapiestation für junge Erwachsene) und `nhsinform.scot` (grounding exercises). Die Fachstelle hat sie am 13.10.2026 im eigenen Browser geöffnet: «alle fünf links gehen».
     - **1 tot** (404): `quellen` › `versorgung`, «Family Guidelines for Borderline Personality Disorder» (Berkowitz und Gunderson), `www.borderlinepersonalitydisorder.org/wp-content/uploads/2011/08/Family-Guidelines-standard.pdf`. Die Domain leitet heute auf `bpdalliance.org`. Entscheid der Fachstelle auf Rückfrage: «Auf BPD Alliance umstellen». Zuerst auf `https://bpdalliance.org/documents/family-guidelines/` gesetzt (Dokumentseite der BPD Alliance, leitet auf ihre Ressourcenseite). Nach der Nachprüfung AR3-1 (PR #80, NAR3-2: die Ressourcenseite zeigt oben einen Krisenblock mit US- und EU-Notrufnummern) jetzt direkt auf das PDF bei der BPD Alliance: `https://bpdalliance.org/wp-content/uploads/2026/03/Family-Guidelines-standard.pdf` (13.10.2026: 200, `application/pdf`, 246 KB, gleicher Dateiname wie früher). Der Text der Quellenangabe bleibt; «(laufend)» gegen «Revised 2006» abzugleichen gehört zu AR3-4. Umgesetzt im Block «Korrektur AR3-1» der Selbstprüfung.
-  - Die 9 Verweise auf `borderline-angehoerige.netlify.app` antworten heute mit 404, weil dort noch die React-Fassung läuft. Sie gehören zu AR3-2.
+  - Die 16 Verweise (berichtigt nach PAR3-3, 13.10.2026) auf `borderline-angehoerige.netlify.app` antworten heute mit 404, weil dort noch die React-Fassung läuft. Sie gehören zu AR3-2.
   - **AR3-1 ist damit erfüllt:** 64 von 64 externen Links erreichbar (27 PubMed über die Schnittstelle, 31 per Abruf, 5 im Browser der Fachstelle, 1 nach der Umstellung auf die BPD Alliance).
 - **Statuszeile R3:** Auf Rückfrage hat die Fachstelle entschieden, dass die bauende Sitzung die Zeile setzt («Du, als Übertragung»), ausdrücklich abweichend von der Regel, dass die bauende Sitzung keine Stufe setzt (Ablauf, Regel 2). Die Zeile lautet «erledigt: Go mit Auflagen, als Freigabe angenommen (Fachstelle, 13.10.2026, V-8)». Sie überträgt den Entscheid der Fachstelle und ist kein Prüfergebnis.
 - **Veröffentlichung:** Sie braucht ein eigenes Ja der Fachstelle (V-9). Am 13.10.2026 auf Rückfrage: «Noch nicht». Die Schritte werden vorbereitet; Netlify und #659 bleiben bis dahin unverändert.
+- **Nachtrag 13.10.2026 · veröffentlicht:** Von der Leitsitzung der Veröffentlichung übertragen; Belege je Punkt.
+  - **Zustimmung V-9:** Die Fachstelle stimmte der Veröffentlichung am Release-Kandidaten `f4074fd` im Chat der Leitsitzung der Veröffentlichung zu («1. Ja») und übertrug den Merge an Claude («merge übertragen an dich»). Voraussetzung R3 «Go mit Auflagen» und Annahme: Abschnitt «R3 Freigabe-Audit» und dieser Unterabschnitt.
+  - **Vor dem Merge** (V-9, `ENTSCHEIDE-VEROEFFENTLICHUNG.md`), durch die Leitsitzung:
+    - Schutz der Vorschauen eingeschaltet: Netlify `requiresSSOTeamLogin` true, `non_production` (bestätigt in «Prüfung der Produktion AR3-2», Punkte 5 und 9)
+    - Build-Einstellungen über die `netlify.toml` des Branchs angeglichen: `publish = "site"`, kein Build
+    - Titel und Beschreibung von PR christaegger-dot/borderline-angehoerige#659 nachgeführt
+  - **Merge:** PR christaegger-dot/borderline-angehoerige#659 am 13.10.2026, 06.43 Uhr (04.43.50 UTC), Merge-Commit `ef2e491`. Der Baum ist gleich wie `f4074fd` (`git diff --stat f4074fd ef2e491` leer, «Prüfung der Produktion AR3-2», geprüfter Stand).
+  - **Deploy:** Produktions-Deploy `6acdb7093632f42d43ca4b49`, veröffentlicht 04.44 UTC unter `https://borderline-angehoerige.netlify.app` (`get-deploy-for-site`, ebenda Punkt 9).
+  - **AR3-2 erfüllt:** Abschnitt «Prüfung der Produktion AR3-2», PR christaegger-dot/puk-website-profil#87 (Merge `d2a34db`); 9 von 9 Punkten, kein kritischer und kein wichtiger Befund.
+  - **Zählung AR3-1:** Im Punkt «Stand AR3-1» oben ist «9 Verweise» nach PAR3-3 auf 16 berichtigt. Im Abschnitt «Nachprüfung AR3-1», Teil C, steht weiter «9»; den Abschnitt hat eine Prüfsitzung geschrieben, er bleibt unverändert.
+  - **Offen:** AR3-3 bis AR3-5 mit Frist 13.01.2027 (`ENTSCHEIDE-VEROEFFENTLICHUNG.md`, «Stand 13.10.2026»).
 
 ## Prüfung der Produktion AR3-2 (13.10.2026, Deploy 6acdb70)
 
