@@ -252,6 +252,9 @@ Beide bleiben unverändert. Ob sie archiviert werden, entscheidet die Fachstelle
 1. Die Fachstelle gibt die Veröffentlichung frei.
 2. **Bauende Sitzung:** `node tools/export.mjs <ordner> --production` am geprüften Stand; mit `site/` im Pull Request vergleichen (`diff -r`), bei Unterschieden den Branch nachführen; dann den Pull Request mergen. Netlify veröffentlicht auf der Ziel-Adresse.
 3. **Prüfsitzung:** die R3-Punkte 17 und 21 auf der Ziel-Adresse kurz bestätigen (Indexierung erlaubt, Links und Sprungziele, W3-12).
+
+   _Nachtrag 13.10.2026:_ Schritt 2 ist erledigt (Export von `dd0ac45`, Merge `f626cb9`). Die erste Prüfung der Produktion (AR3-2) war nicht erfüllt: R3-01, und die Ziel-Adresse war aus jener Umgebung nicht erreichbar. Die Fachstelle hat entschieden: Massstab ist der Export von `dd0ac45`, nicht das aktuelle `main`; die Abweichung in `js/interaktion.js`, die allein aus `components/interaktion.js` kommt, ist bekannt. Die Wiederholung braucht direkten Internetzugang. Die Punkte stehen in `PRUEFBERICHT.md` unter «R3 Freigabe-Audit», «Erst nach dem Merge auf der Ziel-Adresse prüfbar (AR3-2)» und «Prüfung der Produktion AR3-2».
+
 4. **Alte Site `puk-depression-angehoerige`:** zuerst nur noch Weiterleitungen ausliefern (301), z. B. die Verknüpfung mit dem alten Repository lösen und einen Ordner mit einer einzigen Datei `_redirects` deployen; danach den Zugangsschutz aufheben, damit alte Links und Lesezeichen ankommen. Vorschlag für die Zuordnung, Entscheid der Fachstelle (Ziel jeweils `https://depression-angehoerige.netlify.app` mit dem Pfad):
 
    | alte Adresse | Titel der alten Seite | neue Adresse |
