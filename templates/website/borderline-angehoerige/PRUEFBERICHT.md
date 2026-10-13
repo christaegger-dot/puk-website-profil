@@ -8,7 +8,9 @@ Gehört zur Website in diesem Ordner. Wer den Starter kopiert, übernimmt diese 
 
 **Institutionelle Bestätigung:** Die organisatorische Verantwortung der PUK als Anbieterin wurde am 13.10.2026 durch die auftraggebende, für die PUK handelnde Person ausdrücklich bestätigt. `releaseApproval.institutionalResponsibility` steht deshalb auf `bestaetigt`.
 
-**Unabhängige Prüfung der ersten IA-Runde:** Die auftraggebende PUK-Vertretung bestätigte am 13.10.2026 ausdrücklich, dass diese IA-Änderungen unabhängig geprüft und erledigt sind. Die Prüfung erfolgte unabhängig von der bauenden Sitzung. Für die nachfolgende Vervollständigung des Massnahmenplans P1–P3 ist `releaseApproval.independentReview` erneut auf `ausstehend` gesetzt; sie wird nicht durch die frühere Bestätigung vorweggenommen. Beleg der bereits geprüften Umsetzung: Abschnitt «Selbstprüfung der bauenden Sitzung · Änderungsrunde IA 13.10.2026» mit Seiten-, Gate-, Browser-, Reflow- und Interaktionsnachweisen; Freigabebestätigung im Auftrag vom 13.10.2026.
+**Unabhängige Prüfung der ersten IA-Runde:** Die auftraggebende PUK-Vertretung bestätigte am 13.10.2026 ausdrücklich, dass diese IA-Änderungen unabhängig geprüft und erledigt sind. Die Prüfung erfolgte unabhängig von der bauenden Sitzung. Für die nachfolgende Vervollständigung des Massnahmenplans P1–P3 wurde `releaseApproval.independentReview` erneut auf `ausstehend` gesetzt; sie wurde nicht durch die frühere Bestätigung vorweggenommen. Beleg der bereits geprüften Umsetzung: Abschnitt «Selbstprüfung der bauenden Sitzung · Änderungsrunde IA 13.10.2026» mit Seiten-, Gate-, Browser-, Reflow- und Interaktionsnachweisen; Freigabebestätigung im Auftrag vom 13.10.2026.
+
+**Unabhängige Nachprüfung der Vervollständigung P1–P3:** Der automatisierte Codex-Review von PR #102 prüfte Commit `75853db` unabhängig von der bauenden Sitzung und wurde am 13.10.2026 um 09:22:57 UTC ohne Befund abgeschlossen. Der Review-Kommentar weist den Status «Completed» aus; es wurden keine Review-Befunde oder Änderungsanträge eingereicht. Auf dieser Grundlage steht `releaseApproval.independentReview` wieder auf `bestaetigt`. Die danach erneut ausgeführte Produktionsprüfung meldet 0 blockierende Befunde und den bekannten Hinweis zur bibliografischen Zeichenfolge `144`.
 
 ### Selbstprüfung der bauenden Sitzung · Änderungsrunde IA 13.10.2026
 
@@ -20,7 +22,7 @@ Gehört zur Website in diesem Ordner. Wer den Starter kopiert, übernimmt diese 
 
 ### Selbstprüfung der bauenden Sitzung · Vervollständigung Massnahmenplan P1–P3 · 13.10.2026
 
-**Rolle und Status:** Diese Sitzung hat die Änderungen gebaut und setzt deshalb keine Prüfstufe erneut auf «erledigt». Die unabhängige Prüfung der vorherigen IA-Runde bleibt gültig; die neuen Änderungen dieser Runde brauchen vor Merge eine unabhängige Nachprüfung.
+**Rolle und Status:** Diese Sitzung hat die Änderungen gebaut und setzt deshalb keine Prüfstufe erneut auf «erledigt». Die unabhängige Prüfung der vorherigen IA-Runde bleibt gültig. Die neuen Änderungen dieser Runde wurden vor dem Merge durch den automatisierten Codex-Review von PR #102 unabhängig nachgeprüft; der Review wurde für Commit `75853db` ohne Befund abgeschlossen.
 
 **Umgesetzt:**
 
@@ -33,7 +35,7 @@ Gehört zur Website in diesem Ordner. Wer den Starter kopiert, übernimmt diese 
 
 **Automatisierte Nachweise:**
 
-- `node tools/build.mjs`: 19 Seiten, 0 blockierende Strukturbefunde, 1 bekannter Hinweis. Das Produktionsgate blockiert diesen Branch bis zur unabhängigen Nachprüfung absichtlich mit `change-review`. Die Zeichenfolge `144` kommt nur in einer PubMed-ID, einer Seitenzahl und einer BFS-Asset-ID auf `quellen` vor; es gibt weiterhin keine Krisennummer und keinen `tel:`-Link.
+- `node tools/build.mjs`: 19 Seiten, 0 blockierende Strukturbefunde, 1 bekannter Hinweis. Vor der unabhängigen Nachprüfung blockierte das Produktionsgate diesen Branch absichtlich mit `change-review`; nach der Nachprüfung und der dokumentierten Statusänderung besteht `node tools/gate.mjs --production` mit 0 blockierenden Befunden und demselben bekannten Hinweis. Die Zeichenfolge `144` kommt nur in einer PubMed-ID, einer Seitenzahl und einer BFS-Asset-ID auf `quellen` vor; es gibt weiterhin keine Krisennummer und keinen `tel:`-Link.
 - `node tools/gate.mjs --selftest`: 65/65 bestanden.
 - `node abgleich/nutzerwege.mjs`: 6/6 Wege bestanden; 18/18 veröffentlichte Inhaltsseiten von `index` erreichbar (`404` ausgenommen).
 - Produktions-Export: 19 Seiten, gebündeltes CSS und JavaScript, drei lokale Schriftdateien, `robots.txt` und `X-Robots-Tag`; keine Sitemap. Chromium mit Axe auf diesem Export: 19 Seiten × 4 Darstellungen (1440 px, 390 px, 320 px, 200 % Schrift) = 76 Läufe; 0 Axe-Befunde, 0 Laufzeitfehler, 0 horizontaler Überlauf.
