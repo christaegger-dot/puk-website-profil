@@ -218,6 +218,7 @@ Dazu 5 leichte Befunde zu Bericht und Abgleich. Die erste und zweite Prüfrunde 
 
 - **Bewusst nicht umgesetzt:** Bei R2-5 bleiben die Absätze mit den Einschränkungen, wie sie sind; nur «Plan» ist erklärt. Bei R2-6 bleiben der Satz zu Krisen in der Figur und der Beispielsatz in `saetze` (Entscheid W1-7, V-12 vom 09.10.2026). Bei R2-8 bleiben die drei Fragen. Die optionalen Befunde von R1 und R2 bleiben offen.
 - Die Statustabelle bleibt unverändert; R1, R2 und R3 bleiben «offen», bis eine Prüfsitzung sie setzt.
+- **Nachtrag 13.10.2026:** Die Nachprüfung R2-K (PR christaegger-dot/puk-website-profil#78) bestätigt, dass die Sätze wörtlich und am genannten Ort stehen; die Freigabe gilt damit. Die Fachstelle hat sie zusätzlich im Entwurfs-PR christaegger-dot/borderline-angehoerige#659 zum Kandidaten `5d5aed4` bestätigt («Genehmigt; R2-K-Sätzen», etwa 05.45 Uhr), von der Sitzung, die #659 beobachtet, weitergeleitet.
 
 ## Pre-Release-Audits R1 und R2 (13.10.2026, Release-Kandidat d44c765)
 
