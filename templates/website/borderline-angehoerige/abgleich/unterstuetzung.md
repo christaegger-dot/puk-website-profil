@@ -349,3 +349,4 @@ Die vorgemerkte Zeile (`selbstfuersorge.md` Nr. 232, «Alle Beratungsangebote & 
 | 320 | neue Seite › `beratung`, `austausch`, `selbsthilfe` | – | neu (2c-1) | Website: | unterstuetzung#beratung | Bezeichnung vor dem Link auf die offizielle Website, bei jedem Angebot (Bauauftrag 2c-1, Abschnitt 5) |
 | 321 | neue Seite › `austausch` | – | neu (2c-1) | Wann sie stattfinden, steht auf der Website. | unterstuetzung#austausch | neu: ersetzt die Termine der Treffpunkte (Angebote nur mit Link zur Website, Bauauftrag 2c-1, Abschnitt 5) |
 | 322 | neue Seite › `kantone` | – | neu (2c-1) | Ausserhalb des Kantons Zürich | unterstuetzung#kantone | Titel von Abschnitt 04 (Bauauftrag 2c-1, Abschnitt 5) |
+| 323 | neue Seite › `beratung` | – | neu (R2-K) | Schreiben Sie an angehoerigenarbeit@pukzh.ch. | unterstuetzung#beratung | R2-K, R2-8 (Pre-Release-Audit R2, 13.10.2026): Kontaktweg im Abschnitt zur Fachstelle, E-Mail als Link; Adresse wie in Absenderin und Fusszeile |
