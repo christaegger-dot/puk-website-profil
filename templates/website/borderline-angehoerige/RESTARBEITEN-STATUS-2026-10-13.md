@@ -12,6 +12,7 @@ Stand: 13.10.2026
 - konkreter Ablauf für die erste Beratungsanfrage, ohne nicht veröffentlichte Öffnungs- oder Antwortzeiten zu erfinden
 - verbindliche Matrix für kanonische Inhalte und zulässige Wiederholungen
 - global erreichbare Kurzübersicht «Kurz und klar» für Situationen mit wenig Zeit oder Kraft; ausdrücklich keine geprüfte Fassung in Leichter Sprache
+- sichtbares Prüfdatum für zehn dynamische Beratungs-, Austausch- und Behandlungsangebote; halbjährlicher Pflegeprozess und im Produktions-Gate blockierende Fälligkeitsprüfung
 
 ## Bewusster Institutionsentscheid – nicht als erledigt ausweisen
 
@@ -48,8 +49,8 @@ Eine WCAG- oder ISO-Gesamtkonformität wird bis zum dokumentierten Abschluss die
 
 ## Zero-Participant-Audit umgesetzt
 
-- 25 kritische Such- und Aufgabenszenarien, alle mit erwarteter Fundstelle unter den ersten drei Treffern
-- lokale Abschnittssuche mit 175 geprüften Seiten- und Ankerzielen
+- 26 kritische Such- und Aufgabenszenarien, alle mit erwarteter Fundstelle unter den ersten drei Treffern
+- lokale Abschnittssuche mit 180 geprüften Seiten- und Ankerzielen
 - aufgabenbezogene Startseite und eindeutiger Borderline-Angebotsumfang
 - konsistentere Bereichstitel für Alltag/Beziehungen sowie Fragen/Nachschlagen
 - kanonische Seite für mitbetroffene Kinder

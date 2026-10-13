@@ -8,7 +8,7 @@
 })(typeof self !== 'undefined' ? self : this, function () {
 'use strict';
 const VERSION = 'PUK Website Kit 1.10.1-r4 · abgeleitet';
-const BUILD = 'r4-12';
+const BUILD = 'r4-13';
 const FORMATS = ['text', 'figure', 'process', 'cycle', 'comparison', 'decision', 'illustration', 'stepwise-model', 'tension-field', 'relationship-map', 'continuum', 'layer-model'];
 /* Interaktive Komponenten und Erklärmuster G brauchen components/interaktion.js (HTML-Fassungen ohne React).
    Prüfbefund W3-01 (11.10.2026): auch jede Seite mit aufklappbarer Vertiefung (details) – das Skript öffnet sie vor dem Druck. */
@@ -287,6 +287,13 @@ function gate(cfg, files, opts = {}) {
   if (nf.length > 1) add('block', 'site', 'not-found', 'Mehr als eine Seite mit role «not-found»');
   for (const p of nf) if (p.navLabel) add('block', p.id || '?', 'not-found', '404-Seite gehört nicht in die Navigation (navLabel: null)');
   const byPath = {}; pages.forEach(p => { if (p.href) byPath[pagePath(p)] = p; }); let inlineUsed = false;
+  const serviceReview = cfg.serviceReview || {};
+  const requiredServiceIds = Array.isArray(serviceReview.requiredIds) ? serviceReview.requiredIds : [];
+  const maxServiceAgeDays = Number(serviceReview.maxAgeDays);
+  const seenServiceIds = new Set();
+  if (cfg.serviceReview && (!Number.isInteger(maxServiceAgeDays) || maxServiceAgeDays < 1)) add('block', 'site', 'service-review', 'serviceReview.maxAgeDays muss eine positive ganze Zahl sein');
+  if (cfg.serviceReview && (!Array.isArray(serviceReview.requiredIds) || !requiredServiceIds.length)) add('block', 'site', 'service-review', 'serviceReview.requiredIds muss mindestens eine Angebots-ID enthalten');
+  if (new Set(requiredServiceIds).size !== requiredServiceIds.length) add('block', 'site', 'service-review', 'serviceReview.requiredIds enthält doppelte Angebots-IDs');
   const ids = new Set();
   for (const p of pages) {
     const pid = p.id || '?';
@@ -326,6 +333,31 @@ function gate(cfg, files, opts = {}) {
     const mains = all(doc, x => x.tag === 'main'); const main = mains[0] || null;
     if (mains.length !== 1) add('block', pid, 'main', mains.length + ' main-Elemente statt 1');
     if (main && main.attrs.id !== 'main-content') add('block', pid, 'main', 'main ohne id="main-content"');
+    for (const item of main ? all(main, x => has(x, 'data-service-item')) : []) {
+      const sid = (item.attrs['data-service-id'] || '').trim();
+      const reviewed = (item.attrs['data-reviewed'] || '').trim();
+      if (!sid) add('block', pid, 'service-review', 'Dynamisches Angebot ohne data-service-id');
+      else if (seenServiceIds.has(sid)) add('block', pid, 'service-review', `Doppelte Angebots-ID: ${sid}`);
+      else seenServiceIds.add(sid);
+      const validIso = /^\d{4}-\d{2}-\d{2}$/.test(reviewed);
+      const reviewedDate = validIso ? new Date(reviewed + 'T00:00:00Z') : null;
+      const exactDate = reviewedDate && !Number.isNaN(reviewedDate.getTime()) && reviewedDate.toISOString().slice(0, 10) === reviewed;
+      if (!exactDate) add('block', pid, 'service-review', `${sid || 'Angebot'}: data-reviewed fehlt oder ist kein gültiges ISO-Datum`);
+      else if (cfg.serviceReview && Number.isInteger(maxServiceAgeDays) && maxServiceAgeDays > 0) {
+        const today = new Date(); const todayUtc = Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate());
+        const ageDays = Math.floor((todayUtc - reviewedDate.getTime()) / 86400000);
+        if (ageDays < 0) add('block', pid, 'service-review', `${sid || 'Angebot'}: Prüfdatum ${reviewed} liegt in der Zukunft`);
+        else if (ageDays > maxServiceAgeDays) add('block', pid, 'service-review', `${sid || 'Angebot'}: Prüfdatum ${reviewed} ist ${ageDays} Tage alt (höchstens ${maxServiceAgeDays})`);
+      }
+      const times = all(item, x => x.tag === 'time');
+      if (times.length !== 1 || times[0].attrs.datetime !== reviewed || !norm(txt(times[0]))) add('block', pid, 'service-review', `${sid || 'Angebot'}: sichtbares time-Element muss data-reviewed genau entsprechen`);
+      const officialLinks = all(item, x => x.tag === 'a' && /^https:\/\//i.test(x.attrs.href || ''));
+      if (officialLinks.length !== 1) add('block', pid, 'service-review', `${sid || 'Angebot'}: genau ein offizieller HTTPS-Link nötig, gefunden: ${officialLinks.length}`);
+      if (cls(item, 'puk-site-offer')) {
+        const body = norm(txt(item));
+        for (const label of ['Zielgruppe', 'Region', 'Art', 'Zugang und Kosten']) if (!body.includes(label)) add('block', pid, 'service-review', `${sid || 'Angebot'}: Pflichtangabe «${label}» fehlt`);
+      }
+    }
     const h1 = all(doc, x => x.tag === 'h1'); if (h1.length !== 1) add('block', pid, 'h1', h1.length + ' h1-Elemente statt 1');
     const skip = one(doc, x => x.tag === 'a' && cls(x, 'puk-web-skip'));
     if (!skip || skip.attrs.href !== '#main-content') add('block', pid, 'skip', 'Skip-Link auf #main-content fehlt');
@@ -468,6 +500,7 @@ function gate(cfg, files, opts = {}) {
       if (GENERIC.test(t2) || t2.split(' ').length < 3) { const l = norm(a.attrs['aria-label']); if (l.split(' ').length < 4 || !l.toLowerCase().includes(t2.toLowerCase())) add('block', pid, 'link-label', `Link «${t2}» ohne sprechendes aria-label (mind. 4 Wörter, sichtbarer Text enthalten)`); }
     }
   }
+  for (const sid of requiredServiceIds) if (!seenServiceIds.has(sid)) add('block', 'site', 'service-review', `Pflichtangebot fehlt: ${sid}`);
   const startP = pages.find(q => q.id === 'index') || pages[0];
   if (startP && docOf(pagePath(startP))) {
     const seenP = new Set([pagePath(startP)]); const queue = [pagePath(startP)];
@@ -548,7 +581,11 @@ const MUTATIONS = [
   ['404-Seite als Entwurf (nicht im Export)', ['not-found'], c => { const p = c.pages.find(isNotFound); if (!p) return false; p.status = 'draft'; }],
   ['Impressum zeigt auf eine E-Mail-Adresse statt auf eine Seite', ['legal'], (c, f) => { const e = c.legal && c.legal.imprint; if (!e || !e.href) return false; const old = e.href; e.href = 'mailto:nobody@example.org'; let n = 0; for (const k of Object.keys(f)) if (rep(f, k, `href="${old}"`, `href="${e.href}"`, true)) n++; return n > 0; }],
   ['Externes Stylesheet als «alternate stylesheet»', ['external'], (c, f) => rep(f, 'index.html', '</head>', '<link rel="alternate stylesheet" href="https://www.example.org/x.css">\n</head>')],
-  ['Fremdsprachiger Quellentitel ohne lang', ['lang-part'], (c, f) => rep(f, 'behandlung-verstehen.html', '</main>', '<ol class="puk-longform__sources"><li>Muster A (2020): Supporting the families of people with depression: a review of the evidence.</li></ol></main>')]
+  ['Fremdsprachiger Quellentitel ohne lang', ['lang-part'], (c, f) => rep(f, 'behandlung-verstehen.html', '</main>', '<ol class="puk-longform__sources"><li>Muster A (2020): Supporting the families of people with depression: a review of the evidence.</li></ol></main>')],
+  ['Veraltetes Prüfdatum eines Angebots', ['service-review'], (c, f) => {
+    c.serviceReview = { maxAgeDays: 183, requiredIds: ['test-service'] };
+    return rep(f, 'behandlung-verstehen.html', '</main>', '<article data-service-item data-service-id="test-service" data-reviewed="2020-01-01"><a href="https://example.org">Offizielle Angebotsseite</a><time datetime="2020-01-01">1. Januar 2020</time></article></main>');
+  }]
 ];
 function pg(c, id) { const p = c.pages.find(x => x.id === id); if (!p) throw new Error('Seite ' + id + ' fehlt'); return p; }
 function rep(f, file, a, b, every) { if (f[file] == null || !f[file].includes(a)) return false; f[file] = every ? f[file].split(a).join(b) : f[file].replace(a, () => b); return true; }

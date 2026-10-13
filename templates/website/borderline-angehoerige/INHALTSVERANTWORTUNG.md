@@ -29,7 +29,7 @@ Diese Matrix legt fest, welche Seite ein Thema vollständig erklärt. Andere Sei
 1. Der siteweite Zuständigkeitsverweis wird aus `site.config.json` erzeugt. Sein Wortlaut darf in Inhaltsdateien nicht dupliziert werden.
 2. Sicherheitsrelevante Hinweise dürfen dort wiederholt werden, wo eine Handlung sonst missverständlich oder gefährlich wäre. Sie gelten nicht als vermeidbare Redundanz.
 3. Kontaktbedingungen der Fachstelle werden auf `unterstuetzung.html#beratung` gepflegt. Startseite und Footer enthalten nur Absender, E-Mail und Übergang.
-4. Angebotsdaten werden auf der jeweiligen Angebotsseite gepflegt und mit Prüfdatum versehen. Andere Seiten verlinken dorthin.
+4. Angebotsdaten werden auf der jeweiligen Angebotsseite gepflegt und mit Prüfdatum versehen. Die zehn dynamischen Einträge folgen dem halbjährlichen Prozess in `ANGEBOTSPFLEGE-2026-10-13.md`; andere Seiten verlinken dorthin.
 5. Bei neuen Texten wird vor der Freigabe geprüft, ob ein Thema bereits eine Hauptseite hat. Wenn ja, wird gekürzt und verlinkt.
 6. Suchbegriffe und Synonyme werden aus den Abschnittsinhalten und den im Seitenvertrag gepflegten Alternativbegriffen erzeugt. Produktive Suchanfragen werden nicht protokolliert.
 

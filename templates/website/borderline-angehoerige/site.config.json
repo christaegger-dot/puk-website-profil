@@ -2,7 +2,7 @@
   "$comment": "Borderline – Orientierung für Angehörige · Seitenvertrag, kopiert aus dem Psychoedukations-Starter (Build r4-3, Profil-Update 09.10.2026 übernommen: Build r4-4; Profil-Update 10.10.2026 übernommen: Build r4-6; Gate-Korrektur 10.10.2026 übernommen: Build r4-7; Profil 2026.10.1 übernommen in Etappe 3-1: Build r4-8, legal, 404-Seite, siteUrl). 21 Inhaltsseiten plus 404-Seite; seit dem Zero-Participant-Audit zusätzlich eine kanonische Seite für mitbetroffene Kinder, eine lokale Abschnittssuche und die belastungsarme Kurzübersicht «Kurz und klar». Pflichtfelder und Regeln: README.md. Nach jeder Änderung: node tools/build.mjs, danach node tools/gate.mjs bzw. node tools/gate.mjs --production.",
   "kitRevision": "PUK Website Kit 1.10.1-r4 · abgeleitet",
   "canonicalSource": "PUK Zürich Design System 1.10.1 (unverändert)",
-  "assetVersion": "r4-12",
+  "assetVersion": "r4-13",
   "siteTitle": "Borderline – Orientierung für Angehörige",
   "shortDescription": "Psychoedukative Website der Fachstelle Angehörigenarbeit PUK für Angehörige von Menschen mit Borderline.",
   "language": "de-CH",
@@ -31,6 +31,22 @@
   "releaseApproval": {
     "institutionalResponsibility": "bestaetigt",
     "independentReview": "bestaetigt"
+  },
+  "serviceReview": {
+    "$comment": "Dynamische Beratungs- und Behandlungsangebote müssen mindestens halbjährlich redaktionell geprüft werden. Das Produktions-Gate blockiert fehlende, zukünftige oder mehr als 183 Tage alte Prüfdaten.",
+    "maxAgeDays": 183,
+    "requiredIds": [
+      "hype-zueri",
+      "puk-erwachsene",
+      "ipw-junge-erwachsene",
+      "clienia-a2",
+      "dbt-therapeutensuche",
+      "pro-mente-sana",
+      "stand-by-you",
+      "vask-zuerich",
+      "puk-elterngruppe-jugendliche",
+      "selbsthilfe-schweiz"
+    ]
   },
   "disclaimer": "Diese Website ersetzt keine individuelle Abklärung, Beratung oder Behandlung.",
   "footer": {
