@@ -314,14 +314,15 @@ Dazu 5 leichte Befunde zu Bericht und Abgleich. Die erste und zweite Prüfrunde 
 - **Danach:** Nachprüfung durch eine Prüfsitzung, die weder gebaut noch entschieden hat. Dann folgen der Export mit `--production`, die Übertragung nach `site/` und die Prüfung der Produktion.
 - **Nachtrag 13.10.2026 · Entscheide zur Nachprüfung AR3-4** (Urteil «AR3-4 erfüllt», `c8e0405`), von der Leitsitzung im Auftrag der Fachstelle. Umgesetzt hat sie die Leitsitzung als «Runde 4» (Selbstprüfung).
   - **NAR34-1 (wichtig) · Opferhilfe «Schutz»:** Die Seite zeigt im ersten Bildschirm einen Kasten «Wenn Sie in akuter Gefahr sind … rufen Sie die Polizei an». Die Regel für Links gilt auch für diesen bestehenden Link; die Seite bleibt Quelle, aber ohne Link. Verlinkt bleibt «Für wen ist die Opferhilfe?», ohne Notrufnummer.
-  - **Link «Opferhilfe Schweiz» auf `grenzen` › `gewalt`:** bleibt, er führt auf die Startseite der Opferhilfe. Dort steht im Kopf nur «142 anrufen», die Beratungsnummer der Opferhilfe; die Seite sagt selbst: «Die Opferhilfe-Nummer 142 ist keine Notrufnummer.» Einen Notfallblock zeigt die Startseite nicht (Abruf 13.10.2026).
+  - **Link «Opferhilfe Schweiz» auf `grenzen` › `gewalt`** (NR4-1, Nachprüfung Runde 4): Der Link zeigte bisher auf die Startseite der Opferhilfe. Dort steht im ersten Bildschirm ganz oben ein gelbes Band über die ganze Breite: «HILFE BEI GEWALT 142» mit der Schaltfläche «142 anrufen». Das zählt nach der Regel als hervorgehobener Block mit Telefonnummer, auch wenn 142 laut der Seite «keine Notrufnummer» ist. **Entscheid (Runde 5):** Der Link führt jetzt auf «Für wen ist die Opferhilfe?», eine Seite ohne Band und ohne Nummer (Abruf 13.10.2026: 0-mal «142»). Sie passt zum folgenden Satz über Angehörige und nahestehende Personen. Der Satz bleibt.
+  - **NR4-2 (optional):** Der Zusatz «(nicht verlinkt)» bei «Schutz» ist entfernt, wie bei den anderen Angaben ohne Link.
   - **NAR34-2 (optional) · Druck mit sticky Überschriften:** Das Profil übernimmt den Befund als P-15 in `/ENTSCHEIDE-PROFIL-2026-10-2.md`. An der Website ändert sich nichts.
   - **NAR34-3 (optional) · STOPP:** Der Zusatz lautet jetzt «Getselfhelp, englisch. Auf dieser Website in angepasster deutscher Fassung.»
   - **NAR34-4 (optional) · BApK:** Der Linktext ist der Seitentitel «Medien des BApK». Die bisherige Beschreibung folgt nach dem Doppelpunkt.
   - **NAR34-5 (optional) · Kurzangabe Kanton Zürich:** keine Änderung. Kurzangaben sind kurz, der Eintrag auf `quellen` ist vollständig.
   - **NAR34-6 (optional) · Verhältnis 4 : 6:** keine Änderung. Belegt ist der Bereich unter zehn Atemzügen pro Minute, und der Text sagt «Die Zahlen sind eine Orientierung, keine Vorgabe.» (E4).
   - **NAR34-7 (optional) · Schlüssel «NICE NG225» in `ZUORDNUNG`:** Der verwaiste Schlüssel ist entfernt, nur Daten.
-  - **Gültigkeit:** Die Freigabe AR3-4 umfasst auch Runde 4. Sie gilt, sobald die Nachprüfung der Runde 4 bestätigt, dass nur diese Änderungen vorliegen.
+  - **Gültigkeit:** Die Freigabe AR3-4 umfasst auch die Runden 4 und 5. Sie gilt, sobald die Nachprüfung der Runde 5 bestätigt, dass nur diese Änderungen vorliegen.
 - Die Statustabelle bleibt unverändert.
 
 ## Nachprüfung AR3-4 (13.10.2026, Stand 3676860)
@@ -6761,6 +6762,19 @@ Die Kurzangaben der Einträge mit neuem Abrufdatum (F6) sind unverändert, wie e
   - `node abgleich/pruefe-abgleich.mjs` → «7412 Zeilen, 0 ohne Fundstelle»
   - `verwendet-auf.mjs`, beide Modi → «86 Einträge, 0 mit anderer Angabe, 0 Kurzangaben nicht zugeordnet»
 - **Diff der gebauten Seiten gegen `c8e0405`:** nur `quellen`, mit den drei Einträgen oben. Kein Satz einer Themenseite ist geändert.
+
+#### Runde 5 · Leitsitzung nach der Nachprüfung der Runde 4 (NR4-1, NR4-2)
+
+**13.10.2026 · umgesetzt von der Leitsitzung** auf `14bdda8`.
+- **NR4-1:** In `content/grenzen.html`, Abschnitt `gewalt`, zeigt der Link «Opferhilfe Schweiz» nicht mehr auf `https://www.opferhilfe-schweiz.ch/de/`, sondern auf `https://www.opferhilfe-schweiz.ch/de/was-ist-opferhilfe/fur-wen-ist-die-opferhilfe/`. Linktext und Satz sind unverändert. Abgleich: Bemerkung von `grenzen.md` Nr. 289.
+- **NR4-2:** In `content/quellen.html`, Eintrag Opferhilfe, ist «(nicht verlinkt)» entfernt. Abgleich: Bemerkung von `quellen.md` Nr. 253.
+- **Befehle:**
+  - build → 0 blockierend, 1 Hinweis («144», wie bisher)
+  - `--selftest` → 65/65
+  - `--production` → 0 blockierend
+  - Abgleich → 7412 Zeilen, 0 ohne Fundstelle
+  - `verwendet-auf`, beide Modi → 86/0/0
+- **Diff der gebauten Seiten gegen `14bdda8`:** auf `grenzen` nur das Linkziel, auf `quellen` nur «(nicht verlinkt)». Kein Satz ist geändert.
 
 ### Frühere Stände der Selbstprüfung (vor AR3-4)
 
