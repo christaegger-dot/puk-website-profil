@@ -50,7 +50,6 @@ const ZUORDNUNG = {
   'NICE CG78 (2009)': 'CG78',
   'NICE NG150 (2020)': 'NG150',
   'NICE NG222 (2022)': 'NG222',
-  'NICE NG225': 'NG225',
   'NICE NG225 (2022)': 'NG225',
   'Opferhilfe Schweiz (laufend)': 'Opferhilfe Schweiz (laufend',
   'PUK Zürich (laufend), Informationen für Angehörige': 'Informationen für Angehörige</a>. PUK Zürich.',

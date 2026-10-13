@@ -312,6 +312,16 @@ Dazu 5 leichte Befunde zu Bericht und Abgleich. Die erste und zweite Prüfrunde 
   - 29 Artikel mit PubMed- oder DOI-Link brauchen keines.
 - **Nicht Teil dieser Freigabe:** «WHO Europa (2025)» hat keinen Link und deshalb kein Abrufdatum; das bleibt so. Die optionalen Befunde früherer Prüfungen bleiben offen.
 - **Danach:** Nachprüfung durch eine Prüfsitzung, die weder gebaut noch entschieden hat. Dann folgen der Export mit `--production`, die Übertragung nach `site/` und die Prüfung der Produktion.
+- **Nachtrag 13.10.2026 · Entscheide zur Nachprüfung AR3-4** (Urteil «AR3-4 erfüllt», `c8e0405`), von der Leitsitzung im Auftrag der Fachstelle. Umgesetzt hat sie die Leitsitzung als «Runde 4» (Selbstprüfung).
+  - **NAR34-1 (wichtig) · Opferhilfe «Schutz»:** Die Seite zeigt im ersten Bildschirm einen Kasten «Wenn Sie in akuter Gefahr sind … rufen Sie die Polizei an». Die Regel für Links gilt auch für diesen bestehenden Link; die Seite bleibt Quelle, aber ohne Link. Verlinkt bleibt «Für wen ist die Opferhilfe?», ohne Notrufnummer.
+  - **Link «Opferhilfe Schweiz» auf `grenzen` › `gewalt`:** bleibt, er führt auf die Startseite der Opferhilfe. Dort steht im Kopf nur «142 anrufen», die Beratungsnummer der Opferhilfe; die Seite sagt selbst: «Die Opferhilfe-Nummer 142 ist keine Notrufnummer.» Einen Notfallblock zeigt die Startseite nicht (Abruf 13.10.2026).
+  - **NAR34-2 (optional) · Druck mit sticky Überschriften:** Das Profil übernimmt den Befund als P-15 in `/ENTSCHEIDE-PROFIL-2026-10-2.md`. An der Website ändert sich nichts.
+  - **NAR34-3 (optional) · STOPP:** Der Zusatz lautet jetzt «Getselfhelp, englisch. Auf dieser Website in angepasster deutscher Fassung.»
+  - **NAR34-4 (optional) · BApK:** Der Linktext ist der Seitentitel «Medien des BApK». Die bisherige Beschreibung folgt nach dem Doppelpunkt.
+  - **NAR34-5 (optional) · Kurzangabe Kanton Zürich:** keine Änderung. Kurzangaben sind kurz, der Eintrag auf `quellen` ist vollständig.
+  - **NAR34-6 (optional) · Verhältnis 4 : 6:** keine Änderung. Belegt ist der Bereich unter zehn Atemzügen pro Minute, und der Text sagt «Die Zahlen sind eine Orientierung, keine Vorgabe.» (E4).
+  - **NAR34-7 (optional) · Schlüssel «NICE NG225» in `ZUORDNUNG`:** Der verwaiste Schlüssel ist entfernt, nur Daten.
+  - **Gültigkeit:** Die Freigabe AR3-4 umfasst auch Runde 4. Sie gilt, sobald die Nachprüfung der Runde 4 bestätigt, dass nur diese Änderungen vorliegen.
 - Die Statustabelle bleibt unverändert.
 
 ## Nachprüfung AR3-4 (13.10.2026, Stand 3676860)
@@ -6699,6 +6709,22 @@ Die Kurzangaben der Einträge mit neuem Abrufdatum (F6) sind unverändert, wie e
   - `node abgleich/pruefe-abgleich.mjs` → «7412 Zeilen, 0 ohne Fundstelle». Vorher meldete es 3 Zitate in den neuen Bemerkungen ohne Fundstelle; sie sind jetzt ohne Guillemets gefasst.
   - `node abgleich/verwendet-auf.mjs`, beide Modi → «86 Einträge, 0 mit anderer Angabe, 0 Kurzangaben nicht zugeordnet»
 - **Satzdiff der gebauten Seiten gegen `94452c3`:** genau 2 geänderte Sätze (E2 auf `grenzen`, E6 auf `quellen`). Gegen `938e4bf` ist es nur der Satz aus E2, dazu die Auszeichnung `lang="en"` in E6. Sonst ist nichts geändert, auch keine Abbildung.
+
+#### Runde 4 · Leitsitzung nach der Nachprüfung AR3-4 (NAR34-1, -3, -4, -7)
+
+**13.10.2026 · umgesetzt von der Leitsitzung** auf `c8e0405`. Entscheide: «Freigabe AR3-4», Nachtrag zur Nachprüfung.
+
+- **NAR34-1:** Auf `quellen`, Eintrag Opferhilfe Schweiz, ist der Link auf `https://www.opferhilfe-schweiz.ch/de/was-ist-opferhilfe/schutz/` entfernt. Der Eintrag nennt die Seite jetzt «Schutz» (nicht verlinkt). Abgleich: Bemerkung von `quellen.md` Nr. 253.
+- **NAR34-3:** STOPP: «Getselfhelp, deutschsprachige angepasste Fassung.» wird zu «Getselfhelp, englisch. Auf dieser Website in angepasster deutscher Fassung.» Abgleich: Bemerkung von `quellen.md` Nr. 566.
+- **NAR34-4:** BApK: Der Linktext ist «Medien des BApK», danach folgt «: Informationsmaterialien für Angehörige, Kinder und Geschwister psychisch erkrankter Menschen.» Abgleich: Bemerkung von `quellen.md` Nr. 245.
+- **NAR34-7:** Der Schlüssel `'NICE NG225'` ist aus `ZUORDNUNG` in `abgleich/verwendet-auf.mjs` entfernt. Kein Eintrag nutzt ihn mehr.
+- **Befehle:**
+  - `node tools/build.mjs` → «Gate draft: 0 blockierend, 1 Hinweise» («144», wie bisher)
+  - `--selftest` → 65/65
+  - `--production` → 0 blockierend
+  - `node abgleich/pruefe-abgleich.mjs` → «7412 Zeilen, 0 ohne Fundstelle»
+  - `verwendet-auf.mjs`, beide Modi → «86 Einträge, 0 mit anderer Angabe, 0 Kurzangaben nicht zugeordnet»
+- **Diff der gebauten Seiten gegen `c8e0405`:** nur `quellen`, mit den drei Einträgen oben. Kein Satz einer Themenseite ist geändert.
 
 ### Frühere Stände der Selbstprüfung (vor AR3-4)
 
