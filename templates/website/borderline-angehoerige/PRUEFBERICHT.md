@@ -548,6 +548,21 @@ Notrufnummern wie 112, 117 oder 144 zeigt die Seite nicht. Das Zitat «Die Opfer
 
 **Urteil Runde 4: erfüllt.** Es liegen nur die freigegebenen Änderungen vor. NAR34-1, -3, -4 und -7 sind wörtlich und am genannten Ort umgesetzt, und die Werkzeuge laufen ohne Befund. Offen für die Fachstelle ist NR4-1 (wichtig). Er betrifft einen unveränderten Link und eine Auslegung der Regel, nicht die Umsetzung der Runde 4.
 
+### Nachprüfung Runde 5 (Stand 6cd9470)
+
+**13.10.2026 · dieselbe Prüfsitzung, im Auftrag der Leitsitzung.** Geprüft ist `claude/ar3-4-quellenangaben` mit Head `6cd9470`, darin `2671165`. Bezugsstand ist `14bdda8`. Ich habe nichts geändert ausser diesem Bericht.
+
+| Nr. | Prüfpunkt | Ergebnis | Beleg |
+| --- | --- | --- | --- |
+| 1 | Diff `14bdda8..6cd9470` nur in den genannten Dateien | **erfüllt** | `git diff --stat` nennt genau 7 Dateien: `content/grenzen.html`, `grenzen.html`, `content/quellen.html`, `quellen.html`, `abgleich/grenzen.md`, `abgleich/quellen.md` und `PRUEFBERICHT.md`. In `grenzen.md` ist nur Nr. 289 geändert, in `quellen.md` nur Nr. 253, jeweils die Bemerkung. Im Bericht ändern sich nur der Nachtrag unter «Freigabe AR3-4» und die neue Selbstprüfung «Runde 5». Meine Abschnitte sind unverändert |
+| 2 | Linkziel auf `grenzen` › `gewalt` nach der Regel | **erfüllt** | `href="https://www.opferhilfe-schweiz.ch/de/was-ist-opferhilfe/fur-wen-ist-die-opferhilfe/"`. Linktext «Opferhilfe Schweiz» und Satz unverändert. Die Seite habe ich am 13.10.2026 abgerufen (Chromium 1280 × 900 und `curl`, je 200, Titel «Für wen ist die Opferhilfe? - Opferhilfe Schweiz»). Im ersten Bildschirm: Kopf mit Logo und Navigation, kein gelbes Band, keine Schaltfläche «142 anrufen». Die Randspalte enthält nur «Links» und «Für Fachleute». Auf der ganzen Seite steht keine der Nummern 111, 112, 117, 142–147, 988, 999, 116 123 oder 0800 und kein «Notfall», «Notruf» oder «Krise». Im ausgelieferten HTML kommt «144» nur in Favicon-Dateinamen vor («apple-icon-144x144»), 142 und `tel:` gar nicht. Die Seite deckt weiter den Satz E2 («Auch die Angehörigen von Opfern und ihnen nahestehende Personen können Opferhilfe erhalten.») |
+| 3 | Satzdiff der gebauten Seiten gegen `14bdda8` | **erfüllt** | 18 HTML-Dateien verglichen. Im HTML geändert sind nur `grenzen.html` und `quellen.html`. Auf `grenzen` ändert sich kein Satz, nur das Linkziel. Auf `quellen` (947 → 946 Sätze) wird aus ««Schutz»» und «(nicht verlinkt) und» das Stück ««Schutz» und»; das ist nur das Entfernen von «(nicht verlinkt)». Sonst ist kein Satz geändert. Auf der Website zeigen jetzt beide Opferhilfe-Links auf «Für wen ist die Opferhilfe?», kein Link mehr auf die Startseite oder auf «Schutz» |
+| 4 | Werkzeuge | **erfüllt** | `node tools/build.mjs` → «17 Seiten geschrieben … Gate draft: 0 blockierend, 1 Hinweise» («144» als Seitenzahl). Danach zeigt `git status` keine Änderung. `--production` → «Gate production: 0 blockierend, 1 Hinweise». `--selftest` → «Selbsttest: 65/65 bestanden.» `pruefe-abgleich.mjs` → «Abgleich geprüft: 7412 Zeilen, 0 ohne Fundstelle.» `verwendet-auf.mjs` → «86 Einträge, 0 mit anderer Angabe, 0 Kurzangaben nicht zugeordnet.»; mit `--ohne-legenden` dasselbe mit «(ohne Legenden)» |
+
+**Befunde der Runde 5:** keine. NR4-1 und NR4-2 sind erledigt, wie im Nachtrag beschrieben. Der Nachtrag beschreibt die Startseite jetzt zutreffend.
+
+**Urteil Runde 5: erfüllt.** Es liegen nur die freigegebenen Änderungen vor: das Linkziel auf `grenzen` und das Entfernen von «(nicht verlinkt)» auf `quellen`. Das neue Linkziel genügt der Regel. Aus den Nachprüfungen AR3-4, Runde 4 und Runde 5 bleibt nichts Wichtiges offen. Offen sind nur NAR34-2 (als P-15 an das Profil übergeben), NAR34-5 und NAR34-6; diese drei hat die Leitsitzung bewusst ohne Änderung an der Website entschieden.
+
 ## Prüfung der Produktion AR3-2 (13.10.2026, Deploy 6acdb70)
 
 **Prüfsitzung (Claude Code), 13.10.2026, etwa 04.45 bis 05.00 UTC.** Auftrag: Auflage AR3-2 nach Entscheide zur Schlussprüfung 5.3 b, V-2 und V-9. Diese Sitzung hat die Website weder gebaut noch korrigiert. Sie hat nichts entschieden und keine frühere Stufe geprüft.
