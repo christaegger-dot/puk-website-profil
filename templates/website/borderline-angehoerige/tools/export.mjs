@@ -10,6 +10,7 @@ import { existsSync } from 'node:fs';
 import { createRequire } from 'node:module';
 import { fileURLToPath } from 'node:url';
 import { dirname, join, resolve as presolve, basename, relative } from 'node:path';
+import { injectSearchIndex } from './search-index.mjs';
 const require = createRequire(import.meta.url);
 const C = require('./contract.js');
 const dir = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -22,7 +23,10 @@ const cfg = JSON.parse(await readFile(join(dir, 'site.config.json'), 'utf8'));
 
 /* 1 · Seiten bauen und prüfen */
 const files = {};
-for (const p of cfg.pages) files[C.resolve('', p.href).path] = C.renderPage(cfg, p, await readFile(join(dir, 'content', p.id + '.html'), 'utf8'));
+const fragments = {};
+for (const p of cfg.pages) fragments[p.id] = await readFile(join(dir, 'content', p.id + '.html'), 'utf8');
+injectSearchIndex(cfg, fragments);
+for (const p of cfg.pages) files[C.resolve('', p.href).path] = C.renderPage(cfg, p, fragments[p.id]);
 const report = existsSync(join(dir, 'PRUEFBERICHT.md')) ? await readFile(join(dir, 'PRUEFBERICHT.md'), 'utf8') : null;
 const r = C.gate(cfg, files, { mode, exists: p => p in files || existsSync(join(dir, p)), report });
 if (r.blocks) { for (const f of r.findings.filter(x => x.level === 'block')) console.error(`BLOCK ${f.page} ${f.id} ${f.msg}`); console.error(`Export abgebrochen: ${r.blocks} blockierende Befunde (${mode}).`); process.exit(1); }

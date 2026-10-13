@@ -121,5 +121,6 @@ Ein Szenario gilt als bestanden, wenn die vereinbarte Fundstelle unter den erste
 | `node abgleich/pruefe-abgleich.mjs` | 7’412 Zeilen; 0 ohne Fundstelle |
 | `node abgleich/nutzerwege.mjs` | 8/8 Wege; 20/20 veröffentlichte Inhaltsseiten erreichbar |
 | `node abgleich/zero-participant-audit.mjs` | 25/25 Szenarien; 175 Suchziele; 0 Fehler |
+| `node abgleich/zero-participant-audit.mjs <export-ordner>` | derselbe Test auf dem eigenständigen Produktions-Export; verhindert einen leeren Export-Suchindex |
 | `PW_CHROMIUM=/usr/bin/chromium node abgleich/bedienung.mjs` | alle 21 Seiten: Sprunglink erster Tabstopp; 0 Fokusstellen ohne sichtbaren Fokus |
 | gezielte Chromium-Prüfung der neuen Suche und Direktlinks | 13/13 bestanden; 0 Laufzeitfehler; 0 horizontaler Überlauf bei 360 und 1280 CSS-Pixeln |
