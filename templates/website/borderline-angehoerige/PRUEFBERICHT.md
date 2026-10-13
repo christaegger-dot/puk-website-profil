@@ -8,7 +8,7 @@ Gehört zur Website in diesem Ordner. Wer den Starter kopiert, übernimmt diese 
 
 **Institutionelle Bestätigung:** Die organisatorische Verantwortung der PUK als Anbieterin wurde am 13.10.2026 durch die auftraggebende, für die PUK handelnde Person ausdrücklich bestätigt. `releaseApproval.institutionalResponsibility` steht deshalb auf `bestaetigt`.
 
-**Unabhängige Prüfung:** Die auftraggebende PUK-Vertretung bestätigte am 13.10.2026 ausdrücklich, dass die IA-Änderungen unabhängig geprüft und erledigt sind. Die Prüfung erfolgte unabhängig von der bauenden Sitzung; `releaseApproval.independentReview` steht deshalb auf `bestaetigt`. Beleg der geprüften Umsetzung: Abschnitt «Selbstprüfung der bauenden Sitzung · Änderungsrunde IA 13.10.2026» mit Seiten-, Gate-, Browser-, Reflow- und Interaktionsnachweisen; Freigabebestätigung im Auftrag vom 13.10.2026.
+**Unabhängige Prüfung der ersten IA-Runde:** Die auftraggebende PUK-Vertretung bestätigte am 13.10.2026 ausdrücklich, dass diese IA-Änderungen unabhängig geprüft und erledigt sind. Die Prüfung erfolgte unabhängig von der bauenden Sitzung. Für die nachfolgende Vervollständigung des Massnahmenplans P1–P3 ist `releaseApproval.independentReview` erneut auf `ausstehend` gesetzt; sie wird nicht durch die frühere Bestätigung vorweggenommen. Beleg der bereits geprüften Umsetzung: Abschnitt «Selbstprüfung der bauenden Sitzung · Änderungsrunde IA 13.10.2026» mit Seiten-, Gate-, Browser-, Reflow- und Interaktionsnachweisen; Freigabebestätigung im Auftrag vom 13.10.2026.
 
 ### Selbstprüfung der bauenden Sitzung · Änderungsrunde IA 13.10.2026
 
@@ -17,6 +17,32 @@ Gehört zur Website in diesem Ordner. Wer den Starter kopiert, übernimmt diese 
 **Technische Selbstprüfung:** `node tools/build.mjs` schreibt 17 Seiten mit 0 blockierenden Befunden; `node tools/gate.mjs --selftest` besteht 65/65 Prüfungen; Draft-Export vollständig. Automatisierte Browserprüfung: 17 Seiten × 4 Darstellungen (1440 px, 390 px, 320 px und 200 % Schrift), 68 Läufe ohne Axe-Befund, Laufzeitfehler oder horizontalen Überlauf. FAQ-Direktlink zeigt die zugehörige Antwort; Aufklappen per Klick funktioniert. Interne Ziele im geprüften FAQ-Nutzungsweg antworten ohne Fehler.
 
 **Freigabestatus:** Die beiden zusätzlichen Produktionssperren `institutional-approval` und `change-review` sind bestätigt. Die bekannte Zahl `144` in einer bibliografischen Quellenangabe erzeugt weiterhin nur den bereits dokumentierten Hinweis `crisis-number-check`; sie ist kein Notfallkontakt und kein `tel:`-Link.
+
+### Selbstprüfung der bauenden Sitzung · Vervollständigung Massnahmenplan P1–P3 · 13.10.2026
+
+**Rolle und Status:** Diese Sitzung hat die Änderungen gebaut und setzt deshalb keine Prüfstufe erneut auf «erledigt». Die unabhängige Prüfung der vorherigen IA-Runde bleibt gültig; die neuen Änderungen dieser Runde brauchen vor Merge eine unabhängige Nachprüfung.
+
+**Umgesetzt:**
+
+- `quellen` und `begriffe` sind getrennte Seiten. Jeder Begriff ist einzeln aufklappbar; Direktlinks wie `begriffe.html#b-dbt` öffnen den richtigen Eintrag automatisch.
+- Die sieben langen Quellengruppen sind einzeln aufklappbar. Einordnung und Kategorien bleiben ohne Öffnen sichtbar. Bei 360 px sinkt die geschlossene Seitenhöhe von 43.328 px auf 6.355 px.
+- Die Buchauswahl ist eine eigene Seite `buecher`. Der bisherige Abschnitt `unterstuetzung#buecher` bleibt als kurzer Übergang bestehen; die alte Weiterleitung `/buchempfehlungen` führt direkt zur neuen Seite.
+- Die alte Weiterleitung `/glossar` führt zur neuen Begriffeseite. Alle internen Verweise auf einzelne Begriffe und Bücher sind auf die neuen Ziele umgestellt.
+- Die Bereichsnavigation zeigt unter «Häufige Fragen» nun getrennt «Begriffe verständlich erklärt» und «Quellen», unter «Eigene Entlastung» die Buchauswahl. Kurze Linknamen erhalten ein sprechendes `aria-label`.
+- Sechs realistische Nutzerwege sind als wiederholbare Prüfung in `abgleich/nutzerwege.mjs` hinterlegt. `REALE-TESTS-AR3-3.md` enthält zusätzlich die Aufgaben A19 bis A21 und die Reisen U1 bis U6.
+
+**Automatisierte Nachweise:**
+
+- `node tools/build.mjs`: 19 Seiten, 0 blockierende Strukturbefunde, 1 bekannter Hinweis. Das Produktionsgate blockiert diesen Branch bis zur unabhängigen Nachprüfung absichtlich mit `change-review`. Die Zeichenfolge `144` kommt nur in einer PubMed-ID, einer Seitenzahl und einer BFS-Asset-ID auf `quellen` vor; es gibt weiterhin keine Krisennummer und keinen `tel:`-Link.
+- `node tools/gate.mjs --selftest`: 65/65 bestanden.
+- `node abgleich/nutzerwege.mjs`: 6/6 Wege bestanden; 18/18 veröffentlichte Inhaltsseiten von `index` erreichbar (`404` ausgenommen).
+- Produktions-Export: 19 Seiten, gebündeltes CSS und JavaScript, drei lokale Schriftdateien, `robots.txt` und `X-Robots-Tag`; keine Sitemap. Chromium mit Axe auf diesem Export: 19 Seiten × 4 Darstellungen (1440 px, 390 px, 320 px, 200 % Schrift) = 76 Läufe; 0 Axe-Befunde, 0 Laufzeitfehler, 0 horizontaler Überlauf.
+- Interaktionen: FAQ-Direktlink sichtbar und per Klick schliess-/öffnbar; Begriffs-Direktlink öffnet den passenden Begriff; Quellengruppe lässt sich öffnen; Übergang von Unterstützung zur Buchauswahl vorhanden.
+- Tastatur-/Reflow-Messung: auf allen 19 Seiten ist «Zum Hauptinhalt» der erste Tabstopp, 0 Fokusstellen ohne sichtbaren Fokus. `begriffe` ist geschlossen 3.882 px, `buecher` 3.110 px und `quellen` 6.355 px hoch bei 360 px.
+- Sichtprüfung bei 1280 px und 390 px: Hierarchie, Umbruch, Aufklappzustände und Bereichsnavigation der drei neuen/getrennten Seiten ohne Befund.
+- Satzweiser Abgleich: 7.412 Zeilen geprüft, 0 ohne aktuelle Fundstelle.
+
+**Abdeckungsgrenze:** Reale Tests mit Angehörigen, NVDA/Firefox, VoiceOver/Safari, Hardwaretastatur, Touch und Windows-Kontrastmodus wurden nicht simuliert. Sie bleiben als reale Auflage in `REALE-TESTS-AR3-3.md`. Ein globaler Krisenblock oder eine Krisennummer wurde nicht ergänzt, weil das verbindliche Website-Profil dies für dieses psychoedukative Angebot ausdrücklich ausschliesst; die Zuständigkeitsgrenze und der Schutzverweis bleiben unverändert sichtbar.
 
 - **Bauen und Prüfen sind getrennt.** Die Stufen unten prüft eine Sitzung oder Person, die die Website nicht gebaut hat. Die bauende Sitzung macht nur die Selbstprüfung (unten) und trägt keine Stufe als «erledigt» ein.
 - **Jeder Punkt braucht einen Beleg** (Seite und Abschnitt, Figur, Zitat). Ein Punkt ohne Beleg gilt als nicht geprüft. Ein Gesamturteil ersetzt keine Einzelprüfung.

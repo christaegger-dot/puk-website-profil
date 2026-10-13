@@ -2,7 +2,7 @@
   "$comment": "Borderline – Orientierung für Angehörige · Seitenvertrag, kopiert aus dem Psychoedukations-Starter (Build r4-3, Profil-Update 09.10.2026 übernommen: Build r4-4; Profil-Update 10.10.2026 übernommen: Build r4-6; Gate-Korrektur 10.10.2026 übernommen: Build r4-7; Profil 2026.10.1 übernommen in Etappe 3-1: Build r4-8, legal, 404-Seite, siteUrl). Alle 16 Seiten gebaut (Etappen 1 bis 3-1; Impressum und Datenschutz als eigene Seite nach Profilentscheid 11.10.2026), dazu die 404-Seite. Pflichtfelder und Regeln: README.md. Nach jeder Änderung: node tools/build.mjs, danach node tools/gate.mjs bzw. node tools/gate.mjs --production.",
   "kitRevision": "PUK Website Kit 1.10.1-r4 · abgeleitet",
   "canonicalSource": "PUK Zürich Design System 1.10.1 (unverändert)",
-  "assetVersion": "r4-9",
+  "assetVersion": "r4-10",
   "siteTitle": "Borderline – Orientierung für Angehörige",
   "shortDescription": "Psychoedukative Website der Fachstelle Angehörigenarbeit PUK für Angehörige von Menschen mit Borderline.",
   "language": "de-CH",
@@ -20,7 +20,7 @@
   "robots": "noindex, nofollow",
   "releaseApproval": {
     "institutionalResponsibility": "bestaetigt",
-    "independentReview": "bestaetigt"
+    "independentReview": "ausstehend"
   },
   "disclaimer": "Diese Website ersetzt keine individuelle Abklärung, Beratung oder Behandlung.",
   "footer": {
@@ -1234,8 +1234,8 @@
       "navLabel": "Eigene Entlastung",
       "groupRootId": "unterstuetzung",
       "status": "published",
-      "primaryTask": "Beratung, Austausch mit anderen Angehörigen und Bücher finden",
-      "description": "Beratung für Angehörige bei der Fachstelle Angehörigenarbeit der PUK und bei Pro Mente Sana, Austausch mit anderen Angehörigen, Selbsthilfegruppen, Hinweise für andere Kantone und Bücher für Angehörige.",
+      "primaryTask": "Beratung, Austausch mit anderen Angehörigen und Selbsthilfe finden",
+      "description": "Beratung für Angehörige bei der Fachstelle Angehörigenarbeit der PUK und bei Pro Mente Sana, Austausch mit anderen Angehörigen, Selbsthilfegruppen und Hinweise für andere Kantone.",
       "sensitiveTopics": [
         "akute-krise"
       ],
@@ -1292,12 +1292,39 @@
           "id": "v-un-buecher",
           "section": "05 Bücher",
           "sectionId": "buecher",
+          "goal": "Die getrennte Buchauswahl öffnen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Kurzer Übergang zur eigenständigen, nach Zielgruppen geordneten Buchauswahl. Die Trennung reduziert Seitenlänge und erleichtert einen gezielten Einstieg.",
+          "approvalStatus": "freigegeben"
+        }
+      ]
+    },
+    {
+      "id": "buecher",
+      "title": "Bücher für Angehörige",
+      "href": "buecher.html",
+      "navLabel": null,
+      "groupRootId": "unterstuetzung",
+      "status": "published",
+      "primaryTask": "Ein passendes Buch nach Zielgruppe und Bedarf finden",
+      "description": "Eingeordnete Buchauswahl für Partnerinnen und Partner, Eltern, Kinder und weitere Angehörige, ergänzt um kritisch zu lesende Titel.",
+      "sensitiveTopics": [
+        "akute-krise"
+      ],
+      "visualPlan": [
+        {
+          "id": "v-bu-auswahl",
+          "section": "Auswahl nach Zielgruppe",
+          "sectionId": "auswahl",
           "goal": "Ein passendes Buch nach Zielgruppe finden",
           "format": "text",
           "statement": "–",
           "source": "–",
           "alternative": "–",
-          "reason": "Text ist klarer: Liste nach Zielgruppe, je Titel Autorin oder Autor, Verlag und Jahr, ein Satz und «Für: …» (Entscheid der Fachstelle 11.10.2026, Bauauftrag 2c-1, Abschnitt 1). Ohne Bezugslinks. Die vier kritisch eingeordneten Titel mit Einordnung in einer Vertiefung (Akkordeon).",
+          "reason": "Eigenständige, aufklappbare Auswahl nach Zielgruppe; Angaben je Titel und gesonderte kritische Einordnung historisch einflussreicher Titel.",
           "approvalStatus": "freigegeben"
         }
       ]
@@ -1417,14 +1444,42 @@
       ]
     },
     {
+      "id": "begriffe",
+      "title": "Begriffe verständlich erklärt",
+      "href": "begriffe.html",
+      "navLabel": null,
+      "groupRootId": "fragen",
+      "status": "published",
+      "primaryTask": "Einen Fachbegriff schnell nachschlagen und im Kontext verstehen",
+      "description": "Zentrale Fachbegriffe mit vereinfachten Erklärungen, Beispielen und Verweisen auf die passenden Themenseiten.",
+      "sensitiveTopics": [
+        "selbstgefaehrdung",
+        "akute-krise"
+      ],
+      "visualPlan": [
+        {
+          "id": "v-be-begriffe",
+          "section": "Begriffe von A bis Z",
+          "sectionId": "begriffe",
+          "goal": "Einen Fachbegriff verstehen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Jeder Begriff ist einzeln aufklappbar und enthält Erklärung, Beispiel und thematischen Verweis. Das reduziert die sichtbare Informationsmenge beim Nachschlagen.",
+          "approvalStatus": "freigegeben"
+        }
+      ]
+    },
+    {
       "id": "quellen",
-      "title": "Quellen und Begriffe",
+      "title": "Quellen",
       "href": "quellen.html",
       "navLabel": null,
       "groupRootId": "fragen",
       "status": "published",
-      "primaryTask": "Einen Fachbegriff nachschlagen oder eine Quelle der Website nachvollziehen",
-      "description": "Erklärungen von Fachbegriffen, die auf der Website vorkommen, und die vollständige Quellenliste mit Einordnung, nach Funktion geordnet.",
+      "primaryTask": "Eine Quelle der Website nachvollziehen und fachlich einordnen",
+      "description": "Vollständige Quellenliste mit Einordnung, nach Funktion geordnet.",
       "sensitiveTopics": [
         "selbstgefaehrdung",
         "gewalt",
@@ -1432,20 +1487,8 @@
       ],
       "visualPlan": [
         {
-          "id": "v-qu-begriffe",
-          "section": "01 Begriffe",
-          "sectionId": "begriffe",
-          "goal": "Einen Fachbegriff verstehen",
-          "format": "text",
-          "statement": "–",
-          "source": "–",
-          "alternative": "–",
-          "reason": "Text ist klarer: Begriffsliste mit kurzer Erklärung, Beispiel und Verweis. Die neun Kriterien des DSM-5-TR in einer Vertiefung (Akkordeon), wie im Bestand aufklappbar.",
-          "approvalStatus": "freigegeben"
-        },
-        {
           "id": "v-qu-einordnung",
-          "section": "02 Einordnung",
+          "section": "01 Einordnung",
           "sectionId": "einordnung",
           "goal": "Wissen, wie die Quellen eingeordnet sind",
           "format": "text",
@@ -1457,7 +1500,7 @@
         },
         {
           "id": "v-qu-forschung",
-          "section": "03 Forschung",
+          "section": "02 Forschung",
           "sectionId": "forschung",
           "goal": "Quellen dieser Gruppe nachvollziehen",
           "format": "text",
@@ -1469,7 +1512,7 @@
         },
         {
           "id": "v-qu-therapie",
-          "section": "04 Therapie",
+          "section": "03 Therapie",
           "sectionId": "therapie",
           "goal": "Quellen dieser Gruppe nachvollziehen",
           "format": "text",
@@ -1481,7 +1524,7 @@
         },
         {
           "id": "v-qu-angehoerige",
-          "section": "05 Angehörige",
+          "section": "04 Angehörige",
           "sectionId": "angehoerige",
           "goal": "Quellen dieser Gruppe nachvollziehen",
           "format": "text",
@@ -1493,7 +1536,7 @@
         },
         {
           "id": "v-qu-diagnostik",
-          "section": "06 Diagnostik",
+          "section": "05 Diagnostik",
           "sectionId": "diagnostik",
           "goal": "Quellen dieser Gruppe nachvollziehen",
           "format": "text",
@@ -1505,7 +1548,7 @@
         },
         {
           "id": "v-qu-versorgung",
-          "section": "07 Versorgung",
+          "section": "06 Versorgung",
           "sectionId": "versorgung",
           "goal": "Quellen dieser Gruppe nachvollziehen",
           "format": "text",
@@ -1517,7 +1560,7 @@
         },
         {
           "id": "v-qu-leitlinien",
-          "section": "08 Leitlinien",
+          "section": "07 Leitlinien",
           "sectionId": "leitlinien",
           "goal": "Quellen dieser Gruppe nachvollziehen",
           "format": "text",
@@ -1529,7 +1572,7 @@
         },
         {
           "id": "v-qu-schweiz",
-          "section": "09 Schweiz",
+          "section": "08 Schweiz",
           "sectionId": "schweiz",
           "goal": "Quellen dieser Gruppe nachvollziehen",
           "format": "text",
