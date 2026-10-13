@@ -12,7 +12,7 @@ const BUILD = 'r4-10';
 const FORMATS = ['text', 'figure', 'process', 'cycle', 'comparison', 'decision', 'illustration', 'stepwise-model', 'tension-field', 'relationship-map', 'continuum', 'layer-model'];
 /* Interaktive Komponenten und Erklärmuster G brauchen components/interaktion.js (HTML-Fassungen ohne React).
    Prüfbefund W3-01 (11.10.2026): auch jede Seite mit aufklappbarer Vertiefung (details) – das Skript öffnet sie vor dem Druck. */
-const INTERACTIVE = ['data-puk-accordion', 'data-puk-tabs', 'data-puk-disclosure', 'data-puk-dialog-open', 'data-vis-build'];
+const INTERACTIVE = ['data-puk-accordion', 'data-puk-tabs', 'data-puk-disclosure', 'data-puk-dialog-open', 'data-vis-build', 'data-puk-filter'];
 const DETAILS_RE = /<details[\s>]/i;
 const needsScript = html => INTERACTIVE.some(a => html.includes(a)) || DETAILS_RE.test(html);
 /* Interaktionskonzept: bis sechs Hauptpunkte sichtbar; darüber baut der Starter unter 760 px ein «Menü» (Dropdown-Menü, Profilentscheid 11.10.2026). */
@@ -103,6 +103,15 @@ const cls = (nd, c) => (' ' + ((nd.attrs && nd.attrs.class) || '') + ' ').includ
 const up = (nd, pred) => { for (let p = nd.parent; p; p = p.parent) if (p.attrs && pred(p)) return p; return null; };
 const byId = (doc, id) => id ? one(doc, x => x.attrs.id === id) : null;
 const foldFaqAnswers = html => String(html || '').replace(/(<h3\s+class="puk-site-subheading"\s+id="f-[^"]+">[\s\S]*?<\/h3>)([\s\S]*?)(?=<h3\s+class="puk-site-subheading"\s+id="f-|<\/div><\/div><\/section>)/g, (m, heading, answer) => answer.includes('data-responsibility-inline') ? m : `<details class="puk-site-faq"><summary>${heading}</summary><div class="puk-site-faq__answer">${answer.trim()}</div></details>\n`);
+const foldDepthSections = (html, ids) => (ids || []).reduce((out, id) => {
+  const safeId = String(id).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const re = new RegExp(`(<section\\b[^>]*\\bid="${safeId}"[^>]*>[\\s\\S]*?<\\/section>)`);
+  return out.replace(re, section => {
+    const heading = section.match(/<h2\b[^>]*>([\s\S]*?)<\/h2>/i);
+    const label = norm((heading ? heading[1] : id).replace(/<[^>]+>/g, ' '));
+    return `<details class="puk-site-depth"><summary>Vertiefung anzeigen: ${esc(label)}</summary><div class="puk-site-depth__content">${section}</div></details>`;
+  });
+}, String(html || ''));
 
 /* ---------- Pfade ---------- */
 const isExternalUrl = u => /^\s*(?:[a-z][a-z0-9+.-]*:)?\/\//i.test(u || '');
@@ -134,7 +143,8 @@ function renderPage(cfg, page, content) {
   /* Profilentscheid 09.10.2026: Verweis im Text auf die zuständigen Stellen. Der Platzhalter <p data-responsibility-inline></p> wird mit dem geprüften Wortlaut aus site.config.json › responsibility.inline gefüllt; Seiten schreiben ihn nie selbst. */
   const inl = cfg.responsibility && cfg.responsibility.inline;
   const contentWithResponsibility = inl && inl.text ? content.replace(INLINE_RE, `<p class="puk-longform__boundary puk-site-inline-ref" data-responsibility-inline>${esc(inl.text)}</p>`) : content;
-  const body = page.id === 'fragen' ? foldFaqAnswers(contentWithResponsibility) : contentWithResponsibility;
+  const faqBody = page.id === 'fragen' ? foldFaqAnswers(contentWithResponsibility) : contentWithResponsibility;
+  const body = foldDepthSections(faqBody, page.collapsedSections);
   const subdued = sa.variant === 'responsibility' ? `<section class="puk-site-safety puk-site-safety--responsibility" data-safety-access="responsibility" data-review-status="${esc(sa.reviewStatus)}" aria-labelledby="puk-safety-title"><h2 class="puk-web-footer__heading" id="puk-safety-title">${esc(sa.label || 'Zuständigkeit')}</h2><p class="puk-web-footer__copy">${esc(sa.text)}</p>${sa.targetHref ? `<p class="puk-web-footer__copy"><a href="${esc(sa.targetHref)}">${esc(sa.targetLabel)}</a></p>` : ''}${review ? `<p class="puk-web-footer__copy puk-site-review">${review}</p>` : ''}</section>` : '';
   const draftbar = page.status === 'draft' ? `<p class="puk-site-draftbar" data-page-status="draft"><span class="puk-web-container">Entwurf · nicht in der Navigation · nicht veröffentlichen</span></p>` : '';
   const menu = nav.length > NAV_MAX;
@@ -153,6 +163,8 @@ function renderPage(cfg, page, content) {
   const legalHtml = legalLinks.length || legalMissing.length ? `<p class="puk-web-footer__copy puk-site-legal" data-site-legal>${legalLinks.map(l => `<a href="${esc(l.href)}"${isExternalUrl(l.href) ? ' rel="noopener noreferrer"' : ''}>${esc(l.label)}</a>`).join('<span aria-hidden="true"> · </span>')}${legalMissing.length ? `${legalLinks.length ? ' ' : ''}<span class="puk-site-draft">${esc(legalMissing.join(' und '))}: Platzhalter, Ziel nicht festgelegt</span>` : ''}</p>` : '';
   const notFound = isNotFound(page);
   const startPage = cfg.pages.find(p => p.id === 'index') || nav[0];
+  const searchPage = cfg.pages.find(p => p.id === 'suche' && p.status === 'published');
+  const searchLink = searchPage && !notFound ? `<a class="puk-site-search-link" href="${esc(searchPage.href)}"${page.id === searchPage.id ? ' aria-current="page"' : ''}>Website durchsuchen</a>` : '';
   const breadcrumbParts = page.id === 'index' || notFound ? [] : [
     `<li><a href="${esc(startPage.href)}">Übersicht</a></li>`,
     ...(groupRoot.id !== page.id && groupRoot.id !== startPage.id ? [`<li><a href="${esc(groupRoot.href)}">${esc(groupRoot.navLabel || groupRoot.title)}</a></li>`] : []),
@@ -189,10 +201,10 @@ ${script ? `<script src="${esc(cfg.interactionScript)}${v}" defer></script>\n` :
 <a class="puk-web-skip" href="#main-content">Zum Hauptinhalt</a>
 ${draftbar}<header class="puk-web-header"><div class="puk-web-container puk-web-header__inner">
 <a class="puk-web-logo" href="${esc(pagePath(startPage))}" aria-label="${esc(logoName(cfg))}"><img src="${esc(cfg.logo)}" alt="${esc(s.institution)}"></a>
-${navHtml}</div>
+${navHtml}${searchLink}</div>
 <div class="puk-web-container"><p class="puk-site-sender" data-sender><span class="puk-site-sender__label">${esc(senderLabel)}</span><span class="puk-site-sender__name" data-sender-unit>${esc(senderName)}</span>${senderInstitution}${s.email ? `${contactLabel}<a class="puk-link--inline" data-sender-email href="mailto:${esc(s.email)}">${esc(s.email)}</a>` : ''}${senderBadge}</p></div>
 </header>
-${breadcrumb}${direct}<main id="main-content" class="puk-web-main" tabindex="-1">
+${breadcrumb}${direct}<main id="main-content" class="puk-web-main" tabindex="-1"${page.filterSelector ? ` data-puk-filter data-filter-selector="${esc(page.filterSelector)}"` : ''}>
 ${body.trim()}
 ${sectionNav}
 </main>

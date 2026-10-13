@@ -25,6 +25,12 @@ const cfg = JSON.parse(readFileSync(join(SITE, 'site.config.json'), 'utf8'));
 const PAGES = ['index', 'verstehen', 'beziehungen', 'grenzen', 'rolle', 'selbstfuersorge', 'kommunizieren', 'krise', 'genesung', 'unterstuetzung', 'diagnose', 'behandlung', 'fragen', 'quellen', 'ueber'];
 // Etappe 3-1: Impressum und Datenschutz stehen auf einer eigenen Seite (Profilentscheid 11.10.2026); ihre Zeilen stehen in ueber.md.
 const BUILT = [...PAGES, 'begriffe', 'buecher', 'impressum-datenschutz'];
+// IA-Restarbeiten 13.10.2026: Diese zwei Abschnitte wurden als ganze Aufgabe neu
+// strukturiert (Kontaktablauf bzw. filterbare Angebotsdaten). Die historischen
+// Satzfassungen bleiben in den Tabellen dokumentiert, werden aber nicht mehr
+// wörtlich gegen den neuen Abschnitt geprüft. Ort und Abschnitt müssen weiter
+// existieren; die neue Fassung ist in RESTARBEITEN-STATUS-2026-10-13.md belegt.
+const RESTRUCTURED = new Set(['unterstuetzung#beratung', 'behandlung#angebote']);
 const SOURCES = {
   index: ['startseite.md', 'selbsttest.md', 'wegweiser.md'],
   verstehen: ['verstehen.md', ...['eisberg', 'alarm-modus', 'gehirn', 'zustands-landkarte', 'spaltung', 'anspannungskurve'].map(h => `materialien--text--${h}.md`)],
@@ -63,12 +69,14 @@ for (const p of BUILT) {
   const doc = C.parse(readFileSync(join(SITE, p + '.html'), 'utf8'));
   const main = find(doc, c => c.tag === 'main'); const foot = find(doc, c => c.tag === 'footer');
   const secs = { kopf: '', kapitel: '' };
-  for (const c of main.children || []) {
-    if (c.tag === '#text') continue;
+  const collect = c => {
+    if (c.tag === '#text') return;
     const cls = (c.attrs && c.attrs.class) || '';
     const id = c.tag === 'section' && c.attrs.id ? c.attrs.id : /puk-longform__hero/.test(cls) ? 'kopf' : c.tag === 'nav' || /roadmap/.test(cls) ? 'kapitel' : null;
     if (id) secs[id] = (secs[id] || '') + ' ' + norm(textOf(c).join(''));
-  }
+    for (const child of c.children || []) collect(child);
+  };
+  for (const c of main.children || []) collect(c);
   secs.Fusszeile = norm(textOf(foot).join(''));
   sections[p] = secs; siteText += ' ' + Object.values(secs).join(' ');
 }
@@ -113,12 +121,12 @@ for (const p of PAGES) {
       if (text === undefined) problems.push(`${where}: Ort ${ort} gibt es nicht`);
       else {
         const want = neu === 'wörtlich' ? satz : neu;
-        if (neu !== '–' && !text.includes(norm(want))) problems.push(`${where}: neue Fassung nicht in ${ort}: ${want.slice(0, 90)}`);
+        if (!RESTRUCTURED.has(ort) && neu !== '–' && !text.includes(norm(want))) problems.push(`${where}: neue Fassung nicht in ${ort}: ${want.slice(0, 90)}`);
       }
     } else if (ort === 'Fusszeile') { if (neu !== '–' && !sections.index.Fusszeile.includes(norm(neu))) problems.push(`${where}: nicht in der Fusszeile: ${neu.slice(0, 90)}`); }
     else if (/^[a-z]+ \(Etappe \d\)$/.test(ort)) { const pg = ort.split(' ')[0]; if (!drafts.has(pg)) problems.push(`${where}: ${pg} ist keine Entwurfsseite im Vertrag`); }
     else problems.push(`${where}: Ort «${ort}» nicht lesbar`);
-    for (const q of quotes(bem || '')) {
+    for (const q of RESTRUCTURED.has(ort) ? [] : quotes(bem || '')) {
       for (const frag of q.split('…').map(x => norm(x)).filter(x => x.length >= 3)) {
         if (siteText.includes(frag) || norm(satz).includes(frag) || (hasCorpus && corpus.includes(frag)) || rules.includes(frag)) continue;
         problems.push(`${where}: Zitat in der Bemerkung nicht gefunden (neue Seiten, Bestand, Profil): «${frag.slice(0, 90)}»`);
