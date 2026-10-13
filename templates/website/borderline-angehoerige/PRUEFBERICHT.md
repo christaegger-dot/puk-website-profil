@@ -234,7 +234,10 @@ Dazu 5 leichte Befunde zu Bericht und Abgleich. Die erste und zweite Prüfrunde 
   - AR3-5 Ausnahme R1-1 beenden: bis 13.01.2027
 - **Stand AR3-1 (13.10.2026):**
   - Die 27 PubMed-Links sind bestätigt. Abgefragt über die PubMed-Schnittstelle der Sitzung (Werkzeug «PubMed», Artikel-Metadaten) von der bauenden Sitzung: alle 27 PMIDs vorhanden, je mit Titel und Zeitschrift.
-  - Die 37 übrigen externen Links sind noch nicht geprüft. Die Netzwerkrichtlinie der Umgebung sperrte sie (Proxy 403). Die Fachstelle gibt das Netz frei; danach prüft die bauende Sitzung und trägt das Ergebnis hier nach.
+  - Die 37 übrigen externen Links hat die bauende Sitzung am 13.10.2026 nach der Freigabe des Netzes geprüft, mit `curl` (Weiterleitungen gefolgt) und für die Ausnahmen mit Chromium:
+    - **31 erreichbar** (200). 7 davon leiten weiter, alle auf passende Ziele: die zwei `doi.org`-Links zu den Verlagen (`psycnet.apa.org`, `journals.plos.org`); `promentesana.ch`, `selbsthilfeschweiz.ch`, `stand-by-you.ch` und `vaskzuerich.ch` auf ihre Hauptadresse; `projectairstrategy.org` auf `uow.edu.au/project-air/` (Project Air, University of Wollongong).
+    - **5 nicht automatisch prüfbar:** Ein Bot-Schutz (Cloudflare) antwortet mit 403, auch in Chromium («Attention Required», «Nur einen Moment…»): die drei Links auf `pukzh.ch`, `ipw.ch` (Psychotherapiestation für junge Erwachsene) und `nhsinform.scot` (grounding exercises). Die Fachstelle ist gebeten, sie im eigenen Browser zu öffnen.
+    - **1 tot** (404): `quellen` › `angehoerige`, «Family Guidelines for Borderline Personality Disorder» (Berkowitz und Gunderson), `www.borderlinepersonalitydisorder.org/wp-content/uploads/2011/08/Family-Guidelines-standard.pdf`. Die Domain leitet heute auf `bpdalliance.org`. Entscheid der Fachstelle auf Rückfrage: «Auf BPD Alliance umstellen». Neu: `https://bpdalliance.org/documents/family-guidelines/` (Dokumentseite der BPD Alliance, antwortet mit 200 und leitet auf ihre Ressourcenseite). Der Text der Quellenangabe bleibt. Umgesetzt im Block «Korrektur AR3-1» der Selbstprüfung.
   - Die 9 Verweise auf `borderline-angehoerige.netlify.app` antworten heute mit 404, weil dort noch die React-Fassung läuft. Sie gehören zu AR3-2.
 - **Statuszeile R3:** Auf Rückfrage hat die Fachstelle entschieden, dass die bauende Sitzung die Zeile setzt («Du, als Übertragung»), ausdrücklich abweichend von der Regel, dass die bauende Sitzung keine Stufe setzt (Ablauf, Regel 2). Die Zeile lautet «erledigt: Go mit Auflagen, als Freigabe angenommen (Fachstelle, 13.10.2026, V-8)». Sie überträgt den Entscheid der Fachstelle und ist kein Prüfergebnis.
 - **Veröffentlichung:** Sie braucht ein eigenes Ja der Fachstelle (V-9). Am 13.10.2026 auf Rückfrage: «Noch nicht». Die Schritte werden vorbereitet; Netlify und #659 bleiben bis dahin unverändert.
@@ -6038,6 +6041,18 @@ Keine Stufe ist «erledigt». W1: 2 wichtig, 2 optional, 6 Fragen. W2: 2 wichtig
 ## Selbstprüfung der bauenden Sitzung
 
 Nach jedem Bau ohne Nachfrage ausfüllen: Visualisierungs-Check wie unten, mit Beleg je Punkt. Arbeitsstand, keine Prüfstufe.
+
+**Stand 13.10.2026 · Korrektur AR3-1 (toter Link in den Quellen) · bauende Sitzung (Claude Code).** Nach dem Entscheid der Fachstelle («Auf BPD Alliance umstellen») ist in `content/quellen.html` › `angehoerige` nur das Linkziel der Quellenangabe «Family Guidelines for Borderline Personality Disorder» geändert. Vorher war es `https://www.borderlinepersonalitydisorder.org/wp-content/uploads/2011/08/Family-Guidelines-standard.pdf` (404), jetzt ist es `https://bpdalliance.org/documents/family-guidelines/` (200). Kein sichtbarer Text ändert sich. Keine Stufe ist geändert.
+
+- **Prüfungen:**
+  - `node tools/build.mjs` → 0 blockierend
+  - `node tools/gate.mjs --production` → 0 blockierend, 1 Hinweis («144»)
+  - `node abgleich/pruefe-abgleich.mjs` → 7409 Zeilen, 0 ohne Fundstelle
+  - `node abgleich/verwendet-auf.mjs` → 0 mit anderer Angabe
+- **Offen:**
+  - Neuer Export und Übertragung auf #659 (V-6)
+  - Nachprüfung der Änderung durch eine Sitzung, die nicht gebaut hat
+  - Die 5 Links hinter dem Bot-Schutz öffnet die Fachstelle im eigenen Browser.
 
 **Stand 13.10.2026 · Korrektur R2-K (nach den Pre-Release-Audits R1 und R2) · bauende Sitzung (Claude Code).** Umgesetzt sind R2-1 bis R2-9 im Wortlaut, den die Fachstelle freigegeben hat (Abschnitt «Fachliche Freigabe der Fachstelle», Unterabschnitt «Freigabe der Korrektur R2-K»), und R1-1 als begründete Ausnahme. Branch `claude/bold-johnson-ja07vq`, auf dem Stand von `1f02a1b` (R1 und R2) mit den Hinweisen AP-1 und AP-2 (`6ae0ac1`). Geändert sind acht Dateien in `content/` und die gebauten Seiten dazu, `site.config.json` (nur `statement` von `v-gr-dear`), neun Tabellen in `abgleich/` und dieser Bericht. Keine Stufe ist «erledigt»; die Statustabelle ist unverändert.
 
