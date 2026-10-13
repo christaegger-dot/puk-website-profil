@@ -1,5 +1,5 @@
 {
-  "$comment": "Borderline – Orientierung für Angehörige · Seitenvertrag, kopiert aus dem Psychoedukations-Starter (Build r4-3, Profil-Update 09.10.2026 übernommen: Build r4-4; Profil-Update 10.10.2026 übernommen: Build r4-6; Gate-Korrektur 10.10.2026 übernommen: Build r4-7; Profil 2026.10.1 übernommen in Etappe 3-1: Build r4-8, legal, 404-Seite, siteUrl). Alle 16 Seiten gebaut (Etappen 1 bis 3-1; Impressum und Datenschutz als eigene Seite nach Profilentscheid 11.10.2026), dazu die 404-Seite. Pflichtfelder und Regeln: README.md. Nach jeder Änderung: node tools/build.mjs, danach node tools/gate.mjs bzw. node tools/gate.mjs --production.",
+  "$comment": "Borderline – Orientierung für Angehörige · Seitenvertrag, kopiert aus dem Psychoedukations-Starter (Build r4-3, Profil-Update 09.10.2026 übernommen: Build r4-4; Profil-Update 10.10.2026 übernommen: Build r4-6; Gate-Korrektur 10.10.2026 übernommen: Build r4-7; Profil 2026.10.1 übernommen in Etappe 3-1: Build r4-8, legal, 404-Seite, siteUrl). 19 Inhaltsseiten plus 404-Seite; seit den IA-Restarbeiten zusätzlich Glossar, Bücher und Website-Suche als eigene Seiten. Pflichtfelder und Regeln: README.md. Nach jeder Änderung: node tools/build.mjs, danach node tools/gate.mjs bzw. node tools/gate.mjs --production.",
   "kitRevision": "PUK Website Kit 1.10.1-r4 · abgeleitet",
   "canonicalSource": "PUK Zürich Design System 1.10.1 (unverändert)",
   "assetVersion": "r4-10",
@@ -347,6 +347,12 @@
       "href": "rolle.html",
       "navLabel": null,
       "groupRootId": "beziehungen",
+      "collapsedSections": [
+        "schuld",
+        "alltag",
+        "nach-konflikten",
+        "mehrere"
+      ],
       "status": "published",
       "primaryTask": "Freiwillige Unterstützung, eigene Verantwortung und Aufgaben von Fachpersonen unterscheiden",
       "description": "Was Sie anbieten können und was nicht Ihre Aufgabe ist, Schuld und Verantwortung, Unterstützung im Alltag und nach Konflikten, mehrere Angehörige, Kinder und wann Unterstützung an Grenzen kommt.",
@@ -701,6 +707,13 @@
       "href": "behandlung.html",
       "navLabel": "Behandlung",
       "groupRootId": "behandlung",
+      "filterSelector": ".puk-site-offer",
+      "collapsedSections": [
+        "rollen",
+        "therapieformen",
+        "rueckschlaege",
+        "angebote"
+      ],
       "status": "published",
       "primaryTask": "Die eigene Rolle in der Behandlung klären: wer was beitragen kann, wie der Kontakt zum Behandlungsteam geht und wo es Angebote gibt",
       "description": "Wer in der Behandlung was beitragen kann, Kontakt zum Behandlungsteam mit Musterbrief, Therapieformen und Medikamente, Unterbrüche und Rückschläge, Angebote im Kanton Zürich und was hilft, wenn kein Therapieplatz frei ist.",
@@ -802,6 +815,12 @@
       "href": "kommunizieren.html",
       "navLabel": null,
       "groupRootId": "beziehungen",
+      "collapsedSections": [
+        "anerkennen",
+        "moment",
+        "beispiele",
+        "rollen"
+      ],
       "status": "published",
       "primaryTask": "Zuhören, anerkennen und die eigene Sicht behalten, auch wenn Gespräche kippen",
       "description": "Zuhören und die eigene Sicht behalten, anerkennen ohne zuzustimmen, der richtige Moment, wenn Gespräche kippen, wenn Worte treffen, Beispiele und Kommunikation je nach Rolle.",
@@ -1031,6 +1050,12 @@
       "href": "selbstfuersorge.html",
       "navLabel": null,
       "groupRootId": "unterstuetzung",
+      "collapsedSections": [
+        "kraft",
+        "unterstuetzung",
+        "akzeptanz",
+        "beratung"
+      ],
       "status": "published",
       "primaryTask": "Eigene Belastung, Bedürfnisse und erreichbare Unterstützung ernst nehmen",
       "description": "Was Ihnen erlaubt bleibt, was Kraft kostet und was entlastet, Warnsignale für Überlastung, kurze Übungen, eigene Unterstützung, radikale Akzeptanz und Beratung.",
@@ -1449,6 +1474,7 @@
       "href": "begriffe.html",
       "navLabel": null,
       "groupRootId": "fragen",
+      "filterSelector": ".puk-site-glossary",
       "status": "published",
       "primaryTask": "Einen Fachbegriff schnell nachschlagen und im Kontext verstehen",
       "description": "Zentrale Fachbegriffe mit vereinfachten Erklärungen, Beispielen und Verweisen auf die passenden Themenseiten.",
@@ -1477,6 +1503,7 @@
       "href": "quellen.html",
       "navLabel": null,
       "groupRootId": "fragen",
+      "filterSelector": ".puk-longform__section:not(#einordnung)",
       "status": "published",
       "primaryTask": "Eine Quelle der Website nachvollziehen und fachlich einordnen",
       "description": "Vollständige Quellenliste mit Einordnung, nach Funktion geordnet.",
@@ -1580,6 +1607,36 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: Literaturliste mit Angabe, kurzer Einordnung und den Seiten, auf denen die Quelle verwendet wird.",
+          "approvalStatus": "freigegeben"
+        }
+      ]
+    },
+    {
+      "id": "suche",
+      "title": "Website durchsuchen",
+      "href": "suche.html",
+      "navLabel": null,
+      "groupRootId": "fragen",
+      "showInSectionNav": false,
+      "status": "published",
+      "primaryTask": "Eine passende Themenseite mit eigenen Suchwörtern finden",
+      "description": "Alle Themenseiten der Orientierungshilfe nach Stichwörtern durchsuchen.",
+      "sensitiveTopics": [
+        "selbstgefaehrdung",
+        "gewalt",
+        "akute-krise"
+      ],
+      "visualPlan": [
+        {
+          "id": "v-su-suche",
+          "section": "Seitensuche",
+          "sectionId": "seitensuche",
+          "goal": "Mit eigenen Suchwörtern eine passende Themenseite finden",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Eine filterbare Liste ist für die kleine statische Website direkter als eine separate Suchergebnisseite. Ohne JavaScript bleiben alle Seiten sichtbar.",
           "approvalStatus": "freigegeben"
         }
       ]
