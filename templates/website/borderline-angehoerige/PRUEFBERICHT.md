@@ -511,6 +511,42 @@ Ergebnis: 22 von 22 stimmen.
 
 Offen für die Fachstelle ist der Prüfbedarf NAR34-1 (wichtig): Der Link «Schutz» der Opferhilfe zeigt im ersten Bildschirm einen Notfallkasten mit 117. Er ist unverändert und deshalb nicht Teil der Regel für AR3-4. Die optionalen Befunde NAR34-2 bis NAR34-7 hindern weder die Freigabe noch den Export.
 
+### Nachprüfung Runde 4 (Stand 2beed98)
+
+**13.10.2026 · dieselbe Prüfsitzung, im Auftrag der Leitsitzung.** Geprüft ist `claude/ar3-4-quellenangaben` mit Head `2beed98`, darin `588f7ff`. Bezugsstand ist `c8e0405`. Ich habe nichts geändert ausser diesem Bericht.
+
+| Nr. | Prüfpunkt | Ergebnis | Beleg |
+| --- | --- | --- | --- |
+| 1 | Diff `c8e0405..2beed98` nur in den genannten Dateien | **erfüllt** | `git diff --stat` nennt genau 6 Dateien: `ENTSCHEIDE-PROFIL-2026-10-2.md` (Zeile P-15 neu, im Ablauf «P-14 und P-15»), `PRUEFBERICHT.md` (Nachtrag zur Freigabe, Selbstprüfung «Runde 4»), `abgleich/quellen.md` (nur die Bemerkungen von Nr. 245, 253 und 566), `abgleich/verwendet-auf.mjs` (nur die Zeile `'NICE NG225': 'NG225',` in `ZUORDNUNG` entfernt), `content/quellen.html` und `quellen.html` |
+| 2 | Satzdiff der gebauten Seiten gegen `c8e0405` | **erfüllt** | Gleiches Verfahren wie in Punkt 4 oben, 18 HTML-Dateien. Geändert ist nur `quellen` (946 → 947 Sätze), und zwar in genau drei Einträgen. BApK: «Medien des BApK» und «: Informationsmaterialien für Angehörige, Kinder und Geschwister psychisch erkrankter Menschen.». STOPP: «Getselfhelp, englisch.» und «Auf dieser Website in angepasster deutscher Fassung.». Opferhilfe: «Schutz» und «und» werden zu ««Schutz»» und «(nicht verlinkt) und». Die übrigen 16 Seiten und `gate.html` sind ohne Änderung, auch kein Satz einer Themenseite |
+| 3 | NAR34-1: «Schutz» ohne Link und ohne URL | **erfüllt** | Eintrag: «Opferhilfe Schweiz (laufend, Abruf 13.10.2026). «Schutz» (nicht verlinkt) und Für wen ist die Opferhilfe? (Link) …». `was-ist-opferhilfe/schutz` kommt in keiner HTML-Datei vor, weder in den gebauten Seiten noch in `content/` (0 Treffer). Verlinkt bleiben auf der Opferhilfe nur «Für wen ist die Opferhilfe?» auf `quellen` (Chromium 1280 × 900: keine Nummer im ersten Bildschirm und auf der ganzen Seite) und die Startseite auf `grenzen` |
+| 3a | Begründung zum Link «Opferhilfe Schweiz» auf `grenzen` › `gewalt` | **haltbar nach dem Wortlaut, Beleg unvollständig: Prüfbedarf NR4-1** | Unten |
+| 4 | NAR34-3, -4 und -7 wörtlich wie im Nachtrag | **erfüllt** | STOPP: «Getselfhelp, englisch. Auf dieser Website in angepasster deutscher Fassung.» Der Wortlaut ist gleich wie im Nachtrag, der Link und das `aria-label` «STOPP von Carol Vivyan auf Getselfhelp» sind unverändert. BApK: Linktext «Medien des BApK», danach «: Informationsmaterialien für Angehörige, Kinder und Geschwister psychisch erkrankter Menschen. BApK, Bonn.», gleich wie im Nachtrag und gleich dem Seitentitel (`<title>` «Medien des BApK: …»). NAR34-7: Der Schlüssel ist entfernt, `'NICE NG225 (2022)'` bleibt |
+| 5 | Werkzeuge | **erfüllt** | `node tools/build.mjs` → «17 Seiten geschrieben … Gate draft: 0 blockierend, 1 Hinweise» («144» als Seitenzahl, wie bisher). Danach zeigt `git status` keine Änderung. `--production` → «Gate production: 0 blockierend, 1 Hinweise». `--selftest` → «Selbsttest: 65/65 bestanden.» `pruefe-abgleich.mjs` → «Abgleich geprüft: 7412 Zeilen, 0 ohne Fundstelle.» `verwendet-auf.mjs` → «86 Einträge, 0 mit anderer Angabe, 0 Kurzangaben nicht zugeordnet.»; mit `--ohne-legenden` dasselbe mit «(ohne Legenden)». Zusätzlich `quellen` bei 320, 360 und 1280 px und Schrift 100 und 200 % geprüft: kein waagrechtes Scrollen |
+
+**Zu 3a · Startseite der Opferhilfe** (`https://www.opferhilfe-schweiz.ch/de/`; Abruf 13.10.2026 mit Chromium 1280 × 900 und `curl`, je 200)
+
+Im ersten Bildschirm steht mehr als nur «142 anrufen» im Kopf, wie der Nachtrag schreibt:
+- **Ganz oben:** ein gelbes Band über die ganze Breite, gross gesetzt: «HILFE BEI GEWALT 142». Rechts daneben eine Schaltfläche mit Telefonsymbol und «142 anrufen».
+- **Darunter, gut sichtbar in Farbe hervorgehoben (Oberkante unter 900 px):** «Opferhilfe in der ganzen Schweiz unter der Nummer 142 erreichbar», «Seit dem 1. Mai ist die Opferhilfe in der ganzen Schweiz über die nationale Nummer 142 erreichbar. …» und «Die Opferhilfe-Nummer 142 ist keine Notrufnummer. In akuten Gefahrensituationen ist weiterhin die Polizei oder der Rettungsdienst über die bestehenden Notrufkanäle zu kontaktieren.»
+
+Notrufnummern wie 112, 117 oder 144 zeigt die Seite nicht. Das Zitat «Die Opferhilfe-Nummer 142 ist keine Notrufnummer.» ist wörtlich belegt.
+
+**Bewertung:**
+- Nach dem Wortlaut der Regel ist der Link haltbar. 142 ist nach Angabe der Seite eine Beratungsnummer und keine Notrufnummer, und einen Notfallblock mit Notrufnummern gibt es nicht.
+- Die Ausnahme der Regel nennt aber nur ein Beratungstelefon «in der Fusszeile einer Organisation». Hier steht die Nummer oben, als auffälliges Band mit Anrufschaltfläche. Das ist ein niederschwelliger Telefonzugang bei Gewalt an prominenter Stelle.
+- Ob das als «Krisen- oder Notfallblock mit Telefonnummern» gilt, ist eine Auslegung. Der Beleg im Nachtrag beschreibt die Stelle zu knapp.
+- Der Link ist seit vor AR3-4 unverändert (`href="https://www.opferhilfe-schweiz.ch/de/"`, gleich in `85cf129`).
+
+#### Befunde der Runde 4
+
+| Nr. | Befund | Gewicht |
+| --- | --- | --- |
+| NR4-1 | **Prüfbedarf.** Der Link «Opferhilfe Schweiz» auf `grenzen` › `gewalt` führt auf die Startseite. Dort zeigt der erste Bildschirm ein gelbes Band «HILFE BEI GEWALT 142» mit der Schaltfläche «142 anrufen» und einen hervorgehobenen Text zur Nummer 142. Der Nachtrag nennt nur «142 anrufen» im Kopf. Nach dem Wortlaut der Regel ist der Link haltbar, weil 142 keine Notrufnummer ist. Die Ausnahme der Regel deckt aber nur die Fusszeile. Die Fachstelle sollte ausdrücklich entscheiden, ob ein prominent gezeigtes Beratungstelefon oben auf der verlinkten Seite zulässig ist. Sonst wäre ein Link auf eine Unterseite ohne das Band möglich, z. B. «Für wen ist die Opferhilfe?». Sie sollte auch den Beleg im Nachtrag ergänzen. | wichtig |
+| NR4-2 | Der Zusatz «(nicht verlinkt)» bei «Schutz» kommt nur in diesem Eintrag vor. Andere bewusst unverlinkte Angaben stehen ohne diesen Zusatz, z. B. Forensic Nurses, die EBG-Blätter und Pro Juventute. Die Seite bleibt verständlich. | optional |
+
+**Urteil Runde 4: erfüllt.** Es liegen nur die freigegebenen Änderungen vor. NAR34-1, -3, -4 und -7 sind wörtlich und am genannten Ort umgesetzt, und die Werkzeuge laufen ohne Befund. Offen für die Fachstelle ist NR4-1 (wichtig). Er betrifft einen unveränderten Link und eine Auslegung der Regel, nicht die Umsetzung der Runde 4.
+
 ## Prüfung der Produktion AR3-2 (13.10.2026, Deploy 6acdb70)
 
 **Prüfsitzung (Claude Code), 13.10.2026, etwa 04.45 bis 05.00 UTC.** Auftrag: Auflage AR3-2 nach Entscheide zur Schlussprüfung 5.3 b, V-2 und V-9. Diese Sitzung hat die Website weder gebaut noch korrigiert. Sie hat nichts entschieden und keine frühere Stufe geprüft.
