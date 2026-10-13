@@ -17,8 +17,8 @@ await discover.goto(BASE + 'suche.html', { waitUntil: 'load' });
 const targets = await discover.locator('[data-search-level="section"] a[href*="#"]').evaluateAll(links => [...new Set(links.map(link => link.getAttribute('href')))]);
 await discover.close();
 
-async function run(width, selected, label) {
-  const context = await browser.newContext({ viewport: { width, height: 900 }, reducedMotion: 'reduce' });
+async function run(width, selected, label, options = {}) {
+  const context = await browser.newContext({ viewport: { width, height: 900 }, reducedMotion: 'reduce', ...options });
   const page = await context.newPage();
   const runtime = [];
   page.on('pageerror', error => runtime.push(`pageerror: ${error.message}`));
@@ -76,7 +76,8 @@ const mobileTargets = targets.filter(href => formerlyStatic.has(href.split('#')[
 let failures = 0;
 failures += await run(1280, targets, 'vollständiger Suchindex bei 1280 CSS-Pixeln');
 failures += await run(360, mobileTargets, 'früher nicht fokussierbare Ziele bei 360 CSS-Pixeln');
+failures += await run(1280, targets, 'vollständiger Suchindex bei erzwungenen Farben', { forcedColors: 'active' });
 await browser.close();
 
-console.log(`\nBrowser-Sprungzielprüfung: ${targets.length} vollständige Ziele · ${mobileTargets.length} mobile Gegenproben · ${failures} Fehler`);
+console.log(`\nBrowser-Sprungzielprüfung: ${targets.length} vollständige Ziele · ${mobileTargets.length} mobile Gegenproben · ${targets.length} Kontrast-Gegenproben · ${failures} Fehler`);
 if (targets.length !== 160 || mobileTargets.length !== 19 || failures) process.exit(1);
