@@ -314,6 +314,193 @@ Dazu 5 leichte Befunde zu Bericht und Abgleich. Die erste und zweite Prüfrunde 
 - **Danach:** Nachprüfung durch eine Prüfsitzung, die weder gebaut noch entschieden hat. Dann folgen der Export mit `--production`, die Übertragung nach `site/` und die Prüfung der Produktion.
 - Die Statustabelle bleibt unverändert.
 
+## Nachprüfung AR3-4 (13.10.2026, Stand 3676860)
+
+**Prüfsitzung (Claude Code), im Auftrag der Leitsitzung der Veröffentlichung für die Fachstelle Angehörigenarbeit.** Diese Sitzung hat die Website nicht gebaut, nicht korrigiert, nichts entschieden und keine frühere Stufe geprüft. Sie hat keinen Inhalt und keinen Code geändert; geändert ist nur dieser Bericht. Die Statustabelle ist unverändert, eine Freigabe ist nicht eingetragen.
+
+- **Geprüfter Stand:** Branch `claude/ar3-4-quellenangaben`, Commit `3676860` (Entwurfs-PR #90). Bezugsstand vor AR3-4: `main` `85cf129`. Bestand: `origin/borderline-bestand`.
+- **Gelesen:** `CLAUDE.md`, `guidelines/00-ablauf-pruefung-und-freigabe.md`, `guidelines/00-fachliche-qualitaet-und-haltung.md` › «Quellenstandard», in diesem Bericht «R3 Freigabe-Audit» Punkt 14 und AR3-4, «Freigabe AR3-4», die Selbstprüfung «AR3-4 Quellenangaben» mit Runde 2, Runde 3 und Nachtrag, `abgleich/README.md` › «AR3-4».
+- **Abruf heute (13.10.2026):** jede verlinkte Quelle mit `curl` (Weiterleitungen gefolgt), Seiten mit Chromium 1194 (Playwright 1.56.1, 1280 × 900 px). PDF mit `pdftotext` und `pdfinfo`. `admin.ch` antwortet in Chromium über den Proxy mit 502; dort gilt der serverseitig ausgelieferte Text aus `curl`. `pukzh.ch` antwortet `curl` mit 403 und Chromium mit 200.
+- **Gebaute Seiten:** lokal mit `python3 -m http.server`; der Stand `85cf129` zum Vergleich in einem eigenen Arbeitsbaum ausserhalb des Repositorys, danach entfernt.
+
+### Ergebnis in Kürze
+
+- **Urteil: AR3-4 erfüllt.**
+- Alle 8 Prüfpunkte sind erfüllt.
+- Alle 38 geänderten oder neuen Angaben sind abgerufen: Q1 bis Q10, R2-1 bis R2-21 und R3-1 bis R3-7. Autoren, Titel, Herausgeber, Jahr bzw. «laufend» und das Abrufdatum stimmen mit der Quelle. Alle URL antworten mit 200.
+- Der Satzdiff gegen `85cf129` zeigt neben Quellenangaben genau die zwei freigegebenen Sätze, wörtlich und am genannten Ort.
+- Die Zählung stimmt: 86 Einträge, 0 ohne Jahr und ohne «laufend», 0 Web- oder PDF-Links ohne Abrufdatum, 29 PubMed- oder DOI-Artikel.
+- Befunde: 0 kritisch, 1 wichtig, 6 optional.
+- Der wichtige Befund NAR34-1 betrifft einen Link, der seit vor AR3-4 unverändert ist. Die Regel der Freigabe gilt nur für neue oder geänderte Links; der Befund steht deshalb dem Urteil nicht entgegen. Die Fachstelle entscheidet.
+
+### Ergebnis je Prüfpunkt
+
+| Nr. | Prüfpunkt | Ergebnis | Beleg |
+| --- | --- | --- | --- |
+| 1 | Jede geänderte oder neue Quellenangabe gegen die Quelle | **erfüllt** | 38 Angaben einzeln abgerufen (Tabelle «Punkt 1» unten). 31 Köpfe mit Abrufdatum, alle in der Form «(JJJJ, Abruf TT.MM.JJJJ)» oder «(laufend, Abruf TT.MM.JJJJ)»: 30 × «Abruf 13.10.2026», 1 × «Abruf 06.10.2026» (BAG, Neuregelung, unverändert). Prüfung per Muster über alle `<strong>`-Köpfe in `content/quellen.html`, keine Abweichung. Die Kurzangaben passen zu den Einträgen; `verwendet-auf.mjs`: «0 mit anderer Angabe, 0 Kurzangaben nicht zugeordnet». Kleine Abweichungen ohne Fehler: NAR34-3, NAR34-4, NAR34-5. |
+| 2 | Deckung der Aussagen unter «Verwendet in» | **erfüllt** | Tabelle «Punkt 2» unten. E1, E2, E3, E4, F1 und P2 einzeln geprüft. Jede genannte Aussage ist gedeckt. Bei E4 ist das Verhältnis 4 : 6 abgeleitet und nicht wörtlich belegt (NAR34-6, optional). |
+| 3 | Krisenregel für neue und geänderte Links; bewusst unverlinkte Angaben; Website ohne Nummern | **erfüllt** | Tabelle «Punkt 3» unten. Kein neuer oder geänderter Link zeigt oben oder in einem hervorgehobenen Kasten Notrufnummern. Unverlinkt und ohne URL im sichtbaren Text sind: BAG «Psychische Gesundheit», die EBG-PDF B1 und B2, Forensic Nurses und die Website der BPD Alliance. Pro Juventute steht als Adresse ohne Link. Auf allen 18 gebauten HTML-Dateien: 0 × `tel:`, keine Notruf- oder Telefonnummer. Der einzige Gate-Hinweis «144» auf `quellen` ist die Seitenzahl «Family Process 60(1), 134–144» (wie in `85cf129`). Ausserhalb der Regel: NAR34-1. |
+| 4 | Satzdiff gegen `85cf129` | **erfüllt** | Sichtbarer Text aller gebauten Seiten (17 Seiten und `gate.html`) in Sätze zerlegt und mit `difflib` verglichen. Ohne Änderung: `404`, `beziehungen`, `gate`, `genesung`, `impressum-datenschutz`, `index`, `krise`, `ueber`, `unterstuetzung`, `verstehen`. Geändert sind nur Quellenangaben: Kurzangaben auf `behandlung` (3), `diagnose` (2), `fragen` (3), `grenzen` (2 geändert, 1 neu: Forensic Nurses), `kommunizieren` (1), `rolle` (5, darunter «NICE NG225 (2022)») und `selbstfuersorge` (4 Kurzangaben sowie die Zusätze «(Ablauf der Atemübung)» und «(langsames Atmen, weniger als zehn Atemzüge pro Minute)»). Dazu kommen auf `quellen` Köpfe, Titel und Zusätze der Einträge. Neue Sätze, die keine Quellenangabe sind: genau zwei. **E2**, `grenzen` › `gewalt`: «Unterstützung gibt es auch für Männer, Angehörige und nahestehende Personen.» Er ersetzt «… Angehörige und Vertrauenspersonen.» und steht nach «Opferhilfe und Beratung dazunehmen: Opferhilfe Schweiz.» **E6**, `quellen` › `versorgung`, Eintrag Family Guidelines: «Die National Education Alliance for Borderline Personality Disorder (NEABPD) tritt heute als BPD Alliance auf.» Er ersetzt «NEABPD heisst seit 2024 BPD Alliance.» und hat `lang="en"` auf beiden Namen. Kein anderer Satz ist geändert, neu oder entfallen. |
+| 5 | Freigabe gegen Umsetzung | **erfüllt** | Tabelle «Punkt 5» unten. Jede Zeile der «Freigabe AR3-4» ist umgesetzt. Es gibt keine Umsetzung ohne Freigabe. |
+| 6 | Zählung nachrechnen | **erfüllt** | Eigene Zählung in `quellen.html`, Abschnitte `forschung` bis `schweiz`: forschung 31, therapie 8, angehoerige 7, diagnostik 7, versorgung 6, leitlinien 21, schweiz 6, **zusammen 86** (behauptet 86). Ohne Jahr und ohne «laufend»: **0** (behauptet 0). Web- oder PDF-Link ohne Abrufdatum: **0** (behauptet 0). PubMed-Link 27, DOI-Link 2, **zusammen 29**, keiner mit Abrufdatum (behauptet 29). Mit Abrufdatum, aber ohne Link: 2, nämlich Pro Juventute und Forensic Nurses, wie in der Selbstprüfung. Ohne Link und ohne Abrufdatum: 26 Bücher und Artikel ohne Online-Link, darunter «WHO Europa (2025)», nach der Freigabe ausdrücklich nicht Teil. |
+| 7 | Werkzeuge | **erfüllt** | `node tools/build.mjs` → «17 Seiten geschrieben · … Build r4-8 · Gate draft: 0 blockierend, 1 Hinweise». Danach zeigt `git status` keine Änderung. `node tools/gate.mjs` → «Gate draft: 0 blockierend, 1 Hinweise». `--production` → «Gate production: 0 blockierend, 1 Hinweise». `--selftest` → «Selbsttest: 65/65 bestanden.» `node abgleich/pruefe-abgleich.mjs` → «Abgleich geprüft: 7412 Zeilen, 0 ohne Fundstelle.» `node abgleich/verwendet-auf.mjs` → «86 Einträge, 0 mit anderer Angabe, 0 Kurzangaben nicht zugeordnet.», mit `--ohne-legenden` dasselbe mit «(ohne Legenden)». `git diff 85cf129 -- abgleich/verwendet-auf.mjs` ändert nur Zeilen in `const ZUORDNUNG = {…}` (Schlüssel und Erkennungstexte), keine Berechnung (NAR34-7, optional). Stichprobe von 22 der 59 Abgleich-Zeilen mit Status «(AR3-4)» in Tabelle «Punkt 7» unten. |
+| 8 | Darstellung und Barrierefreiheit | **erfüllt** | `quellen`, `grenzen`, `selbstfuersorge`, `rolle` und `kommunizieren` geprüft, je bei 320, 360 und 1280 px und Schrift 100 und 200 % (`html{font-size:200%}`), also 30 Ansichten. Überall gilt `scrollWidth` = `clientWidth`; kein Link und kein Eintrag der Quellenlisten ragt über den rechten Rand. Die längsten neuen Einträge bei 320 px und 200 % angesehen: Project Air, EBG, Family Guidelines; sie brechen um. Linknamen: alle 29 Online-Links auf `quellen` mit sprechendem Namen, z. B. «Häusliche Gewalt, Eidgenössisches Büro für die Gleichstellung von Frau und Mann» (`aria-label`), «Für wen ist die Opferhilfe?», «Understanding self-harm & suicidal thinking: for families, partners & carers». `lang="en"` steht auf allen englischen Titeln der geänderten Einträge, darunter Family Guidelines, «Revised 2006», «New England Personality Disorder Association», NHS, WHO (2020), Project Air und die NICE-Titel, sowie auf beiden Namen in E6; die Suche nach englischen Linktexten ohne `lang` ergab nichts. Fokus: Link EBG mit Ring `box-shadow: … 0 0 0 4px rgb(60, 100, 255)`, danach erreicht Tab den nächsten Link. Druck A4 von `quellen` (Chromium, `emulateMedia print`, 26 Seiten): Links mit URL in Klammern, lange URL umgebrochen, nichts abgeschnitten (Seite 20: Project Air; Seite 25: EBG). Vorbestehend und nicht von AR3-4: NAR34-2. |
+
+#### Punkt 1 · Angaben gegen die Quelle (Abruf 13.10.2026)
+
+| Nr. | Angabe auf `quellen` (Kopf, Titel) | Abruf | Beleg aus der Quelle | Ergebnis |
+| --- | --- | --- | --- | --- |
+| Q1 | Bundesamt für Gesundheit (laufend, Abruf 13.10.2026). Berufs- oder Arztgeheimnis | `curl` 200 | `<title>` «Berufs- oder Arztgeheimnis»; kein Seitendatum | stimmt |
+| Q2 / R2-1 | Gunderson, J. G. und Berkowitz, C. (2006, Abruf 13.10.2026). Family Guidelines. Multiple Family Group Program at McLean Hospital (Revised 2006). New England Personality Disorder Association. PDF bei der BPD Alliance. | `curl` 200, `application/pdf`, 246 267 Byte, 11 Seiten | Titelseite: «FAMILY GUIDELINES · Multiple Family Group Program at McLean Hospital · by John G. Gunderson, M.D. and Cynthia Berkowitz, M.D. · Published by The New England Personality Disorder Association»; Fusszeile «Family Guidelines: Revised 2006»; `pdfinfo` CreationDate 19.11.2006 | stimmt |
+| Q3 / R2-6 | Kanton Zürich (laufend, Abruf 13.10.2026). Anlaufstellen für Patientinnen und Patienten sowie Angehörige | `curl` und Chromium 200 | `<title>` «Anlaufstellen für Patientinnen und Patienten sowie Angehörige \| Kanton Zürich» | stimmt; Kurzangabe NAR34-5 |
+| Q4 | Pro Juventute (laufend, Abruf 13.10.2026). Wenn ein Elternteil psychisch krank ist. projuventute.ch/de/eltern/familie-gesellschaft/psychisch-kranke-eltern | `curl` und Chromium 200 | `<title>` «Wenn ein Elternteil psychisch krank ist»; kein Seitendatum | stimmt |
+| Q5 / R2-7 | Project Air Strategy (2018, Abruf 13.10.2026). Understanding self-harm & suicidal thinking: for families, partners & carers. University of Wollongong, Australien. | PDF `curl` 200, `application/pdf`, 377 557 Byte, 2 Seiten; Faktenblattseite 200 | Linktext auf `uow.edu.au/project-air/resources/fact-sheets/`: «Understanding self-harm & suicidal thinking: for families, partners & carers (pdf 369kb)»; PDF-Fusszeile «V2 27/04/2018»; `pdfinfo` CreationDate 02.05.2018. Die frühere Startseite `projectairstrategy.org` antwortet heute nicht (`curl` 000), ist aber nicht mehr verlinkt | stimmt |
+| Q6 | Psychiatrische Universitätsklinik Zürich (laufend, Abruf 13.10.2026). Informationen für Angehörige. PUK Zürich. | Chromium 200 (`curl` 403) | Titel «Informationen für Angehörige - Psychiatrische Universitätsklinik Zürich (PUK)» | stimmt |
+| Q7 | NHS inform (2025, Abruf 13.10.2026). Grounding exercises | `curl` und Chromium 200 | «Last updated: 09 December 2025»; `<title>` «Grounding exercises \| NHS inform» | stimmt |
+| Q8 | Vivyan, C. (laufend, Abruf 13.10.2026). STOPP. Getselfhelp, deutschsprachige angepasste Fassung. | `curl` und Chromium 200 | `<title>` «STOPP \| Get.gg - Getselfhelp.co.uk». Der Name der Autorin steht nicht auf der Seite, aber im verlinkten Arbeitsblatt `/docs/STOPP.pdf`: «© Carol Vivyan 2009». Die Seite ist englisch (`lang="en-gb"`) | Kopf stimmt; Zusatz NAR34-3 |
+| Q9 | Bundesamt für Gesundheit (laufend, Abruf 13.10.2026). Interkulturelles Dolmetschen | `curl` 200 | `<title>` «Interkulturelles Dolmetschen» | stimmt |
+| Q10 / R3-2 | Opferhilfe Schweiz (laufend, Abruf 13.10.2026). Schutz und Für wen ist die Opferhilfe? Offizielle Informationsseiten der Opferhilfe Schweiz (SODK). | beide `curl` und Chromium 200 | `<title>` «Schutz - Opferhilfe Schweiz» und «Für wen ist die Opferhilfe? - Opferhilfe Schweiz» | stimmt; zu «Schutz» NAR34-1 |
+| R2-2 | NHS (2026, Abruf 13.10.2026). Breathing exercises for stress. nhs.uk. | `curl` und Chromium 200 | «Page last reviewed: 12 June 2026»; `<title>` «Breathing exercises for stress - NHS» | stimmt |
+| R2-3 | World Health Organization (2020, Abruf 13.10.2026). Doing What Matters in Times of Stress. WHO. | `curl` und Chromium 200 | «29 April 2020», «ISBN: 9789240003927» | stimmt |
+| R2-4 | Bundesamt für Gesundheit (laufend, Abruf 13.10.2026). Was tun für die psychische Gesundheit? BAG. | `curl` 200 | `<title>` «Was tun für die psychische Gesundheit?»; kein Seitendatum | stimmt |
+| R2-5 | BApK (laufend, Abruf 13.10.2026). Informationsmaterialien für Angehörige, Kinder und Geschwister psychisch erkrankter Menschen. BApK, Bonn. | `curl` und Chromium 200 | `<title>` «Medien des BApK: Bundesverband der Angehörigen psychisch erkrankter Menschen e.V.» | Titel beschreibend, NAR34-4 |
+| R2-8 | Mason, P. T. und Kreger, R. (2020, Abruf 13.10.2026). Stop Walking on Eggshells. Third Edition. | `curl` 200 | «Published: December 2020», «Third Edition», «by Paul T. T. Mason and Randi Kreger» | stimmt |
+| R2-9 / R3-6 | AWMF (2022, Abruf 13.10.2026). … Version 2.0 vom 14. November 2022, laut Register in Überarbeitung. | Chromium 200 | «Version: 2.0», «Stand: 14.11.2022», «Gültig bis: 31.05.2026 (in Überarbeitung)» | stimmt |
+| R2-10 | World Health Organization (2024, Abruf 13.10.2026). Clinical descriptions … | `curl` 200 | «Clinical descriptions and diagnostic requirements for ICD-11 … (CDDR)», «8 March 2024» | stimmt |
+| R2-11 | Bundesamt für Statistik (2025, Abruf 13.10.2026). Medizinisches Kodierungshandbuch 2026 | `curl` 200, `application/pdf` | Titelseite «Medizinisches Kodierungshandbuch · Version 2026», «Neuchâtel 2025»; `pdfinfo` CreationDate 23.09.2025 | stimmt |
+| R2-12 | AWMF (2025, Abruf 13.10.2026). S3-Leitlinie Psychosoziale Therapien … Version 3.0, 038-020 | `curl` 200, PDF | «Langfassung I Version 3.0 vom 18.11.2025» | stimmt |
+| R2-13 bis R2-16 | NICE (2009), (2020), (2022), (2022), je mit «Abruf 13.10.2026» | `curl` 200 | CG78 «Published: 28 January 2009», «Last reviewed: 30 July 2024»; NG150 «22 January 2020»; NG222 «29 June 2022»; NG225 «07 September 2022» | stimmt |
+| R2-17 | Sotomo (2024, Abruf 13.10.2026) | `curl` 200, PDF | «März 2024», Fusszeile «Stand by You Studie, März 2024» | stimmt |
+| R2-18, R2-19 | World Health Organization (2026, Abruf 13.10.2026), Suicide und Stress | `curl` 200 | «31 August 2026 \| Questions and answers»; «30 March 2026 \| Questions and answers» | stimmt |
+| R2-20 | INTERPRET (2019, Abruf 13.10.2026) | `curl` 200, PDF | «Argumentarium: Interkulturelles Dolmetschen im Gesundheitsbereich (Juni 2019)» | stimmt |
+| R2-21 | Schweizerische Eidgenossenschaft (2026, Abruf 13.10.2026). ZGB, Stand 1. Juli 2026 | `curl` 200 | «vom 10. Dezember 1907 (Stand am 1. Juli 2026)» | stimmt |
+| R3-1 | EBG (laufend, Abruf 13.10.2026). Häusliche Gewalt. Mit den Informationsblättern B1 «Gewalt in Trennungssituationen» und B2 «Stalking» (2020). | Seite `curl` 200 (Chromium 502 über den Proxy); B1 und B2 `curl` 200, PDF | `<title>` «Häusliche Gewalt»; Liste: «B1. Gewalt in Trennungssituationen · Infoblatt · PDF · 147.15 kB · 1. Juni 2020», «B2. Stalking»; B1 `pdfinfo` Titel «Gewalt in Trennungssituationen», «Juni 2020» | stimmt |
+| R3-3 | Kanton Zürich, Gesundheitsdirektion, Amt für Gesundheit (laufend, Abruf 13.10.2026). Opferbetreuung durch Forensic Nurses. Website des Kantons Zürich. | `curl` und Chromium 200 | `<title>` «Opferbetreuung durch Forensic Nurses \| Kanton Zürich»; Kontaktblock «Gesundheitsdirektion – Amt für Gesundheit» | stimmt |
+| R3-4, R3-5 | Kurzangaben NHS (2026) und Zaccaro et al. (2018) mit Zusatz | DOI → frontiersin.org 200 | `citation_author` «Zaccaro, Andrea», `citation_volume` 12, `citation_doi` «10.3389/fnhum.2018.00353», `citation_publication_date` 2018/09/07; Eintrag «Frontiers in Human Neuroscience 12, 353» | stimmt |
+| R3-7 | Satz E6 im Eintrag Family Guidelines | `curl` 200, `bpdalliance.org/about/` → `/about-us/` | «The BPD Alliance, also known as the National Education Alliance for Borderline Personality Disorder, began in 2001 …»; «2024» kommt auf der Seite nicht vor | stimmt |
+
+#### Punkt 2 · Deckung
+
+| Angabe | Aussage auf der Seite | Stelle in der Quelle | Ergebnis |
+| --- | --- | --- | --- |
+| E1 · EBG, Seite | `grenzen` › `gewalt`: Gewalt ist «eine Sicherheitsfrage» und wird durch die Diagnose «nicht entschuldigt» | «Gewalthandlungen in Ehe und Partnerschaft und gegen Kinder sind Offizialdelikte. Das heisst, diese werden von Amtes wegen verfolgt, ohne dass das Opfer Strafanzeige einreichen muss.» | gedeckt |
+| E1 · B1 | «Planen Sie Veränderungen wie eine Trennung möglichst mit einer geeigneten Fachstelle …» | «Trennungssituationen bergen deshalb ein erhöhtes Risiko für häusliche Gewalt …»; «Entsprechende Massnahmen und Angebote umfassen Information und Beratung, Schutz und Unterbringung, Risikoabschätzung und Sicherheitsplanung …» | gedeckt |
+| E1 · B2 | «Halten Sie Vorfälle fest: Datum, Beschreibung, allfällige Zeuginnen und Zeugen. Das ist wichtig, wenn Sie später rechtliche Schritte prüfen möchten.» | Kap. 4.3: «Dokumentieren und archivieren: Die Dokumentation aller Stalkinghandlungen dient nicht nur einer allfälligen Strafverfolgung … Datum und Uhrzeit, Ort, Vorfall, allfällige Zeuginnen und Zeugen …» Der Zusammenhang ist Stalking; die Empfehlung ist allgemein | gedeckt |
+| E2 · Opferhilfe | «Unterstützung gibt es auch für Männer, Angehörige und nahestehende Personen.» | «Für wen ist die Opferhilfe?»: «Auch die Angehörigen von Opfern und ihnen nahestehende Personen können Opferhilfe erhalten.»; «Schutz» führt Unterkünfte für «Männer» («Zwüschehalt») | gedeckt, wörtlich nach der Quelle |
+| E2 · Opferhilfe «Schutz» | «Verlassen Sie die Situation: … zu Nachbarn …», «Bringen Sie sich in Sicherheit …» | «Bringen Sie sich in Sicherheit zum Beispiel bei einer Nachbarin oder einem Freund oder in einer Schutzunterkunft.» | gedeckt |
+| E3 · Forensic Nurses | «Fragen Sie eine spezialisierte Fachstelle nach Dokumentation und Spurensicherung, auch wenn Sie zunächst keine Anzeige erstatten möchten.» | «Sie können im Spital auch die Spuren der Tat sichern lassen. … Dafür müssen sie keine Anzeige erstatten.»; «Sie können später immer noch eine Anzeige bei der Polizei machen, wenn sie dies möchten.» Die Kurzangabe nennt «Beispiel Kanton Zürich» | gedeckt |
+| E4 · NHS | `selbstfuersorge` › «Ruhig atmen»: Ablauf («Halten Sie den Atem nicht an, und atmen Sie nicht besonders tief.») | «Breathe in gently and regularly. Some people find it helpful to count steadily from 1 to 5.»; «Then let it flow out gently, counting from 1 to 5 again»; «… as deep down into your belly as is comfortable, without forcing it.» | Ablauf gedeckt |
+| E4 · Zaccaro et al. (2018) | «vier Sekunden ein, sechs Sekunden aus», «Die Zahlen sind eine Orientierung, keine Vorgabe.» | Abstract: «slow breathing techniques (<10 breaths/minute)». 4 + 6 s ergibt 6 Atemzüge pro Minute | Rhythmus gedeckt; Verhältnis 4 : 6 abgeleitet (NAR34-6) |
+| F1 · Family Guidelines | `kommunizieren` › «Wenn Worte treffen»: Zuschreibung nicht übernehmen, für eigenes Verletzendes Verantwortung übernehmen; `rolle` › «Was Sie anbieten können …» und «Schuld, Verantwortung …» | «Don’t get defensive in the face of accusations and criticisms. … Admit to whatever is true in the criticisms.»; «Listen. People need to have their negative feelings heard.»; «Set limits by stating the limits of your tolerance.»; «Don’t Protect from Natural Consequences» | gedeckt |
+| P2 · Project Air | Eintrag «Hintergrund, auf den Seiten nicht einzeln zitiert» | – | keine Aussage zu decken; Titel und PDF stimmen (Punkt 1) |
+| Q1 · BAG Berufsgeheimnis | `diagnose`: «Auch urteilsfähige Minderjährige haben ein Recht auf Vertraulichkeit.» | «Urteilsfähige minderjährige Patientinnen und Patienten haben das Recht darauf, dass ihr Gesundheitszustand vertraulich behandelt wird.» | gedeckt |
+| Q3 · Kanton Zürich | `behandlung`: «Bei begründeten Zweifeln an Diagnose oder Behandlung kann eine zweite fachliche Einschätzung sinnvoll sein.» | «… kann die Einholung einer ärztlichen Zweitmeinung Klarheit und Sicherheit bei medizinischen Entscheidungen bieten.» | gedeckt |
+| Q4 · Pro Juventute | `rolle` › «Wenn Kinder mitbetroffen sind»: «Erklären Sie die Erkrankung ehrlich und passend zu Alter …» | «1. Erklären Sie, was los ist», «… in altersgemässer Sprache …», «2. Seien Sie ehrlich» | gedeckt |
+| Q6 · PUK | `behandlung`: «Eigene Beratung gibt Ihnen keinen automatischen Zugang zu vertraulichen Behandlungsinformationen …» | «… braucht es keine Vollmacht der erkrankten Person, da keine Informationen vom Behandlungsteam zur Fachstelle und zurückfliessen.» | gedeckt |
+| Q7 · NHS inform | `selbstfuersorge` › 5-4-3-2-1 | «5 things you can see», «4 things you can feel». Die Seite sagt «Andere Reihenfolgen der Sinne sind ebenfalls gebräuchlich.» | gedeckt |
+| Q8 · Vivyan | `selbstfuersorge` › STOPP | «STOP!», «TAKE A BREATH», «OBSERVE», «PULL BACK - PUT IN SOME PERSPECTIVE», «PRACTISE WHAT WORKS - PROCEED» | gedeckt |
+| Q9 · BAG Dolmetschen | `fragen`: «… nach professioneller Dolmetschung …» | «Die Kantone regeln die Finanzierung des interkulturellen Dolmetschens bei medizinischen Behandlungen unterschiedlich.» | gedeckt |
+| R2-4 · BAG | `selbstfuersorge` › «Was Kraft kostet und was entlastet» | «Soziale Kontakte, Entspannung und persönliche Strategien im Umgang mit Stress tragen dazu bei, das Wohlbefinden zu stärken.»; «Unterstützung annehmen: Hilfe in Anspruch nehmen, wenn sie gebraucht wird.» | gedeckt |
+
+#### Punkt 3 · Krisenregel
+
+| Link oder Angabe | neu oder geändert | Erster Bildschirm 1280 × 900 | Ganze Seite | Ergebnis |
+| --- | --- | --- | --- | --- |
+| NHS, Breathing exercises (R2-2) | neu | kein Treffer | kein Treffer | bestanden |
+| WHO, Doing What Matters (R2-3) | neu | kein Treffer | kein Treffer | bestanden |
+| BAG, Was tun für die psychische Gesundheit? (R2-4) | neu | Chromium 502; im Text aus `curl` keine Nummer, kein «Notsituation» | kein Treffer | bestanden |
+| BApK, Medien des BApK (R2-5) | neu | kein Treffer | nur «Krise» in Titeln von Broschüren; in der Fusszeile «Tel.: 0228 71002400 … (Geschäftsstelle)» und «Tel.: 0228 71002424 … (SeeleFon-Beratung)», nach der Regel kein Notfallblock | bestanden |
+| Project Air, PDF (R2-7) | geändert | PDF ohne Telefonnummer; einzige Ziffern «V2 27/04/2018»; einziger Treffer «Once the crisis has subsided …» im Fliesstext | – | bestanden |
+| EBG, Häusliche Gewalt (R3-1) | neu | Chromium 502; im Text aus `curl` keine Nummer (Muster 111, 112, 117, 142–147, 988, 999, 116 123, 0800) | kein Treffer | bestanden |
+| Opferhilfe, Für wen ist die Opferhilfe? (R3-2) | neu | kein Treffer | kein Treffer | bestanden |
+| Family Guidelines, PDF | seit NAR3-2 unverändert | Titelseite «(617) 855-2680» (Telefon des Herausgebers, kein Notfallblock) | – | nicht neu, zur Kenntnis |
+| Opferhilfe, «Schutz» | seit vor AR3-4 unverändert (`href` und `aria-label` gleich wie in `85cf129`) | hervorgehobene Randspalte «Wenn Sie in akuter Gefahr sind · Bringen Sie sich in Sicherheit … · Oder rufen Sie die Polizei an (117).» (`p.hilight`, oberhalb 900 px) | – | nicht unter der Regel; **NAR34-1** |
+| BAG «Psychische Gesundheit» | bewusst ohne Link | Quelle zeigt «Sind Sie in einer psychischen Notsituation?», «Telefon (rund um die Uhr): 147», «… 143» | – | auf der Website kein Link, keine URL (`bag.admin.ch/de/psychische-gesundheit"` kommt in keiner HTML-Datei vor) |
+| EBG-PDF B1 und B2 | bewusst ohne Link | B1 und B2 am Ende: «Polizei: www.polizei.ch, Telefon 117», «Medizinische Hilfe: www.erstehilfe.ch, Telefon 144» | – | nur Titel genannt, kein Link, kein `dam/de/sd-web` im HTML |
+| Forensic Nurses | bewusst ohne Link | Quelle: «Opferhilfe-Nummer 142», «Notruf 117», «0800 09 09 09 (24/7, gratis)» | – | ohne Link und ohne URL im sichtbaren Text |
+| Website der BPD Alliance | bewusst ohne Link | Text der Seite: «U.S. Crisis Support … 988», «Europe Crisis Support … 112». In Chromium bei 1280 px nicht sichtbar, im ausgelieferten HTML vorhanden | – | kein Link auf `bpdalliance.org/about…` oder die Startseite; verlinkt ist nur das PDF |
+| Pro Juventute (F5) | Adresse als Text | Quelle, erster Bildschirm: «147 - für Kinder & Jugendliche» | – | Text «projuventute.ch/de/eltern/familie-gesellschaft/psychisch-kranke-eltern», ohne Link und ohne `https://www.` |
+
+#### Punkt 5 · Freigabe gegen Umsetzung
+
+| Zeile der «Freigabe AR3-4» | Umsetzung in `3676860` | Ergebnis |
+| --- | --- | --- |
+| Runde 1: Q1 bis Q10 und 15 Kurzangaben | Köpfe auf `quellen` (Punkt 1), Kurzangaben im Satzdiff (Punkt 4) | stimmt |
+| Runde 2: R2-1 bis R2-21, Kurzangaben | 21 Einträge, 7 Kurzangaben (Family Guidelines auf 2 Seiten, WHO, BAG, NHS, Kanton Zürich, BFS) | stimmt |
+| Runde 3: R3-1 bis R3-7, Kurzangaben | EBG und Forensic Nurses auf `grenzen`, Zusätze NHS und Zaccaro auf `selbstfuersorge` | stimmt |
+| E2 und E6 mit `lang="en"` | Punkt 4 | stimmt |
+| `ZUORDNUNG` nur Daten | Punkt 7 | stimmt |
+| F1 | Wortlaut im Eintrag gleich wie in der Freigabe | stimmt |
+| F2: NHS (2026), WHO (2020) mit Link; BAG-Unterseite ohne 143 und 147; BApK «Medien des BApK» | R2-2, R2-3, R2-4, R2-5 | stimmt |
+| F3, Titel Kanton Zürich | R2-6 | stimmt |
+| F4, ZGB unverändert | Kurzangabe ZGB auf `fragen` nicht im Satzdiff | stimmt |
+| F5, Pro Juventute ohne Link | Punkt 3 | stimmt |
+| F6, Abrufdatum bei Web- und PDF-Links | Punkt 6: 0 ohne Abrufdatum | stimmt |
+| P2, Project Air als PDF von 2018 | R2-7 | stimmt |
+| BFS 2025, «Version 2026» im Titel | R2-11, Kurzangabe auf `diagnose` | stimmt |
+| R2-P5, keine Änderung | `diagnose` nur mit 2 Kurzangaben im Satzdiff | stimmt |
+| E1, E3, E4, E5 | R3-1, R3-3, R3-4 und R3-5, R3-6 | stimmt |
+| «Zählung nach AR3-4» | Punkt 6 | stimmt |
+| «Nicht Teil dieser Freigabe»: WHO Europa (2025) | unverändert, ohne Link und ohne Abrufdatum | stimmt |
+
+#### Punkt 7 · Stichprobe Abgleich
+
+22 der 59 Zeilen mit Status «(AR3-4)» per Zufall gezogen (Startwert 13102026). Je Zeile drei Prüfungen:
+- «Neue Fassung» steht im Abschnitt «Ort neu» der gebauten Seite.
+- Der Satz aus dem Bestand steht in `origin/borderline-bestand:bestand/borderline-angehoerige/texte/`.
+- Der Status passt zur Änderung.
+
+Für die Suche sind Leerzeichen, Gross- und Kleinschreibung und Markdown entfernt.
+
+| Tabelle, Nr. | Status | Ort | Fassung auf der Seite | Bestand |
+| --- | --- | --- | --- | --- |
+| `behandlung.md` 79 | verschoben (AR3-4) | `behandlung#quellen` | ja | ja |
+| `diagnose.md` 77 | verschoben (AR3-4) | `diagnose#quellen` | ja | ja |
+| `fragen.md` 190 | verschoben (AR3-4) | `fragen#quellen` | ja | ja (`faq.md`, als Markdown-Link) |
+| `fragen.md` 277 | verschoben (AR3-4) | `fragen#quellen` | ja | ja (`faq.md`, als Markdown-Link) |
+| `grenzen.md` 290 | umformuliert (AR3-4) | `grenzen#gewalt` | ja (E2) | ja, «… Angehörige und Vertrauenspersonen.» |
+| `grenzen.md` 718 | neu (AR3-4) | `grenzen#quellen` | ja | – (neu) |
+| `kommunizieren.md` 874 | verschoben (AR3-4) | `kommunizieren#quellen` | ja | ja |
+| `quellen.md` 167 | übernommen (AR3-4) | `quellen#diagnostik` | ja | ja |
+| `quellen.md` 170 | übernommen (AR3-4) | `quellen#diagnostik` | ja | ja |
+| `quellen.md` 191 | übernommen (AR3-4) | `quellen#versorgung` | ja | ja, «(laufend (URL-Snapshot 2011))» |
+| `quellen.md` 195 | übernommen (AR3-4) | `quellen#leitlinien` | ja | ja |
+| `quellen.md` 231 | übernommen (AR3-4) | `quellen#leitlinien` | ja | ja |
+| `quellen.md` 557 | neu (AR3-4) | `quellen#versorgung` | ja | – (neu) |
+| `quellen.md` 562 | neu (AR3-4) | `quellen#leitlinien` | ja | – (neu) |
+| `quellen.md` 567 | neu (AR3-4) | `quellen#schweiz` | ja | – (neu) |
+| `quellen.md` 572 | neu (AR3-4) | `quellen#schweiz` | ja | – (neu) |
+| `rolle.md` 348 | verschoben (AR3-4) | `rolle#quellen` | ja | ja |
+| `rolle.md` 697 | verschoben (AR3-4) | `rolle#quellen` | ja | ja |
+| `selbstfuersorge.md` 151 | verschoben (AR3-4) | `selbstfuersorge#quellen` | ja (Kurzangabe und Zusatz stehen in zwei Elementen) | ja |
+| `selbstfuersorge.md` 153 | verschoben (AR3-4) | `selbstfuersorge#quellen` | ja | ja |
+| `selbstfuersorge.md` 528 | verschoben (AR3-4) | `selbstfuersorge#quellen` | ja | ja |
+| `ueber.md` 35 | verschoben (AR3-4) | `quellen#versorgung` | ja | ja |
+
+Ergebnis: 22 von 22 stimmen.
+
+### Befunde
+
+| Nr. | Befund | Gewicht | Beleg |
+| --- | --- | --- | --- |
+| NAR34-1 | **Prüfbedarf.** Der Link «Schutz» der Opferhilfe zeigt im ersten Bildschirm einen hervorgehobenen Notfallkasten mit Telefonnummer. Den Link gibt es seit vor AR3-4, er ist unverändert und fällt deshalb nicht unter die Regel der Freigabe. Er steht aber in einem Eintrag, den AR3-4 geändert hat, und gleicht den Fällen NAR3-2 (BPD Alliance) und E3 (Forensic Nurses), die ohne Link stehen. Die Fachstelle entscheidet, ob der Link bleibt. Möglich wäre die Angabe ohne Link oder nur der Link «Für wen ist die Opferhilfe?». Dabei ist zu bedenken, dass «Schutz» die Aussage «… zu Nachbarn» auf `grenzen` deckt. | wichtig | `https://www.opferhilfe-schweiz.ch/de/was-ist-opferhilfe/schutz/`, Chromium 1280 × 900. Rechte Spalte in oranger Hervorhebung (`p.hilight`): «Wenn Sie in akuter Gefahr sind», «Bringen Sie sich in Sicherheit …», «Oder rufen Sie die Polizei an (117).» Oberkante 796 px, also im ersten Bildschirm. `85cf129`: gleiches `href` und `aria-label` |
+| NAR34-2 | Druck von `quellen`: Die Abschnittsüberschriften sind `position: sticky` (`components/bundle.css`: `.puk-longform__section-heading{position:sticky;…}`), im Druck nicht zurückgesetzt. Wer nach dem Scrollen druckt, erhält Überschriften über den Einträgen, z. B. «07 · Versorgung» über dem Eintrag der PUK. Das tritt in `85cf129` genauso auf, ist also vorbestehend und nicht von AR3-4. Gedruckt vom Seitenanfang ist alles lesbar. Eine Lösung gehört ins Design-System, nicht in dieses Repository. | optional | Chromium `page.pdf` A4. Gedruckt vom Seitenanfang: neu 26 Seiten, alt 25, ohne Überdeckung von Einträgen. Gedruckt nach Scrollen auf 85 %: Überdeckungen in beiden Ständen (Wortrahmen aus `pdftotext -bbox`). Neu: Seiten 6, 13, 15, 16, 18, 20, 22. Alt: Seiten 6, 13, 15, 16, 18, 19, 22 |
+| NAR34-3 | **Prüfbedarf.** Im Eintrag STOPP steht «Getselfhelp, deutschsprachige angepasste Fassung». Die verlinkte Seite ist englisch. Gemeint ist wohl die eigene deutsche Anpassung der Website (Kurzangabe: «angepasste deutsche Fassung»). Der Wortlaut stammt aus dem Bestand (Handout `stopp-technik`, `abgleich/selbstfuersorge.md` Nr. 528: «… deutschsprachige, angepasste Fassung.»). Der Zusatz ist nicht Teil von AR3-4; AR3-4 hat nur den Kopf geändert. | optional | `getselfhelp.co.uk/stopp/`: `lang="en-gb"`, keine deutsche Fassung verlinkt. Autorin nur im PDF: «© Carol Vivyan 2009 … Adapted from Ciarrochi & Bailey 2008» |
+| NAR34-4 | BApK: Der Titel im Eintrag «Informationsmaterialien für Angehörige, Kinder und Geschwister psychisch erkrankter Menschen» ist beschreibend. Die verlinkte Seite heisst «Medien des BApK». Der Inhalt passt (Zwischentitel «Angehörige», «Geschwister», «Kinder»). | optional | `<title>` «Medien des BApK: Bundesverband der Angehörigen psychisch erkrankter Menschen e.V.» |
+| NAR34-5 | Die Kurzangabe auf `behandlung` lautet «Kanton Zürich (laufend), Anlaufstellen für Patientinnen, Patienten und Angehörige». Der Eintrag und die Seite heissen «… für Patientinnen und Patienten sowie Angehörige». Das ist eine Kürzung ohne Sinnänderung; so ist es in Runde 2 freigegeben. | optional | `behandlung.html`, Quellenblock; `quellen` › `versorgung` |
+| NAR34-6 | E4: NHS zählt 1 bis 5 ein und aus. Zaccaro et al. (2018) belegt langsames Atmen unter 10 Atemzügen pro Minute. Das längere Ausatmen (4 : 6) steht in keiner der beiden Quellen. Die Seite kennzeichnet die Zahlen als «Orientierung, keine Vorgabe»; das ist nach E4 entschieden. | optional | Punkt 2, Zeilen E4 |
+| NAR34-7 | `ZUORDNUNG` enthält weiter den Schlüssel `'NICE NG225'`, obwohl keine Seite diese Kurzangabe mehr führt; `rolle` hat jetzt «NICE NG225 (2022)». Das ist ohne Wirkung auf das Ergebnis. | optional | `abgleich/verwendet-auf.mjs`, Zeile `'NICE NG225': 'NG225',`; Satzdiff `rolle` |
+
+**Hinweise ohne Befund:**
+- Die frühere Adresse `projectairstrategy.org` antwortet heute nicht (`curl`: keine Verbindung). Sie ist nicht mehr verlinkt.
+- Die Angaben der Leitsitzung in «Freigabe AR3-4» (Spalte «Beleg») habe ich wörtlich in den Quellen gefunden: E1 (Seite, B1, B2 Kap. 4), E2, E3, E4, E5 und E6.
+
+### Urteil
+
+**AR3-4 erfüllt.** Alle Angaben stimmen mit den heute abgerufenen Quellen, und die genannten Aussagen sind gedeckt. Der Satzdiff enthält ausser Quellenangaben genau die Sätze E2 und E6, wörtlich und am genannten Ort. Die Zählung stimmt, und die Werkzeuge laufen ohne Befund.
+
+Offen für die Fachstelle ist der Prüfbedarf NAR34-1 (wichtig): Der Link «Schutz» der Opferhilfe zeigt im ersten Bildschirm einen Notfallkasten mit 117. Er ist unverändert und deshalb nicht Teil der Regel für AR3-4. Die optionalen Befunde NAR34-2 bis NAR34-7 hindern weder die Freigabe noch den Export.
+
 ## Prüfung der Produktion AR3-2 (13.10.2026, Deploy 6acdb70)
 
 **Prüfsitzung (Claude Code), 13.10.2026, etwa 04.45 bis 05.00 UTC.** Auftrag: Auflage AR3-2 nach Entscheide zur Schlussprüfung 5.3 b, V-2 und V-9. Diese Sitzung hat die Website weder gebaut noch korrigiert. Sie hat nichts entschieden und keine frühere Stufe geprüft.
