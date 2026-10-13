@@ -43,3 +43,30 @@ Zu V-2 und V-3 hat die Fachstelle auf Rückfrage selbst gewählt.
 4. **R1 und R2** auf der Vorschau von #659, danach **R3** (V-8), in eigenen Sitzungen.
 5. **Veröffentlichung** nach V-9; danach die Prüfung der Produktion.
 6. **Nach der Veröffentlichung:** reale Tests bis 13.01.2027 (V-3); empfohlen die Durchsicht von Impressum und Datenschutz durch den Rechtsdienst (V-2).
+
+## Stand 13.10.2026
+
+Nachgeführt nach der Veröffentlichung, im Auftrag der Leitsitzung der Veröffentlichung. Die Entscheide V-1 bis V-9 oben bleiben im Wortlaut unverändert.
+
+| Schritt | Stand | Beleg |
+| --- | --- | --- |
+| 1. Entscheide in `main` | erledigt | Commit `d44c765`, PR #74 (Merge `99b4b60`) |
+| 2. Abschlussprüfung (V-7) | erledigt | `PRUEFBERICHT.md`, Abschnitt «Abschlussprüfung (13.10.2026, Stand d44c765)» |
+| 3. Release-Kandidat (V-5, V-6) | erledigt | Kandidat `f4074fd` auf dem Umzugs-Branch von PR christaegger-dot/borderline-angehoerige#659 |
+| 4. R1, R2, R3 (V-8) | erledigt: R3 «Go mit Auflagen», von der Fachstelle als Freigabe angenommen | `PRUEFBERICHT.md`, Abschnitte «Pre-Release-Audits R1 und R2», «R3 Freigabe-Audit», «Fachliche Freigabe der Fachstelle» › «Annahme von «Go mit Auflagen» (13.10.2026)»; AR3-1 erfüllt (dort, Punkt «Stand AR3-1», und Abschnitt «Nachprüfung AR3-1») |
+| 5. Veröffentlichung (V-9) | erledigt | siehe unten |
+| 6. Nach der Veröffentlichung | offen, Frist 13.01.2027 | siehe «Offene Auflagen» |
+
+**Veröffentlichung (Schritt 5) im Einzelnen:**
+- **Zustimmung V-9:** Die Fachstelle stimmte am 13.10.2026 im Chat der Leitsitzung der Veröffentlichung am Stand `f4074fd` zu («1. Ja») und übertrug den Merge an Claude («merge übertragen an dich»). Eingetragen in `PRUEFBERICHT.md`, «Annahme von «Go mit Auflagen»», Nachtrag zum Punkt «Veröffentlichung».
+- **Schutz der Vorschauen:** vor dem Merge eingeschaltet, Netlify `requiresSSOTeamLogin` true, `non_production`. Bestätigt in `PRUEFBERICHT.md`, «Prüfung der Produktion AR3-2», Punkt 5 (Vorschau ohne Anmeldung 401) und Punkt 9 (`get-project`).
+- **Build-Einstellungen:** vor dem Merge über die `netlify.toml` des Branchs angeglichen, `publish = "site"`, kein Build. Bestätigt ebenda, Punkt 9 (Deploy aus `main`, eine Regel aus `netlify.toml`).
+- **Beschreibung von #659:** Titel und Beschreibung von PR christaegger-dot/borderline-angehoerige#659 vor dem Merge nachgeführt.
+- **Merge:** PR #659 am 13.10.2026, 06.43 Uhr (04.43.50 UTC), Merge-Commit `ef2e491`, Baum gleich wie `f4074fd`. Produktions-Deploy `6acdb7093632f42d43ca4b49`, veröffentlicht 04.44 UTC unter `https://borderline-angehoerige.netlify.app`. Beleg: «Prüfung der Produktion AR3-2», geprüfter Stand und Punkt 9.
+- **Prüfung der Produktion (AR3-2, 5.3 b, dazu `Set-Cookie` nach V-2):** erfüllt, 9 von 9 Punkten, 0-mal `Set-Cookie` auf 50 Adressen. Beleg: `PRUEFBERICHT.md`, Abschnitt «Prüfung der Produktion AR3-2», PR christaegger-dot/puk-website-profil#87 (Merge `d2a34db`).
+
+**Offene Auflagen** (Wortlaut im Abschnitt «R3 Freigabe-Audit» von `PRUEFBERICHT.md`), je mit Frist **13.01.2027**:
+- **AR3-3 reale Tests** (V-3): Unterlage `REALE-TESTS-AR3-3.md`.
+- **AR3-4 Quellenangaben vervollständigen.**
+- **AR3-5 Ausnahme R1-1 beenden:** Profiländerung nach `/ENTSCHEIDE-PROFIL-2026-10-2.md`.
+- **Dazu empfohlen (V-2):** die Durchsicht von Impressum und Datenschutz durch den Rechtsdienst nach der Veröffentlichung; Unterlage `UNTERLAGE-RECHTSDIENST.md`.
