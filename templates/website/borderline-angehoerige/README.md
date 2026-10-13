@@ -1,5 +1,7 @@
 # Psychoedukations-Starter · PUK Website Kit 1.10.1-r4 · abgeleitet · Build r4-7
 
+> **Archivierte Quelle:** Dieses Verzeichnis wird nicht mehr bearbeitet oder exportiert. Verbindliche Quelle ist `christaegger-dot/borderline-angehoerige`; Einzelheiten und letzter aktiver Stand stehen in `ARCHIVIERT.md`. Der folgende Text beschreibt den historischen Arbeitsstand.
+
 Lokal lauffähiger Mehrseiten-Starter für psychoedukative Websites. Abgeleitetes Profil auf Basis der kanonischen Quelle **PUK Zürich Design System 1.10.1**, nicht deren neue offizielle Version. Alle Inhalte sind synthetisch: keine realen Kontakte, Personen, klinischen Aussagen, Freigaben oder Bildrechte.
 
 ## Aufbau
