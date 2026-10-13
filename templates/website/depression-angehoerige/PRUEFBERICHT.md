@@ -30,7 +30,9 @@ Ersetzt die Fassung der neunten Prüfsitzung; die frühere Fassung steht in der 
 
 **Stand der Stufen:** erledigt sind W2, S, Visualisierungs-Check, W3, R1 und R2. Offen bleiben W1 (nur der optionale Befund W1-40, Entscheid der Fachstelle), Bedienung und Barrierefreiheit (reale Tests) und R3. Das Produktionsgate blockiert nur noch wegen des Prüfberichts (`review-report`).
 
-**Fachstelle** (Fragen an die Fachstelle; je «umsetzen» oder «zurückstellen» genügt)
+**Fachstelle**
+
+Offen ist der Entscheid zu W1-40 («umsetzen» oder «zurückstellen»). Der frühere Entscheid «Für W1-39 und W3-13: umsetzen» ist an beiden Stellen im Wortlaut umgesetzt (W1, Prüfrunde 11, Punkt 1; W3, Prüfrunde 8, Punkt 2).
 
 1. **W1-40 · optional · neu.** Die Quellenzeile der NVL auf `begleiten` heisst «… Version 3.2, Kapitel 12.1 · Verwendung: Abschiedsvorbereitungen, Beschaffen von Mitteln, gefährliche Mittel sichern.» Am Original steht das Sichern gefährlicher Mittel (Verzicht auf das Bevorraten von Medikamenten) in Kapitel 12.2.1, nicht in 12.1 (W1, Prüfrunde 11, Punkt 4). Der sichtbare Text im Abschnitt `suizidgedanken` ist belegt; nur die Kapitelangabe ist ungenau. Vorschlag: Linktext «… Version 3.2, Kapitel 12.1 und 12.2.1». **Empfehlung: umsetzen** (eine Zeile in der Quellenliste, Adresse und Abschnitt bleiben gleich). Bei «zurückstellen» ist W1 erledigt.
 
@@ -39,6 +41,9 @@ Beantwortet und umgesetzt am 12.10.2026, nachgeprüft (W1, Prüfrunde 11; S 9; W
 **Bauende Sitzung** (nach dem Entscheid zu 1)
 
 - W1-40 umsetzen, wenn die Fachstelle so entscheidet: nur der Linktext in `content/begleiten.html`, danach `node tools/build.mjs`; Nachprüfung von W1 und S durch eine Sitzung, die nicht umgesetzt hat.
+- **Ziel der Veröffentlichung, entschieden am 12.10.2026:** neue Netlify-Site `depression-angehoerige` (Ziel-Adresse wie `siteUrl`) mit eigenem Repository `christaegger-dot/depression-angehoerige`, nur für den Export; die alte Site `puk-depression-angehoerige` bleibt und leitet nach dem Start weiter. Details: `PRUEFAUFTRAG-R3.md`, Abschnitt 6.
+- **Vor R3:** Repository und Netlify-Site anlegen; den Entwurfs-Export als `site/` auf den Branch `release-kandidat` im neuen Repository legen und einen Pull Request ohne Merge öffnen. Dessen Deploy-Vorschau ist der Entwurfs-Deploy für R3. Keine Änderung an Inhalten (`PRUEFAUFTRAG-R3.md`, Abschnitt 6).
+- **Offen nach dem Start:** Weiterleitungen der alten Site entscheiden und klären, ob `Archiv-puk-depression-angehoerige` und `depression-verstehen-und-begleiten` archiviert werden.
 - Bei der nächsten Änderung am Plan: `v-bv-weg` › `understood` «nach der Besserung» an das `statement` angleichen («nach dem Abklingen der Beschwerden»); kein Befund, nicht sichtbar (W1, Prüfrunde 10, Punkt 6).
 
 **Profil** (Design-System-Artefakt, nicht in diesem Repository; danach neues Paket übernehmen) – am 12.10.2026 von der Fachstelle mit Begründung zurückgestellt (Antwort 5): bis zum nächsten Profilpaket, W3-12 bis R3, BD-08 bis nach den realen Läufen
@@ -52,14 +57,14 @@ Beantwortet und umgesetzt am 12.10.2026, nachgeprüft (W1, Prüfrunde 11; S 9; W
 - R2-08: Muster E mit einer gemeinsamen Zeile über beide Spalten; danach den Rechte-Vergleich umstellen und den Plan mitführen.
 - R1-01 (Trennpunkte der Absenderzeile am Zeilenanfang), R1-02 (freie px-Werte in `starter.css`), R1-04 (Kurztext und Ansatzpunkt in Figuren 15 px).
 - BD-08: Regionen in Figuren, erst nach den realen Screenreader-Läufen entscheiden.
-- **Hinweis, neu (kein Befund):** Bei 360 px mit 200 % Schrift brechen lange Wörter ohne Trennstrich um, in allen Figuren und auf den Seiten (z. B. «Schweigepf|licht», «Gesundheitszustan|d»); an `72560d0` gleich. Ursachen: `hyphens: manual` für Kernaussage, Kurztext und Fliesstext nach Profilregel und, für Spaltenköpfe mit `hyphens: auto`, ein Browser ohne deutsche Silbentrennung (Visualisierungs-Check, Runde 7). Im Design-System prüfen, ob Kernaussagen und Überschriften bei grosser Schrift und schmaler Breite eine Silbentrennung oder eine kleinere Höchstgrösse brauchen.
+- **Hinweis (kein Befund, achte Prüfsitzung):** Bei 360 px mit 200 % Schrift brechen lange Wörter ohne Trennstrich um, in allen Figuren und auf den Seiten (z. B. «Schweigepf|licht», «Gesundheitszustan|d»); an `72560d0` gleich. Ursachen: `hyphens: manual` für Kernaussage, Kurztext und Fliesstext nach Profilregel und, für Spaltenköpfe mit `hyphens: auto`, ein Browser ohne deutsche Silbentrennung (Visualisierungs-Check, Runde 7). Im Design-System prüfen, ob Kernaussagen und Überschriften bei grosser Schrift und schmaler Breite eine Silbentrennung oder eine kleinere Höchstgrösse brauchen.
 
 **Prüfung durch Personen oder weitere Prüfsitzungen**
 
 - **Reale Tests:** mindestens zwei Screenreader-Läufe (VoiceOver mit Safari, NVDA mit Firefox) und ein Test mit Hardwaretastatur und auf einem realen Touch-Gerät; dabei den Kreislauf anhören (BD-12), BD-08 beobachten (Schritte VO-3 und NV-3) und auf dem Telefon mit grosser Schrift auf Wortumbrüche achten. Anleitung: `FREIGABE-ENTSCHEIDE.md`, Abschnitt 7. Eintragen unter «Bedienung und Barrierefreiheit» › «Protokoll reale Screenreader-Läufe» und «Protokoll Hardwaretastatur und Touch»; danach die Stufe abschliessen.
 - **Vor der Veröffentlichung:** «Angaben zu den Angeboten: Stand 12.10.2026.» bleibt der letzte Absatz von `rechte-und-angebote` › `angebote`; sonst den Satz auf `je-nach-rolle` («… am Schluss steht dort auch der Stand der Angaben.») anpassen. Liegt die Veröffentlichung später als der Stand, die Angebote kurz nachprüfen und das Datum nachführen.
 - **Lesetest mit Angehörigen,** wo möglich trialogisch (R2 ersetzt ihn nicht).
-- **R3** durch eine Sitzung, die nichts gebaut, korrigiert oder entschieden hat (`guidelines/00-pre-release-audits.md`), mit Export und Ziel-Adresse, wenn W1 (Entscheid zu W1-40) und Bedienung abgeschlossen sind.
+- **R3** durch eine Sitzung, die nichts gebaut, korrigiert oder entschieden hat (`guidelines/00-pre-release-audits.md`), mit Export und Deploy-Vorschau, wenn W1, W3 und Bedienung abgeschlossen sind. Auftrag: `PRUEFAUFTRAG-R3.md` (Teil A: Punkt 13 am Original; Teil B: reale Tests; Teil C: Freigabe-Audit). Teil C prüft die Punkte 17 und 21 auf der Deploy-Vorschau des neuen Repositorys (Abschnitt 6).
 
 **Erledigt mit den Nachprüfungen vom 12.10.2026 (neunte und zehnte Prüfsitzung):** W1-39, W3-13, die sechs Adressen am Original (W1, Prüfrunde 10, Punkt 9; W3, Prüfrunde 7, Punkt 3), alle 7 PDF-Grössen am Original (W3, Prüfrunde 7, Punkt 2: 6 in Prüfrunde 8, das Barometer 2018 in Prüfrunde 9); S und W3 erledigt. Früher erledigt und nachgeprüft: W1-F-21, W1-09 Rest, W1-25 (Ausnahmen), W1-31, W1-35 bis W1-38, Stand-Vermerk, BD-09 und W3-10 Rest, R1 Punkt 18 (W1-F-15 entfällt); W1-F-19, S-33, V-11, BD-12, K1, W1-33, S-34, W1-34 (Variante 2).
 

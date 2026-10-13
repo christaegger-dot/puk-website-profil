@@ -35,7 +35,7 @@ export const PAGES = {
   // `impressum-datenschutz` aus `/impressum` und `/datenschutz` (eigene Seite nach Profilentscheid 11.10.2026).
   fragen: ['faq.md'], quellen: ['quellen.md', 'glossar.md'], ueber: ['ueber-uns.md', 'barrierefreiheit.md', 'feedback.md'], 'impressum-datenschutz': ['impressum.md', 'datenschutz.md'],
 };
-const RICHTWERT = { index: null, verstehen: 1300, beziehungen: 1100, grenzen: 1500, rolle: null, selbstfuersorge: null, kommunizieren: null, krise: null, genesung: null, unterstuetzung: null, diagnose: null, behandlung: null, fragen: 1500, quellen: null, ueber: 900, 'impressum-datenschutz': null };
+const RICHTWERT = { index: null, verstehen: null, beziehungen: null, grenzen: null, rolle: null, selbstfuersorge: null, kommunizieren: null, krise: null, genesung: null, unterstuetzung: null, diagnose: null, behandlung: null, fragen: null, quellen: null, ueber: null, 'impressum-datenschutz': null };
 const C = createRequire(import.meta.url)(join(SITE, 'tools/contract.js'));
 
 const SKIP = new Set(['script', 'style', 'svg']);
