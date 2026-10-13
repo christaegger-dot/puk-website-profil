@@ -1,14 +1,16 @@
 # Prüfauftrag · Depression-Website · R3 Freigabe-Audit, zuerst Punkt 13 am Original
 
-Stand 12.10.2026. Gilt für `templates/website/depression-angehoerige/` auf `main` nach dem Merge von #71; ist #71 noch nicht gemergt, auf dem Branch `claude/keen-clarke-xkdh7j`. Für eine **Prüfsitzung mit Internetzugang**.
+Stand 12.10.2026, nachgeführt am 13.10.2026. Gilt für `templates/website/depression-angehoerige/` auf `main` (nach dem Merge von #71 und #70). Für eine **Prüfsitzung mit Internetzugang**.
 
 Diesen Auftrag hat auf Wunsch der Fachstelle («Schreib den Auftrag: … in R3 (Punkt 13) nachholen, in einer Umgebung mit Internetzugang»; «Bitte schreib einen konkreten Auftrag») die neunte Prüfsitzung geschrieben. Er legt Umfang, Schritte, Entscheidregeln und Form fest, aber keine erwarteten Ergebnisse.
+
+**Nachgeführt am 13.10.2026** (zehnte Prüfsitzung, auf Wunsch der Fachstelle: «ja bitte»), nachdem PR #70 auf `main` kam: Die Schritte 5 bis 8 aus Teil A sind schon erledigt (`PRUEFBERICHT.md` › W1, Prüfrunde 12; W3, Prüfrunden 9 und 10). Daraus sind W1-40 und W1-F-22 vergeben, und W3 ist erledigt. Nachgeführt sind deshalb der Stand der Stufen, die IDs neuer Befunde, die Schritte von Teil A, die Statusregeln, die Eintragsorte und die Startnachricht für Teil A. Umfang, Regeln, Teil B, Teil C und Abschnitt 6 sind unverändert. Die frühere Fassung steht in der Git-Geschichte (Datei an `6ed81ba`).
 
 ## 1. Auf einen Blick
 
 | Teil | Was | Voraussetzung | Danach |
 | --- | --- | --- | --- |
-| **A · jetzt** | R3, Punkt 13: alle 73 externen Adressen am Original (Anhang A), dazu SGPP S. 7, NVL Kapitel 12 und die Grössen der 7 PDF-Dateien | Internetzugang (Schritt 1) | W1 und W3 auf «erledigt», wenn ohne Befund |
+| **A · jetzt** | R3, Punkt 13: alle 73 externen Adressen am Original (Anhang A) und die E-Mail-Adresse. SGPP S. 7, NVL Kapitel 12 und die Grössen der 7 PDF-Dateien sind schon geprüft (Schritte 5 bis 8) | Internetzugang (Schritt 1) | W1 auf «erledigt», wenn ohne Befund und die Fachstelle über W1-40 und W1-F-22 entschieden hat; W3 ist erledigt |
 | **B · später** | Ergebnisblätter der realen Tests eintragen | die Fachstelle übergibt die Blätter (`FREIGABE-ENTSCHEIDE.md`, Abschnitt 7 e) | Bedienung auf «erledigt», wenn vollständig |
 | **C · zuletzt** | R3 nach `guidelines/00-pre-release-audits.md`, unverändert | W1, W3 und Bedienung «erledigt»; neues Repository, Netlify-Site und Entwurfs-Deploy (Abschnitt 6) | «Go», «Go mit Auflagen» oder «No-Go» |
 
@@ -16,11 +18,14 @@ Eine Sitzung macht jeden Teil, dessen Voraussetzung erfüllt ist, und hört dann
 
 **Stand der Stufen beim Schreiben** (`PRUEFBERICHT.md` › Status): erledigt W2, S, Visualisierungs-Check, R1, R2. W1 und W3 offen ohne offenen Befund; es fehlt nur die Prüfung am Original, die der Proxy in der achten und neunten Prüfsitzung gesperrt hat (W1, Prüfrunde 10, Punkt 9 und Prüfrunde 11, Punkte 4 und 5; W3, Prüfrunde 7, Punkt 2 und Prüfrunde 8, Punkt 4). Offen ausserdem Bedienung (reale Tests) und R3.
 
+**Stand der Stufen am 13.10.2026** (nach dem Merge von #70, `main` an `6ed81ba`): erledigt W2, S, Visualisierungs-Check, W3, R1, R2. Am Original geprüft sind die sechs neuen Adressen, SGPP S. 7, NVL Kapitel 12 und alle 7 PDF-Grössen (W1, Prüfrunde 12; W3, Prüfrunden 9 und 10). W1 ist offen, weil die Fachstelle über W1-40 (optional, NVL-Kapitelangabe) und W1-F-22 (zwei Warnsignale ohne Fundstelle) noch entscheiden muss. Offen sind ausserdem Bedienung (reale Tests) und R3.
+
 ## 2. Wer prüft
 
-- **Eine neue Sitzung**, die an dieser Website nichts gebaut, korrigiert oder entschieden hat. Ausgeschlossen sind auch die neunte Prüfsitzung (hat diesen Auftrag geschrieben) und die achte (hat W1-39 und W3-13 im Rollenwechsel umgesetzt).
+- **Eine neue Sitzung**, die an dieser Website nichts gebaut, korrigiert oder entschieden hat. Ausgeschlossen sind auch die neunte Prüfsitzung (#71; hat diesen Auftrag geschrieben), die zehnte (hat ihn nachgeführt) und die achte (hat W1-39 und W3-13 im Rollenwechsel umgesetzt).
 - **Netz:** Am einfachsten freier Internetzugang für diese Sitzung (Einstellungen der Umgebung › Network access), weil die 46 DOI-Links auf Verlagsseiten weiterleiten. Sonst mindestens diese Hosts: `www.leitlinien.de`, `icd.who.int`, `doi.org`, `api.crossref.org`, `promentesana.ch`, `stand-by-you.ch`, `swisslife.ch`, `deutschebahnstiftung.de`, `www.bag.admin.ch`, `www.depressionen.ch`, `www.deutsche-depressionshilfe.de`, `www.fedlex.admin.ch`, `www.kinderseele.ch`, `www.mhfa.com.au`, `www.obsan.admin.ch`, `www.psychiatrie.ch`, `www.pukzh.ch`, `www.selbsthilfezuerich.ch`, `www.vaskzuerich.ch`, `www.wie-gehts-dir.ch`, `www.zh.ch`, `*.netlify.app`.
-- **IDs neuer Befunde:** W1-40, W3-14, BD-13, Fragen an die Fachstelle W1-F-22, R3-01.
+- **Bot-Schutz:** `www.deutsche-depressionshilfe.de` (Anhang A, Nr. 35, Barometer 2018) antwortete am 12.10.2026 auf `curl` mit 403 von Cloudflare, auch auf `HEAD`. Die Datei ist im eingebauten Browser der Claude-Desktop-App am Original bestätigt (W3, Prüfrunde 10). Bleibt die Sperre bestehen, die Adresse nicht umgehen. Dann gilt sie als «nicht geprüft», und die Prüfung erfolgt im Browser durch eine Person oder mit Zustimmung der Fachstelle.
+- **IDs neuer Befunde:** W1-41, W3-14, BD-13, Fragen an die Fachstelle W1-F-23, R3-01. W1-40 und W1-F-22 sind seit W1, Prüfrunde 12 vergeben.
 
 ## 3. Regeln
 
@@ -32,6 +37,8 @@ Eine Sitzung macht jeden Teil, dessen Voraussetzung erfüllt ist, und hört dann
 - **Zurückgestellt mit Begründung** (Fachstelle, 12.10.2026), gilt nicht als offen: W3-11, W3-01 (Hinweis), W3-12 (bis R3, Punkt 21), R2-01 und R2-02 (Profil-Teil), V-08 und V-09 (Profil-Teil), V-10, R2-08, R1-01, R1-02, R1-04, BD-08 (bis nach den realen Läufen).
 
 ## 4. Teil A · Punkt 13 am Original, Schritt für Schritt
+
+**Stand 13.10.2026:** Die Schritte 5 bis 8 sind erledigt (W1, Prüfrunde 12, Punkte 4 und 5; W3, Prüfrunden 9 und 10) und entfallen. Ihre Ergebnisse gelten, solange die Adressen und Dateien gleich sind, was die Schritte 3 und 4 zeigen. Zu machen bleiben die Schritte 1 bis 4, 9 und 10 bis 12. Die Beschreibung der Schritte 5 bis 8 bleibt als Nachweis stehen.
 
 Ab Schritt 3 laufen alle Befehle im Ordner der Website im Git-Worktree aus Schritt 2. Höchstens etwa ein Abruf je Sekunde.
 
@@ -151,28 +158,28 @@ Alle `mailto:` und der sichtbare Text gleich `angehoerigenarbeit@pukzh.ch`, glei
 | Antwort 200 nach Weiterleitungen, Ziel passt, offizielle Quelle | erfüllt |
 | DOI: Verlag mit Bot-Schutz, Crossref-Metadaten passen | erfüllt (Beleg Crossref; Bot-Schutz vermerken) |
 | Seite: Fehler nur bei `curl`, mit Chromium 200 und passend | erfüllt |
-| Ziel passt teilweise (anderes Kapitel, andere Fassung, Titel weicht ab) | Befund W1-40 ff., optional; Vorschlag für Linktext oder Adresse |
-| 404, 410, Host unbekannt, falsches Ziel, keine offizielle Quelle | Befund W1-40 ff., wichtig |
+| Ziel passt teilweise (anderes Kapitel, andere Fassung, Titel weicht ab) | Befund W1-41 ff., optional; Vorschlag für Linktext oder Adresse |
+| 404, 410, Host unbekannt, falsches Ziel, keine offizielle Quelle | Befund W1-41 ff., wichtig |
 | gesperrt oder nicht abrufbar | «nicht geprüft» |
-| Schritt 6: S. 7 trägt die «Verwendung» nicht | Befund W1-40 ff., optional (wie W1-39); Vorschlag für die Zeile |
-| Schritt 7: ein Warnsignal in keiner Quelle von `begleiten` | Frage W1-F-22 an die Fachstelle: als Fachwissen bestätigen (wie 1 e) oder Quelle nennen; nicht streichen empfehlen (der Abschnitt ist sicherheitsrelevant) |
-| Schritt 8: gerundete Grösse ungleich Linktext | Befund W3-14 ff., optional; Vorschlag mit neuem Wert |
-| Schritt 9: Abweichung | Befund W1-40 ff., wichtig |
+| Schritt 6: S. 7 trägt die «Verwendung» nicht (erledigt: trägt sie, W1, Prüfrunde 12) | Befund W1-41 ff., optional (wie W1-39); Vorschlag für die Zeile |
+| Schritt 7: ein Warnsignal in keiner Quelle von `begleiten` (erledigt: W1-F-22) | Frage an die Fachstelle: als Fachwissen bestätigen (wie 1 e) oder Quelle nennen; nicht streichen empfehlen (der Abschnitt ist sicherheitsrelevant) |
+| Schritt 8: gerundete Grösse ungleich Linktext (erledigt: 7 von 7 stimmen, W3, Prüfrunden 9 und 10) | Befund W3-14 ff., optional; Vorschlag mit neuem Wert |
+| Schritt 9: Abweichung | Befund W1-41 ff., wichtig |
 
 **Status:**
-- **W1 «erledigt»**, wenn die sechs Adressen aus Schritt 5 erfüllt sind, die Schritte 4, 6, 7 und 9 ohne neuen Befund und ohne offene Frage bleiben und keine Adresse «nicht geprüft» ist. Sonst bleibt W1 offen.
-- **W3 «erledigt»**, wenn alle 7 Grössen aus Schritt 8 erfüllt sind. Sonst bleibt W3 offen.
+- **W1 «erledigt»**, wenn die Fachstelle über W1-40 und W1-F-22 entschieden hat (bei «umsetzen» oder einer neuen Quelle erst nach der Nachprüfung der geänderten Zeile), die Schritte 4 und 9 ohne neuen Befund und ohne offene Frage bleiben und keine Adresse «nicht geprüft» ist. Sonst bleibt W1 offen.
+- **W3** ist erledigt (W3, Prüfrunden 9 und 10). Ein neuer Befund W3-14 ff. öffnet W3 wieder.
 - **R3** bleibt «offen». Punkt 13 gilt als vorgeprüft am Datum von Teil A.
 
 ### Schritt 11 · Eintragen in `PRUEFBERICHT.md`
 
-1. **W1:** neuer Block nach «Offen in W1 nach Runde 11», vor «### W2 Gesamtkohärenz»:
+1. **W1:** neuer Block nach «Offen in W1 nach Runde 12», vor «### W2 Gesamtkohärenz»:
 
    ```
-   #### Prüfrunde 12 · Prüfung am Original (TT.MM.JJJJ, Stand `<sha>`)
+   #### Prüfrunde 13 · Prüfung am Original (TT.MM.JJJJ, Stand `<sha>`)
 
    **Geprüft durch:** <Nr.> Prüfsitzung (…). Hat die Website nicht gebaut, nichts korrigiert oder entschieden
-   und diesen Auftrag nicht geschrieben. Quelle der Befunde: Prüfung <Nr.>.
+   und diesen Auftrag weder geschrieben noch nachgeführt. Quelle der Befunde: Prüfung <Nr.>.
 
    **Grundlage:** Stand; Netz (Befehle aus Schritt 1 mit Uhrzeit und Antwort); Werkzeuge mit Version;
    Linkzählung und Abgleich mit Anhang A (Schritt 3).
@@ -181,20 +188,18 @@ Alle `mailto:` und der sichtbare Text gleich `angehoerigenarbeit@pukzh.ch`, glei
 
    **1 · Alle externen Adressen** (73 Zeilen)
    | Nr. | Adresse | Seite › Abschnitt | Antwort | Endadresse | passt | offiziell | Beleg |
-   **2 · Die sechs neuen oder geänderten Adressen** (Schritt 5)
-   **3 · Schweizer Behandlungsempfehlungen, Teil 1, S. 7** (Schritt 6)
-   **4 · NVL Kapitel 12, zwei Warnsignale** (Schritt 7)
-   **5 · E-Mail-Adresse** (Schritt 9)
+   **2 · E-Mail-Adresse** (Schritt 9)
+   **3 · Entscheide zu W1-40 und W1-F-22:** Stand mit Fundort im Bericht, sonst «offen»
 
-   #### Neue Befunde W1, Runde 12
-   (je ID, Gewicht, Beleg, Vorschlag, Zuständig; sonst «Keine.»)
+   #### Neue Befunde W1, Runde 13
+   (je ID ab W1-41 bzw. W1-F-23, Gewicht, Beleg, Vorschlag, Zuständig; sonst «Keine.»)
 
-   **Zählung Prüfrunde 12:** …
+   **Zählung Prüfrunde 13:** …
    ```
 
-2. **W3:** neuer Block nach der Zeile «Zählung W3, Runde 8: …», vor «## Pre-Release-Audits»: «#### Prüfrunde W3 9 · PDF-Grössen am Original (TT.MM.JJJJ, Stand `<sha>`)» mit Tabelle | Nr. | Datei | Byte | MB gerundet | Linktext | Ergebnis |, danach «#### Neue Befunde W3, Runde 9» und Zählung.
-3. **R3:** unter «### R3 Freigabe-Audit» oben ein Absatz «Punkt 13 vorgeprüft am TT.MM.JJJJ (W1, Prüfrunde 12): …»; den bisherigen ersten Absatz darunter unter «_Verlauf: …_» behalten. R3 selbst bleibt «offen».
-4. **Statustabelle:** Zeilen W1, W3 und R3: Status, «Datum», «Geprüft durch» und «Ergebnis» nachführen.
+2. **W3:** nur bei einem neuen Befund ein Block nach der Zeile «Zählung W3, Runde 10: …», vor «## Pre-Release-Audits»: «#### Prüfrunde W3 11 · … (TT.MM.JJJJ, Stand `<sha>`)» mit Befund W3-14 ff. und Zählung.
+3. **R3:** unter «### R3 Freigabe-Audit» oben ein Absatz «Punkt 13 vorgeprüft am TT.MM.JJJJ (W1, Prüfrunde 13; dazu W1, Prüfrunde 12 und W3, Prüfrunden 9 und 10): …»; den bisherigen ersten Absatz darunter unter «_Verlauf: …_» behalten. R3 selbst bleibt «offen».
+4. **Statustabelle:** Zeilen W1 und R3 (W3 nur bei einem neuen Befund): Status, «Datum», «Geprüft durch» und «Ergebnis» nachführen.
 5. **«Offene Punkte nach Zuständigkeit»** neu fassen; neue Fragen an die Fachstelle dort sammeln.
 
 ### Schritt 12 · Commit und PR
@@ -299,11 +304,11 @@ Beide bleiben unverändert. Ob sie archiviert werden, entscheidet die Fachstelle
 **Teil A** (jetzt; neue Sitzung im selben Repository mit Internetzugang):
 
 ```
-Prüfe die Website templates/website/depression-angehoerige/ nach PRUEFAUFTRAG-R3.md
-im selben Ordner, Teil A, Schritte 1 bis 12. Ist #71 noch nicht gemergt, arbeite auf dem
-Branch claude/keen-clarke-xkdh7j, sonst auf main. Halte den geprüften Stand mit
-git rev-parse HEAD fest. Du hast die Website nicht gebaut, nichts daran korrigiert oder
-entschieden und diesen Auftrag nicht geschrieben. Lies zuerst CLAUDE.md,
+Prüfe die Website templates/website/depression-angehoerige/ auf main nach
+PRUEFAUFTRAG-R3.md im selben Ordner, Teil A, Schritte 1 bis 4 und 9 bis 12
+(5 bis 8 sind erledigt). Halte den geprüften Stand mit git rev-parse HEAD fest.
+Du hast die Website nicht gebaut, nichts daran korrigiert oder entschieden und
+diesen Auftrag weder geschrieben noch nachgeführt. Lies zuerst CLAUDE.md,
 guidelines/00-ablauf-pruefung-und-freigabe.md und den Auftrag ganz.
 Ändere keine Inhalte und keinen Code. Committe nur PRUEFBERICHT.md auf einem
 eigenen Branch und öffne einen Entwurfs-PR gegen main.
@@ -344,7 +349,7 @@ Code. Committe nur PRUEFBERICHT.md auf einem eigenen Branch und öffne einen Ent
 
 ## Anhang A · Die 73 externen Adressen
 
-Erzeugt am 12.10.2026 aus den gebauten Seiten an `30cfc92`: 83 Links, 73 eindeutige Adressen, 20 Hosts, 46 DOI-Links. Markiert sind Adressen, die seit der Prüfung aller Links in W1, Prüfrunde 9 (70 Adressen) **neu** oder **geändert** sind. Die Sitzung erzeugt die Liste selbst neu (Schritt 3) und vergleicht.
+Erzeugt am 12.10.2026 aus den gebauten Seiten an `30cfc92`: 83 Links, 73 eindeutige Adressen, 20 Hosts, 46 DOI-Links. Die Website-Dateien sind an `6ed81ba` (13.10.2026) gleich wie an `30cfc92`; geändert sind seither nur `PRUEFBERICHT.md` und dieser Auftrag. Markiert sind Adressen, die seit der Prüfung aller Links in W1, Prüfrunde 9 (70 Adressen) **neu** oder **geändert** sind. Die Sitzung erzeugt die Liste selbst neu (Schritt 3) und vergleicht.
 
 | Nr. | Adresse | Art | Seite › Abschnitt | Linktext (gekürzt) |
 | --- | --- | --- | --- | --- |
