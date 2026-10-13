@@ -38,11 +38,12 @@
 | P-12 | Ungenutztes CSS, SPZ-51 | **Keine Änderung.** | `site.css` ist rund 50 kB gross und ohne messbare Wirkung auf die Ladezeit. Das Entfernen wäre bei zwei Websites ein Risiko für Darstellungsfehler (M4) |
 | P-13 | `robots.txt` und Hinweis auf `sitemap.xml`, SPZ-53 | **Übernehmen:** Der Export schreibt `robots.txt` mit `Sitemap:`-Zeile, wenn `siteUrl` gesetzt ist. `og-image.jpg` und `favicon.ico` entfallen weiter. | `tools/export.mjs`. **Abnahme:** `robots.txt` ohne Sperre, mit der Sitemap-Adresse |
 | P-14 | Schwellen in `rem` und Druckschrift 81,25 % (Nachprüfung SP2-K, Teil I) | **Übernehmen** als Hinweis in `guidelines/07-visualisierung-umsetzen.md` beim Absatz zu den Schwellen. | Wortlaut: «Schwellen in `rem` verschieben sich im Druck, weil die Wurzelschrift dort 81,25 % beträgt. Soll die Druckansicht gleich bleiben, steht die heutige px-Schwelle als Untergrenze, z. B. `(max-width:800px) or (max-width:50rem)`.» |
+| P-15 | Sticky Abschnittsüberschriften im Druck, NAR34-2 (Nachprüfung AR3-4, 13.10.2026) | **Übernehmen.** Im Druck stehen die Abschnittsüberschriften der Langform im Fluss. | `components/bundle.css`, `@media print`: `.puk-longform__section-heading` mit `position:static` (heute `position:sticky`, im Druck nicht zurückgesetzt). Wer nach dem Scrollen druckt, erhält sonst Überschriften über den Einträgen, z. B. auf `quellen` der Borderline-Website. **Abnahme:** A4-Druck von `quellen` beider Websites, einmal vom Seitenanfang und einmal nach dem Scrollen an das Seitenende gedruckt: keine Überschrift über einem Eintrag; am Bildschirm unverändert |
 
 ## Ablauf
 
 1. **Bauende Sitzung (Profil):**
-   - ändert das Design-System-Artefakt nach P-1 bis P-11, P-13 und P-14 und erzeugt daraus das Paket 2026.10.2;
+   - ändert das Design-System-Artefakt nach P-1 bis P-11, P-13, P-14 und P-15 und erzeugt daraus das Paket 2026.10.2;
    - ersetzt es in diesem Repository und führt das Änderungsprotokoll im `README.md`;
    - Websites unter `templates/website/<website>/` bleiben erhalten;
    - Selbsttest des Gates.
