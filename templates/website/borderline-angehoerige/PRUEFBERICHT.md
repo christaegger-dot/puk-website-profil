@@ -335,6 +335,29 @@ Bewertet wird nur die Dokumentation, nicht der Entscheid.
 
 Kein kritischer oder wichtiger Befund. Die Zeilen R1 und R2 bleiben «erledigt». Die Zeile R3 ist nicht Sache dieser Prüfung.
 
+### Nachtrag · NAR3-1 und NAR3-2 (13.10.2026, Stand c44cb72)
+
+Die bauende Sitzung hat beide optionalen Befunde umgesetzt (`c44cb72`, Kandidat `borderline-angehoerige` `f4074fd`, Export mit `--production`). Nachgeprüft von derselben Prüfsitzung:
+
+- **Nur ein `href` geändert:**
+  - `git diff ec0be6a c44cb72` (Wortdiff) ändert in `content/quellen.html` und `quellen.html` nur `href="https://bpdalliance.org/documents/family-guidelines/"` → `href="https://bpdalliance.org/wp-content/uploads/2026/03/Family-Guidelines-standard.pdf"`. Sonst ist nur `PRUEFBERICHT.md` geändert.
+  - `site/` von `fe482c6` → `f4074fd`: 1 Datei (`site/quellen.html`), 1 Zeile, dasselbe `href`.
+  - Die Vorschau `/quellen` zeigt das neue Ziel.
+- **PDF:**
+  - Antwortet mit 200, `application/pdf`, 246 267 Byte; byte-gleich mit dem PDF, auf das die Ressourcenseite in Teil B verwies.
+  - Erste Seite: «FAMILY GUIDELINES · Multiple Family Group Program at McLean Hospital · by John G. Gunderson, M.D. and Cynthia Berkowitz, M.D.»; 11 Seiten.
+  - Dokumenttitel in den Metadaten: «Family Guidelines revised WORD document for NEA website 17 Nov 06». Das stützt die Angabe NEABPD in der Quelle; der Hinweis zur Herausgeberin in NAR3-2 entfällt damit.
+  - Der Krisenblock der Ressourcenseite liegt nicht mehr auf dem Weg.
+- **Gate und Export:**
+  - `node tools/build.mjs` am Stand `c44cb72` ändert keine Datei.
+  - `node tools/gate.mjs --production`: «Gate production: 0 blockierend, 1 Hinweise» («144»).
+  - Export mit `--production` gegen `site/` von `f4074fd`: gleich bis auf `_redirects` und `fonts/OFL.txt`.
+- **NAR3-1:** Im Abschnitt «Annahme …», Punkt «Stand AR3-1», und im Block «Korrektur AR3-1» steht jetzt «`quellen` › `versorgung`». Erledigt.
+- **NAR3-2:** erledigt. «(laufend)» bleibt nach Entscheid bis AR3-4 (Quellenangaben vervollständigen).
+- **AR3-1:** Laut Prüfbericht (`5fc5b0b`) hat die Fachstelle die 5 Links hinter dem Bot-Schutz im eigenen Browser geöffnet («alle fünf links gehen»). Diese Sitzung kann das nicht selbst prüfen und übernimmt es aus dem Eintrag.
+
+Kein neuer Befund.
+
 ## Nachprüfung R2-K (13.10.2026, Stand 5d474eb)
 
 **Prüfsitzung (Claude Code), 13.10.2026.** Dieselbe Sitzung, die R1 und R2 geprüft hat (Abschnitt «Pre-Release-Audits R1 und R2»). Sie hat die Website weder gebaut noch die Korrektur R2-K umgesetzt, und sie hat nichts entschieden. Auftrag der bauenden Sitzung im Auftrag der Fachstelle: Korrektur R2-K nachprüfen und die Zeilen R1 und R2 nach der Leitlinie setzen. Geprüft ist `puk-website-profil` am Commit `5d474eb` (PR #76) und der Release-Kandidat auf der Vorschau `https://deploy-preview-659--borderline-angehoerige.netlify.app` (Export von `5d474eb`, `borderline-angehoerige` Commit `5d5aed4`, nur gelesen).
