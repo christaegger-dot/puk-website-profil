@@ -64,6 +64,14 @@ Gehört zur Website in diesem Ordner. Wer den Starter kopiert, übernimmt diese 
 
 **Wiederholbare Nachweise:** `node abgleich/kurzorientierung.mjs`, `node abgleich/nutzerwege.mjs`, `node abgleich/zero-participant-audit.mjs`, Produktionsgate, Exportprüfung und Browsermessung. Vollständiger Plan: `KURZORIENTIERUNG-MASSNAHMENPLAN-2026-10-13.md`.
 
+### Selbstprüfung · Angebotsaktualität · 13.10.2026
+
+**Umgesetzt:** Zehn dynamische Beratungs-, Austausch- und Behandlungsangebote tragen eine stabile Kennung, ein maschinenlesbares Prüfdatum und dasselbe Datum sichtbar am Eintrag. Der erläuternde Text grenzt das Prüfdatum von einer Verfügbarkeitszusage ab. `ANGEBOTSPFLEGE-2026-10-13.md` legt halbjährliche Prüfung, Ereignisauslöser, Prüffelder und den Umgang mit 404/410 sowie technischen Zugriffssperren fest.
+
+**Wiederholbare Nachweise:** Das Produktions-Gate blockiert einen unvollständigen Bestand sowie fehlende, zukünftige oder mehr als 183 Tage alte Prüfdaten; der Selbsttest belegt diese Fehlerklasse mit einem absichtlich veralteten Angebot (67/67 bestanden). `node abgleich/angebotsaktualitaet.mjs` prüft zusätzlich Eindeutigkeit, sichtbare Datumsübereinstimmung, HTTPS-Ziele und die Pflichtfelder der Behandlungsangebote. Der Fälligkeits-Gegenversuch am 15.04.2027 endet erwartungsgemäss mit zehn Fehlern. `behandlung.html` und `unterstuetzung.html` wurden bei 320, 360 und 1280 CSS-Pixeln geprüft: jeweils fünf sichtbare Prüfdaten, kein horizontaler Überlauf, keine Laufzeit- oder Ressourcenfehler und keine Axe-Verletzung; der Angebotsfilter liefert für «Jugendliche» korrekt einen von fünf Treffern. `--online` prüft die offiziellen Ziele; 404 und 410 blockieren, technische Sperren verlangen eine manuelle Browserprüfung. Die praktische Linkprüfung vom 13.10.2026 ergab zehnmal HTTP 200; Selbsthilfe Schweiz antwortete auf die automatisierte HEAD-Abfrage mit HTTP 403 und bleibt deshalb manuell zu kontrollieren. Vollständiger Prozess: `ANGEBOTSPFLEGE-2026-10-13.md`.
+
+**Aussagegrenze:** Ein erreichbares Linkziel belegt weder einen freien Platz noch die fachliche Eignung im Einzelfall. Reale Nutzendentests und reale assistive Technologien bleiben unverändert ausserhalb dieses Blocks.
+
 - **Bauen und Prüfen sind getrennt.** Die Stufen unten prüft eine Sitzung oder Person, die die Website nicht gebaut hat. Die bauende Sitzung macht nur die Selbstprüfung (unten) und trägt keine Stufe als «erledigt» ein.
 - **Jeder Punkt braucht einen Beleg** (Seite und Abschnitt, Figur, Zitat). Ein Punkt ohne Beleg gilt als nicht geprüft. Ein Gesamturteil ersetzt keine Einzelprüfung.
 - **Kein Merge ohne Prüfbericht.** Ein Pull Request mit einer neuen oder geänderten Website enthält diesen Bericht im aktuellen Stand und verweist in der Beschreibung darauf.
