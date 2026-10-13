@@ -72,6 +72,16 @@ Gehört zur Website in diesem Ordner. Wer den Starter kopiert, übernimmt diese 
 
 **Aussagegrenze:** Ein erreichbares Linkziel belegt weder einen freien Platz noch die fachliche Eignung im Einzelfall. Reale Nutzendentests und reale assistive Technologien bleiben unverändert ausserhalb dieses Blocks.
 
+### Selbstprüfung · globale Vertrauens- und Feedbackwege · 13.10.2026
+
+**Umgesetzt:** Jede der 22 veröffentlichten Seiten enthält in der Fusszeile eine eigene Navigation zu «Über diese Website», «Barrierefreiheit» und «Rückmeldung». Die drei Ziele bleiben kanonisch auf `ueber.html`; der Footer dupliziert weder Erklärungstexte noch Rückmeldehinweise. Reihenfolge, Beschriftung und Ziele stehen zentral in `site.config.json`. Die beiden seitenübergreifenden Sprungziele sind programmatisch fokussierbar.
+
+**Konstruktive Sicherung:** Das Produktions-Gate blockiert fehlende oder leere Konfiguration, unvollständige Einträge, externe oder doppelte Ziele, fehlende Seiten oder Anker sowie eine fehlende oder abweichende Footer-Navigation auf einer einzelnen Seite. Zwei neue Gegenproben erkennen den fehlenden Footer und ein nicht vorhandenes Sprungziel. `node abgleich/footer-vertrauenswege.mjs` meldet 22 Seiten, drei Ziele und null Fehler. Der Gate-Selbsttest besteht mit 71/71 Fällen.
+
+**Browser- und Exportprüfung:** Der Produktions-Export umfasst 22 Seiten, gebündeltes CSS und JavaScript sowie drei lokale Schriftdateien. Chromium prüfte alle 22 Seiten bei 320, 360 und 1280 CSS-Pixeln: jeweils drei sichtbare Footer-Links, Touchziele von mindestens 44 CSS-Pixeln, kein horizontaler Überlauf, keine Axe-Verletzung und keine Laufzeit-, Konsolen- oder Ressourcenfehler. Beide Sprunglinks führen zum sichtbaren Abschnitt und setzen den Tastaturfokus auf `#barrierefreiheit` beziehungsweise `#rueckmeldung`. Alle drei Links sind per Tastatur erreichbar und zeigen einen sichtbaren Fokus. Die bestehende Bedienungsmessung bestätigt auf allen 22 Seiten «Zum Hauptinhalt» als ersten Tabstopp und null Fokusstellen ohne sichtbaren Fokus. Die Fusszeile wurde bei 320 und 1280 CSS-Pixeln zusätzlich visuell geprüft; Hierarchie, Umbruch und Abstand sind ohne Befund.
+
+**Aussagegrenze:** Dies ist eine Selbstprüfung der bauenden Sitzung und keine erneute unabhängige Prüfung. Reale Screenreader-, Hardwaretastatur-, Touch- und Zielgruppentests bleiben gemäss dokumentiertem Entscheid nicht durchgeführt. Vollständiger Plan und Akzeptanzkriterien: `VERTRAUENSWEGE-MASSNAHMENPLAN-2026-10-13.md`.
+
 - **Bauen und Prüfen sind getrennt.** Die Stufen unten prüft eine Sitzung oder Person, die die Website nicht gebaut hat. Die bauende Sitzung macht nur die Selbstprüfung (unten) und trägt keine Stufe als «erledigt» ein.
 - **Jeder Punkt braucht einen Beleg** (Seite und Abschnitt, Figur, Zitat). Ein Punkt ohne Beleg gilt als nicht geprüft. Ein Gesamturteil ersetzt keine Einzelprüfung.
 - **Kein Merge ohne Prüfbericht.** Ein Pull Request mit einer neuen oder geänderten Website enthält diesen Bericht im aktuellen Stand und verweist in der Beschreibung darauf.

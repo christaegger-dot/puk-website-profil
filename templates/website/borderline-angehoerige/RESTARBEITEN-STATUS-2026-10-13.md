@@ -13,6 +13,7 @@ Stand: 13.10.2026
 - verbindliche Matrix für kanonische Inhalte und zulässige Wiederholungen
 - global erreichbare Kurzübersicht «Kurz und klar» für Situationen mit wenig Zeit oder Kraft; ausdrücklich keine geprüfte Fassung in Leichter Sprache
 - sichtbares Prüfdatum für zehn dynamische Beratungs-, Austausch- und Behandlungsangebote; halbjährlicher Pflegeprozess und im Produktions-Gate blockierende Fälligkeitsprüfung
+- globale Footer-Wege zu «Über diese Website», «Barrierefreiheit» und «Rückmeldung» auf allen veröffentlichten Seiten; zentrale Konfiguration, Zielanker- und Vollständigkeitsprüfung im Produktions-Gate
 
 ## Bewusster Institutionsentscheid – nicht als erledigt ausweisen
 

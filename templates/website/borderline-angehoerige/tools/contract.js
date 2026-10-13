@@ -8,7 +8,7 @@
 })(typeof self !== 'undefined' ? self : this, function () {
 'use strict';
 const VERSION = 'PUK Website Kit 1.10.1-r4 · abgeleitet';
-const BUILD = 'r4-14';
+const BUILD = 'r4-15';
 const FORMATS = ['text', 'figure', 'process', 'cycle', 'comparison', 'decision', 'illustration', 'stepwise-model', 'tension-field', 'relationship-map', 'continuum', 'layer-model'];
 /* Interaktive Komponenten und Erklärmuster G brauchen components/interaktion.js (HTML-Fassungen ohne React).
    Prüfbefund W3-01 (11.10.2026): auch jede Seite mit aufklappbarer Vertiefung (details) – das Skript öffnet sie vor dem Druck. */
@@ -181,8 +181,10 @@ function renderPage(cfg, page, content) {
   const senderInstitution = s.displayName ? '' : `<span aria-hidden="true">·</span><span data-sender-institution>${esc(s.institution)}</span>`;
   const contactLabel = s.contactLabel ? `<span class="puk-site-sender__contact">${esc(s.contactLabel)}:</span>` : '<span aria-hidden="true">·</span>';
   const footer = cfg.footer || {};
-  const footerHtml = footer.about || footer.editorialCredit || footer.serviceBoundary || footer.contentDate
-    ? `<section aria-labelledby="puk-site-info-title"><h2 class="puk-web-footer__heading" id="puk-site-info-title">Über diese Website</h2>${footer.about ? `<p class="puk-web-footer__copy">${esc(footer.about)}</p>` : ''}${footer.editorialCredit ? `<p class="puk-web-footer__copy">${esc(footer.editorialCredit)}</p>` : ''}${cfg.disclaimer ? `<p class="puk-web-footer__copy" data-disclaimer>${esc(cfg.disclaimer)}</p>` : ''}${footer.serviceBoundary ? `<p class="puk-web-footer__copy">${esc(footer.serviceBoundary)}</p>` : ''}${footer.contentDate ? `<p class="puk-web-footer__copy">${esc(footer.contentDate)}</p>` : ''}${legalHtml}</section>`
+  const footerLinks = Array.isArray(footer.links) ? footer.links.filter(link => link && link.label && link.href) : [];
+  const footerLinksHtml = footerLinks.length ? `<nav class="puk-site-info-links" aria-label="Informationen zur Website" data-site-info-links><ul role="list">${footerLinks.map(link => `<li><a href="${esc(link.href)}">${esc(link.label)}</a></li>`).join('')}</ul></nav>` : '';
+  const footerHtml = footer.about || footer.editorialCredit || footer.serviceBoundary || footer.contentDate || footerLinks.length
+    ? `<section aria-labelledby="puk-site-info-title"><h2 class="puk-web-footer__heading" id="puk-site-info-title">${esc(footer.heading || 'Über diese Website')}</h2>${footer.about ? `<p class="puk-web-footer__copy">${esc(footer.about)}</p>` : ''}${footer.editorialCredit ? `<p class="puk-web-footer__copy">${esc(footer.editorialCredit)}</p>` : ''}${cfg.disclaimer ? `<p class="puk-web-footer__copy" data-disclaimer>${esc(cfg.disclaimer)}</p>` : ''}${footer.serviceBoundary ? `<p class="puk-web-footer__copy">${esc(footer.serviceBoundary)}</p>` : ''}${footer.contentDate ? `<p class="puk-web-footer__copy">${esc(footer.contentDate)}</p>` : ''}${footerLinksHtml}${legalHtml}</section>`
     : `<section aria-labelledby="puk-site-info-title"><h2 class="puk-web-footer__heading" id="puk-site-info-title">Über diese Seiten</h2>${cfg.disclaimer ? `<p class="puk-web-footer__copy" data-disclaimer>${esc(cfg.disclaimer)}</p>` : ''}<p class="puk-web-footer__copy">Inhaltsverantwortung: ${esc(cfg.contentOwner)}</p><p class="puk-web-footer__copy">${esc(cfg.editorialStatusLabel || `Redaktioneller Status: ${cfg.editorialStatus}`)}</p>${legalHtml}</section>`;
   return `<!DOCTYPE html>
 <html lang="${esc(cfg.language)}" data-puk-site-build="${BUILD}" data-page-id="${esc(page.id)}">
@@ -277,6 +279,23 @@ function gate(cfg, files, opts = {}) {
       if (!e.label) add('block', 'site', 'legal', `legal.${k}.label fehlt`);
       if (isInternal(e.href)) { if (!exists(resolve('', e.href).path)) add('block', 'site', 'legal', `Ziel von legal.${k} fehlt: ${e.href}`); }
       else if (!LEGAL_URL_RE.test(e.href)) add('block', 'site', 'legal', `Ziel von legal.${k} ist keine Seite: ${e.href} – eigene Seite (relativer Pfad) oder https://…`);
+    }
+  }
+  /* Vertrauens- und Feedbackwege: konfigurierte Links müssen lokal, eindeutig und auf jeder Seite im Footer vorhanden sein. */
+  const footerLinks = cfg.footer && cfg.footer.links;
+  if (footerLinks !== undefined) {
+    if (!Array.isArray(footerLinks) || !footerLinks.length) add('block', 'site', 'footer-links', 'footer.links muss mindestens einen Link enthalten');
+    else {
+      const footerHrefs = new Set();
+      for (const link of footerLinks) {
+        if (!link || !link.label || !link.href) { add('block', 'site', 'footer-links', 'Jeder Eintrag in footer.links braucht label und href'); continue; }
+        if (!isInternal(link.href)) add('block', 'site', 'footer-links', 'footer.links darf nur lokale Ziele enthalten: ' + link.href);
+        const target = resolve('', link.href);
+        if (footerHrefs.has(link.href)) add('block', 'site', 'footer-links', 'Doppeltes Ziel in footer.links: ' + link.href);
+        footerHrefs.add(link.href);
+        if (!exists(target.path)) add('block', 'site', 'footer-links', 'Ziel in footer.links fehlt: ' + link.href);
+        else if (target.hash) { const targetDoc = docOf(target.path); if (targetDoc && !byId(targetDoc, target.hash)) add('block', 'site', 'footer-links', 'Sprungziel in footer.links fehlt: ' + link.href); }
+      }
     }
   }
   /* 404-Seite (Prüfbefund W3-08, Pre-Release-Audit R3): Entwurf Hinweis, Produktion blockiert.
@@ -396,6 +415,15 @@ function gate(cfg, files, opts = {}) {
       const lgEl = one(doc, x => has(x, 'data-site-legal'));
       if (!lgEl || !up(lgEl, x => x.tag === 'footer')) add('block', pid, 'legal', 'Links auf Impressum und Datenschutzerklärung fehlen in der Fusszeile');
       else for (const [k] of LEGAL) { const e = cfg.legal[k]; if (e && e.href && !one(lgEl, x => x.tag === 'a' && x.attrs.href === e.href)) add('block', pid, 'legal', `Link auf ${e.href} (legal.${k}) fehlt in der Fusszeile`); }
+    }
+    if (Array.isArray(footerLinks) && footerLinks.length) {
+      const infoNav = one(doc, x => has(x, 'data-site-info-links'));
+      if (!infoNav || !up(infoNav, x => x.tag === 'footer')) add('block', pid, 'footer-links', 'Links zu Website-Informationen fehlen in der Fusszeile');
+      else {
+        const actual = all(infoNav, x => x.tag === 'a').map(a => ({ href: a.attrs.href || '', label: norm(txt(a)) }));
+        const expected = footerLinks.map(link => ({ href: link.href, label: norm(link.label) }));
+        if (JSON.stringify(actual) !== JSON.stringify(expected)) add('block', pid, 'footer-links', 'Footer-Links weichen von site.config.json › footer.links ab');
+      }
     }
     const navEl = one(doc, x => x.tag === 'nav' && x.attrs['aria-label'] === 'Hauptnavigation');
     if (!navEl) add('block', pid, 'nav', 'Hauptnavigation fehlt');
@@ -580,6 +608,8 @@ const MUTATIONS = [
   ['Mehr als sechs Hauptpunkte ohne Menü', ['nav-menu'], (c, f) => rep(f, 'index.html', '\n</ul></nav>', '\n<li><a class="puk-web-nav__link" href="index.html">A</a></li><li><a class="puk-web-nav__link" href="index.html">B</a></li><li><a class="puk-web-nav__link" href="index.html">C</a></li>\n</ul></nav>')],
   ['Impressum und Datenschutzerklärung fehlen', ['legal'], c => { if (!c.legal) return false; delete c.legal; }],
   ['Link auf das Impressum fehlt in der Fusszeile', ['legal'], (c, f) => rex(f, 'behandlung-verstehen.html', /<p class="puk-web-footer__copy puk-site-legal" data-site-legal>[\s\S]*?<\/p>/, '')],
+  ['Konfigurierte Website-Informationen fehlen in der Fusszeile', ['footer-links'], c => { c.footer = Object.assign({}, c.footer, { links: [{ label: 'Über diese Website', href: 'index.html' }] }); }],
+  ['Footer-Link verweist auf ein fehlendes Sprungziel', ['footer-links'], c => { c.footer = Object.assign({}, c.footer, { links: [{ label: 'Fehlendes Ziel', href: 'index.html#fehlt' }] }); }],
   ['404-Seite fehlt', ['not-found'], c => { const n = c.pages.length; c.pages = c.pages.filter(p => !isNotFound(p)); return c.pages.length < n; }],
   ['404-Seite in der Navigation', ['not-found'], c => { const p = c.pages.find(isNotFound); if (!p) return false; p.navLabel = 'Seite fehlt'; }],
   /* Code-Review 11.10.2026 (Pull Request zu 2026.10.1) */
