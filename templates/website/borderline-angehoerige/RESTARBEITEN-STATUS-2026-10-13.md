@@ -2,6 +2,8 @@
 
 Stand: 13.10.2026
 
+> **Archivierter Status:** Die aktuelle operative Übersicht liegt im Repository `christaegger-dot/borderline-angehoerige` unter `PENDENZEN-UND-ENTSCHEIDE-2026-10-13.md`.
+
 ## Umgesetzt
 
 - globale, von jeder Inhaltsseite erreichbare Website-Suche
@@ -37,7 +39,7 @@ Die Fachstelle hat am 13.10.2026 entschieden, dass die vorgeschlagene Stichprobe
 
 Stattdessen wurde das in `ZERO-PARTICIPANT-AUDIT-2026-10-13.md` dokumentierte Aufgaben-, Such-, Kohärenz-, Inhalts- und technische Audit umgesetzt. Es reduziert bekannte Risiken, belegt aber keine tatsächliche Verständlichkeit oder Wirkung.
 
-Die in `REALE-TESTS-AR3-3.md` beschriebenen Prüfungen sind damit nicht erledigt und derzeit nicht vorgesehen:
+Die in `REALE-TESTS-AR3-3.md` beschriebenen Prüfungen sind damit materiell nicht erfüllt, aber organisatorisch abgeschlossen. Die frühere Frist vom 13.01.2027 ist aufgehoben; eine neue operative Pendenz entsteht nur durch einen neuen Institutionsentscheid:
 
 - NVDA mit Firefox
 - VoiceOver mit Safari
