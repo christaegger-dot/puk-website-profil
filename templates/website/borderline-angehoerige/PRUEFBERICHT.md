@@ -4,7 +4,9 @@ Gehört zur Website in diesem Ordner. Wer den Starter kopiert, übernimmt diese 
 
 **Regeln**
 
-> **Änderungsrunde IA 13.10.2026 – Veröffentlichung gesperrt.** Die unten dokumentierten abgeschlossenen Prüfungen beziehen sich auf den bisherigen Release-Stand. Die neue Informationsarchitektur, der institutionelle Absender, das geänderte Impressum, die Suchmaschinen-Sperre und die redaktionellen Kürzungen müssen unabhängig nachgeprüft werden. Zusätzlich muss die PUK ihre organisatorische Verantwortung als Anbieterin formell bestätigen. Bis beide Punkte dokumentiert sind, stehen `releaseApproval.independentReview` und `releaseApproval.institutionalResponsibility` in `site.config.json` auf `ausstehend`; das Produktionsgate blockiert.
+> **Änderungsrunde IA 13.10.2026 – Veröffentlichung gesperrt.** Die unten dokumentierten abgeschlossenen Prüfungen beziehen sich auf den bisherigen Release-Stand. Die neue Informationsarchitektur, der institutionelle Absender, das geänderte Impressum, die Suchmaschinen-Sperre und die redaktionellen Kürzungen müssen unabhängig nachgeprüft werden. Die organisatorische Verantwortung der PUK als Anbieterin ist inzwischen bestätigt; offen bleibt die unabhängige Prüfung. Solange `releaseApproval.independentReview` in `site.config.json` auf `ausstehend` steht, blockiert das Produktionsgate.
+
+**Institutionelle Bestätigung:** Die organisatorische Verantwortung der PUK als Anbieterin wurde am 13.10.2026 durch die auftraggebende, für die PUK handelnde Person ausdrücklich bestätigt. `releaseApproval.institutionalResponsibility` steht deshalb auf `bestaetigt`. Die unabhängige Prüfung der Änderungsrunde bleibt offen.
 
 ### Selbstprüfung der bauenden Sitzung · Änderungsrunde IA 13.10.2026
 
