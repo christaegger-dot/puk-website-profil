@@ -1,5 +1,5 @@
 // Browser-Gegenprobe für direkte Abschnittslinks. Braucht Playwright mit Chromium
-// und einen lokalen Server im Projektstamm.
+// und einen lokalen Server im Projektstamm oder die öffentliche Zieladresse.
 //
 //   python3 -m http.server 8765
 //   PW_CHROMIUM=/usr/bin/chromium node abgleich/sprungziele-browser.mjs
@@ -9,7 +9,11 @@ let chromium;
 try { ({ chromium } = require('playwright')); } catch { console.error('Playwright fehlt (npm i -g playwright oder NODE_PATH setzen).'); process.exit(2); }
 
 const BASE = (process.argv[2] || 'http://localhost:8765/templates/website/borderline-angehoerige/').replace(/\/?$/, '/');
-const formerlyStatic = new Set(['index.html', 'kurz.html', 'unterstuetzung.html', 'ueber.html', 'impressum-datenschutz.html']);
+const formerlyStatic = new Set(['index', 'kurz', 'unterstuetzung', 'ueber', 'impressum-datenschutz']);
+const pageId = href => {
+  const pathname = new URL(href, BASE).pathname.replace(/\/+$/, '');
+  return (pathname.split('/').pop() || 'index').replace(/\.html$/, '');
+};
 const browser = await chromium.launch(process.env.PW_CHROMIUM ? { executablePath: process.env.PW_CHROMIUM } : {});
 
 const discover = await browser.newPage();
@@ -72,7 +76,9 @@ async function run(width, selected, label, options = {}) {
   return failures.length;
 }
 
-const mobileTargets = targets.filter(href => formerlyStatic.has(href.split('#')[0]));
+/* Netlify Pretty URLs schreibt zum Beispiel kurz.html#jetzt-title zu
+   /kurz#jetzt-title um. Die Gegenprobe muss beide Formen gleich behandeln. */
+const mobileTargets = targets.filter(href => formerlyStatic.has(pageId(href)));
 let failures = 0;
 failures += await run(1280, targets, 'vollständiger Suchindex bei 1280 CSS-Pixeln');
 failures += await run(360, mobileTargets, 'früher nicht fokussierbare Ziele bei 360 CSS-Pixeln');
