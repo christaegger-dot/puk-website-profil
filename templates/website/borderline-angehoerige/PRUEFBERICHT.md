@@ -46,6 +46,16 @@ Gehört zur Website in diesem Ordner. Wer den Starter kopiert, übernimmt diese 
 
 **Abdeckungsgrenze:** Reale Tests mit Angehörigen, NVDA/Firefox, VoiceOver/Safari, Hardwaretastatur, Touch und Windows-Kontrastmodus wurden nicht simuliert. Sie bleiben als reale Auflage in `REALE-TESTS-AR3-3.md`. Ein globaler Krisenblock oder eine Krisennummer wurde nicht ergänzt, weil das verbindliche Website-Profil dies für dieses psychoedukative Angebot ausdrücklich ausschliesst; die Zuständigkeitsgrenze und der Schutzverweis bleiben unverändert sichtbar.
 
+### Selbstprüfung · Zero-Participant-Audit und Umsetzung · 13.10.2026
+
+**Entscheid zur Methode:** Eine Stichprobe mit realen Teilnehmenden wird gemäss Entscheid der Auftraggeberin nicht durchgeführt. Der Ersatz ist ein dokumentiertes adversariales Aufgaben-, Such-, Kohärenz-, Inhalts- und technisches Audit. Es belegt keine tatsächliche Verständlichkeit, emotionale Wirkung oder Wirksamkeit bei belasteten Menschen.
+
+**Umgesetzt:** Die Startseite trennt unmittelbare Handlungsanliegen von Wissensaufgaben; Zielgruppe und Angebotsumfang sind Borderline-spezifisch geklärt. Eine lokale Abschnittssuche führt mit eigenen Wörtern zu Seiten, Abschnitten und Glossarbegriffen, ohne Eingaben zu übertragen oder zu speichern. Suche, Glossar und Quellen bilden konsistent den Bereich «Fragen und Nachschlagen». Informationen zu mitbetroffenen Kindern sind auf einer eigenen kanonischen Seite zusammengeführt; Rolle, Grenzen, Krise und FAQ verweisen mit dem jeweils nötigen Kontext dorthin. Ein verbindliches Begriffssystem und die Inhaltsverantwortungsmatrix dokumentieren die redaktionellen Regeln.
+
+**Nachweise:** Produktionsbuild und Produktionsgate 0 blockierende Befunde; Gate-Selbsttest 65/65; Satzabgleich 7’412/7’412; Nutzerwege 8/8 und 20/20 Inhaltsseiten erreichbar; Zero-Participant-Suche 25/25 Szenarien und 175/175 lokale Suchziele; Bedienungsmessung aller 21 Seiten mit sichtbarem Fokus; gezielte Chromium-Prüfung 13/13 bei 360 und 1280 CSS-Pixeln. Der einzige Gate-Hinweis betrifft die bekannte bibliografische Seitenzahl `144`, keine Krisennummer.
+
+**Vollständiger Befund und Grenzen:** `ZERO-PARTICIPANT-AUDIT-2026-10-13.md`.
+
 - **Bauen und Prüfen sind getrennt.** Die Stufen unten prüft eine Sitzung oder Person, die die Website nicht gebaut hat. Die bauende Sitzung macht nur die Selbstprüfung (unten) und trägt keine Stufe als «erledigt» ein.
 - **Jeder Punkt braucht einen Beleg** (Seite und Abschnitt, Figur, Zitat). Ein Punkt ohne Beleg gilt als nicht geprüft. Ein Gesamturteil ersetzt keine Einzelprüfung.
 - **Kein Merge ohne Prüfbericht.** Ein Pull Request mit einer neuen oder geänderten Website enthält diesen Bericht im aktuellen Stand und verweist in der Beschreibung darauf.

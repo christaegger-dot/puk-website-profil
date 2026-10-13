@@ -1,8 +1,8 @@
 {
-  "$comment": "Borderline – Orientierung für Angehörige · Seitenvertrag, kopiert aus dem Psychoedukations-Starter (Build r4-3, Profil-Update 09.10.2026 übernommen: Build r4-4; Profil-Update 10.10.2026 übernommen: Build r4-6; Gate-Korrektur 10.10.2026 übernommen: Build r4-7; Profil 2026.10.1 übernommen in Etappe 3-1: Build r4-8, legal, 404-Seite, siteUrl). 19 Inhaltsseiten plus 404-Seite; seit den IA-Restarbeiten zusätzlich Glossar, Bücher und Website-Suche als eigene Seiten. Pflichtfelder und Regeln: README.md. Nach jeder Änderung: node tools/build.mjs, danach node tools/gate.mjs bzw. node tools/gate.mjs --production.",
+  "$comment": "Borderline – Orientierung für Angehörige · Seitenvertrag, kopiert aus dem Psychoedukations-Starter (Build r4-3, Profil-Update 09.10.2026 übernommen: Build r4-4; Profil-Update 10.10.2026 übernommen: Build r4-6; Gate-Korrektur 10.10.2026 übernommen: Build r4-7; Profil 2026.10.1 übernommen in Etappe 3-1: Build r4-8, legal, 404-Seite, siteUrl). 20 Inhaltsseiten plus 404-Seite; seit dem Zero-Participant-Audit zusätzlich eine kanonische Seite für mitbetroffene Kinder und eine lokale Abschnittssuche. Pflichtfelder und Regeln: README.md. Nach jeder Änderung: node tools/build.mjs, danach node tools/gate.mjs bzw. node tools/gate.mjs --production.",
   "kitRevision": "PUK Website Kit 1.10.1-r4 · abgeleitet",
   "canonicalSource": "PUK Zürich Design System 1.10.1 (unverändert)",
-  "assetVersion": "r4-10",
+  "assetVersion": "r4-11",
   "siteTitle": "Borderline – Orientierung für Angehörige",
   "shortDescription": "Psychoedukative Website der Fachstelle Angehörigenarbeit PUK für Angehörige von Menschen mit Borderline.",
   "language": "de-CH",
@@ -87,6 +87,18 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: gleichwertige Einstiege ohne feste Reihenfolge («die Reihenfolge ist ein Angebot»), formuliert als Anliegen der Lesenden (Korrektur W2-6, 09.10.2026); eine Darstellung würde nur Links in Kästen verteilen. Ersetzt Selbsttest und Wegweiser des Bestands («sichtbar vor versteckt»).",
+          "approvalStatus": "freigegeben"
+        },
+        {
+          "id": "v-ix-orientierung",
+          "section": "Verstehen und finden",
+          "sectionId": "orientierung",
+          "goal": "Eine passende Wissens- oder Nachschlageseite wählen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Getrennte zweite Einstiegsebene für Verstehen, Diagnose, Beziehungen, Behandlung, Genesung und Nachschlagen; dadurch konkurrieren Wissensaufgaben nicht mit unmittelbar handlungsbezogenen Anliegen.",
           "approvalStatus": "freigegeben"
         },
         {
@@ -237,13 +249,13 @@
     },
     {
       "id": "beziehungen",
-      "title": "Was zwischen Ihnen geschieht",
+      "title": "Alltag und Beziehungen",
       "href": "beziehungen.html",
       "navLabel": "Alltag und Beziehungen",
       "groupRootId": "beziehungen",
       "status": "published",
       "primaryTask": "Wechselwirkungen in der Beziehung erkennen und einordnen, ohne Schuld zu verteilen",
-      "description": "Die Bedeutungsschleife an einem Beispiel, zwei Sichten auf dieselbe Situation und was Verbindung tragfähiger machen kann – ohne Motive zu unterstellen.",
+      "description": "Alltag und Beziehungen: Bedeutungsschleife, zwei Sichten auf dieselbe Situation und was Verbindung tragfähiger machen kann – ohne Motive zu unterstellen.",
       "sensitiveTopics": [
         "selbstgefaehrdung",
         "gewalt",
@@ -428,12 +440,12 @@
           "id": "v-ro-kinder",
           "section": "06 Kinder",
           "sectionId": "kinder",
-          "goal": "Kinder altersgerecht informieren und entlasten",
+          "goal": "Verantwortung der Erwachsenen benennen und zur kanonischen Kinderseite führen",
           "format": "text",
           "statement": "–",
           "source": "–",
           "alternative": "–",
-          "reason": "Text ist klarer: Beispielsätze für Kinder und konkrete Fragen zur Betreuung. Was Kinder nicht übernehmen müssen und was bei akuter Gefahr gilt, steht im Abschnitt selbst (Entscheid P2a-F-2); bei Gewalt oder Bedrohung verweist er auf `grenzen` (`gewalt`), für Bücher für Kinder auf `unterstuetzung` (`buecher`; Freigabe 2c und 3-1, P2c-F-16).",
+          "reason": "Kurzer Kontextsatz im Rollenthema; Erklärung, Betreuung, Eskalation und Hilfe werden auf der kanonischen Seite `kinder` vollständig gepflegt.",
           "approvalStatus": "freigegeben"
         },
         {
@@ -940,6 +952,17 @@
       "status": "published",
       "primaryTask": "Sich in Krisen schützen, passende Hilfe holen und die eigenen Möglichkeiten kennen",
       "description": "Wenn Belastung zunimmt, während einer Krise, was Sie sagen können, Suizidgedanken ansprechen, was Sie vermeiden sollten, nach der Krise und wenn Belastung oder Gefahr bleibt.",
+      "searchAliases": [
+        "Notfall Polizei Lebensgefahr unmittelbare Gefahr akute Hilfe Suizid Selbstmord Selbsttötung Selbstverletzung Drohung Krise Eskalation"
+      ],
+      "sectionSearchAliases": {
+        "krise-schnell": [
+          "Notfall Polizei Lebensgefahr unmittelbare Gefahr akute Hilfe"
+        ],
+        "suizid-title": [
+          "Suizid Selbstmord Selbsttötung Selbstverletzung"
+        ]
+      },
       "sensitiveTopics": [
         "akute-krise",
         "selbstgefaehrdung",
@@ -1027,7 +1050,7 @@
           "statement": "–",
           "source": "–",
           "alternative": "–",
-          "reason": "Text ist klarer: vier Hinweise als Liste, Handlungsanleitung mit Verweis im Text. Krisenbezogene Sätze zu Kindern stehen sichtbar im Wortlaut von `grenzen`; Erklären und Betreuungsplan sind auf `rolle#kinder` verlinkt.",
+          "reason": "Text ist klarer: vier Hinweise als Liste und Handlungsanleitung mit Verweis im Text. Für Kinder bleibt der unmittelbar nötige Schutzsatz sichtbar; Erklärung, Betreuungsplan und weitere Unterstützung stehen kanonisch auf `kinder`.",
           "approvalStatus": "freigegeben"
         },
         {
@@ -1040,6 +1063,102 @@
           "source": "–",
           "alternative": "–",
           "reason": "Text ist klarer: Quellenliste des Profils (ul.puk-longform__sources) als letzter Abschnitt, jede Quelle einmal mit «Verwendet in», in einem Akkordeon mit dem Eintrag «Quellen zu dieser Seite», ohne Skript offen und im Druck vollständig; nicht in der Kapitelübersicht (Entscheid der Fachstelle 11.10.2026, Korrektur 2b-2, Abschnitt 4).",
+          "approvalStatus": "freigegeben"
+        }
+      ]
+    },
+    {
+      "id": "kinder",
+      "title": "Wenn Kinder mitbetroffen sind",
+      "href": "kinder.html",
+      "navLabel": null,
+      "groupRootId": "beziehungen",
+      "status": "published",
+      "primaryTask": "Kindern psychische Belastung verständlich erklären, Betreuung organisieren und sie bei Eskalation oder Gefahr schützen",
+      "description": "Orientierung für Angehörige, wenn Kinder psychische Belastung oder Konflikte miterleben: erklären, Alltag und Betreuung organisieren, bei Eskalation schützen und Unterstützung finden.",
+      "searchAliases": [
+        "Kind Kinder Jugendliche Tochter Sohn Geschwister Eltern Familie Betreuung Kindesschutz Kindeswohl KESB Meldepflicht schulpsychologischer Dienst Mütterberatung Väterberatung"
+      ],
+      "sectionSearchAliases": {
+        "eskalation-title": [
+          "Meldung Gefährdungsmeldung KESB Meldepflicht Gewalt Notfall akute Gefahr"
+        ]
+      },
+      "sensitiveTopics": [
+        "gewalt",
+        "akute-krise"
+      ],
+      "visualPlan": [
+        {
+          "id": "v-ki-schnell",
+          "section": "Nächste Schritte",
+          "sectionId": "schnell",
+          "goal": "Die drei unmittelbar wichtigsten Schritte kennen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Kurze geordnete Liste: entlastende Erklärung, Betreuung und Schutz lassen sich ohne zusätzliche Darstellung erfassen.",
+          "approvalStatus": "freigegeben"
+        },
+        {
+          "id": "v-ki-erklaeren",
+          "section": "01 Erklären",
+          "sectionId": "erklaeren",
+          "goal": "Kindern die Situation altersgerecht erklären, ohne ihnen Verantwortung zu übertragen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Beispielsätze und zwei Altersgruppen sind als Text eindeutiger als eine Darstellung.",
+          "approvalStatus": "freigegeben"
+        },
+        {
+          "id": "v-ki-alltag",
+          "section": "02 Alltag und Betreuung",
+          "sectionId": "alltag",
+          "goal": "Eine konkrete Betreuungskette vorbereiten",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Checkliste der zu klärenden Angaben; keine feste Reihenfolge oder Beziehung, die eine Grafik erklären müsste.",
+          "approvalStatus": "freigegeben"
+        },
+        {
+          "id": "v-ki-eskalation",
+          "section": "03 Schutz",
+          "sectionId": "eskalation",
+          "goal": "Alltagsbelastung, wiederholte Eskalation und akute Gefahr unterscheiden und Schutz vorziehen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Die drei Situationen werden sprachlich abgegrenzt; keine Ampel oder Skala, weil daraus keine Sicherheitsbewertung entstehen darf.",
+          "approvalStatus": "freigegeben"
+        },
+        {
+          "id": "v-ki-hilfe",
+          "section": "04 Unterstützung",
+          "sectionId": "hilfe",
+          "goal": "Mögliche Unterstützung für das Kind und für Angehörige kennen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Kurze Liste möglicher fachlicher Zugänge und zwei direkte Übergänge.",
+          "approvalStatus": "freigegeben"
+        },
+        {
+          "id": "v-ki-quellen",
+          "section": "Quellen",
+          "sectionId": "quellen",
+          "goal": "Quellen zu Erklärung, Betreuung und Kindesschutz nachvollziehen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Kurze Quellenliste mit Angabe der verwendeten Abschnitte.",
           "approvalStatus": "freigegeben"
         }
       ]
@@ -1356,13 +1475,24 @@
     },
     {
       "id": "fragen",
-      "title": "Häufige Fragen",
+      "title": "Fragen und Nachschlagen",
       "href": "fragen.html",
-      "navLabel": "Häufige Fragen",
+      "navLabel": "Fragen & Nachschlagen",
       "groupRootId": "fragen",
       "status": "published",
       "primaryTask": "Eine kurze Antwort auf eine häufige Frage finden und zur ausführlichen Stelle weitergehen",
-      "description": "Kurze Antworten auf häufige Fragen von Angehörigen zu Diagnose, Ursachen und Verlauf, Gesprächen, Behandlung, Schutz und dem eigenen Leben, meist mit Verweis auf die ausführliche Seite.",
+      "description": "Kurze Antworten auf häufige Fragen sowie Einstiege in Website-Suche, verständliche Begriffserklärungen und Quellen.",
+      "searchAliases": [
+        "Einweisung fürsorgerische Unterbringung FU Medikamente Heilung erblich Schuld Trennung Eifersucht Dolmetschen Übersetzung"
+      ],
+      "sectionSearchAliases": {
+        "f-einweisung": [
+          "Einweisung fürsorgerische Unterbringung FU"
+        ],
+        "f-sprache": [
+          "Dolmetschen Dolmetscher Übersetzung andere Sprache"
+        ]
+      },
       "sensitiveTopics": [
         "selbstgefaehrdung",
         "gewalt",
@@ -1370,6 +1500,18 @@
         "akute-krise"
       ],
       "visualPlan": [
+        {
+          "id": "v-fr-nachschlagen",
+          "section": "Nachschlagen",
+          "sectionId": "nachschlagen",
+          "goal": "Zwischen Suche, Begriffserklärung und Quellen wählen",
+          "format": "text",
+          "statement": "–",
+          "source": "–",
+          "alternative": "–",
+          "reason": "Drei klar benannte Zugänge als kurze Linkliste; keine Darstellung nötig.",
+          "approvalStatus": "freigegeben"
+        },
         {
           "id": "v-fr-diagnose",
           "section": "01 Diagnose",
@@ -1617,10 +1759,9 @@
       "href": "suche.html",
       "navLabel": null,
       "groupRootId": "fragen",
-      "showInSectionNav": false,
       "status": "published",
-      "primaryTask": "Eine passende Themenseite mit eigenen Suchwörtern finden",
-      "description": "Alle Themenseiten der Orientierungshilfe nach Stichwörtern durchsuchen.",
+      "primaryTask": "Mit eigenen Suchwörtern einen passenden Abschnitt oder eine Themenseite finden",
+      "description": "Seiten und Abschnitte der Orientierungshilfe lokal nach eigenen Suchwörtern und alternativen Begriffen durchsuchen.",
       "sensitiveTopics": [
         "selbstgefaehrdung",
         "gewalt",
@@ -1636,7 +1777,7 @@
           "statement": "–",
           "source": "–",
           "alternative": "–",
-          "reason": "Eine filterbare Liste ist für die kleine statische Website direkter als eine separate Suchergebnisseite. Ohne JavaScript bleiben alle Seiten sichtbar.",
+          "reason": "Eine lokale Abschnittssuche führt möglichst direkt zur Fundstelle. Ohne JavaScript bleibt ein vollständiges Verzeichnis der Themenseiten sichtbar; Eingaben werden nicht übertragen oder gespeichert.",
           "approvalStatus": "freigegeben"
         }
       ]

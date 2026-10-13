@@ -24,13 +24,19 @@ const C = createRequire(import.meta.url)(join(SITE, 'tools/contract.js'));
 const cfg = JSON.parse(readFileSync(join(SITE, 'site.config.json'), 'utf8'));
 const PAGES = ['index', 'verstehen', 'beziehungen', 'grenzen', 'rolle', 'selbstfuersorge', 'kommunizieren', 'krise', 'genesung', 'unterstuetzung', 'diagnose', 'behandlung', 'fragen', 'quellen', 'ueber'];
 // Etappe 3-1: Impressum und Datenschutz stehen auf einer eigenen Seite (Profilentscheid 11.10.2026); ihre Zeilen stehen in ueber.md.
-const BUILT = [...PAGES, 'begriffe', 'buecher', 'impressum-datenschutz'];
-// IA-Restarbeiten 13.10.2026: Diese zwei Abschnitte wurden als ganze Aufgabe neu
-// strukturiert (Kontaktablauf bzw. filterbare Angebotsdaten). Die historischen
+const BUILT = [...PAGES, 'begriffe', 'buecher', 'kinder', 'impressum-datenschutz'];
+// IA-Restarbeiten und Zero-Participant-Audit 13.10.2026: Diese Abschnitte wurden als ganze Aufgabe neu
+// strukturiert (Kontaktablauf, filterbare Angebotsdaten, aufgabenbezogene Startseite
+// sowie die Zusammenführung der Kinderinformationen auf einer kanonischen Seite). Die historischen
 // Satzfassungen bleiben in den Tabellen dokumentiert, werden aber nicht mehr
 // wörtlich gegen den neuen Abschnitt geprüft. Ort und Abschnitt müssen weiter
-// existieren; die neue Fassung ist in RESTARBEITEN-STATUS-2026-10-13.md belegt.
-const RESTRUCTURED = new Set(['unterstuetzung#beratung', 'behandlung#angebote']);
+// existieren; die neue Fassung ist in den Status- und Auditdokumenten belegt.
+const RESTRUCTURED = new Set([
+  'unterstuetzung#beratung', 'behandlung#angebote',
+  'index#kopf', 'index#einstiege', 'index#haltung',
+  'rolle#kinder', 'grenzen#gewalt', 'krise#bleibt',
+  'fragen#kopf', 'fragen#schutz'
+]);
 const SOURCES = {
   index: ['startseite.md', 'selbsttest.md', 'wegweiser.md'],
   verstehen: ['verstehen.md', ...['eisberg', 'alarm-modus', 'gehirn', 'zustands-landkarte', 'spaltung', 'anspannungskurve'].map(h => `materialien--text--${h}.md`)],
