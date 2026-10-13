@@ -4,6 +4,16 @@ Gehört zur Website in diesem Ordner. Wer den Starter kopiert, übernimmt diese 
 
 **Regeln**
 
+> **Änderungsrunde IA 13.10.2026 – Veröffentlichung gesperrt.** Die unten dokumentierten abgeschlossenen Prüfungen beziehen sich auf den bisherigen Release-Stand. Die neue Informationsarchitektur, der institutionelle Absender, das geänderte Impressum, die Suchmaschinen-Sperre und die redaktionellen Kürzungen müssen unabhängig nachgeprüft werden. Zusätzlich muss die PUK ihre organisatorische Verantwortung als Anbieterin formell bestätigen. Bis beide Punkte dokumentiert sind, stehen `releaseApproval.independentReview` und `releaseApproval.institutionalResponsibility` in `site.config.json` auf `ausstehend`; das Produktionsgate blockiert.
+
+### Selbstprüfung der bauenden Sitzung · Änderungsrunde IA 13.10.2026
+
+**Umgesetzt:** sechs verständliche Hauptbereiche; Bereichsmarkierung, Brotkrümel und Anschlussnavigation; institutioneller Absender; Startseiten- und Impressumswortlaut; konsolidierte Beratungsinformationen auf `unterstuetzung`; FAQ als native Aufklappbereiche (sicherheitsrelevante Antworten bleiben sichtbar); Buchauswahl als optionale Vertiefung; handlungsorientierte Direkteinstiege auf `kommunizieren`, `krise` und `selbstfuersorge`; `noindex, nofollow` in HTML und HTTP-Header, vollständige Sperre in `robots.txt`, keine Sitemap.
+
+**Technische Selbstprüfung:** `node tools/build.mjs` schreibt 17 Seiten mit 0 blockierenden Befunden; `node tools/gate.mjs --selftest` besteht 65/65 Prüfungen; Draft-Export vollständig. Automatisierte Browserprüfung: 17 Seiten × 4 Darstellungen (1440 px, 390 px, 320 px und 200 % Schrift), 68 Läufe ohne Axe-Befund, Laufzeitfehler oder horizontalen Überlauf. FAQ-Direktlink zeigt die zugehörige Antwort; Aufklappen per Klick funktioniert. Interne Ziele im geprüften FAQ-Nutzungsweg antworten ohne Fehler.
+
+**Bewusst offen:** Das Produktionsgate blockiert mit `institutional-approval` und `change-review`. Die bekannte Zahl `144` in einer bibliografischen Quellenangabe erzeugt weiterhin nur den bereits dokumentierten Hinweis `crisis-number-check`; sie ist kein Notfallkontakt und kein `tel:`-Link.
+
 - **Bauen und Prüfen sind getrennt.** Die Stufen unten prüft eine Sitzung oder Person, die die Website nicht gebaut hat. Die bauende Sitzung macht nur die Selbstprüfung (unten) und trägt keine Stufe als «erledigt» ein.
 - **Jeder Punkt braucht einen Beleg** (Seite und Abschnitt, Figur, Zitat). Ein Punkt ohne Beleg gilt als nicht geprüft. Ein Gesamturteil ersetzt keine Einzelprüfung.
 - **Kein Merge ohne Prüfbericht.** Ein Pull Request mit einer neuen oder geänderten Website enthält diesen Bericht im aktuellen Stand und verweist in der Beschreibung darauf.

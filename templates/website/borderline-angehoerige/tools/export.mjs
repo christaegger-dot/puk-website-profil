@@ -1,11 +1,11 @@
 // PUK Website-Profil – Export des Psychoedukations-Starters als eigenständige, veröffentlichbare Website (Node ≥ 18, ohne Abhängigkeiten).
 // Aufruf im Ordner psychoeducation-site-starter:  node tools/export.mjs <zielordner> [--production]
 // Baut die Seiten, prüft sie mit dem Gate und schreibt nur, was veröffentlicht wird: veröffentlichte Seiten, assets/,
-// eine zusammengeführte css/site.css (mit lokalen Schriften), js/interaktion.js (falls gebraucht), _headers und sitemap.xml.
+// eine zusammengeführte css/site.css (mit lokalen Schriften), js/interaktion.js (falls gebraucht), _headers und robots.txt.
 // Keine Projektquellen, kein site.config.json, keine Entwürfe. Nur Schriften, die die Website nennt (Prüfbefund 11.10.2026):
 // @font-face-Regeln einer Familie, die weder im wirksamen --font-core noch in einer font-family-Angabe vorkommt, entfallen samt Datei.
 // Die 404-Seite (role «not-found») erhält Pfade ab dem Stamm der Website, weil der Server sie unter jeder fehlenden Adresse ausliefert.
-import { readFile, writeFile, mkdir, copyFile, readdir, stat } from 'node:fs/promises';
+import { readFile, writeFile, mkdir, copyFile, readdir, stat, rm } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import { createRequire } from 'node:module';
 import { fileURLToPath } from 'node:url';
@@ -79,11 +79,12 @@ for (const p of published) {
 }
 if (needsJs) { await mkdir(join(out, 'js'), { recursive: true }); await copyFile(presolve(dir, cfg.interactionScript), join(out, 'js', 'interaktion.js')); }
 
-/* 4 · Assets, Sicherheits-Header, Sitemap */
+/* 4 · Assets, Sicherheits-Header, Robots-Sperre und – nur bei indexierbaren Websites – Sitemap */
 async function copyDir(a, b) { await mkdir(b, { recursive: true }); for (const e of await readdir(a)) { const s = join(a, e), t = join(b, e); if ((await stat(s)).isDirectory()) await copyDir(s, t); else await copyFile(s, t); } }
 if (existsSync(join(dir, 'assets'))) await copyDir(join(dir, 'assets'), join(out, 'assets'));
 if (existsSync(join(dir, '_headers'))) await copyFile(join(dir, '_headers'), join(out, '_headers'));
-if (cfg.siteUrl) { const base = cfg.siteUrl.replace(/\/$/, ''); await writeFile(join(out, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${published.filter(p => p.role !== 'not-found').map(p => `  <url><loc>${base}/${C.resolve('', p.href).path}</loc></url>`).join('\n')}\n</urlset>\n`); }
+if (existsSync(join(dir, 'robots.txt'))) await copyFile(join(dir, 'robots.txt'), join(out, 'robots.txt'));
+if (cfg.siteUrl && !/\bnoindex\b/i.test(cfg.robots || '')) { const base = cfg.siteUrl.replace(/\/$/, ''); await writeFile(join(out, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${published.filter(p => p.role !== 'not-found').map(p => `  <url><loc>${base}/${C.resolve('', p.href).path}</loc></url>`).join('\n')}\n</urlset>\n`); } else await rm(join(out, 'sitemap.xml'), { force: true });
 
 /* 5 · Kontrolle: jede lokale Referenz existiert */
 let missing = 0;

@@ -2,7 +2,7 @@
 // Erzeugt jede Seite aus site.config.json + content/<id>.html. Navigation, lang, title, Meta, Favicon, Skip-Link,
 // Absenderin und Zuständigkeitsverweis entstehen nur aus dem Vertrag. Danach läuft das Gate; blockierende Befunde → Exit 1.
 // Aufruf im Ordner psychoeducation-site-starter:  node tools/build.mjs [--production]
-import { readFile, writeFile } from 'node:fs/promises';
+import { readFile, writeFile, rm } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import { createRequire } from 'node:module';
 import { fileURLToPath } from 'node:url';
@@ -26,9 +26,9 @@ const r = C.gate(cfg, files, { mode, exists: p => p in files || existsSync(join(
 for (const f of r.findings) console.log(`${f.level.toUpperCase().padEnd(5)} ${f.page.padEnd(24)} ${f.id.padEnd(22)} ${f.msg}`);
 if (r.blocks) { console.error(`\nBuild nicht geschrieben: ${r.blocks} blockierende Befunde (${mode}).`); process.exit(1); }
 for (const [path, html] of Object.entries(files)) await writeFile(join(dir, path), html);
-if (cfg.siteUrl) {
+if (cfg.siteUrl && !/\bnoindex\b/i.test(cfg.robots || '')) {
   const base = cfg.siteUrl.replace(/\/$/, '');
   const urls = cfg.pages.filter(p => p.status === 'published' && p.href && p.role !== 'not-found').map(p => `  <url><loc>${base}/${C.resolve('', p.href).path}</loc></url>`);
   await writeFile(join(dir, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.join('\n')}\n</urlset>\n`);
-}
+} else await rm(join(dir, 'sitemap.xml'), { force: true });
 console.log(`\n${Object.keys(files).length} Seiten geschrieben · ${C.VERSION} · Build ${C.BUILD} · Gate ${mode}: 0 blockierend, ${r.warns} Hinweise.`);
