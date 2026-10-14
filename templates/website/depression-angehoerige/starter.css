@@ -59,3 +59,7 @@
 
 /* Impressum und Datenschutzerklärung in der Fusszeile (Prüfbefund W3-05, site.config.json › legal) */
 .puk-site-legal a{display:inline-block;max-width:100%;min-height:var(--web-touch-target);padding-block:.6em}
+
+/* Ruhigere Fusszeile ohne kleinere Leseschrift oder geringere Linkziele */
+.puk-web-footer{padding-block:var(--space-8)}
+.puk-web-footer__grid{gap:var(--space-6)}
