@@ -20,6 +20,8 @@ Messskripte der bauenden Sitzung vom 15.10.2026. Sie belegen die Selbstprüfung 
 
 **Methode der Druckmessung:** Die Skripte setzen in einer Messkopie der Seite kleine Textmarken (3 px) an Titel, Kernaussage, Anfang und Ende der Darstellung und an die Kennzeichnung. Danach suchen sie die Marken im Text jeder PDF-Seite. Die Marken verändern den Umbruch nicht messbar.
 
+**Korrektur 15.10.2026 (Prüfbericht, Befund W-1; Forensisches Audit, F-3):** Der letzte Satz trifft nicht zu. Die Marken stehen im Textfluss und verändern den Umbruch; die Prüfsitzung hat das an «Für sich sorgen» (10 mm/110 %) gezeigt. Für Druckmessungen gilt seit der Nachbesserung die Methode in `../nachbesserung/README.md`: unveränderte Seiten drucken, nur Text suchen, den die Seite ohnehin enthält.
+
 **Ergebnisse** in `ergebnisse/`:
 - `druck-before.json`: Stand vor dem Paket.
 - `druck-final.json`: Stand nach dem Paket.

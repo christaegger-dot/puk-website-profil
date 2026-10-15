@@ -1,5 +1,7 @@
 # Selbstprüfung · Profilpaket 2026.10.2
 
+> **Nachtrag 15.10.2026, nach der Prüfung:** Die Druckmessung dieser Selbstprüfung arbeitete mit Textmarken, die den Umbruch verändern (Prüfbericht, Befund W-1). Sie verdeckte leere Figurrahmen und eine leere Seite (K-1). Die Angaben zu P-1 unten, darunter «leere Seiten: 0», gelten deshalb nur für die markierte Messkopie, nicht für die echten Seiten. Massgebend sind `PRUEFBERICHT.md` und für den Stand nach der Nachbesserung `SELBSTPRUEFUNG-NACHBESSERUNG.md` (Forensisches Audit vom 15.10.2026, F-3).
+
 **15.10.2026 · bauende Sitzung (Claude Code)**, im Auftrag der Fachstelle («ja, leg los»).
 
 - **Grundlage:** `ENTSCHEIDE-PROFIL-2026-10-2.md`, Stand nach den Entscheiden zu P-3 und P-7 (Merge `8abc333`).
