@@ -1,0 +1,23 @@
+OK   1280: Filterfeld per Tab erreichbar · 9 Tab-Schritte
+OK   1280: Fokus im Feld sichtbar · {"os":"none","ow":"0px","bs":"rgba(60, 100, 255, 0.055) 0px 0px 0px 0.0549492px inset","bw":"1px","bst":"solid","h":44}
+OK   1280: Eingabe per Tastatur filtert · 1 sichtbar · Status «1 von 3 Treffern sichtbar.»
+OK   1280: Statuszeile im Barrierefreiheitsbaum als status mit Trefferzahl · - status: 1 von 3 Treffern sichtbar.
+OK   1280: kein Treffer – Hinweis mit anderem Weg sichtbar · Keine passende Frage gefunden. Versuchen Sie ein kürzeres Wort.
+OK   1280: kein waagrechtes Scrollen · 1280 px
+OK   1280: Suche per Tastatur, Status angesagt · - status: 1 passender Inhalt.
+OK   320 reduziert: Filterfeld per Tab erreichbar · 9 Tab-Schritte
+OK   320 reduziert: Fokus im Feld sichtbar · {"os":"none","ow":"0px","bs":"rgba(0, 0, 0, 0) 0px 0px 0px 0px inset","bw":"1px","bst":"solid","h":44}
+OK   320 reduziert: Eingabe per Tastatur filtert · 1 sichtbar · Status «1 von 3 Treffern sichtbar.»
+OK   320 reduziert: Statuszeile im Barrierefreiheitsbaum als status mit Trefferzahl · - status: 1 von 3 Treffern sichtbar.
+OK   320 reduziert: kein Treffer – Hinweis mit anderem Weg sichtbar · Keine passende Frage gefunden. Versuchen Sie ein kürzeres Wort.
+OK   320 reduziert: kein waagrechtes Scrollen · 320 px
+OK   320 reduziert: Suche per Tastatur, Status angesagt · - status: 1 passender Inhalt.
+OK   1280 erzwungene Farben: Filterfeld per Tab erreichbar · 9 Tab-Schritte
+OK   1280 erzwungene Farben: Fokus im Feld sichtbar · {"os":"solid","ow":"2px","bs":"none","bw":"1px","bst":"solid","h":44}
+OK   1280 erzwungene Farben: Eingabe per Tastatur filtert · 1 sichtbar · Status «1 von 3 Treffern sichtbar.»
+OK   1280 erzwungene Farben: Statuszeile im Barrierefreiheitsbaum als status mit Trefferzahl · - status: 1 von 3 Treffern sichtbar.
+OK   1280 erzwungene Farben: kein Treffer – Hinweis mit anderem Weg sichtbar · Keine passende Frage gefunden. Versuchen Sie ein kürzeres Wort.
+OK   1280 erzwungene Farben: kein waagrechtes Scrollen · 1280 px
+OK   1280 erzwungene Farben: Suche per Tastatur, Status angesagt · - status: 1 passender Inhalt.
+OK   ohne Skript, 320 px: alle Einträge sichtbar, Feld nicht · 3 von 3
+OK   ohne Skript: Verzeichnis der Suche sichtbar

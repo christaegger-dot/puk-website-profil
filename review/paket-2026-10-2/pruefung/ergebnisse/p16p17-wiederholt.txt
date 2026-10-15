@@ -1,0 +1,27 @@
+OK   Filterfeld sichtbar mit Skript
+OK   Status ohne Eingabe · 3 Einträge verfügbar.
+OK   Feldhöhe ≥ 44 px · 44.34375 px
+OK   Filter «vollmacht»: 1 sichtbar · 1 von 3 Treffern sichtbar.
+OK   UND-Suche «beratung kostet»: 1 sichtbar
+OK   Kein Treffer: Hinweis sichtbar
+OK   Druck: alle 3 Einträge trotz Filter
+OK   Druck: Feld und Hinweis ausgeblendet
+OK   Leeres Feld: alle 3 sichtbar
+OK   Suche «dialog»: 1 Treffer · 1 passender Inhalt.
+OK   Suche: Verzeichnis ausgeblendet
+OK   Tab erreicht den Treffer · #ia-dlg-h
+OK   P-16: Fokus auf Ziel h2#ia-dlg-h · "ia-dlg-h"
+OK   P-16: Fokusbild sichtbar (box-shadow) · rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px
+OK   Suche ohne Treffer: Hinweis · Keine passenden Inhalte gefunden.
+OK   Suche nach Schlüsselwort «navigation»: Dropdown-Menü
+OK   Ohne Skript: Filterfeld ausgeblendet
+OK   Ohne Skript: alle 3 Einträge sichtbar
+OK   Ohne Skript: Suchfeld aus, Verzeichnis da, Treffer aus
+OK   320 px: kein waagrechtes Scrollen · 320 px
+OK   320 px, reduzierte Bewegung: Filter wirkt
+OK   Erzwungene Farben: Umrandung am Sprungziel · {"id":"ia-tabs-h","os":"solid","ow":"2px"}
+OK   Starter 1280 px: Aufruf mit #formen fokussiert den Abschnitt sichtbar · {"tag":"SECTION","id":"formen"}
+OK   Starter 360 px: Aufruf mit #formen fokussiert den Abschnitt sichtbar · {"tag":"SECTION","id":"formen"}
+OK   Skip-Link: main ohne seitenbreiten Ring · {"tag":"MAIN","bs":"none"}
+OK   Tastatur: Sprunglink «#ablauf» setzt sichtbaren Fokus · ablauf
+OK   Tab nach dem Sprung geht im Abschnitt weiter · im Abschnitt

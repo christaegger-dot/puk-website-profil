@@ -1,0 +1,29 @@
+== 404.html: 2 entfallen, 1 neu
+   - @aria-label: Psychiatrische Universitätsklinik Zürich – Startseite Psychoedukation verstehen – Musterwebsite
+   - PUK Website Kit 1.10.1-r4 · abgeleitet – abgeleitetes Profil auf Basis des PUK Zürich Design System 1.10.1, nicht dessen offizielle Version.
+   + @aria-label: Psychiatrische Universitätsklinik Zürich – zur Startseite dieser Website
+== behandlung-verstehen.html: 2 entfallen, 1 neu
+   - @aria-label: Psychiatrische Universitätsklinik Zürich – Startseite Psychoedukation verstehen – Musterwebsite
+   - PUK Website Kit 1.10.1-r4 · abgeleitet – abgeleitetes Profil auf Basis des PUK Zürich Design System 1.10.1, nicht dessen offizielle Version.
+   + @aria-label: Psychiatrische Universitätsklinik Zürich – zur Startseite dieser Website
+== beziehungen-verstehen.html: 2 entfallen, 1 neu
+   - @aria-label: Psychiatrische Universitätsklinik Zürich – Startseite Psychoedukation verstehen – Musterwebsite
+   - PUK Website Kit 1.10.1-r4 · abgeleitet – abgeleitetes Profil auf Basis des PUK Zürich Design System 1.10.1, nicht dessen offizielle Version.
+   + @aria-label: Psychiatrische Universitätsklinik Zürich – zur Startseite dieser Website
+== impressum-datenschutz.html: 2 entfallen, 1 neu
+   - @aria-label: Psychiatrische Universitätsklinik Zürich – Startseite Psychoedukation verstehen – Musterwebsite
+   - PUK Website Kit 1.10.1-r4 · abgeleitet – abgeleitetes Profil auf Basis des PUK Zürich Design System 1.10.1, nicht dessen offizielle Version.
+   + @aria-label: Psychiatrische Universitätsklinik Zürich – zur Startseite dieser Website
+== index.html: 2 entfallen, 1 neu
+   - @aria-label: Psychiatrische Universitätsklinik Zürich – Startseite Psychoedukation verstehen – Musterwebsite
+   - PUK Website Kit 1.10.1-r4 · abgeleitet – abgeleitetes Profil auf Basis des PUK Zürich Design System 1.10.1, nicht dessen offizielle Version.
+   + @aria-label: Psychiatrische Universitätsklinik Zürich – zur Startseite dieser Website
+== seitenvorlage.html: 2 entfallen, 1 neu
+   - @aria-label: Psychiatrische Universitätsklinik Zürich – Startseite Psychoedukation verstehen – Musterwebsite
+   - PUK Website Kit 1.10.1-r4 · abgeleitet – abgeleitetes Profil auf Basis des PUK Zürich Design System 1.10.1, nicht dessen offizielle Version.
+   + @aria-label: Psychiatrische Universitätsklinik Zürich – zur Startseite dieser Website
+== unterstuetzung-finden.html: 2 entfallen, 1 neu
+   - @aria-label: Psychiatrische Universitätsklinik Zürich – Startseite Psychoedukation verstehen – Musterwebsite
+   - PUK Website Kit 1.10.1-r4 · abgeleitet – abgeleitetes Profil auf Basis des PUK Zürich Design System 1.10.1, nicht dessen offizielle Version.
+   + @aria-label: Psychiatrische Universitätsklinik Zürich – zur Startseite dieser Website
+Summe geänderte Einheiten: 21

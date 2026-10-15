@@ -1,0 +1,456 @@
+[
+ {
+  "width": 320,
+  "page": "depression-verstehen",
+  "root": "16px",
+  "lang": "de-CH",
+  "fig": "manual",
+  "h2": "manual",
+  "body": "manual",
+  "silbentrennung": [
+   "mitbringt · Figur v-dv-entstehung",
+   "Erfahrungen · Figur v-dv-entstehung",
+   "Erkrankungen · Figur v-dv-entstehung",
+   "dazukommt · Figur v-dv-entstehung",
+   "verletzlich · Figur v-dv-entstehung",
+   "Belastung · Figur v-dv-entstehung"
+  ],
+  "notumbruch": []
+ },
+ {
+  "width": 320,
+  "page": "behandlung-und-verlauf",
+  "root": "16px",
+  "lang": "de-CH",
+  "fig": "manual",
+  "h2": "manual",
+  "body": "manual",
+  "silbentrennung": [
+   "Beziehungsmuster · Figur v-bv-vergleich",
+   "untersucht · Figur v-bv-vergleich",
+   "kognitive · Figur v-bv-vergleich",
+   "Wartezeiten · Figur v-bv-vergleich",
+   "Therapieplatz · Figur v-bv-vergleich",
+   "mittelgradiger · Figur v-bv-vergleich",
+   "Medikamenten · Figur v-bv-vergleich",
+   "verzögert · Figur v-bv-vergleich",
+   "Antidepressiva · Figur v-bv-vergleich",
+   "Depression · Figur v-bv-vergleich",
+   "Psychotherapie · Figur v-bv-vergleich",
+   "Psychiaterin · Figur v-bv-weg",
+   "Angehörige · Figur v-bv-weg",
+   "Terminsuche · Figur v-bv-weg",
+   "Beobachtungen · Figur v-bv-weg",
+   "Untersuchung · Figur v-bv-weg",
+   "Suizidgedanken · Figur v-bv-weg",
+   "Behandlung · Figur v-bv-weg",
+   "psychologische · Figur v-bv-weg",
+   "Behandlung · Figur v-bv-weg",
+   "Beschwerden · Figur v-bv-weg",
+   "vorzubeugen · Figur v-bv-weg",
+   "vereinbart · Figur v-bv-fruehzeichen",
+   "schlechter · Figur v-bv-fruehzeichen",
+   "Fachperson · Figur v-bv-fruehzeichen",
+   "schränken · Figur v-bv-fruehzeichen",
+   "behandelbar · Figur v-bv-fruehzeichen"
+  ],
+  "notumbruch": []
+ },
+ {
+  "width": 320,
+  "page": "ihre-situation",
+  "root": "16px",
+  "lang": "de-CH",
+  "fig": "manual",
+  "h2": "manual",
+  "body": "manual",
+  "silbentrennung": [
+   "erschöpft · Figur v-is-kreislauf",
+   "unverstanden · Figur v-is-kreislauf"
+  ],
+  "notumbruch": []
+ },
+ {
+  "width": 320,
+  "page": "begleiten",
+  "root": "16px",
+  "lang": "de-CH",
+  "fig": "manual",
+  "h2": "manual",
+  "body": "manual",
+  "silbentrennung": [],
+  "notumbruch": []
+ },
+ {
+  "width": 320,
+  "page": "je-nach-rolle",
+  "root": "16px",
+  "lang": "de-CH",
+  "fig": "manual",
+  "h2": "manual",
+  "body": "manual",
+  "silbentrennung": [
+   "entscheidet · Figur v-ro-spannung",
+   "respektieren · Figur v-ro-spannung",
+   "schwerfallen · Figur v-ro-spannung"
+  ],
+  "notumbruch": []
+ },
+ {
+  "width": 320,
+  "page": "rechte-und-angebote",
+  "root": "16px",
+  "lang": "de-CH",
+  "fig": "manual",
+  "h2": "manual",
+  "body": "manual",
+  "silbentrennung": [
+   "mitteilen · Figur v-ra-vergleich",
+   "Behandlungsablauf · Figur v-ra-vergleich",
+   "Angehörige · Figur v-ra-vergleich",
+   "Gesundheitszustand · Figur v-ra-vergleich",
+   "Bezugspersonen · Figur v-ra-vergleich",
+   "mitteilen · Figur v-ra-vergleich",
+   "Behandlungsablauf · Figur v-ra-vergleich",
+   "Gesundheitszustand · Figur v-ra-vergleich"
+  ],
+  "notumbruch": []
+ },
+ {
+  "width": 320,
+  "page": "fuer-sich-sorgen",
+  "root": "16px",
+  "lang": "de-CH",
+  "fig": "manual",
+  "h2": "manual",
+  "body": "manual",
+  "silbentrennung": [
+   "Arbeitgeber · Figur v-fs-netz",
+   "Angehörigenarbeit · Figur v-fs-netz"
+  ],
+  "notumbruch": []
+ },
+ {
+  "width": 360,
+  "page": "depression-verstehen",
+  "root": "16px",
+  "lang": "de-CH",
+  "fig": "manual",
+  "h2": "manual",
+  "body": "manual",
+  "silbentrennung": [
+   "Belastung · Figur v-dv-entstehung"
+  ],
+  "notumbruch": []
+ },
+ {
+  "width": 360,
+  "page": "behandlung-und-verlauf",
+  "root": "16px",
+  "lang": "de-CH",
+  "fig": "manual",
+  "h2": "manual",
+  "body": "manual",
+  "silbentrennung": [
+   "belastende · Figur v-bv-vergleich",
+   "untersucht · Figur v-bv-vergleich",
+   "Verhaltenstherapie · Figur v-bv-vergleich",
+   "interpersonelle · Figur v-bv-vergleich",
+   "Depression · Figur v-bv-vergleich",
+   "Depression · Figur v-bv-vergleich",
+   "Medikamenten · Figur v-bv-vergleich",
+   "vollständig · Figur v-bv-vergleich",
+   "Alternativen · Figur v-bv-vergleich",
+   "Psychotherapie · Figur v-bv-vergleich",
+   "Terminsuche · Figur v-bv-weg",
+   "mitzukommen · Figur v-bv-weg",
+   "Beobachtungen · Figur v-bv-weg",
+   "Fachperson · Figur v-bv-weg",
+   "körperliche · Figur v-bv-weg",
+   "Behandlung · Figur v-bv-weg",
+   "behandelnden · Figur v-bv-fruehzeichen",
+   "aufnehmen · Figur v-bv-fruehzeichen",
+   "aufnehmen · Figur v-bv-fruehzeichen"
+  ],
+  "notumbruch": []
+ },
+ {
+  "width": 360,
+  "page": "ihre-situation",
+  "root": "16px",
+  "lang": "de-CH",
+  "fig": "manual",
+  "h2": "manual",
+  "body": "manual",
+  "silbentrennung": [
+   "übernehme · Figur v-is-kreislauf",
+   "unverstanden · Figur v-is-kreislauf"
+  ],
+  "notumbruch": []
+ },
+ {
+  "width": 360,
+  "page": "begleiten",
+  "root": "16px",
+  "lang": "de-CH",
+  "fig": "manual",
+  "h2": "manual",
+  "body": "manual",
+  "silbentrennung": [],
+  "notumbruch": []
+ },
+ {
+  "width": 360,
+  "page": "je-nach-rolle",
+  "root": "16px",
+  "lang": "de-CH",
+  "fig": "manual",
+  "h2": "manual",
+  "body": "manual",
+  "silbentrennung": [
+   "mittragen · Figur v-ro-spannung",
+   "unternimmt · Figur v-ro-spannung"
+  ],
+  "notumbruch": []
+ },
+ {
+  "width": 360,
+  "page": "rechte-und-angebote",
+  "root": "16px",
+  "lang": "de-CH",
+  "fig": "manual",
+  "h2": "manual",
+  "body": "manual",
+  "silbentrennung": [
+   "Krankheit · Figur v-ra-vergleich",
+   "Gesundheitszustand · Figur v-ra-vergleich",
+   "Bezugspersonen · Figur v-ra-vergleich",
+   "widerspricht · Figur v-ra-vergleich",
+   "Krankheit · Figur v-ra-vergleich",
+   "Gesundheitszustand · Figur v-ra-vergleich"
+  ],
+  "notumbruch": []
+ },
+ {
+  "width": 360,
+  "page": "fuer-sich-sorgen",
+  "root": "16px",
+  "lang": "de-CH",
+  "fig": "manual",
+  "h2": "manual",
+  "body": "manual",
+  "silbentrennung": [],
+  "notumbruch": []
+ },
+ {
+  "width": 768,
+  "page": "depression-verstehen",
+  "root": "16px",
+  "lang": "de-CH",
+  "fig": "manual",
+  "h2": "manual",
+  "body": "manual",
+  "silbentrennung": [
+   "Veranlagung · Figur v-dv-entstehung",
+   "Überforderung · Figur v-dv-entstehung",
+   "Depression · Figur v-dv-entstehung",
+   "Belastung · Figur v-dv-entstehung"
+  ],
+  "notumbruch": []
+ },
+ {
+  "width": 768,
+  "page": "behandlung-und-verlauf",
+  "root": "16px",
+  "lang": "de-CH",
+  "fig": "manual",
+  "h2": "manual",
+  "body": "manual",
+  "silbentrennung": [
+   "Beziehungsmuster · Figur v-bv-vergleich",
+   "kognitive · Figur v-bv-vergleich",
+   "Beziehungen · Figur v-bv-vergleich",
+   "Wartezeiten · Figur v-bv-vergleich",
+   "Depression · Figur v-bv-vergleich",
+   "beurteilt · Figur v-bv-vergleich",
+   "gleichwertig · Figur v-bv-vergleich",
+   "mitteilen · Figur v-bv-weg",
+   "vereinbart · Figur v-bv-fruehzeichen",
+   "niemanden · Figur v-bv-fruehzeichen",
+   "aufnehmen · Figur v-bv-fruehzeichen"
+  ],
+  "notumbruch": []
+ },
+ {
+  "width": 768,
+  "page": "ihre-situation",
+  "root": "16px",
+  "lang": "de-CH",
+  "fig": "manual",
+  "h2": "manual",
+  "body": "manual",
+  "silbentrennung": [
+   "erschöpft · Figur v-is-kreislauf",
+   "unverstanden · Figur v-is-kreislauf"
+  ],
+  "notumbruch": []
+ },
+ {
+  "width": 768,
+  "page": "begleiten",
+  "root": "16px",
+  "lang": "de-CH",
+  "fig": "manual",
+  "h2": "manual",
+  "body": "manual",
+  "silbentrennung": [],
+  "notumbruch": []
+ },
+ {
+  "width": 768,
+  "page": "je-nach-rolle",
+  "root": "16px",
+  "lang": "de-CH",
+  "fig": "manual",
+  "h2": "manual",
+  "body": "manual",
+  "silbentrennung": [
+   "verbindet · Figur v-ro-spannung",
+   "unternehme · Figur v-ro-spannung",
+   "respektieren · Figur v-ro-spannung"
+  ],
+  "notumbruch": []
+ },
+ {
+  "width": 768,
+  "page": "rechte-und-angebote",
+  "root": "16px",
+  "lang": "de-CH",
+  "fig": "manual",
+  "h2": "manual",
+  "body": "manual",
+  "silbentrennung": [
+   "erkrankten · Figur v-ra-vergleich",
+   "Fachstelle · Figur v-ra-vergleich"
+  ],
+  "notumbruch": []
+ },
+ {
+  "width": 768,
+  "page": "fuer-sich-sorgen",
+  "root": "16px",
+  "lang": "de-CH",
+  "fig": "manual",
+  "h2": "manual",
+  "body": "manual",
+  "silbentrennung": [
+   "Angehörigenarbeit · Figur v-fs-netz"
+  ],
+  "notumbruch": [
+   "Angehörigengruppe · Figur v-fs-netz"
+  ]
+ },
+ {
+  "width": 1280,
+  "page": "depression-verstehen",
+  "root": "16px",
+  "lang": "de-CH",
+  "fig": "manual",
+  "h2": "manual",
+  "body": "manual",
+  "silbentrennung": [
+   "Erfahrungen · Figur v-dv-entstehung",
+   "verletzlich · Figur v-dv-entstehung"
+  ],
+  "notumbruch": []
+ },
+ {
+  "width": 1280,
+  "page": "behandlung-und-verlauf",
+  "root": "16px",
+  "lang": "de-CH",
+  "fig": "manual",
+  "h2": "manual",
+  "body": "manual",
+  "silbentrennung": [
+   "Beziehungsmuster · Figur v-bv-vergleich",
+   "Gewohnheiten · Figur v-bv-vergleich",
+   "besprechen · Figur v-bv-vergleich",
+   "Psychiaterin · Figur v-bv-weg",
+   "Angehörige · Figur v-bv-weg",
+   "Terminsuche · Figur v-bv-weg",
+   "Beobachtungen · Figur v-bv-weg",
+   "Behandlung · Figur v-bv-weg",
+   "psychologische · Figur v-bv-weg",
+   "Behandlung · Figur v-bv-weg",
+   "Beschwerden · Figur v-bv-weg",
+   "vorzubeugen · Figur v-bv-weg",
+   "persönlichen · Figur v-bv-fruehzeichen"
+  ],
+  "notumbruch": []
+ },
+ {
+  "width": 1280,
+  "page": "ihre-situation",
+  "root": "16px",
+  "lang": "de-CH",
+  "fig": "manual",
+  "h2": "manual",
+  "body": "manual",
+  "silbentrennung": [
+   "erschöpft · Figur v-is-kreislauf",
+   "unverstanden · Figur v-is-kreislauf"
+  ],
+  "notumbruch": []
+ },
+ {
+  "width": 1280,
+  "page": "begleiten",
+  "root": "16px",
+  "lang": "de-CH",
+  "fig": "manual",
+  "h2": "manual",
+  "body": "manual",
+  "silbentrennung": [],
+  "notumbruch": []
+ },
+ {
+  "width": 1280,
+  "page": "je-nach-rolle",
+  "root": "16px",
+  "lang": "de-CH",
+  "fig": "manual",
+  "h2": "manual",
+  "body": "manual",
+  "silbentrennung": [
+   "unternimmt · Figur v-ro-spannung"
+  ],
+  "notumbruch": []
+ },
+ {
+  "width": 1280,
+  "page": "rechte-und-angebote",
+  "root": "16px",
+  "lang": "de-CH",
+  "fig": "manual",
+  "h2": "manual",
+  "body": "manual",
+  "silbentrennung": [
+   "erkrankte · Figur v-ra-vergleich"
+  ],
+  "notumbruch": []
+ },
+ {
+  "width": 1280,
+  "page": "fuer-sich-sorgen",
+  "root": "16px",
+  "lang": "de-CH",
+  "fig": "manual",
+  "h2": "manual",
+  "body": "manual",
+  "silbentrennung": [
+   "Angehörigenarbeit · Figur v-fs-netz"
+  ],
+  "notumbruch": []
+ }
+]

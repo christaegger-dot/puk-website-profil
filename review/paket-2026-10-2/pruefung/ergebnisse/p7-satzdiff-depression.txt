@@ -1,0 +1,41 @@
+== 404.html: 2 entfallen, 1 neu
+   - @aria-label: Psychiatrische Universitätsklinik Zürich – Startseite Depression: Informationen für Angehörige
+   - PUK Website Kit 1.10.1-r4 · abgeleitet – abgeleitetes Profil auf Basis des PUK Zürich Design System 1.10.1, nicht dessen offizielle Version.
+   + @aria-label: Psychiatrische Universitätsklinik Zürich – zur Startseite dieser Website
+== begleiten.html: 2 entfallen, 1 neu
+   - @aria-label: Psychiatrische Universitätsklinik Zürich – Startseite Depression: Informationen für Angehörige
+   - PUK Website Kit 1.10.1-r4 · abgeleitet – abgeleitetes Profil auf Basis des PUK Zürich Design System 1.10.1, nicht dessen offizielle Version.
+   + @aria-label: Psychiatrische Universitätsklinik Zürich – zur Startseite dieser Website
+== behandlung-und-verlauf.html: 2 entfallen, 1 neu
+   - @aria-label: Psychiatrische Universitätsklinik Zürich – Startseite Depression: Informationen für Angehörige
+   - PUK Website Kit 1.10.1-r4 · abgeleitet – abgeleitetes Profil auf Basis des PUK Zürich Design System 1.10.1, nicht dessen offizielle Version.
+   + @aria-label: Psychiatrische Universitätsklinik Zürich – zur Startseite dieser Website
+== depression-verstehen.html: 2 entfallen, 1 neu
+   - @aria-label: Psychiatrische Universitätsklinik Zürich – Startseite Depression: Informationen für Angehörige
+   - PUK Website Kit 1.10.1-r4 · abgeleitet – abgeleitetes Profil auf Basis des PUK Zürich Design System 1.10.1, nicht dessen offizielle Version.
+   + @aria-label: Psychiatrische Universitätsklinik Zürich – zur Startseite dieser Website
+== fuer-sich-sorgen.html: 2 entfallen, 1 neu
+   - @aria-label: Psychiatrische Universitätsklinik Zürich – Startseite Depression: Informationen für Angehörige
+   - PUK Website Kit 1.10.1-r4 · abgeleitet – abgeleitetes Profil auf Basis des PUK Zürich Design System 1.10.1, nicht dessen offizielle Version.
+   + @aria-label: Psychiatrische Universitätsklinik Zürich – zur Startseite dieser Website
+== ihre-situation.html: 2 entfallen, 1 neu
+   - @aria-label: Psychiatrische Universitätsklinik Zürich – Startseite Depression: Informationen für Angehörige
+   - PUK Website Kit 1.10.1-r4 · abgeleitet – abgeleitetes Profil auf Basis des PUK Zürich Design System 1.10.1, nicht dessen offizielle Version.
+   + @aria-label: Psychiatrische Universitätsklinik Zürich – zur Startseite dieser Website
+== impressum-datenschutz.html: 2 entfallen, 1 neu
+   - @aria-label: Psychiatrische Universitätsklinik Zürich – Startseite Depression: Informationen für Angehörige
+   - PUK Website Kit 1.10.1-r4 · abgeleitet – abgeleitetes Profil auf Basis des PUK Zürich Design System 1.10.1, nicht dessen offizielle Version.
+   + @aria-label: Psychiatrische Universitätsklinik Zürich – zur Startseite dieser Website
+== index.html: 2 entfallen, 1 neu
+   - @aria-label: Psychiatrische Universitätsklinik Zürich – Startseite Depression: Informationen für Angehörige
+   - PUK Website Kit 1.10.1-r4 · abgeleitet – abgeleitetes Profil auf Basis des PUK Zürich Design System 1.10.1, nicht dessen offizielle Version.
+   + @aria-label: Psychiatrische Universitätsklinik Zürich – zur Startseite dieser Website
+== je-nach-rolle.html: 2 entfallen, 1 neu
+   - @aria-label: Psychiatrische Universitätsklinik Zürich – Startseite Depression: Informationen für Angehörige
+   - PUK Website Kit 1.10.1-r4 · abgeleitet – abgeleitetes Profil auf Basis des PUK Zürich Design System 1.10.1, nicht dessen offizielle Version.
+   + @aria-label: Psychiatrische Universitätsklinik Zürich – zur Startseite dieser Website
+== rechte-und-angebote.html: 2 entfallen, 1 neu
+   - @aria-label: Psychiatrische Universitätsklinik Zürich – Startseite Depression: Informationen für Angehörige
+   - PUK Website Kit 1.10.1-r4 · abgeleitet – abgeleitetes Profil auf Basis des PUK Zürich Design System 1.10.1, nicht dessen offizielle Version.
+   + @aria-label: Psychiatrische Universitätsklinik Zürich – zur Startseite dieser Website
+Summe geänderte Einheiten: 30
