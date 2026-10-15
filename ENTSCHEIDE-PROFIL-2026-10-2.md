@@ -13,7 +13,7 @@
 - **Neu:** die offenen Punkte P-16 und P-17, die sich aus den übernommenen Änderungen ergeben.
 - **Prüfung:** Die Prüfsitzung des Pakets prüft Schritt 0 mit.
 
-**15.10.2026 · P-16 und P-17 entschieden und umgesetzt.** Die Fachstelle hat die Vorschläge angenommen («ja, deine Vorschläge sind gut. führe sie aus»). Umgesetzt hat sie die bauende Sitzung von Schritt 0 im Repository und im Artefakt (Version 45, `1792057148-7352`); Einzelheiten im Änderungsprotokoll im `README.md`. Die Prüfsitzung des Pakets prüft beide Punkte mit.
+**15.10.2026 · P-16 und P-17 entschieden und umgesetzt.** Die Fachstelle hat die Vorschläge angenommen («ja, deine Vorschläge sind gut. führe sie aus»). Umgesetzt hat sie die bauende Sitzung von Schritt 0 im Repository und im Artefakt (Version 45, `1792057148-7352`); Einzelheiten im Änderungsprotokoll im `README.md`. Abgleich nach dem Veröffentlichen: 213 von 213 gemeinsamen Dateien byte-gleich. Die Prüfsitzung des Pakets prüft beide Punkte mit.
 
 **Anlass:**
 - Auflage AR3-5 der Borderline-Website (R3 Freigabe-Audit, 13.10.2026): Die Ausnahme R1-1 endet mit einem neuen Profilpaket, Frist 13.01.2027.
