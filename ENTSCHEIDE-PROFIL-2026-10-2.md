@@ -8,6 +8,11 @@
 - **Unverändert:** P-2, P-4, P-5, P-6, P-10, P-12, P-13 und P-14; für ihre Abnahmen gelten die Regeln im Abschnitt «Geänderte Lage».
 - Die Fassung vom 13.10.2026 steht an `3a7ab42`.
 
+**15.10.2026 · Schritt 0 umgesetzt** von einer bauenden Sitzung (Claude Code) im Auftrag der Fachstelle («ja, leg los mit Schritt 0»).
+- **Artefakt:** Die beiden Dateien aus dem Repository und ein Eintrag im Änderungsprotokoll stehen im Artefakt, Version 44 (`1792055962-489b`).
+- **Neu:** die offenen Punkte P-16 und P-17, die sich aus den übernommenen Änderungen ergeben.
+- **Prüfung:** Die Prüfsitzung des Pakets prüft Schritt 0 mit.
+
 **Anlass:**
 - Auflage AR3-5 der Borderline-Website (R3 Freigabe-Audit, 13.10.2026): Die Ausnahme R1-1 endet mit einem neuen Profilpaket, Frist 13.01.2027.
 - Die Vorschläge für das Profil aus `templates/website/borderline-angehoerige/ENTSCHEIDE-SCHLUSSPRUEFUNG.md`, Abschnitt 5.6.
@@ -26,7 +31,7 @@
   - `components/interaktion.js`: Listenfilter (`data-puk-filter`), Abschnittssuche (`data-puk-search`), ein Sprungziel in einem geschlossenen `details` wird geöffnet; Commits `75853db`, `9889237`, `6f478ee` (13.10.2026).
   - `templates/website/psychoeducation-site-starter/starter.css`: Abstände der Fusszeile; Commit `08625ab` (14.10.2026).
 
-  Ein Paket aus dem heutigen Artefakt würde beide Änderungen zurücksetzen (Vorbedingung im Ablauf).
+  Ein Paket aus dem heutigen Artefakt würde beide Änderungen zurücksetzen (Vorbedingung im Ablauf). **Behoben mit Schritt 0 am 15.10.2026.**
 
 **Regeln für die Abnahmen:**
 - Nennt eine Abnahme die Borderline-Website oder «beide Websites», gilt der Teil zur Borderline-Website bei der Übernahme in ihrem Repository.
@@ -65,6 +70,8 @@ _Fassung vom 13.10.2026:_ Umsetzung nach der Veröffentlichung der Website «Dep
 | P-13 | `robots.txt` und Hinweis auf `sitemap.xml`, SPZ-53 | **Übernehmen:** Der Export schreibt `robots.txt` mit `Sitemap:`-Zeile, wenn `siteUrl` gesetzt ist. `og-image.jpg` und `favicon.ico` entfallen weiter. | `tools/export.mjs`. **Abnahme:** `robots.txt` ohne Sperre, mit der Sitemap-Adresse |
 | P-14 | Schwellen in `rem` und Druckschrift 81,25 % (Nachprüfung SP2-K, Teil I) | **Übernehmen** als Hinweis in `guidelines/07-visualisierung-umsetzen.md` beim Absatz zu den Schwellen. | Wortlaut: «Schwellen in `rem` verschieben sich im Druck, weil die Wurzelschrift dort 81,25 % beträgt. Soll die Druckansicht gleich bleiben, steht die heutige px-Schwelle als Untergrenze, z. B. `(max-width:800px) or (max-width:50rem)`.» |
 | P-15 | Sticky Abschnittsüberschriften im Druck, NAR34-2 (Nachprüfung AR3-4, 13.10.2026). Stand 15.10.2026: `position:static` steht nur in `@media (max-width:760px)`, nicht in `@media print`; im Druck greift es also nur, wenn der Druckbereich schmaler als 760 px ist | **Übernehmen.** Im Druck stehen die Abschnittsüberschriften der Langform im Fluss. | `components/bundle.css`, `@media print`: `.puk-longform__section-heading` mit `position:static`. Wer nach dem Scrollen druckt, erhält sonst Überschriften über den Einträgen, z. B. auf `quellen` der Borderline-Website. **Abnahme (präzisiert 15.10.2026):** A4-Druck mit Rand 0 einer Seite mit Quellenliste der Website «Depression» (z. B. `begleiten`), einmal vom Seitenanfang und einmal nach dem Scrollen an das Seitenende gedruckt: keine Überschrift über einem Eintrag; am Bildschirm unverändert. An der Borderline-Website `quellen` bei der Übernahme dort |
+| P-16 | Fokusbild am Sprungziel (neu 15.10.2026, aus Schritt 0). `revealHashTarget()` in `components/interaktion.js` setzt den Fokus auf das Ziel eines Sprunglinks, wenn nötig mit vorübergehendem `tabindex="-1"`. Der Fokus ist im Profil unsichtbar: `starter.css` setzt `.puk-longform__section[tabindex="-1"]:focus{outline:none}`, und `bundle.css` zeichnet den Fokusring nicht für `[tabindex="-1"]`. Die Borderline-Website hat dafür eigene Regeln, auch für erzwungene Farben | **Offen, Entscheid vor dem Bau.** Vorschlag: Das Profil zeigt am Sprungziel ein Fokusbild, auch mit erzwungenen Farben, nach dem Muster der Borderline-Website; die Regel `outline:none` in `starter.css` entfällt. | `components/bundle.css`, `starter.css`. **Abnahme:** Sprunglink per Tastatur und Aufruf mit `#…` auf einer Langform-Seite des Starters und der Website «Depression»: Fokusbild sichtbar, auch mit erzwungenen Farben; Fokus zurück im Seitenfluss nach Tab |
+| P-17 | Listenfilter und Abschnittssuche ohne Anleitung (neu 15.10.2026, aus Schritt 0). `filterList()` (`[data-puk-filter]`) und `siteSearch()` (`[data-puk-search]`) sind seit Schritt 0 Teil des Profils, ohne Markup in `templates/website/interaktion/` und ohne Regel im Abschnitt «Interaktionskonzept». Den Suchindex erzeugt nur die Borderline-Website (`tools/search-index.mjs`), nicht der Starter | **Offen, Entscheid vor dem Bau.** Vorschlag: im Profil behalten, weil die Borderline-Website sie bei der Übernahme des Pakets sonst verliert, und Markup sowie Regel ergänzen. Die Regel nennt den Filter als Hilfe, nie als einzigen Zugang zu Inhalten («sichtbar vor versteckt»), und sagt, dass der Starter keinen Suchindex erzeugt. | `templates/website/interaktion/`, `guidelines/09-interaktionskonzept.md`. **Abnahme:** Beispiel mit Tastatur, bei 320 px und mit Screenreader-Ansage der Statuszeile; ohne Skript alle Einträge sichtbar |
 
 ## Ablauf
 
@@ -73,8 +80,9 @@ _Geändert 15.10.2026: Vorbedingung neu; die Websites übernehmen das Paket getr
 0. **Vorbedingung:**
    - Die Änderungen an `components/interaktion.js` und `starter.css` (Abschnitt «Geänderte Lage») kommen zuerst ins Design-System-Artefakt und ins Änderungsprotokoll im `README.md`. Werden sie nicht übernommen, ist das ein eigener, begründeter Entscheid.
    - **Abnahme:** Alle Dateien, die Artefakt und Repository gemeinsam haben, sind byte-gleich.
+   - **Stand 15.10.2026: umgesetzt** im Artefakt, Version 44 (`1792055962-489b`). **Abnahme erfüllt:** Nach dem Veröffentlichen alle 286 Dateien unter `project/` neu geladen; 213 von 213 gemeinsamen Dateien byte-gleich mit dem Repository, darunter die drei geänderten (`components/interaktion.js`, `starter.css`, `README.md`). Nur im Artefakt stehen weiter 73 Dateien (69 Vorschaukarten, `design-system.json`, drei Dateien unter `assets/`). Daraus ergeben sich P-16 und P-17.
 1. **Bauende Sitzung (Profil):**
-   - ändert das Design-System-Artefakt nach P-1, P-2, P-4 bis P-8, P-10 und P-13 bis P-15 und erzeugt daraus das Paket 2026.10.2; P-3 erst nach dem Entscheid dazu;
+   - ändert das Design-System-Artefakt nach P-1, P-2, P-4 bis P-8, P-10 und P-13 bis P-15 und erzeugt daraus das Paket 2026.10.2; P-3, P-16 und P-17 erst nach dem Entscheid dazu;
    - ersetzt es in diesem Repository und führt das Änderungsprotokoll im `README.md`;
    - Websites unter `templates/website/<website>/` bleiben erhalten;
    - Selbsttest des Gates.
