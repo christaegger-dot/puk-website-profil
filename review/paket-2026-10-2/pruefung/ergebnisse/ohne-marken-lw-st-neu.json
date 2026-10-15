@@ -1,0 +1,569 @@
+[
+ {
+  "site": "psychoeducation-site-starter",
+  "page": "behandlung-verstehen",
+  "set": "0mm/80%",
+  "pages": 3,
+  "chars": [
+   1269,
+   1335,
+   267
+  ],
+  "blank": [],
+  "greyEmpty": []
+ },
+ {
+  "site": "psychoeducation-site-starter",
+  "page": "behandlung-verstehen",
+  "set": "0mm/90%",
+  "pages": 3,
+  "chars": [
+   600,
+   975,
+   1296
+  ],
+  "blank": [],
+  "greyEmpty": [
+   "1:33%",
+   "2:36%"
+  ]
+ },
+ {
+  "site": "psychoeducation-site-starter",
+  "page": "behandlung-verstehen",
+  "set": "0mm/100%",
+  "pages": 4,
+  "chars": [
+   600,
+   975,
+   1139,
+   157
+  ],
+  "blank": [],
+  "greyEmpty": [
+   "1:29%",
+   "2:25%"
+  ]
+ },
+ {
+  "site": "psychoeducation-site-starter",
+  "page": "behandlung-verstehen",
+  "set": "0mm/110%",
+  "pages": 4,
+  "chars": [
+   600,
+   975,
+   838,
+   458
+  ],
+  "blank": [],
+  "greyEmpty": [
+   "1:14%"
+  ]
+ },
+ {
+  "site": "psychoeducation-site-starter",
+  "page": "behandlung-verstehen",
+  "set": "10mm/80%",
+  "pages": 3,
+  "chars": [
+   1269,
+   1116,
+   486
+  ],
+  "blank": [],
+  "greyEmpty": []
+ },
+ {
+  "site": "psychoeducation-site-starter",
+  "page": "behandlung-verstehen",
+  "set": "10mm/90%",
+  "pages": 4,
+  "chars": [
+   600,
+   975,
+   1275,
+   21
+  ],
+  "blank": [],
+  "greyEmpty": [
+   "1:29%",
+   "2:28%"
+  ]
+ },
+ {
+  "site": "psychoeducation-site-starter",
+  "page": "behandlung-verstehen",
+  "set": "10mm/100%",
+  "pages": 4,
+  "chars": [
+   600,
+   975,
+   838,
+   458
+  ],
+  "blank": [],
+  "greyEmpty": [
+   "1:14%",
+   "2:12%"
+  ]
+ },
+ {
+  "site": "psychoeducation-site-starter",
+  "page": "behandlung-verstehen",
+  "set": "10mm/110%",
+  "pages": 4,
+  "chars": [
+   600,
+   814,
+   827,
+   630
+  ],
+  "blank": [],
+  "greyEmpty": []
+ },
+ {
+  "site": "psychoeducation-site-starter",
+  "page": "behandlung-verstehen",
+  "set": "15mm/80%",
+  "pages": 3,
+  "chars": [
+   600,
+   975,
+   1296
+  ],
+  "blank": [],
+  "greyEmpty": [
+   "1:31%",
+   "2:32%"
+  ]
+ },
+ {
+  "site": "psychoeducation-site-starter",
+  "page": "behandlung-verstehen",
+  "set": "15mm/90%",
+  "pages": 4,
+  "chars": [
+   600,
+   975,
+   1110,
+   186
+  ],
+  "blank": [],
+  "greyEmpty": [
+   "1:18%",
+   "2:18%"
+  ]
+ },
+ {
+  "site": "psychoeducation-site-starter",
+  "page": "behandlung-verstehen",
+  "set": "15mm/100%",
+  "pages": 4,
+  "chars": [
+   600,
+   975,
+   838,
+   458
+  ],
+  "blank": [],
+  "greyEmpty": [
+   "1:12%"
+  ]
+ },
+ {
+  "site": "psychoeducation-site-starter",
+  "page": "behandlung-verstehen",
+  "set": "15mm/110%",
+  "pages": 4,
+  "chars": [
+   600,
+   802,
+   763,
+   706
+  ],
+  "blank": [],
+  "greyEmpty": []
+ },
+ {
+  "site": "psychoeducation-site-starter",
+  "page": "beziehungen-verstehen",
+  "set": "0mm/80%",
+  "pages": 4,
+  "chars": [
+   694,
+   948,
+   827,
+   458
+  ],
+  "blank": [],
+  "greyEmpty": [
+   "1:27%"
+  ]
+ },
+ {
+  "site": "psychoeducation-site-starter",
+  "page": "beziehungen-verstehen",
+  "set": "0mm/90%",
+  "pages": 4,
+  "chars": [
+   694,
+   948,
+   799,
+   486
+  ],
+  "blank": [],
+  "greyEmpty": [
+   "1:22%"
+  ]
+ },
+ {
+  "site": "psychoeducation-site-starter",
+  "page": "beziehungen-verstehen",
+  "set": "0mm/100%",
+  "pages": 4,
+  "chars": [
+   694,
+   948,
+   620,
+   665
+  ],
+  "blank": [],
+  "greyEmpty": [
+   "1:12%"
+  ]
+ },
+ {
+  "site": "psychoeducation-site-starter",
+  "page": "beziehungen-verstehen",
+  "set": "0mm/110%",
+  "pages": 4,
+  "chars": [
+   694,
+   745,
+   684,
+   804
+  ],
+  "blank": [],
+  "greyEmpty": []
+ },
+ {
+  "site": "psychoeducation-site-starter",
+  "page": "beziehungen-verstehen",
+  "set": "10mm/80%",
+  "pages": 4,
+  "chars": [
+   694,
+   948,
+   827,
+   458
+  ],
+  "blank": [],
+  "greyEmpty": [
+   "1:23%"
+  ]
+ },
+ {
+  "site": "psychoeducation-site-starter",
+  "page": "beziehungen-verstehen",
+  "set": "10mm/90%",
+  "pages": 4,
+  "chars": [
+   694,
+   948,
+   620,
+   665
+  ],
+  "blank": [],
+  "greyEmpty": [
+   "1:14%"
+  ]
+ },
+ {
+  "site": "psychoeducation-site-starter",
+  "page": "beziehungen-verstehen",
+  "set": "10mm/100%",
+  "pages": 4,
+  "chars": [
+   694,
+   759,
+   670,
+   804
+  ],
+  "blank": [],
+  "greyEmpty": []
+ },
+ {
+  "site": "psychoeducation-site-starter",
+  "page": "beziehungen-verstehen",
+  "set": "10mm/110%",
+  "pages": 5,
+  "chars": [
+   639,
+   663,
+   340,
+   443,
+   842
+  ],
+  "blank": [],
+  "greyEmpty": [
+   "2:13%"
+  ]
+ },
+ {
+  "site": "psychoeducation-site-starter",
+  "page": "beziehungen-verstehen",
+  "set": "15mm/80%",
+  "pages": 4,
+  "chars": [
+   694,
+   948,
+   827,
+   458
+  ],
+  "blank": [],
+  "greyEmpty": [
+   "1:22%"
+  ]
+ },
+ {
+  "site": "psychoeducation-site-starter",
+  "page": "beziehungen-verstehen",
+  "set": "15mm/90%",
+  "pages": 4,
+  "chars": [
+   694,
+   759,
+   809,
+   665
+  ],
+  "blank": [],
+  "greyEmpty": []
+ },
+ {
+  "site": "psychoeducation-site-starter",
+  "page": "beziehungen-verstehen",
+  "set": "15mm/100%",
+  "pages": 4,
+  "chars": [
+   694,
+   745,
+   684,
+   804
+  ],
+  "blank": [],
+  "greyEmpty": []
+ },
+ {
+  "site": "psychoeducation-site-starter",
+  "page": "beziehungen-verstehen",
+  "set": "15mm/110%",
+  "pages": 5,
+  "chars": [
+   639,
+   663,
+   340,
+   443,
+   842
+  ],
+  "blank": [],
+  "greyEmpty": []
+ },
+ {
+  "site": "psychoeducation-site-starter",
+  "page": "unterstuetzung-finden",
+  "set": "0mm/80%",
+  "pages": 4,
+  "chars": [
+   981,
+   1225,
+   289,
+   486
+  ],
+  "blank": [],
+  "greyEmpty": []
+ },
+ {
+  "site": "psychoeducation-site-starter",
+  "page": "unterstuetzung-finden",
+  "set": "0mm/90%",
+  "pages": 4,
+  "chars": [
+   811,
+   965,
+   719,
+   486
+  ],
+  "blank": [],
+  "greyEmpty": []
+ },
+ {
+  "site": "psychoeducation-site-starter",
+  "page": "unterstuetzung-finden",
+  "set": "0mm/100%",
+  "pages": 5,
+  "chars": [
+   811,
+   325,
+   941,
+   713,
+   191
+  ],
+  "blank": [],
+  "greyEmpty": []
+ },
+ {
+  "site": "psychoeducation-site-starter",
+  "page": "unterstuetzung-finden",
+  "set": "0mm/110%",
+  "pages": 5,
+  "chars": [
+   547,
+   589,
+   849,
+   510,
+   486
+  ],
+  "blank": [],
+  "greyEmpty": [
+   "1:14%",
+   "2:27%"
+  ]
+ },
+ {
+  "site": "psychoeducation-site-starter",
+  "page": "unterstuetzung-finden",
+  "set": "10mm/80%",
+  "pages": 4,
+  "chars": [
+   811,
+   965,
+   719,
+   486
+  ],
+  "blank": [],
+  "greyEmpty": [
+   "1:14%"
+  ]
+ },
+ {
+  "site": "psychoeducation-site-starter",
+  "page": "unterstuetzung-finden",
+  "set": "10mm/90%",
+  "pages": 5,
+  "chars": [
+   811,
+   325,
+   960,
+   728,
+   157
+  ],
+  "blank": [],
+  "greyEmpty": []
+ },
+ {
+  "site": "psychoeducation-site-starter",
+  "page": "unterstuetzung-finden",
+  "set": "10mm/100%",
+  "pages": 5,
+  "chars": [
+   547,
+   589,
+   859,
+   672,
+   314
+  ],
+  "blank": [],
+  "greyEmpty": [
+   "1:14%",
+   "2:27%"
+  ]
+ },
+ {
+  "site": "psychoeducation-site-starter",
+  "page": "unterstuetzung-finden",
+  "set": "10mm/110%",
+  "pages": 5,
+  "chars": [
+   547,
+   589,
+   849,
+   510,
+   486
+  ],
+  "blank": [],
+  "greyEmpty": [
+   "2:21%"
+  ]
+ },
+ {
+  "site": "psychoeducation-site-starter",
+  "page": "unterstuetzung-finden",
+  "set": "15mm/80%",
+  "pages": 4,
+  "chars": [
+   811,
+   965,
+   719,
+   486
+  ],
+  "blank": [],
+  "greyEmpty": [
+   "1:12%"
+  ]
+ },
+ {
+  "site": "psychoeducation-site-starter",
+  "page": "unterstuetzung-finden",
+  "set": "15mm/90%",
+  "pages": 5,
+  "chars": [
+   547,
+   589,
+   881,
+   817,
+   147
+  ],
+  "blank": [],
+  "greyEmpty": [
+   "1:18%",
+   "2:30%"
+  ]
+ },
+ {
+  "site": "psychoeducation-site-starter",
+  "page": "unterstuetzung-finden",
+  "set": "15mm/100%",
+  "pages": 5,
+  "chars": [
+   547,
+   589,
+   849,
+   510,
+   486
+  ],
+  "blank": [],
+  "greyEmpty": [
+   "1:12%",
+   "2:24%"
+  ]
+ },
+ {
+  "site": "psychoeducation-site-starter",
+  "page": "unterstuetzung-finden",
+  "set": "15mm/110%",
+  "pages": 5,
+  "chars": [
+   547,
+   589,
+   640,
+   638,
+   567
+  ],
+  "blank": [],
+  "greyEmpty": [
+   "2:16%",
+   "3:13%"
+  ]
+ }
+]

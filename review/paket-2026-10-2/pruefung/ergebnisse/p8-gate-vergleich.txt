@@ -1,0 +1,8 @@
+psychoeducation-site-starter Entwurf: gate.html 0 blockierend/12 Hinweise · CLI 0/12 · Befundzeilen gleich: true · Prüfungen editorial-status,placeholder-approval,review-report,site-url,visual-approval
+psychoeducation-site-starter Produktion: gate.html 11 blockierend/1 Hinweise · CLI 11/1 · Befundzeilen gleich: true · Prüfungen editorial-status,placeholder-approval,review-report,site-url,visual-approval
+psychoeducation-site-starter Selbsttest gate.html: 68/68 · Entwurf: 0 blockierend · Produktion: 11 blockierend (erwartet: offene Freigaben) · Selbsttest: 68/68 bestanden
+psychoeducation-site-starter Überschriften: Seitenvertrag | Visualisierungsplan | Gate Entwurf | Gate Produktion | Selbsttest
+zz-dep-test Entwurf: gate.html 0 blockierend/0 Hinweise · CLI 0/0 · Befundzeilen gleich: true · Prüfungen 
+zz-dep-test Produktion: gate.html 0 blockierend/0 Hinweise · CLI 0/0 · Befundzeilen gleich: true · Prüfungen 
+zz-dep-test Selbsttest gate.html: 68/68 · Entwurf: 0 blockierend · Produktion: 0 blockierend (erwartet: offene Freigaben) · Selbsttest: 68/68 bestanden
+zz-dep-test Überschriften: Seitenvertrag | Visualisierungsplan | Gate Entwurf | Gate Produktion | Selbsttest
