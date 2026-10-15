@@ -20,7 +20,7 @@ Wie sich interaktive Elemente auf Websites der Fachstelle verhalten: Zustände, 
 | Schliessen | Klick ausserhalb, Schliessen-Schaltfläche | Escape (Dialog, Dropdown, Tooltip) | Tippen ausserhalb, Schliessen-Schaltfläche |
 | Hilfstexte | Hover **und** Fokus | Fokus | Fokus durch Tippen; nie als einzige Quelle |
 
-- **Bedienziele:** mindestens 44 × 44 px für Buttons, Navigation und eigenständige Aktionen (`web-touch-target`). Auf Touch-Geräten (`pointer: coarse`) heben `Button`, `IconButton` und `Tag` ihre Höhe automatisch auf 44 px (`--puk-target-min`). Links im Fliesstext bleiben inline.
+- **Bedienziele:** mindestens 44 × 44 px für Buttons, Navigation und eigenständige Aktionen (`web-touch-target`). Auf Touch-Geräten (`pointer: coarse`) heben `Button`, `IconButton` und `Tag` ihre Höhe automatisch auf 44 px (`--puk-target-min`). Links im Fliesstext bleiben inline. Die Absenderzeile im Seitenkopf gilt als Textzeile, nicht als eigenständige Aktion: Ihr E-Mail-Link braucht keine 44 px; WCAG 2.5.8 (24 px oder genügend Abstand zum nächsten Ziel) ist über den Abstand erfüllt (Paket 2026.10.2, P-3).
 - **Breakpoint:** Unter 760 px stapeln sich Kopf und Navigation; schwebende Ebenen (Dropdown) klappen im Fluss auf; Reiterleisten scrollen waagrecht statt umzubrechen; Dialoge nutzen die volle Breite mit 16 px Rand.
 - **Hover ist nie die einzige Auslösung.** Nichts öffnet sich bei Hover allein (Dropdown, Akkordeon); Hover zeigt nur an, dass etwas klickbar ist.
 - **Prüfen** bei 320, 360, 768 und 1440 px, mit 200 % Textgrösse (Seitenzoom und Browser-Einstellung «Schriftgrösse»), nur mit Tastatur, mit reduzierter Bewegung, mit erzwungenen Farben und auf einem Touch-Gerät.

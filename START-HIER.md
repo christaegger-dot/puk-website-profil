@@ -1,6 +1,6 @@
 # PUK Website-Profil · Projektpaket
 
-Fachstellen-Profil 2026.10.1 (Stand 11.10.2026) – lauffähige Fassung des Design-Systems «PUK Zürich Website-Profil» für die Websites der Fachstelle Angehörigenarbeit. Alle Pfade sind aufgelöst: Vorlagen, Starter und UI-Kit laufen ohne Anpassung.
+Fachstellen-Profil 2026.10.2 (Stand 15.10.2026) – lauffähige Fassung des Design-Systems «PUK Zürich Website-Profil» für die Websites der Fachstelle Angehörigenarbeit. Alle Pfade sind aufgelöst: Vorlagen, Starter und UI-Kit laufen ohne Anpassung.
 
 ## Ansehen
 

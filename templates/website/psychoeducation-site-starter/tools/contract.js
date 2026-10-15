@@ -8,7 +8,7 @@
 })(typeof self !== 'undefined' ? self : this, function () {
 'use strict';
 const VERSION = 'PUK Website Kit 1.10.1-r4 · abgeleitet';
-const BUILD = 'r4-8';
+const BUILD = 'r4-9';
 const FORMATS = ['text', 'figure', 'process', 'cycle', 'comparison', 'decision', 'illustration', 'stepwise-model', 'tension-field', 'relationship-map', 'continuum', 'layer-model'];
 /* Interaktive Komponenten und Erklärmuster G brauchen components/interaktion.js (HTML-Fassungen ohne React).
    Prüfbefund W3-01 (11.10.2026): auch jede Seite mit aufklappbarer Vertiefung (details) – das Skript öffnet sie vor dem Druck. */
@@ -18,7 +18,9 @@ const needsScript = html => INTERACTIVE.some(a => html.includes(a)) || DETAILS_R
 /* Interaktionskonzept: bis sechs Hauptpunkte sichtbar; darüber baut der Starter unter 760 px ein «Menü» (Dropdown-Menü, Profilentscheid 11.10.2026). */
 const NAV_MAX = 6;
 /* Prüfbefund BD-01 (11.10.2026, WCAG 2.5.3): Der Name des Logo-Links beginnt mit dem sichtbaren Logotext (sender.institution) und nennt danach das Ziel. */
-const logoName = cfg => `${(cfg.sender || {}).institution || ''} – Startseite ${cfg.siteTitle || ''}`.trim();
+const STATUS_DATE = /\b\d{1,2}\.\s?(?:\d{1,2}\.|(?:Januar|Februar|März|April|Mai|Juni|Juli|August|September|Oktober|November|Dezember))\s?\d{4}\b/;
+/* Name des Logo-Links: beginnt mit dem sichtbaren Logotext (WCAG 2.5.3); Wortlaut von der Fachstelle freigegeben 15.10.2026 (Paket 2026.10.2, P-7). */
+const logoName = cfg => `${(cfg.sender || {}).institution || ''} – zur Startseite dieser Website`.trim();
 /* Prüfbefund W3-08 (11.10.2026): Eine Seite mit role «not-found» ist die 404-Seite – ohne Navigation, Sitemap und kanonischen Link, nicht von der Startseite verlinkt. */
 const isNotFound = p => !!p && p.role === 'not-found';
 /* Prüfbefund W3-05 (11.10.2026): Impressum und Datenschutzerklärung in der Fusszeile, Ziele aus site.config.json › legal. */
@@ -173,7 +175,7 @@ ${direct}<main id="main-content" class="puk-web-main" tabindex="-1">
 ${body.trim()}
 </main>
 <footer class="puk-web-footer" data-safety-variant="${esc(sa.variant)}"><div class="puk-web-container puk-web-footer__grid">
-${subdued}<section aria-labelledby="puk-site-info-title"><h2 class="puk-web-footer__heading" id="puk-site-info-title">Über diese Seiten</h2>${cfg.disclaimer ? `<p class="puk-web-footer__copy" data-disclaimer>${esc(cfg.disclaimer)}</p>` : ''}<p class="puk-web-footer__copy">Inhaltsverantwortung: ${esc(cfg.contentOwner)}</p><p class="puk-web-footer__copy">Redaktioneller Status: ${esc(cfg.editorialStatusLabel || cfg.editorialStatus)}</p>${legalHtml}<p class="puk-web-footer__copy">${esc(VERSION)} – abgeleitetes Profil auf Basis des PUK Zürich Design System 1.10.1, nicht dessen offizielle Version.</p></section>
+${subdued}<section aria-labelledby="puk-site-info-title"><h2 class="puk-web-footer__heading" id="puk-site-info-title">Über diese Seiten</h2>${cfg.disclaimer ? `<p class="puk-web-footer__copy" data-disclaimer>${esc(cfg.disclaimer)}</p>` : ''}<p class="puk-web-footer__copy">Inhaltsverantwortung: ${esc(cfg.contentOwner)}</p><p class="puk-web-footer__copy">Redaktioneller Status: ${esc(cfg.editorialStatusLabel || cfg.editorialStatus)}</p>${legalHtml}</section>
 </div></footer>
 </div></body>
 </html>
@@ -188,6 +190,10 @@ function gate(cfg, files, opts = {}) {
   const prod = (page, id, msg) => add(mode === 'production' ? 'block' : 'warn', page, id, msg);
   const cache = {}; const docOf = p => files[p] == null ? null : (cache[p] = cache[p] || parse(files[p]));
   for (const k of ['siteTitle', 'shortDescription', 'language', 'favicon', 'contentOwner', 'editorialStatus']) if (!cfg[k]) add('block', 'site', 'config', `site.config: «${k}» fehlt`);
+  /* Paket 2026.10.2, P-4 (SPZ-1): Der angezeigte Redaktionsstatus der Fusszeile nennt vor der Veröffentlichung keinen Entwurf und ein Datum. */
+  { const shown = String(cfg.editorialStatusLabel || cfg.editorialStatus || '');
+    if (/entwurf/i.test(shown)) prod('site', 'editorial-status', `Redaktioneller Status «${shown}» nennt einen Entwurf – vor der Veröffentlichung z. B. «Fachlich freigegeben am TT.MM.JJJJ» (editorialStatusLabel)`);
+    else if (shown && !STATUS_DATE.test(shown)) prod('site', 'editorial-status', `Redaktioneller Status «${shown}» nennt kein Datum – Format «Fachlich freigegeben am TT.MM.JJJJ» (editorialStatusLabel)`); }
   if (cfg.language && !/^de(-|$)/i.test(cfg.language)) add('block', 'site', 'lang', 'language muss deutsch sein (de, de-CH)');
   const s = cfg.sender || {};
   if (!s.orgUnit || !s.institution) add('block', 'site', 'sender', 'sender.orgUnit und sender.institution sind Pflicht');
@@ -503,10 +509,15 @@ function selftest(cfg, files, opts = {}) {
   const unreviewed = {}; for (const [k, v] of Object.entries(files)) unreviewed[k] = typeof v === 'string' ? v.split('data-review-status="geprueft"').join('data-review-status="ausstehend"') : v;
   const bp = gate(Object.assign({}, cfg, { sender: Object.assign({}, cfg.sender, { status: 'placeholder' }), responsibility: cfg.responsibility && Object.assign({}, cfg.responsibility, { reviewStatus: 'ausstehend', reviewedBy: undefined, reviewedAt: undefined }) }), unreviewed, { mode: 'production', exists: base }); /* Absenderin und Zuständigkeitsverweis hier absichtlich ungeklärt, damit die Prüfung belegt bleibt, auch wenn beide freigegeben sind */ const need = ['sender-status', 'safety-review', 'placeholder-approval', 'visual-approval'];
   /* Offene Angaben vor der Veröffentlichung (Impressum, Datenschutzerklärung, 404-Seite) gelten wie offene Freigaben, nicht als Strukturfehler. */
-  const hit = need.filter(id => bp.findings.some(x => x.level === 'block' && x.id === id)); const structural = bp.findings.filter(x => x.level === 'block' && !need.includes(x.id) && !['legal', 'not-found'].includes(x.id));
+  const hit = need.filter(id => bp.findings.some(x => x.level === 'block' && x.id === id)); const structural = bp.findings.filter(x => x.level === 'block' && !need.includes(x.id) && !['legal', 'not-found', 'editorial-status'].includes(x.id));
   rows.push({ name: 'Produktion blockiert ungeklärte Absenderin, Zuständigkeitsverweise, Platzhalter und Visualisierungen', expected: need.join(', ') + ' · keine Strukturfehler', got: hit.join(', ') + ' · ' + (structural.length ? structural.length + ' Strukturfehler' : 'keine Strukturfehler'), ok: hit.length === need.length && !structural.length });
   const done = '| Stufe | Status |\n| --- | --- |\n' + REPORT_STAGES.map(([n]) => `| ${n} | erledigt |`).join('\n');
   const noRep = gate(cfg, files, { mode: 'production', exists: base, report: null }).findings.some(x => x.level === 'block' && x.id === 'review-report');
+  for (const [label, why] of [['Entwurf, noch nicht freigegeben', 'Entwurf'], ['Fachlich freigegeben', 'ohne Datum']]) {
+    const st = gate(Object.assign({}, cfg, { editorialStatusLabel: label }), files, { mode: 'production', exists: base }).findings.some(x => x.level === 'block' && x.id === 'editorial-status');
+    rows.push({ name: `Produktion blockiert Redaktionsstatus ${why} («${label}»)`, expected: 'editorial-status', got: st ? 'editorial-status' : 'nicht erkannt', ok: st }); }
+  { const st = gate(Object.assign({}, cfg, { editorialStatusLabel: 'Fachlich freigegeben am 15.10.2026' }), files, { mode: 'production', exists: base }).findings.some(x => x.id === 'editorial-status');
+    rows.push({ name: 'Redaktionsstatus mit Datum gibt frei («Fachlich freigegeben am 15.10.2026»)', expected: 'kein editorial-status', got: st ? 'editorial-status' : 'kein editorial-status', ok: !st }); }
   rows.push({ name: 'Produktion ohne Prüfbericht blockiert', expected: 'review-report', got: noRep ? 'review-report' : 'nicht erkannt', ok: noRep });
   const fullRep = gate(cfg, files, { mode: 'production', exists: base, report: done }).findings.some(x => x.id === 'review-report');
   rows.push({ name: 'Vollständiger Prüfbericht gibt die Veröffentlichung frei', expected: 'kein review-report', got: fullRep ? 'review-report' : 'kein review-report', ok: !fullRep });
@@ -540,7 +551,9 @@ async function loadSite(base, fetchFn) {
   const refs = new Set([resolve('', cfg.favicon).path]);
   for (const [path, html] of Object.entries(files)) { const d = parse(html); for (const x of all(d, y => (y.tag === 'link' && /icon/i.test(y.attrs.rel || '')) || y.tag === 'img' || (y.tag === 'script' && y.attrs.src))) { const u = x.attrs.href || x.attrs.src; if (u && !isExternalUrl(u)) refs.add(resolve(path, u).path); } }
   for (const r of refs) { try { const x = await get(r); if (x.ok) assets.add(r); } catch (e) { /* fehlt */ } }
-  return { cfg, files, exists: p => Object.prototype.hasOwnProperty.call(files, p) || assets.has(p) };
+  /* Paket 2026.10.2, P-8 (SPZ-47): auch den Prüfbericht laden, damit gate.html dieselben Befunde zeigt wie node tools/gate.mjs */
+  let report = null; try { const r = await get('PRUEFBERICHT.md'); if (r.ok) report = await r.text(); } catch (e) { /* fehlt: null wie im Gate der Kommandozeile */ }
+  return { cfg, files, report, exists: p => Object.prototype.hasOwnProperty.call(files, p) || assets.has(p) };
 }
 
 return { VERSION, BUILD, FORMATS, parse, renderPage, gate, selftest, loadSite, resolve };

@@ -733,3 +733,26 @@ html.puk-scroll-lock{overflow:hidden}
   [data-filter-item][hidden],[data-search-directory][hidden]{display:block!important}
   li[data-filter-item][hidden]{display:list-item!important}
 }
+
+/* ==== Paket 2026.10.2 · P-1, P-2, P-6, P-15 (15.10.2026, ergänzt, nicht Teil der Quelle; ENTSCHEIDE-PROFIL-2026-10-2.md) ====
+   P-2 Verweis im Text (data-responsibility-inline, .puk-longform__boundary) im Lesegrad der Seite statt 16 px bzw. 1rem
+      (R1-1, AR3-5); Farbe, Rahmen und Abstände bleiben.
+   P-6 Silbentrennung in Figuren und Überschriften, wenn ihr Container höchstens 12rem breit ist (wie NSK-2): bei 100 %
+      Schrift nie (Container mindestens 280 px, 12rem = 192 px), bei 200 % Schrift (12rem = 384 px) bei 320 und 360 px
+      Fensterbreite. Wirkt in Browsern mit deutscher Silbentrennung (Sprache aus lang).
+   P-1 Druck: Die Hülle .puk-vis-wide ist nicht mehr unteilbar. Abfolgen (Prozesspfad C, Entscheidungsweg F, Modell in
+      Schritten G) dürfen zwischen ihren Schritten umbrechen; jeder Schritt bleibt zusammen. Titel, Kernaussage und Kurztext
+      bleiben beim ersten Schritt (break-after:avoid oben), die Kennzeichnung folgt direkt auf das Ende der Darstellung.
+      Räumliche Darstellungen (Kreislauf, Netz, Schichten, Überschneidung, Szene) und Gegenüberstellungen bleiben unteilbar.
+      Ist eine Darstellung mit ihrer Liste länger als eine A4-Seite, entsteht davor keine leere Seite mehr (SPZ-F-32, NSK-1).
+   P-15 Druck: Abschnittsüberschriften der Langform stehen im Fluss; position:sticky galt im Druck sonst weiter, wenn der
+      Druckbereich breiter als 760 px ist, und setzte Überschriften über Einträge (NAR34-2). */
+.puk-longform__boundary{font-size:var(--puk-read-size)}
+@container (max-width:12rem){.puk-vis-figure,.puk-web-h2,.puk-web-h3{hyphens:auto}}
+@media print{
+  .puk-vis-wide{break-inside:auto}
+  .puk-vis-figure>:is(.puk-vis-path,.puk-vis-decision,.puk-vis-build),.puk-vis-build>.puk-vis-build__steps{break-inside:auto}
+  :is(.puk-vis-path,.puk-vis-decision,.puk-vis-build__steps)>li{break-inside:avoid}
+  .puk-vis-figure>figcaption{break-before:avoid}
+  .puk-longform__section-heading{position:static}
+}

@@ -17,6 +17,11 @@
 
 **15.10.2026 · P-3 und P-7 entschieden.** Die Fachstelle hat im Chat je die empfohlene Variante gewählt: P-3 «Ausnahme festhalten», P-7 «… – zur Startseite dieser Website». Damit sind alle Punkte entschieden; der Bau des Pakets kann beginnen.
 
+**15.10.2026 · Paket 2026.10.2 gebaut** von der bauenden Sitzung (Claude Code) im Auftrag der Fachstelle («ja, leg los»).
+- **Artefakt:** Version 46 (`1792059369-2052`). Im Repository: Version 2026.10.2, Starter Build r4-9, Selbsttest 68/68; `puk-website-profil-2026.10.2.zip` ersetzt das Paket 2026.10.1.
+- **Selbstprüfung mit Belegen:** `review/paket-2026-10-2/SELBSTPRUEFUNG.md`. Abweichung bei P-1: Kurze Abfolgen können zwischen zwei Schritten umbrechen (9 von 204 gemessenen Fällen); die Abnahme «kurze Figuren unverändert» ist damit nicht wörtlich erfüllt.
+- **Offen:** Prüfung des Pakets durch eine Sitzung, die nicht gebaut hat (Ablauf, Schritt 2), danach die Schritte 3 und 4.
+
 **Anlass:**
 - Auflage AR3-5 der Borderline-Website (R3 Freigabe-Audit, 13.10.2026): Die Ausnahme R1-1 endet mit einem neuen Profilpaket, Frist 13.01.2027.
 - Die Vorschläge für das Profil aus `templates/website/borderline-angehoerige/ENTSCHEIDE-SCHLUSSPRUEFUNG.md`, Abschnitt 5.6.
@@ -90,6 +95,7 @@ _Geändert 15.10.2026: Vorbedingung neu; die Websites übernehmen das Paket getr
    - ersetzt es in diesem Repository und führt das Änderungsprotokoll im `README.md`;
    - Websites unter `templates/website/<website>/` bleiben erhalten;
    - Selbsttest des Gates.
+   - **Stand 15.10.2026: umgesetzt;** Selbstprüfung in `review/paket-2026-10-2/SELBSTPRUEFUNG.md`.
 2. **Prüfsitzung (Profil):** prüft das Paket gegen diese Entscheide und die Abnahmen; Abnahmen an der Website «Depression» an einer Kopie mit dem neuen Profil.
 3. **Borderline-Website:**
    - übernimmt das Paket im Repository `christaegger-dot/borderline-angehoerige`, mit den Abnahmen dort (P-1 mit `borderline.css`, P-2 an allen 28 Stellen, P-4, P-15 an `quellen`), Nachprüfung in eigener Sitzung, Export und Prüfung der Produktion;
