@@ -80,7 +80,7 @@ _Geändert 15.10.2026: Vorbedingung neu; die Websites übernehmen das Paket getr
 0. **Vorbedingung:**
    - Die Änderungen an `components/interaktion.js` und `starter.css` (Abschnitt «Geänderte Lage») kommen zuerst ins Design-System-Artefakt und ins Änderungsprotokoll im `README.md`. Werden sie nicht übernommen, ist das ein eigener, begründeter Entscheid.
    - **Abnahme:** Alle Dateien, die Artefakt und Repository gemeinsam haben, sind byte-gleich.
-   - **Stand 15.10.2026: umgesetzt** im Artefakt, Version 44 (`1792055962-489b`). Die drei geänderten Dateien (`components/interaktion.js`, `starter.css`, `README.md`) sind nach dem Veröffentlichen neu geladen und byte-gleich mit dem Repository. Der Abgleich aller gemeinsamen Dateien folgt. Daraus ergeben sich P-16 und P-17.
+   - **Stand 15.10.2026: umgesetzt** im Artefakt, Version 44 (`1792055962-489b`). **Abnahme erfüllt:** Nach dem Veröffentlichen alle 286 Dateien unter `project/` neu geladen; 213 von 213 gemeinsamen Dateien byte-gleich mit dem Repository, darunter die drei geänderten (`components/interaktion.js`, `starter.css`, `README.md`). Nur im Artefakt stehen weiter 73 Dateien (69 Vorschaukarten, `design-system.json`, drei Dateien unter `assets/`). Daraus ergeben sich P-16 und P-17.
 1. **Bauende Sitzung (Profil):**
    - ändert das Design-System-Artefakt nach P-1, P-2, P-4 bis P-8, P-10 und P-13 bis P-15 und erzeugt daraus das Paket 2026.10.2; P-3, P-16 und P-17 erst nach dem Entscheid dazu;
    - ersetzt es in diesem Repository und führt das Änderungsprotokoll im `README.md`;
