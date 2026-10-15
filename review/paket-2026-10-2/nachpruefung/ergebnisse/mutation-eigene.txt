@@ -1,0 +1,13 @@
+Ausgangslage: Selbsttest: 72/72 bestanden.
+entwurf-nur-ohne-datum: Selbsttest: 71/72 bestanden.
+    FAIL Produktion blockiert Redaktionsstatus Entwurf mit Datum («Entwurf vom 15.10.2026») · erwartet editorial-status · erkannt nicht erkannt
+entwurf-nur-am-anfang: Selbsttest: 71/72 bestanden.
+    FAIL Produktion blockiert Redaktionsstatus Entwurf mit Datum («Entwurf vom 15.10.2026») · erwartet editorial-status · erkannt nicht erkannt
+kennzeichen-muster-nur-hinweis: Selbsttest: 71/72 bestanden.
+    FAIL Kennzeichen data-print-split an einer Gegenüberstellung · erwartet print-split · erkannt nicht erkannt
+kennzeichen-element-nur-hinweis: Selbsttest: 71/72 bestanden.
+    FAIL Kennzeichen data-print-split an der Hülle statt an der Figur · erwartet print-split · erkannt nicht erkannt
+kennzeichen-vergleich-zulaessig: Selbsttest: 72/72 bestanden.
+kennzeichen-ohne-schrittliste: Selbsttest: 72/72 bestanden.
+kennzeichen-entscheidungsweg-weg: Selbsttest: 72/72 bestanden.
+kennzeichen-modell-weg: Selbsttest: 72/72 bestanden.

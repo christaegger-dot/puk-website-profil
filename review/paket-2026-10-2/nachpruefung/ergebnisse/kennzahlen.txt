@@ -1,0 +1,120 @@
+== Echte Seiten (Starter 3, Kopie «Depression» 7) × 12 Einstellungen, ohne Marken
+neu c65db24: 120 PDF, 204 Figurfälle; ganz auf einer Seite 171; Titel+Kern(+Anfang) zusammen 195; Kennzeichnung direkt 204; PDF mit leerer Seite 0; leere Rahmen am Seitenanfang/-ende 0 in 0 PDF; leere Bänder in der Seitenmitte 12
+vorher 8abc333: 120 PDF, 204 Figurfälle; ganz auf einer Seite 171; Titel+Kern(+Anfang) zusammen 195; Kennzeichnung direkt 204; PDF mit leerer Seite 0; leere Rahmen am Seitenanfang/-ende 0 in 0 PDF; leere Bänder in der Seitenmitte 12
+Paket 1047ad6: 120 PDF, 204 Figurfälle; ganz auf einer Seite 163; Titel+Kern(+Anfang) zusammen 196; Kennzeichnung direkt 204; PDF mit leerer Seite 1; leere Rahmen am Seitenanfang/-ende 86 in 64 PDF; leere Bänder in der Seitenmitte 11
+Gegenprobe Figurregel 8abc333 am neuen Stand: 120 PDF, 204 Figurfälle; ganz auf einer Seite 171; Titel+Kern(+Anfang) zusammen 195; Kennzeichnung direkt 204; PDF mit leerer Seite 0; leere Rahmen am Seitenanfang/-ende 0 in 0 PDF; leere Bänder in der Seitenmitte 12
+
+neu gegen Gegenprobe (Figurregel 8abc333 am neuen Stand): 120 von 120 PDF Seitenbild für Seitenbild gleich (MD5 der Bildpunkte, 50 dpi)
+
+neu gegen 8abc333, je Figur (Seite von Titel, Kern, Anfang, Ende, Kennzeichnung):
+  gleiche Seiten aller Teile: 204, verschieden: 0; in beiden ganz auf einer Seite: 171; Seitenzahl des PDF gleich: 109 von 120
+
+Paket 1047ad6: kurze Abfolgen über zwei Seiten 9: ['v-dv-entstehung', 'v-us-wegweiser']; leere Seite: ['fuer-sich-sorgen__x1__m10__s110']
+Kopiervorlagen neu: 24 PDF; leere Seite 0; leere Rahmen am Seitenanfang/-ende 0; leere Bänder Mitte 6
+Kopiervorlagen 8abc333: 24 PDF; leere Seite 0; leere Rahmen am Seitenanfang/-ende 0; leere Bänder Mitte 6
+
+== Abfolgen verlängert (nur die 4 Abfolge-Figuren gezählt)
+fünffach, gekennzeichnet (Abnahme): 48 Fälle; Titel, Kern, Anfang zusammen 48; Kennzeichnung direkt 48; PDF mit leerer Seite 0; leere Rahmen am Seitenanfang/-ende 0; ganz auf einer Seite 0
+fünffach, ohne Kennzeichen, neu: 48 Fälle; Titel, Kern, Anfang zusammen 40; Kennzeichnung direkt 43; PDF mit leerer Seite 35; leere Rahmen am Seitenanfang/-ende 36; ganz auf einer Seite 0
+   nicht erfüllt: behandlung-verstehen m0__s80 v-bh-ablauf (3, 3, 3, 3, 4)
+   nicht erfüllt: unterstuetzung-finden m0__s80 v-us-wegweiser (2, 2, 2, 2, 3)
+   nicht erfüllt: behandlung-und-verlauf m0__s90 v-bv-weg (4, 4, 4, 5, 6)
+   nicht erfüllt: behandlung-und-verlauf m15__s100 v-bv-weg (5, 5, 5, 7, 8)
+   nicht erfüllt: behandlung-und-verlauf m15__s80 v-bv-weg (4, 4, 4, 5, 6)
+   nicht erfüllt: depression-verstehen m0__s100 v-dv-entstehung (6, 6, 7, 8, 8)
+   nicht erfüllt: depression-verstehen m0__s110 v-dv-entstehung (7, 7, 8, 9, 9)
+   nicht erfüllt: depression-verstehen m10__s100 v-dv-entstehung (7, 7, 8, 9, 9)
+   nicht erfüllt: depression-verstehen m10__s110 v-dv-entstehung (7, 7, 8, 10, 10)
+   nicht erfüllt: depression-verstehen m10__s90 v-dv-entstehung (6, 6, 7, 8, 8)
+   nicht erfüllt: depression-verstehen m15__s100 v-dv-entstehung (7, 7, 8, 9, 9)
+   nicht erfüllt: depression-verstehen m15__s110 v-dv-entstehung (8, 8, 9, 11, 11)
+   leere Seite: psychoeducation-site-starter__behandlung-verstehen__x5__m0__s100 [2] von 6
+   leere Seite: psychoeducation-site-starter__behandlung-verstehen__x5__m0__s110 [2] von 6
+   leere Seite: psychoeducation-site-starter__behandlung-verstehen__x5__m0__s80 [2] von 5
+   leere Seite: psychoeducation-site-starter__behandlung-verstehen__x5__m0__s90 [2] von 5
+   leere Seite: psychoeducation-site-starter__behandlung-verstehen__x5__m10__s100 [2] von 6
+   leere Seite: psychoeducation-site-starter__behandlung-verstehen__x5__m10__s110 [2] von 7
+   leere Seite: psychoeducation-site-starter__behandlung-verstehen__x5__m10__s80 [2] von 5
+   leere Seite: psychoeducation-site-starter__behandlung-verstehen__x5__m10__s90 [2] von 6
+   leere Seite: psychoeducation-site-starter__behandlung-verstehen__x5__m15__s100 [2] von 6
+   leere Seite: psychoeducation-site-starter__behandlung-verstehen__x5__m15__s110 [2] von 8
+   leere Seite: psychoeducation-site-starter__behandlung-verstehen__x5__m15__s80 [2] von 5
+   leere Seite: psychoeducation-site-starter__behandlung-verstehen__x5__m15__s90 [2] von 6
+   leere Seite: psychoeducation-site-starter__unterstuetzung-finden__x5__m0__s100 [2] von 7
+   leere Seite: psychoeducation-site-starter__unterstuetzung-finden__x5__m0__s110 [2] von 7
+   leere Seite: psychoeducation-site-starter__unterstuetzung-finden__x5__m0__s90 [2] von 7
+   leere Seite: psychoeducation-site-starter__unterstuetzung-finden__x5__m10__s100 [2] von 7
+   leere Seite: psychoeducation-site-starter__unterstuetzung-finden__x5__m10__s110 [2] von 7
+   leere Seite: psychoeducation-site-starter__unterstuetzung-finden__x5__m10__s80 [2] von 6
+   leere Seite: psychoeducation-site-starter__unterstuetzung-finden__x5__m10__s90 [2] von 7
+   leere Seite: psychoeducation-site-starter__unterstuetzung-finden__x5__m15__s100 [2] von 7
+   leere Seite: psychoeducation-site-starter__unterstuetzung-finden__x5__m15__s110 [2] von 8
+   leere Seite: psychoeducation-site-starter__unterstuetzung-finden__x5__m15__s80 [2] von 7
+   leere Seite: psychoeducation-site-starter__unterstuetzung-finden__x5__m15__s90 [2] von 7
+   leere Seite: zz-dep-test__depression-verstehen__x5__m0__s100 [5] von 13
+   leere Seite: zz-dep-test__depression-verstehen__x5__m0__s110 [6] von 14
+   leere Seite: zz-dep-test__depression-verstehen__x5__m0__s80 [5] von 10
+   leere Seite: zz-dep-test__depression-verstehen__x5__m0__s90 [5] von 11
+   leere Seite: zz-dep-test__depression-verstehen__x5__m10__s100 [6] von 13
+   leere Seite: zz-dep-test__depression-verstehen__x5__m10__s110 [6] von 14
+   leere Seite: zz-dep-test__depression-verstehen__x5__m10__s80 [5] von 11
+   leere Seite: zz-dep-test__depression-verstehen__x5__m10__s90 [5] von 12
+   leere Seite: zz-dep-test__depression-verstehen__x5__m15__s100 [6] von 14
+   leere Seite: zz-dep-test__depression-verstehen__x5__m15__s110 [7] von 15
+   leere Seite: zz-dep-test__depression-verstehen__x5__m15__s80 [5] von 11
+   leere Seite: zz-dep-test__depression-verstehen__x5__m15__s90 [5] von 12
+fünffach, ohne Kennzeichen, 8abc333: 48 Fälle; Titel, Kern, Anfang zusammen 40; Kennzeichnung direkt 43; PDF mit leerer Seite 35; leere Rahmen am Seitenanfang/-ende 36; ganz auf einer Seite 0
+   nicht erfüllt: behandlung-verstehen m0__s80 v-bh-ablauf (3, 3, 3, 3, 4)
+   nicht erfüllt: unterstuetzung-finden m0__s80 v-us-wegweiser (2, 2, 2, 2, 3)
+   nicht erfüllt: behandlung-und-verlauf m0__s90 v-bv-weg (4, 4, 4, 5, 6)
+   nicht erfüllt: behandlung-und-verlauf m15__s100 v-bv-weg (5, 5, 5, 7, 8)
+   nicht erfüllt: behandlung-und-verlauf m15__s80 v-bv-weg (4, 4, 4, 5, 6)
+   nicht erfüllt: depression-verstehen m0__s100 v-dv-entstehung (6, 6, 7, 8, 8)
+   nicht erfüllt: depression-verstehen m0__s110 v-dv-entstehung (7, 7, 8, 9, 9)
+   nicht erfüllt: depression-verstehen m10__s100 v-dv-entstehung (7, 7, 8, 9, 9)
+   nicht erfüllt: depression-verstehen m10__s110 v-dv-entstehung (7, 7, 8, 10, 10)
+   nicht erfüllt: depression-verstehen m10__s90 v-dv-entstehung (6, 6, 7, 8, 8)
+   nicht erfüllt: depression-verstehen m15__s100 v-dv-entstehung (7, 7, 8, 9, 9)
+   nicht erfüllt: depression-verstehen m15__s110 v-dv-entstehung (8, 8, 9, 11, 11)
+   leere Seite: psychoeducation-site-starter__behandlung-verstehen__x5__m0__s100 [2] von 6
+   leere Seite: psychoeducation-site-starter__behandlung-verstehen__x5__m0__s110 [2] von 6
+   leere Seite: psychoeducation-site-starter__behandlung-verstehen__x5__m0__s80 [2] von 5
+   leere Seite: psychoeducation-site-starter__behandlung-verstehen__x5__m0__s90 [2] von 5
+   leere Seite: psychoeducation-site-starter__behandlung-verstehen__x5__m10__s100 [2] von 6
+   leere Seite: psychoeducation-site-starter__behandlung-verstehen__x5__m10__s110 [2] von 7
+   leere Seite: psychoeducation-site-starter__behandlung-verstehen__x5__m10__s80 [2] von 5
+   leere Seite: psychoeducation-site-starter__behandlung-verstehen__x5__m10__s90 [2] von 6
+   leere Seite: psychoeducation-site-starter__behandlung-verstehen__x5__m15__s100 [2] von 6
+   leere Seite: psychoeducation-site-starter__behandlung-verstehen__x5__m15__s110 [2] von 8
+   leere Seite: psychoeducation-site-starter__behandlung-verstehen__x5__m15__s80 [2] von 5
+   leere Seite: psychoeducation-site-starter__behandlung-verstehen__x5__m15__s90 [2] von 6
+   leere Seite: psychoeducation-site-starter__unterstuetzung-finden__x5__m0__s100 [2] von 7
+   leere Seite: psychoeducation-site-starter__unterstuetzung-finden__x5__m0__s110 [2] von 7
+   leere Seite: psychoeducation-site-starter__unterstuetzung-finden__x5__m0__s90 [2] von 7
+   leere Seite: psychoeducation-site-starter__unterstuetzung-finden__x5__m10__s100 [2] von 7
+   leere Seite: psychoeducation-site-starter__unterstuetzung-finden__x5__m10__s110 [2] von 7
+   leere Seite: psychoeducation-site-starter__unterstuetzung-finden__x5__m10__s80 [2] von 7
+   leere Seite: psychoeducation-site-starter__unterstuetzung-finden__x5__m10__s90 [2] von 7
+   leere Seite: psychoeducation-site-starter__unterstuetzung-finden__x5__m15__s100 [2] von 7
+   leere Seite: psychoeducation-site-starter__unterstuetzung-finden__x5__m15__s110 [2] von 8
+   leere Seite: psychoeducation-site-starter__unterstuetzung-finden__x5__m15__s80 [2] von 7
+   leere Seite: psychoeducation-site-starter__unterstuetzung-finden__x5__m15__s90 [2] von 7
+   leere Seite: depression-angehoerige__depression-verstehen__x5__m0__s100 [5] von 13
+   leere Seite: depression-angehoerige__depression-verstehen__x5__m0__s110 [6] von 14
+   leere Seite: depression-angehoerige__depression-verstehen__x5__m0__s80 [5] von 10
+   leere Seite: depression-angehoerige__depression-verstehen__x5__m0__s90 [5] von 11
+   leere Seite: depression-angehoerige__depression-verstehen__x5__m10__s100 [6] von 14
+   leere Seite: depression-angehoerige__depression-verstehen__x5__m10__s110 [6] von 14
+   leere Seite: depression-angehoerige__depression-verstehen__x5__m10__s80 [5] von 11
+   leere Seite: depression-angehoerige__depression-verstehen__x5__m10__s90 [5] von 12
+   leere Seite: depression-angehoerige__depression-verstehen__x5__m15__s100 [6] von 14
+   leere Seite: depression-angehoerige__depression-verstehen__x5__m15__s110 [7] von 16
+   leere Seite: depression-angehoerige__depression-verstehen__x5__m15__s80 [5] von 11
+   leere Seite: depression-angehoerige__depression-verstehen__x5__m15__s90 [5] von 12
+1-fach, gekennzeichnet: 48 Fälle; Titel, Kern, Anfang zusammen 48; Kennzeichnung direkt 48; PDF mit leerer Seite 0; leere Rahmen am Seitenanfang/-ende 0; ganz auf einer Seite 27
+2-fach, gekennzeichnet: 48 Fälle; Titel, Kern, Anfang zusammen 48; Kennzeichnung direkt 48; PDF mit leerer Seite 0; leere Rahmen am Seitenanfang/-ende 0; ganz auf einer Seite 2
+3-fach, gekennzeichnet: 48 Fälle; Titel, Kern, Anfang zusammen 48; Kennzeichnung direkt 48; PDF mit leerer Seite 0; leere Rahmen am Seitenanfang/-ende 0; ganz auf einer Seite 0
+4-fach, gekennzeichnet: 48 Fälle; Titel, Kern, Anfang zusammen 48; Kennzeichnung direkt 48; PDF mit leerer Seite 0; leere Rahmen am Seitenanfang/-ende 0; ganz auf einer Seite 0
+6-fach, gekennzeichnet: 48 Fälle; Titel, Kern, Anfang zusammen 48; Kennzeichnung direkt 48; PDF mit leerer Seite 1; leere Rahmen am Seitenanfang/-ende 0; ganz auf einer Seite 0
+   leere Seite: zz-dep-test__depression-verstehen__x6__m0__s80 [6] von 9
+8-fach, gekennzeichnet: 48 Fälle; Titel, Kern, Anfang zusammen 48; Kennzeichnung direkt 48; PDF mit leerer Seite 0; leere Rahmen am Seitenanfang/-ende 0; ganz auf einer Seite 0

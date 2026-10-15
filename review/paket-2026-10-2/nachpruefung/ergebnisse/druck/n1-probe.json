@@ -1,0 +1,727 @@
+{
+ "zz-dep-test__depression-verstehen__x6__m0__s100": {
+  "seiten": 11,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "f1c69847b59e",
+   "04c6ea211205",
+   "51578154494e",
+   "939192214e4d",
+   "a14144b364af",
+   "72beb550f793",
+   "8aa4d58ce4f2",
+   "b02cedf61d1b",
+   "b85dd8c66523",
+   "4b021181658f",
+   "4ec1bb41fe93"
+  ],
+  "tinte_bis": [
+   96.9,
+   66.2,
+   96.6,
+   67.6,
+   94.0,
+   90.4,
+   96.6,
+   97.8,
+   95.1,
+   64.7,
+   27.1
+  ],
+  "figuren": [
+   {
+    "id": "v-dv-schichten",
+    "type": "layer-model",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 7,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-dv-entstehung",
+    "type": "stepwise-model",
+    "n": 18,
+    "L": 5,
+    "K": 5,
+    "F": 5,
+    "E": 7,
+    "C": 7,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__depression-verstehen__x6__m0__s110": {
+  "seiten": 11,
+  "leer": [],
+  "leere_rahmen": [
+   {
+    "seite": 3,
+    "oben": 66.0,
+    "unten": 67.6,
+    "hoehe": 1.5,
+    "leer": true,
+    "lage": "Mitte"
+   }
+  ],
+  "md5": [
+   "3ac1ab7b725b",
+   "8315eae7b993",
+   "eaf45c1cd8b2",
+   "e4609556ce81",
+   "46c26d6916e2",
+   "5d1a460191c3",
+   "ab3696dc905a",
+   "cdcdf809f4c7",
+   "0964b4b12ec4",
+   "bbbf17252992",
+   "5c77e09226ae"
+  ],
+  "tinte_bis": [
+   98.8,
+   73.9,
+   87.0,
+   88.9,
+   93.7,
+   90.1,
+   98.0,
+   99.0,
+   99.0,
+   93.7,
+   27.8
+  ],
+  "figuren": [
+   {
+    "id": "v-dv-schichten",
+    "type": "layer-model",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 7,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-dv-entstehung",
+    "type": "stepwise-model",
+    "n": 18,
+    "L": 5,
+    "K": 5,
+    "F": 5,
+    "E": 7,
+    "C": 7,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__depression-verstehen__x6__m0__s80": {
+  "seiten": 9,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "abd9980e997f",
+   "f9a58ffff340",
+   "713800090071",
+   "ece381a696b4",
+   "2025ca51eecd",
+   "92f3ad0bbc91",
+   "ede07d2003a3",
+   "975136276a59",
+   "da856caad13c"
+  ],
+  "tinte_bis": [
+   95.7,
+   43.3,
+   97.4,
+   94.7,
+   84.6,
+   99.1,
+   94.7,
+   98.3,
+   2.4
+  ],
+  "figuren": [
+   {
+    "id": "v-dv-schichten",
+    "type": "layer-model",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 5,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-dv-entstehung",
+    "type": "stepwise-model",
+    "n": 18,
+    "L": 4,
+    "K": 4,
+    "F": 4,
+    "E": 5,
+    "C": 5,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__depression-verstehen__x6__m0__s90": {
+  "seiten": 10,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "3ea5c3ba6718",
+   "ebc354c4047f",
+   "d4c37e1c5bfe",
+   "55cae9d7f90c",
+   "b55ed2e57ca2",
+   "3f45d151a92a",
+   "99c27b5722bf",
+   "0a61815f8f2e",
+   "4d7cb0ab65b6",
+   "03acbaeb534f"
+  ],
+  "tinte_bis": [
+   95.9,
+   54.9,
+   99.1,
+   50.0,
+   96.8,
+   81.4,
+   94.9,
+   97.1,
+   98.6,
+   37.0
+  ],
+  "figuren": [
+   {
+    "id": "v-dv-schichten",
+    "type": "layer-model",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 6,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-dv-entstehung",
+    "type": "stepwise-model",
+    "n": 18,
+    "L": 5,
+    "K": 5,
+    "F": 5,
+    "E": 6,
+    "C": 6,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__depression-verstehen__x6__m10__s100": {
+  "seiten": 11,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "0d80122cf431",
+   "7fed4ff35c80",
+   "b45e49074dbc",
+   "2a6a1a5bcd35",
+   "af704514a061",
+   "62417494b109",
+   "5fd9a8e78a79",
+   "04d1c8f53eb5",
+   "6999afd8f06c",
+   "0550239c83ae",
+   "e5e31fded610"
+  ],
+  "tinte_bis": [
+   93.2,
+   70.5,
+   82.4,
+   84.0,
+   88.2,
+   93.9,
+   92.2,
+   95.1,
+   95.4,
+   95.4,
+   17.7
+  ],
+  "figuren": [
+   {
+    "id": "v-dv-schichten",
+    "type": "layer-model",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 7,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-dv-entstehung",
+    "type": "stepwise-model",
+    "n": 18,
+    "L": 5,
+    "K": 5,
+    "F": 5,
+    "E": 7,
+    "C": 7,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__depression-verstehen__x6__m10__s110": {
+  "seiten": 12,
+  "leer": [],
+  "leere_rahmen": [
+   {
+    "seite": 3,
+    "oben": 69.3,
+    "unten": 70.8,
+    "hoehe": 1.5,
+    "leer": true,
+    "lage": "Mitte"
+   }
+  ],
+  "md5": [
+   "9ad264977340",
+   "86c72acdd2a5",
+   "d30a5fa3efa6",
+   "eff00699325f",
+   "ed775b9e6785",
+   "aa9e1afec2b3",
+   "3fa812f53b6c",
+   "ff4ffd4e1719",
+   "83059d91433f",
+   "227888d7cd35",
+   "7229de6c4b97",
+   "1212fe8c533a"
+  ],
+  "tinte_bis": [
+   93.7,
+   86.2,
+   75.3,
+   90.6,
+   92.0,
+   93.3,
+   73.0,
+   93.9,
+   92.5,
+   94.2,
+   86.5,
+   31.1
+  ],
+  "figuren": [
+   {
+    "id": "v-dv-schichten",
+    "type": "layer-model",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 7,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-dv-entstehung",
+    "type": "stepwise-model",
+    "n": 18,
+    "L": 5,
+    "K": 5,
+    "F": 5,
+    "E": 7,
+    "C": 7,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__depression-verstehen__x6__m10__s80": {
+  "seiten": 9,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "55459600623e",
+   "c5009ef1c080",
+   "6b8ea8208168",
+   "5f2b245fcc17",
+   "88a3b77b1fb0",
+   "e81e0539b246",
+   "5a7f03dd8511",
+   "3ee3c5b16291",
+   "5f6ba75bce26"
+  ],
+  "tinte_bis": [
+   95.9,
+   45.4,
+   93.5,
+   94.0,
+   89.1,
+   93.3,
+   92.3,
+   93.0,
+   48.1
+  ],
+  "figuren": [
+   {
+    "id": "v-dv-schichten",
+    "type": "layer-model",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 6,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-dv-entstehung",
+    "type": "stepwise-model",
+    "n": 18,
+    "L": 4,
+    "K": 4,
+    "F": 4,
+    "E": 6,
+    "C": 6,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__depression-verstehen__x6__m10__s90": {
+  "seiten": 10,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "e676f2f86745",
+   "9f484061d3c3",
+   "bff176bd0794",
+   "ea14043155b3",
+   "716e50902593",
+   "109856d07c09",
+   "0342a4cb91f2",
+   "94c13a0db9fa",
+   "fb1b187415a8",
+   "83d878d572bb"
+  ],
+  "tinte_bis": [
+   90.6,
+   63.0,
+   94.7,
+   59.9,
+   87.9,
+   92.2,
+   94.9,
+   89.8,
+   92.3,
+   74.1
+  ],
+  "figuren": [
+   {
+    "id": "v-dv-schichten",
+    "type": "layer-model",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 7,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-dv-entstehung",
+    "type": "stepwise-model",
+    "n": 18,
+    "L": 5,
+    "K": 5,
+    "F": 5,
+    "E": 7,
+    "C": 7,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__depression-verstehen__x6__m15__s100": {
+  "seiten": 11,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "a5b2e2d8ea4c",
+   "d5119aa5cef8",
+   "e81296bf8314",
+   "461a6601ab00",
+   "0f02c7eece2b",
+   "c968346b0457",
+   "88c83169f01d",
+   "c052b9e56fe1",
+   "f5e1228d6fcb",
+   "0a8e278f6ec8",
+   "d5b12e1dd957"
+  ],
+  "tinte_bis": [
+   92.3,
+   74.4,
+   84.1,
+   85.3,
+   90.1,
+   86.9,
+   92.3,
+   86.7,
+   94.5,
+   93.9,
+   40.1
+  ],
+  "figuren": [
+   {
+    "id": "v-dv-schichten",
+    "type": "layer-model",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 7,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-dv-entstehung",
+    "type": "stepwise-model",
+    "n": 18,
+    "L": 5,
+    "K": 5,
+    "F": 5,
+    "E": 7,
+    "C": 7,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__depression-verstehen__x6__m15__s110": {
+  "seiten": 13,
+  "leer": [],
+  "leere_rahmen": [
+   {
+    "seite": 3,
+    "oben": 71.0,
+    "unten": 72.5,
+    "hoehe": 1.5,
+    "leer": true,
+    "lage": "Mitte"
+   }
+  ],
+  "md5": [
+   "a8b66752ed16",
+   "ad4a3e68a0f0",
+   "6c8f004d5e24",
+   "fc494f5e36e7",
+   "d80d87fcaca8",
+   "51c1a700a019",
+   "4c5c641a21c6",
+   "2c9ed2e30fa6",
+   "8c12b2544b28",
+   "4844f886e469",
+   "f2040da2f178",
+   "94d95ffcc612",
+   "efdcac402386"
+  ],
+  "tinte_bis": [
+   91.1,
+   92.7,
+   77.1,
+   92.3,
+   31.9,
+   87.0,
+   86.0,
+   65.5,
+   92.3,
+   92.3,
+   86.9,
+   89.2,
+   55.5
+  ],
+  "figuren": [
+   {
+    "id": "v-dv-schichten",
+    "type": "layer-model",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 8,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-dv-entstehung",
+    "type": "stepwise-model",
+    "n": 18,
+    "L": 6,
+    "K": 6,
+    "F": 6,
+    "E": 8,
+    "C": 8,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__depression-verstehen__x6__m15__s80": {
+  "seiten": 10,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "131e1f25136a",
+   "0aad69dcea87",
+   "9c83dfc9da7a",
+   "89e7d27a8593",
+   "e15db7b82e49",
+   "cc84732a3369",
+   "346c0d1dfc22",
+   "30aa79a50e28",
+   "c68fc215e9f6",
+   "d410f7d85642"
+  ],
+  "tinte_bis": [
+   94.4,
+   49.8,
+   92.7,
+   49.0,
+   91.0,
+   77.3,
+   93.2,
+   93.3,
+   93.2,
+   30.9
+  ],
+  "figuren": [
+   {
+    "id": "v-dv-schichten",
+    "type": "layer-model",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 6,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-dv-entstehung",
+    "type": "stepwise-model",
+    "n": 18,
+    "L": 5,
+    "K": 5,
+    "F": 5,
+    "E": 6,
+    "C": 6,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__depression-verstehen__x6__m15__s90": {
+  "seiten": 10,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "22a4de914a43",
+   "368e755a98ef",
+   "8f05f9ab7ee8",
+   "c78d5805b9d2",
+   "4a36a8cb7b93",
+   "9d1628fe66eb",
+   "122171c2409c",
+   "9ccd99d2c6a0",
+   "d141d61e1efe",
+   "dab7c5f70df7"
+  ],
+  "tinte_bis": [
+   90.6,
+   60.4,
+   93.7,
+   63.5,
+   88.9,
+   86.3,
+   90.6,
+   89.4,
+   90.6,
+   78.0
+  ],
+  "figuren": [
+   {
+    "id": "v-dv-schichten",
+    "type": "layer-model",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 7,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-dv-entstehung",
+    "type": "stepwise-model",
+    "n": 18,
+    "L": 5,
+    "K": 5,
+    "F": 5,
+    "E": 7,
+    "C": 7,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ }
+}

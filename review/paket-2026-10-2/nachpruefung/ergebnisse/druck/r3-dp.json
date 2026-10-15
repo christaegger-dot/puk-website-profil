@@ -1,0 +1,1597 @@
+{
+ "zz-dep-test__behandlung-und-verlauf__x3__m0__s100": {
+  "seiten": 11,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "31429ab43b5d",
+   "c8c018093b33",
+   "520ef47c30c2",
+   "ac2994001f39",
+   "a5cba2766905",
+   "a0c809b69194",
+   "aaab2862e2b6",
+   "f4c1620b2ff2",
+   "6512cee23cd8",
+   "72be6ad75214",
+   "92b5e631d546"
+  ],
+  "tinte_bis": [
+   96.8,
+   45.7,
+   88.4,
+   100.0,
+   91.1,
+   97.4,
+   50.3,
+   96.1,
+   86.0,
+   95.2,
+   76.5
+  ],
+  "figuren": [
+   {
+    "id": "v-bv-vergleich",
+    "type": "comparison",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 3,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-weg",
+    "type": "process",
+    "n": 15,
+    "L": 4,
+    "K": 4,
+    "F": 4,
+    "E": 6,
+    "C": 6,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-fruehzeichen",
+    "type": "continuum",
+    "n": 0,
+    "L": 8,
+    "K": 8,
+    "F": null,
+    "E": null,
+    "C": 8,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__behandlung-und-verlauf__x3__m0__s110": {
+  "seiten": 11,
+  "leer": [],
+  "leere_rahmen": [
+   {
+    "seite": 3,
+    "oben": 73.7,
+    "unten": 75.3,
+    "hoehe": 1.5,
+    "leer": true,
+    "lage": "Mitte"
+   }
+  ],
+  "md5": [
+   "1a28c4247439",
+   "45ba9bf97e71",
+   "41b04f731aa1",
+   "b3171d1278e1",
+   "1c4593f3a27c",
+   "b368f66e493c",
+   "5bca0f9bd3f3",
+   "f018a8de5841",
+   "44f95c9eb73e",
+   "f5986940acec",
+   "8deb98223ea4"
+  ],
+  "tinte_bis": [
+   97.8,
+   57.0,
+   79.9,
+   95.1,
+   100.0,
+   92.8,
+   98.3,
+   98.3,
+   98.3,
+   92.0,
+   58.2
+  ],
+  "figuren": [
+   {
+    "id": "v-bv-vergleich",
+    "type": "comparison",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 3,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-weg",
+    "type": "process",
+    "n": 15,
+    "L": 4,
+    "K": 4,
+    "F": 4,
+    "E": 6,
+    "C": 6,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-fruehzeichen",
+    "type": "continuum",
+    "n": 0,
+    "L": 8,
+    "K": 8,
+    "F": null,
+    "E": null,
+    "C": 8,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__behandlung-und-verlauf__x3__m0__s80": {
+  "seiten": 9,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "326aec8bbfc2",
+   "4120da5625dc",
+   "94f78c37aad3",
+   "8c7f0bd83b0b",
+   "0222f3959748",
+   "5e8fa436a827",
+   "56d8641d9849",
+   "19defdd0e88b",
+   "003570a7f20a"
+  ],
+  "tinte_bis": [
+   53.4,
+   57.8,
+   63.7,
+   96.2,
+   97.3,
+   53.6,
+   92.3,
+   97.6,
+   60.8
+  ],
+  "figuren": [
+   {
+    "id": "v-bv-vergleich",
+    "type": "comparison",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 3,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-weg",
+    "type": "process",
+    "n": 15,
+    "L": 4,
+    "K": 4,
+    "F": 4,
+    "E": 5,
+    "C": 5,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-fruehzeichen",
+    "type": "continuum",
+    "n": 0,
+    "L": 7,
+    "K": 7,
+    "F": null,
+    "E": null,
+    "C": 7,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__behandlung-und-verlauf__x3__m0__s90": {
+  "seiten": 10,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "e5d14dab0d4a",
+   "fb8a42ce0d22",
+   "8f42f9414048",
+   "1215928dc75f",
+   "0280c5c99b38",
+   "e5bd412dd030",
+   "8c78ac3782b2",
+   "1371777e6f31",
+   "2951cb646c87",
+   "f8fbf3b28b55"
+  ],
+  "tinte_bis": [
+   97.4,
+   26.6,
+   76.3,
+   93.0,
+   97.4,
+   92.8,
+   99.8,
+   94.9,
+   98.3,
+   7.3
+  ],
+  "figuren": [
+   {
+    "id": "v-bv-vergleich",
+    "type": "comparison",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 3,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-weg",
+    "type": "process",
+    "n": 15,
+    "L": 4,
+    "K": 4,
+    "F": 4,
+    "E": 5,
+    "C": 5,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-fruehzeichen",
+    "type": "continuum",
+    "n": 0,
+    "L": 7,
+    "K": 7,
+    "F": null,
+    "E": null,
+    "C": 7,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__behandlung-und-verlauf__x3__m10__s100": {
+  "seiten": 11,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "97754b502512",
+   "bc91f354b6e8",
+   "da3af52c9cf6",
+   "74eb4b0dd026",
+   "604f0e106ec4",
+   "7d013571950c",
+   "c82ed13cf8cd",
+   "105ae421cfbf",
+   "174e036de100",
+   "6f28ba2d8a6d",
+   "144227f5cf5a"
+  ],
+  "tinte_bis": [
+   92.2,
+   55.1,
+   75.9,
+   89.8,
+   96.6,
+   93.7,
+   90.4,
+   94.4,
+   87.2,
+   90.3,
+   44.9
+  ],
+  "figuren": [
+   {
+    "id": "v-bv-vergleich",
+    "type": "comparison",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 3,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-weg",
+    "type": "process",
+    "n": 15,
+    "L": 4,
+    "K": 4,
+    "F": 4,
+    "E": 6,
+    "C": 6,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-fruehzeichen",
+    "type": "continuum",
+    "n": 0,
+    "L": 8,
+    "K": 8,
+    "F": null,
+    "E": null,
+    "C": 8,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__behandlung-und-verlauf__x3__m10__s110": {
+  "seiten": 13,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "99bea80593f8",
+   "d27abb64343c",
+   "3d9b331f025c",
+   "d78bd9f88f61",
+   "f8b4b5a3fdcf",
+   "6153706a6880",
+   "1801bf0c38c3",
+   "0c6b7690acdd",
+   "b3a4c9846ad4",
+   "91796437c1dc",
+   "cb92db236d9b",
+   "68682f91df68",
+   "d732e4fd8fbe"
+  ],
+  "tinte_bis": [
+   92.5,
+   68.3,
+   90.6,
+   24.7,
+   96.4,
+   91.6,
+   95.1,
+   93.3,
+   93.5,
+   37.7,
+   95.7,
+   94.9,
+   36.2
+  ],
+  "figuren": [
+   {
+    "id": "v-bv-vergleich",
+    "type": "comparison",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 3,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-weg",
+    "type": "process",
+    "n": 15,
+    "L": 5,
+    "K": 5,
+    "F": 5,
+    "E": 7,
+    "C": 7,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-fruehzeichen",
+    "type": "continuum",
+    "n": 0,
+    "L": 9,
+    "K": 9,
+    "F": null,
+    "E": null,
+    "C": 9,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__behandlung-und-verlauf__x3__m10__s80": {
+  "seiten": 9,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "955f431b7108",
+   "af640473f04d",
+   "19e1d05ea1e3",
+   "871390577f32",
+   "2c4704e1ea47",
+   "e5483a1fdd97",
+   "4ffd9e3736c9",
+   "e836113fdcba",
+   "b7071b08848b"
+  ],
+  "tinte_bis": [
+   96.1,
+   23.2,
+   69.6,
+   92.3,
+   95.7,
+   74.1,
+   92.0,
+   93.2,
+   85.5
+  ],
+  "figuren": [
+   {
+    "id": "v-bv-vergleich",
+    "type": "comparison",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 3,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-weg",
+    "type": "process",
+    "n": 15,
+    "L": 4,
+    "K": 4,
+    "F": 4,
+    "E": 5,
+    "C": 5,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-fruehzeichen",
+    "type": "continuum",
+    "n": 0,
+    "L": 7,
+    "K": 7,
+    "F": null,
+    "E": null,
+    "C": 7,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__behandlung-und-verlauf__x3__m10__s90": {
+  "seiten": 11,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "4f996486316c",
+   "b29e0ba713b4",
+   "d8a7b66ddba4",
+   "dee82589e1e6",
+   "230580c5d74c",
+   "69bc20e98f01",
+   "b07020cb1d42",
+   "f6bb52387427",
+   "0d1a0c929634",
+   "871b69d2eb9d",
+   "82766024573d"
+  ],
+  "tinte_bis": [
+   94.0,
+   42.3,
+   82.6,
+   95.9,
+   95.6,
+   87.9,
+   95.9,
+   45.9,
+   95.4,
+   93.0,
+   22.2
+  ],
+  "figuren": [
+   {
+    "id": "v-bv-vergleich",
+    "type": "comparison",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 3,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-weg",
+    "type": "process",
+    "n": 15,
+    "L": 4,
+    "K": 4,
+    "F": 4,
+    "E": 5,
+    "C": 5,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-fruehzeichen",
+    "type": "continuum",
+    "n": 0,
+    "L": 7,
+    "K": 7,
+    "F": null,
+    "E": null,
+    "C": 7,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__behandlung-und-verlauf__x3__m15__s100": {
+  "seiten": 11,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "97b0f2239f8b",
+   "0996d32a9eaf",
+   "5185a44430af",
+   "8e31f50a2249",
+   "35f477ea633c",
+   "f29c7da49f35",
+   "0754912a7d39",
+   "73cfc6ec52dc",
+   "062c592ff324",
+   "ca8f2fcc67b3",
+   "0a520eb23df9"
+  ],
+  "tinte_bis": [
+   94.5,
+   56.8,
+   79.4,
+   92.7,
+   95.1,
+   92.5,
+   93.5,
+   93.2,
+   85.7,
+   92.8,
+   63.8
+  ],
+  "figuren": [
+   {
+    "id": "v-bv-vergleich",
+    "type": "comparison",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 3,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-weg",
+    "type": "process",
+    "n": 15,
+    "L": 4,
+    "K": 4,
+    "F": 4,
+    "E": 6,
+    "C": 6,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-fruehzeichen",
+    "type": "continuum",
+    "n": 0,
+    "L": 8,
+    "K": 8,
+    "F": null,
+    "E": null,
+    "C": 8,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__behandlung-und-verlauf__x3__m15__s110": {
+  "seiten": 14,
+  "leer": [],
+  "leere_rahmen": [
+   {
+    "seite": 3,
+    "oben": 87.9,
+    "unten": 89.4,
+    "hoehe": 1.5,
+    "leer": true,
+    "lage": "Mitte"
+   }
+  ],
+  "md5": [
+   "2212ca68703d",
+   "dbecff53a793",
+   "241ecc75c4d7",
+   "66d09c59aaad",
+   "47bbdece13fb",
+   "85f6545a2302",
+   "9ed56ee2fb67",
+   "e236389850d1",
+   "fe86dc5a8d1a",
+   "da7994d8741f",
+   "fe826b1b9082",
+   "dcba30d7b2a9",
+   "046e77688b90",
+   "1169e5bfa4cc"
+  ],
+  "tinte_bis": [
+   87.5,
+   78.7,
+   94.0,
+   28.8,
+   88.9,
+   95.1,
+   85.5,
+   44.4,
+   75.9,
+   92.7,
+   93.9,
+   90.6,
+   92.3,
+   8.7
+  ],
+  "figuren": [
+   {
+    "id": "v-bv-vergleich",
+    "type": "comparison",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 3,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-weg",
+    "type": "process",
+    "n": 15,
+    "L": 5,
+    "K": 5,
+    "F": 5,
+    "E": 7,
+    "C": 7,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-fruehzeichen",
+    "type": "continuum",
+    "n": 0,
+    "L": 10,
+    "K": 10,
+    "F": null,
+    "E": null,
+    "C": 10,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__behandlung-und-verlauf__x3__m15__s80": {
+  "seiten": 10,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "7fa3fc728ddb",
+   "1686d57b685d",
+   "371e94e510cf",
+   "b817ff852087",
+   "62be0c4387e6",
+   "10798b1a0cee",
+   "bd48155f6c83",
+   "ce97f3576057",
+   "3c1a6ea413ca",
+   "09833e94ff2c"
+  ],
+  "tinte_bis": [
+   94.4,
+   29.7,
+   72.7,
+   93.9,
+   94.0,
+   77.8,
+   94.9,
+   91.6,
+   94.5,
+   15.9
+  ],
+  "figuren": [
+   {
+    "id": "v-bv-vergleich",
+    "type": "comparison",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 3,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-weg",
+    "type": "process",
+    "n": 15,
+    "L": 4,
+    "K": 4,
+    "F": 4,
+    "E": 5,
+    "C": 5,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-fruehzeichen",
+    "type": "continuum",
+    "n": 0,
+    "L": 7,
+    "K": 7,
+    "F": null,
+    "E": null,
+    "C": 7,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__behandlung-und-verlauf__x3__m15__s90": {
+  "seiten": 11,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "bc3d8892931c",
+   "1fd7db8ba8b4",
+   "8311d1854da6",
+   "9e0e7059f230",
+   "d15e20770e25",
+   "f7387d7c3830",
+   "b1fe0ea67812",
+   "1136d007e101",
+   "e005818a46b3",
+   "2bf53379085e",
+   "bc414ab80010"
+  ],
+  "tinte_bis": [
+   92.2,
+   44.9,
+   70.3,
+   90.3,
+   93.9,
+   93.7,
+   53.2,
+   92.7,
+   90.6,
+   92.7,
+   20.5
+  ],
+  "figuren": [
+   {
+    "id": "v-bv-vergleich",
+    "type": "comparison",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 3,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-weg",
+    "type": "process",
+    "n": 15,
+    "L": 4,
+    "K": 4,
+    "F": 4,
+    "E": 6,
+    "C": 6,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-fruehzeichen",
+    "type": "continuum",
+    "n": 0,
+    "L": 8,
+    "K": 8,
+    "F": null,
+    "E": null,
+    "C": 8,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__depression-verstehen__x3__m0__s100": {
+  "seiten": 10,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "6f237028b711",
+   "7ee812777e5d",
+   "4e6aa3e0d3d4",
+   "17ed6a305764",
+   "6f9acd2f723e",
+   "d14e620e1696",
+   "ee2b1c66ddbc",
+   "575b839087aa",
+   "d699b07c6fe1",
+   "7f0d9ee93816"
+  ],
+  "tinte_bis": [
+   98.0,
+   90.4,
+   98.6,
+   63.5,
+   95.4,
+   96.8,
+   98.0,
+   95.1,
+   96.9,
+   94.4
+  ],
+  "figuren": [
+   {
+    "id": "v-dv-schichten",
+    "type": "layer-model",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 6,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-dv-entstehung",
+    "type": "stepwise-model",
+    "n": 9,
+    "L": 5,
+    "K": 5,
+    "F": 5,
+    "E": 6,
+    "C": 6,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__depression-verstehen__x3__m0__s110": {
+  "seiten": 10,
+  "leer": [],
+  "leere_rahmen": [
+   {
+    "seite": 3,
+    "oben": 66.0,
+    "unten": 67.6,
+    "hoehe": 1.5,
+    "leer": true,
+    "lage": "Mitte"
+   }
+  ],
+  "md5": [
+   "751302d8639f",
+   "90ba94fac62a",
+   "eaf45c1cd8b2",
+   "874d4d893eb2",
+   "46c26d6916e2",
+   "7af1fc9ff62d",
+   "941fe29cbb01",
+   "974bd980b1a4",
+   "cae08e02680c",
+   "fdd7d67eb4f2"
+  ],
+  "tinte_bis": [
+   94.4,
+   88.1,
+   87.0,
+   93.9,
+   93.7,
+   94.5,
+   91.6,
+   97.8,
+   98.6,
+   53.9
+  ],
+  "figuren": [
+   {
+    "id": "v-dv-schichten",
+    "type": "layer-model",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 6,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-dv-entstehung",
+    "type": "stepwise-model",
+    "n": 9,
+    "L": 5,
+    "K": 5,
+    "F": 5,
+    "E": 6,
+    "C": 6,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__depression-verstehen__x3__m0__s80": {
+  "seiten": 8,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "3bcca7d4825b",
+   "a92d843f0a79",
+   "c6acf6c0a339",
+   "0720a7d84707",
+   "2dac92dd0db9",
+   "17403da45897",
+   "22b3f6f343cc",
+   "c6512fcbd2f3"
+  ],
+  "tinte_bis": [
+   99.3,
+   38.1,
+   97.3,
+   97.3,
+   98.0,
+   95.7,
+   98.6,
+   47.1
+  ],
+  "figuren": [
+   {
+    "id": "v-dv-schichten",
+    "type": "layer-model",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 5,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-dv-entstehung",
+    "type": "stepwise-model",
+    "n": 9,
+    "L": 4,
+    "K": 4,
+    "F": 4,
+    "E": 5,
+    "C": 5,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__depression-verstehen__x3__m0__s90": {
+  "seiten": 10,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "7d0515c111b7",
+   "7ee20392e44a",
+   "1289eb7985fc",
+   "7537c8f9b9b1",
+   "1959eef5dd6b",
+   "146e5a41c5b1",
+   "0bc227c6acb3",
+   "c4ba5b55caf0",
+   "c05687b5c08f",
+   "5477455322d5"
+  ],
+  "tinte_bis": [
+   98.8,
+   63.8,
+   99.3,
+   36.3,
+   96.2,
+   97.4,
+   98.1,
+   99.0,
+   68.8,
+   22.4
+  ],
+  "figuren": [
+   {
+    "id": "v-dv-schichten",
+    "type": "layer-model",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 6,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-dv-entstehung",
+    "type": "stepwise-model",
+    "n": 9,
+    "L": 5,
+    "K": 5,
+    "F": 5,
+    "E": 6,
+    "C": 6,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__depression-verstehen__x3__m10__s100": {
+  "seiten": 10,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "c17d12c12d9b",
+   "7d86a1c93e57",
+   "b45e49074dbc",
+   "379845bc48fc",
+   "af704514a061",
+   "7865987c3469",
+   "66bbbf823b3b",
+   "6cad5f9bb4a9",
+   "203c889bfbc3",
+   "444e2bf0570f"
+  ],
+  "tinte_bis": [
+   93.7,
+   77.3,
+   82.4,
+   88.6,
+   88.2,
+   95.2,
+   91.1,
+   90.6,
+   89.4,
+   49.1
+  ],
+  "figuren": [
+   {
+    "id": "v-dv-schichten",
+    "type": "layer-model",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 6,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-dv-entstehung",
+    "type": "stepwise-model",
+    "n": 9,
+    "L": 5,
+    "K": 5,
+    "F": 5,
+    "E": 6,
+    "C": 6,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__depression-verstehen__x3__m10__s110": {
+  "seiten": 12,
+  "leer": [],
+  "leere_rahmen": [
+   {
+    "seite": 3,
+    "oben": 69.3,
+    "unten": 70.8,
+    "hoehe": 1.5,
+    "leer": true,
+    "lage": "Mitte"
+   }
+  ],
+  "md5": [
+   "03855b491782",
+   "67f4f59cc1a6",
+   "d30a5fa3efa6",
+   "c44a76d8a371",
+   "38cd94bf9ed5",
+   "7ff3e927c8c0",
+   "3fa812f53b6c",
+   "1e95a84c9594",
+   "c025e54a5762",
+   "a2dbcecd51ad",
+   "1495f20be571",
+   "6aadeac44859"
+  ],
+  "tinte_bis": [
+   94.2,
+   93.2,
+   75.3,
+   95.2,
+   10.1,
+   93.2,
+   73.0,
+   96.1,
+   90.6,
+   93.2,
+   93.0,
+   41.8
+  ],
+  "figuren": [
+   {
+    "id": "v-dv-schichten",
+    "type": "layer-model",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 7,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-dv-entstehung",
+    "type": "stepwise-model",
+    "n": 9,
+    "L": 6,
+    "K": 6,
+    "F": 6,
+    "E": 7,
+    "C": 7,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__depression-verstehen__x3__m10__s80": {
+  "seiten": 9,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "b44c623357c1",
+   "eb758765d933",
+   "3b85b7b7d40e",
+   "f224b86248a5",
+   "303bfd531a6c",
+   "ada17a633663",
+   "bf5ade6c7c14",
+   "9cb2f5d3708e",
+   "ec40f87270ec"
+  ],
+  "tinte_bis": [
+   91.5,
+   57.0,
+   94.7,
+   91.1,
+   95.9,
+   93.2,
+   96.2,
+   95.1,
+   9.9
+  ],
+  "figuren": [
+   {
+    "id": "v-dv-schichten",
+    "type": "layer-model",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 5,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-dv-entstehung",
+    "type": "stepwise-model",
+    "n": 9,
+    "L": 4,
+    "K": 4,
+    "F": 4,
+    "E": 5,
+    "C": 5,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__depression-verstehen__x3__m10__s90": {
+  "seiten": 10,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "220b2796b141",
+   "e451247f46e6",
+   "239487b70bf3",
+   "e7536b659b72",
+   "15607690df19",
+   "28f21bbf6f15",
+   "c3c077ead98f",
+   "8f79e686b03d",
+   "28b0743254a8",
+   "907e6d13635e"
+  ],
+  "tinte_bis": [
+   96.1,
+   80.5,
+   94.0,
+   58.2,
+   89.1,
+   94.9,
+   93.2,
+   96.4,
+   91.1,
+   72.9
+  ],
+  "figuren": [
+   {
+    "id": "v-dv-schichten",
+    "type": "layer-model",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 6,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-dv-entstehung",
+    "type": "stepwise-model",
+    "n": 9,
+    "L": 5,
+    "K": 5,
+    "F": 5,
+    "E": 6,
+    "C": 6,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__depression-verstehen__x3__m15__s100": {
+  "seiten": 10,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "4d514a4a7962",
+   "4c6f362492cf",
+   "e81296bf8314",
+   "e6c9d39fff9b",
+   "0f02c7eece2b",
+   "e575b7d1b6c2",
+   "584b49b61896",
+   "ccab55b638ea",
+   "c6ad6bd8250e",
+   "57cb63db2460"
+  ],
+  "tinte_bis": [
+   91.8,
+   84.6,
+   84.1,
+   89.6,
+   90.1,
+   90.8,
+   91.0,
+   93.5,
+   92.5,
+   58.9
+  ],
+  "figuren": [
+   {
+    "id": "v-dv-schichten",
+    "type": "layer-model",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 6,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-dv-entstehung",
+    "type": "stepwise-model",
+    "n": 9,
+    "L": 5,
+    "K": 5,
+    "F": 5,
+    "E": 6,
+    "C": 6,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__depression-verstehen__x3__m15__s110": {
+  "seiten": 13,
+  "leer": [],
+  "leere_rahmen": [
+   {
+    "seite": 4,
+    "oben": 71.0,
+    "unten": 72.5,
+    "hoehe": 1.5,
+    "leer": true,
+    "lage": "Mitte"
+   }
+  ],
+  "md5": [
+   "52bef34ef207",
+   "628aae9f2be8",
+   "7dda708f39c7",
+   "6c8f004d5e24",
+   "d276ad58124d",
+   "ff6a51c817e8",
+   "fb81866fe02f",
+   "2b515cc539bc",
+   "7e7926075ace",
+   "35e4156f0540",
+   "d3c72a81dc37",
+   "1ae8c7f4fbdb",
+   "6e875d452012"
+  ],
+  "tinte_bis": [
+   92.7,
+   88.2,
+   13.8,
+   77.1,
+   94.0,
+   16.0,
+   87.9,
+   84.0,
+   92.5,
+   85.7,
+   90.1,
+   90.8,
+   64.3
+  ],
+  "figuren": [
+   {
+    "id": "v-dv-schichten",
+    "type": "layer-model",
+    "n": 0,
+    "L": 4,
+    "K": 4,
+    "F": null,
+    "E": null,
+    "C": 8,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-dv-entstehung",
+    "type": "stepwise-model",
+    "n": 9,
+    "L": 7,
+    "K": 7,
+    "F": 7,
+    "E": 8,
+    "C": 8,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__depression-verstehen__x3__m15__s80": {
+  "seiten": 10,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "442c8dc44ca3",
+   "18ca651c8704",
+   "de40afcd6547",
+   "dd14909e1d86",
+   "e6ee5f51af92",
+   "dd4eeee43e5b",
+   "33cc9187fb6d",
+   "700e2ba148e3",
+   "aa774085fe03",
+   "17b2d94fe491"
+  ],
+  "tinte_bis": [
+   94.0,
+   61.8,
+   91.6,
+   41.1,
+   92.3,
+   91.3,
+   92.2,
+   91.8,
+   94.0,
+   8.0
+  ],
+  "figuren": [
+   {
+    "id": "v-dv-schichten",
+    "type": "layer-model",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 6,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-dv-entstehung",
+    "type": "stepwise-model",
+    "n": 9,
+    "L": 5,
+    "K": 5,
+    "F": 5,
+    "E": 6,
+    "C": 6,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__depression-verstehen__x3__m15__s90": {
+  "seiten": 10,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "12cfdccc99ad",
+   "c2f9e944c29f",
+   "0896dc7f39bf",
+   "80acc8efc06c",
+   "80c4c0a273b9",
+   "7cbb5f08d6f8",
+   "49b15d912e2f",
+   "12ea6a1a90f7",
+   "ee2e00cd7ec3",
+   "c5dd3e10db83"
+  ],
+  "tinte_bis": [
+   90.8,
+   70.0,
+   90.1,
+   55.1,
+   87.5,
+   90.4,
+   87.5,
+   90.1,
+   87.5,
+   25.9
+  ],
+  "figuren": [
+   {
+    "id": "v-dv-schichten",
+    "type": "layer-model",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 6,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-dv-entstehung",
+    "type": "stepwise-model",
+    "n": 9,
+    "L": 5,
+    "K": 5,
+    "F": 5,
+    "E": 6,
+    "C": 6,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ }
+}

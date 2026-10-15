@@ -1,0 +1,6 @@
+759,763d758
+<   .puk-vis-wide,.puk-vis-figure{break-inside:avoid}
+<   .puk-vis-wide:has(>.puk-vis-figure[data-print-split]),.puk-vis-figure[data-print-split]{break-inside:auto}
+<   .puk-vis-figure[data-print-split] :is(.puk-vis-path,.puk-vis-decision,.puk-vis-build__steps)>li{break-inside:avoid}
+<   .puk-vis-figure[data-print-split]>.puk-vis-label{break-before:avoid}
+<   .puk-vis-figure[data-print-split]>figcaption{break-before:avoid}
