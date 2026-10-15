@@ -81,6 +81,7 @@ Keine.
 - #126 wurde 106 Sekunden nach der Erstellung zusammengeführt, obwohl der Pull Request «Entwurf – bitte nicht zusammenführen» trug und der Entscheid das Zusammenführen erst nach der Nachprüfung vorsah.
 - Folge: `main`, ZIP und Artefakt enthielten von 13:53 bis zu dieser Nachprüfung einen ungeprüften Stand. Inhaltlich hat diese Nachprüfung keinen kritischen Fehler gefunden; der Verstoss gegen den Ablauf bleibt.
 - Empfehlung wie Audit, Nr. 2: Branch-Schutz für `main` (Entscheid der Fachstelle).
+- **Nachtrag 15.10.2026, nach dem Bericht:** #129 (`a0f5f79`) bringt die GitHub-Prüfung «Offene Stufen» und eine Regel in `CLAUDE.md`. Zur Sperre wird sie erst, wenn sie für `main` als erforderlich markiert ist (Einstellung in GitHub, Entscheid der Fachstelle). Nicht Gegenstand dieser Nachprüfung.
 
 ### Optional
 
@@ -112,7 +113,7 @@ Keine.
 
 | Nr. | Beurteilung | Beleg |
 | --- | --- | --- |
-| F-3 | **Bestätigt**, optional. Korrektur läuft in #128 (Entwurf, nicht zusammengeführt) | `messung/README.md:21` «Die Marken verändern den Umbruch nicht messbar.» |
+| F-3 | **Bestätigt**, optional. **Nachtrag:** nach diesem Bericht mit #128 (`31601b6`) behoben – datierte Korrektur in `messung/README.md` und Nachtrag in `SELBSTPRUEFUNG.md` (gelesen) | `messung/README.md:21` «Die Marken verändern den Umbruch nicht messbar.» (Stand `c65db24`) |
 | F-4 | **Bestätigt**, optional. `contract.js` geändert, `BUILD = 'r4-9'` gleich; eine Kopie mit altem Gate ist an der Kennung nicht erkennbar | `tools/contract.js:11`; Diff `1047ad6..c65db24` |
 | F-5 | **Bestätigt**, optional. Zwei ZIPs mit gleichem Namen: `de10a8d` SHA-256 `2040c743…15373db`, `bc679a7` `20d42bba…4ba4902`; Änderungsprotokoll ohne Prüfsumme | `ergebnisse/gate-zip.txt` |
 | F-6 | **Bestätigt**, optional. `lastChange.at` in Version 47: `2026-10-15T12:16:56Z` | `project/design-system.json` |
