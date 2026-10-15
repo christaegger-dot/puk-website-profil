@@ -40,6 +40,10 @@ const REVIEW_WARNINGS = ['orthography', 'swiss-context', 'person-first', 'card-g
 /* Profilentscheid 10.10.2026: Jede Darstellung nennt im Plan ihre Wirkung («resonance»): Was soll eine Angehörige darin wiedererkennen oder spüren? Anlass: eine Metapher, die wie ein Bauplan wirkte. */
 /* Profilentscheid 08.10.2026: Erklärmodelle (Kreislauf, Prozesspfad, Modell in Schritten) prüfen, wo Angehörige ansetzen können – im Plan als «entryPoint» (Ansatzpunkt oder «entfällt: Begründung»), in der Figur als .puk-vis-ansatz. */
 const ENTRY_FORMATS = ['cycle', 'process', 'stepwise-model'];
+/* Paket 2026.10.2, P-1 (nachgebessert 15.10.2026): Im Druck sind Figuren unteilbar. Nur eine Abfolge mit dem Kennzeichen
+   data-print-split an der Figur darf zwischen ihren Schritten umbrechen – Prozesspfad, Entscheidungsweg, Modell in Schritten,
+   jeweils mit ihrer Schrittliste. Gesetzt wird es im Markup der Figur (content/), ausdrücklich, ohne Schwelle nach Schrittzahl. */
+const PRINT_SPLIT = { process: 'puk-vis-path', decision: 'puk-vis-decision', 'stepwise-model': 'puk-vis-build__steps' };
 /* Profilentscheid 08.10.2026: Bauen und Prüfen sind getrennt; ohne vollständigen Prüfbericht (PRUEFBERICHT.md im Ordner der Website) keine Veröffentlichung.
    Status je Stufe: «erledigt» oder «entfällt: Begründung»; alles andere gilt als offen. */
 const REPORT_STAGES = [['W1', /^w1\b/i], ['W2', /^w2\b/i], ['S', /^s\b/i], ['Visualisierungs-Check', /^visualisierungs-check/i], ['Bedienung und Barrierefreiheit', /^bedienung/i], ['W3', /^w3\b/i], ['R1 Profil-Audit', /^r1(?![-\w])/i], ['R2 Visualisierung und Laienverständlichkeit', /^r2(?![-\w])/i], ['R3 Freigabe-Audit', /^r3(?![-\w])/i]];
@@ -402,9 +406,12 @@ function gate(cfg, files, opts = {}) {
         if (!ret || !/zurück zu station 1/i.test(txt(ret))) add('block', pid, 'cycle-return', `Kreislauf ${lab}: sichtbarer Rücksprung «zurück zu Station 1» fehlt`);
         if (db && !/station 1/i.test(db.split(/\s+/).map(x => txt(byId(doc, x))).join(' '))) add('block', pid, 'cycle-return', `Kreislauf ${lab}: Textfassung erklärt die Rückkopplung zu Station 1 nicht`);
       }
+      if (has(f, 'data-print-split')) { const ty = f.attrs['data-visual-type'] || 'ohne data-visual-type';
+        if (!PRINT_SPLIT[ty] || !one(f, x => cls(x, PRINT_SPLIT[ty]) && x.children.some(y => y.tag === 'li'))) add('block', pid, 'print-split', `Figur ${lab}: Kennzeichen data-print-split an «${ty}» – zulässig nur bei Prozesspfad (process, .puk-vis-path), Entscheidungsweg (decision, .puk-vis-decision) und Modell in Schritten (stepwise-model, .puk-vis-build__steps), jeweils mit Schrittliste; andere Darstellungen bleiben im Druck unteilbar (Abschnitt «Technische Qualität», F)`); }
       /* Profilentscheid 10.10.2026: Eine eigene Zeichnung (.puk-vis-scene) braucht keine fremde Bildquelle; Kennzeichnung und Freigabe im Plan prüft das Gate wie bei jeder Figur. */
       if (f.attrs['data-visual-type'] === 'illustration' && !one(f, x => has(x, 'data-placeholder') || (x.tag === 'img' && has(x, 'data-source-status')) || cls(x, 'puk-vis-scene'))) add('block', pid, 'placeholder-status', `Illustration ${lab}: weder eigene Zeichnung (.puk-vis-scene) noch Bildquelle- und Freigabestatus`);
     }
+    for (const x of all(doc, y => has(y, 'data-print-split') && !(y.tag === 'figure' && cls(y, 'puk-vis-figure')))) add('block', pid, 'print-split', `Kennzeichen data-print-split an <${x.tag}${x.attrs.class ? ' class="' + x.attrs.class + '"' : ''}> – es gehört an die Figur (figure.puk-vis-figure) einer Abfolge`);
     for (const v of plan) if (v.format !== 'text' && !seen.has(v.id)) add('block', pid, 'visual-plan', `Plan-Eintrag ${v.id} (${v.format}) hat keine Figur auf der Seite`);
     /* Jeder Abschnitt hat eine Zeile im Visualisierungsplan (sectionId = id der section): Erklärform oder begründeter Verzicht. */
     for (const sec of main ? all(main, x => x.tag === 'section' && cls(x, 'puk-longform__section') && !!x.attrs.id) : []) if (!plan.some(v => v.sectionId === sec.attrs.id)) prod(pid, 'plan-coverage', `Abschnitt #${sec.attrs.id} ohne Zeile im Visualisierungsplan (sectionId) – Erklärform oder begründeter Verzicht`);
@@ -497,7 +504,10 @@ const MUTATIONS = [
   ['404-Seite als Entwurf (nicht im Export)', ['not-found'], c => { const p = c.pages.find(isNotFound); if (!p) return false; p.status = 'draft'; }],
   ['Impressum zeigt auf eine E-Mail-Adresse statt auf eine Seite', ['legal'], (c, f) => { const e = c.legal && c.legal.imprint; if (!e || !e.href) return false; const old = e.href; e.href = 'mailto:nobody@example.org'; let n = 0; for (const k of Object.keys(f)) if (rep(f, k, `href="${old}"`, `href="${e.href}"`, true)) n++; return n > 0; }],
   ['Externes Stylesheet als «alternate stylesheet»', ['external'], (c, f) => rep(f, 'index.html', '</head>', '<link rel="alternate stylesheet" href="https://www.example.org/x.css">\n</head>')],
-  ['Fremdsprachiger Quellentitel ohne lang', ['lang-part'], (c, f) => rep(f, 'behandlung-verstehen.html', '</main>', '<ol class="puk-longform__sources"><li>Muster A (2020): Supporting the families of people with depression: a review of the evidence.</li></ol></main>')]
+  ['Fremdsprachiger Quellentitel ohne lang', ['lang-part'], (c, f) => rep(f, 'behandlung-verstehen.html', '</main>', '<ol class="puk-longform__sources"><li>Muster A (2020): Supporting the families of people with depression: a review of the evidence.</li></ol></main>')],
+  /* Nachbesserung Paket 2026.10.2 (15.10.2026): Kennzeichen data-print-split nur an Abfolgen und nur an der Figur */
+  ['Kennzeichen data-print-split an einer Gegenüberstellung', ['print-split'], (c, f) => rep(f, 'behandlung-verstehen.html', 'data-visual-type="comparison"', 'data-visual-type="comparison" data-print-split')],
+  ['Kennzeichen data-print-split an der Hülle statt an der Figur', ['print-split'], (c, f) => rep(f, 'behandlung-verstehen.html', '<div class="puk-vis-wide">', '<div class="puk-vis-wide" data-print-split>')]
 ];
 function pg(c, id) { const p = c.pages.find(x => x.id === id); if (!p) throw new Error('Seite ' + id + ' fehlt'); return p; }
 function rep(f, file, a, b, every) { if (f[file] == null || !f[file].includes(a)) return false; f[file] = every ? f[file].split(a).join(b) : f[file].replace(a, () => b); return true; }
@@ -513,7 +523,8 @@ function selftest(cfg, files, opts = {}) {
   rows.push({ name: 'Produktion blockiert ungeklärte Absenderin, Zuständigkeitsverweise, Platzhalter und Visualisierungen', expected: need.join(', ') + ' · keine Strukturfehler', got: hit.join(', ') + ' · ' + (structural.length ? structural.length + ' Strukturfehler' : 'keine Strukturfehler'), ok: hit.length === need.length && !structural.length });
   const done = '| Stufe | Status |\n| --- | --- |\n' + REPORT_STAGES.map(([n]) => `| ${n} | erledigt |`).join('\n');
   const noRep = gate(cfg, files, { mode: 'production', exists: base, report: null }).findings.some(x => x.level === 'block' && x.id === 'review-report');
-  for (const [label, why] of [['Entwurf, noch nicht freigegeben', 'Entwurf'], ['Fachlich freigegeben', 'ohne Datum']]) {
+  /* «Entwurf vom 15.10.2026» nennt ein Datum und trifft nur die Regel «Entwurf» (Prüfbericht Paket 2026.10.2, W-3); der erste Fall trifft beide Regeln. */
+  for (const [label, why] of [['Entwurf, noch nicht freigegeben', 'Entwurf'], ['Entwurf vom 15.10.2026', 'Entwurf mit Datum'], ['Fachlich freigegeben', 'ohne Datum']]) {
     const st = gate(Object.assign({}, cfg, { editorialStatusLabel: label }), files, { mode: 'production', exists: base }).findings.some(x => x.level === 'block' && x.id === 'editorial-status');
     rows.push({ name: `Produktion blockiert Redaktionsstatus ${why} («${label}»)`, expected: 'editorial-status', got: st ? 'editorial-status' : 'nicht erkannt', ok: st }); }
   { const st = gate(Object.assign({}, cfg, { editorialStatusLabel: 'Fachlich freigegeben am 15.10.2026' }), files, { mode: 'production', exists: base }).findings.some(x => x.id === 'editorial-status');
@@ -524,6 +535,9 @@ function selftest(cfg, files, opts = {}) {
   const noR3 = done.split('\n').filter(l => !/^\|\s*R3\b/i.test(l)).join('\n') + '\n| R3 Freigabe-Audit | offen |';
   const r3open = gate(cfg, files, { mode: 'production', exists: base, report: noR3 }).findings.some(x => x.level === 'block' && x.id === 'review-report' && /R3/.test(x.message || x.msg || ''));
   rows.push({ name: 'Produktion blockiert ohne «Go» im Freigabe-Audit R3', expected: 'review-report (R3)', got: r3open ? 'review-report (R3)' : 'nicht erkannt', ok: r3open });
+  { const f = Object.assign({}, files); const ok = rep(f, 'behandlung-verstehen.html', 'data-visual-type="process"', 'data-visual-type="process" data-print-split');
+    const ps = ok && gate(cfg, f, { mode: 'draft', exists: base }).findings.filter(x => x.id === 'print-split').length;
+    rows.push({ name: 'Kennzeichen data-print-split am Prozesspfad ist zulässig', expected: 'kein print-split', got: ok ? (ps ? 'print-split' : 'kein print-split') : 'Mutation nicht anwendbar', ok: ok && !ps }); }
   { const f = Object.assign({}, files); const ok = rep(f, 'index.html', '</head>', '<link rel="canonical" href="https://www.example.org/index.html">\n</head>');
     const ext = ok && gate(cfg, f, { mode: 'draft', exists: base }).findings.some(x => x.id === 'external');
     rows.push({ name: 'Kanonischer Link (siteUrl) gilt nicht als externe Laufzeitquelle', expected: 'kein external', got: ok ? (ext ? 'external' : 'kein external') : 'Mutation nicht anwendbar', ok: ok && !ext }); }

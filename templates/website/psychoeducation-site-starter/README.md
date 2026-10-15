@@ -71,10 +71,25 @@ Seiten über einen lokalen Webserver öffnen (z. B. `npx serve` im Projektstamm 
   - Links auf Impressum und Datenschutzerklärung fehlen in der Fusszeile (wenn `legal` Ziele nennt); ein `legal`-Ziel, das weder eigene Seite noch `https://`-Seite ist (z. B. `mailto:`); eine 404-Seite in der Navigation
   - Visualisierungsplan ohne `understood` bei einer Darstellung
   - Planzeile mit `sectionId`, die es auf der Seite nicht gibt
+  - Kennzeichen `data-print-split` an einem anderen Muster als Prozesspfad, Entscheidungsweg oder Modell in Schritten, an einer Figur ohne Schrittliste oder an einem anderen Element als der Figur (`print-split`; Abschnitt «Druck: lange Abfolgen kennzeichnen»)
 - **Hinweise im Entwurf, Blocker in Produktion:** Figur ohne Kernaussage (`.puk-vis-kern`), fehlender oder nicht markierter Ansatzpunkt (`entryPoint`), fehlende Wirkung (`resonance`), Abschnitt ohne Zeile im Visualisierungsplan, fehlendes Impressum oder fehlende Datenschutzerklärung (`legal`), fehlende oder nicht ausgelieferte 404-Seite (`not-found`: veröffentlicht und `href` `404.html`).
 - **Hinweise (keine Blocker):** Kartenraster mit vier oder mehr Karten (Kartenraster-Check), `style`-Attribute im Inhalt, fehlende `siteUrl`, Orthografie, deutsche Rechtsbegriffe, etikettierende Bezeichnungen, fremdsprachige Quellentitel ohne `lang` (`lang-part`, Stichwortprüfung).
 - **Gate blockiert zusätzlich in Produktion:** nicht freigegebene Absenderin, ungeprüfte Zuständigkeitsverweise, Platzhalter und Visualisierungen sowie ein fehlender oder unvollständiger Prüfbericht (`PRUEFBERICHT.md`).
 - **Sensible Themen:** Erwähnt der Inhalt Selbstgefährdung, Gewalt, Zwang oder eine akute Krise, muss `sensitiveTopics` das Thema nennen. Ein Zuständigkeitsverweis (`responsibility`) ist dann empfohlen, aber nicht Pflicht (Hinweis, kein Blocker); ist er gesetzt, steht er auf jeder Seite. Inhalte zum Umgang mit Krisen (Frühwarnzeichen, Krisenplan) sind Psychoedukation und zulässig. Mögliche Kurznummern wie 143 oder 144 meldet das Gate als Hinweis zur Prüfung. Zusätzliche Hinweise (keine Blocker) aus dem Website-Review Teil 1: «ß» und „…“ statt «…», deutsche Rechtsbegriffe und Angebote (z. B. Jugendamt, rechtliche Betreuung, Pflegegrad), etikettierende Bezeichnungen (z. B. «der Schizophrene»). Das ist eine Vertragsprüfung nach Stichwörtern, keine medizinische Triage.
+
+## Druck: lange Abfolgen kennzeichnen
+
+Im Druck bleibt jede Figur als Ganzes auf einer A4-Seite (Abschnitt «Technische Qualität», F). Ist eine Abfolge mit ihrer Liste länger als eine A4-Seite, bekommt ihre Figur in `content/<id>.html` das Kennzeichen `data-print-split` (Paket 2026.10.2, P-1, nachgebessert 15.10.2026):
+
+```html
+<figure class="puk-vis-figure" data-visual-id="v-ablauf" data-visual-type="process" data-print-split aria-labelledby="…" aria-describedby="…">
+```
+
+- **Nur bei Abfolgen:** Prozesspfad (`process` mit `ol.puk-vis-path`), Entscheidungsweg (`decision` mit `ol.puk-vis-decision`) und Modell in Schritten (`stepwise-model` mit `.puk-vis-build__steps`). An anderen Mustern, an einer Figur ohne Schrittliste oder an einem anderen Element als der Figur blockiert das Gate (`print-split`).
+- **Ausdrücklich setzen, ohne Schwelle nach Schrittzahl:** Ob eine Abfolge länger als eine A4-Seite ist, zeigt der Druck (A4, Rand 0 bis 15 mm, 80 bis 110 %). Kurze Abfolgen tragen kein Kennzeichen; sie rücken im Druck als Ganzes auf die nächste Seite.
+- **Wirkung im Druck:** Die Abfolge bricht zwischen ihren Schritten um, jeder Schritt bleibt zusammen. Titel, Kernaussage, Kurztext und der erste Schritt stehen auf einer Seite, die Kennzeichnung folgt direkt auf den letzten Schritt, die Vertiefung danach. Dafür stehen die Schritte untereinander wie auf schmalen Bildschirmen; beim Modell in Schritten steht die Zeichnung über den Schritten. Am Bildschirm ändert sich nichts.
+- **Im Markup, nicht im Plan:** Das Kennzeichen steht an der Figur in `content/`; der Build verändert Figuren nicht. So wirkt es auch in Websites ohne diesen Build und in den Kopiervorlagen unter `../longform/`.
+- **Ohne Kennzeichen** bleibt auch eine lange Abfolge unteilbar wie in 2026.10.1; vor ihr kann dann eine leere Seite entstehen. Räumliche Darstellungen und Gegenüberstellungen bleiben immer unteilbar.
 
 ## Referenzfälle
 
@@ -87,10 +102,10 @@ Seiten über einen lokalen Webserver öffnen (z. B. `npx serve` im Projektstamm 
 - `impressum-datenschutz.html`: Impressum und Datenschutz, nicht in der Navigation, in jeder Fusszeile verlinkt.
 - `404.html`: Seite «nicht gefunden» mit Rückweg zur Übersicht (Standardwortlaut, Entscheid 11.10.2026).
 
-Stand 15.10.2026 (Build r4-9, Paket 2026.10.2: Redaktionsstatus im Produktionsgate, Fusszeile ohne Versionszeile, Name des Logo-Links, `gate.html` mit Prüfbericht und Selbsttest an der Referenz, Export mit Schriftlizenz, `_redirects` und `robots.txt`; Druckregeln, Verweis im Text und Silbentrennung in `components/bundle.css`):
+Stand 15.10.2026 (Build r4-9, Paket 2026.10.2: Redaktionsstatus im Produktionsgate, Fusszeile ohne Versionszeile, Name des Logo-Links, `gate.html` mit Prüfbericht und Selbsttest an der Referenz, Export mit Schriftlizenz, `_redirects` und `robots.txt`; Druckregeln, Verweis im Text und Silbentrennung in `components/bundle.css`; nachgebessert 15.10.2026: Figuren im Druck unteilbar, Kennzeichen `data-print-split` für lange Abfolgen):
 - **Entwurfsgate:** 0 blockierende Befunde; 12 Hinweise (neu: Redaktionsstatus ohne Datum, weil der Starter eine synthetische Referenz ist).
 - **Produktionsgate:** blockiert die offenen Freigaben, den Redaktionsstatus ohne Datum und den unvollständigen Prüfbericht. Das ist erwartet.
-- **Selbsttest:** 68 von 68 bestanden, auch in Kopien des Starters und in `gate.html` (neu in r4-9: Redaktionsstatus «Entwurf», ohne Datum und mit Datum).
+- **Selbsttest:** 72 von 72 bestanden, auch in Kopien des Starters und in `gate.html` (neu in r4-9: Redaktionsstatus «Entwurf», ohne Datum und mit Datum; Nachbesserung 15.10.2026: «Entwurf vom 15.10.2026», der nur die Regel «Entwurf» trifft, Kennzeichen `data-print-split` am Prozesspfad zulässig, an einer Gegenüberstellung und an der Hülle blockiert).
 
 Davor Stand 11.10.2026 (Build r4-8: Befunde der Prüfung der Website «Depression» – Interaktionsskript bei Vertiefungen, Name des Logo-Links, Menü ab sieben Punkten, Impressum und Datenschutzerklärung, 404-Seite, Hinweis `lang-part`, kanonischer Link nicht mehr als externe Quelle gewertet; Build r4-7: eigene Zeichnungen mit `.puk-vis-scene` gelten als Illustration ohne Platzhalter; Build r4-6: Bildsprache «Ein Bild, eine Idee»):
 - **Entwurfsgate:** 0 blockierende Befunde.

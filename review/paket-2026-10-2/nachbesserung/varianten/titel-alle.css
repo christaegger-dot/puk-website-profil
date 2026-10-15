@@ -1,0 +1,2 @@
+/* Variante: break-before:avoid am Titel für alle Figuren, nicht nur für gekennzeichnete */
+@media print{.puk-vis-figure>.puk-vis-label{break-before:avoid}}
