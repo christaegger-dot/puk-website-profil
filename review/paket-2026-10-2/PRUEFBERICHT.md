@@ -122,6 +122,16 @@ Die Form aller anderen Figuren bleibt gleich. Die Gegenprobe ohne Marken zeigt d
 1. Abweichung annehmen: Kurze Abfolgen dürfen zwischen Schritten umbrechen. Dann W-2 als entschiedene Regel nachtragen.
 2. Kurze Abfolgen wieder als Ganzes: Mit CSS allein nicht unterscheidbar (so die bauende Sitzung); möglich wäre ein Kennzeichen am Markup langer Figuren, z. B. vom Build gesetzt. Das wäre eine neue Änderung mit eigener Abnahme.
 
+## Nachtrag 15.10.2026 · Entscheid der Fachstelle
+
+Die Fachstelle hat der Empfehlung der Prüfsitzung im Chat zugestimmt («Einverstanden»):
+- **P-1:** Die Abweichung wird **nicht angenommen**. Kurze Figuren werden im Druck wieder als Ganzes gedruckt; umbrechen dürfen nur lange Abfolgen.
+- **K-1:** wird in einer **bauenden Sitzung behoben**, zusammen mit W-1 bis W-4. Danach prüft eine Sitzung, die nicht gebaut hat, die Änderungen nach.
+- **Offen:** wie lange Abfolgen erkannt werden. Empfohlen ist ein ausdrückliches Kennzeichen (z. B. `data-print-split`, vom Build gesetzt); die Alternative ist eine Schwelle nach Schrittzahl (`:has(li:nth-child(n))`).
+- **Bis dahin** übernimmt die Borderline-Website das Paket 2026.10.2 nicht.
+
+Eintragen ins `ENTSCHEIDE-PROFIL-2026-10-2.md` und umsetzen macht die bauende Sitzung; diese Sitzung ändert nur den Prüfbericht.
+
 ## Reproduktion
 
 Webserver im Stamm (`python3 -m http.server 8770`), Vergleichsstand `8abc333` als eigener Arbeitsbaum auf Port 8771, Kopie `zz-dep-test` nach `messung/README.md`.
