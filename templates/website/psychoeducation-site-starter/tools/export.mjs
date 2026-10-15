@@ -1,7 +1,8 @@
 // PUK Website-Profil – Export des Psychoedukations-Starters als eigenständige, veröffentlichbare Website (Node ≥ 18, ohne Abhängigkeiten).
 // Aufruf im Ordner psychoeducation-site-starter:  node tools/export.mjs <zielordner> [--production]
 // Baut die Seiten, prüft sie mit dem Gate und schreibt nur, was veröffentlicht wird: veröffentlichte Seiten, assets/,
-// eine zusammengeführte css/site.css (mit lokalen Schriften), js/interaktion.js (falls gebraucht), _headers und sitemap.xml.
+// eine zusammengeführte css/site.css (mit lokalen Schriften und deren Lizenz fonts/OFL.txt), js/interaktion.js (falls gebraucht),
+// _headers, _redirects (falls vorhanden), sitemap.xml und robots.txt (mit siteUrl; Paket 2026.10.2, P-10 und P-13).
 // Keine Projektquellen, kein site.config.json, keine Entwürfe. Nur Schriften, die die Website nennt (Prüfbefund 11.10.2026):
 // @font-face-Regeln einer Familie, die weder im wirksamen --font-core noch in einer font-family-Angabe vorkommt, entfallen samt Datei.
 // Die 404-Seite (role «not-found») erhält Pfade ab dem Stamm der Website, weil der Server sie unter jeder fehlenden Adresse ausliefert.
@@ -63,7 +64,13 @@ for (const h of cfg.stylesheets || []) { const f = presolve(dir, h.split('?')[0]
 }
 await writeFile(join(out, 'css', 'site.css'), site);
 let fonts = 0;
-for (const [src, name] of copied) if (site.includes(`url("../fonts/${name}")`)) { await copyFile(src, join(out, 'fonts', name)); fonts++; }
+let license = false;
+for (const [src, name] of copied) if (site.includes(`url("../fonts/${name}")`)) {
+  await copyFile(src, join(out, 'fonts', name)); fonts++;
+  /* Lizenz der Schrift neben die Schriftdateien (SIL Open Font License, SPZ-49) */
+  const ofl = join(dirname(src), 'OFL.txt'); if (!license && existsSync(ofl)) { await copyFile(ofl, join(out, 'fonts', 'OFL.txt')); license = true; }
+}
+if (fonts && !license) { console.error('Lizenz der Schrift fehlt: OFL.txt neben den Schriftdateien.'); process.exit(1); }
 
 /* 3 · Seiten schreiben: Verweise auf css/site.css und js/interaktion.js umstellen; nur veröffentlichte Seiten */
 const v = cfg.assetVersion ? '?v=' + encodeURIComponent(cfg.assetVersion) : '';
@@ -83,7 +90,9 @@ if (needsJs) { await mkdir(join(out, 'js'), { recursive: true }); await copyFile
 async function copyDir(a, b) { await mkdir(b, { recursive: true }); for (const e of await readdir(a)) { const s = join(a, e), t = join(b, e); if ((await stat(s)).isDirectory()) await copyDir(s, t); else await copyFile(s, t); } }
 if (existsSync(join(dir, 'assets'))) await copyDir(join(dir, 'assets'), join(out, 'assets'));
 if (existsSync(join(dir, '_headers'))) await copyFile(join(dir, '_headers'), join(out, '_headers'));
+if (existsSync(join(dir, '_redirects'))) await copyFile(join(dir, '_redirects'), join(out, '_redirects'));
 if (cfg.siteUrl) { const base = cfg.siteUrl.replace(/\/$/, ''); await writeFile(join(out, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${published.filter(p => p.role !== 'not-found').map(p => `  <url><loc>${base}/${C.resolve('', p.href).path}</loc></url>`).join('\n')}\n</urlset>\n`); }
+if (cfg.siteUrl) await writeFile(join(out, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${cfg.siteUrl.replace(/\/$/, '')}/sitemap.xml\n`);
 
 /* 5 · Kontrolle: jede lokale Referenz existiert */
 let missing = 0;
@@ -92,4 +101,4 @@ for (const p of published) {
   for (const m of html.matchAll(/(?:src|href)="([^"#]+?)(?:\?[^"]*)?"/g)) { let u = m[1]; if (/^(https?:|mailto:|tel:|data:)/.test(u)) continue; const rel = u.startsWith(root) ? u.slice(root.length) : null; if (rel !== null ? !existsSync(join(out, rel)) : !existsSync(join(out, dirname(path), u))) { console.error(`Fehlt im Export: ${u} (${path})`); missing++; } }
 }
 if (missing) { console.error(`Export unvollständig: ${missing} fehlende Dateien.`); process.exit(1); }
-console.log(`Export nach ${out}: ${published.length} Seiten · css/site.css · ${fonts} Schriftdateien${needsJs ? ' · js/interaktion.js' : ''} · Gate ${mode}: 0 blockierend, ${r.warns} Hinweise.`);
+console.log(`Export nach ${out}: ${published.length} Seiten · css/site.css · ${fonts} Schriftdateien${license ? ' + OFL.txt' : ''}${needsJs ? ' · js/interaktion.js' : ''}${existsSync(join(dir, '_redirects')) ? ' · _redirects' : ''}${cfg.siteUrl ? ' · sitemap.xml · robots.txt' : ''} · Gate ${mode}: 0 blockierend, ${r.warns} Hinweise.`);

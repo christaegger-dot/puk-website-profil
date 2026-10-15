@@ -1,6 +1,6 @@
-# CLAUDE.md · PUK Website-Profil 2026.10.1
+# CLAUDE.md · PUK Website-Profil 2026.10.2
 
-Dieses Repository enthält das Projektpaket des **PUK Website-Profils** (Fachstellen-Profil 2026.10.1) für die psychoedukativen Websites der **Fachstelle Angehörigenarbeit, Psychiatrische Universitätsklinik Zürich**. Neue Websites der Fachstelle entstehen hier aus dem Psychoedukations-Starter.
+Dieses Repository enthält das Projektpaket des **PUK Website-Profils** (Fachstellen-Profil 2026.10.2) für die psychoedukativen Websites der **Fachstelle Angehörigenarbeit, Psychiatrische Universitätsklinik Zürich**. Neue Websites der Fachstelle entstehen hier aus dem Psychoedukations-Starter.
 
 ## Zuerst lesen
 

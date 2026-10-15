@@ -21,8 +21,8 @@ Rahmen: Schweiz, Schweizer Hochdeutsch, Datenschutz nach DSG, Barrierefreiheit *
 - Aussagekräftige Linktexte, nie «hier klicken».
 - ARIA nur, wo nötig, und korrekt; native Elemente vor ARIA (`button`, `details`, `dialog`).
 - Zoom bis 200 % und 320 px ohne Informationsverlust. Schriftgrade in `rem`, damit auch die Einstellung «Schriftgrösse» des Browsers wirkt; Figuren mit frei platzierten Beschriftungen wechseln bei grosser Schrift in die Listenansicht (Profilentscheid 11.10.2026).
-- Klickflächen mindestens 44 px (strenger als 2.5.8 mit 24 px), auch Sprunglink und Lesepfade; Wischen nie als einziger Weg (2.5.7).
-- Der Name eines Bildlinks beginnt mit dem sichtbaren Text im Bild (2.5.3), beim Logo-Link «Psychiatrische Universitätsklinik Zürich – Startseite …».
+- Klickflächen mindestens 44 px (strenger als 2.5.8 mit 24 px), auch Sprunglink und Lesepfade; Ausnahme ist der E-Mail-Link der Absenderzeile, für den 2.5.8 über den Abstand gilt (Abschnitt «Interaktionskonzept», Paket 2026.10.2, P-3); Wischen nie als einziger Weg (2.5.7).
+- Der Name eines Bildlinks beginnt mit dem sichtbaren Text im Bild (2.5.3), beim Logo-Link «Psychiatrische Universitätsklinik Zürich – zur Startseite dieser Website» (Wortlaut freigegeben 15.10.2026).
 - Hilfe und Kontakt an gleicher Stelle auf jeder Seite (3.2.6): Absenderin im Kopf, Zuständigkeitsverweis in der Fusszeile.
 - `prefers-reduced-motion` respektiert, nichts spielt automatisch ab.
 
@@ -54,8 +54,8 @@ Bei psychischer Erkrankung ist schon der Seitenbesuch eine sensible Information.
 ## F · Darstellung und Druck
 
 - Darstellung auf Smartphone, Tablet und Desktop konsistent; die im S-Protokoll markierten Stellen mit erhöhtem Platzbedarf laufen auch schmal nicht über.
-- **Druck:** Angehörige drucken Inhalte oft aus. `components/bundle.css` enthält die Druckregeln: Navigation, Skip-Link und Bedienelemente ausgeblendet, Akkordeons, Reiter und Vertiefungen vollständig gedruckt (Skript vor dem Druck, Rückfall `details::details-content`), Link-Adressen hinter externen Links sichtbar, Schwarz auf Weiss. Darstellungen nicht über Seitenumbrüche geteilt: Titel, Kernaussage, Darstellung und Kennzeichnung stehen auf einer A4-Seite, die Vertiefung folgt nach der Kennzeichnung und darf auf die nächste Seite fliessen (Profilentscheid 11.10.2026).
-- Typografie technisch korrekt: Guillemets in Vorlagen und Komponenten, Silbentrennung für Deutsch (`hyphens: auto` mit `lang="de-CH"`) bei langen Wörtern in schmalen Spalten – Navigation, Spalten und Stationen in Figuren. Fliesstext bleibt ohne automatische Trennung (`hyphens: manual`); so setzen es Starter und Muster (präzisiert 11.10.2026).
+- **Druck:** Angehörige drucken Inhalte oft aus. `components/bundle.css` enthält die Druckregeln: Navigation, Skip-Link und Bedienelemente ausgeblendet, Akkordeons, Reiter und Vertiefungen vollständig gedruckt (Skript vor dem Druck, Rückfall `details::details-content`), Link-Adressen hinter externen Links sichtbar, Schwarz auf Weiss. Darstellungen möglichst nicht über Seitenumbrüche geteilt: Titel, Kernaussage, Darstellung und Kennzeichnung stehen auf einer A4-Seite, die Vertiefung folgt nach der Kennzeichnung und darf auf die nächste Seite fliessen (Profilentscheid 11.10.2026). Ist eine Darstellung mit ihrer Liste länger als eine A4-Seite, stehen Titel, Kernaussage und der Anfang der Darstellung auf einer Seite; die Darstellung darf danach umbrechen, die Kennzeichnung folgt direkt auf das Ende der Darstellung. Eine leere Seite davor entsteht nicht. Dafür dürfen Abfolgen (Prozesspfad, Entscheidungsweg, Modell in Schritten) zwischen ihren Schritten umbrechen, auch wenn sie kürzer sind; jeder Schritt bleibt zusammen. Räumliche Darstellungen (Kreislauf, Beziehungskarte, Schichten, Überschneidung, Szene) und Gegenüberstellungen bleiben unteilbar (Paket 2026.10.2, P-1). Abschnittsüberschriften der Langform stehen im Druck im Fluss, nicht fixiert (P-15).
+- Typografie technisch korrekt: Guillemets in Vorlagen und Komponenten, Silbentrennung für Deutsch (`hyphens: auto` mit `lang="de-CH"`) bei langen Wörtern in schmalen Spalten – Navigation, Spalten und Stationen in Figuren. Fliesstext bleibt ohne automatische Trennung (`hyphens: manual`); so setzen es Starter und Muster (präzisiert 11.10.2026). Figuren und Abschnittsüberschriften trennen zusätzlich nach Silben, wenn ihr Container höchstens 12rem breit ist – praktisch nur bei grosser Schrift auf schmalen Bildschirmen (Paket 2026.10.2, P-6).
 - Der Zuständigkeitsverweis ist technisch an einer Stelle eingebunden (Fusszeilen-Vorlage bzw. `site.config.json`), nicht auf Seiten dupliziert. Der Verweis im Text kommt ebenfalls aus `site.config.json` (`responsibility.inline`) und wird nur über den Platzhalter `<p data-responsibility-inline></p>` eingesetzt.
 
 ## G · Wartbarkeit
@@ -69,7 +69,7 @@ Bei psychischer Erkrankung ist schon der Seitenbesuch eine sensible Information.
 
 ## Was der Starter automatisch prüft
 
-Das Gate des Psychoedukations-Starters prüft unter anderem Absenderin, Meta-Description, Navigation und aktiven Zustand, Menü ab sieben Hauptpunkten, Name des Logo-Links, Interaktionsskript bei Vertiefungen, Impressum, Datenschutzerklärung und 404-Seite, Telefonnummern und Notfallblöcke, Platzhalter, Visualisierungsplan sowie externe Ressourcen. Es ersetzt W3 nicht: Build-Warnungen, Sicherheits-Header im Hosting, echte Ladezeiten, Druckbild und Verhalten auf echten Geräten werden von Hand geprüft.
+Das Gate des Psychoedukations-Starters prüft unter anderem Absenderin, Redaktionsstatus (vor der Veröffentlichung kein «Entwurf» und ein Datum), Meta-Description, Navigation und aktiven Zustand, Menü ab sieben Hauptpunkten, Name des Logo-Links, Interaktionsskript bei Vertiefungen, Impressum, Datenschutzerklärung und 404-Seite, Telefonnummern und Notfallblöcke, Platzhalter, Visualisierungsplan sowie externe Ressourcen. Es ersetzt W3 nicht: Build-Warnungen, Sicherheits-Header im Hosting, echte Ladezeiten, Druckbild und Verhalten auf echten Geräten werden von Hand geprüft.
 
 ## Review-Ergebnis
 

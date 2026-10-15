@@ -2,7 +2,7 @@ Website-Profil der **Psychiatrischen Universitätsklinik Zürich (PUK)** für We
 
 ## Verbindlichkeit und Version
 
-**Fachstellen-Profil 2026.10.1** (Stand 11.10.2026) auf Basis des PUK Zürich Design Systems 1.10.1, Arbeitsstand PUK Website Kit 1.10.1-r4. Vier Ebenen – bei Widerspruch gilt die obere:
+**Fachstellen-Profil 2026.10.2** (Stand 15.10.2026) auf Basis des PUK Zürich Design Systems 1.10.1, Arbeitsstand PUK Website Kit 1.10.1-r4. Vier Ebenen – bei Widerspruch gilt die obere:
 
 | Ebene | Umfasst | Erkennbar an | Ändern darf |
 | --- | --- | --- | --- |
@@ -150,8 +150,8 @@ Die Fachstelle Angehörigenarbeit bietet Beratung und Psychoedukation für Angeh
 - `templates/website/psychoeducation-site-starter/` – **Startpunkt jeder mehrseitigen psychoedukativen Website**: Seitenvertrag `site.config.json` → `node tools/build.mjs` → `node tools/gate.mjs --production`. Navigation, `lang`, Titel, Meta, Favicon, Skip-Link, Absenderin und Zuständigkeitsverweis entstehen aus dem Vertrag, nie von Hand.
 - `ui_kits/website/` – klickbare Rekonstruktion der Referenzansichten des Original-Kits mit `qa.html` (zeigt auch Kit-Varianten, die für die Fachstelle nicht gelten).
 - `tokens/*.css` – die Quell-CSS unverändert.
-- **Projektpaket** `puk-website-profil-2026.10.1.zip` (separat ausgeliefert, ZIP-Dateien kann das Design-System nicht speichern): lauffähige Fassung mit aufgelösten Pfaden (`styles.css`, Schriften, Logos, React-Laufzeit für das UI-Kit), Leitlinien, React-Quellen mit Build-Skript und Anleitung `START-HIER.md`. Im Design-System selbst verweisen Vorlagen, Starter und UI-Kit auf diese Kit-Pfade und laufen erst im Paket.
-- **Veröffentlichen:** `node tools/export.mjs <zielordner> --production` im Starter schreibt eine eigenständige Website mit `css/site.css`, lokalen Schriften, `_headers` (Sicherheits-Header) und `sitemap.xml`.
+- **Projektpaket** `puk-website-profil-2026.10.2.zip` (separat ausgeliefert, ZIP-Dateien kann das Design-System nicht speichern): lauffähige Fassung mit aufgelösten Pfaden (`styles.css`, Schriften, Logos, React-Laufzeit für das UI-Kit), Leitlinien, React-Quellen mit Build-Skript und Anleitung `START-HIER.md`. Im Design-System selbst verweisen Vorlagen, Starter und UI-Kit auf diese Kit-Pfade und laufen erst im Paket.
+- **Veröffentlichen:** `node tools/export.mjs <zielordner> --production` im Starter schreibt eine eigenständige Website mit `css/site.css`, lokalen Schriften samt Lizenz (`fonts/OFL.txt`), `_headers` (Sicherheits-Header), `_redirects` (falls vorhanden), `sitemap.xml` und `robots.txt`.
 
 ## Offene Punkte
 
@@ -173,6 +173,32 @@ Arbeit am System:
 
 ## Änderungsprotokoll
 
+- **15.10.2026 · Version 2026.10.2** (`ENTSCHEIDE-PROFIL-2026-10-2.md`, P-1 bis P-17; Bau im Auftrag der Fachstelle: «ja, leg los»). Starter Build r4-9, Selbsttest 68/68 (vorher 65). Selbstprüfung mit Belegen: `review/paket-2026-10-2/SELBSTPRUEFUNG.md`. Die Prüfung des Pakets durch eine Sitzung, die nicht gebaut hat, ist offen.
+  - **Druck (P-1, P-15):**
+    - Die Hülle `.puk-vis-wide` ist nicht mehr unteilbar. Abfolgen (Prozesspfad, Entscheidungsweg, Modell in Schritten) brechen zwischen ihren Schritten um; Titel, Kernaussage und Anfang bleiben zusammen, und die Kennzeichnung folgt direkt.
+    - Räumliche Darstellungen bleiben unteilbar. Beim Modell in Schritten steht die Zeichnung im Druck oben (`erklaermuster.css`).
+    - Gemessen an 17 Figuren in 12 A4-Einstellungen: keine leere Seite. Mit künstlich verlängerten Abfolgen: leere Seiten vorher 35 von 48 Fällen, nachher 0.
+    - Abschnittsüberschriften stehen im Druck im Fluss.
+    - **Abweichung:** Kurze Abfolgen können jetzt zwischen zwei Schritten umbrechen (9 von 204 Fällen), statt als Ganzes auf die nächste Seite zu rücken.
+  - **Lesen (P-2, P-5, P-6):**
+    - Der Verweis im Text steht im Lesegrad der Seite (`--puk-read-size`, 19/21 px statt 16 px).
+    - Ziffernkreise des Modells in Schritten in `rem`; bei 100 % pixelgleich.
+    - Silbentrennung in Figuren und Abschnittsüberschriften, wenn ihr Container höchstens 12rem breit ist.
+  - **Werkzeuge des Starters (P-4, P-7, P-8, P-10, P-13):**
+    - Das Produktionsgate blockiert einen Redaktionsstatus mit «Entwurf» oder ohne Datum (`editorial-status`).
+    - Die Fusszeile zeigt keine Versionszeile mehr; die Version steht nur in `<meta name="generator">`.
+    - Der Logo-Link heisst «Psychiatrische Universitätsklinik Zürich – zur Startseite dieser Website».
+    - `gate.html` lädt den Prüfbericht und führt den Selbsttest an der Referenz `tools/selftest/` aus. Es zeigt jetzt dieselben Befunde wie `node tools/gate.mjs`; vorher fehlte in der Produktion die Prüfung `review-report`, und der Selbsttest lief an der Website statt an der Referenz.
+    - Der Export liefert `fonts/OFL.txt`, `_redirects` (falls vorhanden) und `robots.txt` mit der Sitemap-Adresse.
+  - **Leitlinien (P-1, P-3, P-6, P-14):**
+    - «Technische Qualität», F: Druckregel und Silbentrennung; der Redaktionsstatus steht in der Liste der Gate-Prüfungen.
+    - «Visualisierung umsetzen»: Hinweis zu `rem`-Schwellen im Druck.
+    - «Interaktionskonzept», Bedienziele: Die Absenderzeile gilt als Textzeile; ihr E-Mail-Link braucht keine 44 px (WCAG 2.5.8 über den Abstand erfüllt).
+  - **Nicht gebaut:** P-9 und P-11 (gestrichen), P-12 (keine Änderung).
+  - **Websites:**
+    - Die Kopie der Website «Depression» in diesem Repository zeigt die CSS-Änderungen sofort; ihre Werkzeuge übernimmt sie beim nächsten inhaltlichen Anlass.
+    - Die Borderline-Website übernimmt das Paket in ihrem eigenen Repository.
+  - **Paket:** `puk-website-profil-2026.10.2.zip` ersetzt `puk-website-profil-2026.10.1.zip`.
 - **15.10.2026 · Paket 2026.10.2, in Arbeit · P-16 und P-17** (`ENTSCHEIDE-PROFIL-2026-10-2.md`; entschieden von der Fachstelle: «ja, deine Vorschläge sind gut. führe sie aus»). Die Version bleibt 2026.10.1, bis das Paket vollständig ist.
   - **P-16 Fokusbild am Sprungziel:**
     - `components/bundle.css`: Abschnitte und Überschriften (`section`, `h2` bis `h4`), die als Sprungziel den Fokus erhalten, zeigen das Fokusbild des Systems. Mit erzwungenen Farben ist es eine 2-px-Umrandung in `CanvasText`. `main` ist ausgenommen. Muster: Borderline-Website, 13.10.2026.
