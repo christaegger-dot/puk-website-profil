@@ -1,0 +1,73 @@
+# Sperre gegen das Zusammenführen vor der Prüfung (Forensisches Audit vom 15.10.2026, Befund F-1; CLAUDE.md,
+# «Kein Merge ohne Prüfbericht»).
+#
+# Die Prüfung bleibt rot, solange die Beschreibung eines Pull Requests im Abschnitt «Offene Stufen» einen Punkt
+# nennt, der nicht abgehakt ist:
+#   - [ ] Nachprüfung durch eine Sitzung, die nicht gebaut hat   → offen, Prüfung rot
+#   - [x] Nachprüfung durch eine Sitzung, die nicht gebaut hat   → erledigt
+#   - Nachprüfung …   (Punkt ohne Kästchen)                       → gilt als offen
+#   - keine                                                       → keine offene Stufe
+# Ohne Abschnitt «Offene Stufen» bleibt die Prüfung grün. Nach jeder Änderung der Beschreibung läuft sie neu.
+#
+# Zur Sperre wird sie erst, wenn sie für main als erforderlich markiert ist (Settings › Branches bzw. Rules,
+# «Require status checks to pass», Prüfung «Offene Stufen»).
+#
+# Sicherheit: Die Prüfung liest nur die Beschreibung aus den Ereignisdaten (Datei, kein ${{ … }} im Skript),
+# checkt keinen Code aus, hat keine Rechte und gibt Text aus der Beschreibung nur mit vorangestelltem Wort aus,
+# damit er nicht als Befehl an GitHub Actions gelesen wird.
+name: Offene Stufen
+
+on:
+  pull_request:
+    types: [opened, edited, reopened, synchronize, ready_for_review]
+
+permissions: {}
+
+jobs:
+  offene-stufen:
+    name: Offene Stufen
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Abschnitt «Offene Stufen» in der Beschreibung prüfen
+        run: |
+          python3 - <<'PY'
+          import json, os, re, sys
+
+          event = json.load(open(os.environ['GITHUB_EVENT_PATH'], encoding='utf-8'))
+          body = ((event.get('pull_request') or {}).get('body') or '').replace('\r\n', '\n')
+          lines = body.split('\n')
+
+          # Überschrift: Markdown-Überschrift oder Zeile, die fett beginnt («**Offene Stufen**»)
+          heading = re.compile(r'^\s{0,3}(#{1,6}\s|\*\*|__)')
+          start = next((i for i, line in enumerate(lines)
+                        if heading.match(line) and re.search(r'offene\s+stufen', line, re.I)), None)
+          if start is None:
+              print('Kein Abschnitt «Offene Stufen» in der Beschreibung: keine offene Stufe genannt.')
+              sys.exit(0)
+
+          offen, erledigt = [], []
+          for line in lines[start + 1:]:
+              if heading.match(line) or line.strip() == '---' or line.lstrip().startswith('🤖'):
+                  break
+              item = re.match(r'^ ?[-*+]\s+(.*)$', line)  # nur Punkte der obersten Ebene
+              if not item:
+                  continue
+              text = item.group(1).strip()
+              if re.match(r'\[[xX]\]', text):
+                  erledigt.append(text[3:].strip())
+                  continue
+              text = re.sub(r'^\[\s\]\s*', '', text)
+              if re.match(r'keine\b', text, re.I):
+                  continue
+              offen.append(text)
+
+          for text in erledigt:
+              print('erledigt: ' + text)
+          for text in offen:
+              print('offen: ' + text)
+          if offen:
+              print(f'::error title=Offene Stufen::{len(offen)} Stufe(n) offen. Zusammenführen erst, wenn alle abgehakt sind ([x]).')
+              sys.exit(1)
+          print('Alle genannten Stufen sind abgehakt.')
+          PY
