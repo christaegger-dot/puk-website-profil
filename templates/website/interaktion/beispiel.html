@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="HTML-Fassungen von Akkordeon, Reitern, Dropdown-Menü und Dialog für statische Websites der Fachstelle.">
+<meta name="description" content="HTML-Fassungen von Akkordeon, Reitern, Dropdown-Menü, Dialog, Listenfilter und Abschnittssuche für statische Websites der Fachstelle.">
 <title>Interaktion ohne React – Referenz | PUK Zürich</title>
 <link rel="icon" href="../../../assets/logo/PUK_Logo-Symbol_statisch_positiv.svg" type="image/svg+xml">
 <link rel="stylesheet" href="../../../styles.css">
@@ -15,7 +15,7 @@
 <main id="main-content" class="puk-web-main" tabindex="-1"><div class="puk-web-container">
 <p class="puk-web-eyebrow">Referenz · Interaktion ohne React</p>
 <h1 class="puk-web-h1">Interaktive Komponenten für statische Websites</h1>
-<p class="puk-web-lead">Markup zum Kopieren. Ohne Skript bleiben alle Inhalte sichtbar; Regeln im Abschnitt «Interaktionskonzept». Beispieltexte fachlich freigegeben (Fachstelle Angehörigenarbeit PUK, 06.10.2026).</p>
+<p class="puk-web-lead">Markup zum Kopieren. Ohne Skript bleiben alle Inhalte sichtbar; Regeln im Abschnitt «Interaktionskonzept». Beispieltexte fachlich freigegeben (Fachstelle Angehörigenarbeit PUK, 06.10.2026). Beim Listenfilter und bei der Abschnittssuche sind Feldbeschriftungen und Hinweise ein Musterentwurf (15.10.2026), nicht fachlich geprüft; die Fragen stammen aus dem Akkordeon.</p>
 <div class="ia-demo">
 <section class="ia-sec" aria-labelledby="ia-acc-h">
 <h2 class="ia-h" id="ia-acc-h">Akkordeon</h2>
@@ -60,6 +60,54 @@
   <div class="puk-dialog__body"><p>Ihre Notizen in diesem Reflexionsbogen werden entfernt. Das lässt sich nicht rückgängig machen.</p></div>
   <div class="puk-dialog__footer"><button type="button" class="puk-btn puk-btn--ghost" data-puk-dialog-close>Abbrechen</button><button type="button" class="puk-btn puk-btn--danger" data-puk-dialog-close>Löschen</button></div>
 </dialog>
+</section>
+
+<section class="ia-sec" aria-labelledby="ia-filter-h">
+<h2 class="ia-h" id="ia-filter-h">Listenfilter</h2>
+<p class="ia-note">Hilft, in einer langen Liste auf derselben Seite einen Eintrag zu finden, z. B. Begriffe oder häufige Fragen. Nur als Hilfe: Ohne Eingabe und ohne Skript stehen alle Einträge da; das Feld erscheint erst mit Skript. Mehrere Wörter müssen alle vorkommen.</p>
+<div data-puk-filter>
+  <div class="puk-filter">
+    <label class="puk-filter__label" for="ia-filter-input">Frage suchen</label>
+    <input class="puk-filter__input" id="ia-filter-input" type="search" autocomplete="off" data-puk-field data-filter-input>
+    <p class="puk-filter__status" role="status" data-filter-status></p>
+  </div>
+  <p class="puk-filter__empty" data-filter-empty hidden>Keine passende Frage gefunden. Versuchen Sie ein kürzeres Wort.</p>
+  <ul class="ia-list" role="list">
+    <li data-filter-item><p class="ia-item-title">Kann ich mich melden, wenn die erkrankte Person nicht in der PUK behandelt wird?</p><p>Ja. Für eine Beratung ist keine Behandlung in der PUK erforderlich.</p></li>
+    <li data-filter-item><p class="ia-item-title">Brauche ich eine Vollmacht der erkrankten Person?</p><p>Nein. Die Beratung erhalten Sie ohne Vollmacht der erkrankten Person.</p></li>
+    <li data-filter-item><p class="ia-item-title">Kostet die Beratung etwas?</p><p>Nein. Die Dienstleistungen der Fachstelle sind kostenlos.</p></li>
+  </ul>
+</div>
+</section>
+
+<section class="ia-sec" aria-labelledby="ia-search-h">
+<h2 class="ia-h" id="ia-search-h">Abschnittssuche</h2>
+<p class="ia-note">Sucht in einem Index aus Einträgen mit <code>data-search-*</code>, den der Build einer Website anlegt. Der Starter erzeugt keinen Index; dieses Beispiel hat einen kleinen Index von Hand. Ohne Suchwort und ohne Skript steht das Verzeichnis da. Ein Treffer springt zum Abschnitt; der Fokus liegt sichtbar auf dem Ziel.</p>
+<div data-puk-search data-search-limit="5">
+  <div class="puk-filter">
+    <label class="puk-filter__label" for="ia-search-input">Komponente suchen</label>
+    <input class="puk-filter__input" id="ia-search-input" type="search" autocomplete="off" data-puk-field data-search-input>
+    <p class="puk-filter__status" role="status" data-search-status></p>
+  </div>
+  <p class="puk-filter__empty" data-search-empty hidden>Keine passende Komponente gefunden. Das Verzeichnis zeigt alle Komponenten dieser Seite.</p>
+  <ol class="ia-list" data-search-results hidden>
+    <li data-search-item data-search-order="0" data-search-level="section" data-search-title="Akkordeon" data-search-keywords="Fragen aufklappen Vertiefung" data-search-text="Akkordeon Optionale Vertiefung, drei oder mehr gleichartige Fragen."><a class="puk-link--action" href="#ia-acc-h">Akkordeon</a></li>
+    <li data-search-item data-search-order="1" data-search-level="section" data-search-title="Reiter" data-search-keywords="Varianten Zielgruppen" data-search-text="Reiter Gleichrangige Varianten desselben Inhalts, höchstens vier."><a class="puk-link--action" href="#ia-tabs-h">Reiter</a></li>
+    <li data-search-item data-search-order="2" data-search-level="section" data-search-title="Dropdown-Menü" data-search-keywords="Navigation Menü" data-search-text="Dropdown-Menü Für Navigation mit mehr als sechs Einträgen."><a class="puk-link--action" href="#ia-menu-h">Dropdown-Menü</a></li>
+    <li data-search-item data-search-order="3" data-search-level="section" data-search-title="Dialog" data-search-keywords="Bestätigung" data-search-text="Dialog Nur für kurze Entscheidungen."><a class="puk-link--action" href="#ia-dlg-h">Dialog</a></li>
+    <li data-search-item data-search-order="4" data-search-level="section" data-search-title="Listenfilter" data-search-keywords="Liste filtern Begriffe Fragen" data-search-text="Listenfilter Einen Eintrag in einer langen Liste auf derselben Seite finden."><a class="puk-link--action" href="#ia-filter-h">Listenfilter</a></li>
+  </ol>
+  <div data-search-directory>
+    <p>Alle Komponenten dieser Seite:</p>
+    <ul class="ia-list" role="list">
+      <li><a class="puk-link--action" href="#ia-acc-h">Akkordeon</a></li>
+      <li><a class="puk-link--action" href="#ia-tabs-h">Reiter</a></li>
+      <li><a class="puk-link--action" href="#ia-menu-h">Dropdown-Menü</a></li>
+      <li><a class="puk-link--action" href="#ia-dlg-h">Dialog</a></li>
+      <li><a class="puk-link--action" href="#ia-filter-h">Listenfilter</a></li>
+    </ul>
+  </div>
+</div>
 </section>
 </div>
 

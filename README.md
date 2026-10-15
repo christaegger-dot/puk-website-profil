@@ -140,7 +140,7 @@ Die Fachstelle Angehörigenarbeit bietet Beratung und Psychoedukation für Angeh
 
 - Stylesheet `components/bundle.css` (die vollständige Token- und Hüllen-CSS-Kette inkl. `.puk-web-*`, `.puk-longform*`, Fokus- und Formular-Basis) nach den Tokens laden, dann React 18, dann `components/bundle.js`.
 - `Alert` mit `tone="emergency"` wird auf Websites der Fachstelle nicht verwendet (kein Notfallblock). `Dialog` nie als einziger Ort kritischer Information.
-- **Statische Websites (Starter, Eleventy, Astro):** Akkordeon, Reiter, Dropdown-Menü, Dialog und Button als HTML-Markup mit `components/bundle.css` und `components/interaktion.js` – ohne Abhängigkeiten, ohne Inline-Skripte, ohne Skript bleibt alles sichtbar. Markup: `templates/website/interaktion/`, Karte «Interaktion ohne React». `bundle.css` enthält auch die Druckregeln.
+- **Statische Websites (Starter, Eleventy, Astro):** Akkordeon, Reiter, Dropdown-Menü, Dialog und Button als HTML-Markup mit `components/bundle.css` und `components/interaktion.js` – ohne Abhängigkeiten, ohne Inline-Skripte, ohne Skript bleibt alles sichtbar. Dazu Listenfilter und Abschnittssuche (nur als Hilfe zum Finden; die Suche braucht einen Index aus dem Build der Website) und ein sichtbarer Fokus auf dem Ziel eines Sprunglinks. Markup: `templates/website/interaktion/`, Karte «Interaktion ohne React». `bundle.css` enthält auch die Druckregeln.
 - Die Grundlagen-Seiten (Gruppen «Grundlagen · …») zeigen Farben, Typografie, Abstände, Flächen, Bewegung, Fokus, Logo und Icons als Referenzkarten; sie sind keine Komponenten im Bundle.
 - Website-Hülle als Klassen: `.puk-web-page`, `.puk-web-header`, `.puk-web-nav`, `.puk-web-hero`, `.puk-web-h1`, `.puk-web-lead`, `.puk-web-card-list`, `.puk-web-band`, `.puk-web-footer`.
 
@@ -173,6 +173,25 @@ Arbeit am System:
 
 ## Änderungsprotokoll
 
+- **15.10.2026 · Paket 2026.10.2, in Arbeit · P-16 und P-17** (`ENTSCHEIDE-PROFIL-2026-10-2.md`; entschieden von der Fachstelle: «ja, deine Vorschläge sind gut. führe sie aus»). Die Version bleibt 2026.10.1, bis das Paket vollständig ist.
+  - **P-16 Fokusbild am Sprungziel:**
+    - `components/bundle.css`: Abschnitte und Überschriften (`section`, `h2` bis `h4`), die als Sprungziel den Fokus erhalten, zeigen das Fokusbild des Systems. Mit erzwungenen Farben ist es eine 2-px-Umrandung in `CanvasText`. `main` ist ausgenommen. Muster: Borderline-Website, 13.10.2026.
+    - `starter.css`: Die Regel `.puk-longform__section[tabindex="-1"]:focus{outline:none}` entfällt.
+  - **P-17 Listenfilter und Abschnittssuche:**
+    - Markup und Beispiel in `templates/website/interaktion/` (`README.md`, `beispiel.html`, `interaktion-beispiel.css`); Klassen `.puk-filter*` in `bundle.css`.
+    - Ohne Skript erscheint das Feld nicht, und alle Einträge bzw. das Verzeichnis stehen da. Im Druck erscheinen alle Einträge, ohne Feld.
+    - Regel im Abschnitt «Interaktionskonzept»: nur eine Hilfe zum Finden; wann darauf verzichten; der Starter erzeugt keinen Suchindex. Dazu zwei Zeilen in der Entscheidungshilfe und der Absatz «Sprungziele» unter «Navigation und Kapitelorientierung».
+    - Kopfkommentar von `components/interaktion.js` und Karte «Interaktion ohne React» nachgeführt.
+    - **Hinweis für das Sprach-Review:** Die Texte der Statuszeilen stehen fest im Skript, aus der Borderline-Website übernommen (z. B. «Alle Themenseiten sind unten aufgeführt.», «3 von 10 Treffern sichtbar.»). Sie passen für eine Suche über Themenseiten; im Beispiel mit Komponenten passen sie nur ungefähr.
+  - **Selbst geprüft** (bauende Sitzung, Chromium, 27 Punkte bestanden):
+    - Tastatur: Sprunglink, Treffer der Suche, Tab danach.
+    - 320 px ohne waagrechtes Scrollen; reduzierte Bewegung; erzwungene Farben; ohne Skript; Druck.
+    - Feldhöhe 44 px; Skip-Link ohne Ring um `main`.
+    - Starter: Build ohne blockierende Befunde, Selbsttest 65/65.
+    - Die Prüfsitzung des Pakets prüft P-16 und P-17 mit.
+  - **Website «Depression»:**
+    - Die Kopie in diesem Repository zeigt das neue Fokusbild sofort, weil sie `styles.css` gemeinsam lädt. Mit erzwungenen Farben zeigt sie es erst, wenn sie das Paket übernimmt, weil ihr eigenes `starter.css` die Umrandung noch ausblendet.
+    - Die veröffentlichte Fassung bleibt unverändert.
 - **15.10.2026 · Rückführung aus dem Repository (Vorbedingung des Pakets 2026.10.2, Schritt 0)**
   - **Anlass:** Zwei Profildateien waren nach dem Paket 2026.10.1 direkt im Repository `puk-website-profil` geändert worden, bei der Arbeit an der Borderline-Website. Die Fachstelle hat am 15.10.2026 entschieden, die Änderungen ins Profil zu übernehmen («ja, leg los mit Schritt 0»; `ENTSCHEIDE-PROFIL-2026-10-2.md`, Ablauf, Schritt 0). Damit ist auch die Frage aus dem Entscheid zu R3-01 der Website «Depression» beantwortet: Die Änderung an `interaktion.js` wird übernommen, nicht zurückgenommen. Die Dateien sind byte-gleich mit dem Repository.
   - **Version:** Sie bleibt 2026.10.1. Das Paket `puk-website-profil-2026.10.1.zip` enthält die Änderungen nicht; sie kommen mit dem Paket 2026.10.2.

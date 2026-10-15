@@ -709,3 +709,27 @@ html.puk-scroll-lock{overflow:hidden}
   .puk-vis-figure>.puk-vis-more{order:1}
 }
 @media print{details::details-content{content-visibility:visible;display:block}}
+
+/* ==== Paket 2026.10.2 · P-16 und P-17 (15.10.2026, ergänzt, nicht Teil der Quelle) ====
+   P-16 Sprungziele: interaktion.js setzt nach einem Sprunglink oder einem Aufruf mit #… den Fokus auf das Ziel,
+      bei Abschnitten und Überschriften mit vorübergehendem tabindex="-1". Dieser Fokus ist sichtbar wie das
+      Fokusbild des Systems, mit erzwungenen Farben als Umrandung. main ist ausgenommen, damit der Skip-Link den
+      Inhaltsbereich nicht mit einem seitenbreiten Ring umgibt (Muster der Borderline-Website, 13.10.2026).
+   P-17 Listenfilter und Abschnittssuche (data-puk-filter, data-puk-search; Markup in templates/website/interaktion/):
+      Das Feld erscheint erst, wenn das Skript die Komponente übernommen hat; ohne Skript stehen alle Einträge bzw.
+      das Verzeichnis da. Ausgeblendete Einträge bleiben ausgeblendet, auch wenn eine Komponente display setzt.
+      Im Druck: alle Einträge und das Verzeichnis, ohne Feld, Trefferliste und Hinweise. */
+:where(section,h2,h3,h4)[tabindex="-1"]:focus{outline:none;box-shadow:var(--focus-ring);border-radius:var(--radius-sm)}
+@media (forced-colors:active){:where(section,h2,h3,h4)[tabindex="-1"]:focus{outline:2px solid CanvasText;outline-offset:2px;box-shadow:none}}
+.puk-filter{margin:0 0 var(--space-5);padding:var(--space-5);background:var(--surface-structure)}
+[data-puk-filter]:not([data-filter-enhanced]) .puk-filter,[data-puk-search]:not([data-search-enhanced]) .puk-filter{display:none}
+.puk-filter__label{display:block;margin:0 0 var(--space-2);font:var(--type-body);font-weight:var(--fw-medium);color:var(--text-default)}
+.puk-filter__input{box-sizing:border-box;width:100%;min-height:var(--web-touch-target);padding:var(--space-2) var(--space-3);border-radius:var(--radius-sm);background:var(--ui-field);font:var(--type-body);color:var(--text-default)}
+.puk-filter__status{margin:var(--space-2) 0 0;font:var(--type-body-sm);color:var(--text-muted)}
+.puk-filter__empty{margin:0 0 var(--space-5);font-weight:var(--fw-medium)}
+:is([data-filter-item],[data-search-item],[data-search-results],[data-search-directory],[data-filter-empty],[data-search-empty])[hidden]{display:none!important}
+@media print{
+  .puk-filter,[data-search-results],[data-filter-empty],[data-search-empty]{display:none!important}
+  [data-filter-item][hidden],[data-search-directory][hidden]{display:block!important}
+  li[data-filter-item][hidden]{display:list-item!important}
+}
