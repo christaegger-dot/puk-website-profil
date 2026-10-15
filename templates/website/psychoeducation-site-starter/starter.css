@@ -33,7 +33,6 @@
 /* Hauptnavigation unter 760 px zweispaltig (Prüfbefund BD-05/W3-06, 11.10.2026); bei grosser Schrift einspaltig, weil die Spaltenbreite in rem wächst. */
 @media (max-width:760px){.puk-web-nav__list{grid-template-columns:repeat(auto-fit,minmax(min(100%,8.25rem),1fr))}}
 .puk-web-nav__link,.puk-longform__roadmap a,.puk-link--action{min-width:0;max-width:100%;overflow-wrap:anywhere}
-.puk-longform__section[tabindex="-1"]:focus{outline:none}
 /* Sprungziel am Seitenende: Ein Abschnitt, auf den ein Link springt und der zuletzt steht, braucht genug Höhe,
    damit er an die Oberkante scrollen kann (sonst endet die Seite vorher). Nur an solchen Abschnitten setzen. */
 .puk-site-anchor-end{min-height:calc(100svh - 32px)}

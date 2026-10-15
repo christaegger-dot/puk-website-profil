@@ -1,6 +1,6 @@
 # Interaktionskonzept
 
-Wie sich interaktive Elemente auf Websites der Fachstelle verhalten: Zustände, Bewegung, Rückmeldungen und die Regeln je Komponente. Ziel ist eine ruhige, verständliche und einheitliche Nutzerführung. Interaktion dient der Orientierung und der Gliederung von Inhalten – nie dem Effekt. Live-Beispiele: Gruppe «Interaktion» (Interaktionszustände, Karussell, Dropdown-Menü) sowie Akkordeon, Reiter, Dialog, Tooltip, Toast und Hinweis. HTML-Fassungen für statische Websites (Akkordeon, Reiter, Dropdown-Menü, Dialog): Karte «Interaktion ohne React», `components/interaktion.js`, Markup in `templates/website/interaktion/`.
+Wie sich interaktive Elemente auf Websites der Fachstelle verhalten: Zustände, Bewegung, Rückmeldungen und die Regeln je Komponente. Ziel ist eine ruhige, verständliche und einheitliche Nutzerführung. Interaktion dient der Orientierung und der Gliederung von Inhalten – nie dem Effekt. Live-Beispiele: Gruppe «Interaktion» (Interaktionszustände, Karussell, Dropdown-Menü) sowie Akkordeon, Reiter, Dialog, Tooltip, Toast und Hinweis. HTML-Fassungen für statische Websites (Akkordeon, Reiter, Dropdown-Menü, Dialog, Listenfilter, Abschnittssuche): Karte «Interaktion ohne React», `components/interaktion.js`, Markup in `templates/website/interaktion/`.
 
 ## Grundsätze
 
@@ -137,6 +137,14 @@ Nicht zulässig: Federn, Einzoomen, Wackeln, Pulsieren, Endlosschleifen, Scroll-
 - **Verhalten:** Umschalter mit `aria-pressed`; Trefferzahl in einer Live-Region; sichtbarer Rücksetzweg; Fokus bleibt auf dem Chip. Auf Touch 44 px hoch.
 - **Verzichten, wenn:** weniger als zehn Inhalte → alle zeigen; mehr als acht Kategorien → Suche oder Gliederung.
 
+### Listenfilter und Abschnittssuche (HTML, `data-puk-filter`, `data-puk-search`)
+
+- **Zweck:** Der Listenfilter hilft, in einer langen Liste auf derselben Seite einen Eintrag zu finden (Begriffe, häufige Fragen, Quellen). Die Abschnittssuche findet Abschnitte über alle Seiten einer Website. Beide sind eine Hilfe zum Finden, nie der einzige Weg zu einem Inhalt (Grundsatz 1).
+- **Verhalten:** Suche im Text, ohne Gross- und Kleinschreibung und ohne Akzente; mehrere Wörter müssen alle vorkommen. Die Statuszeile (`role="status"`) sagt die Zahl der Treffer an; bei null Treffern steht ein Hinweis mit einem anderen Weg. Ohne Eingabe stehen alle Einträge bzw. das Verzeichnis da. Eingaben werden weder übertragen noch gespeichert.
+- **Ohne Skript:** Das Feld erscheint nicht; alle Einträge bzw. das Verzeichnis stehen da. **Druck:** alle Einträge, ohne Feld.
+- **Index der Suche:** Die Abschnittssuche braucht einen Index (Einträge mit `data-search-*`), den der Build der Website anlegt. Der Starter erzeugt keinen Index; eine Website, die die Suche braucht, bringt ihn selbst mit.
+- **Verzichten, wenn:** die Liste weniger als zehn Einträge hat (wie bei den Filter-Chips) oder eine Gliederung (alphabetisch, nach Thema) genügt → keinen Filter; die Website wenige Seiten hat und ein Seitenverzeichnis oder Lesepfade genügen → keine Suche.
+
 ### Schalter, Kontrollkästchen, Optionsfelder
 
 - **Switch:** nur für eine Einstellung mit sofortiger Wirkung (z. B. «Hoher Kontrast»). Gehört die Auswahl zu einem Formular, das erst mit «Senden» wirkt → `Checkbox`.
@@ -154,12 +162,15 @@ Nicht zulässig: Federn, Einzoomen, Wackeln, Pulsieren, Endlosschleifen, Scroll-
 - Bis sechs Hauptpunkte sichtbar; unter 760 px als zweispaltiges Raster mit Trennlinien (bei grosser Schrift einspaltig).
 - **Ab sieben Hauptpunkten** (Profilentscheid 11.10.2026, nach dem Befund BD-05: acht Punkte untereinander machten den Kopf bei 360 px 592 px hoch): Der Starter setzt die Navigation in ein Dropdown-Menü. Unter 760 px öffnet die Schaltfläche «Menü» die Liste im Fluss (zweispaltig); breit bleiben alle Punkte sichtbar, die Schaltfläche entfällt. Ohne Skript steht die Liste offen. Das Gate blockiert mehr als sechs Punkte ohne Menü (`nav-menu`).
 - Lange Seiten (ab vier Hauptabschnitten) erhalten eine Kapitelorientierung mit Sprunglinks (`.puk-longform__roadmap`); Sprungziele mit `scroll-margin-top`, weiches Scrollen nur ohne reduzierte Bewegung.
+- **Sprungziele** (Paket 2026.10.2, P-16): Ein Sprunglink oder ein Aufruf mit `#…` öffnet ein geschlossenes `details` um das Ziel und setzt den Fokus auf das Ziel (`components/interaktion.js`). Der Fokus ist sichtbar wie das Fokusbild des Systems, mit erzwungenen Farben als Umrandung (`components/bundle.css`); `main` als Ziel des Skip-Links erhält kein Fokusbild. Die nächste Tab-Taste führt im Abschnitt weiter.
 
 ## Entscheidungshilfe
 
 | Ich möchte … | Einfachste Lösung | Erst wenn das nicht reicht |
 | --- | --- | --- |
 | viel Text gliedern | Zwischentitel, Listen | Kapitelorientierung mit Sprunglinks |
+| einen Eintrag in einer langen Liste finden | Gliederung (alphabetisch, nach Thema) | Listenfilter |
+| Inhalte über viele Seiten finden | Seitenverzeichnis, Lesepfade | Abschnittssuche (nur mit Index aus dem Build) |
 | Optionales verbergen | – (zeigen) | Akkordeon |
 | Varianten für Zielgruppen zeigen | getrennte Abschnitte mit Zwischentitel | Reiter (bis vier) |
 | mehrere Beispiele zeigen | Liste oder Kartenliste | Karussell (bis sechs) |

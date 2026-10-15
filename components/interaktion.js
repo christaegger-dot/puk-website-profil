@@ -1,5 +1,6 @@
-/* PUK Website-Profil · Interaktion ohne React (06.10.2026)
-   Akkordeon, Reiter, Dropdown-Menü, Dialog und Erklärmuster G (Modell in Schritten) für statische Websites.
+/* PUK Website-Profil · Interaktion ohne React (06.10.2026; Sprungziele, Listenfilter und Abschnittssuche 13.10.2026)
+   Akkordeon, Reiter, Dropdown-Menü, Dialog, Erklärmuster G (Modell in Schritten), Listenfilter (data-puk-filter),
+   Abschnittssuche (data-puk-search) und Sprungziele (Fokus auf das Ziel eines Sprunglinks) für statische Websites.
    Keine Abhängigkeiten, keine Inline-Skripte nötig: als script-Element mit src="components/interaktion.js" und defer einbinden.
    Ohne Skript bleiben alle Inhalte sichtbar (progressive Verbesserung).
    Markup und Regeln: templates/website/interaktion/README.md, Abschnitt «Interaktionskonzept». */
