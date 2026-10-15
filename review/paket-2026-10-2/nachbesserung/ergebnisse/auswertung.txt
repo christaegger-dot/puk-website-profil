@@ -1,0 +1,140 @@
+
+## Echte Seiten, neu (Starter 3 + Kopie «Depression» 7, je 12 Einstellungen)
+- PDF: 120
+- PDF (Bilder): 120
+- Seiten: 829
+- Fälle: 204
+- Text nicht gefunden: 0
+- mehrdeutig: 0
+- ganz auf einer Seite: 204
+- Titel+Kern+Anfang zusammen: 204
+- Kennzeichnung direkt: 204
+- leere Seiten: 0
+- leere Rahmen (K-1): 0
+- leere Rahmenstücke Seitenmitte: 0
+- Rahmen mit Inhalt bis Seitenende: 62
+- davon grauer Rest >= 10 %: 25
+
+## Echte Seiten, vorher 8abc333
+- PDF: 120
+- PDF (Bilder): 120
+- Seiten: 838
+- Fälle: 204
+- Text nicht gefunden: 0
+- mehrdeutig: 0
+- ganz auf einer Seite: 204
+- Titel+Kern+Anfang zusammen: 204
+- Kennzeichnung direkt: 204
+- leere Seiten: 0
+- leere Rahmen (K-1): 0
+- leere Rahmenstücke Seitenmitte: 0
+- Rahmen mit Inhalt bis Seitenende: 62
+- davon grauer Rest >= 10 %: 25
+
+## Echte Seiten, Paket 2026.10.2 vor der Nachbesserung (1047ad6)
+- PDF: 120
+- PDF (Bilder): 120
+- Seiten: 807
+- Fälle: 204
+- Text nicht gefunden: 0
+- mehrdeutig: 0
+- ganz auf einer Seite: 195
+- Titel+Kern+Anfang zusammen: 204
+- Kennzeichnung direkt: 204
+- leere Seiten: 1
+- leere Rahmen (K-1): 86
+- leere Rahmenstücke Seitenmitte: 0
+- Rahmen mit Inhalt bis Seitenende: 86
+- davon grauer Rest >= 10 %: 27
+  K-1 im Paket, Beispiele: [('psychoeducation-site-starter-behandlung-verstehen-m0-s0.9.pdf', '1'), ('psychoeducation-site-starter-behandlung-verstehen-m0-s0.9.pdf', '2'), ('psychoeducation-site-starter-behandlung-verstehen-m0-s1.1.pdf', '1'), ('psychoeducation-site-starter-behandlung-verstehen-m0-s1.1.pdf', '2'), ('psychoeducation-site-starter-behandlung-verstehen-m0-s1.pdf', '1'), ('psychoeducation-site-starter-behandlung-verstehen-m0-s1.pdf', '2')]
+
+## Kopiervorlagen visualisierungsmuster.html und erklaermuster.html, neu
+- PDF: 24
+- PDF (Bilder): 24
+- Seiten: 215
+- Fälle: 132
+- Text nicht gefunden: 0
+- mehrdeutig: 48
+- ganz auf einer Seite: 84
+- Titel+Kern+Anfang zusammen: 132
+- Kennzeichnung direkt: 84
+- leere Seiten: 0
+- leere Rahmen (K-1): 0
+- leere Rahmenstücke Seitenmitte: 1
+- Rahmen mit Inhalt bis Seitenende: 34
+- davon grauer Rest >= 10 %: 6
+
+## Gegenprobe Regel 8abc333 an denselben Seiten
+- PDF mit gleicher Seitenzahl und gleichem Text auf jeder Seite: 120 von 120
+
+## Vergleich je Figur mit 8abc333
+- gleiche Form (ganz, Kopf, Kennzeichnung): 204 von 204
+- gleiche Seite für Titel, Kern, Anfang, Ende, Kennzeichnung: 204 von 204
+- PDF mit gleicher Seitenzahl: 109 von 120
+
+## Abfolgen fünffach, gekennzeichnet (Abnahme)
+- PDF: 48
+- PDF (Bilder): 48
+- Seiten: 415
+- Fälle: 48
+- Text nicht gefunden: 0
+- mehrdeutig: 0
+- ganz auf einer Seite: 0
+- Titel+Kern+Anfang zusammen: 48
+- Kennzeichnung direkt: 48
+- leere Seiten: 0
+- leere Rahmen (K-1): 0
+- leere Rahmenstücke Seitenmitte: 0
+- Rahmen mit Inhalt bis Seitenende: 136
+- davon grauer Rest >= 10 %: 16
+  Abweichungen: []
+
+## Abfolgen fünffach, ohne Kennzeichen, neu
+- PDF: 48
+- PDF (Bilder): 48
+- Seiten: 445
+- Fälle: 48
+- Text nicht gefunden: 0
+- mehrdeutig: 0
+- ganz auf einer Seite: 0
+- Titel+Kern+Anfang zusammen: 40
+- Kennzeichnung direkt: 43
+- leere Seiten: 35
+- leere Rahmen (K-1): 35
+- leere Rahmenstücke Seitenmitte: 0
+- Rahmen mit Inhalt bis Seitenende: 105
+- davon grauer Rest >= 10 %: 19
+
+## Abfolgen fünffach, ohne Kennzeichen, 8abc333
+- PDF: 48
+- PDF (Bilder): 48
+- Seiten: 449
+- Fälle: 48
+- Text nicht gefunden: 0
+- mehrdeutig: 0
+- ganz auf einer Seite: 0
+- Titel+Kern+Anfang zusammen: 40
+- Kennzeichnung direkt: 43
+- leere Seiten: 35
+- leere Rahmen (K-1): 35
+- leere Rahmenstücke Seitenmitte: 0
+- Rahmen mit Inhalt bis Seitenende: 105
+- davon grauer Rest >= 10 %: 18
+
+## Robustheit: gekennzeichnet, 2-, 3-, 4-, 6-, 8-fach
+- PDF: 240
+- PDF (Bilder): 240
+- Seiten: 2023
+- Fälle: 240
+- Text nicht gefunden: 0
+- mehrdeutig: 0
+- ganz auf einer Seite: 2
+- Titel+Kern+Anfang zusammen: 240
+- Kennzeichnung direkt: 240
+- leere Seiten: 1
+- leere Rahmen (K-1): 0
+- leere Rahmenstücke Seitenmitte: 0
+- Rahmen mit Inhalt bis Seitenende: 643
+- davon grauer Rest >= 10 %: 82
+  Abweichungen: []
+  leere Seiten: [('zz-dep-test-depression-verstehen-x6-m0-s0.8.pdf', [6])]

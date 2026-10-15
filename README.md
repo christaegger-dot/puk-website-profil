@@ -173,6 +173,22 @@ Arbeit am System:
 
 ## Änderungsprotokoll
 
+- **15.10.2026 · Version 2026.10.2, nachgebessert nach der Prüfung** (`ENTSCHEIDE-PROFIL-2026-10-2.md`, Abschnitt «Nachbesserung nach der Prüfung»; Befunde K-1 und W-1 bis W-4 im Prüfbericht `review/paket-2026-10-2/PRUEFBERICHT.md`; Entscheid der Fachstelle zu P-1 und zum Kennzeichen vom 15.10.2026). Starter Build r4-9, Selbsttest 72/72 (vorher 68). Selbstprüfung mit Belegen: `review/paket-2026-10-2/SELBSTPRUEFUNG-NACHBESSERUNG.md`. Die Nachprüfung durch eine Sitzung, die nicht gebaut hat, ist offen.
+  - **Druck (P-1, K-1):**
+    - Figuren sind im Druck wieder unteilbar wie in 2026.10.1: Hülle `.puk-vis-wide` und Rahmen `.puk-vis-figure` (`components/bundle.css`). Die Abweichung «kurze Abfolgen brechen um» entfällt, ebenso der leere graue Rahmen am Seitenende (K-1).
+    - Neu ist das Kennzeichen `data-print-split` an der Figur, gesetzt im Markup in `content/`. Nur eine gekennzeichnete Abfolge – Prozesspfad, Entscheidungsweg, Modell in Schritten – bricht zwischen ihren Schritten um. Titel, Kernaussage und erster Schritt bleiben zusammen (`break-before:avoid` am Titel verhindert den leeren Rahmenanfang), die Kennzeichnung folgt direkt auf den letzten Schritt.
+    - Im Druck stehen die Schritte einer gekennzeichneten Abfolge untereinander wie auf schmalen Bildschirmen, direkt in der Figurspalte (`visual-patterns.css`, `erklaermuster.css`; beim Modell in Schritten die Zeichnung über den Schritten). Nur so bleibt die Kennzeichnung in allen gemessenen Längen beim letzten Schritt. Die nicht entschiedene Regel «Zeichnung oben» (`align-items:start`) für alle Modelle in Schritten entfällt (W-2).
+    - Gemessen ohne Textmarken (W-1), A4 in 12 Einstellungen, an Starter und Kopie «Depression»: 204 Figurfälle, alle ganz auf einer Seite, keine leere Seite, kein leerer Rahmen; Lage jeder Figur gleich wie vor dem Paket (`8abc333`). Gekennzeichnete, fünffach verlängerte Abfolgen: 48 von 48 mit Titel, Kernaussage und Anfang zusammen und Kennzeichnung direkt; dazu 240 von 240 in fünf weiteren Längen. Am Bildschirm pixelgleich.
+  - **Gate (W-3):**
+    - `tools/contract.js` blockiert das Kennzeichen an anderen Mustern, an einer Figur ohne Schrittliste und an anderen Elementen als der Figur (`print-split`).
+    - Selbsttest neu mit «Entwurf vom 15.10.2026», das nur die Regel «Entwurf» trifft, und mit drei Fällen zum Kennzeichen (am Prozesspfad zulässig, an einer Gegenüberstellung und an der Hülle blockiert).
+    - Mutationsprobe: Jede dieser Regeln abgeschaltet lässt den Selbsttest scheitern.
+  - **Leitlinie und Anleitungen (W-2):**
+    - «Technische Qualität», F: «möglichst» und «auch wenn sie kürzer sind» entfallen; der entschiedene Satz zu langen Darstellungen steht unverändert. Neu ist ein Satz zum Kennzeichen, und das Kennzeichen steht in der Liste der Gate-Prüfungen.
+    - Anleitung im `README.md` des Starters (Abschnitt «Druck: lange Abfolgen kennzeichnen») und in `templates/website/longform/README.md`.
+  - **Website «Depression» (W-4):** Sie übernimmt beim nächsten inhaltlichen Anlass auch `starter.css` aus dem Starter; ihr eigenes `starter.css` nimmt mit erzwungenen Farben das Fokusbild am Sprungziel weg (Entscheid Z und Ablauf, Schritt 4).
+  - **Nebenbefund, nicht geändert:** In einem künstlich sechsfach verlängerten Fall (0 mm/80 %) bleibt nach einer Figur eine Seite leer, weil Chromium den nächsten Abschnitt mit seinem Raster aus Überschrift und Text (`.puk-longform__section-grid`, unverändert seit vor dem Paket) als Ganzes auf die folgende Seite schiebt; mit Blocklayout dort verschwindet sie. Die Ursache liegt nicht in den Figurregeln; Prüfbedarf in der Selbstprüfung.
+  - **Paket:** `puk-website-profil-2026.10.2.zip` neu erzeugt.
 - **15.10.2026 · Version 2026.10.2** (`ENTSCHEIDE-PROFIL-2026-10-2.md`, P-1 bis P-17; Bau im Auftrag der Fachstelle: «ja, leg los»). Starter Build r4-9, Selbsttest 68/68 (vorher 65). Selbstprüfung mit Belegen: `review/paket-2026-10-2/SELBSTPRUEFUNG.md`. Die Prüfung des Pakets durch eine Sitzung, die nicht gebaut hat, ist offen.
   - **Druck (P-1, P-15):**
     - Die Hülle `.puk-vis-wide` ist nicht mehr unteilbar. Abfolgen (Prozesspfad, Entscheidungsweg, Modell in Schritten) brechen zwischen ihren Schritten um; Titel, Kernaussage und Anfang bleiben zusammen, und die Kennzeichnung folgt direkt.

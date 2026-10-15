@@ -1,0 +1,7 @@
+/* Variante: gekennzeichneter Prozesspfad und Entscheidungsweg im Druck wie am Bildschirm (Liste als eigener Block, Pfad als Raster) */
+@media print{
+  .puk-vis-figure[data-print-split] .puk-vis-path{display:grid}
+  .puk-vis-figure[data-print-split] .puk-vis-decision{display:block}
+  .puk-vis-figure[data-print-split] .puk-vis-path>li{padding:var(--space-10) 0 0}
+  .puk-vis-figure[data-print-split] .puk-vis-path>li::before{left:0;right:calc(-1 * var(--space-4));top:11px;bottom:auto;border-top:2px solid var(--puk-blue-100);border-left:0}
+}

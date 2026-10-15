@@ -1,0 +1,7 @@
+/* Variante: gekennzeichnetes Modell in Schritten im Druck wie am Bildschirm (Raster, Zeichnung mittig neben den Schritten) */
+@media print{
+  .puk-vis-figure[data-print-split] .puk-vis-build{display:grid;align-items:center}
+  .puk-vis-figure[data-print-split] .puk-vis-build__steps{display:grid}
+  .puk-vis-figure[data-print-split] .puk-vis-build__art{margin:0 auto}
+  .puk-vis-figure[data-print-split] .puk-vis-build__steps>li+li{margin-top:0}
+}

@@ -740,19 +740,26 @@ html.puk-scroll-lock{overflow:hidden}
    P-6 Silbentrennung in Figuren und Überschriften, wenn ihr Container höchstens 12rem breit ist (wie NSK-2): bei 100 %
       Schrift nie (Container mindestens 280 px, 12rem = 192 px), bei 200 % Schrift (12rem = 384 px) bei 320 und 360 px
       Fensterbreite. Wirkt in Browsern mit deutscher Silbentrennung (Sprache aus lang).
-   P-1 Druck: Die Hülle .puk-vis-wide ist nicht mehr unteilbar. Abfolgen (Prozesspfad C, Entscheidungsweg F, Modell in
-      Schritten G) dürfen zwischen ihren Schritten umbrechen; jeder Schritt bleibt zusammen. Titel, Kernaussage und Kurztext
-      bleiben beim ersten Schritt (break-after:avoid oben), die Kennzeichnung folgt direkt auf das Ende der Darstellung.
-      Räumliche Darstellungen (Kreislauf, Netz, Schichten, Überschneidung, Szene) und Gegenüberstellungen bleiben unteilbar.
-      Ist eine Darstellung mit ihrer Liste länger als eine A4-Seite, entsteht davor keine leere Seite mehr (SPZ-F-32, NSK-1).
+   P-1 Druck (nachgebessert 15.10.2026, K-1): Hülle .puk-vis-wide und Rahmen .puk-vis-figure sind unteilbar wie in
+      2026.10.1. Umbrechen darf nur eine Abfolge mit Kennzeichen data-print-split an der Figur, und nur Prozesspfad C,
+      Entscheidungsweg F und Modell in Schritten G (das Gate meldet es an anderen Mustern). Sie bricht zwischen ihren
+      Schritten um; jeder Schritt bleibt zusammen. Die Schritte stehen dafür im Druck direkt in der Figurspalte, wie auf
+      schmalen Bildschirmen untereinander (visual-patterns.css, erklaermuster.css): Nur so findet Chromium den Umbruch vor
+      dem letzten Schritt, wenn die Kennzeichnung nicht mehr auf die Seite passt; in einer Liste mit Raster teilte es
+      sonst die Kennzeichnung nach ihrer Linie. Titel, Kernaussage und Kurztext bleiben beim ersten Schritt
+      (break-after:avoid oben), die Kennzeichnung folgt direkt auf das Ende der Darstellung. break-before:avoid am Titel
+      verhindert den Umbruch zwischen dem Rahmenanfang und dem Titel: sonst stand am Seitenende ein leerer grauer Rahmen
+      und die Figur begann erst auf der nächsten Seite (K-1). Gekennzeichnet werden Abfolgen, die mit ihrer Liste länger
+      als eine A4-Seite sind; davor entsteht dann keine leere Seite (SPZ-F-32, NSK-1).
    P-15 Druck: Abschnittsüberschriften der Langform stehen im Fluss; position:sticky galt im Druck sonst weiter, wenn der
       Druckbereich breiter als 760 px ist, und setzte Überschriften über Einträge (NAR34-2). */
 .puk-longform__boundary{font-size:var(--puk-read-size)}
 @container (max-width:12rem){.puk-vis-figure,.puk-web-h2,.puk-web-h3{hyphens:auto}}
 @media print{
-  .puk-vis-wide{break-inside:auto}
-  .puk-vis-figure>:is(.puk-vis-path,.puk-vis-decision,.puk-vis-build),.puk-vis-build>.puk-vis-build__steps{break-inside:auto}
-  :is(.puk-vis-path,.puk-vis-decision,.puk-vis-build__steps)>li{break-inside:avoid}
-  .puk-vis-figure>figcaption{break-before:avoid}
+  .puk-vis-wide,.puk-vis-figure{break-inside:avoid}
+  .puk-vis-wide:has(>.puk-vis-figure[data-print-split]),.puk-vis-figure[data-print-split]{break-inside:auto}
+  .puk-vis-figure[data-print-split] :is(.puk-vis-path,.puk-vis-decision,.puk-vis-build__steps)>li{break-inside:avoid}
+  .puk-vis-figure[data-print-split]>.puk-vis-label{break-before:avoid}
+  .puk-vis-figure[data-print-split]>figcaption{break-before:avoid}
   .puk-longform__section-heading{position:static}
 }

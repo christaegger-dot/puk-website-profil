@@ -1,0 +1,46 @@
+# Varianten der Drucklage gekennzeichneter Abfolgen (Nachbesserung 15.10.2026)
+
+Seiten (L, K, F, E, C) = Titel, Kernaussage, erster Schritt, letzter Schritt, Kennzeichnung.
+
+## Modell in Schritten fünffach, Raster mit Zeichnung mittig daneben (wie am Bildschirm)
+- Fälle 12 · Titel+Kern+Anfang zusammen 1 · Kennzeichnung direkt 12 · leere Seiten 0
+- abweichend: ('zz-dep-test-depression-verstehen-x5-m0-s0.9.pdf', 'v-dv-entstehung', 5, 5, 6, 7, 7)
+- abweichend: ('zz-dep-test-depression-verstehen-x5-m0-s1.pdf', 'v-dv-entstehung', 5, 5, 6, 7, 7)
+- abweichend: ('zz-dep-test-depression-verstehen-x5-m0-s1.1.pdf', 'v-dv-entstehung', 5, 5, 6, 7, 7)
+- abweichend: ('zz-dep-test-depression-verstehen-x5-m10-s0.8.pdf', 'v-dv-entstehung', 5, 5, 6, 7, 7)
+- abweichend: ('zz-dep-test-depression-verstehen-x5-m10-s0.9.pdf', 'v-dv-entstehung', 5, 5, 6, 7, 7)
+- abweichend: ('zz-dep-test-depression-verstehen-x5-m10-s1.pdf', 'v-dv-entstehung', 5, 5, 6, 7, 7)
+- abweichend: ('zz-dep-test-depression-verstehen-x5-m10-s1.1.pdf', 'v-dv-entstehung', 6, 6, 7, 9, 9)
+- abweichend: ('zz-dep-test-depression-verstehen-x5-m15-s0.8.pdf', 'v-dv-entstehung', 5, 5, 6, 7, 7)
+- abweichend: ('zz-dep-test-depression-verstehen-x5-m15-s0.9.pdf', 'v-dv-entstehung', 5, 5, 6, 7, 7)
+- abweichend: ('zz-dep-test-depression-verstehen-x5-m15-s1.pdf', 'v-dv-entstehung', 5, 5, 6, 7, 7)
+- abweichend: ('zz-dep-test-depression-verstehen-x5-m15-s1.1.pdf', 'v-dv-entstehung', 7, 7, 8, 10, 10)
+
+## Modell in Schritten fünffach, Raster mit Zeichnung oben daneben (Paket vor der Nachbesserung)
+- Fälle 12 · Titel+Kern+Anfang zusammen 12 · Kennzeichnung direkt 11 · leere Seiten 0
+- abweichend: ('zz-dep-test-depression-verstehen-x5-m15-s0.9.pdf', 'v-dv-entstehung', 5, 5, 5, 6, 7)
+
+## Prozesspfad und Entscheidungsweg wie am Bildschirm, 2-, 3-, 4-, 5-, 6-, 8-fach
+- Fälle 216 · Titel+Kern+Anfang zusammen 216 · Kennzeichnung direkt 201 · leere Seiten 0
+- abweichend: ('zz-dep-test-behandlung-und-verlauf-x2-m10-s0.8.pdf', 'v-bv-weg', 4, 4, 4, 4, 5)
+- abweichend: ('zz-dep-test-behandlung-und-verlauf-x2-m10-s1.1.pdf', 'v-bv-weg', 5, 5, 5, 6, 7)
+- abweichend: ('zz-dep-test-behandlung-und-verlauf-x2-m15-s1.1.pdf', 'v-bv-weg', 5, 5, 5, 6, 7)
+- abweichend: ('psychoeducation-site-starter-behandlung-verstehen-x2-m0-s1.1.pdf', 'v-bh-ablauf', 2, 2, 2, 2, 3)
+- abweichend: ('psychoeducation-site-starter-unterstuetzung-finden-x2-m0-s1.1.pdf', 'v-us-wegweiser', 2, 2, 2, 2, 3)
+- abweichend: ('psychoeducation-site-starter-unterstuetzung-finden-x2-m10-s1.1.pdf', 'v-us-wegweiser', 2, 2, 2, 2, 3)
+- abweichend: ('psychoeducation-site-starter-unterstuetzung-finden-x2-m15-s1.pdf', 'v-us-wegweiser', 2, 2, 2, 2, 3)
+- abweichend: ('psychoeducation-site-starter-unterstuetzung-finden-x2-m15-s1.1.pdf', 'v-us-wegweiser', 2, 2, 2, 2, 3)
+- abweichend: ('psychoeducation-site-starter-unterstuetzung-finden-x3-m10-s0.9.pdf', 'v-us-wegweiser', 2, 2, 2, 2, 3)
+- abweichend: ('psychoeducation-site-starter-behandlung-verstehen-x4-m15-s1.pdf', 'v-bh-ablauf', 2, 2, 2, 3, 4)
+- abweichend: ('psychoeducation-site-starter-unterstuetzung-finden-x4-m0-s0.8.pdf', 'v-us-wegweiser', 2, 2, 2, 2, 3)
+- abweichend: ('psychoeducation-site-starter-unterstuetzung-finden-x4-m10-s0.8.pdf', 'v-us-wegweiser', 2, 2, 2, 2, 3)
+- abweichend: ('zz-dep-test-behandlung-und-verlauf-x6-m10-s1.1.pdf', 'v-bv-weg', 5, 5, 5, 9, 10)
+- abweichend: ('zz-dep-test-behandlung-und-verlauf-x6-m15-s1.1.pdf', 'v-bv-weg', 5, 5, 5, 9, 10)
+- abweichend: ('psychoeducation-site-starter-behandlung-verstehen-x6-m10-s0.9.pdf', 'v-bh-ablauf', 2, 2, 2, 3, 4)
+
+## Gewählt: untereinander, Schritte direkt in der Figurspalte
+- siehe ../ergebnisse/auswertung.txt: fünffach 48 von 48, Robustheit 240 von 240 (Titel+Kern+Anfang zusammen und Kennzeichnung direkt)
+
+## Titelregel für alle Figuren, Abfolgen fünffach ohne Kennzeichen
+- Fälle 48 · Titel+Kern+Anfang zusammen 37 · Kennzeichnung direkt 41 · leere Seiten 0 · leere Rahmen 0
+- Vergleich: gewählte Regel (Titelregel nur mit Kennzeichen) und 8abc333 je 40 · 43 · 35 · 35, siehe ../ergebnisse/auswertung.txt

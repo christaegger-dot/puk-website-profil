@@ -115,8 +115,15 @@
 @media print{
   .puk-vis-net{max-width:480px}
   .puk-vis-build__art{max-width:240px}
-  /* Paket 2026.10.2, P-1: Zeichnung oben; zentriert schob Chromium bei langer Schrittliste die ganze Zeile auf die
-     nächste Seite, und Titel und Kernaussage standen allein (gemessen 15.10.2026). */
-  .puk-vis-build{align-items:start}
+  /* Paket 2026.10.2, P-1 (nachgebessert 15.10.2026, W-2): Ohne Kennzeichen bleibt das Modell im Druck wie am Bildschirm,
+     die Zeichnung mittig neben den Schritten. Nur ein gekennzeichnetes Modell (data-print-split) steht im Druck wie auf
+     schmalen Bildschirmen: Zeichnung über den Schritten, die Schritte direkt in der Figurspalte. Gemessen an künstlich
+     verlängerten Modellen, 12 A4-Einstellungen: Zeichnung mittig daneben – Titel und Kernaussage in 11 Fällen allein;
+     Zeichnung oben daneben (align-items:start) – Kennzeichnung in 1 Fall erst nach dem Seitenumbruch; Zeichnung darüber –
+     in allen 12 Fällen Titel, Kernaussage und Anfang zusammen und Kennzeichnung direkt (wie Prozesspfad und
+     Entscheidungsweg in visual-patterns.css). */
+  .puk-vis-figure[data-print-split] :is(.puk-vis-build,.puk-vis-build__steps){display:contents}
+  .puk-vis-figure[data-print-split] .puk-vis-build__art{margin:0 auto var(--space-5);break-after:avoid}
+  .puk-vis-figure[data-print-split] .puk-vis-build__steps>li+li{margin-top:var(--space-4)}
   .puk-vis-balance{max-width:720px}
 }
