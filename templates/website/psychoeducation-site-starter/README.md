@@ -1,4 +1,4 @@
-# Psychoedukations-Starter · PUK Website Kit 1.10.1-r4 · abgeleitet · Build r4-9
+# Psychoedukations-Starter · PUK Website Kit 1.10.1-r4 · abgeleitet · Build r4-10
 
 Lokal lauffähiger Mehrseiten-Starter für psychoedukative Websites. Abgeleitetes Profil auf Basis der kanonischen Quelle **PUK Zürich Design System 1.10.1**, nicht deren neue offizielle Version. Alle Inhalte sind synthetisch: keine realen Kontakte, Personen, klinischen Aussagen, Freigaben oder Bildrechte.
 
@@ -102,7 +102,7 @@ Im Druck bleibt jede Figur als Ganzes auf einer A4-Seite (Abschnitt «Technische
 - `impressum-datenschutz.html`: Impressum und Datenschutz, nicht in der Navigation, in jeder Fusszeile verlinkt.
 - `404.html`: Seite «nicht gefunden» mit Rückweg zur Übersicht (Standardwortlaut, Entscheid 11.10.2026).
 
-Stand 15.10.2026 (Build r4-9, Paket 2026.10.2: Redaktionsstatus im Produktionsgate, Fusszeile ohne Versionszeile, Name des Logo-Links, `gate.html` mit Prüfbericht und Selbsttest an der Referenz, Export mit Schriftlizenz, `_redirects` und `robots.txt`; Druckregeln, Verweis im Text und Silbentrennung in `components/bundle.css`; nachgebessert 15.10.2026: Figuren im Druck unteilbar, Kennzeichen `data-print-split` für lange Abfolgen):
+Stand 16.10.2026 (Build r4-10: nur die Kennung erhöht, weil die Nachbesserung vom 15.10.2026 das Gate geändert hat; Seiten und Befunde sonst gleich wie mit r4-9; eine Seite, die noch mit r4-9 gebaut ist, meldet die Prüfung `build`. Davor Build r4-9, Paket 2026.10.2: Redaktionsstatus im Produktionsgate, Fusszeile ohne Versionszeile, Name des Logo-Links, `gate.html` mit Prüfbericht und Selbsttest an der Referenz, Export mit Schriftlizenz, `_redirects` und `robots.txt`; Druckregeln, Verweis im Text und Silbentrennung in `components/bundle.css`; nachgebessert 15.10.2026: Figuren im Druck unteilbar, Kennzeichen `data-print-split` für lange Abfolgen):
 - **Entwurfsgate:** 0 blockierende Befunde; 12 Hinweise (neu: Redaktionsstatus ohne Datum, weil der Starter eine synthetische Referenz ist).
 - **Produktionsgate:** blockiert die offenen Freigaben, den Redaktionsstatus ohne Datum und den unvollständigen Prüfbericht. Das ist erwartet.
 - **Selbsttest:** 72 von 72 bestanden, auch in Kopien des Starters und in `gate.html` (neu in r4-9: Redaktionsstatus «Entwurf», ohne Datum und mit Datum; Nachbesserung 15.10.2026: «Entwurf vom 15.10.2026», der nur die Regel «Entwurf» trifft, Kennzeichen `data-print-split` am Prozesspfad zulässig, an einer Gegenüberstellung und an der Hülle blockiert).

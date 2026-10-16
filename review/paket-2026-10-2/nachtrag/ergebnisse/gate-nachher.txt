@@ -1,0 +1,107 @@
+$ node tools/gate.mjs
+WARN  site                     editorial-status       Redaktioneller Status «Synthetische Referenz, nicht zur Veröffentlichung bestimmt» nennt kein Datum – Format «Fachlich freigegeben am TT.MM.JJJJ» (editorialStatusLabel)
+WARN  site                     site-url               site.config.siteUrl fehlt: ohne Adresse entstehen keine sitemap.xml und keine kanonischen Links (Abschnitt «Technische Qualität», G)
+WARN  beziehungen-verstehen    visual-approval        Visualisierung v-bz-kreislauf nicht freigegeben (ausstehend)
+WARN  beziehungen-verstehen    visual-approval        Visualisierung v-bz-illustration nicht freigegeben (ausstehend)
+WARN  behandlung-verstehen     visual-approval        Visualisierung v-bh-ablauf nicht freigegeben (ausstehend)
+WARN  behandlung-verstehen     visual-approval        Visualisierung v-bh-vergleich nicht freigegeben (ausstehend)
+WARN  unterstuetzung-finden    visual-approval        Visualisierung v-us-wegweiser nicht freigegeben (ausstehend)
+WARN  unterstuetzung-finden    visual-approval        Visualisierung v-us-netz nicht freigegeben (ausstehend)
+WARN  index                    placeholder-approval   Platzhalter download nicht freigegeben (Freigabe: ausstehend, Quelle: offen)
+WARN  beziehungen-verstehen    placeholder-approval   Platzhalter image nicht freigegeben (Freigabe: ausstehend, Quelle: offen)
+WARN  unterstuetzung-finden    placeholder-approval   Platzhalter contact nicht freigegeben (Freigabe: ausstehend, Quelle: offen)
+WARN  site                     review-report          Prüfbericht: offene Stufen W1, W2, S, Visualisierungs-Check, Bedienung und Barrierefreiheit, W3, R1 Profil-Audit, R2 Visualisierung und Laienverständlichkeit, R3 Freigabe-Audit – Status «erledigt» oder «entfällt: Begründung»
+
+PUK Website Kit 1.10.1-r4 · abgeleitet · Gate draft: 0 blockierend, 12 Hinweise.
+
+$ node tools/gate.mjs --production
+BLOCK site                     editorial-status       Redaktioneller Status «Synthetische Referenz, nicht zur Veröffentlichung bestimmt» nennt kein Datum – Format «Fachlich freigegeben am TT.MM.JJJJ» (editorialStatusLabel)
+WARN  site                     site-url               site.config.siteUrl fehlt: ohne Adresse entstehen keine sitemap.xml und keine kanonischen Links (Abschnitt «Technische Qualität», G)
+BLOCK beziehungen-verstehen    visual-approval        Visualisierung v-bz-kreislauf nicht freigegeben (ausstehend)
+BLOCK beziehungen-verstehen    visual-approval        Visualisierung v-bz-illustration nicht freigegeben (ausstehend)
+BLOCK behandlung-verstehen     visual-approval        Visualisierung v-bh-ablauf nicht freigegeben (ausstehend)
+BLOCK behandlung-verstehen     visual-approval        Visualisierung v-bh-vergleich nicht freigegeben (ausstehend)
+BLOCK unterstuetzung-finden    visual-approval        Visualisierung v-us-wegweiser nicht freigegeben (ausstehend)
+BLOCK unterstuetzung-finden    visual-approval        Visualisierung v-us-netz nicht freigegeben (ausstehend)
+BLOCK index                    placeholder-approval   Platzhalter download nicht freigegeben (Freigabe: ausstehend, Quelle: offen)
+BLOCK beziehungen-verstehen    placeholder-approval   Platzhalter image nicht freigegeben (Freigabe: ausstehend, Quelle: offen)
+BLOCK unterstuetzung-finden    placeholder-approval   Platzhalter contact nicht freigegeben (Freigabe: ausstehend, Quelle: offen)
+BLOCK site                     review-report          Prüfbericht: offene Stufen W1, W2, S, Visualisierungs-Check, Bedienung und Barrierefreiheit, W3, R1 Profil-Audit, R2 Visualisierung und Laienverständlichkeit, R3 Freigabe-Audit – Status «erledigt» oder «entfällt: Begründung»
+
+PUK Website Kit 1.10.1-r4 · abgeleitet · Gate production: 11 blockierend, 1 Hinweise.
+
+$ node tools/gate.mjs --selftest
+OK   Ausgangslage Entwurf: 0 blockierende Befunde · erwartet 0 · erkannt 0
+OK   Produktion blockiert ungeklärte Absenderin, Zuständigkeitsverweise, Platzhalter und Visualisierungen · erwartet sender-status, safety-review, placeholder-approval, visual-approval · keine Strukturfehler · erkannt sender-status, safety-review, placeholder-approval, visual-approval · keine Strukturfehler
+OK   Produktion blockiert Redaktionsstatus Entwurf («Entwurf, noch nicht freigegeben») · erwartet editorial-status · erkannt editorial-status
+OK   Produktion blockiert Redaktionsstatus Entwurf mit Datum («Entwurf vom 15.10.2026») · erwartet editorial-status · erkannt editorial-status
+OK   Produktion blockiert Redaktionsstatus ohne Datum («Fachlich freigegeben») · erwartet editorial-status · erkannt editorial-status
+OK   Redaktionsstatus mit Datum gibt frei («Fachlich freigegeben am 15.10.2026») · erwartet kein editorial-status · erkannt kein editorial-status
+OK   Produktion ohne Prüfbericht blockiert · erwartet review-report · erkannt review-report
+OK   Vollständiger Prüfbericht gibt die Veröffentlichung frei · erwartet kein review-report · erkannt kein review-report
+OK   Produktion blockiert ohne «Go» im Freigabe-Audit R3 · erwartet review-report (R3) · erkannt review-report (R3)
+OK   Kennzeichen data-print-split am Prozesspfad ist zulässig · erwartet kein print-split · erkannt kein print-split
+OK   Kanonischer Link (siteUrl) gilt nicht als externe Laufzeitquelle · erwartet kein external · erkannt kein external
+OK   Produktion blockiert ungeprüften Verweis im Text · erwartet inline-review · erkannt inline-review
+OK   Navigationsziel fehlt (Link zeigt auf nicht vorhandene Seite) · erwartet nav-target oder nav · erkannt nav-target, nav, link-target
+OK   Seitenvertrag verweist auf fehlende Datei · erwartet page-file · erkannt page-file, nav, reachability
+OK   lang fehlt · erwartet lang · erkannt lang
+OK   CDN-React eingebunden · erwartet external · erkannt external
+OK   Favicon fehlt · erwartet favicon · erkannt favicon
+OK   Meta-Description fehlt · erwartet meta · erkannt meta
+OK   Fachstelle unsichtbar · erwartet sender · erkannt sender
+OK   E-Mail der Absenderin fehlt · erwartet sender · erkannt sender
+OK   Fachstelle fehlt · erwartet sender · erkannt sender
+OK   Telefonnummer im Text · erwartet crisis-number · erkannt crisis-number
+OK   Telefonlink eingefügt · erwartet crisis-number · erkannt crisis-number
+OK   Notfallblock eingefügt · erwartet crisis-block · erkannt crisis-block
+OK   ß statt ss · erwartet orthography · erkannt orthography
+OK   Deutscher Rechtsbegriff · erwartet swiss-context · erkannt swiss-context
+OK   Etikettierende Bezeichnung · erwartet person-first · erkannt person-first
+OK   Unzulässige Variante direct · erwartet safety-contract · erkannt safety-contract
+OK   Zuständigkeitsverweis ausserhalb der Fusszeile · erwartet safety-position · erkannt safety-position
+OK   Zuständigkeitsverweis als geprüft markiert ohne Dokumentation · erwartet review-doc · erkannt review-doc
+OK   Zuständigkeitsverweis fehlt auf einer Seite · erwartet safety-target · erkannt safety-target
+OK   Hinweis «ersetzt keine Abklärung» fehlt · erwartet disclaimer · erkannt disclaimer
+OK   Seite nicht erreichbar · erwartet reachability · erkannt nav, link-target, reachability
+OK   Kreislauf linear (keine Bögen) · erwartet cycle-geometry · erkannt cycle-geometry
+OK   «Uhrzeigersinn» in schmaler Leserichtung · erwartet cycle-direction · erkannt cycle-direction
+OK   Rücksprung zu Station 1 fehlt · erwartet cycle-return · erkannt cycle-return
+OK   Figur ohne Bildlegende · erwartet figure-caption · erkannt figure-caption, figure-alt, figure-source
+OK   Figur ohne Kennzeichnung · erwartet figure-source · erkannt figure-source
+OK   Figur fehlt im Visualisierungsplan · erwartet visual-plan · erkannt visual-plan, plan-coverage
+OK   Bildplatzhalter ohne Freigabestatus · erwartet placeholder-status · erkannt placeholder-status
+OK   Illustration ohne eigene Zeichnung und ohne Bildstatus · erwartet placeholder-status · erkannt placeholder-status
+OK   Quellenlink ohne sprechendes aria-label · erwartet link-label · erkannt link-label
+OK   Interner Link ins Leere · erwartet link-target · erkannt link-target
+OK   Zwei h1 · erwartet h1 · erkannt h1
+OK   Visualisierungsplan ohne «understood» · erwartet visual-plan · erkannt visual-plan
+OK   Visualisierungsplan ohne Wirkung («resonance») · erwartet resonance · erkannt resonance
+OK   Inline-Skript eingefügt · erwartet inline-script · erkannt inline-script
+OK   Externer Link in neuem Fenster ohne rel · erwartet blank-target · erkannt blank-target
+OK   Akkordeon ohne Interaktionsskript · erwartet interaction-script · erkannt interaction-script
+OK   Figur ohne Kernaussage · erwartet figure-core · erkannt figure-core
+OK   Abschnitt ohne Zeile im Visualisierungsplan · erwartet plan-coverage · erkannt plan-coverage
+OK   Planzeile verweist auf fehlenden Abschnitt · erwartet plan-section · erkannt plan-coverage, plan-section
+OK   Ansatzpunkt im Plan fehlt · erwartet entry-point · erkannt entry-point
+OK   Ansatzpunkt im Plan, nicht in der Figur · erwartet entry-point · erkannt entry-point
+OK   Kartenraster mit vielen Karten · erwartet card-grid · erkannt card-grid
+OK   Verweis im Text mit eigenem Wortlaut · erwartet inline-ref · erkannt inline-ref
+OK   Verweis im Text auf Seite ohne sensibles Thema · erwartet inline-ref · erkannt inline-ref, safety-contract
+OK   Verweis im Text versteckt in einer Vertiefung · erwartet inline-ref · erkannt inline-ref
+OK   Entwurf in der Navigation · erwartet nav oder link-draft · erkannt nav, link-draft
+OK   Vertiefung ohne Interaktionsskript (Druck) · erwartet interaction-script · erkannt interaction-script
+OK   Name des Logo-Links ohne sichtbaren Logotext · erwartet logo-name · erkannt logo-name
+OK   Mehr als sechs Hauptpunkte ohne Menü · erwartet nav-menu · erkannt nav-menu, nav
+OK   Impressum und Datenschutzerklärung fehlen · erwartet legal · erkannt legal
+OK   Link auf das Impressum fehlt in der Fusszeile · erwartet legal · erkannt legal
+OK   404-Seite fehlt · erwartet not-found · erkannt not-found
+OK   404-Seite in der Navigation · erwartet not-found · erkannt not-found, nav
+OK   404-Seite als Entwurf (nicht im Export) · erwartet not-found · erkannt not-found
+OK   Impressum zeigt auf eine E-Mail-Adresse statt auf eine Seite · erwartet legal · erkannt legal
+OK   Externes Stylesheet als «alternate stylesheet» · erwartet external · erkannt external
+OK   Fremdsprachiger Quellentitel ohne lang · erwartet lang-part · erkannt lang-part
+OK   Kennzeichen data-print-split an einer Gegenüberstellung · erwartet print-split · erkannt print-split
+OK   Kennzeichen data-print-split an der Hülle statt an der Figur · erwartet print-split · erkannt print-split
+
+Selbsttest: 72/72 bestanden.

@@ -150,7 +150,7 @@ Die Fachstelle Angehörigenarbeit bietet Beratung und Psychoedukation für Angeh
 - `templates/website/psychoeducation-site-starter/` – **Startpunkt jeder mehrseitigen psychoedukativen Website**: Seitenvertrag `site.config.json` → `node tools/build.mjs` → `node tools/gate.mjs --production`. Navigation, `lang`, Titel, Meta, Favicon, Skip-Link, Absenderin und Zuständigkeitsverweis entstehen aus dem Vertrag, nie von Hand.
 - `ui_kits/website/` – klickbare Rekonstruktion der Referenzansichten des Original-Kits mit `qa.html` (zeigt auch Kit-Varianten, die für die Fachstelle nicht gelten).
 - `tokens/*.css` – die Quell-CSS unverändert.
-- **Projektpaket** `puk-website-profil-2026.10.2.zip` (separat ausgeliefert, ZIP-Dateien kann das Design-System nicht speichern): lauffähige Fassung mit aufgelösten Pfaden (`styles.css`, Schriften, Logos, React-Laufzeit für das UI-Kit), Leitlinien, React-Quellen mit Build-Skript und Anleitung `START-HIER.md`. Im Design-System selbst verweisen Vorlagen, Starter und UI-Kit auf diese Kit-Pfade und laufen erst im Paket.
+- **Projektpaket** `puk-website-profil-2026.10.2.zip` (separat ausgeliefert, ZIP-Dateien kann das Design-System nicht speichern; Prüfsumme in `puk-website-profil-2026.10.2.zip.sha256` daneben): lauffähige Fassung mit aufgelösten Pfaden (`styles.css`, Schriften, Logos, React-Laufzeit für das UI-Kit), Leitlinien, React-Quellen mit Build-Skript und Anleitung `START-HIER.md`. Im Design-System selbst verweisen Vorlagen, Starter und UI-Kit auf diese Kit-Pfade und laufen erst im Paket.
 - **Veröffentlichen:** `node tools/export.mjs <zielordner> --production` im Starter schreibt eine eigenständige Website mit `css/site.css`, lokalen Schriften samt Lizenz (`fonts/OFL.txt`), `_headers` (Sicherheits-Header), `_redirects` (falls vorhanden), `sitemap.xml` und `robots.txt`.
 
 ## Offene Punkte
@@ -168,11 +168,20 @@ Entscheide der Fachstelle:
 
 Arbeit am System:
 
-- Projektpaket nach Änderungen am Design-System neu erzeugen (Version im Dateinamen).
+- Projektpaket nach Änderungen am Design-System neu erzeugen (Version im Dateinamen). Ändern sich die Werkzeuge des Starters (`tools/`), steigt die Build-Kennung. Jede Fassung des Pakets erhält ihre Prüfsumme (SHA-256) in `<paket>.zip.sha256` neben dem ZIP; das Änderungsprotokoll nennt die Prüfsummen früherer Fassungen unter demselben Namen (Forensisches Audit vom 15.10.2026, F-4 und F-5).
 - Karussell und Tooltip bewusst ohne HTML-Fassung; bei Bedarf ergänzen.
 
 ## Änderungsprotokoll
 
+- **16.10.2026 · Version 2026.10.2, Nachtrag zum forensischen Audit** (`review/paket-2026-10-2/FORENSISCHES-AUDIT-2026-10-15.md`, Hinweise F-4, F-5 und F-7; Auftrag der Fachstelle vom 16.10.2026 nach der Nachprüfung `review/paket-2026-10-2/NACHPRUEFUNG.md`). Starter Build r4-10, Selbsttest 72/72. Selbstprüfung mit Belegen: `review/paket-2026-10-2/NACHTRAG-F4-F5-F7.md`. Die Prüfung durch eine Sitzung, die nicht gebaut hat, ist offen.
+  - **Build-Kennung (F-4):** r4-9 → r4-10 in `tools/contract.js`, in `site.config.json` des Starters und der Referenz `tools/selftest/`, in `gate.html` und `ui_kits/website/qa.html`; Starter neu gebaut. Die Nachbesserung hatte das Gate geändert, ohne die Kennung zu erhöhen. Jetzt meldet die Prüfung `build` jede Seite, die noch mit r4-9 gebaut ist. Sonst ändert sich an Seiten und Befunden nichts.
+  - **Fassungen des Pakets (F-5):** `puk-website-profil-2026.10.2.zip` gab es bisher in zwei Fassungen unter demselben Namen. Prüfsummen (SHA-256):
+    - 15.10.2026, ohne Nachbesserung (`de10a8d`, Build r4-9, 313 Dateien): `2040c74364a937063a3739261c3f440b5c665c44c97b5f3f17327516d15373db`
+    - 15.10.2026, nachgebessert (`bc679a7`, Build r4-9, 438 Dateien): `20d42bba632069a6e519806bdcb851f0c52e6baa1081384a5a04a258a4ba4902`
+    - diese Fassung (Build r4-10): in `puk-website-profil-2026.10.2.zip.sha256` neben dem ZIP, prüfen mit `sha256sum -c puk-website-profil-2026.10.2.zip.sha256`. Eine Datei im ZIP kann die Prüfsumme des ZIP nicht enthalten; das Paket lässt diese Datei deshalb aus.
+  - **Vorschaukarten (F-7):** Prozesspfad, Entscheidungsweg und Modell in Schritten nennen das Kennzeichen `data-print-split` (Karten nur im Design-System). Den nachgeführten Skill «puk-website-profil» (Druckregel mit Kennzeichen, Selbsttest 72 Fälle) lädt die Fachstelle auf claude.ai hoch.
+  - **Arbeit am System:** Regel zu Build-Kennung und Prüfsumme im Abschnitt «Offene Punkte».
+  - **Paket:** `puk-website-profil-2026.10.2.zip` neu erzeugt mit `review/paket-2026-10-2/nachtrag/paket-zip.py` (Regel wie bisher, dazu ohne `*.zip.sha256`). Es enthält jetzt auch Audit, Nachprüfung und die Prüfung «Offene Stufen» (`.github/`).
 - **15.10.2026 · Version 2026.10.2, nachgebessert nach der Prüfung** (`ENTSCHEIDE-PROFIL-2026-10-2.md`, Abschnitt «Nachbesserung nach der Prüfung»; Befunde K-1 und W-1 bis W-4 im Prüfbericht `review/paket-2026-10-2/PRUEFBERICHT.md`; Entscheid der Fachstelle zu P-1 und zum Kennzeichen vom 15.10.2026). Starter Build r4-9, Selbsttest 72/72 (vorher 68). Selbstprüfung mit Belegen: `review/paket-2026-10-2/SELBSTPRUEFUNG-NACHBESSERUNG.md`. Die Nachprüfung durch eine Sitzung, die nicht gebaut hat, ist offen.
   - **Druck (P-1, K-1):**
     - Figuren sind im Druck wieder unteilbar wie in 2026.10.1: Hülle `.puk-vis-wide` und Rahmen `.puk-vis-figure` (`components/bundle.css`). Die Abweichung «kurze Abfolgen brechen um» entfällt, ebenso der leere graue Rahmen am Seitenende (K-1).
