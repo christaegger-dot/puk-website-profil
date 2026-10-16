@@ -1,0 +1,14 @@
+WARN  site                     editorial-status       Redaktioneller Status «Synthetische Referenz, nicht zur Veröffentlichung bestimmt» nennt kein Datum – Format «Fachlich freigegeben am TT.MM.JJJJ» (editorialStatusLabel)
+WARN  site                     site-url               site.config.siteUrl fehlt: ohne Adresse entstehen keine sitemap.xml und keine kanonischen Links (Abschnitt «Technische Qualität», G)
+WARN  beziehungen-verstehen    visual-approval        Visualisierung v-bz-kreislauf nicht freigegeben (ausstehend)
+WARN  beziehungen-verstehen    visual-approval        Visualisierung v-bz-illustration nicht freigegeben (ausstehend)
+WARN  behandlung-verstehen     visual-approval        Visualisierung v-bh-ablauf nicht freigegeben (ausstehend)
+WARN  behandlung-verstehen     visual-approval        Visualisierung v-bh-vergleich nicht freigegeben (ausstehend)
+WARN  unterstuetzung-finden    visual-approval        Visualisierung v-us-wegweiser nicht freigegeben (ausstehend)
+WARN  unterstuetzung-finden    visual-approval        Visualisierung v-us-netz nicht freigegeben (ausstehend)
+WARN  index                    placeholder-approval   Platzhalter download nicht freigegeben (Freigabe: ausstehend, Quelle: offen)
+WARN  beziehungen-verstehen    placeholder-approval   Platzhalter image nicht freigegeben (Freigabe: ausstehend, Quelle: offen)
+WARN  unterstuetzung-finden    placeholder-approval   Platzhalter contact nicht freigegeben (Freigabe: ausstehend, Quelle: offen)
+WARN  site                     review-report          Prüfbericht: offene Stufen W1, W2, S, Visualisierungs-Check, Bedienung und Barrierefreiheit, W3, R1 Profil-Audit, R2 Visualisierung und Laienverständlichkeit, R3 Freigabe-Audit – Status «erledigt» oder «entfällt: Begründung»
+
+PUK Website Kit 1.10.1-r4 · abgeleitet · Gate draft: 0 blockierend, 12 Hinweise.

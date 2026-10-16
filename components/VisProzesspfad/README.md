@@ -7,3 +7,5 @@ Live-Muster aus `templates/website/longform/visualisierungsmuster.html` mit `vis
 **Ansatzpunkt für Angehörige (08.10.2026):** Schritt mit `li.is-ansatz` (doppelter Ring) und `p.puk-vis-ansatz` im Schritt; im Plan `entryPoint`.
 
 **Drei Erklärungsebenen (08.10.2026):** Kernaussage (`p.puk-vis-kern`), kurzer Erklärtext (`p.puk-vis-short`), wo sinnvoll Vertiefung (`details.puk-vis-more`).
+
+**Druck (Paket 2026.10.2, nachgebessert 15.10.2026):** Im Druck bleibt die Figur als Ganzes auf einer A4-Seite. Ist der Pfad mit seiner Liste länger als eine A4-Seite, bekommt die Figur in `content/<id>.html` das Kennzeichen `data-print-split`. Dann bricht der Pfad zwischen seinen Schritten um: Titel, Kernaussage und erster Schritt stehen zusammen, die Kennzeichnung folgt direkt auf den letzten Schritt. Kurze Pfade tragen kein Kennzeichen. Anleitung: `README.md` des Starters, Abschnitt «Druck: lange Abfolgen kennzeichnen»; Regel: «Technische Qualität», F.
