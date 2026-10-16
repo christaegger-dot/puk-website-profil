@@ -1,0 +1,5 @@
+gate.html (Entwurf) | Entwurf: 0 blockierend · Produktion: 11 blockierend (erwartet: offene Freigaben) · Selbsttest: 72/72 bestanden / Entwurf: 0 blockierend, 12 Hinweise | Befunde build: 0
+  geladen: 200 tools/contract.js?v=r4-10, 200 tools/gate-browser.js?v=r4-10, 200 tools/gate.css?v=r4-10 | Fehler: keine
+gate.html ?mode=production | Entwurf: 0 blockierend · Produktion: 11 blockierend (erwartet: offene Freigaben) · Selbsttest: 72/72 bestanden / Entwurf: 0 blockierend, 12 Hinweise | Befunde build: 0
+  geladen: 200 tools/contract.js?v=r4-10, 200 tools/gate-browser.js?v=r4-10, 200 tools/gate.css?v=r4-10 | Fehler: keine
+qa.html | Fehler beim Laden und Ausführen: keine

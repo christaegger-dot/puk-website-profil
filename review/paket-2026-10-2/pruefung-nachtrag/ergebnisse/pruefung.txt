@@ -1,0 +1,87 @@
+== F-4 Build-Kennung
+wt-1ba2568/templates/website/psychoeducation-site-starter/tools/contract.js:11:const BUILD = 'r4-10';
+wt-fe5a9e4/templates/website/psychoeducation-site-starter/tools/contract.js:11:const BUILD = 'r4-9';
+7 Seiten geschrieben · PUK Website Kit 1.10.1-r4 · abgeleitet · Build r4-10 · Gate draft: 0 blockierend, 12 Hinweise.
+Arbeitsbaum 1ba2568 nach dem Bau, geänderte Dateien: 0
+1ba2568: PUK Website Kit 1.10.1-r4 · abgeleitet · Gate draft: 0 blockierend, 12 Hinweise. | PUK Website Kit 1.10.1-r4 · abgeleitet · Gate production: 11 blockierend, 1 Hinweise. | Selbsttest: 72/72 bestanden.
+fe5a9e4: PUK Website Kit 1.10.1-r4 · abgeleitet · Gate draft: 0 blockierend, 12 Hinweise. | PUK Website Kit 1.10.1-r4 · abgeleitet · Gate production: 11 blockierend, 1 Hinweise. | Selbsttest: 72/72 bestanden.
+Entwurfsgate: Ausgabe gleich wie vorher
+Produktionsgate: Ausgabe gleich wie vorher
+Selbsttest: Ausgabe gleich wie vorher
+HTML des Starters nach Rückersetzen r4-10 -> r4-9 byte-gleich mit fe5a9e4: 8 von 8
+Gate 1ba2568 auf Seiten fe5a9e4: PUK Website Kit 1.10.1-r4 · abgeleitet · Gate draft: 0 blockierend, 19 Hinweise.; Befunde build: 7 (Stufe: WARN)
+  ohne die Befunde build gleich wie das Entwurfsgate
+  Produktion: PUK Website Kit 1.10.1-r4 · abgeleitet · Gate production: 11 blockierend, 8 Hinweise.; Befunde build: 7 (Stufe: WARN)
+
+== F-5 Fassungen des Paket-ZIP (aus git)
+de10a8d 1505109 Byte 2040c74364a937063a3739261c3f440b5c665c44c97b5f3f17327516d15373db 313 Einträge
+bc679a7 3365050 Byte 20d42bba632069a6e519806bdcb851f0c52e6baa1081384a5a04a258a4ba4902 438 Einträge
+1ba2568 5725157 Byte b181299787108e437e11b631be0bdde3b636d4be78f2ba65f5d269dd8fec35a5 506 Einträge
+  ZIP geändert in 1ba2568 (2026-10-16)
+  ZIP geändert in bc679a7 (2026-10-15)
+  ZIP geändert in de10a8d (2026-10-15)
+Prüfsummendatei: 1 Zeilenende(n) LF
+puk-website-profil-2026.10.2.zip: OK
+438 Dateien -> <arbeit>/neu-aus-bc679a7.zip 20d42bba632069a6e519806bdcb851f0c52e6baa1081384a5a04a258a4ba4902
+  neu erzeugt aus bc679a7: byte-gleich mit dem ZIP in bc679a7
+506 Dateien -> <arbeit>/neu-aus-1ba2568.zip b181299787108e437e11b631be0bdde3b636d4be78f2ba65f5d269dd8fec35a5
+  neu erzeugt aus 1ba2568: byte-gleich mit dem ZIP in 1ba2568
+
+== Paket-ZIP 1ba2568: Aufbau und Inhalt
+Einträge 506 · Ordnereinträge 0 · alle unter puk-website-profil/ True · sortiert True · doppelt 0
+Zeitstempel {(2026, 10, 15, 12, 0, 0): 506} · Rechte {'0o644': 506} · deflated 506
+nach der Paketregel erwartet 506 · Dateiliste gleich True
+ausgelassen: {'depression-angehoerige': 48, 'borderline-angehoerige': 142, 'puk-website-profil-2026.10.2.zip.sha256': 1, 'index.html': 1, '_headers': 1, 'puk-website-profil-2026.10.2.zip': 1}
+byte-gleich mit dem Arbeitsbaum 506 von 506 []
+gegenüber bc679a7: neu 68 {'.github/workflows/offene-stufen.yml': 1, 'review/paket-2026-10-2/FORENSISCHES-AUDIT-2026-10-15.md': 1, 'review/paket-2026-10-2/NACHPRUEFUNG.md': 1, 'review/paket-2026-10-2/NACHTRAG-F4-F5-F7.md': 1, 'review/paket-2026-10-2/nachpruefung': 58, 'review/paket-2026-10-2/nachtrag': 6} · entfallen []
+gegenüber bc679a7: geändert 20
+  CLAUDE.md
+  README.md
+  components/VisEntscheidungsweg/README.md
+  components/VisModellSchritte/README.md
+  components/VisProzesspfad/README.md
+  review/paket-2026-10-2/SELBSTPRUEFUNG.md
+  review/paket-2026-10-2/messung/README.md
+  templates/website/psychoeducation-site-starter/404.html
+  templates/website/psychoeducation-site-starter/README.md
+  templates/website/psychoeducation-site-starter/behandlung-verstehen.html
+  templates/website/psychoeducation-site-starter/beziehungen-verstehen.html
+  templates/website/psychoeducation-site-starter/gate.html
+  templates/website/psychoeducation-site-starter/impressum-datenschutz.html
+  templates/website/psychoeducation-site-starter/index.html
+  templates/website/psychoeducation-site-starter/seitenvorlage.html
+  templates/website/psychoeducation-site-starter/site.config.json
+  templates/website/psychoeducation-site-starter/tools/contract.js
+  templates/website/psychoeducation-site-starter/tools/selftest/site.config.json
+  templates/website/psychoeducation-site-starter/unterstuetzung-finden.html
+  ui_kits/website/qa.html
+unkomprimiert 9154124 Byte, davon neu 3329878
+7 Seiten geschrieben · PUK Website Kit 1.10.1-r4 · abgeleitet · Build r4-10 · Gate draft: 0 blockierend, 12 Hinweise.
+Bau im entpackten Paket: keine HTML-Datei verändert
+HTML des Starters verschieden vom Repository: 0
+PUK Website Kit 1.10.1-r4 · abgeleitet · Gate draft: 0 blockierend, 12 Hinweise.
+Selbsttest: 72/72 bestanden.
+PUK Website Kit 1.10.1-r4 · abgeleitet · Gate production: 11 blockierend, 1 Hinweise.
+Export nach <arbeit>/export: 6 Seiten · css/site.css · 3 Schriftdateien + OFL.txt · js/interaktion.js · Gate draft: 0 blockierend, 12 Hinweise.
+OFL.txt Rubik-Light.woff2 Rubik-Medium.woff2 Rubik-Regular.woff2 
+Export: Seiten mit Build r4-10: 6 von 6; Regeln mit data-print-split in css/site.css: 14
+Pfade der Arbeitsumgebung oder Zugangsdaten im entpackten Paket: 0 Dateien
+E-Mail-Adressen im entpackten Paket:
+     41 angehoerigenarbeit@pukzh.ch
+      1 nobody@example.org
+
+== Nicht geändert (Diff fe5a9e4..1ba2568)
+guidelines: 0 Dateien geändert
+tokens: 0 Dateien geändert
+components/bundle.css: 0 Dateien geändert
+components/bundle.js: 0 Dateien geändert
+components/interaktion.js: 0 Dateien geändert
+templates/website/longform: 0 Dateien geändert
+templates/website/borderline-angehoerige: 0 Dateien geändert
+templates/website/depression-angehoerige: 0 Dateien geändert
+templates/website/psychoeducation-site-starter/content: 0 Dateien geändert
+templates/website/psychoeducation-site-starter/starter.css: 0 Dateien geändert
+quellcode: 0 Dateien geändert
+ENTSCHEIDE-PROFIL-2026-10-2.md: 0 Dateien geändert
+CLAUDE.md: 0 Dateien geändert
+START-HIER.md: 0 Dateien geändert

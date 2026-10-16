@@ -1,0 +1,36 @@
+Artefakt: Dateien unter project/ 286 · gemeinsam mit dem Repository 213 · byte-gleich 213 · nur im Artefakt 73 (davon preview.html 69 )
+Liste der bauenden Sitzung: gleiche Dateien und Prüfsummen True
+Version 47 -> 48 (gemeinsame Dateien): 17 geändert · davon nicht im Pull Request [] · im Pull Request, aber nicht geändert []
+design-system.json lastChange: {"by": "Christa", "at": "2026-10-16T05:39:31Z", "via": "Claude Code"}
+VisProzesspfad: README nennt data-print-split True · Vorschau nennt es False · Zeilen von visual-patterns.css, die im eingebetteten CSS der Vorschau fehlen: 8 von 196
+    /* Paket 2026.10.2, P-1 (nachgebessert 15.10.2026): Eine gekennzeichnete Abfolge (data-print-split, Prozesspfa
+    Entscheidungsweg F) steht im Druck wie auf schmalen Bildschirmen untereinander, ihre Schritte direkt in der
+    Figurspalte. So bricht sie zwischen zwei Schritten um, und der letzte Schritt bleibt bei der Kennzeichnung
+    (bundle.css). Ohne Kennzeichen bleibt die Figur im Druck unverändert. */
+    .puk-vis-figure[data-print-split] :is(.puk-vis-path,.puk-vis-decision){display:contents}
+    .puk-vis-figure[data-print-split] .puk-vis-path>li{padding:0 0 var(--space-6) var(--space-10)}
+    .puk-vis-figure[data-print-split] .puk-vis-path>li::before{left:11px;right:auto;top:24px;bottom:0;border-top:0
+    .puk-vis-figure[data-print-split] .puk-vis-path>li.puk-vis-path--optional::before{border-left-style:dashed}
+VisEntscheidungsweg: README nennt data-print-split True · Vorschau nennt es False · Zeilen von visual-patterns.css, die im eingebetteten CSS der Vorschau fehlen: 8 von 196
+    /* Paket 2026.10.2, P-1 (nachgebessert 15.10.2026): Eine gekennzeichnete Abfolge (data-print-split, Prozesspfa
+    Entscheidungsweg F) steht im Druck wie auf schmalen Bildschirmen untereinander, ihre Schritte direkt in der
+    Figurspalte. So bricht sie zwischen zwei Schritten um, und der letzte Schritt bleibt bei der Kennzeichnung
+    (bundle.css). Ohne Kennzeichen bleibt die Figur im Druck unverändert. */
+    .puk-vis-figure[data-print-split] :is(.puk-vis-path,.puk-vis-decision){display:contents}
+    .puk-vis-figure[data-print-split] .puk-vis-path>li{padding:0 0 var(--space-6) var(--space-10)}
+    .puk-vis-figure[data-print-split] .puk-vis-path>li::before{left:11px;right:auto;top:24px;bottom:0;border-top:0
+    .puk-vis-figure[data-print-split] .puk-vis-path>li.puk-vis-path--optional::before{border-left-style:dashed}
+VisModellSchritte: README nennt data-print-split True · Vorschau nennt es False · Zeilen von erklaermuster.css, die im eingebetteten CSS der Vorschau fehlen: 13 von 120
+    .puk-vis-build__steps li{display:grid;grid-template-columns:2rem minmax(0,1fr);gap:var(--space-3);padding:var(
+    /* Ziffernkreis und Spalte in rem (Paket 2026.10.2, P-5, SPZ-39): bei 16 px Wurzelschrift wie bisher 28 und 32
+    .puk-vis-build__n{display:grid;place-items:center;width:1.75rem;height:1.75rem;border:2px solid var(--puk-blue
+    /* Paket 2026.10.2, P-1 (nachgebessert 15.10.2026, W-2): Ohne Kennzeichen bleibt das Modell im Druck wie am Bi
+    die Zeichnung mittig neben den Schritten. Nur ein gekennzeichnetes Modell (data-print-split) steht im Druck wi
+    schmalen Bildschirmen: Zeichnung über den Schritten, die Schritte direkt in der Figurspalte. Gemessen an künst
+    verlängerten Modellen, 12 A4-Einstellungen: Zeichnung mittig daneben – Titel und Kernaussage in 11 Fällen alle
+    Zeichnung oben daneben (align-items:start) – Kennzeichnung in 1 Fall erst nach dem Seitenumbruch; Zeichnung da
+    in allen 12 Fällen Titel, Kernaussage und Anfang zusammen und Kennzeichnung direkt (wie Prozesspfad und
+    Entscheidungsweg in visual-patterns.css). */
+    .puk-vis-figure[data-print-split] :is(.puk-vis-build,.puk-vis-build__steps){display:contents}
+    .puk-vis-figure[data-print-split] .puk-vis-build__art{margin:0 auto var(--space-5);break-after:avoid}
+    .puk-vis-figure[data-print-split] .puk-vis-build__steps>li+li{margin-top:var(--space-4)}
