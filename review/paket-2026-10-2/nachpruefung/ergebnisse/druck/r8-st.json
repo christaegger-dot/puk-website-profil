@@ -1,0 +1,1238 @@
+{
+ "psychoeducation-site-starter__behandlung-verstehen__x8__m0__s100": {
+  "seiten": 7,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "f46f72cfec4b",
+   "fde1e56ed7cd",
+   "f1f4b14cb0c3",
+   "92b02d4a07f8",
+   "6890a4df0bd9",
+   "4c084de064db",
+   "fc84f66e9e23"
+  ],
+  "tinte_bis": [
+   99.3,
+   96.6,
+   96.6,
+   96.6,
+   86.7,
+   98.0,
+   8.2
+  ],
+  "figuren": [
+   {
+    "id": "v-bh-ablauf",
+    "type": "process",
+    "n": 40,
+    "L": 1,
+    "K": 1,
+    "F": 1,
+    "E": 5,
+    "C": 5,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bh-vergleich",
+    "type": "comparison",
+    "n": 0,
+    "L": 6,
+    "K": 6,
+    "F": null,
+    "E": null,
+    "C": 6,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "psychoeducation-site-starter__behandlung-verstehen__x8__m0__s110": {
+  "seiten": 8,
+  "leer": [],
+  "leere_rahmen": [
+   {
+    "seite": 7,
+    "oben": 46.2,
+    "unten": 47.8,
+    "hoehe": 1.5,
+    "leer": true,
+    "lage": "Mitte"
+   }
+  ],
+  "md5": [
+   "6750556ebec9",
+   "d54c05183e4d",
+   "8b7ef37914e4",
+   "8b7ef37914e4",
+   "96da5f805e43",
+   "09f87139a62b",
+   "6eb1b7c9a5a4",
+   "e0d40f9cd9da"
+  ],
+  "tinte_bis": [
+   59.4,
+   100.0,
+   100.0,
+   100.0,
+   100.0,
+   91.1,
+   88.6,
+   25.4
+  ],
+  "figuren": [
+   {
+    "id": "v-bh-ablauf",
+    "type": "process",
+    "n": 40,
+    "L": 2,
+    "K": 2,
+    "F": 2,
+    "E": 6,
+    "C": 6,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bh-vergleich",
+    "type": "comparison",
+    "n": 0,
+    "L": 7,
+    "K": 7,
+    "F": null,
+    "E": null,
+    "C": 7,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "psychoeducation-site-starter__behandlung-verstehen__x8__m0__s80": {
+  "seiten": 5,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "9622836f4125",
+   "ade1f99ea235",
+   "833d8aef1582",
+   "43b38df61db5",
+   "d7596d7d232b"
+  ],
+  "tinte_bis": [
+   97.6,
+   94.0,
+   100.0,
+   98.1,
+   83.3
+  ],
+  "figuren": [
+   {
+    "id": "v-bh-ablauf",
+    "type": "process",
+    "n": 40,
+    "L": 1,
+    "K": 1,
+    "F": 1,
+    "E": 4,
+    "C": 4,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bh-vergleich",
+    "type": "comparison",
+    "n": 0,
+    "L": 5,
+    "K": 5,
+    "F": null,
+    "E": null,
+    "C": 5,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "psychoeducation-site-starter__behandlung-verstehen__x8__m0__s90": {
+  "seiten": 6,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "5fbbbc3af33c",
+   "7bb8ff2c691d",
+   "d61ddcbcbd1a",
+   "82bd587e7aab",
+   "31c2bc8778f2",
+   "9b3ac70ecfab"
+  ],
+  "tinte_bis": [
+   98.6,
+   94.0,
+   98.6,
+   94.0,
+   99.3,
+   40.6
+  ],
+  "figuren": [
+   {
+    "id": "v-bh-ablauf",
+    "type": "process",
+    "n": 40,
+    "L": 1,
+    "K": 1,
+    "F": 1,
+    "E": 5,
+    "C": 5,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bh-vergleich",
+    "type": "comparison",
+    "n": 0,
+    "L": 5,
+    "K": 5,
+    "F": null,
+    "E": null,
+    "C": 5,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "psychoeducation-site-starter__behandlung-verstehen__x8__m10__s100": {
+  "seiten": 8,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "e2efc6ec1347",
+   "3213ed0bfb40",
+   "185d126b4131",
+   "185d126b4131",
+   "94bcc993d84e",
+   "790bbf30b05c",
+   "6e6e556ce1e3",
+   "3b6b81b0055c"
+  ],
+  "tinte_bis": [
+   57.2,
+   96.4,
+   92.2,
+   92.2,
+   92.2,
+   73.2,
+   94.0,
+   20.5
+  ],
+  "figuren": [
+   {
+    "id": "v-bh-ablauf",
+    "type": "process",
+    "n": 40,
+    "L": 2,
+    "K": 2,
+    "F": 2,
+    "E": 6,
+    "C": 6,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bh-vergleich",
+    "type": "comparison",
+    "n": 0,
+    "L": 7,
+    "K": 7,
+    "F": null,
+    "E": null,
+    "C": 7,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "psychoeducation-site-starter__behandlung-verstehen__x8__m10__s110": {
+  "seiten": 8,
+  "leer": [],
+  "leere_rahmen": [
+   {
+    "seite": 7,
+    "oben": 76.6,
+    "unten": 78.2,
+    "hoehe": 1.5,
+    "leer": true,
+    "lage": "Mitte"
+   }
+  ],
+  "md5": [
+   "65fa76ec5cf6",
+   "5a6e1cc271fc",
+   "b0e475c3968f",
+   "40773e0bffe4",
+   "5b6687d29eaa",
+   "72087fe87302",
+   "1e30055657cf",
+   "b78c7de77dbe"
+  ],
+  "tinte_bis": [
+   61.6,
+   96.6,
+   92.3,
+   92.3,
+   92.3,
+   90.8,
+   94.2,
+   58.9
+  ],
+  "figuren": [
+   {
+    "id": "v-bh-ablauf",
+    "type": "process",
+    "n": 40,
+    "L": 2,
+    "K": 2,
+    "F": 2,
+    "E": 6,
+    "C": 6,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bh-vergleich",
+    "type": "comparison",
+    "n": 0,
+    "L": 7,
+    "K": 7,
+    "F": null,
+    "E": null,
+    "C": 7,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "psychoeducation-site-starter__behandlung-verstehen__x8__m10__s80": {
+  "seiten": 6,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "cbe3a9b0befd",
+   "fbf57068163b",
+   "71cfdc826c75",
+   "213053f3cfa0",
+   "36ed79d9a577",
+   "541463c0cefe"
+  ],
+  "tinte_bis": [
+   91.5,
+   96.6,
+   91.0,
+   96.2,
+   88.2,
+   23.2
+  ],
+  "figuren": [
+   {
+    "id": "v-bh-ablauf",
+    "type": "process",
+    "n": 40,
+    "L": 1,
+    "K": 1,
+    "F": 1,
+    "E": 4,
+    "C": 4,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bh-vergleich",
+    "type": "comparison",
+    "n": 0,
+    "L": 5,
+    "K": 5,
+    "F": null,
+    "E": null,
+    "C": 5,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "psychoeducation-site-starter__behandlung-verstehen__x8__m10__s90": {
+  "seiten": 7,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "b74ab37ff115",
+   "fb84b7ede6bb",
+   "8ccb6186c329",
+   "68b60c30b990",
+   "ef0608c4a4a4",
+   "55e77bbeccef",
+   "b6547fe63fa2"
+  ],
+  "tinte_bis": [
+   92.8,
+   90.3,
+   90.3,
+   90.3,
+   79.7,
+   92.7,
+   10.6
+  ],
+  "figuren": [
+   {
+    "id": "v-bh-ablauf",
+    "type": "process",
+    "n": 40,
+    "L": 1,
+    "K": 1,
+    "F": 1,
+    "E": 5,
+    "C": 5,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bh-vergleich",
+    "type": "comparison",
+    "n": 0,
+    "L": 6,
+    "K": 6,
+    "F": null,
+    "E": null,
+    "C": 6,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "psychoeducation-site-starter__behandlung-verstehen__x8__m15__s100": {
+  "seiten": 8,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "4bc3945e6c10",
+   "9218f0844cb0",
+   "702a86f9abe6",
+   "702a86f9abe6",
+   "702a86f9abe6",
+   "e9afe0c00537",
+   "3fc5376d6c69",
+   "ceaaa0855c27"
+  ],
+  "tinte_bis": [
+   58.2,
+   95.1,
+   95.1,
+   95.1,
+   95.1,
+   87.5,
+   85.2,
+   30.4
+  ],
+  "figuren": [
+   {
+    "id": "v-bh-ablauf",
+    "type": "process",
+    "n": 40,
+    "L": 2,
+    "K": 2,
+    "F": 2,
+    "E": 6,
+    "C": 6,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bh-vergleich",
+    "type": "comparison",
+    "n": 0,
+    "L": 7,
+    "K": 7,
+    "F": null,
+    "E": null,
+    "C": 7,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "psychoeducation-site-starter__behandlung-verstehen__x8__m15__s110": {
+  "seiten": 9,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "dc6cdf78c66b",
+   "c68cccd1a0ec",
+   "ec88ea01ac06",
+   "4aeb097bc991",
+   "4e4284637bcf",
+   "10fcfb882d98",
+   "044b992cd823",
+   "d81ad1548835",
+   "ce8a42a368ec"
+  ],
+  "tinte_bis": [
+   64.8,
+   95.1,
+   94.0,
+   94.0,
+   94.0,
+   84.0,
+   42.7,
+   55.6,
+   67.9
+  ],
+  "figuren": [
+   {
+    "id": "v-bh-ablauf",
+    "type": "process",
+    "n": 40,
+    "L": 2,
+    "K": 2,
+    "F": 2,
+    "E": 6,
+    "C": 6,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bh-vergleich",
+    "type": "comparison",
+    "n": 0,
+    "L": 8,
+    "K": 8,
+    "F": null,
+    "E": null,
+    "C": 8,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "psychoeducation-site-starter__behandlung-verstehen__x8__m15__s80": {
+  "seiten": 6,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "f381edac2cad",
+   "3b1ea03b71f8",
+   "e29fb5261cb2",
+   "19213bfe4c45",
+   "a708e07eab2f",
+   "6edfef8b22fe"
+  ],
+  "tinte_bis": [
+   92.0,
+   95.1,
+   92.7,
+   88.6,
+   92.8,
+   37.9
+  ],
+  "figuren": [
+   {
+    "id": "v-bh-ablauf",
+    "type": "process",
+    "n": 40,
+    "L": 1,
+    "K": 1,
+    "F": 1,
+    "E": 5,
+    "C": 5,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bh-vergleich",
+    "type": "comparison",
+    "n": 0,
+    "L": 5,
+    "K": 5,
+    "F": null,
+    "E": null,
+    "C": 5,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "psychoeducation-site-starter__behandlung-verstehen__x8__m15__s90": {
+  "seiten": 8,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "6a7e6671861f",
+   "6a085461857d",
+   "0cedeca2c7db",
+   "116103baa672",
+   "f004c5e211b8",
+   "37abf9745373",
+   "f13662dc43f2",
+   "2104ca1da118"
+  ],
+  "tinte_bis": [
+   54.3,
+   89.2,
+   92.0,
+   92.0,
+   92.0,
+   47.3,
+   93.2,
+   16.0
+  ],
+  "figuren": [
+   {
+    "id": "v-bh-ablauf",
+    "type": "process",
+    "n": 40,
+    "L": 2,
+    "K": 2,
+    "F": 2,
+    "E": 6,
+    "C": 6,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bh-vergleich",
+    "type": "comparison",
+    "n": 0,
+    "L": 7,
+    "K": 7,
+    "F": null,
+    "E": null,
+    "C": 7,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "psychoeducation-site-starter__unterstuetzung-finden__x8__m0__s100": {
+  "seiten": 7,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "ed2ebb6f6f43",
+   "f02e06a5a533",
+   "90db66194bc0",
+   "c8a32cfb7514",
+   "dfcd8a1d7a63",
+   "48b2c5b37c76",
+   "fc84f66e9e23"
+  ],
+  "tinte_bis": [
+   97.1,
+   87.7,
+   87.7,
+   32.4,
+   97.8,
+   98.8,
+   8.2
+  ],
+  "figuren": [
+   {
+    "id": "v-us-wegweiser",
+    "type": "decision",
+    "n": 16,
+    "L": 1,
+    "K": 1,
+    "F": 1,
+    "E": 4,
+    "C": 4,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-us-netz",
+    "type": "relationship-map",
+    "n": 0,
+    "L": 5,
+    "K": 5,
+    "F": null,
+    "E": null,
+    "C": 5,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "psychoeducation-site-starter__unterstuetzung-finden__x8__m0__s110": {
+  "seiten": 7,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "4fd2052956ec",
+   "facec81aac32",
+   "be271f15cfcb",
+   "c023849bd11e",
+   "1fdbd5396c6e",
+   "1c2d0f880106",
+   "e0d40f9cd9da"
+  ],
+  "tinte_bis": [
+   59.4,
+   92.7,
+   96.4,
+   98.3,
+   86.7,
+   80.2,
+   25.4
+  ],
+  "figuren": [
+   {
+    "id": "v-us-wegweiser",
+    "type": "decision",
+    "n": 16,
+    "L": 2,
+    "K": 2,
+    "F": 2,
+    "E": 4,
+    "C": 4,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-us-netz",
+    "type": "relationship-map",
+    "n": 0,
+    "L": 5,
+    "K": 5,
+    "F": null,
+    "E": null,
+    "C": 5,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "psychoeducation-site-starter__unterstuetzung-finden__x8__m0__s80": {
+  "seiten": 5,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "4816bb4264e3",
+   "463d0659ddd0",
+   "bc38cd9b0ee4",
+   "999bf6b0712a",
+   "cf931376175c"
+  ],
+  "tinte_bis": [
+   99.3,
+   95.6,
+   35.3,
+   97.6,
+   85.7
+  ],
+  "figuren": [
+   {
+    "id": "v-us-wegweiser",
+    "type": "decision",
+    "n": 16,
+    "L": 1,
+    "K": 1,
+    "F": 1,
+    "E": 3,
+    "C": 3,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-us-netz",
+    "type": "relationship-map",
+    "n": 0,
+    "L": 4,
+    "K": 4,
+    "F": null,
+    "E": null,
+    "C": 4,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "psychoeducation-site-starter__unterstuetzung-finden__x8__m0__s90": {
+  "seiten": 6,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "d988523c86d5",
+   "768e4cda16c4",
+   "60ba1096339f",
+   "9f07c0b23af9",
+   "ad86ce7e82cd",
+   "ceabf039f10e"
+  ],
+  "tinte_bis": [
+   98.0,
+   97.6,
+   58.0,
+   99.8,
+   48.1,
+   22.4
+  ],
+  "figuren": [
+   {
+    "id": "v-us-wegweiser",
+    "type": "decision",
+    "n": 16,
+    "L": 1,
+    "K": 1,
+    "F": 1,
+    "E": 3,
+    "C": 3,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-us-netz",
+    "type": "relationship-map",
+    "n": 0,
+    "L": 4,
+    "K": 4,
+    "F": null,
+    "E": null,
+    "C": 4,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "psychoeducation-site-starter__unterstuetzung-finden__x8__m10__s100": {
+  "seiten": 7,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "2f12685fc575",
+   "b5c1f6b2e3db",
+   "6c3f55642855",
+   "238c72b8e7c0",
+   "a7fe2905ede9",
+   "2b8c01db6686",
+   "83522412b0a3"
+  ],
+  "tinte_bis": [
+   57.2,
+   87.4,
+   91.0,
+   92.7,
+   82.1,
+   76.1,
+   26.5
+  ],
+  "figuren": [
+   {
+    "id": "v-us-wegweiser",
+    "type": "decision",
+    "n": 16,
+    "L": 2,
+    "K": 2,
+    "F": 2,
+    "E": 4,
+    "C": 4,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-us-netz",
+    "type": "relationship-map",
+    "n": 0,
+    "L": 5,
+    "K": 5,
+    "F": null,
+    "E": null,
+    "C": 5,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "psychoeducation-site-starter__unterstuetzung-finden__x8__m10__s110": {
+  "seiten": 8,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "351e9751bbb9",
+   "59a0be123d79",
+   "64557bfa26ef",
+   "15fb362d3673",
+   "71141fbaeddb",
+   "dba25be3e504",
+   "3dfb85736d49",
+   "a274f94b0bc4"
+  ],
+  "tinte_bis": [
+   61.6,
+   95.1,
+   86.0,
+   88.1,
+   22.7,
+   81.6,
+   86.5,
+   47.4
+  ],
+  "figuren": [
+   {
+    "id": "v-us-wegweiser",
+    "type": "decision",
+    "n": 16,
+    "L": 2,
+    "K": 2,
+    "F": 2,
+    "E": 4,
+    "C": 4,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-us-netz",
+    "type": "relationship-map",
+    "n": 0,
+    "L": 6,
+    "K": 6,
+    "F": null,
+    "E": null,
+    "C": 6,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "psychoeducation-site-starter__unterstuetzung-finden__x8__m10__s80": {
+  "seiten": 5,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "ea301bea16c4",
+   "50ab81322fce",
+   "2af42a7a0cbc",
+   "aecf3837dba3",
+   "f08b4595161f"
+  ],
+  "tinte_bis": [
+   91.0,
+   90.1,
+   54.9,
+   95.7,
+   90.3
+  ],
+  "figuren": [
+   {
+    "id": "v-us-wegweiser",
+    "type": "decision",
+    "n": 16,
+    "L": 1,
+    "K": 1,
+    "F": 1,
+    "E": 3,
+    "C": 3,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-us-netz",
+    "type": "relationship-map",
+    "n": 0,
+    "L": 4,
+    "K": 4,
+    "F": null,
+    "E": null,
+    "C": 4,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "psychoeducation-site-starter__unterstuetzung-finden__x8__m10__s90": {
+  "seiten": 6,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "96b3bb8c5ac0",
+   "c354e6212be2",
+   "721266efe26e",
+   "720f0c9ce25d",
+   "2fe932f258bb",
+   "16755f34410c"
+  ],
+  "tinte_bis": [
+   90.8,
+   93.5,
+   84.0,
+   85.2,
+   66.0,
+   25.6
+  ],
+  "figuren": [
+   {
+    "id": "v-us-wegweiser",
+    "type": "decision",
+    "n": 16,
+    "L": 1,
+    "K": 1,
+    "F": 1,
+    "E": 3,
+    "C": 3,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-us-netz",
+    "type": "relationship-map",
+    "n": 0,
+    "L": 4,
+    "K": 4,
+    "F": null,
+    "E": null,
+    "C": 4,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "psychoeducation-site-starter__unterstuetzung-finden__x8__m15__s100": {
+  "seiten": 7,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "900537494113",
+   "3eee1cd5e348",
+   "ea328bb2f22a",
+   "92d6018851af",
+   "989bb6a4f4b4",
+   "04faf592c6e2",
+   "ceaaa0855c27"
+  ],
+  "tinte_bis": [
+   58.2,
+   88.7,
+   92.7,
+   93.9,
+   83.8,
+   77.5,
+   30.4
+  ],
+  "figuren": [
+   {
+    "id": "v-us-wegweiser",
+    "type": "decision",
+    "n": 16,
+    "L": 2,
+    "K": 2,
+    "F": 2,
+    "E": 4,
+    "C": 4,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-us-netz",
+    "type": "relationship-map",
+    "n": 0,
+    "L": 5,
+    "K": 5,
+    "F": null,
+    "E": null,
+    "C": 5,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "psychoeducation-site-starter__unterstuetzung-finden__x8__m15__s110": {
+  "seiten": 8,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "75f2c8ac8550",
+   "ff85ec2f2edb",
+   "91bd9e88edde",
+   "91bd9e88edde",
+   "d73962956fbd",
+   "2542e5d5034c",
+   "cb014e2d16da",
+   "eb068aeb11bd"
+  ],
+  "tinte_bis": [
+   63.0,
+   82.6,
+   87.7,
+   87.7,
+   48.8,
+   83.3,
+   87.7,
+   49.0
+  ],
+  "figuren": [
+   {
+    "id": "v-us-wegweiser",
+    "type": "decision",
+    "n": 16,
+    "L": 2,
+    "K": 2,
+    "F": 2,
+    "E": 5,
+    "C": 5,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-us-netz",
+    "type": "relationship-map",
+    "n": 0,
+    "L": 6,
+    "K": 6,
+    "F": null,
+    "E": null,
+    "C": 6,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "psychoeducation-site-starter__unterstuetzung-finden__x8__m15__s80": {
+  "seiten": 6,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "5cb6a163bcec",
+   "ae55b09996e7",
+   "acce7d13bd06",
+   "a6a3f7232a4a",
+   "c9277f398aea",
+   "327b9ed61721"
+  ],
+  "tinte_bis": [
+   92.7,
+   88.6,
+   68.9,
+   94.4,
+   38.1,
+   24.9
+  ],
+  "figuren": [
+   {
+    "id": "v-us-wegweiser",
+    "type": "decision",
+    "n": 16,
+    "L": 1,
+    "K": 1,
+    "F": 1,
+    "E": 3,
+    "C": 3,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-us-netz",
+    "type": "relationship-map",
+    "n": 0,
+    "L": 4,
+    "K": 4,
+    "F": null,
+    "E": null,
+    "C": 4,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "psychoeducation-site-starter__unterstuetzung-finden__x8__m15__s90": {
+  "seiten": 7,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "3cabb92c8bf4",
+   "4e8ab0e486a1",
+   "6c20b3b17b78",
+   "b05bdf4b643b",
+   "6a5f88b8e70a",
+   "284913bcde28",
+   "5290422cd25f"
+  ],
+  "tinte_bis": [
+   54.3,
+   92.5,
+   84.0,
+   74.7,
+   93.0,
+   94.4,
+   11.8
+  ],
+  "figuren": [
+   {
+    "id": "v-us-wegweiser",
+    "type": "decision",
+    "n": 16,
+    "L": 2,
+    "K": 2,
+    "F": 2,
+    "E": 4,
+    "C": 4,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-us-netz",
+    "type": "relationship-map",
+    "n": 0,
+    "L": 5,
+    "K": 5,
+    "F": null,
+    "E": null,
+    "C": 5,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ }
+}

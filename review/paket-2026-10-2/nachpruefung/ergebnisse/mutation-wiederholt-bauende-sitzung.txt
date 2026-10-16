@@ -1,0 +1,11 @@
+Ausgangslage: Selbsttest: 72/72 bestanden.
+regel-entwurf-aus: Exit 1 · Selbsttest: 71/72 bestanden.
+    FAIL Produktion blockiert Redaktionsstatus Entwurf mit Datum («Entwurf vom 15.10.2026») · erwartet editorial-status · erkannt nicht erkannt
+regel-datum-aus: Exit 1 · Selbsttest: 71/72 bestanden.
+    FAIL Produktion blockiert Redaktionsstatus ohne Datum («Fachlich freigegeben») · erwartet editorial-status · erkannt nicht erkannt
+kennzeichen-muster-aus: Exit 1 · Selbsttest: 71/72 bestanden.
+    FAIL Kennzeichen data-print-split an einer Gegenüberstellung · erwartet print-split · erkannt nicht erkannt
+kennzeichen-element-aus: Exit 1 · Selbsttest: 71/72 bestanden.
+    FAIL Kennzeichen data-print-split an der Hülle statt an der Figur · erwartet print-split · erkannt nicht erkannt
+kennzeichen-zu-streng: Exit 1 · Selbsttest: 71/72 bestanden.
+    FAIL Kennzeichen data-print-split am Prozesspfad ist zulässig · erwartet kein print-split · erkannt print-split

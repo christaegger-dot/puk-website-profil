@@ -1,0 +1,1810 @@
+{
+ "depression-angehoerige__behandlung-und-verlauf__x5__m0__s100": {
+  "seiten": 12,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "31429ab43b5d",
+   "c8c018093b33",
+   "520ef47c30c2",
+   "e85fb4dc34e0",
+   "3e466f0763fc",
+   "3114eba43675",
+   "0e37f903ab6a",
+   "90241b0c12cf",
+   "f4c1620b2ff2",
+   "6512cee23cd8",
+   "72be6ad75214",
+   "e7f094715151"
+  ],
+  "tinte_bis": [
+   96.8,
+   45.7,
+   88.4,
+   12.1,
+   99.8,
+   100.0,
+   97.1,
+   83.8,
+   96.1,
+   86.0,
+   95.2,
+   86.7
+  ],
+  "figuren": [
+   {
+    "id": "v-bv-vergleich",
+    "type": "comparison",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 3,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-weg",
+    "type": "process",
+    "n": 25,
+    "L": 5,
+    "K": 5,
+    "F": 5,
+    "E": 7,
+    "C": 7,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-fruehzeichen",
+    "type": "continuum",
+    "n": 0,
+    "L": 9,
+    "K": 9,
+    "F": null,
+    "E": null,
+    "C": 9,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "depression-angehoerige__behandlung-und-verlauf__x5__m0__s110": {
+  "seiten": 13,
+  "leer": [],
+  "leere_rahmen": [
+   {
+    "seite": 3,
+    "oben": 73.7,
+    "unten": 75.3,
+    "hoehe": 1.5,
+    "leer": true,
+    "lage": "Mitte"
+   }
+  ],
+  "md5": [
+   "1a28c4247439",
+   "45ba9bf97e71",
+   "41b04f731aa1",
+   "5e13d9b47d8b",
+   "7d4bd56d0274",
+   "4c7e9a263926",
+   "dbbb0f057d82",
+   "d4f1ec95d08f",
+   "4481433d9898",
+   "80f791067cbd",
+   "7357d23a771d",
+   "1294fdcf2186",
+   "0180786cbc2c"
+  ],
+  "tinte_bis": [
+   97.8,
+   57.0,
+   79.9,
+   49.1,
+   100.0,
+   99.7,
+   97.1,
+   99.0,
+   35.8,
+   96.2,
+   96.8,
+   93.9,
+   61.4
+  ],
+  "figuren": [
+   {
+    "id": "v-bv-vergleich",
+    "type": "comparison",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 3,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-weg",
+    "type": "process",
+    "n": 25,
+    "L": 5,
+    "K": 5,
+    "F": 5,
+    "E": 7,
+    "C": 7,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-fruehzeichen",
+    "type": "continuum",
+    "n": 0,
+    "L": 10,
+    "K": 10,
+    "F": null,
+    "E": null,
+    "C": 10,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "depression-angehoerige__behandlung-und-verlauf__x5__m0__s80": {
+  "seiten": 9,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "326aec8bbfc2",
+   "4120da5625dc",
+   "6d909196b2ec",
+   "cf12d618e76d",
+   "634573775357",
+   "bcf4a6dd23c2",
+   "56d8641d9849",
+   "19defdd0e88b",
+   "e1c42cf5cfff"
+  ],
+  "tinte_bis": [
+   53.4,
+   57.8,
+   83.1,
+   100.0,
+   99.0,
+   53.6,
+   92.3,
+   97.6,
+   67.1
+  ],
+  "figuren": [
+   {
+    "id": "v-bv-vergleich",
+    "type": "comparison",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 3,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-weg",
+    "type": "process",
+    "n": 25,
+    "L": 4,
+    "K": 4,
+    "F": 4,
+    "E": 5,
+    "C": 5,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-fruehzeichen",
+    "type": "continuum",
+    "n": 0,
+    "L": 7,
+    "K": 7,
+    "F": null,
+    "E": null,
+    "C": 7,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "depression-angehoerige__behandlung-und-verlauf__x5__m0__s90": {
+  "seiten": 10,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "e5d14dab0d4a",
+   "fb8a42ce0d22",
+   "f5f359265998",
+   "ce84d08c45f8",
+   "444d2ebfc18f",
+   "00d1f74a0ec5",
+   "bcdfd247eb2a",
+   "6b252611ead0",
+   "11745f8b1bbf",
+   "cc8bf4b89907"
+  ],
+  "tinte_bis": [
+   97.4,
+   26.6,
+   96.4,
+   100.0,
+   99.8,
+   93.5,
+   98.0,
+   94.0,
+   98.6,
+   49.8
+  ],
+  "figuren": [
+   {
+    "id": "v-bv-vergleich",
+    "type": "comparison",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 3,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-weg",
+    "type": "process",
+    "n": 25,
+    "L": 4,
+    "K": 4,
+    "F": 4,
+    "E": 5,
+    "C": 6,
+    "ganz": false,
+    "kopf": true,
+    "kennz": false
+   },
+   {
+    "id": "v-bv-fruehzeichen",
+    "type": "continuum",
+    "n": 0,
+    "L": 7,
+    "K": 7,
+    "F": null,
+    "E": null,
+    "C": 7,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "depression-angehoerige__behandlung-und-verlauf__x5__m10__s100": {
+  "seiten": 13,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "97754b502512",
+   "bc91f354b6e8",
+   "da3af52c9cf6",
+   "05138994af08",
+   "62178f2b8ebb",
+   "3383a9de3a32",
+   "6ba493c92b23",
+   "2ecff3418d09",
+   "2ca1d0b74d07",
+   "105ae421cfbf",
+   "174e036de100",
+   "6f28ba2d8a6d",
+   "b5cfd01a8289"
+  ],
+  "tinte_bis": [
+   92.2,
+   55.1,
+   75.9,
+   47.8,
+   96.6,
+   95.6,
+   91.0,
+   93.3,
+   34.5,
+   94.4,
+   87.2,
+   90.3,
+   54.4
+  ],
+  "figuren": [
+   {
+    "id": "v-bv-vergleich",
+    "type": "comparison",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 3,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-weg",
+    "type": "process",
+    "n": 25,
+    "L": 5,
+    "K": 5,
+    "F": 5,
+    "E": 7,
+    "C": 7,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-fruehzeichen",
+    "type": "continuum",
+    "n": 0,
+    "L": 10,
+    "K": 10,
+    "F": null,
+    "E": null,
+    "C": 10,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "depression-angehoerige__behandlung-und-verlauf__x5__m10__s110": {
+  "seiten": 14,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "99bea80593f8",
+   "d27abb64343c",
+   "3d9b331f025c",
+   "dd41c7f87312",
+   "1d3951135cd0",
+   "50a58a899dc4",
+   "f6f0ffffc758",
+   "97d17ad29f0a",
+   "ad4c3040b972",
+   "193152e72848",
+   "e47793049ccb",
+   "0b1dd77cf425",
+   "3d42c460eaff",
+   "b16c0327ee79"
+  ],
+  "tinte_bis": [
+   92.5,
+   68.3,
+   90.6,
+   53.6,
+   96.6,
+   96.6,
+   96.6,
+   94.9,
+   94.5,
+   93.9,
+   89.9,
+   88.4,
+   95.7,
+   7.0
+  ],
+  "figuren": [
+   {
+    "id": "v-bv-vergleich",
+    "type": "comparison",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 3,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-weg",
+    "type": "process",
+    "n": 25,
+    "L": 5,
+    "K": 5,
+    "F": 5,
+    "E": 8,
+    "C": 8,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-fruehzeichen",
+    "type": "continuum",
+    "n": 0,
+    "L": 10,
+    "K": 10,
+    "F": null,
+    "E": null,
+    "C": 10,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "depression-angehoerige__behandlung-und-verlauf__x5__m10__s80": {
+  "seiten": 10,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "955f431b7108",
+   "af640473f04d",
+   "c6fc31d760e5",
+   "7f71165c637c",
+   "393ae79bfb49",
+   "5c8e01f202dc",
+   "538384ed985f",
+   "631d4c00411f",
+   "598ca0cd0e62",
+   "9d8e5e0f7320"
+  ],
+  "tinte_bis": [
+   96.1,
+   23.2,
+   87.9,
+   95.6,
+   92.5,
+   85.8,
+   93.5,
+   93.0,
+   93.7,
+   16.2
+  ],
+  "figuren": [
+   {
+    "id": "v-bv-vergleich",
+    "type": "comparison",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 3,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-weg",
+    "type": "process",
+    "n": 25,
+    "L": 4,
+    "K": 4,
+    "F": 4,
+    "E": 5,
+    "C": 5,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-fruehzeichen",
+    "type": "continuum",
+    "n": 0,
+    "L": 7,
+    "K": 7,
+    "F": null,
+    "E": null,
+    "C": 7,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "depression-angehoerige__behandlung-und-verlauf__x5__m10__s90": {
+  "seiten": 12,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "4f996486316c",
+   "b29e0ba713b4",
+   "d8a7b66ddba4",
+   "11ef2684cd0b",
+   "54313e1feee0",
+   "f420d31ae8ba",
+   "f26647a9e402",
+   "e7d7b53d5f87",
+   "096a25b07f58",
+   "848693815a49",
+   "b04b5f7c3a4b",
+   "9e369830cd35"
+  ],
+  "tinte_bis": [
+   94.0,
+   42.3,
+   82.6,
+   14.3,
+   96.6,
+   95.4,
+   94.2,
+   70.5,
+   95.2,
+   94.9,
+   92.3,
+   60.4
+  ],
+  "figuren": [
+   {
+    "id": "v-bv-vergleich",
+    "type": "comparison",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 3,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-weg",
+    "type": "process",
+    "n": 25,
+    "L": 5,
+    "K": 5,
+    "F": 5,
+    "E": 7,
+    "C": 7,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-fruehzeichen",
+    "type": "continuum",
+    "n": 0,
+    "L": 9,
+    "K": 9,
+    "F": null,
+    "E": null,
+    "C": 9,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "depression-angehoerige__behandlung-und-verlauf__x5__m15__s100": {
+  "seiten": 13,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "97b0f2239f8b",
+   "0996d32a9eaf",
+   "5185a44430af",
+   "4d12297ce05f",
+   "83bae36b1c6a",
+   "63ebbbfc796d",
+   "72ca1561d14e",
+   "8a0cb75f8758",
+   "37c2b3ecb231",
+   "18d554f5c348",
+   "3a5a0ee2f029",
+   "77c08472a2c4",
+   "53d213a67573"
+  ],
+  "tinte_bis": [
+   94.5,
+   56.8,
+   79.4,
+   50.9,
+   94.4,
+   94.9,
+   94.9,
+   86.3,
+   68.4,
+   93.7,
+   93.0,
+   93.2,
+   60.8
+  ],
+  "figuren": [
+   {
+    "id": "v-bv-vergleich",
+    "type": "comparison",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 3,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-weg",
+    "type": "process",
+    "n": 25,
+    "L": 5,
+    "K": 5,
+    "F": 5,
+    "E": 7,
+    "C": 8,
+    "ganz": false,
+    "kopf": true,
+    "kennz": false
+   },
+   {
+    "id": "v-bv-fruehzeichen",
+    "type": "continuum",
+    "n": 0,
+    "L": 10,
+    "K": 10,
+    "F": null,
+    "E": null,
+    "C": 10,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "depression-angehoerige__behandlung-und-verlauf__x5__m15__s110": {
+  "seiten": 15,
+  "leer": [],
+  "leere_rahmen": [
+   {
+    "seite": 3,
+    "oben": 87.9,
+    "unten": 89.4,
+    "hoehe": 1.5,
+    "leer": true,
+    "lage": "Mitte"
+   }
+  ],
+  "md5": [
+   "2212ca68703d",
+   "dbecff53a793",
+   "241ecc75c4d7",
+   "7d480acbe4ea",
+   "017796dc3327",
+   "0f4bc397eca8",
+   "bc64474567cf",
+   "f9d8ac6164d7",
+   "9fac1c0820c6",
+   "fdbaa63bc1dc",
+   "da7994d8741f",
+   "fe826b1b9082",
+   "dcba30d7b2a9",
+   "046e77688b90",
+   "7c27c142350d"
+  ],
+  "tinte_bis": [
+   87.5,
+   78.7,
+   94.0,
+   57.3,
+   94.9,
+   94.9,
+   94.9,
+   92.3,
+   87.5,
+   28.7,
+   92.7,
+   93.9,
+   90.6,
+   92.3,
+   18.3
+  ],
+  "figuren": [
+   {
+    "id": "v-bv-vergleich",
+    "type": "comparison",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 3,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-weg",
+    "type": "process",
+    "n": 25,
+    "L": 5,
+    "K": 5,
+    "F": 5,
+    "E": 8,
+    "C": 8,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-fruehzeichen",
+    "type": "continuum",
+    "n": 0,
+    "L": 11,
+    "K": 11,
+    "F": null,
+    "E": null,
+    "C": 11,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "depression-angehoerige__behandlung-und-verlauf__x5__m15__s80": {
+  "seiten": 10,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "7fa3fc728ddb",
+   "1686d57b685d",
+   "b9eedcc7b416",
+   "a6764b79da6e",
+   "1d88ea2d34df",
+   "00e4b153aed9",
+   "a6e416d48996",
+   "488f9a855b58",
+   "7681ffbb7fdc",
+   "8ebcf0ebaff3"
+  ],
+  "tinte_bis": [
+   94.4,
+   29.7,
+   90.4,
+   93.7,
+   94.9,
+   91.6,
+   94.5,
+   92.8,
+   89.9,
+   49.0
+  ],
+  "figuren": [
+   {
+    "id": "v-bv-vergleich",
+    "type": "comparison",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 3,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-weg",
+    "type": "process",
+    "n": 25,
+    "L": 4,
+    "K": 4,
+    "F": 4,
+    "E": 5,
+    "C": 6,
+    "ganz": false,
+    "kopf": true,
+    "kennz": false
+   },
+   {
+    "id": "v-bv-fruehzeichen",
+    "type": "continuum",
+    "n": 0,
+    "L": 7,
+    "K": 7,
+    "F": null,
+    "E": null,
+    "C": 7,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "depression-angehoerige__behandlung-und-verlauf__x5__m15__s90": {
+  "seiten": 12,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "bc3d8892931c",
+   "1fd7db8ba8b4",
+   "8311d1854da6",
+   "14a00b44bb5c",
+   "fda4cff0980b",
+   "eb422dbe21c0",
+   "95a17c9f7c56",
+   "de1339b7a08c",
+   "1136d007e101",
+   "e005818a46b3",
+   "2bf53379085e",
+   "60bc8c10b396"
+  ],
+  "tinte_bis": [
+   92.2,
+   44.9,
+   70.3,
+   45.6,
+   95.1,
+   95.1,
+   89.1,
+   89.9,
+   92.7,
+   90.6,
+   92.7,
+   28.8
+  ],
+  "figuren": [
+   {
+    "id": "v-bv-vergleich",
+    "type": "comparison",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 3,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-weg",
+    "type": "process",
+    "n": 25,
+    "L": 5,
+    "K": 5,
+    "F": 5,
+    "E": 7,
+    "C": 7,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-fruehzeichen",
+    "type": "continuum",
+    "n": 0,
+    "L": 9,
+    "K": 9,
+    "F": null,
+    "E": null,
+    "C": 9,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "depression-angehoerige__depression-verstehen__x5__m0__s100": {
+  "seiten": 13,
+  "leer": [
+   5
+  ],
+  "leere_rahmen": [
+   {
+    "seite": 5,
+    "oben": 0.2,
+    "unten": 99.8,
+    "hoehe": 99.7,
+    "leer": true,
+    "lage": "Seitenende"
+   }
+  ],
+  "md5": [
+   "6f237028b711",
+   "7ee812777e5d",
+   "4e6aa3e0d3d4",
+   "9f7b57b59f07",
+   "5bdb054e2fe7",
+   "7acc72581d76",
+   "c29bdd2f7ff2",
+   "1ee2d4d9d098",
+   "e7839b66b493",
+   "117f43a8a307",
+   "6a071165426d",
+   "a882d3938885",
+   "6af069c1fc31"
+  ],
+  "tinte_bis": [
+   98.0,
+   90.4,
+   98.6,
+   85.0,
+   0,
+   15.9,
+   88.9,
+   84.1,
+   97.8,
+   98.0,
+   98.8,
+   98.3,
+   25.9
+  ],
+  "figuren": [
+   {
+    "id": "v-dv-schichten",
+    "type": "layer-model",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 8,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-dv-entstehung",
+    "type": "stepwise-model",
+    "n": 15,
+    "L": 6,
+    "K": 6,
+    "F": 7,
+    "E": 8,
+    "C": 8,
+    "ganz": false,
+    "kopf": false,
+    "kennz": true
+   }
+  ]
+ },
+ "depression-angehoerige__depression-verstehen__x5__m0__s110": {
+  "seiten": 14,
+  "leer": [
+   6
+  ],
+  "leere_rahmen": [
+   {
+    "seite": 3,
+    "oben": 66.0,
+    "unten": 67.6,
+    "hoehe": 1.5,
+    "leer": true,
+    "lage": "Mitte"
+   },
+   {
+    "seite": 6,
+    "oben": 0.2,
+    "unten": 100.0,
+    "hoehe": 99.8,
+    "leer": true,
+    "lage": "Seitenende"
+   }
+  ],
+  "md5": [
+   "751302d8639f",
+   "90ba94fac62a",
+   "eaf45c1cd8b2",
+   "874d4d893eb2",
+   "07747c4149c7",
+   "8b45b2735da3",
+   "9116021ae00c",
+   "d606846cd70f",
+   "31304edc21f5",
+   "88b4aa630c94",
+   "c9ef23b07a55",
+   "f639e48501b9",
+   "8272386867a4",
+   "c4c0a8e86a1b"
+  ],
+  "tinte_bis": [
+   94.4,
+   88.1,
+   87.0,
+   93.9,
+   6.5,
+   0,
+   17.4,
+   95.4,
+   91.1,
+   98.5,
+   93.2,
+   97.4,
+   96.1,
+   13.3
+  ],
+  "figuren": [
+   {
+    "id": "v-dv-schichten",
+    "type": "layer-model",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 9,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-dv-entstehung",
+    "type": "stepwise-model",
+    "n": 15,
+    "L": 7,
+    "K": 7,
+    "F": 8,
+    "E": 9,
+    "C": 9,
+    "ganz": false,
+    "kopf": false,
+    "kennz": true
+   }
+  ]
+ },
+ "depression-angehoerige__depression-verstehen__x5__m0__s80": {
+  "seiten": 10,
+  "leer": [
+   5
+  ],
+  "leere_rahmen": [
+   {
+    "seite": 5,
+    "oben": 0.2,
+    "unten": 99.8,
+    "hoehe": 99.7,
+    "leer": true,
+    "lage": "Seitenende"
+   }
+  ],
+  "md5": [
+   "3bcca7d4825b",
+   "a92d843f0a79",
+   "c6acf6c0a339",
+   "2670a5313e92",
+   "5bdb054e2fe7",
+   "1a9604a400c3",
+   "4111b20aa32a",
+   "503973d453ec",
+   "f07dac367ebf",
+   "faa1f4072159"
+  ],
+  "tinte_bis": [
+   99.3,
+   38.1,
+   97.3,
+   39.4,
+   0,
+   98.0,
+   97.8,
+   97.3,
+   94.7,
+   44.7
+  ],
+  "figuren": [
+   {
+    "id": "v-dv-schichten",
+    "type": "layer-model",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 7,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-dv-entstehung",
+    "type": "stepwise-model",
+    "n": 15,
+    "L": 6,
+    "K": 6,
+    "F": 6,
+    "E": 7,
+    "C": 7,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "depression-angehoerige__depression-verstehen__x5__m0__s90": {
+  "seiten": 11,
+  "leer": [
+   5
+  ],
+  "leere_rahmen": [
+   {
+    "seite": 5,
+    "oben": 0.2,
+    "unten": 99.8,
+    "hoehe": 99.7,
+    "leer": true,
+    "lage": "Seitenende"
+   }
+  ],
+  "md5": [
+   "7d0515c111b7",
+   "7ee20392e44a",
+   "1289eb7985fc",
+   "24d0cb01b38d",
+   "c5c0ce7dd0e5",
+   "2ee40f5c0e73",
+   "4fc87396c0a6",
+   "02dec253e522",
+   "bc29214134f1",
+   "5be1c00c4697",
+   "42c333872170"
+  ],
+  "tinte_bis": [
+   98.8,
+   63.8,
+   99.3,
+   54.9,
+   0,
+   95.6,
+   96.1,
+   95.7,
+   95.7,
+   98.3,
+   46.2
+  ],
+  "figuren": [
+   {
+    "id": "v-dv-schichten",
+    "type": "layer-model",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 7,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-dv-entstehung",
+    "type": "stepwise-model",
+    "n": 15,
+    "L": 6,
+    "K": 6,
+    "F": 6,
+    "E": 7,
+    "C": 7,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "depression-angehoerige__depression-verstehen__x5__m10__s100": {
+  "seiten": 14,
+  "leer": [
+   6
+  ],
+  "leere_rahmen": [
+   {
+    "seite": 6,
+    "oben": 3.4,
+    "unten": 96.6,
+    "hoehe": 93.2,
+    "leer": true,
+    "lage": "Seitenende"
+   }
+  ],
+  "md5": [
+   "c17d12c12d9b",
+   "7d86a1c93e57",
+   "b45e49074dbc",
+   "379845bc48fc",
+   "d513713b1526",
+   "2d347784868f",
+   "3003b30e9da4",
+   "2d6840aec188",
+   "e3594bde9699",
+   "2c5a7ea59f1e",
+   "3bfbb700d46f",
+   "647a4810d5dc",
+   "5b43fe24e58e",
+   "b5eb1405edba"
+  ],
+  "tinte_bis": [
+   93.7,
+   77.3,
+   82.4,
+   88.6,
+   9.2,
+   0,
+   19.1,
+   96.1,
+   84.0,
+   95.6,
+   92.7,
+   92.2,
+   56.0,
+   38.1
+  ],
+  "figuren": [
+   {
+    "id": "v-dv-schichten",
+    "type": "layer-model",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 9,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-dv-entstehung",
+    "type": "stepwise-model",
+    "n": 15,
+    "L": 7,
+    "K": 7,
+    "F": 8,
+    "E": 9,
+    "C": 9,
+    "ganz": false,
+    "kopf": false,
+    "kennz": true
+   }
+  ]
+ },
+ "depression-angehoerige__depression-verstehen__x5__m10__s110": {
+  "seiten": 14,
+  "leer": [
+   6
+  ],
+  "leere_rahmen": [
+   {
+    "seite": 3,
+    "oben": 69.3,
+    "unten": 70.8,
+    "hoehe": 1.5,
+    "leer": true,
+    "lage": "Mitte"
+   },
+   {
+    "seite": 6,
+    "oben": 3.4,
+    "unten": 96.6,
+    "hoehe": 93.2,
+    "leer": true,
+    "lage": "Seitenende"
+   }
+  ],
+  "md5": [
+   "03855b491782",
+   "67f4f59cc1a6",
+   "d30a5fa3efa6",
+   "c44a76d8a371",
+   "4b54a9357134",
+   "2d347784868f",
+   "71035e8de619",
+   "7bc6dde5cfd1",
+   "c22609eda4c1",
+   "a006f76421e5",
+   "07f3e3d1215a",
+   "619abe335639",
+   "ad7df5292822",
+   "b948dddd65f8"
+  ],
+  "tinte_bis": [
+   94.2,
+   93.2,
+   75.3,
+   95.2,
+   38.2,
+   0,
+   20.8,
+   91.6,
+   96.6,
+   91.5,
+   93.3,
+   95.9,
+   93.9,
+   67.6
+  ],
+  "figuren": [
+   {
+    "id": "v-dv-schichten",
+    "type": "layer-model",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 10,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-dv-entstehung",
+    "type": "stepwise-model",
+    "n": 15,
+    "L": 7,
+    "K": 7,
+    "F": 8,
+    "E": 10,
+    "C": 10,
+    "ganz": false,
+    "kopf": false,
+    "kennz": true
+   }
+  ]
+ },
+ "depression-angehoerige__depression-verstehen__x5__m10__s80": {
+  "seiten": 11,
+  "leer": [
+   5
+  ],
+  "leere_rahmen": [
+   {
+    "seite": 5,
+    "oben": 3.4,
+    "unten": 96.6,
+    "hoehe": 93.2,
+    "leer": true,
+    "lage": "Seitenende"
+   }
+  ],
+  "md5": [
+   "b44c623357c1",
+   "eb758765d933",
+   "3b85b7b7d40e",
+   "39077dc552fd",
+   "2d347784868f",
+   "806ff5b2e3c2",
+   "46310ca4d796",
+   "ae89d111425a",
+   "5afdd0368550",
+   "b9ce60a81bb2",
+   "61801462810c"
+  ],
+  "tinte_bis": [
+   91.5,
+   57.0,
+   94.7,
+   48.3,
+   0,
+   95.1,
+   95.1,
+   94.9,
+   91.8,
+   92.7,
+   11.9
+  ],
+  "figuren": [
+   {
+    "id": "v-dv-schichten",
+    "type": "layer-model",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 7,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-dv-entstehung",
+    "type": "stepwise-model",
+    "n": 15,
+    "L": 6,
+    "K": 6,
+    "F": 6,
+    "E": 7,
+    "C": 7,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "depression-angehoerige__depression-verstehen__x5__m10__s90": {
+  "seiten": 12,
+  "leer": [
+   5
+  ],
+  "leere_rahmen": [
+   {
+    "seite": 5,
+    "oben": 3.4,
+    "unten": 96.6,
+    "hoehe": 93.2,
+    "leer": true,
+    "lage": "Seitenende"
+   }
+  ],
+  "md5": [
+   "220b2796b141",
+   "e451247f46e6",
+   "239487b70bf3",
+   "03737a1d32bf",
+   "2d347784868f",
+   "4c5e5fec65f0",
+   "eb3e23a42615",
+   "4b372ff8f61a",
+   "c6ae4be6a1ba",
+   "31d99faf5ab1",
+   "2708c7cdc5ad",
+   "b8cbc18d46c2"
+  ],
+  "tinte_bis": [
+   96.1,
+   80.5,
+   94.0,
+   77.8,
+   0,
+   17.6,
+   92.3,
+   93.9,
+   91.8,
+   95.9,
+   96.2,
+   84.8
+  ],
+  "figuren": [
+   {
+    "id": "v-dv-schichten",
+    "type": "layer-model",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 8,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-dv-entstehung",
+    "type": "stepwise-model",
+    "n": 15,
+    "L": 6,
+    "K": 6,
+    "F": 7,
+    "E": 8,
+    "C": 8,
+    "ganz": false,
+    "kopf": false,
+    "kennz": true
+   }
+  ]
+ },
+ "depression-angehoerige__depression-verstehen__x5__m15__s100": {
+  "seiten": 14,
+  "leer": [
+   6
+  ],
+  "leere_rahmen": [
+   {
+    "seite": 6,
+    "oben": 5.1,
+    "unten": 94.9,
+    "hoehe": 89.8,
+    "leer": true,
+    "lage": "Seitenende"
+   }
+  ],
+  "md5": [
+   "4d514a4a7962",
+   "4c6f362492cf",
+   "e81296bf8314",
+   "e6c9d39fff9b",
+   "d0e27b9bc2cb",
+   "42e267a00217",
+   "79e44d089fa6",
+   "cbb66b9a8ff9",
+   "78ac9f896e31",
+   "0da1b13f07cb",
+   "b15515eb78b6",
+   "8a2481454a6b",
+   "f63de2f318e0",
+   "7da4e5e03eb7"
+  ],
+  "tinte_bis": [
+   91.8,
+   84.6,
+   84.1,
+   89.6,
+   10.9,
+   0,
+   20.8,
+   91.8,
+   88.2,
+   90.1,
+   92.8,
+   93.5,
+   94.5,
+   17.1
+  ],
+  "figuren": [
+   {
+    "id": "v-dv-schichten",
+    "type": "layer-model",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 9,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-dv-entstehung",
+    "type": "stepwise-model",
+    "n": 15,
+    "L": 7,
+    "K": 7,
+    "F": 8,
+    "E": 9,
+    "C": 9,
+    "ganz": false,
+    "kopf": false,
+    "kennz": true
+   }
+  ]
+ },
+ "depression-angehoerige__depression-verstehen__x5__m15__s110": {
+  "seiten": 16,
+  "leer": [
+   7
+  ],
+  "leere_rahmen": [
+   {
+    "seite": 4,
+    "oben": 71.0,
+    "unten": 72.5,
+    "hoehe": 1.5,
+    "leer": true,
+    "lage": "Mitte"
+   },
+   {
+    "seite": 7,
+    "oben": 5.1,
+    "unten": 94.9,
+    "hoehe": 89.8,
+    "leer": true,
+    "lage": "Seitenende"
+   }
+  ],
+  "md5": [
+   "52bef34ef207",
+   "628aae9f2be8",
+   "7dda708f39c7",
+   "6c8f004d5e24",
+   "d276ad58124d",
+   "dfece51efb08",
+   "42e267a00217",
+   "c64732c391ea",
+   "8a43402fc986",
+   "dafd6c8fe487",
+   "96d6f95ce513",
+   "5377be8bcd69",
+   "5fccbc570047",
+   "5b15c86dd9c4",
+   "efd50d22f9ca",
+   "be268a641af6"
+  ],
+  "tinte_bis": [
+   92.7,
+   88.2,
+   13.8,
+   77.1,
+   94.0,
+   45.1,
+   0,
+   22.4,
+   93.9,
+   93.7,
+   91.3,
+   92.7,
+   92.7,
+   92.7,
+   93.7,
+   25.9
+  ],
+  "figuren": [
+   {
+    "id": "v-dv-schichten",
+    "type": "layer-model",
+    "n": 0,
+    "L": 4,
+    "K": 4,
+    "F": null,
+    "E": null,
+    "C": 11,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-dv-entstehung",
+    "type": "stepwise-model",
+    "n": 15,
+    "L": 8,
+    "K": 8,
+    "F": 9,
+    "E": 11,
+    "C": 11,
+    "ganz": false,
+    "kopf": false,
+    "kennz": true
+   }
+  ]
+ },
+ "depression-angehoerige__depression-verstehen__x5__m15__s80": {
+  "seiten": 11,
+  "leer": [
+   5
+  ],
+  "leere_rahmen": [
+   {
+    "seite": 5,
+    "oben": 5.1,
+    "unten": 94.9,
+    "hoehe": 89.8,
+    "leer": true,
+    "lage": "Seitenende"
+   }
+  ],
+  "md5": [
+   "442c8dc44ca3",
+   "9d90c751c897",
+   "de40afcd6547",
+   "84d6b36dfb2c",
+   "42e267a00217",
+   "f9b684c1079b",
+   "749185b84885",
+   "96dd20a67c83",
+   "d3b0e1a660c0",
+   "9855828739f8",
+   "6c246e9fbd18"
+  ],
+  "tinte_bis": [
+   94.0,
+   61.8,
+   91.6,
+   59.0,
+   0,
+   94.7,
+   92.3,
+   86.7,
+   93.9,
+   93.7,
+   41.6
+  ],
+  "figuren": [
+   {
+    "id": "v-dv-schichten",
+    "type": "layer-model",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 7,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-dv-entstehung",
+    "type": "stepwise-model",
+    "n": 15,
+    "L": 6,
+    "K": 6,
+    "F": 6,
+    "E": 7,
+    "C": 7,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "depression-angehoerige__depression-verstehen__x5__m15__s90": {
+  "seiten": 12,
+  "leer": [
+   5
+  ],
+  "leere_rahmen": [
+   {
+    "seite": 5,
+    "oben": 5.1,
+    "unten": 95.1,
+    "hoehe": 89.9,
+    "leer": true,
+    "lage": "Seitenende"
+   }
+  ],
+  "md5": [
+   "12cfdccc99ad",
+   "c2f9e944c29f",
+   "0896dc7f39bf",
+   "260cda5db893",
+   "5814a71d311a",
+   "a774193c3af7",
+   "4d43dff06c6f",
+   "3ca36b969539",
+   "78588dedfa8a",
+   "12ea6a1a90f7",
+   "ee2e00cd7ec3",
+   "b986feccb697"
+  ],
+  "tinte_bis": [
+   90.8,
+   70.0,
+   90.1,
+   78.5,
+   0,
+   19.3,
+   93.9,
+   91.6,
+   88.4,
+   90.1,
+   87.5,
+   34.5
+  ],
+  "figuren": [
+   {
+    "id": "v-dv-schichten",
+    "type": "layer-model",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 8,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-dv-entstehung",
+    "type": "stepwise-model",
+    "n": 15,
+    "L": 6,
+    "K": 6,
+    "F": 7,
+    "E": 8,
+    "C": 8,
+    "ganz": false,
+    "kopf": false,
+    "kennz": true
+   }
+  ]
+ }
+}

@@ -1,0 +1,4442 @@
+{
+ "zz-dep-test__begleiten__x1__m0__s100": {
+  "seiten": 7,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "d99ea43eaa26",
+   "256143fbd9da",
+   "8f5656e911e4",
+   "86f12dcd21b5",
+   "f883f3d8901e",
+   "b787ec3a9bae",
+   "d26161fdca14"
+  ],
+  "tinte_bis": [
+   99.3,
+   97.1,
+   98.0,
+   98.5,
+   99.5,
+   97.1,
+   2.9
+  ],
+  "figuren": [
+   {
+    "id": "v-bg-boot",
+    "type": "illustration",
+    "n": 0,
+    "L": 2,
+    "K": 2,
+    "F": null,
+    "E": null,
+    "C": 2,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__begleiten__x1__m0__s110": {
+  "seiten": 7,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "5d873497444a",
+   "229e67712586",
+   "a8b9be0ca66f",
+   "3636b7922e14",
+   "c8c284321482",
+   "ece5b3892548",
+   "296368a3da7b"
+  ],
+  "tinte_bis": [
+   98.5,
+   90.8,
+   95.9,
+   97.3,
+   98.1,
+   99.1,
+   2.9
+  ],
+  "figuren": [
+   {
+    "id": "v-bg-boot",
+    "type": "illustration",
+    "n": 0,
+    "L": 2,
+    "K": 2,
+    "F": null,
+    "E": null,
+    "C": 2,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__begleiten__x1__m0__s80": {
+  "seiten": 5,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "1769194caa4e",
+   "70b004f2f57a",
+   "98a187561363",
+   "772dd08b0d6a",
+   "bb5ae3960740"
+  ],
+  "tinte_bis": [
+   80.5,
+   88.2,
+   98.8,
+   99.0,
+   62.6
+  ],
+  "figuren": [
+   {
+    "id": "v-bg-boot",
+    "type": "illustration",
+    "n": 0,
+    "L": 2,
+    "K": 2,
+    "F": null,
+    "E": null,
+    "C": 2,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__begleiten__x1__m0__s90": {
+  "seiten": 6,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "7a18a2a170f8",
+   "941a1341762f",
+   "3c82ab251218",
+   "0b880106e3c2",
+   "55a316185a3c",
+   "f388104b8d13"
+  ],
+  "tinte_bis": [
+   88.2,
+   96.2,
+   55.1,
+   99.8,
+   97.1,
+   57.3
+  ],
+  "figuren": [
+   {
+    "id": "v-bg-boot",
+    "type": "illustration",
+    "n": 0,
+    "L": 2,
+    "K": 2,
+    "F": null,
+    "E": null,
+    "C": 2,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__begleiten__x1__m10__s100": {
+  "seiten": 6,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "16041ecd2748",
+   "75421aec5077",
+   "cf42ae137fc9",
+   "be0be3dc7173",
+   "271c6b5c4d77",
+   "34e8c0a0e898"
+  ],
+  "tinte_bis": [
+   92.7,
+   95.1,
+   88.9,
+   96.6,
+   93.0,
+   82.6
+  ],
+  "figuren": [
+   {
+    "id": "v-bg-boot",
+    "type": "illustration",
+    "n": 0,
+    "L": 2,
+    "K": 2,
+    "F": null,
+    "E": null,
+    "C": 2,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__begleiten__x1__m10__s110": {
+  "seiten": 7,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "82eabe5d220b",
+   "a2ee9f77ccf7",
+   "b6fb9978ba86",
+   "30bf0727deac",
+   "25adf2cf29c3",
+   "88cb236cb4a7",
+   "06e30ceabb49"
+  ],
+  "tinte_bis": [
+   90.6,
+   83.3,
+   94.0,
+   94.7,
+   85.7,
+   93.2,
+   59.0
+  ],
+  "figuren": [
+   {
+    "id": "v-bg-boot",
+    "type": "illustration",
+    "n": 0,
+    "L": 2,
+    "K": 2,
+    "F": null,
+    "E": null,
+    "C": 2,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__begleiten__x1__m10__s80": {
+  "seiten": 6,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "e14560657a90",
+   "eb2d5ba90b1b",
+   "e53d9dbd4ca2",
+   "5193aebc49cd",
+   "e88e14d2e934",
+   "75e78e5e3d9b"
+  ],
+  "tinte_bis": [
+   82.4,
+   44.2,
+   91.5,
+   94.9,
+   95.4,
+   36.3
+  ],
+  "figuren": [
+   {
+    "id": "v-bg-boot",
+    "type": "illustration",
+    "n": 0,
+    "L": 2,
+    "K": 2,
+    "F": null,
+    "E": null,
+    "C": 2,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__begleiten__x1__m10__s90": {
+  "seiten": 6,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "0121f8e3c0ea",
+   "1850a9699f0d",
+   "3f2dad37866e",
+   "168670c7b344",
+   "c44e970a7381",
+   "8bb294663971"
+  ],
+  "tinte_bis": [
+   92.8,
+   89.4,
+   95.1,
+   91.5,
+   95.4,
+   84.1
+  ],
+  "figuren": [
+   {
+    "id": "v-bg-boot",
+    "type": "illustration",
+    "n": 0,
+    "L": 2,
+    "K": 2,
+    "F": null,
+    "E": null,
+    "C": 2,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__begleiten__x1__m15__s100": {
+  "seiten": 7,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "9a57806e4355",
+   "b098aa9125c4",
+   "89c7fedb6557",
+   "725a0c1b99a2",
+   "63160b02d607",
+   "03414f6061cc",
+   "0d32ef1fae55"
+  ],
+  "tinte_bis": [
+   93.0,
+   88.4,
+   91.8,
+   92.5,
+   93.7,
+   93.3,
+   10.4
+  ],
+  "figuren": [
+   {
+    "id": "v-bg-boot",
+    "type": "illustration",
+    "n": 0,
+    "L": 2,
+    "K": 2,
+    "F": null,
+    "E": null,
+    "C": 2,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__begleiten__x1__m15__s110": {
+  "seiten": 7,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "20a3d52ebf53",
+   "ec34cade0ddf",
+   "ac762912b2d6",
+   "21238a98cd2a",
+   "54de3010f136",
+   "792af2e60895",
+   "a695a7b5eb61"
+  ],
+  "tinte_bis": [
+   91.6,
+   85.0,
+   92.3,
+   94.5,
+   88.6,
+   94.0,
+   84.5
+  ],
+  "figuren": [
+   {
+    "id": "v-bg-boot",
+    "type": "illustration",
+    "n": 0,
+    "L": 2,
+    "K": 2,
+    "F": null,
+    "E": null,
+    "C": 2,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__begleiten__x1__m15__s80": {
+  "seiten": 6,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "f2767837584b",
+   "e735ba0c6b98",
+   "97ca4dfb6c4c",
+   "eba36325297f",
+   "fc7455c7bcbf",
+   "1cd63980d896"
+  ],
+  "tinte_bis": [
+   84.3,
+   92.0,
+   53.6,
+   88.9,
+   93.5,
+   60.8
+  ],
+  "figuren": [
+   {
+    "id": "v-bg-boot",
+    "type": "illustration",
+    "n": 0,
+    "L": 2,
+    "K": 2,
+    "F": null,
+    "E": null,
+    "C": 2,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__begleiten__x1__m15__s90": {
+  "seiten": 6,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "bab9c69cd29d",
+   "898b548f8182",
+   "67fe47798dba",
+   "029a879b5732",
+   "8b46ba8474a9",
+   "b9ee56679071"
+  ],
+  "tinte_bis": [
+   94.4,
+   95.1,
+   93.2,
+   90.3,
+   92.8,
+   48.8
+  ],
+  "figuren": [
+   {
+    "id": "v-bg-boot",
+    "type": "illustration",
+    "n": 0,
+    "L": 2,
+    "K": 2,
+    "F": null,
+    "E": null,
+    "C": 2,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__behandlung-und-verlauf__x1__m0__s100": {
+  "seiten": 10,
+  "leer": [],
+  "leere_rahmen": [
+   {
+    "seite": 2,
+    "oben": 48.5,
+    "unten": 99.8,
+    "hoehe": 51.4,
+    "leer": true,
+    "lage": "Seitenende"
+   },
+   {
+    "seite": 6,
+    "oben": 67.4,
+    "unten": 99.8,
+    "hoehe": 32.4,
+    "leer": true,
+    "lage": "Seitenende"
+   }
+  ],
+  "md5": [
+   "31429ab43b5d",
+   "041233f0bf93",
+   "e5122339177d",
+   "d4cabd9ae908",
+   "17eecb88668b",
+   "4dcb1f4fcdde",
+   "2cb7261e6027",
+   "6512cee23cd8",
+   "72be6ad75214",
+   "92b5e631d546"
+  ],
+  "tinte_bis": [
+   96.8,
+   45.7,
+   86.9,
+   93.7,
+   50.3,
+   64.8,
+   94.5,
+   86.0,
+   95.2,
+   76.5
+  ],
+  "figuren": [
+   {
+    "id": "v-bv-vergleich",
+    "type": "comparison",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 3,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-weg",
+    "type": "process",
+    "n": 5,
+    "L": 4,
+    "K": 4,
+    "F": 4,
+    "E": 4,
+    "C": 4,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-fruehzeichen",
+    "type": "continuum",
+    "n": 0,
+    "L": 7,
+    "K": 7,
+    "F": null,
+    "E": null,
+    "C": 7,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__behandlung-und-verlauf__x1__m0__s110": {
+  "seiten": 10,
+  "leer": [],
+  "leere_rahmen": [
+   {
+    "seite": 2,
+    "oben": 59.7,
+    "unten": 100.0,
+    "hoehe": 40.3,
+    "leer": true,
+    "lage": "Seitenende"
+   },
+   {
+    "seite": 3,
+    "oben": 72.0,
+    "unten": 73.5,
+    "hoehe": 1.5,
+    "leer": true,
+    "lage": "Mitte"
+   }
+  ],
+  "md5": [
+   "1a28c4247439",
+   "fc5ad8a3b553",
+   "6836f17514fb",
+   "5e13d9b47d8b",
+   "df5744e190dd",
+   "f653dcb2a5df",
+   "f0d8d07bb2fa",
+   "36f8c5d73d91",
+   "9c2d5f738198",
+   "d5d6783a9db2"
+  ],
+  "tinte_bis": [
+   97.8,
+   57.0,
+   78.2,
+   49.1,
+   95.1,
+   99.5,
+   88.2,
+   95.9,
+   96.4,
+   71.0
+  ],
+  "figuren": [
+   {
+    "id": "v-bv-vergleich",
+    "type": "comparison",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 3,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-weg",
+    "type": "process",
+    "n": 5,
+    "L": 5,
+    "K": 5,
+    "F": 5,
+    "E": 5,
+    "C": 5,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-fruehzeichen",
+    "type": "continuum",
+    "n": 0,
+    "L": 7,
+    "K": 7,
+    "F": null,
+    "E": null,
+    "C": 7,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__behandlung-und-verlauf__x1__m0__s80": {
+  "seiten": 8,
+  "leer": [],
+  "leere_rahmen": [
+   {
+    "seite": 2,
+    "oben": 59.9,
+    "unten": 99.8,
+    "hoehe": 39.9,
+    "leer": true,
+    "lage": "Seitenende"
+   }
+  ],
+  "md5": [
+   "326aec8bbfc2",
+   "752c13508e8b",
+   "20c9f8ba1a35",
+   "812ee97a24db",
+   "0957f3d3d9ca",
+   "cf996a69550a",
+   "5b13626aa382",
+   "a7dc86bb6487"
+  ],
+  "tinte_bis": [
+   53.4,
+   57.8,
+   81.9,
+   91.8,
+   98.0,
+   95.9,
+   98.8,
+   6.5
+  ],
+  "figuren": [
+   {
+    "id": "v-bv-vergleich",
+    "type": "comparison",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 3,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-weg",
+    "type": "process",
+    "n": 5,
+    "L": 4,
+    "K": 4,
+    "F": 4,
+    "E": 4,
+    "C": 4,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-fruehzeichen",
+    "type": "continuum",
+    "n": 0,
+    "L": 5,
+    "K": 5,
+    "F": null,
+    "E": null,
+    "C": 5,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__behandlung-und-verlauf__x1__m0__s90": {
+  "seiten": 8,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "e5d14dab0d4a",
+   "e4508d1ce2c2",
+   "d9bbc520e832",
+   "76154612373f",
+   "1fdc2c2a1123",
+   "7b3caf0258d2",
+   "b1ede05cb248",
+   "1050231b6cdc"
+  ],
+  "tinte_bis": [
+   97.4,
+   87.9,
+   97.3,
+   92.7,
+   95.7,
+   97.4,
+   94.9,
+   27.3
+  ],
+  "figuren": [
+   {
+    "id": "v-bv-vergleich",
+    "type": "comparison",
+    "n": 0,
+    "L": 2,
+    "K": 2,
+    "F": null,
+    "E": null,
+    "C": 2,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-weg",
+    "type": "process",
+    "n": 5,
+    "L": 3,
+    "K": 3,
+    "F": 3,
+    "E": 3,
+    "C": 3,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-fruehzeichen",
+    "type": "continuum",
+    "n": 0,
+    "L": 5,
+    "K": 5,
+    "F": null,
+    "E": null,
+    "C": 5,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__behandlung-und-verlauf__x1__m10__s100": {
+  "seiten": 10,
+  "leer": [],
+  "leere_rahmen": [
+   {
+    "seite": 2,
+    "oben": 57.5,
+    "unten": 96.6,
+    "hoehe": 39.1,
+    "leer": true,
+    "lage": "Seitenende"
+   }
+  ],
+  "md5": [
+   "97754b502512",
+   "136b29abd9e3",
+   "a8aa55a32fe1",
+   "05138994af08",
+   "be0c35a18d75",
+   "1a4a8ffca78e",
+   "1c0c82a18259",
+   "74525c45b711",
+   "b1d891297b6a",
+   "df610ae843d0"
+  ],
+  "tinte_bis": [
+   92.2,
+   55.1,
+   74.4,
+   47.8,
+   89.8,
+   95.7,
+   92.3,
+   88.6,
+   94.0,
+   56.1
+  ],
+  "figuren": [
+   {
+    "id": "v-bv-vergleich",
+    "type": "comparison",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 3,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-weg",
+    "type": "process",
+    "n": 5,
+    "L": 5,
+    "K": 5,
+    "F": 5,
+    "E": 5,
+    "C": 5,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-fruehzeichen",
+    "type": "continuum",
+    "n": 0,
+    "L": 7,
+    "K": 7,
+    "F": null,
+    "E": null,
+    "C": 7,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__behandlung-und-verlauf__x1__m10__s110": {
+  "seiten": 12,
+  "leer": [],
+  "leere_rahmen": [
+   {
+    "seite": 2,
+    "oben": 71.3,
+    "unten": 96.6,
+    "hoehe": 25.3,
+    "leer": true,
+    "lage": "Seitenende"
+   },
+   {
+    "seite": 3,
+    "oben": 82.8,
+    "unten": 84.3,
+    "hoehe": 1.5,
+    "leer": true,
+    "lage": "Mitte"
+   },
+   {
+    "seite": 7,
+    "oben": 55.5,
+    "unten": 96.6,
+    "hoehe": 41.1,
+    "leer": true,
+    "lage": "Seitenende"
+   }
+  ],
+  "md5": [
+   "99bea80593f8",
+   "2937521eb768",
+   "d229f8d6da77",
+   "dd41c7f87312",
+   "1c07f5e53dc1",
+   "6b4350dcf108",
+   "f99f40ed1759",
+   "6c2ffdbf19de",
+   "833dd59572ff",
+   "cb92db236d9b",
+   "68682f91df68",
+   "d732e4fd8fbe"
+  ],
+  "tinte_bis": [
+   92.5,
+   68.3,
+   88.9,
+   53.6,
+   89.2,
+   91.6,
+   52.9,
+   94.5,
+   35.3,
+   95.7,
+   94.9,
+   36.2
+  ],
+  "figuren": [
+   {
+    "id": "v-bv-vergleich",
+    "type": "comparison",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 3,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-weg",
+    "type": "process",
+    "n": 5,
+    "L": 5,
+    "K": 5,
+    "F": 5,
+    "E": 5,
+    "C": 5,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-fruehzeichen",
+    "type": "continuum",
+    "n": 0,
+    "L": 8,
+    "K": 8,
+    "F": null,
+    "E": null,
+    "C": 8,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__behandlung-und-verlauf__x1__m10__s80": {
+  "seiten": 8,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "955f431b7108",
+   "bc7433a247a7",
+   "0e8fa4b8ced9",
+   "5c8e01f202dc",
+   "538384ed985f",
+   "631d4c00411f",
+   "598ca0cd0e62",
+   "4cc891dc9a2b"
+  ],
+  "tinte_bis": [
+   96.1,
+   76.5,
+   88.6,
+   85.8,
+   93.5,
+   93.0,
+   93.7,
+   9.9
+  ],
+  "figuren": [
+   {
+    "id": "v-bv-vergleich",
+    "type": "comparison",
+    "n": 0,
+    "L": 2,
+    "K": 2,
+    "F": null,
+    "E": null,
+    "C": 2,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-weg",
+    "type": "process",
+    "n": 5,
+    "L": 3,
+    "K": 3,
+    "F": 3,
+    "E": 3,
+    "C": 3,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-fruehzeichen",
+    "type": "continuum",
+    "n": 0,
+    "L": 5,
+    "K": 5,
+    "F": null,
+    "E": null,
+    "C": 5,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__behandlung-und-verlauf__x1__m10__s90": {
+  "seiten": 10,
+  "leer": [],
+  "leere_rahmen": [
+   {
+    "seite": 2,
+    "oben": 44.9,
+    "unten": 96.6,
+    "hoehe": 51.7,
+    "leer": true,
+    "lage": "Seitenende"
+   }
+  ],
+  "md5": [
+   "4f996486316c",
+   "80ef6ddf2b45",
+   "f460e55472af",
+   "b898766cbe86",
+   "5069391af58e",
+   "b07020cb1d42",
+   "f6bb52387427",
+   "0d1a0c929634",
+   "871b69d2eb9d",
+   "82766024573d"
+  ],
+  "tinte_bis": [
+   94.0,
+   42.3,
+   81.2,
+   93.2,
+   87.4,
+   95.9,
+   45.9,
+   95.4,
+   93.0,
+   22.2
+  ],
+  "figuren": [
+   {
+    "id": "v-bv-vergleich",
+    "type": "comparison",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 3,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-weg",
+    "type": "process",
+    "n": 5,
+    "L": 4,
+    "K": 4,
+    "F": 4,
+    "E": 4,
+    "C": 4,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-fruehzeichen",
+    "type": "continuum",
+    "n": 0,
+    "L": 6,
+    "K": 6,
+    "F": null,
+    "E": null,
+    "C": 6,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__behandlung-und-verlauf__x1__m15__s100": {
+  "seiten": 11,
+  "leer": [],
+  "leere_rahmen": [
+   {
+    "seite": 2,
+    "oben": 59.2,
+    "unten": 94.9,
+    "hoehe": 35.7,
+    "leer": true,
+    "lage": "Seitenende"
+   }
+  ],
+  "md5": [
+   "97b0f2239f8b",
+   "41147ffaee88",
+   "1fb122274dc7",
+   "4d12297ce05f",
+   "a647f231ea5b",
+   "9b290278be91",
+   "cfd717a3a3f1",
+   "18d554f5c348",
+   "3a5a0ee2f029",
+   "77c08472a2c4",
+   "d608fa6e831c"
+  ],
+  "tinte_bis": [
+   94.5,
+   56.8,
+   77.8,
+   50.9,
+   81.6,
+   93.9,
+   39.6,
+   93.7,
+   93.0,
+   93.2,
+   51.4
+  ],
+  "figuren": [
+   {
+    "id": "v-bv-vergleich",
+    "type": "comparison",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 3,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-weg",
+    "type": "process",
+    "n": 5,
+    "L": 5,
+    "K": 5,
+    "F": 5,
+    "E": 5,
+    "C": 5,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-fruehzeichen",
+    "type": "continuum",
+    "n": 0,
+    "L": 8,
+    "K": 8,
+    "F": null,
+    "E": null,
+    "C": 8,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__behandlung-und-verlauf__x1__m15__s110": {
+  "seiten": 12,
+  "leer": [],
+  "leere_rahmen": [
+   {
+    "seite": 2,
+    "oben": 81.6,
+    "unten": 94.9,
+    "hoehe": 13.3,
+    "leer": true,
+    "lage": "Seitenende"
+   },
+   {
+    "seite": 7,
+    "oben": 59.0,
+    "unten": 94.9,
+    "hoehe": 35.8,
+    "leer": true,
+    "lage": "Seitenende"
+   }
+  ],
+  "md5": [
+   "2212ca68703d",
+   "1a985f6b8be5",
+   "b9fff28717f1",
+   "c675c14ca2cd",
+   "a69ce356e852",
+   "012208c8b01a",
+   "0ac865ef183e",
+   "6a5202395983",
+   "9c38dab5665b",
+   "6d61df9327b7",
+   "046e77688b90",
+   "1169e5bfa4cc"
+  ],
+  "tinte_bis": [
+   87.5,
+   78.7,
+   92.5,
+   56.7,
+   92.7,
+   92.7,
+   56.5,
+   91.1,
+   93.7,
+   90.4,
+   92.3,
+   8.7
+  ],
+  "figuren": [
+   {
+    "id": "v-bv-vergleich",
+    "type": "comparison",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 3,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-weg",
+    "type": "process",
+    "n": 5,
+    "L": 5,
+    "K": 5,
+    "F": 5,
+    "E": 5,
+    "C": 5,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-fruehzeichen",
+    "type": "continuum",
+    "n": 0,
+    "L": 8,
+    "K": 8,
+    "F": null,
+    "E": null,
+    "C": 8,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__behandlung-und-verlauf__x1__m15__s80": {
+  "seiten": 8,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "7fa3fc728ddb",
+   "ebfa9c0919d0",
+   "3b9f95847ca0",
+   "6d30005eaebb",
+   "2a0d4541b7e3",
+   "7c04b71b2477",
+   "c0648e519341",
+   "13f5e11ef649"
+  ],
+  "tinte_bis": [
+   94.4,
+   84.1,
+   91.0,
+   87.0,
+   92.0,
+   91.0,
+   91.8,
+   30.9
+  ],
+  "figuren": [
+   {
+    "id": "v-bv-vergleich",
+    "type": "comparison",
+    "n": 0,
+    "L": 2,
+    "K": 2,
+    "F": null,
+    "E": null,
+    "C": 2,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-weg",
+    "type": "process",
+    "n": 5,
+    "L": 3,
+    "K": 3,
+    "F": 3,
+    "E": 3,
+    "C": 3,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-fruehzeichen",
+    "type": "continuum",
+    "n": 0,
+    "L": 5,
+    "K": 5,
+    "F": null,
+    "E": null,
+    "C": 5,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__behandlung-und-verlauf__x1__m15__s90": {
+  "seiten": 10,
+  "leer": [],
+  "leere_rahmen": [
+   {
+    "seite": 2,
+    "oben": 47.1,
+    "unten": 95.1,
+    "hoehe": 48.0,
+    "leer": true,
+    "lage": "Seitenende"
+   },
+   {
+    "seite": 6,
+    "oben": 66.2,
+    "unten": 95.1,
+    "hoehe": 28.8,
+    "leer": true,
+    "lage": "Seitenende"
+   }
+  ],
+  "md5": [
+   "bc3d8892931c",
+   "9e4afc566a1e",
+   "3e27d08d514c",
+   "72eeb026a022",
+   "eb41e7e2f297",
+   "9c91aae56caf",
+   "34c89d7723d7",
+   "54a6ffc0c1dd",
+   "2bf53379085e",
+   "bc414ab80010"
+  ],
+  "tinte_bis": [
+   92.2,
+   44.9,
+   86.2,
+   88.4,
+   53.6,
+   63.7,
+   91.3,
+   89.8,
+   92.7,
+   20.5
+  ],
+  "figuren": [
+   {
+    "id": "v-bv-vergleich",
+    "type": "comparison",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 3,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-weg",
+    "type": "process",
+    "n": 5,
+    "L": 4,
+    "K": 4,
+    "F": 4,
+    "E": 4,
+    "C": 4,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-bv-fruehzeichen",
+    "type": "continuum",
+    "n": 0,
+    "L": 7,
+    "K": 7,
+    "F": null,
+    "E": null,
+    "C": 7,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__depression-verstehen__x1__m0__s100": {
+  "seiten": 10,
+  "leer": [],
+  "leere_rahmen": [
+   {
+    "seite": 2,
+    "oben": 93.2,
+    "unten": 99.8,
+    "hoehe": 6.7,
+    "leer": true,
+    "lage": "Seitenende"
+   },
+   {
+    "seite": 4,
+    "oben": 85.0,
+    "unten": 99.8,
+    "hoehe": 14.8,
+    "leer": true,
+    "lage": "Seitenende"
+   }
+  ],
+  "md5": [
+   "6f237028b711",
+   "a36b1c8a874c",
+   "f6a6915c4fda",
+   "332b58d20992",
+   "042649797ee8",
+   "ea2a346a330c",
+   "a27f3ff754aa",
+   "395cacbaeaba",
+   "8adfc5c52a8f",
+   "4ec1bb41fe93"
+  ],
+  "tinte_bis": [
+   98.0,
+   90.4,
+   99.0,
+   82.6,
+   98.5,
+   96.1,
+   97.6,
+   99.5,
+   65.0,
+   27.1
+  ],
+  "figuren": [
+   {
+    "id": "v-dv-schichten",
+    "type": "layer-model",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 5,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-dv-entstehung",
+    "type": "stepwise-model",
+    "n": 3,
+    "L": 5,
+    "K": 5,
+    "F": 5,
+    "E": 5,
+    "C": 5,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__depression-verstehen__x1__m0__s110": {
+  "seiten": 10,
+  "leer": [],
+  "leere_rahmen": [
+   {
+    "seite": 2,
+    "oben": 91.0,
+    "unten": 100.0,
+    "hoehe": 9.0,
+    "leer": true,
+    "lage": "Seitenende"
+   },
+   {
+    "seite": 3,
+    "oben": 64.3,
+    "unten": 65.9,
+    "hoehe": 1.5,
+    "leer": true,
+    "lage": "Mitte"
+   }
+  ],
+  "md5": [
+   "751302d8639f",
+   "201053810d5f",
+   "dfc7398de9f1",
+   "874d4d893eb2",
+   "4786cc424524",
+   "88b4aa630c94",
+   "c9ef23b07a55",
+   "f639e48501b9",
+   "8272386867a4",
+   "296368a3da7b"
+  ],
+  "tinte_bis": [
+   94.4,
+   88.1,
+   85.5,
+   93.9,
+   71.8,
+   98.5,
+   93.2,
+   97.4,
+   96.1,
+   2.9
+  ],
+  "figuren": [
+   {
+    "id": "v-dv-schichten",
+    "type": "layer-model",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 5,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-dv-entstehung",
+    "type": "stepwise-model",
+    "n": 3,
+    "L": 5,
+    "K": 5,
+    "F": 5,
+    "E": 5,
+    "C": 5,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__depression-verstehen__x1__m0__s80": {
+  "seiten": 7,
+  "leer": [],
+  "leere_rahmen": [
+   {
+    "seite": 3,
+    "oben": 93.5,
+    "unten": 99.8,
+    "hoehe": 6.3,
+    "leer": true,
+    "lage": "Seitenende"
+   }
+  ],
+  "md5": [
+   "3bcca7d4825b",
+   "bf97df212c4f",
+   "e0adff926b9e",
+   "cdce75f45d81",
+   "0268261d81bd",
+   "8ac6f7537dd6",
+   "276dfdc1d81c"
+  ],
+  "tinte_bis": [
+   99.3,
+   84.6,
+   91.5,
+   98.6,
+   93.5,
+   97.8,
+   53.9
+  ],
+  "figuren": [
+   {
+    "id": "v-dv-schichten",
+    "type": "layer-model",
+    "n": 0,
+    "L": 2,
+    "K": 2,
+    "F": null,
+    "E": null,
+    "C": 4,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-dv-entstehung",
+    "type": "stepwise-model",
+    "n": 3,
+    "L": 4,
+    "K": 4,
+    "F": 4,
+    "E": 4,
+    "C": 4,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__depression-verstehen__x1__m0__s90": {
+  "seiten": 8,
+  "leer": [],
+  "leere_rahmen": [
+   {
+    "seite": 2,
+    "oben": 66.4,
+    "unten": 99.8,
+    "hoehe": 33.4,
+    "leer": true,
+    "lage": "Seitenende"
+   }
+  ],
+  "md5": [
+   "7d0515c111b7",
+   "8891786f3d41",
+   "0280003e504f",
+   "ef42110a5b52",
+   "97e736cc2805",
+   "e6ab4ddfc031",
+   "1d2903cc4449",
+   "bac5b4728c8f"
+  ],
+  "tinte_bis": [
+   98.8,
+   63.8,
+   98.0,
+   94.5,
+   97.3,
+   96.2,
+   96.2,
+   86.7
+  ],
+  "figuren": [
+   {
+    "id": "v-dv-schichten",
+    "type": "layer-model",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 5,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-dv-entstehung",
+    "type": "stepwise-model",
+    "n": 3,
+    "L": 4,
+    "K": 4,
+    "F": 4,
+    "E": 5,
+    "C": 5,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__depression-verstehen__x1__m10__s100": {
+  "seiten": 9,
+  "leer": [],
+  "leere_rahmen": [
+   {
+    "seite": 2,
+    "oben": 79.9,
+    "unten": 96.6,
+    "hoehe": 16.7,
+    "leer": true,
+    "lage": "Seitenende"
+   },
+   {
+    "seite": 4,
+    "oben": 94.4,
+    "unten": 96.6,
+    "hoehe": 2.2,
+    "leer": true,
+    "lage": "Seitenende"
+   }
+  ],
+  "md5": [
+   "c17d12c12d9b",
+   "950099931416",
+   "4ee6852299d8",
+   "d37e0dc3f15f",
+   "c73910e0b43e",
+   "3405ab11ba81",
+   "50d289053448",
+   "6db4c4abfd1e",
+   "444e2bf0570f"
+  ],
+  "tinte_bis": [
+   93.7,
+   77.3,
+   95.1,
+   91.8,
+   93.9,
+   94.2,
+   94.5,
+   92.5,
+   49.1
+  ],
+  "figuren": [
+   {
+    "id": "v-dv-schichten",
+    "type": "layer-model",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 5,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-dv-entstehung",
+    "type": "stepwise-model",
+    "n": 3,
+    "L": 5,
+    "K": 5,
+    "F": 5,
+    "E": 5,
+    "C": 5,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__depression-verstehen__x1__m10__s110": {
+  "seiten": 10,
+  "leer": [],
+  "leere_rahmen": [
+   {
+    "seite": 3,
+    "oben": 69.3,
+    "unten": 70.8,
+    "hoehe": 1.5,
+    "leer": true,
+    "lage": "Mitte"
+   }
+  ],
+  "md5": [
+   "03855b491782",
+   "67f4f59cc1a6",
+   "d30a5fa3efa6",
+   "c44a76d8a371",
+   "1190ba38b420",
+   "dfe12d1e66f8",
+   "07f3e3d1215a",
+   "619abe335639",
+   "ad7df5292822",
+   "98cb3526c502"
+  ],
+  "tinte_bis": [
+   94.2,
+   93.2,
+   75.3,
+   95.2,
+   86.9,
+   94.5,
+   93.3,
+   95.9,
+   93.9,
+   57.2
+  ],
+  "figuren": [
+   {
+    "id": "v-dv-schichten",
+    "type": "layer-model",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 6,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-dv-entstehung",
+    "type": "stepwise-model",
+    "n": 3,
+    "L": 5,
+    "K": 5,
+    "F": 5,
+    "E": 6,
+    "C": 6,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__depression-verstehen__x1__m10__s80": {
+  "seiten": 8,
+  "leer": [],
+  "leere_rahmen": [
+   {
+    "seite": 2,
+    "oben": 59.2,
+    "unten": 96.6,
+    "hoehe": 37.4,
+    "leer": true,
+    "lage": "Seitenende"
+   }
+  ],
+  "md5": [
+   "b44c623357c1",
+   "6143995ef3cd",
+   "e8039df9bfbb",
+   "4554e6136b29",
+   "af3821ddb981",
+   "f7ec12d2b876",
+   "b5c03d3891c9",
+   "a63532fc1f2b"
+  ],
+  "tinte_bis": [
+   91.5,
+   57.0,
+   93.3,
+   93.0,
+   94.9,
+   95.4,
+   94.5,
+   45.7
+  ],
+  "figuren": [
+   {
+    "id": "v-dv-schichten",
+    "type": "layer-model",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 4,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-dv-entstehung",
+    "type": "stepwise-model",
+    "n": 3,
+    "L": 4,
+    "K": 4,
+    "F": 4,
+    "E": 4,
+    "C": 4,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__depression-verstehen__x1__m10__s90": {
+  "seiten": 9,
+  "leer": [],
+  "leere_rahmen": [
+   {
+    "seite": 2,
+    "oben": 82.9,
+    "unten": 96.6,
+    "hoehe": 13.7,
+    "leer": true,
+    "lage": "Seitenende"
+   },
+   {
+    "seite": 4,
+    "oben": 77.8,
+    "unten": 96.6,
+    "hoehe": 18.8,
+    "leer": true,
+    "lage": "Seitenende"
+   }
+  ],
+  "md5": [
+   "220b2796b141",
+   "47ae9d91ec10",
+   "7961303bbb7a",
+   "981504460fa0",
+   "6ea177619da3",
+   "f9c2a2f4918c",
+   "31d99faf5ab1",
+   "b4933fd09f88",
+   "ee098b8abc12"
+  ],
+  "tinte_bis": [
+   96.1,
+   80.5,
+   95.1,
+   75.6,
+   95.6,
+   89.8,
+   95.9,
+   96.2,
+   75.8
+  ],
+  "figuren": [
+   {
+    "id": "v-dv-schichten",
+    "type": "layer-model",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 5,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-dv-entstehung",
+    "type": "stepwise-model",
+    "n": 3,
+    "L": 5,
+    "K": 5,
+    "F": 5,
+    "E": 5,
+    "C": 5,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__depression-verstehen__x1__m15__s100": {
+  "seiten": 10,
+  "leer": [],
+  "leere_rahmen": [
+   {
+    "seite": 2,
+    "oben": 87.2,
+    "unten": 94.9,
+    "hoehe": 7.7,
+    "leer": true,
+    "lage": "Seitenende"
+   }
+  ],
+  "md5": [
+   "4d514a4a7962",
+   "eb0a83c013c3",
+   "9e2a6180e582",
+   "e6c9d39fff9b",
+   "58293ed21e08",
+   "0da1b13f07cb",
+   "b15515eb78b6",
+   "8a2481454a6b",
+   "f63de2f318e0",
+   "6b990e71c2f6"
+  ],
+  "tinte_bis": [
+   91.8,
+   84.6,
+   82.6,
+   89.6,
+   70.3,
+   90.1,
+   92.8,
+   93.5,
+   94.5,
+   7.7
+  ],
+  "figuren": [
+   {
+    "id": "v-dv-schichten",
+    "type": "layer-model",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 5,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-dv-entstehung",
+    "type": "stepwise-model",
+    "n": 3,
+    "L": 5,
+    "K": 5,
+    "F": 5,
+    "E": 5,
+    "C": 5,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__depression-verstehen__x1__m15__s110": {
+  "seiten": 10,
+  "leer": [],
+  "leere_rahmen": [
+   {
+    "seite": 3,
+    "oben": 82.4,
+    "unten": 84.0,
+    "hoehe": 1.5,
+    "leer": true,
+    "lage": "Mitte"
+   }
+  ],
+  "md5": [
+   "52bef34ef207",
+   "628aae9f2be8",
+   "4c5c3cffe79d",
+   "d276ad58124d",
+   "4cbaf9a31f36",
+   "a531305b5123",
+   "09c3e80aff33",
+   "796f8b554408",
+   "1a5fd766d74d",
+   "9273f03e0511"
+  ],
+  "tinte_bis": [
+   92.7,
+   88.2,
+   88.6,
+   94.0,
+   93.5,
+   90.1,
+   86.0,
+   93.5,
+   87.9,
+   88.2
+  ],
+  "figuren": [
+   {
+    "id": "v-dv-schichten",
+    "type": "layer-model",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 6,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-dv-entstehung",
+    "type": "stepwise-model",
+    "n": 3,
+    "L": 5,
+    "K": 5,
+    "F": 5,
+    "E": 6,
+    "C": 6,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__depression-verstehen__x1__m15__s80": {
+  "seiten": 8,
+  "leer": [],
+  "leere_rahmen": [
+   {
+    "seite": 2,
+    "oben": 63.7,
+    "unten": 94.9,
+    "hoehe": 31.2,
+    "leer": true,
+    "lage": "Seitenende"
+   }
+  ],
+  "md5": [
+   "442c8dc44ca3",
+   "9f7f41f9a2e6",
+   "f1524d61c711",
+   "d9c755b146db",
+   "aceb2b00985b",
+   "5a74a4e29bb7",
+   "afb6268a93c7",
+   "87b9b3dd5cff"
+  ],
+  "tinte_bis": [
+   94.0,
+   61.8,
+   93.5,
+   92.5,
+   93.5,
+   91.5,
+   92.0,
+   84.3
+  ],
+  "figuren": [
+   {
+    "id": "v-dv-schichten",
+    "type": "layer-model",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 5,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-dv-entstehung",
+    "type": "stepwise-model",
+    "n": 3,
+    "L": 4,
+    "K": 4,
+    "F": 4,
+    "E": 5,
+    "C": 5,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__depression-verstehen__x1__m15__s90": {
+  "seiten": 9,
+  "leer": [],
+  "leere_rahmen": [
+   {
+    "seite": 2,
+    "oben": 72.5,
+    "unten": 95.1,
+    "hoehe": 22.5,
+    "leer": true,
+    "lage": "Seitenende"
+   },
+   {
+    "seite": 4,
+    "oben": 80.7,
+    "unten": 95.1,
+    "hoehe": 14.3,
+    "leer": true,
+    "lage": "Seitenende"
+   }
+  ],
+  "md5": [
+   "12cfdccc99ad",
+   "fefe16a5e546",
+   "2879c46654bb",
+   "d95df4fa17ff",
+   "af8aa1bc1b74",
+   "e4ef3d6e0fa8",
+   "be9cbb452fc9",
+   "09d7e0858abc",
+   "1c64e768a6e7"
+  ],
+  "tinte_bis": [
+   90.8,
+   70.0,
+   88.7,
+   78.5,
+   93.5,
+   94.4,
+   93.0,
+   94.2,
+   16.0
+  ],
+  "figuren": [
+   {
+    "id": "v-dv-schichten",
+    "type": "layer-model",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 5,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-dv-entstehung",
+    "type": "stepwise-model",
+    "n": 3,
+    "L": 5,
+    "K": 5,
+    "F": 5,
+    "E": 5,
+    "C": 5,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__fuer-sich-sorgen__x1__m0__s100": {
+  "seiten": 7,
+  "leer": [],
+  "leere_rahmen": [
+   {
+    "seite": 2,
+    "oben": 64.8,
+    "unten": 99.8,
+    "hoehe": 35.0,
+    "leer": true,
+    "lage": "Seitenende"
+   }
+  ],
+  "md5": [
+   "f98844cc72cb",
+   "4197aaa115be",
+   "1c525f10b0e3",
+   "6aa9b5d29015",
+   "472345b6f424",
+   "13741a8c2041",
+   "fee464978daa"
+  ],
+  "tinte_bis": [
+   99.5,
+   62.3,
+   98.0,
+   95.7,
+   98.0,
+   95.9,
+   42.8
+  ],
+  "figuren": [
+   {
+    "id": "v-fs-netz",
+    "type": "relationship-map",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 3,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__fuer-sich-sorgen__x1__m0__s110": {
+  "seiten": 7,
+  "leer": [],
+  "leere_rahmen": [
+   {
+    "seite": 2,
+    "oben": 89.2,
+    "unten": 100.0,
+    "hoehe": 10.8,
+    "leer": true,
+    "lage": "Seitenende"
+   }
+  ],
+  "md5": [
+   "baccf2c3b0b0",
+   "d2ccccfe3660",
+   "c9d26eab4f26",
+   "cabcb89cc4ab",
+   "c1a264d917c2",
+   "6f578e68d41f",
+   "68daa158359a"
+  ],
+  "tinte_bis": [
+   90.4,
+   86.5,
+   87.9,
+   95.6,
+   91.8,
+   95.2,
+   21.2
+  ],
+  "figuren": [
+   {
+    "id": "v-fs-netz",
+    "type": "relationship-map",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 3,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__fuer-sich-sorgen__x1__m0__s80": {
+  "seiten": 5,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "e032424c975c",
+   "87c838ad0ecc",
+   "136dbc9d8cef",
+   "dbe04f9db6ef",
+   "0091dcbfcbfa"
+  ],
+  "tinte_bis": [
+   99.5,
+   87.0,
+   99.8,
+   97.1,
+   40.4
+  ],
+  "figuren": [
+   {
+    "id": "v-fs-netz",
+    "type": "relationship-map",
+    "n": 0,
+    "L": 2,
+    "K": 2,
+    "F": null,
+    "E": null,
+    "C": 2,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__fuer-sich-sorgen__x1__m0__s90": {
+  "seiten": 6,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "8e27c73db522",
+   "85271ad4f65c",
+   "1ff9cacda01b",
+   "1aa2d568924b",
+   "8ae3d191bc40",
+   "d316f32aca8f"
+  ],
+  "tinte_bis": [
+   99.8,
+   42.0,
+   97.1,
+   99.0,
+   92.8,
+   70.1
+  ],
+  "figuren": [
+   {
+    "id": "v-fs-netz",
+    "type": "relationship-map",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 3,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__fuer-sich-sorgen__x1__m10__s100": {
+  "seiten": 7,
+  "leer": [],
+  "leere_rahmen": [
+   {
+    "seite": 2,
+    "oben": 78.3,
+    "unten": 96.6,
+    "hoehe": 18.3,
+    "leer": true,
+    "lage": "Seitenende"
+   }
+  ],
+  "md5": [
+   "651e08fde770",
+   "cad3306af812",
+   "3661c9c7f4ce",
+   "1573f2f4e096",
+   "2d2a6e3134bb",
+   "6e188b86d97d",
+   "2a29ef9fd8cb"
+  ],
+  "tinte_bis": [
+   96.1,
+   75.8,
+   83.1,
+   94.2,
+   95.4,
+   94.0,
+   6.0
+  ],
+  "figuren": [
+   {
+    "id": "v-fs-netz",
+    "type": "relationship-map",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 3,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__fuer-sich-sorgen__x1__m10__s110": {
+  "seiten": 9,
+  "leer": [
+   5
+  ],
+  "leere_rahmen": [
+   {
+    "seite": 3,
+    "oben": 34.3,
+    "unten": 96.6,
+    "hoehe": 62.3,
+    "leer": true,
+    "lage": "Seitenende"
+   }
+  ],
+  "md5": [
+   "819ba65a644d",
+   "784d50ac3027",
+   "ffeeba94beba",
+   "99c5353438c1",
+   "d2106250062f",
+   "9e1748b75883",
+   "d35c7a32cca8",
+   "9613d9e75795",
+   "3f06eaf4ecac"
+  ],
+  "tinte_bis": [
+   59.0,
+   96.6,
+   31.6,
+   91.1,
+   0,
+   88.9,
+   85.8,
+   95.6,
+   45.1
+  ],
+  "figuren": [
+   {
+    "id": "v-fs-netz",
+    "type": "relationship-map",
+    "n": 0,
+    "L": 4,
+    "K": 4,
+    "F": null,
+    "E": null,
+    "C": 4,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__fuer-sich-sorgen__x1__m10__s80": {
+  "seiten": 5,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "2a6a02093eab",
+   "c2c252cbcd04",
+   "679c1bda57c5",
+   "13239d89aac3",
+   "9d1f0229fdd7"
+  ],
+  "tinte_bis": [
+   92.8,
+   90.6,
+   89.2,
+   94.4,
+   86.3
+  ],
+  "figuren": [
+   {
+    "id": "v-fs-netz",
+    "type": "relationship-map",
+    "n": 0,
+    "L": 2,
+    "K": 2,
+    "F": null,
+    "E": null,
+    "C": 2,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__fuer-sich-sorgen__x1__m10__s90": {
+  "seiten": 7,
+  "leer": [],
+  "leere_rahmen": [
+   {
+    "seite": 2,
+    "oben": 56.5,
+    "unten": 96.6,
+    "hoehe": 40.1,
+    "leer": true,
+    "lage": "Seitenende"
+   }
+  ],
+  "md5": [
+   "3d7fb6ac56ce",
+   "30f459c89bf9",
+   "887066b62866",
+   "30b9057a80ac",
+   "2d8dba62306e",
+   "0301bc08472f",
+   "1e88b945cf16"
+  ],
+  "tinte_bis": [
+   96.2,
+   54.1,
+   95.7,
+   93.2,
+   95.7,
+   88.7,
+   27.6
+  ],
+  "figuren": [
+   {
+    "id": "v-fs-netz",
+    "type": "relationship-map",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 3,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__fuer-sich-sorgen__x1__m15__s100": {
+  "seiten": 7,
+  "leer": [],
+  "leere_rahmen": [
+   {
+    "seite": 2,
+    "oben": 85.3,
+    "unten": 94.9,
+    "hoehe": 9.6,
+    "leer": true,
+    "lage": "Seitenende"
+   }
+  ],
+  "md5": [
+   "3fcc88318f4e",
+   "7062ebfcf598",
+   "e3872484c1b2",
+   "726974c75f7c",
+   "2c0a0e340f3b",
+   "d76071781986",
+   "757cd9de947b"
+  ],
+  "tinte_bis": [
+   86.0,
+   82.8,
+   84.8,
+   91.5,
+   87.5,
+   93.7,
+   24.2
+  ],
+  "figuren": [
+   {
+    "id": "v-fs-netz",
+    "type": "relationship-map",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 3,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__fuer-sich-sorgen__x1__m15__s110": {
+  "seiten": 8,
+  "leer": [],
+  "leere_rahmen": [
+   {
+    "seite": 3,
+    "oben": 42.0,
+    "unten": 94.9,
+    "hoehe": 52.9,
+    "leer": true,
+    "lage": "Seitenende"
+   }
+  ],
+  "md5": [
+   "d2935158e8d0",
+   "d0c32c326baa",
+   "4814bf0a8ee2",
+   "ee884da2986b",
+   "34191afdfa95",
+   "d2afb471f5fe",
+   "6e791f7ab741",
+   "4b4acfd20994"
+  ],
+  "tinte_bis": [
+   60.6,
+   88.4,
+   39.1,
+   81.1,
+   92.3,
+   88.2,
+   92.7,
+   84.8
+  ],
+  "figuren": [
+   {
+    "id": "v-fs-netz",
+    "type": "relationship-map",
+    "n": 0,
+    "L": 4,
+    "K": 4,
+    "F": null,
+    "E": null,
+    "C": 4,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__fuer-sich-sorgen__x1__m15__s80": {
+  "seiten": 6,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "07cb46d20eed",
+   "f6e1f7f669eb",
+   "1148182b6361",
+   "91042943ab57",
+   "747342ab2f94",
+   "7d046536f092"
+  ],
+  "tinte_bis": [
+   94.9,
+   40.8,
+   92.3,
+   94.5,
+   91.1,
+   67.1
+  ],
+  "figuren": [
+   {
+    "id": "v-fs-netz",
+    "type": "relationship-map",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 3,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__fuer-sich-sorgen__x1__m15__s90": {
+  "seiten": 6,
+  "leer": [],
+  "leere_rahmen": [
+   {
+    "seite": 2,
+    "oben": 68.6,
+    "unten": 95.1,
+    "hoehe": 26.5,
+    "leer": true,
+    "lage": "Seitenende"
+   }
+  ],
+  "md5": [
+   "96f8cd9472ef",
+   "fc082f290f41",
+   "b6fd011bf9f1",
+   "f46717f33b7c",
+   "f5f2165a9aff",
+   "1d3c2e0f12cf"
+  ],
+  "tinte_bis": [
+   93.3,
+   66.0,
+   94.0,
+   92.7,
+   94.7,
+   68.4
+  ],
+  "figuren": [
+   {
+    "id": "v-fs-netz",
+    "type": "relationship-map",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 3,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__ihre-situation__x1__m0__s100": {
+  "seiten": 9,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "ab47822a0329",
+   "f59ac76ea71f",
+   "7166bbac0917",
+   "029e76e673bd",
+   "dadd7c976d76",
+   "ea9e87124f5d",
+   "48d7dd504326",
+   "0aa618304afa",
+   "2d08766ca4e4"
+  ],
+  "tinte_bis": [
+   89.4,
+   71.5,
+   85.0,
+   51.9,
+   79.9,
+   96.8,
+   97.4,
+   97.8,
+   6.0
+  ],
+  "figuren": [
+   {
+    "id": "v-is-gefaess",
+    "type": "stepwise-model",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 6,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-is-kreislauf",
+    "type": "cycle",
+    "n": 0,
+    "L": 5,
+    "K": 5,
+    "F": null,
+    "E": null,
+    "C": 5,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__ihre-situation__x1__m0__s110": {
+  "seiten": 9,
+  "leer": [],
+  "leere_rahmen": [
+   {
+    "seite": 5,
+    "oben": 92.5,
+    "unten": 100.0,
+    "hoehe": 7.5,
+    "leer": true,
+    "lage": "Seitenende"
+   }
+  ],
+  "md5": [
+   "4bd78a0bd75e",
+   "7a3d1e0ed508",
+   "f42f97406259",
+   "7deb178a3c81",
+   "e34b43148de5",
+   "312180ebb84e",
+   "bd630ee1b64a",
+   "04e2760e026e",
+   "e5e7b0740259"
+  ],
+  "tinte_bis": [
+   57.3,
+   95.9,
+   17.1,
+   80.4,
+   90.1,
+   86.2,
+   95.1,
+   97.6,
+   80.4
+  ],
+  "figuren": [
+   {
+    "id": "v-is-gefaess",
+    "type": "stepwise-model",
+    "n": 0,
+    "L": 4,
+    "K": 4,
+    "F": null,
+    "E": null,
+    "C": 7,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-is-kreislauf",
+    "type": "cycle",
+    "n": 0,
+    "L": 6,
+    "K": 5,
+    "F": null,
+    "E": null,
+    "C": 6,
+    "ganz": false,
+    "kopf": false,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__ihre-situation__x1__m0__s80": {
+  "seiten": 6,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "05c999d6326c",
+   "af9e194a5ebb",
+   "528b0d0e2adc",
+   "813d64356a50",
+   "9232a265e587",
+   "beaebd3a4813"
+  ],
+  "tinte_bis": [
+   98.0,
+   91.8,
+   57.8,
+   99.5,
+   99.3,
+   73.9
+  ],
+  "figuren": [
+   {
+    "id": "v-is-gefaess",
+    "type": "stepwise-model",
+    "n": 0,
+    "L": 2,
+    "K": 2,
+    "F": null,
+    "E": null,
+    "C": 5,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-is-kreislauf",
+    "type": "cycle",
+    "n": 0,
+    "L": 4,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 4,
+    "ganz": false,
+    "kopf": false,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__ihre-situation__x1__m0__s90": {
+  "seiten": 8,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "ea0ec1cf7501",
+   "c53575ae7ffc",
+   "0d8cb13b43e9",
+   "1b9f8213871b",
+   "e9f6ee9069de",
+   "dc652c4797df",
+   "ac8f874eb1b5",
+   "cf5e383e32f2"
+  ],
+  "tinte_bis": [
+   97.3,
+   42.7,
+   98.0,
+   34.5,
+   84.3,
+   92.8,
+   96.2,
+   37.0
+  ],
+  "figuren": [
+   {
+    "id": "v-is-gefaess",
+    "type": "stepwise-model",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 6,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-is-kreislauf",
+    "type": "cycle",
+    "n": 0,
+    "L": 5,
+    "K": 4,
+    "F": null,
+    "E": null,
+    "C": 5,
+    "ganz": false,
+    "kopf": false,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__ihre-situation__x1__m10__s100": {
+  "seiten": 8,
+  "leer": [],
+  "leere_rahmen": [
+   {
+    "seite": 4,
+    "oben": 87.4,
+    "unten": 96.6,
+    "hoehe": 9.2,
+    "leer": true,
+    "lage": "Seitenende"
+   }
+  ],
+  "md5": [
+   "f240dd40cba3",
+   "82e985c45dae",
+   "d64284242250",
+   "af2e6be03f0a",
+   "8bd9bbc727da",
+   "390950bd7a48",
+   "60c8297bbd7f",
+   "ccc7189bb636"
+  ],
+  "tinte_bis": [
+   55.3,
+   94.4,
+   89.4,
+   85.2,
+   81.6,
+   93.9,
+   91.6,
+   70.5
+  ],
+  "figuren": [
+   {
+    "id": "v-is-gefaess",
+    "type": "stepwise-model",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 6,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-is-kreislauf",
+    "type": "cycle",
+    "n": 0,
+    "L": 5,
+    "K": 4,
+    "F": null,
+    "E": null,
+    "C": 5,
+    "ganz": false,
+    "kopf": false,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__ihre-situation__x1__m10__s110": {
+  "seiten": 9,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "a35b6b0b515c",
+   "a142ff2b3a0e",
+   "9815eb94d999",
+   "b86246705e04",
+   "9ac80bde9098",
+   "02800c8885f0",
+   "a6a2c02d5031",
+   "2be98c6b9a4c",
+   "aa88f2d97840"
+  ],
+  "tinte_bis": [
+   89.8,
+   93.9,
+   83.6,
+   93.9,
+   91.1,
+   85.8,
+   88.7,
+   94.2,
+   13.8
+  ],
+  "figuren": [
+   {
+    "id": "v-is-gefaess",
+    "type": "stepwise-model",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 7,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-is-kreislauf",
+    "type": "cycle",
+    "n": 0,
+    "L": 5,
+    "K": 4,
+    "F": null,
+    "E": null,
+    "C": 5,
+    "ganz": false,
+    "kopf": false,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__ihre-situation__x1__m10__s80": {
+  "seiten": 7,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "caa3499c13df",
+   "86212e9b90e9",
+   "3297680bafcf",
+   "a1b980cda9cc",
+   "c261ef36d138",
+   "0e768510e6dd",
+   "537871ea4b2d"
+  ],
+  "tinte_bis": [
+   95.6,
+   37.4,
+   94.0,
+   92.8,
+   95.9,
+   95.2,
+   36.3
+  ],
+  "figuren": [
+   {
+    "id": "v-is-gefaess",
+    "type": "stepwise-model",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 5,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-is-kreislauf",
+    "type": "cycle",
+    "n": 0,
+    "L": 4,
+    "K": 4,
+    "F": null,
+    "E": null,
+    "C": 4,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__ihre-situation__x1__m10__s90": {
+  "seiten": 8,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "6f21df2bfa61",
+   "ba97c7086d9d",
+   "79f1e321ad01",
+   "32eff445abfe",
+   "2ac67d1feadd",
+   "a9a87410c08e",
+   "779d554f48fa",
+   "b381e427d0f4"
+  ],
+  "tinte_bis": [
+   84.0,
+   67.9,
+   96.2,
+   41.3,
+   75.1,
+   90.4,
+   93.7,
+   91.0
+  ],
+  "figuren": [
+   {
+    "id": "v-is-gefaess",
+    "type": "stepwise-model",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 6,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-is-kreislauf",
+    "type": "cycle",
+    "n": 0,
+    "L": 5,
+    "K": 5,
+    "F": null,
+    "E": null,
+    "C": 5,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__ihre-situation__x1__m15__s100": {
+  "seiten": 9,
+  "leer": [],
+  "leere_rahmen": [
+   {
+    "seite": 5,
+    "oben": 88.1,
+    "unten": 94.9,
+    "hoehe": 6.8,
+    "leer": true,
+    "lage": "Seitenende"
+   }
+  ],
+  "md5": [
+   "0c9a4284fcf6",
+   "6b6bc27b6c9e",
+   "f8b2bc569d72",
+   "b1c303388ac9",
+   "cf24c8e3f1cf",
+   "fe6af30d08d9",
+   "284d35dca2fe",
+   "afe88863808e",
+   "7666146d6810"
+  ],
+  "tinte_bis": [
+   56.3,
+   93.3,
+   20.1,
+   78.0,
+   85.8,
+   83.3,
+   90.6,
+   93.7,
+   78.0
+  ],
+  "figuren": [
+   {
+    "id": "v-is-gefaess",
+    "type": "stepwise-model",
+    "n": 0,
+    "L": 4,
+    "K": 4,
+    "F": null,
+    "E": null,
+    "C": 7,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-is-kreislauf",
+    "type": "cycle",
+    "n": 0,
+    "L": 6,
+    "K": 5,
+    "F": null,
+    "E": null,
+    "C": 6,
+    "ganz": false,
+    "kopf": false,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__ihre-situation__x1__m15__s110": {
+  "seiten": 10,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "8aa3a0e43abd",
+   "2c79787b725c",
+   "80f257e74c55",
+   "8c67221b25b7",
+   "27ca98378dcd",
+   "c95fa4ea22f9",
+   "b19e62c4b026",
+   "dd706d194e7f",
+   "95c5e4637346",
+   "5005ccc79a92"
+  ],
+  "tinte_bis": [
+   93.2,
+   90.6,
+   91.0,
+   92.0,
+   9.4,
+   92.8,
+   89.4,
+   90.4,
+   93.9,
+   20.8
+  ],
+  "figuren": [
+   {
+    "id": "v-is-gefaess",
+    "type": "stepwise-model",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 8,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-is-kreislauf",
+    "type": "cycle",
+    "n": 0,
+    "L": 6,
+    "K": 4,
+    "F": null,
+    "E": null,
+    "C": 6,
+    "ganz": false,
+    "kopf": false,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__ihre-situation__x1__m15__s80": {
+  "seiten": 8,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "c8fcdbe02690",
+   "35492681fff1",
+   "2966a1ba1ac4",
+   "ae7c5d1aa891",
+   "b60f0c1151dd",
+   "2d98a0c3c552",
+   "8c43095cc20d",
+   "1c8d8b78af99"
+  ],
+  "tinte_bis": [
+   93.7,
+   43.5,
+   91.8,
+   35.5,
+   81.4,
+   93.5,
+   94.5,
+   33.4
+  ],
+  "figuren": [
+   {
+    "id": "v-is-gefaess",
+    "type": "stepwise-model",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 6,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-is-kreislauf",
+    "type": "cycle",
+    "n": 0,
+    "L": 5,
+    "K": 5,
+    "F": null,
+    "E": null,
+    "C": 5,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__ihre-situation__x1__m15__s90": {
+  "seiten": 8,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "f23bc238b3bd",
+   "10d8d755af17",
+   "73d6f43adf6c",
+   "996d9ba0ecbd",
+   "e1287cbda124",
+   "7fbedda1e899",
+   "8130b9e549d8",
+   "a3779dfbd5eb"
+  ],
+  "tinte_bis": [
+   85.3,
+   65.7,
+   82.8,
+   59.7,
+   76.8,
+   91.3,
+   88.7,
+   55.1
+  ],
+  "figuren": [
+   {
+    "id": "v-is-gefaess",
+    "type": "stepwise-model",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 6,
+    "ganz": false,
+    "kopf": true,
+    "kennz": true
+   },
+   {
+    "id": "v-is-kreislauf",
+    "type": "cycle",
+    "n": 0,
+    "L": 5,
+    "K": 4,
+    "F": null,
+    "E": null,
+    "C": 5,
+    "ganz": false,
+    "kopf": false,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__je-nach-rolle__x1__m0__s100": {
+  "seiten": 10,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "62eb94b9029a",
+   "b430f9786af7",
+   "4cba61ef1352",
+   "05350331d5c4",
+   "92c63fb29373",
+   "c062f5b8506f",
+   "ccbad5484971",
+   "0258a1443649",
+   "230450807bb4",
+   "d9294cf2181e"
+  ],
+  "tinte_bis": [
+   99.7,
+   92.7,
+   88.4,
+   98.0,
+   98.5,
+   94.7,
+   92.3,
+   95.4,
+   99.1,
+   21.0
+  ],
+  "figuren": [
+   {
+    "id": "v-ro-spannung",
+    "type": "tension-field",
+    "n": 0,
+    "L": 4,
+    "K": 4,
+    "F": null,
+    "E": null,
+    "C": 4,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__je-nach-rolle__x1__m0__s110": {
+  "seiten": 9,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "8c0903e362d6",
+   "de90857507ce",
+   "4b55daa431fb",
+   "9c42746e0407",
+   "45650e51b7c8",
+   "cb3bc08b2108",
+   "9f84c705a3e0",
+   "d4b1ae85120f",
+   "ec7c9d851b26"
+  ],
+  "tinte_bis": [
+   95.6,
+   98.3,
+   96.9,
+   96.1,
+   91.3,
+   94.4,
+   98.3,
+   95.2,
+   75.6
+  ],
+  "figuren": [
+   {
+    "id": "v-ro-spannung",
+    "type": "tension-field",
+    "n": 0,
+    "L": 4,
+    "K": 4,
+    "F": null,
+    "E": null,
+    "C": 4,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__je-nach-rolle__x1__m0__s80": {
+  "seiten": 7,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "557ca06512be",
+   "abf82cef8059",
+   "5df3197be536",
+   "a0a5ce204919",
+   "65f228b3da16",
+   "f071d40045cb",
+   "3d96942670e6"
+  ],
+  "tinte_bis": [
+   98.1,
+   97.8,
+   93.9,
+   97.4,
+   94.9,
+   98.0,
+   67.7
+  ],
+  "figuren": [
+   {
+    "id": "v-ro-spannung",
+    "type": "tension-field",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 3,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__je-nach-rolle__x1__m0__s90": {
+  "seiten": 8,
+  "leer": [],
+  "leere_rahmen": [
+   {
+    "seite": 3,
+    "oben": 81.7,
+    "unten": 99.8,
+    "hoehe": 18.1,
+    "leer": true,
+    "lage": "Seitenende"
+   }
+  ],
+  "md5": [
+   "39d3f717db3f",
+   "297db0e614d3",
+   "68b651a9b0bd",
+   "08ae83b99387",
+   "77ba0172f17e",
+   "b6fe6806b9cb",
+   "fc5d618c071d",
+   "4e668f314010"
+  ],
+  "tinte_bis": [
+   97.3,
+   94.5,
+   79.5,
+   98.3,
+   99.5,
+   93.2,
+   99.0,
+   85.7
+  ],
+  "figuren": [
+   {
+    "id": "v-ro-spannung",
+    "type": "tension-field",
+    "n": 0,
+    "L": 4,
+    "K": 4,
+    "F": null,
+    "E": null,
+    "C": 4,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__je-nach-rolle__x1__m10__s100": {
+  "seiten": 10,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "372d5a167528",
+   "6272032d811d",
+   "d33452314300",
+   "0a3bff821d1b",
+   "91ca35708713",
+   "d582a7bdae4f",
+   "806102e58dc4",
+   "c21bccb2c029",
+   "103a0b00fab5",
+   "93c4d73157e7"
+  ],
+  "tinte_bis": [
+   94.0,
+   96.6,
+   90.3,
+   83.1,
+   95.2,
+   42.2,
+   91.5,
+   95.6,
+   96.1,
+   17.7
+  ],
+  "figuren": [
+   {
+    "id": "v-ro-spannung",
+    "type": "tension-field",
+    "n": 0,
+    "L": 4,
+    "K": 4,
+    "F": null,
+    "E": null,
+    "C": 4,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__je-nach-rolle__x1__m10__s110": {
+  "seiten": 11,
+  "leer": [],
+  "leere_rahmen": [
+   {
+    "seite": 4,
+    "oben": 59.2,
+    "unten": 96.6,
+    "hoehe": 37.4,
+    "leer": true,
+    "lage": "Seitenende"
+   }
+  ],
+  "md5": [
+   "a9ffeee6169a",
+   "48730a1c60ae",
+   "05f9df2cf984",
+   "d391d89bffae",
+   "317a7006088b",
+   "4a7d46121561",
+   "9f160353a84a",
+   "36061c0b7e10",
+   "7777a7c8635e",
+   "c266d5869d0e",
+   "6aae1e7aa984"
+  ],
+  "tinte_bis": [
+   90.4,
+   92.7,
+   94.7,
+   56.7,
+   78.2,
+   91.6,
+   88.1,
+   92.5,
+   90.6,
+   94.2,
+   9.2
+  ],
+  "figuren": [
+   {
+    "id": "v-ro-spannung",
+    "type": "tension-field",
+    "n": 0,
+    "L": 5,
+    "K": 5,
+    "F": null,
+    "E": null,
+    "C": 5,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__je-nach-rolle__x1__m10__s80": {
+  "seiten": 8,
+  "leer": [],
+  "leere_rahmen": [
+   {
+    "seite": 3,
+    "oben": 67.1,
+    "unten": 96.6,
+    "hoehe": 29.5,
+    "leer": true,
+    "lage": "Seitenende"
+   }
+  ],
+  "md5": [
+   "4c2997cd7b49",
+   "a7f952dbdc43",
+   "8dc50c54a39d",
+   "92e7789d5616",
+   "fd47b0f39bd8",
+   "7578210e8d62",
+   "554aacef0c68",
+   "9e1b80fa30df"
+  ],
+  "tinte_bis": [
+   95.6,
+   92.8,
+   65.2,
+   92.7,
+   96.2,
+   93.2,
+   93.3,
+   58.7
+  ],
+  "figuren": [
+   {
+    "id": "v-ro-spannung",
+    "type": "tension-field",
+    "n": 0,
+    "L": 4,
+    "K": 4,
+    "F": null,
+    "E": null,
+    "C": 4,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__je-nach-rolle__x1__m10__s90": {
+  "seiten": 9,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "c3d18d9a4675",
+   "f42e69651662",
+   "1859208d8626",
+   "a2a4fac1c354",
+   "3284075b287b",
+   "18144a4396f1",
+   "aee081791d2a",
+   "4b83f56a849c",
+   "cad313bea706"
+  ],
+  "tinte_bis": [
+   94.9,
+   93.5,
+   92.3,
+   93.2,
+   93.5,
+   83.3,
+   94.2,
+   96.2,
+   81.4
+  ],
+  "figuren": [
+   {
+    "id": "v-ro-spannung",
+    "type": "tension-field",
+    "n": 0,
+    "L": 4,
+    "K": 4,
+    "F": null,
+    "E": null,
+    "C": 4,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__je-nach-rolle__x1__m15__s100": {
+  "seiten": 10,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "2f204ce240a0",
+   "cc555cfbab3e",
+   "25078a775579",
+   "a7cf36e12ba6",
+   "5febe611b2f0",
+   "d5e305727909",
+   "6aed160aa1ee",
+   "414c0b12c48d",
+   "4b5007a00a57",
+   "3ffee16ccbc6"
+  ],
+  "tinte_bis": [
+   90.6,
+   93.5,
+   93.2,
+   34.3,
+   87.5,
+   93.3,
+   85.2,
+   92.7,
+   90.3,
+   50.9
+  ],
+  "figuren": [
+   {
+    "id": "v-ro-spannung",
+    "type": "tension-field",
+    "n": 0,
+    "L": 5,
+    "K": 5,
+    "F": null,
+    "E": null,
+    "C": 5,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__je-nach-rolle__x1__m15__s110": {
+  "seiten": 11,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "86961f0fd4a1",
+   "af1a5232a5ba",
+   "265c9c2f531e",
+   "f54bff0eec99",
+   "0d20d03224d4",
+   "0d8b6c2dbc5b",
+   "f73ee3185181",
+   "fb72ac790b5e",
+   "1b0eec40dd01",
+   "d2ab5b086d0b",
+   "2b21e29f87e7"
+  ],
+  "tinte_bis": [
+   65.7,
+   94.2,
+   93.2,
+   89.2,
+   89.8,
+   93.5,
+   93.0,
+   90.8,
+   87.9,
+   86.5,
+   32.8
+  ],
+  "figuren": [
+   {
+    "id": "v-ro-spannung",
+    "type": "tension-field",
+    "n": 0,
+    "L": 5,
+    "K": 5,
+    "F": null,
+    "E": null,
+    "C": 5,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__je-nach-rolle__x1__m15__s80": {
+  "seiten": 8,
+  "leer": [],
+  "leere_rahmen": [
+   {
+    "seite": 3,
+    "oben": 84.3,
+    "unten": 94.9,
+    "hoehe": 10.6,
+    "leer": true,
+    "lage": "Seitenende"
+   }
+  ],
+  "md5": [
+   "1152dd627fa9",
+   "af097db9973f",
+   "5b8c1c83c87a",
+   "41a5a74571fe",
+   "24ac3ce2715a",
+   "7ae88bd66d03",
+   "4b26b840ac48",
+   "72ce08d23bce"
+  ],
+  "tinte_bis": [
+   94.0,
+   93.7,
+   82.4,
+   93.9,
+   92.8,
+   93.0,
+   93.0,
+   82.8
+  ],
+  "figuren": [
+   {
+    "id": "v-ro-spannung",
+    "type": "tension-field",
+    "n": 0,
+    "L": 4,
+    "K": 4,
+    "F": null,
+    "E": null,
+    "C": 4,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__je-nach-rolle__x1__m15__s90": {
+  "seiten": 9,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "16aef4448990",
+   "7b08c552c990",
+   "0dd14e3cf0dc",
+   "18d6acca5a16",
+   "a5478d47e1da",
+   "53c8493610f5",
+   "bd1e937e44e3",
+   "daab62d49d68",
+   "20a2261c2c43"
+  ],
+  "tinte_bis": [
+   87.9,
+   94.0,
+   91.3,
+   92.7,
+   36.0,
+   95.1,
+   91.6,
+   92.8,
+   55.1
+  ],
+  "figuren": [
+   {
+    "id": "v-ro-spannung",
+    "type": "tension-field",
+    "n": 0,
+    "L": 4,
+    "K": 4,
+    "F": null,
+    "E": null,
+    "C": 4,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__rechte-und-angebote__x1__m0__s100": {
+  "seiten": 6,
+  "leer": [],
+  "leere_rahmen": [
+   {
+    "seite": 1,
+    "oben": 96.1,
+    "unten": 99.8,
+    "hoehe": 3.8,
+    "leer": true,
+    "lage": "Seitenende"
+   }
+  ],
+  "md5": [
+   "f0682f08513f",
+   "ff00bd4f6448",
+   "40ba3a47bb54",
+   "fa469b253098",
+   "913434018036",
+   "d9294cf2181e"
+  ],
+  "tinte_bis": [
+   93.9,
+   86.2,
+   99.0,
+   96.1,
+   97.3,
+   21.0
+  ],
+  "figuren": [
+   {
+    "id": "v-ra-vergleich",
+    "type": "comparison",
+    "n": 0,
+    "L": 2,
+    "K": 2,
+    "F": null,
+    "E": null,
+    "C": 2,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__rechte-und-angebote__x1__m0__s110": {
+  "seiten": 6,
+  "leer": [],
+  "leere_rahmen": [
+   {
+    "seite": 2,
+    "oben": 73.5,
+    "unten": 75.1,
+    "hoehe": 1.5,
+    "leer": true,
+    "lage": "Mitte"
+   }
+  ],
+  "md5": [
+   "45aba1ad3362",
+   "51386f0581bf",
+   "e5b57f4b1088",
+   "e2be72fbe6e0",
+   "4c8ea08bd97c",
+   "68daa158359a"
+  ],
+  "tinte_bis": [
+   95.6,
+   100.0,
+   94.4,
+   99.0,
+   96.4,
+   21.2
+  ],
+  "figuren": [
+   {
+    "id": "v-ra-vergleich",
+    "type": "comparison",
+    "n": 0,
+    "L": 2,
+    "K": 2,
+    "F": null,
+    "E": null,
+    "C": 2,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__rechte-und-angebote__x1__m0__s80": {
+  "seiten": 5,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "d6cbd71f8b88",
+   "99ce2840f4d3",
+   "53243304c7a7",
+   "950ec2929a90",
+   "da856caad13c"
+  ],
+  "tinte_bis": [
+   79.2,
+   97.1,
+   97.8,
+   97.1,
+   2.4
+  ],
+  "figuren": [
+   {
+    "id": "v-ra-vergleich",
+    "type": "comparison",
+    "n": 0,
+    "L": 2,
+    "K": 2,
+    "F": null,
+    "E": null,
+    "C": 2,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__rechte-und-angebote__x1__m0__s90": {
+  "seiten": 5,
+  "leer": [],
+  "leere_rahmen": [
+   {
+    "seite": 1,
+    "oben": 90.1,
+    "unten": 99.8,
+    "hoehe": 9.7,
+    "leer": true,
+    "lage": "Seitenende"
+   }
+  ],
+  "md5": [
+   "81d4f44296ac",
+   "96e17f791937",
+   "aa905c8c9d5d",
+   "18aa1e01eddc",
+   "084bb11ac885"
+  ],
+  "tinte_bis": [
+   88.1,
+   99.1,
+   96.1,
+   98.6,
+   52.4
+  ],
+  "figuren": [
+   {
+    "id": "v-ra-vergleich",
+    "type": "comparison",
+    "n": 0,
+    "L": 2,
+    "K": 2,
+    "F": null,
+    "E": null,
+    "C": 2,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__rechte-und-angebote__x1__m10__s100": {
+  "seiten": 6,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "d74b05d89ad5",
+   "8f95efb5b063",
+   "58d692803c8f",
+   "a671d7a58f5d",
+   "e8dd684a382f",
+   "efcd2cd747cf"
+  ],
+  "tinte_bis": [
+   95.9,
+   94.2,
+   95.9,
+   86.9,
+   94.5,
+   12.8
+  ],
+  "figuren": [
+   {
+    "id": "v-ra-vergleich",
+    "type": "comparison",
+    "n": 0,
+    "L": 2,
+    "K": 2,
+    "F": null,
+    "E": null,
+    "C": 2,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__rechte-und-angebote__x1__m10__s110": {
+  "seiten": 6,
+  "leer": [],
+  "leere_rahmen": [
+   {
+    "seite": 2,
+    "oben": 83.4,
+    "unten": 85.0,
+    "hoehe": 1.5,
+    "leer": true,
+    "lage": "Mitte"
+   }
+  ],
+  "md5": [
+   "a2680cc95eb3",
+   "b58b5e698dd9",
+   "28e75685f1dd",
+   "e50d8eae9866",
+   "4460bdbbbd6e",
+   "e8c6dce3f7e9"
+  ],
+  "tinte_bis": [
+   93.3,
+   89.6,
+   88.9,
+   91.5,
+   93.9,
+   68.4
+  ],
+  "figuren": [
+   {
+    "id": "v-ra-vergleich",
+    "type": "comparison",
+    "n": 0,
+    "L": 2,
+    "K": 2,
+    "F": null,
+    "E": null,
+    "C": 2,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__rechte-und-angebote__x1__m10__s80": {
+  "seiten": 5,
+  "leer": [],
+  "leere_rahmen": [
+   {
+    "seite": 1,
+    "oben": 84.1,
+    "unten": 96.6,
+    "hoehe": 12.5,
+    "leer": true,
+    "lage": "Seitenende"
+   }
+  ],
+  "md5": [
+   "582fe9b26ef6",
+   "556fcbdb31e8",
+   "c7f91583771e",
+   "18eb68cbdac6",
+   "d399c36752cf"
+  ],
+  "tinte_bis": [
+   82.3,
+   92.7,
+   93.9,
+   96.4,
+   32.6
+  ],
+  "figuren": [
+   {
+    "id": "v-ra-vergleich",
+    "type": "comparison",
+    "n": 0,
+    "L": 2,
+    "K": 2,
+    "F": null,
+    "E": null,
+    "C": 2,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__rechte-und-angebote__x1__m10__s90": {
+  "seiten": 5,
+  "leer": [],
+  "leere_rahmen": [
+   {
+    "seite": 1,
+    "oben": 90.1,
+    "unten": 96.6,
+    "hoehe": 6.5,
+    "leer": true,
+    "lage": "Seitenende"
+   }
+  ],
+  "md5": [
+   "bd69d30ef84c",
+   "de96fb5aee55",
+   "18a82ced4041",
+   "0f53beff6c74",
+   "ab70875b11e2"
+  ],
+  "tinte_bis": [
+   87.9,
+   96.1,
+   94.7,
+   96.1,
+   87.5
+  ],
+  "figuren": [
+   {
+    "id": "v-ra-vergleich",
+    "type": "comparison",
+    "n": 0,
+    "L": 2,
+    "K": 2,
+    "F": null,
+    "E": null,
+    "C": 2,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__rechte-und-angebote__x1__m15__s100": {
+  "seiten": 6,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "02ffbc630786",
+   "d4023f371129",
+   "afa01a398f2c",
+   "1c2864602398",
+   "e1dec7761c2f",
+   "fad7ef3eb183"
+  ],
+  "tinte_bis": [
+   90.1,
+   85.0,
+   94.4,
+   92.8,
+   87.2,
+   30.4
+  ],
+  "figuren": [
+   {
+    "id": "v-ra-vergleich",
+    "type": "comparison",
+    "n": 0,
+    "L": 2,
+    "K": 2,
+    "F": null,
+    "E": null,
+    "C": 2,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__rechte-und-angebote__x1__m15__s110": {
+  "seiten": 7,
+  "leer": [],
+  "leere_rahmen": [
+   {
+    "seite": 3,
+    "oben": 67.2,
+    "unten": 68.8,
+    "hoehe": 1.5,
+    "leer": true,
+    "lage": "Mitte"
+   }
+  ],
+  "md5": [
+   "7eb7ad0e182b",
+   "315486d0d2b6",
+   "8f0d22e34024",
+   "936c759104ec",
+   "2fdde013f6f4",
+   "8a03125fec4f",
+   "1be4ee33740c"
+  ],
+  "tinte_bis": [
+   88.1,
+   27.5,
+   94.9,
+   89.1,
+   92.5,
+   91.1,
+   61.3
+  ],
+  "figuren": [
+   {
+    "id": "v-ra-vergleich",
+    "type": "comparison",
+    "n": 0,
+    "L": 3,
+    "K": 3,
+    "F": null,
+    "E": null,
+    "C": 3,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__rechte-und-angebote__x1__m15__s80": {
+  "seiten": 5,
+  "leer": [],
+  "leere_rahmen": [
+   {
+    "seite": 1,
+    "oben": 84.0,
+    "unten": 94.9,
+    "hoehe": 10.9,
+    "leer": true,
+    "lage": "Seitenende"
+   }
+  ],
+  "md5": [
+   "fdf4aa6411c3",
+   "556ceab83a60",
+   "4bd8609ddce1",
+   "9c9d0400f0b4",
+   "abdbaa0ef51a"
+  ],
+  "tinte_bis": [
+   82.1,
+   94.2,
+   91.8,
+   92.3,
+   51.4
+  ],
+  "figuren": [
+   {
+    "id": "v-ra-vergleich",
+    "type": "comparison",
+    "n": 0,
+    "L": 2,
+    "K": 2,
+    "F": null,
+    "E": null,
+    "C": 2,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ },
+ "zz-dep-test__rechte-und-angebote__x1__m15__s90": {
+  "seiten": 5,
+  "leer": [],
+  "leere_rahmen": [],
+  "md5": [
+   "dc2af29f39d8",
+   "82207591b061",
+   "ea1c27824d59",
+   "1896ba389182",
+   "0ef528693137"
+  ],
+  "tinte_bis": [
+   94.0,
+   85.0,
+   93.2,
+   92.2,
+   75.1
+  ],
+  "figuren": [
+   {
+    "id": "v-ra-vergleich",
+    "type": "comparison",
+    "n": 0,
+    "L": 2,
+    "K": 2,
+    "F": null,
+    "E": null,
+    "C": 2,
+    "ganz": true,
+    "kopf": true,
+    "kennz": true
+   }
+  ]
+ }
+}

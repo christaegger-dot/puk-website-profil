@@ -1,0 +1,18 @@
+# Gate, Selbsttest, ZIP (Nachprüfung 15.10.2026)
+## psychoeducation-site-starter (c65db24)
+Selbsttest: 72/72 bestanden.
+PUK Website Kit 1.10.1-r4 · abgeleitet · Gate draft: 0 blockierend, 12 Hinweise.
+PUK Website Kit 1.10.1-r4 · abgeleitet · Gate production: 11 blockierend, 1 Hinweise.
+## zz-dep-test (c65db24)
+Selbsttest: 72/72 bestanden.
+PUK Website Kit 1.10.1-r4 · abgeleitet · Gate draft: 0 blockierend, 0 Hinweise.
+PUK Website Kit 1.10.1-r4 · abgeleitet · Gate production: 0 blockierend, 0 Hinweise.
+## ZIP
+SHA-256 Repository-Datei: 20d42bba632069a6e519806bdcb851f0c52e6baa1081384a5a04a258a4ba4902
+SHA-256 ZIP aus de10a8d (erste Fassung): 2040c74364a937063a3739261c3f440b5c665c44c97b5f3f17327516d15373db
+Einträge 438; Dateiliste = Regel (git ls-tree bc679a7 ohne _headers, index.html im Stamm, *.zip, borderline-angehoerige/, depression-angehoerige/); 438 byte-gleich mit bc679a7; Baum bc679a7 = Baum c65db24
+7 Seiten geschrieben · PUK Website Kit 1.10.1-r4 · abgeleitet · Build r4-9 · Gate draft: 0 blockierend, 12 Hinweise.
+Selbsttest: 72/72 bestanden.
+PUK Website Kit 1.10.1-r4 · abgeleitet · Gate production: 11 blockierend, 1 Hinweise.
+Gebaute HTML des Starters (8) byte-gleich mit dem Repository: ja
+Export aus dem entpackten ZIP (Entwurf): fonts/OFL.txt vorhanden, site.css enthält 14 Regeln mit data-print-split; --production bricht ab (11 blockierend, erwartet)

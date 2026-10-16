@@ -1,0 +1,182 @@
+[
+ {
+  "site": "psychoeducation-site-starter",
+  "p": "behandlung-verstehen",
+  "w": 1280,
+  "mark": false,
+  "elemente": 179,
+  "abweichend": 12,
+  "hash": "46003e4bb30d"
+ },
+ {
+  "site": "psychoeducation-site-starter",
+  "p": "beziehungen-verstehen",
+  "w": 1280,
+  "mark": false,
+  "elemente": 178,
+  "abweichend": 6,
+  "hash": "f59269a1cd0f"
+ },
+ {
+  "site": "psychoeducation-site-starter",
+  "p": "unterstuetzung-finden",
+  "w": 1280,
+  "mark": false,
+  "elemente": 202,
+  "abweichend": 9,
+  "hash": "a867cbc601ee"
+ },
+ {
+  "site": "zz-dep-test",
+  "p": "begleiten",
+  "w": 1280,
+  "mark": false,
+  "elemente": 246,
+  "abweichend": 3,
+  "hash": "f7379dd12a7f"
+ },
+ {
+  "site": "zz-dep-test",
+  "p": "behandlung-und-verlauf",
+  "w": 1280,
+  "mark": false,
+  "elemente": 357,
+  "abweichend": 15,
+  "hash": "1e1156b53882"
+ },
+ {
+  "site": "zz-dep-test",
+  "p": "depression-verstehen",
+  "w": 1280,
+  "mark": false,
+  "elemente": 341,
+  "abweichend": 26,
+  "hash": "b0a91716acf2"
+ },
+ {
+  "site": "zz-dep-test",
+  "p": "fuer-sich-sorgen",
+  "w": 1280,
+  "mark": false,
+  "elemente": 246,
+  "abweichend": 3,
+  "hash": "8212cdb951aa"
+ },
+ {
+  "site": "zz-dep-test",
+  "p": "ihre-situation",
+  "w": 1280,
+  "mark": false,
+  "elemente": 290,
+  "abweichend": 6,
+  "hash": "8b8ed8c6bfcb"
+ },
+ {
+  "site": "zz-dep-test",
+  "p": "je-nach-rolle",
+  "w": 1280,
+  "mark": false,
+  "elemente": 320,
+  "abweichend": 3,
+  "hash": "d781f76c8baf"
+ },
+ {
+  "site": "zz-dep-test",
+  "p": "rechte-und-angebote",
+  "w": 1280,
+  "mark": false,
+  "elemente": 229,
+  "abweichend": 3,
+  "hash": "8169f01b9e31"
+ },
+ {
+  "site": "psychoeducation-site-starter",
+  "p": "behandlung-verstehen",
+  "w": 1280,
+  "mark": true,
+  "elemente": 179,
+  "abweichend": 125,
+  "hash": "f03f11290824"
+ },
+ {
+  "site": "psychoeducation-site-starter",
+  "p": "beziehungen-verstehen",
+  "w": 1280,
+  "mark": true,
+  "elemente": 178,
+  "abweichend": 6,
+  "hash": "f59269a1cd0f"
+ },
+ {
+  "site": "psychoeducation-site-starter",
+  "p": "unterstuetzung-finden",
+  "w": 1280,
+  "mark": true,
+  "elemente": 202,
+  "abweichend": 9,
+  "hash": "162c66fc5618"
+ },
+ {
+  "site": "zz-dep-test",
+  "p": "begleiten",
+  "w": 1280,
+  "mark": true,
+  "elemente": 246,
+  "abweichend": 3,
+  "hash": "f7379dd12a7f"
+ },
+ {
+  "site": "zz-dep-test",
+  "p": "behandlung-und-verlauf",
+  "w": 1280,
+  "mark": true,
+  "elemente": 357,
+  "abweichend": 214,
+  "hash": "5bac5ce63c1a"
+ },
+ {
+  "site": "zz-dep-test",
+  "p": "depression-verstehen",
+  "w": 1280,
+  "mark": true,
+  "elemente": 341,
+  "abweichend": 168,
+  "hash": "10f39f782d9c"
+ },
+ {
+  "site": "zz-dep-test",
+  "p": "fuer-sich-sorgen",
+  "w": 1280,
+  "mark": true,
+  "elemente": 246,
+  "abweichend": 3,
+  "hash": "8212cdb951aa"
+ },
+ {
+  "site": "zz-dep-test",
+  "p": "ihre-situation",
+  "w": 1280,
+  "mark": true,
+  "elemente": 290,
+  "abweichend": 6,
+  "hash": "8b8ed8c6bfcb"
+ },
+ {
+  "site": "zz-dep-test",
+  "p": "je-nach-rolle",
+  "w": 1280,
+  "mark": true,
+  "elemente": 320,
+  "abweichend": 3,
+  "hash": "d781f76c8baf"
+ },
+ {
+  "site": "zz-dep-test",
+  "p": "rechte-und-angebote",
+  "w": 1280,
+  "mark": true,
+  "elemente": 229,
+  "abweichend": 3,
+  "hash": "8169f01b9e31"
+ }
+]
