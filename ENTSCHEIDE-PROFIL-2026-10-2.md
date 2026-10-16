@@ -36,6 +36,14 @@
 - **Selbstprüfung mit Belegen:** `review/paket-2026-10-2/SELBSTPRUEFUNG-NACHBESSERUNG.md`. Alle Abnahmepunkte erfüllt; ein Nebenbefund ausserhalb der Figurregeln (N-1, Raster der Abschnitte) als Prüfbedarf.
 - **Offen:** Nachprüfung durch eine Sitzung, die nicht gebaut hat; der Pull Request bleibt bis dahin ein Entwurf.
 
+**16.10.2026 · Nachbesserung nachgeprüft, Ablauf Schritt 2b** (`review/paket-2026-10-2/NACHPRUEFUNG.md`, #130): erledigt, kein kritischer Befund offen. Wichtig und nicht mehr behebbar ist NP-1: Die Nachbesserung wurde vor der Nachprüfung zusammengeführt. NP-2 bis NP-6 sind optional. **NP-2** (die Schritte gekennzeichneter Abfolgen stehen im Druck untereinander) wird erst als Entscheid eingetragen, wenn die Fachstelle die Drucklage bestätigt.
+
+**16.10.2026 · Nachtrag zum forensischen Audit (F-4, F-5, F-7)** von der bauenden Sitzung des Pakets im Auftrag der Fachstelle («Ich folge deiner Empfehlung»), #131.
+- **Artefakt:** Version 48 (`1792129173-abbb`); 213 von 213 gemeinsamen Dateien byte-gleich. Im Repository: Starter Build r4-10, Selbsttest 72/72.
+- **Paket:** `puk-website-profil-2026.10.2.zip`, Build r4-10, 506 Dateien, Stand des Repositorys bei `1ba2568`. SHA-256 `b181299787108e437e11b631be0bdde3b636d4be78f2ba65f5d269dd8fec35a5`, auch in `puk-website-profil-2026.10.2.zip.sha256`. Die beiden früheren Fassungen unter demselben Namen nennt das Änderungsprotokoll im `README.md`. Berichte und Einträge nach `1ba2568` (#132, dieser Eintrag) sind nicht im ZIP.
+- **Selbstprüfung:** `review/paket-2026-10-2/NACHTRAG-F4-F5-F7.md`. **Prüfung** durch eine Sitzung, die nicht gebaut hat (`review/paket-2026-10-2/PRUEFUNG-NACHTRAG-F4-F5-F7.md`, #132): erledigt, kein kritischer und kein wichtiger Befund; optional NT-1 bis NT-5.
+- **Offen:** Skill «puk-website-profil» auf claude.ai hochladen (Fachstelle, NT-2); die Vorschauen der Karten Prozesspfad, Entscheidungsweg und Modell in Schritten bei der nächsten Arbeit am Artefakt an die Muster-CSS angleichen (NT-3).
+
 **Anlass:**
 - Auflage AR3-5 der Borderline-Website (R3 Freigabe-Audit, 13.10.2026): Die Ausnahme R1-1 endet mit einem neuen Profilpaket, Frist 13.01.2027.
 - Die Vorschläge für das Profil aus `templates/website/borderline-angehoerige/ENTSCHEIDE-SCHLUSSPRUEFUNG.md`, Abschnitt 5.6.
@@ -128,7 +136,9 @@ _Geändert 15.10.2026: Vorbedingung neu; die Websites übernehmen das Paket getr
 2. **Prüfsitzung (Profil):** prüft das Paket gegen diese Entscheide und die Abnahmen; Abnahmen an der Website «Depression» an einer Kopie mit dem neuen Profil.
    - **Stand 15.10.2026: geprüft, nicht erledigt** (K-1, W-1 bis W-4, P-1); `review/paket-2026-10-2/PRUEFBERICHT.md`.
    - **Nachbesserung** (Abschnitt «Nachbesserung nach der Prüfung»): bauende Sitzung, danach Nachprüfung in einer Sitzung, die nicht gebaut hat. Der Pull Request bleibt bis dahin ein Entwurf.
+   - **Stand 16.10.2026: nachgeprüft, erledigt** (`review/paket-2026-10-2/NACHPRUEFUNG.md`, #130). Nachtrag F-4, F-5, F-7 geprüft und erledigt (#131, #132).
 3. **Borderline-Website:** erst nach der Nachprüfung der Nachbesserung (Entscheid 15.10.2026).
+   - **Stand 16.10.2026:** Die Nachprüfung ist erledigt. Zu übernehmen ist die Fassung mit Build r4-10, SHA-256 `b181299787108e437e11b631be0bdde3b636d4be78f2ba65f5d269dd8fec35a5`. ZIP und `puk-website-profil-2026.10.2.zip.sha256` zusammen übernehmen und vor dem Einbau mit `sha256sum -c` prüfen (NT-5).
    - übernimmt das Paket im Repository `christaegger-dot/borderline-angehoerige`, mit den Abnahmen dort (P-1 mit `borderline.css`, P-2 an allen 28 Stellen, P-4, P-15 an `quellen`), Nachprüfung in eigener Sitzung, Export und Prüfung der Produktion;
    - danach enden die Ausnahmen R1-1 und SPZ-F-32, und AR3-5 ist erfüllt (Frist 13.01.2027).
 4. **Website «Depression»:** übernimmt die Werkzeuge (`tools/`) und `starter.css` beim nächsten inhaltlichen Anlass; Neubau mit Selbstprüfung, Nachprüfung in eigener Sitzung, neuem Export und Prüfung der Produktion. Ohne das neue `starter.css` fehlt mit erzwungenen Farben das Fokusbild am Sprungziel (W-4, ergänzt 15.10.2026).
