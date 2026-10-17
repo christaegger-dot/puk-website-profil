@@ -1,3 +1,4 @@
+/* Automatisch erzeugt: npm run generieren. Nur die Typquelle im Quellordner bearbeiten. */
 /**
  * Karussell für wenige gleichrangige, in sich abgeschlossene Inhalte (3–6 Folien). Kein Autoplay, keine Endlosschleife.
  */

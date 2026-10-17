@@ -1,3 +1,4 @@
+/* Automatisch erzeugt: npm run generieren. Nur die Typquelle im Quellordner bearbeiten. */
 /**
  * Textlink mit Hover-, besuchtem, Fokus- und externem Zustand.
  */

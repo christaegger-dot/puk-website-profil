@@ -2,7 +2,9 @@ Website-Profil der **Psychiatrischen Universitätsklinik Zürich (PUK)** für We
 
 ## Verbindlichkeit und Version
 
-**Fachstellen-Profil 2026.10.3** (abgeschlossen am 17.10.2026; offene Projektpendenzen: 0) auf Basis des PUK Zürich Design Systems 1.10.1, Arbeitsstand PUK Website Kit 1.10.1-r4. Vier Ebenen – bei Widerspruch gilt die obere:
+<!-- profil:stand -->
+**Fachstellen-Profil 2026.10.4** · Stand 17.10.2026 · offene Projektpendenzen: 0. Basis: PUK Zürich Design System 1.10.1 und PUK Website Kit 1.10.1-r4. Vier Ebenen – bei Widerspruch gilt die obere:
+<!-- /profil:stand -->
 
 | Ebene | Umfasst | Erkennbar an | Ändern darf |
 | --- | --- | --- | --- |
@@ -142,12 +144,18 @@ Website-Profil der **Psychiatrischen Universitätsklinik Zürich (PUK)** für We
 
 ## Vorlagen, Beispiel und Werkzeuge
 
-- [Psychoedukations-Starter](templates/website/psychoeducation-site-starter/README.md): bewusst leere Vorlagen und Gestaltungsreferenzen. Eingabeparameter sind keine offenen Projektpendenzen. Das Produktionsgate sperrt ungefüllte Parameter und unbestätigte Inhalte weiterhin.
+- [Schlanker Starter](templates/website/minimal-starter/README.md): mit `npm run neu -- mein-thema --titel "Mein Thema"` vier eigene Seiten mit Vorschau anlegen. Keine vorgegebenen klinischen Themen oder kopierten Build-Werkzeuge. Eingabeparameter und Freigaben vor einer Veröffentlichung ausarbeiten.
+- [Ausführliche Musterwebsite](templates/website/psychoeducation-site-starter/README.md): Gestaltungsreferenzen für mehrere Themen; Beispiele gezielt auswählen. Ihr Produktionsgate sperrt ungefüllte Parameter und unbestätigte Inhalte weiterhin.
+- [Welches Muster passt?](MUSTER-WAEHLEN.md): Kurzanleitung mit direkten Beispielen für Text, Visualisierungen und Interaktionen; lokal auch unter `musterauswahl.html`.
 - [Vollständiges Profilbeispiel](templates/website/profilbeispiel/README.md): vier fachneutrale Seiten mit eigenem Prüfbericht; technisch geprüft, ohne behauptete klinische Freigabe.
 - `templates/website/longform/`, `applications/`, `interaktion/`: Erklärmuster, Anwendungsmuster und HTML-Interaktionen. Die UI-Kit-Ansichten illustrieren wählbare Varianten; sie schreiben keinen Krisenblock vor.
 - `components/`, `tokens/`, `assets/`, `fonts/`: 26 React-Komponenten, statische HTML-Interaktionen, Gestaltungswerte und lokale Originaldateien.
-- `quellcode/komponenten/`: reproduzierbarer Komponenten-Build. Einrichtung und Befehle stehen in [START-HIER.md](START-HIER.md); Versionen in `package-lock.json`.
-- `tools/paket.py`: reproduzierbares Paket `puk-website-profil-2026.10.3.zip` mit Prüfsumme in der gleichnamigen `.sha256`-Datei. Archiv, frühere Websites und lokale Arbeitsdateien sind nicht im aktuellen Paket.
+- `quellcode/komponenten/src/components/`: einzige Typquelle. `npm run generieren` erzeugt die Einzeldateien in `components/` und die Sammeldeklaration. `quellcode/profil/` enthält Quellen für Startseite und Musterauswahl.
+- `package.json`: einzige Quelle der Profilversion und Build-Stände; `package-lock.json` legt die Entwicklungsabhängigkeiten fest. `npm run check:generated` erkennt veraltete Ableitungen, ohne Dateien zu ändern.
+- GitHub prüft bei Push, Pull Request und manuellem Start automatisch die Ableitungen, den Build, die Typen, die Tests, die vollständige UI-Matrix und das Paket. Die bisherige Beschreibungskontrolle für offene Prüfstufen bleibt zusätzlich erhalten.
+<!-- profil:paket -->
+- `tools/paket.py`: reproduzierbares Paket [puk-website-profil-2026.10.4.zip](https://github.com/christaegger-dot/puk-website-profil/raw/refs/heads/main/puk-website-profil-2026.10.4.zip) mit [SHA-256-Datei](https://github.com/christaegger-dot/puk-website-profil/raw/refs/heads/main/puk-website-profil-2026.10.4.zip.sha256). Archiv, Projekte unter `websites/` und lokale Arbeitsausgaben sind nicht enthalten.
+<!-- /profil:paket -->
 - Der Exporter schreibt in einen neuen oder erkennbaren Exportordner. Erst nach vollständiger Prüfung ersetzt er den vorherigen Export. Fremde Dateien werden nicht überschrieben. Eine Website zu exportieren veröffentlicht sie nicht.
 
 ## Projektabschluss

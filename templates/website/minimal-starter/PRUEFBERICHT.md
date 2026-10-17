@@ -1,0 +1,103 @@
+# Prüfbericht-Vorlage · neue Website
+
+**Leeres Formular für neue Website-Projekte; keine offenen Aufgaben des abgeschlossenen Profils.** Die Stufen unten bleiben Eingabeparameter und sperren die ungefüllte Vorlage weiterhin in Produktion. Der aktuelle technische Profilabschluss steht im Prüfbericht des Repository-Stamms.
+
+Gehört zur Website in diesem Ordner. Der Erstellungsbefehl übernimmt diese Vorlage: Titel anpassen, alle Stufen stehen auf «offen». Ohne vollständigen Prüfbericht blockiert das zentrale Produktionsgate die Veröffentlichung (Abschnitt «Prüfung und Freigabe»).
+
+**Regeln**
+
+- **Bauen und Prüfen sind getrennt.** Die Stufen unten prüft eine Sitzung oder Person, die die Website nicht gebaut hat. Die bauende Sitzung macht nur die Selbstprüfung (unten) und trägt keine Stufe als «erledigt» ein.
+- **Jeder Punkt braucht einen Beleg** (Seite und Abschnitt, Figur, Zitat). Ein Punkt ohne Beleg gilt als nicht geprüft. Ein Gesamturteil ersetzt keine Einzelprüfung.
+- **Kein Merge ohne Prüfbericht.** Ein Pull Request mit einer neuen oder geänderten Website enthält diesen Bericht im aktuellen Stand und verweist in der Beschreibung darauf.
+- **Prüftiefe:** Bei Umbauten vergleicht W1 mindestens 20 Aussagen je Etappe mit dem Bestand; Kennzahlen der bauenden Sitzung werden nachgerechnet; der Visualisierungs-Check der Prüfsitzung steht je Figur in der Matrix unten. Eine zweite, unabhängige Prüfsitzung wird empfohlen; jeder Befund nennt seine Quelle.
+- **Status:** «offen», «erledigt» oder «entfällt: Begründung». Fachliche Freigaben trägt nur die Fachstelle ein.
+
+## Status
+
+| Stufe | Status | Datum | Geprüft durch | Ergebnis |
+| --- | --- | --- | --- | --- |
+| W1 Fachliche Prüfung | offen | | | |
+| W2 Gesamtkohärenz | offen | | | |
+| S Sprach-Review | offen | | | |
+| Visualisierungs-Check | offen | | | |
+| Bedienung und Barrierefreiheit | offen | | | |
+| W3 Code-Review | offen | | | |
+| R1 Profil-Audit | offen | | | |
+| R2 Visualisierung und Laienverständlichkeit | offen | | | |
+| R3 Freigabe-Audit | offen | | | «Go», «Go mit Auflagen» oder «No-Go» |
+
+## Selbstprüfung der bauenden Sitzung
+
+Nach jedem Bau ohne Nachfrage ausfüllen: Visualisierungs-Check wie unten, mit Beleg je Punkt. Arbeitsstand, keine Prüfstufe.
+
+## Visualisierungs-Check
+
+| Nr. | Prüfpunkt | Ergebnis | Beleg | Massnahme |
+| --- | --- | --- | --- | --- |
+| 1 | Visualisierungsplan liegt vor; die Seiten entsprechen ihm | | | |
+| 2 | Jeder Abschnitt hat eine Zeile im Plan; Begründungen für reinen Text passen zum Inhalt | | | |
+| 3 | Prüffrage je Darstellung konkret beantwortet; die Darstellung zeigt, was die Antwort verspricht | | | |
+| 4 | Jede Figur hat Kernaussage und Erklärtext; die Hauptaussage für Angehörige steht nicht nur in der Vertiefung | | | |
+| 5 | Erklärmodelle (B, C, G): Ansatzpunkt für Angehörige markiert oder Verzicht begründet; keine Verantwortung für Behandlung oder Verlauf zugeschoben | | | |
+| 6 | Derselbe Mechanismus wird nicht in zwei Abschnitten getrennt gezeigt | | | |
+| 7 | Kartenraster-Check: keine Reihe gleichartiger Karten, wo eine Anordnung erklären müsste | | | |
+| 8 | Anordnung, Verbindungen, Formen oder Linienarten tragen Bedeutung, nicht nur die Wörter | | | |
+| 9 | Darstellungen über den Erkenntnisweg verteilt; keine unbegründete Textwand | | | |
+| 10 | Vereinfacht, nicht verfälscht; Grenzen des Modells benannt; Quelle oder Kennzeichnung vorhanden | | | |
+| 11 | Grundaussage ohne Animation, ohne Aufklappen und ohne Skript verständlich | | | |
+| 12 | Bei 320 px lesbar; Textalternative bzw. Langbeschreibung vollständig | | | |
+| 13 | Theme «Hoher Kontrast» geprüft (keine festen Farbwerte in SVG) | | | |
+| 14 | Inhalt fachlich freigegeben | | | |
+| 15 | Bildsprache passt zum Thema (kein Bauplan, wo es um Erleben geht); Wirkung im Plan und im Bild eingelöst | | | |
+| 16 | Metapher ohne Code: ein Bild, eine Idee; Beschriftungen nennen Erleben, nicht Bildteile | | | |
+| 17 | Keine ungewollten Bedeutungen (Gefahr, Defekt, Maschine, Bewertung eines Menschen) | | | |
+| 18 | Bei 200 % Schrift keine überlappenden Beschriftungen, keine Trennung mitten im Wort; Kurztext nennt keine schmal ausgeblendeten Bildteile | | | |
+| 19 | Was der Kurztext über die Anordnung verspricht, löst die Komponente bei allen Breiten ein | | | |
+
+### Matrix je Figur (Prüfsitzung)
+
+E = erfüllt · T = teilweise · N = nicht erfüllt · – = nicht anwendbar. Je Befund ein Eintrag unter «Befunde je Stufe».
+
+| Nr. | Prüfpunkt | `v-…` | `v-…` |
+| --- | --- | --- | --- |
+| 1 | Plan liegt vor, Seite entspricht ihm | | |
+| 2 | Zeile je Abschnitt; Begründungen passen | | |
+| 3 | Prüffrage beantwortet und eingelöst | | |
+| 4 | Kernaussage und Erklärtext | | |
+| 5 | Ansatzpunkt richtig gesetzt (B, C, G) | | |
+| 6 | Mechanismus nicht doppelt gezeigt | | |
+| 7 | Kartenraster-Check | | |
+| 8 | Form und Linien tragen Bedeutung | | |
+| 9 | Verteilt, keine Textwand | | |
+| 10 | Nicht verfälscht; Grenzen; Kennzeichnung | | |
+| 11 | Ohne Aufklappen und Skript verständlich | | |
+| 12 | 320 px lesbar; Textalternative | | |
+| 13 | Theme «Hoher Kontrast» | | |
+| 14 | Fachlich freigegeben | | |
+| 15 | Bildsprache passt; Wirkung eingelöst | | |
+| 16 | Metapher ohne Code | | |
+| 17 | Keine ungewollten Bedeutungen | | |
+| 18 | 200 % Schrift; Kurztext ohne ausgeblendete Bildteile | | |
+| 19 | Versprechen des Kurztexts eingelöst | | |
+
+## Befunde je Stufe
+
+### W1 Fachliche Prüfung
+
+### W2 Gesamtkohärenz
+
+### S Sprach-Review
+
+### Bedienung und Barrierefreiheit
+
+### W3 Code-Review
+
+## Pre-Release-Audits
+
+Aufträge und Prüfpunkte: Abschnitt «Pre-Release-Audits» (`guidelines/00-pre-release-audits.md`). Erst nach W3; R3 unmittelbar vor der Veröffentlichung. R3 steht nur bei «Go» auf «erledigt».
+
+### R1 Profil-Audit
+
+### R2 Visualisierung und Laienverständlichkeit
+
+### R3 Freigabe-Audit

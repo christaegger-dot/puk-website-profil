@@ -1,3 +1,4 @@
+/* Automatisch erzeugt: npm run generieren. Nur die Typquelle im Quellordner bearbeiten. */
 /**
  * Primary action control.
  */

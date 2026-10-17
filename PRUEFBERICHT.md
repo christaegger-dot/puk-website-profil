@@ -1,40 +1,41 @@
-# Prüfbericht · PUK Website-Profil 2026.10.3
+# Prüfbericht · PUK Website-Profil
 
-**Abgeschlossen am 17.10.2026. Offene Projektpendenzen: 0.** Geprüft und repariert wurde das Repository `christaegger-dot/puk-website-profil`, ausgehend von `c6c940db174dc60375672a04f6335b8e208fe949`. Es wurde keine klinische Website veröffentlicht. Die [Abschlussentscheide](ABSCHLUSSENTSCHEIDE.md) behandeln sämtliche früheren Pendenzen.
+<!-- profil:stand -->
+**Profil 2026.10.4 · Stand 17.10.2026.** Offene Projektpendenzen: 0.
+<!-- /profil:stand -->
 
-## Ergebnis und Reparaturen
+Umgesetzt sind die vier ausdrücklich beauftragten Weiterentwicklungen. Ausgangspunkt ist `db816c7b000ba0fbcbc9eae5c1b02e5908493f30`. Der vorangegangene Abschluss mit 90 Tests bleibt samt Originalberichten und Paket unverändert im Archiv. [Abschlussentscheide](ABSCHLUSSENTSCHEIDE.md).
 
-- Das Repository ist die aktuelle Quelle. Private Artefakte erzeugen keinen Synchronisierungsauftrag. Frühere Berichte, Website-Kopien und Paket 2026.10.2 bleiben unverändert im gekennzeichneten Archiv; widersprüchliche historische Statuszeilen gelten dort für ihren damaligen Stand.
-- Telefonnummern und `tel:`-Links sind zugelassen. Krisenkontakte bleiben ein redaktioneller Entscheid je Thema. Keine automatischen Krisenblöcke, keine diagnoseabhängige Ergänzung und kein pauschaler Zuständigkeitssatz im Standard-Footer. Regeln, Vorlagen, Metadaten und Tests stimmen darin überein.
-- Unzulässige `size`-Überschreibungen in den Typdefinitionen von Input und Select korrigiert, in Einzeldateien, gebündelten Deklarationen und Quellen. Alle 26 Komponenten und ihre Quelltypdefinitionen bestehen die strikte TypeScript-Prüfung. Der Build verwendet festgelegte Paketversionen und arbeitet unabhängig vom aktuellen Arbeitsordner reproduzierbar.
-- Die Prüfansicht hat einen Viewport, ein Favicon, getrennte CSS- und Skriptdateien und begrenzt ihre breiten Tabellen und Prüfrahmen. Die Gate-Prüfung verwendet die passende Selbsttestreferenz und erkennt die absichtlichen Produktionsblocker der ungefüllten Vorlage. Die 13 bereits eingebetteten Icons liegen zusätzlich als lokale SVGs samt zugehöriger ISC-Lizenz vor.
-- Druckregeln berücksichtigen verschachtelte, ausdrücklich gekennzeichnete lange Abfolgen. Der Abschnittsfluss erzeugt keine leeren Rasterseiten; Zwischenüberschriften erhalten Umbruchschutz. Entscheidungsweg, Modell in Schritten und die fehlende Schrittliste sind als Gate-Fälle abgedeckt.
-- Der Export prüft CSS-Importe, Bilder und weitere lokale Ressourcen vollständig. Fehlende oder externe CSS-Ressourcen stoppen ihn. Er baut zuerst in einem temporären Verzeichnis, erhält bei Fehlern die letzte gültige Ausgabe und entfernt bei Erfolg veraltete Seiten. Fremde Zielordner und Quellordner sind geschützt. Nicht vorhandene TTF-Rückfallpfade wurden entfernt; die vorhandenen WOFF2-Dateien und Schriftlizenz werden ausgeliefert.
-- Ein vollständiges fachneutrales Beispiel mit vier Seiten durchläuft dasselbe Produktionsgate und denselben Export. Es enthält keine klinischen Aussagen. Die fehlende öffentliche Website-Adresse ist als bewusste Grenze des lokalen Musters dokumentiert.
-- Neues Profilpaket 2026.10.3 mit eigenem Dateinamen, SHA-256-Datei und deterministischem Generator. Es enthält den aktiven Stand ohne Archiv, Abhängigkeiten und lokale Arbeitsausgaben. Der Generator prüft Dateiliste, sämtliche Dateibytes und Prüfsumme.
-- Analyse-PR [#9](https://github.com/christaegger-dot/puk-website-profil/pull/9) ohne Merge geschlossen. Die Bestandsaufnahme ist im geschlossenen PR erhalten; die eigenständigen Website-Repos werden hier nicht umgebaut.
+## Vier Ergebnisse
 
-## Erhobene Nachweise
+1. **Automatische GitHub-Prüfung:** Neuer Workflow «Profil prüfen» bei Push, Pull Request und manuellem Start. Er installiert festgelegte Abhängigkeiten sowie Chromium, prüft die eingecheckten Ableitungen, baut alle Referenzen ohne Dateidifferenzen, führt Typprüfung und Tests sowie die vollständige UI-Matrix aus und gleicht das versionierte Paket byteweise ab. Der UI-Bericht wird als Laufartefakt aufbewahrt. Die bisherige PR-Beschreibungskontrolle bleibt zusätzlich erhalten.
+2. **Schlanker Projektstart:** Neue Vorlage mit Übersicht, einer Themenseite, Impressum und Datenschutz sowie 404. `npm run neu -- mein-thema --titel "Mein Thema"` legt ein eigenes Projekt unter `websites/` an, passt Pfade und Titel an und baut die erste Vorschau. Keine vorgegebenen klinischen Inhalte, Krisenblöcke oder Freigaben; kein Überschreiben vorhandener Verzeichnisse. Die zentralen Werkzeuge werden nicht kopiert. Der Produktionsschutz bleibt aktiv.
+3. **Verbindliche Quellen:** Komponententypen werden ausschliesslich unter `quellcode/komponenten/src/components/` gepflegt. `generieren` erzeugt die Einzel- und Sammeldeklarationen. Profilversion und Build-Stände stammen aus `package.json`; Metadaten, Standangaben, Paketname und Zeitstempel werden daraus abgeleitet. Die Prüfung erkennt veraltete Ausgaben ohne Schreibzugriff. Die Quellen für Vorschauseiten und Musterauswahl liegen unter `quellcode/profil/`.
+4. **Muster zugänglich machen:** Die Startseite verlinkt Minimalstarter, vollständiges Beispiel, ausführliche Musterwebsite, Erklärgrafiken, HTML-Interaktionen, UI-Kit und Prüfansicht. Die Frage «Welches Muster passt zu meinem Inhalt?» führt anhand von 13 Leserfragen zu konkreten Beispielen. HTML und Markdown entstehen aus demselben Katalog; Ziele und Sprungmarken werden bei der Erzeugung geprüft.
+
+Telefonnummern und Telefonlinks bleiben erlaubt. Krisenkontakte sind weiterhin ein bewusster Entscheid je Thema; eine Diagnose erzeugt keinen Krisenblock. Die Startvorlage enthält keinen pauschalen Zuständigkeits- oder Krisensatz im Footer.
+
+## Technische Nachweise
 
 | Prüfung | Ergebnis |
 | --- | --- |
-| `npm run build` | Komponenten, Starter und vollständiges Profilbeispiel gebaut |
-| `npm run test:types` | Strikte Prüfung aller Komponententypen bestanden |
-| `npm test` | **90 bestanden, 0 fehlgeschlagen, 0 übersprungen**: 74 Selbsttestfälle, vier zusätzliche Vertragsprüfungen, acht Export-/Build-Prüfungen und vier Browserprüfungen |
-| Vollständiges Profilbeispiel, Produktionsgate | Vier Seiten; 0 Blocker. Ein dokumentierter Hinweis auf die fehlende öffentliche Website-Adresse |
-| Vorschauseiten in Chromium | 26 aktive Seiten jeweils bei 360 und 1280 px ohne Browserfehler, fehlende Laufzeitdateien oder horizontalen Seitenüberlauf |
-| Tastatur, Skriptverzicht und reduzierte Bewegung | Akkordeon und Reiter mit echten Chromium-Tastenereignissen bedienbar; vollständiges Beispiel auch ohne JavaScript lesbar |
-| Lange verschachtelte Druck-Abfolgen | Prozesspfad und Modell in Schritten, jeweils bei 0/15 mm Rand und Faktor 0,8/1,1: acht Drucklagen ohne textleere PDF-Seite |
-| UI-Kit-Matrix `qa-7` | 112 Läufe, 41 emulierte Tastaturprüfungen, 19 Interaktionsprüfungen, 76 Gate-Prüfungen; jeweils 0 mit Befund. Keine nicht prüfbaren Fokusfälle. [Messdaten](tests/ergebnisse/ui-matrix-2026-10-17.json) |
-| Eigenständiger Export | Vier Seiten mit lokalen Styles, Skripten, Schriften, Schriftlizenz und Assets; kein Projektquellcode im Export |
-| Paketprüfung | Aktive Dateien bytegleich; wiederholte Erzeugung mit identischem SHA-256-Wert |
-| JSON, SVG und lokale Dokumentlinks | Aktiver Bestand parsebar; Dokumentverweise auf vorhandene lokale Ziele |
-| `npm audit` | 0 gemeldete Schwachstellen der festgelegten Entwicklungsabhängigkeiten |
+| `npm run check:generated` | 45 abgeleitete Dateien aktuell; wiederholte Erzeugung unverändert |
+| `npm run build` | Komponenten, ausführliche Musterwebsite, Minimalstarter und vollständiges Profilbeispiel gebaut |
+| `npm test` | 96 bestanden, 0 fehlgeschlagen, 0 übersprungen |
+| Neue Generierungsprüfungen | Änderungen der Typquelle erreichen Einzel- und Sammeldatei; Profiländerungen erreichen Metadaten, Standangaben, Lockdatei und Paketnamen; fehlende Typquellen stoppen vor dem Schreiben |
+| Neue Projektprüfungen | Echter CLI-Aufruf mit eigenem Titel und Ziel; vier gebaute Seiten; Entwurfsprüfung und eigenständiger Export erfolgreich; fehlende Freigaben blockieren Produktion und erhalten eine vorhandene gültige Ausgabe |
+| Schutz vorhandener Inhalte | Erneute Anlage, ungültiger Name und unvollständige Optionen verändern keine vorhandenen Projekte |
+| Browserprüfung | 31 aktive Seiten bei 360 und 1280 px ohne Browserfehler, fehlende Laufzeitdateien oder horizontalen Seitenüberlauf |
+| Druck, Tastatur und Skriptverzicht | Acht Drucklagen ohne textleere Seiten; Akkordeon und Reiter bedienbar; fachneutrales Beispiel ohne JavaScript lesbar |
+| Vollständige UI-Matrix | 112 Läufe, 41 emulierte Tastaturprüfungen, 19 Interaktionsprüfungen und 76 Gate-Prüfungen ohne Befund; keine nicht prüfbaren Fokusfälle. [Messdaten](tests/ergebnisse/ui-matrix-2026.10.4.json) |
+| Visuelle Durchsicht | Startseite breit und Musterauswahl auf einem schmalen Bildschirm kontrolliert |
+| Paketabgleich | Aktive Dateien bytegleich; zweite Erzeugung mit identischem SHA-256-Wert; Archiv, neue Projekte und lokale Ausgaben ausgeschlossen |
+| Quellen und Links | Aktive JSON- und SVG-Dateien parsebar; lokale Dokumentziele vorhanden |
 
-Ausführung mit Node 24.19, Python 3.11, Playwright 1.62.1, lokalem Chromium und pdfplumber 0.11.8. Einrichtung und wiederholbare Befehle: [START-HIER.md](START-HIER.md). Die Prüfansicht lässt sich lokal erneut öffnen; ihre 200-%-Textprüfung ist CSS-emuliert.
+Die technischen Tests wurden lokal mit Node 24.19, Python 3.11, Playwright 1.62.1, Chromium und pdfplumber 0.11.8 ausgeführt. Der GitHub-Workflow führt dieselben Befehle bei Änderungen automatisch aus; sein tatsächlicher Laufstatus steht unter «Actions». Die UI-Matrix wartet auf ihr eigenes Fertigsignal, weil sie während der Prüfung fortlaufend Dateien lädt.
 
-## Grenzen und endgültige Abschlussentscheide
+## Geltung
 
-Dieser Bericht dokumentiert eine technische Prüfung und die eigene redaktionelle Durchsicht. Er behauptet keine unabhängige Zweitprüfung, klinische oder institutionelle Freigabe, Nutzerstudie oder reale Screenreader-Abnahme. Hardware-Tastatur, zusätzliche Browser-/Betriebssystemkombinationen, private Plattforminstallationen und Änderungen an anderen Website-Repos sind für diesen Profilabschluss ausgeschlossen. Es bleibt kein externer Abnahmeauftrag offen.
+Dies ist ein technischer Profilabschluss mit eigener redaktioneller Durchsicht, keine behauptete unabhängige, klinische oder institutionelle Freigabe. Neue klinische Websites brauchen ihre eigenen belegten Inhaltsprüfungen. Reale Screenreader-Abnahmen, Nutzerstudien, private Plattforminstallationen und Änderungen an anderen Website-Repos bleiben ausserhalb dieses Auftrags. Es wurde keine klinische Website veröffentlicht.
 
-Die leere Startervorlage und die wiederverwendbaren Prüfpläne enthalten weiterhin Eingabefelder für neue Projekte. Sie sind keine unerledigten Aufgaben dieses Profilstands. Ihr Produktionsschutz bleibt wirksam. Alte Freigaben werden weder nachträglich erfunden noch durch diesen Bericht ersetzt.
+Die offenen Felder im Minimalstarter und dessen Prüfbericht sind Eingaben für ein neues Projekt. Sie sind keine verbliebenen Aufgaben dieses Profilstands; der Produktionsschutz wird dadurch nicht umgangen. Alle vier beauftragten Verbesserungen sind abgeschlossen.

@@ -1,3 +1,4 @@
+/* Automatisch erzeugt: npm run generieren. Nur die Typquelle im Quellordner bearbeiten. */
 /**
  * Aufklappbare Abschnitte (APG-Muster Accordion) mit aria-expanded,
  * aria-controls und Tastaturnavigation zwischen den Kopfzeilen.

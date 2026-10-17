@@ -1,8 +1,10 @@
 # PUK Website-Profil · Start
 
-**Version 2026.10.3 · abgeschlossen am 17.10.2026.** Verbindlich ist dieses Repository. Alle früheren Pendenzen sind in den [Abschlussentscheiden](ABSCHLUSSENTSCHEIDE.md) erledigt oder ausgeschlossen; der [Prüfbericht](PRUEFBERICHT.md) nennt die tatsächlichen Nachweise.
+<!-- profil:stand -->
+**Version 2026.10.4 · Stand 17.10.2026.** Verbindlich ist dieses Repository. [Prüfbericht](PRUEFBERICHT.md) und [Abschlussentscheide](ABSCHLUSSENTSCHEIDE.md) dokumentieren den abgeschlossenen Profilstand.
+<!-- /profil:stand -->
 
-## Einrichten und prüfen
+## Einrichten
 
 Node ab 20, Python ab 3.11. Die erzeugten Websites selbst haben keine Paketabhängigkeiten.
 
@@ -13,39 +15,67 @@ python3 -m pip install -r requirements.txt
 npm ci
 npx playwright install chromium
 npm run build
+```
+
+Ein vorhandener Browser lässt sich über `CHROMIUM_EXECUTABLE_PATH=/pfad/zu/chromium` wählen. Auf einem frischen Linux-System installiert `npx playwright install --with-deps chromium` auch die benötigten Systembibliotheken.
+
+## Neue Website mit einem Befehl
+
+Im Repository-Stamm:
+
+```sh
+npm run neu -- mein-thema --titel "Mein Thema"
+npm run vorschau
+```
+
+Unter `http://127.0.0.1:8000/websites/mein-thema/` steht die bereits gebaute Vorschau. Das neue Projekt enthält vier Seiten: Übersicht, eine Themenseite, Impressum und Datenschutz sowie 404. Keine vorgegebenen klinischen Themen und keine automatischen Krisenblöcke. Bestehende Ordner werden nicht überschrieben. Mit `--ziel neuer-ordner` lässt sich ein anderes Ziel wählen.
+
+1. `websites/mein-thema/content/` mit eigenen Inhalten füllen.
+2. Titel, Navigation, Visualisierungsplan und passende Kontakte in `site.config.json` festlegen. Weitere Telefonnummern und Telefonlinks sind erlaubt; Krisenkontakte je Thema bewusst wählen.
+3. Den Prüfbericht für dieses neue Projekt mit tatsächlichen Nachweisen ausfüllen. Entwurfsstatus und fehlende Freigaben bleiben bis dahin Produktionsblocker.
+
+Danach bauen, prüfen und lokal exportieren:
+
+```sh
+npm run build:site -- --site websites/mein-thema
+npm run pruefen -- --site websites/mein-thema
+npm run export -- out-mein-thema --site websites/mein-thema
+```
+
+Ein Entwurfsexport dient der lokalen Vorschau. Vor einer Veröffentlichung mit `--production` prüfen und exportieren:
+
+```sh
+npm run pruefen -- --site websites/mein-thema --production
+npm run export -- out-mein-thema --site websites/mein-thema --production
+```
+
+Ein Export ist noch keine Veröffentlichung. Der Zielordner muss neu, leer oder ein erkennbarer früherer Export sein; fremde Dateien werden nicht ersetzt. Neue Projekte unter `websites/` gehören nicht zum Profilpaket.
+
+## Gestaltung auswählen
+
+Die [Musterauswahl](MUSTER-WAEHLEN.md) führt von der Leserfrage zu konkreten Beispielen. Lokal zeigt `http://127.0.0.1:8000/` die Startvorlage, das vollständige Profilbeispiel, Erklärgrafiken, Interaktionen, UI-Kit und Prüfansicht. Die ausführliche Musterwebsite bleibt als Referenz erhalten.
+
+## Profil ändern und prüfen
+
+| Änderung | Verbindliche Quelle |
+| --- | --- |
+| Profilversion und Build-Stände | `package.json`: `version` und `pukProfil` |
+| Komponententypen | `quellcode/komponenten/src/components/**/*.d.ts` |
+| Startseite | `quellcode/profil/index.html` |
+| Musterauswahl | `quellcode/profil/muster.json` und deren HTML-Hülle |
+| Regeln und Gestaltungswerte | `README.md`, `guidelines/`, `tokens/` und Komponenten-CSS |
+
+```sh
+npm run generieren
+npm run build
 npm test
+npm run test:ui
 npm run package
 npm run check:package
 ```
 
-Ein vorhandener Browser lässt sich über `CHROMIUM_EXECUTABLE_PATH=/pfad/zu/chromium` wählen. Die Paketversionen sind festgelegt; der Komponenten-Build erzeugt 26 React-Komponenten unter `window.PUKWeb`.
+`generieren` aktualisiert Einzel- und Sammeltypen, Standangaben, Versionsmetadaten und Musterübersichten. `check:generated` prüft dieselben Ausgaben ohne Schreibzugriff. Generierte Dateien nicht von Hand bearbeiten.
 
-## Lokal ansehen
+GitHub führt die Prüfungen bei jedem Push und Pull Request aus. Die Aktion «Profil prüfen» lässt sich auch manuell starten. Sie prüft zuerst, ob die eingecheckten Ableitungen aktuell sind, und danach Build, Tests, UI-Matrix und Paket. Der UI-Bericht wird als Laufartefakt aufbewahrt. Lokal steht er unter `out-pruefung/ui-matrix.json`.
 
-```sh
-python3 -m http.server 8000 --bind 127.0.0.1
-```
-
-Im Browser `http://127.0.0.1:8000/` öffnen. Die Startseite verlinkt Starter, vollständiges Profilbeispiel, Erklärmuster und Prüfansicht. Der Starter enthält absichtlich Eingabeparameter und keine offenen Projektaufträge. Sein Entwurfsgate besteht; das Produktionsgate sperrt die ungefüllte Vorlage.
-
-## Eine neue Website
-
-Den Ordner `templates/website/psychoeducation-site-starter/` innerhalb von `templates/website/` kopieren. Seitenvertrag und `content/` mit belegten Angaben füllen; passende Kontakte je Thema wählen. Keine automatisch ergänzten Notfall- oder Krisenblöcke.
-
-Im Stammordner mit dem gewünschten Website-Ordner:
-
-```sh
-node templates/website/psychoeducation-site-starter/tools/build.mjs --site templates/website/meine-website
-node templates/website/psychoeducation-site-starter/tools/gate.mjs --site templates/website/meine-website --production
-node templates/website/psychoeducation-site-starter/tools/export.mjs out-meine-website --site templates/website/meine-website --production
-```
-
-Das Produktionsgate verlangt einen zutreffenden Prüfbericht und die nötigen Inhaltsfreigaben für diese Website. Ein Export ist noch keine Veröffentlichung. Der Zielordner ist neu, leer oder ein erkennbarer früherer Export mit `.puk-export.json`; fremde Verzeichnisse werden nicht ersetzt.
-
-Das Profilbeispiel verwendet dieselben Werkzeuge und benötigt keine klinischen Angaben. Details in seinem [README](templates/website/profilbeispiel/README.md).
-
-## Bestand und Paket
-
-Aktiv sind Regeln, Komponenten, Gestaltungswerte, Vorlagen, Quellen, Tests und das fachneutrale Beispiel. `archiv/` enthält die frühere Historie und Website-Kopien; deren eigenständige Repos werden hier nicht bearbeitet. Das Paket `puk-website-profil-2026.10.3.zip` enthält den aktiven Stand und eine separate SHA-256-Datei. Archive und lokale Arbeitsverzeichnisse werden nicht mitgeliefert.
-
-Keine private Artefakt-Synchronisierung, keine zusätzliche Plattforminstallation und kein externer Freigabeauftrag sind für diesen abgeschlossenen Profilstand erforderlich.
+Die Paketbenennung und Zeitstempel stammen aus `package.json`. Der Generator schliesst Archiv, Abhängigkeiten, neue Website-Projekte und lokale Arbeitsausgaben aus. Historische Berichte sind abgeschlossene Quellen; keine private Artefakt-Synchronisierung oder externe Abnahme bleibt für diesen technischen Profilstand offen.

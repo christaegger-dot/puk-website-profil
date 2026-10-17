@@ -1,0 +1,53 @@
+name: Profil prüfen
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: profil-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  profil:
+    name: Build, Tests und Paket
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+      - name: Abhängigkeiten installieren
+        run: |
+          npm ci
+          python -m pip install -r requirements.txt
+          npx playwright install --with-deps chromium
+      - name: Generierte Dateien auf Aktualität prüfen
+        run: npm run check:generated
+      - name: Alle Referenzen bauen und auf Änderungen prüfen
+        run: |
+          npm run build
+          git diff --exit-code
+      - name: Typen und automatisierte Tests
+        run: npm test
+      - name: Vollständige UI-Matrix
+        run: npm run test:ui
+      - name: Versioniertes Downloadpaket abgleichen
+        run: npm run check:package
+      - name: UI-Prüfbericht aufbewahren
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ui-pruefbericht
+          path: out-pruefung/ui-matrix.json
+          if-no-files-found: ignore

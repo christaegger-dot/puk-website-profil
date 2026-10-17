@@ -1,0 +1,80 @@
+[
+  {
+    "frage": "Eine kurze Aussage oder wenige Schritte erklären",
+    "name": "Gut gegliederter Text",
+    "href": "templates/website/profilbeispiel/",
+    "hinweis": "Text verwenden, wenn eine Grafik nichts zusätzlich erklärt."
+  },
+  {
+    "frage": "Wechselwirkungen und Wiederholungen verstehen",
+    "name": "Kreislauf",
+    "href": "templates/website/longform/visualisierungsmuster.html#muster-kreislauf",
+    "hinweis": "Zeigt, wie eine Wirkung zum nächsten Anlass wird."
+  },
+  {
+    "frage": "Einen zeitlichen Ablauf nachvollziehen",
+    "name": "Prozesspfad",
+    "href": "templates/website/longform/visualisierungsmuster.html#muster-pfad",
+    "hinweis": "Macht Anfang, Reihenfolge und Ende sichtbar."
+  },
+  {
+    "frage": "Zwei Möglichkeiten anhand gleicher Merkmale vergleichen",
+    "name": "Vergleich",
+    "href": "templates/website/longform/visualisierungsmuster.html#muster-vergleich",
+    "hinweis": "Dieselben Merkmale in beiden Spalten verwenden."
+  },
+  {
+    "frage": "Zwischen nachvollziehbaren Wegen wählen",
+    "name": "Entscheidungsweg",
+    "href": "templates/website/longform/visualisierungsmuster.html#muster-entscheidung",
+    "hinweis": "Fragen und Zweige sichtbar machen; keine automatische medizinische Triage."
+  },
+  {
+    "frage": "Erklären, wie etwas entsteht",
+    "name": "Modell in Schritten",
+    "href": "templates/website/longform/erklaermuster.html#muster-g",
+    "hinweis": "Einzelne Schritte ergänzen ein insgesamt sichtbares Modell."
+  },
+  {
+    "frage": "Zwei gleichzeitig wichtige Anliegen zeigen",
+    "name": "Spannungsfeld",
+    "href": "templates/website/longform/erklaermuster.html#muster-h",
+    "hinweis": "Beide Pole und den Raum dazwischen benennen."
+  },
+  {
+    "frage": "Beziehungen und Zuständigkeiten ordnen",
+    "name": "Beziehungskarte",
+    "href": "templates/website/longform/erklaermuster.html#muster-i",
+    "hinweis": "Verbindungen und ihre Bedeutung sichtbar beschriften."
+  },
+  {
+    "frage": "Übergänge statt starrer Kategorien erklären",
+    "name": "Kontinuum",
+    "href": "templates/website/longform/erklaermuster.html#muster-j",
+    "hinweis": "Abstufungen ohne unbegründete Grenzwerte zeigen."
+  },
+  {
+    "frage": "Mehrere Ebenen eines Sachverhalts unterscheiden",
+    "name": "Schichtenmodell",
+    "href": "templates/website/longform/erklaermuster.html#muster-k",
+    "hinweis": "Jede Ebene hat eine benannte Funktion."
+  },
+  {
+    "frage": "Eine Alltagssituation anschaulich machen",
+    "name": "Illustration",
+    "href": "templates/website/longform/visualisierungsmuster.html#muster-illustration",
+    "hinweis": "Ein Bild, eine Idee; die Metapher muss ohne Code verständlich sein."
+  },
+  {
+    "frage": "Zusätzliche Informationen auf Wunsch anbieten",
+    "name": "Akkordeon und Reiter",
+    "href": "templates/website/interaktion/beispiel.html",
+    "hinweis": "Wichtige Aussagen immer direkt sichtbar halten."
+  },
+  {
+    "frage": "Den passenden Kontakt oder nächsten Schritt finden",
+    "name": "Anwendungsmuster",
+    "href": "ui_kits/website/",
+    "hinweis": "Kontakte passend zum Thema auswählen; keine automatisch ergänzten Krisenpfade."
+  }
+]

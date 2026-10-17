@@ -1,3 +1,4 @@
+/* Automatisch erzeugt: npm run generieren. Nur die Typquelle im Quellordner bearbeiten. */
 /**
  * Aufzählung oder nummerierte Liste mit echter ul/ol/li-Semantik.
  */

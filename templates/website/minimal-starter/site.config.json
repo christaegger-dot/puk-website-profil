@@ -1,0 +1,153 @@
+{
+  "$comment": "Schlanke Vorlage für neue Websites. Mit npm run neu -- name --titel \"Titel\" ein eigenes Projekt anlegen. Enthält keine klinischen Musterinhalte oder fachlichen Freigaben.",
+  "kitRevision": "PUK Website Kit 1.10.1-r4 · abgeleitet",
+  "canonicalSource": "PUK Zürich Design System 1.10.1 (unverändert)",
+  "assetVersion": "r4-12",
+  "siteTitle": "Titel der neuen Website",
+  "shortDescription": "Entwurf einer neuen Website der Fachstelle Angehörigenarbeit.",
+  "language": "de-CH",
+  "favicon": "assets/favicon.svg",
+  "logo": "assets/logo.svg",
+  "stylesheets": [
+    "../../../styles.css",
+    "../longform/visual-patterns.css",
+    "../longform/erklaermuster.css",
+    "../psychoeducation-site-starter/starter.css"
+  ],
+  "contentOwner": "Fachstelle Angehörigenarbeit PUK",
+  "editorialStatus": "draft",
+  "editorialStatusLabel": "Entwurf, nicht zur Veröffentlichung bestimmt",
+  "disclaimer": "Entwurf für die redaktionelle Bearbeitung.",
+  "sender": {
+    "orgUnit": "Fachstelle Angehörigenarbeit",
+    "institution": "Psychiatrische Universitätsklinik Zürich",
+    "email": "angehoerigenarbeit@pukzh.ch",
+    "status": "freigegeben",
+    "statusLabel": "Freigegeben"
+  },
+  "legal": {
+    "$comment": "Prüfbefund W3-05 (11.10.2026): Impressum und Datenschutzerklärung stehen in jeder Fusszeile. Entscheid 11.10.2026: eine eigene Seite je Website (Vorlage content/impressum-datenschutz.html), Herausgeberin Fachstelle Angehörigenarbeit, Inhalt und Umsetzung Ch. Egger. Die Angaben zum Datenschutz beschreiben, was der Code tut; bei Änderungen am Code mitprüfen.",
+    "imprint": {
+      "label": "Impressum",
+      "href": "impressum-datenschutz.html#impressum"
+    },
+    "privacy": {
+      "label": "Datenschutz",
+      "href": "impressum-datenschutz.html#datenschutz"
+    }
+  },
+  "pages": [
+    {
+      "id": "index",
+      "title": "Übersicht",
+      "href": "index.html",
+      "navLabel": "Übersicht",
+      "status": "published",
+      "primaryTask": "Den Einstieg in das neue Thema formulieren",
+      "description": "Den Einstieg in das neue Thema formulieren.",
+      "sensitiveTopics": [],
+      "visualPlan": [
+        {
+          "id": "v-index-einstieg",
+          "section": "Einstieg",
+          "sectionId": "einstieg",
+          "goal": "Den Einstieg in das neue Thema formulieren",
+          "format": "text",
+          "statement": "Redaktioneller Eingabebereich",
+          "source": "Eigene Strukturvorlage ohne fachliche Aussagen",
+          "alternative": "Lesbarer HTML-Text",
+          "reason": "Der leere Einstieg benötigt zunächst Text. Erklärformen nach der Ausarbeitung neu wählen.",
+          "approvalStatus": "entfällt"
+        }
+      ]
+    },
+    {
+      "id": "thema",
+      "title": "Thema ausarbeiten",
+      "href": "thema.html",
+      "navLabel": "Thema",
+      "status": "published",
+      "primaryTask": "Die zentrale Leserfrage beantworten",
+      "description": "Die zentrale Leserfrage beantworten.",
+      "sensitiveTopics": [],
+      "visualPlan": [
+        {
+          "id": "v-thema-inhalt",
+          "section": "Inhalt",
+          "sectionId": "inhalt",
+          "goal": "Die zentrale Leserfrage beantworten",
+          "format": "text",
+          "statement": "Redaktioneller Eingabebereich",
+          "source": "Eigene Strukturvorlage ohne fachliche Aussagen",
+          "alternative": "Lesbarer HTML-Text",
+          "reason": "Der leere Einstieg benötigt zunächst Text. Erklärformen nach der Ausarbeitung neu wählen.",
+          "approvalStatus": "entfällt"
+        }
+      ]
+    },
+    {
+      "id": "impressum-datenschutz",
+      "title": "Impressum und Datenschutz",
+      "href": "impressum-datenschutz.html",
+      "navLabel": null,
+      "status": "published",
+      "primaryTask": "Verantwortung und tatsächliche Datenverarbeitung beschreiben",
+      "description": "Verantwortung und tatsächliche Datenverarbeitung beschreiben.",
+      "sensitiveTopics": [],
+      "visualPlan": [
+        {
+          "id": "v-impressum-datenschutz-impressum",
+          "section": "Impressum",
+          "sectionId": "impressum",
+          "goal": "Verantwortung und tatsächliche Datenverarbeitung beschreiben",
+          "format": "text",
+          "statement": "Redaktioneller Eingabebereich",
+          "source": "Eigene Strukturvorlage ohne fachliche Aussagen",
+          "alternative": "Lesbarer HTML-Text",
+          "reason": "Der leere Einstieg benötigt zunächst Text. Erklärformen nach der Ausarbeitung neu wählen.",
+          "approvalStatus": "entfällt"
+        },
+        {
+          "id": "v-impressum-datenschutz-datenschutz",
+          "section": "Datenschutz",
+          "sectionId": "datenschutz",
+          "goal": "Verantwortung und tatsächliche Datenverarbeitung beschreiben",
+          "format": "text",
+          "statement": "Redaktioneller Eingabebereich",
+          "source": "Eigene Strukturvorlage ohne fachliche Aussagen",
+          "alternative": "Lesbarer HTML-Text",
+          "reason": "Der leere Einstieg benötigt zunächst Text. Erklärformen nach der Ausarbeitung neu wählen.",
+          "approvalStatus": "entfällt"
+        }
+      ]
+    },
+    {
+      "id": "404",
+      "title": "Seite nicht gefunden",
+      "href": "404.html",
+      "navLabel": null,
+      "status": "published",
+      "primaryTask": "Zur Übersicht zurückfinden",
+      "description": "Zur Übersicht zurückfinden.",
+      "sensitiveTopics": [],
+      "visualPlan": [
+        {
+          "id": "v-404-rueckweg",
+          "section": "Rueckweg",
+          "sectionId": "rueckweg",
+          "goal": "Zur Übersicht zurückfinden",
+          "format": "text",
+          "statement": "Redaktioneller Eingabebereich",
+          "source": "Eigene Strukturvorlage ohne fachliche Aussagen",
+          "alternative": "Lesbarer HTML-Text",
+          "reason": "Der leere Einstieg benötigt zunächst Text. Erklärformen nach der Ausarbeitung neu wählen.",
+          "approvalStatus": "entfällt"
+        }
+      ],
+      "role": "not-found"
+    }
+  ],
+  "siteUrl": "",
+  "interactionScript": "",
+  "robots": "noindex, nofollow"
+}

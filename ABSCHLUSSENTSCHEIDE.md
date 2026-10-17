@@ -1,6 +1,8 @@
 # Abschlussentscheide · 17.10.2026
 
-**Profil 2026.10.3 abgeschlossen. Offene Projektpendenzen: 0.** Der Auftrag umfasst dieselbe autonome Kontrolle, Reparatur und abschliessende Entscheidung wie bei den zuvor geprüften Profilen.
+<!-- profil:stand -->
+**Profil 2026.10.4 abgeschlossen · Stand 17.10.2026. Offene Projektpendenzen: 0.**
+<!-- /profil:stand -->
 
 | Bisherige Aufgabe oder Unklarheit | Abschlussentscheid | Status |
 | --- | --- | --- |
@@ -18,10 +20,19 @@
 | NT-1 und NT-4, widersprüchliche Statusangaben | Frühere Berichte als Historie archiviert; aktueller Prüfbericht mit neu erhobenen Nachweisen und klarer Geltung. | Erledigt |
 | NT-2, privaten Skill hochladen | Externe Installation oder Synchronisierung endgültig ausgeschlossen. Das Repository enthält die aktuellen Arbeitsregeln. | Ausgeschlossen |
 | NT-3, private Vorschaukarten | Keine Arbeit an nicht mitgelieferten Artefakt-Karten. Die lokalen Referenzseiten und deren CSS sind der gepflegte Bestand. | Ausgeschlossen |
-| NT-5, Paketfassungen unter gleichem Namen | Neues Paket 2026.10.3 mit eigener SHA-256-Datei und reproduzierbarem Generator. Altes Paket unverändert im Archiv. | Erledigt |
+| NT-5, Paketfassungen unter gleichem Namen | Versionsbezogenes Paket mit eigener SHA-256-Datei und reproduzierbarem Generator. Name und Zeitstempel stammen aus package.json; alte Pakete bleiben unverändert im Archiv. | Erledigt |
 | Übernahme in Borderline- und Depression-Websites | Eigenständige Projekte ausserhalb dieses Auftrags. Ihre früheren Kopien sind hier archiviert; kein Neubau und keine Veröffentlichung dieser Websites. | Ausgeschlossen |
 | Analyse-PR #9 «nicht mergen» | Ohne Merge geschlossen. Bestandsaufnahme im geschlossenen PR erhalten, kein Auftrag zum Umbau der anderen Website. | Geschlossen |
 | Zusätzliche HTML-Fassungen für Karussell und Tooltip | Nicht Bestandteil dieses Bestands; die vorhandenen React-Komponenten und HTML-Interaktionen sind vollständig dokumentiert. | Ausgeschlossen |
 | Echte Screenreader-, Nutzer-, institutionelle oder klinische Abnahmen | Für diesen internen technischen Profilabschluss nicht beauftragt. Neue klinische Websites brauchen ihre eigene Inhaltsprüfung; keine Zertifizierung behauptet. | Ausgeschlossen |
+
+## Vier beauftragte Verbesserungen
+
+| Punkt | Umsetzung | Status |
+| --- | --- | --- |
+| Automatische GitHub-Prüfungen | Aktion «Profil prüfen» bei Push, Pull Request und manuellem Start: Ableitungen, Build ohne Dateidifferenzen, Typen, Tests, UI-Matrix und Paketabgleich. Der UI-Bericht wird als Laufartefakt aufbewahrt. | Erledigt |
+| Einfacher Projektstart | Eigenständiger Minimalstarter mit vier Seiten und Befehl `npm run neu`. Pfade, Titel und erste Vorschau entstehen automatisch; vorhandene Ordner werden nicht überschrieben. Zentrale Werkzeuge werden nicht in Projekte kopiert. | Erledigt |
+| Doppelte Pflege reduzieren | Komponententypen nur im Quellordner pflegen. Einzel- und Sammeldeklarationen werden erzeugt. Profilversion, Build-Stände, Paketname und Paketzeitstempel aus package.json; Ableitungsprüfung auch in GitHub. | Erledigt |
+| Muster leichter finden | Startseite nach Beginnen, Auswählen und Prüfen gegliedert. Musterauswahl nach Leserfrage als HTML und Markdown aus einem gemeinsamen Katalog mit geprüften Sprungzielen erzeugt. | Erledigt |
 
 Eingabeparameter der leeren Vorlagen sind keine offenen Projektaufgaben. Der Produktionsschutz bleibt aktiv. Alle Entscheide gelten für diesen abgeschlossenen Profilstand; es gibt keinen zurückgestellten Backlog. Die Nachweise stehen im [Prüfbericht](PRUEFBERICHT.md).

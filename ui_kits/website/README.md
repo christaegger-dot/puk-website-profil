@@ -21,7 +21,9 @@ Sprungziele haben die Form `#<route>/<id>`, zum Beispiel `#grundlagenkapitel/ver
 
 ## Geprüfter Stand · 17.10.2026
 
-Prüfskript `qa-7`, Kit-Referenz `r4-1`, Starter-Build `r4-11`. Die unterschiedlichen Kennungen benennen die jeweiligen Quellen, nicht widersprüchliche Paketversionen.
+<!-- profil:stand -->
+Prüfskript `qa-8`, Kit-Referenz `r4-1`, Starter-Build `r4-12`. Die Kennungen werden aus `package.json` erzeugt.
+<!-- /profil:stand -->
 
 - Matrix: 14 Ansichten × vier Breiten (320, 360, 768, 1440 px) × normale und doppelte Textgrösse = **112 Läufe, 0 mit Befund**.
 - Emulierte Tastaturprüfung: **41 Prüfungen, 0 mit Befund**. Interaktionen: **19 Prüfungen, 0 mit Befund**.
@@ -30,4 +32,6 @@ Prüfskript `qa-7`, Kit-Referenz `r4-1`, Starter-Build `r4-11`. Die unterschiedl
 
 Die doppelte Textgrösse wird durch CSS emuliert. Die DOM-Fokusprüfungen und Chromium-Tastenereignisse belegen keine reale Hardware-, Firefox-, Safari- oder Screenreader-Abnahme. Diese zusätzlichen Abnahmen sind für den technischen Profilabschluss ausgeschlossen, kein verbleibender Auftrag. Neue Websites werden gesondert geprüft.
 
-Nachweise: [Matrixdaten](../../tests/ergebnisse/ui-matrix-2026-10-17.json), [aktueller Prüfbericht](../../PRUEFBERICHT.md). Frühere Protokolle sind [archivierte Historie](https://github.com/christaegger-dot/puk-website-profil/blob/main/archiv/README.md), keine aktuellen Prüfnachweise oder offenen Pendenzen.
+Nachweise: [Matrixdaten](../../tests/ergebnisse/ui-matrix-2026.10.4.json), [aktueller Prüfbericht](../../PRUEFBERICHT.md). Frühere Protokolle sind [archivierte Historie](https://github.com/christaegger-dot/puk-website-profil/blob/main/archiv/README.md), keine aktuellen Prüfnachweise oder offenen Pendenzen.
+
+Vollständiger wiederholbarer Lauf: `npm run test:ui`; Ergebnis unter `out-pruefung/ui-matrix.json`. Derselbe Befehl läuft in der GitHub-Aktion.

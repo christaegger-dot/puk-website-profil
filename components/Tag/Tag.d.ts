@@ -1,3 +1,4 @@
+/* Automatisch erzeugt: npm run generieren. Nur die Typquelle im Quellordner bearbeiten. */
 export interface TagProps {
   children?: React.ReactNode;
   /** Renders a × affordance and fires on click. */

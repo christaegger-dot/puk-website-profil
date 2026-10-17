@@ -1,3 +1,4 @@
+/* Automatisch erzeugt: npm run generieren. Nur die Typquelle im Quellordner bearbeiten. */
 /**
  * Dropdown-Menü für Navigation (Disclosure-Muster): Schaltfläche klappt eine Liste von Links auf. Kein Aktionsmenü.
  */

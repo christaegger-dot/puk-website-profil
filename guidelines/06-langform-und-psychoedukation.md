@@ -33,7 +33,7 @@ liegt in `tokens/web-longform.css`.
 
 ## Mehrseitige Websites (r4)
 
-- **MUSS:** Mehrseitige psychoedukative Websites mit `templates/website/psychoeducation-site-starter/` bauen. Navigation, Meta, Favicon, Absenderin und ausdrücklich gewählte optionale Zuständigkeitstexte entstehen aus `site.config.json`, nicht von Hand. Ohne diesen Entscheid erscheint kein solcher Footertext.
+- **MUSS:** Mehrseitige psychoedukative Websites mit den zentralen Werkzeugen unter `templates/website/psychoeducation-site-starter/tools/` bauen. Neue Projekte beginnen mit `npm run neu` aus dem schlanken Minimalstarter; der ausführliche Starter bleibt eine Musterwebsite. Navigation, Meta, Favicon, Absenderin und ausdrücklich gewählte optionale Zuständigkeitstexte entstehen aus `site.config.json`, nicht von Hand. Ohne diesen Entscheid erscheint kein solcher Footertext.
 - **MUSS:** Die Organisationseinheit ist als Absenderin sichtbar; ohne Freigabe mit sichtbarem Status «Platzhalter, nicht freigegeben».
 - **MUSS:** Keine automatische Krisenrubrik. Telefonnummern und Krisenkontakte je Thema bewusst wählen; optionale konfigurierte Texte stehen in `responsibility`. Regeln im README-Abschnitt «Telefonnummern und Kriseninformationen».
 - **MUSS:** Vor der Veröffentlichung den Ablauf im Abschnitt «Prüfung und Freigabe» durchlaufen; zuletzt `node tools/gate.mjs --production` ohne blockierende Befunde.

@@ -1,4 +1,4 @@
-/* PUK Website-Profil – Typen der 26 Komponenten unter window.PUKWeb (strikt typgeprüft). */
+/* Automatisch erzeugt: npm run generieren. Quellen: quellcode/komponenten/src/components/. */
 
 // ---- Button ----
 /**

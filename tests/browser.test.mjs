@@ -15,8 +15,8 @@ before(async()=>{
 });
 after(async()=>{if(browser)await browser.close();if(server)await new Promise(r=>server.close(r));fs.rmSync(tmp,{recursive:true,force:true});});
 test('Alle aktiven Vorschauseiten laden schmal und breit ohne Browserfehler oder Seitenüberlauf',async()=>{
- const dirs=['templates/website/longform','templates/website/applications','templates/website/interaktion','templates/website/psychoeducation-site-starter','templates/website/profilbeispiel','ui_kits/website'];
- const urls=['index.html','templates/website/Website.dc.html',...dirs.flatMap(d=>fs.readdirSync(path.join(root,d)).filter(x=>x.endsWith('.html')).map(x=>d+'/'+x))];
+ const dirs=['templates/website/longform','templates/website/applications','templates/website/interaktion','templates/website/psychoeducation-site-starter','templates/website/minimal-starter','templates/website/profilbeispiel','ui_kits/website'];
+ const urls=['index.html','musterauswahl.html','templates/website/Website.dc.html',...dirs.flatMap(d=>fs.readdirSync(path.join(root,d)).filter(x=>x.endsWith('.html')).map(x=>d+'/'+x))];
  for(const width of [360,1280]){const page=await browser.newPage({viewport:{width,height:900}});const errors=[];page.on('pageerror',e=>errors.push(String(e)));page.on('response',r=>{if(r.status()>=400)errors.push(r.status()+': '+r.url());});page.on('console',m=>{if(m.type()==='error')errors.push(m.text());});
   for(const url of urls){await page.goto(base+url,{waitUntil:'networkidle'});await page.evaluate(()=>document.fonts.ready);assert.deepEqual(errors,[],`${url} ${width}`);assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth-innerWidth<=1),`${url} ${width}`);}await page.close();}
  console.log(`${urls.length} aktive Seiten in zwei Breiten geprüft.`);

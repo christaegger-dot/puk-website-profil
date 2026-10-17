@@ -1,3 +1,4 @@
+/* Automatisch erzeugt: npm run generieren. Nur die Typquelle im Quellordner bearbeiten. */
 /* Die Optionsform ist eine Datenstruktur, kein Bauteil. Als eigenes
    `export interface SelectOption` stand sie vor Select in dieser Datei, und der
    Compiler nahm sie als das deklarierte Bauteil — Adhärenzregeln für ein

@@ -1,5 +1,7 @@
 # Psychoedukations-Starter · Profil 2026.10.3
 
+Neue Websites mit `npm run neu -- mein-thema --titel "Mein Thema"` aus dem [schlanken Starter](../minimal-starter/README.md) anlegen. Dieser Ordner bleibt die ausführliche Musterwebsite und enthält die zentralen Werkzeuge.
+
 Abgeschlossene wiederverwendbare Vorlage mit sieben Seiten und einer Browser-Prüfansicht, Build r4-11. Die synthetischen Referenzinhalte zeigen Gestaltung und Erklärmuster. Ungefüllte Kontakte, Downloads und Bildfreigaben sind Eingabeparameter für neue Websites; das Produktionsgate sperrt sie weiterhin. Sie sind kein Backlog dieses Profilabschlusses.
 
 Ein vollständiges fachneutrales Beispiel ohne ungefüllte Parameter steht in `../profilbeispiel/`. Verbindliche Regeln: README im Repository-Stamm; Abschlussentscheide und Prüfbericht ebenfalls dort.

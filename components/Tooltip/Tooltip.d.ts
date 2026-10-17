@@ -1,3 +1,4 @@
+/* Automatisch erzeugt: npm run generieren. Nur die Typquelle im Quellordner bearbeiten. */
 export interface TooltipProps {
   label: React.ReactNode;
   /** A single trigger element is preferred; other content receives a focusable wrapper. */

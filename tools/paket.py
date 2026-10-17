@@ -1,13 +1,17 @@
 """Reproduzierbares Profilpaket; Archiv und lokale Arbeitsdateien sind ausgeschlossen."""
 import argparse
 import hashlib
+import json
+from datetime import date
 from pathlib import Path
 import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
-NAME = 'puk-website-profil-2026.10.3.zip'
+PROFILE = json.loads((ROOT / 'package.json').read_text(encoding='utf-8'))
+NAME = 'puk-website-profil-' + PROFILE['version'] + '.zip'
+STAMP = date.fromisoformat(PROFILE['pukProfil']['stand'])
 DIRECTORIES = ('assets', 'components', 'fonts', 'licenses', 'tokens', 'templates', 'ui_kits', 'platform', 'quellcode', 'guidelines', 'tools', 'tests', '.github')
-FILES = ('README.md', 'START-HIER.md', 'CLAUDE.md', 'ABSCHLUSSENTSCHEIDE.md', 'PRUEFBERICHT.md', 'styles.css', 'tokens.json', '_ds_bundle.js', '_headers', 'index.html', 'package.json', 'package-lock.json', 'requirements.txt', '.gitignore')
+FILES = ('README.md', 'START-HIER.md', 'MUSTER-WAEHLEN.md', 'CLAUDE.md', 'ABSCHLUSSENTSCHEIDE.md', 'PRUEFBERICHT.md', 'styles.css', 'tokens.json', '_ds_bundle.js', '_headers', 'index.html', 'musterauswahl.html', 'package.json', 'package-lock.json', 'requirements.txt', '.gitignore')
 
 
 def entries():
@@ -22,7 +26,7 @@ def build(target):
         for path in entries():
             if path.is_symlink():
                 raise ValueError('Keine Verknüpfungen im Paket: ' + str(path))
-            item = zipfile.ZipInfo('puk-website-profil/' + path.relative_to(ROOT).as_posix(), (2026, 10, 17, 0, 0, 0))
+            item = zipfile.ZipInfo('puk-website-profil/' + path.relative_to(ROOT).as_posix(), (STAMP.year, STAMP.month, STAMP.day, 0, 0, 0))
             item.compress_type = zipfile.ZIP_DEFLATED
             item.external_attr = 0o644 << 16
             item.create_system = 3
