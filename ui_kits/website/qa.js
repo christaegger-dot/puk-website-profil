@@ -6,7 +6,7 @@ const wait=ms=>new Promise(r=>setTimeout(r,ms));
 async function ready(d){for(let i=0;i<60&&d.querySelector('[data-visual-patterns=loading]');i++)await wait(50);}
 function load(v,w){return new Promise(res=>{const st=document.getElementById('stage');st.innerHTML='';const f=document.createElement('iframe');f.style.width=w+'px';f.onload=async()=>{await wait(50);await ready(f.contentDocument);try{window.focus();f.contentWindow.focus();}catch(e){}res(f);};f.src=v.startsWith('site:')?SITE+v.slice(5)+'.html?qa='+Date.now():'index.html?qa='+Date.now()+'#'+v;st.appendChild(f);});}
 function scaleText(doc){const els=[...doc.body.querySelectorAll('*')];const sizes=els.map(e=>parseFloat(doc.defaultView.getComputedStyle(e).fontSize));els.forEach((e,i)=>e.style.setProperty('font-size',(sizes[i]*2)+'px','important'));}
-const BUILD='r4-1';const QA_REV='qa-8';const SITE='../../templates/website/psychoeducation-site-starter/';const GEN=/^(quelle|quellen|mehr|mehr erfahren|hier|link|details|weiterlesen|langbeschreibung|textfassung|download|pdf)$/i;
+const BUILD='r4-1';const QA_REV='qa-9';const SITE='../../templates/website/psychoeducation-site-starter/';const GEN=/^(quelle|quellen|mehr|mehr erfahren|hier|link|details|weiterlesen|langbeschreibung|textfassung|download|pdf)$/i;
 function staleAudit(doc){const iss=[];const sb=doc.documentElement.getAttribute('data-puk-site-build');if(sb!==null){const SB=(window.PUKSiteContract&&PUKSiteContract.BUILD)||BUILD;if(sb!==SB)iss.push('Starterseite veraltet ('+sb+')');[...doc.querySelectorAll('link[rel=stylesheet]')].forEach(e=>{if(!e.href.includes('v='+SB))iss.push('veraltet: '+e.href.split('/').pop());});return iss;}const m=doc.querySelector('meta[name=puk-kit-build]');if(!m||m.content!==BUILD)iss.push('index.html veraltet ('+(m?m.content:'ohne Build')+')');[...doc.querySelectorAll('link[rel=stylesheet][href*="kit.css"],link[rel=stylesheet][href*="visual-patterns.css"],script[src*="js/"]')].forEach(e=>{const u=e.href||e.src;if(!u.includes('v='+BUILD))iss.push('veraltet: '+u.split('/').pop());});const vp=doc.querySelector('[data-visual-patterns]');if(vp&&vp.dataset.visualPatterns!=='ready')iss.push('Musterseite nicht geladen');return iss;}
 function measure(doc,t){
   const win=doc.defaultView,vw=doc.documentElement.clientWidth,sw=doc.documentElement.scrollWidth;
@@ -51,12 +51,7 @@ m.querySelectorAll('svg').forEach(s=>{if(s.closest('[aria-hidden=true],[role=img
 const ext=[...new Set(doc.defaultView.performance.getEntriesByType('resource').map(e=>e.name).filter(u=>!u.startsWith(location.origin)&&!u.startsWith('data:')))];
 if(ext.length)iss.push('extern: '+ext.join(', '));
 return {txt:m.querySelectorAll('figure').length+' fig · '+m.querySelectorAll('table').length+' tab · '+(ext.length?ext.length+' extern':'0 extern')+(iss.length?': '+iss.join(', '):' ok'),bad:iss.length>0};}
-function midWord(doc){
-  const main=doc.querySelector('main');if(!main)return [];
-  const w=doc.createTreeWalker(main,NodeFilter.SHOW_TEXT);const hits=[];let n;
-  while((n=w.nextNode())){const re=/\p{L}{2,}/gu;let m;while((m=re.exec(n.data))){const r=doc.createRange();r.setStart(n,m.index);r.setEnd(n,m.index+m[0].length);const rs=[...r.getClientRects()].filter(x=>x.width>0);if(rs.length>1&&Math.abs(rs[0].top-rs[rs.length-1].top)>2)hits.push('Wort getrennt: '+m[0]);}}
-  return [...new Set(hits)].slice(0,4);
-}
+const midWord = doc => PUKTextAudit.midWord(doc);
 function tabbables(doc,root){const win=doc.defaultView;return [...(root||doc).querySelectorAll('a[href],button,input,select,textarea,[tabindex]')].filter(e=>!e.disabled&&e.tabIndex>=0&&e.getClientRects().length>0&&win.getComputedStyle(e).visibility!=='hidden');}
 function ringOk(doc,e){if(!doc.hasFocus())return null;e.focus({preventScroll:true});if(!doc.hasFocus())return null;if(doc.activeElement!==e)return false;const cs=doc.defaultView.getComputedStyle(e);return (cs.outlineStyle!=='none'&&parseFloat(cs.outlineWidth)>0)||cs.boxShadow!=='none';}
 function splitTop(sel){const out=[];let d=0,cur='';for(const ch of sel){if(ch==='('||ch==='[')d++;else if(ch===')'||ch===']')d--;if(ch===','&&d===0){out.push(cur);cur='';}else cur+=ch;}out.push(cur);return out;}

@@ -50,7 +50,7 @@ export async function sollDateien(root = ROOT) {
   outputs.set(contract, code.replace(/^const BUILD = '[^']+';[^\n]*$/m, `const BUILD = '${meta.starterBuild}'; // erzeugt aus package.json`));
   const qa = await read('ui_kits/website/qa.js');
   outputs.set('ui_kits/website/qa.js', qa.replace(/const BUILD='[^']+';const QA_REV='[^']+';/, `const BUILD='${meta.kitBuild}';const QA_REV='${meta.qaRevision}';`));
-  outputs.set('ui_kits/website/qa.html', (await read('ui_kits/website/qa.html')).replace(/Prüfskript-Stand: <strong>qa-\d+<\/strong> · Erwarteter Quellstand: <strong>r\d+-\d+<\/strong>/, `Prüfskript-Stand: <strong>${meta.qaRevision}</strong> · Erwarteter Quellstand: <strong>${meta.kitBuild}</strong>`).replace(/contract\.js\?v=r\d+-\d+/, 'contract.js?v=' + meta.starterBuild));
+  outputs.set('ui_kits/website/qa.html', (await read('ui_kits/website/qa.html')).replace(/Prüfskript-Stand: <strong>qa-\d+<\/strong> · Erwarteter Quellstand: <strong>r\d+-\d+<\/strong>/, `Prüfskript-Stand: <strong>${meta.qaRevision}</strong> · Erwarteter Quellstand: <strong>${meta.kitBuild}</strong>`).replace(/contract\.js\?v=r\d+-\d+/, 'contract.js?v=' + meta.starterBuild).replace(/src="(text-audit|qa)\.js(?:\?v=qa-\d+)?"/g, `src="$1.js?v=${meta.qaRevision}"`));
   outputs.set('ui_kits/website/index.html', (await read('ui_kits/website/index.html')).replace(/(name="puk-kit-build" content=")[^"]+/, '$1' + meta.kitBuild).replace(/\?v=r\d+-\d+/g, '?v=' + meta.kitBuild));
   const docs = {
     'README.md': `**Fachstellen-Profil ${meta.version}** · Stand ${meta.datum} · offene Projektpendenzen: 0. Basis: PUK Zürich Design System 1.10.1 und PUK Website Kit 1.10.1-r4. Vier Ebenen – bei Widerspruch gilt die obere:`,

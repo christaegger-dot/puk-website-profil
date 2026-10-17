@@ -3,7 +3,7 @@ Website-Profil der **Psychiatrischen Universitätsklinik Zürich (PUK)** für We
 ## Verbindlichkeit und Version
 
 <!-- profil:stand -->
-**Fachstellen-Profil 2026.10.4** · Stand 17.10.2026 · offene Projektpendenzen: 0. Basis: PUK Zürich Design System 1.10.1 und PUK Website Kit 1.10.1-r4. Vier Ebenen – bei Widerspruch gilt die obere:
+**Fachstellen-Profil 2026.10.5** · Stand 17.10.2026 · offene Projektpendenzen: 0. Basis: PUK Zürich Design System 1.10.1 und PUK Website Kit 1.10.1-r4. Vier Ebenen – bei Widerspruch gilt die obere:
 <!-- /profil:stand -->
 
 | Ebene | Umfasst | Erkennbar an | Ändern darf |
@@ -154,7 +154,7 @@ Website-Profil der **Psychiatrischen Universitätsklinik Zürich (PUK)** für We
 - `package.json`: einzige Quelle der Profilversion und Build-Stände; `package-lock.json` legt die Entwicklungsabhängigkeiten fest. `npm run check:generated` erkennt veraltete Ableitungen, ohne Dateien zu ändern.
 - GitHub prüft bei Push, Pull Request und manuellem Start automatisch die Ableitungen, den Build, die Typen, die Tests, die vollständige UI-Matrix und das Paket. Die bisherige Beschreibungskontrolle für offene Prüfstufen bleibt zusätzlich erhalten.
 <!-- profil:paket -->
-- `tools/paket.py`: reproduzierbares Paket [puk-website-profil-2026.10.4.zip](https://github.com/christaegger-dot/puk-website-profil/raw/refs/heads/main/puk-website-profil-2026.10.4.zip) mit [SHA-256-Datei](https://github.com/christaegger-dot/puk-website-profil/raw/refs/heads/main/puk-website-profil-2026.10.4.zip.sha256). Archiv, Projekte unter `websites/` und lokale Arbeitsausgaben sind nicht enthalten.
+- `tools/paket.py`: reproduzierbares Paket [puk-website-profil-2026.10.5.zip](https://github.com/christaegger-dot/puk-website-profil/raw/refs/heads/main/puk-website-profil-2026.10.5.zip) mit [SHA-256-Datei](https://github.com/christaegger-dot/puk-website-profil/raw/refs/heads/main/puk-website-profil-2026.10.5.zip.sha256). Archiv, Projekte unter `websites/` und lokale Arbeitsausgaben sind nicht enthalten.
 <!-- /profil:paket -->
 - Der Exporter schreibt in einen neuen oder erkennbaren Exportordner. Erst nach vollständiger Prüfung ersetzt er den vorherigen Export. Fremde Dateien werden nicht überschrieben. Eine Website zu exportieren veröffentlicht sie nicht.
 

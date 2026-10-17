@@ -23,6 +23,30 @@ test('Alle aktiven Vorschauseiten laden schmal und breit ohne Browserfehler oder
 });
 test('Akkordeon und Reiter sind mit der Tastatur bedienbar',async()=>{const page=await browser.newPage({viewport:{width:360,height:800}});try{await page.goto(base+'templates/website/interaktion/beispiel.html',{waitUntil:'networkidle'});const buttons=page.locator('[data-puk-accordion] button');assert.ok(await buttons.count()>0);const button=buttons.first();await button.focus();const initial=await button.getAttribute('aria-expanded');await page.keyboard.press('Enter');assert.notEqual(await button.getAttribute('aria-expanded'),initial);const tabs=page.locator('[data-puk-tabs] [role="tab"]');assert.ok(await tabs.count()>1);await tabs.first().focus();await page.keyboard.press('ArrowRight');assert.equal(await tabs.nth(1).getAttribute('aria-selected'),'true');}finally{await page.close();}});
 test('Standardbeispiel enthält ohne Skript und bei reduzierter Bewegung keinen automatischen Krisenblock',async()=>{const context=await browser.newContext({javaScriptEnabled:false,reducedMotion:'reduce',viewport:{width:360,height:800}});try{const page=await context.newPage();await page.goto(base+'templates/website/profilbeispiel/',{waitUntil:'networkidle'});assert.equal(await page.locator('main h1').count(),1);assert.equal(await page.locator('a[href^="mailto:"]').count(),1);assert.equal(await page.locator('[data-safety-access]').count(),0);assert.doesNotMatch(await page.locator('footer').innerText(),/Notfalldienst|Polizei/);}finally{await context.close();}});
+test('Sprachliche Silbentrennung wird nicht als willkürlicher Wortumbruch gemeldet',async()=>{
+ const page=await browser.newPage();try{
+  await page.setContent('<main lang="de-CH"><p style="font:20px Arial;width:90px;hyphens:auto;overflow-wrap:normal">Angehörige nachweisbare gemeinsam</p></main>');
+  await page.addScriptTag({path:path.join(root,'ui_kits/website/text-audit.js')});
+  assert.deepEqual(await page.evaluate(()=>PUKTextAudit.midWord(document)),[]);
+ }finally{await page.close();}
+});
+test('Willkürliche Notumbrüche bleiben auch bei erlaubter Silbentrennung ein Befund',async()=>{
+ const page=await browser.newPage();try{
+  for(const hyphens of ['none','auto']){
+   await page.setContent(`<main lang="de-CH"><p style="font:20px Arial;width:24px;hyphens:${hyphens};overflow-wrap:anywhere">AAAAAAAAAAAAAAAAAA</p></main>`);
+   await page.addScriptTag({path:path.join(root,'ui_kits/website/text-audit.js')});
+   assert.deepEqual(await page.evaluate(()=>PUKTextAudit.midWord(document)),['Wort getrennt: AAAAAAAAAAAAAAAAAA']);
+  }
+ }finally{await page.close();}
+});
+test('Die Textprüfung erhält Inline-Styles und Darstellung unverändert',async()=>{
+ const page=await browser.newPage();try{
+  await page.setContent('<style>main span{font:20px Arial;display:block;width:90px;hyphens:auto;overflow-wrap:anywhere}</style><main lang="de-CH"><span>Angehörige nachweisbare</span><span style="color:blue">gemeinsam Angehörige</span></main>');
+  await page.addScriptTag({path:path.join(root,'ui_kits/website/text-audit.js')});
+  const result=await page.evaluate(()=>{const main=document.querySelector('main');const before={html:main.innerHTML,height:main.getBoundingClientRect().height};PUKTextAudit.midWord(document);return {before,after:{html:main.innerHTML,height:main.getBoundingClientRect().height}};});
+  assert.deepEqual(result.after,result.before);
+ }finally{await page.close();}
+});
 test('Lange verschachtelte Druck-Abfolgen erzeugen in acht Drucklagen keine leere Seite',async()=>{
  const page=await browser.newPage({viewport:{width:1280,height:1000}});
  try{

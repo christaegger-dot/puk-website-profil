@@ -1,7 +1,7 @@
 # Abschlussentscheide · 17.10.2026
 
 <!-- profil:stand -->
-**Profil 2026.10.4 abgeschlossen · Stand 17.10.2026. Offene Projektpendenzen: 0.**
+**Profil 2026.10.5 abgeschlossen · Stand 17.10.2026. Offene Projektpendenzen: 0.**
 <!-- /profil:stand -->
 
 | Bisherige Aufgabe oder Unklarheit | Abschlussentscheid | Status |
