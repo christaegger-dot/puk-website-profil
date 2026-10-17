@@ -35,19 +35,39 @@
     "minimumInlineGutterPx": 20,
     "maximumInlineGutterPx": 48,
     "horizontalOverflowAllowed": false,
-    "wideContainerCentered": true
+    "wideContainerCentered": true,
+    "entry": {
+      "guideline": "guidelines/08-einstieg-und-seitenrahmen.md",
+      "primaryActionBeforeSecondaryNotes": true,
+      "referenceViewportPx": {
+        "width": 375,
+        "height": 812
+      },
+      "firstActionInInitialViewport": "Gestaltungsziel bei Standardschrift; keine feste Höhenbegrenzung, besonders bei vergrösserter Schrift."
+    }
   },
   "typography": {
     "family": "Rubik",
     "bodyMaximumPx": 21,
     "headingMaximumPx": {
+      "h1": 60,
+      "h2": 44,
+      "h3": 32
+    },
+    "fluidHeadingsRequired": true,
+    "bodyMeasureMinimumCh": 45,
+    "bodyMeasureMaximumCh": 75,
+    "measuredReferenceHeadingMaximumPx": {
       "h1": 114,
       "h2": 57,
       "h3": 40
     },
-    "fluidHeadingsRequired": true,
-    "bodyMeasureMinimumCh": 45,
-    "bodyMeasureMaximumCh": 75
+    "headingMinimumPx": {
+      "h1": 32,
+      "h2": 28,
+      "h3": 24
+    },
+    "headingSizeScope": "Fluide Leseskala bei Standardschrift; rem-Werte wachsen mit der Browser-Schriftgrösse. Abschnittstitel dürfen zusätzlich an die Spaltenbreite angepasst werden."
   },
   "semantics": {
     "languageRequired": true,
@@ -72,9 +92,12 @@
       "minimumSpacingRequired": false,
       "wcag22Reference": "SC 2.5.8 inline target exception"
     },
-    "narrowMode": "wrapping-grid",
+    "narrowMode": "wrapping-grid-up-to-four-otherwise-disclosure",
     "emergencyLinkVisuallyDistinct": false,
-    "colorAloneForActiveStateAllowed": false
+    "colorAloneForActiveStateAllowed": false,
+    "narrowMenuFromItems": 5,
+    "narrowBreakpointPx": 760,
+    "noScriptNavigation": "all-links-visible"
   },
   "content": {
     "tokensInsteadOfColorLiterals": true,
@@ -179,7 +202,9 @@
   "qualityGates": {
     "viewports": [
       360,
+      375,
       768,
+      1024,
       1440
     ],
     "reflowWidthPx": 320,
@@ -215,5 +240,5 @@
       "Stress und Stressbewaeltigung"
     ]
   },
-  "profileVersion": "2026.10.5"
+  "profileVersion": "2026.10.6"
 }

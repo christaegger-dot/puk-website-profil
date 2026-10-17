@@ -30,7 +30,7 @@
 .puk-longform__section-heading .puk-web-h2{max-width:none;font-size:max(1.625rem,min(var(--web-size-h2-fluid),11.5cqi))}
 .puk-longform__section-grid{grid-template-columns:minmax(220px,.58fr) minmax(0,1.42fr)}
 @media (max-width:760px){.puk-longform__section-grid{grid-template-columns:minmax(0,1fr)}}
-/* Hauptnavigation unter 760 px zweispaltig (Prüfbefund BD-05/W3-06, 11.10.2026); bei grosser Schrift einspaltig, weil die Spaltenbreite in rem wächst. */
+/* Hauptnavigation bis 760 px zweispaltig (Prüfbefund BD-05/W3-06, 11.10.2026); bei grosser Schrift einspaltig, weil die Spaltenbreite in rem wächst. */
 @media (max-width:760px){.puk-web-nav__list{grid-template-columns:repeat(auto-fit,minmax(min(100%,8.25rem),1fr))}}
 .puk-web-nav__link,.puk-longform__roadmap a,.puk-link--action{min-width:0;max-width:100%;overflow-wrap:anywhere}
 /* Sprungziel am Seitenende: Ein Abschnitt, auf den ein Link springt und der zuletzt steht, braucht genug Höhe,
@@ -42,8 +42,8 @@
 /* Zwischentitel innerhalb eines Abschnitts (z. B. häufige Fragen) */
 .puk-site-subheading{margin:var(--space-8) 0 var(--space-3);font:var(--type-title-3);color:var(--text-default)}
 
-/* Hauptnavigation mit mehr als sechs Punkten (Profilentscheid 11.10.2026, Abschnitt «Interaktionskonzept»): tools/build.mjs
-   setzt die Liste in ein Dropdown-Menü (data-puk-disclosure). Unter 760 px öffnet «Menü» die Liste im Fluss; breit bleiben alle
+/* Hauptnavigation ab fünf Punkten (Profilentscheid 17.10.2026, Abschnitt «Interaktionskonzept»): tools/build.mjs
+   setzt die Liste in ein Dropdown-Menü (data-puk-disclosure). Bis 760 px öffnet «Menü» die Liste im Fluss; breit bleiben alle
    Punkte sichtbar, die Schaltfläche entfällt. Ohne Skript steht die Liste offen. */
 .puk-site-menu{display:block}
 .puk-site-menu .puk-web-nav__list{position:static;min-width:0;max-width:none;margin:0;padding:0;border:0;background:none;box-shadow:none;animation:none}

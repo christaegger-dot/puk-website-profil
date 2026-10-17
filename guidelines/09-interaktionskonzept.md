@@ -21,7 +21,7 @@ Wie sich interaktive Elemente auf Websites der Fachstelle verhalten: Zustände, 
 | Hilfstexte | Hover **und** Fokus | Fokus | Fokus durch Tippen; nie als einzige Quelle |
 
 - **Bedienziele:** mindestens 44 × 44 px für Buttons, Navigation und eigenständige Aktionen (`web-touch-target`). Auf Touch-Geräten (`pointer: coarse`) heben `Button`, `IconButton` und `Tag` ihre Höhe automatisch auf 44 px (`--puk-target-min`). Links im Fliesstext bleiben inline. Die Absenderzeile im Seitenkopf gilt als Textzeile, nicht als eigenständige Aktion: Ihr E-Mail-Link braucht keine 44 px; WCAG 2.5.8 (24 px oder genügend Abstand zum nächsten Ziel) ist über den Abstand erfüllt (Paket 2026.10.2, P-3).
-- **Breakpoint:** Unter 760 px stapeln sich Kopf und Navigation; schwebende Ebenen (Dropdown) klappen im Fluss auf; Reiterleisten scrollen waagrecht statt umzubrechen; Dialoge nutzen die volle Breite mit 16 px Rand.
+- **Breakpoint:** Bis 760 px stapeln sich Kopf und Navigation; schwebende Ebenen (Dropdown) klappen im Fluss auf; Reiterleisten scrollen waagrecht statt umzubrechen; Dialoge nutzen die volle Breite mit 16 px Rand.
 - **Hover ist nie die einzige Auslösung.** Nichts öffnet sich bei Hover allein (Dropdown, Akkordeon); Hover zeigt nur an, dass etwas klickbar ist.
 - **Prüfen** bei 320, 360, 768 und 1440 px, mit 200 % Textgrösse (Seitenzoom und Browser-Einstellung «Schriftgrösse»), nur mit Tastatur, mit reduzierter Bewegung, mit erzwungenen Farben und auf einem Touch-Gerät.
 
@@ -83,7 +83,7 @@ Nicht zulässig: Federn, Einzoomen, Wackeln, Pulsieren, Endlosschleifen, Scroll-
 - **Verzichten, wenn:** man die Inhalte vergleichen muss (→ `Table` oder Vergleich), sie nacheinander gelesen werden sollen (→ Fliesstext), mehr als vier Reiter oder lange Beschriftungen nötig wären (→ Akkordeon) oder ein Reiter wichtige Information enthält, die alle brauchen.
 - **Gestaltung:** Beschriftungen in Lesegrösse, aktiver Reiter mit 2-px-Unterstreichung in PUK-Blau und Schwarz; inaktive in `text-muted`; Haarlinie unter der Leiste.
 - **Verhalten:** ein Tab-Stopp für die Leiste; Pfeil links/rechts, Pos1/Ende wechseln und aktivieren; Tab springt in das Panel. Ziele mindestens 44 px hoch.
-- **Desktop/Mobil:** Unter 760 px scrollt die Leiste waagrecht; der aktive Reiter wird sichtbar gehalten. Mehr als drei Reiter auf schmalen Bildschirmen → Akkordeon prüfen.
+- **Desktop/Mobil:** Bis 760 px scrollt die Leiste waagrecht; der aktive Reiter wird sichtbar gehalten. Mehr als drei Reiter auf schmalen Bildschirmen → Akkordeon prüfen.
 - **Beispiel:** Abschnitt «So sprechen Sie das Thema an» mit drei Reitern für drei Rollen; der allgemeine Teil steht über den Reitern.
 
 ### Karussell (`Carousel`)
@@ -99,11 +99,11 @@ Nicht zulässig: Federn, Einzoomen, Wackeln, Pulsieren, Endlosschleifen, Scroll-
 ### Dropdown-Menü (`DisclosureMenu`)
 
 - **Zweck:** eine Gruppe von Seitenlinks platzsparend in der Navigation anbieten.
-- **Einsatz:** Hauptnavigation mit mehr als sechs Einträgen («Themen» mit acht Themenseiten); auf schmalen Bildschirmen als «Menü», wenn die umbrechende Navigation zu lang wird.
-- **Verzichten, wenn:** bis sechs Hauptpunkte (→ sichtbare Navigation, unter 760 px als Raster); für Aktionen wie Drucken oder Teilen (→ Buttons); für Werte in Formularen (→ `Select`, `RadioGroup`); als einziger Weg zu wichtigen Seiten (→ zusätzlich Lesepfade auf der Startseite).
+- **Einsatz:** Hauptnavigation mit mindestens fünf Einträgen («Themen» mit acht Themenseiten); auf schmalen Bildschirmen als «Menü», wenn die umbrechende Navigation zu lang wird.
+- **Verzichten, wenn:** bis vier Hauptpunkte (→ sichtbare Navigation, bis 760 px als Raster); für Aktionen wie Drucken oder Teilen (→ Buttons); für Werte in Formularen (→ `Select`, `RadioGroup`); als einziger Weg zu wichtigen Seiten (→ zusätzlich Lesepfade auf der Startseite).
 - **Gestaltung:** Schaltfläche wie ein Navigationspunkt mit Chevron; offen in PUK-Blau. Die Liste schwebt auf breiten Bildschirmen (weiss, Haarlinie, `shadow-overlay`), Einträge 44 px hoch, optional mit Kurzbeschreibung; aktuelle Seite unterstrichen (`aria-current`).
 - **Verhalten:** Klick, Enter, Leertaste öffnen und schliessen (kein Öffnen bei Hover); Pfeil ab öffnet und springt zum ersten Link, Pfeil auf/ab bewegt; Escape schliesst und setzt den Fokus zurück; Klick ausserhalb und Wegtabben schliessen. Einträge sind normale Links (Disclosure-Muster, kein `role="menu"`).
-- **Desktop/Mobil:** unter 760 px klappt die Liste im Fluss auf, ohne Schatten. Als Hauptnavigation des Starters (`.puk-site-menu`) gibt es die Schaltfläche nur unter 760 px; breit verhält sich die Liste wie eine normale Navigation (keine Pfeiltasten, kein Escape).
+- **Desktop/Mobil:** bis 760 px klappt die Liste im Fluss auf, ohne Schatten. Als Hauptnavigation des Starters (`.puk-site-menu`) gibt es die Schaltfläche nur bis 760 px; breit verhält sich die Liste wie eine normale Navigation (keine Pfeiltasten, kein Escape).
 
 ### Auswahlliste (`Select`) – kein Dropdown-Menü
 
@@ -159,8 +159,8 @@ Nicht zulässig: Federn, Einzoomen, Wackeln, Pulsieren, Endlosschleifen, Scroll-
 ### Navigation und Kapitelorientierung
 
 - Kopf nicht fixiert; Skip-Link «Zum Hauptinhalt» als erster Tab-Stopp; aktuelle Seite mit `aria-current` und Unterstreichung.
-- Bis sechs Hauptpunkte sichtbar; unter 760 px als zweispaltiges Raster mit Trennlinien (bei grosser Schrift einspaltig).
-- **Ab sieben Hauptpunkten** (Profilentscheid 11.10.2026, nach dem Befund BD-05: acht Punkte untereinander machten den Kopf bei 360 px 592 px hoch): Der Starter setzt die Navigation in ein Dropdown-Menü. Unter 760 px öffnet die Schaltfläche «Menü» die Liste im Fluss (zweispaltig); breit bleiben alle Punkte sichtbar, die Schaltfläche entfällt. Ohne Skript steht die Liste offen. Das Gate blockiert mehr als sechs Punkte ohne Menü (`nav-menu`).
+- Bis vier Hauptpunkte sichtbar; bis 760 px als zweispaltiges Raster mit Trennlinien (bei grosser Schrift einspaltig).
+- **Ab fünf Hauptpunkten** (Profilentscheid 17.10.2026, ersetzt die frühere Schwelle von sieben): Der Starter setzt die Navigation in ein Dropdown-Menü. Bereits fünf oder sechs Punkte nahmen auf Mobilgeräten zu viel Platz vor dem Inhalt ein. Bis 760 px öffnet die Schaltfläche «Menü» die Liste im Fluss (zweispaltig); breit bleiben alle Punkte sichtbar, die Schaltfläche entfällt. Ohne Skript steht die Liste offen. Das Gate blockiert fünf oder mehr Punkte ohne Menü (`nav-menu`).
 - Lange Seiten (ab vier Hauptabschnitten) erhalten eine Kapitelorientierung mit Sprunglinks (`.puk-longform__roadmap`); Sprungziele mit `scroll-margin-top`, weiches Scrollen nur ohne reduzierte Bewegung.
 - **Sprungziele** (Paket 2026.10.2, P-16): Ein Sprunglink oder ein Aufruf mit `#…` öffnet ein geschlossenes `details` um das Ziel und setzt den Fokus auf das Ziel (`components/interaktion.js`). Der Fokus ist sichtbar wie das Fokusbild des Systems, mit erzwungenen Farben als Umrandung (`components/bundle.css`); `main` als Ziel des Skip-Links erhält kein Fokusbild. Die nächste Tab-Taste führt im Abschnitt weiter.
 

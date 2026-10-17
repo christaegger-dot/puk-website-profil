@@ -1,7 +1,7 @@
 # PUK Website-Profil · Start
 
 <!-- profil:stand -->
-**Version 2026.10.5 · Stand 17.10.2026.** Verbindlich ist dieses Repository. [Prüfbericht](PRUEFBERICHT.md) und [Abschlussentscheide](ABSCHLUSSENTSCHEIDE.md) dokumentieren den abgeschlossenen Profilstand.
+**Version 2026.10.6 · Stand 17.10.2026.** Verbindlich ist dieses Repository. [Prüfbericht](PRUEFBERICHT.md) und [Abschlussentscheide](ABSCHLUSSENTSCHEIDE.md) dokumentieren den abgeschlossenen Profilstand.
 <!-- /profil:stand -->
 
 ## Einrichten
@@ -52,6 +52,8 @@ npm run export -- out-mein-thema --site websites/mein-thema --production
 Ein Export ist noch keine Veröffentlichung. Der Zielordner muss neu, leer oder ein erkennbarer früherer Export sein; fremde Dateien werden nicht ersetzt. Neue Projekte unter `websites/` gehören nicht zum Profilpaket.
 
 ## Gestaltung auswählen
+
+Vor dem Ausarbeiten [Einstieg und Seitenrahmen](guidelines/08-einstieg-und-seitenrahmen.md) lesen: ausgewogene Titel, kompakter mobiler Kopf und ein früher hilfreicher Einstieg. Diese Lehren aus den bestehenden Websites sind bereits in den Standardvorlagen umgesetzt. Den tatsächlichen Titel bei 375 × 812 px ansehen und zusätzlich mit 200 % Schrift prüfen.
 
 Die [Musterauswahl](MUSTER-WAEHLEN.md) führt von der Leserfrage zu konkreten Beispielen. Lokal zeigt `http://127.0.0.1:8000/` die Startvorlage, das vollständige Profilbeispiel, Erklärgrafiken, Interaktionen, UI-Kit und Prüfansicht. Die ausführliche Musterwebsite bleibt als Referenz erhalten.
 

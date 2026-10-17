@@ -1,7 +1,7 @@
 # Abschlussentscheide · 17.10.2026
 
 <!-- profil:stand -->
-**Profil 2026.10.5 abgeschlossen · Stand 17.10.2026. Offene Projektpendenzen: 0.**
+**Profil 2026.10.6 abgeschlossen · Stand 17.10.2026. Offene Projektpendenzen: 0.**
 <!-- /profil:stand -->
 
 | Bisherige Aufgabe oder Unklarheit | Abschlussentscheid | Status |
@@ -34,5 +34,11 @@
 | Einfacher Projektstart | Eigenständiger Minimalstarter mit vier Seiten und Befehl `npm run neu`. Pfade, Titel und erste Vorschau entstehen automatisch; vorhandene Ordner werden nicht überschrieben. Zentrale Werkzeuge werden nicht in Projekte kopiert. | Erledigt |
 | Doppelte Pflege reduzieren | Komponententypen nur im Quellordner pflegen. Einzel- und Sammeldeklarationen werden erzeugt. Profilversion, Build-Stände, Paketname und Paketzeitstempel aus package.json; Ableitungsprüfung auch in GitHub. | Erledigt |
 | Muster leichter finden | Startseite nach Beginnen, Auswählen und Prüfen gegliedert. Musterauswahl nach Leserfrage als HTML und Markdown aus einem gemeinsamen Katalog mit geprüften Sprungzielen erzeugt. | Erledigt |
+
+## Gestaltungslehren aus den bestehenden Websites
+
+Der Nutzerauftrag vom 17.10.2026 ergänzt das Profil um die Erfahrungen aus der Überarbeitung der Websites. Regeln und Herkunft sind in [Einstieg und Seitenrahmen](guidelines/08-einstieg-und-seitenrahmen.md) festgehalten. Die Leseskala begrenzt neue Seitentitel bei Standardschrift auf 60 px, Kopf und Einleitung erhalten kompaktere Abstände, das schmale Menü greift ab fünf Hauptpunkten, und alle drei Startvorlagen zeigen einen frühen hilfreichen Einstieg. Ergänzende Hinweise erscheinen danach in ruhiger Gestaltung. Die bewusste Kontaktauswahl und die lesbare Fusszeile bleiben Teil des Standards.
+
+Gezielte Browserprüfungen sichern lange deutsche Titel, fünf Navigationspunkte, vergrösserte Schrift, Skriptverzicht, Tastaturbedienung und die drei Einstiegslinks ab. Die Prüfliste verlangt zusätzlich eine visuelle Beurteilung des ersten Bildschirms. Bestehende Websites werden durch diese Profiländerung nicht erneut geändert oder veröffentlicht. Der dokumentierte Sonderentscheid zur Gestaltung der Rechtswebsite bleibt bestehen.
 
 Eingabeparameter der leeren Vorlagen sind keine offenen Projektaufgaben. Der Produktionsschutz bleibt aktiv. Alle Entscheide gelten für diesen abgeschlossenen Profilstand; es gibt keinen zurückgestellten Backlog. Die Nachweise stehen im [Prüfbericht](PRUEFBERICHT.md).

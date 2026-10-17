@@ -26,7 +26,7 @@ Skala des PUK-Webauftritts: Rubik Light 21 px, Basis 62,5 %, Überschriften in R
 
 - **Einsatz:** Nur im Template Website und bei Anbindung an den bestehenden Webauftritt.
 - **Pflicht:** `--puk-web-text` (`#000000`) und `--puk-web-field-text` sind gekennzeichnete, am Webauftritt gemessene Ausnahmen.
-- **Responsive:** Die gemessenen h1–h3-Werte sind Maximalgrade. Neue Websites verwenden die fluiden `--web-size-h*-fluid`-Tokens und werden gemäss `templates/website/profile.json` bei 360, 768 und 1440 px geprüft.
+- **Responsive:** Die gemessenen 114/57/40 px dokumentieren den bestehenden PUK-Webauftritt. Neue Websites verwenden die kleinere Leseskala über `--web-size-h*-fluid`: H1 32–60 px, H2 28–44 px, H3 24–32 px bei Standardschrift (Profilentscheid 17.10.2026). Prüfung gemäss `templates/website/profile.json`; vergrösserte Browser-Schrift darf die nominalen Pixelgrenzen überschreiten.
 - **Vermeiden:** Diese Ausnahmen ausserhalb von Website und dieser Karte verwenden.
 
 ## Abstände in der Anwendung
@@ -66,8 +66,12 @@ Ecken standardmässig eckig; 2–4 px nur für kleine Bedienelemente.
 
 ## Präzisierung der Fusszeile · AUDIT 04
 
-Die Textrolle bestimmt die Schriftgrösse auch in der Fusszeile. Absender-, Kontakt-, Zuständigkeits-, Datenschutz- und Abgrenzungstexte sind Lesetext: `web-body`, 21 px auf breiten und 19 px auf schmalen Bildschirmen. Der frühere pauschale 16-px-Wert im Web-Footer-Beispiel widerspricht dem Profilentscheid «Lesen in Seitenschrift» und entfällt.
+Die Textrolle bestimmt die Schriftgrösse auch in der Fusszeile. Absender-, Kontakt-, Zuständigkeits- und Datenschutztexte sind Lesetext: `web-body`, 21 px auf breiten und 19 px auf schmalen Bildschirmen. Der frühere pauschale 16-px-Wert im Web-Footer-Beispiel widerspricht dem Profilentscheid «Lesen in Seitenschrift» und entfällt. Pauschale Abgrenzungssätze gehören nicht zum Standard-Footer. Ruhe entsteht durch knappen Inhalt und passende Abstände, nicht durch kleinere Leseschrift.
 
 Datum, Version und Designherkunft dürfen ausdrücklich als Metadaten mit `type-caption` (13 px) gesetzt werden; dafür steht `.puk-web-footer__meta` bereit. Wesentliche Bedingungen und Handlungsinformationen gehören nicht in diese Ausnahme. Bedienelemente behalten die UI-Schrift `type-body`; ihre Bedienfläche bleibt unabhängig davon mindestens 44 px.
 
 `tokens/web.css` und die entsprechende Regel in `components/bundle.css` verwenden dieselbe Footer-Regel. Die allgemeinen Schriftgrössen-Tokens ändern sich dadurch nicht.
+
+## Profilentscheid 17.10.2026: Seitentitel und erster Bildschirm
+
+Die Leseskala ersetzt die Display-Skala als Standard der fluiden Webüberschriften. H1 erhalten natürliche Laufweite, Zeilenhöhe 1,12 und bis zu 24 ch Breite. Titel bleiben auch bei längeren deutschen Wörtern und 200 % Schrift vollständig lesbar. Kompakte Kopf- und Einleitungsabstände schaffen Platz für den ersten hilfreichen Schritt. Die konkreten Regeln, ihre Herkunft und die visuelle Prüfliste stehen unter [Einstieg und Seitenrahmen](08-einstieg-und-seitenrahmen.md).

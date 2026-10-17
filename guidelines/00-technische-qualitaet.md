@@ -69,7 +69,7 @@ Bei psychischer Erkrankung ist schon der Seitenbesuch eine sensible Information.
 
 ## Was der Starter automatisch prüft
 
-Das Gate des Psychoedukations-Starters prüft unter anderem Absenderin, Redaktionsstatus (vor der Veröffentlichung kein «Entwurf» und ein Datum), Meta-Description, Navigation und aktiven Zustand, Menü ab sieben Hauptpunkten, Name des Logo-Links, Interaktionsskript bei Vertiefungen, Impressum, Datenschutzerklärung und 404-Seite, Telefonnummern und Notfallblöcke, Platzhalter, Visualisierungsplan, Kennzeichen für den Druck (`data-print-split` nur an Prozesspfad, Entscheidungsweg und Modell in Schritten) sowie externe Ressourcen. Es ersetzt W3 nicht: Build-Warnungen, Sicherheits-Header im Hosting, echte Ladezeiten, Druckbild und Verhalten auf echten Geräten werden von Hand geprüft.
+Das Gate des Psychoedukations-Starters prüft unter anderem Absenderin, Redaktionsstatus (vor der Veröffentlichung kein «Entwurf» und ein Datum), Meta-Description, Navigation und aktiven Zustand, Menü ab fünf Hauptpunkten, Name des Logo-Links, Interaktionsskript bei Vertiefungen, Impressum, Datenschutzerklärung und 404-Seite, Telefonnummern und Notfallblöcke, Platzhalter, Visualisierungsplan, Kennzeichen für den Druck (`data-print-split` nur an Prozesspfad, Entscheidungsweg und Modell in Schritten) sowie externe Ressourcen. Es ersetzt W3 nicht: Build-Warnungen, Sicherheits-Header im Hosting, echte Ladezeiten, Druckbild und Verhalten auf echten Geräten werden von Hand geprüft.
 
 ## Review-Ergebnis
 

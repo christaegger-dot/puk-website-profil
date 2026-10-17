@@ -3,7 +3,7 @@ Website-Profil der **Psychiatrischen Universitätsklinik Zürich (PUK)** für We
 ## Verbindlichkeit und Version
 
 <!-- profil:stand -->
-**Fachstellen-Profil 2026.10.5** · Stand 17.10.2026 · offene Projektpendenzen: 0. Basis: PUK Zürich Design System 1.10.1 und PUK Website Kit 1.10.1-r4. Vier Ebenen – bei Widerspruch gilt die obere:
+**Fachstellen-Profil 2026.10.6** · Stand 17.10.2026 · offene Projektpendenzen: 0. Basis: PUK Zürich Design System 1.10.1 und PUK Website Kit 1.10.1-r4. Vier Ebenen – bei Widerspruch gilt die obere:
 <!-- /profil:stand -->
 
 | Ebene | Umfasst | Erkennbar an | Ändern darf |
@@ -77,10 +77,10 @@ Website-Profil der **Psychiatrischen Universitätsklinik Zürich (PUK)** für We
 ## Typografie
 
 - **Nur Rubik**, lokal ausgeliefert (`fonts/`, WOFF2). Light 300 für Display, Leads und Web-Fliesstext; Regular 400 für Titel und UI; Medium 500 nur für UI-Betonung. **Nie fett.**
-- Laufweite nicht verändern – Ausnahmen: Web-Headlines (`web-h1` −0.02em, `web-h2` −0.015em) und Eyebrow (`web-eyebrow` +0.08em).
-- **Website-Skala** (gemessen am PUK-Webauftritt): `web-body` 21 px/1.3 Light, `web-lead` 26.25 px, `web-h1` 114 px, `web-h2` 57 px, `web-h3` 40 px. Auf neuen Websites H1–H3 immer fluid mit `web-size-h1-fluid`, `web-size-h2-fluid`, `web-size-h3-fluid`.
+- Laufweite nicht verändern – Ausnahmen: Web-H2 −0.015em und Eyebrow (`web-eyebrow` +0.08em). Neue H1 stehen mit natürlicher Laufweite und Zeilenhöhe 1,12.
+- **Leseskala für neue Websites** (Profilentscheid 17.10.2026): H1 32–60 px, H2 28–44 px, H3 24–32 px bei Standardschrift; immer fluid und in rem mit `web-size-h1-fluid`, `web-size-h2-fluid`, `web-size-h3-fluid`. Die gemessenen PUK-Displaywerte 114/57/40 px bleiben Herkunftswerte und sind kein Standard für neue Seitentitel. `web-body` bleibt 21 px/1.3 Light, `web-lead` als gemessener Herkunftswert 26,25 px. [Einstieg und Seitenrahmen](guidelines/08-einstieg-und-seitenrahmen.md).
 - **UI-Skala** für Komponenten: `type-display-1` 64 · `type-display-2` 48 · `type-title-1` 36 · `type-title-2` 28 · `type-title-3` 24 · `type-lead` 20 · `type-body` 17 · `type-body-sm` 15 · `type-caption` 13 px. Im CSS über die Kurzformen `font: var(--type-body)`.
-- **Lesen in Seitenschrift, Bedienen in UI-Grösse:** Was man liest, steht auf Websites in `web-body` (21 px Light, unter 760 px 19 px) – auch Lesetext in `Card`, `Alert`, `Accordion` und `List`; das geschieht innerhalb von `.puk-web-page` automatisch. Was man bedient (Buttons, Felder, Auswahl, Tabs), bleibt bei `type-body` (17 px). Beispiel: Karte «Lesen und Bedienen».
+- **Lesen in Seitenschrift, Bedienen in UI-Grösse:** Was man liest, steht auf Websites in `web-body` (21 px Light, bis 760 px 19 px) – auch Lesetext in `Card`, `Alert`, `Accordion` und `List`; das geschieht innerhalb von `.puk-web-page` automatisch. Was man bedient (Buttons, Felder, Auswahl, Tabs), bleibt bei `type-body` (17 px). Beispiel: Karte «Lesen und Bedienen».
 - Satzschreibung, keine Versaltitel. Lauftext 45–75 ch (`web-content-measure` 68ch).
 - **Grade in rem** (Profilentscheid 11.10.2026): Auf Websites stehen alle Schriftgrade in `rem`, damit die Browser-Einstellung «Schriftgrösse» wirkt; bei Standardeinstellung bleibt jeder Grad gleich (21 px = 1,3125 rem). Rückfallschrift ohne «Rubik Variable». Details: Abschnitt «Typografie und Flächen».
 
@@ -88,8 +88,9 @@ Website-Profil der **Psychiatrischen Universitätsklinik Zürich (PUK)** für We
 
 - **4-px-Raster:** `space-1` … `space-24`. Karteninnenabstand `space-6`, Stapel `space-3`/`stack-default`, Abschnittsabstand `space-16` (`gutter-section`). Keine freien Pixelwerte.
 - **Website:** Container max. `web-container-max` (1200 px), Seitenrand `web-gutter-inline`, Abschnittsabstand `web-section-space`, Touch-Ziel `web-touch-target` (44 px) für Buttons, Navigation und Aktionslinks.
-- Kopf nicht fixiert; Skip-Link «Zum Hauptinhalt»; genau ein `main` und ein `h1`. Kartenraster `auto-fit minmax(260px,1fr)` als Liste ausgezeichnet (`.puk-web-card-list`). Unter 760 px stapelt der Kopf, die Navigation wird zum zweispaltigen Raster mit Trennlinien; ab sieben Hauptpunkten öffnet dort die Schaltfläche «Menü» die Liste (Profilentscheid 11.10.2026).
-- Prüfen bei 320, 360, 768 und 1440 px, mit 200 % Textgrösse (Seitenzoom und Schriftgrösse), per Tastatur, mit reduzierter Bewegung und mit erzwungenen Farben.
+- Kopf nicht fixiert; Skip-Link «Zum Hauptinhalt»; genau ein `main` und ein `h1`. Kartenraster `auto-fit minmax(260px,1fr)` als Liste ausgezeichnet (`.puk-web-card-list`). Bis 760 px stapelt der Kopf; bis vier Hauptpunkte stehen im Raster, ab fünf öffnet dort die Schaltfläche «Menü» die Liste. Breit und ohne JavaScript bleiben die Navigationslinks sichtbar (Profilentscheid 17.10.2026, ersetzt die frühere Schwelle von sieben).
+- Startseiten zeigen nach Titel und kurzer Einleitung einen hilfreichen Einstiegslink vor nachrangigen Hinweisen. Bei 375 × 812 px soll dieser erste Schritt im ersten Bildschirm erkennbar sein; bei vergrösserter Schrift darf die Seite länger werden. Keine starren Höhen oder verkleinerte Schrift erzwingen.
+- Prüfen bei 320, 360, 375, 768, 1024 und 1440 px, mit 200 % Textgrösse (Seitenzoom und Schriftgrösse), per Tastatur, mit reduzierter Bewegung und mit erzwungenen Farben. Den ersten Bildschirm zusätzlich visuell beurteilen; kein Überlauf allein belegt noch keine gute Gewichtung.
 
 ## Flächen, Linien, Ecken
 
@@ -154,7 +155,7 @@ Website-Profil der **Psychiatrischen Universitätsklinik Zürich (PUK)** für We
 - `package.json`: einzige Quelle der Profilversion und Build-Stände; `package-lock.json` legt die Entwicklungsabhängigkeiten fest. `npm run check:generated` erkennt veraltete Ableitungen, ohne Dateien zu ändern.
 - GitHub prüft bei Push, Pull Request und manuellem Start automatisch die Ableitungen, den Build, die Typen, die Tests, die vollständige UI-Matrix und das Paket. Die bisherige Beschreibungskontrolle für offene Prüfstufen bleibt zusätzlich erhalten.
 <!-- profil:paket -->
-- `tools/paket.py`: reproduzierbares Paket [puk-website-profil-2026.10.5.zip](https://github.com/christaegger-dot/puk-website-profil/raw/refs/heads/main/puk-website-profil-2026.10.5.zip) mit [SHA-256-Datei](https://github.com/christaegger-dot/puk-website-profil/raw/refs/heads/main/puk-website-profil-2026.10.5.zip.sha256). Archiv, Projekte unter `websites/` und lokale Arbeitsausgaben sind nicht enthalten.
+- `tools/paket.py`: reproduzierbares Paket [puk-website-profil-2026.10.6.zip](https://github.com/christaegger-dot/puk-website-profil/raw/refs/heads/main/puk-website-profil-2026.10.6.zip) mit [SHA-256-Datei](https://github.com/christaegger-dot/puk-website-profil/raw/refs/heads/main/puk-website-profil-2026.10.6.zip.sha256). Archiv, Projekte unter `websites/` und lokale Arbeitsausgaben sind nicht enthalten.
 <!-- /profil:paket -->
 - Der Exporter schreibt in einen neuen oder erkennbaren Exportordner. Erst nach vollständiger Prüfung ersetzt er den vorherigen Export. Fremde Dateien werden nicht überschrieben. Eine Website zu exportieren veröffentlicht sie nicht.
 
