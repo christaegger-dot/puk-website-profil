@@ -3,7 +3,7 @@
    Compiler nahm sie als das deklarierte Bauteil — Adhärenzregeln für ein
    <SelectOption>, das es nie gab, während Select selbst keine bekam. Deshalb
    inline. */
-export interface SelectProps extends React.SelectHTMLAttributes<HTMLSelectElement> {
+export interface SelectProps extends Omit<React.SelectHTMLAttributes<HTMLSelectElement>, 'size'> {
   options?: Array<string | { value: string; label: string }>;
   placeholder?: string;
   invalid?: boolean;

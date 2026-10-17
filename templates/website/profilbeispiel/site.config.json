@@ -1,0 +1,177 @@
+{
+  "$comment": "PUK Website Kit 1.10.1-r4 · abgeleitet – Seitenvertrag des Psychoedukations-Starters. Synthetische Musterwerte. Pflichtfelder und Regeln: README.md in diesem Ordner. Nach jeder Änderung: node tools/build.mjs, danach node tools/gate.mjs (Entwurf) bzw. node tools/gate.mjs --production.",
+  "kitRevision": "PUK Website Kit 1.10.1-r4 · abgeleitet",
+  "canonicalSource": "PUK Zürich Design System 1.10.1 (unverändert)",
+  "assetVersion": "r4-11",
+  "siteTitle": "Information klar gestalten · Profilbeispiel",
+  "shortDescription": "Fachneutrales Gestaltungsmuster des PUK Website-Profils: Informationen verständlich gliedern, darstellen und prüfen.",
+  "language": "de-CH",
+  "favicon": "assets/favicon.svg",
+  "logo": "assets/logo.svg",
+  "stylesheets": [
+    "../../../styles.css",
+    "../longform/visual-patterns.css",
+    "../longform/erklaermuster.css",
+    "../psychoeducation-site-starter/starter.css"
+  ],
+  "contentOwner": "Fachstelle Angehörigenarbeit PUK",
+  "editorialStatus": "design-reference",
+  "editorialStatusLabel": "Gestaltungsmuster vom 17.10.2026",
+  "disclaimer": "Fachneutrales Gestaltungsmuster des Website-Profils.",
+  "sender": {
+    "orgUnit": "Fachstelle Angehörigenarbeit",
+    "institution": "Psychiatrische Universitätsklinik Zürich",
+    "email": "angehoerigenarbeit@pukzh.ch",
+    "status": "freigegeben",
+    "statusLabel": "Freigegeben"
+  },
+  "legal": {
+    "$comment": "Prüfbefund W3-05 (11.10.2026): Impressum und Datenschutzerklärung stehen in jeder Fusszeile. Entscheid 11.10.2026: eine eigene Seite je Website (Vorlage content/impressum-datenschutz.html), Herausgeberin Fachstelle Angehörigenarbeit, Inhalt und Umsetzung Ch. Egger. Die Angaben zum Datenschutz beschreiben, was der Code tut; bei Änderungen am Code mitprüfen.",
+    "imprint": {
+      "label": "Impressum",
+      "href": "impressum-datenschutz.html#impressum"
+    },
+    "privacy": {
+      "label": "Datenschutz",
+      "href": "impressum-datenschutz.html#datenschutz"
+    }
+  },
+  "pages": [
+    {
+      "id": "index",
+      "title": "Information klar gestalten",
+      "href": "index.html",
+      "navLabel": "Übersicht",
+      "status": "published",
+      "primaryTask": "Ziel und nächsten Schritt beim Erstellen einer verständlichen Information bestimmen",
+      "description": "Ziel und nächsten Schritt beim Erstellen einer verständlichen Information bestimmen.",
+      "sensitiveTopics": [],
+      "visualPlan": [
+        {
+          "id": "v-index-thema",
+          "section": "Ein Thema",
+          "sectionId": "thema",
+          "goal": "Ziel und nächsten Schritt beim Erstellen einer verständlichen Information bestimmen",
+          "format": "text",
+          "statement": "Eigene redaktionelle Darstellung",
+          "source": "Gestaltungsregeln dieses Repositorys",
+          "alternative": "Lesbarer HTML-Text",
+          "reason": "Kurze Regeln und Schritte sind als Text unmittelbar verständlich.",
+          "approvalStatus": "entfällt"
+        },
+        {
+          "id": "v-index-weiter",
+          "section": "Klarer nächster Schritt",
+          "sectionId": "weiter",
+          "goal": "Ziel und nächsten Schritt beim Erstellen einer verständlichen Information bestimmen",
+          "format": "text",
+          "statement": "Eigene redaktionelle Darstellung",
+          "source": "Gestaltungsregeln dieses Repositorys",
+          "alternative": "Lesbarer HTML-Text",
+          "reason": "Kurze Regeln und Schritte sind als Text unmittelbar verständlich.",
+          "approvalStatus": "entfällt"
+        }
+      ]
+    },
+    {
+      "id": "pruefen",
+      "title": "Das Ergebnis prüfen",
+      "href": "pruefen.html",
+      "navLabel": "Prüfen",
+      "status": "published",
+      "primaryTask": "Inhalt, Bedienung und technische Ausgabe vor der Nutzung kontrollieren",
+      "description": "Inhalt, Bedienung und technische Ausgabe vor der Nutzung kontrollieren.",
+      "sensitiveTopics": [],
+      "visualPlan": [
+        {
+          "id": "v-pruefen-inhalt",
+          "section": "Inhalt und Sprache",
+          "sectionId": "inhalt",
+          "goal": "Inhalt, Bedienung und technische Ausgabe vor der Nutzung kontrollieren",
+          "format": "text",
+          "statement": "Eigene redaktionelle Darstellung",
+          "source": "Gestaltungsregeln dieses Repositorys",
+          "alternative": "Lesbarer HTML-Text",
+          "reason": "Kurze Regeln und Schritte sind als Text unmittelbar verständlich.",
+          "approvalStatus": "entfällt"
+        },
+        {
+          "id": "v-pruefen-bedienung",
+          "section": "Lesen und Bedienen",
+          "sectionId": "bedienung",
+          "goal": "Inhalt, Bedienung und technische Ausgabe vor der Nutzung kontrollieren",
+          "format": "text",
+          "statement": "Eigene redaktionelle Darstellung",
+          "source": "Gestaltungsregeln dieses Repositorys",
+          "alternative": "Lesbarer HTML-Text",
+          "reason": "Kurze Regeln und Schritte sind als Text unmittelbar verständlich.",
+          "approvalStatus": "entfällt"
+        }
+      ]
+    },
+    {
+      "id": "impressum-datenschutz",
+      "title": "Impressum und Datenschutz",
+      "href": "impressum-datenschutz.html",
+      "navLabel": null,
+      "status": "published",
+      "primaryTask": "Herkunft und technische Grenzen dieses Gestaltungsmusters einordnen",
+      "description": "Herkunft und technische Grenzen dieses Gestaltungsmusters einordnen.",
+      "sensitiveTopics": [],
+      "visualPlan": [
+        {
+          "id": "v-impressum-datenschutz-impressum",
+          "section": "Impressum",
+          "sectionId": "impressum",
+          "goal": "Herkunft und technische Grenzen dieses Gestaltungsmusters einordnen",
+          "format": "text",
+          "statement": "Eigene redaktionelle Darstellung",
+          "source": "Gestaltungsregeln dieses Repositorys",
+          "alternative": "Lesbarer HTML-Text",
+          "reason": "Kurze Regeln und Schritte sind als Text unmittelbar verständlich.",
+          "approvalStatus": "entfällt"
+        },
+        {
+          "id": "v-impressum-datenschutz-datenschutz",
+          "section": "Datenschutz",
+          "sectionId": "datenschutz",
+          "goal": "Herkunft und technische Grenzen dieses Gestaltungsmusters einordnen",
+          "format": "text",
+          "statement": "Eigene redaktionelle Darstellung",
+          "source": "Gestaltungsregeln dieses Repositorys",
+          "alternative": "Lesbarer HTML-Text",
+          "reason": "Kurze Regeln und Schritte sind als Text unmittelbar verständlich.",
+          "approvalStatus": "entfällt"
+        }
+      ]
+    },
+    {
+      "id": "404",
+      "title": "Seite nicht gefunden",
+      "href": "404.html",
+      "navLabel": null,
+      "status": "published",
+      "primaryTask": "Zur Übersicht dieses Gestaltungsmusters zurückfinden",
+      "description": "Zur Übersicht dieses Gestaltungsmusters zurückfinden.",
+      "sensitiveTopics": [],
+      "visualPlan": [
+        {
+          "id": "v-404-rueckweg",
+          "section": "Zur Übersicht",
+          "sectionId": "rueckweg",
+          "goal": "Zur Übersicht dieses Gestaltungsmusters zurückfinden",
+          "format": "text",
+          "statement": "Eigene redaktionelle Darstellung",
+          "source": "Gestaltungsregeln dieses Repositorys",
+          "alternative": "Lesbarer HTML-Text",
+          "reason": "Kurze Regeln und Schritte sind als Text unmittelbar verständlich.",
+          "approvalStatus": "entfällt"
+        }
+      ],
+      "role": "not-found"
+    }
+  ],
+  "siteUrl": "",
+  "interactionScript": "../../../components/interaktion.js",
+  "robots": "noindex, nofollow"
+}

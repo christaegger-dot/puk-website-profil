@@ -1,0 +1,209 @@
+
+const VIEWS=['start','situationsnavigator','kontaktwegweiser','gespraechshilfe','angebotsnavigator','grundlagenkapitel','handlungsuebersicht','transfer-erholung','beispiel-visualisierung','visualisierungsmuster','site:index','site:beziehungen-verstehen','site:behandlung-verstehen','site:unterstuetzung-finden'];
+const RUNS=[];
+for(const v of VIEWS){for(const w of [320,360,768,1440])RUNS.push([v,w,1]);for(const w of [320,360,768,1440])RUNS.push([v,w,2]);}
+const wait=ms=>new Promise(r=>setTimeout(r,ms));
+async function ready(d){for(let i=0;i<60&&d.querySelector('[data-visual-patterns=loading]');i++)await wait(50);}
+function load(v,w){return new Promise(res=>{const st=document.getElementById('stage');st.innerHTML='';const f=document.createElement('iframe');f.style.width=w+'px';f.onload=async()=>{await wait(50);await ready(f.contentDocument);try{window.focus();f.contentWindow.focus();}catch(e){}res(f);};f.src=v.startsWith('site:')?SITE+v.slice(5)+'.html?qa='+Date.now():'index.html?qa='+Date.now()+'#'+v;st.appendChild(f);});}
+function scaleText(doc){const els=[...doc.body.querySelectorAll('*')];const sizes=els.map(e=>parseFloat(doc.defaultView.getComputedStyle(e).fontSize));els.forEach((e,i)=>e.style.setProperty('font-size',(sizes[i]*2)+'px','important'));}
+const BUILD='r4-1';const QA_REV='qa-7';const SITE='../../templates/website/psychoeducation-site-starter/';const GEN=/^(quelle|quellen|mehr|mehr erfahren|hier|link|details|weiterlesen|langbeschreibung|textfassung|download|pdf)$/i;
+function staleAudit(doc){const iss=[];const sb=doc.documentElement.getAttribute('data-puk-site-build');if(sb!==null){const SB=(window.PUKSiteContract&&PUKSiteContract.BUILD)||BUILD;if(sb!==SB)iss.push('Starterseite veraltet ('+sb+')');[...doc.querySelectorAll('link[rel=stylesheet]')].forEach(e=>{if(!e.href.includes('v='+SB))iss.push('veraltet: '+e.href.split('/').pop());});return iss;}const m=doc.querySelector('meta[name=puk-kit-build]');if(!m||m.content!==BUILD)iss.push('index.html veraltet ('+(m?m.content:'ohne Build')+')');[...doc.querySelectorAll('link[rel=stylesheet][href*="kit.css"],link[rel=stylesheet][href*="visual-patterns.css"],script[src*="js/"]')].forEach(e=>{const u=e.href||e.src;if(!u.includes('v='+BUILD))iss.push('veraltet: '+u.split('/').pop());});const vp=doc.querySelector('[data-visual-patterns]');if(vp&&vp.dataset.visualPatterns!=='ready')iss.push('Musterseite nicht geladen');return iss;}
+function measure(doc,t){
+  const win=doc.defaultView,vw=doc.documentElement.clientWidth,sw=doc.documentElement.scrollWidth;
+  const off=[];
+  for(const e of doc.body.querySelectorAll('*')){const r=e.getBoundingClientRect();if(r.width&&r.right>vw+1){let p=e.parentElement,clip=false;while(p){const o=win.getComputedStyle(p).overflowX;if(o!=='visible'){clip=true;break;}p=p.parentElement;}if(!clip)off.push((e.className&&typeof e.className==='string'?'.'+e.className.split(' ')[0]:e.tagName.toLowerCase())+' '+Math.round(r.right-vw)+'px');}}
+  const links=[...doc.querySelectorAll('.puk-web-nav__link')];
+  const rects=links.map(a=>a.getBoundingClientRect());
+  let navIssues=[];
+  rects.forEach((r,i)=>{if(links[i].scrollWidth>links[i].clientWidth+1)navIssues.push(links[i].textContent+' Text überläuft');if(r.height<43.5)navIssues.push(links[i].textContent+' h'+Math.round(r.height));if(r.left<-1||r.right>vw+1)navIssues.push(links[i].textContent+' ausserhalb');for(let j=i+1;j<rects.length;j++){const q=rects[j];if(r.left<q.right-1&&q.left<r.right-1&&r.top<q.bottom-1&&q.top<r.bottom-1)navIssues.push(links[i].textContent+'×'+links[j].textContent);}});
+  const fa=doc.__audit?focusAudit(doc):null;const fg=doc.__audit?figAudit(doc):null;
+  const mw=midWord(doc);const st=staleAudit(doc).concat(siteAudit(doc));const cy=cycleAudit(doc,vw>=700?768:vw);
+  return {cyc:cy.txt,na:!!(fa&&fa.na),fig:fg?fg.txt:'–',focus:fa?(fa.n+' Stopps · live '+(fa.n-fa.na)+(fa.na?' · statisch (Dokument ohne Fokus) '+fa.na:'')+(fa.bad.length?' · ohne Ring: '+fa.bad.join(', '):' · ok')+(fa.pos?', tabindex>0: '+fa.pos:'')):'–',overflow:sw>vw+1?(sw-vw)+'px':'nein',off:st.concat(cy.iss).concat([...new Set(off)].slice(0,4)).concat(t===2&&mw.length?['Info: '+mw.join(', ')]:mw),nav:links.length+' Links'+(navIssues.length?': '+navIssues.join(', '):' ok'),bad:st.length>0||cy.iss.length>0||sw>vw+1||navIssues.length>0||(t===1&&mw.length>0)||(fa&&(fa.bad.length>0||fa.pos>0))||(fg&&fg.bad)};
+}
+function cycleAudit(doc,w){const win=doc.defaultView;const iss=[];const info=[];const vis=el=>!!el&&el.getClientRects().length>0&&win.getComputedStyle(el).visibility!=='hidden';
+for(const f of doc.querySelectorAll('main figure[data-visual-type=cycle]')){const id=f.dataset.visualId||'Kreislauf';const c=[...f.querySelectorAll('.puk-vis-cycle li')].map(li=>{const r=li.getBoundingClientRect();return {x:r.left+r.width/2,y:r.top+r.height/2};});
+const arcs=[...f.querySelectorAll('.puk-vis-arc')].filter(a=>vis(a)&&(()=>{const r=a.getBoundingClientRect();return r.width+r.height>4;})());const svg=f.querySelector('.puk-vis-cycle>svg');
+const loop=c.length>=4&&vis(svg)&&arcs.length>=c.length&&c[0].y<c[1].y-4&&c[0].y<c[3].y-4&&c[2].y>c[1].y+4&&c[2].y>c[3].y+4&&c[3].x<c[0].x-4&&c[1].x>c[0].x+4;
+const linear=c.length>=4&&c.every((p,i)=>i===0||p.y>c[i-1].y+4);const ret=f.querySelector('[data-cycle-return]');const retOk=vis(ret)&&/zurück zu station 1/i.test(ret.innerText);const clock=/uhrzeigersinn/i.test(f.innerText);
+if(w>=768){if(!loop)iss.push(id+': keine geschlossene Schleife');else if(!clock)iss.push(id+': Leserichtung fehlt');else info.push('Schleife');}
+else if(loop)info.push('Schleife');else if(linear){if(!retOk)iss.push(id+': Rücksprung «zurück zu Station 1» nicht sichtbar');if(clock)iss.push(id+': «Uhrzeigersinn» bei linearer Abfolge sichtbar');if(retOk&&!clock)info.push('linear + Rücksprung');}else iss.push(id+': weder Schleife noch lineare Abfolge');}
+return {txt:info.concat(iss).join(', ')||'–',iss};}
+function siteAudit(doc){const iss=[];if(doc.documentElement.getAttribute('data-puk-site-build')===null)return iss;const win=doc.defaultView;const vis=el=>!!el&&el.getClientRects().length>0&&el.getBoundingClientRect().width>2&&win.getComputedStyle(el).visibility!=='hidden';
+const s=doc.querySelector('[data-sender]');if(!vis(s)||!/Fachstelle Angehörigenarbeit/.test(s.innerText)||!s.querySelector('a[href="mailto:angehoerigenarbeit@pukzh.ch"]')||!/Psychiatrische Universitätsklinik Zürich/.test(s.innerText))iss.push('Absenderin nicht sichtbar');
+doc.querySelectorAll('[data-safety-access="responsibility"]').forEach(e=>{if(!vis(e)||!e.closest('footer'))iss.push('Optionaler Zuständigkeitsverweis nicht sichtbar in der Fusszeile');});
+doc.querySelectorAll('[data-placeholder]').forEach(e=>{if(!vis(e))iss.push('Platzhalter unsichtbar');});
+if(!doc.querySelector('link[rel=icon]'))iss.push('Favicon-Link fehlt');if(!/^de/.test(doc.documentElement.lang))iss.push('lang fehlt');return iss;}
+function accName(doc,el){const l=el.getAttribute('aria-labelledby');if(l)return l.split(/\s+/).map(id=>(doc.getElementById(id)||{}).textContent||'').join(' ').trim();return (el.getAttribute('aria-label')||'').trim();}
+/* Prüfbefund 09.10.2026: Kontrast von Text in Figuren, Vertiefungen, Links und Hinweiskästen (WCAG 1.4.3). Hintergrund = nächster deckender Grund. */
+function lumOf(c){const m=(c||'').match(/[\d.]+/g);if(!m||m.length<3)return null;const a=m.length>3?+m[3]:1;const v=m.slice(0,3).map(x=>{x=x/255;return x<=0.03928?x/12.92:Math.pow((x+0.055)/1.055,2.4);});return {L:0.2126*v[0]+0.7152*v[1]+0.0722*v[2],a};}
+function contrastAudit(doc){const win=doc.defaultView;const out=new Set();const bg=el=>{for(let e=el;e;e=e.parentElement){const l=lumOf(win.getComputedStyle(e).backgroundColor);if(l&&l.a>0.5)return l.L;}return 1;};
+doc.querySelectorAll('main summary,main a,main figure p,main figure dt,main figure dd,main figure li,main figure h3,main .puk-longform__boundary,main .puk-longform__boundary a').forEach(e=>{if(!e.getClientRects().length||!e.textContent.trim())return;const cs=win.getComputedStyle(e);const f=lumOf(cs.color);if(!f||f.a<0.5)return;const b=bg(e);const cr=(Math.max(f.L,b)+0.05)/(Math.min(f.L,b)+0.05);const fs=parseFloat(cs.fontSize),fw=parseInt(cs.fontWeight,10)||400;const need=(fs>=24||(fs>=18.66&&fw>=700))?3:4.5;if(cr<need-0.005)out.add(e.tagName.toLowerCase()+(typeof e.className==='string'&&e.className?'.'+e.className.split(' ')[0]:'')+' '+cr.toFixed(2)+':1');});return [...out];}
+function figAudit(doc){const m=doc.querySelector('main');const iss=[];const ct=contrastAudit(doc);if(ct.length)iss.push('Kontrast unter AA: '+ct.slice(0,4).join(', '));
+m.querySelectorAll('figure').forEach((f,i)=>{const cap=f.querySelector('figcaption');if(!(cap&&cap.textContent.trim()))iss.push('figure '+i+' ohne figcaption');if(!accName(doc,f)&&!(cap&&cap.textContent.trim()))iss.push('figure '+i+' ohne Namen');const d=f.getAttribute('aria-describedby');if(d&&!d.split(/\s+/).every(id=>doc.getElementById(id)))iss.push('figure '+i+' describedby fehlt');});
+m.querySelectorAll('table').forEach((t,i)=>{if(!(t.caption&&t.caption.textContent.trim()))iss.push('table '+i+' ohne caption');if(!t.querySelector('th[scope]'))iss.push('table '+i+' ohne th[scope]');});
+m.querySelectorAll('[role=img]').forEach((e,i)=>{if(!accName(doc,e))iss.push('role=img '+i+' ohne Namen');});
+m.querySelectorAll('[role=region]').forEach((e,i)=>{if(!accName(doc,e))iss.push('region '+i+' ohne Namen');});
+m.querySelectorAll('img').forEach(e=>{if(!e.hasAttribute('alt'))iss.push('img ohne alt');});
+m.querySelectorAll('[data-placeholder]').forEach(e=>{if(!e.dataset.sourceStatus||!e.dataset.approvalStatus)iss.push('Platzhalter ohne Quellen-/Freigabestatus');if(!/entwurf|platzhalter/i.test(e.innerText))iss.push('Platzhalter nicht sichtbar als Entwurf markiert');});
+m.querySelectorAll('figure').forEach((f,i)=>{if(!/eigene (didaktische )?darstellung|quelle:|musterpfad/i.test((f.querySelector('figcaption')||{}).textContent||''))iss.push('figure '+i+' ohne Kennzeichnung eigene Darstellung/Quelle');});
+m.querySelectorAll('figcaption a,.puk-longform__sources a,[data-source-link]').forEach(a=>{const t=a.textContent.trim().replace(/\s+/g,' ');if(t.split(' ').length<3||GEN.test(t)){const l=(a.getAttribute('aria-label')||'').trim();if(l.split(/\s+/).length<4||!l.toLowerCase().includes(t.toLowerCase()))iss.push('Link «'+t+'» ohne sprechendes aria-label');}});
+m.querySelectorAll('svg').forEach(s=>{if(s.closest('[aria-hidden=true],[role=img]'))return;if(!accName(doc,s)&&!s.querySelector('title'))iss.push('svg ohne Namen/aria-hidden');});
+const ext=[...new Set(doc.defaultView.performance.getEntriesByType('resource').map(e=>e.name).filter(u=>!u.startsWith(location.origin)&&!u.startsWith('data:')))];
+if(ext.length)iss.push('extern: '+ext.join(', '));
+return {txt:m.querySelectorAll('figure').length+' fig · '+m.querySelectorAll('table').length+' tab · '+(ext.length?ext.length+' extern':'0 extern')+(iss.length?': '+iss.join(', '):' ok'),bad:iss.length>0};}
+function midWord(doc){
+  const main=doc.querySelector('main');if(!main)return [];
+  const w=doc.createTreeWalker(main,NodeFilter.SHOW_TEXT);const hits=[];let n;
+  while((n=w.nextNode())){const re=/\p{L}{2,}/gu;let m;while((m=re.exec(n.data))){const r=doc.createRange();r.setStart(n,m.index);r.setEnd(n,m.index+m[0].length);const rs=[...r.getClientRects()].filter(x=>x.width>0);if(rs.length>1&&Math.abs(rs[0].top-rs[rs.length-1].top)>2)hits.push('Wort getrennt: '+m[0]);}}
+  return [...new Set(hits)].slice(0,4);
+}
+function tabbables(doc,root){const win=doc.defaultView;return [...(root||doc).querySelectorAll('a[href],button,input,select,textarea,[tabindex]')].filter(e=>!e.disabled&&e.tabIndex>=0&&e.getClientRects().length>0&&win.getComputedStyle(e).visibility!=='hidden');}
+function ringOk(doc,e){if(!doc.hasFocus())return null;e.focus({preventScroll:true});if(!doc.hasFocus())return null;if(doc.activeElement!==e)return false;const cs=doc.defaultView.getComputedStyle(e);return (cs.outlineStyle!=='none'&&parseFloat(cs.outlineWidth)>0)||cs.boxShadow!=='none';}
+function splitTop(sel){const out=[];let d=0,cur='';for(const ch of sel){if(ch==='('||ch==='[')d++;else if(ch===')'||ch===']')d--;if(ch===','&&d===0){out.push(cur);cur='';}else cur+=ch;}out.push(cur);return out;}
+function focusRules(doc){if(doc.__fr)return doc.__fr;const out=[];const walk=rules=>{for(const r of rules){if(r.styleSheet){try{walk(r.styleSheet.cssRules);}catch(e){}continue;}if(r.cssRules&&!r.selectorText){try{if(!r.media||doc.defaultView.matchMedia(r.media.mediaText).matches)walk(r.cssRules);}catch(e){}continue;}if(!r.selectorText||!/:focus/.test(r.selectorText))continue;const st=r.style;const ol=st.getPropertyValue('outline-style')||(st.getPropertyValue('outline')&&!/none/.test(st.getPropertyValue('outline'))?'solid':'');const ring=(ol&&ol!=='none')||(st.getPropertyValue('box-shadow')&&st.getPropertyValue('box-shadow')!=='none');if(!ring)continue;for(const s of splitTop(r.selectorText)){if(/:not\([^)]*:focus/.test(s))continue;const base=s.replace(/:focus-visible|:focus-within|:focus/g,'').trim()||'*';out.push(base.replace(/(^|[\s>+~])$/,'$1*'));}}};for(const sh of doc.styleSheets){try{walk(sh.cssRules);}catch(e){}}return doc.__fr=out;}
+function staticRing(doc,e){return focusRules(doc).some(s=>{try{return e.matches(s);}catch(x){return false;}});}
+function focusAudit(doc){const t=tabbables(doc);const res=t.map(e=>ringOk(doc,e));const st=t.map((e,i)=>res[i]===null?staticRing(doc,e):null);const na=res.filter(r=>r===null).length;const bad=t.filter((e,i)=>res[i]===false||(res[i]===null&&st[i]===false)).map(e=>(e.textContent||e.id||e.tagName).trim().slice(0,24));const pos=[...doc.querySelectorAll('[tabindex]')].filter(e=>e.tabIndex>0).length;doc.activeElement&&doc.activeElement.blur&&doc.activeElement.blur();return {n:t.length,bad,pos,na};}
+function krow(name,exp,got,doc){const tr=document.createElement('tr');if(doc&&!doc.hasFocus()){got='nicht prüfbar (Dokument ohne Fokus)';tr.className='na';}else tr.className=(exp===got||exp==='Info')?'ok':'bad';tr.innerHTML=`<td>${name}</td><td>${exp}</td><td>${got}</td>`;document.getElementById('kbd').appendChild(tr);}
+const ael=d=>{const a=d.activeElement;return !a||a===d.body?'body (Fokus verloren)':(a.id||a.textContent.trim().slice(0,40));};
+async function keyboard(){
+  const f=await load('start',1440);await f.contentDocument.fonts.ready;await wait(800);let d=f.contentDocument;const W=f.contentWindow;
+  const all=tabbables(d);const page=tabbables(d,d.querySelector('.puk-web-page'));
+  krow('Start: Tab-Stopps der UI-Kit-Leiste vor dem Skip-Link (Kit-Rahmen, nicht Website)','Info',String(all.indexOf(page[0])));
+  krow('Start: erster Tab-Stopp der Seite','Zum Hauptinhalt',page[0].textContent);
+  const sk=page[0];sk.focus();const r=sk.getBoundingClientRect();
+  krow('Skip-Link bei Fokus sichtbar im Viewport','ja',(r.height>0&&r.top>=0&&r.bottom<=W.innerHeight&&ringOk(d,sk))?'ja':'nein',d);
+  sk.click();await wait(150);krow('Skip-Link Enter: Fokus auf main','main-content',ael(d),d);
+  const nav=[...d.querySelectorAll('.puk-web-nav__link')];krow('Start: Hauptnavigation Links','Behandlung | Forschung | Lehre | Über uns',nav.map(a=>a.textContent).join(' | '));
+  krow('Start: kein Notfalllink in Hauptnavigation','keiner',nav.some(a=>/notfall|akut/i.test(a.textContent))?'vorhanden':'keiner');
+  krow('Start: aria-current in Hauptnavigation','Behandlung',nav.filter(a=>a.getAttribute('aria-current')==='page').map(a=>a.textContent).join(',')||'keiner');
+  krow('Start: alle Navigationslinks mit sichtbarem Fokus','ja',nav.every(a=>ringOk(d,a))?'ja':'nein',d);
+  W.location.hash='situationsnavigator';await wait(400);
+  let chips=()=>[...d.querySelectorAll('.puk-app-chip')];let c=chips().find(b=>b.textContent==='Sicherheit klären');
+  c.focus();c.click();await wait(150);
+  krow('Situation: Enter auf Chip – Fokus bleibt auf Chip','Sicherheit klären',ael(d),d);
+  krow('Situation: aria-pressed / Status','true · 1 passende Impulse',c.getAttribute('aria-pressed')+' · '+d.querySelector('[role=status]').textContent);
+  const t2=tabbables(d);const reset=d.querySelector('.puk-app-reset');const lastChip=chips()[chips().length-1];
+  krow('Situation: Tab nach letztem Chip erreicht «Filter zurücksetzen»','Filter zurücksetzen',(t2[t2.indexOf(lastChip)+1]||{}).textContent||'–');
+  krow('Situation: Rücksetzen mit sichtbarem Fokus','ja',ringOk(d,reset)?'ja':'nein',d);
+  reset.click();await wait(150);krow('Situation: Fokus nach Rücksetzen (erster Chip)','Alle Themen',ael(d),d);
+  krow('Situation: Status nach Rücksetzen','4 passende Impulse',d.querySelector('[role=status]').textContent);
+  W.location.hash='angebotsnavigator';await wait(400);
+  const i=d.getElementById('service-search');const set=Object.getOwnPropertyDescriptor(W.HTMLInputElement.prototype,'value').set;
+  krow('Angebote: Suchfeld mit sichtbarem Fokus und Beschriftung','ja',(ringOk(d,i)&&(i.labels&&i.labels.length>0))?'ja':'nein',d);
+  i.focus();set.call(i,'xyz');i.dispatchEvent(new W.Event('input',{bubbles:true}));await wait(150);
+  krow('Angebote: Leerzustand sichtbar, Fokus bleibt im Suchfeld','ja · service-search',(d.querySelector('.puk-app-empty').hidden?'nein':'ja')+' · '+ael(d),d);
+  krow('Angebote: Status im Leerzustand (aria-live)','0 passende Musterangebote',d.querySelector('[role=status]').textContent);
+  krow('Angebote: bedienbares Element im Leerzustand','Info',String(tabbables(d,d.querySelector('.puk-app-empty')).length));
+  set.call(i,'');i.dispatchEvent(new W.Event('input',{bubbles:true}));await wait(100);
+  const cb=[...d.querySelectorAll('.puk-app-chip')].find(b=>b.textContent==='Beratung');cb.focus();cb.click();await wait(100);
+  krow('Angebote: Kategorie per Enter, Fokus bleibt','Beratung · 2 passende Musterangebote',ael(d)+' · '+d.querySelector('[role=status]').textContent,d);
+  W.location.hash='kontaktwegweiser';await wait(400);
+  const ch=[...d.querySelectorAll('.puk-app-choice')];krow('Kontakt: Stufen mit sichtbarem Fokus','3/3',ch.filter(b=>ringOk(d,b)).length+'/'+ch.length,d);
+  ch[2].focus();ch[2].click();await wait(150);
+  krow('Kontakt: Enter auf «Jetzt sofort handeln»','true · Jetzt sofort handeln',ch[2].getAttribute('aria-pressed')+' · '+d.querySelector('.puk-app-detail h2').textContent);
+  const act=d.querySelector('.puk-app-detail .puk-app-action');krow('Kontakt: Tab nach Stufen erreicht Hauptaktion','Fachlich freigegebenen Notfallweg anzeigen',(()=>{const t=tabbables(d);return (t[t.indexOf(ch[2])+1]||{}).textContent||'–';})());
+  act.focus();act.click();await wait(400);krow('Kontakt: Enter auf Hauptaktion fokussiert Ziel','kontakt-details',ael(d),d);
+  W.location.hash='gespraechshilfe';await wait(400);
+  const gc=t=>[...d.querySelectorAll('.puk-app-chip')].find(b=>b.textContent===t);const g1=gc('Sicherheit beschäftigt mich');g1.focus();g1.click();const g2=gc('Eine Grenze benennen');g2.focus();g2.click();await wait(150);
+  krow('Gespräch: zwei Chip-Gruppen per Enter, Fokus bleibt','Eine Grenze benennen',ael(d),d);
+  W.location.hash='visualisierungsmuster';await wait(300);await ready(d);await wait(200);
+  const rm=d.querySelectorAll('main .puk-longform__roadmap a');krow('Muster: Roadmap mit 9 Sprungzielen, alle Ziele vorhanden','9 · ja',rm.length+' · '+([...rm].every(a=>d.getElementById(a.getAttribute('href').split('/')[1]))?'ja':'nein'));
+  const tw=d.querySelector('.puk-vis-tablewrap');krow('Muster: Tabellenbereich per Tab erreichbar, Fokusring, Name','ja · Beispiel eines Visualisierungsplans für eine synthetische Langformseite',(tabbables(d).includes(tw)&&ringOk(d,tw)?'ja':'nein')+' · '+accName(d,tw),d);
+  const lk=[...d.querySelectorAll('main a')].find(a=>a.textContent==='Langbeschreibung zu Abbildung 1');krow('Muster: Link «Langbeschreibung zu Abbildung 1» mit Fokusring','ja',lk&&ringOk(d,lk)?'ja':'nein',d);
+  lk.click();await wait(500);krow('Muster: Enter auf Link setzt Fokus auf Langbeschreibung','muster-figur-lb',ael(d),d);
+  const ri=d.querySelector('main .puk-longform__roadmap a[href$="/muster-pfad"]');ri.focus();ri.click();await wait(1100);const pt=Math.round(d.getElementById('muster-pfad').getBoundingClientRect().top);krow('Muster: Roadmap «Prozesspfad» scrollt Ziel nach oben','ja',pt>=0&&pt<=48?'ja':'nein ('+pt+'px)');
+  const rules=[...d.styleSheets].filter(s=>/visual-patterns/.test(s.href||'')).flatMap(s=>[...s.cssRules]);const inRm=rules.filter(r=>r.media&&/prefers-reduced-motion:\s*no-preference/.test(r.media.mediaText)&&/animation/.test(r.cssText)).length;const outRm=rules.filter(r=>r.style&&r.style.animationName&&r.style.animationName!=='none').length;
+  krow('Muster: keine selbstlaufende Animation (CSS-Regeln statisch gelesen)','0 innerhalb · 0 ausserhalb',inRm+' innerhalb · '+outRm+' ausserhalb');
+  W.location.hash='gespraechshilfe';await wait(400);{const gc2=t=>[...d.querySelectorAll('.puk-app-chip')].find(b=>b.textContent===t);gc2('Sicherheit beschäftigt mich').click();gc2('Eine Grenze benennen').click();await wait(150);}
+  krow('Gespräch: Ausgabe aktualisiert (aria-live)','polite · Fachlich freigegebenen Kontaktweg beiziehen.',d.querySelector('.puk-app-output').getAttribute('aria-live')+' · '+d.querySelectorAll('.puk-app-output dd')[2].textContent);
+}
+async function siteKeyboard(){
+  const f=await load('site:unterstuetzung-finden',1440);await f.contentDocument.fonts.ready;await wait(400);let d=f.contentDocument;const W=f.contentWindow;
+  let tb=tabbables(d);krow('Starter Unterstützung: erster Tab-Stopp','Zum Hauptinhalt',tb[0].textContent);
+  const navL=[...d.querySelectorAll('nav[aria-label=Hauptnavigation] a')];krow('Starter: Hauptnavigation aus dem Seitenvertrag (nur veröffentlichte Seiten)','Übersicht | Beziehungen | Behandlung | Unterstützung',navL.map(a=>a.textContent).join(' | '));
+  krow('Starter Unterstützung: aria-current','Unterstützung',navL.filter(a=>a.getAttribute('aria-current')==='page').map(a=>a.textContent).join(',')||'keiner');
+  krow('Starter Unterstützung: kein automatisch ergänzter Krisen- oder Zuständigkeitsblock','0',String(d.querySelectorAll('[data-safety-access]').length));
+  krow('Starter Unterstützung: Links im Entscheidungsweg per Tab erreichbar','3',String(tabbables(d,d.querySelector('.puk-vis-decision')).length));
+  const sk=tb[0];sk.focus();sk.click();await wait(150);krow('Starter Unterstützung: Skip-Link setzt Fokus auf main','main-content',ael(d),d);
+  const ga=[...d.querySelectorAll('.puk-vis-decision a')].find(a=>a.getAttribute('href')==='#gespraech');ga.click();await wait(1100);const gt=Math.round(d.getElementById('gespraech').getBoundingClientRect().top);krow('Starter Unterstützung: «Ein Gespräch vereinbaren» springt zum Abschnitt (Oberkante 0–48 px)','ja',gt>=-2&&gt<=48?'ja':'nein ('+gt+'px)');
+  const f2=await load('site:beziehungen-verstehen',1440);await wait(300);const d2=f2.contentDocument;const rv2=d2.querySelector('[data-safety-access=responsibility]');
+  krow('Starter Beziehungen: kein pauschaler Zuständigkeitsblock','0',String(d2.querySelectorAll('[data-safety-access]').length));
+  const f3=await load('site:behandlung-verstehen',1440);await wait(300);
+  krow('Starter Behandlung: keine automatisch ergänzte Krisenrubrik','0',String(f3.contentDocument.querySelectorAll('[data-safety-access]').length));
+  krow('Starter: Hinweis «ersetzt keine Abklärung» in der Fusszeile','ja',f3.contentDocument.querySelector('footer [data-disclaimer]')?'ja':'nein');
+}
+function grow(name,exp,got,ok){const tr=document.createElement('tr');tr.className=(ok===undefined?exp===got:ok)?'ok':'bad';tr.innerHTML=`<td>${name}</td><td>${exp}</td><td>${got}</td>`;document.getElementById('gate').appendChild(tr);}
+async function gateRuns(){
+  const C=window.PUKSiteContract;const {cfg,files,exists,report}=await C.loadSite(SITE);
+  const d=C.gate(cfg,files,{mode:'draft',exists,report});const p=C.gate(cfg,files,{mode:'production',exists,report});
+  grow('Gate Entwurf: blockierende Befunde','0',String(d.blocks));
+  const need=['editorial-status','placeholder-approval','review-report','visual-approval'];
+  grow('Gate Produktion blockiert die bewusst ungefüllte Vorlage',need.join(', '),[...new Set(p.findings.filter(x=>x.level==='block').map(x=>x.id))].sort().join(', '));
+  const ref=SITE+'tools/selftest/';
+  const tcfg=await (await fetch(ref+'site.config.json')).json();const tfiles={};
+  for(const page of tcfg.pages)tfiles[C.resolve('',page.href).path]=C.renderPage(tcfg,page,await (await fetch(ref+'content/'+page.id+'.html')).text());
+  for(const r of C.selftest(tcfg,tfiles,{exists:path=>path in tfiles||!path.endsWith('.html')}))grow('Selbsttest: '+r.name,r.expected,r.got,r.ok);
+}
+function row(name,exp,got,doc){const tr=document.createElement('tr');if(doc&&!doc.hasFocus()){got='nicht prüfbar (Dokument ohne Fokus)';tr.className='na';}else tr.className=exp===got?'ok':'bad';tr.innerHTML=`<td>${name}</td><td>${exp}</td><td>${got}</td>`;document.getElementById('func').appendChild(tr);return exp===got;}
+async function functional(){
+  const f=await load('situationsnavigator',1024);await wait(300);const d=f.contentDocument;const chip=t=>[...d.querySelectorAll('.puk-app-chip')].find(b=>b.textContent===t);
+  chip('Sicherheit klären').click();await wait(100);
+  row('Situation: Filter «Sicherheit klären» – Status','1 passende Impulse',d.querySelector('[role=status]').textContent);
+  row('Situation: sichtbare Impulse','Dringlichkeit getrennt klären',[...d.querySelectorAll('[aria-label=Handlungsimpulse] li')].filter(l=>!l.hidden).map(l=>l.querySelector('h3').textContent).join(' | '));
+  row('Situation: Rücksetzen sichtbar','ja',d.querySelector('.puk-app-reset').hidden?'nein':'ja');
+  row('Situation: aria-pressed','true',chip('Sicherheit klären').getAttribute('aria-pressed'));
+  d.querySelector('.puk-app-reset').click();await wait(100);
+  row('Situation: nach Rücksetzen','4 passende Impulse',d.querySelector('[role=status]').textContent);
+  d.querySelector('.puk-app-mini').click();await wait(100);
+  row('Situation: #-Chip wählt Filter','Gespräch ohne Druck',d.querySelector('.puk-app-status span').textContent);
+  f.contentWindow.location.hash='angebotsnavigator';await wait(300);
+  const i=d.getElementById('service-search');const set=Object.getOwnPropertyDescriptor(f.contentWindow.HTMLInputElement.prototype,'value').set;set.call(i,'ABEND familie');i.dispatchEvent(new f.contentWindow.Event('input',{bubbles:true}));await wait(100);
+  row('Angebote: Suche «ABEND familie» (Reihenfolge, Gross/klein)','1 passendes Musterangebot',d.querySelector('[role=status]').textContent);
+  set.call(i,'angehorige');i.dispatchEvent(new f.contentWindow.Event('input',{bubbles:true}));await wait(100);
+  row('Angebote: Suche ohne Umlaut «angehorige»','1 passendes Musterangebot',d.querySelector('[role=status]').textContent);
+  set.call(i,'');i.dispatchEvent(new f.contentWindow.Event('input',{bubbles:true}));chip('Beratung').click();await wait(100);
+  row('Angebote: Kategorie Beratung','2 passende Musterangebote',d.querySelector('[role=status]').textContent);
+  set.call(i,'xyz');i.dispatchEvent(new f.contentWindow.Event('input',{bubbles:true}));await wait(100);
+  row('Angebote: Leerzustand sichtbar','ja',d.querySelector('.puk-app-empty').hidden?'nein':'ja');
+  f.contentWindow.location.hash='kontaktwegweiser';await wait(300);
+  row('Kontakt: Standardstufe','Beratung und Orientierung vereinbaren',d.querySelector('.puk-app-detail h2').textContent);
+  [...d.querySelectorAll('.puk-app-choice')][1].click();await wait(100);
+  row('Kontakt: Stufe «Heute oder zeitnah»','Heute oder zeitnah fachliche Unterstützung suchen',d.querySelector('.puk-app-detail h2').textContent);
+  f.contentWindow.location.hash='kontaktwegweiser/sofort';await wait(300);
+  row('Kontakt: #sofort öffnet Notfallstufe','Jetzt sofort handeln',d.querySelector('.puk-app-detail h2').textContent);
+  d.querySelector('.puk-app-detail .puk-app-action').click();await wait(300);
+  row('Kontakt: Hauptaktion fokussiert Ziel','kontakt-details',d.activeElement.id,d);
+  row('Kontakt: Ziel passt zur Stufe','Muster für den fachlich freigegebenen Notfallweg',d.getElementById('contact-target-title').textContent);
+  f.contentWindow.location.hash='gespraechshilfe';await wait(300);
+  chip('Sicherheit beschäftigt mich').click();chip('Eine Grenze benennen').click();await wait(100);
+  row('Gespräch: Sicherheit + Grenze','Fachlich freigegebenen Kontaktweg beiziehen.',d.querySelectorAll('.puk-app-output dd')[2].textContent);
+  f.contentWindow.location.hash='grundlagenkapitel/verstehen';await wait(1100);
+  const top=Math.round(d.getElementById('verstehen').getBoundingClientRect().top);
+  row('Langform: Sprungziel #verstehen oben im Viewport','ja',top>=0&&top<=48?'ja':'nein ('+top+'px)');
+  f.contentWindow.location.hash='handlungsuebersicht/main-content';await wait(300);
+  row('Skip-Link fokussiert main','main-content',d.activeElement.id,d);
+  const ext=[...d.querySelectorAll('script[src],link[href]')].map(e=>e.src||e.href).filter(u=>!u.startsWith(location.origin));
+  row('Externe Laufzeitressourcen','keine',ext.length?ext.join(', '):'keine');
+}
+(async()=>{
+  await gateRuns();
+  await keyboard();
+  await siteKeyboard();
+  await functional();
+  if(location.hash==='#func'){document.getElementById('stage').remove();document.getElementById('status').textContent='Nur Interaktionen geprüft';return;}
+  const out=[];let n=0;
+  for(const [v,w,t] of RUNS){
+    const f=await load(v,w);await f.contentDocument.fonts.ready;await wait(250);
+    if(t===2){scaleText(f.contentDocument);await wait(150);}else f.contentDocument.__audit=true;
+    const m=measure(f.contentDocument,t);out.push({v,w,t,...m});
+    const tr=document.createElement('tr');tr.className=m.bad?'bad':'ok';
+    tr.innerHTML=`<td>${v}</td><td>${w}</td><td>${t*100}%</td><td>${m.overflow}</td><td>${m.nav}</td><td>${m.focus}</td><td>${m.fig}</td><td>${m.cyc}</td><td>${m.off.join('; ')}</td>`;
+    document.getElementById('rows').appendChild(tr);
+    document.getElementById('status').textContent=`${++n}/${RUNS.length} geprüft`;
+  }
+  window.__qa=out;window.__kbd=[...document.querySelectorAll('#kbd tr,#func tr')].map(r=>[r.className,...[...r.cells].map(c=>c.textContent)]);
+  document.getElementById('stage').remove();
+  const bad=out.filter(o=>o.bad).length;const kb=document.querySelectorAll('#kbd tr.bad').length,fn=document.querySelectorAll('#func tr.bad').length;const na=out.filter(o=>o.na).length,kna=document.querySelectorAll('#kbd tr.na').length,fna=document.querySelectorAll('#func tr.na').length;const kn=document.querySelectorAll('#kbd tr').length,fnn=document.querySelectorAll('#func tr').length;const gb=document.querySelectorAll('#gate tr.bad').length,gn=document.querySelectorAll('#gate tr').length;
+  document.getElementById('status').textContent=`Matrix: ${out.length} Prüfläufe · ${bad} mit Befund · Tastatur: ${kn} Prüfungen · ${kb} mit Befund · Interaktionen: ${fnn} Prüfungen · ${fn} mit Befund · Gate: ${gn} Prüfungen · ${gb} mit Befund · Gesamt: ${bad+kb+fn+gb} Befunde · Fokusring nur statisch geprüft (Dokument ohne Fokus): Matrix ${na} Läufe · nicht prüfbar: Tastatur ${kna}, Interaktionen ${fna}`;
+  window.__qaTotal=bad+kb+fn+gb;
+})();

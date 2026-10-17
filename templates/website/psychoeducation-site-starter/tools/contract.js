@@ -8,7 +8,7 @@
 })(typeof self !== 'undefined' ? self : this, function () {
 'use strict';
 const VERSION = 'PUK Website Kit 1.10.1-r4 · abgeleitet';
-const BUILD = 'r4-10';
+const BUILD = 'r4-11';
 const FORMATS = ['text', 'figure', 'process', 'cycle', 'comparison', 'decision', 'illustration', 'stepwise-model', 'tension-field', 'relationship-map', 'continuum', 'layer-model'];
 /* Interaktive Komponenten und Erklärmuster G brauchen components/interaktion.js (HTML-Fassungen ohne React).
    Prüfbefund W3-01 (11.10.2026): auch jede Seite mit aufklappbarer Vertiefung (details) – das Skript öffnet sie vor dem Druck. */
@@ -28,9 +28,7 @@ const LEGAL = [['imprint', 'Impressum'], ['privacy', 'Datenschutzerklärung']];
 /* Prüfbefund BD-02 (11.10.2026): Quellenangaben mit fremdsprachigem Titel brauchen lang (WCAG 3.1.2). Stichwortprüfung, nur Hinweis. */
 const EN_WORDS = new Set('the of and for with to on an among between from by is are their its how what who when versus'.split(' '));
 const DE_WORDS = new Set('der die das und mit von für bei den dem des ein eine einer eines zur zum auf ist sind im wie was'.split(' '));
-const SAFETY = ['none', 'responsibility'];
-/* Profilentscheid 06.10.2026: Die Fachstelle Angehörigenarbeit bietet keine Krisenintervention. Psychoedukative Seiten tragen keine Krisennummern und keinen Notfallblock; zulässig ist ein Zuständigkeitsverweis ohne Nummern in der Fusszeile. */
-const LEGACY_SAFETY = ['persistent-subdued', 'direct'];
+/* Telefonnummern und Krisenkontakte werden je Thema redaktionell gewählt; keine pauschale Telefonsperre. */
 /* Hinweise aus dem Website-Review Teil 1 (fachliche Prüfung): Schweizer Kontext, Orthografie, personenzentrierte Sprache. Nur Hinweise (warn), keine Blocker: Stichwortprüfung, kein Ersatz für die fachliche Prüfung. */
 const DE_TERMS = /\b(Jugendamt|Betreuungsgerichts?|rechtliche[nr]? Betreuung|Betreuungsverfahren|PsychKG|SGB\s?[IVX]+|Pflegegrade?s?|Pflegekasse|Erwerbsminderungsrente|Schwerbehindertenausweis|Telefonseelsorge|Amtsgerichts?|Sozialpsychiatrische[nr]? Dienst(?:es)?)\b/i;
 const LABELS = /\b(?:die|der|den|des|dem|ein|eine|einen|einem|einer|als)\s+(Schizophrenen?|Psychotiker(?:in(?:nen)?)?|Borderliner(?:in(?:nen)?)?|Bipolaren|Süchtigen|Geisteskranken?|Irren)\b|\bpsychisch Kranken?\b/i;
@@ -198,7 +196,7 @@ function gate(cfg, files, opts = {}) {
   { const shown = String(cfg.editorialStatusLabel || cfg.editorialStatus || '');
     if (/entwurf/i.test(shown)) prod('site', 'editorial-status', `Redaktioneller Status «${shown}» nennt einen Entwurf – vor der Veröffentlichung z. B. «Fachlich freigegeben am TT.MM.JJJJ» (editorialStatusLabel)`);
     else if (shown && !STATUS_DATE.test(shown)) prod('site', 'editorial-status', `Redaktioneller Status «${shown}» nennt kein Datum – Format «Fachlich freigegeben am TT.MM.JJJJ» (editorialStatusLabel)`); }
-  if (cfg.language && !/^de(-|$)/i.test(cfg.language)) add('block', 'site', 'lang', 'language muss deutsch sein (de, de-CH)');
+  if (cfg.language && cfg.language !== 'de-CH') add('block', 'site', 'lang', 'language muss de-CH sein');
   const s = cfg.sender || {};
   if (!s.orgUnit || !s.institution) add('block', 'site', 'sender', 'sender.orgUnit und sender.institution sind Pflicht');
   if (s.email && !/^[^\s@<>"]+@[^\s@<>"]+\.[a-z]{2,}$/i.test(s.email)) add('block', 'site', 'sender', 'sender.email ist keine gültige E-Mail-Adresse: ' + s.email);
@@ -219,7 +217,6 @@ function gate(cfg, files, opts = {}) {
     else if (rs.reviewStatus !== 'geprueft') prod('site', 'safety-review', `Zuständigkeitsverweis nicht fachlich geprüft (reviewStatus: ${rs.reviewStatus || 'fehlt'})`);
     if (rs.inline) {
       if (!rs.inline.text) add('block', 'site', 'inline-ref', 'responsibility.inline.text fehlt');
-      else if (/\d{3}/.test(rs.inline.text)) add('block', 'site', 'inline-ref', 'Verweis im Text nennt Nummern – zulässig sind nur Stellen ohne Nummern');
       if (rs.inline.reviewStatus === 'geprueft' && !reviewDocumented(rs.inline)) add('block', 'site', 'review-doc', 'responsibility.inline: reviewStatus «geprueft» ohne reviewedBy und reviewedAt');
     }
   }
@@ -253,9 +250,6 @@ function gate(cfg, files, opts = {}) {
     if (ids.has(p.id)) add('block', pid, 'config', 'doppelte Seiten-id'); ids.add(p.id);
     if (p.href && !exists(pagePath(p))) add('block', pid, 'page-file', 'Seitendatei fehlt: ' + p.href);
     if (!Array.isArray(p.sensitiveTopics)) add('block', pid, 'config', 'sensitiveTopics fehlt (leeres Array, wenn keine)');
-    const psa = p.safetyAccess;
-    if (psa && psa.variant && psa.variant !== 'none') add('block', pid, 'safety-contract', LEGACY_SAFETY.includes(psa.variant) ? `Variante «${psa.variant}» ist auf Websites der Fachstelle nicht zulässig: Krisenintervention gehört nicht zum Auftrag; zulässig ist nur ein Zuständigkeitsverweis ohne Nummern (site.config.responsibility)` : 'Der Zuständigkeitsverweis steht site-weit in site.config.responsibility (eine feste Stelle), nicht pro Seite');
-    if ((p.sensitiveTopics || []).length && !cfg.responsibility) add('warn', pid, 'safety-recommend', `Seite behandelt ${p.sensitiveTopics.join(', ')}: Zuständigkeitsverweis ohne Nummern (site.config.responsibility) empfohlen, nicht Pflicht`);
     const plan = p.visualPlan;
     if (!Array.isArray(plan) || !plan.length) add('block', pid, 'visual-plan', 'visualPlan fehlt');
     else for (const v of plan) {
@@ -271,7 +265,7 @@ function gate(cfg, files, opts = {}) {
   for (const p of pages) {
     const path = p.href ? pagePath(p) : null; const doc = path ? docOf(path) : null; if (!doc) continue; const pid = p.id;
     const htmlEl = one(doc, x => x.tag === 'html');
-    if (!htmlEl || !/^de(-|$)/i.test(htmlEl.attrs.lang || '')) add('block', pid, 'lang', 'html lang fehlt oder ist nicht deutsch');
+    if (!htmlEl || htmlEl.attrs.lang !== 'de-CH') add('block', pid, 'lang', 'html lang fehlt oder ist nicht de-CH');
     if (htmlEl && htmlEl.attrs['data-puk-site-build'] !== BUILD) add('warn', pid, 'build', `Seite nicht mit Build ${BUILD} erzeugt (${htmlEl.attrs['data-puk-site-build'] || 'ohne Kennung'}) – tools/build.mjs ausführen`);
     const t = norm(txt(one(doc, x => x.tag === 'title')));
     if (!t) add('block', pid, 'title', 'title fehlt'); else if (titles[t]) add('block', pid, 'title', 'title doppelt mit Seite ' + titles[t]); else titles[t] = pid;
@@ -362,11 +356,7 @@ function gate(cfg, files, opts = {}) {
       const de = mainText.match(DE_TERMS); if (de) add('warn', pid, 'swiss-context', `«${de[0]}» ist ein deutscher Rechtsbegriff oder ein deutsches Angebot – Schweizer Begriff und Zuständigkeit prüfen (z. B. KESB, Beistandschaft, fürsorgerische Unterbringung)`);
       const lb = mainText.match(LABELS); if (lb) add('warn', pid, 'person-first', `«${lb[0]}» etikettiert – personenzentriert formulieren («Person mit …», «Menschen mit einer psychischen Erkrankung»)`); }
     for (const [topic, re] of SENSITIVE) { const m = mainText.match(re); if (m && !(p.sensitiveTopics || []).includes(topic)) add('block', pid, 'safety-contract', `Inhalt nennt «${norm(m[0])}», sensitiveTopics enthält «${topic}» nicht (Vertragsprüfung, keine Triage)`); }
-    /* Keine Krisennummern, kein Notfallblock (Profilentscheid 06.10.2026) */
-    for (const a of all(doc, x => x.tag === 'a' && /^tel:/i.test(x.attrs.href || ''))) add('block', pid, 'crisis-number', 'Telefonlink auf psychoedukativer Seite: ' + a.attrs.href);
-    { const fullText = norm(txt(doc)); const ph = fullText.match(/(?:\+41|0041|\b0)\s?\d{2}\s?\d{3}\s?\d{2}\s?\d{2}\b|\b0800\s?\d{3}\s?\d{3}\b/); if (ph) add('block', pid, 'crisis-number', `Telefonnummer im Text: «${ph[0]}» – psychoedukative Seiten nennen keine Nummern`);
-      const sh = fullText.match(/(?:^|[^\d.,:\/-])(112|117|118|143|144|145|147)(?![\d]|[.,:\/-]\d)/); if (sh) add('warn', pid, 'crisis-number-check', `Mögliche Notrufnummer «${sh[1]}» im Text – prüfen; Krisennummern sind auf psychoedukativen Seiten nicht zulässig`); }
-    for (const el of all(doc, x => LEGACY_SAFETY.includes(x.attrs['data-safety-access']) || cls(x, 'puk-site-safety--direct'))) add('block', pid, 'crisis-block', 'Notfallblock auf psychoedukativer Seite (' + (el.attrs['data-safety-access'] || 'puk-site-safety--direct') + ')');
+    /* Telefonnummern, tel:-Links und bewusst gewählte Krisenblöcke sind zulässig. */
     if (sa.variant === 'responsibility') {
       const el = one(doc, x => x.attrs['data-safety-access'] === 'responsibility');
       if (!el) add('block', pid, 'safety-target', 'Zuständigkeitsverweis fehlt in der Fusszeile – er muss von jeder Seite aus erreichbar sein');
@@ -454,13 +444,9 @@ const MUTATIONS = [
   ['Fachstelle unsichtbar', ['sender'], (c, f) => rep(f, 'unterstuetzung-finden.html', '<p class="puk-site-sender" data-sender>', '<p class="puk-site-sender" data-sender hidden>')],
   ['E-Mail der Absenderin fehlt', ['sender'], (c, f) => !!(c.sender && c.sender.email) && rex(f, 'index.html', /<a class="puk-link--inline" data-sender-email[^>]*>[^<]*<\/a>/, '')],
   ['Fachstelle fehlt', ['sender'], (c, f) => rex(f, 'index.html', /<p class="puk-site-sender" data-sender>[\s\S]*?<\/p>/, '')],
-  ['Telefonnummer im Text', ['crisis-number'], (c, f) => rep(f, 'behandlung-verstehen.html', '</main>', '<p>Telefon 058 000 00 00</p></main>')],
-  ['Telefonlink eingefügt', ['crisis-number'], (c, f) => rep(f, 'behandlung-verstehen.html', '</main>', '<p><a href="tel:0580000000">Anrufen</a></p></main>')],
-  ['Notfallblock eingefügt', ['crisis-block'], (c, f) => rep(f, 'behandlung-verstehen.html', '<main id="main-content"', '<aside data-safety-access="direct"><p>Akute Hilfe</p></aside><main id="main-content"')],
   ['ß statt ss', ['orthography'], (c, f) => rep(f, 'behandlung-verstehen.html', '</main>', '<p>Eine große Hilfe.</p></main>')],
   ['Deutscher Rechtsbegriff', ['swiss-context'], (c, f) => rep(f, 'behandlung-verstehen.html', '</main>', '<p>Das Jugendamt hilft weiter.</p></main>')],
   ['Etikettierende Bezeichnung', ['person-first'], (c, f) => rep(f, 'behandlung-verstehen.html', '</main>', '<p>Für den Schizophrenen ist das schwer.</p></main>')],
-  ['Unzulässige Variante direct', ['safety-contract'], c => { pg(c, 'beziehungen-verstehen').safetyAccess = { variant: 'direct' }; }],
   ['Zuständigkeitsverweis ausserhalb der Fusszeile', ['safety-position'], (c, f) => { const m = /<section class="puk-site-safety[\s\S]*?<\/section>/.exec(f['beziehungen-verstehen.html'] || ''); if (!m) return false; f['beziehungen-verstehen.html'] = f['beziehungen-verstehen.html'].replace(m[0], '').replace('<main id="main-content"', m[0] + '<main id="main-content"'); return true; }],
   ['Zuständigkeitsverweis als geprüft markiert ohne Dokumentation', ['review-doc'], c => { c.responsibility.reviewStatus = 'geprueft'; delete c.responsibility.reviewedBy; delete c.responsibility.reviewedAt; }],
   ['Zuständigkeitsverweis fehlt auf einer Seite', ['safety-target'], (c, f) => rex(f, 'behandlung-verstehen.html', /<section class="puk-site-safety[\s\S]*?<\/section>/, '')],
@@ -545,6 +531,26 @@ function selftest(cfg, files, opts = {}) {
     const ok = rep(f, 'beziehungen-verstehen.html', '</main>', `<section id="x-inline"><p class="puk-longform__boundary" data-responsibility-inline>${INLINE_T}</p></section></main>`);
     const hitI = ok && gate(c, f, { mode: 'production', exists: base }).findings.some(x => x.level === 'block' && x.id === 'inline-review');
     rows.push({ name: 'Produktion blockiert ungeprüften Verweis im Text', expected: 'inline-review', got: hitI ? 'inline-review' : (ok ? 'nicht erkannt' : 'Mutation nicht anwendbar'), ok: !!hitI }); }
+  for (const [name, snippet] of [
+    ['Weitere Schweizer Telefonnummer im Text zulässig', '<p>Testkontakt: 044 123 45 67</p>'],
+    ['Telefonlink und internationale Nummer zulässig', '<p><a href="tel:+4930123456">Testkontakt +49 30 123456</a></p>'],
+    ['Bewusst gewählte Krisenkontakte zulässig', '<aside data-safety-access="direct"><p>Testkontakte: <a href="tel:144">144</a> und <a href="tel:117">117</a></p></aside>']
+  ]) {
+    const f = Object.assign({}, files); const applied = rep(f, 'behandlung-verstehen.html', '</main>', snippet + '</main>');
+    const r = gate(cfg, f, { mode: 'draft', exists: base });
+    rows.push({ name, expected: '0 zusätzliche Blocker und keine Nummernwarnung', got: String(r.blocks), ok: applied && r.blocks === b0.blocks && !r.findings.some(x => /^crisis-number/.test(x.id)) });
+  }
+  for (const [name, format, list] of [['Entscheidungsweg', 'decision', 'puk-vis-decision'], ['Modell in Schritten', 'stepwise-model', 'puk-vis-build__steps']]) {
+    const f = Object.assign({}, files);
+    const applied = rep(f, 'behandlung-verstehen.html', 'data-visual-type="process"', `data-visual-type="${format}" data-print-split`) && rep(f, 'behandlung-verstehen.html', 'class="puk-vis-path"', `class="${list}"`);
+    const ok = applied && !gate(cfg, f, { mode:'draft', exists:base }).findings.some(x => x.id === 'print-split');
+    rows.push({ name: `Kennzeichen am ${name} zulässig`, expected:'kein print-split', got:ok?'kein print-split':'nicht erfüllt', ok });
+  }
+  { const f = Object.assign({}, files);
+    const applied = rep(f, 'behandlung-verstehen.html', 'data-visual-type="process"', 'data-visual-type="process" data-print-split') && rep(f, 'behandlung-verstehen.html', 'class="puk-vis-path"', 'class="ohne-schrittliste"');
+    const hit = applied && gate(cfg, f, { mode:'draft', exists:base }).findings.some(x => x.id === 'print-split');
+    rows.push({ name:'Kennzeichen ohne Schrittliste blockiert', expected:'print-split', got:hit?'print-split':'nicht erkannt', ok:!!hit });
+  }
   for (const [name, expect, mut] of MUTATIONS) {
     const c = JSON.parse(JSON.stringify(cfg)); const f = Object.assign({}, files);
     let applied; try { applied = mut(c, f) !== false; } catch (e) { applied = false; }

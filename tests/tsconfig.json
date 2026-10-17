@@ -1,0 +1,1 @@
+{"compilerOptions":{"strict":true,"noEmit":true,"lib":["ES2020","DOM"],"types":["react"]},"include":["../components/**/*.d.ts","../quellcode/komponenten/src/**/*.d.ts"]}

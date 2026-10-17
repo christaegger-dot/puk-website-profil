@@ -15,7 +15,7 @@ Inhaltsregeln für psychoedukative Websites der Fachstelle Angehörigenarbeit, a
 - Die Ebenen Symptom, Diagnose, Erleben, Beziehung, Behandlung und Alltag auseinanderhalten; ähnliche Begriffe sauber abgrenzen.
 - Aussagen zu Medikamenten und Therapien korrekt und ohne Empfehlung für den Einzelfall.
 - **Schweizer Kontext:** Rechtliches (fürsorgerische Unterbringung, Schweigepflicht und Auskunftsrechte, Vorsorgeauftrag, Patientenverfügung, KESB), Versorgungsstrukturen und Begriffe der Schweiz – keine deutschen Rechtsbegriffe oder Angebote (z. B. nicht «Jugendamt», «rechtliche Betreuung», «Pflegegrad»).
-- **Krisenthemen** fachlich korrekt, ruhig und nicht alarmierend behandeln. Der Text weckt nie die Erwartung, die Fachstelle sei in Krisen zuständig. Keine Krisennummern, kein Notfallblock (Abschnitt «Zuständigkeit statt Krisenzugang» im Brand Book).
+- **Krisenthemen** fachlich korrekt, ruhig und nicht alarmierend behandeln. Der Text weckt nie die Erwartung, die Fachstelle sei in Krisen zuständig. Krisenkontakte je Thema bewusst wählen; keinen automatischen Notfallblock ergänzen (Abschnitt «Telefonnummern und Kriseninformationen» im Brand Book).
 
 ## Quellenstandard
 
@@ -48,7 +48,7 @@ Inhaltsregeln für psychoedukative Websites der Fachstelle Angehörigenarbeit, a
 
 ## Was der Starter automatisch meldet
 
-Das Gate des Psychoedukations-Starters prüft einige dieser Regeln nach Stichwörtern und meldet sie als **Hinweis**, nicht als Blocker: «ß» und „…“ statt «…», deutsche Rechtsbegriffe und Angebote, etikettierende Bezeichnungen. Telefonnummern, `tel:`-Links und Notfallblöcke blockiert es. Das ersetzt keine fachliche Prüfung.
+Das Gate des Psychoedukations-Starters prüft einige dieser Regeln nach Stichwörtern und meldet sie als **Hinweis**, nicht als Blocker: «ß» und „…“ statt «…», deutsche Rechtsbegriffe und Angebote, etikettierende Bezeichnungen. Telefonnummern und `tel:`-Links sind erlaubt; Krisenkontakte werden themenbezogen ausgewählt. Das ersetzt keine fachliche Prüfung.
 
 ## Im Ablauf
 

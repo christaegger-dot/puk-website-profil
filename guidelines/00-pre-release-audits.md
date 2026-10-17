@@ -34,7 +34,7 @@ Kontext (ausfüllen)
 - Anrede auf der Website: Sie
 
 Grundlagen (im Repository lesen, bevor du prüfst)
-- README.md (v. a. «Zuständigkeit statt Krisenzugang», «Verweis im Text», Absenderin)
+- README.md (v. a. «Telefonnummern und Kriseninformationen», «Verweis im Text», Absenderin)
 - guidelines/01-marke-und-logo.md, 02-farben-und-kontrast.md, 03-typografie-und-flaechen.md,
   05-anwendungsmuster.md, 06-langform-und-psychoedukation.md, 09-interaktionskonzept.md,
   04-barrierefreiheit-und-test.md
@@ -73,8 +73,8 @@ D · Seitenhülle und Navigation
  11. Sprunglink als erster Tabstopp; Hauptnavigation mit aria-current; Reihenfolge wie im
      Seitenvertrag.
  12. Kein waagrechter Überlauf von 320 bis 1440 px und bei 200 % Zoom.
- 13. Fusszeile: Zuständigkeitsverweis wortgleich mit dem aktuellen Standardwortlaut im README
-     (oder einem dokumentiert geprüften Wortlaut), Inhaltsverantwortung, Prüfdatum.
+ 13. Fusszeile: ruhige, gebündelte Angaben zu Kontakt, Inhaltsverantwortung und Prüfdatum.
+     Zusätzliche Zuständigkeits- oder Krisenhinweise nur bei dokumentiertem Themenentscheid.
 
 E · Komponenten und Interaktion
  14. Nur Profil-Komponenten und -Muster; keine Kartenraster mit Icons, wo eine Anordnung mit
@@ -84,8 +84,8 @@ E · Komponenten und Interaktion
  16. Bedienziele mindestens 44 × 44 px; Hover nie einzige Auslösung; Fokus-Ring überall
      sichtbar; nichts bewegt sich von selbst.
 
-F · Zuständigkeit statt Krisenzugang
- 17. Keine Krisennummern, keine tel:-Links, kein Notfallblock, keine Seite «Hilfe in der Krise».
+F · Telefonnummern und Kriseninformationen
+ 17. Telefonnummern und tel:-Links sind erlaubt. Kriseninformationen sind ein bewusster Entscheid je Thema; keine automatische Ergänzung.
  18. Verweis im Text nur über den Platzhalter, nur auf Seiten mit Selbstgefährdung, Gewalt oder
      akuter Krise, direkt nach der Handlungsanleitung, höchstens einer je Abschnitt, nicht in
      Figur oder Vertiefung; Wortlaut gleich site.config.json › responsibility.inline.
@@ -124,7 +124,7 @@ Grundlagen (im Repository lesen)
 - guidelines/00-visuelle-wissensvermittlung.md, 07-visualisierung-umsetzen.md,
   06-langform-und-psychoedukation.md, 00-sprache-und-ton.md
 - site.config.json › visualPlan
-- README.md › «Zuständigkeit statt Krisenzugang»
+- README.md › «Telefonnummern und Kriseninformationen»
 
 Teil 1 · Visualisierungs-Check je Figur
 Fotografiere jede Figur in main bei 1280 und 360 px und im Theme «kontrast» und sieh sie an.
@@ -181,7 +181,7 @@ Regeln
 - Bildvorschläge bleiben im Profil: Profil-Tokens, Linienzeichnung oder Diagramm, keine Fotos,
   keine generierten Personenbilder, keine Stimmungsbilder.
 - Sicherheit: Hinweise zu Schutz, Gewalt und Suizidalität stehen sichtbar im Text, nie nur
-  in Figur oder Vertiefung. Keine Krisennummern vorschlagen.
+  in Figur oder Vertiefung. Krisenkontakte nicht automatisch vorschlagen; ihre Auswahl entscheidet Christa für das konkrete Thema.
 - Rahmen Schweiz / Kanton Zürich; Schweizer Hochdeutsch (ss, «»).
 
 Ergebnis
@@ -214,7 +214,7 @@ Kontext (ausfüllen)
 Grundlagen (im Repository lesen)
 - guidelines/00-ablauf-pruefung-und-freigabe.md (inkl. «Prüftiefe»)
 - guidelines/00-technische-qualitaet.md (v. a. C Datenschutz, F Darstellung und Druck)
-- README.md › «Zuständigkeit statt Krisenzugang»
+- README.md › «Telefonnummern und Kriseninformationen»
 - PRUEFBERICHT.md, site.config.json, tools/gate.mjs der Website
 
 Prüfpunkte (jeder mit Beleg)
@@ -245,7 +245,7 @@ C · Gate
      (Ohne Repositoryzugriff: als «nicht prüfbar» melden, nicht als bestanden.)
 
 D · Zuständigkeit und Inhalt
- 12. Keine Krisennummern, keine tel:-Links, kein Notfallblock (Stichprobe auf jeder Seite).
+ 12. Kontakte sind inhaltlich passend und geprüft; keine automatisch ergänzten Notfallblöcke (Stichprobe auf jeder Seite).
  13. Alle externen Links erreichbar und auf offizielle Quellen (z. B. Opferhilfe Schweiz);
      E-Mail-Adresse der Fachstelle korrekt.
  14. Quellenangaben vollständig, mit Jahr; keine Quellenzuschreibung ohne Grundlage.

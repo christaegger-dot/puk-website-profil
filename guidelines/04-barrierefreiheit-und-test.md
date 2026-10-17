@@ -29,7 +29,7 @@ Ein Fokusbild für das ganze System: Eingabefelder färben ihren Rahmen blau mit
 
 ## Screenreader-Testplan
 
-**Status: Testplan, kein Nachweis.** Kein realer Screenreader-Lauf ist durchgeführt. Alle Läufe sind **ausstehend**. Ergebnisse nur eintragen, wenn sie tatsächlich mit dem genannten Screenreader und Browser gewonnen wurden (Datum, Person, Versionen). Für eine konkrete Website: Vorlage `templates/website/website-screenreader-test.example.json` kopieren und mindestens zwei reale Läufe dokumentieren.
+**Status: wiederverwendbare Prüfvorlage, kein Nachweis.** Für den technischen Profilabschluss vom 17.10.2026 sind reale Screenreader-Läufe nicht beauftragt und als Projektpendenz ausgeschlossen. Kein solcher Lauf wird behauptet. Ergebnisse nur eintragen, wenn sie tatsächlich mit dem genannten Screenreader und Browser gewonnen wurden (Datum, Person, Versionen). Für eine neue konkrete Website: Vorlage `templates/website/website-screenreader-test.example.json` kopieren und mindestens zwei reale Läufe dokumentieren.
 
 Prüfobjekt: `ui_kits/website/index.html` (lokal ausgeliefert), Routen siehe `ui_kits/website/README.md`, sowie der Psychoedukations-Starter und die Erklärmuster. Die UI-Kit-Leiste «UI-Kit · Referenzansichten» ist Kit-Rahmen und nicht Teil der Website; Befunde darin getrennt notieren.
 
@@ -37,8 +37,8 @@ Prüfobjekt: `ui_kits/website/index.html` (lokal ausgeliefert), Routen siehe `ui
 
 | Kürzel | Screenreader | Browser | System | Status |
 | --- | --- | --- | --- | --- |
-| VO | VoiceOver (aktuelle macOS-Version) | Safari | macOS | ausstehend |
-| NV | NVDA (aktuelle stabile Version) | Firefox (aktuelle Version) | Windows | ausstehend |
+| VO | VoiceOver (aktuelle macOS-Version) | Safari | macOS | Vorlage für ein neues Website-Projekt |
+| NV | NVDA (aktuelle stabile Version) | Firefox (aktuelle Version) | Windows | Vorlage für ein neues Website-Projekt |
 
 Vor dem Lauf festhalten: Versionen, Sprache der Sprachausgabe (Deutsch), Ausführlichkeit Standard, Browser-Zoom 100 %.
 
@@ -89,7 +89,7 @@ Jeder Fall gilt für VO und NV. Ergebnis je Umgebung: `bestanden` / `nicht besta
 
 #### SR-10 Langform: Wegweiser, Sprungziele, Erklärgrafik (`#grundlagenkapitel`)
 1. Navigation «Kapitelweg» bzw. Roadmap durchgehen und einen Eintrag aktivieren. 2. Erklärgrafik im Lesemodus lesen. 3. Fusszeile lesen.
-- Erwartet: Sprungziel wird angesagt, Lesen geht dort weiter. Die Grafik ist über Beschriftung und Textalternative vollständig verständlich; dekorative Teile werden nicht vorgelesen. Die Fusszeile der Kit-Referenz enthält deren Sicherheitshinweis (Kit-Variante `persistent-subdued`); auf Websites der Fachstelle steht dort stattdessen der Zuständigkeitsverweis ohne Nummern (siehe SR-15).
+- Erwartet: Sprungziel wird angesagt, Lesen geht dort weiter. Die Grafik ist über Beschriftung und Textalternative vollständig verständlich; dekorative Teile werden nicht vorgelesen. Die Fusszeile der Kit-Referenz enthält deren Sicherheitshinweis (Kit-Variante `persistent-subdued`); der Standardstarter der Fachstelle hat keinen automatisch ergänzten Krisen- oder Zuständigkeitsblock (siehe SR-15).
 
 #### SR-11 Handlungsübersicht und Transferfall (`#handlungsuebersicht`, `#transfer-erholung`)
 - Erwartet: wie SR-03 und SR-10; `#handlungsuebersicht/main-content` setzt den Fokus in den Hauptbereich.
@@ -110,8 +110,8 @@ Jeder Fall gilt für VO und NV. Ergebnis je Umgebung: `bestanden` / `nicht besta
 
 #### SR-15 Psychoedukations-Starter (`templates/website/psychoeducation-site-starter/`)
 1. `unterstuetzung-finden.html` laden, Tab bis nach der Hauptnavigation. 2. Orientierungspunkte und Überschriften der drei Referenzfälle prüfen. 3. In `beziehungen-verstehen.html` den Kreislauf lesen, einmal bei 1440 px und einmal bei 320 px (Zoom/Fensterbreite). 4. Fusszeile lesen.
-- Erwartet: Die Absenderin «Fachstelle Angehörigenarbeit · Psychiatrische Universitätsklinik Zürich · angehoerigenarbeit@pukzh.ch» wird im Kopf gelesen, die E-Mail-Adresse als Link. Hauptnavigation mit vier Links; aktuelle Seite angesagt. Es gibt keinen Notfallblock und keinen Sicherheitslink.
-- Fusszeile: Bereich «Zuständigkeit» mit dem Zuständigkeitsverweis ohne Nummern und seinem Prüfstatus, danach «Über diese Seiten» mit dem Hinweis, dass die Website keine individuelle Abklärung, Beratung oder Behandlung ersetzt.
+- Erwartet: Die Absenderin «Fachstelle Angehörigenarbeit · Psychiatrische Universitätsklinik Zürich · angehoerigenarbeit@pukzh.ch» wird im Kopf gelesen, die E-Mail-Adresse als Link. Hauptnavigation mit vier Links; aktuelle Seite angesagt. Das Standardmuster ergänzt keinen Notfallblock oder Sicherheitslink; weitere Kontakte sind je Thema möglich.
+- Fusszeile: «Über diese Seiten» mit zutreffendem Materialstatus und Rechtslinks. Ein pauschaler Zuständigkeits- oder Krisenverweis wird nicht erwartet. Ausdrücklich gewählte Kontakte bleiben verständlich und auffindbar.
 - Kreislauf: breit mit der Leserichtung «im Uhrzeigersinn …»; schmal mit «von oben nach unten; nach Station 4 zurück zu Station 1» und dem Satz «Nach Station 4: zurück zu Station 1». Bei der schmalen Darstellung wird «Uhrzeigersinn» nicht vorgelesen.
 - Platzhalter (Illustration, Kontakt, Download) werden mit «Entwurf» bzw. «Platzhalter» vorgelesen.
 
@@ -127,6 +127,6 @@ Jeder Fall gilt für VO und NV. Ergebnis je Umgebung: `bestanden` / `nicht besta
 
 | Fall | VO/Safari | NV/Firefox | Befund | Datum · Person |
 | --- | --- | --- | --- | --- |
-| SR-01 … SR-16 | ausstehend | ausstehend | – | – |
+| SR-01 … SR-16 | je Projekt ausfüllen | je Projekt ausfüllen | – | – |
 
 Automatisierte Prüfungen in `ui_kits/website/qa.html` (Überlauf, Fokusring, emulierter Tastaturdurchgang) ersetzen diesen Test nicht.

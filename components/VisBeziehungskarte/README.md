@@ -8,4 +8,4 @@ Live-Muster aus `templates/website/longform/erklaermuster.html` mit `erklaermust
 
 **Einsetzen für:** Unterstützungsnetz, Beteiligte rund um eine Behandlung, Zuständigkeiten zwischen Stellen, Reflexionsübung «Wer trägt mit?».
 
-**Verzichten, wenn:** die Reihenfolge wichtig ist (→ Prozesspfad) oder mehr als drei Einträge pro Kreis nötig wären (→ gegliederte Liste). Keine Telefonnummern oder Krisenstellen in der Karte.
+**Verzichten, wenn:** die Reihenfolge wichtig ist (→ Prozesspfad) oder mehr als drei Einträge pro Kreis nötig wären (→ gegliederte Liste). Kontakte nur dann in die Karte aufnehmen, wenn sie die Leserfrage beantworten; geprüfte Nummern und bewusst gewählte Krisenkontakte sind erlaubt.

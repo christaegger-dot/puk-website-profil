@@ -1,4 +1,4 @@
-/* PUK Website-Profil – Typen der 24 Komponenten unter window.PUKWeb (Dokumentation, nicht typgeprüft). */
+/* PUK Website-Profil – Typen der 26 Komponenten unter window.PUKWeb (strikt typgeprüft). */
 
 // ---- Button ----
 /**
@@ -62,7 +62,7 @@ export interface FieldProps {
 export declare function Field(props: FieldProps): JSX.Element;
 
 // ---- Input ----
-export interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
+export interface InputProps extends Omit<React.InputHTMLAttributes<HTMLInputElement>, 'size'> {
   invalid?: boolean;
   size?: 'sm' | 'md';
 }
@@ -80,7 +80,7 @@ export declare function Textarea(props: TextareaProps): JSX.Element;
    Compiler nahm sie als das deklarierte Bauteil — Adhärenzregeln für ein
    <SelectOption>, das es nie gab, während Select selbst keine bekam. Deshalb
    inline. */
-export interface SelectProps extends React.SelectHTMLAttributes<HTMLSelectElement> {
+export interface SelectProps extends Omit<React.SelectHTMLAttributes<HTMLSelectElement>, 'size'> {
   options?: Array<string | { value: string; label: string }>;
   placeholder?: string;
   invalid?: boolean;

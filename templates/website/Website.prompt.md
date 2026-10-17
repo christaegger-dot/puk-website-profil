@@ -55,7 +55,7 @@ keine vollständige technische Spezifikation der produktiven Website und keine B
   Mengen oder Abläufe; Illustration für Metaphern, Erleben und emotionalen Zugang; Akkordeon nur
   für optionale Vertiefung; eigener Abschnitt oder eigene Seite bei eigenständigem Nutzerziel,
   dauerhaft hoher Inhaltsmenge oder anderer Dringlichkeit.
-- **Kein Krisenzugang (Profilentscheid 06.10.2026):** Die Varianten in `profile.json#safetyAccess` werden auf Websites der Fachstelle nicht verwendet; höchstens ein Zuständigkeitsverweis ohne Nummern in der Fusszeile (README-Abschnitt «Zuständigkeit statt Krisenzugang»). Kritische Information nie hinter Filter, Dialog oder Akkordeon verbergen.
+- **Kontaktauswahl:** Telefonnummern und Telefonlinks sind erlaubt. Christa entscheidet je Thema, ob Krisenkontakte dazugehören; keine automatische Ergänzung oder Hervorhebung. Kritische Information nie ausschliesslich hinter Filter, Dialog oder Akkordeon verbergen (README-Abschnitt «Telefonnummern und Kriseninformationen»).
 - **Redaktionelle Pflege:** Reale Kontakte, Zuständigkeiten, medizinische Aussagen und Quellen
   benötigen Inhaltsverantwortung und Prüfdatum. Ergebnisänderungen programmatisch ankündigen,
   Rücksetzen anbieten und sensible Auswahl standardmässig nicht speichern.

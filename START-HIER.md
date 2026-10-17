@@ -1,59 +1,51 @@
-# PUK Website-Profil · Projektpaket
+# PUK Website-Profil · Start
 
-Fachstellen-Profil 2026.10.2 (Stand 15.10.2026) – lauffähige Fassung des Design-Systems «PUK Zürich Website-Profil» für die Websites der Fachstelle Angehörigenarbeit. Alle Pfade sind aufgelöst: Vorlagen, Starter und UI-Kit laufen ohne Anpassung.
+**Version 2026.10.3 · abgeschlossen am 17.10.2026.** Verbindlich ist dieses Repository. Alle früheren Pendenzen sind in den [Abschlussentscheiden](ABSCHLUSSENTSCHEIDE.md) erledigt oder ausgeschlossen; der [Prüfbericht](PRUEFBERICHT.md) nennt die tatsächlichen Nachweise.
 
-## Ansehen
+## Einrichten und prüfen
 
-Den Ordner über einen lokalen Webserver öffnen (Dateien direkt im Browser zu öffnen reicht nicht, weil Schriften und Skripte geladen werden):
+Node ab 20, Python ab 3.11. Die erzeugten Websites selbst haben keine Paketabhängigkeiten.
 
 ```sh
-cd puk-website-profil
-python3 -m http.server 8000      # oder: npx serve
+python3 -m venv .venv
+. .venv/bin/activate
+python3 -m pip install -r requirements.txt
+npm ci
+npx playwright install chromium
+npm run build
+npm test
+npm run package
+npm run check:package
 ```
 
-Dann im Browser:
+Ein vorhandener Browser lässt sich über `CHROMIUM_EXECUTABLE_PATH=/pfad/zu/chromium` wählen. Die Paketversionen sind festgelegt; der Komponenten-Build erzeugt 26 React-Komponenten unter `window.PUKWeb`.
 
-- `http://localhost:8000/ui_kits/website/` – Referenzansichten des Kits (zeigt auch Kit-Varianten, die für die Fachstelle nicht gelten)
-- `http://localhost:8000/ui_kits/website/qa.html` – automatische Prüfansicht
-- `http://localhost:8000/templates/website/psychoeducation-site-starter/` – Psychoedukations-Starter
-- `http://localhost:8000/templates/website/longform/erklaermuster.html` – Erklärmuster G–K
-- `http://localhost:8000/templates/website/interaktion/beispiel.html` – Akkordeon, Reiter, Menü, Dialog ohne React
+## Lokal ansehen
 
-## Eine neue Website bauen
+```sh
+python3 -m http.server 8000 --bind 127.0.0.1
+```
 
-1. Den Ordner `templates/website/psychoeducation-site-starter/` innerhalb von `templates/website/` kopieren, z. B. nach `templates/website/stress-verstehen/` (dort bleiben die Pfade zu Stylesheets und Skript gültig).
-2. `site.config.json` ausfüllen (Absenderin, Seiten, Visualisierungsplan, Impressum und Datenschutzerklärung unter `legal`, 404-Seite, optional Zuständigkeitsverweis und `siteUrl`) und die Inhalte in `content/` schreiben.
-3. Bauen und prüfen (Node 18 oder neuer, keine Installation nötig):
+Im Browser `http://127.0.0.1:8000/` öffnen. Die Startseite verlinkt Starter, vollständiges Profilbeispiel, Erklärmuster und Prüfansicht. Der Starter enthält absichtlich Eingabeparameter und keine offenen Projektaufträge. Sein Entwurfsgate besteht; das Produktionsgate sperrt die ungefüllte Vorlage.
 
-   ```sh
-   node tools/build.mjs
-   node tools/gate.mjs --production
-   ```
+## Eine neue Website
 
-   Prüfen lassen: Die Prüfstufen laufen in einer eigenen Sitzung, die nicht gebaut hat; Ergebnisse mit Beleg in `PRUEFBERICHT.md` (Auftrag im Abschnitt «Prüfung und Freigabe»). Ohne vollständigen Prüfbericht blockiert das Produktionsgate.
+Den Ordner `templates/website/psychoeducation-site-starter/` innerhalb von `templates/website/` kopieren. Seitenvertrag und `content/` mit belegten Angaben füllen; passende Kontakte je Thema wählen. Keine automatisch ergänzten Notfall- oder Krisenblöcke.
 
-4. Veröffentlichen: `node tools/export.mjs ../../../../stress-verstehen-web --production` schreibt eine eigenständige Website (Seiten, `css/site.css`, Schriften, `js/interaktion.js`, `_headers`, `sitemap.xml`). Diesen Ordner auf Netlify hochladen oder als eigenes Repository führen.
+Im Stammordner mit dem gewünschten Website-Ordner:
 
-Der Ablauf von der Planung bis zur Freigabe steht im Abschnitt «Prüfung und Freigabe» (`guidelines/00-ablauf-pruefung-und-freigabe.md`).
+```sh
+node templates/website/psychoeducation-site-starter/tools/build.mjs --site templates/website/meine-website
+node templates/website/psychoeducation-site-starter/tools/gate.mjs --site templates/website/meine-website --production
+node templates/website/psychoeducation-site-starter/tools/export.mjs out-meine-website --site templates/website/meine-website --production
+```
 
-## Inhalt
+Das Produktionsgate verlangt einen zutreffenden Prüfbericht und die nötigen Inhaltsfreigaben für diese Website. Ein Export ist noch keine Veröffentlichung. Der Zielordner ist neu, leer oder ein erkennbarer früherer Export mit `.puk-export.json`; fremde Verzeichnisse werden nicht ersetzt.
 
-| Ordner / Datei | Inhalt |
-| --- | --- |
-| `README.md`, `guidelines/` | Brand Book und alle Abschnitte des Design-Systems |
-| `styles.css` | Einstieg für Seiten: Schriften + `components/bundle.css` |
-| `components/` | `bundle.css` (Tokens, Hülle, Komponenten, Druck), `bundle.js` (26 React-Komponenten, `window.PUKWeb`), `interaktion.js` (HTML-Fassungen ohne React), Typen und Beschreibungen |
-| `tokens/`, `tokens.json` | Quell-CSS und Tokens |
-| `fonts/`, `assets/fonts/` | Rubik (WOFF2, OFL-Lizenz) |
-| `assets/logo/` | statische Logos (SVG) |
-| `templates/website/` | Starter, Langform- und Erklärmuster, Anwendungsmuster, Interaktion, Seitenhülle |
-| `ui_kits/website/` | Referenzansichten und Prüfansicht |
-| `quellcode/komponenten/` | React-Quellen; `npm install && node build.mjs ../../components/bundle.js` baut `bundle.js` neu |
-| `_ds_bundle.js`, `platform/` | Laufzeit für das UI-Kit (React 18 lokal, MIT-Lizenz); nicht in Websites übernehmen |
-| `CLAUDE.md` | Arbeitsanweisungen für Claude Code, wenn das Paket als Repository geführt wird |
+Das Profilbeispiel verwendet dieselben Werkzeuge und benötigt keine klinischen Angaben. Details in seinem [README](templates/website/profilbeispiel/README.md).
 
-Nicht enthalten: das animierte Logo, das auf Websites nicht verwendet wird (Asset-Gruppe «Logos» im Design-System), und die Vorschaukarten des Design-Systems.
+## Bestand und Paket
 
-## Grenzen
+Aktiv sind Regeln, Komponenten, Gestaltungswerte, Vorlagen, Quellen, Tests und das fachneutrale Beispiel. `archiv/` enthält die frühere Historie und Website-Kopien; deren eigenständige Repos werden hier nicht bearbeitet. Das Paket `puk-website-profil-2026.10.3.zip` enthält den aktiven Stand und eine separate SHA-256-Datei. Archive und lokale Arbeitsverzeichnisse werden nicht mitgeliefert.
 
-Das Paket ist ein abgeleitetes Arbeitsprofil, keine von der PUK-Kommunikation freigegebene Vorlage. Alle Inhalte in Vorlagen und Starter sind Musterinhalte und fachlich freizugeben. Offene Entscheide: README, Abschnitt «Offene Punkte».
+Keine private Artefakt-Synchronisierung, keine zusätzliche Plattforminstallation und kein externer Freigabeauftrag sind für diesen abgeschlossenen Profilstand erforderlich.

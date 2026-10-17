@@ -6,19 +6,21 @@
 // Keine Projektquellen, kein site.config.json, keine Entwürfe. Nur Schriften, die die Website nennt (Prüfbefund 11.10.2026):
 // @font-face-Regeln einer Familie, die weder im wirksamen --font-core noch in einer font-family-Angabe vorkommt, entfallen samt Datei.
 // Die 404-Seite (role «not-found») erhält Pfade ab dem Stamm der Website, weil der Server sie unter jeder fehlenden Adresse ausliefert.
-import { readFile, writeFile, mkdir, copyFile, readdir, stat } from 'node:fs/promises';
+import { readFile, writeFile, mkdir, copyFile, readdir, stat, mkdtemp, rename, rm } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import { createRequire } from 'node:module';
 import { fileURLToPath } from 'node:url';
 import { dirname, join, resolve as presolve, basename, relative } from 'node:path';
+import { options } from './options.mjs';
 const require = createRequire(import.meta.url);
 const C = require('./contract.js');
-const dir = join(dirname(fileURLToPath(import.meta.url)), '..');
-const target = process.argv.slice(2).find(a => !a.startsWith('--'));
-if (!target) { console.error('Zielordner fehlt: node tools/export.mjs <zielordner> [--production]'); process.exit(1); }
-const out = presolve(process.cwd(), target);
-if (out.startsWith(dir + '/') || out === dir) { console.error('Der Zielordner darf nicht im Starter liegen.'); process.exit(1); }
-const mode = process.argv.includes('--production') ? 'production' : 'draft';
+const { dir, output: finalOut, mode } = options({ target: true });
+if (finalOut === dir || finalOut.startsWith(dir + '/') || dir.startsWith(finalOut + '/')) {
+  throw new Error('Der Zielordner darf die Website-Quelle weder enthalten noch darin liegen.');
+}
+if (existsSync(finalOut) && (await readdir(finalOut)).length && !existsSync(join(finalOut, '.puk-export.json'))) {
+  throw new Error('Zielordner enthält andere Dateien. Einen neuen oder leeren Exportordner wählen.');
+}
 const cfg = JSON.parse(await readFile(join(dir, 'site.config.json'), 'utf8'));
 
 /* 1 · Seiten bauen und prüfen */
@@ -28,6 +30,9 @@ const report = existsSync(join(dir, 'PRUEFBERICHT.md')) ? await readFile(join(di
 const r = C.gate(cfg, files, { mode, exists: p => p in files || existsSync(join(dir, p)), report });
 if (r.blocks) { for (const f of r.findings.filter(x => x.level === 'block')) console.error(`BLOCK ${f.page} ${f.id} ${f.msg}`); console.error(`Export abgebrochen: ${r.blocks} blockierende Befunde (${mode}).`); process.exit(1); }
 
+await mkdir(dirname(finalOut), { recursive: true });
+const out = await mkdtemp(join(dirname(finalOut), '.puk-export-'));
+try {
 /* 2 · CSS zusammenführen: @import auflösen, url() auf lokale Dateien umschreiben, fehlende Alternativen weglassen */
 await mkdir(join(out, 'css'), { recursive: true }); await mkdir(join(out, 'fonts'), { recursive: true });
 const copied = new Map();
@@ -36,20 +41,21 @@ async function inline(file, seen = new Set()) {
   let css = await readFile(file, 'utf8');
   const parts = [];
   css = css.replace(/@import\s+url\(\s*["']?([^"')]+)["']?\s*\)\s*;|@import\s+["']([^"']+)["']\s*;/g, (m, a, b) => { parts.push((a || b)); return `/*@@import ${parts.length - 1}@@*/`; });
-  for (let i = 0; i < parts.length; i++) {
-    const f = presolve(dirname(file), parts[i].split('?')[0]);
-    css = css.replace(`/*@@import ${i}@@*/`, existsSync(f) ? `/* ${relative(dir, f)} */\n` + await inline(f, seen) : `/* fehlt: ${parts[i]} */`);
-  }
   /* url() in @font-face-src-Listen: fehlende Dateien samt format() entfernen */
   css = css.replace(/src:([^;}]+)/g, (m, list) => {
     const keep = list.split(/,(?=\s*url\()/).filter(entry => { const u = /url\(\s*["']?([^"')]+)["']?\s*\)/.exec(entry); return !u || /^data:|^https?:/.test(u[1]) || existsSync(presolve(dirname(file), u[1].split(/[?#]/)[0])); });
     return keep.length ? 'src:' + keep.join(',') : m;
   });
   css = css.replace(/url\(\s*["']?([^"')]+)["']?\s*\)/g, (m, u) => {
-    if (/^(data:|https?:|#)/.test(u)) return m;
-    const src = presolve(dirname(file), u.split(/[?#]/)[0]); if (!existsSync(src)) return m;
+    if (/^(https?:|\/\/)/i.test(u)) throw new Error('Externe CSS-Ressource: ' + u);
+    if (/^(data:|#)/.test(u)) return m;
+    const src = presolve(dirname(file), u.split(/[?#]/)[0]); if (!existsSync(src)) throw new Error('CSS-Ressource fehlt: ' + u);
     const name = basename(src); copied.set(src, name); return `url("../fonts/${name}")`;
   });
+  for (let i = 0; i < parts.length; i++) {
+    const f = presolve(dirname(file), parts[i].split('?')[0]);
+    css = css.replace(`/*@@import ${i}@@*/`, await (async () => { if (!existsSync(f)) throw new Error('CSS-Import fehlt: ' + parts[i]); return `/* ${relative(dir, f)} */\n` + await inline(f, seen); })());
+  }
   return css;
 }
 let site = `/* Zusammengeführt von tools/export.mjs · ${C.VERSION} · Build ${C.BUILD} */\n`;
@@ -100,5 +106,13 @@ for (const p of published) {
   const path = C.resolve('', p.href).path; const html = await readFile(join(out, path), 'utf8');
   for (const m of html.matchAll(/(?:src|href)="([^"#]+?)(?:\?[^"]*)?"/g)) { let u = m[1]; if (/^(https?:|mailto:|tel:|data:)/.test(u)) continue; const rel = u.startsWith(root) ? u.slice(root.length) : null; if (rel !== null ? !existsSync(join(out, rel)) : !existsSync(join(out, dirname(path), u))) { console.error(`Fehlt im Export: ${u} (${path})`); missing++; } }
 }
-if (missing) { console.error(`Export unvollständig: ${missing} fehlende Dateien.`); process.exit(1); }
-console.log(`Export nach ${out}: ${published.length} Seiten · css/site.css · ${fonts} Schriftdateien${license ? ' + OFL.txt' : ''}${needsJs ? ' · js/interaktion.js' : ''}${existsSync(join(dir, '_redirects')) ? ' · _redirects' : ''}${cfg.siteUrl ? ' · sitemap.xml · robots.txt' : ''} · Gate ${mode}: 0 blockierend, ${r.warns} Hinweise.`);
+if (missing) throw new Error(`Export unvollständig: ${missing} fehlende Dateien.`);
+await writeFile(join(out, '.puk-export.json'), JSON.stringify({ format: 1, build: C.BUILD }) + '\n');
+const backup = out + '-vorher';
+if (existsSync(finalOut)) await rename(finalOut, backup);
+try { await rename(out, finalOut); }
+catch (error) { if (existsSync(backup)) await rename(backup, finalOut); throw error; }
+await rm(backup, { recursive: true, force: true });
+console.log(`Export nach ${finalOut}: ${published.length} Seiten · css/site.css · ${fonts} Schriftdateien${license ? ' + OFL.txt' : ''}${needsJs ? ' · js/interaktion.js' : ''}${existsSync(join(dir, '_redirects')) ? ' · _redirects' : ''}${cfg.siteUrl ? ' · sitemap.xml · robots.txt' : ''} · Gate ${mode}: 0 blockierend, ${r.warns} Hinweise.`);
+
+} finally { await rm(out, { recursive: true, force: true }); }

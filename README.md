@@ -2,16 +2,16 @@ Website-Profil der **Psychiatrischen Universitätsklinik Zürich (PUK)** für We
 
 ## Verbindlichkeit und Version
 
-**Fachstellen-Profil 2026.10.2** (Stand 15.10.2026) auf Basis des PUK Zürich Design Systems 1.10.1, Arbeitsstand PUK Website Kit 1.10.1-r4. Vier Ebenen – bei Widerspruch gilt die obere:
+**Fachstellen-Profil 2026.10.3** (abgeschlossen am 17.10.2026; offene Projektpendenzen: 0) auf Basis des PUK Zürich Design Systems 1.10.1, Arbeitsstand PUK Website Kit 1.10.1-r4. Vier Ebenen – bei Widerspruch gilt die obere:
 
 | Ebene | Umfasst | Erkennbar an | Ändern darf |
 | --- | --- | --- | --- |
 | Kanonisch (PUK-CD 1.10.1) | Hausfarben, Rubik, Logo, Sperrzone, Signalfarben | keine Kennzeichnung nötig | nur die PUK-Kommunikation |
 | Abgeleitet (Website Kit r4) | Website-Skala, Web-Tokens, Komponenten, Muster A–F, Anwendungsmuster, Starter | «abgeleitet», «r4» | im Profil, mit Begründung |
-| Profilentscheid der Fachstelle | Absenderin, Zuständigkeit statt Krisenzugang, ein Schwarz, Buttons 3 px, Lesen und Bedienen, Diagramme im Web, Interaktionskonzept, visuelle Wissensvermittlung mit Mustern G–K, Prüfablauf | «Profilentscheid 06.10.2026» | die Fachstelle |
+| Profilentscheid der Fachstelle | Absenderin, themenbezogene Kontaktauswahl, ein Schwarz, Buttons 3 px, Lesen und Bedienen, Diagramme im Web, Interaktionskonzept, visuelle Wissensvermittlung mit Mustern G–K, Prüfablauf | «Profilentscheid 06.10.2026» | die Fachstelle |
 | Muster und Beispiele | Inhalte in Karten, Vorlagen und Starter | «Musterinhalt, fachlich freizugeben», «Platzhalter» | frei; nie ungeprüft veröffentlichen |
 
-Änderungen stehen im Änderungsprotokoll am Ende.
+**Verbindlich ist dieses GitHub-Repository.** Frühere Artefakte, Prüfprotokolle, Website-Kopien und das Paket 2026.10.2 sind [abgeschlossene Historie](https://github.com/christaegger-dot/puk-website-profil/blob/main/archiv/README.md). Kein Synchronisierungsauftrag an Claude oder andere Plattformen. Der [Prüfbericht](PRUEFBERICHT.md) und die [Abschlussentscheide](ABSCHLUSSENTSCHEIDE.md) dokumentieren diesen Stand. Das Repository ist weiterhin öffentlich; es wird keine Website veröffentlicht.
 
 ## Geltungsbereich
 
@@ -25,7 +25,7 @@ Website-Profil der **Psychiatrischen Universitätsklinik Zürich (PUK)** für We
 
 - Jede Website und Browser-Anwendung nennt im Kopf jeder Seite sichtbar die Absenderin: **Fachstelle Angehörigenarbeit · Psychiatrische Universitätsklinik Zürich · angehoerigenarbeit@pukzh.ch** – die E-Mail-Adresse als `mailto:`-Link, nie versteckt.
 - Im Psychoedukations-Starter steht sie in `site.config.json` › `sender` (`orgUnit`, `institution`, `email`, `status: "freigegeben"`) und wird beim Build in jede Seite geschrieben; das Gate blockiert, wenn Absenderin oder E-Mail fehlen oder versteckt sind. Nie von Hand in Seiten schreiben.
-- Die Adresse ist der Kontaktweg der Absenderin, kein Krisen- oder Notfallweg (Abschnitt «Zuständigkeit statt Krisenzugang»).
+- Weitere hilfreiche Telefonnummern und `tel:`-Links sind erlaubt; Nummern, Zuständigkeit und Erreichbarkeit vor der Verwendung inhaltlich prüfen.
 
 ## Inhalt und Sprache
 
@@ -45,18 +45,14 @@ Website-Profil der **Psychiatrischen Universitätsklinik Zürich (PUK)** für We
 - **Keine Emoji**, keine Ausrufezeichen-Rhetorik, keine Marketing-Superlative.
 - Links im Satz bleiben inline (`.puk-link--inline`); eigenständige Aktionen als `.puk-link--action` oder `Button`.
 
-## Zuständigkeit statt Krisenzugang
+## Telefonnummern und Kriseninformationen
 
-Die Fachstelle Angehörigenarbeit bietet Beratung und Psychoedukation für Angehörige; **Krisenintervention gehört nicht zu ihrem Auftrag** (Profilentscheid 06.10.2026). Das ersetzt die Sicherheitsvarianten `direct` und `persistent-subdued` des Kits (`templates/website/profile.json` › `safetyAccess`).
-
-- **Keine Krisennummern, kein Notfallblock** auf psychoedukativen Websites – auch nicht dort, wo ein Abschnitt Krisen behandelt. Keine `tel:`-Links, kein Notfallbanner, keine eigene Seite «Hilfe in der Krise», kein Notfallpunkt in der Navigation, `Alert` mit `tone="emergency"` wird nicht verwendet.
-- **Zulässig, nicht vorgeschrieben:** ein einziger knapper **Zuständigkeitsverweis**, der ohne Nummern auf die zuständigen Stellen verweist, an fester, von jeder Seite aus erreichbarer Stelle – in der Fusszeile oder im Impressum (Starter: site-weit `site.config.json` › `responsibility`, in jeder Fusszeile; die Fusszeile gilt als eine Stelle). Zusätzliche Verweise auf einzelnen Seiten sind nicht zulässig – mit einer Ausnahme (siehe «Verweis im Text»). Kein Text weckt die Erwartung, die Fachstelle sei in Krisen zuständig. Behandelt die Website Selbstgefährdung, Gewalt, Zwang oder akute Krisen, wird er empfohlen. Er braucht keine emotionale Einleitung und wird vor der Veröffentlichung fachlich geprüft.
-- **Standardwortlaut** (fachlich geprüft, Fachstelle Angehörigenarbeit PUK, 06.10.2026, neu gefasst 08.10.2026 und 09.10.2026): «Die Fachstelle Angehörigenarbeit der PUK berät Angehörige kostenlos und vertraulich: angehoerigenarbeit@pukzh.ch. Sorgen Sie sich akut um das Leben oder die Sicherheit eines Menschen, holen Sie sofort Hilfe: ärztlicher Notfalldienst oder Notfallstation, bei Gefahr die Polizei.» Der zweite Satz ist wortgleich mit dem Verweis im Text. Die frühere Fassung («… kann sie nicht weiterhelfen …») wirkte abweisend und entfällt. Der Prüfvermerk steht nur in `site.config.json` und erscheint nicht auf der Website. Im Starter in `site.config.json` › `responsibility` hinterlegt.
-- **Verweis im Text** (Profilentscheid 09.10.2026): Wo ein Text Angehörigen sagt, was sie in einer akuten Lage tun sollen (z. B. direkt nach Suizidgedanken fragen, eine bedrohliche Situation verlassen), folgt unmittelbar ein Verweis auf die zuständigen Stellen – ohne Nummern, im Fliesstext, nicht in Figur oder Vertiefung, höchstens einer je Abschnitt, nur auf Seiten mit Selbstgefährdung, Gewalt oder akuter Krise. Der Wortlaut steht einmal in `site.config.json` › `responsibility.inline` und braucht wie der Zuständigkeitsverweis eine fachliche Prüfung; Seiten setzen nur den Platzhalter `<p data-responsibility-inline></p>`. Standardwortlaut (fachlich geprüft, Fachstelle Angehörigenarbeit PUK, 09.10.2026): «Sorgen Sie sich akut um das Leben oder die Sicherheit eines Menschen, holen Sie sofort Hilfe: ärztlicher Notfalldienst oder Notfallstation, bei Gefahr die Polizei.» Anlass: Prüfung der Borderline-Website – eine Empfehlung, nach Suizidgedanken zu fragen, stand ohne nächsten Schritt.
-- **Inhalte zum Umgang mit Krisen** (Frühwarnzeichen, Krisenplan, Gespräche nach einer Krise) sind Psychoedukation und zulässig.
-- Das Gate des Starters blockiert Telefonnummern, `tel:`-Links, Notfallblöcke und die gesperrten Varianten; mögliche Kurznummern (143, 144 …) meldet es zur Prüfung.
-- Anwendungen diagnostizieren nicht, berechnen keine Scores, triagieren nicht automatisch. Kritische Information nie nur hinter Filter, Dialog oder Akkordeon. Pro Zustand genau ein primärer nächster Schritt.
-- Nicht anwendbar auf Materialien, deren Zweck die Krisenorientierung ist; solche Materialien gehören nicht in dieses Profil.
+- Weitere hilfreiche Telefonnummern und `tel:`-Links sind ausdrücklich erlaubt. Keine technische Beschränkung auf die Fachstellennummer.
+- Notfall- und Krisenkontakte werden nicht automatisch ergänzt oder als Standardblock hervorgehoben. Christa entscheidet je Thema, Website und Seite, ob und wo sie hilfreich sind. Eine Diagnose allein löst keine Krisenrubrik aus.
+- Die Standardvorlage hat keinen Zuständigkeits- oder Krisentext in der Fusszeile. Es gibt keinen verpflichtenden Satz zur Abgrenzung des Fachstellenangebots. `responsibility` und `responsibility.inline` sind optionale, ausdrücklich konfigurierte Texte; deren dokumentierte Inhaltsprüfung bleibt erforderlich, wenn sie verwendet werden.
+- Bewusst gewählte Kriseninformationen können im passenden Inhaltsabschnitt, einem `Alert` oder einer Grafik stehen. Bedeutung und Hervorhebung richten sich nach der Leserfrage. Wichtige Information nicht ausschliesslich in Dialog, Filter oder Akkordeon verstecken.
+- Das Gate sperrt keine Telefonnummern, Telefonlinks oder bewusst gesetzten Krisenblöcke und erzeugt keine pauschalen Kurznummern-Warnungen. Die fachliche Auswahl bleibt redaktionell; eine bestandene technische Prüfung bescheinigt keine inhaltliche Richtigkeit.
+- Anwendungen diagnostizieren und triagieren nicht automatisch. Psychoedukative Hinweise zu Frühwarnzeichen oder Krisenplänen sind je nach Thema möglich und kein Pflichtbestandteil aller Seiten.
 
 ## Farbe
 
@@ -67,7 +63,7 @@ Die Fachstelle Angehörigenarbeit bietet Beratung und Psychoedukation für Angeh
 - **Bildschirm-Feinwerte:** `ui-field` (Felder, Platzhalter), `ui-wash` (Hover, versenkte Fläche), `ui-hairline` (Linien), `ui-danger-wash`, `surface-structure` (Diagrammgrund).
 - **Ein Schwarz:** Text auf Websites ist immer `text-default` (Hausschwarz #222222), auch in der Website-Hülle. Die Messwerte des bestehenden Webauftritts `puk-web-text` (#000000) und `puk-web-field-text` (#675E58) werden nicht verwendet (Profilentscheid 06.10.2026).
 - In Komponenten und Templates immer **semantische Tokens** (`text-*`, `surface-*`, `border-*`, `action-*`, `status-*`), nie Primitiven oder Hexwerte in HTML/JS.
-- Veraltet (Entfernung frühestens 31.03.2027): `text-subtle` und die alten Schrift-Kurzformen `--text-body` usw. Neue Arbeit nutzt `text-large-only` und `--type-*`.
+- Historische Kompatibilitätsaliase `text-subtle` und die alten Schrift-Kurzformen bleiben für den vorhandenen Bestand erhalten; es gibt keinen Entfernungsauftrag. Neue Arbeit nutzt `text-large-only` und `--type-*`.
 
 ### Theme «Hoher Kontrast»
 
@@ -129,7 +125,7 @@ Die Fachstelle Angehörigenarbeit bietet Beratung und Psychoedukation für Angeh
 
 ## Icons
 
-- Lokales Subset von **Lucide 0.446.0** (ISC-Lizenz, `assets/Icons/LICENSE.txt`): 24 × 24, Strich 2 px, runde Enden, `currentColor`. 13 Glyphen: arrow-right, calendar, check, circle-alert, circle, download, info, menu, phone, printer, search, triangle-alert, x.
+- Lokales Subset von **Lucide 0.446.0** (ISC-Lizenz, `assets/icons/LICENSE.txt`): 24 × 24, Strich 2 px, runde Enden, `currentColor`. 13 Glyphen: arrow-right, calendar, check, circle-alert, circle, download, info, menu, phone, printer, search, triangle-alert, x. Dieselben SVGs sind für Vorschauen ohne Dateipfad im Komponenten-Bundle eingebettet.
 - Einsetzen über `Icon` bzw. die `icon`-Prop von `Button`/`IconButton`. Icons stützen Text, ersetzen ihn nicht; `IconButton` braucht immer ein `label`.
 - Keine Icon-Fonts, keine PNG-Icons, **keine Emoji**, keine Unicode-Symbole als Icons (Ausnahmen: Mittelpunkt « · » und «#» vor Themen-Chips).
 - Fehlt ein Glyph: aus Lucide mit gleicher Strichstärke ergänzen und lokal ausliefern – kein CDN in Produktion.
@@ -139,156 +135,23 @@ Die Fachstelle Angehörigenarbeit bietet Beratung und Psychoedukation für Angeh
 26 React-Komponenten unter `window.PUKWeb`: **Basis** Button, IconButton, Icon · **Formulare** Field, Input, Textarea, Select, Checkbox, Radio, RadioGroup, Switch · **Inhalt** Card, Badge, Tag, List, Table, Accordion · **Feedback** Alert, Toast, Tooltip, Dialog · **Navigation** Link, Tabs, Breadcrumb · **Interaktion** DisclosureMenu (Dropdown-Navigation), Carousel (nur ausnahmsweise).
 
 - Stylesheet `components/bundle.css` (die vollständige Token- und Hüllen-CSS-Kette inkl. `.puk-web-*`, `.puk-longform*`, Fokus- und Formular-Basis) nach den Tokens laden, dann React 18, dann `components/bundle.js`.
-- `Alert` mit `tone="emergency"` wird auf Websites der Fachstelle nicht verwendet (kein Notfallblock). `Dialog` nie als einziger Ort kritischer Information.
+- `Alert` dient einer bewusst ausgewählten Information; keine automatisch ergänzten Notfallhinweise. `Dialog` nie als einziger Ort kritischer Information.
 - **Statische Websites (Starter, Eleventy, Astro):** Akkordeon, Reiter, Dropdown-Menü, Dialog und Button als HTML-Markup mit `components/bundle.css` und `components/interaktion.js` – ohne Abhängigkeiten, ohne Inline-Skripte, ohne Skript bleibt alles sichtbar. Dazu Listenfilter und Abschnittssuche (nur als Hilfe zum Finden; die Suche braucht einen Index aus dem Build der Website) und ein sichtbarer Fokus auf dem Ziel eines Sprunglinks. Markup: `templates/website/interaktion/`, Karte «Interaktion ohne React». `bundle.css` enthält auch die Druckregeln.
 - Die Grundlagen-Seiten (Gruppen «Grundlagen · …») zeigen Farben, Typografie, Abstände, Flächen, Bewegung, Fokus, Logo und Icons als Referenzkarten; sie sind keine Komponenten im Bundle.
 - Website-Hülle als Klassen: `.puk-web-page`, `.puk-web-header`, `.puk-web-nav`, `.puk-web-hero`, `.puk-web-h1`, `.puk-web-lead`, `.puk-web-card-list`, `.puk-web-band`, `.puk-web-footer`.
 
-## Vorlagen und Referenzdateien
+## Vorlagen, Beispiel und Werkzeuge
 
-- `templates/website/` – Website-Hülle `Website.dc.html`, normativer Vertrag `profile.json`, vier Anwendungsmuster (`applications/`: Situationsnavigator, Kontaktwegweiser, Gesprächshilfe, Angebotsnavigator), Langform-Referenzen (`longform/`, inkl. `visualisierungsmuster.html` + `visual-patterns.css` und `erklaermuster.html` + `erklaermuster.css`), Schemas und Datenschutz-/Screenreader-Beispiele. Einstieg: `templates/website/START.md`.
-- `templates/website/psychoeducation-site-starter/` – **Startpunkt jeder mehrseitigen psychoedukativen Website**: Seitenvertrag `site.config.json` → `node tools/build.mjs` → `node tools/gate.mjs --production`. Navigation, `lang`, Titel, Meta, Favicon, Skip-Link, Absenderin und Zuständigkeitsverweis entstehen aus dem Vertrag, nie von Hand.
-- `ui_kits/website/` – klickbare Rekonstruktion der Referenzansichten des Original-Kits mit `qa.html` (zeigt auch Kit-Varianten, die für die Fachstelle nicht gelten).
-- `tokens/*.css` – die Quell-CSS unverändert.
-- **Projektpaket** `puk-website-profil-2026.10.2.zip` (separat ausgeliefert, ZIP-Dateien kann das Design-System nicht speichern; Prüfsumme in `puk-website-profil-2026.10.2.zip.sha256` daneben): lauffähige Fassung mit aufgelösten Pfaden (`styles.css`, Schriften, Logos, React-Laufzeit für das UI-Kit), Leitlinien, React-Quellen mit Build-Skript und Anleitung `START-HIER.md`. Im Design-System selbst verweisen Vorlagen, Starter und UI-Kit auf diese Kit-Pfade und laufen erst im Paket.
-- **Veröffentlichen:** `node tools/export.mjs <zielordner> --production` im Starter schreibt eine eigenständige Website mit `css/site.css`, lokalen Schriften samt Lizenz (`fonts/OFL.txt`), `_headers` (Sicherheits-Header), `_redirects` (falls vorhanden), `sitemap.xml` und `robots.txt`.
+- [Psychoedukations-Starter](templates/website/psychoeducation-site-starter/README.md): bewusst leere Vorlagen und Gestaltungsreferenzen. Eingabeparameter sind keine offenen Projektpendenzen. Das Produktionsgate sperrt ungefüllte Parameter und unbestätigte Inhalte weiterhin.
+- [Vollständiges Profilbeispiel](templates/website/profilbeispiel/README.md): vier fachneutrale Seiten mit eigenem Prüfbericht; technisch geprüft, ohne behauptete klinische Freigabe.
+- `templates/website/longform/`, `applications/`, `interaktion/`: Erklärmuster, Anwendungsmuster und HTML-Interaktionen. Die UI-Kit-Ansichten illustrieren wählbare Varianten; sie schreiben keinen Krisenblock vor.
+- `components/`, `tokens/`, `assets/`, `fonts/`: 26 React-Komponenten, statische HTML-Interaktionen, Gestaltungswerte und lokale Originaldateien.
+- `quellcode/komponenten/`: reproduzierbarer Komponenten-Build. Einrichtung und Befehle stehen in [START-HIER.md](START-HIER.md); Versionen in `package-lock.json`.
+- `tools/paket.py`: reproduzierbares Paket `puk-website-profil-2026.10.3.zip` mit Prüfsumme in der gleichnamigen `.sha256`-Datei. Archiv, frühere Websites und lokale Arbeitsdateien sind nicht im aktuellen Paket.
+- Der Exporter schreibt in einen neuen oder erkennbaren Exportordner. Erst nach vollständiger Prüfung ersetzt er den vorherigen Export. Fremde Dateien werden nicht überschrieben. Eine Website zu exportieren veröffentlicht sie nicht.
 
-## Offene Punkte
+## Projektabschluss
 
-Entscheide der Fachstelle:
+Alle bisherigen Pendenzen sind erledigt oder endgültig aus dem Projektumfang ausgeschlossen; Einzelentscheide in `ABSCHLUSSENTSCHEIDE.md`. Die früheren Website-Kopien werden in ihren eigenständigen Repositorys gepflegt und sind hier ausschliesslich archiviert. Der Analyse-PR #9 wurde ohne Merge geschlossen; seine Bestandsaufnahme bleibt im geschlossenen PR erhalten.
 
-- **Erster Durchlauf mit echtem Inhalt:** Material wird in einem späteren Schritt festgelegt.
-- **Entscheide zur Überarbeitung 2026.10.1** (11.10.2026; die Fachstelle hat die sechs Fragen an Claude übertragen):
-  1. **Impressum und Datenschutz:** eine eigene Seite je Website, Vorlage `content/impressum-datenschutz.html` im Starter. Herausgeberin ist die Fachstelle Angehörigenarbeit, Inhalt und Umsetzung Ch. Egger; kein Wortlaut von PUK-Kommunikation oder Rechtsdienst. Die Angaben zum Datenschutz beschreiben, was der Code tut (keine Cookies, keine Auswertung, keine Dienste anderer Anbieter, Protokolle beim Hosting, E-Mail); ändert sich der Code, wird der Text mitgeprüft. Keine Gesetzeszitate, weil für die PUK als kantonale Klinik nicht das DSG allein gilt.
-  2. **Vorlage H, Kurztext:** um den Verweis auf den Balken gekürzt («Es geht nicht um ein Entweder-oder. Das Gleichgewicht verschiebt sich je nach Phase der Erkrankung; wichtig ist, dass keine Seite dauerhaft wegfällt.»). Die übrigen Aussagen sind unverändert; die Kennzeichnung nennt die Kürzung.
-  3. **Navigation ab sieben Punkten:** bleibt so – breit alle Punkte sichtbar, unter 760 px «Menü». Grund: sichtbar vor versteckt; auf dem Telefon kurzer Kopf. Kürzen auf sechs Punkte bleibt erlaubt und ist die einfachere Form.
-  4. **Druck:** Die Vertiefung steht im Ausdruck nach der Kennzeichnung. Grund: Bild, Kernaussage und Kennzeichnung bleiben auf einer Seite; die Vertiefung ist Lesetext und darf umbrechen.
-  5. **404-Seite:** Der Wortlaut des Starters gilt als Standard für alle Websites; das Sprach-Review (S) prüft ihn wie jeden Web-Text.
-  6. **Produktionsgate:** Fehlendes Impressum, fehlende Datenschutzerklärung und fehlende 404-Seite blockieren; fremdsprachige Quellentitel ohne `lang` bleiben ein Hinweis, weil die Stichwortprüfung unsicher ist. W3 und Bedienung prüfen `lang` weiterhin als Befund.
-
-Arbeit am System:
-
-- Projektpaket nach Änderungen am Design-System neu erzeugen (Version im Dateinamen). Ändern sich die Werkzeuge des Starters (`tools/`), steigt die Build-Kennung. Jede Fassung des Pakets erhält ihre Prüfsumme (SHA-256) in `<paket>.zip.sha256` neben dem ZIP; das Änderungsprotokoll nennt die Prüfsummen früherer Fassungen unter demselben Namen (Forensisches Audit vom 15.10.2026, F-4 und F-5).
-- Karussell und Tooltip bewusst ohne HTML-Fassung; bei Bedarf ergänzen.
-
-## Änderungsprotokoll
-
-- **16.10.2026 · Version 2026.10.2, Nachtrag zum forensischen Audit** (`review/paket-2026-10-2/FORENSISCHES-AUDIT-2026-10-15.md`, Hinweise F-4, F-5 und F-7; Auftrag der Fachstelle vom 16.10.2026 nach der Nachprüfung `review/paket-2026-10-2/NACHPRUEFUNG.md`). Starter Build r4-10, Selbsttest 72/72. Selbstprüfung mit Belegen: `review/paket-2026-10-2/NACHTRAG-F4-F5-F7.md`. Die Prüfung durch eine Sitzung, die nicht gebaut hat, ist offen.
-  - **Build-Kennung (F-4):** r4-9 → r4-10 in `tools/contract.js`, in `site.config.json` des Starters und der Referenz `tools/selftest/`, in `gate.html` und `ui_kits/website/qa.html`; Starter neu gebaut. Die Nachbesserung hatte das Gate geändert, ohne die Kennung zu erhöhen. Jetzt meldet die Prüfung `build` jede Seite, die noch mit r4-9 gebaut ist. Sonst ändert sich an Seiten und Befunden nichts.
-  - **Fassungen des Pakets (F-5):** `puk-website-profil-2026.10.2.zip` gab es bisher in zwei Fassungen unter demselben Namen. Prüfsummen (SHA-256):
-    - 15.10.2026, ohne Nachbesserung (`de10a8d`, Build r4-9, 313 Dateien): `2040c74364a937063a3739261c3f440b5c665c44c97b5f3f17327516d15373db`
-    - 15.10.2026, nachgebessert (`bc679a7`, Build r4-9, 438 Dateien): `20d42bba632069a6e519806bdcb851f0c52e6baa1081384a5a04a258a4ba4902`
-    - diese Fassung (Build r4-10): in `puk-website-profil-2026.10.2.zip.sha256` neben dem ZIP, prüfen mit `sha256sum -c puk-website-profil-2026.10.2.zip.sha256`. Eine Datei im ZIP kann die Prüfsumme des ZIP nicht enthalten; das Paket lässt diese Datei deshalb aus.
-  - **Vorschaukarten (F-7):** Prozesspfad, Entscheidungsweg und Modell in Schritten nennen das Kennzeichen `data-print-split` (Karten nur im Design-System). Den nachgeführten Skill «puk-website-profil» (Druckregel mit Kennzeichen, Selbsttest 72 Fälle) lädt die Fachstelle auf claude.ai hoch.
-  - **Arbeit am System:** Regel zu Build-Kennung und Prüfsumme im Abschnitt «Offene Punkte».
-  - **Paket:** `puk-website-profil-2026.10.2.zip` neu erzeugt mit `review/paket-2026-10-2/nachtrag/paket-zip.py` (Regel wie bisher, dazu ohne `*.zip.sha256`). Es enthält jetzt auch Audit, Nachprüfung und die Prüfung «Offene Stufen» (`.github/`).
-- **15.10.2026 · Version 2026.10.2, nachgebessert nach der Prüfung** (`ENTSCHEIDE-PROFIL-2026-10-2.md`, Abschnitt «Nachbesserung nach der Prüfung»; Befunde K-1 und W-1 bis W-4 im Prüfbericht `review/paket-2026-10-2/PRUEFBERICHT.md`; Entscheid der Fachstelle zu P-1 und zum Kennzeichen vom 15.10.2026). Starter Build r4-9, Selbsttest 72/72 (vorher 68). Selbstprüfung mit Belegen: `review/paket-2026-10-2/SELBSTPRUEFUNG-NACHBESSERUNG.md`. Die Nachprüfung durch eine Sitzung, die nicht gebaut hat, ist offen.
-  - **Druck (P-1, K-1):**
-    - Figuren sind im Druck wieder unteilbar wie in 2026.10.1: Hülle `.puk-vis-wide` und Rahmen `.puk-vis-figure` (`components/bundle.css`). Die Abweichung «kurze Abfolgen brechen um» entfällt, ebenso der leere graue Rahmen am Seitenende (K-1).
-    - Neu ist das Kennzeichen `data-print-split` an der Figur, gesetzt im Markup in `content/`. Nur eine gekennzeichnete Abfolge – Prozesspfad, Entscheidungsweg, Modell in Schritten – bricht zwischen ihren Schritten um. Titel, Kernaussage und erster Schritt bleiben zusammen (`break-before:avoid` am Titel verhindert den leeren Rahmenanfang), die Kennzeichnung folgt direkt auf den letzten Schritt.
-    - Im Druck stehen die Schritte einer gekennzeichneten Abfolge untereinander wie auf schmalen Bildschirmen, direkt in der Figurspalte (`visual-patterns.css`, `erklaermuster.css`; beim Modell in Schritten die Zeichnung über den Schritten). Nur so bleibt die Kennzeichnung in allen gemessenen Längen beim letzten Schritt. Die nicht entschiedene Regel «Zeichnung oben» (`align-items:start`) für alle Modelle in Schritten entfällt (W-2).
-    - Gemessen ohne Textmarken (W-1), A4 in 12 Einstellungen, an Starter und Kopie «Depression»: 204 Figurfälle, alle ganz auf einer Seite, keine leere Seite, kein leerer Rahmen; Lage jeder Figur gleich wie vor dem Paket (`8abc333`). Gekennzeichnete, fünffach verlängerte Abfolgen: 48 von 48 mit Titel, Kernaussage und Anfang zusammen und Kennzeichnung direkt; dazu 240 von 240 in fünf weiteren Längen. Am Bildschirm pixelgleich.
-  - **Gate (W-3):**
-    - `tools/contract.js` blockiert das Kennzeichen an anderen Mustern, an einer Figur ohne Schrittliste und an anderen Elementen als der Figur (`print-split`).
-    - Selbsttest neu mit «Entwurf vom 15.10.2026», das nur die Regel «Entwurf» trifft, und mit drei Fällen zum Kennzeichen (am Prozesspfad zulässig, an einer Gegenüberstellung und an der Hülle blockiert).
-    - Mutationsprobe: Jede dieser Regeln abgeschaltet lässt den Selbsttest scheitern.
-  - **Leitlinie und Anleitungen (W-2):**
-    - «Technische Qualität», F: «möglichst» und «auch wenn sie kürzer sind» entfallen; der entschiedene Satz zu langen Darstellungen steht unverändert. Neu ist ein Satz zum Kennzeichen, und das Kennzeichen steht in der Liste der Gate-Prüfungen.
-    - Anleitung im `README.md` des Starters (Abschnitt «Druck: lange Abfolgen kennzeichnen») und in `templates/website/longform/README.md`.
-  - **Website «Depression» (W-4):** Sie übernimmt beim nächsten inhaltlichen Anlass auch `starter.css` aus dem Starter; ihr eigenes `starter.css` nimmt mit erzwungenen Farben das Fokusbild am Sprungziel weg (Entscheid Z und Ablauf, Schritt 4).
-  - **Nebenbefund, nicht geändert:** In einem künstlich sechsfach verlängerten Fall (0 mm/80 %) bleibt nach einer Figur eine Seite leer, weil Chromium den nächsten Abschnitt mit seinem Raster aus Überschrift und Text (`.puk-longform__section-grid`, unverändert seit vor dem Paket) als Ganzes auf die folgende Seite schiebt; mit Blocklayout dort verschwindet sie. Die Ursache liegt nicht in den Figurregeln; Prüfbedarf in der Selbstprüfung.
-  - **Paket:** `puk-website-profil-2026.10.2.zip` neu erzeugt.
-- **15.10.2026 · Version 2026.10.2** (`ENTSCHEIDE-PROFIL-2026-10-2.md`, P-1 bis P-17; Bau im Auftrag der Fachstelle: «ja, leg los»). Starter Build r4-9, Selbsttest 68/68 (vorher 65). Selbstprüfung mit Belegen: `review/paket-2026-10-2/SELBSTPRUEFUNG.md`. Die Prüfung des Pakets durch eine Sitzung, die nicht gebaut hat, ist offen.
-  - **Druck (P-1, P-15):**
-    - Die Hülle `.puk-vis-wide` ist nicht mehr unteilbar. Abfolgen (Prozesspfad, Entscheidungsweg, Modell in Schritten) brechen zwischen ihren Schritten um; Titel, Kernaussage und Anfang bleiben zusammen, und die Kennzeichnung folgt direkt.
-    - Räumliche Darstellungen bleiben unteilbar. Beim Modell in Schritten steht die Zeichnung im Druck oben (`erklaermuster.css`).
-    - Gemessen an 17 Figuren in 12 A4-Einstellungen: keine leere Seite. Mit künstlich verlängerten Abfolgen: leere Seiten vorher 35 von 48 Fällen, nachher 0.
-    - Abschnittsüberschriften stehen im Druck im Fluss.
-    - **Abweichung:** Kurze Abfolgen können jetzt zwischen zwei Schritten umbrechen (9 von 204 Fällen), statt als Ganzes auf die nächste Seite zu rücken.
-  - **Lesen (P-2, P-5, P-6):**
-    - Der Verweis im Text steht im Lesegrad der Seite (`--puk-read-size`, 19/21 px statt 16 px).
-    - Ziffernkreise des Modells in Schritten in `rem`; bei 100 % pixelgleich.
-    - Silbentrennung in Figuren und Abschnittsüberschriften, wenn ihr Container höchstens 12rem breit ist.
-  - **Werkzeuge des Starters (P-4, P-7, P-8, P-10, P-13):**
-    - Das Produktionsgate blockiert einen Redaktionsstatus mit «Entwurf» oder ohne Datum (`editorial-status`).
-    - Die Fusszeile zeigt keine Versionszeile mehr; die Version steht nur in `<meta name="generator">`.
-    - Der Logo-Link heisst «Psychiatrische Universitätsklinik Zürich – zur Startseite dieser Website».
-    - `gate.html` lädt den Prüfbericht und führt den Selbsttest an der Referenz `tools/selftest/` aus. Es zeigt jetzt dieselben Befunde wie `node tools/gate.mjs`; vorher fehlte in der Produktion die Prüfung `review-report`, und der Selbsttest lief an der Website statt an der Referenz.
-    - Der Export liefert `fonts/OFL.txt`, `_redirects` (falls vorhanden) und `robots.txt` mit der Sitemap-Adresse.
-  - **Leitlinien (P-1, P-3, P-6, P-14):**
-    - «Technische Qualität», F: Druckregel und Silbentrennung; der Redaktionsstatus steht in der Liste der Gate-Prüfungen.
-    - «Visualisierung umsetzen»: Hinweis zu `rem`-Schwellen im Druck.
-    - «Interaktionskonzept», Bedienziele: Die Absenderzeile gilt als Textzeile; ihr E-Mail-Link braucht keine 44 px (WCAG 2.5.8 über den Abstand erfüllt).
-  - **Nicht gebaut:** P-9 und P-11 (gestrichen), P-12 (keine Änderung).
-  - **Websites:**
-    - Die Kopie der Website «Depression» in diesem Repository zeigt die CSS-Änderungen sofort; ihre Werkzeuge übernimmt sie beim nächsten inhaltlichen Anlass.
-    - Die Borderline-Website übernimmt das Paket in ihrem eigenen Repository.
-  - **Paket:** `puk-website-profil-2026.10.2.zip` ersetzt `puk-website-profil-2026.10.1.zip`.
-- **15.10.2026 · Paket 2026.10.2, in Arbeit · P-16 und P-17** (`ENTSCHEIDE-PROFIL-2026-10-2.md`; entschieden von der Fachstelle: «ja, deine Vorschläge sind gut. führe sie aus»). Die Version bleibt 2026.10.1, bis das Paket vollständig ist.
-  - **P-16 Fokusbild am Sprungziel:**
-    - `components/bundle.css`: Abschnitte und Überschriften (`section`, `h2` bis `h4`), die als Sprungziel den Fokus erhalten, zeigen das Fokusbild des Systems. Mit erzwungenen Farben ist es eine 2-px-Umrandung in `CanvasText`. `main` ist ausgenommen. Muster: Borderline-Website, 13.10.2026.
-    - `starter.css`: Die Regel `.puk-longform__section[tabindex="-1"]:focus{outline:none}` entfällt.
-  - **P-17 Listenfilter und Abschnittssuche:**
-    - Markup und Beispiel in `templates/website/interaktion/` (`README.md`, `beispiel.html`, `interaktion-beispiel.css`); Klassen `.puk-filter*` in `bundle.css`.
-    - Ohne Skript erscheint das Feld nicht, und alle Einträge bzw. das Verzeichnis stehen da. Im Druck erscheinen alle Einträge, ohne Feld.
-    - Regel im Abschnitt «Interaktionskonzept»: nur eine Hilfe zum Finden; wann darauf verzichten; der Starter erzeugt keinen Suchindex. Dazu zwei Zeilen in der Entscheidungshilfe und der Absatz «Sprungziele» unter «Navigation und Kapitelorientierung».
-    - Kopfkommentar von `components/interaktion.js` und Karte «Interaktion ohne React» nachgeführt.
-    - **Hinweis für das Sprach-Review:** Die Texte der Statuszeilen stehen fest im Skript, aus der Borderline-Website übernommen (z. B. «Alle Themenseiten sind unten aufgeführt.», «3 von 10 Treffern sichtbar.»). Sie passen für eine Suche über Themenseiten; im Beispiel mit Komponenten passen sie nur ungefähr.
-  - **Selbst geprüft** (bauende Sitzung, Chromium, 27 Punkte bestanden):
-    - Tastatur: Sprunglink, Treffer der Suche, Tab danach.
-    - 320 px ohne waagrechtes Scrollen; reduzierte Bewegung; erzwungene Farben; ohne Skript; Druck.
-    - Feldhöhe 44 px; Skip-Link ohne Ring um `main`.
-    - Starter: Build ohne blockierende Befunde, Selbsttest 65/65.
-    - Die Prüfsitzung des Pakets prüft P-16 und P-17 mit.
-  - **Website «Depression»:**
-    - Die Kopie in diesem Repository zeigt das neue Fokusbild sofort, weil sie `styles.css` gemeinsam lädt. Mit erzwungenen Farben zeigt sie es erst, wenn sie das Paket übernimmt, weil ihr eigenes `starter.css` die Umrandung noch ausblendet.
-    - Die veröffentlichte Fassung bleibt unverändert.
-- **15.10.2026 · Rückführung aus dem Repository (Vorbedingung des Pakets 2026.10.2, Schritt 0)**
-  - **Anlass:** Zwei Profildateien waren nach dem Paket 2026.10.1 direkt im Repository `puk-website-profil` geändert worden, bei der Arbeit an der Borderline-Website. Die Fachstelle hat am 15.10.2026 entschieden, die Änderungen ins Profil zu übernehmen («ja, leg los mit Schritt 0»; `ENTSCHEIDE-PROFIL-2026-10-2.md`, Ablauf, Schritt 0). Damit ist auch die Frage aus dem Entscheid zu R3-01 der Website «Depression» beantwortet: Die Änderung an `interaktion.js` wird übernommen, nicht zurückgenommen. Die Dateien sind byte-gleich mit dem Repository.
-  - **Version:** Sie bleibt 2026.10.1. Das Paket `puk-website-profil-2026.10.1.zip` enthält die Änderungen nicht; sie kommen mit dem Paket 2026.10.2.
-  - **`components/interaktion.js`** (115 Zeilen neu, 1 geändert; Commits `75853db`, `9889237`, `6f478ee`, 13.10.2026):
-    - Sprungziele (`revealHashTarget()`): Ein Aufruf mit `#…` oder ein Sprunglink öffnet ein geschlossenes `details` um das Ziel und setzt den Fokus auf das Ziel. Ein nicht fokussierbares Ziel erhält dafür vorübergehend `tabindex="-1"`. Das wirkt auf jeder Seite mit dem Skript.
-    - Listenfilter (`filterList()`, `[data-puk-filter]`): lokale UND-Suche ohne Akzente, mit Statuszeile und Hinweis bei null Treffern. Ohne Skript bleiben alle Einträge sichtbar.
-    - Abschnittssuche (`siteSearch()`, `[data-puk-search]`): Rangfolge über einen Index in `data-search-*`-Attributen, höchstens `data-search-limit` Treffer (Standard 20). Eingaben werden weder übertragen noch gespeichert. Ohne Skript bleibt das Seitenverzeichnis sichtbar.
-    - Filter und Suche wirken nur mit dem passenden Markup.
-  - **`templates/website/psychoeducation-site-starter/starter.css`** (+4 Zeilen; Commit `08625ab`, 14.10.2026): ruhigere Fusszeile mit `padding-block:var(--space-8)` und Rasterabstand `var(--space-6)`, ohne kleinere Leseschrift oder kleinere Linkziele.
-  - **Nicht für das Profil geprüft:**
-    - Keine Prüfsitzung hat die Änderungen für das Profil geprüft. Die Prüfsitzung des Pakets 2026.10.2 prüft sie mit, mit Tastatur, bei 320 px und mit reduzierter Bewegung.
-    - Für die Website «Depression» gilt weiter der Entscheid zu R3-01: Vor jedem neuen Export prüft eine Sitzung, die nicht gebaut hat, die Änderung an `interaktion.js`.
-  - **Offene Punkte für 2026.10.2** (in `ENTSCHEIDE-PROFIL-2026-10-2.md`, P-16 und P-17):
-    - Fokusbild am Sprungziel: `starter.css` blendet es mit `.puk-longform__section[tabindex="-1"]:focus{outline:none}` aus, und `bundle.css` zeichnet den Fokusring nicht für `[tabindex="-1"]`.
-    - Für Filter und Suche fehlen das Markup in `templates/website/interaktion/`, eine Regel im Abschnitt «Interaktionskonzept» und, für die Suche, ein Index aus dem Starter-Build.
-- **11.10.2026 · Version 2026.10.1 · Befunde aus der Prüfung der Website «Depression: Informationen für Angehörige»** (Visualisierungs-Check, Bedienung und Barrierefreiheit, W3; Prüfbericht `templates/website/depression-angehoerige/PRUEFBERICHT.md`, Branch `website/depression-angehoerige-pruefung`). Die Fehler lagen in Starter, Komponenten und Vorlagen, nicht in der Website. Starter Build r4-8, Selbsttest 65/65 (vorher 53). Nachgemessen an einer Kopie der Website mit dem neuen Profil (Chromium, Tastatur, 320–1440 px, Schrift 100–200 %, reduzierte Bewegung, erzwungene Farben, Druck A4, Content-Security-Policy).
-  - **Blockierend:** Vertiefungen im Druck (W3-01): Interaktionsskript auf jeder Seite mit `details`, Rückfall `details::details-content` in `bundle.css` – gedruckt 11 von 11 statt 2 von 11, auch ohne Skript. Name des Logo-Links (BD-01, W3-07): «Psychiatrische Universitätsklinik Zürich – Startseite …», Gate-Prüfung `logo-name`, SR-05 angepasst, auch Vorlagen und UI-Kit. Bedienziele (BD-06, W3-04): Sprunglink und Lesepfade 44 px.
-  - **Wichtig:** Fokus mit erzwungenen Farben (BD-03): Umrandung in `CanvasText`; gemessen auf drei Seiten hat jeder Tab-Stopp ein Fokusbild (vorher keiner). Vergleich E (V-01): gemeinsame Zeilen (`subgrid`), Versatz 0 statt bis 96 px. Schrift in rem (BD-04, BD-11): Die Schriftgrösse-Einstellung wirkt; Container-Schwellen und Figurbreiten in rem, bei 200 % keine überlappenden Beschriftungen. Navigation (BD-05, W3-06): unter 760 px zweispaltig, ab sieben Punkten «Menü»; Kopf bei 360 px 270 statt 592 px. Vorlage H (V-06, V-07): ohne Schlüssel für Bildteile, schmal Pol A · Mitte · Pol B wie im DOM.
-  - **Optional und Hinweise:** Logo im Kontrastmodus mit dunklem Schema hell (BD-07). Figuren im Druck auf einer A4-Seite (W3-11): Grundschrift 13 px, kleinere Zeichnungen, Kennzeichnung vor der Vertiefung – geteilt 0 statt 8 von 11. Rückfallschrift ohne «Rubik Variable», Pfeile aus Muster J entfernt (W3-09): Die Seite «Behandlung und Verlauf» lädt 337 statt 424 kB. Silbentrennung präzisiert (Fliesstext `manual`, schmale Spalten `auto`). Export liefert nur verwendete Schriften (225 kB weniger). Feld `legal` für Impressum und Datenschutzerklärung in der Fusszeile und Vorlage «Impressum und Datenschutz» im Starter (W3-05). 404-Seite im Seitenvertrag (`role: "not-found"`) und im Export (W3-08). Gate-Hinweis `lang-part` für fremdsprachige Quellentitel (BD-02). `gate.html` ohne Inline-Skript; Repository-Vorschau mit Content-Security-Policy für die Website-Ordner (Stamm-`_headers`, nur Repository).
-  - **Nebenbefund beim Prüfen:** Mit gesetzter `siteUrl` blockierte das Gate jeden Build, weil es den kanonischen Link als externe Laufzeitquelle wertete. Behoben, mit Selbsttest-Fall.
-  - **Code-Review des Pull Requests (Codex):** Das Produktionsgate verlangt eine veröffentlichte `404.html` im Stamm (eine 404-Seite als Entwurf oder unter anderem Namen wird nicht ausgeliefert). Ziele von `legal` sind eine eigene Seite oder eine `https://`-Seite, keine `mailto:`- oder anderen Adressen. Von der Prüfung externer Quellen ausgenommen sind nur Links mit `rel` ausschliesslich `canonical` oder `alternate` (nicht «alternate stylesheet»). Drei Selbsttest-Fälle. Repository-Vorschau: `frame-ancestors 'self'`, damit `qa.html` die Seiten prüfen kann; kein Block für die Website «Depression», bis ihr `gate.html` übernommen ist.
-  - **Profilentscheide** (begründet in den Abschnitten; die sechs Entscheide vom 11.10.2026 unter «Offene Punkte»): Schriftgrade in rem und Rückfallschrift («Typografie und Flächen»); Menü ab sieben Hauptpunkten («Interaktionskonzept»); Druckreihenfolge und Silbentrennung («Technische Qualität»); Logo-Link-Name und Fokus mit erzwungenen Farben («Barrierefreiheit und Test», «Marke und Logo»); Vergleich nach gemeinsamen Zeilen, Spannungsfeld ohne Schlüssel und mit gekürztem Kurztext («Visuelle Wissensvermittlung», «Visualisierung umsetzen»); Impressum, Datenschutzerklärung und 404-Seite blockieren in Produktion, je Website eine Seite «Impressum und Datenschutz».
-  - **Übernahme für bestehende Websites** (`templates/website/<website>/` hat eigene Kopien von `tools/`, `starter.css` und `_headers`):
-    1. Aus dem Starter ersetzen: den ganzen Ordner `tools/` (mit `selftest/`, neu `gate.css` und `gate-browser.js`), `starter.css` und `gate.html`. `_headers` bleibt unverändert.
-    2. `site.config.json` ergänzen: `legal` mit `imprint` und `privacy` (`label`, `href`), die Seiten `impressum-datenschutz` und `404` (`"role": "not-found"`) samt `content/impressum-datenschutz.html` und `content/404.html` aus dem Starter, `assetVersion` auf `r4-8`. Im Impressum Herausgeberin und Verantwortliche prüfen; im Datenschutz nur stehen lassen, was die Website tut.
-    3. Nichts zu kopieren: `components/bundle.css`, `components/interaktion.js`, `templates/website/longform/visual-patterns.css` und `erklaermuster.css` laden die Websites über relative Pfade; sie gelten nach dem Neubau.
-    4. `node tools/build.mjs` und `node tools/gate.mjs --selftest`; danach Kopf, Navigation, Druck und Figuren ansehen.
-    5. Inhalte prüfen (bauende Sitzung): Kurztexte, die «gleiche Höhe» oder schmal ausgeblendete Bildteile nennen; Schlüssel in Muster H; ← → in Muster J; englische Quellentitel (`lang-part`).
-    6. Repository-Vorschau: nach Schritt 1 (neues `gate.html` ohne Inline-Skript) im Stamm-`_headers` einen Block mit dem Ordner der Website ergänzen (Vorlage dort).
-  - **Zusammen mit AUDIT 04 (Eintrag darunter):** Der rem-Block setzt die Fusszeile auf `web-size-body` (21 px) und schmal auf 1,1875 rem (19 px), damit er die Footer-Regel nicht wieder auf 16 px zurücksetzt. Das Paket 2026.10.1 enthält beide Änderungen und ersetzt `puk-website-profil-2026.10.zip`.
-- **11.10.2026 · Footer-Lesetext nach AUDIT 04:** `tokens/web.css` und `components/bundle.css` verwenden für die Fusszeile die Lesetextgrösse 21 px breit und 19 px schmal. Nur explizite Datums-, Versions- und Designmetadaten verwenden `.puk-web-footer__meta` mit 13 px. Guideline 03 erläutert die Textrollen. Technische Nachprüfung und Grenzen: [Prüfbericht](review/footer-typografie-2026-10-11/PRUEFBERICHT.md).
-- **10.10.2026 · Gate-Korrektur für eigene Zeichnungen:** Das Gate verlangte bei `illustration` weiterhin einen Platzhalter- oder Bildquellenstatus und blockierte damit eigene Zeichnungen nach Muster D (Befund beim Bau der Borderline-Website, Abbildung «Momentaufnahmen»). Korrigiert: Eine Illustration mit `.puk-vis-scene` gilt als eigene Zeichnung; Kennzeichnung und Freigabe im Plan prüft das Gate wie bei jeder Figur. Starter Build r4-7, Selbsttest 53/53.
-- **10.10.2026 · Bildsprache: ein Bild, eine Idee:** Anlass: Die Fachstelle hat die Abbildung «Die Brücke mit Geländer» der Borderline-Website gestrichen; sie wirkte wie ein Bauplan und war nur mit einer Liste zu entschlüsseln. Das Profil wollte warme, organische Bilder, hatte aber Lücken: Die Diagramm-Regeln galten für alle Muster, Muster D erlaubte ohne fremde Bildquelle nur einen Platzhalter, und keine Prüfung fragte nach der Wirkung. Neu: Abschnitt «Ein Bild, eine Idee» (acht Regeln, Freundin-Test), Abschnitt «Metaphern und Illustrationen zeichnen», Diagramm-Regeln gelten für Metaphern nur, soweit sie nicht widersprechen; eigene Zeichnungen ohne fremde Quelle zulässig; Planfeld `resonance` (Wirkung) mit Gate-Prüfung (Entwurf: Hinweis, Produktion: blockiert); Visualisierungs-Check um drei Punkte erweitert (15–17); R2 mit Teil 2 «Bildsprache und Wirkung je Figur»; Muster D als Beispielszene «Ein freier Abend» mit `.puk-vis-scene` (Musterinhalt, fachliche Freigabe ausstehend). Starter Build r4-6, Selbsttest 52/52.
-- **09.10.2026 · Pre-Release-Audits:** Neuer Abschnitt mit drei Prüfaufträgen für den fertigen Release-Kandidaten: R1 Profil-Audit (Marke, Farben, Schrift, Navigation, Komponenten, Zuständigkeit), R2 Visualisierung und Laienverständlichkeit (Matrix je Figur, Lesetest je Abschnitt aus Sicht einer belasteten angehörigen Person, «Was Sie tun können»), R3 Freigabe-Audit mit «Go» oder «No-Go». Prüfbericht-Vorlage mit Zeilen R1 bis R3; das Produktionsgate prüft sie (Starter Build r4-5, Selbsttest 51/51).
-- **09.10.2026 · Fachliche Durchsicht der Borderline-Website:** Neuer Standardwortlaut des Zuständigkeitsverweises (freundlicher, mit «kostenlos und vertraulich»; zweiter Satz wortgleich mit dem Verweis im Text), fachlich geprüft von der Fachstelle am 09.10.2026. Die Kurzbeschreibung in der Bildlegende steht nur noch für Screenreader (`p.puk-sr`, weiter über `aria-describedby` verbunden); sichtbar bleiben Kennzeichnung und Quelle. Anlass: Die Beschreibungen erklärten Sehenden nur, was sie ohnehin sehen. Alle Muster, Vorlagen und Starter-Seiten angepasst.
-- **09.10.2026 · Befunde aus der Prüfung der Borderline-Website:** Verweis im Text auf die zuständigen Stellen bei Handlungsanleitungen für akute Lagen (Platzhalter, Wortlaut aus `site.config.json`, Gate-Prüfung; Wortlaut von der Fachstelle am 09.10.2026 fachlich geprüft). Kontraste korrigiert: Schalter der Vertiefungen in Figuren (4,4 → 5,9:1) und Links im Hinweiskasten (3,6 → 4,9:1); die Prüfansicht `qa.html` misst jetzt den Kontrast von Text in Figuren, Vertiefungen, Links und Hinweiskästen. Definitionslisten im Fliesstext gestaltet; Formulierungsbeispiele «So könnte es klingen» als Komponente `.puk-say`. Prüfregeln geschärft: Vergleich mit dem Bestand an mindestens 20 Aussagen je Etappe, Kennzahlen der bauenden Sitzung nachrechnen, Visualisierungs-Check je Figur. Anlass: Eine zweite, unabhängige Prüfung fand deutlich mehr als die erste. Starter Build r4-4, Selbsttest 50/50.
-- **08.10.2026 · Bauen und Prüfen getrennt:** Selbstprüfung nach jedem Bau (Visualisierungs-Check als Tabelle mit Beleg), Prüfstufen in einer eigenen Sitzung, kein Merge ohne Prüfbericht; Vorlage `PRUEFBERICHT.md` im Starter; das Produktionsgate blockiert ohne vollständigen Prüfbericht (Selbsttest 46/46); Auftrag für die Prüfsitzung im Abschnitt «Prüfung und Freigabe». Anlass: Im ersten Probelauf bestand das Gate, die didaktischen Mängel fielen erst bei einer Prüfung Punkt für Punkt auf.
-- **08.10.2026 · Visualisierung nach dem Probelauf:** Drei Erklärungsebenen (Kernaussage, Erklärtext, Vertiefung) jetzt auch in den Mustern A–F; Ansatzpunkt für Angehörige als Element in Kreislauf, Prozesspfad und Modell in Schritten mit Regel und Planfeld `entryPoint`; Visualisierungsplan mit einer Zeile pro Abschnitt (`sectionId`); Gate meldet fehlende Kernaussage, fehlenden Ansatzpunkt und Abschnitte ohne Planzeile (Selbsttest 44/44, Build r4-3); Visualisierungs-Check um vier Punkte ergänzt; Spannungsfeld (Spalten hängen an den Schalen, gekippter Balken) und Schichtenmodell (durchgehende Eisbergform) überarbeitet; Starter-Hinweis auf die Fusszeile im Abschnitt «Wenn Konflikte bedrohlich werden» entfernt.
-- **08.10.2026 · Offene Punkte geklärt:** Im Seitenkopf steht immer das statische Logo; das animierte Logo wird auf Websites nicht verwendet (WCAG 2.2.2, Entscheid Fachstelle), seine Web-Fassungen sind nicht mehr im Projektpaket. Der Selbsttest des Gates prüft an einer festen Referenz (`tools/selftest/`) und läuft in jeder Kopie des Starters.
-- **08.10.2026 · Erster Probelauf (PTBS):** Zuständigkeitsverweis neu gefasst: aus Sicht der Lesenden und mit einem Wegweiser für akute Krisen, ohne Nummern (Entscheid Fachstelle). Der bisherige Wortlaut nannte nur, wofür die Fachstelle nicht zuständig ist; die Regel verlangt einen Verweis auf die zuständigen Stellen. Der Prüfvermerk erscheint nicht mehr auf der Website; sichtbar bleibt nur die Warnung bei einem ungeprüften Verweis.
-- **06.10.2026 · Entscheide eingearbeitet:** E-Mail der Absenderin korrigiert (`angehoerigenarbeit@pukzh.ch`, wie im Factsheet der Fachstelle); Zuständigkeitsverweis festgelegt und als geprüft dokumentiert; Beispielinhalte der Erklärmuster und Interaktionsbeispiele fachlich freigegeben; Geltung nur für die Fachstelle (KJPP eigenes System); kein Bildpool, Fotos nur im Einzelfall.
-- **06.10.2026 · Umsetzung offener Punkte:** Abschnitt «Technische Qualität» aus dem Code-Review W3 (WCAG 2.2 AA, Datenschutz nach DSG, Sicherheits-Header, Druck); HTML-Fassungen von Akkordeon, Reitern, Dropdown-Menü, Dialog und Button mit `components/interaktion.js`; Druckregeln in `bundle.css`; Starter Build r4-2 mit Mustern G–K, Pflichtfeld «understood», Interaktionsskript, Open Graph, Sitemap, `_headers`, Export und neuen Gate-Prüfungen (Selbsttest 39/39); Beziehungskarte und Kontinuum ohne `style`-Attribute; Web-Fassungen des animierten Logos (0,48 statt 4,8 MB); Druckfarben aus dem Web-Profil genommen; Theme «Hoher Kontrast» als optionale Ableitung festgehalten; Projektpaket.
-- **06.10.2026 · Konsolidierung:** 24 auf 19 Abschnitte (nach der Umsetzung der offenen Punkte 21). Visualisierung von fünf auf zwei Abschnitte («Visuelle Wissensvermittlung», «Visualisierung umsetzen»); Barrierefreiheit und Screenreader-Testplan zusammengeführt; ein Prüf- und Freigabeablauf statt verstreuter Reihenfolgen; Inhaltsmuster zu den Anwendungsmustern; Verbindlichkeitsebenen; widersprüchliche Kit-Reste zum Krisenzugang bereinigt (START, Website-Vorlage, Alert, Akkordeon, Testplan); selbstlaufende Kreislauf-Animation entfernt; doppelte Bildwelt-Karte zusammengeführt; Komponentenbeschreibungen auf Deutsch.
-- **06.10.2026 · Visuelle Wissensvermittlung:** Leitprinzip, Erklärmuster G–K, Karte «Visuelle Wissensvermittlung».
-- **06.10.2026 · Interaktionskonzept:** Zustände, Bewegung, Rückmeldungen, Regeln je Komponente; Dropdown-Menü und Karussell; Touch-Ziele 44 px; Tooltip, Dialog verbessert.
-- **06.10.2026 · Inhaltliche Leitlinien:** Fachliche Qualität und Haltung (W1), Gesamtkohärenz und Aufbau (W2), Sprache und Ton (S); Zuständigkeit statt Krisenzugang; Absenderin Fachstelle Angehörigenarbeit.
-- **06.10.2026 · Aufbau:** Website-Profil aus PUK Website Kit 1.10.1-r4 und Vollsystem 1.10.1 (Visualisierung); Profilentscheide ein Schwarz, Buttons 3 px, Lesen in Seitenschrift.
-
-Abschnitte: Prüfung und Freigabe · Pre-Release-Audits · Fachliche Qualität und Haltung · Technische Qualität · Gesamtkohärenz und Aufbau · Sprache und Ton · Visuelle Wissensvermittlung · Marke und Logo · Farben und Kontrast · Typografie und Flächen · Barrierefreiheit und Test · Anwendungs- und Inhaltsmuster · Langform und Psychoedukation · Visualisierung umsetzen · Interaktionskonzept.
+Das Profil ist ein internes abgeleitetes Arbeitsmittel, keine amtliche PUK-Vorlage. Neue klinische Websites benötigen ihre eigene fachliche und rechtliche Inhaltsprüfung. Nutzerstudien, echte Screenreader-Läufe, institutionelle Zertifizierungen, private Artefakt-Synchronisierung und zusätzliche Medienfassungen sind keine verbleibenden Aufgaben dieses abgeschlossenen Profilstands.

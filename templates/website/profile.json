@@ -16,9 +16,18 @@
   },
   "sourceBoundary": "Eigenständiges digitales Systemprofil. profile.json ist die verbindliche Sollquelle für die Website-Erstellung im Design System; es ist keine officeatwork-Büromedien-Vorlage und keine vollständige technische Spezifikation des produktiven PUK-Webauftritts.",
   "viewports": {
-    "narrow": { "widthPx": 360, "heightPx": 800 },
-    "medium": { "widthPx": 768, "heightPx": 900 },
-    "wide": { "widthPx": 1440, "heightPx": 1000 }
+    "narrow": {
+      "widthPx": 360,
+      "heightPx": 800
+    },
+    "medium": {
+      "widthPx": 768,
+      "heightPx": 900
+    },
+    "wide": {
+      "widthPx": 1440,
+      "heightPx": 1000
+    }
   },
   "layout": {
     "containerMaximumPx": 1200,
@@ -31,7 +40,11 @@
   "typography": {
     "family": "Rubik",
     "bodyMaximumPx": 21,
-    "headingMaximumPx": { "h1": 114, "h2": 57, "h3": 40 },
+    "headingMaximumPx": {
+      "h1": 114,
+      "h2": 57,
+      "h3": 40
+    },
     "fluidHeadingsRequired": true,
     "bodyMeasureMinimumCh": 45,
     "bodyMeasureMaximumCh": 75
@@ -60,7 +73,7 @@
       "wcag22Reference": "SC 2.5.8 inline target exception"
     },
     "narrowMode": "wrapping-grid",
-    "emergencyLinkVisuallyDistinct": true,
+    "emergencyLinkVisuallyDistinct": false,
     "colorAloneForActiveStateAllowed": false
   },
   "content": {
@@ -79,33 +92,52 @@
     }
   },
   "safetyAccess": {
-    "status": "decision-template-requires-clinical-and-communications-approval",
-    "selectionQuestion": "Ist das unmittelbare Erkennen und Auslösen eines Krisenwegs die Hauptaufgabe dieser Seite?",
+    "status": "editorial-choice-per-topic",
+    "defaultVariant": "none",
+    "selectionQuestion": "Sind Krisenkontakte für das konkrete Thema und die Leserfrage hilfreich?",
+    "automaticInsertion": false,
+    "phoneNumbersAllowed": true,
+    "telephoneLinksAllowed": true,
     "variants": {
+      "none": {
+        "useFor": [
+          "Standardvorlagen ohne thematisch gewählte Krisenkontakte"
+        ]
+      },
+      "content": {
+        "useFor": [
+          "bewusst gewählte Kriseninformationen im passenden Inhaltsabschnitt"
+        ],
+        "placement": "redaktionell je Thema entscheiden",
+        "visualPriority": "entsprechend der Bedeutung für dieses Material"
+      },
       "direct": {
         "useFor": [
-          "contact and urgency pathfinders",
-          "triage-adjacent applications",
-          "pages whose primary task is acute help"
+          "bewusst gewählter Akutpfad als Hauptaufgabe einer Seite"
         ],
-        "placement": "persistent and immediately visible",
-        "visualPriority": "high"
+        "placement": "vom konkreten Seitenziel abhängig",
+        "visualPriority": "nur bei ausdrücklichem thematischem Entscheid hoch"
       },
       "persistent-subdued": {
         "useFor": [
-          "longform psychoeducation",
-          "foundation pages",
-          "non-acute orientation pages"
+          "ausdrücklich gewählte ergänzende Kontaktinformation"
         ],
-        "placement": "stable support or footer region with a direct labelled link",
-        "visualPriority": "secondary but not hidden"
+        "placement": "geeigneter ruhiger Bereich",
+        "visualPriority": "sekundär"
+      },
+      "responsibility": {
+        "useFor": [
+          "ausdrücklich konfigurierter optionaler Zuständigkeitstext"
+        ],
+        "placement": "nach dokumentiertem Einsatzentscheid"
       }
     },
     "mustNot": [
-      "hide crisis information behind a filter, dialog or accordion",
-      "claim a contact is verified without documented editorial review",
-      "choose a variant without recording content owner and approval status"
-    ]
+      "Notfallnummern automatisch ergänzen oder hervorheben",
+      "eine Diagnose allein als Auslöser einer Krisenrubrik verwenden",
+      "Kontaktdaten ohne Prüfung ihrer Richtigkeit und Aktualität erfinden"
+    ],
+    "configurationNote": "Die Varianten beschreiben wählbare Darstellungsmuster und erzeugen selbst keinen Inhalt. Im Starter sind responsibility und responsibility.inline ausdrücklich optionale Textfelder; themenbezogene Kontakte können direkt im Inhalt stehen."
   },
   "applicationPatterns": {
     "registry": "templates/website/application-patterns.json",
@@ -145,7 +177,11 @@
     ]
   },
   "qualityGates": {
-    "viewports": [360, 768, 1440],
+    "viewports": [
+      360,
+      768,
+      1440
+    ],
     "reflowWidthPx": 320,
     "textResizePercent": 200,
     "reflowEquivalentZoomPercent": 400,
@@ -178,5 +214,6 @@
       "Stress und Stressbewältigung",
       "Stress und Stressbewaeltigung"
     ]
-  }
+  },
+  "profileVersion": "2026.10.3"
 }

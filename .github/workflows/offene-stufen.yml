@@ -1,10 +1,10 @@
-# Sperre gegen das Zusammenführen vor der Prüfung (Forensisches Audit vom 15.10.2026, Befund F-1; CLAUDE.md,
-# «Kein Merge ohne Prüfbericht»).
+# PR-Beschreibungen auf ausdrücklich genannte offene Stufen prüfen.
+# Aktuelle Website-Prüfregeln: guidelines/00-ablauf-pruefung-und-freigabe.md.
 #
 # Die Prüfung bleibt rot, solange die Beschreibung eines Pull Requests im Abschnitt «Offene Stufen» einen Punkt
 # nennt, der nicht abgehakt ist:
-#   - [ ] Nachprüfung durch eine Sitzung, die nicht gebaut hat   → offen, Prüfung rot
-#   - [x] Nachprüfung durch eine Sitzung, die nicht gebaut hat   → erledigt
+#   - [ ] Dokumentierte Prüfung der Website   → offen, Prüfung rot
+#   - [x] Dokumentierte Prüfung der Website   → erledigt
 #   - Nachprüfung …   (Punkt ohne Kästchen)                       → gilt als offen
 #   - keine                                                       → keine offene Stufe
 # Ohne Abschnitt «Offene Stufen» bleibt die Prüfung grün. Nach jeder Änderung der Beschreibung läuft sie neu.

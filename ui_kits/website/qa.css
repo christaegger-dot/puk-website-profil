@@ -1,0 +1,11 @@
+
+body{margin:0;padding:24px;font:var(--type-body-sm)}
+h1{font:var(--type-title-3);margin:0 0 12px}
+#status{margin:0 0 12px;color:var(--text-muted)}
+table{border-collapse:collapse;width:100%;font:var(--type-caption)}
+th,td{border-bottom:1px solid var(--border-hairline);padding:4px 8px;text-align:left;vertical-align:top}
+.ok{color:var(--text-default)}.na{color:var(--text-muted);font-style:italic}.bad{color:var(--text-danger);font-weight:var(--fw-medium)}
+#stage{position:fixed;left:0;top:0;width:0;height:0;overflow:hidden;pointer-events:none}
+#stage iframe{border:0;height:900px;display:block}
+
+.qa-scroll{max-width:100%;overflow-x:auto}.qa-note{max-width:90ch}.qa-heading{margin-top:24px}h2{font:var(--type-title-3);margin:24px 0 12px}

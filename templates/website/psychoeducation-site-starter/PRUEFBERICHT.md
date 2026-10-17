@@ -1,4 +1,6 @@
-# Prüfbericht · Psychoedukations-Starter
+# Prüfbericht-Vorlage · Psychoedukations-Starter
+
+**Leeres Formular für neue Website-Projekte; keine offenen Aufgaben des abgeschlossenen Profils.** Die Stufen unten bleiben Eingabeparameter und sperren die ungefüllte Vorlage weiterhin in Produktion. Der aktuelle technische Profilabschluss steht im Prüfbericht des Repository-Stamms.
 
 Gehört zur Website in diesem Ordner. Wer den Starter kopiert, übernimmt diese Vorlage: Titel anpassen, alle Stufen stehen auf «offen». Ohne vollständigen Prüfbericht blockiert `node tools/gate.mjs --production` die Veröffentlichung (Abschnitt «Prüfung und Freigabe»).
 

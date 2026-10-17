@@ -757,9 +757,12 @@ html.puk-scroll-lock{overflow:hidden}
 @container (max-width:12rem){.puk-vis-figure,.puk-web-h2,.puk-web-h3{hyphens:auto}}
 @media print{
   .puk-vis-wide,.puk-vis-figure{break-inside:avoid}
-  .puk-vis-wide:has(>.puk-vis-figure[data-print-split]),.puk-vis-figure[data-print-split]{break-inside:auto}
+  .puk-vis-wide:has(.puk-vis-figure[data-print-split]),.puk-vis-figure[data-print-split]{break-inside:auto}
   .puk-vis-figure[data-print-split] :is(.puk-vis-path,.puk-vis-decision,.puk-vis-build__steps)>li{break-inside:avoid}
   .puk-vis-figure[data-print-split]>.puk-vis-label{break-before:avoid}
   .puk-vis-figure[data-print-split]>figcaption{break-before:avoid}
   .puk-longform__section-heading{position:static}
 }
+
+/* Profil 2026.10.3: Blockfluss verhindert leere Druckseiten im Abschnittsraster. */
+@media print{.puk-longform__section-grid{display:block}.puk-longform__section-heading{break-after:avoid}.puk-site-subheading{break-after:avoid;page-break-after:avoid}}

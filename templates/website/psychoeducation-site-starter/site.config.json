@@ -2,9 +2,9 @@
   "$comment": "PUK Website Kit 1.10.1-r4 · abgeleitet – Seitenvertrag des Psychoedukations-Starters. Synthetische Musterwerte. Pflichtfelder und Regeln: README.md in diesem Ordner. Nach jeder Änderung: node tools/build.mjs, danach node tools/gate.mjs (Entwurf) bzw. node tools/gate.mjs --production.",
   "kitRevision": "PUK Website Kit 1.10.1-r4 · abgeleitet",
   "canonicalSource": "PUK Zürich Design System 1.10.1 (unverändert)",
-  "assetVersion": "r4-10",
+  "assetVersion": "r4-11",
   "siteTitle": "Psychoedukation verstehen – Musterwebsite",
-  "shortDescription": "Synthetische Musterwebsite mit drei psychoedukativen Referenzseiten und Seitenvorlage. Keine fachlichen Aussagen, keine realen Kontakte.",
+  "shortDescription": "Synthetische Musterwebsite mit drei psychoedukativen Referenzseiten und einer Seitenvorlage. Kein klinisch freigegebenes Angebot.",
   "language": "de-CH",
   "favicon": "assets/favicon.svg",
   "logo": "assets/logo.svg",
@@ -18,21 +18,6 @@
   "editorialStatus": "synthetic-reference",
   "editorialStatusLabel": "Synthetische Referenz, nicht zur Veröffentlichung bestimmt",
   "disclaimer": "Diese Website ersetzt keine individuelle Abklärung, Beratung oder Behandlung.",
-  "responsibility": {
-    "label": "Zuständigkeit",
-    "text": "Die Fachstelle Angehörigenarbeit der PUK berät Angehörige kostenlos und vertraulich: angehoerigenarbeit@pukzh.ch. Sorgen Sie sich akut um das Leben oder die Sicherheit eines Menschen, holen Sie sofort Hilfe: ärztlicher Notfalldienst oder Notfallstation, bei Gefahr die Polizei.",
-    "owner": "Fachstelle Angehörigenarbeit PUK",
-    "reviewStatus": "geprueft",
-    "reviewedBy": "Fachstelle Angehörigenarbeit PUK",
-    "reviewedAt": "09.10.2026",
-    "inline": {
-      "text": "Sorgen Sie sich akut um das Leben oder die Sicherheit eines Menschen, holen Sie sofort Hilfe: ärztlicher Notfalldienst oder Notfallstation, bei Gefahr die Polizei.",
-      "reviewStatus": "geprueft",
-      "reviewedBy": "Fachstelle Angehörigenarbeit PUK",
-      "reviewedAt": "09.10.2026",
-      "$comment": "Verweis im Text (Profilentscheid 09.10.2026): nur über den Platzhalter <p data-responsibility-inline></p>, nur bei Selbstgefährdung, Gewalt oder akuter Krise. Wortlaut von der Fachstelle fachlich geprüft am 09.10.2026."
-    }
-  },
   "sender": {
     "orgUnit": "Fachstelle Angehörigenarbeit",
     "institution": "Psychiatrische Universitätsklinik Zürich",

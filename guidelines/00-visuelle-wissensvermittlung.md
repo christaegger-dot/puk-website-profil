@@ -73,7 +73,7 @@ Die Taxonomie der Handout-Reihe der Fachstelle gilt auch für Websites. Entsprec
 | Entscheidungspfad | Wenn-dann, nächster Schritt | F · Entscheidungsweg |
 | Schrittfolge | Vorgehen, administrativer Ablauf | C · Prozesspfad |
 | Ampel | Warnsignale in Stufen | nur mit fachlich freigegebenem Stufenmodell; Farben nie allein, bevorzugt J |
-| Rettungsring | Akutpfad | auf Websites der Fachstelle nicht verwendet (kein Krisenzugang) |
+| Rettungsring | Akutpfad | nur bei bewusst gewählter, thematisch passender Krisenorientierung; kein Standardmotiv |
 
 **Die Metapher bleibt ein Bild.** Wird eine Metapher in ein Strukturmuster übersetzt, bleibt sie als Bild erkennbar: Eine Waage sieht aus wie eine Waage, ein Eisberg wie ein Eisberg. Bildteile bekommen keine Namen; beschriftet wird, was Menschen erleben (Abschnitt «Ein Bild, eine Idee»).
 
@@ -150,7 +150,7 @@ Beispiel: Muster D in `templates/website/longform/visualisierungsmuster.html` (�
 - Kausalität nicht stärker zeigen als belegt; «kann», «oft», «häufig» auch in Beschriftungen. Gewichtungen und Beziehungen nicht für ein schöneres Bild verändern.
 - Grenzen des Modells benennen (Ebene 3), besonders bei Metaphern: Ein volles Gefäss ist kein Versagen, ein Eisberg keine Deutung.
 - Fachmodelle mit Quelle; eigene Modelle als «Eigene didaktische Darstellung», bei Anlehnung mit Bezug («angelehnt an das Vulnerabilitäts-Stress-Modell»).
-- Keine Schuldzuweisung an Angehörige oder erkrankte Menschen; nicht dramatisieren, nicht verniedlichen, keine falsche Sicherheit. Keine Selbstdiagnose-Skalen, keine Krisennummern in Darstellungen.
+- Keine Schuldzuweisung an Angehörige oder erkrankte Menschen; nicht dramatisieren, nicht verniedlichen, keine falsche Sicherheit. Keine Selbstdiagnose-Skalen, Kontakte in Darstellungen nur nach themenbezogenem Entscheid und mit geprüften Angaben.
 - Jede Darstellung ist fachlich freigegeben, bevor sie veröffentlicht wird.
 
 ## Anwendungsbeispiele

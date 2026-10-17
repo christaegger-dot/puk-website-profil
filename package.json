@@ -1,0 +1,24 @@
+{
+  "name": "puk-website-profil",
+  "private": true,
+  "version": "2026.10.3",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build:components": "node quellcode/komponenten/build.mjs components/bundle.js",
+    "build:starter": "node templates/website/psychoeducation-site-starter/tools/build.mjs",
+    "test:types": "tsc -p tests/tsconfig.json",
+    "test": "npm run test:types && node --test tests/*.test.mjs",
+    "package": "python3 tools/paket.py",
+    "build:example": "node templates/website/psychoeducation-site-starter/tools/build.mjs --site templates/website/profilbeispiel --production",
+    "build": "npm run build:components && npm run build:starter && npm run build:example",
+    "check:package": "python3 tools/paket.py --check"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.31",
+    "esbuild": "0.25.11",
+    "playwright": "1.62.1",
+    "typescript": "5.9.3"
+  }
+}

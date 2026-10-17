@@ -23,7 +23,7 @@ Rahmen: Schweiz, Schweizer Hochdeutsch, Datenschutz nach DSG, Barrierefreiheit *
 - Zoom bis 200 % und 320 px ohne Informationsverlust. Schriftgrade in `rem`, damit auch die Einstellung «Schriftgrösse» des Browsers wirkt; Figuren mit frei platzierten Beschriftungen wechseln bei grosser Schrift in die Listenansicht (Profilentscheid 11.10.2026).
 - Klickflächen mindestens 44 px (strenger als 2.5.8 mit 24 px), auch Sprunglink und Lesepfade; Ausnahme ist der E-Mail-Link der Absenderzeile, für den 2.5.8 über den Abstand gilt (Abschnitt «Interaktionskonzept», Paket 2026.10.2, P-3); Wischen nie als einziger Weg (2.5.7).
 - Der Name eines Bildlinks beginnt mit dem sichtbaren Text im Bild (2.5.3), beim Logo-Link «Psychiatrische Universitätsklinik Zürich – zur Startseite dieser Website» (Wortlaut freigegeben 15.10.2026).
-- Hilfe und Kontakt an gleicher Stelle auf jeder Seite (3.2.6): Absenderin im Kopf, Zuständigkeitsverweis in der Fusszeile.
+- Hilfe und Kontakt an gleicher Stelle auf jeder Seite (3.2.6): Absenderin im Kopf und eine konsistente Kontaktposition; kein pauschaler Zuständigkeits- oder Krisensatz erforderlich.
 - `prefers-reduced-motion` respektiert, nichts spielt automatisch ab.
 
 ## C · Datenschutz und Vertrauen
@@ -56,7 +56,7 @@ Bei psychischer Erkrankung ist schon der Seitenbesuch eine sensible Information.
 - Darstellung auf Smartphone, Tablet und Desktop konsistent; die im S-Protokoll markierten Stellen mit erhöhtem Platzbedarf laufen auch schmal nicht über.
 - **Druck:** Angehörige drucken Inhalte oft aus. `components/bundle.css` enthält die Druckregeln: Navigation, Skip-Link und Bedienelemente ausgeblendet, Akkordeons, Reiter und Vertiefungen vollständig gedruckt (Skript vor dem Druck, Rückfall `details::details-content`), Link-Adressen hinter externen Links sichtbar, Schwarz auf Weiss. Darstellungen nicht über Seitenumbrüche geteilt: Titel, Kernaussage, Darstellung und Kennzeichnung stehen auf einer A4-Seite, die Vertiefung folgt nach der Kennzeichnung und darf auf die nächste Seite fliessen (Profilentscheid 11.10.2026). Ist eine Darstellung mit ihrer Liste länger als eine A4-Seite, stehen Titel, Kernaussage und der Anfang der Darstellung auf einer Seite; die Darstellung darf danach umbrechen, die Kennzeichnung folgt direkt auf das Ende der Darstellung. Eine leere Seite davor entsteht nicht. Umbrechen darf nur eine Abfolge (Prozesspfad, Entscheidungsweg, Modell in Schritten) mit dem Kennzeichen `data-print-split` an der Figur, das ausdrücklich gesetzt wird, wenn sie mit ihrer Liste länger als eine A4-Seite ist, ohne Schwelle nach Schrittzahl; sie bricht dann zwischen ihren Schritten um, und an anderen Mustern meldet das Gate das Kennzeichen (Paket 2026.10.2, P-1, nachgebessert 15.10.2026; Anleitung im `README.md` des Starters und in `templates/website/longform/README.md`). Abschnittsüberschriften der Langform stehen im Druck im Fluss, nicht fixiert (P-15).
 - Typografie technisch korrekt: Guillemets in Vorlagen und Komponenten, Silbentrennung für Deutsch (`hyphens: auto` mit `lang="de-CH"`) bei langen Wörtern in schmalen Spalten – Navigation, Spalten und Stationen in Figuren. Fliesstext bleibt ohne automatische Trennung (`hyphens: manual`); so setzen es Starter und Muster (präzisiert 11.10.2026). Figuren und Abschnittsüberschriften trennen zusätzlich nach Silben, wenn ihr Container höchstens 12rem breit ist – praktisch nur bei grosser Schrift auf schmalen Bildschirmen (Paket 2026.10.2, P-6).
-- Der Zuständigkeitsverweis ist technisch an einer Stelle eingebunden (Fusszeilen-Vorlage bzw. `site.config.json`), nicht auf Seiten dupliziert. Der Verweis im Text kommt ebenfalls aus `site.config.json` (`responsibility.inline`) und wird nur über den Platzhalter `<p data-responsibility-inline></p>` eingesetzt.
+- Ein ausdrücklich gewählter Zuständigkeitsverweis wird zentral in `site.config.json` gepflegt; standardmässig fehlt er. Ein optionaler Verweis im Text kommt aus `responsibility.inline` und wird nur über den Platzhalter `<p data-responsibility-inline></p>` eingesetzt.
 
 ## G · Wartbarkeit
 
@@ -83,4 +83,4 @@ W3 ist ein reines Review: keine Dateiänderungen, bis die Befunde freigegeben si
 6. **Umsetzungsplan in Stufen,** die einzeln freigegeben werden können.
 7. **Offene Prüfpunkte:** was nur im Browser, auf einem echten Gerät oder mit Screenreader geprüft werden kann.
 
-Zuständigkeit: Keine Krisennummern und kein Notfallblock empfehlen; ein fehlender Zuständigkeitsverweis ist kein Befund.
+Kontaktauswahl: hilfreiche Telefonnummern sind erlaubt; Krisenkontakte sind ein Entscheid je Thema. Ein fehlender pauschaler Zuständigkeitsverweis ist kein Befund.

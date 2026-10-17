@@ -10,7 +10,7 @@ liegt in `tokens/web-longform.css`.
 - **SOLL:** Die Seite als nachvollziehbaren Weg planen, häufig Orientierung → Verständnis →
   Vertiefung → Alltagsbezug → Handlungsmöglichkeiten. Die Folge ist nicht starr.
 - **MUSS:** Ein dringlicher Hauptzweck steht vor der Langformerklärung. (Profilentscheid 06.10.2026: Krisenorientierung ist nicht Aufgabe
-  dieser Seiten; es gibt keine Sicherheitsvariante mit Krisenzugang, siehe «Zuständigkeit statt Krisenzugang».)
+  dieser Seiten; es gibt keine Sicherheitsvariante mit Krisenzugang, siehe «Telefonnummern und Kriseninformationen».)
 - **SOLL:** Bei mindestens vier aufeinander aufbauenden Hauptabschnitten eine knappe
   Kapitelorientierung mit funktionierenden Sprungzielen anbieten.
 - **SOLL:** Übergänge erklären, was der vorherige Abschnitt geleistet hat und warum der nächste
@@ -33,9 +33,9 @@ liegt in `tokens/web-longform.css`.
 
 ## Mehrseitige Websites (r4)
 
-- **MUSS:** Mehrseitige psychoedukative Websites mit `templates/website/psychoeducation-site-starter/` bauen. Navigation, Meta, Favicon, Absenderin und Zuständigkeitsverweis entstehen aus `site.config.json`, nicht von Hand.
+- **MUSS:** Mehrseitige psychoedukative Websites mit `templates/website/psychoeducation-site-starter/` bauen. Navigation, Meta, Favicon, Absenderin und ausdrücklich gewählte optionale Zuständigkeitstexte entstehen aus `site.config.json`, nicht von Hand. Ohne diesen Entscheid erscheint kein solcher Footertext.
 - **MUSS:** Die Organisationseinheit ist als Absenderin sichtbar; ohne Freigabe mit sichtbarem Status «Platzhalter, nicht freigegeben».
-- **MUSS:** Kein Krisenzugang; höchstens der site-weite Zuständigkeitsverweis ohne Nummern (`site.config.json` › `responsibility`), Regeln im README-Abschnitt «Zuständigkeit statt Krisenzugang».
+- **MUSS:** Keine automatische Krisenrubrik. Telefonnummern und Krisenkontakte je Thema bewusst wählen; optionale konfigurierte Texte stehen in `responsibility`. Regeln im README-Abschnitt «Telefonnummern und Kriseninformationen».
 - **MUSS:** Vor der Veröffentlichung den Ablauf im Abschnitt «Prüfung und Freigabe» durchlaufen; zuletzt `node tools/gate.mjs --production` ohne blockierende Befunde.
 
 ## Bericht oder PDF ins Web übersetzen
