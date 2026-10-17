@@ -8,15 +8,15 @@
 })(typeof self !== 'undefined' ? self : this, function () {
 'use strict';
 const VERSION = 'PUK Website Kit 1.10.1-r4 · abgeleitet';
-const BUILD = 'r4-12'; // erzeugt aus package.json
+const BUILD = 'r4-13'; // erzeugt aus package.json
 const FORMATS = ['text', 'figure', 'process', 'cycle', 'comparison', 'decision', 'illustration', 'stepwise-model', 'tension-field', 'relationship-map', 'continuum', 'layer-model'];
 /* Interaktive Komponenten und Erklärmuster G brauchen components/interaktion.js (HTML-Fassungen ohne React).
    Prüfbefund W3-01 (11.10.2026): auch jede Seite mit aufklappbarer Vertiefung (details) – das Skript öffnet sie vor dem Druck. */
 const INTERACTIVE = ['data-puk-accordion', 'data-puk-tabs', 'data-puk-disclosure', 'data-puk-dialog-open', 'data-vis-build'];
 const DETAILS_RE = /<details[\s>]/i;
 const needsScript = html => INTERACTIVE.some(a => html.includes(a)) || DETAILS_RE.test(html);
-/* Interaktionskonzept: bis sechs Hauptpunkte sichtbar; darüber baut der Starter unter 760 px ein «Menü» (Dropdown-Menü, Profilentscheid 11.10.2026). */
-const NAV_MAX = 6;
+/* Interaktionskonzept: bis vier Hauptpunkte sichtbar; ab fünf bis 760 px ein «Menü» (Profilentscheid 17.10.2026). */
+const NAV_MAX = 4;
 /* Prüfbefund BD-01 (11.10.2026, WCAG 2.5.3): Der Name des Logo-Links beginnt mit dem sichtbaren Logotext (sender.institution) und nennt danach das Ziel. */
 const STATUS_DATE = /\b\d{1,2}\.\s?(?:\d{1,2}\.|(?:Januar|Februar|März|April|Mai|Juni|Juli|August|September|Oktober|November|Dezember))\s?\d{4}\b/;
 /* Name des Logo-Links: beginnt mit dem sichtbaren Logotext (WCAG 2.5.3); Wortlaut von der Fachstelle freigegeben 15.10.2026 (Paket 2026.10.2, P-7). */
@@ -316,7 +316,7 @@ function gate(cfg, files, opts = {}) {
     if (!navEl) add('block', pid, 'nav', 'Hauptnavigation fehlt');
     else {
       const links = all(navEl, x => x.tag === 'a'); const got = links.map(a => resolve(path, a.attrs.href).path);
-      if (links.length > NAV_MAX && !one(navEl, x => has(x, 'data-puk-disclosure'))) add('block', pid, 'nav-menu', `${links.length} Hauptpunkte ohne Menü – ab ${NAV_MAX + 1} Punkten braucht die Navigation unter 760 px ein Dropdown-Menü (Abschnitt «Interaktionskonzept»; tools/build.mjs erzeugt es)`);
+      if (links.length > NAV_MAX && !one(navEl, x => has(x, 'data-puk-disclosure'))) add('block', pid, 'nav-menu', `${links.length} Hauptpunkte ohne Menü – ab ${NAV_MAX + 1} Punkten braucht die Navigation bis 760 px ein Dropdown-Menü (Abschnitt «Interaktionskonzept»; tools/build.mjs erzeugt es)`);
       links.forEach(a => { const r = resolve(path, a.attrs.href); if (!exists(r.path)) add('block', pid, 'nav-target', 'Navigationsziel fehlt: ' + a.attrs.href); else if (byPath[r.path] && byPath[r.path].status !== 'published') add('block', pid, 'nav', 'Entwurf in der Navigation: ' + a.attrs.href); });
       if (got.join('|') !== navExp.join('|')) add('block', pid, 'nav', `Navigation weicht vom Seitenvertrag ab: ${got.join(', ') || 'leer'} statt ${navExp.join(', ')}`);
       const cur = links.filter(a => a.attrs['aria-current'] === 'page'); const inNav = navExp.includes(path);
@@ -481,7 +481,7 @@ const MUTATIONS = [
   /* Prüfbefunde 11.10.2026 (Website «Depression: Informationen für Angehörige») */
   ['Vertiefung ohne Interaktionsskript (Druck)', ['interaction-script'], (c, f) => rex(f, 'behandlung-verstehen.html', /<script src="[^"]*interaktion\.js[^"]*" defer><\/script>\n?/, '')],
   ['Name des Logo-Links ohne sichtbaren Logotext', ['logo-name'], (c, f) => rex(f, 'index.html', /(<a class="puk-web-logo"[^>]*aria-label=")[^"]*"/, '$1Startseite: Musterwebsite"')],
-  ['Mehr als sechs Hauptpunkte ohne Menü', ['nav-menu'], (c, f) => rep(f, 'index.html', '\n</ul></nav>', '\n<li><a class="puk-web-nav__link" href="index.html">A</a></li><li><a class="puk-web-nav__link" href="index.html">B</a></li><li><a class="puk-web-nav__link" href="index.html">C</a></li>\n</ul></nav>')],
+  ['Fünf Hauptpunkte ohne Menü', ['nav-menu'], (c, f) => rep(f, 'index.html', '\n</ul></nav>', '\n<li><a class="puk-web-nav__link" href="index.html">A</a></li>\n</ul></nav>')],
   ['Impressum und Datenschutzerklärung fehlen', ['legal'], c => { if (!c.legal) return false; delete c.legal; }],
   ['Link auf das Impressum fehlt in der Fusszeile', ['legal'], (c, f) => rex(f, 'behandlung-verstehen.html', /<p class="puk-web-footer__copy puk-site-legal" data-site-legal>[\s\S]*?<\/p>/, '')],
   ['404-Seite fehlt', ['not-found'], c => { const n = c.pages.length; c.pages = c.pages.filter(p => !isNotFound(p)); return c.pages.length < n; }],

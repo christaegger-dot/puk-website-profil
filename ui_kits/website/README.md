@@ -22,7 +22,7 @@ Sprungziele haben die Form `#<route>/<id>`, zum Beispiel `#grundlagenkapitel/ver
 ## Geprüfter Stand · 17.10.2026
 
 <!-- profil:stand -->
-Prüfskript `qa-9`, Kit-Referenz `r4-1`, Starter-Build `r4-12`. Die Kennungen werden aus `package.json` erzeugt.
+Prüfskript `qa-9`, Kit-Referenz `r4-2`, Starter-Build `r4-13`. Die Kennungen werden aus `package.json` erzeugt.
 <!-- /profil:stand -->
 
 - Matrix: 14 Ansichten × vier Breiten (320, 360, 768, 1440 px) × normale und doppelte Textgrösse = **112 Läufe, 0 mit Befund**.

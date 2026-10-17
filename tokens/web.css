@@ -1,5 +1,6 @@
-/* Webauftritt — 1:1 aus der ausgelieferten app.css des PUK-Webauftritts.
-   Die Basis ist 62.5 %, also 1rem = 10px; die Werte hier sind in px notiert.
+/* Herkunftswerte des PUK-Webauftritts aus dessen ausgelieferter app.css.
+   Dort ist die Basis 62.5 % (1rem = 10px); die Messwerte stehen hier in px.
+   Leseskala und Seitenrahmen darunter sind abgeleitete Regeln des Website-Profils.
    Gilt für Webseiten, nicht für Büromedien (dort Arial und pt). */
 :root{
   --web-root-scale:62.5%; /* @kind spacing */
@@ -25,13 +26,13 @@
   --web-btn-min-width-sm:118px; /* @kind spacing */
   --web-grid-gutter:40px; /* @kind spacing */
 
-  /* Systemprofil Website: responsive Hüllen um die gemessene Webskala.
-     Die Maximalwerte oben bleiben unverändert; clamp() verhindert, dass sie
-     auf schmalen Viewports überlaufen. Geometrie und Semantik sind in
+  /* Leseskala des Arbeitsprofils (17.10.2026): kleinere Seitentitel.
+     Die gemessenen Displaywerte oben bleiben als Herkunft stehen.
+     rem erhält die Schriftgrösse-Einstellung des Browsers. Geometrie und Semantik sind in
      templates/website/profile.json als verbindlichem Systemvertrag erfasst. */
-  --web-size-h1-fluid:clamp(44px,8vw,var(--web-size-h1)); /* @kind font */
-  --web-size-h2-fluid:clamp(32px,4.5vw,var(--web-size-h2)); /* @kind font */
-  --web-size-h3-fluid:clamp(26px,3vw,var(--web-size-h3)); /* @kind font */
+  --web-size-h1-fluid:clamp(2rem,1.5rem + 2.5vw,3.75rem); /* @kind font */
+  --web-size-h2-fluid:clamp(1.75rem,1.25rem + 2vw,2.75rem); /* @kind font */
+  --web-size-h3-fluid:clamp(1.5rem,1.125rem + 1vw,2rem); /* @kind font */
   --web-gutter-inline:clamp(20px,4vw,48px); /* @kind spacing */
   --web-section-space:clamp(56px,8vw,96px); /* @kind spacing */
   --web-container-max:1200px; /* @kind spacing */
@@ -48,7 +49,7 @@
 .puk-web-skip{position:absolute;z-index:100;top:8px;left:8px;padding:10px 14px;background:var(--puk-white);color:var(--puk-black-100);font-size:16px;font-weight:var(--fw-regular);transform:translateY(-160%)}
 .puk-web-skip:focus{transform:translateY(0)}
 .puk-web-header{border-bottom:1px solid var(--border-hairline)}
-.puk-web-header__inner{display:flex;align-items:center;justify-content:space-between;gap:20px 32px;padding-block:24px}
+.puk-web-header__inner{display:flex;align-items:center;justify-content:space-between;gap:var(--space-3) var(--space-8);padding-block:var(--space-4)}
 .puk-web-logo{display:block;flex:0 0 auto}
 .puk-web-logo img{width:var(--web-logo-width);display:block}
 .puk-web-nav__list{display:flex;align-items:center;flex-wrap:wrap;gap:4px 20px;margin:0;padding:0;list-style:none}
@@ -57,9 +58,10 @@
 .puk-web-nav__link[aria-current="page"]{color:var(--puk-blue-100);text-decoration:underline;text-decoration-thickness:2px}
 .puk-web-nav__link--emergency{color:var(--puk-blue-100)}
 .puk-web-main:focus{outline:none}
-.puk-web-hero{padding-block:var(--web-section-space) clamp(56px,6vw,80px)}
+.puk-web-hero{padding-block:clamp(2rem,4vw,3rem) clamp(2rem,3vw,2.5rem)}
 .puk-web-eyebrow{margin:0;color:var(--puk-black-75);font-size:14px;font-weight:var(--fw-regular);letter-spacing:.08em;text-transform:uppercase}
-.puk-web-h1{max-width:14ch;margin:24px 0 0;font-size:var(--web-size-h1-fluid);font-weight:var(--web-fw-body);line-height:var(--web-lh-heading);letter-spacing:-.02em;text-wrap:balance}
+.puk-web-h1{max-width:24ch;margin:var(--space-4) 0 0;font-size:var(--web-size-h1-fluid);font-weight:var(--web-fw-body);line-height:1.12;letter-spacing:normal;text-wrap:balance}
+.puk-web-h1:first-child{margin-top:0}
 .puk-web-h2{margin:0;font-size:var(--web-size-h2-fluid);font-weight:var(--web-fw-heading);line-height:1.05;letter-spacing:-.015em;text-wrap:balance}
 .puk-web-h3{margin:0;font-size:var(--web-size-h3-fluid);font-weight:var(--web-fw-heading);line-height:1.15;text-wrap:balance}
 .puk-web-lead{max-width:52ch;margin:28px 0 0;font-size:var(--web-size-lead);font-weight:var(--web-fw-body);line-height:var(--web-lh-body);text-wrap:pretty}
@@ -80,7 +82,7 @@
 
 @media (max-width:760px){
   .puk-web-page,.puk-web-footer{font-size:19px}
-  .puk-web-header__inner{align-items:flex-start;flex-direction:column}
+  .puk-web-header__inner{align-items:flex-start;flex-direction:column;padding-block:var(--space-3);gap:var(--space-2)}
   .puk-web-nav{width:100%}
   .puk-web-nav__list{display:grid;grid-template-columns:repeat(auto-fit,minmax(132px,1fr));gap:2px 12px}
   .puk-web-nav__link{border-top:1px solid var(--border-hairline)}

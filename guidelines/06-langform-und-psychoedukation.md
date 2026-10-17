@@ -7,6 +7,7 @@ liegt in `tokens/web-longform.css`.
 
 ## Erkenntnisweg
 
+- **MUSS:** Neue Startseiten mit ausgewogenem Titel, kurzer Einleitung und einem frühen hilfreichen Einstiegslink planen; [Einstieg und Seitenrahmen](08-einstieg-und-seitenrahmen.md) vor dem Bau lesen. Nachrangige Hinweise folgen dem Einstieg.
 - **SOLL:** Die Seite als nachvollziehbaren Weg planen, häufig Orientierung → Verständnis →
   Vertiefung → Alltagsbezug → Handlungsmöglichkeiten. Die Folge ist nicht starr.
 - **MUSS:** Ein dringlicher Hauptzweck steht vor der Langformerklärung. (Profilentscheid 06.10.2026: Krisenorientierung ist nicht Aufgabe
@@ -74,7 +75,7 @@ liegt in `tokens/web-longform.css`.
 ```
 
 - **Begriffslisten** (Begriff und Erklärung, Situation und Beispiel) als `dl` im Fliesstext; das Profil setzt den Begriff hervor und die Erklärung ohne Einzug. Mehr als sechs Einträge sind ein Hinweis auf eine Textwand: kürzen oder gliedern.
-- **Verweis im Text** nach einer Handlungsanleitung für akute Lagen: nur der Platzhalter `<p data-responsibility-inline></p>`, direkt nach der Anleitung, im Fliesstext (Regeln im README, Abschnitt «Zuständigkeit»).
+- **Verweis im Text** nach einer Handlungsanleitung für akute Lagen: thematisch bewusst wählen, nicht automatisch ergänzen. Für einen konfigurierten gemeinsamen Wortlaut steht `<p data-responsibility-inline></p>` zur Verfügung (Regeln im README, Abschnitt «Telefonnummern und Kriseninformationen»).
 
 ## Fachlichkeit und Sicherheit
 

@@ -3,10 +3,11 @@
    templates/website/longform-pattern.json dokumentiert. */
 
 .puk-longform{background:var(--surface-page);color:var(--text-default)}
-.puk-longform__hero{padding-block:clamp(48px,7vw,88px) clamp(40px,6vw,72px)}
-.puk-longform__hero .puk-web-h1{max-width:16ch}
-.puk-longform__intro{max-width:62ch;margin:var(--space-6) 0 0;font-size:clamp(21px,2.1vw,var(--web-size-lead));line-height:1.35}
-.puk-longform__boundary{max-width:72ch;margin:var(--space-6) 0 0;padding:var(--space-4) var(--space-5);border-left:3px solid var(--puk-blue-100);background:var(--status-info-bg);font-size:16px;font-weight:var(--fw-regular)}
+.puk-longform__hero{padding-block:clamp(2rem,4vw,3rem) clamp(2rem,3vw,2.5rem)}
+.puk-longform__hero .puk-web-h1{max-width:24ch}
+.puk-longform__intro{max-width:62ch;margin:var(--space-5) 0 0;font-size:clamp(1.25rem,1.125rem + .5vw,1.5rem);line-height:1.45}
+.puk-longform__hero .puk-web-actions{margin-top:var(--space-6)}
+.puk-longform__boundary{max-width:68ch;margin:var(--space-4) 0 0;font-size:1rem;font-weight:var(--fw-regular);line-height:1.5;color:var(--text-muted)}
 
 .puk-longform__roadmap{padding-block:var(--space-6);border-block:1px solid var(--border-hairline)}
 .puk-longform__roadmap-label{margin:0 0 var(--space-3);font-size:14px;font-weight:var(--fw-medium);letter-spacing:.06em;text-transform:uppercase}
