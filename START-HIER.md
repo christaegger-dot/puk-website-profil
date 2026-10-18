@@ -1,7 +1,7 @@
 # PUK Website-Profil · Start
 
 <!-- profil:stand -->
-**Version 2026.10.6 · Stand 17.10.2026.** Verbindlich ist dieses Repository. [Prüfbericht](PRUEFBERICHT.md) und [Abschlussentscheide](ABSCHLUSSENTSCHEIDE.md) dokumentieren den abgeschlossenen Profilstand.
+**Version 2026.10.7 · Stand 18.10.2026.** Verbindlich ist dieses Repository. [Prüfbericht](PRUEFBERICHT.md) und [Abschlussentscheide](ABSCHLUSSENTSCHEIDE.md) dokumentieren den abgeschlossenen Profilstand.
 <!-- /profil:stand -->
 
 ## Einrichten
@@ -78,6 +78,6 @@ npm run check:package
 
 `generieren` aktualisiert Einzel- und Sammeltypen, Standangaben, Versionsmetadaten und Musterübersichten. `check:generated` prüft dieselben Ausgaben ohne Schreibzugriff. Generierte Dateien nicht von Hand bearbeiten.
 
-GitHub führt die Prüfungen bei jedem Push und Pull Request aus. Die Aktion «Profil prüfen» lässt sich auch manuell starten. Sie prüft zuerst, ob die eingecheckten Ableitungen aktuell sind, und danach Build, Tests, UI-Matrix und Paket. Der UI-Bericht wird als Laufartefakt aufbewahrt. Lokal steht er unter `out-pruefung/ui-matrix.json`.
+GitHub führt die Prüfungen bei jedem Push und Pull Request aus. Die Aktion «Profil prüfen» lässt sich auch manuell starten. Sie prüft zuerst, ob die eingecheckten Ableitungen aktuell sind, und danach Build, Tests, UI-Matrix und Paket. `npm run check:docs` prüft die lokalen Dateiziele aktiver Markdown-Anleitungen und läuft auch vor Tests und Paketbau; der versionierte Matrixverweis wird automatisch erzeugt. Der UI-Bericht wird als Laufartefakt aufbewahrt. Lokal steht er unter `out-pruefung/ui-matrix.json`.
 
 Die Paketbenennung und Zeitstempel stammen aus `package.json`. Der Generator schliesst Archiv, Abhängigkeiten, neue Website-Projekte und lokale Arbeitsausgaben aus. Historische Berichte sind abgeschlossene Quellen; keine private Artefakt-Synchronisierung oder externe Abnahme bleibt für diesen technischen Profilstand offen.

@@ -1,13 +1,14 @@
 {
   "name": "puk-website-profil",
   "private": true,
-  "version": "2026.10.6",
+  "version": "2026.10.7",
   "engines": {
     "node": ">=20"
   },
   "scripts": {
     "generieren": "node tools/generieren.mjs",
     "check:generated": "node tools/generieren.mjs --check",
+    "check:docs": "node tools/pruefe-dokumentation.mjs",
     "neu": "node tools/neue-website.mjs",
     "vorschau": "node tools/vorschau.mjs",
     "build:components": "node quellcode/komponenten/build.mjs components/bundle.js",
@@ -19,10 +20,10 @@
     "export": "node templates/website/psychoeducation-site-starter/tools/export.mjs",
     "build": "npm run generieren && npm run build:components && npm run build:starter && npm run build:minimal && npm run build:example",
     "test:types": "tsc -p tests/tsconfig.json",
-    "test": "npm run check:generated && npm run test:types && node --test tests/*.test.mjs",
+    "test": "npm run check:generated && npm run check:docs && npm run test:types && node --test tests/*.test.mjs",
     "test:ui": "node tools/pruefe-ui.mjs",
-    "package": "python3 tools/paket.py",
-    "check:package": "python3 tools/paket.py --check"
+    "package": "npm run check:docs && python3 tools/paket.py",
+    "check:package": "npm run check:docs && python3 tools/paket.py --check"
   },
   "devDependencies": {
     "@types/react": "18.3.31",
@@ -31,8 +32,8 @@
     "typescript": "5.9.3"
   },
   "pukProfil": {
-    "stand": "2026-10-17",
-    "starterBuild": "r4-13",
+    "stand": "2026-10-18",
+    "starterBuild": "r4-14",
     "kitBuild": "r4-2",
     "qaRevision": "qa-9"
   }

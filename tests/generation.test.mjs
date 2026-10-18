@@ -27,7 +27,7 @@ test('Eine Änderung der Typquelle wird erkannt und in beide Ausgaben übernomme
 
 test('Eine Profiländerung aktualisiert Standangaben, Build und Paketnamen aus einer Quelle', async t => {
   const dir = fixture(t), file = path.join(dir,'package.json'), pkg = JSON.parse(fs.readFileSync(file));
-  pkg.version='2026.10.99'; pkg.pukProfil.starterBuild='r4-99'; pkg.pukProfil.qaRevision='qa-99';
+  pkg.version='2026.10.99'; pkg.pukProfil.starterBuild='r4-99'; pkg.pukProfil.qaRevision='qa-99'; pkg.pukProfil.stand='2026-10-31';
   fs.writeFileSync(file,JSON.stringify(pkg));
   await assert.rejects(generieren({root:dir,check:true}),/Veraltete generierte Dateien/);
   await generieren({root:dir});
@@ -38,6 +38,8 @@ test('Eine Profiländerung aktualisiert Standangaben, Build und Paketnamen aus e
   assert.match(fs.readFileSync(path.join(dir,'index.html'),'utf8'),/Profil 2026\.10\.99/);
   assert.match(fs.readFileSync(path.join(dir,'templates/website/psychoeducation-site-starter/tools/contract.js'),'utf8'),/BUILD = 'r4-99'/);
   assert.match(fs.readFileSync(path.join(dir,'ui_kits/website/qa.html'),'utf8'),/qa-99/);
+  assert.match(fs.readFileSync(path.join(dir,'ui_kits/website/README.md'),'utf8'),/ui-matrix-2026\.10\.99\.json/);
+  assert.match(fs.readFileSync(path.join(dir,'ui_kits/website/README.md'),'utf8'),/Geprüfter Stand · 31\.10\.2026/);
   await generieren({root:dir,check:true});
 });
 
