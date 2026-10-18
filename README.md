@@ -3,7 +3,7 @@ Website-Profil der **Psychiatrischen Universitätsklinik Zürich (PUK)** für We
 ## Verbindlichkeit und Version
 
 <!-- profil:stand -->
-**Fachstellen-Profil 2026.10.6** · Stand 17.10.2026 · offene Projektpendenzen: 0. Basis: PUK Zürich Design System 1.10.1 und PUK Website Kit 1.10.1-r4. Vier Ebenen – bei Widerspruch gilt die obere:
+**Fachstellen-Profil 2026.10.7** · Stand 18.10.2026 · offene Projektpendenzen: 0. Basis: PUK Zürich Design System 1.10.1 und PUK Website Kit 1.10.1-r4. Vier Ebenen – bei Widerspruch gilt die obere:
 <!-- /profil:stand -->
 
 | Ebene | Umfasst | Erkennbar an | Ändern darf |
@@ -153,9 +153,10 @@ Website-Profil der **Psychiatrischen Universitätsklinik Zürich (PUK)** für We
 - `components/`, `tokens/`, `assets/`, `fonts/`: 26 React-Komponenten, statische HTML-Interaktionen, Gestaltungswerte und lokale Originaldateien.
 - `quellcode/komponenten/src/components/`: einzige Typquelle. `npm run generieren` erzeugt die Einzeldateien in `components/` und die Sammeldeklaration. `quellcode/profil/` enthält Quellen für Startseite und Musterauswahl.
 - `package.json`: einzige Quelle der Profilversion und Build-Stände; `package-lock.json` legt die Entwicklungsabhängigkeiten fest. `npm run check:generated` erkennt veraltete Ableitungen, ohne Dateien zu ändern.
+- `npm run check:docs` prüft lokale Dateiziele in den aktiven Markdown-Anleitungen. Der Matrixverweis im UI-Kit entsteht aus der Profilversion; fehlende Nachweise stoppen Tests und Paketbau. Archive, Codebeispiele und externe Adressen werden dabei nicht als aktuelle lokale Dateiziele behandelt.
 - GitHub prüft bei Push, Pull Request und manuellem Start automatisch die Ableitungen, den Build, die Typen, die Tests, die vollständige UI-Matrix und das Paket. Die bisherige Beschreibungskontrolle für offene Prüfstufen bleibt zusätzlich erhalten.
 <!-- profil:paket -->
-- `tools/paket.py`: reproduzierbares Paket [puk-website-profil-2026.10.6.zip](https://github.com/christaegger-dot/puk-website-profil/raw/refs/heads/main/puk-website-profil-2026.10.6.zip) mit [SHA-256-Datei](https://github.com/christaegger-dot/puk-website-profil/raw/refs/heads/main/puk-website-profil-2026.10.6.zip.sha256). Archiv, Projekte unter `websites/` und lokale Arbeitsausgaben sind nicht enthalten.
+- `tools/paket.py`: reproduzierbares Paket [puk-website-profil-2026.10.7.zip](https://github.com/christaegger-dot/puk-website-profil/raw/refs/heads/main/puk-website-profil-2026.10.7.zip) mit [SHA-256-Datei](https://github.com/christaegger-dot/puk-website-profil/raw/refs/heads/main/puk-website-profil-2026.10.7.zip.sha256). Archiv, Projekte unter `websites/` und lokale Arbeitsausgaben sind nicht enthalten.
 <!-- /profil:paket -->
 - Der Exporter schreibt in einen neuen oder erkennbaren Exportordner. Erst nach vollständiger Prüfung ersetzt er den vorherigen Export. Fremde Dateien werden nicht überschrieben. Eine Website zu exportieren veröffentlicht sie nicht.
 

@@ -61,6 +61,7 @@ export async function sollDateien(root = ROOT) {
     'ui_kits/website/README.md': `Prüfskript \`${meta.qaRevision}\`, Kit-Referenz \`${meta.kitBuild}\`, Starter-Build \`${meta.starterBuild}\`. Die Kennungen werden aus \`package.json\` erzeugt.`
   };
   for (const [p, text] of Object.entries(docs)) outputs.set(p, region(await read(p), 'stand', text));
+  outputs.set('ui_kits/website/README.md', region(outputs.get('ui_kits/website/README.md'), 'ui-nachweise', `Nachweise: [Matrixdaten](../../tests/ergebnisse/ui-matrix-${meta.version}.json), [aktueller Prüfbericht](../../PRUEFBERICHT.md). Frühere Protokolle sind [archivierte Historie](https://github.com/christaegger-dot/puk-website-profil/blob/main/archiv/README.md), keine aktuellen Prüfnachweise oder offenen Pendenzen.`).replace(/^## Geprüfter Stand · \d{2}\.\d{2}\.\d{4}$/m, `## Geprüfter Stand · ${meta.datum}`));
   const download = 'https://github.com/christaegger-dot/puk-website-profil/raw/refs/heads/main/';
   outputs.set('README.md', region(outputs.get('README.md'), 'paket', `- \`tools/paket.py\`: reproduzierbares Paket [${meta.paket}](${download}${meta.paket}) mit [SHA-256-Datei](${download}${meta.paket}.sha256). Archiv, Projekte unter \`websites/\` und lokale Arbeitsausgaben sind nicht enthalten.`));
   const indexTemplate = await read('quellcode/profil/index.html');

@@ -1,7 +1,7 @@
 # Abschlussentscheide · 17.10.2026
 
 <!-- profil:stand -->
-**Profil 2026.10.6 abgeschlossen · Stand 17.10.2026. Offene Projektpendenzen: 0.**
+**Profil 2026.10.7 abgeschlossen · Stand 18.10.2026. Offene Projektpendenzen: 0.**
 <!-- /profil:stand -->
 
 | Bisherige Aufgabe oder Unklarheit | Abschlussentscheid | Status |
@@ -40,5 +40,9 @@
 Der Nutzerauftrag vom 17.10.2026 ergänzt das Profil um die Erfahrungen aus der Überarbeitung der Websites. Regeln und Herkunft sind in [Einstieg und Seitenrahmen](guidelines/08-einstieg-und-seitenrahmen.md) festgehalten. Die Leseskala begrenzt neue Seitentitel bei Standardschrift auf 60 px, Kopf und Einleitung erhalten kompaktere Abstände, das schmale Menü greift ab fünf Hauptpunkten, und alle drei Startvorlagen zeigen einen frühen hilfreichen Einstieg. Ergänzende Hinweise erscheinen danach in ruhiger Gestaltung. Die bewusste Kontaktauswahl und die lesbare Fusszeile bleiben Teil des Standards.
 
 Gezielte Browserprüfungen sichern lange deutsche Titel, fünf Navigationspunkte, vergrösserte Schrift, Skriptverzicht, Tastaturbedienung und die drei Einstiegslinks ab. Die Prüfliste verlangt zusätzlich eine visuelle Beurteilung des ersten Bildschirms. Bestehende Websites werden durch diese Profiländerung nicht erneut geändert oder veröffentlicht. Der dokumentierte Sonderentscheid zur Gestaltung der Rechtswebsite bleibt bestehen.
+
+## Nachweislinks · Korrektur vom 18.10.2026
+
+Der Matrixverweis in der UI-Kit-Anleitung wird wie die übrigen Versionsmetadaten aus `package.json` erzeugt. Tests und Paketbau prüfen die lokalen Dateiziele aktueller Markdown-Anleitungen. Frühere Pakete und Matrixdaten bleiben unverändert im Archiv. Die Nachprüfung ändert keine Gestaltungswerte, klinischen Aussagen oder Freigabegrenzen.
 
 Eingabeparameter der leeren Vorlagen sind keine offenen Projektaufgaben. Der Produktionsschutz bleibt aktiv. Alle Entscheide gelten für diesen abgeschlossenen Profilstand; es gibt keinen zurückgestellten Backlog. Die Nachweise stehen im [Prüfbericht](PRUEFBERICHT.md).
