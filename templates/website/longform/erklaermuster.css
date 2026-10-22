@@ -127,3 +127,5 @@
   .puk-vis-figure[data-print-split] .puk-vis-build__steps>li+li{margin-top:var(--space-4)}
   .puk-vis-balance{max-width:720px}
 }
+/* Getönte Flächen: Links und Akzent in Blau 125 (Profilentscheid 22.10.2026). */
+.puk-vis-balance__hold,.puk-vis-layers__zone--below{--text-link:var(--text-link-on-tint);--text-accent:var(--text-link-on-tint)}

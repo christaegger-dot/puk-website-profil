@@ -22,6 +22,8 @@ export function Alert({ title, children, tone = 'info', style }) {
         background: t.bg,
         border: '1px solid ' + t.border,
         color: t.fg,
+        /* Getönte Flächen: Links und Akzent in Blau 125 (Profilentscheid 22.10.2026). */
+        ...(tone === 'emergency' ? null : { '--text-link': 'var(--text-link-on-tint)', '--text-accent': 'var(--text-link-on-tint)' }),
         ...style,
       }}
     >

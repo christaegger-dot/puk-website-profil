@@ -6,7 +6,7 @@ _Herkunft: konsolidiert aus den Einzelleitlinien des PUK Zürich Design Systems 
 
 ## Display und Titel
 
-Rubik Light 300 für Display- und Titelgrade.
+Rubik Light 300 für Display- und Titelgrade. Website-Titel `.puk-web-h1` und `.puk-web-h2` stehen in Medium 500 (Profilentscheid 22.10.2026, unten).
 
 - **Einsatz:** Grosse Titel und Leads.
 - **Pflicht:** Satzschreibung, keine Versaltitel.
@@ -75,3 +75,10 @@ Datum, Version und Designherkunft dürfen ausdrücklich als Metadaten mit `type-
 ## Profilentscheid 17.10.2026: Seitentitel und erster Bildschirm
 
 Die Leseskala ersetzt die Display-Skala als Standard der fluiden Webüberschriften. H1 erhalten natürliche Laufweite, Zeilenhöhe 1,12 und bis zu 24 ch Breite. Titel bleiben auch bei längeren deutschen Wörtern und 200 % Schrift vollständig lesbar. Kompakte Kopf- und Einleitungsabstände schaffen Platz für den ersten hilfreichen Schritt. Die konkreten Regeln, ihre Herkunft und die visuelle Prüfliste stehen unter [Einstieg und Seitenrahmen](08-einstieg-und-seitenrahmen.md).
+
+## Profilentscheid 22.10.2026: Website-Titel in Rubik Medium
+
+- **Entscheid:** Die Website-Titel `.puk-web-h1` und `.puk-web-h2` stehen in Rubik Medium 500 (`--web-fw-title`). H3, die UI-Skala `--type-title-*` und der Messwert `--web-fw-heading` 400 bleiben unverändert.
+- **Einordnung:** Gekennzeichnete Abweichung vom CD Manual, das Light und Regular für Text nennt. Profilentscheid der Fachstelle; keine von der PUK-Kommunikation freigegebene CI-Variante.
+- **Grenzen:** Medium bleibt kein Lauftextschnitt; «nie fett» gilt weiter. Medium läuft breiter als Light: Titel bei 320 px und 200 % Schrift weiterhin visuell prüfen (Abschnitt [Einstieg und Seitenrahmen](08-einstieg-und-seitenrahmen.md)).
+- **Herkunft:** [ENTSCHEIDE-PROFIL-2026-10-8.md](../ENTSCHEIDE-PROFIL-2026-10-8.md).

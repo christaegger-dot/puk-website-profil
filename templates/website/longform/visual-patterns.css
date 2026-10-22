@@ -195,3 +195,5 @@
   .puk-vis-figure[data-print-split] .puk-vis-path>li::before{left:11px;right:auto;top:24px;bottom:0;border-top:0;border-left:2px solid var(--puk-blue-100)}
   .puk-vis-figure[data-print-split] .puk-vis-path>li.puk-vis-path--optional::before{border-left-style:dashed}
 }
+/* Getönte Flächen: Links und Akzent in Blau 125 (Profilentscheid 22.10.2026). */
+.puk-vis-figure,.puk-vis-illu,.puk-vis-plan thead th{--text-link:var(--text-link-on-tint);--text-accent:var(--text-link-on-tint)}

@@ -9,7 +9,7 @@ _Herkunft: konsolidiert aus den Einzelleitlinien des PUK Zürich Design Systems 
 Hausfarbe Blau `#3C64FF` mit den Stufen 75, 50 und 25; sämtliche Schattierungen sind zulässig.
 
 - **Einsatz:** Akzent, Links, ein blaues Feld pro Komposition.
-- **Pflicht:** Blau als Textfarbe nur ausnahmsweise; Blau 75 ist nicht textfähig.
+- **Pflicht:** Blau als Textfarbe nur ausnahmsweise; Blau 75 ist nicht textfähig. Auf Flächen ausser Weiss Links und Akzenttext in Blau 125 (`--text-link-on-tint`).
 - **Vermeiden:** Blau als Hintergrund für ganze Seiten oder mehrere Felder nebeneinander.
 
 ## Schwarz und Weiss
@@ -41,7 +41,7 @@ Zuordnung der Hausfarben zu Oberflächenrollen (`--text-*`, `--surface-*`, `--bo
 Gemessene Kontrastverhältnisse der Hausfarben, getrennt nach Lauftext (4,5:1), Grosstext (3:1) und Bedienelementen/Grafik (3:1).
 
 - **Einsatz:** Vor jeder Farbwahl für Text auf farbigem Grund.
-- **Pflicht:** Fehlertext und Pflichtsterne in `--text-danger`; auf hellblauem Grund bleibt Text schwarz.
+- **Pflicht:** Fehlertext und Pflichtsterne in `--text-danger`; auf hellblauem Grund bleibt Text schwarz. Auf jeder Fläche ausser Weiss kein Text unter 24 px in Blau 100; Links dort in `--text-link-on-tint`.
 - **Vermeiden:** Schwarz 50, Blau 75, Gelb oder Signalrot als Textfarbe; `--text-large-only` für Lauftext.
 - **Status:** Werte gemessen und nicht verhandelbar; WCAG-Grundlage ist eine Ergänzung zum Manual.
 
@@ -50,7 +50,7 @@ Gemessene Kontrastverhältnisse der Hausfarben, getrennt nach Lauftext (4,5:1), 
 «Es sind sämtliche Schattierungen der jeweiligen Grundfarbe zulässig»: Die Stufen 100/75/50/25 sind Bezugspunkte, keine Grenze.
 
 - **Einsatz:** Wenn eine Zwischenstufe nötig ist, etwa für Flächen oder Hover.
-- **Pflicht:** Zwischenstufen als benanntes Primitiv anlegen (Beispiele: `--ui-wash`, `--puk-blue-125`).
+- **Pflicht:** Zwischenstufen als benanntes Primitiv anlegen (Beispiele: `--ui-wash`, `--ui-tint`, `--puk-blue-125`).
 - **Vermeiden:** Feste Hexwerte direkt in Komponenten; Mischungen aus zwei Hausfarben.
 
 ## Arbeitspalette
@@ -60,6 +60,26 @@ Die Arbeitspalette begrenzt die Farbfreiheit der Marke bewusst für eine konkret
 - **Einsatz:** Zu Beginn jeder grösseren Website die verwendeten Stufen festlegen, besonders wenn mehrere Illustrationen oder Erklärmuster eigene Schattierungen brauchen.
 - **Pflicht:** Nur Schattierungen der Hausfarben; Signalfarben punktuell.
 - **Status:** Arbeitsmethode des Systems; Zwischenstufen als benanntes Primitiv anlegen, nie zwei Hausfarben mischen.
+
+## Profilentscheid 22.10.2026: getönte Fläche und Links darauf
+
+- **Fläche:** `--ui-tint` `#F5F7FF`, PUK-Blau rund 5 % auf Weiss, als `--surface-tint` für Einstieg, Einstiegskarten, Kästen, verwandte Themen und Fusszeile. Weiss bleibt die Seitenfläche. Gegen Weiss 1,07:1: Die Fläche gliedert, sie trägt keine Bedeutung.
+- **Text darauf:** `--text-default` 14,87:1, `--text-muted` 5,53:1. `--text-large-only` 2,98:1 nur für Rahmen und Deaktiviertes.
+- **Auflage:** Auf jeder Fläche ausser Weiss steht kein Text unter 24 px in Blau 100. Links und Akzenttext stehen dort in `--text-link-on-tint` (Blau 125).
+
+| Fläche | Blau 100 | Blau 125 |
+| --- | --- | --- |
+| `--ui-tint` #F5F7FF | 4,40:1 | 5,95:1 |
+| `--ui-wash` #F4F4F4 | 4,28:1 | 5,79:1 |
+| `--ui-field` #F0F3FF | 4,25:1 | 5,75:1 |
+| `--surface-structure` #F7F7F7 | 4,40:1 | 5,94:1 |
+| `--puk-yellow-50` #F8F5CB | 4,24:1 | 5,74:1 |
+| `--ui-danger-wash` #FBEAE7 | 4,04:1 | 5,47:1 |
+| `--puk-blue-25` #D8E0FF | 3,59:1 | 4,86:1 |
+
+- **Umsetzung:** Die getönten Flächen des Profils (Langform, Erklär- und Visualisierungsmuster, Starter, Anwendungen, `Card` sunken, `Alert` ausser emergency) setzen `--text-link` und `--text-accent` auf `--text-link-on-tint`. Eigene Flächen erhalten dasselbe mit `data-puk-surface`; `data-puk-surface="tint"` setzt zusätzlich die Fläche.
+- **Folge:** Besuchte und unbesuchte Links sind auf getönten Flächen gleich gefärbt. Unterstreichung und Hover in Schwarz bleiben. Im Theme «Hoher Kontrast» gilt Blau 125 #001F99.
+- **Herkunft:** [ENTSCHEIDE-PROFIL-2026-10-8.md](../ENTSCHEIDE-PROFIL-2026-10-8.md).
 
 ## Druckfarben
 

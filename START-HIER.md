@@ -1,7 +1,7 @@
 # PUK Website-Profil · Start
 
 <!-- profil:stand -->
-**Version 2026.10.7 · Stand 18.10.2026.** Verbindlich ist dieses Repository. [Prüfbericht](PRUEFBERICHT.md) und [Abschlussentscheide](ABSCHLUSSENTSCHEIDE.md) dokumentieren den abgeschlossenen Profilstand.
+**Version 2026.10.8 · Stand 22.10.2026.** Verbindlich ist dieses Repository. [Prüfbericht](PRUEFBERICHT.md) und [Abschlussentscheide](ABSCHLUSSENTSCHEIDE.md) dokumentieren den abgeschlossenen Profilstand.
 <!-- /profil:stand -->
 
 ## Einrichten

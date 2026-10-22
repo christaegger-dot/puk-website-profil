@@ -65,6 +65,10 @@
      Bildschirm feinere Werte braucht als der Druck — und sind benannt, weil
      sie in jeder Oberfläche wiederkehren. Weitere nach Bedarf frei bilden. */
   --ui-field:#F0F3FF;     /* Platzhalter-, Bild- und Eingabefelder */
+  /* Getönte Fläche, PUK-Blau rund 5 % (Profilentscheid 22.10.2026): Einstieg,
+     Einstiegskarten, Kästen, Fusszeile. Hellste benannte Blauschattierung.
+     Gegen Weiss 1,07:1, darum nur Gliederung, keine Bedeutung. */
+  --ui-tint:#F5F7FF;
   --ui-hairline:#E9E9E9;  /* Haarlinien, Trennlinien, Switch aus */
   --ui-wash:#F4F4F4;      /* Hover-Fläche, versenkte Fläche, Seitengrund */
   --ui-danger-wash:#FBEAE7; /* Warnfläche hinter Alert und Toast */
@@ -89,6 +93,10 @@
   --text-link:var(--puk-blue-100); /* @kind color */
   --text-link-hover:var(--puk-black-100); /* @kind color */
   --text-link-visited:var(--puk-blue-125); /* @kind color */
+  /* Links und Akzenttext auf jeder Fläche ausser Weiss (Profilentscheid
+     22.10.2026). Blau 100 erreicht dort nur 3,59–4,40:1, Blau 125 4,86–5,95:1.
+     Getönte Flächen setzen --text-link und --text-accent auf diesen Wert. */
+  --text-link-on-tint:var(--puk-blue-125); /* @kind color */
   --text-danger:var(--puk-red-text); /* @kind color */
 
   --surface-page:var(--puk-white);
@@ -96,6 +104,7 @@
   --surface-sunken:var(--ui-wash);
   --surface-diagram:var(--surface-structure);
   --surface-accent:var(--ui-field);
+  --surface-tint:var(--ui-tint);
   --surface-inverse:var(--puk-black-100);
   --surface-brand:var(--puk-blue-100);
 
@@ -133,7 +142,7 @@
 }
 
 /* ==== tokens/typography.css ==== */
-/* Typografie — Rubik Light & Regular, Medium nur für UI-Betonung.
+/* Typografie — Rubik Light & Regular, Medium für UI-Betonung und Website-Titel h1/h2 (22.10.2026).
    Webprofil: nur Bildschirmgrade. Büro- und Druckleitern der Elternversion
    sind bewusst nicht enthalten. */
 :root{
@@ -275,6 +284,11 @@
   --web-lh-heading:1; /* @kind font */
   --web-fw-body:300; /* @kind font */
   --web-fw-heading:400; /* @kind font */
+  /* Website-Titel h1 und h2 in Rubik Medium (Profilentscheid 22.10.2026).
+     Gekennzeichnete Abweichung: Das CD Manual nennt Light und Regular für
+     Text; keine von der PUK-Kommunikation freigegebene CI-Variante. h3 und
+     der Messwert --web-fw-heading bleiben Regular. */
+  --web-fw-title:500; /* @kind font */
 
   --web-radius-btn:5px; /* @kind radius */
   --web-radius-btn-lg:3px; /* @kind radius */
@@ -319,14 +333,15 @@
 .puk-web-main:focus{outline:none}
 .puk-web-hero{padding-block:clamp(2rem,4vw,3rem) clamp(2rem,3vw,2.5rem)}
 .puk-web-eyebrow{margin:0;color:var(--puk-black-75);font-size:14px;font-weight:var(--fw-regular);letter-spacing:.08em;text-transform:uppercase}
-.puk-web-h1{max-width:24ch;margin:var(--space-4) 0 0;font-size:var(--web-size-h1-fluid);font-weight:var(--web-fw-body);line-height:1.12;letter-spacing:normal;text-wrap:balance}
+.puk-web-h1{max-width:24ch;margin:var(--space-4) 0 0;font-size:var(--web-size-h1-fluid);font-weight:var(--web-fw-title);line-height:1.12;letter-spacing:normal;text-wrap:balance}
 .puk-web-h1:first-child{margin-top:0}
-.puk-web-h2{margin:0;font-size:var(--web-size-h2-fluid);font-weight:var(--web-fw-heading);line-height:1.05;letter-spacing:-.015em;text-wrap:balance}
+.puk-web-h2{margin:0;font-size:var(--web-size-h2-fluid);font-weight:var(--web-fw-title);line-height:1.05;letter-spacing:-.015em;text-wrap:balance}
 .puk-web-h3{margin:0;font-size:var(--web-size-h3-fluid);font-weight:var(--web-fw-heading);line-height:1.15;text-wrap:balance}
 .puk-web-lead{max-width:52ch;margin:28px 0 0;font-size:var(--web-size-lead);font-weight:var(--web-fw-body);line-height:var(--web-lh-body);text-wrap:pretty}
 .puk-web-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px}
 .puk-web-section{padding-block:clamp(56px,7vw,80px)}
 .puk-web-media{aspect-ratio:16/9;background:var(--ui-field);outline:1px dashed var(--puk-blue-50);outline-offset:-1px;display:flex;align-items:flex-end;padding:16px;color:var(--puk-black-100);font-size:12px;font-weight:var(--fw-regular);letter-spacing:.08em;text-transform:uppercase}
+.puk-web-media{--text-link:var(--text-link-on-tint);--text-accent:var(--text-link-on-tint)}
 .puk-web-card-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:20px;margin:32px 0 0;padding:0;list-style:none}
 .puk-web-card-list>li{display:flex;min-width:0}
 .puk-web-band{padding-block:64px;background:var(--puk-blue-100);color:var(--puk-white)}
@@ -372,6 +387,12 @@ a:hover{color:var(--text-link-hover)}
 [data-puk-link]:focus-visible{text-decoration:underline}
 [data-puk-link][aria-current="page"]{color:var(--text-default);text-decoration:underline;text-decoration-thickness:2px}
 [data-puk-link="standalone"]{font-weight:var(--fw-medium)}
+/* ---- Getönte Flächen (Profilentscheid 22.10.2026) ----
+   Auf jeder Fläche ausser Weiss steht kein Text unter 24 px in Blau 100.
+   Links und Akzenttext wechseln dort auf --text-link-on-tint (Blau 125).
+   data-puk-surface="tint" setzt zusätzlich die getönte Fläche. */
+[data-puk-surface]{--text-link:var(--text-link-on-tint);--text-accent:var(--text-link-on-tint)}
+[data-puk-surface="tint"]{background:var(--surface-tint)}
 [data-puk-sr-only]{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap}
 *,*::before,*::after{box-sizing:border-box}
 /* ---- Fokus ----
@@ -470,6 +491,8 @@ a:hover{color:var(--text-link-hover)}
 .puk-longform__sources li{padding-block:var(--space-4);border-top:1px solid var(--border-hairline)}
 .puk-longform__source-use{display:block;margin-top:var(--space-2);font-size:15px;color:var(--text-muted)}
 .puk-longform__support{padding:clamp(24px,5vw,48px);border-top:4px solid var(--puk-blue-100);background:var(--surface-sunken)}
+/* Getönte Flächen der Langform: Links und Akzent in Blau 125 (Profilentscheid 22.10.2026). */
+.puk-longform__term-guide>div,.puk-longform__figure,.puk-longform__reflection,.puk-longform__support{--text-link:var(--text-link-on-tint);--text-accent:var(--text-link-on-tint)}
 .puk-longform__support h3{margin-top:0}
 
 /* Inline-Satzlink und eigenständige Aktion sind absichtlich getrennte
@@ -724,7 +747,7 @@ html.puk-scroll-lock{overflow:hidden}
       Im Druck: alle Einträge und das Verzeichnis, ohne Feld, Trefferliste und Hinweise. */
 :where(section,h2,h3,h4)[tabindex="-1"]:focus{outline:none;box-shadow:var(--focus-ring);border-radius:var(--radius-sm)}
 @media (forced-colors:active){:where(section,h2,h3,h4)[tabindex="-1"]:focus{outline:2px solid CanvasText;outline-offset:2px;box-shadow:none}}
-.puk-filter{margin:0 0 var(--space-5);padding:var(--space-5);background:var(--surface-structure)}
+.puk-filter{margin:0 0 var(--space-5);padding:var(--space-5);background:var(--surface-structure);--text-link:var(--text-link-on-tint);--text-accent:var(--text-link-on-tint)}
 [data-puk-filter]:not([data-filter-enhanced]) .puk-filter,[data-puk-search]:not([data-search-enhanced]) .puk-filter{display:none}
 .puk-filter__label{display:block;margin:0 0 var(--space-2);font:var(--type-body);font-weight:var(--fw-medium);color:var(--text-default)}
 .puk-filter__input{box-sizing:border-box;width:100%;min-height:var(--web-touch-target);padding:var(--space-2) var(--space-3);border-radius:var(--radius-sm);background:var(--ui-field);font:var(--type-body);color:var(--text-default)}

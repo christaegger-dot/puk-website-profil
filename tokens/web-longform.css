@@ -55,6 +55,8 @@
 .puk-longform__sources li{padding-block:var(--space-4);border-top:1px solid var(--border-hairline)}
 .puk-longform__source-use{display:block;margin-top:var(--space-2);font-size:15px;color:var(--text-muted)}
 .puk-longform__support{padding:clamp(24px,5vw,48px);border-top:4px solid var(--puk-blue-100);background:var(--surface-sunken)}
+/* Getönte Flächen der Langform: Links und Akzent in Blau 125 (Profilentscheid 22.10.2026). */
+.puk-longform__term-guide>div,.puk-longform__figure,.puk-longform__reflection,.puk-longform__support{--text-link:var(--text-link-on-tint);--text-accent:var(--text-link-on-tint)}
 .puk-longform__support h3{margin-top:0}
 
 /* Inline-Satzlink und eigenständige Aktion sind absichtlich getrennte
