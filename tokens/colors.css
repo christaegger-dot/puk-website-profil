@@ -62,6 +62,10 @@
      Bildschirm feinere Werte braucht als der Druck — und sind benannt, weil
      sie in jeder Oberfläche wiederkehren. Weitere nach Bedarf frei bilden. */
   --ui-field:#F0F3FF;     /* Platzhalter-, Bild- und Eingabefelder */
+  /* Getönte Fläche, PUK-Blau rund 5 % (Profilentscheid 22.10.2026): Einstieg,
+     Einstiegskarten, Kästen, Fusszeile. Hellste benannte Blauschattierung.
+     Gegen Weiss 1,07:1, darum nur Gliederung, keine Bedeutung. */
+  --ui-tint:#F5F7FF;
   --ui-hairline:#E9E9E9;  /* Haarlinien, Trennlinien, Switch aus */
   --ui-wash:#F4F4F4;      /* Hover-Fläche, versenkte Fläche, Seitengrund */
   --ui-danger-wash:#FBEAE7; /* Warnfläche hinter Alert und Toast */
@@ -86,6 +90,10 @@
   --text-link:var(--puk-blue-100); /* @kind color */
   --text-link-hover:var(--puk-black-100); /* @kind color */
   --text-link-visited:var(--puk-blue-125); /* @kind color */
+  /* Links und Akzenttext auf jeder Fläche ausser Weiss (Profilentscheid
+     22.10.2026). Blau 100 erreicht dort nur 3,59–4,40:1, Blau 125 4,86–5,95:1.
+     Getönte Flächen setzen --text-link und --text-accent auf diesen Wert. */
+  --text-link-on-tint:var(--puk-blue-125); /* @kind color */
   --text-danger:var(--puk-red-text); /* @kind color */
 
   --surface-page:var(--puk-white);
@@ -93,6 +101,7 @@
   --surface-sunken:var(--ui-wash);
   --surface-diagram:var(--surface-structure);
   --surface-accent:var(--ui-field);
+  --surface-tint:var(--ui-tint);
   --surface-inverse:var(--puk-black-100);
   --surface-brand:var(--puk-blue-100);
 

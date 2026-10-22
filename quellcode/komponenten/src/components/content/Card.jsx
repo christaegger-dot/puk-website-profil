@@ -22,6 +22,8 @@ export function Card({ title, eyebrow, children, footer, media, variant = 'defau
         borderRadius: 'var(--radius-none)',
         textDecoration: 'none',
         transition: 'border-color var(--dur-base) var(--ease-standard), background var(--dur-base) var(--ease-standard)',
+        /* Getönte Fläche: Links und Akzent in Blau 125 (Profilentscheid 22.10.2026). */
+        ...(variant === 'sunken' ? { '--text-link': 'var(--text-link-on-tint)', '--text-accent': 'var(--text-link-on-tint)' } : null),
         ...style,
       }}
       {...rest}

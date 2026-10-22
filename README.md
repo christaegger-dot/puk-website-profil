@@ -3,14 +3,14 @@ Website-Profil der **Psychiatrischen Universitätsklinik Zürich (PUK)** für We
 ## Verbindlichkeit und Version
 
 <!-- profil:stand -->
-**Fachstellen-Profil 2026.10.7** · Stand 18.10.2026 · offene Projektpendenzen: 0. Basis: PUK Zürich Design System 1.10.1 und PUK Website Kit 1.10.1-r4. Vier Ebenen – bei Widerspruch gilt die obere:
+**Fachstellen-Profil 2026.10.8** · Stand 22.10.2026 · offene Projektpendenzen: 0. Basis: PUK Zürich Design System 1.10.1 und PUK Website Kit 1.10.1-r4. Vier Ebenen – bei Widerspruch gilt die obere:
 <!-- /profil:stand -->
 
 | Ebene | Umfasst | Erkennbar an | Ändern darf |
 | --- | --- | --- | --- |
 | Kanonisch (PUK-CD 1.10.1) | Hausfarben, Rubik, Logo, Sperrzone, Signalfarben | keine Kennzeichnung nötig | nur die PUK-Kommunikation |
 | Abgeleitet (Website Kit r4) | Website-Skala, Web-Tokens, Komponenten, Muster A–F, Anwendungsmuster, Starter | «abgeleitet», «r4» | im Profil, mit Begründung |
-| Profilentscheid der Fachstelle | Absenderin, themenbezogene Kontaktauswahl, ein Schwarz, Buttons 3 px, Lesen und Bedienen, Diagramme im Web, Interaktionskonzept, visuelle Wissensvermittlung mit Mustern G–K, Prüfablauf | «Profilentscheid 06.10.2026» | die Fachstelle |
+| Profilentscheid der Fachstelle | Absenderin, themenbezogene Kontaktauswahl, ein Schwarz, Buttons 3 px, Lesen und Bedienen, Diagramme im Web, Interaktionskonzept, visuelle Wissensvermittlung mit Mustern G–K, Prüfablauf, Website-Titel in Medium, getönte Fläche | «Profilentscheid 06.10.2026», «Profilentscheid 22.10.2026» | die Fachstelle |
 | Muster und Beispiele | Inhalte in Karten, Vorlagen und Starter | «Musterinhalt, fachlich freizugeben», «Platzhalter» | frei; nie ungeprüft veröffentlichen |
 
 **Verbindlich ist dieses GitHub-Repository.** Frühere Artefakte, Prüfprotokolle, Website-Kopien und das Paket 2026.10.2 sind [abgeschlossene Historie](https://github.com/christaegger-dot/puk-website-profil/blob/main/archiv/README.md). Kein Synchronisierungsauftrag an Claude oder andere Plattformen. Der [Prüfbericht](PRUEFBERICHT.md) und die [Abschlussentscheide](ABSCHLUSSENTSCHEIDE.md) dokumentieren diesen Stand. Das Repository ist weiterhin öffentlich; es wird keine Website veröffentlicht.
@@ -59,10 +59,11 @@ Website-Profil der **Psychiatrischen Universitätsklinik Zürich (PUK)** für We
 ## Farbe
 
 - **Hausfarben:** `puk-blue-100` (#3C64FF), `puk-black-100` (#222222), `puk-white`. Rasterstufen 75/50/25 je Farbe; `puk-blue-125` nur für Hover/Press auf Blau und besuchte Links.
-- **Text:** `text-default` auf `surface-page`, `surface-card`, `surface-sunken`, `ui-field`, `status-info-bg` und Gelb. Sekundärtext `text-muted`. `text-large-only` (Schwarz 50) nur ab 24 px oder für Deaktiviertes – nie Lauftext. Blau 75, Gelb und Signalrot sind keine Textfarben.
+- **Text:** `text-default` auf `surface-page`, `surface-card`, `surface-sunken`, `surface-tint`, `ui-field`, `status-info-bg` und Gelb. Sekundärtext `text-muted`. `text-large-only` (Schwarz 50) nur ab 24 px oder für Deaktiviertes – nie Lauftext. Blau 75, Gelb und Signalrot sind keine Textfarben.
 - **Ein blaues Feld pro Komposition:** Das volle Blau-Band (`surface-brand`, `.puk-web-band`, Text `text-on-dark`) ist die reguläre grosse Markenfläche. Schwarz auf Weiss ist Standard; inverse Flächen (`surface-inverse`) nur ausnahmsweise.
 - **Signalfarben** punktuell: `puk-yellow` (Text darauf `puk-black-100`) und `puk-red`. Signalrot trägt nie Text (4,00:1) – Fehlertext ist `text-danger` (#9E2814, 7,59:1), textragende Gefahrflächen `status-danger-strong-bg`. Blau, Rot und Gelb nicht gemeinsam einsetzen.
-- **Bildschirm-Feinwerte:** `ui-field` (Felder, Platzhalter), `ui-wash` (Hover, versenkte Fläche), `ui-hairline` (Linien), `ui-danger-wash`, `surface-structure` (Diagrammgrund).
+- **Bildschirm-Feinwerte:** `ui-tint` (getönte Fläche, Blau rund 5 %), `ui-field` (Felder, Platzhalter), `ui-wash` (Hover, versenkte Fläche), `ui-hairline` (Linien), `ui-danger-wash`, `surface-structure` (Diagrammgrund).
+- **Getönte Flächen und Links** (Profilentscheid 22.10.2026, [ENTSCHEIDE-PROFIL-2026-10-8.md](ENTSCHEIDE-PROFIL-2026-10-8.md)): `surface-tint` (#F5F7FF) für Einstieg, Einstiegskarten, Kästen, verwandte Themen und Fusszeile; Weiss bleibt die Seitenfläche. Auf jeder Fläche ausser Weiss steht kein Text unter 24 px in `puk-blue-100` (dort 3,59–4,40:1). Links und Akzenttext stehen dort in `text-link-on-tint` (`puk-blue-125`, 4,86–5,95:1). Die Profilflächen setzen das selbst; eigene Flächen erhalten es mit `data-puk-surface` (`data-puk-surface="tint"` setzt zusätzlich die Fläche). Besuchte und unbesuchte Links haben dort dieselbe Farbe; die Unterstreichung bleibt.
 - **Ein Schwarz:** Text auf Websites ist immer `text-default` (Hausschwarz #222222), auch in der Website-Hülle. Die Messwerte des bestehenden Webauftritts `puk-web-text` (#000000) und `puk-web-field-text` (#675E58) werden nicht verwendet (Profilentscheid 06.10.2026).
 - In Komponenten und Templates immer **semantische Tokens** (`text-*`, `surface-*`, `border-*`, `action-*`, `status-*`), nie Primitiven oder Hexwerte in HTML/JS.
 - Historische Kompatibilitätsaliase `text-subtle` und die alten Schrift-Kurzformen bleiben für den vorhandenen Bestand erhalten; es gibt keinen Entfernungsauftrag. Neue Arbeit nutzt `text-large-only` und `--type-*`.
@@ -76,7 +77,7 @@ Website-Profil der **Psychiatrischen Universitätsklinik Zürich (PUK)** für We
 
 ## Typografie
 
-- **Nur Rubik**, lokal ausgeliefert (`fonts/`, WOFF2). Light 300 für Display, Leads und Web-Fliesstext; Regular 400 für Titel und UI; Medium 500 nur für UI-Betonung. **Nie fett.**
+- **Nur Rubik**, lokal ausgeliefert (`fonts/`, WOFF2). Light 300 für Display, Leads und Web-Fliesstext; Regular 400 für Titel und UI; Medium 500 für UI-Betonung und für die Website-Titel `.puk-web-h1` und `.puk-web-h2` (`web-fw-title`, Profilentscheid 22.10.2026). Diese Titel weichen gekennzeichnet vom CD Manual ab, das Light und Regular für Text nennt; sie sind keine von der PUK-Kommunikation freigegebene CI-Variante. H3 bleibt Regular. **Nie fett.**
 - Laufweite nicht verändern – Ausnahmen: Web-H2 −0.015em und Eyebrow (`web-eyebrow` +0.08em). Neue H1 stehen mit natürlicher Laufweite und Zeilenhöhe 1,12.
 - **Leseskala für neue Websites** (Profilentscheid 17.10.2026): H1 32–60 px, H2 28–44 px, H3 24–32 px bei Standardschrift; immer fluid und in rem mit `web-size-h1-fluid`, `web-size-h2-fluid`, `web-size-h3-fluid`. Die gemessenen PUK-Displaywerte 114/57/40 px bleiben Herkunftswerte und sind kein Standard für neue Seitentitel. `web-body` bleibt 21 px/1.3 Light, `web-lead` als gemessener Herkunftswert 26,25 px. [Einstieg und Seitenrahmen](guidelines/08-einstieg-und-seitenrahmen.md).
 - **UI-Skala** für Komponenten: `type-display-1` 64 · `type-display-2` 48 · `type-title-1` 36 · `type-title-2` 28 · `type-title-3` 24 · `type-lead` 20 · `type-body` 17 · `type-body-sm` 15 · `type-caption` 13 px. Im CSS über die Kurzformen `font: var(--type-body)`.
@@ -94,7 +95,7 @@ Website-Profil der **Psychiatrischen Universitätsklinik Zürich (PUK)** für We
 
 ## Flächen, Linien, Ecken
 
-- **Flach:** Seiten- und UI-Flächen ohne Verläufe, Texturen oder Muster. Weiss ist die normale Seitenfläche.
+- **Flach:** Seiten- und UI-Flächen ohne Verläufe, Texturen oder Muster. Weiss ist die normale Seitenfläche; Abschnitte dürfen auf `surface-tint` stehen.
 - **Ecken eckig:** Karten, Bänder, Bilder `radius-none`. Kleine Controls `radius-xs`–`radius-md`, alle Buttons `radius-sm` (3 px); die Messwerte `web-radius-btn*` des Bestandsauftritts werden nicht verwendet. `radius-pill` nur für den Switch – die einzige Pillenform; Tags und Chips bleiben bei `radius-sm`.
 - **Linien:** Haarlinie 1 px `border-hairline` für Header-/Footer-Trenner und Karten; Felder 1 px `border-default`; starke Linie 2 px `border-strong` für Aktivmarkierungen.
 - **Karten:** weiss, Haarlinie, eckig, **kein Schatten**. Verlinkte Karte: Rahmen wird im Hover PUK-Blau. Varianten sunken, brand, inverse.
@@ -156,7 +157,7 @@ Website-Profil der **Psychiatrischen Universitätsklinik Zürich (PUK)** für We
 - `npm run check:docs` prüft lokale Dateiziele in den aktiven Markdown-Anleitungen. Der Matrixverweis im UI-Kit entsteht aus der Profilversion; fehlende Nachweise stoppen Tests und Paketbau. Archive, Codebeispiele und externe Adressen werden dabei nicht als aktuelle lokale Dateiziele behandelt.
 - GitHub prüft bei Push, Pull Request und manuellem Start automatisch die Ableitungen, den Build, die Typen, die Tests, die vollständige UI-Matrix und das Paket. Die bisherige Beschreibungskontrolle für offene Prüfstufen bleibt zusätzlich erhalten.
 <!-- profil:paket -->
-- `tools/paket.py`: reproduzierbares Paket [puk-website-profil-2026.10.7.zip](https://github.com/christaegger-dot/puk-website-profil/raw/refs/heads/main/puk-website-profil-2026.10.7.zip) mit [SHA-256-Datei](https://github.com/christaegger-dot/puk-website-profil/raw/refs/heads/main/puk-website-profil-2026.10.7.zip.sha256). Archiv, Projekte unter `websites/` und lokale Arbeitsausgaben sind nicht enthalten.
+- `tools/paket.py`: reproduzierbares Paket [puk-website-profil-2026.10.8.zip](https://github.com/christaegger-dot/puk-website-profil/raw/refs/heads/main/puk-website-profil-2026.10.8.zip) mit [SHA-256-Datei](https://github.com/christaegger-dot/puk-website-profil/raw/refs/heads/main/puk-website-profil-2026.10.8.zip.sha256). Archiv, Projekte unter `websites/` und lokale Arbeitsausgaben sind nicht enthalten.
 <!-- /profil:paket -->
 - Der Exporter schreibt in einen neuen oder erkennbaren Exportordner. Erst nach vollständiger Prüfung ersetzt er den vorherigen Export. Fremde Dateien werden nicht überschrieben. Eine Website zu exportieren veröffentlicht sie nicht.
 

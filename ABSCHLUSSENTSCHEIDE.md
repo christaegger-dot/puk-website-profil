@@ -1,7 +1,7 @@
 # Abschlussentscheide · 17.10.2026
 
 <!-- profil:stand -->
-**Profil 2026.10.7 abgeschlossen · Stand 18.10.2026. Offene Projektpendenzen: 0.**
+**Profil 2026.10.8 abgeschlossen · Stand 22.10.2026. Offene Projektpendenzen: 0.**
 <!-- /profil:stand -->
 
 | Bisherige Aufgabe oder Unklarheit | Abschlussentscheid | Status |
@@ -44,5 +44,16 @@ Gezielte Browserprüfungen sichern lange deutsche Titel, fünf Navigationspunkte
 ## Nachweislinks · Korrektur vom 18.10.2026
 
 Der Matrixverweis in der UI-Kit-Anleitung wird wie die übrigen Versionsmetadaten aus `package.json` erzeugt. Tests und Paketbau prüfen die lokalen Dateiziele aktueller Markdown-Anleitungen. Frühere Pakete und Matrixdaten bleiben unverändert im Archiv. Die Nachprüfung ändert keine Gestaltungswerte, klinischen Aussagen oder Freigabegrenzen.
+
+## Profilentscheide vom 22.10.2026 · Version 2026.10.8
+
+Christa Egger hat am 22.10.2026 zwei Gestaltungsregeln aus der Website «Borderline – Angehörige» als Profilentscheide übernommen und den Änderungsvorschlag bestätigt. Einzelheiten, Wortlaut und Kontrastwerte stehen in [ENTSCHEIDE-PROFIL-2026-10-8.md](ENTSCHEIDE-PROFIL-2026-10-8.md).
+
+| Punkt | Entscheid | Status |
+| --- | --- | --- |
+| F4 · Getönte Fläche | `ui-tint` #F5F7FF als `surface-tint`. Weiss bleibt die Seitenfläche. | Umgesetzt |
+| F4 · Kontrastauflage | Auf jeder Fläche ausser Weiss kein Text unter 24 px in Blau 100. Links und Akzent dort in `text-link-on-tint` (Blau 125), auch auf den bestehenden getönten Flächen. | Umgesetzt |
+| F3 · Website-Titel in Medium | `.puk-web-h1` und `.puk-web-h2` in Medium 500 (`web-fw-title`). Gekennzeichnete Abweichung vom CD Manual, keine freigegebene CI-Variante. | Umgesetzt |
+| Unabhängige Prüfung des Pakets 2026.10.8 | Durch eine Sitzung, die das Paket nicht gebaut hat. | Offen |
 
 Eingabeparameter der leeren Vorlagen sind keine offenen Projektaufgaben. Der Produktionsschutz bleibt aktiv. Alle Entscheide gelten für diesen abgeschlossenen Profilstand; es gibt keinen zurückgestellten Backlog. Die Nachweise stehen im [Prüfbericht](PRUEFBERICHT.md).

@@ -62,3 +62,5 @@
 /* Ruhigere Fusszeile ohne kleinere Leseschrift oder geringere Linkziele */
 .puk-web-footer{padding-block:var(--space-8)}
 .puk-web-footer__grid{gap:var(--space-6)}
+/* Getönte Flächen: Links und Akzent in Blau 125 (Profilentscheid 22.10.2026). */
+.puk-site-draftbar,.puk-site-safety--direct,.puk-site-placeholder{--text-link:var(--text-link-on-tint);--text-accent:var(--text-link-on-tint)}

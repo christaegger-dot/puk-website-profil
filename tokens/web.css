@@ -16,6 +16,11 @@
   --web-lh-heading:1; /* @kind font */
   --web-fw-body:300; /* @kind font */
   --web-fw-heading:400; /* @kind font */
+  /* Website-Titel h1 und h2 in Rubik Medium (Profilentscheid 22.10.2026).
+     Gekennzeichnete Abweichung: Das CD Manual nennt Light und Regular für
+     Text; keine von der PUK-Kommunikation freigegebene CI-Variante. h3 und
+     der Messwert --web-fw-heading bleiben Regular. */
+  --web-fw-title:500; /* @kind font */
 
   --web-radius-btn:5px; /* @kind radius */
   --web-radius-btn-lg:3px; /* @kind radius */
@@ -60,14 +65,15 @@
 .puk-web-main:focus{outline:none}
 .puk-web-hero{padding-block:clamp(2rem,4vw,3rem) clamp(2rem,3vw,2.5rem)}
 .puk-web-eyebrow{margin:0;color:var(--puk-black-75);font-size:14px;font-weight:var(--fw-regular);letter-spacing:.08em;text-transform:uppercase}
-.puk-web-h1{max-width:24ch;margin:var(--space-4) 0 0;font-size:var(--web-size-h1-fluid);font-weight:var(--web-fw-body);line-height:1.12;letter-spacing:normal;text-wrap:balance}
+.puk-web-h1{max-width:24ch;margin:var(--space-4) 0 0;font-size:var(--web-size-h1-fluid);font-weight:var(--web-fw-title);line-height:1.12;letter-spacing:normal;text-wrap:balance}
 .puk-web-h1:first-child{margin-top:0}
-.puk-web-h2{margin:0;font-size:var(--web-size-h2-fluid);font-weight:var(--web-fw-heading);line-height:1.05;letter-spacing:-.015em;text-wrap:balance}
+.puk-web-h2{margin:0;font-size:var(--web-size-h2-fluid);font-weight:var(--web-fw-title);line-height:1.05;letter-spacing:-.015em;text-wrap:balance}
 .puk-web-h3{margin:0;font-size:var(--web-size-h3-fluid);font-weight:var(--web-fw-heading);line-height:1.15;text-wrap:balance}
 .puk-web-lead{max-width:52ch;margin:28px 0 0;font-size:var(--web-size-lead);font-weight:var(--web-fw-body);line-height:var(--web-lh-body);text-wrap:pretty}
 .puk-web-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px}
 .puk-web-section{padding-block:clamp(56px,7vw,80px)}
 .puk-web-media{aspect-ratio:16/9;background:var(--ui-field);outline:1px dashed var(--puk-blue-50);outline-offset:-1px;display:flex;align-items:flex-end;padding:16px;color:var(--puk-black-100);font-size:12px;font-weight:var(--fw-regular);letter-spacing:.08em;text-transform:uppercase}
+.puk-web-media{--text-link:var(--text-link-on-tint);--text-accent:var(--text-link-on-tint)}
 .puk-web-card-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:20px;margin:32px 0 0;padding:0;list-style:none}
 .puk-web-card-list>li{display:flex;min-width:0}
 .puk-web-band{padding-block:64px;background:var(--puk-blue-100);color:var(--puk-white)}

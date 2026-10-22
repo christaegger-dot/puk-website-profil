@@ -1,6 +1,7 @@
 /* Rubik — corporate typeface for digital & print media (PUK CD Manual, Typografie).
    Only Light (300) and Regular (400) are sanctioned by the manual; Medium (500) is
-   shipped for UI affordances that need emphasis without going bold.
+   shipped for UI affordances that need emphasis without going bold, and for
+   the website titles h1/h2 (Profilentscheid 22.10.2026, gekennzeichnete Abweichung).
 
    Lokale WOFF2-Dateien; alle referenzierten Dateien sind im Repository und Export enthalten. */
 @font-face{font-family:"Rubik";src:url("../assets/fonts/Rubik-Light.woff2") format("woff2");font-weight:300;font-style:normal;font-display:swap}

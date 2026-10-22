@@ -20,6 +20,12 @@ a:hover{color:var(--text-link-hover)}
 [data-puk-link]:focus-visible{text-decoration:underline}
 [data-puk-link][aria-current="page"]{color:var(--text-default);text-decoration:underline;text-decoration-thickness:2px}
 [data-puk-link="standalone"]{font-weight:var(--fw-medium)}
+/* ---- Getönte Flächen (Profilentscheid 22.10.2026) ----
+   Auf jeder Fläche ausser Weiss steht kein Text unter 24 px in Blau 100.
+   Links und Akzenttext wechseln dort auf --text-link-on-tint (Blau 125).
+   data-puk-surface="tint" setzt zusätzlich die getönte Fläche. */
+[data-puk-surface]{--text-link:var(--text-link-on-tint);--text-accent:var(--text-link-on-tint)}
+[data-puk-surface="tint"]{background:var(--surface-tint)}
 [data-puk-sr-only]{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap}
 *,*::before,*::after{box-sizing:border-box}
 /* ---- Fokus ----

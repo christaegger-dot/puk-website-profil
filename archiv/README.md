@@ -11,3 +11,5 @@ Verbindlich sind die [aktuellen Regeln](../README.md), die [Abschlussentscheide]
 `profilstand-2026-10-17-5/` erhält den abgeschlossenen Stand 2026.10.5 mit unverändertem Paket und ursprünglichen Berichten. Profil 2026.10.6 ergänzt die Gestaltungslehren aus den eigenständigen Websites; seine aktuellen Regeln und Nachweise stehen im Repository-Stamm.
 
 `profilstand-2026-10-18-6/` erhält Profil 2026.10.6 mit Originalberichten, Matrixdaten und unverändertem Paket. Profil 2026.10.7 erzeugt den Matrixverweis aus der Profilversion und prüft aktive lokale Dokumentationslinks vor Tests und Paketbau.
+
+`profilstand-2026-10-18-7/` erhält Profil 2026.10.7 mit Originalberichten, Matrixdaten und unverändertem Paket. Profil 2026.10.8 trägt die Profilentscheide vom 22.10.2026 nach: getönte Fläche `surface-tint`, Links auf getönten Flächen in Blau 125 und Website-Titel in Rubik Medium.

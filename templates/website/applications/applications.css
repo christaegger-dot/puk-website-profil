@@ -64,3 +64,5 @@ button,input{font:inherit}
   .puk-app-output dd+dt{margin-top:var(--space-3)}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+/* Getönte Flächen: Links und Akzent in Blau 125 (Profilentscheid 22.10.2026). */
+.puk-app-boundary,.puk-app-mini,.puk-app-choice[aria-pressed="true"],.puk-app-detail,.puk-app-output,.puk-app-empty{--text-link:var(--text-link-on-tint);--text-accent:var(--text-link-on-tint)}
