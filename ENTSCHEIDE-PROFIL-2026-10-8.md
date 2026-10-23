@@ -46,4 +46,4 @@ Im Theme «Hoher Kontrast» erreicht Blau 125 (#001F99) auf allen genannten Flä
 
 ## Prüfung
 
-Die technische Selbstprüfung steht im [Prüfbericht](PRUEFBERICHT.md). Das Paket `puk-website-profil-2026.10.8.zip` prüft eine Sitzung, die es nicht gebaut hat. Diese Prüfung ist offen. Kein Merge und keine Veröffentlichung ohne gesonderten Auftrag.
+Die technische Selbstprüfung steht im [Prüfbericht](PRUEFBERICHT.md). Das Paket `puk-website-profil-2026.10.8.zip` (SHA-256 `1739d4ef…`) hat am 23.10.2026 eine Sitzung geprüft, die es nicht gebaut hat: erledigt mit Befunden (drei «wichtig», fünf «optional», keine kritischen; Prüfbericht, Abschnitt «Unabhängige Prüfung Paket 2026.10.8»). Die Umsetzung von F3 und F4 in Tokens, Komponenten-CSS, Vorlagen und Dokumentation ist bestätigt; offen bleiben das nicht erneuerte Plattform-Bundle `_ds_bundle.js`, die Worttrennung der Titel bei 200 % Schrift und die Frage, ob die Kontrastauflage Hover-Zustände einschliesst. Kein Merge und keine Veröffentlichung ohne gesonderten Auftrag.

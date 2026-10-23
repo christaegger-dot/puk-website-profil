@@ -54,6 +54,6 @@ Christa Egger hat am 22.10.2026 zwei Gestaltungsregeln aus der Website «Borderl
 | F4 · Getönte Fläche | `ui-tint` #F5F7FF als `surface-tint`. Weiss bleibt die Seitenfläche. | Umgesetzt |
 | F4 · Kontrastauflage | Auf jeder Fläche ausser Weiss kein Text unter 24 px in Blau 100. Links und Akzent dort in `text-link-on-tint` (Blau 125), auch auf den bestehenden getönten Flächen. | Umgesetzt |
 | F3 · Website-Titel in Medium | `.puk-web-h1` und `.puk-web-h2` in Medium 500 (`web-fw-title`). Gekennzeichnete Abweichung vom CD Manual, keine freigegebene CI-Variante. | Umgesetzt |
-| Unabhängige Prüfung des Pakets 2026.10.8 | Durch eine Sitzung, die das Paket nicht gebaut hat. | Offen |
+| Unabhängige Prüfung des Pakets 2026.10.8 | Durch eine Sitzung, die das Paket nicht gebaut hat; am 23.10.2026 erfolgt, Paket-SHA `1739d4ef…` bestätigt. Drei Befunde «wichtig» (nicht erneuertes `_ds_bundle.js`, Wortbrüche im Titel bei 200 % Schrift, bestehende Hover-Zustände in Blau 100), fünf «optional»; siehe [Prüfbericht](PRUEFBERICHT.md), Abschnitt «Unabhängige Prüfung Paket 2026.10.8». | Erledigt mit Befunden |
 
 Eingabeparameter der leeren Vorlagen sind keine offenen Projektaufgaben. Der Produktionsschutz bleibt aktiv. Alle Entscheide gelten für diesen abgeschlossenen Profilstand; es gibt keinen zurückgestellten Backlog. Die Nachweise stehen im [Prüfbericht](PRUEFBERICHT.md).
