@@ -78,7 +78,8 @@ Die Arbeitspalette begrenzt die Farbfreiheit der Marke bewusst für eine konkret
 | `--puk-blue-25` #D8E0FF | 3,59:1 | 4,86:1 |
 
 - **Umsetzung:** Die getönten Flächen des Profils (Langform, Erklär- und Visualisierungsmuster, Starter, Anwendungen, `Card` sunken, `Alert` ausser emergency) setzen `--text-link` und `--text-accent` auf `--text-link-on-tint`. Eigene Flächen erhalten dasselbe mit `data-puk-surface`; `data-puk-surface="tint"` setzt zusätzlich die Fläche.
-- **Folge:** Besuchte und unbesuchte Links sind auf getönten Flächen gleich gefärbt. Unterstreichung und Hover in Schwarz bleiben. Im Theme «Hoher Kontrast» gilt Blau 125 #001F99.
+- **Folge:** Besuchte und unbesuchte Links sind auf getönten Flächen gleich gefärbt. Unterstreichung und Hover in Schwarz bleiben. Im Theme «Hoher Kontrast» gilt Blau 125 #001F99 (mindestens 9,68:1 auf den genannten Flächen).
+- **Hover-Zustände (Nachbesserung 23.10.2026, W-3):** Die Auflage gilt auch für Bedienelemente, deren Hover-Fläche grau ist (`--ui-wash`): Ghost- und Sekundär-Button, Karussell-, Disclosure- und Dialog-Schliessen-Schaltflächen sowie `.puk-vis-btn` zeigen Text dort in `--text-link-on-tint` (5,79:1), nicht in Blau 100 (4,28:1). Links im `Alert` emergency stehen in Weiss (7,59:1). Herkunft: [ENTSCHEIDE-PROFIL-2026-10-9.md](../ENTSCHEIDE-PROFIL-2026-10-9.md).
 - **Herkunft:** [ENTSCHEIDE-PROFIL-2026-10-8.md](../ENTSCHEIDE-PROFIL-2026-10-8.md).
 
 ## Druckfarben

@@ -23,7 +23,10 @@ export function Alert({ title, children, tone = 'info', style }) {
         border: '1px solid ' + t.border,
         color: t.fg,
         /* Getönte Flächen: Links und Akzent in Blau 125 (Profilentscheid 22.10.2026). */
-        ...(tone === 'emergency' ? null : { '--text-link': 'var(--text-link-on-tint)', '--text-accent': 'var(--text-link-on-tint)' }),
+        ...(tone === 'emergency'
+          /* Textführende rote Fläche: Links und Hover in Weiss (7,59:1); Blau 100 hätte 1,61:1 (Nachbesserung O-4, 23.10.2026). */
+          ? { '--text-link': 'var(--status-danger-fg)', '--text-link-hover': 'var(--status-danger-fg)', '--text-accent': 'var(--status-danger-fg)' }
+          : { '--text-link': 'var(--text-link-on-tint)', '--text-accent': 'var(--text-link-on-tint)' }),
         ...style,
       }}
     >

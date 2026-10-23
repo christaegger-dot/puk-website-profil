@@ -17,7 +17,7 @@ Nachweise der ursprünglichen Korrekturen: [Borderline, PR #704](https://github.
 
 ## Titel und erster hilfreicher Schritt
 
-- `.puk-web-h1` und `--web-size-h1-fluid` verwenden. Keine feste Display-Grösse aus dem gemessenen PUK-Webauftritt übernehmen. Keine manuellen Zeilenumbrüche oder festen Titelhöhen erzwingen.
+- `.puk-web-h1` und `--web-size-h1-fluid` verwenden. Keine feste Display-Grösse aus dem gemessenen PUK-Webauftritt übernehmen. Keine manuellen Zeilenumbrüche oder festen Titelhöhen erzwingen. Lange Titelwörter (ab etwa 10 Zeichen) erhalten weiche Trennstellen (`&shy;`), damit sie bei 320 px und 200 % Schrift nach Silben statt beliebig brechen (Nachbesserung 23.10.2026).
 - Titel und eine kurze Einleitung beantworten: Worum geht es, und was hilft diese Website zu verstehen?
 - Auf einer Startseite folgt ein sinnvoll beschrifteter Einstiegslink in `.puk-web-actions`, gekennzeichnet mit `data-primary-entry`. Erst danach kommen ergänzende redaktionelle Hinweise. Eine notwendige, thematisch begründete Schutzinformation darf Vorrang haben.
 - Bei einem Sprunglink auf einen Abschnitt erhält das Ziel `tabindex="-1"`. Dadurch erreicht der native Link den Abschnitt mit Tastaturfokus auch ohne JavaScript; die vorhandenen Fokusstyles markieren ihn sichtbar. Keine positiven tabindex-Werte verwenden.

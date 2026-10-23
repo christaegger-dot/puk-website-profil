@@ -36,7 +36,7 @@ Gestaltungsregeln werden nicht in einzelnen Website-Repositorys geändert. F3 un
 | `ui-danger-wash` #FBEAE7 | – | – | 4,04:1 | 5,47:1 |
 | `puk-blue-25` #D8E0FF | 12,14:1 | 4,52:1 | 3,59:1 | 4,86:1 |
 
-Im Theme «Hoher Kontrast» erreicht Blau 125 (#001F99) auf allen genannten Flächen mindestens 10,28:1. `ui-tint` gegen Weiss: 1,07:1. Die Fläche gliedert also nur und trägt keine Bedeutung.
+Im Theme «Hoher Kontrast» erreicht Blau 125 (#001F99) auf allen genannten Flächen mindestens 9,68:1 (`puk-blue-25`; auf den übrigen Flächen 10,88:1 bis 12,68:1). Berichtigt am 23.10.2026 nach der unabhängigen Prüfung (Befund O-2); zuvor stand hier 10,28:1, der Wert auf `--puk-yellow` #F0EB96. `ui-tint` gegen Weiss: 1,07:1. Die Fläche gliedert also nur und trägt keine Bedeutung.
 
 ## Folgen
 

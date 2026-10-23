@@ -13,3 +13,5 @@ Verbindlich sind die [aktuellen Regeln](../README.md), die [Abschlussentscheide]
 `profilstand-2026-10-18-6/` erhält Profil 2026.10.6 mit Originalberichten, Matrixdaten und unverändertem Paket. Profil 2026.10.7 erzeugt den Matrixverweis aus der Profilversion und prüft aktive lokale Dokumentationslinks vor Tests und Paketbau.
 
 `profilstand-2026-10-18-7/` erhält Profil 2026.10.7 mit Originalberichten, Matrixdaten und unverändertem Paket. Profil 2026.10.8 trägt die Profilentscheide vom 22.10.2026 nach: getönte Fläche `surface-tint`, Links auf getönten Flächen in Blau 125 und Website-Titel in Rubik Medium.
+
+`profilstand-2026-10-23-8/` erhält Profil 2026.10.8 mit Originalberichten (Selbstprüfung und unabhängige Prüfung vom 23.10.2026), Entscheiddatei, Matrixdaten und unverändertem Paket (SHA-256 `d894a532…`). Profil 2026.10.9 setzt die Befunde dieser Prüfung um: Plattform-Bundle `_ds_bundle.js` aus denselben Quellen, Silbentrennung der Website-Titel in schmalen Ansichten, Hover-Zustände auf grauer Fläche in Blau 125.

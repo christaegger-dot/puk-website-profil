@@ -1,5 +1,5 @@
 /* UI-Kit-Rahmen – nur für die Claude-Referenzansicht, nicht Teil der Website. */
-.kit-bar{background:var(--surface-sunken);border-bottom:1px solid var(--border-default);padding:10px var(--web-gutter-inline);font-family:var(--font-core);color:var(--text-default)}
+.kit-bar{background:var(--surface-sunken);--text-link:var(--text-link-on-tint);border-bottom:1px solid var(--border-default);padding:10px var(--web-gutter-inline);font-family:var(--font-core);color:var(--text-default)}
 .kit-bar__label{margin:0 0 6px;font:var(--type-caption);color:var(--text-muted)}
 .kit-bar__groups{display:flex;flex-wrap:wrap;gap:6px 28px}
 .kit-bar__group{display:flex;flex-wrap:wrap;align-items:center;gap:0 12px;min-width:0}
