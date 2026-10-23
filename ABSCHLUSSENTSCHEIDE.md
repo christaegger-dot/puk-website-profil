@@ -66,6 +66,6 @@ Christa Egger hat am 23.10.2026 die Umsetzung der Befunde aus der unabhängigen 
 | W-2 · Titeltrennung | `.puk-web-h1` bleibt bei Standardschrift ungetrennt; ist die Titelfläche schmaler als 12 em ihrer Schrift (320–375 px bei 200 % Schrift), trennt sie lange Wörter nach Silben; Mustertitel tragen weiche Trennstellen; Test bei 320 und 375 px mit 100 % und 200 % Schrift. | Umgesetzt |
 | W-3 · Hover-Kontrast | Hover-Zustände auf `ui-wash` in Blau 125 statt Blau 100; Kontrastauflage gilt auch für Bedienelemente. | Umgesetzt |
 | O-1 bis O-5 | UI-Kit-Leiste, berichtigte Zahl 9,68:1, Hover in Figuren, Links im Notfall-Alert in Weiss, Wortlaut der Grundlagenkarten. | Umgesetzt |
-| Unabhängige Prüfung des Pakets 2026.10.9 | Durch eine Sitzung, die das Paket nicht gebaut hat. | Offen |
+| Unabhängige Prüfung des Pakets 2026.10.9 | Durch eine Sitzung, die das Paket nicht gebaut hat; am 23.10.2026 erfolgt, Paket-SHA `ce342ddb…` bestätigt. Keine Befunde «kritisch» oder «wichtig», ein Befund «optional» (Zahlenangabe im Selbstprüfbericht); siehe [Prüfbericht](PRUEFBERICHT.md), Abschnitt «Unabhängige Prüfung Paket 2026.10.9». | Erledigt |
 
 Eingabeparameter der leeren Vorlagen sind keine offenen Projektaufgaben. Der Produktionsschutz bleibt aktiv. Alle Entscheide gelten für diesen abgeschlossenen Profilstand; es gibt keinen zurückgestellten Backlog. Die Nachweise stehen im [Prüfbericht](PRUEFBERICHT.md).

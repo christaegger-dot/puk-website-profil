@@ -25,4 +25,4 @@ Die unabhängige Prüfung des Pakets 2026.10.8 (Prüfbericht im [archivierten St
 
 ## Prüfung
 
-Die technische Selbstprüfung steht im [Prüfbericht](PRUEFBERICHT.md). Das Paket `puk-website-profil-2026.10.9.zip` prüft eine Sitzung, die es nicht gebaut hat. Diese Prüfung ist offen. Kein Merge und keine Veröffentlichung ohne gesonderten Auftrag.
+Die technische Selbstprüfung steht im [Prüfbericht](PRUEFBERICHT.md). Das Paket `puk-website-profil-2026.10.9.zip` (SHA-256 `ce342ddb…`) hat am 23.10.2026 eine Sitzung geprüft, die es nicht gebaut hat: keine Befunde «kritisch» oder «wichtig», ein Befund «optional»; Ergebnis im [Prüfbericht](PRUEFBERICHT.md), Abschnitt «Unabhängige Prüfung Paket 2026.10.9». Kein Merge und keine Veröffentlichung ohne gesonderten Auftrag.
