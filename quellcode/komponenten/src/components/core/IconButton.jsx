@@ -29,7 +29,7 @@ export function IconButton({ icon = 'x', label, variant = 'ghost', size = 'md', 
           ? (disabled ? 'var(--action-disabled-bg)' : hovered ? 'var(--action-primary-bg-hover)' : 'var(--action-primary-bg)')
           : (hovered && !disabled ? 'var(--ui-wash)' : 'transparent'),
         /* Deaktiviert über Farbe, nicht über Transparenz (Interaktionskonzept). */
-        color: disabled ? 'var(--action-disabled-fg)' : solid ? 'var(--puk-white)' : (hovered ? 'var(--puk-blue-100)' : 'var(--puk-black-100)'),
+        color: disabled ? 'var(--action-disabled-fg)' : solid ? 'var(--puk-white)' : (hovered ? 'var(--text-link-on-tint)' : 'var(--puk-black-100)'),
         cursor: disabled ? 'not-allowed' : 'pointer',
         transition: 'background var(--dur-fast) var(--ease-standard), color var(--dur-fast) var(--ease-standard)',
         ...style,

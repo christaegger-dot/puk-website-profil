@@ -1,7 +1,7 @@
 {
   "name": "puk-website-profil",
   "private": true,
-  "version": "2026.10.8",
+  "version": "2026.10.9",
   "engines": {
     "node": ">=20"
   },
@@ -11,7 +11,7 @@
     "check:docs": "node tools/pruefe-dokumentation.mjs",
     "neu": "node tools/neue-website.mjs",
     "vorschau": "node tools/vorschau.mjs",
-    "build:components": "node quellcode/komponenten/build.mjs components/bundle.js",
+    "build:components": "node quellcode/komponenten/build.mjs",
     "build:starter": "node templates/website/psychoeducation-site-starter/tools/build.mjs",
     "build:minimal": "node templates/website/psychoeducation-site-starter/tools/build.mjs --site templates/website/minimal-starter",
     "build:example": "node templates/website/psychoeducation-site-starter/tools/build.mjs --site templates/website/profilbeispiel --production",
@@ -32,9 +32,9 @@
     "typescript": "5.9.3"
   },
   "pukProfil": {
-    "stand": "2026-10-22",
-    "starterBuild": "r4-15",
-    "kitBuild": "r4-3",
+    "stand": "2026-10-23",
+    "starterBuild": "r4-16",
+    "kitBuild": "r4-4",
     "qaRevision": "qa-9"
   }
 }

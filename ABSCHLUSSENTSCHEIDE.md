@@ -1,7 +1,7 @@
 # Abschlussentscheide · 17.10.2026
 
 <!-- profil:stand -->
-**Profil 2026.10.8 abgeschlossen · Stand 22.10.2026. Offene Projektpendenzen: 0.**
+**Profil 2026.10.9 abgeschlossen · Stand 23.10.2026. Offene Projektpendenzen: 0.**
 <!-- /profil:stand -->
 
 | Bisherige Aufgabe oder Unklarheit | Abschlussentscheid | Status |
@@ -55,5 +55,17 @@ Christa Egger hat am 22.10.2026 zwei Gestaltungsregeln aus der Website «Borderl
 | F4 · Kontrastauflage | Auf jeder Fläche ausser Weiss kein Text unter 24 px in Blau 100. Links und Akzent dort in `text-link-on-tint` (Blau 125), auch auf den bestehenden getönten Flächen. | Umgesetzt |
 | F3 · Website-Titel in Medium | `.puk-web-h1` und `.puk-web-h2` in Medium 500 (`web-fw-title`). Gekennzeichnete Abweichung vom CD Manual, keine freigegebene CI-Variante. | Umgesetzt |
 | Unabhängige Prüfung des Pakets 2026.10.8 | Durch eine Sitzung, die das Paket nicht gebaut hat; am 23.10.2026 erfolgt, Paket-SHA `1739d4ef…` bestätigt. Drei Befunde «wichtig» (nicht erneuertes `_ds_bundle.js`, Wortbrüche im Titel bei 200 % Schrift, bestehende Hover-Zustände in Blau 100), fünf «optional»; siehe [Prüfbericht](PRUEFBERICHT.md), Abschnitt «Unabhängige Prüfung Paket 2026.10.8». | Erledigt mit Befunden |
+
+## Nachbesserung vom 23.10.2026 · Version 2026.10.9
+
+Christa Egger hat am 23.10.2026 die Umsetzung der Befunde aus der unabhängigen Prüfung des Pakets 2026.10.8 bestätigt. Einzelheiten stehen in [ENTSCHEIDE-PROFIL-2026-10-9.md](ENTSCHEIDE-PROFIL-2026-10-9.md); der geprüfte Stand 2026.10.8 liegt unverändert im [Archiv](archiv/profilstand-2026-10-23-8/).
+
+| Punkt | Entscheid | Status |
+| --- | --- | --- |
+| W-1 · Plattform-Bundle | `_ds_bundle.js` entsteht im selben Build-Schritt als bytegleiche Kopie von `components/bundle.js`; Test auf Gleichheit. | Umgesetzt |
+| W-2 · Titeltrennung | `.puk-web-h1` bleibt bei Standardschrift ungetrennt; ist die Titelfläche schmaler als 12 em ihrer Schrift (320–375 px bei 200 % Schrift), trennt sie lange Wörter nach Silben; Mustertitel tragen weiche Trennstellen; Test bei 320 und 375 px mit 100 % und 200 % Schrift. | Umgesetzt |
+| W-3 · Hover-Kontrast | Hover-Zustände auf `ui-wash` in Blau 125 statt Blau 100; Kontrastauflage gilt auch für Bedienelemente. | Umgesetzt |
+| O-1 bis O-5 | UI-Kit-Leiste, berichtigte Zahl 9,68:1, Hover in Figuren, Links im Notfall-Alert in Weiss, Wortlaut der Grundlagenkarten. | Umgesetzt |
+| Unabhängige Prüfung des Pakets 2026.10.9 | Durch eine Sitzung, die das Paket nicht gebaut hat. | Offen |
 
 Eingabeparameter der leeren Vorlagen sind keine offenen Projektaufgaben. Der Produktionsschutz bleibt aktiv. Alle Entscheide gelten für diesen abgeschlossenen Profilstand; es gibt keinen zurückgestellten Backlog. Die Nachweise stehen im [Prüfbericht](PRUEFBERICHT.md).

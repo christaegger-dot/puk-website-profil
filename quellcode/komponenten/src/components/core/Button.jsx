@@ -24,7 +24,8 @@ function variantStyle(variant, hovered) {
     case 'ghost':
       return {
         background: hovered ? 'var(--ui-wash)' : 'transparent',
-        color: hovered ? 'var(--puk-blue-100)' : 'var(--puk-black-100)',
+        /* Hover auf der grauen Fläche in Blau 125: Blau 100 hätte dort nur 4,28:1 (Nachbesserung W-3, 23.10.2026). */
+        color: hovered ? 'var(--text-link-on-tint)' : 'var(--puk-black-100)',
         border: '1px solid transparent',
       };
     case 'danger':

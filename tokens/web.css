@@ -65,7 +65,13 @@
 .puk-web-main:focus{outline:none}
 .puk-web-hero{padding-block:clamp(2rem,4vw,3rem) clamp(2rem,3vw,2.5rem)}
 .puk-web-eyebrow{margin:0;color:var(--puk-black-75);font-size:14px;font-weight:var(--fw-regular);letter-spacing:.08em;text-transform:uppercase}
-.puk-web-h1{max-width:24ch;margin:var(--space-4) 0 0;font-size:var(--web-size-h1-fluid);font-weight:var(--web-fw-title);line-height:1.12;letter-spacing:normal;text-wrap:balance}
+.puk-web-h1{max-width:24ch;margin:var(--space-4) 0 0;font-size:var(--web-size-h1-fluid);font-weight:var(--web-fw-title);line-height:1.12;letter-spacing:normal;text-wrap:balance;hyphens:none}
+/* Nachbesserung W-2 (23.10.2026): Bei Standardschrift wird der Titel nie getrennt (hyphens:none, auch nicht an weichen
+   Trennstellen). Ist die Titelfläche schmaler als 12 em ihrer Schrift – 320 bis 375 px bei 200 % Schrift –, trennt der
+   Titel lange Wörter nach Silben (ab 10 Zeichen, mindestens 4 davor und danach) statt sie an beliebiger Stelle zu brechen.
+   Browser ohne deutsches Trennmuster trennen nur an weichen Trennstellen (&shy;); Mustertitel tragen sie deshalb. */
+.puk-web-hero,.puk-longform__hero{container-type:inline-size}
+@container (max-width:12em){.puk-web-h1{hyphens:auto;hyphenate-limit-chars:10 4 4}}
 .puk-web-h1:first-child{margin-top:0}
 .puk-web-h2{margin:0;font-size:var(--web-size-h2-fluid);font-weight:var(--web-fw-title);line-height:1.05;letter-spacing:-.015em;text-wrap:balance}
 .puk-web-h3{margin:0;font-size:var(--web-size-h3-fluid);font-weight:var(--web-fw-heading);line-height:1.15;text-wrap:balance}

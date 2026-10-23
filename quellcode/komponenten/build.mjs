@@ -1,14 +1,17 @@
-// Baut components/bundle.js (Namespace PUKWeb) aus den React-Quellen. Aufruf: npm install && node build.mjs [ziel]
+// Baut components/bundle.js und die bytegleiche Plattformkopie _ds_bundle.js (Namespace PUKWeb) aus den React-Quellen.
+// Aufruf: npm install && node build.mjs [ziel …]. Ohne Ziel entstehen beide Dateien (Nachbesserung W-1, 23.10.2026).
 // React wird nicht mitgebündelt: Die Seite lädt React 18 lokal (window.React), src/react-shim.js reicht es weiter.
 import { build } from 'esbuild';
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { dirname, resolve, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 const source = dirname(fileURLToPath(import.meta.url));
-const out = resolve(process.argv[2] || join(source, '../../components/bundle.js'));
+const outs = (process.argv.length > 2 ? process.argv.slice(2) : [join(source, '../../components/bundle.js'), join(source, '../../_ds_bundle.js')]).map(p => resolve(p));
 const names = JSON.parse(await readFile(join(source, 'names.json'), 'utf8'));
 const r = await build({ absWorkingDir: source, entryPoints: ['src/entry.jsx'], bundle: true, minify: true, format: 'iife', charset: 'utf8', alias: { react: join(source, 'src/react-shim.js') }, write: false });
 const header = '/* @ds-bundle: ' + JSON.stringify({ format: 4, namespace: 'PUKWeb', components: names.map(name => ({ name })) }) + ' */\n';
-await mkdir(dirname(out), { recursive: true });
-await writeFile(out, header + r.outputFiles[0].text);
-console.log(`${out} geschrieben · ${names.length} Komponenten`);
+for (const out of outs) {
+  await mkdir(dirname(out), { recursive: true });
+  await writeFile(out, header + r.outputFiles[0].text);
+  console.log(`${out} geschrieben · ${names.length} Komponenten`);
+}

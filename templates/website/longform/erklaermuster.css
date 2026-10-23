@@ -5,7 +5,7 @@
 
 .puk-vis-sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
 .puk-vis-btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 var(--space-4);border:1px solid var(--puk-black-100,#222);border-radius:3px;background:var(--puk-white);color:var(--text-default);font:var(--type-body-sm);font-weight:var(--fw-medium);cursor:pointer}
-.puk-vis-btn:hover{background:var(--ui-wash);color:var(--puk-blue-100)}
+.puk-vis-btn:hover{background:var(--ui-wash);color:var(--text-link-on-tint)} /* Hover auf grauer Fläche in Blau 125 (Nachbesserung W-3, 23.10.2026) */
 .puk-vis-btn:focus{outline:none}.puk-vis-btn:focus-visible{box-shadow:var(--focus-ring)}
 .puk-vis-btn:disabled{background:var(--action-disabled-bg);color:var(--action-disabled-fg);border-color:var(--action-disabled-bg);cursor:not-allowed}
 .puk-vis-btn[aria-pressed="true"]{background:var(--puk-black-100,#222);color:var(--puk-white)}
