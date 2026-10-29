@@ -23,6 +23,7 @@ Nachweise der ursprünglichen Korrekturen: [Borderline, PR #704](https://github.
 - Bei einem Sprunglink auf einen Abschnitt erhält das Ziel `tabindex="-1"`. Dadurch erreicht der native Link den Abschnitt mit Tastaturfokus auch ohne JavaScript; die vorhandenen Fokusstyles markieren ihn sichtbar. Keine positiven tabindex-Werte verwenden.
 - Ziel bei 375 × 812 px und Standardschrift: Mindestens der erste hilfreiche Einstieg ist im ersten Bildschirm erkennbar. Bei sehr langen Titeln oder mehreren Einleitungszeilen zuerst Wiederholungen und Abstände prüfen. Das ist ein Gestaltungsziel, keine starre Höhenbegrenzung.
 - Bei 200 % Schrift darf die Seite länger werden. Inhalte, Navigation und Bedienflächen bleiben vollständig erreichbar; keine Schrift verkleinern, Inhalte abschneiden oder Höhe begrenzen, um den ersten Bildschirm einzuhalten.
+- Ein Titelbild im Einstieg ist nur auf der Startseite und nur einmal je Website zulässig: rein dekorativ, für Screenreader verborgen, ohne Bedeutung und ohne Rot. Es darf Schattierungen von PUK-Blau nebeneinander und Gelb zeigen und gilt als das eine blaue Feld (Profilentscheid 29.10.2026, [Farben und Kontrast](02-farben-und-kontrast.md)).
 - Keine automatische Krisenrubrik ergänzen. Reguläre Telefonnummern sind erlaubt; Krisenkontakte werden nach Thema bewusst ausgewählt, wie im README festgelegt.
 
 ## Kontrolle bei jeder neuen Website

@@ -9,6 +9,10 @@
   /* Abgedunkelte Schattierung über 100 % — zulässig nach «sämtliche
      Schattierungen». Hover und Press auf blauen Flächen; 6,37:1 mit Weiss. */
   --puk-blue-125:#2B4FE0;
+  /* Nachtblau (Profilentscheid 29.10.2026): dunkle Schattierung von PUK-Blau
+     für ruhige dunkle Flächen, etwa ein Band. Nur Fläche: kein Text, kein
+     Seitengrund. Weiss darauf 13,69:1, Blau 25 darauf 10,45:1. */
+  --puk-blue-night:#182866;
 
   /* Schwarz — Pantone Black 6 U / C0 M0 Y0 K100 / RAL 7021 / RGB 34 34 34 */
   --puk-black-100:#222222;
@@ -104,6 +108,7 @@
   --surface-tint:var(--ui-tint);
   --surface-inverse:var(--puk-black-100);
   --surface-brand:var(--puk-blue-100);
+  --surface-night:var(--puk-blue-night); /* dunkle Fläche wie surface-inverse, nicht das blaue Feld */
 
   --border-hairline:var(--ui-hairline);
   --border-default:var(--puk-black-25);

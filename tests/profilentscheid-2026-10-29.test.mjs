@@ -1,0 +1,90 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import assert from 'node:assert/strict';
+import {before,after,test} from 'node:test';
+import {chromium} from 'playwright';
+import {root,browserOptions} from './helpers.mjs';
+import {serverStart} from '../tools/server.mjs';
+
+// Profilentscheid 29.10.2026: Nachtblau als benannte Schattierung, nachtblaue Fläche, Titelbild der Startseite.
+const tokens=JSON.parse(fs.readFileSync(path.join(root,'tokens.json'),'utf8'));
+const byName=Object.fromEntries(tokens.color.tokens.map(t=>[t.name,t]));
+function hex(name,theme){
+ const t=byName[name];assert.ok(t,name);
+ const v=t.value[theme]??t.value.light;
+ const alias=/^\{(.+)\}$/.exec(v);
+ return alias?hex(alias[1],theme):v.toLowerCase();
+}
+function luminance(h){
+ const c=[1,3,5].map(i=>parseInt(h.slice(i,i+2),16)/255).map(x=>x<=.04045?x/12.92:((x+.055)/1.055)**2.4);
+ return .2126*c[0]+.7152*c[1]+.0722*c[2];
+}
+const ratio=(a,b)=>{const [x,y]=[luminance(a),luminance(b)].sort((m,n)=>n-m);return (x+.05)/(y+.05);};
+const read=p=>fs.readFileSync(path.join(root,p),'utf8');
+
+test('Nachtblau ist benannt, in beiden Themes gleich und trägt Weiss und Blau 25 mit mehr als 7:1',()=>{
+ assert.equal(hex('puk-blue-night','light'),'#182866');
+ assert.equal(hex('surface-night','light'),'#182866');
+ assert.equal(hex('surface-night','kontrast'),'#182866');
+ for(const theme of ['light','kontrast'])for(const fg of ['text-on-dark','puk-blue-25']){
+  const r=ratio(hex(fg,theme),hex('surface-night',theme));
+  assert.ok(r>=7,`${theme} ${fg} ${r.toFixed(2)}`);
+ }
+ assert.equal(ratio(hex('text-on-dark','light'),'#182866').toFixed(2),'13.69');
+ assert.equal(ratio(hex('puk-blue-25','light'),'#182866').toFixed(2),'10.45');
+ for(const fg of ['puk-blue-100','puk-blue-125'])assert.ok(ratio(hex(fg,'light'),'#182866')<4.5,fg);
+ for(const file of ['tokens/colors.css','components/bundle.css']){
+  const css=read(file);
+  assert.match(css,/--puk-blue-night:#182866;/,file);
+  assert.match(css,/--surface-night:var\(--puk-blue-night\);/,file);
+ }
+ assert.doesNotMatch(read('components/bundle.css').split(':root[data-theme="kontrast"]{')[1].split('}')[0],/night/,'Theme «Hoher Kontrast» überschreibt Nachtblau nicht');
+});
+
+test('Leitlinie 02 nennt Geltung, Zählung und die vier Bedingungen des Titelbilds',()=>{
+ const g=read('guidelines/02-farben-und-kontrast.md');
+ for(const s of ['--puk-blue-night','--surface-night','data-puk-surface="night"','13,69:1','10,45:1','zählt nicht als «das eine blaue Feld»','rein dekorativ','für Screenreader verborgen','keine Bedeutung','kein Rot','nur einmal je Website','gilt als das eine blaue Feld der Startseite','ENTSCHEIDE-PROFIL-2026-10-10.md'])assert.ok(g.includes(s),s);
+ assert.ok(g.includes('Einzige Ausnahme ist das Titelbild der Startseite'),'Vermeiden-Regel nennt die Ausnahme');
+});
+
+const fixture=`<!doctype html><html lang="de"><head><meta charset="utf-8"><title>Profilentscheid</title>
+<link rel="stylesheet" href="styles.css"></head>
+<body class="puk-web-page"><main>
+<p><a id="white" href="#x">Link auf Weiss</a></p>
+<section id="band" class="puk-web-band" data-puk-surface="night"><p id="text">Text</p><span id="accent" class="puk-longform__kicker">Akzent</span>
+<a id="link" href="#x">Link</a> <a id="plink" data-puk-link href="#x">Link</a> <a id="btn" class="puk-btn" href="#x">Knopf</a></section>
+<div id="own" data-puk-surface="night"><a id="ownlink" href="#x">Link</a></div>
+</main></body></html>`;
+
+let server,browser;
+before(async()=>{server=await serverStart(root);browser=await chromium.launch(browserOptions);});
+after(async()=>{if(browser)await browser.close();if(server)await server.close();});
+
+test('data-puk-surface="night" setzt Fläche, weisse unterstrichene Links und den umgekehrten Fokusring',async()=>{
+ for(const theme of ['light','kontrast']){
+  const page=await browser.newPage();
+  try{
+   await page.route(server.url+'nachtblau.html',r=>r.fulfill({contentType:'text/html',body:theme==='kontrast'?fixture.replace('<html lang="de">','<html lang="de" data-theme="kontrast">'):fixture}));
+   await page.goto(server.url+'nachtblau.html',{waitUntil:'load'});
+   const c=(q,p='color')=>page.$eval(q,(el,p)=>getComputedStyle(el)[p],p);
+   const night='rgb(24, 40, 102)',white='rgb(255, 255, 255)';
+   assert.equal(await c('#band','backgroundColor'),night,theme);
+   assert.equal(await c('#own','backgroundColor'),night,theme);
+   assert.equal(await c('#text'),white,theme);
+   assert.equal(await c('#accent'),'rgb(216, 224, 255)',theme);
+   for(const id of ['#link','#plink','#ownlink']){
+    assert.equal(await c(id),white,`${theme} ${id}`);
+    assert.match(await c(id,'textDecorationLine'),/underline/,`${theme} ${id}`);
+   }
+   assert.doesNotMatch(await c('#btn','textDecorationLine'),/underline/,`${theme} Knopf-Link ohne Unterstreichung`);
+   await page.hover('#link');
+   assert.equal(await c('#link'),white,`${theme} Hover`);
+   await page.focus('#plink');await page.keyboard.press('Tab');await page.keyboard.press('Shift+Tab');
+   const ring=await page.$eval('#plink',el=>getComputedStyle(el).boxShadow);
+   assert.match(ring,/rgb\(24, 40, 102\) 0px 0px 0px 2px/,`${theme} Fokus innen`);
+   assert.match(ring,/rgb\(255, 255, 255\) 0px 0px 0px 4px/,`${theme} Fokus aussen`);
+   const blue=theme==='kontrast'?'rgb(0, 40, 194)':'rgb(60, 100, 255)';
+   assert.equal(await c('#white'),blue,`${theme} ausserhalb unverändert`);
+  }finally{await page.close();}
+ }
+});
