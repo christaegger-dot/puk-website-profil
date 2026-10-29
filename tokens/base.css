@@ -28,10 +28,10 @@ a:hover{color:var(--text-link-hover)}
 [data-puk-surface="tint"]{background:var(--surface-tint)}
 /* ---- Nachtblaue Fläche (Profilentscheid 29.10.2026) ----
    data-puk-surface="night" setzt Nachtblau als Fläche: Text und Links in Weiss,
-   Links unterstrichen, Akzent und Nebentext in Blau 25. Der Fokusring kehrt sich
-   um (Nachtblau innen, Weiss aussen). Steht nach der allgemeinen Regel, damit
+   Links unterstrichen, Akzent und Nebentext in Blau 25, Sekundär- und Ghost-Button
+   in Weiss (Nachbesserung O-A). Der Fokusring kehrt sich um (Nachtblau innen, Weiss aussen). Steht nach der allgemeinen Regel, damit
    Blau 125 hier nicht greift. */
-[data-puk-surface="night"]{background:var(--surface-night);color:var(--text-on-dark);--text-default:var(--text-on-dark);--text-muted:var(--puk-blue-25);--text-link:var(--text-on-dark);--text-link-hover:var(--text-on-dark);--text-link-visited:var(--text-on-dark);--text-accent:var(--puk-blue-25);--focus-ring:0 0 0 2px var(--surface-night),0 0 0 4px var(--puk-white)}
+[data-puk-surface="night"]{background:var(--surface-night);color:var(--text-on-dark);--text-default:var(--text-on-dark);--text-muted:var(--puk-blue-25);--text-link:var(--text-on-dark);--text-link-hover:var(--text-on-dark);--text-link-visited:var(--text-on-dark);--text-accent:var(--puk-blue-25);--action-quiet-fg:var(--text-on-dark);--focus-ring:0 0 0 2px var(--surface-night),0 0 0 4px var(--puk-white)}
 [data-puk-surface="night"] a:not(.puk-btn){text-decoration:underline;text-underline-offset:.18em}
 [data-puk-sr-only]{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap}
 *,*::before,*::after{box-sizing:border-box}

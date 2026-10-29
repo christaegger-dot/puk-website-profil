@@ -127,3 +127,32 @@ test('Vorschau Website.dc.html rendert ohne Fehler, auch wenn React verzögert l
  }
  assert.equal(texts[1],texts[0],'gleicher Inhalt mit und ohne Verzögerung');
 });
+
+// Nachbesserung 29.10.2026 (ENTSCHEIDE-PROFIL-2026-10-13.md, O-A): Sekundär- und Ghost-Button auf Nachtblau in Weiss.
+const knoepfe=`<!doctype html><html lang="de"><head><meta charset="utf-8"><title>Knöpfe</title><link rel="stylesheet" href="styles.css">
+<script src="platform/vendor/react.production.min.js"></script><script src="platform/vendor/react-dom.production.min.js"></script><script src="components/bundle.js"></script></head>
+<body class="puk-web-page"><main><p><a id="w-sec" class="puk-btn puk-btn--secondary" href="#x">Sekundär</a><span id="w-react"></span></p>
+<section class="puk-web-band" data-puk-surface="night"><a id="n-sec" class="puk-btn puk-btn--secondary" href="#x">Sekundär</a><button id="n-ghost" class="puk-btn puk-btn--ghost" type="button">Ghost</button><span id="n-react"></span></section></main>
+<script src="knoepfe.js"></script></body></html>`;
+const knoepfeJs=`const h=React.createElement,K=window.PUKWeb;
+for(const p of ['w','n'])ReactDOM.createRoot(document.getElementById(p+'-react')).render(h(React.Fragment,null,h(K.Button,{variant:'secondary',id:p+'-rsec'},'Sekundär'),h(K.Button,{variant:'ghost',id:p+'-rghost'},'Ghost')));`;
+test('Sekundär- und Ghost-Button stehen auf Nachtblau in Weiss, ausserhalb unverändert in Schwarz',async()=>{
+ for(const theme of ['light','kontrast']){
+  const page=await browser.newPage();const errors=[];page.on('pageerror',e=>errors.push(String(e)));
+  try{
+   await page.route(server.url+'knoepfe.html',r=>r.fulfill({contentType:'text/html',body:theme==='kontrast'?knoepfe.replace('<html lang="de">','<html lang="de" data-theme="kontrast">'):knoepfe}));
+   await page.route(server.url+'knoepfe.js',r=>r.fulfill({contentType:'text/javascript',body:knoepfeJs}));
+   await page.goto(server.url+'knoepfe.html',{waitUntil:'load'});await page.waitForSelector('#n-rghost');
+   await page.addStyleTag({content:'*{transition:none!important}'});
+   const c=(q,p='color')=>page.$eval(q,(el,p)=>getComputedStyle(el)[p],p);
+   const white='rgb(255, 255, 255)',black='rgb(34, 34, 34)';
+   for(const id of ['#n-sec','#n-ghost','#n-rsec','#n-rghost'])assert.equal(await c(id),white,`${theme} ${id}`);
+   for(const id of ['#n-sec','#n-rsec'])assert.equal(await c(id,'borderTopColor'),white,`${theme} ${id} Rahmen`);
+   for(const id of ['#w-sec','#w-rsec','#w-rghost'])assert.equal(await c(id),black,`${theme} ${id} ausserhalb`);
+   for(const id of ['#n-sec','#n-rsec']){await page.hover(id);assert.equal(await c(id,'backgroundColor'),'rgb(244, 244, 244)',`${theme} ${id} Hover`);assert.notEqual(await c(id),white,`${theme} ${id} Hover-Text`);}
+   await page.mouse.move(0,0);await page.emulateMedia({media:'print'});
+   for(const id of ['#n-sec','#n-rsec'])assert.equal(await c(id),black,`${theme} ${id} Druck`);
+   assert.deepEqual(errors,[],theme);
+  }finally{await page.close();}
+ }
+});

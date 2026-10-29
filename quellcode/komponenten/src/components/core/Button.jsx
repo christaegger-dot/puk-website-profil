@@ -18,14 +18,15 @@ function variantStyle(variant, hovered) {
     case 'secondary':
       return {
         background: hovered ? 'var(--ui-wash)' : 'transparent',
-        color: 'var(--puk-black-100)',
-        border: '1px solid var(--puk-black-100)',
+        /* --action-quiet-fg: Schwarz, auf der nachtblauen Fläche Weiss (Nachbesserung O-A, 29.10.2026); Hover auf der grauen Fläche bleibt Schwarz. */
+        color: hovered ? 'var(--puk-black-100)' : 'var(--action-quiet-fg)',
+        border: '1px solid var(--action-quiet-fg)',
       };
     case 'ghost':
       return {
         background: hovered ? 'var(--ui-wash)' : 'transparent',
         /* Hover auf der grauen Fläche in Blau 125: Blau 100 hätte dort nur 4,28:1 (Nachbesserung W-3, 23.10.2026). */
-        color: hovered ? 'var(--text-link-on-tint)' : 'var(--puk-black-100)',
+        color: hovered ? 'var(--text-link-on-tint)' : 'var(--action-quiet-fg)',
         border: '1px solid transparent',
       };
     case 'danger':
