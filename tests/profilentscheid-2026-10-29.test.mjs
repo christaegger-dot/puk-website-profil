@@ -110,3 +110,20 @@ test('data-puk-surface="night" druckt ohne Fläche mit dunklem Text und Links wi
   }finally{await page.close();}
  }
 });
+
+// Nachbesserung 29.10.2026 (ENTSCHEIDE-PROFIL-2026-10-12.md, O-D): Vorschau rendert auch, wenn React nach ds-base.js eintrifft.
+test('Vorschau Website.dc.html rendert ohne Fehler, auch wenn React verzögert lädt',async()=>{
+ const texts=[];
+ for(const delay of [0,800]){
+  const page=await browser.newPage({viewport:{width:360,height:900}});
+  const errors=[];page.on('pageerror',e=>errors.push(String(e)));page.on('console',m=>{if(m.type()==='error')errors.push(m.text());});
+  try{
+   if(delay)await page.route(u=>/react(-dom)?\.production\.min\.js$/.test(u.pathname),async r=>{await new Promise(x=>setTimeout(x,delay));await r.continue();});
+   await page.goto(server.url+'templates/website/Website.dc.html',{waitUntil:'networkidle'});
+   await page.waitForFunction(()=>document.body.innerText.includes('Sprechstunden'),null,{timeout:10000});
+   assert.deepEqual(errors,[],`React ${delay} ms verzögert`);
+   texts.push(await page.evaluate(()=>document.body.innerText));
+  }finally{await page.close();}
+ }
+ assert.equal(texts[1],texts[0],'gleicher Inhalt mit und ohne Verzögerung');
+});

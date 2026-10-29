@@ -11,13 +11,25 @@
     l.rel = 'stylesheet'; l.href = base + '/' + p;
     document.head.appendChild(l);
   }
-  const s = document.createElement('script');
-  s.src = base + '/_ds_bundle.js';
-  s.onload = () => {
-    const a = document.createElement('script');
-    a.src = base + '/platform/claude-ds-alias.js';
-    document.head.appendChild(a);
+  // _ds_bundle.js übernimmt window.React schon beim Laden. support.js lädt React
+  // gleichzeitig nach; darum das Bundle erst einfügen, wenn React bereitsteht
+  // (Nachbesserung 29.10.2026, O-D).
+  const loadBundle = () => {
+    const s = document.createElement('script');
+    s.src = base + '/_ds_bundle.js';
+    s.onload = () => {
+      const a = document.createElement('script');
+      a.src = base + '/platform/claude-ds-alias.js';
+      document.head.appendChild(a);
+    };
+    s.onerror = () => console.error('ds-base.js: failed to load ' + s.src + ' — point the base line at the bound design-system folder relative to this page.');
+    document.head.appendChild(s);
   };
-  s.onerror = () => console.error('ds-base.js: failed to load ' + s.src + ' — point the base line at the bound design-system folder relative to this page.');
-  document.head.appendChild(s);
+  const started = Date.now();
+  const waitForReact = () => {
+    if (window.React && window.ReactDOM) loadBundle();
+    else if (Date.now() - started > 15000) console.error('ds-base.js: React was not loaded within 15 s; _ds_bundle.js was not loaded.');
+    else setTimeout(waitForReact, 20);
+  };
+  waitForReact();
 })();

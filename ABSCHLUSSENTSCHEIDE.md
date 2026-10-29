@@ -1,7 +1,7 @@
 # Abschlussentscheide · 17.10.2026
 
 <!-- profil:stand -->
-**Profil 2026.10.11 abgeschlossen · Stand 29.10.2026. Offene Projektpendenzen: 0.**
+**Profil 2026.10.12 abgeschlossen · Stand 29.10.2026. Offene Projektpendenzen: 0.**
 <!-- /profil:stand -->
 
 | Bisherige Aufgabe oder Unklarheit | Abschlussentscheid | Status |
@@ -86,7 +86,17 @@ Christa Egger hat am 29.10.2026 die Behebung von W-A beauftragt («Behebe W-A: D
 | Punkt | Entscheid | Status |
 | --- | --- | --- |
 | W-A · Druck der nachtblauen Fläche | Im Druck entfällt die nachtblaue Fläche; Text, Links und Akzent stehen wie auf Weiss. Am Bildschirm unverändert. | Umgesetzt |
-| O-A bis O-D | Optionale Befunde der Prüfung 2026.10.10; nicht Teil dieses Auftrags. | Offen, nicht beauftragt |
-| Unabhängige Prüfung des Pakets 2026.10.11 | Durch eine Sitzung, die das Paket nicht gebaut hat. | Offen |
+| O-A bis O-D | Optionale Befunde der Prüfung 2026.10.10; nicht Teil dieses Auftrags. O-D ist mit 2026.10.12 behoben. | Offen, nicht beauftragt |
+| Unabhängige Prüfung des Pakets 2026.10.11 | Entfällt; die Prüfung von 2026.10.12 schliesst W-A ein. | Ersetzt |
+
+## Nachbesserung vom 29.10.2026 · Version 2026.10.12
+
+Christa Egger hat am 29.10.2026 die Behebung von O-D beauftragt («Behebe O-D: Vorschaufehler Website.dc.html»). Einzelheiten stehen in [ENTSCHEIDE-PROFIL-2026-10-12.md](ENTSCHEIDE-PROFIL-2026-10-12.md); der Stand 2026.10.11 liegt unverändert im [Archiv](archiv/profilstand-2026-10-29-11/).
+
+| Punkt | Entscheid | Status |
+| --- | --- | --- |
+| O-D · Vorschau `Website.dc.html` | Der Plattformadapter `ds-base.js` lädt `_ds_bundle.js` erst, wenn React bereitsteht. Erzeugte Websites unverändert. | Umgesetzt |
+| O-A bis O-C | Optionale Befunde der Prüfung 2026.10.10; nicht Teil dieses Auftrags. | Offen, nicht beauftragt |
+| Unabhängige Prüfung des Pakets 2026.10.12 | Durch eine Sitzung, die das Paket nicht gebaut hat; schliesst W-A (2026.10.11) und O-D ein. | Offen |
 
 Eingabeparameter der leeren Vorlagen sind keine offenen Projektaufgaben. Der Produktionsschutz bleibt aktiv. Alle Entscheide gelten für diesen abgeschlossenen Profilstand; es gibt keinen zurückgestellten Backlog. Die Nachweise stehen im [Prüfbericht](PRUEFBERICHT.md).
