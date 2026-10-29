@@ -152,7 +152,17 @@ test('Sekundär- und Ghost-Button stehen auf Nachtblau in Weiss, ausserhalb unve
    for(const id of ['#n-sec','#n-rsec'])assert.equal(await c(id,'borderTopColor'),white,`${theme} ${id} Rahmen`);
    for(const id of ['#w-sec','#w-rsec','#w-rghost'])assert.equal(await c(id),black,`${theme} ${id} ausserhalb`);
    for(const id of ['#n-sec','#n-rsec']){await page.hover(id);assert.equal(await c(id,'backgroundColor'),'rgb(244, 244, 244)',`${theme} ${id} Hover`);assert.notEqual(await c(id),white,`${theme} ${id} Hover-Text`);}
-   await page.hover('#leer');await page.emulateMedia({media:'print'});
+   await page.hover('#leer');
+   // Gedrückt per Tastatur (ohne Hover): helle Fläche --ui-field, Schrift darf nicht weiss bleiben.
+   const cdp=await page.context().newCDPSession(page);await cdp.send('DOM.enable');await cdp.send('CSS.enable');
+   const {root}=await cdp.send('DOM.getDocument');
+   for(const id of ['#n-sec','#n-ghost']){
+    const {nodeId}=await cdp.send('DOM.querySelector',{nodeId:root.nodeId,selector:id});
+    await cdp.send('CSS.forcePseudoState',{nodeId,forcedPseudoClasses:['active','focus','focus-visible']});
+    assert.equal(await c(id),black,`${theme} ${id} gedrückt`);
+    await cdp.send('CSS.forcePseudoState',{nodeId,forcedPseudoClasses:[]});
+   }
+   await page.emulateMedia({media:'print'});
    for(const id of ['#n-sec','#n-rsec'])assert.equal(await c(id),black,`${theme} ${id} Druck`);
    assert.deepEqual(errors,[],theme);
   }finally{await page.close();}

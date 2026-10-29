@@ -626,6 +626,8 @@ a:hover{color:var(--text-link-hover)}
 .puk-btn--ghost{background:transparent;color:var(--action-quiet-fg)}
 .puk-btn--secondary:hover,.puk-btn--ghost:hover{background:var(--ui-wash);color:var(--text-link-on-tint)}
 .puk-btn--secondary:active,.puk-btn--ghost:active{background:var(--ui-field)}
+/* Nachtblaue Fläche: gedrückt ohne Hover (Tastatur) liegt die helle Fläche --ui-field unter der weissen Schrift; dann Schwarz wie auf Weiss (Nachbesserung O-A). */
+[data-puk-surface="night"] :is(.puk-btn--secondary,.puk-btn--ghost):active:not(:hover){color:var(--puk-black-100)}
 .puk-btn--danger{background:var(--status-danger-strong-bg);color:var(--status-danger-fg)}.puk-btn--danger:hover{background:var(--status-danger-strong-hover-bg)}
 .puk-btn--sm{min-height:max(32px,var(--puk-target-min,0px));padding:0 14px;font:var(--type-body-sm);font-family:var(--font-core)}
 .puk-btn:disabled{background:var(--action-disabled-bg);color:var(--action-disabled-fg);border-color:transparent;cursor:not-allowed}
