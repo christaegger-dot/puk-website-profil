@@ -1,7 +1,7 @@
 # Abschlussentscheide · 17.10.2026
 
 <!-- profil:stand -->
-**Profil 2026.10.10 abgeschlossen · Stand 29.10.2026. Offene Projektpendenzen: 0.**
+**Profil 2026.10.11 abgeschlossen · Stand 29.10.2026. Offene Projektpendenzen: 0.**
 <!-- /profil:stand -->
 
 | Bisherige Aufgabe oder Unklarheit | Abschlussentscheid | Status |
@@ -77,6 +77,16 @@ Christa Egger hat am 29.10.2026 Nachtblau aus der Website «Borderline – Angeh
 | Nachtblau | `puk-blue-night` #182866 als `surface-night`, benannte Schattierung von PUK-Blau. Nur Fläche, etwa ein ruhiges dunkles Band (`data-puk-surface="night"`); Text Weiss (13,69:1) oder Blau 25 (10,45:1), Links weiss und unterstrichen, Fokusring Nachtblau innen und Weiss aussen. Im Theme «Hoher Kontrast» unverändert. | Umgesetzt |
 | Zählung | Nachtblau zählt wie `surface-inverse` nicht als das eine blaue Feld einer Komposition. | Umgesetzt |
 | Titelbild der Startseite | Einzige Ausnahme von «nicht mehrere blaue Felder nebeneinander»: rein dekorativ und für Screenreader verborgen, ohne Bedeutung, ohne Rot, nur einmal je Website; darf Schattierungen von PUK-Blau nebeneinander und Gelb zeigen und gilt als das eine blaue Feld. | Umgesetzt |
-| Unabhängige Prüfung des Pakets 2026.10.10 | Durch eine Sitzung, die das Paket nicht gebaut hat. | Offen |
+| Unabhängige Prüfung des Pakets 2026.10.10 | Durch eine Sitzung, die das Paket nicht gebaut hat; am 29.10.2026 erfolgt, Paket-SHA `72abb32c…` bestätigt. Keine Befunde «kritisch», ein Befund «wichtig» (W-A), vier «optional»; Bericht im [Archiv](archiv/profilstand-2026-10-29-10/PRUEFBERICHT.md). | Erledigt |
+
+## Nachbesserung vom 29.10.2026 · Version 2026.10.11
+
+Christa Egger hat am 29.10.2026 die Behebung von W-A beauftragt («Behebe W-A: Druck des nachtblauen Bandes»). Einzelheiten stehen in [ENTSCHEIDE-PROFIL-2026-10-11.md](ENTSCHEIDE-PROFIL-2026-10-11.md); der geprüfte Stand 2026.10.10 liegt unverändert im [Archiv](archiv/profilstand-2026-10-29-10/).
+
+| Punkt | Entscheid | Status |
+| --- | --- | --- |
+| W-A · Druck der nachtblauen Fläche | Im Druck entfällt die nachtblaue Fläche; Text, Links und Akzent stehen wie auf Weiss. Am Bildschirm unverändert. | Umgesetzt |
+| O-A bis O-D | Optionale Befunde der Prüfung 2026.10.10; nicht Teil dieses Auftrags. | Offen, nicht beauftragt |
+| Unabhängige Prüfung des Pakets 2026.10.11 | Durch eine Sitzung, die das Paket nicht gebaut hat. | Offen |
 
 Eingabeparameter der leeren Vorlagen sind keine offenen Projektaufgaben. Der Produktionsschutz bleibt aktiv. Alle Entscheide gelten für diesen abgeschlossenen Profilstand; es gibt keinen zurückgestellten Backlog. Die Nachweise stehen im [Prüfbericht](PRUEFBERICHT.md).

@@ -686,6 +686,9 @@ html.puk-scroll-lock{overflow:hidden}
   .puk-vis-figure,.puk-vis-wide,figure,table{break-inside:avoid}
   .puk-web-page a[href^="http"]::after{content:" (" attr(href) ")";font-size:.85em;color:var(--text-muted);word-break:break-all}
   .puk-web-band,.surface-brand{background:none!important;color:var(--text-default)!important}
+  /* Nachtblaue Fläche (Nachbesserung 29.10.2026, W-A): ohne Fläche wie auf Weiss drucken.
+     inherit übernimmt die Textfarben der Umgebung statt Weiss und Blau 25. */
+  [data-puk-surface="night"]{background:none!important;--text-default:inherit;--text-muted:inherit;--text-link:inherit;--text-link-hover:inherit;--text-link-visited:inherit;--text-accent:inherit;color:var(--text-default)!important}
   body{background:#fff}
 }
 
