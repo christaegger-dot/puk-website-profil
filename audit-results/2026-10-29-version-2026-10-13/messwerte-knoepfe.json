@@ -1,0 +1,320 @@
+{
+ "light": {
+  "errs": [],
+  "normal": {
+   "w-sec": {
+    "color": "rgb(34, 34, 34)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgb(34, 34, 34)"
+   },
+   "w-ghost": {
+    "color": "rgb(34, 34, 34)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgba(0, 0, 0, 0)"
+   },
+   "w-rsec": {
+    "color": "rgb(34, 34, 34)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgb(34, 34, 34)"
+   },
+   "w-rghost": {
+    "color": "rgb(34, 34, 34)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgba(0, 0, 0, 0)"
+   },
+   "n-pri": {
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(34, 34, 34)",
+    "border": "rgba(0, 0, 0, 0)"
+   },
+   "n-sec": {
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgb(255, 255, 255)"
+   },
+   "n-ghost": {
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgba(0, 0, 0, 0)"
+   },
+   "n-rsec": {
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgb(255, 255, 255)"
+   },
+   "n-rghost": {
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgba(0, 0, 0, 0)"
+   },
+   "n-rinv": {
+    "color": "rgb(34, 34, 34)",
+    "bg": "rgb(255, 255, 255)",
+    "border": "rgba(0, 0, 0, 0)"
+   }
+  },
+  "hover": {
+   "w-sec": {
+    "color": "rgb(43, 79, 224)",
+    "bg": "rgb(244, 244, 244)",
+    "border": "rgb(34, 34, 34)"
+   },
+   "w-ghost": {
+    "color": "rgb(43, 79, 224)",
+    "bg": "rgb(244, 244, 244)",
+    "border": "rgba(0, 0, 0, 0)"
+   },
+   "w-rsec": {
+    "color": "rgb(34, 34, 34)",
+    "bg": "rgb(244, 244, 244)",
+    "border": "rgb(34, 34, 34)"
+   },
+   "w-rghost": {
+    "color": "rgb(43, 79, 224)",
+    "bg": "rgb(244, 244, 244)",
+    "border": "rgba(0, 0, 0, 0)"
+   },
+   "n-pri": {
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(60, 100, 255)",
+    "border": "rgba(0, 0, 0, 0)"
+   },
+   "n-sec": {
+    "color": "rgb(43, 79, 224)",
+    "bg": "rgb(244, 244, 244)",
+    "border": "rgb(255, 255, 255)"
+   },
+   "n-ghost": {
+    "color": "rgb(43, 79, 224)",
+    "bg": "rgb(244, 244, 244)",
+    "border": "rgba(0, 0, 0, 0)"
+   },
+   "n-rsec": {
+    "color": "rgb(34, 34, 34)",
+    "bg": "rgb(244, 244, 244)",
+    "border": "rgb(255, 255, 255)"
+   },
+   "n-rghost": {
+    "color": "rgb(43, 79, 224)",
+    "bg": "rgb(244, 244, 244)",
+    "border": "rgba(0, 0, 0, 0)"
+   },
+   "n-rinv": {
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(60, 100, 255)",
+    "border": "rgba(0, 0, 0, 0)"
+   }
+  },
+  "print": {
+   "w-sec": {
+    "color": "rgb(34, 34, 34)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgb(34, 34, 34)"
+   },
+   "w-ghost": {
+    "color": "rgb(34, 34, 34)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgba(0, 0, 0, 0)"
+   },
+   "w-rsec": {
+    "color": "rgb(34, 34, 34)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgb(34, 34, 34)"
+   },
+   "w-rghost": {
+    "color": "rgb(34, 34, 34)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgba(0, 0, 0, 0)"
+   },
+   "n-pri": {
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(34, 34, 34)",
+    "border": "rgba(0, 0, 0, 0)"
+   },
+   "n-sec": {
+    "color": "rgb(34, 34, 34)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgb(34, 34, 34)"
+   },
+   "n-ghost": {
+    "color": "rgb(34, 34, 34)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgba(0, 0, 0, 0)"
+   },
+   "n-rsec": {
+    "color": "rgb(34, 34, 34)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgb(34, 34, 34)"
+   },
+   "n-rghost": {
+    "color": "rgb(34, 34, 34)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgba(0, 0, 0, 0)"
+   },
+   "n-rinv": {
+    "color": "rgb(34, 34, 34)",
+    "bg": "rgb(255, 255, 255)",
+    "border": "rgba(0, 0, 0, 0)"
+   }
+  }
+ },
+ "kontrast": {
+  "errs": [],
+  "normal": {
+   "w-sec": {
+    "color": "rgb(34, 34, 34)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgb(34, 34, 34)"
+   },
+   "w-ghost": {
+    "color": "rgb(34, 34, 34)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgba(0, 0, 0, 0)"
+   },
+   "w-rsec": {
+    "color": "rgb(34, 34, 34)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgb(34, 34, 34)"
+   },
+   "w-rghost": {
+    "color": "rgb(34, 34, 34)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgba(0, 0, 0, 0)"
+   },
+   "n-pri": {
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(34, 34, 34)",
+    "border": "rgba(0, 0, 0, 0)"
+   },
+   "n-sec": {
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgb(255, 255, 255)"
+   },
+   "n-ghost": {
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgba(0, 0, 0, 0)"
+   },
+   "n-rsec": {
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgb(255, 255, 255)"
+   },
+   "n-rghost": {
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgba(0, 0, 0, 0)"
+   },
+   "n-rinv": {
+    "color": "rgb(34, 34, 34)",
+    "bg": "rgb(255, 255, 255)",
+    "border": "rgba(0, 0, 0, 0)"
+   }
+  },
+  "hover": {
+   "w-sec": {
+    "color": "rgb(0, 31, 153)",
+    "bg": "rgb(244, 244, 244)",
+    "border": "rgb(34, 34, 34)"
+   },
+   "w-ghost": {
+    "color": "rgb(0, 31, 153)",
+    "bg": "rgb(244, 244, 244)",
+    "border": "rgba(0, 0, 0, 0)"
+   },
+   "w-rsec": {
+    "color": "rgb(34, 34, 34)",
+    "bg": "rgb(244, 244, 244)",
+    "border": "rgb(34, 34, 34)"
+   },
+   "w-rghost": {
+    "color": "rgb(0, 31, 153)",
+    "bg": "rgb(244, 244, 244)",
+    "border": "rgba(0, 0, 0, 0)"
+   },
+   "n-pri": {
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(0, 40, 194)",
+    "border": "rgba(0, 0, 0, 0)"
+   },
+   "n-sec": {
+    "color": "rgb(0, 31, 153)",
+    "bg": "rgb(244, 244, 244)",
+    "border": "rgb(255, 255, 255)"
+   },
+   "n-ghost": {
+    "color": "rgb(0, 31, 153)",
+    "bg": "rgb(244, 244, 244)",
+    "border": "rgba(0, 0, 0, 0)"
+   },
+   "n-rsec": {
+    "color": "rgb(34, 34, 34)",
+    "bg": "rgb(244, 244, 244)",
+    "border": "rgb(255, 255, 255)"
+   },
+   "n-rghost": {
+    "color": "rgb(0, 31, 153)",
+    "bg": "rgb(244, 244, 244)",
+    "border": "rgba(0, 0, 0, 0)"
+   },
+   "n-rinv": {
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(0, 40, 194)",
+    "border": "rgba(0, 0, 0, 0)"
+   }
+  },
+  "print": {
+   "w-sec": {
+    "color": "rgb(34, 34, 34)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgb(34, 34, 34)"
+   },
+   "w-ghost": {
+    "color": "rgb(34, 34, 34)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgba(0, 0, 0, 0)"
+   },
+   "w-rsec": {
+    "color": "rgb(34, 34, 34)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgb(34, 34, 34)"
+   },
+   "w-rghost": {
+    "color": "rgb(34, 34, 34)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgba(0, 0, 0, 0)"
+   },
+   "n-pri": {
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgb(34, 34, 34)",
+    "border": "rgba(0, 0, 0, 0)"
+   },
+   "n-sec": {
+    "color": "rgb(34, 34, 34)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgb(34, 34, 34)"
+   },
+   "n-ghost": {
+    "color": "rgb(34, 34, 34)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgba(0, 0, 0, 0)"
+   },
+   "n-rsec": {
+    "color": "rgb(34, 34, 34)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgb(34, 34, 34)"
+   },
+   "n-rghost": {
+    "color": "rgb(34, 34, 34)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "border": "rgba(0, 0, 0, 0)"
+   },
+   "n-rinv": {
+    "color": "rgb(34, 34, 34)",
+    "bg": "rgb(255, 255, 255)",
+    "border": "rgba(0, 0, 0, 0)"
+   }
+  }
+ }
+}

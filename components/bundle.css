@@ -123,6 +123,7 @@
   --action-primary-fg:var(--puk-white);
   --action-accent-bg:var(--puk-blue-100);
   --action-accent-bg-hover:var(--puk-blue-125);
+  --action-quiet-fg:var(--puk-black-100); /* Text und Rahmen von Sekundär- und Ghost-Button; nachtblaue Fläche: Weiss */
   --action-disabled-bg:var(--puk-black-25);
   --action-disabled-fg:var(--puk-black-50);
 
@@ -407,10 +408,10 @@ a:hover{color:var(--text-link-hover)}
 [data-puk-surface="tint"]{background:var(--surface-tint)}
 /* ---- Nachtblaue Fläche (Profilentscheid 29.10.2026) ----
    data-puk-surface="night" setzt Nachtblau als Fläche: Text und Links in Weiss,
-   Links unterstrichen, Akzent und Nebentext in Blau 25. Der Fokusring kehrt sich
-   um (Nachtblau innen, Weiss aussen). Steht nach der allgemeinen Regel, damit
+   Links unterstrichen, Akzent und Nebentext in Blau 25, Sekundär- und Ghost-Button
+   in Weiss (Nachbesserung O-A). Der Fokusring kehrt sich um (Nachtblau innen, Weiss aussen). Steht nach der allgemeinen Regel, damit
    Blau 125 hier nicht greift. */
-[data-puk-surface="night"]{background:var(--surface-night);color:var(--text-on-dark);--text-default:var(--text-on-dark);--text-muted:var(--puk-blue-25);--text-link:var(--text-on-dark);--text-link-hover:var(--text-on-dark);--text-link-visited:var(--text-on-dark);--text-accent:var(--puk-blue-25);--focus-ring:0 0 0 2px var(--surface-night),0 0 0 4px var(--puk-white)}
+[data-puk-surface="night"]{background:var(--surface-night);color:var(--text-on-dark);--text-default:var(--text-on-dark);--text-muted:var(--puk-blue-25);--text-link:var(--text-on-dark);--text-link-hover:var(--text-on-dark);--text-link-visited:var(--text-on-dark);--text-accent:var(--puk-blue-25);--action-quiet-fg:var(--text-on-dark);--focus-ring:0 0 0 2px var(--surface-night),0 0 0 4px var(--puk-white)}
 [data-puk-surface="night"] a:not(.puk-btn){text-decoration:underline;text-underline-offset:.18em}
 [data-puk-sr-only]{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap}
 *,*::before,*::after{box-sizing:border-box}
@@ -621,8 +622,8 @@ a:hover{color:var(--text-link-hover)}
 .puk-btn:active{background:var(--puk-blue-125)}
 .puk-btn:focus-visible{outline:none;box-shadow:var(--focus-ring)}
 .puk-btn--accent{background:var(--action-accent-bg)}.puk-btn--accent:hover{background:var(--action-accent-bg-hover)}
-.puk-btn--secondary{background:transparent;color:var(--puk-black-100);border-color:var(--puk-black-100)}
-.puk-btn--ghost{background:transparent;color:var(--puk-black-100)}
+.puk-btn--secondary{background:transparent;color:var(--action-quiet-fg);border-color:var(--action-quiet-fg)}
+.puk-btn--ghost{background:transparent;color:var(--action-quiet-fg)}
 .puk-btn--secondary:hover,.puk-btn--ghost:hover{background:var(--ui-wash);color:var(--text-link-on-tint)}
 .puk-btn--secondary:active,.puk-btn--ghost:active{background:var(--ui-field)}
 .puk-btn--danger{background:var(--status-danger-strong-bg);color:var(--status-danger-fg)}.puk-btn--danger:hover{background:var(--status-danger-strong-hover-bg)}
@@ -688,7 +689,7 @@ html.puk-scroll-lock{overflow:hidden}
   .puk-web-band,.surface-brand{background:none!important;color:var(--text-default)!important}
   /* Nachtblaue Fläche (Nachbesserung 29.10.2026, W-A): ohne Fläche wie auf Weiss drucken.
      inherit übernimmt die Textfarben der Umgebung statt Weiss und Blau 25. */
-  [data-puk-surface="night"]{background:none!important;--text-default:inherit;--text-muted:inherit;--text-link:inherit;--text-link-hover:inherit;--text-link-visited:inherit;--text-accent:inherit;color:var(--text-default)!important}
+  [data-puk-surface="night"]{background:none!important;--text-default:inherit;--text-muted:inherit;--text-link:inherit;--text-link-hover:inherit;--text-link-visited:inherit;--text-accent:inherit;--action-quiet-fg:inherit;color:var(--text-default)!important}
   body{background:#fff}
 }
 

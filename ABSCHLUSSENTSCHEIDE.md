@@ -1,7 +1,7 @@
 # Abschlussentscheide · 17.10.2026
 
 <!-- profil:stand -->
-**Profil 2026.10.12 abgeschlossen · Stand 29.10.2026. Offene Projektpendenzen: 0.**
+**Profil 2026.10.13 abgeschlossen · Stand 29.10.2026. Offene Projektpendenzen: 0.**
 <!-- /profil:stand -->
 
 | Bisherige Aufgabe oder Unklarheit | Abschlussentscheid | Status |
@@ -96,7 +96,17 @@ Christa Egger hat am 29.10.2026 die Behebung von O-D beauftragt («Behebe O-D: V
 | Punkt | Entscheid | Status |
 | --- | --- | --- |
 | O-D · Vorschau `Website.dc.html` | Der Plattformadapter `ds-base.js` lädt `_ds_bundle.js` erst, wenn React bereitsteht. Erzeugte Websites unverändert. | Umgesetzt |
-| O-A bis O-C | Optionale Befunde der Prüfung 2026.10.10; nicht Teil dieses Auftrags. | Offen, nicht beauftragt |
-| Unabhängige Prüfung des Pakets 2026.10.12 | Durch eine Sitzung, die das Paket nicht gebaut hat; schliesst W-A (2026.10.11) und O-D ein. | Offen |
+| O-A bis O-C | Optionale Befunde der Prüfung 2026.10.10; nicht Teil dieses Auftrags. O-A ist mit 2026.10.13 behoben. | Offen, nicht beauftragt |
+| Unabhängige Prüfung des Pakets 2026.10.12 | Entfällt; die Prüfung von 2026.10.13 schliesst W-A und O-D ein. | Ersetzt |
+
+## Nachbesserung vom 29.10.2026 · Version 2026.10.13
+
+Christa Egger hat am 29.10.2026 die Behebung von O-A beauftragt («Behebe O-A: Knöpfe auf Nachtblau»). Einzelheiten stehen in [ENTSCHEIDE-PROFIL-2026-10-13.md](ENTSCHEIDE-PROFIL-2026-10-13.md); der Stand 2026.10.12 liegt unverändert im [Archiv](archiv/profilstand-2026-10-29-12/).
+
+| Punkt | Entscheid | Status |
+| --- | --- | --- |
+| O-A · Knöpfe auf Nachtblau | Sekundär- und Ghost-Button (HTML-Klassen und React `Button`) stehen auf der nachtblauen Fläche in Weiss; neues Token `action-quiet-fg`. Hover und Druck wie auf Weiss. | Umgesetzt |
+| O-B und O-C | Optionale Befunde der Prüfung 2026.10.10; nicht Teil dieses Auftrags. | Offen, nicht beauftragt |
+| Unabhängige Prüfung des Pakets 2026.10.13 | Durch eine Sitzung, die das Paket nicht gebaut hat; schliesst W-A (2026.10.11), O-D (2026.10.12) und O-A ein. | Offen |
 
 Eingabeparameter der leeren Vorlagen sind keine offenen Projektaufgaben. Der Produktionsschutz bleibt aktiv. Alle Entscheide gelten für diesen abgeschlossenen Profilstand; es gibt keinen zurückgestellten Backlog. Die Nachweise stehen im [Prüfbericht](PRUEFBERICHT.md).
