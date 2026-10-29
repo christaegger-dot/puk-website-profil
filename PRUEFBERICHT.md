@@ -20,6 +20,8 @@ Profil 2026.10.13 behebt den Befund O-A der unabhängigen Prüfung des Pakets 20
   - keine Skriptfehler.
 
   **Gegenprobe:** Mit dem bisherigen `components/bundle.css` und `components/bundle.js` scheitert genau dieser Test (`# pass 5`, `# fail 1`).
+
+  **Nachtrag nach dem ersten CI-Lauf:** Die Headless-Shell der CI beginnt mit der Maus auf (0,0) über dem ersten Knopf und mass dort die Hover-Farbe. Mit der lokalen Headless-Shell (Build 1243) war das jedes Mal reproduzierbar. Der Test führt die Maus jetzt vor den Messungen auf einen leeren Absatz. Danach ist er in der Headless-Shell und in Chromium je dreimal grün, die Gegenprobe scheitert in beiden weiterhin, und die gesamte Suite mit der Headless-Shell ergibt 115 bestanden.
 - **Regeln:** Leitlinie 02 (Abschnitt «Profilentscheid 29.10.2026», neuer Punkt «Knöpfe darauf») und README (Nachtblau). `ENTSCHEIDE-PROFIL-2026-10-10.md` und `ENTSCHEIDE-PROFIL-2026-10-12.md` (Abschnitt «Prüfung»), `ABSCHLUSSENTSCHEIDE.md`, `archiv/README.md`.
 - **Nicht geändert:** die Befunde O-B und O-C der Prüfung 2026.10.10 (nicht beauftragt) und der Primärknopf auf Nachtblau (schwarze Fläche, weisse Beschriftung 15,91:1).
 
