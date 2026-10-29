@@ -1,7 +1,7 @@
 # Arbeitsregeln · PUK Website-Profil
 
 <!-- profil:stand -->
-**Profil 2026.10.13 · Stand 29.10.2026.** Version und Build-Stände ausschliesslich in `package.json` pflegen, danach `npm run generieren`.
+**Profil 2026.10.14 · Stand 29.10.2026.** Version und Build-Stände ausschliesslich in `package.json` pflegen, danach `npm run generieren`.
 <!-- /profil:stand -->
 
 Verbindliche Quelle ist dieses Repository. Änderungen an Leitlinien, Tokens, Komponenten und Starter werden hier umgesetzt und geprüft. Private Design-Artefakte sind historische Quellen; es besteht kein Synchronisierungsauftrag.

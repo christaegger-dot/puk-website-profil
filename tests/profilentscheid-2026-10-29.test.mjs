@@ -152,9 +152,56 @@ test('Sekundär- und Ghost-Button stehen auf Nachtblau in Weiss, ausserhalb unve
    for(const id of ['#n-sec','#n-rsec'])assert.equal(await c(id,'borderTopColor'),white,`${theme} ${id} Rahmen`);
    for(const id of ['#w-sec','#w-rsec','#w-rghost'])assert.equal(await c(id),black,`${theme} ${id} ausserhalb`);
    for(const id of ['#n-sec','#n-rsec']){await page.hover(id);assert.equal(await c(id,'backgroundColor'),'rgb(244, 244, 244)',`${theme} ${id} Hover`);assert.notEqual(await c(id),white,`${theme} ${id} Hover-Text`);}
-   await page.hover('#leer');await page.emulateMedia({media:'print'});
+   await page.hover('#leer');
+   // Gedrückt per Tastatur (ohne Hover): helle Fläche --ui-field, Schrift darf nicht weiss bleiben.
+   const cdp=await page.context().newCDPSession(page);await cdp.send('DOM.enable');await cdp.send('CSS.enable');
+   const {root}=await cdp.send('DOM.getDocument');
+   for(const id of ['#n-sec','#n-ghost']){
+    const {nodeId}=await cdp.send('DOM.querySelector',{nodeId:root.nodeId,selector:id});
+    await cdp.send('CSS.forcePseudoState',{nodeId,forcedPseudoClasses:['active','focus','focus-visible']});
+    assert.equal(await c(id),black,`${theme} ${id} gedrückt`);
+    await cdp.send('CSS.forcePseudoState',{nodeId,forcedPseudoClasses:[]});
+   }
+   await page.emulateMedia({media:'print'});
    for(const id of ['#n-sec','#n-rsec'])assert.equal(await c(id),black,`${theme} ${id} Druck`);
    assert.deepEqual(errors,[],theme);
+  }finally{await page.close();}
+ }
+});
+
+// Nachbesserung 29.10.2026 (ENTSCHEIDE-PROFIL-2026-10-14.md, O-C): Links, Akzent, Nebentext und ruhige Knöpfe im blauen Band in Weiss.
+const blauesBand=`<!doctype html><html lang="de"><head><meta charset="utf-8"><title>Blaues Band</title><link rel="stylesheet" href="styles.css"></head>
+<body class="puk-web-page"><main><p id="leer">Leer</p><p><a id="w-a" href="#x">Link auf Weiss</a> <button id="w-dis" class="puk-btn puk-btn--secondary" disabled>Aus</button></p>
+<section id="band" class="puk-web-band"><p id="kicker" class="puk-longform__kicker">Kicker</p><p id="text">Text mit <a id="link" href="#x">Link</a></p>
+<p id="muted" style="color:var(--text-muted)">Nebentext</p><button id="sec" class="puk-btn puk-btn--secondary">Sekundär</button><button id="ghost" class="puk-btn puk-btn--ghost">Ghost</button><button id="dis" class="puk-btn puk-btn--secondary" disabled>Aus</button></section></main></body></html>`;
+test('Im blauen Band stehen Links, Akzent, Nebentext und ruhige Knöpfe in Weiss; Druck wie auf Weiss',async()=>{
+ for(const theme of ['light','kontrast']){
+  const page=await browser.newPage();
+  try{
+   await page.route(server.url+'blaues-band.html',r=>r.fulfill({contentType:'text/html',body:theme==='kontrast'?blauesBand.replace('<html lang="de">','<html lang="de" data-theme="kontrast">'):blauesBand}));
+   await page.goto(server.url+'blaues-band.html',{waitUntil:'load'});
+   await page.addStyleTag({content:'*{transition:none!important}'});
+   await page.hover('#leer');
+   const c=(q,p='color')=>page.$eval(q,(el,p)=>getComputedStyle(el)[p],p);
+   const white='rgb(255, 255, 255)',black='rgb(34, 34, 34)';
+   for(const id of ['#kicker','#text','#link','#muted','#sec','#ghost'])assert.equal(await c(id),white,`${theme} ${id}`);
+   assert.match(await c('#link','textDecorationLine'),/underline/,`${theme} Link unterstrichen`);
+   assert.equal(await c('#sec','borderTopColor'),white,`${theme} Sekundär-Rahmen`);
+   for(const p of ['color','backgroundColor','borderTopColor'])assert.equal(await c('#dis',p),await c('#w-dis',p),`${theme} deaktiviert ${p}`);
+   await page.hover('#sec');assert.equal(await c('#sec','backgroundColor'),'rgb(244, 244, 244)',`${theme} Hover`);assert.notEqual(await c('#sec'),white,`${theme} Hover-Text`);
+   await page.hover('#leer');
+   const cdp=await page.context().newCDPSession(page);await cdp.send('DOM.enable');await cdp.send('CSS.enable');
+   const {root}=await cdp.send('DOM.getDocument');
+   for(const id of ['#sec','#ghost']){
+    const {nodeId}=await cdp.send('DOM.querySelector',{nodeId:root.nodeId,selector:id});
+    await cdp.send('CSS.forcePseudoState',{nodeId,forcedPseudoClasses:['active','focus','focus-visible']});
+    assert.equal(await c(id),black,`${theme} ${id} gedrückt`);
+    await cdp.send('CSS.forcePseudoState',{nodeId,forcedPseudoClasses:[]});
+   }
+   await page.emulateMedia({media:'print'});
+   const onWhite=await c('#w-a');
+   for(const id of ['#link','#kicker'])assert.equal(await c(id),onWhite,`${theme} ${id} Druck`);
+   for(const id of ['#text','#sec','#ghost'])assert.equal(await c(id),black,`${theme} ${id} Druck`);
   }finally{await page.close();}
  }
 });

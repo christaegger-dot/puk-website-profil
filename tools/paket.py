@@ -11,7 +11,7 @@ PROFILE = json.loads((ROOT / 'package.json').read_text(encoding='utf-8'))
 NAME = 'puk-website-profil-' + PROFILE['version'] + '.zip'
 STAMP = date.fromisoformat(PROFILE['pukProfil']['stand'])
 DIRECTORIES = ('assets', 'components', 'fonts', 'licenses', 'tokens', 'templates', 'ui_kits', 'platform', 'quellcode', 'guidelines', 'tools', 'tests', '.github')
-FILES = ('README.md', 'START-HIER.md', 'MUSTER-WAEHLEN.md', 'AGENTS.md', 'CLAUDE.md', 'ABSCHLUSSENTSCHEIDE.md', 'ENTSCHEIDE-PROFIL-2026-10-8.md', 'ENTSCHEIDE-PROFIL-2026-10-9.md', 'ENTSCHEIDE-PROFIL-2026-10-10.md', 'ENTSCHEIDE-PROFIL-2026-10-11.md', 'ENTSCHEIDE-PROFIL-2026-10-12.md', 'ENTSCHEIDE-PROFIL-2026-10-13.md', 'PRUEFBERICHT.md', 'styles.css', 'tokens.json', '_ds_bundle.js', '_headers', 'index.html', 'musterauswahl.html', 'package.json', 'package-lock.json', 'requirements.txt', '.gitignore')
+FILES = ('README.md', 'START-HIER.md', 'MUSTER-WAEHLEN.md', 'AGENTS.md', 'CLAUDE.md', 'ABSCHLUSSENTSCHEIDE.md', 'ENTSCHEIDE-PROFIL-2026-10-8.md', 'ENTSCHEIDE-PROFIL-2026-10-9.md', 'ENTSCHEIDE-PROFIL-2026-10-10.md', 'ENTSCHEIDE-PROFIL-2026-10-11.md', 'ENTSCHEIDE-PROFIL-2026-10-12.md', 'ENTSCHEIDE-PROFIL-2026-10-13.md', 'ENTSCHEIDE-PROFIL-2026-10-14.md', 'PRUEFBERICHT.md', 'styles.css', 'tokens.json', '_ds_bundle.js', '_headers', 'index.html', 'musterauswahl.html', 'package.json', 'package-lock.json', 'requirements.txt', '.gitignore')
 
 
 def entries():

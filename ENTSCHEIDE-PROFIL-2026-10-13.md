@@ -26,4 +26,4 @@ Die Befunde O-B und O-C bleiben offen; sie sind nicht Teil dieses Auftrags.
 
 ## Prüfung
 
-Die technische Selbstprüfung steht im [Prüfbericht](PRUEFBERICHT.md). Diese Sitzung hat das Paket 2026.10.10 unabhängig geprüft und die Versionen 2026.10.11 bis 2026.10.13 gebaut. Das Paket `puk-website-profil-2026.10.13.zip` prüft darum eine andere Sitzung. Die Prüfung schliesst die Nachbesserungen W-A (2026.10.11) und O-D (2026.10.12) ein. Kein Merge und keine Veröffentlichung ohne gesonderten Auftrag.
+Die technische Selbstprüfung steht im [Prüfbericht](PRUEFBERICHT.md). Diese Sitzung hat das Paket 2026.10.10 unabhängig geprüft und die Versionen 2026.10.11 bis 2026.10.13 gebaut. Das Paket `puk-website-profil-2026.10.13.zip` wurde nicht unabhängig geprüft; an seine Stelle tritt die Prüfung von 2026.10.14 ([ENTSCHEIDE-PROFIL-2026-10-14.md](ENTSCHEIDE-PROFIL-2026-10-14.md)). Nachtrag: Der gedrückte Zustand ohne Hover zeigte in 2026.10.13 noch weisse Schrift auf `--ui-field`; die Korrektur kam nach dem Merge von PR #145 und ist in 2026.10.14 enthalten. Kein Merge und keine Veröffentlichung ohne gesonderten Auftrag.
