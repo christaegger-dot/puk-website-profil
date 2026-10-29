@@ -23,3 +23,5 @@ Verbindlich sind die [aktuellen Regeln](../README.md), die [Abschlussentscheide]
 `profilstand-2026-10-29-11/` erhält Profil 2026.10.11 mit Selbstprüfbericht, Entscheiddatei, Matrixdaten und unverändertem Paket (SHA-256 `62f9e5e2…`); dieses Paket wurde nicht unabhängig geprüft. Profil 2026.10.12 behebt den Befund O-D der Prüfung 2026.10.10: Der Plattformadapter `ds-base.js` lädt `_ds_bundle.js` erst, wenn React bereitsteht.
 
 `profilstand-2026-10-29-12/` erhält Profil 2026.10.12 mit Selbstprüfbericht, Entscheiddatei, Matrixdaten und unverändertem Paket (SHA-256 `22d71a6f…`); dieses Paket wurde nicht unabhängig geprüft. Profil 2026.10.13 behebt den Befund O-A der Prüfung 2026.10.10: Sekundär- und Ghost-Button stehen auf der nachtblauen Fläche in Weiss.
+
+`profilstand-2026-10-29-13/` erhält Profil 2026.10.13 mit Selbstprüfbericht, Entscheiddatei, Matrixdaten und unverändertem Paket (SHA-256 `ce36829b…`); dieses Paket wurde nicht unabhängig geprüft. Profil 2026.10.14 ergänzt den gedrückten Zustand der Knöpfe auf Nachtblau und behebt O-B (Karte «PUK-Blau») und O-C (Links, Akzent, Nebentext und Knöpfe im blauen Band).

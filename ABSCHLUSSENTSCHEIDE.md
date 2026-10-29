@@ -1,7 +1,7 @@
 # Abschlussentscheide · 17.10.2026
 
 <!-- profil:stand -->
-**Profil 2026.10.13 abgeschlossen · Stand 29.10.2026. Offene Projektpendenzen: 0.**
+**Profil 2026.10.14 abgeschlossen · Stand 29.10.2026. Offene Projektpendenzen: 0.**
 <!-- /profil:stand -->
 
 | Bisherige Aufgabe oder Unklarheit | Abschlussentscheid | Status |
@@ -106,7 +106,19 @@ Christa Egger hat am 29.10.2026 die Behebung von O-A beauftragt («Behebe O-A: K
 | Punkt | Entscheid | Status |
 | --- | --- | --- |
 | O-A · Knöpfe auf Nachtblau | Sekundär- und Ghost-Button (HTML-Klassen und React `Button`) stehen auf der nachtblauen Fläche in Weiss; neues Token `action-quiet-fg`. Hover und Druck wie auf Weiss. | Umgesetzt |
-| O-B und O-C | Optionale Befunde der Prüfung 2026.10.10; nicht Teil dieses Auftrags. | Offen, nicht beauftragt |
-| Unabhängige Prüfung des Pakets 2026.10.13 | Durch eine Sitzung, die das Paket nicht gebaut hat; schliesst W-A (2026.10.11), O-D (2026.10.12) und O-A ein. | Offen |
+| O-B und O-C | Optionale Befunde der Prüfung 2026.10.10; nicht Teil dieses Auftrags. Mit 2026.10.14 behoben. | Offen, nicht beauftragt |
+| Unabhängige Prüfung des Pakets 2026.10.13 | Entfällt; die Prüfung von 2026.10.14 schliesst W-A, O-D und O-A ein. | Ersetzt |
+
+## Nachbesserung vom 29.10.2026 · Version 2026.10.14
+
+Christa Egger hat am 29.10.2026 in der Prüf- und Nachbesserungssitzung entschieden, die übrigen Punkte als 2026.10.14 umzusetzen («Alles als 2026.10.14»): den gedrückten Zustand der Knöpfe auf Nachtblau, der in PR #145 nach dem Merge ankam, O-B, O-C und die Knöpfe im blauen Band. Einzelheiten stehen in [ENTSCHEIDE-PROFIL-2026-10-14.md](ENTSCHEIDE-PROFIL-2026-10-14.md); der Stand 2026.10.13 liegt unverändert im [Archiv](archiv/profilstand-2026-10-29-13/).
+
+| Punkt | Entscheid | Status |
+| --- | --- | --- |
+| O-A, Nachtrag · gedrückt ohne Hover | Sekundär- und Ghost-Button auf Nachtblau gedrückt ohne Hover in Schwarz auf `--ui-field` statt Weiss (1,11:1). | Umgesetzt |
+| O-B · Karte «PUK-Blau» | Die Karte nennt die vier Bedingungen des Titelbilds und verweist auf Leitlinie 02. | Umgesetzt |
+| O-C · blaues Band | Links (unterstrichen), Akzent und Nebentext in Weiss statt Blau oder Grau auf Blau. | Umgesetzt |
+| Knöpfe im blauen Band | Sekundär- und Ghost-Button in Weiss wie auf Nachtblau; Hover, gedrückt und Druck wie dort. | Umgesetzt |
+| Unabhängige Prüfung des Pakets 2026.10.14 | Durch eine Sitzung, die das Paket nicht gebaut hat; schliesst W-A, O-D und O-A ein. | Offen |
 
 Eingabeparameter der leeren Vorlagen sind keine offenen Projektaufgaben. Der Produktionsschutz bleibt aktiv. Alle Entscheide gelten für diesen abgeschlossenen Profilstand; es gibt keinen zurückgestellten Backlog. Die Nachweise stehen im [Prüfbericht](PRUEFBERICHT.md).
