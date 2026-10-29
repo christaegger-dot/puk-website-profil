@@ -2,7 +2,7 @@
   "$comment": "Schlanke Vorlage für neue Websites. Mit npm run neu -- name --titel \"Titel\" ein eigenes Projekt anlegen. Enthält keine klinischen Musterinhalte oder fachlichen Freigaben.",
   "kitRevision": "PUK Website Kit 1.10.1-r4 · abgeleitet",
   "canonicalSource": "PUK Zürich Design System 1.10.1 (unverändert)",
-  "assetVersion": "r4-16",
+  "assetVersion": "r4-17",
   "siteTitle": "Titel der neuen Website",
   "shortDescription": "Entwurf einer neuen Website der Fachstelle Angehörigenarbeit.",
   "language": "de-CH",

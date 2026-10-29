@@ -12,6 +12,10 @@
   /* Abgedunkelte Schattierung über 100 % — zulässig nach «sämtliche
      Schattierungen». Hover und Press auf blauen Flächen; 6,37:1 mit Weiss. */
   --puk-blue-125:#2B4FE0;
+  /* Nachtblau (Profilentscheid 29.10.2026): dunkle Schattierung von PUK-Blau
+     für ruhige dunkle Flächen, etwa ein Band. Nur Fläche: kein Text, kein
+     Seitengrund. Weiss darauf 13,69:1, Blau 25 darauf 10,45:1. */
+  --puk-blue-night:#182866;
 
   /* Schwarz — Pantone Black 6 U / C0 M0 Y0 K100 / RAL 7021 / RGB 34 34 34 */
   --puk-black-100:#222222;
@@ -107,6 +111,7 @@
   --surface-tint:var(--ui-tint);
   --surface-inverse:var(--puk-black-100);
   --surface-brand:var(--puk-blue-100);
+  --surface-night:var(--puk-blue-night); /* dunkle Fläche wie surface-inverse, nicht das blaue Feld */
 
   --border-hairline:var(--ui-hairline);
   --border-default:var(--puk-black-25);
@@ -351,6 +356,7 @@
 .puk-web-card-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:20px;margin:32px 0 0;padding:0;list-style:none}
 .puk-web-card-list>li{display:flex;min-width:0}
 .puk-web-band{padding-block:64px;background:var(--puk-blue-100);color:var(--puk-white)}
+.puk-web-band[data-puk-surface="night"]{background:var(--surface-night)} /* Band in Nachtblau, Profilentscheid 29.10.2026 */
 .puk-web-band__inner{display:flex;align-items:flex-end;justify-content:space-between;gap:32px 48px;flex-wrap:wrap}
 .puk-web-footer{border-top:1px solid var(--border-hairline);padding-block:56px;font-size:var(--web-size-body);line-height:1.5}
 .puk-web-footer__grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:32px}
@@ -399,6 +405,13 @@ a:hover{color:var(--text-link-hover)}
    data-puk-surface="tint" setzt zusätzlich die getönte Fläche. */
 [data-puk-surface]{--text-link:var(--text-link-on-tint);--text-accent:var(--text-link-on-tint)}
 [data-puk-surface="tint"]{background:var(--surface-tint)}
+/* ---- Nachtblaue Fläche (Profilentscheid 29.10.2026) ----
+   data-puk-surface="night" setzt Nachtblau als Fläche: Text und Links in Weiss,
+   Links unterstrichen, Akzent und Nebentext in Blau 25. Der Fokusring kehrt sich
+   um (Nachtblau innen, Weiss aussen). Steht nach der allgemeinen Regel, damit
+   Blau 125 hier nicht greift. */
+[data-puk-surface="night"]{background:var(--surface-night);color:var(--text-on-dark);--text-default:var(--text-on-dark);--text-muted:var(--puk-blue-25);--text-link:var(--text-on-dark);--text-link-hover:var(--text-on-dark);--text-link-visited:var(--text-on-dark);--text-accent:var(--puk-blue-25);--focus-ring:0 0 0 2px var(--surface-night),0 0 0 4px var(--puk-white)}
+[data-puk-surface="night"] a:not(.puk-btn){text-decoration:underline;text-underline-offset:.18em}
 [data-puk-sr-only]{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap}
 *,*::before,*::after{box-sizing:border-box}
 /* ---- Fokus ----

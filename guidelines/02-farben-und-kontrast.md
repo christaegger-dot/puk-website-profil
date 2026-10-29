@@ -10,7 +10,7 @@ Hausfarbe Blau `#3C64FF` mit den Stufen 75, 50 und 25; sämtliche Schattierungen
 
 - **Einsatz:** Akzent, Links, ein blaues Feld pro Komposition.
 - **Pflicht:** Blau als Textfarbe nur ausnahmsweise; Blau 75 ist nicht textfähig. Auf Flächen ausser Weiss Links und Akzenttext in Blau 125 (`--text-link-on-tint`).
-- **Vermeiden:** Blau als Hintergrund für ganze Seiten oder mehrere Felder nebeneinander.
+- **Vermeiden:** Blau als Hintergrund für ganze Seiten oder mehrere Felder nebeneinander. Einzige Ausnahme ist das Titelbild der Startseite (Profilentscheid 29.10.2026, unten).
 
 ## Schwarz und Weiss
 
@@ -81,6 +81,21 @@ Die Arbeitspalette begrenzt die Farbfreiheit der Marke bewusst für eine konkret
 - **Folge:** Besuchte und unbesuchte Links sind auf getönten Flächen gleich gefärbt. Unterstreichung und Hover in Schwarz bleiben. Im Theme «Hoher Kontrast» gilt Blau 125 #001F99 (mindestens 9,68:1 auf den genannten Flächen).
 - **Hover-Zustände (Nachbesserung 23.10.2026, W-3):** Die Auflage gilt auch für Bedienelemente, deren Hover-Fläche grau ist (`--ui-wash`): Ghost- und Sekundär-Button, Karussell-, Disclosure- und Dialog-Schliessen-Schaltflächen sowie `.puk-vis-btn` zeigen Text dort in `--text-link-on-tint` (5,79:1), nicht in Blau 100 (4,28:1). Links im `Alert` emergency stehen in Weiss (7,59:1). Herkunft: [ENTSCHEIDE-PROFIL-2026-10-9.md](../ENTSCHEIDE-PROFIL-2026-10-9.md).
 - **Herkunft:** [ENTSCHEIDE-PROFIL-2026-10-8.md](../ENTSCHEIDE-PROFIL-2026-10-8.md).
+
+## Profilentscheid 29.10.2026: Nachtblau und Titelbild der Startseite
+
+- **Fläche:** `--puk-blue-night` `#182866`, eine dunkle Schattierung von PUK-Blau («sämtliche Schattierungen zulässig»), als `--surface-night`. Nachtblau ist nur eine Fläche, etwa für ein ruhiges dunkles Band (`.puk-web-band` mit `data-puk-surface="night"`). Nicht für Text und nicht als Seitengrund.
+- **Text und Links darauf:** Weiss (`--text-on-dark`, 13,69:1) oder Blau 25 (`--puk-blue-25`, 10,45:1). Links sind weiss und unterstrichen, auch im Hover. Der Fokusring kehrt sich um: Nachtblau innen, Weiss aussen. `data-puk-surface="night"` setzt Fläche, Text-, Link-, Akzentfarbe und Fokusring.
+- **Zählung:** Nachtblau ist eine dunkle Fläche wie `--surface-inverse`. Es zählt nicht als «das eine blaue Feld» einer Komposition.
+- **Hoher Kontrast:** Nachtblau bleibt im Theme «Hoher Kontrast» unverändert; Weiss und Blau 25 erreichen darauf schon mehr als 7:1.
+- **Titelbild der Startseite:** Im Einstieg der Startseite ist ein Titelbild zulässig, wenn es alle vier Bedingungen erfüllt:
+  - Es ist rein dekorativ und für Screenreader verborgen (`aria-hidden="true"`).
+  - Es trägt keine Bedeutung.
+  - Es zeigt kein Rot.
+  - Es steht nur einmal je Website.
+
+  Ein solches Titelbild darf Schattierungen von PUK-Blau nebeneinander und Gelb zeigen. Es gilt als das eine blaue Feld der Startseite. Farben stehen wie überall als Tokens im Stylesheet, nicht als Hexwerte im HTML.
+- **Herkunft:** [ENTSCHEIDE-PROFIL-2026-10-10.md](../ENTSCHEIDE-PROFIL-2026-10-10.md).
 
 ## Druckfarben
 

@@ -1,7 +1,7 @@
 # Abschlussentscheide · 17.10.2026
 
 <!-- profil:stand -->
-**Profil 2026.10.9 abgeschlossen · Stand 23.10.2026. Offene Projektpendenzen: 0.**
+**Profil 2026.10.10 abgeschlossen · Stand 29.10.2026. Offene Projektpendenzen: 0.**
 <!-- /profil:stand -->
 
 | Bisherige Aufgabe oder Unklarheit | Abschlussentscheid | Status |
@@ -67,5 +67,16 @@ Christa Egger hat am 23.10.2026 die Umsetzung der Befunde aus der unabhängigen 
 | W-3 · Hover-Kontrast | Hover-Zustände auf `ui-wash` in Blau 125 statt Blau 100; Kontrastauflage gilt auch für Bedienelemente. | Umgesetzt |
 | O-1 bis O-5 | UI-Kit-Leiste, berichtigte Zahl 9,68:1, Hover in Figuren, Links im Notfall-Alert in Weiss, Wortlaut der Grundlagenkarten. | Umgesetzt |
 | Unabhängige Prüfung des Pakets 2026.10.9 | Durch eine Sitzung, die das Paket nicht gebaut hat; am 23.10.2026 erfolgt, Paket-SHA `ce342ddb…` bestätigt. Keine Befunde «kritisch» oder «wichtig», ein Befund «optional» (Zahlenangabe im Selbstprüfbericht); siehe [Prüfbericht](PRUEFBERICHT.md), Abschnitt «Unabhängige Prüfung Paket 2026.10.9». | Erledigt |
+
+## Profilentscheide vom 29.10.2026 · Version 2026.10.10
+
+Christa Egger hat am 29.10.2026 Nachtblau aus der Website «Borderline – Angehörige» als Profilentscheid übernommen und den Vorschlag mit sieben Punkten bestätigt («ja, wie vorgeschlagen»). Einzelheiten, Wortlaut und Kontrastwerte stehen in [ENTSCHEIDE-PROFIL-2026-10-10.md](ENTSCHEIDE-PROFIL-2026-10-10.md); der geprüfte Stand 2026.10.9 liegt unverändert im [Archiv](archiv/profilstand-2026-10-29-9/).
+
+| Punkt | Entscheid | Status |
+| --- | --- | --- |
+| Nachtblau | `puk-blue-night` #182866 als `surface-night`, benannte Schattierung von PUK-Blau. Nur Fläche, etwa ein ruhiges dunkles Band (`data-puk-surface="night"`); Text Weiss (13,69:1) oder Blau 25 (10,45:1), Links weiss und unterstrichen, Fokusring Nachtblau innen und Weiss aussen. Im Theme «Hoher Kontrast» unverändert. | Umgesetzt |
+| Zählung | Nachtblau zählt wie `surface-inverse` nicht als das eine blaue Feld einer Komposition. | Umgesetzt |
+| Titelbild der Startseite | Einzige Ausnahme von «nicht mehrere blaue Felder nebeneinander»: rein dekorativ und für Screenreader verborgen, ohne Bedeutung, ohne Rot, nur einmal je Website; darf Schattierungen von PUK-Blau nebeneinander und Gelb zeigen und gilt als das eine blaue Feld. | Umgesetzt |
+| Unabhängige Prüfung des Pakets 2026.10.10 | Durch eine Sitzung, die das Paket nicht gebaut hat. | Offen |
 
 Eingabeparameter der leeren Vorlagen sind keine offenen Projektaufgaben. Der Produktionsschutz bleibt aktiv. Alle Entscheide gelten für diesen abgeschlossenen Profilstand; es gibt keinen zurückgestellten Backlog. Die Nachweise stehen im [Prüfbericht](PRUEFBERICHT.md).
