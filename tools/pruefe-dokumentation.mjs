@@ -5,7 +5,7 @@ import {ROOT} from './profil.mjs';
 
 // Aktuelle Arbeitsanleitungen. Archiv, neue Website-Projekte und Laufdaten sind
 // eigene Bestände; Codebeispiele und externe Adressen werden nicht aufgelöst.
-const dokumente = ['README.md', 'START-HIER.md', 'MUSTER-WAEHLEN.md', 'AGENTS.md', 'CLAUDE.md', 'ABSCHLUSSENTSCHEIDE.md', 'ENTSCHEIDE-PROFIL-2026-10-8.md', 'ENTSCHEIDE-PROFIL-2026-10-9.md', 'ENTSCHEIDE-PROFIL-2026-10-10.md', 'ENTSCHEIDE-PROFIL-2026-10-11.md', 'PRUEFBERICHT.md'];
+const dokumente = ['README.md', 'START-HIER.md', 'MUSTER-WAEHLEN.md', 'AGENTS.md', 'CLAUDE.md', 'ABSCHLUSSENTSCHEIDE.md', 'ENTSCHEIDE-PROFIL-2026-10-8.md', 'ENTSCHEIDE-PROFIL-2026-10-9.md', 'ENTSCHEIDE-PROFIL-2026-10-10.md', 'ENTSCHEIDE-PROFIL-2026-10-11.md', 'ENTSCHEIDE-PROFIL-2026-10-12.md', 'PRUEFBERICHT.md'];
 const ordner = ['guidelines', 'ui_kits', 'components', 'templates', 'quellcode', 'tools', 'platform', 'licenses', 'assets'];
 
 async function markdownDateien(dir) {

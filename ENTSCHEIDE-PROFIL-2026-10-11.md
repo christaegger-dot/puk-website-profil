@@ -22,4 +22,4 @@ Die Befunde O-A bis O-D bleiben offen; sie sind nicht Teil dieses Auftrags.
 
 ## Prüfung
 
-Die technische Selbstprüfung steht im [Prüfbericht](PRUEFBERICHT.md). Die Sitzung, die das Paket 2026.10.10 unabhängig geprüft hat, hat diese Nachbesserung gebaut. Das Paket `puk-website-profil-2026.10.11.zip` prüft darum eine andere Sitzung. Kein Merge und keine Veröffentlichung ohne gesonderten Auftrag.
+Die technische Selbstprüfung steht im [Prüfbericht](PRUEFBERICHT.md). Die Sitzung, die das Paket 2026.10.10 unabhängig geprüft hat, hat diese Nachbesserung gebaut. Das Paket `puk-website-profil-2026.10.11.zip` wurde nicht unabhängig geprüft; an seine Stelle tritt die Prüfung von 2026.10.12 ([ENTSCHEIDE-PROFIL-2026-10-12.md](ENTSCHEIDE-PROFIL-2026-10-12.md)), die W-A einschliesst. Kein Merge und keine Veröffentlichung ohne gesonderten Auftrag.

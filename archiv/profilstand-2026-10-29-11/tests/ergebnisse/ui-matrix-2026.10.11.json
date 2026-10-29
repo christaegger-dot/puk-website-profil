@@ -1,0 +1,2390 @@
+{
+  "status": "Matrix: 112 Prüfläufe · 0 mit Befund · Tastatur: 41 Prüfungen · 0 mit Befund · Interaktionen: 19 Prüfungen · 0 mit Befund · Gate: 76 Prüfungen · 0 mit Befund · Gesamt: 0 Befunde · Fokusring nur statisch geprüft (Dokument ohne Fokus): Matrix 0 Läufe · nicht prüfbar: Tastatur 0, Interaktionen 0",
+  "total": 0,
+  "matrix": [
+    {
+      "v": "start",
+      "w": 320,
+      "t": 1,
+      "cyc": "–",
+      "na": false,
+      "fig": "0 fig · 0 tab · 0 extern ok",
+      "focus": "30 Stopps · live 30 · ok",
+      "overflow": "nein",
+      "off": [],
+      "nav": "4 Links ok",
+      "bad": false
+    },
+    {
+      "v": "start",
+      "w": 360,
+      "t": 1,
+      "cyc": "–",
+      "na": false,
+      "fig": "0 fig · 0 tab · 0 extern ok",
+      "focus": "30 Stopps · live 30 · ok",
+      "overflow": "nein",
+      "off": [],
+      "nav": "4 Links ok",
+      "bad": false
+    },
+    {
+      "v": "start",
+      "w": 768,
+      "t": 1,
+      "cyc": "–",
+      "na": false,
+      "fig": "0 fig · 0 tab · 0 extern ok",
+      "focus": "30 Stopps · live 30 · ok",
+      "overflow": "nein",
+      "off": [],
+      "nav": "4 Links ok",
+      "bad": false
+    },
+    {
+      "v": "start",
+      "w": 1440,
+      "t": 1,
+      "cyc": "–",
+      "na": false,
+      "fig": "0 fig · 0 tab · 0 extern ok",
+      "focus": "30 Stopps · live 30 · ok",
+      "overflow": "nein",
+      "off": [],
+      "nav": "4 Links ok",
+      "bad": false
+    },
+    {
+      "v": "start",
+      "w": 320,
+      "t": 2,
+      "cyc": "–",
+      "na": false,
+      "fig": "–",
+      "focus": "–",
+      "overflow": "nein",
+      "off": [
+        "Info: Wort getrennt: Universitätsklinik, Wort getrennt: Sprechstunden, Wort getrennt: Klinikaufenthalt, Wort getrennt: Kontaktwege"
+      ],
+      "nav": "4 Links ok",
+      "bad": null
+    },
+    {
+      "v": "start",
+      "w": 360,
+      "t": 2,
+      "cyc": "–",
+      "na": false,
+      "fig": "–",
+      "focus": "–",
+      "overflow": "nein",
+      "off": [
+        "Info: Wort getrennt: Sprechstunden, Wort getrennt: Klinikaufenthalt, Wort getrennt: Kontaktwege"
+      ],
+      "nav": "4 Links ok",
+      "bad": null
+    },
+    {
+      "v": "start",
+      "w": 768,
+      "t": 2,
+      "cyc": "–",
+      "na": false,
+      "fig": "–",
+      "focus": "–",
+      "overflow": "nein",
+      "off": [
+        "Info: Wort getrennt: Sprechstunden, Wort getrennt: Klinikaufenthalt"
+      ],
+      "nav": "4 Links ok",
+      "bad": null
+    },
+    {
+      "v": "start",
+      "w": 1440,
+      "t": 2,
+      "cyc": "–",
+      "na": false,
+      "fig": "–",
+      "focus": "–",
+      "overflow": "nein",
+      "off": [
+        "Info: Wort getrennt: Sprechstunden, Wort getrennt: Klinikaufenthalt"
+      ],
+      "nav": "4 Links ok",
+      "bad": null
+    },
+    {
+      "v": "situationsnavigator",
+      "w": 320,
+      "t": 1,
+      "cyc": "–",
+      "na": false,
+      "fig": "0 fig · 0 tab · 0 extern ok",
+      "focus": "31 Stopps · live 31 · ok",
+      "overflow": "nein",
+      "off": [],
+      "nav": "5 Links ok",
+      "bad": false
+    },
+    {
+      "v": "situationsnavigator",
+      "w": 360,
+      "t": 1,
+      "cyc": "–",
+      "na": false,
+      "fig": "0 fig · 0 tab · 0 extern ok",
+      "focus": "31 Stopps · live 31 · ok",
+      "overflow": "nein",
+      "off": [],
+      "nav": "5 Links ok",
+      "bad": false
+    },
+    {
+      "v": "situationsnavigator",
+      "w": 768,
+      "t": 1,
+      "cyc": "–",
+      "na": false,
+      "fig": "0 fig · 0 tab · 0 extern ok",
+      "focus": "31 Stopps · live 31 · ok",
+      "overflow": "nein",
+      "off": [],
+      "nav": "5 Links ok",
+      "bad": false
+    },
+    {
+      "v": "situationsnavigator",
+      "w": 1440,
+      "t": 1,
+      "cyc": "–",
+      "na": false,
+      "fig": "0 fig · 0 tab · 0 extern ok",
+      "focus": "31 Stopps · live 31 · ok",
+      "overflow": "nein",
+      "off": [],
+      "nav": "5 Links ok",
+      "bad": false
+    },
+    {
+      "v": "situationsnavigator",
+      "w": 320,
+      "t": 2,
+      "cyc": "–",
+      "na": false,
+      "fig": "–",
+      "focus": "–",
+      "overflow": "nein",
+      "off": [
+        "Info: Wort getrennt: Anwendungsmuster, Wort getrennt: brauchen, Wort getrennt: Alltagssituation, Wort getrennt: Formulierungshilfen"
+      ],
+      "nav": "5 Links ok",
+      "bad": null
+    },
+    {
+      "v": "situationsnavigator",
+      "w": 360,
+      "t": 2,
+      "cyc": "–",
+      "na": false,
+      "fig": "–",
+      "focus": "–",
+      "overflow": "nein",
+      "off": [
+        "Info: Wort getrennt: Anwendungsmuster, Wort getrennt: Alltagssituation, Wort getrennt: Formulierungshilfen, Wort getrennt: Behandlungsempfehlung"
+      ],
+      "nav": "5 Links ok",
+      "bad": null
+    },
+    {
+      "v": "situationsnavigator",
+      "w": 768,
+      "t": 2,
+      "cyc": "–",
+      "na": false,
+      "fig": "–",
+      "focus": "–",
+      "overflow": "nein",
+      "off": [
+        "Info: Wort getrennt: Unterstützung, Wort getrennt: Wahrnehmung"
+      ],
+      "nav": "5 Links ok",
+      "bad": null
+    },
+    {
+      "v": "situationsnavigator",
+      "w": 1440,
+      "t": 2,
+      "cyc": "–",
+      "na": false,
+      "fig": "–",
+      "focus": "–",
+      "overflow": "nein",
+      "off": [
+        "Info: Wort getrennt: Unterstützung, Wort getrennt: Wahrnehmung"
+      ],
+      "nav": "5 Links ok",
+      "bad": null
+    },
+    {
+      "v": "kontaktwegweiser",
+      "w": 320,
+      "t": 1,
+      "cyc": "–",
+      "na": false,
+      "fig": "0 fig · 0 tab · 0 extern ok",
+      "focus": "26 Stopps · live 26 · ok",
+      "overflow": "nein",
+      "off": [],
+      "nav": "5 Links ok",
+      "bad": false
+    },
+    {
+      "v": "kontaktwegweiser",
+      "w": 360,
+      "t": 1,
+      "cyc": "–",
+      "na": false,
+      "fig": "0 fig · 0 tab · 0 extern ok",
+      "focus": "26 Stopps · live 26 · ok",
+      "overflow": "nein",
+      "off": [],
+      "nav": "5 Links ok",
+      "bad": false
+    },
+    {
+      "v": "kontaktwegweiser",
+      "w": 768,
+      "t": 1,
+      "cyc": "–",
+      "na": false,
+      "fig": "0 fig · 0 tab · 0 extern ok",
+      "focus": "26 Stopps · live 26 · ok",
+      "overflow": "nein",
+      "off": [],
+      "nav": "5 Links ok",
+      "bad": false
+    },
+    {
+      "v": "kontaktwegweiser",
+      "w": 1440,
+      "t": 1,
+      "cyc": "–",
+      "na": false,
+      "fig": "0 fig · 0 tab · 0 extern ok",
+      "focus": "26 Stopps · live 26 · ok",
+      "overflow": "nein",
+      "off": [],
+      "nav": "5 Links ok",
+      "bad": false
+    },
+    {
+      "v": "kontaktwegweiser",
+      "w": 320,
+      "t": 2,
+      "cyc": "–",
+      "na": false,
+      "fig": "–",
+      "focus": "–",
+      "overflow": "nein",
+      "off": [
+        "Info: Wort getrennt: Anwendungsmuster, Wort getrennt: Kontaktweg, Wort getrennt: angemessen, Wort getrennt: Symptomchecker"
+      ],
+      "nav": "5 Links ok",
+      "bad": null
+    },
+    {
+      "v": "kontaktwegweiser",
+      "w": 360,
+      "t": 2,
+      "cyc": "–",
+      "na": false,
+      "fig": "–",
+      "focus": "–",
+      "overflow": "nein",
+      "off": [
+        "Info: Wort getrennt: Anwendungsmuster, Wort getrennt: Kontaktweg, Wort getrennt: angemessen, Wort getrennt: Symptomchecker"
+      ],
+      "nav": "5 Links ok",
+      "bad": null
+    },
+    {
+      "v": "kontaktwegweiser",
+      "w": 768,
+      "t": 2,
+      "cyc": "–",
+      "na": false,
+      "fig": "–",
+      "focus": "–",
+      "overflow": "nein",
+      "off": [
+        "Info: Wort getrennt: Beratung, Wort getrennt: Orientierung, Wort getrennt: Entlastung, Wort getrennt: organisieren"
+      ],
+      "nav": "5 Links ok",
+      "bad": null
+    },
+    {
+      "v": "kontaktwegweiser",
+      "w": 1440,
+      "t": 2,
+      "cyc": "–",
+      "na": false,
+      "fig": "–",
+      "focus": "–",
+      "overflow": "nein",
+      "off": [],
+      "nav": "5 Links ok",
+      "bad": null
+    },
+    {
+      "v": "gespraechshilfe",
+      "w": 320,
+      "t": 1,
+      "cyc": "–",
+      "na": false,
+      "fig": "0 fig · 0 tab · 0 extern ok",
+      "focus": "28 Stopps · live 28 · ok",
+      "overflow": "nein",
+      "off": [],
+      "nav": "5 Links ok",
+      "bad": false
+    },
+    {
+      "v": "gespraechshilfe",
+      "w": 360,
+      "t": 1,
+      "cyc": "–",
+      "na": false,
+      "fig": "0 fig · 0 tab · 0 extern ok",
+      "focus": "28 Stopps · live 28 · ok",
+      "overflow": "nein",
+      "off": [],
+      "nav": "5 Links ok",
+      "bad": false
+    },
+    {
+      "v": "gespraechshilfe",
+      "w": 768,
+      "t": 1,
+      "cyc": "–",
+      "na": false,
+      "fig": "0 fig · 0 tab · 0 extern ok",
+      "focus": "28 Stopps · live 28 · ok",
+      "overflow": "nein",
+      "off": [],
+      "nav": "5 Links ok",
+      "bad": false
+    },
+    {
+      "v": "gespraechshilfe",
+      "w": 1440,
+      "t": 1,
+      "cyc": "–",
+      "na": false,
+      "fig": "0 fig · 0 tab · 0 extern ok",
+      "focus": "28 Stopps · live 28 · ok",
+      "overflow": "nein",
+      "off": [],
+      "nav": "5 Links ok",
+      "bad": false
+    },
+    {
+      "v": "gespraechshilfe",
+      "w": 320,
+      "t": 2,
+      "cyc": "–",
+      "na": false,
+      "fig": "–",
+      "focus": "–",
+      "overflow": "nein",
+      "off": [
+        "Info: Wort getrennt: Anwendungsmuster, Wort getrennt: Gespräch, Wort getrennt: vorbereiten, Wort getrennt: Gesprächserfolg"
+      ],
+      "nav": "5 Links ok",
+      "bad": null
+    },
+    {
+      "v": "gespraechshilfe",
+      "w": 360,
+      "t": 2,
+      "cyc": "–",
+      "na": false,
+      "fig": "–",
+      "focus": "–",
+      "overflow": "nein",
+      "off": [
+        "Info: Wort getrennt: Anwendungsmuster, Wort getrennt: vorbereiten, Wort getrennt: Gesprächsziel, Wort getrennt: Wahlmöglichkeiten"
+      ],
+      "nav": "5 Links ok",
+      "bad": null
+    },
+    {
+      "v": "gespraechshilfe",
+      "w": 768,
+      "t": 2,
+      "cyc": "–",
+      "na": false,
+      "fig": "–",
+      "focus": "–",
+      "overflow": "nein",
+      "off": [
+        "Info: Wort getrennt: Möglicher, Wort getrennt: Wahlmöglichkeiten"
+      ],
+      "nav": "5 Links ok",
+      "bad": null
+    },
+    {
+      "v": "gespraechshilfe",
+      "w": 1440,
+      "t": 2,
+      "cyc": "–",
+      "na": false,
+      "fig": "–",
+      "focus": "–",
+      "overflow": "nein",
+      "off": [
+        "Info: Wort getrennt: Möglicher, Wort getrennt: Wahlmöglichkeiten"
+      ],
+      "nav": "5 Links ok",
+      "bad": null
+    },
+    {
+      "v": "angebotsnavigator",
+      "w": 320,
+      "t": 1,
+      "cyc": "–",
+      "na": false,
+      "fig": "0 fig · 0 tab · 0 extern ok",
+      "focus": "28 Stopps · live 28 · ok",
+      "overflow": "nein",
+      "off": [],
+      "nav": "5 Links ok",
+      "bad": false
+    },
+    {
+      "v": "angebotsnavigator",
+      "w": 360,
+      "t": 1,
+      "cyc": "–",
+      "na": false,
+      "fig": "0 fig · 0 tab · 0 extern ok",
+      "focus": "28 Stopps · live 28 · ok",
+      "overflow": "nein",
+      "off": [],
+      "nav": "5 Links ok",
+      "bad": false
+    },
+    {
+      "v": "angebotsnavigator",
+      "w": 768,
+      "t": 1,
+      "cyc": "–",
+      "na": false,
+      "fig": "0 fig · 0 tab · 0 extern ok",
+      "focus": "28 Stopps · live 28 · ok",
+      "overflow": "nein",
+      "off": [],
+      "nav": "5 Links ok",
+      "bad": false
+    },
+    {
+      "v": "angebotsnavigator",
+      "w": 1440,
+      "t": 1,
+      "cyc": "–",
+      "na": false,
+      "fig": "0 fig · 0 tab · 0 extern ok",
+      "focus": "28 Stopps · live 28 · ok",
+      "overflow": "nein",
+      "off": [],
+      "nav": "5 Links ok",
+      "bad": false
+    },
+    {
+      "v": "angebotsnavigator",
+      "w": 320,
+      "t": 2,
+      "cyc": "–",
+      "na": false,
+      "fig": "–",
+      "focus": "–",
+      "overflow": "nein",
+      "off": [
+        "Info: Wort getrennt: Anwendungsmuster, Wort getrennt: passendes, Wort getrennt: Musterangebote, Wort getrennt: Inhaltsverantwortung"
+      ],
+      "nav": "5 Links ok",
+      "bad": null
+    },
+    {
+      "v": "angebotsnavigator",
+      "w": 360,
+      "t": 2,
+      "cyc": "–",
+      "na": false,
+      "fig": "–",
+      "focus": "–",
+      "overflow": "nein",
+      "off": [
+        "Info: Wort getrennt: Anwendungsmuster, Wort getrennt: passendes, Wort getrennt: Inhaltsverantwortung, Wort getrennt: durchsuchen"
+      ],
+      "nav": "5 Links ok",
+      "bad": null
+    },
+    {
+      "v": "angebotsnavigator",
+      "w": 768,
+      "t": 2,
+      "cyc": "–",
+      "na": false,
+      "fig": "–",
+      "focus": "–",
+      "overflow": "nein",
+      "off": [
+        "Info: Wort getrennt: Musterangebot, Wort getrennt: Angehörigenberatung, Wort getrennt: Familiengruppe, Wort getrennt: Gruppenangebot"
+      ],
+      "nav": "5 Links ok",
+      "bad": null
+    },
+    {
+      "v": "angebotsnavigator",
+      "w": 1440,
+      "t": 2,
+      "cyc": "–",
+      "na": false,
+      "fig": "–",
+      "focus": "–",
+      "overflow": "nein",
+      "off": [
+        "Info: Wort getrennt: Musterangebot, Wort getrennt: Angehörigenberatung, Wort getrennt: Familiengruppe, Wort getrennt: Gruppenangebot"
+      ],
+      "nav": "5 Links ok",
+      "bad": null
+    },
+    {
+      "v": "grundlagenkapitel",
+      "w": 320,
+      "t": 1,
+      "cyc": "–",
+      "na": false,
+      "fig": "1 fig · 0 tab · 0 extern ok",
+      "focus": "28 Stopps · live 28 · ok",
+      "overflow": "nein",
+      "off": [],
+      "nav": "3 Links ok",
+      "bad": false
+    },
+    {
+      "v": "grundlagenkapitel",
+      "w": 360,
+      "t": 1,
+      "cyc": "–",
+      "na": false,
+      "fig": "1 fig · 0 tab · 0 extern ok",
+      "focus": "28 Stopps · live 28 · ok",
+      "overflow": "nein",
+      "off": [],
+      "nav": "3 Links ok",
+      "bad": false
+    },
+    {
+      "v": "grundlagenkapitel",
+      "w": 768,
+      "t": 1,
+      "cyc": "–",
+      "na": false,
+      "fig": "1 fig · 0 tab · 0 extern ok",
+      "focus": "28 Stopps · live 28 · ok",
+      "overflow": "nein",
+      "off": [],
+      "nav": "3 Links ok",
+      "bad": false
+    },
+    {
+      "v": "grundlagenkapitel",
+      "w": 1440,
+      "t": 1,
+      "cyc": "–",
+      "na": false,
+      "fig": "1 fig · 0 tab · 0 extern ok",
+      "focus": "28 Stopps · live 28 · ok",
+      "overflow": "nein",
+      "off": [],
+      "nav": "3 Links ok",
+      "bad": false
+    },
+    {
+      "v": "grundlagenkapitel",
+      "w": 320,
+      "t": 2,
+      "cyc": "–",
+      "na": false,
+      "fig": "–",
+      "focus": "–",
+      "overflow": "nein",
+      "off": [
+        "Info: Wort getrennt: Grundlagenkapitel, Wort getrennt: Situation, Wort getrennt: verstehen, Wort getrennt: zusammenhängender"
+      ],
+      "nav": "3 Links ok",
+      "bad": null
+    },
+    {
+      "v": "grundlagenkapitel",
+      "w": 360,
+      "t": 2,
+      "cyc": "–",
+      "na": false,
+      "fig": "–",
+      "focus": "–",
+      "overflow": "nein",
+      "off": [
+        "Info: Wort getrennt: Grundlagenkapitel, Wort getrennt: verstehen, Wort getrennt: zusammenhängender, Wort getrennt: Handlungsspielraum"
+      ],
+      "nav": "3 Links ok",
+      "bad": null
+    },
+    {
+      "v": "grundlagenkapitel",
+      "w": 768,
+      "t": 2,
+      "cyc": "–",
+      "na": false,
+      "fig": "–",
+      "focus": "–",
+      "overflow": "nein",
+      "off": [
+        "Info: Wort getrennt: Orientierung, Wort getrennt: zusammenwirken, Wort getrennt: Alltagsbezug, Wort getrennt: einordnen"
+      ],
+      "nav": "3 Links ok",
+      "bad": null
+    },
+    {
+      "v": "grundlagenkapitel",
+      "w": 1440,
+      "t": 2,
+      "cyc": "–",
+      "na": false,
+      "fig": "–",
+      "focus": "–",
+      "overflow": "nein",
+      "off": [
+        "Info: Wort getrennt: Aufmerksamkeit, Wort getrennt: Handlungsspielraum, Wort getrennt: zusammenwirken, Wort getrennt: Anforderungen"
+      ],
+      "nav": "3 Links ok",
+      "bad": null
+    },
+    {
+      "v": "handlungsuebersicht",
+      "w": 320,
+      "t": 1,
+      "cyc": "–",
+      "na": false,
+      "fig": "0 fig · 0 tab · 0 extern ok",
+      "focus": "26 Stopps · live 26 · ok",
+      "overflow": "nein",
+      "off": [],
+      "nav": "3 Links ok",
+      "bad": false
+    },
+    {
+      "v": "handlungsuebersicht",
+      "w": 360,
+      "t": 1,
+      "cyc": "–",
+      "na": false,
+      "fig": "0 fig · 0 tab · 0 extern ok",
+      "focus": "26 Stopps · live 26 · ok",
+      "overflow": "nein",
+      "off": [],
+      "nav": "3 Links ok",
+      "bad": false
+    },
+    {
+      "v": "handlungsuebersicht",
+      "w": 768,
+      "t": 1,
+      "cyc": "–",
+      "na": false,
+      "fig": "0 fig · 0 tab · 0 extern ok",
+      "focus": "26 Stopps · live 26 · ok",
+      "overflow": "nein",
+      "off": [],
+      "nav": "3 Links ok",
+      "bad": false
+    },
+    {
+      "v": "handlungsuebersicht",
+      "w": 1440,
+      "t": 1,
+      "cyc": "–",
+      "na": false,
+      "fig": "0 fig · 0 tab · 0 extern ok",
+      "focus": "26 Stopps · live 26 · ok",
+      "overflow": "nein",
+      "off": [],
+      "nav": "3 Links ok",
+      "bad": false
+    },
+    {
+      "v": "handlungsuebersicht",
+      "w": 320,
+      "t": 2,
+      "cyc": "–",
+      "na": false,
+      "fig": "–",
+      "focus": "–",
+      "overflow": "nein",
+      "off": [
+        "Info: Wort getrennt: handlungsorientierte, Wort getrennt: begrenzen, Wort getrennt: zusammenhängende, Wort getrennt: Grundlagenkapitel"
+      ],
+      "nav": "3 Links ok",
+      "bad": null
+    },
+    {
+      "v": "handlungsuebersicht",
+      "w": 360,
+      "t": 2,
+      "cyc": "–",
+      "na": false,
+      "fig": "–",
+      "focus": "–",
+      "overflow": "nein",
+      "off": [
+        "Info: Wort getrennt: handlungsorientierte, Wort getrennt: zusammenhängende, Wort getrennt: unterschiedliche, Wort getrennt: Verkleinern"
+      ],
+      "nav": "3 Links ok",
+      "bad": null
+    },
+    {
+      "v": "handlungsuebersicht",
+      "w": 768,
+      "t": 2,
+      "cyc": "–",
+      "na": false,
+      "fig": "–",
+      "focus": "–",
+      "overflow": "nein",
+      "off": [
+        "Info: Wort getrennt: begrenzen, Wort getrennt: unterschiedliche, Wort getrennt: Unterstützung, Wort getrennt: zusammenhängenden"
+      ],
+      "nav": "3 Links ok",
+      "bad": null
+    },
+    {
+      "v": "handlungsuebersicht",
+      "w": 1440,
+      "t": 2,
+      "cyc": "–",
+      "na": false,
+      "fig": "–",
+      "focus": "–",
+      "overflow": "nein",
+      "off": [
+        "Info: Wort getrennt: begrenzen, Wort getrennt: unterschiedliche, Wort getrennt: Verkleinern, Wort getrennt: Verschieben"
+      ],
+      "nav": "3 Links ok",
+      "bad": null
+    },
+    {
+      "v": "transfer-erholung",
+      "w": 320,
+      "t": 1,
+      "cyc": "–",
+      "na": false,
+      "fig": "1 fig · 0 tab · 0 extern ok",
+      "focus": "27 Stopps · live 27 · ok",
+      "overflow": "nein",
+      "off": [],
+      "nav": "3 Links ok",
+      "bad": false
+    },
+    {
+      "v": "transfer-erholung",
+      "w": 360,
+      "t": 1,
+      "cyc": "–",
+      "na": false,
+      "fig": "1 fig · 0 tab · 0 extern ok",
+      "focus": "27 Stopps · live 27 · ok",
+      "overflow": "nein",
+      "off": [],
+      "nav": "3 Links ok",
+      "bad": false
+    },
+    {
+      "v": "transfer-erholung",
+      "w": 768,
+      "t": 1,
+      "cyc": "–",
+      "na": false,
+      "fig": "1 fig · 0 tab · 0 extern ok",
+      "focus": "27 Stopps · live 27 · ok",
+      "overflow": "nein",
+      "off": [],
+      "nav": "3 Links ok",
+      "bad": false
+    },
+    {
+      "v": "transfer-erholung",
+      "w": 1440,
+      "t": 1,
+      "cyc": "–",
+      "na": false,
+      "fig": "1 fig · 0 tab · 0 extern ok",
+      "focus": "27 Stopps · live 27 · ok",
+      "overflow": "nein",
+      "off": [],
+      "nav": "3 Links ok",
+      "bad": false
+    },
+    {
+      "v": "transfer-erholung",
+      "w": 320,
+      "t": 2,
+      "cyc": "–",
+      "na": false,
+      "fig": "–",
+      "focus": "–",
+      "overflow": "nein",
+      "off": [
+        "Info: Wort getrennt: Transferprüfung, Wort getrennt: Erholung, Wort getrennt: erkennen, Wort getrennt: einplanen"
+      ],
+      "nav": "3 Links ok",
+      "bad": null
+    },
+    {
+      "v": "transfer-erholung",
+      "w": 360,
+      "t": 2,
+      "cyc": "–",
+      "na": false,
+      "fig": "–",
+      "focus": "–",
+      "overflow": "nein",
+      "off": [
+        "Info: Wort getrennt: Selbsteinschätzung, Wort getrennt: realistischen, Wort getrennt: Planungsfrage, Wort getrennt: Sonderklasse"
+      ],
+      "nav": "3 Links ok",
+      "bad": null
+    },
+    {
+      "v": "transfer-erholung",
+      "w": 768,
+      "t": 2,
+      "cyc": "–",
+      "na": false,
+      "fig": "–",
+      "focus": "–",
+      "overflow": "nein",
+      "off": [
+        "Info: Wort getrennt: Orientierung, Wort getrennt: Alltagsbezug, Wort getrennt: realistischen, Wort getrennt: vormerken"
+      ],
+      "nav": "3 Links ok",
+      "bad": null
+    },
+    {
+      "v": "transfer-erholung",
+      "w": 1440,
+      "t": 2,
+      "cyc": "–",
+      "na": false,
+      "fig": "–",
+      "focus": "–",
+      "overflow": "nein",
+      "off": [
+        "Info: Wort getrennt: Aktive, Wort getrennt: Erholung, Wort getrennt: Ruhige, Wort getrennt: realistischen"
+      ],
+      "nav": "3 Links ok",
+      "bad": null
+    },
+    {
+      "v": "beispiel-visualisierung",
+      "w": 320,
+      "t": 1,
+      "cyc": "–",
+      "na": false,
+      "fig": "1 fig · 0 tab · 0 extern ok",
+      "focus": "19 Stopps · live 19 · ok",
+      "overflow": "nein",
+      "off": [],
+      "nav": "2 Links ok",
+      "bad": false
+    },
+    {
+      "v": "beispiel-visualisierung",
+      "w": 360,
+      "t": 1,
+      "cyc": "–",
+      "na": false,
+      "fig": "1 fig · 0 tab · 0 extern ok",
+      "focus": "19 Stopps · live 19 · ok",
+      "overflow": "nein",
+      "off": [],
+      "nav": "2 Links ok",
+      "bad": false
+    },
+    {
+      "v": "beispiel-visualisierung",
+      "w": 768,
+      "t": 1,
+      "cyc": "–",
+      "na": false,
+      "fig": "1 fig · 0 tab · 0 extern ok",
+      "focus": "19 Stopps · live 19 · ok",
+      "overflow": "nein",
+      "off": [],
+      "nav": "2 Links ok",
+      "bad": false
+    },
+    {
+      "v": "beispiel-visualisierung",
+      "w": 1440,
+      "t": 1,
+      "cyc": "–",
+      "na": false,
+      "fig": "1 fig · 0 tab · 0 extern ok",
+      "focus": "19 Stopps · live 19 · ok",
+      "overflow": "nein",
+      "off": [],
+      "nav": "2 Links ok",
+      "bad": false
+    },
+    {
+      "v": "beispiel-visualisierung",
+      "w": 320,
+      "t": 2,
+      "cyc": "–",
+      "na": false,
+      "fig": "–",
+      "focus": "–",
+      "overflow": "nein",
+      "off": [
+        "Info: Wort getrennt: Orientierung, Wort getrennt: Einordnung, Wort getrennt: Textfassung, Wort getrennt: Eigenständige"
+      ],
+      "nav": "2 Links ok",
+      "bad": null
+    },
+    {
+      "v": "beispiel-visualisierung",
+      "w": 360,
+      "t": 2,
+      "cyc": "–",
+      "na": false,
+      "fig": "–",
+      "focus": "–",
+      "overflow": "nein",
+      "off": [
+        "Info: Wort getrennt: Orientierung, Wort getrennt: Textfassung"
+      ],
+      "nav": "2 Links ok",
+      "bad": null
+    },
+    {
+      "v": "beispiel-visualisierung",
+      "w": 768,
+      "t": 2,
+      "cyc": "–",
+      "na": false,
+      "fig": "–",
+      "focus": "–",
+      "overflow": "nein",
+      "off": [],
+      "nav": "2 Links ok",
+      "bad": null
+    },
+    {
+      "v": "beispiel-visualisierung",
+      "w": 1440,
+      "t": 2,
+      "cyc": "–",
+      "na": false,
+      "fig": "–",
+      "focus": "–",
+      "overflow": "nein",
+      "off": [],
+      "nav": "2 Links ok",
+      "bad": null
+    },
+    {
+      "v": "visualisierungsmuster",
+      "w": 320,
+      "t": 1,
+      "cyc": "linear + Rücksprung",
+      "na": false,
+      "fig": "6 fig · 1 tab · 0 extern ok",
+      "focus": "30 Stopps · live 30 · ok",
+      "overflow": "nein",
+      "off": [],
+      "nav": "2 Links ok",
+      "bad": false
+    },
+    {
+      "v": "visualisierungsmuster",
+      "w": 360,
+      "t": 1,
+      "cyc": "linear + Rücksprung",
+      "na": false,
+      "fig": "6 fig · 1 tab · 0 extern ok",
+      "focus": "30 Stopps · live 30 · ok",
+      "overflow": "nein",
+      "off": [],
+      "nav": "2 Links ok",
+      "bad": false
+    },
+    {
+      "v": "visualisierungsmuster",
+      "w": 768,
+      "t": 1,
+      "cyc": "Schleife",
+      "na": false,
+      "fig": "6 fig · 1 tab · 0 extern ok",
+      "focus": "30 Stopps · live 30 · ok",
+      "overflow": "nein",
+      "off": [],
+      "nav": "2 Links ok",
+      "bad": false
+    },
+    {
+      "v": "visualisierungsmuster",
+      "w": 1440,
+      "t": 1,
+      "cyc": "Schleife",
+      "na": false,
+      "fig": "6 fig · 1 tab · 0 extern ok",
+      "focus": "30 Stopps · live 30 · ok",
+      "overflow": "nein",
+      "off": [],
+      "nav": "2 Links ok",
+      "bad": false
+    },
+    {
+      "v": "visualisierungsmuster",
+      "w": 320,
+      "t": 2,
+      "cyc": "linear + Rücksprung",
+      "na": false,
+      "fig": "–",
+      "focus": "–",
+      "overflow": "nein",
+      "off": [
+        "Info: Wort getrennt: Visualisierungsmuster, Wort getrennt: Visualisierungsplan, Wort getrennt: Langbeschreibung, Wort getrennt: Entscheidungsweg"
+      ],
+      "nav": "2 Links ok",
+      "bad": null
+    },
+    {
+      "v": "visualisierungsmuster",
+      "w": 360,
+      "t": 2,
+      "cyc": "linear + Rücksprung",
+      "na": false,
+      "fig": "–",
+      "focus": "–",
+      "overflow": "nein",
+      "off": [
+        "Info: Wort getrennt: Visualisierungsmuster, Wort getrennt: Visualisierungsplan, Wort getrennt: Langbeschreibung, Wort getrennt: Entscheidungsweg"
+      ],
+      "nav": "2 Links ok",
+      "bad": null
+    },
+    {
+      "v": "visualisierungsmuster",
+      "w": 768,
+      "t": 2,
+      "cyc": "Schleife",
+      "na": false,
+      "fig": "–",
+      "focus": "–",
+      "overflow": "nein",
+      "off": [
+        "Info: Wort getrennt: Beschreibung, Wort getrennt: Stationen, Wort getrennt: Behandlungspfad, Wort getrennt: Illustration"
+      ],
+      "nav": "2 Links ok",
+      "bad": null
+    },
+    {
+      "v": "visualisierungsmuster",
+      "w": 1440,
+      "t": 2,
+      "cyc": "Schleife",
+      "na": false,
+      "fig": "–",
+      "focus": "–",
+      "overflow": "nein",
+      "off": [
+        "Info: Wort getrennt: Beschreibung, Wort getrennt: Stationen, Wort getrennt: Behandlungspfad, Wort getrennt: Illustration"
+      ],
+      "nav": "2 Links ok",
+      "bad": null
+    },
+    {
+      "v": "site:index",
+      "w": 320,
+      "t": 1,
+      "cyc": "–",
+      "na": false,
+      "fig": "0 fig · 0 tab · 0 extern ok",
+      "focus": "13 Stopps · live 13 · ok",
+      "overflow": "nein",
+      "off": [],
+      "nav": "4 Links ok",
+      "bad": false
+    },
+    {
+      "v": "site:index",
+      "w": 360,
+      "t": 1,
+      "cyc": "–",
+      "na": false,
+      "fig": "0 fig · 0 tab · 0 extern ok",
+      "focus": "13 Stopps · live 13 · ok",
+      "overflow": "nein",
+      "off": [],
+      "nav": "4 Links ok",
+      "bad": false
+    },
+    {
+      "v": "site:index",
+      "w": 768,
+      "t": 1,
+      "cyc": "–",
+      "na": false,
+      "fig": "0 fig · 0 tab · 0 extern ok",
+      "focus": "13 Stopps · live 13 · ok",
+      "overflow": "nein",
+      "off": [],
+      "nav": "4 Links ok",
+      "bad": false
+    },
+    {
+      "v": "site:index",
+      "w": 1440,
+      "t": 1,
+      "cyc": "–",
+      "na": false,
+      "fig": "0 fig · 0 tab · 0 extern ok",
+      "focus": "13 Stopps · live 13 · ok",
+      "overflow": "nein",
+      "off": [],
+      "nav": "4 Links ok",
+      "bad": false
+    },
+    {
+      "v": "site:index",
+      "w": 320,
+      "t": 2,
+      "cyc": "–",
+      "na": false,
+      "fig": "–",
+      "focus": "–",
+      "overflow": "nein",
+      "off": [
+        "Info: Wort getrennt: Psychoedukation, Wort getrennt: Beziehungen, Wort getrennt: Unterstützung, Wort getrennt: Grössenangabe"
+      ],
+      "nav": "4 Links ok",
+      "bad": null
+    },
+    {
+      "v": "site:index",
+      "w": 360,
+      "t": 2,
+      "cyc": "–",
+      "na": false,
+      "fig": "–",
+      "focus": "–",
+      "overflow": "nein",
+      "off": [
+        "Info: Wort getrennt: Unterstützung"
+      ],
+      "nav": "4 Links ok",
+      "bad": null
+    },
+    {
+      "v": "site:index",
+      "w": 768,
+      "t": 2,
+      "cyc": "–",
+      "na": false,
+      "fig": "–",
+      "focus": "–",
+      "overflow": "nein",
+      "off": [
+        "Info: Wort getrennt: beginnen"
+      ],
+      "nav": "4 Links ok",
+      "bad": null
+    },
+    {
+      "v": "site:index",
+      "w": 1440,
+      "t": 2,
+      "cyc": "–",
+      "na": false,
+      "fig": "–",
+      "focus": "–",
+      "overflow": "nein",
+      "off": [
+        "Info: Wort getrennt: beginnen"
+      ],
+      "nav": "4 Links ok",
+      "bad": null
+    },
+    {
+      "v": "site:beziehungen-verstehen",
+      "w": 320,
+      "t": 1,
+      "cyc": "linear + Rücksprung",
+      "na": false,
+      "fig": "2 fig · 0 tab · 0 extern ok",
+      "focus": "14 Stopps · live 14 · ok",
+      "overflow": "nein",
+      "off": [],
+      "nav": "4 Links ok",
+      "bad": false
+    },
+    {
+      "v": "site:beziehungen-verstehen",
+      "w": 360,
+      "t": 1,
+      "cyc": "linear + Rücksprung",
+      "na": false,
+      "fig": "2 fig · 0 tab · 0 extern ok",
+      "focus": "14 Stopps · live 14 · ok",
+      "overflow": "nein",
+      "off": [],
+      "nav": "4 Links ok",
+      "bad": false
+    },
+    {
+      "v": "site:beziehungen-verstehen",
+      "w": 768,
+      "t": 1,
+      "cyc": "Schleife",
+      "na": false,
+      "fig": "2 fig · 0 tab · 0 extern ok",
+      "focus": "14 Stopps · live 14 · ok",
+      "overflow": "nein",
+      "off": [],
+      "nav": "4 Links ok",
+      "bad": false
+    },
+    {
+      "v": "site:beziehungen-verstehen",
+      "w": 1440,
+      "t": 1,
+      "cyc": "Schleife",
+      "na": false,
+      "fig": "2 fig · 0 tab · 0 extern ok",
+      "focus": "14 Stopps · live 14 · ok",
+      "overflow": "nein",
+      "off": [],
+      "nav": "4 Links ok",
+      "bad": false
+    },
+    {
+      "v": "site:beziehungen-verstehen",
+      "w": 320,
+      "t": 2,
+      "cyc": "linear + Rücksprung",
+      "na": false,
+      "fig": "–",
+      "focus": "–",
+      "overflow": "nein",
+      "off": [
+        "Info: Wort getrennt: verstehen, Wort getrennt: Gesprächskreislaufs, Wort getrennt: bedrohlich"
+      ],
+      "nav": "4 Links ok",
+      "bad": null
+    },
+    {
+      "v": "site:beziehungen-verstehen",
+      "w": 360,
+      "t": 2,
+      "cyc": "linear + Rücksprung",
+      "na": false,
+      "fig": "–",
+      "focus": "–",
+      "overflow": "nein",
+      "off": [
+        "Info: Wort getrennt: verstehen, Wort getrennt: Gesprächskreislaufs"
+      ],
+      "nav": "4 Links ok",
+      "bad": null
+    },
+    {
+      "v": "site:beziehungen-verstehen",
+      "w": 768,
+      "t": 2,
+      "cyc": "Schleife",
+      "na": false,
+      "fig": "–",
+      "focus": "–",
+      "overflow": "nein",
+      "off": [
+        "Info: Wort getrennt: Gespräch, Wort getrennt: bedrohlich"
+      ],
+      "nav": "4 Links ok",
+      "bad": null
+    },
+    {
+      "v": "site:beziehungen-verstehen",
+      "w": 1440,
+      "t": 2,
+      "cyc": "Schleife",
+      "na": false,
+      "fig": "–",
+      "focus": "–",
+      "overflow": "nein",
+      "off": [
+        "Info: Wort getrennt: Gespräch, Wort getrennt: bedrohlich"
+      ],
+      "nav": "4 Links ok",
+      "bad": null
+    },
+    {
+      "v": "site:behandlung-verstehen",
+      "w": 320,
+      "t": 1,
+      "cyc": "–",
+      "na": false,
+      "fig": "2 fig · 0 tab · 0 extern ok",
+      "focus": "13 Stopps · live 13 · ok",
+      "overflow": "nein",
+      "off": [],
+      "nav": "4 Links ok",
+      "bad": false
+    },
+    {
+      "v": "site:behandlung-verstehen",
+      "w": 360,
+      "t": 1,
+      "cyc": "–",
+      "na": false,
+      "fig": "2 fig · 0 tab · 0 extern ok",
+      "focus": "13 Stopps · live 13 · ok",
+      "overflow": "nein",
+      "off": [],
+      "nav": "4 Links ok",
+      "bad": false
+    },
+    {
+      "v": "site:behandlung-verstehen",
+      "w": 768,
+      "t": 1,
+      "cyc": "–",
+      "na": false,
+      "fig": "2 fig · 0 tab · 0 extern ok",
+      "focus": "13 Stopps · live 13 · ok",
+      "overflow": "nein",
+      "off": [],
+      "nav": "4 Links ok",
+      "bad": false
+    },
+    {
+      "v": "site:behandlung-verstehen",
+      "w": 1440,
+      "t": 1,
+      "cyc": "–",
+      "na": false,
+      "fig": "2 fig · 0 tab · 0 extern ok",
+      "focus": "13 Stopps · live 13 · ok",
+      "overflow": "nein",
+      "off": [],
+      "nav": "4 Links ok",
+      "bad": false
+    },
+    {
+      "v": "site:behandlung-verstehen",
+      "w": 320,
+      "t": 2,
+      "cyc": "–",
+      "na": false,
+      "fig": "–",
+      "focus": "–",
+      "overflow": "nein",
+      "off": [
+        "Info: Wort getrennt: verstehen, Wort getrennt: Behandlungsabfolge, Wort getrennt: Inhaltsverantwortung, Wort getrennt: Musterablauf"
+      ],
+      "nav": "4 Links ok",
+      "bad": null
+    },
+    {
+      "v": "site:behandlung-verstehen",
+      "w": 360,
+      "t": 2,
+      "cyc": "–",
+      "na": false,
+      "fig": "–",
+      "focus": "–",
+      "overflow": "nein",
+      "off": [
+        "Info: Wort getrennt: verstehen, Wort getrennt: Behandlungsabfolge, Wort getrennt: Inhaltsverantwortung, Wort getrennt: Musterablauf"
+      ],
+      "nav": "4 Links ok",
+      "bad": null
+    },
+    {
+      "v": "site:behandlung-verstehen",
+      "w": 768,
+      "t": 2,
+      "cyc": "–",
+      "na": false,
+      "fig": "–",
+      "focus": "–",
+      "overflow": "nein",
+      "off": [
+        "Info: Wort getrennt: Orientierung, Wort getrennt: Schritten, Wort getrennt: Vergleich, Wort getrennt: Vorbereitung"
+      ],
+      "nav": "4 Links ok",
+      "bad": null
+    },
+    {
+      "v": "site:behandlung-verstehen",
+      "w": 1440,
+      "t": 2,
+      "cyc": "–",
+      "na": false,
+      "fig": "–",
+      "focus": "–",
+      "overflow": "nein",
+      "off": [
+        "Info: Wort getrennt: Schritten, Wort getrennt: Vergleich"
+      ],
+      "nav": "4 Links ok",
+      "bad": null
+    },
+    {
+      "v": "site:unterstuetzung-finden",
+      "w": 320,
+      "t": 1,
+      "cyc": "–",
+      "na": false,
+      "fig": "2 fig · 0 tab · 0 extern ok",
+      "focus": "18 Stopps · live 18 · ok",
+      "overflow": "nein",
+      "off": [],
+      "nav": "4 Links ok",
+      "bad": false
+    },
+    {
+      "v": "site:unterstuetzung-finden",
+      "w": 360,
+      "t": 1,
+      "cyc": "–",
+      "na": false,
+      "fig": "2 fig · 0 tab · 0 extern ok",
+      "focus": "18 Stopps · live 18 · ok",
+      "overflow": "nein",
+      "off": [],
+      "nav": "4 Links ok",
+      "bad": false
+    },
+    {
+      "v": "site:unterstuetzung-finden",
+      "w": 768,
+      "t": 1,
+      "cyc": "–",
+      "na": false,
+      "fig": "2 fig · 0 tab · 0 extern ok",
+      "focus": "18 Stopps · live 18 · ok",
+      "overflow": "nein",
+      "off": [],
+      "nav": "4 Links ok",
+      "bad": false
+    },
+    {
+      "v": "site:unterstuetzung-finden",
+      "w": 1440,
+      "t": 1,
+      "cyc": "–",
+      "na": false,
+      "fig": "2 fig · 0 tab · 0 extern ok",
+      "focus": "18 Stopps · live 18 · ok",
+      "overflow": "nein",
+      "off": [],
+      "nav": "4 Links ok",
+      "bad": false
+    },
+    {
+      "v": "site:unterstuetzung-finden",
+      "w": 320,
+      "t": 2,
+      "cyc": "–",
+      "na": false,
+      "fig": "–",
+      "focus": "–",
+      "overflow": "nein",
+      "off": [
+        "Info: Wort getrennt: Orientierung, Wort getrennt: Entscheidungsweg, Wort getrennt: passenden, Wort getrennt: Unterstützung"
+      ],
+      "nav": "4 Links ok",
+      "bad": null
+    },
+    {
+      "v": "site:unterstuetzung-finden",
+      "w": 360,
+      "t": 2,
+      "cyc": "–",
+      "na": false,
+      "fig": "–",
+      "focus": "–",
+      "overflow": "nein",
+      "off": [
+        "Info: Wort getrennt: Orientierung, Wort getrennt: Entscheidungsweg, Wort getrennt: Unterstützung, Wort getrennt: Gesprächsanfragen"
+      ],
+      "nav": "4 Links ok",
+      "bad": null
+    },
+    {
+      "v": "site:unterstuetzung-finden",
+      "w": 768,
+      "t": 2,
+      "cyc": "–",
+      "na": false,
+      "fig": "–",
+      "focus": "–",
+      "overflow": "nein",
+      "off": [
+        "Info: Wort getrennt: Orientierung, Wort getrennt: Gespräch, Wort getrennt: vereinbaren"
+      ],
+      "nav": "4 Links ok",
+      "bad": null
+    },
+    {
+      "v": "site:unterstuetzung-finden",
+      "w": 1440,
+      "t": 2,
+      "cyc": "–",
+      "na": false,
+      "fig": "–",
+      "focus": "–",
+      "overflow": "nein",
+      "off": [
+        "Info: Wort getrennt: Orientierung, Wort getrennt: Gespräch, Wort getrennt: vereinbaren"
+      ],
+      "nav": "4 Links ok",
+      "bad": null
+    }
+  ],
+  "keyboardAndInteractions": [
+    [
+      "ok",
+      "Start: Tab-Stopps der UI-Kit-Leiste vor dem Skip-Link (Kit-Rahmen, nicht Website)",
+      "Info",
+      "15"
+    ],
+    [
+      "ok",
+      "Start: erster Tab-Stopp der Seite",
+      "Zum Hauptinhalt",
+      "Zum Hauptinhalt"
+    ],
+    [
+      "ok",
+      "Skip-Link bei Fokus sichtbar im Viewport",
+      "ja",
+      "ja"
+    ],
+    [
+      "ok",
+      "Skip-Link Enter: Fokus auf main",
+      "main-content",
+      "main-content"
+    ],
+    [
+      "ok",
+      "Start: Hauptnavigation Links",
+      "Behandlung | Forschung | Lehre | Über uns",
+      "Behandlung | Forschung | Lehre | Über uns"
+    ],
+    [
+      "ok",
+      "Start: kein Notfalllink in Hauptnavigation",
+      "keiner",
+      "keiner"
+    ],
+    [
+      "ok",
+      "Start: aria-current in Hauptnavigation",
+      "Behandlung",
+      "Behandlung"
+    ],
+    [
+      "ok",
+      "Start: alle Navigationslinks mit sichtbarem Fokus",
+      "ja",
+      "ja"
+    ],
+    [
+      "ok",
+      "Situation: Enter auf Chip – Fokus bleibt auf Chip",
+      "Sicherheit klären",
+      "Sicherheit klären"
+    ],
+    [
+      "ok",
+      "Situation: aria-pressed / Status",
+      "true · 1 passende Impulse",
+      "true · 1 passende Impulse"
+    ],
+    [
+      "ok",
+      "Situation: Tab nach letztem Chip erreicht «Filter zurücksetzen»",
+      "Filter zurücksetzen",
+      "Filter zurücksetzen"
+    ],
+    [
+      "ok",
+      "Situation: Rücksetzen mit sichtbarem Fokus",
+      "ja",
+      "ja"
+    ],
+    [
+      "ok",
+      "Situation: Fokus nach Rücksetzen (erster Chip)",
+      "Alle Themen",
+      "Alle Themen"
+    ],
+    [
+      "ok",
+      "Situation: Status nach Rücksetzen",
+      "4 passende Impulse",
+      "4 passende Impulse"
+    ],
+    [
+      "ok",
+      "Angebote: Suchfeld mit sichtbarem Fokus und Beschriftung",
+      "ja",
+      "ja"
+    ],
+    [
+      "ok",
+      "Angebote: Leerzustand sichtbar, Fokus bleibt im Suchfeld",
+      "ja · service-search",
+      "ja · service-search"
+    ],
+    [
+      "ok",
+      "Angebote: Status im Leerzustand (aria-live)",
+      "0 passende Musterangebote",
+      "0 passende Musterangebote"
+    ],
+    [
+      "ok",
+      "Angebote: bedienbares Element im Leerzustand",
+      "Info",
+      "0"
+    ],
+    [
+      "ok",
+      "Angebote: Kategorie per Enter, Fokus bleibt",
+      "Beratung · 2 passende Musterangebote",
+      "Beratung · 2 passende Musterangebote"
+    ],
+    [
+      "ok",
+      "Kontakt: Stufen mit sichtbarem Fokus",
+      "3/3",
+      "3/3"
+    ],
+    [
+      "ok",
+      "Kontakt: Enter auf «Jetzt sofort handeln»",
+      "true · Jetzt sofort handeln",
+      "true · Jetzt sofort handeln"
+    ],
+    [
+      "ok",
+      "Kontakt: Tab nach Stufen erreicht Hauptaktion",
+      "Fachlich freigegebenen Notfallweg anzeigen",
+      "Fachlich freigegebenen Notfallweg anzeigen"
+    ],
+    [
+      "ok",
+      "Kontakt: Enter auf Hauptaktion fokussiert Ziel",
+      "kontakt-details",
+      "kontakt-details"
+    ],
+    [
+      "ok",
+      "Gespräch: zwei Chip-Gruppen per Enter, Fokus bleibt",
+      "Eine Grenze benennen",
+      "Eine Grenze benennen"
+    ],
+    [
+      "ok",
+      "Muster: Roadmap mit 9 Sprungzielen, alle Ziele vorhanden",
+      "9 · ja",
+      "9 · ja"
+    ],
+    [
+      "ok",
+      "Muster: Tabellenbereich per Tab erreichbar, Fokusring, Name",
+      "ja · Beispiel eines Visualisierungsplans für eine synthetische Langformseite",
+      "ja · Beispiel eines Visualisierungsplans für eine synthetische Langformseite"
+    ],
+    [
+      "ok",
+      "Muster: Link «Langbeschreibung zu Abbildung 1» mit Fokusring",
+      "ja",
+      "ja"
+    ],
+    [
+      "ok",
+      "Muster: Enter auf Link setzt Fokus auf Langbeschreibung",
+      "muster-figur-lb",
+      "muster-figur-lb"
+    ],
+    [
+      "ok",
+      "Muster: Roadmap «Prozesspfad» scrollt Ziel nach oben",
+      "ja",
+      "ja"
+    ],
+    [
+      "ok",
+      "Muster: keine selbstlaufende Animation (CSS-Regeln statisch gelesen)",
+      "0 innerhalb · 0 ausserhalb",
+      "0 innerhalb · 0 ausserhalb"
+    ],
+    [
+      "ok",
+      "Gespräch: Ausgabe aktualisiert (aria-live)",
+      "polite · Fachlich freigegebenen Kontaktweg beiziehen.",
+      "polite · Fachlich freigegebenen Kontaktweg beiziehen."
+    ],
+    [
+      "ok",
+      "Starter Unterstützung: erster Tab-Stopp",
+      "Zum Hauptinhalt",
+      "Zum Hauptinhalt"
+    ],
+    [
+      "ok",
+      "Starter: Hauptnavigation aus dem Seitenvertrag (nur veröffentlichte Seiten)",
+      "Übersicht | Beziehungen | Behandlung | Unterstützung",
+      "Übersicht | Beziehungen | Behandlung | Unterstützung"
+    ],
+    [
+      "ok",
+      "Starter Unterstützung: aria-current",
+      "Unterstützung",
+      "Unterstützung"
+    ],
+    [
+      "ok",
+      "Starter Unterstützung: kein automatisch ergänzter Krisen- oder Zuständigkeitsblock",
+      "0",
+      "0"
+    ],
+    [
+      "ok",
+      "Starter Unterstützung: Links im Entscheidungsweg per Tab erreichbar",
+      "3",
+      "3"
+    ],
+    [
+      "ok",
+      "Starter Unterstützung: Skip-Link setzt Fokus auf main",
+      "main-content",
+      "main-content"
+    ],
+    [
+      "ok",
+      "Starter Unterstützung: «Ein Gespräch vereinbaren» springt zum Abschnitt (Oberkante 0–48 px)",
+      "ja",
+      "ja"
+    ],
+    [
+      "ok",
+      "Starter Beziehungen: kein pauschaler Zuständigkeitsblock",
+      "0",
+      "0"
+    ],
+    [
+      "ok",
+      "Starter Behandlung: keine automatisch ergänzte Krisenrubrik",
+      "0",
+      "0"
+    ],
+    [
+      "ok",
+      "Starter: Hinweis «ersetzt keine Abklärung» in der Fusszeile",
+      "ja",
+      "ja"
+    ],
+    [
+      "ok",
+      "Situation: Filter «Sicherheit klären» – Status",
+      "1 passende Impulse",
+      "1 passende Impulse"
+    ],
+    [
+      "ok",
+      "Situation: sichtbare Impulse",
+      "Dringlichkeit getrennt klären",
+      "Dringlichkeit getrennt klären"
+    ],
+    [
+      "ok",
+      "Situation: Rücksetzen sichtbar",
+      "ja",
+      "ja"
+    ],
+    [
+      "ok",
+      "Situation: aria-pressed",
+      "true",
+      "true"
+    ],
+    [
+      "ok",
+      "Situation: nach Rücksetzen",
+      "4 passende Impulse",
+      "4 passende Impulse"
+    ],
+    [
+      "ok",
+      "Situation: #-Chip wählt Filter",
+      "Gespräch ohne Druck",
+      "Gespräch ohne Druck"
+    ],
+    [
+      "ok",
+      "Angebote: Suche «ABEND familie» (Reihenfolge, Gross/klein)",
+      "1 passendes Musterangebot",
+      "1 passendes Musterangebot"
+    ],
+    [
+      "ok",
+      "Angebote: Suche ohne Umlaut «angehorige»",
+      "1 passendes Musterangebot",
+      "1 passendes Musterangebot"
+    ],
+    [
+      "ok",
+      "Angebote: Kategorie Beratung",
+      "2 passende Musterangebote",
+      "2 passende Musterangebote"
+    ],
+    [
+      "ok",
+      "Angebote: Leerzustand sichtbar",
+      "ja",
+      "ja"
+    ],
+    [
+      "ok",
+      "Kontakt: Standardstufe",
+      "Beratung und Orientierung vereinbaren",
+      "Beratung und Orientierung vereinbaren"
+    ],
+    [
+      "ok",
+      "Kontakt: Stufe «Heute oder zeitnah»",
+      "Heute oder zeitnah fachliche Unterstützung suchen",
+      "Heute oder zeitnah fachliche Unterstützung suchen"
+    ],
+    [
+      "ok",
+      "Kontakt: #sofort öffnet Notfallstufe",
+      "Jetzt sofort handeln",
+      "Jetzt sofort handeln"
+    ],
+    [
+      "ok",
+      "Kontakt: Hauptaktion fokussiert Ziel",
+      "kontakt-details",
+      "kontakt-details"
+    ],
+    [
+      "ok",
+      "Kontakt: Ziel passt zur Stufe",
+      "Muster für den fachlich freigegebenen Notfallweg",
+      "Muster für den fachlich freigegebenen Notfallweg"
+    ],
+    [
+      "ok",
+      "Gespräch: Sicherheit + Grenze",
+      "Fachlich freigegebenen Kontaktweg beiziehen.",
+      "Fachlich freigegebenen Kontaktweg beiziehen."
+    ],
+    [
+      "ok",
+      "Langform: Sprungziel #verstehen oben im Viewport",
+      "ja",
+      "ja"
+    ],
+    [
+      "ok",
+      "Skip-Link fokussiert main",
+      "main-content",
+      "main-content"
+    ],
+    [
+      "ok",
+      "Externe Laufzeitressourcen",
+      "keine",
+      "keine"
+    ]
+  ],
+  "gate": [
+    [
+      "ok",
+      "Gate Entwurf: blockierende Befunde",
+      "0",
+      "0"
+    ],
+    [
+      "ok",
+      "Gate Produktion blockiert die bewusst ungefüllte Vorlage",
+      "editorial-status, placeholder-approval, review-report, visual-approval",
+      "editorial-status, placeholder-approval, review-report, visual-approval"
+    ],
+    [
+      "ok",
+      "Selbsttest: Ausgangslage Entwurf: 0 blockierende Befunde",
+      "0",
+      "0"
+    ],
+    [
+      "ok",
+      "Selbsttest: Produktion blockiert ungeklärte Absenderin, Zuständigkeitsverweise, Platzhalter und Visualisierungen",
+      "sender-status, safety-review, placeholder-approval, visual-approval · keine Strukturfehler",
+      "sender-status, safety-review, placeholder-approval, visual-approval · keine Strukturfehler"
+    ],
+    [
+      "ok",
+      "Selbsttest: Produktion blockiert Redaktionsstatus Entwurf («Entwurf, noch nicht freigegeben»)",
+      "editorial-status",
+      "editorial-status"
+    ],
+    [
+      "ok",
+      "Selbsttest: Produktion blockiert Redaktionsstatus Entwurf mit Datum («Entwurf vom 15.10.2026»)",
+      "editorial-status",
+      "editorial-status"
+    ],
+    [
+      "ok",
+      "Selbsttest: Produktion blockiert Redaktionsstatus ohne Datum («Fachlich freigegeben»)",
+      "editorial-status",
+      "editorial-status"
+    ],
+    [
+      "ok",
+      "Selbsttest: Redaktionsstatus mit Datum gibt frei («Fachlich freigegeben am 15.10.2026»)",
+      "kein editorial-status",
+      "kein editorial-status"
+    ],
+    [
+      "ok",
+      "Selbsttest: Produktion ohne Prüfbericht blockiert",
+      "review-report",
+      "review-report"
+    ],
+    [
+      "ok",
+      "Selbsttest: Vollständiger Prüfbericht gibt die Veröffentlichung frei",
+      "kein review-report",
+      "kein review-report"
+    ],
+    [
+      "ok",
+      "Selbsttest: Produktion blockiert ohne «Go» im Freigabe-Audit R3",
+      "review-report (R3)",
+      "review-report (R3)"
+    ],
+    [
+      "ok",
+      "Selbsttest: Kennzeichen data-print-split am Prozesspfad ist zulässig",
+      "kein print-split",
+      "kein print-split"
+    ],
+    [
+      "ok",
+      "Selbsttest: Kanonischer Link (siteUrl) gilt nicht als externe Laufzeitquelle",
+      "kein external",
+      "kein external"
+    ],
+    [
+      "ok",
+      "Selbsttest: Produktion blockiert ungeprüften Verweis im Text",
+      "inline-review",
+      "inline-review"
+    ],
+    [
+      "ok",
+      "Selbsttest: Weitere Schweizer Telefonnummer im Text zulässig",
+      "0 zusätzliche Blocker und keine Nummernwarnung",
+      "0"
+    ],
+    [
+      "ok",
+      "Selbsttest: Telefonlink und internationale Nummer zulässig",
+      "0 zusätzliche Blocker und keine Nummernwarnung",
+      "0"
+    ],
+    [
+      "ok",
+      "Selbsttest: Bewusst gewählte Krisenkontakte zulässig",
+      "0 zusätzliche Blocker und keine Nummernwarnung",
+      "0"
+    ],
+    [
+      "ok",
+      "Selbsttest: Kennzeichen am Entscheidungsweg zulässig",
+      "kein print-split",
+      "kein print-split"
+    ],
+    [
+      "ok",
+      "Selbsttest: Kennzeichen am Modell in Schritten zulässig",
+      "kein print-split",
+      "kein print-split"
+    ],
+    [
+      "ok",
+      "Selbsttest: Kennzeichen ohne Schrittliste blockiert",
+      "print-split",
+      "print-split"
+    ],
+    [
+      "ok",
+      "Selbsttest: Navigationsziel fehlt (Link zeigt auf nicht vorhandene Seite)",
+      "nav-target oder nav",
+      "nav-target, nav, link-target"
+    ],
+    [
+      "ok",
+      "Selbsttest: Seitenvertrag verweist auf fehlende Datei",
+      "page-file",
+      "page-file, nav, reachability"
+    ],
+    [
+      "ok",
+      "Selbsttest: lang fehlt",
+      "lang",
+      "lang"
+    ],
+    [
+      "ok",
+      "Selbsttest: CDN-React eingebunden",
+      "external",
+      "external"
+    ],
+    [
+      "ok",
+      "Selbsttest: Favicon fehlt",
+      "favicon",
+      "favicon"
+    ],
+    [
+      "ok",
+      "Selbsttest: Meta-Description fehlt",
+      "meta",
+      "meta"
+    ],
+    [
+      "ok",
+      "Selbsttest: Fachstelle unsichtbar",
+      "sender",
+      "sender"
+    ],
+    [
+      "ok",
+      "Selbsttest: E-Mail der Absenderin fehlt",
+      "sender",
+      "sender"
+    ],
+    [
+      "ok",
+      "Selbsttest: Fachstelle fehlt",
+      "sender",
+      "sender"
+    ],
+    [
+      "ok",
+      "Selbsttest: ß statt ss",
+      "orthography",
+      "orthography"
+    ],
+    [
+      "ok",
+      "Selbsttest: Deutscher Rechtsbegriff",
+      "swiss-context",
+      "swiss-context"
+    ],
+    [
+      "ok",
+      "Selbsttest: Etikettierende Bezeichnung",
+      "person-first",
+      "person-first"
+    ],
+    [
+      "ok",
+      "Selbsttest: Zuständigkeitsverweis ausserhalb der Fusszeile",
+      "safety-position",
+      "safety-position"
+    ],
+    [
+      "ok",
+      "Selbsttest: Zuständigkeitsverweis als geprüft markiert ohne Dokumentation",
+      "review-doc",
+      "review-doc"
+    ],
+    [
+      "ok",
+      "Selbsttest: Zuständigkeitsverweis fehlt auf einer Seite",
+      "safety-target",
+      "safety-target"
+    ],
+    [
+      "ok",
+      "Selbsttest: Hinweis «ersetzt keine Abklärung» fehlt",
+      "disclaimer",
+      "disclaimer"
+    ],
+    [
+      "ok",
+      "Selbsttest: Seite nicht erreichbar",
+      "reachability",
+      "nav, link-target, reachability"
+    ],
+    [
+      "ok",
+      "Selbsttest: Kreislauf linear (keine Bögen)",
+      "cycle-geometry",
+      "cycle-geometry"
+    ],
+    [
+      "ok",
+      "Selbsttest: «Uhrzeigersinn» in schmaler Leserichtung",
+      "cycle-direction",
+      "cycle-direction"
+    ],
+    [
+      "ok",
+      "Selbsttest: Rücksprung zu Station 1 fehlt",
+      "cycle-return",
+      "cycle-return"
+    ],
+    [
+      "ok",
+      "Selbsttest: Figur ohne Bildlegende",
+      "figure-caption",
+      "figure-caption, figure-alt, figure-source"
+    ],
+    [
+      "ok",
+      "Selbsttest: Figur ohne Kennzeichnung",
+      "figure-source",
+      "figure-source"
+    ],
+    [
+      "ok",
+      "Selbsttest: Figur fehlt im Visualisierungsplan",
+      "visual-plan",
+      "visual-plan, plan-coverage"
+    ],
+    [
+      "ok",
+      "Selbsttest: Bildplatzhalter ohne Freigabestatus",
+      "placeholder-status",
+      "placeholder-status"
+    ],
+    [
+      "ok",
+      "Selbsttest: Illustration ohne eigene Zeichnung und ohne Bildstatus",
+      "placeholder-status",
+      "placeholder-status"
+    ],
+    [
+      "ok",
+      "Selbsttest: Quellenlink ohne sprechendes aria-label",
+      "link-label",
+      "link-label"
+    ],
+    [
+      "ok",
+      "Selbsttest: Interner Link ins Leere",
+      "link-target",
+      "link-target"
+    ],
+    [
+      "ok",
+      "Selbsttest: Zwei h1",
+      "h1",
+      "h1"
+    ],
+    [
+      "ok",
+      "Selbsttest: Visualisierungsplan ohne «understood»",
+      "visual-plan",
+      "visual-plan"
+    ],
+    [
+      "ok",
+      "Selbsttest: Visualisierungsplan ohne Wirkung («resonance»)",
+      "resonance",
+      "resonance"
+    ],
+    [
+      "ok",
+      "Selbsttest: Inline-Skript eingefügt",
+      "inline-script",
+      "inline-script"
+    ],
+    [
+      "ok",
+      "Selbsttest: Externer Link in neuem Fenster ohne rel",
+      "blank-target",
+      "blank-target"
+    ],
+    [
+      "ok",
+      "Selbsttest: Akkordeon ohne Interaktionsskript",
+      "interaction-script",
+      "interaction-script"
+    ],
+    [
+      "ok",
+      "Selbsttest: Figur ohne Kernaussage",
+      "figure-core",
+      "figure-core"
+    ],
+    [
+      "ok",
+      "Selbsttest: Abschnitt ohne Zeile im Visualisierungsplan",
+      "plan-coverage",
+      "plan-coverage"
+    ],
+    [
+      "ok",
+      "Selbsttest: Planzeile verweist auf fehlenden Abschnitt",
+      "plan-section",
+      "plan-coverage, plan-section"
+    ],
+    [
+      "ok",
+      "Selbsttest: Ansatzpunkt im Plan fehlt",
+      "entry-point",
+      "entry-point"
+    ],
+    [
+      "ok",
+      "Selbsttest: Ansatzpunkt im Plan, nicht in der Figur",
+      "entry-point",
+      "entry-point"
+    ],
+    [
+      "ok",
+      "Selbsttest: Kartenraster mit vielen Karten",
+      "card-grid",
+      "card-grid"
+    ],
+    [
+      "ok",
+      "Selbsttest: Verweis im Text mit eigenem Wortlaut",
+      "inline-ref",
+      "inline-ref"
+    ],
+    [
+      "ok",
+      "Selbsttest: Verweis im Text auf Seite ohne sensibles Thema",
+      "inline-ref",
+      "inline-ref, safety-contract"
+    ],
+    [
+      "ok",
+      "Selbsttest: Verweis im Text versteckt in einer Vertiefung",
+      "inline-ref",
+      "inline-ref"
+    ],
+    [
+      "ok",
+      "Selbsttest: Entwurf in der Navigation",
+      "nav oder link-draft",
+      "nav-menu, nav, link-draft"
+    ],
+    [
+      "ok",
+      "Selbsttest: Vertiefung ohne Interaktionsskript (Druck)",
+      "interaction-script",
+      "interaction-script"
+    ],
+    [
+      "ok",
+      "Selbsttest: Name des Logo-Links ohne sichtbaren Logotext",
+      "logo-name",
+      "logo-name"
+    ],
+    [
+      "ok",
+      "Selbsttest: Fünf Hauptpunkte ohne Menü",
+      "nav-menu",
+      "nav-menu, nav"
+    ],
+    [
+      "ok",
+      "Selbsttest: Impressum und Datenschutzerklärung fehlen",
+      "legal",
+      "legal"
+    ],
+    [
+      "ok",
+      "Selbsttest: Link auf das Impressum fehlt in der Fusszeile",
+      "legal",
+      "legal"
+    ],
+    [
+      "ok",
+      "Selbsttest: 404-Seite fehlt",
+      "not-found",
+      "not-found"
+    ],
+    [
+      "ok",
+      "Selbsttest: 404-Seite in der Navigation",
+      "not-found",
+      "not-found, nav"
+    ],
+    [
+      "ok",
+      "Selbsttest: 404-Seite als Entwurf (nicht im Export)",
+      "not-found",
+      "not-found"
+    ],
+    [
+      "ok",
+      "Selbsttest: Impressum zeigt auf eine E-Mail-Adresse statt auf eine Seite",
+      "legal",
+      "legal"
+    ],
+    [
+      "ok",
+      "Selbsttest: Externes Stylesheet als «alternate stylesheet»",
+      "external",
+      "external"
+    ],
+    [
+      "ok",
+      "Selbsttest: Fremdsprachiger Quellentitel ohne lang",
+      "lang-part",
+      "lang-part"
+    ],
+    [
+      "ok",
+      "Selbsttest: Kennzeichen data-print-split an einer Gegenüberstellung",
+      "print-split",
+      "print-split"
+    ],
+    [
+      "ok",
+      "Selbsttest: Kennzeichen data-print-split an der Hülle statt an der Figur",
+      "print-split",
+      "print-split"
+    ]
+  ],
+  "errors": [],
+  "notTestable": false
+}
