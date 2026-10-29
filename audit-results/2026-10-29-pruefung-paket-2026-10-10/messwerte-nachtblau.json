@@ -1,0 +1,2222 @@
+{
+ "bundle-light-375": {
+  "normal": {
+   "blau": {
+    "bg": "rgb(60, 100, 255)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "nacht": {
+    "bg": "rgb(24, 40, 102)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "eigen": {
+    "bg": "rgb(24, 40, 102)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "tint": {
+    "bg": "rgb(245, 247, 255)",
+    "color": "rgb(34, 34, 34)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(34, 34, 34) 3px"
+   },
+   "aussen": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(60, 100, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(60, 100, 255) 3px"
+   },
+   "danach": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(60, 100, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(60, 100, 255) 3px"
+   },
+   "blau-kicker": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(60, 100, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(60, 100, 255) 3px"
+   },
+   "blau-p": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "blau-a": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(60, 100, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(60, 100, 255) 3px"
+   },
+   "blau-muted": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(100, 100, 100)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(100, 100, 100) 3px"
+   },
+   "blau-btn": {
+    "bg": "rgb(34, 34, 34)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "blau-sec": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(34, 34, 34)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(34, 34, 34) 3px"
+   },
+   "nacht-kicker": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(216, 224, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(216, 224, 255) 3px"
+   },
+   "nacht-h": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "nacht-p": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "nacht-a": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "underline",
+    "off": "4.725px",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "nacht-muted": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(216, 224, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(216, 224, 255) 3px"
+   },
+   "nacht-btn": {
+    "bg": "rgb(34, 34, 34)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "nacht-sec": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(34, 34, 34)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(34, 34, 34) 3px"
+   },
+   "eigen-a": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "underline",
+    "off": "3.42px",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "tint-a": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(43, 79, 224)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(43, 79, 224) 3px"
+   }
+  },
+  "errs": [],
+  "overflow": 0,
+  "hoverNacht": [
+   "rgb(255, 255, 255)",
+   "underline"
+  ],
+  "hoverBlau": [
+   "rgb(60, 100, 255)",
+   "none"
+  ],
+  "hoverBtn": [
+   "rgb(255, 255, 255)",
+   "rgb(34, 34, 34)",
+   "none"
+  ],
+  "focus": {
+   "nacht-a": {
+    "fv": true,
+    "shadow": "rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px"
+   },
+   "nacht-btn": {
+    "fv": true,
+    "shadow": "rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px"
+   },
+   "eigen-a": {
+    "fv": true,
+    "shadow": "rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px"
+   },
+   "blau-a": {
+    "fv": true,
+    "shadow": "rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px"
+   },
+   "danach": {
+    "fv": true,
+    "shadow": "rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px"
+   },
+   "tint-a": {
+    "fv": true,
+    "shadow": "rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px"
+   }
+  }
+ },
+ "bundle-light-1280": {
+  "normal": {
+   "blau": {
+    "bg": "rgb(60, 100, 255)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "nacht": {
+    "bg": "rgb(24, 40, 102)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "eigen": {
+    "bg": "rgb(24, 40, 102)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "tint": {
+    "bg": "rgb(245, 247, 255)",
+    "color": "rgb(34, 34, 34)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(34, 34, 34) 3px"
+   },
+   "aussen": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(60, 100, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(60, 100, 255) 3px"
+   },
+   "danach": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(60, 100, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(60, 100, 255) 3px"
+   },
+   "blau-kicker": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(60, 100, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(60, 100, 255) 3px"
+   },
+   "blau-p": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "blau-a": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(60, 100, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(60, 100, 255) 3px"
+   },
+   "blau-muted": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(100, 100, 100)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(100, 100, 100) 3px"
+   },
+   "blau-btn": {
+    "bg": "rgb(34, 34, 34)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "blau-sec": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(34, 34, 34)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(34, 34, 34) 3px"
+   },
+   "nacht-kicker": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(216, 224, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(216, 224, 255) 3px"
+   },
+   "nacht-h": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "nacht-p": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "nacht-a": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "underline",
+    "off": "4.725px",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "nacht-muted": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(216, 224, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(216, 224, 255) 3px"
+   },
+   "nacht-btn": {
+    "bg": "rgb(34, 34, 34)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "nacht-sec": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(34, 34, 34)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(34, 34, 34) 3px"
+   },
+   "eigen-a": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "underline",
+    "off": "3.78px",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "tint-a": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(43, 79, 224)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(43, 79, 224) 3px"
+   }
+  },
+  "errs": [],
+  "overflow": 0,
+  "hoverNacht": [
+   "rgb(255, 255, 255)",
+   "underline"
+  ],
+  "hoverBlau": [
+   "rgb(60, 100, 255)",
+   "none"
+  ],
+  "hoverBtn": [
+   "rgb(255, 255, 255)",
+   "rgb(34, 34, 34)",
+   "none"
+  ],
+  "focus": {
+   "nacht-a": {
+    "fv": true,
+    "shadow": "rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px"
+   },
+   "nacht-btn": {
+    "fv": true,
+    "shadow": "rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px"
+   },
+   "eigen-a": {
+    "fv": true,
+    "shadow": "rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px"
+   },
+   "blau-a": {
+    "fv": true,
+    "shadow": "rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px"
+   },
+   "danach": {
+    "fv": true,
+    "shadow": "rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px"
+   },
+   "tint-a": {
+    "fv": true,
+    "shadow": "rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px"
+   }
+  }
+ },
+ "bundle-kontrast-375": {
+  "normal": {
+   "blau": {
+    "bg": "rgb(0, 40, 194)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "nacht": {
+    "bg": "rgb(24, 40, 102)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "eigen": {
+    "bg": "rgb(24, 40, 102)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "tint": {
+    "bg": "rgb(245, 247, 255)",
+    "color": "rgb(34, 34, 34)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(34, 34, 34) 3px"
+   },
+   "aussen": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(0, 40, 194)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(0, 40, 194) 3px"
+   },
+   "danach": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(0, 40, 194)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(0, 40, 194) 3px"
+   },
+   "blau-kicker": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(0, 40, 194)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(0, 40, 194) 3px"
+   },
+   "blau-p": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "blau-a": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(0, 40, 194)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(0, 40, 194) 3px"
+   },
+   "blau-muted": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(79, 79, 79)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(79, 79, 79) 3px"
+   },
+   "blau-btn": {
+    "bg": "rgb(34, 34, 34)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "blau-sec": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(34, 34, 34)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(34, 34, 34) 3px"
+   },
+   "nacht-kicker": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(216, 224, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(216, 224, 255) 3px"
+   },
+   "nacht-h": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "nacht-p": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "nacht-a": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "underline",
+    "off": "4.725px",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "nacht-muted": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(216, 224, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(216, 224, 255) 3px"
+   },
+   "nacht-btn": {
+    "bg": "rgb(34, 34, 34)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "nacht-sec": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(34, 34, 34)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(34, 34, 34) 3px"
+   },
+   "eigen-a": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "underline",
+    "off": "3.42px",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "tint-a": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(0, 31, 153)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(0, 31, 153) 3px"
+   }
+  },
+  "errs": [],
+  "overflow": 0,
+  "hoverNacht": [
+   "rgb(255, 255, 255)",
+   "underline"
+  ],
+  "hoverBlau": [
+   "rgb(0, 40, 194)",
+   "none"
+  ],
+  "hoverBtn": [
+   "rgb(255, 255, 255)",
+   "rgb(34, 34, 34)",
+   "none"
+  ],
+  "focus": {
+   "nacht-a": {
+    "fv": true,
+    "shadow": "rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px"
+   },
+   "nacht-btn": {
+    "fv": true,
+    "shadow": "rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px"
+   },
+   "eigen-a": {
+    "fv": true,
+    "shadow": "rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px"
+   },
+   "blau-a": {
+    "fv": true,
+    "shadow": "rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px"
+   },
+   "danach": {
+    "fv": true,
+    "shadow": "rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px"
+   },
+   "tint-a": {
+    "fv": true,
+    "shadow": "rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px"
+   }
+  }
+ },
+ "bundle-kontrast-1280": {
+  "normal": {
+   "blau": {
+    "bg": "rgb(0, 40, 194)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "nacht": {
+    "bg": "rgb(24, 40, 102)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "eigen": {
+    "bg": "rgb(24, 40, 102)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "tint": {
+    "bg": "rgb(245, 247, 255)",
+    "color": "rgb(34, 34, 34)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(34, 34, 34) 3px"
+   },
+   "aussen": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(0, 40, 194)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(0, 40, 194) 3px"
+   },
+   "danach": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(0, 40, 194)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(0, 40, 194) 3px"
+   },
+   "blau-kicker": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(0, 40, 194)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(0, 40, 194) 3px"
+   },
+   "blau-p": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "blau-a": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(0, 40, 194)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(0, 40, 194) 3px"
+   },
+   "blau-muted": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(79, 79, 79)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(79, 79, 79) 3px"
+   },
+   "blau-btn": {
+    "bg": "rgb(34, 34, 34)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "blau-sec": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(34, 34, 34)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(34, 34, 34) 3px"
+   },
+   "nacht-kicker": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(216, 224, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(216, 224, 255) 3px"
+   },
+   "nacht-h": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "nacht-p": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "nacht-a": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "underline",
+    "off": "4.725px",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "nacht-muted": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(216, 224, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(216, 224, 255) 3px"
+   },
+   "nacht-btn": {
+    "bg": "rgb(34, 34, 34)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "nacht-sec": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(34, 34, 34)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(34, 34, 34) 3px"
+   },
+   "eigen-a": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "underline",
+    "off": "3.78px",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "tint-a": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(0, 31, 153)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(0, 31, 153) 3px"
+   }
+  },
+  "errs": [],
+  "overflow": 0,
+  "hoverNacht": [
+   "rgb(255, 255, 255)",
+   "underline"
+  ],
+  "hoverBlau": [
+   "rgb(0, 40, 194)",
+   "none"
+  ],
+  "hoverBtn": [
+   "rgb(255, 255, 255)",
+   "rgb(34, 34, 34)",
+   "none"
+  ],
+  "focus": {
+   "nacht-a": {
+    "fv": true,
+    "shadow": "rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px"
+   },
+   "nacht-btn": {
+    "fv": true,
+    "shadow": "rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px"
+   },
+   "eigen-a": {
+    "fv": true,
+    "shadow": "rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px"
+   },
+   "blau-a": {
+    "fv": true,
+    "shadow": "rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px"
+   },
+   "danach": {
+    "fv": true,
+    "shadow": "rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px"
+   },
+   "tint-a": {
+    "fv": true,
+    "shadow": "rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px"
+   }
+  }
+ },
+ "tokens-light-375": {
+  "normal": {
+   "blau": {
+    "bg": "rgb(60, 100, 255)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "nacht": {
+    "bg": "rgb(24, 40, 102)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "eigen": {
+    "bg": "rgb(24, 40, 102)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "tint": {
+    "bg": "rgb(245, 247, 255)",
+    "color": "rgb(0, 0, 0)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(0, 0, 0) 3px"
+   },
+   "aussen": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(60, 100, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(60, 100, 255) 3px"
+   },
+   "danach": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(60, 100, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(60, 100, 255) 3px"
+   },
+   "blau-kicker": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "blau-p": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "blau-a": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(60, 100, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(60, 100, 255) 3px"
+   },
+   "blau-muted": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(100, 100, 100)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(100, 100, 100) 3px"
+   },
+   "blau-btn": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(60, 100, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(60, 100, 255) 3px"
+   },
+   "blau-sec": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(60, 100, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(60, 100, 255) 3px"
+   },
+   "nacht-kicker": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "nacht-h": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "nacht-p": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "nacht-a": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "underline",
+    "off": "4.725px",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "nacht-muted": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(216, 224, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(216, 224, 255) 3px"
+   },
+   "nacht-btn": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "nacht-sec": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "eigen-a": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "underline",
+    "off": "3.42px",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "tint-a": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(43, 79, 224)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(43, 79, 224) 3px"
+   }
+  },
+  "errs": [],
+  "overflow": 0,
+  "hoverNacht": [
+   "rgb(255, 255, 255)",
+   "underline"
+  ],
+  "hoverBlau": [
+   "rgb(60, 100, 255)",
+   "none"
+  ],
+  "hoverBtn": [
+   "rgb(255, 255, 255)",
+   "rgba(0, 0, 0, 0)",
+   "none"
+  ],
+  "focus": {
+   "nacht-a": {
+    "fv": true,
+    "shadow": "rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px"
+   },
+   "nacht-btn": {
+    "fv": true,
+    "shadow": "rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px"
+   },
+   "eigen-a": {
+    "fv": true,
+    "shadow": "rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px"
+   },
+   "blau-a": {
+    "fv": true,
+    "shadow": "rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px"
+   },
+   "danach": {
+    "fv": true,
+    "shadow": "rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px"
+   },
+   "tint-a": {
+    "fv": true,
+    "shadow": "rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px"
+   }
+  }
+ },
+ "tokens-light-1280": {
+  "normal": {
+   "blau": {
+    "bg": "rgb(60, 100, 255)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "nacht": {
+    "bg": "rgb(24, 40, 102)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "eigen": {
+    "bg": "rgb(24, 40, 102)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "tint": {
+    "bg": "rgb(245, 247, 255)",
+    "color": "rgb(0, 0, 0)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(0, 0, 0) 3px"
+   },
+   "aussen": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(60, 100, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(60, 100, 255) 3px"
+   },
+   "danach": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(60, 100, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(60, 100, 255) 3px"
+   },
+   "blau-kicker": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "blau-p": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "blau-a": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(60, 100, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(60, 100, 255) 3px"
+   },
+   "blau-muted": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(100, 100, 100)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(100, 100, 100) 3px"
+   },
+   "blau-btn": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(60, 100, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(60, 100, 255) 3px"
+   },
+   "blau-sec": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(60, 100, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(60, 100, 255) 3px"
+   },
+   "nacht-kicker": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "nacht-h": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "nacht-p": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "nacht-a": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "underline",
+    "off": "4.725px",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "nacht-muted": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(216, 224, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(216, 224, 255) 3px"
+   },
+   "nacht-btn": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "nacht-sec": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "eigen-a": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "underline",
+    "off": "3.78px",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "tint-a": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(43, 79, 224)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(43, 79, 224) 3px"
+   }
+  },
+  "errs": [],
+  "overflow": 0,
+  "hoverNacht": [
+   "rgb(255, 255, 255)",
+   "underline"
+  ],
+  "hoverBlau": [
+   "rgb(60, 100, 255)",
+   "none"
+  ],
+  "hoverBtn": [
+   "rgb(255, 255, 255)",
+   "rgba(0, 0, 0, 0)",
+   "none"
+  ],
+  "focus": {
+   "nacht-a": {
+    "fv": true,
+    "shadow": "rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px"
+   },
+   "nacht-btn": {
+    "fv": true,
+    "shadow": "rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px"
+   },
+   "eigen-a": {
+    "fv": true,
+    "shadow": "rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px"
+   },
+   "blau-a": {
+    "fv": true,
+    "shadow": "rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px"
+   },
+   "danach": {
+    "fv": true,
+    "shadow": "rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px"
+   },
+   "tint-a": {
+    "fv": true,
+    "shadow": "rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px"
+   }
+  }
+ },
+ "tokens-kontrast-375": {
+  "normal": {
+   "blau": {
+    "bg": "rgb(60, 100, 255)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "nacht": {
+    "bg": "rgb(24, 40, 102)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "eigen": {
+    "bg": "rgb(24, 40, 102)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "tint": {
+    "bg": "rgb(245, 247, 255)",
+    "color": "rgb(0, 0, 0)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(0, 0, 0) 3px"
+   },
+   "aussen": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(60, 100, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(60, 100, 255) 3px"
+   },
+   "danach": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(60, 100, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(60, 100, 255) 3px"
+   },
+   "blau-kicker": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "blau-p": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "blau-a": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(60, 100, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(60, 100, 255) 3px"
+   },
+   "blau-muted": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(100, 100, 100)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(100, 100, 100) 3px"
+   },
+   "blau-btn": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(60, 100, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(60, 100, 255) 3px"
+   },
+   "blau-sec": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(60, 100, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(60, 100, 255) 3px"
+   },
+   "nacht-kicker": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "nacht-h": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "nacht-p": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "nacht-a": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "underline",
+    "off": "4.725px",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "nacht-muted": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(216, 224, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(216, 224, 255) 3px"
+   },
+   "nacht-btn": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "nacht-sec": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "eigen-a": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "underline",
+    "off": "3.42px",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "tint-a": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(43, 79, 224)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(43, 79, 224) 3px"
+   }
+  },
+  "errs": [],
+  "overflow": 0,
+  "hoverNacht": [
+   "rgb(255, 255, 255)",
+   "underline"
+  ],
+  "hoverBlau": [
+   "rgb(60, 100, 255)",
+   "none"
+  ],
+  "hoverBtn": [
+   "rgb(255, 255, 255)",
+   "rgba(0, 0, 0, 0)",
+   "none"
+  ],
+  "focus": {
+   "nacht-a": {
+    "fv": true,
+    "shadow": "rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px"
+   },
+   "nacht-btn": {
+    "fv": true,
+    "shadow": "rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px"
+   },
+   "eigen-a": {
+    "fv": true,
+    "shadow": "rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px"
+   },
+   "blau-a": {
+    "fv": true,
+    "shadow": "rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px"
+   },
+   "danach": {
+    "fv": true,
+    "shadow": "rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px"
+   },
+   "tint-a": {
+    "fv": true,
+    "shadow": "rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px"
+   }
+  }
+ },
+ "tokens-kontrast-1280": {
+  "normal": {
+   "blau": {
+    "bg": "rgb(60, 100, 255)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "nacht": {
+    "bg": "rgb(24, 40, 102)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "eigen": {
+    "bg": "rgb(24, 40, 102)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "tint": {
+    "bg": "rgb(245, 247, 255)",
+    "color": "rgb(0, 0, 0)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(0, 0, 0) 3px"
+   },
+   "aussen": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(60, 100, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(60, 100, 255) 3px"
+   },
+   "danach": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(60, 100, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(60, 100, 255) 3px"
+   },
+   "blau-kicker": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "blau-p": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "blau-a": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(60, 100, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(60, 100, 255) 3px"
+   },
+   "blau-muted": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(100, 100, 100)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(100, 100, 100) 3px"
+   },
+   "blau-btn": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(60, 100, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(60, 100, 255) 3px"
+   },
+   "blau-sec": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(60, 100, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(60, 100, 255) 3px"
+   },
+   "nacht-kicker": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "nacht-h": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "nacht-p": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "nacht-a": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "underline",
+    "off": "4.725px",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "nacht-muted": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(216, 224, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(216, 224, 255) 3px"
+   },
+   "nacht-btn": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "nacht-sec": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "eigen-a": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "underline",
+    "off": "3.78px",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "tint-a": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(43, 79, 224)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(43, 79, 224) 3px"
+   }
+  },
+  "errs": [],
+  "overflow": 0,
+  "hoverNacht": [
+   "rgb(255, 255, 255)",
+   "underline"
+  ],
+  "hoverBlau": [
+   "rgb(60, 100, 255)",
+   "none"
+  ],
+  "hoverBtn": [
+   "rgb(255, 255, 255)",
+   "rgba(0, 0, 0, 0)",
+   "none"
+  ],
+  "focus": {
+   "nacht-a": {
+    "fv": true,
+    "shadow": "rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px"
+   },
+   "nacht-btn": {
+    "fv": true,
+    "shadow": "rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px"
+   },
+   "eigen-a": {
+    "fv": true,
+    "shadow": "rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px"
+   },
+   "blau-a": {
+    "fv": true,
+    "shadow": "rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px"
+   },
+   "danach": {
+    "fv": true,
+    "shadow": "rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px"
+   },
+   "tint-a": {
+    "fv": true,
+    "shadow": "rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px"
+   }
+  }
+ },
+ "forced-light": {
+  "m": {
+   "blau": {
+    "bg": "rgb(255, 255, 255)",
+    "color": "rgb(0, 0, 0)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(0, 0, 0) 3px"
+   },
+   "nacht": {
+    "bg": "rgb(255, 255, 255)",
+    "color": "rgb(0, 0, 0)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(0, 0, 0) 3px"
+   },
+   "eigen": {
+    "bg": "rgb(255, 255, 255)",
+    "color": "rgb(0, 0, 0)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(0, 0, 0) 3px"
+   },
+   "tint": {
+    "bg": "rgb(255, 255, 255)",
+    "color": "rgb(0, 0, 0)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(0, 0, 0) 3px"
+   },
+   "aussen": {
+    "bg": "rgba(255, 255, 255, 0)",
+    "color": "rgb(0, 0, 159)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(0, 0, 159) 3px"
+   },
+   "danach": {
+    "bg": "rgba(255, 255, 255, 0)",
+    "color": "rgb(0, 0, 159)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(0, 0, 159) 3px"
+   },
+   "blau-kicker": {
+    "bg": "rgba(255, 255, 255, 0)",
+    "color": "rgb(0, 0, 0)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(0, 0, 0) 3px"
+   },
+   "blau-p": {
+    "bg": "rgba(255, 255, 255, 0)",
+    "color": "rgb(0, 0, 0)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(0, 0, 0) 3px"
+   },
+   "blau-a": {
+    "bg": "rgba(255, 255, 255, 0)",
+    "color": "rgb(0, 0, 159)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(0, 0, 159) 3px"
+   },
+   "blau-muted": {
+    "bg": "rgba(255, 255, 255, 0)",
+    "color": "rgb(0, 0, 0)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(0, 0, 0) 3px"
+   },
+   "blau-btn": {
+    "bg": "rgb(255, 255, 255)",
+    "color": "rgb(0, 0, 159)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(0, 0, 159) 3px"
+   },
+   "blau-sec": {
+    "bg": "rgba(255, 255, 255, 0)",
+    "color": "rgb(0, 0, 159)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(0, 0, 159) 3px"
+   },
+   "nacht-kicker": {
+    "bg": "rgba(255, 255, 255, 0)",
+    "color": "rgb(0, 0, 0)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(0, 0, 0) 3px"
+   },
+   "nacht-h": {
+    "bg": "rgba(255, 255, 255, 0)",
+    "color": "rgb(0, 0, 0)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(0, 0, 0) 3px"
+   },
+   "nacht-p": {
+    "bg": "rgba(255, 255, 255, 0)",
+    "color": "rgb(0, 0, 0)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(0, 0, 0) 3px"
+   },
+   "nacht-a": {
+    "bg": "rgba(255, 255, 255, 0)",
+    "color": "rgb(0, 0, 159)",
+    "deco": "underline",
+    "off": "4.725px",
+    "shadow": "none",
+    "outline": "solid rgb(0, 0, 0) 2px"
+   },
+   "nacht-muted": {
+    "bg": "rgba(255, 255, 255, 0)",
+    "color": "rgb(0, 0, 0)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(0, 0, 0) 3px"
+   },
+   "nacht-btn": {
+    "bg": "rgb(255, 255, 255)",
+    "color": "rgb(0, 0, 159)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(0, 0, 159) 3px"
+   },
+   "nacht-sec": {
+    "bg": "rgba(255, 255, 255, 0)",
+    "color": "rgb(0, 0, 159)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(0, 0, 159) 3px"
+   },
+   "eigen-a": {
+    "bg": "rgba(255, 255, 255, 0)",
+    "color": "rgb(0, 0, 159)",
+    "deco": "underline",
+    "off": "3.78px",
+    "shadow": "none",
+    "outline": "none rgb(0, 0, 159) 3px"
+   },
+   "tint-a": {
+    "bg": "rgba(255, 255, 255, 0)",
+    "color": "rgb(0, 0, 159)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(0, 0, 159) 3px"
+   }
+  },
+  "focus": "solid rgb(0, 0, 0) 2px | none"
+ },
+ "forced-dark": {
+  "m": {
+   "blau": {
+    "bg": "rgb(0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "nacht": {
+    "bg": "rgb(0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "eigen": {
+    "bg": "rgb(0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "tint": {
+    "bg": "rgb(0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "aussen": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 0)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 0) 3px"
+   },
+   "danach": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 0)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 0) 3px"
+   },
+   "blau-kicker": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "blau-p": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "blau-a": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 0)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 0) 3px"
+   },
+   "blau-muted": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "blau-btn": {
+    "bg": "rgb(0, 0, 0)",
+    "color": "rgb(255, 255, 0)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 0) 3px"
+   },
+   "blau-sec": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 0)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 0) 3px"
+   },
+   "nacht-kicker": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "nacht-h": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "nacht-p": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "nacht-a": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 0)",
+    "deco": "underline",
+    "off": "4.725px",
+    "shadow": "none",
+    "outline": "solid rgb(255, 255, 255) 2px"
+   },
+   "nacht-muted": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 255)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 255) 3px"
+   },
+   "nacht-btn": {
+    "bg": "rgb(0, 0, 0)",
+    "color": "rgb(255, 255, 0)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 0) 3px"
+   },
+   "nacht-sec": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 0)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 0) 3px"
+   },
+   "eigen-a": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 0)",
+    "deco": "underline",
+    "off": "3.78px",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 0) 3px"
+   },
+   "tint-a": {
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(255, 255, 0)",
+    "deco": "none",
+    "off": "auto",
+    "shadow": "none",
+    "outline": "none rgb(255, 255, 0) 3px"
+   }
+  },
+  "focus": "solid rgb(255, 255, 255) 2px | none"
+ },
+ "print": {
+  "blau": {
+   "bg": "rgba(0, 0, 0, 0)",
+   "color": "rgb(34, 34, 34)",
+   "deco": "none",
+   "off": "auto",
+   "shadow": "none",
+   "outline": "none rgb(34, 34, 34) 3px"
+  },
+  "nacht": {
+   "bg": "rgba(0, 0, 0, 0)",
+   "color": "rgb(255, 255, 255)",
+   "deco": "none",
+   "off": "auto",
+   "shadow": "none",
+   "outline": "none rgb(255, 255, 255) 3px"
+  },
+  "eigen": {
+   "bg": "rgb(24, 40, 102)",
+   "color": "rgb(255, 255, 255)",
+   "deco": "none",
+   "off": "auto",
+   "shadow": "none",
+   "outline": "none rgb(255, 255, 255) 3px"
+  },
+  "tint": {
+   "bg": "rgb(245, 247, 255)",
+   "color": "rgb(34, 34, 34)",
+   "deco": "none",
+   "off": "auto",
+   "shadow": "none",
+   "outline": "none rgb(34, 34, 34) 3px"
+  },
+  "aussen": {
+   "bg": "rgba(0, 0, 0, 0)",
+   "color": "rgb(60, 100, 255)",
+   "deco": "none",
+   "off": "auto",
+   "shadow": "none",
+   "outline": "none rgb(60, 100, 255) 3px"
+  },
+  "danach": {
+   "bg": "rgba(0, 0, 0, 0)",
+   "color": "rgb(60, 100, 255)",
+   "deco": "none",
+   "off": "auto",
+   "shadow": "none",
+   "outline": "none rgb(60, 100, 255) 3px"
+  },
+  "blau-kicker": {
+   "bg": "rgba(0, 0, 0, 0)",
+   "color": "rgb(60, 100, 255)",
+   "deco": "none",
+   "off": "auto",
+   "shadow": "none",
+   "outline": "none rgb(60, 100, 255) 3px"
+  },
+  "blau-p": {
+   "bg": "rgba(0, 0, 0, 0)",
+   "color": "rgb(34, 34, 34)",
+   "deco": "none",
+   "off": "auto",
+   "shadow": "none",
+   "outline": "none rgb(34, 34, 34) 3px"
+  },
+  "blau-a": {
+   "bg": "rgba(0, 0, 0, 0)",
+   "color": "rgb(60, 100, 255)",
+   "deco": "none",
+   "off": "auto",
+   "shadow": "none",
+   "outline": "none rgb(60, 100, 255) 3px"
+  },
+  "blau-muted": {
+   "bg": "rgba(0, 0, 0, 0)",
+   "color": "rgb(100, 100, 100)",
+   "deco": "none",
+   "off": "auto",
+   "shadow": "none",
+   "outline": "none rgb(100, 100, 100) 3px"
+  },
+  "blau-btn": {
+   "bg": "rgb(34, 34, 34)",
+   "color": "rgb(255, 255, 255)",
+   "deco": "none",
+   "off": "auto",
+   "shadow": "none",
+   "outline": "none rgb(255, 255, 255) 3px"
+  },
+  "blau-sec": {
+   "bg": "rgba(0, 0, 0, 0)",
+   "color": "rgb(34, 34, 34)",
+   "deco": "none",
+   "off": "auto",
+   "shadow": "none",
+   "outline": "none rgb(34, 34, 34) 3px"
+  },
+  "nacht-kicker": {
+   "bg": "rgba(0, 0, 0, 0)",
+   "color": "rgb(216, 224, 255)",
+   "deco": "none",
+   "off": "auto",
+   "shadow": "none",
+   "outline": "none rgb(216, 224, 255) 3px"
+  },
+  "nacht-h": {
+   "bg": "rgba(0, 0, 0, 0)",
+   "color": "rgb(255, 255, 255)",
+   "deco": "none",
+   "off": "auto",
+   "shadow": "none",
+   "outline": "none rgb(255, 255, 255) 3px"
+  },
+  "nacht-p": {
+   "bg": "rgba(0, 0, 0, 0)",
+   "color": "rgb(255, 255, 255)",
+   "deco": "none",
+   "off": "auto",
+   "shadow": "none",
+   "outline": "none rgb(255, 255, 255) 3px"
+  },
+  "nacht-a": {
+   "bg": "rgba(0, 0, 0, 0)",
+   "color": "rgb(255, 255, 255)",
+   "deco": "underline",
+   "off": "3.83906px",
+   "shadow": "none",
+   "outline": "none rgb(255, 255, 255) 3px"
+  },
+  "nacht-muted": {
+   "bg": "rgba(0, 0, 0, 0)",
+   "color": "rgb(216, 224, 255)",
+   "deco": "none",
+   "off": "auto",
+   "shadow": "none",
+   "outline": "none rgb(216, 224, 255) 3px"
+  },
+  "nacht-btn": {
+   "bg": "rgb(34, 34, 34)",
+   "color": "rgb(255, 255, 255)",
+   "deco": "none",
+   "off": "auto",
+   "shadow": "none",
+   "outline": "none rgb(255, 255, 255) 3px"
+  },
+  "nacht-sec": {
+   "bg": "rgba(0, 0, 0, 0)",
+   "color": "rgb(34, 34, 34)",
+   "deco": "none",
+   "off": "auto",
+   "shadow": "none",
+   "outline": "none rgb(34, 34, 34) 3px"
+  },
+  "eigen-a": {
+   "bg": "rgba(0, 0, 0, 0)",
+   "color": "rgb(255, 255, 255)",
+   "deco": "underline",
+   "off": "3.07125px",
+   "shadow": "none",
+   "outline": "none rgb(255, 255, 255) 3px"
+  },
+  "tint-a": {
+   "bg": "rgba(0, 0, 0, 0)",
+   "color": "rgb(43, 79, 224)",
+   "deco": "none",
+   "off": "auto",
+   "shadow": "none",
+   "outline": "none rgb(43, 79, 224) 3px"
+  }
+ }
+}

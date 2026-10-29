@@ -1,0 +1,1 @@
+Matrix: 112 Prüfläufe · 0 mit Befund · Tastatur: 41 Prüfungen · 0 mit Befund · Interaktionen: 19 Prüfungen · 0 mit Befund · Gate: 76 Prüfungen · 0 mit Befund · Gesamt: 0 Befunde · Fokusring nur statisch geprüft (Dokument ohne Fokus): Matrix 0 Läufe · nicht prüfbar: Tastatur 0, Interaktionen 0

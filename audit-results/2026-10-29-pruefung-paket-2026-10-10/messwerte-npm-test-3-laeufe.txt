@@ -1,0 +1,15 @@
+Lauf 1 # tests 112
+Lauf 1 # pass 112
+Lauf 1 # fail 0
+Lauf 1 # skipped 0
+Lauf 1 # duration_ms 63298.421068
+Lauf 2 # tests 112
+Lauf 2 # pass 112
+Lauf 2 # fail 0
+Lauf 2 # skipped 0
+Lauf 2 # duration_ms 63756.495591
+Lauf 3 # tests 112
+Lauf 3 # pass 112
+Lauf 3 # fail 0
+Lauf 3 # skipped 0
+Lauf 3 # duration_ms 66039.88279

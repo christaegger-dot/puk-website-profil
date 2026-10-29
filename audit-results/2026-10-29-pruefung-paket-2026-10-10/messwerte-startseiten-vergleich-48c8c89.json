@@ -1,0 +1,206 @@
+[
+ {
+  "v": "minimal-starter",
+  "theme": "light",
+  "w": 375,
+  "cmp": {
+   "same": true,
+   "diffPx": 0,
+   "size": [
+    375,
+    1189
+   ]
+  },
+  "altBuild": "r4-16",
+  "neuBuild": "r4-17",
+  "errs": [],
+  "night": 0
+ },
+ {
+  "v": "minimal-starter",
+  "theme": "light",
+  "w": 1280,
+  "cmp": {
+   "same": true,
+   "diffPx": 0,
+   "size": [
+    1280,
+    982
+   ]
+  },
+  "altBuild": "r4-16",
+  "neuBuild": "r4-17",
+  "errs": [],
+  "night": 0
+ },
+ {
+  "v": "minimal-starter",
+  "theme": "kontrast",
+  "w": 375,
+  "cmp": {
+   "same": true,
+   "diffPx": 0,
+   "size": [
+    375,
+    1189
+   ]
+  },
+  "altBuild": "r4-16",
+  "neuBuild": "r4-17",
+  "errs": [],
+  "night": 0
+ },
+ {
+  "v": "minimal-starter",
+  "theme": "kontrast",
+  "w": 1280,
+  "cmp": {
+   "same": true,
+   "diffPx": 0,
+   "size": [
+    1280,
+    982
+   ]
+  },
+  "altBuild": "r4-16",
+  "neuBuild": "r4-17",
+  "errs": [],
+  "night": 0
+ },
+ {
+  "v": "profilbeispiel",
+  "theme": "light",
+  "w": 375,
+  "cmp": {
+   "same": true,
+   "diffPx": 0,
+   "size": [
+    375,
+    1523
+   ]
+  },
+  "altBuild": "r4-16",
+  "neuBuild": "r4-17",
+  "errs": [],
+  "night": 0
+ },
+ {
+  "v": "profilbeispiel",
+  "theme": "light",
+  "w": 1280,
+  "cmp": {
+   "same": true,
+   "diffPx": 0,
+   "size": [
+    1280,
+    1307
+   ]
+  },
+  "altBuild": "r4-16",
+  "neuBuild": "r4-17",
+  "errs": [],
+  "night": 0
+ },
+ {
+  "v": "profilbeispiel",
+  "theme": "kontrast",
+  "w": 375,
+  "cmp": {
+   "same": true,
+   "diffPx": 0,
+   "size": [
+    375,
+    1523
+   ]
+  },
+  "altBuild": "r4-16",
+  "neuBuild": "r4-17",
+  "errs": [],
+  "night": 0
+ },
+ {
+  "v": "profilbeispiel",
+  "theme": "kontrast",
+  "w": 1280,
+  "cmp": {
+   "same": true,
+   "diffPx": 0,
+   "size": [
+    1280,
+    1307
+   ]
+  },
+  "altBuild": "r4-16",
+  "neuBuild": "r4-17",
+  "errs": [],
+  "night": 0
+ },
+ {
+  "v": "psychoeducation-site-starter",
+  "theme": "light",
+  "w": 375,
+  "cmp": {
+   "same": true,
+   "diffPx": 0,
+   "size": [
+    375,
+    2559
+   ]
+  },
+  "altBuild": "r4-16",
+  "neuBuild": "r4-17",
+  "errs": [],
+  "night": 0
+ },
+ {
+  "v": "psychoeducation-site-starter",
+  "theme": "light",
+  "w": 1280,
+  "cmp": {
+   "same": true,
+   "diffPx": 0,
+   "size": [
+    1280,
+    1927
+   ]
+  },
+  "altBuild": "r4-16",
+  "neuBuild": "r4-17",
+  "errs": [],
+  "night": 0
+ },
+ {
+  "v": "psychoeducation-site-starter",
+  "theme": "kontrast",
+  "w": 375,
+  "cmp": {
+   "same": true,
+   "diffPx": 0,
+   "size": [
+    375,
+    2559
+   ]
+  },
+  "altBuild": "r4-16",
+  "neuBuild": "r4-17",
+  "errs": [],
+  "night": 0
+ },
+ {
+  "v": "psychoeducation-site-starter",
+  "theme": "kontrast",
+  "w": 1280,
+  "cmp": {
+   "same": true,
+   "diffPx": 0,
+   "size": [
+    1280,
+    1927
+   ]
+  },
+  "altBuild": "r4-16",
+  "neuBuild": "r4-17",
+  "errs": [],
+  "night": 0
+ }
+]
