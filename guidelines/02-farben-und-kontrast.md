@@ -88,6 +88,7 @@ Die Arbeitspalette begrenzt die Farbfreiheit der Marke bewusst für eine konkret
 - **Text und Links darauf:** Weiss (`--text-on-dark`, 13,69:1) oder Blau 25 (`--puk-blue-25`, 10,45:1). Links sind weiss und unterstrichen, auch im Hover. Der Fokusring kehrt sich um: Nachtblau innen, Weiss aussen. `data-puk-surface="night"` setzt Fläche, Text-, Link-, Akzentfarbe und Fokusring.
 - **Zählung:** Nachtblau ist eine dunkle Fläche wie `--surface-inverse`. Es zählt nicht als «das eine blaue Feld» einer Komposition.
 - **Hoher Kontrast:** Nachtblau bleibt im Theme «Hoher Kontrast» unverändert; Weiss und Blau 25 erreichen darauf schon mehr als 7:1.
+- **Druck (Nachbesserung 29.10.2026, W-A):** Im Druck entfällt die nachtblaue Fläche wie beim blauen Band. Text, Links und Akzent stehen dann wie auf Weiss, nicht in Weiss oder Blau 25. Herkunft: [ENTSCHEIDE-PROFIL-2026-10-11.md](../ENTSCHEIDE-PROFIL-2026-10-11.md).
 - **Titelbild der Startseite:** Im Einstieg der Startseite ist ein Titelbild zulässig, wenn es alle vier Bedingungen erfüllt:
   - Es ist rein dekorativ und für Screenreader verborgen (`aria-hidden="true"`).
   - Es trägt keine Bedeutung.

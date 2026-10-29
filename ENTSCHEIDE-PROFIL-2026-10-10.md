@@ -55,4 +55,4 @@ Weiss und Blau 25 sind im Theme «Hoher Kontrast» unverändert; darum gelten di
 
 ## Prüfung
 
-Die technische Selbstprüfung steht im [Prüfbericht](PRUEFBERICHT.md). Das Paket `puk-website-profil-2026.10.10.zip` prüft eine Sitzung, die es nicht gebaut hat. Kein Merge und keine Veröffentlichung ohne gesonderten Auftrag.
+Die technische Selbstprüfung steht im [Prüfbericht](PRUEFBERICHT.md). Das Paket `puk-website-profil-2026.10.10.zip` (SHA-256 `72abb32c…`) hat am 29.10.2026 eine Sitzung geprüft, die es nicht gebaut hat: keine Befunde «kritisch», ein Befund «wichtig» (W-A, Druck der nachtblauen Fläche) und vier «optional»; Ergebnis im [archivierten Prüfbericht](archiv/profilstand-2026-10-29-10/PRUEFBERICHT.md). W-A ist mit Version 2026.10.11 behoben ([ENTSCHEIDE-PROFIL-2026-10-11.md](ENTSCHEIDE-PROFIL-2026-10-11.md)). Kein Merge und keine Veröffentlichung ohne gesonderten Auftrag.

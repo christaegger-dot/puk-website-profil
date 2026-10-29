@@ -88,3 +88,25 @@ test('data-puk-surface="night" setzt Fläche, weisse unterstrichene Links und de
   }finally{await page.close();}
  }
 });
+
+// Nachbesserung 29.10.2026 (ENTSCHEIDE-PROFIL-2026-10-11.md, W-A): Druck der nachtblauen Fläche wie auf Weiss.
+test('data-puk-surface="night" druckt ohne Fläche mit dunklem Text und Links wie auf Weiss',async()=>{
+ for(const theme of ['light','kontrast']){
+  const page=await browser.newPage();
+  try{
+   await page.route(server.url+'nachtblau-druck.html',r=>r.fulfill({contentType:'text/html',body:theme==='kontrast'?fixture.replace('<html lang="de">','<html lang="de" data-theme="kontrast">'):fixture}));
+   await page.goto(server.url+'nachtblau-druck.html',{waitUntil:'load'});
+   await page.addStyleTag({content:'*{transition:none!important}'});
+   await page.emulateMedia({media:'print'});
+   const c=(q,p='color')=>page.$eval(q,(el,p)=>getComputedStyle(el)[p],p);
+   for(const id of ['#band','#own'])assert.equal(await c(id,'backgroundColor'),'rgba(0, 0, 0, 0)',`${theme} ${id} ohne Fläche`);
+   assert.equal(await c('#text'),'rgb(34, 34, 34)',`${theme} Text`);
+   const white=await c('#white');
+   for(const id of ['#link','#plink','#ownlink']){
+    assert.equal(await c(id),white,`${theme} ${id} wie Link auf Weiss`);
+    assert.match(await c(id,'textDecorationLine'),/underline/,`${theme} ${id}`);
+   }
+   assert.notEqual(await c('#accent'),'rgb(216, 224, 255)',`${theme} Akzent nicht Blau 25`);
+  }finally{await page.close();}
+ }
+});
