@@ -1,0 +1,498 @@
+{
+ "360-ohne": [
+  {
+   "inhalt": true,
+   "fehler": 0,
+   "ersterFehler": null,
+   "gleicherText": true,
+   "zeichen": 1004,
+   "reihenfolge": [
+    "req react.production.min.js",
+    "req react-dom.production.min.js",
+    "req _ds_bundle.js",
+    "fertig react.production.min.js",
+    "fertig react-dom.production.min.js",
+    "fertig _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "req _ds_bundle.js",
+    "fertig claude-ds-alias.js",
+    "fertig _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js"
+   ]
+  },
+  {
+   "inhalt": true,
+   "fehler": 0,
+   "ersterFehler": null,
+   "gleicherText": true,
+   "zeichen": 1004,
+   "reihenfolge": [
+    "req react.production.min.js",
+    "req react-dom.production.min.js",
+    "req _ds_bundle.js",
+    "fertig react.production.min.js",
+    "fertig _ds_bundle.js",
+    "fertig react-dom.production.min.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js",
+    "req _ds_bundle.js",
+    "fertig _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js"
+   ]
+  },
+  {
+   "inhalt": true,
+   "fehler": 0,
+   "ersterFehler": null,
+   "gleicherText": true,
+   "zeichen": 1004,
+   "reihenfolge": [
+    "req react.production.min.js",
+    "req react-dom.production.min.js",
+    "req _ds_bundle.js",
+    "fertig react.production.min.js",
+    "fertig react-dom.production.min.js",
+    "fertig _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js",
+    "req _ds_bundle.js",
+    "fertig _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js"
+   ]
+  }
+ ],
+ "360-react-800": [
+  {
+   "inhalt": false,
+   "fehler": 24,
+   "ersterFehler": "TypeError: Cannot read properties of undefined (reading 'useState')\n    at ae (http://127.0.0.1:36173/_ds_bundle.js:2:6861)\n    at mf (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:105:412)\n    at Qk (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:250:214)\n    at Ri (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:195:185)\n    at Ok (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:195:116)\n    at Nd (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:194:492)\n    at Qf (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:187:439)\n    at Ni (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:185:400)\n    at S (http://127.0.0.1:36173/platform/vendor/react.production.min.js:17:25)\n    at MessagePort.U (http://127.0.0.1:36173/platform/vendor/react.production.min.js:21:229)",
+   "gleicherText": false,
+   "zeichen": 131,
+   "reihenfolge": [
+    "req react.production.min.js",
+    "req react-dom.production.min.js",
+    "req _ds_bundle.js",
+    "fertig _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js",
+    "fertig react.production.min.js",
+    "fertig react-dom.production.min.js",
+    "req _ds_bundle.js",
+    "fertig _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js"
+   ]
+  },
+  {
+   "inhalt": false,
+   "fehler": 24,
+   "ersterFehler": "TypeError: Cannot read properties of undefined (reading 'useState')\n    at ae (http://127.0.0.1:36173/_ds_bundle.js:2:6861)\n    at mf (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:105:412)\n    at Qk (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:250:214)\n    at Ri (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:195:185)\n    at Ok (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:195:116)\n    at Nd (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:194:492)\n    at Qf (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:187:439)\n    at Ni (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:185:400)\n    at S (http://127.0.0.1:36173/platform/vendor/react.production.min.js:17:25)\n    at MessagePort.U (http://127.0.0.1:36173/platform/vendor/react.production.min.js:21:229)",
+   "gleicherText": false,
+   "zeichen": 131,
+   "reihenfolge": [
+    "req react.production.min.js",
+    "req react-dom.production.min.js",
+    "req _ds_bundle.js",
+    "fertig _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js",
+    "fertig react.production.min.js",
+    "fertig react-dom.production.min.js",
+    "req _ds_bundle.js",
+    "fertig _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js"
+   ]
+  },
+  {
+   "inhalt": false,
+   "fehler": 24,
+   "ersterFehler": "TypeError: Cannot read properties of undefined (reading 'useState')\n    at ae (http://127.0.0.1:36173/_ds_bundle.js:2:6861)\n    at mf (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:105:412)\n    at Qk (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:250:214)\n    at Ri (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:195:185)\n    at Ok (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:195:116)\n    at Nd (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:194:492)\n    at Qf (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:187:439)\n    at Ni (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:185:400)\n    at S (http://127.0.0.1:36173/platform/vendor/react.production.min.js:17:25)\n    at MessagePort.U (http://127.0.0.1:36173/platform/vendor/react.production.min.js:21:229)",
+   "gleicherText": false,
+   "zeichen": 131,
+   "reihenfolge": [
+    "req react.production.min.js",
+    "req react-dom.production.min.js",
+    "req _ds_bundle.js",
+    "fertig _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js",
+    "fertig react.production.min.js",
+    "fertig react-dom.production.min.js",
+    "req _ds_bundle.js",
+    "fertig _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js"
+   ]
+  }
+ ],
+ "360-react-3000": [
+  {
+   "inhalt": false,
+   "fehler": 24,
+   "ersterFehler": "TypeError: Cannot read properties of undefined (reading 'useState')\n    at ae (http://127.0.0.1:36173/_ds_bundle.js:2:6861)\n    at mf (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:105:412)\n    at Qk (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:250:214)\n    at Ri (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:195:185)\n    at Ok (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:195:116)\n    at Nd (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:194:492)\n    at Qf (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:187:439)\n    at Ni (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:185:400)\n    at S (http://127.0.0.1:36173/platform/vendor/react.production.min.js:17:25)\n    at MessagePort.U (http://127.0.0.1:36173/platform/vendor/react.production.min.js:21:229)",
+   "gleicherText": false,
+   "zeichen": 131,
+   "reihenfolge": [
+    "req react.production.min.js",
+    "req react-dom.production.min.js",
+    "req _ds_bundle.js",
+    "fertig _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js",
+    "fertig react.production.min.js",
+    "fertig react-dom.production.min.js",
+    "req _ds_bundle.js",
+    "fertig _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js"
+   ]
+  },
+  {
+   "inhalt": false,
+   "fehler": 24,
+   "ersterFehler": "TypeError: Cannot read properties of undefined (reading 'useState')\n    at ae (http://127.0.0.1:36173/_ds_bundle.js:2:6861)\n    at mf (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:105:412)\n    at Qk (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:250:214)\n    at Ri (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:195:185)\n    at Ok (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:195:116)\n    at Nd (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:194:492)\n    at Qf (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:187:439)\n    at Ni (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:185:400)\n    at S (http://127.0.0.1:36173/platform/vendor/react.production.min.js:17:25)\n    at MessagePort.U (http://127.0.0.1:36173/platform/vendor/react.production.min.js:21:229)",
+   "gleicherText": false,
+   "zeichen": 131,
+   "reihenfolge": [
+    "req react.production.min.js",
+    "req react-dom.production.min.js",
+    "req _ds_bundle.js",
+    "fertig _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js",
+    "fertig react.production.min.js",
+    "fertig react-dom.production.min.js",
+    "req _ds_bundle.js",
+    "fertig _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js"
+   ]
+  },
+  {
+   "inhalt": false,
+   "fehler": 24,
+   "ersterFehler": "TypeError: Cannot read properties of undefined (reading 'useState')\n    at ae (http://127.0.0.1:36173/_ds_bundle.js:2:6861)\n    at mf (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:105:412)\n    at Qk (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:250:214)\n    at Ri (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:195:185)\n    at Ok (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:195:116)\n    at Nd (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:194:492)\n    at Qf (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:187:439)\n    at Ni (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:185:400)\n    at S (http://127.0.0.1:36173/platform/vendor/react.production.min.js:17:25)\n    at MessagePort.U (http://127.0.0.1:36173/platform/vendor/react.production.min.js:21:229)",
+   "gleicherText": false,
+   "zeichen": 131,
+   "reihenfolge": [
+    "req react.production.min.js",
+    "req react-dom.production.min.js",
+    "req _ds_bundle.js",
+    "fertig _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js",
+    "fertig react.production.min.js",
+    "fertig react-dom.production.min.js",
+    "req _ds_bundle.js",
+    "fertig _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js"
+   ]
+  }
+ ],
+ "360-bundle-800": [
+  {
+   "inhalt": true,
+   "fehler": 0,
+   "ersterFehler": null,
+   "gleicherText": true,
+   "zeichen": 1004,
+   "reihenfolge": [
+    "req react.production.min.js",
+    "req react-dom.production.min.js",
+    "req _ds_bundle.js",
+    "fertig react.production.min.js",
+    "fertig react-dom.production.min.js",
+    "fertig _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js"
+   ]
+  },
+  {
+   "inhalt": true,
+   "fehler": 0,
+   "ersterFehler": null,
+   "gleicherText": true,
+   "zeichen": 1004,
+   "reihenfolge": [
+    "req react.production.min.js",
+    "req react-dom.production.min.js",
+    "req _ds_bundle.js",
+    "fertig react.production.min.js",
+    "fertig react-dom.production.min.js",
+    "fertig _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js"
+   ]
+  },
+  {
+   "inhalt": true,
+   "fehler": 0,
+   "ersterFehler": null,
+   "gleicherText": true,
+   "zeichen": 1004,
+   "reihenfolge": [
+    "req react.production.min.js",
+    "req react-dom.production.min.js",
+    "req _ds_bundle.js",
+    "fertig react.production.min.js",
+    "fertig react-dom.production.min.js",
+    "fertig _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js"
+   ]
+  }
+ ],
+ "1280-ohne": [
+  {
+   "inhalt": true,
+   "fehler": 0,
+   "ersterFehler": null,
+   "gleicherText": true,
+   "zeichen": 1004,
+   "reihenfolge": [
+    "req react.production.min.js",
+    "req react-dom.production.min.js",
+    "req _ds_bundle.js",
+    "fertig react.production.min.js",
+    "fertig react-dom.production.min.js",
+    "fertig _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js",
+    "req _ds_bundle.js",
+    "fertig _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js"
+   ]
+  },
+  {
+   "inhalt": true,
+   "fehler": 0,
+   "ersterFehler": null,
+   "gleicherText": true,
+   "zeichen": 1004,
+   "reihenfolge": [
+    "req react.production.min.js",
+    "req react-dom.production.min.js",
+    "req _ds_bundle.js",
+    "fertig react.production.min.js",
+    "fertig _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig react-dom.production.min.js",
+    "fertig claude-ds-alias.js",
+    "req _ds_bundle.js",
+    "fertig _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js"
+   ]
+  },
+  {
+   "inhalt": true,
+   "fehler": 0,
+   "ersterFehler": null,
+   "gleicherText": true,
+   "zeichen": 1004,
+   "reihenfolge": [
+    "req react.production.min.js",
+    "req react-dom.production.min.js",
+    "req _ds_bundle.js",
+    "fertig react.production.min.js",
+    "fertig _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig react-dom.production.min.js",
+    "fertig claude-ds-alias.js",
+    "req _ds_bundle.js",
+    "fertig _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js"
+   ]
+  }
+ ],
+ "1280-react-800": [
+  {
+   "inhalt": false,
+   "fehler": 24,
+   "ersterFehler": "TypeError: Cannot read properties of undefined (reading 'useState')\n    at ae (http://127.0.0.1:36173/_ds_bundle.js:2:6861)\n    at mf (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:105:412)\n    at Qk (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:250:214)\n    at Ri (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:195:185)\n    at Ok (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:195:116)\n    at Nd (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:194:492)\n    at Qf (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:187:439)\n    at Ni (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:185:400)\n    at S (http://127.0.0.1:36173/platform/vendor/react.production.min.js:17:25)\n    at MessagePort.U (http://127.0.0.1:36173/platform/vendor/react.production.min.js:21:229)",
+   "gleicherText": false,
+   "zeichen": 131,
+   "reihenfolge": [
+    "req react.production.min.js",
+    "req react-dom.production.min.js",
+    "req _ds_bundle.js",
+    "fertig _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js",
+    "fertig react.production.min.js",
+    "fertig react-dom.production.min.js",
+    "req _ds_bundle.js",
+    "fertig _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js"
+   ]
+  },
+  {
+   "inhalt": false,
+   "fehler": 24,
+   "ersterFehler": "TypeError: Cannot read properties of undefined (reading 'useState')\n    at ae (http://127.0.0.1:36173/_ds_bundle.js:2:6861)\n    at mf (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:105:412)\n    at Qk (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:250:214)\n    at Ri (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:195:185)\n    at Ok (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:195:116)\n    at Nd (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:194:492)\n    at Qf (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:187:439)\n    at Ni (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:185:400)\n    at S (http://127.0.0.1:36173/platform/vendor/react.production.min.js:17:25)\n    at MessagePort.U (http://127.0.0.1:36173/platform/vendor/react.production.min.js:21:229)",
+   "gleicherText": false,
+   "zeichen": 131,
+   "reihenfolge": [
+    "req react.production.min.js",
+    "req react-dom.production.min.js",
+    "req _ds_bundle.js",
+    "fertig _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js",
+    "fertig react.production.min.js",
+    "fertig react-dom.production.min.js",
+    "req _ds_bundle.js",
+    "fertig _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js"
+   ]
+  },
+  {
+   "inhalt": false,
+   "fehler": 24,
+   "ersterFehler": "TypeError: Cannot read properties of undefined (reading 'useState')\n    at ae (http://127.0.0.1:36173/_ds_bundle.js:2:6861)\n    at mf (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:105:412)\n    at Qk (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:250:214)\n    at Ri (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:195:185)\n    at Ok (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:195:116)\n    at Nd (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:194:492)\n    at Qf (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:187:439)\n    at Ni (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:185:400)\n    at S (http://127.0.0.1:36173/platform/vendor/react.production.min.js:17:25)\n    at MessagePort.U (http://127.0.0.1:36173/platform/vendor/react.production.min.js:21:229)",
+   "gleicherText": false,
+   "zeichen": 131,
+   "reihenfolge": [
+    "req react.production.min.js",
+    "req react-dom.production.min.js",
+    "req _ds_bundle.js",
+    "fertig _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js",
+    "fertig react.production.min.js",
+    "fertig react-dom.production.min.js",
+    "req _ds_bundle.js",
+    "fertig _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js"
+   ]
+  }
+ ],
+ "1280-react-3000": [
+  {
+   "inhalt": false,
+   "fehler": 24,
+   "ersterFehler": "TypeError: Cannot read properties of undefined (reading 'useState')\n    at ae (http://127.0.0.1:36173/_ds_bundle.js:2:6861)\n    at mf (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:105:412)\n    at Qk (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:250:214)\n    at Ri (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:195:185)\n    at Ok (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:195:116)\n    at Nd (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:194:492)\n    at Qf (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:187:439)\n    at Ni (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:185:400)\n    at S (http://127.0.0.1:36173/platform/vendor/react.production.min.js:17:25)\n    at MessagePort.U (http://127.0.0.1:36173/platform/vendor/react.production.min.js:21:229)",
+   "gleicherText": false,
+   "zeichen": 131,
+   "reihenfolge": [
+    "req react.production.min.js",
+    "req react-dom.production.min.js",
+    "req _ds_bundle.js",
+    "fertig _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js",
+    "fertig react.production.min.js",
+    "fertig react-dom.production.min.js",
+    "req _ds_bundle.js",
+    "fertig _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js"
+   ]
+  },
+  {
+   "inhalt": false,
+   "fehler": 24,
+   "ersterFehler": "TypeError: Cannot read properties of undefined (reading 'useState')\n    at ae (http://127.0.0.1:36173/_ds_bundle.js:2:6861)\n    at mf (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:105:412)\n    at Qk (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:250:214)\n    at Ri (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:195:185)\n    at Ok (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:195:116)\n    at Nd (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:194:492)\n    at Qf (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:187:439)\n    at Ni (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:185:400)\n    at S (http://127.0.0.1:36173/platform/vendor/react.production.min.js:17:25)\n    at MessagePort.U (http://127.0.0.1:36173/platform/vendor/react.production.min.js:21:229)",
+   "gleicherText": false,
+   "zeichen": 131,
+   "reihenfolge": [
+    "req react.production.min.js",
+    "req react-dom.production.min.js",
+    "req _ds_bundle.js",
+    "fertig _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js",
+    "fertig react.production.min.js",
+    "fertig react-dom.production.min.js",
+    "req _ds_bundle.js",
+    "fertig _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js"
+   ]
+  },
+  {
+   "inhalt": false,
+   "fehler": 24,
+   "ersterFehler": "TypeError: Cannot read properties of undefined (reading 'useState')\n    at ae (http://127.0.0.1:36173/_ds_bundle.js:2:6861)\n    at mf (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:105:412)\n    at Qk (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:250:214)\n    at Ri (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:195:185)\n    at Ok (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:195:116)\n    at Nd (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:194:492)\n    at Qf (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:187:439)\n    at Ni (http://127.0.0.1:36173/platform/vendor/react-dom.production.min.js:185:400)\n    at S (http://127.0.0.1:36173/platform/vendor/react.production.min.js:17:25)\n    at MessagePort.U (http://127.0.0.1:36173/platform/vendor/react.production.min.js:21:229)",
+   "gleicherText": false,
+   "zeichen": 131,
+   "reihenfolge": [
+    "req react.production.min.js",
+    "req react-dom.production.min.js",
+    "req _ds_bundle.js",
+    "fertig _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js",
+    "fertig react.production.min.js",
+    "fertig react-dom.production.min.js",
+    "req _ds_bundle.js",
+    "fertig _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js"
+   ]
+  }
+ ],
+ "1280-bundle-800": [
+  {
+   "inhalt": true,
+   "fehler": 0,
+   "ersterFehler": null,
+   "gleicherText": true,
+   "zeichen": 1004,
+   "reihenfolge": [
+    "req react.production.min.js",
+    "req react-dom.production.min.js",
+    "req _ds_bundle.js",
+    "fertig react.production.min.js",
+    "fertig react-dom.production.min.js",
+    "fertig _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js"
+   ]
+  },
+  {
+   "inhalt": true,
+   "fehler": 0,
+   "ersterFehler": null,
+   "gleicherText": true,
+   "zeichen": 1004,
+   "reihenfolge": [
+    "req react.production.min.js",
+    "req react-dom.production.min.js",
+    "req _ds_bundle.js",
+    "fertig react.production.min.js",
+    "fertig react-dom.production.min.js",
+    "fertig _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js"
+   ]
+  },
+  {
+   "inhalt": true,
+   "fehler": 0,
+   "ersterFehler": null,
+   "gleicherText": true,
+   "zeichen": 1004,
+   "reihenfolge": [
+    "req react.production.min.js",
+    "req react-dom.production.min.js",
+    "req _ds_bundle.js",
+    "fertig react.production.min.js",
+    "fertig react-dom.production.min.js",
+    "fertig _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js"
+   ]
+  }
+ ]
+}

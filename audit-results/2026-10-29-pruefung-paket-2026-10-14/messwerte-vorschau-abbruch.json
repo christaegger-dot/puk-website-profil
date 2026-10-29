@@ -1,0 +1,27 @@
+[
+ {
+  "t": 95,
+  "type": "error",
+  "text": "Failed to load resource: net::ERR_FAILED"
+ },
+ {
+  "t": 100,
+  "type": "error",
+  "text": "[dc] failed to load React or boot: Error: failed to load ../../platform/vendor/react.production.min.js\n    at s.onerror (http://127.0.0.1:39799/templates/website/support.js:1834:32)"
+ },
+ {
+  "t": 101,
+  "type": "pageerror",
+  "text": "Error: failed to load ../../platform/vendor/react.production.min.js"
+ },
+ {
+  "t": 103,
+  "type": "error",
+  "text": "Failed to load resource: net::ERR_FAILED"
+ },
+ {
+  "t": 15097,
+  "type": "error",
+  "text": "ds-base.js: React was not loaded within 15 s; _ds_bundle.js was not loaded."
+ }
+]
