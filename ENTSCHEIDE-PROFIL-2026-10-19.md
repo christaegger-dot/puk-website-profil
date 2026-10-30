@@ -32,3 +32,5 @@ Christa Egger hat am **30.10.2026** den Auftrag gegeben: «O-3 bis O-6 als 2026.
 ## Prüfung
 
 Die technische Selbstprüfung steht im [Prüfbericht](PRUEFBERICHT.md). Diese Sitzung hat das Paket 2026.10.17 unabhängig geprüft und 2026.10.18 und 2026.10.19 gebaut. Die unabhängige Prüfung von 2026.10.19 muss eine andere Sitzung übernehmen; sie schliesst 2026.10.18 ein und ist offen. Kein Merge und keine Veröffentlichung ohne gesonderten Auftrag.
+
+**Nachtrag 2026.10.20 (O-7, O-9):** «prüft alle erfassten Komponenten» (O-6) traf nicht zu; die Tests erkannten 16 von 25 Einträgen der Regel. Seit 2026.10.20 verlangt ein Test für jeden Eintrag einen eigenen Fall. Die Berichtigung «29 … zu lesen als 30» ist selbst ungenau: Die Selbstprüfung 2026.10.17 verglich 29 Seiten (58 Fotos). Siehe [ENTSCHEIDE-PROFIL-2026-10-20.md](ENTSCHEIDE-PROFIL-2026-10-20.md).

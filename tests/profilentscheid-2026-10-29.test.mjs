@@ -257,8 +257,8 @@ test('Helle Komponenten in blauem Band und Nachtblau zeigen dieselben Farben wie
     for(const p of ['b','n'])assert.equal(await look(sel(p,k)),white,`${theme} ${p}-${k}`);
    }
    for(const p of ['b','n'])assert.equal(await eyebrow(p),await eyebrow('w'),`${theme} ${p} Eyebrow`);
-   // Hover mit der Maus
-   for(const k of ['tsec','tghost','dsec','csec','tlink','llink','clink','dclose']){
+   // Hover mit der Maus (ergänzt 2026.10.20, O-7: Knopf-Link, Links in Dialog, versenkter Karte und Hinweis)
+   for(const k of ['tsec','tghost','tasec','dsec','csec','tlink','llink','dlink','clink','slink','alink','dclose']){
     const state=async p=>{await page.hover(sel(p,k));const v=await look(sel(p,k));await page.hover('#leer');return v;};
     const white=await state('w');
     for(const p of ['b','n'])assert.equal(await state(p),white,`${theme} ${p}-${k} Hover`);
@@ -266,7 +266,7 @@ test('Helle Komponenten in blauem Band und Nachtblau zeigen dieselben Farben wie
    // Fokus sowie gedrückt ohne Hover
    const cdp=await page.context().newCDPSession(page);await cdp.send('DOM.enable');await cdp.send('CSS.enable');
    const {root}=await cdp.send('DOM.getDocument',{depth:-1});
-   for(const forced of [['focus','focus-visible'],['active','focus','focus-visible']])for(const k of ['tsec','tghost','tasec','dsec','csec','tlink','clink','dclose','input','select','textarea']){
+   for(const forced of [['focus','focus-visible'],['active','focus','focus-visible']])for(const k of ['tsec','tghost','tasec','dsec','csec','tlink','llink','dlink','clink','dclose','input','select','textarea']){
     const state=async p=>{const {nodeId}=await cdp.send('DOM.querySelector',{nodeId:root.nodeId,selector:sel(p,k)});await cdp.send('CSS.forcePseudoState',{nodeId,forcedPseudoClasses:forced});
      const v=await page.$eval(sel(p,k),e=>{const s=getComputedStyle(e);return [s.color,s.borderTopColor,s.backgroundColor,s.boxShadow].join(' | ');});await cdp.send('CSS.forcePseudoState',{nodeId,forcedPseudoClasses:[]});return v;};
     const white=await state('w');
@@ -322,6 +322,78 @@ test('Erklärgrafiken und Karussell-Knöpfe in blauem Band und Nachtblau zeigen 
    assert.equal(await c('#b-k .puk-carousel__status'),'rgb(255, 255, 255)',`${theme} Karussell-Status im blauen Band`);
    await page.emulateMedia({media:'print'});
    for(const k of ['label','key','h3','dt','cap'])for(const p of ['b','n'])assert.equal(await c('#'+p+'-'+k),await c('#w-'+k),`${theme} ${p}-${k} Druck`);
+   assert.deepEqual(errors,[],theme);
+  }finally{await page.close();}
+ }
+});
+
+// Nachbesserung 30.10.2026 (ENTSCHEIDE-PROFIL-2026-10-20.md, W-3 und O-7): Jeder Eintrag der Rücksetzregel steht einzeln in der Fixture,
+// mit Text, Nebentext und Link; der Test liest die Einträge aus components/bundle.css und verlangt für jeden einen Fall.
+const regelFall={
+ '[data-puk-light]':i=>`<div data-puk-light style="background:#fff">${i}</div>`,
+ '[data-puk-surface]:not([data-puk-surface="night"])':i=>`<div data-puk-surface="tint">${i}</div>`,
+ '.puk-dialog':i=>`<dialog class="puk-dialog" open style="position:static">${i}</dialog>`,
+ '.puk-disclosure__panel':i=>`<div class="puk-disclosure__panel" style="position:static">${i}</div>`,
+ '.puk-carousel__slide':i=>`<div class="puk-carousel__slide">${i}</div>`,
+ '.puk-carousel__btn':i=>`<div class="puk-carousel__btn">${i}</div>`,
+ '.puk-filter':i=>`<div class="puk-filter">${i}</div>`,
+ '.puk-longform__figure':i=>`<figure class="puk-longform__figure">${i}</figure>`,
+ '.puk-longform__figure-side':i=>`<div class="puk-longform__figure-side">${i}</div>`,
+ '.puk-longform__support':i=>`<div class="puk-longform__support">${i}</div>`,
+ '.puk-longform__reflection':i=>`<div class="puk-longform__reflection">${i}</div>`,
+ '.puk-longform__term-guide>div':i=>`<div class="puk-longform__term-guide"><div>${i}</div></div>`,
+ '.puk-web-media':i=>`<div class="puk-web-media">${i}</div>`,
+ '.puk-vis-figure:not(.puk-vis-figure--open)':i=>`<figure class="puk-vis-figure">${i}</figure>`,
+ '.puk-vis-longdesc':i=>`<div class="puk-vis-longdesc">${i}</div>`,
+ '.puk-vis-cycle li':i=>`<ol class="puk-vis-cycle"><li>${i}</li></ol>`,
+ '.puk-vis-compare__col':i=>`<div class="puk-vis-compare__col">${i}</div>`,
+ '.puk-vis-decision__branch':i=>`<div class="puk-vis-decision__branch">${i}</div>`,
+ '.puk-vis-illu':i=>`<div class="puk-vis-illu">${i}</div>`,
+ '.puk-vis-tablewrap':i=>`<div class="puk-vis-tablewrap">${i}</div>`,
+ '.puk-vis-decide li':i=>`<ol class="puk-vis-decide"><li>${i}</li></ol>`,
+ '.puk-site-draft':i=>`<span class="puk-site-draft">${i}</span>`,
+ '.puk-site-placeholder':i=>`<div class="puk-site-placeholder">${i}</div>`,
+ '.puk-site-safety--direct':i=>`<div class="puk-site-safety puk-site-safety--direct">${i}</div>`,
+ '.puk-app-card':i=>`<div class="puk-app-card">${i}</div>`,
+ '.puk-app-chip':i=>`<div class="puk-app-chip">${i}</div>`,
+ '.puk-app-choice':i=>`<div class="puk-app-choice">${i}</div>`,
+ '.puk-app-boundary':i=>`<div class="puk-app-boundary">${i}</div>`,
+ '.puk-app-mini':i=>`<div class="puk-app-mini">${i}</div>`,
+ '.puk-app-detail':i=>`<div class="puk-app-detail">${i}</div>`,
+ '.puk-app-output':i=>`<div class="puk-app-output">${i}</div>`,
+ '.puk-app-empty':i=>`<div class="puk-app-empty">${i}</div>`,
+ '.puk-app-contact-target':i=>`<div class="puk-app-contact-target">${i}</div>`,
+ '.puk-vis-btn':i=>`<div class="puk-vis-btn">${i}</div>`,
+ '.puk-vis-build__n':i=>`<div class="puk-vis-build__n" style="width:auto;height:auto">${i}</div>`,
+ '.puk-vis-balance__hold':i=>`<div class="puk-vis-balance__hold">${i}</div>`,
+ '.puk-vis-net__ring li':i=>`<ul class="puk-vis-net__ring"><li style="position:static;transform:none;width:auto">${i}</li></ul>`,
+ '.puk-vis-layers':i=>`<div class="puk-vis-layers" style="display:block">${i}</div>`,
+ // Felder wie React Input, Select und Textarea: Schrift aus --text-default.
+ 'input':()=>`<input value="Feld" aria-label="Feld" style="color:var(--text-default)">`,
+ 'select':()=>`<select aria-label="Auswahl" style="color:var(--text-default)"><option>Wahl</option></select>`,
+ 'textarea':()=>`<textarea aria-label="Text" style="color:var(--text-default)">Text</textarea>`
+};
+const regelInhalt='<span data-m="text">Text</span> <span data-m="neben" style="color:var(--text-muted)">Neben</span> <a data-m="link" href="#x">Link</a>';
+const regelHtml=`<!doctype html><html lang="de"><head><meta charset="utf-8"><title>Rücksetzregel</title><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="templates/website/longform/visual-patterns.css"><link rel="stylesheet" href="templates/website/longform/erklaermuster.css"><link rel="stylesheet" href="templates/website/psychoeducation-site-starter/starter.css"><link rel="stylesheet" href="templates/website/applications/applications.css">
+<style>*{transition:none!important;animation:none!important}</style></head><body class="puk-web-page"><main>`+['w','b','n'].map(p=>`<section id="${p}"${p==='w'?'':' class="puk-web-band"'}${p==='n'?' data-puk-surface="night"':''}>`+Object.entries(regelFall).map(([s,f],i)=>`<div data-fall="${i}">${f(regelInhalt)}</div>`).join('')+'</section>').join('')+'</main></body></html>';
+test('Jeder Eintrag der Rücksetzregel gibt hellen Flächen in blauem Band und Nachtblau die Farben der Seitenfläche zurück',async()=>{
+ const css=fs.readFileSync(path.join(root,'components/bundle.css'),'utf8');
+ const m=css.match(/:where\(\.puk-web-band,\[data-puk-surface="night"\]\) :where\(([^{]*)\)\{/);assert.ok(m,'Rücksetzregel gefunden');
+ const eintraege=[];let tiefe=0,akt='';for(const ch of m[1]){if(ch==='(')tiefe++;if(ch===')')tiefe--;if(ch===','&&tiefe===0){eintraege.push(akt);akt='';}else akt+=ch;}eintraege.push(akt);
+ assert.deepEqual([...eintraege].sort(),Object.keys(regelFall).sort(),'Jeder Eintrag der Regel hat einen Fall in der Fixture');
+ const base=fs.readFileSync(path.join(root,'tokens/base.css'),'utf8');assert.ok(base.includes(m[0]),'tokens/base.css enthält dieselbe Regel');
+ for(const theme of ['light','kontrast']){
+  const page=await browser.newPage();const errors=[];page.on('pageerror',e=>errors.push(String(e)));
+  try{
+   await page.route(server.url+'ruecksetzregel.html',r=>r.fulfill({contentType:'text/html',body:theme==='kontrast'?regelHtml.replace('<html lang="de">','<html lang="de" data-theme="kontrast">'):regelHtml}));
+   await page.goto(server.url+'ruecksetzregel.html',{waitUntil:'load'});
+   const lesen=()=>page.evaluate(()=>{const r={};for(const p of ['w','b','n'])for(const fall of document.querySelectorAll('#'+p+' [data-fall]')){const ziele=[...fall.querySelectorAll('[data-m]')];const feld=fall.querySelector('input,select,textarea');if(feld)ziele.push(feld);
+     for(const e of ziele){const s=getComputedStyle(e);r[p+'|'+fall.dataset.fall+'|'+(e.dataset.m||e.tagName)]=[s.color,s.borderTopColor].join(' | ');}}return r;});
+   for(const medium of ['screen','print']){
+    await page.emulateMedia({media:medium});const r=await lesen();const namen=Object.keys(regelFall);
+    for(const k of Object.keys(r).filter(k=>k.startsWith('w|'))){const [,i,t]=k.split('|');
+     for(const p of ['b','n'])assert.equal(r[p+'|'+i+'|'+t],r[k],`${theme} ${medium} ${p} ${namen[i]} ${t}`);}
+   }
    assert.deepEqual(errors,[],theme);
   }finally{await page.close();}
  }

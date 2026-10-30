@@ -1,7 +1,7 @@
 # Abschlussentscheide · 17.10.2026
 
 <!-- profil:stand -->
-**Profil 2026.10.19 abgeschlossen · Stand 30.10.2026. Offene Projektpendenzen: 0.**
+**Profil 2026.10.20 abgeschlossen · Stand 30.10.2026. Offene Projektpendenzen: 0.**
 <!-- /profil:stand -->
 
 | Bisherige Aufgabe oder Unklarheit | Abschlussentscheid | Status |
@@ -170,6 +170,18 @@ Christa Egger hat am 30.10.2026 die Behebung von O-3 bis O-6 beauftragt («O-3 b
 | O-4 · Texte | Leitlinie 02, Karte «PUK-Blau», Zeile 2026.10.15 oben, Kommentare angeglichen. | Umgesetzt |
 | O-5 · Angaben im Selbstprüfbericht | Berichtigung in der Entscheiddatei und im Prüfbericht; Archive unverändert. | Umgesetzt |
 | O-6 · Testabdeckung | Test zu hellen Komponenten mit allen erfassten Komponenten, Hover, Fokus, gedrückt und Druck. | Umgesetzt |
-| Unabhängige Prüfung des Pakets 2026.10.19 | Durch eine Sitzung, die das Paket nicht gebaut hat; schliesst 2026.10.18 ein. | Offen |
+| Unabhängige Prüfung des Pakets 2026.10.19 | Durch eine Sitzung, die das Paket nicht gebaut hat; schliesst 2026.10.18 ein. Am 30.10.2026 erfolgt (PR #158), Paket-SHA `ec3a97ad…` bestätigt. Keine Befunde «kritisch», ein Befund «wichtig» (W-3), drei «optional» (O-7 bis O-9); Bericht im [Archiv](archiv/profilstand-2026-10-30-19/PRUEFBERICHT.md). | Erledigt |
+
+## Nachbesserung vom 30.10.2026 · Version 2026.10.20
+
+Christa Egger hat am 30.10.2026 die Behebung von W-3 und O-7 bis O-9 beauftragt («W-3 und O-7 bis O-9 als 2026.10.20 beheben»). Einzelheiten stehen in [ENTSCHEIDE-PROFIL-2026-10-20.md](ENTSCHEIDE-PROFIL-2026-10-20.md); der geprüfte Stand 2026.10.19 liegt mit der unabhängigen Prüfung im [Archiv](archiv/profilstand-2026-10-30-19/).
+
+| Punkt | Entscheid | Status |
+| --- | --- | --- |
+| W-3 · weitere helle Flächen | Rücksetzregel erfasst zusätzlich Platzhalter und Sicherheitsleiste des Starters, Anwendungsmuster und helle Teile der Erklärmuster; die Texte nennen die erfasste Liste als Grenze. | Umgesetzt |
+| O-7 · Testabdeckung | Test mit einem eigenen Fall je Eintrag der Regel; alle Einträge werden erkannt. | Umgesetzt |
+| O-8 · offene Erklärgrafik | Leitlinie 02 nennt sie als nicht erfasst und im blauen Band nicht lesbar. | Umgesetzt |
+| O-9 · Seitenzahl | Berichtigung in der Entscheiddatei; Archive unverändert. | Umgesetzt |
+| Unabhängige Prüfung des Pakets 2026.10.20 | Durch eine Sitzung, die das Paket nicht gebaut hat. | Offen |
 
 Eingabeparameter der leeren Vorlagen sind keine offenen Projektaufgaben. Der Produktionsschutz bleibt aktiv. Alle Entscheide gelten für diesen abgeschlossenen Profilstand; es gibt keinen zurückgestellten Backlog. Die Nachweise stehen im [Prüfbericht](PRUEFBERICHT.md).

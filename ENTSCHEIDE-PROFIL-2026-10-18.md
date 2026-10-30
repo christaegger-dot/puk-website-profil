@@ -28,3 +28,5 @@ Die optionalen Befunde O-3 bis O-6 der Prüfung bleiben offen; sie sind nicht Te
 ## Prüfung
 
 Die technische Selbstprüfung steht im [Prüfbericht](PRUEFBERICHT.md). Diese Sitzung hat das Paket 2026.10.17 unabhängig geprüft und 2026.10.18 gebaut. Die unabhängige Prüfung des Pakets `puk-website-profil-2026.10.18.zip` entfällt; an ihre Stelle tritt die Prüfung von 2026.10.19 ([ENTSCHEIDE-PROFIL-2026-10-19.md](ENTSCHEIDE-PROFIL-2026-10-19.md)), die 2026.10.18 einschliesst. Die optionalen Befunde O-3 bis O-6 sind mit 2026.10.19 behoben. Kein Merge und keine Veröffentlichung ohne gesonderten Auftrag.
+
+**Nachtrag 2026.10.20 (W-3, O-8):** «Erfasst sind die hellen Flächen der Profilkomponenten» (Grenzen) traf nicht zu: Anwendungsmuster, Platzhalter und Sicherheitsleiste des Starters und helle Teile der Erklärmuster fehlten; sie sind seit 2026.10.20 erfasst. Erfasst ist die in Leitlinie 02 aufgezählte Liste. Die offene Erklärgrafik behält nur auf Nachtblau lesbare Bandfarben (Weiss); im blauen Band steht ihre Beschriftung dunkel auf Blau (3,38:1). Die Überschneidung bleibt nicht erfasst. Siehe [ENTSCHEIDE-PROFIL-2026-10-20.md](ENTSCHEIDE-PROFIL-2026-10-20.md).
