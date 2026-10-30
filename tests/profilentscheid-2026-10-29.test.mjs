@@ -212,3 +212,36 @@ test('Im blauen Band stehen Links, Akzent, Nebentext und ruhige Knöpfe in Weiss
   }finally{await page.close();}
  }
 });
+
+// Nachbesserung 29.10.2026 (ENTSCHEIDE-PROFIL-2026-10-15.md, W-1): helle Komponenten in Bändern zeigen die Farben der Seitenfläche.
+const helleFlaechen=`<!doctype html><html lang="de"><head><meta charset="utf-8"><title>Helle Flächen</title><link rel="stylesheet" href="styles.css">
+<script src="platform/vendor/react.production.min.js"></script><script src="platform/vendor/react-dom.production.min.js"></script><script src="components/bundle.js"></script></head>
+<body class="puk-web-page"><main><p id="leer">Leer</p>
+<div id="w" class="puk-web-container"></div><section id="b" class="puk-web-band"></section><section id="n" class="puk-web-band" data-puk-surface="night"></section></main>
+<script src="helle-flaechen.js"></script></body></html>`;
+const helleFlaechenJs=`const h=React.createElement,K=window.PUKWeb;
+for(const p of ['w','b','n']){const box=document.createElement('div');box.innerHTML='<div id="'+p+'-tint" data-puk-surface="tint" style="padding:8px"><a id="'+p+'-tlink" href="#x">Link</a> <span id="'+p+'-tmuted" style="color:var(--text-muted)">Neben</span> <button id="'+p+'-tsec" class="puk-btn puk-btn--secondary">Sekundär</button></div><div data-puk-light style="background:#fff;padding:8px"><a id="'+p+'-llink" href="#x">Link</a> <span id="'+p+'-ltext">Text</span></div><div id="'+p+'-react"></div>';document.getElementById(p).appendChild(box);
+ ReactDOM.createRoot(document.getElementById(p+'-react')).render(h(React.Fragment,null,
+  h(K.Card,{eyebrow:'Eyebrow',title:'Karte',footer:h(K.Button,{variant:'secondary',id:p+'-csec'},'Sekundär')},h('span',{id:p+'-ctext'},'Inhalt '),h('a',{id:p+'-clink',href:'#x'},'Link')),
+  h(K.Card,{variant:'sunken',title:'Versenkt'},h('a',{id:p+'-slink',href:'#x'},'Link')),
+  h(K.Alert,{title:'Hinweis'},h('a',{id:p+'-alink',href:'#x'},'Link')),
+  h(K.Input,{id:p+'-input',defaultValue:'Eingabe','aria-label':'Eingabe'})));}`;
+test('Helle Komponenten in blauem Band und Nachtblau zeigen dieselben Farben wie auf Weiss',async()=>{
+ for(const theme of ['light','kontrast']){
+  const page=await browser.newPage();const errors=[];page.on('pageerror',e=>errors.push(String(e)));
+  try{
+   await page.route(server.url+'helle-flaechen.html',r=>r.fulfill({contentType:'text/html',body:theme==='kontrast'?helleFlaechen.replace('<html lang="de">','<html lang="de" data-theme="kontrast">'):helleFlaechen}));
+   await page.route(server.url+'helle-flaechen.js',r=>r.fulfill({contentType:'text/javascript',body:helleFlaechenJs}));
+   await page.goto(server.url+'helle-flaechen.html',{waitUntil:'load'});await page.waitForSelector('#n-input');
+   await page.addStyleTag({content:'*{transition:none!important}'});await page.hover('#leer');
+   const look=sel=>page.$eval(sel,e=>{const s=getComputedStyle(e);return [s.color,s.borderTopColor].join(' | ');});
+   const eyebrow=p=>page.$eval('#'+p+'-react span',e=>getComputedStyle(e).color);
+   for(const k of ['tlink','tmuted','tsec','llink','ltext','csec','ctext','clink','slink','alink','input']){
+    const white=await look('#w-'+k);
+    for(const p of ['b','n'])assert.equal(await look('#'+p+'-'+k),white,`${theme} ${p}-${k}`);
+   }
+   for(const p of ['b','n'])assert.equal(await eyebrow(p),await eyebrow('w'),`${theme} ${p} Eyebrow`);
+   assert.deepEqual(errors,[],theme);
+  }finally{await page.close();}
+ }
+});

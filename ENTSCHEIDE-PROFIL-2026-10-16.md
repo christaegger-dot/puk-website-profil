@@ -23,4 +23,4 @@ Christa Egger hat am **30.10.2026** den Auftrag gegeben: «O-1 und O-2 als 2026.
 
 ## Prüfung
 
-Die technische Selbstprüfung steht im [Prüfbericht](PRUEFBERICHT.md). Diese Sitzung hat das Paket 2026.10.14 unabhängig geprüft und 2026.10.15 und 2026.10.16 gebaut. Das Paket `puk-website-profil-2026.10.15.zip` wurde nicht unabhängig geprüft; an seine Stelle tritt die Prüfung von 2026.10.16, die W-1 einschliesst. Sie muss eine andere Sitzung übernehmen und ist offen. Kein Merge und keine Veröffentlichung ohne gesonderten Auftrag.
+Die technische Selbstprüfung steht im [Prüfbericht](PRUEFBERICHT.md). Diese Sitzung hat das Paket 2026.10.14 unabhängig geprüft und 2026.10.15 und 2026.10.16 gebaut. Die Pakete `puk-website-profil-2026.10.15.zip` und `puk-website-profil-2026.10.16.zip` wurden nicht unabhängig geprüft; an ihre Stelle tritt die Prüfung von 2026.10.17 ([ENTSCHEIDE-PROFIL-2026-10-17.md](ENTSCHEIDE-PROFIL-2026-10-17.md)). Sie muss eine andere Sitzung übernehmen und ist offen. Kein Merge und keine Veröffentlichung ohne gesonderten Auftrag.

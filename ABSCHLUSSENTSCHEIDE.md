@@ -1,7 +1,7 @@
 # Abschlussentscheide · 17.10.2026
 
 <!-- profil:stand -->
-**Profil 2026.10.16 abgeschlossen · Stand 30.10.2026. Offene Projektpendenzen: 0.**
+**Profil 2026.10.17 abgeschlossen · Stand 30.10.2026. Offene Projektpendenzen: 0.**
 <!-- /profil:stand -->
 
 | Bisherige Aufgabe oder Unklarheit | Abschlussentscheid | Status |
@@ -139,6 +139,15 @@ Christa Egger hat am 30.10.2026 die Behebung von O-1 und O-2 beauftragt («O-1 u
 | --- | --- | --- |
 | O-1 · Beschreibung `action-quiet-fg` | `tokens.json` und Kommentare nennen die nachtblaue Fläche und das blaue Band. Werte unverändert. | Umgesetzt |
 | O-2 · Drucktest im blauen Band | Der Test misst im Druck einen sichtbaren Knopf-Link und prüft, dass `button.puk-btn` ausgeblendet ist. | Umgesetzt |
-| Unabhängige Prüfung des Pakets 2026.10.16 | Durch eine Sitzung, die das Paket nicht gebaut hat; schliesst W-1 ein. | Offen |
+| Unabhängige Prüfung des Pakets 2026.10.16 | Entfällt; die Prüfung von 2026.10.17 schliesst 2026.10.15 und 2026.10.16 ein. | Ersetzt |
+
+## Nachbesserung vom 30.10.2026 · Version 2026.10.17
+
+Christa Egger hat am 30.10.2026 die technische Korrektur von W-1 beauftragt («Behebe W-1: helle Komponenten in Bändern») und nach dem Vorliegen der Regel aus 2026.10.15 entschieden, beides zu behalten («Weg 3»). Weil 2026.10.16 inzwischen mit O-1 und O-2 vergeben war, folgt die technische Korrektur «als 2026.10.17 neu». Einzelheiten stehen in [ENTSCHEIDE-PROFIL-2026-10-17.md](ENTSCHEIDE-PROFIL-2026-10-17.md); der Stand 2026.10.16 liegt unverändert im [Archiv](archiv/profilstand-2026-10-30-16/).
+
+| Punkt | Entscheid | Status |
+| --- | --- | --- |
+| W-1 · technische Absicherung | Helle Flächen in Bändern erhalten Text-, Link- und Knopffarben der Seitenfläche zurück; neues Kennzeichen `data-puk-light`. Die Regel aus 2026.10.15 bleibt. | Umgesetzt |
+| Unabhängige Prüfung des Pakets 2026.10.17 | Durch eine Sitzung, die das Paket nicht gebaut hat; schliesst 2026.10.15 und 2026.10.16 ein. | Offen |
 
 Eingabeparameter der leeren Vorlagen sind keine offenen Projektaufgaben. Der Produktionsschutz bleibt aktiv. Alle Entscheide gelten für diesen abgeschlossenen Profilstand; es gibt keinen zurückgestellten Backlog. Die Nachweise stehen im [Prüfbericht](PRUEFBERICHT.md).

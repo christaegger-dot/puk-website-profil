@@ -29,6 +29,8 @@ export function Alert({ title, children, tone = 'info', style }) {
           : { '--text-link': 'var(--text-link-on-tint)', '--text-accent': 'var(--text-link-on-tint)' }),
         ...style,
       }}
+      /* Helle Hinweisfläche: in dunklen Bändern gelten wieder die Farben der Seitenfläche (Nachbesserung W-1, 29.10.2026). */
+      {...(tone === 'emergency' ? null : { 'data-puk-light': '' })}
     >
       <Icon name={t.icon} size={20} style={{ marginTop: 2 }} />
       <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>

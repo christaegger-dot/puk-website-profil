@@ -26,6 +26,7 @@ export function Toast({ title, children, tone = 'neutral', onClose, style }) {
         boxShadow: 'var(--shadow-overlay)',
         ...style,
       }}
+      data-puk-light=""
     >
       <Icon name={t.icon} size={18} style={{ marginTop: 2 }} />
       <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: 2 }}>
