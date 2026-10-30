@@ -28,3 +28,5 @@ Die optionalen Befunde O-3 bis O-6 der Prüfung bleiben offen; sie sind nicht Te
 ## Prüfung
 
 Die technische Selbstprüfung steht im [Prüfbericht](PRUEFBERICHT.md). Diese Sitzung hat das Paket 2026.10.17 unabhängig geprüft und 2026.10.18 gebaut. Die unabhängige Prüfung des Pakets `puk-website-profil-2026.10.18.zip` entfällt; an ihre Stelle tritt die Prüfung von 2026.10.19 ([ENTSCHEIDE-PROFIL-2026-10-19.md](ENTSCHEIDE-PROFIL-2026-10-19.md)), die 2026.10.18 einschliesst. Die optionalen Befunde O-3 bis O-6 sind mit 2026.10.19 behoben. Kein Merge und keine Veröffentlichung ohne gesonderten Auftrag.
+
+Nachtrag: Die unabhängige Prüfung von 2026.10.19 (PR #158, [archivierter Prüfbericht](archiv/profilstand-2026-10-30-19/PRUEFBERICHT.md)) fand als Befund W-3, dass Anwendungsmuster, Platzhalter und Sicherheitsleiste des Starters sowie Schichtenbild und Knöpfe der Erklärmuster nicht erfasst waren; die Aussage unter «Grenzen», erfasst seien die hellen Flächen der Profilkomponenten, traf darum nicht ganz zu. Behoben mit 2026.10.20 ([ENTSCHEIDE-PROFIL-2026-10-20.md](ENTSCHEIDE-PROFIL-2026-10-20.md)).

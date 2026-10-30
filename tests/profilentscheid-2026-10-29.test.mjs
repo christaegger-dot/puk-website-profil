@@ -49,6 +49,14 @@ test('Leitlinie 02 nennt Geltung, Zählung und die vier Bedingungen des Titelbil
  for(const s of ['Keine hellen Komponenten in Bändern','blau oder nachtblau','ausserhalb des Bandes','ENTSCHEIDE-PROFIL-2026-10-15.md'])assert.ok(g.includes(s),s);
  // Nachbesserung 30.10.2026 (ENTSCHEIDE-PROFIL-2026-10-19.md, O-3): Knöpfe im Band sind .puk-btn und React-Button; Reiter, Formularelemente und Menüs stehen ausserhalb.
  for(const s of ['Knöpfe meint die Klassen `.puk-btn` und den React-`Button`','Reiter (`Tabs`)','Menüs (`DisclosureMenu`)'])assert.ok(g.includes(s),s);
+ // Nachbesserung 30.10.2026 (ENTSCHEIDE-PROFIL-2026-10-20.md, O-4 und W-3): Regel auch im Abschnitt Nachtblau, im README und in der Karte «PUK-Blau»; erfasste und nicht erfasste Flächen.
+ assert.match(g,/\*\*Helle Komponenten:\*\* Auch auf Nachtblau stehen keine Karten/,'Leitlinie 02, Abschnitt Nachtblau');
+ for(const s of ['`.puk-app-card`','`.puk-vis-layers`','offene Erklärgrafik (`.puk-vis-figure--open`)','Erklärgrafiken gehören deshalb nie in ein Band','ENTSCHEIDE-PROFIL-2026-10-20.md'])assert.ok(g.includes(s),s);
+ const r=read('README.md');
+ for(const s of ['In Bändern, blau oder nachtblau, stehen keine hellen Komponenten','`data-puk-light`','offene Erklärgrafik','ENTSCHEIDE-PROFIL-2026-10-20.md'])assert.ok(r.includes(s),'README: '+s);
+ const k=read('components/GrundlageFarbeBlau/README.md');
+ for(const s of ['**Keine hellen Komponenten in Bändern:**','`data-puk-light`','offene Erklärgrafik','(../../guidelines/02-farben-und-kontrast.md#puk-blau)'])assert.ok(k.includes(s),'Karte: '+s);
+ assert.match(g,/^## PUK-Blau$/m,'Anker #puk-blau');
 });
 
 const fixture=`<!doctype html><html lang="de"><head><meta charset="utf-8"><title>Profilentscheid</title>
@@ -173,7 +181,7 @@ test('Sekundär- und Ghost-Button stehen auf Nachtblau in Weiss, ausserhalb unve
  }
 });
 
-// Nachbesserung 29.10.2026 (ENTSCHEIDE-PROFIL-2026-10-14.md, O-C): Links, Akzent, Nebentext und ruhige Knöpfe im blauen Band in Weiss.
+// Nachbesserung 29.10.2026 (ENTSCHEIDE-PROFIL-2026-10-14.md, O-C und Punkt «Knöpfe im blauen Band»): Links, Akzent, Nebentext und ruhige Knöpfe im blauen Band in Weiss.
 const blauesBand=`<!doctype html><html lang="de"><head><meta charset="utf-8"><title>Blaues Band</title><link rel="stylesheet" href="styles.css"></head>
 <body class="puk-web-page"><main><p id="leer">Leer</p><p><a id="w-a" href="#x">Link auf Weiss</a> <button id="w-dis" class="puk-btn puk-btn--secondary" disabled>Aus</button></p>
 <section id="band" class="puk-web-band"><p id="kicker" class="puk-longform__kicker">Kicker</p><p id="text">Text mit <a id="link" href="#x">Link</a></p>
@@ -322,6 +330,77 @@ test('Erklärgrafiken und Karussell-Knöpfe in blauem Band und Nachtblau zeigen 
    assert.equal(await c('#b-k .puk-carousel__status'),'rgb(255, 255, 255)',`${theme} Karussell-Status im blauen Band`);
    await page.emulateMedia({media:'print'});
    for(const k of ['label','key','h3','dt','cap'])for(const p of ['b','n'])assert.equal(await c('#'+p+'-'+k),await c('#w-'+k),`${theme} ${p}-${k} Druck`);
+   assert.deepEqual(errors,[],theme);
+  }finally{await page.close();}
+ }
+});
+
+// Nachbesserung 30.10.2026 (ENTSCHEIDE-PROFIL-2026-10-20.md, W-3 und O-7): jeder Eintrag der Rücksetzregel einzeln.
+// Die Liste muss genau den Selektoren der Regel entsprechen; fehlt ein Eintrag in der Regel, erbt die Fläche im Band Weiss.
+const regel=[
+ ['[data-puk-light]','<div data-puk-light id="ID">Text</div>'],
+ ['[data-puk-surface]:not([data-puk-surface="night"])','<div data-puk-surface="tint" id="ID">Text</div>'],
+ ['.puk-dialog','<div class="puk-dialog" id="ID">Text</div>'],
+ ['.puk-disclosure__panel','<div class="puk-disclosure__panel" style="position:static" id="ID">Text</div>'],
+ ['.puk-carousel__slide','<div class="puk-carousel__slide" id="ID">Text</div>'],
+ ['.puk-carousel__btn','<button class="puk-carousel__btn" id="ID">›</button>'],
+ ['.puk-filter','<div class="puk-filter" id="ID">Text</div>'],
+ ['.puk-longform__figure','<figure class="puk-longform__figure" id="ID">Text</figure>'],
+ ['.puk-longform__figure-side','<div class="puk-longform__figure-side" id="ID">Text</div>'],
+ ['.puk-longform__support','<div class="puk-longform__support" id="ID">Text</div>'],
+ ['.puk-longform__reflection','<div class="puk-longform__reflection" id="ID">Text</div>'],
+ ['.puk-longform__term-guide>div','<dl class="puk-longform__term-guide"><div id="ID">Text</div></dl>'],
+ ['.puk-web-media','<div class="puk-web-media" id="ID">Bild</div>'],
+ ['.puk-vis-figure:not(.puk-vis-figure--open)','<figure class="puk-vis-figure" id="ID">Text</figure>'],
+ ['.puk-vis-longdesc','<div class="puk-vis-longdesc" id="ID">Text</div>'],
+ ['.puk-vis-cycle li','<ol class="puk-vis-cycle"><li id="ID">Text</li></ol>'],
+ ['.puk-vis-compare__col','<div class="puk-vis-compare__col" id="ID">Text</div>'],
+ ['.puk-vis-decision__branch','<div class="puk-vis-decision__branch" id="ID">Text</div>'],
+ ['.puk-vis-illu','<div class="puk-vis-illu" id="ID">Text</div>'],
+ ['.puk-vis-tablewrap','<div class="puk-vis-tablewrap" id="ID">Text</div>'],
+ ['.puk-vis-decide li','<ol class="puk-vis-decide"><li id="ID">Text</li></ol>'],
+ ['.puk-site-draft','<span class="puk-site-draft" id="ID">Entwurf</span>'],
+ ['.puk-site-placeholder','<div class="puk-site-placeholder" id="ID">Platzhalter</div>'],
+ ['.puk-site-safety--direct','<div class="puk-site-safety puk-site-safety--direct" id="ID"><p class="puk-site-safety__title">Titel</p></div>'],
+ ['.puk-app-card','<div class="puk-app-card" id="ID"><h3>Titel</h3><p>Text</p></div>'],
+ ['.puk-app-chip','<button class="puk-app-chip" id="ID">Chip</button>'],
+ ['.puk-app-choice','<button class="puk-app-choice" id="ID"><strong>Wahl</strong>Text</button>'],
+ ['.puk-app-boundary','<div class="puk-app-boundary" id="ID">Grenze</div>'],
+ ['.puk-app-mini','<button class="puk-app-mini" id="ID">Mini</button>'],
+ ['.puk-app-detail','<div class="puk-app-detail" id="ID"><h2>Detail</h2><p>Text</p></div>'],
+ ['.puk-app-output','<div class="puk-app-output" id="ID"><h2>Ergebnis</h2></div>'],
+ ['.puk-app-empty','<div class="puk-app-empty" id="ID">Leer</div>'],
+ ['.puk-app-contact-target','<div class="puk-app-contact-target" id="ID"><h2>Kontakt</h2><p>Text</p></div>'],
+ ['.puk-vis-layers','<div class="puk-vis-layers" id="ID"><div class="puk-vis-layers__zone"><ul><li>Schicht</li></ul></div></div>'],
+ ['.puk-vis-btn','<button class="puk-vis-btn" id="ID">Knopf</button>'],
+ ['input','<input id="ID" value="Eingabe" aria-label="Eingabe">'],
+ ['select','<select id="ID" aria-label="Auswahl"><option>Eins</option></select>'],
+ ['textarea','<textarea id="ID" aria-label="Text">Text</textarea>']
+];
+const regelHtml=`<!doctype html><html lang="de"><head><meta charset="utf-8"><title>Rücksetzregel</title><link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="templates/website/psychoeducation-site-starter/starter.css"><link rel="stylesheet" href="templates/website/applications/applications.css">
+<link rel="stylesheet" href="templates/website/longform/visual-patterns.css"><link rel="stylesheet" href="templates/website/longform/erklaermuster.css"></head>
+<body class="puk-web-page"><main>${['w','b','n'].map(p=>`<${p==='w'?'div':'section'} id="${p}"${p==='w'?'':' class="puk-web-band"'}${p==='n'?' data-puk-surface="night"':''}>${regel.map(([,html],i)=>html.replace('id="ID"',`id="${p}-${i}"`)).join('')}</${p==='w'?'div':'section'}>`).join('')}</main></body></html>`;
+test('Jeder Eintrag der Rücksetzregel gibt seiner Fläche im Band die Werte der Seitenfläche zurück',async()=>{
+ for(const file of ['tokens/base.css','components/bundle.css']){
+  const m=/:where\(\.puk-web-band,\[data-puk-surface="night"\]\) :where\((.+?)\)\{--text-default/.exec(read(file));
+  assert.ok(m,`${file} Rücksetzregel`);
+  assert.deepEqual(m[1].split(',').filter(Boolean),regel.map(([s])=>s),`${file}: Selektoren der Regel und Testliste stimmen überein`);
+ }
+ const props=['color','--text-default','--text-muted','--text-link','--text-link-hover','--text-link-visited','--text-accent','--action-quiet-fg','--focus-ring'];
+ for(const theme of ['light','kontrast']){
+  const page=await browser.newPage();const errors=[];page.on('pageerror',e=>errors.push(String(e)));
+  try{
+   await page.route(server.url+'ruecksetzregel.html',r=>r.fulfill({contentType:'text/html',body:theme==='kontrast'?regelHtml.replace('<html lang="de">','<html lang="de" data-theme="kontrast">'):regelHtml}));
+   await page.goto(server.url+'ruecksetzregel.html',{waitUntil:'load'});
+   // Native Formularfelder haben auf Weiss die Browserfarbe #000, im Band #222 aus der Regel; verglichen werden dort nur die Variablen.
+   const werte=(id,ohneFarbe)=>page.$eval('#'+id,(e,props)=>{const s=getComputedStyle(e);return props.map(p=>p+'='+(p==='color'?s.color:s.getPropertyValue(p).trim())).join(' | ');},ohneFarbe?props.slice(1):props);
+   for(let i=0;i<regel.length;i++){
+    const nativ=['input','select','textarea'].includes(regel[i][0]);
+    const werteI=id=>werte(id,nativ);
+    const white=await werteI('w-'+i);
+    for(const p of ['b','n'])assert.equal(await werteI(p+'-'+i),white,`${theme} ${p} ${regel[i][0]}`);
+   }
    assert.deepEqual(errors,[],theme);
   }finally{await page.close();}
  }

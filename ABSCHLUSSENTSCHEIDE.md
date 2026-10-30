@@ -1,7 +1,7 @@
 # Abschlussentscheide · 17.10.2026
 
 <!-- profil:stand -->
-**Profil 2026.10.19 abgeschlossen · Stand 30.10.2026. Offene Projektpendenzen: 0.**
+**Profil 2026.10.20 abgeschlossen · Stand 30.10.2026. Offene Projektpendenzen: 0.**
 <!-- /profil:stand -->
 
 | Bisherige Aufgabe oder Unklarheit | Abschlussentscheid | Status |
@@ -157,7 +157,7 @@ Christa Egger hat am 30.10.2026 die Behebung von W-2 beauftragt («W-2 als 2026.
 | Punkt | Entscheid | Status |
 | --- | --- | --- |
 | W-2 · Erklärgrafiken und Karussell-Knöpfe in Bändern | Die Rücksetzregel erfasst zusätzlich Erklärgrafiken mit eigener Fläche und Karussell-Knöpfe; Leitlinie 02 nennt erfasste Komponenten und Grenze. | Umgesetzt |
-| O-3 bis O-6 | Optionale Befunde der Prüfung 2026.10.17; nicht Teil dieses Auftrags. Mit 2026.10.19 behoben. | Offen, nicht beauftragt |
+| O-3 bis O-6 | Optionale Befunde der Prüfung 2026.10.17; nicht Teil dieses Auftrags. | Mit 2026.10.19 behoben |
 | Unabhängige Prüfung des Pakets 2026.10.18 | Entfällt; die Prüfung von 2026.10.19 schliesst W-2 ein. | Ersetzt |
 
 ## Nachbesserung vom 30.10.2026 · Version 2026.10.19
@@ -170,6 +170,16 @@ Christa Egger hat am 30.10.2026 die Behebung von O-3 bis O-6 beauftragt («O-3 b
 | O-4 · Texte | Leitlinie 02, Karte «PUK-Blau», Zeile 2026.10.15 oben, Kommentare angeglichen. | Umgesetzt |
 | O-5 · Angaben im Selbstprüfbericht | Berichtigung in der Entscheiddatei und im Prüfbericht; Archive unverändert. | Umgesetzt |
 | O-6 · Testabdeckung | Test zu hellen Komponenten mit allen erfassten Komponenten, Hover, Fokus, gedrückt und Druck. | Umgesetzt |
-| Unabhängige Prüfung des Pakets 2026.10.19 | Durch eine Sitzung, die das Paket nicht gebaut hat; schliesst 2026.10.18 ein. | Offen |
+| Unabhängige Prüfung des Pakets 2026.10.19 | Durch eine Sitzung, die das Paket nicht gebaut hat; schliesst 2026.10.18 ein. Am 30.10.2026 erfolgt (PR #158), Paket-SHA `ec3a97ad…` bestätigt. Keine Befunde «kritisch», ein Befund «wichtig» (W-3), drei «optional»; zwei weitere Prüfungen desselben Pakets (PR #159, #160) nicht gemergt. Bericht im [Archiv](archiv/profilstand-2026-10-30-19/PRUEFBERICHT.md). | Erledigt |
+
+## Nachbesserung vom 30.10.2026 · Version 2026.10.20
+
+Christa Egger hat am 30.10.2026 die Behebung von W-3 und der optionalen Befunde beauftragt («W-3 und optionale Befunde als 2026.10.20 umsetzen»). Einzelheiten stehen in [ENTSCHEIDE-PROFIL-2026-10-20.md](ENTSCHEIDE-PROFIL-2026-10-20.md); der geprüfte Stand 2026.10.19 liegt mit der unabhängigen Prüfung im [Archiv](archiv/profilstand-2026-10-30-19/).
+
+| Punkt | Entscheid | Status |
+| --- | --- | --- |
+| W-3 · weitere helle Flächen | Rücksetzregel erfasst zusätzlich Anwendungsmuster, Platzhalter und Sicherheitsleiste des Starters, Schichtenbild und Knöpfe der Erklärmuster; Texte nennen erfasste und nicht erfasste Komponenten. | Umgesetzt |
+| Optionale Befunde | Test je Eintrag der Rücksetzregel (Mutationsprobe), offene Erklärgrafik als Grenze benannt, Herkunftsangabe «Knöpfe im blauen Band», Dokumenttest mit Abschnitt Nachtblau, README und Karte, Statusangaben, Build-Kennung in `gate.html` und Starter-README. | Umgesetzt |
+| Unabhängige Prüfung des Pakets 2026.10.20 | Durch eine Sitzung, die das Paket nicht gebaut hat. | Offen |
 
 Eingabeparameter der leeren Vorlagen sind keine offenen Projektaufgaben. Der Produktionsschutz bleibt aktiv. Alle Entscheide gelten für diesen abgeschlossenen Profilstand; es gibt keinen zurückgestellten Backlog. Die Nachweise stehen im [Prüfbericht](PRUEFBERICHT.md).
