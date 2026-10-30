@@ -283,6 +283,68 @@ test('Helle Komponenten in blauem Band und Nachtblau zeigen dieselben Farben wie
  }
 });
 
+// Nachbesserung 30.10.2026 (ENTSCHEIDE-PROFIL-2026-10-20.md, W-3): Anwendungsmuster, Platzhalter und Sicherheitsleiste des Starters
+// sowie helle Teilflächen der Erklärmuster in einer offenen Figur zeigen in Bändern dieselben Farben wie auf Weiss.
+const anwendung=p=>`<article class="puk-app-card puk-app-card--accent"><span class="puk-app-kicker" id="${p}-kicker">Kicker</span><h3 id="${p}-ctitle">Karte</h3><p id="${p}-ctext">Text <a id="${p}-clink" href="#x">Link</a></p></article>
+<button class="puk-app-mini" id="${p}-mini" type="button">Mehr</button>
+<p><button class="puk-app-chip" id="${p}-chip" type="button" aria-pressed="false">Chip</button> <button class="puk-app-chip" id="${p}-chipon" type="button" aria-pressed="true">Gewählt</button></p>
+<button class="puk-app-choice" id="${p}-choice" type="button"><strong id="${p}-chstrong">Wahl</strong><span id="${p}-chtext">Beschreibung</span></button>
+<p class="puk-app-boundary" id="${p}-bound">Grenze <a id="${p}-blink" href="#x">Link</a></p>
+<section class="puk-app-detail" data-level="urgent"><h2 id="${p}-dtitle">Detail</h2><p id="${p}-dtext">Text</p></section>
+<section class="puk-app-output"><h2 id="${p}-otitle">Ausgabe</h2><dl><dt id="${p}-odt">Begriff</dt><dd id="${p}-odd">Wert</dd></dl></section>
+<p class="puk-app-empty" id="${p}-empty">Keine Treffer</p>
+<section class="puk-app-contact-target" id="${p}-target" tabindex="-1"><h2 id="${p}-ttitle">Kontakt</h2><p id="${p}-ttext">Text</p></section>
+<div class="puk-site-placeholder"><p id="${p}-ph">Platzhalter</p></div>
+<section class="puk-site-safety puk-site-safety--direct"><div class="puk-site-safety__inner"><p class="puk-site-safety__title" id="${p}-stitle">Sofort Hilfe</p><a class="puk-link--action" id="${p}-slink" href="#x">Kontakt</a></div></section>
+<div class="puk-vis-wide"><figure class="puk-vis-figure puk-vis-figure--open"><button class="puk-vis-btn" id="${p}-vbtn" type="button">Weiter</button><span class="puk-vis-build__n" id="${p}-vn">1</span>
+<section class="puk-vis-balance__hold"><h3 id="${p}-bal">Halt</h3></section>
+<div class="puk-vis-layers"><div class="puk-vis-layers__zone"><h3 id="${p}-lz">Oben</h3><ul><li id="${p}-lli">Eintrag</li></ul></div><div class="puk-vis-layers__zone puk-vis-layers__zone--below"><h3 id="${p}-lzb">Unten</h3></div></div>
+<div class="puk-vis-net"><p class="puk-vis-net__me">Sie</p><div class="puk-vis-net__ring puk-vis-net__ring--1"><h3 id="${p}-nh3">Nah</h3><ul><li class="puk-vis-net__slot--1" id="${p}-nli">Freundin</li></ul></div></div></figure></div>`;
+const anwendungHtml=`<!doctype html><html lang="de"><head><meta charset="utf-8"><title>Anwendungsmuster</title><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="templates/website/applications/applications.css"><link rel="stylesheet" href="templates/website/psychoeducation-site-starter/starter.css"><link rel="stylesheet" href="templates/website/longform/visual-patterns.css"><link rel="stylesheet" href="templates/website/longform/erklaermuster.css"></head>
+<body class="puk-web-page"><main><p id="leer">Leer</p><div id="w">${anwendung('w')}</div><section class="puk-web-band" id="b">${anwendung('b')}</section><section class="puk-web-band" data-puk-surface="night" id="n">${anwendung('n')}</section></main></body></html>`;
+test('Anwendungsmuster, Platzhalter, Sicherheitsleiste und Erklärmuster in blauem Band und Nachtblau zeigen dieselben Farben wie auf Weiss',async()=>{
+ for(const theme of ['light','kontrast']){
+  const page=await browser.newPage({viewport:{width:1280,height:900}});const errors=[];page.on('pageerror',e=>errors.push(String(e)));
+  try{
+   await page.route(server.url+'anwendung.html',r=>r.fulfill({contentType:'text/html',body:theme==='kontrast'?anwendungHtml.replace('<html lang="de">','<html lang="de" data-theme="kontrast">'):anwendungHtml}));
+   await page.goto(server.url+'anwendung.html',{waitUntil:'load'});
+   await page.addStyleTag({content:'*{transition:none!important;animation:none!important}'});await page.hover('#leer');
+   const look=sel=>page.$eval(sel,e=>{const s=getComputedStyle(e);return [s.color,s.borderTopColor,s.backgroundColor].join(' | ');});
+   const ruhe=['kicker','ctitle','ctext','clink','mini','chip','chipon','chstrong','chtext','bound','blink','dtitle','dtext','otitle','odt','odd','empty','ttitle','ttext','ph','stitle','slink','vbtn','vn','bal','lz','lli','lzb','nh3','nli'];
+   for(const k of ruhe){
+    const white=await look('#w-'+k);
+    for(const p of ['b','n'])assert.equal(await look('#'+p+'-'+k),white,`${theme} ${p}-${k}`);
+   }
+   for(const k of ['mini','chip','choice','vbtn','clink','slink']){
+    const state=async p=>{await page.hover('#'+p+'-'+k);const v=await look('#'+p+'-'+k);await page.hover('#leer');return v;};
+    const white=await state('w');
+    for(const p of ['b','n'])assert.equal(await state(p),white,`${theme} ${p}-${k} Hover`);
+   }
+   const cdp=await page.context().newCDPSession(page);await cdp.send('DOM.enable');await cdp.send('CSS.enable');
+   const {root}=await cdp.send('DOM.getDocument',{depth:-1});
+   for(const forced of [['focus','focus-visible'],['active','focus','focus-visible']])for(const k of ['mini','chip','choice','vbtn','target','slink']){
+    const state=async p=>{const {nodeId}=await cdp.send('DOM.querySelector',{nodeId:root.nodeId,selector:'#'+p+'-'+k});await cdp.send('CSS.forcePseudoState',{nodeId,forcedPseudoClasses:forced});
+     const v=await page.$eval('#'+p+'-'+k,e=>{const s=getComputedStyle(e);return [s.color,s.borderTopColor,s.backgroundColor,s.boxShadow].join(' | ');});await cdp.send('CSS.forcePseudoState',{nodeId,forcedPseudoClasses:[]});return v;};
+    const white=await state('w');
+    for(const p of ['b','n'])assert.equal(await state(p),white,`${theme} ${p}-${k} ${forced[0]==='active'?'gedrückt':'Fokus'}`);
+   }
+   // Schmal: Die Ringbeschriftung der Beziehungskarte verliert ihre Fläche und behält dann die Nebentextfarbe des Bandes.
+   await page.setViewportSize({width:375,height:900});
+   const c=q=>page.$eval(q,e=>getComputedStyle(e).color);
+   assert.equal(await page.$eval('#n-nh3',e=>getComputedStyle(e).backgroundColor),'rgba(0, 0, 0, 0)',`${theme} Ringbeschriftung schmal ohne Fläche`);
+   assert.equal(await c('#n-nh3'),'rgb(216, 224, 255)',`${theme} Ringbeschriftung schmal auf Nachtblau in Blau 25`);
+   await page.setViewportSize({width:1280,height:900});
+   await page.emulateMedia({media:'print'});
+   for(const k of ruhe){
+    const p2=q=>page.$eval(q,e=>{const s=getComputedStyle(e);return s.display==='none'?'ausgeblendet':[s.color,s.borderTopColor].join(' | ');});
+    const white=await p2('#w-'+k);
+    for(const p of ['b','n'])assert.equal(await p2('#'+p+'-'+k),white,`${theme} ${p}-${k} Druck`);
+   }
+   assert.deepEqual(errors,[],theme);
+  }finally{await page.close();}
+ }
+});
+
 // Nachbesserung 30.10.2026 (ENTSCHEIDE-PROFIL-2026-10-18.md, W-2): Erklärgrafiken und Karussell-Knöpfe in Bändern wie auf Weiss.
 const erklaergrafik=p=>`<figure class="puk-vis-figure" id="${p}-fig"><p class="puk-vis-label" id="${p}-label">Erklärgrafik</p>
 <div class="puk-vis-compare"><div class="puk-vis-compare__col"><p class="puk-vis-compare__key" id="${p}-key">A</p><h3 id="${p}-h3">Spalte</h3><dl><dt id="${p}-dt">Merkmal</dt><dd id="${p}-dd">Wert</dd></dl></div></div>

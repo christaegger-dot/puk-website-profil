@@ -31,4 +31,4 @@ Christa Egger hat am **30.10.2026** den Auftrag gegeben: «O-3 bis O-6 als 2026.
 
 ## Prüfung
 
-Die technische Selbstprüfung steht im [Prüfbericht](PRUEFBERICHT.md). Diese Sitzung hat das Paket 2026.10.17 unabhängig geprüft und 2026.10.18 und 2026.10.19 gebaut. Die unabhängige Prüfung von 2026.10.19 muss eine andere Sitzung übernehmen; sie schliesst 2026.10.18 ein und ist offen. Kein Merge und keine Veröffentlichung ohne gesonderten Auftrag.
+Die technische Selbstprüfung steht im [Prüfbericht](PRUEFBERICHT.md). Diese Sitzung hat das Paket 2026.10.17 unabhängig geprüft und 2026.10.18 und 2026.10.19 gebaut. Das Paket `puk-website-profil-2026.10.19.zip` (SHA-256 `ec3a97ad…`) hat am 30.10.2026 eine Sitzung geprüft, die es nicht gebaut hat, einschliesslich 2026.10.18 (PR #158): keine Befunde «kritisch», ein Befund «wichtig» (W-3, nicht erfasste helle Flächen) und drei «optional» (O-7 bis O-9); Ergebnis im [archivierten Prüfbericht](archiv/profilstand-2026-10-30-19/PRUEFBERICHT.md). W-3 ist mit Version 2026.10.20 behoben ([ENTSCHEIDE-PROFIL-2026-10-20.md](ENTSCHEIDE-PROFIL-2026-10-20.md)). Kein Merge und keine Veröffentlichung ohne gesonderten Auftrag.

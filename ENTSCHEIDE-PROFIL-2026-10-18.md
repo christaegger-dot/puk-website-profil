@@ -20,7 +20,7 @@ Die optionalen Befunde O-3 bis O-6 der Prüfung bleiben offen; sie sind nicht Te
 
 ## Grenzen
 
-- Erfasst sind die hellen Flächen der Profilkomponenten und Flächen mit `data-puk-light` oder `data-puk-surface`. Komponenten ohne eigene helle Fläche mit dunkler Schrift (Reiter, Beschriftungen von Kontrollkästchen, Optionsfeldern und Schaltern, Menüknopf) und die Entwurfsmarke des Starters bleiben im Band wie bisher; die Regel aus 2026.10.15 schliesst sie aus.
+- Erfasst sind die hellen Flächen der Profilkomponenten und Flächen mit `data-puk-light` oder `data-puk-surface`. Komponenten ohne eigene helle Fläche mit dunkler Schrift (Reiter, Beschriftungen von Kontrollkästchen, Optionsfeldern und Schaltern, Menüknopf) und die Entwurfsmarke des Starters bleiben im Band wie bisher; die Regel aus 2026.10.15 schliesst sie aus. Nachtrag: Die Entwurfsmarke ist seit 2026.10.19 erfasst; Anwendungsmuster, Platzhalter und Sicherheitsleiste des Starters und die hellen Teilflächen der Erklärmuster waren hier nicht erfasst und sind es seit 2026.10.20 ([ENTSCHEIDE-PROFIL-2026-10-20.md](ENTSCHEIDE-PROFIL-2026-10-20.md), W-3).
 - Eine Figur der Form «Überschneidung» in einer offenen Erklärgrafik ist nicht erfasst; keine Vorlage verwendet diese Kombination.
 - Geprüft im Headless-Chromium und in Chromium, beide Themes; keine anderen Browser und keine realen Geräte.
 - Keine klinische, juristische, institutionelle oder von der PUK-Kommunikation erteilte Freigabe.

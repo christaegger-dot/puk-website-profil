@@ -104,7 +104,8 @@
   .puk-vis-net__me{position:static;transform:none;width:auto;aspect-ratio:auto;border-radius:0;padding:var(--space-3);text-align:left;display:block}
   .puk-vis-net__ring{display:grid;gap:var(--space-2);padding-left:var(--space-4);border-left:2px solid var(--puk-blue-100)}
   .puk-vis-net__ring li{position:static;transform:none;width:auto;text-align:left}
-  .puk-vis-net__ring h3{position:static;transform:none;padding:0;background:none;white-space:normal}
+  /* Ohne eigene Fläche steht die Ringbeschriftung auf dem Grund der Figur: im Band dessen Nebentextfarbe statt der Rücksetzung (W-3, 30.10.2026). */
+  .puk-vis-net__ring h3{position:static;transform:none;padding:0;background:none;white-space:normal;--text-muted:inherit}
 }
 .puk-vis-net__ring ul{margin:0;padding:0;list-style:none}
 @container (max-width:40rem){.puk-vis-net__ring ul{display:grid;gap:var(--space-2)}}
