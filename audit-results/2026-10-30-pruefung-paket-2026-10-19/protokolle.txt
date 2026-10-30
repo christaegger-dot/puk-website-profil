@@ -58,6 +58,7 @@ Suche nach https?://, <script, @import, url(, Ereignisattributen, javascript:, t
 303:+<script src="js/app.js?v=r4-12"></script>
 305:+<script src="../../templates/website/psychoeducation-site-starter/tools/contract.js?v=r4-26"></script>
 ### Paket nach dem Eintrag
-npm run package; npm run check:package: «384 Dateien bytegleich; SHA-256 geprüft: 3727f9194ba3426671d9b7eb4adc00661dcafe7b3ba47ba847cb7d305de57f93»; sha256sum -c: OK
+npm run package; npm run check:package: «384 Dateien bytegleich; SHA-256 geprüft: cf3b2c25c56cae0a9ed9e015a75a4b7f3bcc6db1f8b740d10141402a5a75cde9»; sha256sum -c: OK
 Vergleich der Zip-Einträge (python3 -I, zipfile) geprüftes Paket ec3a97ad… gegen neues Paket: je 384 Einträge, gleiche Namen und Reihenfolge; Inhalt, Zeitstempel, Attribute und Kompression gleich ausser puk-website-profil/PRUEFBERICHT.md.
 Nach dem Eintrag: npm test mit Chromium 1243: # tests 118 # pass 118 # fail 0
+(Nach Nachtrag des Branchnamens im Bericht erneut erzeugt; Vergleich wiederholt, Ergebnis gleich.)
