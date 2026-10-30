@@ -49,6 +49,19 @@ test('Leitlinie 02 nennt Geltung, Zählung und die vier Bedingungen des Titelbil
  for(const s of ['Keine hellen Komponenten in Bändern','blau oder nachtblau','ausserhalb des Bandes','ENTSCHEIDE-PROFIL-2026-10-15.md'])assert.ok(g.includes(s),s);
 });
 
+// Nachbesserung 30.10.2026 (ENTSCHEIDE-PROFIL-2026-10-17.md, O-4): Regel W-1 auch zu Nachtblau, im README und in der Karte «PUK-Blau».
+test('Die Regel gegen helle Komponenten in Bändern steht zu Nachtblau, im README und in der Karte «PUK-Blau»',()=>{
+ const g=read('guidelines/02-farben-und-kontrast.md');
+ const abschnitt=(text,titel)=>{const i=text.indexOf('\n## '+titel);assert.ok(i>=0,titel);const rest=text.slice(i+1);const j=rest.indexOf('\n## ');return j<0?rest:rest.slice(0,j);};
+ assert.match(abschnitt(g,'PUK-Blau'),/\*\*Keine hellen Komponenten in Bändern:\*\*/,'Punkt im Abschnitt «PUK-Blau»');
+ const nacht=abschnitt(g,'Profilentscheid 29.10.2026: Nachtblau');
+ for(const s of ['**Helle Komponenten:**','Auch auf Nachtblau stehen keine Karten','W-1'])assert.ok(nacht.includes(s),`Nachtblau: ${s}`);
+ const readme=read('README.md');
+ for(const s of ['In Bändern, blau oder nachtblau, stehen keine hellen Komponenten','ENTSCHEIDE-PROFIL-2026-10-15.md'])assert.ok(readme.includes(s),`README: ${s}`);
+ const karte=read('components/GrundlageFarbeBlau/README.md');
+ for(const s of ['**Keine hellen Komponenten in Bändern:**','blauer und nachtblauer Bänder','../../guidelines/02-farben-und-kontrast.md#puk-blau'])assert.ok(karte.includes(s),`Karte: ${s}`);
+});
+
 const fixture=`<!doctype html><html lang="de"><head><meta charset="utf-8"><title>Profilentscheid</title>
 <link rel="stylesheet" href="styles.css"></head>
 <body class="puk-web-page"><main>
@@ -171,7 +184,7 @@ test('Sekundär- und Ghost-Button stehen auf Nachtblau in Weiss, ausserhalb unve
  }
 });
 
-// Nachbesserung 29.10.2026 (ENTSCHEIDE-PROFIL-2026-10-14.md, O-C): Links, Akzent, Nebentext und ruhige Knöpfe im blauen Band in Weiss.
+// Nachbesserung 29.10.2026 (ENTSCHEIDE-PROFIL-2026-10-14.md, O-C und Knöpfe im blauen Band): Links, Akzent, Nebentext und ruhige Knöpfe im blauen Band in Weiss.
 const blauesBand=`<!doctype html><html lang="de"><head><meta charset="utf-8"><title>Blaues Band</title><link rel="stylesheet" href="styles.css"></head>
 <body class="puk-web-page"><main><p id="leer">Leer</p><p><a id="w-a" href="#x">Link auf Weiss</a> <button id="w-dis" class="puk-btn puk-btn--secondary" disabled>Aus</button></p>
 <section id="band" class="puk-web-band"><p id="kicker" class="puk-longform__kicker">Kicker</p><p id="text">Text mit <a id="link" href="#x">Link</a></p>

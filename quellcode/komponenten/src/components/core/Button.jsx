@@ -18,7 +18,7 @@ function variantStyle(variant, hovered) {
     case 'secondary':
       return {
         background: hovered ? 'var(--ui-wash)' : 'transparent',
-        /* --action-quiet-fg: Schwarz, auf der nachtblauen Fläche und im blauen Band Weiss (Nachbesserungen O-A und O-C, 29.10.2026); Hover auf der grauen Fläche bleibt Schwarz. */
+        /* --action-quiet-fg: Schwarz, auf der nachtblauen Fläche und im blauen Band Weiss (Nachbesserungen 29.10.2026: O-A und Knöpfe im blauen Band); Hover auf der grauen Fläche bleibt Schwarz. */
         color: hovered ? 'var(--puk-black-100)' : 'var(--action-quiet-fg)',
         border: '1px solid var(--action-quiet-fg)',
       };

@@ -1,7 +1,7 @@
 # Abschlussentscheide · 17.10.2026
 
 <!-- profil:stand -->
-**Profil 2026.10.16 abgeschlossen · Stand 30.10.2026. Offene Projektpendenzen: 0.**
+**Profil 2026.10.17 abgeschlossen · Stand 30.10.2026. Offene Projektpendenzen: 0.**
 <!-- /profil:stand -->
 
 | Bisherige Aufgabe oder Unklarheit | Abschlussentscheid | Status |
@@ -139,6 +139,17 @@ Christa Egger hat am 30.10.2026 die Behebung von O-1 und O-2 beauftragt («O-1 u
 | --- | --- | --- |
 | O-1 · Beschreibung `action-quiet-fg` | `tokens.json` und Kommentare nennen die nachtblaue Fläche und das blaue Band. Werte unverändert. | Umgesetzt |
 | O-2 · Drucktest im blauen Band | Der Test misst im Druck einen sichtbaren Knopf-Link und prüft, dass `button.puk-btn` ausgeblendet ist. | Umgesetzt |
-| Unabhängige Prüfung des Pakets 2026.10.16 | Durch eine Sitzung, die das Paket nicht gebaut hat; schliesst W-1 ein. | Offen |
+| O-3 und O-4 | Optionale Befunde der Prüfung 2026.10.16; nicht Teil dieses Auftrags. Mit 2026.10.17 behoben. | Offen, nicht beauftragt |
+| Unabhängige Prüfung des Pakets 2026.10.16 | Durch eine Sitzung, die das Paket nicht gebaut hat; schliesst W-1 ein. Am 30.10.2026 erfolgt, Paket-SHA `787078d8…` bestätigt. Keine Befunde «kritisch» oder «wichtig», zwei «optional» (O-3, O-4); Bericht im [Archiv](archiv/profilstand-2026-10-30-16/PRUEFBERICHT.md). | Erledigt |
+
+## Nachbesserung vom 30.10.2026 · Version 2026.10.17
+
+Christa Egger hat am 30.10.2026 die Behebung von O-3 und O-4 beauftragt («O-3 und O-4 als 2026.10.17 umsetzen»). Einzelheiten stehen in [ENTSCHEIDE-PROFIL-2026-10-17.md](ENTSCHEIDE-PROFIL-2026-10-17.md); der geprüfte Stand 2026.10.16 liegt unverändert im [Archiv](archiv/profilstand-2026-10-30-16/).
+
+| Punkt | Entscheid | Status |
+| --- | --- | --- |
+| O-3 · Herkunftsangabe der Knöpfe im blauen Band | Kommentare, `tokens.json`, Leitlinie 02 und Archivübersicht nennen «Knöpfe im blauen Band» neben O-C bzw. O-A. Werte unverändert. | Umgesetzt |
+| O-4 · Dokumenttest zu W-1 | Ein zusätzlicher Test prüft die Regel in beiden Abschnitten von Leitlinie 02, im README und in der Karte «PUK-Blau». | Umgesetzt |
+| Unabhängige Prüfung des Pakets 2026.10.17 | Durch eine Sitzung, die das Paket nicht gebaut hat. | Offen |
 
 Eingabeparameter der leeren Vorlagen sind keine offenen Projektaufgaben. Der Produktionsschutz bleibt aktiv. Alle Entscheide gelten für diesen abgeschlossenen Profilstand; es gibt keinen zurückgestellten Backlog. Die Nachweise stehen im [Prüfbericht](PRUEFBERICHT.md).

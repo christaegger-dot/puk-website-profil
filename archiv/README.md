@@ -24,8 +24,10 @@ Verbindlich sind die [aktuellen Regeln](../README.md), die [Abschlussentscheide]
 
 `profilstand-2026-10-29-12/` erhält Profil 2026.10.12 mit Selbstprüfbericht, Entscheiddatei, Matrixdaten und unverändertem Paket (SHA-256 `22d71a6f…`); dieses Paket wurde nicht unabhängig geprüft. Profil 2026.10.13 behebt den Befund O-A der Prüfung 2026.10.10: Sekundär- und Ghost-Button stehen auf der nachtblauen Fläche in Weiss.
 
-`profilstand-2026-10-29-13/` erhält Profil 2026.10.13 mit Selbstprüfbericht, Entscheiddatei, Matrixdaten und unverändertem Paket (SHA-256 `ce36829b…`); dieses Paket wurde nicht unabhängig geprüft. Profil 2026.10.14 ergänzt den gedrückten Zustand der Knöpfe auf Nachtblau und behebt O-B (Karte «PUK-Blau») und O-C (Links, Akzent, Nebentext und Knöpfe im blauen Band).
+`profilstand-2026-10-29-13/` erhält Profil 2026.10.13 mit Selbstprüfbericht, Entscheiddatei, Matrixdaten und unverändertem Paket (SHA-256 `ce36829b…`); dieses Paket wurde nicht unabhängig geprüft. Profil 2026.10.14 ergänzt den gedrückten Zustand der Knöpfe auf Nachtblau und behebt O-B (Karte «PUK-Blau») und O-C (Links, Akzent und Nebentext im blauen Band); dazu stehen die Knöpfe im blauen Band in Weiss.
 
 `profilstand-2026-10-30-14/` erhält Profil 2026.10.14 mit Selbstprüfbericht, unabhängiger Prüfung vom 29.10.2026, Entscheiddatei, Matrixdaten und unverändertem Paket (SHA-256 `2e375f61…`; geprüft wurde `1c6fc473…`, der Unterschied liegt nur im Prüfbericht). Profil 2026.10.15 setzt den Befund W-1 als Regel um: In blauen und nachtblauen Bändern stehen keine hellen Komponenten.
 
 `profilstand-2026-10-30-15/` erhält Profil 2026.10.15 mit Selbstprüfbericht, Entscheiddatei, Matrixdaten und unverändertem Paket (SHA-256 `6b2b4aaf…`); dieses Paket wurde nicht unabhängig geprüft. Profil 2026.10.16 behebt die optionalen Befunde O-1 (Beschreibung des Tokens `action-quiet-fg`) und O-2 (Drucktest im blauen Band) der Prüfung 2026.10.14.
+
+`profilstand-2026-10-30-16/` erhält Profil 2026.10.16 mit Selbstprüfbericht, unabhängiger Prüfung vom 30.10.2026, Entscheiddatei, Matrixdaten und unverändertem Paket (SHA-256 `56ad8d6e…`; geprüft wurde `787078d8…`, der Unterschied liegt nur im Prüfbericht). Profil 2026.10.17 behebt die optionalen Befunde O-3 (Herkunftsangabe der Knöpfe im blauen Band) und O-4 (Dokumenttest zu W-1) dieser Prüfung.
