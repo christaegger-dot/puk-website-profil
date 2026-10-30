@@ -1,0 +1,71 @@
+## G1: components/bundle.css aus 46de3de (2026.10.18, ohne .puk-site-draft)
+not ok 8 - Helle Komponenten in blauem Band und Nachtblau zeigen dieselben Farben wie auf Weiss
+    + actual - expected
+  expected: 'rgb(34, 34, 34) | rgb(100, 100, 100) | rgb(255, 255, 255)'
+  actual: 'rgb(255, 255, 255) | rgb(100, 100, 100) | rgb(255, 255, 255)'
+# pass 8
+# fail 1
+## G2: components/bundle.css aus c43a94d (2026.10.17)
+not ok 8 - Helle Komponenten in blauem Band und Nachtblau zeigen dieselben Farben wie auf Weiss
+    + actual - expected
+  expected: 'rgb(34, 34, 34) | rgb(100, 100, 100) | rgb(255, 255, 255)'
+  actual: 'rgb(255, 255, 255) | rgb(100, 100, 100) | rgb(255, 255, 255)'
+not ok 9 - Erklärgrafiken und Karussell-Knöpfe in blauem Band und Nachtblau zeigen dieselben Farben wie auf Weiss
+    + actual - expected
+  expected: 'rgb(34, 34, 34) | rgb(34, 34, 34) | rgba(0, 0, 0, 0)'
+  actual: 'rgb(255, 255, 255) | rgb(255, 255, 255) | rgba(0, 0, 0, 0)'
+# pass 7
+# fail 2
+## G3: Leitlinie 02 ohne den Satz «Knöpfe meint …»
+ guidelines/02-farben-und-kontrast.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+not ok 2 - Leitlinie 02 nennt Geltung, Zählung und die vier Bedingungen des Titelbilds
+# pass 8
+# fail 1
+## G4: Test aus c43a94d gegen da2d8c9 (prüft er die Entwurfsmarke? nein → besteht mit 46de3de-CSS)
+# pass 8
+# fail 0
+## git status
+
+## G5 (Befund O-4 aus PR #151): Leitlinie 02 ohne Punkt «Helle Komponenten» im Abschnitt Nachtblau (Z. 95), README ohne «Knöpfe im Band sind …», Karte «PUK-Blau» ohne Punkt «Keine hellen Komponenten in Bändern»
+ README.md                               | 2 +-
+ components/GrundlageFarbeBlau/README.md | 1 -
+ guidelines/02-farben-und-kontrast.md    | 1 -
+ 3 files changed, 1 insertion(+), 3 deletions(-)
+# tests 118
+# pass 118
+# fail 0
+148 lokale Dokumentationslinks geprüft; 0 fehlende Ziele.
+
+## Mutation: je ein Selektor aus der Rücksetzregel in components/bundle.css entfernt (Arbeitsbaum da2d8c9), node --test tests/profilentscheid-2026-10-29.test.mjs
+25 Selektoren
+ohne '[data-puk-light]': not ok 8 - Helle Komponenten in blauem Band und Nachtblau zeigen dieselben Farben wie auf Weiss | error: |-
+ohne '[data-puk-surface]:not([data-puk-surface="night"])': not ok 8 - Helle Komponenten in blauem Band und Nachtblau zeigen dieselben Farben wie auf Weiss | error: |-
+ohne '.puk-dialog': not ok 8 - Helle Komponenten in blauem Band und Nachtblau zeigen dieselben Farben wie auf Weiss | error: |-
+ohne '.puk-disclosure__panel': not ok 8 - Helle Komponenten in blauem Band und Nachtblau zeigen dieselben Farben wie auf Weiss | error: |-
+ohne '.puk-carousel__slide': ALLE BESTANDEN
+ohne '.puk-carousel__btn': not ok 9 - Erklärgrafiken und Karussell-Knöpfe in blauem Band und Nachtblau zeigen dieselben Farben wie auf Weiss | error: |-
+ohne '.puk-filter': not ok 8 - Helle Komponenten in blauem Band und Nachtblau zeigen dieselben Farben wie auf Weiss | error: |-
+ohne '.puk-longform__figure': not ok 8 - Helle Komponenten in blauem Band und Nachtblau zeigen dieselben Farben wie auf Weiss | error: |-
+ohne '.puk-longform__figure-side': ALLE BESTANDEN
+ohne '.puk-longform__support': not ok 8 - Helle Komponenten in blauem Band und Nachtblau zeigen dieselben Farben wie auf Weiss | error: |-
+ohne '.puk-longform__reflection': ALLE BESTANDEN
+ohne '.puk-longform__term-guide>div': ALLE BESTANDEN
+ohne '.puk-web-media': ALLE BESTANDEN
+ohne '.puk-vis-figure:not(.puk-vis-figure--open)': not ok 9 - Erklärgrafiken und Karussell-Knöpfe in blauem Band und Nachtblau zeigen dieselben Farben wie auf Weiss | error: |-
+ohne '.puk-vis-longdesc': not ok 9 - Erklärgrafiken und Karussell-Knöpfe in blauem Band und Nachtblau zeigen dieselben Farben wie auf Weiss | error: |-
+ohne '.puk-vis-cycle li': ALLE BESTANDEN
+ohne '.puk-vis-compare__col': ALLE BESTANDEN
+ohne '.puk-vis-decision__branch': ALLE BESTANDEN
+ohne '.puk-vis-illu': not ok 9 - Erklärgrafiken und Karussell-Knöpfe in blauem Band und Nachtblau zeigen dieselben Farben wie auf Weiss | error: |-
+ohne '.puk-vis-tablewrap': ALLE BESTANDEN
+ohne '.puk-vis-decide li': not ok 9 - Erklärgrafiken und Karussell-Knöpfe in blauem Band und Nachtblau zeigen dieselben Farben wie auf Weiss | error: |-
+ohne '.puk-site-draft': not ok 8 - Helle Komponenten in blauem Band und Nachtblau zeigen dieselben Farben wie auf Weiss | error: |-
+ohne 'input': not ok 8 - Helle Komponenten in blauem Band und Nachtblau zeigen dieselben Farben wie auf Weiss | error: |-
+ohne 'select': not ok 8 - Helle Komponenten in blauem Band und Nachtblau zeigen dieselben Farben wie auf Weiss | error: |-
+ohne 'textarea': not ok 8 - Helle Komponenten in blauem Band und Nachtblau zeigen dieselben Farben wie auf Weiss | error: |-
+wiederhergestellt git diff leer
+
+## Bestätigung im Browser: ohne «.puk-carousel__slide» (Arbeitsbaum da2d8c9, nur dieser Selektor entfernt), eigene Fixture, light 1280
+Nachtblau: h3.puk-carousel__title und div.puk-carousel__content rgb(255, 255, 255) auf rgb(255, 255, 255) = 1:1 (auf Weiss rgb(34, 34, 34)); im blauen Band li.puk-carousel__slide Weiss statt #222222.
+Die Testsuite bemerkt das nicht (siehe Mutation oben: «ALLE BESTANDEN»). Danach git checkout, Arbeitsbaum sauber.

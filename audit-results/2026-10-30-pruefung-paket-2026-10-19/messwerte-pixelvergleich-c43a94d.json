@@ -1,0 +1,999 @@
+{
+ "seitenNeu": 31,
+ "seitenAlt": 31,
+ "gleicheListe": true,
+ "ergebnisse": [
+  {
+   "url": "index.html",
+   "width": 375,
+   "theme": "light",
+   "gleich": true,
+   "bytesNeu": 199322,
+   "bytesAlt": 199322
+  },
+  {
+   "url": "index.html",
+   "width": 375,
+   "theme": "kontrast",
+   "gleich": true,
+   "bytesNeu": 207738,
+   "bytesAlt": 207738
+  },
+  {
+   "url": "index.html",
+   "width": 1280,
+   "theme": "light",
+   "gleich": true,
+   "bytesNeu": 240044,
+   "bytesAlt": 240044
+  },
+  {
+   "url": "index.html",
+   "width": 1280,
+   "theme": "kontrast",
+   "gleich": true,
+   "bytesNeu": 249276,
+   "bytesAlt": 249276
+  },
+  {
+   "url": "musterauswahl.html",
+   "width": 375,
+   "theme": "light",
+   "gleich": true,
+   "bytesNeu": 314557,
+   "bytesAlt": 314557
+  },
+  {
+   "url": "musterauswahl.html",
+   "width": 375,
+   "theme": "kontrast",
+   "gleich": true,
+   "bytesNeu": 325320,
+   "bytesAlt": 325320
+  },
+  {
+   "url": "musterauswahl.html",
+   "width": 1280,
+   "theme": "light",
+   "gleich": true,
+   "bytesNeu": 385935,
+   "bytesAlt": 385935
+  },
+  {
+   "url": "musterauswahl.html",
+   "width": 1280,
+   "theme": "kontrast",
+   "gleich": true,
+   "bytesNeu": 397529,
+   "bytesAlt": 397529
+  },
+  {
+   "url": "templates/website/Website.dc.html",
+   "width": 375,
+   "theme": "light",
+   "gleich": true,
+   "bytesNeu": 147364,
+   "bytesAlt": 147364
+  },
+  {
+   "url": "templates/website/Website.dc.html",
+   "width": 375,
+   "theme": "kontrast",
+   "gleich": true,
+   "bytesNeu": 152735,
+   "bytesAlt": 152735
+  },
+  {
+   "url": "templates/website/Website.dc.html",
+   "width": 1280,
+   "theme": "light",
+   "gleich": true,
+   "bytesNeu": 163701,
+   "bytesAlt": 163701
+  },
+  {
+   "url": "templates/website/Website.dc.html",
+   "width": 1280,
+   "theme": "kontrast",
+   "gleich": true,
+   "bytesNeu": 169735,
+   "bytesAlt": 169735
+  },
+  {
+   "url": "templates/website/longform/erklaermuster.html",
+   "width": 375,
+   "theme": "light",
+   "gleich": true,
+   "bytesNeu": 601886,
+   "bytesAlt": 601886
+  },
+  {
+   "url": "templates/website/longform/erklaermuster.html",
+   "width": 375,
+   "theme": "kontrast",
+   "gleich": true,
+   "bytesNeu": 609131,
+   "bytesAlt": 609131
+  },
+  {
+   "url": "templates/website/longform/erklaermuster.html",
+   "width": 1280,
+   "theme": "light",
+   "gleich": true,
+   "bytesNeu": 722127,
+   "bytesAlt": 722127
+  },
+  {
+   "url": "templates/website/longform/erklaermuster.html",
+   "width": 1280,
+   "theme": "kontrast",
+   "gleich": true,
+   "bytesNeu": 731651,
+   "bytesAlt": 731651
+  },
+  {
+   "url": "templates/website/longform/grundlagenkapitel.html",
+   "width": 375,
+   "theme": "light",
+   "gleich": true,
+   "bytesNeu": 426901,
+   "bytesAlt": 426901
+  },
+  {
+   "url": "templates/website/longform/grundlagenkapitel.html",
+   "width": 375,
+   "theme": "kontrast",
+   "gleich": true,
+   "bytesNeu": 431156,
+   "bytesAlt": 431156
+  },
+  {
+   "url": "templates/website/longform/grundlagenkapitel.html",
+   "width": 1280,
+   "theme": "light",
+   "gleich": true,
+   "bytesNeu": 494328,
+   "bytesAlt": 494328
+  },
+  {
+   "url": "templates/website/longform/grundlagenkapitel.html",
+   "width": 1280,
+   "theme": "kontrast",
+   "gleich": true,
+   "bytesNeu": 498428,
+   "bytesAlt": 498428
+  },
+  {
+   "url": "templates/website/longform/handlungsuebersicht.html",
+   "width": 375,
+   "theme": "light",
+   "gleich": true,
+   "bytesNeu": 194867,
+   "bytesAlt": 194867
+  },
+  {
+   "url": "templates/website/longform/handlungsuebersicht.html",
+   "width": 375,
+   "theme": "kontrast",
+   "gleich": true,
+   "bytesNeu": 197377,
+   "bytesAlt": 197377
+  },
+  {
+   "url": "templates/website/longform/handlungsuebersicht.html",
+   "width": 1280,
+   "theme": "light",
+   "gleich": true,
+   "bytesNeu": 236444,
+   "bytesAlt": 236444
+  },
+  {
+   "url": "templates/website/longform/handlungsuebersicht.html",
+   "width": 1280,
+   "theme": "kontrast",
+   "gleich": true,
+   "bytesNeu": 239668,
+   "bytesAlt": 239668
+  },
+  {
+   "url": "templates/website/longform/transfer-erholung.html",
+   "width": 375,
+   "theme": "light",
+   "gleich": true,
+   "bytesNeu": 251568,
+   "bytesAlt": 251568
+  },
+  {
+   "url": "templates/website/longform/transfer-erholung.html",
+   "width": 375,
+   "theme": "kontrast",
+   "gleich": true,
+   "bytesNeu": 255118,
+   "bytesAlt": 255118
+  },
+  {
+   "url": "templates/website/longform/transfer-erholung.html",
+   "width": 1280,
+   "theme": "light",
+   "gleich": true,
+   "bytesNeu": 308436,
+   "bytesAlt": 308436
+  },
+  {
+   "url": "templates/website/longform/transfer-erholung.html",
+   "width": 1280,
+   "theme": "kontrast",
+   "gleich": true,
+   "bytesNeu": 312310,
+   "bytesAlt": 312310
+  },
+  {
+   "url": "templates/website/longform/visualisierungsmuster.html",
+   "width": 375,
+   "theme": "light",
+   "gleich": true,
+   "bytesNeu": 994648,
+   "bytesAlt": 994648
+  },
+  {
+   "url": "templates/website/longform/visualisierungsmuster.html",
+   "width": 375,
+   "theme": "kontrast",
+   "gleich": true,
+   "bytesNeu": 1006127,
+   "bytesAlt": 1006127
+  },
+  {
+   "url": "templates/website/longform/visualisierungsmuster.html",
+   "width": 1280,
+   "theme": "light",
+   "gleich": true,
+   "bytesNeu": 1212057,
+   "bytesAlt": 1212057
+  },
+  {
+   "url": "templates/website/longform/visualisierungsmuster.html",
+   "width": 1280,
+   "theme": "kontrast",
+   "gleich": true,
+   "bytesNeu": 1226249,
+   "bytesAlt": 1226249
+  },
+  {
+   "url": "templates/website/applications/angebotsnavigator.html",
+   "width": 375,
+   "theme": "light",
+   "gleich": true,
+   "bytesNeu": 223847,
+   "bytesAlt": 223847
+  },
+  {
+   "url": "templates/website/applications/angebotsnavigator.html",
+   "width": 375,
+   "theme": "kontrast",
+   "gleich": true,
+   "bytesNeu": 225426,
+   "bytesAlt": 225426
+  },
+  {
+   "url": "templates/website/applications/angebotsnavigator.html",
+   "width": 1280,
+   "theme": "light",
+   "gleich": true,
+   "bytesNeu": 250261,
+   "bytesAlt": 250261
+  },
+  {
+   "url": "templates/website/applications/angebotsnavigator.html",
+   "width": 1280,
+   "theme": "kontrast",
+   "gleich": true,
+   "bytesNeu": 252180,
+   "bytesAlt": 252180
+  },
+  {
+   "url": "templates/website/applications/gespraechshilfe.html",
+   "width": 375,
+   "theme": "light",
+   "gleich": true,
+   "bytesNeu": 181593,
+   "bytesAlt": 181593
+  },
+  {
+   "url": "templates/website/applications/gespraechshilfe.html",
+   "width": 375,
+   "theme": "kontrast",
+   "gleich": true,
+   "bytesNeu": 182247,
+   "bytesAlt": 182247
+  },
+  {
+   "url": "templates/website/applications/gespraechshilfe.html",
+   "width": 1280,
+   "theme": "light",
+   "gleich": true,
+   "bytesNeu": 201980,
+   "bytesAlt": 201980
+  },
+  {
+   "url": "templates/website/applications/gespraechshilfe.html",
+   "width": 1280,
+   "theme": "kontrast",
+   "gleich": true,
+   "bytesNeu": 203064,
+   "bytesAlt": 203064
+  },
+  {
+   "url": "templates/website/applications/kontaktwegweiser.html",
+   "width": 375,
+   "theme": "light",
+   "gleich": true,
+   "bytesNeu": 228065,
+   "bytesAlt": 228065
+  },
+  {
+   "url": "templates/website/applications/kontaktwegweiser.html",
+   "width": 375,
+   "theme": "kontrast",
+   "gleich": true,
+   "bytesNeu": 230083,
+   "bytesAlt": 230083
+  },
+  {
+   "url": "templates/website/applications/kontaktwegweiser.html",
+   "width": 1280,
+   "theme": "light",
+   "gleich": true,
+   "bytesNeu": 252192,
+   "bytesAlt": 252192
+  },
+  {
+   "url": "templates/website/applications/kontaktwegweiser.html",
+   "width": 1280,
+   "theme": "kontrast",
+   "gleich": true,
+   "bytesNeu": 254516,
+   "bytesAlt": 254516
+  },
+  {
+   "url": "templates/website/applications/situationsnavigator.html",
+   "width": 375,
+   "theme": "light",
+   "gleich": true,
+   "bytesNeu": 219417,
+   "bytesAlt": 219417
+  },
+  {
+   "url": "templates/website/applications/situationsnavigator.html",
+   "width": 375,
+   "theme": "kontrast",
+   "gleich": true,
+   "bytesNeu": 220385,
+   "bytesAlt": 220385
+  },
+  {
+   "url": "templates/website/applications/situationsnavigator.html",
+   "width": 1280,
+   "theme": "light",
+   "gleich": true,
+   "bytesNeu": 232737,
+   "bytesAlt": 232737
+  },
+  {
+   "url": "templates/website/applications/situationsnavigator.html",
+   "width": 1280,
+   "theme": "kontrast",
+   "gleich": true,
+   "bytesNeu": 235581,
+   "bytesAlt": 235581
+  },
+  {
+   "url": "templates/website/interaktion/beispiel.html",
+   "width": 375,
+   "theme": "light",
+   "gleich": true,
+   "bytesNeu": 249799,
+   "bytesAlt": 249799
+  },
+  {
+   "url": "templates/website/interaktion/beispiel.html",
+   "width": 375,
+   "theme": "kontrast",
+   "gleich": true,
+   "bytesNeu": 250549,
+   "bytesAlt": 250549
+  },
+  {
+   "url": "templates/website/interaktion/beispiel.html",
+   "width": 1280,
+   "theme": "light",
+   "gleich": true,
+   "bytesNeu": 288785,
+   "bytesAlt": 288785
+  },
+  {
+   "url": "templates/website/interaktion/beispiel.html",
+   "width": 1280,
+   "theme": "kontrast",
+   "gleich": true,
+   "bytesNeu": 289692,
+   "bytesAlt": 289692
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/404.html",
+   "width": 375,
+   "theme": "light",
+   "gleich": true,
+   "bytesNeu": 66492,
+   "bytesAlt": 66492
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/404.html",
+   "width": 375,
+   "theme": "kontrast",
+   "gleich": true,
+   "bytesNeu": 66994,
+   "bytesAlt": 66994
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/404.html",
+   "width": 1280,
+   "theme": "light",
+   "gleich": true,
+   "bytesNeu": 82510,
+   "bytesAlt": 82510
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/404.html",
+   "width": 1280,
+   "theme": "kontrast",
+   "gleich": true,
+   "bytesNeu": 83230,
+   "bytesAlt": 83230
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/behandlung-verstehen.html",
+   "width": 375,
+   "theme": "light",
+   "gleich": true,
+   "bytesNeu": 315432,
+   "bytesAlt": 315432
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/behandlung-verstehen.html",
+   "width": 375,
+   "theme": "kontrast",
+   "gleich": true,
+   "bytesNeu": 320374,
+   "bytesAlt": 320374
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/behandlung-verstehen.html",
+   "width": 1280,
+   "theme": "light",
+   "gleich": true,
+   "bytesNeu": 340744,
+   "bytesAlt": 340744
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/behandlung-verstehen.html",
+   "width": 1280,
+   "theme": "kontrast",
+   "gleich": true,
+   "bytesNeu": 344524,
+   "bytesAlt": 344524
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/beziehungen-verstehen.html",
+   "width": 375,
+   "theme": "light",
+   "gleich": true,
+   "bytesNeu": 323386,
+   "bytesAlt": 323386
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/beziehungen-verstehen.html",
+   "width": 375,
+   "theme": "kontrast",
+   "gleich": true,
+   "bytesNeu": 327629,
+   "bytesAlt": 327629
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/beziehungen-verstehen.html",
+   "width": 1280,
+   "theme": "light",
+   "gleich": true,
+   "bytesNeu": 389509,
+   "bytesAlt": 389509
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/beziehungen-verstehen.html",
+   "width": 1280,
+   "theme": "kontrast",
+   "gleich": true,
+   "bytesNeu": 396815,
+   "bytesAlt": 396815
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/gate.html",
+   "width": 375,
+   "theme": "light",
+   "gleich": true,
+   "bytesNeu": 798693,
+   "bytesAlt": 798693
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/gate.html",
+   "width": 375,
+   "theme": "kontrast",
+   "gleich": true,
+   "bytesNeu": 803409,
+   "bytesAlt": 803409
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/gate.html",
+   "width": 1280,
+   "theme": "light",
+   "gleich": true,
+   "bytesNeu": 1122176,
+   "bytesAlt": 1122176
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/gate.html",
+   "width": 1280,
+   "theme": "kontrast",
+   "gleich": true,
+   "bytesNeu": 1122143,
+   "bytesAlt": 1122143
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/impressum-datenschutz.html",
+   "width": 375,
+   "theme": "light",
+   "gleich": true,
+   "bytesNeu": 224975,
+   "bytesAlt": 224975
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/impressum-datenschutz.html",
+   "width": 375,
+   "theme": "kontrast",
+   "gleich": true,
+   "bytesNeu": 226623,
+   "bytesAlt": 226623
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/impressum-datenschutz.html",
+   "width": 1280,
+   "theme": "light",
+   "gleich": true,
+   "bytesNeu": 263559,
+   "bytesAlt": 263559
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/impressum-datenschutz.html",
+   "width": 1280,
+   "theme": "kontrast",
+   "gleich": true,
+   "bytesNeu": 265724,
+   "bytesAlt": 265724
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/index.html",
+   "width": 375,
+   "theme": "light",
+   "gleich": true,
+   "bytesNeu": 170260,
+   "bytesAlt": 170260
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/index.html",
+   "width": 375,
+   "theme": "kontrast",
+   "gleich": true,
+   "bytesNeu": 173499,
+   "bytesAlt": 173499
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/index.html",
+   "width": 1280,
+   "theme": "light",
+   "gleich": true,
+   "bytesNeu": 205564,
+   "bytesAlt": 205564
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/index.html",
+   "width": 1280,
+   "theme": "kontrast",
+   "gleich": true,
+   "bytesNeu": 210130,
+   "bytesAlt": 210130
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/seitenvorlage.html",
+   "width": 375,
+   "theme": "light",
+   "gleich": true,
+   "bytesNeu": 145782,
+   "bytesAlt": 145782
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/seitenvorlage.html",
+   "width": 375,
+   "theme": "kontrast",
+   "gleich": true,
+   "bytesNeu": 146688,
+   "bytesAlt": 146688
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/seitenvorlage.html",
+   "width": 1280,
+   "theme": "light",
+   "gleich": true,
+   "bytesNeu": 170134,
+   "bytesAlt": 170134
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/seitenvorlage.html",
+   "width": 1280,
+   "theme": "kontrast",
+   "gleich": true,
+   "bytesNeu": 171264,
+   "bytesAlt": 171264
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/unterstuetzung-finden.html",
+   "width": 375,
+   "theme": "light",
+   "gleich": true,
+   "bytesNeu": 325171,
+   "bytesAlt": 325171
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/unterstuetzung-finden.html",
+   "width": 375,
+   "theme": "kontrast",
+   "gleich": true,
+   "bytesNeu": 328979,
+   "bytesAlt": 328979
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/unterstuetzung-finden.html",
+   "width": 1280,
+   "theme": "light",
+   "gleich": true,
+   "bytesNeu": 401638,
+   "bytesAlt": 401638
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/unterstuetzung-finden.html",
+   "width": 1280,
+   "theme": "kontrast",
+   "gleich": true,
+   "bytesNeu": 407631,
+   "bytesAlt": 407631
+  },
+  {
+   "url": "templates/website/minimal-starter/404.html",
+   "width": 375,
+   "theme": "light",
+   "gleich": true,
+   "bytesNeu": 59020,
+   "bytesAlt": 59020
+  },
+  {
+   "url": "templates/website/minimal-starter/404.html",
+   "width": 375,
+   "theme": "kontrast",
+   "gleich": true,
+   "bytesNeu": 59567,
+   "bytesAlt": 59567
+  },
+  {
+   "url": "templates/website/minimal-starter/404.html",
+   "width": 1280,
+   "theme": "light",
+   "gleich": true,
+   "bytesNeu": 73184,
+   "bytesAlt": 73184
+  },
+  {
+   "url": "templates/website/minimal-starter/404.html",
+   "width": 1280,
+   "theme": "kontrast",
+   "gleich": true,
+   "bytesNeu": 73855,
+   "bytesAlt": 73855
+  },
+  {
+   "url": "templates/website/minimal-starter/impressum-datenschutz.html",
+   "width": 375,
+   "theme": "light",
+   "gleich": true,
+   "bytesNeu": 93474,
+   "bytesAlt": 93474
+  },
+  {
+   "url": "templates/website/minimal-starter/impressum-datenschutz.html",
+   "width": 375,
+   "theme": "kontrast",
+   "gleich": true,
+   "bytesNeu": 94015,
+   "bytesAlt": 94015
+  },
+  {
+   "url": "templates/website/minimal-starter/impressum-datenschutz.html",
+   "width": 1280,
+   "theme": "light",
+   "gleich": true,
+   "bytesNeu": 111511,
+   "bytesAlt": 111511
+  },
+  {
+   "url": "templates/website/minimal-starter/impressum-datenschutz.html",
+   "width": 1280,
+   "theme": "kontrast",
+   "gleich": true,
+   "bytesNeu": 112193,
+   "bytesAlt": 112193
+  },
+  {
+   "url": "templates/website/minimal-starter/index.html",
+   "width": 375,
+   "theme": "light",
+   "gleich": true,
+   "bytesNeu": 70505,
+   "bytesAlt": 70505
+  },
+  {
+   "url": "templates/website/minimal-starter/index.html",
+   "width": 375,
+   "theme": "kontrast",
+   "gleich": true,
+   "bytesNeu": 71378,
+   "bytesAlt": 71378
+  },
+  {
+   "url": "templates/website/minimal-starter/index.html",
+   "width": 1280,
+   "theme": "light",
+   "gleich": true,
+   "bytesNeu": 87922,
+   "bytesAlt": 87922
+  },
+  {
+   "url": "templates/website/minimal-starter/index.html",
+   "width": 1280,
+   "theme": "kontrast",
+   "gleich": true,
+   "bytesNeu": 88880,
+   "bytesAlt": 88880
+  },
+  {
+   "url": "templates/website/minimal-starter/thema.html",
+   "width": 375,
+   "theme": "light",
+   "gleich": true,
+   "bytesNeu": 69328,
+   "bytesAlt": 69328
+  },
+  {
+   "url": "templates/website/minimal-starter/thema.html",
+   "width": 375,
+   "theme": "kontrast",
+   "gleich": true,
+   "bytesNeu": 70061,
+   "bytesAlt": 70061
+  },
+  {
+   "url": "templates/website/minimal-starter/thema.html",
+   "width": 1280,
+   "theme": "light",
+   "gleich": true,
+   "bytesNeu": 85912,
+   "bytesAlt": 85912
+  },
+  {
+   "url": "templates/website/minimal-starter/thema.html",
+   "width": 1280,
+   "theme": "kontrast",
+   "gleich": true,
+   "bytesNeu": 86743,
+   "bytesAlt": 86743
+  },
+  {
+   "url": "templates/website/profilbeispiel/404.html",
+   "width": 375,
+   "theme": "light",
+   "gleich": true,
+   "bytesNeu": 62576,
+   "bytesAlt": 62576
+  },
+  {
+   "url": "templates/website/profilbeispiel/404.html",
+   "width": 375,
+   "theme": "kontrast",
+   "gleich": true,
+   "bytesNeu": 63145,
+   "bytesAlt": 63145
+  },
+  {
+   "url": "templates/website/profilbeispiel/404.html",
+   "width": 1280,
+   "theme": "light",
+   "gleich": true,
+   "bytesNeu": 78436,
+   "bytesAlt": 78436
+  },
+  {
+   "url": "templates/website/profilbeispiel/404.html",
+   "width": 1280,
+   "theme": "kontrast",
+   "gleich": true,
+   "bytesNeu": 79061,
+   "bytesAlt": 79061
+  },
+  {
+   "url": "templates/website/profilbeispiel/impressum-datenschutz.html",
+   "width": 375,
+   "theme": "light",
+   "gleich": true,
+   "bytesNeu": 126690,
+   "bytesAlt": 126690
+  },
+  {
+   "url": "templates/website/profilbeispiel/impressum-datenschutz.html",
+   "width": 375,
+   "theme": "kontrast",
+   "gleich": true,
+   "bytesNeu": 127219,
+   "bytesAlt": 127219
+  },
+  {
+   "url": "templates/website/profilbeispiel/impressum-datenschutz.html",
+   "width": 1280,
+   "theme": "light",
+   "gleich": true,
+   "bytesNeu": 151658,
+   "bytesAlt": 151658
+  },
+  {
+   "url": "templates/website/profilbeispiel/impressum-datenschutz.html",
+   "width": 1280,
+   "theme": "kontrast",
+   "gleich": true,
+   "bytesNeu": 152306,
+   "bytesAlt": 152306
+  },
+  {
+   "url": "templates/website/profilbeispiel/index.html",
+   "width": 375,
+   "theme": "light",
+   "gleich": true,
+   "bytesNeu": 95356,
+   "bytesAlt": 95356
+  },
+  {
+   "url": "templates/website/profilbeispiel/index.html",
+   "width": 375,
+   "theme": "kontrast",
+   "gleich": true,
+   "bytesNeu": 96183,
+   "bytesAlt": 96183
+  },
+  {
+   "url": "templates/website/profilbeispiel/index.html",
+   "width": 1280,
+   "theme": "light",
+   "gleich": true,
+   "bytesNeu": 118283,
+   "bytesAlt": 118283
+  },
+  {
+   "url": "templates/website/profilbeispiel/index.html",
+   "width": 1280,
+   "theme": "kontrast",
+   "gleich": true,
+   "bytesNeu": 119191,
+   "bytesAlt": 119191
+  },
+  {
+   "url": "templates/website/profilbeispiel/pruefen.html",
+   "width": 375,
+   "theme": "light",
+   "gleich": true,
+   "bytesNeu": 101644,
+   "bytesAlt": 101644
+  },
+  {
+   "url": "templates/website/profilbeispiel/pruefen.html",
+   "width": 375,
+   "theme": "kontrast",
+   "gleich": true,
+   "bytesNeu": 102320,
+   "bytesAlt": 102320
+  },
+  {
+   "url": "templates/website/profilbeispiel/pruefen.html",
+   "width": 1280,
+   "theme": "light",
+   "gleich": true,
+   "bytesNeu": 122834,
+   "bytesAlt": 122834
+  },
+  {
+   "url": "templates/website/profilbeispiel/pruefen.html",
+   "width": 1280,
+   "theme": "kontrast",
+   "gleich": true,
+   "bytesNeu": 123651,
+   "bytesAlt": 123651
+  },
+  {
+   "url": "ui_kits/website/index.html",
+   "width": 375,
+   "theme": "light",
+   "gleich": true,
+   "bytesNeu": 203696,
+   "bytesAlt": 203696
+  },
+  {
+   "url": "ui_kits/website/index.html",
+   "width": 375,
+   "theme": "kontrast",
+   "gleich": true,
+   "bytesNeu": 209204,
+   "bytesAlt": 209204
+  },
+  {
+   "url": "ui_kits/website/index.html",
+   "width": 1280,
+   "theme": "light",
+   "gleich": true,
+   "bytesNeu": 213950,
+   "bytesAlt": 213950
+  },
+  {
+   "url": "ui_kits/website/index.html",
+   "width": 1280,
+   "theme": "kontrast",
+   "gleich": true,
+   "bytesNeu": 220006,
+   "bytesAlt": 220006
+  },
+  {
+   "url": "ui_kits/website/qa.html",
+   "width": 375,
+   "theme": "light",
+   "gleich": true,
+   "bytesNeu": 713280,
+   "bytesAlt": 713280
+  },
+  {
+   "url": "ui_kits/website/qa.html",
+   "width": 375,
+   "theme": "kontrast",
+   "gleich": true,
+   "bytesNeu": 713405,
+   "bytesAlt": 713405
+  },
+  {
+   "url": "ui_kits/website/qa.html",
+   "width": 1280,
+   "theme": "light",
+   "gleich": false,
+   "bytesNeu": 687141,
+   "bytesAlt": 713442
+  },
+  {
+   "url": "ui_kits/website/qa.html",
+   "width": 1280,
+   "theme": "kontrast",
+   "gleich": true,
+   "bytesNeu": 713426,
+   "bytesAlt": 713426
+  }
+ ]
+}

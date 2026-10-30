@@ -1,0 +1,63 @@
+### git rev-parse origin/main
+da2d8c934972cd1e2e821c2b2e09cfc29f74c49a
+### sha256sum -c
+puk-website-profil-2026.10.19.zip: OK
+ec3a97ad2e3f6a31bed8710567d02071efb1b18c5532a899073542d30b4aa8f6  puk-website-profil-2026.10.19.zip
+### npm run check:package
+> node tools/pruefe-dokumentation.mjs
+
+149 lokale Dokumentationslinks geprüft; 0 fehlende Ziele.
+384 Dateien bytegleich; SHA-256 geprüft: ec3a97ad2e3f6a31bed8710567d02071efb1b18c5532a899073542d30b4aa8f6
+### npm run check:generated
+> node tools/generieren.mjs --check
+
+45 abgeleitete Dateien aktuell.
+### diff -r entpacktes Paket gegen Repository (ohne archiv/, audit-results/, websites/, out-*, .venv, node_modules, .git, Zip, .sha256)
+384 Dateien unter puk-website-profil/, Zeitstempel 2026-10-30 00:00; diff -r rc=0, keine Ausgabe; git ls-files ausserhalb der Ausschlüsse: 384
+### npm run build, zweimal
+beide rc=0; git status --porcelain nach beiden Läufen leer (ausser neuem Belegordner); Protokolle gleich
+45 abgeleitete Dateien geprüft; 0 aktualisiert.
+/home/user/puk-website-profil/components/bundle.js geschrieben · 26 Komponenten
+/home/user/puk-website-profil/_ds_bundle.js geschrieben · 26 Komponenten
+7 Seiten geschrieben · PUK Website Kit 1.10.1-r4 · abgeleitet · Build r4-26 · Gate draft: 0 blockierend, 12 Hinweise.
+4 Seiten geschrieben · PUK Website Kit 1.10.1-r4 · abgeleitet · Build r4-26 · Gate draft: 0 blockierend, 3 Hinweise.
+4 Seiten geschrieben · PUK Website Kit 1.10.1-r4 · abgeleitet · Build r4-26 · Gate production: 0 blockierend, 1 Hinweise.
+### npm test
+Chromium 1243 (153.0.8010.12) dreimal: je # tests 118 # pass 118 # fail 0 # skipped 0
+Headless-Shell 1243 (153.0.8010.12): # tests 118 # pass 118 # fail 0 # skipped 0
+Headless-Shell 1234 (151.0.7922.34, wie CI, mit PLAYWRIGHT_BROWSERS_PATH ausserhalb des Repositorys installiert): # tests 118 # pass 118 # fail 0 # skipped 0
+### npm run test:ui
+Matrix: 112 Prüfläufe · 0 mit Befund · Tastatur: 41 Prüfungen · 0 mit Befund · Interaktionen: 19 Prüfungen · 0 mit Befund · Gate: 76 Prüfungen · 0 mit Befund · Gesamt: 0 Befunde · Fokusring nur statisch geprüft (Dokument ohne Fokus): Matrix 0 Läufe · nicht prüfbar: Tastatur 0, Interaktionen 0
+Abgleich mit tests/ergebnisse/ui-matrix-2026.10.19.json: status,total,matrix,keyboardAndInteractions,gate,errors,notTestable gleich (ohne Zeitangaben)
+### npm run generieren nachgestellt
+Arbeitsbaum 46de3de mit package.json aus da2d8c9 (tools/generieren.mjs unverändert): «45 abgeleitete Dateien geprüft; 17 aktualisiert.» 14 der 17 Dateien danach bytegleich mit da2d8c9; ABSCHLUSSENTSCHEIDE.md, PRUEFBERICHT.md und README.md enthalten zusätzlich die von Hand geschriebenen Änderungen.
+### Umfang git diff c43a94d da2d8c9 --stat
+ 77 files changed, 7554 insertions(+), 241 deletions(-)
+components/bundle.js und _ds_bundle.js unverändert (kein Eintrag im Diff).
+### Sicherheitsgrenzen
+Hinzugefügte Zeilen git diff c43a94d da2d8c9 ohne archiv/, audit-results/, tests/ergebnisse/, Zip, .sha256, Bundles, package-lock.json: 306 Zeilen.
+Suche nach https?://, <script, @import, url(, Ereignisattributen, javascript:, tel:, Krise, Notfall, 143/144/147, style=:
+86:+- `tools/paket.py`: reproduzierbares Paket [puk-website-profil-2026.10.19.zip](https://github.com/christaegger-dot/puk-website-profil/raw/refs/heads/main/pu
+161:+<script src="../../../components/interaktion.js?v=r4-26" defer></script>
+167:+<script src="../../../components/interaktion.js?v=r4-26" defer></script>
+190:+<script src="../../../components/interaktion.js?v=r4-26" defer></script>
+196:+for(const p of ['w','b','n']){const box=document.createElement('div');box.innerHTML='<div id="'+p+'-tint" data-puk-surface="tint" style="padding:8px"><a id
+251:+<script src="platform/vendor/react.production.min.js"></script><script src="platform/vendor/react-dom.production.min.js"></script><script src="components/b
+253:+<script src="erklaergrafik.js"></script></body></html>`;
+288:+Nachweise: [Matrixdaten](../../tests/ergebnisse/ui-matrix-2026.10.19.json), [aktueller Prüfbericht](../../PRUEFBERICHT.md). Frühere Protokolle sind [arch
+293:+<script src="js/chrome.js?v=r4-12"></script>
+294:+<script src="js/home.js?v=r4-12"></script>
+295:+<script src="js/situations.js?v=r4-12"></script>
+296:+<script src="js/contact.js?v=r4-12"></script>
+297:+<script src="js/conversation.js?v=r4-12"></script>
+298:+<script src="js/services.js?v=r4-12"></script>
+299:+<script src="js/longform-foundation.js?v=r4-12"></script>
+300:+<script src="js/longform-more.js?v=r4-12"></script>
+301:+<script src="js/visual.js?v=r4-12"></script>
+302:+<script src="js/patterns.js?v=r4-12"></script>
+303:+<script src="js/app.js?v=r4-12"></script>
+305:+<script src="../../templates/website/psychoeducation-site-starter/tools/contract.js?v=r4-26"></script>
+### Paket nach dem Eintrag
+npm run package; npm run check:package: «384 Dateien bytegleich; SHA-256 geprüft: 3727f9194ba3426671d9b7eb4adc00661dcafe7b3ba47ba847cb7d305de57f93»; sha256sum -c: OK
+Vergleich der Zip-Einträge (python3 -I, zipfile) geprüftes Paket ec3a97ad… gegen neues Paket: je 384 Einträge, gleiche Namen und Reihenfolge; Inhalt, Zeitstempel, Attribute und Kompression gleich ausser puk-website-profil/PRUEFBERICHT.md.
+Nach dem Eintrag: npm test mit Chromium 1243: # tests 118 # pass 118 # fail 0

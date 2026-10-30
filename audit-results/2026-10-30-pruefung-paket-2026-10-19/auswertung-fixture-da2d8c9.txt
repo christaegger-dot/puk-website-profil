@@ -1,0 +1,121 @@
+##### m-da2d8c9.json
+=== light-375 · Skriptfehler: 0
+  ruhe   Band: 535 sichtbare Elemente; gleich wie Weiss 481; direkt auf dem Band ohne eigene Fläche: 32; offene Erklärgrafik (flächenlos): 20; Karussell-Steuerung/Status ohne Fläche: 2
+         Textkontrast < 4,5:1: 10 ({'offen': 10}); Minimum ausserhalb offener Erklärgrafik 4.71:1
+           p.puk-vis-label [open] rgb(34, 34, 34) auf rgb(60, 100, 255) = 3.38:1
+           p.puk-vis-kern [open] rgb(34, 34, 34) auf rgb(60, 100, 255) = 3.38:1
+           p.puk-vis-short [open] rgb(34, 34, 34) auf rgb(60, 100, 255) = 3.38:1
+           p.puk-vis-scene__say [open] rgb(34, 34, 34) auf rgb(60, 100, 255) = 3.38:1
+           p.puk-vis-scene__say puk-vis-sce [open] rgb(34, 34, 34) auf rgb(60, 100, 255) = 3.38:1
+           summary. [open] rgb(43, 79, 224) auf rgb(60, 100, 255) = 1.35:1
+           p. [open] rgb(34, 34, 34) auf rgb(60, 100, 255) = 3.38:1
+           p.puk-sr [open] rgb(34, 34, 34) auf rgb(60, 100, 255) = 3.38:1
+           p. [open] rgb(34, 34, 34) auf rgb(60, 100, 255) = 3.38:1
+           strong. [open] rgb(34, 34, 34) auf rgb(60, 100, 255) = 3.38:1
+  ruhe   Nachtblau: 535 sichtbare Elemente; gleich wie Weiss 470; direkt auf dem Band ohne eigene Fläche: 32; offene Erklärgrafik (flächenlos): 31; Karussell-Steuerung/Status ohne Fläche: 2
+         Textkontrast < 4,5:1: 1 ({'offen': 1}); Minimum ausserhalb offener Erklärgrafik 4.71:1
+           summary. [open] rgb(43, 79, 224) auf rgb(24, 40, 102) = 2.15:1
+  druck  Band: 524 sichtbare Elemente; gleich wie Weiss 524; 
+  druck  Nachtblau: 524 sichtbare Elemente; gleich wie Weiss 524; 
+  forced Band: 535 sichtbare Elemente; gleich wie Weiss 535; 
+  forced Nachtblau: 535 sichtbare Elemente; gleich wie Weiss 535; 
+  Zustände (Ruhe, Hover, Fokus, gedrückt ohne Hover) Band: Erklärmuster-Knopf gleich 12; Karussell-Knopf gleich 8; Link anders 4; Link gleich 4
+      Link «Link» ruhe: rgb(60, 100, 255) | rgba(0, 0, 0, 0) | rgb(60, 100, 255) | none | none -> rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | none | un
+      Link «Link» hover: rgb(34, 34, 34) | rgba(0, 0, 0, 0) | rgb(34, 34, 34) | none | none -> rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | none | un
+      Link «Link» fokus: rgb(60, 100, 255) | rgba(0, 0, 0, 0) | rgb(60, 100, 255) | rgb(255, 25 -> rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | rgb(255, 
+      Link «Link» gedrueckt: rgb(60, 100, 255) | rgba(0, 0, 0, 0) | rgb(60, 100, 255) | rgb(255, 25 -> rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | rgb(255, 
+  Zustände (Ruhe, Hover, Fokus, gedrückt ohne Hover) Nachtblau: Erklärmuster-Knopf gleich 12; Karussell-Knopf gleich 8; Link anders 4; Link gleich 4
+      Link «Link» ruhe: rgb(60, 100, 255) | rgba(0, 0, 0, 0) | rgb(60, 100, 255) | none | none -> rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | none | un
+      Link «Link» hover: rgb(34, 34, 34) | rgba(0, 0, 0, 0) | rgb(34, 34, 34) | none | none -> rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | none | un
+      Link «Link» fokus: rgb(60, 100, 255) | rgba(0, 0, 0, 0) | rgb(60, 100, 255) | rgb(255, 25 -> rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | rgb(24, 4
+      Link «Link» gedrueckt: rgb(60, 100, 255) | rgba(0, 0, 0, 0) | rgb(60, 100, 255) | rgb(255, 25 -> rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | rgb(24, 4
+=== kontrast-375 · Skriptfehler: 0
+  ruhe   Band: 535 sichtbare Elemente; gleich wie Weiss 481; direkt auf dem Band ohne eigene Fläche: 32; offene Erklärgrafik (flächenlos): 20; Karussell-Steuerung/Status ohne Fläche: 2
+         Textkontrast < 4,5:1: 10 ({'offen': 10}); Minimum ausserhalb offener Erklärgrafik 7.65:1
+           p.puk-vis-label [open] rgb(34, 34, 34) auf rgb(0, 40, 194) = 1.58:1
+           p.puk-vis-kern [open] rgb(34, 34, 34) auf rgb(0, 40, 194) = 1.58:1
+           p.puk-vis-short [open] rgb(34, 34, 34) auf rgb(0, 40, 194) = 1.58:1
+           p.puk-vis-scene__say [open] rgb(34, 34, 34) auf rgb(0, 40, 194) = 1.58:1
+           p.puk-vis-scene__say puk-vis-sce [open] rgb(34, 34, 34) auf rgb(0, 40, 194) = 1.58:1
+           summary. [open] rgb(0, 31, 153) auf rgb(0, 40, 194) = 1.26:1
+           p. [open] rgb(34, 34, 34) auf rgb(0, 40, 194) = 1.58:1
+           p.puk-sr [open] rgb(34, 34, 34) auf rgb(0, 40, 194) = 1.58:1
+           p. [open] rgb(34, 34, 34) auf rgb(0, 40, 194) = 1.58:1
+           strong. [open] rgb(34, 34, 34) auf rgb(0, 40, 194) = 1.58:1
+  ruhe   Nachtblau: 535 sichtbare Elemente; gleich wie Weiss 470; direkt auf dem Band ohne eigene Fläche: 32; offene Erklärgrafik (flächenlos): 31; Karussell-Steuerung/Status ohne Fläche: 2
+         Textkontrast < 4,5:1: 1 ({'offen': 1}); Minimum ausserhalb offener Erklärgrafik 7.65:1
+           summary. [open] rgb(0, 31, 153) auf rgb(24, 40, 102) = 1.08:1
+  druck  Band: 524 sichtbare Elemente; gleich wie Weiss 524; 
+  druck  Nachtblau: 524 sichtbare Elemente; gleich wie Weiss 524; 
+  forced Band: 535 sichtbare Elemente; gleich wie Weiss 535; 
+  forced Nachtblau: 535 sichtbare Elemente; gleich wie Weiss 535; 
+  Zustände (Ruhe, Hover, Fokus, gedrückt ohne Hover) Band: Erklärmuster-Knopf gleich 12; Karussell-Knopf gleich 8; Link anders 4; Link gleich 4
+      Link «Link» ruhe: rgb(0, 40, 194) | rgba(0, 0, 0, 0) | rgb(0, 40, 194) | none | none -> rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | none | un
+      Link «Link» hover: rgb(34, 34, 34) | rgba(0, 0, 0, 0) | rgb(34, 34, 34) | none | none -> rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | none | un
+      Link «Link» fokus: rgb(0, 40, 194) | rgba(0, 0, 0, 0) | rgb(0, 40, 194) | rgb(255, 255, 2 -> rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | rgb(255, 
+      Link «Link» gedrueckt: rgb(0, 40, 194) | rgba(0, 0, 0, 0) | rgb(0, 40, 194) | rgb(255, 255, 2 -> rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | rgb(255, 
+  Zustände (Ruhe, Hover, Fokus, gedrückt ohne Hover) Nachtblau: Erklärmuster-Knopf gleich 12; Karussell-Knopf gleich 8; Link anders 4; Link gleich 4
+      Link «Link» ruhe: rgb(0, 40, 194) | rgba(0, 0, 0, 0) | rgb(0, 40, 194) | none | none -> rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | none | un
+      Link «Link» hover: rgb(34, 34, 34) | rgba(0, 0, 0, 0) | rgb(34, 34, 34) | none | none -> rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | none | un
+      Link «Link» fokus: rgb(0, 40, 194) | rgba(0, 0, 0, 0) | rgb(0, 40, 194) | rgb(255, 255, 2 -> rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | rgb(24, 4
+      Link «Link» gedrueckt: rgb(0, 40, 194) | rgba(0, 0, 0, 0) | rgb(0, 40, 194) | rgb(255, 255, 2 -> rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | rgb(24, 4
+=== light-1280 · Skriptfehler: 0
+  ruhe   Band: 564 sichtbare Elemente; gleich wie Weiss 510; direkt auf dem Band ohne eigene Fläche: 32; offene Erklärgrafik (flächenlos): 20; Karussell-Steuerung/Status ohne Fläche: 2
+         Textkontrast < 4,5:1: 10 ({'offen': 10}); Minimum ausserhalb offener Erklärgrafik 4.71:1
+           p.puk-vis-label [open] rgb(34, 34, 34) auf rgb(60, 100, 255) = 3.38:1
+           p.puk-vis-kern [open] rgb(34, 34, 34) auf rgb(60, 100, 255) = 3.38:1
+           p.puk-vis-short [open] rgb(34, 34, 34) auf rgb(60, 100, 255) = 3.38:1
+           p.puk-vis-scene__say [open] rgb(34, 34, 34) auf rgb(60, 100, 255) = 3.38:1
+           p.puk-vis-scene__say puk-vis-sce [open] rgb(34, 34, 34) auf rgb(60, 100, 255) = 3.38:1
+           summary. [open] rgb(43, 79, 224) auf rgb(60, 100, 255) = 1.35:1
+           p. [open] rgb(34, 34, 34) auf rgb(60, 100, 255) = 3.38:1
+           p.puk-sr [open] rgb(34, 34, 34) auf rgb(60, 100, 255) = 3.38:1
+           p. [open] rgb(34, 34, 34) auf rgb(60, 100, 255) = 3.38:1
+           strong. [open] rgb(34, 34, 34) auf rgb(60, 100, 255) = 3.38:1
+  ruhe   Nachtblau: 564 sichtbare Elemente; gleich wie Weiss 499; direkt auf dem Band ohne eigene Fläche: 32; offene Erklärgrafik (flächenlos): 31; Karussell-Steuerung/Status ohne Fläche: 2
+         Textkontrast < 4,5:1: 1 ({'offen': 1}); Minimum ausserhalb offener Erklärgrafik 4.71:1
+           summary. [open] rgb(43, 79, 224) auf rgb(24, 40, 102) = 2.15:1
+  druck  Band: 553 sichtbare Elemente; gleich wie Weiss 553; 
+  druck  Nachtblau: 553 sichtbare Elemente; gleich wie Weiss 553; 
+  forced Band: 564 sichtbare Elemente; gleich wie Weiss 564; 
+  forced Nachtblau: 564 sichtbare Elemente; gleich wie Weiss 564; 
+  Zustände (Ruhe, Hover, Fokus, gedrückt ohne Hover) Band: Erklärmuster-Knopf gleich 12; Karussell-Knopf gleich 8; Link anders 4; Link gleich 4
+      Link «Link» ruhe: rgb(60, 100, 255) | rgba(0, 0, 0, 0) | rgb(60, 100, 255) | none | none -> rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | none | un
+      Link «Link» hover: rgb(34, 34, 34) | rgba(0, 0, 0, 0) | rgb(34, 34, 34) | none | none -> rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | none | un
+      Link «Link» fokus: rgb(60, 100, 255) | rgba(0, 0, 0, 0) | rgb(60, 100, 255) | rgb(255, 25 -> rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | rgb(255, 
+      Link «Link» gedrueckt: rgb(60, 100, 255) | rgba(0, 0, 0, 0) | rgb(60, 100, 255) | rgb(255, 25 -> rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | rgb(255, 
+  Zustände (Ruhe, Hover, Fokus, gedrückt ohne Hover) Nachtblau: Erklärmuster-Knopf gleich 12; Karussell-Knopf gleich 8; Link anders 4; Link gleich 4
+      Link «Link» ruhe: rgb(60, 100, 255) | rgba(0, 0, 0, 0) | rgb(60, 100, 255) | none | none -> rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | none | un
+      Link «Link» hover: rgb(34, 34, 34) | rgba(0, 0, 0, 0) | rgb(34, 34, 34) | none | none -> rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | none | un
+      Link «Link» fokus: rgb(60, 100, 255) | rgba(0, 0, 0, 0) | rgb(60, 100, 255) | rgb(255, 25 -> rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | rgb(24, 4
+      Link «Link» gedrueckt: rgb(60, 100, 255) | rgba(0, 0, 0, 0) | rgb(60, 100, 255) | rgb(255, 25 -> rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | rgb(24, 4
+=== kontrast-1280 · Skriptfehler: 0
+  ruhe   Band: 564 sichtbare Elemente; gleich wie Weiss 510; direkt auf dem Band ohne eigene Fläche: 32; offene Erklärgrafik (flächenlos): 20; Karussell-Steuerung/Status ohne Fläche: 2
+         Textkontrast < 4,5:1: 10 ({'offen': 10}); Minimum ausserhalb offener Erklärgrafik 7.65:1
+           p.puk-vis-label [open] rgb(34, 34, 34) auf rgb(0, 40, 194) = 1.58:1
+           p.puk-vis-kern [open] rgb(34, 34, 34) auf rgb(0, 40, 194) = 1.58:1
+           p.puk-vis-short [open] rgb(34, 34, 34) auf rgb(0, 40, 194) = 1.58:1
+           p.puk-vis-scene__say [open] rgb(34, 34, 34) auf rgb(0, 40, 194) = 1.58:1
+           p.puk-vis-scene__say puk-vis-sce [open] rgb(34, 34, 34) auf rgb(0, 40, 194) = 1.58:1
+           summary. [open] rgb(0, 31, 153) auf rgb(0, 40, 194) = 1.26:1
+           p. [open] rgb(34, 34, 34) auf rgb(0, 40, 194) = 1.58:1
+           p.puk-sr [open] rgb(34, 34, 34) auf rgb(0, 40, 194) = 1.58:1
+           p. [open] rgb(34, 34, 34) auf rgb(0, 40, 194) = 1.58:1
+           strong. [open] rgb(34, 34, 34) auf rgb(0, 40, 194) = 1.58:1
+  ruhe   Nachtblau: 564 sichtbare Elemente; gleich wie Weiss 499; direkt auf dem Band ohne eigene Fläche: 32; offene Erklärgrafik (flächenlos): 31; Karussell-Steuerung/Status ohne Fläche: 2
+         Textkontrast < 4,5:1: 1 ({'offen': 1}); Minimum ausserhalb offener Erklärgrafik 7.65:1
+           summary. [open] rgb(0, 31, 153) auf rgb(24, 40, 102) = 1.08:1
+  druck  Band: 553 sichtbare Elemente; gleich wie Weiss 553; 
+  druck  Nachtblau: 553 sichtbare Elemente; gleich wie Weiss 553; 
+  forced Band: 564 sichtbare Elemente; gleich wie Weiss 564; 
+  forced Nachtblau: 564 sichtbare Elemente; gleich wie Weiss 564; 
+  Zustände (Ruhe, Hover, Fokus, gedrückt ohne Hover) Band: Erklärmuster-Knopf gleich 12; Karussell-Knopf gleich 8; Link anders 4; Link gleich 4
+      Link «Link» ruhe: rgb(0, 40, 194) | rgba(0, 0, 0, 0) | rgb(0, 40, 194) | none | none -> rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | none | un
+      Link «Link» hover: rgb(34, 34, 34) | rgba(0, 0, 0, 0) | rgb(34, 34, 34) | none | none -> rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | none | un
+      Link «Link» fokus: rgb(0, 40, 194) | rgba(0, 0, 0, 0) | rgb(0, 40, 194) | rgb(255, 255, 2 -> rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | rgb(255, 
+      Link «Link» gedrueckt: rgb(0, 40, 194) | rgba(0, 0, 0, 0) | rgb(0, 40, 194) | rgb(255, 255, 2 -> rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | rgb(255, 
+  Zustände (Ruhe, Hover, Fokus, gedrückt ohne Hover) Nachtblau: Erklärmuster-Knopf gleich 12; Karussell-Knopf gleich 8; Link anders 4; Link gleich 4
+      Link «Link» ruhe: rgb(0, 40, 194) | rgba(0, 0, 0, 0) | rgb(0, 40, 194) | none | none -> rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | none | un
+      Link «Link» hover: rgb(34, 34, 34) | rgba(0, 0, 0, 0) | rgb(34, 34, 34) | none | none -> rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | none | un
+      Link «Link» fokus: rgb(0, 40, 194) | rgba(0, 0, 0, 0) | rgb(0, 40, 194) | rgb(255, 255, 2 -> rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | rgb(24, 4
+      Link «Link» gedrueckt: rgb(0, 40, 194) | rgba(0, 0, 0, 0) | rgb(0, 40, 194) | rgb(255, 255, 2 -> rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | rgb(24, 4

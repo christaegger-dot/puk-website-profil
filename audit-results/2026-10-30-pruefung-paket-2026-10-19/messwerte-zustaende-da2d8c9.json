@@ -1,0 +1,886 @@
+{
+"light-375": {
+"zustaende": {
+"w": [
+{
+"k": 0,
+"cls": "puk-link--inline",
+"text": "Langbeschreibung zu ",
+"vis": true,
+"ruhe": "rgb(43, 79, 224) | rgba(0, 0, 0, 0) | rgb(43, 79, 224) | none | underline",
+"hover": "rgb(34, 34, 34) | rgba(0, 0, 0, 0) | rgb(34, 34, 34) | none | underline",
+"fokus": "rgb(43, 79, 224) | rgba(0, 0, 0, 0) | rgb(43, 79, 224) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | underline",
+"gedrueckt": "rgb(43, 79, 224) | rgba(0, 0, 0, 0) | rgb(43, 79, 224) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | underline"
+},
+{
+"k": 1,
+"cls": "puk-vis-btn",
+"text": "Schritt für Schritt ",
+"vis": true,
+"ruhe": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | none | none",
+"hover": "rgb(43, 79, 224) | rgb(244, 244, 244) | rgb(34, 34, 34) | none | none",
+"fokus": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none"
+},
+{
+"k": 2,
+"cls": "puk-vis-btn",
+"text": "Zurück",
+"vis": true,
+"ruhe": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | none | none",
+"hover": "rgb(43, 79, 224) | rgb(244, 244, 244) | rgb(34, 34, 34) | none | none",
+"fokus": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none"
+},
+{
+"k": 3,
+"cls": "puk-vis-btn",
+"text": "Weiter",
+"vis": true,
+"ruhe": "rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(34, 34, 34) | none | none",
+"hover": "rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(34, 34, 34) | none | none",
+"fokus": "rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none"
+},
+{
+"k": 4,
+"cls": "A",
+"text": "Link",
+"vis": true,
+"ruhe": "rgb(60, 100, 255) | rgba(0, 0, 0, 0) | rgb(60, 100, 255) | none | none",
+"hover": "rgb(34, 34, 34) | rgba(0, 0, 0, 0) | rgb(34, 34, 34) | none | none",
+"fokus": "rgb(60, 100, 255) | rgba(0, 0, 0, 0) | rgb(60, 100, 255) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(60, 100, 255) | rgba(0, 0, 0, 0) | rgb(60, 100, 255) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none"
+},
+{
+"k": 5,
+"cls": "puk-carousel__btn",
+"text": "",
+"vis": true,
+"ruhe": "rgb(144, 144, 144) | rgb(255, 255, 255) | rgb(210, 210, 210) | none | none",
+"hover": "rgb(144, 144, 144) | rgb(255, 255, 255) | rgb(210, 210, 210) | none | none",
+"fokus": "rgb(144, 144, 144) | rgb(255, 255, 255) | rgb(210, 210, 210) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(144, 144, 144) | rgb(255, 255, 255) | rgb(210, 210, 210) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none"
+},
+{
+"k": 6,
+"cls": "puk-carousel__btn",
+"text": "",
+"vis": true,
+"ruhe": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | none | none",
+"hover": "rgb(43, 79, 224) | rgb(244, 244, 244) | rgb(34, 34, 34) | none | none",
+"fokus": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none"
+}
+],
+"b": [
+{
+"k": 0,
+"cls": "puk-link--inline",
+"text": "Langbeschreibung zu ",
+"vis": true,
+"ruhe": "rgb(43, 79, 224) | rgba(0, 0, 0, 0) | rgb(43, 79, 224) | none | underline",
+"hover": "rgb(34, 34, 34) | rgba(0, 0, 0, 0) | rgb(34, 34, 34) | none | underline",
+"fokus": "rgb(43, 79, 224) | rgba(0, 0, 0, 0) | rgb(43, 79, 224) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | underline",
+"gedrueckt": "rgb(43, 79, 224) | rgba(0, 0, 0, 0) | rgb(43, 79, 224) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | underline"
+},
+{
+"k": 1,
+"cls": "puk-vis-btn",
+"text": "Schritt für Schritt ",
+"vis": true,
+"ruhe": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | none | none",
+"hover": "rgb(43, 79, 224) | rgb(244, 244, 244) | rgb(34, 34, 34) | none | none",
+"fokus": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none"
+},
+{
+"k": 2,
+"cls": "puk-vis-btn",
+"text": "Zurück",
+"vis": true,
+"ruhe": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | none | none",
+"hover": "rgb(43, 79, 224) | rgb(244, 244, 244) | rgb(34, 34, 34) | none | none",
+"fokus": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none"
+},
+{
+"k": 3,
+"cls": "puk-vis-btn",
+"text": "Weiter",
+"vis": true,
+"ruhe": "rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(34, 34, 34) | none | none",
+"hover": "rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(34, 34, 34) | none | none",
+"fokus": "rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none"
+},
+{
+"k": 4,
+"cls": "A",
+"text": "Link",
+"vis": true,
+"ruhe": "rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | none | underline",
+"hover": "rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | none | underline",
+"fokus": "rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | underline",
+"gedrueckt": "rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | underline"
+},
+{
+"k": 5,
+"cls": "puk-carousel__btn",
+"text": "",
+"vis": true,
+"ruhe": "rgb(144, 144, 144) | rgb(255, 255, 255) | rgb(210, 210, 210) | none | none",
+"hover": "rgb(144, 144, 144) | rgb(255, 255, 255) | rgb(210, 210, 210) | none | none",
+"fokus": "rgb(144, 144, 144) | rgb(255, 255, 255) | rgb(210, 210, 210) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(144, 144, 144) | rgb(255, 255, 255) | rgb(210, 210, 210) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none"
+},
+{
+"k": 6,
+"cls": "puk-carousel__btn",
+"text": "",
+"vis": true,
+"ruhe": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | none | none",
+"hover": "rgb(43, 79, 224) | rgb(244, 244, 244) | rgb(34, 34, 34) | none | none",
+"fokus": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none"
+}
+],
+"n": [
+{
+"k": 0,
+"cls": "puk-link--inline",
+"text": "Langbeschreibung zu ",
+"vis": true,
+"ruhe": "rgb(43, 79, 224) | rgba(0, 0, 0, 0) | rgb(43, 79, 224) | none | underline",
+"hover": "rgb(34, 34, 34) | rgba(0, 0, 0, 0) | rgb(34, 34, 34) | none | underline",
+"fokus": "rgb(43, 79, 224) | rgba(0, 0, 0, 0) | rgb(43, 79, 224) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | underline",
+"gedrueckt": "rgb(43, 79, 224) | rgba(0, 0, 0, 0) | rgb(43, 79, 224) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | underline"
+},
+{
+"k": 1,
+"cls": "puk-vis-btn",
+"text": "Schritt für Schritt ",
+"vis": true,
+"ruhe": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | none | none",
+"hover": "rgb(43, 79, 224) | rgb(244, 244, 244) | rgb(34, 34, 34) | none | none",
+"fokus": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none"
+},
+{
+"k": 2,
+"cls": "puk-vis-btn",
+"text": "Zurück",
+"vis": true,
+"ruhe": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | none | none",
+"hover": "rgb(43, 79, 224) | rgb(244, 244, 244) | rgb(34, 34, 34) | none | none",
+"fokus": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none"
+},
+{
+"k": 3,
+"cls": "puk-vis-btn",
+"text": "Weiter",
+"vis": true,
+"ruhe": "rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(34, 34, 34) | none | none",
+"hover": "rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(34, 34, 34) | none | none",
+"fokus": "rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none"
+},
+{
+"k": 4,
+"cls": "A",
+"text": "Link",
+"vis": true,
+"ruhe": "rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | none | underline",
+"hover": "rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | none | underline",
+"fokus": "rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px | underline",
+"gedrueckt": "rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px | underline"
+},
+{
+"k": 5,
+"cls": "puk-carousel__btn",
+"text": "",
+"vis": true,
+"ruhe": "rgb(144, 144, 144) | rgb(255, 255, 255) | rgb(210, 210, 210) | none | none",
+"hover": "rgb(144, 144, 144) | rgb(255, 255, 255) | rgb(210, 210, 210) | none | none",
+"fokus": "rgb(144, 144, 144) | rgb(255, 255, 255) | rgb(210, 210, 210) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(144, 144, 144) | rgb(255, 255, 255) | rgb(210, 210, 210) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none"
+},
+{
+"k": 6,
+"cls": "puk-carousel__btn",
+"text": "",
+"vis": true,
+"ruhe": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | none | none",
+"hover": "rgb(43, 79, 224) | rgb(244, 244, 244) | rgb(34, 34, 34) | none | none",
+"fokus": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none"
+}
+]
+},
+"skriptfehler": []
+},
+"kontrast-375": {
+"zustaende": {
+"w": [
+{
+"k": 0,
+"cls": "puk-link--inline",
+"text": "Langbeschreibung zu ",
+"vis": true,
+"ruhe": "rgb(0, 31, 153) | rgba(0, 0, 0, 0) | rgb(0, 31, 153) | none | underline",
+"hover": "rgb(34, 34, 34) | rgba(0, 0, 0, 0) | rgb(34, 34, 34) | none | underline",
+"fokus": "rgb(0, 31, 153) | rgba(0, 0, 0, 0) | rgb(0, 31, 153) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | underline",
+"gedrueckt": "rgb(0, 31, 153) | rgba(0, 0, 0, 0) | rgb(0, 31, 153) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | underline"
+},
+{
+"k": 1,
+"cls": "puk-vis-btn",
+"text": "Schritt für Schritt ",
+"vis": true,
+"ruhe": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | none | none",
+"hover": "rgb(0, 31, 153) | rgb(244, 244, 244) | rgb(34, 34, 34) | none | none",
+"fokus": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none"
+},
+{
+"k": 2,
+"cls": "puk-vis-btn",
+"text": "Zurück",
+"vis": true,
+"ruhe": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | none | none",
+"hover": "rgb(0, 31, 153) | rgb(244, 244, 244) | rgb(34, 34, 34) | none | none",
+"fokus": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none"
+},
+{
+"k": 3,
+"cls": "puk-vis-btn",
+"text": "Weiter",
+"vis": true,
+"ruhe": "rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(34, 34, 34) | none | none",
+"hover": "rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(34, 34, 34) | none | none",
+"fokus": "rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none"
+},
+{
+"k": 4,
+"cls": "A",
+"text": "Link",
+"vis": true,
+"ruhe": "rgb(0, 40, 194) | rgba(0, 0, 0, 0) | rgb(0, 40, 194) | none | none",
+"hover": "rgb(34, 34, 34) | rgba(0, 0, 0, 0) | rgb(34, 34, 34) | none | none",
+"fokus": "rgb(0, 40, 194) | rgba(0, 0, 0, 0) | rgb(0, 40, 194) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(0, 40, 194) | rgba(0, 0, 0, 0) | rgb(0, 40, 194) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none"
+},
+{
+"k": 5,
+"cls": "puk-carousel__btn",
+"text": "",
+"vis": true,
+"ruhe": "rgb(102, 102, 102) | rgb(255, 255, 255) | rgb(118, 118, 118) | none | none",
+"hover": "rgb(102, 102, 102) | rgb(255, 255, 255) | rgb(118, 118, 118) | none | none",
+"fokus": "rgb(102, 102, 102) | rgb(255, 255, 255) | rgb(118, 118, 118) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(102, 102, 102) | rgb(255, 255, 255) | rgb(118, 118, 118) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none"
+},
+{
+"k": 6,
+"cls": "puk-carousel__btn",
+"text": "",
+"vis": true,
+"ruhe": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | none | none",
+"hover": "rgb(0, 31, 153) | rgb(244, 244, 244) | rgb(34, 34, 34) | none | none",
+"fokus": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none"
+}
+],
+"b": [
+{
+"k": 0,
+"cls": "puk-link--inline",
+"text": "Langbeschreibung zu ",
+"vis": true,
+"ruhe": "rgb(0, 31, 153) | rgba(0, 0, 0, 0) | rgb(0, 31, 153) | none | underline",
+"hover": "rgb(34, 34, 34) | rgba(0, 0, 0, 0) | rgb(34, 34, 34) | none | underline",
+"fokus": "rgb(0, 31, 153) | rgba(0, 0, 0, 0) | rgb(0, 31, 153) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | underline",
+"gedrueckt": "rgb(0, 31, 153) | rgba(0, 0, 0, 0) | rgb(0, 31, 153) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | underline"
+},
+{
+"k": 1,
+"cls": "puk-vis-btn",
+"text": "Schritt für Schritt ",
+"vis": true,
+"ruhe": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | none | none",
+"hover": "rgb(0, 31, 153) | rgb(244, 244, 244) | rgb(34, 34, 34) | none | none",
+"fokus": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none"
+},
+{
+"k": 2,
+"cls": "puk-vis-btn",
+"text": "Zurück",
+"vis": true,
+"ruhe": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | none | none",
+"hover": "rgb(0, 31, 153) | rgb(244, 244, 244) | rgb(34, 34, 34) | none | none",
+"fokus": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none"
+},
+{
+"k": 3,
+"cls": "puk-vis-btn",
+"text": "Weiter",
+"vis": true,
+"ruhe": "rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(34, 34, 34) | none | none",
+"hover": "rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(34, 34, 34) | none | none",
+"fokus": "rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none"
+},
+{
+"k": 4,
+"cls": "A",
+"text": "Link",
+"vis": true,
+"ruhe": "rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | none | underline",
+"hover": "rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | none | underline",
+"fokus": "rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | underline",
+"gedrueckt": "rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | underline"
+},
+{
+"k": 5,
+"cls": "puk-carousel__btn",
+"text": "",
+"vis": true,
+"ruhe": "rgb(102, 102, 102) | rgb(255, 255, 255) | rgb(118, 118, 118) | none | none",
+"hover": "rgb(102, 102, 102) | rgb(255, 255, 255) | rgb(118, 118, 118) | none | none",
+"fokus": "rgb(102, 102, 102) | rgb(255, 255, 255) | rgb(118, 118, 118) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(102, 102, 102) | rgb(255, 255, 255) | rgb(118, 118, 118) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none"
+},
+{
+"k": 6,
+"cls": "puk-carousel__btn",
+"text": "",
+"vis": true,
+"ruhe": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | none | none",
+"hover": "rgb(0, 31, 153) | rgb(244, 244, 244) | rgb(34, 34, 34) | none | none",
+"fokus": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none"
+}
+],
+"n": [
+{
+"k": 0,
+"cls": "puk-link--inline",
+"text": "Langbeschreibung zu ",
+"vis": true,
+"ruhe": "rgb(0, 31, 153) | rgba(0, 0, 0, 0) | rgb(0, 31, 153) | none | underline",
+"hover": "rgb(34, 34, 34) | rgba(0, 0, 0, 0) | rgb(34, 34, 34) | none | underline",
+"fokus": "rgb(0, 31, 153) | rgba(0, 0, 0, 0) | rgb(0, 31, 153) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | underline",
+"gedrueckt": "rgb(0, 31, 153) | rgba(0, 0, 0, 0) | rgb(0, 31, 153) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | underline"
+},
+{
+"k": 1,
+"cls": "puk-vis-btn",
+"text": "Schritt für Schritt ",
+"vis": true,
+"ruhe": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | none | none",
+"hover": "rgb(0, 31, 153) | rgb(244, 244, 244) | rgb(34, 34, 34) | none | none",
+"fokus": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none"
+},
+{
+"k": 2,
+"cls": "puk-vis-btn",
+"text": "Zurück",
+"vis": true,
+"ruhe": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | none | none",
+"hover": "rgb(0, 31, 153) | rgb(244, 244, 244) | rgb(34, 34, 34) | none | none",
+"fokus": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none"
+},
+{
+"k": 3,
+"cls": "puk-vis-btn",
+"text": "Weiter",
+"vis": true,
+"ruhe": "rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(34, 34, 34) | none | none",
+"hover": "rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(34, 34, 34) | none | none",
+"fokus": "rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none"
+},
+{
+"k": 4,
+"cls": "A",
+"text": "Link",
+"vis": true,
+"ruhe": "rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | none | underline",
+"hover": "rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | none | underline",
+"fokus": "rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px | underline",
+"gedrueckt": "rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px | underline"
+},
+{
+"k": 5,
+"cls": "puk-carousel__btn",
+"text": "",
+"vis": true,
+"ruhe": "rgb(102, 102, 102) | rgb(255, 255, 255) | rgb(118, 118, 118) | none | none",
+"hover": "rgb(102, 102, 102) | rgb(255, 255, 255) | rgb(118, 118, 118) | none | none",
+"fokus": "rgb(102, 102, 102) | rgb(255, 255, 255) | rgb(118, 118, 118) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(102, 102, 102) | rgb(255, 255, 255) | rgb(118, 118, 118) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none"
+},
+{
+"k": 6,
+"cls": "puk-carousel__btn",
+"text": "",
+"vis": true,
+"ruhe": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | none | none",
+"hover": "rgb(0, 31, 153) | rgb(244, 244, 244) | rgb(34, 34, 34) | none | none",
+"fokus": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none"
+}
+]
+},
+"skriptfehler": []
+},
+"light-1280": {
+"zustaende": {
+"w": [
+{
+"k": 0,
+"cls": "puk-link--inline",
+"text": "Langbeschreibung zu ",
+"vis": true,
+"ruhe": "rgb(43, 79, 224) | rgba(0, 0, 0, 0) | rgb(43, 79, 224) | none | underline",
+"hover": "rgb(34, 34, 34) | rgba(0, 0, 0, 0) | rgb(34, 34, 34) | none | underline",
+"fokus": "rgb(43, 79, 224) | rgba(0, 0, 0, 0) | rgb(43, 79, 224) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | underline",
+"gedrueckt": "rgb(43, 79, 224) | rgba(0, 0, 0, 0) | rgb(43, 79, 224) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | underline"
+},
+{
+"k": 1,
+"cls": "puk-vis-btn",
+"text": "Schritt für Schritt ",
+"vis": true,
+"ruhe": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | none | none",
+"hover": "rgb(43, 79, 224) | rgb(244, 244, 244) | rgb(34, 34, 34) | none | none",
+"fokus": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none"
+},
+{
+"k": 2,
+"cls": "puk-vis-btn",
+"text": "Zurück",
+"vis": true,
+"ruhe": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | none | none",
+"hover": "rgb(43, 79, 224) | rgb(244, 244, 244) | rgb(34, 34, 34) | none | none",
+"fokus": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none"
+},
+{
+"k": 3,
+"cls": "puk-vis-btn",
+"text": "Weiter",
+"vis": true,
+"ruhe": "rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(34, 34, 34) | none | none",
+"hover": "rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(34, 34, 34) | none | none",
+"fokus": "rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none"
+},
+{
+"k": 4,
+"cls": "A",
+"text": "Link",
+"vis": true,
+"ruhe": "rgb(60, 100, 255) | rgba(0, 0, 0, 0) | rgb(60, 100, 255) | none | none",
+"hover": "rgb(34, 34, 34) | rgba(0, 0, 0, 0) | rgb(34, 34, 34) | none | none",
+"fokus": "rgb(60, 100, 255) | rgba(0, 0, 0, 0) | rgb(60, 100, 255) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(60, 100, 255) | rgba(0, 0, 0, 0) | rgb(60, 100, 255) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none"
+},
+{
+"k": 5,
+"cls": "puk-carousel__btn",
+"text": "",
+"vis": true,
+"ruhe": "rgb(144, 144, 144) | rgb(255, 255, 255) | rgb(210, 210, 210) | none | none",
+"hover": "rgb(144, 144, 144) | rgb(255, 255, 255) | rgb(210, 210, 210) | none | none",
+"fokus": "rgb(144, 144, 144) | rgb(255, 255, 255) | rgb(210, 210, 210) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(144, 144, 144) | rgb(255, 255, 255) | rgb(210, 210, 210) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none"
+},
+{
+"k": 6,
+"cls": "puk-carousel__btn",
+"text": "",
+"vis": true,
+"ruhe": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | none | none",
+"hover": "rgb(43, 79, 224) | rgb(244, 244, 244) | rgb(34, 34, 34) | none | none",
+"fokus": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none"
+}
+],
+"b": [
+{
+"k": 0,
+"cls": "puk-link--inline",
+"text": "Langbeschreibung zu ",
+"vis": true,
+"ruhe": "rgb(43, 79, 224) | rgba(0, 0, 0, 0) | rgb(43, 79, 224) | none | underline",
+"hover": "rgb(34, 34, 34) | rgba(0, 0, 0, 0) | rgb(34, 34, 34) | none | underline",
+"fokus": "rgb(43, 79, 224) | rgba(0, 0, 0, 0) | rgb(43, 79, 224) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | underline",
+"gedrueckt": "rgb(43, 79, 224) | rgba(0, 0, 0, 0) | rgb(43, 79, 224) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | underline"
+},
+{
+"k": 1,
+"cls": "puk-vis-btn",
+"text": "Schritt für Schritt ",
+"vis": true,
+"ruhe": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | none | none",
+"hover": "rgb(43, 79, 224) | rgb(244, 244, 244) | rgb(34, 34, 34) | none | none",
+"fokus": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none"
+},
+{
+"k": 2,
+"cls": "puk-vis-btn",
+"text": "Zurück",
+"vis": true,
+"ruhe": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | none | none",
+"hover": "rgb(43, 79, 224) | rgb(244, 244, 244) | rgb(34, 34, 34) | none | none",
+"fokus": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none"
+},
+{
+"k": 3,
+"cls": "puk-vis-btn",
+"text": "Weiter",
+"vis": true,
+"ruhe": "rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(34, 34, 34) | none | none",
+"hover": "rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(34, 34, 34) | none | none",
+"fokus": "rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none"
+},
+{
+"k": 4,
+"cls": "A",
+"text": "Link",
+"vis": true,
+"ruhe": "rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | none | underline",
+"hover": "rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | none | underline",
+"fokus": "rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | underline",
+"gedrueckt": "rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | underline"
+},
+{
+"k": 5,
+"cls": "puk-carousel__btn",
+"text": "",
+"vis": true,
+"ruhe": "rgb(144, 144, 144) | rgb(255, 255, 255) | rgb(210, 210, 210) | none | none",
+"hover": "rgb(144, 144, 144) | rgb(255, 255, 255) | rgb(210, 210, 210) | none | none",
+"fokus": "rgb(144, 144, 144) | rgb(255, 255, 255) | rgb(210, 210, 210) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(144, 144, 144) | rgb(255, 255, 255) | rgb(210, 210, 210) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none"
+},
+{
+"k": 6,
+"cls": "puk-carousel__btn",
+"text": "",
+"vis": true,
+"ruhe": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | none | none",
+"hover": "rgb(43, 79, 224) | rgb(244, 244, 244) | rgb(34, 34, 34) | none | none",
+"fokus": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none"
+}
+],
+"n": [
+{
+"k": 0,
+"cls": "puk-link--inline",
+"text": "Langbeschreibung zu ",
+"vis": true,
+"ruhe": "rgb(43, 79, 224) | rgba(0, 0, 0, 0) | rgb(43, 79, 224) | none | underline",
+"hover": "rgb(34, 34, 34) | rgba(0, 0, 0, 0) | rgb(34, 34, 34) | none | underline",
+"fokus": "rgb(43, 79, 224) | rgba(0, 0, 0, 0) | rgb(43, 79, 224) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | underline",
+"gedrueckt": "rgb(43, 79, 224) | rgba(0, 0, 0, 0) | rgb(43, 79, 224) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | underline"
+},
+{
+"k": 1,
+"cls": "puk-vis-btn",
+"text": "Schritt für Schritt ",
+"vis": true,
+"ruhe": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | none | none",
+"hover": "rgb(43, 79, 224) | rgb(244, 244, 244) | rgb(34, 34, 34) | none | none",
+"fokus": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none"
+},
+{
+"k": 2,
+"cls": "puk-vis-btn",
+"text": "Zurück",
+"vis": true,
+"ruhe": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | none | none",
+"hover": "rgb(43, 79, 224) | rgb(244, 244, 244) | rgb(34, 34, 34) | none | none",
+"fokus": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none"
+},
+{
+"k": 3,
+"cls": "puk-vis-btn",
+"text": "Weiter",
+"vis": true,
+"ruhe": "rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(34, 34, 34) | none | none",
+"hover": "rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(34, 34, 34) | none | none",
+"fokus": "rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none"
+},
+{
+"k": 4,
+"cls": "A",
+"text": "Link",
+"vis": true,
+"ruhe": "rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | none | underline",
+"hover": "rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | none | underline",
+"fokus": "rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px | underline",
+"gedrueckt": "rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px | underline"
+},
+{
+"k": 5,
+"cls": "puk-carousel__btn",
+"text": "",
+"vis": true,
+"ruhe": "rgb(144, 144, 144) | rgb(255, 255, 255) | rgb(210, 210, 210) | none | none",
+"hover": "rgb(144, 144, 144) | rgb(255, 255, 255) | rgb(210, 210, 210) | none | none",
+"fokus": "rgb(144, 144, 144) | rgb(255, 255, 255) | rgb(210, 210, 210) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(144, 144, 144) | rgb(255, 255, 255) | rgb(210, 210, 210) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none"
+},
+{
+"k": 6,
+"cls": "puk-carousel__btn",
+"text": "",
+"vis": true,
+"ruhe": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | none | none",
+"hover": "rgb(43, 79, 224) | rgb(244, 244, 244) | rgb(34, 34, 34) | none | none",
+"fokus": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none"
+}
+]
+},
+"skriptfehler": []
+},
+"kontrast-1280": {
+"zustaende": {
+"w": [
+{
+"k": 0,
+"cls": "puk-link--inline",
+"text": "Langbeschreibung zu ",
+"vis": true,
+"ruhe": "rgb(0, 31, 153) | rgba(0, 0, 0, 0) | rgb(0, 31, 153) | none | underline",
+"hover": "rgb(34, 34, 34) | rgba(0, 0, 0, 0) | rgb(34, 34, 34) | none | underline",
+"fokus": "rgb(0, 31, 153) | rgba(0, 0, 0, 0) | rgb(0, 31, 153) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | underline",
+"gedrueckt": "rgb(0, 31, 153) | rgba(0, 0, 0, 0) | rgb(0, 31, 153) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | underline"
+},
+{
+"k": 1,
+"cls": "puk-vis-btn",
+"text": "Schritt für Schritt ",
+"vis": true,
+"ruhe": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | none | none",
+"hover": "rgb(0, 31, 153) | rgb(244, 244, 244) | rgb(34, 34, 34) | none | none",
+"fokus": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none"
+},
+{
+"k": 2,
+"cls": "puk-vis-btn",
+"text": "Zurück",
+"vis": true,
+"ruhe": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | none | none",
+"hover": "rgb(0, 31, 153) | rgb(244, 244, 244) | rgb(34, 34, 34) | none | none",
+"fokus": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none"
+},
+{
+"k": 3,
+"cls": "puk-vis-btn",
+"text": "Weiter",
+"vis": true,
+"ruhe": "rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(34, 34, 34) | none | none",
+"hover": "rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(34, 34, 34) | none | none",
+"fokus": "rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none"
+},
+{
+"k": 4,
+"cls": "A",
+"text": "Link",
+"vis": true,
+"ruhe": "rgb(0, 40, 194) | rgba(0, 0, 0, 0) | rgb(0, 40, 194) | none | none",
+"hover": "rgb(34, 34, 34) | rgba(0, 0, 0, 0) | rgb(34, 34, 34) | none | none",
+"fokus": "rgb(0, 40, 194) | rgba(0, 0, 0, 0) | rgb(0, 40, 194) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(0, 40, 194) | rgba(0, 0, 0, 0) | rgb(0, 40, 194) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none"
+},
+{
+"k": 5,
+"cls": "puk-carousel__btn",
+"text": "",
+"vis": true,
+"ruhe": "rgb(102, 102, 102) | rgb(255, 255, 255) | rgb(118, 118, 118) | none | none",
+"hover": "rgb(102, 102, 102) | rgb(255, 255, 255) | rgb(118, 118, 118) | none | none",
+"fokus": "rgb(102, 102, 102) | rgb(255, 255, 255) | rgb(118, 118, 118) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(102, 102, 102) | rgb(255, 255, 255) | rgb(118, 118, 118) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none"
+},
+{
+"k": 6,
+"cls": "puk-carousel__btn",
+"text": "",
+"vis": true,
+"ruhe": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | none | none",
+"hover": "rgb(0, 31, 153) | rgb(244, 244, 244) | rgb(34, 34, 34) | none | none",
+"fokus": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none"
+}
+],
+"b": [
+{
+"k": 0,
+"cls": "puk-link--inline",
+"text": "Langbeschreibung zu ",
+"vis": true,
+"ruhe": "rgb(0, 31, 153) | rgba(0, 0, 0, 0) | rgb(0, 31, 153) | none | underline",
+"hover": "rgb(34, 34, 34) | rgba(0, 0, 0, 0) | rgb(34, 34, 34) | none | underline",
+"fokus": "rgb(0, 31, 153) | rgba(0, 0, 0, 0) | rgb(0, 31, 153) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | underline",
+"gedrueckt": "rgb(0, 31, 153) | rgba(0, 0, 0, 0) | rgb(0, 31, 153) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | underline"
+},
+{
+"k": 1,
+"cls": "puk-vis-btn",
+"text": "Schritt für Schritt ",
+"vis": true,
+"ruhe": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | none | none",
+"hover": "rgb(0, 31, 153) | rgb(244, 244, 244) | rgb(34, 34, 34) | none | none",
+"fokus": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none"
+},
+{
+"k": 2,
+"cls": "puk-vis-btn",
+"text": "Zurück",
+"vis": true,
+"ruhe": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | none | none",
+"hover": "rgb(0, 31, 153) | rgb(244, 244, 244) | rgb(34, 34, 34) | none | none",
+"fokus": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none"
+},
+{
+"k": 3,
+"cls": "puk-vis-btn",
+"text": "Weiter",
+"vis": true,
+"ruhe": "rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(34, 34, 34) | none | none",
+"hover": "rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(34, 34, 34) | none | none",
+"fokus": "rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none"
+},
+{
+"k": 4,
+"cls": "A",
+"text": "Link",
+"vis": true,
+"ruhe": "rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | none | underline",
+"hover": "rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | none | underline",
+"fokus": "rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | underline",
+"gedrueckt": "rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | underline"
+},
+{
+"k": 5,
+"cls": "puk-carousel__btn",
+"text": "",
+"vis": true,
+"ruhe": "rgb(102, 102, 102) | rgb(255, 255, 255) | rgb(118, 118, 118) | none | none",
+"hover": "rgb(102, 102, 102) | rgb(255, 255, 255) | rgb(118, 118, 118) | none | none",
+"fokus": "rgb(102, 102, 102) | rgb(255, 255, 255) | rgb(118, 118, 118) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(102, 102, 102) | rgb(255, 255, 255) | rgb(118, 118, 118) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none"
+},
+{
+"k": 6,
+"cls": "puk-carousel__btn",
+"text": "",
+"vis": true,
+"ruhe": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | none | none",
+"hover": "rgb(0, 31, 153) | rgb(244, 244, 244) | rgb(34, 34, 34) | none | none",
+"fokus": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none"
+}
+],
+"n": [
+{
+"k": 0,
+"cls": "puk-link--inline",
+"text": "Langbeschreibung zu ",
+"vis": true,
+"ruhe": "rgb(0, 31, 153) | rgba(0, 0, 0, 0) | rgb(0, 31, 153) | none | underline",
+"hover": "rgb(34, 34, 34) | rgba(0, 0, 0, 0) | rgb(34, 34, 34) | none | underline",
+"fokus": "rgb(0, 31, 153) | rgba(0, 0, 0, 0) | rgb(0, 31, 153) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | underline",
+"gedrueckt": "rgb(0, 31, 153) | rgba(0, 0, 0, 0) | rgb(0, 31, 153) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | underline"
+},
+{
+"k": 1,
+"cls": "puk-vis-btn",
+"text": "Schritt für Schritt ",
+"vis": true,
+"ruhe": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | none | none",
+"hover": "rgb(0, 31, 153) | rgb(244, 244, 244) | rgb(34, 34, 34) | none | none",
+"fokus": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none"
+},
+{
+"k": 2,
+"cls": "puk-vis-btn",
+"text": "Zurück",
+"vis": true,
+"ruhe": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | none | none",
+"hover": "rgb(0, 31, 153) | rgb(244, 244, 244) | rgb(34, 34, 34) | none | none",
+"fokus": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none"
+},
+{
+"k": 3,
+"cls": "puk-vis-btn",
+"text": "Weiter",
+"vis": true,
+"ruhe": "rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(34, 34, 34) | none | none",
+"hover": "rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(34, 34, 34) | none | none",
+"fokus": "rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none"
+},
+{
+"k": 4,
+"cls": "A",
+"text": "Link",
+"vis": true,
+"ruhe": "rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | none | underline",
+"hover": "rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | none | underline",
+"fokus": "rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px | underline",
+"gedrueckt": "rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px | underline"
+},
+{
+"k": 5,
+"cls": "puk-carousel__btn",
+"text": "",
+"vis": true,
+"ruhe": "rgb(102, 102, 102) | rgb(255, 255, 255) | rgb(118, 118, 118) | none | none",
+"hover": "rgb(102, 102, 102) | rgb(255, 255, 255) | rgb(118, 118, 118) | none | none",
+"fokus": "rgb(102, 102, 102) | rgb(255, 255, 255) | rgb(118, 118, 118) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(102, 102, 102) | rgb(255, 255, 255) | rgb(118, 118, 118) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none"
+},
+{
+"k": 6,
+"cls": "puk-carousel__btn",
+"text": "",
+"vis": true,
+"ruhe": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | none | none",
+"hover": "rgb(0, 31, 153) | rgb(244, 244, 244) | rgb(34, 34, 34) | none | none",
+"fokus": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none",
+"gedrueckt": "rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none"
+}
+]
+},
+"skriptfehler": []
+}
+}

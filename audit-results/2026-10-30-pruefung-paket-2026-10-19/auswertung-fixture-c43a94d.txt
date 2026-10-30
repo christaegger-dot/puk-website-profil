@@ -1,0 +1,241 @@
+##### m-c43a94d.json
+=== light-375 · Skriptfehler: 0
+  ruhe   Band: 535 sichtbare Elemente; gleich wie Weiss 324; direkt auf dem Band ohne eigene Fläche: 32; ABWEICHUNG in heller Fläche: 157; offene Erklärgrafik (flächenlos): 20; Karussell-Steuerung/Status ohne Fläche: 2
+      div.puk-vis-tablewrap: color rgb(34, 34, 34) -> rgb(255, 255, 255); outline rgb(34, 34, 34) none -> rgb(255, 255, 255) none
+      figure.puk-vis-figure: color rgb(34, 34, 34) -> rgb(255, 255, 255); outline rgb(34, 34, 34) none -> rgb(255, 255, 255) none
+      div.puk-vis-overlap: color rgb(34, 34, 34) -> rgb(255, 255, 255); border rgb(34, 34, 34) rgb(34, 34, 34) -> rgb(255, 255, 255) rgb(255, 255, 255); outline rgb(34, 34, 34) none -> rgb(255, 255, 255) none
+      ul.: color rgb(34, 34, 34) -> rgb(255, 255, 255); border rgb(34, 34, 34) rgb(34, 34, 34) -> rgb(255, 255, 255) rgb(255, 255, 255); outline rgb(34, 34, 34) none -> rgb(255, 255, 255) none
+      details.puk-vis-more: color rgb(34, 34, 34) -> rgb(255, 255, 255); border rgb(210, 210, 210) rgb(34, 34, 34) -> rgb(210, 210, 210) rgb(255, 255, 255); outline rgb(34, 34, 34) none -> rgb(255, 255, 255) none
+         Textkontrast < 4,5:1: 53 ({'sonst': 43, 'offen': 10}); Minimum ausserhalb offener Erklärgrafik 1:1
+           h3. [-] rgb(255, 255, 255) auf rgb(255, 255, 255) = 1:1
+           p. [-] rgb(255, 255, 255) auf rgb(255, 255, 255) = 1:1
+           p. [-] rgb(255, 255, 255) auf rgb(255, 255, 255) = 1:1
+           strong. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           span. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           p. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           p. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           p. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           p. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           p. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           p.puk-vis-label [open] rgb(34, 34, 34) auf rgb(60, 100, 255) = 3.38:1
+           p.puk-vis-kern [open] rgb(34, 34, 34) auf rgb(60, 100, 255) = 3.38:1
+  ruhe   Nachtblau: 535 sichtbare Elemente; gleich wie Weiss 21; direkt auf dem Band ohne eigene Fläche: 32; ABWEICHUNG in heller Fläche: 447; offene Erklärgrafik (flächenlos): 31; Karussell-Steuerung/Status ohne Fläche: 4
+      div.puk-vis-tablewrap: color rgb(34, 34, 34) -> rgb(255, 255, 255); outline rgb(34, 34, 34) none -> rgb(255, 255, 255) none
+      table.puk-vis-plan: color rgb(34, 34, 34) -> rgb(255, 255, 255); border rgb(34, 34, 34) rgb(34, 34, 34) -> rgb(255, 255, 255) rgb(255, 255, 255); outline rgb(34, 34, 34) none -> rgb(255, 255, 255) none
+      caption.: color rgb(34, 34, 34) -> rgb(255, 255, 255); border rgb(34, 34, 34) rgb(34, 34, 34) -> rgb(255, 255, 255) rgb(255, 255, 255); outline rgb(34, 34, 34) none -> rgb(255, 255, 255) none
+      thead.: color rgb(34, 34, 34) -> rgb(255, 255, 255); border rgb(34, 34, 34) rgb(34, 34, 34) -> rgb(255, 255, 255) rgb(255, 255, 255); outline rgb(34, 34, 34) none -> rgb(255, 255, 255) none
+      tr.: color rgb(34, 34, 34) -> rgb(255, 255, 255); border rgb(34, 34, 34) rgb(34, 34, 34) -> rgb(255, 255, 255) rgb(255, 255, 255); outline rgb(34, 34, 34) none -> rgb(255, 255, 255) none
+         Textkontrast < 4,5:1: 301 ({'sonst': 300, 'offen': 1}); Minimum ausserhalb offener Erklärgrafik 1:1
+           caption. [-] rgb(255, 255, 255) auf rgb(255, 255, 255) = 1:1
+           th. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           th. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           th. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           th. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           th. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           th. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           th. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           th. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           th. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           th. [-] rgb(255, 255, 255) auf rgb(255, 255, 255) = 1:1
+           td. [-] rgb(255, 255, 255) auf rgb(255, 255, 255) = 1:1
+  druck  Band: 524 sichtbare Elemente; gleich wie Weiss 524; 
+  druck  Nachtblau: 524 sichtbare Elemente; gleich wie Weiss 524; 
+  forced Band: 535 sichtbare Elemente; gleich wie Weiss 535; 
+  forced Nachtblau: 535 sichtbare Elemente; gleich wie Weiss 531; ABWEICHUNG in heller Fläche: 4
+      text.puk-vis-marktext: fill rgb(34, 34, 34) -> rgb(255, 255, 255)
+      text.puk-vis-marktext: fill rgb(34, 34, 34) -> rgb(255, 255, 255)
+      text.puk-vis-marktext: fill rgb(34, 34, 34) -> rgb(255, 255, 255)
+      text.puk-vis-marktext: fill rgb(34, 34, 34) -> rgb(255, 255, 255)
+  Zustände (Ruhe, Hover, Fokus, gedrückt ohne Hover) Band: Erklärmuster-Knopf gleich 12; Karussell-Knopf gleich 8; Link anders 5; Link gleich 3
+      Link «Langbeschreibung zu » hover: rgb(34, 34, 34) | rgba(0, 0, 0, 0) | rgb(34, 34, 34) | none | underlin -> rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | none | un
+      Link «Link» ruhe: rgb(60, 100, 255) | rgba(0, 0, 0, 0) | rgb(60, 100, 255) | none | none -> rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | none | un
+      Link «Link» hover: rgb(34, 34, 34) | rgba(0, 0, 0, 0) | rgb(34, 34, 34) | none | none -> rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | none | un
+      Link «Link» fokus: rgb(60, 100, 255) | rgba(0, 0, 0, 0) | rgb(60, 100, 255) | rgb(255, 25 -> rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | rgb(255, 
+      Link «Link» gedrueckt: rgb(60, 100, 255) | rgba(0, 0, 0, 0) | rgb(60, 100, 255) | rgb(255, 25 -> rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | rgb(255, 
+  Zustände (Ruhe, Hover, Fokus, gedrückt ohne Hover) Nachtblau: Erklärmuster-Knopf anders 8; Erklärmuster-Knopf gleich 4; Karussell-Knopf anders 5; Karussell-Knopf gleich 3; Link anders 7; Link gleich 1
+      Link «Langbeschreibung zu » hover: rgb(34, 34, 34) | rgba(0, 0, 0, 0) | rgb(34, 34, 34) | none | underlin -> rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | none | un
+      Link «Langbeschreibung zu » fokus: rgb(43, 79, 224) | rgba(0, 0, 0, 0) | rgb(43, 79, 224) | rgb(255, 255, -> rgb(43, 79, 224) | rgba(0, 0, 0, 0) | rgb(43, 79, 224) | rgb(24, 40, 1
+      Link «Langbeschreibung zu » gedrueckt: rgb(43, 79, 224) | rgba(0, 0, 0, 0) | rgb(43, 79, 224) | rgb(255, 255, -> rgb(43, 79, 224) | rgba(0, 0, 0, 0) | rgb(43, 79, 224) | rgb(24, 40, 1
+      Erklärmuster-Knopf Schritt für Schritt  ruhe: rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | none | none -> rgb(255, 255, 255) | rgb(255, 255, 255) | rgb(34, 34, 34) | none | none
+      Erklärmuster-Knopf Schritt für Schritt  fokus: rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none -> rgb(255, 255, 255) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px | none
+      Erklärmuster-Knopf Schritt für Schritt  gedrueckt: rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none -> rgb(255, 255, 255) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px | none
+=== kontrast-375 · Skriptfehler: 0
+  ruhe   Band: 535 sichtbare Elemente; gleich wie Weiss 324; direkt auf dem Band ohne eigene Fläche: 32; ABWEICHUNG in heller Fläche: 157; offene Erklärgrafik (flächenlos): 20; Karussell-Steuerung/Status ohne Fläche: 2
+      div.puk-vis-tablewrap: color rgb(34, 34, 34) -> rgb(255, 255, 255); outline rgb(34, 34, 34) none -> rgb(255, 255, 255) none
+      figure.puk-vis-figure: color rgb(34, 34, 34) -> rgb(255, 255, 255); outline rgb(34, 34, 34) none -> rgb(255, 255, 255) none
+      div.puk-vis-overlap: color rgb(34, 34, 34) -> rgb(255, 255, 255); border rgb(34, 34, 34) rgb(34, 34, 34) -> rgb(255, 255, 255) rgb(255, 255, 255); outline rgb(34, 34, 34) none -> rgb(255, 255, 255) none
+      ul.: color rgb(34, 34, 34) -> rgb(255, 255, 255); border rgb(34, 34, 34) rgb(34, 34, 34) -> rgb(255, 255, 255) rgb(255, 255, 255); outline rgb(34, 34, 34) none -> rgb(255, 255, 255) none
+      details.puk-vis-more: color rgb(34, 34, 34) -> rgb(255, 255, 255); border rgb(118, 118, 118) rgb(34, 34, 34) -> rgb(118, 118, 118) rgb(255, 255, 255); outline rgb(34, 34, 34) none -> rgb(255, 255, 255) none
+         Textkontrast < 4,5:1: 53 ({'sonst': 43, 'offen': 10}); Minimum ausserhalb offener Erklärgrafik 1:1
+           h3. [-] rgb(255, 255, 255) auf rgb(255, 255, 255) = 1:1
+           p. [-] rgb(255, 255, 255) auf rgb(255, 255, 255) = 1:1
+           p. [-] rgb(255, 255, 255) auf rgb(255, 255, 255) = 1:1
+           strong. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           span. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           p. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           p. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           p. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           p. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           p. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           p.puk-vis-label [open] rgb(34, 34, 34) auf rgb(0, 40, 194) = 1.58:1
+           p.puk-vis-kern [open] rgb(34, 34, 34) auf rgb(0, 40, 194) = 1.58:1
+  ruhe   Nachtblau: 535 sichtbare Elemente; gleich wie Weiss 21; direkt auf dem Band ohne eigene Fläche: 32; ABWEICHUNG in heller Fläche: 447; offene Erklärgrafik (flächenlos): 31; Karussell-Steuerung/Status ohne Fläche: 4
+      div.puk-vis-tablewrap: color rgb(34, 34, 34) -> rgb(255, 255, 255); outline rgb(34, 34, 34) none -> rgb(255, 255, 255) none
+      table.puk-vis-plan: color rgb(34, 34, 34) -> rgb(255, 255, 255); border rgb(34, 34, 34) rgb(34, 34, 34) -> rgb(255, 255, 255) rgb(255, 255, 255); outline rgb(34, 34, 34) none -> rgb(255, 255, 255) none
+      caption.: color rgb(34, 34, 34) -> rgb(255, 255, 255); border rgb(34, 34, 34) rgb(34, 34, 34) -> rgb(255, 255, 255) rgb(255, 255, 255); outline rgb(34, 34, 34) none -> rgb(255, 255, 255) none
+      thead.: color rgb(34, 34, 34) -> rgb(255, 255, 255); border rgb(34, 34, 34) rgb(34, 34, 34) -> rgb(255, 255, 255) rgb(255, 255, 255); outline rgb(34, 34, 34) none -> rgb(255, 255, 255) none
+      tr.: color rgb(34, 34, 34) -> rgb(255, 255, 255); border rgb(34, 34, 34) rgb(34, 34, 34) -> rgb(255, 255, 255) rgb(255, 255, 255); outline rgb(34, 34, 34) none -> rgb(255, 255, 255) none
+         Textkontrast < 4,5:1: 301 ({'sonst': 300, 'offen': 1}); Minimum ausserhalb offener Erklärgrafik 1:1
+           caption. [-] rgb(255, 255, 255) auf rgb(255, 255, 255) = 1:1
+           th. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           th. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           th. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           th. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           th. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           th. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           th. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           th. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           th. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           th. [-] rgb(255, 255, 255) auf rgb(255, 255, 255) = 1:1
+           td. [-] rgb(255, 255, 255) auf rgb(255, 255, 255) = 1:1
+  druck  Band: 524 sichtbare Elemente; gleich wie Weiss 524; 
+  druck  Nachtblau: 524 sichtbare Elemente; gleich wie Weiss 524; 
+  forced Band: 535 sichtbare Elemente; gleich wie Weiss 535; 
+  forced Nachtblau: 535 sichtbare Elemente; gleich wie Weiss 531; ABWEICHUNG in heller Fläche: 4
+      text.puk-vis-marktext: fill rgb(34, 34, 34) -> rgb(255, 255, 255)
+      text.puk-vis-marktext: fill rgb(34, 34, 34) -> rgb(255, 255, 255)
+      text.puk-vis-marktext: fill rgb(34, 34, 34) -> rgb(255, 255, 255)
+      text.puk-vis-marktext: fill rgb(34, 34, 34) -> rgb(255, 255, 255)
+  Zustände (Ruhe, Hover, Fokus, gedrückt ohne Hover) Band: Erklärmuster-Knopf gleich 12; Karussell-Knopf gleich 8; Link anders 5; Link gleich 3
+      Link «Langbeschreibung zu » hover: rgb(34, 34, 34) | rgba(0, 0, 0, 0) | rgb(34, 34, 34) | none | underlin -> rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | none | un
+      Link «Link» ruhe: rgb(0, 40, 194) | rgba(0, 0, 0, 0) | rgb(0, 40, 194) | none | none -> rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | none | un
+      Link «Link» hover: rgb(34, 34, 34) | rgba(0, 0, 0, 0) | rgb(34, 34, 34) | none | none -> rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | none | un
+      Link «Link» fokus: rgb(0, 40, 194) | rgba(0, 0, 0, 0) | rgb(0, 40, 194) | rgb(255, 255, 2 -> rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | rgb(255, 
+      Link «Link» gedrueckt: rgb(0, 40, 194) | rgba(0, 0, 0, 0) | rgb(0, 40, 194) | rgb(255, 255, 2 -> rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | rgb(255, 
+  Zustände (Ruhe, Hover, Fokus, gedrückt ohne Hover) Nachtblau: Erklärmuster-Knopf anders 8; Erklärmuster-Knopf gleich 4; Karussell-Knopf anders 5; Karussell-Knopf gleich 3; Link anders 7; Link gleich 1
+      Link «Langbeschreibung zu » hover: rgb(34, 34, 34) | rgba(0, 0, 0, 0) | rgb(34, 34, 34) | none | underlin -> rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | none | un
+      Link «Langbeschreibung zu » fokus: rgb(0, 31, 153) | rgba(0, 0, 0, 0) | rgb(0, 31, 153) | rgb(255, 255, 2 -> rgb(0, 31, 153) | rgba(0, 0, 0, 0) | rgb(0, 31, 153) | rgb(24, 40, 102
+      Link «Langbeschreibung zu » gedrueckt: rgb(0, 31, 153) | rgba(0, 0, 0, 0) | rgb(0, 31, 153) | rgb(255, 255, 2 -> rgb(0, 31, 153) | rgba(0, 0, 0, 0) | rgb(0, 31, 153) | rgb(24, 40, 102
+      Erklärmuster-Knopf Schritt für Schritt  ruhe: rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | none | none -> rgb(255, 255, 255) | rgb(255, 255, 255) | rgb(34, 34, 34) | none | none
+      Erklärmuster-Knopf Schritt für Schritt  fokus: rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none -> rgb(255, 255, 255) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px | none
+      Erklärmuster-Knopf Schritt für Schritt  gedrueckt: rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none -> rgb(255, 255, 255) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px | none
+=== light-1280 · Skriptfehler: 0
+  ruhe   Band: 564 sichtbare Elemente; gleich wie Weiss 320; direkt auf dem Band ohne eigene Fläche: 32; ABWEICHUNG in heller Fläche: 190; offene Erklärgrafik (flächenlos): 20; Karussell-Steuerung/Status ohne Fläche: 2
+      div.puk-vis-tablewrap: color rgb(34, 34, 34) -> rgb(255, 255, 255); outline rgb(34, 34, 34) none -> rgb(255, 255, 255) none
+      figure.puk-vis-figure: color rgb(34, 34, 34) -> rgb(255, 255, 255); outline rgb(34, 34, 34) none -> rgb(255, 255, 255) none
+      div.puk-vis-overlap: color rgb(34, 34, 34) -> rgb(255, 255, 255); border rgb(34, 34, 34) rgb(34, 34, 34) -> rgb(255, 255, 255) rgb(255, 255, 255); outline rgb(34, 34, 34) none -> rgb(255, 255, 255) none
+      svg.: color rgb(34, 34, 34) -> rgb(255, 255, 255); border rgb(34, 34, 34) rgb(34, 34, 34) -> rgb(255, 255, 255) rgb(255, 255, 255); outline rgb(34, 34, 34) none -> rgb(255, 255, 255) none
+      circle.: color rgb(34, 34, 34) -> rgb(255, 255, 255); border rgb(34, 34, 34) rgb(34, 34, 34) -> rgb(255, 255, 255) rgb(255, 255, 255); outline rgb(34, 34, 34) none -> rgb(255, 255, 255) none
+         Textkontrast < 4,5:1: 53 ({'sonst': 43, 'offen': 10}); Minimum ausserhalb offener Erklärgrafik 1:1
+           h3. [-] rgb(255, 255, 255) auf rgb(255, 255, 255) = 1:1
+           p. [-] rgb(255, 255, 255) auf rgb(255, 255, 255) = 1:1
+           p. [-] rgb(255, 255, 255) auf rgb(255, 255, 255) = 1:1
+           strong. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           span. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           p. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           p. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           p. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           p. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           p. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           p.puk-vis-label [open] rgb(34, 34, 34) auf rgb(60, 100, 255) = 3.38:1
+           p.puk-vis-kern [open] rgb(34, 34, 34) auf rgb(60, 100, 255) = 3.38:1
+  ruhe   Nachtblau: 564 sichtbare Elemente; gleich wie Weiss 18; direkt auf dem Band ohne eigene Fläche: 32; ABWEICHUNG in heller Fläche: 479; offene Erklärgrafik (flächenlos): 31; Karussell-Steuerung/Status ohne Fläche: 4
+      div.puk-vis-tablewrap: color rgb(34, 34, 34) -> rgb(255, 255, 255); outline rgb(34, 34, 34) none -> rgb(255, 255, 255) none
+      table.puk-vis-plan: color rgb(34, 34, 34) -> rgb(255, 255, 255); border rgb(34, 34, 34) rgb(34, 34, 34) -> rgb(255, 255, 255) rgb(255, 255, 255); outline rgb(34, 34, 34) none -> rgb(255, 255, 255) none
+      caption.: color rgb(34, 34, 34) -> rgb(255, 255, 255); border rgb(34, 34, 34) rgb(34, 34, 34) -> rgb(255, 255, 255) rgb(255, 255, 255); outline rgb(34, 34, 34) none -> rgb(255, 255, 255) none
+      thead.: color rgb(34, 34, 34) -> rgb(255, 255, 255); border rgb(34, 34, 34) rgb(34, 34, 34) -> rgb(255, 255, 255) rgb(255, 255, 255); outline rgb(34, 34, 34) none -> rgb(255, 255, 255) none
+      tr.: color rgb(34, 34, 34) -> rgb(255, 255, 255); border rgb(34, 34, 34) rgb(34, 34, 34) -> rgb(255, 255, 255) rgb(255, 255, 255); outline rgb(34, 34, 34) none -> rgb(255, 255, 255) none
+         Textkontrast < 4,5:1: 300 ({'sonst': 299, 'offen': 1}); Minimum ausserhalb offener Erklärgrafik 1:1
+           caption. [-] rgb(255, 255, 255) auf rgb(255, 255, 255) = 1:1
+           th. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           th. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           th. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           th. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           th. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           th. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           th. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           th. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           th. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           th. [-] rgb(255, 255, 255) auf rgb(255, 255, 255) = 1:1
+           td. [-] rgb(255, 255, 255) auf rgb(255, 255, 255) = 1:1
+  druck  Band: 553 sichtbare Elemente; gleich wie Weiss 553; 
+  druck  Nachtblau: 553 sichtbare Elemente; gleich wie Weiss 553; 
+  forced Band: 564 sichtbare Elemente; gleich wie Weiss 564; 
+  forced Nachtblau: 564 sichtbare Elemente; gleich wie Weiss 560; ABWEICHUNG in heller Fläche: 4
+      text.puk-vis-marktext: fill rgb(34, 34, 34) -> rgb(255, 255, 255)
+      text.puk-vis-marktext: fill rgb(34, 34, 34) -> rgb(255, 255, 255)
+      text.puk-vis-marktext: fill rgb(34, 34, 34) -> rgb(255, 255, 255)
+      text.puk-vis-marktext: fill rgb(34, 34, 34) -> rgb(255, 255, 255)
+  Zustände (Ruhe, Hover, Fokus, gedrückt ohne Hover) Band: Erklärmuster-Knopf gleich 12; Karussell-Knopf gleich 8; Link anders 5; Link gleich 3
+      Link «Langbeschreibung zu » hover: rgb(34, 34, 34) | rgba(0, 0, 0, 0) | rgb(34, 34, 34) | none | underlin -> rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | none | un
+      Link «Link» ruhe: rgb(60, 100, 255) | rgba(0, 0, 0, 0) | rgb(60, 100, 255) | none | none -> rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | none | un
+      Link «Link» hover: rgb(34, 34, 34) | rgba(0, 0, 0, 0) | rgb(34, 34, 34) | none | none -> rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | none | un
+      Link «Link» fokus: rgb(60, 100, 255) | rgba(0, 0, 0, 0) | rgb(60, 100, 255) | rgb(255, 25 -> rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | rgb(255, 
+      Link «Link» gedrueckt: rgb(60, 100, 255) | rgba(0, 0, 0, 0) | rgb(60, 100, 255) | rgb(255, 25 -> rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | rgb(255, 
+  Zustände (Ruhe, Hover, Fokus, gedrückt ohne Hover) Nachtblau: Erklärmuster-Knopf anders 8; Erklärmuster-Knopf gleich 4; Karussell-Knopf anders 5; Karussell-Knopf gleich 3; Link anders 7; Link gleich 1
+      Link «Langbeschreibung zu » hover: rgb(34, 34, 34) | rgba(0, 0, 0, 0) | rgb(34, 34, 34) | none | underlin -> rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | none | un
+      Link «Langbeschreibung zu » fokus: rgb(43, 79, 224) | rgba(0, 0, 0, 0) | rgb(43, 79, 224) | rgb(255, 255, -> rgb(43, 79, 224) | rgba(0, 0, 0, 0) | rgb(43, 79, 224) | rgb(24, 40, 1
+      Link «Langbeschreibung zu » gedrueckt: rgb(43, 79, 224) | rgba(0, 0, 0, 0) | rgb(43, 79, 224) | rgb(255, 255, -> rgb(43, 79, 224) | rgba(0, 0, 0, 0) | rgb(43, 79, 224) | rgb(24, 40, 1
+      Erklärmuster-Knopf Schritt für Schritt  ruhe: rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | none | none -> rgb(255, 255, 255) | rgb(255, 255, 255) | rgb(34, 34, 34) | none | none
+      Erklärmuster-Knopf Schritt für Schritt  fokus: rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none -> rgb(255, 255, 255) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px | none
+      Erklärmuster-Knopf Schritt für Schritt  gedrueckt: rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px | none -> rgb(255, 255, 255) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px | none
+=== kontrast-1280 · Skriptfehler: 0
+  ruhe   Band: 564 sichtbare Elemente; gleich wie Weiss 320; direkt auf dem Band ohne eigene Fläche: 32; ABWEICHUNG in heller Fläche: 190; offene Erklärgrafik (flächenlos): 20; Karussell-Steuerung/Status ohne Fläche: 2
+      div.puk-vis-tablewrap: color rgb(34, 34, 34) -> rgb(255, 255, 255); outline rgb(34, 34, 34) none -> rgb(255, 255, 255) none
+      figure.puk-vis-figure: color rgb(34, 34, 34) -> rgb(255, 255, 255); outline rgb(34, 34, 34) none -> rgb(255, 255, 255) none
+      div.puk-vis-overlap: color rgb(34, 34, 34) -> rgb(255, 255, 255); border rgb(34, 34, 34) rgb(34, 34, 34) -> rgb(255, 255, 255) rgb(255, 255, 255); outline rgb(34, 34, 34) none -> rgb(255, 255, 255) none
+      svg.: color rgb(34, 34, 34) -> rgb(255, 255, 255); border rgb(34, 34, 34) rgb(34, 34, 34) -> rgb(255, 255, 255) rgb(255, 255, 255); outline rgb(34, 34, 34) none -> rgb(255, 255, 255) none
+      circle.: color rgb(34, 34, 34) -> rgb(255, 255, 255); border rgb(34, 34, 34) rgb(34, 34, 34) -> rgb(255, 255, 255) rgb(255, 255, 255); outline rgb(34, 34, 34) none -> rgb(255, 255, 255) none
+         Textkontrast < 4,5:1: 53 ({'sonst': 43, 'offen': 10}); Minimum ausserhalb offener Erklärgrafik 1:1
+           h3. [-] rgb(255, 255, 255) auf rgb(255, 255, 255) = 1:1
+           p. [-] rgb(255, 255, 255) auf rgb(255, 255, 255) = 1:1
+           p. [-] rgb(255, 255, 255) auf rgb(255, 255, 255) = 1:1
+           strong. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           span. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           p. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           p. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           p. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           p. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           p. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           p.puk-vis-label [open] rgb(34, 34, 34) auf rgb(0, 40, 194) = 1.58:1
+           p.puk-vis-kern [open] rgb(34, 34, 34) auf rgb(0, 40, 194) = 1.58:1
+  ruhe   Nachtblau: 564 sichtbare Elemente; gleich wie Weiss 18; direkt auf dem Band ohne eigene Fläche: 32; ABWEICHUNG in heller Fläche: 479; offene Erklärgrafik (flächenlos): 31; Karussell-Steuerung/Status ohne Fläche: 4
+      div.puk-vis-tablewrap: color rgb(34, 34, 34) -> rgb(255, 255, 255); outline rgb(34, 34, 34) none -> rgb(255, 255, 255) none
+      table.puk-vis-plan: color rgb(34, 34, 34) -> rgb(255, 255, 255); border rgb(34, 34, 34) rgb(34, 34, 34) -> rgb(255, 255, 255) rgb(255, 255, 255); outline rgb(34, 34, 34) none -> rgb(255, 255, 255) none
+      caption.: color rgb(34, 34, 34) -> rgb(255, 255, 255); border rgb(34, 34, 34) rgb(34, 34, 34) -> rgb(255, 255, 255) rgb(255, 255, 255); outline rgb(34, 34, 34) none -> rgb(255, 255, 255) none
+      thead.: color rgb(34, 34, 34) -> rgb(255, 255, 255); border rgb(34, 34, 34) rgb(34, 34, 34) -> rgb(255, 255, 255) rgb(255, 255, 255); outline rgb(34, 34, 34) none -> rgb(255, 255, 255) none
+      tr.: color rgb(34, 34, 34) -> rgb(255, 255, 255); border rgb(34, 34, 34) rgb(34, 34, 34) -> rgb(255, 255, 255) rgb(255, 255, 255); outline rgb(34, 34, 34) none -> rgb(255, 255, 255) none
+         Textkontrast < 4,5:1: 300 ({'sonst': 299, 'offen': 1}); Minimum ausserhalb offener Erklärgrafik 1:1
+           caption. [-] rgb(255, 255, 255) auf rgb(255, 255, 255) = 1:1
+           th. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           th. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           th. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           th. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           th. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           th. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           th. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           th. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           th. [-] rgb(255, 255, 255) auf rgb(247, 247, 247) = 1.07:1
+           th. [-] rgb(255, 255, 255) auf rgb(255, 255, 255) = 1:1
+           td. [-] rgb(255, 255, 255) auf rgb(255, 255, 255) = 1:1
+  druck  Band: 553 sichtbare Elemente; gleich wie Weiss 553; 
+  druck  Nachtblau: 553 sichtbare Elemente; gleich wie Weiss 553; 
+  forced Band: 564 sichtbare Elemente; gleich wie Weiss 564; 
+  forced Nachtblau: 564 sichtbare Elemente; gleich wie Weiss 560; ABWEICHUNG in heller Fläche: 4
+      text.puk-vis-marktext: fill rgb(34, 34, 34) -> rgb(255, 255, 255)
+      text.puk-vis-marktext: fill rgb(34, 34, 34) -> rgb(255, 255, 255)
+      text.puk-vis-marktext: fill rgb(34, 34, 34) -> rgb(255, 255, 255)
+      text.puk-vis-marktext: fill rgb(34, 34, 34) -> rgb(255, 255, 255)
+  Zustände (Ruhe, Hover, Fokus, gedrückt ohne Hover) Band: Erklärmuster-Knopf gleich 12; Karussell-Knopf gleich 8; Link anders 5; Link gleich 3
+      Link «Langbeschreibung zu » hover: rgb(34, 34, 34) | rgba(0, 0, 0, 0) | rgb(34, 34, 34) | none | underlin -> rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | none | un
+      Link «Link» ruhe: rgb(0, 40, 194) | rgba(0, 0, 0, 0) | rgb(0, 40, 194) | none | none -> rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | none | un
+      Link «Link» hover: rgb(34, 34, 34) | rgba(0, 0, 0, 0) | rgb(34, 34, 34) | none | none -> rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | none | un
+      Link «Link» fokus: rgb(0, 40, 194) | rgba(0, 0, 0, 0) | rgb(0, 40, 194) | rgb(255, 255, 2 -> rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | rgb(255, 
+      Link «Link» gedrueckt: rgb(0, 40, 194) | rgba(0, 0, 0, 0) | rgb(0, 40, 194) | rgb(255, 255, 2 -> rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | rgb(255, 
+  Zustände (Ruhe, Hover, Fokus, gedrückt ohne Hover) Nachtblau: Erklärmuster-Knopf anders 8; Erklärmuster-Knopf gleich 4; Karussell-Knopf anders 5; Karussell-Knopf gleich 3; Link anders 7; Link gleich 1
+      Link «Langbeschreibung zu » hover: rgb(34, 34, 34) | rgba(0, 0, 0, 0) | rgb(34, 34, 34) | none | underlin -> rgb(255, 255, 255) | rgba(0, 0, 0, 0) | rgb(255, 255, 255) | none | un
+      Link «Langbeschreibung zu » fokus: rgb(0, 31, 153) | rgba(0, 0, 0, 0) | rgb(0, 31, 153) | rgb(255, 255, 2 -> rgb(0, 31, 153) | rgba(0, 0, 0, 0) | rgb(0, 31, 153) | rgb(24, 40, 102
+      Link «Langbeschreibung zu » gedrueckt: rgb(0, 31, 153) | rgba(0, 0, 0, 0) | rgb(0, 31, 153) | rgb(255, 255, 2 -> rgb(0, 31, 153) | rgba(0, 0, 0, 0) | rgb(0, 31, 153) | rgb(24, 40, 102
+      Erklärmuster-Knopf Schritt für Schritt  ruhe: rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | none | none -> rgb(255, 255, 255) | rgb(255, 255, 255) | rgb(34, 34, 34) | none | none
+      Erklärmuster-Knopf Schritt für Schritt  fokus: rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none -> rgb(255, 255, 255) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px | none
+      Erklärmuster-Knopf Schritt für Schritt  gedrueckt: rgb(34, 34, 34) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px | none -> rgb(255, 255, 255) | rgb(255, 255, 255) | rgb(34, 34, 34) | rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px | none
