@@ -1,0 +1,958 @@
+light-375 ruhe b muster-1-muster-a: 3 Texte unter 4,5:1
+   h3. «Langbeschreibung zu Abbildung » #FFFFFF auf #FFFFFF 1.00:1
+   p. «Zwei gleich grosse Kreise lieg» #FFFFFF auf #FFFFFF 1.00:1
+   p. «Die Überlappung in der Mitte i» #FFFFFF auf #FFFFFF 1.00:1
+light-375 ruhe b muster-2-muster-b: 2 Texte unter 4,5:1
+   strong. «Leserichtung:» #FFFFFF auf #F7F7F7 1.07:1
+   span. «von oben nach unten; nach Stat» #FFFFFF auf #F7F7F7 1.07:1
+light-375 ruhe b muster-3-muster-c: 5 Texte unter 4,5:1
+   p. «Ein Anliegen wird formuliert.» #FFFFFF auf #F7F7F7 1.07:1
+   p. «Offene Fragen werden gesammelt» #FFFFFF auf #F7F7F7 1.07:1
+   p. «Ein gemeinsamer Plan wird fest» #FFFFFF auf #F7F7F7 1.07:1
+   p. «Nur bei Bedarf wird ein Thema » #FFFFFF auf #F7F7F7 1.07:1
+   p. «Das Erreichte wird gemeinsam b» #FFFFFF auf #F7F7F7 1.07:1
+light-375 ruhe b muster-4-muster-d: 10 Texte unter 4,5:1
+   p.puk-vis-label «Abbildung 4 · Ein freier Abend» #222222 auf #3C64FF 3.38:1
+   p.puk-vis-kern «Auch an einem freien Abend ble» #222222 auf #3C64FF 3.38:1
+   p.puk-vis-short «Das Buch liegt bereit, der Tee» #222222 auf #3C64FF 3.38:1
+   p.puk-vis-scene__say ««Vielleicht ruft sie gleich an» #222222 auf #3C64FF 3.38:1
+   p.puk-vis-scene__say ««Eigentlich wollte ich lesen.»» #222222 auf #3C64FF 3.38:1
+   summary. «Grenzen des Bildes» #2B4FE0 auf #3C64FF 1.35:1
+   p. «Nicht alle Angehörigen erleben» #222222 auf #3C64FF 3.38:1
+   p.puk-sr «Zeichnung eines Tisches am Abe» #222222 auf #3C64FF 3.38:1
+   p. «Eigene didaktische Darstellung» #222222 auf #3C64FF 3.38:1
+   strong. «Eigene didaktische Darstellung» #222222 auf #3C64FF 3.38:1
+light-375 ruhe b muster-5-muster-e: 8 Texte unter 4,5:1
+   p.puk-vis-compare__key «Option A · durchgezogene Linie» #FFFFFF auf #FFFFFF 1.00:1
+   dt. «Merkmal 1» #FFFFFF auf #FFFFFF 1.00:1
+   dt. «Merkmal 2» #FFFFFF auf #FFFFFF 1.00:1
+   dt. «Merkmal 3» #FFFFFF auf #FFFFFF 1.00:1
+   p.puk-vis-compare__key «Option B · gestrichelte Linie» #FFFFFF auf #FFFFFF 1.00:1
+light-375 ruhe b muster-7-puk-vis-wide: 10 Texte unter 4,5:1
+   h3. «Hat der Inhalt mehrere eigenst» #FFFFFF auf #FFFFFF 1.00:1
+   p. «Ja: Einstiegsseite plus getren» #FFFFFF auf #FFFFFF 1.00:1
+   h3. «Richtet er sich an mehrere Zie» #FFFFFF auf #FFFFFF 1.00:1
+   p. «Ja: getrennte Lesepfade ab der» #FFFFFF auf #FFFFFF 1.00:1
+   h3. «Hat er mehr als acht Hauptkapi» #FFFFFF auf #FFFFFF 1.00:1
+   p. «Ja: aufteilen und im Visualisi» #FFFFFF auf #FFFFFF 1.00:1
+   h3. «Baut die Erklärung Schritt für» #FFFFFF auf #FFFFFF 1.00:1
+   p. «Ja: eine Langformseite mit Kap» #FFFFFF auf #FFFFFF 1.00:1
+   h3. «Wird der vollständige Bericht » #FFFFFF auf #FFFFFF 1.00:1
+   p. «Ja: Vollbericht zusätzlich als» #FFFFFF auf #FFFFFF 1.00:1
+light-375 ruhe b offen-0-muster-a: 9 Texte unter 4,5:1
+   p.puk-vis-label «Abbildung 1 · Zwei Bereiche mi» #222222 auf #3C64FF 3.38:1
+   p.puk-vis-kern «Zwei Bereiche haben einen Teil» #222222 auf #3C64FF 3.38:1
+   p.puk-vis-short «Musterinhalt: Die Lage der Kre» #222222 auf #3C64FF 3.38:1
+   summary. «Grenzen des Modells» #2B4FE0 auf #3C64FF 1.35:1
+   p. «Die Darstellung zeigt nur, das» #222222 auf #3C64FF 3.38:1
+   p.puk-sr «Bereich A (durchgezogene Linie» #222222 auf #3C64FF 3.38:1
+   p. «Eigene didaktische Darstellung» #222222 auf #3C64FF 3.38:1
+   strong. «Eigene didaktische Darstellung» #222222 auf #3C64FF 3.38:1
+   a.puk-link--inline «Langbeschreibung zu Abbildung » #2B4FE0 auf #3C64FF 1.35:1
+light-375 ruhe b offen-1-muster-b: 12 Texte unter 4,5:1
+   p.puk-vis-label «Abbildung 2 · Kreislauf mit vi» #222222 auf #3C64FF 3.38:1
+   p.puk-vis-kern «Was am Ende geschieht, wirkt a» #222222 auf #3C64FF 3.38:1
+   p.puk-vis-short «Musterinhalt: Vier Stationen f» #222222 auf #3C64FF 3.38:1
+   p.puk-vis-cycle__loop «Nach Station 4: zurück zu Stat» #222222 auf #3C64FF 3.38:1
+   p.puk-vis-ansatz «Ansatzpunkt für Angehörige · b» #222222 auf #3C64FF 3.38:1
+   span.puk-vis-ansatz__key «Ansatzpunkt für Angehörige · b» #222222 auf #3C64FF 3.38:1
+   summary. «Beispiel und Grenzen des Model» #2B4FE0 auf #3C64FF 1.35:1
+   p. «Die Pfeile zeigen nur die Rich» #222222 auf #3C64FF 3.38:1
+   p.puk-sr «Textfassung: Station 1 «Anlass» #222222 auf #3C64FF 3.38:1
+   strong. «Textfassung:» #222222 auf #3C64FF 3.38:1
+   p. «Eigene didaktische Darstellung» #222222 auf #3C64FF 3.38:1
+   strong. «Eigene didaktische Darstellung» #222222 auf #3C64FF 3.38:1
+light-375 ruhe b offen-2-muster-c: 20 Texte unter 4,5:1
+   p.puk-vis-label «Abbildung 3 · Musterpfad in fü» #222222 auf #3C64FF 3.38:1
+   p.puk-vis-kern «Der Ablauf hat eine feste Reih» #222222 auf #3C64FF 3.38:1
+   p.puk-vis-short «Musterinhalt: Nummer und Linie» #222222 auf #3C64FF 3.38:1
+   span.puk-vis-path__n «Schritt 1 von 5» #222222 auf #3C64FF 3.38:1
+   h3. «Anfrage» #222222 auf #3C64FF 3.38:1
+   span.puk-vis-path__n «Schritt 2 von 5» #222222 auf #3C64FF 3.38:1
+   h3. «Klärung» #222222 auf #3C64FF 3.38:1
+   p.puk-vis-ansatz «Ansatzpunkt für AngehörigeMust» #222222 auf #3C64FF 3.38:1
+   span.puk-vis-ansatz__key «Ansatzpunkt für Angehörige» #222222 auf #3C64FF 3.38:1
+   span.puk-vis-path__n «Schritt 3 von 5» #222222 auf #3C64FF 3.38:1
+   h3. «Planung» #222222 auf #3C64FF 3.38:1
+   span.puk-vis-path__n «Schritt 4 von 5 · optional» #222222 auf #3C64FF 3.38:1
+light-375 ruhe b offen-3-muster-e: 14 Texte unter 4,5:1
+   p.puk-vis-label «Abbildung 5 · Zwei Musteroptio» #222222 auf #3C64FF 3.38:1
+   p.puk-vis-kern «Zwei Optionen unterscheiden si» #222222 auf #3C64FF 3.38:1
+   p.puk-vis-short «Musterinhalt: Beide Spalten ne» #222222 auf #3C64FF 3.38:1
+   p.puk-vis-compare__key «Option A · durchgezogene Linie» #FFFFFF auf #FFFFFF 1.00:1
+   dt. «Merkmal 1» #FFFFFF auf #FFFFFF 1.00:1
+   dt. «Merkmal 2» #FFFFFF auf #FFFFFF 1.00:1
+   dt. «Merkmal 3» #FFFFFF auf #FFFFFF 1.00:1
+   p.puk-vis-compare__key «Option B · gestrichelte Linie» #FFFFFF auf #FFFFFF 1.00:1
+   p.puk-sr «Option A und Option B werden n» #222222 auf #3C64FF 3.38:1
+   p. «Eigene didaktische Darstellung» #222222 auf #3C64FF 3.38:1
+   strong. «Eigene didaktische Darstellung» #222222 auf #3C64FF 3.38:1
+light-375 ruhe b offen-4-muster-f: 10 Texte unter 4,5:1
+   p.puk-vis-label «Abbildung 6 · Musterweg mit zw» #222222 auf #3C64FF 3.38:1
+   p.puk-vis-kern «Zwei Fragen führen zu genau ei» #222222 auf #3C64FF 3.38:1
+   p.puk-vis-short «Musterinhalt: Jede Frage hat z» #222222 auf #3C64FF 3.38:1
+   span.puk-vis-decision__n «Frage 1 von 2» #222222 auf #3C64FF 3.38:1
+   h3. «Trifft Bedingung 1 zu?» #222222 auf #3C64FF 3.38:1
+   span.puk-vis-decision__n «Frage 2 von 2» #222222 auf #3C64FF 3.38:1
+   h3. «Trifft Bedingung 2 zu?» #222222 auf #3C64FF 3.38:1
+   p.puk-sr «Frage 1: Bei Ja folgt Weg A, b» #222222 auf #3C64FF 3.38:1
+   p. «Eigene didaktische Darstellung» #222222 auf #3C64FF 3.38:1
+   strong. «Eigene didaktische Darstellung» #222222 auf #3C64FF 3.38:1
+light-375 ruhe b o3: 6 Texte unter 4,5:1
+   button. «Erster» #222222 auf #3C64FF 3.38:1
+   span. «Kontrollkästchen» #222222 auf #3C64FF 3.38:1
+   span. «Optionsfeld» #222222 auf #3C64FF 3.38:1
+   span. «Schalter» #222222 auf #3C64FF 3.38:1
+   label. «Feldbeschriftung» #222222 auf #3C64FF 3.38:1
+   span. «Menü» #3C64FF auf #3C64FF 1.00:1
+light-375 ruhe n muster-0-puk-vis-wide: 64 Texte unter 4,5:1
+   caption. «Beispiel eines Visualisierungs» #FFFFFF auf #FFFFFF 1.00:1
+   th. «Abschnitt» #FFFFFF auf #F7F7F7 1.07:1
+   th. «Erkenntnisziel» #FFFFFF auf #F7F7F7 1.07:1
+   th. «Gewähltes Format» #FFFFFF auf #F7F7F7 1.07:1
+   th. «Aussage oder Beziehung» #FFFFFF auf #F7F7F7 1.07:1
+   th. «Wirkung» #FFFFFF auf #F7F7F7 1.07:1
+   th. «Quelle bzw. Kennzeichnung» #FFFFFF auf #F7F7F7 1.07:1
+   th. «Alternativtext oder Langbeschr» #FFFFFF auf #F7F7F7 1.07:1
+   th. «Ansatzpunkt für Angehörige» #FFFFFF auf #F7F7F7 1.07:1
+   th. «Begründung» #FFFFFF auf #F7F7F7 1.07:1
+   th. «01 Orientierung» #FFFFFF auf #FFFFFF 1.00:1
+   td. «Wissen, worum es geht und was » #FFFFFF auf #FFFFFF 1.00:1
+light-375 ruhe n muster-1-muster-a: 13 Texte unter 4,5:1
+   p.puk-vis-label «Abbildung 1 · Zwei Bereiche mi» #FFFFFF auf #F7F7F7 1.07:1
+   p.puk-vis-kern «Zwei Bereiche haben einen Teil» #FFFFFF auf #F7F7F7 1.07:1
+   p.puk-vis-short «Musterinhalt: Die Lage der Kre» #FFFFFF auf #F7F7F7 1.07:1
+   li. «Bereich A» #FFFFFF auf #FFFFFF 1.00:1
+   li. «Gemeinsamer Anteil» #FFFFFF auf #FFFFFF 1.00:1
+   li. «Bereich B» #FFFFFF auf #FFFFFF 1.00:1
+   p. «Die Darstellung zeigt nur, das» #FFFFFF auf #F7F7F7 1.07:1
+   p.puk-sr «Bereich A (durchgezogene Linie» #FFFFFF auf #F7F7F7 1.07:1
+   p. «Eigene didaktische Darstellung» #FFFFFF auf #F7F7F7 1.07:1
+   strong. «Eigene didaktische Darstellung» #FFFFFF auf #F7F7F7 1.07:1
+   h3. «Langbeschreibung zu Abbildung » #FFFFFF auf #FFFFFF 1.00:1
+   p. «Zwei gleich grosse Kreise lieg» #FFFFFF auf #FFFFFF 1.00:1
+light-375 ruhe n muster-2-muster-b: 22 Texte unter 4,5:1
+   p.puk-vis-label «Abbildung 2 · Kreislauf mit vi» #FFFFFF auf #F7F7F7 1.07:1
+   p.puk-vis-kern «Was am Ende geschieht, wirkt a» #FFFFFF auf #F7F7F7 1.07:1
+   p.puk-vis-short «Musterinhalt: Vier Stationen f» #FFFFFF auf #F7F7F7 1.07:1
+   strong. «Leserichtung:» #FFFFFF auf #F7F7F7 1.07:1
+   span. «von oben nach unten; nach Stat» #FFFFFF auf #F7F7F7 1.07:1
+   span.puk-vis-cycle__n «Station 1» #FFFFFF auf #FFFFFF 1.00:1
+   span.puk-vis-cycle__name «Anlass» #FFFFFF auf #FFFFFF 1.00:1
+   span.puk-vis-cycle__n «Station 2» #FFFFFF auf #FFFFFF 1.00:1
+   span.puk-vis-cycle__name «Reaktion» #FFFFFF auf #FFFFFF 1.00:1
+   span.puk-vis-cycle__n «Station 3» #FFFFFF auf #FFFFFF 1.00:1
+   span.puk-vis-cycle__name «Folge» #FFFFFF auf #FFFFFF 1.00:1
+   span.puk-vis-cycle__key «Ansatzpunkt» #FFFFFF auf #FFFFFF 1.00:1
+light-375 ruhe n muster-3-muster-c: 24 Texte unter 4,5:1
+   p.puk-vis-label «Abbildung 3 · Musterpfad in fü» #FFFFFF auf #F7F7F7 1.07:1
+   p.puk-vis-kern «Der Ablauf hat eine feste Reih» #FFFFFF auf #F7F7F7 1.07:1
+   p.puk-vis-short «Musterinhalt: Nummer und Linie» #FFFFFF auf #F7F7F7 1.07:1
+   span.puk-vis-path__n «Schritt 1 von 5» #FFFFFF auf #F7F7F7 1.07:1
+   h3. «Anfrage» #FFFFFF auf #F7F7F7 1.07:1
+   p. «Ein Anliegen wird formuliert.» #D8E0FF auf #F7F7F7 1.22:1
+   span.puk-vis-path__n «Schritt 2 von 5» #FFFFFF auf #F7F7F7 1.07:1
+   h3. «Klärung» #FFFFFF auf #F7F7F7 1.07:1
+   p. «Offene Fragen werden gesammelt» #D8E0FF auf #F7F7F7 1.22:1
+   p.puk-vis-ansatz «Ansatzpunkt für AngehörigeMust» #FFFFFF auf #F7F7F7 1.07:1
+   span.puk-vis-ansatz__key «Ansatzpunkt für Angehörige» #FFFFFF auf #F7F7F7 1.07:1
+   span.puk-vis-path__n «Schritt 3 von 5» #FFFFFF auf #F7F7F7 1.07:1
+light-375 ruhe n muster-4-muster-d: 1 Texte unter 4,5:1
+   summary. «Grenzen des Bildes» #2B4FE0 auf #182866 2.15:1
+light-375 ruhe n muster-5-muster-e: 22 Texte unter 4,5:1
+   p.puk-vis-label «Abbildung 5 · Zwei Musteroptio» #FFFFFF auf #F7F7F7 1.07:1
+   p.puk-vis-kern «Zwei Optionen unterscheiden si» #FFFFFF auf #F7F7F7 1.07:1
+   p.puk-vis-short «Musterinhalt: Beide Spalten ne» #FFFFFF auf #F7F7F7 1.07:1
+   p.puk-vis-compare__key «Option A · durchgezogene Linie» #D8E0FF auf #FFFFFF 1.31:1
+   h3. «Musteroption A» #FFFFFF auf #FFFFFF 1.00:1
+   dt. «Merkmal 1» #D8E0FF auf #FFFFFF 1.31:1
+   dd. «Ausprägung A1» #FFFFFF auf #FFFFFF 1.00:1
+   dt. «Merkmal 2» #D8E0FF auf #FFFFFF 1.31:1
+   dd. «Ausprägung A2» #FFFFFF auf #FFFFFF 1.00:1
+   dt. «Merkmal 3» #D8E0FF auf #FFFFFF 1.31:1
+   dd. «Ausprägung A3» #FFFFFF auf #FFFFFF 1.00:1
+   p.puk-vis-compare__key «Option B · gestrichelte Linie» #D8E0FF auf #FFFFFF 1.31:1
+light-375 ruhe n muster-6-muster-f: 18 Texte unter 4,5:1
+   p.puk-vis-label «Abbildung 6 · Musterweg mit zw» #FFFFFF auf #F7F7F7 1.07:1
+   p.puk-vis-kern «Zwei Fragen führen zu genau ei» #FFFFFF auf #F7F7F7 1.07:1
+   p.puk-vis-short «Musterinhalt: Jede Frage hat z» #FFFFFF auf #F7F7F7 1.07:1
+   span.puk-vis-decision__n «Frage 1 von 2» #FFFFFF auf #F7F7F7 1.07:1
+   h3. «Trifft Bedingung 1 zu?» #FFFFFF auf #F7F7F7 1.07:1
+   li.puk-vis-decision__branch «Ja: Weg A» #FFFFFF auf #FFFFFF 1.00:1
+   strong. «Ja:» #FFFFFF auf #FFFFFF 1.00:1
+   li.puk-vis-decision__branch «Nein: weiter zu Frage 2» #FFFFFF auf #FFFFFF 1.00:1
+   strong. «Nein:» #FFFFFF auf #FFFFFF 1.00:1
+   span.puk-vis-decision__n «Frage 2 von 2» #FFFFFF auf #F7F7F7 1.07:1
+   h3. «Trifft Bedingung 2 zu?» #FFFFFF auf #F7F7F7 1.07:1
+   li.puk-vis-decision__branch «Ja: Weg B» #FFFFFF auf #FFFFFF 1.00:1
+light-375 ruhe n muster-7-puk-vis-wide: 10 Texte unter 4,5:1
+   h3. «Hat der Inhalt mehrere eigenst» #FFFFFF auf #FFFFFF 1.00:1
+   p. «Ja: Einstiegsseite plus getren» #FFFFFF auf #FFFFFF 1.00:1
+   h3. «Richtet er sich an mehrere Zie» #FFFFFF auf #FFFFFF 1.00:1
+   p. «Ja: getrennte Lesepfade ab der» #FFFFFF auf #FFFFFF 1.00:1
+   h3. «Hat er mehr als acht Hauptkapi» #FFFFFF auf #FFFFFF 1.00:1
+   p. «Ja: aufteilen und im Visualisi» #FFFFFF auf #FFFFFF 1.00:1
+   h3. «Baut die Erklärung Schritt für» #FFFFFF auf #FFFFFF 1.00:1
+   p. «Ja: eine Langformseite mit Kap» #FFFFFF auf #FFFFFF 1.00:1
+   h3. «Wird der vollständige Bericht » #FFFFFF auf #FFFFFF 1.00:1
+   p. «Ja: Vollbericht zusätzlich als» #FFFFFF auf #FFFFFF 1.00:1
+light-375 ruhe n offen-0-muster-a: 5 Texte unter 4,5:1
+   li. «Bereich A» #FFFFFF auf #FFFFFF 1.00:1
+   li. «Gemeinsamer Anteil» #FFFFFF auf #FFFFFF 1.00:1
+   li. «Bereich B» #FFFFFF auf #FFFFFF 1.00:1
+   summary. «Grenzen des Modells» #2B4FE0 auf #182866 2.15:1
+   a.puk-link--inline «Langbeschreibung zu Abbildung » #2B4FE0 auf #182866 2.15:1
+light-375 ruhe n offen-1-muster-b: 10 Texte unter 4,5:1
+   span.puk-vis-cycle__n «Station 1» #FFFFFF auf #FFFFFF 1.00:1
+   span.puk-vis-cycle__name «Anlass» #FFFFFF auf #FFFFFF 1.00:1
+   span.puk-vis-cycle__n «Station 2» #FFFFFF auf #FFFFFF 1.00:1
+   span.puk-vis-cycle__name «Reaktion» #FFFFFF auf #FFFFFF 1.00:1
+   span.puk-vis-cycle__n «Station 3» #FFFFFF auf #FFFFFF 1.00:1
+   span.puk-vis-cycle__name «Folge» #FFFFFF auf #FFFFFF 1.00:1
+   span.puk-vis-cycle__key «Ansatzpunkt» #FFFFFF auf #FFFFFF 1.00:1
+   span.puk-vis-cycle__n «Station 4» #FFFFFF auf #FFFFFF 1.00:1
+   span.puk-vis-cycle__name «Rückwirkung» #FFFFFF auf #FFFFFF 1.00:1
+   summary. «Beispiel und Grenzen des Model» #2B4FE0 auf #182866 2.15:1
+light-375 ruhe n offen-2-muster-c: 1 Texte unter 4,5:1
+   summary. «Grenzen des Modells» #2B4FE0 auf #182866 2.15:1
+light-375 ruhe n offen-3-muster-e: 16 Texte unter 4,5:1
+   p.puk-vis-compare__key «Option A · durchgezogene Linie» #D8E0FF auf #FFFFFF 1.31:1
+   h3. «Musteroption A» #FFFFFF auf #FFFFFF 1.00:1
+   dt. «Merkmal 1» #D8E0FF auf #FFFFFF 1.31:1
+   dd. «Ausprägung A1» #FFFFFF auf #FFFFFF 1.00:1
+   dt. «Merkmal 2» #D8E0FF auf #FFFFFF 1.31:1
+   dd. «Ausprägung A2» #FFFFFF auf #FFFFFF 1.00:1
+   dt. «Merkmal 3» #D8E0FF auf #FFFFFF 1.31:1
+   dd. «Ausprägung A3» #FFFFFF auf #FFFFFF 1.00:1
+   p.puk-vis-compare__key «Option B · gestrichelte Linie» #D8E0FF auf #FFFFFF 1.31:1
+   h3. «Musteroption B» #FFFFFF auf #FFFFFF 1.00:1
+   dd. «Ausprägung B1» #FFFFFF auf #FFFFFF 1.00:1
+   dd. «Ausprägung B2» #FFFFFF auf #FFFFFF 1.00:1
+light-375 ruhe n offen-4-muster-f: 8 Texte unter 4,5:1
+   li.puk-vis-decision__branch «Ja: Weg A» #FFFFFF auf #FFFFFF 1.00:1
+   strong. «Ja:» #FFFFFF auf #FFFFFF 1.00:1
+   li.puk-vis-decision__branch «Nein: weiter zu Frage 2» #FFFFFF auf #FFFFFF 1.00:1
+   strong. «Nein:» #FFFFFF auf #FFFFFF 1.00:1
+   li.puk-vis-decision__branch «Ja: Weg B» #FFFFFF auf #FFFFFF 1.00:1
+   li.puk-vis-decision__branch «Nein: Weg C» #FFFFFF auf #FFFFFF 1.00:1
+light-375 ruhe n o3: 2 Texte unter 4,5:1
+   button. «Erster» #222222 auf #182866 1.16:1
+   span. «Menü» #3C64FF auf #182866 2.91:1
+light-1280 ruhe b muster-1-muster-a: 3 Texte unter 4,5:1
+   h3. «Langbeschreibung zu Abbildung » #FFFFFF auf #FFFFFF 1.00:1
+   p. «Zwei gleich grosse Kreise lieg» #FFFFFF auf #FFFFFF 1.00:1
+   p. «Die Überlappung in der Mitte i» #FFFFFF auf #FFFFFF 1.00:1
+light-1280 ruhe b muster-2-muster-b: 2 Texte unter 4,5:1
+   strong. «Leserichtung:» #FFFFFF auf #F7F7F7 1.07:1
+   span. «im Uhrzeigersinn, beginnend ob» #FFFFFF auf #F7F7F7 1.07:1
+light-1280 ruhe b muster-3-muster-c: 5 Texte unter 4,5:1
+   p. «Ein Anliegen wird formuliert.» #FFFFFF auf #F7F7F7 1.07:1
+   p. «Offene Fragen werden gesammelt» #FFFFFF auf #F7F7F7 1.07:1
+   p. «Ein gemeinsamer Plan wird fest» #FFFFFF auf #F7F7F7 1.07:1
+   p. «Nur bei Bedarf wird ein Thema » #FFFFFF auf #F7F7F7 1.07:1
+   p. «Das Erreichte wird gemeinsam b» #FFFFFF auf #F7F7F7 1.07:1
+light-1280 ruhe b muster-4-muster-d: 10 Texte unter 4,5:1
+   p.puk-vis-label «Abbildung 4 · Ein freier Abend» #222222 auf #3C64FF 3.38:1
+   p.puk-vis-kern «Auch an einem freien Abend ble» #222222 auf #3C64FF 3.38:1
+   p.puk-vis-short «Das Buch liegt bereit, der Tee» #222222 auf #3C64FF 3.38:1
+   p.puk-vis-scene__say ««Vielleicht ruft sie gleich an» #222222 auf #3C64FF 3.38:1
+   p.puk-vis-scene__say ««Eigentlich wollte ich lesen.»» #222222 auf #3C64FF 3.38:1
+   summary. «Grenzen des Bildes» #2B4FE0 auf #3C64FF 1.35:1
+   p. «Nicht alle Angehörigen erleben» #222222 auf #3C64FF 3.38:1
+   p.puk-sr «Zeichnung eines Tisches am Abe» #222222 auf #3C64FF 3.38:1
+   p. «Eigene didaktische Darstellung» #222222 auf #3C64FF 3.38:1
+   strong. «Eigene didaktische Darstellung» #222222 auf #3C64FF 3.38:1
+light-1280 ruhe b muster-5-muster-e: 8 Texte unter 4,5:1
+   p.puk-vis-compare__key «Option A · durchgezogene Linie» #FFFFFF auf #FFFFFF 1.00:1
+   dt. «Merkmal 1» #FFFFFF auf #FFFFFF 1.00:1
+   dt. «Merkmal 2» #FFFFFF auf #FFFFFF 1.00:1
+   dt. «Merkmal 3» #FFFFFF auf #FFFFFF 1.00:1
+   p.puk-vis-compare__key «Option B · gestrichelte Linie» #FFFFFF auf #FFFFFF 1.00:1
+light-1280 ruhe b muster-7-puk-vis-wide: 10 Texte unter 4,5:1
+   h3. «Hat der Inhalt mehrere eigenst» #FFFFFF auf #FFFFFF 1.00:1
+   p. «Ja: Einstiegsseite plus getren» #FFFFFF auf #FFFFFF 1.00:1
+   h3. «Richtet er sich an mehrere Zie» #FFFFFF auf #FFFFFF 1.00:1
+   p. «Ja: getrennte Lesepfade ab der» #FFFFFF auf #FFFFFF 1.00:1
+   h3. «Hat er mehr als acht Hauptkapi» #FFFFFF auf #FFFFFF 1.00:1
+   p. «Ja: aufteilen und im Visualisi» #FFFFFF auf #FFFFFF 1.00:1
+   h3. «Baut die Erklärung Schritt für» #FFFFFF auf #FFFFFF 1.00:1
+   p. «Ja: eine Langformseite mit Kap» #FFFFFF auf #FFFFFF 1.00:1
+   h3. «Wird der vollständige Bericht » #FFFFFF auf #FFFFFF 1.00:1
+   p. «Ja: Vollbericht zusätzlich als» #FFFFFF auf #FFFFFF 1.00:1
+light-1280 ruhe b offen-0-muster-a: 12 Texte unter 4,5:1
+   p.puk-vis-label «Abbildung 1 · Zwei Bereiche mi» #222222 auf #3C64FF 3.38:1
+   p.puk-vis-kern «Zwei Bereiche haben einen Teil» #222222 auf #3C64FF 3.38:1
+   p.puk-vis-short «Musterinhalt: Die Lage der Kre» #222222 auf #3C64FF 3.38:1
+   li. «Bereich A» #222222 auf #3C64FF 3.38:1
+   li. «Gemeinsamer Anteil» #222222 auf #3C64FF 3.38:1
+   li. «Bereich B» #222222 auf #3C64FF 3.38:1
+   summary. «Grenzen des Modells» #2B4FE0 auf #3C64FF 1.35:1
+   p. «Die Darstellung zeigt nur, das» #222222 auf #3C64FF 3.38:1
+   p.puk-sr «Bereich A (durchgezogene Linie» #222222 auf #3C64FF 3.38:1
+   p. «Eigene didaktische Darstellung» #222222 auf #3C64FF 3.38:1
+   strong. «Eigene didaktische Darstellung» #222222 auf #3C64FF 3.38:1
+   a.puk-link--inline «Langbeschreibung zu Abbildung » #2B4FE0 auf #3C64FF 1.35:1
+light-1280 ruhe b offen-1-muster-b: 11 Texte unter 4,5:1
+   p.puk-vis-label «Abbildung 2 · Kreislauf mit vi» #222222 auf #3C64FF 3.38:1
+   p.puk-vis-kern «Was am Ende geschieht, wirkt a» #222222 auf #3C64FF 3.38:1
+   p.puk-vis-short «Musterinhalt: Vier Stationen f» #222222 auf #3C64FF 3.38:1
+   p.puk-vis-ansatz «Ansatzpunkt für Angehörige · b» #222222 auf #3C64FF 3.38:1
+   span.puk-vis-ansatz__key «Ansatzpunkt für Angehörige · b» #222222 auf #3C64FF 3.38:1
+   summary. «Beispiel und Grenzen des Model» #2B4FE0 auf #3C64FF 1.35:1
+   p. «Die Pfeile zeigen nur die Rich» #222222 auf #3C64FF 3.38:1
+   p.puk-sr «Textfassung: Station 1 «Anlass» #222222 auf #3C64FF 3.38:1
+   strong. «Textfassung:» #222222 auf #3C64FF 3.38:1
+   p. «Eigene didaktische Darstellung» #222222 auf #3C64FF 3.38:1
+   strong. «Eigene didaktische Darstellung» #222222 auf #3C64FF 3.38:1
+light-1280 ruhe b offen-2-muster-c: 20 Texte unter 4,5:1
+   p.puk-vis-label «Abbildung 3 · Musterpfad in fü» #222222 auf #3C64FF 3.38:1
+   p.puk-vis-kern «Der Ablauf hat eine feste Reih» #222222 auf #3C64FF 3.38:1
+   p.puk-vis-short «Musterinhalt: Nummer und Linie» #222222 auf #3C64FF 3.38:1
+   span.puk-vis-path__n «Schritt 1 von 5» #222222 auf #3C64FF 3.38:1
+   h3. «Anfrage» #222222 auf #3C64FF 3.38:1
+   span.puk-vis-path__n «Schritt 2 von 5» #222222 auf #3C64FF 3.38:1
+   h3. «Klärung» #222222 auf #3C64FF 3.38:1
+   p.puk-vis-ansatz «Ansatzpunkt für AngehörigeMust» #222222 auf #3C64FF 3.38:1
+   span.puk-vis-ansatz__key «Ansatzpunkt für Angehörige» #222222 auf #3C64FF 3.38:1
+   span.puk-vis-path__n «Schritt 3 von 5» #222222 auf #3C64FF 3.38:1
+   h3. «Planung» #222222 auf #3C64FF 3.38:1
+   span.puk-vis-path__n «Schritt 4 von 5 · optional» #222222 auf #3C64FF 3.38:1
+light-1280 ruhe b offen-3-muster-e: 14 Texte unter 4,5:1
+   p.puk-vis-label «Abbildung 5 · Zwei Musteroptio» #222222 auf #3C64FF 3.38:1
+   p.puk-vis-kern «Zwei Optionen unterscheiden si» #222222 auf #3C64FF 3.38:1
+   p.puk-vis-short «Musterinhalt: Beide Spalten ne» #222222 auf #3C64FF 3.38:1
+   p.puk-vis-compare__key «Option A · durchgezogene Linie» #FFFFFF auf #FFFFFF 1.00:1
+   dt. «Merkmal 1» #FFFFFF auf #FFFFFF 1.00:1
+   dt. «Merkmal 2» #FFFFFF auf #FFFFFF 1.00:1
+   dt. «Merkmal 3» #FFFFFF auf #FFFFFF 1.00:1
+   p.puk-vis-compare__key «Option B · gestrichelte Linie» #FFFFFF auf #FFFFFF 1.00:1
+   p.puk-sr «Option A und Option B werden n» #222222 auf #3C64FF 3.38:1
+   p. «Eigene didaktische Darstellung» #222222 auf #3C64FF 3.38:1
+   strong. «Eigene didaktische Darstellung» #222222 auf #3C64FF 3.38:1
+light-1280 ruhe b offen-4-muster-f: 10 Texte unter 4,5:1
+   p.puk-vis-label «Abbildung 6 · Musterweg mit zw» #222222 auf #3C64FF 3.38:1
+   p.puk-vis-kern «Zwei Fragen führen zu genau ei» #222222 auf #3C64FF 3.38:1
+   p.puk-vis-short «Musterinhalt: Jede Frage hat z» #222222 auf #3C64FF 3.38:1
+   span.puk-vis-decision__n «Frage 1 von 2» #222222 auf #3C64FF 3.38:1
+   h3. «Trifft Bedingung 1 zu?» #222222 auf #3C64FF 3.38:1
+   span.puk-vis-decision__n «Frage 2 von 2» #222222 auf #3C64FF 3.38:1
+   h3. «Trifft Bedingung 2 zu?» #222222 auf #3C64FF 3.38:1
+   p.puk-sr «Frage 1: Bei Ja folgt Weg A, b» #222222 auf #3C64FF 3.38:1
+   p. «Eigene didaktische Darstellung» #222222 auf #3C64FF 3.38:1
+   strong. «Eigene didaktische Darstellung» #222222 auf #3C64FF 3.38:1
+light-1280 ruhe b o3: 6 Texte unter 4,5:1
+   button. «Erster» #222222 auf #3C64FF 3.38:1
+   span. «Kontrollkästchen» #222222 auf #3C64FF 3.38:1
+   span. «Optionsfeld» #222222 auf #3C64FF 3.38:1
+   span. «Schalter» #222222 auf #3C64FF 3.38:1
+   label. «Feldbeschriftung» #222222 auf #3C64FF 3.38:1
+   span. «Menü» #3C64FF auf #3C64FF 1.00:1
+light-1280 ruhe n muster-0-puk-vis-wide: 64 Texte unter 4,5:1
+   caption. «Beispiel eines Visualisierungs» #FFFFFF auf #FFFFFF 1.00:1
+   th. «Abschnitt» #FFFFFF auf #F7F7F7 1.07:1
+   th. «Erkenntnisziel» #FFFFFF auf #F7F7F7 1.07:1
+   th. «Gewähltes Format» #FFFFFF auf #F7F7F7 1.07:1
+   th. «Aussage oder Beziehung» #FFFFFF auf #F7F7F7 1.07:1
+   th. «Wirkung» #FFFFFF auf #F7F7F7 1.07:1
+   th. «Quelle bzw. Kennzeichnung» #FFFFFF auf #F7F7F7 1.07:1
+   th. «Alternativtext oder Langbeschr» #FFFFFF auf #F7F7F7 1.07:1
+   th. «Ansatzpunkt für Angehörige» #FFFFFF auf #F7F7F7 1.07:1
+   th. «Begründung» #FFFFFF auf #F7F7F7 1.07:1
+   th. «01 Orientierung» #FFFFFF auf #FFFFFF 1.00:1
+   td. «Wissen, worum es geht und was » #FFFFFF auf #FFFFFF 1.00:1
+light-1280 ruhe n muster-1-muster-a: 13 Texte unter 4,5:1
+   p.puk-vis-label «Abbildung 1 · Zwei Bereiche mi» #FFFFFF auf #F7F7F7 1.07:1
+   p.puk-vis-kern «Zwei Bereiche haben einen Teil» #FFFFFF auf #F7F7F7 1.07:1
+   p.puk-vis-short «Musterinhalt: Die Lage der Kre» #FFFFFF auf #F7F7F7 1.07:1
+   li. «Bereich A» #FFFFFF auf #F7F7F7 1.07:1
+   li. «Gemeinsamer Anteil» #FFFFFF auf #F7F7F7 1.07:1
+   li. «Bereich B» #FFFFFF auf #F7F7F7 1.07:1
+   p. «Die Darstellung zeigt nur, das» #FFFFFF auf #F7F7F7 1.07:1
+   p.puk-sr «Bereich A (durchgezogene Linie» #FFFFFF auf #F7F7F7 1.07:1
+   p. «Eigene didaktische Darstellung» #FFFFFF auf #F7F7F7 1.07:1
+   strong. «Eigene didaktische Darstellung» #FFFFFF auf #F7F7F7 1.07:1
+   h3. «Langbeschreibung zu Abbildung » #FFFFFF auf #FFFFFF 1.00:1
+   p. «Zwei gleich grosse Kreise lieg» #FFFFFF auf #FFFFFF 1.00:1
+light-1280 ruhe n muster-2-muster-b: 21 Texte unter 4,5:1
+   p.puk-vis-label «Abbildung 2 · Kreislauf mit vi» #FFFFFF auf #F7F7F7 1.07:1
+   p.puk-vis-kern «Was am Ende geschieht, wirkt a» #FFFFFF auf #F7F7F7 1.07:1
+   p.puk-vis-short «Musterinhalt: Vier Stationen f» #FFFFFF auf #F7F7F7 1.07:1
+   strong. «Leserichtung:» #FFFFFF auf #F7F7F7 1.07:1
+   span. «im Uhrzeigersinn, beginnend ob» #FFFFFF auf #F7F7F7 1.07:1
+   span.puk-vis-cycle__n «Station 1» #FFFFFF auf #FFFFFF 1.00:1
+   span.puk-vis-cycle__name «Anlass» #FFFFFF auf #FFFFFF 1.00:1
+   span.puk-vis-cycle__n «Station 2» #FFFFFF auf #FFFFFF 1.00:1
+   span.puk-vis-cycle__name «Reaktion» #FFFFFF auf #FFFFFF 1.00:1
+   span.puk-vis-cycle__n «Station 3» #FFFFFF auf #FFFFFF 1.00:1
+   span.puk-vis-cycle__name «Folge» #FFFFFF auf #FFFFFF 1.00:1
+   span.puk-vis-cycle__key «Ansatzpunkt» #FFFFFF auf #FFFFFF 1.00:1
+light-1280 ruhe n muster-3-muster-c: 24 Texte unter 4,5:1
+   p.puk-vis-label «Abbildung 3 · Musterpfad in fü» #FFFFFF auf #F7F7F7 1.07:1
+   p.puk-vis-kern «Der Ablauf hat eine feste Reih» #FFFFFF auf #F7F7F7 1.07:1
+   p.puk-vis-short «Musterinhalt: Nummer und Linie» #FFFFFF auf #F7F7F7 1.07:1
+   span.puk-vis-path__n «Schritt 1 von 5» #FFFFFF auf #F7F7F7 1.07:1
+   h3. «Anfrage» #FFFFFF auf #F7F7F7 1.07:1
+   p. «Ein Anliegen wird formuliert.» #D8E0FF auf #F7F7F7 1.22:1
+   span.puk-vis-path__n «Schritt 2 von 5» #FFFFFF auf #F7F7F7 1.07:1
+   h3. «Klärung» #FFFFFF auf #F7F7F7 1.07:1
+   p. «Offene Fragen werden gesammelt» #D8E0FF auf #F7F7F7 1.22:1
+   p.puk-vis-ansatz «Ansatzpunkt für AngehörigeMust» #FFFFFF auf #F7F7F7 1.07:1
+   span.puk-vis-ansatz__key «Ansatzpunkt für Angehörige» #FFFFFF auf #F7F7F7 1.07:1
+   span.puk-vis-path__n «Schritt 3 von 5» #FFFFFF auf #F7F7F7 1.07:1
+light-1280 ruhe n muster-4-muster-d: 1 Texte unter 4,5:1
+   summary. «Grenzen des Bildes» #2B4FE0 auf #182866 2.15:1
+light-1280 ruhe n muster-5-muster-e: 22 Texte unter 4,5:1
+   p.puk-vis-label «Abbildung 5 · Zwei Musteroptio» #FFFFFF auf #F7F7F7 1.07:1
+   p.puk-vis-kern «Zwei Optionen unterscheiden si» #FFFFFF auf #F7F7F7 1.07:1
+   p.puk-vis-short «Musterinhalt: Beide Spalten ne» #FFFFFF auf #F7F7F7 1.07:1
+   p.puk-vis-compare__key «Option A · durchgezogene Linie» #D8E0FF auf #FFFFFF 1.31:1
+   h3. «Musteroption A» #FFFFFF auf #FFFFFF 1.00:1
+   dt. «Merkmal 1» #D8E0FF auf #FFFFFF 1.31:1
+   dd. «Ausprägung A1» #FFFFFF auf #FFFFFF 1.00:1
+   dt. «Merkmal 2» #D8E0FF auf #FFFFFF 1.31:1
+   dd. «Ausprägung A2» #FFFFFF auf #FFFFFF 1.00:1
+   dt. «Merkmal 3» #D8E0FF auf #FFFFFF 1.31:1
+   dd. «Ausprägung A3» #FFFFFF auf #FFFFFF 1.00:1
+   p.puk-vis-compare__key «Option B · gestrichelte Linie» #D8E0FF auf #FFFFFF 1.31:1
+light-1280 ruhe n muster-6-muster-f: 18 Texte unter 4,5:1
+   p.puk-vis-label «Abbildung 6 · Musterweg mit zw» #FFFFFF auf #F7F7F7 1.07:1
+   p.puk-vis-kern «Zwei Fragen führen zu genau ei» #FFFFFF auf #F7F7F7 1.07:1
+   p.puk-vis-short «Musterinhalt: Jede Frage hat z» #FFFFFF auf #F7F7F7 1.07:1
+   span.puk-vis-decision__n «Frage 1 von 2» #FFFFFF auf #F7F7F7 1.07:1
+   h3. «Trifft Bedingung 1 zu?» #FFFFFF auf #F7F7F7 1.07:1
+   li.puk-vis-decision__branch «Ja: Weg A» #FFFFFF auf #FFFFFF 1.00:1
+   strong. «Ja:» #FFFFFF auf #FFFFFF 1.00:1
+   li.puk-vis-decision__branch «Nein: weiter zu Frage 2» #FFFFFF auf #FFFFFF 1.00:1
+   strong. «Nein:» #FFFFFF auf #FFFFFF 1.00:1
+   span.puk-vis-decision__n «Frage 2 von 2» #FFFFFF auf #F7F7F7 1.07:1
+   h3. «Trifft Bedingung 2 zu?» #FFFFFF auf #F7F7F7 1.07:1
+   li.puk-vis-decision__branch «Ja: Weg B» #FFFFFF auf #FFFFFF 1.00:1
+light-1280 ruhe n muster-7-puk-vis-wide: 10 Texte unter 4,5:1
+   h3. «Hat der Inhalt mehrere eigenst» #FFFFFF auf #FFFFFF 1.00:1
+   p. «Ja: Einstiegsseite plus getren» #FFFFFF auf #FFFFFF 1.00:1
+   h3. «Richtet er sich an mehrere Zie» #FFFFFF auf #FFFFFF 1.00:1
+   p. «Ja: getrennte Lesepfade ab der» #FFFFFF auf #FFFFFF 1.00:1
+   h3. «Hat er mehr als acht Hauptkapi» #FFFFFF auf #FFFFFF 1.00:1
+   p. «Ja: aufteilen und im Visualisi» #FFFFFF auf #FFFFFF 1.00:1
+   h3. «Baut die Erklärung Schritt für» #FFFFFF auf #FFFFFF 1.00:1
+   p. «Ja: eine Langformseite mit Kap» #FFFFFF auf #FFFFFF 1.00:1
+   h3. «Wird der vollständige Bericht » #FFFFFF auf #FFFFFF 1.00:1
+   p. «Ja: Vollbericht zusätzlich als» #FFFFFF auf #FFFFFF 1.00:1
+light-1280 ruhe n offen-0-muster-a: 2 Texte unter 4,5:1
+   summary. «Grenzen des Modells» #2B4FE0 auf #182866 2.15:1
+   a.puk-link--inline «Langbeschreibung zu Abbildung » #2B4FE0 auf #182866 2.15:1
+light-1280 ruhe n offen-1-muster-b: 10 Texte unter 4,5:1
+   span.puk-vis-cycle__n «Station 1» #FFFFFF auf #FFFFFF 1.00:1
+   span.puk-vis-cycle__name «Anlass» #FFFFFF auf #FFFFFF 1.00:1
+   span.puk-vis-cycle__n «Station 2» #FFFFFF auf #FFFFFF 1.00:1
+   span.puk-vis-cycle__name «Reaktion» #FFFFFF auf #FFFFFF 1.00:1
+   span.puk-vis-cycle__n «Station 3» #FFFFFF auf #FFFFFF 1.00:1
+   span.puk-vis-cycle__name «Folge» #FFFFFF auf #FFFFFF 1.00:1
+   span.puk-vis-cycle__key «Ansatzpunkt» #FFFFFF auf #FFFFFF 1.00:1
+   span.puk-vis-cycle__n «Station 4» #FFFFFF auf #FFFFFF 1.00:1
+   span.puk-vis-cycle__name «Rückwirkung» #FFFFFF auf #FFFFFF 1.00:1
+   summary. «Beispiel und Grenzen des Model» #2B4FE0 auf #182866 2.15:1
+light-1280 ruhe n offen-2-muster-c: 1 Texte unter 4,5:1
+   summary. «Grenzen des Modells» #2B4FE0 auf #182866 2.15:1
+light-1280 ruhe n offen-3-muster-e: 16 Texte unter 4,5:1
+   p.puk-vis-compare__key «Option A · durchgezogene Linie» #D8E0FF auf #FFFFFF 1.31:1
+   h3. «Musteroption A» #FFFFFF auf #FFFFFF 1.00:1
+   dt. «Merkmal 1» #D8E0FF auf #FFFFFF 1.31:1
+   dd. «Ausprägung A1» #FFFFFF auf #FFFFFF 1.00:1
+   dt. «Merkmal 2» #D8E0FF auf #FFFFFF 1.31:1
+   dd. «Ausprägung A2» #FFFFFF auf #FFFFFF 1.00:1
+   dt. «Merkmal 3» #D8E0FF auf #FFFFFF 1.31:1
+   dd. «Ausprägung A3» #FFFFFF auf #FFFFFF 1.00:1
+   p.puk-vis-compare__key «Option B · gestrichelte Linie» #D8E0FF auf #FFFFFF 1.31:1
+   h3. «Musteroption B» #FFFFFF auf #FFFFFF 1.00:1
+   dd. «Ausprägung B1» #FFFFFF auf #FFFFFF 1.00:1
+   dd. «Ausprägung B2» #FFFFFF auf #FFFFFF 1.00:1
+light-1280 ruhe n offen-4-muster-f: 8 Texte unter 4,5:1
+   li.puk-vis-decision__branch «Ja: Weg A» #FFFFFF auf #FFFFFF 1.00:1
+   strong. «Ja:» #FFFFFF auf #FFFFFF 1.00:1
+   li.puk-vis-decision__branch «Nein: weiter zu Frage 2» #FFFFFF auf #FFFFFF 1.00:1
+   strong. «Nein:» #FFFFFF auf #FFFFFF 1.00:1
+   li.puk-vis-decision__branch «Ja: Weg B» #FFFFFF auf #FFFFFF 1.00:1
+   li.puk-vis-decision__branch «Nein: Weg C» #FFFFFF auf #FFFFFF 1.00:1
+light-1280 ruhe n o3: 2 Texte unter 4,5:1
+   button. «Erster» #222222 auf #182866 1.16:1
+   span. «Menü» #3C64FF auf #182866 2.91:1
+kontrast-375 ruhe b muster-1-muster-a: 3 Texte unter 4,5:1
+   h3. «Langbeschreibung zu Abbildung » #FFFFFF auf #FFFFFF 1.00:1
+   p. «Zwei gleich grosse Kreise lieg» #FFFFFF auf #FFFFFF 1.00:1
+   p. «Die Überlappung in der Mitte i» #FFFFFF auf #FFFFFF 1.00:1
+kontrast-375 ruhe b muster-2-muster-b: 2 Texte unter 4,5:1
+   strong. «Leserichtung:» #FFFFFF auf #F7F7F7 1.07:1
+   span. «von oben nach unten; nach Stat» #FFFFFF auf #F7F7F7 1.07:1
+kontrast-375 ruhe b muster-3-muster-c: 5 Texte unter 4,5:1
+   p. «Ein Anliegen wird formuliert.» #FFFFFF auf #F7F7F7 1.07:1
+   p. «Offene Fragen werden gesammelt» #FFFFFF auf #F7F7F7 1.07:1
+   p. «Ein gemeinsamer Plan wird fest» #FFFFFF auf #F7F7F7 1.07:1
+   p. «Nur bei Bedarf wird ein Thema » #FFFFFF auf #F7F7F7 1.07:1
+   p. «Das Erreichte wird gemeinsam b» #FFFFFF auf #F7F7F7 1.07:1
+kontrast-375 ruhe b muster-4-muster-d: 10 Texte unter 4,5:1
+   p.puk-vis-label «Abbildung 4 · Ein freier Abend» #222222 auf #0028C2 1.58:1
+   p.puk-vis-kern «Auch an einem freien Abend ble» #222222 auf #0028C2 1.58:1
+   p.puk-vis-short «Das Buch liegt bereit, der Tee» #222222 auf #0028C2 1.58:1
+   p.puk-vis-scene__say ««Vielleicht ruft sie gleich an» #222222 auf #0028C2 1.58:1
+   p.puk-vis-scene__say ««Eigentlich wollte ich lesen.»» #222222 auf #0028C2 1.58:1
+   summary. «Grenzen des Bildes» #001F99 auf #0028C2 1.26:1
+   p. «Nicht alle Angehörigen erleben» #222222 auf #0028C2 1.58:1
+   p.puk-sr «Zeichnung eines Tisches am Abe» #222222 auf #0028C2 1.58:1
+   p. «Eigene didaktische Darstellung» #222222 auf #0028C2 1.58:1
+   strong. «Eigene didaktische Darstellung» #222222 auf #0028C2 1.58:1
+kontrast-375 ruhe b muster-5-muster-e: 8 Texte unter 4,5:1
+   p.puk-vis-compare__key «Option A · durchgezogene Linie» #FFFFFF auf #FFFFFF 1.00:1
+   dt. «Merkmal 1» #FFFFFF auf #FFFFFF 1.00:1
+   dt. «Merkmal 2» #FFFFFF auf #FFFFFF 1.00:1
+   dt. «Merkmal 3» #FFFFFF auf #FFFFFF 1.00:1
+   p.puk-vis-compare__key «Option B · gestrichelte Linie» #FFFFFF auf #FFFFFF 1.00:1
+kontrast-375 ruhe b muster-7-puk-vis-wide: 10 Texte unter 4,5:1
+   h3. «Hat der Inhalt mehrere eigenst» #FFFFFF auf #FFFFFF 1.00:1
+   p. «Ja: Einstiegsseite plus getren» #FFFFFF auf #FFFFFF 1.00:1
+   h3. «Richtet er sich an mehrere Zie» #FFFFFF auf #FFFFFF 1.00:1
+   p. «Ja: getrennte Lesepfade ab der» #FFFFFF auf #FFFFFF 1.00:1
+   h3. «Hat er mehr als acht Hauptkapi» #FFFFFF auf #FFFFFF 1.00:1
+   p. «Ja: aufteilen und im Visualisi» #FFFFFF auf #FFFFFF 1.00:1
+   h3. «Baut die Erklärung Schritt für» #FFFFFF auf #FFFFFF 1.00:1
+   p. «Ja: eine Langformseite mit Kap» #FFFFFF auf #FFFFFF 1.00:1
+   h3. «Wird der vollständige Bericht » #FFFFFF auf #FFFFFF 1.00:1
+   p. «Ja: Vollbericht zusätzlich als» #FFFFFF auf #FFFFFF 1.00:1
+kontrast-375 ruhe b offen-0-muster-a: 9 Texte unter 4,5:1
+   p.puk-vis-label «Abbildung 1 · Zwei Bereiche mi» #222222 auf #0028C2 1.58:1
+   p.puk-vis-kern «Zwei Bereiche haben einen Teil» #222222 auf #0028C2 1.58:1
+   p.puk-vis-short «Musterinhalt: Die Lage der Kre» #222222 auf #0028C2 1.58:1
+   summary. «Grenzen des Modells» #001F99 auf #0028C2 1.26:1
+   p. «Die Darstellung zeigt nur, das» #222222 auf #0028C2 1.58:1
+   p.puk-sr «Bereich A (durchgezogene Linie» #222222 auf #0028C2 1.58:1
+   p. «Eigene didaktische Darstellung» #222222 auf #0028C2 1.58:1
+   strong. «Eigene didaktische Darstellung» #222222 auf #0028C2 1.58:1
+   a.puk-link--inline «Langbeschreibung zu Abbildung » #001F99 auf #0028C2 1.26:1
+kontrast-375 ruhe b offen-1-muster-b: 12 Texte unter 4,5:1
+   p.puk-vis-label «Abbildung 2 · Kreislauf mit vi» #222222 auf #0028C2 1.58:1
+   p.puk-vis-kern «Was am Ende geschieht, wirkt a» #222222 auf #0028C2 1.58:1
+   p.puk-vis-short «Musterinhalt: Vier Stationen f» #222222 auf #0028C2 1.58:1
+   p.puk-vis-cycle__loop «Nach Station 4: zurück zu Stat» #222222 auf #0028C2 1.58:1
+   p.puk-vis-ansatz «Ansatzpunkt für Angehörige · b» #222222 auf #0028C2 1.58:1
+   span.puk-vis-ansatz__key «Ansatzpunkt für Angehörige · b» #222222 auf #0028C2 1.58:1
+   summary. «Beispiel und Grenzen des Model» #001F99 auf #0028C2 1.26:1
+   p. «Die Pfeile zeigen nur die Rich» #222222 auf #0028C2 1.58:1
+   p.puk-sr «Textfassung: Station 1 «Anlass» #222222 auf #0028C2 1.58:1
+   strong. «Textfassung:» #222222 auf #0028C2 1.58:1
+   p. «Eigene didaktische Darstellung» #222222 auf #0028C2 1.58:1
+   strong. «Eigene didaktische Darstellung» #222222 auf #0028C2 1.58:1
+kontrast-375 ruhe b offen-2-muster-c: 20 Texte unter 4,5:1
+   p.puk-vis-label «Abbildung 3 · Musterpfad in fü» #222222 auf #0028C2 1.58:1
+   p.puk-vis-kern «Der Ablauf hat eine feste Reih» #222222 auf #0028C2 1.58:1
+   p.puk-vis-short «Musterinhalt: Nummer und Linie» #222222 auf #0028C2 1.58:1
+   span.puk-vis-path__n «Schritt 1 von 5» #222222 auf #0028C2 1.58:1
+   h3. «Anfrage» #222222 auf #0028C2 1.58:1
+   span.puk-vis-path__n «Schritt 2 von 5» #222222 auf #0028C2 1.58:1
+   h3. «Klärung» #222222 auf #0028C2 1.58:1
+   p.puk-vis-ansatz «Ansatzpunkt für AngehörigeMust» #222222 auf #0028C2 1.58:1
+   span.puk-vis-ansatz__key «Ansatzpunkt für Angehörige» #222222 auf #0028C2 1.58:1
+   span.puk-vis-path__n «Schritt 3 von 5» #222222 auf #0028C2 1.58:1
+   h3. «Planung» #222222 auf #0028C2 1.58:1
+   span.puk-vis-path__n «Schritt 4 von 5 · optional» #222222 auf #0028C2 1.58:1
+kontrast-375 ruhe b offen-3-muster-e: 14 Texte unter 4,5:1
+   p.puk-vis-label «Abbildung 5 · Zwei Musteroptio» #222222 auf #0028C2 1.58:1
+   p.puk-vis-kern «Zwei Optionen unterscheiden si» #222222 auf #0028C2 1.58:1
+   p.puk-vis-short «Musterinhalt: Beide Spalten ne» #222222 auf #0028C2 1.58:1
+   p.puk-vis-compare__key «Option A · durchgezogene Linie» #FFFFFF auf #FFFFFF 1.00:1
+   dt. «Merkmal 1» #FFFFFF auf #FFFFFF 1.00:1
+   dt. «Merkmal 2» #FFFFFF auf #FFFFFF 1.00:1
+   dt. «Merkmal 3» #FFFFFF auf #FFFFFF 1.00:1
+   p.puk-vis-compare__key «Option B · gestrichelte Linie» #FFFFFF auf #FFFFFF 1.00:1
+   p.puk-sr «Option A und Option B werden n» #222222 auf #0028C2 1.58:1
+   p. «Eigene didaktische Darstellung» #222222 auf #0028C2 1.58:1
+   strong. «Eigene didaktische Darstellung» #222222 auf #0028C2 1.58:1
+kontrast-375 ruhe b offen-4-muster-f: 10 Texte unter 4,5:1
+   p.puk-vis-label «Abbildung 6 · Musterweg mit zw» #222222 auf #0028C2 1.58:1
+   p.puk-vis-kern «Zwei Fragen führen zu genau ei» #222222 auf #0028C2 1.58:1
+   p.puk-vis-short «Musterinhalt: Jede Frage hat z» #222222 auf #0028C2 1.58:1
+   span.puk-vis-decision__n «Frage 1 von 2» #222222 auf #0028C2 1.58:1
+   h3. «Trifft Bedingung 1 zu?» #222222 auf #0028C2 1.58:1
+   span.puk-vis-decision__n «Frage 2 von 2» #222222 auf #0028C2 1.58:1
+   h3. «Trifft Bedingung 2 zu?» #222222 auf #0028C2 1.58:1
+   p.puk-sr «Frage 1: Bei Ja folgt Weg A, b» #222222 auf #0028C2 1.58:1
+   p. «Eigene didaktische Darstellung» #222222 auf #0028C2 1.58:1
+   strong. «Eigene didaktische Darstellung» #222222 auf #0028C2 1.58:1
+kontrast-375 ruhe b o3: 6 Texte unter 4,5:1
+   button. «Erster» #222222 auf #0028C2 1.58:1
+   span. «Kontrollkästchen» #222222 auf #0028C2 1.58:1
+   span. «Optionsfeld» #222222 auf #0028C2 1.58:1
+   span. «Schalter» #222222 auf #0028C2 1.58:1
+   label. «Feldbeschriftung» #222222 auf #0028C2 1.58:1
+   span. «Menü» #0028C2 auf #0028C2 1.00:1
+kontrast-375 ruhe n muster-0-puk-vis-wide: 64 Texte unter 4,5:1
+   caption. «Beispiel eines Visualisierungs» #FFFFFF auf #FFFFFF 1.00:1
+   th. «Abschnitt» #FFFFFF auf #F7F7F7 1.07:1
+   th. «Erkenntnisziel» #FFFFFF auf #F7F7F7 1.07:1
+   th. «Gewähltes Format» #FFFFFF auf #F7F7F7 1.07:1
+   th. «Aussage oder Beziehung» #FFFFFF auf #F7F7F7 1.07:1
+   th. «Wirkung» #FFFFFF auf #F7F7F7 1.07:1
+   th. «Quelle bzw. Kennzeichnung» #FFFFFF auf #F7F7F7 1.07:1
+   th. «Alternativtext oder Langbeschr» #FFFFFF auf #F7F7F7 1.07:1
+   th. «Ansatzpunkt für Angehörige» #FFFFFF auf #F7F7F7 1.07:1
+   th. «Begründung» #FFFFFF auf #F7F7F7 1.07:1
+   th. «01 Orientierung» #FFFFFF auf #FFFFFF 1.00:1
+   td. «Wissen, worum es geht und was » #FFFFFF auf #FFFFFF 1.00:1
+kontrast-375 ruhe n muster-1-muster-a: 13 Texte unter 4,5:1
+   p.puk-vis-label «Abbildung 1 · Zwei Bereiche mi» #FFFFFF auf #F7F7F7 1.07:1
+   p.puk-vis-kern «Zwei Bereiche haben einen Teil» #FFFFFF auf #F7F7F7 1.07:1
+   p.puk-vis-short «Musterinhalt: Die Lage der Kre» #FFFFFF auf #F7F7F7 1.07:1
+   li. «Bereich A» #FFFFFF auf #FFFFFF 1.00:1
+   li. «Gemeinsamer Anteil» #FFFFFF auf #FFFFFF 1.00:1
+   li. «Bereich B» #FFFFFF auf #FFFFFF 1.00:1
+   p. «Die Darstellung zeigt nur, das» #FFFFFF auf #F7F7F7 1.07:1
+   p.puk-sr «Bereich A (durchgezogene Linie» #FFFFFF auf #F7F7F7 1.07:1
+   p. «Eigene didaktische Darstellung» #FFFFFF auf #F7F7F7 1.07:1
+   strong. «Eigene didaktische Darstellung» #FFFFFF auf #F7F7F7 1.07:1
+   h3. «Langbeschreibung zu Abbildung » #FFFFFF auf #FFFFFF 1.00:1
+   p. «Zwei gleich grosse Kreise lieg» #FFFFFF auf #FFFFFF 1.00:1
+kontrast-375 ruhe n muster-2-muster-b: 22 Texte unter 4,5:1
+   p.puk-vis-label «Abbildung 2 · Kreislauf mit vi» #FFFFFF auf #F7F7F7 1.07:1
+   p.puk-vis-kern «Was am Ende geschieht, wirkt a» #FFFFFF auf #F7F7F7 1.07:1
+   p.puk-vis-short «Musterinhalt: Vier Stationen f» #FFFFFF auf #F7F7F7 1.07:1
+   strong. «Leserichtung:» #FFFFFF auf #F7F7F7 1.07:1
+   span. «von oben nach unten; nach Stat» #FFFFFF auf #F7F7F7 1.07:1
+   span.puk-vis-cycle__n «Station 1» #FFFFFF auf #FFFFFF 1.00:1
+   span.puk-vis-cycle__name «Anlass» #FFFFFF auf #FFFFFF 1.00:1
+   span.puk-vis-cycle__n «Station 2» #FFFFFF auf #FFFFFF 1.00:1
+   span.puk-vis-cycle__name «Reaktion» #FFFFFF auf #FFFFFF 1.00:1
+   span.puk-vis-cycle__n «Station 3» #FFFFFF auf #FFFFFF 1.00:1
+   span.puk-vis-cycle__name «Folge» #FFFFFF auf #FFFFFF 1.00:1
+   span.puk-vis-cycle__key «Ansatzpunkt» #FFFFFF auf #FFFFFF 1.00:1
+kontrast-375 ruhe n muster-3-muster-c: 24 Texte unter 4,5:1
+   p.puk-vis-label «Abbildung 3 · Musterpfad in fü» #FFFFFF auf #F7F7F7 1.07:1
+   p.puk-vis-kern «Der Ablauf hat eine feste Reih» #FFFFFF auf #F7F7F7 1.07:1
+   p.puk-vis-short «Musterinhalt: Nummer und Linie» #FFFFFF auf #F7F7F7 1.07:1
+   span.puk-vis-path__n «Schritt 1 von 5» #FFFFFF auf #F7F7F7 1.07:1
+   h3. «Anfrage» #FFFFFF auf #F7F7F7 1.07:1
+   p. «Ein Anliegen wird formuliert.» #D8E0FF auf #F7F7F7 1.22:1
+   span.puk-vis-path__n «Schritt 2 von 5» #FFFFFF auf #F7F7F7 1.07:1
+   h3. «Klärung» #FFFFFF auf #F7F7F7 1.07:1
+   p. «Offene Fragen werden gesammelt» #D8E0FF auf #F7F7F7 1.22:1
+   p.puk-vis-ansatz «Ansatzpunkt für AngehörigeMust» #FFFFFF auf #F7F7F7 1.07:1
+   span.puk-vis-ansatz__key «Ansatzpunkt für Angehörige» #FFFFFF auf #F7F7F7 1.07:1
+   span.puk-vis-path__n «Schritt 3 von 5» #FFFFFF auf #F7F7F7 1.07:1
+kontrast-375 ruhe n muster-4-muster-d: 1 Texte unter 4,5:1
+   summary. «Grenzen des Bildes» #001F99 auf #182866 1.08:1
+kontrast-375 ruhe n muster-5-muster-e: 22 Texte unter 4,5:1
+   p.puk-vis-label «Abbildung 5 · Zwei Musteroptio» #FFFFFF auf #F7F7F7 1.07:1
+   p.puk-vis-kern «Zwei Optionen unterscheiden si» #FFFFFF auf #F7F7F7 1.07:1
+   p.puk-vis-short «Musterinhalt: Beide Spalten ne» #FFFFFF auf #F7F7F7 1.07:1
+   p.puk-vis-compare__key «Option A · durchgezogene Linie» #D8E0FF auf #FFFFFF 1.31:1
+   h3. «Musteroption A» #FFFFFF auf #FFFFFF 1.00:1
+   dt. «Merkmal 1» #D8E0FF auf #FFFFFF 1.31:1
+   dd. «Ausprägung A1» #FFFFFF auf #FFFFFF 1.00:1
+   dt. «Merkmal 2» #D8E0FF auf #FFFFFF 1.31:1
+   dd. «Ausprägung A2» #FFFFFF auf #FFFFFF 1.00:1
+   dt. «Merkmal 3» #D8E0FF auf #FFFFFF 1.31:1
+   dd. «Ausprägung A3» #FFFFFF auf #FFFFFF 1.00:1
+   p.puk-vis-compare__key «Option B · gestrichelte Linie» #D8E0FF auf #FFFFFF 1.31:1
+kontrast-375 ruhe n muster-6-muster-f: 18 Texte unter 4,5:1
+   p.puk-vis-label «Abbildung 6 · Musterweg mit zw» #FFFFFF auf #F7F7F7 1.07:1
+   p.puk-vis-kern «Zwei Fragen führen zu genau ei» #FFFFFF auf #F7F7F7 1.07:1
+   p.puk-vis-short «Musterinhalt: Jede Frage hat z» #FFFFFF auf #F7F7F7 1.07:1
+   span.puk-vis-decision__n «Frage 1 von 2» #FFFFFF auf #F7F7F7 1.07:1
+   h3. «Trifft Bedingung 1 zu?» #FFFFFF auf #F7F7F7 1.07:1
+   li.puk-vis-decision__branch «Ja: Weg A» #FFFFFF auf #FFFFFF 1.00:1
+   strong. «Ja:» #FFFFFF auf #FFFFFF 1.00:1
+   li.puk-vis-decision__branch «Nein: weiter zu Frage 2» #FFFFFF auf #FFFFFF 1.00:1
+   strong. «Nein:» #FFFFFF auf #FFFFFF 1.00:1
+   span.puk-vis-decision__n «Frage 2 von 2» #FFFFFF auf #F7F7F7 1.07:1
+   h3. «Trifft Bedingung 2 zu?» #FFFFFF auf #F7F7F7 1.07:1
+   li.puk-vis-decision__branch «Ja: Weg B» #FFFFFF auf #FFFFFF 1.00:1
+kontrast-375 ruhe n muster-7-puk-vis-wide: 10 Texte unter 4,5:1
+   h3. «Hat der Inhalt mehrere eigenst» #FFFFFF auf #FFFFFF 1.00:1
+   p. «Ja: Einstiegsseite plus getren» #FFFFFF auf #FFFFFF 1.00:1
+   h3. «Richtet er sich an mehrere Zie» #FFFFFF auf #FFFFFF 1.00:1
+   p. «Ja: getrennte Lesepfade ab der» #FFFFFF auf #FFFFFF 1.00:1
+   h3. «Hat er mehr als acht Hauptkapi» #FFFFFF auf #FFFFFF 1.00:1
+   p. «Ja: aufteilen und im Visualisi» #FFFFFF auf #FFFFFF 1.00:1
+   h3. «Baut die Erklärung Schritt für» #FFFFFF auf #FFFFFF 1.00:1
+   p. «Ja: eine Langformseite mit Kap» #FFFFFF auf #FFFFFF 1.00:1
+   h3. «Wird der vollständige Bericht » #FFFFFF auf #FFFFFF 1.00:1
+   p. «Ja: Vollbericht zusätzlich als» #FFFFFF auf #FFFFFF 1.00:1
+kontrast-375 ruhe n offen-0-muster-a: 5 Texte unter 4,5:1
+   li. «Bereich A» #FFFFFF auf #FFFFFF 1.00:1
+   li. «Gemeinsamer Anteil» #FFFFFF auf #FFFFFF 1.00:1
+   li. «Bereich B» #FFFFFF auf #FFFFFF 1.00:1
+   summary. «Grenzen des Modells» #001F99 auf #182866 1.08:1
+   a.puk-link--inline «Langbeschreibung zu Abbildung » #001F99 auf #182866 1.08:1
+kontrast-375 ruhe n offen-1-muster-b: 10 Texte unter 4,5:1
+   span.puk-vis-cycle__n «Station 1» #FFFFFF auf #FFFFFF 1.00:1
+   span.puk-vis-cycle__name «Anlass» #FFFFFF auf #FFFFFF 1.00:1
+   span.puk-vis-cycle__n «Station 2» #FFFFFF auf #FFFFFF 1.00:1
+   span.puk-vis-cycle__name «Reaktion» #FFFFFF auf #FFFFFF 1.00:1
+   span.puk-vis-cycle__n «Station 3» #FFFFFF auf #FFFFFF 1.00:1
+   span.puk-vis-cycle__name «Folge» #FFFFFF auf #FFFFFF 1.00:1
+   span.puk-vis-cycle__key «Ansatzpunkt» #FFFFFF auf #FFFFFF 1.00:1
+   span.puk-vis-cycle__n «Station 4» #FFFFFF auf #FFFFFF 1.00:1
+   span.puk-vis-cycle__name «Rückwirkung» #FFFFFF auf #FFFFFF 1.00:1
+   summary. «Beispiel und Grenzen des Model» #001F99 auf #182866 1.08:1
+kontrast-375 ruhe n offen-2-muster-c: 1 Texte unter 4,5:1
+   summary. «Grenzen des Modells» #001F99 auf #182866 1.08:1
+kontrast-375 ruhe n offen-3-muster-e: 16 Texte unter 4,5:1
+   p.puk-vis-compare__key «Option A · durchgezogene Linie» #D8E0FF auf #FFFFFF 1.31:1
+   h3. «Musteroption A» #FFFFFF auf #FFFFFF 1.00:1
+   dt. «Merkmal 1» #D8E0FF auf #FFFFFF 1.31:1
+   dd. «Ausprägung A1» #FFFFFF auf #FFFFFF 1.00:1
+   dt. «Merkmal 2» #D8E0FF auf #FFFFFF 1.31:1
+   dd. «Ausprägung A2» #FFFFFF auf #FFFFFF 1.00:1
+   dt. «Merkmal 3» #D8E0FF auf #FFFFFF 1.31:1
+   dd. «Ausprägung A3» #FFFFFF auf #FFFFFF 1.00:1
+   p.puk-vis-compare__key «Option B · gestrichelte Linie» #D8E0FF auf #FFFFFF 1.31:1
+   h3. «Musteroption B» #FFFFFF auf #FFFFFF 1.00:1
+   dd. «Ausprägung B1» #FFFFFF auf #FFFFFF 1.00:1
+   dd. «Ausprägung B2» #FFFFFF auf #FFFFFF 1.00:1
+kontrast-375 ruhe n offen-4-muster-f: 8 Texte unter 4,5:1
+   li.puk-vis-decision__branch «Ja: Weg A» #FFFFFF auf #FFFFFF 1.00:1
+   strong. «Ja:» #FFFFFF auf #FFFFFF 1.00:1
+   li.puk-vis-decision__branch «Nein: weiter zu Frage 2» #FFFFFF auf #FFFFFF 1.00:1
+   strong. «Nein:» #FFFFFF auf #FFFFFF 1.00:1
+   li.puk-vis-decision__branch «Ja: Weg B» #FFFFFF auf #FFFFFF 1.00:1
+   li.puk-vis-decision__branch «Nein: Weg C» #FFFFFF auf #FFFFFF 1.00:1
+kontrast-375 ruhe n o3: 2 Texte unter 4,5:1
+   button. «Erster» #222222 auf #182866 1.16:1
+   span. «Menü» #0028C2 auf #182866 1.36:1
+kontrast-1280 ruhe b muster-1-muster-a: 3 Texte unter 4,5:1
+   h3. «Langbeschreibung zu Abbildung » #FFFFFF auf #FFFFFF 1.00:1
+   p. «Zwei gleich grosse Kreise lieg» #FFFFFF auf #FFFFFF 1.00:1
+   p. «Die Überlappung in der Mitte i» #FFFFFF auf #FFFFFF 1.00:1
+kontrast-1280 ruhe b muster-2-muster-b: 2 Texte unter 4,5:1
+   strong. «Leserichtung:» #FFFFFF auf #F7F7F7 1.07:1
+   span. «im Uhrzeigersinn, beginnend ob» #FFFFFF auf #F7F7F7 1.07:1
+kontrast-1280 ruhe b muster-3-muster-c: 5 Texte unter 4,5:1
+   p. «Ein Anliegen wird formuliert.» #FFFFFF auf #F7F7F7 1.07:1
+   p. «Offene Fragen werden gesammelt» #FFFFFF auf #F7F7F7 1.07:1
+   p. «Ein gemeinsamer Plan wird fest» #FFFFFF auf #F7F7F7 1.07:1
+   p. «Nur bei Bedarf wird ein Thema » #FFFFFF auf #F7F7F7 1.07:1
+   p. «Das Erreichte wird gemeinsam b» #FFFFFF auf #F7F7F7 1.07:1
+kontrast-1280 ruhe b muster-4-muster-d: 10 Texte unter 4,5:1
+   p.puk-vis-label «Abbildung 4 · Ein freier Abend» #222222 auf #0028C2 1.58:1
+   p.puk-vis-kern «Auch an einem freien Abend ble» #222222 auf #0028C2 1.58:1
+   p.puk-vis-short «Das Buch liegt bereit, der Tee» #222222 auf #0028C2 1.58:1
+   p.puk-vis-scene__say ««Vielleicht ruft sie gleich an» #222222 auf #0028C2 1.58:1
+   p.puk-vis-scene__say ««Eigentlich wollte ich lesen.»» #222222 auf #0028C2 1.58:1
+   summary. «Grenzen des Bildes» #001F99 auf #0028C2 1.26:1
+   p. «Nicht alle Angehörigen erleben» #222222 auf #0028C2 1.58:1
+   p.puk-sr «Zeichnung eines Tisches am Abe» #222222 auf #0028C2 1.58:1
+   p. «Eigene didaktische Darstellung» #222222 auf #0028C2 1.58:1
+   strong. «Eigene didaktische Darstellung» #222222 auf #0028C2 1.58:1
+kontrast-1280 ruhe b muster-5-muster-e: 8 Texte unter 4,5:1
+   p.puk-vis-compare__key «Option A · durchgezogene Linie» #FFFFFF auf #FFFFFF 1.00:1
+   dt. «Merkmal 1» #FFFFFF auf #FFFFFF 1.00:1
+   dt. «Merkmal 2» #FFFFFF auf #FFFFFF 1.00:1
+   dt. «Merkmal 3» #FFFFFF auf #FFFFFF 1.00:1
+   p.puk-vis-compare__key «Option B · gestrichelte Linie» #FFFFFF auf #FFFFFF 1.00:1
+kontrast-1280 ruhe b muster-7-puk-vis-wide: 10 Texte unter 4,5:1
+   h3. «Hat der Inhalt mehrere eigenst» #FFFFFF auf #FFFFFF 1.00:1
+   p. «Ja: Einstiegsseite plus getren» #FFFFFF auf #FFFFFF 1.00:1
+   h3. «Richtet er sich an mehrere Zie» #FFFFFF auf #FFFFFF 1.00:1
+   p. «Ja: getrennte Lesepfade ab der» #FFFFFF auf #FFFFFF 1.00:1
+   h3. «Hat er mehr als acht Hauptkapi» #FFFFFF auf #FFFFFF 1.00:1
+   p. «Ja: aufteilen und im Visualisi» #FFFFFF auf #FFFFFF 1.00:1
+   h3. «Baut die Erklärung Schritt für» #FFFFFF auf #FFFFFF 1.00:1
+   p. «Ja: eine Langformseite mit Kap» #FFFFFF auf #FFFFFF 1.00:1
+   h3. «Wird der vollständige Bericht » #FFFFFF auf #FFFFFF 1.00:1
+   p. «Ja: Vollbericht zusätzlich als» #FFFFFF auf #FFFFFF 1.00:1
+kontrast-1280 ruhe b offen-0-muster-a: 12 Texte unter 4,5:1
+   p.puk-vis-label «Abbildung 1 · Zwei Bereiche mi» #222222 auf #0028C2 1.58:1
+   p.puk-vis-kern «Zwei Bereiche haben einen Teil» #222222 auf #0028C2 1.58:1
+   p.puk-vis-short «Musterinhalt: Die Lage der Kre» #222222 auf #0028C2 1.58:1
+   li. «Bereich A» #222222 auf #0028C2 1.58:1
+   li. «Gemeinsamer Anteil» #222222 auf #0028C2 1.58:1
+   li. «Bereich B» #222222 auf #0028C2 1.58:1
+   summary. «Grenzen des Modells» #001F99 auf #0028C2 1.26:1
+   p. «Die Darstellung zeigt nur, das» #222222 auf #0028C2 1.58:1
+   p.puk-sr «Bereich A (durchgezogene Linie» #222222 auf #0028C2 1.58:1
+   p. «Eigene didaktische Darstellung» #222222 auf #0028C2 1.58:1
+   strong. «Eigene didaktische Darstellung» #222222 auf #0028C2 1.58:1
+   a.puk-link--inline «Langbeschreibung zu Abbildung » #001F99 auf #0028C2 1.26:1
+kontrast-1280 ruhe b offen-1-muster-b: 11 Texte unter 4,5:1
+   p.puk-vis-label «Abbildung 2 · Kreislauf mit vi» #222222 auf #0028C2 1.58:1
+   p.puk-vis-kern «Was am Ende geschieht, wirkt a» #222222 auf #0028C2 1.58:1
+   p.puk-vis-short «Musterinhalt: Vier Stationen f» #222222 auf #0028C2 1.58:1
+   p.puk-vis-ansatz «Ansatzpunkt für Angehörige · b» #222222 auf #0028C2 1.58:1
+   span.puk-vis-ansatz__key «Ansatzpunkt für Angehörige · b» #222222 auf #0028C2 1.58:1
+   summary. «Beispiel und Grenzen des Model» #001F99 auf #0028C2 1.26:1
+   p. «Die Pfeile zeigen nur die Rich» #222222 auf #0028C2 1.58:1
+   p.puk-sr «Textfassung: Station 1 «Anlass» #222222 auf #0028C2 1.58:1
+   strong. «Textfassung:» #222222 auf #0028C2 1.58:1
+   p. «Eigene didaktische Darstellung» #222222 auf #0028C2 1.58:1
+   strong. «Eigene didaktische Darstellung» #222222 auf #0028C2 1.58:1
+kontrast-1280 ruhe b offen-2-muster-c: 20 Texte unter 4,5:1
+   p.puk-vis-label «Abbildung 3 · Musterpfad in fü» #222222 auf #0028C2 1.58:1
+   p.puk-vis-kern «Der Ablauf hat eine feste Reih» #222222 auf #0028C2 1.58:1
+   p.puk-vis-short «Musterinhalt: Nummer und Linie» #222222 auf #0028C2 1.58:1
+   span.puk-vis-path__n «Schritt 1 von 5» #222222 auf #0028C2 1.58:1
+   h3. «Anfrage» #222222 auf #0028C2 1.58:1
+   span.puk-vis-path__n «Schritt 2 von 5» #222222 auf #0028C2 1.58:1
+   h3. «Klärung» #222222 auf #0028C2 1.58:1
+   p.puk-vis-ansatz «Ansatzpunkt für AngehörigeMust» #222222 auf #0028C2 1.58:1
+   span.puk-vis-ansatz__key «Ansatzpunkt für Angehörige» #222222 auf #0028C2 1.58:1
+   span.puk-vis-path__n «Schritt 3 von 5» #222222 auf #0028C2 1.58:1
+   h3. «Planung» #222222 auf #0028C2 1.58:1
+   span.puk-vis-path__n «Schritt 4 von 5 · optional» #222222 auf #0028C2 1.58:1
+kontrast-1280 ruhe b offen-3-muster-e: 14 Texte unter 4,5:1
+   p.puk-vis-label «Abbildung 5 · Zwei Musteroptio» #222222 auf #0028C2 1.58:1
+   p.puk-vis-kern «Zwei Optionen unterscheiden si» #222222 auf #0028C2 1.58:1
+   p.puk-vis-short «Musterinhalt: Beide Spalten ne» #222222 auf #0028C2 1.58:1
+   p.puk-vis-compare__key «Option A · durchgezogene Linie» #FFFFFF auf #FFFFFF 1.00:1
+   dt. «Merkmal 1» #FFFFFF auf #FFFFFF 1.00:1
+   dt. «Merkmal 2» #FFFFFF auf #FFFFFF 1.00:1
+   dt. «Merkmal 3» #FFFFFF auf #FFFFFF 1.00:1
+   p.puk-vis-compare__key «Option B · gestrichelte Linie» #FFFFFF auf #FFFFFF 1.00:1
+   p.puk-sr «Option A und Option B werden n» #222222 auf #0028C2 1.58:1
+   p. «Eigene didaktische Darstellung» #222222 auf #0028C2 1.58:1
+   strong. «Eigene didaktische Darstellung» #222222 auf #0028C2 1.58:1
+kontrast-1280 ruhe b offen-4-muster-f: 10 Texte unter 4,5:1
+   p.puk-vis-label «Abbildung 6 · Musterweg mit zw» #222222 auf #0028C2 1.58:1
+   p.puk-vis-kern «Zwei Fragen führen zu genau ei» #222222 auf #0028C2 1.58:1
+   p.puk-vis-short «Musterinhalt: Jede Frage hat z» #222222 auf #0028C2 1.58:1
+   span.puk-vis-decision__n «Frage 1 von 2» #222222 auf #0028C2 1.58:1
+   h3. «Trifft Bedingung 1 zu?» #222222 auf #0028C2 1.58:1
+   span.puk-vis-decision__n «Frage 2 von 2» #222222 auf #0028C2 1.58:1
+   h3. «Trifft Bedingung 2 zu?» #222222 auf #0028C2 1.58:1
+   p.puk-sr «Frage 1: Bei Ja folgt Weg A, b» #222222 auf #0028C2 1.58:1
+   p. «Eigene didaktische Darstellung» #222222 auf #0028C2 1.58:1
+   strong. «Eigene didaktische Darstellung» #222222 auf #0028C2 1.58:1
+kontrast-1280 ruhe b o3: 6 Texte unter 4,5:1
+   button. «Erster» #222222 auf #0028C2 1.58:1
+   span. «Kontrollkästchen» #222222 auf #0028C2 1.58:1
+   span. «Optionsfeld» #222222 auf #0028C2 1.58:1
+   span. «Schalter» #222222 auf #0028C2 1.58:1
+   label. «Feldbeschriftung» #222222 auf #0028C2 1.58:1
+   span. «Menü» #0028C2 auf #0028C2 1.00:1
+kontrast-1280 ruhe n muster-0-puk-vis-wide: 64 Texte unter 4,5:1
+   caption. «Beispiel eines Visualisierungs» #FFFFFF auf #FFFFFF 1.00:1
+   th. «Abschnitt» #FFFFFF auf #F7F7F7 1.07:1
+   th. «Erkenntnisziel» #FFFFFF auf #F7F7F7 1.07:1
+   th. «Gewähltes Format» #FFFFFF auf #F7F7F7 1.07:1
+   th. «Aussage oder Beziehung» #FFFFFF auf #F7F7F7 1.07:1
+   th. «Wirkung» #FFFFFF auf #F7F7F7 1.07:1
+   th. «Quelle bzw. Kennzeichnung» #FFFFFF auf #F7F7F7 1.07:1
+   th. «Alternativtext oder Langbeschr» #FFFFFF auf #F7F7F7 1.07:1
+   th. «Ansatzpunkt für Angehörige» #FFFFFF auf #F7F7F7 1.07:1
+   th. «Begründung» #FFFFFF auf #F7F7F7 1.07:1
+   th. «01 Orientierung» #FFFFFF auf #FFFFFF 1.00:1
+   td. «Wissen, worum es geht und was » #FFFFFF auf #FFFFFF 1.00:1
+kontrast-1280 ruhe n muster-1-muster-a: 13 Texte unter 4,5:1
+   p.puk-vis-label «Abbildung 1 · Zwei Bereiche mi» #FFFFFF auf #F7F7F7 1.07:1
+   p.puk-vis-kern «Zwei Bereiche haben einen Teil» #FFFFFF auf #F7F7F7 1.07:1
+   p.puk-vis-short «Musterinhalt: Die Lage der Kre» #FFFFFF auf #F7F7F7 1.07:1
+   li. «Bereich A» #FFFFFF auf #F7F7F7 1.07:1
+   li. «Gemeinsamer Anteil» #FFFFFF auf #F7F7F7 1.07:1
+   li. «Bereich B» #FFFFFF auf #F7F7F7 1.07:1
+   p. «Die Darstellung zeigt nur, das» #FFFFFF auf #F7F7F7 1.07:1
+   p.puk-sr «Bereich A (durchgezogene Linie» #FFFFFF auf #F7F7F7 1.07:1
+   p. «Eigene didaktische Darstellung» #FFFFFF auf #F7F7F7 1.07:1
+   strong. «Eigene didaktische Darstellung» #FFFFFF auf #F7F7F7 1.07:1
+   h3. «Langbeschreibung zu Abbildung » #FFFFFF auf #FFFFFF 1.00:1
+   p. «Zwei gleich grosse Kreise lieg» #FFFFFF auf #FFFFFF 1.00:1
+kontrast-1280 ruhe n muster-2-muster-b: 21 Texte unter 4,5:1
+   p.puk-vis-label «Abbildung 2 · Kreislauf mit vi» #FFFFFF auf #F7F7F7 1.07:1
+   p.puk-vis-kern «Was am Ende geschieht, wirkt a» #FFFFFF auf #F7F7F7 1.07:1
+   p.puk-vis-short «Musterinhalt: Vier Stationen f» #FFFFFF auf #F7F7F7 1.07:1
+   strong. «Leserichtung:» #FFFFFF auf #F7F7F7 1.07:1
+   span. «im Uhrzeigersinn, beginnend ob» #FFFFFF auf #F7F7F7 1.07:1
+   span.puk-vis-cycle__n «Station 1» #FFFFFF auf #FFFFFF 1.00:1
+   span.puk-vis-cycle__name «Anlass» #FFFFFF auf #FFFFFF 1.00:1
+   span.puk-vis-cycle__n «Station 2» #FFFFFF auf #FFFFFF 1.00:1
+   span.puk-vis-cycle__name «Reaktion» #FFFFFF auf #FFFFFF 1.00:1
+   span.puk-vis-cycle__n «Station 3» #FFFFFF auf #FFFFFF 1.00:1
+   span.puk-vis-cycle__name «Folge» #FFFFFF auf #FFFFFF 1.00:1
+   span.puk-vis-cycle__key «Ansatzpunkt» #FFFFFF auf #FFFFFF 1.00:1
+kontrast-1280 ruhe n muster-3-muster-c: 24 Texte unter 4,5:1
+   p.puk-vis-label «Abbildung 3 · Musterpfad in fü» #FFFFFF auf #F7F7F7 1.07:1
+   p.puk-vis-kern «Der Ablauf hat eine feste Reih» #FFFFFF auf #F7F7F7 1.07:1
+   p.puk-vis-short «Musterinhalt: Nummer und Linie» #FFFFFF auf #F7F7F7 1.07:1
+   span.puk-vis-path__n «Schritt 1 von 5» #FFFFFF auf #F7F7F7 1.07:1
+   h3. «Anfrage» #FFFFFF auf #F7F7F7 1.07:1
+   p. «Ein Anliegen wird formuliert.» #D8E0FF auf #F7F7F7 1.22:1
+   span.puk-vis-path__n «Schritt 2 von 5» #FFFFFF auf #F7F7F7 1.07:1
+   h3. «Klärung» #FFFFFF auf #F7F7F7 1.07:1
+   p. «Offene Fragen werden gesammelt» #D8E0FF auf #F7F7F7 1.22:1
+   p.puk-vis-ansatz «Ansatzpunkt für AngehörigeMust» #FFFFFF auf #F7F7F7 1.07:1
+   span.puk-vis-ansatz__key «Ansatzpunkt für Angehörige» #FFFFFF auf #F7F7F7 1.07:1
+   span.puk-vis-path__n «Schritt 3 von 5» #FFFFFF auf #F7F7F7 1.07:1
+kontrast-1280 ruhe n muster-4-muster-d: 1 Texte unter 4,5:1
+   summary. «Grenzen des Bildes» #001F99 auf #182866 1.08:1
+kontrast-1280 ruhe n muster-5-muster-e: 22 Texte unter 4,5:1
+   p.puk-vis-label «Abbildung 5 · Zwei Musteroptio» #FFFFFF auf #F7F7F7 1.07:1
+   p.puk-vis-kern «Zwei Optionen unterscheiden si» #FFFFFF auf #F7F7F7 1.07:1
+   p.puk-vis-short «Musterinhalt: Beide Spalten ne» #FFFFFF auf #F7F7F7 1.07:1
+   p.puk-vis-compare__key «Option A · durchgezogene Linie» #D8E0FF auf #FFFFFF 1.31:1
+   h3. «Musteroption A» #FFFFFF auf #FFFFFF 1.00:1
+   dt. «Merkmal 1» #D8E0FF auf #FFFFFF 1.31:1
+   dd. «Ausprägung A1» #FFFFFF auf #FFFFFF 1.00:1
+   dt. «Merkmal 2» #D8E0FF auf #FFFFFF 1.31:1
+   dd. «Ausprägung A2» #FFFFFF auf #FFFFFF 1.00:1
+   dt. «Merkmal 3» #D8E0FF auf #FFFFFF 1.31:1
+   dd. «Ausprägung A3» #FFFFFF auf #FFFFFF 1.00:1
+   p.puk-vis-compare__key «Option B · gestrichelte Linie» #D8E0FF auf #FFFFFF 1.31:1
+kontrast-1280 ruhe n muster-6-muster-f: 18 Texte unter 4,5:1
+   p.puk-vis-label «Abbildung 6 · Musterweg mit zw» #FFFFFF auf #F7F7F7 1.07:1
+   p.puk-vis-kern «Zwei Fragen führen zu genau ei» #FFFFFF auf #F7F7F7 1.07:1
+   p.puk-vis-short «Musterinhalt: Jede Frage hat z» #FFFFFF auf #F7F7F7 1.07:1
+   span.puk-vis-decision__n «Frage 1 von 2» #FFFFFF auf #F7F7F7 1.07:1
+   h3. «Trifft Bedingung 1 zu?» #FFFFFF auf #F7F7F7 1.07:1
+   li.puk-vis-decision__branch «Ja: Weg A» #FFFFFF auf #FFFFFF 1.00:1
+   strong. «Ja:» #FFFFFF auf #FFFFFF 1.00:1
+   li.puk-vis-decision__branch «Nein: weiter zu Frage 2» #FFFFFF auf #FFFFFF 1.00:1
+   strong. «Nein:» #FFFFFF auf #FFFFFF 1.00:1
+   span.puk-vis-decision__n «Frage 2 von 2» #FFFFFF auf #F7F7F7 1.07:1
+   h3. «Trifft Bedingung 2 zu?» #FFFFFF auf #F7F7F7 1.07:1
+   li.puk-vis-decision__branch «Ja: Weg B» #FFFFFF auf #FFFFFF 1.00:1
+kontrast-1280 ruhe n muster-7-puk-vis-wide: 10 Texte unter 4,5:1
+   h3. «Hat der Inhalt mehrere eigenst» #FFFFFF auf #FFFFFF 1.00:1
+   p. «Ja: Einstiegsseite plus getren» #FFFFFF auf #FFFFFF 1.00:1
+   h3. «Richtet er sich an mehrere Zie» #FFFFFF auf #FFFFFF 1.00:1
+   p. «Ja: getrennte Lesepfade ab der» #FFFFFF auf #FFFFFF 1.00:1
+   h3. «Hat er mehr als acht Hauptkapi» #FFFFFF auf #FFFFFF 1.00:1
+   p. «Ja: aufteilen und im Visualisi» #FFFFFF auf #FFFFFF 1.00:1
+   h3. «Baut die Erklärung Schritt für» #FFFFFF auf #FFFFFF 1.00:1
+   p. «Ja: eine Langformseite mit Kap» #FFFFFF auf #FFFFFF 1.00:1
+   h3. «Wird der vollständige Bericht » #FFFFFF auf #FFFFFF 1.00:1
+   p. «Ja: Vollbericht zusätzlich als» #FFFFFF auf #FFFFFF 1.00:1
+kontrast-1280 ruhe n offen-0-muster-a: 2 Texte unter 4,5:1
+   summary. «Grenzen des Modells» #001F99 auf #182866 1.08:1
+   a.puk-link--inline «Langbeschreibung zu Abbildung » #001F99 auf #182866 1.08:1
+kontrast-1280 ruhe n offen-1-muster-b: 10 Texte unter 4,5:1
+   span.puk-vis-cycle__n «Station 1» #FFFFFF auf #FFFFFF 1.00:1
+   span.puk-vis-cycle__name «Anlass» #FFFFFF auf #FFFFFF 1.00:1
+   span.puk-vis-cycle__n «Station 2» #FFFFFF auf #FFFFFF 1.00:1
+   span.puk-vis-cycle__name «Reaktion» #FFFFFF auf #FFFFFF 1.00:1
+   span.puk-vis-cycle__n «Station 3» #FFFFFF auf #FFFFFF 1.00:1
+   span.puk-vis-cycle__name «Folge» #FFFFFF auf #FFFFFF 1.00:1
+   span.puk-vis-cycle__key «Ansatzpunkt» #FFFFFF auf #FFFFFF 1.00:1
+   span.puk-vis-cycle__n «Station 4» #FFFFFF auf #FFFFFF 1.00:1
+   span.puk-vis-cycle__name «Rückwirkung» #FFFFFF auf #FFFFFF 1.00:1
+   summary. «Beispiel und Grenzen des Model» #001F99 auf #182866 1.08:1
+kontrast-1280 ruhe n offen-2-muster-c: 1 Texte unter 4,5:1
+   summary. «Grenzen des Modells» #001F99 auf #182866 1.08:1
+kontrast-1280 ruhe n offen-3-muster-e: 16 Texte unter 4,5:1
+   p.puk-vis-compare__key «Option A · durchgezogene Linie» #D8E0FF auf #FFFFFF 1.31:1
+   h3. «Musteroption A» #FFFFFF auf #FFFFFF 1.00:1
+   dt. «Merkmal 1» #D8E0FF auf #FFFFFF 1.31:1
+   dd. «Ausprägung A1» #FFFFFF auf #FFFFFF 1.00:1
+   dt. «Merkmal 2» #D8E0FF auf #FFFFFF 1.31:1
+   dd. «Ausprägung A2» #FFFFFF auf #FFFFFF 1.00:1
+   dt. «Merkmal 3» #D8E0FF auf #FFFFFF 1.31:1
+   dd. «Ausprägung A3» #FFFFFF auf #FFFFFF 1.00:1
+   p.puk-vis-compare__key «Option B · gestrichelte Linie» #D8E0FF auf #FFFFFF 1.31:1
+   h3. «Musteroption B» #FFFFFF auf #FFFFFF 1.00:1
+   dd. «Ausprägung B1» #FFFFFF auf #FFFFFF 1.00:1
+   dd. «Ausprägung B2» #FFFFFF auf #FFFFFF 1.00:1
+kontrast-1280 ruhe n offen-4-muster-f: 8 Texte unter 4,5:1
+   li.puk-vis-decision__branch «Ja: Weg A» #FFFFFF auf #FFFFFF 1.00:1
+   strong. «Ja:» #FFFFFF auf #FFFFFF 1.00:1
+   li.puk-vis-decision__branch «Nein: weiter zu Frage 2» #FFFFFF auf #FFFFFF 1.00:1
+   strong. «Nein:» #FFFFFF auf #FFFFFF 1.00:1
+   li.puk-vis-decision__branch «Ja: Weg B» #FFFFFF auf #FFFFFF 1.00:1
+   li.puk-vis-decision__branch «Nein: Weg C» #FFFFFF auf #FFFFFF 1.00:1
+kontrast-1280 ruhe n o3: 2 Texte unter 4,5:1
+   button. «Erster» #222222 auf #182866 1.16:1
+   span. «Menü» #0028C2 auf #182866 1.36:1

@@ -1,0 +1,7 @@
+geprüft: ec3a97ad2e3f6a31bed8710567d02071efb1b18c5532a899073542d30b4aa8f6 384 Einträge
+neu:     5ce22d7174fb91664d7cacb5ebfbaef524c5adaed12ff8d9a4d9daa602517f08 384 Einträge
+nur im geprüften: []
+nur im neuen: []
+Reihenfolge gleich: True
+unterschiedliche Einträge: 1
+   puk-website-profil/PRUEFBERICHT.md Inhalt [] 027964ae7925 -> 37735bf66970

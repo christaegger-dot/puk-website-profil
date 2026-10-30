@@ -1,0 +1,235 @@
+# Protokolle · Unabhängige Prüfung Paket 2026.10.19 (30.10.2026)
+Arbeitsordner der Prüfsitzung ausserhalb des Repositorys als <A> abgekürzt.
+
+## A1 Paket
+$ git rev-parse HEAD
+da2d8c934972cd1e2e821c2b2e09cfc29f74c49a
+$ sha256sum -c puk-website-profil-2026.10.19.zip.sha256
+puk-website-profil-2026.10.19.zip: OK
+ec3a97ad2e3f6a31bed8710567d02071efb1b18c5532a899073542d30b4aa8f6  puk-website-profil-2026.10.19.zip
+$ npm run check:package
+> node tools/pruefe-dokumentation.mjs
+
+149 lokale Dokumentationslinks geprüft; 0 fehlende Ziele.
+384 Dateien bytegleich; SHA-256 geprüft: ec3a97ad2e3f6a31bed8710567d02071efb1b18c5532a899073542d30b4aa8f6
+$ Entpacken mit python3 -I zipfile: 384 Einträge, Stamm {puk-website-profil}, Zeitstempel [(2026, 10, 30, 0, 0, 0)]
+$ diff -rq <A>/entpackt/puk-website-profil . -x archiv -x audit-results -x websites -x out-* -x .venv -x node_modules -x *.zip -x *.zip.sha256 -x .git
+(keine Ausgabe, 0 Zeilen)
+
+## A2 Ableitungen und Build
+$ npm run check:generated
+> node tools/generieren.mjs --check
+
+45 abgeleitete Dateien aktuell.
+$ npm run build (1)
+45 abgeleitete Dateien geprüft; 0 aktualisiert.
+/home/user/puk-website-profil/components/bundle.js geschrieben · 26 Komponenten
+/home/user/puk-website-profil/_ds_bundle.js geschrieben · 26 Komponenten
+WARN  site                     editorial-status       Redaktioneller Status «Synthetische Referenz, nicht zur Veröffentlichung bestimmt» nennt kein Datum – Format «Fachlich freigegeben am TT.MM.JJJJ» (editorialStatusLabel)
+WARN  site                     site-url               site.config.siteUrl fehlt: ohne Adresse entstehen keine sitemap.xml und keine kanonischen Links (Abschnitt «Technische Qualität», G)
+WARN  beziehungen-verstehen    visual-approval        Visualisierung v-bz-kreislauf nicht freigegeben (ausstehend)
+WARN  beziehungen-verstehen    visual-approval        Visualisierung v-bz-illustration nicht freigegeben (ausstehend)
+WARN  behandlung-verstehen     visual-approval        Visualisierung v-bh-ablauf nicht freigegeben (ausstehend)
+WARN  behandlung-verstehen     visual-approval        Visualisierung v-bh-vergleich nicht freigegeben (ausstehend)
+WARN  unterstuetzung-finden    visual-approval        Visualisierung v-us-wegweiser nicht freigegeben (ausstehend)
+WARN  unterstuetzung-finden    visual-approval        Visualisierung v-us-netz nicht freigegeben (ausstehend)
+WARN  index                    placeholder-approval   Platzhalter download nicht freigegeben (Freigabe: ausstehend, Quelle: offen)
+WARN  beziehungen-verstehen    placeholder-approval   Platzhalter image nicht freigegeben (Freigabe: ausstehend, Quelle: offen)
+WARN  unterstuetzung-finden    placeholder-approval   Platzhalter contact nicht freigegeben (Freigabe: ausstehend, Quelle: offen)
+WARN  site                     review-report          Prüfbericht: offene Stufen W1, W2, S, Visualisierungs-Check, Bedienung und Barrierefreiheit, W3, R1 Profil-Audit, R2 Visualisierung und Laienverständlichkeit, R3 Freigabe-Audit – Status «erledigt» oder «entfällt: Begründung»
+7 Seiten geschrieben · PUK Website Kit 1.10.1-r4 · abgeleitet · Build r4-26 · Gate draft: 0 blockierend, 12 Hinweise.
+WARN  site                     editorial-status       Redaktioneller Status «Entwurf, nicht zur Veröffentlichung bestimmt» nennt einen Entwurf – vor der Veröffentlichung z. B. «Fachlich freigegeben am TT.MM.JJJJ» (editorialStatusLabel)
+WARN  site                     site-url               site.config.siteUrl fehlt: ohne Adresse entstehen keine sitemap.xml und keine kanonischen Links (Abschnitt «Technische Qualität», G)
+WARN  site                     review-report          Prüfbericht: offene Stufen W1, W2, S, Visualisierungs-Check, Bedienung und Barrierefreiheit, W3, R1 Profil-Audit, R2 Visualisierung und Laienverständlichkeit, R3 Freigabe-Audit – Status «erledigt» oder «entfällt: Begründung»
+4 Seiten geschrieben · PUK Website Kit 1.10.1-r4 · abgeleitet · Build r4-26 · Gate draft: 0 blockierend, 3 Hinweise.
+WARN  site                     site-url               site.config.siteUrl fehlt: ohne Adresse entstehen keine sitemap.xml und keine kanonischen Links (Abschnitt «Technische Qualität», G)
+4 Seiten geschrieben · PUK Website Kit 1.10.1-r4 · abgeleitet · Build r4-26 · Gate production: 0 blockierend, 1 Hinweise.
+$ git status --porcelain
+$ cmp components/bundle.js _ds_bundle.js
+gleich
+$ npm run build (2)
+$ git diff --stat c43a94d da2d8c9 -- components/bundle.js _ds_bundle.js components/bundle.css styles.css tokens/
+ components/bundle.css | 8 +++++---
+ tokens/base.css       | 8 +++++---
+ 2 files changed, 10 insertions(+), 6 deletions(-)
+$ Gebundelte Ausgaben, geänderte Dateien ausser Seiten:
+components/bundle.css
+templates/website/psychoeducation-site-starter/tools/contract.js
+tokens/base.css
+ui_kits/website/qa.js
+
+## A3 Browser
+Standardstart mit PLAYWRIGHT_BROWSERS_PATH=pw1234: 151.0.7922.34 1.62.1
+HS1243 153.0.8010.12
+Chromium 153.0.8010.12
+
+## A4 Testläufe
+chromium 1 exit 0
+chromium 2 exit 0
+chromium 3 exit 0
+hs1243 exit 0
+hs1234 exit 0
+ui exit 0
+--- npm test (chromium-1)
+ok 108 - Leitlinie 02 nennt Geltung, Zählung und die vier Bedingungen des Titelbilds
+ok 114 - Helle Komponenten in blauem Band und Nachtblau zeigen dieselben Farben wie auf Weiss
+ok 115 - Erklärgrafiken und Karussell-Knöpfe in blauem Band und Nachtblau zeigen dieselben Farben wie auf Weiss
+# tests 118
+# pass 118
+# fail 0
+# skipped 0
+--- npm test (chromium-2)
+ok 108 - Leitlinie 02 nennt Geltung, Zählung und die vier Bedingungen des Titelbilds
+ok 114 - Helle Komponenten in blauem Band und Nachtblau zeigen dieselben Farben wie auf Weiss
+ok 115 - Erklärgrafiken und Karussell-Knöpfe in blauem Band und Nachtblau zeigen dieselben Farben wie auf Weiss
+# tests 118
+# pass 118
+# fail 0
+# skipped 0
+--- npm test (chromium-3)
+ok 108 - Leitlinie 02 nennt Geltung, Zählung und die vier Bedingungen des Titelbilds
+ok 114 - Helle Komponenten in blauem Band und Nachtblau zeigen dieselben Farben wie auf Weiss
+ok 115 - Erklärgrafiken und Karussell-Knöpfe in blauem Band und Nachtblau zeigen dieselben Farben wie auf Weiss
+# tests 118
+# pass 118
+# fail 0
+# skipped 0
+--- npm test (hs1243)
+ok 108 - Leitlinie 02 nennt Geltung, Zählung und die vier Bedingungen des Titelbilds
+ok 114 - Helle Komponenten in blauem Band und Nachtblau zeigen dieselben Farben wie auf Weiss
+ok 115 - Erklärgrafiken und Karussell-Knöpfe in blauem Band und Nachtblau zeigen dieselben Farben wie auf Weiss
+# tests 118
+# pass 118
+# fail 0
+# skipped 0
+--- npm test (hs1234)
+ok 108 - Leitlinie 02 nennt Geltung, Zählung und die vier Bedingungen des Titelbilds
+ok 114 - Helle Komponenten in blauem Band und Nachtblau zeigen dieselben Farben wie auf Weiss
+ok 115 - Erklärgrafiken und Karussell-Knöpfe in blauem Band und Nachtblau zeigen dieselben Farben wie auf Weiss
+# tests 118
+# pass 118
+# fail 0
+# skipped 0
+
+## A5 UI-Matrix
+Matrix: 112 Prüfläufe · 0 mit Befund · Tastatur: 41 Prüfungen · 0 mit Befund · Interaktionen: 19 Prüfungen · 0 mit Befund · Gate: 76 Prüfungen · 0 mit Befund · Gesamt: 0 Befunde · Fokusring nur statisch geprüft (Dokument ohne Fokus): Matrix 0 Läufe · nicht prüfbar: Tastatur 0, Interaktionen 0
+Bericht: /home/user/puk-website-profil/out-pruefung/ui-matrix.json
+Vergleich mit tests/ergebnisse/ui-matrix-2026.10.19.json ohne Zeit- und Browserfelder: gleich
+
+## B Gegenprobe O-6 (Tests 114 «Helle Komponenten», 115 «Erklärgrafiken»)
+ok         ok         unverändert
+scheitert  scheitert  ohne Rücksetzregel
+scheitert  ok         ohne [data-puk-light]
+scheitert  ok         ohne [data-puk-surface]:not([data-puk-surface="night"])
+scheitert  ok         ohne .puk-dialog
+scheitert  ok         ohne .puk-disclosure__panel
+ok         ok         ohne .puk-carousel__slide
+ok         scheitert  ohne .puk-carousel__btn
+scheitert  ok         ohne .puk-filter
+scheitert  ok         ohne .puk-longform__figure
+ok         ok         ohne .puk-longform__figure-side
+scheitert  ok         ohne .puk-longform__support
+ok         ok         ohne .puk-longform__reflection
+ok         ok         ohne .puk-longform__term-guide>div
+ok         ok         ohne .puk-web-media
+ok         scheitert  ohne .puk-vis-figure:not(.puk-vis-figure--open)
+ok         scheitert  ohne .puk-vis-longdesc
+ok         ok         ohne .puk-vis-cycle li
+ok         ok         ohne .puk-vis-compare__col
+ok         ok         ohne .puk-vis-decision__branch
+ok         scheitert  ohne .puk-vis-illu
+ok         ok         ohne .puk-vis-tablewrap
+ok         scheitert  ohne .puk-vis-decide li
+scheitert  ok         ohne .puk-site-draft
+scheitert  ok         ohne input
+scheitert  ok         ohne select
+scheitert  ok         ohne textarea
+
+## B Gegenprobe Selbstprüfbericht (46de3de + neue Testdatei, danach + neues bundle.css)
+    + actual - expected
+  expected: 'rgb(34, 34, 34) | rgb(100, 100, 100) | rgb(255, 255, 255)'
+  actual: 'rgb(255, 255, 255) | rgb(100, 100, 100) | rgb(255, 255, 255)'
+# pass 0
+# fail 1
+# pass 1
+# fail 0
+
+## B Gegenprobe Dokumenttest und Meldungen ohne Rücksetzregel
+Dokumenttest ohne Punkt «Helle Komponenten» im Abschnitt Nachtblau:
+# pass 1
+# fail 0
+Gesamte Testdatei profilentscheid ohne Bandregel in README und Karte «PUK-Blau»:
+# pass 9
+# fail 0
+Dokumentationsprüfung:
+144 lokale Dokumentationslinks geprüft; 0 fehlende Ziele.
+Ohne Rücksetzregel:
+not ok 1 - Helle Komponenten in blauem Band und Nachtblau zeigen dieselben Farben wie auf Weiss
+  expected: 'rgb(100, 100, 100) | rgb(100, 100, 100) | rgba(0, 0, 0, 0)'
+  actual: 'rgb(255, 255, 255) | rgb(255, 255, 255) | rgba(0, 0, 0, 0)'
+not ok 2 - Erklärgrafiken und Karussell-Knöpfe in blauem Band und Nachtblau zeigen dieselben Farben wie auf Weiss
+  expected: 'rgb(34, 34, 34) | rgb(34, 34, 34) | rgba(0, 0, 0, 0)'
+  actual: 'rgb(255, 255, 255) | rgb(255, 255, 255) | rgba(0, 0, 0, 0)'
+# pass 0
+# fail 2
+
+## B Langform-Flächen (figure-side, reflection, term-guide, Medienlink), 1280 px, beide Themes, Bildschirm und Druck
+/home/user/puk-website-profil gleich 80 abweichend 0
+<A>/stand-c43a94d gleich 80 abweichend 0
+
+## C Archive
+archiv/profilstand-2026-10-30-17 gegen c43a94d: 13 von 13 bytegleich
+puk-website-profil-2026.10.17.zip: OK
+  in da2d8c9 gegenüber Archiv-Commit geändert:
+archiv/profilstand-2026-10-30-18 gegen 46de3de: 13 von 13 bytegleich
+puk-website-profil-2026.10.18.zip: OK
+  in da2d8c9 gegenüber Archiv-Commit geändert:
+ 13 files changed, 3572 insertions(+)
+== -17 im Stand c43a94d vorhanden?
+
+## D Startseiten 375 x 812
+profil-index {"titel":"PUK Website-Profil","schrift":"33.375px","oben":248,"unten":286,"ueberlauf":0}
+starter-index {"titel":"Ver­stehen, ein­ordnen, Unter­stüt­zung finden","schrift":"33.375px","oben":346,"unten":496,"ueberlauf":0}
+profilbeispiel-index {"titel":"Infor­ma­tion klar ge­stalten","schrift":"33.375px","oben":300,"unten":375,"ueberlauf":0}
+minimal-index {"titel":"Titel der neuen Website","schrift":"33.375px","oben":300,"unten":375,"ueberlauf":0}
+
+## E Sicherheitsgrenzen: hinzugefügte Zeilen c43a94d..da2d8c9 ohne archiv, audit-results, tests/ergebnisse, Zip, sha256, JS-Bundles
+Hinzugefügte Zeilen: 338
+     15 +<link rel="stylesheet" href="../longform/visual-patterns.css?v=r4-26">
+     15 +<link rel="stylesheet" href="../longform/erklaermuster.css?v=r4-26">
+     15 +<link rel="stylesheet" href="../../../styles.css?v=r4-26">
+      8 +<link rel="stylesheet" href="../psychoeducation-site-starter/starter.css?v=r4-26">
+      7 +<link rel="stylesheet" href="starter.css?v=r4-26">
+      3 +<script src="../../../components/interaktion.js?v=r4-26" defer></script>
+      1 +for(const p of ['w','b','n']){const box=document.createElement('div');box.innerHTML='<div id="'+p+'-tint" data-puk-surface="tint" style="padding:8px"><a id="'+
+      1 +const helleFlaechen=`<!doctype html><html lang="de"><head><meta charset="utf-8"><title>Helle Flächen</title><link rel="stylesheet" href="styles.css"><link rel
+      1 +const erklaergrafikHtml=`<!doctype html><html lang="de"><head><meta charset="utf-8"><title>Erklärgrafik</title><link rel="stylesheet" href="styles.css"><link 
+      1 +Nachweise: [Matrixdaten](../../tests/ergebnisse/ui-matrix-2026.10.19.json), [aktueller Prüfbericht](../../PRUEFBERICHT.md). Frühere Protokolle sind [archivie
+      1 +<script src="platform/vendor/react.production.min.js"></script><script src="platform/vendor/react-dom.production.min.js"></script><script src="components/bundl
+      1 +<script src="js/visual.js?v=r4-12"></script>
+      1 +<script src="js/situations.js?v=r4-12"></script>
+      1 +<script src="js/services.js?v=r4-12"></script>
+      1 +<script src="js/patterns.js?v=r4-12"></script>
+      1 +<script src="js/longform-more.js?v=r4-12"></script>
+      1 +<script src="js/longform-foundation.js?v=r4-12"></script>
+      1 +<script src="js/home.js?v=r4-12"></script>
+      1 +<script src="js/conversation.js?v=r4-12"></script>
+      1 +<script src="js/contact.js?v=r4-12"></script>
+      1 +<script src="js/chrome.js?v=r4-12"></script>
+      1 +<script src="js/app.js?v=r4-12"></script>
+      1 +<script src="erklaergrafik.js"></script></body></html>`;
+      1 +<script src="../../templates/website/psychoeducation-site-starter/tools/contract.js?v=r4-26"></script>
+      1 +<link rel="stylesheet" href="kit.css?v=r4-12">
+      1 +<link rel="stylesheet" href="../../templates/website/longform/visual-patterns.css?v=r4-12">
+      1 +<link rel="stylesheet" href="../../templates/website/applications/applications.css?v=r4-12">
+      1 +- `tools/paket.py`: reproduzierbares Paket [puk-website-profil-2026.10.19.zip](https://github.com/christaegger-dot/puk-website-profil/raw/refs/heads/main/puk-w
+
+## Paket nach dem Berichtseintrag
+$ npm run package; npm run check:package
+165 lokale Dokumentationslinks geprüft; 0 fehlende Ziele.
+384 Dateien bytegleich; SHA-256 geprüft: 5ce22d7174fb91664d7cacb5ebfbaef524c5adaed12ff8d9a4d9daa602517f08
+$ npm test (Endstand, Chromium 1243)
+# tests 118
+# pass 118
+# fail 0
+Zip-Vergleich: siehe paketvergleich.txt

@@ -1,0 +1,620 @@
+light-375 ruhe b muster-0-puk-vis-wide: 1 geändert
+   div.puk-vis-tablewrap color
+light-375 ruhe b muster-1-muster-a: 11 geändert
+   figure.puk-vis-figure color
+   div.puk-vis-overlap color,border
+   svg. color,border
+   circle. color,border
+   circle. color,border
+   ul. color,border
+light-375 ruhe b muster-2-muster-b: 21 geändert
+   figure.puk-vis-figure color
+   p.puk-vis-dir color,border
+   strong. «Leserichtung:» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   span. «im Uhrzeigersinn, » color,border
+   span. «von oben nach unte» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   div.puk-vis-cycle color,border
+light-375 ruhe b muster-3-muster-c: 13 geändert
+   figure.puk-vis-figure color
+   ol.puk-vis-path color,border
+   li. color,border,::before,::after
+   p. «Ein Anliegen wird » color,border #FFFFFF/#F7F7F7 1.07 → #646464/#F7F7F7 5.52
+   li.is-ansatz color,border,::before,::after
+   p. «Offene Fragen werd» color,border #FFFFFF/#F7F7F7 1.07 → #646464/#F7F7F7 5.52
+light-375 ruhe b muster-5-muster-e: 20 geändert
+   figure.puk-vis-figure color
+   div.puk-vis-compare color,border
+   section.puk-vis-compare__col color
+   p.puk-vis-compare__key «Option A · durchge» color,border #FFFFFF/#FFFFFF 1.00 → #646464/#FFFFFF 5.92
+   dl. color,border
+   div. color,border
+light-375 ruhe b muster-6-muster-f: 6 geändert
+   figure.puk-vis-figure color
+   ol.puk-vis-decision color,border
+   li.puk-vis-decision__q color,border,::before
+   ul.puk-vis-decision__branches color,border
+   li.puk-vis-decision__q color,border
+   ul.puk-vis-decision__branches color,border
+light-375 ruhe b muster-7-puk-vis-wide: 15 geändert
+   li. color
+   h3. «Hat der Inhalt meh» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   p. «Ja: Einstiegsseite» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   li. color
+   h3. «Richtet er sich an» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   p. «Ja: getrennte Lese» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+light-375 ruhe b offen-1-muster-b: 4 geändert
+   li. color,::after
+   li. color,::after
+   li.is-ansatz color,::after
+   li. color
+light-375 ruhe b offen-3-muster-e: 18 geändert
+   section.puk-vis-compare__col color
+   p.puk-vis-compare__key «Option A · durchge» color,border #FFFFFF/#FFFFFF 1.00 → #646464/#FFFFFF 5.92
+   dl. color,border
+   div. color,border
+   dt. «Merkmal 1» color,border #FFFFFF/#FFFFFF 1.00 → #646464/#FFFFFF 5.92
+   div. color,border
+light-375 ruhe n muster-0-puk-vis-wide: 75 geändert
+   div.puk-vis-tablewrap color
+   table.puk-vis-plan color,border
+   caption. «Beispiel eines Vis» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   thead. color,border
+   tr. color,border
+   th. «Abschnitt» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+light-375 ruhe n muster-1-muster-a: 23 geändert
+   figure.puk-vis-figure color
+   p.puk-vis-label «Abbildung 1 · Zwei» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   p.puk-vis-kern «Zwei Bereiche habe» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   p.puk-vis-short «Musterinhalt: Die » color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   div.puk-vis-overlap color,border
+   svg. color,border
+light-375 ruhe n muster-2-muster-b: 43 geändert
+   figure.puk-vis-figure color
+   p.puk-vis-label «Abbildung 2 · Krei» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   p.puk-vis-kern «Was am Ende geschi» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   p.puk-vis-short «Musterinhalt: Vier» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   p.puk-vis-dir color,border
+   strong. «Leserichtung:» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+light-375 ruhe n muster-3-muster-c: 34 geändert
+   figure.puk-vis-figure color
+   p.puk-vis-label «Abbildung 3 · Must» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   p.puk-vis-kern «Der Ablauf hat ein» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   p.puk-vis-short «Musterinhalt: Numm» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   ol.puk-vis-path color,border
+   li. color,border,::before,::after
+light-375 ruhe n muster-5-muster-e: 35 geändert
+   figure.puk-vis-figure color
+   p.puk-vis-label «Abbildung 5 · Zwei» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   p.puk-vis-kern «Zwei Optionen unte» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   p.puk-vis-short «Musterinhalt: Beid» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   div.puk-vis-compare color,border
+   section.puk-vis-compare__col color
+light-375 ruhe n muster-6-muster-f: 25 geändert
+   figure.puk-vis-figure color
+   p.puk-vis-label «Abbildung 6 · Must» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   p.puk-vis-kern «Zwei Fragen führen» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   p.puk-vis-short «Musterinhalt: Jede» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   ol.puk-vis-decision color,border
+   li.puk-vis-decision__q color,border,::before
+light-375 ruhe n muster-7-puk-vis-wide: 15 geändert
+   li. color
+   h3. «Hat der Inhalt meh» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   p. «Ja: Einstiegsseite» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   li. color
+   h3. «Richtet er sich an» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   p. «Ja: getrennte Lese» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+light-375 ruhe n offen-1-muster-b: 13 geändert
+   li. color,::after
+   span.puk-vis-cycle__n «Station 1» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   span.puk-vis-cycle__name «Anlass» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   li. color,::after
+   span.puk-vis-cycle__n «Station 2» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   span.puk-vis-cycle__name «Reaktion» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+light-375 ruhe n offen-3-muster-e: 26 geändert
+   section.puk-vis-compare__col color
+   p.puk-vis-compare__key «Option A · durchge» color,border #D8E0FF/#FFFFFF 1.31 → #646464/#FFFFFF 5.92
+   h3. «Musteroption A» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   dl. color,border
+   div. color,border
+   dt. «Merkmal 1» color,border #D8E0FF/#FFFFFF 1.31 → #646464/#FFFFFF 5.92
+light-375 ruhe n offen-4-muster-f: 8 geändert
+   li.puk-vis-decision__branch «Ja: Weg A» color #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   strong. «Ja:» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   li.puk-vis-decision__branch «Nein: weiter zu Fr» color #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   strong. «Nein:» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   li.puk-vis-decision__branch «Ja: Weg B» color #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   strong. «Ja:» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+light-375 ruhe n react: 2 geändert
+   button.puk-carousel__btn color
+   span. color,bg,ownBg,border
+light-1280 ruhe b muster-0-puk-vis-wide: 1 geändert
+   div.puk-vis-tablewrap color
+light-1280 ruhe b muster-1-muster-a: 11 geändert
+   figure.puk-vis-figure color
+   div.puk-vis-overlap color,border
+   svg. color,border
+   circle. color,border
+   circle. color,border
+   ul. color,border
+light-1280 ruhe b muster-2-muster-b: 21 geändert
+   figure.puk-vis-figure color
+   p.puk-vis-dir color,border
+   strong. «Leserichtung:» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   span. «im Uhrzeigersinn, » color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   span. «von oben nach unte» color,border
+   div.puk-vis-cycle color,border
+light-1280 ruhe b muster-3-muster-c: 13 geändert
+   figure.puk-vis-figure color
+   ol.puk-vis-path color,border
+   li. color,border,::before,::after
+   p. «Ein Anliegen wird » color,border #FFFFFF/#F7F7F7 1.07 → #646464/#F7F7F7 5.52
+   li.is-ansatz color,border,::before,::after
+   p. «Offene Fragen werd» color,border #FFFFFF/#F7F7F7 1.07 → #646464/#F7F7F7 5.52
+light-1280 ruhe b muster-5-muster-e: 20 geändert
+   figure.puk-vis-figure color
+   div.puk-vis-compare color,border
+   section.puk-vis-compare__col color
+   p.puk-vis-compare__key «Option A · durchge» color,border #FFFFFF/#FFFFFF 1.00 → #646464/#FFFFFF 5.92
+   dl. color,border
+   div. color,border
+light-1280 ruhe b muster-6-muster-f: 6 geändert
+   figure.puk-vis-figure color
+   ol.puk-vis-decision color,border
+   li.puk-vis-decision__q color,border,::before
+   ul.puk-vis-decision__branches color,border
+   li.puk-vis-decision__q color,border
+   ul.puk-vis-decision__branches color,border
+light-1280 ruhe b muster-7-puk-vis-wide: 15 geändert
+   li. color
+   h3. «Hat der Inhalt meh» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   p. «Ja: Einstiegsseite» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   li. color
+   h3. «Richtet er sich an» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   p. «Ja: getrennte Lese» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+light-1280 ruhe b offen-1-muster-b: 4 geändert
+   li. color
+   li. color
+   li.is-ansatz color
+   li. color
+light-1280 ruhe b offen-3-muster-e: 18 geändert
+   section.puk-vis-compare__col color
+   p.puk-vis-compare__key «Option A · durchge» color,border #FFFFFF/#FFFFFF 1.00 → #646464/#FFFFFF 5.92
+   dl. color,border
+   div. color,border
+   dt. «Merkmal 1» color,border #FFFFFF/#FFFFFF 1.00 → #646464/#FFFFFF 5.92
+   div. color,border
+light-1280 ruhe n muster-0-puk-vis-wide: 75 geändert
+   div.puk-vis-tablewrap color
+   table.puk-vis-plan color,border
+   caption. «Beispiel eines Vis» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   thead. color,border
+   tr. color,border
+   th. «Abschnitt» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+light-1280 ruhe n muster-1-muster-a: 23 geändert
+   figure.puk-vis-figure color
+   p.puk-vis-label «Abbildung 1 · Zwei» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   p.puk-vis-kern «Zwei Bereiche habe» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   p.puk-vis-short «Musterinhalt: Die » color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   div.puk-vis-overlap color,border
+   svg. color,border
+light-1280 ruhe n muster-2-muster-b: 43 geändert
+   figure.puk-vis-figure color
+   p.puk-vis-label «Abbildung 2 · Krei» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   p.puk-vis-kern «Was am Ende geschi» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   p.puk-vis-short «Musterinhalt: Vier» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   p.puk-vis-dir color,border
+   strong. «Leserichtung:» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+light-1280 ruhe n muster-3-muster-c: 34 geändert
+   figure.puk-vis-figure color
+   p.puk-vis-label «Abbildung 3 · Must» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   p.puk-vis-kern «Der Ablauf hat ein» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   p.puk-vis-short «Musterinhalt: Numm» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   ol.puk-vis-path color,border
+   li. color,border,::before,::after
+light-1280 ruhe n muster-5-muster-e: 35 geändert
+   figure.puk-vis-figure color
+   p.puk-vis-label «Abbildung 5 · Zwei» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   p.puk-vis-kern «Zwei Optionen unte» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   p.puk-vis-short «Musterinhalt: Beid» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   div.puk-vis-compare color,border
+   section.puk-vis-compare__col color
+light-1280 ruhe n muster-6-muster-f: 25 geändert
+   figure.puk-vis-figure color
+   p.puk-vis-label «Abbildung 6 · Must» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   p.puk-vis-kern «Zwei Fragen führen» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   p.puk-vis-short «Musterinhalt: Jede» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   ol.puk-vis-decision color,border
+   li.puk-vis-decision__q color,border,::before
+light-1280 ruhe n muster-7-puk-vis-wide: 15 geändert
+   li. color
+   h3. «Hat der Inhalt meh» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   p. «Ja: Einstiegsseite» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   li. color
+   h3. «Richtet er sich an» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   p. «Ja: getrennte Lese» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+light-1280 ruhe n offen-1-muster-b: 13 geändert
+   li. color
+   span.puk-vis-cycle__n «Station 1» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   span.puk-vis-cycle__name «Anlass» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   li. color
+   span.puk-vis-cycle__n «Station 2» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   span.puk-vis-cycle__name «Reaktion» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+light-1280 ruhe n offen-3-muster-e: 26 geändert
+   section.puk-vis-compare__col color
+   p.puk-vis-compare__key «Option A · durchge» color,border #D8E0FF/#FFFFFF 1.31 → #646464/#FFFFFF 5.92
+   h3. «Musteroption A» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   dl. color,border
+   div. color,border
+   dt. «Merkmal 1» color,border #D8E0FF/#FFFFFF 1.31 → #646464/#FFFFFF 5.92
+light-1280 ruhe n offen-4-muster-f: 8 geändert
+   li.puk-vis-decision__branch «Ja: Weg A» color #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   strong. «Ja:» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   li.puk-vis-decision__branch «Nein: weiter zu Fr» color #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   strong. «Nein:» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   li.puk-vis-decision__branch «Ja: Weg B» color #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   strong. «Ja:» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+light-1280 ruhe n react: 2 geändert
+   button.puk-carousel__btn color
+   span. color,bg,ownBg,border
+kontrast-375 ruhe b muster-0-puk-vis-wide: 1 geändert
+   div.puk-vis-tablewrap color
+kontrast-375 ruhe b muster-1-muster-a: 11 geändert
+   figure.puk-vis-figure color
+   div.puk-vis-overlap color,border
+   svg. color,border
+   circle. color,border
+   circle. color,border
+   ul. color,border
+kontrast-375 ruhe b muster-2-muster-b: 21 geändert
+   figure.puk-vis-figure color
+   p.puk-vis-dir color,border
+   strong. «Leserichtung:» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   span. «im Uhrzeigersinn, » color,border
+   span. «von oben nach unte» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   div.puk-vis-cycle color,border
+kontrast-375 ruhe b muster-3-muster-c: 13 geändert
+   figure.puk-vis-figure color
+   ol.puk-vis-path color,border
+   li. color,border,::before,::after
+   p. «Ein Anliegen wird » color,border #FFFFFF/#F7F7F7 1.07 → #4F4F4F/#F7F7F7 7.65
+   li.is-ansatz color,border,::before,::after
+   p. «Offene Fragen werd» color,border #FFFFFF/#F7F7F7 1.07 → #4F4F4F/#F7F7F7 7.65
+kontrast-375 ruhe b muster-5-muster-e: 20 geändert
+   figure.puk-vis-figure color
+   div.puk-vis-compare color,border
+   section.puk-vis-compare__col color
+   p.puk-vis-compare__key «Option A · durchge» color,border #FFFFFF/#FFFFFF 1.00 → #4F4F4F/#FFFFFF 8.19
+   dl. color,border
+   div. color,border
+kontrast-375 ruhe b muster-6-muster-f: 6 geändert
+   figure.puk-vis-figure color
+   ol.puk-vis-decision color,border
+   li.puk-vis-decision__q color,border,::before
+   ul.puk-vis-decision__branches color,border
+   li.puk-vis-decision__q color,border
+   ul.puk-vis-decision__branches color,border
+kontrast-375 ruhe b muster-7-puk-vis-wide: 15 geändert
+   li. color
+   h3. «Hat der Inhalt meh» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   p. «Ja: Einstiegsseite» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   li. color
+   h3. «Richtet er sich an» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   p. «Ja: getrennte Lese» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+kontrast-375 ruhe b offen-1-muster-b: 4 geändert
+   li. color,::after
+   li. color,::after
+   li.is-ansatz color,::after
+   li. color
+kontrast-375 ruhe b offen-3-muster-e: 18 geändert
+   section.puk-vis-compare__col color
+   p.puk-vis-compare__key «Option A · durchge» color,border #FFFFFF/#FFFFFF 1.00 → #4F4F4F/#FFFFFF 8.19
+   dl. color,border
+   div. color,border
+   dt. «Merkmal 1» color,border #FFFFFF/#FFFFFF 1.00 → #4F4F4F/#FFFFFF 8.19
+   div. color,border
+kontrast-375 ruhe n muster-0-puk-vis-wide: 75 geändert
+   div.puk-vis-tablewrap color
+   table.puk-vis-plan color,border
+   caption. «Beispiel eines Vis» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   thead. color,border
+   tr. color,border
+   th. «Abschnitt» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+kontrast-375 ruhe n muster-1-muster-a: 23 geändert
+   figure.puk-vis-figure color
+   p.puk-vis-label «Abbildung 1 · Zwei» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   p.puk-vis-kern «Zwei Bereiche habe» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   p.puk-vis-short «Musterinhalt: Die » color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   div.puk-vis-overlap color,border
+   svg. color,border
+kontrast-375 ruhe n muster-2-muster-b: 43 geändert
+   figure.puk-vis-figure color
+   p.puk-vis-label «Abbildung 2 · Krei» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   p.puk-vis-kern «Was am Ende geschi» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   p.puk-vis-short «Musterinhalt: Vier» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   p.puk-vis-dir color,border
+   strong. «Leserichtung:» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+kontrast-375 ruhe n muster-3-muster-c: 34 geändert
+   figure.puk-vis-figure color
+   p.puk-vis-label «Abbildung 3 · Must» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   p.puk-vis-kern «Der Ablauf hat ein» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   p.puk-vis-short «Musterinhalt: Numm» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   ol.puk-vis-path color,border
+   li. color,border,::before,::after
+kontrast-375 ruhe n muster-5-muster-e: 35 geändert
+   figure.puk-vis-figure color
+   p.puk-vis-label «Abbildung 5 · Zwei» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   p.puk-vis-kern «Zwei Optionen unte» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   p.puk-vis-short «Musterinhalt: Beid» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   div.puk-vis-compare color,border
+   section.puk-vis-compare__col color
+kontrast-375 ruhe n muster-6-muster-f: 25 geändert
+   figure.puk-vis-figure color
+   p.puk-vis-label «Abbildung 6 · Must» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   p.puk-vis-kern «Zwei Fragen führen» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   p.puk-vis-short «Musterinhalt: Jede» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   ol.puk-vis-decision color,border
+   li.puk-vis-decision__q color,border,::before
+kontrast-375 ruhe n muster-7-puk-vis-wide: 15 geändert
+   li. color
+   h3. «Hat der Inhalt meh» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   p. «Ja: Einstiegsseite» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   li. color
+   h3. «Richtet er sich an» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   p. «Ja: getrennte Lese» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+kontrast-375 ruhe n offen-1-muster-b: 13 geändert
+   li. color,::after
+   span.puk-vis-cycle__n «Station 1» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   span.puk-vis-cycle__name «Anlass» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   li. color,::after
+   span.puk-vis-cycle__n «Station 2» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   span.puk-vis-cycle__name «Reaktion» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+kontrast-375 ruhe n offen-3-muster-e: 26 geändert
+   section.puk-vis-compare__col color
+   p.puk-vis-compare__key «Option A · durchge» color,border #D8E0FF/#FFFFFF 1.31 → #4F4F4F/#FFFFFF 8.19
+   h3. «Musteroption A» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   dl. color,border
+   div. color,border
+   dt. «Merkmal 1» color,border #D8E0FF/#FFFFFF 1.31 → #4F4F4F/#FFFFFF 8.19
+kontrast-375 ruhe n offen-4-muster-f: 8 geändert
+   li.puk-vis-decision__branch «Ja: Weg A» color #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   strong. «Ja:» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   li.puk-vis-decision__branch «Nein: weiter zu Fr» color #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   strong. «Nein:» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   li.puk-vis-decision__branch «Ja: Weg B» color #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   strong. «Ja:» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+kontrast-375 ruhe n react: 2 geändert
+   button.puk-carousel__btn color
+   span. color,bg,ownBg,border
+kontrast-1280 ruhe b muster-0-puk-vis-wide: 1 geändert
+   div.puk-vis-tablewrap color
+kontrast-1280 ruhe b muster-1-muster-a: 11 geändert
+   figure.puk-vis-figure color
+   div.puk-vis-overlap color,border
+   svg. color,border
+   circle. color,border
+   circle. color,border
+   ul. color,border
+kontrast-1280 ruhe b muster-2-muster-b: 21 geändert
+   figure.puk-vis-figure color
+   p.puk-vis-dir color,border
+   strong. «Leserichtung:» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   span. «im Uhrzeigersinn, » color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   span. «von oben nach unte» color,border
+   div.puk-vis-cycle color,border
+kontrast-1280 ruhe b muster-3-muster-c: 13 geändert
+   figure.puk-vis-figure color
+   ol.puk-vis-path color,border
+   li. color,border,::before,::after
+   p. «Ein Anliegen wird » color,border #FFFFFF/#F7F7F7 1.07 → #4F4F4F/#F7F7F7 7.65
+   li.is-ansatz color,border,::before,::after
+   p. «Offene Fragen werd» color,border #FFFFFF/#F7F7F7 1.07 → #4F4F4F/#F7F7F7 7.65
+kontrast-1280 ruhe b muster-5-muster-e: 20 geändert
+   figure.puk-vis-figure color
+   div.puk-vis-compare color,border
+   section.puk-vis-compare__col color
+   p.puk-vis-compare__key «Option A · durchge» color,border #FFFFFF/#FFFFFF 1.00 → #4F4F4F/#FFFFFF 8.19
+   dl. color,border
+   div. color,border
+kontrast-1280 ruhe b muster-6-muster-f: 6 geändert
+   figure.puk-vis-figure color
+   ol.puk-vis-decision color,border
+   li.puk-vis-decision__q color,border,::before
+   ul.puk-vis-decision__branches color,border
+   li.puk-vis-decision__q color,border
+   ul.puk-vis-decision__branches color,border
+kontrast-1280 ruhe b muster-7-puk-vis-wide: 15 geändert
+   li. color
+   h3. «Hat der Inhalt meh» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   p. «Ja: Einstiegsseite» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   li. color
+   h3. «Richtet er sich an» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   p. «Ja: getrennte Lese» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+kontrast-1280 ruhe b offen-1-muster-b: 4 geändert
+   li. color
+   li. color
+   li.is-ansatz color
+   li. color
+kontrast-1280 ruhe b offen-3-muster-e: 18 geändert
+   section.puk-vis-compare__col color
+   p.puk-vis-compare__key «Option A · durchge» color,border #FFFFFF/#FFFFFF 1.00 → #4F4F4F/#FFFFFF 8.19
+   dl. color,border
+   div. color,border
+   dt. «Merkmal 1» color,border #FFFFFF/#FFFFFF 1.00 → #4F4F4F/#FFFFFF 8.19
+   div. color,border
+kontrast-1280 ruhe n muster-0-puk-vis-wide: 75 geändert
+   div.puk-vis-tablewrap color
+   table.puk-vis-plan color,border
+   caption. «Beispiel eines Vis» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   thead. color,border
+   tr. color,border
+   th. «Abschnitt» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+kontrast-1280 ruhe n muster-1-muster-a: 23 geändert
+   figure.puk-vis-figure color
+   p.puk-vis-label «Abbildung 1 · Zwei» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   p.puk-vis-kern «Zwei Bereiche habe» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   p.puk-vis-short «Musterinhalt: Die » color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   div.puk-vis-overlap color,border
+   svg. color,border
+kontrast-1280 ruhe n muster-2-muster-b: 43 geändert
+   figure.puk-vis-figure color
+   p.puk-vis-label «Abbildung 2 · Krei» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   p.puk-vis-kern «Was am Ende geschi» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   p.puk-vis-short «Musterinhalt: Vier» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   p.puk-vis-dir color,border
+   strong. «Leserichtung:» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+kontrast-1280 ruhe n muster-3-muster-c: 34 geändert
+   figure.puk-vis-figure color
+   p.puk-vis-label «Abbildung 3 · Must» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   p.puk-vis-kern «Der Ablauf hat ein» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   p.puk-vis-short «Musterinhalt: Numm» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   ol.puk-vis-path color,border
+   li. color,border,::before,::after
+kontrast-1280 ruhe n muster-5-muster-e: 35 geändert
+   figure.puk-vis-figure color
+   p.puk-vis-label «Abbildung 5 · Zwei» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   p.puk-vis-kern «Zwei Optionen unte» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   p.puk-vis-short «Musterinhalt: Beid» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   div.puk-vis-compare color,border
+   section.puk-vis-compare__col color
+kontrast-1280 ruhe n muster-6-muster-f: 25 geändert
+   figure.puk-vis-figure color
+   p.puk-vis-label «Abbildung 6 · Must» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   p.puk-vis-kern «Zwei Fragen führen» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   p.puk-vis-short «Musterinhalt: Jede» color,border #FFFFFF/#F7F7F7 1.07 → #222222/#F7F7F7 14.85
+   ol.puk-vis-decision color,border
+   li.puk-vis-decision__q color,border,::before
+kontrast-1280 ruhe n muster-7-puk-vis-wide: 15 geändert
+   li. color
+   h3. «Hat der Inhalt meh» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   p. «Ja: Einstiegsseite» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   li. color
+   h3. «Richtet er sich an» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   p. «Ja: getrennte Lese» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+kontrast-1280 ruhe n offen-1-muster-b: 13 geändert
+   li. color
+   span.puk-vis-cycle__n «Station 1» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   span.puk-vis-cycle__name «Anlass» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   li. color
+   span.puk-vis-cycle__n «Station 2» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   span.puk-vis-cycle__name «Reaktion» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+kontrast-1280 ruhe n offen-3-muster-e: 26 geändert
+   section.puk-vis-compare__col color
+   p.puk-vis-compare__key «Option A · durchge» color,border #D8E0FF/#FFFFFF 1.31 → #4F4F4F/#FFFFFF 8.19
+   h3. «Musteroption A» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   dl. color,border
+   div. color,border
+   dt. «Merkmal 1» color,border #D8E0FF/#FFFFFF 1.31 → #4F4F4F/#FFFFFF 8.19
+kontrast-1280 ruhe n offen-4-muster-f: 8 geändert
+   li.puk-vis-decision__branch «Ja: Weg A» color #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   strong. «Ja:» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   li.puk-vis-decision__branch «Nein: weiter zu Fr» color #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   strong. «Nein:» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   li.puk-vis-decision__branch «Ja: Weg B» color #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+   strong. «Ja:» color,border #FFFFFF/#FFFFFF 1.00 → #222222/#FFFFFF 15.91
+kontrast-1280 ruhe n react: 2 geändert
+   button.puk-carousel__btn color
+   span. color,bg,ownBg,border
+light-375 Zustand b ruhe muster-0-puk-vis-wide div.puk-vis-tablewrap: color rgb(255, 255, 255) → rgb(34, 34, 34)
+light-375 Zustand b hover muster-0-puk-vis-wide div.puk-vis-tablewrap: color rgb(255, 255, 255) → rgb(34, 34, 34)
+light-375 Zustand b fokus muster-0-puk-vis-wide div.puk-vis-tablewrap: color rgb(255, 255, 255) → rgb(34, 34, 34)
+light-375 Zustand b gedrueckt muster-0-puk-vis-wide div.puk-vis-tablewrap: color rgb(255, 255, 255) → rgb(34, 34, 34)
+light-375 Zustand n ruhe muster-0-puk-vis-wide div.puk-vis-tablewrap: color rgb(255, 255, 255) → rgb(34, 34, 34)
+light-375 Zustand n hover muster-0-puk-vis-wide div.puk-vis-tablewrap: color rgb(255, 255, 255) → rgb(34, 34, 34)
+light-375 Zustand n fokus muster-0-puk-vis-wide div.puk-vis-tablewrap: color rgb(255, 255, 255) → rgb(34, 34, 34); shadow rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px → rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px
+light-375 Zustand n gedrueckt muster-0-puk-vis-wide div.puk-vis-tablewrap: color rgb(255, 255, 255) → rgb(34, 34, 34); shadow rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px → rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px
+light-375 Zustand n hover muster-1-muster-a summary.: color rgb(255, 255, 255) → rgb(34, 34, 34); border rgb(255, 255, 255) → rgb(34, 34, 34)
+light-375 Zustand n fokus muster-1-muster-a summary.: shadow rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px → rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px
+light-375 Zustand n gedrueckt muster-1-muster-a summary.: shadow rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px → rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px
+light-375 Zustand b hover muster-1-muster-a a.puk-link--inline: color rgb(255, 255, 255) → rgb(34, 34, 34); border rgb(255, 255, 255) → rgb(34, 34, 34)
+light-375 Zustand n hover muster-1-muster-a a.puk-link--inline: color rgb(255, 255, 255) → rgb(34, 34, 34); border rgb(255, 255, 255) → rgb(34, 34, 34)
+light-375 Zustand n fokus muster-1-muster-a a.puk-link--inline: shadow rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px → rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px
+light-375 Zustand n gedrueckt muster-1-muster-a a.puk-link--inline: shadow rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px → rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px
+light-375 Zustand n hover muster-2-muster-b summary.: color rgb(255, 255, 255) → rgb(34, 34, 34); border rgb(255, 255, 255) → rgb(34, 34, 34)
+light-375 Zustand n fokus muster-2-muster-b summary.: shadow rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px → rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px
+light-375 Zustand n gedrueckt muster-2-muster-b summary.: shadow rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px → rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px
+light-375 Zustand n hover muster-3-muster-c summary.: color rgb(255, 255, 255) → rgb(34, 34, 34); border rgb(255, 255, 255) → rgb(34, 34, 34)
+light-375 Zustand n fokus muster-3-muster-c summary.: shadow rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px → rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px
+light-375 Zustand n gedrueckt muster-3-muster-c summary.: shadow rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px → rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px
+light-375 Zustand n fokus react button.puk-carousel__btn: shadow rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px → rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px
+light-375 Zustand n gedrueckt react button.puk-carousel__btn: shadow rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px → rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px
+light-375 Zustand n ruhe react button.puk-carousel__btn: color rgb(255, 255, 255) → rgb(34, 34, 34)
+light-375 Zustand n fokus react button.puk-carousel__btn: color rgb(255, 255, 255) → rgb(34, 34, 34); shadow rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px → rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px
+light-375 Zustand n gedrueckt react button.puk-carousel__btn: color rgb(255, 255, 255) → rgb(34, 34, 34); shadow rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px → rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px
+light-1280 Zustand b ruhe muster-0-puk-vis-wide div.puk-vis-tablewrap: color rgb(255, 255, 255) → rgb(34, 34, 34)
+light-1280 Zustand b hover muster-0-puk-vis-wide div.puk-vis-tablewrap: color rgb(255, 255, 255) → rgb(34, 34, 34)
+light-1280 Zustand b fokus muster-0-puk-vis-wide div.puk-vis-tablewrap: color rgb(255, 255, 255) → rgb(34, 34, 34)
+light-1280 Zustand b gedrueckt muster-0-puk-vis-wide div.puk-vis-tablewrap: color rgb(255, 255, 255) → rgb(34, 34, 34)
+light-1280 Zustand n ruhe muster-0-puk-vis-wide div.puk-vis-tablewrap: color rgb(255, 255, 255) → rgb(34, 34, 34)
+light-1280 Zustand n hover muster-0-puk-vis-wide div.puk-vis-tablewrap: color rgb(255, 255, 255) → rgb(34, 34, 34)
+light-1280 Zustand n fokus muster-0-puk-vis-wide div.puk-vis-tablewrap: color rgb(255, 255, 255) → rgb(34, 34, 34); shadow rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px → rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px
+light-1280 Zustand n gedrueckt muster-0-puk-vis-wide div.puk-vis-tablewrap: color rgb(255, 255, 255) → rgb(34, 34, 34); shadow rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px → rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px
+light-1280 Zustand n hover muster-1-muster-a summary.: color rgb(255, 255, 255) → rgb(34, 34, 34); border rgb(255, 255, 255) → rgb(34, 34, 34)
+light-1280 Zustand n fokus muster-1-muster-a summary.: shadow rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px → rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px
+light-1280 Zustand n gedrueckt muster-1-muster-a summary.: shadow rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px → rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px
+light-1280 Zustand b hover muster-1-muster-a a.puk-link--inline: color rgb(255, 255, 255) → rgb(34, 34, 34); border rgb(255, 255, 255) → rgb(34, 34, 34)
+light-1280 Zustand n hover muster-1-muster-a a.puk-link--inline: color rgb(255, 255, 255) → rgb(34, 34, 34); border rgb(255, 255, 255) → rgb(34, 34, 34)
+light-1280 Zustand n fokus muster-1-muster-a a.puk-link--inline: shadow rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px → rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px
+light-1280 Zustand n gedrueckt muster-1-muster-a a.puk-link--inline: shadow rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px → rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px
+light-1280 Zustand n hover muster-2-muster-b summary.: color rgb(255, 255, 255) → rgb(34, 34, 34); border rgb(255, 255, 255) → rgb(34, 34, 34)
+light-1280 Zustand n fokus muster-2-muster-b summary.: shadow rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px → rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px
+light-1280 Zustand n gedrueckt muster-2-muster-b summary.: shadow rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px → rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px
+light-1280 Zustand n hover muster-3-muster-c summary.: color rgb(255, 255, 255) → rgb(34, 34, 34); border rgb(255, 255, 255) → rgb(34, 34, 34)
+light-1280 Zustand n fokus muster-3-muster-c summary.: shadow rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px → rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px
+light-1280 Zustand n gedrueckt muster-3-muster-c summary.: shadow rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px → rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px
+light-1280 Zustand n fokus react button.puk-carousel__btn: shadow rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px → rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px
+light-1280 Zustand n gedrueckt react button.puk-carousel__btn: shadow rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px → rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px
+light-1280 Zustand n ruhe react button.puk-carousel__btn: color rgb(255, 255, 255) → rgb(34, 34, 34)
+light-1280 Zustand n fokus react button.puk-carousel__btn: color rgb(255, 255, 255) → rgb(34, 34, 34); shadow rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px → rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px
+light-1280 Zustand n gedrueckt react button.puk-carousel__btn: color rgb(255, 255, 255) → rgb(34, 34, 34); shadow rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px → rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px
+kontrast-375 Zustand b ruhe muster-0-puk-vis-wide div.puk-vis-tablewrap: color rgb(255, 255, 255) → rgb(34, 34, 34)
+kontrast-375 Zustand b hover muster-0-puk-vis-wide div.puk-vis-tablewrap: color rgb(255, 255, 255) → rgb(34, 34, 34)
+kontrast-375 Zustand b fokus muster-0-puk-vis-wide div.puk-vis-tablewrap: color rgb(255, 255, 255) → rgb(34, 34, 34)
+kontrast-375 Zustand b gedrueckt muster-0-puk-vis-wide div.puk-vis-tablewrap: color rgb(255, 255, 255) → rgb(34, 34, 34)
+kontrast-375 Zustand n ruhe muster-0-puk-vis-wide div.puk-vis-tablewrap: color rgb(255, 255, 255) → rgb(34, 34, 34)
+kontrast-375 Zustand n hover muster-0-puk-vis-wide div.puk-vis-tablewrap: color rgb(255, 255, 255) → rgb(34, 34, 34)
+kontrast-375 Zustand n fokus muster-0-puk-vis-wide div.puk-vis-tablewrap: color rgb(255, 255, 255) → rgb(34, 34, 34); shadow rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px → rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px
+kontrast-375 Zustand n gedrueckt muster-0-puk-vis-wide div.puk-vis-tablewrap: color rgb(255, 255, 255) → rgb(34, 34, 34); shadow rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px → rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px
+kontrast-375 Zustand n hover muster-1-muster-a summary.: color rgb(255, 255, 255) → rgb(34, 34, 34); border rgb(255, 255, 255) → rgb(34, 34, 34)
+kontrast-375 Zustand n fokus muster-1-muster-a summary.: shadow rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px → rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px
+kontrast-375 Zustand n gedrueckt muster-1-muster-a summary.: shadow rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px → rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px
+kontrast-375 Zustand b hover muster-1-muster-a a.puk-link--inline: color rgb(255, 255, 255) → rgb(34, 34, 34); border rgb(255, 255, 255) → rgb(34, 34, 34)
+kontrast-375 Zustand n hover muster-1-muster-a a.puk-link--inline: color rgb(255, 255, 255) → rgb(34, 34, 34); border rgb(255, 255, 255) → rgb(34, 34, 34)
+kontrast-375 Zustand n fokus muster-1-muster-a a.puk-link--inline: shadow rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px → rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px
+kontrast-375 Zustand n gedrueckt muster-1-muster-a a.puk-link--inline: shadow rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px → rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px
+kontrast-375 Zustand n hover muster-2-muster-b summary.: color rgb(255, 255, 255) → rgb(34, 34, 34); border rgb(255, 255, 255) → rgb(34, 34, 34)
+kontrast-375 Zustand n fokus muster-2-muster-b summary.: shadow rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px → rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px
+kontrast-375 Zustand n gedrueckt muster-2-muster-b summary.: shadow rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px → rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px
+kontrast-375 Zustand n hover muster-3-muster-c summary.: color rgb(255, 255, 255) → rgb(34, 34, 34); border rgb(255, 255, 255) → rgb(34, 34, 34)
+kontrast-375 Zustand n fokus muster-3-muster-c summary.: shadow rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px → rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px
+kontrast-375 Zustand n gedrueckt muster-3-muster-c summary.: shadow rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px → rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px
+kontrast-375 Zustand n fokus react button.puk-carousel__btn: shadow rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px → rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px
+kontrast-375 Zustand n gedrueckt react button.puk-carousel__btn: shadow rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px → rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px
+kontrast-375 Zustand n ruhe react button.puk-carousel__btn: color rgb(255, 255, 255) → rgb(34, 34, 34)
+kontrast-375 Zustand n fokus react button.puk-carousel__btn: color rgb(255, 255, 255) → rgb(34, 34, 34); shadow rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px → rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px
+kontrast-375 Zustand n gedrueckt react button.puk-carousel__btn: color rgb(255, 255, 255) → rgb(34, 34, 34); shadow rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px → rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px
+kontrast-1280 Zustand b ruhe muster-0-puk-vis-wide div.puk-vis-tablewrap: color rgb(255, 255, 255) → rgb(34, 34, 34)
+kontrast-1280 Zustand b hover muster-0-puk-vis-wide div.puk-vis-tablewrap: color rgb(255, 255, 255) → rgb(34, 34, 34)
+kontrast-1280 Zustand b fokus muster-0-puk-vis-wide div.puk-vis-tablewrap: color rgb(255, 255, 255) → rgb(34, 34, 34)
+kontrast-1280 Zustand b gedrueckt muster-0-puk-vis-wide div.puk-vis-tablewrap: color rgb(255, 255, 255) → rgb(34, 34, 34)
+kontrast-1280 Zustand n ruhe muster-0-puk-vis-wide div.puk-vis-tablewrap: color rgb(255, 255, 255) → rgb(34, 34, 34)
+kontrast-1280 Zustand n hover muster-0-puk-vis-wide div.puk-vis-tablewrap: color rgb(255, 255, 255) → rgb(34, 34, 34)
+kontrast-1280 Zustand n fokus muster-0-puk-vis-wide div.puk-vis-tablewrap: color rgb(255, 255, 255) → rgb(34, 34, 34); shadow rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px → rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px
+kontrast-1280 Zustand n gedrueckt muster-0-puk-vis-wide div.puk-vis-tablewrap: color rgb(255, 255, 255) → rgb(34, 34, 34); shadow rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px → rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px
+kontrast-1280 Zustand n hover muster-1-muster-a summary.: color rgb(255, 255, 255) → rgb(34, 34, 34); border rgb(255, 255, 255) → rgb(34, 34, 34)
+kontrast-1280 Zustand n fokus muster-1-muster-a summary.: shadow rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px → rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px
+kontrast-1280 Zustand n gedrueckt muster-1-muster-a summary.: shadow rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px → rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px
+kontrast-1280 Zustand b hover muster-1-muster-a a.puk-link--inline: color rgb(255, 255, 255) → rgb(34, 34, 34); border rgb(255, 255, 255) → rgb(34, 34, 34)
+kontrast-1280 Zustand n hover muster-1-muster-a a.puk-link--inline: color rgb(255, 255, 255) → rgb(34, 34, 34); border rgb(255, 255, 255) → rgb(34, 34, 34)
+kontrast-1280 Zustand n fokus muster-1-muster-a a.puk-link--inline: shadow rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px → rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px
+kontrast-1280 Zustand n gedrueckt muster-1-muster-a a.puk-link--inline: shadow rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px → rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px
+kontrast-1280 Zustand n hover muster-2-muster-b summary.: color rgb(255, 255, 255) → rgb(34, 34, 34); border rgb(255, 255, 255) → rgb(34, 34, 34)
+kontrast-1280 Zustand n fokus muster-2-muster-b summary.: shadow rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px → rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px
+kontrast-1280 Zustand n gedrueckt muster-2-muster-b summary.: shadow rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px → rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px
+kontrast-1280 Zustand n hover muster-3-muster-c summary.: color rgb(255, 255, 255) → rgb(34, 34, 34); border rgb(255, 255, 255) → rgb(34, 34, 34)
+kontrast-1280 Zustand n fokus muster-3-muster-c summary.: shadow rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px → rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px
+kontrast-1280 Zustand n gedrueckt muster-3-muster-c summary.: shadow rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px → rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px
+kontrast-1280 Zustand n fokus react button.puk-carousel__btn: shadow rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px → rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px
+kontrast-1280 Zustand n gedrueckt react button.puk-carousel__btn: shadow rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px → rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px
+kontrast-1280 Zustand n ruhe react button.puk-carousel__btn: color rgb(255, 255, 255) → rgb(34, 34, 34)
+kontrast-1280 Zustand n fokus react button.puk-carousel__btn: color rgb(255, 255, 255) → rgb(34, 34, 34); shadow rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px → rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px
+kontrast-1280 Zustand n gedrueckt react button.puk-carousel__btn: color rgb(255, 255, 255) → rgb(34, 34, 34); shadow rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px → rgb(255, 255, 255) 0px 0px 0px 2px, rgb(0, 40, 194) 0px 0px 0px 4px

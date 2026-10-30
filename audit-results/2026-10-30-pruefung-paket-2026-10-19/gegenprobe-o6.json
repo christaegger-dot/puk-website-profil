@@ -1,0 +1,193 @@
+{
+ "selektoren": [
+  "[data-puk-light]",
+  "[data-puk-surface]:not([data-puk-surface=\"night\"])",
+  ".puk-dialog",
+  ".puk-disclosure__panel",
+  ".puk-carousel__slide",
+  ".puk-carousel__btn",
+  ".puk-filter",
+  ".puk-longform__figure",
+  ".puk-longform__figure-side",
+  ".puk-longform__support",
+  ".puk-longform__reflection",
+  ".puk-longform__term-guide>div",
+  ".puk-web-media",
+  ".puk-vis-figure:not(.puk-vis-figure--open)",
+  ".puk-vis-longdesc",
+  ".puk-vis-cycle li",
+  ".puk-vis-compare__col",
+  ".puk-vis-decision__branch",
+  ".puk-vis-illu",
+  ".puk-vis-tablewrap",
+  ".puk-vis-decide li",
+  ".puk-site-draft",
+  "input",
+  "select",
+  "textarea"
+ ],
+ "ergebnisse": [
+  {
+   "name": "unverändert",
+   "helle": "ok",
+   "erklaer": "ok",
+   "meldung": []
+  },
+  {
+   "name": "ohne Rücksetzregel",
+   "helle": "scheitert",
+   "erklaer": "scheitert",
+   "meldung": []
+  },
+  {
+   "name": "ohne [data-puk-light]",
+   "helle": "scheitert",
+   "erklaer": "ok",
+   "meldung": []
+  },
+  {
+   "name": "ohne [data-puk-surface]:not([data-puk-surface=\"night\"])",
+   "helle": "scheitert",
+   "erklaer": "ok",
+   "meldung": []
+  },
+  {
+   "name": "ohne .puk-dialog",
+   "helle": "scheitert",
+   "erklaer": "ok",
+   "meldung": []
+  },
+  {
+   "name": "ohne .puk-disclosure__panel",
+   "helle": "scheitert",
+   "erklaer": "ok",
+   "meldung": []
+  },
+  {
+   "name": "ohne .puk-carousel__slide",
+   "helle": "ok",
+   "erklaer": "ok",
+   "meldung": []
+  },
+  {
+   "name": "ohne .puk-carousel__btn",
+   "helle": "ok",
+   "erklaer": "scheitert",
+   "meldung": []
+  },
+  {
+   "name": "ohne .puk-filter",
+   "helle": "scheitert",
+   "erklaer": "ok",
+   "meldung": []
+  },
+  {
+   "name": "ohne .puk-longform__figure",
+   "helle": "scheitert",
+   "erklaer": "ok",
+   "meldung": []
+  },
+  {
+   "name": "ohne .puk-longform__figure-side",
+   "helle": "ok",
+   "erklaer": "ok",
+   "meldung": []
+  },
+  {
+   "name": "ohne .puk-longform__support",
+   "helle": "scheitert",
+   "erklaer": "ok",
+   "meldung": []
+  },
+  {
+   "name": "ohne .puk-longform__reflection",
+   "helle": "ok",
+   "erklaer": "ok",
+   "meldung": []
+  },
+  {
+   "name": "ohne .puk-longform__term-guide>div",
+   "helle": "ok",
+   "erklaer": "ok",
+   "meldung": []
+  },
+  {
+   "name": "ohne .puk-web-media",
+   "helle": "ok",
+   "erklaer": "ok",
+   "meldung": []
+  },
+  {
+   "name": "ohne .puk-vis-figure:not(.puk-vis-figure--open)",
+   "helle": "ok",
+   "erklaer": "scheitert",
+   "meldung": []
+  },
+  {
+   "name": "ohne .puk-vis-longdesc",
+   "helle": "ok",
+   "erklaer": "scheitert",
+   "meldung": []
+  },
+  {
+   "name": "ohne .puk-vis-cycle li",
+   "helle": "ok",
+   "erklaer": "ok",
+   "meldung": []
+  },
+  {
+   "name": "ohne .puk-vis-compare__col",
+   "helle": "ok",
+   "erklaer": "ok",
+   "meldung": []
+  },
+  {
+   "name": "ohne .puk-vis-decision__branch",
+   "helle": "ok",
+   "erklaer": "ok",
+   "meldung": []
+  },
+  {
+   "name": "ohne .puk-vis-illu",
+   "helle": "ok",
+   "erklaer": "scheitert",
+   "meldung": []
+  },
+  {
+   "name": "ohne .puk-vis-tablewrap",
+   "helle": "ok",
+   "erklaer": "ok",
+   "meldung": []
+  },
+  {
+   "name": "ohne .puk-vis-decide li",
+   "helle": "ok",
+   "erklaer": "scheitert",
+   "meldung": []
+  },
+  {
+   "name": "ohne .puk-site-draft",
+   "helle": "scheitert",
+   "erklaer": "ok",
+   "meldung": []
+  },
+  {
+   "name": "ohne input",
+   "helle": "scheitert",
+   "erklaer": "ok",
+   "meldung": []
+  },
+  {
+   "name": "ohne select",
+   "helle": "scheitert",
+   "erklaer": "ok",
+   "meldung": []
+  },
+  {
+   "name": "ohne textarea",
+   "helle": "scheitert",
+   "erklaer": "ok",
+   "meldung": []
+  }
+ ]
+}
