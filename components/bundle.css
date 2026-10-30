@@ -358,7 +358,7 @@
 .puk-web-card-list>li{display:flex;min-width:0}
 .puk-web-band{padding-block:64px;background:var(--puk-blue-100);color:var(--puk-white)}
 .puk-web-band[data-puk-surface="night"]{background:var(--surface-night)} /* Band in Nachtblau, Profilentscheid 29.10.2026 */
-/* Blaues Band (Nachbesserung 29.10.2026, O-C): Links, Akzent, Nebentext und ruhige Knöpfe in Weiss statt Blau oder Schwarz auf Blau. */
+/* Blaues Band (Nachbesserung 29.10.2026, O-C und Punkt «Knöpfe im blauen Band»): Links, Akzent, Nebentext und ruhige Knöpfe in Weiss statt Blau oder Schwarz auf Blau. */
 .puk-web-band:not([data-puk-surface]){--text-link:var(--text-on-dark);--text-link-hover:var(--text-on-dark);--text-link-visited:var(--text-on-dark);--text-accent:var(--text-on-dark);--text-muted:var(--text-on-dark);--action-quiet-fg:var(--text-on-dark)}
 .puk-web-band:not([data-puk-surface]) a:not(.puk-btn){text-decoration:underline;text-underline-offset:.18em}
 .puk-web-band__inner{display:flex;align-items:flex-end;justify-content:space-between;gap:32px 48px;flex-wrap:wrap}
@@ -422,8 +422,9 @@ a:hover{color:var(--text-link-hover)}
    Karten, Hinweise, Dialoge, Formularfelder, Erklärfiguren) erhalten die Werte der Seitenfläche
    zurück. Spezifität 0: eigene Farbregeln der Komponenten bleiben vorrangig. Ergänzt 30.10.2026 (W-2):
    Erklärgrafiken aus visual-patterns.css (ohne die flächenlose --open) und Karussell-Knöpfe;
-   2026.10.19 (O-3): Entwurfsmarke des Starters. */
-:where(.puk-web-band,[data-puk-surface="night"]) :where([data-puk-light],[data-puk-surface]:not([data-puk-surface="night"]),.puk-dialog,.puk-disclosure__panel,.puk-carousel__slide,.puk-carousel__btn,.puk-filter,.puk-longform__figure,.puk-longform__figure-side,.puk-longform__support,.puk-longform__reflection,.puk-longform__term-guide>div,.puk-web-media,.puk-vis-figure:not(.puk-vis-figure--open),.puk-vis-longdesc,.puk-vis-cycle li,.puk-vis-compare__col,.puk-vis-decision__branch,.puk-vis-illu,.puk-vis-tablewrap,.puk-vis-decide li,.puk-site-draft,input,select,textarea){--text-default:var(--puk-black-100);--text-muted:var(--puk-black-75);--text-link:var(--puk-blue-100);--text-link-hover:var(--puk-black-100);--text-link-visited:var(--puk-blue-125);--text-accent:var(--puk-blue-100);--action-quiet-fg:var(--puk-black-100);--focus-ring:0 0 0 2px var(--puk-white),0 0 0 4px var(--puk-blue-100);color:var(--text-default)}
+   2026.10.19 (O-3): Entwurfsmarke des Starters. 2026.10.20 (W-3): Anwendungsmuster aus applications.css,
+   Platzhalter und Sicherheitsleiste des Starters, Schichtenbild und Knöpfe aus erklaermuster.css. */
+:where(.puk-web-band,[data-puk-surface="night"]) :where([data-puk-light],[data-puk-surface]:not([data-puk-surface="night"]),.puk-dialog,.puk-disclosure__panel,.puk-carousel__slide,.puk-carousel__btn,.puk-filter,.puk-longform__figure,.puk-longform__figure-side,.puk-longform__support,.puk-longform__reflection,.puk-longform__term-guide>div,.puk-web-media,.puk-vis-figure:not(.puk-vis-figure--open),.puk-vis-longdesc,.puk-vis-cycle li,.puk-vis-compare__col,.puk-vis-decision__branch,.puk-vis-illu,.puk-vis-tablewrap,.puk-vis-decide li,.puk-site-draft,.puk-site-placeholder,.puk-site-safety--direct,.puk-app-card,.puk-app-chip,.puk-app-choice,.puk-app-boundary,.puk-app-mini,.puk-app-detail,.puk-app-output,.puk-app-empty,.puk-app-contact-target,.puk-vis-layers,.puk-vis-btn,input,select,textarea){--text-default:var(--puk-black-100);--text-muted:var(--puk-black-75);--text-link:var(--puk-blue-100);--text-link-hover:var(--puk-black-100);--text-link-visited:var(--puk-blue-125);--text-accent:var(--puk-blue-100);--action-quiet-fg:var(--puk-black-100);--focus-ring:0 0 0 2px var(--puk-white),0 0 0 4px var(--puk-blue-100);color:var(--text-default)}
 [data-puk-sr-only]{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap}
 *,*::before,*::after{box-sizing:border-box}
 /* ---- Fokus ----
@@ -637,7 +638,7 @@ a:hover{color:var(--text-link-hover)}
 .puk-btn--ghost{background:transparent;color:var(--action-quiet-fg)}
 .puk-btn--secondary:hover,.puk-btn--ghost:hover{background:var(--ui-wash);color:var(--text-link-on-tint)}
 .puk-btn--secondary:active,.puk-btn--ghost:active{background:var(--ui-field)}
-/* Nachtblaue Fläche und blaues Band: gedrückt ohne Hover (Tastatur) liegt die helle Fläche --ui-field unter der weissen Schrift; dann Schwarz wie auf Weiss (Nachbesserung O-A, O-C). */
+/* Nachtblaue Fläche und blaues Band: gedrückt ohne Hover (Tastatur) liegt die helle Fläche --ui-field unter der weissen Schrift; dann Schwarz wie auf Weiss (Nachbesserung O-A, Nachtrag 2026.10.14, und Punkt «Knöpfe im blauen Band»). */
 :is([data-puk-surface="night"],.puk-web-band:not([data-puk-surface])) :is(.puk-btn--secondary,.puk-btn--ghost):active:not(:hover){color:var(--puk-black-100)}
 .puk-btn--danger{background:var(--status-danger-strong-bg);color:var(--status-danger-fg)}.puk-btn--danger:hover{background:var(--status-danger-strong-hover-bg)}
 .puk-btn--sm{min-height:max(32px,var(--puk-target-min,0px));padding:0 14px;font:var(--type-body-sm);font-family:var(--font-core)}
@@ -703,7 +704,7 @@ html.puk-scroll-lock{overflow:hidden}
   /* Nachtblaue Fläche (Nachbesserung 29.10.2026, W-A): ohne Fläche wie auf Weiss drucken.
      inherit übernimmt die Textfarben der Umgebung statt Weiss und Blau 25. */
   [data-puk-surface="night"]{background:none!important;--text-default:inherit;--text-muted:inherit;--text-link:inherit;--text-link-hover:inherit;--text-link-visited:inherit;--text-accent:inherit;--action-quiet-fg:inherit;color:var(--text-default)!important}
-  /* Blaues Band: ohne Fläche wie auf Weiss drucken; Selektor so spezifisch wie die Regel am Bildschirm (O-C). */
+  /* Blaues Band: ohne Fläche wie auf Weiss drucken; Selektor so spezifisch wie die Regel am Bildschirm (O-C und Punkt «Knöpfe im blauen Band»). */
   .puk-web-band:not([data-puk-surface]){--text-link:inherit;--text-link-hover:inherit;--text-link-visited:inherit;--text-accent:inherit;--text-muted:inherit;--action-quiet-fg:inherit}
   body{background:#fff}
 }
