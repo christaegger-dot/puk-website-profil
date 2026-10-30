@@ -1,0 +1,65 @@
+# Protokollauszüge · unabhängige Prüfung 2026.10.17 · 30.10.2026
+
+## npm ci
+exit 0 (Node 22.22.0, npm 10.9.4, Playwright 1.62.1)
+
+## npm run build (build1)
+components/bundle.js geschrieben · 26 Komponenten
+_ds_bundle.js geschrieben · 26 Komponenten
+7 Seiten geschrieben · PUK Website Kit 1.10.1-r4 · abgeleitet · Build r4-24 · Gate draft: 0 blockierend, 12 Hinweise.
+4 Seiten geschrieben · PUK Website Kit 1.10.1-r4 · abgeleitet · Build r4-24 · Gate draft: 0 blockierend, 3 Hinweise.
+4 Seiten geschrieben · PUK Website Kit 1.10.1-r4 · abgeleitet · Build r4-24 · Gate production: 0 blockierend, 1 Hinweise.
+exit 0
+
+## npm run build (build2)
+components/bundle.js geschrieben · 26 Komponenten
+_ds_bundle.js geschrieben · 26 Komponenten
+7 Seiten geschrieben · PUK Website Kit 1.10.1-r4 · abgeleitet · Build r4-24 · Gate draft: 0 blockierend, 12 Hinweise.
+4 Seiten geschrieben · PUK Website Kit 1.10.1-r4 · abgeleitet · Build r4-24 · Gate draft: 0 blockierend, 3 Hinweise.
+4 Seiten geschrieben · PUK Website Kit 1.10.1-r4 · abgeleitet · Build r4-24 · Gate production: 0 blockierend, 1 Hinweise.
+exit 0
+
+## npm test · CHROMIUM_EXECUTABLE_PATH=/opt/pw-browsers/chromium (Chrome for Testing 153.0.8010.12, Revision 1243)
+ok 113 - Im blauen Band stehen Links, Akzent, Nebentext und ruhige Knöpfe in Weiss; Druck wie auf Weiss
+ok 114 - Helle Komponenten in blauem Band und Nachtblau zeigen dieselben Farben wie auf Weiss
+# tests 117
+# pass 117
+# fail 0
+# cancelled 0
+# skipped 0
+exit 0
+
+## npm test · CHROMIUM_EXECUTABLE_PATH=/opt/pw-browsers/chromium_headless_shell-1243/…/chrome-headless-shell (153.0.8010.12)
+ok 113 - Im blauen Band stehen Links, Akzent, Nebentext und ruhige Knöpfe in Weiss; Druck wie auf Weiss
+ok 114 - Helle Komponenten in blauem Band und Nachtblau zeigen dieselben Farben wie auf Weiss
+# tests 117
+# pass 117
+# fail 0
+# cancelled 0
+# skipped 0
+exit 0
+
+## npm test · ohne CHROMIUM_EXECUTABLE_PATH, PLAYWRIGHT_BROWSERS_PATH mit chromium_headless_shell-1234 (von `npx playwright install chromium-headless-shell` für Playwright 1.62.1, Chromium 151.0.7922.34; wie in der CI)
+ok 113 - Im blauen Band stehen Links, Akzent, Nebentext und ruhige Knöpfe in Weiss; Druck wie auf Weiss
+ok 114 - Helle Komponenten in blauem Band und Nachtblau zeigen dieselben Farben wie auf Weiss
+# tests 117
+# pass 117
+# fail 0
+# cancelled 0
+# skipped 0
+exit 0
+
+## npm run test:ui -- --bericht <ausserhalb> · Chromium 1243
+Matrix: 112 Prüfläufe · 0 mit Befund · Tastatur: 41 Prüfungen · 0 mit Befund · Interaktionen: 19 Prüfungen · 0 mit Befund · Gate: 76 Prüfungen · 0 mit Befund · Gesamt: 0 Befunde · Fokusring nur statisch geprüft (Dokument ohne Fokus): Matrix 0 Läufe · nicht prüfbar: Tastatur 0, Interaktionen 0
+exit 0
+
+## npm run package
+133 lokale Dokumentationslinks geprüft; 0 fehlende Ziele.
+382 Dateien bytegleich; SHA-256 geprüft: ec60a11f115209f3c7469ca72a0e6a68137b799dbd0e3bfee570cd3626d4c721
+
+## npm run check:package
+133 lokale Dokumentationslinks geprüft; 0 fehlende Ziele.
+382 Dateien bytegleich; SHA-256 geprüft: ec60a11f115209f3c7469ca72a0e6a68137b799dbd0e3bfee570cd3626d4c721
+
+## Gegenprobe (3 Dateien aus ad6ce55, nur Test «Helle Komponenten»)
+# pass 0 / # fail 1; actual 'rgb(255, 255, 255) | rgb(255, 255, 255)', expected 'rgb(100, 100, 100) | rgb(100, 100, 100)'
