@@ -175,7 +175,7 @@ test('Sekundär- und Ghost-Button stehen auf Nachtblau in Weiss, ausserhalb unve
 const blauesBand=`<!doctype html><html lang="de"><head><meta charset="utf-8"><title>Blaues Band</title><link rel="stylesheet" href="styles.css"></head>
 <body class="puk-web-page"><main><p id="leer">Leer</p><p><a id="w-a" href="#x">Link auf Weiss</a> <button id="w-dis" class="puk-btn puk-btn--secondary" disabled>Aus</button></p>
 <section id="band" class="puk-web-band"><p id="kicker" class="puk-longform__kicker">Kicker</p><p id="text">Text mit <a id="link" href="#x">Link</a></p>
-<p id="muted" style="color:var(--text-muted)">Nebentext</p><button id="sec" class="puk-btn puk-btn--secondary">Sekundär</button><button id="ghost" class="puk-btn puk-btn--ghost">Ghost</button><button id="dis" class="puk-btn puk-btn--secondary" disabled>Aus</button></section></main></body></html>`;
+<p id="muted" style="color:var(--text-muted)">Nebentext</p><button id="sec" class="puk-btn puk-btn--secondary">Sekundär</button><button id="ghost" class="puk-btn puk-btn--ghost">Ghost</button><button id="dis" class="puk-btn puk-btn--secondary" disabled>Aus</button><a id="asec" class="puk-btn puk-btn--secondary" href="#x">Knopf-Link</a></section></main></body></html>`;
 test('Im blauen Band stehen Links, Akzent, Nebentext und ruhige Knöpfe in Weiss; Druck wie auf Weiss',async()=>{
  for(const theme of ['light','kontrast']){
   const page=await browser.newPage();
@@ -186,7 +186,7 @@ test('Im blauen Band stehen Links, Akzent, Nebentext und ruhige Knöpfe in Weiss
    await page.hover('#leer');
    const c=(q,p='color')=>page.$eval(q,(el,p)=>getComputedStyle(el)[p],p);
    const white='rgb(255, 255, 255)',black='rgb(34, 34, 34)';
-   for(const id of ['#kicker','#text','#link','#muted','#sec','#ghost'])assert.equal(await c(id),white,`${theme} ${id}`);
+   for(const id of ['#kicker','#text','#link','#muted','#sec','#ghost','#asec'])assert.equal(await c(id),white,`${theme} ${id}`);
    assert.match(await c('#link','textDecorationLine'),/underline/,`${theme} Link unterstrichen`);
    assert.equal(await c('#sec','borderTopColor'),white,`${theme} Sekundär-Rahmen`);
    for(const p of ['color','backgroundColor','borderTopColor'])assert.equal(await c('#dis',p),await c('#w-dis',p),`${theme} deaktiviert ${p}`);
@@ -204,6 +204,11 @@ test('Im blauen Band stehen Links, Akzent, Nebentext und ruhige Knöpfe in Weiss
    const onWhite=await c('#w-a');
    for(const id of ['#link','#kicker'])assert.equal(await c(id),onWhite,`${theme} ${id} Druck`);
    for(const id of ['#text','#sec','#ghost'])assert.equal(await c(id),black,`${theme} ${id} Druck`);
+   // button.puk-btn ist im Druck ausgeblendet; sichtbar bleibt der Knopf-Link (Nachbesserung 30.10.2026, O-2).
+   assert.equal(await c('#sec','display'),'none',`${theme} Knopf im Druck ausgeblendet`);
+   assert.notEqual(await c('#asec','display'),'none',`${theme} Knopf-Link im Druck sichtbar`);
+   assert.equal(await c('#asec'),black,`${theme} Knopf-Link Druck`);
+   assert.equal(await c('#asec','borderTopColor'),black,`${theme} Knopf-Link Rahmen Druck`);
   }finally{await page.close();}
  }
 });
