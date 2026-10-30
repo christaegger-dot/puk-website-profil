@@ -27,4 +27,4 @@ Die optionalen Befunde O-3 bis O-6 der Prüfung bleiben offen; sie sind nicht Te
 
 ## Prüfung
 
-Die technische Selbstprüfung steht im [Prüfbericht](PRUEFBERICHT.md). Diese Sitzung hat das Paket 2026.10.17 unabhängig geprüft und 2026.10.18 gebaut. Die unabhängige Prüfung des Pakets `puk-website-profil-2026.10.18.zip` muss darum eine andere Sitzung übernehmen und ist offen. Kein Merge und keine Veröffentlichung ohne gesonderten Auftrag.
+Die technische Selbstprüfung steht im [Prüfbericht](PRUEFBERICHT.md). Diese Sitzung hat das Paket 2026.10.17 unabhängig geprüft und 2026.10.18 gebaut. Die unabhängige Prüfung des Pakets `puk-website-profil-2026.10.18.zip` entfällt; an ihre Stelle tritt die Prüfung von 2026.10.19 ([ENTSCHEIDE-PROFIL-2026-10-19.md](ENTSCHEIDE-PROFIL-2026-10-19.md)), die 2026.10.18 einschliesst. Die optionalen Befunde O-3 bis O-6 sind mit 2026.10.19 behoben. Kein Merge und keine Veröffentlichung ohne gesonderten Auftrag.

@@ -1,7 +1,7 @@
 # Abschlussentscheide · 17.10.2026
 
 <!-- profil:stand -->
-**Profil 2026.10.18 abgeschlossen · Stand 30.10.2026. Offene Projektpendenzen: 0.**
+**Profil 2026.10.19 abgeschlossen · Stand 30.10.2026. Offene Projektpendenzen: 0.**
 <!-- /profil:stand -->
 
 | Bisherige Aufgabe oder Unklarheit | Abschlussentscheid | Status |
@@ -129,7 +129,7 @@ Christa Egger hat am 30.10.2026 zu W-1 entschieden: «Leitlinie ergänzen, keine
 | --- | --- | --- |
 | W-1 · helle Komponenten in Bändern | In blauen und nachtblauen Bändern stehen nur Kicker, Titel, Text, Links, Nebentext und Knöpfe; Karten, Hinweise, Folien, Dialoge und getönte Flächen stehen ausserhalb. Regel in Leitlinie 02, README und Karte «PUK-Blau»; Stylesheet unverändert. | Umgesetzt |
 | O-1 und O-2 | Optionale Befunde der Prüfung 2026.10.14; nicht Teil dieses Auftrags. Mit 2026.10.16 behoben. | Offen, nicht beauftragt |
-| Unabhängige Prüfung des Pakets 2026.10.15 | Entfällt; die Prüfung von 2026.10.16 schliesst W-1 ein. | Ersetzt |
+| Unabhängige Prüfung des Pakets 2026.10.15 | Entfällt; die Prüfung von 2026.10.17 schliesst W-1 ein (berichtigt mit 2026.10.19, vorher «2026.10.16»). | Ersetzt |
 
 ## Nachbesserung vom 30.10.2026 · Version 2026.10.16
 
@@ -157,7 +157,19 @@ Christa Egger hat am 30.10.2026 die Behebung von W-2 beauftragt («W-2 als 2026.
 | Punkt | Entscheid | Status |
 | --- | --- | --- |
 | W-2 · Erklärgrafiken und Karussell-Knöpfe in Bändern | Die Rücksetzregel erfasst zusätzlich Erklärgrafiken mit eigener Fläche und Karussell-Knöpfe; Leitlinie 02 nennt erfasste Komponenten und Grenze. | Umgesetzt |
-| O-3 bis O-6 | Optionale Befunde der Prüfung 2026.10.17; nicht Teil dieses Auftrags. | Offen, nicht beauftragt |
-| Unabhängige Prüfung des Pakets 2026.10.18 | Durch eine Sitzung, die das Paket nicht gebaut hat. | Offen |
+| O-3 bis O-6 | Optionale Befunde der Prüfung 2026.10.17; nicht Teil dieses Auftrags. Mit 2026.10.19 behoben. | Offen, nicht beauftragt |
+| Unabhängige Prüfung des Pakets 2026.10.18 | Entfällt; die Prüfung von 2026.10.19 schliesst W-2 ein. | Ersetzt |
+
+## Nachbesserung vom 30.10.2026 · Version 2026.10.19
+
+Christa Egger hat am 30.10.2026 die Behebung von O-3 bis O-6 beauftragt («O-3 bis O-6 als 2026.10.19 beheben»). Einzelheiten stehen in [ENTSCHEIDE-PROFIL-2026-10-19.md](ENTSCHEIDE-PROFIL-2026-10-19.md); der Stand 2026.10.18 liegt unverändert im [Archiv](archiv/profilstand-2026-10-30-18/).
+
+| Punkt | Entscheid | Status |
+| --- | --- | --- |
+| O-3 · Komponenten ohne helle Fläche | Knöpfe im Band sind `.puk-btn` und React-`Button`; Reiter, Formularelemente und Menüs stehen ausserhalb. Entwurfsmarke des Starters in der Rücksetzregel. | Umgesetzt |
+| O-4 · Texte | Leitlinie 02, Karte «PUK-Blau», Zeile 2026.10.15 oben, Kommentare angeglichen. | Umgesetzt |
+| O-5 · Angaben im Selbstprüfbericht | Berichtigung in der Entscheiddatei und im Prüfbericht; Archive unverändert. | Umgesetzt |
+| O-6 · Testabdeckung | Test zu hellen Komponenten mit allen erfassten Komponenten, Hover, Fokus, gedrückt und Druck. | Umgesetzt |
+| Unabhängige Prüfung des Pakets 2026.10.19 | Durch eine Sitzung, die das Paket nicht gebaut hat; schliesst 2026.10.18 ein. | Offen |
 
 Eingabeparameter der leeren Vorlagen sind keine offenen Projektaufgaben. Der Produktionsschutz bleibt aktiv. Alle Entscheide gelten für diesen abgeschlossenen Profilstand; es gibt keinen zurückgestellten Backlog. Die Nachweise stehen im [Prüfbericht](PRUEFBERICHT.md).

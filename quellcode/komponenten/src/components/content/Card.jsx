@@ -26,7 +26,7 @@ export function Card({ title, eyebrow, children, footer, media, variant = 'defau
         ...(variant === 'sunken' ? { '--text-link': 'var(--text-link-on-tint)', '--text-accent': 'var(--text-link-on-tint)' } : null),
         ...style,
       }}
-      /* Helle Karte: in dunklen Bändern gelten wieder die Farben der Seitenfläche (Nachbesserung W-1, 29.10.2026). */
+      /* Helle Karte: in dunklen Bändern gelten wieder die Farben der Seitenfläche (Nachbesserung W-1, 30.10.2026). */
       {...(brand || inverse ? null : { 'data-puk-light': '' })}
       {...rest}
     >

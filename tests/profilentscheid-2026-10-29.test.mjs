@@ -47,6 +47,8 @@ test('Leitlinie 02 nennt Geltung, Zählung und die vier Bedingungen des Titelbil
  assert.ok(g.includes('Einzige Ausnahme ist das Titelbild der Startseite'),'Vermeiden-Regel nennt die Ausnahme');
  // Entscheid 30.10.2026 (ENTSCHEIDE-PROFIL-2026-10-15.md, W-1): keine hellen Komponenten in Bändern.
  for(const s of ['Keine hellen Komponenten in Bändern','blau oder nachtblau','ausserhalb des Bandes','ENTSCHEIDE-PROFIL-2026-10-15.md'])assert.ok(g.includes(s),s);
+ // Nachbesserung 30.10.2026 (ENTSCHEIDE-PROFIL-2026-10-19.md, O-3): Knöpfe im Band sind .puk-btn und React-Button; Reiter, Formularelemente und Menüs stehen ausserhalb.
+ for(const s of ['Knöpfe meint die Klassen `.puk-btn` und den React-`Button`','Reiter (`Tabs`)','Menüs (`DisclosureMenu`)'])assert.ok(g.includes(s),s);
 });
 
 const fixture=`<!doctype html><html lang="de"><head><meta charset="utf-8"><title>Profilentscheid</title>
@@ -213,34 +215,69 @@ test('Im blauen Band stehen Links, Akzent, Nebentext und ruhige Knöpfe in Weiss
  }
 });
 
-// Nachbesserung 29.10.2026 (ENTSCHEIDE-PROFIL-2026-10-15.md, W-1): helle Komponenten in Bändern zeigen die Farben der Seitenfläche.
-const helleFlaechen=`<!doctype html><html lang="de"><head><meta charset="utf-8"><title>Helle Flächen</title><link rel="stylesheet" href="styles.css">
+// Nachbesserung 30.10.2026 (ENTSCHEIDE-PROFIL-2026-10-17.md, W-1; Regel ENTSCHEIDE-PROFIL-2026-10-15.md): helle Komponenten in Bändern zeigen die Farben der Seitenfläche.
+const helleFlaechen=`<!doctype html><html lang="de"><head><meta charset="utf-8"><title>Helle Flächen</title><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="templates/website/psychoeducation-site-starter/starter.css">
 <script src="platform/vendor/react.production.min.js"></script><script src="platform/vendor/react-dom.production.min.js"></script><script src="components/bundle.js"></script></head>
 <body class="puk-web-page"><main><p id="leer">Leer</p>
 <div id="w" class="puk-web-container"></div><section id="b" class="puk-web-band"></section><section id="n" class="puk-web-band" data-puk-surface="night"></section></main>
 <script src="helle-flaechen.js"></script></body></html>`;
+// Erweitert 30.10.2026 (ENTSCHEIDE-PROFIL-2026-10-19.md, O-6): alle erfassten Flächen, dazu Hover, Fokus, gedrückt und Druck.
 const helleFlaechenJs=`const h=React.createElement,K=window.PUKWeb;
-for(const p of ['w','b','n']){const box=document.createElement('div');box.innerHTML='<div id="'+p+'-tint" data-puk-surface="tint" style="padding:8px"><a id="'+p+'-tlink" href="#x">Link</a> <span id="'+p+'-tmuted" style="color:var(--text-muted)">Neben</span> <button id="'+p+'-tsec" class="puk-btn puk-btn--secondary">Sekundär</button></div><div data-puk-light style="background:#fff;padding:8px"><a id="'+p+'-llink" href="#x">Link</a> <span id="'+p+'-ltext">Text</span></div><div id="'+p+'-react"></div>';document.getElementById(p).appendChild(box);
+for(const p of ['w','b','n']){const box=document.createElement('div');box.innerHTML='<div id="'+p+'-tint" data-puk-surface="tint" style="padding:8px"><a id="'+p+'-tlink" href="#x">Link</a> <span id="'+p+'-tmuted" style="color:var(--text-muted)">Neben</span> <button id="'+p+'-tsec" class="puk-btn puk-btn--secondary">Sekundär</button> <button id="'+p+'-tghost" class="puk-btn puk-btn--ghost">Ghost</button> <a id="'+p+'-tasec" class="puk-btn puk-btn--secondary" href="#x">Knopf-Link</a></div><div data-puk-light style="background:#fff;padding:8px"><a id="'+p+'-llink" href="#x">Link</a> <span id="'+p+'-ltext">Text</span></div>'+
+ '<dialog id="'+p+'-dlg" class="puk-dialog"><div class="puk-dialog__head"><h2 id="'+p+'-dtitle" class="puk-dialog__title">Dialog</h2><button id="'+p+'-dclose" class="puk-dialog__close" aria-label="Schliessen">×</button></div><p id="'+p+'-dtext">Text <a id="'+p+'-dlink" href="#x">Link</a> <button id="'+p+'-dsec" class="puk-btn puk-btn--secondary">Sekundär</button></p></dialog>'+
+ '<div class="puk-filter"><input id="'+p+'-finput" class="puk-filter__input" value="Suche" aria-label="Suche"><p id="'+p+'-fstatus" class="puk-filter__status">3 Treffer</p></div>'+
+ '<figure class="puk-longform__figure"><span id="'+p+'-lftext">Figur</span> <a id="'+p+'-lflink" href="#x">Link</a></figure><div class="puk-longform__support"><span id="'+p+'-lstext">Stütze</span></div>'+
+ '<div class="puk-web-media" id="'+p+'-media">Bild</div><span class="puk-site-draft" id="'+p+'-draft">Entwurf</span><div id="'+p+'-react"></div>';document.getElementById(p).appendChild(box);
+ document.getElementById(p+'-dlg').show();
  ReactDOM.createRoot(document.getElementById(p+'-react')).render(h(React.Fragment,null,
   h(K.Card,{eyebrow:'Eyebrow',title:'Karte',footer:h(K.Button,{variant:'secondary',id:p+'-csec'},'Sekundär')},h('span',{id:p+'-ctext'},'Inhalt '),h('a',{id:p+'-clink',href:'#x'},'Link')),
   h(K.Card,{variant:'sunken',title:'Versenkt'},h('a',{id:p+'-slink',href:'#x'},'Link')),
   h(K.Alert,{title:'Hinweis'},h('a',{id:p+'-alink',href:'#x'},'Link')),
-  h(K.Input,{id:p+'-input',defaultValue:'Eingabe','aria-label':'Eingabe'})));}`;
+  h(K.Toast,{title:'Toast'},h('span',{id:p+'-toast'},'Nachricht')),
+  h(K.Input,{id:p+'-input',defaultValue:'Eingabe','aria-label':'Eingabe'}),
+  h(K.Select,{id:p+'-select','aria-label':'Auswahl',options:['Eins','Zwei']}),
+  h(K.Textarea,{id:p+'-textarea',defaultValue:'Text','aria-label':'Text'}),
+  h('div',{id:p+'-menu'},h(K.DisclosureMenu,{label:'Menü',items:[{label:'Eintrag',href:'#x'}]}))));}
+window.__bereit=true;`;
 test('Helle Komponenten in blauem Band und Nachtblau zeigen dieselben Farben wie auf Weiss',async()=>{
  for(const theme of ['light','kontrast']){
   const page=await browser.newPage();const errors=[];page.on('pageerror',e=>errors.push(String(e)));
   try{
    await page.route(server.url+'helle-flaechen.html',r=>r.fulfill({contentType:'text/html',body:theme==='kontrast'?helleFlaechen.replace('<html lang="de">','<html lang="de" data-theme="kontrast">'):helleFlaechen}));
    await page.route(server.url+'helle-flaechen.js',r=>r.fulfill({contentType:'text/javascript',body:helleFlaechenJs}));
-   await page.goto(server.url+'helle-flaechen.html',{waitUntil:'load'});await page.waitForSelector('#n-input');
-   await page.addStyleTag({content:'*{transition:none!important}'});await page.hover('#leer');
-   const look=sel=>page.$eval(sel,e=>{const s=getComputedStyle(e);return [s.color,s.borderTopColor].join(' | ');});
+   await page.goto(server.url+'helle-flaechen.html',{waitUntil:'load'});await page.waitForFunction(()=>window.__bereit&&document.querySelector('#n-textarea'));
+   for(const p of ['w','b','n'])await page.click('#'+p+'-menu .puk-disclosure__button');
+   await page.addStyleTag({content:'*{transition:none!important;animation:none!important}'});await page.hover('#leer');
+   const look=sel=>page.$eval(sel,e=>{const s=getComputedStyle(e);return [s.color,s.borderTopColor,s.backgroundColor].join(' | ');});
    const eyebrow=p=>page.$eval('#'+p+'-react span',e=>getComputedStyle(e).color);
-   for(const k of ['tlink','tmuted','tsec','llink','ltext','csec','ctext','clink','slink','alink','input']){
-    const white=await look('#w-'+k);
-    for(const p of ['b','n'])assert.equal(await look('#'+p+'-'+k),white,`${theme} ${p}-${k}`);
+   const sel=(p,k)=>k==='disclink'?'#'+p+'-menu .puk-disclosure__link':'#'+p+'-'+k;
+   const ruhe=['tlink','tmuted','tsec','tghost','tasec','llink','ltext','dtitle','dclose','dtext','dlink','dsec','finput','fstatus','lftext','lflink','lstext','media','draft','csec','ctext','clink','slink','alink','toast','input','select','textarea','disclink'];
+   for(const k of ruhe){
+    const white=await look(sel('w',k));
+    for(const p of ['b','n'])assert.equal(await look(sel(p,k)),white,`${theme} ${p}-${k}`);
    }
    for(const p of ['b','n'])assert.equal(await eyebrow(p),await eyebrow('w'),`${theme} ${p} Eyebrow`);
+   // Hover mit der Maus
+   for(const k of ['tsec','tghost','dsec','csec','tlink','llink','clink','dclose']){
+    const state=async p=>{await page.hover(sel(p,k));const v=await look(sel(p,k));await page.hover('#leer');return v;};
+    const white=await state('w');
+    for(const p of ['b','n'])assert.equal(await state(p),white,`${theme} ${p}-${k} Hover`);
+   }
+   // Fokus sowie gedrückt ohne Hover
+   const cdp=await page.context().newCDPSession(page);await cdp.send('DOM.enable');await cdp.send('CSS.enable');
+   const {root}=await cdp.send('DOM.getDocument',{depth:-1});
+   for(const forced of [['focus','focus-visible'],['active','focus','focus-visible']])for(const k of ['tsec','tghost','tasec','dsec','csec','tlink','clink','dclose','input','select','textarea']){
+    const state=async p=>{const {nodeId}=await cdp.send('DOM.querySelector',{nodeId:root.nodeId,selector:sel(p,k)});await cdp.send('CSS.forcePseudoState',{nodeId,forcedPseudoClasses:forced});
+     const v=await page.$eval(sel(p,k),e=>{const s=getComputedStyle(e);return [s.color,s.borderTopColor,s.backgroundColor,s.boxShadow].join(' | ');});await cdp.send('CSS.forcePseudoState',{nodeId,forcedPseudoClasses:[]});return v;};
+    const white=await state('w');
+    for(const p of ['b','n'])assert.equal(await state(p),white,`${theme} ${p}-${k} ${forced[0]==='active'?'gedrückt':'Fokus'}`);
+   }
+   await page.emulateMedia({media:'print'});
+   for(const k of ruhe){
+    const c=q=>page.$eval(q,e=>{const s=getComputedStyle(e);return s.display==='none'?'ausgeblendet':[s.color,s.borderTopColor].join(' | ');});
+    const white=await c(sel('w',k));
+    for(const p of ['b','n'])assert.equal(await c(sel(p,k)),white,`${theme} ${p}-${k} Druck`);
+   }
    assert.deepEqual(errors,[],theme);
   }finally{await page.close();}
  }
