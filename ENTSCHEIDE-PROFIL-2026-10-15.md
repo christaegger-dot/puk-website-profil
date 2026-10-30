@@ -26,4 +26,4 @@ Die optionalen Befunde O-1 (Beschreibung des Tokens `action-quiet-fg` nennt nur 
 
 ## Prüfung
 
-Die technische Selbstprüfung steht im [Prüfbericht](PRUEFBERICHT.md). Diese Sitzung hat das Paket 2026.10.14 unabhängig geprüft und 2026.10.15 gebaut. Die unabhängige Prüfung des Pakets `puk-website-profil-2026.10.15.zip` muss darum eine andere Sitzung übernehmen; sie ist offen. Kein Merge und keine Veröffentlichung ohne gesonderten Auftrag.
+Die technische Selbstprüfung steht im [Prüfbericht](PRUEFBERICHT.md). Diese Sitzung hat das Paket 2026.10.14 unabhängig geprüft und 2026.10.15 gebaut. Das Paket `puk-website-profil-2026.10.15.zip` wurde nicht unabhängig geprüft; an seine Stelle tritt die Prüfung von 2026.10.16 ([ENTSCHEIDE-PROFIL-2026-10-16.md](ENTSCHEIDE-PROFIL-2026-10-16.md)), die W-1 einschliesst. Kein Merge und keine Veröffentlichung ohne gesonderten Auftrag.

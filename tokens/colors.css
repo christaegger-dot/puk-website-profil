@@ -120,7 +120,7 @@
   --action-primary-fg:var(--puk-white);
   --action-accent-bg:var(--puk-blue-100);
   --action-accent-bg-hover:var(--puk-blue-125);
-  --action-quiet-fg:var(--puk-black-100); /* Text und Rahmen von Sekundär- und Ghost-Button; nachtblaue Fläche: Weiss */
+  --action-quiet-fg:var(--puk-black-100); /* Text und Rahmen von Sekundär- und Ghost-Button; nachtblaue Fläche und blaues Band: Weiss */
   --action-disabled-bg:var(--puk-black-25);
   --action-disabled-fg:var(--puk-black-50);
 
