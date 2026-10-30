@@ -1,7 +1,7 @@
 {
   "name": "puk-website-profil",
   "private": true,
-  "version": "2026.10.17",
+  "version": "2026.10.18",
   "engines": {
     "node": ">=20"
   },
@@ -33,8 +33,8 @@
   },
   "pukProfil": {
     "stand": "2026-10-30",
-    "starterBuild": "r4-24",
-    "kitBuild": "r4-10",
+    "starterBuild": "r4-25",
+    "kitBuild": "r4-11",
     "qaRevision": "qa-9"
   }
 }

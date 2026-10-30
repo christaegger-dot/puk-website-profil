@@ -1,7 +1,7 @@
 # Abschlussentscheide · 17.10.2026
 
 <!-- profil:stand -->
-**Profil 2026.10.17 abgeschlossen · Stand 30.10.2026. Offene Projektpendenzen: 0.**
+**Profil 2026.10.18 abgeschlossen · Stand 30.10.2026. Offene Projektpendenzen: 0.**
 <!-- /profil:stand -->
 
 | Bisherige Aufgabe oder Unklarheit | Abschlussentscheid | Status |
@@ -148,6 +148,16 @@ Christa Egger hat am 30.10.2026 die technische Korrektur von W-1 beauftragt («B
 | Punkt | Entscheid | Status |
 | --- | --- | --- |
 | W-1 · technische Absicherung | Helle Flächen in Bändern erhalten Text-, Link- und Knopffarben der Seitenfläche zurück; neues Kennzeichen `data-puk-light`. Die Regel aus 2026.10.15 bleibt. | Umgesetzt |
-| Unabhängige Prüfung des Pakets 2026.10.17 | Durch eine Sitzung, die das Paket nicht gebaut hat; schliesst 2026.10.15 und 2026.10.16 ein. | Offen |
+| Unabhängige Prüfung des Pakets 2026.10.17 | Durch eine Sitzung, die das Paket nicht gebaut hat; schliesst 2026.10.15 und 2026.10.16 ein. Am 30.10.2026 erfolgt (PR #153), Paket-SHA `ec60a11f…` bestätigt. Keine Befunde «kritisch», ein Befund «wichtig» (W-2), vier «optional»; Bericht im [Archiv](archiv/profilstand-2026-10-30-17/PRUEFBERICHT.md). | Erledigt |
+
+## Nachbesserung vom 30.10.2026 · Version 2026.10.18
+
+Christa Egger hat am 30.10.2026 die Behebung von W-2 beauftragt («W-2 als 2026.10.18 beheben»). Einzelheiten stehen in [ENTSCHEIDE-PROFIL-2026-10-18.md](ENTSCHEIDE-PROFIL-2026-10-18.md); der geprüfte Stand 2026.10.17 liegt mit der unabhängigen Prüfung im [Archiv](archiv/profilstand-2026-10-30-17/).
+
+| Punkt | Entscheid | Status |
+| --- | --- | --- |
+| W-2 · Erklärgrafiken und Karussell-Knöpfe in Bändern | Die Rücksetzregel erfasst zusätzlich Erklärgrafiken mit eigener Fläche und Karussell-Knöpfe; Leitlinie 02 nennt erfasste Komponenten und Grenze. | Umgesetzt |
+| O-3 bis O-6 | Optionale Befunde der Prüfung 2026.10.17; nicht Teil dieses Auftrags. | Offen, nicht beauftragt |
+| Unabhängige Prüfung des Pakets 2026.10.18 | Durch eine Sitzung, die das Paket nicht gebaut hat. | Offen |
 
 Eingabeparameter der leeren Vorlagen sind keine offenen Projektaufgaben. Der Produktionsschutz bleibt aktiv. Alle Entscheide gelten für diesen abgeschlossenen Profilstand; es gibt keinen zurückgestellten Backlog. Die Nachweise stehen im [Prüfbericht](PRUEFBERICHT.md).

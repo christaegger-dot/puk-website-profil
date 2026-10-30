@@ -245,3 +245,47 @@ test('Helle Komponenten in blauem Band und Nachtblau zeigen dieselben Farben wie
   }finally{await page.close();}
  }
 });
+
+// Nachbesserung 30.10.2026 (ENTSCHEIDE-PROFIL-2026-10-18.md, W-2): Erklärgrafiken und Karussell-Knöpfe in Bändern wie auf Weiss.
+const erklaergrafik=p=>`<figure class="puk-vis-figure" id="${p}-fig"><p class="puk-vis-label" id="${p}-label">Erklärgrafik</p>
+<div class="puk-vis-compare"><div class="puk-vis-compare__col"><p class="puk-vis-compare__key" id="${p}-key">A</p><h3 id="${p}-h3">Spalte</h3><dl><dt id="${p}-dt">Merkmal</dt><dd id="${p}-dd">Wert</dd></dl></div></div>
+<figcaption class="puk-vis-caption" id="${p}-cap">Legende <a id="${p}-a" href="#x">Link</a></figcaption></figure>
+<ol class="puk-vis-decide"><li id="${p}-decide">Schritt</li></ol><div class="puk-vis-longdesc" id="${p}-long"><p>Langbeschreibung</p></div>
+<figure class="puk-vis-figure puk-vis-figure--open"><p class="puk-vis-label" id="${p}-open">Offen</p><div class="puk-vis-illu"><p class="puk-vis-illu__stamp" id="${p}-stamp">Platzhalter</p></div></figure><div id="${p}-k"></div>`;
+const erklaergrafikHtml=`<!doctype html><html lang="de"><head><meta charset="utf-8"><title>Erklärgrafik</title><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="templates/website/longform/visual-patterns.css">
+<script src="platform/vendor/react.production.min.js"></script><script src="platform/vendor/react-dom.production.min.js"></script><script src="components/bundle.js"></script></head>
+<body class="puk-web-page"><main><p id="leer">Leer</p><div id="w">${erklaergrafik('w')}</div><section class="puk-web-band" id="b">${erklaergrafik('b')}</section><section class="puk-web-band" data-puk-surface="night" id="n">${erklaergrafik('n')}</section></main>
+<script src="erklaergrafik.js"></script></body></html>`;
+const erklaergrafikJs=`for(const p of ['w','b','n'])ReactDOM.createRoot(document.getElementById(p+'-k')).render(React.createElement(window.PUKWeb.Carousel,{label:'Karussell',items:[{title:'Eins',content:'Inhalt'},{title:'Zwei'}]}));`;
+test('Erklärgrafiken und Karussell-Knöpfe in blauem Band und Nachtblau zeigen dieselben Farben wie auf Weiss',async()=>{
+ for(const theme of ['light','kontrast']){
+  const page=await browser.newPage();const errors=[];page.on('pageerror',e=>errors.push(String(e)));
+  try{
+   await page.route(server.url+'erklaergrafik.html',r=>r.fulfill({contentType:'text/html',body:theme==='kontrast'?erklaergrafikHtml.replace('<html lang="de">','<html lang="de" data-theme="kontrast">'):erklaergrafikHtml}));
+   await page.route(server.url+'erklaergrafik.js',r=>r.fulfill({contentType:'text/javascript',body:erklaergrafikJs}));
+   await page.goto(server.url+'erklaergrafik.html',{waitUntil:'load'});await page.waitForSelector('#n-k .puk-carousel__btn');
+   await page.addStyleTag({content:'*{transition:none!important}'});await page.hover('#leer');
+   const look=sel=>page.$eval(sel,e=>{const s=getComputedStyle(e);return [s.color,s.borderTopColor,s.backgroundColor].join(' | ');});
+   const btn=p=>`#${p}-k .puk-carousel__btn:last-of-type`;
+   for(const k of ['label','key','h3','dt','dd','cap','a','decide','long','stamp']){
+    const white=await look('#w-'+k);
+    for(const p of ['b','n'])assert.equal(await look('#'+p+'-'+k),white,`${theme} ${p}-${k}`);
+   }
+   const cdp=await page.context().newCDPSession(page);await cdp.send('DOM.enable');await cdp.send('CSS.enable');
+   const {root}=await cdp.send('DOM.getDocument');
+   for(const state of [[],['focus','focus-visible'],['active','focus','focus-visible']]){
+    const shot=async p=>{const {nodeId}=await cdp.send('DOM.querySelector',{nodeId:root.nodeId,selector:btn(p)});await cdp.send('CSS.forcePseudoState',{nodeId,forcedPseudoClasses:state});
+     const v=await page.$eval(btn(p),e=>{const s=getComputedStyle(e);return [s.color,s.backgroundColor,s.boxShadow].join(' | ');});await cdp.send('CSS.forcePseudoState',{nodeId,forcedPseudoClasses:[]});return v;};
+    const white=await shot('w');
+    for(const p of ['b','n'])assert.equal(await shot(p),white,`${theme} ${p} Karussell-Knopf ${state.join('+')||'Ruhe'}`);
+   }
+   // Gegenprobe: Ohne eigene Fläche behalten offene Erklärgrafik und Karussell-Status die Farben des Bandes.
+   const c=q=>page.$eval(q,e=>getComputedStyle(e).color);
+   assert.equal(await c('#n-open'),'rgb(255, 255, 255)',`${theme} offene Erklärgrafik auf Nachtblau`);
+   assert.equal(await c('#b-k .puk-carousel__status'),'rgb(255, 255, 255)',`${theme} Karussell-Status im blauen Band`);
+   await page.emulateMedia({media:'print'});
+   for(const k of ['label','key','h3','dt','cap'])for(const p of ['b','n'])assert.equal(await c('#'+p+'-'+k),await c('#w-'+k),`${theme} ${p}-${k} Druck`);
+   assert.deepEqual(errors,[],theme);
+  }finally{await page.close();}
+ }
+});

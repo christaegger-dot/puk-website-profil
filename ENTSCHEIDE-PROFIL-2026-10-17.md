@@ -28,3 +28,5 @@ Christa Egger hatte am 30.10.2026 in der Prüf- und Nachbesserungssitzung zusät
 ## Prüfung
 
 Die technische Selbstprüfung steht im [Prüfbericht](PRUEFBERICHT.md). Diese Sitzung hat das Paket 2026.10.10 unabhängig geprüft und die Versionen 2026.10.11 bis 2026.10.14 sowie 2026.10.17 gebaut. Die unabhängige Prüfung des Pakets `puk-website-profil-2026.10.17.zip` muss darum eine andere Sitzung übernehmen; sie schliesst 2026.10.15 und 2026.10.16 ein. Kein Merge und keine Veröffentlichung ohne gesonderten Auftrag.
+
+Nachtrag: Die unabhängige Prüfung vom 30.10.2026 ([archivierter Prüfbericht](archiv/profilstand-2026-10-30-17/PRUEFBERICHT.md), PR #153) fand als Befund W-2, dass Erklärgrafiken und Karussell-Knöpfe nicht erfasst sind; die Aussage unter «Grenzen», erfasst seien die hellen Komponenten des Profils, traf darum nicht ganz zu. Behoben mit 2026.10.18 ([ENTSCHEIDE-PROFIL-2026-10-18.md](ENTSCHEIDE-PROFIL-2026-10-18.md)).
