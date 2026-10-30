@@ -2,7 +2,7 @@
   "$comment": "PUK Website Kit 1.10.1-r4 · abgeleitet – Seitenvertrag des Psychoedukations-Starters. Synthetische Musterwerte. Pflichtfelder und Regeln: README.md in diesem Ordner. Nach jeder Änderung: node tools/build.mjs, danach node tools/gate.mjs (Entwurf) bzw. node tools/gate.mjs --production.",
   "kitRevision": "PUK Website Kit 1.10.1-r4 · abgeleitet",
   "canonicalSource": "PUK Zürich Design System 1.10.1 (unverändert)",
-  "assetVersion": "r4-23",
+  "assetVersion": "r4-24",
   "siteTitle": "Information klar gestalten · Profilbeispiel",
   "shortDescription": "Fachneutrales Gestaltungsmuster des PUK Website-Profils: Informationen verständlich gliedern, darstellen und prüfen.",
   "language": "de-CH",

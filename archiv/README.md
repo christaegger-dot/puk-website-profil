@@ -29,3 +29,5 @@ Verbindlich sind die [aktuellen Regeln](../README.md), die [Abschlussentscheide]
 `profilstand-2026-10-30-14/` erhält Profil 2026.10.14 mit Selbstprüfbericht, unabhängiger Prüfung vom 29.10.2026, Entscheiddatei, Matrixdaten und unverändertem Paket (SHA-256 `2e375f61…`; geprüft wurde `1c6fc473…`, der Unterschied liegt nur im Prüfbericht). Profil 2026.10.15 setzt den Befund W-1 als Regel um: In blauen und nachtblauen Bändern stehen keine hellen Komponenten.
 
 `profilstand-2026-10-30-15/` erhält Profil 2026.10.15 mit Selbstprüfbericht, Entscheiddatei, Matrixdaten und unverändertem Paket (SHA-256 `6b2b4aaf…`); dieses Paket wurde nicht unabhängig geprüft. Profil 2026.10.16 behebt die optionalen Befunde O-1 (Beschreibung des Tokens `action-quiet-fg`) und O-2 (Drucktest im blauen Band) der Prüfung 2026.10.14.
+
+`profilstand-2026-10-30-16/` erhält Profil 2026.10.16 mit Selbstprüfbericht, Entscheiddatei, Matrixdaten und unverändertem Paket (SHA-256 `787078d8…`); dieses Paket wurde nicht unabhängig geprüft. Profil 2026.10.17 sichert die Regel «keine hellen Komponenten in Bändern» technisch ab: Helle Flächen in Bändern erhalten die Farben der Seitenfläche zurück.
