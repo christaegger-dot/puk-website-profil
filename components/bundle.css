@@ -416,13 +416,14 @@ a:hover{color:var(--text-link-hover)}
    Blau 125 hier nicht greift. */
 [data-puk-surface="night"]{background:var(--surface-night);color:var(--text-on-dark);--text-default:var(--text-on-dark);--text-muted:var(--puk-blue-25);--text-link:var(--text-on-dark);--text-link-hover:var(--text-on-dark);--text-link-visited:var(--text-on-dark);--text-accent:var(--puk-blue-25);--action-quiet-fg:var(--text-on-dark);--focus-ring:0 0 0 2px var(--surface-night),0 0 0 4px var(--puk-white)}
 [data-puk-surface="night"] a:not(.puk-btn){text-decoration:underline;text-underline-offset:.18em}
-/* ---- Helle Flächen in dunklen Bändern (Nachbesserung 29.10.2026, W-1) ----
+/* ---- Helle Flächen in dunklen Bändern (Nachbesserung 30.10.2026, W-1) ----
    Blaues Band und Nachtblau setzen Text, Links und ruhige Knöpfe über vererbte Variablen
    auf Weiss. Helle Flächen darin (eigene Flächen mit data-puk-light oder data-puk-surface,
    Karten, Hinweise, Dialoge, Formularfelder, Erklärfiguren) erhalten die Werte der Seitenfläche
    zurück. Spezifität 0: eigene Farbregeln der Komponenten bleiben vorrangig. Ergänzt 30.10.2026 (W-2):
-   Erklärgrafiken aus visual-patterns.css (ohne die flächenlose --open) und Karussell-Knöpfe. */
-:where(.puk-web-band,[data-puk-surface="night"]) :where([data-puk-light],[data-puk-surface]:not([data-puk-surface="night"]),.puk-dialog,.puk-disclosure__panel,.puk-carousel__slide,.puk-carousel__btn,.puk-filter,.puk-longform__figure,.puk-longform__figure-side,.puk-longform__support,.puk-longform__reflection,.puk-longform__term-guide>div,.puk-web-media,.puk-vis-figure:not(.puk-vis-figure--open),.puk-vis-longdesc,.puk-vis-cycle li,.puk-vis-compare__col,.puk-vis-decision__branch,.puk-vis-illu,.puk-vis-tablewrap,.puk-vis-decide li,input,select,textarea){--text-default:var(--puk-black-100);--text-muted:var(--puk-black-75);--text-link:var(--puk-blue-100);--text-link-hover:var(--puk-black-100);--text-link-visited:var(--puk-blue-125);--text-accent:var(--puk-blue-100);--action-quiet-fg:var(--puk-black-100);--focus-ring:0 0 0 2px var(--puk-white),0 0 0 4px var(--puk-blue-100);color:var(--text-default)}
+   Erklärgrafiken aus visual-patterns.css (ohne die flächenlose --open) und Karussell-Knöpfe;
+   2026.10.19 (O-3): Entwurfsmarke des Starters. */
+:where(.puk-web-band,[data-puk-surface="night"]) :where([data-puk-light],[data-puk-surface]:not([data-puk-surface="night"]),.puk-dialog,.puk-disclosure__panel,.puk-carousel__slide,.puk-carousel__btn,.puk-filter,.puk-longform__figure,.puk-longform__figure-side,.puk-longform__support,.puk-longform__reflection,.puk-longform__term-guide>div,.puk-web-media,.puk-vis-figure:not(.puk-vis-figure--open),.puk-vis-longdesc,.puk-vis-cycle li,.puk-vis-compare__col,.puk-vis-decision__branch,.puk-vis-illu,.puk-vis-tablewrap,.puk-vis-decide li,.puk-site-draft,input,select,textarea){--text-default:var(--puk-black-100);--text-muted:var(--puk-black-75);--text-link:var(--puk-blue-100);--text-link-hover:var(--puk-black-100);--text-link-visited:var(--puk-blue-125);--text-accent:var(--puk-blue-100);--action-quiet-fg:var(--puk-black-100);--focus-ring:0 0 0 2px var(--puk-white),0 0 0 4px var(--puk-blue-100);color:var(--text-default)}
 [data-puk-sr-only]{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap}
 *,*::before,*::after{box-sizing:border-box}
 /* ---- Fokus ----

@@ -33,3 +33,5 @@ Verbindlich sind die [aktuellen Regeln](../README.md), die [Abschlussentscheide]
 `profilstand-2026-10-30-16/` erhält Profil 2026.10.16 mit Selbstprüfbericht, Entscheiddatei, Matrixdaten und unverändertem Paket (SHA-256 `787078d8…`); dieses Paket wurde nicht unabhängig geprüft. Profil 2026.10.17 sichert die Regel «keine hellen Komponenten in Bändern» technisch ab: Helle Flächen in Bändern erhalten die Farben der Seitenfläche zurück.
 
 `profilstand-2026-10-30-17/` erhält Profil 2026.10.17 mit Selbstprüfbericht, unabhängiger Prüfung vom 30.10.2026, Entscheiddatei, Matrixdaten und Paket (SHA-256 `0b011b0b…`; geprüft wurde `ec60a11f…`, der Unterschied liegt nur im Prüfbericht). Profil 2026.10.18 behebt den Befund W-2 dieser Prüfung: Erklärgrafiken und Karussell-Knöpfe in Bändern erhalten ebenfalls die Farben der Seitenfläche zurück.
+
+`profilstand-2026-10-30-18/` erhält Profil 2026.10.18 mit Selbstprüfbericht, Entscheiddatei, Matrixdaten und unverändertem Paket (SHA-256 `4f9dbbc5…`); dieses Paket wurde nicht unabhängig geprüft. Profil 2026.10.19 behebt die optionalen Befunde O-3 bis O-6 der Prüfung 2026.10.17.
