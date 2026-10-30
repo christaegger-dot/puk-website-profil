@@ -45,6 +45,8 @@ test('Leitlinie 02 nennt Geltung, Zählung und die vier Bedingungen des Titelbil
  const g=read('guidelines/02-farben-und-kontrast.md');
  for(const s of ['--puk-blue-night','--surface-night','data-puk-surface="night"','13,69:1','10,45:1','zählt nicht als «das eine blaue Feld»','rein dekorativ','für Screenreader verborgen','keine Bedeutung','kein Rot','nur einmal je Website','gilt als das eine blaue Feld der Startseite','ENTSCHEIDE-PROFIL-2026-10-10.md'])assert.ok(g.includes(s),s);
  assert.ok(g.includes('Einzige Ausnahme ist das Titelbild der Startseite'),'Vermeiden-Regel nennt die Ausnahme');
+ // Entscheid 30.10.2026 (ENTSCHEIDE-PROFIL-2026-10-15.md, W-1): keine hellen Komponenten in Bändern.
+ for(const s of ['Keine hellen Komponenten in Bändern','blau oder nachtblau','ausserhalb des Bandes','ENTSCHEIDE-PROFIL-2026-10-15.md'])assert.ok(g.includes(s),s);
 });
 
 const fixture=`<!doctype html><html lang="de"><head><meta charset="utf-8"><title>Profilentscheid</title>

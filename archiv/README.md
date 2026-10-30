@@ -25,3 +25,5 @@ Verbindlich sind die [aktuellen Regeln](../README.md), die [Abschlussentscheide]
 `profilstand-2026-10-29-12/` erhält Profil 2026.10.12 mit Selbstprüfbericht, Entscheiddatei, Matrixdaten und unverändertem Paket (SHA-256 `22d71a6f…`); dieses Paket wurde nicht unabhängig geprüft. Profil 2026.10.13 behebt den Befund O-A der Prüfung 2026.10.10: Sekundär- und Ghost-Button stehen auf der nachtblauen Fläche in Weiss.
 
 `profilstand-2026-10-29-13/` erhält Profil 2026.10.13 mit Selbstprüfbericht, Entscheiddatei, Matrixdaten und unverändertem Paket (SHA-256 `ce36829b…`); dieses Paket wurde nicht unabhängig geprüft. Profil 2026.10.14 ergänzt den gedrückten Zustand der Knöpfe auf Nachtblau und behebt O-B (Karte «PUK-Blau») und O-C (Links, Akzent, Nebentext und Knöpfe im blauen Band).
+
+`profilstand-2026-10-30-14/` erhält Profil 2026.10.14 mit Selbstprüfbericht, unabhängiger Prüfung vom 29.10.2026, Entscheiddatei, Matrixdaten und unverändertem Paket (SHA-256 `2e375f61…`; geprüft wurde `1c6fc473…`, der Unterschied liegt nur im Prüfbericht). Profil 2026.10.15 setzt den Befund W-1 als Regel um: In blauen und nachtblauen Bändern stehen keine hellen Komponenten.
