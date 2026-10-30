@@ -1,0 +1,26 @@
+# Archive und Kennungen (C), Stand ad6ce55, 30.10.2026
+$ git show 65ab892:<Datei> | cmp archiv/profilstand-2026-10-30-14/<Datei>: 13 von 13 bytegleich
+$ (cd archiv/profilstand-2026-10-30-14 && sha256sum -c *.sha256)
+puk-website-profil-2026.10.14.zip: OK
+$ git show 5c235b3:<Datei> | cmp archiv/profilstand-2026-10-30-15/<Datei>: 13 von 13 bytegleich
+$ (cd archiv/profilstand-2026-10-30-15 && sha256sum -c *.sha256)
+puk-website-profil-2026.10.15.zip: OK
+$ git rev-parse 65ab892^{tree} a1a7b72^{tree}
+aeebcd02ce774e4993215c6fd607f329ab12702b
+aeebcd02ce774e4993215c6fd607f329ab12702b
+
+## Kennungen
+package.json: 2026.10.16 2026-10-30 r4-23 r4-9 qa-9
+Seiten mit data-puk-site-build="r4-23": 15; Verweise ?v=r4-23: 63
+11:const BUILD = 'r4-23'; // erzeugt aus package.json
+templates/website/minimal-starter/site.config.json:5:  "assetVersion": "r4-23",
+templates/website/profilbeispiel/site.config.json:5:  "assetVersion": "r4-23",
+templates/website/psychoeducation-site-starter/site.config.json:5:  "assetVersion": "r4-23",
+243:  "profileVersion": "2026.10.16"
+ui_kits/website/index.html: puk-kit-build" content="r4-9", Nennungen r4-9: 15
+qa.js: BUILD='r4-9' QA_REV='qa-9' 
+qa.html: Erwarteter Quellstand: <strong>r4-9
+package-lock.json:  "version": "2026.10.16",  "version": "2026.10.16", 
+
+## Diff a1a7b72..ad6ce55 unter templates/, ui_kits/, index.html, musterauswahl.html nach Gleichsetzen der Kennungen
+26 Dateien, 0 mit weiterem Unterschied

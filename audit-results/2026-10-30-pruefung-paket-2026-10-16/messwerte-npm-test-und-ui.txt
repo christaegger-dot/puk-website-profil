@@ -1,0 +1,82 @@
+# npm test und UI-Matrix, Stand ad6ce55, 30.10.2026
+Node v22.22.0, npm 10.9.4, Python 3.13.17, Playwright 1.62.1
+
+## npm test · chromium-1 (CHROMIUM_EXECUTABLE_PATH=/opt/pw-browsers/chromium)
+45 abgeleitete Dateien aktuell.
+119 lokale Dokumentationslinks geprüft; 0 fehlende Ziele.
+ok 107 - Nachtblau ist benannt, in beiden Themes gleich und trägt Weiss und Blau 25 mit mehr als 7:1
+ok 108 - Leitlinie 02 nennt Geltung, Zählung und die vier Bedingungen des Titelbilds
+ok 109 - data-puk-surface="night" setzt Fläche, weisse unterstrichene Links und den umgekehrten Fokusring
+ok 110 - data-puk-surface="night" druckt ohne Fläche mit dunklem Text und Links wie auf Weiss
+ok 111 - Vorschau Website.dc.html rendert ohne Fehler, auch wenn React verzögert lädt
+ok 112 - Sekundär- und Ghost-Button stehen auf Nachtblau in Weiss, ausserhalb unverändert in Schwarz
+ok 113 - Im blauen Band stehen Links, Akzent, Nebentext und ruhige Knöpfe in Weiss; Druck wie auf Weiss
+# tests 116
+# pass 116
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+
+## npm test · chromium-2 (CHROMIUM_EXECUTABLE_PATH=/opt/pw-browsers/chromium)
+45 abgeleitete Dateien aktuell.
+119 lokale Dokumentationslinks geprüft; 0 fehlende Ziele.
+ok 107 - Nachtblau ist benannt, in beiden Themes gleich und trägt Weiss und Blau 25 mit mehr als 7:1
+ok 108 - Leitlinie 02 nennt Geltung, Zählung und die vier Bedingungen des Titelbilds
+ok 109 - data-puk-surface="night" setzt Fläche, weisse unterstrichene Links und den umgekehrten Fokusring
+ok 110 - data-puk-surface="night" druckt ohne Fläche mit dunklem Text und Links wie auf Weiss
+ok 111 - Vorschau Website.dc.html rendert ohne Fehler, auch wenn React verzögert lädt
+ok 112 - Sekundär- und Ghost-Button stehen auf Nachtblau in Weiss, ausserhalb unverändert in Schwarz
+ok 113 - Im blauen Band stehen Links, Akzent, Nebentext und ruhige Knöpfe in Weiss; Druck wie auf Weiss
+# tests 116
+# pass 116
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+
+## npm test · chromium-3 (CHROMIUM_EXECUTABLE_PATH=/opt/pw-browsers/chromium)
+45 abgeleitete Dateien aktuell.
+119 lokale Dokumentationslinks geprüft; 0 fehlende Ziele.
+ok 107 - Nachtblau ist benannt, in beiden Themes gleich und trägt Weiss und Blau 25 mit mehr als 7:1
+ok 108 - Leitlinie 02 nennt Geltung, Zählung und die vier Bedingungen des Titelbilds
+ok 109 - data-puk-surface="night" setzt Fläche, weisse unterstrichene Links und den umgekehrten Fokusring
+ok 110 - data-puk-surface="night" druckt ohne Fläche mit dunklem Text und Links wie auf Weiss
+ok 111 - Vorschau Website.dc.html rendert ohne Fehler, auch wenn React verzögert lädt
+ok 112 - Sekundär- und Ghost-Button stehen auf Nachtblau in Weiss, ausserhalb unverändert in Schwarz
+ok 113 - Im blauen Band stehen Links, Akzent, Nebentext und ruhige Knöpfe in Weiss; Druck wie auf Weiss
+# tests 116
+# pass 116
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+
+## npm test · shell (CHROMIUM_EXECUTABLE_PATH=/opt/pw-browsers/chromium_headless_shell-1243/chrome-headless-shell-linux64/chrome-headless-shell)
+45 abgeleitete Dateien aktuell.
+119 lokale Dokumentationslinks geprüft; 0 fehlende Ziele.
+ok 107 - Nachtblau ist benannt, in beiden Themes gleich und trägt Weiss und Blau 25 mit mehr als 7:1
+ok 108 - Leitlinie 02 nennt Geltung, Zählung und die vier Bedingungen des Titelbilds
+ok 109 - data-puk-surface="night" setzt Fläche, weisse unterstrichene Links und den umgekehrten Fokusring
+ok 110 - data-puk-surface="night" druckt ohne Fläche mit dunklem Text und Links wie auf Weiss
+ok 111 - Vorschau Website.dc.html rendert ohne Fehler, auch wenn React verzögert lädt
+ok 112 - Sekundär- und Ghost-Button stehen auf Nachtblau in Weiss, ausserhalb unverändert in Schwarz
+ok 113 - Im blauen Band stehen Links, Akzent, Nebentext und ruhige Knöpfe in Weiss; Druck wie auf Weiss
+# tests 116
+# pass 116
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+
+## npm run test:ui -- --bericht <ausserhalb des Repositorys>
+Matrix: 112 Prüfläufe · 0 mit Befund · Tastatur: 41 Prüfungen · 0 mit Befund · Interaktionen: 19 Prüfungen · 0 mit Befund · Gate: 76 Prüfungen · 0 mit Befund · Gesamt: 0 Befunde · Fokusring nur statisch geprüft (Dokument ohne Fokus): Matrix 0 Läufe · nicht prüfbar: Tastatur 0, Interaktionen 0
+
+## Abgleich mit tests/ergebnisse/ui-matrix-2026.10.16.json
+status gleich
+total gleich
+matrix Zeilen 112 / 112 abweichend 0
+keyboardAndInteractions Zeilen 60 / 60 abweichend 0
+gate Zeilen 76 / 76 abweichend 0
+errors Zeilen 0 / 0 abweichend 0
+notTestable gleich

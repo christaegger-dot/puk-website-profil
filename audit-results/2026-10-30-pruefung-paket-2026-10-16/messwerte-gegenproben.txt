@@ -1,0 +1,29 @@
+# Gegenproben in einer Kopie von ad6ce55 ausserhalb des Repositorys (git archive), 30.10.2026
+# alt-profilentscheid.test.mjs = tests/profilentscheid-2026-10-29.test.mjs aus a1a7b72
+# G1: Druckregel button.puk-btn -> .puk-btn (alle Knöpfe im Druck aus); G2: im Druck a.puk-btn{color:#fff!important;border-color:#fff!important}; G3: Punkt «Keine hellen Komponenten in Bändern» aus Leitlinie 02 entfernt; G4: nur Punkt «Helle Komponenten» im Nachtblau-Abschnitt entfernt
+# Nach jeder Probe Datei aus Sicherung zurück; Abschluss: cmp gegen Repository gleich
+== Ausgang · profilentscheid-2026-10-29.test.mjs: # pass 7 # fail 0 
+== Ausgang · alt-profilentscheid.test.mjs: # pass 7 # fail 0 
+1
+== G1 alle .puk-btn im Druck aus · profilentscheid-2026-10-29.test.mjs: # pass 6 # fail 1 
+   not ok 7 - Im blauen Band stehen Links, Akzent, Nebentext und ruhige Knöpfe in Weiss; Druck wie auf Weiss
+     name: 'AssertionError'
+== G1 alle .puk-btn im Druck aus · alt-profilentscheid.test.mjs: # pass 7 # fail 0 
+1
+== G2 Knopf-Link im Druck weiss · profilentscheid-2026-10-29.test.mjs: # pass 5 # fail 2 
+   not ok 6 - Sekundär- und Ghost-Button stehen auf Nachtblau in Weiss, ausserhalb unverändert in Schwarz
+     name: 'AssertionError'
+   not ok 7 - Im blauen Band stehen Links, Akzent, Nebentext und ruhige Knöpfe in Weiss; Druck wie auf Weiss
+     name: 'AssertionError'
+== G2 Knopf-Link im Druck weiss · alt-profilentscheid.test.mjs: # pass 6 # fail 1 
+   not ok 6 - Sekundär- und Ghost-Button stehen auf Nachtblau in Weiss, ausserhalb unverändert in Schwarz
+     name: 'AssertionError'
+2
+== G3 Punkt W-1 in Leitlinie 02 entfernt · profilentscheid-2026-10-29.test.mjs: # pass 6 # fail 1 
+   not ok 2 - Leitlinie 02 nennt Geltung, Zählung und die vier Bedingungen des Titelbilds
+     name: 'AssertionError'
+2
+== G4 Nachtblau-Punkt entfernt · profilentscheid-2026-10-29.test.mjs: # pass 7 # fail 0 
+Kopie wiederhergestellt
+G1 Meldung (neu): 'light Knopf-Link im Druck sichtbar' (notStrictEqual, actual 'none'), Z. 209
+G3 Meldung: 'Keine hellen Komponenten in Bändern'

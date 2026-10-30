@@ -1,0 +1,8 @@
+# Zip-Vergleich geprüftes Paket gegen neues Paket nach dem Eintrag, 30.10.2026
+geprüft: 787078d8cb1ada482d97403930605ccd9d00993970f39a5bf75d5bb8fa7ef494 puk-website-profil-2026.10.16.zip (Stand ad6ce55)
+neu:     56ad8d6e3063101434b5137e936d6e38d8970e42e8f7110b9706114e91798f42 puk-website-profil-2026.10.16.zip (nach npm run package)
+Einträge 381 381 nur geprüft: [] nur neu: []
+Reihenfolge gleich: True
+Inhalt verschieden: ['puk-website-profil/PRUEFBERICHT.md']
+Metadaten (Zeit, Rechte, Kompression) verschieden: []
+übrige 380 Einträge bytegleich

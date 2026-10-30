@@ -1,0 +1,30 @@
+# Paket und Reproduzierbarkeit (A1–A4, A7), Stand ad6ce55, 30.10.2026
+$ sha256sum puk-website-profil-2026.10.16.zip
+787078d8cb1ada482d97403930605ccd9d00993970f39a5bf75d5bb8fa7ef494  puk-website-profil-2026.10.16.zip
+$ sha256sum -c puk-website-profil-2026.10.16.zip.sha256
+puk-website-profil-2026.10.16.zip: OK
+$ npm run check:package
+119 lokale Dokumentationslinks geprüft; 0 fehlende Ziele.
+381 Dateien bytegleich; SHA-256 geprüft: 787078d8cb1ada482d97403930605ccd9d00993970f39a5bf75d5bb8fa7ef494
+$ Entpacken (python3 -I, zipfile) in leeres Verzeichnis
+Einträge 381 Wurzel ['puk-website-profil'] Zeitstempel [(2026, 10, 30, 0, 0, 0)] Rechte ['0o644']
+$ diff -r -q <entpackt> <repo> (ohne .git node_modules .venv archiv audit-results websites out-* Zip .sha256)
+Exit 0
+$ git ls-files ohne archiv/ audit-results/ | wc -l
+383
+$ Dateiliste Zip gegen git ls-files (ohne archiv/, audit-results/, Zip, .sha256)
+gleich (381)
+$ npm run check:generated
+45 abgeleitete Dateien aktuell.
+$ npm run build
+/home/user/puk-website-profil/components/bundle.js geschrieben · 26 Komponenten
+/home/user/puk-website-profil/_ds_bundle.js geschrieben · 26 Komponenten
+7 Seiten geschrieben · PUK Website Kit 1.10.1-r4 · abgeleitet · Build r4-23 · Gate draft: 0 blockierend, 12 Hinweise.
+4 Seiten geschrieben · PUK Website Kit 1.10.1-r4 · abgeleitet · Build r4-23 · Gate draft: 0 blockierend, 3 Hinweise.
+4 Seiten geschrieben · PUK Website Kit 1.10.1-r4 · abgeleitet · Build r4-23 · Gate production: 0 blockierend, 1 Hinweise.
+$ git status --porcelain (nach Build)
+(leer)
+$ git diff --quiet a1a7b72 -- components/bundle.js _ds_bundle.js
+beide bytegleich mit a1a7b72
+$ git diff a1a7b72 ad6ce55 --shortstat
+ 75 files changed, 7415 insertions(+), 250 deletions(-)

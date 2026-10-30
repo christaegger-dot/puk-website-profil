@@ -1,0 +1,1030 @@
+{
+ "stand_neu": "ad6ce55 (Arbeitsstand nach npm run build)",
+ "basis": "a1a7b72 (git archive)",
+ "methode": "ganze Seite, Playwright Chromium 1243, reducedMotion reduce, Übergänge und Animationen aus, Kennungen 2026.10.14-16, r4-21-23, r4-8/9, Stand 29./30.10.2026 im Text gleichgesetzt; Vergleich der PNG-Bytes",
+ "ergebnis": {
+  "seiten": 31,
+  "paare": 124,
+  "bytegleich": 124
+ },
+ "paare": [
+  {
+   "url": "index.html",
+   "width": 375,
+   "theme": "light",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "index.html",
+   "width": 375,
+   "theme": "kontrast",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "index.html",
+   "width": 1280,
+   "theme": "light",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "index.html",
+   "width": 1280,
+   "theme": "kontrast",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "musterauswahl.html",
+   "width": 375,
+   "theme": "light",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "musterauswahl.html",
+   "width": 375,
+   "theme": "kontrast",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "musterauswahl.html",
+   "width": 1280,
+   "theme": "light",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "musterauswahl.html",
+   "width": 1280,
+   "theme": "kontrast",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/Website.dc.html",
+   "width": 375,
+   "theme": "light",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/Website.dc.html",
+   "width": 375,
+   "theme": "kontrast",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/Website.dc.html",
+   "width": 1280,
+   "theme": "light",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/Website.dc.html",
+   "width": 1280,
+   "theme": "kontrast",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/longform/erklaermuster.html",
+   "width": 375,
+   "theme": "light",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/longform/erklaermuster.html",
+   "width": 375,
+   "theme": "kontrast",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/longform/erklaermuster.html",
+   "width": 1280,
+   "theme": "light",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/longform/erklaermuster.html",
+   "width": 1280,
+   "theme": "kontrast",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/longform/grundlagenkapitel.html",
+   "width": 375,
+   "theme": "light",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/longform/grundlagenkapitel.html",
+   "width": 375,
+   "theme": "kontrast",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/longform/grundlagenkapitel.html",
+   "width": 1280,
+   "theme": "light",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/longform/grundlagenkapitel.html",
+   "width": 1280,
+   "theme": "kontrast",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/longform/handlungsuebersicht.html",
+   "width": 375,
+   "theme": "light",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/longform/handlungsuebersicht.html",
+   "width": 375,
+   "theme": "kontrast",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/longform/handlungsuebersicht.html",
+   "width": 1280,
+   "theme": "light",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/longform/handlungsuebersicht.html",
+   "width": 1280,
+   "theme": "kontrast",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/longform/transfer-erholung.html",
+   "width": 375,
+   "theme": "light",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/longform/transfer-erholung.html",
+   "width": 375,
+   "theme": "kontrast",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/longform/transfer-erholung.html",
+   "width": 1280,
+   "theme": "light",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/longform/transfer-erholung.html",
+   "width": 1280,
+   "theme": "kontrast",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/longform/visualisierungsmuster.html",
+   "width": 375,
+   "theme": "light",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/longform/visualisierungsmuster.html",
+   "width": 375,
+   "theme": "kontrast",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/longform/visualisierungsmuster.html",
+   "width": 1280,
+   "theme": "light",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/longform/visualisierungsmuster.html",
+   "width": 1280,
+   "theme": "kontrast",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/applications/angebotsnavigator.html",
+   "width": 375,
+   "theme": "light",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/applications/angebotsnavigator.html",
+   "width": 375,
+   "theme": "kontrast",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/applications/angebotsnavigator.html",
+   "width": 1280,
+   "theme": "light",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/applications/angebotsnavigator.html",
+   "width": 1280,
+   "theme": "kontrast",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/applications/gespraechshilfe.html",
+   "width": 375,
+   "theme": "light",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/applications/gespraechshilfe.html",
+   "width": 375,
+   "theme": "kontrast",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/applications/gespraechshilfe.html",
+   "width": 1280,
+   "theme": "light",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/applications/gespraechshilfe.html",
+   "width": 1280,
+   "theme": "kontrast",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/applications/kontaktwegweiser.html",
+   "width": 375,
+   "theme": "light",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/applications/kontaktwegweiser.html",
+   "width": 375,
+   "theme": "kontrast",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/applications/kontaktwegweiser.html",
+   "width": 1280,
+   "theme": "light",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/applications/kontaktwegweiser.html",
+   "width": 1280,
+   "theme": "kontrast",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/applications/situationsnavigator.html",
+   "width": 375,
+   "theme": "light",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/applications/situationsnavigator.html",
+   "width": 375,
+   "theme": "kontrast",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/applications/situationsnavigator.html",
+   "width": 1280,
+   "theme": "light",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/applications/situationsnavigator.html",
+   "width": 1280,
+   "theme": "kontrast",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/interaktion/beispiel.html",
+   "width": 375,
+   "theme": "light",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/interaktion/beispiel.html",
+   "width": 375,
+   "theme": "kontrast",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/interaktion/beispiel.html",
+   "width": 1280,
+   "theme": "light",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/interaktion/beispiel.html",
+   "width": 1280,
+   "theme": "kontrast",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/404.html",
+   "width": 375,
+   "theme": "light",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/404.html",
+   "width": 375,
+   "theme": "kontrast",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/404.html",
+   "width": 1280,
+   "theme": "light",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/404.html",
+   "width": 1280,
+   "theme": "kontrast",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/behandlung-verstehen.html",
+   "width": 375,
+   "theme": "light",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/behandlung-verstehen.html",
+   "width": 375,
+   "theme": "kontrast",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/behandlung-verstehen.html",
+   "width": 1280,
+   "theme": "light",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/behandlung-verstehen.html",
+   "width": 1280,
+   "theme": "kontrast",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/beziehungen-verstehen.html",
+   "width": 375,
+   "theme": "light",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/beziehungen-verstehen.html",
+   "width": 375,
+   "theme": "kontrast",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/beziehungen-verstehen.html",
+   "width": 1280,
+   "theme": "light",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/beziehungen-verstehen.html",
+   "width": 1280,
+   "theme": "kontrast",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/gate.html",
+   "width": 375,
+   "theme": "light",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/gate.html",
+   "width": 375,
+   "theme": "kontrast",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/gate.html",
+   "width": 1280,
+   "theme": "light",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/gate.html",
+   "width": 1280,
+   "theme": "kontrast",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/impressum-datenschutz.html",
+   "width": 375,
+   "theme": "light",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/impressum-datenschutz.html",
+   "width": 375,
+   "theme": "kontrast",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/impressum-datenschutz.html",
+   "width": 1280,
+   "theme": "light",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/impressum-datenschutz.html",
+   "width": 1280,
+   "theme": "kontrast",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/index.html",
+   "width": 375,
+   "theme": "light",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/index.html",
+   "width": 375,
+   "theme": "kontrast",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/index.html",
+   "width": 1280,
+   "theme": "light",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/index.html",
+   "width": 1280,
+   "theme": "kontrast",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/seitenvorlage.html",
+   "width": 375,
+   "theme": "light",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/seitenvorlage.html",
+   "width": 375,
+   "theme": "kontrast",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/seitenvorlage.html",
+   "width": 1280,
+   "theme": "light",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/seitenvorlage.html",
+   "width": 1280,
+   "theme": "kontrast",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/unterstuetzung-finden.html",
+   "width": 375,
+   "theme": "light",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/unterstuetzung-finden.html",
+   "width": 375,
+   "theme": "kontrast",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/unterstuetzung-finden.html",
+   "width": 1280,
+   "theme": "light",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/unterstuetzung-finden.html",
+   "width": 1280,
+   "theme": "kontrast",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/minimal-starter/404.html",
+   "width": 375,
+   "theme": "light",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/minimal-starter/404.html",
+   "width": 375,
+   "theme": "kontrast",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/minimal-starter/404.html",
+   "width": 1280,
+   "theme": "light",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/minimal-starter/404.html",
+   "width": 1280,
+   "theme": "kontrast",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/minimal-starter/impressum-datenschutz.html",
+   "width": 375,
+   "theme": "light",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/minimal-starter/impressum-datenschutz.html",
+   "width": 375,
+   "theme": "kontrast",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/minimal-starter/impressum-datenschutz.html",
+   "width": 1280,
+   "theme": "light",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/minimal-starter/impressum-datenschutz.html",
+   "width": 1280,
+   "theme": "kontrast",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/minimal-starter/index.html",
+   "width": 375,
+   "theme": "light",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/minimal-starter/index.html",
+   "width": 375,
+   "theme": "kontrast",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/minimal-starter/index.html",
+   "width": 1280,
+   "theme": "light",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/minimal-starter/index.html",
+   "width": 1280,
+   "theme": "kontrast",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/minimal-starter/thema.html",
+   "width": 375,
+   "theme": "light",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/minimal-starter/thema.html",
+   "width": 375,
+   "theme": "kontrast",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/minimal-starter/thema.html",
+   "width": 1280,
+   "theme": "light",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/minimal-starter/thema.html",
+   "width": 1280,
+   "theme": "kontrast",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/profilbeispiel/404.html",
+   "width": 375,
+   "theme": "light",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/profilbeispiel/404.html",
+   "width": 375,
+   "theme": "kontrast",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/profilbeispiel/404.html",
+   "width": 1280,
+   "theme": "light",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/profilbeispiel/404.html",
+   "width": 1280,
+   "theme": "kontrast",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/profilbeispiel/impressum-datenschutz.html",
+   "width": 375,
+   "theme": "light",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/profilbeispiel/impressum-datenschutz.html",
+   "width": 375,
+   "theme": "kontrast",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/profilbeispiel/impressum-datenschutz.html",
+   "width": 1280,
+   "theme": "light",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/profilbeispiel/impressum-datenschutz.html",
+   "width": 1280,
+   "theme": "kontrast",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/profilbeispiel/index.html",
+   "width": 375,
+   "theme": "light",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/profilbeispiel/index.html",
+   "width": 375,
+   "theme": "kontrast",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/profilbeispiel/index.html",
+   "width": 1280,
+   "theme": "light",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/profilbeispiel/index.html",
+   "width": 1280,
+   "theme": "kontrast",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/profilbeispiel/pruefen.html",
+   "width": 375,
+   "theme": "light",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/profilbeispiel/pruefen.html",
+   "width": 375,
+   "theme": "kontrast",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/profilbeispiel/pruefen.html",
+   "width": 1280,
+   "theme": "light",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "templates/website/profilbeispiel/pruefen.html",
+   "width": 1280,
+   "theme": "kontrast",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "ui_kits/website/index.html",
+   "width": 375,
+   "theme": "light",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "ui_kits/website/index.html",
+   "width": 375,
+   "theme": "kontrast",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "ui_kits/website/index.html",
+   "width": 1280,
+   "theme": "light",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "ui_kits/website/index.html",
+   "width": 1280,
+   "theme": "kontrast",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "ui_kits/website/qa.html",
+   "width": 375,
+   "theme": "light",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "ui_kits/website/qa.html",
+   "width": 375,
+   "theme": "kontrast",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "ui_kits/website/qa.html",
+   "width": 1280,
+   "theme": "light",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  },
+  {
+   "url": "ui_kits/website/qa.html",
+   "width": 1280,
+   "theme": "kontrast",
+   "gleich": true,
+   "fehlerNeu": [],
+   "fehlerBasis": []
+  }
+ ],
+ "empfindlichkeit_ohne_gleichsetzen": {
+  "paare": 12,
+  "bytegleich": 8,
+  "abweichend": [
+   [
+    "index.html",
+    375,
+    "light"
+   ],
+   [
+    "index.html",
+    375,
+    "kontrast"
+   ],
+   [
+    "index.html",
+    1280,
+    "light"
+   ],
+   [
+    "index.html",
+    1280,
+    "kontrast"
+   ]
+  ]
+ }
+}
