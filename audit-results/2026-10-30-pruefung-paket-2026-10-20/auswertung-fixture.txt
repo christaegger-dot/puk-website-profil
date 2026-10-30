@@ -1,0 +1,235 @@
+Datei ../mess/177e24a.json
+Vergleiche helle Flächen (Band/Nachtblau gegen Weiss, alle Zustände): 1668 gleich, 780 abweichend
+Kleinster Kontrast heller Flächen am Bildschirm (ohne erzwungene Farben): 1:1
+Unter 4,5:1: 52
+  standard|375|ruhe b-visbtndis #909090 auf #D2D2D2 2.11:1
+  standard|375|ruhe n-visbtndis #909090 auf #D2D2D2 2.11:1
+  standard|375|ruhe n-openbuildn #FFFFFF auf #FFFFFF 1:1
+  standard|375|ruhe b-openhold #FFFFFF auf #F0F3FF 1.11:1
+  standard|375|ruhe n-openhold #FFFFFF auf #F0F3FF 1.11:1
+  standard|375|ruhe b-openholdh3 #FFFFFF auf #F0F3FF 1.11:1
+  standard|375|ruhe n-openholdh3 #FFFFFF auf #F0F3FF 1.11:1
+  standard|375|ruhe b-openholdp #FFFFFF auf #F0F3FF 1.11:1
+  standard|375|ruhe n-openholdp #FFFFFF auf #F0F3FF 1.11:1
+  standard|375|ruhe b-openneth3 #FFFFFF auf #FFFFFF 1:1
+  standard|375|ruhe n-openneth3 #D8E0FF auf #FFFFFF 1.31:1
+  standard|375|ruhe n-opennetli #FFFFFF auf #FFFFFF 1:1
+  standard|375|hover b-openholda #FFFFFF auf #F0F3FF 1.11:1
+  standard|375|hover n-openholda #FFFFFF auf #F0F3FF 1.11:1
+  standard|1280|ruhe b-visbtndis #909090 auf #D2D2D2 2.11:1
+  standard|1280|ruhe n-visbtndis #909090 auf #D2D2D2 2.11:1
+  standard|1280|ruhe n-openbuildn #FFFFFF auf #FFFFFF 1:1
+  standard|1280|ruhe b-openhold #FFFFFF auf #F0F3FF 1.11:1
+  standard|1280|ruhe n-openhold #FFFFFF auf #F0F3FF 1.11:1
+  standard|1280|ruhe b-openholdh3 #FFFFFF auf #F0F3FF 1.11:1
+  standard|1280|ruhe n-openholdh3 #FFFFFF auf #F0F3FF 1.11:1
+  standard|1280|ruhe b-openholdp #FFFFFF auf #F0F3FF 1.11:1
+  standard|1280|ruhe n-openholdp #FFFFFF auf #F0F3FF 1.11:1
+  standard|1280|ruhe b-openneth3 #FFFFFF auf #FFFFFF 1:1
+  standard|1280|ruhe n-openneth3 #D8E0FF auf #FFFFFF 1.31:1
+  standard|1280|ruhe n-opennetli #FFFFFF auf #FFFFFF 1:1
+  standard|1280|hover b-openholda #FFFFFF auf #F0F3FF 1.11:1
+  standard|1280|hover n-openholda #FFFFFF auf #F0F3FF 1.11:1
+  kontrast|375|ruhe n-openbuildn #FFFFFF auf #FFFFFF 1:1
+  kontrast|375|ruhe b-openhold #FFFFFF auf #F0F3FF 1.11:1
+  kontrast|375|ruhe n-openhold #FFFFFF auf #F0F3FF 1.11:1
+  kontrast|375|ruhe b-openholdh3 #FFFFFF auf #F0F3FF 1.11:1
+  kontrast|375|ruhe n-openholdh3 #FFFFFF auf #F0F3FF 1.11:1
+  kontrast|375|ruhe b-openholdp #FFFFFF auf #F0F3FF 1.11:1
+  kontrast|375|ruhe n-openholdp #FFFFFF auf #F0F3FF 1.11:1
+  kontrast|375|ruhe b-openneth3 #FFFFFF auf #FFFFFF 1:1
+  kontrast|375|ruhe n-openneth3 #D8E0FF auf #FFFFFF 1.31:1
+  kontrast|375|ruhe n-opennetli #FFFFFF auf #FFFFFF 1:1
+  kontrast|375|hover b-openholda #FFFFFF auf #F0F3FF 1.11:1
+  kontrast|375|hover n-openholda #FFFFFF auf #F0F3FF 1.11:1
+  kontrast|1280|ruhe n-openbuildn #FFFFFF auf #FFFFFF 1:1
+  kontrast|1280|ruhe b-openhold #FFFFFF auf #F0F3FF 1.11:1
+  kontrast|1280|ruhe n-openhold #FFFFFF auf #F0F3FF 1.11:1
+  kontrast|1280|ruhe b-openholdh3 #FFFFFF auf #F0F3FF 1.11:1
+  kontrast|1280|ruhe n-openholdh3 #FFFFFF auf #F0F3FF 1.11:1
+  kontrast|1280|ruhe b-openholdp #FFFFFF auf #F0F3FF 1.11:1
+  kontrast|1280|ruhe n-openholdp #FFFFFF auf #F0F3FF 1.11:1
+  kontrast|1280|ruhe b-openneth3 #FFFFFF auf #FFFFFF 1:1
+  kontrast|1280|ruhe n-openneth3 #D8E0FF auf #FFFFFF 1.31:1
+  kontrast|1280|ruhe n-opennetli #FFFFFF auf #FFFFFF 1:1
+  kontrast|1280|hover b-openholda #FFFFFF auf #F0F3FF 1.11:1
+  kontrast|1280|hover n-openholda #FFFFFF auf #F0F3FF 1.11:1
+Abweichend appa: 48
+  standard|375|ruhe b: deko none → underline
+  standard|375|ruhe n: deko none → underline
+  standard|375|hover b: deko none → underline
+  standard|375|hover n: deko none → underline
+  standard|375|focus b: deko none → underline
+  standard|375|focus n: deko none → underline
+Abweichend choiceona: 24
+  standard|375|ruhe b: deko none → underline
+  standard|375|ruhe n: deko none → underline
+  standard|375|druck b: deko none → underline
+  standard|375|druck n: deko none → underline
+  standard|375|erzwungen b: deko none → underline
+  standard|375|erzwungen n: deko none → underline
+Abweichend boundarya: 48
+  standard|375|ruhe b: deko none → underline
+  standard|375|ruhe n: deko none → underline
+  standard|375|hover b: deko none → underline
+  standard|375|hover n: deko none → underline
+  standard|375|focus b: deko none → underline
+  standard|375|focus n: deko none → underline
+Abweichend minia: 24
+  standard|375|ruhe b: deko none → underline
+  standard|375|ruhe n: deko none → underline
+  standard|375|druck b: deko none → underline
+  standard|375|druck n: deko none → underline
+  standard|375|erzwungen b: deko none → underline
+  standard|375|erzwungen n: deko none → underline
+Abweichend detaila: 48
+  standard|375|ruhe b: deko none → underline
+  standard|375|ruhe n: deko none → underline
+  standard|375|hover b: deko none → underline
+  standard|375|hover n: deko none → underline
+  standard|375|focus b: deko none → underline
+  standard|375|focus n: deko none → underline
+Abweichend detailurga: 24
+  standard|375|ruhe b: deko none → underline
+  standard|375|ruhe n: deko none → underline
+  standard|375|druck b: deko none → underline
+  standard|375|druck n: deko none → underline
+  standard|375|erzwungen b: deko none → underline
+  standard|375|erzwungen n: deko none → underline
+Abweichend outputa: 48
+  standard|375|ruhe b: deko none → underline
+  standard|375|ruhe n: deko none → underline
+  standard|375|hover b: deko none → underline
+  standard|375|hover n: deko none → underline
+  standard|375|focus b: deko none → underline
+  standard|375|focus n: deko none → underline
+Abweichend emptya: 48
+  standard|375|ruhe b: deko none → underline
+  standard|375|ruhe n: deko none → underline
+  standard|375|hover b: deko none → underline
+  standard|375|hover n: deko none → underline
+  standard|375|focus b: deko none → underline
+  standard|375|focus n: deko none → underline
+Abweichend contacta: 48
+  standard|375|ruhe b: deko none → underline
+  standard|375|ruhe n: deko none → underline
+  standard|375|hover b: deko none → underline
+  standard|375|hover n: deko none → underline
+  standard|375|focus b: deko none → underline
+  standard|375|focus n: deko none → underline
+Abweichend action: 48
+  standard|375|ruhe b: deko none → underline; vars #222222|#646464|#3C64FF|#222222|#2B4FE0|#3C64FF|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #222222|#FFFFFF|#FFFFFF|#FFFFFF|#FFFFFF|#FFFFFF|#FFFFFF|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF
+  standard|375|ruhe n: deko none → underline; vars #222222|#646464|#3C64FF|#222222|#2B4FE0|#3C64FF|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #FFFFFF|#D8E0FF|#FFFFFF|#FFFFFF|#FFFFFF|#D8E0FF|#FFFFFF|0 0 0 2px #182866,0 0 0 4px #FFFFFF
+  standard|375|hover b: deko none → underline; vars #222222|#646464|#3C64FF|#222222|#2B4FE0|#3C64FF|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #222222|#FFFFFF|#FFFFFF|#FFFFFF|#FFFFFF|#FFFFFF|#FFFFFF|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF
+  standard|375|hover n: deko none → underline; vars #222222|#646464|#3C64FF|#222222|#2B4FE0|#3C64FF|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #FFFFFF|#D8E0FF|#FFFFFF|#FFFFFF|#FFFFFF|#D8E0FF|#FFFFFF|0 0 0 2px #182866,0 0 0 4px #FFFFFF
+  standard|375|focus b: deko none → underline; vars #222222|#646464|#3C64FF|#222222|#2B4FE0|#3C64FF|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #222222|#FFFFFF|#FFFFFF|#FFFFFF|#FFFFFF|#FFFFFF|#FFFFFF|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF
+  standard|375|focus n: shadow rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px → rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px; deko none → underline; vars #222222|#646464|#3C64FF|#222222|#2B4FE0|#3C64FF|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #FFFFFF|#D8E0FF|#FFFFFF|#FFFFFF|#FFFFFF|#D8E0FF|#FFFFFF|0 0 0 2px #182866,0 0 0 4px #FFFFFF
+Abweichend phdraft: 16
+  standard|375|ruhe b: vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #222222|#646464|#3C64FF|#222222|#2B4FE0|#3C64FF|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF
+  standard|375|ruhe n: vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #222222|#646464|#3C64FF|#222222|#2B4FE0|#3C64FF|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF
+  standard|375|druck b: vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #222222|#646464|#3C64FF|#222222|#2B4FE0|#3C64FF|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF
+  standard|375|druck n: vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #222222|#646464|#3C64FF|#222222|#2B4FE0|#3C64FF|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF
+  standard|1280|ruhe b: vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #222222|#646464|#3C64FF|#222222|#2B4FE0|#3C64FF|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF
+  standard|1280|ruhe n: vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #222222|#646464|#3C64FF|#222222|#2B4FE0|#3C64FF|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF
+Abweichend pha: 48
+  standard|375|ruhe b: deko none → underline
+  standard|375|ruhe n: deko none → underline
+  standard|375|hover b: deko none → underline
+  standard|375|hover n: deko none → underline
+  standard|375|focus b: deko none → underline
+  standard|375|focus n: deko none → underline
+Abweichend safetya: 48
+  standard|375|ruhe b: deko none → underline
+  standard|375|ruhe n: deko none → underline
+  standard|375|hover b: deko none → underline
+  standard|375|hover n: deko none → underline
+  standard|375|focus b: deko none → underline
+  standard|375|focus n: deko none → underline
+Abweichend layba: 48
+  standard|375|ruhe b: deko none → underline
+  standard|375|ruhe n: deko none → underline
+  standard|375|hover b: deko none → underline
+  standard|375|hover n: deko none → underline
+  standard|375|focus b: deko none → underline
+  standard|375|focus n: deko none → underline
+Abweichend open: 12
+  standard|375|ruhe b: color #222222 → #FFFFFF; bg #FFFFFF → #3C64FF; border rgb(34, 34, 34) rgb(34, 34, 34) → rgb(255, 255, 255) rgb(255, 255, 255); outline none rgb(34, 34, 34) → none rgb(255, 255, 255); vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #222222|#FFFFFF|#2B4FE0|#FFFFFF|#FFFFFF|#2B4FE0|#FFFFFF|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF
+  standard|375|ruhe n: color #222222 → #FFFFFF; bg #FFFFFF → #182866; border rgb(34, 34, 34) rgb(34, 34, 34) → rgb(255, 255, 255) rgb(255, 255, 255); outline none rgb(34, 34, 34) → none rgb(255, 255, 255); vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #FFFFFF|#D8E0FF|#2B4FE0|#FFFFFF|#FFFFFF|#2B4FE0|#FFFFFF|0 0 0 2px #182866,0 0 0 4px #FFFFFF
+  standard|375|druck n: vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #182866,0 0 0 4px #FFFFFF
+  standard|1280|ruhe b: color #222222 → #FFFFFF; bg #FFFFFF → #3C64FF; border rgb(34, 34, 34) rgb(34, 34, 34) → rgb(255, 255, 255) rgb(255, 255, 255); outline none rgb(34, 34, 34) → none rgb(255, 255, 255); vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #222222|#FFFFFF|#2B4FE0|#FFFFFF|#FFFFFF|#2B4FE0|#FFFFFF|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF
+  standard|1280|ruhe n: color #222222 → #FFFFFF; bg #FFFFFF → #182866; border rgb(34, 34, 34) rgb(34, 34, 34) → rgb(255, 255, 255) rgb(255, 255, 255); outline none rgb(34, 34, 34) → none rgb(255, 255, 255); vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #FFFFFF|#D8E0FF|#2B4FE0|#FFFFFF|#FFFFFF|#2B4FE0|#FFFFFF|0 0 0 2px #182866,0 0 0 4px #FFFFFF
+  standard|1280|druck n: vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #182866,0 0 0 4px #FFFFFF
+Abweichend openlayli: 16
+  standard|375|ruhe b: vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #222222|#646464|#3C64FF|#222222|#2B4FE0|#3C64FF|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF
+  standard|375|ruhe n: vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #222222|#646464|#3C64FF|#222222|#2B4FE0|#3C64FF|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF
+  standard|375|druck b: vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #222222|#646464|#3C64FF|#222222|#2B4FE0|#3C64FF|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF
+  standard|375|druck n: vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #222222|#646464|#3C64FF|#222222|#2B4FE0|#3C64FF|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF
+  standard|1280|ruhe b: vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #222222|#646464|#3C64FF|#222222|#2B4FE0|#3C64FF|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF
+  standard|1280|ruhe n: vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #222222|#646464|#3C64FF|#222222|#2B4FE0|#3C64FF|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF
+Abweichend openbtn: 40
+  standard|375|ruhe b: vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #222222|#646464|#3C64FF|#222222|#2B4FE0|#3C64FF|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF
+  standard|375|ruhe n: vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #222222|#646464|#3C64FF|#222222|#2B4FE0|#3C64FF|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF
+  standard|375|hover b: vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #222222|#646464|#3C64FF|#222222|#2B4FE0|#3C64FF|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF
+  standard|375|hover n: vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #222222|#646464|#3C64FF|#222222|#2B4FE0|#3C64FF|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF
+  standard|375|focus b: vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #222222|#646464|#3C64FF|#222222|#2B4FE0|#3C64FF|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF
+  standard|375|focus n: vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #222222|#646464|#3C64FF|#222222|#2B4FE0|#3C64FF|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF
+Abweichend openbuildn: 12
+  standard|375|ruhe b: vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #222222|#FFFFFF|#2B4FE0|#FFFFFF|#FFFFFF|#2B4FE0|#FFFFFF|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF
+  standard|375|ruhe n: color #222222 → #FFFFFF; outline none rgb(34, 34, 34) → none rgb(255, 255, 255); vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #FFFFFF|#D8E0FF|#2B4FE0|#FFFFFF|#FFFFFF|#2B4FE0|#FFFFFF|0 0 0 2px #182866,0 0 0 4px #FFFFFF
+  standard|375|druck n: vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #182866,0 0 0 4px #FFFFFF
+  standard|1280|ruhe b: vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #222222|#FFFFFF|#2B4FE0|#FFFFFF|#FFFFFF|#2B4FE0|#FFFFFF|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF
+  standard|1280|ruhe n: color #222222 → #FFFFFF; outline none rgb(34, 34, 34) → none rgb(255, 255, 255); vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #FFFFFF|#D8E0FF|#2B4FE0|#FFFFFF|#FFFFFF|#2B4FE0|#FFFFFF|0 0 0 2px #182866,0 0 0 4px #FFFFFF
+  standard|1280|druck n: vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #182866,0 0 0 4px #FFFFFF
+Abweichend openhold: 12
+  standard|375|ruhe b: color #222222 → #FFFFFF; outline none rgb(34, 34, 34) → none rgb(255, 255, 255); vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #222222|#FFFFFF|#2B4FE0|#FFFFFF|#FFFFFF|#2B4FE0|#FFFFFF|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF
+  standard|375|ruhe n: color #222222 → #FFFFFF; outline none rgb(34, 34, 34) → none rgb(255, 255, 255); vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #FFFFFF|#D8E0FF|#2B4FE0|#FFFFFF|#FFFFFF|#2B4FE0|#FFFFFF|0 0 0 2px #182866,0 0 0 4px #FFFFFF
+  standard|375|druck n: vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #182866,0 0 0 4px #FFFFFF
+  standard|1280|ruhe b: color #222222 → #FFFFFF; outline none rgb(34, 34, 34) → none rgb(255, 255, 255); vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #222222|#FFFFFF|#2B4FE0|#FFFFFF|#FFFFFF|#2B4FE0|#FFFFFF|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF
+  standard|1280|ruhe n: color #222222 → #FFFFFF; outline none rgb(34, 34, 34) → none rgb(255, 255, 255); vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #FFFFFF|#D8E0FF|#2B4FE0|#FFFFFF|#FFFFFF|#2B4FE0|#FFFFFF|0 0 0 2px #182866,0 0 0 4px #FFFFFF
+  standard|1280|druck n: vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #182866,0 0 0 4px #FFFFFF
+Abweichend openholdh3: 12
+  standard|375|ruhe b: color #222222 → #FFFFFF; border rgb(34, 34, 34) rgb(34, 34, 34) → rgb(255, 255, 255) rgb(255, 255, 255); outline none rgb(34, 34, 34) → none rgb(255, 255, 255); vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #222222|#FFFFFF|#2B4FE0|#FFFFFF|#FFFFFF|#2B4FE0|#FFFFFF|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF
+  standard|375|ruhe n: color #222222 → #FFFFFF; border rgb(34, 34, 34) rgb(34, 34, 34) → rgb(255, 255, 255) rgb(255, 255, 255); outline none rgb(34, 34, 34) → none rgb(255, 255, 255); vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #FFFFFF|#D8E0FF|#2B4FE0|#FFFFFF|#FFFFFF|#2B4FE0|#FFFFFF|0 0 0 2px #182866,0 0 0 4px #FFFFFF
+  standard|375|druck n: vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #182866,0 0 0 4px #FFFFFF
+  standard|1280|ruhe b: color #222222 → #FFFFFF; border rgb(34, 34, 34) rgb(34, 34, 34) → rgb(255, 255, 255) rgb(255, 255, 255); outline none rgb(34, 34, 34) → none rgb(255, 255, 255); vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #222222|#FFFFFF|#2B4FE0|#FFFFFF|#FFFFFF|#2B4FE0|#FFFFFF|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF
+  standard|1280|ruhe n: color #222222 → #FFFFFF; border rgb(34, 34, 34) rgb(34, 34, 34) → rgb(255, 255, 255) rgb(255, 255, 255); outline none rgb(34, 34, 34) → none rgb(255, 255, 255); vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #FFFFFF|#D8E0FF|#2B4FE0|#FFFFFF|#FFFFFF|#2B4FE0|#FFFFFF|0 0 0 2px #182866,0 0 0 4px #FFFFFF
+  standard|1280|druck n: vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #182866,0 0 0 4px #FFFFFF
+Abweichend openholdp: 12
+  standard|375|ruhe b: color #222222 → #FFFFFF; border rgb(34, 34, 34) rgb(34, 34, 34) → rgb(255, 255, 255) rgb(255, 255, 255); outline none rgb(34, 34, 34) → none rgb(255, 255, 255); vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #222222|#FFFFFF|#2B4FE0|#FFFFFF|#FFFFFF|#2B4FE0|#FFFFFF|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF
+  standard|375|ruhe n: color #222222 → #FFFFFF; border rgb(34, 34, 34) rgb(34, 34, 34) → rgb(255, 255, 255) rgb(255, 255, 255); outline none rgb(34, 34, 34) → none rgb(255, 255, 255); vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #FFFFFF|#D8E0FF|#2B4FE0|#FFFFFF|#FFFFFF|#2B4FE0|#FFFFFF|0 0 0 2px #182866,0 0 0 4px #FFFFFF
+  standard|375|druck n: vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #182866,0 0 0 4px #FFFFFF
+  standard|1280|ruhe b: color #222222 → #FFFFFF; border rgb(34, 34, 34) rgb(34, 34, 34) → rgb(255, 255, 255) rgb(255, 255, 255); outline none rgb(34, 34, 34) → none rgb(255, 255, 255); vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #222222|#FFFFFF|#2B4FE0|#FFFFFF|#FFFFFF|#2B4FE0|#FFFFFF|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF
+  standard|1280|ruhe n: color #222222 → #FFFFFF; border rgb(34, 34, 34) rgb(34, 34, 34) → rgb(255, 255, 255) rgb(255, 255, 255); outline none rgb(34, 34, 34) → none rgb(255, 255, 255); vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #FFFFFF|#D8E0FF|#2B4FE0|#FFFFFF|#FFFFFF|#2B4FE0|#FFFFFF|0 0 0 2px #182866,0 0 0 4px #FFFFFF
+  standard|1280|druck n: vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #182866,0 0 0 4px #FFFFFF
+Abweichend openholda: 48
+  standard|375|ruhe b: deko none → underline; vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #222222|#FFFFFF|#2B4FE0|#FFFFFF|#FFFFFF|#2B4FE0|#FFFFFF|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF
+  standard|375|ruhe n: deko none → underline; vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #FFFFFF|#D8E0FF|#2B4FE0|#FFFFFF|#FFFFFF|#2B4FE0|#FFFFFF|0 0 0 2px #182866,0 0 0 4px #FFFFFF
+  standard|375|hover b: color #222222 → #FFFFFF; border rgb(34, 34, 34) rgb(34, 34, 34) → rgb(255, 255, 255) rgb(255, 255, 255); outline none rgb(34, 34, 34) → none rgb(255, 255, 255); deko none → underline; vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #222222|#FFFFFF|#2B4FE0|#FFFFFF|#FFFFFF|#2B4FE0|#FFFFFF|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF
+  standard|375|hover n: color #222222 → #FFFFFF; border rgb(34, 34, 34) rgb(34, 34, 34) → rgb(255, 255, 255) rgb(255, 255, 255); outline none rgb(34, 34, 34) → none rgb(255, 255, 255); deko none → underline; vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #FFFFFF|#D8E0FF|#2B4FE0|#FFFFFF|#FFFFFF|#2B4FE0|#FFFFFF|0 0 0 2px #182866,0 0 0 4px #FFFFFF
+  standard|375|focus b: deko none → underline; vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #222222|#FFFFFF|#2B4FE0|#FFFFFF|#FFFFFF|#2B4FE0|#FFFFFF|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF
+  standard|375|focus n: shadow rgb(255, 255, 255) 0px 0px 0px 2px, rgb(60, 100, 255) 0px 0px 0px 4px → rgb(24, 40, 102) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px; deko none → underline; vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #FFFFFF|#D8E0FF|#2B4FE0|#FFFFFF|#FFFFFF|#2B4FE0|#FFFFFF|0 0 0 2px #182866,0 0 0 4px #FFFFFF
+Abweichend openneth3: 12
+  standard|375|ruhe b: color #646464 → #FFFFFF; border rgb(100, 100, 100) rgb(100, 100, 100) → rgb(255, 255, 255) rgb(255, 255, 255); outline none rgb(100, 100, 100) → none rgb(255, 255, 255); vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #222222|#FFFFFF|#2B4FE0|#FFFFFF|#FFFFFF|#2B4FE0|#FFFFFF|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF
+  standard|375|ruhe n: color #646464 → #D8E0FF; border rgb(100, 100, 100) rgb(100, 100, 100) → rgb(216, 224, 255) rgb(216, 224, 255); outline none rgb(100, 100, 100) → none rgb(216, 224, 255); vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #FFFFFF|#D8E0FF|#2B4FE0|#FFFFFF|#FFFFFF|#2B4FE0|#FFFFFF|0 0 0 2px #182866,0 0 0 4px #FFFFFF
+  standard|375|druck n: vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #182866,0 0 0 4px #FFFFFF
+  standard|1280|ruhe b: color #646464 → #FFFFFF; border rgb(100, 100, 100) rgb(100, 100, 100) → rgb(255, 255, 255) rgb(255, 255, 255); outline none rgb(100, 100, 100) → none rgb(255, 255, 255); vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #222222|#FFFFFF|#2B4FE0|#FFFFFF|#FFFFFF|#2B4FE0|#FFFFFF|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF
+  standard|1280|ruhe n: color #646464 → #D8E0FF; border rgb(100, 100, 100) rgb(100, 100, 100) → rgb(216, 224, 255) rgb(216, 224, 255); outline none rgb(100, 100, 100) → none rgb(216, 224, 255); vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #FFFFFF|#D8E0FF|#2B4FE0|#FFFFFF|#FFFFFF|#2B4FE0|#FFFFFF|0 0 0 2px #182866,0 0 0 4px #FFFFFF
+  standard|1280|druck n: vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #182866,0 0 0 4px #FFFFFF
+Abweichend opennetli: 12
+  standard|375|ruhe b: vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #222222|#FFFFFF|#2B4FE0|#FFFFFF|#FFFFFF|#2B4FE0|#FFFFFF|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF
+  standard|375|ruhe n: color #222222 → #FFFFFF; outline none rgb(34, 34, 34) → none rgb(255, 255, 255); vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #FFFFFF|#D8E0FF|#2B4FE0|#FFFFFF|#FFFFFF|#2B4FE0|#FFFFFF|0 0 0 2px #182866,0 0 0 4px #FFFFFF
+  standard|375|druck n: vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #182866,0 0 0 4px #FFFFFF
+  standard|1280|ruhe b: vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #222222|#FFFFFF|#2B4FE0|#FFFFFF|#FFFFFF|#2B4FE0|#FFFFFF|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF
+  standard|1280|ruhe n: color #222222 → #FFFFFF; outline none rgb(34, 34, 34) → none rgb(255, 255, 255); vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #FFFFFF|#D8E0FF|#2B4FE0|#FFFFFF|#FFFFFF|#2B4FE0|#FFFFFF|0 0 0 2px #182866,0 0 0 4px #FFFFFF
+  standard|1280|druck n: vars #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #FFFFFF,0 0 0 4px #3C64FF → #222222|#646464|#2B4FE0|#222222|#2B4FE0|#2B4FE0|#222222|0 0 0 2px #182866,0 0 0 4px #FFFFFF
+Abweichend figholda: 24
+  standard|375|ruhe b: deko none → underline
+  standard|375|ruhe n: deko none → underline
+  standard|375|druck b: deko none → underline
+  standard|375|druck n: deko none → underline
+  standard|375|erzwungen b: deko none → underline
+  standard|375|erzwungen n: deko none → underline
+Bandinhalt text: w #222222 auf #FFFFFF 15.91:1 | b #FFFFFF auf #3C64FF 4.71:1 | n #FFFFFF auf #182866 13.69:1
+Bandinhalt a: w #3C64FF auf #FFFFFF 4.71:1 | b #FFFFFF auf #3C64FF 4.71:1 | n #FFFFFF auf #182866 13.69:1
+Bandinhalt kicker: w #3C64FF auf #FFFFFF 4.71:1 | b #FFFFFF auf #3C64FF 4.71:1 | n #D8E0FF auf #182866 10.45:1
+Gegenüber ../mess/d4ab623.json geänderte Kennungen (120): b-appa, b-appaccent, b-appcard, b-appghost, b-apph3, b-appkicker, b-appmini, b-appp, b-appsec, b-boundary, b-boundarya, b-chip, b-chipon, b-choice, b-choiceon, b-choiceona, b-choiceonst, b-choicest, b-choiceurg, b-contact, b-contacta, b-contacth2, b-contactp, b-detail, b-detaila, b-detailem, b-detailemp, b-detailh2, b-detailp, b-detailurg, b-detailurga, b-detailurgp, b-empty, b-emptya, b-lay, b-layba, b-laybh3, b-laybli, b-layh3, b-layli, b-mini, b-minia, b-openbtn, b-openlayli, b-output, b-outputa, b-outputdd, b-outputdt, b-outputh2, b-outputmeta, b-ph, b-pha, b-php, b-safety, b-safetya, b-safetyp, b-safetyt, b-visbtn, b-visbtndis, b-visbtnon, n-appa, n-appaccent, n-appcard, n-appghost, n-apph3, n-appkicker, n-appmini, n-appp, n-appsec, n-boundary, n-boundarya, n-chip, n-chipon, n-choice, n-choiceon, n-choiceona, n-choiceonst, n-choicest, n-choiceurg, n-contact, n-contacta, n-contacth2, n-contactp, n-detail, n-detaila, n-detailem, n-detailemp, n-detailh2, n-detailp, n-detailurg, n-detailurga, n-detailurgp, n-empty, n-emptya, n-lay, n-layba, n-laybh3, n-laybli, n-layh3, n-layli, n-mini, n-minia, n-openbtn, n-openlayli, n-output, n-outputa, n-outputdd, n-outputdt, n-outputh2, n-outputmeta, n-ph, n-pha, n-php, n-safety, n-safetya, n-safetyp, n-safetyt, n-visbtn, n-visbtndis, n-visbtnon

@@ -1,0 +1,74 @@
+{
+ "ohneAenderung": {
+  "besteht": true
+ },
+ "proben": [
+  {
+   "name": "Nachtblau-Punkt umformuliert",
+   "datei": "guidelines/02-farben-und-kontrast.md",
+   "besteht": false,
+   "meldung": "Leitlinie 02, Abschnitt Nachtblau"
+  },
+  {
+   "name": "README-Kernsatz geändert",
+   "datei": "README.md",
+   "besteht": false,
+   "meldung": "README: In Bändern, blau oder nachtblau, stehen keine hellen Komponenten"
+  },
+  {
+   "name": "Kartenanker #puk-blau entfernt",
+   "datei": "components/GrundlageFarbeBlau/README.md",
+   "besteht": false,
+   "meldung": "Karte: (../../guidelines/02-farben-und-kontrast.md#puk-blau)"
+  },
+  {
+   "name": "Grenze offene Erklärgrafik (Leitlinie) entfernt",
+   "datei": "guidelines/02-farben-und-kontrast.md",
+   "besteht": false,
+   "meldung": "Erklärgrafiken gehören deshalb nie in ein Band"
+  },
+  {
+   "name": "README ohne offene Erklärgrafik",
+   "datei": "README.md",
+   "besteht": false,
+   "meldung": "README: offene Erklärgrafik"
+  },
+  {
+   "name": "Karte ohne offene Erklärgrafik",
+   "datei": "components/GrundlageFarbeBlau/README.md",
+   "besteht": false,
+   "meldung": "Karte: offene Erklärgrafik"
+  },
+  {
+   "name": "Leitlinie ohne `.puk-app-card`",
+   "datei": "guidelines/02-farben-und-kontrast.md",
+   "besteht": false,
+   "meldung": "`.puk-app-card`"
+  },
+  {
+   "name": "Leitlinie ohne `.puk-vis-btn`",
+   "datei": "guidelines/02-farben-und-kontrast.md",
+   "besteht": true
+  },
+  {
+   "name": "Leitlinie ohne Platzhalter und Sicherheitsleiste",
+   "datei": "guidelines/02-farben-und-kontrast.md",
+   "besteht": true
+  },
+  {
+   "name": "README ohne Satz zu 2026.10.20",
+   "datei": "README.md",
+   "besteht": true
+  },
+  {
+   "name": "Karte ohne «erweitert bis 2026.10.20»",
+   "datei": "components/GrundlageFarbeBlau/README.md",
+   "besteht": true
+  },
+  {
+   "name": "Nachtblau-Abschnitt ohne «technische Absicherung»",
+   "datei": "guidelines/02-farben-und-kontrast.md",
+   "besteht": true
+  }
+ ]
+}

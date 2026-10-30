@@ -1,0 +1,751 @@
+{
+ "listeGleich": true,
+ "seiten": 31,
+ "vergleiche": [
+  {
+   "url": "index.html",
+   "theme": "standard",
+   "width": 375,
+   "gleich": true
+  },
+  {
+   "url": "musterauswahl.html",
+   "theme": "standard",
+   "width": 375,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/Website.dc.html",
+   "theme": "standard",
+   "width": 375,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/longform/erklaermuster.html",
+   "theme": "standard",
+   "width": 375,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/longform/grundlagenkapitel.html",
+   "theme": "standard",
+   "width": 375,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/longform/handlungsuebersicht.html",
+   "theme": "standard",
+   "width": 375,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/longform/transfer-erholung.html",
+   "theme": "standard",
+   "width": 375,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/longform/visualisierungsmuster.html",
+   "theme": "standard",
+   "width": 375,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/applications/angebotsnavigator.html",
+   "theme": "standard",
+   "width": 375,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/applications/gespraechshilfe.html",
+   "theme": "standard",
+   "width": 375,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/applications/kontaktwegweiser.html",
+   "theme": "standard",
+   "width": 375,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/applications/situationsnavigator.html",
+   "theme": "standard",
+   "width": 375,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/interaktion/beispiel.html",
+   "theme": "standard",
+   "width": 375,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/404.html",
+   "theme": "standard",
+   "width": 375,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/behandlung-verstehen.html",
+   "theme": "standard",
+   "width": 375,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/beziehungen-verstehen.html",
+   "theme": "standard",
+   "width": 375,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/gate.html",
+   "theme": "standard",
+   "width": 375,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/impressum-datenschutz.html",
+   "theme": "standard",
+   "width": 375,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/index.html",
+   "theme": "standard",
+   "width": 375,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/seitenvorlage.html",
+   "theme": "standard",
+   "width": 375,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/unterstuetzung-finden.html",
+   "theme": "standard",
+   "width": 375,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/minimal-starter/404.html",
+   "theme": "standard",
+   "width": 375,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/minimal-starter/impressum-datenschutz.html",
+   "theme": "standard",
+   "width": 375,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/minimal-starter/index.html",
+   "theme": "standard",
+   "width": 375,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/minimal-starter/thema.html",
+   "theme": "standard",
+   "width": 375,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/profilbeispiel/404.html",
+   "theme": "standard",
+   "width": 375,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/profilbeispiel/impressum-datenschutz.html",
+   "theme": "standard",
+   "width": 375,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/profilbeispiel/index.html",
+   "theme": "standard",
+   "width": 375,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/profilbeispiel/pruefen.html",
+   "theme": "standard",
+   "width": 375,
+   "gleich": true
+  },
+  {
+   "url": "ui_kits/website/index.html",
+   "theme": "standard",
+   "width": 375,
+   "gleich": true
+  },
+  {
+   "url": "ui_kits/website/qa.html",
+   "theme": "standard",
+   "width": 375,
+   "gleich": true
+  },
+  {
+   "url": "index.html",
+   "theme": "standard",
+   "width": 1280,
+   "gleich": true
+  },
+  {
+   "url": "musterauswahl.html",
+   "theme": "standard",
+   "width": 1280,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/Website.dc.html",
+   "theme": "standard",
+   "width": 1280,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/longform/erklaermuster.html",
+   "theme": "standard",
+   "width": 1280,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/longform/grundlagenkapitel.html",
+   "theme": "standard",
+   "width": 1280,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/longform/handlungsuebersicht.html",
+   "theme": "standard",
+   "width": 1280,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/longform/transfer-erholung.html",
+   "theme": "standard",
+   "width": 1280,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/longform/visualisierungsmuster.html",
+   "theme": "standard",
+   "width": 1280,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/applications/angebotsnavigator.html",
+   "theme": "standard",
+   "width": 1280,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/applications/gespraechshilfe.html",
+   "theme": "standard",
+   "width": 1280,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/applications/kontaktwegweiser.html",
+   "theme": "standard",
+   "width": 1280,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/applications/situationsnavigator.html",
+   "theme": "standard",
+   "width": 1280,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/interaktion/beispiel.html",
+   "theme": "standard",
+   "width": 1280,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/404.html",
+   "theme": "standard",
+   "width": 1280,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/behandlung-verstehen.html",
+   "theme": "standard",
+   "width": 1280,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/beziehungen-verstehen.html",
+   "theme": "standard",
+   "width": 1280,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/gate.html",
+   "theme": "standard",
+   "width": 1280,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/impressum-datenschutz.html",
+   "theme": "standard",
+   "width": 1280,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/index.html",
+   "theme": "standard",
+   "width": 1280,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/seitenvorlage.html",
+   "theme": "standard",
+   "width": 1280,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/unterstuetzung-finden.html",
+   "theme": "standard",
+   "width": 1280,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/minimal-starter/404.html",
+   "theme": "standard",
+   "width": 1280,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/minimal-starter/impressum-datenschutz.html",
+   "theme": "standard",
+   "width": 1280,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/minimal-starter/index.html",
+   "theme": "standard",
+   "width": 1280,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/minimal-starter/thema.html",
+   "theme": "standard",
+   "width": 1280,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/profilbeispiel/404.html",
+   "theme": "standard",
+   "width": 1280,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/profilbeispiel/impressum-datenschutz.html",
+   "theme": "standard",
+   "width": 1280,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/profilbeispiel/index.html",
+   "theme": "standard",
+   "width": 1280,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/profilbeispiel/pruefen.html",
+   "theme": "standard",
+   "width": 1280,
+   "gleich": true
+  },
+  {
+   "url": "ui_kits/website/index.html",
+   "theme": "standard",
+   "width": 1280,
+   "gleich": true
+  },
+  {
+   "url": "ui_kits/website/qa.html",
+   "theme": "standard",
+   "width": 1280,
+   "gleich": true
+  },
+  {
+   "url": "index.html",
+   "theme": "kontrast",
+   "width": 375,
+   "gleich": true
+  },
+  {
+   "url": "musterauswahl.html",
+   "theme": "kontrast",
+   "width": 375,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/Website.dc.html",
+   "theme": "kontrast",
+   "width": 375,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/longform/erklaermuster.html",
+   "theme": "kontrast",
+   "width": 375,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/longform/grundlagenkapitel.html",
+   "theme": "kontrast",
+   "width": 375,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/longform/handlungsuebersicht.html",
+   "theme": "kontrast",
+   "width": 375,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/longform/transfer-erholung.html",
+   "theme": "kontrast",
+   "width": 375,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/longform/visualisierungsmuster.html",
+   "theme": "kontrast",
+   "width": 375,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/applications/angebotsnavigator.html",
+   "theme": "kontrast",
+   "width": 375,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/applications/gespraechshilfe.html",
+   "theme": "kontrast",
+   "width": 375,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/applications/kontaktwegweiser.html",
+   "theme": "kontrast",
+   "width": 375,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/applications/situationsnavigator.html",
+   "theme": "kontrast",
+   "width": 375,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/interaktion/beispiel.html",
+   "theme": "kontrast",
+   "width": 375,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/404.html",
+   "theme": "kontrast",
+   "width": 375,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/behandlung-verstehen.html",
+   "theme": "kontrast",
+   "width": 375,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/beziehungen-verstehen.html",
+   "theme": "kontrast",
+   "width": 375,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/gate.html",
+   "theme": "kontrast",
+   "width": 375,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/impressum-datenschutz.html",
+   "theme": "kontrast",
+   "width": 375,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/index.html",
+   "theme": "kontrast",
+   "width": 375,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/seitenvorlage.html",
+   "theme": "kontrast",
+   "width": 375,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/unterstuetzung-finden.html",
+   "theme": "kontrast",
+   "width": 375,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/minimal-starter/404.html",
+   "theme": "kontrast",
+   "width": 375,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/minimal-starter/impressum-datenschutz.html",
+   "theme": "kontrast",
+   "width": 375,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/minimal-starter/index.html",
+   "theme": "kontrast",
+   "width": 375,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/minimal-starter/thema.html",
+   "theme": "kontrast",
+   "width": 375,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/profilbeispiel/404.html",
+   "theme": "kontrast",
+   "width": 375,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/profilbeispiel/impressum-datenschutz.html",
+   "theme": "kontrast",
+   "width": 375,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/profilbeispiel/index.html",
+   "theme": "kontrast",
+   "width": 375,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/profilbeispiel/pruefen.html",
+   "theme": "kontrast",
+   "width": 375,
+   "gleich": true
+  },
+  {
+   "url": "ui_kits/website/index.html",
+   "theme": "kontrast",
+   "width": 375,
+   "gleich": true
+  },
+  {
+   "url": "ui_kits/website/qa.html",
+   "theme": "kontrast",
+   "width": 375,
+   "gleich": true
+  },
+  {
+   "url": "index.html",
+   "theme": "kontrast",
+   "width": 1280,
+   "gleich": true
+  },
+  {
+   "url": "musterauswahl.html",
+   "theme": "kontrast",
+   "width": 1280,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/Website.dc.html",
+   "theme": "kontrast",
+   "width": 1280,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/longform/erklaermuster.html",
+   "theme": "kontrast",
+   "width": 1280,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/longform/grundlagenkapitel.html",
+   "theme": "kontrast",
+   "width": 1280,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/longform/handlungsuebersicht.html",
+   "theme": "kontrast",
+   "width": 1280,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/longform/transfer-erholung.html",
+   "theme": "kontrast",
+   "width": 1280,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/longform/visualisierungsmuster.html",
+   "theme": "kontrast",
+   "width": 1280,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/applications/angebotsnavigator.html",
+   "theme": "kontrast",
+   "width": 1280,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/applications/gespraechshilfe.html",
+   "theme": "kontrast",
+   "width": 1280,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/applications/kontaktwegweiser.html",
+   "theme": "kontrast",
+   "width": 1280,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/applications/situationsnavigator.html",
+   "theme": "kontrast",
+   "width": 1280,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/interaktion/beispiel.html",
+   "theme": "kontrast",
+   "width": 1280,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/404.html",
+   "theme": "kontrast",
+   "width": 1280,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/behandlung-verstehen.html",
+   "theme": "kontrast",
+   "width": 1280,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/beziehungen-verstehen.html",
+   "theme": "kontrast",
+   "width": 1280,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/gate.html",
+   "theme": "kontrast",
+   "width": 1280,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/impressum-datenschutz.html",
+   "theme": "kontrast",
+   "width": 1280,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/index.html",
+   "theme": "kontrast",
+   "width": 1280,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/seitenvorlage.html",
+   "theme": "kontrast",
+   "width": 1280,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/psychoeducation-site-starter/unterstuetzung-finden.html",
+   "theme": "kontrast",
+   "width": 1280,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/minimal-starter/404.html",
+   "theme": "kontrast",
+   "width": 1280,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/minimal-starter/impressum-datenschutz.html",
+   "theme": "kontrast",
+   "width": 1280,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/minimal-starter/index.html",
+   "theme": "kontrast",
+   "width": 1280,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/minimal-starter/thema.html",
+   "theme": "kontrast",
+   "width": 1280,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/profilbeispiel/404.html",
+   "theme": "kontrast",
+   "width": 1280,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/profilbeispiel/impressum-datenschutz.html",
+   "theme": "kontrast",
+   "width": 1280,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/profilbeispiel/index.html",
+   "theme": "kontrast",
+   "width": 1280,
+   "gleich": true
+  },
+  {
+   "url": "templates/website/profilbeispiel/pruefen.html",
+   "theme": "kontrast",
+   "width": 1280,
+   "gleich": true
+  },
+  {
+   "url": "ui_kits/website/index.html",
+   "theme": "kontrast",
+   "width": 1280,
+   "gleich": true
+  },
+  {
+   "url": "ui_kits/website/qa.html",
+   "theme": "kontrast",
+   "width": 1280,
+   "gleich": true
+  }
+ ],
+ "gleich": 124
+}

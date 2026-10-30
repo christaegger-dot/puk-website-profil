@@ -1,0 +1,200 @@
+{
+ "selektoren": 38,
+ "ohneMutation": {
+  "ok": true
+ },
+ "mutationen": [
+  {
+   "entfernt": "[data-puk-light]",
+   "erkannt": true,
+   "meldung": "light b [data-puk-light]"
+  },
+  {
+   "entfernt": "[data-puk-surface]:not([data-puk-surface=\"night\"])",
+   "erkannt": true,
+   "meldung": "light b [data-puk-surface]:not([data-puk-surface=\"night\"])"
+  },
+  {
+   "entfernt": ".puk-dialog",
+   "erkannt": true,
+   "meldung": "light b .puk-dialog"
+  },
+  {
+   "entfernt": ".puk-disclosure__panel",
+   "erkannt": true,
+   "meldung": "light b .puk-disclosure__panel"
+  },
+  {
+   "entfernt": ".puk-carousel__slide",
+   "erkannt": true,
+   "meldung": "light b .puk-carousel__slide"
+  },
+  {
+   "entfernt": ".puk-carousel__btn",
+   "erkannt": true,
+   "meldung": "light b .puk-carousel__btn"
+  },
+  {
+   "entfernt": ".puk-filter",
+   "erkannt": true,
+   "meldung": "light b .puk-filter"
+  },
+  {
+   "entfernt": ".puk-longform__figure",
+   "erkannt": true,
+   "meldung": "light b .puk-longform__figure"
+  },
+  {
+   "entfernt": ".puk-longform__figure-side",
+   "erkannt": true,
+   "meldung": "light b .puk-longform__figure-side"
+  },
+  {
+   "entfernt": ".puk-longform__support",
+   "erkannt": true,
+   "meldung": "light b .puk-longform__support"
+  },
+  {
+   "entfernt": ".puk-longform__reflection",
+   "erkannt": true,
+   "meldung": "light b .puk-longform__reflection"
+  },
+  {
+   "entfernt": ".puk-longform__term-guide>div",
+   "erkannt": true,
+   "meldung": "light b .puk-longform__term-guide>div"
+  },
+  {
+   "entfernt": ".puk-web-media",
+   "erkannt": true,
+   "meldung": "light b .puk-web-media"
+  },
+  {
+   "entfernt": ".puk-vis-figure:not(.puk-vis-figure--open)",
+   "erkannt": true,
+   "meldung": "light b .puk-vis-figure:not(.puk-vis-figure--open)"
+  },
+  {
+   "entfernt": ".puk-vis-longdesc",
+   "erkannt": true,
+   "meldung": "light b .puk-vis-longdesc"
+  },
+  {
+   "entfernt": ".puk-vis-cycle li",
+   "erkannt": true,
+   "meldung": "light b .puk-vis-cycle li"
+  },
+  {
+   "entfernt": ".puk-vis-compare__col",
+   "erkannt": true,
+   "meldung": "light b .puk-vis-compare__col"
+  },
+  {
+   "entfernt": ".puk-vis-decision__branch",
+   "erkannt": true,
+   "meldung": "light b .puk-vis-decision__branch"
+  },
+  {
+   "entfernt": ".puk-vis-illu",
+   "erkannt": true,
+   "meldung": "light b .puk-vis-illu"
+  },
+  {
+   "entfernt": ".puk-vis-tablewrap",
+   "erkannt": true,
+   "meldung": "light b .puk-vis-tablewrap"
+  },
+  {
+   "entfernt": ".puk-vis-decide li",
+   "erkannt": true,
+   "meldung": "light b .puk-vis-decide li"
+  },
+  {
+   "entfernt": ".puk-site-draft",
+   "erkannt": true,
+   "meldung": "light b .puk-site-draft"
+  },
+  {
+   "entfernt": ".puk-site-placeholder",
+   "erkannt": true,
+   "meldung": "light b .puk-site-placeholder"
+  },
+  {
+   "entfernt": ".puk-site-safety--direct",
+   "erkannt": true,
+   "meldung": "light b .puk-site-safety--direct"
+  },
+  {
+   "entfernt": ".puk-app-card",
+   "erkannt": true,
+   "meldung": "light b .puk-app-card"
+  },
+  {
+   "entfernt": ".puk-app-chip",
+   "erkannt": true,
+   "meldung": "light b .puk-app-chip"
+  },
+  {
+   "entfernt": ".puk-app-choice",
+   "erkannt": true,
+   "meldung": "light b .puk-app-choice"
+  },
+  {
+   "entfernt": ".puk-app-boundary",
+   "erkannt": true,
+   "meldung": "light b .puk-app-boundary"
+  },
+  {
+   "entfernt": ".puk-app-mini",
+   "erkannt": true,
+   "meldung": "light b .puk-app-mini"
+  },
+  {
+   "entfernt": ".puk-app-detail",
+   "erkannt": true,
+   "meldung": "light b .puk-app-detail"
+  },
+  {
+   "entfernt": ".puk-app-output",
+   "erkannt": true,
+   "meldung": "light b .puk-app-output"
+  },
+  {
+   "entfernt": ".puk-app-empty",
+   "erkannt": true,
+   "meldung": "light b .puk-app-empty"
+  },
+  {
+   "entfernt": ".puk-app-contact-target",
+   "erkannt": true,
+   "meldung": "light b .puk-app-contact-target"
+  },
+  {
+   "entfernt": ".puk-vis-layers",
+   "erkannt": true,
+   "meldung": "light b .puk-vis-layers"
+  },
+  {
+   "entfernt": ".puk-vis-btn",
+   "erkannt": true,
+   "meldung": "light b .puk-vis-btn"
+  },
+  {
+   "entfernt": "input",
+   "erkannt": true,
+   "meldung": "light b input"
+  },
+  {
+   "entfernt": "select",
+   "erkannt": true,
+   "meldung": "light b select"
+  },
+  {
+   "entfernt": "textarea",
+   "erkannt": true,
+   "meldung": "light b textarea"
+  }
+ ],
+ "erkannt": 38,
+ "originalBesteht": true
+}
