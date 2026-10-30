@@ -84,7 +84,7 @@
 .puk-web-card-list>li{display:flex;min-width:0}
 .puk-web-band{padding-block:64px;background:var(--puk-blue-100);color:var(--puk-white)}
 .puk-web-band[data-puk-surface="night"]{background:var(--surface-night)} /* Band in Nachtblau, Profilentscheid 29.10.2026 */
-/* Blaues Band (Nachbesserung 29.10.2026, O-C): Links, Akzent, Nebentext und ruhige Knöpfe in Weiss statt Blau oder Schwarz auf Blau. */
+/* Blaues Band (Nachbesserungen 29.10.2026, O-C und Knöpfe im blauen Band): Links, Akzent, Nebentext und ruhige Knöpfe in Weiss statt Blau oder Schwarz auf Blau. */
 .puk-web-band:not([data-puk-surface]){--text-link:var(--text-on-dark);--text-link-hover:var(--text-on-dark);--text-link-visited:var(--text-on-dark);--text-accent:var(--text-on-dark);--text-muted:var(--text-on-dark);--action-quiet-fg:var(--text-on-dark)}
 .puk-web-band:not([data-puk-surface]) a:not(.puk-btn){text-decoration:underline;text-underline-offset:.18em}
 .puk-web-band__inner{display:flex;align-items:flex-end;justify-content:space-between;gap:32px 48px;flex-wrap:wrap}
