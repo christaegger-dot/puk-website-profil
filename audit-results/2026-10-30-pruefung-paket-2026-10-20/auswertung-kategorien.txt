@@ -1,0 +1,14 @@
+Zustände ruhe hover focus active druck erzwungen
+Vergleiche 2448 vollständig gleich 1668
+sichtbar abweichend (Farbe/Fläche/Rahmen/Fokus):
+  open standard|ruhe b:color+bg+border+outline, standard|ruhe n:color+bg+border+outline, kontrast|ruhe b:color+bg+border+outline, kontrast|ruhe n:color+bg+border+outline
+  openbuildn standard|ruhe n:color+outline, kontrast|ruhe n:color+outline
+  openhold standard|ruhe b:color+outline, standard|ruhe n:color+outline, kontrast|ruhe b:color+outline, kontrast|ruhe n:color+outline
+  openholdh3 standard|ruhe b:color+border+outline, standard|ruhe n:color+border+outline, kontrast|ruhe b:color+border+outline, kontrast|ruhe n:color+border+outline
+  openholdp standard|ruhe b:color+border+outline, standard|ruhe n:color+border+outline, kontrast|ruhe b:color+border+outline, kontrast|ruhe n:color+border+outline
+  openneth3 standard|ruhe b:color+border+outline, standard|ruhe n:color+border+outline, kontrast|ruhe b:color+border+outline, kontrast|ruhe n:color+border+outline
+  opennetli standard|ruhe n:color+outline, kontrast|ruhe n:color+outline
+  openholda standard|hover b:color+border+outline, standard|hover n:color+border+outline, standard|focus n:shadow, kontrast|hover b:color+border+outline, kontrast|hover n:color+border+outline, kontrast|focus n:shadow
+  action standard|focus n:shadow, kontrast|focus n:shadow
+nur Unterstreichung: appa 48, choiceona 24, boundarya 48, minia 24, detaila 48, detailurga 24, outputa 48, emptya 48, contacta 48, action 44, pha 48, safetya 48, layba 48, openholda 36, figholda 24
+nur Variablen: phdraft 16, openlayli 16, openbtn 40, openbuildn 8, opennetli 8, open 4, openhold 4, openholdh3 4, openholdp 4, openneth3 4

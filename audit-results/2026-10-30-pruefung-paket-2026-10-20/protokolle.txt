@@ -1,0 +1,133 @@
+Protokollauszüge der unabhängigen Prüfung Paket 2026.10.20 (30.10.2026). Pfade ausserhalb des Repositorys sind durch <arbeit> ersetzt.
+
+== Umgebung
+v22.22.0
+10.9.4
+Python 3.13.17
+Version 1.62.1
+Google Chrome for Testing 153.0.8010.12 
+Google Chrome for Testing 153.0.8010.12
+Google Chrome for Testing 151.0.7922.34
+
+== sha256sum -c puk-website-profil-2026.10.20.zip.sha256
+e6d0663ad06db724d0e16acf0213e6e4de4e75d8ed6f2e3f0277e6e8014acdf8  puk-website-profil-2026.10.20.zip
+puk-website-profil-2026.10.20.zip: OK
+
+== npm run check:package (vor dem Eintrag)
+162 lokale Dokumentationslinks geprüft; 0 fehlende Ziele.
+385 Dateien bytegleich; SHA-256 geprüft: e6d0663ad06db724d0e16acf0213e6e4de4e75d8ed6f2e3f0277e6e8014acdf8
+
+== npm run check:generated
+
+47 abgeleitete Dateien aktuell.
+
+== Entpacken (python3 -I, zipfile) und diff -rq gegen das Repository ohne archiv, audit-results, websites, out-*, .venv, node_modules, Zip, .sha256, .git
+385 Einträge unter puk-website-profil/, Zeitstempel 2026-10-30 00:00; diff -rq: 0 Zeilen
+
+== npm run build (Lauf 1; Lauf 2 identisches Protokoll, git status --porcelain nach beiden leer)
+47 abgeleitete Dateien geprüft; 0 aktualisiert.
+<repo>/components/bundle.js geschrieben · 26 Komponenten
+<repo>/_ds_bundle.js geschrieben · 26 Komponenten
+7 Seiten geschrieben · PUK Website Kit 1.10.1-r4 · abgeleitet · Build r4-27 · Gate draft: 0 blockierend, 12 Hinweise.
+4 Seiten geschrieben · PUK Website Kit 1.10.1-r4 · abgeleitet · Build r4-27 · Gate draft: 0 blockierend, 3 Hinweise.
+4 Seiten geschrieben · PUK Website Kit 1.10.1-r4 · abgeleitet · Build r4-27 · Gate production: 0 blockierend, 1 Hinweise.
+git diff --quiet d4ab623 HEAD -- components/bundle.js _ds_bundle.js: gleich
+
+== npm test (test-chromium-1)
+# 31 aktive Seiten in zwei Breiten geprüft.
+ok 108 - Leitlinie 02 nennt Geltung, Zählung und die vier Bedingungen des Titelbilds
+ok 116 - Jeder Eintrag der Rücksetzregel gibt seiner Fläche im Band die Werte der Seitenfläche zurück
+# tests 119
+# pass 119
+# fail 0
+# cancelled 0
+# skipped 0
+
+== npm test (test-chromium-2)
+# 31 aktive Seiten in zwei Breiten geprüft.
+ok 108 - Leitlinie 02 nennt Geltung, Zählung und die vier Bedingungen des Titelbilds
+ok 116 - Jeder Eintrag der Rücksetzregel gibt seiner Fläche im Band die Werte der Seitenfläche zurück
+# tests 119
+# pass 119
+# fail 0
+# cancelled 0
+# skipped 0
+
+== npm test (test-chromium-3)
+# 31 aktive Seiten in zwei Breiten geprüft.
+ok 108 - Leitlinie 02 nennt Geltung, Zählung und die vier Bedingungen des Titelbilds
+ok 116 - Jeder Eintrag der Rücksetzregel gibt seiner Fläche im Band die Werte der Seitenfläche zurück
+# tests 119
+# pass 119
+# fail 0
+# cancelled 0
+# skipped 0
+
+== npm test (test-headless-1243)
+# 31 aktive Seiten in zwei Breiten geprüft.
+ok 108 - Leitlinie 02 nennt Geltung, Zählung und die vier Bedingungen des Titelbilds
+ok 116 - Jeder Eintrag der Rücksetzregel gibt seiner Fläche im Band die Werte der Seitenfläche zurück
+# tests 119
+# pass 119
+# fail 0
+# cancelled 0
+# skipped 0
+
+== npm test (test-headless-1234)
+# 31 aktive Seiten in zwei Breiten geprüft.
+ok 108 - Leitlinie 02 nennt Geltung, Zählung und die vier Bedingungen des Titelbilds
+ok 116 - Jeder Eintrag der Rücksetzregel gibt seiner Fläche im Band die Werte der Seitenfläche zurück
+# tests 119
+# pass 119
+# fail 0
+# cancelled 0
+# skipped 0
+
+== npm run test:ui
+Matrix: 112 Prüfläufe · 0 mit Befund · Tastatur: 41 Prüfungen · 0 mit Befund · Interaktionen: 19 Prüfungen · 0 mit Befund · Gate: 76 Prüfungen · 0 mit Befund · Gesamt: 0 Befunde · Fokusring nur statisch geprüft (Dokument ohne Fokus): Matrix 0 Läufe · nicht prüfbar: Tastatur 0, Interaktionen 0
+cmp mit tests/ergebnisse/ui-matrix-2026.10.20.json: bytegleich
+
+== Mutationsprobe (skripte/mutation.mjs)
+ohne Mutation besteht: true · erkannt 38 von 38 · Originaltest besteht: true
+
+== Dokumenttest-Gegenproben (skripte/dokument-gegenprobe.mjs)
+scheitert        Nachtblau-Punkt umformuliert
+scheitert        README-Kernsatz geändert
+scheitert        Kartenanker #puk-blau entfernt
+scheitert        Grenze offene Erklärgrafik (Leitlinie) entfernt
+scheitert        README ohne offene Erklärgrafik
+scheitert        Karte ohne offene Erklärgrafik
+scheitert        Leitlinie ohne `.puk-app-card`
+besteht trotzdem Leitlinie ohne `.puk-vis-btn`
+besteht trotzdem Leitlinie ohne Platzhalter und Sicherheitsleiste
+besteht trotzdem README ohne Satz zu 2026.10.20
+besteht trotzdem Karte ohne «erweitert bis 2026.10.20»
+besteht trotzdem Nachtblau-Abschnitt ohne «technische Absicherung»
+
+== Archiv
+archiv/profilstand-2026-10-30-19/: 13 von 13 bytegleich mit d4ab623 (git show | cmp); sha256sum -c: puk-website-profil-2026.10.19.zip: OK (914aa4c4…); übrige Archive zwischen d4ab623 und 177e24a unverändert
+
+== Pixelvergleich (skripte/pixel.mjs)
+Seiten 31 · Liste gleich true · 124 von 124 bytegleich
+
+== Bandscan (skripte/bandscan.mjs)
+{
+ "seiten": 31,
+ "treffer": [],
+ "baender": 4,
+ "texte": 12,
+ "unter45": []
+}
+== Native Formularfelder (skripte/nativ.mjs)
+input Weiss rgb(0,0,0); blaues Band und Nachtblau rgb(34,34,34); select ebenso, jeweils auf eigener heller Fläche
+
+== Sicherheitsgrenzen
+git diff d4ab623 177e24a ohne archiv, audit-results, tests/ergebnisse, Zip, .sha256, Bundles: 299 hinzugefügte Zeilen
+Treffer: Paket- und Archivlinks auf github.com in Markdown; <script src> lokaler Dateien mit ?v=r4-27 bzw. r4-13; style= nur in der Testfixture; keine tel:, Krise, Notfall, 143/144/147
+HTML: 106 geänderte Zeilen, nach Gleichsetzen der Kennungen identisch
+
+== Nach dem Eintrag in PRUEFBERICHT.md
+npm run check:docs: 173 lokale Dokumentationslinks geprüft; 0 fehlende Ziele.
+npm run package / npm run check:package: 385 Dateien bytegleich; SHA-256 geprüft: 1d1c25b7e58b9cf7e3b6cbe87739955d797074c3f591c127cabb5dd87332e92d
+Zip-Vergleich (python3 -I, zipfile) geprüft e6d0663a… gegen neu 1d1c25b7…: 385/385 Einträge, gleiche Namen und Reihenfolge; abweichend (Inhalt, Zeitstempel, Attribute) nur puk-website-profil/PRUEFBERICHT.md
+npm test mit Chromium 1243: 119 bestanden, 0 fehlgeschlagen. Ein unmittelbar vorheriger Lauf ohne gesetzten CHROMIUM_EXECUTABLE_PATH endete mit Exit-Code 1 (Browserpfad fehlte; Bedienung, nicht gewertet).
