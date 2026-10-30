@@ -1,0 +1,77 @@
+# Protokollauszüge · Unabhängige Prüfung 2026.10.19 · 30.10.2026
+Commit da2d8c9 (inhaltlich gleich fef9d49: git diff --quiet fef9d49 da2d8c9 = 0). Node 22.22.0, npm 10.9.4, Python 3.13.17, Playwright 1.62.1.
+
+## npm ci
+added 8 packages, and audited 9 packages in 3s
+EXIT 0
+
+## npm run build (Lauf 1; Lauf 2 Protokoll identisch, Bundles cmp-gleich, git status leer)
+/home/user/puk-website-profil/components/bundle.js geschrieben · 26 Komponenten
+/home/user/puk-website-profil/_ds_bundle.js geschrieben · 26 Komponenten
+7 Seiten geschrieben · PUK Website Kit 1.10.1-r4 · abgeleitet · Build r4-26 · Gate draft: 0 blockierend, 12 Hinweise.
+4 Seiten geschrieben · PUK Website Kit 1.10.1-r4 · abgeleitet · Build r4-26 · Gate draft: 0 blockierend, 3 Hinweise.
+4 Seiten geschrieben · PUK Website Kit 1.10.1-r4 · abgeleitet · Build r4-26 · Gate production: 0 blockierend, 1 Hinweise.
+
+## npm test · chromium1243
+ok 108 - Leitlinie 02 nennt Geltung, Zählung und die vier Bedingungen des Titelbilds
+ok 114 - Helle Komponenten in blauem Band und Nachtblau zeigen dieselben Farben wie auf Weiss
+ok 115 - Erklärgrafiken und Karussell-Knöpfe in blauem Band und Nachtblau zeigen dieselben Farben wie auf Weiss
+# tests 118
+# pass 118
+# fail 0
+# cancelled 0
+# skipped 0
+EXIT 0
+
+## npm test · shell1243
+ok 108 - Leitlinie 02 nennt Geltung, Zählung und die vier Bedingungen des Titelbilds
+ok 114 - Helle Komponenten in blauem Band und Nachtblau zeigen dieselben Farben wie auf Weiss
+ok 115 - Erklärgrafiken und Karussell-Knöpfe in blauem Band und Nachtblau zeigen dieselben Farben wie auf Weiss
+# tests 118
+# pass 118
+# fail 0
+# cancelled 0
+# skipped 0
+EXIT 0
+
+## npm test · shell1234
+ok 108 - Leitlinie 02 nennt Geltung, Zählung und die vier Bedingungen des Titelbilds
+ok 114 - Helle Komponenten in blauem Band und Nachtblau zeigen dieselben Farben wie auf Weiss
+ok 115 - Erklärgrafiken und Karussell-Knöpfe in blauem Band und Nachtblau zeigen dieselben Farben wie auf Weiss
+# tests 118
+# pass 118
+# fail 0
+# cancelled 0
+# skipped 0
+EXIT 0
+(chromium1243: CHROMIUM_EXECUTABLE_PATH=/opt/pw-browsers/chromium -> chromium-1243, 153.0.8010.12; shell1243: CHROMIUM_EXECUTABLE_PATH=/opt/pw-browsers/chromium_headless_shell-1243/.../chrome-headless-shell; shell1234: PLAYWRIGHT_BROWSERS_PATH=<eigener Ordner ausserhalb des Repositorys> nach npx playwright install chromium-headless-shell, Revision 1234 = 151.0.7922.34)
+Bedienfehler, nicht gewertet: Ein erster Lauf ohne CHROMIUM_EXECUTABLE_PATH und mit PLAYWRIGHT_BROWSERS_PATH=/opt/pw-browsers fand die von Playwright 1.62.1 erwartete Revision 1234 dort nicht (24 Tests scheiterten beim Browserstart, test:ui brach ab); beide wurden mit explizitem Pfad wiederholt.
+
+## npm run test:ui
+Matrix: 112 Prüfläufe · 0 mit Befund · Tastatur: 41 Prüfungen · 0 mit Befund · Interaktionen: 19 Prüfungen · 0 mit Befund · Gate: 76 Prüfungen · 0 mit Befund · Gesamt: 0 Befunde · Fokusring nur statisch geprüft (Dokument ohne Fokus): Matrix 0 Läufe · nicht prüfbar: Tastatur 0, Interaktionen 0
+EXIT 0
+
+## npm run package / check:package (vor dem Berichtseintrag)
+149 lokale Dokumentationslinks geprüft; 0 fehlende Ziele.
+384 Dateien bytegleich; SHA-256 geprüft: ec3a97ad2e3f6a31bed8710567d02071efb1b18c5532a899073542d30b4aa8f6
+Neu erzeugtes Zip cmp-gleich mit eingechecktem; sha256sum -c: puk-website-profil-2026.10.19.zip: OK (ec3a97ad...a8f6). 384 Einträge, alle bytegleich mit dem Arbeitsstand, Zeitstempel 2026-10-30 00:00.
+
+## Gegenproben
+a) Arbeitsbaum 46de3de + tests/profilentscheid-2026-10-29.test.mjs aus da2d8c9:
+not ok 2 - Leitlinie 02 nennt Geltung, Zählung und die vier Bedingungen des Titelbilds
+not ok 8 - Helle Komponenten in blauem Band und Nachtblau zeigen dieselben Farben wie auf Weiss
+# pass 7
+# fail 2
+   Meldung Test «Helle Komponenten»: light n-draft (Entwurfsmarke auf Nachtblau rgb(255, 255, 255) statt rgb(34, 34, 34)); Test «Leitlinie 02» scheitert, weil die Klarstellung O-3 in 46de3de fehlt.
+b) Arbeitsbaum 9e00421 + Testdatei aus 46de3de:
+not ok 9 - Erklärgrafiken und Karussell-Knöpfe in blauem Band und Nachtblau zeigen dieselben Farben wie auf Weiss
+# pass 8
+# fail 1
+   Meldung: light n-label (Beschriftung der Erklärgrafik auf Nachtblau)
+  expected: 'rgb(34, 34, 34) | rgb(34, 34, 34) | rgba(0, 0, 0, 0)'
+  actual: 'rgb(255, 255, 255) | rgb(255, 255, 255) | rgba(0, 0, 0, 0)'
+
+## Nach dem Berichtseintrag
+npm run package / check:package: «384 Dateien bytegleich; SHA-256 geprüft: 914aa4c4e1d5663a749ee91f176233a8ad33c95f8d1c0f460b8e002197942c02».
+Vergleich mit dem geprüften Paket (ec3a97ad…a8f6), python3 -I zipfile: gleiche 384 Einträge in gleicher Reihenfolge, gleiche Zeitstempel und Attribute; Inhalt verschieden nur in puk-website-profil/PRUEFBERICHT.md.
+npm test (Chromium 1243) danach: 118 bestanden, 0 fehlgeschlagen; check:docs 156 lokale Links, 0 fehlende Ziele; check:generated 45 aktuell.

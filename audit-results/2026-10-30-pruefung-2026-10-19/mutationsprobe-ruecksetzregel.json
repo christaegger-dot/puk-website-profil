@@ -1,0 +1,184 @@
+[
+ {
+  "entfernt": "[data-puk-light]",
+  "erkannt": true,
+  "tests": [
+   "Helle Komponenten in blauem Ba"
+  ],
+  "erste_meldung": "light b-llink"
+ },
+ {
+  "entfernt": "[data-puk-surface]:not([data-puk-surface=\"night\"])",
+  "erkannt": true,
+  "tests": [
+   "Helle Komponenten in blauem Ba"
+  ],
+  "erste_meldung": "light b-tmuted"
+ },
+ {
+  "entfernt": ".puk-dialog",
+  "erkannt": true,
+  "tests": [
+   "Helle Komponenten in blauem Ba"
+  ],
+  "erste_meldung": "light n-dtitle"
+ },
+ {
+  "entfernt": ".puk-disclosure__panel",
+  "erkannt": true,
+  "tests": [
+   "Helle Komponenten in blauem Ba"
+  ],
+  "erste_meldung": "light n-disclink"
+ },
+ {
+  "entfernt": ".puk-carousel__slide",
+  "erkannt": false,
+  "tests": [],
+  "erste_meldung": ""
+ },
+ {
+  "entfernt": ".puk-carousel__btn",
+  "erkannt": true,
+  "tests": [
+   "Erklärgrafiken und Karussell-K"
+  ],
+  "erste_meldung": "light n Karussell-Knopf Ruhe"
+ },
+ {
+  "entfernt": ".puk-filter",
+  "erkannt": true,
+  "tests": [
+   "Helle Komponenten in blauem Ba"
+  ],
+  "erste_meldung": "light b-fstatus"
+ },
+ {
+  "entfernt": ".puk-longform__figure",
+  "erkannt": true,
+  "tests": [
+   "Helle Komponenten in blauem Ba"
+  ],
+  "erste_meldung": "light b-lftext"
+ },
+ {
+  "entfernt": ".puk-longform__figure-side",
+  "erkannt": false,
+  "tests": [],
+  "erste_meldung": ""
+ },
+ {
+  "entfernt": ".puk-longform__support",
+  "erkannt": true,
+  "tests": [
+   "Helle Komponenten in blauem Ba"
+  ],
+  "erste_meldung": "light b-lstext"
+ },
+ {
+  "entfernt": ".puk-longform__reflection",
+  "erkannt": false,
+  "tests": [],
+  "erste_meldung": ""
+ },
+ {
+  "entfernt": ".puk-longform__term-guide>div",
+  "erkannt": false,
+  "tests": [],
+  "erste_meldung": ""
+ },
+ {
+  "entfernt": ".puk-web-media",
+  "erkannt": false,
+  "tests": [],
+  "erste_meldung": ""
+ },
+ {
+  "entfernt": ".puk-vis-figure:not(.puk-vis-figure--open)",
+  "erkannt": true,
+  "tests": [
+   "Erklärgrafiken und Karussell-K"
+  ],
+  "erste_meldung": "light n-label"
+ },
+ {
+  "entfernt": ".puk-vis-longdesc",
+  "erkannt": true,
+  "tests": [
+   "Erklärgrafiken und Karussell-K"
+  ],
+  "erste_meldung": "light b-long"
+ },
+ {
+  "entfernt": ".puk-vis-cycle li",
+  "erkannt": false,
+  "tests": [],
+  "erste_meldung": ""
+ },
+ {
+  "entfernt": ".puk-vis-compare__col",
+  "erkannt": false,
+  "tests": [],
+  "erste_meldung": ""
+ },
+ {
+  "entfernt": ".puk-vis-decision__branch",
+  "erkannt": false,
+  "tests": [],
+  "erste_meldung": ""
+ },
+ {
+  "entfernt": ".puk-vis-illu",
+  "erkannt": true,
+  "tests": [
+   "Erklärgrafiken und Karussell-K"
+  ],
+  "erste_meldung": "light n-stamp"
+ },
+ {
+  "entfernt": ".puk-vis-tablewrap",
+  "erkannt": false,
+  "tests": [],
+  "erste_meldung": ""
+ },
+ {
+  "entfernt": ".puk-vis-decide li",
+  "erkannt": true,
+  "tests": [
+   "Erklärgrafiken und Karussell-K"
+  ],
+  "erste_meldung": "light b-decide"
+ },
+ {
+  "entfernt": ".puk-site-draft",
+  "erkannt": true,
+  "tests": [
+   "Helle Komponenten in blauem Ba"
+  ],
+  "erste_meldung": "light n-draft"
+ },
+ {
+  "entfernt": "input",
+  "erkannt": true,
+  "tests": [
+   "Helle Komponenten in blauem Ba"
+  ],
+  "erste_meldung": "light n-input"
+ },
+ {
+  "entfernt": "select",
+  "erkannt": true,
+  "tests": [
+   "Helle Komponenten in blauem Ba"
+  ],
+  "erste_meldung": "light n-select"
+ },
+ {
+  "entfernt": "textarea",
+  "erkannt": true,
+  "tests": [
+   "Helle Komponenten in blauem Ba"
+  ],
+  "erste_meldung": "light n-textarea"
+ }
+]
