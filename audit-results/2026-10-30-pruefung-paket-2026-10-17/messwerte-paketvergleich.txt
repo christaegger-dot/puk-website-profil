@@ -1,0 +1,9 @@
+$ npm run package; npm run check:package (nach dem Eintrag)
+161 lokale Dokumentationslinks geprüft; 0 fehlende Ziele.
+382 Dateien bytegleich; SHA-256 geprüft: bc5b55c154837cb9418218d33c9722f1d65ccfbf0e60e6cb943730808ae8cdaf
+
+Geprüftes Paket: ec60a11f115209f3c7469ca72a0e6a68137b799dbd0e3bfee570cd3626d4c721
+Neues Paket:     bc5b55c154837cb9418218d33c9722f1d65ccfbf0e60e6cb943730808ae8cdaf
+Zip-Vergleich (python3 -I, zipfile):
+Einträge geprüft/neu: 382 382 Namen und Reihenfolge gleich: True
+Abweichende Einträge (Inhalt, Zeitstempel oder Rechte): ['puk-website-profil/PRUEFBERICHT.md']

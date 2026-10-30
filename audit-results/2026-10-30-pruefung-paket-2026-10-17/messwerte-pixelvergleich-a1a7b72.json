@@ -1,0 +1,39 @@
+{
+ "paare": 124,
+ "bytegleich": 122,
+ "pixelgleich": 123,
+ "abweichend": {
+  "kontrast-1280-templates__website__longform__grundlagenkapitel.html.png": {
+   "groesse": [
+    [
+     1280,
+     4523
+    ],
+    [
+     1280,
+     4617
+    ]
+   ]
+  }
+ },
+ "wiederholung_grundlagenkapitel_und_index_je_4_ansichten": [
+  {
+   "paare": 8,
+   "bytegleich": 8,
+   "pixelgleich": 8,
+   "abweichend": {}
+  },
+  {
+   "paare": 8,
+   "bytegleich": 8,
+   "pixelgleich": 8,
+   "abweichend": {}
+  },
+  {
+   "paare": 8,
+   "bytegleich": 8,
+   "pixelgleich": 8,
+   "abweichend": {}
+  }
+ ]
+}

@@ -1,0 +1,55 @@
+$ sha256sum puk-website-profil-2026.10.17.zip
+ec60a11f115209f3c7469ca72a0e6a68137b799dbd0e3bfee570cd3626d4c721  puk-website-profil-2026.10.17.zip
+$ sha256sum -c puk-website-profil-2026.10.17.zip.sha256
+puk-website-profil-2026.10.17.zip: OK
+$ npm run check:package
+133 lokale Dokumentationslinks geprüft; 0 fehlende Ziele.
+382 Dateien bytegleich; SHA-256 geprüft: ec60a11f115209f3c7469ca72a0e6a68137b799dbd0e3bfee570cd3626d4c721
+exit 0
+
+$ Entpacken (python3 -I, zipfile) und diff -r -q
+382 Einträge
+Präfixe Counter({'puk-website-profil': 382})
+Zeitstempel Counter({(2026, 10, 30, 0, 0, 0): 382})
+Rechte Counter({'0o644': 382})
+diff exit 0
+Zipliste = git ls-files ohne archiv/audit-results/Zip/.sha256: 382
+ABSCHLUSSENTSCHEIDE.md ENTSCHEIDE-PROFIL-2026-10-10.md ENTSCHEIDE-PROFIL-2026-10-11.md ENTSCHEIDE-PROFIL-2026-10-12.md ENTSCHEIDE-PROFIL-2026-10-13.md ENTSCHEIDE-PROFIL-2026-10-14.md ENTSCHEIDE-PROFIL-2026-10-15.md ENTSCHEIDE-PROFIL-2026-10-16.md ENTSCHEIDE-PROFIL-2026-10-17.md ENTSCHEIDE-PROFIL-2026-10-8.md ENTSCHEIDE-PROFIL-2026-10-9.md 
+$ npm run check:generated
+45 abgeleitete Dateien aktuell.
+$ npm run build
+45 abgeleitete Dateien geprüft; 0 aktualisiert.
+/home/user/puk-website-profil/components/bundle.js geschrieben · 26 Komponenten
+/home/user/puk-website-profil/_ds_bundle.js geschrieben · 26 Komponenten
+WARN  site                     editorial-status       Redaktioneller Status «Synthetische Referenz, nicht zur Veröffentlichung bestimmt» nennt kein Datum – Format «Fachlich freigegeben am TT.MM.JJJJ» (editorialStatusLabel)
+WARN  site                     site-url               site.config.siteUrl fehlt: ohne Adresse entstehen keine sitemap.xml und keine kanonischen Links (Abschnitt «Technische Qualität», G)
+WARN  beziehungen-verstehen    visual-approval        Visualisierung v-bz-kreislauf nicht freigegeben (ausstehend)
+WARN  beziehungen-verstehen    visual-approval        Visualisierung v-bz-illustration nicht freigegeben (ausstehend)
+WARN  behandlung-verstehen     visual-approval        Visualisierung v-bh-ablauf nicht freigegeben (ausstehend)
+WARN  behandlung-verstehen     visual-approval        Visualisierung v-bh-vergleich nicht freigegeben (ausstehend)
+WARN  unterstuetzung-finden    visual-approval        Visualisierung v-us-wegweiser nicht freigegeben (ausstehend)
+WARN  unterstuetzung-finden    visual-approval        Visualisierung v-us-netz nicht freigegeben (ausstehend)
+WARN  index                    placeholder-approval   Platzhalter download nicht freigegeben (Freigabe: ausstehend, Quelle: offen)
+WARN  beziehungen-verstehen    placeholder-approval   Platzhalter image nicht freigegeben (Freigabe: ausstehend, Quelle: offen)
+WARN  unterstuetzung-finden    placeholder-approval   Platzhalter contact nicht freigegeben (Freigabe: ausstehend, Quelle: offen)
+WARN  site                     review-report          Prüfbericht: offene Stufen W1, W2, S, Visualisierungs-Check, Bedienung und Barrierefreiheit, W3, R1 Profil-Audit, R2 Visualisierung und Laienverständlichkeit, R3 Freigabe-Audit – Status «erledigt» oder «entfällt: Begründung»
+7 Seiten geschrieben · PUK Website Kit 1.10.1-r4 · abgeleitet · Build r4-24 · Gate draft: 0 blockierend, 12 Hinweise.
+WARN  site                     editorial-status       Redaktioneller Status «Entwurf, nicht zur Veröffentlichung bestimmt» nennt einen Entwurf – vor der Veröffentlichung z. B. «Fachlich freigegeben am TT.MM.JJJJ» (editorialStatusLabel)
+WARN  site                     site-url               site.config.siteUrl fehlt: ohne Adresse entstehen keine sitemap.xml und keine kanonischen Links (Abschnitt «Technische Qualität», G)
+WARN  site                     review-report          Prüfbericht: offene Stufen W1, W2, S, Visualisierungs-Check, Bedienung und Barrierefreiheit, W3, R1 Profil-Audit, R2 Visualisierung und Laienverständlichkeit, R3 Freigabe-Audit – Status «erledigt» oder «entfällt: Begründung»
+4 Seiten geschrieben · PUK Website Kit 1.10.1-r4 · abgeleitet · Build r4-24 · Gate draft: 0 blockierend, 3 Hinweise.
+WARN  site                     site-url               site.config.siteUrl fehlt: ohne Adresse entstehen keine sitemap.xml und keine kanonischen Links (Abschnitt «Technische Qualität», G)
+4 Seiten geschrieben · PUK Website Kit 1.10.1-r4 · abgeleitet · Build r4-24 · Gate production: 0 blockierend, 1 Hinweise.
+exit 0
+$ git status --porcelain
+(Ende status)
+cmp _ds_bundle.js components/bundle.js: gleich
+
+$ git diff a1a7b72 c12f636 --stat (Summe)
+ 97 files changed, 11064 insertions(+), 252 deletions(-)
+$ ohne archiv/ und audit-results/
+ 56 files changed, 335 insertions(+), 253 deletions(-)
+$ git log --merges a1a7b72..c12f636
+c12f636 Merge pull request #150 from christaegger-dot/profil/2026-10-29-helle-flaechen-2026-10-15
+ad6ce55 Merge pull request #149 from christaegger-dot/profil/2026-10-30-o1-o2-2026-10-16
+5c235b3 Merge pull request #148 from christaegger-dot/profil/2026-10-30-baender-regel-2026-10-15

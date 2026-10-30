@@ -1,0 +1,68 @@
+== npm test (test-chromium-1)
+# tests 117
+# pass 117
+# fail 0
+# skipped 0
+ok 107 - Nachtblau ist benannt, in beiden Themes gleich und trägt Weiss und Blau 25 mit mehr als 7:1
+ok 108 - Leitlinie 02 nennt Geltung, Zählung und die vier Bedingungen des Titelbilds
+ok 109 - data-puk-surface="night" setzt Fläche, weisse unterstrichene Links und den umgekehrten Fokusring
+ok 110 - data-puk-surface="night" druckt ohne Fläche mit dunklem Text und Links wie auf Weiss
+ok 111 - Vorschau Website.dc.html rendert ohne Fehler, auch wenn React verzögert lädt
+ok 112 - Sekundär- und Ghost-Button stehen auf Nachtblau in Weiss, ausserhalb unverändert in Schwarz
+ok 113 - Im blauen Band stehen Links, Akzent, Nebentext und ruhige Knöpfe in Weiss; Druck wie auf Weiss
+ok 114 - Helle Komponenten in blauem Band und Nachtblau zeigen dieselben Farben wie auf Weiss
+ok 115 - Ein Befehl erzeugt einen eigenen Entwurf mit Vorschau und eigenständigem Export
+ok 116 - Ein vorhandenes Projekt bleibt beim erneuten Anlegen unverändert
+ok 117 - Ungültige Namen und unvollständige Optionen erzeugen kein Projekt
+== npm test (test-chromium-2)
+# tests 117
+# pass 117
+# fail 0
+# skipped 0
+ok 107 - Nachtblau ist benannt, in beiden Themes gleich und trägt Weiss und Blau 25 mit mehr als 7:1
+ok 108 - Leitlinie 02 nennt Geltung, Zählung und die vier Bedingungen des Titelbilds
+ok 109 - data-puk-surface="night" setzt Fläche, weisse unterstrichene Links und den umgekehrten Fokusring
+ok 110 - data-puk-surface="night" druckt ohne Fläche mit dunklem Text und Links wie auf Weiss
+ok 111 - Vorschau Website.dc.html rendert ohne Fehler, auch wenn React verzögert lädt
+ok 112 - Sekundär- und Ghost-Button stehen auf Nachtblau in Weiss, ausserhalb unverändert in Schwarz
+ok 113 - Im blauen Band stehen Links, Akzent, Nebentext und ruhige Knöpfe in Weiss; Druck wie auf Weiss
+ok 114 - Helle Komponenten in blauem Band und Nachtblau zeigen dieselben Farben wie auf Weiss
+ok 115 - Ein Befehl erzeugt einen eigenen Entwurf mit Vorschau und eigenständigem Export
+ok 116 - Ein vorhandenes Projekt bleibt beim erneuten Anlegen unverändert
+ok 117 - Ungültige Namen und unvollständige Optionen erzeugen kein Projekt
+== npm test (test-chromium-3)
+# tests 117
+# pass 117
+# fail 0
+# skipped 0
+ok 107 - Nachtblau ist benannt, in beiden Themes gleich und trägt Weiss und Blau 25 mit mehr als 7:1
+ok 108 - Leitlinie 02 nennt Geltung, Zählung und die vier Bedingungen des Titelbilds
+ok 109 - data-puk-surface="night" setzt Fläche, weisse unterstrichene Links und den umgekehrten Fokusring
+ok 110 - data-puk-surface="night" druckt ohne Fläche mit dunklem Text und Links wie auf Weiss
+ok 111 - Vorschau Website.dc.html rendert ohne Fehler, auch wenn React verzögert lädt
+ok 112 - Sekundär- und Ghost-Button stehen auf Nachtblau in Weiss, ausserhalb unverändert in Schwarz
+ok 113 - Im blauen Band stehen Links, Akzent, Nebentext und ruhige Knöpfe in Weiss; Druck wie auf Weiss
+ok 114 - Helle Komponenten in blauem Band und Nachtblau zeigen dieselben Farben wie auf Weiss
+ok 115 - Ein Befehl erzeugt einen eigenen Entwurf mit Vorschau und eigenständigem Export
+ok 116 - Ein vorhandenes Projekt bleibt beim erneuten Anlegen unverändert
+ok 117 - Ungültige Namen und unvollständige Optionen erzeugen kein Projekt
+== npm test (test-shell)
+# tests 117
+# pass 117
+# fail 0
+# skipped 0
+ok 107 - Nachtblau ist benannt, in beiden Themes gleich und trägt Weiss und Blau 25 mit mehr als 7:1
+ok 108 - Leitlinie 02 nennt Geltung, Zählung und die vier Bedingungen des Titelbilds
+ok 109 - data-puk-surface="night" setzt Fläche, weisse unterstrichene Links und den umgekehrten Fokusring
+ok 110 - data-puk-surface="night" druckt ohne Fläche mit dunklem Text und Links wie auf Weiss
+ok 111 - Vorschau Website.dc.html rendert ohne Fehler, auch wenn React verzögert lädt
+ok 112 - Sekundär- und Ghost-Button stehen auf Nachtblau in Weiss, ausserhalb unverändert in Schwarz
+ok 113 - Im blauen Band stehen Links, Akzent, Nebentext und ruhige Knöpfe in Weiss; Druck wie auf Weiss
+ok 114 - Helle Komponenten in blauem Band und Nachtblau zeigen dieselben Farben wie auf Weiss
+ok 115 - Ein Befehl erzeugt einen eigenen Entwurf mit Vorschau und eigenständigem Export
+ok 116 - Ein vorhandenes Projekt bleibt beim erneuten Anlegen unverändert
+ok 117 - Ungültige Namen und unvollständige Optionen erzeugen kein Projekt
+
+== npm run test:ui
+Matrix: 112 Prüfläufe · 0 mit Befund · Tastatur: 41 Prüfungen · 0 mit Befund · Interaktionen: 19 Prüfungen · 0 mit Befund · Gate: 76 Prüfungen · 0 mit Befund · Gesamt: 0 Befunde · Fokusring nur statisch geprüft (Dokument ohne Fokus): Matrix 0 Läufe · nicht prüfbar: Tastatur 0, Interaktionen 0
+Abgleich mit tests/ergebnisse/ui-matrix-2026.10.17.json: status, total, notTestable gleich; matrix 112/112, keyboardAndInteractions 60/60, gate 76/76, errors 0/0; 0 abweichende Zeilen

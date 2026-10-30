@@ -1,0 +1,28 @@
+git diff a1a7b72 c12f636 -U0 ohne archiv/, audit-results/, tests/ergebnisse/, Zip, .sha256, package-lock.json und beide Bundles: 330 hinzugefügte Zeilen
+Suchmuster: http|<script|@import|url(|font|on…=|javascript:|style=|tel:|Krise|Notfall|143|144|147
++Die unabhängige Prüfung des Pakets 2026.10.14 (Prüfbericht im [archivierten Stand](archiv/profilstand-2026-10-30-14/PRUEFBERICHT.md), PR #147) ergab keinen Befund «kritisch», einen Befund «wich
++Die unabhängige Prüfung des Pakets 2026.10.14 (Prüfbericht im [archivierten Stand](archiv/profilstand-2026-10-30-14/PRUEFBERICHT.md), PR #147) nannte neben W-1 zwei Befunde «optional»; W-1 ist m
++Die unabhängige Prüfung des Pakets 2026.10.14 (Prüfbericht im [archivierten Stand](archiv/profilstand-2026-10-30-14/PRUEFBERICHT.md), PR #147) nannte als Befund **W-1**, dass helle Komponenten in 
++- `tools/paket.py`: reproduzierbares Paket [puk-website-profil-2026.10.17.zip](https://github.com/christaegger-dot/puk-website-profil/raw/refs/heads/main/puk-website-profil-2026.10.17.zip) mit [SHA-2
++<script src="../../../components/interaktion.js?v=r4-24" defer></script>
++<script src="../../../components/interaktion.js?v=r4-24" defer></script>
++<script src="../../../components/interaktion.js?v=r4-24" defer></script>
++<p id="muted" style="color:var(--text-muted)">Nebentext</p><button id="sec" class="puk-btn puk-btn--secondary">Sekundär</button><button id="ghost" class="puk-btn puk-btn--ghost">Ghost</button><butto
++<script src="platform/vendor/react.production.min.js"></script><script src="platform/vendor/react-dom.production.min.js"></script><script src="components/bundle.js"></script></head>
++<script src="helle-flaechen.js"></script></body></html>`;
++for(const p of ['w','b','n']){const box=document.createElement('div');box.innerHTML='<div id="'+p+'-tint" data-puk-surface="tint" style="padding:8px"><a id="'+p+'-tlink" href="#x">Link</a> <span id="
++Nachweise: [Matrixdaten](../../tests/ergebnisse/ui-matrix-2026.10.17.json), [aktueller Prüfbericht](../../PRUEFBERICHT.md). Frühere Protokolle sind [archivierte Historie](https://github.com/christa
++<script src="js/chrome.js?v=r4-10"></script>
++<script src="js/home.js?v=r4-10"></script>
++<script src="js/situations.js?v=r4-10"></script>
++<script src="js/contact.js?v=r4-10"></script>
++<script src="js/conversation.js?v=r4-10"></script>
++<script src="js/services.js?v=r4-10"></script>
++<script src="js/longform-foundation.js?v=r4-10"></script>
++<script src="js/longform-more.js?v=r4-10"></script>
++<script src="js/visual.js?v=r4-10"></script>
++<script src="js/patterns.js?v=r4-10"></script>
++<script src="js/app.js?v=r4-10"></script>
++<script src="../../templates/website/psychoeducation-site-starter/tools/contract.js?v=r4-24"></script>
+
+components/bundle.js: externe Adressen a1a7b72 und c12f636 nur http://www.w3.org/2000/svg (SVG-Namensraum); data-puk-light 0 bzw. 3 Nennungen

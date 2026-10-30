@@ -1,0 +1,39 @@
+git diff ad6ce55 c12f636 -- components/bundle.css tokens/:
+6	0	components/bundle.css
+6	0	tokens/base.css
+tokens/base.css als zusammenhängender Block in bundle.css: 1x
+tokens/colors.css als zusammenhängender Block in bundle.css: 1x
+tokens/spacing.css als zusammenhängender Block in bundle.css: 1x
+tokens/surfaces.css als zusammenhängender Block in bundle.css: 1x
+tokens/typography.css als zusammenhängender Block in bundle.css: 1x
+tokens/web-longform.css als zusammenhängender Block in bundle.css: 1x
+tokens/web.css als zusammenhängender Block in bundle.css: 1x
+Rücksetzregel bundle.css == tokens/base.css: True 1
+Zeilen bundle.css: Band blau 362, Nachtblau 417, Rücksetzregel 424
+
+package.json:
+2026.10.17 {"stand":"2026-10-30","starterBuild":"r4-24","kitBuild":"r4-10","qaRevision":"qa-9"}
+  "version": "2026.10.17",
+      "version": "2026.10.17",
+Seiten mit data-puk-site-build=r4-24: 15
+?v=r4-24 Verweise: 63
+11:const BUILD = 'r4-24'; // erzeugt aus package.json
+  "assetVersion": "r4-24",
+  "assetVersion": "r4-24",
+  "assetVersion": "r4-24",
+243:  "profileVersion": "2026.10.17"
+puk-kit-build" content="r4-10"
+r4-10 im UI-Kit index: 15
+BUILD='r4-10'
+QA_REV='qa-9'
+Erwarteter Quellstand: 
+README.md START-HIER.md CLAUDE.md PRUEFBERICHT.md ABSCHLUSSENTSCHEIDE.md index.html musterauswahl.html 
+Andere Build-Kennungen in Vorlagen:       1 data-puk-site-build="${BUILD}"      15 data-puk-site-build="r4-24" 
+
+archiv/profilstand-2026-10-30-14: 13 von 13 bytegleich mit 65ab892
+puk-website-profil-2026.10.14.zip: OK
+archiv/profilstand-2026-10-30-15: 13 von 13 bytegleich mit 5c235b3
+puk-website-profil-2026.10.15.zip: OK
+archiv/profilstand-2026-10-30-16: 13 von 13 bytegleich mit ad6ce55
+puk-website-profil-2026.10.16.zip: OK
+Bäume: 65ab892 aeebcd02ce774e4993215c6fd607f329ab12702b a1a7b72 aeebcd02ce774e4993215c6fd607f329ab12702b

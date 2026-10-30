@@ -1,0 +1,42 @@
+G0 unverändert (c12f636):
+# pass 8 # fail 0 
+G1 bundle.css, bundle.js, tokens/base.css von ad6ce55:
+# pass 7 # fail 1 not ok 8 - Helle Komponenten in blauem Band und Nachtblau zeigen dieselben Farben wie auf Weiss
+ error: |-
+ expected: 'rgb(100, 100, 100) | rgb(100, 100, 100)'
+ actual: 'rgb(255, 255, 255) | rgb(255, 255, 255)'
+
+G2 nur Rücksetzregel aus components/bundle.css entfernt (JS unverändert):
+# pass 7 # fail 1 not ok 8 - Helle Komponenten in blauem Band und Nachtblau zeigen dieselben Farben wie auf Weiss
+ error: |-
+ expected: 'rgb(100, 100, 100) | rgb(100, 100, 100)'
+ actual: 'rgb(255, 255, 255) | rgb(255, 255, 255)'
+
+G3 nur components/bundle.js von ad6ce55 (React setzt kein data-puk-light):
+# pass 7 # fail 1 not ok 8 - Helle Komponenten in blauem Band und Nachtblau zeigen dieselben Farben wie auf Weiss
+ error: |-
+ expected: 'rgb(34, 34, 34) | rgb(34, 34, 34)'
+ actual: 'rgb(255, 255, 255) | rgb(255, 255, 255)'
+
+G4 Punkt «Helle Komponenten» im Nachtblau-Abschnitt von Leitlinie 02 entfernt:
+# pass 8 # fail 0 
+G5 Satz zur technischen Absicherung und data-puk-light aus Leitlinie 02 entfernt:
+0
+# pass 8 # fail 0 
+Abschluss: Vergleich mit c12f636
+components/bundle.css gleich
+components/bundle.js gleich
+tokens/base.css gleich
+guidelines/02-farben-und-kontrast.md gleich
+G1: light b-tmuted
+G2: light b-tmuted
+G3: light b-csec
+components/bundle.css gleich
+components/bundle.js gleich
+tokens/base.css gleich
+
+G6 (Wiederholung G1 aus PR #151, O-2): Druckregel button.puk-btn zu .puk-btn:
+1
+# pass 7 # fail 1 not ok 7 - Im blauen Band stehen Links, Akzent, Nebentext und ruhige Knöpfe in Weiss; Druck wie auf Weiss
+light Knopf-Link im Druck sichtbar'
+components/bundle.css gleich
