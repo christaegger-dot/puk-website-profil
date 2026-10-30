@@ -1,0 +1,470 @@
+{
+ "360-ohne": [
+  {
+   "inhalt": true,
+   "fehler": 0,
+   "ersterFehler": null,
+   "gleicherText": true,
+   "zeichen": 1004,
+   "reihenfolge": [
+    "req react.production.min.js",
+    "req react-dom.production.min.js",
+    "fertig react.production.min.js",
+    "fertig react-dom.production.min.js",
+    "req _ds_bundle.js",
+    "fertig _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js"
+   ]
+  },
+  {
+   "inhalt": true,
+   "fehler": 0,
+   "ersterFehler": null,
+   "gleicherText": true,
+   "zeichen": 1004,
+   "reihenfolge": [
+    "req react.production.min.js",
+    "req react-dom.production.min.js",
+    "fertig react.production.min.js",
+    "fertig react-dom.production.min.js",
+    "req _ds_bundle.js",
+    "fertig _ds_bundle.js",
+    "req _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js",
+    "fertig _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js"
+   ]
+  },
+  {
+   "inhalt": true,
+   "fehler": 0,
+   "ersterFehler": null,
+   "gleicherText": true,
+   "zeichen": 1004,
+   "reihenfolge": [
+    "req react.production.min.js",
+    "req react-dom.production.min.js",
+    "fertig react.production.min.js",
+    "fertig react-dom.production.min.js",
+    "req _ds_bundle.js",
+    "fertig _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js"
+   ]
+  }
+ ],
+ "360-react-800": [
+  {
+   "inhalt": true,
+   "fehler": 0,
+   "ersterFehler": null,
+   "gleicherText": true,
+   "zeichen": 1004,
+   "reihenfolge": [
+    "req react.production.min.js",
+    "req react-dom.production.min.js",
+    "fertig react.production.min.js",
+    "fertig react-dom.production.min.js",
+    "req _ds_bundle.js",
+    "fertig _ds_bundle.js",
+    "req _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js",
+    "fertig _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js"
+   ]
+  },
+  {
+   "inhalt": true,
+   "fehler": 0,
+   "ersterFehler": null,
+   "gleicherText": true,
+   "zeichen": 1004,
+   "reihenfolge": [
+    "req react.production.min.js",
+    "req react-dom.production.min.js",
+    "fertig react.production.min.js",
+    "fertig react-dom.production.min.js",
+    "req _ds_bundle.js",
+    "fertig _ds_bundle.js",
+    "req _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig _ds_bundle.js",
+    "fertig claude-ds-alias.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js"
+   ]
+  },
+  {
+   "inhalt": true,
+   "fehler": 0,
+   "ersterFehler": null,
+   "gleicherText": true,
+   "zeichen": 1004,
+   "reihenfolge": [
+    "req react.production.min.js",
+    "req react-dom.production.min.js",
+    "fertig react.production.min.js",
+    "fertig react-dom.production.min.js",
+    "req _ds_bundle.js",
+    "fertig _ds_bundle.js",
+    "req _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js",
+    "fertig _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js"
+   ]
+  }
+ ],
+ "360-react-3000": [
+  {
+   "inhalt": true,
+   "fehler": 0,
+   "ersterFehler": null,
+   "gleicherText": true,
+   "zeichen": 1004,
+   "reihenfolge": [
+    "req react.production.min.js",
+    "req react-dom.production.min.js",
+    "fertig react.production.min.js",
+    "fertig react-dom.production.min.js",
+    "req _ds_bundle.js",
+    "fertig _ds_bundle.js",
+    "req _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js",
+    "fertig _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js"
+   ]
+  },
+  {
+   "inhalt": true,
+   "fehler": 0,
+   "ersterFehler": null,
+   "gleicherText": true,
+   "zeichen": 1004,
+   "reihenfolge": [
+    "req react.production.min.js",
+    "req react-dom.production.min.js",
+    "fertig react.production.min.js",
+    "fertig react-dom.production.min.js",
+    "req _ds_bundle.js",
+    "fertig _ds_bundle.js",
+    "req _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig _ds_bundle.js",
+    "fertig claude-ds-alias.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js"
+   ]
+  },
+  {
+   "inhalt": true,
+   "fehler": 0,
+   "ersterFehler": null,
+   "gleicherText": true,
+   "zeichen": 1004,
+   "reihenfolge": [
+    "req react.production.min.js",
+    "req react-dom.production.min.js",
+    "fertig react.production.min.js",
+    "fertig react-dom.production.min.js",
+    "req _ds_bundle.js",
+    "fertig _ds_bundle.js",
+    "req _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig _ds_bundle.js",
+    "fertig claude-ds-alias.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js"
+   ]
+  }
+ ],
+ "360-bundle-800": [
+  {
+   "inhalt": true,
+   "fehler": 0,
+   "ersterFehler": null,
+   "gleicherText": true,
+   "zeichen": 1004,
+   "reihenfolge": [
+    "req react.production.min.js",
+    "req react-dom.production.min.js",
+    "fertig react.production.min.js",
+    "fertig react-dom.production.min.js",
+    "req _ds_bundle.js",
+    "fertig _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js"
+   ]
+  },
+  {
+   "inhalt": true,
+   "fehler": 0,
+   "ersterFehler": null,
+   "gleicherText": true,
+   "zeichen": 1004,
+   "reihenfolge": [
+    "req react.production.min.js",
+    "req react-dom.production.min.js",
+    "fertig react.production.min.js",
+    "fertig react-dom.production.min.js",
+    "req _ds_bundle.js",
+    "fertig _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js"
+   ]
+  },
+  {
+   "inhalt": true,
+   "fehler": 0,
+   "ersterFehler": null,
+   "gleicherText": true,
+   "zeichen": 1004,
+   "reihenfolge": [
+    "req react.production.min.js",
+    "req react-dom.production.min.js",
+    "fertig react.production.min.js",
+    "fertig react-dom.production.min.js",
+    "req _ds_bundle.js",
+    "fertig _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js"
+   ]
+  }
+ ],
+ "1280-ohne": [
+  {
+   "inhalt": true,
+   "fehler": 0,
+   "ersterFehler": null,
+   "gleicherText": true,
+   "zeichen": 1004,
+   "reihenfolge": [
+    "req react.production.min.js",
+    "req react-dom.production.min.js",
+    "fertig react.production.min.js",
+    "fertig react-dom.production.min.js",
+    "req _ds_bundle.js",
+    "fertig _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js"
+   ]
+  },
+  {
+   "inhalt": true,
+   "fehler": 0,
+   "ersterFehler": null,
+   "gleicherText": true,
+   "zeichen": 1004,
+   "reihenfolge": [
+    "req react.production.min.js",
+    "req react-dom.production.min.js",
+    "fertig react.production.min.js",
+    "fertig react-dom.production.min.js",
+    "req _ds_bundle.js",
+    "fertig _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js"
+   ]
+  },
+  {
+   "inhalt": true,
+   "fehler": 0,
+   "ersterFehler": null,
+   "gleicherText": true,
+   "zeichen": 1004,
+   "reihenfolge": [
+    "req react.production.min.js",
+    "req react-dom.production.min.js",
+    "fertig react.production.min.js",
+    "fertig react-dom.production.min.js",
+    "req _ds_bundle.js",
+    "fertig _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js"
+   ]
+  }
+ ],
+ "1280-react-800": [
+  {
+   "inhalt": true,
+   "fehler": 0,
+   "ersterFehler": null,
+   "gleicherText": true,
+   "zeichen": 1004,
+   "reihenfolge": [
+    "req react.production.min.js",
+    "req react-dom.production.min.js",
+    "fertig react.production.min.js",
+    "fertig react-dom.production.min.js",
+    "req _ds_bundle.js",
+    "fertig _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js"
+   ]
+  },
+  {
+   "inhalt": true,
+   "fehler": 0,
+   "ersterFehler": null,
+   "gleicherText": true,
+   "zeichen": 1004,
+   "reihenfolge": [
+    "req react.production.min.js",
+    "req react-dom.production.min.js",
+    "fertig react.production.min.js",
+    "fertig react-dom.production.min.js",
+    "req _ds_bundle.js",
+    "fertig _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js"
+   ]
+  },
+  {
+   "inhalt": true,
+   "fehler": 0,
+   "ersterFehler": null,
+   "gleicherText": true,
+   "zeichen": 1004,
+   "reihenfolge": [
+    "req react.production.min.js",
+    "req react-dom.production.min.js",
+    "fertig react.production.min.js",
+    "fertig react-dom.production.min.js",
+    "req _ds_bundle.js",
+    "fertig _ds_bundle.js",
+    "req _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js",
+    "fertig _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js"
+   ]
+  }
+ ],
+ "1280-react-3000": [
+  {
+   "inhalt": true,
+   "fehler": 0,
+   "ersterFehler": null,
+   "gleicherText": true,
+   "zeichen": 1004,
+   "reihenfolge": [
+    "req react.production.min.js",
+    "req react-dom.production.min.js",
+    "fertig react.production.min.js",
+    "fertig react-dom.production.min.js",
+    "req _ds_bundle.js",
+    "fertig _ds_bundle.js",
+    "req _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig _ds_bundle.js",
+    "fertig claude-ds-alias.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js"
+   ]
+  },
+  {
+   "inhalt": true,
+   "fehler": 0,
+   "ersterFehler": null,
+   "gleicherText": true,
+   "zeichen": 1004,
+   "reihenfolge": [
+    "req react.production.min.js",
+    "req react-dom.production.min.js",
+    "fertig react.production.min.js",
+    "fertig react-dom.production.min.js",
+    "req _ds_bundle.js",
+    "fertig _ds_bundle.js",
+    "req _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig _ds_bundle.js",
+    "fertig claude-ds-alias.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js"
+   ]
+  },
+  {
+   "inhalt": true,
+   "fehler": 0,
+   "ersterFehler": null,
+   "gleicherText": true,
+   "zeichen": 1004,
+   "reihenfolge": [
+    "req react.production.min.js",
+    "req react-dom.production.min.js",
+    "fertig react.production.min.js",
+    "fertig react-dom.production.min.js",
+    "req _ds_bundle.js",
+    "fertig _ds_bundle.js",
+    "req _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js",
+    "fertig _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js"
+   ]
+  }
+ ],
+ "1280-bundle-800": [
+  {
+   "inhalt": true,
+   "fehler": 0,
+   "ersterFehler": null,
+   "gleicherText": true,
+   "zeichen": 1004,
+   "reihenfolge": [
+    "req react.production.min.js",
+    "req react-dom.production.min.js",
+    "fertig react.production.min.js",
+    "fertig react-dom.production.min.js",
+    "req _ds_bundle.js",
+    "fertig _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js"
+   ]
+  },
+  {
+   "inhalt": true,
+   "fehler": 0,
+   "ersterFehler": null,
+   "gleicherText": true,
+   "zeichen": 1004,
+   "reihenfolge": [
+    "req react.production.min.js",
+    "req react-dom.production.min.js",
+    "fertig react.production.min.js",
+    "fertig react-dom.production.min.js",
+    "req _ds_bundle.js",
+    "fertig _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js"
+   ]
+  },
+  {
+   "inhalt": true,
+   "fehler": 0,
+   "ersterFehler": null,
+   "gleicherText": true,
+   "zeichen": 1004,
+   "reihenfolge": [
+    "req react.production.min.js",
+    "req react-dom.production.min.js",
+    "fertig react.production.min.js",
+    "fertig react-dom.production.min.js",
+    "req _ds_bundle.js",
+    "fertig _ds_bundle.js",
+    "req claude-ds-alias.js",
+    "fertig claude-ds-alias.js"
+   ]
+  }
+ ]
+}

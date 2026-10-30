@@ -1,0 +1,17 @@
+{
+ "b": {
+  "karteEyebrow": "rgb(100, 100, 100) auf rgb(255, 255, 255)",
+  "karteText": "rgb(34, 34, 34) auf rgb(255, 255, 255)",
+  "karteKnopf": "rgb(34, 34, 34) auf rgb(255, 255, 255)",
+  "hinweisText": "rgb(34, 34, 34) auf rgb(240, 243, 255)",
+  "hinweisLink": "rgb(43, 79, 224) auf rgb(240, 243, 255)"
+ },
+ "n": {
+  "karteEyebrow": "rgb(216, 224, 255) auf rgb(255, 255, 255)",
+  "karteText": "rgb(34, 34, 34) auf rgb(255, 255, 255)",
+  "karteKnopf": "rgb(34, 34, 34) auf rgb(255, 255, 255)",
+  "hinweisText": "rgb(255, 255, 255) auf rgb(240, 243, 255)",
+  "hinweisLink": "rgb(43, 79, 224) auf rgb(240, 243, 255)"
+ },
+ "fehler": []
+}

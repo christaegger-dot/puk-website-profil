@@ -1,0 +1,123 @@
+test-chromium-1.txt: # tests 116 # pass 116 # fail 0 # skipped 0 
+test-chromium-2.txt: # tests 116 # pass 116 # fail 0 # skipped 0 
+test-chromium-3.txt: # tests 116 # pass 116 # fail 0 # skipped 0 
+test-headless.txt: # tests 116 # pass 116 # fail 0 # skipped 0 
+
+ok 1 - Alle aktiven Vorschauseiten laden schmal und breit ohne Browserfehler oder Seitenüberlauf
+ok 2 - Akkordeon und Reiter sind mit der Tastatur bedienbar
+ok 3 - Standardbeispiel enthält ohne Skript und bei reduzierter Bewegung keinen automatischen Krisenblock
+ok 4 - Sprachliche Silbentrennung wird nicht als willkürlicher Wortumbruch gemeldet
+ok 5 - Willkürliche Notumbrüche bleiben auch bei erlaubter Silbentrennung ein Befund
+ok 6 - Die Textprüfung erhält Inline-Styles und Darstellung unverändert
+ok 7 - Lange verschachtelte Druck-Abfolgen erzeugen in acht Drucklagen keine leere Seite
+ok 8 - Ausgangslage Entwurf: 0 blockierende Befunde
+ok 9 - Produktion blockiert ungeklärte Absenderin, Zuständigkeitsverweise, Platzhalter und Visualisierungen
+ok 10 - Produktion blockiert Redaktionsstatus Entwurf («Entwurf, noch nicht freigegeben»)
+ok 11 - Produktion blockiert Redaktionsstatus Entwurf mit Datum («Entwurf vom 15.10.2026»)
+ok 12 - Produktion blockiert Redaktionsstatus ohne Datum («Fachlich freigegeben»)
+ok 13 - Redaktionsstatus mit Datum gibt frei («Fachlich freigegeben am 15.10.2026»)
+ok 14 - Produktion ohne Prüfbericht blockiert
+ok 15 - Vollständiger Prüfbericht gibt die Veröffentlichung frei
+ok 16 - Produktion blockiert ohne «Go» im Freigabe-Audit R3
+ok 17 - Kennzeichen data-print-split am Prozesspfad ist zulässig
+ok 18 - Kanonischer Link (siteUrl) gilt nicht als externe Laufzeitquelle
+ok 19 - Produktion blockiert ungeprüften Verweis im Text
+ok 20 - Weitere Schweizer Telefonnummer im Text zulässig
+ok 21 - Telefonlink und internationale Nummer zulässig
+ok 22 - Bewusst gewählte Krisenkontakte zulässig
+ok 23 - Kennzeichen am Entscheidungsweg zulässig
+ok 24 - Kennzeichen am Modell in Schritten zulässig
+ok 25 - Kennzeichen ohne Schrittliste blockiert
+ok 26 - Navigationsziel fehlt (Link zeigt auf nicht vorhandene Seite)
+ok 27 - Seitenvertrag verweist auf fehlende Datei
+ok 28 - lang fehlt
+ok 29 - CDN-React eingebunden
+ok 30 - Favicon fehlt
+ok 31 - Meta-Description fehlt
+ok 32 - Fachstelle unsichtbar
+ok 33 - E-Mail der Absenderin fehlt
+ok 34 - Fachstelle fehlt
+ok 35 - ß statt ss
+ok 36 - Deutscher Rechtsbegriff
+ok 37 - Etikettierende Bezeichnung
+ok 38 - Zuständigkeitsverweis ausserhalb der Fusszeile
+ok 39 - Zuständigkeitsverweis als geprüft markiert ohne Dokumentation
+ok 40 - Zuständigkeitsverweis fehlt auf einer Seite
+ok 41 - Hinweis «ersetzt keine Abklärung» fehlt
+ok 42 - Seite nicht erreichbar
+ok 43 - Kreislauf linear (keine Bögen)
+ok 44 - «Uhrzeigersinn» in schmaler Leserichtung
+ok 45 - Rücksprung zu Station 1 fehlt
+ok 46 - Figur ohne Bildlegende
+ok 47 - Figur ohne Kennzeichnung
+ok 48 - Figur fehlt im Visualisierungsplan
+ok 49 - Bildplatzhalter ohne Freigabestatus
+ok 50 - Illustration ohne eigene Zeichnung und ohne Bildstatus
+ok 51 - Quellenlink ohne sprechendes aria-label
+ok 52 - Interner Link ins Leere
+ok 53 - Zwei h1
+ok 54 - Visualisierungsplan ohne «understood»
+ok 55 - Visualisierungsplan ohne Wirkung («resonance»)
+ok 56 - Inline-Skript eingefügt
+ok 57 - Externer Link in neuem Fenster ohne rel
+ok 58 - Akkordeon ohne Interaktionsskript
+ok 59 - Figur ohne Kernaussage
+ok 60 - Abschnitt ohne Zeile im Visualisierungsplan
+ok 61 - Planzeile verweist auf fehlenden Abschnitt
+ok 62 - Ansatzpunkt im Plan fehlt
+ok 63 - Ansatzpunkt im Plan, nicht in der Figur
+ok 64 - Kartenraster mit vielen Karten
+ok 65 - Verweis im Text mit eigenem Wortlaut
+ok 66 - Verweis im Text auf Seite ohne sensibles Thema
+ok 67 - Verweis im Text versteckt in einer Vertiefung
+ok 68 - Entwurf in der Navigation
+ok 69 - Vertiefung ohne Interaktionsskript (Druck)
+ok 70 - Name des Logo-Links ohne sichtbaren Logotext
+ok 71 - Fünf Hauptpunkte ohne Menü
+ok 72 - Impressum und Datenschutzerklärung fehlen
+ok 73 - Link auf das Impressum fehlt in der Fusszeile
+ok 74 - 404-Seite fehlt
+ok 75 - 404-Seite in der Navigation
+ok 76 - 404-Seite als Entwurf (nicht im Export)
+ok 77 - Impressum zeigt auf eine E-Mail-Adresse statt auf eine Seite
+ok 78 - Externes Stylesheet als «alternate stylesheet»
+ok 79 - Fremdsprachiger Quellentitel ohne lang
+ok 80 - Kennzeichen data-print-split an einer Gegenüberstellung
+ok 81 - Kennzeichen data-print-split an der Hülle statt an der Figur
+ok 82 - Fachneutrales vollständiges Beispiel besteht die Produktionsprüfung
+ok 83 - Standardseiten ergänzen weder Krisenblock noch pauschalen Zuständigkeitssatz
+ok 84 - Weitere Telefonnummern und bewusster Krisenkontakt bestehen auch in Produktion
+ok 85 - Andere deutsche Sprachvariante wird als Abweichung von de-CH erkannt
+ok 86 - Aktuelle Dokumentation verlinkt vorhandene lokale Nachweise
+ok 87 - Fehlender Nachweis wird mit Fundstelle erkannt; Beispiele und externe Links bleiben getrennt
+ok 88 - Lange deutsche Titel und fünf Hauptpunkte bleiben in 60 Layoutzuständen lesbar; der Einstieg steht auf dem ersten mobilen Bildschirm
+ok 89 - Die Schwelle von vier zu fünf Hauptpunkten funktioniert mit Tastatur und beim Wechsel zwischen schmal und breit
+ok 90 - Alle drei Startvorlagen bieten vor ergänzenden Hinweisen einen funktionierenden Einstieg, auch ohne JavaScript
+ok 91 - Vollständiger Export enthält lokale Schriften und Lizenz, keine Entwürfe oder Projektquellen
+ok 92 - Fehlende CSS-Quelle stoppt Export und erhält die letzte gültige Ausgabe
+ok 93 - Fehlendes Bild hinterlässt keine teilweise neue Ausgabe
+ok 94 - Erfolgreicher Neubau entfernt nicht mehr veröffentlichte Seiten
+ok 95 - Fremde Zielordner und Quellordner werden nicht überschrieben
+ok 96 - Unbekannte CLI-Optionen stoppen statt still ignoriert zu werden
+ok 97 - Komponenten-Build ist unabhängig vom Arbeitsordner reproduzierbar
+ok 98 - Externe CSS-Laufzeitquelle stoppt den Export
+ok 99 - Eine Änderung der Typquelle wird erkannt und in beide Ausgaben übernommen
+ok 100 - Eine Profiländerung aktualisiert Standangaben, Build und Paketnamen aus einer Quelle
+ok 101 - Eine fehlende Typquelle stoppt die Erzeugung vor dem Schreiben
+ok 102 - Links auf getönten Flächen erreichen in beiden Themes 4,5:1, Blau 100 dort nicht
+ok 103 - Getönte Flächen färben Links und Akzent in Blau 125; h1 und h2 stehen in Medium, h3 in Regular
+ok 104 - Plattform-Bundle _ds_bundle.js ist bytegleich mit components/bundle.js
+ok 105 - Hover auf grauer Fläche steht in Blau 125; Links im Notfall-Alert in Weiss
+ok 106 - Website-Titel bleiben bei Standardschrift ungetrennt und brechen bei 320 und 375 px mit 200 % Schrift nur an weichen Trennstellen
+ok 107 - Nachtblau ist benannt, in beiden Themes gleich und trägt Weiss und Blau 25 mit mehr als 7:1
+ok 108 - Leitlinie 02 nennt Geltung, Zählung und die vier Bedingungen des Titelbilds
+ok 109 - data-puk-surface="night" setzt Fläche, weisse unterstrichene Links und den umgekehrten Fokusring
+ok 110 - data-puk-surface="night" druckt ohne Fläche mit dunklem Text und Links wie auf Weiss
+ok 111 - Vorschau Website.dc.html rendert ohne Fehler, auch wenn React verzögert lädt
+ok 112 - Sekundär- und Ghost-Button stehen auf Nachtblau in Weiss, ausserhalb unverändert in Schwarz
+ok 113 - Im blauen Band stehen Links, Akzent, Nebentext und ruhige Knöpfe in Weiss; Druck wie auf Weiss
+ok 114 - Ein Befehl erzeugt einen eigenen Entwurf mit Vorschau und eigenständigem Export
+ok 115 - Ein vorhandenes Projekt bleibt beim erneuten Anlegen unverändert
+ok 116 - Ungültige Namen und unvollständige Optionen erzeugen kein Projekt
+
+
