@@ -19,10 +19,10 @@ Telefonnummern und Telefonlinks sind erlaubt. Krisenkontakte und ihre Darstellun
 
 Sprungziele haben die Form `#<route>/<id>`, zum Beispiel `#grundlagenkapitel/verstehen`. `index.html`, `kit.css` und `js/*.js` bilden die lokale Referenzansicht ohne CDN oder Babel zur Laufzeit. `qa.html`, `qa.css` und `qa.js` bilden die Prüfansicht. Beide verwenden die lokalen Styles und Komponenten des Repositorys.
 
-## Geprüfter Stand · 29.10.2026
+## Geprüfter Stand · 30.10.2026
 
 <!-- profil:stand -->
-Prüfskript `qa-9`, Kit-Referenz `r4-8`, Starter-Build `r4-21`. Die Kennungen werden aus `package.json` erzeugt.
+Prüfskript `qa-9`, Kit-Referenz `r4-8`, Starter-Build `r4-22`. Die Kennungen werden aus `package.json` erzeugt.
 <!-- /profil:stand -->
 
 - Matrix: 14 Ansichten × vier Breiten (320, 360, 768, 1440 px) × normale und doppelte Textgrösse = **112 Läufe, 0 mit Befund**.
@@ -33,7 +33,7 @@ Prüfskript `qa-9`, Kit-Referenz `r4-8`, Starter-Build `r4-21`. Die Kennungen we
 Die doppelte Textgrösse wird durch CSS emuliert. Die DOM-Fokusprüfungen und Chromium-Tastenereignisse belegen keine reale Hardware-, Firefox-, Safari- oder Screenreader-Abnahme. Diese zusätzlichen Abnahmen sind für den technischen Profilabschluss ausgeschlossen, kein verbleibender Auftrag. Neue Websites werden gesondert geprüft.
 
 <!-- profil:ui-nachweise -->
-Nachweise: [Matrixdaten](../../tests/ergebnisse/ui-matrix-2026.10.14.json), [aktueller Prüfbericht](../../PRUEFBERICHT.md). Frühere Protokolle sind [archivierte Historie](https://github.com/christaegger-dot/puk-website-profil/blob/main/archiv/README.md), keine aktuellen Prüfnachweise oder offenen Pendenzen.
+Nachweise: [Matrixdaten](../../tests/ergebnisse/ui-matrix-2026.10.15.json), [aktueller Prüfbericht](../../PRUEFBERICHT.md). Frühere Protokolle sind [archivierte Historie](https://github.com/christaegger-dot/puk-website-profil/blob/main/archiv/README.md), keine aktuellen Prüfnachweise oder offenen Pendenzen.
 <!-- /profil:ui-nachweise -->
 
 Vollständiger wiederholbarer Lauf: `npm run test:ui`; Ergebnis unter `out-pruefung/ui-matrix.json`. Derselbe Befehl läuft in der GitHub-Aktion.
